@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface eA {
+public interface BooleanCheckProvider {
   boolean a();
 }
 

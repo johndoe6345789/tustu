@@ -3,14 +3,14 @@ package com.efiAnalytics.ui;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 
-public class ec extends AbstractTableModel {
+public class ScaledTableModel extends AbstractTableModel {
   private TableModel b;
   
   private double c = 1.0D;
   
   private double d = 0.0D;
   
-  ed a = new ed(this);
+  ScaledTableModelListener a = new ScaledTableModelListener(this);
   
   public int getRowCount() {
     return this.b.getRowCount();

@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
-class ed implements TableModelListener {
-  ed(ec paramec) {}
+class ScaledTableModelListener implements TableModelListener {
+  ScaledTableModelListener(ScaledTableModel paramec) {}
   
   public void tableChanged(TableModelEvent paramTableModelEvent) {
     int i = paramTableModelEvent.getColumn();

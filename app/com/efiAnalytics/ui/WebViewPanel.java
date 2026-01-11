@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class eD extends JPanel {
+public class WebViewPanel extends JPanel {
   private Stage a;
   
   private WebView b;

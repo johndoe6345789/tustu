@@ -5,7 +5,7 @@ import java.awt.TextField;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-class ea extends JPanel {
+class LabeledInputPanel extends JPanel {
   TextField a = null;
   
   JLabel b = null;

@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.text.JTextComponent;
 
-public class ee implements FocusListener {
+public class TextSelectFocusListener implements FocusListener {
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof JTextComponent)
       ((JTextComponent)paramFocusEvent.getSource()).selectAll(); 

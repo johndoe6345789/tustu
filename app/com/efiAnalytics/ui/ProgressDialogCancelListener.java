@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class eC implements ActionListener {
-  eC(eB parameB) {}
+class ProgressDialogCancelListener implements ActionListener {
+  ProgressDialogCancelListener(ProgressDialog parameB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     eB.a(this.a);

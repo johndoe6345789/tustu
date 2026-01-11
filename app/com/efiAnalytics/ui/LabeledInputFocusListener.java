@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class eb implements FocusListener {
-  eb(ea paramea) {}
+class LabeledInputFocusListener implements FocusListener {
+  LabeledInputFocusListener(LabeledInputPanel paramea) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.a.selectAll();

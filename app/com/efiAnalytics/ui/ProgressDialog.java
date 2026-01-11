@@ -10,7 +10,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class eB extends JDialog {
+public class ProgressDialog extends JDialog {
   dM a = new dM();
   
   ArrayList b = new ArrayList();
