@@ -4,8 +4,8 @@ import bA.c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class r implements ActionListener {
-  r(o paramo) {}
+class TriggerStateChangeListener implements ActionListener {
+  TriggerStateChangeListener(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     c c = (c)paramActionEvent.getSource();

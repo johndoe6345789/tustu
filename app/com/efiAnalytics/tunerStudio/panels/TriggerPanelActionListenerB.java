@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class y implements ActionListener {
-  y(o paramo) {}
+class TriggerPanelActionListenerB implements ActionListener {
+  TriggerPanelActionListenerB(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();

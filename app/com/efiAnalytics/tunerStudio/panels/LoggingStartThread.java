@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import V.a;
 import bH.D;
 
-class t extends Thread {
-  t(o paramo) {}
+class LoggingStartThread extends Thread {
+  LoggingStartThread(o paramo) {}
   
   public void run() {
     try {

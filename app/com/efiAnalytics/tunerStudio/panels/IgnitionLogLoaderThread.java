@@ -7,8 +7,8 @@ import java.io.File;
 import java.util.ArrayList;
 import s.g;
 
-class s extends Thread {
-  s(o paramo, aB paramaB, File paramFile, String paramString) {}
+class IgnitionLogLoaderThread extends Thread {
+  IgnitionLogLoaderThread(o paramo, aB paramaB, File paramFile, String paramString) {}
   
   public void run() {
     try {
