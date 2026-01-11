@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.bq;
 import java.awt.event.ActionListener;
 import javax.swing.JPopupMenu;
 
-public class Q extends JPopupMenu implements bq {
+public class TuningPopupMenu extends JPopupMenu implements bq {
   P a = new P();
   
   public Q(R paramR, int paramInt) {

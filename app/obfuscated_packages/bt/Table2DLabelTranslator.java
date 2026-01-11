@@ -3,7 +3,7 @@ package bt;
 import bH.ab;
 import s.g;
 
-class X implements ab {
+class Table2DLabelTranslator implements ab {
   X(W paramW) {}
   
   public String a(String paramString) {

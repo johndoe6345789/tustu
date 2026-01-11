@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import r.i;
 
-public class a extends JLabel {
+public class NoteIconLabel extends JLabel {
   R a = null;
   
   String b = null;

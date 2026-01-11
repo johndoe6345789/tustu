@@ -1,6 +1,6 @@
 package bt;
 
-public interface K {
+public interface TextChangeListener {
   void a(String paramString);
   
   void b(String paramString);

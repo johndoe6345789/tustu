@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.bc;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 
-public class d extends JPanel {
+public class CloseableComponentPanel extends JPanel {
   ArrayList H = new ArrayList();
   
   public void a(bc parambc) {

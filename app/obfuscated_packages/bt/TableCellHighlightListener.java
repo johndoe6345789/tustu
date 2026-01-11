@@ -1,6 +1,6 @@
 package bt;
 
-public interface p {
+public interface TableCellHighlightListener {
   void a(double paramDouble1, double paramDouble2);
   
   void a(float[] paramArrayOffloat1, float[] paramArrayOffloat2);

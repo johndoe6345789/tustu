@@ -8,7 +8,7 @@ import V.a;
 import bH.D;
 import com.efiAnalytics.ui.w;
 
-class H implements cq, bP {
+class Table2DOutputChannelSubscriber implements cq, bP {
   double a = Double.NaN;
   
   w b;

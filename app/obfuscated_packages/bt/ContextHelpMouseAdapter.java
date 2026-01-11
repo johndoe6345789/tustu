@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class m extends MouseAdapter {
+class ContextHelpMouseAdapter extends MouseAdapter {
   m(l paraml) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {

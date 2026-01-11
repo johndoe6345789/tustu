@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class C extends KeyAdapter {
+public class NumericTextFieldKeyAdapter extends KeyAdapter {
   public C(A paramA) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {

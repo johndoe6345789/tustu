@@ -1,6 +1,6 @@
 package bt;
 
-class V extends Thread {
+class BinTablePaintThrottle extends Thread {
   long a = Math.round(1000.0D / x.a());
   
   boolean b = false;

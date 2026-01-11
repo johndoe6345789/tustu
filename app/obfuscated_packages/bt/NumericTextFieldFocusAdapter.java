@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
-class B extends FocusAdapter {
+class NumericTextFieldFocusAdapter extends FocusAdapter {
   B(A paramA) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {

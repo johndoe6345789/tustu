@@ -1,6 +1,6 @@
 package bt;
 
-class u extends Thread {
+class LiveGraphPaintThrottle extends Thread {
   long a = 120L;
   
   boolean b = false;

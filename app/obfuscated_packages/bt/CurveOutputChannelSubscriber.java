@@ -8,7 +8,7 @@ import V.a;
 import bH.D;
 import com.efiAnalytics.ui.bN;
 
-public class G implements cq, bP {
+public class CurveOutputChannelSubscriber implements cq, bP {
   double a = Double.NaN;
   
   bN b;

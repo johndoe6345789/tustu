@@ -43,7 +43,7 @@ import r.a;
 import r.i;
 import s.g;
 
-public class W extends JPanel implements aN, e, bc, eS {
+public class Table2DEditorPanel extends JPanel implements aN, e, bc, eS {
   private R q;
   
   JSplitPane a = new JSplitPane();

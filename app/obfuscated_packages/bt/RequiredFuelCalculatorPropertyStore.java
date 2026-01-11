@@ -7,7 +7,7 @@ import aE.g;
 import com.efiAnalytics.ui.et;
 import r.a;
 
-public class E implements et {
+public class RequiredFuelCalculatorPropertyStore implements et {
   R a = null;
   
   public E(R paramR) {

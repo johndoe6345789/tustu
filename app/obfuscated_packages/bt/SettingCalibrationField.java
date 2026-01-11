@@ -19,7 +19,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import s.g;
 
-public class I extends aV implements bc {
+public class SettingCalibrationField extends aV implements bc {
   JButton a;
   
   bk b;

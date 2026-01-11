@@ -2,7 +2,7 @@ package bt;
 
 import bH.X;
 
-class z {
+class ComboBoxItem {
   String a = null;
   
   String b = null;

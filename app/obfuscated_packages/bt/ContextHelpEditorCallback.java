@@ -2,7 +2,7 @@ package bt;
 
 import com.efiAnalytics.ui.fi;
 
-class n implements fi {
+class ContextHelpEditorCallback implements fi {
   n(l paraml) {}
   
   public void a(String paramString) {

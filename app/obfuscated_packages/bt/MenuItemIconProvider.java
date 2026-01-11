@@ -10,7 +10,7 @@ import java.awt.Toolkit;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-public class w {
+public class MenuItemIconProvider {
   String[] a = new String[] { "resources/wrench.png", "resources/tools.gif", "resources/hammer.gif" };
   
   int b = 0;

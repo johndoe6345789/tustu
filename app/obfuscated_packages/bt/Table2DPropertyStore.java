@@ -3,7 +3,7 @@ package bt;
 import com.efiAnalytics.ui.et;
 import r.a;
 
-class Z implements et {
+class Table2DPropertyStore implements et {
   Z(W paramW) {}
   
   public void a(String paramString1, String paramString2) {

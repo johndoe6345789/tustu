@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class v extends MouseAdapter {
+class LiveGraphMouseAdapter extends MouseAdapter {
   v(s params) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {

@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import s.g;
 
-public class j extends JLabel {
+public class HelpIconLabel extends JLabel {
   ImageIcon a = null;
   
   String b = null;

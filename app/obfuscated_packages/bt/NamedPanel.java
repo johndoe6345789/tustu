@@ -2,7 +2,7 @@ package bt;
 
 import javax.swing.JPanel;
 
-public class g extends JPanel {
+public class NamedPanel extends JPanel {
   private String a = null;
   
   public String a_() {

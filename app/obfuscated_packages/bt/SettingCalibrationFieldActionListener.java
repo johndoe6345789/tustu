@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class J implements ActionListener {
+class SettingCalibrationFieldActionListener implements ActionListener {
   J(I paramI) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {

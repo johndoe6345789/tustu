@@ -3,7 +3,7 @@ package bt;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class f extends Thread {
+class EnableDelayThread extends Thread {
   int a = 100;
   
   long b = System.currentTimeMillis() + this.a;

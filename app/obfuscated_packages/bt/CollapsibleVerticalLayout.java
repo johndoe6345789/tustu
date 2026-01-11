@@ -13,7 +13,7 @@ import java.awt.event.FocusListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class q implements LayoutManager2, ContainerListener, FocusListener {
+public class CollapsibleVerticalLayout implements LayoutManager2, ContainerListener, FocusListener {
   int a;
   
   int b = 2;

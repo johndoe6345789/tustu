@@ -3,7 +3,7 @@ package bt;
 import com.efiAnalytics.ui.et;
 import r.a;
 
-public class i implements et {
+public class PrefixedPropertyStore implements et {
   String a = "";
   
   public i(String paramString) {

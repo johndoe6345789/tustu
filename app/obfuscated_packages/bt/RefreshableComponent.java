@@ -1,6 +1,6 @@
 package bt;
 
-public interface h {
+public interface RefreshableComponent {
   void a();
 }
 

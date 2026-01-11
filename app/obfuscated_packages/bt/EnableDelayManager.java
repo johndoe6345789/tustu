@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class e implements S, ab {
+public class EnableDelayManager implements S, ab {
   private static e d = null;
   
   HashMap a = new HashMap<>();

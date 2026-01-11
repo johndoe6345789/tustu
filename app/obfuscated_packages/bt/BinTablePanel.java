@@ -31,7 +31,7 @@ import java.util.logging.Logger;
 import javax.swing.JPanel;
 import r.i;
 
-public class T extends JPanel implements aN, cq, L, bP, d, bc {
+public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier, bP, d, bc {
   bh a;
   
   d b;

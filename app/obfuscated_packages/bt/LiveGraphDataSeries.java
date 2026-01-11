@@ -5,7 +5,7 @@ import com.efiAnalytics.apps.ts.dashboard.aH;
 import com.efiAnalytics.ui.cy;
 import java.awt.Color;
 
-class t extends aH implements cy {
+class LiveGraphDataSeries extends aH implements cy {
   private String b = null;
   
   private double c = 0.0D;

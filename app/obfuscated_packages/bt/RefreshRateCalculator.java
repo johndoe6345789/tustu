@@ -2,7 +2,7 @@ package bt;
 
 import r.a;
 
-public class x {
+public class RefreshRateCalculator {
   public static double a() {
     int i = b();
     return (i > 10) ? (Math.pow(i, 0.3D) / 6.0D) : 15.0D;

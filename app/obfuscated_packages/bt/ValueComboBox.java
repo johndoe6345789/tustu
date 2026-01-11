@@ -6,7 +6,7 @@ import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import javax.swing.JComboBox;
 
-public class y extends JComboBox implements ItemListener {
+public class ValueComboBox extends JComboBox implements ItemListener {
   ArrayList a = new ArrayList();
   
   private int b = 1;

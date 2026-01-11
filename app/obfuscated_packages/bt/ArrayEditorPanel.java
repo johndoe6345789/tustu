@@ -32,7 +32,7 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import s.g;
 
-public class R extends JPanel implements cq, h, bc {
+public class ArrayEditorPanel extends JPanel implements cq, h, bc {
   ArrayList a = new ArrayList();
   
   ArrayList b = new ArrayList();

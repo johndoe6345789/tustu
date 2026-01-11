@@ -4,7 +4,7 @@ import G.R;
 import G.bv;
 import javax.swing.JPanel;
 
-public interface N {
+public interface CustomEditorPanelProvider {
   boolean a(bv parambv);
   
   JPanel a(R paramR, bv parambv);

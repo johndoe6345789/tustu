@@ -20,7 +20,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import s.g;
 
-public class P implements ActionListener {
+public class TuningMenuBuilder implements ActionListener {
   private int c = -1;
   
   List a = new ArrayList();

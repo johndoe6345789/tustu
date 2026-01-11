@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class S implements FocusListener {
+class ArrayEditorFocusListener implements FocusListener {
   int a = -1;
   
   S(R paramR, int paramInt) {

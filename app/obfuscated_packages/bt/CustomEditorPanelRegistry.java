@@ -4,7 +4,7 @@ import G.bv;
 import java.util.ArrayList;
 import java.util.List;
 
-public class M {
+public class CustomEditorPanelRegistry {
   private static M a = null;
   
   private final List b = new ArrayList();

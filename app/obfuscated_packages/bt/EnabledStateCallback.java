@@ -1,6 +1,6 @@
 package bt;
 
-public interface o {
+public interface EnabledStateCallback {
   void a(boolean paramBoolean);
   
   String c();

@@ -1,6 +1,6 @@
 package bt;
 
-public interface L {
+public interface TextChangeNotifier {
   void a(K paramK);
   
   void b(K paramK);

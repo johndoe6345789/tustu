@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.bq;
 import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 
-public class O extends JMenu implements bq {
+public class TuningMenuBar extends JMenu implements bq {
   P a = new P();
   
   public O(R paramR, int paramInt) {

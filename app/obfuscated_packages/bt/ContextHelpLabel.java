@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import s.g;
 
-public class l extends JLabel {
+public class ContextHelpLabel extends JLabel {
   R a = null;
   
   String b = null;

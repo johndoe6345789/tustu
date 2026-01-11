@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class s extends dl implements cq, bc {
+public class LiveGraphPanel extends dl implements cq, bc {
   private HashMap c = new HashMap<>();
   
   u a = null;

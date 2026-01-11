@@ -3,7 +3,7 @@ package bt;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class U implements FocusListener {
+class BinTableFocusListener implements FocusListener {
   U(T paramT) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {

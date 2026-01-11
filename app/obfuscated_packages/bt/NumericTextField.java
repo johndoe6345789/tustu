@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import java.util.ArrayList;
 import javax.swing.BorderFactory;
 
-public class A extends do {
+public class NumericTextField extends do {
   ArrayList a = new ArrayList();
   
   private int b = 60;

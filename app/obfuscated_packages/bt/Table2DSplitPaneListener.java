@@ -3,7 +3,7 @@ package bt;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-class Y implements PropertyChangeListener {
+class Table2DSplitPaneListener implements PropertyChangeListener {
   Y(W paramW) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {

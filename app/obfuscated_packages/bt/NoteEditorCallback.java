@@ -2,7 +2,7 @@ package bt;
 
 import com.efiAnalytics.ui.fi;
 
-class c implements fi {
+class NoteEditorCallback implements fi {
   c(a parama) {}
   
   public void a(String paramString) {

@@ -31,7 +31,7 @@ import java.util.logging.Logger;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-public class D extends bh implements ca, h, ac, bc {
+public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
   dD a = new dD(this);
   
   GridLayout b = new GridLayout(0, 1, eJ.a(3), eJ.a(4));

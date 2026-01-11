@@ -8,7 +8,7 @@ import V.a;
 import bF.d;
 import bH.D;
 
-public class F implements cq, bP {
+public class TableOutputChannelSubscriber implements cq, bP {
   double a = Double.NaN;
   
   T b;
