@@ -17,20 +17,20 @@ public class ThrottleCalibrationGenerator {
     f.a("");
     f.a("\tLow ADC = " + paramInt1 + "  \tHigh ADC = " + paramInt2);
     f.a("");
-    G[] arrayOfG = new G[257];
-    arrayOfG[0] = new G(this);
+    CalibrationDataRow[] arrayOfG = new CalibrationDataRow[257];
+    arrayOfG[0] = new CalibrationDataRow(this);
     arrayOfG[0].a("ADC");
     for (byte b = 1; b < arrayOfG.length; b++) {
       int i = b - 1;
       int j = -1;
       j = Math.round(100.0F * (i - paramInt1) / (paramInt2 - paramInt1));
-      arrayOfG[b] = new G(this, "DB", "" + j, "" + i);
+      arrayOfG[b] = new CalibrationDataRow(this, "DB", "" + j, "" + i);
     } 
     File file = new File(paramString, "throttlefactor.inc");
     return a(file, f, arrayOfG);
   }
   
-  public File a(File paramFile, F paramF, G[] paramArrayOfG) {
+  public File a(File paramFile, F paramF, CalibrationDataRow[] paramArrayOfG) {
     try {
       if (paramFile.exists() && !paramFile.delete())
         throw new a("Unable to delete existing inc file! Check permissions.\n" + paramFile.getAbsolutePath()); 

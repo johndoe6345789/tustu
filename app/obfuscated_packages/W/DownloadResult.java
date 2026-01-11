@@ -2,7 +2,7 @@ package W;
 
 import java.io.File;
 
-public class R {
+public class DownloadResult {
   private boolean a = false;
   
   private long b = -1L;

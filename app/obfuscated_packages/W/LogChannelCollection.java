@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class n extends ArrayList {
+public class LogChannelCollection extends ArrayList {
   private HashMap c = new HashMap<>();
   
   private HashMap d = new HashMap<>();

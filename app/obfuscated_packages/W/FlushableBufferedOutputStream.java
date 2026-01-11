@@ -4,10 +4,10 @@ import bH.D;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 
-public class e extends BufferedOutputStream {
+public class FlushableBufferedOutputStream extends BufferedOutputStream {
   FileOutputStream a;
   
-  public e(FileOutputStream paramFileOutputStream) {
+  public FlushableBufferedOutputStream(FileOutputStream paramFileOutputStream) {
     super(paramFileOutputStream);
     this.a = paramFileOutputStream;
   }

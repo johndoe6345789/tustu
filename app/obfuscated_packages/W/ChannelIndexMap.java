@@ -2,7 +2,7 @@ package W;
 
 import java.util.HashMap;
 
-public class Z {
+public class ChannelIndexMap {
   private Float a = Float.valueOf(1.0E7F);
   
   private HashMap b = new HashMap<>();

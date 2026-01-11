@@ -2,7 +2,7 @@ package W;
 
 import bH.c;
 
-public class a implements T {
+public class OutputChannelImpl implements OutputChannelDefinition {
   private String a = "";
   
   private String b = "";

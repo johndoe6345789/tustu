@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class X {
+public class LogFormatIdentifier {
   public static String a = "delimitedAscii";
   
   public static String b = "VTune Data+";

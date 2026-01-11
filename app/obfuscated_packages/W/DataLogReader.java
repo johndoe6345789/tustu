@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public abstract class V {
+public abstract class DataLogReader {
   Map c = new HashMap<>();
   
   public static boolean d = true;

@@ -13,7 +13,7 @@ public class CalibrationDataRow {
     this.d = paramString3;
   }
   
-  public G(E paramE) {}
+  public CalibrationDataRow(ThrottleCalibrationGenerator paramE) {}
   
   public String a() {
     return this.b;

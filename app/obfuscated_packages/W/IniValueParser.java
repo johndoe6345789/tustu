@@ -2,7 +2,7 @@ package W;
 
 import java.util.ArrayList;
 
-public class Q {
+public class IniValueParser {
   public static String a(String paramString) {
     return paramString.substring(paramString.indexOf("=") + 1, paramString.length()).trim();
   }

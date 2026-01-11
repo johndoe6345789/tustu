@@ -12,7 +12,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class o {
+public class DelimitedLogWriter {
   private File g = null;
   
   Writer a = null;
@@ -29,7 +29,7 @@ public class o {
   
   String f = "";
   
-  private o(String paramString) {
+  private DelimitedLogWriter(String paramString) {
     this.g = new File(paramString);
     this.a = new BufferedWriter(new FileWriter(this.g));
   }

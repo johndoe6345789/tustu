@@ -1,6 +1,6 @@
 package W;
 
-public interface i {
+public interface StringCallback {
   void a(String paramString);
 }
 

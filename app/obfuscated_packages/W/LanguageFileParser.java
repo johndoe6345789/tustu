@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.model.FileHeader;
 
-public class g {
+public class LanguageFileParser {
   private String a = "efiaLangFile!";
   
   public Map a(File paramFile) {

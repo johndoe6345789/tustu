@@ -1,6 +1,6 @@
 package W;
 
-public interface T {
+public interface OutputChannelDefinition {
   String a();
   
   String b();

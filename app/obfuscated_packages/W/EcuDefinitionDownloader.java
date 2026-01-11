@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class w {
-  public static R a(String paramString) {
+public class EcuDefinitionDownloader {
+  public static DownloadResult a(String paramString) {
     if (paramString.toLowerCase().startsWith("speeduino"))
       return b(paramString); 
     if (paramString.toLowerCase().startsWith("rusefi"))

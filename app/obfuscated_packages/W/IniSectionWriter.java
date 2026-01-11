@@ -3,7 +3,7 @@ package W;
 import G.R;
 import java.io.BufferedWriter;
 
-public interface O {
+public interface IniSectionWriter {
   String a();
   
   String b();

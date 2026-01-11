@@ -2,7 +2,7 @@ package W;
 
 import V.a;
 
-public class m extends a {
+public class RecoverableException extends a {
   private boolean a = true;
   
   public m(String paramString) {

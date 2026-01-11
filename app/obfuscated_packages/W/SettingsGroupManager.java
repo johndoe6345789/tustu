@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class v {
-  private static v a = null;
+public class SettingsGroupManager {
+  private static SettingsGroupManager a = null;
   
   private s[] b = null;
   

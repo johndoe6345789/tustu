@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class U {
+public class FileTypeDetector {
   public static boolean a(File paramFile) {
     FileInputStream fileInputStream;
     if (paramFile == null || !paramFile.exists())

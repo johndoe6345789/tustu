@@ -3,7 +3,7 @@ package W;
 import bH.D;
 import java.io.File;
 
-class x extends Thread {
+class EcuDefinitionUpdateThread extends Thread {
   String a;
   
   double b;

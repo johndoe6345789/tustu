@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public class j implements R {
+public class LogChannel implements R {
   public String a = null;
   
   private String e = null;

@@ -1,0 +1,33 @@
+package L;
+
+import ax.S;
+import ax.ac;
+import java.util.List;
+
+public abstract class AbstractListFunction extends ac {
+  List b;
+  
+  protected r(List paramList) {
+    this.b = paramList;
+  }
+  
+  public abstract String a();
+  
+  public abstract int b();
+  
+  public abstract int c();
+  
+  public abstract double a(S paramS);
+  
+  public double b(S paramS) {
+    return a(paramS);
+  }
+  
+  public abstract r a(List paramList);
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/r.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

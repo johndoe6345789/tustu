@@ -3,7 +3,7 @@ package W;
 import V.a;
 import java.util.ArrayList;
 
-public interface Y {
+public interface DataChangeListener {
   void a(ArrayList paramArrayList, long paramLong);
   
   boolean a(long paramLong);

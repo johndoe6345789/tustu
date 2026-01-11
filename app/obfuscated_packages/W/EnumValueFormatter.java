@@ -2,7 +2,7 @@ package W;
 
 import java.util.List;
 
-public class l implements k {
+public class EnumValueFormatter implements ValueFormatter {
   private String[] a;
   
   public l(List paramList) {

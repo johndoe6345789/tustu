@@ -2,7 +2,7 @@ package W;
 
 import java.util.ArrayList;
 
-public class N extends ArrayList {
+public class IniSection extends ArrayList {
   private String a = null;
   
   public String a() {

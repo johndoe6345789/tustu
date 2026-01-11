@@ -1,7 +1,7 @@
 package W;
 
-public class S extends Exception {
-  public S(String paramString) {
+public class IniParseException extends Exception {
+  public IniParseException(String paramString) {
     super(paramString);
   }
 }

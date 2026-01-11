@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public abstract class b extends V {
+public abstract class BinaryDataLogReader extends DataLogReader {
   private BufferedInputStream e = null;
   
-  private c f = null;
+  private BinaryLogConfiguration f = null;
   
   private byte[] g = null;
   

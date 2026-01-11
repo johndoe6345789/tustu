@@ -1,6 +1,6 @@
 package W;
 
-public interface k {
+public interface ValueFormatter {
   String a(float paramFloat);
 }
 

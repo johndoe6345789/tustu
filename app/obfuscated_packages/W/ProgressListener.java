@@ -1,6 +1,6 @@
 package W;
 
-public interface q {
+public interface ProgressListener {
   void started(long paramLong);
   
   void updateProgress(long paramLong, double paramDouble);

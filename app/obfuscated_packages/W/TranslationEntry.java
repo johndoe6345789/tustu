@@ -2,7 +2,7 @@ package W;
 
 import bH.X;
 
-public class h {
+public class TranslationEntry {
   private String a = null;
   
   private String b = null;

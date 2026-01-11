@@ -3,22 +3,22 @@ package W;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class c {
+public class BinaryLogConfiguration {
   private int b = 0;
   
   private int c = 0;
   
   private int d = 0;
   
-  private a e = null;
+  private OutputChannelImpl e = null;
   
   ArrayList a = new ArrayList();
   
-  public void a(a parama) {
+  public void a(OutputChannelImpl parama) {
     this.a.add(parama);
   }
   
-  public a a(int paramInt) {
+  public OutputChannelImpl a(int paramInt) {
     return this.a.get(paramInt);
   }
   

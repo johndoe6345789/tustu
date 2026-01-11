@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class d {
+public class FileByteUtils {
   public static byte[] a(File paramFile) {
     byte[] arrayOfByte = new byte[(int)paramFile.length()];
     BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(paramFile));

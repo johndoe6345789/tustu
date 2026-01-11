@@ -10,16 +10,16 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class W {
-  private static W a = null;
+public class DataLogReaderFactory {
+  private static DataLogReaderFactory a = null;
   
   private Map b = new HashMap<>();
   
-  private p c = null;
+  private LogPreferences c = null;
   
-  public static W a() {
+  public static DataLogReaderFactory a() {
     if (a == null)
-      a = new W(); 
+      a = new DataLogReaderFactory();
     return a;
   }
   

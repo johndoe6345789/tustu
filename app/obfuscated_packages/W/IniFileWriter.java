@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class P {
+public class IniFileWriter {
   private OutputStreamWriter c = null;
   
   private BufferedWriter d = null;

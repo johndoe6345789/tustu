@@ -2,7 +2,7 @@ package W;
 
 import G.Q;
 
-public interface r {
+public interface ConstantFilter {
   boolean a(Q paramQ);
 }
 

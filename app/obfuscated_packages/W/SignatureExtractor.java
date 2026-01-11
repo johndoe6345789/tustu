@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class z {
+public class SignatureExtractor {
   public static String a(String paramString) {
     return a(new File(paramString));
   }

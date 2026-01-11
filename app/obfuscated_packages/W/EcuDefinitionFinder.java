@@ -3,7 +3,7 @@ package W;
 import java.io.File;
 import java.io.IOException;
 
-public class t {
+public class EcuDefinitionFinder {
   public static String a = null;
   
   public static File a(File[] paramArrayOfFile, String paramString) {

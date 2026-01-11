@@ -1,6 +1,6 @@
 package W;
 
-public interface p {
+public interface LogPreferences {
   boolean a();
   
   String b();

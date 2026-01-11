@@ -12,7 +12,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class s {
+public class EncodingAwareReader {
   public static BufferedReader a(File paramFile) {
     BufferedReader bufferedReader;
     try {

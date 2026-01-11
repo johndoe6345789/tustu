@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class y extends OutputStream {
+public class CompressingOutputStream extends OutputStream {
   OutputStream a;
   
   private String d = "";

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class f implements bQ {
+class EncodedDataLoader implements bQ {
   File a;
   
   File b;
