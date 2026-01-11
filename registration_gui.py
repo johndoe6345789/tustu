@@ -221,7 +221,8 @@ class KeyGeneratorTab(QWidget):
         
         input_group.setLayout(input_layout)
         layout.addWidget(input_group)
-        Button layout
+        
+        # Button layout
         button_layout = QHBoxLayout()
         
         # Generate button
