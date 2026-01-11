@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 class BqInterfaceGolf implements BnInterfaceFoxtrot {
   long a = 0L;
   
-  g(BnInterfaceFoxtrot paramf) {}
+  BqInterfaceGolf(BnInterfaceFoxtrot paramf) {}
   
   public void a(BnInterfaceTango paramt) {
     if (paramt instanceof TostringInBnPackage) {

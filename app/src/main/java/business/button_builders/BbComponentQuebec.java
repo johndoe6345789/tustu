@@ -1,7 +1,7 @@
 package bb;
 
 class BbComponentQuebec implements Runnable {
-  q(p paramp, String paramString) {}
+  BbComponentQuebec(p paramp, String paramString) {}
   
   public void run() {
     p.a(this.b, this.a);

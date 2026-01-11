@@ -10,11 +10,11 @@ class LabeledInputPanel extends JPanel {
   
   JLabel b = null;
   
-  ea(dS paramdS, String paramString1, String paramString2) {
+  LabeledInputPanel(dS paramdS, String paramString1, String paramString2) {
     this(paramdS, paramString1, paramString2, false);
   }
   
-  ea(dS paramdS, String paramString1, String paramString2, boolean paramBoolean) {
+  LabeledInputPanel(dS paramdS, String paramString1, String paramString2, boolean paramBoolean) {
     setLayout(new BorderLayout());
     JLabel jLabel = new JLabel(paramString1 + " ");
     jLabel.setHorizontalAlignment(4);

@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 class JLabelExtension extends JLabel {
   int a = 80;
   
-  k(e parame, String paramString) {
+  JLabelExtension(e parame, String paramString) {
     super(paramString, 4);
   }
   

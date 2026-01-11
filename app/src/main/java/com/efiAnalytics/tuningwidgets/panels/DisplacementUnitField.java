@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bH.X;
 import com.efiAnalytics.ui.NumericTextField;
 
-class DisplacementUnitField extends do {
+class DisplacementUnitField extends NumericTextField {
   boolean a = false;
   
   DisplacementUnitField(RequiredFuelCalculatorDialog paraman) {}

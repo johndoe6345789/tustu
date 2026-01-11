@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 
 class AqInterfaceGolf implements ActionListener {
-  g(a parama, JDialog paramJDialog) {}
+  AqInterfaceGolf(a parama, JDialog paramJDialog) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (a.f(this.b))

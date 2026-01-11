@@ -8,7 +8,7 @@ class IpSearchMonitorThread extends Thread {
   
   boolean b = false;
   
-  d(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
+  IpSearchMonitorThread(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
   
   public void run() {
     while (!this.b) {

@@ -5,7 +5,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 class WindowAdapterExtensionWindowclosing extends WindowAdapter {
-  iM(iL paramiL, ManagerPaint paramd) {}
+  WindowAdapterExtensionWindowclosing(iL paramiL, ManagerPaint paramd) {}
   
   public void windowClosing(WindowEvent paramWindowEvent) {
     this.a.close();

@@ -4,10 +4,10 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class TextFieldSelectAllListener implements FocusListener {
-  av(BinTableView paramBinTableView) {}
+  TextFieldSelectAllListener(BinTableView paramBinTableView) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
-    ((do)paramFocusEvent.getSource()).selectAll();
+    ((NumericTextField)paramFocusEvent.getSource()).selectAll();
   }
   
   public void focusLost(FocusEvent paramFocusEvent) {}

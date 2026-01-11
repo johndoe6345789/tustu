@@ -6,7 +6,7 @@ import java.util.Properties;
 class TablePropertiesHandler implements et {
   private Properties b = new Properties();
   
-  f(SelectableTable paramSelectableTable) {}
+  TablePropertiesHandler(SelectableTable paramSelectableTable) {}
   
   public void a(String paramString1, String paramString2) {
     a().setProperty(paramString1, paramString2);

@@ -7,7 +7,7 @@ class ZComponentDeltaTostring {
   
   private String c = null;
   
-  an(ad paramad, ZComponentDelta paramd) {
+  ZComponentDeltaTostring(ad paramad, ZComponentDelta paramd) {
     this.b = paramd;
   }
   

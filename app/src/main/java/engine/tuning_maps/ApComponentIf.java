@@ -10,7 +10,7 @@ import bH.D;
 class ApComponentIf implements GInterfaceAn {
   CloneableImpl a;
   
-  if(ie paramie, CloneableImpl paramd) {
+  ApComponentIf(ie paramie, CloneableImpl paramd) {
     this.a = paramd;
   }
   

@@ -5,7 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApComponentDo extends Thread {
-  do(dl paramdl, ThreadedInAzPackage paramo) {}
+  ApComponentDo(dl paramdl, ThreadedInAzPackage paramo) {}
   
   public void run() {
     try {

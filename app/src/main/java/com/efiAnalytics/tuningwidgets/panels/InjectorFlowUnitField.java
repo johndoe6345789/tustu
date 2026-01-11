@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bH.X;
 import com.efiAnalytics.ui.NumericTextField;
 
-class InjectorFlowUnitField extends do {
+class InjectorFlowUnitField extends NumericTextField {
   boolean a = false;
   
   InjectorFlowUnitField(RequiredFuelCalculatorDialog paraman) {}

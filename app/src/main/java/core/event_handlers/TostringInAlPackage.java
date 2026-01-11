@@ -10,7 +10,7 @@ class TostringInAlPackage {
   
   Line.Info c;
   
-  e(a parama, Mixer.Info paramInfo, Mixer paramMixer, Line.Info paramInfo1) {
+  TostringInAlPackage(a parama, Mixer.Info paramInfo, Mixer paramMixer, Line.Info paramInfo1) {
     this.a = paramInfo;
     this.b = paramMixer;
     this.c = paramInfo1;

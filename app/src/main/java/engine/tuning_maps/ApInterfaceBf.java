@@ -4,7 +4,7 @@ import A.Threaded;
 import java.util.List;
 
 class ApInterfaceBf extends Thread {
-  bf(aY paramaY, Threaded paramj, List paramList) {}
+  ApInterfaceBf(aY paramaY, Threaded paramj, List paramList) {}
   
   public void run() {
     this.a.a(this.b);

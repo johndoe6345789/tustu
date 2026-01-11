@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInGPackage extends Thread {
-  ao(an paraman, String paramString) {
+  ThreadExtensionInGPackage(an paraman, String paramString) {
     super(paramString);
   }
   

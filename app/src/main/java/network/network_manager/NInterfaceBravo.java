@@ -9,7 +9,7 @@ class NInterfaceBravo implements AInterfaceEcho {
   
   private BsInterfaceRomeo c;
   
-  b(a parama, BsInterfaceOscar paramo, BsInterfaceRomeo paramr) {
+  NInterfaceBravo(a parama, BsInterfaceOscar paramo, BsInterfaceRomeo paramr) {
     this.b = paramo;
     this.c = paramr;
   }

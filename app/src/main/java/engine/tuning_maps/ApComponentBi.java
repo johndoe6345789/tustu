@@ -13,7 +13,7 @@ class ApComponentBi {
   
   private String e;
   
-  bi(aY paramaY, String paramString1, List paramList, String paramString2, AeInterfaceMikeTostring parambT) {
+  ApComponentBi(aY paramaY, String paramString1, List paramList, String paramString2, AeInterfaceMikeTostring parambT) {
     this.b = paramString1;
     this.c = paramList;
     this.d = parambT;

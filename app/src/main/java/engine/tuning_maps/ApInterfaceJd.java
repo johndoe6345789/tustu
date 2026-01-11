@@ -3,7 +3,7 @@ package aP;
 import java.awt.Frame;
 
 class ApInterfaceJd implements Runnable {
-  jD(jC paramjC, Frame paramFrame) {}
+  ApInterfaceJd(jC paramjC, Frame paramFrame) {}
   
   public void run() {
     f.a().c(this.a);

@@ -8,7 +8,7 @@ class IopropertiesusingfileInTPackage implements et {
   
   String b = "dashCompProperty_";
   
-  ah(w paramw, String paramString) {
+  IopropertiesusingfileInTPackage(w paramw, String paramString) {
     this.IOPropertiesUsingFile = paramString;
   }
   

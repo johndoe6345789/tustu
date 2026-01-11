@@ -20,7 +20,7 @@ class ThreadedInAoPackage implements Y, aQ {
   
   final aQ d = this;
   
-  g(ExceptionInVPackage parama) {}
+  ThreadedInAoPackage(ExceptionInVPackage parama) {}
   
   public void ExceptionInVPackage(ArrayList paramArrayList, long paramLong) {
     try {

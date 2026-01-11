@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceIx implements Runnable {
-  iX(iW paramiW, String paramString) {}
+  ApInterfaceIx(iW paramiW, String paramString) {}
   
   public void run() {
     this.b.c.setText(this.a);

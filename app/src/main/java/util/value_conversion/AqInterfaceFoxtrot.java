@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 
 class AqInterfaceFoxtrot implements ActionListener {
-  f(a parama, JDialog paramJDialog) {}
+  AqInterfaceFoxtrot(a parama, JDialog paramJDialog) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (a.e(this.b))

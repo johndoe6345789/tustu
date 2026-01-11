@@ -9,7 +9,7 @@ public class UnsupportedFeatureFunction extends AbstractInAxPackage {
   
   boolean b = false;
   
-  g(String paramString) {
+  UnsupportedFeatureFunction(String paramString) {
     this.a = paramString;
   }
   

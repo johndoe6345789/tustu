@@ -7,12 +7,12 @@ class ComboBoxItem {
   
   String b = null;
   
-  z(y paramy, String paramString1, String paramString2) {
+  ComboBoxItem(y paramy, String paramString1, String paramString2) {
     this.a = paramString2;
     this.b = paramString1;
   }
   
-  z(y paramy, String paramString) {
+  ComboBoxItem(y paramy, String paramString) {
     this.b = paramString;
   }
   

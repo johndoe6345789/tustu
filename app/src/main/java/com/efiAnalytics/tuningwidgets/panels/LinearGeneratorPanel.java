@@ -11,13 +11,13 @@ import s.SComponentGolf;
 public class LinearGeneratorPanel extends aL {
   GComponentBu a = null;
   
-  do b = new NumericTextField();
+  NumericTextField b = new NumericTextField();
   
-  do c = new NumericTextField();
+  NumericTextField c = new NumericTextField();
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
-  do e = new NumericTextField();
+  NumericTextField e = new NumericTextField();
   
   public LinearGeneratorPanel(GComponentBu parambu) {
     this.a = parambu;

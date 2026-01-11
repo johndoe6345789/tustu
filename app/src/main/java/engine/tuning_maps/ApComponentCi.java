@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class ApComponentCi extends Thread {
-  ci(cc paramcc, Runnable paramRunnable) {}
+  ApComponentCi(cc paramcc, Runnable paramRunnable) {}
   
   public void run() {
     try {

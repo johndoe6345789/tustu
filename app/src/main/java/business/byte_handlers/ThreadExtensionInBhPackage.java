@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class ThreadExtensionInBhPackage extends Thread {
-  g(b paramb, Runnable paramRunnable) {}
+  ThreadExtensionInBhPackage(b paramb, Runnable paramRunnable) {}
   
   public void run() {
     SwingUtilities.invokeLater(this.a);

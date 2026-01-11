@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
 class ActionListenerInMPackage implements ActionListener {
-  e(d paramd, JButton paramJButton) {}
+  ActionListenerInMPackage(d paramd, JButton paramJButton) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     d.a(this.b, this.a, 0, this.a.getHeight());

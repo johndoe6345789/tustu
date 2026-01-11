@@ -5,7 +5,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 class WindowAdapterExtensionInApPackage extends WindowAdapter {
-  iN(iL paramiL, UICloseInBjPackage parama) {}
+  WindowAdapterExtensionInApPackage(iL paramiL, UICloseInBjPackage parama) {}
   
   public void windowClosing(WindowEvent paramWindowEvent) {
     this.UICloseInBjPackage.close();

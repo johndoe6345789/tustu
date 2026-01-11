@@ -7,10 +7,10 @@ import javax.swing.DefaultCellEditor;
 class BinTableCellEditor extends DefaultCellEditor {
   BinTableCellEditor(BinTableView paramBinTableView) {
     super(new NumericTextField());
-    do do = (do)getComponent();
-    do.setFont(paramBinTableView.getFont());
-    do.setHorizontalAlignment(0);
-    do.addKeyListener(new aC(this, paramBinTableView));
+    NumericTextField numericTextField = (NumericTextField)getComponent();
+    numericTextField.setFont(paramBinTableView.getFont());
+    numericTextField.setHorizontalAlignment(0);
+    numericTextField.addKeyListener(new aC(this, paramBinTableView));
   }
   
   public boolean shouldSelectCell(EventObject paramEventObject) {
@@ -21,9 +21,9 @@ class BinTableCellEditor extends DefaultCellEditor {
   }
   
   public void a() {
-    do do = (do)getComponent();
-    do.setText(X.b(do.getText(), this.a.a));
-    do.selectAll();
+    NumericTextField numericTextField = (NumericTextField)getComponent();
+    numericTextField.setText(X.b(numericTextField.getText(), this.a.a));
+    numericTextField.selectAll();
   }
 }
 

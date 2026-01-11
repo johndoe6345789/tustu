@@ -6,7 +6,7 @@ import java.util.Objects;
 class TostringInPPackage {
   private DComponentCharlie b;
   
-  l(g paramg, DComponentCharlie paramc) {
+  TostringInPPackage(g paramg, DComponentCharlie paramc) {
     this.b = paramc;
   }
   

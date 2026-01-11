@@ -4,7 +4,7 @@ import java.io.File;
 import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
 
 class ApComponentZulu implements Runnable {
-  z(f paramf, File paramFile) {}
+  ApComponentZulu(f paramf, File paramFile) {}
   
   public void run() {
     Isoptimizeddrawingenabled Isoptimizeddrawingenabled = dd.a().i().a();

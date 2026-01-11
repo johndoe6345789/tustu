@@ -5,7 +5,7 @@ import G.GComponentCd;
 class TostringInAoPackage {
   private GComponentCd b = null;
   
-  i(a parama, GComponentCd paramcd) {
+  TostringInAoPackage(a parama, GComponentCd paramcd) {
     this.b = paramcd;
   }
   

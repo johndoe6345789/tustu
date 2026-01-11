@@ -5,7 +5,7 @@ import c.CInterfaceEcho;
 import com.efiAnalytics.tuningwidgets.panels.W;
 
 class CInterfaceEchoImplInApPackage implements CInterfaceEcho {
-  bq(bl parambl, ArrayListExceptionprintstacktraceInGPackage parambv) {}
+  CInterfaceEchoImplInApPackage(bl parambl, ArrayListExceptionprintstacktraceInGPackage parambv) {}
   
   public boolean a() {
     return W.a(this.b.c, this.a);

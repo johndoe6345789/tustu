@@ -7,7 +7,7 @@ import r.IOPropertiesUsingFile;
 class FileFilterImpl implements FileFilter {
   String IOPropertiesUsingFile = "";
   
-  iq(String paramString) {
+  FileFilterImpl(String paramString) {
     this.IOPropertiesUsingFile = paramString;
   }
   

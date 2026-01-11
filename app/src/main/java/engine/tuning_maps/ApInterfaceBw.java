@@ -10,7 +10,7 @@ class ApInterfaceBw implements CInterfaceEcho {
   
   R b = null;
   
-  bw(bl parambl, String paramString, R paramR) {
+  ApInterfaceBw(bl parambl, String paramString, R paramR) {
     this.a = paramString;
     this.b = paramR;
   }

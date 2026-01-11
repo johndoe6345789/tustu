@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CrossHairPopupListener implements ActionListener {
-  g(TableCellCrossHair paramTableCellCrossHair) {}
+  CrossHairPopupListener(TableCellCrossHair paramTableCellCrossHair) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     TableCellCrossHair.access$000(this.a, this.a.d.getX(), this.a.d.getY() + this.a.d.getHeight());

@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 class JLabelExtensionGetpreferredsize extends JLabel {
   int a = eJ.a(90);
   
-  f(a parama, String paramString) {
+  JLabelExtensionGetpreferredsize(a parama, String paramString) {
     super(paramString, 4);
   }
   

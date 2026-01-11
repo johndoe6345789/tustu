@@ -16,7 +16,7 @@ class TableModelListenerExceptioninvpackage implements TableModelListener {
   
   String c = null;
   
-  bR(bQ parambQ, s params, String paramString1, String paramString2) {
+  TableModelListenerExceptioninvpackage(bQ parambQ, s params, String paramString1, String paramString2) {
     this.ExceptionInVPackage = params;
     this.c = paramString1;
     this.b = paramString2;

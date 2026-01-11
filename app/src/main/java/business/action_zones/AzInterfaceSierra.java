@@ -13,7 +13,7 @@ class AzInterfaceSierra extends Thread {
   
   IOTostring a;
   
-  s(o paramo, IOTostring paramb) {
+  AzInterfaceSierra(o paramo, IOTostring paramb) {
     this.a = paramb;
   }
   

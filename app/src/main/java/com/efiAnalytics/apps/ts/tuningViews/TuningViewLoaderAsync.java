@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class TuningViewLoaderAsync extends Thread {
-  p(n paramn, List paramList) {}
+  TuningViewLoaderAsync(n paramn, List paramList) {}
   
   public void run() {
     ArrayList<k> arrayList = new ArrayList();

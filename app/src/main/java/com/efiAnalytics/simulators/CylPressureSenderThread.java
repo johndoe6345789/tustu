@@ -11,7 +11,7 @@ class CylPressureSenderThread extends Thread {
   
   int b = 2000;
   
-  a(UdpCylPressureSimulator paramUdpCylPressureSimulator) {}
+  CylPressureSenderThread(UdpCylPressureSimulator paramUdpCylPressureSimulator) {}
   
   public void run() {
     while (this.a) {

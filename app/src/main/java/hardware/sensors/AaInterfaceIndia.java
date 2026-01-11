@@ -3,7 +3,7 @@ package aA;
 import ay.AyComponentHotel;
 
 class AaInterfaceIndia implements AyComponentHotel {
-  i(AyComponentHotel paramh) {}
+  AaInterfaceIndia(AyComponentHotel paramh) {}
   
   public void a(boolean paramBoolean) {
     if (paramBoolean) {

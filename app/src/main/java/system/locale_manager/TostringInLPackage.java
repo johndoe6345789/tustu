@@ -12,7 +12,7 @@ public class TostringInLPackage extends r {
     super(null);
   }
   
-  a(List paramList) {
+  TostringInLPackage(List paramList) {
     super(paramList);
   }
   

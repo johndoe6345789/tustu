@@ -16,7 +16,7 @@ public class AnInterfaceDelta extends a {
   
   double i;
   
-  d(am.d paramd, TostringInAmPackage paramb) {
+  AnInterfaceDelta(am.d paramd, TostringInAmPackage paramb) {
     super(paramd, paramb);
     if (paramb == null)
       throw new IOException("CCBLOCK Cannot be null for Rational Convertion"); 

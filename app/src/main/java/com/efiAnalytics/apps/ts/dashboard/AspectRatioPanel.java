@@ -18,9 +18,9 @@ import javax.swing.JPanel;
 import s.SComponentGolf;
 
 public class AspectRatioPanel extends JPanel {
-  do a = new NumericTextField("", 4);
+  NumericTextField a = new NumericTextField("", 4);
   
-  do b = new NumericTextField("", 4);
+  NumericTextField b = new NumericTextField("", 4);
   
   Dimension c = eJ.a(200, 10);
   

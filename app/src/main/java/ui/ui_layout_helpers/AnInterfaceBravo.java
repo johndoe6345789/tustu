@@ -9,7 +9,7 @@ public class AnInterfaceBravo extends a {
   
   double e;
   
-  b(AmInterfaceDelta paramd, am.b paramb) {
+  AnInterfaceBravo(AmInterfaceDelta paramd, am.b paramb) {
     super(paramd, paramb);
     if (paramb == null)
       throw new IOException("CCBLOCK Cannot be null for Linear Convertion"); 

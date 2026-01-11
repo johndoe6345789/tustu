@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class BinTableUpdateRunner implements Runnable {
-  ap(BinTableView paramBinTableView) {}
+  BinTableUpdateRunner(BinTableView paramBinTableView) {}
   
   public void run() {
     this.a.u();

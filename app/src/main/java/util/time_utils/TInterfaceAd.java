@@ -17,7 +17,7 @@ class TInterfaceAd extends bn implements f {
   
   private boolean SComponentGolf = false;
   
-  aD(Window paramWindow, String paramString) {
+  TInterfaceAd(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new aE(this));
     this.c.setMinimum(this.a);

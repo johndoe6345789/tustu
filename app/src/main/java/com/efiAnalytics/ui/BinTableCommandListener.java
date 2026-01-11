@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BinTableCommandListener implements ActionListener {
-  au(BinTableView paramBinTableView) {}
+  BinTableCommandListener(BinTableView paramBinTableView) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a(paramActionEvent.getActionCommand());

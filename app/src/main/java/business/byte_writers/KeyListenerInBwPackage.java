@@ -12,7 +12,7 @@ class KeyListenerInBwPackage implements KeyListener {
   public void keyPressed(KeyEvent paramKeyEvent) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
-    ((do)paramKeyEvent.getSource()).d();
+    ((NumericTextField)paramKeyEvent.getSource()).d();
     this.a.a();
   }
 }

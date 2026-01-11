@@ -6,7 +6,7 @@ import com.efiAnalytics.plugin.ecu.ControllerParameterChangeListener;
 class ControllerParameterChangeListener implements GInterfaceAn {
   private ControllerParameterChangeListener b = null;
   
-  d(c paramc, ControllerParameterChangeListener paramControllerParameterChangeListener) {
+  ControllerParameterChangeListener(c paramc, ControllerParameterChangeListener paramControllerParameterChangeListener) {
     a(paramControllerParameterChangeListener);
   }
   

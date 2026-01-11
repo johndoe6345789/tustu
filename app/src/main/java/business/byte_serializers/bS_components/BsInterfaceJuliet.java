@@ -17,7 +17,7 @@ public class BsInterfaceJuliet implements BnInterfaceFoxtrot, BnInterfaceGolf {
   
   BnInterfaceKilo b;
   
-  j(BnInterfaceOscar paramo) {
+  BsInterfaceJuliet(BnInterfaceOscar paramo) {
     this.a = paramo;
     this.b = paramo.d();
   }

@@ -32,7 +32,7 @@ class TInterfaceEcho {
   
   Map f = new HashMap<>();
   
-  e(String paramString, R paramR) {
+  TInterfaceEcho(String paramString, R paramR) {
     this.a = paramString;
     this.b = paramR.h();
     this.c = paramR;

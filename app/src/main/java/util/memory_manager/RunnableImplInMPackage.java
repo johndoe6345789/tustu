@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class RunnableImplInMPackage implements Runnable {
-  b(a parama, List paramList) {}
+  RunnableImplInMPackage(a parama, List paramList) {}
   
   public void run() {
     try {

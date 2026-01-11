@@ -18,7 +18,7 @@ class MInterfaceJuliet {
   
   AbstractInAlPackage AmInterfaceEcho = null;
   
-  j(AbstractInAlPackage paramd, AmInterfaceEcho parame) {
+  MInterfaceJuliet(AbstractInAlPackage paramd, AmInterfaceEcho parame) {
     this.a = parame;
     this.b = parame.f();
     this.AmInterfaceCharlie = AbstractInAlPackage.a(this.b);

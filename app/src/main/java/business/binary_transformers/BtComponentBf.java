@@ -6,7 +6,7 @@ import V.ExceptionPrintstacktrace;
 import s.ExceptionPrintstacktrace;
 
 class BtComponentBf implements GInterfaceAn {
-  bf(bd parambd, GInterfaceDb paramdb) {}
+  BtComponentBf(bd parambd, GInterfaceDb paramdb) {}
   
   public void a(String paramString1, String paramString2) {
     String str;

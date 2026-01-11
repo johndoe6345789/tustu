@@ -16,7 +16,7 @@ class TComponentAw extends bn implements f {
   
   private boolean SComponentGolf = false;
   
-  aw(Window paramWindow, String paramString) {
+  TComponentAw(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new ax(this));
     this.c.setMinimum(this.a);

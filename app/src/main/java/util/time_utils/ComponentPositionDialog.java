@@ -19,13 +19,13 @@ import s.SComponentGolf;
 public class ComponentPositionDialog extends a implements f {
   JPanel a = new JPanel();
   
-  do b = new NumericTextField();
+  NumericTextField b = new NumericTextField();
   
-  do c = new NumericTextField();
+  NumericTextField c = new NumericTextField();
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
-  do e = new NumericTextField();
+  NumericTextField e = new NumericTextField();
   
   public r(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);

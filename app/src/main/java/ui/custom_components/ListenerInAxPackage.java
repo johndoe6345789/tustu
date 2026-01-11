@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 
 class ListenerInAxPackage implements ActionListener {
-  f(c paramc, JDialog paramJDialog) {}
+  ListenerInAxPackage(c paramc, JDialog paramJDialog) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     while (!this.b.c())

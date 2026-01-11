@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import javax.swing.JDialog;
 
 class ApComponentMike extends Thread {
-  m(f paramf, File paramFile, String paramString, by paramby, JDialog paramJDialog) {}
+  ApComponentMike(f paramf, File paramFile, String paramString, by paramby, JDialog paramJDialog) {}
   
   public void run() {
     try {

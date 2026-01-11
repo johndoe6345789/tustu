@@ -20,7 +20,7 @@ public AbstractInAnPackagebstract class AbstractInAnPackage implements AlInterfa
   
   private int f;
   
-  a(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
+  AbstractInAnPackage(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
     this.a = paramd;
     this.TostringInAmPackage = paramb;
     this.AlInterfaceCharlie = a(paramd.e());

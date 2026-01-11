@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 import n.JPanelExtensionInNPackage;
 
 class BurnButtonInitializer implements Runnable {
-  c(BurnButtonTv paramBurnButtonTv) {}
+  BurnButtonInitializer(BurnButtonTv paramBurnButtonTv) {}
   
   public void run() {
     int i = this.ExceptionInVPackage.c.getWidth();

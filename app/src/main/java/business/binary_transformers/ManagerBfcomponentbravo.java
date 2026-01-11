@@ -38,7 +38,7 @@ class ManagerBfcomponentbravo implements GInterfaceAn, BfInterfaceBravo {
   
   boolean h = false;
   
-  bU(bQ parambQ, R paramR, ManagerGetcolumnname paramy, String paramString) {
+  ManagerBfcomponentbravo(bQ parambQ, R paramR, ManagerGetcolumnname paramy, String paramString) {
     this.ExceptionInVPackage = paramR;
     this.d = paramy;
     ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(paramString);

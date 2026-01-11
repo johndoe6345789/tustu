@@ -11,7 +11,7 @@ class BwInterfaceIndia {
   
   int e;
   
-  i(f paramf, String paramString1, String paramString2, String paramString3, String paramString4, int paramInt) {
+  BwInterfaceIndia(f paramf, String paramString1, String paramString2, String paramString3, String paramString4, int paramInt) {
     this.a = f.a(paramf, paramString1);
     this.b = paramString2;
     this.c = paramString3;

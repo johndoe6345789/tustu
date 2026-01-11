@@ -5,7 +5,7 @@ import java.util.List;
 class ThreadExtension extends Thread {
   List a;
   
-  k(j paramj, List paramList) {
+  ThreadExtension(j paramj, List paramList) {
     super("DeviceSearch");
     this.a = paramList;
     setDaemon(true);

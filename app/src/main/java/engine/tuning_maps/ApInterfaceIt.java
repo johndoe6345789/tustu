@@ -9,7 +9,7 @@ class ApInterfaceIt {
   
   iV c = null;
   
-  iT(iS paramiS, File paramFile, String paramString, iV paramiV) {
+  ApInterfaceIt(iS paramiS, File paramFile, String paramString, iV paramiV) {
     this.a = paramFile;
     this.b = paramString;
     this.c = paramiV;

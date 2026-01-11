@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BdInterfaceSierra implements ActionListener {
-  s(r paramr, RemoteFileAccess paramRemoteFileAccess) {}
+  BdInterfaceSierra(r paramr, RemoteFileAccess paramRemoteFileAccess) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.b.i = true;

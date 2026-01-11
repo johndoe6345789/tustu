@@ -4,7 +4,7 @@ import B.i;
 import B.k;
 
 class IpSearchEventListener implements k {
-  c(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
+  IpSearchEventListener(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
   
   public void a(i parami) {
     String str = ContinuousIpSearchPanel.access$200(this.a, parami);

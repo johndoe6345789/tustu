@@ -6,7 +6,7 @@ import java.awt.event.WindowListener;
 import javax.swing.JDialog;
 
 class WizardDialog extends JDialog implements WindowListener {
-  fQ(fL paramfL, Window paramWindow, String paramString) {
+  WizardDialog(fL paramfL, Window paramWindow, String paramString) {
     super(paramWindow, paramString);
     addWindowListener(this);
   }

@@ -5,7 +5,7 @@ class ThreadedInAaPackage extends Thread {
   
   String b;
   
-  k(h paramh, String paramString1, String paramString2) {
+  ThreadedInAaPackage(h paramh, String paramString1, String paramString2) {
     this.a = paramString1;
     this.b = paramString2;
   }

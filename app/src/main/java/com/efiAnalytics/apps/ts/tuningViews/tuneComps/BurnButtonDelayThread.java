@@ -11,7 +11,7 @@ class BurnButtonDelayThread extends Thread {
   
   int c = 100;
   
-  e(BurnButtonTv paramBurnButtonTv) {}
+  BurnButtonDelayThread(BurnButtonTv paramBurnButtonTv) {}
   
   public void start() {
     this.b = System.currentTimeMillis();

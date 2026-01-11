@@ -13,7 +13,7 @@ class Kinterfacealpha implements h, bT {
   
   private String c;
   
-  aJ(an paraman, n paramn, String paramString) {
+  Kinterfacealpha(an paraman, n paramn, String paramString) {
     this.KInterfaceAlpha = paramn;
     this.c = paramString;
   }

@@ -4,7 +4,7 @@ import aE.PropertiesExtension;
 import com.efiAnalytics.ui.cQ;
 
 class BtInterfaceBi implements cQ {
-  bi(bh parambh, String paramString) {}
+  BtInterfaceBi(bh parambh, String paramString) {}
   
   public void PropertiesExtension(int paramInt) {
     PropertiesExtension.A().setProperty(this.PropertiesExtension, Integer.toString(paramInt));

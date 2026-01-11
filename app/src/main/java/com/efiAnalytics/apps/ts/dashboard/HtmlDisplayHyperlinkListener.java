@@ -13,7 +13,7 @@ class HtmlDisplayHyperlinkListener implements HyperlinkListener {
   
   int PropertiesExtensionInDPackage = 2000;
   
-  aI(HtmlDisplay paramHtmlDisplay) {}
+  HtmlDisplayHyperlinkListener(HtmlDisplay paramHtmlDisplay) {}
   
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
     if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED) && System.currentTimeMillis() - this.a > this.PropertiesExtensionInDPackage) {

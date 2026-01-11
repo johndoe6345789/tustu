@@ -14,7 +14,7 @@ class BgComponentLima implements ExceptionInVPackage {
   
   private String[] c = null;
   
-  l(ExceptionInVPackage parama, b paramb, String[] paramArrayOfString) {
+  BgComponentLima(ExceptionInVPackage parama, b paramb, String[] paramArrayOfString) {
     this.b = paramb;
     this.c = paramArrayOfString;
   }

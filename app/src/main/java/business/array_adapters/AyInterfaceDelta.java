@@ -5,7 +5,7 @@ import G.GInterfaceCz;
 class AyInterfaceDelta implements GInterfaceCz {
   String a;
   
-  d(c paramc, String paramString) {
+  AyInterfaceDelta(c paramc, String paramString) {
     this.a = paramString;
   }
   

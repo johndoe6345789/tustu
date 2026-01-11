@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApComponentNovember implements Runnable {
-  n(f paramf, Window paramWindow) {}
+  ApComponentNovember(f paramf, Window paramWindow) {}
   
   public void run() {
     boolean bool = false;

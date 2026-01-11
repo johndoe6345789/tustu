@@ -3,7 +3,7 @@ package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 import G.g;
 
 class BurnButtonStateListener implements g {
-  d(BurnButtonTv paramBurnButtonTv) {}
+  BurnButtonStateListener(BurnButtonTv paramBurnButtonTv) {}
   
   public void a(String paramString, int paramInt) {
     this.a.enableBurn(true);

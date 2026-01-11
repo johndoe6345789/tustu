@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
 
 class ActionperformedInAsPackage implements ActionListener {
-  m(j paramj, JComboBox paramJComboBox) {}
+  ActionperformedInAsPackage(j paramj, JComboBox paramJComboBox) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     IOProperties.c(IOProperties.at, "" + this.a.getSelectedIndex());

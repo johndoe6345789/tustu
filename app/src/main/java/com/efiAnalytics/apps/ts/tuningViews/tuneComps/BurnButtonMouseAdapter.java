@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class BurnButtonMouseAdapter extends MouseAdapter {
-  b(BurnButtonTv paramBurnButtonTv) {}
+  BurnButtonMouseAdapter(BurnButtonTv paramBurnButtonTv) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     this.a.i = true;

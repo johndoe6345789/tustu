@@ -3,7 +3,7 @@ package aP;
 import bH.e;
 
 class ApInterfaceVictor implements Runnable {
-  v(f paramf, String paramString1, String paramString2, String paramString3) {}
+  ApInterfaceVictor(f paramf, String paramString1, String paramString2, String paramString3) {}
   
   public void run() {
     e e = new e();

@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 class IpSearchExecutionThread extends Thread {
   boolean a = false;
   
-  e(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
+  IpSearchExecutionThread(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
   
   public void run() {
     ContinuousIpSearchPanel.access$400(this.b);

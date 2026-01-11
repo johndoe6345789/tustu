@@ -28,9 +28,9 @@ public class UIInBwPackage extends JPanel {
   
   JList b = new JList(this.a);
   
-  do c = new NumericTextField();
+  NumericTextField c = new NumericTextField();
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
   JLabel e = new JLabel("", 0);
   

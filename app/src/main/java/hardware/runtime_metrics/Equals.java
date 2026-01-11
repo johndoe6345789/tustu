@@ -11,7 +11,7 @@ class Equals {
   
   private double e = Double.NaN;
   
-  l(k paramk, String paramString1, String paramString2, GInterfaceDj paramdj) {
+  Equals(k paramk, String paramString1, String paramString2, GInterfaceDj paramdj) {
     this.b = paramString1;
     this.c = paramString2;
     this.d = paramdj;

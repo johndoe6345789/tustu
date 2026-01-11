@@ -13,7 +13,7 @@ class TuneViewFileRunnable implements Runnable {
   
   boolean c = false;
   
-  v(n paramn, List paramList, k paramk) {
+  TuneViewFileRunnable(n paramn, List paramList, k paramk) {
     this.ExceptionInVPackage = paramk;
     this.b = paramList;
   }

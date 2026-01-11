@@ -5,7 +5,7 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 
 class FileExtensionChangeListener implements PropertyChangeListener {
-  bW(String paramString) {}
+  FileExtensionChangeListener(String paramString) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     File[] arrayOfFile = bV.b.getSelectedFiles();

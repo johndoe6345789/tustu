@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.bc;
 import java.util.List;
 
 class CloseInMPackage implements bc {
-  i(d paramd, List paramList, c paramc) {}
+  CloseInMPackage(d paramd, List paramList, c paramc) {}
   
   public void close() {
     List list = this.a.a();

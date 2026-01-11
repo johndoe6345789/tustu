@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CrossHairActionListener implements ActionListener {
-  h(TableCellCrossHair paramTableCellCrossHair) {}
+  CrossHairActionListener(TableCellCrossHair paramTableCellCrossHair) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {

@@ -1,7 +1,7 @@
 package ay;
 
 class AyComponentMike extends Thread {
-  m(l paraml, String paramString) {
+  AyComponentMike(l paraml, String paramString) {
     super(paramString);
   }
   

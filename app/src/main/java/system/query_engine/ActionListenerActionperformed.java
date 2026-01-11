@@ -10,7 +10,7 @@ class ActionListenerActionperformed implements ActionListener {
   
   JDialog b = null;
   
-  c(a parama, dq paramdq, JDialog paramJDialog) {
+  ActionListenerActionperformed(a parama, dq paramdq, JDialog paramJDialog) {
     this.a = paramdq;
     this.b = paramJDialog;
   }

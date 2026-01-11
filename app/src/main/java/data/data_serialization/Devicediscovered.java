@@ -6,7 +6,7 @@ import javax.bluetooth.DeviceClass;
 import javax.bluetooth.RemoteDevice;
 
 final class Devicediscovered extends d {
-  c(List paramList, boolean paramBoolean) {}
+  Devicediscovered(List paramList, boolean paramBoolean) {}
   
   public void deviceDiscovered(RemoteDevice paramRemoteDevice, DeviceClass paramDeviceClass) {
     System.out.println("Device " + paramRemoteDevice.getBluetoothAddress() + " found. Authenticated: " + paramRemoteDevice.isAuthenticated() + ". Trusted: " + paramRemoteDevice.isTrustedDevice());

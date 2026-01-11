@@ -11,7 +11,7 @@ class UISetenabled extends JPanel {
   
   JPanel b = new JPanel();
   
-  k(b paramb, String paramString, JComponent paramJComponent) {
+  UISetenabled(b paramb, String paramString, JComponent paramJComponent) {
     setLayout(new BorderLayout(5, 5));
     this.a = new JLabel(paramString, 4);
     add("Center", this.a);

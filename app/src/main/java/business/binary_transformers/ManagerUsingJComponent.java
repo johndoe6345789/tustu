@@ -15,7 +15,7 @@ class ManagerUsingJComponent implements LayoutManager {
   
   JButton b = null;
   
-  aH(an paraman, JComponent paramJComponent, JButton paramJButton1, JButton paramJButton2) {
+  ManagerUsingJComponent(an paraman, JComponent paramJComponent, JButton paramJButton1, JButton paramJButton2) {
     this.d = paramJComponent;
     this.a = paramJButton1;
     this.b = paramJButton2;

@@ -12,7 +12,7 @@ import java.util.Iterator;
 class ExceptioninvpackageSetcurrentoutputchannelvalue implements GComponentCq {
   ArrayList ExceptionInVPackage = new ArrayList();
   
-  ae(P paramP, R paramR, String paramString) {
+  ExceptioninvpackageSetcurrentoutputchannelvalue(P paramP, R paramR, String paramString) {
     try {
       ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), paramString, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {

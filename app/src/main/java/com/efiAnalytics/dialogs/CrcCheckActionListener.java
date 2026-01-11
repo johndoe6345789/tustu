@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CrcCheckActionListener implements ActionListener {
-  a(CrcCheckPanel paramCrcCheckPanel) {}
+  CrcCheckActionListener(CrcCheckPanel paramCrcCheckPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     CrcCheckPanel.a(this.a);

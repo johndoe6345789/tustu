@@ -10,7 +10,7 @@ class ChannelValueByName implements AxInterfaceAb {
   
   String b;
   
-  j(h paramh, GInterfaceCz paramcZ, String paramString) {
+  ChannelValueByName(h paramh, GInterfaceCz paramcZ, String paramString) {
     this.a = paramcZ;
     this.b = paramString;
   }

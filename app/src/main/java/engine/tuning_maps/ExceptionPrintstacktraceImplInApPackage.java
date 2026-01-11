@@ -18,7 +18,7 @@ class ExceptionPrintstacktraceImplInApPackage implements ExceptionPrintstacktrac
   
   boolean d = false;
   
-  hL(hH paramhH, R paramR, Y paramY, File paramFile) {
+  ExceptionPrintstacktraceImplInApPackage(hH paramhH, R paramR, Y paramY, File paramFile) {
     this.a = paramR;
     this.b = paramY;
     this.c = paramFile;

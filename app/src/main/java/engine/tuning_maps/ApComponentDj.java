@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class ApComponentDj extends Thread {
-  dj(dh paramdh, Runnable paramRunnable) {}
+  ApComponentDj(dh paramdh, Runnable paramRunnable) {}
   
   public void run() {
     setName("LogTabBuilderThread");

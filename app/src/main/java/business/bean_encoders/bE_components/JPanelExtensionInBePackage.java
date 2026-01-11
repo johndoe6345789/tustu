@@ -16,9 +16,9 @@ public class JPanelExtensionInBePackage extends JPanel {
   
   JCheckBox b = null;
   
-  do c = new NumericTextField("", 4);
+  NumericTextField c = new NumericTextField("", 4);
   
-  do d = new NumericTextField("", 4);
+  NumericTextField d = new NumericTextField("", 4);
   
   ArrayList e = new ArrayList();
   

@@ -6,7 +6,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ChangeListenerInPPackage implements ChangeListener {
-  o(m paramm, g paramg, JLabel paramJLabel) {}
+  ChangeListenerInPPackage(m paramm, g paramg, JLabel paramJLabel) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     String str = this.c.d.getValue() + " s.";

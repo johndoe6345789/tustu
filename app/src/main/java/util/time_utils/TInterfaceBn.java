@@ -20,7 +20,7 @@ class TInterfaceBn extends a implements f {
   
   JLabel e = new JLabel();
   
-  bn(Window paramWindow, String paramString) {
+  TInterfaceBn(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     setLayout(new BorderLayout());
     add(this.d, "Center");

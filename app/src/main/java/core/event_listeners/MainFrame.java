@@ -1417,7 +1417,7 @@ public class cd extends JFrame implements hi, WindowListener {
     i.ExceptionInVPackage(jCheckBoxMenuItem4);
     jMenu2.add(jCheckBoxMenuItem4);
     ee.add(jMenu2);
-    do do = new NumericTextField(this);
+    NumericTextField numericTextField = new NumericTextField(this);
     i = new i();
     int j = i.b("lineTraceSize", i.ae);
     JMenu jMenu3 = new JMenu("Trace Line Style");
@@ -1428,7 +1428,7 @@ public class cd extends JFrame implements hi, WindowListener {
         str = str + " (Default)"; 
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str, (j == b1));
       jCheckBoxMenuItem.setActionCommand("" + b1);
-      jCheckBoxMenuItem.addItemListener(do);
+      jCheckBoxMenuItem.addItemListener(NumericTextField);
       i.ExceptionInVPackage(jCheckBoxMenuItem);
       jMenu4.add(jCheckBoxMenuItem);
     } 

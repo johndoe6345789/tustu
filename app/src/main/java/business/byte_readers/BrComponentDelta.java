@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.fx;
 class BrComponentDelta implements fx {
   TostringInBlPackage a = null;
   
-  d(a parama, TostringInBlPackage paramk) {
+  BrComponentDelta(a parama, TostringInBlPackage paramk) {
     this.a = paramk;
   }
   

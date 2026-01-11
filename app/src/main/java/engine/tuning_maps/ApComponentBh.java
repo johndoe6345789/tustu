@@ -16,7 +16,7 @@ import s.SComponentGolf;
 class ApComponentBh extends Thread {
   List IOInAcPackage;
   
-  bh(aY paramaY, List paramList) {
+  ApComponentBh(aY paramaY, List paramList) {
     this.IOInAcPackage = paramList;
   }
   

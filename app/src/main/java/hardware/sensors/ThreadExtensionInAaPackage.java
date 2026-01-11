@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInAaPackage extends Thread {
-  d(JDialogExtensionInAzPackage parama, JDialogExtensionInAzPackage parama1) {}
+  ThreadExtensionInAaPackage(JDialogExtensionInAzPackage parama, JDialogExtensionInAzPackage parama1) {}
   
   public void run() {
     try {

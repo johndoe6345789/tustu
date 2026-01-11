@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 class ListenerInAnPackage implements ActionListener {
   JTextField a;
   
-  d(a parama, JTextField paramJTextField) {
+  ListenerInAnPackage(a parama, JTextField paramJTextField) {
     this.a = paramJTextField;
   }
   

@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.bq;
 import s.SComponentGolf;
 
 class BqInterfaceAlphaExtensionInApPackage extends BqInterfaceAlpha {
-  gY(dB paramdB, String paramString) {
+  BqInterfaceAlphaExtensionInApPackage(dB paramdB, String paramString) {
     super(SComponentGolf.b(paramString));
   }
   

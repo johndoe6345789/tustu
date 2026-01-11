@@ -28,11 +28,11 @@ import s.ExceptionPrintstacktrace;
 public class RequiredFuelCalculatorDialog extends JDialog {
   DisplacementUnitField a = new DisplacementUnitField(this);
   
-  do b = new NumericTextField();
+  NumericTextField b = new NumericTextField();
   
   InjectorFlowUnitField c = new InjectorFlowUnitField(this);
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
   JRadioButton e = null;
   

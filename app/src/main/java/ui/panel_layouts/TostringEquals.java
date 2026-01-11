@@ -6,7 +6,7 @@ import A.ClassType;
 class TostringEquals {
   ClassType a;
   
-  c(a parama, ClassType paramq) {
+  TostringEquals(a parama, ClassType paramq) {
     this.a = paramq;
   }
   

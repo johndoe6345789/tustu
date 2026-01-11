@@ -29,11 +29,11 @@ public class JPanelExtensionSetenabled extends JPanel {
   
   JCheckBox f;
   
-  do g = new NumericTextField("", 15);
+  NumericTextField g = new NumericTextField("", 15);
   
-  do h = new NumericTextField("", 15);
+  NumericTextField h = new NumericTextField("", 15);
   
-  do i = new NumericTextField("", 15);
+  NumericTextField i = new NumericTextField("", 15);
   
   a j = null;
   

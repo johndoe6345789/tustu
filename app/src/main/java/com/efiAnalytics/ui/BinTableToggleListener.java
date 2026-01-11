@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BinTableToggleListener implements ActionListener {
-  at(BinTableView paramBinTableView) {}
+  BinTableToggleListener(BinTableView paramBinTableView) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     BinTableView.a(this.a, !BinTableView.a(this.a));

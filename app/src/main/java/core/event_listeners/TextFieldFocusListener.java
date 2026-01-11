@@ -8,7 +8,7 @@ class gu implements FocusListener {
   gu(go paramgo) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
-    ((do)paramFocusEvent.getSource()).selectAll();
+    ((NumericTextField)paramFocusEvent.getSource()).selectAll();
   }
   
   public void focusLost(FocusEvent paramFocusEvent) {}

@@ -11,7 +11,7 @@ class MultiCylPressureSenderThread extends Thread {
   
   int b = 15000;
   
-  b(UdpMultiCylPressureSimulator paramUdpMultiCylPressureSimulator) {}
+  MultiCylPressureSenderThread(UdpMultiCylPressureSimulator paramUdpMultiCylPressureSimulator) {}
   
   public void run() {
     while (this.a) {

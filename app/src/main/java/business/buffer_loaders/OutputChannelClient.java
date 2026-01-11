@@ -6,7 +6,7 @@ import com.efiAnalytics.plugin.ecu.OutputChannelClient;
 class OutputChannelClient implements GComponentCq {
   private OutputChannelClient b = null;
   
-  b(a parama, OutputChannelClient paramOutputChannelClient) {
+  OutputChannelClient(a parama, OutputChannelClient paramOutputChannelClient) {
     this.b = paramOutputChannelClient;
   }
   

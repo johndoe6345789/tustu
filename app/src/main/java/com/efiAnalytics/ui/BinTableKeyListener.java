@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class BinTableKeyListener implements KeyListener {
-  aw(BinTableView paramBinTableView) {}
+  BinTableKeyListener(BinTableView paramBinTableView) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

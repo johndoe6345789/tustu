@@ -1,7 +1,7 @@
 package G;
 
 class GInterfaceBs implements cZ {
-  bS(bR parambR, String paramString) {}
+  GInterfaceBs(bR parambR, String paramString) {}
   
   public String a() {
     return this.a;

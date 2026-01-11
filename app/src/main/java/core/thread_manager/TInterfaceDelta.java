@@ -9,7 +9,7 @@ class TInterfaceDelta {
   
   int d;
   
-  d(a parama, String paramString, int paramInt1, int paramInt2, int paramInt3) {
+  TInterfaceDelta(a parama, String paramString, int paramInt1, int paramInt2, int paramInt3) {
     this.a = paramString;
     this.b = paramInt1;
     this.c = paramInt2;

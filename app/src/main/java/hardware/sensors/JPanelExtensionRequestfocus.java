@@ -12,11 +12,11 @@ class JPanelExtensionRequestfocus extends JPanel {
   
   JLabel b = null;
   
-  e(a parama, String paramString1, String paramString2) {
+  JPanelExtensionRequestfocus(a parama, String paramString1, String paramString2) {
     this(parama, paramString1, paramString2, false);
   }
   
-  e(a parama, String paramString1, String paramString2, boolean paramBoolean) {
+  JPanelExtensionRequestfocus(a parama, String paramString1, String paramString2, boolean paramBoolean) {
     setLayout(new BorderLayout(eJ.a(10), eJ.a(10)));
     setBorder(BorderFactory.createEmptyBorder(eJ.a(1), eJ.a(10), eJ.a(1), eJ.a(10)));
     JLabel jLabel = new JLabel(a.a(parama, paramString1));

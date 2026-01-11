@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import r.RInterfaceIndia;
 
 class ApInterfaceHe implements Runnable {
-  he(hb paramhb, R paramR, PropertiesExtension parama) {}
+  ApInterfaceHe(hb paramhb, R paramR, PropertiesExtension parama) {}
   
   public void run() {
     ArrayList arrayList = (new AjComponentCharlie()).PropertiesExtension(this.PropertiesExtension);

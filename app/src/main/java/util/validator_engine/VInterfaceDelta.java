@@ -7,7 +7,7 @@ class VInterfaceDelta {
   
   File b;
   
-  d(c paramc, String paramString, File paramFile) {
+  VInterfaceDelta(c paramc, String paramString, File paramFile) {
     this.a = paramString;
     this.b = paramFile;
   }

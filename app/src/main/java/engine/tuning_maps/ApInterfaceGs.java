@@ -11,7 +11,7 @@ class ApInterfaceGs implements CInterfaceEcho {
   
   R b = null;
   
-  gS(dB paramdB, String paramString, R paramR) {
+  ApInterfaceGs(dB paramdB, String paramString, R paramR) {
     this.a = paramString;
     this.b = paramR;
     if (paramString != null && !paramString.isEmpty())

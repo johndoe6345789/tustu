@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.eg;
 class BtInterfaceAb implements eg {
   Gauge a = null;
   
-  ab(W paramW, Gauge paramGauge) {
+  BtInterfaceAb(W paramW, Gauge paramGauge) {
     this.a = paramGauge;
   }
   

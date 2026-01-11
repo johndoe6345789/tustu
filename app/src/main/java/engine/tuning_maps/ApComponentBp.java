@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 import x.JMenuExtensionSetpopupmenuvisible;
 
 class ApComponentBp implements ActionListener {
-  bp(bl parambl, R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, JMenuExtensionSetpopupmenuvisible parama, JMenuItemExtensionInBaPackage parame) {}
+  ApComponentBp(bl parambl, R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, JMenuExtensionSetpopupmenuvisible parama, JMenuItemExtensionInBaPackage parame) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     Manager Manager = this.JMenuExtensionSetpopupmenuvisible.c(this.b.aa());

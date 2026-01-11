@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 class SearchGroupPanel extends JPanel {
   JPanel a = new JPanel();
   
-  j(i parami, B paramB, String paramString) {
+  SearchGroupPanel(i parami, B paramB, String paramString) {
     setLayout(new BorderLayout());
     JPanel jPanel = new JPanel();
     jPanel.setMinimumSize(new Dimension(50, 30));

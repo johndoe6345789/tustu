@@ -7,7 +7,7 @@ import javax.swing.SwingUtilities;
 import v.IOInVPackage;
 
 class ThreadedInRPackage extends Thread {
-  e(b paramb, File paramFile) {}
+  ThreadedInRPackage(b paramb, File paramFile) {}
   
   public void run() {
     IOInVPackage IOInVPackage = new IOInVPackage(j.G());

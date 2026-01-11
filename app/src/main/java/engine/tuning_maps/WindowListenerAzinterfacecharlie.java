@@ -410,8 +410,8 @@ public class WindowListenerAzinterfacecharlie extends JFrame implements S, GInte
       if (AzInterfaceDelta != null) {
         if (AzInterfaceDelta.ExceptionInVPackage() == 0) {
           this.BiInterfaceHotel = true;
-          do do = new NumericTextField(this, ThreadedInAzPackage);
-          do.start();
+          NumericTextField numericTextField = new NumericTextField(this, ThreadedInAzPackage);
+          numericTextField.start();
         } else if (AzInterfaceDelta.ExceptionInVPackage() == 4) {
           bV.AzInterfaceDelta(SComponentGolf.b(AzInterfaceCharlie.BiInterfaceHotel) + "\n" + SComponentGolf.b(AzInterfaceCharlie.BiInterfaceFoxtrot), this);
           this.BiInterfaceHotel = false;

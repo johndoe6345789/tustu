@@ -21,7 +21,7 @@ class UIInAoPackage extends JPanel {
   
   JLabel b = new JLabel("  0", 0);
   
-  do c = new NumericTextField("  0", 0);
+  NumericTextField c = new NumericTextField("  0", 0);
   
   public UIInAoPackage(k paramk) {
     JPanel jPanel = new JPanel();

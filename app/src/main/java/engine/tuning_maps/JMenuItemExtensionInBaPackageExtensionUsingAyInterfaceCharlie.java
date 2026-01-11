@@ -6,7 +6,7 @@ import bA.JMenuItemExtensionInBaPackage;
 class JMenuItemExtensionInBaPackageExtensionUsingAyInterfaceCharlie extends JMenuItemExtensionInBaPackage {
   private AyInterfaceCharlie b;
   
-  jy(ju paramju, String paramString, AyInterfaceCharlie paramc) {
+  JMenuItemExtensionInBaPackageExtensionUsingAyInterfaceCharlie(ju paramju, String paramString, AyInterfaceCharlie paramc) {
     super(paramString, true);
     this.b = paramc;
   }

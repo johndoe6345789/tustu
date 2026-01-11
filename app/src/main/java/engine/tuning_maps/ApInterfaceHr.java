@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceHr implements Runnable {
-  hr(hq paramhq, String paramString) {}
+  ApInterfaceHr(hq paramhq, String paramString) {}
   
   public void run() {
     hq.a(this.b, this.a);

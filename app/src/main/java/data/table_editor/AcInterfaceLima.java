@@ -5,7 +5,7 @@ class AcInterfaceLima {
   
   private int c;
   
-  l(h paramh, String paramString, int paramInt) {
+  AcInterfaceLima(h paramh, String paramString, int paramInt) {
     this.b = paramString;
     this.c = paramInt;
   }

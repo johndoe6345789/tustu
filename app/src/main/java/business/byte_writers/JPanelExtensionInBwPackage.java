@@ -11,21 +11,21 @@ import javax.swing.JPanel;
 import s.SComponentGolf;
 
 public class JPanelExtensionInBwPackage extends JPanel {
-  do a = new NumericTextField();
+  NumericTextField a = new NumericTextField();
   
-  do b = new NumericTextField();
+  NumericTextField b = new NumericTextField();
   
-  do c = new NumericTextField();
+  NumericTextField c = new NumericTextField();
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
-  do e = new NumericTextField();
+  NumericTextField e = new NumericTextField();
   
-  do f = new NumericTextField();
+  NumericTextField f = new NumericTextField();
   
-  do SComponentGolf = new NumericTextField();
+  NumericTextField SComponentGolf = new NumericTextField();
   
-  do h = new NumericTextField();
+  NumericTextField h = new NumericTextField();
   
   c i = new c(this);
   

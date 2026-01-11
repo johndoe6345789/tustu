@@ -21,7 +21,7 @@ public class ArrayListInGPackage {
     this.b.add(parambN);
   }
   
-  public void a(do paramdo) {
+  public void a(GInterfaceDo paramdo) {
     this.d.add(paramdo);
   }
   
@@ -30,28 +30,28 @@ public class ArrayListInGPackage {
   }
   
   public void b() {
-    for (do do : this.d)
-      do.c(); 
+    for (GInterfaceDo gInterfaceDo : this.d)
+      gInterfaceDo.c(); 
   }
   
   public void a(String paramString, double paramDouble) {
-    for (do do : this.d)
-      do.a(paramString, paramDouble); 
+    for (GInterfaceDo gInterfaceDo : this.d)
+      gInterfaceDo.a(paramString, paramDouble); 
   }
   
   public void c() {
-    for (do do : this.d)
-      do.d(); 
+    for (GInterfaceDo gInterfaceDo : this.d)
+      gInterfaceDo.d(); 
   }
   
   public void d() {
-    for (do do : this.d)
-      do.a(); 
+    for (GInterfaceDo gInterfaceDo : this.d)
+      gInterfaceDo.a(); 
   }
   
   public void e() {
-    for (do do : this.d)
-      do.b(); 
+    for (GInterfaceDo gInterfaceDo : this.d)
+      gInterfaceDo.b(); 
   }
   
   public void a(String paramString) {

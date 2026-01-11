@@ -11,7 +11,7 @@ class ApInterfaceHm implements SComponentGolf {
   
   ArrayList b;
   
-  hM(hH paramhH, R paramR, ArrayList paramArrayList) {
+  ApInterfaceHm(hH paramhH, R paramR, ArrayList paramArrayList) {
     this.a = paramR;
     this.b = paramArrayList;
   }

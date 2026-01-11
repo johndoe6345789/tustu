@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class SettingsPanelSelectionListener implements ActionListener {
-  k(TuneSettingsPanel paramTuneSettingsPanel) {}
+  SettingsPanelSelectionListener(TuneSettingsPanel paramTuneSettingsPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.setSettingPanelName(paramActionEvent.getActionCommand());

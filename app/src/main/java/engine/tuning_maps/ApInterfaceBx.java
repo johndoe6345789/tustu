@@ -13,7 +13,7 @@ class ApInterfaceBx implements ActionListener {
   
   EqualsInGPackage b;
   
-  bx(bl parambl, R paramR, EqualsInGPackage parambI) {
+  ApInterfaceBx(bl parambl, R paramR, EqualsInGPackage parambI) {
     this.a = paramR;
     this.b = parambI;
   }

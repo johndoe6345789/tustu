@@ -14,7 +14,7 @@ class AzInterfaceQuebec extends Thread {
   
   IOTostring a;
   
-  q(o paramo, IOTostring paramb) {
+  AzInterfaceQuebec(o paramo, IOTostring paramb) {
     this.a = paramb;
   }
   

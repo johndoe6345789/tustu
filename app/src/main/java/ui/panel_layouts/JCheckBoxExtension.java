@@ -3,7 +3,7 @@ package aW;
 import javax.swing.JCheckBox;
 
 class JCheckBoxExtension extends JCheckBox implements n {
-  i(e parame, String paramString) {
+  JCheckBoxExtension(e parame, String paramString) {
     super(paramString);
   }
   

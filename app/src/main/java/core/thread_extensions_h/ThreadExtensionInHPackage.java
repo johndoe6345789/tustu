@@ -61,7 +61,7 @@ import ak.AkComponentWhiskey;
 import AkComponentMike.AkComponentAlpha;
 
 class ThreadExtensionInHPackage extends Thread {
-  c(AkComponentBravo paramb) {}
+  ThreadExtensionInHPackage(AkComponentBravo paramb) {}
   
   public void run() {
     AkInterfaceWhiskey.AkComponentAlpha().AkComponentAlpha(IOKalmanFilter.AkComponentNovember, AkInterfaceAx.class);

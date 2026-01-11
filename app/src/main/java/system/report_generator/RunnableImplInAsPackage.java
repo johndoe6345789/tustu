@@ -4,7 +4,7 @@ import ao.bq;
 import java.io.File;
 
 class RunnableImplInAsPackage implements Runnable {
-  d(c paramc, File paramFile, String[] paramArrayOfString) {}
+  RunnableImplInAsPackage(c paramc, File paramFile, String[] paramArrayOfString) {}
   
   public void run() {
     if (b.a(this.c.a) != null) {

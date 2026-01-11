@@ -8,8 +8,8 @@ class TimeSlipFieldFocusListener implements FocusListener {
   f(e parame) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
-    do do = (do)paramFocusEvent.getSource();
-    do.selectAll();
+    NumericTextField numericTextField = (NumericTextField)paramFocusEvent.getSource();
+    numericTextField.selectAll();
   }
   
   public void focusLost(FocusEvent paramFocusEvent) {}

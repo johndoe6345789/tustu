@@ -9,7 +9,7 @@ class FocusListenerInBoPackage implements FocusListener {
   
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof do)
-      ((do)paramFocusEvent.getSource()).selectAll(); 
+      ((NumericTextField)paramFocusEvent.getSource()).selectAll(); 
   }
   
   public void focusLost(FocusEvent paramFocusEvent) {}

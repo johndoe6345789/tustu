@@ -8,8 +8,8 @@ class FocusListenerInBgPackage implements FocusListener {
   e(d paramd) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
-    do do = (do)paramFocusEvent.getSource();
-    do.selectAll();
+    NumericTextField numericTextField = (NumericTextField)paramFocusEvent.getSource();
+    numericTextField.selectAll();
   }
   
   public void focusLost(FocusEvent paramFocusEvent) {}

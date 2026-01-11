@@ -9,7 +9,7 @@ class BhInterfaceWhiskey {
   
   private final double d;
   
-  w(v paramv, String paramString, SerializableImpl paramaH, double paramDouble) {
+  BhInterfaceWhiskey(v paramv, String paramString, SerializableImpl paramaH, double paramDouble) {
     this.b = paramString;
     this.c = paramaH;
     this.d = paramDouble;

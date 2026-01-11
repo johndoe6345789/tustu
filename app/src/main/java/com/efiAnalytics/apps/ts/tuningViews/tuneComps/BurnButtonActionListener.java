@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BurnButtonActionListener implements ActionListener {
-  a(BurnButtonTv paramBurnButtonTv) {}
+  BurnButtonActionListener(BurnButtonTv paramBurnButtonTv) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     BurnButtonTv.access$000(this.a);

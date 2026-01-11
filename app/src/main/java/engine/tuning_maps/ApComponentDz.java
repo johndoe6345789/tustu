@@ -3,7 +3,7 @@ package aP;
 import az.JDialogExtensionInAzPackage;
 
 class ApComponentDz extends Thread {
-  dz(dy paramdy, String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, JDialogExtensionInAzPackage parama) {}
+  ApComponentDz(dy paramdy, String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, JDialogExtensionInAzPackage parama) {}
   
   public void run() {
     // Byte code:

@@ -8,7 +8,7 @@ import bH.c;
 import java.util.ArrayList;
 
 public class AnInterfaceEcho extends a {
-  e(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
+  AnInterfaceEcho(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
     super(paramd, paramb);
     AmInterfaceKilo[] arrayOfK = paramb.i();
     if (arrayOfK != null) {

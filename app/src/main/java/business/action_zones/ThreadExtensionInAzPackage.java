@@ -13,7 +13,7 @@ class ThreadExtensionInAzPackage extends Thread {
   
   IOTostring a;
   
-  p(o paramo, IOTostring paramb) {
+  ThreadExtensionInAzPackage(o paramo, IOTostring paramb) {
     this.a = paramb;
   }
   

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BfInterfaceDelta implements ActionListener {
-  d(a parama, String paramString) {}
+  BfInterfaceDelta(a parama, String paramString) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     a.a(this.b, this.a);

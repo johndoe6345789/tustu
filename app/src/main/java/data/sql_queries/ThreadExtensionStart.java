@@ -18,7 +18,7 @@ class ThreadExtensionStart extends Thread implements h {
   
   IOException e = null;
   
-  f(e parame, File paramFile) {
+  ThreadExtensionStart(e parame, File paramFile) {
     super("CompessedWriter");
     setDaemon(true);
     this.a = e.a(parame, paramFile);

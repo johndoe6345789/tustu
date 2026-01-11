@@ -11,7 +11,7 @@ class IOStart extends Thread implements h {
   
   int b = 0;
   
-  i(e parame, File paramFile) {
+  IOStart(e parame, File paramFile) {
     super("UncompessedSdWriter");
     setDaemon(true);
     this.a = e.a(parame, paramFile);

@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 class BcInterfaceLima implements m {
   AeInterfaceSierra a;
   
-  l(k paramk, AeInterfaceSierra params) {
+  BcInterfaceLima(k paramk, AeInterfaceSierra params) {
     this.a = params;
   }
   

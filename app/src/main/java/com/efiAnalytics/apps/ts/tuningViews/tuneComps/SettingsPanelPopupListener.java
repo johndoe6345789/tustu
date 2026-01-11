@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
 class SettingsPanelPopupListener implements ActionListener {
-  j(TuneSettingsPanel paramTuneSettingsPanel) {}
+  SettingsPanelPopupListener(TuneSettingsPanel paramTuneSettingsPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JButton jButton = (JButton)paramActionEvent.getSource();

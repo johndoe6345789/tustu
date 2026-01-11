@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 
 class ActionListenerImplInAxPackage implements ActionListener {
-  g(c paramc, JDialog paramJDialog) {}
+  ActionListenerImplInAxPackage(c paramc, JDialog paramJDialog) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();

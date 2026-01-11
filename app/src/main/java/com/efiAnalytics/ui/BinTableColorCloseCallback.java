@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class BinTableColorCloseCallback implements bc {
-  ax(BinTableView paramBinTableView) {}
+  BinTableColorCloseCallback(BinTableView paramBinTableView) {}
   
   public void close() {
     BinTableView.a(this.a, "cellColorMin", "" + this.a.w.e());

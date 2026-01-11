@@ -31,8 +31,8 @@ class AxisPanel extends JPanel {
   public void b(int paramInt) {
     for (byte b = 0; b < getComponentCount(); b++) {
       if (getComponent(b) instanceof do) {
-        do do = (do)getComponent(b);
-        do.b(paramInt);
+        NumericTextField numericTextField = (NumericTextField)getComponent(b);
+        numericTextField.b(paramInt);
       } 
     } 
   }

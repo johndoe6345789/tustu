@@ -11,7 +11,7 @@ public class AyComponentNovember {
   
   private File e;
   
-  n(l paraml, String paramString, File paramFile) {
+  AyComponentNovember(l paraml, String paramString, File paramFile) {
     this.d = paramString;
     this.e = paramFile;
   }

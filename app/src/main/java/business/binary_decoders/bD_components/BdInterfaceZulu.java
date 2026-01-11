@@ -5,7 +5,7 @@ import java.util.List;
 class BdInterfaceZulu extends Thread {
   List a = null;
   
-  z(r paramr, List paramList) {
+  BdInterfaceZulu(r paramr, List paramList) {
     super("Delete");
     setDaemon(true);
     this.a = paramList;

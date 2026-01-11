@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 class ApInterfaceJv implements ActionListener {
   String a;
   
-  jv(ju paramju, String paramString) {
+  ApInterfaceJv(ju paramju, String paramString) {
     this.a = paramString;
   }
   

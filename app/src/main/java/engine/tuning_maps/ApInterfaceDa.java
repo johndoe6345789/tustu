@@ -12,7 +12,7 @@ class ApInterfaceDa extends Thread {
   
   boolean b = false;
   
-  dA(dl paramdl, boolean paramBoolean, Frame paramFrame) {
+  ApInterfaceDa(dl paramdl, boolean paramBoolean, Frame paramFrame) {
     super("UpdateThread");
     setDaemon(true);
     this.b = paramBoolean;

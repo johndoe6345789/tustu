@@ -11,10 +11,10 @@ class DefaultCellEditorExtension extends DefaultCellEditor {
   
   DefaultCellEditorExtension(D paramD) {
     super((JTextField)new NumericTextField());
-    do do = (do)getComponent();
-    do.setFont(paramD.getFont());
-    do.setHorizontalAlignment(0);
-    do.addKeyListener(new M(this, paramD));
+    NumericTextField numericTextField = (NumericTextField)getComponent();
+    numericTextField.setFont(paramD.getFont());
+    numericTextField.setHorizontalAlignment(0);
+    numericTextField.addKeyListener(new M(this, paramD));
   }
   
   public boolean shouldSelectCell(EventObject paramEventObject) {
@@ -25,11 +25,11 @@ class DefaultCellEditorExtension extends DefaultCellEditor {
   }
   
   public void a() {
-    do do = (do)getComponent();
+    NumericTextField numericTextField = (NumericTextField)getComponent();
     y y = (y)this.a.getModel();
     int i = y.a(this.b, this.b).c();
-    do.setText(X.b(do.getText(), i));
-    do.selectAll();
+    numericTextField.setText(X.b(numericTextField.getText(), i));
+    numericTextField.selectAll();
   }
   
   public void a(int paramInt) {

@@ -8,7 +8,7 @@ class ThreadExtensionInWPackage extends Thread {
   
   int b;
   
-  aE(aB paramaB, File paramFile, int paramInt) {
+  ThreadExtensionInWPackage(aB paramaB, File paramFile, int paramInt) {
     super("LoadTriggerLog");
     setDaemon(true);
     this.ExceptionInVPackage = paramFile;

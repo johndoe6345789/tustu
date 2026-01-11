@@ -156,9 +156,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   
   private am af = new aJ(this);
   
-  do w = null;
+  NumericTextField w = null;
   
-  do x = null;
+  NumericTextField x = null;
   
   JPanel y = null;
   

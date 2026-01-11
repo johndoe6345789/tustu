@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class BinTableSelectionRunner implements Runnable {
-  az(BinTableView paramBinTableView, int paramInt1, int paramInt2) {}
+  BinTableSelectionRunner(BinTableView paramBinTableView, int paramInt1, int paramInt2) {}
   
   public void run() {
     this.c.changeSelection(this.a, this.b, false, false);

@@ -16,7 +16,7 @@ import java.util.zip.CRC32;
 import x.JMenuExtensionSetpopupmenuvisible;
 
 class ApComponentBo implements ActionListener {
-  bo(bl parambl, JMenuExtensionSetpopupmenuvisible parama, R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {}
+  ApComponentBo(bl parambl, JMenuExtensionSetpopupmenuvisible parama, R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = bV.JMenuExtensionSetpopupmenuvisible((Component)this.JMenuExtensionSetpopupmenuvisible, "Password to access this dialog.");

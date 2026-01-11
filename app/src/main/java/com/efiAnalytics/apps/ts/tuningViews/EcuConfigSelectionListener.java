@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class EcuConfigSelectionListener implements ActionListener {
-  j(TuneViewComponent paramTuneViewComponent) {}
+  EcuConfigSelectionListener(TuneViewComponent paramTuneViewComponent) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();

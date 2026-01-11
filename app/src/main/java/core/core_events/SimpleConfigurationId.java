@@ -5,7 +5,7 @@ import java.io.Serializable;
 class SimpleConfigurationId implements cZ, Serializable {
   String a;
   
-  p(String paramString) {
+  SimpleConfigurationId(String paramString) {
     this.a = paramString;
   }
   

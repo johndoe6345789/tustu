@@ -16,7 +16,7 @@ class AsInterfaceKilo extends Thread {
   
   R b = null;
   
-  k(SComponentGolf paramg, R paramR) {
+  AsInterfaceKilo(SComponentGolf paramg, R paramR) {
     super("Set PC Message");
     this.b = paramR;
     setDaemon(true);

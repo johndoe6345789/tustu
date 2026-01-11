@@ -12,7 +12,7 @@ class AzInterfaceRomeo extends Thread {
   
   IOTostring a;
   
-  r(o paramo, IOTostring paramb) {
+  AzInterfaceRomeo(o paramo, IOTostring paramb) {
     this.a = paramb;
   }
   

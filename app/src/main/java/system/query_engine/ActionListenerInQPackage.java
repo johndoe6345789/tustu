@@ -10,7 +10,7 @@ class ActionListenerInQPackage implements ActionListener {
   
   JDialog b = null;
   
-  d(a parama, dq paramdq, JDialog paramJDialog) {
+  ActionListenerInQPackage(a parama, dq paramdq, JDialog paramJDialog) {
     this.a = paramdq;
     this.b = paramJDialog;
   }

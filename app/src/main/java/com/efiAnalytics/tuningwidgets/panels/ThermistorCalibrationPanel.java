@@ -24,19 +24,19 @@ import s.SComponentGolf;
 public class ThermistorCalibrationPanel extends AbstractDataPanel {
   GInterfaceBg ExceptionInVPackage = null;
   
-  do b = new NumericTextField();
+  NumericTextField b = new NumericTextField();
   
-  do c = new NumericTextField();
+  NumericTextField c = new NumericTextField();
   
-  do d = new NumericTextField();
+  NumericTextField d = new NumericTextField();
   
-  do e = new NumericTextField();
+  NumericTextField e = new NumericTextField();
   
-  do f = new NumericTextField();
+  NumericTextField f = new NumericTextField();
   
-  do SComponentGolf = new NumericTextField();
+  NumericTextField SComponentGolf = new NumericTextField();
   
-  do h = new NumericTextField();
+  NumericTextField h = new NumericTextField();
   
   JRadioButton i = new JRadioButton("Fahrenheit");
   

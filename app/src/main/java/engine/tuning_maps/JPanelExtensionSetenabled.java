@@ -10,7 +10,7 @@ class JPanelExtensionSetenabled extends JPanel {
   
   JLabel b = null;
   
-  aO(aM paramaM, String paramString) {
+  JPanelExtensionSetenabled(aM paramaM, String paramString) {
     setLayout(new BorderLayout(2, 2));
     this.b = new JLabel(paramString, 4);
     add("Center", this.b);

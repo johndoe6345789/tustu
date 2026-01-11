@@ -12,7 +12,7 @@ class ApInterfaceAz extends Thread {
   
   AeInterfaceMikeTostring d;
   
-  az(au paramau, String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
+  ApInterfaceAz(au paramau, String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     super("AsyncDeviceFound");
     setDaemon(true);
     this.a = paramString1;

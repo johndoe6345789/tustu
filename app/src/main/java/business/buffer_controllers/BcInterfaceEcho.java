@@ -2,7 +2,7 @@ package bc;
 
 import com.efiAnalytics.ui.NumericTextField;
 
-class BcInterfaceEcho extends do implements i {
+class BcInterfaceEcho extends NumericTextField implements i {
   e(a parama) {
     super("", 10);
     b(0);

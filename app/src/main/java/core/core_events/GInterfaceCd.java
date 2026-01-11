@@ -1,7 +1,7 @@
 package G;
 
 class GInterfaceCd implements cZ {
-  cD(cC paramcC, String paramString) {}
+  GInterfaceCd(cC paramcC, String paramString) {}
   
   public String a() {
     return this.a;

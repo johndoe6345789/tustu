@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInEPackage extends Thread {
-  d(String paramString) {
+  ThreadExtensionInEPackage(String paramString) {
     super(paramString);
   }
   

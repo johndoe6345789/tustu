@@ -9,7 +9,7 @@ class AkInterfaceAa {
   
   private float e = Float.NaN;
   
-  aA(az paramaz, String paramString) {
+  AkInterfaceAa(az paramaz, String paramString) {
     this.b = paramString;
   }
   

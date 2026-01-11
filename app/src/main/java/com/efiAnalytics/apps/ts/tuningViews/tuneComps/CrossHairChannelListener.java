@@ -14,7 +14,7 @@ class CrossHairChannelListener implements GComponentCq {
   
   double d = Double.NaN;
   
-  i(TableCellCrossHair paramTableCellCrossHair) {}
+  CrossHairChannelListener(TableCellCrossHair paramTableCellCrossHair) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (paramString.equals(this.e.k)) {

@@ -7,14 +7,14 @@ import javax.swing.JTable;
 class TableCenterCellEditor extends DefaultCellEditor {
   TableCenterCellEditor(S paramS) {
     super(new NumericTextField());
-    do do = (do)getComponent();
-    do.setHorizontalAlignment(0);
+    NumericTextField numericTextField = (NumericTextField)getComponent();
+    numericTextField.setHorizontalAlignment(0);
   }
   
   public Component getTableCellEditorComponent(JTable paramJTable, Object paramObject, boolean paramBoolean, int paramInt1, int paramInt2) {
-    do do = (do)getComponent();
-    do.setFont(this.a.getFont());
-    do.setText(paramJTable.getModel().getValueAt(paramInt1, paramInt2).toString());
+    NumericTextField numericTextField = (NumericTextField)getComponent();
+    numericTextField.setFont(this.a.getFont());
+    numericTextField.setText(paramJTable.getModel().getValueAt(paramInt1, paramInt2).toString());
     return do;
   }
 }
