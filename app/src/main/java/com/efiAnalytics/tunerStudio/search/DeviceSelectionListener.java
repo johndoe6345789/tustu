@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class DeviceSelectionListener implements ActionListener {
-  t(r paramr) {}
+  DeviceSelectionListener(r paramr) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.getSelectedRow() >= 0) {

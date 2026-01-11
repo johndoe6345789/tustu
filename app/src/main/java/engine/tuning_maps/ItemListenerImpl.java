@@ -6,7 +6,7 @@ import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ItemListenerImpl implements ItemListener {
-  cE(cc paramcc) {}
+  ItemListenerImpl(cc paramcc) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     this.a.a(IOProperties.U, ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState());

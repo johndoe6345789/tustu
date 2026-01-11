@@ -10,7 +10,7 @@ import s.SComponentGolf;
 class ManagerSetvalueat extends DefaultTableModel {
   String[] a = new String[] { SComponentGolf.b("Name"), SComponentGolf.b("Tab Title"), SComponentGolf.b("Enabled Condition"), SComponentGolf.b("Default Index") };
   
-  q(o paramo) {}
+  ManagerSetvalueat(o paramo) {}
   
   public int getRowCount() {
     return this.b.b.size();

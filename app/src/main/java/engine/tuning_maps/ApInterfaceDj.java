@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import s.SComponentGolf;
 
 class ApInterfaceDj implements ActionListener {
-  dJ(dB paramdB) {}
+  ApInterfaceDj(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     gX gX = (gX)paramActionEvent.getSource();

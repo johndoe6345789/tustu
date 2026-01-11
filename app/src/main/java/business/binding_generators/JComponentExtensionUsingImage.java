@@ -14,7 +14,7 @@ import javax.swing.UIManager;
 class JComponentExtensionUsingImage extends JComponent {
   private Image b = null;
   
-  k(a parama) {}
+  JComponentExtensionUsingImage(a parama) {}
   
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);

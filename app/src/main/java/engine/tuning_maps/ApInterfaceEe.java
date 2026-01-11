@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceEe implements ActionListener {
-  eE(dB paramdB) {}
+  ApInterfaceEe(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     cS.a().e();

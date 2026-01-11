@@ -5,7 +5,7 @@ import java.awt.event.ComponentEvent;
 import javafx.application.Platform;
 
 class JavaFxPanelResizeAdapter extends ComponentAdapter {
-  eG(eD parameD) {}
+  JavaFxPanelResizeAdapter(eD parameD) {}
   
   public void componentResized(ComponentEvent paramComponentEvent) {
     Platform.runLater(new eH(this));

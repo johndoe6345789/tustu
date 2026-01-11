@@ -1,7 +1,7 @@
 package aM;
 
 class AmInterfaceHotel implements Runnable {
-  h(f paramf) {}
+  AmInterfaceHotel(f paramf) {}
   
   public void run() {
     if (this.a.c != null)

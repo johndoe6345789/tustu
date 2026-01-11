@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PComponentNovember implements ActionListener {
-  n(m paramm, g paramg) {}
+  PComponentNovember(m paramm, g paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.b.b();

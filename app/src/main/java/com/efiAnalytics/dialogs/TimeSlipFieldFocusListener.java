@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class TimeSlipFieldFocusListener implements FocusListener {
-  f(e parame) {}
+  TimeSlipFieldFocusListener(e parame) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     NumericTextField numericTextField = (NumericTextField)paramFocusEvent.getSource();

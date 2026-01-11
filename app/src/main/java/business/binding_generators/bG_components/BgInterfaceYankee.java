@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceYankee implements ActionListener {
-  y(q paramq) {}
+  BgInterfaceYankee(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.e(this.a);

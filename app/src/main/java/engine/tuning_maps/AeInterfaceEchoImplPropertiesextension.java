@@ -13,7 +13,7 @@ import java.io.File;
 import BrComponentRomeo.j;
 
 class AeInterfaceEchoImplPropertiesextension implements AeInterfaceEcho {
-  hW(hO paramhO) {}
+  AeInterfaceEchoImplPropertiesextension(hO paramhO) {}
   
   public void PropertiesExtension(PropertiesExtension parama, R paramR) {}
   

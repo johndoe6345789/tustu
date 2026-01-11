@@ -4,7 +4,7 @@ import d.DComponentCharlie;
 import java.util.Comparator;
 
 class PInterfaceKilo implements Comparator {
-  k(g paramg) {}
+  PInterfaceKilo(g paramg) {}
   
   public int a(DComponentCharlie paramc1, DComponentCharlie paramc2) {
     return paramc1.b().toLowerCase().compareTo(paramc2.b().toLowerCase());

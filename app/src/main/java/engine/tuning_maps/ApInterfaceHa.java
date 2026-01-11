@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceHa implements ActionListener {
-  hA(hz paramhz) {}
+  ApInterfaceHa(hz paramhz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bT, Boolean.toString(this.IOPropertiesUsingFile.IOPropertiesUsingFile.isSelected()));

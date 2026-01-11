@@ -1,7 +1,7 @@
 package u;
 
 class UInterfaceIndia implements c {
-  i(h paramh) {}
+  UInterfaceIndia(h paramh) {}
   
   public void a() {
     this.a.dispose();

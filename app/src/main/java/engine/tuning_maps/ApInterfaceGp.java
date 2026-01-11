@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceGp implements ActionListener {
-  gP(gO paramgO) {}
+  ApInterfaceGp(gO paramgO) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().a(dd.a().c(), paramActionEvent.getActionCommand());

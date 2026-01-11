@@ -3,7 +3,7 @@ package ac;
 import G.GComponentCq;
 
 class AcInterfaceIndia implements GComponentCq {
-  i(h paramh) {}
+  AcInterfaceIndia(h paramh) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}
 }

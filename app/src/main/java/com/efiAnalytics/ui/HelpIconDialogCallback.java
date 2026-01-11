@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class HelpIconDialogCallback implements fi {
-  cH(cF paramcF) {}
+  HelpIconDialogCallback(cF paramcF) {}
   
   public void a(String paramString) {
     cF.a(this.a);

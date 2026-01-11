@@ -5,7 +5,7 @@ import java.util.ArrayList;
 class ChartDataSeriesManager {
   ArrayList a = new ArrayList();
   
-  aV(aU paramaU) {}
+  ChartDataSeriesManager(aU paramaU) {}
   
   public ArrayList a(int paramInt) {
     if (this.a.size() <= paramInt)

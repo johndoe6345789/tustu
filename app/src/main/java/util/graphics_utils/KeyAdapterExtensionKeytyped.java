@@ -4,7 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 class KeyAdapterExtensionKeytyped extends KeyAdapter {
-  h(g paramg) {}
+  KeyAdapterExtensionKeytyped(g paramg) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyChar() == '\033')

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BfInterfaceLima implements ActionListener {
-  l(d paramd) {}
+  BfInterfaceLima(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.n();

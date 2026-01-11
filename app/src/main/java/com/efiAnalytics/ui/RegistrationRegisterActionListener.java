@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class RegistrationRegisterActionListener implements ActionListener {
-  cU(cT paramcT) {}
+  RegistrationRegisterActionListener(cT paramcT) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.d();

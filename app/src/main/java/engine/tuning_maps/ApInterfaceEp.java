@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceEp implements ActionListener {
-  eP(dB paramdB) {}
+  ApInterfaceEp(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.c(this.a.h);

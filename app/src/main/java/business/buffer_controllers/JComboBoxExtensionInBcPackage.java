@@ -3,7 +3,7 @@ package business.buffer_controllers;
 import javax.swing.JComboBox;
 
 class JComboBoxExtensionInBcPackage extends JComboBox implements i {
-  g(a parama) {}
+  JComboBoxExtensionInBcPackage(a parama) {}
   
   public Object a() {
     return getSelectedItem();

@@ -3,7 +3,7 @@ package business.binary_transformers;
 import com.efiAnalytics.tuningwidgets.panels.f;
 
 class BtInterfaceAe implements f {
-  aE(an paraman) {}
+  BtInterfaceAe(an paraman) {}
   
   public void a(String paramString) {
     if (paramString == null)

@@ -3,7 +3,7 @@ package aZ;
 import ac.AcComponentBravo;
 
 class AzInterfaceLima implements AcComponentBravo {
-  l(j paramj) {}
+  AzInterfaceLima(j paramj) {}
   
   public double a() {
     return this.a.z;

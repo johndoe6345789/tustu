@@ -5,7 +5,7 @@ class WInterfaceAc {
   
   private String c = "";
   
-  aC(aB paramaB) {}
+  WInterfaceAc(aB paramaB) {}
   
   public String a() {
     return this.b;

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BbComponentGolf implements ActionListener {
-  g(d paramd) {}
+  BbComponentGolf(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.e();

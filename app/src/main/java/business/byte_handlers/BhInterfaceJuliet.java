@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class BhInterfaceJuliet implements Runnable {
-  j(b paramb) {}
+  BhInterfaceJuliet(b paramb) {}
   
   public void run() {
     this.a.r().validate();

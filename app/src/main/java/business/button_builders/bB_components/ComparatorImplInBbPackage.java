@@ -3,7 +3,7 @@ package business.button_builders.bB_components;
 import java.util.Comparator;
 
 class ComparatorImplInBbPackage implements Comparator {
-  i(h paramh) {}
+  ComparatorImplInBbPackage(h paramh) {}
   
   public int a(r paramr1, r paramr2) {
     return paramr1.e().compareToIgnoreCase(paramr2.e());

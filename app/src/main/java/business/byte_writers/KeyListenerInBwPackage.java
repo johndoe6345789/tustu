@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class KeyListenerInBwPackage implements KeyListener {
-  c(b paramb) {}
+  KeyListenerInBwPackage(b paramb) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

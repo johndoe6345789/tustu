@@ -4,7 +4,7 @@ import s.SComponentGolf;
 import u.SComponentGolf;
 
 class SComponentGolfImpl implements SComponentGolf {
-  hI(hH paramhH) {}
+  SComponentGolfImpl(hH paramhH) {}
   
   public String a() {
     return SComponentGolf.b("Exit - No Changes");

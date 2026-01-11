@@ -4,7 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 class KeyAdapterExtensionInBtPackage extends KeyAdapter {
-  aX(aV paramaV) {}
+  KeyAdapterExtensionInBtPackage(aV paramaV) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyCode() == 38 || paramKeyEvent.getKeyCode() == 61 || paramKeyEvent.getKeyCode() == 521) {

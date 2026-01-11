@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 class AsInterfaceNovember implements ActionListener {
-  n(j paramj) {}
+  AsInterfaceNovember(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str1 = i.e("lastFileDir", HInterfaceHotel.d());

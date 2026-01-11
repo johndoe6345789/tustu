@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.search;
 
 class DeviceTableUpdateRunnable implements Runnable {
-  u(r paramr) {}
+  DeviceTableUpdateRunnable(r paramr) {}
   
   public void run() {
     this.a.c.fireTableDataChanged();

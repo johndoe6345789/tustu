@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class RegistrationPurchaseActionListener implements ActionListener {
-  cV(cT paramcT) {}
+  RegistrationPurchaseActionListener(cT paramcT) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.e();

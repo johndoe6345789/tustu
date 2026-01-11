@@ -4,7 +4,7 @@ import ax.CloneableImplInAxPackage;
 import ax.AxInterfaceAb;
 
 class TimestampValue implements AxInterfaceAb {
-  p(n paramn) {}
+  TimestampValue(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {
     return (this.a.c >= 0L) ? this.a.c : System.currentTimeMillis();

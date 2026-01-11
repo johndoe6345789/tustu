@@ -1,7 +1,7 @@
 package business.binding_generators;
 
 class BgComponentSierra implements Runnable {
-  s(q paramq) {}
+  BgComponentSierra(q paramq) {}
   
   public void run() {
     this.a.fireTableDataChanged();

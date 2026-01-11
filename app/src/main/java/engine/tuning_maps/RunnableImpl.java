@@ -3,7 +3,7 @@ package aP;
 import s.SComponentGolf;
 
 class RunnableImpl implements Runnable {
-  bE(bD parambD) {}
+  RunnableImpl(bD parambD) {}
   
   public void run() {
     f.a().q();

@@ -4,7 +4,7 @@ import Z.ZInterfaceEcho;
 import java.util.Comparator;
 
 class ComparatorImplInBcPackage implements Comparator {
-  c(b paramb) {}
+  ComparatorImplInBcPackage(b paramb) {}
   
   public int a(ZInterfaceEcho parame1, ZInterfaceEcho parame2) {
     return parame1.a().compareToIgnoreCase(parame2.a());

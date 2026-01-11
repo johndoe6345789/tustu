@@ -3,7 +3,7 @@ package business.binary_decoders.bD_components;
 import java.util.Comparator;
 
 class BdInterfaceEcho implements Comparator {
-  e(c paramc) {}
+  BdInterfaceEcho(c paramc) {}
   
   public int a(Long paramLong1, Long paramLong2) {
     return (int)(paramLong2.longValue() - paramLong1.longValue());

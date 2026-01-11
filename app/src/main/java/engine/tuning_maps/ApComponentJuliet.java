@@ -4,7 +4,7 @@ import G.Q;
 import W.r;
 
 class ApComponentJuliet implements r {
-  j(f paramf) {}
+  ApComponentJuliet(f paramf) {}
   
   public boolean a(Q paramQ) {
     return paramQ.aN();

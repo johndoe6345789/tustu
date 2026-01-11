@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceGd implements ActionListener {
-  gD(dB paramdB) {}
+  ApInterfaceGd(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();

@@ -1,7 +1,7 @@
 package aX;
 
 class ThreadExtensionInAxPackage extends Thread {
-  j(h paramh) {}
+  ThreadExtensionInAxPackage(h paramh) {}
   
   public void run() {
     h.a(this.a);

@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AoInterfaceWhiskey implements ActionListener {
-  w(q paramq, k paramk) {}
+  AoInterfaceWhiskey(q paramq, k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.b.d.h()) {

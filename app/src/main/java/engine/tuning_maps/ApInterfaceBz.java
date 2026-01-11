@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceBz implements ActionListener {
-  bZ(bW parambW) {}
+  ApInterfaceBz(bW parambW) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b(this.a.getTitleAt(this.a.getSelectedIndex()));

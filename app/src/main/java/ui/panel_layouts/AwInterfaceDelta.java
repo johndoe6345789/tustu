@@ -5,7 +5,7 @@ import A.AInterfaceYankee;
 import java.util.List;
 
 class AwInterfaceDelta implements AInterfaceYankee {
-  d(a parama) {}
+  AwInterfaceDelta(a parama) {}
   
   public void a(List paramList) {
     this.a.e = this.a.b();

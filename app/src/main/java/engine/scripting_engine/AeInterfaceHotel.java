@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class AeInterfaceHotel extends Thread {
-  h(f paramf, w paramw) {}
+  AeInterfaceHotel(f paramf, w paramw) {}
   
   public void run() {
     try {

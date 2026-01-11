@@ -6,7 +6,7 @@ import java.util.ArrayList;
 class ArrayListExtension extends ArrayList {
   int ExceptionInVPackage = 0;
   
-  n(k paramk) {}
+  ArrayListExtension(k paramk) {}
   
   public boolean ExceptionInVPackage(W.n paramn) {
     if (paramn == null)

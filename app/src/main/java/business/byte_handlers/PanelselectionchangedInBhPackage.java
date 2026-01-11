@@ -3,7 +3,7 @@ package business.byte_handlers;
 import com.efiAnalytics.tuningwidgets.panels.ay;
 
 class PanelselectionchangedInBhPackage implements ay {
-  p(n paramn) {}
+  PanelselectionchangedInBhPackage(n paramn) {}
   
   public void panelSelectionChanged(String paramString1, String paramString2) {
     this.a.a("selectionTable2", paramString2);

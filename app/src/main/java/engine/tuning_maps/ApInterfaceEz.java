@@ -3,7 +3,7 @@ package aP;
 import c.CInterfaceEcho;
 
 class ApInterfaceEz implements CInterfaceEcho {
-  eZ(dB paramdB) {}
+  ApInterfaceEz(dB paramdB) {}
   
   public boolean a() {
     return (dd.a().k() != null && dd.a().k().f());

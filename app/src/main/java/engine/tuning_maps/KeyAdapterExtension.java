@@ -7,7 +7,7 @@ import java.io.File;
 import r.ThreadedFile;
 
 class KeyAdapterExtension extends KeyAdapter {
-  aE(au paramau) {}
+  KeyAdapterExtension(au paramau) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     File file = new File(this.a.b() + "12" + paramKeyEvent.getKeyChar() + "12");

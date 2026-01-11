@@ -8,7 +8,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class ApInterfaceEj implements ActionListener {
-  eJ(dB paramdB) {}
+  ApInterfaceEj(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.cF, "");

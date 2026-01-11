@@ -4,7 +4,7 @@ import ax.CloneableImplInAxPackage;
 import ax.AxInterfaceAb;
 
 class RecordCounterValue implements AxInterfaceAb {
-  o(n paramn) {}
+  RecordCounterValue(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {
     return n.a(this.a);

@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import s.SComponentGolf;
 
 class AyInterfaceVictor implements ActionListener {
-  v(s params) {}
+  AyInterfaceVictor(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     R r = T.a().c(this.a.NetworkHashMap.a());

@@ -9,7 +9,7 @@ import java.io.File;
 import s.SComponentGolf;
 
 class ActionListenerInRPackage implements ActionListener {
-  h(b paramb) {}
+  ActionListenerInRPackage(b paramb) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String[] arrayOfString = { "dash" };

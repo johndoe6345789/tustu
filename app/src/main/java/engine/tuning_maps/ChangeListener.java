@@ -5,7 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ChangeListener implements ChangeListener {
-  aN(aM paramaM) {}
+  ChangeListener(aM paramaM) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     JCheckBox jCheckBox = (JCheckBox)paramChangeEvent.getSource();

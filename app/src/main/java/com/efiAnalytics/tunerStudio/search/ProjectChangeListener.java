@@ -5,7 +5,7 @@ import G.AeInterfaceMikeTostring;
 import javax.swing.SwingUtilities;
 
 class ProjectChangeListener implements GInterfaceAg {
-  x(r paramr) {}
+  ProjectChangeListener(r paramr) {}
   
   public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     y y = new y(this);

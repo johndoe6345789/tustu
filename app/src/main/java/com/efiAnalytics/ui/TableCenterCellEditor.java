@@ -15,7 +15,7 @@ class TableCenterCellEditor extends DefaultCellEditor {
     NumericTextField numericTextField = (NumericTextField)getComponent();
     numericTextField.setFont(this.a.getFont());
     numericTextField.setText(paramJTable.getModel().getValueAt(paramInt1, paramInt2).toString());
-    return do;
+    return numericTextField;
   }
 }
 

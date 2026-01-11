@@ -1,7 +1,7 @@
 package G;
 
 class GInterfaceCu implements dj {
-  cU(cT paramcT) {}
+  GInterfaceCu(cT paramcT) {}
   
   public double a() {
     return 0.0D;

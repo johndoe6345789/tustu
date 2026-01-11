@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class LiveGraphMouseAdapter extends MouseAdapter {
-  v(s params) {}
+  LiveGraphMouseAdapter(s params) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     this.a.a(true);

@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JPopupMenu;
 
 class DeviceTableMouseAdapter extends MouseAdapter {
-  s(r paramr) {}
+  DeviceTableMouseAdapter(r paramr) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3 || paramMouseEvent.isPopupTrigger()) {

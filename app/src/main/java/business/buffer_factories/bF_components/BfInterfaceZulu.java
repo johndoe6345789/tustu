@@ -1,7 +1,7 @@
 package business.buffer_factories.bF_components;
 
 class BfInterfaceZulu implements x {
-  z(y paramy) {}
+  BfInterfaceZulu(y paramy) {}
   
   public String a(int paramInt) {
     return "";

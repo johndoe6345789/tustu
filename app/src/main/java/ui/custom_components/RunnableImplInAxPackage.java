@@ -5,7 +5,7 @@ import java.io.IOException;
 import s.SComponentGolf;
 
 class RunnableImplInAxPackage implements Runnable {
-  k(h paramh) {}
+  RunnableImplInAxPackage(h paramh) {}
   
   public void run() {
     this.a.e.setEnabled(true);

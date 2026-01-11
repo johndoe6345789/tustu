@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceDd implements ActionListener {
-  dD(dB paramdB) {}
+  ApInterfaceDd(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.b();

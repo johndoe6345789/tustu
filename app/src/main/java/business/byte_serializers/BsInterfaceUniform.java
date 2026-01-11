@@ -3,7 +3,7 @@ package business.byte_serializers;
 import com.efiAnalytics.ui.dC;
 
 class BsInterfaceUniform implements dC {
-  u(k paramk) {}
+  BsInterfaceUniform(k paramk) {}
   
   public void a() {
     this.a.g.d();

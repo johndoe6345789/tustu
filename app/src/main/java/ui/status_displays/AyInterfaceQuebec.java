@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfaceQuebec implements ActionListener {
-  q(o paramo) {}
+  AyInterfaceQuebec(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     o.a(4);

@@ -7,7 +7,7 @@ class StartedUpdateprogress implements q {
   
   String b = "";
   
-  j(f paramf) {}
+  StartedUpdateprogress(f paramf) {}
   
   public void started(long paramLong) {
     this.a = paramLong;

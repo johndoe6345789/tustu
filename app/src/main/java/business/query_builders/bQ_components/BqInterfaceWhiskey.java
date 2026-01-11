@@ -4,7 +4,7 @@ import G.n;
 import G.o;
 
 class BqInterfaceWhiskey implements n {
-  w(u paramu) {}
+  BqInterfaceWhiskey(u paramu) {}
   
   public void e() {}
   

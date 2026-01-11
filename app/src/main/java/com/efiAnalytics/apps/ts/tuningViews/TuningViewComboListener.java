@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class TuningViewComboListener implements ItemListener {
-  c(b paramb) {}
+  TuningViewComboListener(b paramb) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (this.ExceptionInVPackage.c.getSelectedItem() instanceof k) {

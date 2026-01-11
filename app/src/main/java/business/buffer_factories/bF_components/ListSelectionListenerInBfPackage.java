@@ -4,7 +4,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerInBfPackage implements ListSelectionListener {
-  w(v paramv) {}
+  ListSelectionListenerInBfPackage(v paramv) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     this.a.c.getTableHeader().repaint();

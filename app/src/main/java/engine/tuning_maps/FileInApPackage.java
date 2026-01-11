@@ -9,7 +9,7 @@ class FileInApPackage {
   
   private String d = bR.g;
   
-  bU(bR parambR) {}
+  FileInApPackage(bR parambR) {}
   
   public File a() {
     return this.b;

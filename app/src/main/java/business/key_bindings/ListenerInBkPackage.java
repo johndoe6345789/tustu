@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ListenerInBkPackage implements ActionListener {
-  e(d paramd) {}
+  ListenerInBkPackage(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     aN.a("https://www.tunerstudio.com/index.php/products/tuner-studio/tsarticles/71-megasquirt-3-sd-card-console-in-tunerstudio-msbeta");

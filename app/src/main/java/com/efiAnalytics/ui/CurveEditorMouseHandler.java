@@ -12,7 +12,7 @@ class CurveEditorMouseHandler implements MouseListener, MouseMotionListener {
   
   Point b = null;
   
-  bO(bN parambN) {}
+  CurveEditorMouseHandler(bN parambN) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (!this.c.isEnabled())

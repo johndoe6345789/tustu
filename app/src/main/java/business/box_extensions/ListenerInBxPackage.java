@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ListenerInBxPackage implements ActionListener {
-  e(c paramc) {}
+  ListenerInBxPackage(c paramc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = c.a(this.a, "Are you sure you want to delete the selected Data Filter?");

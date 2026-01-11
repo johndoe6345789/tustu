@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BsComponentQuebec implements ActionListener {
-  q(k paramk) {}
+  BsComponentQuebec(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     k.b(this.a);

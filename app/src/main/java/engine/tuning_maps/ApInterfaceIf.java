@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceIf implements ActionListener {
-  iF(iA paramiA) {}
+  ApInterfaceIf(iA paramiA) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();

@@ -5,7 +5,7 @@ import G.T;
 import G.GInterfaceCz;
 
 class CanIdSupplier implements GInterfaceCz {
-  i(h paramh) {}
+  CanIdSupplier(h paramh) {}
   
   public String a() {
     String str = null;

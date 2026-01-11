@@ -11,7 +11,7 @@ class ComboBoxKeyAdapter extends KeyAdapter {
   
   String[] c = null;
   
-  i(e parame) {}
+  ComboBoxKeyAdapter(e parame) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {
     int j;

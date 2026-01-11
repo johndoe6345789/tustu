@@ -3,7 +3,7 @@ package business.buffer_factories.bF_components;
 import java.util.List;
 
 class BfInterfaceTango implements Runnable {
-  t(s params) {}
+  BfInterfaceTango(s params) {}
   
   public void run() {
     List list = d.b(this.a.e);

@@ -4,7 +4,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 class NavigationArrowMouseListener implements MouseListener {
-  cL(cK paramcK) {}
+  NavigationArrowMouseListener(cK paramcK) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getX() > this.a.c && paramMouseEvent.getX() < 2 * this.a.c) {

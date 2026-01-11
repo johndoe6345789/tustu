@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BsComponentNovember implements ActionListener {
-  n(k paramk) {}
+  BsComponentNovember(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.f(paramActionEvent.getActionCommand());

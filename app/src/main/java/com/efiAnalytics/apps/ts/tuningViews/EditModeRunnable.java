@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 class EditModeRunnable implements Runnable {
-  q(n paramn, J paramJ) {}
+  EditModeRunnable(n paramn, J paramJ) {}
   
   public void run() {
     if (this.a != null)

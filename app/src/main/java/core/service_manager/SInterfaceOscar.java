@@ -5,7 +5,7 @@ import d.ExceptionInDPackage;
 import d.HashMapUsingArrayList;
 
 class SInterfaceOscar implements d {
-  o(n paramn) {}
+  SInterfaceOscar(n paramn) {}
   
   public void a() {
     try {

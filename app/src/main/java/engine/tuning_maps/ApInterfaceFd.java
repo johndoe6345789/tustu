@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceFd implements Runnable {
-  fD(fC paramfC) {}
+  ApInterfaceFd(fC paramfC) {}
   
   public void run() {
     this.a.a.c.a(true);

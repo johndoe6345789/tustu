@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceFy implements ActionListener {
-  fY(dB paramdB) {}
+  ApInterfaceFy(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

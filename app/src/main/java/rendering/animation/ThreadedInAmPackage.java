@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.d;
 import java.awt.Component;
 
 class ThreadedInAmPackage implements Runnable {
-  g(f paramf) {}
+  ThreadedInAmPackage(f paramf) {}
   
   public void run() {
     if (this.a.c != null)

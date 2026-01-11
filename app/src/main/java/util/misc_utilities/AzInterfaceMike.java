@@ -15,7 +15,7 @@ class AzInterfaceMike {
   
   private int h = 0;
   
-  m(j paramj) {}
+  AzInterfaceMike(j paramj) {}
   
   public void a(int paramInt) {
     this.b = paramInt & 0x3FF;

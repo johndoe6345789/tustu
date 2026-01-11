@@ -3,7 +3,7 @@ package aP;
 import az.ThreadedInAzPackage;
 
 class ApInterfaceBa extends Thread {
-  bA(bz parambz) {}
+  ApInterfaceBa(bz parambz) {}
   
   public void run() {
     ThreadedInAzPackage.d().a();

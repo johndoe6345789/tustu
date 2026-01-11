@@ -3,7 +3,7 @@ package business.byte_arrays;
 import java.util.Comparator;
 
 class ComparatorImplInByPackage implements Comparator {
-  c(b paramb) {}
+  ComparatorImplInByPackage(b paramb) {}
   
   public int a(k paramk1, k paramk2) {
     return paramk1.b().compareTo(paramk2.b());

@@ -3,7 +3,7 @@ package aP;
 import java.awt.Cursor;
 
 class ApInterfaceId extends Thread {
-  iD(iC paramiC) {}
+  ApInterfaceId(iC paramiC) {}
   
   public void run() {
     iA.a(this.a.a);

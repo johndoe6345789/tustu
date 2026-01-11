@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInAvPackage extends Thread {
-  e(c paramc) {}
+  ThreadExtensionInAvPackage(c paramc) {}
   
   public void run() {
     try {

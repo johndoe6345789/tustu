@@ -12,7 +12,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class ThreadExtensionInAsPackage extends Thread {
-  c(b paramb) {}
+  ThreadExtensionInAsPackage(b paramb) {}
   
   public void run() {
     if (IOPropertiesUsingFile.b(this.IOPropertiesUsingFile.SComponentGolf)) {

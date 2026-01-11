@@ -105,7 +105,7 @@ public class TimeSlipPanel extends JPanel {
     add("North", this.l);
   }
   
-  private JPanel BuComponentAlpha(do paramdo, String paramString) {
+  private JPanel BuComponentAlpha(DoObj paramDoObj, String paramString) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(eJ.BuComponentAlpha(5), eJ.BuComponentAlpha(5)));
     JLabel jLabel = new JLabel(BuComponentAlpha(paramString), 4);

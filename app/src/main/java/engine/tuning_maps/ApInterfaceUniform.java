@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.fx;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceUniform implements fx {
-  u(f paramf) {}
+  ApInterfaceUniform(f paramf) {}
   
   public String IOPropertiesUsingFile(String paramString1, String paramString2) {
     return IOPropertiesUsingFile.IOPropertiesUsingFile().c(paramString1, paramString2);

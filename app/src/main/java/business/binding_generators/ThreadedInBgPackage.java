@@ -1,7 +1,7 @@
 package business.binding_generators;
 
 class ThreadedInBgPackage implements Runnable {
-  m(l paraml) {}
+  ThreadedInBgPackage(l paraml) {}
   
   public void run() {
     l.a(this.a);

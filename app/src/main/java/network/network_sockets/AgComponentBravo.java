@@ -4,7 +4,7 @@ import ad.AdInterfaceDelta;
 import af.AfInterfaceOscar;
 
 class AgComponentBravo implements AfInterfaceOscar {
-  b(a parama) {}
+  AgComponentBravo(a parama) {}
   
   public boolean a(AdInterfaceDelta paramd) {
     return true;

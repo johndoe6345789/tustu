@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceCy implements ActionListener {
-  cY(cc paramcc) {}
+  ApInterfaceCy(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     cc.d(this.a);

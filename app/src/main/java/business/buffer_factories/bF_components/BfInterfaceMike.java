@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BfInterfaceMike implements ActionListener {
-  m(d paramd) {}
+  BfInterfaceMike(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.p();

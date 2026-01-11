@@ -4,7 +4,7 @@ import c.CInterfaceEcho;
 import r.RInterfaceIndia;
 
 class ApInterfaceDz implements CInterfaceEcho {
-  dZ(dB paramdB) {}
+  ApInterfaceDz(dB paramdB) {}
   
   public boolean a() {
     return RInterfaceIndia.a().a("09RGDKDG;LKIGD");

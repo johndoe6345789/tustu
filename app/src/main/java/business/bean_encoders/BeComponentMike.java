@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeComponentMike implements ActionListener {
-  m(j paramj) {}
+  BeComponentMike(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     Exceptionprintstacktrace Exceptionprintstacktrace = this.a.e.n(paramActionEvent.getActionCommand());

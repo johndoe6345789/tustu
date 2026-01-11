@@ -4,7 +4,7 @@ import ac.AcInterfaceRomeo;
 import java.io.File;
 
 class ThreadedInBhPackage implements Runnable {
-  f(b paramb) {}
+  ThreadedInBhPackage(b paramb) {}
   
   public void run() {
     String[] arrayOfString = new String[1];

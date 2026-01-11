@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.JTabbedPane;
 
 class JTabbedPaneExtension extends JTabbedPane {
-  i(g paramg) {}
+  JTabbedPaneExtension(g paramg) {}
   
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);

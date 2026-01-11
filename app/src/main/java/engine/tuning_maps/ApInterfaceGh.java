@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceGh implements ActionListener {
-  gH(gG paramgG, dB paramdB) {}
+  ApInterfaceGh(gG paramgG, dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     gG.a(this.b, (String)this.b.a.getSelectedItem());

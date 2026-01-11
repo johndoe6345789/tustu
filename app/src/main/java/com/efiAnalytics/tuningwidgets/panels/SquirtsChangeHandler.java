@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bt.BtInterfaceBz;
 
 class SquirtsChangeHandler implements BtInterfaceBz {
-  aH(aF paramaF) {}
+  SquirtsChangeHandler(aF paramaF) {}
   
   public void b(String paramString) {
     if (this.a.a(paramString)) {

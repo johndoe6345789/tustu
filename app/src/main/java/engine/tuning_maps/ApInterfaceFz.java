@@ -4,7 +4,7 @@ import aE.PropertiesExtension;
 import com.efiAnalytics.ui.eA;
 
 class ApInterfaceFz implements eA {
-  fZ(dB paramdB) {}
+  ApInterfaceFz(dB paramdB) {}
   
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() != null && PropertiesExtension.A().Q());

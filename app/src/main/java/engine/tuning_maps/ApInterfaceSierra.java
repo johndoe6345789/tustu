@@ -3,7 +3,7 @@ package aP;
 import bH.M;
 
 class ApInterfaceSierra implements M {
-  s(q paramq) {}
+  ApInterfaceSierra(q paramq) {}
   
   public void a() {}
   

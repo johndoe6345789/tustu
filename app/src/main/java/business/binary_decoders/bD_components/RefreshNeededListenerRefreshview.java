@@ -3,7 +3,7 @@ package business.binary_decoders.bD_components;
 import com.efiAnalytics.remotefileaccess.RefreshNeededListener;
 
 class RefreshNeededListenerRefreshview implements RefreshNeededListener {
-  q(i parami) {}
+  RefreshNeededListenerRefreshview(i parami) {}
   
   public void refreshView() {
     this.a.e();

@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import javax.swing.JTextField;
 
 class FocusAdapterExtensionFocusgained extends FocusAdapter {
-  aQ(aM paramaM) {}
+  FocusAdapterExtensionFocusgained(aM paramaM) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     JTextField jTextField = (JTextField)paramFocusEvent.getSource();

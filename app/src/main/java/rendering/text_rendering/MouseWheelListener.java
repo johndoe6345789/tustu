@@ -5,7 +5,7 @@ import java.awt.event.MouseWheelListener;
 import javax.swing.JComponent;
 
 class MouseWheelListener implements MouseWheelListener {
-  m(k paramk) {}
+  MouseWheelListener(k paramk) {}
   
   public void mouseWheelMoved(MouseWheelEvent paramMouseWheelEvent) {
     if (paramMouseWheelEvent.getWheelRotation() > 0) {

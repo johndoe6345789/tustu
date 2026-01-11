@@ -1,7 +1,7 @@
 package aM;
 
 class ThreadExtensionInAmPackage extends Thread {
-  d(a parama) {}
+  ThreadExtensionInAmPackage(a parama) {}
   
   public void run() {
     a.b(this.a);

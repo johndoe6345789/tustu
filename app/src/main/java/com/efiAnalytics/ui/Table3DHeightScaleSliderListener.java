@@ -5,7 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class Table3DHeightScaleSliderListener implements ChangeListener {
-  bG(bt parambt) {}
+  Table3DHeightScaleSliderListener(bt parambt) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     JSlider jSlider = (JSlider)paramChangeEvent.getSource();

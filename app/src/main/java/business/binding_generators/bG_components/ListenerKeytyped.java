@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class ListenerKeytyped implements KeyListener {
-  f(d paramd) {}
+  ListenerKeytyped(d paramd) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyChar() == '\n')

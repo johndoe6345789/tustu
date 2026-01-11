@@ -3,7 +3,7 @@ package aP;
 import aE.PropertiesExtension;
 
 class ApComponentGolf implements Runnable {
-  g(f paramf) {}
+  ApComponentGolf(f paramf) {}
   
   public void run() {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

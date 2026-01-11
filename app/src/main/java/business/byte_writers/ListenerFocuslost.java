@@ -5,7 +5,7 @@ import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
 class ListenerFocuslost implements FocusListener {
-  j(f paramf) {}
+  ListenerFocuslost(f paramf) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof JTextField)

@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class BhInterfaceIndia implements Runnable {
-  i(b paramb) {}
+  BhInterfaceIndia(b paramb) {}
   
   public void run() {
     synchronized (this.a.getTreeLock()) {

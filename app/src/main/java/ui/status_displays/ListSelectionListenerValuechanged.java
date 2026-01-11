@@ -5,7 +5,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerValuechanged implements ListSelectionListener {
-  x(s params) {}
+  ListSelectionListenerValuechanged(s params) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     FileInWPackage FileInWPackage = this.a.b.a();

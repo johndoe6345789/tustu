@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeKiloImpl implements ActionListener {
-  k(j paramj) {}
+  BeKiloImpl(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

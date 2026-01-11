@@ -4,7 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 class KeyAdapterExtensionKeytyped extends KeyAdapter {
-  aP(aO paramaO, aM paramaM) {}
+  KeyAdapterExtensionKeytyped(aO paramaO, aM paramaM) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     try {

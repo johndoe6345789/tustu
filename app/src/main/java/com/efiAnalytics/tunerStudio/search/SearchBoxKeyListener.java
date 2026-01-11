@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class SearchBoxKeyListener implements KeyListener {
-  o(m paramm) {}
+  SearchBoxKeyListener(m paramm) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

@@ -6,7 +6,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 
 class CenteredFlowLayout extends FlowLayout {
-  fR(fL paramfL) {}
+  CenteredFlowLayout(fL paramfL) {}
   
   public void layoutContainer(Container paramContainer) {
     Component component = paramContainer.getComponent(0);

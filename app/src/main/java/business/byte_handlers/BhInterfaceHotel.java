@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class BhInterfaceHotel implements Runnable {
-  h(b paramb) {}
+  BhInterfaceHotel(b paramb) {}
   
   public void run() {
     this.a.n.a().doLayout();

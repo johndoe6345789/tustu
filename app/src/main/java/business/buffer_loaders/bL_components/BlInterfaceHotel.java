@@ -5,7 +5,7 @@ class BlInterfaceHotel {
   
   private long c = -1L;
   
-  h(g paramg) {}
+  BlInterfaceHotel(g paramg) {}
   
   public double a() {
     return this.b;

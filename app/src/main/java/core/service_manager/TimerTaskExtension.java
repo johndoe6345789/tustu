@@ -3,7 +3,7 @@ package S;
 import java.util.TimerTask;
 
 class TimerTaskExtension extends TimerTask {
-  i(h paramh) {}
+  TimerTaskExtension(h paramh) {}
   
   public void run() {
     this.a.b(false);

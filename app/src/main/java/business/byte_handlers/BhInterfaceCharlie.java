@@ -3,7 +3,7 @@ package business.byte_handlers;
 import com.efiAnalytics.ui.fE;
 
 class BhInterfaceCharlie implements fE {
-  c(b paramb) {}
+  BhInterfaceCharlie(b paramb) {}
   
   public void a() {
     this.a.n().b(true);

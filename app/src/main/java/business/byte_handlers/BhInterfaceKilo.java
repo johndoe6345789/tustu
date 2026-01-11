@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class BhInterfaceKilo implements Runnable {
-  k(b paramb) {}
+  BhInterfaceKilo(b paramb) {}
   
   public void run() {
     b.a(this.a);

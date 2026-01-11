@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class TuningPanelActionListener implements ActionListener {
-  aC(az paramaz) {}
+  TuningPanelActionListener(az paramaz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

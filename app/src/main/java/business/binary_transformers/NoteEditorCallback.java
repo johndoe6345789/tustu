@@ -3,7 +3,7 @@ package business.binary_transformers;
 import com.efiAnalytics.ui.fi;
 
 class NoteEditorCallback implements fi {
-  c(a parama) {}
+  NoteEditorCallback(a parama) {}
   
   public void a(String paramString) {
     a.a(this.a, paramString);

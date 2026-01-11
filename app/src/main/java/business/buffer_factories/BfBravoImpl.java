@@ -4,7 +4,7 @@ import G.Q;
 import W.r;
 
 class BfBravoImpl implements r {
-  b(a parama) {}
+  BfBravoImpl(a parama) {}
   
   public boolean a(Q paramQ) {
     return paramQ.aN();

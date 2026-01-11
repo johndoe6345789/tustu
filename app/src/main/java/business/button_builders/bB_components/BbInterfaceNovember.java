@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BbInterfaceNovember implements ActionListener {
-  n(l paraml) {}
+  BbInterfaceNovember(l paraml) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     l.b(this.a);

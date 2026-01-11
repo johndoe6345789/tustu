@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class FocusListenerFocuslost implements FocusListener {
-  aA(an paraman) {}
+  FocusListenerFocuslost(an paraman) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     an.a(this.a, ((Manager)this.a.b.get(0)).aL());

@@ -4,7 +4,7 @@ import G.GInterfaceAn;
 import s.SComponentGolf;
 
 class BtInterfaceAs implements GInterfaceAn {
-  aS(an paraman) {}
+  BtInterfaceAs(an paraman) {}
   
   public void a(String paramString1, String paramString2) {
     this.a.p.b(SComponentGolf.b(this.a.q.M()));

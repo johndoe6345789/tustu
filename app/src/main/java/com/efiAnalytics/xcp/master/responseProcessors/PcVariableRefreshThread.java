@@ -11,7 +11,7 @@ class PcVariableRefreshThread extends Thread {
   
   final Object c = new Object();
   
-  h(g paramg) {}
+  PcVariableRefreshThread(g paramg) {}
   
   public void run() {
     while (true) {

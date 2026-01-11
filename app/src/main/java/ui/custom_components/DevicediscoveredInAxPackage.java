@@ -7,7 +7,7 @@ import javax.bluetooth.DeviceClass;
 import javax.bluetooth.RemoteDevice;
 
 class DevicediscoveredInAxPackage extends DiscoveryListener {
-  l(h paramh) {}
+  DevicediscoveredInAxPackage(h paramh) {}
   
   public void deviceDiscovered(RemoteDevice paramRemoteDevice, DeviceClass paramDeviceClass) {
     D.c("Device " + paramRemoteDevice.getBluetoothAddress() + " found. Authenticated: " + paramRemoteDevice.isAuthenticated() + ". Trusted: " + paramRemoteDevice.isTrustedDevice());

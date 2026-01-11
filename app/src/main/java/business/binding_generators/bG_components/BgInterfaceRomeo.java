@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceRomeo implements ActionListener {
-  r(q paramq) {}
+  BgInterfaceRomeo(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.a(this.a);

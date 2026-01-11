@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class JavaFxResizeUpdateRunnable implements Runnable {
-  eH(eG parameG) {}
+  JavaFxResizeUpdateRunnable(eG parameG) {}
   
   public void run() {
     eD.b(this.a.a);

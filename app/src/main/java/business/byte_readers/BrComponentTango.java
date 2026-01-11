@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JToggleButton;
 
 class BrComponentTango implements ActionListener {
-  t(s params) {}
+  BrComponentTango(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JToggleButton jToggleButton = (JToggleButton)paramActionEvent.getSource();

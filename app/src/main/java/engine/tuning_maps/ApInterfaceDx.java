@@ -4,7 +4,7 @@ import G.T;
 import c.CInterfaceEcho;
 
 class ApInterfaceDx implements CInterfaceEcho {
-  dX(dB paramdB) {}
+  ApInterfaceDx(dB paramdB) {}
   
   public boolean a() {
     return (T.a().c() != null);

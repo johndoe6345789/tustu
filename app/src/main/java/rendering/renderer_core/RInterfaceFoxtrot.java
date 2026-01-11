@@ -3,7 +3,7 @@ package R;
 import bH.D;
 
 class RInterfaceFoxtrot implements c {
-  f(d paramd) {}
+  RInterfaceFoxtrot(d paramd) {}
   
   public boolean a(l paraml) {
     try {

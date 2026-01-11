@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class Table3DFocusMouseAdapter extends MouseAdapter {
-  eN(eM parameM) {}
+  Table3DFocusMouseAdapter(eM parameM) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (this.a.isEnabled())

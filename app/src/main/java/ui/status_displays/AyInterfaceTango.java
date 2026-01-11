@@ -3,7 +3,7 @@ package aY;
 import aP.ApInterfaceAu;
 
 class AyInterfaceTango implements ApInterfaceAu {
-  t(s params) {}
+  AyInterfaceTango(s params) {}
   
   public void a(String paramString) {
     s.a(this.a);

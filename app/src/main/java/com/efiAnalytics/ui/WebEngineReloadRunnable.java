@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class WebEngineReloadRunnable implements Runnable {
-  eF(eE parameE) {}
+  WebEngineReloadRunnable(eE parameE) {}
   
   public void run() {
     eD.a(this.a.a).reload();

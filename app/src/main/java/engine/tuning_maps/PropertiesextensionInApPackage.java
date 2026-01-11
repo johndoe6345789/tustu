@@ -4,7 +4,7 @@ import aE.PropertiesExtension;
 import com.efiAnalytics.ui.eA;
 
 class PropertiesextensionInApPackage implements eA {
-  dP(dB paramdB) {}
+  PropertiesextensionInApPackage(dB paramdB) {}
   
   public boolean PropertiesExtension() {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.Scrollable;
 
 class ManagerGetpreferredscrollableviewportsize extends JPanel implements Scrollable {
-  u(n paramn) {}
+  ManagerGetpreferredscrollableviewportsize(n paramn) {}
   
   public Dimension getPreferredScrollableViewportSize() {
     int i = a();

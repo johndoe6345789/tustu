@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerInBbPackage implements ActionListener {
-  e(d paramd) {}
+  ActionListenerInBbPackage(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.g.setEditable(!this.a.d.isSelected());

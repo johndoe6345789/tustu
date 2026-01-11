@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BfComponentJuliet implements ActionListener {
-  j(d paramd) {}
+  BfComponentJuliet(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.q();

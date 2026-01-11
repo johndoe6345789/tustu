@@ -7,7 +7,7 @@ import javax.swing.JCheckBoxMenuItem;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceGb implements ActionListener {
-  gB(dB paramdB) {}
+  ApInterfaceGb(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

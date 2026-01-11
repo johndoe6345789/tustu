@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BcInterfaceMike implements ActionListener {
-  m(k paramk) {}
+  BcInterfaceMike(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     k.a(this.a);

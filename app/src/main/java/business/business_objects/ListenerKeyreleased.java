@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class ListenerKeyreleased implements KeyListener {
-  i(b paramb) {}
+  ListenerKeyreleased(b paramb) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

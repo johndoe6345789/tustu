@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class FocusListener implements FocusListener {
-  f(e parame) {}
+  FocusListener(e parame) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.a.selectAll();

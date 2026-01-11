@@ -7,7 +7,7 @@ import javax.swing.event.TableColumnModelEvent;
 import javax.swing.event.TableColumnModelListener;
 
 class ListSelectionListenerColumnadded implements ListSelectionListener, TableColumnModelListener {
-  q(d paramd) {}
+  ListSelectionListenerColumnadded(d paramd) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     d.a(this.a);

@@ -3,7 +3,7 @@ package aP;
 import G.GComponentCq;
 
 class ApInterfaceDc implements GComponentCq {
-  dC(dB paramdB) {}
+  ApInterfaceDc(dB paramdB) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}
 }

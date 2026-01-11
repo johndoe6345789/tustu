@@ -4,7 +4,7 @@ import bH.D;
 import javax.swing.JCheckBox;
 
 class JCheckBoxExtensionInBcPackage extends JCheckBox implements i {
-  d(a parama) {}
+  JCheckBoxExtensionInBcPackage(a parama) {}
   
   public Object a() {
     return Boolean.valueOf(isSelected());

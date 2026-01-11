@@ -15,7 +15,7 @@ class ManagerSettext extends JLabel {
   
   int c = 32;
   
-  iZ(iW paramiW) {}
+  ManagerSettext(iW paramiW) {}
   
   public void setText(String paramString) {
     super.setText(paramString);

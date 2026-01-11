@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 
 class TInterfaceAy extends KeyAdapter {
-  aY(aO paramaO) {}
+  TInterfaceAy(aO paramaO) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();

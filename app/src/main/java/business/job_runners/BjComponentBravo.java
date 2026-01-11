@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.List;
 
 class BjComponentBravo implements BdInterfaceGolf {
-  b(a parama) {}
+  BjComponentBravo(a parama) {}
   
   public WInterfaceAa a(List<File> paramList) {
     String[] arrayOfString = new String[paramList.size()];

@@ -1,7 +1,7 @@
 package business.binary_transformers;
 
 class RunnableImplInBtPackage implements Runnable {
-  aG(an paraman, int paramInt) {}
+  RunnableImplInBtPackage(an paraman, int paramInt) {}
   
   public void run() {
     if (this.b.w.f().c() != this.a)

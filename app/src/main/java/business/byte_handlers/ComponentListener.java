@@ -4,7 +4,7 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 
 class ComponentListener implements ComponentListener {
-  q(n paramn) {}
+  ComponentListener(n paramn) {}
   
   public void componentResized(ComponentEvent paramComponentEvent) {
     if (this.a.getParent().getParent() != null)

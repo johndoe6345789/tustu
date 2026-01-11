@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class CommentIconMouseAdapter extends MouseAdapter {
-  cJ(cI paramcI) {}
+  CommentIconMouseAdapter(cI paramcI) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (this.a.isEnabled())

@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class Table3DChangeListener implements eS {
-  eO(eM parameM) {}
+  Table3DChangeListener(eM parameM) {}
   
   public void a(int paramInt1, int paramInt2, double paramDouble) {
     if (paramInt1 == this.a.r() && paramInt2 == this.a.q())

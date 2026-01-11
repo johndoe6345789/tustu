@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrComponentXray implements ActionListener {
-  x(s params) {}
+  BrComponentXray(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.d();

@@ -5,7 +5,7 @@ import G.n;
 import G.o;
 
 class AjInterfaceFoxtrot implements n {
-  f(d paramd) {}
+  AjInterfaceFoxtrot(d paramd) {}
   
   public void a(double paramDouble) {}
   

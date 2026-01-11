@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApInterfaceJg implements GInterfaceAn {
-  jG(jA paramjA) {}
+  ApInterfaceJg(jA paramjA) {}
   
   public void a(String paramString1, String paramString2) {
     R r = T.a().c(paramString1);

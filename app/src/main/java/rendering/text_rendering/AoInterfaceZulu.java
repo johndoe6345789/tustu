@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AoInterfaceZulu implements ActionListener {
-  z(q paramq, k paramk) {}
+  AoInterfaceZulu(q paramq, k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.b.d.h()) {

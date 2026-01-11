@@ -13,7 +13,7 @@ import javax.swing.JMenuBar;
 class JMenuBarExtension extends JMenuBar implements BaInterfaceDelta {
   HashMap a = new HashMap<>();
   
-  gQ(dB paramdB) {}
+  JMenuBarExtension(dB paramdB) {}
   
   public void a(Component paramComponent) {
     remove(paramComponent);

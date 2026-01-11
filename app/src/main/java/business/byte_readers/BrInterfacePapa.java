@@ -3,7 +3,7 @@ package business.byte_readers;
 import G.GComponentCq;
 
 class BrInterfacePapa implements GComponentCq {
-  p(n paramn) {}
+  BrInterfacePapa(n paramn) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}
 }

@@ -3,7 +3,7 @@ package af;
 import ad.AdInterfaceDelta;
 
 class AfInterfaceGolf implements o {
-  g(f paramf, boolean paramBoolean, h paramh) {}
+  AfInterfaceGolf(f paramf, boolean paramBoolean, h paramh) {}
   
   public boolean a(AdInterfaceDelta paramd) {
     if (this.a && (paramd.AdInterfaceDelta() & 0xFF0000) == 1048576) {

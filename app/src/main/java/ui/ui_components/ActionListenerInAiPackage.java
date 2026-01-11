@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerInAiPackage implements ActionListener {
-  h(f paramf) {}
+  ActionListenerInAiPackage(f paramf) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

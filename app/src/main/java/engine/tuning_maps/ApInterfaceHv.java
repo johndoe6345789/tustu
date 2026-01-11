@@ -4,7 +4,7 @@ import bH.ab;
 import s.SComponentGolf;
 
 class ApInterfaceHv implements ab {
-  hV(hO paramhO) {}
+  ApInterfaceHv(hO paramhO) {}
   
   public String a(String paramString) {
     return SComponentGolf.b(paramString);

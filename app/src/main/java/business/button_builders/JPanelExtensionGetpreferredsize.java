@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JPanel;
 
 class JPanelExtensionGetpreferredsize extends JPanel {
-  r(p paramp) {}
+  JPanelExtensionGetpreferredsize(p paramp) {}
   
   public Dimension getPreferredSize() {
     Dimension dimension = super.getPreferredSize();

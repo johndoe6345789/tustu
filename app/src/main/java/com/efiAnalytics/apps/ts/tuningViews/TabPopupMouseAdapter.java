@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class TabPopupMouseAdapter extends MouseAdapter {
-  x(n paramn) {}
+  TabPopupMouseAdapter(n paramn) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {}
   

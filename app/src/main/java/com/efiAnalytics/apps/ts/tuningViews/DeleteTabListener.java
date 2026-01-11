@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class DeleteTabListener implements ActionListener {
-  r(n paramn, int paramInt) {}
+  DeleteTabListener(n paramn, int paramInt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.b.b(this.b.getTitleAt(this.a));

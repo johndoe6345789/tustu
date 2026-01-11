@@ -5,7 +5,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
 class TableModelListenerTablechanged implements TableModelListener {
-  r(q paramq) {}
+  TableModelListenerTablechanged(q paramq) {}
   
   public void tableChanged(TableModelEvent paramTableModelEvent) {
     int i = (int)Math.ceil(fh.c(q.a(this.a)));

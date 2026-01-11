@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 import s.SComponentGolf;
 
 class AeInterfaceEchoImplInApPackage implements AeInterfaceEcho {
-  hX(hO paramhO) {}
+  AeInterfaceEchoImplInApPackage(hO paramhO) {}
   
   public void PropertiesExtension(PropertiesExtension parama, R paramR) {
     try {

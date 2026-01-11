@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ListenerInAvPackage implements ActionListener {
-  d(a parama) {}
+  ListenerInAvPackage(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.close();

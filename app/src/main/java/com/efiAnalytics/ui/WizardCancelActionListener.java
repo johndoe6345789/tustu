@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class WizardCancelActionListener implements ActionListener {
-  fM(fL paramfL) {}
+  WizardCancelActionListener(fL paramfL) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();

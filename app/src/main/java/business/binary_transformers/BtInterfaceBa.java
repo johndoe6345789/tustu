@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.et;
 
 class BtInterfaceBa implements et {
-  bA(bu parambu) {}
+  BtInterfaceBa(bu parambu) {}
   
   public void PropertiesExtension(String paramString1, String paramString2) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

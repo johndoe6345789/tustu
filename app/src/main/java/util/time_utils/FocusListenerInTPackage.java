@@ -5,7 +5,7 @@ import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
 class FocusListenerInTPackage implements FocusListener {
-  aN(aK paramaK) {}
+  FocusListenerInTPackage(aK paramaK) {}
   
   public void focusLost(FocusEvent paramFocusEvent) {}
   

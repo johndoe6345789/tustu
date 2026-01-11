@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class KeyListener implements KeyListener {
-  v(q paramq, k paramk) {}
+  KeyListener(q paramq, k paramk) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

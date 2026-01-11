@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfaceRomeo implements ActionListener {
-  r(o paramo) {}
+  AyInterfaceRomeo(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     o.a(2);

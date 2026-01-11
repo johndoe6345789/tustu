@@ -1,7 +1,7 @@
 package r;
 
 class RunnableImplInRPackage implements Runnable {
-  f(b paramb) {}
+  RunnableImplInRPackage(b paramb) {}
   
   public void run() {
     this.a.b.doLayout();

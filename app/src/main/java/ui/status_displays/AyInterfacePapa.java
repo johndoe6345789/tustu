@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfacePapa implements ActionListener {
-  p(o paramo) {}
+  AyInterfacePapa(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     o.a(1);

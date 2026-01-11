@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.ef;
 import com.efiAnalytics.ui.eo;
 
 class BtInterfaceAt implements eo {
-  aT(an paraman) {}
+  BtInterfaceAt(an paraman) {}
   
   public void a(ef[] paramArrayOfef) {
     an.a(this.a, paramArrayOfef);

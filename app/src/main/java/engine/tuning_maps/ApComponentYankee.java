@@ -3,7 +3,7 @@ package aP;
 import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
 
 class ApComponentYankee implements Runnable {
-  y(f paramf) {}
+  ApComponentYankee(f paramf) {}
   
   public void run() {
     Isoptimizeddrawingenabled Isoptimizeddrawingenabled = dd.a().i().a();

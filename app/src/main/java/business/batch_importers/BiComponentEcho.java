@@ -4,7 +4,7 @@ import G.n;
 import G.o;
 
 class BiComponentEcho implements n {
-  e(a parama) {}
+  BiComponentEcho(a parama) {}
   
   public void e() {
     this.a.b.a("Uploading Replay Data");

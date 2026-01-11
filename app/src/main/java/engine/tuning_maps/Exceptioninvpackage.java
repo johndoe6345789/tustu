@@ -5,7 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Exceptioninvpackage implements iV {
-  iQ(iP paramiP) {}
+  Exceptioninvpackage(iP paramiP) {}
   
   public void ExceptionInVPackage() {
     try {

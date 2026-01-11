@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BkInterfaceKilo implements ActionListener {
-  k(h paramh) {}
+  BkInterfaceKilo(h paramh) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     h.c(this.a);

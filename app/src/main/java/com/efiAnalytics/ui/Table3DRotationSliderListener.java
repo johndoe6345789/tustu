@@ -5,7 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class Table3DRotationSliderListener implements ChangeListener {
-  bF(bt parambt) {}
+  Table3DRotationSliderListener(bt parambt) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     JSlider jSlider = (JSlider)paramChangeEvent.getSource();

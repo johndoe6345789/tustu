@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ActionListenerImplInAoPackage implements ActionListener {
-  f(a parama) {}
+  ActionListenerImplInAoPackage(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

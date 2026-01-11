@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeComponentTango implements ActionListener {
-  t(s params) {}
+  BeComponentTango(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     s.a(this.a);

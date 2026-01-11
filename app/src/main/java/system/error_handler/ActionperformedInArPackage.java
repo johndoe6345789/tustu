@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionperformedInArPackage implements ActionListener {
-  i(g paramg) {}
+  ActionperformedInArPackage(g paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();

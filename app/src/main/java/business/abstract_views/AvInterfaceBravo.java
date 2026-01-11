@@ -4,7 +4,7 @@ import W.A;
 import h.IOProperties;
 
 class AvInterfaceBravo implements A {
-  b(a parama) {}
+  AvInterfaceBravo(a parama) {}
   
   public String a() {
     return "MegaLogViewer BigStuff";

@@ -10,7 +10,7 @@ import r.ThreadedFile;
 import s.SComponentGolf;
 
 class FileSelectActionListener implements ActionListener {
-  f(b paramb) {}
+  FileSelectActionListener(b paramb) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String[] arrayOfString = { IOPropertiesUsingFile.cp };

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceVictor implements ActionListener {
-  v(q paramq) {}
+  BgInterfaceVictor(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.b(this.a);

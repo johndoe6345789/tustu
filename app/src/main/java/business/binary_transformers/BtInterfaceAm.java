@@ -3,7 +3,7 @@ package business.binary_transformers;
 import W.i;
 
 class BtInterfaceAm implements i {
-  aM(an paraman) {}
+  BtInterfaceAm(an paraman) {}
   
   public void a(String paramString) {
     this.a.p.o();

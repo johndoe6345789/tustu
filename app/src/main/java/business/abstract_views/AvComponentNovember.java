@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class AvComponentNovember extends Thread {
-  n(l paraml) {}
+  AvComponentNovember(l paraml) {}
   
   public void run() {
     try {

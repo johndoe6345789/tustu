@@ -8,7 +8,7 @@ import javax.swing.UIManager;
 class PreviewImageComponent extends JComponent {
   private Image b = null;
   
-  e(b paramb) {}
+  PreviewImageComponent(b paramb) {}
   
   public void paint(Graphics paramGraphics) {
     if (this.b != null) {

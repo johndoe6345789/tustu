@@ -3,7 +3,7 @@ package business.binary_transformers;
 import com.efiAnalytics.ui.fi;
 
 class ContextHelpEditorCallback implements fi {
-  n(l paraml) {}
+  ContextHelpEditorCallback(l paraml) {}
   
   public void a(String paramString) {
     l.a(this.a);

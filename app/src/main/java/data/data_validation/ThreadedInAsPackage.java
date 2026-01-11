@@ -1,7 +1,7 @@
 package aS;
 
 class ThreadedInAsPackage extends Thread {
-  h(g paramg) {}
+  ThreadedInAsPackage(g paramg) {}
   
   public void run() {}
 }

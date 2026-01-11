@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 class FilenameFilterImplAccept implements FilenameFilter {
-  j(h paramh) {}
+  FilenameFilterImplAccept(h paramh) {}
   
   public boolean accept(File paramFile, String paramString) {
     return paramString.endsWith(".pend");

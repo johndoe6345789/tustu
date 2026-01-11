@@ -3,7 +3,7 @@ package aP;
 import G.u;
 
 class ApInterfaceHg implements u {
-  hG(hF paramhF) {}
+  ApInterfaceHg(hF paramhF) {}
   
   public void a(String paramString) {
     hF.a(this.a, paramString);

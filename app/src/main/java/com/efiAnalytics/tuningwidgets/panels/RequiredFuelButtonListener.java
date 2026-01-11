@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class RequiredFuelButtonListener implements ActionListener {
-  aI(aF paramaF) {}
+  RequiredFuelButtonListener(aF paramaF) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

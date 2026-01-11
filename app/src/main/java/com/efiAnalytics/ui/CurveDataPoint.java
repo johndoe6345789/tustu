@@ -11,7 +11,7 @@ class CurveDataPoint implements ef {
   
   private double f = Double.NaN;
   
-  bP(bN parambN) {}
+  CurveDataPoint(bN parambN) {}
   
   bP(bN parambN, int paramInt1, int paramInt2) {
     this.c = paramInt2;

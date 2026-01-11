@@ -3,7 +3,7 @@ package business.batch_importers;
 import G.GInterfaceDg;
 
 class BiComponentDelta implements GInterfaceDg {
-  d(a parama) {}
+  BiComponentDelta(a parama) {}
   
   public void a(boolean paramBoolean) {
     if (paramBoolean) {

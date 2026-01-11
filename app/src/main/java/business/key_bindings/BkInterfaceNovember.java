@@ -3,7 +3,7 @@ package business.key_bindings;
 import bH.M;
 
 class BkInterfaceNovember implements M {
-  n(h paramh) {}
+  BkInterfaceNovember(h paramh) {}
   
   public void a() {
     this.a.b();

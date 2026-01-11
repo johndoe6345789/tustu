@@ -4,7 +4,7 @@ import bH.s;
 import javax.swing.JOptionPane;
 
 class ApInterfaceHp implements s {
-  hP(hO paramhO) {}
+  ApInterfaceHp(hO paramhO) {}
   
   public void a(String paramString, Exception paramException, Object paramObject) {
     if (paramException != null) {

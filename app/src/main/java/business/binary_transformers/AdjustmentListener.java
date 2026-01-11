@@ -5,7 +5,7 @@ import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
 class AdjustmentListener implements AdjustmentListener {
-  aD(an paraman) {}
+  AdjustmentListener(an paraman) {}
   
   public void adjustmentValueChanged(AdjustmentEvent paramAdjustmentEvent) {
     Adjustable adjustable = paramAdjustmentEvent.getAdjustable();

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceWhiskey implements ActionListener {
-  w(q paramq) {}
+  BgInterfaceWhiskey(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.c(this.a);

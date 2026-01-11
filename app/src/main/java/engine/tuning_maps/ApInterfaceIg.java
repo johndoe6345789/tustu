@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceIg implements Runnable {
-  iG(iA paramiA, boolean paramBoolean) {}
+  ApInterfaceIg(iA paramiA, boolean paramBoolean) {}
   
   public void run() {
     this.b.pack();

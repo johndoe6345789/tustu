@@ -7,7 +7,7 @@ class CurveDataPointList extends ArrayList {
   
   private String c = null;
   
-  bQ(bN parambN) {}
+  CurveDataPointList(bN parambN) {}
   
   public String a() {
     return this.b;

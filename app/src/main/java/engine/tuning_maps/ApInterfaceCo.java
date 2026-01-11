@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceCo implements ActionListener {
-  cO(cc paramcc) {}
+  ApInterfaceCo(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     b.a().e(bV.c());

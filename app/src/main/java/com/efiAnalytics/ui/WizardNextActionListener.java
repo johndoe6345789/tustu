@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class WizardNextActionListener implements ActionListener {
-  fN(fL paramfL) {}
+  WizardNextActionListener(fL paramfL) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

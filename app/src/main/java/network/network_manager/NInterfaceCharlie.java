@@ -4,7 +4,7 @@ import bS.BsInterfaceQuebec;
 import bS.BsInterfaceRomeo;
 
 class NInterfaceCharlie implements BsInterfaceQuebec {
-  c(a parama) {}
+  NInterfaceCharlie(a parama) {}
   
   public void a(BsInterfaceRomeo paramr) {
     a.a(this.a, paramr);

@@ -1,7 +1,7 @@
 package W;
 
 class ExceptionInWPackage extends Exception {
-  aD(aB paramaB) {}
+  ExceptionInWPackage(aB paramaB) {}
 }
 
 

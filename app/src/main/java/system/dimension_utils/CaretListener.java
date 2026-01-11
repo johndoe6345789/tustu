@@ -4,7 +4,7 @@ import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 
 class CaretListener implements CaretListener {
-  c(a parama) {}
+  CaretListener(a parama) {}
   
   public void caretUpdate(CaretEvent paramCaretEvent) {
     if (paramCaretEvent.getMark() != paramCaretEvent.getDot()) {

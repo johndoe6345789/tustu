@@ -3,7 +3,7 @@ package business.bean_encoders;
 import G.i;
 
 class BeInterfaceEcho implements S {
-  e(c paramc) {}
+  BeInterfaceEcho(c paramc) {}
   
   public R a(String paramString) {
     R r = new R();

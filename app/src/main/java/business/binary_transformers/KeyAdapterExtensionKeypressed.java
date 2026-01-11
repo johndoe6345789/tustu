@@ -7,7 +7,7 @@ import r.RInterfaceIndia;
 class KeyAdapterExtensionKeypressed extends KeyAdapter {
   boolean a = false;
   
-  aO(an paraman) {}
+  KeyAdapterExtensionKeypressed(an paraman) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {
     if (!this.b.isEnabled())

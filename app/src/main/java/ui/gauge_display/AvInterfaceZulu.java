@@ -3,7 +3,7 @@ package aV;
 import G.GInterfaceDj;
 
 class AvInterfaceZulu implements GInterfaceDj {
-  z(x paramx) {}
+  AvInterfaceZulu(x paramx) {}
   
   public double a() {
     return this.a.g().f();

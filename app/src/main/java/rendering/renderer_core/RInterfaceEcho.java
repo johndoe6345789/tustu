@@ -4,7 +4,7 @@ import bH.D;
 import com.efianalytics.serviceclient.ReviewActions;
 
 class RInterfaceEcho implements c {
-  e(d paramd) {}
+  RInterfaceEcho(d paramd) {}
   
   public boolean a(l paraml) {
     try {

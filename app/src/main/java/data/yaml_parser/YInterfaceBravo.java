@@ -7,7 +7,7 @@ class YInterfaceBravo {
   
   private String d = null;
   
-  b(a parama) {}
+  YInterfaceBravo(a parama) {}
   
   protected int a() {
     return this.b;

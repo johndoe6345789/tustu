@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class Table3DRightClickListener extends MouseAdapter {
-  bM(bt parambt) {}
+  Table3DRightClickListener(bt parambt) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3)

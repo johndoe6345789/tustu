@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceFb implements ActionListener {
-  fB(dB paramdB) {}
+  ApInterfaceFb(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.n(this.a.h);

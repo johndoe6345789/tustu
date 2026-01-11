@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 class BsInterfaceVictor implements ActionListener {
-  v(k paramk) {}
+  BsInterfaceVictor(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     k.a(this.a, (JComponent)paramActionEvent.getSource());

@@ -5,7 +5,7 @@ import bH.X;
 import s.SComponentGolf;
 
 class AyInterfaceIndia implements GInterfaceAf {
-  i(f paramf) {}
+  AyInterfaceIndia(f paramf) {}
   
   public void a(String paramString, byte[] paramArrayOfbyte) {
     if (paramArrayOfbyte == null) {

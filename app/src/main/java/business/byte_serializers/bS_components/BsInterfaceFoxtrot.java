@@ -7,7 +7,7 @@ class BsInterfaceFoxtrot {
   
   private int d = 0;
   
-  f(e parame) {}
+  BsInterfaceFoxtrot(e parame) {}
   
   public int a() {
     return this.b;

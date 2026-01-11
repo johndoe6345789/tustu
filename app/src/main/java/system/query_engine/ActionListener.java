@@ -7,7 +7,7 @@ import javax.swing.JRadioButton;
 import s.SComponentGolf;
 
 class ActionListener implements ActionListener {
-  b(a parama) {}
+  ActionListener(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = ((JRadioButton)paramActionEvent.getSource()).getText();

@@ -3,7 +3,7 @@ package aV;
 import G.GInterfaceDj;
 
 class AvInterfaceYankee implements GInterfaceDj {
-  y(x paramx) {}
+  AvInterfaceYankee(x paramx) {}
   
   public double a() {
     return this.a.g().e();

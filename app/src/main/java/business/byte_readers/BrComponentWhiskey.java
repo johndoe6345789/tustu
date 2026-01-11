@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrComponentWhiskey implements ActionListener {
-  w(s params) {}
+  BrComponentWhiskey(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();

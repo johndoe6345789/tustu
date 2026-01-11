@@ -6,7 +6,7 @@ import G.GInterfaceAv;
 import com.efiAnalytics.ui.ep;
 
 class ApInterfaceIy implements Runnable {
-  iY(iW paramiW1, R paramR, iW paramiW2) {}
+  ApInterfaceIy(iW paramiW1, R paramR, iW paramiW2) {}
   
   public void run() {
     if (this.a.C() != null) {

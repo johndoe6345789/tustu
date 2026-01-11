@@ -4,7 +4,7 @@ import com.efiAnalytics.apps.ts.dashboard.x;
 import java.awt.Window;
 
 class RunnableImplInApPackage implements Runnable {
-  bY(bW parambW, x paramx1, x paramx2) {}
+  RunnableImplInApPackage(bW parambW, x paramx1, x paramx2) {}
   
   public void run() {
     Window window = this.a.v();

@@ -3,7 +3,7 @@ package business.query_builders.bQ_components;
 import ac.AcComponentBravo;
 
 class BqInterfacePapa implements AcComponentBravo {
-  p(l paraml) {}
+  BqInterfacePapa(l paraml) {}
   
   public double a() {
     return this.a.n;

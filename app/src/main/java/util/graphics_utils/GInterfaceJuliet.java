@@ -7,7 +7,7 @@ class GInterfaceJuliet {
   
   private String d = null;
   
-  j(g paramg) {}
+  GInterfaceJuliet(g paramg) {}
   
   public String a() {
     return this.b;

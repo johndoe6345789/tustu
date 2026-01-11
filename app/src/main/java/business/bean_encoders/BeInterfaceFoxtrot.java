@@ -4,7 +4,7 @@ import G.GInterfaceAi;
 import G.i;
 
 class BeInterfaceFoxtrot implements S {
-  f(c paramc) {}
+  BeInterfaceFoxtrot(c paramc) {}
   
   public R a(String paramString) {
     R r = new R();

@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.tree.TreePath;
 
 class MouseclickedMousepressed extends MouseAdapter {
-  c(a parama) {}
+  MouseclickedMousepressed(a parama) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getClickCount() == 2 && this.a.f != null)

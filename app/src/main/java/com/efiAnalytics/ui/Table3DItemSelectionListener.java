@@ -4,7 +4,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 class Table3DItemSelectionListener implements ItemListener {
-  bI(bt parambt) {}
+  Table3DItemSelectionListener(bt parambt) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1)

@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JToggleButton;
 
 class BkInterfacePapa implements ActionListener {
-  p(o paramo) {}
+  BkInterfacePapa(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JToggleButton jToggleButton = (JToggleButton)paramActionEvent.getSource();

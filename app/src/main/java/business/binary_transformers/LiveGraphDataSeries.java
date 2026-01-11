@@ -26,7 +26,7 @@ class LiveGraphDataSeries extends aH implements cy {
   
   private int k = 0;
   
-  t(s params) {}
+  LiveGraphDataSeries(s params) {}
   
   public void a(double paramDouble) {
     if (this.i && (Double.isNaN(this.d) || paramDouble > this.d)) {

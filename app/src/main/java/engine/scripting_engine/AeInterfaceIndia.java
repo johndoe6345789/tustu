@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class AeInterfaceIndia extends Thread {
-  i(f paramf, w paramw) {}
+  AeInterfaceIndia(f paramf, w paramw) {}
   
   public void run() {
     List<d> list = null;

@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInAePackage extends Thread {
-  g(f paramf, w paramw) {}
+  ThreadExtensionInAePackage(f paramf, w paramw) {}
   
   public void run() {
     List<d> list = null;

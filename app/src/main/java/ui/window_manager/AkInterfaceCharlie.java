@@ -3,7 +3,7 @@ package aK;
 import A.AInterfaceEcho;
 
 class AkInterfaceCharlie implements AInterfaceEcho {
-  c(a parama) {}
+  AkInterfaceCharlie(a parama) {}
   
   public void a() {
     a.a(this.a, a.a);

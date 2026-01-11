@@ -4,7 +4,7 @@ import java.awt.KeyEventDispatcher;
 import java.awt.event.KeyEvent;
 
 class KeyEventDispatcherImpl implements KeyEventDispatcher {
-  m(i parami) {}
+  KeyEventDispatcherImpl(i parami) {}
   
   public boolean dispatchKeyEvent(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyCode() == 27) {

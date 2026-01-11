@@ -5,7 +5,7 @@ import java.io.File;
 import r.ThreadedFile;
 
 class AaInterfaceGolfImplInApPackage implements AaInterfaceGolf {
-  hR(hO paramhO) {}
+  AaInterfaceGolfImplInApPackage(hO paramhO) {}
   
   public File a() {
     return ThreadedFile.f();

@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 class SliderMouseHandler extends MouseAdapter implements MouseMotionListener {
-  dN(dM paramdM) {}
+  SliderMouseHandler(dM paramdM) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {}
   

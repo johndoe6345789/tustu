@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BdInterfaceXray implements ActionListener {
-  x(r paramr) {}
+  BdInterfaceXray(r paramr) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     r.b(this.a);

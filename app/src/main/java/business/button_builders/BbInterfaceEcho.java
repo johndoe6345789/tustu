@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BbInterfaceEcho implements ActionListener {
-  e(d paramd) {}
+  BbInterfaceEcho(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c();

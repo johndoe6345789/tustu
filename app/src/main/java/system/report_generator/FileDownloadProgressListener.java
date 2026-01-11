@@ -6,7 +6,7 @@ import java.io.File;
 import javax.swing.SwingUtilities;
 
 class FileDownloadProgressListener implements FileDownloadProgressListener {
-  c(b paramb) {}
+  FileDownloadProgressListener(b paramb) {}
   
   public void fileDownloadStarted(RemoteFileDescriptor paramRemoteFileDescriptor) {}
   

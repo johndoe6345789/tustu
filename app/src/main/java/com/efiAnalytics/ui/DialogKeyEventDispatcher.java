@@ -28,7 +28,7 @@ class DialogKeyEventDispatcher implements KeyEventDispatcher {
   }
   
   private boolean a(KeyEvent paramKeyEvent) {
-    return (paramKeyEvent.getSource() instanceof do && ((Component)paramKeyEvent.getSource()).getParent() instanceof BinTableView);
+    return (paramKeyEvent.getSource() instanceof NumericTextField && ((Component)paramKeyEvent.getSource()).getParent() instanceof BinTableView);
   }
   
   private boolean b(KeyEvent paramKeyEvent) {

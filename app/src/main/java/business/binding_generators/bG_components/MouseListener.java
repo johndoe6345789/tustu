@@ -12,7 +12,7 @@ class MouseListener implements MouseListener, MouseMotionListener {
   
   double c = 0.0D;
   
-  n(m paramm) {}
+  MouseListener(m paramm) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {}
   

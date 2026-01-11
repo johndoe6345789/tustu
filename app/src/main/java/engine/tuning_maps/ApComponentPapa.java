@@ -3,7 +3,7 @@ package aP;
 import com.efiAnalytics.ui.co;
 
 class ApComponentPapa implements co {
-  p(f paramf) {}
+  ApComponentPapa(f paramf) {}
   
   public void a() {
     this.a.z();

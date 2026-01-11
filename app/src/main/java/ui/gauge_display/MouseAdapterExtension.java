@@ -7,7 +7,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class MouseAdapterExtension extends MouseAdapter {
-  b(a parama) {}
+  MouseAdapterExtension(a parama) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     NetworkHashMap.a().a(this.a.d, ThreadedJFrameIsoptimizeddrawingenabled.a().c());

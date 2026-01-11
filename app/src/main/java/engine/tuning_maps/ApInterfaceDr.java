@@ -4,7 +4,7 @@ import G.J;
 import com.efiAnalytics.ui.eA;
 
 class ApInterfaceDr implements eA {
-  dR(dB paramdB) {}
+  ApInterfaceDr(dB paramdB) {}
   
   public boolean a() {
     return J.I();

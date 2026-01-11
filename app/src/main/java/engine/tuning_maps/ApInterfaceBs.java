@@ -3,7 +3,7 @@ package aP;
 import com.efiAnalytics.ui.aQ;
 
 class ApInterfaceBs implements aQ {
-  bS(bR parambR) {}
+  ApInterfaceBs(bR parambR) {}
   
   public void a() {
     bR.a(this.a);

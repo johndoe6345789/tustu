@@ -4,7 +4,7 @@ import aI.DirectoryInformationImplGetfilecount;
 import com.efiAnalytics.remotefileaccess.RemoteAccessException;
 
 class ThreadedInBkPackage extends Thread {
-  m(h paramh) {}
+  ThreadedInBkPackage(h paramh) {}
   
   public void run() {
     try {

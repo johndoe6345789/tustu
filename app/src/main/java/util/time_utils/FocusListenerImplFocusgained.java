@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 import s.SComponentGolf;
 
 class FocusListenerImplFocusgained implements FocusListener {
-  aU(aO paramaO) {}
+  FocusListenerImplFocusgained(aO paramaO) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {}
   

@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class FocusListenerInBoPackage implements FocusListener {
-  l(b paramb) {}
+  FocusListenerInBoPackage(b paramb) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof do)

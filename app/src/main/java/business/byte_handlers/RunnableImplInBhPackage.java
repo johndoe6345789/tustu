@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class RunnableImplInBhPackage implements Runnable {
-  e(b paramb) {}
+  RunnableImplInBhPackage(b paramb) {}
   
   public void run() {
     b.a(this.a);

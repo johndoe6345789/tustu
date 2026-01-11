@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import r.ExceptionInVPackage;
 
 class ApInterfaceDf implements ActionListener {
-  dF(dB paramdB) {}
+  ApInterfaceDf(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();

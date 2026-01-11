@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BtInterfaceBf implements ActionListener {
-  bF(bB parambB) {}
+  BtInterfaceBf(bB parambB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     bB.c(this.a);

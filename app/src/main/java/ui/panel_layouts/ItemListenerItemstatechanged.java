@@ -4,7 +4,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 class ItemListenerItemstatechanged implements ItemListener {
-  b(a parama) {}
+  ItemListenerItemstatechanged(a parama) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (this.a.e == null || this.a.b() == null || !this.a.e.h().equals(this.a.b().h()))

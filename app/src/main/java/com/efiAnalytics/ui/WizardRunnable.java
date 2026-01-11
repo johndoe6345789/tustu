@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class WizardRunnable implements Runnable {
-  fO(fL paramfL) {}
+  WizardRunnable(fL paramfL) {}
   
   public void run() {
     this.a.a();

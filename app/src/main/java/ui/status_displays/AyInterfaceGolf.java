@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfaceGolf implements ActionListener {
-  g(f paramf) {}
+  AyInterfaceGolf(f paramf) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a(this.a);

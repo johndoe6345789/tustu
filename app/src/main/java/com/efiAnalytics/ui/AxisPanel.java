@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 class AxisPanel extends JPanel {
   S a;
   
-  ah(w paramw) {}
+  AxisPanel(w paramw) {}
   
   public S a() {
     return this.a;
@@ -30,7 +30,7 @@ class AxisPanel extends JPanel {
   
   public void b(int paramInt) {
     for (byte b = 0; b < getComponentCount(); b++) {
-      if (getComponent(b) instanceof do) {
+      if (getComponent(b) instanceof NumericTextField) {
         NumericTextField numericTextField = (NumericTextField)getComponent(b);
         numericTextField.b(paramInt);
       } 

@@ -11,7 +11,7 @@ class KeyListenerKeypressed implements KeyListener {
   
   long c = 2000L;
   
-  j(h paramh) {}
+  KeyListenerKeypressed(h paramh) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     if (System.currentTimeMillis() - this.a > this.c && this.b.length() > 0)

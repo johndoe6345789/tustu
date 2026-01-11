@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import s.SComponentGolf;
 
 class ApInterfaceHb implements ActionListener {
-  hB(hz paramhz) {}
+  ApInterfaceHb(hz paramhz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().k();

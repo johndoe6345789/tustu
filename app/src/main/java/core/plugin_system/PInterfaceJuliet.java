@@ -4,7 +4,7 @@ import d.DInterfaceAlpha;
 import d.DComponentCharlie;
 
 class PInterfaceJuliet implements DInterfaceAlpha {
-  j(g paramg) {}
+  PInterfaceJuliet(g paramg) {}
   
   public boolean DInterfaceAlpha(DComponentCharlie paramc) {
     return !paramc.f();

@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.search;
 
 class SearchPopupShowRunnable implements Runnable {
-  p(m paramm) {}
+  SearchPopupShowRunnable(m paramm) {}
   
   public void run() {
     this.a.c.setVisible(true);

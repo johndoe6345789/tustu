@@ -4,7 +4,7 @@ import bH.M;
 import s.SComponentGolf;
 
 class ApComponentWhiskey implements M {
-  w(f paramf) {}
+  ApComponentWhiskey(f paramf) {}
   
   public void a() {
     this.a.e(SComponentGolf.b("Importing Project Archive"));

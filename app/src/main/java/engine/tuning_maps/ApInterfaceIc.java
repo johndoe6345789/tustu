@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceIc implements ActionListener {
-  iC(iA paramiA) {}
+  ApInterfaceIc(iA paramiA) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.setCursor(Cursor.getPredefinedCursor(3));

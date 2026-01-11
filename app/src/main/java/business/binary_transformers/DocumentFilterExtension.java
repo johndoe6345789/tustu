@@ -5,7 +5,7 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.DocumentFilter;
 
 class DocumentFilterExtension extends DocumentFilter {
-  bL(bK parambK) {}
+  DocumentFilterExtension(bK parambK) {}
   
   public void replace(DocumentFilter.FilterBypass paramFilterBypass, int paramInt1, int paramInt2, String paramString, AttributeSet paramAttributeSet) {
     if (paramString == null)

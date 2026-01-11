@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class FocusListenerInBgPackage implements FocusListener {
-  e(d paramd) {}
+  FocusListenerInBgPackage(d paramd) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     NumericTextField numericTextField = (NumericTextField)paramFocusEvent.getSource();

@@ -8,7 +8,7 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
 class HyperlinkListener implements HyperlinkListener {
-  g(f paramf) {}
+  HyperlinkListener(f paramf) {}
   
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
     long l = 0L;

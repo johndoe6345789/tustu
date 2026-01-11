@@ -4,7 +4,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListener implements ListSelectionListener {
-  aZ(aY paramaY) {}
+  ListSelectionListener(aY paramaY) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     if (!paramListSelectionEvent.getValueIsAdjusting())

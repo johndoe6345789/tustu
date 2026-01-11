@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceCk implements ActionListener {
-  cK(cc paramcc) {}
+  ApInterfaceCk(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

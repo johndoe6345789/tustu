@@ -4,7 +4,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ChangeListenerStatechanged implements ChangeListener {
-  bX(bW parambW) {}
+  ChangeListenerStatechanged(bW parambW) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     if (this.a.getSelectedIndex() == this.a.getTabCount() - 1) {

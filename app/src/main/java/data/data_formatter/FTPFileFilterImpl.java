@@ -4,7 +4,7 @@ import org.apache.commons.net.ftp.FTPFile;
 import org.apache.commons.net.ftp.FTPFileFilter;
 
 class FTPFileFilterImpl implements FTPFileFilter {
-  f(e parame) {}
+  FTPFileFilterImpl(e parame) {}
   
   public boolean accept(FTPFile paramFTPFile) {
     return (paramFTPFile.getName().toLowerCase().endsWith(".mlg") || paramFTPFile.getName().toLowerCase().endsWith(".csv") || paramFTPFile.getName().toLowerCase().endsWith(".msl") || paramFTPFile.getName().toLowerCase().endsWith(".bsf") || paramFTPFile.getName().toLowerCase().endsWith(".fof"));

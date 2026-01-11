@@ -4,7 +4,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 class ListenerPropertychange implements PropertyChangeListener {
-  l(i parami) {}
+  ListenerPropertychange(i parami) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     if (!this.a.m || this.a.o)

@@ -3,7 +3,7 @@ package business.bean_encoders;
 import G.Q;
 
 class BeComponentVictor implements p {
-  v(s params) {}
+  BeComponentVictor(s params) {}
   
   public void a(Q paramQ) {
     if (paramQ instanceof G.aH)

@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrComponentUniform implements ActionListener {
-  u(s params) {}
+  BrComponentUniform(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(paramActionEvent.getActionCommand());

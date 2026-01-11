@@ -3,7 +3,7 @@ package business.byte_handlers;
 import G.g;
 
 class BhInterfaceTango implements g {
-  t(n paramn) {}
+  BhInterfaceTango(n paramn) {}
   
   public void a(String paramString, int paramInt) {
     this.a.a.c(true);

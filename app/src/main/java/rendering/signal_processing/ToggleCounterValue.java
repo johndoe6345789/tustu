@@ -4,7 +4,7 @@ import ax.CloneableImplInAxPackage;
 import ax.AxInterfaceAb;
 
 class ToggleCounterValue implements AxInterfaceAb {
-  q(n paramn) {}
+  ToggleCounterValue(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {
     return n.b(this.a);

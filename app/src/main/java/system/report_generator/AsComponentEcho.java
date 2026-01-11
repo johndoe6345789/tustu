@@ -3,7 +3,7 @@ package as;
 import bH.ab;
 
 class AsComponentEcho implements ab {
-  e(b paramb) {}
+  AsComponentEcho(b paramb) {}
   
   public String a(String paramString) {
     return paramString;

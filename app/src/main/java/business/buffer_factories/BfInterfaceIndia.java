@@ -4,7 +4,7 @@ import G.SerializableImplExceptionprintstacktrace;
 import java.util.Comparator;
 
 class BfInterfaceIndia implements Comparator {
-  i(a parama) {}
+  BfInterfaceIndia(a parama) {}
   
   public int a(SerializableImplExceptionprintstacktrace paramac1, SerializableImplExceptionprintstacktrace paramac2) {
     return paramac1.b().toLowerCase().compareTo(paramac2.b().toLowerCase());

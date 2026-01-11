@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.bV;
 import s.SComponentGolf;
 
 class SInterfaceDeltaImpl implements SInterfaceDelta {
-  bC(bB parambB) {}
+  SInterfaceDeltaImpl(bB parambB) {}
   
   public void ExceptionInVPackage() {
     try {

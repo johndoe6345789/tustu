@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class RegistrationLaterActionListener implements ActionListener {
-  cW(cT paramcT) {}
+  RegistrationLaterActionListener(cT paramcT) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.f();

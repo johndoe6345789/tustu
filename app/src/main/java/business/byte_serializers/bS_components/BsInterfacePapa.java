@@ -5,7 +5,7 @@ import bN.BnInterfaceTango;
 import java.io.IOException;
 
 class BsInterfacePapa implements BnInterfaceFoxtrot {
-  p(o paramo) {}
+  BsInterfacePapa(o paramo) {}
   
   public void a(BnInterfaceTango paramt) {}
   

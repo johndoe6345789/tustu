@@ -5,7 +5,7 @@ import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
 class FocusListenerInBwPackage implements FocusListener {
-  e(b paramb) {}
+  FocusListenerInBwPackage(b paramb) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof JTextField)

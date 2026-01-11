@@ -4,7 +4,7 @@ import W.n;
 import i.IComponentBravo;
 
 class IComponentBravoImplInBtPackage implements IComponentBravo {
-  aK(an paraman) {}
+  IComponentBravoImplInBtPackage(an paraman) {}
   
   public void a() {}
   

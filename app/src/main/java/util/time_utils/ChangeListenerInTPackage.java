@@ -4,7 +4,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ChangeListenerInTPackage implements ChangeListener {
-  aE(aD paramaD) {}
+  ChangeListenerInTPackage(aD paramaD) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     aD.a(this.a);

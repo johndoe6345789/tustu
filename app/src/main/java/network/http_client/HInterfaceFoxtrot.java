@@ -3,7 +3,7 @@ package h;
 import g.GInterfaceAlpha;
 
 class HInterfaceFoxtrot implements GInterfaceAlpha {
-  f(b paramb) {}
+  HInterfaceFoxtrot(b paramb) {}
   
   public boolean GInterfaceAlpha(String paramString) {
     return true;

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 class Table3DCheckBoxListener implements ActionListener {
-  bH(bt parambt) {}
+  Table3DCheckBoxListener(bt parambt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = ((JCheckBox)paramActionEvent.getSource()).isSelected();

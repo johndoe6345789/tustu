@@ -5,7 +5,7 @@ import G.T;
 import G.g;
 
 class ApInterfaceJb implements g {
-  jB(jA paramjA) {}
+  ApInterfaceJb(jA paramjA) {}
   
   public void b(String paramString, int paramInt) {}
   

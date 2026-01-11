@@ -4,7 +4,7 @@ import A.AInterfaceEcho;
 import bH.D;
 
 class BqInterfaceMike implements AInterfaceEcho {
-  m(l paraml) {}
+  BqInterfaceMike(l paraml) {}
   
   public void a() {
     boolean bool = l.i(this.a);

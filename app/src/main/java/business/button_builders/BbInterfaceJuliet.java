@@ -6,7 +6,7 @@ import javax.swing.UIManager;
 class BbInterfaceJuliet extends Thread {
   boolean a = true;
   
-  j(d paramd) {}
+  BbInterfaceJuliet(d paramd) {}
   
   public synchronized void run() {
     while (this.a) {

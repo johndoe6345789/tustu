@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerInAvPackage implements ActionListener {
-  c(a parama) {}
+  ActionListenerInAvPackage(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     fp.a((Component)this.a.b, this.a.c.isSelected());

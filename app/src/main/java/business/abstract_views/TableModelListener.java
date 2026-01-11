@@ -12,7 +12,7 @@ import javax.swing.event.TableModelListener;
 class TableModelListener implements GInterfaceAn, TableModelListener {
   k a = null;
   
-  j(i parami) {}
+  TableModelListener(i parami) {}
   
   public void tableChanged(TableModelEvent paramTableModelEvent) {
     s s = (s)paramTableModelEvent.getSource();

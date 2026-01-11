@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class KeyListenerKeytyped implements KeyListener {
-  d(c paramc) {}
+  KeyListenerKeytyped(c paramc) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     this.a.b.setEnabled(!this.a.c.getText().isEmpty());

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceZulu implements ActionListener {
-  z(q paramq) {}
+  BgInterfaceZulu(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.a(this.a);

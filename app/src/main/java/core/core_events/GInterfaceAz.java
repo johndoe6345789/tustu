@@ -9,7 +9,7 @@ class GInterfaceAz implements Serializable {
   
   private double d = 0.0D;
   
-  aZ(aX paramaX) {}
+  GInterfaceAz(aX paramaX) {}
   
   public double a() {
     return this.b;

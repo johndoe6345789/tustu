@@ -4,7 +4,7 @@ import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
 class AdjustmentListener implements AdjustmentListener {
-  r(q paramq, k paramk) {}
+  AdjustmentListener(q paramq, k paramk) {}
   
   public void adjustmentValueChanged(AdjustmentEvent paramAdjustmentEvent) {
     this.b.d.e();

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 class BsComponentOscar implements ActionListener {
-  o(k paramk) {}
+  BsComponentOscar(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBox jCheckBox = (JCheckBox)paramActionEvent.getSource();

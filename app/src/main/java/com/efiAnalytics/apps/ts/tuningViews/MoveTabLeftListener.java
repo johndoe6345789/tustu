@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class MoveTabLeftListener implements ActionListener {
-  t(n paramn, int paramInt) {}
+  MoveTabLeftListener(n paramn, int paramInt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = this.b.getTitleAt(this.a);

@@ -4,7 +4,7 @@ import aE.PropertiesExtension;
 import com.efiAnalytics.ui.et;
 
 class PropertiesextensionInBtPackage implements et {
-  aQ(an paraman) {}
+  PropertiesextensionInBtPackage(an paraman) {}
   
   public void PropertiesExtension(String paramString1, String paramString2) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

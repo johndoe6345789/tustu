@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 class AjInterfaceLima extends Thread {
   boolean a = true;
   
-  l(k paramk) {}
+  AjInterfaceLima(k paramk) {}
   
   public void run() {
     byte b = 0;

@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.d;
 import java.awt.Component;
 
 class RunnableImpl implements Runnable {
-  b(a parama) {}
+  RunnableImpl(a parama) {}
   
   public void run() {
     if (this.a.c != null)

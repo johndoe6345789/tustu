@@ -5,7 +5,7 @@ import G.o;
 import bH.D;
 
 class AjInterfaceHotel implements n {
-  h(d paramd) {}
+  AjInterfaceHotel(d paramd) {}
   
   public void e() {}
   

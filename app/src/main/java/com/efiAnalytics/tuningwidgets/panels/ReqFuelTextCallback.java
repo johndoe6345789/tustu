@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bt.BtInterfaceBz;
 
 class ReqFuelTextCallback implements BtInterfaceBz {
-  aJ(aF paramaF) {}
+  ReqFuelTextCallback(aF paramaF) {}
   
   public void b(String paramString) {
     this.a.b(paramString);

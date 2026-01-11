@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AoInterfaceXray implements ActionListener {
-  x(q paramq, k paramk) {}
+  AoInterfaceXray(q paramq, k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     n n = this.b.d.e.b();

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgComponentEcho implements ActionListener {
-  e(a parama) {}
+  BgComponentEcho(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     a.d(this.a);

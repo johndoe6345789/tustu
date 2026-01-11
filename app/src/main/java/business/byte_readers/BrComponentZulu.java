@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrComponentZulu implements ActionListener {
-  z(s params) {}
+  BrComponentZulu(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     s.a(this.a);

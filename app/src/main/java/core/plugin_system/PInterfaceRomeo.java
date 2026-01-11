@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceRomeo implements ActionListener {
-  r(p paramp) {}
+  PInterfaceRomeo(p paramp) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = p.a(this.a, "Are you sure your want to delete the selected Action Trigger?");

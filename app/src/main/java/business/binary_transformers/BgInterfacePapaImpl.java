@@ -3,7 +3,7 @@ package business.binary_transformers;
 import bG.BgInterfacePapa;
 
 class BgInterfacePapaImpl implements BgInterfacePapa {
-  bC(bB parambB) {}
+  BgInterfacePapaImpl(bB parambB) {}
   
   public void a(double paramDouble) {
     this.a.a(paramDouble);

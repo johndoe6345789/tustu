@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
 
 class ActionListenerInTPackage implements ActionListener {
-  aB(aA paramaA) {}
+  ActionListenerInTPackage(aA paramaA) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();

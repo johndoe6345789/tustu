@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AoInterfaceYankee implements ActionListener {
-  y(q paramq, k paramk) {}
+  AoInterfaceYankee(q paramq, k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     n n = this.b.d.e.a();

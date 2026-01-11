@@ -7,7 +7,7 @@ class Tostring {
   
   int b = Integer.MAX_VALUE;
   
-  e(d paramd) {}
+  Tostring(d paramd) {}
   
   void a(int[] paramArrayOfint) {
     this.a = c.b(paramArrayOfint, 1, 2, true, false);

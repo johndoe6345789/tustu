@@ -1,7 +1,7 @@
 package business.box_extensions;
 
 class BxInterfaceFoxtrot implements y {
-  f(c paramc) {}
+  BxInterfaceFoxtrot(c paramc) {}
   
   public boolean a() {
     return this.a.a();

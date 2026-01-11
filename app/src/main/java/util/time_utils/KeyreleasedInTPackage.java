@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 
 class KeyreleasedInTPackage extends KeyAdapter {
-  aR(aO paramaO) {}
+  KeyreleasedInTPackage(aO paramaO) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();

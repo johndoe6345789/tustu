@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import s.SComponentGolf;
 
 class BsInterfaceSierra implements ActionListener {
-  s(k paramk) {}
+  BsInterfaceSierra(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     EqualsInAiPackage EqualsInAiPackage = new EqualsInAiPackage();

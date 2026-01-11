@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class BbInterfaceZulu extends Thread {
-  z(x paramx) {}
+  BbInterfaceZulu(x paramx) {}
   
   public void run() {
     try {

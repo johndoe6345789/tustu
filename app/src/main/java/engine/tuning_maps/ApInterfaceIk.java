@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 class ApInterfaceIk implements ActionListener {
-  iK(iJ paramiJ) {}
+  ApInterfaceIk(iJ paramiJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = "file:///" + (new File(".")).getAbsolutePath() + "/help/learnMore.html";

@@ -3,7 +3,7 @@ package aP;
 import B.i;
 
 class ApInterfaceJf implements Runnable {
-  jF(jC paramjC, i parami) {}
+  ApInterfaceJf(jC paramjC, i parami) {}
   
   public void run() {
     f.a().a(this.a, true);

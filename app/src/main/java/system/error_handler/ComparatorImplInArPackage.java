@@ -3,7 +3,7 @@ package ar;
 import java.util.Comparator;
 
 class ComparatorImplInArPackage implements Comparator {
-  b(a parama) {}
+  ComparatorImplInArPackage(a parama) {}
   
   public int a(c paramc1, c paramc2) {
     return paramc1.e() - paramc2.e();

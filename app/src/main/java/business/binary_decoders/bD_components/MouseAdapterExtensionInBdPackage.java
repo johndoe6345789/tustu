@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionInBdPackage extends MouseAdapter {
-  j(i parami) {}
+  MouseAdapterExtensionInBdPackage(i parami) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     this.a.e();

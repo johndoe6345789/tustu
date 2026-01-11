@@ -4,7 +4,7 @@ import G.GInterfaceAg;
 import G.AeInterfaceMikeTostring;
 
 class ApInterfaceJj implements GInterfaceAg {
-  jJ(jA paramjA) {}
+  ApInterfaceJj(jA paramjA) {}
   
   public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     hq.a().d("Online: " + paramString);

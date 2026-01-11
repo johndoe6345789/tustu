@@ -4,7 +4,7 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 class ComboBoxPopupMenuListener implements PopupMenuListener {
-  h(e parame) {}
+  ComboBoxPopupMenuListener(e parame) {}
   
   public void popupMenuWillBecomeVisible(PopupMenuEvent paramPopupMenuEvent) {}
   

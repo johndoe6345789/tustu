@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BgInterfaceSierra implements ActionListener {
-  s(q paramq) {}
+  BgInterfaceSierra(q paramq) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.e(this.a);

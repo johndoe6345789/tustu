@@ -4,7 +4,7 @@ import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.D;
 
 class RunnableImplInBrPackage implements Runnable {
-  g(f paramf, int paramInt) {}
+  RunnableImplInBrPackage(f paramf, int paramInt) {}
   
   public void run() {
     ThreadedJFrameIsoptimizeddrawingenabled.a().o().a();

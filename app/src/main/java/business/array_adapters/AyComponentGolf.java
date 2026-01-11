@@ -9,7 +9,7 @@ class AyComponentGolf extends Thread {
   
   boolean b = true;
   
-  g(f paramf) {}
+  AyComponentGolf(f paramf) {}
   
   public synchronized void run() {
     while (!this.a) {

@@ -11,7 +11,7 @@ class ThreadedInAvPackage extends Thread {
   
   long e = 250L;
   
-  k(j paramj) {}
+  ThreadedInAvPackage(j paramj) {}
   
   public void run() {
     try {

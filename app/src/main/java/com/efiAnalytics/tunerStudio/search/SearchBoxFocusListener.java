@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class SearchBoxFocusListener implements FocusListener {
-  n(m paramm) {}
+  SearchBoxFocusListener(m paramm) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     m.a(this.a);

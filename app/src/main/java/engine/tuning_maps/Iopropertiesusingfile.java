@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.eA;
 import r.IOPropertiesUsingFile;
 
 class Iopropertiesusingfile implements eA {
-  fN(dB paramdB) {}
+  Iopropertiesusingfile(dB paramdB) {}
   
   public boolean IOPropertiesUsingFile() {
     return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.bL, IOPropertiesUsingFile.bM);

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceIndia implements ActionListener {
-  i(g paramg) {}
+  PInterfaceIndia(g paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.d())

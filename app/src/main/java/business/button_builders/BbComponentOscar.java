@@ -4,7 +4,7 @@ import aP.ApInterfaceJa;
 import ae.AeInterfaceQuebec;
 
 class BbComponentOscar implements ApInterfaceJa {
-  o(n paramn) {}
+  BbComponentOscar(n paramn) {}
   
   public String a() {
     return "$firmwareForumLink";

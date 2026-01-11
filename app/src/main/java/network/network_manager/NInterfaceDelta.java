@@ -4,7 +4,7 @@ import G.R;
 import G.S;
 
 class NInterfaceDelta implements S {
-  d(a parama) {}
+  NInterfaceDelta(a parama) {}
   
   public void a(R paramR) {}
   

@@ -3,7 +3,7 @@ package business.buffer_controllers.bC_components;
 class BcInterfaceOscar implements a {
   boolean a = false;
   
-  o(k paramk) {}
+  BcInterfaceOscar(k paramk) {}
   
   public void a() {
     this.a = true;

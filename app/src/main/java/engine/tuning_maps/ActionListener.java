@@ -8,7 +8,7 @@ import java.io.File;
 import r.IOPropertiesUsingFile;
 
 class ActionListener implements ActionListener {
-  aA(au paramau) {}
+  ActionListener(au paramau) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     File file = new File(this.IOPropertiesUsingFile.b.getText());

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class Table3DFollowModeListener implements ActionListener {
-  bK(bt parambt) {}
+  Table3DFollowModeListener(bt parambt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a("followMode", "" + this.a.h.isSelected());

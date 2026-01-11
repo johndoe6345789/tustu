@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class Mouseclicked extends MouseAdapter {
-  f(d paramd) {}
+  Mouseclicked(d paramd) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getClickCount() == 1);

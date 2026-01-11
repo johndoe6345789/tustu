@@ -5,7 +5,7 @@ import aE.PropertiesExtension;
 import c.CInterfaceEcho;
 
 class ApInterfaceEw implements CInterfaceEcho {
-  eW(dB paramdB) {}
+  ApInterfaceEw(dB paramdB) {}
   
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() != null && T.PropertiesExtension().c() != null && !T.PropertiesExtension().c().p().h());

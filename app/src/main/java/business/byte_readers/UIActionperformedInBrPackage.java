@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
 class UIActionperformedInBrPackage implements ActionListener {
-  b(a parama) {}
+  UIActionperformedInBrPackage(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     a.a(this.a, (JButton)paramActionEvent.getSource());

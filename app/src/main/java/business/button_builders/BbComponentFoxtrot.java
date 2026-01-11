@@ -1,7 +1,7 @@
 package business.button_builders;
 
 class BbComponentFoxtrot extends Thread {
-  f(d paramd) {}
+  BbComponentFoxtrot(d paramd) {}
   
   public void run() {
     d.a(this.a);

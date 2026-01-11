@@ -10,7 +10,7 @@ class ApInterfaceGe implements ItemListener {
   
   JCheckBoxMenuItem b = null;
   
-  gE(dB paramdB) {}
+  ApInterfaceGe(dB paramdB) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1)

@@ -12,7 +12,7 @@ class PageRefreshThread extends Thread {
   
   final Object c = new Object();
   
-  k(j paramj) {}
+  PageRefreshThread(j paramj) {}
   
   public void run() {
     while (true) {

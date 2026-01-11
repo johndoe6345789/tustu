@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 class FilenameFilterImpl implements FilenameFilter {
-  h(g paramg) {}
+  FilenameFilterImpl(g paramg) {}
   
   public boolean accept(File paramFile, String paramString) {
     return paramString.toLowerCase().endsWith(".svcmsg");

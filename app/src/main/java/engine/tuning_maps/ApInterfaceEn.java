@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceEn implements Runnable {
-  eN(dB paramdB, boolean paramBoolean) {}
+  ApInterfaceEn(dB paramdB, boolean paramBoolean) {}
   
   public void run() {
     this.b.l().setEnabled(this.a);

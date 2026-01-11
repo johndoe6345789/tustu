@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceDq implements ActionListener {
-  dQ(dB paramdB) {}
+  ApInterfaceDq(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

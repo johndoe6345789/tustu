@@ -5,7 +5,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 class ItemListenerInRPackage implements ItemListener {
-  c(b paramb) {}
+  ItemListenerInRPackage(b paramb) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1)

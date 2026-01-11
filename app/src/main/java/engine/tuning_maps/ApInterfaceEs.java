@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.util.List;
 
 class ApInterfaceEs implements ActionListener {
-  eS(dB paramdB) {}
+  ApInterfaceEs(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.a(this.a.h, (List)null);

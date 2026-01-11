@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class NoteIconMouseAdapter extends MouseAdapter {
-  b(a parama) {}
+  NoteIconMouseAdapter(a parama) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (this.a.isEnabled())

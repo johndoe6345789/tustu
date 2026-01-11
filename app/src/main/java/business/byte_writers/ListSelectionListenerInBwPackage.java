@@ -4,7 +4,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerInBwPackage implements ListSelectionListener {
-  h(f paramf) {}
+  ListSelectionListenerInBwPackage(f paramf) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     if (!paramListSelectionEvent.getValueIsAdjusting())

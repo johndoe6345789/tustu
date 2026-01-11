@@ -3,7 +3,7 @@ package business.binary_transformers;
 import bH.h;
 
 class BtInterfaceAf implements h {
-  aF(an paraman, double[] paramArrayOfdouble) {}
+  BtInterfaceAf(an paraman, double[] paramArrayOfdouble) {}
   
   public boolean a(int paramInt) {
     boolean bool = (paramInt > 1) ? (paramInt - 2) : false;

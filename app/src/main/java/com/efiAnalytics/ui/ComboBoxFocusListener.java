@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class ComboBoxFocusListener implements FocusListener {
-  g(e parame) {}
+  ComboBoxFocusListener(e parame) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.repaint();

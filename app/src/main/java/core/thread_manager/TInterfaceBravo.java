@@ -3,7 +3,7 @@ package T;
 import G.GInterfaceAb;
 
 class TInterfaceBravo implements GInterfaceAb {
-  b(a parama) {}
+  TInterfaceBravo(a parama) {}
   
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
     c.a(a.a(this.a), new d(this.a, paramString, paramInt1, paramInt2, paramArrayOfint.length));

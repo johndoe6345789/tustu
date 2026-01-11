@@ -5,7 +5,7 @@ import G.n;
 import G.o;
 
 class AjInterfaceGolf implements n {
-  g(d paramd) {}
+  AjInterfaceGolf(d paramd) {}
   
   public void a(double paramDouble) {}
   

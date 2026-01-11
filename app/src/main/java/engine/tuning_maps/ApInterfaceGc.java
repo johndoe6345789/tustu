@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.eA;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceGc implements eA {
-  gC(dB paramdB) {}
+  ApInterfaceGc(dB paramdB) {}
   
   public boolean IOPropertiesUsingFile() {
     return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.cc, IOPropertiesUsingFile.cd);

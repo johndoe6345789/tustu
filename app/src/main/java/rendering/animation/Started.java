@@ -7,7 +7,7 @@ class Started implements q {
   
   String b = "";
   
-  e(a parama) {}
+  Started(a parama) {}
   
   public void started(long paramLong) {
     this.a = paramLong;

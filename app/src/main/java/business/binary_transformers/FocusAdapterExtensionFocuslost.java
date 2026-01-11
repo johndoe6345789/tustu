@@ -4,7 +4,7 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 class FocusAdapterExtensionFocuslost extends FocusAdapter {
-  aW(aV paramaV) {}
+  FocusAdapterExtensionFocuslost(aV paramaV) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.j();

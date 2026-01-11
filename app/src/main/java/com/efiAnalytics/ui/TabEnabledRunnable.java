@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 class TabEnabledRunnable implements Runnable {
-  eL(eK parameK, int paramInt, boolean paramBoolean) {}
+  TabEnabledRunnable(eK parameK, int paramInt, boolean paramBoolean) {}
   
   public void run() {
     this.c.setEnabledAt(this.a, this.b);

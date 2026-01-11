@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeComponentUniform implements ActionListener {
-  u(s params) {}
+  BeComponentUniform(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     s.b(this.a);

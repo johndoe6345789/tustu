@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrComponentYankee implements ActionListener {
-  y(s params) {}
+  BrComponentYankee(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.h.d();

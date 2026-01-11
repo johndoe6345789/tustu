@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.s;
 class BlInterfaceJuliet extends s {
   private long b = -1L;
   
-  j(i parami) {}
+  BlInterfaceJuliet(i parami) {}
   
   public long c() {
     return this.b;

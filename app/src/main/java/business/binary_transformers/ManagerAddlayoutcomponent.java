@@ -7,7 +7,7 @@ import java.awt.Dimension;
 import java.awt.LayoutManager;
 
 class ManagerAddlayoutcomponent implements LayoutManager {
-  bJ(bI parambI) {}
+  ManagerAddlayoutcomponent(bI parambI) {}
   
   public void addLayoutComponent(String paramString, Component paramComponent) {}
   

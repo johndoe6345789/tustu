@@ -8,7 +8,7 @@ import javax.swing.JCheckBoxMenuItem;
 import s.SComponentGolf;
 
 class ApInterfaceCg implements ActionListener {
-  cG(cc paramcc) {}
+  ApInterfaceCg(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

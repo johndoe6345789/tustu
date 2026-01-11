@@ -4,7 +4,7 @@ import aE.PropertiesExtension;
 import c.CInterfaceEcho;
 
 class ApInterfaceEy implements CInterfaceEcho {
-  eY(dB paramdB) {}
+  ApInterfaceEy(dB paramdB) {}
   
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() != null && dd.PropertiesExtension().h() != null && dd.PropertiesExtension().h().g());

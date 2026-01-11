@@ -4,7 +4,7 @@ import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.D;
 
 class BrComponentHotel implements Runnable {
-  h(f paramf, int paramInt) {}
+  BrComponentHotel(f paramf, int paramInt) {}
   
   public void run() {
     ThreadedJFrameIsoptimizeddrawingenabled.a().o().a();

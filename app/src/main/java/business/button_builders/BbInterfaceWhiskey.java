@@ -4,7 +4,7 @@ import ae.AeInterfaceUniform;
 import com.efiAnalytics.ui.bV;
 
 class BbInterfaceWhiskey implements AeInterfaceUniform {
-  w(v paramv) {}
+  BbInterfaceWhiskey(v paramv) {}
   
   public void a(double paramDouble) {
     this.a.d.setValue((int)Math.round(paramDouble * 100.0D));

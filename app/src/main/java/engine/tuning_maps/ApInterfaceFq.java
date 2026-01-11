@@ -8,7 +8,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class ApInterfaceFq implements ActionListener {
-  fQ(dB paramdB) {}
+  ApInterfaceFq(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();

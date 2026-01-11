@@ -16,7 +16,7 @@ import r.ThreadedFile;
 import s.SComponentGolf;
 
 class ApComponentQuebec extends Thread {
-  q(f paramf) {}
+  ApComponentQuebec(f paramf) {}
   
   public void run() {
     File file = null;

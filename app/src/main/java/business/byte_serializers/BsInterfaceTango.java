@@ -3,7 +3,7 @@ package business.byte_serializers;
 import com.efiAnalytics.ui.dC;
 
 class BsInterfaceTango implements dC {
-  t(k paramk) {}
+  BsInterfaceTango(k paramk) {}
   
   public void a() {
     this.a.d.d();

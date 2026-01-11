@@ -5,7 +5,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ChangeListenerImplInTPackage implements ChangeListener {
-  aI(aF paramaF) {}
+  ChangeListenerImplInTPackage(aF paramaF) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     int i = ((JSlider)paramChangeEvent.getSource()).getValue();

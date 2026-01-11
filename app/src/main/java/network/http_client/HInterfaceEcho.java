@@ -3,7 +3,7 @@ package h;
 import g.GInterfaceAlpha;
 
 class HInterfaceEcho implements GInterfaceAlpha {
-  e(b paramb) {}
+  HInterfaceEcho(b paramb) {}
   
   public boolean GInterfaceAlpha(String paramString) {
     return (paramString != null && (paramString.equals("AFR") || paramString.equals("Lambda")));

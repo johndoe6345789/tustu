@@ -1,7 +1,7 @@
 package aM;
 
 class RunnableImplInAmPackage implements Runnable {
-  c(a parama) {}
+  RunnableImplInAmPackage(a parama) {}
   
   public void run() {
     if (this.a.c != null)

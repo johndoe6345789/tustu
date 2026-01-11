@@ -3,7 +3,7 @@ package aU;
 import G.R;
 
 class RunnableImplInAuPackage implements Runnable {
-  b(a parama, R paramR) {}
+  RunnableImplInAuPackage(a parama, R paramR) {}
   
   public void run() {
     try {

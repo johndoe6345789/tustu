@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 class JPanelExtensionInBtPackage extends JPanel {
   ArrayList a = new ArrayList();
   
-  aI(an paraman) {}
+  JPanelExtensionInBtPackage(an paraman) {}
   
   public void setEnabled(boolean paramBoolean) {
     bV.a(this, paramBoolean);

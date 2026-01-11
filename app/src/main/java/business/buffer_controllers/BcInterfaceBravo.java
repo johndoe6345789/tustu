@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BcInterfaceBravo implements ActionListener {
-  b(a parama) {}
+  BcInterfaceBravo(a parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.d()) {

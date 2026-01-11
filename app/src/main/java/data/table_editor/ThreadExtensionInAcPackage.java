@@ -1,7 +1,7 @@
 package ac;
 
 class ThreadExtensionInAcPackage extends Thread {
-  j(h paramh) {}
+  ThreadExtensionInAcPackage(h paramh) {}
   
   public void run() {
     try {

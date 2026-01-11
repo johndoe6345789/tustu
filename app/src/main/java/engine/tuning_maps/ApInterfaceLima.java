@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApInterfaceLima implements Runnable {
-  l(f paramf) {}
+  ApInterfaceLima(f paramf) {}
   
   public void run() {
     String str;

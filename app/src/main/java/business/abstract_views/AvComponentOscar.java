@@ -4,7 +4,7 @@ import W.A;
 import h.IOProperties;
 
 class AvComponentOscar implements A {
-  o(l paraml) {}
+  AvComponentOscar(l paraml) {}
   
   public String a() {
     return "MegaLogViewer HD Ini Loader";

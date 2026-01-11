@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceBj implements ActionListener {
-  bJ(bG parambG) {}
+  ApInterfaceBj(bG parambG) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.c.isSelected()) {

@@ -5,7 +5,7 @@ class KComponentBravo {
   
   private int c = 0;
   
-  b(a parama) {}
+  KComponentBravo(a parama) {}
   
   public String a() {
     return this.b;

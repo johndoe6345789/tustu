@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileFilter;
 
 class Accept implements FileFilter {
-  y(x paramx) {}
+  Accept(x paramx) {}
   
   public boolean accept(File paramFile) {
     return paramFile.getName().toLowerCase().endsWith(x.a);

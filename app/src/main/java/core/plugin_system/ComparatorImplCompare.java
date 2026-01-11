@@ -3,7 +3,7 @@ package p;
 import java.util.Comparator;
 
 class ComparatorImplCompare implements Comparator {
-  e(c paramc) {}
+  ComparatorImplCompare(c paramc) {}
   
   public int compare(Object paramObject1, Object paramObject2) {
     return paramObject1.toString().compareTo(paramObject2.toString());

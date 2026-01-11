@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceSierra implements ActionListener {
-  s(p paramp) {}
+  PInterfaceSierra(p paramp) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     p.c(this.a);

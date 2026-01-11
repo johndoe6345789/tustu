@@ -4,7 +4,7 @@ import bH.M;
 import s.SComponentGolf;
 
 class ApInterfaceTango implements M {
-  t(f paramf) {}
+  ApInterfaceTango(f paramf) {}
   
   public void a() {
     this.a.e(SComponentGolf.b("Backuping Car Project"));

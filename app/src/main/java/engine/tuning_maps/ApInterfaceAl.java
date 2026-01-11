@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApInterfaceAl implements GInterfaceAn {
-  aL(aG paramaG) {}
+  ApInterfaceAl(aG paramaG) {}
   
   public void a(String paramString1, String paramString2) {
     String str = aG.a(this.a).G().b();

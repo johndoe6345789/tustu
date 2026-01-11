@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ReloadTabListener implements ActionListener {
-  s(n paramn, int paramInt) {}
+  ReloadTabListener(n paramn, int paramInt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     J j = this.b.a(this.b.getTitleAt(this.a));

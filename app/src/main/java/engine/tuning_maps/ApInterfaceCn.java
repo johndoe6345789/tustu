@@ -5,7 +5,7 @@ import ao.hx;
 import c.CInterfaceEcho;
 
 class ApInterfaceCn implements CInterfaceEcho {
-  cN(cc paramcc) {}
+  ApInterfaceCn(cc paramcc) {}
   
   public boolean a() {
     return (hx.a().AcInterfaceRomeo() != null && !AcInterfaceRomeo.a());

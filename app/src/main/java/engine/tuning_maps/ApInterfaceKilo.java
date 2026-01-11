@@ -4,7 +4,7 @@ import G.Q;
 import W.r;
 
 class ApInterfaceKilo implements r {
-  k(f paramf) {}
+  ApInterfaceKilo(f paramf) {}
   
   public boolean a(Q paramQ) {
     return !paramQ.aN();

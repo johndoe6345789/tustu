@@ -3,7 +3,7 @@ package business.binary_transformers;
 import G.GInterfaceAn;
 
 class BtInterfaceBd implements GInterfaceAn {
-  bD(bB parambB) {}
+  BtInterfaceBd(bB parambB) {}
   
   public void a(String paramString1, String paramString2) {
     bB.a(this.a);

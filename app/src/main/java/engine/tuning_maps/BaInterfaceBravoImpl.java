@@ -7,7 +7,7 @@ import java.util.List;
 class BaInterfaceBravoImpl implements BaInterfaceBravo {
   ArrayList a = new ArrayList();
   
-  gR(gQ paramgQ) {}
+  BaInterfaceBravoImpl(gQ paramgQ) {}
   
   public void a() {
     this.a.clear();

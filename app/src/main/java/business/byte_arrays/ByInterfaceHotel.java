@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JList;
 
 class ByInterfaceHotel extends MouseAdapter {
-  h(d paramd) {}
+  ByInterfaceHotel(d paramd) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     JList<k> jList = (JList)paramMouseEvent.getSource();

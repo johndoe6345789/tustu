@@ -3,7 +3,7 @@ package aS;
 import com.efiAnalytics.ui.bc;
 
 class CloseInAsPackage implements bc {
-  d(c paramc) {}
+  CloseInAsPackage(c paramc) {}
   
   public void close() {}
 }

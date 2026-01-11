@@ -8,7 +8,7 @@ import java.awt.LayoutManager;
 class ManagerAddlayoutcomponent implements LayoutManager {
   private int b = 0;
   
-  u(d paramd) {}
+  ManagerAddlayoutcomponent(d paramd) {}
   
   public void addLayoutComponent(String paramString, Component paramComponent) {}
   

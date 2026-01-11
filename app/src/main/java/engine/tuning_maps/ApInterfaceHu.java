@@ -4,7 +4,7 @@ import bH.r;
 import n.NInterfaceJuliet;
 
 class ApInterfaceHu implements r {
-  hU(hO paramhO) {}
+  ApInterfaceHu(hO paramhO) {}
   
   public void a(String paramString) {
     NInterfaceJuliet.a().a(paramString);

@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInSPackage extends Thread {
-  c(b paramb, R paramR) {}
+  ThreadExtensionInSPackage(b paramb, R paramR) {}
   
   public void run() {
     try {

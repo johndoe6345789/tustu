@@ -6,7 +6,7 @@ import G.GInterfaceBu;
 import H.HInterfaceCharlie;
 
 class Hinterfacecharlie implements S {
-  hS(hO paramhO) {}
+  Hinterfacecharlie(hO paramhO) {}
   
   public void a(R paramR) {}
   

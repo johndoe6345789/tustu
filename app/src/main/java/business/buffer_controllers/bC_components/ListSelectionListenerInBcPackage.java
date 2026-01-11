@@ -4,7 +4,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerInBcPackage implements ListSelectionListener {
-  i(e parame) {}
+  ListSelectionListenerInBcPackage(e parame) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     if (!paramListSelectionEvent.getValueIsAdjusting())

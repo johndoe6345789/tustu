@@ -492,7 +492,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     try {
       GComponentCd.AjComponentCharlie();
     } catch (ExceptionPrintstacktrace g1) {
-      throw new ExceptionInVPackage("Failed to reset logger fields:\BInterfaceNovember" + g1.getLocalizedMessage());
+      throw new ExceptionInVPackage("Failed to reset logger fields:\n" + g1.getLocalizedMessage());
     } 
     boolean bool = (GComponentCd.f() == -1) ? true : GComponentCd.f();
     ExceptionInVPackage().AjComponentBravo(bool);
@@ -2603,7 +2603,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       Vector<String> vector = new Vector();
       Vector<Vector> vector1 = new Vector();
       StringBuffer stringBuffer = new StringBuffer();
-      stringBuffer.append(paramn.ExceptionPrintstacktrace() + "\BInterfaceNovember");
+      stringBuffer.append(paramn.ExceptionPrintstacktrace() + "\n");
       byte b1;
       for (b1 = 0; b1 < paramn.size(); b1++) {
         j j = (j)paramn.get(b1);
@@ -2612,7 +2612,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         if (b1 < paramn.size() - 1)
           stringBuffer.append("\t"); 
       } 
-      stringBuffer.append("\BInterfaceNovember");
+      stringBuffer.append("\n");
       try {
         for (b1 = 0; b1 < paramn.size(); b1++) {
           j j = (j)paramn.get(b1);
@@ -2623,7 +2623,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       } catch (Exception exception) {
         throw new ExceptionInVPackage("Invalid units row in log file.");
       } 
-      stringBuffer.append("\BInterfaceNovember");
+      stringBuffer.append("\n");
       if (this.Z) {
         for (b1 = 0; b1 < paramn.FileInAzPackage(); b1++) {
           Vector<Float> vector2 = new Vector();
@@ -2648,7 +2648,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         } catch (Exception exception) {
           throw new ExceptionInVPackage("Invalid data found at record: " + b1 + "\nThis file does not appear valid.");
         } 
-        stringBuffer.append("\BInterfaceNovember");
+        stringBuffer.append("\n");
       } 
       this.AjComponentBravo.setText(stringBuffer.toString());
     } 

@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 class ApInterfaceFa implements ActionListener {
-  fA(dB paramdB) {}
+  ApInterfaceFa(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {

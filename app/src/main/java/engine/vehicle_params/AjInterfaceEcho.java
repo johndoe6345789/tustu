@@ -5,7 +5,7 @@ import G.n;
 import G.o;
 
 class AjInterfaceEcho implements n {
-  e(d paramd) {}
+  AjInterfaceEcho(d paramd) {}
   
   public void a(double paramDouble) {}
   

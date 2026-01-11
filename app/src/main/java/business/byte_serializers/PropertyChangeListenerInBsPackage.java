@@ -4,7 +4,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 class PropertyChangeListenerInBsPackage implements PropertyChangeListener {
-  h(f paramf) {}
+  PropertyChangeListenerInBsPackage(f paramf) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     if (!this.a.m || this.a.p)

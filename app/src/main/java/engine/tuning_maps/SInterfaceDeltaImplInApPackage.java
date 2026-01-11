@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class SInterfaceDeltaImplInApPackage implements SInterfaceDelta {
-  bD(bB parambB) {}
+  SInterfaceDeltaImplInApPackage(bB parambB) {}
   
   public void a() {
     bE bE = new bE(this);

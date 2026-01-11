@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class ThreadExtension extends Thread {
   private int b = 200;
   
-  aP(aO paramaO) {}
+  ThreadExtension(aO paramaO) {}
   
   public void run() {
     try {

@@ -4,7 +4,7 @@ import G.T;
 import c.CInterfaceEcho;
 
 class ApInterfaceEa implements CInterfaceEcho {
-  eA(dB paramdB) {}
+  ApInterfaceEa(dB paramdB) {}
   
   public boolean a() {
     return (T.a().c() != null && (T.a().c().O().f(0) < 256 || (T.a().c().c("tpsMin") != null && T.a().c().c("tpsMax") != null)));

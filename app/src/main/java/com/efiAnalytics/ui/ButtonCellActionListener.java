@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ButtonCellActionListener implements ActionListener {
-  eW(eV parameV) {}
+  ButtonCellActionListener(eV parameV) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     for (eX eX : this.a.b)

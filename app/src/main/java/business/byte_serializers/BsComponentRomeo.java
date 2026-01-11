@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 class BsComponentRomeo implements ActionListener {
-  r(k paramk) {}
+  BsComponentRomeo(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBox jCheckBox = (JCheckBox)paramActionEvent.getSource();

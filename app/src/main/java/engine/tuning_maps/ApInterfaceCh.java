@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ApInterfaceCh implements ActionListener {
-  cH(cc paramcc) {}
+  ApInterfaceCh(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     Frame frame = bV.a(this.a.getParent());

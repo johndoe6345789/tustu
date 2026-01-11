@@ -4,7 +4,7 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 class OtherCheckboxListener implements ItemListener {
-  d(b paramb) {}
+  OtherCheckboxListener(b paramb) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     boolean bool = (paramItemEvent.getStateChange() == 1) ? true : false;

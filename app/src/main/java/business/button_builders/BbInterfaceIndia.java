@@ -8,7 +8,7 @@ import java.util.List;
 import s.SComponentGolf;
 
 class BbInterfaceIndia implements AInterfaceOscar {
-  i(d paramd) {}
+  BbInterfaceIndia(d paramd) {}
   
   public boolean a(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     return true;

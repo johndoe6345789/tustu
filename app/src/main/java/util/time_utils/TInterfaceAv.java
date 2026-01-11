@@ -7,7 +7,7 @@ import javax.swing.JTextField;
 import s.SComponentGolf;
 
 class TInterfaceAv extends KeyAdapter {
-  aV(aO paramaO) {}
+  TInterfaceAv(aO paramaO) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();

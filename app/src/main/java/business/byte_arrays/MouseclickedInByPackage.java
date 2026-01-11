@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JList;
 
 class MouseclickedInByPackage extends MouseAdapter {
-  g(d paramd) {}
+  MouseclickedInByPackage(d paramd) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     JList<String> jList = (JList)paramMouseEvent.getSource();

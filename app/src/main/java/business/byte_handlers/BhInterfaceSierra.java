@@ -1,7 +1,7 @@
 package business.byte_handlers;
 
 class BhInterfaceSierra extends Thread {
-  s(r paramr) {}
+  BhInterfaceSierra(r paramr) {}
   
   public void run() {
     try {

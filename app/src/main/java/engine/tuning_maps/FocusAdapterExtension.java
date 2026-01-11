@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import javax.swing.text.JTextComponent;
 
 class FocusAdapterExtension extends FocusAdapter {
-  aD(au paramau) {}
+  FocusAdapterExtension(au paramau) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() instanceof JTextComponent) {

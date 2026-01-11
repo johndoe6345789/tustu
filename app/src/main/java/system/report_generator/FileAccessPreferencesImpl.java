@@ -5,7 +5,7 @@ import HInterfaceHotel.HInterfaceHotel;
 import HInterfaceHotel.i;
 
 class FileAccessPreferencesImpl implements FileAccessPreferences {
-  f(b paramb) {}
+  FileAccessPreferencesImpl(b paramb) {}
   
   public String getDownloadDirectory() {
     int i = i.b(i.at, i.au);

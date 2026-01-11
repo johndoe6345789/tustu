@@ -6,7 +6,7 @@ import S.SInterfaceMike;
 import U.UInterfaceBravo;
 
 class SInterfaceMikeImpl implements SInterfaceMike {
-  hY(hO paramhO) {}
+  SInterfaceMikeImpl(hO paramhO) {}
   
   public void a(String paramString) {
     R r = T.a().c(paramString);

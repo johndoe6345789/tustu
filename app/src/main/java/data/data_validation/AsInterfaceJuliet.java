@@ -7,7 +7,7 @@ import G.ManagerUsingArrayList;
 class AsInterfaceJuliet implements GInterfaceBu, GComponentCq {
   int a = 65535;
   
-  j(g paramg) {}
+  AsInterfaceJuliet(g paramg) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if ((paramString.equals(this.b.a) && paramDouble < this.a) || (paramString.equals("controllerSettingsLoaded") && paramDouble != 0.0D))

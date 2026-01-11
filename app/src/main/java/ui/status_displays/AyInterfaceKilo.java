@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfaceKilo implements ActionListener {
-  k(j paramj) {}
+  AyInterfaceKilo(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();

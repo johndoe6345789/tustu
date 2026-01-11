@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApInterfaceCv extends Thread {
-  cV(cc paramcc) {}
+  ApInterfaceCv(cc paramcc) {}
   
   public void run() {
     try {

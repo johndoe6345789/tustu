@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceQuebec implements ActionListener {
-  q(p paramp) {}
+  PInterfaceQuebec(p paramp) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     p.a(this.a);

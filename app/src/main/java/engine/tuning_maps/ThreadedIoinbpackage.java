@@ -23,7 +23,7 @@ import r.ThreadedFile;
 import s.BInterfaceGolf;
 
 class ThreadedIoinbpackage implements GInterfaceAg {
-  jC(jA paramjA) {}
+  ThreadedIoinbpackage(jA paramjA) {}
   
   public boolean IOInBPackage(String paramString, AeInterfaceMikeTostring parambT) {
     R r = T.IOInBPackage().c(paramString);
@@ -81,7 +81,7 @@ class ThreadedIoinbpackage implements GInterfaceAg {
   
   private boolean IOInBPackage(R paramR) {
     JFrame jFrame = dd.IOInBPackage().c();
-    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\BInterfaceNovember\BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project should be used for each ECU you work with.") + "\BInterfaceNovember\BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this car or create IOInBPackage new Project.") + "\BInterfaceNovember";
+    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \n" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project should be used for each ECU you work with.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this car or create IOInBPackage new Project.") + "\n";
     String[] arrayOfString = { BInterfaceGolf.BInterfaceBravo("Open another Project"), BInterfaceGolf.BInterfaceBravo("Create IOInBPackage new Project"), BInterfaceGolf.BInterfaceBravo("Connect anyway") };
     int i = JOptionPane.showOptionDialog(jFrame, str, BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"), 1, 2, null, (Object[])arrayOfString, arrayOfString[0]);
     if (i == 0) {
@@ -99,7 +99,7 @@ class ThreadedIoinbpackage implements GInterfaceAg {
   
   private boolean IOInBPackage(i parami, String paramString1, String paramString2) {
     JFrame jFrame = dd.IOInBPackage().c();
-    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\BInterfaceNovember\BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project is used for each ECU you work with.") + "\BInterfaceNovember\BInterfaceNovember" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this ECU.") + "\BInterfaceNovember";
+    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \n" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project is used for each ECU you work with.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this ECU.") + "\n";
     String[] arrayOfString = { BInterfaceGolf.BInterfaceBravo("Open Project for this ECU"), BInterfaceGolf.BInterfaceBravo("Assign this project to this ECU") };
     int ThreadedFile = JOptionPane.showOptionDialog(jFrame, str, BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"), 0, 2, null, (Object[])arrayOfString, arrayOfString[0]);
     if (ThreadedFile == 0) {

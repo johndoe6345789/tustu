@@ -5,7 +5,7 @@ import W.WInterfaceAq;
 class ApInterfaceBt implements WInterfaceAq {
   long a = -1L;
   
-  bT(bR parambR) {}
+  ApInterfaceBt(bR parambR) {}
   
   public void a(double paramDouble) {
     if (this.a == -1L)

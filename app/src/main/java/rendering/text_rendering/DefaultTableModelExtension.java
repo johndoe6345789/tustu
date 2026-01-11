@@ -3,7 +3,7 @@ package aO;
 import javax.swing.table.DefaultTableModel;
 
 class DefaultTableModelExtension extends DefaultTableModel {
-  o(k paramk) {}
+  DefaultTableModelExtension(k paramk) {}
   
   public boolean isCellEditable(int paramInt1, int paramInt2) {
     return false;

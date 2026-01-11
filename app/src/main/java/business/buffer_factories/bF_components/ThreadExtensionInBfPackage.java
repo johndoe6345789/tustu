@@ -13,7 +13,7 @@ class ThreadExtensionInBfPackage extends Thread {
   
   boolean d = true;
   
-  s(d paramd) {}
+  ThreadExtensionInBfPackage(d paramd) {}
   
   public void run() {
     while (this.d) {

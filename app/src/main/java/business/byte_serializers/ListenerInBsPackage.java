@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ListenerInBsPackage implements ActionListener {
-  g(f paramf) {}
+  ListenerInBsPackage(f paramf) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.e();

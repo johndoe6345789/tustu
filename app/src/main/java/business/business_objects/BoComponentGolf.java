@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BoComponentGolf implements ActionListener {
-  g(b paramb) {}
+  BoComponentGolf(b paramb) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.m.getSelectedItem().equals(b.b())) {

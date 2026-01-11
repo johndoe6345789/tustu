@@ -12,7 +12,7 @@ class ManagerMousedragged extends MouseAdapter {
   
   Point b = null;
   
-  o(m paramm) {}
+  ManagerMousedragged(m paramm) {}
   
   public void mouseDragged(MouseEvent paramMouseEvent) {
     Rectangle rectangle = this.c.c();

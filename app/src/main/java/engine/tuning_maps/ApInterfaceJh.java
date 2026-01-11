@@ -4,7 +4,7 @@ import G.GInterfaceAt;
 import G.GInterfaceBn;
 
 class ApInterfaceJh implements GInterfaceAt, GInterfaceBn {
-  jH(jA paramjA) {}
+  ApInterfaceJh(jA paramjA) {}
   
   public void b(String paramString1, String paramString2) {
     hq.a().d(paramString1 + ": " + paramString2);

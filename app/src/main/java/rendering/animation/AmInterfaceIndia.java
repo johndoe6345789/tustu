@@ -1,7 +1,7 @@
 package aM;
 
 class AmInterfaceIndia extends Thread {
-  i(f paramf) {}
+  AmInterfaceIndia(f paramf) {}
   
   public void run() {
     f.b(this.a);

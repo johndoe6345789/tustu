@@ -7,7 +7,7 @@ import javax.swing.text.DocumentFilter;
 class DocumentFilterExtension extends DocumentFilter {
   String a = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ _";
   
-  r(q paramq) {}
+  DocumentFilterExtension(q paramq) {}
   
   public void insertString(DocumentFilter.FilterBypass paramFilterBypass, int paramInt, String paramString, AttributeSet paramAttributeSet) {
     if (paramString == null)

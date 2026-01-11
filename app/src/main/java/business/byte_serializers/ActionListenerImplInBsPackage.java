@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JToggleButton;
 
 class ActionListenerImplInBsPackage implements ActionListener {
-  l(k paramk) {}
+  ActionListenerImplInBsPackage(k paramk) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JToggleButton jToggleButton = (JToggleButton)paramActionEvent.getSource();

@@ -1,7 +1,7 @@
 package af;
 
 class AfInterfaceDelta implements o {
-  d(c paramc) {}
+  AfInterfaceDelta(c paramc) {}
   
   public boolean a(ad.d paramd) {
     return (!this.a.g.b() || paramd.d() < 3974144 || paramd.d() > 3981311);

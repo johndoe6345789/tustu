@@ -4,7 +4,7 @@ import ar.ArComponentCharlie;
 import java.util.Comparator;
 
 class ComparatorImplInBhPackage implements Comparator {
-  m(l paraml) {}
+  ComparatorImplInBhPackage(l paraml) {}
   
   public int a(ArComponentCharlie paramc1, ArComponentCharlie paramc2) {
     return paramc1.e() - paramc2.e();

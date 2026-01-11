@@ -3,7 +3,7 @@ package business.query_builders.bQ_components;
 import G.GInterfaceAv;
 
 class BqInterfaceQuebec implements GInterfaceAv {
-  q(l paraml) {}
+  BqInterfaceQuebec(l paraml) {}
   
   public void b(String paramString) {
     if (paramString == null)

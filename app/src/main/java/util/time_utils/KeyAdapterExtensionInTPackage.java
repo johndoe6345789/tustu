@@ -6,7 +6,7 @@ import javax.swing.JTextField;
 import s.SComponentGolf;
 
 class KeyAdapterExtensionInTPackage extends KeyAdapter {
-  aM(aK paramaK) {}
+  KeyAdapterExtensionInTPackage(aK paramaK) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();

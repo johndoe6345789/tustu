@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceEo extends Thread {
-  eO(dB paramdB) {}
+  ApInterfaceEo(dB paramdB) {}
   
   public void run() {
     try {

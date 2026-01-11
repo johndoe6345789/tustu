@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AyInterfaceMike implements ActionListener {
-  m(l paraml) {}
+  AyInterfaceMike(l paraml) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

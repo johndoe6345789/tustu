@@ -3,7 +3,7 @@ package aH;
 import G.R;
 
 class ThreadExtensionInAhPackage extends Thread {
-  c(b paramb, R paramR) {}
+  ThreadExtensionInAhPackage(b paramb, R paramR) {}
   
   public void run() {
     this.b.b(this.a);

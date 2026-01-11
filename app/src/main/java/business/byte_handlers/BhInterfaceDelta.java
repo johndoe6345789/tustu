@@ -5,7 +5,7 @@ import i.IComponentJuliet;
 class BhInterfaceDelta implements IComponentJuliet {
   long a = 0L;
   
-  d(b paramb) {}
+  BhInterfaceDelta(b paramb) {}
   
   public void a() {
     this.a = System.currentTimeMillis();

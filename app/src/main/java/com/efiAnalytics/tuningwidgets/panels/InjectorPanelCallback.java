@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bt.BtInterfaceBz;
 
 class InjectorPanelCallback implements BtInterfaceBz {
-  aG(aF paramaF) {}
+  InjectorPanelCallback(aF paramaF) {}
   
   public void b(String paramString) {
     this.a.b(paramString);

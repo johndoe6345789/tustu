@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eB;
 
 class RunnableImplInAoPackage implements Runnable {
-  h(g paramg) {}
+  RunnableImplInAoPackage(g paramg) {}
   
   public void run() {
     this.a.b = new eB(bV.a(this.a.e.k), "Loading Ignition Log", "Loading Ignition Log File, please wait....", true, false);

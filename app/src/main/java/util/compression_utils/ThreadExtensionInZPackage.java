@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 class ThreadExtensionInZPackage extends Thread {
   private boolean b = false;
   
-  b(a parama) {}
+  ThreadExtensionInZPackage(a parama) {}
   
   public void run() {
     b();

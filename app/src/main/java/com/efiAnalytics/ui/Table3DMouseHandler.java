@@ -15,7 +15,7 @@ class Table3DMouseHandler extends MouseAdapter implements MouseMotionListener {
   
   boolean d = false;
   
-  eP(eM parameM) {}
+  Table3DMouseHandler(eM parameM) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (this.e.isEnabled()) {

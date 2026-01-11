@@ -9,7 +9,7 @@ class ThreadedInBPackage extends Thread {
   
   boolean b = true;
   
-  f(e parame) {}
+  ThreadedInBPackage(e parame) {}
   
   public synchronized void run() {
     while (!this.a) {

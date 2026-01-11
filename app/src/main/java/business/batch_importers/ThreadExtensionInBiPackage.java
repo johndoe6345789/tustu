@@ -1,7 +1,7 @@
 package business.batch_importers;
 
 class ThreadExtensionInBiPackage extends Thread {
-  f(a parama) {}
+  ThreadExtensionInBiPackage(a parama) {}
   
   public void run() {
     a.c(this.a);

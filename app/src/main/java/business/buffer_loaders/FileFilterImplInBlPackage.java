@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileFilter;
 
 class FileFilterImplInBlPackage implements FileFilter {
-  o(l paraml) {}
+  FileFilterImplInBlPackage(l paraml) {}
   
   public boolean accept(File paramFile) {
     return paramFile.getName().toLowerCase().endsWith(".jar");

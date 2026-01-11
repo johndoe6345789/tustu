@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceDelta implements ActionListener {
-  d(c paramc) {}
+  PInterfaceDelta(c paramc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     c.a(this.a);

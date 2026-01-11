@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerInApPackage implements ActionListener {
-  aH(aG paramaG) {}
+  ActionListenerInApPackage(aG paramaG) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (paramActionEvent.getActionCommand().equals("min")) {

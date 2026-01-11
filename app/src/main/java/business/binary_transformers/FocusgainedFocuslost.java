@@ -4,7 +4,7 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 class FocusgainedFocuslost extends FocusAdapter {
-  bM(bK parambK) {}
+  FocusgainedFocuslost(bK parambK) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.selectAll();

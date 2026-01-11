@@ -5,7 +5,7 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
 class HyperlinkListenerInBlPackage implements HyperlinkListener {
-  k(h paramh) {}
+  HyperlinkListenerInBlPackage(h paramh) {}
   
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
     if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED))

@@ -7,7 +7,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class ApInterfaceEi implements ActionListener {
-  eI(dB paramdB) {}
+  ApInterfaceEi(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = SComponentGolf.b("Are you sure you wish to remove the registration information?") + "\n\n" + SComponentGolf.b("This installation of " + IOPropertiesUsingFile.b + " will run as the unregistered version.");

@@ -4,7 +4,7 @@ import Z.ZInterfaceEcho;
 import java.util.Comparator;
 
 class BcInterfaceNovember implements Comparator {
-  n(k paramk) {}
+  BcInterfaceNovember(k paramk) {}
   
   public int a(ZInterfaceEcho parame1, ZInterfaceEcho parame2) {
     return parame1.a().compareTo(parame2.a());

@@ -4,7 +4,7 @@ import bH.ab;
 import s.SComponentGolf;
 
 class BkInterfaceFoxtrot implements ab {
-  f(d paramd) {}
+  BkInterfaceFoxtrot(d paramd) {}
   
   public String a(String paramString) {
     return SComponentGolf.b(paramString);

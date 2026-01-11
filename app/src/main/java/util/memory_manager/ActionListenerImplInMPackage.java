@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 class ActionListenerImplInMPackage implements ActionListener {
-  g(d paramd) {}
+  ActionListenerImplInMPackage(d paramd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     for (JCheckBox jCheckBox : this.a.a)

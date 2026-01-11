@@ -13,7 +13,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class UIActionperformed implements ActionListener {
-  w(s params) {}
+  UIActionperformed(s params) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     R r = T.IOPropertiesUsingFile().c(this.IOPropertiesUsingFile.NetworkHashMap.IOPropertiesUsingFile());

@@ -10,7 +10,7 @@ import y.IOInYPackage;
 class ThreadedIoinypackage implements S {
   R a = null;
   
-  hZ(hO paramhO) {}
+  ThreadedIoinypackage(hO paramhO) {}
   
   public void a(R paramR) {
     this.a = paramR;

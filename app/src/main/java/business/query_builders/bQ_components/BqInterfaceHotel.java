@@ -6,7 +6,7 @@ import bR.BrInterfaceCharlie;
 import java.io.IOException;
 
 class BqInterfaceHotel implements BnInterfaceGolf {
-  h(f paramf) {}
+  BqInterfaceHotel(f paramf) {}
   
   public void b(IOException paramIOException) {}
   

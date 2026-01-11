@@ -5,7 +5,7 @@ import java.awt.Rectangle;
 import java.util.StringTokenizer;
 
 class AoInterfacePapa implements aY {
-  p(k paramk) {}
+  AoInterfacePapa(k paramk) {}
   
   public void a(double paramDouble1, double paramDouble2) {
     String str1 = this.a.b.getText();

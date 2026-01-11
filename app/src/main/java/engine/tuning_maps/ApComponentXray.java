@@ -3,7 +3,7 @@ package aP;
 import G.GInterfaceAb;
 
 class ApComponentXray implements GInterfaceAb {
-  x(f paramf) {}
+  ApComponentXray(f paramf) {}
   
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
     dd.a().f().b();

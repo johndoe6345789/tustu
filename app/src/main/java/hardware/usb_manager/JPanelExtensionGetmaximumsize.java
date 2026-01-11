@@ -7,7 +7,7 @@ import java.awt.Toolkit;
 import javax.swing.JPanel;
 
 class JPanelExtensionGetmaximumsize extends JPanel implements bc {
-  e(d paramd) {}
+  JPanelExtensionGetmaximumsize(d paramd) {}
   
   public void close() {
     for (Component component : getComponents()) {

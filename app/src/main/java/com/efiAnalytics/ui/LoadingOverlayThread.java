@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class LoadingOverlayThread extends Thread {
   boolean a = true;
   
-  fK(fJ paramfJ) {}
+  LoadingOverlayThread(fJ paramfJ) {}
   
   public void run() {
     while (this.a) {

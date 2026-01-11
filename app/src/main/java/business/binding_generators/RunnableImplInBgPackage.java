@@ -3,7 +3,7 @@ package business.binding_generators;
 import java.awt.Cursor;
 
 class RunnableImplInBgPackage implements Runnable {
-  b(a parama) {}
+  RunnableImplInBgPackage(a parama) {}
   
   public void run() {
     a.a(this.a);

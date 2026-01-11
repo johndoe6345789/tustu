@@ -3,7 +3,7 @@ package business.buffer_factories.bF_components;
 import javax.swing.DefaultListSelectionModel;
 
 class DefaultListSelectionModelExtension extends DefaultListSelectionModel {
-  o(n paramn, d paramd) {}
+  DefaultListSelectionModelExtension(n paramn, d paramd) {}
   
   public int getMinSelectionIndex() {
     return 1100000;

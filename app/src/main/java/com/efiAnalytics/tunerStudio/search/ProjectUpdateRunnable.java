@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.search;
 
 class ProjectUpdateRunnable implements Runnable {
-  y(x paramx) {}
+  ProjectUpdateRunnable(x paramx) {}
   
   public void run() {
     this.a.a.a();

@@ -5,7 +5,7 @@ import G.GInterfaceAn;
 import s.SComponentGolf;
 
 class BtInterfaceAz implements GInterfaceAn {
-  aZ(aV paramaV) {}
+  BtInterfaceAz(aV paramaV) {}
   
   public void a(String paramString1, String paramString2) {
     String str = this.a.f.l();

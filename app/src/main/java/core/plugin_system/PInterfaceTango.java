@@ -1,7 +1,7 @@
 package p;
 
 class PInterfaceTango implements f {
-  t(p paramp) {}
+  PInterfaceTango(p paramp) {}
   
   public boolean a() {
     return p.d(this.a);

@@ -4,7 +4,7 @@ import G.GInterfaceBf;
 import java.util.Comparator;
 
 class ComparatorImplInBgPackage implements Comparator {
-  r(q paramq) {}
+  ComparatorImplInBgPackage(q paramq) {}
   
   public int a(GInterfaceBf parambf1, GInterfaceBf parambf2) {
     return parambf2.f() - parambf1.f();

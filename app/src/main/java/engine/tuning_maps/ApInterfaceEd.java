@@ -6,7 +6,7 @@ import javax.swing.JCheckBoxMenuItem;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceEd implements ItemListener {
-  eD(dB paramdB) {}
+  ApInterfaceEd(dB paramdB) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();

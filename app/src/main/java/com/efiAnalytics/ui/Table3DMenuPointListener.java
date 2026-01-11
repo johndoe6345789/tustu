@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JMenuItem;
 
 class Table3DMenuPointListener implements ActionListener {
-  bL(bt parambt) {}
+  Table3DMenuPointListener(bt parambt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JMenuItem jMenuItem = (JMenuItem)paramActionEvent.getSource();

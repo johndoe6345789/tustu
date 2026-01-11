@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 
 class TInterfaceAw extends KeyAdapter {
-  aW(aO paramaO) {}
+  TInterfaceAw(aO paramaO) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();

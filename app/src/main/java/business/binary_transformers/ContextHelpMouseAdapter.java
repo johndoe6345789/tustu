@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class ContextHelpMouseAdapter extends MouseAdapter {
-  m(l paraml) {}
+  ContextHelpMouseAdapter(l paraml) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (this.a.isEnabled())

@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import bt.BtInterfaceBz;
 
 class StringProcessCallback implements BtInterfaceBz {
-  aB(az paramaz) {}
+  StringProcessCallback(az paramaz) {}
   
   public void b(String paramString) {
     this.a.a(paramString);

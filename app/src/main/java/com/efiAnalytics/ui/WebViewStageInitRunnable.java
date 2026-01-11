@@ -8,7 +8,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 class WebViewStageInitRunnable implements Runnable {
-  eI(eD parameD) {}
+  WebViewStageInitRunnable(eD parameD) {}
   
   public void run() {
     eD.a(this.a, new Stage());

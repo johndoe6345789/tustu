@@ -5,7 +5,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 class PropertyChangeListenerInBrPackage implements PropertyChangeListener {
-  k(i parami) {}
+  PropertyChangeListenerInBrPackage(i parami) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     if (!this.a.m || this.a.p)

@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class ChartClickHandler extends MouseAdapter {
-  aW(aU paramaU) {}
+  ChartClickHandler(aU paramaU) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     double d1 = this.a.g(paramMouseEvent.getX());

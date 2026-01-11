@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceZulu implements ActionListener {
-  z(y paramy) {}
+  BeInterfaceZulu(y paramy) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.l.getSelectedItem() != null && this.a.l.getSelectedItem().equals(y.p))

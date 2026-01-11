@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 class FilenameFilterImplInZPackage implements FilenameFilter {
-  j(i parami) {}
+  FilenameFilterImplInZPackage(i parami) {}
   
   public boolean accept(File paramFile, String paramString) {
     return ((paramString.startsWith("tty.") || paramString.startsWith("cu.")) && !paramString.contains("Incoming"));

@@ -1,7 +1,7 @@
 package business.binary_transformers;
 
 class BtInterfaceAy implements Runnable {
-  aY(aV paramaV) {}
+  BtInterfaceAy(aV paramaV) {}
   
   public void run() {
     this.a.f();

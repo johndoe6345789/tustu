@@ -7,7 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class RunnableImplInBqPackage implements Runnable {
-  b(a parama) {}
+  RunnableImplInBqPackage(a parama) {}
   
   public void run() {
     try {

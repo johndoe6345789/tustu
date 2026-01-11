@@ -3,7 +3,7 @@ package business.buffer_controllers.bC_components;
 import javax.swing.AbstractListModel;
 
 class AbstractListModelExtension extends AbstractListModel {
-  j(e parame) {}
+  AbstractListModelExtension(e parame) {}
   
   public int getSize() {
     return this.a.f.size();

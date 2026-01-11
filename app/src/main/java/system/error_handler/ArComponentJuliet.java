@@ -1,7 +1,7 @@
 package ar;
 
 class ArComponentJuliet implements e {
-  j(g paramg) {}
+  ArComponentJuliet(g paramg) {}
   
   public boolean a(String paramString1, String paramString2) {
     return true;

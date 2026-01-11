@@ -1,7 +1,7 @@
 package ar;
 
 class RunnableImplInArPackage implements Runnable {
-  h(g paramg) {}
+  RunnableImplInArPackage(g paramg) {}
   
   public void run() {
     if (this.a.d && this.a.getSelectedIndex() == this.a.getTabCount() - 1) {
