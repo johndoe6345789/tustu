@@ -7,9 +7,9 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 public class ChartMouseHandler extends MouseAdapter implements MouseListener, MouseMotionListener {
-  public aT(aS paramaS) {}
+  public ChartMouseHandler(aS paramaS) {}
   
-  public void mouseDragged(MouseEvent paramMouseEvent) {
+  public void ChartMouseHandler(MouseEvent paramMouseEvent) {
     Rectangle rectangle = this.a.k();
     if (rectangle.contains(paramMouseEvent.getX(), paramMouseEvent.getY())) {
       aS.a(this.a, paramMouseEvent.getX());
@@ -18,7 +18,7 @@ public class ChartMouseHandler extends MouseAdapter implements MouseListener, Mo
     } 
   }
   
-  public void mouseMoved(MouseEvent paramMouseEvent) {
+  public void ChartMouseHandler(MouseEvent paramMouseEvent) {
     Rectangle rectangle = this.a.k();
     if (rectangle.contains(paramMouseEvent.getX(), paramMouseEvent.getY())) {
       aS.a(this.a, paramMouseEvent.getX());
@@ -27,11 +27,11 @@ public class ChartMouseHandler extends MouseAdapter implements MouseListener, Mo
     } 
   }
   
-  public void mousePressed(MouseEvent paramMouseEvent) {}
+  public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
   
-  public void mouseEntered(MouseEvent paramMouseEvent) {}
+  public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
   
-  public void mouseExited(MouseEvent paramMouseEvent) {}
+  public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
 }
 
 

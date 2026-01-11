@@ -5,9 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewColorShadeListener implements ActionListener {
-  bv(bt parambt) {}
+  ThreeDViewColorShadeListener(bt parambt) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ThreeDViewColorShadeListener(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     this.a.c(jCheckBoxMenuItem.getState());
   }

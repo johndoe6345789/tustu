@@ -11,45 +11,45 @@ class TableStatisticsData {
   
   private int f = 0;
   
-  db(cZ paramcZ) {}
+  TableStatisticsData(cZ paramcZ) {}
   
-  public double a() {
+  public double TableStatisticsData() {
     return this.e;
   }
   
-  public void a(double paramDouble) {
+  public void TableStatisticsData(double paramDouble) {
     this.e = paramDouble;
   }
   
-  private void a(int paramInt) {
+  private void TableStatisticsData(int paramInt) {
     this.f = paramInt;
   }
   
-  public int b() {
+  public int TableStatisticsData() {
     return this.f;
   }
   
-  public double c() {
+  public double TableStatisticsData() {
     return this.b;
   }
   
-  public void b(double paramDouble) {
+  public void TableStatisticsData(double paramDouble) {
     this.b = paramDouble;
   }
   
-  public double d() {
+  public double TableStatisticsData() {
     return this.c;
   }
   
-  public void c(double paramDouble) {
+  public void TableStatisticsData(double paramDouble) {
     this.c = paramDouble;
   }
   
-  public double e() {
+  public double TableStatisticsData() {
     return this.d;
   }
   
-  public void d(double paramDouble) {
+  public void TableStatisticsData(double paramDouble) {
     this.d = paramDouble;
   }
 }

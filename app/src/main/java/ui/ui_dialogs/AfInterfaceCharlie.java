@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public AfInterfaceCharlielass AfInterfaceCharlie implements n {
+public class AfInterfaceCharlie implements n {
   GInterfaceCv AdInterfaceAlpha = null;
   
   GInterfaceCr b = null;

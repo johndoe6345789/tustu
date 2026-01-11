@@ -49,17 +49,17 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
   
   private boolean l = false;
   
-  public A() {
+  public ProfileDatalogFieldsPanel() {
     String[] arrayOfString = T.a().d();
     this.a = new R[arrayOfString.length];
     for (byte b = 0; b < arrayOfString.length; b++)
       this.a[b] = T.a().c(arrayOfString[b]); 
     ArrayList arrayList = AcInterfaceRomeo.a(this.a);
     for (AcInterfaceQuebec AcInterfaceQuebec : arrayList)
-      this.f.add(new F(this, AcInterfaceQuebec)); 
-    this.f = a(this.f);
-    setLayout(new BorderLayout(eJ.a(12), eJ.a(12)));
-    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Profile Data Log Fields")));
+      this.f.add(new ProfileDatalogFieldsPanel(this, AcInterfaceQuebec)); 
+    this.f = ProfileDatalogFieldsPanel(this.f);
+    ProfileDatalogFieldsPanel(new BorderLayout(eJ.a(12), eJ.a(12)));
+    ProfileDatalogFieldsPanel(BorderFactory.createTitledBorder(SComponentGolf.b("Profile Data Log Fields")));
     int i = eJ.a(180);
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
@@ -69,7 +69,7 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     jPanel1.add("North", new JLabel(SComponentGolf.b("Not Logged"), 0));
     jPanel1.add("Center", jScrollPane1);
     jPanel1.add("West", new JLabel(""));
-    add("West", jPanel1);
+    ProfileDatalogFieldsPanel("West", jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
     JScrollPane jScrollPane2 = new JScrollPane(this.e);
@@ -78,7 +78,7 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     jPanel2.add("North", new JLabel(SComponentGolf.b("Logged Fields"), 0));
     jPanel2.add("Center", jScrollPane2);
     jPanel2.add("East", new JLabel(""));
-    add("East", jPanel2);
+    ProfileDatalogFieldsPanel("East", jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout());
     this.h = new JPanel();
@@ -89,34 +89,34 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(65);
     jButton.setToolTipText(SComponentGolf.b("Add All"));
-    jButton.addActionListener(new B(this));
+    jButton.addActionListener(new ProfileDatalogFieldsPanel(this));
     this.h.add(jButton);
     jButton = new JButton(">");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(160);
     jButton.setToolTipText(SComponentGolf.b("Add selected fields"));
-    jButton.addActionListener(new C(this));
+    jButton.addActionListener(new ProfileDatalogFieldsPanel(this));
     this.h.add(jButton);
     jButton = new JButton("<");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(153);
     jButton.setToolTipText(SComponentGolf.b("Remove selected fields"));
-    jButton.addActionListener(new D(this));
+    jButton.addActionListener(new ProfileDatalogFieldsPanel(this));
     this.h.add(jButton);
     jButton = new JButton("<<");
     jButton.setPreferredSize(dimension);
     jButton.setToolTipText(SComponentGolf.b("Remove All"));
     jButton.setMnemonic(82);
-    jButton.addActionListener(new E(this));
+    jButton.addActionListener(new ProfileDatalogFieldsPanel(this));
     this.h.add(jButton);
-    add("Center", this.h);
+    ProfileDatalogFieldsPanel("Center", this.h);
   }
   
-  private boolean b(String paramString) {
+  private boolean ProfileDatalogFieldsPanel(String paramString) {
     return (paramString.equals("Time") || paramString.equals("Engine"));
   }
   
-  private void j() {
+  private void ProfileDatalogFieldsPanel() {
     this.b.clear();
     this.d.clear();
     for (F f : this.f) {
@@ -125,7 +125,7 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
       if (AcInterfaceRomeo.a(AcInterfaceRomeo, SerializableImplExceptionprintstacktrace)) {
         if (f.a().a().contains("Oil"))
           D.c(f.a().a()); 
-        if (this.SComponentGolf != null && (!this.SComponentGolf.contains(f.a().a()) || b(f.a().a()))) {
+        if (this.SComponentGolf != null && (!this.SComponentGolf.contains(f.a().a()) || ProfileDatalogFieldsPanel(f.a().a()))) {
           this.d.addElement(f);
           continue;
         } 
@@ -134,22 +134,22 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     } 
   }
   
-  public void c() {
+  public void ProfileDatalogFieldsPanel() {
     this.j = System.currentTimeMillis();
     int[] arrayOfInt = this.c.getSelectedIndices();
     for (byte b = 0; b < arrayOfInt.length; b++) {
       F f = this.b.getElementAt(arrayOfInt[b]);
       if (this.SComponentGolf.remove(f.a().a()));
     } 
-    j();
+    ProfileDatalogFieldsPanel();
   }
   
-  public void d() {
+  public void ProfileDatalogFieldsPanel() {
     this.SComponentGolf.clear();
-    j();
+    ProfileDatalogFieldsPanel();
   }
   
-  public void e() {
+  public void ProfileDatalogFieldsPanel() {
     int[] arrayOfInt = this.e.getSelectedIndices();
     if (arrayOfInt == null)
       return; 
@@ -158,22 +158,22 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
       if (!b(F.a(f).a()) && !this.SComponentGolf.contains(f.a().a()))
         this.SComponentGolf.add(this.SComponentGolf.size(), f.a().a()); 
     } 
-    j();
+    ProfileDatalogFieldsPanel();
   }
   
-  public void removeAll() {
+  public void ProfileDatalogFieldsPanel() {
     for (F f : this.f) {
       if (!b(f.a().a()))
         this.SComponentGolf.add(f.a().a()); 
     } 
-    j();
+    ProfileDatalogFieldsPanel();
   }
   
-  public String f() {
+  public String ProfileDatalogFieldsPanel() {
     return this.k;
   }
   
-  public void a(String paramString, String[] paramArrayOfString) {
+  public void ProfileDatalogFieldsPanel(String paramString, String[] paramArrayOfString) {
     this.k = paramString;
     this.SComponentGolf.clear();
     for (String str : paramArrayOfString) {
@@ -181,10 +181,10 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
       if (!this.SComponentGolf.contains(str))
         this.SComponentGolf.add(str); 
     } 
-    j();
+    ProfileDatalogFieldsPanel();
   }
   
-  public void a(boolean paramBoolean) {
+  public void ProfileDatalogFieldsPanel(boolean paramBoolean) {
     fp.a(this.h, paramBoolean);
   }
   
@@ -192,15 +192,15 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     this.l = true;
   }
   
-  public void h() {
+  public void ProfileDatalogFieldsPanel() {
     this.l = false;
   }
   
-  public String[] i() {
+  public String[] ProfileDatalogFieldsPanel() {
     return (String[])this.SComponentGolf.toArray((Object[])new String[this.SComponentGolf.size()]);
   }
   
-  public List a(List<F> paramList) {
+  public List ProfileDatalogFieldsPanel(List<F> paramList) {
     for (byte b = 0; b < paramList.size(); b++) {
       for (int i = b + 1; i < paramList.size(); i++) {
         F f1 = paramList.get(b);

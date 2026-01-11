@@ -5,29 +5,29 @@ class Table3DPaintThrottle extends Thread {
   
   boolean b = false;
   
-  eQ(eM parameM) {
+  Table3DPaintThrottle(eM parameM) {
     super("3D Paint Throttle");
-    setDaemon(true);
+    Table3DPaintThrottle(true);
   }
   
-  public void a() {
+  public void Table3DPaintThrottle() {
     if (!isAlive())
-      start(); 
+      Table3DPaintThrottle(); 
     this.b = true;
   }
   
-  public void run() {
+  public void Table3DPaintThrottle() {
     try {
       Thread.currentThread();
       Thread.sleep(2L * this.a);
-    } catch (InterruptedException interruptedException) {
+    } Table3DPaintThrottle(InterruptedException interruptedException) {
       interruptedException.printStackTrace();
     } 
     while (this.c.isDisplayable()) {
       try {
         Thread.currentThread();
         Thread.sleep(this.a);
-      } catch (InterruptedException interruptedException) {
+      } Table3DPaintThrottle(InterruptedException interruptedException) {
         interruptedException.printStackTrace();
       } 
       if (this.b) {

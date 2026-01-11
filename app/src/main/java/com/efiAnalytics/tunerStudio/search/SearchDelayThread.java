@@ -13,28 +13,28 @@ class SearchDelayThread extends Thread {
   
   int d = 30000;
   
-  q(m paramm) {
+  SearchDelayThread(m paramm) {
     super("SearchBox");
-    setDaemon(true);
+    SearchDelayThread(true);
   }
   
-  public synchronized void run() {
+  public synchronized void SearchDelayThread() {
     this.c = System.currentTimeMillis();
     while (this.c + this.d > System.currentTimeMillis()) {
       try {
         while (this.b >= System.currentTimeMillis()) {
           long l = this.b - System.currentTimeMillis();
           if (l > 0L) {
-            wait(l);
+            SearchDelayThread(l);
             continue;
           } 
           if (l == 0L) {
-            wait(1L);
+            SearchDelayThread(1L);
             continue;
           } 
           D.c("waitTime < 0 ???");
         } 
-      } catch (InterruptedException interruptedException) {
+      } SearchDelayThread(InterruptedException interruptedException) {
         Logger.getLogger(m.class.getName()).log(Level.INFO, "Search Thread error", interruptedException);
       } 
       if (!this.e.d.equals(this.e.b.getText())) {
@@ -46,10 +46,10 @@ class SearchDelayThread extends Thread {
     } 
   }
   
-  public synchronized void a() {
+  public synchronized void SearchDelayThread() {
     this.b = System.currentTimeMillis() + this.a;
     this.c = System.currentTimeMillis();
-    notify();
+    SearchDelayThread();
   }
 }
 

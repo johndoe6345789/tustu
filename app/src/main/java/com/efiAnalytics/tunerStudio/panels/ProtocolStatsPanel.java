@@ -22,30 +22,30 @@ import javax.swing.JPanel;
 public class ProtocolStatsPanel extends JPanel implements bc {
   x a = null;
   
-  public F(Abstract paramh) {
-    this.a = new x();
+  public ProtocolStatsPanel(Abstract paramh) {
+    this.a = new ProtocolStatsPanel();
     this.a.f(true);
-    setBorder(BorderFactory.createTitledBorder("Protocol Stats"));
-    setLayout(new BorderLayout());
-    add("Center", (Component)this.a);
-    setPreferredSize(eJ.a(800, 320));
-    setMinimumSize(eJ.a(800, 320));
-    Z z = (new aa()).a((GComponentCr)paramh);
+    ProtocolStatsPanel(BorderFactory.createTitledBorder("Protocol Stats"));
+    ProtocolStatsPanel(new BorderLayout());
+    ProtocolStatsPanel("Center", (Component)this.a);
+    ProtocolStatsPanel(eJ.a(800, 320));
+    ProtocolStatsPanel(eJ.a(800, 320));
+    Z z = (new ProtocolStatsPanel()).a((GComponentCr)paramh);
     this.a.a(z);
     this.a.setEnabled(false);
   }
   
-  public void close() {
+  public void ProtocolStatsPanel() {
     this.a.removeAll();
   }
   
-  public JDialog a(Window paramWindow, String paramString, bc parambc) {
+  public JDialog ProtocolStatsPanel(Window paramWindow, String paramString, bc parambc) {
     JDialog jDialog = new JDialog(paramWindow, paramString);
     jDialog.add("Center", this);
     JButton jButton = new JButton("Close");
-    jButton.addActionListener(new G(this));
+    jButton.addActionListener(new ProtocolStatsPanel(this));
     if (parambc != null)
-      jButton.addActionListener((ActionListener)new bb(parambc)); 
+      jButton.addActionListener((ActionListener)new ProtocolStatsPanel(parambc)); 
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
     jPanel.add(jButton);

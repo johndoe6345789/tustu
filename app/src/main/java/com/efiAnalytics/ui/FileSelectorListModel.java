@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import javax.swing.DefaultListModel;
 
 class FileSelectorListModel extends DefaultListModel {
-  en(ei paramei) {}
+  FileSelectorListModel(ei paramei) {}
 }
 
 

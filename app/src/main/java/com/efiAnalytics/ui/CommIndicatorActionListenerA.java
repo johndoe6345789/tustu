@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CommIndicatorActionListenerA implements ActionListener {
-  eq(ep paramep) {}
+  CommIndicatorActionListenerA(ep paramep) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void CommIndicatorActionListenerA(ActionEvent paramActionEvent) {
     ep.a(this.a);
   }
 }

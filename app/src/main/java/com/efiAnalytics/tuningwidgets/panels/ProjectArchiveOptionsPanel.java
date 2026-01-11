@@ -22,47 +22,47 @@ public class ProjectArchiveOptionsPanel extends ck {
   JCheckBox c = new JCheckBox(SComponentGolf.b("Include Restore Points"), true);
   
   public X() {
-    setBorder(BorderFactory.createTitledBorder("Include"));
+    ProjectArchiveOptionsPanel(BorderFactory.createTitledBorder("Include"));
     this.d = SComponentGolf.b("Optional Items to include \nin Project Archive") + ":";
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
     jPanel1.add(this.b);
     jPanel1.add(this.c);
-    setLayout(new BorderLayout());
+    ProjectArchiveOptionsPanel(new BorderLayout());
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add("North", jPanel1);
-    add("Center", jPanel2);
-    add("North", this.a);
+    ProjectArchiveOptionsPanel("Center", jPanel2);
+    ProjectArchiveOptionsPanel("North", this.a);
     this.a.setText(this.d);
     this.a.setBackground(getBackground());
     this.a.setBorder(BorderFactory.createEtchedBorder());
   }
   
-  public boolean a() {
+  public boolean ProjectArchiveOptionsPanel() {
     return this.b.isSelected();
   }
   
-  public boolean b() {
+  public boolean ProjectArchiveOptionsPanel() {
     return this.c.isSelected();
   }
   
-  public void a(File paramFile) {}
+  public void ProjectArchiveOptionsPanel(File paramFile) {}
   
-  public void b(File paramFile) {
+  public void ProjectArchiveOptionsPanel(File paramFile) {
     D.c("Directory Selected: " + paramFile.getAbsolutePath());
   }
   
-  public FileFilter c() {
+  public FileFilter ProjectArchiveOptionsPanel() {
     ab ab;
     if (!a() && !b()) {
       ExcludeAllFileFilter y = new ExcludeAllFileFilter(this);
     } else if (!a()) {
       ExcludeDataLogsFileFilter z = new ExcludeDataLogsFileFilter(this);
     } else if (!b()) {
-      aa aa = new aa(this);
+      aa aa = new ProjectArchiveOptionsPanel(this);
     } else {
-      ab = new ab(this);
+      ab = new ProjectArchiveOptionsPanel(this);
     } 
     return ab;
   }

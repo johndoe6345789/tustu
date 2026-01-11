@@ -24,7 +24,7 @@ public class RestorePointDetailsPanel extends JPanel {
   JTextPane e = new JTextPane();
   
   public U() {
-    setLayout(new BorderLayout());
+    RestorePointDetailsPanel(new BorderLayout());
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(0, 1));
     jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Restore Point Date") + ":", this.c));
@@ -36,13 +36,13 @@ public class RestorePointDetailsPanel extends JPanel {
       jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Firmware Version") + ":", this.d));
     } 
     jPanel.add(new JLabel(SComponentGolf.ClassTypeInHPackage("Tune Log Notes") + ":"));
-    add("North", jPanel);
+    RestorePointDetailsPanel("North", jPanel);
     this.e.setEditable(false);
     JScrollPane jScrollPane = new JScrollPane(this.e);
-    add("Center", jScrollPane);
+    RestorePointDetailsPanel("Center", jScrollPane);
   }
   
-  public void a(FileInWPackage paramag) {
+  public void RestorePointDetailsPanel(FileInWPackage paramag) {
     if (paramag == null) {
       this.a.setText("");
       this.ClassTypeInHPackage.setText("");
@@ -64,7 +64,7 @@ public class RestorePointDetailsPanel extends JPanel {
     } 
   }
   
-  private JPanel a(String paramString, JLabel paramJLabel) {
+  private JPanel RestorePointDetailsPanel(String paramString, JLabel paramJLabel) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
     JLabel jLabel = new JLabel(paramString);

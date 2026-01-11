@@ -31,7 +31,7 @@ public class Table2DDataLogListener implements BtInterfaceBp, IComponentAlpha {
     this.IComponentAlpha = paraman;
     this.IInterfaceCharlie = parambm;
     IInterfaceCharlie();
-    d();
+    Table2DDataLogListener();
   }
   
   public void IComponentAlpha(boolean paramBoolean) {
@@ -47,7 +47,7 @@ public class Table2DDataLogListener implements BtInterfaceBp, IComponentAlpha {
     double d2;
     if (IInterfaceCharlie.IComponentAlpha().e() == null)
       return; 
-    d();
+    Table2DDataLogListener();
     j j1 = IInterfaceCharlie.IComponentAlpha().e().b(this.d);
     if (j1 != null) {
       d1 = j1.d(paramInt);
@@ -72,7 +72,7 @@ public class Table2DDataLogListener implements BtInterfaceBp, IComponentAlpha {
     IComponentAlpha(true);
   }
   
-  public void b() {
+  public void Table2DDataLogListener() {
     IComponentAlpha(false);
   }
   
@@ -106,7 +106,7 @@ public class Table2DDataLogListener implements BtInterfaceBp, IComponentAlpha {
       D.b("No Data Log field defined for Y axis of table: " + this.IInterfaceCharlie.aL()); 
   }
   
-  private void d() {
+  private void Table2DDataLogListener() {
     String str = this.IInterfaceCharlie.l();
     n n = IInterfaceCharlie.IComponentAlpha().e();
     if (n == null || str == null || str.isEmpty()) {

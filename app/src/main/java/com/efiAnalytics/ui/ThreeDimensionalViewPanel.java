@@ -18,7 +18,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JSlider;
 
 public class ThreeDimensionalViewPanel extends JPanel implements eU {
-  eM a = new eM();
+  eM a = new ThreeDimensionalViewPanel();
   
   JSlider b = null;
   
@@ -34,7 +34,7 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
   
   JCheckBox h = new JCheckBox("Follow Mode");
   
-  dc i = new dc();
+  dc i = new ThreeDimensionalViewPanel();
   
   private int o = 5;
   
@@ -62,55 +62,55 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
   
   public static String n = "Gray Color Theme";
   
-  public bt(boolean paramBoolean, ab paramab) {
+  public ThreeDimensionalViewPanel(boolean paramBoolean, ab paramab) {
     this.t = paramBoolean;
-    a(paramab);
-    setLayout(new BorderLayout());
+    ThreeDimensionalViewPanel(paramab);
+    ThreeDimensionalViewPanel(new BorderLayout());
     this.a.a(this);
-    add("Center", this.a);
+    ThreeDimensionalViewPanel("Center", this.a);
     this.b = new JSlider(0, -180, 179, 0);
-    this.b.addChangeListener(new bu(this));
-    add("South", this.b);
+    this.b.addChangeListener(new ThreeDimensionalViewPanel(this));
+    ThreeDimensionalViewPanel("South", this.b);
     this.c = new JSlider(1, 0, 359, 0);
-    this.c.addChangeListener(new bF(this));
-    add("West", this.c);
+    this.c.addChangeListener(new ThreeDimensionalViewPanel(this));
+    ThreeDimensionalViewPanel("West", this.c);
     JPanel jPanel1 = new JPanel();
     if (paramBoolean) {
       this.d = new JSlider(1, 15, 90, 45);
-      this.d.addChangeListener(new bG(this));
+      this.d.addChangeListener(new ThreeDimensionalViewPanel(this));
       jPanel1.setLayout(new GridLayout(3, 1));
       jPanel1.add(new JLabel());
       jPanel1.add(this.d);
       jPanel1.add(new JLabel());
-      add("East", jPanel1);
+      ThreeDimensionalViewPanel("East", jPanel1);
     } 
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout(0, 10, 0));
     jPanel2.add(this.e);
-    this.e.addActionListener(new bH(this));
-    a(true);
+    this.e.addActionListener(new ThreeDimensionalViewPanel(this));
+    ThreeDimensionalViewPanel(true);
     this.i.c(m);
     this.i.c(n);
     this.i.c(l);
-    this.i.addItemListener(new bI(this));
+    this.i.addItemListener(new ThreeDimensionalViewPanel(this));
     jPanel2.add(this.i);
-    a(m);
-    d(false);
+    ThreeDimensionalViewPanel(m);
+    ThreeDimensionalViewPanel(false);
     jPanel2.add(this.g);
     this.g.setMnemonic(69);
-    this.g.addActionListener(new bJ(this));
+    this.g.addActionListener(new ThreeDimensionalViewPanel(this));
     jPanel2.add(this.h);
     this.h.setMnemonic(70);
-    this.h.addActionListener(new bK(this));
+    this.h.addActionListener(new ThreeDimensionalViewPanel(this));
     if (paramBoolean) {
       JMenuItem jMenuItem = new JMenuItem(b("3D Table Options"));
-      jMenuItem.addActionListener(new bL(this));
+      jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
       jPanel2.add(jMenuItem);
     } 
-    add("North", jPanel2);
+    ThreeDimensionalViewPanel("North", jPanel2);
     jPanel2.setBorder(BorderFactory.createEtchedBorder());
-    this.a.addMouseListener(new bM(this));
-    if (getBackground().getRed() + getBackground().getBlue() + getBackground().getGreen() < 100) {
+    this.a.addMouseListener(new ThreeDimensionalViewPanel(this));
+    if (getBackground().getRed() + ThreeDimensionalViewPanel().getBlue() + ThreeDimensionalViewPanel().getGreen() < 100) {
       jPanel2.setBackground(Color.BLACK);
       jPanel2.setForeground(Color.WHITE);
       jPanel2.setOpaque(true);
@@ -140,13 +140,13 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     } 
   }
   
-  private String b(String paramString) {
+  private String ThreeDimensionalViewPanel(String paramString) {
     if (this.u != null)
       paramString = this.u.a(paramString); 
     return paramString;
   }
   
-  public void a() {
+  public void ThreeDimensionalViewPanel() {
     if (this.q) {
       this.q = false;
       this.a.c(this.j);
@@ -160,108 +160,108 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     } 
   }
   
-  public void a(Point paramPoint) {
+  public void ThreeDimensionalViewPanel(Point paramPoint) {
     JPopupMenu jPopupMenu = new JPopupMenu();
     JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(b("Smart Select Movement"));
     jCheckBoxMenuItem1.setState(this.a.E());
-    jCheckBoxMenuItem1.addActionListener(new bv(this));
+    jCheckBoxMenuItem1.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jCheckBoxMenuItem1);
     JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(b("Show Active Table Values"));
     jCheckBoxMenuItem2.setState(this.a.v());
-    jCheckBoxMenuItem2.addActionListener(new bw(this));
+    jCheckBoxMenuItem2.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jCheckBoxMenuItem2);
     jCheckBoxMenuItem2 = new JCheckBoxMenuItem(b("Show Selected X & Y Values"));
     jCheckBoxMenuItem2.setState(this.a.u());
-    jCheckBoxMenuItem2.addActionListener(new bx(this));
+    jCheckBoxMenuItem2.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jCheckBoxMenuItem2);
     jCheckBoxMenuItem2 = new JCheckBoxMenuItem(b("Increment All Active Cells"));
     jCheckBoxMenuItem2.setState(k());
-    jCheckBoxMenuItem2.addActionListener(new by(this));
+    jCheckBoxMenuItem2.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jCheckBoxMenuItem2);
     String str = X.a(l() * 100.0D);
     JMenuItem jMenuItem = new JMenuItem(b("Active Weight Threshold") + " (" + str + "%)");
     jMenuItem.setEnabled(this.r);
-    jMenuItem.addActionListener(new bz(this));
+    jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jMenuItem);
     jMenuItem = new JMenuItem(b("Select Active Color"));
-    jMenuItem.addActionListener(new bA(this));
+    jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jMenuItem);
     jCheckBoxMenuItem2 = new JCheckBoxMenuItem(b("Antialiasing"));
-    jCheckBoxMenuItem2.addActionListener(new bB(this));
+    jCheckBoxMenuItem2.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jCheckBoxMenuItem2);
     jCheckBoxMenuItem2.setState(this.a.w());
     jMenuItem = new JMenuItem("Select Selected Color");
-    jMenuItem.addActionListener(new bC(this));
+    jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jMenuItem);
-    jMenuItem = new JMenuItem(b("Normal Increment") + " # " + j());
-    jMenuItem.addActionListener(new bD(this));
+    jMenuItem = new JMenuItem(b("Normal Increment") + " # " + ThreeDimensionalViewPanel());
+    jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jMenuItem);
-    jMenuItem = new JMenuItem(b("CTRL Increment") + " # " + i());
-    jMenuItem.addActionListener(new bE(this));
+    jMenuItem = new JMenuItem(b("CTRL Increment") + " # " + ThreeDimensionalViewPanel());
+    jMenuItem.addActionListener(new ThreeDimensionalViewPanel(this));
     jPopupMenu.add(jMenuItem);
     jPopupMenu.show(this, paramPoint.x, paramPoint.y);
   }
   
-  private void m() {
-    String str = bV.a(this, true, b("Number of increment by with CTRL Pressed"), i() + "");
+  private void ThreeDimensionalViewPanel() {
+    String str = bV.a(this, true, ThreeDimensionalViewPanel("Number of increment by with CTRL Pressed"), ThreeDimensionalViewPanel() + "");
     if (str != null && !str.equals(""))
-      e((int)Double.parseDouble(str)); 
+      ThreeDimensionalViewPanel((int)Double.parseDouble(str)); 
   }
   
-  private void n() {
-    String str = bV.a(this, true, b("Number of increments using arrow keys") + " ", j() + "");
+  private void ThreeDimensionalViewPanel() {
+    String str = bV.a(this, true, ThreeDimensionalViewPanel("Number of increments using arrow keys") + " ", ThreeDimensionalViewPanel() + "");
     if (str != null && !str.equals(""))
-      f((int)Double.parseDouble(str)); 
+      ThreeDimensionalViewPanel((int)Double.parseDouble(str)); 
   }
   
-  protected void b() {
-    Color color = bV.a(this, b("Select Active Color"), this.a.t());
+  protected void ThreeDimensionalViewPanel() {
+    Color color = bV.a(this, ThreeDimensionalViewPanel("Select Active Color"), this.a.t());
     if (color != null)
-      a(color); 
+      ThreeDimensionalViewPanel(color); 
   }
   
-  protected void c() {
-    Color color = bV.a(this, b("Select Selected Color"), this.a.s());
+  protected void ThreeDimensionalViewPanel() {
+    Color color = bV.a(this, ThreeDimensionalViewPanel("Select Selected Color"), this.a.s());
     if (color != null)
-      b(color); 
+      ThreeDimensionalViewPanel(color); 
   }
   
-  public void d() {
+  public void ThreeDimensionalViewPanel() {
     if (this.v == null)
       D.b("3DTable Settings Persistance not intialized"); 
     String str = this.v.a("tableYawAngle");
     if (str != null && str.length() > 0)
-      a(Integer.parseInt(str)); 
+      ThreeDimensionalViewPanel(Integer.parseInt(str)); 
     str = this.v.a("tableRollAngle");
     if (str != null && str.length() > 0)
-      b(Integer.parseInt(str)); 
+      ThreeDimensionalViewPanel(Integer.parseInt(str)); 
     str = this.v.a("tableColorFill");
     if (str != null && str.length() > 0)
-      a(Boolean.parseBoolean(str)); 
+      ThreeDimensionalViewPanel(Boolean.parseBoolean(str)); 
     str = this.v.a("colorTheme");
     if (str != null && str.length() > 0)
-      a(str); 
+      ThreeDimensionalViewPanel(str); 
     str = this.v.a("table3DAntiAlias");
     if (str != null && str.length() > 0)
-      b(Boolean.parseBoolean(str)); 
+      ThreeDimensionalViewPanel(Boolean.parseBoolean(str)); 
     str = this.v.a("spaceByIndex");
     if (str != null && str.length() > 0)
-      d(Boolean.parseBoolean(str)); 
+      ThreeDimensionalViewPanel(Boolean.parseBoolean(str)); 
     str = this.v.a("dynamicSelectIncrement");
     if (str != null && str.length() > 0)
-      c(Boolean.parseBoolean(str)); 
+      ThreeDimensionalViewPanel(Boolean.parseBoolean(str)); 
     str = this.v.a("followMode");
     if (str != null && str.length() > 0)
       this.h.setSelected(Boolean.parseBoolean(str)); 
     str = this.v.a("activeColor");
     if (str != null && str.length() > 0) {
-      Color color = c(str);
+      Color color = ThreeDimensionalViewPanel(str);
       if (color != null)
         this.a.b(color); 
     } 
     str = this.v.a("selectedColor");
     if (str != null && str.length() > 0) {
-      Color color = c(str);
+      Color color = ThreeDimensionalViewPanel(str);
       if (color != null)
         this.a.a(color); 
     } 
@@ -277,10 +277,10 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     } 
     str = this.v.a("ctrlIncrementSize");
     if (str != null && str.length() > 0)
-      e(Integer.parseInt(str)); 
+      ThreeDimensionalViewPanel(Integer.parseInt(str)); 
     str = this.v.a("incrementSize");
     if (str != null && str.length() > 0)
-      f(Integer.parseInt(str)); 
+      ThreeDimensionalViewPanel(Integer.parseInt(str)); 
     str = this.v.a("zHeightScale");
     if (str != null && str.length() > 0 && this.d != null) {
       double d = Double.parseDouble(str);
@@ -297,19 +297,19 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
       this.s = Double.parseDouble(str); 
   }
   
-  private Color c(String paramString) {
+  private Color ThreeDimensionalViewPanel(String paramString) {
     int i = -1;
     try {
       i = Integer.parseInt(paramString);
-    } catch (Exception exception) {}
+    } ThreeDimensionalViewPanel(Exception exception) {}
     return (i != -1) ? new Color(i) : null;
   }
   
-  public boolean e() {
+  public boolean ThreeDimensionalViewPanel() {
     return this.h.isSelected();
   }
   
-  public void f() {
+  public void ThreeDimensionalViewPanel() {
     this.a.x();
     double d1 = Math.round(this.a.a().a(this.a.x()));
     double d2 = Math.round(this.a.a().b(this.a.y()));
@@ -318,69 +318,69 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     this.a.repaint();
   }
   
-  public void a(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     this.b.setValue(paramInt);
   }
   
-  public void b(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     this.c.setValue(paramInt);
   }
   
-  public void a(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.e.setSelected(paramBoolean);
     this.a.a(paramBoolean);
-    a("tableColorFill", "" + paramBoolean);
+    ThreeDimensionalViewPanel("tableColorFill", "" + paramBoolean);
     this.a.repaint();
   }
   
-  public void b(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.f.setSelected(paramBoolean);
     this.a.d(paramBoolean);
-    a("table3DAntiAlias", "" + paramBoolean);
+    ThreeDimensionalViewPanel("table3DAntiAlias", "" + paramBoolean);
     this.a.repaint();
   }
   
-  public void c(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.a.f(paramBoolean);
-    a("dynamicSelectIncrement", "" + paramBoolean);
+    ThreeDimensionalViewPanel("dynamicSelectIncrement", "" + paramBoolean);
   }
   
-  public void d(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.g.setSelected(paramBoolean);
     this.a.e(paramBoolean);
-    a("spaceByIndex", "" + paramBoolean);
+    ThreeDimensionalViewPanel("spaceByIndex", "" + paramBoolean);
     this.a.repaint();
   }
   
-  public void a(et paramet) {
+  public void ThreeDimensionalViewPanel(et paramet) {
     this.v = paramet;
   }
   
-  public void g() {
+  public void ThreeDimensionalViewPanel() {
     this.h.setSelected(!this.h.isSelected());
-    a("followMode", "" + this.h.isSelected());
+    ThreeDimensionalViewPanel("followMode", "" + this.h.isSelected());
   }
   
-  public void c(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     while (paramInt < -180)
       paramInt += 360; 
     paramInt = (paramInt + 180) % 360 - 180;
     this.b.setValue(paramInt);
-    a("tableYawAngle", "" + paramInt);
+    ThreeDimensionalViewPanel("tableYawAngle", "" + paramInt);
   }
   
-  public void d(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     paramInt = (paramInt + 360) % 360;
     this.c.setValue(paramInt);
-    a("tableRollAngle", "" + paramInt);
+    ThreeDimensionalViewPanel("tableRollAngle", "" + paramInt);
   }
   
-  protected void a(String paramString1, String paramString2) {
+  protected void ThreeDimensionalViewPanel(String paramString1, String paramString2) {
     if (this.v != null)
       this.v.a(paramString1, paramString2); 
   }
   
-  protected String b(String paramString1, String paramString2) {
+  protected String ThreeDimensionalViewPanel(String paramString1, String paramString2) {
     if (this.v != null) {
       String str = this.v.a(paramString1);
       if (str != null && !str.isEmpty())
@@ -389,23 +389,23 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     return paramString2;
   }
   
-  public void a(String paramString) {
+  public void ThreeDimensionalViewPanel(String paramString) {
     if (paramString.equals(l)) {
       this.a.setBackground(Color.BLACK);
       this.a.setForeground(new Color(96, 96, 96));
-      String str = b("activeColor", "");
+      String str = ThreeDimensionalViewPanel("activeColor", "");
       if (str == null || str.isEmpty())
         this.a.b(Color.CYAN); 
     } else if (paramString.equals(m)) {
       this.a.setBackground(Color.WHITE);
       this.a.setForeground(Color.BLACK);
-      String str = b("activeColor", "");
+      String str = ThreeDimensionalViewPanel("activeColor", "");
       if (str == null || str.isEmpty())
         this.a.b(Color.BLUE); 
     } else if (paramString.equals(n)) {
       this.a.setBackground(new Color(220, 220, 220));
       this.a.setForeground(Color.BLACK);
-      String str = b("activeColor", "");
+      String str = ThreeDimensionalViewPanel("activeColor", "");
       if (str == null || str.isEmpty())
         this.a.b(Color.BLUE); 
     } else {
@@ -413,92 +413,92 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
       return;
     } 
     this.i.b(paramString);
-    a("colorTheme", paramString);
+    ThreeDimensionalViewPanel("colorTheme", paramString);
     this.a.z();
     this.a.repaint();
   }
   
-  public void e(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.a.c(paramBoolean);
-    a("showZvalue", paramBoolean + "");
+    ThreeDimensionalViewPanel("showZvalue", paramBoolean + "");
     this.a.z();
     this.a.repaint();
   }
   
-  public void f(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.a.b(paramBoolean);
-    a("showXYvalues", paramBoolean + "");
+    ThreeDimensionalViewPanel("showXYvalues", paramBoolean + "");
     this.a.z();
     this.a.repaint();
   }
   
-  public eM h() {
+  public eM ThreeDimensionalViewPanel() {
     return this.a;
   }
   
-  private void a(Color paramColor) {
+  private void ThreeDimensionalViewPanel(Color paramColor) {
     this.a.b(paramColor);
-    a("activeColor", paramColor.getRGB() + "");
+    ThreeDimensionalViewPanel("activeColor", paramColor.getRGB() + "");
     this.a.z();
     this.a.repaint();
   }
   
-  private void b(Color paramColor) {
+  private void ThreeDimensionalViewPanel(Color paramColor) {
     this.a.a(paramColor);
-    a("selectedColor", paramColor.getRGB() + "");
+    ThreeDimensionalViewPanel("selectedColor", paramColor.getRGB() + "");
     this.a.z();
     this.a.repaint();
   }
   
-  public int i() {
+  public int ThreeDimensionalViewPanel() {
     return this.o;
   }
   
-  public void e(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     this.o = paramInt;
-    a("ctrlIncrementSize", paramInt + "");
+    ThreeDimensionalViewPanel("ctrlIncrementSize", paramInt + "");
   }
   
-  public int j() {
+  public int ThreeDimensionalViewPanel() {
     return this.p;
   }
   
-  public void f(int paramInt) {
+  public void ThreeDimensionalViewPanel(int paramInt) {
     this.p = paramInt;
-    a("incrementSize", paramInt + "");
+    ThreeDimensionalViewPanel("incrementSize", paramInt + "");
   }
   
-  public boolean k() {
-    return (this.r && e());
+  public boolean ThreeDimensionalViewPanel() {
+    return (this.r && ThreeDimensionalViewPanel());
   }
   
-  public void g(boolean paramBoolean) {
+  public void ThreeDimensionalViewPanel(boolean paramBoolean) {
     this.r = paramBoolean;
     if (!paramBoolean)
       this.v.a("incrementAllVertextCells", paramBoolean + ""); 
   }
   
-  public double l() {
+  public double ThreeDimensionalViewPanel() {
     return this.s;
   }
   
-  public void a(double paramDouble) {
+  public void ThreeDimensionalViewPanel(double paramDouble) {
     this.s = paramDouble;
-    a("incrementAllVertextWeight", paramDouble + "");
+    ThreeDimensionalViewPanel("incrementAllVertextWeight", paramDouble + "");
   }
   
-  private void o() {
+  private void ThreeDimensionalViewPanel() {
     String str1 = X.b(this.s * 100.0D, 1);
-    String str2 = bV.a(this, true, b("Minimum Active Increment Weight(%)"), str1);
+    String str2 = bV.a(this, true, ThreeDimensionalViewPanel("Minimum Active Increment Weight(%)"), str1);
     if (str2 != null && !str2.equals(""))
-      a(Double.parseDouble(str2) / 100.0D); 
+      ThreeDimensionalViewPanel(Double.parseDouble(str2) / 100.0D); 
   }
   
-  public void a(ab paramab) {
+  public void ThreeDimensionalViewPanel(ab paramab) {
     this.u = paramab;
-    l = b(l);
-    m = b(m);
-    n = b(n);
+    l = ThreeDimensionalViewPanel(l);
+    m = ThreeDimensionalViewPanel(m);
+    n = ThreeDimensionalViewPanel(n);
     this.e.setText(b("Color Shade"));
     this.f.setText(b("Antialiasing"));
     this.g.setText(b("Even Spacing"));

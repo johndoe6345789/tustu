@@ -4,17 +4,17 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class SearchResultItemMouseAdapter extends MouseAdapter {
-  public E(D paramD) {}
+  public SearchResultItemMouseAdapter(D paramD) {}
   
-  public void mouseClicked(MouseEvent paramMouseEvent) {
+  public void SearchResultItemMouseAdapter(MouseEvent paramMouseEvent) {
     this.a.a();
   }
   
-  public void mouseEntered(MouseEvent paramMouseEvent) {
+  public void SearchResultItemMouseAdapter(MouseEvent paramMouseEvent) {
     this.a.a(true);
   }
   
-  public void mouseExited(MouseEvent paramMouseEvent) {
+  public void SearchResultItemMouseAdapter(MouseEvent paramMouseEvent) {
     this.a.a(false);
   }
 }

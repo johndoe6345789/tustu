@@ -23,46 +23,46 @@ public class Table3DColorMapPanel extends JComponent {
   private Image g = null;
   
   public Table3DColorMapPanel() {
-    this.b = new dD(this);
+    this.b = new Table3DColorMapPanel(this);
     this.b.b(1000);
-    setToolTipText("Hey");
+    Table3DColorMapPanel("Hey");
   }
   
-  public cA(cD paramcD) {
-    this();
-    a(paramcD);
+  public Table3DColorMapPanel(cD paramcD) {
+    Table3DColorMapPanel();
+    Table3DColorMapPanel(paramcD);
   }
   
-  public String getToolTipText(MouseEvent paramMouseEvent) {
-    int i = (int)(this.c.b() / getHeight() * paramMouseEvent.getY());
-    int j = (int)(this.c.a() / getWidth() * paramMouseEvent.getX());
+  public String Table3DColorMapPanel(MouseEvent paramMouseEvent) {
+    int i = (int)(this.c.b() / Table3DColorMapPanel() * paramMouseEvent.getY());
+    int j = (int)(this.c.a() / Table3DColorMapPanel() * paramMouseEvent.getX());
     double d = (int)(this.c.a(j, i) * 10000.0D) / 10000.0D;
     return "<html>" + this.d + ": " + this.c.a(j) + "<br>" + this.e + ": " + this.c.b(i) + "<br>" + this.f + ": " + d + "</html>";
   }
   
-  public void a() {
+  public void Table3DColorMapPanel() {
     this.b.a();
   }
   
-  private Image b() {
-    if (this.g == null || this.g.getWidth(null) != getWidth() || this.g.getHeight(null) != getHeight())
-      this.g = createImage(getWidth(), getHeight()); 
+  private Image Table3DColorMapPanel() {
+    if (this.g == null || this.g.getWidth(null) != Table3DColorMapPanel() || this.g.getHeight(null) != Table3DColorMapPanel())
+      this.g = Table3DColorMapPanel(getWidth(), Table3DColorMapPanel()); 
     return this.g;
   }
   
-  public void paint(Graphics paramGraphics) {
-    Image image = b();
-    a(image.getGraphics());
+  public void Table3DColorMapPanel(Graphics paramGraphics) {
+    Image image = Table3DColorMapPanel();
+    Table3DColorMapPanel(image.getGraphics());
     paramGraphics.drawImage(image, 0, 0, null);
   }
   
-  public void a(Graphics paramGraphics) {
+  public void Table3DColorMapPanel(Graphics paramGraphics) {
     paramGraphics.setColor(getBackground());
-    paramGraphics.fillRect(0, 0, getWidth(), getHeight());
+    paramGraphics.fillRect(0, 0, Table3DColorMapPanel(), Table3DColorMapPanel());
     if (this.c == null)
       return; 
-    int i = getWidth() / this.c.a();
-    int j = getHeight() / this.c.b();
+    int i = Table3DColorMapPanel() / this.c.a();
+    int j = Table3DColorMapPanel() / this.c.b();
     for (byte b = 0; b < this.c.b(); b++) {
       for (byte b1 = 0; b1 < this.c.a(); b1++) {
         int k = b1 * i;
@@ -72,11 +72,11 @@ public class Table3DColorMapPanel extends JComponent {
       } 
     } 
     paramGraphics.setColor(Color.darkGray);
-    paramGraphics.drawRect(0, 0, getWidth() - 1, getHeight() - 1);
+    paramGraphics.drawRect(0, 0, Table3DColorMapPanel() - 1, Table3DColorMapPanel() - 1);
   }
   
-  public Color a(double paramDouble) {
-    Color color1 = getBackground();
+  public Color Table3DColorMapPanel(double paramDouble) {
+    Color color1 = Table3DColorMapPanel();
     Color color2 = null;
     double d = 0.5D;
     int i;
@@ -98,8 +98,8 @@ public class Table3DColorMapPanel extends JComponent {
     return new Color(i, j, k);
   }
   
-  public void a(double paramDouble, Color paramColor) {
-    cC cC = new cC(this);
+  public void Table3DColorMapPanel(double paramDouble, Color paramColor) {
+    cC cC = new Table3DColorMapPanel(this);
     cC.a(paramDouble);
     cC.a(paramColor);
     if (this.a.size() > 0) {
@@ -114,20 +114,20 @@ public class Table3DColorMapPanel extends JComponent {
     } 
   }
   
-  public void a(cD paramcD) {
+  public void Table3DColorMapPanel(cD paramcD) {
     this.c = paramcD;
-    paramcD.a(new cB(this));
+    paramcD.a(new Table3DColorMapPanel(this));
   }
   
-  public void a(String paramString) {
+  public void Table3DColorMapPanel(String paramString) {
     this.d = paramString;
   }
   
-  public void b(String paramString) {
+  public void Table3DColorMapPanel(String paramString) {
     this.e = paramString;
   }
   
-  public void c(String paramString) {
+  public void Table3DColorMapPanel(String paramString) {
     this.f = paramString;
   }
 }

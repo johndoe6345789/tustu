@@ -6,14 +6,14 @@ import java.awt.event.MouseEvent;
 class AxisSelectorMouseAdapter extends MouseAdapter {
   boolean a = false;
   
-  fo(fn paramfn) {}
+  AxisSelectorMouseAdapter(fn paramfn) {}
   
-  public void mousePressed(MouseEvent paramMouseEvent) {
+  public void AxisSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 1)
       this.a = true; 
   }
   
-  public void mouseReleased(MouseEvent paramMouseEvent) {
+  public void AxisSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 1 && this.a) {
       fn.a(this.b, !fn.a(this.b));
       fn.b(this.b);

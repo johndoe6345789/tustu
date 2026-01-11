@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ThreeDViewResetActionListener implements ActionListener {
-  bz(bt parambt) {}
+  ThreeDViewResetActionListener(bt parambt) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ThreeDViewResetActionListener(ActionEvent paramActionEvent) {
     bt.a(this.a);
   }
 }

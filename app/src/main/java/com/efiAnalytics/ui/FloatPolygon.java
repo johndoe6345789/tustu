@@ -27,7 +27,7 @@ public class FloatPolygon implements Shape, Serializable {
     this.c = new float[4];
   }
   
-  public dL(float[] paramArrayOffloat1, float[] paramArrayOffloat2, int paramInt) {
+  public FloatPolygon(float[] paramArrayOffloat1, float[] paramArrayOffloat2, int paramInt) {
     if (paramInt > paramArrayOffloat1.length || paramInt > paramArrayOffloat2.length)
       throw new IndexOutOfBoundsException("npoints > xpoints.length || npoints > ypoints.length"); 
     this.a = paramInt;
@@ -35,17 +35,17 @@ public class FloatPolygon implements Shape, Serializable {
     this.c = new float[paramInt];
     System.arraycopy(paramArrayOffloat1, 0, this.b, 0, paramInt);
     System.arraycopy(paramArrayOffloat2, 0, this.c, 0, paramInt);
-    a();
+    FloatPolygon();
   }
   
-  public Object clone() {
-    dL dL1 = new dL();
+  public Object FloatPolygon() {
+    dL dL1 = new FloatPolygon();
     for (byte b = 0; b < this.a; b++)
       dL1.a(this.b[b], this.c[b]); 
     return dL1;
   }
   
-  private void a() {
+  private void FloatPolygon() {
     this.e = new GeneralPath();
     this.e.moveTo(this.b[0], this.c[0]);
     for (byte b = 1; b < this.a; b++)
@@ -54,7 +54,7 @@ public class FloatPolygon implements Shape, Serializable {
     this.f = null;
   }
   
-  private void b(float paramFloat1, float paramFloat2) {
+  private void FloatPolygon(float paramFloat1, float paramFloat2) {
     this.f = null;
     if (this.e == null) {
       this.e = new GeneralPath(0);
@@ -80,7 +80,7 @@ public class FloatPolygon implements Shape, Serializable {
     } 
   }
   
-  public void a(float paramFloat1, float paramFloat2) {
+  public void FloatPolygon(float paramFloat1, float paramFloat2) {
     if (this.a == this.b.length) {
       float[] arrayOfFloat = new float[this.a * 2];
       System.arraycopy(this.b, 0, arrayOfFloat, 0, this.a);
@@ -92,64 +92,64 @@ public class FloatPolygon implements Shape, Serializable {
     this.b[this.a] = paramFloat1;
     this.c[this.a] = paramFloat2;
     this.a++;
-    b(paramFloat1, paramFloat2);
+    FloatPolygon(paramFloat1, paramFloat2);
   }
   
-  public Rectangle2D getBounds2D() {
+  public Rectangle2D FloatPolygon() {
     return this.d;
   }
   
-  public Rectangle getBounds() {
+  public Rectangle FloatPolygon() {
     return (this.d == null) ? null : this.d.getBounds();
   }
   
-  public boolean contains(double paramDouble1, double paramDouble2) {
+  public boolean FloatPolygon(double paramDouble1, double paramDouble2) {
     if (this.a <= 2 || !this.d.contains(paramDouble1, paramDouble2))
       return false; 
-    b();
+    FloatPolygon();
     return this.f.contains(paramDouble1, paramDouble2);
   }
   
-  private void b() {
+  private void FloatPolygon() {
     if (this.a >= 1 && this.f == null) {
       this.f = (GeneralPath)this.e.clone();
       this.f.closePath();
     } 
   }
   
-  public boolean contains(Point2D paramPoint2D) {
-    return contains(paramPoint2D.getX(), paramPoint2D.getY());
+  public boolean FloatPolygon(Point2D paramPoint2D) {
+    return FloatPolygon(paramPoint2D.getX(), paramPoint2D.getY());
   }
   
-  public boolean intersects(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+  public boolean FloatPolygon(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
     if (this.a <= 0 || !this.d.intersects(paramDouble1, paramDouble2, paramDouble3, paramDouble4))
       return false; 
-    b();
+    FloatPolygon();
     return this.f.intersects(paramDouble1, paramDouble2, paramDouble3, paramDouble4);
   }
   
-  public boolean intersects(Rectangle2D paramRectangle2D) {
-    return intersects(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
+  public boolean FloatPolygon(Rectangle2D paramRectangle2D) {
+    return FloatPolygon(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
   }
   
-  public boolean contains(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+  public boolean FloatPolygon(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
     if (this.a <= 0 || !this.d.intersects(paramDouble1, paramDouble2, paramDouble3, paramDouble4))
       return false; 
-    b();
+    FloatPolygon();
     return this.f.contains(paramDouble1, paramDouble2, paramDouble3, paramDouble4);
   }
   
-  public boolean contains(Rectangle2D paramRectangle2D) {
-    return contains(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
+  public boolean FloatPolygon(Rectangle2D paramRectangle2D) {
+    return FloatPolygon(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
   }
   
-  public PathIterator getPathIterator(AffineTransform paramAffineTransform) {
-    b();
+  public PathIterator FloatPolygon(AffineTransform paramAffineTransform) {
+    FloatPolygon();
     return (this.f == null) ? null : this.f.getPathIterator(paramAffineTransform);
   }
   
-  public PathIterator getPathIterator(AffineTransform paramAffineTransform, double paramDouble) {
-    return getPathIterator(paramAffineTransform);
+  public PathIterator FloatPolygon(AffineTransform paramAffineTransform, double paramDouble) {
+    return FloatPolygon(paramAffineTransform);
   }
 }
 

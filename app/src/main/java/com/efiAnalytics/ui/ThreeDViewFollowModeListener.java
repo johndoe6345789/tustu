@@ -5,9 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewFollowModeListener implements ActionListener {
-  by(bt parambt) {}
+  ThreeDViewFollowModeListener(bt parambt) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ThreeDViewFollowModeListener(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     this.a.g(jCheckBoxMenuItem.getState());
   }

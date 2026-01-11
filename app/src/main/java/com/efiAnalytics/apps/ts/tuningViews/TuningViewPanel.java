@@ -65,9 +65,9 @@ import s.NInterfaceGolf;
 import v.NInterfaceGolf;
 
 public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, NInterfaceGolf {
-  T ExceptionInVPackage = new T(this);
+  T ExceptionInVPackage = new TuningViewPanel(this);
   
-  Q b = new Q(this);
+  Q b = new TuningViewPanel(this);
   
   private int C = eJ.ExceptionInVPackage(8);
   
@@ -155,27 +155,27 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   
   Stroke B = new BasicStroke(this.A);
   
-  public J() {
-    setFocusable(true);
+  public TuningViewPanel() {
+    TuningViewPanel(true);
     if (A.RInterfaceIndia().b()) {
-      setLayout(new l());
-      addMouseListener(this.b);
-      addMouseMotionListener(this.b);
-      setDoubleBuffered(true);
-      setFocusable(true);
+      TuningViewPanel(new TuningViewPanel());
+      TuningViewPanel(this.b);
+      TuningViewPanel(this.b);
+      TuningViewPanel(true);
+      TuningViewPanel(true);
     } 
   }
   
-  public void c() {
+  public void TuningViewPanel() {
     TuneSettingsPanel tuneSettingsPanel = new TuneSettingsPanel();
     try {
       ExceptionInVPackage((TuneViewComponent)tuneSettingsPanel);
-    } catch (ExceptionInVPackage a1) {}
-    validate();
+    } TuningViewPanel(ExceptionInVPackage a1) {}
+    TuningViewPanel();
   }
   
   public void ExceptionInVPackage(TuneViewComponent paramTuneViewComponent) {
-    add(paramTuneViewComponent);
+    TuningViewPanel(paramTuneViewComponent);
     if (T.ExceptionInVPackage().c() != null)
       paramTuneViewComponent.initializeComponents(); 
     paramTuneViewComponent.addMouseListener(this.ExceptionInVPackage);
@@ -184,49 +184,49 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     if (B()) {
       this.K.clear();
       this.K.add(paramTuneViewComponent);
-      repaint();
+      TuningViewPanel();
     } 
     if (paramTuneViewComponent instanceof TuneViewGaugeCluster) {
       TuneViewGaugeCluster tuneViewGaugeCluster = (TuneViewGaugeCluster)paramTuneViewComponent;
-      tuneViewGaugeCluster.addFullScreenRequestListener(new K(this));
+      tuneViewGaugeCluster.addFullScreenRequestListener(new TuningViewPanel(this));
     } 
     if (B())
-      d(paramTuneViewComponent); 
+      TuningViewPanel(paramTuneViewComponent); 
   }
   
-  public void d() {
-    Iterator<TuneViewComponent> iterator = r().iterator();
+  public void TuningViewPanel() {
+    Iterator<TuneViewComponent> iterator = TuningViewPanel().iterator();
     while (iterator.hasNext()) {
       TuneViewComponent tuneViewComponent = iterator.next();
       iterator.remove();
-      b(tuneViewComponent);
+      TuningViewPanel(tuneViewComponent);
     } 
-    repaint();
+    TuningViewPanel();
   }
   
-  public void b(TuneViewComponent paramTuneViewComponent) {
+  public void TuningViewPanel(TuneViewComponent paramTuneViewComponent) {
     paramTuneViewComponent.removeMouseListener(this.ExceptionInVPackage);
     paramTuneViewComponent.removeMouseMotionListener(this.ExceptionInVPackage);
-    remove(paramTuneViewComponent);
+    TuningViewPanel(paramTuneViewComponent);
     paramTuneViewComponent.close();
     this.K.remove(paramTuneViewComponent);
-    repaint();
+    TuningViewPanel();
   }
   
-  public void removeAll() {
-    Component[] arrayOfComponent = getComponents();
-    int RInterfaceIndia = getComponentCount();
+  public void TuningViewPanel() {
+    Component[] arrayOfComponent = TuningViewPanel();
+    int RInterfaceIndia = TuningViewPanel();
     for (byte b = 0; b < RInterfaceIndia; b++) {
       if (arrayOfComponent[b] instanceof TuneViewComponent)
-        b((TuneViewComponent)arrayOfComponent[b]); 
+        TuningViewPanel((TuneViewComponent)arrayOfComponent[b]); 
     } 
     super.removeAll();
   }
   
-  public void paint(Graphics paramGraphics) {
+  public void TuningViewPanel(Graphics paramGraphics) {
     if (B()) {
       paramGraphics.setColor(getBackground());
-      paramGraphics.fillRect(0, 0, getWidth(), getHeight());
+      paramGraphics.fillRect(0, 0, TuningViewPanel(), TuningViewPanel());
       if (this.O) {
         byte b = 10;
         Color color = UIManager.getColor("Button.disabledText");
@@ -234,12 +234,12 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
           color = Color.GRAY; 
         paramGraphics.setColor(color);
         int RInterfaceIndia;
-        for (RInterfaceIndia = 0; RInterfaceIndia < getWidth(); RInterfaceIndia += b)
-          paramGraphics.drawLine(RInterfaceIndia, 0, RInterfaceIndia, getHeight()); 
-        for (RInterfaceIndia = 0; RInterfaceIndia < getHeight(); RInterfaceIndia += b)
-          paramGraphics.drawLine(0, RInterfaceIndia, getWidth(), RInterfaceIndia); 
+        for (RInterfaceIndia = 0; RInterfaceIndia < TuningViewPanel(); RInterfaceIndia += b)
+          paramGraphics.drawLine(RInterfaceIndia, 0, RInterfaceIndia, TuningViewPanel()); 
+        for (RInterfaceIndia = 0; RInterfaceIndia < TuningViewPanel(); RInterfaceIndia += b)
+          paramGraphics.drawLine(0, RInterfaceIndia, TuningViewPanel(), RInterfaceIndia); 
       } 
-      paintChildren(paramGraphics);
+      TuningViewPanel(paramGraphics);
       for (TuneViewComponent tuneViewComponent : this.K)
         ExceptionInVPackage(paramGraphics, tuneViewComponent); 
       ExceptionInVPackage(paramGraphics);
@@ -250,7 +250,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       Graphics2D graphics2D = (Graphics2D)paramGraphics;
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      Image image = x();
+      Image image = TuningViewPanel();
       if (image != null) {
         int RInterfaceIndia = image.getWidth(null) / 2;
         int ThreadedFile = image.getHeight(null) / 2;
@@ -263,7 +263,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       paramGraphics.setFont(UIManager.getFont("TabbedPane.font"));
       paramGraphics.setColor(UIManager.getColor("Label.foreground"));
       int RInterfaceIndia = (getWidth() - paramGraphics.getFontMetrics().stringWidth(this.I)) / 2;
-      paramGraphics.drawString(this.I, RInterfaceIndia, getHeight() / 2);
+      paramGraphics.drawString(this.I, RInterfaceIndia, TuningViewPanel() / 2);
     } 
   }
   
@@ -317,8 +317,8 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     boolean bool = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.da, ExceptionInVPackage.db);
     if (bool)
       return; 
-    JPopupMenu jPopupMenu = e();
-    add(jPopupMenu);
+    JPopupMenu jPopupMenu = TuningViewPanel();
+    TuningViewPanel(jPopupMenu);
     if (paramComponent != null) {
       jPopupMenu.show(paramComponent, paramInt1, paramInt2);
     } else {
@@ -326,14 +326,14 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public JPopupMenu e() {
-    br br = new br();
+  public JPopupMenu TuningViewPanel() {
+    br br = new TuningViewPanel();
     ExceptionInVPackage((bq)br);
     return (JPopupMenu)br;
   }
   
   public bq ExceptionInVPackage(bq parambq) {
-    S s = new S(this);
+    S s = new TuningViewPanel(this);
     JMenu jMenu = null;
     if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("43wunjt58j7tjtht")) {
       JMenu jMenu1 = new JMenu(NInterfaceGolf.b("Load / Save"));
@@ -366,20 +366,20 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       } 
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(x);
       jCheckBoxMenuItem.setState(this.O);
-      jCheckBoxMenuItem.addActionListener(new L(this));
+      jCheckBoxMenuItem.addActionListener(new TuningViewPanel(this));
       jMenu1.add(jCheckBoxMenuItem);
       parambq.add(jMenu1);
     } 
     if (P()) {
       JMenuItem jMenuItem = new JMenuItem(NInterfaceGolf.b("Full Screen"));
       jMenuItem.setSelected(s());
-      jMenuItem.addActionListener(new M(this));
+      jMenuItem.addActionListener(new TuningViewPanel(this));
       parambq.add(jMenuItem);
     } 
     if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";LFDS;LFDS0943;L")) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(u);
       jCheckBoxMenuItem.setState(B());
-      jCheckBoxMenuItem.addActionListener(new N(this));
+      jCheckBoxMenuItem.addActionListener(new TuningViewPanel(this));
       parambq.add(jCheckBoxMenuItem);
       if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("sesrhsfghyuf754"))
         jCheckBoxMenuItem.setEnabled(false); 
@@ -387,28 +387,28 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     return parambq;
   }
   
-  public Component f() {
+  public Component TuningViewPanel() {
     return (this.K.size() > 0) ? this.K.get(0) : null;
   }
   
   public F NInterfaceGolf() {
     if (!this.J && this.Q != null)
       return this.Q; 
-    F f = new F();
+    F f = new TuningViewPanel();
     f.b(getName());
     f.d(this.S);
     if (T.ExceptionInVPackage().c() != null)
       f.ExceptionInVPackage(T.ExceptionInVPackage().c().RInterfaceIndia()); 
-    for (byte b = 0; b < getComponentCount(); b++) {
+    for (byte b = 0; b < TuningViewPanel(); b++) {
       if (getComponent(b) instanceof TuneViewComponent)
         f.add((E)getComponent(b)); 
     } 
     try {
-      File file = (new cz()).ExceptionInVPackage(this, 800, 450);
+      File file = (new TuningViewPanel()).ExceptionInVPackage(this, 800, 450);
       f.ExceptionInVPackage(file);
-    } catch (IOException iOException) {
+    } TuningViewPanel(IOException iOException) {
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (ExceptionInVPackage a1) {
+    } TuningViewPanel(ExceptionInVPackage a1) {
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
     return f;
@@ -416,67 +416,67 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   
   public void ExceptionInVPackage(String paramString) {
     if (paramString.equals(l)) {
-      c();
+      TuningViewPanel();
     } else if (paramString.equals(m)) {
-      n();
+      TuningViewPanel();
     } else if (paramString.equals(n)) {
-      o();
+      TuningViewPanel();
     } else if (paramString.equals(o)) {
-      p();
+      TuningViewPanel();
     } else if (paramString.equals(p)) {
-      q();
+      TuningViewPanel();
     } else if (paramString.equals(r)) {
-      Q();
+      TuningViewPanel();
     } else if (paramString.equals(s)) {
-      h();
+      TuningViewPanel();
     } else if (paramString.equals(t)) {
-      l();
+      TuningViewPanel();
     } else if (paramString.equals(f)) {
       ThreadedFile();
     } else if (paramString.equals(e)) {
-      k();
+      TuningViewPanel();
     } 
-    Component component = f();
+    Component component = TuningViewPanel();
     if (component == null) {
-      repaint();
+      TuningViewPanel();
       return;
     } 
     if (paramString.equals(NInterfaceGolf)) {
       ExceptionInVPackage(component);
     } else if (paramString.equals(h)) {
-      b(component);
+      TuningViewPanel(component);
     } else if (paramString.equals(RInterfaceIndia)) {
-      d(component);
+      TuningViewPanel(component);
     } else if (paramString.equals(ThreadedFile)) {
-      c(component);
+      TuningViewPanel(component);
     } else if (component instanceof TuneViewComponent && paramString.equals(q)) {
-      d();
+      TuningViewPanel();
     } 
-    repaint();
+    TuningViewPanel();
   }
   
-  private void Q() {
+  private void TuningViewPanel() {
     String[] arrayOfString = { ExceptionInVPackage.cp };
-    String str = (w() == null) ? ("*." + ExceptionInVPackage.cp) : w();
+    String str = (w() == null) ? ("*." + ExceptionInVPackage.cp) : TuningViewPanel();
     str = bV.ExceptionInVPackage(this, NInterfaceGolf.b("Save Tuning View"), arrayOfString, "*." + ExceptionInVPackage.cp, ThreadedFile.k().getAbsolutePath(), false);
     if (str == null)
       return; 
     if (!str.toLowerCase().endsWith("." + ExceptionInVPackage.cp.toLowerCase()))
       str = str + "." + ExceptionInVPackage.cp; 
-    b(str);
+    TuningViewPanel(str);
     ThreadedFile.e(new File(str));
   }
   
-  public void h() {
+  public void TuningViewPanel() {
     if (w() != null) {
       ExceptionInVPackage(w(), (String)null);
       this.L = true;
     } else {
-      Q();
+      TuningViewPanel();
     } 
   }
   
-  public void b(String paramString) {
+  public void TuningViewPanel(String paramString) {
     ExceptionInVPackage(paramString, (String)null);
   }
   
@@ -487,17 +487,17 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     try {
       F f = NInterfaceGolf();
       File file = new File(paramString1);
-      synchronized (this) {
+      TuningViewPanel(this) {
         g1.ExceptionInVPackage(f, file);
       } 
-    } catch (ExceptionInVPackage a1) {
+    } TuningViewPanel(ExceptionInVPackage a1) {
       bV.d("Error saving Tuning View.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 
   }
   
   public TuneViewComponent[] RInterfaceIndia() {
     ArrayList<Component> arrayList = new ArrayList();
-    for (byte b1 = 0; b1 < getComponentCount(); b1++) {
+    for (byte b1 = 0; b1 < TuningViewPanel(); b1++) {
       if (getComponent(b1) instanceof TuneViewComponent)
         arrayList.add(getComponent(b1)); 
     } 
@@ -508,24 +508,24 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   }
   
   public void ThreadedFile() {
-    String str = JOptionPane.showInputDialog(this, "Change Tuning View Name", getName());
+    String str = JOptionPane.showInputDialog(this, "Change Tuning View Name", TuningViewPanel());
     if (str != null)
-      setName(str); 
+      TuningViewPanel(str); 
   }
   
-  public void k() {
-    String str1 = (A() != null) ? A() : "";
+  public void TuningViewPanel() {
+    String str1 = (A() != null) ? TuningViewPanel() : "";
     String str2 = JOptionPane.showInputDialog(this, "Tuning View Enable Condition", str1);
     if (str2 != null)
-      d(str2); 
+      TuningViewPanel(str2); 
   }
   
-  protected void l() {
-    m();
+  protected void TuningViewPanel() {
+    TuningViewPanel();
   }
   
-  public void m() {
-    b b = new b();
+  public void TuningViewPanel() {
+    b b = new TuningViewPanel();
     String[] arrayOfString1 = T.ExceptionInVPackage().d();
     String[] arrayOfString2 = new String[arrayOfString1.length];
     ArrayList<R> arrayList = new ArrayList();
@@ -534,15 +534,15 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       arrayList.add(r);
       arrayOfString2[b1] = r.RInterfaceIndia();
     } 
-    V v = new V(this, b, arrayOfString2);
+    V v = new TuningViewPanel(this, b, arrayOfString2);
     J ThreadedFile = this;
-    O o = new O(this, arrayList, b, ThreadedFile);
+    O o = new TuningViewPanel(this, arrayList, b, ThreadedFile);
     o.start();
     Window window1 = bV.b(this);
     Window window2 = window1;
     if (!(window2 instanceof java.awt.Dialog) && !(window2 instanceof java.awt.Frame))
       window2 = null; 
-    ct ct = new ct(window2, b, "Select Tuning View", v, 7);
+    ct ct = new TuningViewPanel(window2, b, "Select Tuning View", v, 7);
     if (v != null)
       ct.ExceptionInVPackage(v); 
     ct.setSize(640, 480);
@@ -553,100 +553,100 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   public void ExceptionInVPackage(F paramF) {
     this.Q = paramF;
     if (this.J)
-      R(); 
+      TuningViewPanel(); 
   }
   
-  private void R() {
-    close();
-    aa aa = new aa();
+  private void TuningViewPanel() {
+    TuningViewPanel();
+    aa aa = new TuningViewPanel();
     aa.ExceptionInVPackage();
     for (TuneViewComponent tuneViewComponent : this.Q) {
       try {
         ExceptionInVPackage(tuneViewComponent);
-      } catch (ExceptionInVPackage a1) {
+      } TuningViewPanel(ExceptionInVPackage a1) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       } 
     } 
-    d(this.Q.e());
-    validate();
-    repaint();
-    D.d("Loaded TuningView Components for " + getName() + " in " + aa.d() + "ms.");
+    TuningViewPanel(this.Q.e());
+    TuningViewPanel();
+    TuningViewPanel();
+    D.d("Loaded TuningView Components for " + TuningViewPanel() + " in " + aa.d() + "ms.");
   }
   
-  public void n() {
+  public void TuningViewPanel() {
     SelectableTable selectableTable = new SelectableTable();
     try {
       ExceptionInVPackage((TuneViewComponent)selectableTable);
-    } catch (ExceptionInVPackage a1) {}
-    validate();
+    } TuningViewPanel(ExceptionInVPackage a1) {}
+    TuningViewPanel();
   }
   
-  public void o() {
+  public void TuningViewPanel() {
     TuneViewGaugeCluster tuneViewGaugeCluster = new TuneViewGaugeCluster();
     try {
       ExceptionInVPackage((TuneViewComponent)tuneViewGaugeCluster);
-    } catch (ExceptionInVPackage a1) {}
-    validate();
+    } TuningViewPanel(ExceptionInVPackage a1) {}
+    TuningViewPanel();
   }
   
-  public void p() {
+  public void TuningViewPanel() {
     TableCellCrossHair tableCellCrossHair = new TableCellCrossHair();
     try {
       ExceptionInVPackage((TuneViewComponent)tableCellCrossHair);
-    } catch (ExceptionInVPackage a1) {}
-    validate();
+    } TuningViewPanel(ExceptionInVPackage a1) {}
+    TuningViewPanel();
   }
   
-  public void q() {
+  public void TuningViewPanel() {
     BurnButtonTv burnButtonTv = new BurnButtonTv();
     try {
       ExceptionInVPackage((TuneViewComponent)burnButtonTv);
-    } catch (ExceptionInVPackage a1) {}
-    validate();
+    } TuningViewPanel(ExceptionInVPackage a1) {}
+    TuningViewPanel();
   }
   
   public void ExceptionInVPackage(Component paramComponent) {
-    int RInterfaceIndia = getComponentZOrder(paramComponent);
-    if (RInterfaceIndia > 0 && RInterfaceIndia < getComponentCount() - 1)
-      add(paramComponent, RInterfaceIndia - 1); 
+    int RInterfaceIndia = TuningViewPanel(paramComponent);
+    if (RInterfaceIndia > 0 && RInterfaceIndia < TuningViewPanel() - 1)
+      TuningViewPanel(paramComponent, RInterfaceIndia - 1); 
   }
   
-  public void b(Component paramComponent) {
-    int RInterfaceIndia = getComponentZOrder(paramComponent);
-    if (RInterfaceIndia >= 0 && RInterfaceIndia < getComponentCount() - 1)
-      add(paramComponent, RInterfaceIndia + 1); 
+  public void TuningViewPanel(Component paramComponent) {
+    int RInterfaceIndia = TuningViewPanel(paramComponent);
+    if (RInterfaceIndia >= 0 && RInterfaceIndia < TuningViewPanel() - 1)
+      TuningViewPanel(paramComponent, RInterfaceIndia + 1); 
   }
   
-  public void c(Component paramComponent) {
-    add(paramComponent, getComponentCount() - 1);
+  public void TuningViewPanel(Component paramComponent) {
+    TuningViewPanel(paramComponent, TuningViewPanel() - 1);
   }
   
-  public void d(Component paramComponent) {
-    add(paramComponent, 0);
+  public void TuningViewPanel(Component paramComponent) {
+    TuningViewPanel(paramComponent, 0);
   }
   
-  public ArrayList r() {
+  public ArrayList TuningViewPanel() {
     return this.K;
   }
   
-  public boolean s() {
+  public boolean TuningViewPanel() {
     return (this.D != null);
   }
   
-  public void t() {
+  public void TuningViewPanel() {
     if (this.D == null) {
       D.c("FullScreen");
-      v();
+      TuningViewPanel();
     } else {
       D.c("End FullScreen");
-      u();
+      TuningViewPanel();
     } 
   }
   
-  public void u() {
+  public void TuningViewPanel() {
     if (this.E != null && this.D != null) {
       this.E.add(this);
-      doLayout();
+      TuningViewPanel();
       this.E.validate();
       if (bH.J.c());
       this.D.dispose();
@@ -656,7 +656,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   }
   
   public void ExceptionInVPackage(Rectangle paramRectangle) {
-    Component[] arrayOfComponent = getComponents();
+    Component[] arrayOfComponent = TuningViewPanel();
     TuneViewComponent tuneViewComponent = null;
     for (byte b = 0; b < arrayOfComponent.length; b++) {
       if (arrayOfComponent[b] instanceof TuneViewComponent) {
@@ -673,14 +673,14 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       tuneViewComponent.requestFocus(); 
   }
   
-  public boolean c(TuneViewComponent paramTuneViewComponent) {
+  public boolean TuningViewPanel(TuneViewComponent paramTuneViewComponent) {
     return this.K.contains(paramTuneViewComponent);
   }
   
-  public void v() {
+  public void TuningViewPanel() {
     if (this.N && !s()) {
-      this.E = getParent();
-      this.D = new U(this, bV.ExceptionInVPackage(this));
+      this.E = TuningViewPanel();
+      this.D = new TuningViewPanel(this, bV.ExceptionInVPackage(this));
       this.D.setLayout(new BorderLayout());
       GraphicsDevice graphicsDevice = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
       Point point = MouseInfo.getPointerInfo().getLocation();
@@ -711,8 +711,8 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       if (paramInt1 >= ThreadedFile && paramInt1 <= m && paramInt2 >= k && paramInt2 <= n)
         return tuneViewComponent; 
     } 
-    Component[] arrayOfComponent = getComponents();
-    for (int RInterfaceIndia = getComponentCount() - 1; RInterfaceIndia >= 0; RInterfaceIndia--) {
+    Component[] arrayOfComponent = TuningViewPanel();
+    for (int RInterfaceIndia = TuningViewPanel() - 1; RInterfaceIndia >= 0; RInterfaceIndia--) {
       if (arrayOfComponent[RInterfaceIndia] instanceof TuneViewComponent) {
         TuneViewComponent tuneViewComponent = (TuneViewComponent)arrayOfComponent[RInterfaceIndia];
         int ThreadedFile = tuneViewComponent.getX();
@@ -731,95 +731,95 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     return null;
   }
   
-  public Dimension getPreferredSize() {
+  public Dimension TuningViewPanel() {
     return (this.F != null) ? this.F : super.getPreferredSize();
   }
   
-  public Dimension getMinimumSize() {
+  public Dimension TuningViewPanel() {
     return (this.F != null) ? this.F : super.getMinimumSize();
   }
   
-  public void close() {
-    D.c("Closing TuneViewPanel " + getName());
-    for (byte b = 0; b < getComponentCount(); b++) {
+  public void TuningViewPanel() {
+    D.c("Closing TuneViewPanel " + TuningViewPanel());
+    for (byte b = 0; b < TuningViewPanel(); b++) {
       if (getComponent(b) instanceof bc)
         ((bc)getComponent(b)).close(); 
     } 
-    removeAll();
+    TuningViewPanel();
   }
   
-  public String getName() {
+  public String TuningViewPanel() {
     String str = super.getName();
     if (str == null || str.isEmpty())
       str = "TuningPanel" + (int)(Math.random() * 200.0D); 
     return str;
   }
   
-  public String w() {
+  public String TuningViewPanel() {
     return this.P;
   }
   
-  public void c(String paramString) {
+  public void TuningViewPanel(String paramString) {
     this.P = paramString;
   }
   
   public boolean ExceptionInVPackage() {
     this.J = true;
-    if (this.Q != null && getComponentCount() == 0) {
-      P p = new P(this);
+    if (this.Q != null && TuningViewPanel() == 0) {
+      P p = new TuningViewPanel(this);
       SwingUtilities.invokeLater(p);
     } 
     KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(M());
     return true;
   }
   
-  public void b() {
+  public void TuningViewPanel() {
     KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(M());
   }
   
-  protected Image x() {
+  protected Image TuningViewPanel() {
     if (this.R == null)
       try {
         this.R = cO.ExceptionInVPackage().ExceptionInVPackage(cO.w);
         this.R = eJ.ExceptionInVPackage(this.R, this);
-      } catch (ExceptionInVPackage a1) {
+      } TuningViewPanel(ExceptionInVPackage a1) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       }  
     return this.R;
   }
   
-  public void y() {
-    z();
-    this.z = new X(this);
+  public void TuningViewPanel() {
+    TuningViewPanel();
+    this.z = new TuningViewPanel(this);
     this.z.start();
     this.I = null;
   }
   
-  public void z() {
+  public void TuningViewPanel() {
     if (this.z != null) {
       this.z.ExceptionInVPackage();
       this.z = null;
     } 
-    repaint();
+    TuningViewPanel();
   }
   
-  public String A() {
+  public String TuningViewPanel() {
     return this.S;
   }
   
-  public void d(String paramString) {
+  public void TuningViewPanel(String paramString) {
     this.S = paramString;
   }
   
-  public void e(String paramString) {
+  public void TuningViewPanel(String paramString) {
     this.I = paramString;
   }
   
-  public void setMinimumSize(Dimension paramDimension) {
+  public void TuningViewPanel(Dimension paramDimension) {
     this.F = paramDimension;
   }
   
-  public boolean B() {
+  public boolean TuningViewPanel() {
     return this.G;
   }
   
@@ -827,15 +827,15 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     if (paramBoolean)
       this.L = false; 
     this.G = paramBoolean;
-    for (byte b = 0; b < getComponentCount(); b++) {
+    for (byte b = 0; b < TuningViewPanel(); b++) {
       if (getComponent(b) instanceof TuneViewComponent)
         ((TuneViewComponent)getComponent(b)).enableEditMode(paramBoolean); 
     } 
-    validate();
-    repaint();
+    TuningViewPanel();
+    TuningViewPanel();
   }
   
-  public void C() {
+  public void TuningViewPanel() {
     this.K.clear();
   }
   
@@ -850,7 +850,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public void D() {
+  public void TuningViewPanel() {
     for (TuneViewComponent tuneViewComponent : this.K) {
       tuneViewComponent.setSize(tuneViewComponent.getWidth() + 1, tuneViewComponent.getHeight());
       tuneViewComponent.updateRelativeBoundsToCurrent();
@@ -858,7 +858,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public void E() {
+  public void TuningViewPanel() {
     for (TuneViewComponent tuneViewComponent : this.K) {
       tuneViewComponent.setSize(tuneViewComponent.getWidth() - 1, tuneViewComponent.getHeight());
       tuneViewComponent.updateRelativeBoundsToCurrent();
@@ -866,7 +866,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public void F() {
+  public void TuningViewPanel() {
     for (TuneViewComponent tuneViewComponent : this.K) {
       tuneViewComponent.setSize(tuneViewComponent.getWidth(), tuneViewComponent.getHeight() + 1);
       tuneViewComponent.updateRelativeBoundsToCurrent();
@@ -874,7 +874,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public void G() {
+  public void TuningViewPanel() {
     for (TuneViewComponent tuneViewComponent : this.K) {
       tuneViewComponent.setSize(tuneViewComponent.getWidth(), tuneViewComponent.getHeight() - 1);
       tuneViewComponent.updateRelativeBoundsToCurrent();
@@ -882,63 +882,63 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public void H() {
+  public void TuningViewPanel() {
     for (TuneViewComponent tuneViewComponent : this.K)
       tuneViewComponent.validate(); 
   }
   
-  public void I() {
-    for (TuneViewComponent tuneViewComponent : r()) {
+  public void TuningViewPanel() {
+    for (TuneViewComponent tuneViewComponent : TuningViewPanel()) {
       tuneViewComponent.setLocation((tuneViewComponent.getLocation()).x + 1, (tuneViewComponent.getLocation()).y);
       tuneViewComponent.updateRelativeBoundsToCurrent();
     } 
   }
   
-  public void J() {
-    for (TuneViewComponent tuneViewComponent : r()) {
+  public void TuningViewPanel() {
+    for (TuneViewComponent tuneViewComponent : TuningViewPanel()) {
       tuneViewComponent.setLocation((tuneViewComponent.getLocation()).x - 1, (tuneViewComponent.getLocation()).y);
       tuneViewComponent.updateRelativeBoundsToCurrent();
     } 
   }
   
-  public void K() {
-    for (TuneViewComponent tuneViewComponent : r()) {
+  public void TuningViewPanel() {
+    for (TuneViewComponent tuneViewComponent : TuningViewPanel()) {
       tuneViewComponent.setLocation((tuneViewComponent.getLocation()).x, (tuneViewComponent.getLocation()).y - 1);
       tuneViewComponent.updateRelativeBoundsToCurrent();
     } 
   }
   
-  public void L() {
-    for (TuneViewComponent tuneViewComponent : r()) {
+  public void TuningViewPanel() {
+    for (TuneViewComponent tuneViewComponent : TuningViewPanel()) {
       tuneViewComponent.setLocation((tuneViewComponent.getLocation()).x, (tuneViewComponent.getLocation()).y + 1);
       tuneViewComponent.updateRelativeBoundsToCurrent();
     } 
   }
   
-  public R M() {
+  public R TuningViewPanel() {
     if (this.H == null)
-      this.H = new R(this, this); 
+      this.H = new TuningViewPanel(this, this); 
     return this.H;
   }
   
-  public void N() {
-    Component[] arrayOfComponent = getComponents();
+  public void TuningViewPanel() {
+    Component[] arrayOfComponent = TuningViewPanel();
     for (byte b = 0; b < arrayOfComponent.length; b++) {
       if (arrayOfComponent[b] instanceof TuneViewComponent) {
         if (f() == null) {
           ExceptionInVPackage((TuneViewComponent)arrayOfComponent[b], true);
-          repaint();
+          TuningViewPanel();
           return;
         } 
         if (r().contains(arrayOfComponent[b])) {
           if (arrayOfComponent.length > b + 1 && arrayOfComponent[b + 1] instanceof TuneViewComponent) {
             ExceptionInVPackage((TuneViewComponent)arrayOfComponent[b + 1], true);
-            repaint();
+            TuningViewPanel();
             return;
           } 
           if (arrayOfComponent[0] instanceof TuneViewComponent) {
             ExceptionInVPackage((TuneViewComponent)arrayOfComponent[0], true);
-            repaint();
+            TuningViewPanel();
             return;
           } 
         } 
@@ -946,7 +946,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     } 
   }
   
-  public boolean O() {
+  public boolean TuningViewPanel() {
     TuneViewComponent[] arrayOfTuneViewComponent = RInterfaceIndia();
     for (TuneViewComponent tuneViewComponent : arrayOfTuneViewComponent) {
       if (tuneViewComponent.isDirty())
@@ -955,7 +955,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     return this.L;
   }
   
-  public void b(boolean paramBoolean) {
+  public void TuningViewPanel(boolean paramBoolean) {
     TuneViewComponent[] arrayOfTuneViewComponent = RInterfaceIndia();
     for (TuneViewComponent tuneViewComponent : arrayOfTuneViewComponent)
       tuneViewComponent.setClean(paramBoolean); 
@@ -963,7 +963,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     this.I = null;
   }
   
-  public boolean P() {
+  public boolean TuningViewPanel() {
     return (this.N && RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("d67nhtrbd4es8j"));
   }
   
@@ -972,7 +972,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       this.d.add(paramm); 
   }
   
-  private boolean b(String paramString1, String paramString2) {
+  private boolean TuningViewPanel(String paramString1, String paramString2) {
     for (m m : this.d) {
       if (!m.ExceptionInVPackage(paramString1, paramString2))
         return false; 
@@ -980,13 +980,13 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     return true;
   }
   
-  public void setName(String paramString) {
-    String str = getName();
+  public void TuningViewPanel(String paramString) {
+    String str = TuningViewPanel();
     if (b(str, paramString))
       super.setName(paramString); 
   }
   
-  public boolean isOptimizedDrawingEnabled() {
+  public boolean TuningViewPanel() {
     return false;
   }
 }

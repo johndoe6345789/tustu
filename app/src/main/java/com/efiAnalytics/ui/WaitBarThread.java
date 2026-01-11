@@ -6,20 +6,20 @@ import java.util.logging.Logger;
 public class WaitBarThread extends Thread {
   boolean a = true;
   
-  fI(fH paramfH) {
+  WaitBarThread(fH paramfH) {
     super("WaitBar");
-    setDaemon(true);
+    WaitBarThread(true);
   }
   
-  public void a() {
+  public void WaitBarThread() {
     this.a = false;
   }
   
-  public void run() {
+  public void WaitBarThread() {
     while (this.a) {
       try {
         Thread.sleep(25L);
-      } catch (InterruptedException interruptedException) {
+      } WaitBarThread(InterruptedException interruptedException) {
         Logger.getLogger(fH.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
       } 
       this.b.c += 4;

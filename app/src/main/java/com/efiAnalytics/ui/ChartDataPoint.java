@@ -5,15 +5,15 @@ import java.awt.geom.Point2D;
 public class ChartDataPoint extends Point2D.Double {
   private boolean a = false;
   
-  public aZ(double paramDouble1, double paramDouble2) {
+  public ChartDataPoint(double paramDouble1, double paramDouble2) {
     super(paramDouble1, paramDouble2);
   }
   
-  public boolean a() {
+  public boolean ChartDataPoint() {
     return this.a;
   }
   
-  public void a(boolean paramBoolean) {
+  public void ChartDataPoint(boolean paramBoolean) {
     this.a = paramBoolean;
   }
 }

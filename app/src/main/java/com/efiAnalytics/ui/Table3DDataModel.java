@@ -29,23 +29,23 @@ public class Table3DDataModel {
   
   ArrayList a = new ArrayList();
   
-  public eR(int paramInt1, int paramInt2) {
-    a(paramInt1, paramInt2);
+  public Table3DDataModel(int paramInt1, int paramInt2) {
+    Table3DDataModel(paramInt1, paramInt2);
   }
   
   public Table3DDataModel() {
-    a(1, 1);
+    Table3DDataModel(1, 1);
   }
   
-  public int a() {
+  public int Table3DDataModel() {
     return (this.d == null) ? 0 : this.d.length;
   }
   
-  public int b() {
+  public int Table3DDataModel() {
     return (this.c == null) ? 0 : this.c.length;
   }
   
-  public void a(int paramInt1, int paramInt2) {
+  public void Table3DDataModel(int paramInt1, int paramInt2) {
     this.c = new double[paramInt2];
     this.d = new double[paramInt1];
     this.b = new double[paramInt1][paramInt2];
@@ -53,21 +53,21 @@ public class Table3DDataModel {
     this.j = 0.0D;
   }
   
-  public void a(int paramInt1, int paramInt2, double paramDouble) {
+  public void Table3DDataModel(int paramInt1, int paramInt2, double paramDouble) {
     if (paramDouble < this.m)
       paramDouble = this.m; 
     if (paramDouble > this.l)
       paramDouble = this.l; 
     if (s() > 0.0D) {
       double d1 = paramDouble - this.b[paramInt1][paramInt2];
-      double d2 = d1 % s();
+      double d2 = d1 % Table3DDataModel();
       if (d2 != 0.0D) {
-        boolean bool1 = (d2 > s() / 2.0D) ? true : false;
+        boolean bool1 = (d2 > Table3DDataModel() / 2.0D) ? true : false;
         boolean bool2 = (d2 < -s() / 2.0D) ? true : false;
         if (bool1) {
-          paramDouble = this.b[paramInt1][paramInt2] + d1 - d2 + s();
+          paramDouble = this.b[paramInt1][paramInt2] + d1 - d2 + Table3DDataModel();
         } else if (bool2) {
-          paramDouble = this.b[paramInt1][paramInt2] + d1 - d2 - s();
+          paramDouble = this.b[paramInt1][paramInt2] + d1 - d2 - Table3DDataModel();
         } else {
           paramDouble = this.b[paramInt1][paramInt2] + d1 - d2;
         } 
@@ -75,20 +75,20 @@ public class Table3DDataModel {
     } 
     if (this.b[paramInt1][paramInt2] != paramDouble) {
       this.b[paramInt1][paramInt2] = paramDouble;
-      t();
-      b(paramInt1, paramInt2, paramDouble);
+      Table3DDataModel();
+      Table3DDataModel(paramInt1, paramInt2, paramDouble);
     } 
   }
   
-  public double b(int paramInt1, int paramInt2) {
+  public double Table3DDataModel(int paramInt1, int paramInt2) {
     return this.e[paramInt1][paramInt2];
   }
   
-  public boolean c(int paramInt1, int paramInt2) {
+  public boolean Table3DDataModel(int paramInt1, int paramInt2) {
     return (this.e == null) ? true : ((this.e[paramInt1][paramInt2] == this.b[paramInt1][paramInt2]));
   }
   
-  public void c() {
+  public void Table3DDataModel() {
     this.e = new double[this.b.length][(this.b[0]).length];
     for (byte b = 0; b < this.b.length; b++) {
       for (byte b1 = 0; b1 < (this.b[0]).length; b1++)
@@ -96,7 +96,7 @@ public class Table3DDataModel {
     } 
   }
   
-  private void t() {
+  private void Table3DDataModel() {
     double d1 = Double.MAX_VALUE;
     double d2 = Double.MIN_VALUE;
     for (byte b = 0; b < this.b.length; b++) {
@@ -111,11 +111,11 @@ public class Table3DDataModel {
     this.j = d2;
   }
   
-  public double d(int paramInt1, int paramInt2) {
+  public double Table3DDataModel(int paramInt1, int paramInt2) {
     return this.b[paramInt1][paramInt2];
   }
   
-  public double a(double paramDouble) {
+  public double Table3DDataModel(double paramDouble) {
     for (byte b = 0; b < this.c.length; b++) {
       if (paramDouble < this.c[b]) {
         if (b == 0)
@@ -130,7 +130,7 @@ public class Table3DDataModel {
     return (this.c.length - 1);
   }
   
-  public double b(double paramDouble) {
+  public double Table3DDataModel(double paramDouble) {
     for (byte b = 0; b < this.d.length; b++) {
       if (paramDouble < this.d[b]) {
         if (b == 0)
@@ -145,143 +145,143 @@ public class Table3DDataModel {
     return (this.d.length - 1);
   }
   
-  public double a(int paramInt) {
+  public double Table3DDataModel(int paramInt) {
     return this.c[paramInt];
   }
   
-  public double b(int paramInt) {
+  public double Table3DDataModel(int paramInt) {
     return (this.b.length == this.d.length / 2) ? this.d[paramInt * 2 + 1] : this.d[paramInt];
   }
   
-  public void a(int paramInt, double paramDouble) {
+  public void Table3DDataModel(int paramInt, double paramDouble) {
     if (this.c[paramInt] != paramDouble) {
       this.c[paramInt] = paramDouble;
-      c(paramInt, paramDouble);
+      Table3DDataModel(paramInt, paramDouble);
     } 
   }
   
-  public void b(int paramInt, double paramDouble) {
+  public void Table3DDataModel(int paramInt, double paramDouble) {
     if (this.d[paramInt] != paramDouble) {
       this.d[paramInt] = paramDouble;
-      d(paramInt, paramDouble);
+      Table3DDataModel(paramInt, paramDouble);
     } 
   }
   
-  public void a(eS parameS) {
+  public void Table3DDataModel(eS parameS) {
     this.a.add(parameS);
   }
   
-  private void b(int paramInt1, int paramInt2, double paramDouble) {
+  private void Table3DDataModel(int paramInt1, int paramInt2, double paramDouble) {
     for (eS eS : this.a)
       eS.a(paramInt1, paramInt2, paramDouble); 
   }
   
-  private void c(int paramInt, double paramDouble) {
+  private void Table3DDataModel(int paramInt, double paramDouble) {
     for (eS eS : this.a)
       eS.a(paramInt, paramDouble); 
   }
   
-  private void d(int paramInt, double paramDouble) {
+  private void Table3DDataModel(int paramInt, double paramDouble) {
     for (eS eS : this.a)
       eS.b(paramInt, paramDouble); 
   }
   
-  public void a(double[][] paramArrayOfdouble) {
+  public void Table3DDataModel(double[][] paramArrayOfdouble) {
     if ((paramArrayOfdouble.length != this.d.length && paramArrayOfdouble.length != this.d.length / 2) || (paramArrayOfdouble[0]).length != this.c.length)
       throw new IndexOutOfBoundsException("Z Dimensions do not match X and Y dimensions"); 
     this.b = paramArrayOfdouble;
-    t();
+    Table3DDataModel();
   }
   
-  public double[] d() {
+  public double[] Table3DDataModel() {
     return this.c;
   }
   
-  public double[] e() {
+  public double[] Table3DDataModel() {
     return this.d;
   }
   
-  public String f() {
+  public String Table3DDataModel() {
     return this.f;
   }
   
-  public void a(String paramString) {
+  public void Table3DDataModel(String paramString) {
     this.f = paramString;
   }
   
-  public String g() {
+  public String Table3DDataModel() {
     return this.g;
   }
   
-  public void b(String paramString) {
+  public void Table3DDataModel(String paramString) {
     this.g = paramString;
   }
   
-  public String h() {
+  public String Table3DDataModel() {
     return this.h;
   }
   
-  public void c(String paramString) {
+  public void Table3DDataModel(String paramString) {
     this.h = paramString;
   }
   
-  public double i() {
+  public double Table3DDataModel() {
     return this.c[0];
   }
   
-  public double j() {
+  public double Table3DDataModel() {
     return this.c[this.c.length - 1];
   }
   
-  public double k() {
+  public double Table3DDataModel() {
     return this.d[0];
   }
   
-  public double l() {
+  public double Table3DDataModel() {
     return this.d[this.d.length - 1];
   }
   
-  public double m() {
+  public double Table3DDataModel() {
     return this.i;
   }
   
-  public double n() {
+  public double Table3DDataModel() {
     return this.j;
   }
   
-  public int o() {
+  public int Table3DDataModel() {
     return this.c.length;
   }
   
-  public int p() {
+  public int Table3DDataModel() {
     return this.b.length;
   }
   
-  public double q() {
+  public double Table3DDataModel() {
     return this.l;
   }
   
-  public void c(double paramDouble) {
+  public void Table3DDataModel(double paramDouble) {
     this.l = paramDouble;
   }
   
-  public double r() {
+  public double Table3DDataModel() {
     return this.m;
   }
   
-  public void d(double paramDouble) {
+  public void Table3DDataModel(double paramDouble) {
     this.m = paramDouble;
   }
   
-  public double s() {
+  public double Table3DDataModel() {
     return this.k;
   }
   
-  public void e(double paramDouble) {
+  public void Table3DDataModel(double paramDouble) {
     this.k = paramDouble;
   }
   
-  private double a(double paramDouble, double[] paramArrayOfdouble) {
+  private double Table3DDataModel(double paramDouble, double[] paramArrayOfdouble) {
     if (paramArrayOfdouble == null || paramDouble <= paramArrayOfdouble[0])
       return 0.0D; 
     if (paramDouble >= paramArrayOfdouble[paramArrayOfdouble.length - 1])
@@ -297,9 +297,9 @@ public class Table3DDataModel {
     return 0.0D;
   }
   
-  public double a(double paramDouble1, double paramDouble2) {
-    double d1 = a(paramDouble1, this.d);
-    double d2 = a(paramDouble2, this.c);
+  public double Table3DDataModel(double paramDouble1, double paramDouble2) {
+    double d1 = Table3DDataModel(paramDouble1, this.d);
+    double d2 = Table3DDataModel(paramDouble2, this.c);
     if (this.d.length / 2 == this.b.length)
       d1 /= 2.0D; 
     int i = (int)d1;

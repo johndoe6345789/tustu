@@ -6,9 +6,9 @@ import javax.swing.event.HyperlinkListener;
 class CommentBoxHyperlinkListener implements HyperlinkListener {
   long a = 0L;
   
-  bj(bi parambi) {}
+  CommentBoxHyperlinkListener(bi parambi) {}
   
-  public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
+  public void CommentBoxHyperlinkListener(HyperlinkEvent paramHyperlinkEvent) {
     char c = 'ߐ';
     if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED) && System.currentTimeMillis() - this.a > c) {
       this.a = System.currentTimeMillis();

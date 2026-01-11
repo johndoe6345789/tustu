@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class SpinnerUpActionListener implements ActionListener {
-  ex(ew paramew) {}
+  SpinnerUpActionListener(ew paramew) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void SpinnerUpActionListener(ActionEvent paramActionEvent) {
     this.a.a();
   }
 }

@@ -5,9 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewEvenSpacingListener implements ActionListener {
-  bx(bt parambt) {}
+  ThreeDViewEvenSpacingListener(bt parambt) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ThreeDViewEvenSpacingListener(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     this.a.f(jCheckBoxMenuItem.getState());
   }

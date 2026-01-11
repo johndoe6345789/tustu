@@ -12,7 +12,7 @@ class ThreadExtensionInAPackage extends Thread {
   
   boolean d = false;
   
-  n(m paramm) {
+  ThreadExtensionInAPackage(m paramm) {
     super("check");
     setDaemon(true);
     D.c("Created CheckThread");

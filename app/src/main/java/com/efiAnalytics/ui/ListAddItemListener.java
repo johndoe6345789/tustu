@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ListAddItemListener implements ActionListener {
-  ej(ei paramei) {}
+  ListAddItemListener(ei paramei) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ListAddItemListener(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }

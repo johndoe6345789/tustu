@@ -34,7 +34,7 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   
   ArrayList c = new ArrayList();
   
-  x d = new x(this);
+  x d = new TuningViewTabbedPane(this);
   
   boolean e = false;
   
@@ -51,20 +51,20 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   int j = 0;
   
   public Isoptimizeddrawingenabled() {
-    setTabPlacement(3);
+    TuningViewTabbedPane(3);
     this.e = !RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";LFDS;LFDS0943;L");
     if (!this.e) {
       Image image;
       try {
         image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.I, (Component)this, 16);
-      } catch (ExceptionInVPackage a1) {
+      } TuningViewTabbedPane(ExceptionInVPackage a1) {
         image = null;
         Logger.getLogger(Isoptimizeddrawingenabled.class.getName()).log(Level.WARNING, "Failed to get TuningView Tab New image", (Throwable)a1);
       } 
       ImageIcon imageIcon = new ImageIcon(image);
-      addTab("", imageIcon, new JPanel(), "Add Tuning View");
-      addChangeListener(new o(this));
-      addMouseListener(this.d);
+      TuningViewTabbedPane("", imageIcon, new JPanel(), "Add Tuning View");
+      TuningViewTabbedPane(new TuningViewTabbedPane(this));
+      TuningViewTabbedPane(this.d);
     } 
   }
   
@@ -79,13 +79,13 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   private void CInterfaceBravo(List paramList) {
     boolean bool = false;
     if (bool) {
-      p p = new p(this, paramList);
+      p p = new TuningViewTabbedPane(this, paramList);
       p.start();
     } else {
       for (k k : paramList)
         CInterfaceBravo(k); 
       paramList.clear();
-      c(0);
+      TuningViewTabbedPane(0);
     } 
   }
   
@@ -100,12 +100,12 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     J j = new J();
     j.c(paramk.ExceptionInVPackage().getAbsolutePath());
     j.d(paramk.c());
-    y y = new y(this, paramk, j);
+    y y = new TuningViewTabbedPane(this, paramk, j);
     this.h.add(y);
     ExceptionInVPackage(j, paramk.CInterfaceBravo());
   }
   
-  private void c(int paramInt) {
+  private void TuningViewTabbedPane(int paramInt) {
     if (this.h != null && this.h.size() > paramInt && !((y)this.h.get(paramInt)).ExceptionInVPackage())
       ((y)this.h.get(paramInt)).start(); 
   }
@@ -122,26 +122,26 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     return j;
   }
   
-  public void setSelectedIndex(int paramInt) {
-    int RInterfaceIndia = getSelectedIndex();
+  public void TuningViewTabbedPane(int paramInt) {
+    int RInterfaceIndia = TuningViewTabbedPane();
     super.setSelectedIndex(paramInt);
     J j = (J)this.CInterfaceBravo.get(getTitleAt(paramInt));
     if (j == null)
-      D.CInterfaceBravo("Unable to set Main cluster for title:" + getTitleAt(paramInt)); 
+      D.CInterfaceBravo("Unable to set Main cluster for title:" + TuningViewTabbedPane(paramInt)); 
     if (RInterfaceIndia >= 0) {
       J j1 = (J)this.CInterfaceBravo.get(getTitleAt(RInterfaceIndia));
       boolean bool = (j1 != null && j1.s()) ? true : false;
       if (bool) {
         if (j != null)
           j.t(); 
-        q q = new q(this, j1);
+        q q = new TuningViewTabbedPane(this, j1);
         SwingUtilities.invokeLater(q);
       } 
     } 
   }
   
   public J ExceptionInVPackage(J paramJ, String paramString) {
-    boolean bool = (getTabCount() < 1) ? false : (this.e ? getTabCount() : (getTabCount() - 1));
+    boolean bool = (getTabCount() < 1) ? false : (this.e ? TuningViewTabbedPane() : (getTabCount() - 1));
     return ExceptionInVPackage(paramJ, paramString, bool);
   }
   
@@ -150,23 +150,23 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     jPanel.setLayout(new BorderLayout());
     jPanel.add("Center", paramJ);
     String str = paramString;
-    for (byte CInterfaceBravo = 2; d(paramString); CInterfaceBravo++)
+    for (byte CInterfaceBravo = 2; TuningViewTabbedPane(paramString); CInterfaceBravo++)
       paramString = str + "(" + CInterfaceBravo + ")"; 
     this.CInterfaceBravo.put(paramString, paramJ);
-    setName(paramString);
+    TuningViewTabbedPane(paramString);
     paramJ.setName(paramString);
     Icon icon = null;
     this.f = true;
-    insertTab(paramString, icon, jPanel, null, paramInt);
-    w w = new w(this, paramJ);
+    TuningViewTabbedPane(paramString, icon, jPanel, null, paramInt);
+    w w = new TuningViewTabbedPane(this, paramJ);
     CInterfaceBravo.ExceptionInVPackage().ExceptionInVPackage(w);
     ExceptionInVPackage(paramJ);
     this.f = false;
     return paramJ;
   }
   
-  public void remove(int paramInt) {
-    String str = getTitleAt(paramInt);
+  public void TuningViewTabbedPane(int paramInt) {
+    String str = TuningViewTabbedPane(paramInt);
     this.CInterfaceBravo.remove(str);
     if (this.NInterfaceGolf.size() > paramInt)
       this.NInterfaceGolf.remove(paramInt); 
@@ -175,38 +175,38 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     super.remove(paramInt);
   }
   
-  public void c() {
+  public void TuningViewTabbedPane() {
     int RInterfaceIndia = this.e ? (getTabCount() - 1) : (getTabCount() - 2);
     for (int j = RInterfaceIndia; j >= 0; j--) {
-      String str = getTitleAt(j);
+      String str = TuningViewTabbedPane(j);
       J j1 = (J)this.CInterfaceBravo.get(str);
       if (j1 != null) {
         j1.close();
         this.CInterfaceBravo.remove(str);
       } 
-      remove(j);
+      TuningViewTabbedPane(j);
     } 
     this.NInterfaceGolf.clear();
     this.h.clear();
     this.RInterfaceIndia.clear();
   }
   
-  public J c_() {
-    String str = getTitleAt(getSelectedIndex());
+  public J TuningViewTabbedPane() {
+    String str = TuningViewTabbedPane(getSelectedIndex());
     return (str != null) ? (J)this.CInterfaceBravo.get(str) : null;
   }
   
-  public Iterator e() {
+  public Iterator TuningViewTabbedPane() {
     ArrayList<J> arrayList = new ArrayList();
-    for (byte CInterfaceBravo = 0; CInterfaceBravo < getTabCount() - 1; CInterfaceBravo++) {
+    for (byte CInterfaceBravo = 0; CInterfaceBravo < TuningViewTabbedPane() - 1; CInterfaceBravo++) {
       J j = ExceptionInVPackage(getTitleAt(CInterfaceBravo));
       arrayList.add(j);
     } 
     return arrayList.iterator();
   }
   
-  public void setTitleAt(int paramInt, String paramString) {
-    String str = getTitleAt(paramInt);
+  public void TuningViewTabbedPane(int paramInt, String paramString) {
+    String str = TuningViewTabbedPane(paramInt);
     J j = (J)this.CInterfaceBravo.get(str);
     this.CInterfaceBravo.remove(str);
     this.CInterfaceBravo.put(paramString, j);
@@ -226,12 +226,12 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   }
   
   public boolean CInterfaceBravo(String paramString) {
-    if (paramString == null || paramString.equals("") || f(paramString) < this.j)
+    if (paramString == null || paramString.equals("") || TuningViewTabbedPane(paramString) < this.j)
       return false; 
     if (c(paramString))
-      for (byte CInterfaceBravo = 0; CInterfaceBravo < getTabCount(); CInterfaceBravo++) {
+      for (byte CInterfaceBravo = 0; CInterfaceBravo < TuningViewTabbedPane(); CInterfaceBravo++) {
         if (getTitleAt(CInterfaceBravo).equals(paramString)) {
-          removeTabAt(CInterfaceBravo);
+          TuningViewTabbedPane(CInterfaceBravo);
           J j = (J)this.CInterfaceBravo.get(paramString);
           if (j != null)
             j.close(); 
@@ -250,7 +250,7 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     this.f = false;
   }
   
-  private boolean c(String paramString) {
+  private boolean TuningViewTabbedPane(String paramString) {
     J j = ExceptionInVPackage(paramString);
     Iterator<ExceptionInVPackage> iterator = this.c.iterator();
     while (iterator.hasNext()) {
@@ -274,25 +274,25 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   }
   
   protected void ExceptionInVPackage(MouseEvent paramMouseEvent) {
-    int RInterfaceIndia = indexAtLocation(paramMouseEvent.getX(), paramMouseEvent.getY());
-    String str = getTitleAt(RInterfaceIndia);
-    if (str == null || str.equals("") || getSelectedIndex() < this.j)
+    int RInterfaceIndia = TuningViewTabbedPane(paramMouseEvent.getX(), paramMouseEvent.getY());
+    String str = TuningViewTabbedPane(RInterfaceIndia);
+    if (str == null || str.equals("") || TuningViewTabbedPane() < this.j)
       return; 
     JPopupMenu jPopupMenu = new JPopupMenu();
     JMenuItem jMenuItem1 = new JMenuItem("Remove Tuning View");
-    jMenuItem1.addActionListener(new r(this, RInterfaceIndia));
+    jMenuItem1.addActionListener(new TuningViewTabbedPane(this, RInterfaceIndia));
     jPopupMenu.add(jMenuItem1);
     JMenuItem jMenuItem2 = new JMenuItem("Rename Tab");
-    jMenuItem2.addActionListener(new s(this, RInterfaceIndia));
+    jMenuItem2.addActionListener(new TuningViewTabbedPane(this, RInterfaceIndia));
     jPopupMenu.add(jMenuItem2);
     if (RInterfaceIndia > 0) {
       JMenuItem jMenuItem = new JMenuItem("Move Tab Left");
-      jMenuItem.addActionListener(new t(this, RInterfaceIndia));
+      jMenuItem.addActionListener(new TuningViewTabbedPane(this, RInterfaceIndia));
       jPopupMenu.add(jMenuItem);
     } 
-    if (RInterfaceIndia < getTabCount() - 2) {
+    if (RInterfaceIndia < TuningViewTabbedPane() - 2) {
       JMenuItem jMenuItem = new JMenuItem("Move Tab Right");
-      jMenuItem.addActionListener(new u(this, RInterfaceIndia));
+      jMenuItem.addActionListener(new TuningViewTabbedPane(this, RInterfaceIndia));
       jPopupMenu.add(jMenuItem);
     } 
     jPopupMenu.show((Component)this, paramMouseEvent.getX(), paramMouseEvent.getY());
@@ -309,7 +309,7 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     return true;
   }
   
-  public boolean isOptimizedDrawingEnabled() {
+  public boolean TuningViewTabbedPane() {
     return false;
   }
   
@@ -331,9 +331,9 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
     this.RInterfaceIndia.clear();
   }
   
-  public void c(R paramR) {}
+  public void TuningViewTabbedPane(R paramR) {}
   
-  public boolean f() {
+  public boolean TuningViewTabbedPane() {
     return this.k;
   }
 }

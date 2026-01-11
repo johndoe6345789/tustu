@@ -18,10 +18,10 @@ public class CustomGridLayout implements LayoutManager, Serializable {
   int d;
   
   public CustomGridLayout() {
-    this(1, 0, 0, 0);
+    CustomGridLayout(1, 0, 0, 0);
   }
   
-  public cR(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
+  public CustomGridLayout(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
     if (paramInt1 == 0 && paramInt2 == 0)
       throw new IllegalArgumentException("rows and cols cannot both be zero"); 
     this.c = paramInt1;
@@ -30,24 +30,24 @@ public class CustomGridLayout implements LayoutManager, Serializable {
     this.b = paramInt4;
   }
   
-  public void a(int paramInt) {
+  public void CustomGridLayout(int paramInt) {
     if (paramInt == 0 && this.d == 0)
       throw new IllegalArgumentException("rows and cols cannot both be zero"); 
     this.c = paramInt;
   }
   
-  public void b(int paramInt) {
+  public void CustomGridLayout(int paramInt) {
     if (paramInt == 0 && this.c == 0)
       throw new IllegalArgumentException("rows and cols cannot both be zero"); 
     this.d = paramInt;
   }
   
-  public void addLayoutComponent(String paramString, Component paramComponent) {}
+  public void CustomGridLayout(String paramString, Component paramComponent) {}
   
-  public void removeLayoutComponent(Component paramComponent) {}
+  public void CustomGridLayout(Component paramComponent) {}
   
-  public Dimension preferredLayoutSize(Container paramContainer) {
-    synchronized (paramContainer.getTreeLock()) {
+  public Dimension CustomGridLayout(Container paramContainer) {
+    CustomGridLayout(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
       int i = paramContainer.getComponentCount();
       int j = this.c;
@@ -71,8 +71,8 @@ public class CustomGridLayout implements LayoutManager, Serializable {
     } 
   }
   
-  public Dimension minimumLayoutSize(Container paramContainer) {
-    synchronized (paramContainer.getTreeLock()) {
+  public Dimension CustomGridLayout(Container paramContainer) {
+    CustomGridLayout(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
       int i = paramContainer.getComponentCount();
       int j = this.c;
@@ -96,7 +96,7 @@ public class CustomGridLayout implements LayoutManager, Serializable {
     } 
   }
   
-  private ArrayList a(Container paramContainer) {
+  private ArrayList CustomGridLayout(Container paramContainer) {
     Component[] arrayOfComponent = paramContainer.getComponents();
     ArrayList<Component> arrayList = new ArrayList();
     for (Component component : arrayOfComponent) {
@@ -106,10 +106,10 @@ public class CustomGridLayout implements LayoutManager, Serializable {
     return arrayList;
   }
   
-  public void layoutContainer(Container paramContainer) {
-    synchronized (paramContainer.getTreeLock()) {
+  public void CustomGridLayout(Container paramContainer) {
+    CustomGridLayout(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
-      ArrayList<Component> arrayList = a(paramContainer);
+      ArrayList<Component> arrayList = CustomGridLayout(paramContainer);
       int i = arrayList.size();
       int j = this.c;
       int k = this.d;
@@ -161,8 +161,8 @@ public class CustomGridLayout implements LayoutManager, Serializable {
     } 
   }
   
-  public String toString() {
-    return getClass().getName() + "[hgap=" + this.a + ",vgap=" + this.b + ",rows=" + this.c + ",cols=" + this.d + "]";
+  public String CustomGridLayout() {
+    return CustomGridLayout().getName() + "[hgap=" + this.a + ",vgap=" + this.b + ",rows=" + this.c + ",cols=" + this.d + "]";
   }
 }
 

@@ -4,9 +4,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class CommIndicatorMouseListener extends MouseAdapter {
-  es(ep paramep) {}
+  CommIndicatorMouseListener(ep paramep) {}
   
-  public void mousePressed(MouseEvent paramMouseEvent) {
+  public void CommIndicatorMouseListener(MouseEvent paramMouseEvent) {
     this.a.c();
   }
 }

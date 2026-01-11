@@ -75,11 +75,11 @@ public class CalibrationTablePanel extends d implements bc {
   
   FileWriter VInterfaceHotel = null;
   
-  dM i = new dM();
+  dM i = new CalibrationTablePanel();
   
   JPanel j = new JPanel();
   
-  d k = new d();
+  d k = new CalibrationTablePanel();
   
   boolean l = false;
   
@@ -87,11 +87,11 @@ public class CalibrationTablePanel extends d implements bc {
   
   boolean n = true;
   
-  public J(R paramR, SerializableImplUsingArrayList paramaX) {
+  public CalibrationTablePanel(R paramR, SerializableImplUsingArrayList paramaX) {
     this.ExceptionInVPackage = paramR;
     this.b = paramaX;
     ExceptionInVPackage(this);
-    setLayout(new BorderLayout());
+    CalibrationTablePanel(new BorderLayout());
     if (paramaX.O().size() > 0) {
       GComponentAj GComponentAj = paramR.e().b(paramaX.O().get(0));
       if (GComponentAj != null && GComponentAj.d() != null) {
@@ -99,9 +99,9 @@ public class CalibrationTablePanel extends d implements bc {
         JMenu jMenu = new JMenu(ExceptionPrintstacktrace.b("Help"));
         jMenuBar.add(jMenu);
         JMenuItem jMenuItem = new JMenuItem(GComponentAj.d());
-        jMenuItem.addActionListener(new K(this));
+        jMenuItem.addActionListener(new CalibrationTablePanel(this));
         jMenu.add(jMenuItem);
-        add("North", jMenuBar);
+        CalibrationTablePanel("North", jMenuBar);
       } else {
         D.c(ExceptionPrintstacktrace.b("unable to load help topic ") + (String)paramaX.O().get(0));
       } 
@@ -124,9 +124,9 @@ public class CalibrationTablePanel extends d implements bc {
       Iterator<SerializableImplEquals> iterator1 = paramaX.b();
       while (iterator1.hasNext()) {
         SerializableImplEquals SerializableImplEquals = iterator1.next();
-        this.c.addItem(new S(this, SerializableImplEquals));
+        this.c.addItem(new CalibrationTablePanel(this, SerializableImplEquals));
       } 
-      this.c.addItemListener(new L(this));
+      this.c.addItemListener(new CalibrationTablePanel(this));
     } 
     if (paramaX.j() > 0) {
       JPanel jPanel = new JPanel();
@@ -139,9 +139,9 @@ public class CalibrationTablePanel extends d implements bc {
       Iterator<Tostring> iterator1 = paramaX.NetworkHashMap();
       while (iterator1.hasNext()) {
         Tostring Tostring = iterator1.next();
-        this.d.addItem(new R(this, Tostring));
+        this.d.addItem(new CalibrationTablePanel(this, Tostring));
       } 
-      this.d.addItemListener(new M(this));
+      this.d.addItemListener(new CalibrationTablePanel(this));
     } 
     this.j.setLayout(new CardLayout());
     jPanel1.add(this.j);
@@ -152,7 +152,7 @@ public class CalibrationTablePanel extends d implements bc {
         aL aL = ExceptionInVPackage(AbstractInGPackage);
         this.j.add((Component)aL, AbstractInGPackage.ExceptionPrintstacktrace());
         this.NetworkHashMap.put(AbstractInGPackage.ExceptionPrintstacktrace(), aL);
-      } catch (ExceptionInVPackage ExceptionInVPackage) {
+      } CalibrationTablePanel(ExceptionInVPackage ExceptionInVPackage) {
         D.ExceptionInVPackage(ExceptionInVPackage.getMessage(), (Exception)ExceptionInVPackage, this);
       } 
     } 
@@ -166,11 +166,11 @@ public class CalibrationTablePanel extends d implements bc {
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new FlowLayout(2));
     this.e = new JButton(ExceptionPrintstacktrace.b("Write to Controller"));
-    this.e.addActionListener(new N(this));
+    this.e.addActionListener(new CalibrationTablePanel(this));
     jPanel4.add(this.e);
     jPanel1.add(jPanel4);
-    add("Center", jPanel1);
-    d();
+    CalibrationTablePanel("Center", jPanel1);
+    CalibrationTablePanel();
     this.m = (paramR.O().P() == -1 && paramR.O().x() == paramR.O().P());
     VInterfaceHotel();
     if (this.n) {
@@ -184,7 +184,7 @@ public class CalibrationTablePanel extends d implements bc {
     if (this.n) {
       byte[] arrayOfByte = ExceptionInVPackage(e());
       if (arrayOfByte != null) {
-        aa aa = new aa();
+        aa aa = new CalibrationTablePanel();
         aa.ExceptionInVPackage();
         Tostring Tostring = ExceptionInVPackage(arrayOfByte);
         aa.b();
@@ -209,7 +209,7 @@ public class CalibrationTablePanel extends d implements bc {
         this.n = false;
         return null;
       } 
-    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } CalibrationTablePanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       bV.d(ExceptionPrintstacktrace.getLocalizedMessage(), (Component)this);
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
@@ -220,7 +220,7 @@ public class CalibrationTablePanel extends d implements bc {
     for (byte b = 0; b < this.d.getItemCount(); b++) {
       R r = this.d.getItemAt(b);
       Tostring Tostring = r.ExceptionInVPackage();
-      byte[] arrayOfByte = b(Tostring);
+      byte[] arrayOfByte = CalibrationTablePanel(Tostring);
       if (arrayOfByte != null && c.b(paramArrayOfbyte, arrayOfByte)) {
         D.c("Found solution. Solution Checksum: " + c.d(arrayOfByte) + ", controller checksum: " + c.d(paramArrayOfbyte));
         return Tostring;
@@ -234,15 +234,15 @@ public class CalibrationTablePanel extends d implements bc {
     return null;
   }
   
-  private byte[] b(Tostring paramba) {
+  private byte[] CalibrationTablePanel(Tostring paramba) {
     try {
-      int[] arrayOfInt = c(paramba);
+      int[] arrayOfInt = CalibrationTablePanel(paramba);
       this.k.reset();
       byte[] arrayOfByte = c.ExceptionInVPackage(arrayOfInt);
       this.k.update(arrayOfByte);
       null = new byte[4];
       return c.ExceptionInVPackage((int)this.k.getValue(), null, true);
-    } catch (Exception exception) {
+    } CalibrationTablePanel(Exception exception) {
       return null;
     } 
   }
@@ -257,7 +257,7 @@ public class CalibrationTablePanel extends d implements bc {
       }  
   }
   
-  private void d() {
+  private void CalibrationTablePanel() {
     R r = (R)this.d.getSelectedItem();
     if (r == null)
       return; 
@@ -272,18 +272,18 @@ public class CalibrationTablePanel extends d implements bc {
       aL.setEnabled((Tostring.b() != null && this.NetworkHashMap.get(Tostring.b()) != null && aL.equals(this.NetworkHashMap.get(Tostring.b())))); 
   }
   
-  private String e() {
+  private String CalibrationTablePanel() {
     SerializableImplEquals SerializableImplEquals = ((S)this.c.getSelectedItem()).ExceptionInVPackage();
     return SerializableImplEquals.ExceptionInVPackage();
   }
   
-  public void b() {
+  public void CalibrationTablePanel() {
     if (!this.ExceptionInVPackage.C().q()) {
       bV.d(ExceptionPrintstacktrace.b("Not currently Online!") + "\n" + ExceptionPrintstacktrace.b("You must be connected to the controller to write this calibration table."), (Component)this);
       return;
     } 
     this.l = true;
-    k();
+    CalibrationTablePanel();
     try {
       int[] arrayOfInt = NetworkHashMap();
       boolean bool = (this.ExceptionInVPackage.O().ax().length() > 1) ? true : false;
@@ -320,30 +320,30 @@ public class CalibrationTablePanel extends d implements bc {
           k += n;
         } 
         m m = m.ExceptionInVPackage(this.ExceptionInVPackage.O(), arrayList);
-        O o = new O(this);
+        O o = new CalibrationTablePanel(this);
         if (arrayList.size() == 1)
           ((m)arrayList.get(0)).b(o); 
         m.b(o);
         G.J j1 = this.ExceptionInVPackage.C();
         j1.b(m);
       } else {
-        m m = m.ExceptionInVPackage(this.ExceptionInVPackage.O(), e(), arrayOfInt);
+        m m = m.ExceptionInVPackage(this.ExceptionInVPackage.O(), CalibrationTablePanel(), arrayOfInt);
         m.ExceptionInVPackage(this.ExceptionInVPackage.O().K());
-        P p = new P(this);
+        P p = new CalibrationTablePanel(this);
         m.VInterfaceHotel(this.b.d());
         m.b(p);
         G.J j = this.ExceptionInVPackage.C();
         j.b(m);
       } 
-    } catch (ExceptionInVPackage ExceptionInVPackage) {
+    } CalibrationTablePanel(ExceptionInVPackage ExceptionInVPackage) {
       bV.d(ExceptionInVPackage.getMessage(), (Component)this);
-      c("Correct Errors.");
-    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      CalibrationTablePanel("Correct Errors.");
+    } CalibrationTablePanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       bV.d("Configuration Error trying to write reference table:\n" + ExceptionPrintstacktrace.getMessage(), (Component)this);
-      c("Correct Errors.");
-    } catch (Exception exception) {
+      CalibrationTablePanel("Correct Errors.");
+    } CalibrationTablePanel(Exception exception) {
       bV.d("Application Error trying to write reference table.\nSee App Debug Log for more info", (Component)this);
-      c("Contact Support.");
+      CalibrationTablePanel("Contact Support.");
       exception.printStackTrace();
     } 
     this.l = false;
@@ -352,26 +352,26 @@ public class CalibrationTablePanel extends d implements bc {
   private int[] NetworkHashMap() {
     R r = (R)this.d.getSelectedItem();
     Tostring Tostring = r.ExceptionInVPackage();
-    return c(Tostring);
+    return CalibrationTablePanel(Tostring);
   }
   
-  private int[] c(Tostring paramba) {
+  private int[] CalibrationTablePanel(Tostring paramba) {
     String str = paramba.b();
     if (paramba.b().trim().length() == 0)
       throw new ExceptionInVPackage("You must select ExceptionInVPackage valid input solution to generate table."); 
     double[] arrayOfDouble = null;
     if (this.NetworkHashMap.get(str) != null) {
       aL aL = (aL)this.NetworkHashMap.get(str);
-      b("//-- generated using refTable Generator:" + str + "\n");
-      b("//-- Table Identifier:" + e());
-      b(aL.ExceptionInVPackage() + "\n");
-      b("//----------------------------------------------------------//\n");
+      CalibrationTablePanel("//-- generated using refTable Generator:" + str + "\n");
+      CalibrationTablePanel("//-- Table Identifier:" + CalibrationTablePanel());
+      CalibrationTablePanel(aL.ExceptionInVPackage() + "\n");
+      CalibrationTablePanel("//----------------------------------------------------------//\n");
       arrayOfDouble = aL.ExceptionInVPackage(this.b.c());
     } else {
       arrayOfDouble = new double[this.b.c()];
-      b("//-- generated using formula:" + str + "\n");
-      b("//-- Table Identifier:" + e());
-      b("\n\n");
+      CalibrationTablePanel("//-- generated using formula:" + str + "\n");
+      CalibrationTablePanel("//-- Table Identifier:" + CalibrationTablePanel());
+      CalibrationTablePanel("\n\n");
       for (byte b1 = 0; b1 < arrayOfDouble.length; b1++) {
         String str1 = str;
         if (str1.indexOf("table(") != -1)
@@ -379,12 +379,12 @@ public class CalibrationTablePanel extends d implements bc {
         str1 = X.b(str1, "adcValue", "" + b1);
         try {
           arrayOfDouble[b1] = G.ExceptionPrintstacktrace(str1);
-        } catch (VInterfaceHotel VInterfaceHotel) {
+        } CalibrationTablePanel(VInterfaceHotel VInterfaceHotel) {
           throw new ExceptionInVPackage("Unable to evaluate " + str1 + "\nfor solution: " + str);
         } 
       } 
     } 
-    b("ADC \tValue \tMSVal \tvolts\n");
+    CalibrationTablePanel("ADC \tValue \tMSVal \tvolts\n");
     double d1 = this.b.c(e());
     double d2 = this.b.d(e());
     double d3 = this.b.e(e());
@@ -400,7 +400,7 @@ public class CalibrationTablePanel extends d implements bc {
       } else if (i > Math.pow(2.0D, (8 * this.b.d()))) {
         i = (int)(Math.pow(2.0D, (8 * this.b.d())) - 1.0D);
       } 
-      b((b / this.b.d()) + "\t" + X.b(arrayOfDouble[b / this.b.d()], 2) + "\t" + i + " \t" + X.b(b * 5.0D / arrayOfInt.length, 3) + "\n");
+      CalibrationTablePanel((b / this.b.d()) + "\t" + X.b(arrayOfDouble[b / this.b.d()], 2) + "\t" + i + " \t" + X.b(b * 5.0D / arrayOfInt.length, 3) + "\n");
       byte[] arrayOfByte = new byte[this.b.d()];
       arrayOfByte = c.ExceptionInVPackage(i, arrayOfByte, this.ExceptionInVPackage.O().e());
       for (byte b1 = 0; b1 < arrayOfByte.length; b1++)
@@ -410,7 +410,7 @@ public class CalibrationTablePanel extends d implements bc {
   }
   
   private void ExceptionPrintstacktrace() {
-    Q q = new Q(this);
+    Q q = new CalibrationTablePanel(this);
     for (aL aL : this.NetworkHashMap.values()) {
       if (aL.isShowing())
         aL.ExceptionInVPackage(q); 
@@ -418,24 +418,24 @@ public class CalibrationTablePanel extends d implements bc {
   }
   
   private void VInterfaceHotel() {
-    Q q = new Q(this);
+    Q q = new CalibrationTablePanel(this);
     for (aL aL : this.NetworkHashMap.values())
       aL.b(q); 
   }
   
-  private void b(String paramString) {
+  private void CalibrationTablePanel(String paramString) {
     if (this.l) {
-      FileWriter fileWriter = i();
+      FileWriter fileWriter = CalibrationTablePanel();
       if (fileWriter != null)
         try {
           fileWriter.write(paramString);
-        } catch (IOException iOException) {
+        } CalibrationTablePanel(IOException iOException) {
           D.c(paramString);
         }  
     } 
   }
   
-  private FileWriter i() {
+  private FileWriter CalibrationTablePanel() {
     if (this.VInterfaceHotel == null) {
       String str = this.ExceptionInVPackage.F() + File.separator + this.b.aL() + ".log";
       File file = new File(str);
@@ -443,7 +443,7 @@ public class CalibrationTablePanel extends d implements bc {
         file.delete(); 
       try {
         this.VInterfaceHotel = new FileWriter(str);
-      } catch (IOException iOException) {
+      } CalibrationTablePanel(IOException iOException) {
         D.ExceptionInVPackage("Unable to open ReferenceTable log file:\n" + str);
         D.ExceptionInVPackage("Will writer to this log instead");
         iOException.printStackTrace();
@@ -452,12 +452,12 @@ public class CalibrationTablePanel extends d implements bc {
     return this.VInterfaceHotel;
   }
   
-  private void j() {
+  private void CalibrationTablePanel() {
     if (this.VInterfaceHotel != null)
       try {
         this.VInterfaceHotel.close();
         this.VInterfaceHotel = null;
-      } catch (IOException iOException) {
+      } CalibrationTablePanel(IOException iOException) {
         D.c("Failed to close Reference Table log file");
       }  
   }
@@ -471,7 +471,7 @@ public class CalibrationTablePanel extends d implements bc {
     str2 = X.b(str2, "adcValue", "" + paramInt);
     try {
       d1 = G.ExceptionPrintstacktrace(str2);
-    } catch (VInterfaceHotel VInterfaceHotel) {
+    } CalibrationTablePanel(VInterfaceHotel VInterfaceHotel) {
       throw new ExceptionInVPackage("Unable to evaluate expression: " + str2 + "\nin solution formula: " + paramString);
     } 
     int k = paramString.indexOf(")", j);
@@ -483,53 +483,53 @@ public class CalibrationTablePanel extends d implements bc {
       F NetworkHashMap = F.b(str4, str3);
       double d2 = NetworkHashMap.ExceptionInVPackage(d1);
       str1 = str1 + "" + d2;
-    } catch (IOException iOException) {
+    } CalibrationTablePanel(IOException iOException) {
       throw new ExceptionInVPackage("Error loading inc Mapping File:" + str3, iOException);
-    } catch (Exception exception) {
+    } CalibrationTablePanel(Exception exception) {
       throw new ExceptionInVPackage("Error parsing inc Mapping File:" + str3 + "\n\t" + exception.getMessage());
     } 
     return str1 + str5;
   }
   
-  private void k() {
+  private void CalibrationTablePanel() {
     this.e.setEnabled(false);
     this.ExceptionPrintstacktrace.setText("Writing to controller, Please wait...");
     Calendar calendar = Calendar.getInstance();
-    b("//------------------------------------------------------------------------------\n");
-    b("//--  Generated by " + ExceptionInVPackage.b + " \n");
-    b("//--  Date: " + (calendar.get(2) + 1) + "-" + calendar.get(5) + "-" + calendar.get(1) + "\n");
-    b("//--  Time: " + calendar.get(11) + ":" + calendar.get(12) + "\n");
-    b("//--  This file merely records what was sent to your Controller,        \n");
-    b("//--  and may be deleted at any time.                                                    \n");
-    b("//--  Selected type: " + this.c.getSelectedItem() + " \n");
-    b("//------------------------------------------------------------------------------\n");
-    b("\n");
+    CalibrationTablePanel("//------------------------------------------------------------------------------\n");
+    CalibrationTablePanel("//--  Generated by " + ExceptionInVPackage.b + " \n");
+    CalibrationTablePanel("//--  Date: " + (calendar.get(2) + 1) + "-" + calendar.get(5) + "-" + calendar.get(1) + "\n");
+    CalibrationTablePanel("//--  Time: " + calendar.get(11) + ":" + calendar.get(12) + "\n");
+    CalibrationTablePanel("//--  This file merely records what was sent to your Controller,        \n");
+    CalibrationTablePanel("//--  and may be deleted at any time.                                                    \n");
+    CalibrationTablePanel("//--  Selected type: " + this.c.getSelectedItem() + " \n");
+    CalibrationTablePanel("//------------------------------------------------------------------------------\n");
+    CalibrationTablePanel("\n");
   }
   
-  private void c(String paramString) {
+  private void CalibrationTablePanel(String paramString) {
     this.e.setEnabled(true);
     paramString = X.b(paramString, "\n", "<br>");
     this.ExceptionPrintstacktrace.setText("<html>" + paramString + "</html>");
-    j();
+    CalibrationTablePanel();
   }
   
-  public void c() {
+  public void CalibrationTablePanel() {
     NetworkHashMap.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.O().get(0), bV.ExceptionInVPackage((Component)this));
   }
   
   private aL ExceptionInVPackage(AbstractInGPackage parambF) {
     try {
       if (parambF.ExceptionPrintstacktrace().equals("linearGenerator"))
-        return (aL)new M((GComponentBu)parambF); 
+        return (aL)new CalibrationTablePanel((GComponentBu)parambF); 
       if (parambF.ExceptionPrintstacktrace().equals("thermGenerator"))
-        return (aL)new aM((GInterfaceBg)parambF); 
+        return (aL)new CalibrationTablePanel((GInterfaceBg)parambF); 
       if (parambF.ExceptionPrintstacktrace().equals("fileBrowseGenerator"))
-        return (aL)new G(parambF.VInterfaceHotel()); 
-    } catch (Exception exception) {}
+        return (aL)new CalibrationTablePanel(parambF.VInterfaceHotel()); 
+    } CalibrationTablePanel(Exception exception) {}
     throw new ExceptionInVPackage("Table Generator type '" + parambF.ExceptionPrintstacktrace() + "'\n not understood for table generator '" + parambF.VInterfaceHotel() + "' and will not be displayed.");
   }
   
-  public void close() {}
+  public void CalibrationTablePanel() {}
 }
 
 

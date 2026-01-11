@@ -12,31 +12,31 @@ class TableSizeSelectorCell extends JPanel {
   
   int b;
   
-  fg(fc paramfc, int paramInt1, int paramInt2) {
+  TableSizeSelectorCell(fc paramfc, int paramInt1, int paramInt2) {
     this.a = paramInt1;
     this.b = paramInt2;
   }
   
-  public void paint(Graphics paramGraphics) {
+  public void TableSizeSelectorCell(Graphics paramGraphics) {
     paramGraphics.setColor(Color.BLACK);
-    paramGraphics.fillRect(0, 0, getWidth(), getHeight());
+    paramGraphics.fillRect(0, 0, TableSizeSelectorCell(), TableSizeSelectorCell());
     if (this.c.a(this.a, this.b)) {
       paramGraphics.setColor(this.c.c);
       int i = eJ.a(4);
       ((Graphics2D)paramGraphics).setStroke(new BasicStroke(i));
-      paramGraphics.drawRect(i / 2, i / 2, getWidth() - i, getHeight() - i);
+      paramGraphics.drawRect(i / 2, i / 2, TableSizeSelectorCell() - i, TableSizeSelectorCell() - i);
     } else {
       paramGraphics.setColor(Color.WHITE);
       ((Graphics2D)paramGraphics).setStroke(new BasicStroke(1.0F));
-      paramGraphics.drawRect(0, 0, getWidth(), getHeight());
+      paramGraphics.drawRect(0, 0, TableSizeSelectorCell(), TableSizeSelectorCell());
     } 
   }
   
-  public Dimension getPreferredSize() {
+  public Dimension TableSizeSelectorCell() {
     return new Dimension(eJ.a(24), eJ.a(24));
   }
   
-  public Dimension getMinimumSize() {
+  public Dimension TableSizeSelectorCell() {
     return new Dimension(eJ.a(24), eJ.a(24));
   }
 }

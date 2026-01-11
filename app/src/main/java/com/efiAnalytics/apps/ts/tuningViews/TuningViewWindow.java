@@ -4,7 +4,7 @@ import java.awt.Frame;
 import javax.swing.JWindow;
 
 class TuningViewWindow extends JWindow {
-  public U(J paramJ, Frame paramFrame) {
+  public TuningViewWindow(J paramJ, Frame paramFrame) {
     super(paramFrame);
   }
 }

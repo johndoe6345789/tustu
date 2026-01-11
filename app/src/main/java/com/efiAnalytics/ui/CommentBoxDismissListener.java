@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CommentBoxDismissListener implements ActionListener {
-  bm(bi parambi) {}
+  CommentBoxDismissListener(bi parambi) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void CommentBoxDismissListener(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }

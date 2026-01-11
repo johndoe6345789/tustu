@@ -57,7 +57,7 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
   
   static String q = "0";
   
-  public g(R paramR) {
+  public AutoLoggingTriggerPanel(R paramR) {
     String str1;
     this.SInterfaceAlpha = null;
     this.SInterfaceJuliet = new JCheckBox(s.g.HashMap("Enabled"));
@@ -66,7 +66,7 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
     this.SInterfaceAlpha = paramR;
     this.HashMap = HashMap.SInterfaceAlpha().SInterfaceAlpha(paramR.c(), d);
     this.c = HashMap.SInterfaceAlpha().SInterfaceAlpha(paramR.c(), SInterfaceEcho);
-    d();
+    AutoLoggingTriggerPanel();
     if (paramR.g("TPS_Pct") != null) {
       str1 = "TPS_Pct > 80";
     } else if (paramR.g("tps") != null) {
@@ -84,8 +84,8 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
     this.m.SInterfaceAlpha(str3);
   }
   
-  private void d() {
-    setLayout(new BorderLayout());
+  private void AutoLoggingTriggerPanel() {
+    AutoLoggingTriggerPanel(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Automatic Logging Trigger")));
     jPanel1.setLayout(new BorderLayout());
@@ -93,22 +93,22 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
     boolean bool = RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS");
     this.SInterfaceJuliet.setSelected((bool || this.HashMap.c()));
     this.SInterfaceJuliet.setEnabled(!bool);
-    this.SInterfaceJuliet.addActionListener(new h(this));
+    this.SInterfaceJuliet.addActionListener(new AutoLoggingTriggerPanel(this));
     this.k.setLayout(new BoxLayout(this.k, 1));
     JPanel jPanel2 = new JPanel();
     this.k.add(jPanel2);
     jPanel2.setLayout(new BorderLayout());
-    this.l = new k(this, this.SInterfaceAlpha, false, true);
+    this.l = new AutoLoggingTriggerPanel(this, this.SInterfaceAlpha, false, true);
     this.l.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Start Logging When")));
     jPanel2.add("Center", this.l);
     JPanel jPanel3 = new JPanel();
     this.k.add(jPanel3);
     jPanel3.setLayout(new BorderLayout());
-    this.m = new k(this, this.SInterfaceAlpha, true, !RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS"));
+    this.m = new AutoLoggingTriggerPanel(this, this.SInterfaceAlpha, true, !RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS"));
     this.m.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Stop Logging When")));
     jPanel3.add("Center", this.m);
     jPanel1.add("Center", this.k);
-    add("Center", jPanel1);
+    AutoLoggingTriggerPanel("Center", jPanel1);
     SInterfaceEcho();
   }
   
@@ -120,36 +120,36 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
     } 
   }
   
-  public void close() {
+  public void AutoLoggingTriggerPanel() {
     SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), this.HashMap.SInterfaceAlpha());
     SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), this.c.SInterfaceAlpha());
     if (this.SInterfaceJuliet.isSelected())
       try {
         SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.HashMap);
         SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.c);
-      } catch (q q) {
+      } AutoLoggingTriggerPanel(q q) {
         bV.d("No Configuration Found: " + this.SInterfaceAlpha.c(), this.SInterfaceJuliet);
       }  
     super.close();
   }
   
-  public boolean c() {
+  public boolean AutoLoggingTriggerPanel() {
     try {
       RInterfaceIndia.SInterfaceAlpha(this.l.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
-    } catch (ExceptionInAxPackage u) {
+    } AutoLoggingTriggerPanel(ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Start Logging Expression") + ":" + this.l.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     try {
       RInterfaceIndia.SInterfaceAlpha(this.m.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
-    } catch (ExceptionInAxPackage u) {
+    } AutoLoggingTriggerPanel(ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Stop Logging Expression") + ":" + this.m.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     return true;
   }
   
-  private void f() {
+  private void AutoLoggingTriggerPanel() {
     this.HashMap.SInterfaceEcho(this.l.SInterfaceAlpha() + f);
     this.c.SInterfaceEcho(this.m.SInterfaceAlpha() + g);
     this.HashMap.f(h);
@@ -176,7 +176,7 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
     this.p.pack();
     bV.SInterfaceAlpha(bV.SInterfaceAlpha(paramComponent), this.p);
     this.p.setVisible(true);
-    validate();
+    AutoLoggingTriggerPanel();
     this.p.pack();
     this.p.setResizable(false);
   }

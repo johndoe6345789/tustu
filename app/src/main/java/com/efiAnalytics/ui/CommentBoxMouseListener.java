@@ -4,9 +4,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class CommentBoxMouseListener extends MouseAdapter {
-  bo(bi parambi) {}
+  CommentBoxMouseListener(bi parambi) {}
   
-  public void mouseClicked(MouseEvent paramMouseEvent) {
+  public void CommentBoxMouseListener(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getX() > this.a.getWidth() - eJ.a(37) && paramMouseEvent.getY() < eJ.a(304))
       this.a.b(); 
     if (!this.a.h && paramMouseEvent.getX() > eJ.a(169) && paramMouseEvent.getX() < eJ.a(184) && paramMouseEvent.getY() < eJ.a(304))

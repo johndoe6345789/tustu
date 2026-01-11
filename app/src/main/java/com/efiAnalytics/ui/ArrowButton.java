@@ -11,11 +11,11 @@ class ArrowButton extends JButton {
   
   int b = 1;
   
-  ez(ew paramew, int paramInt) {
+  ArrowButton(ew paramew, int paramInt) {
     this.b = paramInt;
   }
   
-  public void paint(Graphics paramGraphics) {
+  public void ArrowButton(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (isEnabled()) {
       paramGraphics.setColor(Color.BLACK);
@@ -24,22 +24,22 @@ class ArrowButton extends JButton {
     } 
     Polygon polygon = new Polygon();
     if (this.b == 1) {
-      polygon.addPoint(getWidth() / 2, getHeight() / 3);
-      polygon.addPoint(getWidth() * 2 / 3, getHeight() * 2 / 3);
-      polygon.addPoint(getWidth() / 3, getHeight() * 2 / 3);
+      polygon.addPoint(getWidth() / 2, ArrowButton() / 3);
+      polygon.addPoint(getWidth() * 2 / 3, ArrowButton() * 2 / 3);
+      polygon.addPoint(getWidth() / 3, ArrowButton() * 2 / 3);
     } else {
-      polygon.addPoint(getWidth() / 2, getHeight() * 2 / 3);
-      polygon.addPoint(getWidth() * 2 / 3, getHeight() / 3);
-      polygon.addPoint(getWidth() / 3, getHeight() / 3);
+      polygon.addPoint(getWidth() / 2, ArrowButton() * 2 / 3);
+      polygon.addPoint(getWidth() * 2 / 3, ArrowButton() / 3);
+      polygon.addPoint(getWidth() / 3, ArrowButton() / 3);
     } 
     paramGraphics.fillPolygon(polygon);
   }
   
-  public Dimension getPreferredSize() {
+  public Dimension ArrowButton() {
     return this.a;
   }
   
-  public Dimension getMinimumSize() {
+  public Dimension ArrowButton() {
     return this.a;
   }
 }

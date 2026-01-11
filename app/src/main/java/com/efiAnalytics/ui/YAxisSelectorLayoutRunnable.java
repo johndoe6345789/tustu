@@ -1,9 +1,9 @@
 package com.efiAnalytics.ui;
 
 class YAxisSelectorLayoutRunnable implements Runnable {
-  fm(fl paramfl) {}
+  YAxisSelectorLayoutRunnable(fl paramfl) {}
   
-  public void run() {
+  public void YAxisSelectorLayoutRunnable() {
     this.a.getParent().invalidate();
     this.a.getParent().validate();
     this.a.doLayout();

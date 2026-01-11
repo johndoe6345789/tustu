@@ -34,9 +34,9 @@ class TableStatisticsOverlay {
   
   List k = new ArrayList();
   
-  da(cZ paramcZ) {}
+  TableStatisticsOverlay(cZ paramcZ) {}
   
-  public void a(Graphics paramGraphics, db paramdb) {
+  public void TableStatisticsOverlay(Graphics paramGraphics, db paramdb) {
     Rectangle rectangle = this.l.k();
     String str1 = X.b(paramdb.a());
     String str2 = X.b(paramdb.c());
@@ -46,7 +46,7 @@ class TableStatisticsOverlay {
     int i = this.d.getSize() / 2;
     int j = paramGraphics.getFontMetrics().stringWidth(str1);
     if (this.a == null || this.a.getWidth() < j * 1.1D) {
-      this.k = a(this.k);
+      this.k = TableStatisticsOverlay(this.k);
       this.j = 0;
       for (String str : this.k) {
         int i2 = paramGraphics.getFontMetrics().stringWidth(str);
@@ -88,7 +88,7 @@ class TableStatisticsOverlay {
     paramGraphics.drawString(str4, rectangle.x + this.b + (this.a.getWidth() - j) / 2, k);
   }
   
-  private List a(List<String> paramList) {
+  private List TableStatisticsOverlay(List<String> paramList) {
     paramList.clear();
     if (!this.l.y().isEmpty() && !this.l.j(0).isEmpty()) {
       paramList.add(this.f + " (" + this.l.j(0) + " " + this.l.y() + ")");
@@ -107,7 +107,7 @@ class TableStatisticsOverlay {
     return paramList;
   }
   
-  public void a() {
+  public void TableStatisticsOverlay() {
     this.k.clear();
     this.a = null;
   }

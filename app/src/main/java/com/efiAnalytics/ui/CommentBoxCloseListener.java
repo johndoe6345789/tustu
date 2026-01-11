@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class CommentBoxCloseListener implements ActionListener {
-  bl(bi parambi) {}
+  CommentBoxCloseListener(bi parambi) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void CommentBoxCloseListener(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }

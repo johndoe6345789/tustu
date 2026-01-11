@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ColorSetActionListener implements ActionListener {
-  bg(bd parambd) {}
+  ColorSetActionListener(bd parambd) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ColorSetActionListener(ActionEvent paramActionEvent) {
     this.a.a.setColor(bd.a(this.a));
     bd.a(this.a, bd.a(this.a));
     this.a.e.setEnabled(false);

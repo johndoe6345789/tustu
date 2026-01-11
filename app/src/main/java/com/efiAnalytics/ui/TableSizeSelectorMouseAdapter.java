@@ -5,17 +5,17 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class TableSizeSelectorMouseAdapter extends MouseAdapter {
-  ff(fc paramfc) {}
+  TableSizeSelectorMouseAdapter(fc paramfc) {}
   
-  public void mouseDragged(MouseEvent paramMouseEvent) {
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getSource() instanceof fg)
       fg fg = (fg)paramMouseEvent.getSource(); 
     this.a.repaint();
   }
   
-  public void mouseClicked(MouseEvent paramMouseEvent) {}
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {}
   
-  public void mouseEntered(MouseEvent paramMouseEvent) {
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (this.a.a >= 0 && paramMouseEvent.getSource() instanceof fg) {
       fg fg = (fg)paramMouseEvent.getSource();
       this.a.a = fg.a;
@@ -24,9 +24,9 @@ class TableSizeSelectorMouseAdapter extends MouseAdapter {
     this.a.repaint();
   }
   
-  public void mouseExited(MouseEvent paramMouseEvent) {}
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {}
   
-  public void mousePressed(MouseEvent paramMouseEvent) {
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getSource() instanceof fg) {
       fg fg = (fg)paramMouseEvent.getSource();
       this.a.a = fg.a;
@@ -35,7 +35,7 @@ class TableSizeSelectorMouseAdapter extends MouseAdapter {
     this.a.repaint();
   }
   
-  public void mouseReleased(MouseEvent paramMouseEvent) {
+  public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getSource() instanceof fg)
       fg fg = (fg)paramMouseEvent.getSource(); 
     D.c("Selected: " + (this.a.b + 1) + " x " + (this.a.a + 1));

@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 class ThreeDViewHorizontalSliderListener implements ChangeListener {
-  bu(bt parambt) {}
+  ThreeDViewHorizontalSliderListener(bt parambt) {}
   
-  public void stateChanged(ChangeEvent paramChangeEvent) {
+  public void ThreeDViewHorizontalSliderListener(ChangeEvent paramChangeEvent) {
     JSlider jSlider = (JSlider)paramChangeEvent.getSource();
     this.a.a.c(jSlider.getValue());
     this.a.a.repaint();

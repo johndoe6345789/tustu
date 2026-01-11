@@ -5,9 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewAntialiasingListener implements ActionListener {
-  bw(bt parambt) {}
+  ThreeDViewAntialiasingListener(bt parambt) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void ThreeDViewAntialiasingListener(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     this.a.e(jCheckBoxMenuItem.getState());
   }

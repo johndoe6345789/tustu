@@ -64,7 +64,7 @@ public class ScalarDataLogListener implements BtInterfaceBp, IComponentAlpha {
     IComponentAlpha(true);
   }
   
-  public void b() {
+  public void ScalarDataLogListener() {
     IComponentAlpha(false);
   }
   

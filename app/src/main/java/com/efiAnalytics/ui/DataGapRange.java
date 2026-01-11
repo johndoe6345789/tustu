@@ -5,20 +5,20 @@ class DataGapRange {
   
   private double c;
   
-  aX(aU paramaU, double paramDouble1, double paramDouble2) {
+  DataGapRange(aU paramaU, double paramDouble1, double paramDouble2) {
     this.b = paramDouble1;
     this.c = paramDouble2;
   }
   
-  public double a() {
+  public double DataGapRange() {
     return this.b;
   }
   
-  public double b() {
+  public double DataGapRange() {
     return this.c - this.b;
   }
   
-  public double c() {
+  public double DataGapRange() {
     return this.c;
   }
 }

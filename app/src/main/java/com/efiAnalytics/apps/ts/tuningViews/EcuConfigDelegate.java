@@ -9,29 +9,29 @@ class EcuConfigDelegate implements CInterfaceDelta {
   
   boolean b = true;
   
-  w(n paramn, J paramJ) {
+  EcuConfigDelegate(n paramn, J paramJ) {
     this.a = paramJ;
   }
   
-  public R b_() {
+  public R EcuConfigDelegate() {
     return T.a().c();
   }
   
-  public String a_() {
+  public String EcuConfigDelegate() {
     return this.a.A();
   }
   
-  public void c_(String paramString) {
+  public void EcuConfigDelegate(String paramString) {
     this.a.CInterfaceDelta(paramString);
   }
   
-  public void setEnabled(boolean paramBoolean) {
+  public void EcuConfigDelegate(boolean paramBoolean) {
     int i = this.c.f(this.a.getName());
     this.c.setEnabledAt(i, paramBoolean);
     this.b = paramBoolean;
   }
   
-  public boolean isEnabled() {
+  public boolean EcuConfigDelegate() {
     return this.b;
   }
 }

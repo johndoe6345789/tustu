@@ -16,7 +16,7 @@ class PageRefreshRequest {
     this.c = paramInt;
   }
   
-  l(j paramj, R paramR, int paramInt1, int paramInt2, int paramInt3) {
+  PageRefreshRequest(j paramj, R paramR, int paramInt1, int paramInt2, int paramInt3) {
     this.b = paramR;
     this.c = paramInt1;
     this.d = paramInt2;

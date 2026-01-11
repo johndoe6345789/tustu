@@ -29,31 +29,31 @@ public class RealTimeDisplayPanel extends JPanel implements bc {
   
   x b = null;
   
-  public H(R paramR) {
-    this.ExceptionInVPackage = new x(paramR);
-    this.b = new x(paramR);
-    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Real-Time Display")));
-    setLayout(new BorderLayout());
+  public RealTimeDisplayPanel(R paramR) {
+    this.ExceptionInVPackage = new RealTimeDisplayPanel(paramR);
+    this.b = new RealTimeDisplayPanel(paramR);
+    RealTimeDisplayPanel(BorderFactory.createTitledBorder(SComponentGolf.b("Real-Time Display")));
+    RealTimeDisplayPanel(new BorderLayout());
     Isoptimizeddrawingenabled Isoptimizeddrawingenabled = new Isoptimizeddrawingenabled();
     Isoptimizeddrawingenabled.setTabPlacement(3);
-    add("Center", (Component)Isoptimizeddrawingenabled);
-    setPreferredSize(new Dimension(800, 600));
-    setMinimumSize(new Dimension(800, 600));
+    RealTimeDisplayPanel("Center", (Component)Isoptimizeddrawingenabled);
+    RealTimeDisplayPanel(new Dimension(800, 600));
+    RealTimeDisplayPanel(new Dimension(800, 600));
     try {
-      Z z1 = (new aa()).b(paramR);
+      Z z1 = (new RealTimeDisplayPanel()).b(paramR);
       this.b.ExceptionInVPackage(z1);
       Isoptimizeddrawingenabled.addTab(SComponentGolf.b("Summary"), (Component)this.b);
       this.b.setEnabled(false);
-    } catch (ExceptionInVPackage ExceptionInVPackage) {
+    } RealTimeDisplayPanel(ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Could not get Real-time display summary.");
     } 
-    Z z = (new aa()).ExceptionInVPackage(paramR);
+    Z z = (new RealTimeDisplayPanel()).ExceptionInVPackage(paramR);
     this.ExceptionInVPackage.ExceptionInVPackage(z);
     Isoptimizeddrawingenabled.addTab(SComponentGolf.b("All OutputChannels"), (Component)this.ExceptionInVPackage);
     this.ExceptionInVPackage.setEnabled(false);
   }
   
-  public void close() {
+  public void RealTimeDisplayPanel() {
     this.ExceptionInVPackage.removeAll();
     this.b.removeAll();
   }
@@ -62,9 +62,9 @@ public class RealTimeDisplayPanel extends JPanel implements bc {
     JDialog jDialog = new JDialog(paramFrame, paramString);
     jDialog.add("Center", this);
     JButton jButton = new JButton("Close");
-    jButton.addActionListener(new I(this));
+    jButton.addActionListener(new RealTimeDisplayPanel(this));
     if (parambc != null)
-      jButton.addActionListener((ActionListener)new bb(parambc)); 
+      jButton.addActionListener((ActionListener)new RealTimeDisplayPanel(parambc)); 
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
     jPanel.add(jButton);

@@ -3,9 +3,9 @@ package com.efiAnalytics.ui;
 import java.util.TimerTask;
 
 class TimestampUpdateTask extends TimerTask {
-  fk(fj paramfj) {}
+  TimestampUpdateTask(fj paramfj) {}
   
-  public void run() {
+  public void TimestampUpdateTask() {
     this.a.b();
   }
 }

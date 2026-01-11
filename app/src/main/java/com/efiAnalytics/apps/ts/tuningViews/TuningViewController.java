@@ -29,7 +29,7 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
   
   ExceptionInVPackage b = null;
   
-  public z(n paramn) {
+  public TuningViewController(n paramn) {
     this.ExceptionInVPackage = paramn;
   }
   
@@ -44,18 +44,18 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
         arrayList.add(r); 
     } 
     try {
-      aa aa = new aa();
+      aa aa = new TuningViewController();
       aa.ExceptionInVPackage();
       List list = G.b(arrayList);
       this.ExceptionInVPackage.ExceptionInVPackage(list);
       D.c("Tuning View Files loaded in " + aa.d() + "ms.");
-    } catch (ExceptionInVPackage a1) {
+    } TuningViewController(ExceptionInVPackage a1) {
       bV.d("Unable to load Tuning View Tabs for this Project.\nError:\n" + a1.getMessage(), (Component)this.ExceptionInVPackage);
       Logger.getLogger(z.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
   }
   
-  public void e_() {}
+  public void TuningViewController() {}
   
   public void ExceptionInVPackage(ExceptionInVPackage parama) {
     byte b = 0;
@@ -72,7 +72,7 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
         SComponentGolf SComponentGolf = new SComponentGolf();
         try {
           SComponentGolf.ExceptionInVPackage(f, file);
-        } catch (ExceptionInVPackage a1) {
+        } TuningViewController(ExceptionInVPackage a1) {
           bV.d(a1.getMessage(), ThreadedFile);
         } 
       } 
@@ -82,11 +82,11 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
   }
   
   public void ExceptionInVPackage() {
-    c();
+    TuningViewController();
   }
   
-  private void c() {
-    b b = new b();
+  private void TuningViewController() {
+    b b = new TuningViewController();
     String[] arrayOfString1 = T.ExceptionInVPackage().d();
     String[] arrayOfString2 = new String[arrayOfString1.length];
     ArrayList<R> arrayList = new ArrayList();
@@ -102,7 +102,7 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
     Window window2 = window1;
     if (!(window2 instanceof java.awt.Dialog) && !(window2 instanceof java.awt.Frame))
       window2 = null; 
-    ct ct = new ct(window2, b, "Select Tuning View", c, 7);
+    ct ct = new TuningViewController(window2, b, "Select Tuning View", c, 7);
     if (c != null)
       ct.ExceptionInVPackage(c); 
     ct.setSize(eJ.ExceptionInVPackage(640), eJ.ExceptionInVPackage(480));

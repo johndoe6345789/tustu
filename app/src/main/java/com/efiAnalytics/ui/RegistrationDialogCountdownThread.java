@@ -1,16 +1,16 @@
 package com.efiAnalytics.ui;
 
 class RegistrationDialogCountdownThread extends Thread {
-  cX(cT paramcT) {
-    setDaemon(true);
+  RegistrationDialogCountdownThread(cT paramcT) {
+    RegistrationDialogCountdownThread(true);
   }
   
-  public void run() {
+  public void RegistrationDialogCountdownThread() {
     while (cS.b(this.a.c) > 0) {
       this.a.b.setText(cT.a(this.a));
       try {
         Thread.sleep(1000L);
-      } catch (InterruptedException interruptedException) {}
+      } RegistrationDialogCountdownThread(InterruptedException interruptedException) {}
       cS.c(this.a.c);
     } 
     this.a.b.setText(cT.a(this.a));

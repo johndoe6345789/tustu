@@ -5,12 +5,12 @@ class AfInterfaceIndia {
   
   boolean b = false;
   
-  i(h paramh, int paramInt, boolean paramBoolean) {
+  AfInterfaceIndia(h paramh, int paramInt, boolean paramBoolean) {
     this.a = paramInt;
     this.b = paramBoolean;
   }
   
-  boolean a() {
+  boolean AfInterfaceIndia() {
     if (this.b && this.c.c == null)
       return false; 
     if (this.b) {

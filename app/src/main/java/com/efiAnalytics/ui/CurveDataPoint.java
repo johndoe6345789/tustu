@@ -13,23 +13,23 @@ class CurveDataPoint implements ef {
   
   CurveDataPoint(bN parambN) {}
   
-  bP(bN parambN, int paramInt1, int paramInt2) {
+  CurveDataPoint(bN parambN, int paramInt1, int paramInt2) {
     this.c = paramInt2;
     this.d = paramInt1;
   }
   
-  bP(bN parambN, double paramDouble1, double paramDouble2, int paramInt1, int paramInt2) {
-    a(paramDouble1);
-    b(paramDouble2);
+  CurveDataPoint(bN parambN, double paramDouble1, double paramDouble2, int paramInt1, int paramInt2) {
+    CurveDataPoint(paramDouble1);
+    CurveDataPoint(paramDouble2);
     this.c = paramInt2;
     this.d = paramInt1;
   }
   
-  public double c() {
+  public double CurveDataPoint() {
     return this.a;
   }
   
-  protected int d() {
+  protected int CurveDataPoint() {
     int i = this.e.getWidth() - (this.e.F()).left - (this.e.F()).right;
     if (bN.a(this.e)) {
       int j = this.d;
@@ -48,48 +48,48 @@ class CurveDataPoint implements ef {
     return (this.e.h() == this.e.i()) ? (this.e.F()).left : ((this.e.F()).left + (int)((this.a - this.e.i()) / (this.e.h() - this.e.i()) * i));
   }
   
-  protected void b(int paramInt) {
+  protected void CurveDataPoint(int paramInt) {
     double d1 = (this.e.getWidth() - (this.e.F()).left - (this.e.F()).right);
     double d2 = (paramInt - (this.e.F()).left) / d1;
     double d3 = this.e.i() + d2 * (this.e.h() - this.e.i());
     d3 = Math.rint(d3 / bN.b(this.e)) * bN.b(this.e);
-    a(d3);
+    CurveDataPoint(d3);
   }
   
-  public void a(double paramDouble) {
+  public void CurveDataPoint(double paramDouble) {
     this.a = Math.rint(paramDouble * 1.0E7D) / 1.0E7D;
   }
   
-  public double e() {
+  public double CurveDataPoint() {
     return this.b;
   }
   
-  protected int f() {
+  protected int CurveDataPoint() {
     int i = this.e.getHeight() - (this.e.F()).top - (this.e.F()).bottom;
     return this.e.getHeight() - (this.e.F()).bottom - (int)Math.round((this.b - this.e.k()) / (this.e.j() - this.e.k()) * i);
   }
   
-  protected void c(int paramInt) {
+  protected void CurveDataPoint(int paramInt) {
     double d1 = (this.e.getHeight() - (this.e.F()).top - (this.e.F()).bottom);
     double d2 = (this.e.getHeight() - (this.e.F()).bottom - paramInt) / d1;
     double d3 = this.e.k() + d2 * (this.e.j() - this.e.k());
     d3 = Math.rint(d3 / bN.c(this.e).a(this.c)) * bN.c(this.e).a(this.c);
-    b(d3);
+    CurveDataPoint(d3);
   }
   
-  public void b(double paramDouble) {
+  public void CurveDataPoint(double paramDouble) {
     this.b = Math.rint(paramDouble * 1.0E7D) / 1.0E7D;
   }
   
-  public int b() {
+  public int CurveDataPoint() {
     return this.c;
   }
   
-  public int a() {
+  public int CurveDataPoint() {
     return this.d;
   }
   
-  public boolean equals(Object paramObject) {
+  public boolean CurveDataPoint(Object paramObject) {
     if (paramObject instanceof bP) {
       bP bP1 = (bP)paramObject;
       return (bP1.d == this.d && bP1.c == this.c);
@@ -97,15 +97,15 @@ class CurveDataPoint implements ef {
     return super.equals(paramObject);
   }
   
-  public void a(int paramInt) {
+  public void CurveDataPoint(int paramInt) {
     this.d = paramInt;
   }
   
-  public double g() {
+  public double CurveDataPoint() {
     return this.f;
   }
   
-  public void c(double paramDouble) {
+  public void CurveDataPoint(double paramDouble) {
     this.f = paramDouble;
   }
 }

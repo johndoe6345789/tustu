@@ -4,11 +4,11 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class CommentBoxFocusListener implements FocusListener {
-  bk(bi parambi) {}
+  CommentBoxFocusListener(bi parambi) {}
   
-  public void focusGained(FocusEvent paramFocusEvent) {}
+  public void CommentBoxFocusListener(FocusEvent paramFocusEvent) {}
   
-  public void focusLost(FocusEvent paramFocusEvent) {
+  public void CommentBoxFocusListener(FocusEvent paramFocusEvent) {
     this.a.b();
   }
 }

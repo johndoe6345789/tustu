@@ -15,30 +15,30 @@ class RowHeaderCellRenderer extends DefaultTableCellRenderer {
   
   private int d = -1;
   
-  public ai(w paramw) {
-    setBackground(this.a);
-    setForeground(Color.BLACK);
-    setHorizontalAlignment(0);
-    paramw.a.getSelectionModel().addListSelectionListener(new aj(this, paramw));
+  public RowHeaderCellRenderer(w paramw) {
+    RowHeaderCellRenderer(this.a);
+    RowHeaderCellRenderer(Color.BLACK);
+    RowHeaderCellRenderer(0);
+    paramw.a.getSelectionModel().addListSelectionListener(new RowHeaderCellRenderer(this, paramw));
   }
   
-  public void paint(Graphics paramGraphics) {
+  public void RowHeaderCellRenderer(Graphics paramGraphics) {
     super.paint(paramGraphics);
     paramGraphics.setColor(this.a);
-    paramGraphics.draw3DRect(0, 0, getWidth() - 1, getHeight() - 1, true);
+    paramGraphics.draw3DRect(0, 0, RowHeaderCellRenderer() - 1, RowHeaderCellRenderer() - 1, true);
     if (!this.c.a.isEnabled()) {
       Color color = new Color(64, 64, 64, 80);
       paramGraphics.setColor(color);
-      paramGraphics.fillRect(0, 0, getWidth(), getHeight());
+      paramGraphics.fillRect(0, 0, RowHeaderCellRenderer(), RowHeaderCellRenderer());
     } 
   }
   
-  public String getText() {
+  public String RowHeaderCellRenderer() {
     String str = super.getText();
-    return (str != null) ? X.a(str, a()) : str;
+    return (str != null) ? X.a(str, RowHeaderCellRenderer()) : str;
   }
   
-  public Component getTableCellRendererComponent(JTable paramJTable, Object paramObject, boolean paramBoolean1, boolean paramBoolean2, int paramInt1, int paramInt2) {
+  public Component RowHeaderCellRenderer(JTable paramJTable, Object paramObject, boolean paramBoolean1, boolean paramBoolean2, int paramInt1, int paramInt2) {
     Component component = super.getTableCellRendererComponent(paramJTable, paramObject, paramBoolean1, paramBoolean2, paramInt1, paramInt2);
     Color color = this.a;
     int[] arrayOfInt = this.c.a.getSelectedRows();
@@ -50,7 +50,7 @@ class RowHeaderCellRenderer extends DefaultTableCellRenderer {
     return component;
   }
   
-  private boolean a(int[] paramArrayOfint, int paramInt) {
+  private boolean RowHeaderCellRenderer(int[] paramArrayOfint, int paramInt) {
     for (byte b = 0; b < paramArrayOfint.length; b++) {
       if (paramArrayOfint[b] == paramInt)
         return true; 
@@ -58,11 +58,11 @@ class RowHeaderCellRenderer extends DefaultTableCellRenderer {
     return false;
   }
   
-  public int a() {
+  public int RowHeaderCellRenderer() {
     return (this.d >= 0) ? this.d : this.c.q();
   }
   
-  public void a(int paramInt) {
+  public void RowHeaderCellRenderer(int paramInt) {
     this.d = paramInt;
   }
 }

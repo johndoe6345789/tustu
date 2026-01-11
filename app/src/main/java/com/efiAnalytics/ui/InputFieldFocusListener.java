@@ -4,13 +4,13 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class InputFieldFocusListener implements FocusListener {
-  fr(fq paramfq) {}
+  InputFieldFocusListener(fq paramfq) {}
   
-  public void focusGained(FocusEvent paramFocusEvent) {
+  public void InputFieldFocusListener(FocusEvent paramFocusEvent) {
     this.a.b.selectAll();
   }
   
-  public void focusLost(FocusEvent paramFocusEvent) {}
+  public void InputFieldFocusListener(FocusEvent paramFocusEvent) {}
 }
 
 

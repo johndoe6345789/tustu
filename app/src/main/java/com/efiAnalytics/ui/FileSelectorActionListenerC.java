@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class FileSelectorActionListenerC implements ActionListener {
-  ek(ei paramei) {}
+  FileSelectorActionListenerC(ei paramei) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
+  public void FileSelectorActionListenerC(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
