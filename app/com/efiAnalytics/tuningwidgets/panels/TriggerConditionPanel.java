@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
 import bH.I;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -34,7 +34,7 @@ class TriggerConditionPanel extends JPanel {
   
   JTextField SComponentGolf;
   
-  do h;
+  NumericTextField h;
   
   V RInterfaceIndia;
   
@@ -83,7 +83,7 @@ class TriggerConditionPanel extends JPanel {
     this.f.addItem("=");
     this.f.addItem("<");
     jPanel.add("Center", this.f);
-    this.h = new do("", 4);
+    this.h = new NumericTextField("", 4);
     jPanel.add("East", (Component)this.h);
     this.j.add("Center", jPanel);
     if (paramBoolean2)

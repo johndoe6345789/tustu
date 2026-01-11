@@ -3,7 +3,7 @@ package p;
 import G.R;
 import bH.I;
 import com.efiAnalytics.tuningwidgets.panels.V;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -32,7 +32,7 @@ class PComponentMike extends JPanel {
   
   JTextField f;
   
-  do SComponentGolf;
+  NumericTextField SComponentGolf;
   
   V h;
   
@@ -67,7 +67,7 @@ class PComponentMike extends JPanel {
     this.e.addItem("=");
     this.e.addItem("<");
     jPanel.add("Center", this.e);
-    this.SComponentGolf = new do("", 4);
+    this.SComponentGolf = new NumericTextField("", 4);
     jPanel.add("East", (Component)this.SComponentGolf);
     this.i.add("Center", jPanel);
     add(this.i);

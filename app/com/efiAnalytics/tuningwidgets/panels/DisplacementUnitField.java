@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import bH.X;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 
 class DisplacementUnitField extends do {
   boolean a = false;

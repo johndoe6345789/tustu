@@ -9,7 +9,7 @@ import bH.D;
 import bn.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.et;
 import com.efiAnalytics.ui.fh;
 import com.efiAnalytics.ui.s;
@@ -41,27 +41,27 @@ import s.SComponentGolf;
 public class JPanelExtensionInBoPackage extends JPanel implements ExceptionInVPackage, bc {
   w ExceptionInVPackage = null;
   
-  do b = new do();
+  do b = new NumericTextField();
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
-  do e = new do();
+  do e = new NumericTextField();
   
-  do f = new do();
+  do f = new NumericTextField();
   
-  do SComponentGolf = new do();
+  do SComponentGolf = new NumericTextField();
   
-  do h = new do();
+  do h = new NumericTextField();
   
-  do i = new do();
+  do i = new NumericTextField();
   
-  do j = new do();
+  do j = new NumericTextField();
   
-  do k = new do();
+  do k = new NumericTextField();
   
-  do l = new do();
+  do l = new NumericTextField();
   
   JComboBox m = new JComboBox();
   

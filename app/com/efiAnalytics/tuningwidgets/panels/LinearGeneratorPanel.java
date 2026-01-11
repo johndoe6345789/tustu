@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.GComponentBu;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.et;
 import java.awt.Component;
 import java.awt.GridLayout;
@@ -11,13 +11,13 @@ import s.SComponentGolf;
 public class LinearGeneratorPanel extends aL {
   GComponentBu a = null;
   
-  do b = new do();
+  do b = new NumericTextField();
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
-  do e = new do();
+  do e = new NumericTextField();
   
   public LinearGeneratorPanel(GComponentBu parambu) {
     this.a = parambu;

@@ -2,7 +2,7 @@ package bw;
 
 import bH.ac;
 import com.efiAnalytics.ui.cF;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.Component;
 import java.awt.GridLayout;
@@ -11,21 +11,21 @@ import javax.swing.JPanel;
 import s.SComponentGolf;
 
 public class JPanelExtensionInBwPackage extends JPanel {
-  do a = new do();
+  do a = new NumericTextField();
   
-  do b = new do();
+  do b = new NumericTextField();
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
-  do e = new do();
+  do e = new NumericTextField();
   
-  do f = new do();
+  do f = new NumericTextField();
   
-  do SComponentGolf = new do();
+  do SComponentGolf = new NumericTextField();
   
-  do h = new do();
+  do h = new NumericTextField();
   
   c i = new c(this);
   

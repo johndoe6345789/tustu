@@ -101,7 +101,7 @@ public class UserParameterDialog extends JDialog implements ActionListener {
       if (!str.equals("") && !this.e.contains(str)) {
         JTextField jTextField = null;
         if (paramBoolean1) {
-          jTextField = new do();
+          jTextField = new NumericTextField();
         } else {
           jTextField = new JTextField();
         } 

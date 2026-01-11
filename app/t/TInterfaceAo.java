@@ -5,7 +5,7 @@ import bH.X;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.f;
 import com.efiAnalytics.apps.ts.dashboard.s;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.fp;
 import java.awt.Color;
 import java.awt.Component;
@@ -32,9 +32,9 @@ public class TInterfaceAo extends a implements f {
   
   JTextField SComponentGolf;
   
-  do h;
+  NumericTextField h;
   
-  do i;
+  NumericTextField i;
   
   JPanel j = new JPanel();
   
@@ -60,14 +60,14 @@ public class TInterfaceAo extends a implements f {
     JLabel jLabel = new JLabel(SComponentGolf.b("Current Value"));
     jLabel.setHorizontalAlignment(4);
     this.j.add(jLabel);
-    this.h = new do();
+    this.h = new NumericTextField();
     this.h.addFocusListener(bd);
     this.h.addKeyListener(new aP(this));
     this.j.add((Component)this.h);
     jLabel = new JLabel(SComponentGolf.b("Historical Peak Value"));
     jLabel.setHorizontalAlignment(4);
     this.j.add(jLabel);
-    this.i = new do();
+    this.i = new NumericTextField();
     this.i.addFocusListener(bd);
     this.i.addKeyListener(new aV(this));
     this.j.add((Component)this.i);

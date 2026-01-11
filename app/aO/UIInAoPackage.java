@@ -4,7 +4,7 @@ import V.ExceptionInVPackage;
 import W.n;
 import bH.D;
 import com.efiAnalytics.ui.cp;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -21,7 +21,7 @@ class UIInAoPackage extends JPanel {
   
   JLabel b = new JLabel("  0", 0);
   
-  do c = new do("  0", 0);
+  do c = new NumericTextField("  0", 0);
   
   public UIInAoPackage(k paramk) {
     JPanel jPanel = new JPanel();

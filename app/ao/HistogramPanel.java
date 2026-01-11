@@ -17,7 +17,7 @@ import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.dD;
 import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.de;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.e;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
@@ -146,15 +146,15 @@ public class go extends JPanel implements ExceptionInVPackage {
   
   JPanel G = new JPanel();
   
-  do H;
+  NumericTextField H;
   
-  do I;
+  NumericTextField I;
   
   JButton J;
   
-  do K;
+  NumericTextField K;
   
-  do L;
+  NumericTextField L;
   
   JLabel M;
   
@@ -295,8 +295,8 @@ public class go extends JPanel implements ExceptionInVPackage {
     JPanel jPanel4 = new JPanel();
     jPanel4.setBorder(BorderFactory.createTitledBorder("Table Dimensions"));
     jPanel4.setLayout(new BorderLayout());
-    this.H = new do("", 1);
-    this.I = new do("", 1);
+    this.H = new NumericTextField("", 1);
+    this.I = new NumericTextField("", 1);
     gu gu = new gu(this);
     JPanel jPanel5 = new JPanel();
     jPanel5.setLayout(new GridLayout(2, 2));
@@ -328,8 +328,8 @@ public class go extends JPanel implements ExceptionInVPackage {
     this.IOProperties.ExceptionInVPackage(R);
     this.IOProperties.addActionListener(new gx(this));
     jPanel7.add((Component)this.IOProperties);
-    this.K = new do("Auto", 1);
-    this.L = new do("Auto", 1);
+    this.K = new NumericTextField("Auto", 1);
+    this.L = new NumericTextField("Auto", 1);
     gy gy = new gy(this);
     this.K.addKeyListener(gy);
     this.L.addKeyListener(gy);

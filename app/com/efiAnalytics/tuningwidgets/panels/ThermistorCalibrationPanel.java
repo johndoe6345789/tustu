@@ -5,7 +5,7 @@ import G.GInterfaceBh;
 import V.ExceptionInVPackage;
 import GInterfaceBh.T;
 import GInterfaceBh.X;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.et;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -24,19 +24,19 @@ import s.SComponentGolf;
 public class ThermistorCalibrationPanel extends AbstractDataPanel {
   GInterfaceBg ExceptionInVPackage = null;
   
-  do b = new do();
+  do b = new NumericTextField();
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
-  do e = new do();
+  do e = new NumericTextField();
   
-  do f = new do();
+  do f = new NumericTextField();
   
-  do SComponentGolf = new do();
+  do SComponentGolf = new NumericTextField();
   
-  do h = new do();
+  do h = new NumericTextField();
   
   JRadioButton i = new JRadioButton("Fahrenheit");
   

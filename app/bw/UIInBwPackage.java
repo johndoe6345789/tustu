@@ -4,7 +4,7 @@ import ax.ArrayListUsingPattern;
 import ax.ExceptionInAxPackage;
 import bH.ac;
 import com.efiAnalytics.ui.bV;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -28,9 +28,9 @@ public class UIInBwPackage extends JPanel {
   
   JList b = new JList(this.a);
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
   JLabel e = new JLabel("", 0);
   

@@ -7,7 +7,7 @@ import V.ExceptionExtensionGetmessage;
 import bH.X;
 import bt.BtInterfaceBz;
 import com.efiAnalytics.ui.bV;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.et;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -28,11 +28,11 @@ import s.ExceptionPrintstacktrace;
 public class RequiredFuelCalculatorDialog extends JDialog {
   DisplacementUnitField a = new DisplacementUnitField(this);
   
-  do b = new do();
+  do b = new NumericTextField();
   
   InjectorFlowUnitField c = new InjectorFlowUnitField(this);
   
-  do d = new do();
+  do d = new NumericTextField();
   
   JRadioButton e = null;
   

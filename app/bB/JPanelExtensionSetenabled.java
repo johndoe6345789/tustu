@@ -2,7 +2,7 @@ package bB;
 
 import bH.S;
 import bH.ab;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -29,11 +29,11 @@ public class JPanelExtensionSetenabled extends JPanel {
   
   JCheckBox f;
   
-  do g = new do("", 15);
+  do g = new NumericTextField("", 15);
   
-  do h = new do("", 15);
+  do h = new NumericTextField("", 15);
   
-  do i = new do("", 15);
+  do i = new NumericTextField("", 15);
   
   a j = null;
   

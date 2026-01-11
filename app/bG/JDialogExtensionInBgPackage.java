@@ -2,7 +2,7 @@ package bG;
 
 import W.WInterfaceAp;
 import com.efiAnalytics.ui.bV;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dialog;
@@ -19,11 +19,11 @@ import javax.swing.JPanel;
 public class JDialogExtensionInBgPackage extends JDialog {
   Dimension a = null;
   
-  do b;
+  NumericTextField b;
   
-  do c;
+  NumericTextField c;
   
-  do d;
+  NumericTextField d;
   
   private boolean g = false;
   
@@ -47,19 +47,19 @@ public class JDialogExtensionInBgPackage extends JDialog {
     jPanel1.add(jLabel, "North");
     e e = new e(this);
     f f = new f(this);
-    this.b = new do();
+    this.b = new NumericTextField();
     this.b.b(0);
     this.b.addFocusListener(e);
     this.b.addKeyListener(f);
     this.b.a(b("TotalTrigTeeth", 36.0D));
     a(jPanel2, "Base number of teeth including missing.", (Component)this.b);
-    this.c = new do("0");
+    this.c = new NumericTextField("0");
     this.c.b(0);
     this.c.addFocusListener(e);
     this.c.addKeyListener(f);
     this.c.a(b("MissingTeeth", 1.0D));
     a(jPanel2, "Number of missing Teeth.", (Component)this.c);
-    this.d = new do("0");
+    this.d = new NumericTextField("0");
     this.d.b(1);
     this.d.addFocusListener(e);
     this.d.addKeyListener(f);

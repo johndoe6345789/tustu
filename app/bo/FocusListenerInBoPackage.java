@@ -1,6 +1,6 @@
 package bo;
 
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 

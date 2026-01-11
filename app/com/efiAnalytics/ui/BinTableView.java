@@ -1495,8 +1495,8 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   
   private void ai() {
     if (this.y == null) {
-      this.w = new do("Auto", 1);
-      this.x = new do("Auto", 1);
+      this.w = new NumericTextField("Auto", 1);
+      this.x = new NumericTextField("Auto", 1);
       double d1 = Double.NaN;
       double d2 = Double.NaN;
       try {

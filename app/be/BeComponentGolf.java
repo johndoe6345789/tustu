@@ -12,7 +12,7 @@ import V.ExceptionInVPackage;
 import ax.ExceptionInAxPackage;
 import bH.S;
 import com.efiAnalytics.ui.cF;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.ee;
 import java.awt.BorderLayout;
@@ -31,7 +31,7 @@ public class BeComponentGolf extends JPanel implements o {
   
   i c;
   
-  do d;
+  NumericTextField d;
   
   JComboBox e = new JComboBox();
   
@@ -66,7 +66,7 @@ public class BeComponentGolf extends JPanel implements o {
     this.f.addActionListener(new h(this));
     this.f.addActionListener(this.i);
     add(ExceptionInVPackage("Value Format", this.f, "Select the format this field will be displayed in the log file. It can be the typical Numeric or one of the optional boolean formats."));
-    this.d = new do("", b);
+    this.d = new NumericTextField("", b);
     this.d.b(0);
     this.d.addKeyListener(this.i);
     this.d.addFocusListener((FocusListener)ee);

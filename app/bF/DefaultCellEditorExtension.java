@@ -1,7 +1,7 @@
 package bF;
 
 import bH.X;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import java.util.EventObject;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
@@ -10,7 +10,7 @@ class DefaultCellEditorExtension extends DefaultCellEditor {
   private int b = 0;
   
   L(D paramD) {
-    super((JTextField)new do());
+    super((JTextField)new NumericTextField());
     do do = (do)getComponent();
     do.setFont(paramD.getFont());
     do.setHorizontalAlignment(0);

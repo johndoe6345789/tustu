@@ -11,7 +11,7 @@ import bH.t;
 import bt.j;
 import com.efiAnalytics.tuningwidgets.panels.G;
 import com.efiAnalytics.ui.bV;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -45,13 +45,13 @@ public class BeInterfaceMike extends JPanel implements o {
   
   G h = new G(SComponentGolf.b("Browse for Inc File"));
   
-  do i;
+  NumericTextField i;
   
-  do j;
+  NumericTextField j;
   
-  do k;
+  NumericTextField k;
   
-  do l;
+  NumericTextField l;
   
   CardLayout m = new CardLayout();
   
@@ -141,17 +141,17 @@ public class BeInterfaceMike extends JPanel implements o {
     jPanel3.add(this.o);
     jPanel3.add(new JLabel(SComponentGolf.b("Output Value"), 0));
     jPanel3.add(new JLabel(SComponentGolf.b("Point 1"), 4));
-    this.i = new do();
+    this.i = new NumericTextField();
     this.i.addKeyListener(this.p);
     jPanel3.add((Component)this.i);
-    this.k = new do();
+    this.k = new NumericTextField();
     this.k.addKeyListener(this.p);
     jPanel3.add((Component)this.k);
     jPanel3.add(new JLabel(SComponentGolf.b("Point 2"), 4));
-    this.j = new do();
+    this.j = new NumericTextField();
     this.j.addKeyListener(this.p);
     jPanel3.add((Component)this.j);
-    this.l = new do();
+    this.l = new NumericTextField();
     this.l.addKeyListener(this.p);
     jPanel3.add((Component)this.l);
     this.i.b(2);

@@ -1,6 +1,6 @@
 package bc;
 
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 
 class BcInterfaceEcho extends do implements i {
   e(a parama) {

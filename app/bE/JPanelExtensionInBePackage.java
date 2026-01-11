@@ -1,7 +1,7 @@
 package bE;
 
 import bH.ab;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -16,9 +16,9 @@ public class JPanelExtensionInBePackage extends JPanel {
   
   JCheckBox b = null;
   
-  do c = new do("", 4);
+  do c = new NumericTextField("", 4);
   
-  do d = new do("", 4);
+  do d = new NumericTextField("", 4);
   
   ArrayList e = new ArrayList();
   

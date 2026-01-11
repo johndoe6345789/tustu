@@ -6,7 +6,7 @@ import javax.swing.JTable;
 
 class TableCenterCellEditor extends DefaultCellEditor {
   TableCenterCellEditor(S paramS) {
-    super(new do());
+    super(new NumericTextField());
     do do = (do)getComponent();
     do.setHorizontalAlignment(0);
   }

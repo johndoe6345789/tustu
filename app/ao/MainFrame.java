@@ -1417,7 +1417,7 @@ public class cd extends JFrame implements hi, WindowListener {
     i.ExceptionInVPackage(jCheckBoxMenuItem4);
     jMenu2.add(jCheckBoxMenuItem4);
     ee.add(jMenu2);
-    do do = new do(this);
+    do do = new NumericTextField(this);
     i = new i();
     int j = i.b("lineTraceSize", i.ae);
     JMenu jMenu3 = new JMenu("Trace Line Style");

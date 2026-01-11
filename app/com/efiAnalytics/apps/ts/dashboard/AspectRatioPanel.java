@@ -2,7 +2,7 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cF;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -18,9 +18,9 @@ import javax.swing.JPanel;
 import s.SComponentGolf;
 
 public class AspectRatioPanel extends JPanel {
-  do a = new do("", 4);
+  do a = new NumericTextField("", 4);
   
-  do b = new do("", 4);
+  do b = new NumericTextField("", 4);
   
   Dimension c = eJ.a(200, 10);
   

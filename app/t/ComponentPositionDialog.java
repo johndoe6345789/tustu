@@ -2,7 +2,7 @@ package t;
 
 import com.efiAnalytics.apps.ts.dashboard.f;
 import com.efiAnalytics.apps.ts.dashboard.s;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -19,13 +19,13 @@ import s.SComponentGolf;
 public class ComponentPositionDialog extends a implements f {
   JPanel a = new JPanel();
   
-  do b = new do();
+  do b = new NumericTextField();
   
-  do c = new do();
+  do c = new NumericTextField();
   
-  do d = new do();
+  do d = new NumericTextField();
   
-  do e = new do();
+  do e = new NumericTextField();
   
   public r(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);

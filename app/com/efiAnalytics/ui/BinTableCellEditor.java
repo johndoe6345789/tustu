@@ -6,7 +6,7 @@ import javax.swing.DefaultCellEditor;
 
 class BinTableCellEditor extends DefaultCellEditor {
   BinTableCellEditor(BinTableView paramBinTableView) {
-    super(new do());
+    super(new NumericTextField());
     do do = (do)getComponent();
     do.setFont(paramBinTableView.getFont());
     do.setHorizontalAlignment(0);

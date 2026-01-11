@@ -3,7 +3,7 @@ package com.efiAnalytics.dialogs;
 import bH.X;
 import bH.ab;
 import bu.BuComponentAlpha;
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import com.efiAnalytics.ui.eJ;
 import h.IOProperties;
 import java.awt.BorderLayout;
@@ -19,23 +19,23 @@ import javax.swing.JTextPane;
 public class TimeSlipPanel extends JPanel {
   ab BuComponentAlpha = null;
   
-  do b;
+  NumericTextField b;
   
-  do c;
+  NumericTextField c;
   
-  do d;
+  NumericTextField d;
   
-  do e;
+  NumericTextField e;
   
-  do f;
+  NumericTextField f;
   
-  do g;
+  NumericTextField g;
   
-  do h;
+  NumericTextField h;
   
-  do IOProperties;
+  NumericTextField IOProperties;
   
-  do j;
+  NumericTextField j;
   
   JTextPane k = new JTextPane();
   
@@ -48,35 +48,35 @@ public class TimeSlipPanel extends JPanel {
     jPanel1.setBorder(BorderFactory.createTitledBorder(paramString));
     jPanel1.setLayout(new GridLayout(0, 1));
     f f = new f(this);
-    this.b = new do("", 5);
+    this.b = new NumericTextField("", 5);
     this.b.b(3);
     this.b.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.b, BuComponentAlpha("60ft Time (s)")));
-    this.c = new do("", 5);
+    this.c = new NumericTextField("", 5);
     this.c.b(3);
     this.c.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.c, BuComponentAlpha("330 ft ET (s)")));
-    this.d = new do("", 5);
+    this.d = new NumericTextField("", 5);
     this.d.b(3);
     this.d.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.d, BuComponentAlpha("660 ft ET (s)")));
-    this.e = new do("", 5);
+    this.e = new NumericTextField("", 5);
     this.e.b(3);
     this.e.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.e, BuComponentAlpha("660 ft Speed")));
-    this.f = new do("", 5);
+    this.f = new NumericTextField("", 5);
     this.f.b(3);
     this.f.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.f, BuComponentAlpha("1000 ft ET (s)")));
-    this.g = new do("", 5);
+    this.g = new NumericTextField("", 5);
     this.g.b(3);
     this.g.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.g, BuComponentAlpha("1320 ft ET (s)")));
-    this.h = new do("", 5);
+    this.h = new NumericTextField("", 5);
     this.h.b(3);
     this.h.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.h, BuComponentAlpha("1320 ft Speed")));
-    this.IOProperties = new do("", 5);
+    this.IOProperties = new NumericTextField("", 5);
     this.IOProperties.b(0);
     this.IOProperties.addFocusListener(f);
     jPanel1.add(BuComponentAlpha(this.IOProperties, BuComponentAlpha("Density Altitude")));
@@ -90,7 +90,7 @@ public class TimeSlipPanel extends JPanel {
     JLabel jLabel = new JLabel();
     jLabel.setText(BuComponentAlpha("The delay in seconds between releasing the trans brake and the car breaking the beam."));
     jPanel3.add("Center", jLabel);
-    this.j = new do("", 5);
+    this.j = new NumericTextField("", 5);
     this.j.b(3);
     jPanel3.add("East", (Component)this.j);
     this.j.setText(IOProperties.e(IOProperties.aw, "0.300"));

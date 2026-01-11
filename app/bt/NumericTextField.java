@@ -1,6 +1,6 @@
 package bt;
 
-import com.efiAnalytics.ui.do;
+import com.efiAnalytics.ui.NumericTextField;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import javax.swing.BorderFactory;
