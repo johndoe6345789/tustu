@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: TunerStudio
+Implementation-Title: TunerStudio
+Implementation-Version: 1.0.0
+
