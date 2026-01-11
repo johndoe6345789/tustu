@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.regex.Pattern;
 
-public AkCharlieImpllass AkCharlieImpl extends g {
+public class AkCharlieImpl extends g {
   public AkCharlieImpl() {
     super(",", false);
   }
