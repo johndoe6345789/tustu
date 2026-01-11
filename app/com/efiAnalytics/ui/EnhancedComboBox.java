@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JComboBox;
 import javax.swing.ListCellRenderer;
 
-public class de extends JComboBox {
+public class EnhancedComboBox extends JComboBox {
   dj a = null;
   
   Color b = null;

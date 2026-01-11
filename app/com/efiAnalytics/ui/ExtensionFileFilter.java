@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.filechooser.FileFilter;
 
-public class dd extends FileFilter implements Serializable {
+public class ExtensionFileFilter extends FileFilter implements Serializable {
   String a = "";
   
   ArrayList b = new ArrayList();

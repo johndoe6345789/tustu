@@ -5,7 +5,7 @@ import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-public class dD extends Thread {
+public class PaintThrottleThread extends Thread {
   private int d = 100;
   
   private int e = 0;
