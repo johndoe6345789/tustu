@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public AhInterfaceCharlielass AhInterfaceCharlie implements Exception {
+public class AhInterfaceCharlie implements Exception {
   List a = new ArrayList();
   
   private static final byte[] c = new byte[] { 2, 0, 0, 0, -1, 0 };

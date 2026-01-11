@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import s.SComponentGolf;
 
-public JPanelExtensionUsingRemoteDevicelass JPanelExtensionUsingRemoteDevice extends JPanel implements fT {
+public class JPanelExtensionUsingRemoteDevice extends JPanel implements fT {
   fJ ExceptionInVPackage = new fJ();
   
   JButton b = new JButton(SComponentGolf.b("Pair"));
@@ -79,7 +79,6 @@ public JPanelExtensionUsingRemoteDevicelass JPanelExtensionUsingRemoteDevice ext
       System.out.println("--> Pairing fail with device " + this.f.getBluetoothAddress());
       iOException.printStackTrace();
     } 
-  }
   
   public boolean g_() {
     return false;

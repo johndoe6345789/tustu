@@ -3,7 +3,7 @@ package an;
 import am.TostringInAmPackage;
 import am.AmInterfaceDelta;
 
-public AnInterfaceCharlielass AnInterfaceCharlie extends a {
+public class AnInterfaceCharlie extends a {
   c(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
     super(paramd, paramb);
   }

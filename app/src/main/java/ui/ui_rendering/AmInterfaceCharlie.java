@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.SeekableByteChannel;
 
-public AmInterfaceCharlielass AmInterfaceCharlie extends a {
+public class AmInterfaceCharlie extends a {
   public static String b = "##CG";
   
   private long c;
