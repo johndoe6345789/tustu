@@ -4,8 +4,8 @@ import java.awt.Component;
 import java.awt.event.FocusEvent;
 import javax.swing.table.TableCellEditor;
 
-class X implements Runnable {
-  X(W paramW, FocusEvent paramFocusEvent) {}
+class AxisTableFocusLostRunnable implements Runnable {
+  AxisTableFocusLostRunnable(AxisTableFocusAdapter paramW, FocusEvent paramFocusEvent) {}
   
   public void run() {
     TableCellEditor tableCellEditor = this.b.b.getCellEditor();

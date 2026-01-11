@@ -4,8 +4,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JPopupMenu;
 
-class T extends MouseAdapter {
-  T(S paramS, w paramw, boolean paramBoolean) {}
+class AxisTableContextMenuListener extends MouseAdapter {
+  AxisTableContextMenuListener(AxisEditorTable paramS, w paramw, boolean paramBoolean) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3) {

@@ -4,8 +4,8 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import javax.swing.SwingUtilities;
 
-class W extends FocusAdapter {
-  W(S paramS, w paramw) {}
+class AxisTableFocusAdapter extends FocusAdapter {
+  AxisTableFocusAdapter(AxisEditorTable paramS, w paramw) {}
   
   public void focusLost(FocusEvent paramFocusEvent) {
     SwingUtilities.invokeLater(new X(this, paramFocusEvent));

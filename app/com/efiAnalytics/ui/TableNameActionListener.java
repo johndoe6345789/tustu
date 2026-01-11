@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class R implements ActionListener {
-  R(w paramw) {}
+class TableNameActionListener implements ActionListener {
+  TableNameActionListener(w paramw) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = (this.a.getName() != null) ? this.a.getName() : "";

@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class V implements ActionListener {
-  V(T paramT, int[] paramArrayOfint) {}
+class AxisInterpolateActionListener implements ActionListener {
+  AxisInterpolateActionListener(AxisTableContextMenuListener paramT, int[] paramArrayOfint) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     int i = this.a.length - 1;

@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class U implements ActionListener {
-  U(T paramT, int[] paramArrayOfint) {}
+class AxisRevertActionListener implements ActionListener {
+  AxisRevertActionListener(AxisTableContextMenuListener paramT, int[] paramArrayOfint) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     for (byte b = 0; b < this.a.length; b++)

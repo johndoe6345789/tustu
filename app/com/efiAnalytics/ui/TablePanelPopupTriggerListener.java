@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Q implements ActionListener {
-  Q(w paramw) {}
+class TablePanelPopupTriggerListener implements ActionListener {
+  TablePanelPopupTriggerListener(w paramw) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     w.b(this.a);

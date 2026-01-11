@@ -8,7 +8,7 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableColumn;
 import javax.swing.text.JTextComponent;
 
-class S extends JTable {
+class AxisEditorTable extends JTable {
   boolean a = false;
   
   String[] b;
@@ -17,7 +17,7 @@ class S extends JTable {
   
   boolean d = false;
   
-  public S(w paramw, String[] paramArrayOfString, boolean paramBoolean) {
+  public AxisEditorTable(w paramw, String[] paramArrayOfString, boolean paramBoolean) {
     super(paramBoolean ? paramArrayOfString.length : 1, paramBoolean ? 1 : paramArrayOfString.length);
     this.a = paramBoolean;
     setSelectionMode(1);
