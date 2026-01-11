@@ -55,7 +55,10 @@ def extract_class_info(filepath, content):
     
     # Extract field types to understand what this class manages
     field_types = re.findall(r'(?:private|protected|public)\s+(?:static\s+)?(?:final\s+)?(\w+)\s+\w+\s*[;=]', content)
-    info['field_types'] = [f for f in field_types if len(f) > 2][:10]  # Meaningful types only
+    # Filter out primitives and common types AND Java keywords
+    java_primitives_and_keywords = ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map', 'Object',
+                                     'char', 'byte', 'short', 'void', 'class', 'interface', 'extends', 'implements']
+    info['field_types'] = [f for f in field_types if len(f) > 2 and f not in java_primitives_and_keywords][:10]
     
     # Extract field names for context
     field_names = re.findall(r'(?:private|protected|public)\s+(?:static\s+)?(?:final\s+)?\w+\s+(\w+)\s*[;=]', content)
@@ -67,24 +70,36 @@ def extract_class_info(filepath, content):
     
     # Extract imported classes (just the class name, not full package)
     imports = re.findall(r'import\s+[\w.]+\.(\w+);', content)
-    info['imported_classes'] = [i for i in imports if len(i) > 2][:15]
+    # Filter out classes with numbers (like Base64, CRC32, etc.)
+    info['imported_classes'] = [i for i in imports if len(i) > 2 and not any(c.isdigit() for c in i)][:15]
     
     # Extract instantiated classes (new ClassName())
     instantiations = re.findall(r'new\s+(\w+)\s*\(', content)
-    info['instantiated_classes'] = [i for i in instantiations if len(i) > 2][:15]
+    # Filter out primitives, wrappers, and classes with numbers
+    info['instantiated_classes'] = [i for i in instantiations 
+                                    if len(i) > 2 
+                                    and i not in ['int', 'Integer', 'long', 'Long', 
+                                                  'boolean', 'Boolean', 'double', 'Double',
+                                                  'float', 'Float', 'byte', 'Byte',
+                                                  'short', 'Short', 'char', 'Character']
+                                    and not any(c.isdigit() for c in i)][:15]
     
     # Extract method parameter types for more context
     method_params = re.findall(r'\w+\s+\w+\s*\(([^)]*)\)', content)
     param_types = []
+    java_primitives_and_keywords = ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map', 'Object',
+                                     'char', 'byte', 'short', 'void', 'class', 'interface']
     for params in method_params:
         if params.strip():
             types = re.findall(r'(\w+)\s+\w+', params)
-            param_types.extend([t for t in types if len(t) > 2])
+            param_types.extend([t for t in types if len(t) > 2 and t not in java_primitives_and_keywords])
     info['param_types'] = list(set(param_types))[:10]
     
     # Extract method return types
     return_types = re.findall(r'(?:public|private|protected)\s+(?:static\s+)?(\w+)\s+\w+\s*\(', content)
-    info['return_types'] = [r for r in return_types if len(r) > 2 and r not in ['void', 'int', 'long', 'boolean', 'double', 'float']][:10]
+    java_primitives_and_keywords = ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map', 'Object',
+                                     'char', 'byte', 'short', 'void', 'class', 'interface']
+    info['return_types'] = [r for r in return_types if len(r) > 2 and r not in java_primitives_and_keywords][:10]
     
     # Look for specific patterns in method bodies
     info['uses_thread'] = 'Thread' in content or 'Runnable' in content or 'ExecutorService' in content
@@ -234,11 +249,36 @@ def extract_class_info(filepath, content):
         if type_counts:
             dominant_type = max(type_counts.items(), key=lambda x: x[1])[0]
             if len(dominant_type) > 2:
-                # Check if we have multiple of same type - more specific naming
-                if type_counts[dominant_type] > 1:
+                # Add technology context
+                if info.get('uses_network') and 'Socket' not in dominant_type:
+                    specific_name = f"Network{dominant_type}Manager"
+                elif info.get('uses_io') and 'File' in content:
+                    specific_name = f"File{dominant_type}Manager"
+                elif info.get('uses_thread'):
+                    specific_name = f"Threaded{dominant_type}Manager"
+                elif type_counts[dominant_type] > 1:
                     specific_name = f"Multiple{dominant_type}Manager"
                 else:
                     specific_name = f"{dominant_type}Manager"
+    
+    # Analyze field names for semantic meaning
+    if not specific_name and info['field_names']:
+        meaningful_fields = [f for f in info['field_names'] if len(f) > 3 and f not in ['this', 'that', 'temp', 'tmp', 'value', 'data']]
+        if meaningful_fields:
+            # Look for domain-specific field patterns
+            field_str = ' '.join(meaningful_fields).lower()
+            if 'connection' in field_str or 'socket' in field_str:
+                specific_name = 'ConnectionManager'
+            elif 'cache' in field_str or 'buffer' in field_str:
+                specific_name = 'CacheManager'
+            elif 'config' in field_str or 'setting' in field_str:
+                specific_name = 'ConfigurationManager'
+            elif 'logger' in field_str or 'logging' in field_str:
+                specific_name = 'LoggingManager'
+            elif 'session' in field_str:
+                specific_name = 'SessionManager'
+            elif 'queue' in field_str:
+                specific_name = 'QueueManager'
     
     # Look at instantiated classes for more specific naming
     if not specific_name and info['instantiated_classes']:
@@ -345,162 +385,275 @@ def extract_class_info(filepath, content):
     return info
 
 def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
-    """Generate a creative, unique filename using specific inference first"""
+    """Generate a creative, unique filename using deep semantic analysis"""
     
-    # Strategy 1: Use the specific inferred name (most descriptive)
-    if class_info.get('specific_name') and len(class_info['specific_name']) > 2:
-        base_name = class_info['specific_name']
-        candidate = f"{base_name}.java"
-        if candidate not in used_names:
-            return candidate
-        # Add instantiated class context if available
-        if class_info.get('instantiated_classes'):
-            inst_class = class_info['instantiated_classes'][0]
-            candidate = f"{base_name}For{inst_class}.java"
-            if candidate not in used_names:
-                return candidate
+    # Helper to build context-rich names
+    def build_contextual_name(base_name):
+        """Add context to base name to make it unique"""
+        # Sanitize base name: spell out numbers
+        number_words = {'0': 'Zero', '1': 'One', '2': 'Two', '3': 'Three', '4': 'Four',
+                       '5': 'Five', '6': 'Six', '7': 'Seven', '8': 'Eight', '9': 'Nine'}
+        sanitized_base = base_name
+        for digit, word in number_words.items():
+            sanitized_base = sanitized_base.replace(digit, word)
+        
+        # Also check if it's a Java keyword - if so, add descriptive suffix
+        java_keywords = ['boolean', 'int', 'long', 'double', 'float', 'char', 'byte', 'short', 
+                        'void', 'class', 'interface', 'Interface']
+        if sanitized_base.lower() in java_keywords:
+            sanitized_base = f"{sanitized_base}Type"  # "boolean" → "booleanType"
+        
+        if sanitized_base + ".java" not in used_names:
+            return sanitized_base + ".java"
+            return sanitized_base + ".java"
+        
         # Add field type context
         if class_info.get('field_types'):
-            field_type = class_info['field_types'][0]
-            candidate = f"{base_name}With{field_type}.java"
-            if candidate not in used_names:
-                return candidate
-        # Add method name context
-        if class_info.get('key_methods'):
-            method = class_info['key_methods'][0]
-            if len(method) > 2:
-                candidate = f"{base_name}{method.capitalize()}.java"
-                if candidate not in used_names:
-                    return candidate
-        # Add package hint
-        pkg_suffix = pkg_name.replace('_', '').capitalize()
-        candidate = f"{base_name}In{pkg_suffix}.java"
-        if candidate not in used_names:
-            return candidate
-    
-    # Strategy 2: Use actual class name ONLY if it's not obfuscated (multi-char)
-    if class_info['class_name'] and len(class_info['class_name']) > 2:
-        base_name = class_info['class_name']
-        candidate = f"{base_name}.java"
-        if candidate not in used_names:
-            return candidate
-        # Add context from what it creates/manages
+            for ft in class_info['field_types'][:5]:
+                if ft.lower() not in sanitized_base.lower() and len(ft) > 2:
+                    # Sanitize field type too
+                    sanitized_ft = ft
+                    for digit, word in number_words.items():
+                        sanitized_ft = sanitized_ft.replace(digit, word)
+                    name = f"{sanitized_base}With{sanitized_ft}"
+                    if name + ".java" not in used_names:
+                        return name + ".java"
+        
+        # Add instantiated class context (avoid redundancy)
         if class_info.get('instantiated_classes'):
-            inst_class = class_info['instantiated_classes'][0]
-            candidate = f"{base_name}Creating{inst_class}.java"
-            if candidate not in used_names:
-                return candidate
-        # Add context from imports
-        if class_info.get('imported_classes'):
-            for imp in class_info['imported_classes'][:3]:
-                candidate = f"{base_name}Using{imp}.java"
-                if candidate not in used_names:
-                    return candidate
-        # If already used, add the package hint
-        pkg_suffix = pkg_name.replace('_', '').capitalize()
-        candidate = f"{base_name}In{pkg_suffix}.java"
-        if candidate not in used_names:
-            return candidate
+            for inst in class_info['instantiated_classes'][:5]:
+                if inst.lower() not in base_name.lower() and len(inst) > 2:
+                    if not inst.endswith('Exception'):
+                        name = f"{base_name}Creating{inst}"
+                        if name + ".java" not in used_names:
+                            return name + ".java"
+        
+        # Add param type context
+        if class_info.get('param_types'):
+            for param in class_info['param_types'][:5]:
+                if param.lower() not in base_name.lower() and len(param) > 2:
+                    name = f"{base_name}Using{param}"
+                    if name + ".java" not in used_names:
+                        return name + ".java"
+        
+        # Add return type context
+        if class_info.get('return_types'):
+            for ret in class_info['return_types'][:5]:
+                if ret.lower() not in base_name.lower() and len(ret) > 2:
+                    name = f"{base_name}Returning{ret}"
+                    if name + ".java" not in used_names:
+                        return name + ".java"
+        
+        # Add method name context (skip getters/setters)
+        if class_info.get('key_methods'):
+            for method in class_info['key_methods'][:10]:
+                if len(method) > 3 and not method.startswith('get') and not method.startswith('set'):
+                    if method.lower() not in base_name.lower():
+                        name = f"{base_name}{method.capitalize()}"
+                        if name + ".java" not in used_names:
+                            return name + ".java"
+        
+        # Add field name context
+        if class_info.get('field_names'):
+            for field in class_info['field_names'][:10]:
+                if len(field) > 3 and field.lower() not in base_name.lower():
+                    name = f"{base_name}For{field.capitalize()}"
+                    if name + ".java" not in used_names:
+                        return name + ".java"
+        
+        # Add package context (clean version)
+        pkg_clean = pkg_name.replace('_', '').capitalize()
+        name = f"{base_name}In{pkg_clean}Package"
+        if name + ".java" not in used_names:
+            return name + ".java"
+        
+        # Last resort: combine multiple contexts
+        if class_info.get('field_types') and class_info.get('key_methods'):
+            ft = class_info['field_types'][0]
+            method = [m for m in class_info['key_methods'] if len(m) > 3][0] if [m for m in class_info['key_methods'] if len(m) > 3] else ''
+            if method:
+                name = f"{base_name}{method.capitalize()}{ft}"
+                if name + ".java" not in used_names:
+                    return name + ".java"
+        
+        return None
+    
+    # Strategy 1: Use the specific inferred name with context
+    if class_info.get('specific_name') and len(class_info['specific_name']) > 2:
+        result = build_contextual_name(class_info['specific_name'])
+        if result:
+            return result
+    
+    # Strategy 2: Use actual class name with context
+    if class_info['class_name'] and len(class_info['class_name']) > 2:
+        # Avoid Java keywords
+        java_keywords = ['boolean', 'int', 'long', 'double', 'float', 'char', 'byte', 'short', 
+                        'void', 'class', 'interface', 'extends', 'implements', 'package', 'import',
+                        'public', 'private', 'protected', 'static', 'final', 'abstract']
+        if class_info['class_name'].lower() not in java_keywords:
+            result = build_contextual_name(class_info['class_name'])
+            if result:
+                return result
     
     # Strategy 3: Use description with enriched context
     if class_info['description']:
-        base_name = class_info['description']
-        candidate = f"{base_name}.java"
-        if candidate not in used_names:
-            return candidate
-        
-        # Add field type context for Managers/Services (avoid redundancy)
-        if 'Manager' in base_name or 'Service' in base_name or 'Handler' in base_name:
-            if class_info.get('field_types'):
-                for field_type in class_info['field_types'][:3]:
-                    # Skip if field type is in the base name
-                    if field_type.lower() not in base_name.lower():
-                        candidate = f"{field_type}{base_name}.java"
-                        if candidate not in used_names:
-                            return candidate
-            
-            if class_info.get('instantiated_classes'):
-                for inst_class in class_info['instantiated_classes'][:3]:
-                    # Skip if class is in the base name
-                    if inst_class.lower() not in base_name.lower():
-                        candidate = f"{inst_class}{base_name}.java"
-                        if candidate not in used_names:
-                            return candidate
-            
-            # Use field names for context
-            if class_info.get('field_names'):
-                for field_name in class_info['field_names'][:3]:
-                    if len(field_name) > 2 and field_name.lower() not in base_name.lower():
-                        candidate = f"{field_name.capitalize()}{base_name}.java"
-                        if candidate not in used_names:
-                            return candidate
-        
-        # Add primary method name (avoid common getters/setters)
-        if class_info.get('key_methods'):
-            for method in class_info['key_methods'][:5]:
-                if len(method) > 3 and method not in ['toString', 'hashCode', 'equals', 'getClass']:
-                    # Skip common patterns
-                    if not method.startswith('get') and not method.startswith('set'):
-                        candidate = f"{method.capitalize()}{base_name}.java"
-                        if candidate not in used_names:
-                            return candidate
-        
-        # Add package context
-        pkg_suffix = pkg_name.replace('_', '').capitalize()
-        candidate = f"{pkg_suffix}{base_name}.java"
-        if candidate not in used_names:
-            return candidate
-        
-        # Add letter as last resort before numbering
-        candidate = f"{base_name}_{fallback_letter.upper()}.java"
-        if candidate not in used_names:
-            return candidate
+        # Skip if description itself is a keyword
+        java_keywords = ['boolean', 'int', 'long', 'double', 'float', 'char', 'byte', 'short', 
+                        'void', 'class', 'interface', 'extends', 'implements', 'Interface']
+        if class_info['description'].lower() not in java_keywords:
+            result = build_contextual_name(class_info['description'])
+            if result:
+                return result
     
-    # Strategy 4: Use extends class name if meaningful
-    if class_info['extends'] and len(class_info['extends']) > 2:
-        base_name = f"{class_info['extends']}{fallback_letter.upper()}"
-        candidate = f"{base_name}.java"
-        if candidate not in used_names:
-            return candidate
+    # Strategy 4: Build name from extends
+    if class_info.get('extends') and len(class_info['extends']) > 2:
+        base_name = f"{class_info['extends']}Extension"
+        result = build_contextual_name(base_name)
+        if result:
+            return result
     
-    # Strategy 5: Use implements interface if meaningful
-    if class_info['implements']:
+    # Strategy 5: Use implements interface with context
+    if class_info.get('implements'):
         for impl in class_info['implements']:
-            impl_name = impl.split('.')[-1]  # Get simple name
+            impl_name = impl.split('.')[-1]
             if len(impl_name) > 2:
-                base_name = f"{impl_name}{fallback_letter.upper()}"
-                candidate = f"{base_name}.java"
-                if candidate not in used_names:
-                    return candidate
+                result = build_contextual_name(f"{impl_name}Impl")
+                if result:
+                    return result
     
-    # Strategy 6: Use first meaningful method name + letter
-    if class_info['key_methods']:
-        for method in class_info['key_methods']:
-            if len(method) > 2:  # Meaningful method name
-                base_name = f"{method.capitalize()}{fallback_letter.upper()}"
-                candidate = f"{base_name}.java"
-                if candidate not in used_names:
-                    return candidate
+    # Strategy 6: Build name from multiple characteristics
+    name_parts = []
     
-    # Strategy 7: Package context + letter
-    base_name = f"{pkg_name.split('_')[0].capitalize()}{fallback_letter.upper()}"
-    candidate = f"{base_name}.java"
-    if candidate not in used_names:
-        return candidate
+    # Add technology context
+    if class_info.get('uses_network'):
+        name_parts.append('Network')
+    elif class_info.get('uses_io'):
+        name_parts.append('IO')
+    elif class_info.get('uses_thread'):
+        name_parts.append('Threaded')
+    elif class_info.get('uses_swing'):
+        name_parts.append('UI')
     
-    # Strategy 8: Ensure absolute uniqueness with sequential numbering
-    base = f"{pkg_name.split('_')[0].capitalize()}_{fallback_letter.upper()}"
-    candidate = f"{base}.java"
-    if candidate not in used_names:
-        return candidate
+    # Add primary field type
+    if class_info.get('field_types'):
+        ft = class_info['field_types'][0]
+        if len(ft) > 2 and ft not in ['String', 'Object', 'List', 'Map']:
+            name_parts.append(ft)
     
-    # Add number suffix - guaranteed to be unique
-    counter = 1
-    while f"{base}_{counter}.java" in used_names:
-        counter += 1
-        if counter > 1000:  # Safety limit
-            break
-    return f"{base}_{counter}.java"
+    # Add primary method
+    if class_info.get('key_methods'):
+        for method in class_info['key_methods'][:5]:
+            if len(method) > 3 and not method.startswith('get') and not method.startswith('set'):
+                name_parts.append(method.capitalize())
+                break
+    
+    if len(name_parts) > 0:
+        base_name = ''.join(name_parts)
+        result = build_contextual_name(base_name)
+        if result:
+            return result
+    
+    # Strategy 7: Package-based comprehensive name
+    pkg_clean = pkg_name.replace('_', '').capitalize()
+    base_name = f"{pkg_clean}Component"
+    result = build_contextual_name(base_name)
+    if result:
+        return result
+    
+    # Final fallback: Combine everything for guaranteed uniqueness
+    # NO single letters, NO numbers - just descriptive concatenation
+    parts = [pkg_clean]
+    
+    if class_info.get('description'):
+        parts.append(class_info['description'])
+    elif class_info.get('is_interface'):
+        parts.append('InterfaceImpl')
+    elif class_info.get('is_abstract'):
+        parts.append('AbstractImpl')
+    else:
+        parts.append('ComponentImpl')
+    
+    if class_info.get('field_types'):
+        ft = class_info['field_types'][0]
+        if len(ft) > 2:
+            parts.append('Managing' + ft)
+    elif class_info.get('param_types'):
+        pt = class_info['param_types'][0]
+        if len(pt) > 2:
+            parts.append('Processing' + pt)
+    
+    if class_info.get('key_methods'):
+        for m in class_info['key_methods']:
+            if len(m) > 3 and not m.startswith('get') and not m.startswith('set'):
+                parts.append('Via' + m.capitalize())
+                break
+    
+    # Use original filename letter as distinguisher (spelled out)
+    letter_names = {
+        'a': 'Alpha', 'b': 'Beta', 'c': 'Charlie', 'd': 'Delta', 'e': 'Echo',
+        'f': 'Foxtrot', 'g': 'Golf', 'h': 'Hotel', 'i': 'India', 'j': 'Juliet',
+        'k': 'Kilo', 'l': 'Lima', 'm': 'Mike', 'n': 'November', 'o': 'Oscar',
+        'p': 'Papa', 'q': 'Quebec', 'r': 'Romeo', 's': 'Sierra', 't': 'Tango',
+        'u': 'Uniform', 'v': 'Victor', 'w': 'Whiskey', 'x': 'Xray', 'y': 'Yankee',
+        'z': 'Zulu'
+    }
+    letter_key = fallback_letter.lower()
+    if letter_key in letter_names:
+        parts.append(letter_names[letter_key])
+    else:
+        # For multi-char filenames, use them directly
+        parts.append(fallback_letter.capitalize() + 'Variant')
+    
+    final_name = ''.join(parts) + '.java'
+    
+    # If still duplicate, try adding more context systematically
+    if final_name in used_names:
+        # Add imported classes
+        if class_info.get('imported_classes'):
+            for imp in class_info['imported_classes'][:3]:
+                test_name = ''.join(parts) + 'Imports' + imp + '.java'
+                if test_name not in used_names:
+                    return test_name
+        
+        # Add string literal hints
+        if class_info.get('string_literals'):
+            for lit in class_info['string_literals'][:2]:
+                # Clean the string for use in filename
+                clean_lit = ''.join(c.capitalize() if c.isalnum() else '' for c in lit)
+                if len(clean_lit) > 3:
+                    test_name = ''.join(parts) + 'Ref' + clean_lit[:15] + '.java'
+                    if test_name not in used_names:
+                        return test_name
+        
+        # Add extends/implements info
+        if class_info.get('extends'):
+            test_name = ''.join(parts) + 'Extends' + class_info['extends'] + '.java'
+            if test_name not in used_names:
+                return test_name
+        
+        # Ultimate fallback: use phonetic alphabet with package combo
+        combo = pkg_clean + letter_names.get(letter_key, fallback_letter.capitalize())
+        test_name = ''.join(parts) + 'Unique' + combo + '.java'
+        if test_name not in used_names:
+            return test_name
+        
+        # If STILL duplicate (nearly impossible), add more parts
+        extra_parts = []
+        if class_info.get('uses_network'):
+            extra_parts.append('Network')
+        if class_info.get('uses_io'):
+            extra_parts.append('InputOutput')
+        if class_info.get('uses_thread'):
+            extra_parts.append('Threading')
+        if class_info.get('uses_swing'):
+            extra_parts.append('SwingUI')
+        if extra_parts:
+            return ''.join(parts) + ''.join(extra_parts) + combo + '.java'
+        else:
+            # Very last resort: full package name spelling
+            return ''.join(parts) + 'From' + pkg_name.replace('_', '').capitalize() + combo + '.java'
+    
+    return final_name
 
 def generate_smart_mapping_v2():
     """Generate improved mapping with conflict resolution"""
@@ -587,7 +740,8 @@ def generate_smart_mapping_v2():
         "aT": "resource_loader",
     }
     
-    # Track used names per package to avoid conflicts
+    # Track used names GLOBALLY for complete uniqueness
+    global_used_names = set()
     used_names_per_pkg = defaultdict(set)
     
     # Walk through all packages
@@ -636,12 +790,12 @@ def generate_smart_mapping_v2():
                 # Extract class information
                 class_info = extract_class_info(filepath, content)
                 
-                # Generate creative name
+                # Generate creative name with GLOBAL uniqueness check
                 new_file = generate_creative_name(
                     class_info, 
                     pkg_dir, 
                     basename, 
-                    used_names_per_pkg[new_pkg]
+                    global_used_names  # Changed from per-package to global
                 )
                 
                 # Track which strategy was used
@@ -652,7 +806,8 @@ def generate_smart_mapping_v2():
                 else:
                     stats['used_fallback'] += 1
                 
-                # Add to used names
+                # Add to BOTH global and per-package tracking
+                global_used_names.add(new_file)
                 used_names_per_pkg[new_pkg].add(new_file)
                 
                 old_full = f"app/obfuscated_packages/{pkg_dir}/{file}"
@@ -677,8 +832,8 @@ def generate_smart_mapping_v2():
     with open(mapping_file, 'w') as f:
         json.dump(mapping, f, indent=2, sort_keys=True)
     
-    # Post-process to ensure ALL names are unique across entire workspace
-    print("\nEnsuring global uniqueness...")
+    # Check for remaining duplicates (should be zero with new strategy)
+    print("\nVerifying global uniqueness...")
     global_name_count = {}
     for old_path, new_path in mapping.items():
         new_name = new_path.split('/')[-1]
@@ -686,36 +841,24 @@ def generate_smart_mapping_v2():
             global_name_count[new_name] = []
         global_name_count[new_name].append((old_path, new_path))
     
-    # Fix duplicates by adding small numeric suffixes
-    duplicates_fixed = 0
-    for new_name, paths in global_name_count.items():
-        if len(paths) > 1:
-            # Keep first one, rename others
-            for idx, (old_path, new_path) in enumerate(paths[1:], start=2):
-                # Insert number before .java extension
-                base_name = new_name[:-5]  # Remove .java
-                unique_name = f"{base_name}{idx}.java"
-                # Update the new path
-                new_dir = '/'.join(new_path.split('/')[:-1])
-                mapping[old_path] = f"{new_dir}/{unique_name}"
-                duplicates_fixed += 1
-    
-    # Save the globally unique mapping
-    with open(mapping_file, 'w') as f:
-        json.dump(mapping, f, indent=2, sort_keys=True)
-    
-    print(f"Fixed {duplicates_fixed} duplicate filenames for global uniqueness")
+    duplicates = [name for name, paths in global_name_count.items() if len(paths) > 1]
+    if duplicates:
+        print(f"⚠️  Found {len(duplicates)} duplicate names (should not happen with new strategy)")
+        for name in duplicates[:5]:
+            print(f"  - {name}: {len(global_name_count[name])} instances")
+    else:
+        print("✅ All filenames are unique!")
     
     print(f"\n{'='*60}")
     print(f"Generated smart mapping: {mapping_file}")
     print(f"{'='*60}")
     print(f"Total files mapped:        {stats['mapped']}")
+    print(f"Total unique filenames:    {len(global_name_count)}")
     print(f"Used actual class names:   {stats['used_class_name']}")
     print(f"Used pattern descriptions: {stats['used_description']}")
     print(f"Used fallback names:       {stats['used_fallback']}")
     print(f"Skipped (already renamed): {stats['skipped_renamed']}")
     print(f"Skipped (empty):           {stats['skipped_empty']}")
-    print(f"Global duplicates fixed:   {duplicates_fixed}")
     
     # Save analysis details
     analysis_file = "/home/rewrich/Documents/GitHub/tustu/JAVA_ANALYSIS_DETAILED.json"
