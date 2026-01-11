@@ -27,7 +27,7 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 import s.g;
 
-public class r extends JTable implements S, eX {
+public class DeviceSearchTable extends JTable implements S, eX {
   public static int a = 4000;
   
   List b = new CopyOnWriteArrayList();

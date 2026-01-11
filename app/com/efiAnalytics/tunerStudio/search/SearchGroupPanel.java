@@ -10,7 +10,7 @@ import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-class j extends JPanel {
+class SearchGroupPanel extends JPanel {
   JPanel a = new JPanel();
   
   j(i parami, B paramB, String paramString) {

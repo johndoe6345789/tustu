@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-public class C {
+public class SearchResultItem {
   private String a = null;
   
   private String b = null;

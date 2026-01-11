@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class E extends MouseAdapter {
+class SearchResultItemMouseAdapter extends MouseAdapter {
   public E(D paramD) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {

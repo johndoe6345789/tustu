@@ -4,7 +4,7 @@ import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class q extends Thread {
+class SearchDelayThread extends Thread {
   int a = 600;
   
   long b = Long.MAX_VALUE;

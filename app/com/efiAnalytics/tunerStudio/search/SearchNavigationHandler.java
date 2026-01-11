@@ -5,7 +5,7 @@ import G.bv;
 import aP.dd;
 import aP.f;
 
-class F implements l {
+class SearchNavigationHandler implements l {
   R a;
   
   bv b;

@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class d extends Thread {
+class IpSearchMonitorThread extends Thread {
   Object a = new Object();
   
   boolean b = false;

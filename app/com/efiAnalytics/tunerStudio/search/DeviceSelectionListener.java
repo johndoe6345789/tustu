@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class t implements ActionListener {
+class DeviceSelectionListener implements ActionListener {
   t(r paramr) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {

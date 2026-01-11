@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-class p implements Runnable {
+class SearchPopupShowRunnable implements Runnable {
   p(m paramm) {}
   
   public void run() {

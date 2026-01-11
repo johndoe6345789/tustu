@@ -4,7 +4,7 @@ import G.aG;
 import G.bT;
 import javax.swing.SwingUtilities;
 
-class x implements aG {
+class ProjectChangeListener implements aG {
   x(r paramr) {}
   
   public boolean a(String paramString, bT parambT) {

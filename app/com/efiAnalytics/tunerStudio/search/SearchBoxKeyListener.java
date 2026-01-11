@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-class o implements KeyListener {
+class SearchBoxKeyListener implements KeyListener {
   o(m paramm) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}

@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import B.i;
 import B.k;
 
-class c implements k {
+class IpSearchEventListener implements k {
   c(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
   
   public void a(i parami) {

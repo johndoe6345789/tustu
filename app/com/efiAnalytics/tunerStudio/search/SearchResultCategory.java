@@ -2,7 +2,7 @@ package com.efiAnalytics.tunerStudio.search;
 
 import java.util.ArrayList;
 
-public class B extends ArrayList {
+public class SearchResultCategory extends ArrayList {
   private String a = null;
   
   public boolean a(String paramString) {

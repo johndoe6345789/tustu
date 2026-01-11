@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class g {
+public class SearchUtils {
   public static ArrayList a(R paramR, String paramString) {
     ArrayList<B> arrayList = new ArrayList();
     List list = a(paramR);

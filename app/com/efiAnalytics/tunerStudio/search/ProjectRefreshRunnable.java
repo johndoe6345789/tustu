@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-class z implements Runnable {
+class ProjectRefreshRunnable implements Runnable {
   z(x paramx) {}
   
   public void run() {

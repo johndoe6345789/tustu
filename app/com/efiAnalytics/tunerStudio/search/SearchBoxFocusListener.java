@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class n implements FocusListener {
+class SearchBoxFocusListener implements FocusListener {
   n(m paramm) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {

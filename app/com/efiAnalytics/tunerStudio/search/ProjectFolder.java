@@ -2,7 +2,7 @@ package com.efiAnalytics.tunerStudio.search;
 
 import java.io.File;
 
-public class k {
+public class ProjectFolder {
   private File a;
   
   public k(File paramFile) {

@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-class v implements Runnable {
+class DeviceTableRefreshRunnable implements Runnable {
   v(r paramr) {}
   
   public void run() {

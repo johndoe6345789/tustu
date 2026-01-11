@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-public interface l {
+public interface SearchSelectionListener {
   void a(C paramC);
 }
 

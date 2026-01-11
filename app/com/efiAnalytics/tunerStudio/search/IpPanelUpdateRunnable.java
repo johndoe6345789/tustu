@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-class a implements Runnable {
+class IpPanelUpdateRunnable implements Runnable {
   a(ContinuousIpSearchPanel paramContinuousIpSearchPanel, f paramf) {}
   
   public void run() {

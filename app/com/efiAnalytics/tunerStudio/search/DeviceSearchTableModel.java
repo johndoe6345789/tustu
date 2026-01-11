@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 import r.a;
 
-class A extends DefaultTableModel {
+class DeviceSearchTableModel extends DefaultTableModel {
   Map a = new HashMap<>();
   
   A(r paramr) {}

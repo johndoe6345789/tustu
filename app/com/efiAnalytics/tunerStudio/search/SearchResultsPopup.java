@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JWindow;
 
-public class i extends JWindow {
+public class SearchResultsPopup extends JWindow {
   JPanel a = new JPanel();
   
   int b = 240;

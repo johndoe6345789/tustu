@@ -4,7 +4,7 @@ import B.g;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class e extends Thread {
+class IpSearchExecutionThread extends Thread {
   boolean a = false;
   
   e(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}

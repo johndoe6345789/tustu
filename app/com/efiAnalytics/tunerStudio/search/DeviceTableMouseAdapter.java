@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JPopupMenu;
 
-class s extends MouseAdapter {
+class DeviceTableMouseAdapter extends MouseAdapter {
   s(r paramr) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {

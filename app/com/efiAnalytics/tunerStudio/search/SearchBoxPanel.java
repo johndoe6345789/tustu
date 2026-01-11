@@ -17,7 +17,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import s.g;
 
-public class m extends JPanel {
+public class SearchBoxPanel extends JPanel {
   Font a = new Font("Helv", 0, eJ.a(11));
   
   JTextField b = new JTextField("", 15);

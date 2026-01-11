@@ -5,7 +5,7 @@ import D.a;
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
 
-public class f {
+public class DeviceInfo {
   private long a = 0L;
   
   private i b = null;

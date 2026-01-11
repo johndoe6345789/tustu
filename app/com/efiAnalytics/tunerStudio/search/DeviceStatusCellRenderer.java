@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.eV;
 import java.awt.Component;
 import javax.swing.JTable;
 
-class w extends eV {
+class DeviceStatusCellRenderer extends eV {
   w(r paramr) {}
   
   public Component getTableCellRendererComponent(JTable paramJTable, Object paramObject, boolean paramBoolean1, boolean paramBoolean2, int paramInt1, int paramInt2) {

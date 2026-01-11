@@ -2,7 +2,7 @@ package com.efiAnalytics.tunerStudio.search;
 
 import javax.swing.JMenuItem;
 
-public class h implements l {
+public class MenuItemActionHandler implements l {
   JMenuItem a;
   
   public h(JMenuItem paramJMenuItem) {
