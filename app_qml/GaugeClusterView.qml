@@ -137,7 +137,7 @@ Rectangle {
             anchors.fill: parent
             sourceComponent: RoundGauge {
                 property string type: dragArea.gaugeType
-                label: type === "rpm" ? "Engine Speed" :
+                title: type === "rpm" ? "Engine Speed" :
                        type === "throttle" ? "Throttle Position" :
                        type === "temp" ? "Engine MAP" :
                        type === "afr" ? "Exhaust Gas Oxygen" :
@@ -167,20 +167,20 @@ Rectangle {
                 value: type === "rpm" ? gaugeCluster.rpm :
                        type === "throttle" ? gaugeCluster.throttle :
                        type === "temp" ? gaugeCluster.temp :
-                       type === "afr" ? gaugeCluster.afr / 14.7 : // Normalized
+                       type === "afr" ? gaugeCluster.afr / 14.7 :
                        type === "boost" ? gaugeCluster.boost * 10 :
                        type === "voltage" ? gaugeCluster.voltage :
                        type === "pulse" ? gaugeCluster.pulseWidth :
-                       5.0 // Default ignition
+                       5.0
                        
-                unit: type === "rpm" ? "x1000\nRPM" :
-                     type === "throttle" ? "%\n" :
-                     type === "temp" ? "kPa" :
-                     type === "afr" ? "volts\n" :
-                     type === "boost" ? "%\n" :
-                     type === "voltage" ? "volts\n" :
-                     type === "pulse" ? "mSec\n" :
-                     "degrees"
+                units: type === "rpm" ? "RPM" :
+                      type === "throttle" ? "%" :
+                      type === "temp" ? "kPa" :
+                      type === "afr" ? "V" :
+                      type === "boost" ? "%" :
+                      type === "voltage" ? "V" :
+                      type === "pulse" ? "mS" :
+                      "°"
             }
         }
     }
