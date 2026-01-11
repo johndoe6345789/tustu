@@ -194,7 +194,7 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
           this.ExceptionInVPackage.ExceptionPrintstacktrace(this.d.b("selectedDash", ExceptionPrintstacktrace.b("Standard")));
         } 
       } catch (Exception exception) {
-        bV.d("Error setting gauges, check log for detail.\nMessage:\Isoptimizeddrawingenabled" + exception.getMessage(), (Component)this);
+        bV.d("Error setting gauges, check log for detail.\nMessage:\\Isoptimizeddrawingenabled" + exception.getMessage(), (Component)this);
         exception.printStackTrace();
       } 
       this.e.setBottomComponent(this.f);

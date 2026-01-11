@@ -8,7 +8,7 @@ class ThreadedInSPackage extends Thread {
   
   int b = 99;
   
-  f(e parame) {
+  public ThreadedInSPackage(e parame) {
     super("Offline Event Monitor Thread");
   }
   

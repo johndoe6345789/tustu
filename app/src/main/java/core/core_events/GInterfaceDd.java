@@ -5,7 +5,7 @@ class GInterfaceDd {
   
   long b = System.currentTimeMillis();
   
-  dd(dc paramdc) {}
+  public GInterfaceDd(dc paramdc) {}
 }
 
 

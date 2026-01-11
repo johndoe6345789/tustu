@@ -7,7 +7,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public FileInXPackagelass FileInXPackage {
+public class FileInXPackage {
   private static c e = null;
   
   private File f = null;

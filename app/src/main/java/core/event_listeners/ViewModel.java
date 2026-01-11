@@ -84,7 +84,7 @@ public class b {
     for (j j : paramn)
       n1.add(j); 
     if (paramn.HInterfaceHotel())
-      for (String null : paramn.i())
+      for (String str1 : paramn.i())
         n1.AmInterfaceAlpha(str1, paramn.AmInterfaceFoxtrot(str1));  
     File file = paramFile.getParentFile();
     String str2 = "msl";
