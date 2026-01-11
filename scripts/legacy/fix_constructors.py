@@ -1,105 +1,65 @@
 #!/usr/bin/env python3
 """
-Fix obfuscated constructor names in Java files.
-Finds patterns like: `  aI(ClassName param) {}` 
-and replaces them with proper constructor names matching the class name.
+Fix constructor declarations in Java files where methods have lowercase names
+matching patterns like: a(X paramX) or b(Y paramY) but should be constructors.
 """
 
+import os
 import re
 import sys
-from pathlib import Path
 
-def fix_constructors_in_file(file_path):
-    """Fix constructor names in a single Java file."""
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        original_content = content
-        
-        # Find the class name from the file
-        # Match: class ClassName ... or public class ClassName ...
-        class_match = re.search(r'\b(?:public\s+|private\s+|protected\s+)?class\s+(\w+)', content)
-        if not class_match:
-            return False, "No class definition found"
-        
-        class_name = class_match.group(1)
-        
-        # Find obfuscated constructors - patterns like:
-        #   aI(ClassName param) {}
-        #   a(Type param) {
-        # These are lines starting with 2 spaces, followed by a lowercase identifier (not a keyword),
-        # followed by parentheses (constructor-like), but the identifier doesn't match class name
-        
-        # Pattern to match potential obfuscated constructors
-        # Look for: start of line, optional access modifier, short identifier (1-3 chars starting with lowercase), 
-        # followed by parameter list
-        # Updated to catch patterns like aD, aI, az, etc. (1-2 chars, starting lowercase)
-        pattern = r'^(\s+)(public\s+|private\s+|protected\s+)?([a-z][A-Za-z]?)\(([^)]*)\)\s*\{'
-        
-        changes_made = 0
-        lines = content.split('\n')
-        new_lines = []
-        
-        for i, line in enumerate(lines):
-            match = re.match(pattern, line)
-            if match:
-                indent = match.group(1)
-                access_modifier = match.group(2) if match.group(2) else ""
-                potential_constructor = match.group(3)
-                params = match.group(4)
-                
-                # Check if this looks like an obfuscated constructor
-                # (short name, not matching class name, has parameters that might include class types)
-                if potential_constructor != class_name and len(potential_constructor) <= 2:
-                    # Check if parameters contain a class type (capitalized word)
-                    # or if there are no parameters (default constructor)
-                    if not params.strip() or re.search(r'\b[A-Z]\w+', params):
-                        # This looks like an obfuscated constructor
-                        new_line = line.replace(f'{indent}{access_modifier}{potential_constructor}(', 
-                                               f'{indent}{access_modifier}{class_name}(')
-                        new_lines.append(new_line)
-                        changes_made += 1
-                        continue
-            
-            new_lines.append(line)
-        
-        if changes_made > 0:
-            new_content = '\n'.join(new_lines)
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            return True, f"Fixed {changes_made} constructor(s)"
-        
-        return False, "No changes needed"
-        
-    except Exception as e:
-        return False, f"Error: {str(e)}"
+def fix_constructor(file_path):
+    """Fix constructor declarations in a Java file."""
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        content = f.read()
+    
+    # Extract class name from file
+    filename = os.path.basename(file_path)
+    expected_class_name = filename.replace('.java', '')
+    
+    # Find the class declaration
+    class_match = re.search(r'class\s+(\w+)', content)
+    if not class_match:
+        return False
+    
+    actual_class_name = class_match.group(1)
+    
+    # Pattern: lowercase method name followed by constructor-like parameters
+    # Examples: c(b paramb) {}, d(b paramb) {}, etc.
+    pattern = r'(\n\s+)([a-z][A-Z]?)\(([^)]+)\)\s*\{\}'
+    
+    def replace_constructor(match):
+        indent = match.group(1)
+        method_name = match.group(2)
+        params = match.group(3)
+        # Replace with actual class name
+        return f"{indent}{actual_class_name}({params}) {{}}"
+    
+    new_content = re.sub(pattern, replace_constructor, content)
+    
+    if new_content != content:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        return True
+    
+    return False
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python fix_constructors.py <file_or_directory>")
-        sys.exit(1)
+    base_path = "/home/rewrich/Documents/GitHub/tustu/app/src/main/java"
     
-    path = Path(sys.argv[1])
+    fixed_count = 0
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            if file.endswith('.java'):
+                file_path = os.path.join(root, file)
+                try:
+                    if fix_constructor(file_path):
+                        fixed_count += 1
+                        print(f"Fixed: {file_path}")
+                except Exception as e:
+                    print(f"Error processing {file_path}: {e}", file=sys.stderr)
     
-    if path.is_file():
-        files = [path]
-    elif path.is_dir():
-        files = list(path.rglob("*.java"))
-    else:
-        print(f"Error: {path} is not a valid file or directory")
-        sys.exit(1)
-    
-    total_fixed = 0
-    total_files = len(files)
-    
-    for java_file in files:
-        changed, message = fix_constructors_in_file(java_file)
-        if changed:
-            print(f"✓ {java_file.relative_to(path.parent if path.is_file() else path)}: {message}")
-            total_fixed += 1
-    
-    print(f"\nFixed {total_fixed} out of {total_files} files")
+    print(f"\nTotal files fixed: {fixed_count}")
 
 if __name__ == "__main__":
     main()
