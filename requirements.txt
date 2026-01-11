@@ -1,0 +1,3 @@
+# Requirements for Registration Key Generator GUI
+
+PyQt6>=6.6.0
