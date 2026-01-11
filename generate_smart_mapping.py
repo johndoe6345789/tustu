@@ -62,16 +62,37 @@ def extract_class_info(filepath, content):
     info['field_names'] = [f for f in field_names if len(f) > 1][:10]
     
     # Extract string literals for domain understanding
-    string_literals = re.findall(r'"([^"]{5,40})"', content)  # 5-40 char strings
-    info['string_literals'] = string_literals[:5]
+    string_literals = re.findall(r'"([^"]{3,40})"', content)  # 3-40 char strings
+    info['string_literals'] = string_literals[:10]
     
     # Extract imported classes (just the class name, not full package)
     imports = re.findall(r'import\s+[\w.]+\.(\w+);', content)
-    info['imported_classes'] = [i for i in imports if len(i) > 2][:10]
+    info['imported_classes'] = [i for i in imports if len(i) > 2][:15]
     
     # Extract instantiated classes (new ClassName())
     instantiations = re.findall(r'new\s+(\w+)\s*\(', content)
-    info['instantiated_classes'] = [i for i in instantiations if len(i) > 2][:10]
+    info['instantiated_classes'] = [i for i in instantiations if len(i) > 2][:15]
+    
+    # Extract method parameter types for more context
+    method_params = re.findall(r'\w+\s+\w+\s*\(([^)]*)\)', content)
+    param_types = []
+    for params in method_params:
+        if params.strip():
+            types = re.findall(r'(\w+)\s+\w+', params)
+            param_types.extend([t for t in types if len(t) > 2])
+    info['param_types'] = list(set(param_types))[:10]
+    
+    # Extract method return types
+    return_types = re.findall(r'(?:public|private|protected)\s+(?:static\s+)?(\w+)\s+\w+\s*\(', content)
+    info['return_types'] = [r for r in return_types if len(r) > 2 and r not in ['void', 'int', 'long', 'boolean', 'double', 'float']][:10]
+    
+    # Look for specific patterns in method bodies
+    info['uses_thread'] = 'Thread' in content or 'Runnable' in content or 'ExecutorService' in content
+    info['uses_io'] = 'InputStream' in content or 'OutputStream' in content or 'Reader' in content or 'Writer' in content
+    info['uses_network'] = 'Socket' in content or 'ServerSocket' in content or 'URL' in content or 'HttpURLConnection' in content
+    info['uses_swing'] = 'JFrame' in content or 'JPanel' in content or 'JButton' in content or 'JTable' in content
+    info['uses_collection'] = 'List' in content or 'Map' in content or 'Set' in content
+    info['uses_serialization'] = 'Serializable' in content or 'ObjectInputStream' in content or 'ObjectOutputStream' in content
     
     # Try to infer specific name from content
     specific_name = None
