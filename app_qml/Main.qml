@@ -24,11 +24,14 @@ ApplicationWindow {
         
         Menu {
             title: "&Tools"
-            MenuItem { text: "Calibrate TPS" }
-            MenuItem { text: "Reset Control Unit" }
-            MenuItem { text: "Tooth Logger" }
+            MenuItem { text: "Calibrate TPS"; onTriggered: statusLabel.text = "TPS Calibration Started" }
+            MenuItem { text: "Reset Control Unit"; onTriggered: resetDialog.open() }
+            MenuItem { text: "Tooth Logger"; onTriggered: statusLabel.text = "Tooth Logger Active" }
             MenuSeparator {}
-            MenuItem { text: "Firmware Update..." }
+            MenuItem { text: "Burn to ECU"; onTriggered: burnDialog.open() }
+            MenuItem { text: "Get from ECU" }
+            MenuSeparator {}
+            MenuItem { text: "Firmware Update..."; onTriggered: firmwareDialog.open() }
         }
         
         Menu {
@@ -56,11 +59,16 @@ ApplicationWindow {
         
         Menu {
             title: "&Help"
-            MenuItem { text: "Documentation" }
-            MenuItem { text: "Forum" }
+            MenuItem { text: "Hot Keys"; onTriggered: hotKeysDialog.open() }
+            MenuItem { text: "Help Topics"; onTriggered: Qt.openUrlExternally("https://www.efianalytics.com/TunerStudio/help/") }
+            MenuItem { text: "Online Help"; onTriggered: Qt.openUrlExternally("https://www.efianalytics.com/TunerStudio/") }
             MenuSeparator {}
-            MenuItem { text: "About" }
-            MenuItem { text: "Register..." }
+            MenuItem { text: "Check for Updates" }
+            MenuSeparator {}
+            MenuItem { text: "Purchase Registration"; onTriggered: Qt.openUrlExternally("https://www.efianalytics.com/register/") }
+            MenuItem { text: "Enter Registration..."; onTriggered: registrationDialog.open() }
+            MenuSeparator {}
+            MenuItem { text: "About"; onTriggered: aboutDialog.open() }
         }
     }
     
@@ -73,7 +81,16 @@ ApplicationWindow {
             ToolButton {
                 text: "Connect"
                 icon.source: "qrc:/icons/connect.png"
-                onClicked: statusLabel.text = "Connecting..."
+                checkable: true
+                checked: false
+                onClicked: {
+                    if (checked) {
+                        connectionDialog.open()
+                    } else {
+                        statusLabel.text = "Disconnected"
+                        statusLabel.color = "#ff6b6b"
+                    }
+                }
             }
             
             ToolSeparator {}
@@ -231,4 +248,270 @@ ApplicationWindow {
             }
         }
     }
-}
+    
+    // About Dialog
+    Dialog {
+        id: aboutDialog
+        title: "About TunerStudio MS"
+        modal: true
+        anchors.centerIn: parent
+        standardButtons: Dialog.Ok
+        
+        ColumnLayout {
+            spacing: 15
+            width: 400
+            
+            Image {
+                Layout.alignment: Qt.AlignHCenter
+                source: "data:image/svg+xml,%3Csvg width='64' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='%231976D2' width='64' height='64' rx='8'/%3E%3Ctext x='50%25' y='50%25' font-size='32' fill='white' text-anchor='middle' dy='.3em'%3ETS%3C/text%3E%3C/svg%3E"
+                width: 64
+                height: 64
+            }
+            
+            Label {
+                text: "TunerStudio MS"
+                font.pixelSize: 24
+                font.bold: true
+                Layout.alignment: Qt.AlignHCenter
+            }
+            
+            Label {
+                text: "Version 3.1.06 (Build Date: 2025.01.11)"
+                font.pixelSize: 12
+                Layout.alignment: Qt.AlignHCenter
+            }
+            
+            Rectangle {
+                Layout.fillWidth: true
+                height: 1
+                color: "#ccc"
+            }
+            
+            Label {
+                text: "© 2006-2026 EFI Analytics, LLC"
+                Layout.alignment: Qt.AlignHCenter
+            }
+            
+            Label {
+                text: "Engine Management & Data Logging Software"
+                font.italic: true
+                Layout.alignment: Qt.AlignHCenter
+            }
+            
+            Label {
+                text: "www.efianalytics.com"
+                color: "#1976D2"
+                Layout.alignment: Qt.AlignHCenter
+                
+                MouseArea {
+                    anchors.fill: parent
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: Qt.openUrlExternally("https://www.efianalytics.com")
+                }
+            }
+        }
+    }
+    
+    // Hot Keys Dialog
+    Dialog {
+        id: hotKeysDialog
+        title: "Hot Keys"
+        modal: true
+        width: 500
+        height: 400
+        standardButtons: Dialog.Ok
+        
+        ScrollView {
+            anchors.fill: parent
+            
+            GridLayout {
+                columns: 2
+                rowSpacing: 8
+                columnSpacing: 20
+                
+                Label { text: "Ctrl+O"; font.bold: true }
+                Label { text: "Open Log File" }
+                
+                Label { text: "Ctrl+S"; font.bold: true }
+                Label { text: "Save Configuration" }
+                
+                Label { text: "F2"; font.bold: true }
+                Label { text: "Start Data Logging" }
+                
+                Label { text: "F3"; font.bold: true }
+                Label { text: "Stop Data Logging" }
+                
+                Label { text: "Space"; font.bold: true }
+                Label { text: "Pause/Resume Playback" }
+                
+                Label { text: "Left Arrow"; font.bold: true }
+                Label { text: "Step Backward" }
+                
+                Label { text: "Right Arrow"; font.bold: true }
+                Label { text: "Step Forward" }
+                
+                Label { text: "Home"; font.bold: true }
+                Label { text: "Jump to Start" }
+                
+                Label { text: "End"; font.bold: true }
+                Label { text: "Jump to End" }
+                
+                Label { text: "Ctrl+A"; font.bold: true }
+                Label { text: "About" }
+                
+                Label { text: "Ctrl+Q"; font.bold: true }
+                Label { text: "Quit" }
+            }
+        }
+    }
+    
+    // Registration Dialog Loader
+    Loader {
+        id: registrationDialogLoader
+        active: false
+        source: "RegistrationDialog.qml"
+        
+        onLoaded: {
+            item.visible = true
+            item.registrationComplete.connect(function(firstName, lastName, email, key, edition, serial) {
+                statusLabel.text = "Registration accepted for " + firstName + " " + lastName
+                statusLabel.color = "#2ecc71"
+            })
+        }
+    }
+    
+    function registrationDialog_open() {
+        registrationDialogLoader.active = true
+    }
+    
+    property var registrationDialog: QtObject {
+        function open() {
+            registrationDialogLoader.active = true
+        }
+    }
+    
+    // Reset ECU Dialog
+    Dialog {
+        id: resetDialog
+        title: "Reset ECU"
+        modal: true
+        standardButtons: Dialog.Yes | Dialog.No
+        
+        Label {
+            text: "Are you sure you want to reset the ECU?\n\nThis will restart the controller."
+            wrapMode: Text.WordWrap
+        }
+        
+        onAccepted: {
+            statusLabel.text = "ECU Reset Command Sent"
+        }
+    }
+    
+    // Burn to ECU Dialog
+    Dialog {
+        id: burnDialog
+        title: "Burn to ECU"
+        modal: true
+        standardButtons: Dialog.Ok | Dialog.Cancel
+        
+        ColumnLayout {
+            spacing: 10
+            
+            Label {
+                text: "Burn current table values to ECU?"
+                font.bold: true
+            }
+            
+            Label {
+                text: "This will write all modified table values\nto the ECU's non-volatile memory."
+                wrapMode: Text.WordWrap
+            }
+            
+            CheckBox {
+                text: "Verify after burn"
+                checked: true
+            }
+        }
+        
+        onAccepted: {
+            statusLabel.text = "Burning to ECU..."
+            burnTimer.start()
+        }
+        
+        Timer {
+            id: burnTimer
+            interval: 2000
+            onTriggered: {
+                statusLabel.text = "Burn Complete"
+                statusLabel.color = "#2ecc71"
+            }
+        }
+    }
+    
+    // Firmware Update Dialog  
+    Dialog {
+        id: firmwareDialog
+        title: "Firmware Update"
+        modal: true
+        width: 500
+        standardButtons: Dialog.Close
+        
+        ColumnLayout {
+            anchors.fill: parent
+            spacing: 15
+            
+            Label {
+                text: "Firmware Update Manager"
+                font.pixelSize: 18
+                font.bold: true
+            }
+            
+            GroupBox {
+                title: "Current Firmware"
+                Layout.fillWidth: true
+                
+                GridLayout {
+                    columns: 2
+                    rowSpacing: 5
+                    columnSpacing: 10
+                    
+                    Label { text: "Version:" }
+                    Label { text: "MS2Extra 3.4.2"; font.bold: true }
+                    
+                    Label { text: "Build Date:" }
+                    Label { text: "2024-12-15" }
+                }
+            }
+            
+            GroupBox {
+                title: "Update Options"
+                Layout.fillWidth: true
+                
+                ColumnLayout {
+                    spacing: 10
+                    
+                    RadioButton {
+                        text: "Check for updates online"
+                        checked: true
+                    }
+                    
+                    RadioButton {
+                        text: "Load firmware from file"
+                    }
+                    
+                    Button {
+                        text: "Browse..."
+                        enabled: false
+                    }
+                }
+            }
+            
+            Label {
+                text: "⚠️ Warning: Never disconnect power during firmware update!"
+                color: "#e74c3c"
+                font.bold: true
+                Layout.fillWidth: true
+                wrapMode: Text.WordWrap
+            }
+        }
+    }
