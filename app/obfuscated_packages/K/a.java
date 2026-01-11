@@ -12,12 +12,12 @@ import G.bv;
 import G.c;
 import G.db;
 
-public class a extends bv {
+public class AccelEnrichmentWizard extends bv {
   private String a = "";
   
   private R f = null;
   
-  public a(R paramR, int paramInt, boolean paramBoolean) {
+  public AccelEnrichmentWizard(R paramR, int paramInt, boolean paramBoolean) {
     if (paramInt > 0)
       this.a = paramInt + ""; 
     this.f = paramR;

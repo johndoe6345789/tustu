@@ -8,14 +8,14 @@ import bH.D;
 import bH.c;
 import java.io.Serializable;
 
-public class d implements cO, Serializable {
+public class ProtocolVersionNegotiator implements cO, Serializable {
   bY a = null;
-  
+
   int b = -1;
-  
-  e c = null;
-  
-  public d() {
+
+  BlockingFactorHolder c = null;
+
+  public ProtocolVersionNegotiator() {
     this.a = new bY();
     this.a.a("F");
     this.a.e("I");

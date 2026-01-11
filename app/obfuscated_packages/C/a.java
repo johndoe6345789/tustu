@@ -85,7 +85,7 @@ public class LocalizationManager {
     return (str == null || str.equals("")) ? paramString2 : str;
   }
   
-  public void b(e parame) {
+  public void b(TranslationMapLoader parame) {
     this.j = parame;
   }
   

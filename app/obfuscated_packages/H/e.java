@@ -10,12 +10,12 @@ import G.bb;
 import G.r;
 import java.io.Serializable;
 
-public class e implements aI, Serializable {
+public class ReplayDataSource implements aI, Serializable {
   private String a;
   
   private String b;
   
-  public e(R paramR) {
+  public ReplayDataSource(R paramR) {
     this.a = paramR.c();
     this.b = paramR.c() + "_Replay";
   }

@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class l extends a {
+public class TcpWifiConnection extends a {
   public static String b = "TCP/IP - WiFi driver";
   
   private int l = 0;
@@ -75,7 +75,7 @@ public class l extends a {
     } catch (Exception exception) {
       b(0);
       b();
-      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(TcpWifiConnection.class.getName()).log(Level.SEVERE, (String)null, exception);
       throw new G.l("Unable to open device: " + exception.getLocalizedMessage() + ", " + v());
     } 
   }
@@ -130,7 +130,7 @@ public class l extends a {
           this.m = null;
         } catch (Exception exception) {
           D.c("Error closing TCP Connection");
-          Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, exception);
+          Logger.getLogger(TcpWifiConnection.class.getName()).log(Level.SEVERE, (String)null, exception);
         } 
       } 
     } finally {

@@ -51,7 +51,7 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
   }
   
   protected void c() {
-    for (e e : this.b) {
+    for (ConnectionEventListener e : this.b) {
       try {
         e.b();
       } catch (Exception exception) {
@@ -62,7 +62,7 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
   }
   
   protected void d() {
-    for (e e : this.b) {
+    for (ConnectionEventListener e : this.b) {
       try {
         e.a();
       } catch (Exception exception) {
@@ -73,7 +73,7 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
   }
   
   protected void e() {
-    for (e e : this.b) {
+    for (ConnectionEventListener e : this.b) {
       try {
         e.e();
       } catch (Exception exception) {

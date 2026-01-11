@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class o extends a {
+public class UdpConnection extends a {
   public static String b = "UDP - User Datagram Protocol";
   
   private int k = 0;
@@ -33,9 +33,9 @@ public class o extends a {
   
   int e = 2000;
   
-  p f = null;
-  
-  r g = null;
+  UdpInputStream f = null;
+
+  UdpOutputStream g = null;
   
   List h = null;
   
@@ -61,8 +61,8 @@ public class o extends a {
       this.l = t();
       this.l.setSoTimeout(A());
       this.l.setTrafficClass(20);
-      this.g = new r(this.l);
-      this.f = new p(this.l, this.g);
+      this.g = new UdpOutputStream(this.l);
+      this.f = new UdpInputStream(this.l, this.g);
       b(3);
       a();
     } catch (UnknownHostException unknownHostException) {
@@ -76,7 +76,7 @@ public class o extends a {
     } catch (Exception exception) {
       b(0);
       b();
-      Logger.getLogger(o.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(UdpConnection.class.getName()).log(Level.SEVERE, (String)null, exception);
       throw new l("Unable to open device: " + exception.getLocalizedMessage() + ", " + y());
     } 
   }
@@ -108,8 +108,8 @@ public class o extends a {
           }  
         D.c("Refresh socket to UDP Device: " + y());
         this.l = t();
-        this.g = new r(this.l);
-        this.f = new p(this.l, this.g);
+        this.g = new UdpOutputStream(this.l);
+        this.f = new UdpInputStream(this.l, this.g);
         bool = true;
       } catch (Exception exception) {
         exception.printStackTrace();
