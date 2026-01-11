@@ -262,8 +262,7 @@ class KeyGeneratorTab(QWidget):
             validate_btn.clicked.connect(self.validate_key)
             button_layout.addWidget(validate_btn)
         
-        layout.addLayout(button_layoutself.generate_key)
-        layout.addWidget(generate_btn)
+        layout.addLayout(button_layout)
         
         # Output group
         output_group = QGroupBox("Generated Registration Key")
@@ -291,6 +290,30 @@ class KeyGeneratorTab(QWidget):
         try:
             # Get input values
             values = {key: widget.text().strip() for key, widget in self.inputs.items()}
+            
+            # Validate inputs
+            if not all(values.values()):
+                QMessageBox.warning(self, "Missing Input", "Please fill in all fields.")
+                return
+            
+            # Generate key
+            key = self.generator_func(**values)
+            
+            if key:
+                self.output.setPlainText(key)
+                self.output.setStyleSheet("background-color: #e8f5e9; color: #2e7d32;")
+            else:
+                QMessageBox.error(self, "Generation Failed", "Failed to generate registration key.")
+                
+        except Exception as e:
+            QMessageBox.critical(self, "Error", f"An error occurred: {str(e)}")
+    
+    def copy_to_clipboard(self):
+        """Copy the generated key to clipboard"""
+        text = self.output.toPlainText()
+        if text:
+            QApplication.clipboard().setText(text)
+            QMessageBox.information(self, "Copied", "Registration key copied to clipboard!")
     
     def validate_key(self):
         """Validate a registration key (mimics Java validation logic)"""
@@ -357,30 +380,6 @@ class KeyGeneratorTab(QWidget):
                 
         except Exception as e:
             QMessageBox.critical(self, "Validation Error", f"An error occurred during validation: {str(e)}")
-            
-            # Validate inputs
-            if not all(values.values()):
-                QMessageBox.warning(self, "Missing Input", "Please fill in all fields.")
-                return
-            
-            # Generate key
-            key = self.generator_func(**values)
-            
-            if key:
-                self.output.setPlainText(key)
-                self.output.setStyleSheet("background-color: #e8f5e9; color: #2e7d32;")
-            else:
-                QMessageBox.error(self, "Generation Failed", "Failed to generate registration key.")
-                
-        except Exception as e:
-            QMessageBox.critical(self, "Error", f"An error occurred: {str(e)}")
-    
-    def copy_to_clipboard(self):
-        """Copy the generated key to clipboard"""
-        text = self.output.toPlainText()
-        if text:
-            QApplication.clipboard().setText(text)
-            QMessageBox.information(self, "Copied", "Registration key copied to clipboard!")
 
 
 class EmailParserTab(QWidget):
@@ -407,33 +406,10 @@ class EmailParserTab(QWidget):
         layout.addWidget(instructions)
         
         # Input area
-        inButton layout
-        button_layout = QHBoxLayout()
+        input_group = QGroupBox("Paste Registration Email Here")
+        input_layout = QVBoxLayout()
         
-        # Copy button
-        copy_btn = QPushButton("Copy Registration Key")
-        copy_btn.clicked.connect(self.copy_key)
-        button_layout.addWidget(copy_btn)
-        
-        # Validate button
-        validate_btn = QPushButton("Validate Key")
-        validate_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #FF9800;
-                color: white;
-                padding: 8px;
-                font-size: 13px;
-                font-weight: bold;
-                border-radius: 3px;
-            }
-            QPushButton:hover {
-                background-color: #F57C00;
-            }
-        """)
-        validate_btn.clicked.connect(self.validate_parsed_key)
-        button_layout.addWidget(validate_btn)
-        
-        layout.addLayout(button_layoutit()
+        self.email_text = QTextEdit()
         self.email_text.setPlaceholderText(
             "[Registration]\n"
             "First Name: John\n"
@@ -496,8 +472,120 @@ class EmailParserTab(QWidget):
         output_group.setLayout(output_layout)
         layout.addWidget(output_group)
         
+        # Button layout
+        button_layout = QHBoxLayout()
+        
         # Copy button
         copy_btn = QPushButton("Copy Registration Key")
+        copy_btn.clicked.connect(self.copy_key)
+        button_layout.addWidget(copy_btn)
+        
+        # Validate button
+        validate_btn = QPushButton("Validate Key")
+        validate_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #FF9800;
+                color: white;
+                padding: 8px;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+            QPushButton:hover {
+                background-color: #F57C00;
+            }
+        """)
+        validate_btn.clicked.connect(self.validate_parsed_key)
+        button_layout.addWidget(validate_btn)
+        
+        layout.addLayout(button_layout)
+        
+        layout.addStretch()
+        self.setLayout(layout)
+    
+    def parse_email(self):
+        """Parse registration information from email text"""
+        text = self.email_text.toPlainText()
+        
+        if not text.strip():
+            QMessageBox.warning(self, "Empty Input", "Please paste the registration email text.")
+            return
+        
+        try:
+            # Parse the email text
+            in_registration = False
+            first_name = ""
+            last_name = ""
+            email = ""
+            serial = ""
+            reg_key = ""
+            
+            for line in text.split('\n'):
+                line = line.strip()
+                
+                if '[Registration]' in line or line.startswith('Registration'):
+                    in_registration = True
+                    continue
+                
+                if '[End Registration]' in line or not in_registration:
+                    if '[End Registration]' in line:
+                        break
+                    continue
+                
+                if in_registration:
+                    # Parse different fields
+                    if line.startswith('First Name') and ':' in line:
+                        first_name = line.split(':', 1)[1].strip()
+                    elif line.startswith('Last Name') and ':' in line:
+                        last_name = line.split(':', 1)[1].strip()
+                    elif 'email' in line.lower() and ':' in line:
+                        email = line.split(':', 1)[1].strip()
+                    elif 'Serial Number' in line and ':' in line:
+                        serial = line.split(':', 1)[1].strip()
+                    elif 'Registration Key' in line and ':' in line:
+                        key_part = line.split(':', 1)[1].strip()
+                        reg_key = key_part if key_part else reg_key
+                    elif reg_key and line and not ':' in line:
+                        # Continue multi-line registration key
+                        reg_key += line.strip()
+            
+            # Update output fields
+            self.first_name_output.setText(first_name)
+            self.last_name_output.setText(last_name)
+            self.email_output.setText(email)
+            self.serial_output.setText(serial)
+            self.key_output.setPlainText(reg_key)
+            
+            if first_name or last_name or email or reg_key:
+                self.key_output.setStyleSheet("background-color: #e8f5e9; color: #2e7d32;")
+                QMessageBox.information(
+                    self, 
+                    "Success", 
+                    "Registration information parsed successfully!"
+                )
+            else:
+                QMessageBox.warning(
+                    self,
+                    "No Data Found",
+                    "Could not find registration information in the pasted text.\n\n"
+                    "Make sure the text contains fields like:\n"
+                    "First Name: ...\n"
+                    "Last Name: ...\n"
+                    "Registered email: ...\n"
+                    "Registration Key: ..."
+                )
+        
+        except Exception as e:
+            QMessageBox.critical(self, "Parse Error", f"Error parsing email: {str(e)}")
+    
+    def copy_key(self):
+        """Copy registration key to clipboard"""
+        key = self.key_output.toPlainText()
+        if key:
+            QApplication.clipboard().setText(key)
+            QMessageBox.information(self, "Copied", "Registration key copied to clipboard!")
+        else:
+            QMessageBox.warning(self, "No Key", "No registration key to copy.")
     
     def validate_parsed_key(self):
         """Validate the parsed registration key"""
@@ -631,8 +719,7 @@ class EmailParserTab(QWidget):
                 if in_registration:
                     # Parse different fields
                     if line.startswith('First Name') and ':' in line:
-                        first_name = line.split(':', 1),
-            supports_validation=False  # Obfuscation only, no key validation[1].strip()
+                        first_name = line.split(':', 1)[1].strip()
                     elif line.startswith('Last Name') and ':' in line:
                         last_name = line.split(':', 1)[1].strip()
                     elif 'email' in line.lower() and ':' in line:
