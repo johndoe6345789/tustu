@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: lib/EFIA_Core.jar lib/EFIA_PC.jar lib/MegaLogViewer.jar li
- b/TunerStudioPluginAPI.jar lib/bluecove-2.1.1.jar lib/efiaServicesCli
- ent.jar lib/jssc.jar lib/gson-2.9.0.jar lib/tinylaf.jar lib/JavaFTD2X
- X.jar lib/zip4j_1.3.1.jar lib/commons-net-3.6.jar lib/commons-math3-3
- .6.1.jar lib/icepdf-core.jar lib/icepdf-viewer.jar lib/RXTXcomm.jar
-Main-Class: TunerStudio
-

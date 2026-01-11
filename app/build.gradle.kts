@@ -11,18 +11,14 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
-// Configure source directories to use app/ directly instead of src/main/java
+// Use standard Gradle directory structure
 sourceSets {
     main {
         java {
-            // Set the app folder as the source root
-            srcDirs(".")
-            // Exclude build and other non-source directories
-            exclude("build/**", "docs/**", "lib/**", "META-INF/**", "icons/**", "themes/**")
+            srcDirs("src/main/java")
         }
         resources {
-            srcDirs(".", "icons", "themes", "META-INF")
-            exclude("**/*.java", "build/**")
+            srcDirs("src/main/resources")
         }
     }
 }
