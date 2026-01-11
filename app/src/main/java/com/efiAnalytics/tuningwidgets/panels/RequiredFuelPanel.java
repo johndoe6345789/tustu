@@ -84,7 +84,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "divider" + this.b, this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "injOpen" + this.b, this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "battFac" + this.b, this);
-    } RequiredFuelPanel(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Unable to register all parameters.", (Exception)ExceptionInVPackage, this);
     } 
     RequiredFuelPanel();
@@ -106,9 +106,9 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
         return;
       } 
       aM2.ExceptionInVPackage(this.c.p(), ExceptionExtensionGetmessage);
-    } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
-    } RequiredFuelPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       D.ExceptionInVPackage("Can not set value", (Exception)ExceptionExtensionGetmessage, this);
     } 
   }
@@ -128,7 +128,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     this.ExceptionExtensionGetmessage.ExceptionExtensionGetmessage();
     try {
       RequiredFuelPanel();
-    } RequiredFuelPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       bV.d(ExceptionExtensionGetmessage.getMessage(), (Component)this);
       this.ExceptionExtensionGetmessage.i();
     } 
@@ -228,7 +228,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     this.ExceptionExtensionGetmessage.c(false);
     try {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), "reqFuel" + this.b, (GInterfaceAn)this.ExceptionExtensionGetmessage);
-    } RequiredFuelPanel(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Error subscribing to reqFuel" + this.b, (Exception)ExceptionInVPackage, this);
     } 
     jPanel3.add((Component)this.i);
@@ -240,7 +240,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
   private void RequiredFuelPanel() {
     try {
       RequiredFuelPanel();
-    } RequiredFuelPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       bV.d(ExceptionExtensionGetmessage.getMessage(), (Component)this);
       RequiredFuelPanel();
     } 
@@ -261,7 +261,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       double d4 = aM1.ExceptionExtensionGetmessage(this.c.p());
       double d5 = d1 * d2 * d3 / d4;
       aM3.ExceptionInVPackage(this.c.p(), d5);
-    } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
     } 
   }
@@ -291,7 +291,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
         double d1 = Manager.ExceptionExtensionGetmessage(this.c.p());
         if (d1 < 0.899D || d1 > 1.301D)
           bV.d("WARNING!!\n\nInjector Open Time is not within ExceptionInVPackage normal range.\nThe expected value is between 0.9 and 1.3 ms.\nThe typical value is 1.0", (Component)this); 
-      } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         bV.d("Error testing Injector Open Time", (Component)this);
       } 
     } else if (paramString2.startsWith("battFac" + this.b)) {
@@ -300,7 +300,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
         double d1 = Manager.ExceptionExtensionGetmessage(this.c.p());
         if (d1 < 0.099D || d1 > 0.201D)
           bV.d("WARNING!!\n\nBattery Voltage Correction is not within ExceptionInVPackage normal range.\nThe expected value is between 0.1 and 0.3 ms/V.\nThe typical value is 0.1", (Component)this); 
-      } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         bV.d("Error testing Battery Correction Factor", (Component)this);
       } 
     } 
@@ -323,9 +323,9 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       double d2 = aM4.ExceptionExtensionGetmessage(this.c.p());
       double d3 = (((d2 != 0.0D) ? 6000 : 12000) / i);
       aM3.ExceptionInVPackage(this.c.p(), d3);
-    } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
-    } RequiredFuelPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       D.ExceptionInVPackage("Value Out Of Bounds for rpmk, this shouldn't happen.\nPlease report it.", (Exception)ExceptionExtensionGetmessage, this);
     } 
     return true;
@@ -343,7 +343,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       double d4 = aM1.ExceptionExtensionGetmessage(this.c.p());
       double d5 = d1 * d4 / d2 * d3;
       this.i.setText(X.b(d5, 1));
-    } RequiredFuelPanel(Exception exception) {
+    } catch (Exception exception) {
       exception.printStackTrace();
     } 
   }
@@ -351,7 +351,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
   public void RequiredFuelPanel() {
     try {
       this.c.p().d();
-    } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Error performing redo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }
@@ -359,7 +359,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
   public void RequiredFuelPanel() {
     try {
       this.c.p().c();
-    } RequiredFuelPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Error performing undo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }

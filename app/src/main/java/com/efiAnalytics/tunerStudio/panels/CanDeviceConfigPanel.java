@@ -132,7 +132,7 @@ public class CanDeviceConfigPanel extends JPanel {
       this.ThreadedFile.c(paramString);
       this.c.setText(paramString);
       CanDeviceConfigPanel(paramString);
-    } CanDeviceConfigPanel(V.a a1) {
+    } catch (V.a a1) {
       bV.CloneableImpl(SComponentGolf.b("Unable to load configuration settings.") + "\n" + a1.getLocalizedMessage(), this);
       a1.printStackTrace();
       this.ThreadedFile.c(str);
@@ -180,7 +180,7 @@ public class CanDeviceConfigPanel extends JPanel {
       CanDeviceConfigPanel(paramd.e());
       CanDeviceConfigPanel(true);
       this.f.setSelected(!paramd.f());
-    } CanDeviceConfigPanel(V.a a1) {
+    } catch (V.a a1) {
       bV.CloneableImpl(SComponentGolf.b("Unable to load configuration settings.") + "\n" + a1.getMessage(), this);
       a1.printStackTrace();
     } 
@@ -231,7 +231,7 @@ public class CanDeviceConfigPanel extends JPanel {
         return; 
       try {
         file = ThreadedFile.CloneableImpl(AeInterfaceMikeTostring.b());
-      } CanDeviceConfigPanel(V.a a1) {
+      } catch (V.a a1) {
         a1.printStackTrace();
       } 
       if (file != null && file.exists()) {
@@ -240,7 +240,7 @@ public class CanDeviceConfigPanel extends JPanel {
       } else {
         try {
           file = ThreadedExceptioninvpackage.a(AeInterfaceMikeTostring);
-        } CanDeviceConfigPanel(FileNotFoundException fileNotFoundException) {}
+        } catch (FileNotFoundException fileNotFoundException) {}
         if (file != null && file.exists()) {
           CanDeviceConfigPanel(file.getAbsolutePath());
           this.SComponentGolf.validate();

@@ -30,21 +30,21 @@ public class RealTimeDisplayPanel extends JPanel implements bc {
   x b = null;
   
   public RealTimeDisplayPanel(R paramR) {
-    this.ExceptionInVPackage = new RealTimeDisplayPanel(paramR);
-    this.b = new RealTimeDisplayPanel(paramR);
-    RealTimeDisplayPanel(BorderFactory.createTitledBorder(SComponentGolf.b("Real-Time Display")));
-    RealTimeDisplayPanel(new BorderLayout());
+    this.ExceptionInVPackage = new w(paramR);
+    this.b = new x(paramR);
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Real-Time Display")));
+    setLayout(new BorderLayout());
     Isoptimizeddrawingenabled Isoptimizeddrawingenabled = new Isoptimizeddrawingenabled();
     Isoptimizeddrawingenabled.setTabPlacement(3);
-    RealTimeDisplayPanel("Center", (Component)Isoptimizeddrawingenabled);
-    RealTimeDisplayPanel(new Dimension(800, 600));
-    RealTimeDisplayPanel(new Dimension(800, 600));
+    add("Center", (Component)Isoptimizeddrawingenabled);
+    setMinimumSize(new Dimension(800, 600));
+    setPreferredSize(new Dimension(800, 600));
     try {
-      Z z1 = (new RealTimeDisplayPanel()).b(paramR);
+      Z z1 = (new p()).b(paramR);
       this.b.ExceptionInVPackage(z1);
       Isoptimizeddrawingenabled.addTab(SComponentGolf.b("Summary"), (Component)this.b);
       this.b.setEnabled(false);
-    } RealTimeDisplayPanel(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Could not get Real-time display summary.");
     } 
     Z z = (new RealTimeDisplayPanel()).ExceptionInVPackage(paramR);

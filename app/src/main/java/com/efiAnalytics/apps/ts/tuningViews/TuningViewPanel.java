@@ -156,26 +156,26 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
   Stroke B = new BasicStroke(this.A);
   
   public TuningViewPanel() {
-    TuningViewPanel(true);
+    super(true);
     if (A.RInterfaceIndia().b()) {
-      TuningViewPanel(new TuningViewPanel());
-      TuningViewPanel(this.b);
-      TuningViewPanel(this.b);
-      TuningViewPanel(true);
-      TuningViewPanel(true);
+      setLayout(new BorderLayout());
+      addMouseListener(this.b);
+      addMouseMotionListener(this.b);
+      setDoubleBuffered(true);
+      setOpaque(true);
     } 
   }
   
-  public void TuningViewPanel() {
+  public void a() {
     TuneSettingsPanel tuneSettingsPanel = new TuneSettingsPanel();
     try {
       ExceptionInVPackage((TuneViewComponent)tuneSettingsPanel);
-    } TuningViewPanel(ExceptionInVPackage a1) {}
-    TuningViewPanel();
+    } catch (ExceptionInVPackage a1) {}
+    repaint();
   }
   
   public void ExceptionInVPackage(TuneViewComponent paramTuneViewComponent) {
-    TuningViewPanel(paramTuneViewComponent);
+    add(paramTuneViewComponent);
     if (T.ExceptionInVPackage().c() != null)
       paramTuneViewComponent.initializeComponents(); 
     paramTuneViewComponent.addMouseListener(this.ExceptionInVPackage);
@@ -406,9 +406,9 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     try {
       File file = (new TuningViewPanel()).ExceptionInVPackage(this, 800, 450);
       f.ExceptionInVPackage(file);
-    } TuningViewPanel(IOException iOException) {
+    } catch (IOException iOException) {
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } TuningViewPanel(ExceptionInVPackage a1) {
+    } catch (ExceptionInVPackage a1) {
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
     return f;
@@ -490,7 +490,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       TuningViewPanel(this) {
         g1.ExceptionInVPackage(f, file);
       } 
-    } TuningViewPanel(ExceptionInVPackage a1) {
+    } catch (ExceptionInVPackage a1) {
       bV.d("Error saving Tuning View.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 
   }
@@ -563,7 +563,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     for (TuneViewComponent tuneViewComponent : this.Q) {
       try {
         ExceptionInVPackage(tuneViewComponent);
-      } TuningViewPanel(ExceptionInVPackage a1) {
+      } catch (ExceptionInVPackage a1) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       } 
     } 
@@ -577,7 +577,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     SelectableTable selectableTable = new SelectableTable();
     try {
       ExceptionInVPackage((TuneViewComponent)selectableTable);
-    } TuningViewPanel(ExceptionInVPackage a1) {}
+    } catch (ExceptionInVPackage a1) {}
     TuningViewPanel();
   }
   
@@ -585,7 +585,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     TuneViewGaugeCluster tuneViewGaugeCluster = new TuneViewGaugeCluster();
     try {
       ExceptionInVPackage((TuneViewComponent)tuneViewGaugeCluster);
-    } TuningViewPanel(ExceptionInVPackage a1) {}
+    } catch (ExceptionInVPackage a1) {}
     TuningViewPanel();
   }
   
@@ -593,7 +593,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     TableCellCrossHair tableCellCrossHair = new TableCellCrossHair();
     try {
       ExceptionInVPackage((TuneViewComponent)tableCellCrossHair);
-    } TuningViewPanel(ExceptionInVPackage a1) {}
+    } catch (ExceptionInVPackage a1) {}
     TuningViewPanel();
   }
   
@@ -601,7 +601,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     BurnButtonTv burnButtonTv = new BurnButtonTv();
     try {
       ExceptionInVPackage((TuneViewComponent)burnButtonTv);
-    } TuningViewPanel(ExceptionInVPackage a1) {}
+    } catch (ExceptionInVPackage a1) {}
     TuningViewPanel();
   }
   
@@ -782,7 +782,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
       try {
         this.R = cO.ExceptionInVPackage().ExceptionInVPackage(cO.w);
         this.R = eJ.ExceptionInVPackage(this.R, this);
-      } TuningViewPanel(ExceptionInVPackage a1) {
+      } catch (ExceptionInVPackage a1) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       }  
     return this.R;

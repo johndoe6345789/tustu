@@ -301,7 +301,7 @@ public class ThreeDimensionalViewPanel extends JPanel implements eU {
     int i = -1;
     try {
       i = Integer.parseInt(paramString);
-    } ThreeDimensionalViewPanel(Exception exception) {}
+    } catch (Exception exception) {}
     return (i != -1) ? new Color(i) : null;
   }
   

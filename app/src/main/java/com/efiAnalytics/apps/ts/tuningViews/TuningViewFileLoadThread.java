@@ -19,7 +19,7 @@ class TuningViewFileLoadThread extends Thread {
     this.b = paramJ;
   }
   
-  public void TuningViewFileLoadThread() {
+  public void run() {
     F f1;
     if (this.d)
       D.c("Attempting to load ExceptionInVPackage TuningViewFile that has already been loaded"); 
@@ -33,12 +33,12 @@ class TuningViewFileLoadThread extends Thread {
         for (byte b = 0; b < this.c.h.size(); b++) {
           y y1 = this.c.h.get(b);
           if (y1.b.equals(this.b)) {
-            this.c.h.set(b, new TuningViewFileLoadThread(this.c, this.ExceptionInVPackage, this.b));
+            this.c.h.set(b, new y(this.c, this.ExceptionInVPackage, this.b));
             return;
           } 
         } 
       } 
-    } TuningViewFileLoadThread(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       bV.d("Failed to load Tune View File:\n" + ((this.ExceptionInVPackage.ExceptionInVPackage() != null) ? this.ExceptionInVPackage.ExceptionInVPackage().getAbsolutePath() : "null") + "\nError:\n" + ExceptionInVPackage.getMessage(), this.c.getParent());
       Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
       return;

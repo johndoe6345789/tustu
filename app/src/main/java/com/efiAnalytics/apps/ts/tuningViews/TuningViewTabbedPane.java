@@ -50,21 +50,21 @@ public class TuningViewTabbedPane extends Isoptimizeddrawingenabled implements S
   
   int j = 0;
   
-  public Isoptimizeddrawingenabled() {
-    TuningViewTabbedPane(3);
+  public TuningViewTabbedPane() {
+    super(3);
     this.e = !RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";LFDS;LFDS0943;L");
     if (!this.e) {
       Image image;
       try {
         image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.I, (Component)this, 16);
-      } TuningViewTabbedPane(ExceptionInVPackage a1) {
+      } catch (ExceptionInVPackage a1) {
         image = null;
-        Logger.getLogger(Isoptimizeddrawingenabled.class.getName()).log(Level.WARNING, "Failed to get TuningView Tab New image", (Throwable)a1);
+        Logger.getLogger(TuningViewTabbedPane.class.getName()).log(Level.WARNING, "Failed to get TuningView Tab New image", (Throwable)a1);
       } 
       ImageIcon imageIcon = new ImageIcon(image);
-      TuningViewTabbedPane("", imageIcon, new JPanel(), "Add Tuning View");
-      TuningViewTabbedPane(new TuningViewTabbedPane(this));
-      TuningViewTabbedPane(this.d);
+      addTab("", imageIcon, new JPanel(), "Add Tuning View");
+      addMouseListener(new D(this));
+      addChangeListener(this.d);
     } 
   }
   

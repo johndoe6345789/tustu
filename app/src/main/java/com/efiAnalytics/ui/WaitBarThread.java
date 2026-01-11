@@ -19,7 +19,7 @@ public class WaitBarThread extends Thread {
     while (this.a) {
       try {
         Thread.sleep(25L);
-      } WaitBarThread(InterruptedException interruptedException) {
+      } catch (InterruptedException interruptedException) {
         Logger.getLogger(fH.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
       } 
       this.b.c += 4;

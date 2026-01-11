@@ -44,18 +44,18 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
         arrayList.add(r); 
     } 
     try {
-      aa aa = new TuningViewController();
+      aa aa = new aa();
       aa.ExceptionInVPackage();
       List list = G.b(arrayList);
       this.ExceptionInVPackage.ExceptionInVPackage(list);
       D.c("Tuning View Files loaded in " + aa.d() + "ms.");
-    } TuningViewController(ExceptionInVPackage a1) {
+    } catch (ExceptionInVPackage a1) {
       bV.d("Unable to load Tuning View Tabs for this Project.\nError:\n" + a1.getMessage(), (Component)this.ExceptionInVPackage);
       Logger.getLogger(z.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
   }
   
-  public void TuningViewController() {}
+  public void a() {}
   
   public void ExceptionInVPackage(ExceptionInVPackage parama) {
     byte b = 0;
@@ -72,7 +72,7 @@ public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackag
         SComponentGolf SComponentGolf = new SComponentGolf();
         try {
           SComponentGolf.ExceptionInVPackage(f, file);
-        } TuningViewController(ExceptionInVPackage a1) {
+        } catch (ExceptionInVPackage a1) {
           bV.d(a1.getMessage(), ThreadedFile);
         } 
       } 

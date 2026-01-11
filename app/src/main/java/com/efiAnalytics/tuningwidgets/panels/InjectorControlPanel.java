@@ -64,7 +64,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "nCylinders", this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "nInjectors", this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "divider", this);
-    } InjectorControlPanel(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Unable to register all parameters.", (Exception)ExceptionInVPackage, this);
     } 
     InjectorControlPanel();
@@ -97,9 +97,9 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
       } 
       aM2.ExceptionInVPackage(this.b.p(), ExceptionExtensionGetmessage);
       return true;
-    } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
-    } InjectorControlPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       D.ExceptionInVPackage("Can not set value", (Exception)ExceptionExtensionGetmessage, this);
     } 
     return false;
@@ -190,7 +190,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
     this.f.c(false);
     try {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.b.c(), "reqFuel", (GInterfaceAn)this.f);
-    } InjectorControlPanel(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Error subscribing to reqFuel", (Exception)ExceptionInVPackage, this);
     } 
     jPanel3.add((Component)this.e);
@@ -218,9 +218,9 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
       double d4 = aM1.ExceptionExtensionGetmessage(this.b.p());
       double d5 = d1 * d2 * d3 / d4;
       aM3.ExceptionInVPackage(this.b.p(), d5);
-    } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-    } InjectorControlPanel(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       bV.d("ReqFuel " + ExceptionExtensionGetmessage.getMessage(), (Component)this);
       try {
         if (ExceptionExtensionGetmessage.ExceptionInVPackage() == 2) {
@@ -228,10 +228,10 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
         } else if (ExceptionExtensionGetmessage.ExceptionInVPackage() == 1) {
           aM3.ExceptionInVPackage(this.b.h(), aM3.s());
         } 
-      } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.ExceptionInVPackage("Error trying to set reqFuel.");
         ExceptionPrintstacktrace.printStackTrace();
-      } InjectorControlPanel(ExceptionExtensionGetmessage j1) {
+      } catch (ExceptionExtensionGetmessage j1) {
         D.ExceptionInVPackage("reset reqFuel but it is still out of bounds? This shouldn't happen.");
         j1.printStackTrace();
       } 
@@ -267,7 +267,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
       double d1 = aM1.ExceptionExtensionGetmessage(this.b.p()) / aM2.ExceptionExtensionGetmessage(this.b.p());
       int ExceptionExtensionGetmessage = (int)d1;
       this.ExceptionInVPackage.ExceptionInVPackage("" + ExceptionExtensionGetmessage);
-    } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
     } 
     return true;
@@ -285,7 +285,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
       double d4 = aM1.ExceptionExtensionGetmessage(this.b.p());
       double d5 = d1 * d4 / d2 * d3;
       this.e.setText(X.b(d5, 1));
-    } InjectorControlPanel(Exception exception) {
+    } catch (Exception exception) {
       exception.printStackTrace();
     } 
   }
@@ -293,7 +293,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
   public void InjectorControlPanel() {
     try {
       this.b.p().d();
-    } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Error performing redo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }
@@ -301,7 +301,7 @@ public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
   public void InjectorControlPanel() {
     try {
       this.b.p().c();
-    } InjectorControlPanel(ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Error performing undo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }

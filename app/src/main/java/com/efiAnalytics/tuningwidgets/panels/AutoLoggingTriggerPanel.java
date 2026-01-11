@@ -127,7 +127,7 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
       try {
         SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.HashMap);
         SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.c);
-      } AutoLoggingTriggerPanel(q q) {
+      } catch (q q) {
         bV.d("No Configuration Found: " + this.SInterfaceAlpha.c(), this.SInterfaceJuliet);
       }  
     super.close();
@@ -136,13 +136,13 @@ public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implemen
   public boolean AutoLoggingTriggerPanel() {
     try {
       RInterfaceIndia.SInterfaceAlpha(this.l.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
-    } AutoLoggingTriggerPanel(ExceptionInAxPackage u) {
+    } catch (ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Start Logging Expression") + ":" + this.l.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     try {
       RInterfaceIndia.SInterfaceAlpha(this.m.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
-    } AutoLoggingTriggerPanel(ExceptionInAxPackage u) {
+    } catch (ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Stop Logging Expression") + ":" + this.m.SInterfaceAlpha(), (Component)this);
       return false;
     } 

@@ -62,7 +62,7 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
     ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
-    } OutputChannelComboBox(ExceptionInVPackage ExceptionInVPackage) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
   }
@@ -99,16 +99,16 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
         } 
         try {
           this.m.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble2);
-        } OutputChannelComboBox(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
           bV.d("There is an error in your ini not allowing size to be set properly.", this);
         } 
         ExceptionInVPackage(SerializableImpl);
-      } OutputChannelComboBox(ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
         D.ExceptionInVPackage("Value Out of Bounds updating:" + SerializableImpl.aL() + " offset to " + this.b.aL());
         Logger.getLogger(C.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
-      } OutputChannelComboBox(ExceptionPrintstacktrace g1) {
+      } catch (ExceptionPrintstacktrace g1) {
         D.ExceptionInVPackage("Error updating:" + SerializableImpl.aL() + " offset to " + this.b.aL());
-      } OutputChannelComboBox(Exception exception) {
+      } catch (Exception exception) {
         String str1 = (SerializableImpl == null) ? "null" : SerializableImpl.aL();
         String str2 = (this.b == null) ? "null" : this.b.aL();
         D.ExceptionInVPackage("Unkown Error updating:" + str1 + " offset to " + str2);
@@ -159,7 +159,7 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
         } 
         if (!bool && OutputChannelComboBox() > 0)
           OutputChannelComboBox(getItemAt(0)); 
-      } OutputChannelComboBox(ExceptionPrintstacktrace g1) {
+      } catch (ExceptionPrintstacktrace g1) {
         g1.printStackTrace();
       }  
   }

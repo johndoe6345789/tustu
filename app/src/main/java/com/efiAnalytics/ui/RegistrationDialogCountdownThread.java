@@ -10,7 +10,7 @@ class RegistrationDialogCountdownThread extends Thread {
       this.a.b.setText(cT.a(this.a));
       try {
         Thread.sleep(1000L);
-      } RegistrationDialogCountdownThread(InterruptedException interruptedException) {}
+      } catch (InterruptedException interruptedException) {}
       cS.c(this.a.c);
     } 
     this.a.b.setText(cT.a(this.a));

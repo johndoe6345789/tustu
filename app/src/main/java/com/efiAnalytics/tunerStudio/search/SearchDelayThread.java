@@ -34,7 +34,7 @@ class SearchDelayThread extends Thread {
           } 
           D.c("waitTime < 0 ???");
         } 
-      } SearchDelayThread(InterruptedException interruptedException) {
+      } catch (InterruptedException interruptedException) {
         Logger.getLogger(m.class.getName()).log(Level.INFO, "Search Thread error", interruptedException);
       } 
       if (!this.e.d.equals(this.e.b.getText())) {
