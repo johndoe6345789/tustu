@@ -1,27 +1,27 @@
 package M;
 
-import a.b;
+import linear_algebra.Matrix;
 
 public class a {
-  protected b a;
+  protected Matrix a;
   
-  protected b b;
+  protected Matrix b;
   
-  protected b c;
+  protected Matrix c;
   
-  protected b d;
+  protected Matrix d;
   
-  protected b e;
+  protected Matrix e;
   
-  protected b f;
+  protected Matrix f;
   
-  protected b g;
+  protected Matrix g;
   
-  protected b h;
+  protected Matrix h;
   
-  protected b i;
+  protected Matrix i;
   
-  protected b j;
+  protected Matrix j;
   
   public static a a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4, double paramDouble5) {
     a a1 = new a();
@@ -41,47 +41,47 @@ public class a {
     this.j = this.c.c(this.i).c(this.c.f()).a(this.f);
   }
   
-  public void a(b paramb) {
-    b b1 = this.g.c(this.j).c(this.g.f()).a(this.h);
-    b b2 = this.j.c(this.g.f()).c(b1.g());
+  public void a(Matrix paramb) {
+    Matrix b1 = this.g.c(this.j).c(this.g.f()).a(this.h);
+    Matrix b2 = this.j.c(this.g.f()).c(b1.g());
     this.a = this.b.a(b2.c(paramb.b(this.g.c(this.b))));
-    b b3 = b.b(this.j.d(), this.j.e());
+    Matrix b3 = b.b(this.j.d(), this.j.e());
     this.i = b3.b(b2.c(this.g)).c(this.j);
   }
   
-  public void b(b paramb) {
+  public void b(Matrix paramb) {
     this.d = paramb;
   }
   
-  public void c(b paramb) {
+  public void c(Matrix paramb) {
     this.c = paramb;
   }
   
-  public void d(b paramb) {
+  public void d(Matrix paramb) {
     this.g = paramb;
   }
   
-  public void e(b paramb) {
+  public void e(Matrix paramb) {
     this.i = paramb;
   }
   
-  public void f(b paramb) {
+  public void f(Matrix paramb) {
     this.f = paramb;
   }
   
-  public void g(b paramb) {
+  public void g(Matrix paramb) {
     this.h = paramb;
   }
   
-  public void h(b paramb) {
+  public void h(Matrix paramb) {
     this.e = paramb;
   }
   
-  public b b() {
+  public Matrix b() {
     return this.a;
   }
   
-  public void i(b paramb) {
+  public void i(Matrix paramb) {
     this.a = paramb;
   }
 }

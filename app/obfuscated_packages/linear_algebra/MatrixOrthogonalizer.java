@@ -1,9 +1,9 @@
-package a;
+package linear_algebra;
 
 import b.a;
 import java.io.Serializable;
 
-public class c implements Serializable {
+public class MatrixOrthogonalizer implements Serializable {
   private double[][] a;
   
   private int b;
@@ -12,7 +12,7 @@ public class c implements Serializable {
   
   private double[] d;
   
-  public c(b paramb) {
+  public MatrixOrthogonalizer(Matrix paramb) {
     this.a = paramb.c();
     this.b = paramb.d();
     this.c = paramb.e();
@@ -50,7 +50,7 @@ public class c implements Serializable {
     return true;
   }
   
-  public b a(b paramb) {
+  public Matrix a(Matrix paramb) {
     if (paramb.d() != this.b)
       throw new IllegalArgumentException("Matrix row dimensions must agree."); 
     if (!a())
@@ -78,7 +78,7 @@ public class c implements Serializable {
           arrayOfDouble[b1][b2] = arrayOfDouble[b1][b2] - arrayOfDouble[j][b2] * this.a[b1][j]; 
       } 
     } 
-    return (new b(arrayOfDouble, this.c, i)).a(0, this.c - 1, 0, i - 1);
+    return (new Matrix(arrayOfDouble, this.c, i)).a(0, this.c - 1, 0, i - 1);
   }
 }
 

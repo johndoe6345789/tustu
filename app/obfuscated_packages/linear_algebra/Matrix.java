@@ -1,21 +1,21 @@
-package a;
+package linear_algebra;
 
 import java.io.Serializable;
 
-public class b implements Serializable, Cloneable {
+public class Matrix implements Serializable, Cloneable {
   private double[][] a;
   
   private int b;
   
   private int c;
   
-  public b(int paramInt1, int paramInt2) {
+  public Matrix(int paramInt1, int paramInt2) {
     this.b = paramInt1;
     this.c = paramInt2;
     this.a = new double[paramInt1][paramInt2];
   }
   
-  public b(double[][] paramArrayOfdouble) {
+  public Matrix(double[][] paramArrayOfdouble) {
     this.b = paramArrayOfdouble.length;
     this.c = (paramArrayOfdouble[0]).length;
     for (byte b1 = 0; b1 < this.b; b1++) {
@@ -25,14 +25,14 @@ public class b implements Serializable, Cloneable {
     this.a = paramArrayOfdouble;
   }
   
-  public b(double[][] paramArrayOfdouble, int paramInt1, int paramInt2) {
+  public Matrix(double[][] paramArrayOfdouble, int paramInt1, int paramInt2) {
     this.a = paramArrayOfdouble;
     this.b = paramInt1;
     this.c = paramInt2;
   }
   
-  public b a() {
-    b b1 = new b(this.b, this.c);
+  public Matrix a() {
+    Matrix b1 = new Matrix(this.b, this.c);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < this.b; b2++) {
       for (byte b3 = 0; b3 < this.c; b3++)
@@ -70,8 +70,8 @@ public class b implements Serializable, Cloneable {
     return this.a[paramInt1][paramInt2];
   }
   
-  public b a(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
-    b b1 = new b(paramInt2 - paramInt1 + 1, paramInt4 - paramInt3 + 1);
+  public Matrix a(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
+    Matrix b1 = new Matrix(paramInt2 - paramInt1 + 1, paramInt4 - paramInt3 + 1);
     double[][] arrayOfDouble = b1.b();
     try {
       for (int i = paramInt1; i <= paramInt2; i++) {
@@ -84,8 +84,8 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b a(int[] paramArrayOfint, int paramInt1, int paramInt2) {
-    b b1 = new b(paramArrayOfint.length, paramInt2 - paramInt1 + 1);
+  public Matrix a(int[] paramArrayOfint, int paramInt1, int paramInt2) {
+    Matrix b1 = new Matrix(paramArrayOfint.length, paramInt2 - paramInt1 + 1);
     double[][] arrayOfDouble = b1.b();
     try {
       for (byte b2 = 0; b2 < paramArrayOfint.length; b2++) {
@@ -98,8 +98,8 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b f() {
-    b b1 = new b(this.c, this.b);
+  public Matrix f() {
+    Matrix b1 = new Matrix(this.c, this.b);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < this.b; b2++) {
       for (byte b3 = 0; b3 < this.c; b3++)
@@ -108,9 +108,9 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b a(b paramb) {
+  public Matrix a(Matrix paramb) {
     e(paramb);
-    b b1 = new b(this.b, this.c);
+    Matrix b1 = new Matrix(this.b, this.c);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < this.b; b2++) {
       for (byte b3 = 0; b3 < this.c; b3++)
@@ -119,9 +119,9 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b b(b paramb) {
+  public Matrix b(Matrix paramb) {
     e(paramb);
-    b b1 = new b(this.b, this.c);
+    Matrix b1 = new Matrix(this.b, this.c);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < this.b; b2++) {
       for (byte b3 = 0; b3 < this.c; b3++)
@@ -130,8 +130,8 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b a(double paramDouble) {
-    b b1 = new b(this.b, this.c);
+  public Matrix a(double paramDouble) {
+    Matrix b1 = new Matrix(this.b, this.c);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < this.b; b2++) {
       for (byte b3 = 0; b3 < this.c; b3++)
@@ -140,10 +140,10 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b c(b paramb) {
+  public Matrix c(Matrix paramb) {
     if (paramb.b != this.c)
       throw new IllegalArgumentException("Matrix inner dimensions must agree."); 
-    b b1 = new b(this.b, paramb.c);
+    Matrix b1 = new Matrix(this.b, paramb.c);
     double[][] arrayOfDouble = b1.b();
     double[] arrayOfDouble1 = new double[this.c];
     for (byte b2 = 0; b2 < paramb.c; b2++) {
@@ -161,16 +161,16 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  public b d(b paramb) {
-    return (this.b == this.c) ? (new a(this)).a(paramb) : (new c(this)).a(paramb);
+  public Matrix d(Matrix paramb) {
+    return (this.b == this.c) ? (new MatrixInverter(this)).a(paramb) : (new MatrixOrthogonalizer(this)).a(paramb);
   }
   
-  public b g() {
+  public Matrix g() {
     return d(b(this.b, this.b));
   }
   
-  public static b b(int paramInt1, int paramInt2) {
-    b b1 = new b(paramInt1, paramInt2);
+  public static Matrix b(int paramInt1, int paramInt2) {
+    Matrix b1 = new Matrix(paramInt1, paramInt2);
     double[][] arrayOfDouble = b1.b();
     for (byte b2 = 0; b2 < paramInt1; b2++) {
       for (byte b3 = 0; b3 < paramInt2; b3++)
@@ -179,7 +179,7 @@ public class b implements Serializable, Cloneable {
     return b1;
   }
   
-  private void e(b paramb) {
+  private void e(Matrix paramb) {
     if (paramb.b != this.b || paramb.c != this.c)
       throw new IllegalArgumentException("Matrix dimensions must agree."); 
   }

@@ -1,8 +1,8 @@
-package a;
+package linear_algebra;
 
 import java.io.Serializable;
 
-public class a implements Serializable {
+public class MatrixInverter implements Serializable {
   private double[][] a;
   
   private int b;
@@ -13,7 +13,7 @@ public class a implements Serializable {
   
   private int[] e;
   
-  public a(b paramb) {
+  public MatrixInverter(Matrix paramb) {
     // Byte code:
     //   0: aload_0
     //   1: invokespecial <init> : ()V
@@ -267,13 +267,13 @@ public class a implements Serializable {
     return true;
   }
   
-  public b a(b paramb) {
+  public Matrix a(Matrix paramb) {
     if (paramb.d() != this.b)
       throw new IllegalArgumentException("Matrix row dimensions must agree."); 
     if (!a())
       throw new RuntimeException("Matrix is singular."); 
     int i = paramb.e();
-    b b1 = paramb.a(this.e, 0, i - 1);
+    Matrix b1 = paramb.a(this.e, 0, i - 1);
     double[][] arrayOfDouble = b1.b();
     int j;
     for (j = 0; j < this.c; j++) {

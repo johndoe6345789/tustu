@@ -1,7 +1,7 @@
 package L;
 
 import M.a;
-import a.b;
+import linear_algebra.Matrix;
 import ax.S;
 import ax.ab;
 import ax.ac;
@@ -33,12 +33,12 @@ public class SmoothFilteredFunction extends ac {
     if (Double.isNaN(this.a) || this.a != d) {
       if (Double.isNaN(this.f)) {
         this.f = this.d.b(paramS);
-        this.c.i(new b(new double[][] { { this.f }, { 0.0D }, { 0.0D }, { 0.0D } }));
+        this.c.i(new Matrix(new double[][] { { this.f }, { 0.0D }, { 0.0D }, { 0.0D } }));
       } else {
         this.c.a();
         double d1 = this.d.b(paramS);
         if (!Double.isNaN(d1) && !Double.isNaN(this.f) && !Double.isInfinite(d1) && !Double.isInfinite(this.f))
-          this.c.a(new b(new double[][] { { d1 }, { this.f } })); 
+          this.c.a(new Matrix(new double[][] { { d1 }, { this.f } })); 
         this.f = d1;
       } 
       this.b = this.c.b().a(0, 0);

@@ -6,7 +6,7 @@ import G.aG;
 import G.bT;
 import G.cu;
 import M.a;
-import a.b;
+import linear_algebra.Matrix;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -41,7 +41,7 @@ public class f implements aF, aG {
         f1 = i * 1.0E9F / (float)(l - ((Long)this.c.remove()).longValue());
       } 
       float f2 = this.b / 8.0F;
-      this.e.i(new b(new double[][] { { f1 }, { 0.0D }, { 0.0D }, { 0.0D } }));
+      this.e.i(new Matrix(new double[][] { { f1 }, { 0.0D }, { 0.0D }, { 0.0D } }));
       this.e.a();
       this.b = (this.b * f2 + (float)this.e.b().a(0, 0)) / (f2 + 1.0F);
       cu.a().a(a, (this.b * 1.0F));
