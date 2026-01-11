@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface aA {
+public interface BooleanStateListener {
   void a(boolean paramBoolean);
 }
 

@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
-class aJ implements am {
-  aJ(BinTableView paramBinTableView) {}
+class BinTableDimensionProvider implements TableDimensionProvider {
+  BinTableDimensionProvider(BinTableView paramBinTableView) {}
   
   public boolean a() {
     return false;

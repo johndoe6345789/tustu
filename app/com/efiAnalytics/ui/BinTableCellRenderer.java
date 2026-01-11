@@ -15,7 +15,7 @@ import javax.swing.UIManager;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
-class aD extends DefaultTableCellRenderer {
+class BinTableCellRenderer extends DefaultTableCellRenderer {
   BinTableView a = null;
   
   boolean b = false;

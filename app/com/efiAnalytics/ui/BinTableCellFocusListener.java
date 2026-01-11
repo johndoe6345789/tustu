@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class aF implements FocusListener {
-  aF(aD paramaD, BinTableView paramBinTableView) {}
+class BinTableCellFocusListener implements FocusListener {
+  BinTableCellFocusListener(BinTableCellRenderer paramBinTableCellRenderer, BinTableView paramBinTableView) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {}
   

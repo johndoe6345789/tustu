@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class aH implements ListSelectionListener {
-  aH(aG paramaG, BinTableView paramBinTableView) {}
+class BinTableHeaderSelectionListener implements ListSelectionListener {
+  BinTableHeaderSelectionListener(BinTableHeaderCellRenderer paramaG, BinTableView paramBinTableView) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     this.b.e.getTableHeader().repaint();

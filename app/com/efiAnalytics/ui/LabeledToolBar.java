@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.JToolBar;
 import javax.swing.UIManager;
 
-class ak extends JToolBar {
+class LabeledToolBar extends JToolBar {
   String a = "";
   
   Font b = new Font("Arial Unicode MS", 1, eJ.a(12));

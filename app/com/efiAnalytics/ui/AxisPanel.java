@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.Font;
 import javax.swing.JPanel;
 
-class ah extends JPanel {
+class AxisPanel extends JPanel {
   S a;
   
   ah(w paramw) {}

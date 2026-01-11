@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-class aC implements KeyListener {
-  aC(aB paramaB, BinTableView paramBinTableView) {}
+class BinTableCellEditorKeyListener implements KeyListener {
+  BinTableCellEditorKeyListener(BinTableCellEditor paramBinTableCellEditor, BinTableView paramBinTableView) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     a(paramKeyEvent);

@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class aK extends Thread {
+class BinTablePaintThrottle extends Thread {
   long a = 0L;
   
   long b = Math.round(1000.0D / BinTableView.c(this.d));

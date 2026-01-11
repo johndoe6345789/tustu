@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import javax.swing.InputVerifier;
 import javax.swing.JComponent;
 
-class aI extends InputVerifier {
-  aI(BinTableView paramBinTableView) {}
+class BinTableInputVerifier extends InputVerifier {
+  BinTableInputVerifier(BinTableView paramBinTableView) {}
   
   public boolean verify(JComponent paramJComponent) {
     return true;

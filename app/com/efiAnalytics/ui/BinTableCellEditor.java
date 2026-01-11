@@ -4,8 +4,8 @@ import bH.X;
 import java.util.EventObject;
 import javax.swing.DefaultCellEditor;
 
-class aB extends DefaultCellEditor {
-  aB(BinTableView paramBinTableView) {
+class BinTableCellEditor extends DefaultCellEditor {
+  BinTableCellEditor(BinTableView paramBinTableView) {
     super(new do());
     do do = (do)getComponent();
     do.setFont(paramBinTableView.getFont());

@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class aj implements ListSelectionListener {
-  aj(ai paramai, w paramw) {}
+class RowHeaderSelectionListener implements ListSelectionListener {
+  RowHeaderSelectionListener(RowHeaderCellRenderer paramai, w paramw) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     this.b.c.b.repaint();

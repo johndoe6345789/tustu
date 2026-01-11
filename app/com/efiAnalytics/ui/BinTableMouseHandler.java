@@ -4,8 +4,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 
-class aL extends MouseAdapter {
-  aL(BinTableView paramBinTableView) {}
+class BinTableMouseHandler extends MouseAdapter {
+  BinTableMouseHandler(BinTableView paramBinTableView) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3)
