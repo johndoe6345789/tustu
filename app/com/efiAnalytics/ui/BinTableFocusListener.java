@@ -5,7 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.table.TableCellEditor;
 
-class ay implements FocusListener {
+class BinTableFocusListener implements FocusListener {
   ay(BinTableView paramBinTableView) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {}

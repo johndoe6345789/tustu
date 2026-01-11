@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-class aw implements KeyListener {
+class BinTableKeyListener implements KeyListener {
   aw(BinTableView paramBinTableView) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}

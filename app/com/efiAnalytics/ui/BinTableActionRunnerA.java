@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class aq implements Runnable {
+class BinTableActionRunnerA implements Runnable {
   aq(BinTableView paramBinTableView) {}
   
   public void run() {

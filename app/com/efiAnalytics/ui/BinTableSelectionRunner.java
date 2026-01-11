@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class az implements Runnable {
+class BinTableSelectionRunner implements Runnable {
   az(BinTableView paramBinTableView, int paramInt1, int paramInt2) {}
   
   public void run() {

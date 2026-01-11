@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface am {
+public interface TableSelectionInfo {
   boolean a();
   
   int b();

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 import javax.swing.JTextArea;
 
-public class aP extends JTextArea {
+public class HexByteTextArea extends JTextArea {
   private int b = 16;
   
   private int[] c = null;

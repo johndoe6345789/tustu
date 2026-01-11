@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface aQ {
+public interface SimpleCallback {
   void a();
 }
 

@@ -2,7 +2,7 @@ package com.efiAnalytics.ui;
 
 import java.awt.geom.Point2D;
 
-public class aZ extends Point2D.Double {
+public class ChartDataPoint extends Point2D.Double {
   private boolean a = false;
   
   public aZ(double paramDouble1, double paramDouble2) {

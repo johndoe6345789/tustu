@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class ax implements bc {
+class BinTableColorCloseCallback implements bc {
   ax(BinTableView paramBinTableView) {}
   
   public void close() {

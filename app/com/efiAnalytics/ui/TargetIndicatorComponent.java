@@ -11,7 +11,7 @@ import java.awt.Stroke;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 
-public class aR extends JComponent {
+public class TargetIndicatorComponent extends JComponent {
   int a = eJ.a(3);
   
   Stroke b = new BasicStroke(this.a);

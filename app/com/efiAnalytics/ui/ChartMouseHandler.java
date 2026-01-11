@@ -6,7 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public class aT extends MouseAdapter implements MouseListener, MouseMotionListener {
+public class ChartMouseHandler extends MouseAdapter implements MouseListener, MouseMotionListener {
   public aT(aS paramaS) {}
   
   public void mouseDragged(MouseEvent paramMouseEvent) {

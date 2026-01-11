@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface aY {
+public interface DoubleValueListener {
   void a(double paramDouble1, double paramDouble2);
 }
 

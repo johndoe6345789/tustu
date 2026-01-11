@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class at implements ActionListener {
+class BinTableToggleListener implements ActionListener {
   at(BinTableView paramBinTableView) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {

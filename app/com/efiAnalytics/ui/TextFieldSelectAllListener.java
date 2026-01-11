@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
-class av implements FocusListener {
+class TextFieldSelectAllListener implements FocusListener {
   av(BinTableView paramBinTableView) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {

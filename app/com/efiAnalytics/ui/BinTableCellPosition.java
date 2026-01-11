@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class aM {
+class BinTableCellPosition {
   int a;
   
   int b;

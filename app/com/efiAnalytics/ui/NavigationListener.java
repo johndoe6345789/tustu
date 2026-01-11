@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface aO {
+public interface NavigationListener {
   void e();
   
   void d();

@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class aW extends MouseAdapter {
+class ChartClickHandler extends MouseAdapter {
   aW(aU paramaU) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {

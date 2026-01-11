@@ -11,7 +11,7 @@ import java.awt.Stroke;
 import java.util.ArrayList;
 import javax.swing.JComponent;
 
-public abstract class aS extends JComponent {
+public abstract class AbstractChartComponent extends JComponent {
   private boolean a = true;
   
   private Color b = Color.GRAY;

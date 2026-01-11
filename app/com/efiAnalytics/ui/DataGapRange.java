@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class aX {
+class DataGapRange {
   private double b;
   
   private double c;

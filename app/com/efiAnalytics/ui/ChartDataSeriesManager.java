@@ -2,7 +2,7 @@ package com.efiAnalytics.ui;
 
 import java.util.ArrayList;
 
-class aV {
+class ChartDataSeriesManager {
   ArrayList a = new ArrayList();
   
   aV(aU paramaU) {}

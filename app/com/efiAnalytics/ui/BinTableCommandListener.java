@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class as implements ActionListener {
-  as(BinTableView paramBinTableView) {}
+class BinTableCommandListener implements ActionListener {
+  au(BinTableView paramBinTableView) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a(paramActionEvent.getActionCommand());
@@ -12,7 +12,7 @@ class as implements ActionListener {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/as.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/au.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

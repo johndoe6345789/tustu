@@ -10,7 +10,7 @@ import java.awt.Stroke;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class aU extends aS {
+public class LineChartComponent extends AbstractChartComponent {
   aV a = new aV(this);
   
   private double l = 0.0D;

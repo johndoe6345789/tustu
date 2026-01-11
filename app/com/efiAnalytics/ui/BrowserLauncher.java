@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-public class aN {
+public class BrowserLauncher {
   static dK a = null;
   
   public static void a(String paramString) {
