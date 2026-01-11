@@ -122,7 +122,7 @@ def propose_reorganization(analysis):
         'other_pkgs': other_pkgs
     }
 
-def execute_option1():
+def execute_option1(force=False):
     """Option 1: Move files to match their package declarations"""
     base_dir = '/home/rewrich/Documents/GitHub/tustu/app'
     
@@ -173,10 +173,11 @@ def execute_option1():
         print(f"  {os.path.relpath(move['from'], base_dir)}")
         print(f"    → {os.path.relpath(move['to'], base_dir)}")
     
-    response = input(f"\nProceed with moving {len(moves)} files? (yes/no): ")
-    if response.lower() != 'yes':
-        print("Cancelled.")
-        return
+    if not force:
+        response = input(f"\nProceed with moving {len(moves)} files? (yes/no): ")
+        if response.lower() != 'yes':
+            print("Cancelled.")
+            return
     
     # Execute moves
     moved_count = 0
@@ -235,8 +236,10 @@ def execute_option1():
 def main():
     import sys
     
+    force = '--force' in sys.argv
+    
     if '--execute-option-1' in sys.argv or '--option-1' in sys.argv:
-        execute_option1()
+        execute_option1(force=force)
         return
     
     analysis = analyze_current_structure()
