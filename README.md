@@ -1,6 +1,6 @@
 # Registration Key Algorithm
 
-This document describes the registration key generation algorithm found in `app/src/main/java/bH/C0997e.java`.
+This document describes the registration key generation algorithm found in `app/bH/f.java` (previously `app/src/main/java/bH/C0997e.java`).
 
 ## Overview
 
