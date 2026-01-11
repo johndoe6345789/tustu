@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import G.ba;
-import s.g;
+import s.SComponentGolf;
 
 class BaWrapper {
   private ba b;
@@ -11,7 +11,7 @@ class BaWrapper {
   }
   
   public String toString() {
-    return g.b(this.b.toString());
+    return SComponentGolf.b(this.b.toString());
   }
   
   public ba a() {

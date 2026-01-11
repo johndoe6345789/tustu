@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class aP extends KeyAdapter {
   aP(aO paramaO) {}
@@ -15,10 +15,10 @@ class aP extends KeyAdapter {
       return; 
     try {
       double d = aO.a(this.a, jTextField.getText());
-      if (this.a.a(jTextField, g.b("Current Value")))
+      if (this.a.a(jTextField, SComponentGolf.b("Current Value")))
         this.a.c().a(d); 
     } catch (Exception exception) {
-      bV.d(g.b("Numeric Values only"), jTextField);
+      bV.d(SComponentGolf.b("Numeric Values only"), jTextField);
     } 
   }
 }

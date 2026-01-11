@@ -5,13 +5,13 @@ import com.efiAnalytics.ui.bV;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import n.i;
-import s.g;
+import n.NInterfaceIndia;
+import s.SComponentGolf;
 
-public class hq implements i {
+public class hq implements NInterfaceIndia {
   private static hq a = null;
   
-  private i b = null;
+  private NInterfaceIndia b = null;
   
   public static hq a() {
     if (a == null)
@@ -32,7 +32,7 @@ public class hq implements i {
   }
   
   private void e(String paramString) {
-    paramString = g.b(paramString);
+    paramString = SComponentGolf.b(paramString);
     iJ iJ = dd.a().e();
     iW iW = dd.a().f();
     if (iJ != null) {
@@ -61,7 +61,7 @@ public class hq implements i {
     if (this.b != null)
       return this.b.c(paramString); 
     JFrame jFrame = dd.a().c();
-    return (JOptionPane.showConfirmDialog(jFrame, paramString, g.b("Approve"), 0, 2) == 0);
+    return (JOptionPane.showConfirmDialog(jFrame, paramString, SComponentGolf.b("Approve"), 0, 2) == 0);
   }
   
   public int a(String paramString, String[] paramArrayOfString) {

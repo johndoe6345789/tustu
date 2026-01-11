@@ -4,17 +4,17 @@ import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import s.g;
+import s.SComponentGolf;
 
 class DeviceFileSelectListener implements ActionListener {
   DeviceFileSelectListener(CanDeviceConfigPanel parama) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String[] arrayOfString = { "ini", "ecu" };
-    String str = bV.b((Component)paramActionEvent.getSource(), g.b("Find CAN Device definition file"), arrayOfString, "", "");
+    String str = bV.b((Component)paramActionEvent.getSource(), SComponentGolf.b("Find CAN Device definition file"), arrayOfString, "", "");
     if (str != null) {
       a.a(this.a, str);
-      this.a.g.validate();
+      this.a.SComponentGolf.validate();
     } 
   }
 }

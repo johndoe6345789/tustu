@@ -2,7 +2,7 @@ package aP;
 
 import G.aM;
 import G.aN;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,8 +16,8 @@ class aL implements aN {
       try {
         this.a.f = (int)aM.j(aG.a(this.a).h());
         this.a.b.setText("" + this.a.f);
-      } catch (g g) {
-        Logger.getLogger(aG.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aG.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       }  
   }
 }

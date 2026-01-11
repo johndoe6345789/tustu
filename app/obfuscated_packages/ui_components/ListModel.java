@@ -1,6 +1,6 @@
 package ao;
 
-import at.c;
+import at.IOJMenu;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,7 +12,7 @@ class cB implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JMenuItem jMenuItem = (JMenuItem)paramActionEvent.getSource();
-    if (bV.a("Are you sure you want to delete the Settings Profile: " + jMenuItem.getText(), jMenuItem, true) && c.a().b(jMenuItem.getText()))
+    if (bV.a("Are you sure you want to delete the Settings Profile: " + jMenuItem.getText(), jMenuItem, true) && IOJMenu.a().b(jMenuItem.getText()))
       this.a.remove(jMenuItem); 
   }
 }

@@ -1,14 +1,14 @@
 package aP;
 
-import bj.a;
+import bj.UICloseInBjPackage;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 class iN extends WindowAdapter {
-  iN(iL paramiL, a parama) {}
+  iN(iL paramiL, UICloseInBjPackage parama) {}
   
   public void windowClosing(WindowEvent paramWindowEvent) {
-    this.a.close();
+    this.UICloseInBjPackage.close();
   }
 }
 

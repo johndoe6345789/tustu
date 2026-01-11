@@ -4,7 +4,7 @@ import G.T;
 import W.ap;
 import W.ar;
 import bH.D;
-import bz.b;
+import bz.ManagerPreferredlayoutsize;
 import com.efiAnalytics.apps.ts.dashboard.Z;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import java.awt.Component;
@@ -21,15 +21,15 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
-import n.a;
-import n.g;
-import n.n;
-import r.a;
+import Isoptimizeddrawingenabled.NComponentAlpha;
+import Isoptimizeddrawingenabled.NInterfaceGolf;
+import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
+import r.NComponentAlpha;
 
-public class bW extends n implements a, g {
-  int a = 0;
+public class bW extends Isoptimizeddrawingenabled implements NComponentAlpha, NInterfaceGolf {
+  int NComponentAlpha = 0;
   
-  HashMap b = new HashMap<>();
+  HashMap ManagerPreferredlayoutsize = new HashMap<>();
   
   ArrayList c = new ArrayList();
   
@@ -41,11 +41,11 @@ public class bW extends n implements a, g {
   
   private boolean h = false;
   
-  boolean g = a.a().b(a.ak, false);
+  boolean NInterfaceGolf = NComponentAlpha.NComponentAlpha().ManagerPreferredlayoutsize(NComponentAlpha.ak, false);
   
   public bW() {
     setTabPlacement(3);
-    this.e = a.a().a(a.da, a.db);
+    this.e = NComponentAlpha.NComponentAlpha().NComponentAlpha(NComponentAlpha.da, NComponentAlpha.db);
     if (!this.e) {
       Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/new16.gif"));
       ImageIcon imageIcon = new ImageIcon(image);
@@ -56,28 +56,28 @@ public class bW extends n implements a, g {
     this.f = new aW(this);
   }
   
-  public x a(Z paramZ, String paramString) {
-    x x = new x(T.a().c());
-    x.a(paramZ);
-    a(x, paramString);
+  public x NComponentAlpha(Z paramZ, String paramString) {
+    x x = new x(T.NComponentAlpha().c());
+    x.NComponentAlpha(paramZ);
+    NComponentAlpha(x, paramString);
     return x;
   }
   
-  public void a(boolean paramBoolean) {
+  public void NComponentAlpha(boolean paramBoolean) {
     int i = this.e ? (getTabCount() - 1) : (getTabCount() - 2);
     if (getSelectedIndex() < i) {
-      a(getSelectedIndex() + 1, paramBoolean);
+      NComponentAlpha(getSelectedIndex() + 1, paramBoolean);
     } else {
-      a(0, paramBoolean);
+      NComponentAlpha(0, paramBoolean);
     } 
   }
   
-  public void b(boolean paramBoolean) {
+  public void ManagerPreferredlayoutsize(boolean paramBoolean) {
     int i = this.e ? (getTabCount() - 1) : (getTabCount() - 2);
     if (getSelectedIndex() > 0) {
-      a(getSelectedIndex() - 1, paramBoolean);
+      NComponentAlpha(getSelectedIndex() - 1, paramBoolean);
     } else {
-      a(i, paramBoolean);
+      NComponentAlpha(i, paramBoolean);
     } 
   }
   
@@ -85,14 +85,14 @@ public class bW extends n implements a, g {
     return this.e ? getTabCount() : (getTabCount() - 1);
   }
   
-  public void a(int paramInt, boolean paramBoolean) {
+  public void NComponentAlpha(int paramInt, boolean paramBoolean) {
     int i = getSelectedIndex();
     super.setSelectedIndex(paramInt);
-    x x1 = dd.a().b();
-    x x2 = (x)this.b.get(getTitleAt(paramInt));
+    x x1 = dd.NComponentAlpha().ManagerPreferredlayoutsize();
+    x x2 = (x)this.ManagerPreferredlayoutsize.get(getTitleAt(paramInt));
     boolean bool = (x1 != null && x1.s()) ? true : false;
     if (x2 != null) {
-      dd.a().a(x2);
+      dd.NComponentAlpha().NComponentAlpha(x2);
       if (paramBoolean && bool) {
         bY bY = new bY(this, x1, x2);
         SwingUtilities.invokeLater(bY);
@@ -103,9 +103,9 @@ public class bW extends n implements a, g {
   public void setSelectedIndex(int paramInt) {
     int i = getSelectedIndex();
     super.setSelectedIndex(paramInt);
-    x x1 = dd.a().b();
-    x x2 = (x)this.b.get(getTitleAt(paramInt));
-    if (this.g) {
+    x x1 = dd.NComponentAlpha().ManagerPreferredlayoutsize();
+    x x2 = (x)this.ManagerPreferredlayoutsize.get(getTitleAt(paramInt));
+    if (this.NInterfaceGolf) {
       if (x2 != null)
         x2.h(true); 
       if (x1 != null && !x1.equals(x2))
@@ -113,23 +113,23 @@ public class bW extends n implements a, g {
     } 
     boolean bool = (x1 != null && x1.s()) ? true : false;
     if (x2 != null)
-      dd.a().a(x2); 
+      dd.NComponentAlpha().NComponentAlpha(x2); 
   }
   
-  public x a(x paramx, String paramString) {
+  public x NComponentAlpha(x paramx, String paramString) {
     JPanel jPanel = new JPanel();
-    jPanel.setLayout((LayoutManager)new b());
+    jPanel.setLayout((LayoutManager)new ManagerPreferredlayoutsize());
     jPanel.add((Component)paramx);
     String str = paramString;
-    if (this.g && !paramString.equals("Main Dashboard"))
+    if (this.NInterfaceGolf && !paramString.equals("Main Dashboard"))
       paramx.h(false); 
-    for (byte b = 2; d(paramString); b++)
-      paramString = str + "(" + b + ")"; 
-    this.b.put(paramString, paramx);
+    for (byte ManagerPreferredlayoutsize = 2; d(paramString); ManagerPreferredlayoutsize++)
+      paramString = str + "(" + ManagerPreferredlayoutsize + ")"; 
+    this.ManagerPreferredlayoutsize.put(paramString, paramx);
     setName(paramString);
     paramx.setName(paramString);
-    ar ar = new ar((a.a()).an, paramString);
-    paramx.a((ap)ar);
+    ar ar = new ar((NComponentAlpha.NComponentAlpha()).an, paramString);
+    paramx.NComponentAlpha((ap)ar);
     Icon icon = null;
     if (getTabCount() < 1) {
       insertTab(paramString, icon, jPanel, null, 0);
@@ -146,10 +146,10 @@ public class bW extends n implements a, g {
     int i = this.e ? (getTabCount() - 1) : (getTabCount() - 2);
     for (int j = i; j > 0; j--) {
       String str = getTitleAt(j);
-      x x = (x)this.b.get(str);
+      x x = (x)this.ManagerPreferredlayoutsize.get(str);
       if (x != null) {
         x.c();
-        this.b.remove(str);
+        this.ManagerPreferredlayoutsize.remove(str);
         x.removeMouseListener(this.f);
         x.removeMouseMotionListener(this.f);
       } 
@@ -159,34 +159,34 @@ public class bW extends n implements a, g {
   
   public x e() {
     String str = getTitleAt(getSelectedIndex());
-    return (str != null) ? (x)this.b.get(str) : null;
+    return (str != null) ? (x)this.ManagerPreferredlayoutsize.get(str) : null;
   }
   
   public Iterator f() {
-    return this.b.values().iterator();
+    return this.ManagerPreferredlayoutsize.values().iterator();
   }
   
-  public x a(String paramString) {
-    return (x)this.b.get(paramString);
+  public x NComponentAlpha(String paramString) {
+    return (x)this.ManagerPreferredlayoutsize.get(paramString);
   }
   
-  public void a(d paramd) {
+  public void NComponentAlpha(d paramd) {
     this.c.add(paramd);
   }
   
-  public boolean b(String paramString) {
+  public boolean ManagerPreferredlayoutsize(String paramString) {
     if (paramString == null || paramString.equals("") || paramString.equals("Main Dashboard"))
       return false; 
     if (h(paramString))
-      for (byte b = 0; b < getTabCount(); b++) {
-        if (getTitleAt(b).equals(paramString)) {
-          removeTabAt(b);
-          x x = (x)this.b.get(paramString);
+      for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getTabCount(); ManagerPreferredlayoutsize++) {
+        if (getTitleAt(ManagerPreferredlayoutsize).equals(paramString)) {
+          removeTabAt(ManagerPreferredlayoutsize);
+          x x = (x)this.ManagerPreferredlayoutsize.get(paramString);
           if (x != null) {
             x.removeMouseListener(this.f);
             x.removeMouseMotionListener(this.f);
           } 
-          this.b.remove(paramString);
+          this.ManagerPreferredlayoutsize.remove(paramString);
           return true;
         } 
       }  
@@ -196,32 +196,32 @@ public class bW extends n implements a, g {
   private void h() {
     Iterator<d> iterator = this.c.iterator();
     while (iterator.hasNext())
-      ((d)iterator.next()).a(); 
+      ((d)iterator.next()).NComponentAlpha(); 
   }
   
   private boolean h(String paramString) {
-    x x = a(paramString);
+    x x = NComponentAlpha(paramString);
     Iterator<d> iterator = this.c.iterator();
     while (iterator.hasNext()) {
-      if (!((d)iterator.next()).a(paramString, x))
+      if (!((d)iterator.next()).NComponentAlpha(paramString, x))
         return false; 
     } 
     return true;
   }
   
   public void c(String paramString) {
-    Iterator<x> iterator = this.b.values().iterator();
+    Iterator<x> iterator = this.ManagerPreferredlayoutsize.values().iterator();
     while (iterator.hasNext()) {
       try {
         ((x)iterator.next()).c(paramString);
       } catch (Exception exception) {
-        D.b("Failed to set new signature for GaugeCluster.");
+        D.ManagerPreferredlayoutsize("Failed to set new signature for GaugeCluster.");
         exception.printStackTrace();
       } 
     } 
   }
   
-  protected void a(MouseEvent paramMouseEvent) {
+  protected void NComponentAlpha(MouseEvent paramMouseEvent) {
     String str = getTitleAt(getSelectedIndex());
     if (str == null || str.equals("") || str.equals("Main Dashboard"))
       return; 
@@ -232,16 +232,16 @@ public class bW extends n implements a, g {
     jPopupMenu.show((Component)this, paramMouseEvent.getX(), paramMouseEvent.getY());
   }
   
-  public boolean a() {
+  public boolean NComponentAlpha() {
     this.h = true;
     return true;
   }
   
-  public void b() {
+  public void ManagerPreferredlayoutsize() {
     this.h = false;
   }
   
-  public boolean g() {
+  public boolean NInterfaceGolf() {
     return this.h;
   }
 }

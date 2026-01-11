@@ -12,7 +12,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
 public class aF extends JPanel {
   s[] a = null;
@@ -20,7 +20,7 @@ public class aF extends JPanel {
   List b = new ArrayList();
   
   public aF() {
-    setBorder(BorderFactory.createTitledBorder(g.b("Configuration Settings")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Configuration Settings")));
   }
   
   public void a() {
@@ -37,7 +37,7 @@ public class aF extends JPanel {
         JComboBox jComboBox = new JComboBox();
         JPanel jPanel = new JPanel();
         jPanel.setLayout(new GridLayout(1, 1));
-        jPanel.setBorder(BorderFactory.createTitledBorder(g.b(paramArrayOfs[b].d())));
+        jPanel.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b(paramArrayOfs[b].d())));
         jComboBox.setName(paramArrayOfs[b].c());
         jComboBox.setEditable(false);
         ArrayList arrayList = new ArrayList();

@@ -2,9 +2,9 @@ package L;
 
 import G.aI;
 import G.aM;
-import V.g;
-import ax.S;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.CloneableImplInAxPackage;
+import ax.ExceptionInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -21,7 +21,7 @@ public class TableLookup3DFunction extends ac {
   
   ab f;
   
-  aM g = null;
+  aM ExceptionPrintstacktrace = null;
   
   aM h = null;
   
@@ -40,7 +40,7 @@ public class TableLookup3DFunction extends ac {
     this.f = paramab5;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     c(paramS);
     try {
       double[] arrayOfDouble1 = a();
@@ -50,37 +50,37 @@ public class TableLookup3DFunction extends ac {
       double d3 = b(arrayOfDouble1, d1);
       double d4 = a(arrayOfDouble2, d2);
       return a(d4, d3);
-    } catch (g g) {
-      throw new U("Unable to evaluate tableLookup: " + g.getLocalizedMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      throw new ExceptionInAxPackage("Unable to evaluate tableLookup: " + ExceptionPrintstacktrace.getLocalizedMessage());
     } 
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   
-  private void c(S paramS) {
-    if (this.g == null) {
-      this.g = l.a().a((int)this.b.b(paramS));
-      if (this.g == null)
-        throw new U("Z Parameter not found!"); 
+  private void c(CloneableImplInAxPackage paramS) {
+    if (this.ExceptionPrintstacktrace == null) {
+      this.ExceptionPrintstacktrace = l.a().a((int)this.b.b(paramS));
+      if (this.ExceptionPrintstacktrace == null)
+        throw new ExceptionInAxPackage("Z Parameter not found!"); 
     } 
     if (this.h == null) {
       this.h = l.a().a((int)this.c.b(paramS));
       if (this.h == null)
-        throw new U("X Parameter not found!"); 
+        throw new ExceptionInAxPackage("X Parameter not found!"); 
     } 
     if (this.i == null) {
       this.i = l.a().a((int)this.d.b(paramS));
       if (this.i == null)
-        throw new U("Y Parameter not found!"); 
+        throw new ExceptionInAxPackage("Y Parameter not found!"); 
     } 
   }
   
   public double a(double paramDouble1, double paramDouble2) {
     int i = (int)paramDouble1;
     int j = (int)paramDouble2;
-    double[][] arrayOfDouble = this.g.i(this.a.h());
+    double[][] arrayOfDouble = this.ExceptionPrintstacktrace.i(this.a.h());
     int k = (i < arrayOfDouble.length - 1) ? (i + 1) : i;
     int m = (j < (arrayOfDouble[0]).length - 1) ? (j + 1) : j;
     double d1 = paramDouble1 - i;
@@ -152,7 +152,7 @@ public class TableLookup3DFunction extends ac {
   private double[] b() {
     double[][] arrayOfDouble = this.i.i(this.a.h());
     if (this.k == null)
-      this.k = new double[this.g.a()]; 
+      this.k = new double[this.ExceptionPrintstacktrace.a()]; 
     if (arrayOfDouble.length == this.k.length * 2) {
       for (byte b = 0; b < this.j.length; b++) {
         if (b % 2 == 0)

@@ -1,9 +1,9 @@
 package com.efiAnalytics.tunerStudio.search;
 
-import B.g;
+import B.BInterfaceGolf;
 import B.i;
-import D.c;
-import aA.h;
+import D.DInterfaceCharlie;
+import aA.AaInterfaceHotel;
 import bH.D;
 import com.efiAnalytics.apps.ts.dashboard.s;
 import com.efiAnalytics.apps.ts.dashboard.t;
@@ -32,102 +32,102 @@ import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import r.a;
-import r.j;
-import r.n;
+import r.IOPropertiesUsingFile;
+import r.ThreadedFile;
+import r.RComponentNovember;
 
 public class ContinuousIpSearchPanel extends s implements t, bc, Serializable {
-  JProgressBar a = new JProgressBar();
+  JProgressBar IOPropertiesUsingFile = new JProgressBar();
   
   JPanel b = new JPanel();
   
-  r c;
+  r DInterfaceCharlie;
   
-  c d = new c(this);
+  DInterfaceCharlie d = new DInterfaceCharlie(this);
   
-  int f = r.a;
+  int f = r.IOPropertiesUsingFile;
   
-  e g = null;
+  e BInterfaceGolf = null;
   
-  d h = null;
+  d AaInterfaceHotel = null;
   
   JLabel i = new JLabel();
   
-  Map j = new HashMap<>();
+  Map ThreadedFile = new HashMap<>();
   
   List k = new ArrayList();
   
   public ContinuousIpSearchPanel() {
     setOpaque(true);
     setBackground(UIManager.getColor("Label.background"));
-    setLayout(new BorderLayout(eJ.a(15), eJ.a(15)));
-    setBorder(BorderFactory.createEmptyBorder(eJ.a(40), eJ.a(40), eJ.a(40), eJ.a(40)));
+    setLayout(new BorderLayout(eJ.IOPropertiesUsingFile(15), eJ.IOPropertiesUsingFile(15)));
+    setBorder(BorderFactory.createEmptyBorder(eJ.IOPropertiesUsingFile(40), eJ.IOPropertiesUsingFile(40), eJ.IOPropertiesUsingFile(40), eJ.IOPropertiesUsingFile(40)));
     char c1 = 'Ũ';
-    String str = a.a().c(a.aX);
+    String str = IOPropertiesUsingFile.IOPropertiesUsingFile().DInterfaceCharlie(IOPropertiesUsingFile.aX);
     Image image = Toolkit.getDefaultToolkit().createImage(str);
-    image = eJ.a(image, (Component)this, c1);
+    image = eJ.IOPropertiesUsingFile(image, (Component)this, c1);
     ImageIcon imageIcon = new ImageIcon(image);
-    this.i.setMinimumSize(new Dimension(100, eJ.a(c1)));
+    this.i.setMinimumSize(new Dimension(100, eJ.IOPropertiesUsingFile(c1)));
     this.i.setVerticalTextPosition(3);
     this.i.setHorizontalTextPosition(0);
     this.i.setHorizontalAlignment(0);
-    int i = eJ.a(5);
+    int i = eJ.IOPropertiesUsingFile(5);
     this.i.setBorder(BorderFactory.createEmptyBorder(i, i, i, i));
     this.i.setIcon(imageIcon);
     add("North", this.i);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    this.c = new r();
-    this.c.getTableHeader().setUI(null);
-    JScrollPane jScrollPane = new JScrollPane(this.c);
-    jScrollPane.setBorder(BorderFactory.createLineBorder(Color.lightGray, eJ.a(2), true));
+    this.DInterfaceCharlie = new r();
+    this.DInterfaceCharlie.getTableHeader().setUI(null);
+    JScrollPane jScrollPane = new JScrollPane(this.DInterfaceCharlie);
+    jScrollPane.setBorder(BorderFactory.createLineBorder(Color.lightGray, eJ.IOPropertiesUsingFile(2), true));
     jPanel.add("Center", jScrollPane);
-    this.a.setIndeterminate(true);
-    jPanel.add("South", this.a);
+    this.IOPropertiesUsingFile.setIndeterminate(true);
+    jPanel.add("South", this.IOPropertiesUsingFile);
     add("Center", jPanel);
-    this.g = new e(this);
-    this.g.start();
+    this.BInterfaceGolf = new e(this);
+    this.BInterfaceGolf.start();
   }
   
   private void loadRecentProjects() {
     long l = System.currentTimeMillis();
-    ArrayList arrayList = (new n()).a();
+    ArrayList arrayList = (new RComponentNovember()).IOPropertiesUsingFile();
     ArrayList<String> arrayList1 = new ArrayList();
     for (String str : arrayList) {
       File file1 = new File(str);
-      i i = j.d(file1);
+      i i = ThreadedFile.d(file1);
       if (file1.exists() && i != null && !i.e().isEmpty()) {
-        c c1 = h.a().d(i.i(), i.e());
+        DInterfaceCharlie c1 = AaInterfaceHotel.IOPropertiesUsingFile().d(i.i(), i.e());
         f f = new f();
         i.b("Offline");
-        f.a(i);
-        f.a(c1.b());
+        f.IOPropertiesUsingFile(i);
+        f.IOPropertiesUsingFile(c1.b());
         k k = new k(file1);
-        f.a(k);
+        f.IOPropertiesUsingFile(k);
         this.k.add(f);
-        a a = new a(this, f);
-        SwingUtilities.invokeLater(a);
+        IOPropertiesUsingFile IOPropertiesUsingFile = new IOPropertiesUsingFile(this, f);
+        SwingUtilities.invokeLater(IOPropertiesUsingFile);
         arrayList1.add(str);
       } 
     } 
-    File file = new File(j.u());
+    File file = new File(ThreadedFile.u());
     for (File file1 : file.listFiles()) {
-      i i = j.d(file1);
+      i i = ThreadedFile.d(file1);
       if (!arrayList1.contains(file1.getAbsolutePath()) && file1.exists() && i != null && !i.e().isEmpty()) {
-        c c1 = h.a().d(i.i(), i.e());
+        DInterfaceCharlie c1 = AaInterfaceHotel.IOPropertiesUsingFile().d(i.i(), i.e());
         f f = new f();
         i.b("Offline");
-        f.a(i);
-        f.a(c1.b());
+        f.IOPropertiesUsingFile(i);
+        f.IOPropertiesUsingFile(c1.b());
         k k = new k(file1);
-        f.a(k);
+        f.IOPropertiesUsingFile(k);
         this.k.add(f);
         b b = new b(this, f);
         SwingUtilities.invokeLater(b);
         arrayList1.add(file1.getAbsolutePath());
       } 
     } 
-    D.c("Time to load Projects list: " + (System.currentTimeMillis() - l));
+    D.DInterfaceCharlie("Time to load Projects list: " + (System.currentTimeMillis() - l));
   }
   
   public void setRunDemo(boolean paramBoolean) {}
@@ -164,64 +164,64 @@ public class ContinuousIpSearchPanel extends s implements t, bc, Serializable {
   }
   
   public void close() {
-    g.a().b(this.d);
-    e.a(this.g);
-    if (this.h != null)
-      d.a(this.h); 
+    BInterfaceGolf.IOPropertiesUsingFile().b(this.d);
+    e.IOPropertiesUsingFile(this.BInterfaceGolf);
+    if (this.AaInterfaceHotel != null)
+      d.IOPropertiesUsingFile(this.AaInterfaceHotel); 
   }
   
   private String getKey(i parami) {
-    return (parami.e() != null && !parami.e().isEmpty()) ? parami.e() : (parami.c() + ":" + parami.g());
+    return (parami.e() != null && !parami.e().isEmpty()) ? parami.e() : (parami.DInterfaceCharlie() + ":" + parami.BInterfaceGolf());
   }
   
   private void removeExpired() {
-    String[] arrayOfString = (String[])this.j.keySet().toArray((Object[])new String[this.j.keySet().size()]);
+    String[] arrayOfString = (String[])this.ThreadedFile.keySet().toArray((Object[])new String[this.ThreadedFile.keySet().size()]);
     for (byte b = 0; b < arrayOfString.length; b++) {
-      f f = (f)this.j.get(arrayOfString[b]);
+      f f = (f)this.ThreadedFile.get(arrayOfString[b]);
       if (f != null && f.f() != null && f.e() < System.currentTimeMillis() - this.f) {
         f.f().b("Offline");
-        this.c.b(f);
-        this.c.a();
+        this.DInterfaceCharlie.b(f);
+        this.DInterfaceCharlie.IOPropertiesUsingFile();
       } 
     } 
-    for (f f : this.c.b) {
-      if (f.h() != null && f.h().b() != null && !f.h().b().exists()) {
+    for (f f : this.DInterfaceCharlie.b) {
+      if (f.AaInterfaceHotel() != null && f.AaInterfaceHotel().b() != null && !f.AaInterfaceHotel().b().exists()) {
         String str = getKey(f.f());
-        this.j.remove(str);
-        this.c.c(f);
+        this.ThreadedFile.remove(str);
+        this.DInterfaceCharlie.DInterfaceCharlie(f);
       } 
     } 
   }
   
   private void updateDeviceStatus() {
-    for (f f : this.j.values()) {
-      if (f.g() == null || f.g().c().equals("U")) {
-        c c1 = h.a().c(f.b(), f.a());
-        if (c1.a() == 0 || c1.a() == 32768) {
+    for (f f : this.ThreadedFile.values()) {
+      if (f.BInterfaceGolf() == null || f.BInterfaceGolf().DInterfaceCharlie().equals("U")) {
+        DInterfaceCharlie c1 = AaInterfaceHotel.IOPropertiesUsingFile().DInterfaceCharlie(f.b(), f.IOPropertiesUsingFile());
+        if (c1.IOPropertiesUsingFile() == 0 || c1.IOPropertiesUsingFile() == 32768) {
           if (c1.b() != null)
-            f.a(c1.b()); 
-          this.c.b(f);
-          this.c.a();
-          this.c.b();
+            f.IOPropertiesUsingFile(c1.b()); 
+          this.DInterfaceCharlie.b(f);
+          this.DInterfaceCharlie.IOPropertiesUsingFile();
+          this.DInterfaceCharlie.b();
         } 
       } 
     } 
     for (f f : this.k) {
-      c c1 = h.a().c(f.b(), f.a());
-      if (c1.a() == 0 || c1.a() == 32768) {
-        f.a(c1.b());
-        this.c.b(f);
-        this.c.a();
-        this.c.b();
+      DInterfaceCharlie c1 = AaInterfaceHotel.IOPropertiesUsingFile().DInterfaceCharlie(f.b(), f.IOPropertiesUsingFile());
+      if (c1.IOPropertiesUsingFile() == 0 || c1.IOPropertiesUsingFile() == 32768) {
+        f.IOPropertiesUsingFile(c1.b());
+        this.DInterfaceCharlie.b(f);
+        this.DInterfaceCharlie.IOPropertiesUsingFile();
+        this.DInterfaceCharlie.b();
       } 
     } 
     this.k.clear();
   }
   
   private void devicesUpdated() {
-    if (this.h == null || !this.h.isAlive()) {
-      this.h = new d(this);
-      this.h.start();
+    if (this.AaInterfaceHotel == null || !this.AaInterfaceHotel.isAlive()) {
+      this.AaInterfaceHotel = new d(this);
+      this.AaInterfaceHotel.start();
     } 
   }
   

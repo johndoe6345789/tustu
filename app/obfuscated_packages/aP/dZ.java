@@ -1,13 +1,13 @@
 package aP;
 
-import c.e;
-import r.i;
+import c.CInterfaceEcho;
+import r.RInterfaceIndia;
 
-class dZ implements e {
+class dZ implements CInterfaceEcho {
   dZ(dB paramdB) {}
   
   public boolean a() {
-    return i.a().a("09RGDKDG;LKIGD");
+    return RInterfaceIndia.a().a("09RGDKDG;LKIGD");
   }
 }
 

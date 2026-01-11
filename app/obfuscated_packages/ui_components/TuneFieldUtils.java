@@ -3,7 +3,7 @@ package ao;
 import W.j;
 import W.n;
 import bH.a;
-import g.k;
+import g.IOJFileChooser;
 import java.util.Iterator;
 import java.util.TreeSet;
 import javax.swing.KeyStroke;
@@ -18,7 +18,7 @@ public class hQ {
       null[b] = iterator.next();
       b++;
     } 
-    return k.b(null);
+    return IOJFileChooser.b(null);
   }
   
   public static boolean a(hW paramhW, bX parambX, String paramString) {

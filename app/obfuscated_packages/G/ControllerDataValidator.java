@@ -1,7 +1,7 @@
 package G;
 
-import V.b;
-import V.d;
+import V.VInterfaceBravo;
+import V.ExceptionGetmessage;
 import bH.D;
 import bH.c;
 
@@ -11,10 +11,10 @@ class ControllerDataValidator implements v {
   public int[] a(byte[] paramArrayOfbyte, int paramInt1, int paramInt2) {
     try {
       byte[] arrayOfByte = this.a.a(paramArrayOfbyte, 15L, paramInt1, paramInt2, (m)null);
-      return c.b(arrayOfByte);
-    } catch (d d) {
-      D.c("Controller reported Comms error, during validation. " + d.getMessage());
-      throw new b(d.getMessage());
+      return c.VInterfaceBravo(arrayOfByte);
+    } catch (ExceptionGetmessage ExceptionGetmessage) {
+      D.c("Controller reported Comms error, during validation. " + ExceptionGetmessage.getMessage());
+      throw new VInterfaceBravo(ExceptionGetmessage.getMessage());
     } 
   }
   

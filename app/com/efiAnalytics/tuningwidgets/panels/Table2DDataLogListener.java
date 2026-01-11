@@ -8,15 +8,15 @@ import W.n;
 import bH.D;
 import bt.an;
 import bt.bP;
-import i.a;
-import i.c;
+import i.IComponentAlpha;
+import i.IInterfaceCharlie;
 
-public class Table2DDataLogListener implements bP, a {
-  an a;
+public class Table2DDataLogListener implements bP, IComponentAlpha {
+  an IComponentAlpha;
   
   R b;
   
-  bm c;
+  bm IInterfaceCharlie;
   
   String d = null;
   
@@ -28,64 +28,64 @@ public class Table2DDataLogListener implements bP, a {
   
   public O(R paramR, bm parambm, an paraman) {
     this.b = paramR;
-    this.a = paraman;
-    this.c = parambm;
-    c();
+    this.IComponentAlpha = paraman;
+    this.IInterfaceCharlie = parambm;
+    IInterfaceCharlie();
     d();
   }
   
-  public void a(boolean paramBoolean) {
+  public void IComponentAlpha(boolean paramBoolean) {
     if (paramBoolean) {
-      c.a().a(this);
+      IInterfaceCharlie.IComponentAlpha().IComponentAlpha(this);
     } else {
-      c.a().b(this);
+      IInterfaceCharlie.IComponentAlpha().b(this);
     } 
   }
   
-  public void a(int paramInt) {
+  public void IComponentAlpha(int paramInt) {
     double d1;
     double d2;
-    if (c.a().e() == null)
+    if (IInterfaceCharlie.IComponentAlpha().e() == null)
       return; 
     d();
-    j j1 = c.a().e().b(this.d);
+    j j1 = IInterfaceCharlie.IComponentAlpha().e().b(this.d);
     if (j1 != null) {
       d1 = j1.d(paramInt);
     } else {
       d1 = Double.NaN;
     } 
-    this.a.i().f(d1);
-    c();
-    j j2 = c.a().e().b(this.e);
+    this.IComponentAlpha.i().f(d1);
+    IInterfaceCharlie();
+    j j2 = IInterfaceCharlie.IComponentAlpha().e().b(this.e);
     if (j2 != null) {
       d2 = j2.d(paramInt);
     } else {
       d2 = Double.NaN;
     } 
-    this.a.i().k(d2);
-    this.a.i().repaint();
-    this.a.n();
+    this.IComponentAlpha.i().k(d2);
+    this.IComponentAlpha.i().repaint();
+    this.IComponentAlpha.n();
     this.f = paramInt;
   }
   
-  public void a() {
-    a(true);
+  public void IComponentAlpha() {
+    IComponentAlpha(true);
   }
   
   public void b() {
-    a(false);
+    IComponentAlpha(false);
   }
   
-  private void c() {
-    String str = this.c.f();
+  private void IInterfaceCharlie() {
+    String str = this.IInterfaceCharlie.f();
     if (str == null || str.isEmpty()) {
       this.e = null;
       return;
     } 
-    n n = c.a().e();
+    n n = IInterfaceCharlie.IComponentAlpha().e();
     this.e = bM.j(this.b, str);
     if (n != null) {
-      if (this.e == null || (this.e.isEmpty() && n.a(str) != null))
+      if (this.e == null || (this.e.isEmpty() && n.IComponentAlpha(str) != null))
         this.e = str; 
       if (this.e == null && str.equals("Load")) {
         String str1 = this.b.g("Load").e();
@@ -103,23 +103,23 @@ public class Table2DDataLogListener implements bP, a {
       } 
     } 
     if (this.e == null)
-      D.b("No Data Log field defined for Y axis of table: " + this.c.aL()); 
+      D.b("No Data Log field defined for Y axis of table: " + this.IInterfaceCharlie.aL()); 
   }
   
   private void d() {
-    String str = this.c.l();
-    n n = c.a().e();
+    String str = this.IInterfaceCharlie.l();
+    n n = IInterfaceCharlie.IComponentAlpha().e();
     if (n == null || str == null || str.isEmpty()) {
       this.d = null;
       return;
     } 
-    if (n.a(str) != null) {
+    if (n.IComponentAlpha(str) != null) {
       this.d = str;
     } else {
       this.d = bM.j(this.b, str);
     } 
     if (n != null) {
-      if (this.d == null || (this.d.isEmpty() && n.a(str) != null))
+      if (this.d == null || (this.d.isEmpty() && n.IComponentAlpha(str) != null))
         this.d = str; 
       if (this.d == null && str.equals("Load")) {
         String str1 = this.b.g("Load").e();
@@ -137,7 +137,7 @@ public class Table2DDataLogListener implements bP, a {
       } 
     } 
     if (this.d == null)
-      D.b("No Data Log field defined for X axis of table: " + this.c.aL()); 
+      D.b("No Data Log field defined for X axis of table: " + this.IInterfaceCharlie.aL()); 
   }
 }
 

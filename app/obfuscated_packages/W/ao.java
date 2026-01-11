@@ -1,6 +1,6 @@
 package W;
 
-import aE.a;
+import aE.PropertiesExtension;
 import bH.D;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -17,14 +17,14 @@ import java.util.logging.Logger;
 public class ao implements am {
   private Properties b = null;
   
-  ar a;
+  ar PropertiesExtension;
   
   private File c;
   
   private File d;
   
-  public ao(a parama) {
-    this.a = new ar((Properties)parama, "PersistedAccumulatedValue");
+  public ao(PropertiesExtension parama) {
+    this.PropertiesExtension = new ar((Properties)parama, "PersistedAccumulatedValue");
     this.c = parama.g();
     this.d = new File(this.c.getParentFile(), this.c.getName() + ".bak");
     this.b = new Properties();
@@ -33,12 +33,12 @@ public class ao implements am {
         BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(this.c));
         this.b.load(bufferedInputStream);
       } catch (IOException iOException) {
-        D.a("Failed to load Persisted Channel Properties: " + this.c.getAbsolutePath());
+        D.PropertiesExtension("Failed to load Persisted Channel Properties: " + this.c.getAbsolutePath());
         iOException.printStackTrace();
       }  
   }
   
-  private boolean a(int paramInt) {
+  private boolean PropertiesExtension(int paramInt) {
     try {
       Thread.sleep(paramInt);
       return true;
@@ -48,12 +48,12 @@ public class ao implements am {
     } 
   }
   
-  public void a() {
+  public void PropertiesExtension() {
     if (this.c.exists() && this.c.length() > 0L)
       try {
         if (this.d.exists() && !this.d.delete()) {
           D.b("Failed to delete PersistedChannel Back up File: " + this.d.getAbsolutePath());
-        } else if (!a(50) || !this.c.renameTo(this.d)) {
+        } else if (!PropertiesExtension(50) || !this.c.renameTo(this.d)) {
           D.b("Failed to rename PersistedChannel File: " + this.c.getAbsolutePath() + " to: " + this.d.getAbsolutePath());
         } 
       } catch (Exception exception) {
@@ -82,7 +82,7 @@ public class ao implements am {
     } 
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void PropertiesExtension(String paramString1, String paramString2) {
     if (paramString2 == null || paramString2.isEmpty()) {
       this.b.remove(paramString1);
     } else {
@@ -93,9 +93,9 @@ public class ao implements am {
   public String b(String paramString1, String paramString2) {
     String str = this.b.getProperty(paramString1);
     if (str == null) {
-      str = this.a.b(paramString1, null);
+      str = this.PropertiesExtension.b(paramString1, null);
       if (str != null)
-        a(paramString1, str); 
+        PropertiesExtension(paramString1, str); 
     } 
     if (str == null)
       str = paramString2; 

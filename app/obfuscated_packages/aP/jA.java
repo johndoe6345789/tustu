@@ -3,7 +3,7 @@ package aP;
 import G.J;
 import G.R;
 import G.S;
-import G.a;
+import G.HInterfaceAlpha;
 import G.aB;
 import G.aD;
 import G.aG;
@@ -14,26 +14,26 @@ import G.bO;
 import G.cB;
 import G.cq;
 import G.cu;
-import H.a;
-import H.b;
-import V.a;
-import aF.a;
-import ac.g;
+import H.HInterfaceAlpha;
+import H.HInterfaceBravo;
+import V.HInterfaceAlpha;
+import aF.HInterfaceAlpha;
+import ac.AcInterfaceGolf;
 import bH.D;
-import bl.r;
+import bl.UiSettingServerProviderImpl;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
-import y.a;
+import UiSettingServerProviderImpl.HInterfaceAlpha;
+import y.HInterfaceAlpha;
 
 public class jA implements S {
   private iH e = new iH();
   
-  g a = new g();
+  AcInterfaceGolf HInterfaceAlpha = new AcInterfaceGolf();
   
-  jI b = null;
+  jI HInterfaceBravo = null;
   
   private static jA f = null;
   
@@ -43,94 +43,94 @@ public class jA implements S {
   
   private jA() {
     jH jH = new jH(this);
-    aB.a().a(jH);
-    aB.a().a(jH);
+    aB.HInterfaceAlpha().HInterfaceAlpha(jH);
+    aB.HInterfaceAlpha().HInterfaceAlpha(jH);
   }
   
-  public static jA a() {
+  public static jA HInterfaceAlpha() {
     if (f == null)
       f = new jA(); 
     return f;
   }
   
-  public void a(R paramR) {}
+  public void HInterfaceAlpha(R paramR) {}
   
-  public void b(R paramR) {
-    paramR.C().b(bV.e());
-    r.a().b();
+  public void HInterfaceBravo(R paramR) {
+    paramR.C().HInterfaceBravo(bV.e());
+    UiSettingServerProviderImpl.HInterfaceAlpha().HInterfaceBravo();
   }
   
   public void c(R paramR) {
-    paramR.C().a(new jJ(this));
-    paramR.C().a((aG)dd.a().b());
+    paramR.C().HInterfaceAlpha(new jJ(this));
+    paramR.C().HInterfaceAlpha((aG)dd.HInterfaceAlpha().HInterfaceBravo());
     if (d && paramR.C().n(paramR.c()))
-      paramR.C().a(new aR(paramR.c())); 
-    ArrayList arrayList = a.a(new jH(this)).a(paramR);
+      paramR.C().HInterfaceAlpha(new aR(paramR.c())); 
+    ArrayList arrayList = HInterfaceAlpha.HInterfaceAlpha(new jH(this)).HInterfaceAlpha(paramR);
     if (arrayList != null) {
       Iterator<bO> iterator = arrayList.iterator();
       while (iterator.hasNext())
-        paramR.C().a(iterator.next()); 
+        paramR.C().HInterfaceAlpha(iterator.next()); 
     } 
-    if (a.a().a(a.cm, "true").equals("false") || !paramR.O().aI())
-      paramR.C().b(false); 
-    if (a.a().a(a.aB, a.aC).equals("true")) {
+    if (HInterfaceAlpha.HInterfaceAlpha().HInterfaceAlpha(HInterfaceAlpha.cm, "true").equals("false") || !paramR.O().aI())
+      paramR.C().HInterfaceBravo(false); 
+    if (HInterfaceAlpha.HInterfaceAlpha().HInterfaceAlpha(HInterfaceAlpha.aB, HInterfaceAlpha.aC).equals("true")) {
       paramR.C();
       J.e(true);
     } 
-    int i = a.a().b(a.aD, 0);
+    int i = HInterfaceAlpha.HInterfaceAlpha().HInterfaceBravo(HInterfaceAlpha.aD, 0);
     paramR.C().e(i);
-    paramR.b(this.e);
-    paramR.a(this.e);
-    paramR.C().a(new jB(this));
+    paramR.HInterfaceBravo(this.e);
+    paramR.HInterfaceAlpha(this.e);
+    paramR.C().HInterfaceAlpha(new jB(this));
     if (c) {
-      paramR.a(new hH());
+      paramR.HInterfaceAlpha(new hH());
     } else {
-      paramR.a((cB)new a());
+      paramR.HInterfaceAlpha((cB)new HInterfaceAlpha());
     } 
     if (paramR.O().D() == null) {
-      a a = new a(paramR);
-      paramR.C().a((aD)a);
-      paramR.C().a((aG)a);
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR);
+      paramR.C().HInterfaceAlpha((aD)HInterfaceAlpha);
+      paramR.C().HInterfaceAlpha((aG)HInterfaceAlpha);
     } 
-    if (a.b.equals(a.as) && paramR.i().length() < 3 && paramR.g("Vbatt") != null) {
-      paramR.C().a((aD)new b());
-      a a = new a();
-      paramR.C().a((ai)a);
+    if (HInterfaceAlpha.HInterfaceBravo.equals(HInterfaceAlpha.as) && paramR.i().length() < 3 && paramR.AcInterfaceGolf("Vbatt") != null) {
+      paramR.C().HInterfaceAlpha((aD)new HInterfaceBravo());
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha();
+      paramR.C().HInterfaceAlpha((ai)HInterfaceAlpha);
       try {
-        cu.a().a(paramR.c(), "Vbatt", (cq)a);
-      } catch (a a1) {
-        D.a("Failed to subscribe OnlineApprover to Vbatt");
+        cu.HInterfaceAlpha().HInterfaceAlpha(paramR.c(), "Vbatt", (cq)HInterfaceAlpha);
+      } catch (HInterfaceAlpha a1) {
+        D.HInterfaceAlpha("Failed to subscribe OnlineApprover to Vbatt");
       } 
     } 
-    if (a.b.equals(a.as) || a.b.equals(a.at)) {
+    if (HInterfaceAlpha.HInterfaceBravo.equals(HInterfaceAlpha.as) || HInterfaceAlpha.HInterfaceBravo.equals(HInterfaceAlpha.at)) {
       jC jC = new jC(this);
-      paramR.C().a(jC);
+      paramR.C().HInterfaceAlpha(jC);
     } 
     aM aM = paramR.c("tsCanId");
     if (aM != null)
       try {
-        aR.a().a(paramR.c(), "tsCanId", new jG(this));
-      } catch (a a) {
-        Logger.getLogger(jA.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+        aR.HInterfaceAlpha().HInterfaceAlpha(paramR.c(), "tsCanId", new jG(this));
+      } catch (HInterfaceAlpha HInterfaceAlpha) {
+        Logger.getLogger(jA.class.getName()).log(Level.SEVERE, (String)null, (Throwable)HInterfaceAlpha);
       }  
-    paramR.C().a((aG)this.a);
-    paramR.C().a(bV.e());
+    paramR.C().HInterfaceAlpha((aG)this.HInterfaceAlpha);
+    paramR.C().HInterfaceAlpha(bV.e());
   }
   
   private jI c() {
-    if (this.b == null || !this.b.isAlive()) {
-      this.b = new jI(this);
-      this.b.start();
+    if (this.HInterfaceBravo == null || !this.HInterfaceBravo.isAlive()) {
+      this.HInterfaceBravo = new jI(this);
+      this.HInterfaceBravo.start();
     } 
-    return this.b;
+    return this.HInterfaceBravo;
   }
   
-  public void a(iH paramiH) {
+  public void HInterfaceAlpha(iH paramiH) {
     this.e = paramiH;
   }
   
-  public void b() {
-    while (this.b != null && !this.b.a.isEmpty()) {
+  public void HInterfaceBravo() {
+    while (this.HInterfaceBravo != null && !this.HInterfaceBravo.HInterfaceAlpha.isEmpty()) {
       try {
         Thread.sleep(50L);
       } catch (InterruptedException interruptedException) {

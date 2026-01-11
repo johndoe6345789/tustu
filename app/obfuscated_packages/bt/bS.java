@@ -6,8 +6,8 @@ import G.aN;
 import G.aR;
 import G.be;
 import G.i;
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.X;
 import com.efiAnalytics.ui.bV;
@@ -30,7 +30,7 @@ class bS implements aN, TableModelListener {
   
   bT f = null;
   
-  long g = System.currentTimeMillis();
+  long ExceptionPrintstacktrace = System.currentTimeMillis();
   
   int h = 3000;
   
@@ -60,8 +60,8 @@ class bS implements aN, TableModelListener {
       try {
         double d = this.b.a(this.a.p())[paramTableModelEvent.getColumn()][0];
         a(paramTableModelEvent.getColumn(), s1.b()[paramTableModelEvent.getColumn()] + "", d + "");
-      } catch (g g) {
-        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
     } else if (paramTableModelEvent.getColumn() == -1) {
       try {
@@ -69,8 +69,8 @@ class bS implements aN, TableModelListener {
           double d = this.c.a(this.a.p())[paramTableModelEvent.getFirstRow()][0];
           b(paramTableModelEvent.getFirstRow(), s1.a()[paramTableModelEvent.getFirstRow()] + "", d + "");
         } 
-      } catch (g g) {
-        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
     } else {
       try {
@@ -80,11 +80,11 @@ class bS implements aN, TableModelListener {
           if (this.e.D() != null)
             this.e.D()[paramTableModelEvent.getFirstRow()][paramTableModelEvent.getColumn()].a(d); 
         } 
-      } catch (g g) {
-        g.printStackTrace();
-        bV.d("Error updating table:\n" + g.getMessage(), bV.c());
-      } catch (j j) {
-        s1.a(new Double(j.c()), paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        ExceptionPrintstacktrace.printStackTrace();
+        bV.d("Error updating table:\n" + ExceptionPrintstacktrace.getMessage(), bV.c());
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        s1.a(new Double(ExceptionExtensionGetmessage.c()), paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
       } catch (Exception exception) {
         exception.printStackTrace();
         bV.d("Error updating table:\n" + exception.getMessage() + "\nSee log for more detail.", bV.c());
@@ -96,19 +96,19 @@ class bS implements aN, TableModelListener {
     double d = Double.parseDouble(paramString1);
     try {
       this.b.a(this.a.p(), d, paramInt, 0);
-    } catch (g g) {
-      g.printStackTrace();
-      D.a("Error updating y Axis.", (Exception)g, bV.c());
-    } catch (j j) {
-      if (System.currentTimeMillis() - this.h > this.g)
-        if (j.d() == paramInt && j.a() == 1) {
-          bV.d(this.i.a("The attempted value exceeds the set maximum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + j.b() + "\n" + this.i.a("Set Limit") + ": " + j.c(), bV.c());
-          this.g = System.currentTimeMillis();
-        } else if (j.d() == paramInt && j.a() == 2) {
-          bV.d(this.i.a("The attempted value is below the set minimum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + j.b() + "\n" + this.i.a("Set Limit") + ": " + j.c(), bV.c());
-          this.g = System.currentTimeMillis();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+      D.a("Error updating y Axis.", (Exception)ExceptionPrintstacktrace, bV.c());
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      if (System.currentTimeMillis() - this.h > this.ExceptionPrintstacktrace)
+        if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 1) {
+          bV.d(this.i.a("The attempted value exceeds the set maximum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+          this.ExceptionPrintstacktrace = System.currentTimeMillis();
+        } else if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 2) {
+          bV.d(this.i.a("The attempted value is below the set minimum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+          this.ExceptionPrintstacktrace = System.currentTimeMillis();
         }  
-      D.b(paramString1 + " is out of range.\nLimit:" + j.c());
+      D.b(paramString1 + " is out of range.\nLimit:" + ExceptionExtensionGetmessage.c());
       double d1 = Double.parseDouble(paramString1);
       if (d1 > this.b.s()) {
         this.e.a(this.b.s() + "", paramInt);
@@ -123,24 +123,24 @@ class bS implements aN, TableModelListener {
       double d = Double.parseDouble(paramString1);
       try {
         this.c.a(this.a.p(), d, this.c.b() - 1 - paramInt, 0);
-      } catch (g g) {
-        g.printStackTrace();
-        D.a("Error updating y Axis.", (Exception)g, bV.c());
-      } catch (j j) {
-        if (System.currentTimeMillis() - this.h > this.g)
-          if (j.d() == paramInt && j.a() == 1) {
-            bV.d(this.i.a("The attempted value exceeds the set maximum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + j.b() + "\n" + this.i.a("Set Limit") + ": " + j.c(), bV.c());
-            this.g = System.currentTimeMillis();
-          } else if (j.d() == paramInt && j.a() == 2) {
-            bV.d(this.i.a("The attempted value is below the set minimum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + j.b() + "\n" + this.i.a("Set Limit") + ": " + j.c(), bV.c());
-            this.g = System.currentTimeMillis();
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        ExceptionPrintstacktrace.printStackTrace();
+        D.a("Error updating y Axis.", (Exception)ExceptionPrintstacktrace, bV.c());
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        if (System.currentTimeMillis() - this.h > this.ExceptionPrintstacktrace)
+          if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 1) {
+            bV.d(this.i.a("The attempted value exceeds the set maximum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+            this.ExceptionPrintstacktrace = System.currentTimeMillis();
+          } else if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 2) {
+            bV.d(this.i.a("The attempted value is below the set minimum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+            this.ExceptionPrintstacktrace = System.currentTimeMillis();
           }  
-        D.b(paramString1 + " is out of range.\nLimit:" + j.c());
+        D.b(paramString1 + " is out of range.\nLimit:" + ExceptionExtensionGetmessage.c());
         double d1 = Double.parseDouble(paramString1);
-        if (j.a() == 1) {
-          this.e.b(j.c() + "", paramInt);
+        if (ExceptionExtensionGetmessage.a() == 1) {
+          this.e.b(ExceptionExtensionGetmessage.c() + "", paramInt);
         } else {
-          this.e.b(j.c() + "", paramInt);
+          this.e.b(ExceptionExtensionGetmessage.c() + "", paramInt);
         } 
       } 
     } 
@@ -176,9 +176,9 @@ class bS implements aN, TableModelListener {
           this.e.b(arrayOfString[b], arrayOfString.length - 1 - b);
         } 
       } 
-    } catch (g g) {
-      g.printStackTrace();
-      D.a("Y Axis failed on update, it may now be out of sync.", (Exception)g, null);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+      D.a("Y Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   
@@ -194,9 +194,9 @@ class bS implements aN, TableModelListener {
       String[] arrayOfString = a(this.b.i(this.a.p()), this.b.v());
       for (byte b = 0; b < arrayOfString.length; b++)
         this.e.a(arrayOfString[b], b); 
-    } catch (g g) {
-      g.printStackTrace();
-      D.a("X Axis failed on update, it may now be out of sync.", (Exception)g, null);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+      D.a("X Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   
@@ -230,7 +230,7 @@ class bS implements aN, TableModelListener {
     } 
   }
   
-  private void g() {
+  private void ExceptionPrintstacktrace() {
     try {
       double[][] arrayOfDouble = this.d.i(this.a.p());
       for (byte b = 0; b < arrayOfDouble.length; b++) {
@@ -240,8 +240,8 @@ class bS implements aN, TableModelListener {
             this.e.a(Double.valueOf(arrayOfDouble[b][b1]), b, b1); 
         } 
       } 
-    } catch (g g) {
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
     } 
   }
 }

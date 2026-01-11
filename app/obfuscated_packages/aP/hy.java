@@ -9,10 +9,10 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import r.a;
-import s.g;
-import z.i;
-import z.m;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
+import z.ZInterfaceIndia;
+import z.ExceptionInZPackage;
 
 class hy extends JPanel implements ItemListener {
   private Frame b;
@@ -28,70 +28,70 @@ class hy extends JPanel implements ItemListener {
   public hy(hs paramhs, Frame paramFrame) {
     this.b = paramFrame;
     setLayout(new GridLayout(1, 4, 10, 10));
-    this.c = new JLabel(g.b("Port Name") + ":", 0);
+    this.c = new JLabel(SComponentGolf.b("Port Name") + ":", 0);
     add(this.c);
     this.d = new y();
     this.d.setEditable(true);
     this.d.addItemListener(this);
     add((Component)this.d);
     c();
-    this.d.a(hs.c(paramhs).a());
-    this.e = new JLabel(g.b("Baud Rate") + ":", 0);
+    this.d.IOPropertiesUsingFile(hs.c(paramhs).IOPropertiesUsingFile());
+    this.e = new JLabel(SComponentGolf.b("Baud Rate") + ":", 0);
     add(this.e);
     this.f = new y();
-    i i = new i();
-    String[] arrayOfString = i.c();
+    ZInterfaceIndia ZInterfaceIndia = new ZInterfaceIndia();
+    String[] arrayOfString = ZInterfaceIndia.c();
     for (byte b = 0; b < arrayOfString.length; b++)
       this.f.addItem(arrayOfString[b]); 
-    this.f.a(Integer.toString(hs.c(paramhs).b()));
+    this.f.IOPropertiesUsingFile(Integer.toString(hs.c(paramhs).b()));
     this.f.addItemListener(this);
     add((Component)this.f);
   }
   
-  public void a(String paramString) {
-    this.d.a(paramString);
+  public void IOPropertiesUsingFile(String paramString) {
+    this.d.IOPropertiesUsingFile(paramString);
   }
   
   public void b(String paramString) {
-    this.f.a(paramString);
+    this.f.IOPropertiesUsingFile(paramString);
   }
   
-  public void a() {
-    this.d.a(hs.c(this.a).a());
-    this.f.a(hs.c(this.a).c());
+  public void IOPropertiesUsingFile() {
+    this.d.IOPropertiesUsingFile(hs.c(this.IOPropertiesUsingFile).IOPropertiesUsingFile());
+    this.f.IOPropertiesUsingFile(hs.c(this.IOPropertiesUsingFile).c());
   }
   
   public void b() {
     if (this.f != null && this.d != null) {
-      hs.c(this.a).a(this.d.a());
-      a a = a.a();
-      a.b(a.az, hs.c(this.a).a());
-      hs.c(this.a).b(this.f.a());
-      a.b(a.ay, hs.c(this.a).c());
+      hs.c(this.IOPropertiesUsingFile).IOPropertiesUsingFile(this.d.IOPropertiesUsingFile());
+      IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+      IOPropertiesUsingFile.b(IOPropertiesUsingFile.az, hs.c(this.IOPropertiesUsingFile).IOPropertiesUsingFile());
+      hs.c(this.IOPropertiesUsingFile).b(this.f.IOPropertiesUsingFile());
+      IOPropertiesUsingFile.b(IOPropertiesUsingFile.ay, hs.c(this.IOPropertiesUsingFile).c());
     } 
   }
   
   void c() {
-    i i = new i();
-    String[] arrayOfString = i.a();
+    ZInterfaceIndia ZInterfaceIndia = new ZInterfaceIndia();
+    String[] arrayOfString = ZInterfaceIndia.IOPropertiesUsingFile();
     for (byte b = 0; b < arrayOfString.length; b++)
       this.d.addItem(arrayOfString[b]); 
   }
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (hs.d(this.a) != null && hs.d(this.a).d()) {
+    if (hs.d(this.IOPropertiesUsingFile) != null && hs.d(this.IOPropertiesUsingFile).d()) {
       if (paramItemEvent.getItemSelectable() == this.d) {
-        this.a.e();
-        bV.d("Port Open!\nPort can not\nbe changed\nwhile a port is open.", this.b);
-        a();
+        this.IOPropertiesUsingFile.e();
+        bV.d("Port Open!\nPort can not\nbe changed\nwhile IOPropertiesUsingFile port is open.", this.b);
+        IOPropertiesUsingFile();
         return;
       } 
       b();
       try {
-        hs.d(this.a).b();
-      } catch (m m) {
+        hs.d(this.IOPropertiesUsingFile).b();
+      } catch (ExceptionInZPackage ExceptionInZPackage) {
         bV.d("Unsupported Configuration!\nConfiguration Parameter unsupported,\nselect new value.\nReturning to previous configuration.", this.b);
-        a();
+        IOPropertiesUsingFile();
       } 
     } else {
       b();

@@ -1,8 +1,8 @@
 package ao;
 
-import c.e;
+import c.CInterfaceEcho;
 
-class cp implements e {
+class cp implements CInterfaceEcho {
   cp(cd paramcd) {}
   
   public boolean a() {

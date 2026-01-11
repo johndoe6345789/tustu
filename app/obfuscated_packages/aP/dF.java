@@ -1,24 +1,24 @@
 package aP;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
+import r.ExceptionInVPackage;
 
 class dF implements ActionListener {
   dF(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();
-    a.a().b(a.cn, str);
+    ExceptionInVPackage.ExceptionInVPackage().b(ExceptionInVPackage.cn, str);
     try {
-      a.a().e();
-    } catch (a a) {
-      Logger.getLogger(dB.class.getName()).log(Level.WARNING, "Error saving user properties", (Throwable)a);
+      ExceptionInVPackage.ExceptionInVPackage().e();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(dB.class.getName()).log(Level.WARNING, "Error saving user properties", (Throwable)ExceptionInVPackage);
     } 
-    dB.b(this.a);
+    dB.b(this.ExceptionInVPackage);
   }
 }
 

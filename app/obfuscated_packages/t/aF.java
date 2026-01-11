@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 public class aF extends a implements f {
   String a = "Gauge Angles";
@@ -27,7 +27,7 @@ public class aF extends a implements f {
   
   JSlider e;
   
-  JPanel g = new JPanel();
+  JPanel SComponentGolf = new JPanel();
   
   JLabel h;
   
@@ -37,21 +37,21 @@ public class aF extends a implements f {
   
   JLabel k;
   
-  public static String l = g.b("Face Angle / Fill");
+  public static String l = SComponentGolf.b("Face Angle / Fill");
   
-  public static String m = g.b("Face Start Angle / Height");
+  public static String m = SComponentGolf.b("Face Start Angle / Height");
   
-  public static String n = g.b("Sweep Angle");
+  public static String n = SComponentGolf.b("Sweep Angle");
   
-  public static String o = g.b("Needle Start Angle");
+  public static String o = SComponentGolf.b("Needle Start Angle");
   
   private boolean p = false;
   
   public aF(Window paramWindow, ai paramai) {
-    super(paramWindow, g.b("Gauge Angles"));
+    super(paramWindow, SComponentGolf.b("Gauge Angles"));
     a(paramai);
-    this.g.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), this.a));
-    this.g.setLayout(new BorderLayout());
+    this.SComponentGolf.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), this.a));
+    this.SComponentGolf.setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
     this.b = a(0, 0, 360, l);
@@ -74,7 +74,7 @@ public class aF extends a implements f {
     this.e.setSnapToTicks(true);
     this.e.addChangeListener(new aJ(this));
     jPanel1.add(this.e);
-    this.g.add("Center", jPanel1);
+    this.SComponentGolf.add("Center", jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(0, 1));
     this.h = new JLabel();
@@ -85,8 +85,8 @@ public class aF extends a implements f {
     jPanel2.add(this.i);
     jPanel2.add(this.j);
     jPanel2.add(this.k);
-    this.g.add("East", jPanel2);
-    add(this.g, "Center");
+    this.SComponentGolf.add("East", jPanel2);
+    add(this.SComponentGolf, "Center");
     pack();
   }
   
@@ -154,7 +154,7 @@ public class aF extends a implements f {
   }
   
   public JPanel a() {
-    return this.g;
+    return this.SComponentGolf;
   }
 }
 

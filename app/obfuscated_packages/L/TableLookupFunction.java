@@ -1,6 +1,6 @@
 package L;
 
-import ax.U;
+import ax.ExceptionInAxPackage;
 import ax.ab;
 import ax.ac;
 import bH.F;
@@ -27,7 +27,7 @@ public class TableLookupFunction extends ac {
       double d = this.b.b(paramS);
       return f.a(d);
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new U("inc lookup failed: " + fileNotFoundException.getMessage());
+      throw new ExceptionInAxPackage("inc lookup failed: " + fileNotFoundException.getMessage());
     } 
   }
   

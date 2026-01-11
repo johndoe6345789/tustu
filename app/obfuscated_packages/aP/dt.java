@@ -1,9 +1,9 @@
 package aP;
 
 import bH.X;
-import bV.b;
+import bV.BvInterfaceBravo;
 
-class dt implements b {
+class dt implements BvInterfaceBravo {
   long a = 0L;
   
   dt(dl paramdl) {}
@@ -14,7 +14,7 @@ class dt implements b {
     double d1 = paramLong1 / paramLong2;
     f.a().a(d1);
     double d2 = paramLong1 / 1024.0D / (System.currentTimeMillis() - this.a) / 1000.0D;
-    f.a().f((paramLong1 / 1024L) + " kbytes of " + (paramLong2 / 1024L) + " kbytes downloaded at " + X.b(d2, 1) + " kbytes/s");
+    f.a().f((paramLong1 / 1024L) + " kbytes of " + (paramLong2 / 1024L) + " kbytes downloaded at " + X.BvInterfaceBravo(d2, 1) + " kbytes/s");
   }
   
   public void a() {

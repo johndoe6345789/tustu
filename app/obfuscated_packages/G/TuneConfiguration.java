@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ public class TuneConfiguration implements aI, cr {
   
   private J f = null;
   
-  private String g = "";
+  private String ExceptionPrintstacktrace = "";
   
   private boolean h = false;
   
@@ -63,7 +63,7 @@ public class TuneConfiguration implements aI, cr {
     r.f = this.f;
     r.e = null;
     r.c = this.c;
-    r.g = this.g;
+    r.ExceptionPrintstacktrace = this.ExceptionPrintstacktrace;
     r.d = this.d;
     return r;
   }
@@ -77,7 +77,7 @@ public class TuneConfiguration implements aI, cr {
     r.f = this.f;
     r.e = null;
     r.c = this.c;
-    r.g = this.g;
+    r.ExceptionPrintstacktrace = this.ExceptionPrintstacktrace;
     r.d = this.d;
     return r;
   }
@@ -148,7 +148,7 @@ public class TuneConfiguration implements aI, cr {
     return this.b.m();
   }
   
-  public ArrayList g() {
+  public ArrayList ExceptionPrintstacktrace() {
     return this.b.n();
   }
   
@@ -214,7 +214,7 @@ public class TuneConfiguration implements aI, cr {
   
   public Iterator a(int paramInt) {
     if (this.d.isEmpty()) {
-      for (byte b = -1; b < O().g(); b++) {
+      for (byte b = -1; b < O().ExceptionPrintstacktrace(); b++) {
         ArrayList arrayList = new ArrayList();
         this.d.put(Integer.valueOf(b), arrayList);
       } 
@@ -286,7 +286,7 @@ public class TuneConfiguration implements aI, cr {
     return arrayList.<String>toArray(new String[arrayList.size()]);
   }
   
-  public aH g(String paramString) {
+  public aH ExceptionPrintstacktrace(String paramString) {
     return (aH)this.b.f().get(paramString);
   }
   
@@ -360,11 +360,11 @@ public class TuneConfiguration implements aI, cr {
   }
   
   public void a(ah paramah) {
-    this.b.g().put(paramah.aL(), paramah);
+    this.b.ExceptionPrintstacktrace().put(paramah.aL(), paramah);
   }
   
   public ah k(String paramString) {
-    return (ah)this.b.g().get(paramString);
+    return (ah)this.b.ExceptionPrintstacktrace().get(paramString);
   }
   
   public void a(ak paramak) {
@@ -393,10 +393,10 @@ public class TuneConfiguration implements aI, cr {
   }
   
   public void l(String paramString) {
-    if (paramString.equals(cd.e) || paramString.equals(cd.f) || paramString.equals(cd.g) || paramString.equals(cd.h) || paramString.equals(cd.i) || paramString.equals(cd.j) || paramString.equals(cd.k) || paramString.equals(cd.l)) {
+    if (paramString.equals(cd.e) || paramString.equals(cd.f) || paramString.equals(cd.ExceptionPrintstacktrace) || paramString.equals(cd.h) || paramString.equals(cd.i) || paramString.equals(cd.j) || paramString.equals(cd.k) || paramString.equals(cd.l)) {
       this.b.q().add(paramString);
     } else {
-      throw new g("Unsupported Standard Logger '" + paramString + "'. Supported types: " + cd.e + ", " + cd.f + ", " + cd.g + ", " + cd.h + ", " + cd.i + ", " + cd.j + ", " + cd.k + ", " + cd.l + " ");
+      throw new ExceptionPrintstacktrace("Unsupported Standard Logger '" + paramString + "'. Supported types: " + cd.e + ", " + cd.f + ", " + cd.ExceptionPrintstacktrace + ", " + cd.h + ", " + cd.i + ", " + cd.j + ", " + cd.k + ", " + cd.l + " ");
     } 
   }
   
@@ -424,7 +424,7 @@ public class TuneConfiguration implements aI, cr {
   }
   
   public Iterator B() {
-    return (this.b.g() != null && this.b.g().values() != null) ? this.b.g().values().iterator() : null;
+    return (this.b.ExceptionPrintstacktrace() != null && this.b.ExceptionPrintstacktrace().values() != null) ? this.b.ExceptionPrintstacktrace().values().iterator() : null;
   }
   
   public void a(String paramString1, String paramString2) {
@@ -497,17 +497,17 @@ public class TuneConfiguration implements aI, cr {
       if (!aM.C())
         for (byte b = 0; b < aM.z(); b++) {
           if (aM.d() >= 0)
-            paramJ.a(this.c, aM.d(), aM.g() + b, false); 
+            paramJ.a(this.c, aM.d(), aM.ExceptionPrintstacktrace() + b, false); 
         }  
     } 
   }
   
   public String F() {
-    return this.g;
+    return this.ExceptionPrintstacktrace;
   }
   
   public void q(String paramString) {
-    this.g = paramString;
+    this.ExceptionPrintstacktrace = paramString;
   }
   
   public cs G() {
@@ -638,7 +638,7 @@ public class TuneConfiguration implements aI, cr {
   
   public void d(String paramString1, String paramString2) {
     if (paramString2.length() > 1500)
-      throw new g("Context Help length is " + paramString2.length() + ", this should be 1500 or less characters in length."); 
+      throw new ExceptionPrintstacktrace("Context Help length is " + paramString2.length() + ", this should be 1500 or less characters in length."); 
     this.b.r().put(paramString1, paramString2);
   }
   
@@ -696,7 +696,7 @@ public class TuneConfiguration implements aI, cr {
   private void al() {
     if (this.i == null) {
       this.i = new HashMap<>();
-      for (byte b = 0; b < this.b.v().g(); b++) {
+      for (byte b = 0; b < this.b.v().ExceptionPrintstacktrace(); b++) {
         ArrayList<ck> arrayList = new ArrayList();
         this.i.put(Integer.valueOf(b), arrayList);
         ck ck = null;
@@ -704,14 +704,14 @@ public class TuneConfiguration implements aI, cr {
         while (iterator.hasNext()) {
           aM aM = iterator.next();
           if (aM.N()) {
-            if (ck == null || ck.a() + ck.b() < aM.g()) {
-              ck = new ck(aM.g(), aM.z());
+            if (ck == null || ck.a() + ck.b() < aM.ExceptionPrintstacktrace()) {
+              ck = new ck(aM.ExceptionPrintstacktrace(), aM.z());
               arrayList.add(ck);
               continue;
             } 
-            int i = aM.g() - ck.a();
+            int i = aM.ExceptionPrintstacktrace() - ck.a();
             ck.b(Math.max(ck.b(), i + aM.z()));
-            ck.a(Math.min(ck.a(), aM.g()));
+            ck.a(Math.min(ck.a(), aM.ExceptionPrintstacktrace()));
           } 
         } 
       } 
@@ -741,7 +741,7 @@ public class TuneConfiguration implements aI, cr {
   }
   
   public void b(ah paramah) {
-    this.b.g().remove(paramah.aL());
+    this.b.ExceptionPrintstacktrace().remove(paramah.aL());
   }
   
   public void A(String paramString) {

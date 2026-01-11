@@ -26,14 +26,14 @@ import javax.swing.JSpinner;
 import javax.swing.JTable;
 import javax.swing.SpinnerListModel;
 import javax.swing.table.TableModel;
-import n.b;
-import r.a;
-import s.g;
+import n.JPanelExtensionInNPackage;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 public class jc extends dF implements aO, FocusListener {
-  int a = 1;
+  int IOPropertiesUsingFile = 1;
   
-  int b = 16;
+  int JPanelExtensionInNPackage = 16;
   
   Y c = null;
   
@@ -43,7 +43,7 @@ public class jc extends dF implements aO, FocusListener {
   
   Vector f = new Vector();
   
-  jj g = new jj(this, this.d);
+  jj SComponentGolf = new jj(this, this.d);
   
   jp h = new jp(this);
   
@@ -67,83 +67,83 @@ public class jc extends dF implements aO, FocusListener {
     super(paramFrame, "Controller RAM Editor");
     this.c = paramY;
     setDefaultCloseOperation(2);
-    a(a.a().c(a.aU, this.a));
+    IOPropertiesUsingFile(IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.aU, this.IOPropertiesUsingFile));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new FlowLayout());
     Integer[] arrayOfInteger = new Integer[paramY.e()];
-    for (byte b = 0; b < arrayOfInteger.length; b++)
-      arrayOfInteger[arrayOfInteger.length - b - 1] = new Integer(b); 
+    for (byte JPanelExtensionInNPackage = 0; JPanelExtensionInNPackage < arrayOfInteger.length; JPanelExtensionInNPackage++)
+      arrayOfInteger[arrayOfInteger.length - JPanelExtensionInNPackage - 1] = new Integer(JPanelExtensionInNPackage); 
     SpinnerListModel spinnerListModel = new SpinnerListModel((Object[])arrayOfInteger);
     JSpinner jSpinner = new JSpinner(spinnerListModel);
     jSpinner.setValue(arrayOfInteger[arrayOfInteger.length - 1]);
     jSpinner.addChangeListener(new jd(this));
     jPanel1.add(new JLabel("Page:"));
-    jSpinner.setPreferredSize(eJ.a(40, 20));
+    jSpinner.setPreferredSize(eJ.IOPropertiesUsingFile(40, 20));
     jPanel1.add(jSpinner);
     JPanel jPanel2 = new JPanel();
     ButtonGroup buttonGroup = new ButtonGroup();
     jPanel2.setLayout(new GridLayout(1, 0));
-    JRadioButton jRadioButton = new JRadioButton("Bin", (this.a == 3));
+    JRadioButton jRadioButton = new JRadioButton("Bin", (this.IOPropertiesUsingFile == 3));
     jRadioButton.addActionListener(new je(this));
     jPanel2.add(jRadioButton);
     buttonGroup.add(jRadioButton);
-    jRadioButton = new JRadioButton("Dec", (this.a == 2));
+    jRadioButton = new JRadioButton("Dec", (this.IOPropertiesUsingFile == 2));
     jRadioButton.addActionListener(new jf(this));
     jPanel2.add(jRadioButton);
     buttonGroup.add(jRadioButton);
-    jRadioButton = new JRadioButton("Hex", (this.a == 1));
+    jRadioButton = new JRadioButton("Hex", (this.IOPropertiesUsingFile == 1));
     jRadioButton.addActionListener(new jg(this));
     jPanel2.add(jRadioButton);
     buttonGroup.add(jRadioButton);
     jPanel1.add(jPanel2);
-    b b1 = new b();
-    b1.a(this);
+    JPanelExtensionInNPackage b1 = new JPanelExtensionInNPackage();
+    b1.IOPropertiesUsingFile(this);
     jPanel1.add((Component)b1);
     add("South", jPanel1);
     for (String str : this.n)
       this.e.add(str); 
     this.d.setColumnIdentifiers(this.e);
     this.d.addTableModelListener(new js(this));
-    this.j = new JScrollPane(this.g);
+    this.j = new JScrollPane(this.SComponentGolf);
     this.j.setRowHeaderView(this.i);
     this.j.setCorner("UPPER_LEFT_CORNER", this.i.getTableHeader());
     Vector<String> vector = new Vector();
     vector.add(" ");
     this.h.setColumnIdentifiers(vector);
-    this.i.getColumnModel().getColumn(0).setPreferredWidth(eJ.a(50));
+    this.i.getColumnModel().getColumn(0).setPreferredWidth(eJ.IOPropertiesUsingFile(50));
     this.i.setPreferredScrollableViewportSize(this.i.getPreferredSize());
     add("Center", this.j);
-    b(0);
+    JPanelExtensionInNPackage(0);
     setSize(720, 480);
-    bV.a(paramFrame, (Component)this);
-    paramY.a(this.m);
-    this.g.addMouseListener(new jt(this));
+    bV.IOPropertiesUsingFile(paramFrame, (Component)this);
+    paramY.IOPropertiesUsingFile(this.m);
+    this.SComponentGolf.addMouseListener(new jt(this));
   }
   
-  public void a(int paramInt) {
+  public void IOPropertiesUsingFile(int paramInt) {
     if (paramInt < 1 || paramInt > 3)
       return; 
-    this.a = paramInt;
+    this.IOPropertiesUsingFile = paramInt;
     if (isVisible())
-      b(this.k); 
-    a.a().b(a.aU, this.a + "");
+      JPanelExtensionInNPackage(this.k); 
+    IOPropertiesUsingFile.IOPropertiesUsingFile().JPanelExtensionInNPackage(IOPropertiesUsingFile.aU, this.IOPropertiesUsingFile + "");
   }
   
-  private int b(String paramString) {
-    byte b;
-    paramString = X.b(paramString, "0x", "");
-    paramString = X.b(paramString, "0b", "");
-    if (this.a == 1) {
-      b = 16;
-    } else if (this.a == 3) {
-      b = 2;
+  private int JPanelExtensionInNPackage(String paramString) {
+    byte JPanelExtensionInNPackage;
+    paramString = X.JPanelExtensionInNPackage(paramString, "0x", "");
+    paramString = X.JPanelExtensionInNPackage(paramString, "0b", "");
+    if (this.IOPropertiesUsingFile == 1) {
+      JPanelExtensionInNPackage = 16;
+    } else if (this.IOPropertiesUsingFile == 3) {
+      JPanelExtensionInNPackage = 2;
     } else {
-      b = 10;
+      JPanelExtensionInNPackage = 10;
     } 
-    return Integer.parseInt(paramString, b);
+    return Integer.parseInt(paramString, JPanelExtensionInNPackage);
   }
   
-  private String b(int paramInt1, int paramInt2) {
+  private String JPanelExtensionInNPackage(int paramInt1, int paramInt2) {
     if (paramInt1 > 255) {
       paramInt1 = 255;
     } else if (paramInt1 < 0) {
@@ -151,16 +151,16 @@ public class jc extends dF implements aO, FocusListener {
     } 
     switch (paramInt2) {
       case 1:
-        return "0x" + X.a(Integer.toHexString(paramInt1).toUpperCase(), '0', 2);
+        return "0x" + X.IOPropertiesUsingFile(Integer.toHexString(paramInt1).toUpperCase(), '0', 2);
       case 2:
         return Integer.toString(paramInt1);
       case 3:
-        return "0b" + X.a(Integer.toBinaryString(paramInt1).toUpperCase(), '0', 8);
+        return "0b" + X.IOPropertiesUsingFile(Integer.toBinaryString(paramInt1).toUpperCase(), '0', 8);
     } 
-    return "0x" + X.a(Integer.toHexString(paramInt1).toUpperCase(), '0', 2);
+    return "0x" + X.IOPropertiesUsingFile(Integer.toHexString(paramInt1).toUpperCase(), '0', 2);
   }
   
-  public void b(int paramInt) {
+  public void JPanelExtensionInNPackage(int paramInt) {
     if (this.c == null || paramInt < 0 || paramInt >= this.c.e()) {
       bV.d("Invalid Page: " + paramInt, (Component)this);
       return;
@@ -168,16 +168,16 @@ public class jc extends dF implements aO, FocusListener {
     this.k = paramInt;
     this.f.clear();
     Vector<Vector<String>> vector = new Vector();
-    int[] arrayOfInt = this.c.b(paramInt);
-    byte b = 0;
-    while (b < arrayOfInt.length) {
+    int[] arrayOfInt = this.c.JPanelExtensionInNPackage(paramInt);
+    byte JPanelExtensionInNPackage = 0;
+    while (JPanelExtensionInNPackage < arrayOfInt.length) {
       Vector<String> vector2 = new Vector();
       this.f.add(vector2);
       Vector<String> vector3 = new Vector();
-      vector3.add("  " + X.a(Integer.toHexString(b).toUpperCase(), '0', 4));
+      vector3.add("  " + X.IOPropertiesUsingFile(Integer.toHexString(JPanelExtensionInNPackage).toUpperCase(), '0', 4));
       vector.add(vector3);
-      for (byte b1 = 0; b < arrayOfInt.length && b1 < this.b; b1++)
-        vector2.add(b(arrayOfInt[b++], this.a)); 
+      for (byte b1 = 0; JPanelExtensionInNPackage < arrayOfInt.length && b1 < this.JPanelExtensionInNPackage; b1++)
+        vector2.add(JPanelExtensionInNPackage(arrayOfInt[JPanelExtensionInNPackage++], this.IOPropertiesUsingFile)); 
     } 
     Vector<String> vector1 = new Vector();
     vector1.add(" ");
@@ -186,29 +186,29 @@ public class jc extends dF implements aO, FocusListener {
   }
   
   public void c(int paramInt) {
-    for (byte b = 0; b < this.d.getRowCount(); b++) {
+    for (byte JPanelExtensionInNPackage = 0; JPanelExtensionInNPackage < this.d.getRowCount(); JPanelExtensionInNPackage++) {
       for (byte b1 = 0; b1 < this.d.getColumnCount(); b1++) {
-        if (this.g.isCellSelected(b, b1)) {
-          TableModel tableModel = this.g.getModel();
+        if (this.SComponentGolf.isCellSelected(JPanelExtensionInNPackage, b1)) {
+          TableModel tableModel = this.SComponentGolf.getModel();
           try {
-            if (((Vector)this.f.get(b)).get(b1) != null) {
-              int i = b(((Vector<String>)this.f.get(b)).get(b1));
-              tableModel.setValueAt(b(paramInt + i, this.a), b, b1);
+            if (((Vector)this.f.get(JPanelExtensionInNPackage)).get(b1) != null) {
+              int i = JPanelExtensionInNPackage(((Vector<String>)this.f.get(JPanelExtensionInNPackage)).get(b1));
+              tableModel.setValueAt(JPanelExtensionInNPackage(paramInt + i, this.IOPropertiesUsingFile), JPanelExtensionInNPackage, b1);
             } 
           } catch (NumberFormatException numberFormatException) {
-            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(b)).get(b1));
+            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(JPanelExtensionInNPackage)).get(b1));
           } 
         } 
       } 
     } 
-    this.g.repaint();
+    this.SComponentGolf.repaint();
   }
   
-  public void a(String paramString) {
+  public void IOPropertiesUsingFile(String paramString) {
     if (paramString != null && paramString.equals("Increment - Key: > or ,")) {
-      a();
+      IOPropertiesUsingFile();
     } else if (paramString != null && paramString.equals("Decrement - Key: < or .")) {
-      g();
+      SComponentGolf();
     } else if (paramString != null && paramString.equals("Increase by - Key: +")) {
       j();
     } else if (paramString != null && paramString.equals("Decrease by - Key: -")) {
@@ -216,17 +216,17 @@ public class jc extends dF implements aO, FocusListener {
     } else if (paramString != null && paramString.equals("Scale by - Key: *")) {
       h();
     } else if (paramString != null && paramString.equals("Set to - Key: =")) {
-      b();
+      JPanelExtensionInNPackage();
     } 
   }
   
-  public void a() {
+  public void IOPropertiesUsingFile() {
     c(1);
   }
   
-  public void b() {
-    String str = bV.a("{" + c("Set Selected Cells to") + ":}", true, c("Set Cell Values"), true, (Component)this);
-    this.g.requestFocus();
+  public void JPanelExtensionInNPackage() {
+    String str = bV.IOPropertiesUsingFile("{" + c("Set Selected Cells to") + ":}", true, c("Set Cell Values"), true, (Component)this);
+    this.SComponentGolf.requestFocus();
     if (str != null && !str.equals("")) {
       int i = Integer.parseInt(str);
       d(i);
@@ -238,14 +238,14 @@ public class jc extends dF implements aO, FocusListener {
       bV.d("Invalid Value: " + paramInt, (Component)this);
       return;
     } 
-    for (byte b = 0; b < this.g.getColumnCount(); b++) {
-      for (byte b1 = 0; b1 < this.g.getRowCount(); b1++) {
-        if (this.g.isCellSelected(b1, b)) {
-          TableModel tableModel = this.g.getModel();
+    for (byte JPanelExtensionInNPackage = 0; JPanelExtensionInNPackage < this.SComponentGolf.getColumnCount(); JPanelExtensionInNPackage++) {
+      for (byte b1 = 0; b1 < this.SComponentGolf.getRowCount(); b1++) {
+        if (this.SComponentGolf.isCellSelected(b1, JPanelExtensionInNPackage)) {
+          TableModel tableModel = this.SComponentGolf.getModel();
           try {
-            tableModel.setValueAt(b(paramInt, this.a), b1, b);
+            tableModel.setValueAt(JPanelExtensionInNPackage(paramInt, this.IOPropertiesUsingFile), b1, JPanelExtensionInNPackage);
           } catch (NumberFormatException numberFormatException) {
-            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(b1)).get(b));
+            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(b1)).get(JPanelExtensionInNPackage));
           } 
         } 
       } 
@@ -254,21 +254,21 @@ public class jc extends dF implements aO, FocusListener {
   }
   
   public void c() {
-    String str = bV.a("{" + c("Decrease Selected Cells by") + ":}", true, c("Subtract From Cells"), true, (Component)this);
-    this.g.requestFocus();
+    String str = bV.IOPropertiesUsingFile("{" + c("Decrease Selected Cells by") + ":}", true, c("Subtract From Cells"), true, (Component)this);
+    this.SComponentGolf.requestFocus();
     if (str != null && !str.equals("")) {
       int i = Integer.parseInt(str);
       c(-i);
     } 
   }
   
-  public void g() {
+  public void SComponentGolf() {
     c(-1);
   }
   
   public void h() {
-    String str = bV.a("{" + c("Multiply Selected Cells by: ex. 1.2 = raise by 20%") + "}", true, c("Scale Cells"), true, (Component)this);
-    this.g.requestFocus();
+    String str = bV.IOPropertiesUsingFile("{" + c("Multiply Selected Cells by: ex. 1.2 = raise by 20%") + "}", true, c("Scale Cells"), true, (Component)this);
+    this.SComponentGolf.requestFocus();
     if (str != null && !str.equals("")) {
       int i = Integer.parseInt(str);
       e(i);
@@ -276,8 +276,8 @@ public class jc extends dF implements aO, FocusListener {
   }
   
   public void j() {
-    String str = bV.a("{" + c("Increase Selected Cells by") + ":}", true, c("Add To Cells"), true, (Component)this);
-    this.g.requestFocus();
+    String str = bV.IOPropertiesUsingFile("{" + c("Increase Selected Cells by") + ":}", true, c("Add To Cells"), true, (Component)this);
+    this.SComponentGolf.requestFocus();
     if (str != null && !str.equals("")) {
       int i = Integer.parseInt(str);
       c(i);
@@ -285,27 +285,27 @@ public class jc extends dF implements aO, FocusListener {
   }
   
   private String c(String paramString) {
-    return g.b(paramString);
+    return SComponentGolf.JPanelExtensionInNPackage(paramString);
   }
   
   public void e(int paramInt) {
-    for (byte b = 0; b < this.g.getColumnCount(); b++) {
-      for (byte b1 = 0; b1 < this.g.getRowCount(); b1++) {
-        if (this.g.isCellSelected(b1, b))
+    for (byte JPanelExtensionInNPackage = 0; JPanelExtensionInNPackage < this.SComponentGolf.getColumnCount(); JPanelExtensionInNPackage++) {
+      for (byte b1 = 0; b1 < this.SComponentGolf.getRowCount(); b1++) {
+        if (this.SComponentGolf.isCellSelected(b1, JPanelExtensionInNPackage))
           try {
-            TableModel tableModel = this.g.getModel();
-            int i = b(((Vector<String>)this.f.get(b1)).get(b));
-            tableModel.setValueAt(b(paramInt * i, this.a), b1, b);
+            TableModel tableModel = this.SComponentGolf.getModel();
+            int i = JPanelExtensionInNPackage(((Vector<String>)this.f.get(b1)).get(JPanelExtensionInNPackage));
+            tableModel.setValueAt(JPanelExtensionInNPackage(paramInt * i, this.IOPropertiesUsingFile), b1, JPanelExtensionInNPackage);
           } catch (NumberFormatException numberFormatException) {
-            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(b1)).get(b));
+            D.c("Unable to parse: " + (String)((Vector<String>)this.f.get(b1)).get(JPanelExtensionInNPackage));
           }  
       } 
     } 
   }
   
-  public void a(int paramInt1, int paramInt2) {
+  public void IOPropertiesUsingFile(int paramInt1, int paramInt2) {
     JPopupMenu jPopupMenu = new JPopupMenu();
-    this.g.add(jPopupMenu);
+    this.SComponentGolf.add(jPopupMenu);
     jh jh = new jh(this);
     jPopupMenu.add("Set to - Key: =").addActionListener(jh);
     jPopupMenu.add("Increment - Key: > or ,").addActionListener(jh);
@@ -313,7 +313,7 @@ public class jc extends dF implements aO, FocusListener {
     jPopupMenu.add("Increase by - Key: +").addActionListener(jh);
     jPopupMenu.add("Decrease by - Key: -").addActionListener(jh);
     jPopupMenu.add("Scale by - Key: *").addActionListener(jh);
-    jPopupMenu.show(this.g, paramInt1, paramInt2);
+    jPopupMenu.show(this.SComponentGolf, paramInt1, paramInt2);
   }
   
   public void e() {}
@@ -321,7 +321,7 @@ public class jc extends dF implements aO, FocusListener {
   public void d() {}
   
   public void f() {
-    T.a().c().I();
+    T.IOPropertiesUsingFile().c().I();
   }
   
   public void i() {
@@ -329,7 +329,7 @@ public class jc extends dF implements aO, FocusListener {
   }
   
   public void dispose() {
-    this.c.b(this.m);
+    this.c.JPanelExtensionInNPackage(this.m);
     super.dispose();
   }
   

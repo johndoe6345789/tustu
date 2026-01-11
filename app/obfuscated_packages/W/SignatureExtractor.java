@@ -1,6 +1,6 @@
 package W;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
 import java.io.BufferedReader;
@@ -203,8 +203,8 @@ public class SignatureExtractor {
           try {
             ag ag = aa.b(arrayOfFile[b]);
             arrayList.add(ag);
-          } catch (g g) {
-            D.d("Failed to get MsqSummary for " + arrayOfFile[b] + "\nReported Error:" + g.getMessage());
+          } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+            D.d("Failed to get MsqSummary for " + arrayOfFile[b] + "\nReported Error:" + ExceptionPrintstacktrace.getMessage());
           }  
       } 
     } 

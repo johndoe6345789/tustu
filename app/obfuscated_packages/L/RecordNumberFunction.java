@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -15,11 +15,11 @@ public class RecordNumberFunction extends ac {
     this.a = paramab;
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     return this.a.b(paramS);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

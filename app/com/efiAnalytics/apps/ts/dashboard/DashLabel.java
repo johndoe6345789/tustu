@@ -4,7 +4,7 @@ import G.c;
 import G.cZ;
 import G.da;
 import G.db;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.cq;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -28,7 +28,7 @@ public class DashLabel extends s implements Serializable {
   
   cZ b = null;
   
-  private Font g = null;
+  private Font ExceptionPrintstacktrace = null;
   
   Dimension c = null;
   
@@ -49,7 +49,7 @@ public class DashLabel extends s implements Serializable {
   public void goDead() {}
   
   public void invalidatePainter() {
-    this.g = null;
+    this.ExceptionPrintstacktrace = null;
   }
   
   public String getText() {
@@ -59,8 +59,8 @@ public class DashLabel extends s implements Serializable {
   public void setText(String paramString) {
     try {
       this.a = da.a().a(this.b, paramString);
-    } catch (g g) {
-      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     invalidatePainter();
   }
@@ -76,8 +76,8 @@ public class DashLabel extends s implements Serializable {
     } 
     try {
       drawText(paramGraphics, this.a.a(), getTextColor());
-    } catch (g g) {
-      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
   }
   
@@ -104,16 +104,16 @@ public class DashLabel extends s implements Serializable {
   
   protected Font getTextFont() {
     String str2;
-    if (this.g != null && sameSize())
-      return this.g; 
+    if (this.ExceptionPrintstacktrace != null && sameSize())
+      return this.ExceptionPrintstacktrace; 
     this.c = getSize();
     int i = getHeight() - (getInsets()).top - (getInsets()).bottom;
     int j = getWidth() - (getInsets()).left - (getInsets()).right;
     String str1 = getFontFamily();
     try {
       str2 = this.a.a();
-    } catch (g g) {
-      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       str2 = "Error";
     } 
     byte b = isItalicFont() ? 2 : 0;
@@ -123,8 +123,8 @@ public class DashLabel extends s implements Serializable {
     while (true) {
       FontMetrics fontMetrics = getFontMetrics(font);
       if (fontMetrics.stringWidth(str2) < j || i < 1) {
-        this.g = font;
-        return this.g;
+        this.ExceptionPrintstacktrace = font;
+        return this.ExceptionPrintstacktrace;
       } 
       font = cq.a().a(str1, b, --i);
     } 
@@ -155,7 +155,7 @@ public class DashLabel extends s implements Serializable {
   }
   
   public boolean requiresBackgroundRepaint() {
-    return (this.g == null);
+    return (this.ExceptionPrintstacktrace == null);
   }
   
   public void invalidate() {

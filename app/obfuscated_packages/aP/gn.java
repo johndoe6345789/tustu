@@ -1,13 +1,13 @@
 package aP;
 
 import com.efiAnalytics.ui.eA;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class gn implements eA {
   gn(dB paramdB) {}
   
-  public boolean a() {
-    return a.a().c(a.bw, true);
+  public boolean IOPropertiesUsingFile() {
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.bw, true);
   }
 }
 

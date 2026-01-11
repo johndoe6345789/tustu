@@ -6,14 +6,14 @@ import G.aN;
 import G.aR;
 import G.be;
 import G.bi;
-import G.i;
-import V.a;
-import V.g;
-import V.j;
-import aE.a;
-import ai.b;
-import ai.d;
-import ai.e;
+import G.RInterfaceIndia;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
+import aE.ExceptionInVPackage;
+import ai.EqualsInAiPackage;
+import ai.AiInterfaceDelta;
+import ai.AiInterfaceEcho;
 import bH.D;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.T;
@@ -38,47 +38,47 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import n.n;
-import r.a;
-import r.i;
-import s.g;
+import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
+import r.ExceptionInVPackage;
+import r.RInterfaceIndia;
+import s.ExceptionPrintstacktrace;
 
-public class Table2DEditorPanel extends JPanel implements aN, e, bc, eS {
+public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, bc, eS {
   private R q;
   
-  JSplitPane a = new JSplitPane();
+  JSplitPane ExceptionInVPackage = new JSplitPane();
   
-  eM b = null;
+  eM EqualsInAiPackage = null;
   
   be c = null;
   
-  bt d = null;
+  bt AiInterfaceDelta = null;
   
-  aM e = null;
+  aM AiInterfaceEcho = null;
   
   aM f = null;
   
-  aM g = null;
+  aM ExceptionPrintstacktrace = null;
   
   bO h = null;
   
-  String i = "";
+  String RInterfaceIndia = "";
   
-  et j = null;
+  et ExceptionExtensionGetmessage = null;
   
   String k = null;
   
   String l = null;
   
-  private int r = eJ.a(300);
+  private int r = eJ.ExceptionInVPackage(300);
   
-  private int s = eJ.a(800);
+  private int s = eJ.ExceptionInVPackage(800);
   
-  private int t = eJ.a(440);
+  private int t = eJ.ExceptionInVPackage(440);
   
-  n m = null;
+  Isoptimizeddrawingenabled m = null;
   
-  x n = null;
+  x Isoptimizeddrawingenabled = null;
   
   x o = null;
   
@@ -93,325 +93,325 @@ public class Table2DEditorPanel extends JPanel implements aN, e, bc, eS {
   public W(R paramR, bi parambi, boolean paramBoolean, et paramet) {
     if (paramet == null)
       paramet = new Z(this); 
-    this.j = paramet;
-    boolean bool = i.a().a("oijfdsaoij98oi43");
-    this.d = new bt(bool, new X(this));
+    this.ExceptionExtensionGetmessage = paramet;
+    boolean bool = RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("oijfdsaoij98oi43");
+    this.AiInterfaceDelta = new bt(bool, new X(this));
     this.q = paramR;
     try {
-      this.c = (be)paramR.e().c(parambi.a());
-      this.b = this.d.h();
+      this.c = (be)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
+      this.EqualsInAiPackage = this.AiInterfaceDelta.h();
     } catch (Exception exception) {
-      D.b("Unable to get 3D table layout by name: " + parambi.a());
+      D.EqualsInAiPackage("Unable to get 3D table layout by name: " + parambi.ExceptionInVPackage());
     } 
-    a(paramR, parambi);
-    this.i = parambi.aL();
+    ExceptionInVPackage(paramR, parambi);
+    this.RInterfaceIndia = parambi.aL();
     setLayout(new BorderLayout());
-    this.a.setOrientation(1);
-    this.d.b(parambi.c());
-    this.d.a(parambi.b());
-    if (a.a().a(a.bV, a.bW) && (this.j.a("colorTheme") == null || this.j.a("colorTheme").isEmpty()))
-      this.j.a("colorTheme", bt.l); 
-    this.d.a(this.j);
-    this.d.d();
+    this.ExceptionInVPackage.setOrientation(1);
+    this.AiInterfaceDelta.EqualsInAiPackage(parambi.c());
+    this.AiInterfaceDelta.ExceptionInVPackage(parambi.EqualsInAiPackage());
+    if (ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.bV, ExceptionInVPackage.bW) && (this.ExceptionExtensionGetmessage.ExceptionInVPackage("colorTheme") == null || this.ExceptionExtensionGetmessage.ExceptionInVPackage("colorTheme").isEmpty()))
+      this.ExceptionExtensionGetmessage.ExceptionInVPackage("colorTheme", bt.l); 
+    this.AiInterfaceDelta.ExceptionInVPackage(this.ExceptionExtensionGetmessage);
+    this.AiInterfaceDelta.AiInterfaceDelta();
     if (paramBoolean) {
-      this.n = new x(paramR);
-      this.n.setName(this.i + "_Cluster");
-      T t = this.n.X();
+      this.Isoptimizeddrawingenabled = new x(paramR);
+      this.Isoptimizeddrawingenabled.setName(this.RInterfaceIndia + "_Cluster");
+      T t = this.Isoptimizeddrawingenabled.X();
       KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher((KeyEventDispatcher)t);
-      if (i.a().a("64865e43s5hjhcurd")) {
-        this.m = new n();
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("64865e43s5hjhcurd")) {
+        this.m = new Isoptimizeddrawingenabled();
         this.m.setTabPlacement(3);
-        this.a.setTopComponent((Component)this.m);
+        this.ExceptionInVPackage.setTopComponent((Component)this.m);
         JPanel jPanel = new JPanel();
         jPanel.setLayout(new BorderLayout());
-        jPanel.add("Center", (Component)this.n);
-        this.m.addTab(g.b("Standard"), jPanel);
-        this.n.setMinimumSize(new Dimension(1, 150));
+        jPanel.add("Center", (Component)this.Isoptimizeddrawingenabled);
+        this.m.addTab(ExceptionPrintstacktrace.EqualsInAiPackage("Standard"), jPanel);
+        this.Isoptimizeddrawingenabled.setMinimumSize(new Dimension(1, 150));
         this.o = new x(paramR);
-        this.o.setName(this.i + "_HistogramCluster");
+        this.o.setName(this.RInterfaceIndia + "_HistogramCluster");
         t = this.o.X();
         KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher((KeyEventDispatcher)t);
         jPanel = new JPanel();
         jPanel.setLayout(new BorderLayout());
         jPanel.add("Center", (Component)this.o);
-        this.m.addTab(g.b("Histogram"), jPanel);
+        this.m.addTab(ExceptionPrintstacktrace.EqualsInAiPackage("Histogram"), jPanel);
         this.o.setMinimumSize(new Dimension(1, 150));
       } else {
-        this.a.setTopComponent((Component)this.n);
+        this.ExceptionInVPackage.setTopComponent((Component)this.Isoptimizeddrawingenabled);
       } 
       try {
-        Z z1 = (new aa()).a(paramR, a.A(), parambi.aL(), 2);
-        this.n.a(z1);
-        Z z2 = (new aa()).a(paramR, parambi.aL(), 2);
-        this.n.b(z2);
-        this.n.n(a.A().m());
-        Component[] arrayOfComponent = this.n.getComponents();
-        byte b;
-        for (b = 0; b < arrayOfComponent.length; b++) {
-          if (arrayOfComponent[b] instanceof Gauge) {
-            Gauge gauge = (Gauge)arrayOfComponent[b];
+        Z z1 = (new aa()).ExceptionInVPackage(paramR, ExceptionInVPackage.A(), parambi.aL(), 2);
+        this.Isoptimizeddrawingenabled.ExceptionInVPackage(z1);
+        Z z2 = (new aa()).ExceptionInVPackage(paramR, parambi.aL(), 2);
+        this.Isoptimizeddrawingenabled.EqualsInAiPackage(z2);
+        this.Isoptimizeddrawingenabled.Isoptimizeddrawingenabled(ExceptionInVPackage.A().m());
+        Component[] arrayOfComponent = this.Isoptimizeddrawingenabled.getComponents();
+        byte EqualsInAiPackage;
+        for (EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfComponent.length; EqualsInAiPackage++) {
+          if (arrayOfComponent[EqualsInAiPackage] instanceof Gauge) {
+            Gauge gauge = (Gauge)arrayOfComponent[EqualsInAiPackage];
             if (gauge.getOutputChannel().equals("veTuneValue")) {
-              this.b.a(new ab(this, gauge));
-              gauge.setCurrentOutputChannelValue("veTuneValue", this.b.o());
+              this.EqualsInAiPackage.ExceptionInVPackage(new ab(this, gauge));
+              gauge.setCurrentOutputChannelValue("veTuneValue", this.EqualsInAiPackage.o());
             } 
           } 
         } 
         if (this.o != null) {
-          z1 = (new aa()).a(paramR, a.A(), parambi.aL() + p, 4);
-          this.o.a(z1);
-          z2 = (new aa()).a(paramR, parambi.aL() + p, 4);
-          this.o.b(z2);
-          this.o.n(a.A().m());
+          z1 = (new aa()).ExceptionInVPackage(paramR, ExceptionInVPackage.A(), parambi.aL() + p, 4);
+          this.o.ExceptionInVPackage(z1);
+          z2 = (new aa()).ExceptionInVPackage(paramR, parambi.aL() + p, 4);
+          this.o.EqualsInAiPackage(z2);
+          this.o.Isoptimizeddrawingenabled(ExceptionInVPackage.A().m());
           arrayOfComponent = this.o.getComponents();
-          for (b = 0; b < arrayOfComponent.length; b++) {
-            if (arrayOfComponent[b] instanceof Gauge) {
-              Gauge gauge = (Gauge)arrayOfComponent[b];
+          for (EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfComponent.length; EqualsInAiPackage++) {
+            if (arrayOfComponent[EqualsInAiPackage] instanceof Gauge) {
+              Gauge gauge = (Gauge)arrayOfComponent[EqualsInAiPackage];
               if (gauge.getOutputChannel().equals("veTuneValue")) {
-                this.b.a(new ab(this, gauge));
-                gauge.setCurrentOutputChannelValue("veTuneValue", this.b.o());
+                this.EqualsInAiPackage.ExceptionInVPackage(new ab(this, gauge));
+                gauge.setCurrentOutputChannelValue("veTuneValue", this.EqualsInAiPackage.o());
               } 
             } 
           } 
-          this.m.g(this.j.b("selectedDash", g.b("Standard")));
+          this.m.ExceptionPrintstacktrace(this.ExceptionExtensionGetmessage.EqualsInAiPackage("selectedDash", ExceptionPrintstacktrace.EqualsInAiPackage("Standard")));
         } 
       } catch (Exception exception) {
-        bV.d("Error setting gauges, check log for detail.\nMessage:\n" + exception.getMessage(), this);
+        bV.AiInterfaceDelta("Error setting gauges, check log for detail.\nMessage:\Isoptimizeddrawingenabled" + exception.getMessage(), this);
         exception.printStackTrace();
       } 
-      this.a.setBottomComponent((Component)this.d);
-      this.a.setDividerSize(eJ.a(5));
-      this.a.addPropertyChangeListener("dividerLocation", new Y(this));
-      int i = Integer.parseInt(this.j.b("tableTuningSplitPanePosition", "" + this.r));
-      this.a.setDividerLocation(i);
-      add("Center", this.a);
+      this.ExceptionInVPackage.setBottomComponent((Component)this.AiInterfaceDelta);
+      this.ExceptionInVPackage.setDividerSize(eJ.ExceptionInVPackage(5));
+      this.ExceptionInVPackage.addPropertyChangeListener("dividerLocation", new Y(this));
+      int RInterfaceIndia = Integer.parseInt(this.ExceptionExtensionGetmessage.EqualsInAiPackage("tableTuningSplitPanePosition", "" + this.r));
+      this.ExceptionInVPackage.setDividerLocation(RInterfaceIndia);
+      add("Center", this.ExceptionInVPackage);
     } else {
-      add("Center", (Component)this.d);
+      add("Center", (Component)this.AiInterfaceDelta);
     } 
-    this.h = new bO(this, this.d);
+    this.h = new bO(this, this.AiInterfaceDelta);
     KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this.h);
-    if (!i.a().a("oijfdsaoij98oi43"));
+    if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("oijfdsaoij98oi43"));
   }
   
-  protected bt b() {
-    return this.d;
+  protected bt EqualsInAiPackage() {
+    return this.AiInterfaceDelta;
   }
   
   public void c() {
     if (this.u == null) {
       this.u = new aa(this);
     } else {
-      this.u.b();
+      this.u.EqualsInAiPackage();
     } 
-    this.u.a();
+    this.u.ExceptionInVPackage();
   }
   
-  public void d() {
+  public void AiInterfaceDelta() {
     if (this.u != null)
-      this.u.b(); 
+      this.u.EqualsInAiPackage(); 
   }
   
   public void close() {
     KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.h);
-    d();
-    aR.a().a(this);
-    if (this.n != null && this.n.getComponentCount() > 0) {
-      this.n.f();
-      (new aa()).a(this.n, a.A(), this.i);
-      this.n.c();
-      KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher((KeyEventDispatcher)this.n.X());
+    AiInterfaceDelta();
+    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    if (this.Isoptimizeddrawingenabled != null && this.Isoptimizeddrawingenabled.getComponentCount() > 0) {
+      this.Isoptimizeddrawingenabled.f();
+      (new aa()).ExceptionInVPackage(this.Isoptimizeddrawingenabled, ExceptionInVPackage.A(), this.RInterfaceIndia);
+      this.Isoptimizeddrawingenabled.c();
+      KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher((KeyEventDispatcher)this.Isoptimizeddrawingenabled.X());
     } 
     if (this.o != null && this.o.getComponentCount() > 0) {
-      this.n.f();
-      (new aa()).a(this.o, a.A(), this.i + p);
+      this.Isoptimizeddrawingenabled.f();
+      (new aa()).ExceptionInVPackage(this.o, ExceptionInVPackage.A(), this.RInterfaceIndia + p);
       this.o.c();
       KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher((KeyEventDispatcher)this.o.X());
     } 
     if (this.m != null)
-      this.j.a("selectedDash", this.m.getTitleAt(this.m.getSelectedIndex())); 
+      this.ExceptionExtensionGetmessage.ExceptionInVPackage("selectedDash", this.m.getTitleAt(this.m.getSelectedIndex())); 
   }
   
-  public void a(R paramR, bi parambi) {
+  public void ExceptionInVPackage(R paramR, bi parambi) {
     try {
-      aR aR = aR.a();
-      aR.a(this);
-      d();
+      aR aR = aR.ExceptionInVPackage();
+      aR.ExceptionInVPackage(this);
+      AiInterfaceDelta();
       eR eR = new eR();
-      be be1 = (be)paramR.e().c(parambi.a());
+      be be1 = (be)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
       if (be1.p() != null) {
         try {
-          eR.b(be1.p().a());
-        } catch (g g) {
-          Logger.getLogger(W.class.getName()).log(Level.WARNING, "Unable to resolve X Axis Label", (Throwable)g);
-          eR.b(be1.d());
+          eR.EqualsInAiPackage(be1.p().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(W.class.getName()).log(Level.WARNING, "Unable to resolve X Axis Label", (Throwable)ExceptionPrintstacktrace);
+          eR.EqualsInAiPackage(be1.AiInterfaceDelta());
         } 
       } else {
-        eR.b(be1.d());
+        eR.EqualsInAiPackage(be1.AiInterfaceDelta());
       } 
       if (be1.q() != null) {
         try {
-          eR.a(be1.q().a());
-        } catch (g g) {
-          Logger.getLogger(W.class.getName()).log(Level.WARNING, "Unable to resolve X Axis Label", (Throwable)g);
-          eR.a(be1.d());
+          eR.ExceptionInVPackage(be1.q().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(W.class.getName()).log(Level.WARNING, "Unable to resolve X Axis Label", (Throwable)ExceptionPrintstacktrace);
+          eR.ExceptionInVPackage(be1.AiInterfaceDelta());
         } 
       } else {
-        eR.a(be1.f());
+        eR.ExceptionInVPackage(be1.f());
       } 
-      this.e = paramR.c(be1.c());
-      this.f = paramR.c(be1.b());
-      this.g = paramR.c(be1.a());
-      i.a(this.q.c(), this.g, this);
-      i.a(this.q.c(), this.f, this);
-      i.a(this.q.c(), this.e, this);
-      eR.c(this.e.p());
-      eR.d(this.e.r());
-      eR.c(this.e.s());
-      eR.e(this.e.B());
-      eR.a(this.f.b(), this.g.b());
+      this.AiInterfaceEcho = paramR.c(be1.c());
+      this.f = paramR.c(be1.EqualsInAiPackage());
+      this.ExceptionPrintstacktrace = paramR.c(be1.ExceptionInVPackage());
+      RInterfaceIndia.ExceptionInVPackage(this.q.c(), this.ExceptionPrintstacktrace, this);
+      RInterfaceIndia.ExceptionInVPackage(this.q.c(), this.f, this);
+      RInterfaceIndia.ExceptionInVPackage(this.q.c(), this.AiInterfaceEcho, this);
+      eR.c(this.AiInterfaceEcho.p());
+      eR.AiInterfaceDelta(this.AiInterfaceEcho.r());
+      eR.c(this.AiInterfaceEcho.s());
+      eR.AiInterfaceEcho(this.AiInterfaceEcho.B());
+      eR.ExceptionInVPackage(this.f.EqualsInAiPackage(), this.ExceptionPrintstacktrace.EqualsInAiPackage());
       try {
-        eR.a(this.e.i(paramR.p()));
-        double[] arrayOfDouble1 = a(this.g.i(paramR.p()));
+        eR.ExceptionInVPackage(this.AiInterfaceEcho.RInterfaceIndia(paramR.p()));
+        double[] arrayOfDouble1 = ExceptionInVPackage(this.ExceptionPrintstacktrace.RInterfaceIndia(paramR.p()));
         for (byte b1 = 0; b1 < arrayOfDouble1.length; b1++)
-          eR.a(b1, arrayOfDouble1[b1]); 
-        double[] arrayOfDouble2 = a(this.f.i(paramR.p()));
+          eR.ExceptionInVPackage(b1, arrayOfDouble1[b1]); 
+        double[] arrayOfDouble2 = ExceptionInVPackage(this.f.RInterfaceIndia(paramR.p()));
         for (byte b2 = 0; b2 < arrayOfDouble2.length; b2++)
-          eR.b(b2, arrayOfDouble2[b2]); 
-        if (i.a().a("oijfdsaoij98oi43"))
+          eR.EqualsInAiPackage(b2, arrayOfDouble2[b2]); 
+        if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("oijfdsaoij98oi43"))
           eR.c(); 
-      } catch (g g) {
-        D.a("Error mapping 3D view to Parameter. ", (Exception)g, this);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Error mapping 3D view to Parameter. ", (Exception)ExceptionPrintstacktrace, this);
       } 
       try {
-        aR.a(paramR.c(), this.g.aL(), this);
-        aR.a(paramR.c(), this.f.aL(), this);
-        aR.a(paramR.c(), this.e.aL(), this);
-      } catch (a a) {
-        bV.d("Error subscribing for parameter changes.", this);
-        a.printStackTrace();
+        aR.ExceptionInVPackage(paramR.c(), this.ExceptionPrintstacktrace.aL(), this);
+        aR.ExceptionInVPackage(paramR.c(), this.f.aL(), this);
+        aR.ExceptionInVPackage(paramR.c(), this.AiInterfaceEcho.aL(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.AiInterfaceDelta("Error subscribing for parameter changes.", this);
+        ExceptionInVPackage.printStackTrace();
       } 
       c();
-      this.b.a(eR);
-      this.b.g(this.f.v());
-      this.b.h(this.g.v());
-      this.b.i(this.e.v());
-      eR.a(this);
-    } catch (a a) {
-      Logger.getLogger(W.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      this.EqualsInAiPackage.ExceptionInVPackage(eR);
+      this.EqualsInAiPackage.ExceptionPrintstacktrace(this.f.v());
+      this.EqualsInAiPackage.h(this.ExceptionPrintstacktrace.v());
+      this.EqualsInAiPackage.RInterfaceIndia(this.AiInterfaceEcho.v());
+      eR.ExceptionInVPackage(this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(W.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
   }
   
-  public void a(String paramString1, String paramString2) {
-    if (paramString2.equals(this.e.aL())) {
-      e();
-      this.b.z();
-      this.b.repaint();
-    } else if (paramString2.equals(this.g.aL())) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
+    if (paramString2.equals(this.AiInterfaceEcho.aL())) {
+      AiInterfaceEcho();
+      this.EqualsInAiPackage.z();
+      this.EqualsInAiPackage.repaint();
+    } else if (paramString2.equals(this.ExceptionPrintstacktrace.aL())) {
       f();
-      this.b.z();
-      this.b.repaint();
+      this.EqualsInAiPackage.z();
+      this.EqualsInAiPackage.repaint();
     } else if (paramString2.equals(this.f.aL())) {
-      g();
-      this.b.z();
-      this.b.repaint();
+      ExceptionPrintstacktrace();
+      this.EqualsInAiPackage.z();
+      this.EqualsInAiPackage.repaint();
     } else {
-      this.b.a().c(this.e.p());
-      this.b.a().d(this.e.r());
-      this.b.a().c(this.e.s());
-      this.b.a().e(this.e.B());
-      this.b.g(this.f.v());
-      this.b.h(this.g.v());
-      this.b.i(this.e.v());
-      e();
+      this.EqualsInAiPackage.ExceptionInVPackage().c(this.AiInterfaceEcho.p());
+      this.EqualsInAiPackage.ExceptionInVPackage().AiInterfaceDelta(this.AiInterfaceEcho.r());
+      this.EqualsInAiPackage.ExceptionInVPackage().c(this.AiInterfaceEcho.s());
+      this.EqualsInAiPackage.ExceptionInVPackage().AiInterfaceEcho(this.AiInterfaceEcho.B());
+      this.EqualsInAiPackage.ExceptionPrintstacktrace(this.f.v());
+      this.EqualsInAiPackage.h(this.ExceptionPrintstacktrace.v());
+      this.EqualsInAiPackage.RInterfaceIndia(this.AiInterfaceEcho.v());
+      AiInterfaceEcho();
       f();
-      g();
-      this.b.z();
-      this.b.repaint();
+      ExceptionPrintstacktrace();
+      this.EqualsInAiPackage.z();
+      this.EqualsInAiPackage.repaint();
     } 
   }
   
-  public void a(double paramDouble) {
-    this.b.b(paramDouble);
-    if (this.d.e())
-      this.d.f(); 
-    this.b.repaint();
+  public void ExceptionInVPackage(double paramDouble) {
+    this.EqualsInAiPackage.EqualsInAiPackage(paramDouble);
+    if (this.AiInterfaceDelta.AiInterfaceEcho())
+      this.AiInterfaceDelta.f(); 
+    this.EqualsInAiPackage.repaint();
   }
   
-  public void b(double paramDouble) {
+  public void EqualsInAiPackage(double paramDouble) {
     if (this.c == null)
       return; 
-    this.b.a(paramDouble);
-    if (this.d.e())
-      this.d.f(); 
-    this.b.repaint();
+    this.EqualsInAiPackage.ExceptionInVPackage(paramDouble);
+    if (this.AiInterfaceDelta.AiInterfaceEcho())
+      this.AiInterfaceDelta.f(); 
+    this.EqualsInAiPackage.repaint();
   }
   
-  private double[] a(double[][] paramArrayOfdouble) {
+  private double[] ExceptionInVPackage(double[][] paramArrayOfdouble) {
     double[] arrayOfDouble = new double[paramArrayOfdouble.length];
-    for (byte b = 0; b < paramArrayOfdouble.length; b++)
-      arrayOfDouble[b] = paramArrayOfdouble[b][0]; 
+    for (byte EqualsInAiPackage = 0; EqualsInAiPackage < paramArrayOfdouble.length; EqualsInAiPackage++)
+      arrayOfDouble[EqualsInAiPackage] = paramArrayOfdouble[EqualsInAiPackage][0]; 
     return arrayOfDouble;
   }
   
-  public void a(int paramInt1, int paramInt2, double paramDouble) {
+  public void ExceptionInVPackage(int paramInt1, int paramInt2, double paramDouble) {
     try {
-      this.e.a(this.q.p(), paramDouble, paramInt1, paramInt2);
-    } catch (j j) {
-      j.printStackTrace();
-    } catch (g g) {
-      g.printStackTrace();
+      this.AiInterfaceEcho.ExceptionInVPackage(this.q.p(), paramDouble, paramInt1, paramInt2);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      ExceptionExtensionGetmessage.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
     } 
   }
   
-  public void a(int paramInt, double paramDouble) {
-    this.b.a().a(paramInt, paramDouble);
+  public void ExceptionInVPackage(int paramInt, double paramDouble) {
+    this.EqualsInAiPackage.ExceptionInVPackage().ExceptionInVPackage(paramInt, paramDouble);
   }
   
-  public void b(int paramInt, double paramDouble) {
-    this.b.a().b(paramInt, paramDouble);
+  public void EqualsInAiPackage(int paramInt, double paramDouble) {
+    this.EqualsInAiPackage.ExceptionInVPackage().EqualsInAiPackage(paramInt, paramDouble);
   }
   
-  private void e() {
+  private void AiInterfaceEcho() {
     try {
-      double[][] arrayOfDouble = this.e.i(this.q.p());
-      eR eR = this.b.a();
-      for (byte b = 0; b < arrayOfDouble.length; b++) {
+      double[][] arrayOfDouble = this.AiInterfaceEcho.RInterfaceIndia(this.q.p());
+      eR eR = this.EqualsInAiPackage.ExceptionInVPackage();
+      for (byte EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfDouble.length; EqualsInAiPackage++) {
         for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
-          double d = eR.d(b, b1);
-          if (arrayOfDouble[b][b1] != d)
-            eR.a(b, b1, arrayOfDouble[b][b1]); 
+          double AiInterfaceDelta = eR.AiInterfaceDelta(EqualsInAiPackage, b1);
+          if (arrayOfDouble[EqualsInAiPackage][b1] != AiInterfaceDelta)
+            eR.ExceptionInVPackage(EqualsInAiPackage, b1, arrayOfDouble[EqualsInAiPackage][b1]); 
         } 
       } 
-    } catch (g g) {
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
     } 
   }
   
   private void f() {
     try {
-      eR eR = this.b.a();
-      double[] arrayOfDouble = a(this.g.i(this.q.p()));
-      for (byte b = 0; b < arrayOfDouble.length; b++)
-        eR.a(b, arrayOfDouble[b]); 
-    } catch (g g) {
-      g.printStackTrace();
-      D.a("X Axis failed on update, it may now be out of sync.", (Exception)g, null);
+      eR eR = this.EqualsInAiPackage.ExceptionInVPackage();
+      double[] arrayOfDouble = ExceptionInVPackage(this.ExceptionPrintstacktrace.RInterfaceIndia(this.q.p()));
+      for (byte EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfDouble.length; EqualsInAiPackage++)
+        eR.ExceptionInVPackage(EqualsInAiPackage, arrayOfDouble[EqualsInAiPackage]); 
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+      D.ExceptionInVPackage("X Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   
-  private void g() {
+  private void ExceptionPrintstacktrace() {
     try {
-      eR eR = this.b.a();
-      double[] arrayOfDouble = a(this.f.i(this.q.p()));
-      for (byte b = 0; b < arrayOfDouble.length; b++)
-        eR.b(b, arrayOfDouble[b]); 
-    } catch (g g) {
-      g.printStackTrace();
-      D.a("X Axis failed on update, it may now be out of sync.", (Exception)g, null);
+      eR eR = this.EqualsInAiPackage.ExceptionInVPackage();
+      double[] arrayOfDouble = ExceptionInVPackage(this.f.RInterfaceIndia(this.q.p()));
+      for (byte EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfDouble.length; EqualsInAiPackage++)
+        eR.EqualsInAiPackage(EqualsInAiPackage, arrayOfDouble[EqualsInAiPackage]); 
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+      D.ExceptionInVPackage("X Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   
   public Dimension getMinimumSize() {
-    return (this.n != null) ? new Dimension(eJ.a(this.s), eJ.a(this.t)) : new Dimension(eJ.a(this.s - this.r), eJ.a(this.t - 125));
+    return (this.Isoptimizeddrawingenabled != null) ? new Dimension(eJ.ExceptionInVPackage(this.s), eJ.ExceptionInVPackage(this.t)) : new Dimension(eJ.ExceptionInVPackage(this.s - this.r), eJ.ExceptionInVPackage(this.t - 125));
   }
   
   public Dimension getPreferredSize() {
@@ -420,29 +420,29 @@ public class Table2DEditorPanel extends JPanel implements aN, e, bc, eS {
   
   public void validate() {
     super.validate();
-    this.d.h().z();
+    this.AiInterfaceDelta.h().z();
   }
   
-  public b a() {
-    String str = d.a("/help/3D_Table_Editor.htm");
-    return new b(g.b("3D Table Usage"), str);
+  public EqualsInAiPackage ExceptionInVPackage() {
+    String str = AiInterfaceDelta.ExceptionInVPackage("/help/3D_Table_Editor.htm");
+    return new EqualsInAiPackage(ExceptionPrintstacktrace.EqualsInAiPackage("3D Table Usage"), str);
   }
   
   public void setEnabled(boolean paramBoolean) {
-    fp.a(this, paramBoolean);
+    fp.ExceptionInVPackage(this, paramBoolean);
     super.setEnabled(paramBoolean);
   }
   
-  public void a(bP parambP) {
-    if (i.a().a(" a09kmfds098432lkg89vlk")) {
-      d();
+  public void ExceptionInVPackage(bP parambP) {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(" a09kmfds098432lkg89vlk")) {
+      AiInterfaceDelta();
       this.u = parambP;
     } 
   }
   
-  public void a(double paramDouble1, double paramDouble2) {
-    b(paramDouble2);
-    a(paramDouble1);
+  public void ExceptionInVPackage(double paramDouble1, double paramDouble2) {
+    EqualsInAiPackage(paramDouble2);
+    ExceptionInVPackage(paramDouble1);
   }
   
   public boolean isOptimizedDrawingEnabled() {

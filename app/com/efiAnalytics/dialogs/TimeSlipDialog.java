@@ -2,8 +2,8 @@ package com.efiAnalytics.dialogs;
 
 import bH.J;
 import bH.ab;
-import bu.a;
-import com.efiAnalytics.ui.a;
+import bu.BuComponentAlpha;
+import com.efiAnalytics.ui.BuComponentAlpha;
 import java.awt.BorderLayout;
 import java.awt.Dialog;
 import java.awt.FlowLayout;
@@ -14,7 +14,7 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 
 public class TimeSlipDialog extends JDialog {
-  e a;
+  e BuComponentAlpha;
   
   ab b = null;
   
@@ -22,17 +22,17 @@ public class TimeSlipDialog extends JDialog {
   
   public b(Window paramWindow, String paramString, ab paramab) {
     super(paramWindow, paramString, Dialog.ModalityType.MODELESS);
-    this.a = new e(paramString, paramab);
+    this.BuComponentAlpha = new e(paramString, paramab);
     this.b = paramab;
     setLayout(new BorderLayout());
-    add(this.a, "Center");
+    add(this.BuComponentAlpha, "Center");
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
-    JButton jButton1 = new JButton(a("Apply"));
+    JButton jButton1 = new JButton(BuComponentAlpha("Apply"));
     jButton1.addActionListener(new c(this));
-    JButton jButton2 = new JButton(a("Cancel"));
+    JButton jButton2 = new JButton(BuComponentAlpha("Cancel"));
     jButton2.addActionListener(new d(this));
-    if (J.a()) {
+    if (J.BuComponentAlpha()) {
       jPanel.add(jButton1);
       jPanel.add(jButton2);
     } else {
@@ -42,39 +42,39 @@ public class TimeSlipDialog extends JDialog {
     add(jPanel, "South");
   }
   
-  public void a(a parama) {
-    this.a.a(parama);
+  public void BuComponentAlpha(BuComponentAlpha parama) {
+    this.BuComponentAlpha.BuComponentAlpha(parama);
   }
   
-  public a a() {
-    return this.a.b();
+  public BuComponentAlpha BuComponentAlpha() {
+    return this.BuComponentAlpha.b();
   }
   
   public String b() {
-    return this.a.a();
+    return this.BuComponentAlpha.BuComponentAlpha();
   }
   
   private void c() {
-    for (a a : this.c) {
-      if (!a.a())
+    for (BuComponentAlpha BuComponentAlpha : this.c) {
+      if (!BuComponentAlpha.BuComponentAlpha())
         return; 
     } 
     dispose();
   }
   
   private void d() {
-    for (a a : this.c)
-      a.b(); 
+    for (BuComponentAlpha BuComponentAlpha : this.c)
+      BuComponentAlpha.b(); 
     dispose();
   }
   
-  public void a(a parama) {
+  public void BuComponentAlpha(BuComponentAlpha parama) {
     this.c.add(parama);
   }
   
-  private String a(String paramString) {
+  private String BuComponentAlpha(String paramString) {
     if (this.b != null)
-      paramString = this.b.a(paramString); 
+      paramString = this.b.BuComponentAlpha(paramString); 
     return paramString;
   }
 }

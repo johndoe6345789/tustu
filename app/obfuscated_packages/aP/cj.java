@@ -1,7 +1,7 @@
 package aP;
 
 import ao.hx;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -11,9 +11,9 @@ class cj implements ItemListener {
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
-      i.c(i.N, i.Q);
+      IOProperties.c(IOProperties.N, IOProperties.Q);
       hx.a().c(true);
-      this.a.b.e(i.Q);
+      this.a.b.e(IOProperties.Q);
     } 
   }
 }

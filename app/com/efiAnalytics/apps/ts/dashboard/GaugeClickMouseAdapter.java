@@ -1,18 +1,18 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import d.d;
+import DComponentDelta.DComponentDelta;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Timer;
 
 class GaugeClickMouseAdapter extends MouseAdapter {
-  d a = null;
+  DComponentDelta a = null;
   
   long b = 0L;
   
   int c = 2000;
   
-  U d = null;
+  U DComponentDelta = null;
   
   Timer e = null;
   
@@ -29,13 +29,13 @@ class GaugeClickMouseAdapter extends MouseAdapter {
     if (paramMouseEvent.getButton() != 1)
       return; 
     s s = a(paramMouseEvent);
-    if (this.f.isEnabled() && !this.f.L() && s instanceof d) {
-      this.a = (d)s;
+    if (this.f.isEnabled() && !this.f.L() && s instanceof DComponentDelta) {
+      this.a = (DComponentDelta)s;
       this.b = System.currentTimeMillis();
       this.e = new Timer();
-      this.d = new U(this.f);
-      this.d.a(this.a);
-      this.e.schedule(this.d, this.c);
+      this.DComponentDelta = new U(this.f);
+      this.DComponentDelta.a(this.a);
+      this.e.schedule(this.DComponentDelta, this.c);
     } 
   }
   
@@ -43,8 +43,8 @@ class GaugeClickMouseAdapter extends MouseAdapter {
     if (this.e != null)
       this.e.cancel(); 
     s s = a(paramMouseEvent);
-    if (this.f.isEnabled() && !this.f.L() && s instanceof d && this.a != null) {
-      d d1 = (d)s;
+    if (this.f.isEnabled() && !this.f.L() && s instanceof DComponentDelta && this.a != null) {
+      DComponentDelta d1 = (DComponentDelta)s;
       if (d1.equals(this.a) && System.currentTimeMillis() - this.b <= this.c && x.b(this.f, d1))
         paramMouseEvent.consume(); 
     } 

@@ -1,9 +1,9 @@
 package ao;
 
 import W.n;
-import i.e;
+import i.IComponentEcho;
 
-class hy implements e {
+class hy implements IComponentEcho {
   hy(hx paramhx) {}
   
   public boolean a() {

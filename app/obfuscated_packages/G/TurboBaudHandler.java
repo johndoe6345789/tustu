@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,7 +18,7 @@ public class TurboBaudHandler {
       o o = dc.a(paramR, m, 650);
       if (o.a() == 1) {
         int i = (int)f.S().a();
-        j.g(true);
+        j.ExceptionPrintstacktrace(true);
         a(50);
         try {
           if (j.a(i)) {
@@ -43,13 +43,13 @@ public class TurboBaudHandler {
               } 
             } 
           } else {
-            throw new g("Controller Turbo Activated, failed to change application Baud!\nYou will need to power cycle the controller to reconnect");
+            throw new ExceptionPrintstacktrace("Controller Turbo Activated, failed to change application Baud!\nYou will need to power cycle the controller to reconnect");
           } 
         } finally {
-          j.g(false);
+          j.ExceptionPrintstacktrace(false);
         } 
       } else {
-        throw new g("Controller Turbo failed to Activate!\nYou may need to power cycle the controller to reconnect. \n" + o.c());
+        throw new ExceptionPrintstacktrace("Controller Turbo failed to Activate!\nYou may need to power cycle the controller to reconnect. \n" + o.c());
       } 
     } else if (f.Q() == null) {
       D.d("No turboBaudOnCommand, Turbo Baud disabled. ");
@@ -74,25 +74,25 @@ public class TurboBaudHandler {
       o o = dc.a(paramR, m, 2000);
       if (o.a() == 1) {
         int i = f.r();
-        j.g(true);
+        j.ExceptionPrintstacktrace(true);
         try {
           if (j.a(i)) {
             f.i(false);
-            j.g(false);
+            j.ExceptionPrintstacktrace(false);
             D.d("TurboBaud Deactivated");
           } else {
-            j.g(false);
-            throw new g("Controller Turbo Dectivated, failed to change application Baud!\nYou will need to reload project to reconnect.");
+            j.ExceptionPrintstacktrace(false);
+            throw new ExceptionPrintstacktrace("Controller Turbo Dectivated, failed to change application Baud!\nYou will need to reload project to reconnect.");
           } 
         } finally {
-          j.g(false);
+          j.ExceptionPrintstacktrace(false);
         } 
       } else {
-        throw new g("Controller Turbo failed to Deactivate!");
+        throw new ExceptionPrintstacktrace("Controller Turbo failed to Deactivate!");
       } 
     } else {
       if (f.W() && f.Q() == null)
-        throw new g("No turboBaudOffCommand defined! Cannot disable Turbo"); 
+        throw new ExceptionPrintstacktrace("No turboBaudOffCommand defined! Cannot disable Turbo"); 
       if (f.Q() == null)
         D.d("No turboBaudOffCommand, Turbo Baud disabled. "); 
     } 

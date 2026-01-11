@@ -1,11 +1,11 @@
 package aP;
 
-import bk.d;
+import bk.ManagerPaint;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 class iM extends WindowAdapter {
-  iM(iL paramiL, d paramd) {}
+  iM(iL paramiL, ManagerPaint paramd) {}
   
   public void windowClosing(WindowEvent paramWindowEvent) {
     this.a.close();

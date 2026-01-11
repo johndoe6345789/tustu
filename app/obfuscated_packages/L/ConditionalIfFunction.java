@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -18,11 +18,11 @@ public class ConditionalIfFunction extends ac {
     this.c = paramList.get(2);
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     return (this.a.b(paramS) != 0.0D) ? this.b.b(paramS) : this.c.b(paramS);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

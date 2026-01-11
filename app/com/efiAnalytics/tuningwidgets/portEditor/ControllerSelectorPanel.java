@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.portEditor;
 import G.R;
 import G.T;
 import G.aM;
-import V.g;
-import aE.a;
+import V.ExceptionPrintstacktrace;
+import aE.PropertiesExtension;
 import bH.D;
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -14,20 +14,20 @@ import java.util.logging.Logger;
 import javax.swing.BorderFactory;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
-import r.i;
+import r.RInterfaceIndia;
 
 public class ControllerSelectorPanel extends JPanel {
-  JComboBox a = null;
+  JComboBox PropertiesExtension = null;
   
   R b = null;
   
-  a c = a.A();
+  PropertiesExtension c = PropertiesExtension.A();
   
   aM d = null;
   
   private int f = -1;
   
-  private int g = -1;
+  private int ExceptionPrintstacktrace = -1;
   
   ArrayList e = new ArrayList();
   
@@ -35,24 +35,24 @@ public class ControllerSelectorPanel extends JPanel {
     this.b = paramR;
     if (paramString != null && !paramString.equals(""))
       this.d = paramR.c(paramString); 
-    this.a = new JComboBox();
+    this.PropertiesExtension = new JComboBox();
     setLayout(new GridLayout());
-    if (paramString != null && paramR.c(paramString) != null && i.a().a("HF-0FD-0HHFJG")) {
-      add(this.a);
-      this.a.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 8));
+    if (paramString != null && paramR.c(paramString) != null && RInterfaceIndia.PropertiesExtension().PropertiesExtension("HF-0FD-0HHFJG")) {
+      add(this.PropertiesExtension);
+      this.PropertiesExtension.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 8));
     } 
-    this.a.addActionListener(new r(this));
+    this.PropertiesExtension.addActionListener(new r(this));
     if (this.d != null) {
-      String[] arrayOfString = T.a().d();
+      String[] arrayOfString = T.PropertiesExtension().d();
       for (byte b = 0; b < arrayOfString.length; b++)
-        this.a.addItem(arrayOfString[b]); 
+        this.PropertiesExtension.addItem(arrayOfString[b]); 
     } else {
       D.d("No [Constant] for outputCanId defined in [PortEditor], Controller Selector disabled.");
-      this.a.addItem(paramR.c());
+      this.PropertiesExtension.addItem(paramR.c());
     } 
   }
   
-  private double[][] a(double[][] paramArrayOfdouble) {
+  private double[][] PropertiesExtension(double[][] paramArrayOfdouble) {
     for (byte b = 0; b < paramArrayOfdouble.length; b++) {
       for (byte b1 = 0; b1 < (paramArrayOfdouble[0]).length; b1++) {
         if (paramArrayOfdouble[b][b1] < 0.0D)
@@ -62,26 +62,26 @@ public class ControllerSelectorPanel extends JPanel {
     return paramArrayOfdouble;
   }
   
-  protected void a(String paramString) {
+  protected void PropertiesExtension(String paramString) {
     if (this.d != null && paramString != null && paramString.length() > 0)
       try {
-        double[][] arrayOfDouble = this.d.i(this.b.h());
-        arrayOfDouble = a(arrayOfDouble);
-        R r = T.a().c(paramString);
+        double[][] arrayOfDouble = this.d.RInterfaceIndia(this.b.h());
+        arrayOfDouble = PropertiesExtension(arrayOfDouble);
+        R r = T.PropertiesExtension().c(paramString);
         if (r == null) {
-          D.c("onSelect no EcuConfig found for " + paramString + " using a CAN ID of 0");
-          arrayOfDouble[b()][a()] = 0.0D;
-        } else if (b() >= 0 && a() >= 0) {
-          arrayOfDouble[b()][a()] = r.O().x();
+          D.c("onSelect no EcuConfig found for " + paramString + " using PropertiesExtension CAN ID of 0");
+          arrayOfDouble[b()][PropertiesExtension()] = 0.0D;
+        } else if (b() >= 0 && PropertiesExtension() >= 0) {
+          arrayOfDouble[b()][PropertiesExtension()] = r.O().x();
         } 
-        this.d.a(this.b.h(), arrayOfDouble);
-        this.a.setSelectedItem(paramString);
-        a(r);
-      } catch (g g) {
-        D.a("Error updating:" + this.d.aL() + " CAN ID to that of " + paramString);
-        Logger.getLogger(q.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        this.d.PropertiesExtension(this.b.h(), arrayOfDouble);
+        this.PropertiesExtension.setSelectedItem(paramString);
+        PropertiesExtension(r);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.PropertiesExtension("Error updating:" + this.d.aL() + " CAN ID to that of " + paramString);
+        Logger.getLogger(q.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } catch (Exception exception) {
-        D.a("Error updating:" + this.d.aL() + " CAN ID to that of " + paramString);
+        D.PropertiesExtension("Error updating:" + this.d.aL() + " CAN ID to that of " + paramString);
         Logger.getLogger(q.class.getName()).log(Level.SEVERE, (String)null, exception);
       }  
   }
@@ -89,63 +89,63 @@ public class ControllerSelectorPanel extends JPanel {
   private void d() {
     if (this.d != null)
       try {
-        double[][] arrayOfDouble = this.d.i(this.b.h());
-        int i = (int)arrayOfDouble[b()][a()];
-        String[] arrayOfString = T.a().d();
+        double[][] arrayOfDouble = this.d.RInterfaceIndia(this.b.h());
+        int RInterfaceIndia = (int)arrayOfDouble[b()][PropertiesExtension()];
+        String[] arrayOfString = T.PropertiesExtension().d();
         for (byte b = 0; b < arrayOfString.length; b++) {
-          R r = T.a().c(arrayOfString[b]);
-          if (r.O().x() == i) {
-            a(r.c());
+          R r = T.PropertiesExtension().c(arrayOfString[b]);
+          if (r.O().x() == RInterfaceIndia) {
+            PropertiesExtension(r.c());
             return;
           } 
         } 
-      } catch (g g) {
-        g.printStackTrace();
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        ExceptionPrintstacktrace.printStackTrace();
       }  
   }
   
-  private void a(R paramR) {
+  private void PropertiesExtension(R paramR) {
     Iterator<F> iterator = this.e.iterator();
     while (iterator.hasNext())
-      ((F)iterator.next()).a(paramR); 
+      ((F)iterator.next()).PropertiesExtension(paramR); 
   }
   
-  public void a(F paramF) {
+  public void PropertiesExtension(F paramF) {
     this.e.add(paramF);
   }
   
-  public int a() {
+  public int PropertiesExtension() {
     return this.f;
   }
   
-  public void a(int paramInt) {
+  public void PropertiesExtension(int paramInt) {
     this.f = paramInt;
     d();
   }
   
   public int b() {
-    return this.g;
+    return this.ExceptionPrintstacktrace;
   }
   
   public void b(int paramInt) {
-    this.g = paramInt;
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public R c() {
-    if (this.d != null && b() >= 0 && a() >= 0)
+    if (this.d != null && b() >= 0 && PropertiesExtension() >= 0)
       try {
-        double[][] arrayOfDouble = this.d.i(this.b.h());
-        int i = (int)arrayOfDouble[b()][a()];
-        String[] arrayOfString = T.a().d();
+        double[][] arrayOfDouble = this.d.RInterfaceIndia(this.b.h());
+        int RInterfaceIndia = (int)arrayOfDouble[b()][PropertiesExtension()];
+        String[] arrayOfString = T.PropertiesExtension().d();
         for (byte b = 0; b < arrayOfString.length; b++) {
-          R r = T.a().c(arrayOfString[b]);
-          if (r.O().x() == i)
-            return T.a().c(r.c()); 
+          R r = T.PropertiesExtension().c(arrayOfString[b]);
+          if (r.O().x() == RInterfaceIndia)
+            return T.PropertiesExtension().c(r.c()); 
         } 
-      } catch (g g) {
-        g.printStackTrace();
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        ExceptionPrintstacktrace.printStackTrace();
       }  
-    return T.a().c((String)this.a.getSelectedItem());
+    return T.PropertiesExtension().c((String)this.PropertiesExtension.getSelectedItem());
   }
 }
 

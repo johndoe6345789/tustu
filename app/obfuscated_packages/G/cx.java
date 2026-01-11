@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 
 public class cx implements n {
@@ -64,7 +64,7 @@ public class cx implements n {
           int[] arrayOfInt = paramo.e();
           this.a.h().a(paramo.b().o(), this.b, arrayOfInt);
         } 
-      } catch (g g) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.b("failed to update local data store.");
       }  
   }

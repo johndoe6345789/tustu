@@ -1,18 +1,18 @@
 package ao;
 
-import bx.j;
-import bx.s;
+import bx.BxInterfaceJuliet;
+import bx.BxInterfaceSierra;
 
-class fR implements s {
+class fR implements BxInterfaceSierra {
   fR(fK paramfK) {}
   
-  public void a(j paramj) {
+  public void a(BxInterfaceJuliet paramj) {
     fK.i(this.a);
     this.a.i().d();
     this.a.i().repaint();
   }
   
-  public void b(j paramj) {
+  public void b(BxInterfaceJuliet paramj) {
     fK.i(this.a);
     this.a.i().d();
     this.a.i().repaint();

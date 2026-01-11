@@ -13,20 +13,20 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import r.a;
-import r.j;
-import s.g;
+import r.IOPropertiesUsingFile;
+import r.ThreadedFile;
+import s.SComponentGolf;
 
 public class dg implements B {
-  private static dg g = null;
+  private static dg SComponentGolf = null;
   
-  private static String h = a.b + ".pipe";
+  private static String h = IOPropertiesUsingFile.b + ".pipe";
   
   private static String i = "restore.pipe";
   
-  File a = new File(j.A(), h);
+  File IOPropertiesUsingFile = new File(ThreadedFile.A(), h);
   
-  File b = new File(j.A(), i);
+  File b = new File(ThreadedFile.A(), i);
   
   boolean c = false;
   
@@ -36,34 +36,34 @@ public class dg implements B {
   
   static String f = "ONLINE";
   
-  public static dg a() {
-    if (g == null)
-      g = new dg(); 
-    return g;
+  public static dg IOPropertiesUsingFile() {
+    if (SComponentGolf == null)
+      SComponentGolf = new dg(); 
+    return SComponentGolf;
   }
   
   public boolean b() {
-    return a(false);
+    return IOPropertiesUsingFile(false);
   }
   
-  public boolean a(boolean paramBoolean) {
-    this.a = new File(j.A(), h);
-    if (this.a.exists()) {
-      this.a.delete();
+  public boolean IOPropertiesUsingFile(boolean paramBoolean) {
+    this.IOPropertiesUsingFile = new File(ThreadedFile.A(), h);
+    if (this.IOPropertiesUsingFile.exists()) {
+      this.IOPropertiesUsingFile.delete();
       try {
         Thread.sleep(2000L);
       } catch (InterruptedException interruptedException) {
         Logger.getLogger(dg.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
       } 
-      this.a = new File(j.A(), h);
-      if (this.a.exists()) {
+      this.IOPropertiesUsingFile = new File(ThreadedFile.A(), h);
+      if (this.IOPropertiesUsingFile.exists()) {
         if (!paramBoolean) {
-          String str = g.b("There appears to already be another instance of " + a.b + " running.") + "\n" + g.b("Would you like to use the one that is already running?") + "\n\n";
-          String[] arrayOfString = { g.b("Bring to foreground"), g.b("Start another") + " " + a.b };
-          int i = JOptionPane.showOptionDialog(dd.a().c(), str, g.b("Already Running"), 0, 3, null, (Object[])arrayOfString, arrayOfString[1]);
+          String str = SComponentGolf.b("There appears to already be another instance of " + IOPropertiesUsingFile.b + " running.") + "\n" + SComponentGolf.b("Would you like to use the one that is already running?") + "\n\n";
+          String[] arrayOfString = { SComponentGolf.b("Bring to foreground"), SComponentGolf.b("Start another") + " " + IOPropertiesUsingFile.b };
+          int i = JOptionPane.showOptionDialog(dd.IOPropertiesUsingFile().c(), str, SComponentGolf.b("Already Running"), 0, 3, null, (Object[])arrayOfString, arrayOfString[1]);
           boolean bool = (i == 0) ? true : false;
           if (bool) {
-            g();
+            SComponentGolf();
             return false;
           } 
           return true;
@@ -72,31 +72,31 @@ public class dg implements B {
       } 
     } 
     d();
-    C.a().a(this.a, this);
-    C.a().a(this.b, this);
+    C.IOPropertiesUsingFile().IOPropertiesUsingFile(this.IOPropertiesUsingFile, this);
+    C.IOPropertiesUsingFile().IOPropertiesUsingFile(this.b, this);
     return true;
   }
   
-  public void a(File paramFile) {
+  public void IOPropertiesUsingFile(File paramFile) {
     if (this.c)
-      if (paramFile.equals(this.a) && !paramFile.exists()) {
+      if (paramFile.equals(this.IOPropertiesUsingFile) && !paramFile.exists()) {
         d();
-      } else if (paramFile.equals(this.a) && paramFile.exists() && paramFile.length() > 0L) {
+      } else if (paramFile.equals(this.IOPropertiesUsingFile) && paramFile.exists() && paramFile.length() > 0L) {
         b(paramFile);
       } else if (paramFile.equals(this.b) && paramFile.exists()) {
-        ((dl)dd.a().c()).p();
+        ((dl)dd.IOPropertiesUsingFile().c()).p();
         paramFile.delete();
       }  
   }
   
   private void c() {
-    this.a.delete();
+    this.IOPropertiesUsingFile.delete();
   }
   
   private void d() {
     try {
-      this.a.createNewFile();
-      this.a.deleteOnExit();
+      this.IOPropertiesUsingFile.createNewFile();
+      this.IOPropertiesUsingFile.deleteOnExit();
       this.c = true;
     } catch (Exception exception) {
       D.c("Failed to create Pipe File, instance monitoring disabled.");
@@ -105,7 +105,7 @@ public class dg implements B {
   }
   
   private boolean e() {
-    File file = new File(j.A(), h);
+    File file = new File(ThreadedFile.A(), h);
     byte b1 = 2;
     byte b2 = 0;
     while (file.exists() && b1 > b2++) {
@@ -122,20 +122,20 @@ public class dg implements B {
       } catch (InterruptedException interruptedException) {
         Logger.getLogger(dg.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
       } 
-      file = new File(j.A(), h);
+      file = new File(ThreadedFile.A(), h);
     } 
-    this.a.delete();
+    this.IOPropertiesUsingFile.delete();
     return (b2 < b1);
   }
   
   private void f() {
     try {
       c();
-      this.a.createNewFile();
-      FileOutputStream fileOutputStream = new FileOutputStream(this.a);
+      this.IOPropertiesUsingFile.createNewFile();
+      FileOutputStream fileOutputStream = new FileOutputStream(this.IOPropertiesUsingFile);
       fileOutputStream.write(d.getBytes());
       fileOutputStream.close();
-      this.a.deleteOnExit();
+      this.IOPropertiesUsingFile.deleteOnExit();
       this.c = true;
       D.c("Created Die file.");
     } catch (IOException iOException) {
@@ -145,7 +145,7 @@ public class dg implements B {
     } 
   }
   
-  private void g() {
+  private void SComponentGolf() {
     try {
       this.b.createNewFile();
     } catch (IOException iOException) {
@@ -178,13 +178,13 @@ public class dg implements B {
           Runtime.getRuntime().halt(0);
         } else if (str.equals(e)) {
           D.c("Received message GO_OFFLINE.");
-          if (T.a().c() != null)
-            T.a().c().C().c(); 
+          if (T.IOPropertiesUsingFile().c() != null)
+            T.IOPropertiesUsingFile().c().C().c(); 
         } else if (str.equals(f)) {
           D.c("Received message GO_ONLINE.");
-          if (T.a().c() != null)
+          if (T.IOPropertiesUsingFile().c() != null)
             try {
-              T.a().c().C().d();
+              T.IOPropertiesUsingFile().c().C().d();
             } catch (l l) {
               Logger.getLogger(dg.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
             }  

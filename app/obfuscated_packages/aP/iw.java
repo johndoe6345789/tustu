@@ -3,19 +3,19 @@ package aP;
 import G.R;
 import G.aG;
 import G.bT;
-import G.g;
-import V.b;
+import G.SComponentGolf;
+import V.VInterfaceBravo;
 import bH.D;
-import bQ.l;
+import bQ.IOHashMap;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import s.g;
+import s.SComponentGolf;
 
-public class iw implements aG, g {
+public class iw implements aG, SComponentGolf {
   R a = null;
   
-  String b = g.b("Sending Tune to Controller");
+  String VInterfaceBravo = SComponentGolf.VInterfaceBravo("Sending Tune to Controller");
   
   x c = null;
   
@@ -33,14 +33,14 @@ public class iw implements aG, g {
     if (this.a.R()) {
       this.a.C().a(this);
       this.a.C().a(this);
-      this.c.k(this.b);
-      f.a().e(this.b);
-      if (this.a.C() instanceof l) {
-        l l = (l)this.a.C();
+      this.c.k(this.VInterfaceBravo);
+      f.a().e(this.VInterfaceBravo);
+      if (this.a.C() instanceof IOHashMap) {
+        IOHashMap IOHashMap = (IOHashMap)this.a.C();
         try {
-          l.m();
-        } catch (b b) {
-          Logger.getLogger(iw.class.getName()).log(Level.WARNING, "Failed to stop all DAQ's", (Throwable)b);
+          IOHashMap.m();
+        } catch (VInterfaceBravo VInterfaceBravo) {
+          Logger.getLogger(iw.class.getName()).log(Level.WARNING, "Failed to stop all DAQ's", (Throwable)VInterfaceBravo);
         } 
       } 
     } 
@@ -54,24 +54,24 @@ public class iw implements aG, g {
     c();
   }
   
-  public void b(String paramString, int paramInt) {
+  public void VInterfaceBravo(String paramString, int paramInt) {
     this.e++;
     if (this.d > 0) {
       double d = this.e / this.d;
       f.a().a(d);
       if (d == 1.0D)
-        b(); 
+        VInterfaceBravo(); 
     } 
     if (this.e <= this.d)
-      f.a().f(this.b + ". Burned page " + paramInt); 
+      f.a().f(this.VInterfaceBravo + ". Burned page " + paramInt); 
   }
   
   public void a(String paramString, boolean paramBoolean) {
-    b();
-    f.a().l();
+    VInterfaceBravo();
+    f.a().IOHashMap();
   }
   
-  private void b() {
+  private void VInterfaceBravo() {
     (new ix(this)).start();
   }
   
@@ -80,27 +80,27 @@ public class iw implements aG, g {
     if (x1 != null)
       synchronized (x1) {
         String str = x1.aa();
-        if (str != null && str.equals(this.b)) {
+        if (str != null && str.equals(this.VInterfaceBravo)) {
           x1.ab();
           this.c = null;
         } 
       }  
-    if (this.a.C() instanceof l) {
-      l l = (l)this.a.C();
+    if (this.a.C() instanceof IOHashMap) {
+      IOHashMap IOHashMap = (IOHashMap)this.a.C();
       try {
-        l.l();
+        IOHashMap.IOHashMap();
       } catch (Exception exception) {
         try {
-          D.b("Failed to restart DAQ, retrying.");
-          l.l();
+          D.VInterfaceBravo("Failed to restart DAQ, retrying.");
+          IOHashMap.IOHashMap();
         } catch (Exception exception1) {
           Logger.getLogger(iw.class.getName()).log(Level.SEVERE, "Failed to restart DAQ's after 2 attempt", exception1);
         } 
       } 
     } 
-    f.a().l();
-    this.a.C().b(this);
-    this.a.C().b(this);
+    f.a().IOHashMap();
+    this.a.C().VInterfaceBravo(this);
+    this.a.C().VInterfaceBravo(this);
   }
   
   public void a(String paramString, int paramInt) {}

@@ -2,13 +2,13 @@ package aP;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import s.b;
-import s.f;
+import s.JDialogExtensionInSPackage;
+import s.SInterfaceFoxtrot;
 
 class gU extends MouseAdapter {
-  f a = null;
+  SInterfaceFoxtrot a = null;
   
-  public gU(dB paramdB, f paramf) {
+  public gU(dB paramdB, SInterfaceFoxtrot paramf) {
     this.a = paramf;
   }
   
@@ -25,7 +25,7 @@ class gU extends MouseAdapter {
   }
   
   private void a() {
-    b.a(this.a);
+    JDialogExtensionInSPackage.a(this.a);
   }
 }
 

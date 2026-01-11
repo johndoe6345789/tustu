@@ -1,13 +1,13 @@
 package ao;
 
-import az.d;
-import h.i;
+import az.AzInterfaceDelta;
+import h.IOProperties;
 import java.awt.Window;
 import java.io.File;
 
-public class bW implements d {
+public class bW implements AzInterfaceDelta {
   public String a() {
-    return i.b + " " + i.c;
+    return IOProperties.b + " " + IOProperties.c;
   }
   
   public String b() {
@@ -15,35 +15,35 @@ public class bW implements d {
   }
   
   public String c() {
-    return i.e("activationKey", "");
+    return IOProperties.e("activationKey", "");
   }
   
   public void a(String paramString) {
-    i.d("activationKey", paramString);
-    i.h();
+    IOProperties.AzInterfaceDelta("activationKey", paramString);
+    IOProperties.h();
   }
   
-  public String d() {
-    return i.e("registrationKeyV2", "");
+  public String AzInterfaceDelta() {
+    return IOProperties.e("registrationKeyV2", "");
   }
   
   public String e() {
-    return i.e("uid", "");
+    return IOProperties.e("uid", "");
   }
   
   public String f() {
-    return i.b;
+    return IOProperties.b;
   }
   
   public String g() {
-    return i.c;
+    return IOProperties.c;
   }
   
   public String h() {
-    return i.e("userEmail", "");
+    return IOProperties.e("userEmail", "");
   }
   
-  public Window i() {
+  public Window IOProperties() {
     return bq.a().b();
   }
   

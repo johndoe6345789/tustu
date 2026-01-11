@@ -2,18 +2,18 @@ package ao;
 
 import W.j;
 import W.n;
-import h.g;
+import h.PropertiesExtensionInHPackage;
 
 class eE implements Runnable {
   eE(eC parameC, n paramn) {}
   
   public void run() {
     this.b.b.a(this.a);
-    g g = g.a();
-    String str = g.a("Time");
+    PropertiesExtensionInHPackage PropertiesExtensionInHPackage = PropertiesExtensionInHPackage.a();
+    String str = PropertiesExtensionInHPackage.a("Time");
     j j = this.a.a(str);
     this.b.b.a(j);
-    this.b.g.a(this.a);
+    this.b.PropertiesExtensionInHPackage.a(this.a);
     this.b.c();
   }
 }

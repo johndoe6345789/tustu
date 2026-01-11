@@ -1,23 +1,23 @@
 package aP;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
+import r.ExceptionInVPackage;
 
 class dE implements ActionListener {
   dE(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a.a().b(a.J, Boolean.toString(false));
+    ExceptionInVPackage.ExceptionInVPackage().b(ExceptionInVPackage.J, Boolean.toString(false));
     try {
-      a.a().e();
-    } catch (a a) {
-      Logger.getLogger(dB.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      ExceptionInVPackage.ExceptionInVPackage().e();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(dB.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
-    dB.b(this.a);
+    dB.b(this.ExceptionInVPackage);
   }
 }
 

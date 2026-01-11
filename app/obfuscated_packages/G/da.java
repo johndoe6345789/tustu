@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.X;
 
 public class da {
@@ -38,15 +38,15 @@ public class da {
         arrayOfString[0] = paramString.substring(0, paramString.indexOf(",")).trim();
         arrayOfString[1] = paramString.substring(paramString.indexOf(",") + 1).trim();
       } catch (Exception exception) {
-        throw new g("bitStringValue([bitConstantName], [expression]): Invalid Expression");
+        throw new ExceptionPrintstacktrace("bitStringValue([bitConstantName], [expression]): Invalid Expression");
       } 
       aM aM = null;
       if (paramR != null) {
         aM = paramR.c(arrayOfString[0]);
         if (aM == null)
-          throw new g("bitStringValue([bitConstantName], [expression]): Invalid bitConstantName: " + arrayOfString[0] + " not found"); 
+          throw new ExceptionPrintstacktrace("bitStringValue([bitConstantName], [expression]): Invalid bitConstantName: " + arrayOfString[0] + " not found"); 
         if (!aM.i().equals("bits"))
-          throw new g("bitStringValue([bitConstantName], [expression]): Invalid bitConstantName: " + arrayOfString[0] + " is not paramClass bits"); 
+          throw new ExceptionPrintstacktrace("bitStringValue([bitConstantName], [expression]): Invalid bitConstantName: " + arrayOfString[0] + " is not paramClass bits"); 
       } 
       String str4 = X.b(arrayOfString[1], "{", "");
       str4 = X.b(str4, "}", "");
@@ -80,7 +80,7 @@ public class da {
       if (paramR != null) {
         aM = paramR.c(str4);
         if (aM == null)
-          throw new g("stringValue([StringConstantName]): Invalid String Constant Name: " + arrayOfString[0] + " not found"); 
+          throw new ExceptionPrintstacktrace("stringValue([StringConstantName]): Invalid String Constant Name: " + arrayOfString[0] + " not found"); 
       } 
       if (paramR != null) {
         cC = new cC(paramR, aM);
@@ -110,7 +110,7 @@ public class da {
       if (paramR != null) {
         aM = paramR.c(str4);
         if (aM == null)
-          throw new g("stringValue([StringConstantName]): Invalid String Constant Name: " + arrayOfString[0] + " not found"); 
+          throw new ExceptionPrintstacktrace("stringValue([StringConstantName]): Invalid String Constant Name: " + arrayOfString[0] + " not found"); 
       } 
       if (paramR != null) {
         cC = new cC(paramR, aM);

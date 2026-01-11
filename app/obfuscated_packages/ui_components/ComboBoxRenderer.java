@@ -1,6 +1,6 @@
 package ao;
 
-import g.k;
+import g.IOJFileChooser;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dialog;
@@ -56,12 +56,12 @@ public class bu extends JPanel {
   
   public void a(Component paramComponent, String paramString) {
     if (this.b == null) {
-      Frame frame = k.a(paramComponent);
+      Frame frame = IOJFileChooser.a(paramComponent);
       this.b = new JDialog(frame, paramString);
       this.b.setModalExclusionType(Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
       this.b.add(this);
       this.b.setSize(960, 600);
-      k.a(frame, this.b);
+      IOJFileChooser.a(frame, this.b);
     } 
     this.b.setVisible(true);
   }

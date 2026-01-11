@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 import W.ap;
-import X.d;
+import X.IOInXPackage;
 import bH.D;
 import bH.ab;
 import java.awt.BorderLayout;
@@ -48,7 +48,7 @@ public class DialogUtilities {
   
   static JFileChooser c = null;
   
-  static JFileChooser d = null;
+  static JFileChooser IOInXPackage = null;
   
   static JColorChooser e = null;
   
@@ -219,7 +219,7 @@ public class DialogUtilities {
     return a(paramComponent, paramString1, paramArrayOfString, paramString2, paramString3, true, paramck);
   }
   
-  public static boolean d() {
+  public static boolean IOInXPackage() {
     String str = System.getProperty("os.name", "Windows");
     return str.startsWith("Win");
   }
@@ -388,7 +388,7 @@ public class DialogUtilities {
       dd dd = new dd("");
       c.setAcceptAllFileFilterUsed(false);
       c.addChoosableFileFilter(dd);
-      if (d()) {
+      if (IOInXPackage()) {
         LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
         try {
           UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -407,30 +407,30 @@ public class DialogUtilities {
   public static void e() {
     b = null;
     c = null;
-    d = null;
+    IOInXPackage = null;
   }
   
   public static boolean f() {
-    return (d != null);
+    return (IOInXPackage != null);
   }
   
   public static void a(FileView paramFileView) {
-    if (d == null) {
-      d = new JFileChooser();
-      d.setFileSelectionMode(2);
-      d.setDialogTitle(b("Open Project"));
+    if (IOInXPackage == null) {
+      IOInXPackage = new JFileChooser();
+      IOInXPackage.setFileSelectionMode(2);
+      IOInXPackage.setDialogTitle(b("Open Project"));
       dd dd = new dd("");
-      d.addChoosableFileFilter(dd);
-      d.setAcceptAllFileFilterUsed(false);
-      d.setFileView(paramFileView);
-      d.setFileFilter(new bY());
-      d.addPropertyChangeListener(new bZ());
+      IOInXPackage.addChoosableFileFilter(dd);
+      IOInXPackage.setAcceptAllFileFilterUsed(false);
+      IOInXPackage.setFileView(paramFileView);
+      IOInXPackage.setFileFilter(new bY());
+      IOInXPackage.addPropertyChangeListener(new bZ());
     } 
-    if (d()) {
+    if (IOInXPackage()) {
       LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
       try {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        SwingUtilities.updateComponentTreeUI(d);
+        SwingUtilities.updateComponentTreeUI(IOInXPackage);
         UIManager.setLookAndFeel(lookAndFeel);
       } catch (Exception exception) {
         try {
@@ -439,22 +439,22 @@ public class DialogUtilities {
           Logger.getLogger(bV.class.getName()).log(Level.SEVERE, (String)null, exception1);
           D.c("Unable to set cross platform look & feel also on Project Dialog");
         } 
-        SwingUtilities.updateComponentTreeUI(d);
+        SwingUtilities.updateComponentTreeUI(IOInXPackage);
         D.c("Unable to set windows look & feel on Project Dialog");
       } 
     } 
   }
   
   public static String a(String paramString1, Component paramComponent, String paramString2, ck paramck) {
-    d.setCurrentDirectory(new File(paramString1));
-    d.setAccessory(paramck);
+    IOInXPackage.setCurrentDirectory(new File(paramString1));
+    IOInXPackage.setAccessory(paramck);
     if (paramString2 != null) {
-      d.setDialogTitle(b(paramString2));
+      IOInXPackage.setDialogTitle(b(paramString2));
     } else {
-      d.setDialogTitle(b("Open Project"));
+      IOInXPackage.setDialogTitle(b("Open Project"));
     } 
-    int i = d.showDialog(paramComponent, b("Select"));
-    return (i == 0) ? d.getSelectedFile().getAbsolutePath() : null;
+    int i = IOInXPackage.showDialog(paramComponent, b("Select"));
+    return (i == 0) ? IOInXPackage.getSelectedFile().getAbsolutePath() : null;
   }
   
   public static String b(String paramString, Component paramComponent) {
@@ -466,9 +466,9 @@ public class DialogUtilities {
       File file = new File(k, "fileChooser.ser");
       if (file.exists())
         file.delete(); 
-      d d = new d();
+      IOInXPackage IOInXPackage = new IOInXPackage();
       try {
-        d.a(b, file);
+        IOInXPackage.a(b, file);
       } catch (IOException iOException) {
         D.c("Error saving cached FileChooser: " + iOException.getLocalizedMessage());
         iOException.printStackTrace();
@@ -481,9 +481,9 @@ public class DialogUtilities {
       if (k != null) {
         File file = new File(k, "fileChooser.ser");
         if (file.exists()) {
-          d d = new d();
+          IOInXPackage IOInXPackage = new IOInXPackage();
           try {
-            b = (JFileChooser)d.a(file);
+            b = (JFileChooser)IOInXPackage.a(file);
           } catch (IOException|ClassNotFoundException iOException) {
             D.c("No cached FileChooser found.");
           } 
@@ -492,7 +492,7 @@ public class DialogUtilities {
       if (b == null) {
         b = new JFileChooser();
         LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
-        if (d() && lookAndFeel.getName().equals("Metal"))
+        if (IOInXPackage() && lookAndFeel.getName().equals("Metal"))
           try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             SwingUtilities.updateComponentTreeUI(b);
@@ -517,7 +517,7 @@ public class DialogUtilities {
     } 
   }
   
-  public static void d(String paramString, Component paramComponent) {
+  public static void IOInXPackage(String paramString, Component paramComponent) {
     if (SwingUtilities.isEventDispatchThread()) {
       JOptionPane.showMessageDialog(paramComponent, paramString);
     } else {
@@ -537,7 +537,7 @@ public class DialogUtilities {
       int i = JOptionPane.showConfirmDialog(paramComponent, paramString, "", 0);
       return (i == 0);
     } 
-    d(paramString, paramComponent);
+    IOInXPackage(paramString, paramComponent);
     return true;
   }
   
@@ -546,7 +546,7 @@ public class DialogUtilities {
       int i = JOptionPane.showConfirmDialog(paramComponent, paramString, "", 0, 2);
       return (i == 0);
     } 
-    d(paramString, paramComponent);
+    IOInXPackage(paramString, paramComponent);
     return true;
   }
   

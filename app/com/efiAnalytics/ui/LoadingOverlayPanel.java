@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -15,25 +15,25 @@ public class LoadingOverlayPanel extends JPanel {
   
   private String c = "";
   
-  fK a = null;
+  fK ExceptionInVPackage = null;
   
-  protected Image a() {
+  protected Image ExceptionInVPackage() {
     if (this.b == null)
       try {
-        this.b = cO.a().a(cO.v);
-      } catch (a a) {
-        Logger.getLogger(fJ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+        this.b = cO.ExceptionInVPackage().ExceptionInVPackage(cO.v);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        Logger.getLogger(fJ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
       }  
     return this.b;
   }
   
   public void paintChildren(Graphics paramGraphics) {
     super.paintChildren(paramGraphics);
-    if (this.a != null && this.a.a) {
+    if (this.ExceptionInVPackage != null && this.ExceptionInVPackage.ExceptionInVPackage) {
       Graphics2D graphics2D = (Graphics2D)paramGraphics;
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      Image image = a();
+      Image image = ExceptionInVPackage();
       if (image != null) {
         int j = image.getWidth(null) / 2;
         int k = image.getHeight(null) / 2;
@@ -49,19 +49,19 @@ public class LoadingOverlayPanel extends JPanel {
   
   public void b() {
     c();
-    this.a = new fK(this);
-    this.a.start();
+    this.ExceptionInVPackage = new fK(this);
+    this.ExceptionInVPackage.start();
   }
   
   public void c() {
-    if (this.a != null) {
-      this.a.a();
-      this.a = null;
+    if (this.ExceptionInVPackage != null) {
+      this.ExceptionInVPackage.ExceptionInVPackage();
+      this.ExceptionInVPackage = null;
     } 
     repaint();
   }
   
-  public void a(String paramString) {
+  public void ExceptionInVPackage(String paramString) {
     this.c = paramString;
   }
 }

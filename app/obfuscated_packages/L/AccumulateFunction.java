@@ -1,7 +1,7 @@
 package L;
 
 import G.dj;
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -27,7 +27,7 @@ public class AccumulateFunction extends ac implements dj {
     this.c = paramab3;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d = this.a.b(paramS);
     if (Double.isNaN(this.e) || this.e != d) {
       if (Double.isNaN(this.d)) {
@@ -44,7 +44,7 @@ public class AccumulateFunction extends ac implements dj {
     return this.d;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

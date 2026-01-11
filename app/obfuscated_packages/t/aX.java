@@ -1,11 +1,11 @@
 package t;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class aX implements FocusListener {
   aX(aO paramaO) {}
@@ -18,10 +18,10 @@ class aX implements FocusListener {
       return; 
     try {
       String str = jTextField.getText();
-      this.a.c().k(str);
-    } catch (a a) {
-      bV.d(g.b("Invalid Expression or value."), jTextField);
-      jTextField.setText(this.a.k);
+      this.ExceptionInVPackage.c().k(str);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(SComponentGolf.b("Invalid Expression or value."), jTextField);
+      jTextField.setText(this.ExceptionInVPackage.k);
     } 
   }
 }

@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class bE extends Q implements Serializable {
   
   public void a(bL parambL) {
     if (parambL == null || parambL.aL() == null)
-      throw new g("Can not add wheelPattern unless it has a valid name."); 
+      throw new ExceptionPrintstacktrace("Can not add wheelPattern unless it has a valid name."); 
     this.d.put(parambL.aL(), parambL);
   }
   

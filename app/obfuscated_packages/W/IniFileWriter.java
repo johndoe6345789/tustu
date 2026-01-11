@@ -1,9 +1,9 @@
 package W;
 
 import G.R;
-import aa.b;
-import aa.d;
-import aa.e;
+import aa.AaInterfaceBravo;
+import aa.AaInterfaceDelta;
+import aa.AaInterfaceEcho;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,13 +17,13 @@ import java.util.Map;
 public class IniFileWriter {
   private OutputStreamWriter c = null;
   
-  private BufferedWriter d = null;
+  private BufferedWriter AaInterfaceDelta = null;
   
   public static int a = 28;
   
-  public static int b = 10;
+  public static int AaInterfaceBravo = 10;
   
-  private boolean e = true;
+  private boolean AaInterfaceEcho = true;
   
   private final Map f = new HashMap<>();
   
@@ -38,29 +38,29 @@ public class IniFileWriter {
     if (paramFile.exists()) {
       j = new J();
       j.a(paramFile, true);
-      j.b();
+      j.AaInterfaceBravo();
     } 
     String str = "Open Writer";
     try {
       this.c = new OutputStreamWriter(new FileOutputStream(paramFile), "UTF-8");
-      this.d = new BufferedWriter(this.c);
-      this.d.append("encoding=UTF-8\n");
+      this.AaInterfaceDelta = new BufferedWriter(this.c);
+      this.AaInterfaceDelta.append("encoding=UTF-8\n");
       ArrayList<String> arrayList = new ArrayList();
       for (String str1 : this.g) {
-        N n = (j != null && j.a(str1)) ? j.b(str1) : null;
+        N n = (j != null && j.a(str1)) ? j.AaInterfaceBravo(str1) : null;
         if (this.f.containsKey(str1)) {
           O o = (O)this.f.get(str1);
           arrayList.add(str1);
-          this.d.write("\n");
+          this.AaInterfaceDelta.write("\n");
           if (!str1.equals("FILE_HEADER"))
-            this.d.append("[").append(str1).append("]").append("\n"); 
-          if (this.e) {
-            this.d.append(o.b());
-            this.d.append("\n");
+            this.AaInterfaceDelta.append("[").append(str1).append("]").append("\n"); 
+          if (this.AaInterfaceEcho) {
+            this.AaInterfaceDelta.append(o.AaInterfaceBravo());
+            this.AaInterfaceDelta.append("\n");
           } 
-          o.a(paramR, this.d, n, paramr);
-          this.d.write("\n");
-          this.d.flush();
+          o.a(paramR, this.AaInterfaceDelta, n, paramr);
+          this.AaInterfaceDelta.write("\n");
+          this.AaInterfaceDelta.flush();
         } else if (n != null) {
           if (n.a().equals("UserDefined"))
             n.a("UiDialogs"); 
@@ -69,11 +69,11 @@ public class IniFileWriter {
         } 
       } 
       if (j != null) {
-        Iterator<String> iterator = j.b();
+        Iterator<String> iterator = j.AaInterfaceBravo();
         while (iterator.hasNext()) {
           String str1 = iterator.next();
           if (!arrayList.contains(str1)) {
-            N n = j.b(str1);
+            N n = j.AaInterfaceBravo(str1);
             a(n);
             arrayList.add(str1);
           } 
@@ -88,8 +88,8 @@ public class IniFileWriter {
       throw iOException;
     } finally {
       try {
-        if (this.d != null)
-          this.d.close(); 
+        if (this.AaInterfaceDelta != null)
+          this.AaInterfaceDelta.close(); 
         if (this.c != null)
           this.c.close(); 
       } catch (Exception exception) {}
@@ -101,36 +101,36 @@ public class IniFileWriter {
   }
   
   public void a(boolean paramBoolean) {
-    this.e = paramBoolean;
+    this.AaInterfaceEcho = paramBoolean;
   }
   
   public static P a() {
     P p = new P();
-    p.a((O)new e());
-    p.a((O)new d());
-    p.a((O)new b());
+    p.a((O)new AaInterfaceEcho());
+    p.a((O)new AaInterfaceDelta());
+    p.a((O)new AaInterfaceBravo());
     return p;
   }
   
   private void a(N paramN) {
     boolean bool = false;
     if (!paramN.a().equals("FILE_HEADER")) {
-      this.d.append("[").append(paramN.a()).append("]").append("\n");
+      this.AaInterfaceDelta.append("[").append(paramN.a()).append("]").append("\n");
     } else {
       bool = true;
     } 
-    byte b = 0;
+    byte AaInterfaceBravo = 0;
     for (M m : paramN) {
       String str = m.a();
       if (str.trim().isEmpty()) {
-        b++;
+        AaInterfaceBravo++;
       } else {
-        b = 0;
+        AaInterfaceBravo = 0;
       } 
-      if (b < 5 && (!bool || !str.contains("encoding=UTF-8")))
-        this.d.append(str).append("\n"); 
+      if (AaInterfaceBravo < 5 && (!bool || !str.contains("encoding=UTF-8")))
+        this.AaInterfaceDelta.append(str).append("\n"); 
     } 
-    this.d.flush();
+    this.AaInterfaceDelta.flush();
   }
 }
 

@@ -10,20 +10,20 @@ import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
-import s.g;
+import s.SComponentGolf;
 
 public class ProjectArchiveOptionsPanel extends ck {
   JTextPane a = new JTextPane();
   
   private String d = "";
   
-  JCheckBox b = new JCheckBox(g.b("Include Data Logs"), true);
+  JCheckBox b = new JCheckBox(SComponentGolf.b("Include Data Logs"), true);
   
-  JCheckBox c = new JCheckBox(g.b("Include Restore Points"), true);
+  JCheckBox c = new JCheckBox(SComponentGolf.b("Include Restore Points"), true);
   
   public X() {
     setBorder(BorderFactory.createTitledBorder("Include"));
-    this.d = g.b("Optional Items to include \nin Project Archive") + ":";
+    this.d = SComponentGolf.b("Optional Items to include \nin Project Archive") + ":";
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
     jPanel1.add(this.b);

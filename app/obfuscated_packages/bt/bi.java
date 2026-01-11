@@ -1,13 +1,13 @@
 package bt;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.cQ;
 
 class bi implements cQ {
   bi(bh parambh, String paramString) {}
   
-  public void a(int paramInt) {
-    a.A().setProperty(this.a, Integer.toString(paramInt));
+  public void PropertiesExtension(int paramInt) {
+    PropertiesExtension.A().setProperty(this.PropertiesExtension, Integer.toString(paramInt));
   }
 }
 

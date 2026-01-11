@@ -5,8 +5,8 @@ import G.ak;
 import G.bt;
 import G.cq;
 import G.cu;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.p;
 import com.efiAnalytics.apps.ts.dashboard.Indicator;
 import com.efiAnalytics.apps.ts.dashboard.ac;
@@ -28,9 +28,9 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
 public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponent, ac, bc {
-  dD a = new dD(this);
+  dD ExceptionInVPackage = new dD(this);
   
-  GridLayout b = new GridLayout(0, 1, eJ.a(3), eJ.a(4));
+  GridLayout b = new GridLayout(0, 1, eJ.ExceptionInVPackage(3), eJ.ExceptionInVPackage(4));
   
   List c = new ArrayList();
   
@@ -41,12 +41,12 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
   public r(R paramR, bt parambt) {
     this.d = paramR;
     this.e = parambt;
-    a(paramR);
+    ExceptionInVPackage(paramR);
     setLayout(this.b);
-    setBorder(BorderFactory.createEmptyBorder(eJ.a(2), eJ.a(2), eJ.a(1), eJ.a(2)));
+    setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(2)));
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     this.b.setColumns(paramInt);
   }
   
@@ -59,30 +59,30 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
     } 
   }
   
-  public void a(ak paramak) {
+  public void ExceptionInVPackage(ak paramak) {
     boolean bool = true;
     try {
-      bool = p.a(paramak.aJ(), b_());
-    } catch (g g) {
-      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      bool = p.ExceptionInVPackage(paramak.aJ(), b_());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     if (bool) {
       Indicator indicator = new Indicator();
       indicator.setEcuConfigurationName(this.d.c());
       indicator.setOutputChannel(paramak.f());
-      indicator.setOnText(paramak.a().toString());
-      indicator.setOnTextColor(new Color(paramak.i().a()));
-      indicator.setOffTextColor(new Color(paramak.j().a()));
-      indicator.setOnBackgroundColor(new Color(paramak.g().a()));
-      indicator.setOffBackgroundColor(new Color(paramak.h().a()));
+      indicator.setOnText(paramak.ExceptionInVPackage().toString());
+      indicator.setOnTextColor(new Color(paramak.i().ExceptionInVPackage()));
+      indicator.setOffTextColor(new Color(paramak.j().ExceptionInVPackage()));
+      indicator.setOnBackgroundColor(new Color(paramak.ExceptionPrintstacktrace().ExceptionInVPackage()));
+      indicator.setOffBackgroundColor(new Color(paramak.h().ExceptionInVPackage()));
       indicator.setOffText(paramak.d().toString());
       indicator.setShortClickAction(paramak.l());
       indicator.setLongClickAction(paramak.m());
       this.c.add(indicator);
       try {
         indicator.subscribeToOutput();
-      } catch (a a) {
-        bV.d(a.getMessage(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(ExceptionInVPackage.getMessage(), this);
       } 
       add((Component)indicator);
       indicator.setDirty(true);
@@ -90,18 +90,18 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
     } 
   }
   
-  public void a(s params) {
-    this.a.a();
+  public void ExceptionInVPackage(s params) {
+    this.ExceptionInVPackage.ExceptionInVPackage();
   }
   
   public void close() {
     for (Indicator indicator : this.c)
-      cu.a().a((cq)indicator); 
+      cu.ExceptionInVPackage().ExceptionInVPackage((cq)indicator); 
   }
   
   public Dimension getPreferredSize() {
-    int i = 4 + eJ.a(29) * this.c.size() / this.b.getColumns();
-    int j = 3 + eJ.a(116) * this.b.getColumns();
+    int i = 4 + eJ.ExceptionInVPackage(29) * this.c.size() / this.b.getColumns();
+    int j = 3 + eJ.ExceptionInVPackage(116) * this.b.getColumns();
     return new Dimension(j, i);
   }
   
@@ -109,13 +109,13 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
     return getPreferredSize();
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (this.e != null && this.e.aJ() != null && !this.e.aJ().equals("")) {
       boolean bool = true;
       try {
-        bool = p.a(this.e.aJ(), b_());
-      } catch (g g) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        bool = p.ExceptionInVPackage(this.e.aJ(), b_());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
       if (isEnabled() && !bool) {
         setEnabled(false);
@@ -133,9 +133,9 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
     if (this.e != null && this.e.V() != null && !this.e.V().equals("")) {
       boolean bool = true;
       try {
-        bool = p.a(this.e.V(), b_());
-      } catch (g g) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        bool = p.ExceptionInVPackage(this.e.V(), b_());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
       if (isVisible() && !bool) {
         setVisible(false);

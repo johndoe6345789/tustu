@@ -4,8 +4,8 @@ import G.R;
 import G.aI;
 import G.dj;
 import G.dk;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.apps.ts.dashboard.DashLabel;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.Indicator;
@@ -13,20 +13,20 @@ import com.efiAnalytics.apps.ts.dashboard.SingleChannelDashComponent;
 import com.efiAnalytics.apps.ts.dashboard.r;
 import com.efiAnalytics.apps.ts.dashboard.s;
 import com.efiAnalytics.ui.bV;
-import d.d;
+import DComponentDelta.DComponentDelta;
 import java.awt.Color;
 import java.awt.Component;
 import java.util.ArrayList;
 
 public class ai {
-  private ArrayList a = null;
+  private ArrayList ExceptionInVPackage = null;
   
-  public ArrayList a() {
-    return this.a;
+  public ArrayList ExceptionInVPackage() {
+    return this.ExceptionInVPackage;
   }
   
-  public void a(ArrayList paramArrayList) {
-    this.a = paramArrayList;
+  public void ExceptionInVPackage(ArrayList paramArrayList) {
+    this.ExceptionInVPackage = paramArrayList;
   }
   
   protected boolean b(ArrayList paramArrayList) {
@@ -49,7 +49,7 @@ public class ai {
     return false;
   }
   
-  protected boolean d(ArrayList paramArrayList) {
+  protected boolean DComponentDelta(ArrayList paramArrayList) {
     if (paramArrayList == null || paramArrayList.size() == 0)
       return false; 
     for (s s : paramArrayList) {
@@ -59,16 +59,16 @@ public class ai {
     return false;
   }
   
-  public void a(String paramString) {
-    for (s s : this.a) {
+  public void ExceptionInVPackage(String paramString) {
+    for (s s : this.ExceptionInVPackage) {
       s.setFontFamily(paramString);
       s.invalidate();
       s.repaint();
     } 
   }
   
-  public void a(double paramDouble) {
-    for (s s : this.a) {
+  public void ExceptionInVPackage(double paramDouble) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof SingleChannelDashComponent) {
         ((SingleChannelDashComponent)s).setValue(paramDouble);
         s.invalidate();
@@ -77,8 +77,8 @@ public class ai {
     } 
   }
   
-  public void a(boolean paramBoolean) {
-    for (s s : this.a) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
+    for (s s : this.ExceptionInVPackage) {
       s.setItalicFont(paramBoolean);
       s.invalidate();
       s.repaint();
@@ -86,14 +86,14 @@ public class ai {
   }
   
   public void b(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof SingleChannelDashComponent) {
         SingleChannelDashComponent singleChannelDashComponent = (SingleChannelDashComponent)s;
         singleChannelDashComponent.setOutputChannel(paramString);
         try {
           singleChannelDashComponent.subscribeToOutput();
-        } catch (a a) {
-          bV.d(a.getMessage(), (Component)s);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          bV.DComponentDelta(ExceptionInVPackage.getMessage(), (Component)s);
         } 
         s.invalidate();
         s.repaint();
@@ -102,14 +102,14 @@ public class ai {
   }
   
   public void c(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.setEcuConfigurationName(paramString);
       if (s instanceof SingleChannelDashComponent) {
         try {
           SingleChannelDashComponent singleChannelDashComponent = (SingleChannelDashComponent)s;
           singleChannelDashComponent.subscribeToOutput();
-        } catch (a a) {
-          bV.d(a.getMessage(), (Component)s);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          bV.DComponentDelta(ExceptionInVPackage.getMessage(), (Component)s);
         } 
         s.invalidate();
         s.repaint();
@@ -117,8 +117,8 @@ public class ai {
     } 
   }
   
-  public void a(int paramInt) {
-    for (s s : this.a) {
+  public void ExceptionInVPackage(int paramInt) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setFaceAngle(paramInt);
@@ -128,8 +128,8 @@ public class ai {
     } 
   }
   
-  public void d(String paramString) {
-    for (s s : this.a) {
+  public void DComponentDelta(String paramString) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         ((Gauge)s).setBackgroundImageFileName(paramString);
         s.invalidate();
@@ -139,7 +139,7 @@ public class ai {
   }
   
   public void e(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         ((Gauge)s).setNeedleImageFileName(paramString);
         s.invalidate();
@@ -149,7 +149,7 @@ public class ai {
   }
   
   public void f(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         ((Indicator)s).setOnImageFileName(paramString);
         s.invalidate();
@@ -158,8 +158,8 @@ public class ai {
     } 
   }
   
-  public void g(String paramString) {
-    for (s s : this.a) {
+  public void ExceptionPrintstacktrace(String paramString) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         ((Indicator)s).setOffImageFileName(paramString);
         s.invalidate();
@@ -169,14 +169,14 @@ public class ai {
   }
   
   public void h(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.invalidate();
       s.setId(paramString);
     } 
   }
   
   public void b(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setStartAngle(paramInt);
@@ -187,7 +187,7 @@ public class ai {
   }
   
   public void c(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setSweepBeginDegree(paramInt);
@@ -197,8 +197,8 @@ public class ai {
     } 
   }
   
-  public void d(int paramInt) {
-    for (s s : this.a) {
+  public void DComponentDelta(int paramInt) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setNeedleSmoothing(paramInt);
@@ -207,7 +207,7 @@ public class ai {
   }
   
   public void e(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setSweepAngle(paramInt);
@@ -218,11 +218,11 @@ public class ai {
   }
   
   public void f(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
-        double d = paramInt / gauge.getShortestSize();
-        gauge.setRelativeBorderWidth2(d);
+        double DComponentDelta = paramInt / gauge.getShortestSize();
+        gauge.setRelativeBorderWidth2(DComponentDelta);
         gauge.invalidate();
         s.invalidate();
         s.repaint();
@@ -230,8 +230,8 @@ public class ai {
     } 
   }
   
-  public void g(int paramInt) {
-    for (s s : this.a) {
+  public void ExceptionPrintstacktrace(int paramInt) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setFontSizeAdjustment(paramInt);
@@ -242,7 +242,7 @@ public class ai {
   }
   
   public void i(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setTitle(paramString);
@@ -253,7 +253,7 @@ public class ai {
   }
   
   public void j(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setUnits(paramString);
@@ -263,8 +263,8 @@ public class ai {
     } 
   }
   
-  public void a(Color paramColor) {
-    for (s s : this.a) {
+  public void ExceptionInVPackage(Color paramColor) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setTrimColor(paramColor);
@@ -275,7 +275,7 @@ public class ai {
   }
   
   public void b(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setBackColor(paramColor);
@@ -286,7 +286,7 @@ public class ai {
   }
   
   public void c(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setFontColor(paramColor);
@@ -296,8 +296,8 @@ public class ai {
     } 
   }
   
-  public void d(Color paramColor) {
-    for (s s : this.a) {
+  public void DComponentDelta(Color paramColor) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setNeedleColor(paramColor);
@@ -308,7 +308,7 @@ public class ai {
   }
   
   public void e(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setWarnColor(paramColor);
@@ -319,7 +319,7 @@ public class ai {
   }
   
   public void f(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setCriticalColor(paramColor);
@@ -330,7 +330,7 @@ public class ai {
   }
   
   public void h(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.setBounds(paramInt, s.getY(), s.getWidth(), s.getHeight());
       s.updateRelativeBoundsToCurrent();
       s.invalidate();
@@ -339,7 +339,7 @@ public class ai {
   }
   
   public void i(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.setBounds(s.getX(), paramInt, s.getWidth(), s.getHeight());
       s.updateRelativeBoundsToCurrent();
       s.invalidate();
@@ -348,7 +348,7 @@ public class ai {
   }
   
   public void j(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.setBounds(s.getX(), s.getY(), paramInt, s.getHeight());
       s.updateRelativeBoundsToCurrent();
       s.invalidate();
@@ -357,7 +357,7 @@ public class ai {
   }
   
   public void k(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       s.setBounds(s.getX(), s.getY(), s.getWidth(), paramInt);
       s.updateRelativeBoundsToCurrent();
       s.invalidate();
@@ -365,115 +365,115 @@ public class ai {
     } 
   }
   
-  private void a(dj paramdj) {
-    if (Double.isNaN(paramdj.a()))
-      throw new a("Invalid value: " + paramdj.toString()); 
+  private void ExceptionInVPackage(dj paramdj) {
+    if (Double.isNaN(paramdj.ExceptionInVPackage()))
+      throw new ExceptionInVPackage("Invalid value: " + paramdj.toString()); 
   }
   
   public void k(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setMinVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void l(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setMaxVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void m(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setLowWarningVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void n(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setLowCriticalVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void o(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setHighWarningVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void p(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge)
         try {
-          R r = r.a(s);
-          dj dj = dk.a((aI)r, paramString);
-          a(dj);
+          R r = r.ExceptionInVPackage(s);
+          dj dj = dk.ExceptionInVPackage((aI)r, paramString);
+          ExceptionInVPackage(dj);
           Gauge gauge = (Gauge)s;
           gauge.setHighCriticalVP(dj);
           s.invalidate();
           s.repaint();
-        } catch (g g) {
-          throw new a(g.getLocalizedMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          throw new ExceptionInVPackage(ExceptionPrintstacktrace.getLocalizedMessage());
         }  
     } 
   }
   
   public void l(int paramInt) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setValueDigits(Integer.valueOf(paramInt));
@@ -484,7 +484,7 @@ public class ai {
   }
   
   public void q(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOnText(paramString);
@@ -495,7 +495,7 @@ public class ai {
   }
   
   public void r(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOffText(paramString);
@@ -506,7 +506,7 @@ public class ai {
   }
   
   public void s(String paramString) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof DashLabel) {
         DashLabel dashLabel = (DashLabel)s;
         dashLabel.setText(paramString);
@@ -516,8 +516,8 @@ public class ai {
     } 
   }
   
-  public void g(Color paramColor) {
-    for (s s : this.a) {
+  public void ExceptionPrintstacktrace(Color paramColor) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof DashLabel) {
         DashLabel dashLabel = (DashLabel)s;
         dashLabel.setBackgroundColor(paramColor);
@@ -528,7 +528,7 @@ public class ai {
   }
   
   public void h(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof DashLabel) {
         DashLabel dashLabel = (DashLabel)s;
         dashLabel.setTextColor(paramColor);
@@ -539,7 +539,7 @@ public class ai {
   }
   
   public void i(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOnTextColor(paramColor);
@@ -550,7 +550,7 @@ public class ai {
   }
   
   public void j(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOffTextColor(paramColor);
@@ -561,7 +561,7 @@ public class ai {
   }
   
   public void k(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOnBackgroundColor(paramColor);
@@ -572,7 +572,7 @@ public class ai {
   }
   
   public void l(Color paramColor) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Indicator) {
         Indicator indicator = (Indicator)s;
         indicator.setOffBackgroundColor(paramColor);
@@ -585,12 +585,12 @@ public class ai {
   public void b(boolean paramBoolean) {
     int i = 0;
     if (paramBoolean) {
-      String str = bV.a("{Number of seconds to remember history. }", true, "Set Guage History Tell Tail Timeout.\nDefault value 15 seconds.", true, bV.c());
+      String str = bV.ExceptionInVPackage("{Number of seconds to remember history. }", true, "Set Guage History Tell Tail Timeout.\nDefault value 15 seconds.", true, bV.c());
       if (str == null || str.equals(""))
         return; 
       i = Integer.parseInt(str + "000");
     } 
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setShowHistory(paramBoolean);
@@ -600,7 +600,7 @@ public class ai {
   }
   
   public void c(boolean paramBoolean) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setCounterClockwise(paramBoolean);
@@ -610,8 +610,8 @@ public class ai {
     } 
   }
   
-  public void d(boolean paramBoolean) {
-    for (s s : this.a) {
+  public void DComponentDelta(boolean paramBoolean) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setDisplayValueAt180(paramBoolean);
@@ -622,7 +622,7 @@ public class ai {
   }
   
   public void e(boolean paramBoolean) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setPegLimits(paramBoolean);
@@ -633,7 +633,7 @@ public class ai {
   }
   
   public void b(double paramDouble) {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof Gauge) {
         Gauge gauge = (Gauge)s;
         gauge.setHistoricalPeakValue(paramDouble);
@@ -642,7 +642,7 @@ public class ai {
   }
   
   public SingleChannelDashComponent b() {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof SingleChannelDashComponent)
         return (SingleChannelDashComponent)s; 
     } 
@@ -650,7 +650,7 @@ public class ai {
   }
   
   public boolean c() {
-    for (s s : this.a) {
+    for (s s : this.ExceptionInVPackage) {
       if (s instanceof SingleChannelDashComponent)
         return true; 
     } 
@@ -658,19 +658,19 @@ public class ai {
   }
   
   public void t(String paramString) {
-    for (s s : this.a) {
-      if (s instanceof d) {
-        d d = (d)s;
-        d.setShortClickAction(paramString);
+    for (s s : this.ExceptionInVPackage) {
+      if (s instanceof DComponentDelta) {
+        DComponentDelta DComponentDelta = (DComponentDelta)s;
+        DComponentDelta.setShortClickAction(paramString);
       } 
     } 
   }
   
   public void u(String paramString) {
-    for (s s : this.a) {
-      if (s instanceof d) {
-        d d = (d)s;
-        d.setLongClickAction(paramString);
+    for (s s : this.ExceptionInVPackage) {
+      if (s instanceof DComponentDelta) {
+        DComponentDelta DComponentDelta = (DComponentDelta)s;
+        DComponentDelta.setLongClickAction(paramString);
       } 
     } 
   }

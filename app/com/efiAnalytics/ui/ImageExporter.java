@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -13,25 +13,25 @@ import javax.imageio.ImageWriter;
 import javax.imageio.stream.FileImageOutputStream;
 
 public class ImageExporter {
-  public boolean a(Component paramComponent, String paramString1, String paramString2, String paramString3) {
+  public boolean ExceptionInVPackage(Component paramComponent, String paramString1, String paramString2, String paramString3) {
     BufferedImage bufferedImage;
-    paramString2 = a(paramString2);
+    paramString2 = ExceptionInVPackage(paramString2);
     if (paramString3 != null && !paramString3.isEmpty()) {
-      bufferedImage = a(paramComponent, paramString3);
+      bufferedImage = ExceptionInVPackage(paramComponent, paramString3);
     } else {
-      bufferedImage = a(paramComponent);
+      bufferedImage = ExceptionInVPackage(paramComponent);
     } 
-    return (paramString2.toLowerCase().indexOf("jpg") > 0 || paramString2.toLowerCase().indexOf("jpeg") > 0) ? a(bufferedImage, paramString1, paramString2) : ((paramString2.toLowerCase().indexOf("png") > 0) ? b(bufferedImage, paramString1, paramString2) : false);
+    return (paramString2.toLowerCase().indexOf("jpg") > 0 || paramString2.toLowerCase().indexOf("jpeg") > 0) ? ExceptionInVPackage(bufferedImage, paramString1, paramString2) : ((paramString2.toLowerCase().indexOf("png") > 0) ? b(bufferedImage, paramString1, paramString2) : false);
   }
   
-  public BufferedImage a(Component paramComponent) {
+  public BufferedImage ExceptionInVPackage(Component paramComponent) {
     BufferedImage bufferedImage = new BufferedImage(paramComponent.getWidth(), paramComponent.getHeight(), 5);
     Graphics graphics = bufferedImage.getGraphics();
     paramComponent.paint(graphics);
     return bufferedImage;
   }
   
-  public BufferedImage a(Component paramComponent, String paramString) {
+  public BufferedImage ExceptionInVPackage(Component paramComponent, String paramString) {
     BufferedImage bufferedImage = new BufferedImage(paramComponent.getWidth(), paramComponent.getHeight() + paramComponent.getFont().getSize(), 5);
     Graphics graphics = bufferedImage.getGraphics();
     paramComponent.paint(graphics);
@@ -42,21 +42,21 @@ public class ImageExporter {
     return bufferedImage;
   }
   
-  public File a(Component paramComponent, int paramInt1, int paramInt2) {
+  public File ExceptionInVPackage(Component paramComponent, int paramInt1, int paramInt2) {
     File file = File.createTempFile(paramComponent.getName() + Math.random(), "png");
     file.deleteOnExit();
-    return a(paramComponent, file, paramInt1, paramInt2);
+    return ExceptionInVPackage(paramComponent, file, paramInt1, paramInt2);
   }
   
-  public File a(Component paramComponent, File paramFile, int paramInt1, int paramInt2) {
-    BufferedImage bufferedImage1 = a(paramComponent);
-    BufferedImage bufferedImage2 = cN.a(bufferedImage1, paramInt1, paramInt2, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+  public File ExceptionInVPackage(Component paramComponent, File paramFile, int paramInt1, int paramInt2) {
+    BufferedImage bufferedImage1 = ExceptionInVPackage(paramComponent);
+    BufferedImage bufferedImage2 = cN.ExceptionInVPackage(bufferedImage1, paramInt1, paramInt2, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
     if (b(bufferedImage2, paramFile.getParentFile().getAbsolutePath(), paramFile.getName()))
       return paramFile; 
-    throw new a("Unable to resize Image");
+    throw new ExceptionInVPackage("Unable to resize Image");
   }
   
-  public boolean a(BufferedImage paramBufferedImage, String paramString1, String paramString2) {
+  public boolean ExceptionInVPackage(BufferedImage paramBufferedImage, String paramString1, String paramString2) {
     File file = new File(paramString1, paramString2);
     FileOutputStream fileOutputStream = null;
     try {
@@ -90,7 +90,7 @@ public class ImageExporter {
     return true;
   }
   
-  public static String a(String paramString) {
+  public static String ExceptionInVPackage(String paramString) {
     if (paramString.toLowerCase().endsWith("jpg") || paramString.toLowerCase().endsWith("jpeg"))
       return paramString; 
     double d = 1.1D;

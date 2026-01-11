@@ -4,12 +4,12 @@ import G.R;
 import G.bm;
 import G.cq;
 import G.cu;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.bN;
 
 public class CurveOutputChannelSubscriber implements cq, bP {
-  double a = Double.NaN;
+  double ExceptionInVPackage = Double.NaN;
   
   bN b;
   
@@ -42,23 +42,23 @@ public class CurveOutputChannelSubscriber implements cq, bP {
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (this.d.l() != null)
       try {
-        cu.a().a(this.c.c(), this.d.l(), this);
-      } catch (a a) {
-        D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a, this);
+        cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.l(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
     if (this.d.f() != null)
       try {
-        cu.a().a(this.c.c(), this.d.f(), this);
-      } catch (a a) {
-        D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a, this);
+        cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
   }
   
   public void b() {
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
 }
 

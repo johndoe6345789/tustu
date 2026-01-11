@@ -14,7 +14,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 public class ComponentPositionDialog extends a implements f {
   JPanel a = new JPanel();
@@ -36,15 +36,15 @@ public class ComponentPositionDialog extends a implements f {
     this.c.b(0);
     this.d.b(0);
     this.e.b(0);
-    this.a.setBorder(BorderFactory.createTitledBorder(g.b("Component Position")));
+    this.a.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Component Position")));
     this.a.setLayout(new GridLayout(0, 2, eJ.a(3), eJ.a(3)));
-    this.a.add(new JLabel(g.b("Component X :"), 4));
+    this.a.add(new JLabel(SComponentGolf.b("Component X :"), 4));
     this.a.add((Component)this.b);
-    this.a.add(new JLabel(g.b("Component Y :"), 4));
+    this.a.add(new JLabel(SComponentGolf.b("Component Y :"), 4));
     this.a.add((Component)this.c);
-    this.a.add(new JLabel(g.b("Component Width :"), 4));
+    this.a.add(new JLabel(SComponentGolf.b("Component Width :"), 4));
     this.a.add((Component)this.d);
-    this.a.add(new JLabel(g.b("Component Height :"), 4));
+    this.a.add(new JLabel(SComponentGolf.b("Component Height :"), 4));
     this.a.add((Component)this.e);
     this.b.addKeyListener(new s(this));
     this.c.addKeyListener(new t(this));

@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -31,7 +31,7 @@ public class ch implements cg, Serializable {
         break; 
       List list = a(n);
       if (list.isEmpty())
-        throw new g("Invalid OutputChannel Offset: " + n); 
+        throw new ExceptionPrintstacktrace("Invalid OutputChannel Offset: " + n); 
       arrayList.addAll(list);
     } 
     i = -1;
@@ -66,7 +66,7 @@ public class ch implements cg, Serializable {
   }
   
   private String b(String paramString) {
-    for (ac ac : this.b.g()) {
+    for (ac ac : this.b.ExceptionPrintstacktrace()) {
       if (ac.a().equals(paramString))
         return ac.b(); 
     } 

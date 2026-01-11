@@ -2,12 +2,12 @@ package bt;
 
 import G.cq;
 import G.cu;
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 
 class aa implements cq, bP {
-  double a = Double.NaN;
+  double ExceptionInVPackage = Double.NaN;
   
   aa(W paramW) {}
   
@@ -17,23 +17,23 @@ class aa implements cq, bP {
     if (this.b.c.d() != null && paramString.equals(this.b.c.d())) {
       this.b.b(paramDouble);
     } else if (this.b.c.f() != null && paramString.equals(this.b.c.f())) {
-      this.b.a(paramDouble);
+      this.b.ExceptionInVPackage(paramDouble);
     } 
   }
   
-  public void a() {
-    cu cu = cu.a();
+  public void ExceptionInVPackage() {
+    cu cu = cu.ExceptionInVPackage();
     try {
-      cu.a(W.a(this.b).c(), this.b.c.d(), this);
-      cu.a(W.a(this.b).c(), this.b.c.f(), this);
-    } catch (a a) {
+      cu.ExceptionInVPackage(W.ExceptionInVPackage(this.b).c(), this.b.c.d(), this);
+      cu.ExceptionInVPackage(W.ExceptionInVPackage(this.b).c(), this.b.c.f(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       bV.d("Error subscribing output channel.", (Component)this.b.b);
-      a.printStackTrace();
+      ExceptionInVPackage.printStackTrace();
     } 
   }
   
   public void b() {
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
 }
 

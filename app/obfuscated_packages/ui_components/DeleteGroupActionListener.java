@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,7 +14,7 @@ final class Q implements ActionListener {
     JMenuItem jMenuItem = (JMenuItem)paramActionEvent.getSource();
     String str = jMenuItem.getName();
     if (bV.a("Are you sure you want to delete the field group: " + str, this.a, true))
-      i.d("GRAPH_FIELD_GROUP_NAME_" + str); 
+      IOProperties.d("GRAPH_FIELD_GROUP_NAME_" + str); 
   }
 }
 

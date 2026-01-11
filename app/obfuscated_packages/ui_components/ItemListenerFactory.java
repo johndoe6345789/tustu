@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -12,8 +12,8 @@ class dk implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     jCheckBoxMenuItem.setSelected(true);
-    i.c("lookAndFeelClass", paramActionEvent.getActionCommand());
-    bV.d("The changes will take effect after the next restart.", this.a.i);
+    IOProperties.c("lookAndFeelClass", paramActionEvent.getActionCommand());
+    bV.d("The changes will take effect after the next restart.", this.a.IOProperties);
   }
 }
 

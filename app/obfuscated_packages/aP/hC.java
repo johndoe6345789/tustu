@@ -1,6 +1,6 @@
 package aP;
 
-import A.c;
+import A.AInterfaceCharlie;
 import G.J;
 import G.R;
 import G.T;
@@ -14,16 +14,16 @@ import G.i;
 import G.l;
 import G.r;
 import G.s;
-import J.a;
-import J.b;
-import V.a;
+import J.ExceptionInVPackage;
+import J.JPanelExtensionInRPackage;
+import V.ExceptionInVPackage;
 import W.I;
 import W.ab;
 import W.v;
 import W.z;
-import aD.a;
-import aE.a;
-import aV.w;
+import aD.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
+import aV.AvInterfaceWhiskey;
 import bH.D;
 import bH.t;
 import com.efiAnalytics.apps.ts.dashboard.Z;
@@ -40,21 +40,21 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JDialog;
-import r.a;
-import r.b;
-import r.j;
-import r.o;
-import r.p;
-import s.g;
-import v.c;
-import z.c;
+import r.ExceptionInVPackage;
+import r.JPanelExtensionInRPackage;
+import r.ThreadedFile;
+import r.RInterfaceOscar;
+import r.RInterfacePapa;
+import s.SComponentGolf;
+import v.AInterfaceCharlie;
+import z.AInterfaceCharlie;
 
 public class hC implements fS {
-  aF a = new aF();
+  aF ExceptionInVPackage = new aF();
   
-  au b = new au();
+  au JPanelExtensionInRPackage = new au();
   
-  b c = new b();
+  JPanelExtensionInRPackage AInterfaceCharlie = new JPanelExtensionInRPackage();
   
   ad d = new ad();
   
@@ -62,7 +62,7 @@ public class hC implements fS {
   
   hE f = null;
   
-  fL g = null;
+  fL SComponentGolf = null;
   
   Window h = null;
   
@@ -71,156 +71,156 @@ public class hC implements fS {
   public hC(Window paramWindow) {
     this.h = paramWindow;
     hD hD = new hD(this);
-    this.g = new fL("New " + a.b + " Project", hD);
+    this.SComponentGolf = new fL("New " + ExceptionInVPackage.JPanelExtensionInRPackage + " Project", hD);
     try {
-      this.g.e(this.b);
-      this.b.a(false);
-      this.f = new hE(this, this.a);
-      this.g.e(this.f);
-      this.g.e(this.d);
-      this.g.e((Container)this.c);
-      this.c.a();
-      this.g.a(this);
+      this.SComponentGolf.e(this.JPanelExtensionInRPackage);
+      this.JPanelExtensionInRPackage.ExceptionInVPackage(false);
+      this.f = new hE(this, this.ExceptionInVPackage);
+      this.SComponentGolf.e(this.f);
+      this.SComponentGolf.e(this.d);
+      this.SComponentGolf.e((Container)this.AInterfaceCharlie);
+      this.AInterfaceCharlie.ExceptionInVPackage();
+      this.SComponentGolf.ExceptionInVPackage(this);
     } catch (Exception exception) {
       String str = "Failed to build New Project Wizard, see log for details.";
       bV.d(str, paramWindow);
-      D.a(str);
+      D.ExceptionInVPackage(str);
       exception.printStackTrace();
     } 
   }
   
-  public void a() {
-    JDialog jDialog = this.g.a(this.h, g.b("Create New Project"));
-    if (T.a().c() != null)
-      T.a().c().C().c(); 
+  public void ExceptionInVPackage() {
+    JDialog jDialog = this.SComponentGolf.ExceptionInVPackage(this.h, SComponentGolf.JPanelExtensionInRPackage("Create New Project"));
+    if (T.ExceptionInVPackage().AInterfaceCharlie() != null)
+      T.ExceptionInVPackage().AInterfaceCharlie().C().AInterfaceCharlie(); 
     jDialog.setVisible(true);
   }
   
-  public boolean b() {
-    a a = new a();
-    a.h(this.b.g().getAbsolutePath());
-    a.i(this.b.f());
-    if (a.A() != null) {
-      f.a().g();
+  public boolean JPanelExtensionInRPackage() {
+    ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage();
+    ExceptionInVPackage.h(this.JPanelExtensionInRPackage.SComponentGolf().getAbsolutePath());
+    ExceptionInVPackage.i(this.JPanelExtensionInRPackage.f());
+    if (ExceptionInVPackage.A() != null) {
+      f.ExceptionInVPackage().SComponentGolf();
       if (this.i != null)
         try {
-          h.a().a((aI)this.i);
-          T.a().a(this.i);
-          T.a().a(this.i.c());
-        } catch (a a1) {
+          h.ExceptionInVPackage().ExceptionInVPackage((aI)this.i);
+          T.ExceptionInVPackage().ExceptionInVPackage(this.i);
+          T.ExceptionInVPackage().ExceptionInVPackage(this.i.AInterfaceCharlie());
+        } catch (ExceptionInVPackage a1) {
           Logger.getLogger(hC.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         }  
     } 
     try {
-      a.a();
-      File file1 = this.b.h();
+      ExceptionInVPackage.ExceptionInVPackage();
+      File file1 = this.JPanelExtensionInRPackage.h();
       String str1 = file1.getName().toLowerCase().endsWith(".ecu") ? "mainController.ecu" : "mainController.ini";
-      a.l(str1);
-      a.remove("firmwareDescription");
-      t.a(file1, a.j());
-      a.p(this.b.c());
-      a.a(this.a.b());
-      File file2 = this.c.b();
-      Z z = this.c.e();
-      t.a(file2, a.l());
-      String str2 = z.a(file1);
-      z.b(str2);
-      c c = new c(j.G());
-      c.a(a.l().getAbsolutePath(), z);
-      a.o(a.n());
+      ExceptionInVPackage.l(str1);
+      ExceptionInVPackage.remove("firmwareDescription");
+      t.ExceptionInVPackage(file1, ExceptionInVPackage.ThreadedFile());
+      ExceptionInVPackage.RInterfacePapa(this.JPanelExtensionInRPackage.AInterfaceCharlie());
+      ExceptionInVPackage.ExceptionInVPackage(this.ExceptionInVPackage.JPanelExtensionInRPackage());
+      File file2 = this.AInterfaceCharlie.JPanelExtensionInRPackage();
+      Z z = this.AInterfaceCharlie.e();
+      t.ExceptionInVPackage(file2, ExceptionInVPackage.l());
+      String str2 = z.ExceptionInVPackage(file1);
+      z.JPanelExtensionInRPackage(str2);
+      AInterfaceCharlie AInterfaceCharlie = new AInterfaceCharlie(ThreadedFile.G());
+      AInterfaceCharlie.ExceptionInVPackage(ExceptionInVPackage.l().getAbsolutePath(), z);
+      ExceptionInVPackage.RInterfaceOscar(ExceptionInVPackage.n());
       try {
         if (this.e != null)
-          this.e.c(); 
-      } catch (a a1) {
-        D.a("Error saving throttle calibration.", (Exception)a1, this.e);
+          this.e.AInterfaceCharlie(); 
+      } catch (ExceptionInVPackage a1) {
+        D.ExceptionInVPackage("Error saving throttle calibration.", (Exception)a1, this.e);
       } 
       try {
         String str = (this.d.f() == null) ? "" : this.d.f();
-        a.a(a.u(), this.d.d());
-        a.b(a.u(), str);
-        this.d.a(a);
+        ExceptionInVPackage.ExceptionInVPackage(ExceptionInVPackage.u(), this.d.d());
+        ExceptionInVPackage.JPanelExtensionInRPackage(ExceptionInVPackage.u(), str);
+        this.d.ExceptionInVPackage(ExceptionInVPackage);
       } catch (Exception exception) {}
-      this.d.a(a);
-      a.b();
-      T.a().b();
-      this.c.d();
-      c();
-      f.a().a(dd.a().c(), this.b.g().getAbsolutePath());
-    } catch (a a1) {
-      bV.d("Error creating Project " + this.b.f() + "\nProject Location:" + this.b.g().getAbsolutePath() + "\nError Message:\n" + a1.getMessage() + "\nSee log for more detail.\nBy restarting " + a.b + " and opening this project,\n all will most likely be fine.", (Component)this.c);
+      this.d.ExceptionInVPackage(ExceptionInVPackage);
+      ExceptionInVPackage.JPanelExtensionInRPackage();
+      T.ExceptionInVPackage().JPanelExtensionInRPackage();
+      this.AInterfaceCharlie.d();
+      AInterfaceCharlie();
+      f.ExceptionInVPackage().ExceptionInVPackage(dd.ExceptionInVPackage().AInterfaceCharlie(), this.JPanelExtensionInRPackage.SComponentGolf().getAbsolutePath());
+    } catch (ExceptionInVPackage a1) {
+      bV.d("Error creating Project " + this.JPanelExtensionInRPackage.f() + "\nProject Location:" + this.JPanelExtensionInRPackage.SComponentGolf().getAbsolutePath() + "\nError Message:\n" + a1.getMessage() + "\nSee log for more detail.\nBy restarting " + ExceptionInVPackage.JPanelExtensionInRPackage + " and opening this project,\n all will most likely be fine.", (Component)this.AInterfaceCharlie);
       a1.printStackTrace();
       return false;
     } 
     return true;
   }
   
-  public void c() {
-    this.c.d();
+  public void AInterfaceCharlie() {
+    this.AInterfaceCharlie.d();
     R r = this.i;
     if (r != null) {
-      J j = r.C();
-      if (j != null)
-        j.c(); 
-      T.a().b(r.c());
+      J ThreadedFile = r.C();
+      if (ThreadedFile != null)
+        ThreadedFile.AInterfaceCharlie(); 
+      T.ExceptionInVPackage().JPanelExtensionInRPackage(r.AInterfaceCharlie());
     } 
-    if (T.a().c() != null)
+    if (T.ExceptionInVPackage().AInterfaceCharlie() != null)
       try {
-        T.a().c().C().d();
+        T.ExceptionInVPackage().AInterfaceCharlie().C().d();
       } catch (l l) {} 
-    i.a();
+    i.ExceptionInVPackage();
   }
   
-  public boolean a(Container paramContainer) {
+  public boolean ExceptionInVPackage(Container paramContainer) {
     if (paramContainer instanceof au) {
       boolean bool = ((au)paramContainer).e();
       if (!bool)
         return false; 
       try {
-        s[] arrayOfS = v.a().b(this.b.h().getAbsolutePath());
-        arrayOfS = (new I()).a(arrayOfS, this.b.h().getAbsolutePath());
-        this.a.a(arrayOfS);
-      } catch (a a) {
-        bV.d(a.getMessage(), this.h);
+        s[] arrayOfS = v.ExceptionInVPackage().JPanelExtensionInRPackage(this.JPanelExtensionInRPackage.h().getAbsolutePath());
+        arrayOfS = (new I()).ExceptionInVPackage(arrayOfS, this.JPanelExtensionInRPackage.h().getAbsolutePath());
+        this.ExceptionInVPackage.ExceptionInVPackage(arrayOfS);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(ExceptionInVPackage.getMessage(), this.h);
       } 
       return true;
     } 
     if (paramContainer instanceof aF)
       return ((aF)paramContainer).e(); 
-    if (paramContainer instanceof b)
-      return ((b)paramContainer).f(); 
+    if (paramContainer instanceof JPanelExtensionInRPackage)
+      return ((JPanelExtensionInRPackage)paramContainer).f(); 
     if (paramContainer instanceof aG) {
-      cu cu = cu.a();
-      cu.a((aG)paramContainer);
+      cu cu = cu.ExceptionInVPackage();
+      cu.ExceptionInVPackage((aG)paramContainer);
     } 
     return true;
   }
   
   private R d() {
     if (this.i != null) {
-      this.i.q(this.b.b());
+      this.i.q(this.JPanelExtensionInRPackage.JPanelExtensionInRPackage());
       return this.i;
     } 
-    if (this.b.h() == null)
+    if (this.JPanelExtensionInRPackage.h() == null)
       return null; 
     R r = new R();
-    r.a(this.b.f());
-    r.q(this.b.b());
-    r[] arrayOfR = this.a.b();
+    r.ExceptionInVPackage(this.JPanelExtensionInRPackage.f());
+    r.q(this.JPanelExtensionInRPackage.JPanelExtensionInRPackage());
+    r[] arrayOfR = this.ExceptionInVPackage.JPanelExtensionInRPackage();
     for (byte b1 = 0; b1 < arrayOfR.length; b1++)
-      r.a(arrayOfR[b1]); 
+      r.ExceptionInVPackage(arrayOfR[b1]); 
     ab ab = new ab();
     try {
-      if (r.c("tsCanId") == null)
-        r = ab.a(r, j.G, false); 
-      r = ab.a(r, this.b.h().getCanonicalPath());
-      r.q(this.b.g().getAbsolutePath());
-      r.c(c.a().a(r, a.ba, w.c(), null, null));
-      T.a().a(r);
-      if (a.b.equals(a.as)) {
-        a a = new a();
-        r.O().a((cR)a);
-        b b2 = new b();
-        r.O().a((cV)b2);
+      if (r.AInterfaceCharlie("tsCanId") == null)
+        r = ab.ExceptionInVPackage(r, ThreadedFile.G, false); 
+      r = ab.ExceptionInVPackage(r, this.JPanelExtensionInRPackage.h().getCanonicalPath());
+      r.q(this.JPanelExtensionInRPackage.SComponentGolf().getAbsolutePath());
+      r.AInterfaceCharlie(AInterfaceCharlie.ExceptionInVPackage().ExceptionInVPackage(r, ExceptionInVPackage.ba, AvInterfaceWhiskey.AInterfaceCharlie(), null, null));
+      T.ExceptionInVPackage().ExceptionInVPackage(r);
+      if (ExceptionInVPackage.JPanelExtensionInRPackage.equals(ExceptionInVPackage.as)) {
+        ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage();
+        r.O().ExceptionInVPackage((cR)ExceptionInVPackage);
+        JPanelExtensionInRPackage b2 = new JPanelExtensionInRPackage();
+        r.O().ExceptionInVPackage((cV)b2);
         r.O().d(true);
       } 
     } catch (Exception exception) {
@@ -232,58 +232,58 @@ public class hC implements fS {
     return this.i;
   }
   
-  public boolean b(Container paramContainer) {
+  public boolean JPanelExtensionInRPackage(Container paramContainer) {
     if (paramContainer.equals(this.f)) {
-      aF aF1 = this.a;
-      s[] arrayOfS = aF1.c();
+      aF aF1 = this.ExceptionInVPackage;
+      s[] arrayOfS = aF1.AInterfaceCharlie();
       if (arrayOfS == null || arrayOfS.length == 0)
-        this.g.a(); 
+        this.SComponentGolf.ExceptionInVPackage(); 
     } else if (paramContainer instanceof ad) {
       ad ad1 = (ad)paramContainer;
       R r = d();
       try {
-        String str = this.b.i();
-        List<c> list = this.b.j();
-        bT bT = this.b.k();
+        String str = this.JPanelExtensionInRPackage.i();
+        List<AInterfaceCharlie> list = this.JPanelExtensionInRPackage.ThreadedFile();
+        bT bT = this.JPanelExtensionInRPackage.k();
         ad1.k();
-        ad1.a(r);
+        ad1.ExceptionInVPackage(r);
         if (list != null && str != null) {
-          ad1.a("DetectedDevice", str, list, bT);
-          ad1.c();
+          ad1.ExceptionInVPackage("DetectedDevice", str, list, bT);
+          ad1.AInterfaceCharlie();
         } else {
           list = new ArrayList();
-          list.add(new c("Baud Rate", a.c));
-          ad1.a("DetectedDevice", a.d, list, new bT());
+          list.add(new AInterfaceCharlie("Baud Rate", ExceptionInVPackage.AInterfaceCharlie));
+          ad1.ExceptionInVPackage("DetectedDevice", ExceptionInVPackage.d, list, new bT());
         } 
-      } catch (a a) {
-        D.a("Error setting configuration to comm settings.", (Exception)a, ad1);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Error setting configuration to comm settings.", (Exception)ExceptionInVPackage, ad1);
       } 
-    } else if (paramContainer instanceof b) {
+    } else if (paramContainer instanceof JPanelExtensionInRPackage) {
       R r = d();
       aa aa = new aa();
       try {
         Z z;
         if (r.i().startsWith("MS3 Format") && (r.i().endsWith("P") || r.i().endsWith("E") || r.i().endsWith("U"))) {
-          File file = new File(j.h(), "AMPMS3_Pro_Default.dash");
-          z = (new c(j.G())).a(file.getAbsolutePath());
+          File file = new File(ThreadedFile.h(), "AMPMS3_Pro_Default.dash");
+          z = (new AInterfaceCharlie(ThreadedFile.G())).ExceptionInVPackage(file.getAbsolutePath());
         } else if (r.i().startsWith("MS2Extra") && r.i().endsWith("P")) {
-          File file = new File(j.h(), "AMP_MS2_PNP.dash");
-          z = (new c(j.G())).a(file.getAbsolutePath());
+          File file = new File(ThreadedFile.h(), "AMP_MS2_PNP.dash");
+          z = (new AInterfaceCharlie(ThreadedFile.G())).ExceptionInVPackage(file.getAbsolutePath());
         } else {
-          z = aa.a(r, "FrontPage", 2, 4);
+          z = aa.ExceptionInVPackage(r, "FrontPage", 2, 4);
         } 
-        this.c.a(this.b.f(), z);
+        this.AInterfaceCharlie.ExceptionInVPackage(this.JPanelExtensionInRPackage.f(), z);
       } catch (Exception exception) {
         bV.d("Error in Front Page definition.", paramContainer);
       } 
-      o o = p.a().b();
+      RInterfaceOscar RInterfaceOscar = RInterfacePapa.ExceptionInVPackage().JPanelExtensionInRPackage();
       String[] arrayOfString = new String[1];
       arrayOfString[0] = r.i();
-      this.c.a(arrayOfString, o);
+      this.AInterfaceCharlie.ExceptionInVPackage(arrayOfString, RInterfaceOscar);
     } else if (paramContainer instanceof aG) {
       R r = d();
       aG aG1 = (aG)paramContainer;
-      aG1.a(r);
+      aG1.ExceptionInVPackage(r);
     } 
     return true;
   }

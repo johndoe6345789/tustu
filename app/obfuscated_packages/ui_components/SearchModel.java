@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,7 +8,7 @@ class cJ implements ActionListener {
   cJ(cd paramcd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    i.c("lastUpdateCheckDate", "0");
+    IOProperties.c("lastUpdateCheckDate", "0");
     (new en(this.a, true, bq.a().b())).start();
   }
 }

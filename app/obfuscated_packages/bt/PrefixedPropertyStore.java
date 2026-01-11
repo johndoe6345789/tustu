@@ -1,27 +1,27 @@
 package bt;
 
 import com.efiAnalytics.ui.et;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 public class PrefixedPropertyStore implements et {
-  String a = "";
+  String IOPropertiesUsingFile = "";
   
   public i(String paramString) {
-    this.a = paramString;
+    this.IOPropertiesUsingFile = paramString;
   }
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.a();
-    a.b(this.a + "_" + paramString1, paramString2);
+  public void IOPropertiesUsingFile(String paramString1, String paramString2) {
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    IOPropertiesUsingFile.b(this.IOPropertiesUsingFile + "_" + paramString1, paramString2);
   }
   
-  public String a(String paramString) {
+  public String IOPropertiesUsingFile(String paramString) {
     return b(paramString, "");
   }
   
   public String b(String paramString1, String paramString2) {
-    a a = a.a();
-    return a.c(this.a + "_" + paramString1, paramString2);
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    return IOPropertiesUsingFile.c(this.IOPropertiesUsingFile + "_" + paramString1, paramString2);
   }
 }
 

@@ -4,15 +4,15 @@ import G.R;
 import G.aM;
 import G.aN;
 import G.aR;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import com.efiAnalytics.ui.bc;
 import javax.swing.JCheckBox;
 
 class PortConfigCheckBox extends JCheckBox implements aN, bc {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   aM b = null;
   
@@ -20,31 +20,31 @@ class PortConfigCheckBox extends JCheckBox implements aN, bc {
   
   public PortConfigCheckBox(OutputPortEditor paramOutputPortEditor, R paramR, String paramString1, String paramString2) {
     super(paramString2);
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.b = paramR.c(paramString1);
-    aR aR = aR.a();
+    aR aR = aR.ExceptionInVPackage();
     try {
-      aR.a(paramR.c(), paramString1, this);
-    } catch (a a) {
-      D.a("Failed to subscribe " + paramString1 + " for update notification.", (Exception)a, this);
+      aR.ExceptionInVPackage(paramR.c(), paramString1, this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Failed to subscribe " + paramString1 + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
     addItemListener(new i(this, paramOutputPortEditor));
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     b();
-    OutputPortEditor.a(this.c).repaint();
+    OutputPortEditor.ExceptionInVPackage(this.c).repaint();
   }
   
-  protected void a() {
+  protected void ExceptionInVPackage() {
     try {
-      double[][] arrayOfDouble = this.b.i(this.a.h());
+      double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
       arrayOfDouble[this.d][0] = isSelected() ? 1.0D : 0.0D;
-      this.b.a(this.a.h(), arrayOfDouble);
-    } catch (j j) {
-      D.a("Value Out of Bounds, Attempting to fix value.");
+      this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      D.ExceptionInVPackage("Value Out of Bounds, Attempting to fix value.");
       try {
-        double[][] arrayOfDouble = this.b.i(this.a.h());
+        double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
         for (byte b = 0; b < arrayOfDouble.length; b++) {
           if (arrayOfDouble[b][0] > this.b.s()) {
             D.d(this.b.aL() + " value at " + b + " out of bounds, setting to max: " + this.b.s());
@@ -54,33 +54,33 @@ class PortConfigCheckBox extends JCheckBox implements aN, bc {
             arrayOfDouble[b][0] = this.b.r();
           } 
         } 
-        this.b.a(this.a.h(), arrayOfDouble);
-      } catch (g g) {
-        D.a("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)g, this);
-      } catch (j j1) {
-        D.a("Value Out of Bounds, Failed to set Value for " + this.b.aL() + ", index = " + this.d + ", ex message: " + j.getMessage());
+        this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)ExceptionPrintstacktrace, this);
+      } catch (ExceptionExtensionGetmessage j1) {
+        D.ExceptionInVPackage("Value Out of Bounds, Failed to set Value for " + this.b.aL() + ", index = " + this.d + ", ex message: " + ExceptionExtensionGetmessage.getMessage());
       } 
-    } catch (g g) {
-      D.a("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)ExceptionPrintstacktrace, this);
     } 
   }
   
   public void b() {
     try {
-      double d = this.b.i(this.a.h())[this.d][0];
+      double d = this.b.i(this.ExceptionInVPackage.h())[this.d][0];
       setSelected((d != 0.0D));
-    } catch (g g) {
-      D.a("Failed to getValue for " + this.b.aL() + ", index = " + this.d, (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Failed to getValue for " + this.b.aL() + ", index = " + this.d, (Exception)ExceptionPrintstacktrace, this);
     } 
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     this.d = paramInt;
   }
   
   public void close() {
-    aR aR = aR.a();
-    aR.a(this);
+    aR aR = aR.ExceptionInVPackage();
+    aR.ExceptionInVPackage(this);
   }
 }
 

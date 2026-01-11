@@ -3,9 +3,9 @@ package aP;
 import G.R;
 import G.T;
 import G.ac;
-import ak.L;
+import ak.AkInterfaceLima;
 
-class ic implements L {
+class ic implements AkInterfaceLima {
   ic(hO paramhO) {}
   
   public int a(String paramString) {

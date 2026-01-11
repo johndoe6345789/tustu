@@ -1,15 +1,15 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.n;
-import ax.U;
-import ax.u;
+import ax.ExceptionInAxPackage;
+import ax.AxInterfaceUniform;
 import bH.t;
 import com.efiAnalytics.ui.bV;
-import g.k;
-import h.g;
-import h.h;
-import h.i;
+import PropertiesExtensionInHPackage.IOJFileChooser;
+import HInterfaceHotel.PropertiesExtensionInHPackage;
+import HInterfaceHotel.HInterfaceHotel;
+import HInterfaceHotel.i;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -30,12 +30,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
-import k.a;
-import k.c;
-import k.d;
+import IOJFileChooser.ExceptionInVPackage;
+import IOJFileChooser.c;
+import IOJFileChooser.d;
 
 public class r extends JDialog implements ActionListener {
-  boolean a = false;
+  boolean ExceptionInVPackage = false;
   
   JButton b;
   
@@ -54,7 +54,7 @@ public class r extends JDialog implements ActionListener {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
     jPanel1.add(new JLabel(" ", 0));
-    jPanel1.add(new JLabel("Define a custom field.", 0));
+    jPanel1.add(new JLabel("Define ExceptionInVPackage custom field.", 0));
     jPanel1.add(new JLabel("This field will be calculated at log load time like all calculated fields", 0));
     JLabel jLabel1 = new JLabel("For syntax help, read Math Parser help in Help Topics for more information.", 0);
     Color color = UIManager.getColor("Label.background");
@@ -82,11 +82,11 @@ public class r extends JDialog implements ActionListener {
     this.e = new JTextField(paramString2);
     this.e.setBorder(BorderFactory.createLoweredBevelBorder());
     this.e.addActionListener(new t(this));
-    hQ.a(this.e, "control SPACE");
+    hQ.ExceptionInVPackage(this.e, "control SPACE");
     jPanel2.add(this.e);
     add(new JLabel(" "), "West");
     add(new JLabel(" "), "East");
-    a(true);
+    ExceptionInVPackage(true);
     pack();
     setSize(getWidth() + 50, getHeight());
     Dimension dimension1 = paramFrame.getSize();
@@ -96,16 +96,16 @@ public class r extends JDialog implements ActionListener {
     setVisible(true);
   }
   
-  protected void a(boolean paramBoolean) {
+  protected void ExceptionInVPackage(boolean paramBoolean) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout());
-    a(jPanel);
+    ExceptionInVPackage(jPanel);
     if (paramBoolean == true)
       b(jPanel); 
     add("South", jPanel);
   }
   
-  protected void a(JPanel paramJPanel) {
+  protected void ExceptionInVPackage(JPanel paramJPanel) {
     paramJPanel.add(this.b = new JButton("OK"));
     this.b.addActionListener(this);
   }
@@ -115,13 +115,13 @@ public class r extends JDialog implements ActionListener {
     this.c.addActionListener(this);
   }
   
-  public boolean a() {
-    return this.a;
+  public boolean ExceptionInVPackage() {
+    return this.ExceptionInVPackage;
   }
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (paramActionEvent.getSource() == this.b && e()) {
-      this.a = true;
+      this.ExceptionInVPackage = true;
       setVisible(false);
     } else if (paramActionEvent.getSource() == this.c) {
       setVisible(false);
@@ -130,66 +130,66 @@ public class r extends JDialog implements ActionListener {
   
   private boolean e() {
     if (this.d.getText().equals("")) {
-      k.a("You must supply a Field Name", getParent());
+      IOJFileChooser.ExceptionInVPackage("You must supply ExceptionInVPackage Field Name", getParent());
       return false;
     } 
     String str = "()*&%^|+-/><=[]";
     for (byte b = 0; b < str.length(); b++) {
       if (this.d.getText().indexOf(str.charAt(b)) != -1) {
-        k.a("The formula Name can not contain any of the following special characters:\n" + str, getParent());
+        IOJFileChooser.ExceptionInVPackage("The formula Name can not contain any of the following special characters:\n" + str, getParent());
         return false;
       } 
     } 
     try {
       if (this.e.getText().trim().equals("")) {
-        k.a("Formula can not be empty\nPlease correct.", getParent());
+        IOJFileChooser.ExceptionInVPackage("Formula can not be empty\nPlease correct.", getParent());
         return false;
       } 
-      n n = hx.a().r();
+      n n = hx.ExceptionInVPackage().r();
       if (n != null) {
         String str1;
         for (str1 = this.e.getText(); str1.indexOf("{") > 0; str1 = str1.substring(0, str1.indexOf("{")) + "1.0" + str1.substring(str1.indexOf("}", str1.indexOf("{")) + 1));
-        str1 = g.a().c(str1);
+        str1 = PropertiesExtensionInHPackage.ExceptionInVPackage().c(str1);
         try {
-          a a = d.a().a(str1);
-          String[] arrayOfString = a.b();
+          ExceptionInVPackage ExceptionInVPackage = d.ExceptionInVPackage().ExceptionInVPackage(str1);
+          String[] arrayOfString = ExceptionInVPackage.b();
           for (String str2 : arrayOfString) {
             if (!str1.contains("[" + str2))
-              throw new U("Square brackets [] must surround field names."); 
+              throw new ExceptionInAxPackage("Square brackets [] must surround field names."); 
           } 
-          a.a(n, 20);
-        } catch (u u) {
+          ExceptionInVPackage.ExceptionInVPackage(n, 20);
+        } catch (AxInterfaceUniform AxInterfaceUniform) {
         
         } catch (c c) {
-          String str2 = "The inc file used in this expression was not found.\n" + c.a().getName() + "\n\nWould you like to browse to it and add it to the inc dir located at:\n" + h.c();
-          if (k.a(str2, getParent(), true)) {
-            a(c.a());
+          String str2 = "The inc file used in this expression was not found.\n" + c.ExceptionInVPackage().getName() + "\n\nWould you like to browse to it and add it to the inc dir located at:\n" + HInterfaceHotel.c();
+          if (IOJFileChooser.ExceptionInVPackage(str2, getParent(), true)) {
+            ExceptionInVPackage(c.ExceptionInVPackage());
             return false;
           } 
-        } catch (U u) {
-          return k.a("Failed to validate formula:\n" + this.e.getText() + "\nReason:\n" + u.getMessage() + "\n\nSave formula anyway?", getParent(), true);
+        } catch (ExceptionInAxPackage AxInterfaceUniform) {
+          return IOJFileChooser.ExceptionInVPackage("Failed to validate formula:\n" + this.e.getText() + "\nReason:\n" + AxInterfaceUniform.getMessage() + "\n\nSave formula anyway?", getParent(), true);
         } 
       } else {
-        k.a("Can not validate formula while no log file is loaded.\nThe formula will be assumed to be correct, and will be available after\nnext log file load if correct.", getParent());
+        IOJFileChooser.ExceptionInVPackage("Can not validate formula while no log file is loaded.\nThe formula will be assumed to be correct, and will be available after\nnext log file load if correct.", getParent());
       } 
     } catch (Exception exception) {
-      k.a("Invalid Formula:" + this.e.getText() + "\nPlease check your syntax.", getParent());
+      IOJFileChooser.ExceptionInVPackage("Invalid Formula:" + this.e.getText() + "\nPlease check your syntax.", getParent());
       return false;
     } 
     return true;
   }
   
-  private void a(File paramFile) {
+  private void ExceptionInVPackage(File paramFile) {
     String[] arrayOfString = { "inc" };
-    String str = bV.a(getParent(), "Browse to inc file", arrayOfString, "*.inc", h.d(), true);
+    String str = bV.ExceptionInVPackage(getParent(), "Browse to inc file", arrayOfString, "*.inc", HInterfaceHotel.d(), true);
     if (str != null && !str.isEmpty()) {
       File file1 = new File(str);
-      File file2 = new File(h.c(), paramFile.getName());
+      File file2 = new File(HInterfaceHotel.c(), paramFile.getName());
       try {
-        t.a(file1, file2);
-      } catch (a a) {
-        k.a("Unable to copy inc file!\nThe following error occurred:\n" + a.getLocalizedMessage(), this);
-        Logger.getLogger(r.class.getName()).log(Level.SEVERE, "Failed to copy file", (Throwable)a);
+        t.ExceptionInVPackage(file1, file2);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        IOJFileChooser.ExceptionInVPackage("Unable to copy inc file!\nThe following error occurred:\n" + ExceptionInVPackage.getLocalizedMessage(), this);
+        Logger.getLogger(r.class.getName()).log(Level.SEVERE, "Failed to copy file", (Throwable)ExceptionInVPackage);
       } 
     } 
   }
@@ -203,9 +203,9 @@ public class r extends JDialog implements ActionListener {
   }
   
   protected void d() {
-    bu bu = hx.a().A();
-    bu.a(bt.a(bt.d));
-    bu.a(this, i.b + " help");
+    bu bu = hx.ExceptionInVPackage().A();
+    bu.ExceptionInVPackage(bt.ExceptionInVPackage(bt.d));
+    bu.ExceptionInVPackage(this, i.b + " help");
   }
 }
 

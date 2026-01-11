@@ -3,19 +3,19 @@ package aP;
 import G.R;
 import G.aX;
 import G.bv;
-import H.a;
-import K.a;
-import K.i;
-import V.g;
+import H.HInterfaceAlpha;
+import K.HInterfaceAlpha;
+import K.KInterfaceIndia;
+import V.ExceptionPrintstacktrace;
 import W.J;
 import W.ab;
-import bi.a;
-import bi.g;
-import bj.a;
-import bk.a;
-import bk.d;
-import bp.a;
-import bt.d;
+import bi.HInterfaceAlpha;
+import bi.ExceptionPrintstacktrace;
+import bj.HInterfaceAlpha;
+import bk.HInterfaceAlpha;
+import bk.ManagerPaint;
+import bp.HInterfaceAlpha;
+import bt.ManagerPaint;
 import com.efiAnalytics.tunerStudio.panels.H;
 import com.efiAnalytics.tuningwidgets.panels.aF;
 import com.efiAnalytics.tuningwidgets.panels.az;
@@ -30,190 +30,190 @@ import java.awt.Window;
 import java.io.File;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
-import n.b;
-import r.a;
-import r.i;
-import r.j;
-import s.g;
+import n.JPanelExtensionInNPackage;
+import r.HInterfaceAlpha;
+import r.KInterfaceIndia;
+import r.ThreadedFile;
+import s.ExceptionPrintstacktrace;
 
 public class iL {
-  private static iL a = null;
+  private static iL HInterfaceAlpha = null;
   
-  public static iL a() {
-    if (a == null)
-      a = new iL(); 
-    return a;
+  public static iL HInterfaceAlpha() {
+    if (HInterfaceAlpha == null)
+      HInterfaceAlpha = new iL(); 
+    return HInterfaceAlpha;
   }
   
-  public boolean a(Frame paramFrame, R paramR, String paramString1, String paramString2) {
+  public boolean HInterfaceAlpha(Frame paramFrame, R paramR, String paramString1, String paramString2) {
     if (paramString1.equals("std_constants")) {
-      int i = Integer.parseInt(paramString2);
-      az az = new az(paramR, i);
-      a((d)az, paramR, paramFrame, "Standard Constants - Page " + paramString2, (aO)az);
+      int KInterfaceIndia = Integer.parseInt(paramString2);
+      az az = new az(paramR, KInterfaceIndia);
+      HInterfaceAlpha((ManagerPaint)az, paramR, paramFrame, "Standard Constants - Page " + paramString2, (aO)az);
       return true;
     } 
     if (paramString1.equals("std_injection")) {
-      int i = Integer.parseInt(paramString2);
+      int KInterfaceIndia = Integer.parseInt(paramString2);
       aF aF = new aF(paramR);
-      a((d)aF, paramR, paramFrame, "Standard Injection", (aO)aF);
+      HInterfaceAlpha((ManagerPaint)aF, paramR, paramFrame, "Standard Injection", (aO)aF);
       return true;
     } 
     if (paramString1.equals("std_realtime")) {
       H h = new H(paramR);
-      h.a(paramFrame, "Real-Time Display", (bc)h);
+      h.HInterfaceAlpha(paramFrame, "Real-Time Display", (bc)h);
       return true;
     } 
     if (paramString1.equals("std_warmup")) {
-      int i = Integer.parseInt(paramString2);
-      i i1 = new i(paramR, i);
-      f.a().a(paramR, (bv)i1, paramFrame);
+      int KInterfaceIndia = Integer.parseInt(paramString2);
+      KInterfaceIndia i1 = new KInterfaceIndia(paramR, KInterfaceIndia);
+      f.HInterfaceAlpha().HInterfaceAlpha(paramR, (bv)i1, paramFrame);
       return true;
     } 
     if (paramString1.equals("std_accel")) {
-      int i = Integer.parseInt(paramString2);
-      boolean bool = i.a().a("0532fewkjfewpoijrew98");
-      a a = new a(paramR, i, bool);
-      f.a().a(paramR, (bv)a, paramFrame);
+      int KInterfaceIndia = Integer.parseInt(paramString2);
+      boolean bool = KInterfaceIndia.HInterfaceAlpha().HInterfaceAlpha("0532fewkjfewpoijrew98");
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR, KInterfaceIndia, bool);
+      f.HInterfaceAlpha().HInterfaceAlpha(paramR, (bv)HInterfaceAlpha, paramFrame);
       return true;
     } 
     if (paramString1.equals("std_ms2gentherm")) {
-      a(paramR, paramFrame);
+      HInterfaceAlpha(paramR, paramFrame);
       bv bv = paramR.e().c("std_ms2gentherm");
-      f.a().a(paramR, (aX)bv, paramFrame);
+      f.HInterfaceAlpha().HInterfaceAlpha(paramR, (aX)bv, paramFrame);
       return true;
     } 
     if (paramString1.equals("std_ms2geno2")) {
-      a(paramR, paramFrame);
+      HInterfaceAlpha(paramR, paramFrame);
       bv bv = paramR.e().c("std_ms2geno2");
-      f.a().a(paramR, (aX)bv, paramFrame);
+      f.HInterfaceAlpha().HInterfaceAlpha(paramR, (aX)bv, paramFrame);
       return true;
     } 
     if (paramString1.equals("std_port_edit")) {
-      b(paramR, paramFrame);
+      JPanelExtensionInNPackage(paramR, paramFrame);
       bv bv = paramR.e().c("std_port_edit");
-      bv.g(true);
-      f.a().a(paramR, bv, paramFrame);
+      bv.ExceptionPrintstacktrace(true);
+      f.HInterfaceAlpha().HInterfaceAlpha(paramR, bv, paramFrame);
       return true;
     } 
     if (paramString1.equals("std_trigwiz")) {
-      a a = new a(paramR);
-      a((d)a, paramR, paramFrame, "Trigger Wizard", (aO)a);
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR);
+      HInterfaceAlpha((ManagerPaint)HInterfaceAlpha, paramR, paramFrame, "Trigger Wizard", (aO)HInterfaceAlpha);
       return true;
     } 
     if (paramString1.equals("std_ms3Rtc")) {
-      a a = new a(paramR);
-      bV.a((Component)a, paramFrame, "MS3 Real-Time Clock", (bc)a);
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR);
+      bV.HInterfaceAlpha((Component)HInterfaceAlpha, paramFrame, "MS3 Real-Time Clock", (bc)HInterfaceAlpha);
       return true;
     } 
     if (paramString1.equals("std_ms3SdConsole")) {
-      d d = new d(paramR);
-      JDialog jDialog = bV.b((Component)d, paramFrame, "MS3 SD Console", (bc)d);
+      ManagerPaint ManagerPaint = new ManagerPaint(paramR);
+      JDialog jDialog = bV.JPanelExtensionInNPackage((Component)ManagerPaint, paramFrame, "MS3 SD Console", (bc)ManagerPaint);
       jDialog.pack();
-      bV.a(bV.a(paramFrame), jDialog);
-      jDialog.addWindowListener(new iM(this, d));
+      bV.HInterfaceAlpha(bV.HInterfaceAlpha(paramFrame), jDialog);
+      jDialog.addWindowListener(new iM(this, ManagerPaint));
       jDialog.setModal(true);
       jDialog.setVisible(true);
       return true;
     } 
     if (paramString1.equals("std_ftpSdBrowser")) {
-      a a = new a(paramR, null);
-      JDialog jDialog = bV.b((Component)a, paramFrame, "SD Log Browser", (bc)a);
+      HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR, null);
+      JDialog jDialog = bV.JPanelExtensionInNPackage((Component)HInterfaceAlpha, paramFrame, "SD Log Browser", (bc)HInterfaceAlpha);
       jDialog.pack();
-      bV.a(bV.a(paramFrame), jDialog);
-      jDialog.addWindowListener(new iN(this, a));
+      bV.HInterfaceAlpha(bV.HInterfaceAlpha(paramFrame), jDialog);
+      jDialog.addWindowListener(new iN(this, HInterfaceAlpha));
       jDialog.setVisible(true);
       return true;
     } 
     if (paramString1.equals("std_replay_upload")) {
       if (paramR.R()) {
-        a a = new a(paramR);
-        a.a(paramFrame, "Replay Upload");
-      } else if (System.currentTimeMillis() - a.a() < 5000L) {
-        String str = g.b("BigComm Pro must be online!");
+        HInterfaceAlpha HInterfaceAlpha = new HInterfaceAlpha(paramR);
+        HInterfaceAlpha.HInterfaceAlpha(paramFrame, "Replay Upload");
+      } else if (System.currentTimeMillis() - HInterfaceAlpha.HInterfaceAlpha() < 5000L) {
+        String str = ExceptionPrintstacktrace.JPanelExtensionInNPackage("BigComm Pro must be online!");
         str = str + "\n";
-        str = str + g.b("Please turn the Key to the on position and make sure BigComm Pro is online.");
-        bV.d(str, paramFrame);
+        str = str + ExceptionPrintstacktrace.JPanelExtensionInNPackage("Please turn the Key to the on position and make sure BigComm Pro is online.");
+        bV.ManagerPaint(str, paramFrame);
       } else {
-        String str = g.b("BigComm Pro must be online!");
+        String str = ExceptionPrintstacktrace.JPanelExtensionInNPackage("BigComm Pro must be online!");
         str = str + "\n";
-        str = str + g.b("Please connect to your BigStuff 3 with the Key On.");
-        bV.d(str, paramFrame);
+        str = str + ExceptionPrintstacktrace.JPanelExtensionInNPackage("Please connect to your BigStuff 3 with the Key On.");
+        bV.ManagerPaint(str, paramFrame);
       } 
       return true;
     } 
     if (paramString1.equals("std_bootstrap")) {
-      g g = new g(paramR);
-      bV.a((Component)g, paramFrame, "Bootstrap", null);
+      ExceptionPrintstacktrace ExceptionPrintstacktrace = new ExceptionPrintstacktrace(paramR);
+      bV.HInterfaceAlpha((Component)ExceptionPrintstacktrace, paramFrame, "Bootstrap", null);
       return true;
     } 
     if (paramString1.equals("std_tpscal")) {
       aG aG = new aG();
-      aG.a(paramR);
-      aG.a(paramFrame);
+      aG.HInterfaceAlpha(paramR);
+      aG.HInterfaceAlpha(paramFrame);
       return true;
     } 
     return false;
   }
   
-  public void a(d paramd, R paramR, Window paramWindow, String paramString, aO paramaO) {
-    dF dF = new dF(paramWindow, g.b(paramString), paramaO);
+  public void HInterfaceAlpha(ManagerPaint paramd, R paramR, Window paramWindow, String paramString, aO paramaO) {
+    dF dF = new dF(paramWindow, ExceptionPrintstacktrace.JPanelExtensionInNPackage(paramString), paramaO);
     dF.add("Center", (Component)paramd);
-    b b = new b();
-    b.a(paramaO);
+    JPanelExtensionInNPackage JPanelExtensionInNPackage = new JPanelExtensionInNPackage();
+    JPanelExtensionInNPackage.HInterfaceAlpha(paramaO);
     JPanel jPanel = new JPanel();
     FlowLayout flowLayout = new FlowLayout();
     flowLayout.setAlignment(2);
     jPanel.setLayout(flowLayout);
-    jPanel.add((Component)b);
+    jPanel.add((Component)JPanelExtensionInNPackage);
     dF.add("South", jPanel);
-    paramR.p().a(new iO(this, b));
-    paramd.a((bc)dF);
+    paramR.p().HInterfaceAlpha(new iO(this, JPanelExtensionInNPackage));
+    paramd.HInterfaceAlpha((bc)dF);
     dF.pack();
     dF.setResizable(false);
-    bV.a(paramWindow, (Component)dF);
+    bV.HInterfaceAlpha(paramWindow, (Component)dF);
     dF.setVisible(true);
   }
   
-  public void a(R paramR, Frame paramFrame) {
-    String str = j.I() + File.separator + "ms2ReferenceTables.ini";
+  public void HInterfaceAlpha(R paramR, Frame paramFrame) {
+    String str = ThreadedFile.I() + File.separator + "ms2ReferenceTables.ini";
     File file = new File(str);
     if (!file.exists()) {
-      str = j.k;
+      str = ThreadedFile.k;
       file = new File(str);
     } 
-    J j = new J();
+    J ThreadedFile = new J();
     try {
-      j.a(file);
+      ThreadedFile.HInterfaceAlpha(file);
     } catch (Exception exception) {
-      bV.d("Error reading  " + str + "\n" + exception.getMessage(), paramFrame);
+      bV.ManagerPaint("Error reading  " + str + "\n" + exception.getMessage(), paramFrame);
     } 
     try {
-      boolean bool = (a.a().c(a.bq, a.br) && a.a().c(a.bs, a.bt)) ? true : false;
+      boolean bool = (HInterfaceAlpha.HInterfaceAlpha().c(HInterfaceAlpha.bq, HInterfaceAlpha.br) && HInterfaceAlpha.HInterfaceAlpha().c(HInterfaceAlpha.bs, HInterfaceAlpha.bt)) ? true : false;
       if (!bool) {
         ab ab = new ab();
-        ab.a(paramR, paramR.e(), j);
+        ab.HInterfaceAlpha(paramR, paramR.e(), ThreadedFile);
       } 
-    } catch (g g) {
-      bV.d(g.getMessage(), paramFrame);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      bV.ManagerPaint(ExceptionPrintstacktrace.getMessage(), paramFrame);
     } 
   }
   
-  public void b(R paramR, Frame paramFrame) {
-    String str = j.l;
-    J j = new J();
+  public void JPanelExtensionInNPackage(R paramR, Frame paramFrame) {
+    String str = ThreadedFile.l;
+    J ThreadedFile = new J();
     try {
-      j.a(new File(str));
+      ThreadedFile.HInterfaceAlpha(new File(str));
     } catch (Exception exception) {
-      bV.d("Error reading  " + str + "\n" + exception.getMessage(), paramFrame);
+      bV.ManagerPaint("Error reading  " + str + "\n" + exception.getMessage(), paramFrame);
     } 
     try {
-      boolean bool = (a.a().c(a.bq, a.br) && a.a().c(a.bs, a.bt)) ? true : false;
+      boolean bool = (HInterfaceAlpha.HInterfaceAlpha().c(HInterfaceAlpha.bq, HInterfaceAlpha.br) && HInterfaceAlpha.HInterfaceAlpha().c(HInterfaceAlpha.bs, HInterfaceAlpha.bt)) ? true : false;
       if (!bool) {
         ab ab = new ab();
-        ab.b(paramR, paramR.e(), j);
+        ab.JPanelExtensionInNPackage(paramR, paramR.e(), ThreadedFile);
       } 
-    } catch (g g) {
-      bV.d(g.getMessage(), paramFrame);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      bV.ManagerPaint(ExceptionPrintstacktrace.getMessage(), paramFrame);
     } 
   }
 }

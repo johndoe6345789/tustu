@@ -1,7 +1,7 @@
 package ao;
 
 import bH.X;
-import h.i;
+import h.IOProperties;
 import java.util.Properties;
 
 public class hU {
@@ -9,7 +9,7 @@ public class hU {
   
   public static String a = d + "email";
   
-  public static String b = "<html><body>Free Upgrade.<br>" + i.b + " " + i.c + " version 3.0 requires a new registration key.<br><br>As an existing registered user, this is a free upgrade. <br>If you are connected to the Internet, <br>Click 'Yes' to have your new Registration Key sent to " + a + ". <br><br>If you are not currently connected to the internet, to get your new registration key go to:<br><br>https://www.efianalytics.com/MegaLogViewer/upgrade/<br><br>You will need your current registered email address:<br>Registered Email: " + a + " <br><br></body></html>";
+  public static String b = "<html><body>Free Upgrade.<br>" + IOProperties.b + " " + IOProperties.c + " version 3.0 requires a new registration key.<br><br>As an existing registered user, this is a free upgrade. <br>If you are connected to the Internet, <br>Click 'Yes' to have your new Registration Key sent to " + a + ". <br><br>If you are not currently connected to the internet, to get your new registration key go to:<br><br>https://www.efianalytics.com/MegaLogViewer/upgrade/<br><br>You will need your current registered email address:<br>Registered Email: " + a + " <br><br></body></html>";
   
   static String c = "Your Registration information is not valid and will be removed.";
   

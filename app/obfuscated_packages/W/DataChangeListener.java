@@ -1,16 +1,16 @@
 package W;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.util.ArrayList;
 
 public interface DataChangeListener {
-  void a(ArrayList paramArrayList, long paramLong);
+  void ExceptionInVPackage(ArrayList paramArrayList, long paramLong);
   
-  boolean a(long paramLong);
+  boolean ExceptionInVPackage(long paramLong);
   
-  void a(ArrayList paramArrayList);
+  void ExceptionInVPackage(ArrayList paramArrayList);
   
-  void a(a parama);
+  void ExceptionInVPackage(ExceptionInVPackage parama);
 }
 
 

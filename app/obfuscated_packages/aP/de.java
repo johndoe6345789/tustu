@@ -1,8 +1,8 @@
 package aP;
 
-import ai.c;
+import ai.AiInterfaceCharlie;
 
-public class de implements c {}
+public class de implements AiInterfaceCharlie {}
 
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/de.class

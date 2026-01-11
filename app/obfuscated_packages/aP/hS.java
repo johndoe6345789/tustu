@@ -3,7 +3,7 @@ package aP;
 import G.R;
 import G.S;
 import G.bU;
-import H.c;
+import H.HInterfaceCharlie;
 
 class hS implements S {
   hS(hO paramhO) {}
@@ -12,8 +12,8 @@ class hS implements S {
   
   public void b(R paramR) {}
   
-  public void c(R paramR) {
-    paramR.a((bU)new c());
+  public void HInterfaceCharlie(R paramR) {
+    paramR.a((bU)new HInterfaceCharlie());
   }
 }
 

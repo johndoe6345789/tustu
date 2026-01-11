@@ -1,23 +1,23 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.io.File;
 
-class GaugeFileLoader implements a {
+class GaugeFileLoader implements ExceptionInVPackage {
   GaugeFileLoader(x paramx) {}
   
-  public void a(File paramFile) {
+  public void ExceptionInVPackage(File paramFile) {
     try {
       new aa();
-      Gauge gauge = aa.a(paramFile);
-      this.a.b(gauge);
-      this.a.a(gauge, true);
+      Gauge gauge = aa.ExceptionInVPackage(paramFile);
+      this.ExceptionInVPackage.b(gauge);
+      this.ExceptionInVPackage.ExceptionInVPackage(gauge, true);
       gauge.setValue(gauge.min() + 0.3499999940395355D * (gauge.max() - gauge.min()));
-    } catch (a a1) {
-      bV.d(a1.getLocalizedMessage(), x.e(this.a));
+    } catch (ExceptionInVPackage a1) {
+      bV.d(a1.getLocalizedMessage(), x.e(this.ExceptionInVPackage));
     } 
-    this.a.validate();
+    this.ExceptionInVPackage.validate();
   }
 }
 

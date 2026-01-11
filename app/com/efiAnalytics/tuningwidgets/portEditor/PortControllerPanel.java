@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import r.i;
-import s.g;
+import r.RInterfaceIndia;
+import s.SComponentGolf;
 
 class PortControllerPanel extends JPanel implements bc {
   ArrayList a = new ArrayList();
@@ -26,29 +26,29 @@ class PortControllerPanel extends JPanel implements bc {
   public PortControllerPanel(OutputPortEditor paramOutputPortEditor, R paramR, aS paramaS) {
     aM aM = paramR.c(paramaS.m());
     setLayout(new GridLayout(0, 1, 8, 8));
-    int i = 0;
+    int RInterfaceIndia = 0;
     if (aM != null)
-      if (aM.c().a() == 1 || !i.a().a("HF-0FD-0HHFJG")) {
-        i = 1;
+      if (aM.c().a() == 1 || !RInterfaceIndia.a().a("HF-0FD-0HHFJG")) {
+        RInterfaceIndia = 1;
       } else {
-        i = aM.c().b();
+        RInterfaceIndia = aM.c().b();
       }  
     this.c = new JPanel();
     this.c.setLayout(new FlowLayout(2));
-    JLabel jLabel = new JLabel(g.b("Controller") + "                ");
+    JLabel jLabel = new JLabel(SComponentGolf.b("Controller") + "                ");
     String str = paramaS.o();
-    if (str != null && paramR.c(str) != null && i.a().a("HF-0FD-0HHFJG"))
+    if (str != null && paramR.c(str) != null && RInterfaceIndia.a().a("HF-0FD-0HHFJG"))
       this.c.add(jLabel); 
-    this.c.add(new JLabel(" " + g.b("Output Channel") + " "));
+    this.c.add(new JLabel(" " + SComponentGolf.b("Output Channel") + " "));
     this.c.add(new JLabel("                   "));
-    this.c.add(new JLabel("  " + g.b("Threshold")));
-    this.c.add(new JLabel("  " + g.b("Hysteresis")));
+    this.c.add(new JLabel("  " + SComponentGolf.b("Threshold")));
+    this.c.add(new JLabel("  " + SComponentGolf.b("Hysteresis")));
     add(this.c);
-    for (byte b = 0; b <= i; b++) {
+    for (byte b = 0; b <= RInterfaceIndia; b++) {
       z z = new z(paramR, paramaS, b);
       this.a.add(z);
       add(z);
-      if (b < i) {
+      if (b < RInterfaceIndia) {
         ArrayList<String> arrayList = new ArrayList();
         Iterator iterator = paramaS.c();
         while (iterator.hasNext())

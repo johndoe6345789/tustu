@@ -1,25 +1,25 @@
 package bt;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.et;
 
 class bA implements et {
   bA(bu parambu) {}
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.A();
-    a.setProperty("2DTable_" + this.a.getName() + "_" + paramString1, paramString2);
+  public void PropertiesExtension(String paramString1, String paramString2) {
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    PropertiesExtension.setProperty("2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
   }
   
-  public String a(String paramString) {
+  public String PropertiesExtension(String paramString) {
     String str = "";
-    return paramString.equals(BinTableView.n) ? a.A().t() : b(paramString, str);
+    return paramString.equals(BinTableView.n) ? PropertiesExtension.A().t() : b(paramString, str);
   }
   
   public String b(String paramString1, String paramString2) {
-    a a = a.A();
-    return a.getProperty("2DTable_" + this.a.getName() + "_" + paramString1, paramString2);
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    return PropertiesExtension.getProperty("2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
   }
 }
 

@@ -1,14 +1,14 @@
 package aP;
 
-import ac.r;
+import ac.AcInterfaceRomeo;
 import ao.hx;
-import c.e;
+import c.CInterfaceEcho;
 
-class cN implements e {
+class cN implements CInterfaceEcho {
   cN(cc paramcc) {}
   
   public boolean a() {
-    return (hx.a().r() != null && !r.a());
+    return (hx.a().AcInterfaceRomeo() != null && !AcInterfaceRomeo.a());
   }
 }
 

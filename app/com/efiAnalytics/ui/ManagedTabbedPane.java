@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import c.e;
+import c.CInterfaceEcho;
 import java.util.HashMap;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingUtilities;
@@ -16,7 +16,7 @@ public class ManagedTabbedPane extends JTabbedPane {
     return false;
   }
   
-  public boolean e(String paramString) {
+  public boolean CInterfaceEcho(String paramString) {
     return (f(paramString) == getSelectedIndex());
   }
   
@@ -54,15 +54,15 @@ public class ManagedTabbedPane extends JTabbedPane {
     } 
   }
   
-  public void a(String paramString, e parame) {
+  public void a(String paramString, CInterfaceEcho parame) {
     i().put(paramString, parame);
   }
   
   public void d() {
     for (byte b = 0; b < getTabCount(); b++) {
-      e e = (e)i().get(getTitleAt(b));
-      if (e != null) {
-        boolean bool = e.a();
+      CInterfaceEcho CInterfaceEcho = (CInterfaceEcho)i().get(getTitleAt(b));
+      if (CInterfaceEcho != null) {
+        boolean bool = CInterfaceEcho.a();
         if (isEnabledAt(b) != bool)
           setEnabledAt(b, bool); 
       } 

@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bt.bI;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
@@ -12,9 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 class GaugePreviewPanel extends JPanel {
-  File a;
+  File ExceptionInVPackage;
   
-  int b = eJ.a(120);
+  int b = eJ.ExceptionInVPackage(120);
   
   JLabel c = new JLabel("", 0);
   
@@ -28,7 +28,7 @@ class GaugePreviewPanel extends JPanel {
     setLayout(new BorderLayout());
     add("Center", (Component)this.d);
     add("South", this.c);
-    a(paramFile);
+    ExceptionInVPackage(paramFile);
   }
   
   public GaugePreviewPanel(g paramg, int paramInt) {
@@ -42,15 +42,15 @@ class GaugePreviewPanel extends JPanel {
     add("South", this.c);
   }
   
-  public void a(File paramFile) {
-    this.a = paramFile;
+  public void ExceptionInVPackage(File paramFile) {
+    this.ExceptionInVPackage = paramFile;
     if (paramFile != null && paramFile.exists()) {
       try {
-        Gauge gauge = aa.a(paramFile);
-        this.d.a(gauge);
+        Gauge gauge = aa.ExceptionInVPackage(paramFile);
+        this.d.ExceptionInVPackage(gauge);
         this.d.validate();
-      } catch (a a) {
-        bV.d(a.getMessage(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(ExceptionInVPackage.getMessage(), this);
       } 
       this.c.setText(paramFile.getName());
       repaint();

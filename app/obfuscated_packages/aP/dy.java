@@ -1,37 +1,37 @@
 package aP;
 
-import az.a;
+import az.JDialogExtensionInAzPackage;
 import bH.A;
 import bH.O;
 import bH.X;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
-import r.a;
-import r.i;
-import s.g;
+import r.JDialogExtensionInAzPackage;
+import r.RInterfaceIndia;
+import s.SComponentGolf;
 
 class dy implements O {
   dy(dl paramdl) {}
   
-  public String a() {
-    return a.b;
+  public String JDialogExtensionInAzPackage() {
+    return JDialogExtensionInAzPackage.b;
   }
   
   public String b() {
-    return a.a().c(a.cC, "");
+    return JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().c(JDialogExtensionInAzPackage.cC, "");
   }
   
   public String c() {
-    return a.a().c(a.cD, "");
+    return JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().c(JDialogExtensionInAzPackage.cD, "");
   }
   
   public String d() {
-    return a.a().c(a.cE, "");
+    return JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().c(JDialogExtensionInAzPackage.cE, "");
   }
   
   public String e() {
-    String str1 = a.a().c(a.n, null);
-    String str2 = (str1 == null) ? X.b(a.c, dl.s(), "") : str1;
+    String str1 = JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().c(JDialogExtensionInAzPackage.n, null);
+    String str2 = (str1 == null) ? X.b(JDialogExtensionInAzPackage.c, dl.s(), "") : str1;
     return X.b(str2, dl.t(), "").trim();
   }
   
@@ -40,37 +40,37 @@ class dy implements O {
   }
   
   public String h() {
-    return a.a().c(a.o, "");
+    return JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().c(JDialogExtensionInAzPackage.o, "");
   }
   
-  public void i() {
-    this.a.r();
+  public void RInterfaceIndia() {
+    this.JDialogExtensionInAzPackage.r();
   }
   
   public String j() {
-    return this.a.q();
+    return this.JDialogExtensionInAzPackage.q();
   }
   
-  public void a(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6) {
-    a a = new a(dd.a().c(), g.d());
-    bV.a(dd.a().c(), (Component)a);
-    a.setVisible(true);
-    dz dz = new dz(this, paramString1, paramString2, paramString3, paramString4, paramString5, paramString6, a);
+  public void JDialogExtensionInAzPackage(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6) {
+    JDialogExtensionInAzPackage JDialogExtensionInAzPackage = new JDialogExtensionInAzPackage(dd.JDialogExtensionInAzPackage().c(), SComponentGolf.d());
+    bV.JDialogExtensionInAzPackage(dd.JDialogExtensionInAzPackage().c(), (Component)JDialogExtensionInAzPackage);
+    JDialogExtensionInAzPackage.setVisible(true);
+    dz dz = new dz(this, paramString1, paramString2, paramString3, paramString4, paramString5, paramString6, JDialogExtensionInAzPackage);
     dz.start();
   }
   
   public String[] k() {
-    String[] arrayOfString = a.do;
+    String[] arrayOfString = JDialogExtensionInAzPackage.do;
     for (byte b = 0; b < arrayOfString.length; b++) {
       String str = X.b(arrayOfString[b], dl.t(), "");
-      str = X.b(str, i.b, "");
+      str = X.b(str, RInterfaceIndia.b, "");
       arrayOfString[b] = str;
     } 
-    if (A.i().h()) {
+    if (A.RInterfaceIndia().h()) {
       String[] arrayOfString1 = new String[arrayOfString.length * 2];
       for (byte b1 = 0; b1 < arrayOfString.length; b1++) {
         arrayOfString1[b1 * 2] = arrayOfString[b1];
-        arrayOfString1[b1 * 2 + 1] = arrayOfString[b1] + i.d;
+        arrayOfString1[b1 * 2 + 1] = arrayOfString[b1] + RInterfaceIndia.d;
       } 
       arrayOfString = arrayOfString1;
     } 
@@ -78,23 +78,23 @@ class dy implements O {
   }
   
   public int[] l() {
-    return a.b.equals(i.v) ? new int[] { 3, 4 } : new int[] { 2, 3 };
+    return JDialogExtensionInAzPackage.b.equals(RInterfaceIndia.v) ? new int[] { 3, 4 } : new int[] { 2, 3 };
   }
   
   public boolean b(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6) {
     if (paramString4 == null || paramString4.trim().equals("") || paramString4.indexOf("@") < 1 || paramString4.indexOf(".") < 0 || paramString4.lastIndexOf(".") < paramString4.indexOf("@")) {
-      bV.d("Invalid Email Address", dl.e(this.a));
+      bV.d("Invalid Email Address", dl.e(this.JDialogExtensionInAzPackage));
       return true;
     } 
     return false;
   }
   
   public String m() {
-    return g.b(a.p);
+    return SComponentGolf.b(JDialogExtensionInAzPackage.p);
   }
   
-  public boolean a(String paramString) {
-    return a.a().b(paramString);
+  public boolean JDialogExtensionInAzPackage(String paramString) {
+    return JDialogExtensionInAzPackage.JDialogExtensionInAzPackage().b(paramString);
   }
 }
 

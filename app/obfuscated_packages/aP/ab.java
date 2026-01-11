@@ -1,34 +1,34 @@
 package aP;
 
 import G.R;
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.bV;
 import java.awt.Cursor;
 import javax.swing.JComboBox;
-import z.i;
+import z.ZInterfaceIndia;
 
 public class ab extends JComboBox {
   private String c = "Loading..";
   
-  R a = null;
+  R PropertiesExtension = null;
   
-  i b = new i();
+  ZInterfaceIndia b = new ZInterfaceIndia();
   
   public ab(R paramR) {
-    this.a = paramR;
+    this.PropertiesExtension = paramR;
     setEditable(true);
     addItem((E)this.c);
     (new ac(this)).start();
   }
   
-  public void a() {
+  public void PropertiesExtension() {
     setCursor(Cursor.getPredefinedCursor(3));
-    String[] arrayOfString = this.b.a();
+    String[] arrayOfString = this.b.PropertiesExtension();
     removeAllItems();
     for (byte b = 0; b < arrayOfString.length; b++)
       addItem((E)arrayOfString[b]); 
-    if (this.a != null && a.A() != null) {
-      setSelectedItem(a.A().n(this.a.c()));
+    if (this.PropertiesExtension != null && PropertiesExtension.A() != null) {
+      setSelectedItem(PropertiesExtension.A().n(this.PropertiesExtension.c()));
     } else if (bV.d()) {
       setSelectedItem("COM1");
     } else {

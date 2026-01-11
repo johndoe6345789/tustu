@@ -1,11 +1,11 @@
 package aP;
 
-import ai.a;
+import ai.HashMapInAiPackage;
 
 public class df {
-  public void a() {
+  public void HashMapInAiPackage() {
     de de = new de();
-    a.a().a("appAction", de);
+    HashMapInAiPackage.HashMapInAiPackage().HashMapInAiPackage("appAction", de);
   }
 }
 

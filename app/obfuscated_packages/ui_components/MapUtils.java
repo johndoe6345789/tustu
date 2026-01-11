@@ -1,15 +1,15 @@
 package ao;
 
-import as.a;
+import as.AsComponentAlpha;
 import java.io.File;
 
-class ed implements a {
+class ed implements AsComponentAlpha {
   ed(cd paramcd) {}
   
-  public void a(File paramFile) {
+  public void AsComponentAlpha(File paramFile) {
     String[] arrayOfString = { paramFile.getAbsolutePath() };
-    this.a.a(arrayOfString);
-    this.a.q();
+    this.AsComponentAlpha.AsComponentAlpha(arrayOfString);
+    this.AsComponentAlpha.q();
   }
 }
 

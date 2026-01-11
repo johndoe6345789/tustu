@@ -3,19 +3,19 @@ package com.efiAnalytics.apps.ts.dashboard;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class AntiAliasingHandler implements ActionListener {
   AntiAliasingHandler(x paramx) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = ((JCheckBoxMenuItem)paramActionEvent.getSource()).getState();
-    this.a.j(bool);
-    a.a().b("dashAntiAliasingOn", bool + "");
-    if (x.d(this.a) && this.a.ad() != null) {
-      this.a.h();
+    this.IOPropertiesUsingFile.j(bool);
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b("dashAntiAliasingOn", bool + "");
+    if (x.d(this.IOPropertiesUsingFile) && this.IOPropertiesUsingFile.ad() != null) {
+      this.IOPropertiesUsingFile.h();
     } else {
-      x.d(this.a, false);
+      x.d(this.IOPropertiesUsingFile, false);
     } 
   }
 }

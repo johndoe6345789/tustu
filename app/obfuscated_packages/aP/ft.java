@@ -1,16 +1,16 @@
 package aP;
 
-import bA.c;
+import bA.JCheckBoxMenuItemExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ft implements ActionListener {
   ft(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    c c = (c)paramActionEvent.getSource();
-    a.a().b(a.ae, Boolean.toString(c.isSelected()));
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ae, Boolean.toString(JCheckBoxMenuItemExtension.isSelected()));
   }
 }
 

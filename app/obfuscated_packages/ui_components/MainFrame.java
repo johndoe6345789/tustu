@@ -1,21 +1,21 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.U;
 import W.X;
 import W.ap;
 import W.ar;
-import ai.f;
-import as.a;
-import as.g;
-import at.a;
-import at.c;
-import au.c;
-import ay.a;
-import az.c;
-import az.o;
-import az.t;
-import bA.e;
+import ai.JPanelExtensionInAiPackage;
+import as.ExceptionInVPackage;
+import as.JDialogExtensionDispose;
+import at.ExceptionInVPackage;
+import at.IOJMenu;
+import au.IOJMenu;
+import ay.ExceptionInVPackage;
+import az.IOJMenu;
+import az.ThreadedInAzPackage;
+import az.AzInterfaceTango;
+import bA.JMenuItemExtensionInBaPackage;
 import bH.C;
 import bH.D;
 import bH.J;
@@ -24,11 +24,11 @@ import bH.U;
 import bH.X;
 import bH.aa;
 import bH.ae;
-import bH.c;
-import bI.f;
-import bI.h;
-import bV.a;
-import bV.d;
+import bH.IOJMenu;
+import bI.JPanelExtensionInAiPackage;
+import bI.BiInterfaceHotel;
+import bV.ExceptionInVPackage;
+import bV.ArrayListInBvPackage;
 import com.efiAnalytics.ui.aN;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cS;
@@ -38,13 +38,13 @@ import com.efiAnalytics.ui.dS;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.eK;
 import com.efiAnalytics.ui.et;
-import f.d;
-import g.c;
-import g.k;
-import h.b;
-import h.h;
-import h.i;
-import i.g;
+import JPanelExtensionInAiPackage.ArrayListInBvPackage;
+import JDialogExtensionDispose.IOJMenu;
+import JDialogExtensionDispose.k;
+import BiInterfaceHotel.b;
+import BiInterfaceHotel.BiInterfaceHotel;
+import BiInterfaceHotel.i;
+import i.JDialogExtensionDispose;
 import java.awt.AWTEvent;
 import java.awt.Component;
 import java.awt.Dialog;
@@ -93,24 +93,24 @@ import javax.swing.JSeparator;
 import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import javax.swing.filechooser.FileView;
-import k.d;
+import k.ArrayListInBvPackage;
 
 public class cd extends JFrame implements hi, WindowListener {
-  aX a = null;
+  aX ExceptionInVPackage = null;
   
   bK b = null;
   
-  String[] c = aV.a().b();
+  String[] IOJMenu = aV.ExceptionInVPackage().b();
   
-  JMenuItem d;
+  JMenuItem ArrayListInBvPackage;
   
-  JMenuItem e;
+  JMenuItem JMenuItemExtensionInBaPackage;
   
-  JMenu f;
+  JMenu JPanelExtensionInAiPackage;
   
-  JMenu g;
+  JMenu JDialogExtensionDispose;
   
-  JMenu h = null;
+  JMenu BiInterfaceHotel = null;
   
   Frame i = null;
   
@@ -122,9 +122,9 @@ public class cd extends JFrame implements hi, WindowListener {
   
   eK m = null;
   
-  c n = null;
+  IOJMenu n = null;
   
-  er o = null;
+  er ThreadedInAzPackage = null;
   
   eC p = null;
   
@@ -150,7 +150,7 @@ public class cd extends JFrame implements hi, WindowListener {
   
   private final String H = "Custom Fields";
   
-  File t = null;
+  File AzInterfaceTango = null;
   
   private boolean I = false;
   
@@ -158,9 +158,9 @@ public class cd extends JFrame implements hi, WindowListener {
   
   gZ v = new gZ();
   
-  g w = null;
+  JDialogExtensionDispose w = null;
   
-  a x = null;
+  ExceptionInVPackage x = null;
   
   JMenu y = new ee(this, "Calculated Fields");
   
@@ -168,105 +168,105 @@ public class cd extends JFrame implements hi, WindowListener {
   
   public cd() {
     aa aa = new aa();
-    aa.a();
+    aa.ExceptionInVPackage();
     boolean bool1 = true;
     setTitle("");
     this.i = this;
     Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource(i.B));
     setIconImage(image);
-    bV.a(this);
-    bq.a().a(this);
-    bV.a(new ce(this));
+    bV.ExceptionInVPackage(this);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this);
+    bV.ExceptionInVPackage(new ce(this));
     I();
     if (G()) {
       K();
-      o.a(true);
-      i.c("lastUpdateCheckDate", "" + (System.currentTimeMillis() - this.q - 1000L));
+      ThreadedInAzPackage.ExceptionInVPackage(true);
+      i.IOJMenu("lastUpdateCheckDate", "" + (System.currentTimeMillis() - this.q - 1000L));
     } 
-    t t = new t();
-    h.a().a((f)t);
+    AzInterfaceTango AzInterfaceTango = new AzInterfaceTango();
+    BiInterfaceHotel.ExceptionInVPackage().ExceptionInVPackage((JPanelExtensionInAiPackage)AzInterfaceTango);
     eg eg = new eg(this);
-    cS.a((C)eg);
+    cS.ExceptionInVPackage((C)eg);
     boolean bool2 = false;
-    if (!bool2 && cS.a((C)eg).a(eg.f()) && B()) {
-      i.c = X.b(i.c, G, "");
+    if (!bool2 && cS.ExceptionInVPackage((C)eg).ExceptionInVPackage(eg.JPanelExtensionInAiPackage()) && B()) {
+      i.IOJMenu = X.b(i.IOJMenu, G, "");
       this.s = true;
-    } else if (!bool2 && cS.a((C)eg).a(eg.g(), 1)) {
+    } else if (!bool2 && cS.ExceptionInVPackage((C)eg).ExceptionInVPackage(eg.JDialogExtensionDispose(), 1)) {
       String str = hU.b;
       Properties properties = new Properties();
-      properties.setProperty(hU.a, eg.d());
-      str = hU.a(properties, str);
+      properties.setProperty(hU.ExceptionInVPackage, eg.ArrayListInBvPackage());
+      str = hU.ExceptionInVPackage(properties, str);
       int n = JOptionPane.showConfirmDialog(this, str, "Upgrade Registration", 0);
       if (n == 0)
-        aN.a("https://www.efianalytics.com/register/upgradeMlvRegistrationKey.jsp?email=" + eg.d()); 
+        aN.ExceptionInVPackage("https://www.efianalytics.com/register/upgradeMlvRegistrationKey.jsp?email=" + eg.ArrayListInBvPackage()); 
     } 
     setTitle("");
     if (bool1) {
-      D.c("Check 1: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Check 1: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
-    b.a().a(i.b, i.c);
+    b.ExceptionInVPackage().ExceptionInVPackage(i.b, i.IOJMenu);
     if (bool1) {
-      D.c("Set Features: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Set Features: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
-    this.b = new bK(hx.a());
+    this.b = new bK(hx.ExceptionInVPackage());
     if (bool1) {
-      D.c("Create Lower Toolbar: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Create Lower Toolbar: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
     add(this.b, "South");
-    bq.a().a(this.b);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this.b);
     if (bool1) {
-      D.c("Add Lower Toolbar: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Add Lower Toolbar: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
-    (new fw()).a();
-    this.a = new aX();
+    (new fw()).ExceptionInVPackage();
+    this.ExceptionInVPackage = new aX();
     if (bool1) {
-      D.c("Create GraphPanel: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Create GraphPanel: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
     if (this.s) {
-      this.a.a(eg.b(), eg.c(), eg.d());
+      this.ExceptionInVPackage.ExceptionInVPackage(eg.b(), eg.IOJMenu(), eg.ArrayListInBvPackage());
     } else {
-      this.a.a(null, null, null);
+      this.ExceptionInVPackage.ExceptionInVPackage(null, null, null);
     } 
     if (bool1) {
-      D.c("Check 2: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Check 2: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
-    D.c("init components: " + aa.d());
-    aa.e();
-    aa.a();
+    D.IOJMenu("init components: " + aa.ArrayListInBvPackage());
+    aa.JMenuItemExtensionInBaPackage();
+    aa.ExceptionInVPackage();
     setJMenuBar(L());
     if (bool1) {
-      D.c("Build Menu: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Build Menu: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
     this.m = new eK();
-    this.m.add("Log Viewer", this.a);
+    this.m.add("Log Viewer", this.ExceptionInVPackage);
     cs cs = new cs(this);
     cs.run();
-    if (b.a().a("showRegisterTab")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("showRegisterTab")) {
       fC fC = new fC();
       this.m.add("Purchase Registration", fC);
-      this.m.g("Purchase Registration");
+      this.m.JDialogExtensionDispose("Purchase Registration");
     } 
     add((Component)this.m, "Center");
-    this.a.n().a(i.a("playbackSpeed", 1.0D), false);
-    this.a.n().a(this);
+    this.ExceptionInVPackage.n().ExceptionInVPackage(i.ExceptionInVPackage("playbackSpeed", 1.0D), false);
+    this.ExceptionInVPackage.n().ExceptionInVPackage(this);
     if (bool1) {
-      D.c("Build tabs: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Build tabs: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
     addWindowListener(this);
     int i = i.b("x", 100);
@@ -277,120 +277,120 @@ public class cd extends JFrame implements hi, WindowListener {
     Rectangle rectangle = new Rectangle(i, j, k, m);
     rectangle = bV.b(rectangle);
     setBounds(rectangle);
-    boolean bool = i.a(i.al, false);
+    boolean bool = i.ExceptionInVPackage(i.al, false);
     if (bool)
       setExtendedState(6); 
     doLayout();
     enableEvents(1L);
     enableEvents(262144L);
-    D.c("Layout: " + aa.d());
-    aa.e();
-    aa.a();
-    KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(bY.a());
+    D.IOJMenu("Layout: " + aa.ArrayListInBvPackage());
+    aa.JMenuItemExtensionInBaPackage();
+    aa.ExceptionInVPackage();
+    KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(bY.ExceptionInVPackage());
     KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new ec(this));
-    k.a = new JFileChooser();
-    k.a.setFileView((FileView)new c());
+    k.ExceptionInVPackage = new JFileChooser();
+    k.ExceptionInVPackage.setFileView((FileView)new IOJMenu());
     if (bool1) {
-      D.c("init File Chooser: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("init File Chooser: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
     setVisible(true);
     if (bool1) {
-      D.c("Set Visible: " + aa.d());
-      aa.e();
-      aa.a();
+      D.IOJMenu("Set Visible: " + aa.ArrayListInBvPackage());
+      aa.JMenuItemExtensionInBaPackage();
+      aa.ExceptionInVPackage();
     } 
-    d.a();
-    if (i.a(i.y, false) && h.a(".")) {
-      i.c("lastUpdateCheckDate", "0");
-      b.a().a("Updating Application Files");
+    ArrayListInBvPackage.ExceptionInVPackage();
+    if (i.ExceptionInVPackage(i.y, false) && BiInterfaceHotel.ExceptionInVPackage(".")) {
+      i.IOJMenu("lastUpdateCheckDate", "0");
+      b.ExceptionInVPackage().ExceptionInVPackage("Updating Application Files");
       this.I = true;
       (new en(this, true, this)).start();
-    } else if (i.a("automaticUpdates", true) || !i.a("valid", false)) {
+    } else if (i.ExceptionInVPackage("automaticUpdates", true) || !i.ExceptionInVPackage("valid", false)) {
       (new en(this, false, this)).start();
     } 
-    a.c().a(this.v);
-    a.c().g();
+    ExceptionInVPackage.IOJMenu().ExceptionInVPackage(this.v);
+    ExceptionInVPackage.IOJMenu().JDialogExtensionDispose();
     setTransferHandler(new eb(this));
   }
   
   private void z() {
-    i.d("registrationKeyV2", "");
-    i.d("userEmail", "");
-    i.d("firstName", "");
-    i.d("lastName", "");
-    i.h();
-    i.g();
+    i.ArrayListInBvPackage("registrationKeyV2", "");
+    i.ArrayListInBvPackage("userEmail", "");
+    i.ArrayListInBvPackage("firstName", "");
+    i.ArrayListInBvPackage("lastName", "");
+    i.BiInterfaceHotel();
+    i.JDialogExtensionDispose();
   }
   
-  public int a() {
+  public int ExceptionInVPackage() {
     int i = i.b("loopCount", 0);
     U u = new U();
-    u.a();
-    u.a();
-    int j = u.a();
-    i.c("loopCount", "" + j);
+    u.ExceptionInVPackage();
+    u.ExceptionInVPackage();
+    int j = u.ExceptionInVPackage();
+    i.IOJMenu("loopCount", "" + j);
     return j;
   }
   
-  private void e(String paramString) {
-    String str = i.e("disabledKeys", "");
+  private void JMenuItemExtensionInBaPackage(String paramString) {
+    String str = i.JMenuItemExtensionInBaPackage("disabledKeys", "");
     str = str + paramString + ";";
-    i.c("disabledKeys", str);
-    i.g();
+    i.IOJMenu("disabledKeys", str);
+    i.JDialogExtensionDispose();
   }
   
   private ArrayList A() {
     ArrayList<String> arrayList = new ArrayList();
-    String str = i.e("disabledKeys", "");
+    String str = i.JMenuItemExtensionInBaPackage("disabledKeys", "");
     StringTokenizer stringTokenizer = new StringTokenizer(str, ";");
     while (stringTokenizer.hasMoreTokens())
       arrayList.add(stringTokenizer.nextToken()); 
     return arrayList;
   }
   
-  private boolean f(String paramString) {
+  private boolean JPanelExtensionInAiPackage(String paramString) {
     ArrayList arrayList = A();
     return arrayList.contains(paramString);
   }
   
   private boolean B() {
     cD cD = new cD(this);
-    o o = o.a(new bW(), cD);
-    d d = o.h();
-    if (d != null) {
-      if (d.a() == 0) {
+    ThreadedInAzPackage ThreadedInAzPackage = ThreadedInAzPackage.ExceptionInVPackage(new bW(), cD);
+    ArrayListInBvPackage ArrayListInBvPackage = ThreadedInAzPackage.BiInterfaceHotel();
+    if (ArrayListInBvPackage != null) {
+      if (ArrayListInBvPackage.ExceptionInVPackage() == 0) {
         this.s = true;
-      } else if (d.a() == 4) {
-        bV.d(c.h + "\n" + c.f, this);
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 4) {
+        bV.ArrayListInBvPackage(IOJMenu.BiInterfaceHotel + "\n" + IOJMenu.JPanelExtensionInAiPackage, this);
         this.s = false;
-      } else if (d.a() == 1) {
-        D.c("renewal over due");
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 1) {
+        D.IOJMenu("renewal over due");
         this.s = true;
-      } else if (d.a() == 2) {
-        bV.d(c.h + "\n" + d.b(), this);
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 2) {
+        bV.ArrayListInBvPackage(IOJMenu.BiInterfaceHotel + "\n" + ArrayListInBvPackage.b(), this);
         this.s = false;
-      } else if (d.a() == 7) {
-        bV.d(c.j + "\n" + d.b(), this);
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 7) {
+        bV.ArrayListInBvPackage(IOJMenu.j + "\n" + ArrayListInBvPackage.b(), this);
         this.s = false;
-      } else if (d.a() == 5) {
-        bV.d(c.c(cD) + "\n" + d.b(), this);
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 5) {
+        bV.ArrayListInBvPackage(IOJMenu.IOJMenu(cD) + "\n" + ArrayListInBvPackage.b(), this);
         this.s = false;
-      } else if (d.a() == 6) {
-        String str = X.b(i.c, b.b, "");
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 6) {
+        String str = X.b(i.IOJMenu, b.b, "");
         str = X.b(str, "(Beta)", "");
-        bV.d("The registration info provided is no longer valid.\n\nPlease contact EFI Analytics if you are the rightful owner of the registration.", bq.a().b());
-        aN.a(i.n);
+        bV.ArrayListInBvPackage("The registration info provided is no longer valid.\n\nPlease contact EFI Analytics if you are the rightful owner of the registration.", bq.ExceptionInVPackage().b());
+        aN.ExceptionInVPackage(i.n);
         try {
           z();
-        } catch (a a1) {
+        } catch (ExceptionInVPackage a1) {
           Logger.getLogger(cd.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         } 
         this.s = false;
       } 
     } else {
-      i.c += G;
+      i.IOJMenu += G;
       this.s = false;
     } 
     return this.s;
@@ -398,41 +398,41 @@ public class cd extends JFrame implements hi, WindowListener {
   
   public boolean b() {
     Date date1 = new Date();
-    date1.setTime(i.a("lastUpdateCheckDate", (new Date()).getTime() - this.q - 1L));
+    date1.setTime(i.ExceptionInVPackage("lastUpdateCheckDate", (new Date()).getTime() - this.q - 1L));
     Date date2 = new Date();
     date2.setTime(System.currentTimeMillis() - this.q);
     boolean bool = false;
     if (date1.before(date2)) {
-      System.out.println("processor score: " + a());
-      a a1 = new a();
-      d d = null;
+      System.out.println("processor score: " + ExceptionInVPackage());
+      ExceptionInVPackage a1 = new ExceptionInVPackage();
+      ArrayListInBvPackage ArrayListInBvPackage = null;
       try {
-        String str = X.b(i.c, G, "").trim();
-        d = a1.a(i.e("uid", ""), i.b, i.e("version", "" + i.a), i.e("installDate", ""), i.e("loopCount", ""), i.e("registrationKeyV2", ""), str, i.e("lastFileFormat", ""));
+        String str = X.b(i.IOJMenu, G, "").trim();
+        ArrayListInBvPackage = a1.ExceptionInVPackage(i.JMenuItemExtensionInBaPackage("uid", ""), i.b, i.JMenuItemExtensionInBaPackage("version", "" + i.ExceptionInVPackage), i.JMenuItemExtensionInBaPackage("installDate", ""), i.JMenuItemExtensionInBaPackage("loopCount", ""), i.JMenuItemExtensionInBaPackage("registrationKeyV2", ""), str, i.JMenuItemExtensionInBaPackage("lastFileFormat", ""));
       } catch (IOException iOException) {
         System.out.println("Unable to read from update server, connection to server unavailable");
         return false;
       } 
-      if (d == null)
+      if (ArrayListInBvPackage == null)
         return false; 
-      if (d.a() == 0) {
+      if (ArrayListInBvPackage.ExceptionInVPackage() == 0) {
         r = false;
         F();
-        i.c("lastUpdateCheckDate", "" + (new Date()).getTime());
-        i.c(i.y, "false");
-        i.g();
-      } else if (d.a() == 2) {
+        i.IOJMenu("lastUpdateCheckDate", "" + (new Date()).getTime());
+        i.IOJMenu(i.y, "false");
+        i.JDialogExtensionDispose();
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 2) {
         F();
         String[] arrayOfString = { "Complete Update", "Update Later" };
-        boolean bool1 = (this.I || bV.a(d.b(), "Update Available", this, arrayOfString)) ? true : false;
+        boolean bool1 = (this.I || bV.ExceptionInVPackage(ArrayListInBvPackage.b(), "Update Available", this, arrayOfString)) ? true : false;
         if (bool1) {
-          if (!h.a(".") && bV.d()) {
+          if (!BiInterfaceHotel.ExceptionInVPackage(".") && bV.ArrayListInBvPackage()) {
             String str = "Elevate.exe";
             if ((new File(str)).exists()) {
               boolean bool2 = true;
               if (bool2) {
-                i.c(i.y, "true");
-                i.g();
+                i.IOJMenu(i.y, "true");
+                i.JDialogExtensionDispose();
                 try {
                   Runtime.getRuntime().exec("Elevate.exe " + i.k);
                   System.exit(0);
@@ -444,48 +444,48 @@ public class cd extends JFrame implements hi, WindowListener {
               } 
             } else {
               String str1 = i.b + " does not currently have write access to the installation folder.\n\nUsing Windows 7 and Vista Operating Systems Auto Update requires \nAdministrator rights. Please start " + i.b + "\nUsing Run As Administrator to complete Auto Update. \nWith Windows 7 the \"Run As Administrator\" Option can be found by \nPressing the Shift Key and right clicking on the icon you used to start " + i.b + "\n\nAlternatively you can download the latest installer from:\n" + i.m + "\n\nWould you like to go to the download site now?";
-              if (bV.a(str1, this, true))
-                aN.a(i.m); 
+              if (bV.ExceptionInVPackage(str1, this, true))
+                aN.ExceptionInVPackage(i.m); 
             } 
             return true;
           } 
           try {
-            b.a().a("Initializing downloads........");
+            b.ExceptionInVPackage().ExceptionInVPackage("Initializing downloads........");
             cO cO = new cO(this);
-            a1.a(cO);
-            a1.a(d);
-            i.c(i.y, "false");
-            i.g();
+            a1.ExceptionInVPackage(cO);
+            a1.ExceptionInVPackage(ArrayListInBvPackage);
+            i.IOJMenu(i.y, "false");
+            i.JDialogExtensionDispose();
             bool = true;
           } catch (IOException iOException) {
-            String str = "Auto update is unable to upgrade " + i.b + "\nThis is usually due to a lost connection to the internet or insufficient access \nto write to the installation directory.\n\nInternal Error:\n" + iOException.getMessage();
-            bV.d(str, this);
+            String str = "Auto update is unable to upgrade " + i.b + "\nThis is usually due to ExceptionInVPackage lost connection to the internet or insufficient access \nto write to the installation directory.\n\nInternal Error:\n" + iOException.getMessage();
+            bV.ArrayListInBvPackage(str, this);
             iOException.printStackTrace();
           } 
         } else {
           return true;
         } 
-      } else if (d.a() == 1) {
-        k.a(d.b(), this);
-      } else if (d.a() == 8) {
-        e(i.e("registrationKeyV2", ""));
-        i.c("immutableInterpolation", "true");
-      } else if (d.a() == 4) {
-        e(i.e("registrationKeyV2", ""));
-        if (d.b() != null && !d.b().equals(""))
-          k.a(d.b(), this); 
-        i.c("quadraticInterpolation", "true");
-        i.d("valid");
-        i.g();
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 1) {
+        k.ExceptionInVPackage(ArrayListInBvPackage.b(), this);
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 8) {
+        JMenuItemExtensionInBaPackage(i.JMenuItemExtensionInBaPackage("registrationKeyV2", ""));
+        i.IOJMenu("immutableInterpolation", "true");
+      } else if (ArrayListInBvPackage.ExceptionInVPackage() == 4) {
+        JMenuItemExtensionInBaPackage(i.JMenuItemExtensionInBaPackage("registrationKeyV2", ""));
+        if (ArrayListInBvPackage.b() != null && !ArrayListInBvPackage.b().equals(""))
+          k.ExceptionInVPackage(ArrayListInBvPackage.b(), this); 
+        i.IOJMenu("quadraticInterpolation", "true");
+        i.ArrayListInBvPackage("valid");
+        i.JDialogExtensionDispose();
         try {
           z();
-        } catch (a a2) {
+        } catch (ExceptionInVPackage a2) {
           Logger.getLogger(cd.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a2);
         } 
         System.exit(0);
       } 
-      i.c("lastUpdateCheckDate", "" + (new Date()).getTime());
-      i.g();
+      i.IOJMenu("lastUpdateCheckDate", "" + (new Date()).getTime());
+      i.JDialogExtensionDispose();
     } else {
       System.out.println("No check, last update check=" + date1.toString());
     } 
@@ -496,9 +496,9 @@ public class cd extends JFrame implements hi, WindowListener {
         String str2 = i.k;
         String str3 = null;
         String str4 = "";
-        if (this.a.l() != null && !this.a.l().equals(""))
-          str4 = this.a.l(); 
-        if (k.a()) {
+        if (this.ExceptionInVPackage.l() != null && !this.ExceptionInVPackage.l().equals(""))
+          str4 = this.ExceptionInVPackage.l(); 
+        if (k.ExceptionInVPackage()) {
           str3 = str2 + " \\\"" + str4 + "\\\"";
         } else {
           str3 = "java -jar " + str1 + " " + str4;
@@ -511,7 +511,7 @@ public class cd extends JFrame implements hi, WindowListener {
     return false;
   }
   
-  public void c() {
+  public void IOJMenu() {
     EventQueue.invokeLater(new cZ(this));
   }
   
@@ -520,7 +520,7 @@ public class cd extends JFrame implements hi, WindowListener {
       setVisible(true); 
     int i = getExtendedState();
     i &= 0xFFFFFFFE;
-    if (bV.d()) {
+    if (bV.ArrayListInBvPackage()) {
       setExtendedState(i);
       setAlwaysOnTop(true);
       toFront();
@@ -534,24 +534,24 @@ public class cd extends JFrame implements hi, WindowListener {
   }
   
   private void D() {
-    if (bV.a(i.b + " " + X.b(i.c, b.b, "") + " needs to restart for changes to take effect.\n\nWould you like to restart Now?", bq.a().b(), true))
-      b.a().b(bq.a().b()); 
+    if (bV.ExceptionInVPackage(i.b + " " + X.b(i.IOJMenu, b.b, "") + " needs to restart for changes to take effect.\n\nWould you like to restart Now?", bq.ExceptionInVPackage().b(), true))
+      b.ExceptionInVPackage().b(bq.ExceptionInVPackage().b()); 
   }
   
   private void E() {
-    if (bV.a("All " + i.b + " " + X.b(i.c, b.b, "") + " features will be enabled after restarting.\n\nWould you like to restart Now?", bq.a().b(), true))
-      b.a().b(bq.a().b()); 
+    if (bV.ExceptionInVPackage("All " + i.b + " " + X.b(i.IOJMenu, b.b, "") + " features will be enabled after restarting.\n\nWould you like to restart Now?", bq.ExceptionInVPackage().b(), true))
+      b.ExceptionInVPackage().b(bq.ExceptionInVPackage().b()); 
   }
   
   private void F() {
-    if (cS.a().a(i.e("registrationKeyV2", "")))
-      i.c("valid", "true"); 
+    if (cS.ExceptionInVPackage().ExceptionInVPackage(i.JMenuItemExtensionInBaPackage("registrationKeyV2", "")))
+      i.IOJMenu("valid", "true"); 
   }
   
   private boolean G() {
-    String str = i.e("version", "");
-    if (!i.a.equals(str)) {
-      i.c("version", i.a);
+    String str = i.JMenuItemExtensionInBaPackage("version", "");
+    if (!i.ExceptionInVPackage.equals(str)) {
+      i.IOJMenu("version", i.ExceptionInVPackage);
       return true;
     } 
     return H();
@@ -568,12 +568,12 @@ public class cd extends JFrame implements hi, WindowListener {
   
   private void I() {
     try {
-      String str = i.e("uid", "");
-      if (!g(str)) {
+      String str = i.JMenuItemExtensionInBaPackage("uid", "");
+      if (!JDialogExtensionDispose(str)) {
         Date date = new Date();
-        i.d("uid", J());
-        i.d("installDate", "" + date.getTime());
-        i.h();
+        i.ArrayListInBvPackage("uid", J());
+        i.ArrayListInBvPackage("installDate", "" + date.getTime());
+        i.BiInterfaceHotel();
       } 
     } catch (Exception exception) {
       System.out.println("Failed to set uid");
@@ -581,7 +581,7 @@ public class cd extends JFrame implements hi, WindowListener {
     } 
   }
   
-  private boolean g(String paramString) {
+  private boolean JDialogExtensionDispose(String paramString) {
     try {
       long l = Long.parseLong(paramString);
       if (l == 0L)
@@ -610,7 +610,7 @@ public class cd extends JFrame implements hi, WindowListener {
     try {
       InetAddress inetAddress = InetAddress.getLocalHost();
       NetworkInterface networkInterface = NetworkInterface.getByInetAddress(inetAddress);
-      int[] arrayOfInt = c.b(networkInterface.getHardwareAddress());
+      int[] arrayOfInt = IOJMenu.b(networkInterface.getHardwareAddress());
       StringBuilder stringBuilder = new StringBuilder();
       for (int i = arrayOfInt.length - 1; i >= 0; i--) {
         stringBuilder.append(String.format("%03d", new Object[] { Integer.valueOf(arrayOfInt[i]) }));
@@ -623,43 +623,43 @@ public class cd extends JFrame implements hi, WindowListener {
   }
   
   private void K() {
-    i.c("automaticUpdates", null);
-    String str = i.a("fieldMapping", "Auto");
+    i.IOJMenu("automaticUpdates", null);
+    String str = i.ExceptionInVPackage("fieldMapping", "Auto");
     if (str.equals("FieldMaps/BigStuff.properties"))
-      i.c("fieldMapping", "Auto"); 
-    i.c("automaticUpdates", null);
-    if (!i.e("APPEND_FIELD_HP", "").trim().startsWith("[Field.TP]<"))
-      i.c("APPEND_FIELD_HP", ""); 
-    if (i.e("userParameter_Smoothing factor 1-10, higher makes smoother", "").equals(""))
-      i.c("userParameter_Smoothing factor 1-10, higher makes smoother", "4"); 
-    if (i.e("FIELD_MIN_MAX_TQ", "").equals("0;800"))
-      i.c("FIELD_MIN_MAX_TQ", ""); 
-    if (i.e("FIELD_MIN_MAX_HP", "").equals("0;800"))
-      i.c("FIELD_MIN_MAX_HP", ""); 
-    if (i.e()) {
-      String str1 = i.e("firstName", "");
-      String str2 = i.e("lastName", "");
-      String str3 = i.e("registrationKeyV2", "");
-      String str4 = i.e("userEmail", "");
-      String str5 = i.e("uid", "");
-      String str6 = i.e("installDate", "");
-      i.d("firstName", str1);
-      i.d("lastName", str2);
-      i.d("registrationKeyV2", str3);
-      i.d("userEmail", str4);
-      i.d("uid", str5);
-      i.d("installDate", str6);
-      i.d("firstName");
-      i.d("lastName");
-      i.d("registrationKeyV2");
-      i.d("userEmail");
-      i.d("uid");
-      i.d("installDate");
+      i.IOJMenu("fieldMapping", "Auto"); 
+    i.IOJMenu("automaticUpdates", null);
+    if (!i.JMenuItemExtensionInBaPackage("APPEND_FIELD_HP", "").trim().startsWith("[Field.TP]<"))
+      i.IOJMenu("APPEND_FIELD_HP", ""); 
+    if (i.JMenuItemExtensionInBaPackage("userParameter_Smoothing factor 1-10, higher makes smoother", "").equals(""))
+      i.IOJMenu("userParameter_Smoothing factor 1-10, higher makes smoother", "4"); 
+    if (i.JMenuItemExtensionInBaPackage("FIELD_MIN_MAX_TQ", "").equals("0;800"))
+      i.IOJMenu("FIELD_MIN_MAX_TQ", ""); 
+    if (i.JMenuItemExtensionInBaPackage("FIELD_MIN_MAX_HP", "").equals("0;800"))
+      i.IOJMenu("FIELD_MIN_MAX_HP", ""); 
+    if (i.JMenuItemExtensionInBaPackage()) {
+      String str1 = i.JMenuItemExtensionInBaPackage("firstName", "");
+      String str2 = i.JMenuItemExtensionInBaPackage("lastName", "");
+      String str3 = i.JMenuItemExtensionInBaPackage("registrationKeyV2", "");
+      String str4 = i.JMenuItemExtensionInBaPackage("userEmail", "");
+      String str5 = i.JMenuItemExtensionInBaPackage("uid", "");
+      String str6 = i.JMenuItemExtensionInBaPackage("installDate", "");
+      i.ArrayListInBvPackage("firstName", str1);
+      i.ArrayListInBvPackage("lastName", str2);
+      i.ArrayListInBvPackage("registrationKeyV2", str3);
+      i.ArrayListInBvPackage("userEmail", str4);
+      i.ArrayListInBvPackage("uid", str5);
+      i.ArrayListInBvPackage("installDate", str6);
+      i.ArrayListInBvPackage("firstName");
+      i.ArrayListInBvPackage("lastName");
+      i.ArrayListInBvPackage("registrationKeyV2");
+      i.ArrayListInBvPackage("userEmail");
+      i.ArrayListInBvPackage("uid");
+      i.ArrayListInBvPackage("installDate");
       try {
-        i.h();
-        i.g();
-      } catch (a a1) {
-        k.a(a1.getMessage(), this.i);
+        i.BiInterfaceHotel();
+        i.JDialogExtensionDispose();
+      } catch (ExceptionInVPackage a1) {
+        k.ExceptionInVPackage(a1.getMessage(), this.i);
       } 
     } 
     String[] arrayOfString = (new File(".")).list();
@@ -668,7 +668,7 @@ public class cd extends JFrame implements hi, WindowListener {
         System.out.println("Finishing installation, expanding: " + arrayOfString[b]);
         File file = new File(arrayOfString[b]);
         try {
-          if (ae.a(arrayOfString[b], X.b(arrayOfString[b], ".zip", ""), null).equals(ae.a))
+          if (ae.ExceptionInVPackage(arrayOfString[b], X.b(arrayOfString[b], ".zip", ""), null).equals(ae.ExceptionInVPackage))
             (new File(arrayOfString[b])).delete(); 
         } catch (ZipException zipException) {
           zipException.printStackTrace();
@@ -681,11 +681,11 @@ public class cd extends JFrame implements hi, WindowListener {
   
   private JMenuBar L() {
     JMenuBar jMenuBar = new JMenuBar();
-    a(jMenuBar);
+    ExceptionInVPackage(jMenuBar);
     return jMenuBar;
   }
   
-  private JMenuBar a(JMenuBar paramJMenuBar) {
+  private JMenuBar ExceptionInVPackage(JMenuBar paramJMenuBar) {
     ee ee = new ee(this, "File");
     ee.setMnemonic('F');
     paramJMenuBar.add(ee);
@@ -693,19 +693,19 @@ public class cd extends JFrame implements hi, WindowListener {
     jMenuItem1.setAccelerator(KeyStroke.getKeyStroke(79, 128));
     jMenuItem1.addActionListener(new di(this));
     ee.add(jMenuItem1);
-    if (b.a().a("spoji[asfi2309jdi234iofwae2344")) {
-      e e = new e("Open File on TS-Dash", true);
-      e.setAccelerator(KeyStroke.getKeyStroke(67, 128));
-      e.addActionListener(new dt(this));
-      e.a(new dE(this));
-      ee.add((JMenuItem)e);
+    if (b.ExceptionInVPackage().ExceptionInVPackage("spoji[asfi2309jdi234iofwae2344")) {
+      JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage("Open File on TS-Dash", true);
+      JMenuItemExtensionInBaPackage.setAccelerator(KeyStroke.getKeyStroke(67, 128));
+      JMenuItemExtensionInBaPackage.addActionListener(new dt(this));
+      JMenuItemExtensionInBaPackage.ExceptionInVPackage(new dE(this));
+      ee.add((JMenuItem)JMenuItemExtensionInBaPackage);
     } 
-    if (b.a().a("compareMode")) {
-      e e = new e("Compare to", true);
-      e.setAccelerator(KeyStroke.getKeyStroke(67, 128));
-      e.addActionListener(new dP(this));
-      e.a(new cf(this));
-      ee.add((JMenuItem)e);
+    if (b.ExceptionInVPackage().ExceptionInVPackage("compareMode")) {
+      JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage("Compare to", true);
+      JMenuItemExtensionInBaPackage.setAccelerator(KeyStroke.getKeyStroke(67, 128));
+      JMenuItemExtensionInBaPackage.addActionListener(new dP(this));
+      JMenuItemExtensionInBaPackage.ExceptionInVPackage(new cf(this));
+      ee.add((JMenuItem)JMenuItemExtensionInBaPackage);
       JMenuItem jMenuItem = new JMenuItem("Trail Live File");
       jMenuItem.setAccelerator(KeyStroke.getKeyStroke(84, 128));
       jMenuItem.addActionListener(new cj(this));
@@ -713,7 +713,7 @@ public class cd extends JFrame implements hi, WindowListener {
       ej ej = new ej(this);
       ee.add((JMenuItem)ej);
     } 
-    boolean bool1 = b.a().a("fileEditing");
+    boolean bool1 = b.ExceptionInVPackage().ExceptionInVPackage("fileEditing");
     JMenuItem jMenuItem2 = new JMenuItem("Export Loaded Log As");
     jMenuItem2.setAccelerator(KeyStroke.getKeyStroke(69, 2));
     jMenuItem2.addActionListener(new ck(this));
@@ -723,11 +723,11 @@ public class cd extends JFrame implements hi, WindowListener {
     ee.add(separator);
     ee.add(U());
     ee.addSeparator();
-    boolean bool2 = b.a().a("optionalFields");
+    boolean bool2 = b.ExceptionInVPackage().ExceptionInVPackage("optionalFields");
     JMenu jMenu1 = O();
     jMenu1.setEnabled(bool2);
     ee.add(jMenu1);
-    if (b.a().a("fa-9fdspoijoijnfdz09jfdsa098j"))
+    if (b.ExceptionInVPackage().ExceptionInVPackage("fa-9fdspoijoijnfdz09jfdsa098j"))
       ee.add(P()); 
     ee.addSeparator();
     JMenuItem jMenuItem3 = new JMenuItem("Save Graph as PNG or Jpeg");
@@ -756,29 +756,29 @@ public class cd extends JFrame implements hi, WindowListener {
   
   private JMenu M() {
     ee ee = new ee(this, "Log Info");
-    e e = new e("View Log Header", true);
-    e.a(new cn(this));
-    e.addActionListener(new co(this));
-    ee.add((JMenuItem)e);
-    if (b.a().a("timeslipData")) {
+    JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage("View Log Header", true);
+    JMenuItemExtensionInBaPackage.ExceptionInVPackage(new cn(this));
+    JMenuItemExtensionInBaPackage.addActionListener(new co(this));
+    ee.add((JMenuItem)JMenuItemExtensionInBaPackage);
+    if (b.ExceptionInVPackage().ExceptionInVPackage("timeslipData")) {
       ee ee1 = new ee(this, "Drag Timeslip Preferences");
-      e e1 = new e("View / Edit Timeslip", true);
-      e1.a(new cp(this));
+      JMenuItemExtensionInBaPackage e1 = new JMenuItemExtensionInBaPackage("View / Edit Timeslip", true);
+      e1.ExceptionInVPackage(new cp(this));
       e1.addActionListener(new cq(this));
       ee.add((JMenuItem)e1);
       JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Show Time Slips");
-      jCheckBoxMenuItem1.setState(i.a(i.aB, i.aC));
+      jCheckBoxMenuItem1.setState(i.ExceptionInVPackage(i.aB, i.aC));
       jCheckBoxMenuItem1.setToolTipText("<html>When checked, key Timeslip event data<br>will displayed on graph as yellow vertical bars.");
       jCheckBoxMenuItem1.addActionListener(new cr(this));
       ee1.add(jCheckBoxMenuItem1);
       JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Generate Time Slips");
-      jCheckBoxMenuItem2.setState(i.a(i.az, i.aA));
+      jCheckBoxMenuItem2.setState(i.ExceptionInVPackage(i.az, i.aA));
       jCheckBoxMenuItem2.setToolTipText("<html>When checked, Timeslip data will be generated from the<br>launch condition if no time slip data has been entered.");
       jCheckBoxMenuItem2.addActionListener(new ct(this));
       ee1.add(jCheckBoxMenuItem2);
       JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Jump to Launch");
-      jCheckBoxMenuItem3.setState(i.a(i.ax, i.ay));
-      jCheckBoxMenuItem3.setToolTipText("<html>When checked, upon opening a log file the cursor<br>will jump to the launch point of the log.");
+      jCheckBoxMenuItem3.setState(i.ExceptionInVPackage(i.ax, i.ay));
+      jCheckBoxMenuItem3.setToolTipText("<html>When checked, upon opening ExceptionInVPackage log file the cursor<br>will jump to the launch point of the log.");
       jCheckBoxMenuItem3.addActionListener(new cu(this));
       ee1.add(jCheckBoxMenuItem3);
       ee.add(ee1);
@@ -789,7 +789,7 @@ public class cd extends JFrame implements hi, WindowListener {
   private JMenu N() {
     ee ee = new ee(this, "Search");
     ee.setMnemonic('S');
-    if (b.a().a("searchLogFiles")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("searchLogFiles")) {
       ee.addMenuListener(new cv(this));
     } else {
       ee.add("Enable Search").addActionListener(new cw(this));
@@ -809,20 +809,20 @@ public class cd extends JFrame implements hi, WindowListener {
   }
   
   private JMenu P() {
-    if (b.a().a("fa-9fdspoijoijnfdz09jfdsa098j")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("fa-9fdspoijoijnfdz09jfdsa098j")) {
       JMenu jMenu1 = new JMenu("Settings Profiles");
-      c.a().a(jMenu1);
+      IOJMenu.ExceptionInVPackage().ExceptionInVPackage(jMenu1);
       JMenuItem jMenuItem = new JMenuItem("New Setting Profile");
       jMenuItem.addActionListener(new cz(this));
       jMenu1.add(jMenuItem);
-      String str = c.a().d();
+      String str = IOJMenu.ExceptionInVPackage().ArrayListInBvPackage();
       if (!str.equals("")) {
         JMenuItem jMenuItem1 = new JMenuItem("Update Setting Profile: " + str);
         jMenuItem1.addActionListener(new cA(this));
         jMenu1.add(jMenuItem1);
       } 
-      String[] arrayOfString = a.a();
-      arrayOfString = S.a(arrayOfString);
+      String[] arrayOfString = ExceptionInVPackage.ExceptionInVPackage();
+      arrayOfString = S.ExceptionInVPackage(arrayOfString);
       JMenu jMenu2 = new JMenu("Delete Profile");
       jMenu1.add(jMenu2);
       cB cB = new cB(this, jMenu2);
@@ -835,7 +835,7 @@ public class cd extends JFrame implements hi, WindowListener {
       cC cC = new cC(this);
       jMenu1.addSeparator();
       ButtonGroup buttonGroup = new ButtonGroup();
-      c.a().a(buttonGroup);
+      IOJMenu.ExceptionInVPackage().ExceptionInVPackage(buttonGroup);
       for (String str1 : arrayOfString) {
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1, str1.equals(str));
         jMenu1.add(jCheckBoxMenuItem);
@@ -858,7 +858,7 @@ public class cd extends JFrame implements hi, WindowListener {
     JMenuItem jMenuItem2 = new JMenuItem("Help Topics");
     jMenuItem2.addActionListener(new cF(this));
     jMenu.add(jMenuItem2);
-    if (b.a().a("tuningPanelVisible")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("tuningPanelVisible")) {
       jMenuItem2 = new JMenuItem("VE Analyze");
       jMenuItem2.addActionListener(new cG(this));
       jMenu.add(jMenuItem2);
@@ -868,9 +868,9 @@ public class cd extends JFrame implements hi, WindowListener {
     jMenu.add(jMenuItem2);
     jMenu.addSeparator();
     if (!this.s)
-      i.c("automaticUpdates", "true"); 
-    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Automatic Update Check", i.a("automaticUpdates", true));
-    jCheckBoxMenuItem.setEnabled(i.a("valid", false));
+      i.IOJMenu("automaticUpdates", "true"); 
+    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Automatic Update Check", i.ExceptionInVPackage("automaticUpdates", true));
+    jCheckBoxMenuItem.setEnabled(i.ExceptionInVPackage("valid", false));
     jCheckBoxMenuItem.addItemListener(new cI(this));
     if (!this.s)
       jCheckBoxMenuItem.setEnabled(false); 
@@ -879,7 +879,7 @@ public class cd extends JFrame implements hi, WindowListener {
     jMenuItem3.addActionListener(new cJ(this));
     jMenu.add(jMenuItem3);
     jMenu.addSeparator();
-    if (!b.a().a("hideRegisterMenu") && !this.s) {
+    if (!b.ExceptionInVPackage().ExceptionInVPackage("hideRegisterMenu") && !this.s) {
       JMenuItem jMenuItem6 = new JMenuItem("Purchase Registration");
       jMenuItem6.addActionListener(new cK(this));
       jMenu.add(jMenuItem6);
@@ -888,19 +888,19 @@ public class cd extends JFrame implements hi, WindowListener {
       jMenu.add(jMenuItem7);
       jMenu.addSeparator();
     } 
-    if (J.a()) {
+    if (J.ExceptionInVPackage()) {
       JMenu jMenu1 = new JMenu("Video driver work arounds");
       ButtonGroup buttonGroup = new ButtonGroup();
       JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Force OpenGL Active");
       jCheckBoxMenuItem1.addActionListener(new cM(this));
-      boolean bool1 = i.a("forceOpenGL", false);
+      boolean bool1 = i.ExceptionInVPackage("forceOpenGL", false);
       jCheckBoxMenuItem1.setState(bool1);
       jCheckBoxMenuItem1.setToolTipText("When on will force the use of OpenGL for rendering over the default Direct X normally used on Windows.");
       jMenu1.add(jCheckBoxMenuItem1);
       buttonGroup.add(jCheckBoxMenuItem1);
       JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Disable Direct 3D");
       jCheckBoxMenuItem2.addActionListener(new cN(this));
-      boolean bool2 = i.a("disableD3d", true);
+      boolean bool2 = i.ExceptionInVPackage("disableD3d", true);
       jCheckBoxMenuItem2.setState(bool2);
       jMenu1.add(jCheckBoxMenuItem2);
       buttonGroup.add(jCheckBoxMenuItem2);
@@ -912,7 +912,7 @@ public class cd extends JFrame implements hi, WindowListener {
       buttonGroup.add(jCheckBoxMenuItem3);
       jMenu.add(jMenu1);
     } 
-    if (!b.a().a("hideTunerStudioPromo") && i.b.equals("MegaLogViewer")) {
+    if (!b.ExceptionInVPackage().ExceptionInVPackage("hideTunerStudioPromo") && i.b.equals("MegaLogViewer")) {
       jMenuItem2 = new JMenuItem("Learn About TunerStudio");
       jMenuItem2.addActionListener(new cQ(this));
       jMenu.add(jMenuItem2);
@@ -927,14 +927,14 @@ public class cd extends JFrame implements hi, WindowListener {
     jMenu.add(jMenuItem5);
   }
   
-  public void d() {
+  public void ArrayListInBvPackage() {
     cT cT = new cT(this);
     cT.start();
   }
   
-  public void e() {
+  public void JMenuItemExtensionInBaPackage() {
     String[] arrayOfString = { "settings" };
-    String str1 = k.a(this, "Import Settings", arrayOfString, "*.settings");
+    String str1 = k.ExceptionInVPackage(this, "Import Settings", arrayOfString, "*.settings");
     if (str1 == null || str1.equals(""))
       return; 
     File file = new File(str1);
@@ -944,106 +944,106 @@ public class cd extends JFrame implements hi, WindowListener {
       properties.load(fileInputStream);
       fileInputStream.close();
     } catch (Exception exception) {
-      k.a("Unable to open settings file " + str1 + "\nSee log for more detail.", this);
+      k.ExceptionInVPackage("Unable to open settings file " + str1 + "\nSee log for more detail.", this);
       exception.printStackTrace();
     } 
     ha ha = new ha();
     String str2 = file.getName();
     if (str2.contains("."))
       str2 = str2.substring(0, str2.lastIndexOf(".")); 
-    ha.a(str2);
-    ha.a(this);
-    if (ha.c())
+    ha.ExceptionInVPackage(str2);
+    ha.ExceptionInVPackage(this);
+    if (ha.IOJMenu())
       return; 
     if (ha.b()) {
-      c.a().a(ha.a(), file);
+      IOJMenu.ExceptionInVPackage().ExceptionInVPackage(ha.ExceptionInVPackage(), file);
     } else {
       ArrayList<bB> arrayList = new ArrayList();
-      if (a(properties, "ROOT_FIELD_")) {
+      if (ExceptionInVPackage(properties, "ROOT_FIELD_")) {
         bB bB = new bB("ROOT_FIELD_", "Normalized Field Name Mapping");
-        bB.a("Import Field Name Mappings in this settings file.");
+        bB.ExceptionInVPackage("Import Field Name Mappings in this settings file.");
         arrayList.add(bB);
       } 
-      if (a(properties, "USER_FIELD_")) {
+      if (ExceptionInVPackage(properties, "USER_FIELD_")) {
         bB bB = new bB("USER_FIELD_", "User Calculated Math Fields");
-        bB.a("Import custom created Calculated Fields in this settings file.");
+        bB.ExceptionInVPackage("Import custom created Calculated Fields in this settings file.");
         arrayList.add(bB);
       } 
-      if (a(properties, "APPEND_FIELD_")) {
+      if (ExceptionInVPackage(properties, "APPEND_FIELD_")) {
         bB bB = new bB("APPEND_FIELD_", "Active Optional and Calculated Fields");
-        bB.a("Imports which Optional and Calculated Fields are active.");
+        bB.ExceptionInVPackage("Imports which Optional and Calculated Fields are active.");
         arrayList.add(bB);
       } 
-      if (a(properties, "FIELD_GROUP_NAME_")) {
+      if (ExceptionInVPackage(properties, "FIELD_GROUP_NAME_")) {
         bB bB = new bB("FIELD_GROUP_NAME_", "Quick View Tabs");
-        bB.a("All Quick View tabs on this PC");
+        bB.ExceptionInVPackage("All Quick View tabs on this PC");
         bB.b("FIELD_SELECTED_GROUP_");
         arrayList.add(bB);
       } 
-      if (a(properties, "FIELD_MIN_MAX_")) {
+      if (ExceptionInVPackage(properties, "FIELD_MIN_MAX_")) {
         bB bB = new bB("FIELD_MIN_MAX_", "Field Min/Max Settings");
-        bB.a("Import set Min & Max values and autoscale settings.");
+        bB.ExceptionInVPackage("Import set Min & Max values and autoscale settings.");
         arrayList.add(bB);
       } 
-      if (b.a().a("tableGenerator") && a(properties, "TABLE_GEN_VIEW_")) {
+      if (b.ExceptionInVPackage().ExceptionInVPackage("tableGenerator") && ExceptionInVPackage(properties, "TABLE_GEN_VIEW_")) {
         bB bB = new bB("TABLE_GEN_VIEW_", "Histogram views");
-        bB.a("Import Histogram / Table Generator views.");
+        bB.ExceptionInVPackage("Import Histogram / Table Generator views.");
         arrayList.add(bB);
       } 
-      if (b.a().a("scatterPlots") && a(properties, "SCATTER_PLOT_VIEW_")) {
+      if (b.ExceptionInVPackage().ExceptionInVPackage("scatterPlots") && ExceptionInVPackage(properties, "SCATTER_PLOT_VIEW_")) {
         bB bB = new bB("SCATTER_PLOT_VIEW_", "Scatter Plot Views");
-        bB.a("Import Scatter Plot views.");
+        bB.ExceptionInVPackage("Import Scatter Plot views.");
         arrayList.add(bB);
       } 
-      if (b.a().a("fieldSmoothing") && a(properties, "fieldSmoothingFactor_")) {
+      if (b.ExceptionInVPackage().ExceptionInVPackage("fieldSmoothing") && ExceptionInVPackage(properties, "fieldSmoothingFactor_")) {
         bB bB = new bB("fieldSmoothingFactor_", "Field Smoothing");
-        bB.a("Export Smoothing factor for each field it has been set on.");
+        bB.ExceptionInVPackage("Export Smoothing factor for each field it has been set on.");
         arrayList.add(bB);
       } 
-      if (a(properties, i.S)) {
+      if (ExceptionInVPackage(properties, i.S)) {
         bB bB = new bB(i.S, "Viewing preferences");
         bB.b("numberOfGraphs");
         bB.b("numberOfOverlays");
         bB.b("numberOfOverlayGraphs");
-        bB.a("Import number of graphs, traces per graph, Trace Value Position, etc.");
+        bB.ExceptionInVPackage("Import number of graphs, traces per graph, Trace Value Position, etc.");
         arrayList.add(bB);
       } 
-      if (a(properties, "DATA_FILTER_")) {
+      if (ExceptionInVPackage(properties, "DATA_FILTER_")) {
         bB bB = new bB("DATA_FILTER_", "Data Filters");
-        bB.a("Import data filters defined for Histograms and Scatter Plots.");
+        bB.ExceptionInVPackage("Import data filters defined for Histograms and Scatter Plots.");
         arrayList.add(bB);
       } 
       if (arrayList.isEmpty()) {
-        bV.d("There are no settings in this file to import.", this);
+        bV.ArrayListInBvPackage("There are no settings in this file to import.", this);
         return;
       } 
       by by = new by(arrayList, false);
-      by.a(this);
+      by.ExceptionInVPackage(this);
       List list = by.b();
       if (list.isEmpty())
         return; 
-      if (!by.a()) {
+      if (!by.ExceptionInVPackage()) {
         int i = JOptionPane.showConfirmDialog(this, "Warning!!!!\nAny formulas or settings of the same name will be overridden\n\nContinue?");
         if (i != 0)
           return; 
       } else {
-        for (String str : i.e.stringPropertyNames()) {
-          if (a(str, list))
-            i.d(str); 
+        for (String str : i.JMenuItemExtensionInBaPackage.stringPropertyNames()) {
+          if (ExceptionInVPackage(str, list))
+            i.ArrayListInBvPackage(str); 
         } 
       } 
       for (String str : properties.keySet()) {
-        if (a(str, list)) {
+        if (ExceptionInVPackage(str, list)) {
           String str3 = properties.getProperty(str);
-          i.e.setProperty(str, str3);
+          i.JMenuItemExtensionInBaPackage.setProperty(str, str3);
         } 
       } 
-      k.a("The Application will now restart for changes to take effect.", bq.a().b());
-      b.a().b(bq.a().b());
+      k.ExceptionInVPackage("The Application will now restart for changes to take effect.", bq.ExceptionInVPackage().b());
+      b.ExceptionInVPackage().b(bq.ExceptionInVPackage().b());
     } 
   }
   
-  private boolean a(Properties paramProperties, String paramString) {
+  private boolean ExceptionInVPackage(Properties paramProperties, String paramString) {
     for (String str : paramProperties.stringPropertyNames()) {
       if (str.startsWith(paramString))
         return true; 
@@ -1051,85 +1051,85 @@ public class cd extends JFrame implements hi, WindowListener {
     return false;
   }
   
-  public void f() {
+  public void JPanelExtensionInAiPackage() {
     ArrayList<bB> arrayList = new ArrayList();
     bB bB = new bB("ROOT_FIELD_", "Normalized Field Name Mapping");
-    bB.a("Export Field Name Mappings in the currently active Settings Profile.");
+    bB.ExceptionInVPackage("Export Field Name Mappings in the currently active Settings Profile.");
     arrayList.add(bB);
     bB = new bB("USER_FIELD_", "User Calculated Math Fields");
-    bB.a("Your custom created Calculated Fields");
+    bB.ExceptionInVPackage("Your custom created Calculated Fields");
     arrayList.add(bB);
     bB = new bB("APPEND_FIELD_", "Active Optional and Calculated Fields");
-    bB.a("Exports which Optional and Calculated Fields are active.");
+    bB.ExceptionInVPackage("Exports which Optional and Calculated Fields are active.");
     arrayList.add(bB);
     bB = new bB("FIELD_GROUP_NAME_", "Quick View Tabs");
-    bB.a("All Quick View tabs on this PC");
+    bB.ExceptionInVPackage("All Quick View tabs on this PC");
     bB.b("FIELD_SELECTED_GROUP_");
     arrayList.add(bB);
     bB = new bB("FIELD_MIN_MAX_", "Field Min/Max Settings");
-    bB.a("Export set Min & Max values and autoscale settings.");
+    bB.ExceptionInVPackage("Export set Min & Max values and autoscale settings.");
     arrayList.add(bB);
     bB = new bB(i.S, "Viewing preferences");
     bB.b("numberOfGraphs");
     bB.b("numberOfOverlays");
     bB.b("numberOfOverlayGraphs");
-    bB.a("Export number of graphs, traces per graph, Trace Value Position, etc.");
+    bB.ExceptionInVPackage("Export number of graphs, traces per graph, Trace Value Position, etc.");
     arrayList.add(bB);
-    if (b.a().a("tableGenerator")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("tableGenerator")) {
       bB = new bB("TABLE_GEN_VIEW_", "Histogram Views");
-      bB.a("Export Histogram / Table Generator views.");
+      bB.ExceptionInVPackage("Export Histogram / Table Generator views.");
       arrayList.add(bB);
     } 
-    if (b.a().a("scatterPlots")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("scatterPlots")) {
       bB = new bB("SCATTER_PLOT_VIEW_", "Scatter Plot Views");
-      bB.a("Export Scatter Plot views.");
+      bB.ExceptionInVPackage("Export Scatter Plot views.");
       arrayList.add(bB);
     } 
-    if (b.a().a("fieldSmoothing")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("fieldSmoothing")) {
       bB = new bB("fieldSmoothingFactor_", "Field Smoothing");
-      bB.a("Export Smoothing factor for each field it has been set on.");
+      bB.ExceptionInVPackage("Export Smoothing factor for each field it has been set on.");
       arrayList.add(bB);
     } 
-    if (b.a().a("scatterPlots")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("scatterPlots")) {
       bB = new bB("DATA_FILTER_", "Data Filters");
-      bB.a("Export data filters defined for Histograms and Scatter Plots.");
+      bB.ExceptionInVPackage("Export data filters defined for Histograms and Scatter Plots.");
       arrayList.add(bB);
     } 
     by by = new by(arrayList, true);
-    by.a(this);
+    by.ExceptionInVPackage(this);
     List list = by.b();
     if (list.isEmpty())
       return; 
-    this.a.i();
+    this.ExceptionInVPackage.i();
     String[] arrayOfString = { "settings" };
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String str1 = simpleDateFormat.format(new Date());
-    String str2 = k.a(this, "Export Settings", arrayOfString, "MLV" + i.c + "_" + str1 + ".settings");
+    String str2 = k.ExceptionInVPackage(this, "Export Settings", arrayOfString, "MLV" + i.IOJMenu + "_" + str1 + ".settings");
     if (str2 == null || str2.equals(""))
       return; 
     if (!str2.toLowerCase().endsWith("settings"))
       str2 = str2 + ".settings"; 
     Properties properties = new Properties();
-    for (String str : i.e.keySet()) {
-      if (a(str, list)) {
-        String str3 = i.e.getProperty(str);
+    for (String str : i.JMenuItemExtensionInBaPackage.keySet()) {
+      if (ExceptionInVPackage(str, list)) {
+        String str3 = i.JMenuItemExtensionInBaPackage.getProperty(str);
         properties.setProperty(str, str3);
       } 
     } 
     File file = new File(str2);
-    if (file.exists() && !bV.a("The file " + file.getName() + " already exists.\n\nOverwrite?", this, true))
+    if (file.exists() && !bV.ExceptionInVPackage("The file " + file.getName() + " already exists.\n\nOverwrite?", this, true))
       return; 
     try {
       FileOutputStream fileOutputStream = new FileOutputStream(file);
       properties.store(fileOutputStream, "MegaLogViewer Settings");
       fileOutputStream.close();
     } catch (Exception exception) {
-      k.a("Unable to save settings to " + str2 + "\nSee log for more detail.", this);
+      k.ExceptionInVPackage("Unable to save settings to " + str2 + "\nSee log for more detail.", this);
       exception.printStackTrace();
     } 
   }
   
-  private boolean a(String paramString, List paramList) {
+  private boolean ExceptionInVPackage(String paramString, List paramList) {
     for (String str : paramList) {
       if (paramString.startsWith(str))
         return true; 
@@ -1137,18 +1137,18 @@ public class cd extends JFrame implements hi, WindowListener {
     return false;
   }
   
-  public void g() {
-    k.a("No Updates Available, " + i.a + " is the latest version.", this.i);
+  public void JDialogExtensionDispose() {
+    k.ExceptionInVPackage("No Updates Available, " + i.ExceptionInVPackage + " is the latest version.", this.i);
   }
   
-  public void a(JCheckBoxMenuItem paramJCheckBoxMenuItem) {
-    i.c("automaticUpdates", "" + paramJCheckBoxMenuItem.getState());
+  public void ExceptionInVPackage(JCheckBoxMenuItem paramJCheckBoxMenuItem) {
+    i.IOJMenu("automaticUpdates", "" + paramJCheckBoxMenuItem.getState());
   }
   
-  public void c(double paramDouble) {
+  public void IOJMenu(double paramDouble) {
     String str = paramDouble + "";
-    for (byte b = 0; b < this.f.getItemCount(); b++) {
-      JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)this.f.getItem(b);
+    for (byte b = 0; b < this.JPanelExtensionInAiPackage.getItemCount(); b++) {
+      JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)this.JPanelExtensionInAiPackage.getItem(b);
       ItemListener[] arrayOfItemListener = jCheckBoxMenuItem.getItemListeners();
       byte b1;
       for (b1 = 0; b1 < arrayOfItemListener.length; b1++)
@@ -1159,88 +1159,88 @@ public class cd extends JFrame implements hi, WindowListener {
     } 
   }
   
-  public void a(boolean paramBoolean) {
-    i.c("showGraphHalfMark", paramBoolean + "");
-    this.a.o();
+  public void ExceptionInVPackage(boolean paramBoolean) {
+    i.IOJMenu("showGraphHalfMark", paramBoolean + "");
+    this.ExceptionInVPackage.ThreadedInAzPackage();
   }
   
   public void b(boolean paramBoolean) {
-    this.a.d(paramBoolean);
-    i.c("showGauges", paramBoolean + "");
+    this.ExceptionInVPackage.ArrayListInBvPackage(paramBoolean);
+    i.IOJMenu("showGauges", paramBoolean + "");
   }
   
-  public void c(boolean paramBoolean) {
-    this.a.n().c(paramBoolean);
-    this.a.t();
-    i.c("showDashboard", paramBoolean + "");
+  public void IOJMenu(boolean paramBoolean) {
+    this.ExceptionInVPackage.n().IOJMenu(paramBoolean);
+    this.ExceptionInVPackage.AzInterfaceTango();
+    i.IOJMenu("showDashboard", paramBoolean + "");
   }
   
-  public void d(boolean paramBoolean) {
-    this.a.n().a(paramBoolean);
-    i.c("hideSelector", paramBoolean + "");
+  public void ArrayListInBvPackage(boolean paramBoolean) {
+    this.ExceptionInVPackage.n().ExceptionInVPackage(paramBoolean);
+    i.IOJMenu("hideSelector", paramBoolean + "");
   }
   
   private JMenu Q() {
-    boolean bool1 = b.a().a("optionalFields");
-    String[] arrayOfString1 = i.e("FORMULA_GROUP_");
+    boolean bool1 = b.ExceptionInVPackage().ExceptionInVPackage("optionalFields");
+    String[] arrayOfString1 = i.JMenuItemExtensionInBaPackage("FORMULA_GROUP_");
     for (byte b1 = 0; b1 < arrayOfString1.length; b1++) {
-      String str = k.a(arrayOfString1[b1], "FORMULA_GROUP_", "");
+      String str = k.ExceptionInVPackage(arrayOfString1[b1], "FORMULA_GROUP_", "");
       JMenu jMenu = b(str, "APPEND_FIELD_");
       jMenu.setText(i.b(arrayOfString1[b1]));
-      jMenu.setEnabled(b.a().b(str));
+      jMenu.setEnabled(b.ExceptionInVPackage().b(str));
       this.y.add(jMenu);
     } 
     this.y.addSeparator();
-    String[] arrayOfString2 = i.g("APPEND_FIELD_");
+    String[] arrayOfString2 = i.JDialogExtensionDispose("APPEND_FIELD_");
     arrayOfString2 = k.b(arrayOfString2);
     byte b2 = 25;
     byte b3 = 1;
-    this.h = new JMenu("Optional Fields");
-    this.y.add(this.h);
+    this.BiInterfaceHotel = new JMenu("Optional Fields");
+    this.y.add(this.BiInterfaceHotel);
     if (!bool1) {
       JMenuItem jMenuItem = new JMenuItem("Enable Optional Fields!");
       jMenuItem.addActionListener(new cU(this));
-      this.h.add(jMenuItem);
+      this.BiInterfaceHotel.add(jMenuItem);
     } 
     ArrayList<JCheckBoxMenuItem> arrayList = new ArrayList();
     for (byte b4 = 0; b4 < arrayOfString2.length; b4++) {
-      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(k.a(arrayOfString2[b4], "APPEND_FIELD_", ""));
+      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(k.ExceptionInVPackage(arrayOfString2[b4], "APPEND_FIELD_", ""));
       jCheckBoxMenuItem.setEnabled(bool1);
-      String str = i.c(arrayOfString2[b4]);
+      String str = i.IOJMenu(arrayOfString2[b4]);
       jCheckBoxMenuItem.setActionCommand(str);
       jCheckBoxMenuItem.setName(arrayOfString2[b4]);
       arrayList.add(jCheckBoxMenuItem);
-      jCheckBoxMenuItem.setState(!i.e(arrayOfString2[b4], "").equals(""));
+      jCheckBoxMenuItem.setState(!i.JMenuItemExtensionInBaPackage(arrayOfString2[b4], "").equals(""));
       jCheckBoxMenuItem.addItemListener(new cV(this));
-      this.h.add(jCheckBoxMenuItem);
+      this.BiInterfaceHotel.add(jCheckBoxMenuItem);
       if (b4 > 0 && b4 % b2 == 0 && b4 < arrayOfString2.length - 1) {
-        this.h = new JMenu("Optional Fields " + ++b3);
-        this.y.add(this.h);
+        this.BiInterfaceHotel = new JMenu("Optional Fields " + ++b3);
+        this.y.add(this.BiInterfaceHotel);
       } 
     } 
     cW cW = new cW(this, arrayList);
     cW.start();
     this.y.addSeparator();
-    boolean bool2 = b.a().a("customFields");
-    this.g = new JMenu("Custom Fields");
+    boolean bool2 = b.ExceptionInVPackage().ExceptionInVPackage("customFields");
+    this.JDialogExtensionDispose = new JMenu("Custom Fields");
     b3 = 1;
     if (!bool2) {
       JMenuItem jMenuItem = new JMenuItem("Enable Custom Fields!");
       jMenuItem.addActionListener(new cX(this));
-      this.g.add(jMenuItem);
+      this.JDialogExtensionDispose.add(jMenuItem);
     } 
-    this.y.add(this.g);
+    this.y.add(this.JDialogExtensionDispose);
     JMenuItem jMenuItem1 = new JMenuItem("Add Custom Field");
     jMenuItem1.setAccelerator(KeyStroke.getKeyStroke(78, 3));
     jMenuItem1.addActionListener(new cY(this));
     jMenuItem1.setEnabled(bool2);
-    this.g.add(jMenuItem1);
-    this.g.addSeparator();
-    String[] arrayOfString3 = i.f("USER_FIELD_");
-    arrayOfString3 = k.a(arrayOfString3);
+    this.JDialogExtensionDispose.add(jMenuItem1);
+    this.JDialogExtensionDispose.addSeparator();
+    String[] arrayOfString3 = i.JPanelExtensionInAiPackage("USER_FIELD_");
+    arrayOfString3 = k.ExceptionInVPackage(arrayOfString3);
     for (byte b5 = 0; b5 < arrayOfString3.length; b5++) {
-      String str = k.a(arrayOfString3[b5], "USER_FIELD_", "");
-      a(b(str, i.e(arrayOfString3[b5], ""), !i.e("APPEND_FIELD_" + str, "").equals("")));
+      String str = k.ExceptionInVPackage(arrayOfString3[b5], "USER_FIELD_", "");
+      ExceptionInVPackage(b(str, i.JMenuItemExtensionInBaPackage(arrayOfString3[b5], ""), !i.JMenuItemExtensionInBaPackage("APPEND_FIELD_" + str, "").equals("")));
     } 
     this.y.addSeparator();
     JMenuItem jMenuItem2 = new JMenuItem("Data Filter Editor");
@@ -1254,17 +1254,17 @@ public class cd extends JFrame implements hi, WindowListener {
     return this.y;
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     r r = new r(this, paramString1, paramString2);
-    boolean bool = r.a();
+    boolean bool = r.ExceptionInVPackage();
     if (bool) {
       paramString1 = r.b();
-      paramString2 = r.c();
+      paramString2 = r.IOJMenu();
       JMenu jMenu = b(paramString1, paramString2, true);
-      if (!a(paramString1, jMenu))
-        a(jMenu); 
-      c("APPEND_FIELD_" + paramString1, paramString2, true);
-      i.c("USER_FIELD_" + paramString1, r.c());
+      if (!ExceptionInVPackage(paramString1, jMenu))
+        ExceptionInVPackage(jMenu); 
+      IOJMenu("APPEND_FIELD_" + paramString1, paramString2, true);
+      i.IOJMenu("USER_FIELD_" + paramString1, r.IOJMenu());
     } 
   }
   
@@ -1296,18 +1296,18 @@ public class cd extends JFrame implements hi, WindowListener {
     return jMenu;
   }
   
-  private void a(JMenu paramJMenu) {
+  private void ExceptionInVPackage(JMenu paramJMenu) {
     byte b = 25;
-    if ((this.z == 1 && this.g.getMenuComponentCount() == b + 2) || (this.z > 1 && this.g.getMenuComponentCount() == b)) {
-      this.g = new JMenu("Custom Fields " + ++this.z);
-      this.y.add(this.g);
+    if ((this.z == 1 && this.JDialogExtensionDispose.getMenuComponentCount() == b + 2) || (this.z > 1 && this.JDialogExtensionDispose.getMenuComponentCount() == b)) {
+      this.JDialogExtensionDispose = new JMenu("Custom Fields " + ++this.z);
+      this.y.add(this.JDialogExtensionDispose);
     } 
-    this.g.add(paramJMenu);
+    this.JDialogExtensionDispose.add(paramJMenu);
   }
   
-  private boolean a(String paramString, JMenu paramJMenu) {
-    i.d("USER_FIELD_" + paramString);
-    i.d("APPEND_FIELD_" + paramString);
+  private boolean ExceptionInVPackage(String paramString, JMenu paramJMenu) {
+    i.ArrayListInBvPackage("USER_FIELD_" + paramString);
+    i.ArrayListInBvPackage("APPEND_FIELD_" + paramString);
     for (byte b = 0; b < this.y.getItemCount(); b++) {
       JMenuItem jMenuItem = this.y.getItem(b);
       if (jMenuItem instanceof JMenu && jMenuItem.getText() != null && jMenuItem.getText().startsWith("Custom Fields")) {
@@ -1329,18 +1329,18 @@ public class cd extends JFrame implements hi, WindowListener {
   }
   
   private JMenu b(String paramString1, String paramString2) {
-    String[] arrayOfString1 = k.a(i.a(paramString1 + "_OPTIONS", ""), ";");
-    String[] arrayOfString2 = k.a(i.a(paramString1 + "_SOLUTIONS", ""), ";");
+    String[] arrayOfString1 = k.ExceptionInVPackage(i.ExceptionInVPackage(paramString1 + "_OPTIONS", ""), ";");
+    String[] arrayOfString2 = k.ExceptionInVPackage(i.ExceptionInVPackage(paramString1 + "_SOLUTIONS", ""), ";");
     JMenu jMenu = new JMenu(paramString1);
     i i = new i();
     for (byte b = 0; b < arrayOfString1.length; b++) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(X.b(arrayOfString1[b], "<semi>", ";"));
-      i.a(jCheckBoxMenuItem);
-      if (i.c("DEFAULT_" + paramString2 + paramString1) != null && i.c("DEFAULT_" + paramString2 + paramString1).equals(arrayOfString2[b]))
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
+      if (i.IOJMenu("DEFAULT_" + paramString2 + paramString1) != null && i.IOJMenu("DEFAULT_" + paramString2 + paramString1).equals(arrayOfString2[b]))
         jCheckBoxMenuItem.setText(arrayOfString1[b] + " (Default)"); 
       jCheckBoxMenuItem.setName(X.b(arrayOfString2[b], "<semi>", ";"));
       jCheckBoxMenuItem.setActionCommand(paramString2 + paramString1);
-      if (i.a(paramString2 + paramString1, i.c("DEFAULT_" + paramString2 + paramString1)).equals(arrayOfString2[b]) || (i.b == null && b == arrayOfString1.length - 1 && arrayOfString2[b].indexOf("{") != -1)) {
+      if (i.ExceptionInVPackage(paramString2 + paramString1, i.IOJMenu("DEFAULT_" + paramString2 + paramString1)).equals(arrayOfString2[b]) || (i.b == null && b == arrayOfString1.length - 1 && arrayOfString2[b].indexOf("{") != -1)) {
         jCheckBoxMenuItem.setState(true);
         i.b = jCheckBoxMenuItem;
       } else {
@@ -1349,7 +1349,7 @@ public class cd extends JFrame implements hi, WindowListener {
       jCheckBoxMenuItem.addItemListener(new df(this));
       jMenu.add(jCheckBoxMenuItem);
     } 
-    if (i.c("DEFAULT_" + paramString2 + paramString1) != null && !i.c("DEFAULT_" + paramString2 + paramString1).equals("")) {
+    if (i.IOJMenu("DEFAULT_" + paramString2 + paramString1) != null && !i.IOJMenu("DEFAULT_" + paramString2 + paramString1).equals("")) {
       jMenu.addSeparator();
       JMenuItem jMenuItem = new JMenuItem("Reset to Default");
       jMenuItem.setActionCommand(paramString2 + paramString1);
@@ -1363,38 +1363,38 @@ public class cd extends JFrame implements hi, WindowListener {
     ee ee = new ee(this, "View");
     JMenu jMenu1 = new JMenu("Graphing View Layout");
     i i = new i();
-    String str1 = i.a(i.N, i.R);
+    String str1 = i.ExceptionInVPackage(i.N, i.R);
     JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("2 Table View (Default)", i.Q.equals(str1));
     Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/layout2Tables.png"));
     ImageIcon imageIcon = new ImageIcon(image);
     jCheckBoxMenuItem1.setIcon(imageIcon);
     jCheckBoxMenuItem1.addItemListener(new dh(this));
-    i.a(jCheckBoxMenuItem1);
-    jCheckBoxMenuItem1.setEnabled(b.a().a("optionalTableLayouts"));
+    i.ExceptionInVPackage(jCheckBoxMenuItem1);
+    jCheckBoxMenuItem1.setEnabled(b.ExceptionInVPackage().ExceptionInVPackage("optionalTableLayouts"));
     jMenu1.add(jCheckBoxMenuItem1);
     jCheckBoxMenuItem1 = new JCheckBoxMenuItem("1 Table View", i.P.equals(str1));
     image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/layout1Table.png"));
     imageIcon = new ImageIcon(image);
     jCheckBoxMenuItem1.setIcon(imageIcon);
     jCheckBoxMenuItem1.addItemListener(new dj(this));
-    i.a(jCheckBoxMenuItem1);
-    jCheckBoxMenuItem1.setEnabled(b.a().a("optionalTableLayouts"));
+    i.ExceptionInVPackage(jCheckBoxMenuItem1);
+    jCheckBoxMenuItem1.setEnabled(b.ExceptionInVPackage().ExceptionInVPackage("optionalTableLayouts"));
     jMenu1.add(jCheckBoxMenuItem1);
     ee.add(jMenu1);
-    if (b.a().a("selectableLookAndFeel")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("selectableLookAndFeel")) {
       JMenu jMenu = new JMenu("Look and Feel");
       UIManager.LookAndFeelInfo[] arrayOfLookAndFeelInfo = UIManager.getInstalledLookAndFeels();
       i = new i();
       for (UIManager.LookAndFeelInfo lookAndFeelInfo : arrayOfLookAndFeelInfo) {
         String str3 = lookAndFeelInfo.getName();
-        String str4 = i.a("lookAndFeelClass", UIManager.getSystemLookAndFeelClassName());
+        String str4 = i.ExceptionInVPackage("lookAndFeelClass", UIManager.getSystemLookAndFeelClassName());
         if (lookAndFeelInfo.getClassName().equals(str4))
           str3 = str3 + " (Default)"; 
         if (!str3.equals("Windows Classic") && !str3.startsWith("TinyLookAndFeel")) {
           JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str3, true);
-          i.a(jCheckBoxMenuItem);
+          i.ExceptionInVPackage(jCheckBoxMenuItem);
           jCheckBoxMenuItem.setActionCommand(lookAndFeelInfo.getClassName());
-          jCheckBoxMenuItem.setSelected(lookAndFeelInfo.getClassName().equals(i.e("lookAndFeelClass", UIManager.getSystemLookAndFeelClassName())));
+          jCheckBoxMenuItem.setSelected(lookAndFeelInfo.getClassName().equals(i.JMenuItemExtensionInBaPackage("lookAndFeelClass", UIManager.getSystemLookAndFeelClassName())));
           jCheckBoxMenuItem.addActionListener(new dk(this));
           jMenu.add(jCheckBoxMenuItem);
         } 
@@ -1403,18 +1403,18 @@ public class cd extends JFrame implements hi, WindowListener {
     } 
     i = new i();
     JMenu jMenu2 = new JMenu("Trace Value Positions");
-    String str2 = i.e(i.S, i.T);
+    String str2 = i.JMenuItemExtensionInBaPackage(i.S, i.T);
     JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Show Cursor Values At Top", str2.equals("top"));
     jCheckBoxMenuItem2.addItemListener(new dl(this));
-    i.a(jCheckBoxMenuItem2);
+    i.ExceptionInVPackage(jCheckBoxMenuItem2);
     jMenu2.add(jCheckBoxMenuItem2);
     JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Show Cursor Values At Bottom", str2.equals("bottom"));
     jCheckBoxMenuItem3.addItemListener(new dm(this));
-    i.a(jCheckBoxMenuItem3);
+    i.ExceptionInVPackage(jCheckBoxMenuItem3);
     jMenu2.add(jCheckBoxMenuItem3);
     JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem("Show Cursor Values by Field Name", str2.equals("withLabels"));
     jCheckBoxMenuItem4.addItemListener(new dn(this));
-    i.a(jCheckBoxMenuItem4);
+    i.ExceptionInVPackage(jCheckBoxMenuItem4);
     jMenu2.add(jCheckBoxMenuItem4);
     ee.add(jMenu2);
     do do = new do(this);
@@ -1429,36 +1429,36 @@ public class cd extends JFrame implements hi, WindowListener {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str, (j == b1));
       jCheckBoxMenuItem.setActionCommand("" + b1);
       jCheckBoxMenuItem.addItemListener(do);
-      i.a(jCheckBoxMenuItem);
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
       jMenu4.add(jCheckBoxMenuItem);
     } 
     jMenu3.add(jMenu4);
-    boolean bool1 = i.a(i.af, i.ag);
+    boolean bool1 = i.ExceptionInVPackage(i.af, i.ag);
     JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem("Antialias Line", bool1);
     jMenu3.add(jCheckBoxMenuItem5);
     jCheckBoxMenuItem5.addActionListener(new dp(this));
-    boolean bool2 = i.a(i.ah, i.ai);
-    aw.g(bool2);
+    boolean bool2 = i.ExceptionInVPackage(i.ah, i.ai);
+    aw.JDialogExtensionDispose(bool2);
     jCheckBoxMenuItem5 = new JCheckBoxMenuItem("Patterned Graph Lines", bool2);
     jMenu3.add(jCheckBoxMenuItem5);
     jCheckBoxMenuItem5.addActionListener(new dq(this));
     ee.add(jMenu3);
     JCheckBoxMenuItem jCheckBoxMenuItem6 = new JCheckBoxMenuItem("Quick Trace Selection");
-    boolean bool3 = i.a("fieldSelectionStyle", "standardSelection").equals("selectFromDash");
+    boolean bool3 = i.ExceptionInVPackage("fieldSelectionStyle", "standardSelection").equals("selectFromDash");
     jCheckBoxMenuItem6.setState(bool3);
     jCheckBoxMenuItem6.addItemListener(new dr(this));
-    jCheckBoxMenuItem6.setEnabled(b.a().a("optionalQuickSelect"));
+    jCheckBoxMenuItem6.setEnabled(b.ExceptionInVPackage().ExceptionInVPackage("optionalQuickSelect"));
     ee.add(jCheckBoxMenuItem6);
-    e e = new e("Select Displayed Dashboard Fields", true);
-    e.a(new ds(this));
-    e.addActionListener(new du(this));
-    e.setEnabled(b.a().a("selectableFields"));
-    ee.add((JMenuItem)e);
+    JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage("Select Displayed Dashboard Fields", true);
+    JMenuItemExtensionInBaPackage.ExceptionInVPackage(new ds(this));
+    JMenuItemExtensionInBaPackage.addActionListener(new du(this));
+    JMenuItemExtensionInBaPackage.setEnabled(b.ExceptionInVPackage().ExceptionInVPackage("selectableFields"));
+    ee.add((JMenuItem)JMenuItemExtensionInBaPackage);
     ee.addMenuListener(new dv(this));
     JMenu jMenu5 = new JMenu("Maximum Number of Graphs");
     ee.add(jMenu5);
     i = new i();
-    int k = Integer.parseInt(i.b("numberOfGraphs", "" + i.t));
+    int k = Integer.parseInt(i.b("numberOfGraphs", "" + i.AzInterfaceTango));
     int m = i.b("numberOfGraphs", k);
     for (byte b2 = 0; b2 < i.s; b2++) {
       String str;
@@ -1468,7 +1468,7 @@ public class cd extends JFrame implements hi, WindowListener {
         str = "Up to " + (b2 + 1) + " Graphs";
       } 
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str);
-      i.a(jCheckBoxMenuItem);
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
       jCheckBoxMenuItem.setActionCommand("" + (b2 + 1));
       if (b2 + 1 == m) {
         jCheckBoxMenuItem.setSelected(true);
@@ -1491,7 +1491,7 @@ public class cd extends JFrame implements hi, WindowListener {
         str = "Up to " + (b3 + 1) + " Traces";
       } 
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str);
-      i.a(jCheckBoxMenuItem);
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
       jCheckBoxMenuItem.setActionCommand("" + (b3 + 1));
       if (b3 + 1 == i1) {
         jCheckBoxMenuItem.setSelected(true);
@@ -1502,19 +1502,19 @@ public class cd extends JFrame implements hi, WindowListener {
       jMenu6.add(jCheckBoxMenuItem);
     } 
     JCheckBoxMenuItem jCheckBoxMenuItem7 = new JCheckBoxMenuItem("Show Gauges");
-    jCheckBoxMenuItem7.setState(i.a("showGauges", true));
+    jCheckBoxMenuItem7.setState(i.ExceptionInVPackage("showGauges", true));
     jCheckBoxMenuItem7.addItemListener(new dy(this));
     ee.add(jCheckBoxMenuItem7);
     JCheckBoxMenuItem jCheckBoxMenuItem8 = new JCheckBoxMenuItem("Show 50% Graph Line");
-    jCheckBoxMenuItem8.setState(i.a("showGraphHalfMark", false));
+    jCheckBoxMenuItem8.setState(i.ExceptionInVPackage("showGraphHalfMark", false));
     jCheckBoxMenuItem8.addItemListener(new dz(this));
     ee.add(jCheckBoxMenuItem8);
     JCheckBoxMenuItem jCheckBoxMenuItem9 = new JCheckBoxMenuItem("Keep Graph Centered");
-    jCheckBoxMenuItem9.setState(i.a("holdGraphCentered", i.x));
+    jCheckBoxMenuItem9.setState(i.ExceptionInVPackage("holdGraphCentered", i.x));
     jCheckBoxMenuItem9.addItemListener(new dA(this));
     ee.add(jCheckBoxMenuItem9);
-    if (b.a().a("tabbedQuickViews")) {
-      boolean bool = i.a(i.aj, i.ak);
+    if (b.ExceptionInVPackage().ExceptionInVPackage("tabbedQuickViews")) {
+      boolean bool = i.ExceptionInVPackage(i.aj, i.ak);
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Go to last Quick View on open");
       jCheckBoxMenuItem.setState(bool);
       jCheckBoxMenuItem.addItemListener(new dB(this));
@@ -1522,34 +1522,34 @@ public class cd extends JFrame implements hi, WindowListener {
       ee.add(jCheckBoxMenuItem);
     } 
     ee.addSeparator();
-    boolean bool4 = i.a("useSwingFileDialog", true);
-    if (b.a().a(";lkewlk nbi3k48tjh265'")) {
-      boolean bool = i.a(i.aJ, i.aK);
+    boolean bool4 = i.ExceptionInVPackage("useSwingFileDialog", true);
+    if (b.ExceptionInVPackage().ExceptionInVPackage(";lkewlk nbi3k48tjh265'")) {
+      boolean bool = i.ExceptionInVPackage(i.aJ, i.aK);
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Show Multi-Log Compare Bar");
       jCheckBoxMenuItem.setState(!bool);
       jCheckBoxMenuItem.addItemListener(new dC(this));
       ee.add(jCheckBoxMenuItem);
     } 
     JCheckBoxMenuItem jCheckBoxMenuItem10 = new JCheckBoxMenuItem("Show Dashboard");
-    jCheckBoxMenuItem10.setState(i.a("showDashboard", true));
+    jCheckBoxMenuItem10.setState(i.ExceptionInVPackage("showDashboard", true));
     jCheckBoxMenuItem10.addItemListener(new dD(this));
-    hx.a().c(new dF(this, jCheckBoxMenuItem10));
+    hx.ExceptionInVPackage().IOJMenu(new dF(this, jCheckBoxMenuItem10));
     ee.add(jCheckBoxMenuItem10);
     JCheckBoxMenuItem jCheckBoxMenuItem11 = new JCheckBoxMenuItem("Auto Hide Field Select");
-    jCheckBoxMenuItem11.setState(i.a("hideSelector", i.q));
+    jCheckBoxMenuItem11.setState(i.ExceptionInVPackage("hideSelector", i.q));
     jCheckBoxMenuItem11.addItemListener(new dG(this));
     ee.add(jCheckBoxMenuItem11);
-    if (b.a().a("tuningPanelVisible")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("tuningPanelVisible")) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Show Tuning Console");
-      jCheckBoxMenuItem.setState(i.a("showTuningConsole", i.p));
+      jCheckBoxMenuItem.setState(i.ExceptionInVPackage("showTuningConsole", i.p));
       jCheckBoxMenuItem.addItemListener(new dH(this));
-      hx.a().b(new dI(this, jCheckBoxMenuItem));
+      hx.ExceptionInVPackage().b(new dI(this, jCheckBoxMenuItem));
       ee.add(jCheckBoxMenuItem);
     } else {
-      i.c("showTuningConsole", "false");
+      i.IOJMenu("showTuningConsole", "false");
     } 
     JCheckBoxMenuItem jCheckBoxMenuItem12 = new JCheckBoxMenuItem("Scale to Fit Full Log On load");
-    jCheckBoxMenuItem12.setState(i.a(i.U, i.V));
+    jCheckBoxMenuItem12.setState(i.ExceptionInVPackage(i.U, i.V));
     jCheckBoxMenuItem12.addItemListener(new dJ(this));
     ee.add(jCheckBoxMenuItem12);
     return ee;
@@ -1557,83 +1557,83 @@ public class cd extends JFrame implements hi, WindowListener {
   
   private JMenu S() {
     ee ee = new ee(this, "Options");
-    if (!b.a().a("hideRpmX100Option")) {
+    if (!b.ExceptionInVPackage().ExceptionInVPackage("hideRpmX100Option")) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("RPM x 100");
-      jCheckBoxMenuItem.setState(i.a("RPM_USE_FORMULA", false));
+      jCheckBoxMenuItem.setState(i.ExceptionInVPackage("RPM_USE_FORMULA", false));
       jCheckBoxMenuItem.addItemListener(new dK(this));
       ee.add(jCheckBoxMenuItem);
     } 
-    if (b.a().a("fillNaN")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("fillNaN")) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Fill NaN Values with Last");
-      jCheckBoxMenuItem.setState(i.a("fillNaN", i.z));
+      jCheckBoxMenuItem.setState(i.ExceptionInVPackage("fillNaN", i.z));
       jCheckBoxMenuItem.addItemListener(new dL(this));
       ee.add(jCheckBoxMenuItem);
     } 
     JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Fill Time Gaps");
-    jCheckBoxMenuItem1.setState(i.a("timeGapsOn", false));
+    jCheckBoxMenuItem1.setState(i.ExceptionInVPackage("timeGapsOn", false));
     jCheckBoxMenuItem1.addItemListener(new dM(this));
     ee.add(jCheckBoxMenuItem1);
     JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Alphabetize Field Lists");
-    jCheckBoxMenuItem2.setState(i.a(i.E, i.F));
+    jCheckBoxMenuItem2.setState(i.ExceptionInVPackage(i.E, i.F));
     jCheckBoxMenuItem2.addItemListener(new dN(this));
     ee.add(jCheckBoxMenuItem2);
     String[] arrayOfString1 = b.m;
-    if (arrayOfString1 != null && arrayOfString1.length > 0 && !b.a().a("hideYaxisSelection")) {
+    if (arrayOfString1 != null && arrayOfString1.length > 0 && !b.ExceptionInVPackage().ExceptionInVPackage("hideYaxisSelection")) {
       JMenu jMenu = new JMenu("Default Y Axis field");
       boolean bool2 = false;
       i i3 = new i();
-      String str = i.a("yAxisField", "MAP");
+      String str = i.ExceptionInVPackage("yAxisField", "MAP");
       byte b;
       for (b = 0; b < arrayOfString1.length; b++) {
         JCheckBoxMenuItem jCheckBoxMenuItem6 = new JCheckBoxMenuItem(arrayOfString1[b], arrayOfString1[b].equals(str));
         if (arrayOfString1[b].equals(str))
           bool2 = true; 
         jCheckBoxMenuItem6.addItemListener(new dO(this));
-        i3.a(jCheckBoxMenuItem6);
+        i3.ExceptionInVPackage(jCheckBoxMenuItem6);
         jMenu.add(jCheckBoxMenuItem6);
       } 
       b = !bool2 ? 1 : 0;
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Other", b);
       jCheckBoxMenuItem.addItemListener(new dQ(this));
-      i3.a(jCheckBoxMenuItem);
+      i3.ExceptionInVPackage(jCheckBoxMenuItem);
       jMenu.add(jCheckBoxMenuItem);
       ee.add(jMenu);
     } 
     JMenu jMenu1 = new JMenu("Mouse Wheel Action");
     i i1 = new i();
-    String str1 = i.a(i.G, i.J);
+    String str1 = i.ExceptionInVPackage(i.G, i.J);
     JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Zoom Graph In / Out (Default)", i.H.equals(str1));
     jCheckBoxMenuItem3.addItemListener(new dR(this));
-    i1.a(jCheckBoxMenuItem3);
+    i1.ExceptionInVPackage(jCheckBoxMenuItem3);
     jMenu1.add(jCheckBoxMenuItem3);
     jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Page Data Forward / Back", i.I.equals(str1));
     jCheckBoxMenuItem3.addItemListener(new dS(this));
-    i1.a(jCheckBoxMenuItem3);
+    i1.ExceptionInVPackage(jCheckBoxMenuItem3);
     jMenu1.add(jCheckBoxMenuItem3);
     ee.add(jMenu1);
     JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem("Keep Index in sync with 2nd instance");
-    jCheckBoxMenuItem4.setState(i.a(i.aD, i.aE));
+    jCheckBoxMenuItem4.setState(i.ExceptionInVPackage(i.aD, i.aE));
     jCheckBoxMenuItem4.addItemListener(new dT(this));
     ee.add(jCheckBoxMenuItem4);
-    if (b.a().a(";lkewlk nbi3k48tjh265'")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage(";lkewlk nbi3k48tjh265'")) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Keep Multiple Logs Open");
-      jCheckBoxMenuItem.setState(i.a(i.aJ, i.aK));
+      jCheckBoxMenuItem.setState(i.ExceptionInVPackage(i.aJ, i.aK));
       jCheckBoxMenuItem.addItemListener(new dU(this));
       ee.add(jCheckBoxMenuItem);
     } 
-    if (!b.a().a("hideLoadReversedOption")) {
+    if (!b.ExceptionInVPackage().ExceptionInVPackage("hideLoadReversedOption")) {
       this.l = new JCheckBoxMenuItem("Load File Reversed");
       this.l.setToolTipText("Only Applies to DTA logs");
-      this.l.setState(i.a("loadReverse", true));
+      this.l.setState(i.ExceptionInVPackage("loadReverse", true));
       this.l.addItemListener(new dV(this));
       this.l.setVisible(false);
       ee.add(this.l);
     } 
     ee.addSeparator();
-    if (b.a().a("fieldNameNormalizationEditable")) {
+    if (b.ExceptionInVPackage().ExceptionInVPackage("fieldNameNormalizationEditable")) {
       JMenu jMenu = new JMenu("Field Name Standardization");
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Use Name Standardization");
-      boolean bool2 = i.a("fieldNameNormaization", true);
+      boolean bool2 = i.ExceptionInVPackage("fieldNameNormaization", true);
       jCheckBoxMenuItem.setSelected(bool2);
       jCheckBoxMenuItem.addActionListener(new dW(this));
       jMenu.add(jCheckBoxMenuItem);
@@ -1643,21 +1643,21 @@ public class cd extends JFrame implements hi, WindowListener {
       jMenu.add(this.j);
       ee.add(jMenu);
     } 
-    String[] arrayOfString2 = i.e("APP_OPTION_");
+    String[] arrayOfString2 = i.JMenuItemExtensionInBaPackage("APP_OPTION_");
     for (byte b1 = 0; b1 < arrayOfString2.length; b1++) {
-      JMenu jMenu = b(k.a(arrayOfString2[b1], "APP_OPTION_", ""), "");
+      JMenu jMenu = b(k.ExceptionInVPackage(arrayOfString2[b1], "APP_OPTION_", ""), "");
       String str = i.b(arrayOfString2[b1]);
       jMenu.setText(str);
       ee.add(jMenu);
     } 
     ee.addSeparator();
-    String str2 = i.e("prefFontSize", eJ.a() + "");
+    String str2 = i.JMenuItemExtensionInBaPackage("prefFontSize", eJ.ExceptionInVPackage() + "");
     dY dY = new dY(this);
     int[] arrayOfInt = { 
         8, 9, 10, 11, 12, 14, 16, 17, 18, 19, 
         20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
         30, 31, 32, 38, 44, 50 };
-    int i = eJ.a();
+    int i = eJ.ExceptionInVPackage();
     boolean bool = false;
     JMenu jMenu2 = new JMenu("Font Size");
     i i2 = new i();
@@ -1668,7 +1668,7 @@ public class cd extends JFrame implements hi, WindowListener {
         bool = true;
         JCheckBoxMenuItem jCheckBoxMenuItem6 = new JCheckBoxMenuItem(str6, str5.equals(str2));
         jCheckBoxMenuItem6.setActionCommand(str5);
-        i2.a(jCheckBoxMenuItem6);
+        i2.ExceptionInVPackage(jCheckBoxMenuItem6);
         jCheckBoxMenuItem6.addItemListener(dY);
         jMenu2.add(jCheckBoxMenuItem6);
       } 
@@ -1680,16 +1680,16 @@ public class cd extends JFrame implements hi, WindowListener {
       } 
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str4, str3.equals(str2));
       jCheckBoxMenuItem.setActionCommand(str3);
-      i2.a(jCheckBoxMenuItem);
+      i2.ExceptionInVPackage(jCheckBoxMenuItem);
       jCheckBoxMenuItem.addItemListener(dY);
       jMenu2.add(jCheckBoxMenuItem);
     } 
     ee.add(jMenu2);
     JMenu jMenu3 = new JMenu("Graph Background");
-    ea ea = new ea(this, this.a.n());
-    a(jMenu3, ea, "graphBackColor", -1);
+    ea ea = new ea(this, this.ExceptionInVPackage.n());
+    ExceptionInVPackage(jMenu3, ea, "graphBackColor", -1);
     ee.add(jMenu3);
-    boolean bool1 = i.a(i.aa, i.ab);
+    boolean bool1 = i.ExceptionInVPackage(i.aa, i.ab);
     JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem("Repeat Graph Colors");
     jCheckBoxMenuItem5.setSelected(bool1);
     jCheckBoxMenuItem5.addActionListener(new dZ(this));
@@ -1703,80 +1703,80 @@ public class cd extends JFrame implements hi, WindowListener {
   private void T() {
     int k;
     this.k.removeAll();
-    int i = i.a("numberOfGraphs", i.t);
-    int j = i.a("numberOfOverlays", i.u);
-    ea ea = new ea(this, this.a.n());
-    boolean bool = i.a(i.aa, i.ab);
+    int i = i.ExceptionInVPackage("numberOfGraphs", i.AzInterfaceTango);
+    int j = i.ExceptionInVPackage("numberOfOverlays", i.u);
+    ea ea = new ea(this, this.ExceptionInVPackage.n());
+    boolean bool = i.ExceptionInVPackage(i.aa, i.ab);
     if (bool) {
       k = j;
     } else {
       k = j * i;
     } 
-    i.a("numberOfGraphs", i.t);
+    i.ExceptionInVPackage("numberOfGraphs", i.AzInterfaceTango);
     byte b;
     for (b = 0; b < k; b++) {
       JMenu jMenu = new JMenu("Graph Color " + (b + 1));
-      ea = new ea(this, this.a.n());
-      a(jMenu, ea, "graphForeColor" + b, b);
+      ea = new ea(this, this.ExceptionInVPackage.n());
+      ExceptionInVPackage(jMenu, ea, "graphForeColor" + b, b);
       this.k.add(jMenu);
     } 
     for (b = 0; b < k; b++)
-      hx.a().a(aV.a().a(b), b); 
+      hx.ExceptionInVPackage().ExceptionInVPackage(aV.ExceptionInVPackage().ExceptionInVPackage(b), b); 
   }
   
-  private void h(String paramString) {
+  private void BiInterfaceHotel(String paramString) {
     if (paramString == null) {
       paramString = "{Custom Alpha-N Y axis field, this is case sensitive.}";
-      paramString = a((String)null, paramString, false);
+      paramString = ExceptionInVPackage((String)null, paramString, false);
       if (paramString == null || paramString.equals(""))
         return; 
     } 
-    if (paramString.equals("TP ADC") && i.e("APPEND_FIELD_TP ADC", "").equals(""))
-      i.c("APPEND_FIELD_TP ADC", a((String)null, i.c("APPEND_FIELD_TP ADC"), true)); 
+    if (paramString.equals("TP ADC") && i.JMenuItemExtensionInBaPackage("APPEND_FIELD_TP ADC", "").equals(""))
+      i.IOJMenu("APPEND_FIELD_TP ADC", ExceptionInVPackage((String)null, i.IOJMenu("APPEND_FIELD_TP ADC"), true)); 
     System.out.println("yAxis set to" + paramString);
-    i.c("yAxisField", paramString);
-    if (this.a.g != null && this.a.g.isVisible() && this.a.g.f != null && k.a("Tune Settings file must be reloaded for change to take effect.\nReload now?", this, true))
-      this.a.g.d(); 
+    i.IOJMenu("yAxisField", paramString);
+    if (this.ExceptionInVPackage.JDialogExtensionDispose != null && this.ExceptionInVPackage.JDialogExtensionDispose.isVisible() && this.ExceptionInVPackage.JDialogExtensionDispose.JPanelExtensionInAiPackage != null && k.ExceptionInVPackage("Tune Settings file must be reloaded for change to take effect.\nReload now?", this, true))
+      this.ExceptionInVPackage.JDialogExtensionDispose.ArrayListInBvPackage(); 
   }
   
   private JMenu U() {
     JMenu jMenu = new JMenu("Play Back");
-    this.e = new JMenuItem("Start Play back");
-    this.e.addActionListener(new cg(this));
-    jMenu.add(this.e);
-    this.d = new JMenuItem("Stop Play back");
-    this.d.addActionListener(new ch(this));
-    jMenu.add(this.d);
-    this.f = new JMenu("Play Speed");
+    this.JMenuItemExtensionInBaPackage = new JMenuItem("Start Play back");
+    this.JMenuItemExtensionInBaPackage.addActionListener(new cg(this));
+    jMenu.add(this.JMenuItemExtensionInBaPackage);
+    this.ArrayListInBvPackage = new JMenuItem("Stop Play back");
+    this.ArrayListInBvPackage.addActionListener(new ch(this));
+    jMenu.add(this.ArrayListInBvPackage);
+    this.JPanelExtensionInAiPackage = new JMenu("Play Speed");
     i i = new i();
-    el el = new el(this, this.a.n());
-    double[] arrayOfDouble = (this.a.n()).k;
+    el el = new el(this, this.ExceptionInVPackage.n());
+    double[] arrayOfDouble = (this.ExceptionInVPackage.n()).k;
     for (byte b = 0; b < arrayOfDouble.length; b++) {
       JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem((int)(100.0D * arrayOfDouble[b]) + "%");
-      jCheckBoxMenuItem.setState((arrayOfDouble[b] == i.a("playbackSpeed", 1.0D)));
+      jCheckBoxMenuItem.setState((arrayOfDouble[b] == i.ExceptionInVPackage("playbackSpeed", 1.0D)));
       jCheckBoxMenuItem.addItemListener(el);
       jCheckBoxMenuItem.setName(arrayOfDouble[b] + "");
-      i.a(jCheckBoxMenuItem);
-      this.f.add(jCheckBoxMenuItem);
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
+      this.JPanelExtensionInAiPackage.add(jCheckBoxMenuItem);
     } 
-    jMenu.add(this.f);
+    jMenu.add(this.JPanelExtensionInAiPackage);
     return jMenu;
   }
   
-  private JMenu a(JMenu paramJMenu, ItemListener paramItemListener, String paramString, int paramInt) {
+  private JMenu ExceptionInVPackage(JMenu paramJMenu, ItemListener paramItemListener, String paramString, int paramInt) {
     i i = new i();
-    for (byte b = 0; b < this.c.length; b++) {
-      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(this.c[b]);
-      jCheckBoxMenuItem.setState(this.c[b].equalsIgnoreCase(i.b(paramString)));
+    for (byte b = 0; b < this.IOJMenu.length; b++) {
+      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(this.IOJMenu[b]);
+      jCheckBoxMenuItem.setState(this.IOJMenu[b].equalsIgnoreCase(i.b(paramString)));
       jCheckBoxMenuItem.addItemListener(paramItemListener);
       jCheckBoxMenuItem.setName(paramString);
-      i.a(jCheckBoxMenuItem);
+      i.ExceptionInVPackage(jCheckBoxMenuItem);
       paramJMenu.add(jCheckBoxMenuItem);
     } 
     return paramJMenu;
   }
   
-  private boolean c(String paramString1, String paramString2, boolean paramBoolean) {
+  private boolean IOJMenu(String paramString1, String paramString2, boolean paramBoolean) {
     if (paramBoolean) {
       String str1 = paramString1;
       String str2 = paramString2;
@@ -1784,38 +1784,38 @@ public class cd extends JFrame implements hi, WindowListener {
       String[] arrayOfString = null;
       do {
         if (paramString2.contains("*") || paramString2.contains("+") || paramString2.contains("/") || paramString2.contains("-")) {
-          paramString2 = a(str3, paramString2, true);
-        } else if (hx.a().r() != null) {
-          paramString2 = a(str3, paramString2, false);
+          paramString2 = ExceptionInVPackage(str3, paramString2, true);
+        } else if (hx.ExceptionInVPackage().r() != null) {
+          paramString2 = ExceptionInVPackage(str3, paramString2, false);
         } 
         if (paramString2 == null || paramString2.equals("")) {
-          i.d(str1);
+          i.ArrayListInBvPackage(str1);
           return false;
         } 
         if (paramString2.trim().equals("")) {
-          i.d(paramString1);
-          c(str3, false);
+          i.ArrayListInBvPackage(paramString1);
+          IOJMenu(str3, false);
         } else {
-          i.c(paramString1, paramString2);
-          c(str3, true);
+          i.IOJMenu(paramString1, paramString2);
+          IOJMenu(str3, true);
         } 
-        arrayOfString = ai.a(str3, str2);
+        arrayOfString = ai.ExceptionInVPackage(str3, str2);
         if (arrayOfString == null || arrayOfString.length <= 0)
           continue; 
-        paramString1 = ai.c(arrayOfString[0]);
-        paramString2 = i.c(paramString1);
+        paramString1 = ai.IOJMenu(arrayOfString[0]);
+        paramString2 = i.IOJMenu(paramString1);
       } while (arrayOfString != null && arrayOfString.length > 0);
-      e(paramBoolean);
+      JMenuItemExtensionInBaPackage(paramBoolean);
     } else {
-      i.d(paramString1);
+      i.ArrayListInBvPackage(paramString1);
     } 
     return true;
   }
   
-  private void c(String paramString, boolean paramBoolean) {
-    for (byte b = 0; b < this.h.getMenuComponentCount(); b++) {
-      if (this.h.getMenuComponent(b) instanceof JMenu) {
-        JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)this.h.getMenuComponent(b);
+  private void IOJMenu(String paramString, boolean paramBoolean) {
+    for (byte b = 0; b < this.BiInterfaceHotel.getMenuComponentCount(); b++) {
+      if (this.BiInterfaceHotel.getMenuComponent(b) instanceof JMenu) {
+        JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)this.BiInterfaceHotel.getMenuComponent(b);
         if (jCheckBoxMenuItem.getText().equals(paramString)) {
           jCheckBoxMenuItem.setSelected(paramBoolean);
           return;
@@ -1824,40 +1824,40 @@ public class cd extends JFrame implements hi, WindowListener {
     } 
   }
   
-  public String a(String paramString1, String paramString2, boolean paramBoolean) {
-    return k.a(paramString1, paramString2, paramBoolean, null, true, this, hx.a().r());
+  public String ExceptionInVPackage(String paramString1, String paramString2, boolean paramBoolean) {
+    return k.ExceptionInVPackage(paramString1, paramString2, paramBoolean, null, true, this, hx.ExceptionInVPackage().r());
   }
   
-  public void h() {
-    this.a.n().e();
+  public void BiInterfaceHotel() {
+    this.ExceptionInVPackage.n().JMenuItemExtensionInBaPackage();
   }
   
   public void i() {
-    this.a.n().j();
+    this.ExceptionInVPackage.n().j();
   }
   
-  public void a(String paramString, boolean paramBoolean) {
-    i.c(paramString, paramBoolean + "");
-    if (this.a.l() != null && k.a("Log file must be reloaded for change to take effect.\nReload now?", this, true))
-      b(this.a.l(), false); 
+  public void ExceptionInVPackage(String paramString, boolean paramBoolean) {
+    i.IOJMenu(paramString, paramBoolean + "");
+    if (this.ExceptionInVPackage.l() != null && k.ExceptionInVPackage("Log file must be reloaded for change to take effect.\nReload now?", this, true))
+      b(this.ExceptionInVPackage.l(), false); 
   }
   
-  public void a(String paramString, int paramInt) {
-    i.c(paramString, paramInt + "");
-    if (this.a.l() != null && k.a("Log file must be reloaded for change to take effect.\nReload now?", this, true))
-      b(this.a.l(), false); 
+  public void ExceptionInVPackage(String paramString, int paramInt) {
+    i.IOJMenu(paramString, paramInt + "");
+    if (this.ExceptionInVPackage.l() != null && k.ExceptionInVPackage("Log file must be reloaded for change to take effect.\nReload now?", this, true))
+      b(this.ExceptionInVPackage.l(), false); 
   }
   
   public void j() {
-    this.a.j();
+    this.ExceptionInVPackage.j();
   }
   
   public void k() {
-    this.a.k();
+    this.ExceptionInVPackage.k();
   }
   
   public void l() {
-    if (this.a.h()) {
+    if (this.ExceptionInVPackage.BiInterfaceHotel()) {
       if (r) {
         setVisible(false);
         System.out.println("Update In Progress, delaying app shut down.");
@@ -1876,24 +1876,24 @@ public class cd extends JFrame implements hi, WindowListener {
   public void m() {
     if (getExtendedState() != 6) {
       Insets insets = getInsets();
-      i.c("x", "" + getX());
-      i.c("y", "" + getY());
-      i.c("width", "" + getWidth());
-      i.c("height", "" + getHeight());
+      i.IOJMenu("x", "" + getX());
+      i.IOJMenu("y", "" + getY());
+      i.IOJMenu("width", "" + getWidth());
+      i.IOJMenu("height", "" + getHeight());
     } 
   }
   
   public void n() {
-    g.a().c();
-    i.g();
+    JDialogExtensionDispose.ExceptionInVPackage().IOJMenu();
+    i.JDialogExtensionDispose();
     System.out.println(i.b + " shutdown: " + (new Date()).toString());
     System.out.println("##############################################################\n");
   }
   
-  public void o() {
+  public void ThreadedInAzPackage() {
     FileDialog fileDialog = new FileDialog(this, "Save Graph to Jpeg or PNG", 1);
-    fileDialog.setFile(cz.a("graph.png"));
-    fileDialog.setDirectory(i.e("lastJpegDir", "."));
+    fileDialog.setFile(cz.ExceptionInVPackage("graph.png"));
+    fileDialog.setDirectory(i.JMenuItemExtensionInBaPackage("lastJpegDir", "."));
     fileDialog.setVisible(true);
     fileDialog.setFilenameFilter(new fD());
     if (fileDialog.getFile() != null) {
@@ -1903,25 +1903,25 @@ public class cd extends JFrame implements hi, WindowListener {
       cz cz = new cz();
       boolean bool = false;
       try {
-        bool = cz.a(V(), fileDialog.getDirectory(), str, "Graph by " + i.b + " " + i.c + " " + i.a + " " + i.m);
+        bool = cz.ExceptionInVPackage(V(), fileDialog.getDirectory(), str, "Graph by " + i.b + " " + i.IOJMenu + " " + i.ExceptionInVPackage + " " + i.m);
       } catch (Exception exception) {
         exception.printStackTrace();
       } 
       if (!bool)
-        k.a("File Save Failed.", this); 
-      i.c("lastJpegDir", fileDialog.getDirectory());
+        k.ExceptionInVPackage("File Save Failed.", this); 
+      i.IOJMenu("lastJpegDir", fileDialog.getDirectory());
     } 
   }
   
   private Component V() {
-    return (this.m == null) ? this.a.p() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Log Viewer") ? this.a.p() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Ignition Log Viewer") ? this.n.a() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Scatter Plots") ? this.o.d() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Histogram / Table Generator") ? this.p.e() : this.a.p()))));
+    return (this.m == null) ? this.ExceptionInVPackage.p() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Log Viewer") ? this.ExceptionInVPackage.p() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Ignition Log Viewer") ? this.n.ExceptionInVPackage() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Scatter Plots") ? this.ThreadedInAzPackage.ArrayListInBvPackage() : (this.m.getTitleAt(this.m.getSelectedIndex()).equals("Histogram / Table Generator") ? this.p.JMenuItemExtensionInBaPackage() : this.ExceptionInVPackage.p()))));
   }
   
   public void p() {
     if (this.w == null) {
       if (this.x == null)
         this.x = new ed(this); 
-      this.w = new g(this, this.x);
+      this.w = new JDialogExtensionDispose(this, this.x);
       int i = i.b(i.am, -1);
       int j = i.b(i.an, -1);
       if (j <= 0 || i <= 0) {
@@ -1929,8 +1929,8 @@ public class cd extends JFrame implements hi, WindowListener {
       } else {
         this.w.setSize(i, j);
       } 
-      this.w.a(new ci(this));
-      bV.a(this.i, (Component)this.w);
+      this.w.ExceptionInVPackage(new ci(this));
+      bV.ExceptionInVPackage(this.i, (Component)this.w);
       this.w.setVisible(true);
     } 
   }
@@ -1943,129 +1943,129 @@ public class cd extends JFrame implements hi, WindowListener {
   }
   
   public void r() {
-    a((String[])null);
+    ExceptionInVPackage((String[])null);
   }
   
-  public void a(String[] paramArrayOfString) {
+  public void ExceptionInVPackage(String[] paramArrayOfString) {
     if (paramArrayOfString == null)
       paramArrayOfString = b("Open Log File"); 
     if (paramArrayOfString != null)
-      a(paramArrayOfString, false); 
-    cS.a().a(this);
-    i.g();
+      ExceptionInVPackage(paramArrayOfString, false); 
+    cS.ExceptionInVPackage().ExceptionInVPackage(this);
+    i.JDialogExtensionDispose();
   }
   
   public void s() {
     String[] arrayOfString = b("Trail Log File");
     if (arrayOfString != null)
       b(arrayOfString[0], true); 
-    i.g();
+    i.JDialogExtensionDispose();
     (new em(this)).start();
-    cS.a().a(this);
+    cS.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
-  public void t() {
+  public void AzInterfaceTango() {
     String[] arrayOfString = b("Open Compare File");
     if (arrayOfString != null)
-      c(arrayOfString[0]); 
+      IOJMenu(arrayOfString[0]); 
   }
   
   public void u() {
-    String str = bt.a(bt.a);
-    a(str);
+    String str = bt.ExceptionInVPackage(bt.ExceptionInVPackage);
+    ExceptionInVPackage(str);
   }
   
-  public void a(String paramString) {
-    f f = new f();
-    f.a((et)new dQ(i.f(), "AppHelpViewer"));
+  public void ExceptionInVPackage(String paramString) {
+    JPanelExtensionInAiPackage JPanelExtensionInAiPackage = new JPanelExtensionInAiPackage();
+    JPanelExtensionInAiPackage.ExceptionInVPackage((et)new dQ(i.JPanelExtensionInAiPackage(), "AppHelpViewer"));
     try {
-      f.b(paramString);
-    } catch (a a1) {
-      D.a("Unable to open help:\n" + paramString, (Exception)a1, this.i);
+      JPanelExtensionInAiPackage.b(paramString);
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage("Unable to open help:\n" + paramString, (Exception)a1, this.i);
     } 
-    f.a(this.i, i.b + " Help");
+    JPanelExtensionInAiPackage.ExceptionInVPackage(this.i, i.b + " Help");
   }
   
   public void v() {
     dS dS = new dS(this, new eg(this));
-    k.a(this, (Dialog)dS);
+    k.ExceptionInVPackage(this, (Dialog)dS);
     dS.setModal(true);
     dS.setVisible(true);
   }
   
   public String[] b(String paramString) {
     String[] arrayOfString1 = W();
-    String str = i.e("lastFileDir", h.d());
-    ar ar = new ar(i.f(), "FileDialog_");
-    String[] arrayOfString2 = bV.a(this, paramString, arrayOfString1, (String)null, str, true, null, true, (ap)ar);
+    String str = i.JMenuItemExtensionInBaPackage("lastFileDir", BiInterfaceHotel.ArrayListInBvPackage());
+    ar ar = new ar(i.JPanelExtensionInAiPackage(), "FileDialog_");
+    String[] arrayOfString2 = bV.ExceptionInVPackage(this, paramString, arrayOfString1, (String)null, str, true, null, true, (ap)ar);
     if (arrayOfString2 != null && arrayOfString2.length >= 1 && arrayOfString2[0] != null && arrayOfString2[0].lastIndexOf(File.separator) != -1) {
       String str1 = arrayOfString2[0].substring(0, arrayOfString2[0].lastIndexOf(File.separator));
-      i.c("lastFileDir", str1);
+      i.IOJMenu("lastFileDir", str1);
     } 
     return arrayOfString2;
   }
   
   private String[] W() {
-    String str = i.a("fileExtensions", "msl;xls;txt;dif;msq;csv");
-    return k.a(str, ";");
+    String str = i.ExceptionInVPackage("fileExtensions", "msl;xls;txt;dif;msq;csv");
+    return k.ExceptionInVPackage(str, ";");
   }
   
   public File w() {
-    return this.t;
+    return this.AzInterfaceTango;
   }
   
   public void b(String paramString, boolean paramBoolean) {
     String[] arrayOfString = new String[1];
     arrayOfString[0] = paramString;
-    this.a.a(arrayOfString, paramBoolean);
-    if (this.m != null && this.m.e("Purchase Registration"))
-      this.m.g("Log Viewer"); 
-    this.t = new File(paramString);
-    this.u.a(paramString);
-    setTitle(this.t.getName());
+    this.ExceptionInVPackage.ExceptionInVPackage(arrayOfString, paramBoolean);
+    if (this.m != null && this.m.JMenuItemExtensionInBaPackage("Purchase Registration"))
+      this.m.JDialogExtensionDispose("Log Viewer"); 
+    this.AzInterfaceTango = new File(paramString);
+    this.u.ExceptionInVPackage(paramString);
+    setTitle(this.AzInterfaceTango.getName());
   }
   
-  public void a(String[] paramArrayOfString, boolean paramBoolean) {
+  public void ExceptionInVPackage(String[] paramArrayOfString, boolean paramBoolean) {
     File file = new File(paramArrayOfString[0]);
-    if (b.a().a("triggerLogViewer") && U.a(file)) {
-      this.n.a(file.getAbsolutePath());
+    if (b.ExceptionInVPackage().ExceptionInVPackage("triggerLogViewer") && U.ExceptionInVPackage(file)) {
+      this.n.ExceptionInVPackage(file.getAbsolutePath());
       if (this.m != null)
-        this.m.g("Ignition Log Viewer"); 
+        this.m.JDialogExtensionDispose("Ignition Log Viewer"); 
     } else if (U.b(file)) {
-      if (b.a().a("tuningPanelVisible")) {
+      if (b.ExceptionInVPackage().ExceptionInVPackage("tuningPanelVisible")) {
         try {
-          this.a.b(true);
-          i.c("showTuningConsole", "true");
-          this.a.d(paramArrayOfString[0]);
-        } catch (a a1) {
-          bV.d(a1.getMessage(), this);
+          this.ExceptionInVPackage.b(true);
+          i.IOJMenu("showTuningConsole", "true");
+          this.ExceptionInVPackage.ArrayListInBvPackage(paramArrayOfString[0]);
+        } catch (ExceptionInVPackage a1) {
+          bV.ArrayListInBvPackage(a1.getMessage(), this);
         } 
-        this.m.g("Log Viewer");
+        this.m.JDialogExtensionDispose("Log Viewer");
       } else {
         String str1 = paramArrayOfString[0].substring(paramArrayOfString[0].lastIndexOf("."));
-        bV.d("The Lite! Edition can not load and edit " + str1 + " (tune settings) files. \nPlease Check Out the registered version for \nAdvanced Features to bring you a tune like never before.", this);
+        bV.ArrayListInBvPackage("The Lite! Edition can not load and edit " + str1 + " (tune settings) files. \nPlease Check Out the registered version for \nAdvanced Features to bring you ExceptionInVPackage tune like never before.", this);
       } 
     } else {
-      this.a.a(paramArrayOfString, paramBoolean);
-      if (this.m != null && !this.m.e("Log Viewer") && !this.m.e("Scatter Plots"))
-        this.m.g("Log Viewer"); 
-      this.t = file;
+      this.ExceptionInVPackage.ExceptionInVPackage(paramArrayOfString, paramBoolean);
+      if (this.m != null && !this.m.JMenuItemExtensionInBaPackage("Log Viewer") && !this.m.JMenuItemExtensionInBaPackage("Scatter Plots"))
+        this.m.JDialogExtensionDispose("Log Viewer"); 
+      this.AzInterfaceTango = file;
       if (this.l != null)
         try {
-          this.l.setVisible(X.F.equals(X.a(file)));
+          this.l.setVisible(X.F.equals(X.ExceptionInVPackage(file)));
         } catch (FileNotFoundException fileNotFoundException) {
         
-        } catch (a a1) {} 
+        } catch (ExceptionInVPackage a1) {} 
     } 
     String str = paramArrayOfString[0].substring(paramArrayOfString[0].lastIndexOf(File.separator) + 1);
-    this.u.a(paramArrayOfString[0]);
+    this.u.ExceptionInVPackage(paramArrayOfString[0]);
     setTitle(str);
   }
   
-  public void c(String paramString) {
-    this.a.c(paramString);
+  public void IOJMenu(String paramString) {
+    this.ExceptionInVPackage.IOJMenu(paramString);
     File file = new File(paramString);
-    setTitle(this.t.getName() + " - " + file.getName());
+    setTitle(this.AzInterfaceTango.getName() + " - " + file.getName());
   }
   
   public void windowActivated(WindowEvent paramWindowEvent) {}
@@ -2096,53 +2096,53 @@ public class cd extends JFrame implements hi, WindowListener {
         setAlwaysOnTop(false); 
     } else if (paramAWTEvent.getID() == 209) {
       if (getExtendedState() == 6) {
-        i.c(i.al, "true");
+        i.IOJMenu(i.al, "true");
       } else {
-        i.c(i.al, "false");
+        i.IOJMenu(i.al, "false");
       } 
     } 
     super.processEvent(paramAWTEvent);
   }
   
   public void setTitle(String paramString) {
-    super.setTitle(i.b + " " + i.c + " " + i.a + " - " + paramString);
+    super.setTitle(i.b + " " + i.IOJMenu + " " + i.ExceptionInVPackage + " - " + paramString);
   }
   
-  public void d(String paramString) {
+  public void ArrayListInBvPackage(String paramString) {
     if (paramString != null)
       if (paramString.equals("lineGraph")) {
-        if (!this.m.e("Log Viewer"))
-          this.m.g("Log Viewer"); 
+        if (!this.m.JMenuItemExtensionInBaPackage("Log Viewer"))
+          this.m.JDialogExtensionDispose("Log Viewer"); 
       } else if (paramString.equals("ignitionLogger")) {
-        if (!this.m.e("Ignition Log Viewer"))
-          this.m.g("Ignition Log Viewer"); 
+        if (!this.m.JMenuItemExtensionInBaPackage("Ignition Log Viewer"))
+          this.m.JDialogExtensionDispose("Ignition Log Viewer"); 
       } else if (paramString.equals("scatterPlot")) {
-        if (!this.m.e("Scatter Plots"))
-          this.m.g("Scatter Plots"); 
-      } else if (paramString.equals("histogram") && !this.m.e("Histogram / Table Generator")) {
-        this.m.g("Histogram / Table Generator");
+        if (!this.m.JMenuItemExtensionInBaPackage("Scatter Plots"))
+          this.m.JDialogExtensionDispose("Scatter Plots"); 
+      } else if (paramString.equals("histogram") && !this.m.JMenuItemExtensionInBaPackage("Histogram / Table Generator")) {
+        this.m.JDialogExtensionDispose("Histogram / Table Generator");
       }  
   }
   
   public String x() {
-    String str = i.c("registrationUrl");
+    String str = i.IOJMenu("registrationUrl");
     if (str == null || str.equals(""))
       try {
         str = "file://" + (new File(".")).getCanonicalPath() + "/help/register.html";
       } catch (Exception exception) {
-        k.a("While online go to\n" + i.n, this.i);
+        k.ExceptionInVPackage("While online go to\n" + i.n, this.i);
       }  
     return str;
   }
   
   protected void y() {
-    k.a("Failed to open file for trailing, timeout.", this);
+    k.ExceptionInVPackage("Failed to open file for trailing, timeout.", this);
   }
   
-  public void e(boolean paramBoolean) {
-    if (this.a.l() != null && paramBoolean && 0 == JOptionPane.showConfirmDialog(this, "Log file must be reloaded for change to take effect.\nReload now?", "Reload?", 0)) {
-      this.a.v();
-      b(this.a.l(), false);
+  public void JMenuItemExtensionInBaPackage(boolean paramBoolean) {
+    if (this.ExceptionInVPackage.l() != null && paramBoolean && 0 == JOptionPane.showConfirmDialog(this, "Log file must be reloaded for change to take effect.\nReload now?", "Reload?", 0)) {
+      this.ExceptionInVPackage.v();
+      b(this.ExceptionInVPackage.l(), false);
     } 
   }
 }

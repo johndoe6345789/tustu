@@ -1,23 +1,23 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.aB;
 import bH.D;
 import java.io.File;
 import java.util.ArrayList;
-import s.g;
+import s.SComponentGolf;
 
 class IgnitionLogLoaderThread extends Thread {
   IgnitionLogLoaderThread(o paramo, aB paramaB, File paramFile, String paramString) {}
   
   public void run() {
     try {
-      ArrayList arrayList = this.a.a(this.b, TriggerLoggerPanel.S + 1);
-      this.d.i.a(this.c);
+      ArrayList arrayList = this.ExceptionInVPackage.ExceptionInVPackage(this.b, TriggerLoggerPanel.S + 1);
+      this.d.i.ExceptionInVPackage(this.c);
       this.d.j.setSelected(false);
-      this.d.k.x.a(true);
-    } catch (a a) {
-      D.a(g.b("Unable to load Ignition Log File."), (Exception)a, this);
+      this.d.k.x.ExceptionInVPackage(true);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage(SComponentGolf.b("Unable to load Ignition Log File."), (Exception)ExceptionInVPackage, this);
     } 
   }
 }

@@ -6,9 +6,9 @@ import G.aN;
 import G.aR;
 import G.bb;
 import G.bc;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.p;
 import bt.bh;
@@ -29,10 +29,10 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class ReplayFieldSelectorPanel extends bh implements aN {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   aM b = null;
   
@@ -44,21 +44,21 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
   
   JList f = new JList(this.e);
   
-  String g = "52";
+  String ExceptionPrintstacktrace = "52";
   
   JLabel h = new JLabel(" ");
   
   long i = 0L;
   
-  int j = 0;
+  int ExceptionExtensionGetmessage = 0;
   
   public ae(R paramR, bc parambc) {
-    this.a = paramR;
-    this.b = this.a.c(parambc.d());
-    this.g = parambc.a();
-    this.j = parambc.c();
+    this.ExceptionInVPackage = paramR;
+    this.b = this.ExceptionInVPackage.c(parambc.d());
+    this.ExceptionPrintstacktrace = parambc.ExceptionInVPackage();
+    this.ExceptionExtensionGetmessage = parambc.c();
     setLayout(new BorderLayout(12, 12));
-    setBorder(BorderFactory.createTitledBorder(g.b(parambc.M())));
+    setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b(parambc.M())));
     this.d.addListSelectionListener(new af(this));
     this.f.addListSelectionListener(new ag(this));
     JPanel jPanel1 = new JPanel();
@@ -66,7 +66,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     JScrollPane jScrollPane1 = new JScrollPane(this.d);
     jScrollPane1.setBorder(BorderFactory.createLoweredBevelBorder());
     jScrollPane1.setPreferredSize(new Dimension(150, 150));
-    jPanel1.add("North", new JLabel(g.b("Available Replay Fields"), 0));
+    jPanel1.add("North", new JLabel(ExceptionPrintstacktrace.b("Available Replay Fields"), 0));
     jPanel1.add("Center", jScrollPane1);
     jPanel1.add("West", new JLabel(""));
     add("West", jPanel1);
@@ -75,7 +75,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     JScrollPane jScrollPane2 = new JScrollPane(this.f);
     jScrollPane2.setBorder(BorderFactory.createLoweredBevelBorder());
     jScrollPane2.setPreferredSize(new Dimension(150, 150));
-    jPanel2.add("North", new JLabel(g.b("Active Replay Fields"), 0));
+    jPanel2.add("North", new JLabel(ExceptionPrintstacktrace.b("Active Replay Fields"), 0));
     jPanel2.add("Center", jScrollPane2);
     jPanel2.add("East", new JLabel(""));
     add("East", jPanel2);
@@ -88,24 +88,24 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     JButton jButton = new JButton(">>");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(65);
-    jButton.setToolTipText(g.b("Add All"));
+    jButton.setToolTipText(ExceptionPrintstacktrace.b("Add All"));
     jButton.addActionListener(new ah(this));
     jPanel4.add(jButton);
     jButton = new JButton(">");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(160);
-    jButton.setToolTipText(g.b("Add selected fields"));
+    jButton.setToolTipText(ExceptionPrintstacktrace.b("Add selected fields"));
     jButton.addActionListener(new ai(this));
     jPanel4.add(jButton);
     jButton = new JButton("<");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(153);
-    jButton.setToolTipText(g.b("Remove selected fields"));
+    jButton.setToolTipText(ExceptionPrintstacktrace.b("Remove selected fields"));
     jButton.addActionListener(new aj(this));
     jPanel4.add(jButton);
     jButton = new JButton("<<");
     jButton.setPreferredSize(dimension);
-    jButton.setToolTipText(g.b("Remove All"));
+    jButton.setToolTipText(ExceptionPrintstacktrace.b("Remove All"));
     jButton.setMnemonic(82);
     jButton.addActionListener(new ak(this));
     jPanel4.add(jButton);
@@ -114,9 +114,9 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     jPanel5.setLayout(new GridLayout(0, 1));
     add("South", jPanel5);
     try {
-      aR.a().a(this.a.c(), this.b.aL(), this);
-    } catch (a a) {
-      Logger.getLogger(ReplayFieldSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(ReplayFieldSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
     c();
   }
@@ -125,21 +125,21 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     this.c.clear();
     this.e.clear();
     try {
-      ArrayList arrayList = g();
-      for (bb bb : this.a.t()) {
+      ArrayList arrayList = ExceptionPrintstacktrace();
+      for (bb bb : this.ExceptionInVPackage.t()) {
         if (b(bb.aJ())) {
           am am = new am(this, bb);
-          if (am.a(arrayList)) {
+          if (am.ExceptionInVPackage(arrayList)) {
             this.e.addElement(am);
             continue;
           } 
           this.c.addElement(am);
         } 
       } 
-    } catch (g g) {
-      D.a("Settings Error!", (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Settings Error!", (Exception)ExceptionPrintstacktrace, this);
     } catch (Exception exception) {
-      D.a("An error occured opening the DataLogField Selector.\nThis is most likely caused by a settings error.\nCheck the log file during project opening for errors.", exception, this);
+      D.ExceptionInVPackage("An error occured opening the DataLogField Selector.\nThis is most likely caused by ExceptionInVPackage settings error.\nCheck the log file during project opening for errors.", exception, this);
     } 
   }
   
@@ -147,7 +147,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     if (paramString == null || paramString.equals(""))
       return true; 
     try {
-      return p.a(paramString, this.a);
+      return p.ExceptionInVPackage(paramString, this.ExceptionInVPackage);
     } catch (Exception exception) {
       D.c(exception.getMessage());
       return true;
@@ -159,7 +159,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
       this.i = System.currentTimeMillis();
       Object[] arrayOfObject = this.d.getSelectedValues();
       for (byte b = 0; b < arrayOfObject.length; b++) {
-        if (a((am)arrayOfObject[b]))
+        if (ExceptionInVPackage((am)arrayOfObject[b]))
           this.e.addElement(arrayOfObject[b]); 
       } 
     } finally {
@@ -173,7 +173,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
       this.i = System.currentTimeMillis();
       Object[] arrayOfObject = this.c.toArray();
       for (byte b = 0; b < arrayOfObject.length; b++) {
-        if (a((am)arrayOfObject[b]))
+        if (ExceptionInVPackage((am)arrayOfObject[b]))
           this.e.addElement(arrayOfObject[b]); 
       } 
     } finally {
@@ -200,12 +200,12 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     c();
   }
   
-  public ArrayList g() {
+  public ArrayList ExceptionPrintstacktrace() {
     ArrayList<bb> arrayList = new ArrayList();
-    String[] arrayOfString = this.a.v();
-    double[][] arrayOfDouble = this.b.i(this.a.h());
+    String[] arrayOfString = this.ExceptionInVPackage.v();
+    double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
     for (byte b = 0; b < arrayOfString.length; b++) {
-      bb bb = this.a.h(arrayOfString[b]);
+      bb bb = this.ExceptionInVPackage.h(arrayOfString[b]);
       for (byte b1 = 0; b1 < this.b.b(); b1++) {
         if (arrayOfDouble[b1][0] == bb.y() && !arrayList.contains(bb))
           arrayList.add(bb); 
@@ -218,12 +218,12 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     if (paramam == null)
       return; 
     String str = paramam.toString() + " - ";
-    bb bb = paramam.a();
+    bb bb = paramam.ExceptionInVPackage();
     str = str + bb.aL();
     this.h.setText(str);
   }
   
-  public boolean a(am paramam) {
+  public boolean ExceptionInVPackage(am paramam) {
     return true;
   }
   
@@ -232,35 +232,35 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
       ArrayList<bb> arrayList = i();
       if (arrayList.size() > this.b.b())
         bV.d("A maximum of " + this.b.b() + " Output Channels can be logged.\nYour current selection of fields requires " + arrayList.size() + " Output Channels\nOnly the fields based on the first " + this.b.b() + " OutputChannels will be added.", (Component)this); 
-      int i = (int)p.b(this.g, this.a);
-      int j = 0;
+      int i = (int)p.b(this.ExceptionPrintstacktrace, this.ExceptionInVPackage);
+      int ExceptionExtensionGetmessage = 0;
       Iterator<bb> iterator = arrayList.iterator();
       while (iterator.hasNext()) {
-        j += ((bb)iterator.next()).l();
-        if (j > i) {
+        ExceptionExtensionGetmessage += ((bb)iterator.next()).l();
+        if (ExceptionExtensionGetmessage > i) {
           iterator.remove();
           if (!iterator.hasNext())
-            bV.d("The selected Data Log fields require " + j + " bytes\nThe selected Log Data Block size only supports " + i + " bytes\nThe fields that do not fit have been removed.\nTo log the removed fields, others must be removed.", (Component)this); 
+            bV.d("The selected Data Log fields require " + ExceptionExtensionGetmessage + " bytes\nThe selected Log Data Block size only supports " + i + " bytes\nThe fields that do not fit have been removed.\nTo log the removed fields, others must be removed.", (Component)this); 
         } 
       } 
-      double[][] arrayOfDouble = this.b.i(this.a.h());
+      double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
       for (byte b = 0; b < arrayOfDouble.length; b++) {
         if (b < arrayList.size()) {
           bb bb = arrayList.get(b);
           arrayOfDouble[b][0] = bb.y();
         } else {
-          arrayOfDouble[b][0] = this.j;
+          arrayOfDouble[b][0] = this.ExceptionExtensionGetmessage;
         } 
       } 
-      this.b.a(this.a.h(), arrayOfDouble);
-    } catch (j j) {
-      D.a("Unable to save selected fields. Invalid offset and length values.", (Exception)j, this);
-    } catch (g g) {
-      D.a("Unable to save selected fields.", (Exception)g, this);
+      this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      D.ExceptionInVPackage("Unable to save selected fields. Invalid offset and length values.", (Exception)ExceptionExtensionGetmessage, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to save selected fields.", (Exception)ExceptionPrintstacktrace, this);
     } 
   }
   
-  private boolean a(ArrayList paramArrayList, bb parambb) {
+  private boolean ExceptionInVPackage(ArrayList paramArrayList, bb parambb) {
     for (bb bb1 : paramArrayList) {
       if (bb1.y() == parambb.y() && bb1.l() == parambb.l())
         return true; 
@@ -272,8 +272,8 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     ArrayList<bb> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < this.e.getSize(); b1++) {
       am am = this.e.get(b1);
-      bb bb = am.a();
-      if (!bb.aL().equals("time") && !a(arrayList, bb))
+      bb bb = am.ExceptionInVPackage();
+      if (!bb.aL().equals("time") && !ExceptionInVPackage(arrayList, bb))
         arrayList.add(bb); 
     } 
     for (byte b2 = 0; b2 < arrayList.size(); b2++) {
@@ -289,7 +289,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     return arrayList;
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     long l = System.currentTimeMillis() - this.i;
     if (l > 500L) {
       this.i = System.currentTimeMillis();

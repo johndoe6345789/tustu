@@ -1,33 +1,33 @@
 package aP;
 
 import G.R;
-import aE.a;
-import aE.e;
+import aE.PropertiesExtension;
+import aE.AeInterfaceEcho;
 import bH.D;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import s.g;
+import s.SComponentGolf;
 
-class hX implements e {
+class hX implements AeInterfaceEcho {
   hX(hO paramhO) {}
   
-  public void a(a parama, R paramR) {
+  public void PropertiesExtension(PropertiesExtension parama, R paramR) {
     try {
-      g.a(parama);
+      SComponentGolf.PropertiesExtension(parama);
     } catch (IOException iOException) {
-      D.a("Failed to load User Aliases!");
+      D.PropertiesExtension("Failed to load User Aliases!");
       Logger.getLogger(hO.class.getName()).log(Level.SEVERE, (String)null, iOException);
     } 
   }
   
   public void e_() {}
   
-  public void a(a parama) {
+  public void PropertiesExtension(PropertiesExtension parama) {
     try {
-      g.b(parama);
+      SComponentGolf.b(parama);
     } catch (IOException iOException) {
-      D.a("Failed to save User Aliases!");
+      D.PropertiesExtension("Failed to save User Aliases!");
       Logger.getLogger(hO.class.getName()).log(Level.SEVERE, (String)null, iOException);
     } 
   }

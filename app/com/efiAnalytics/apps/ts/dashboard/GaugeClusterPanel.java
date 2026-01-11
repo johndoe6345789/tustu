@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import C.a;
+import C.ExceptionInVPackage;
 import G.R;
 import G.T;
 import G.aF;
@@ -10,14 +10,14 @@ import G.ak;
 import G.bT;
 import G.cq;
 import G.cu;
-import G.i;
-import I.c;
-import I.d;
-import K.c;
-import V.a;
-import V.g;
+import G.RInterfaceIndia;
+import I.ArrayListInIPackage;
+import I.IInterfaceDelta;
+import K.ArrayListInIPackage;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import W.ap;
-import aE.a;
+import aE.ExceptionInVPackage;
 import bH.A;
 import bH.D;
 import bH.J;
@@ -25,12 +25,12 @@ import bH.K;
 import bH.S;
 import bH.X;
 import bH.aa;
-import bH.p;
-import bz.b;
+import bH.RInterfacePapa;
+import bz.ManagerPreferredlayoutsize;
 import com.efiAnalytics.apps.ts.dashboard.renderers.GaugePainter;
 import com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter;
 import com.efiAnalytics.apps.ts.dashboard.renderers.e;
-import com.efiAnalytics.ui.a;
+import com.efiAnalytics.ui.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.ba;
 import com.efiAnalytics.ui.bc;
@@ -42,12 +42,12 @@ import com.efiAnalytics.ui.dR;
 import com.efiAnalytics.ui.dn;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
-import d.d;
-import d.e;
-import d.g;
-import i.a;
-import i.c;
-import i.j;
+import IInterfaceDelta.IInterfaceDelta;
+import IInterfaceDelta.e;
+import IInterfaceDelta.ExceptionPrintstacktrace;
+import RInterfaceIndia.ExceptionInVPackage;
+import RInterfaceIndia.ArrayListInIPackage;
+import RInterfaceIndia.IComponentJuliet;
 import java.awt.AlphaComposite;
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
@@ -91,17 +91,17 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
-import r.a;
-import r.b;
-import r.i;
-import r.j;
-import r.m;
-import r.o;
-import r.p;
-import s.g;
+import r.ExceptionInVPackage;
+import r.ManagerPreferredlayoutsize;
+import r.RInterfaceIndia;
+import r.IComponentJuliet;
+import r.RComponentMike;
+import r.RInterfaceOscar;
+import r.RInterfacePapa;
+import s.ExceptionPrintstacktrace;
 import t.aj;
 import t.w;
-import v.c;
+import v.ArrayListInIPackage;
 
 public class x extends JComponent implements aF, aG, ac, bc {
   private Image aj = null;
@@ -110,29 +110,29 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private Image al = null;
   
-  Color a = new Color(0, 255, 0, 0);
+  Color ExceptionInVPackage = new Color(0, 255, 0, 0);
   
-  Vector b = new Vector();
+  Vector ManagerPreferredlayoutsize = new Vector();
   
-  long c = System.currentTimeMillis();
+  long ArrayListInIPackage = System.currentTimeMillis();
   
-  double d = 0.0D;
+  double IInterfaceDelta = 0.0D;
   
   float e = 1.0F;
   
   X f = null;
   
-  W g = new W(this);
+  W ExceptionPrintstacktrace = new W(this);
   
   Q h = new Q(this);
   
-  private int am = eJ.a(7);
+  private int am = eJ.ExceptionInVPackage(7);
   
   private Window an = null;
   
   private Container ao = null;
   
-  boolean i = false;
+  boolean RInterfaceIndia = false;
   
   private String ap = "";
   
@@ -150,7 +150,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private boolean aw = false;
   
-  ap j = null;
+  ap IComponentJuliet = null;
   
   private boolean ax = false;
   
@@ -182,89 +182,89 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private Color aJ = Color.gray;
   
-  boolean m = i.a().a("sesrhsfghyuf754");
+  boolean RComponentMike = RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("sesrhsfghyuf754");
   
-  public static final String n = g.b("Stretch");
+  public static final String n = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Stretch");
   
-  public static final String o = g.b("Tile");
+  public static final String RInterfaceOscar = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Tile");
   
-  public static final String p = g.b("Center");
+  public static final String RInterfacePapa = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Center");
   
-  private String aK = o;
+  private String aK = RInterfaceOscar;
   
-  public static final String q = g.b("Bring Forward");
+  public static final String q = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Bring Forward");
   
-  public static final String r = g.b("Send Backward");
+  public static final String r = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Send Backward");
   
-  public static final String s = g.b("Bring to Front");
+  public static final String s = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Bring to Front");
   
-  public static final String t = g.b("Send to Back");
+  public static final String t = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Send to Back");
   
-  public static final String u = g.b("Gauge Properties");
+  public static final String u = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Properties");
   
-  public static final String v = g.b("Add Gauge");
+  public static final String v = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Gauge");
   
-  public static final String w = g.b("Add Indicator");
+  public static final String w = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Indicator");
   
-  public static final String x = g.b("Add Label");
+  public static final String x = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Label");
   
-  public static final String y = g.b("Add Settings Panel");
+  public static final String y = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Settings Panel");
   
-  public static final String z = g.b("Add Tuning Table");
+  public static final String z = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Tuning Table");
   
-  public static final String A = g.b("Remove From Dash");
+  public static final String A = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Remove From Dash");
   
-  public static final String B = g.b("Start Gauge Demo");
+  public static final String B = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Start Gauge Demo");
   
-  public static final String C = g.b("Stop Gauge Demo");
+  public static final String C = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Stop Gauge Demo");
   
-  public static final String D = g.b("Set Background Color");
+  public static final String D = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Set Background Color");
   
-  public static final String E = g.b("Set Background Dither Color");
+  public static final String E = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Set Background Dither Color");
   
-  public static final String F = g.b("Set Background Image");
+  public static final String F = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Set Background Image");
   
-  public static final String G = g.b("Clear Background Image");
+  public static final String G = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Clear Background Image");
   
-  public static final String H = g.b("Export / Save As");
+  public static final String H = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Export / Save As");
   
-  public static final String I = g.b("Save Dashboard");
+  public static final String I = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Save Dashboard");
   
-  public static final String J = g.b("Load Dashboard");
+  public static final String J = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Load Dashboard");
   
-  public static final String K = g.b("Reload Default Gauges");
+  public static final String K = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Reload Default Gauges");
   
-  public static final String L = g.b("Load a Saved Gauge");
+  public static final String L = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Load ExceptionInVPackage Saved Gauge");
   
-  public static final String M = g.b("Save this Gauge");
+  public static final String M = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Save this Gauge");
   
-  public static final String N = g.b("Designer Mode");
+  public static final String N = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Designer Mode");
   
-  public static final String O = g.b("Copy");
+  public static final String O = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Copy");
   
-  public static final String P = g.b("Paste");
+  public static final String P = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Paste");
   
-  public static final String Q = g.b("Paste Other");
+  public static final String Q = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Paste Other");
   
-  public static final String R = g.b("Paste Gauge Theme");
+  public static final String R = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Paste Gauge Theme");
   
-  public static final String S = g.b("Paste Gauge Size");
+  public static final String S = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Paste Gauge Size");
   
-  public static final String T = g.b("Antialiasing Enabled");
+  public static final String T = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Antialiasing Enabled");
   
-  public static final String U = g.b("Group Selected Gauges");
+  public static final String U = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Group Selected Gauges");
   
-  public static final String V = g.b("Un-Group Gauges");
+  public static final String V = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Un-Group Gauges");
   
-  public static final String W = g.b("Show Grid");
+  public static final String W = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Show Grid");
   
-  public static final String X = g.b("Force Aspect Ratio");
+  public static final String X = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Force Aspect Ratio");
   
   private static String aL = "fullScreenIndex";
   
   public static final String Y = N;
   
-  private static String aM = j.y() + File.separator + ".tempGauge";
+  private static String aM = IComponentJuliet.y() + File.separator + ".tempGauge";
   
   private boolean aN = false;
   
@@ -310,11 +310,11 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   List ad = new ArrayList();
   
-  a ae = new y(this);
+  ExceptionInVPackage ae = new y(this);
   
-  j af = new F(this);
+  IComponentJuliet af = new F(this);
   
-  int ag = eJ.a(2);
+  int ag = eJ.ExceptionInVPackage(2);
   
   Stroke ah = new BasicStroke(this.ag);
   
@@ -322,20 +322,20 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public x(R paramR) {
     this();
-    a(paramR);
+    ExceptionInVPackage(paramR);
   }
   
   public x() {
     setFocusable(true);
-    if (A.i().b()) {
+    if (A.RInterfaceIndia().ManagerPreferredlayoutsize()) {
       setLayout(new Y());
       addMouseListener(this.h);
       addMouseMotionListener(this.h);
       setDoubleBuffered(true);
       setFocusable(true);
-      this.aN = a.a().a(a.ck, "false").equals("true");
-      this.aZ = a.a().a(a.aF, this.aZ);
-      this.aY = a.a().a(a.aG, this.aY);
+      this.aN = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.ck, "false").equals("true");
+      this.aZ = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aF, this.aZ);
+      this.aY = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aG, this.aY);
       this.f = new X(this);
       this.f.start();
     } 
@@ -343,41 +343,41 @@ public class x extends JComponent implements aF, aG, ac, bc {
     setOpaque(false);
   }
   
-  public void a(R paramR) {
+  public void ExceptionInVPackage(R paramR) {
     if (this.k != null) {
-      this.k.C().c(this);
-      this.k.C().b(this);
+      this.k.C().ArrayListInIPackage(this);
+      this.k.C().ManagerPreferredlayoutsize(this);
     } 
     this.k = paramR;
     if (this.k != null) {
-      paramR.C().a(this);
-      paramR.C().a(this);
+      paramR.C().ExceptionInVPackage(this);
+      paramR.C().ExceptionInVPackage(this);
     } 
-    if (i.a().a(" a09kmfds098432lkg89vlk")) {
-      c.a().a(this.ae);
-      c.a().a(this.af);
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(" a09kmfds098432lkg89vlk")) {
+      ArrayListInIPackage.ExceptionInVPackage().ExceptionInVPackage(this.ae);
+      ArrayListInIPackage.ExceptionInVPackage().ExceptionInVPackage(this.af);
     } 
     if (paramR.C().q()) {
       ab();
     } else {
-      k(g.b("Off Line"));
+      k(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off Line"));
     } 
   }
   
-  public void a(s params) {
+  public void ExceptionInVPackage(s params) {
     if (this.f != null && (this.k == null || this.ax || this.ay))
-      this.f.c(); 
+      this.f.ArrayListInIPackage(); 
     if (!this.az)
       repaint(); 
   }
   
-  public void b(s params) {
+  public void ManagerPreferredlayoutsize(s params) {
     if (this.f == null || !this.f.isAlive()) {
       this.f = new X(this);
       this.f.start();
     } 
     add(params);
-    if (i.a().a("09BDPO;L,;l;ldpo;l5 ") && params instanceof d)
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("09BDPO;L,;l;ldpo;l5 ") && params instanceof IInterfaceDelta)
       params.addMouseListener(this.Z); 
     params.setGaugeContainer(this);
     if (isEnabled()) {
@@ -386,8 +386,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
         gauge.setValue(gauge.max());
       } 
       if (!(params instanceof t)) {
-        params.addMouseListener(this.g);
-        params.addMouseMotionListener(this.g);
+        params.addMouseListener(this.ExceptionPrintstacktrace);
+        params.addMouseMotionListener(this.ExceptionPrintstacktrace);
         params.setFocusable(false);
       } else {
         params.setFocusable(true);
@@ -399,29 +399,29 @@ public class x extends JComponent implements aF, aG, ac, bc {
     params.setAntialiasingOn(M());
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     for (s s : r())
-      c(s); 
+      ArrayListInIPackage(s); 
     this.ak = null;
     repaint();
   }
   
-  public void c(s params) {
-    params.removeMouseListener(this.g);
-    params.removeMouseMotionListener(this.g);
+  public void ArrayListInIPackage(s params) {
+    params.removeMouseListener(this.ExceptionPrintstacktrace);
+    params.removeMouseMotionListener(this.ExceptionPrintstacktrace);
     remove(params);
     if (params instanceof cq) {
-      cu cu = cu.a();
-      cu.a((cq)params);
+      cu cu = cu.ExceptionInVPackage();
+      cu.ExceptionInVPackage((cq)params);
     } 
   }
   
   public void removeAll() {
     Component[] arrayOfComponent = getComponents();
-    int i = getComponentCount();
-    for (byte b = 0; b < i; b++) {
-      if (arrayOfComponent[b] instanceof s)
-        c((s)arrayOfComponent[b]); 
+    int RInterfaceIndia = getComponentCount();
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < RInterfaceIndia; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s)
+        ArrayListInIPackage((s)arrayOfComponent[ManagerPreferredlayoutsize]); 
     } 
     super.removeAll();
   }
@@ -440,65 +440,65 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private void ai() {
     for (aQ aQ : this.ad)
-      aQ.a(); 
+      aQ.ExceptionInVPackage(); 
   }
   
   public void paint(Graphics paramGraphics) {
     long l1 = System.nanoTime();
     boolean bool = (D() && ah()) ? true : false;
     if (bool) {
-      a(paramGraphics, D(), bool);
+      ExceptionInVPackage(paramGraphics, D(), bool);
     } else {
       Image image = aC();
       if (image == null)
         return; 
       Graphics graphics = image.getGraphics();
-      a(graphics, D(), bool);
+      ExceptionInVPackage(graphics, D(), bool);
       paramGraphics.drawImage(image, 0, 0, null);
     } 
-    b(paramGraphics);
+    ManagerPreferredlayoutsize(paramGraphics);
     if (L()) {
       String str = "Width: " + getWidth() + ", Height: " + getHeight();
-      int i = getFontMetrics(paramGraphics.getFont()).stringWidth(str) + 8;
-      int k = getWidth() - i - 10;
-      int m = getFont().getSize();
+      int RInterfaceIndia = getFontMetrics(paramGraphics.getFont()).stringWidth(str) + 8;
+      int k = getWidth() - RInterfaceIndia - 10;
+      int RComponentMike = getFont().getSize();
       paramGraphics.setColor(Color.DARK_GRAY);
-      paramGraphics.fillRect(k, 0, i, m);
+      paramGraphics.fillRect(k, 0, RInterfaceIndia, RComponentMike);
       paramGraphics.setColor(Color.WHITE);
-      paramGraphics.drawString(str, k + 4, m);
+      paramGraphics.drawString(str, k + 4, RComponentMike);
     } 
-    a(paramGraphics);
-    long l2 = System.nanoTime() - this.c;
+    ExceptionInVPackage(paramGraphics);
+    long l2 = System.nanoTime() - this.ArrayListInIPackage;
     double d1 = (System.nanoTime() - l1) / 1000000.0D;
     double d2 = d1 * 1000000.0D / l2;
     if (getComponentCount() > 0) {
       if (getComponent(0) instanceof Gauge || getComponent(0) instanceof Indicator) {
         float f = (float)Math.round(1.0E9D / l2) * 5.0F;
-        this.d = (f * this.d + 1.0E9D / l2) / (f + 1.0F);
+        this.IInterfaceDelta = (f * this.IInterfaceDelta + 1.0E9D / l2) / (f + 1.0F);
         this.e = (f * this.e + (float)d2 * 100.0F) / (f + 1.0F);
       } 
       float f1 = this.at ? 0.12F : (s() ? 0.9F : this.aY);
       float f2 = s() ? 95.0F : this.aZ;
-      if (c.a().b() > 5.0D && f2 > 1.05D / c.a().b())
-        f2 = (float)(1.05D * c.a().b()); 
-      if (d2 > f1 || this.d > (f2 + 5.0F)) {
-        this.f.b();
-      } else if (this.d <= f2) {
-        this.f.a();
+      if (ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize() > 5.0D && f2 > 1.05D / ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize())
+        f2 = (float)(1.05D * ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize()); 
+      if (d2 > f1 || this.IInterfaceDelta > (f2 + 5.0F)) {
+        this.f.ManagerPreferredlayoutsize();
+      } else if (this.IInterfaceDelta <= f2) {
+        this.f.ExceptionInVPackage();
       } 
     } 
     if (this.aN) {
-      paramGraphics.setFont(new Font("Arial Unicode MS", 1, eJ.a(13)));
+      paramGraphics.setFont(new Font("Arial Unicode MS", 1, eJ.ExceptionInVPackage(13)));
       paramGraphics.setColor(Color.CYAN);
-      paramGraphics.drawString(X.b(this.d, 1) + " fps, Core%: " + X.b(this.e, 1), 5, 15);
+      paramGraphics.drawString(X.ManagerPreferredlayoutsize(this.IInterfaceDelta, 1) + " fps, Core%: " + X.ManagerPreferredlayoutsize(this.e, 1), 5, 15);
     } 
-    this.c = System.nanoTime();
+    this.ArrayListInIPackage = System.nanoTime();
   }
   
-  private void a(Graphics paramGraphics, boolean paramBoolean) {
-    if ((paramBoolean || L()) && (this.aK.equals(p) || this.aq == null || this.ap == null || this.ap.equals(""))) {
+  private void ExceptionInVPackage(Graphics paramGraphics, boolean paramBoolean) {
+    if ((paramBoolean || L()) && (this.aK.equals(RInterfacePapa) || this.aq == null || this.ap == null || this.ap.equals(""))) {
       Color color = getBackground();
-      if (this.aJ != null && this.m && this.aJ.getAlpha() > 0) {
+      if (this.aJ != null && this.RComponentMike && this.aJ.getAlpha() > 0) {
         Point2D.Float float_1 = new Point2D.Float((getWidth() / 3), (getHeight() * 5 / 6));
         Point2D.Float float_2 = new Point2D.Float((getWidth() / 3), (getHeight() / 6));
         GradientPaint gradientPaint = new GradientPaint(float_1, color, float_2, this.aJ, true);
@@ -513,97 +513,97 @@ public class x extends JComponent implements aF, aG, ac, bc {
     if ((paramBoolean || L()) && this.aq != null && this.aq.getWidth(null) > 0)
       if (this.aK.equals(n)) {
         paramGraphics.drawImage(this.aq, 0, 0, getWidth(), getHeight(), null);
-      } else if (this.aK.equals(p)) {
+      } else if (this.aK.equals(RInterfacePapa)) {
         if (getWidth() > this.aq.getWidth(null)) {
           paramGraphics.drawImage(this.aq, (getWidth() - this.aq.getWidth(null)) / 2, (getHeight() - this.aq.getHeight(null)) / 2, null);
         } else {
-          double d = getWidth() / this.aq.getWidth(null);
-          paramGraphics.drawImage(this.aq, 0, (getHeight() - (int)(this.aq.getHeight(null) * d)) / 2, (int)(this.aq.getWidth(null) * d), (int)(this.aq.getHeight(null) * d), null);
+          double IInterfaceDelta = getWidth() / this.aq.getWidth(null);
+          paramGraphics.drawImage(this.aq, 0, (getHeight() - (int)(this.aq.getHeight(null) * IInterfaceDelta)) / 2, (int)(this.aq.getWidth(null) * IInterfaceDelta), (int)(this.aq.getHeight(null) * IInterfaceDelta), null);
         } 
-      } else if (this.aK.equals(o) && this.aq.getWidth(null) > 0) {
-        int i = this.aq.getWidth(null);
+      } else if (this.aK.equals(RInterfaceOscar) && this.aq.getWidth(null) > 0) {
+        int RInterfaceIndia = this.aq.getWidth(null);
         int k = this.aq.getHeight(null);
-        for (byte b = 0; b * i < getWidth(); b++) {
+        for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize * RInterfaceIndia < getWidth(); ManagerPreferredlayoutsize++) {
           for (byte b1 = 0; b1 * k < getHeight(); b1++)
-            paramGraphics.drawImage(this.aq, b * i, b1 * k, null); 
+            paramGraphics.drawImage(this.aq, ManagerPreferredlayoutsize * RInterfaceIndia, b1 * k, null); 
         } 
       } else {
-        D.c("Shouldn't be here. backgroundImage.getWidth(null)=" + this.aq.getWidth(null) + "\n\tbackgroundImageStyle=" + this.aK + "\n");
+        D.ArrayListInIPackage("Shouldn't be here. backgroundImage.getWidth(null)=" + this.aq.getWidth(null) + "\n\tbackgroundImageStyle=" + this.aK + "\n");
       }  
     if (this.aQ && L()) {
-      int i = eJ.a(10);
+      int RInterfaceIndia = eJ.ExceptionInVPackage(10);
       Color color1 = getBackground();
       Color color2 = new Color(255 - color1.getRed(), 255 - color1.getGreen(), 255 - color1.getBlue(), 64);
       paramGraphics.setColor(color2);
-      byte b;
-      for (b = 1; b * i < getWidth(); b++)
-        paramGraphics.drawLine(b * i, 0, b * i, getHeight()); 
-      for (b = 1; b * i < getHeight(); b++)
-        paramGraphics.drawLine(0, b * i, getWidth(), b * i); 
+      byte ManagerPreferredlayoutsize;
+      for (ManagerPreferredlayoutsize = 1; ManagerPreferredlayoutsize * RInterfaceIndia < getWidth(); ManagerPreferredlayoutsize++)
+        paramGraphics.drawLine(ManagerPreferredlayoutsize * RInterfaceIndia, 0, ManagerPreferredlayoutsize * RInterfaceIndia, getHeight()); 
+      for (ManagerPreferredlayoutsize = 1; ManagerPreferredlayoutsize * RInterfaceIndia < getHeight(); ManagerPreferredlayoutsize++)
+        paramGraphics.drawLine(0, ManagerPreferredlayoutsize * RInterfaceIndia, getWidth(), ManagerPreferredlayoutsize * RInterfaceIndia); 
     } 
   }
   
-  private void a(Graphics paramGraphics, boolean paramBoolean1, boolean paramBoolean2) {
+  private void ExceptionInVPackage(Graphics paramGraphics, boolean paramBoolean1, boolean paramBoolean2) {
     try {
       if (paramBoolean2) {
         Image image = aD();
         Graphics2D graphics2D1 = (Graphics2D)image.getGraphics();
         if (aj()) {
           Graphics2D graphics2D = (Graphics2D)paramGraphics;
-          graphics2D1.setColor(this.a);
+          graphics2D1.setColor(this.ExceptionInVPackage);
           graphics2D1.setComposite(AlphaComposite.getInstance(2));
           graphics2D1.fillRect(0, 0, image.getWidth(null), image.getHeight(null));
           graphics2D1.setComposite(AlphaComposite.getInstance(3));
           if (image.getWidth(null) < 0)
             System.out.print("break 214312"); 
-          a(graphics2D1, true);
-          c(graphics2D1);
+          ExceptionInVPackage(graphics2D1, true);
+          ArrayListInIPackage(graphics2D1);
           this.aT = false;
         } 
         Graphics2D graphics2D2 = (Graphics2D)paramGraphics;
         paramGraphics.drawImage(image, 0, 0, null);
-        d(paramGraphics);
+        IInterfaceDelta(paramGraphics);
       } else {
-        a(paramGraphics, paramBoolean1);
-        b(paramGraphics, paramBoolean1);
+        ExceptionInVPackage(paramGraphics, paramBoolean1);
+        ManagerPreferredlayoutsize(paramGraphics, paramBoolean1);
       } 
     } catch (Exception exception) {
-      D.c("Exception in GaugeCluster paint");
+      D.ArrayListInIPackage("Exception in GaugeCluster paint");
       exception.printStackTrace();
     } 
   }
   
   public void paintChildren(Graphics paramGraphics) {
-    b(paramGraphics, !this.az);
+    ManagerPreferredlayoutsize(paramGraphics, !this.az);
     if (!this.az)
       super.paintChildren(paramGraphics); 
     ai();
   }
   
-  private void a(Graphics paramGraphics) {
-    if (this.h.a() != null) {
-      Rectangle rectangle = this.h.a();
+  private void ExceptionInVPackage(Graphics paramGraphics) {
+    if (this.h.ExceptionInVPackage() != null) {
+      Rectangle rectangle = this.h.ExceptionInVPackage();
       paramGraphics.setColor(getBackground());
       paramGraphics.setXORMode(Color.YELLOW);
-      int i = Math.abs(rectangle.width);
+      int RInterfaceIndia = Math.abs(rectangle.width);
       int k = Math.abs(rectangle.height);
-      int m = (rectangle.width < 0) ? (rectangle.x + rectangle.width) : rectangle.x;
+      int RComponentMike = (rectangle.width < 0) ? (rectangle.x + rectangle.width) : rectangle.x;
       int n = (rectangle.height < 0) ? (rectangle.y + rectangle.height) : rectangle.y;
-      BasicStroke basicStroke = new BasicStroke(eJ.a(1), 0, 2, 0.0F, new float[] { 2.0F, 1.0F }, 0.0F);
+      BasicStroke basicStroke = new BasicStroke(eJ.ExceptionInVPackage(1), 0, 2, 0.0F, new float[] { 2.0F, 1.0F }, 0.0F);
       ((Graphics2D)paramGraphics).setStroke(basicStroke);
-      paramGraphics.drawRect(m, n, i, k);
+      paramGraphics.drawRect(RComponentMike, n, RInterfaceIndia, k);
     } 
   }
   
-  private void b(Graphics paramGraphics) {
+  private void ManagerPreferredlayoutsize(Graphics paramGraphics) {
     String str1;
     String str2;
     if (L())
       return; 
     boolean bool = false;
-    if (this.k != null && !this.k.C().q() && (this.aa > System.currentTimeMillis() || m.a().b())) {
+    if (this.k != null && !this.k.C().q() && (this.aa > System.currentTimeMillis() || RComponentMike.ExceptionInVPackage().ManagerPreferredlayoutsize())) {
       str1 = null;
-      str2 = g.b("Log Playback");
+      str2 = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Log Playback");
       bool = true;
     } else {
       str1 = aa();
@@ -625,19 +625,19 @@ public class x extends JComponent implements aF, aG, ac, bc {
         graphics2D.fillRect(0, 0, getWidth(), getHeight());
       } 
       graphics2D.setColor(new Color(210, 210, 210, 239));
-      int i = bool ? eJ.a(16) : eJ.a(28);
+      int RInterfaceIndia = bool ? eJ.ExceptionInVPackage(16) : eJ.ExceptionInVPackage(28);
       Font font = null;
       FontMetrics fontMetrics = null;
       if (str1 == null || str1.equals(""))
         str1 = str2; 
       String[] arrayOfString = str1.split("\n");
       while (true) {
-        font = new Font("Times", 1, i);
+        font = new Font("Times", 1, RInterfaceIndia);
         graphics2D.setFont(font);
         fontMetrics = getFontMetrics(font);
-        if (fontMetrics.stringWidth(arrayOfString[0]) <= getWidth() - 4 && --i != 0) {
-          int k = i / 2;
-          int m = bool ? 2 : (getHeight() / 12);
+        if (fontMetrics.stringWidth(arrayOfString[0]) <= getWidth() - 4 && --RInterfaceIndia != 0) {
+          int k = RInterfaceIndia / 2;
+          int RComponentMike = bool ? 2 : (getHeight() / 12);
           int n = fontMetrics.stringWidth(arrayOfString[0]) + k;
           Font font1 = new Font(font.getFamily(), 0, (int)(font.getSize() * 0.6D));
           if (arrayOfString.length > 1)
@@ -648,14 +648,14 @@ public class x extends JComponent implements aF, aG, ac, bc {
             }  
           int i1 = (getWidth() - n + k) / 2;
           int i2 = (int)((fontMetrics.getHeight() + k / 2) + fontMetrics.getHeight() * 0.6D * (arrayOfString.length - 0.5D));
-          graphics2D.fillRect(i1 - k / 2, m, n, i2);
+          graphics2D.fillRect(i1 - k / 2, RComponentMike, n, i2);
           graphics2D.setColor(new Color(16, 16, 32));
-          for (byte b = 0; b < arrayOfString.length; b++) {
-            if (b == 1)
+          for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfString.length; ManagerPreferredlayoutsize++) {
+            if (ManagerPreferredlayoutsize == 1)
               graphics2D.setFont(font1); 
-            i1 = (getWidth() - graphics2D.getFontMetrics().stringWidth(arrayOfString[b])) / 2;
-            graphics2D.drawString(arrayOfString[b], i1, m + fontMetrics.getHeight());
-            m += graphics2D.getFontMetrics().getHeight();
+            i1 = (getWidth() - graphics2D.getFontMetrics().stringWidth(arrayOfString[ManagerPreferredlayoutsize])) / 2;
+            graphics2D.drawString(arrayOfString[ManagerPreferredlayoutsize], i1, RComponentMike + fontMetrics.getHeight());
+            RComponentMike += graphics2D.getFontMetrics().getHeight();
           } 
         } else {
           continue;
@@ -667,36 +667,36 @@ public class x extends JComponent implements aF, aG, ac, bc {
     paramGraphics.drawImage(this.al, 0, 0, null);
   }
   
-  public boolean a(String paramString, bT parambT) {
-    if (a.A().E().c().equals(paramString)) {
-      this.d = 6.0D;
+  public boolean ExceptionInVPackage(String paramString, bT parambT) {
+    if (ExceptionInVPackage.A().E().ArrayListInIPackage().equals(paramString)) {
+      this.IInterfaceDelta = 6.0D;
       ab();
       S s = this.l;
       if (s != null)
-        S.a(s); 
+        S.ExceptionInVPackage(s); 
       this.az = true;
     } 
     return true;
   }
   
-  public void a(String paramString) {
-    if (a.A().E() != null && a.A().E().c().equals(paramString)) {
-      b();
+  public void ExceptionInVPackage(String paramString) {
+    if (ExceptionInVPackage.A().E() != null && ExceptionInVPackage.A().E().ArrayListInIPackage().equals(paramString)) {
+      ManagerPreferredlayoutsize();
       this.az = false;
     } 
-    R r = T.a().c(paramString);
+    R r = T.ExceptionInVPackage().ArrayListInIPackage(paramString);
     if (r != null && !r.C().O()) {
-      k(g.b("Connected to Dash Echo server that is Off Line"));
+      k(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Connected to Dash Echo server that is Off Line"));
     } else {
-      k(g.b("Off Line"));
+      k(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off Line"));
     } 
   }
   
-  public void b() {
-    if (a.a().a(a.P, a.Q) && c.a().d())
+  public void ManagerPreferredlayoutsize() {
+    if (ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.P, ExceptionInVPackage.Q) && ArrayListInIPackage.ExceptionInVPackage().IInterfaceDelta())
       return; 
     this.ax = false;
-    s[] arrayOfS = j();
+    s[] arrayOfS = IComponentJuliet();
     if (!B()) {
       this.ay = false;
       for (s s : arrayOfS) {
@@ -710,7 +710,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           gauge.invalidate();
         } else if (s instanceof Indicator) {
           Indicator indicator = (Indicator)s;
-          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.a))
+          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.ExceptionInVPackage))
             indicator.setValue(0.0D); 
           indicator.setRunDemo(false);
         } 
@@ -722,7 +722,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           gauge.invalidate();
         } else if (s instanceof Indicator) {
           Indicator indicator = (Indicator)s;
-          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.a)) {
+          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.ExceptionInVPackage)) {
             indicator.goDead();
           } else if (indicator.isRunDemo()) {
             indicator.setRunDemo(false);
@@ -731,49 +731,49 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } 
       this.ay = true;
       if (this.l != null)
-        this.l.b = true; 
+        this.l.ManagerPreferredlayoutsize = true; 
       this.l = new S(this);
-      this.l.a = false;
+      this.l.ExceptionInVPackage = false;
       this.l.start();
     } 
   }
   
   public void update(Graphics paramGraphics) {
-    D.c("Update Called");
+    D.ArrayListInIPackage("Update Called");
     paint(paramGraphics);
   }
   
-  private boolean a(Component paramComponent, int paramInt) {
+  private boolean ExceptionInVPackage(Component paramComponent, int paramInt) {
     Component[] arrayOfComponent = getComponents();
-    for (int i = paramInt; i < arrayOfComponent.length; i++) {
-      if (!arrayOfComponent[i].equals(paramComponent) && a(arrayOfComponent[i], paramComponent))
+    for (int RInterfaceIndia = paramInt; RInterfaceIndia < arrayOfComponent.length; RInterfaceIndia++) {
+      if (!arrayOfComponent[RInterfaceIndia].equals(paramComponent) && ExceptionInVPackage(arrayOfComponent[RInterfaceIndia], paramComponent))
         return true; 
     } 
     return false;
   }
   
-  private boolean a(Component paramComponent1, Component paramComponent2) {
-    int i = paramComponent1.getX();
+  private boolean ExceptionInVPackage(Component paramComponent1, Component paramComponent2) {
+    int RInterfaceIndia = paramComponent1.getX();
     int k = paramComponent1.getY();
-    int m = paramComponent1.getWidth();
+    int RComponentMike = paramComponent1.getWidth();
     int n = paramComponent1.getHeight();
-    Rectangle rectangle1 = new Rectangle(i, k, m, n);
-    i = paramComponent2.getX();
+    Rectangle rectangle1 = new Rectangle(RInterfaceIndia, k, RComponentMike, n);
+    RInterfaceIndia = paramComponent2.getX();
     k = paramComponent2.getY();
-    m = paramComponent2.getWidth();
+    RComponentMike = paramComponent2.getWidth();
     n = paramComponent2.getHeight();
-    Rectangle rectangle2 = new Rectangle(i, k, m, n);
+    Rectangle rectangle2 = new Rectangle(RInterfaceIndia, k, RComponentMike, n);
     return (rectangle1.intersects(rectangle2) && !paramComponent2.equals(paramComponent1));
   }
   
-  private void b(Graphics paramGraphics, boolean paramBoolean) {
+  private void ManagerPreferredlayoutsize(Graphics paramGraphics, boolean paramBoolean) {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         if (!D() && s.isMustPaint()) {
           e(true);
-          D.c("Deactivated fast paint " + getName());
+          D.ArrayListInIPackage("Deactivated fast paint " + getName());
         } 
         if (s.isDirty() || paramBoolean || L() || s.isRunDemo() || s.requiresBackgroundRepaint()) {
           Graphics graphics = paramGraphics.create(s.getX(), s.getY(), s.getWidth(), s.getHeight());
@@ -784,7 +784,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           s.setDirty(false);
         } 
         if (this.aF.contains(s))
-          a(paramGraphics, s); 
+          ExceptionInVPackage(paramGraphics, s); 
       } 
     } 
   }
@@ -796,9 +796,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
     if (arrayOfComponent.length == 0)
       return true; 
     boolean bool = false;
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         if (!bool && s.requiresBackgroundRepaint()) {
           bool = true;
           break;
@@ -808,11 +808,11 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return bool;
   }
   
-  private void c(Graphics paramGraphics) {
+  private void ArrayListInIPackage(Graphics paramGraphics) {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         Graphics graphics = paramGraphics.create(s.getX(), s.getY(), s.getWidth(), s.getHeight());
         s.paintBackground(graphics);
         graphics.dispose();
@@ -821,11 +821,11 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
   }
   
-  private void d(Graphics paramGraphics) {
+  private void IInterfaceDelta(Graphics paramGraphics) {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         if (s.getWidth() > 0 && s.getHeight() > 0) {
           Graphics2D graphics2D = (Graphics2D)paramGraphics.create(s.getX(), s.getY(), s.getWidth(), s.getHeight());
           Area area = f(s);
@@ -835,7 +835,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           s.setDirty(false);
         } 
         if (this.aF.contains(s))
-          a(paramGraphics, s); 
+          ExceptionInVPackage(paramGraphics, s); 
       } 
     } 
     ai();
@@ -846,13 +846,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
     if (area == null || L()) {
       area = new Area(new Rectangle(0, 0, params.getWidth(), params.getHeight()));
       boolean bool = false;
-      for (s s1 : j()) {
+      for (s s1 : IComponentJuliet()) {
         if (bool) {
           Area area1 = s1.areaPainted();
-          int i = s1.getX() - params.getX();
+          int RInterfaceIndia = s1.getX() - params.getX();
           int k = s1.getY() - params.getY();
           AffineTransform affineTransform = new AffineTransform();
-          affineTransform.translate(i, k);
+          affineTransform.translate(RInterfaceIndia, k);
           area1.transform(affineTransform);
           area.subtract(area1);
         } else if (s1.equals(params)) {
@@ -869,39 +869,39 @@ public class x extends JComponent implements aF, aG, ac, bc {
     this.ac.clear();
   }
   
-  public void c() {
+  public void ArrayListInIPackage() {
     for (Component component : getComponents()) {
       if (component instanceof bc)
         ((bc)component).close(); 
     } 
     removeAll();
-    String str = a.a().a(a.aX, G);
-    i(str);
-    j(p);
-    this.aq = eJ.a(this.aq);
+    String str = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aX, G);
+    RInterfaceIndia(str);
+    IComponentJuliet(RInterfacePapa);
+    this.aq = eJ.ExceptionInVPackage(this.aq);
     this.ar = "";
     if (this.k != null) {
-      this.k.C().c(this);
-      this.k.C().b(this);
+      this.k.C().ArrayListInIPackage(this);
+      this.k.C().ManagerPreferredlayoutsize(this);
     } 
     if (this.f != null) {
-      X.a(this.f);
+      X.ExceptionInVPackage(this.f);
       this.f = null;
     } 
     e(false);
-    c.a().b(this.ae);
-    c.a().b(this.af);
+    ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize(this.ae);
+    ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize(this.af);
   }
   
-  private void a(Graphics paramGraphics, s params) {
+  private void ExceptionInVPackage(Graphics paramGraphics, s params) {
     if (!L())
       return; 
-    int i = params.getX();
+    int RInterfaceIndia = params.getX();
     int k = params.getY();
-    int m = params.getWidth();
+    int RComponentMike = params.getWidth();
     int n = params.getHeight();
     int i1 = this.am - this.ag / 2;
-    if (m > 0 && n > 0) {
+    if (RComponentMike > 0 && n > 0) {
       if (M()) {
         Graphics2D graphics2D = (Graphics2D)paramGraphics;
         graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -911,28 +911,28 @@ public class x extends JComponent implements aF, aG, ac, bc {
       paramGraphics.setFont(getFont());
       Color color = Color.yellow;
       paramGraphics.setColor(color);
-      paramGraphics.drawLine(i + i1, k + i1, i + m - i1, k + n - i1);
-      paramGraphics.drawLine(i + i1, k + n - i1, i + m - i1, k + i1);
-      paramGraphics.fillRect(i, k, this.am, this.am);
-      paramGraphics.fillRect(i, k + n - this.am, this.am, this.am);
-      paramGraphics.fillRect(i + m - this.am, k, this.am, this.am);
+      paramGraphics.drawLine(RInterfaceIndia + i1, k + i1, RInterfaceIndia + RComponentMike - i1, k + n - i1);
+      paramGraphics.drawLine(RInterfaceIndia + i1, k + n - i1, RInterfaceIndia + RComponentMike - i1, k + i1);
+      paramGraphics.fillRect(RInterfaceIndia, k, this.am, this.am);
+      paramGraphics.fillRect(RInterfaceIndia, k + n - this.am, this.am, this.am);
+      paramGraphics.fillRect(RInterfaceIndia + RComponentMike - this.am, k, this.am, this.am);
       paramGraphics.setColor(Color.red);
-      paramGraphics.fillRect(i + m - this.am, k + n - this.am, this.am, this.am);
-      String str = "X: " + i + ", Y:" + k + ", Width: " + m + ", Height: " + n;
+      paramGraphics.fillRect(RInterfaceIndia + RComponentMike - this.am, k + n - this.am, this.am, this.am);
+      String str = "X: " + RInterfaceIndia + ", Y:" + k + ", Width: " + RComponentMike + ", Height: " + n;
       paramGraphics.setColor(Color.DARK_GRAY);
-      paramGraphics.fillRect(i + 10, k, paramGraphics.getFontMetrics().stringWidth(str) + 10, paramGraphics.getFont().getSize() + 2);
+      paramGraphics.fillRect(RInterfaceIndia + 10, k, paramGraphics.getFontMetrics().stringWidth(str) + 10, paramGraphics.getFont().getSize() + 2);
       paramGraphics.setColor(Color.WHITE);
-      paramGraphics.drawString(str, i + eJ.a(15), k + paramGraphics.getFont().getSize() - 1);
+      paramGraphics.drawString(str, RInterfaceIndia + eJ.ExceptionInVPackage(15), k + paramGraphics.getFont().getSize() - 1);
     } 
   }
   
-  public void a(Component paramComponent, int paramInt1, int paramInt2) {
-    boolean bool = a.a().a(a.da, a.db);
+  public void ExceptionInVPackage(Component paramComponent, int paramInt1, int paramInt2) {
+    boolean bool = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.da, ExceptionInVPackage.db);
     if (bool)
       return; 
     boolean bool1 = false;
     if (!bool1) {
-      JPopupMenu jPopupMenu = d();
+      JPopupMenu jPopupMenu = IInterfaceDelta();
       add(jPopupMenu);
       if (paramComponent != null) {
         jPopupMenu.show(paramComponent, paramInt1, paramInt2);
@@ -942,21 +942,21 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.aT = paramBoolean;
   }
   
-  public JPopupMenu d() {
+  public JPopupMenu IInterfaceDelta() {
     br br = new br();
-    a((bq)br);
+    ExceptionInVPackage((bq)br);
     return (JPopupMenu)br;
   }
   
-  public bq a(bq parambq) {
+  public bq ExceptionInVPackage(bq parambq) {
     V v = new V(this);
     JMenu jMenu1 = null;
-    if (i.a().a("43wunjt58j7tjtht")) {
-      JMenu jMenu = new JMenu(g.b("Load / Save"));
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("43wunjt58j7tjtht")) {
+      JMenu jMenu = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Load / Save"));
       parambq.add(jMenu);
       jMenu.add(J).addActionListener(v);
       jMenu.add(I).addActionListener(v);
@@ -991,59 +991,59 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
     if (L()) {
       JMenu jMenu;
-      byte b = 0;
+      byte ManagerPreferredlayoutsize = 0;
       if (r().size() > 0) {
         w w1 = O();
-        O().b(r());
-        w1.setText(g.b("Dashboard Designer"));
+        O().ManagerPreferredlayoutsize(r());
+        w1.setText(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Dashboard Designer"));
       } else {
-        jMenu = new JMenu(g.b("Dashboard Designer"));
+        jMenu = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Dashboard Designer"));
       } 
-      jMenu1 = new JMenu(g.b("New"));
+      jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("New"));
       jMenu1.add(v).addActionListener(v);
       jMenu1.add(w).addActionListener(v);
       jMenu1.add(x).addActionListener(v);
-      if (i.a().a("LKMFSLKFDSLK;LKM09")) {
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("LKMFSLKFDSLK;LKM09")) {
         jMenu1.add(y).addActionListener(v);
         jMenu1.add(z).addActionListener(v);
       } 
-      jMenu.insert(jMenu1, b++);
+      jMenu.insert(jMenu1, ManagerPreferredlayoutsize++);
       if (this.aF.size() > 0) {
         JMenuItem jMenuItem = new JMenuItem(A);
         jMenuItem.addActionListener(v);
-        jMenu.insert(jMenuItem, b++);
+        jMenu.insert(jMenuItem, ManagerPreferredlayoutsize++);
       } 
       if (am()) {
         parambq.addSeparator();
         if (this.aF.size() > 1) {
           JMenuItem jMenuItem = new JMenuItem(U);
           jMenuItem.addActionListener(v);
-          jMenu.insert(jMenuItem, b++);
+          jMenu.insert(jMenuItem, ManagerPreferredlayoutsize++);
           if (this.aF.get(0) instanceof Gauge) {
             Gauge gauge = this.aF.get(0);
             if (gauge.getGroupId() != 0) {
               jMenuItem = new JMenuItem(V);
               jMenuItem.addActionListener(v);
-              jMenu.insert(jMenuItem, b++);
+              jMenu.insert(jMenuItem, ManagerPreferredlayoutsize++);
             } 
           } 
         } 
-        GaugePainter[] arrayOfGaugePainter = e.a();
-        jMenu1 = new JMenu(g.b("Gauge Style"));
+        GaugePainter[] arrayOfGaugePainter = e.ExceptionInVPackage();
+        jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Style"));
         if (arrayOfGaugePainter != null)
           for (byte b1 = 0; b1 < arrayOfGaugePainter.length; b1++) {
             GaugePainter gaugePainter = arrayOfGaugePainter[b1];
-            JMenuItem jMenuItem = new JMenuItem(g.b(gaugePainter.getName()));
+            JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize(gaugePainter.getName()));
             jMenuItem.setActionCommand(gaugePainter.getClass().getName());
             jMenuItem.addActionListener(new G(this));
             jMenu1.add(jMenuItem);
           }  
-        jMenu.insert(jMenu1, b++);
+        jMenu.insert(jMenu1, ManagerPreferredlayoutsize++);
       } 
       if (al()) {
         parambq.addSeparator();
-        IndicatorPainter[] arrayOfIndicatorPainter = e.b();
-        jMenu1 = new JMenu(g.b("Indicator Style"));
+        IndicatorPainter[] arrayOfIndicatorPainter = e.ManagerPreferredlayoutsize();
+        jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Indicator Style"));
         for (byte b1 = 0; b1 < arrayOfIndicatorPainter.length; b1++) {
           IndicatorPainter indicatorPainter = arrayOfIndicatorPainter[b1];
           JMenuItem jMenuItem = new JMenuItem(indicatorPainter.getName());
@@ -1051,17 +1051,17 @@ public class x extends JComponent implements aF, aG, ac, bc {
           jMenuItem.addActionListener(new H(this));
           jMenu1.add(jMenuItem);
         } 
-        jMenu.insert(jMenu1, b++);
+        jMenu.insert(jMenu1, ManagerPreferredlayoutsize++);
       } 
       if (r().size() > 0) {
-        jMenu1 = new JMenu(g.b("Order"));
+        jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Order"));
         jMenu1.add(q).addActionListener(v);
         jMenu1.add(r).addActionListener(v);
         jMenu1.add(s).addActionListener(v);
         jMenu1.add(t).addActionListener(v);
-        jMenu.insert(jMenu1, b++);
+        jMenu.insert(jMenu1, ManagerPreferredlayoutsize++);
       } 
-      jMenu.insertSeparator(b++);
+      jMenu.insertSeparator(ManagerPreferredlayoutsize++);
       JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(W);
       jCheckBoxMenuItem1.setState(this.aQ);
       jCheckBoxMenuItem1.addActionListener(new I(this));
@@ -1074,54 +1074,54 @@ public class x extends JComponent implements aF, aG, ac, bc {
       parambq.add(jMenu);
     } 
     if (am()) {
-      if (i.a().a("43wunjt58j7tjtht"))
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("43wunjt58j7tjtht"))
         parambq.addSeparator(); 
-      jMenu1 = new JMenu(a.b + " " + g.b("Gauges"));
+      jMenu1 = new JMenu(ExceptionInVPackage.ManagerPreferredlayoutsize + " " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauges"));
       parambq.add(jMenu1);
       ArrayList arrayList = new ArrayList();
-      Iterator iterator = c.a().b();
+      Iterator iterator = ArrayListInIPackage.ExceptionInVPackage().ManagerPreferredlayoutsize();
       while (iterator.hasNext())
         arrayList.add(iterator.next()); 
-      List list = S.a(arrayList);
-      O o = new O(this, cu.a);
+      List list = S.ExceptionInVPackage(arrayList);
+      O RInterfaceOscar = new O(this, cu.ExceptionInVPackage);
       HashMap<Object, Object> hashMap = new HashMap<>();
       for (ah ah : list) {
         String str = "";
         try {
-          str = g.b(ah.k().a());
-        } catch (g g) {
-          Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+          str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.k().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
         JMenuItem jMenuItem = new JMenuItem(str + " - " + ah.aL());
         jMenuItem.setActionCommand(ah.aL());
-        jMenuItem.addActionListener(o);
-        if (ah.p() == null || ah.p().equals("")) {
+        jMenuItem.addActionListener(RInterfaceOscar);
+        if (ah.RInterfacePapa() == null || ah.RInterfacePapa().equals("")) {
           jMenu1.add(jMenuItem);
           continue;
         } 
-        if (hashMap.containsKey(ah.p())) {
-          ((ArrayList<JMenuItem>)hashMap.get(ah.p())).add(jMenuItem);
+        if (hashMap.containsKey(ah.RInterfacePapa())) {
+          ((ArrayList<JMenuItem>)hashMap.get(ah.RInterfacePapa())).add(jMenuItem);
           continue;
         } 
         ArrayList<JMenuItem> arrayList1 = new ArrayList();
         arrayList1.add(jMenuItem);
-        hashMap.put(ah.p(), arrayList1);
+        hashMap.put(ah.RInterfacePapa(), arrayList1);
       } 
       for (String str : hashMap.keySet()) {
-        jMenu1 = new JMenu(g.b(str));
+        jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize(str));
         parambq.add(jMenu1);
         for (JMenuItem jMenuItem : hashMap.get(str))
           jMenu1.add(jMenuItem); 
       } 
       byte b1 = 0;
-      int i = (Toolkit.getDefaultToolkit().getScreenSize()).height;
+      int RInterfaceIndia = (Toolkit.getDefaultToolkit().getScreenSize()).height;
       JMenu jMenu = null;
-      T t = T.a();
-      String[] arrayOfString = t.d();
+      T t = T.ExceptionInVPackage();
+      String[] arrayOfString = t.IInterfaceDelta();
       for (byte b2 = 0; b2 < arrayOfString.length; b2++) {
-        R r = t.c(arrayOfString[b2]);
+        R r = t.ArrayListInIPackage(arrayOfString[b2]);
         if (r.S()) {
-          o = new O(this, arrayOfString[b2]);
+          RInterfaceOscar = new O(this, arrayOfString[b2]);
           if (r != null && r.B() != null) {
             byte b3 = 0;
             byte b4 = 25;
@@ -1131,32 +1131,32 @@ public class x extends JComponent implements aF, aG, ac, bc {
               ah ah = iterator1.next();
               boolean bool = true;
               try {
-                bool = p.a(ah.aJ(), r);
-              } catch (g g) {
-                Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+                bool = RInterfacePapa.ExceptionInVPackage(ah.aJ(), r);
+              } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+                Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
               } 
               if (bool)
                 arrayList1.add(ah); 
             } 
-            List list1 = S.a(arrayList1);
+            List list1 = S.ExceptionInVPackage(arrayList1);
             iterator1 = null;
             String str = null;
             for (ah ah : list1) {
-              if (b3++ % b4 == 0 || !X.a(ah.p(), str)) {
-                if (!X.a(ah.p(), str)) {
+              if (b3++ % b4 == 0 || !X.ExceptionInVPackage(ah.RInterfacePapa(), str)) {
+                if (!X.ExceptionInVPackage(ah.RInterfacePapa(), str)) {
                   b3 = 1;
-                  str = ah.p();
+                  str = ah.RInterfacePapa();
                 } 
-                String str2 = (ah.p() == null) ? (g.b("Gauge Templates") + " ") : g.b(ah.p());
+                String str2 = (ah.RInterfacePapa() == null) ? (ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Templates") + " ") : ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.RInterfacePapa());
                 String str3 = (b3 > b4) ? ((b3 / b4 + 1) + "") : "";
                 if (arrayOfString.length == 1) {
                   jMenu1 = new JMenu(str2 + " " + str3);
                 } else {
-                  jMenu1 = new JMenu(str2 + " " + str3 + " (" + r.c() + ")");
+                  jMenu1 = new JMenu(str2 + " " + str3 + " (" + r.ArrayListInIPackage() + ")");
                 } 
-                if (i < 1024 && b1++ > 12) {
+                if (RInterfaceIndia < 1024 && b1++ > 12) {
                   if (jMenu == null) {
-                    jMenu = new JMenu(g.b("More Gauges"));
+                    jMenu = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("More Gauges"));
                     parambq.add(jMenu);
                   } 
                   jMenu.add(jMenu1);
@@ -1166,13 +1166,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
               } 
               String str1 = "";
               try {
-                str1 = g.b(ah.k().a());
-              } catch (g g) {
-                Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+                str1 = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.k().ExceptionInVPackage());
+              } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+                Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
               } 
               JMenuItem jMenuItem = new JMenuItem(str1 + " - " + ah.aL());
               jMenuItem.setActionCommand(ah.aL());
-              jMenuItem.addActionListener(o);
+              jMenuItem.addActionListener(RInterfaceOscar);
               jMenu1.add(jMenuItem);
             } 
           } 
@@ -1182,31 +1182,31 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
     if (al()) {
       parambq.addSeparator();
-      jMenu1 = new JMenu(g.b("Application Indicators"));
+      jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Application Indicators"));
       parambq.add(jMenu1);
       ArrayList arrayList = new ArrayList();
-      Iterator iterator = d.a().c();
+      Iterator iterator = IInterfaceDelta.ExceptionInVPackage().ArrayListInIPackage();
       while (iterator.hasNext())
         arrayList.add(iterator.next()); 
-      List list = S.a(arrayList);
-      P p = new P(this, cu.a);
+      List list = S.ExceptionInVPackage(arrayList);
+      P RInterfacePapa = new P(this, cu.ExceptionInVPackage);
       for (ak ak : list) {
-        JMenuItem jMenuItem = new JMenuItem(g.b("On") + ": " + ak.b() + " - " + g.b("Off") + ": " + ak.e());
+        JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + ak.ManagerPreferredlayoutsize() + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + ak.e());
         jMenuItem.setActionCommand(ak.aL());
-        jMenuItem.addActionListener(p);
+        jMenuItem.addActionListener(RInterfacePapa);
         jMenu1.add(jMenuItem);
       } 
-      T t = T.a();
-      String[] arrayOfString = t.d();
-      for (byte b = 0; b < arrayOfString.length; b++) {
+      T t = T.ExceptionInVPackage();
+      String[] arrayOfString = t.IInterfaceDelta();
+      for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfString.length; ManagerPreferredlayoutsize++) {
         if (arrayOfString.length > 1) {
-          jMenu1 = new JMenu(g.b("Predefined Indicators") + " (" + arrayOfString[b] + ")");
+          jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Predefined Indicators") + " (" + arrayOfString[ManagerPreferredlayoutsize] + ")");
         } else {
-          jMenu1 = new JMenu(g.b("Predefined Indicators"));
+          jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Predefined Indicators"));
         } 
         parambq.add(jMenu1);
-        R r = t.c(arrayOfString[b]);
-        p = new P(this, arrayOfString[b]);
+        R r = t.ArrayListInIPackage(arrayOfString[ManagerPreferredlayoutsize]);
+        RInterfacePapa = new P(this, arrayOfString[ManagerPreferredlayoutsize]);
         if (r != null && r.A() != null) {
           byte b1 = 1;
           byte b2 = 25;
@@ -1214,17 +1214,17 @@ public class x extends JComponent implements aF, aG, ac, bc {
           Iterator<ak> iterator1 = r.A();
           while (iterator1.hasNext())
             list.add(iterator1.next()); 
-          list = S.a(list);
+          list = S.ExceptionInVPackage(list);
           iterator1 = list.iterator();
           while (iterator1.hasNext()) {
             if (b1++ % b2 == 0) {
-              jMenu1 = new JMenu(g.b("Predefined Indicators") + " " + (b1 / b2 + 1));
+              jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Predefined Indicators") + " " + (b1 / b2 + 1));
               parambq.add(jMenu1);
             } 
             ak ak = iterator1.next();
-            JMenuItem jMenuItem = new JMenuItem(g.b("On") + ": " + g.b(ak.b()) + " - " + g.b("Off") + ": " + g.b(ak.e()));
+            JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ak.ManagerPreferredlayoutsize()) + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ak.e()));
             jMenuItem.setActionCommand(ak.aL());
-            jMenuItem.addActionListener(p);
+            jMenuItem.addActionListener(RInterfacePapa);
             jMenu1.add(jMenuItem);
           } 
         } 
@@ -1232,56 +1232,56 @@ public class x extends JComponent implements aF, aG, ac, bc {
       parambq.addSeparator();
     } 
     if (al() || am()) {
-      JMenuItem jMenuItem = new JMenuItem(g.b("Reset Value"));
+      JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Reset Value"));
       jMenuItem.addActionListener(new K(this));
       parambq.add(jMenuItem);
     } 
-    JMenu jMenu2 = new JMenu(g.b("Background"));
+    JMenu jMenu2 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Background"));
     parambq.add(jMenu2);
     jMenu2.add(D).addActionListener(v);
     jMenu2.add(E).addActionListener(v);
     jMenu2.add(F).addActionListener(v);
-    JMenu jMenu3 = new JMenu(g.b("Image Position"));
+    JMenu jMenu3 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Image Position"));
     L l = new L(this);
     jMenu3.add(n).addActionListener(l);
-    jMenu3.add(o).addActionListener(l);
-    jMenu3.add(p).addActionListener(l);
+    jMenu3.add(RInterfaceOscar).addActionListener(l);
+    jMenu3.add(RInterfacePapa).addActionListener(l);
     jMenu2.add(jMenu3);
     if (this.aq != null)
       jMenu2.add(G).addActionListener(v); 
     JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(T);
-    a((dR)new ba(jCheckBoxMenuItem, "antiAliasingOn"));
+    ExceptionInVPackage((dR)new ba(jCheckBoxMenuItem, "antiAliasingOn"));
     jCheckBoxMenuItem.setState(M());
     jCheckBoxMenuItem.addActionListener(new M(this));
     parambq.add(jCheckBoxMenuItem);
     if (af())
-      if (J.b() || !bV.h() || s()) {
-        JMenuItem jMenuItem = new JMenuItem(g.b("Full Screen"));
+      if (J.ManagerPreferredlayoutsize() || !bV.h() || s()) {
+        JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Full Screen"));
         jMenuItem.setSelected(s());
         jMenuItem.addActionListener(new z(this));
         parambq.add(jMenuItem);
       } else {
-        JMenu jMenu = new JMenu(g.b("Full Screen"));
+        JMenu jMenu = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Full Screen"));
         jMenu.setSelected(s());
         jMenu.addActionListener(new A(this));
-        String[] arrayOfString = dn.a();
-        for (byte b = 0; b < arrayOfString.length; b++) {
-          JMenuItem jMenuItem = new JMenuItem(g.b("Full Screen on ") + arrayOfString[b]);
-          jMenuItem.setActionCommand(b + "");
+        String[] arrayOfString = dn.ExceptionInVPackage();
+        for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfString.length; ManagerPreferredlayoutsize++) {
+          JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Full Screen on ") + arrayOfString[ManagerPreferredlayoutsize]);
+          jMenuItem.setActionCommand(ManagerPreferredlayoutsize + "");
           jMenu.add(jMenuItem);
           jMenuItem.addActionListener(new B(this));
         } 
         parambq.add(jMenu);
       }  
-    if (!a.a().b(a.cQ, a.cR)) {
+    if (!ExceptionInVPackage.ExceptionInVPackage().ManagerPreferredlayoutsize(ExceptionInVPackage.cQ, ExceptionInVPackage.cR)) {
       jCheckBoxMenuItem = new JCheckBoxMenuItem(N);
       jCheckBoxMenuItem.setState(L());
       jCheckBoxMenuItem.addActionListener(new C(this));
       parambq.add(jCheckBoxMenuItem);
-      if (!i.a().a("sesrhsfghyuf754"))
+      if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("sesrhsfghyuf754"))
         jCheckBoxMenuItem.setEnabled(false); 
     } 
-    jMenu1 = new JMenu(g.b("Gauge Demo"));
+    jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Demo"));
     jMenu1.add(B).addActionListener(v);
     jMenu1.add(C).addActionListener(v);
     parambq.add(jMenu1);
@@ -1295,9 +1295,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
         String str1 = singleChannelDashComponent.getOutputChannel();
         String str2 = singleChannelDashComponent.getEcuConfigurationName();
         try {
-          i.a(str2, str1);
-        } catch (g g) {
-          Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+          RInterfaceIndia.ExceptionInVPackage(str2, str1);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
       } 
     } 
@@ -1321,10 +1321,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return false;
   }
   
-  public void b(boolean paramBoolean) {
+  public void ManagerPreferredlayoutsize(boolean paramBoolean) {
     Component component = null;
-    for (byte b = 0; b < getComponentCount(); b++) {
-      component = getComponent(b);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      component = getComponent(ManagerPreferredlayoutsize);
       if (component instanceof s) {
         s s = (s)component;
         s.setRunDemo(paramBoolean);
@@ -1338,52 +1338,52 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.ax = paramBoolean;
       if (this.ax) {
         if (this.l != null)
-          S.a(this.l); 
+          S.ExceptionInVPackage(this.l); 
         this.ay = false;
         this.l = new S(this);
         this.l.start();
       } 
     } else if (!paramBoolean) {
       this.ax = false;
-      b();
+      ManagerPreferredlayoutsize();
     } 
   }
   
   public void e() {
     Component component = null;
-    for (byte b = 0; b < getComponentCount(); b++) {
-      component = getComponent(b);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      component = getComponent(ManagerPreferredlayoutsize);
       if (!(component instanceof Gauge) && component instanceof Indicator) {
         Indicator indicator = (Indicator)component;
-        indicator.setOffText(g.b(indicator.getOffText().toString()));
-        indicator.setOnText(g.b(indicator.getOnText().toString()));
+        indicator.setOffText(ExceptionPrintstacktrace.ManagerPreferredlayoutsize(indicator.getOffText().toString()));
+        indicator.setOnText(ExceptionPrintstacktrace.ManagerPreferredlayoutsize(indicator.getOnText().toString()));
       } 
     } 
   }
   
   public void f() {
     Component component = null;
-    for (byte b = 0; b < getComponentCount(); b++) {
-      component = getComponent(b);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      component = getComponent(ManagerPreferredlayoutsize);
       if (!(component instanceof Gauge) && component instanceof Indicator);
     } 
   }
   
-  public Component g() {
+  public Component ExceptionPrintstacktrace() {
     return (this.aF.size() > 0) ? this.aF.get(0) : null;
   }
   
-  public void b(String paramString) {
+  public void ManagerPreferredlayoutsize(String paramString) {
     if (paramString.equals(v)) {
-      m();
+      RComponentMike();
     } else if (paramString.equals(w)) {
-      p();
+      RInterfacePapa();
     } else if (paramString.equals(x)) {
       q();
     } else if (paramString.equals(y)) {
       n();
     } else if (paramString.equals(z)) {
-      o();
+      RInterfaceOscar();
     } else if (paramString.equals(D)) {
       ay();
     } else if (paramString.equals(E)) {
@@ -1401,9 +1401,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } else if (paramString.equals(G)) {
       l();
     } else if (paramString.equals(B)) {
-      b(true);
+      ManagerPreferredlayoutsize(true);
     } else if (paramString.equals(C)) {
-      b(false);
+      ManagerPreferredlayoutsize(false);
     } else if (paramString.equals(O)) {
       ap();
     } else if (paramString.equals(P)) {
@@ -1415,32 +1415,32 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } else if (paramString.equals(K)) {
       aF();
     } 
-    Component component = g();
+    Component component = ExceptionPrintstacktrace();
     if (component == null) {
       repaint();
       return;
     } 
     if (paramString.equals(q)) {
-      a(component);
+      ExceptionInVPackage(component);
     } else if (paramString.equals(r)) {
-      b(component);
+      ManagerPreferredlayoutsize(component);
     } else if (paramString.equals(s)) {
-      d(component);
+      IInterfaceDelta(component);
     } else if (paramString.equals(t)) {
-      c(component);
+      ArrayListInIPackage(component);
     } else if (paramString.equals(U)) {
       ao();
     } else if (paramString.equals(V)) {
       an();
     } else if (component instanceof s) {
       if (paramString.equals(A)) {
-        a();
+        ExceptionInVPackage();
       } else if (paramString.equals(M)) {
-        a(r());
+        ExceptionInVPackage(r());
       } else if (component instanceof Gauge) {
         Gauge gauge = (Gauge)component;
         if (paramString.equals(u))
-          d(gauge); 
+          IInterfaceDelta(gauge); 
       } 
     } 
     this.ak = null;
@@ -1455,31 +1455,31 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ao() {
-    int i = (int)(Math.random() * 2.147483647E9D);
+    int RInterfaceIndia = (int)(Math.random() * 2.147483647E9D);
     for (s s : this.aF) {
       if (s instanceof Gauge)
-        ((Gauge)s).setGroupId(i); 
+        ((Gauge)s).setGroupId(RInterfaceIndia); 
     } 
   }
   
   private void ap() {
-    a(r(), aM);
+    ExceptionInVPackage(r(), aM);
   }
   
   private void aq() {
     try {
-      a(aM, 0.06D, 0.06D);
-    } catch (a a1) {
-      D.d("no valid DashboardComponent");
+      ExceptionInVPackage(aM, 0.06D, 0.06D);
+    } catch (ExceptionInVPackage a1) {
+      D.IInterfaceDelta("no valid DashboardComponent");
     } 
   }
   
   private void ar() {
     try {
       File file = new File(aM);
-      ArrayList<s> arrayList = (new c(j.G())).b(file.getAbsolutePath());
+      ArrayList<s> arrayList = (new ArrayListInIPackage(IComponentJuliet.G())).ManagerPreferredlayoutsize(file.getAbsolutePath());
       if (arrayList.isEmpty()) {
-        bV.d("No Component Copied", this);
+        bV.IInterfaceDelta("No Component Copied", this);
         return;
       } 
       s s = arrayList.get(0);
@@ -1488,47 +1488,47 @@ public class x extends JComponent implements aF, aG, ac, bc {
         s1.setRelativeWidth(s.getRelativeWidth());
       } 
       doLayout();
-      a(true);
+      ExceptionInVPackage(true);
       repaint();
-    } catch (a a1) {
-      D.d("no valid DashboardComponent");
+    } catch (ExceptionInVPackage a1) {
+      D.IInterfaceDelta("no valid DashboardComponent");
     } 
   }
   
   private void as() {
     try {
       File file = new File(aM);
-      Gauge gauge = aa.a(file);
+      Gauge gauge = aa.ExceptionInVPackage(file);
       if (gauge != null) {
         for (s s : r()) {
           if (s instanceof Gauge) {
             Gauge gauge1 = (Gauge)s;
-            aa.a(gauge, gauge1);
+            aa.ExceptionInVPackage(gauge, gauge1);
           } 
         } 
       } else {
-        bV.d(g.b("You must copy a Gauge before applying the Theme."), this);
+        bV.IInterfaceDelta(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("You must copy ExceptionInVPackage Gauge before applying the Theme."), this);
       } 
-    } catch (a a1) {
-      D.d("no valid DashboardComponent");
+    } catch (ExceptionInVPackage a1) {
+      D.IInterfaceDelta("no valid DashboardComponent");
     } 
   }
   
   private void at() {
-    String[] arrayOfString = { a.co };
-    String str = (ad() == null) ? ("*." + a.co) : ad();
-    str = bV.a(this, g.b("Save Dashboard Layout"), arrayOfString, "*." + a.co, j.j().getAbsolutePath(), false);
+    String[] arrayOfString = { ExceptionInVPackage.co };
+    String str = (ad() == null) ? ("*." + ExceptionInVPackage.co) : ad();
+    str = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Save Dashboard Layout"), arrayOfString, "*." + ExceptionInVPackage.co, IComponentJuliet.IComponentJuliet().getAbsolutePath(), false);
     if (str == null)
       return; 
-    if (!str.toLowerCase().endsWith("." + a.co))
-      str = str + "." + a.co; 
-    d(str);
-    j.e(new File(str));
+    if (!str.toLowerCase().endsWith("." + ExceptionInVPackage.co))
+      str = str + "." + ExceptionInVPackage.co; 
+    IInterfaceDelta(str);
+    IComponentJuliet.e(new File(str));
   }
   
-  public void c(String paramString) {
+  public void ArrayListInIPackage(String paramString) {
     if (ad() != null) {
-      a(ad(), paramString);
+      ExceptionInVPackage(ad(), paramString);
       this.aG = true;
     } else {
       at();
@@ -1537,88 +1537,88 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void h() {
     if (ad() != null) {
-      a(ad(), (String)null);
+      ExceptionInVPackage(ad(), (String)null);
       this.aG = true;
     } else {
       at();
     } 
   }
   
-  public void d(String paramString) {
-    a(paramString, (String)null);
+  public void IInterfaceDelta(String paramString) {
+    ExceptionInVPackage(paramString, (String)null);
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     if (paramString1 == null || paramString1.trim().equals(""))
       return; 
     aa aa = new aa();
-    aa.a();
-    c c = new c(j.G());
+    aa.ExceptionInVPackage();
+    ArrayListInIPackage ArrayListInIPackage = new ArrayListInIPackage(IComponentJuliet.G());
     try {
       boolean bool = this.ax;
-      b(false);
+      ManagerPreferredlayoutsize(false);
       if (bool)
         try {
           Thread.sleep(100L);
         } catch (InterruptedException interruptedException) {
           Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
         }  
-      Z z = i();
+      Z z = RInterfaceIndia();
       if (paramString2 != null)
-        z.b(paramString2); 
+        z.ManagerPreferredlayoutsize(paramString2); 
       synchronized (this) {
-        c.a(paramString1, z);
+        ArrayListInIPackage.ExceptionInVPackage(paramString1, z);
       } 
-      D.c("Time to save dashboard: " + aa.d() + "ms. file: " + paramString1);
-    } catch (a a1) {
-      bV.d("Error saving Dashboard.\n" + a1.getMessage() + "\nCheck Log for more details", this);
+      D.ArrayListInIPackage("Time to save dashboard: " + aa.IInterfaceDelta() + "ms. file: " + paramString1);
+    } catch (ExceptionInVPackage a1) {
+      bV.IInterfaceDelta("Error saving Dashboard.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 
   }
   
-  private void a(ArrayList paramArrayList) {
-    String[] arrayOfString = { a.cq };
-    a a1 = a.A();
+  private void ExceptionInVPackage(ArrayList paramArrayList) {
+    String[] arrayOfString = { ExceptionInVPackage.cq };
+    ExceptionInVPackage a1 = ExceptionInVPackage.A();
     if (a1 == null)
-      bV.d("There is no project open.\nPlease open a project first.", this); 
-    String str = bV.a(this, "Save Gauge", arrayOfString, "*." + a.cq, j.j().getAbsolutePath(), false);
+      bV.IInterfaceDelta("There is no project open.\nPlease open ExceptionInVPackage project first.", this); 
+    String str = bV.ExceptionInVPackage(this, "Save Gauge", arrayOfString, "*." + ExceptionInVPackage.cq, IComponentJuliet.IComponentJuliet().getAbsolutePath(), false);
     if (str == null)
       return; 
-    if (!str.toLowerCase().endsWith("." + a.cq))
-      str = str + "." + a.cq; 
-    j.e((new File(str)).getParentFile());
-    a(paramArrayList, str);
+    if (!str.toLowerCase().endsWith("." + ExceptionInVPackage.cq))
+      str = str + "." + ExceptionInVPackage.cq; 
+    IComponentJuliet.e((new File(str)).getParentFile());
+    ExceptionInVPackage(paramArrayList, str);
   }
   
-  private void a(ArrayList paramArrayList, String paramString) {
-    c c = new c(j.G());
+  private void ExceptionInVPackage(ArrayList paramArrayList, String paramString) {
+    ArrayListInIPackage ArrayListInIPackage = new ArrayListInIPackage(IComponentJuliet.G());
     try {
-      c.a(paramString, paramArrayList);
-    } catch (a a1) {
-      bV.d("Error saving Gauge.\n" + a1.getMessage() + "\nCheck Log for more details", this);
+      ArrayListInIPackage.ExceptionInVPackage(paramString, paramArrayList);
+    } catch (ExceptionInVPackage a1) {
+      bV.IInterfaceDelta("Error saving Gauge.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 
   }
   
-  public Z i() {
-    b(false);
+  public Z RInterfaceIndia() {
+    ManagerPreferredlayoutsize(false);
     Z z = new Z();
-    z.a(getBackground());
+    z.ExceptionInVPackage(getBackground());
     String str = J();
     if (str != null && !str.equals(""))
-      str = j.c(str); 
-    z.a(str);
-    z.c(K());
-    z.b(C());
-    z.b(au());
-    z.b(this.ba);
-    z.b(I());
-    z.a(H());
+      str = IComponentJuliet.ArrayListInIPackage(str); 
+    z.ExceptionInVPackage(str);
+    z.ArrayListInIPackage(K());
+    z.ManagerPreferredlayoutsize(C());
+    z.ManagerPreferredlayoutsize(au());
+    z.ManagerPreferredlayoutsize(this.ba);
+    z.ManagerPreferredlayoutsize(I());
+    z.ExceptionInVPackage(H());
     Component[] arrayOfComponent = getComponents();
-    z.a(arrayOfComponent);
-    z.a(this.aP);
+    z.ExceptionInVPackage(arrayOfComponent);
+    z.ExceptionInVPackage(this.aP);
     return z;
   }
   
-  public s[] j() {
+  public s[] IComponentJuliet() {
     ArrayList<Component> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < getComponentCount(); b1++) {
       if (getComponent(b1) instanceof s)
@@ -1632,9 +1632,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private String au() {
     try {
-      return this.k.i();
+      return this.k.RInterfaceIndia();
     } catch (Exception exception) {
-      D.b("Could not get Firmware signature");
+      D.ManagerPreferredlayoutsize("Could not get Firmware signature");
       return null;
     } 
   }
@@ -1642,87 +1642,87 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public boolean e(String paramString) {
     if (!this.aG) {
       String str = null;
-      if (getName() == null || getName().equals("") || !a.a().c().getLanguage().equals(g.c().getLanguage())) {
-        str = g.b("This Project's dashboard layout has been modified.") + "\n" + g.b("Would you like to save the changes to this project?");
+      if (getName() == null || getName().equals("") || !ExceptionInVPackage.ExceptionInVPackage().ArrayListInIPackage().getLanguage().equals(ExceptionPrintstacktrace.ArrayListInIPackage().getLanguage())) {
+        str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("This Project's dashboard layout has been modified.") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Would you like to save the changes to this project?");
       } else {
         str = "The dashboard layout for " + getName() + " has been modified.\nWould you like to save the changes to this project?";
       } 
-      int i = JOptionPane.showConfirmDialog(this, str, g.b("Save Dashboard?"), 1, 3);
-      if (i == 2)
+      int RInterfaceIndia = JOptionPane.showConfirmDialog(this, str, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Save Dashboard?"), 1, 3);
+      if (RInterfaceIndia == 2)
         return false; 
-      if (i == 0) {
+      if (RInterfaceIndia == 0) {
         f();
         if (paramString != null && !paramString.equals("")) {
-          d(paramString);
+          IInterfaceDelta(paramString);
         } else {
           h();
         } 
         return true;
       } 
-      if (i == 1)
+      if (RInterfaceIndia == 1)
         return true; 
     } 
     return true;
   }
   
   protected void k() {
-    a((a)null);
+    ExceptionInVPackage((ExceptionInVPackage)null);
   }
   
-  public void a(a parama) {
-    b b = new b();
+  public void ExceptionInVPackage(ExceptionInVPackage parama) {
+    ManagerPreferredlayoutsize ManagerPreferredlayoutsize = new ManagerPreferredlayoutsize();
     aa aa = new aa();
-    String[] arrayOfString1 = T.a().d();
-    String str = this.k.c();
+    String[] arrayOfString1 = T.ExceptionInVPackage().IInterfaceDelta();
+    String str = this.k.ArrayListInIPackage();
     String[] arrayOfString2 = new String[arrayOfString1.length];
     if (this.aB != null)
-      b.a(g.b("Default"), this.aB); 
+      ManagerPreferredlayoutsize.ExceptionInVPackage(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Default"), this.aB); 
     for (byte b1 = 0; b1 < arrayOfString1.length; b1++) {
-      R r1 = T.a().c(arrayOfString1[b1]);
+      R r1 = T.ExceptionInVPackage().ArrayListInIPackage(arrayOfString1[b1]);
       if (r1.S()) {
-        Z z = b(r1);
+        Z z = ManagerPreferredlayoutsize(r1);
         if (this.aB == null) {
           if (ag() != null) {
-            b.a(ag());
+            ManagerPreferredlayoutsize.ExceptionInVPackage(ag());
           } else {
-            b.a();
+            ManagerPreferredlayoutsize.ExceptionInVPackage();
           } 
-          if (!str.equals(r1.c()))
-            z.d(r1.c()); 
-          b.a(r1.c(), z);
+          if (!str.equals(r1.ArrayListInIPackage()))
+            z.IInterfaceDelta(r1.ArrayListInIPackage()); 
+          ManagerPreferredlayoutsize.ExceptionInVPackage(r1.ArrayListInIPackage(), z);
         } 
       } 
-      arrayOfString2[b1] = r1.i();
+      arrayOfString2[b1] = r1.RInterfaceIndia();
     } 
-    o o = p.a().b();
-    b.a(arrayOfString2, o);
-    R r = new R(this, b, arrayOfString2);
-    Window window1 = bV.b(this);
+    RInterfaceOscar RInterfaceOscar = RInterfacePapa.ExceptionInVPackage().ManagerPreferredlayoutsize();
+    ManagerPreferredlayoutsize.ExceptionInVPackage(arrayOfString2, RInterfaceOscar);
+    R r = new R(this, ManagerPreferredlayoutsize, arrayOfString2);
+    Window window1 = bV.ManagerPreferredlayoutsize(this);
     Window window2 = window1;
     if (!(window2 instanceof java.awt.Dialog) && !(window2 instanceof java.awt.Frame))
       window2 = null; 
-    ct ct = new ct(window2, (JComponent)b, "Select Dashboard", r, 7);
+    ct ct = new ct(window2, (JComponent)ManagerPreferredlayoutsize, "Select Dashboard", r, 7);
     if (parama != null)
-      ct.a(parama); 
-    bV.a(window1, (Component)ct);
+      ct.ExceptionInVPackage(parama); 
+    bV.ExceptionInVPackage(window1, (Component)ct);
     ct.setVisible(true);
   }
   
   public void f(String paramString) {
-    c c = new c(j.G());
+    ArrayListInIPackage ArrayListInIPackage = new ArrayListInIPackage(IComponentJuliet.G());
     Z z = null;
     try {
-      z = c.a(paramString);
+      z = ArrayListInIPackage.ExceptionInVPackage(paramString);
     } catch (Exception exception) {
       exception.printStackTrace();
-      bV.d("Error Loading Dashboard file.\n" + paramString + "\nloading default gauge cluster.", this);
-      z = (new aa()).a(this.k, "FrontPage", 1);
-      c.a(paramString, z);
+      bV.IInterfaceDelta("Error Loading Dashboard file.\n" + paramString + "\nloading default gauge cluster.", this);
+      z = (new aa()).ExceptionInVPackage(this.k, "FrontPage", 1);
+      ArrayListInIPackage.ExceptionInVPackage(paramString, z);
     } 
-    String str = this.k.i();
-    o o = p.a().b();
-    if (!i.a().a("GD;';'RE;'GD;'DG") && str != null && !o.a(str, z.d()) && !aa.a(this.k, z)) {
-      boolean bool = bV.a("Warning: Gauge Cluster firmware signature '" + z.d() + "'\ndoes not match current firmware '" + str + "'.\nYou may need to reset gauge output channels.\n \nContinue Loading?", this, true);
+    String str = this.k.RInterfaceIndia();
+    RInterfaceOscar RInterfaceOscar = RInterfacePapa.ExceptionInVPackage().ManagerPreferredlayoutsize();
+    if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("GD;';'RE;'GD;'DG") && str != null && !RInterfaceOscar.ExceptionInVPackage(str, z.IInterfaceDelta()) && !aa.ExceptionInVPackage(this.k, z)) {
+      boolean bool = bV.ExceptionInVPackage("Warning: Gauge Cluster firmware signature '" + z.IInterfaceDelta() + "'\ndoes not match current firmware '" + str + "'.\nYou may need to reset gauge output channels.\n \nContinue Loading?", this, true);
       if (!bool) {
         k();
         this.ar = paramString;
@@ -1734,68 +1734,68 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.aG = true;
     } 
     this.ar = paramString;
-    a(z);
+    ExceptionInVPackage(z);
     validate();
   }
   
-  public void a(Z paramZ) {
-    if (i.a().a("0rewporewo430932")) {
-      T t = T.a();
-      R r = t.c();
+  public void ExceptionInVPackage(Z paramZ) {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("0rewporewo430932")) {
+      T t = T.ExceptionInVPackage();
+      R r = t.ArrayListInIPackage();
       if (r != null)
-        (new aa()).b(r, paramZ); 
+        (new aa()).ManagerPreferredlayoutsize(r, paramZ); 
     } 
-    g(false);
-    g(paramZ.h());
-    a(paramZ.i());
-    b(paramZ.j());
+    ExceptionPrintstacktrace(false);
+    ExceptionPrintstacktrace(paramZ.h());
+    ExceptionInVPackage(paramZ.RInterfaceIndia());
+    ManagerPreferredlayoutsize(paramZ.IComponentJuliet());
     if (getParent() != null)
       getParent().doLayout(); 
     Component[] arrayOfComponent1 = getComponents();
     for (byte b1 = 0; b1 < arrayOfComponent1.length; b1++) {
       if (arrayOfComponent1[b1] instanceof s)
-        c((s)arrayOfComponent1[b1]); 
+        ArrayListInIPackage((s)arrayOfComponent1[b1]); 
     } 
-    Component[] arrayOfComponent2 = paramZ.c();
-    j(paramZ.f());
+    Component[] arrayOfComponent2 = paramZ.ArrayListInIPackage();
+    IComponentJuliet(paramZ.f());
     String str = "";
     byte b2 = 0;
     for (byte b3 = 0; b3 < arrayOfComponent2.length; b3++) {
       try {
         if (arrayOfComponent2[b3] != null) {
-          b((s)arrayOfComponent2[b3]);
+          ManagerPreferredlayoutsize((s)arrayOfComponent2[b3]);
         } else {
-          D.b("A null gauge was tried to be added?\nThis is wierd.");
+          D.ManagerPreferredlayoutsize("A null gauge was tried to be added?\nThis is wierd.");
         } 
-      } catch (a a1) {
+      } catch (ExceptionInVPackage a1) {
         if (b2++ < 5)
           str = str + a1.getMessage() + "\n"; 
       } 
     } 
-    setBackground(paramZ.a());
-    i(paramZ.b());
-    j(paramZ.e());
-    a(paramZ.g());
-    b();
+    setBackground(paramZ.ExceptionInVPackage());
+    RInterfaceIndia(paramZ.ManagerPreferredlayoutsize());
+    IComponentJuliet(paramZ.e());
+    ExceptionInVPackage(paramZ.ExceptionPrintstacktrace());
+    ManagerPreferredlayoutsize();
     invalidate();
     validate();
     this.ak = null;
     repaint();
     if (!str.equals(""))
-      str = str + "\n\n" + g.b("To correct this:") + "\n" + g.b("- right click on any Gauge or indicator with a red line through it.") + "\n" + g.b("- Select a valid Gauge or Indicator Template from the menu."); 
+      str = str + "\n\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("To correct this:") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("- right click on any Gauge or indicator with ExceptionInVPackage red line through it.") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("- Select ExceptionInVPackage valid Gauge or Indicator Template from the menu."); 
     e();
     av();
   }
   
   private void av() {
     e(aw());
-    D.c("High Speed Paint: " + (!D() ? 1 : 0));
+    D.ArrayListInIPackage("High Speed Paint: " + (!D() ? 1 : 0));
   }
   
   private boolean aw() {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (a(arrayOfComponent[b], b))
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (ExceptionInVPackage(arrayOfComponent[ManagerPreferredlayoutsize], ManagerPreferredlayoutsize))
         return true; 
     } 
     return false;
@@ -1811,47 +1811,47 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ax() {
-    String[] arrayOfString = { a.cq };
-    String str = bV.a(this, g.b("Open Gauge Layout"), arrayOfString, "*." + a.co, j.h().getAbsolutePath(), true);
+    String[] arrayOfString = { ExceptionInVPackage.cq };
+    String str = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Open Gauge Layout"), arrayOfString, "*." + ExceptionInVPackage.co, IComponentJuliet.h().getAbsolutePath(), true);
     if (str == null)
       return; 
     try {
-      o(str);
-    } catch (a a1) {
-      bV.d("Error loading Gauge.\n" + a1.getMessage() + "\nCheck Log for more details", this);
+      RInterfaceOscar(str);
+    } catch (ExceptionInVPackage a1) {
+      bV.IInterfaceDelta("Error loading Gauge.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 
   }
   
-  private void o(String paramString) {
-    a(paramString, 0.0D, 0.0D);
+  private void RInterfaceOscar(String paramString) {
+    ExceptionInVPackage(paramString, 0.0D, 0.0D);
   }
   
-  private void a(String paramString, double paramDouble1, double paramDouble2) {
-    c c = new c(j.G());
+  private void ExceptionInVPackage(String paramString, double paramDouble1, double paramDouble2) {
+    ArrayListInIPackage ArrayListInIPackage = new ArrayListInIPackage(IComponentJuliet.G());
     ArrayList<s> arrayList = null;
-    arrayList = c.b(paramString);
+    arrayList = ArrayListInIPackage.ManagerPreferredlayoutsize(paramString);
     try {
-      for (byte b = 0; b < arrayList.size(); b++) {
-        if (paramDouble1 != 0.0D && ((s)arrayList.get(b)).getRelativeX() + paramDouble1 < 0.97D) {
-          ((s)arrayList.get(b)).setRelativeX(((s)arrayList.get(b)).getRelativeX() + paramDouble1);
+      for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayList.size(); ManagerPreferredlayoutsize++) {
+        if (paramDouble1 != 0.0D && ((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeX() + paramDouble1 < 0.97D) {
+          ((s)arrayList.get(ManagerPreferredlayoutsize)).setRelativeX(((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeX() + paramDouble1);
         } else if (paramDouble1 != 0.0D) {
-          ((s)arrayList.get(b)).setRelativeX(((s)arrayList.get(b)).getRelativeX() - paramDouble1);
+          ((s)arrayList.get(ManagerPreferredlayoutsize)).setRelativeX(((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeX() - paramDouble1);
         } 
-        if (paramDouble2 != 0.0D && ((s)arrayList.get(b)).getRelativeY() + paramDouble2 < 0.97D) {
-          ((s)arrayList.get(b)).setRelativeY(((s)arrayList.get(b)).getRelativeY() + paramDouble2);
+        if (paramDouble2 != 0.0D && ((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeY() + paramDouble2 < 0.97D) {
+          ((s)arrayList.get(ManagerPreferredlayoutsize)).setRelativeY(((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeY() + paramDouble2);
         } else if (paramDouble2 != 0.0D) {
-          ((s)arrayList.get(b)).setRelativeY(((s)arrayList.get(b)).getRelativeY() - paramDouble2);
+          ((s)arrayList.get(ManagerPreferredlayoutsize)).setRelativeY(((s)arrayList.get(ManagerPreferredlayoutsize)).getRelativeY() - paramDouble2);
         } 
-        if (arrayList.get(b) instanceof Gauge) {
-          Gauge gauge = (Gauge)arrayList.get(b);
+        if (arrayList.get(ManagerPreferredlayoutsize) instanceof Gauge) {
+          Gauge gauge = (Gauge)arrayList.get(ManagerPreferredlayoutsize);
           if (gauge.getGroupId() > 0)
             gauge.setGroupId(gauge.getGroupId() + 1); 
         } 
-        b(arrayList.get(b));
-        ((s)arrayList.get(b)).goDead();
+        ManagerPreferredlayoutsize(arrayList.get(ManagerPreferredlayoutsize));
+        ((s)arrayList.get(ManagerPreferredlayoutsize)).goDead();
       } 
-    } catch (a a1) {
-      bV.d(a1.getMessage(), this);
+    } catch (ExceptionInVPackage a1) {
+      bV.IInterfaceDelta(a1.getMessage(), this);
     } 
     this.aF.clear();
     for (s s : arrayList)
@@ -1862,14 +1862,14 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ay() {
-    Color color = bV.a(this, g.b("Choose Background Color"), getBackground());
+    Color color = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Choose Background Color"), getBackground());
     setBackground(color);
     k(false);
   }
   
   private void az() {
-    Color color = bV.a(this, g.b("Choose Background Dither Color"), C());
-    a(color);
+    Color color = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Choose Background Dither Color"), C());
+    ExceptionInVPackage(color);
     k(false);
     this.aj = null;
   }
@@ -1884,88 +1884,88 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private void aA() {
     String str = "Select Indicator Off Image";
-    aj aj = new aj(bV.b(this), j.G(), str);
-    bV.a(this, (Component)aj);
-    aj.a(new D(this));
+    aj aj = new aj(bV.ManagerPreferredlayoutsize(this), IComponentJuliet.G(), str);
+    bV.ExceptionInVPackage(this, (Component)aj);
+    aj.ExceptionInVPackage(new D(this));
     aj.setVisible(true);
   }
   
-  public void d(s params) {
+  public void IInterfaceDelta(s params) {
     if (params instanceof Gauge) {
       ad ad = new ad((Gauge)params);
-      ad.a(this);
+      ad.ExceptionInVPackage(this);
     } 
   }
   
-  public void m() {
-    String str = g.b("Add Gauges");
+  public void RComponentMike() {
+    String str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Add Gauges");
     ArrayList<File> arrayList = new ArrayList();
-    arrayList.add(j.j());
-    arrayList.add(j.h());
-    g g = new g(bV.a(this), arrayList, str);
-    g.a((et)new dQ((a.a()).an, str));
-    w.a(g, this);
-    g.a(new E(this));
-    g.setVisible(true);
+    arrayList.add(IComponentJuliet.IComponentJuliet());
+    arrayList.add(IComponentJuliet.h());
+    ExceptionPrintstacktrace ExceptionPrintstacktrace = new ExceptionPrintstacktrace(bV.ExceptionInVPackage(this), arrayList, str);
+    ExceptionPrintstacktrace.ExceptionInVPackage((et)new dQ((ExceptionInVPackage.ExceptionInVPackage()).an, str));
+    w.ExceptionInVPackage(ExceptionPrintstacktrace, this);
+    ExceptionPrintstacktrace.ExceptionInVPackage(new E(this));
+    ExceptionPrintstacktrace.setVisible(true);
   }
   
   public void n() {
-    if (i.a().a("LKMFSLKFDSLK;LKM09")) {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("LKMFSLKFDSLK;LKM09")) {
       DashTuningPanel dashTuningPanel = new DashTuningPanel();
       try {
-        b(dashTuningPanel);
-        a(dashTuningPanel, true);
-      } catch (a a1) {}
+        ManagerPreferredlayoutsize(dashTuningPanel);
+        ExceptionInVPackage(dashTuningPanel, true);
+      } catch (ExceptionInVPackage a1) {}
       validate();
     } 
   }
   
-  public void o() {
-    if (i.a().a("LKMFSLKFDSLK;LKM09")) {
+  public void RInterfaceOscar() {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("LKMFSLKFDSLK;LKM09")) {
       SelectableTableComponent selectableTableComponent = new SelectableTableComponent();
       try {
-        b(selectableTableComponent);
-        a(selectableTableComponent, true);
-      } catch (a a1) {}
+        ManagerPreferredlayoutsize(selectableTableComponent);
+        ExceptionInVPackage(selectableTableComponent, true);
+      } catch (ExceptionInVPackage a1) {}
       validate();
     } 
   }
   
-  public void p() {
+  public void RInterfacePapa() {
     Indicator indicator = new Indicator();
     try {
-      b(indicator);
-      a(indicator, true);
-    } catch (a a1) {}
+      ManagerPreferredlayoutsize(indicator);
+      ExceptionInVPackage(indicator, true);
+    } catch (ExceptionInVPackage a1) {}
     validate();
   }
   
   public void q() {
     DashLabel dashLabel = new DashLabel();
     try {
-      b(dashLabel);
-      a(dashLabel, true);
-    } catch (a a1) {}
+      ManagerPreferredlayoutsize(dashLabel);
+      ExceptionInVPackage(dashLabel, true);
+    } catch (ExceptionInVPackage a1) {}
     validate();
   }
   
-  public void a(Component paramComponent) {
-    int i = getComponentZOrder(paramComponent);
-    if (i >= 0 && i < getComponentCount() - 1)
-      add(paramComponent, i + 1); 
+  public void ExceptionInVPackage(Component paramComponent) {
+    int RInterfaceIndia = getComponentZOrder(paramComponent);
+    if (RInterfaceIndia >= 0 && RInterfaceIndia < getComponentCount() - 1)
+      add(paramComponent, RInterfaceIndia + 1); 
   }
   
-  public void b(Component paramComponent) {
-    int i = getComponentZOrder(paramComponent);
-    if (i > 0 && i < getComponentCount() - 1)
-      add(paramComponent, i - 1); 
+  public void ManagerPreferredlayoutsize(Component paramComponent) {
+    int RInterfaceIndia = getComponentZOrder(paramComponent);
+    if (RInterfaceIndia > 0 && RInterfaceIndia < getComponentCount() - 1)
+      add(paramComponent, RInterfaceIndia - 1); 
   }
   
-  public void c(Component paramComponent) {
+  public void ArrayListInIPackage(Component paramComponent) {
     add(paramComponent, 0);
   }
   
-  public void d(Component paramComponent) {
+  public void IInterfaceDelta(Component paramComponent) {
     add(paramComponent, getComponentCount() - 1);
   }
   
@@ -1973,130 +1973,130 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.aF;
   }
   
-  public void a(Indicator paramIndicator, String paramString1, String paramString2) {
+  public void ExceptionInVPackage(Indicator paramIndicator, String paramString1, String paramString2) {
     ak ak = null;
-    if (paramString2.equals(cu.a)) {
-      ak = d.a().c(paramString1);
+    if (paramString2.equals(cu.ExceptionInVPackage)) {
+      ak = IInterfaceDelta.ExceptionInVPackage().ArrayListInIPackage(paramString1);
     } else {
-      T t = T.a();
+      T t = T.ExceptionInVPackage();
       R r = null;
       if (paramString2 == null || paramString2.length() == 0) {
-        r = t.c();
+        r = t.ArrayListInIPackage();
       } else {
-        r = t.c(paramString2);
+        r = t.ArrayListInIPackage(paramString2);
       } 
       ak = r.n(paramString1);
     } 
     paramIndicator.setEcuConfigurationName(paramString2);
     paramIndicator.setOutputChannel(ak.f());
-    paramIndicator.setOnText(ak.a().toString());
-    paramIndicator.setOffText(ak.d().toString());
+    paramIndicator.setOnText(ak.ExceptionInVPackage().toString());
+    paramIndicator.setOffText(ak.IInterfaceDelta().toString());
     paramIndicator.setShortClickAction(ak.l());
-    paramIndicator.setLongClickAction(ak.m());
+    paramIndicator.setLongClickAction(ak.RComponentMike());
     try {
       paramIndicator.subscribeToOutput();
-    } catch (a a1) {
-      bV.d(a1.getMessage(), this);
+    } catch (ExceptionInVPackage a1) {
+      bV.IInterfaceDelta(a1.getMessage(), this);
     } 
     paramIndicator.setDirty(true);
     paramIndicator.repaint();
     this.aG = false;
   }
   
-  private List a(Gauge paramGauge) {
-    int i = paramGauge.getGroupId();
+  private List ExceptionInVPackage(Gauge paramGauge) {
+    int RInterfaceIndia = paramGauge.getGroupId();
     ArrayList<Gauge> arrayList = new ArrayList();
-    if (i == Gauge.Q) {
+    if (RInterfaceIndia == Gauge.Q) {
       arrayList.add(paramGauge);
       return arrayList;
     } 
-    for (byte b = 0; b < getComponentCount(); b++) {
-      if (getComponent(b) instanceof Gauge) {
-        Gauge gauge = (Gauge)getComponent(b);
-        if (gauge.getGroupId() == i && !arrayList.contains(gauge))
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      if (getComponent(ManagerPreferredlayoutsize) instanceof Gauge) {
+        Gauge gauge = (Gauge)getComponent(ManagerPreferredlayoutsize);
+        if (gauge.getGroupId() == RInterfaceIndia && !arrayList.contains(gauge))
           arrayList.add(gauge); 
       } 
     } 
     return arrayList;
   }
   
-  public void a(Gauge paramGauge, String paramString1, String paramString2) {
-    T t = T.a();
+  public void ExceptionInVPackage(Gauge paramGauge, String paramString1, String paramString2) {
+    T t = T.ExceptionInVPackage();
     R r = null;
     if (paramString2 == null || paramString2.length() == 0) {
-      r = t.c();
+      r = t.ArrayListInIPackage();
     } else {
-      r = t.c(paramString2);
+      r = t.ArrayListInIPackage(paramString2);
     } 
     ah ah = null;
-    if (paramString2.equals(cu.a)) {
-      ah = c.a().a(paramString1);
+    if (paramString2.equals(cu.ExceptionInVPackage)) {
+      ah = ArrayListInIPackage.ExceptionInVPackage().ExceptionInVPackage(paramString1);
     } else {
       ah = r.k(paramString1);
     } 
     if (ah == null) {
-      D.c("Gauge:" + paramString1 + " not found in current configuration.");
+      D.ArrayListInIPackage("Gauge:" + paramString1 + " not found in current configuration.");
       return;
     } 
-    for (Gauge gauge : a(paramGauge)) {
+    for (Gauge gauge : ExceptionInVPackage(paramGauge)) {
       if (!gauge.title().isEmpty())
         gauge.setTitle(ah.k().toString()); 
       gauge.setEcuConfigurationName(paramString2);
-      gauge.setUnits(ah.j().toString());
-      gauge.setMinVP(ah.b());
+      gauge.setUnits(ah.IComponentJuliet().toString());
+      gauge.setMinVP(ah.ManagerPreferredlayoutsize());
       gauge.setMaxVP(ah.e());
       if (gauge.isGoingDead())
-        gauge.setValue(ah.d()); 
+        gauge.setValue(ah.IInterfaceDelta()); 
       gauge.setShortClickAction(ah.r());
       gauge.setLongClickAction(ah.s());
-      if (gauge.getValue() > ah.d() || gauge.getValue() < ah.a()) {
-        gauge.setValue(ah.a());
+      if (gauge.getValue() > ah.IInterfaceDelta() || gauge.getValue() < ah.ExceptionInVPackage()) {
+        gauge.setValue(ah.ExceptionInVPackage());
         gauge.invalidate();
       } 
       gauge.setLowWarningVP(ah.f());
-      gauge.setLowCriticalVP(ah.o());
-      gauge.setHighWarningVP(ah.g());
+      gauge.setLowCriticalVP(ah.RInterfaceOscar());
+      gauge.setHighWarningVP(ah.ExceptionPrintstacktrace());
       gauge.setHighCriticalVP(ah.h());
-      gauge.setOutputChannel(ah.i());
-      gauge.setValueDigitsVP(ah.m());
+      gauge.setOutputChannel(ah.RInterfaceIndia());
+      gauge.setValueDigitsVP(ah.RComponentMike());
       gauge.setLabelDigits(ah.n());
       try {
         gauge.subscribeToOutput();
-      } catch (a a1) {
-        bV.d(a1.getMessage(), this);
+      } catch (ExceptionInVPackage a1) {
+        bV.IInterfaceDelta(a1.getMessage(), this);
       } 
       gauge.invalidate();
       gauge.repaint();
     } 
     this.aG = false;
-    a(paramGauge, paramString1);
+    ExceptionInVPackage(paramGauge, paramString1);
   }
   
-  private void a(s params, String paramString) {
-    byte b = -1;
+  private void ExceptionInVPackage(s params, String paramString) {
+    byte ManagerPreferredlayoutsize = -1;
     for (byte b1 = 0; b1 < getComponentCount(); b1++) {
       if (getComponent(b1).equals(params)) {
-        b = b1;
+        ManagerPreferredlayoutsize = b1;
         break;
       } 
     } 
     boolean bool = A();
     Iterator<aG> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).a(b, paramString, bool); 
+      ((aG)iterator.next()).ExceptionInVPackage(ManagerPreferredlayoutsize, paramString, bool); 
   }
   
   private void aB() {
     Iterator<aG> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).a(); 
+      ((aG)iterator.next()).ExceptionInVPackage(); 
   }
   
-  public void a(aG paramaG) {
+  public void ExceptionInVPackage(aG paramaG) {
     this.aW.add(paramaG);
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     for (s s : r()) {
       if (s instanceof Gauge)
         try {
@@ -2106,7 +2106,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           gauge.setBackgroundImageFileName((String)null);
           gauge.setNeedleImageFileName((String)null);
         } catch (Exception exception) {
-          bV.d("Error loading Gauge Painter: " + paramString, this);
+          bV.IInterfaceDelta("Error loading Gauge Painter: " + paramString, this);
           break;
         }  
     } 
@@ -2120,7 +2120,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           ((Indicator)s).setPainter(indicatorPainter);
           s.repaint();
         } catch (Exception exception) {
-          bV.d("Error loading Indicator Painter: " + paramString, this);
+          bV.IInterfaceDelta("Error loading Indicator Painter: " + paramString, this);
         }  
     } 
   }
@@ -2134,7 +2134,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       Graphics2D graphics2D = (Graphics2D)this.aj.getGraphics();
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      a(this.aj.getGraphics(), true, false);
+      ExceptionInVPackage(this.aj.getGraphics(), true, false);
     } 
     return this.aj;
   }
@@ -2148,8 +2148,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
       Graphics2D graphics2D = (Graphics2D)this.ak.getGraphics();
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      a(graphics2D, true);
-      c(graphics2D);
+      ExceptionInVPackage(graphics2D, true);
+      ArrayListInIPackage(graphics2D);
     } 
     return this.ak;
   }
@@ -2161,25 +2161,25 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public void t() {
     if (aE())
       if (this.an == null) {
-        D.c("FullScreen");
+        D.ArrayListInIPackage("FullScreen");
         y();
       } else {
-        D.c("End FullScreen");
+        D.ArrayListInIPackage("End FullScreen");
         u();
       }  
   }
   
-  public void a(u paramu) {
+  public void ExceptionInVPackage(u paramu) {
     this.aX.add(paramu);
   }
   
-  public void b(u paramu) {
+  public void ManagerPreferredlayoutsize(u paramu) {
     this.aX.remove(paramu);
   }
   
   private boolean aE() {
     for (u u : this.aX) {
-      if (!u.a())
+      if (!u.ExceptionInVPackage())
         return false; 
     } 
     return true;
@@ -2190,10 +2190,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.ao.add(this);
       doLayout();
       this.ao.validate();
-      if (J.c());
+      if (J.ArrayListInIPackage());
       this.an.dispose();
       this.an = null;
-      this.i = false;
+      this.RInterfaceIndia = false;
       if (this.aj != null)
         this.aj.flush(); 
     } 
@@ -2208,7 +2208,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
         return this.an;
       } finally {
         this.an = null;
-        this.i = false;
+        this.RInterfaceIndia = false;
         if (this.aj != null)
           this.aj.flush(); 
       } 
@@ -2218,20 +2218,20 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void w() {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         this.aF.add(s);
       } 
     } 
     repaint();
   }
   
-  public void a(Rectangle paramRectangle) {
+  public void ExceptionInVPackage(Rectangle paramRectangle) {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        s s = (s)arrayOfComponent[b];
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         Rectangle rectangle = s.getBounds();
         if (rectangle.x > paramRectangle.x && rectangle.y > paramRectangle.y && rectangle.x + rectangle.width < paramRectangle.x + paramRectangle.width && rectangle.y + rectangle.height < paramRectangle.y + paramRectangle.height && !this.aF.contains(s))
           this.aF.add(s); 
@@ -2245,7 +2245,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public int x() {
-    String str = c(aL, "-1");
+    String str = ArrayListInIPackage(aL, "-1");
     try {
       return Integer.parseInt(str);
     } catch (NumberFormatException numberFormatException) {
@@ -2254,10 +2254,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void y() {
-    a(x());
+    ExceptionInVPackage(x());
   }
   
-  public void a(Window paramWindow) {
+  public void ExceptionInVPackage(Window paramWindow) {
     if (this.aO) {
       if (s())
         u(); 
@@ -2265,7 +2265,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.an = paramWindow;
       JPanel jPanel = new JPanel();
       jPanel.setDoubleBuffered(true);
-      jPanel.setLayout((LayoutManager)new b());
+      jPanel.setLayout((LayoutManager)new ManagerPreferredlayoutsize());
       jPanel.setBackground(getBackground());
       jPanel.add(this);
       this.an.add("Center", jPanel);
@@ -2279,74 +2279,74 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     if (this.aO && !s()) {
       GraphicsDevice graphicsDevice;
       Rectangle rectangle;
       this.ao = getParent();
-      JDialog jDialog = new JDialog(bV.a(this));
+      JDialog jDialog = new JDialog(bV.ExceptionInVPackage(this));
       jDialog.setUndecorated(true);
       this.an = jDialog;
       this.an.setLayout(new BorderLayout());
-      if (J.b() || paramInt < 0) {
+      if (J.ManagerPreferredlayoutsize() || paramInt < 0) {
         graphicsDevice = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
         Point point = MouseInfo.getPointerInfo().getLocation();
-        rectangle = dn.a(point.x, point.y);
+        rectangle = dn.ExceptionInVPackage(point.x, point.y);
       } else {
         graphicsDevice = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()[paramInt];
-        rectangle = dn.a(paramInt);
+        rectangle = dn.ExceptionInVPackage(paramInt);
       } 
       this.an.setBounds(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
       JPanel jPanel = new JPanel();
       jPanel.setDoubleBuffered(true);
-      jPanel.setLayout((LayoutManager)new b());
+      jPanel.setLayout((LayoutManager)new ManagerPreferredlayoutsize());
       jPanel.setBackground(getBackground());
       jPanel.add(this);
       this.an.add("Center", jPanel);
-      if (J.c()) {
-        K.a(this.an);
-        K.b(this.an);
-      } else if (!J.a() && graphicsDevice.isFullScreenSupported()) {
+      if (J.ArrayListInIPackage()) {
+        K.ExceptionInVPackage(this.an);
+        K.ManagerPreferredlayoutsize(this.an);
+      } else if (!J.ExceptionInVPackage() && graphicsDevice.isFullScreenSupported()) {
         graphicsDevice.setFullScreenWindow(this.an);
       } 
       this.an.setVisible(true);
       this.an.validate();
       this.ao.repaint();
-      b(aL, "" + paramInt);
+      ManagerPreferredlayoutsize(aL, "" + paramInt);
     } 
   }
   
-  private void b(String paramString1, String paramString2) {
-    if (this.j != null)
-      this.j.a(paramString1, paramString2); 
+  private void ManagerPreferredlayoutsize(String paramString1, String paramString2) {
+    if (this.IComponentJuliet != null)
+      this.IComponentJuliet.ExceptionInVPackage(paramString1, paramString2); 
   }
   
-  private String c(String paramString1, String paramString2) {
-    return (this.j != null) ? this.j.b(paramString1, paramString2) : paramString2;
+  private String ArrayListInIPackage(String paramString1, String paramString2) {
+    return (this.IComponentJuliet != null) ? this.IComponentJuliet.ManagerPreferredlayoutsize(paramString1, paramString2) : paramString2;
   }
   
-  public s a(int paramInt1, int paramInt2) {
+  public s ExceptionInVPackage(int paramInt1, int paramInt2) {
     for (s s : r()) {
       int k = s.getX() + s.getWidth() - this.am;
-      int m = s.getY() + s.getHeight() - this.am;
+      int RComponentMike = s.getY() + s.getHeight() - this.am;
       int n = s.getX() + s.getWidth();
       int i1 = s.getY() + s.getHeight();
-      if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= m && paramInt2 <= i1)
+      if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= RComponentMike && paramInt2 <= i1)
         return s; 
     } 
     Component[] arrayOfComponent = getComponents();
-    for (int i = getComponentCount() - 1; i >= 0; i--) {
-      if (arrayOfComponent[i] instanceof s) {
-        s s = (s)arrayOfComponent[i];
+    for (int RInterfaceIndia = getComponentCount() - 1; RInterfaceIndia >= 0; RInterfaceIndia--) {
+      if (arrayOfComponent[RInterfaceIndia] instanceof s) {
+        s s = (s)arrayOfComponent[RInterfaceIndia];
         int k = s.getX();
-        int m = s.getY();
+        int RComponentMike = s.getY();
         int n = s.getX() + s.getWidth();
         int i1 = s.getY() + s.getHeight();
         if (s instanceof aR) {
           aR aR = (aR)s;
-          if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= m && paramInt2 <= i1 && aR.isComponentPaintedAt(paramInt1 - k, paramInt2 - m))
+          if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= RComponentMike && paramInt2 <= i1 && aR.isComponentPaintedAt(paramInt1 - k, paramInt2 - RComponentMike))
             return s; 
-        } else if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= m && paramInt2 <= i1) {
+        } else if (paramInt1 >= k && paramInt1 <= n && paramInt2 >= RComponentMike && paramInt2 <= i1) {
           return s;
         } 
       } 
@@ -2362,18 +2362,18 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return (this.as != null) ? this.as : super.getMinimumSize();
   }
   
-  public void a(dR paramdR) {
+  public void ExceptionInVPackage(dR paramdR) {
     this.aU.add(paramdR);
   }
   
-  private void d(String paramString1, String paramString2) {
+  private void IInterfaceDelta(String paramString1, String paramString2) {
     Iterator<dR> iterator = this.aU.iterator();
     while (iterator.hasNext()) {
       try {
         dR dR = iterator.next();
-        dR.a(paramString1, paramString2);
+        dR.ExceptionInVPackage(paramString1, paramString2);
       } catch (Exception exception) {
-        D.b("Problem encountered while notifying PropertyChangedListener. Ignored and continued.");
+        D.ManagerPreferredlayoutsize("Problem encountered while notifying PropertyChangedListener. Ignored and continued.");
         exception.printStackTrace();
       } 
     } 
@@ -2383,37 +2383,37 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.av;
   }
   
-  public void c(boolean paramBoolean) {
+  public void ArrayListInIPackage(boolean paramBoolean) {
     this.av = paramBoolean;
   }
   
-  public void a(String paramString, byte[] paramArrayOfbyte) {
-    if (paramString.equals(this.k.c()) && this.f != null)
-      this.f.c(); 
+  public void ExceptionInVPackage(String paramString, byte[] paramArrayOfbyte) {
+    if (paramString.equals(this.k.ArrayListInIPackage()) && this.f != null)
+      this.f.ArrayListInIPackage(); 
   }
   
   public void close() {
-    D.c("Closing Dashboard " + getName());
-    c();
+    D.ArrayListInIPackage("Closing Dashboard " + getName());
+    ArrayListInIPackage();
   }
   
   public boolean A() {
     return this.aS;
   }
   
-  public void d(boolean paramBoolean) {
+  public void IInterfaceDelta(boolean paramBoolean) {
     this.aS = paramBoolean;
   }
   
   public boolean B() {
-    return a.a().c(a.bo, true);
+    return ExceptionInVPackage.ExceptionInVPackage().ArrayListInIPackage(ExceptionInVPackage.bo, true);
   }
   
   public Color C() {
     return this.aJ;
   }
   
-  public void a(Color paramColor) {
+  public void ExceptionInVPackage(Color paramColor) {
     this.aJ = paramColor;
   }
   
@@ -2434,25 +2434,25 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void aF() {
-    Z z = b(this.k);
-    a(z);
+    Z z = ManagerPreferredlayoutsize(this.k);
+    ExceptionInVPackage(z);
     Iterator<aG> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).a(); 
+      ((aG)iterator.next()).ExceptionInVPackage(); 
   }
   
   public void E() {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s)
-        c((s)arrayOfComponent[b]); 
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s)
+        ArrayListInIPackage((s)arrayOfComponent[ManagerPreferredlayoutsize]); 
     } 
-    i((String)null);
-    a((Image)null);
+    RInterfaceIndia((String)null);
+    ExceptionInVPackage((Image)null);
   }
   
-  public void a(ap paramap) {
-    this.j = paramap;
+  public void ExceptionInVPackage(ap paramap) {
+    this.IComponentJuliet = paramap;
   }
   
   public boolean F() {
@@ -2467,7 +2467,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.ba;
   }
   
-  public void g(boolean paramBoolean) {
+  public void ExceptionPrintstacktrace(boolean paramBoolean) {
     this.ba = paramBoolean;
   }
   
@@ -2475,7 +2475,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.bb;
   }
   
-  public void a(double paramDouble) {
+  public void ExceptionInVPackage(double paramDouble) {
     this.bb = paramDouble;
   }
   
@@ -2483,7 +2483,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.bc;
   }
   
-  public void b(double paramDouble) {
+  public void ManagerPreferredlayoutsize(double paramDouble) {
     this.bc = paramDouble;
   }
   
@@ -2495,7 +2495,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
             s s = (s)component;
             try {
               s.subscribeToOutput();
-            } catch (a a1) {}
+            } catch (ExceptionInVPackage a1) {}
           } 
         } 
       } else {
@@ -2504,8 +2504,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
             s s = (s)component;
             try {
               s.unsubscribeToOutput();
-            } catch (a a1) {
-              D.b("Failed to subscribe DashComponent: " + a1.getLocalizedMessage());
+            } catch (ExceptionInVPackage a1) {
+              D.ManagerPreferredlayoutsize("Failed to subscribe DashComponent: " + a1.getLocalizedMessage());
             } 
           } 
         } 
@@ -2517,11 +2517,11 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return (this.ap == null) ? "" : this.ap;
   }
   
-  public void a(Image paramImage) {
+  public void ExceptionInVPackage(Image paramImage) {
     this.aq = paramImage;
   }
   
-  public void i(String paramString) {
+  public void RInterfaceIndia(String paramString) {
     this.ap = paramString;
     this.aq = null;
     this.aj = null;
@@ -2531,8 +2531,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.aK;
   }
   
-  public void j(String paramString) {
-    if (paramString != null && (paramString.equals(p) || paramString.equals(o) || paramString.equals(n))) {
+  public void IComponentJuliet(String paramString) {
+    if (paramString != null && (paramString.equals(RInterfacePapa) || paramString.equals(RInterfaceOscar) || paramString.equals(n))) {
       this.aK = paramString;
       this.aj = null;
     } 
@@ -2546,14 +2546,14 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.at;
   }
   
-  public void i(boolean paramBoolean) {
+  public void RInterfaceIndia(boolean paramBoolean) {
     if (paramBoolean)
       this.aG = false; 
     this.at = paramBoolean;
     this.aj = null;
     this.ak = null;
     repaint();
-    d(Y, "" + paramBoolean);
+    IInterfaceDelta(Y, "" + paramBoolean);
   }
   
   public boolean M() {
@@ -2565,7 +2565,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     aG();
   }
   
-  public void a(s params, boolean paramBoolean) {
+  public void ExceptionInVPackage(s params, boolean paramBoolean) {
     if (paramBoolean)
       this.aF.clear(); 
     if (this.aF.contains(params) && !paramBoolean) {
@@ -2576,39 +2576,39 @@ public class x extends JComponent implements aF, aG, ac, bc {
       if (params instanceof Gauge) {
         Gauge gauge = (Gauge)params;
         if (gauge.getGroupId() != Gauge.Q)
-          b(gauge.getGroupId()); 
+          ManagerPreferredlayoutsize(gauge.getGroupId()); 
       } 
     } 
     aG();
   }
   
-  private void b(int paramInt) {
-    for (byte b = 0; b < getComponentCount(); b++) {
-      if (getComponent(b) instanceof Gauge) {
-        Gauge gauge = (Gauge)getComponent(b);
+  private void ManagerPreferredlayoutsize(int paramInt) {
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      if (getComponent(ManagerPreferredlayoutsize) instanceof Gauge) {
+        Gauge gauge = (Gauge)getComponent(ManagerPreferredlayoutsize);
         if (gauge.getGroupId() == paramInt && gauge.getGroupId() != Gauge.Q && !this.aF.contains(gauge))
           this.aF.add(gauge); 
       } 
     } 
   }
   
-  public void j(boolean paramBoolean) {
+  public void IComponentJuliet(boolean paramBoolean) {
     this.aP = paramBoolean;
-    for (byte b = 0; b < getComponentCount(); b++) {
-      if (getComponent(b) instanceof s) {
-        s s = (s)getComponent(b);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      if (getComponent(ManagerPreferredlayoutsize) instanceof s) {
+        s s = (s)getComponent(ManagerPreferredlayoutsize);
         s.setAntialiasingOn(paramBoolean);
       } 
     } 
     this.aj = null;
     repaint();
-    d("antiAliasingOn", "" + paramBoolean);
+    IInterfaceDelta("antiAliasingOn", "" + paramBoolean);
   }
   
   public w O() {
     if (this.aE == null) {
       this.aE = new w();
-      a((f)this.aE);
+      ExceptionInVPackage((f)this.aE);
     } 
     return this.aE;
   }
@@ -2618,7 +2618,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       s.setLocation((s.getLocation()).x + 1, (s.getLocation()).y);
       s.updateRelativeBoundsToCurrent();
     } 
-    a(true);
+    ExceptionInVPackage(true);
   }
   
   public void Q() {
@@ -2626,7 +2626,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       s.setLocation((s.getLocation()).x - 1, (s.getLocation()).y);
       s.updateRelativeBoundsToCurrent();
     } 
-    a(true);
+    ExceptionInVPackage(true);
   }
   
   public void R() {
@@ -2634,7 +2634,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       s.setLocation((s.getLocation()).x, (s.getLocation()).y - 1);
       s.updateRelativeBoundsToCurrent();
     } 
-    a(true);
+    ExceptionInVPackage(true);
   }
   
   public void S() {
@@ -2642,7 +2642,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       s.setLocation((s.getLocation()).x, (s.getLocation()).y + 1);
       s.updateRelativeBoundsToCurrent();
     } 
-    a(true);
+    ExceptionInVPackage(true);
   }
   
   public void T() {
@@ -2651,7 +2651,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       s.updateRelativeBoundsToCurrent();
       s.validate();
     } 
-    a(true);
+    ExceptionInVPackage(true);
   }
   
   public void U() {
@@ -2686,21 +2686,21 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void Y() {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof s) {
-        if (g() == null) {
-          a((s)arrayOfComponent[b], true);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
+      if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
+        if (ExceptionPrintstacktrace() == null) {
+          ExceptionInVPackage((s)arrayOfComponent[ManagerPreferredlayoutsize], true);
           repaint();
           return;
         } 
-        if (r().contains(arrayOfComponent[b])) {
-          if (arrayOfComponent.length > b + 1 && arrayOfComponent[b + 1] instanceof s) {
-            a((s)arrayOfComponent[b + 1], true);
+        if (r().contains(arrayOfComponent[ManagerPreferredlayoutsize])) {
+          if (arrayOfComponent.length > ManagerPreferredlayoutsize + 1 && arrayOfComponent[ManagerPreferredlayoutsize + 1] instanceof s) {
+            ExceptionInVPackage((s)arrayOfComponent[ManagerPreferredlayoutsize + 1], true);
             repaint();
             return;
           } 
           if (arrayOfComponent[0] instanceof s) {
-            a((s)arrayOfComponent[0], true);
+            ExceptionInVPackage((s)arrayOfComponent[0], true);
             repaint();
             return;
           } 
@@ -2711,21 +2711,21 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void Z() {
     Component[] arrayOfComponent = getComponents();
-    for (int i = arrayOfComponent.length - 1; i >= 0; i--) {
-      if (arrayOfComponent[i] instanceof s) {
-        if (g() == null) {
-          a((s)arrayOfComponent[i], true);
+    for (int RInterfaceIndia = arrayOfComponent.length - 1; RInterfaceIndia >= 0; RInterfaceIndia--) {
+      if (arrayOfComponent[RInterfaceIndia] instanceof s) {
+        if (ExceptionPrintstacktrace() == null) {
+          ExceptionInVPackage((s)arrayOfComponent[RInterfaceIndia], true);
           repaint();
           return;
         } 
-        if (r().contains(arrayOfComponent[i])) {
-          if (i > 0 && arrayOfComponent[i - 1] instanceof s) {
-            a((s)arrayOfComponent[i - 1], true);
+        if (r().contains(arrayOfComponent[RInterfaceIndia])) {
+          if (RInterfaceIndia > 0 && arrayOfComponent[RInterfaceIndia - 1] instanceof s) {
+            ExceptionInVPackage((s)arrayOfComponent[RInterfaceIndia - 1], true);
             repaint();
             return;
           } 
           if (arrayOfComponent[arrayOfComponent.length - 1] instanceof s) {
-            a((s)arrayOfComponent[arrayOfComponent.length - 1], true);
+            ExceptionInVPackage((s)arrayOfComponent[arrayOfComponent.length - 1], true);
             repaint();
             return;
           } 
@@ -2734,13 +2734,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
   }
   
-  public void a(f paramf) {
+  public void ExceptionInVPackage(f paramf) {
     this.aV.add(paramf);
   }
   
   private void aG() {
     for (f f : this.aV)
-      f.a(r()); 
+      f.ExceptionInVPackage(r()); 
   }
   
   public String aa() {
@@ -2749,14 +2749,14 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void k(String paramString) {
     if (!F())
-      a(paramString, false); 
+      ExceptionInVPackage(paramString, false); 
   }
   
-  public void a(String paramString, boolean paramBoolean) {
+  public void ExceptionInVPackage(String paramString, boolean paramBoolean) {
     this.aH = paramString;
-    for (byte b = 0; b < getComponentCount(); b++) {
-      if (getComponent(b) instanceof s) {
-        s s = (s)getComponent(b);
+    for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
+      if (getComponent(ManagerPreferredlayoutsize) instanceof s) {
+        s s = (s)getComponent(ManagerPreferredlayoutsize);
         s.setDirty(true);
       } 
     } 
@@ -2764,9 +2764,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
     this.al = null;
     repaint();
     if (paramString != null && paramString.length() > 0) {
-      c(!paramBoolean);
+      ArrayListInIPackage(!paramBoolean);
     } else {
-      c(true);
+      ArrayListInIPackage(true);
     } 
   }
   
@@ -2789,7 +2789,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return this.ar;
   }
   
-  public void m(String paramString) {
+  public void RComponentMike(String paramString) {
     this.ar = paramString;
   }
   
@@ -2802,27 +2802,27 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public boolean af() {
-    return (this.aO && i.a().a("d67nhtrbd4es8j"));
+    return (this.aO && RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("d67nhtrbd4es8j"));
   }
   
   public void l(boolean paramBoolean) {
     this.aO = paramBoolean;
   }
   
-  public Z b(R paramR) {
+  public Z ManagerPreferredlayoutsize(R paramR) {
     if (this.aB != null)
       return this.aB; 
     aa aa = new aa();
     try {
-      this.aC = aa.a(paramR, "FrontPage", 1);
-    } catch (a a1) {
+      this.aC = aa.ExceptionInVPackage(paramR, "FrontPage", 1);
+    } catch (ExceptionInVPackage a1) {
       Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
-      this.aC = aa.a(paramR, "FrontPage", 2, 4);
+      this.aC = aa.ExceptionInVPackage(paramR, "FrontPage", 2, 4);
     } 
     return this.aC;
   }
   
-  public void b(Z paramZ) {
+  public void ManagerPreferredlayoutsize(Z paramZ) {
     this.aB = paramZ;
   }
   
@@ -2834,24 +2834,24 @@ public class x extends JComponent implements aF, aG, ac, bc {
     this.aD = paramString;
   }
   
-  private boolean a(d paramd) {
+  private boolean ExceptionInVPackage(IInterfaceDelta paramd) {
     if (paramd.getShortClickAction() != null && !paramd.getShortClickAction().isEmpty())
       try {
-        g.a().c(paramd.getShortClickAction());
+        ExceptionPrintstacktrace.ExceptionInVPackage().ArrayListInIPackage(paramd.getShortClickAction());
         return true;
       } catch (e e) {
-        bV.d(e.getLocalizedMessage(), this.ao);
-        D.a("Unable to fire Action: " + e.getLocalizedMessage());
+        bV.IInterfaceDelta(e.getLocalizedMessage(), this.ao);
+        D.ExceptionInVPackage("Unable to fire Action: " + e.getLocalizedMessage());
       }  
     return false;
   }
   
-  private void b(d paramd) {
+  private void ManagerPreferredlayoutsize(IInterfaceDelta paramd) {
     if (paramd.getLongClickAction() != null && !paramd.getLongClickAction().isEmpty())
       try {
-        g.a().c(paramd.getLongClickAction());
+        ExceptionPrintstacktrace.ExceptionInVPackage().ArrayListInIPackage(paramd.getLongClickAction());
       } catch (e e) {
-        bV.d(e.getLocalizedMessage(), this.ao);
+        bV.IInterfaceDelta(e.getLocalizedMessage(), this.ao);
         Logger.getLogger(x.class.getName()).log(Level.SEVERE, "Unable to fire Action", (Throwable)e);
       }  
   }

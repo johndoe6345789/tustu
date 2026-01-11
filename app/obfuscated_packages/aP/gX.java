@@ -1,14 +1,14 @@
 package aP;
 
-import bA.e;
-import s.f;
-import s.g;
+import bA.JMenuItemExtensionInBaPackage;
+import s.SInterfaceFoxtrot;
+import s.SComponentGolf;
 
-class gX extends e implements f {
+class gX extends JMenuItemExtensionInBaPackage implements SInterfaceFoxtrot {
   String a = null;
   
   public gX(dB paramdB, String paramString, boolean paramBoolean) {
-    setText(g.b(paramString));
+    setText(SComponentGolf.b(paramString));
     a(paramBoolean);
     this.a = paramString;
     addMouseListener(new gU(paramdB, this));
@@ -16,7 +16,7 @@ class gX extends e implements f {
   
   public void a(String paramString) {
     setText(paramString);
-    g.b(this.a, paramString);
+    SComponentGolf.b(this.a, paramString);
   }
   
   public String a() {

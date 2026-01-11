@@ -1,13 +1,13 @@
 package ao;
 
-import i.a;
+import i.IComponentAlpha;
 
-class ez implements a {
+class ez implements IComponentAlpha {
   ez(er paramer) {}
   
-  public void a(int paramInt) {
-    for (fK fK : this.a.a.values())
-      fK.a(paramInt); 
+  public void IComponentAlpha(int paramInt) {
+    for (fK fK : this.IComponentAlpha.IComponentAlpha.values())
+      fK.IComponentAlpha(paramInt); 
   }
 }
 

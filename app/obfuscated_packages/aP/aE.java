@@ -4,7 +4,7 @@ import bH.X;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.File;
-import r.j;
+import r.ThreadedFile;
 
 class aE extends KeyAdapter {
   aE(au paramau) {}
@@ -17,7 +17,7 @@ class aE extends KeyAdapter {
     } catch (Exception exception) {
       this.a.a.setText(X.b(this.a.a.getText(), "" + paramKeyEvent.getKeyChar(), ""));
     } 
-    String str = j.u();
+    String str = ThreadedFile.u();
     str = str.substring(0, str.lastIndexOf(File.separator));
     this.a.f(str);
   }

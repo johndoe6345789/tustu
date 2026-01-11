@@ -1,26 +1,26 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.j;
 import W.n;
-import ar.c;
-import ar.f;
-import ar.g;
+import ar.ArComponentCharlie;
+import ar.ArComponentFoxtrot;
+import ar.ChangeListener;
 import bH.D;
 import bH.X;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
-import g.b;
-import h.a;
-import h.b;
-import h.g;
-import h.i;
-import i.b;
-import i.c;
-import j.a;
-import j.b;
-import j.c;
+import ChangeListener.ClassTypeInHPackage;
+import h.ExceptionInVPackage;
+import h.ClassTypeInHPackage;
+import h.ChangeListener;
+import h.IOProperties;
+import IOProperties.ClassTypeInHPackage;
+import IOProperties.ArComponentCharlie;
+import j.ExceptionInVPackage;
+import j.ClassTypeInHPackage;
+import j.ArComponentCharlie;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -40,28 +40,28 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.SwingUtilities;
 
-public class aX extends JPanel implements hB, k, l, b {
-  private hx n = hx.a();
+public class aX extends JPanel implements hB, k, l, ClassTypeInHPackage {
+  private hx n = hx.ExceptionInVPackage();
   
-  aw a = new aw(this.n);
+  aw ExceptionInVPackage = new aw(this.n);
   
-  protected u b = new u(this.n);
+  protected u ClassTypeInHPackage = new u(this.n);
   
-  JScrollPane c = null;
+  JScrollPane ArComponentCharlie = null;
   
   bn d = null;
   
   m e = new m(this.n);
   
-  private b o = null;
+  private ClassTypeInHPackage o = null;
   
-  b f = null;
+  ClassTypeInHPackage ArComponentFoxtrot = null;
   
-  hE g = null;
+  hE ChangeListener = null;
   
   String h = null;
   
-  boolean i = false;
+  boolean IOProperties = false;
   
   private JSplitPane p = new JSplitPane();
   
@@ -69,7 +69,7 @@ public class aX extends JPanel implements hB, k, l, b {
   
   boolean j = true;
   
-  g k = new g();
+  ChangeListener k = new ChangeListener();
   
   protected boolean l = false;
   
@@ -80,23 +80,23 @@ public class aX extends JPanel implements hB, k, l, b {
     this.q.setOrientation(0);
     this.q.setOneTouchExpandable(true);
     this.p.setOneTouchExpandable(true);
-    this.p.setDividerSize(eJ.a(8));
-    this.q.setDividerSize(eJ.a(8));
+    this.p.setDividerSize(eJ.ExceptionInVPackage(8));
+    this.q.setDividerSize(eJ.ExceptionInVPackage(8));
     this.p.setResizeWeight(1.0D);
     this.q.setResizeWeight(1.0D);
     this.p.setFont(getFont());
-    bq.a().a(this.e);
-    boolean bool1 = i.a("showDashboard", true);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this.e);
+    boolean bool1 = IOProperties.ExceptionInVPackage("showDashboard", true);
     aY aY = new aY(this);
     this.q.addPropertyChangeListener("dividerLocation", aY);
     ba ba = new ba(this);
     this.p.addPropertyChangeListener("dividerLocation", ba);
-    bq.a().a(this.b);
-    bq.a().a(this);
-    int i = i.b("lineTraceSize", i.ae);
-    this.a.c(i);
-    boolean bool2 = i.a(i.af, i.ag);
-    this.a.b(bool2);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this.ClassTypeInHPackage);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this);
+    int IOProperties = IOProperties.ClassTypeInHPackage("lineTraceSize", IOProperties.ae);
+    this.ExceptionInVPackage.ArComponentCharlie(IOProperties);
+    boolean bool2 = IOProperties.ExceptionInVPackage(IOProperties.af, IOProperties.ag);
+    this.ExceptionInVPackage.ClassTypeInHPackage(bool2);
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(1, 2));
     JPanel jPanel2 = new JPanel();
@@ -107,164 +107,164 @@ public class aX extends JPanel implements hB, k, l, b {
     add("Center", this.q);
     this.p.setBottomComponent(new JLabel());
     SwingUtilities.invokeLater(new bb(this));
-    if (b.a().a("optionalQuickSelect") && i.a("fieldSelectionStyle", "standardSelection").equals("selectFromDash")) {
-      A a = new A();
-      this.b.a(a);
-      this.d = a;
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("optionalQuickSelect") && IOProperties.ExceptionInVPackage("fieldSelectionStyle", "standardSelection").equals("selectFromDash")) {
+      A ExceptionInVPackage = new A();
+      this.ClassTypeInHPackage.ExceptionInVPackage(ExceptionInVPackage);
+      this.d = ExceptionInVPackage;
     } else {
       this.d = new hj(this.n);
       jPanel2.add((hj)this.d, "West", 0);
     } 
-    bq.a().a(this.d);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this.d);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
     jPanel3.add(this.e, "South");
-    if (b.a().a(";lkewlk nbi3k48tjh265'") && i.a(i.aJ, i.aK)) {
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage(";lkewlk nbi3k48tjh265'") && IOProperties.ExceptionInVPackage(IOProperties.aJ, IOProperties.aK)) {
       aj aj = new aj();
-      aj.c();
-      bq.a().a(aj);
+      aj.ArComponentCharlie();
+      bq.ExceptionInVPackage().ExceptionInVPackage(aj);
       jPanel3.add("North", aj);
     } 
     add(jPanel3, "North");
-    jPanel2.add(this.a, "Center");
-    if (b.a().a("tabbedQuickViews")) {
+    jPanel2.add(this.ExceptionInVPackage, "Center");
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("tabbedQuickViews")) {
       jPanel2.add("North", (Component)this.k);
       this.k.setVisible(false);
     } 
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout());
-    this.c = new JScrollPane(this.b);
-    jPanel4.add("Center", this.c);
+    this.ArComponentCharlie = new JScrollPane(this.ClassTypeInHPackage);
+    jPanel4.add("Center", this.ArComponentCharlie);
     this.q.setBottomComponent(jPanel4);
-    bm.a().a(this.a);
-    if (i.aL != null)
-      this.a.a(i.aL); 
-    this.e.a(this.a);
-    this.e.a(this);
-    this.e.a(this.b);
-    n().a(this);
-    n().a(this.d);
+    bm.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage);
+    if (IOProperties.aL != null)
+      this.ExceptionInVPackage.ExceptionInVPackage(IOProperties.aL); 
+    this.e.ExceptionInVPackage(this.ExceptionInVPackage);
+    this.e.ExceptionInVPackage(this);
+    this.e.ExceptionInVPackage(this.ClassTypeInHPackage);
+    n().ExceptionInVPackage(this);
+    n().ExceptionInVPackage(this.d);
     if (this.d instanceof hj)
-      n().a((hj)this.d); 
-    n().a(this.a);
-    n().a(this.a);
-    n().a(aV.a());
-    n().a(this.b);
-    n().a(this.b);
-    n().a(this.b);
-    n().a(this.a);
-    n().a(this.a);
-    n().a(this.a);
-    n().c(this.b);
-    this.a.a(n());
+      n().ExceptionInVPackage((hj)this.d); 
+    n().ExceptionInVPackage(this.ExceptionInVPackage);
+    n().ExceptionInVPackage(this.ExceptionInVPackage);
+    n().ExceptionInVPackage(aV.ExceptionInVPackage());
+    n().ExceptionInVPackage(this.ClassTypeInHPackage);
+    n().ExceptionInVPackage(this.ClassTypeInHPackage);
+    n().ExceptionInVPackage(this.ClassTypeInHPackage);
+    n().ExceptionInVPackage(this.ExceptionInVPackage);
+    n().ExceptionInVPackage(this.ExceptionInVPackage);
+    n().ExceptionInVPackage(this.ExceptionInVPackage);
+    n().ArComponentCharlie(this.ClassTypeInHPackage);
+    this.ExceptionInVPackage.ExceptionInVPackage(n());
     bZ bZ = new bZ(n());
-    this.a.addMouseListener(bZ);
-    this.a.addMouseMotionListener(bZ);
-    this.a.addMouseWheelListener(bZ);
-    bq.a().a(this.a);
-    if (bq.a().f() != null)
-      bq.a().f().a(this); 
-    d(Boolean.parseBoolean(i.a("showGauges", "true")));
-    c(i.a("adjustGaugeBackgroudToVal", false));
-    n().b(i.a("zoom", 2.0D), false);
-    this.e.c(i.b("compareOffset", 0));
-    int j = i.a("numberOfOverlays", i.u) * i.a("numberOfGraphs", i.t);
+    this.ExceptionInVPackage.addMouseListener(bZ);
+    this.ExceptionInVPackage.addMouseMotionListener(bZ);
+    this.ExceptionInVPackage.addMouseWheelListener(bZ);
+    bq.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage);
+    if (bq.ExceptionInVPackage().ArComponentFoxtrot() != null)
+      bq.ExceptionInVPackage().ArComponentFoxtrot().ExceptionInVPackage(this); 
+    d(Boolean.parseBoolean(IOProperties.ExceptionInVPackage("showGauges", "true")));
+    ArComponentCharlie(IOProperties.ExceptionInVPackage("adjustGaugeBackgroudToVal", false));
+    n().ClassTypeInHPackage(IOProperties.ExceptionInVPackage("zoom", 2.0D), false);
+    this.e.ArComponentCharlie(IOProperties.ClassTypeInHPackage("compareOffset", 0));
+    int j = IOProperties.ExceptionInVPackage("numberOfOverlays", IOProperties.u) * IOProperties.ExceptionInVPackage("numberOfGraphs", IOProperties.t);
     byte b1 = 0;
     for (byte b2 = 0; b2 < j; b2++) {
       String str1 = "graphForeColor" + (b2 - b1);
-      String str2 = i.c(str1);
+      String str2 = IOProperties.ArComponentCharlie(str1);
       Color color = null;
       try {
         color = new Color(Integer.parseInt(str2));
       } catch (Exception exception) {}
       if (color != null && this.d instanceof A) {
-        n().a(color, b2);
-      } else if (i.a(str1, null) != null) {
-        n().a(i.a(str1, Color.cyan), b2);
+        n().ExceptionInVPackage(color, b2);
+      } else if (IOProperties.ExceptionInVPackage(str1, null) != null) {
+        n().ExceptionInVPackage(IOProperties.ExceptionInVPackage(str1, Color.cyan), b2);
       } 
     } 
-    n().c(bool1);
-    n().a(i.a("hideSelector", i.q));
-    c.a().a(m());
-    c.a().a(this.a);
-    c.a().a(this.b);
-    hx.a().a(this.b);
-    c.a().a(this);
-    if (b.a().a("tabbedQuickViews") && i.a(i.aj, i.ak)) {
-      String str = i.e("lastSelectedQuickViewName", "Default");
-      if (!f.a().a(str))
-        f.a().a("Default"); 
-      this.a.k();
+    n().ArComponentCharlie(bool1);
+    n().ExceptionInVPackage(IOProperties.ExceptionInVPackage("hideSelector", IOProperties.q));
+    ArComponentCharlie.ExceptionInVPackage().ExceptionInVPackage(m());
+    ArComponentCharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage);
+    ArComponentCharlie.ExceptionInVPackage().ExceptionInVPackage(this.ClassTypeInHPackage);
+    hx.ExceptionInVPackage().ExceptionInVPackage(this.ClassTypeInHPackage);
+    ArComponentCharlie.ExceptionInVPackage().ExceptionInVPackage(this);
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("tabbedQuickViews") && IOProperties.ExceptionInVPackage(IOProperties.aj, IOProperties.ak)) {
+      String str = IOProperties.e("lastSelectedQuickViewName", "Default");
+      if (!ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage(str))
+        ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage("Default"); 
+      this.ExceptionInVPackage.k();
     } else {
-      f.a().a("Default");
-      this.a.k();
+      ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage("Default");
+      this.ExceptionInVPackage.k();
     } 
-    f.a().a(new bk(this, this.d));
+    ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage(new bk(this, this.d));
     o();
     (new bj(this)).start();
   }
   
   protected JPanel e() {
-    return this.g;
+    return this.ChangeListener;
   }
   
-  public void a(String paramString1, String paramString2, String paramString3) {
+  public void ExceptionInVPackage(String paramString1, String paramString2, String paramString3) {
     if (paramString1 != null && paramString2 != null && paramString3 != null && !paramString1.equals("") && !paramString2.equals("") && !paramString3.equals("")) {
-      this.a.a("Thank You for registering: " + paramString1 + " " + paramString2 + "<" + paramString3 + ">");
+      this.ExceptionInVPackage.ExceptionInVPackage("Thank You for registering: " + paramString1 + " " + paramString2 + "<" + paramString3 + ">");
     } else {
-      this.a.a("Support " + i.b + ", register today.");
+      this.ExceptionInVPackage.ExceptionInVPackage("Support " + IOProperties.ClassTypeInHPackage + ", register today.");
     } 
   }
   
-  public boolean f() {
-    return this.i;
+  public boolean ArComponentFoxtrot() {
+    return this.IOProperties;
   }
   
-  public void c(n paramn) {
+  public void ArComponentCharlie(n paramn) {
     if (this.o != null);
-    this.n.c(0);
-    if (b.a().a("tabbedQuickViews"))
+    this.n.ArComponentCharlie(0);
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("tabbedQuickViews"))
       this.k.setVisible(true); 
-    n().b(paramn);
-    n().c((n)null);
+    n().ClassTypeInHPackage(paramn);
+    n().ArComponentCharlie((n)null);
     if (paramn != null) {
-      this.a.a(paramn.a());
-      this.a.b(paramn.c());
-      int i1 = (int)(this.a.getWidth() / 2.0D * this.n.t());
+      this.ExceptionInVPackage.ExceptionInVPackage(paramn.ExceptionInVPackage());
+      this.ExceptionInVPackage.ClassTypeInHPackage(paramn.ArComponentCharlie());
+      int i1 = (int)(this.ExceptionInVPackage.getWidth() / 2.0D * this.n.t());
       if (i1 > paramn.d())
         i1 = paramn.d() - 1; 
-      this.n.c(i1);
+      this.n.ArComponentCharlie(i1);
       j j1 = null;
       for (j j2 : paramn) {
-        g g1 = g.a();
-        String str = g1.a("Time");
-        if (j2.a().equalsIgnoreCase(str))
+        ChangeListener g1 = ChangeListener.ExceptionInVPackage();
+        String str = g1.ExceptionInVPackage("Time");
+        if (j2.ExceptionInVPackage().equalsIgnoreCase(str))
           j1 = j2; 
       } 
-      this.a.a(j1);
-      this.a.p();
-      boolean bool = this.a.j();
-      this.d.a();
+      this.ExceptionInVPackage.ExceptionInVPackage(j1);
+      this.ExceptionInVPackage.p();
+      boolean bool = this.ExceptionInVPackage.j();
+      this.d.ExceptionInVPackage();
       if (!bool)
-        this.a.k(); 
+        this.ExceptionInVPackage.k(); 
     } else {
-      this.a.a(new HashMap<>());
-      this.a.b(new HashMap<>());
-      this.n.c(0);
+      this.ExceptionInVPackage.ExceptionInVPackage(new HashMap<>());
+      this.ExceptionInVPackage.ClassTypeInHPackage(new HashMap<>());
+      this.n.ArComponentCharlie(0);
     } 
-    b(i.a("showTuningConsole", i.p));
-    this.i = false;
-    Dimension dimension = this.b.getPreferredSize();
-    if (dimension.getHeight() > eJ.a(240)) {
-      this.c.setPreferredSize(eJ.a(200, 240));
+    ClassTypeInHPackage(IOProperties.ExceptionInVPackage("showTuningConsole", IOProperties.p));
+    this.IOProperties = false;
+    Dimension dimension = this.ClassTypeInHPackage.getPreferredSize();
+    if (dimension.getHeight() > eJ.ExceptionInVPackage(240)) {
+      this.ArComponentCharlie.setPreferredSize(eJ.ExceptionInVPackage(200, 240));
     } else {
-      this.c.setPreferredSize(dimension);
+      this.ArComponentCharlie.setPreferredSize(dimension);
     } 
-    int i = getHeight() - (this.c.getPreferredSize()).height - this.q.getDividerSize();
+    int IOProperties = getHeight() - (this.ArComponentCharlie.getPreferredSize()).height - this.q.getDividerSize();
     int j = this.q.getDividerLocation();
-    if (this.j || i > j) {
+    if (this.j || IOProperties > j) {
       if (this.j)
-        n().b(new bc(this)); 
+        n().ClassTypeInHPackage(new bc(this)); 
       bd bd = new bd(this);
       bd.start();
       this.j = false;
@@ -272,173 +272,173 @@ public class aX extends JPanel implements hB, k, l, b {
     requestFocus();
   }
   
-  public void g() {
-    this.i = false;
-    n().c((n)null);
-    this.a.b((n)null);
+  public void ChangeListener() {
+    this.IOProperties = false;
+    n().ArComponentCharlie((n)null);
+    this.ExceptionInVPackage.ClassTypeInHPackage((n)null);
     System.gc();
   }
   
   public boolean h() {
-    if (this.g != null && this.g.isVisible() && this.g.h()) {
+    if (this.ChangeListener != null && this.ChangeListener.isVisible() && this.ChangeListener.h()) {
       String str = "Tune Settings changes have not been saved.\nWould you like to save before exiting?";
-      int i = JOptionPane.showConfirmDialog(this, str);
-      if (i == 0) {
-        this.g.k();
+      int IOProperties = JOptionPane.showConfirmDialog(this, str);
+      if (IOProperties == 0) {
+        this.ChangeListener.k();
         System.out.println("Ignore following stack, it is generated on purpose to end shutdown.");
         ((String)null).toString();
       } else {
-        if (i == 1)
+        if (IOProperties == 1)
           return true; 
-        if (i == 2) {
+        if (IOProperties == 2) {
           System.out.println("Ignore following stack, it is generated on purpose to end shutdown.");
           ((String)null).toString();
         } 
       } 
     } 
-    i();
+    IOProperties();
     return true;
   }
   
-  public void i() {
-    if (bq.a().c().j()) {
-      String str = f.a().g();
-      D.c("Current Log View: " + str);
+  public void IOProperties() {
+    if (bq.ExceptionInVPackage().ArComponentCharlie().j()) {
+      String str = ArComponentFoxtrot.ExceptionInVPackage().ChangeListener();
+      D.ArComponentCharlie("Current Log View: " + str);
       if (str != null && !str.isEmpty()) {
-        c c1 = f.a().c(str);
-        c c2 = this.a.B();
-        if (bq.a().c().j()) {
-          D.c("View Changed: " + bq.a().c().j());
-          c2.a(c1.b());
-          f.a().a(c2);
+        ArComponentCharlie c1 = ArComponentFoxtrot.ExceptionInVPackage().ArComponentCharlie(str);
+        ArComponentCharlie c2 = this.ExceptionInVPackage.B();
+        if (bq.ExceptionInVPackage().ArComponentCharlie().j()) {
+          D.ArComponentCharlie("View Changed: " + bq.ExceptionInVPackage().ArComponentCharlie().j());
+          c2.ExceptionInVPackage(c1.ClassTypeInHPackage());
+          ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage(c2);
         } 
       } 
     } else {
-      D.c("Graph Selection not changed.");
+      D.ArComponentCharlie("Graph Selection not changed.");
     } 
-    c c = f.a().c("Default");
-    if (c != null && hx.a().r() != null && !hx.a().r().isEmpty())
-      f.a().b(c); 
-    if (f.a().d() && hx.a().r() != null && !hx.a().r().isEmpty()) {
+    ArComponentCharlie ArComponentCharlie = ArComponentFoxtrot.ExceptionInVPackage().ArComponentCharlie("Default");
+    if (ArComponentCharlie != null && hx.ExceptionInVPackage().r() != null && !hx.ExceptionInVPackage().r().isEmpty())
+      ArComponentFoxtrot.ExceptionInVPackage().ClassTypeInHPackage(ArComponentCharlie); 
+    if (ArComponentFoxtrot.ExceptionInVPackage().d() && hx.ExceptionInVPackage().r() != null && !hx.ExceptionInVPackage().r().isEmpty()) {
       String str = "The Following Quick Views have changed:";
-      for (c c1 : f.a().c())
-        str = str + "\n" + c1.b(); 
+      for (ArComponentCharlie c1 : ArComponentFoxtrot.ExceptionInVPackage().ArComponentCharlie())
+        str = str + "\n" + c1.ClassTypeInHPackage(); 
       str = str + "\n\nWould you like to save the changes?";
-      if (bV.a(str, this, true))
-        f.a().e(); 
+      if (bV.ExceptionInVPackage(str, this, true))
+        ArComponentFoxtrot.ExceptionInVPackage().e(); 
     } 
   }
   
   public void j() {
     Container container = getParent();
-    String str = "CTRL+N or Right - Advance 1 Record\nCTRL+B or Left - Back 1 Record\nPage UP - Advance a graph page worth of records\nPage Down - Decrease a graph page of records\nHome - Jump to 1st Record\nEnd - Jump to last Record\nShift + Right - Select Range to display Average\nUp - Rescale graph, Zoom in\nDown - Rescale graph, Zoom out\nCTRL+P - Play\nCTRL+S - Stop Playback\nSpace - Pause playback\nCTRL+U - Speed playback\nCTRL+D - Slow playback\nCTRL+Delete - Clear graphs\nF3 - Repeat Last Search\nF2 - Scale to Fit";
-    a(str, container);
+    String str = "CTRL+N or Right - Advance 1 Record\nCTRL+B or Left - Back 1 Record\nPage UP - Advance ExceptionInVPackage graph page worth of records\nPage Down - Decrease ExceptionInVPackage graph page of records\nHome - Jump to 1st Record\nEnd - Jump to last Record\nShift + Right - Select Range to display Average\nUp - Rescale graph, Zoom in\nDown - Rescale graph, Zoom out\nCTRL+P - Play\nCTRL+S - Stop Playback\nSpace - Pause playback\nCTRL+U - Speed playback\nCTRL+D - Slow playback\nCTRL+Delete - Clear graphs\nF3 - Repeat Last Search\nF2 - Scale to Fit";
+    ExceptionInVPackage(str, container);
   }
   
   public void k() {
     Container container = getParent();
-    a(i.i(), container);
+    ExceptionInVPackage(IOProperties.IOProperties(), container);
   }
   
-  public void a(String paramString, Component paramComponent) {
-    bV.c(paramString, paramComponent);
+  public void ExceptionInVPackage(String paramString, Component paramComponent) {
+    bV.ArComponentCharlie(paramString, paramComponent);
   }
   
   public String l() {
     return this.h;
   }
   
-  public void a(String[] paramArrayOfString, boolean paramBoolean) {
+  public void ExceptionInVPackage(String[] paramArrayOfString, boolean paramBoolean) {
     if (this.n.r() != null && !this.n.r().isEmpty())
-      i(); 
+      IOProperties(); 
     this.h = paramArrayOfString[0];
-    g();
+    ChangeListener();
     if (this.o != null && this.o.isAlive())
-      this.o.c(); 
-    hx.a().a(paramArrayOfString);
-    this.o = new b(this);
-    this.o.b(i.a("fillNaN", i.z));
-    String str = i.a("fieldMapping", "Auto");
+      this.o.ArComponentCharlie(); 
+    hx.ExceptionInVPackage().ExceptionInVPackage(paramArrayOfString);
+    this.o = new ClassTypeInHPackage(this);
+    this.o.ClassTypeInHPackage(IOProperties.ExceptionInVPackage("fillNaN", IOProperties.z));
+    String str = IOProperties.ExceptionInVPackage("fieldMapping", "Auto");
     if (str == null || str.length() == 0 || str.equals("Auto")) {
-      D.c("Auto Detect Field mapping");
-      if (b.n != null) {
+      D.ArComponentCharlie("Auto Detect Field mapping");
+      if (ClassTypeInHPackage.n != null) {
         try {
-          this.o.a(b.n.newInstance());
+          this.o.ExceptionInVPackage(ClassTypeInHPackage.n.newInstance());
         } catch (InstantiationException instantiationException) {
           Logger.getLogger(aX.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
         } catch (IllegalAccessException illegalAccessException) {
           Logger.getLogger(aX.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
         } 
-      } else if (i.b.equals(b.j)) {
-        String str1 = X.b(i.c, b.b, "");
-        if (str1.equals(b.i)) {
-          this.o.a((a)new b());
-        } else if (str1.equals(b.e)) {
-          this.o.a((a)new a());
+      } else if (IOProperties.ClassTypeInHPackage.equals(ClassTypeInHPackage.j)) {
+        String str1 = X.ClassTypeInHPackage(IOProperties.ArComponentCharlie, ClassTypeInHPackage.ClassTypeInHPackage, "");
+        if (str1.equals(ClassTypeInHPackage.IOProperties)) {
+          this.o.ExceptionInVPackage((ExceptionInVPackage)new ClassTypeInHPackage());
+        } else if (str1.equals(ClassTypeInHPackage.e)) {
+          this.o.ExceptionInVPackage((ExceptionInVPackage)new ExceptionInVPackage());
         } else {
-          this.o.a((a)new c());
+          this.o.ExceptionInVPackage((ExceptionInVPackage)new ArComponentCharlie());
         } 
-      } else if (i.b.equals(b.k)) {
-        this.o.a((a)new a());
+      } else if (IOProperties.ClassTypeInHPackage.equals(ClassTypeInHPackage.k)) {
+        this.o.ExceptionInVPackage((ExceptionInVPackage)new ExceptionInVPackage());
       } else {
-        this.o.a((a)new c());
+        this.o.ExceptionInVPackage((ExceptionInVPackage)new ArComponentCharlie());
       } 
     } else {
-      D.c("Setting Field mapping to:" + str);
-      g.a();
-      g.b(str);
+      D.ArComponentCharlie("Setting Field mapping to:" + str);
+      ChangeListener.ExceptionInVPackage();
+      ChangeListener.ClassTypeInHPackage(str);
     } 
-    this.o.a(paramBoolean);
-    Iterator<b> iterator = c.a().g();
+    this.o.ExceptionInVPackage(paramBoolean);
+    Iterator<ClassTypeInHPackage> iterator = ArComponentCharlie.ExceptionInVPackage().ChangeListener();
     while (iterator.hasNext())
-      this.o.a(iterator.next()); 
-    this.o.a(paramArrayOfString);
+      this.o.ExceptionInVPackage(iterator.next()); 
+    this.o.ExceptionInVPackage(paramArrayOfString);
     this.o.start();
   }
   
-  public boolean b(boolean paramBoolean) {
-    if (!b.a().a("tuningPanelVisible"))
+  public boolean ClassTypeInHPackage(boolean paramBoolean) {
+    if (!ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("tuningPanelVisible"))
       return false; 
-    if (this.g == null) {
+    if (this.ChangeListener == null) {
       JButton jButton;
       JPanel jPanel1 = new JPanel();
       jPanel1.setLayout(new BorderLayout());
       JPanel jPanel2 = new JPanel();
       jPanel2.setLayout(new BorderLayout());
       try {
-        Image image = cO.a().a(cO.as, jPanel2, 16);
+        Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.as, jPanel2, 16);
         ImageIcon imageIcon = new ImageIcon(image);
         jButton = new JButton(imageIcon);
-      } catch (a a) {
-        Logger.getLogger(aX.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        Logger.getLogger(aX.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
         jButton = new JButton("X");
       } 
       jButton.setToolTipText("Close any open tune file.");
-      Dimension dimension = eJ.a(16, 16);
+      Dimension dimension = eJ.ExceptionInVPackage(16, 16);
       jButton.setMinimumSize(dimension);
       jButton.setPreferredSize(dimension);
       jButton.addActionListener(new bf(this));
       jPanel2.add("East", jButton);
       jPanel1.add("North", jPanel2);
-      this.g = new hE();
-      this.g.d();
-      n().a(this.g);
-      n().a(this.g);
+      this.ChangeListener = new hE();
+      this.ChangeListener.d();
+      n().ExceptionInVPackage(this.ChangeListener);
+      n().ExceptionInVPackage(this.ChangeListener);
       if (n().r() != null)
-        this.g.a(n().r()); 
-      int i = i.a("prefFontSize", eJ.a());
-      c(i);
-      jPanel1.add("Center", this.g);
-      this.g.setVisible(paramBoolean);
+        this.ChangeListener.ExceptionInVPackage(n().r()); 
+      int IOProperties = IOProperties.ExceptionInVPackage("prefFontSize", eJ.ExceptionInVPackage());
+      ArComponentCharlie(IOProperties);
+      jPanel1.add("Center", this.ChangeListener);
+      this.ChangeListener.setVisible(paramBoolean);
       q().setBottomComponent(jPanel1);
-      double d = i.a(i.X, -1.0D);
+      double d = IOProperties.ExceptionInVPackage(IOProperties.X, -1.0D);
       if (d > 0.2D && d < 0.98D)
         q().setDividerLocation(d); 
-      e(i.f(i.N, i.Q));
+      e(IOProperties.ArComponentFoxtrot(IOProperties.N, IOProperties.Q));
       this.l = true;
     } 
-    this.g.setVisible(paramBoolean);
-    i.c("showTuningConsole", "" + paramBoolean);
+    this.ChangeListener.setVisible(paramBoolean);
+    IOProperties.ArComponentCharlie("showTuningConsole", "" + paramBoolean);
     if (paramBoolean) {
       u();
     } else {
@@ -447,61 +447,61 @@ public class aX extends JPanel implements hB, k, l, b {
     return paramBoolean;
   }
   
-  public void c(String paramString) {
+  public void ArComponentCharlie(String paramString) {
     if (n().r() == null) {
-      a("Please Open a file before the compare file", this);
+      ExceptionInVPackage("Please Open ExceptionInVPackage file before the compare file", this);
       return;
     } 
-    if (this.f != null && this.f.isAlive())
-      this.f.c(); 
-    this.f = new b(this, true);
+    if (this.ArComponentFoxtrot != null && this.ArComponentFoxtrot.isAlive())
+      this.ArComponentFoxtrot.ArComponentCharlie(); 
+    this.ArComponentFoxtrot = new ClassTypeInHPackage(this, true);
     if (m() != null)
-      this.f.a(m()); 
-    this.f.a(this.a);
-    this.f.a(this);
-    this.f.a(this.b);
-    if (bq.a().k() != null)
-      this.f.a(bq.a().k()); 
-    this.f.a(paramString);
-    this.f.start();
+      this.ArComponentFoxtrot.ExceptionInVPackage(m()); 
+    this.ArComponentFoxtrot.ExceptionInVPackage(this.ExceptionInVPackage);
+    this.ArComponentFoxtrot.ExceptionInVPackage(this);
+    this.ArComponentFoxtrot.ExceptionInVPackage(this.ClassTypeInHPackage);
+    if (bq.ExceptionInVPackage().k() != null)
+      this.ArComponentFoxtrot.ExceptionInVPackage(bq.ExceptionInVPackage().k()); 
+    this.ArComponentFoxtrot.ExceptionInVPackage(paramString);
+    this.ArComponentFoxtrot.start();
   }
   
-  public b m() {
-    return bq.a().f();
+  public ClassTypeInHPackage m() {
+    return bq.ExceptionInVPackage().ArComponentFoxtrot();
   }
   
   public hx n() {
-    return hx.a();
+    return hx.ExceptionInVPackage();
   }
   
-  public void a(Color paramColor) {}
+  public void ExceptionInVPackage(Color paramColor) {}
   
-  public void c(boolean paramBoolean) {
-    this.b.d(paramBoolean);
+  public void ArComponentCharlie(boolean paramBoolean) {
+    this.ClassTypeInHPackage.d(paramBoolean);
   }
   
   public void d(boolean paramBoolean) {
-    this.b.e(paramBoolean);
+    this.ClassTypeInHPackage.e(paramBoolean);
   }
   
-  public void a(Color paramColor, int paramInt) {}
+  public void ExceptionInVPackage(Color paramColor, int paramInt) {}
   
-  public void a() {}
+  public void ExceptionInVPackage() {}
   
-  public void a(double paramDouble) {
+  public void ExceptionInVPackage(double paramDouble) {
     if (paramDouble == 1.0D) {
-      n().c(n().p());
+      n().ArComponentCharlie(n().p());
       if (n().s() != null) {
         this.e.d(-n().s().d());
         this.e.e(n().r().d());
-        n n1 = hx.a().r();
-        n n2 = hx.a().s();
+        n n1 = hx.ExceptionInVPackage().r();
+        n n2 = hx.ExceptionInVPackage().s();
         if (this.e != null && n1 != null) {
           this.e.d(-n1.d());
           this.e.e(n().r().d());
-          if (hx.a().r() != null) {
-            j j1 = this.a.C();
-            j j2 = (j1 != null) ? n2.a(j1.a()) : null;
+          if (hx.ExceptionInVPackage().r() != null) {
+            j j1 = this.ExceptionInVPackage.C();
+            j j2 = (j1 != null) ? n2.ExceptionInVPackage(j1.ExceptionInVPackage()) : null;
             if (j1 != null && j2 != null && !j1.x() && !j2.x() && j1.d(0) < 0.1D && j2.d(0) < 0.1D) {
               byte b1 = 0;
               byte b2 = 0;
@@ -518,14 +518,14 @@ public class aX extends JPanel implements hB, k, l, b {
                   break;
                 } 
               } 
-              this.e.c(b1 - b2);
-              if (hx.a().p() <= 0)
-                hx.a().c(b1); 
+              this.e.ArComponentCharlie(b1 - b2);
+              if (hx.ExceptionInVPackage().p() <= 0)
+                hx.ExceptionInVPackage().ArComponentCharlie(b1); 
             } else {
-              this.e.c(0);
+              this.e.ArComponentCharlie(0);
             } 
           } else {
-            this.e.c(0);
+            this.e.ArComponentCharlie(0);
           } 
         } 
         bg bg = new bg(this);
@@ -534,50 +534,50 @@ public class aX extends JPanel implements hB, k, l, b {
       } else if (n().r() != null) {
         d(n().r());
       } 
-    } else if (i.a(i.U, i.V) && paramDouble >= 0.05D && !Double.isInfinite(paramDouble)) {
+    } else if (IOProperties.ExceptionInVPackage(IOProperties.U, IOProperties.V) && paramDouble >= 0.05D && !Double.isInfinite(paramDouble)) {
       if (this.o == null || !this.o.e())
         if (this.n.r() != null) {
-          int i = this.n.r().d();
-          int j = (int)(i / paramDouble);
-          a(j);
+          int IOProperties = this.n.r().d();
+          int j = (int)(IOProperties / paramDouble);
+          ExceptionInVPackage(j);
         } else {
-          D.c("No DataSet, can't scale.");
+          D.ArComponentCharlie("No DataSet, can't scale.");
         }  
     } else if (!this.m && paramDouble < 0.05D) {
       this.m = true;
     } 
   }
   
-  public void a(int paramInt) {
-    this.a.j(paramInt);
+  public void ExceptionInVPackage(int paramInt) {
+    this.ExceptionInVPackage.j(paramInt);
   }
   
-  public void b() {
-    this.i = true;
+  public void ClassTypeInHPackage() {
+    this.IOProperties = true;
   }
   
   public void d(n paramn) {
-    if (i.o) {
+    if (IOProperties.o) {
       for (j j : paramn) {
-        g g1 = g.a();
-        String str = g1.a("Time");
-        if (!j.a().equalsIgnoreCase(str))
-          j.a(true); 
+        ChangeListener g1 = ChangeListener.ExceptionInVPackage();
+        String str = g1.ExceptionInVPackage("Time");
+        if (!j.ExceptionInVPackage().equalsIgnoreCase(str))
+          j.ExceptionInVPackage(true); 
       } 
-    } else if (!c()) {
+    } else if (!ArComponentCharlie()) {
       for (j j : paramn)
-        j.a(true); 
+        j.ExceptionInVPackage(true); 
     } 
   }
   
-  private boolean c() {
-    j j = this.a.C();
+  private boolean ArComponentCharlie() {
+    j j = this.ExceptionInVPackage.C();
     return true;
   }
   
-  public void a(n paramn) {
+  public void ExceptionInVPackage(n paramn) {
     if (SwingUtilities.isEventDispatchThread()) {
-      c(paramn);
+      ArComponentCharlie(paramn);
     } else {
       long l1 = System.currentTimeMillis();
       bh bh = new bh(this, l1, paramn);
@@ -585,14 +585,14 @@ public class aX extends JPanel implements hB, k, l, b {
     } 
   }
   
-  public void b(n paramn) {
-    n().c(paramn);
+  public void ClassTypeInHPackage(n paramn) {
+    n().ArComponentCharlie(paramn);
     if (this.e != null && paramn != null) {
       this.e.d(-paramn.d());
       this.e.e(n().r().d());
-      if (hx.a().r() != null) {
-        j j1 = this.a.C();
-        j j2 = paramn.a(j1.a());
+      if (hx.ExceptionInVPackage().r() != null) {
+        j j1 = this.ExceptionInVPackage.C();
+        j j2 = paramn.ExceptionInVPackage(j1.ExceptionInVPackage());
         if (j1 != null && j2 != null && !j1.x() && !j2.x() && j1.d(0) < 0.0F && j2.d(0) < 0.0F) {
           byte b1 = 0;
           byte b2 = 0;
@@ -609,14 +609,14 @@ public class aX extends JPanel implements hB, k, l, b {
               break;
             } 
           } 
-          this.e.c(b1 - b2);
-          if (hx.a().p() <= 0)
-            hx.a().c(b1); 
+          this.e.ArComponentCharlie(b1 - b2);
+          if (hx.ExceptionInVPackage().p() <= 0)
+            hx.ExceptionInVPackage().ArComponentCharlie(b1); 
         } else {
-          this.e.c(0);
+          this.e.ArComponentCharlie(0);
         } 
       } else {
-        this.e.c(0);
+        this.e.ArComponentCharlie(0);
       } 
     } 
     validate();
@@ -637,44 +637,44 @@ public class aX extends JPanel implements hB, k, l, b {
   }
   
   public void o() {
-    F f = new F(this.a, 500L);
+    F ArComponentFoxtrot = new F(this.ExceptionInVPackage, 500L);
   }
   
-  public void b(int paramInt) {
-    i.c("compareOffset", paramInt + "");
+  public void ClassTypeInHPackage(int paramInt) {
+    IOProperties.ArComponentCharlie("compareOffset", paramInt + "");
   }
   
-  public void a(boolean paramBoolean) {}
+  public void ExceptionInVPackage(boolean paramBoolean) {}
   
   public void doLayout() {
     this.e.setVisible((n().s() != null));
     super.doLayout();
   }
   
-  public void b(double paramDouble) {
+  public void ClassTypeInHPackage(double paramDouble) {
     if (n().r() == null)
       return; 
-    int i = (int)((n().r().d() - 1.0D) * paramDouble);
-    n().c(i);
+    int IOProperties = (int)((n().r().d() - 1.0D) * paramDouble);
+    n().ArComponentCharlie(IOProperties);
     o();
   }
   
-  void c(int paramInt) {
-    if (this.g != null) {
-      this.g.c(paramInt);
+  void ArComponentCharlie(int paramInt) {
+    if (this.ChangeListener != null) {
+      this.ChangeListener.ArComponentCharlie(paramInt);
       doLayout();
-      this.g.doLayout();
+      this.ChangeListener.doLayout();
     } 
-    float f = paramInt / eJ.a();
+    float ArComponentFoxtrot = paramInt / eJ.ExceptionInVPackage();
   }
   
   public void d(String paramString) {
-    if (b(true))
-      this.g.b(paramString); 
+    if (ClassTypeInHPackage(true))
+      this.ChangeListener.ClassTypeInHPackage(paramString); 
   }
   
   public aw p() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
   public JSplitPane q() {
@@ -685,24 +685,24 @@ public class aX extends JPanel implements hB, k, l, b {
     return this.q;
   }
   
-  public b s() {
+  public ClassTypeInHPackage s() {
     return this.o;
   }
   
   public void e(String paramString) {
-    if (paramString.equals(i.P)) {
-      this.g.a(this.b.d());
-      this.g.a(false);
-      this.b.doLayout();
-      this.g.c().doLayout();
-      this.g.c().validate();
+    if (paramString.equals(IOProperties.P)) {
+      this.ChangeListener.ExceptionInVPackage(this.ClassTypeInHPackage.d());
+      this.ChangeListener.ExceptionInVPackage(false);
+      this.ClassTypeInHPackage.doLayout();
+      this.ChangeListener.ArComponentCharlie().doLayout();
+      this.ChangeListener.ArComponentCharlie().validate();
       bi bi = new bi(this);
       SwingUtilities.invokeLater(bi);
     } else {
-      this.b.a(this.b.d());
-      this.g.a(true);
-      this.g.doLayout();
-      this.b.doLayout();
+      this.ClassTypeInHPackage.ExceptionInVPackage(this.ClassTypeInHPackage.d());
+      this.ChangeListener.ExceptionInVPackage(true);
+      this.ChangeListener.doLayout();
+      this.ClassTypeInHPackage.doLayout();
       aZ aZ = new aZ(this);
       SwingUtilities.invokeLater(aZ);
     } 
@@ -710,29 +710,29 @@ public class aX extends JPanel implements hB, k, l, b {
   }
   
   public void t() {
-    if (this.c != null)
-      if (i.a("showDashboard", true)) {
-        Dimension dimension = this.b.getPreferredSize();
-        int i = getHeight() / 5;
-        if (dimension.getHeight() > i * 1.5D) {
-          this.c.setPreferredSize(new Dimension(200, i));
+    if (this.ArComponentCharlie != null)
+      if (IOProperties.ExceptionInVPackage("showDashboard", true)) {
+        Dimension dimension = this.ClassTypeInHPackage.getPreferredSize();
+        int IOProperties = getHeight() / 5;
+        if (dimension.getHeight() > IOProperties * 1.5D) {
+          this.ArComponentCharlie.setPreferredSize(new Dimension(200, IOProperties));
         } else {
-          this.c.setPreferredSize(dimension);
+          this.ArComponentCharlie.setPreferredSize(dimension);
         } 
-        double d = i.a(i.W, -1.0D);
-        if (hx.a().r() == null || d < 0.1D || d > 0.9D) {
-          r().setDividerLocation(getHeight() - (this.c.getPreferredSize()).height - r().getDividerSize());
+        double d = IOProperties.ExceptionInVPackage(IOProperties.W, -1.0D);
+        if (hx.ExceptionInVPackage().r() == null || d < 0.1D || d > 0.9D) {
+          r().setDividerLocation(getHeight() - (this.ArComponentCharlie.getPreferredSize()).height - r().getDividerSize());
         } else {
           r().setDividerLocation(d);
         } 
       } else {
-        r().setDividerLocation(getHeight() - (this.c.getMinimumSize()).height - r().getDividerSize());
+        r().setDividerLocation(getHeight() - (this.ArComponentCharlie.getMinimumSize()).height - r().getDividerSize());
       }  
   }
   
   public void u() {
-    if (e() != null && i.a("showTuningConsole", i.p)) {
-      double d = i.a(i.X, -1.0D);
+    if (e() != null && IOProperties.ExceptionInVPackage("showTuningConsole", IOProperties.p)) {
+      double d = IOProperties.ExceptionInVPackage(IOProperties.X, -1.0D);
       if (d < 0.05D || d > 0.98D) {
         q().setDividerLocation(getWidth() - (e().getPreferredSize()).width - q().getDividerSize());
       } else {
@@ -744,20 +744,20 @@ public class aX extends JPanel implements hB, k, l, b {
   }
   
   public void v() {
-    String str = f.a().g();
+    String str = ArComponentFoxtrot.ExceptionInVPackage().ChangeListener();
     if (str != null && !str.isEmpty())
-      f(str); 
+      ArComponentFoxtrot(str); 
   }
   
-  public void f(String paramString) {
+  public void ArComponentFoxtrot(String paramString) {
     if (paramString != null && !paramString.isEmpty()) {
-      c c1 = f.a().c(paramString);
-      c c2 = this.a.B();
-      if (c1 != null && bq.a().c().j()) {
-        D.c("View Changed: " + bq.a().c().j());
-        c2.a(c1.b());
-        c2.a(c1.f());
-        f.a().a(c2);
+      ArComponentCharlie c1 = ArComponentFoxtrot.ExceptionInVPackage().ArComponentCharlie(paramString);
+      ArComponentCharlie c2 = this.ExceptionInVPackage.B();
+      if (c1 != null && bq.ExceptionInVPackage().ArComponentCharlie().j()) {
+        D.ArComponentCharlie("View Changed: " + bq.ExceptionInVPackage().ArComponentCharlie().j());
+        c2.ExceptionInVPackage(c1.ClassTypeInHPackage());
+        c2.ExceptionInVPackage(c1.ArComponentFoxtrot());
+        ArComponentFoxtrot.ExceptionInVPackage().ExceptionInVPackage(c2);
       } 
     } 
   }

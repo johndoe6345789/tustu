@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.c;
 import java.io.Serializable;
 import java.util.logging.Level;
@@ -17,19 +17,19 @@ public class CommandByteSequence implements S, aN, Serializable {
   
   private int f = 0;
   
-  private int g = 0;
+  private int ExceptionPrintstacktrace = 0;
   
   public H(F paramF, int paramInt) {
-    this.g = paramInt;
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public H a() {
-    H h = new H(this.a, this.g);
+    H h = new H(this.a, this.ExceptionPrintstacktrace);
     h.a(b());
     h.a(d());
     h.b(e());
     h.a(f());
-    h.b(g());
+    h.b(ExceptionPrintstacktrace());
     return h;
   }
   
@@ -69,7 +69,7 @@ public class CommandByteSequence implements S, aN, Serializable {
     this.e = paramInt;
   }
   
-  public int g() {
+  public int ExceptionPrintstacktrace() {
     return this.f;
   }
   
@@ -94,20 +94,20 @@ public class CommandByteSequence implements S, aN, Serializable {
     boolean bool = this.a.ao() ? true : this.a.e();
     if (this.e > 0) {
       byte[] arrayOfByte = new byte[f()];
-      if (this.g == 0) {
+      if (this.ExceptionPrintstacktrace == 0) {
         arrayOfByte = c.a(paramInt1, arrayOfByte, bool);
       } else {
-        arrayOfByte = c.a(this.g + paramInt1, arrayOfByte, bool);
+        arrayOfByte = c.a(this.ExceptionPrintstacktrace + paramInt1, arrayOfByte, bool);
       } 
       System.arraycopy(arrayOfByte, 0, arrayOfByte2, j, arrayOfByte.length);
       j += arrayOfByte.length;
     } 
     if (this.f > 0) {
-      byte[] arrayOfByte = new byte[g()];
-      if (this.g == 0) {
+      byte[] arrayOfByte = new byte[ExceptionPrintstacktrace()];
+      if (this.ExceptionPrintstacktrace == 0) {
         arrayOfByte = c.a(paramInt2, arrayOfByte, bool);
       } else {
-        arrayOfByte = c.a(this.g + paramInt1 + paramInt2 - 1, arrayOfByte, bool);
+        arrayOfByte = c.a(this.ExceptionPrintstacktrace + paramInt1 + paramInt2 - 1, arrayOfByte, bool);
       } 
       System.arraycopy(arrayOfByte, 0, arrayOfByte2, j, arrayOfByte.length);
       j += arrayOfByte.length;
@@ -120,8 +120,8 @@ public class CommandByteSequence implements S, aN, Serializable {
   public void a(String paramString1, String paramString2) {
     try {
       this.a.a(this);
-    } catch (g g) {
-      Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
   }
   
@@ -134,8 +134,8 @@ public class CommandByteSequence implements S, aN, Serializable {
       try {
         F.a(this.a, this);
         this.a.a(this);
-      } catch (g g) {
-        Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       }  
   }
 }

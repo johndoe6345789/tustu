@@ -1,9 +1,9 @@
 package aP;
 
-import bA.f;
+import bA.BaInterfaceFoxtrot;
 
 class gK implements Runnable {
-  private f b = null;
+  private BaInterfaceFoxtrot b = null;
   
   private boolean c = true;
   
@@ -14,7 +14,7 @@ class gK implements Runnable {
     this.a.k.add(this);
   }
   
-  public void a(f paramf) {
+  public void a(BaInterfaceFoxtrot paramf) {
     this.b = paramf;
   }
   

@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -16,7 +16,7 @@ public class IsTrueForFunction extends ac {
     this.c = paramab2;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     if (this.b.b(paramS) != 0.0D) {
       if (this.a < 0L)
         this.a = System.currentTimeMillis(); 
@@ -27,7 +27,7 @@ public class IsTrueForFunction extends ac {
     return 0.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

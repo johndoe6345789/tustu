@@ -1,39 +1,39 @@
 package aP;
 
 import G.R;
-import aE.a;
-import aE.e;
+import aE.PropertiesExtension;
+import aE.AeInterfaceEcho;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import com.efiAnalytics.ui.dn;
 import java.util.ArrayList;
 import javax.swing.SwingUtilities;
 
-class dr implements e {
-  final e a = this;
+class dr implements AeInterfaceEcho {
+  final AeInterfaceEcho PropertiesExtension = this;
   
   dr(dl paramdl) {}
   
-  public void a(a parama, R paramR) {
-    bW bW = dd.a().h();
+  public void PropertiesExtension(PropertiesExtension parama, R paramR) {
+    bW bW = dd.PropertiesExtension().h();
     int i = dn.b();
     ArrayList<Integer> arrayList = new ArrayList();
     ArrayList<x> arrayList1 = new ArrayList();
     byte b;
     for (b = 0; arrayList.size() < i && b < bW.c(); b++) {
-      x x = bW.a(bW.getTitleAt(b));
+      x x = bW.PropertiesExtension(bW.getTitleAt(b));
       int j = x.x();
       if (!arrayList.contains(Integer.valueOf(j)))
         if (j < 0) {
           arrayList1.add(x);
         } else {
-          x.a(j);
+          x.PropertiesExtension(j);
           arrayList.add(Integer.valueOf(j));
         }  
     } 
     for (b = 0; b < i && b < bW.c(); b++) {
       if (!arrayList.contains(Integer.valueOf(b)) && !arrayList1.isEmpty()) {
         x x = arrayList1.remove(0);
-        x.a(b);
+        x.PropertiesExtension(b);
       } 
     } 
     ds ds = new ds(this);
@@ -42,7 +42,7 @@ class dr implements e {
   
   public void e_() {}
   
-  public void a(a parama) {}
+  public void PropertiesExtension(PropertiesExtension parama) {}
 }
 
 

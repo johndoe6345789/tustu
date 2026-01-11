@@ -2,7 +2,7 @@ package aP;
 
 import G.R;
 import G.T;
-import bA.f;
+import bA.BaInterfaceFoxtrot;
 import bH.p;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,36 +34,36 @@ class gT extends Thread {
           this.a = Long.MAX_VALUE;
           for (String str : T.a().d()) {
             for (byte b = 0; b < this.e.l().getMenuCount(); b++) {
-              f f = (f)this.e.l().getMenu(b);
-              if (f != null && f.d() != null)
+              BaInterfaceFoxtrot BaInterfaceFoxtrot = (BaInterfaceFoxtrot)this.e.l().getMenu(b);
+              if (BaInterfaceFoxtrot != null && BaInterfaceFoxtrot.d() != null)
                 try {
                   R r = T.a().c(str);
-                  boolean bool = p.a(f.d(), r);
-                  gK gK = dB.a(this.e, f, bool);
+                  boolean bool = p.a(BaInterfaceFoxtrot.d(), r);
+                  gK gK = dB.a(this.e, BaInterfaceFoxtrot, bool);
                   SwingUtilities.invokeLater(gK);
                 } catch (Exception exception) {} 
-              if (f != null)
+              if (BaInterfaceFoxtrot != null)
                 try {
-                  boolean bool = (f.i() == null || f.i().a()) ? true : false;
-                  gL gL = dB.b(this.e, f, bool);
+                  boolean bool = (BaInterfaceFoxtrot.i() == null || BaInterfaceFoxtrot.i().a()) ? true : false;
+                  gL gL = dB.b(this.e, BaInterfaceFoxtrot, bool);
                   SwingUtilities.invokeLater(gL);
                 } catch (Exception exception) {} 
             } 
           } 
           for (String str : T.a().d()) {
             for (byte b = 0; !this.d && b < this.e.e.a(str); b++) {
-              f f = this.e.e.a(str, b);
-              if (f != null && f.d() != null)
+              BaInterfaceFoxtrot BaInterfaceFoxtrot = this.e.e.a(str, b);
+              if (BaInterfaceFoxtrot != null && BaInterfaceFoxtrot.d() != null)
                 try {
                   R r = T.a().c(str);
-                  boolean bool = p.a(f.d(), r);
-                  gK gK = dB.a(this.e, f, bool);
+                  boolean bool = p.a(BaInterfaceFoxtrot.d(), r);
+                  gK gK = dB.a(this.e, BaInterfaceFoxtrot, bool);
                   SwingUtilities.invokeLater(gK);
                 } catch (Exception exception) {} 
-              if (f != null && f.i() != null)
+              if (BaInterfaceFoxtrot != null && BaInterfaceFoxtrot.i() != null)
                 try {
-                  boolean bool = (f.i() == null || f.i().a()) ? true : false;
-                  gL gL = dB.b(this.e, f, bool);
+                  boolean bool = (BaInterfaceFoxtrot.i() == null || BaInterfaceFoxtrot.i().a()) ? true : false;
+                  gL gL = dB.b(this.e, BaInterfaceFoxtrot, bool);
                   SwingUtilities.invokeLater(gL);
                 } catch (Exception exception) {} 
             } 

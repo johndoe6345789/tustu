@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -12,9 +12,9 @@ class dr implements ItemListener {
   public void itemStateChanged(ItemEvent paramItemEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
     if (jCheckBoxMenuItem.getState()) {
-      i.c("fieldSelectionStyle", "selectFromDash");
+      IOProperties.c("fieldSelectionStyle", "selectFromDash");
     } else {
-      i.c("fieldSelectionStyle", "standardSelection");
+      IOProperties.c("fieldSelectionStyle", "standardSelection");
     } 
     bV.d("The Changes will take effect after restarting.", bq.a().b());
   }

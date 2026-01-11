@@ -11,7 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 public class as extends a implements f {
   JTextField a;
@@ -19,13 +19,13 @@ public class as extends a implements f {
   JPanel b = new JPanel();
   
   public as(Window paramWindow, ai paramai) {
-    super(paramWindow, g.b("Label Text"));
+    super(paramWindow, SComponentGolf.b("Label Text"));
     a(paramai);
     au au = new au(this);
     this.b.setLayout(new GridLayout(0, 2, eJ.a(1), eJ.a(3)));
-    String str = g.b("Label Text");
+    String str = SComponentGolf.b("Label Text");
     this.b.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), str));
-    JLabel jLabel = new JLabel(g.b("Text"));
+    JLabel jLabel = new JLabel(SComponentGolf.b("Text"));
     jLabel.setHorizontalAlignment(4);
     this.b.add(jLabel);
     this.a = new JTextField("", 10);

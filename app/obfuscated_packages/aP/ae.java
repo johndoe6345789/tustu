@@ -1,6 +1,6 @@
 package aP;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,9 +12,9 @@ class ae implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
     try {
-      this.a.b((String)jComboBox.getSelectedItem());
-    } catch (a a) {
-      bV.d(a.getMessage(), jComboBox);
+      this.ExceptionInVPackage.b((String)jComboBox.getSelectedItem());
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getMessage(), jComboBox);
     } 
   }
 }

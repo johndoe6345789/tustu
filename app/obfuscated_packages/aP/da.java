@@ -1,19 +1,19 @@
 package aP;
 
-import as.a;
+import as.AsComponentAlpha;
 import com.efiAnalytics.ui.bc;
 import java.io.File;
 
-class da implements a, bc {
+class da implements AsComponentAlpha, bc {
   da(cc paramcc) {}
   
-  public void a(File paramFile) {
-    f.a().a(paramFile);
-    cc.h(this.a);
+  public void AsComponentAlpha(File paramFile) {
+    f.AsComponentAlpha().AsComponentAlpha(paramFile);
+    cc.h(this.AsComponentAlpha);
   }
   
   public void close() {
-    this.a.F = null;
+    this.AsComponentAlpha.F = null;
   }
 }
 

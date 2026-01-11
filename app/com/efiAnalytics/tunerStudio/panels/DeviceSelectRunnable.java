@@ -1,10 +1,10 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import aP.V;
+import aP.EqualsTostring;
 import java.awt.Cursor;
 
 class DeviceSelectRunnable implements Runnable {
-  DeviceSelectRunnable(DeviceSelectCallback paramd, V paramV) {}
+  DeviceSelectRunnable(DeviceSelectCallback paramd, EqualsTostring paramV) {}
   
   public void run() {
     this.b.a.a(this.a.b());

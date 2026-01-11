@@ -1,60 +1,60 @@
 package aP;
 
-import bA.a;
-import bA.b;
+import bA.BaInterfaceAlpha;
+import bA.BaInterfaceBravo;
 import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
-class gG extends JPanel implements b {
-  JComboBox a = new JComboBox();
+class gG extends JPanel implements BaInterfaceBravo {
+  JComboBox BaInterfaceAlpha = new JComboBox();
   
-  ArrayList b = new ArrayList();
+  ArrayList BaInterfaceBravo = new ArrayList();
   
   public gG(dB paramdB) {
     setLayout(new BorderLayout());
-    add("North", new JLabel(g.b("Device")));
+    add("North", new JLabel(SComponentGolf.BaInterfaceBravo("Device")));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    jPanel.add("North", this.a);
+    jPanel.add("North", this.BaInterfaceAlpha);
     add("Center", jPanel);
-    this.a.addActionListener(new gH(this, paramdB));
+    this.BaInterfaceAlpha.addActionListener(new gH(this, paramdB));
   }
   
-  public void a(String paramString) {
-    this.a.addItem(paramString);
+  public void BaInterfaceAlpha(String paramString) {
+    this.BaInterfaceAlpha.addItem(paramString);
   }
   
-  public void a() {
-    this.a.removeAllItems();
+  public void BaInterfaceAlpha() {
+    this.BaInterfaceAlpha.removeAllItems();
   }
   
-  public List b() {
+  public List BaInterfaceBravo() {
     ArrayList<String> arrayList = new ArrayList();
-    for (byte b1 = 0; b1 < this.a.getItemCount(); b1++)
-      arrayList.add(this.a.getItemAt(b1)); 
+    for (byte b1 = 0; b1 < this.BaInterfaceAlpha.getItemCount(); b1++)
+      arrayList.add(this.BaInterfaceAlpha.getItemAt(b1)); 
     return arrayList;
   }
   
-  public void b(String paramString) {
-    this.a.setSelectedItem(paramString);
+  public void BaInterfaceBravo(String paramString) {
+    this.BaInterfaceAlpha.setSelectedItem(paramString);
   }
   
-  public void a(a parama) {
-    this.b.add(parama);
+  public void BaInterfaceAlpha(BaInterfaceAlpha parama) {
+    this.BaInterfaceBravo.add(parama);
   }
   
   private void d(String paramString) {
-    for (a a : this.b)
-      a.a(paramString); 
+    for (BaInterfaceAlpha BaInterfaceAlpha : this.BaInterfaceBravo)
+      BaInterfaceAlpha.BaInterfaceAlpha(paramString); 
   }
   
   public void c(String paramString) {
-    this.a.removeItem(paramString);
+    this.BaInterfaceAlpha.removeItem(paramString);
   }
 }
 

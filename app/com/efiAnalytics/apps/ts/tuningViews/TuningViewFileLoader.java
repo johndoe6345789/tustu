@@ -3,74 +3,74 @@ package com.efiAnalytics.apps.ts.tuningViews;
 import G.R;
 import G.bf;
 import W.z;
-import aE.a;
+import aE.PropertiesExtension;
 import bH.D;
 import bH.X;
 import bH.t;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import r.a;
-import r.j;
-import r.o;
-import r.p;
+import r.PropertiesExtension;
+import r.ThreadedFile;
+import r.RInterfaceOscar;
+import r.RInterfacePapa;
 
 public class TuningViewFileLoader {
-  public static List a(List<R> paramList) {
+  public static List PropertiesExtension(List<R> paramList) {
     ArrayList arrayList = new ArrayList();
     for (R r : paramList)
-      arrayList.addAll(a(r)); 
+      arrayList.addAll(PropertiesExtension(r)); 
     arrayList.addAll(b(paramList));
-    arrayList.addAll(a());
+    arrayList.addAll(PropertiesExtension());
     String[] arrayOfString = new String[paramList.size()];
     for (byte b = 0; b < paramList.size(); b++) {
       R r = paramList.get(b);
       arrayOfString[b] = r.i();
     } 
-    return a(arrayList, arrayOfString);
+    return PropertiesExtension(arrayList, arrayOfString);
   }
   
-  public static List a(R paramR) {
+  public static List PropertiesExtension(R paramR) {
     ArrayList<k> arrayList = new ArrayList();
     List list = paramR.af();
     for (bf bf : list) {
       try {
-        k k = new k(bf.e().b(bf.aL(), bf.a()));
-        k.a("Current ECU Definition");
+        k k = new k(bf.e().b(bf.aL(), bf.PropertiesExtension()));
+        k.PropertiesExtension("Current ECU Definition");
         arrayList.add(k);
       } catch (Exception exception) {
-        D.a("Failed to load Default TuneView from ecuConfig! name: " + bf.aL() + ", md5: " + bf.a() + "\nError: " + exception.getLocalizedMessage());
+        D.PropertiesExtension("Failed to load Default TuneView from ecuConfig! name: " + bf.aL() + ", md5: " + bf.PropertiesExtension() + "\nError: " + exception.getLocalizedMessage());
       } 
     } 
-    File[] arrayOfFile = j.l().listFiles(new H());
-    o o = p.a().b();
+    File[] arrayOfFile = ThreadedFile.l().listFiles(new H());
+    RInterfaceOscar RInterfaceOscar = RInterfacePapa.PropertiesExtension().b();
     if (arrayOfFile != null) {
       for (byte b = 0; b < arrayOfFile.length; b++) {
-        if (arrayOfFile[b].getName().toLowerCase().endsWith(a.cp.toLowerCase())) {
-          String str = z.a(arrayOfFile[b]);
-          if (o == null || o.a(paramR.i(), str)) {
+        if (arrayOfFile[b].getName().toLowerCase().endsWith(PropertiesExtension.cp.toLowerCase())) {
+          String str = z.PropertiesExtension(arrayOfFile[b]);
+          if (RInterfaceOscar == null || RInterfaceOscar.PropertiesExtension(paramR.i(), str)) {
             k k = new k(arrayOfFile[b]);
-            k.a("Application");
+            k.PropertiesExtension("Application");
             arrayList.add(k);
           } 
         } 
       } 
     } else {
-      D.b("No TuneView files found in :\n\t" + j.l());
+      D.b("No TuneView files found in :\n\t" + ThreadedFile.l());
     } 
     return arrayList;
   }
   
-  public static List a() {
+  public static List PropertiesExtension() {
     ArrayList<k> arrayList = new ArrayList();
-    File[] arrayOfFile = j.k().listFiles();
+    File[] arrayOfFile = ThreadedFile.k().listFiles();
     if (arrayOfFile != null) {
       for (byte b = 0; b < arrayOfFile.length; b++) {
-        if (arrayOfFile[b].getName().toLowerCase().endsWith(a.cp.toLowerCase()))
+        if (arrayOfFile[b].getName().toLowerCase().endsWith(PropertiesExtension.cp.toLowerCase()))
           arrayList.add(new k(arrayOfFile[b])); 
       } 
     } else {
-      D.b("No TuneView files found in :\n\t" + j.l());
+      D.b("No TuneView files found in :\n\t" + ThreadedFile.l());
     } 
     return arrayList;
   }
@@ -80,26 +80,26 @@ public class TuningViewFileLoader {
     File[] arrayOfFile = b();
     if (arrayOfFile != null) {
       for (byte b = 0; b < arrayOfFile.length; b++) {
-        if (arrayOfFile[b].getName().toLowerCase().endsWith(a.cp.toLowerCase())) {
+        if (arrayOfFile[b].getName().toLowerCase().endsWith(PropertiesExtension.cp.toLowerCase())) {
           k k = new k(arrayOfFile[b]);
-          k.a("Current Project");
+          k.PropertiesExtension("Current Project");
           arrayList.add(k);
         } 
       } 
     } else {
-      D.b("No TuneView files found in :\n\t" + j.l());
+      D.b("No TuneView files found in :\n\t" + ThreadedFile.l());
     } 
     if (arrayList.isEmpty()) {
       ArrayList arrayList1 = new ArrayList();
       for (R r : paramList) {
-        List list = a(r);
+        List list = PropertiesExtension(r);
         arrayList1.addAll(list);
       } 
       byte b = 0;
       for (k k : arrayList1) {
-        File file1 = k.a();
-        File file2 = new File(j.a(a.A()), a(b++));
-        t.a(file1, file2);
+        File file1 = k.PropertiesExtension();
+        File file2 = new File(ThreadedFile.PropertiesExtension(PropertiesExtension.A()), PropertiesExtension(b++));
+        t.PropertiesExtension(file1, file2);
       } 
       if (b > 0)
         return b(paramList); 
@@ -108,23 +108,23 @@ public class TuningViewFileLoader {
   }
   
   public static File[] b() {
-    return j.a(a.A()).listFiles(new I());
+    return ThreadedFile.PropertiesExtension(PropertiesExtension.A()).listFiles(new I());
   }
   
   public static void c() {
     File[] arrayOfFile = b();
     for (int i = arrayOfFile.length - 1; i >= 0; i--) {
-      String str = a(i);
+      String str = PropertiesExtension(i);
       if (!str.equals(arrayOfFile[i].getName())) {
         File file = new File(arrayOfFile[i].getParentFile(), str);
         if (file.exists()) {
-          for (int j = i; j >= 0; j--) {
-            File file1 = new File(arrayOfFile[j].getParentFile(), arrayOfFile[j].getName() + "~");
+          for (int ThreadedFile = i; ThreadedFile >= 0; ThreadedFile--) {
+            File file1 = new File(arrayOfFile[ThreadedFile].getParentFile(), arrayOfFile[ThreadedFile].getName() + "~");
             if (file1.exists() && !file1.delete()) {
               D.b("Can not delete file to correct TuneView file names for project. \n" + file1.getAbsolutePath());
             } else {
-              arrayOfFile[j].renameTo(file1);
-              arrayOfFile[j] = file1;
+              arrayOfFile[ThreadedFile].renameTo(file1);
+              arrayOfFile[ThreadedFile] = file1;
             } 
           } 
         } else if (!arrayOfFile[i].renameTo(file)) {
@@ -136,20 +136,20 @@ public class TuningViewFileLoader {
     } 
   }
   
-  public static String a(int paramInt) {
-    return k.a + X.a(paramInt + ".", '0', 4) + a.cp;
+  public static String PropertiesExtension(int paramInt) {
+    return k.PropertiesExtension + X.PropertiesExtension(paramInt + ".", '0', 4) + PropertiesExtension.cp;
   }
   
   public static File b(int paramInt) {
-    return new File(j.a(a.A()), a(paramInt));
+    return new File(ThreadedFile.PropertiesExtension(PropertiesExtension.A()), PropertiesExtension(paramInt));
   }
   
-  public static List a(List<k> paramList, String[] paramArrayOfString) {
-    o o = p.a().b();
+  public static List PropertiesExtension(List<k> paramList, String[] paramArrayOfString) {
+    RInterfaceOscar RInterfaceOscar = RInterfacePapa.PropertiesExtension().b();
     for (byte b = 0; b < paramList.size(); b++) {
       k k = paramList.get(b);
-      String str = z.a(k.a());
-      if (!a(o, paramArrayOfString, str)) {
+      String str = z.PropertiesExtension(k.PropertiesExtension());
+      if (!PropertiesExtension(RInterfaceOscar, paramArrayOfString, str)) {
         paramList.remove(b);
         b--;
       } 
@@ -157,9 +157,9 @@ public class TuningViewFileLoader {
     return paramList;
   }
   
-  private static boolean a(o paramo, String[] paramArrayOfString, String paramString) {
+  private static boolean PropertiesExtension(RInterfaceOscar paramo, String[] paramArrayOfString, String paramString) {
     for (byte b = 0; b < paramArrayOfString.length; b++) {
-      if (paramo.a(paramArrayOfString[b], paramString))
+      if (paramo.PropertiesExtension(paramArrayOfString[b], paramString))
         return true; 
     } 
     return false;

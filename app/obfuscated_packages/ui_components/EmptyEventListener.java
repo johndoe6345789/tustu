@@ -1,12 +1,12 @@
 package ao;
 
-import ar.c;
-import ar.e;
+import ar.ArComponentCharlie;
+import ar.ArComponentEcho;
 
-class C implements e {
+class C implements ArComponentEcho {
   C(A paramA) {}
   
-  public void a(c paramc) {
+  public void a(ArComponentCharlie paramc) {
     this.a.a();
   }
   
@@ -14,15 +14,15 @@ class C implements e {
     return true;
   }
   
-  public void b(c paramc) {}
+  public void b(ArComponentCharlie paramc) {}
   
-  public void c(c paramc) {}
+  public void ArComponentCharlie(ArComponentCharlie paramc) {}
   
   public void a(String paramString) {}
   
   public void b(String paramString) {}
   
-  public void c(String paramString) {}
+  public void ArComponentCharlie(String paramString) {}
 }
 
 

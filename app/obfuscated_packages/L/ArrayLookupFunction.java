@@ -2,9 +2,9 @@ package L;
 
 import G.aI;
 import G.aM;
-import V.g;
-import ax.S;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.CloneableImplInAxPackage;
+import ax.ExceptionInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -23,29 +23,29 @@ public class ArrayLookupFunction extends ac {
     this.d = paramaI;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     c(paramS);
     try {
       double[][] arrayOfDouble = this.c.i(this.d.h());
       return a(arrayOfDouble, this.a.b(paramS));
-    } catch (g g) {
-      throw new U("Unable to evaluate tableLookup: " + g.getLocalizedMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      throw new ExceptionInAxPackage("Unable to evaluate tableLookup: " + ExceptionPrintstacktrace.getLocalizedMessage());
     } 
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   
-  private void c(S paramS) {
+  private void c(CloneableImplInAxPackage paramS) {
     if (this.c == null) {
       this.c = l.a().a((int)this.b.b(paramS));
       if (this.c == null)
-        throw new U("Array Parameter not found!"); 
+        throw new ExceptionInAxPackage("Array Parameter not found!"); 
       if (!this.c.i().equals("array"))
-        throw new U("Array Parameter must be of type array!"); 
+        throw new ExceptionInAxPackage("Array Parameter must be of type array!"); 
       if (this.c.m() != 1)
-        throw new U("Array Parameter must be 1D array!"); 
+        throw new ExceptionInAxPackage("Array Parameter must be 1D array!"); 
     } 
   }
   

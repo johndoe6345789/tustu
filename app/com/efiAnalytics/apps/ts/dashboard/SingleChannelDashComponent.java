@@ -3,23 +3,23 @@ package com.efiAnalytics.apps.ts.dashboard;
 import G.T;
 import G.cq;
 import G.cu;
-import V.a;
-import aE.a;
+import V.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
 import bH.D;
-import d.d;
-import d.j;
+import DComponentDelta.DComponentDelta;
+import DComponentDelta.j;
 import java.io.Serializable;
 
-public abstract class SingleChannelDashComponent extends s implements cq, d, j, Serializable {
+public abstract class SingleChannelDashComponent extends s implements cq, DComponentDelta, j, Serializable {
   protected String S = null;
   
-  private String a = null;
+  private String ExceptionInVPackage = null;
   
   private String b = null;
   
   private double c = 0.0D;
   
-  private String d = null;
+  private String DComponentDelta = null;
   
   private static String[] f = new String[] { "veTuneValue", "deadValue" };
   
@@ -42,27 +42,27 @@ public abstract class SingleChannelDashComponent extends s implements cq, d, j, 
   
   public void subscribeToOutput() {
     String str = this.e;
-    if (a.A() != null && (str == null || str.equals("") || (!str.equals(cu.a) && T.a().c(str) == null)))
-      str = a.A().u(); 
+    if (ExceptionInVPackage.A() != null && (str == null || str.equals("") || (!str.equals(cu.ExceptionInVPackage) && T.ExceptionInVPackage().c(str) == null)))
+      str = ExceptionInVPackage.A().u(); 
     try {
       if (getOutputChannel() != null && !isOnDontSubscribeList(getOutputChannel())) {
-        cu cu = cu.a();
-        cu.a(this);
-        cu.a(str, getOutputChannel(), this);
+        cu cu = cu.ExceptionInVPackage();
+        cu.ExceptionInVPackage(this);
+        cu.ExceptionInVPackage(str, getOutputChannel(), this);
       } 
     } catch (Exception exception) {
-      if (this.d == null || (getOutputChannel() != null && !this.d.equals(getOutputChannel()))) {
+      if (this.DComponentDelta == null || (getOutputChannel() != null && !this.DComponentDelta.equals(getOutputChannel()))) {
         D.b("Failed to subscribe DashComp to OutputChannel " + getOutputChannel() + "\nNot found in current configuration.");
-        this.d = getOutputChannel();
+        this.DComponentDelta = getOutputChannel();
       } 
       setInvalidState(true);
-      throw new a("Failed to subscribe DashComp to OutputChannel " + getOutputChannel() + "\nPlease set to a valid OutputChannel.");
+      throw new ExceptionInVPackage("Failed to subscribe DashComp to OutputChannel " + getOutputChannel() + "\nPlease set to ExceptionInVPackage valid OutputChannel.");
     } 
     setInvalidState(false);
   }
   
   public void unsubscribeToOutput() {
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   private boolean isOnDontSubscribeList(String paramString) {
@@ -83,11 +83,11 @@ public abstract class SingleChannelDashComponent extends s implements cq, d, j, 
   }
   
   public String getShortClickAction() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
   public void setShortClickAction(String paramString) {
-    this.a = paramString;
+    this.ExceptionInVPackage = paramString;
   }
   
   public String getLongClickAction() {

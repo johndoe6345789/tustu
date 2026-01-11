@@ -1,13 +1,13 @@
 package L;
 
-import M.KalmanFilter;
+import M.KalmanFilterUsingMatrix;
 import linear_algebra.Matrix;
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
 public class SmoothFilteredFunction extends ac {
-  private KalmanFilter c;
+  private KalmanFilterUsingMatrix c;
 
   private ab d;
 
@@ -25,10 +25,10 @@ public class SmoothFilteredFunction extends ac {
     double d1 = 50.0D;
     double d2 = 3.0D;
     double d3 = 5000.0D;
-    this.c = KalmanFilter.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
+    this.c = KalmanFilterUsingMatrix.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d = this.e.b(paramS);
     if (Double.isNaN(this.a) || this.a != d) {
       if (Double.isNaN(this.f)) {
@@ -47,7 +47,7 @@ public class SmoothFilteredFunction extends ac {
     return this.b;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

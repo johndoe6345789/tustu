@@ -18,8 +18,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import r.j;
-import s.g;
+import r.ThreadedFile;
+import s.SComponentGolf;
 
 public class aj extends a {
   List a = new ArrayList();
@@ -33,7 +33,7 @@ public class aj extends a {
   JPanel e = new JPanel();
   
   public aj(Window paramWindow, String paramString) {
-    super(paramWindow, g.b(paramString));
+    super(paramWindow, SComponentGolf.b(paramString));
     setLayout(new BorderLayout());
     this.e.setLayout(new BorderLayout());
     this.e.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -42,31 +42,31 @@ public class aj extends a {
     this.b.setLayout(new GridLayout(0, 3, 5, 5));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
-    jPanel1.setBorder(BorderFactory.createTitledBorder(g.b("Current Images")));
+    jPanel1.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Current Images")));
     this.e.add("Center", jPanel1);
     jPanel1.add("Center", jScrollPane);
     jScrollPane.setSize(eJ.a(340), eJ.a(240));
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout(1));
-    jPanel2.setBorder(BorderFactory.createTitledBorder(g.b("Selected Image Preview")));
+    jPanel2.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Selected Image Preview")));
     this.c = new ar(this, 185);
     jPanel2.add(this.c);
     jPanel1.add("East", jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout(2));
-    JButton jButton1 = new JButton(g.b("Other Images"));
+    JButton jButton1 = new JButton(SComponentGolf.b("Other Images"));
     jButton1.addActionListener(new ak(this));
     jPanel3.add(jButton1);
     JLabel jLabel = new JLabel();
     jLabel.setPreferredSize(eJ.a(50, 20));
     jPanel3.add(jLabel);
-    JButton jButton2 = new JButton(g.b("Apply"));
+    JButton jButton2 = new JButton(SComponentGolf.b("Apply"));
     jButton2.addActionListener(new al(this));
     jPanel3.add(jButton2);
-    JButton jButton3 = new JButton(g.b("Clear"));
+    JButton jButton3 = new JButton(SComponentGolf.b("Clear"));
     jButton3.addActionListener(new am(this));
     jPanel3.add(jButton3);
-    JButton jButton4 = new JButton(g.b("Done"));
+    JButton jButton4 = new JButton(SComponentGolf.b("Done"));
     jButton4.addActionListener(new an(this));
     jPanel3.add(jButton4);
     this.e.add("South", jPanel3);
@@ -77,14 +77,14 @@ public class aj extends a {
   public aj(Window paramWindow, File paramFile, String paramString) {
     this(paramWindow, paramString);
     a(paramFile);
-    a(j.i());
+    a(ThreadedFile.i());
   }
   
   public aj(Window paramWindow, List paramList, String paramString) {
     this(paramWindow, paramString);
     for (File file : paramList)
       a(file); 
-    a(j.i());
+    a(ThreadedFile.i());
   }
   
   public void a(File paramFile) {
@@ -102,7 +102,7 @@ public class aj extends a {
   
   public void a() {
     String[] arrayOfString = { "gif", "jpg", "jpeg", "png" };
-    String str = bV.a(this, getTitle(), arrayOfString, "", j.w(), true, (ck)new cl());
+    String str = bV.a(this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck)new cl());
     if (str != null && !str.equals("")) {
       ar ar1 = new ar(this, new File(str));
       ar1.addMouseListener(new aq(this));

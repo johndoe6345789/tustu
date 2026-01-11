@@ -1,44 +1,44 @@
 package ao;
 
-import V.h;
+import V.VInterfaceHotel;
 import W.j;
 import W.n;
-import ax.U;
+import ax.ExceptionInAxPackage;
 import bH.D;
-import g.e;
-import k.a;
-import k.d;
+import g.GInterfaceEcho;
+import k.KInterfaceAlpha;
+import k.KComponentDelta;
 
 public class E {
-  private String a = null;
+  private String KInterfaceAlpha = null;
   
   private String b = null;
   
   private String c = null;
   
-  private float d = 0.0F;
+  private float KComponentDelta = 0.0F;
   
-  private int e = 1;
+  private int GInterfaceEcho = 1;
   
   private String f = null;
   
   private int g = 0;
   
-  public boolean a(n paramn, int paramInt) {
-    j j = paramn.a(this.a);
-    if (this.e != 64 && j == null)
+  public boolean KInterfaceAlpha(n paramn, int paramInt) {
+    j j = paramn.KInterfaceAlpha(this.KInterfaceAlpha);
+    if (this.GInterfaceEcho != 64 && j == null)
       return false; 
     boolean bool = false;
-    if (this.e == 64) {
+    if (this.GInterfaceEcho == 64) {
       String str = null;
       try {
-        str = e.b(paramn, this.c, paramInt);
-        a a = d.a().a(str);
-        bool = (a.d() != 0.0D);
-      } catch (h h) {
+        str = GInterfaceEcho.b(paramn, this.c, paramInt);
+        KInterfaceAlpha KInterfaceAlpha = KComponentDelta.KInterfaceAlpha().KInterfaceAlpha(str);
+        bool = (KInterfaceAlpha.KComponentDelta() != 0.0D);
+      } catch (VInterfaceHotel VInterfaceHotel) {
         D.b("Unable to evaluate filter condition, not filtering:" + this.c + "\n\t" + str);
         return false;
-      } catch (U u) {
+      } catch (ExceptionInAxPackage u) {
         D.b("Unable to evaluate filter condition, not filtering:" + this.c + "\n\t" + str);
         return false;
       } 
@@ -46,21 +46,21 @@ public class E {
       float f1 = j.c(paramInt);
       float f2 = 0.0F;
       if (this.b == null || this.b.equals("")) {
-        f2 = this.d;
+        f2 = this.KComponentDelta;
       } else {
-        j j1 = paramn.a(this.b);
+        j j1 = paramn.KInterfaceAlpha(this.b);
         if (j1 == null)
           return false; 
         f2 = j1.c(paramInt);
       } 
-      bool = a(f1, f2, this.e);
+      bool = KInterfaceAlpha(f1, f2, this.GInterfaceEcho);
     } 
     if (bool)
-      c(a() + 1); 
+      c(KInterfaceAlpha() + 1); 
     return bool;
   }
   
-  public boolean a(double paramDouble1, double paramDouble2, int paramInt) {
+  public boolean KInterfaceAlpha(double paramDouble1, double paramDouble2, int paramInt) {
     if (paramInt == 1)
       return (paramDouble1 == paramDouble2); 
     if (paramInt == 2)
@@ -79,35 +79,35 @@ public class E {
     return false;
   }
   
-  public void a(String paramString) {
-    this.a = paramString;
+  public void KInterfaceAlpha(String paramString) {
+    this.KInterfaceAlpha = paramString;
   }
   
   public void b(String paramString) {
-    this.d = Float.parseFloat(paramString);
+    this.KComponentDelta = Float.parseFloat(paramString);
   }
   
-  public void a(float paramFloat) {
-    this.d = paramFloat;
+  public void KInterfaceAlpha(float paramFloat) {
+    this.KComponentDelta = paramFloat;
   }
   
-  public void a(int paramInt) {
-    this.d = paramInt;
+  public void KInterfaceAlpha(int paramInt) {
+    this.KComponentDelta = paramInt;
   }
   
   public void b(int paramInt) {
-    this.e = paramInt;
+    this.GInterfaceEcho = paramInt;
   }
   
   public String toString() {
-    return "Field=" + this.a + "\noperator=" + this.e + "\ncompareField=" + this.b + "\ncompareValue=" + this.d;
+    return "Field=" + this.KInterfaceAlpha + "\noperator=" + this.GInterfaceEcho + "\ncompareField=" + this.b + "\ncompareValue=" + this.KComponentDelta;
   }
   
   public void c(String paramString) {
     this.c = paramString;
   }
   
-  public int a() {
+  public int KInterfaceAlpha() {
     return this.g;
   }
   
@@ -116,10 +116,10 @@ public class E {
   }
   
   public String b() {
-    return (this.f != null && !this.f.equals("")) ? this.f : ((this.e == 64) ? this.c : ((this.a != null) ? this.a : "Undefined"));
+    return (this.f != null && !this.f.equals("")) ? this.f : ((this.GInterfaceEcho == 64) ? this.c : ((this.KInterfaceAlpha != null) ? this.KInterfaceAlpha : "Undefined"));
   }
   
-  public void d(String paramString) {
+  public void KComponentDelta(String paramString) {
     this.f = paramString;
   }
 }

@@ -9,8 +9,8 @@ import G.c;
 import G.cq;
 import G.da;
 import G.db;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.T;
 import bH.X;
@@ -30,10 +30,10 @@ import javax.swing.BoxLayout;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class ArrayEditorPanel extends JPanel implements cq, h, bc {
-  ArrayList a = new ArrayList();
+  ArrayList ExceptionInVPackage = new ArrayList();
   
   ArrayList b = new ArrayList();
   
@@ -45,7 +45,7 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
   
   Color f = Color.GREEN;
   
-  G.R g;
+  G.R ExceptionPrintstacktrace;
   
   private int i = -1;
   
@@ -57,15 +57,15 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
   
   public R(G.R paramR, bj parambj) {
     this.h = parambj;
-    this.g = paramR;
+    this.ExceptionPrintstacktrace = paramR;
     String str = (parambj.M() != null) ? parambj.M() : "";
-    str = g.a(str, str);
+    str = ExceptionPrintstacktrace.ExceptionInVPackage(str, str);
     if (str != null && !str.equals("")) {
       setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), str));
     } else if (str != null && str.equals(".")) {
       setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0)));
     } 
-    aR aR = aR.a();
+    aR aR = aR.ExceptionInVPackage();
     aM aM = paramR.c(parambj.b());
     if (aM != null && parambj.h()) {
       setLayout(new GridLayout(1, 0));
@@ -74,21 +74,21 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
     } 
     for (byte b = 0; b < aM.b(); b++) {
       bq bq = new bq();
-      bq.a(b);
+      bq.ExceptionInVPackage(b);
       bq.u(parambj.c());
       bq.b(parambj.b());
-      String str1 = parambj.a();
+      String str1 = parambj.ExceptionInVPackage();
       if (str1 != null) {
-        str1 = g.b(str1);
+        str1 = ExceptionPrintstacktrace.b(str1);
         str1 = X.b(str1, "%INDEX%", (1 + b) + "");
         try {
-          bq.b(da.a().a(paramR, str1));
-        } catch (g g) {
+          bq.b(da.ExceptionInVPackage().ExceptionInVPackage(paramR, str1));
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           bq.e(str1);
-          Logger.getLogger(bh.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+          Logger.getLogger(bh.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
       } else if (parambj.d() != null && (parambj.d()).length > b) {
-        bq.b((db)new c(parambj.d()[b] + T.a() + " "));
+        bq.b((db)new c(parambj.d()[b] + T.ExceptionInVPackage() + " "));
       } 
       if (parambj.f() == null) {
         this.c = UIManager.getColor("TextField.background");
@@ -97,24 +97,24 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
       } 
       aV aV = new aV(paramR, bq);
       aV.setBackground(this.c);
-      aV.a(new S(this, b));
+      aV.ExceptionInVPackage(new S(this, b));
       if (parambj.h())
         aV.b(10); 
       add(aV);
       this.b.add(aV);
       if (bq.b() != null && paramR.c(bq.b()) != null) {
-        this.a.add(bq.b());
+        this.ExceptionInVPackage.add(bq.b());
         try {
-          aR.a(paramR.c(), bq.b(), aV);
-        } catch (a a) {
-          a.printStackTrace();
-          D.a("Error subscribing to ParameterValue Changes. Parameter:" + bq.b(), (Exception)a, this);
+          aR.ExceptionInVPackage(paramR.c(), bq.b(), aV);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          ExceptionInVPackage.printStackTrace();
+          D.ExceptionInVPackage("Error subscribing to ParameterValue Changes. Parameter:" + bq.b(), (Exception)ExceptionInVPackage, this);
         } 
       } 
     } 
-    Iterator<bV> iterator = parambj.g();
+    Iterator<bV> iterator = parambj.ExceptionPrintstacktrace();
     while (iterator.hasNext())
-      a(iterator.next()); 
+      ExceptionInVPackage(iterator.next()); 
   }
   
   public void close() {
@@ -138,7 +138,7 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
         ((aV)this.b.get(b)).setBackground(Color.YELLOW);
         ((aV)this.b.get(b)).setForeground(Color.BLACK);
       } else if (b == this.j && b == this.i) {
-        ((aV)this.b.get(b)).setBackground(a(this.f, this.e));
+        ((aV)this.b.get(b)).setBackground(ExceptionInVPackage(this.f, this.e));
         ((aV)this.b.get(b)).setForeground(Color.BLACK);
       } else if (b == this.j) {
         ((aV)this.b.get(b)).setBackground(this.f);
@@ -163,7 +163,7 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
     } 
   }
   
-  private Color a(Color paramColor1, Color paramColor2) {
+  private Color ExceptionInVPackage(Color paramColor1, Color paramColor2) {
     int i = 2 * (paramColor1.getRed() + paramColor2.getRed()) / 3;
     int j = 2 * (paramColor1.getGreen() + paramColor2.getGreen()) / 3;
     int k = 2 * (paramColor1.getBlue() + paramColor2.getBlue()) / 3;
@@ -177,7 +177,7 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
     d(paramInt);
   }
   
-  public void a(bV parambV) {
+  public void ExceptionInVPackage(bV parambV) {
     this.k.add(parambV);
   }
   
@@ -185,14 +185,14 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
     Iterator<bV> iterator = this.k.iterator();
     while (iterator.hasNext()) {
       try {
-        ((bV)iterator.next()).a(paramInt);
+        ((bV)iterator.next()).ExceptionInVPackage(paramInt);
       } catch (Exception exception) {
         exception.printStackTrace();
       } 
     } 
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     this.j = paramInt;
     c();
   }
@@ -206,13 +206,13 @@ public class ArrayEditorPanel extends JPanel implements cq, h, bc {
     return (this.i >= 0 && this.i < getComponentCount()) ? (JComponent)getComponent(this.i) : null;
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (this.h != null)
       try {
-        boolean bool = p.a(this.h.c(), this.g);
-        fp.a(this, bool);
+        boolean bool = p.ExceptionInVPackage(this.h.c(), this.ExceptionPrintstacktrace);
+        fp.ExceptionInVPackage(this, bool);
       } catch (Exception exception) {
-        D.a(exception.getMessage());
+        D.ExceptionInVPackage(exception.getMessage());
       }  
   }
 }

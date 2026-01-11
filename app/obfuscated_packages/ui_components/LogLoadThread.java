@@ -2,15 +2,15 @@ package ao;
 
 import W.j;
 import W.n;
-import h.g;
+import h.PropertiesExtensionInHPackage;
 
 class ex extends Thread {
   ex(er paramer, n paramn) {}
   
   public void run() {
     this.b.c.a(this.a);
-    g g = g.a();
-    String str = g.a("Time");
+    PropertiesExtensionInHPackage PropertiesExtensionInHPackage = PropertiesExtensionInHPackage.a();
+    String str = PropertiesExtensionInHPackage.a("Time");
     j j = this.a.a(str);
     this.b.c.a(j);
     this.b.c();

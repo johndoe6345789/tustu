@@ -1,13 +1,13 @@
 package L;
 
-import ax.A;
+import ax.AxComponentAlpha;
 import ax.ab;
 import ax.ac;
-import ax.e;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class MathFunctionFactory extends e {
-  private static n e = null;
+public class MathFunctionFactory extends AbstractInAxPackage {
+  private static n AbstractInAxPackage = null;
   
   ab a = new o(this);
   
@@ -22,9 +22,9 @@ public class MathFunctionFactory extends e {
   private int g = 0;
   
   public static n a() {
-    if (e == null)
-      e = new n(); 
-    return e;
+    if (AbstractInAxPackage == null)
+      AbstractInAxPackage = new n(); 
+    return AbstractInAxPackage;
   }
   
   public ac a(String paramString, List paramList) {
@@ -56,7 +56,7 @@ public class MathFunctionFactory extends e {
     } else if (paramString.equalsIgnoreCase("min")) {
       ac = g(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("max")) {
-      ac = e(paramString, paramList);
+      ac = AbstractInAxPackage(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("avg")) {
       ac = f(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("highSpeedRecordNumber")) {
@@ -79,62 +79,62 @@ public class MathFunctionFactory extends e {
   
   private ac b(String paramString, List<ab> paramList) {
     if (paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new P(paramList.get(0), paramList.get(1));
   }
   
   private ac c(String paramString, List<ab> paramList) {
     if (paramList.size() != 1 && paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return (paramList.size() == 2) ? new aa(paramList.get(0), paramList.get(1)) : new aa(paramList.get(0));
   }
   
   private ac d(String paramString, List<ab> paramList) {
     if (paramList.size() != 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new F(paramList.get(0), this.a);
   }
   
-  private ac e(String paramString, List paramList) {
+  private ac AbstractInAxPackage(String paramString, List paramList) {
     if (paramList.size() < 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new G(paramList);
   }
   
   private ac f(String paramString, List paramList) {
     if (paramList.size() < 1)
-      throw new A(paramString, paramList.size(), 1); 
-    return new e(paramList);
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
+    return new AbstractInAxPackage(paramList);
   }
   
   private ac g(String paramString, List paramList) {
     if (paramList.size() < 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new I(paramList);
   }
   
   private ac h(String paramString, List<ab> paramList) {
     if (paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 2); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 2); 
     return new K(paramList.get(0), paramList.get(1));
   }
   
   private ac i(String paramString, List<ab> paramList) {
     if (paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 2); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 2); 
     return new F(paramList.get(0), this.a, paramList.get(1));
   }
   
   private ac j(String paramString, List<ab> paramList) {
     if (paramList.size() != 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new b(paramList.get(0), this.a);
   }
   
   private ac k(String paramString, List paramList) {
     if (paramList.size() != 0)
-      throw new A(paramString, paramList.size(), 1); 
-    return new A(this.d);
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
+    return new AxComponentAlpha(this.d);
   }
   
   public void a(int paramInt) {
@@ -154,72 +154,72 @@ public class MathFunctionFactory extends e {
       ab ab1 = paramList.remove(0);
       return new N(ab1, paramList);
     } 
-    throw new A(paramString, paramList.size(), 2);
+    throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
   private ac m(String paramString, List paramList) {
     if (paramList.size() == 3)
       return new B(paramList); 
-    throw new A(paramString, paramList.size(), 3);
+    throw new AxComponentAlpha(paramString, paramList.size(), 3);
   }
   
   private ac n(String paramString, List paramList) {
     if (paramList.size() >= 2)
       return new Q(paramList); 
-    throw new A(paramString, paramList.size(), 2);
+    throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
   private ac o(String paramString, List<ab> paramList) {
     if (paramList.size() == 2)
       return new E(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString + "\nProper Usage:\nisTrueFor([TrueFalseExpression], [SecondsTrueExpression])", paramList.size(), 2);
+    throw new AxComponentAlpha(paramString + "\nProper Usage:\nisTrueFor([TrueFalseExpression], [SecondsTrueExpression])", paramList.size(), 2);
   }
   
   private ac p(String paramString, List<ab> paramList) {
     if (paramList.size() == 1)
       return new Z(paramList.get(0)); 
-    throw new A(paramString + "\nProper Usage:\ntimeTrue([TrueFalseExpression])", paramList.size(), 2);
+    throw new AxComponentAlpha(paramString + "\nProper Usage:\ntimeTrue([TrueFalseExpression])", paramList.size(), 2);
   }
   
   private ac q(String paramString, List<ab> paramList) {
     if (paramList.size() != 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new C(paramList.get(0));
   }
   
   private ac r(String paramString, List<ab> paramList) {
     if (paramList.size() != 4)
-      throw new A(paramString + "\nProper Usage:\naerodynamicDragHp(velocity (m/s), airDensity (kg/m^-3), dragCoefficent, frontalArea (m^2))", paramList.size(), 4); 
+      throw new AxComponentAlpha(paramString + "\nProper Usage:\naerodynamicDragHp(velocity (m/s), airDensity (kg/m^-3), dragCoefficent, frontalArea (m^2))", paramList.size(), 4); 
     return new c(paramList.get(0), paramList.get(1), paramList.get(2), paramList.get(3));
   }
   
   private ac s(String paramString, List<ab> paramList) {
     if (paramList.size() != 4)
-      throw new A(paramString + "\nProper Usage:\naccelHp(velocity (MPH), deltaVelocity(MPH), deltaTime(s), weight(lb))", paramList.size(), 4); 
+      throw new AxComponentAlpha(paramString + "\nProper Usage:\naccelHp(velocity (MPH), deltaVelocity(MPH), deltaTime(s), weight(lb))", paramList.size(), 4); 
     return new a(paramList.get(0), paramList.get(1), paramList.get(2), paramList.get(3));
   }
   
   private ac t(String paramString, List<ab> paramList) {
     if (paramList.size() != 3)
-      throw new A(paramString + "\nProper Usage:\nrollingDragHp(speed (MPH), tirePressure (psi), weight (lbs))", paramList.size(), 3); 
+      throw new AxComponentAlpha(paramString + "\nProper Usage:\nrollingDragHp(speed (MPH), tirePressure (psi), weight (lbs))", paramList.size(), 3); 
     return new M(paramList.get(0), paramList.get(1), paramList.get(2));
   }
   
   private ac u(String paramString, List<ab> paramList) {
     if (paramList.size() != 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new O(paramList.get(0), this.a);
   }
   
   private ac v(String paramString, List paramList) {
     if (paramList.size() != 1 && paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new H(paramList);
   }
   
   private ac w(String paramString, List paramList) {
     if (paramList.size() != 1 && paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     return new J(paramList);
   }
 }

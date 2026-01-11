@@ -13,14 +13,14 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 public class aA extends a implements f {
   JComboBox a = new JComboBox();
   
   JPanel b = new JPanel();
   
-  String c = g.b("Default");
+  String c = SComponentGolf.b("Default");
   
   private boolean d = false;
   

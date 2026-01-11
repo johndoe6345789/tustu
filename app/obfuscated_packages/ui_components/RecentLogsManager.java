@@ -2,12 +2,12 @@ package ao;
 
 import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.et;
-import h.i;
+import h.IOProperties;
 import java.io.File;
 import java.util.ArrayList;
 
 public class fA {
-  et a = (et)new dQ(i.f(), "recentlyOpenedLogs");
+  et a = (et)new dQ(IOProperties.f(), "recentlyOpenedLogs");
   
   int b = 7;
   

@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
@@ -11,7 +11,7 @@ class eM implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
     this.a.j = jComboBox.getSelectedItem().toString();
-    i.c(i.ac, this.a.j);
+    IOProperties.c(IOProperties.ac, this.a.j);
   }
 }
 

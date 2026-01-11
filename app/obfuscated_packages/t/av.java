@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import s.g;
+import s.SComponentGolf;
 
 public class av extends a implements f {
   JPanel a = new JPanel();
@@ -21,7 +21,7 @@ public class av extends a implements f {
   
   be e;
   
-  aA g;
+  aA SComponentGolf;
   
   ay h;
   
@@ -49,22 +49,22 @@ public class av extends a implements f {
     jPanel1.add(jPanel2);
     this.b = new r(paramWindow, paramai, paramString);
     this.k = new bi(paramWindow, paramai);
-    this.g = new aA(paramWindow, paramai);
+    this.SComponentGolf = new aA(paramWindow, paramai);
     this.h = new ay(paramWindow, paramai);
-    this.m = new aD(paramWindow, g.b("Font Size Adjustment"));
+    this.m = new aD(paramWindow, SComponentGolf.b("Font Size Adjustment"));
     this.m.a(paramai);
-    this.n = new aw(paramWindow, g.b("Display Digits"));
+    this.n = new aw(paramWindow, SComponentGolf.b("Display Digits"));
     this.n.a(paramai);
     this.d = new aK(paramWindow, paramai);
     this.c = new as(paramWindow, paramai);
     this.e = new be(paramWindow, paramai);
-    this.l = new b(paramWindow, g.b("Border Size"));
+    this.l = new b(paramWindow, SComponentGolf.b("Border Size"));
     this.l.a(paramai);
     this.i = new aO(paramWindow, paramai);
     this.j = new aF(paramWindow, paramai);
     jPanel2.add(this.b.a());
     jPanel2.add(this.k.a());
-    jPanel2.add(this.g.a());
+    jPanel2.add(this.SComponentGolf.a());
     jPanel2.add(this.m.a());
     jPanel2.add(this.h.a());
     jPanel2.add(this.d.a());
@@ -87,7 +87,7 @@ public class av extends a implements f {
     this.c.a(paramArrayList);
     this.d.a(paramArrayList);
     this.e.a(paramArrayList);
-    this.g.a(paramArrayList);
+    this.SComponentGolf.a(paramArrayList);
     this.i.a(paramArrayList);
     this.j.a(paramArrayList);
     try {

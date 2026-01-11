@@ -6,8 +6,8 @@ import G.aH;
 import G.aI;
 import G.cq;
 import G.cu;
-import V.a;
-import ax.S;
+import V.ExceptionInVPackage;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.Iterator;
@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ChannelValueByOffset extends ac implements cq {
-  aI a;
+  aI ExceptionInVPackage;
   
   ab b;
   
@@ -35,41 +35,41 @@ public class ChannelValueByOffset extends ac implements cq {
   }
   
   public s(aI paramaI, ab paramab) {
-    this.a = paramaI;
+    this.ExceptionInVPackage = paramaI;
     this.b = paramab;
   }
   
-  public double a(S paramS) {
+  public double ExceptionInVPackage(CloneableImplInAxPackage paramS) {
     double d = (this.d != null) ? this.d.b(paramS) : -1.0D;
     if (this.d != null && this.e != d) {
-      String[] arrayOfString = T.a().d();
+      String[] arrayOfString = T.ExceptionInVPackage().d();
       for (String str : arrayOfString) {
-        R r = T.a().c(str);
+        R r = T.ExceptionInVPackage().c(str);
         if (r.O().x() == d) {
-          this.a = (aI)r;
+          this.ExceptionInVPackage = (aI)r;
           this.e = (int)d;
           break;
         } 
       } 
       this.c = -1;
     } 
-    if (this.a == null)
+    if (this.ExceptionInVPackage == null)
       return Double.NaN; 
     int i = (int)this.b.b(paramS);
     if (this.c == -1 || i != this.c || this.f == null) {
-      cu.a().a(this);
-      Iterator<aH> iterator = this.a.K().q();
+      cu.ExceptionInVPackage().ExceptionInVPackage(this);
+      Iterator<aH> iterator = this.ExceptionInVPackage.K().q();
       while (iterator.hasNext()) {
         aH aH1 = iterator.next();
-        if (aH1.b().equals("scalar") && aH1.a() == i) {
+        if (aH1.b().equals("scalar") && aH1.ExceptionInVPackage() == i) {
           this.f = aH1;
           this.c = i;
           this.g = this.f.o();
           try {
-            cu.a().a(this.a.c(), this.f.aL(), this);
+            cu.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.f.aL(), this);
             return aH1.o();
-          } catch (a a) {
-            Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+          } catch (ExceptionInVPackage ExceptionInVPackage) {
+            Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
           } 
           return this.g;
         } 
@@ -78,8 +78,8 @@ public class ChannelValueByOffset extends ac implements cq {
     return this.g;
   }
   
-  public double b(S paramS) {
-    return a(paramS);
+  public double b(CloneableImplInAxPackage paramS) {
+    return ExceptionInVPackage(paramS);
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {

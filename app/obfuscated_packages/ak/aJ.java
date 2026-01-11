@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import W.X;
 import W.ah;
@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class aJ extends g {
-  List a = new ArrayList();
+  List ExceptionInVPackage = new ArrayList();
   
   boolean b = true;
   
@@ -30,9 +30,9 @@ public class aJ extends g {
   
   public aJ() {
     super(",", false);
-    this.a.add(",");
-    this.a.add(";");
-    this.a.add("\",\"");
+    this.ExceptionInVPackage.add(",");
+    this.ExceptionInVPackage.add(";");
+    this.ExceptionInVPackage.add("\",\"");
   }
   
   public String i() {
@@ -47,19 +47,19 @@ public class aJ extends g {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
       ah = new ah(new InputStreamReader(fileInputStream));
-      str = ah.a();
+      str = ah.ExceptionInVPackage();
       while (str != null && !str.startsWith("Marker")) {
-        str = ah.a();
+        str = ah.ExceptionInVPackage();
         if (str.startsWith(",TIME") || str.startsWith(",MARKE"))
           break; 
         b++;
       } 
-      l(a(ah.a(), this.a));
+      l(ExceptionInVPackage(ah.ExceptionInVPackage(), this.ExceptionInVPackage));
       return b;
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new a("Unable to open file for reading:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
-      throw new a("Unable to read from file:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
     } finally {
       if (ah != null)
         try {
@@ -79,13 +79,13 @@ public class aJ extends g {
       try {
         while (!b_(str = l()))
           arrayList.add(str); 
-        a(true);
+        ExceptionInVPackage(true);
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       byte b1 = 0;
       if (arrayList.size() == 4)
@@ -137,13 +137,13 @@ public class aJ extends g {
         String str2 = ((String)arrayList2.get(b3)).trim();
         if (!hashSet.add(str2))
           str2 = str2 + " " + (b2 - 1); 
-        d.a(str2);
+        d.ExceptionInVPackage(str2);
         d.b(((String)arrayList4.get(b3)).trim());
         this.g.add(d);
       } 
     } 
     for (d d : this.g)
-      d.a(m(d.a())); 
+      d.ExceptionInVPackage(m(d.ExceptionInVPackage())); 
     ArrayList<T> arrayList1 = new ArrayList();
     Iterator<T> iterator = this.g.iterator();
     while (iterator.hasNext())
@@ -161,21 +161,21 @@ public class aJ extends g {
   
   protected String l() {
     if (p()) {
-      a(false);
+      ExceptionInVPackage(false);
     } else {
       this.o = this.n;
       do {
-        this.n = this.e.a();
+        this.n = this.e.ExceptionInVPackage();
         if (this.n == null || !this.n.startsWith(r()) || !b_(this.n))
           continue; 
         this.n = "0" + this.n;
       } while (this.n != null && this.n.isEmpty());
       this.p++;
       if (this.o == null)
-        throw new f("No records available."); 
+        throw new VInterfaceFoxtrot("No records available."); 
       if (this.g.size() > 0 && this.o.trim().equals("")) {
         this.o = "MARK Corrupt file blank record";
-        System.out.println("Found a bad row");
+        System.out.println("Found ExceptionInVPackage bad row");
       } 
       if (this.p < 2)
         this.b = this.n.startsWith(r()); 
@@ -183,8 +183,8 @@ public class aJ extends g {
     return this.o;
   }
   
-  protected String a(String paramString, boolean paramBoolean) {
-    paramString = super.a(paramString, paramBoolean);
+  protected String ExceptionInVPackage(String paramString, boolean paramBoolean) {
+    paramString = super.ExceptionInVPackage(paramString, paramBoolean);
     if (paramString.contains(":")) {
       String str1 = paramString.substring(0, paramString.indexOf(":"));
       str1 = str1.substring(0, str1.lastIndexOf(r()) + 1);
@@ -195,8 +195,8 @@ public class aJ extends g {
   }
   
   protected void e(String paramString) {
-    if (this.b && paramString.contains(r()) && !paramString.startsWith("0" + this.f)) {
-      a(true);
+    if (this.b && paramString.contains(r()) && !paramString.startsWith("0" + this.VInterfaceFoxtrot)) {
+      ExceptionInVPackage(true);
       this.o = this.o.substring(1);
       throw new m(paramString.substring(0, paramString.indexOf(r())), false);
     } 

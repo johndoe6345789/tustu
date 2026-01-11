@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.X;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,8 +17,8 @@ public class aj extends Q {
   public String a() {
     try {
       return (this.a == null) ? null : this.a.a();
-    } catch (g g) {
-      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       return null;
     } 
   }
@@ -30,8 +30,8 @@ public class aj extends Q {
   public String b() {
     try {
       return (this.b == null) ? null : this.b.a();
-    } catch (g g) {
-      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       return null;
     } 
   }

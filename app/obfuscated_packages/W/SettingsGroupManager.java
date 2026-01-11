@@ -2,8 +2,8 @@ package W;
 
 import G.r;
 import G.s;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,32 +11,32 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class SettingsGroupManager {
-  private static SettingsGroupManager a = null;
+  private static SettingsGroupManager ExceptionInVPackage = null;
   
   private s[] b = null;
   
   private ai c = null;
   
-  public static v a(ai paramai) {
-    if (a == null) {
-      a = new v();
-      a.c = paramai;
+  public static v ExceptionInVPackage(ai paramai) {
+    if (ExceptionInVPackage == null) {
+      ExceptionInVPackage = new v();
+      ExceptionInVPackage.c = paramai;
     } 
-    return a;
+    return ExceptionInVPackage;
   }
   
-  public static v a() {
-    if (a == null)
-      a = new v(); 
-    return a;
+  public static v ExceptionInVPackage() {
+    if (ExceptionInVPackage == null)
+      ExceptionInVPackage = new v(); 
+    return ExceptionInVPackage;
   }
   
-  public s[] a(String paramString) {
+  public s[] ExceptionInVPackage(String paramString) {
     I i = new I();
     try {
-      J j = (new ab()).a(paramString);
-      ArrayList<s> arrayList = i.a(j);
-      ArrayList<H> arrayList1 = i.a(paramString);
+      J j = (new ab()).ExceptionInVPackage(paramString);
+      ArrayList<s> arrayList = i.ExceptionInVPackage(j);
+      ArrayList<H> arrayList1 = i.ExceptionInVPackage(paramString);
       s[] arrayOfS = new s[arrayList.size() + arrayList1.size()];
       byte b;
       for (b = 0; b < arrayList.size(); b++)
@@ -44,32 +44,32 @@ public class SettingsGroupManager {
       for (b = 0; b < arrayList1.size(); b++) {
         s s1 = new s();
         H h = arrayList1.get(b);
-        s1.b(h.a());
-        s1.c(h.a());
+        s1.b(h.ExceptionInVPackage());
+        s1.c(h.ExceptionInVPackage());
         r r1 = new r();
-        r1.a("Activated");
-        r1.v(h.a());
-        r1.a(h.b());
-        s1.a(r1);
+        r1.ExceptionInVPackage("Activated");
+        r1.v(h.ExceptionInVPackage());
+        r1.ExceptionInVPackage(h.b());
+        s1.ExceptionInVPackage(r1);
         r r2 = new r();
-        r2.a("Deactivated");
-        r2.v(h.a() + "_OFF");
-        r2.a(!h.b());
-        s1.a(r2);
+        r2.ExceptionInVPackage("Deactivated");
+        r2.v(h.ExceptionInVPackage() + "_OFF");
+        r2.ExceptionInVPackage(!h.b());
+        s1.ExceptionInVPackage(r2);
         arrayOfS[arrayList.size() + b] = s1;
       } 
       return arrayOfS;
     } catch (FileNotFoundException fileNotFoundException) {
       fileNotFoundException.printStackTrace();
-      throw new a("Ini File\n" + paramString + "\n not found");
+      throw new ExceptionInVPackage("Ini File\n" + paramString + "\n not found");
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Error reading options in ini file:\n" + paramString);
-    } catch (g g) {
-      String str = "Error in [SettingGroups]\nReported Error:\n" + g.getMessage();
-      D.a(str);
-      g.printStackTrace();
-      throw new a(str);
+      throw new ExceptionInVPackage("Error reading options in ini file:\n" + paramString);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      String str = "Error in [SettingGroups]\nReported Error:\n" + ExceptionPrintstacktrace.getMessage();
+      D.ExceptionInVPackage(str);
+      ExceptionPrintstacktrace.printStackTrace();
+      throw new ExceptionInVPackage(str);
     } 
   }
   
@@ -77,7 +77,7 @@ public class SettingsGroupManager {
     c();
     s[] arrayOfS = b();
     if (paramString != null && (paramString.indexOf(".ini") != -1 || paramString.indexOf(".ecu") != -1)) {
-      s[] arrayOfS1 = a(paramString);
+      s[] arrayOfS1 = ExceptionInVPackage(paramString);
       ArrayList<s> arrayList = new ArrayList();
       byte b;
       for (b = 0; b < arrayOfS.length; b++)
@@ -106,21 +106,21 @@ public class SettingsGroupManager {
     if (this.b == null)
       c(); 
     for (byte b = 0; b < this.b.length; b++) {
-      if (this.b[b].a(paramString) != null)
-        return this.b[b].a(paramString); 
+      if (this.b[b].ExceptionInVPackage(paramString) != null)
+        return this.b[b].ExceptionInVPackage(paramString); 
     } 
     return null;
   }
   
   private s[] c() {
-    this.b = this.c.a();
+    this.b = this.c.ExceptionInVPackage();
     return this.b;
   }
   
-  public s[] a(File[] paramArrayOfFile) {
+  public s[] ExceptionInVPackage(File[] paramArrayOfFile) {
     this.b = c();
     for (byte b = 0; b < paramArrayOfFile.length && paramArrayOfFile[b] != null && paramArrayOfFile[b].exists(); b++)
-      this.b = (new I()).a(this.b, paramArrayOfFile[b].getAbsolutePath()); 
+      this.b = (new I()).ExceptionInVPackage(this.b, paramArrayOfFile[b].getAbsolutePath()); 
     return this.b;
   }
 }

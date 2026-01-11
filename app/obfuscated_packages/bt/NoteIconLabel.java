@@ -12,7 +12,7 @@ import java.awt.Toolkit;
 import java.awt.Window;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import r.i;
+import r.RInterfaceIndia;
 
 public class NoteIconLabel extends JLabel {
   R a = null;
@@ -24,7 +24,7 @@ public class NoteIconLabel extends JLabel {
   static ImageIcon d = null;
   
   public a(R paramR, String paramString) {
-    if (!i.a().a("lkjfgblkjgdoijre98u"))
+    if (!RInterfaceIndia.a().a("lkjfgblkjgdoijre98u"))
       return; 
     this.a = paramR;
     this.b = paramString;

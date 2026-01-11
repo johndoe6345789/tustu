@@ -1,9 +1,9 @@
 package aP;
 
 import G.cu;
-import c.e;
+import c.CInterfaceEcho;
 
-class fw implements e {
+class fw implements CInterfaceEcho {
   fw(dB paramdB) {}
   
   public boolean a() {

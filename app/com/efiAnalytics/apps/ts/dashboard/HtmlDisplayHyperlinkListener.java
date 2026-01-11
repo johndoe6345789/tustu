@@ -2,8 +2,8 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import com.efiAnalytics.ui.aN;
 import com.efiAnalytics.ui.bV;
-import d.b;
-import d.g;
+import d.PropertiesExtensionInDPackage;
+import d.HashMapUsingArrayList;
 import java.util.Properties;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -11,12 +11,12 @@ import javax.swing.event.HyperlinkListener;
 class HtmlDisplayHyperlinkListener implements HyperlinkListener {
   long a = 0L;
   
-  int b = 2000;
+  int PropertiesExtensionInDPackage = 2000;
   
   aI(HtmlDisplay paramHtmlDisplay) {}
   
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
-    if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED) && System.currentTimeMillis() - this.a > this.b) {
+    if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED) && System.currentTimeMillis() - this.a > this.PropertiesExtensionInDPackage) {
       this.a = System.currentTimeMillis();
       if (paramHyperlinkEvent.getDescription().indexOf(":") != -1 && !paramHyperlinkEvent.getDescription().startsWith("http:") && !paramHyperlinkEvent.getDescription().startsWith("https:") && !paramHyperlinkEvent.getDescription().startsWith("file:")) {
         String str = paramHyperlinkEvent.getDescription();
@@ -29,8 +29,8 @@ class HtmlDisplayHyperlinkListener implements HyperlinkListener {
             str2 = str2.substring(0, str2.indexOf("?"));
           } 
           if (str1.equals("appAction")) {
-            b b = b.a(str3);
-            g.a().a(str2, (Properties)b);
+            PropertiesExtensionInDPackage PropertiesExtensionInDPackage = PropertiesExtensionInDPackage.a(str3);
+            HashMapUsingArrayList.a().a(str2, (Properties)PropertiesExtensionInDPackage);
           } else {
             bV.d("Unsure how to handle link: " + str, this.c.a);
           } 

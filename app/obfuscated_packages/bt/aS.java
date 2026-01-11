@@ -1,13 +1,13 @@
 package bt;
 
 import G.aN;
-import s.g;
+import s.SComponentGolf;
 
 class aS implements aN {
   aS(an paraman) {}
   
   public void a(String paramString1, String paramString2) {
-    this.a.p.b(g.b(this.a.q.M()));
+    this.a.p.b(SComponentGolf.b(this.a.q.M()));
   }
 }
 

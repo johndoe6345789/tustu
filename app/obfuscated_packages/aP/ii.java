@@ -1,6 +1,6 @@
 package aP;
 
-import aZ.c;
+import aZ.IOInAzPackage;
 import bH.D;
 import com.efiAnalytics.ui.aP;
 import com.efiAnalytics.ui.bV;
@@ -25,7 +25,7 @@ import javax.swing.JSlider;
 public class ii extends JDialog {
   static String a = "Open Log";
   
-  private aP c = new aP();
+  private aP IOInAzPackage = new aP();
   
   private JLabel d = new JLabel();
   
@@ -37,9 +37,9 @@ public class ii extends JDialog {
   
   public ii(Frame paramFrame) {
     super(paramFrame, "Raw File Viewer");
-    this.b = new JScrollPane((Component)this.c);
+    this.b = new JScrollPane((Component)this.IOInAzPackage);
     add("Center", this.b);
-    this.c.addCaretListener(new ij(this));
+    this.IOInAzPackage.addCaretListener(new ij(this));
     JMenuBar jMenuBar = new JMenuBar();
     JMenu jMenu = new JMenu("File");
     jMenuBar.add(jMenu);
@@ -58,15 +58,15 @@ public class ii extends JDialog {
     JPanel jPanel3 = new JPanel();
     ButtonGroup buttonGroup = new ButtonGroup();
     jPanel3.setLayout(new GridLayout(1, 0));
-    JRadioButton jRadioButton = new JRadioButton("Bin", (this.c.d() == 2));
+    JRadioButton jRadioButton = new JRadioButton("Bin", (this.IOInAzPackage.d() == 2));
     jRadioButton.addActionListener(new im(this));
     jPanel3.add(jRadioButton);
     buttonGroup.add(jRadioButton);
-    jRadioButton = new JRadioButton("Dec", (this.c.d() == 10));
+    jRadioButton = new JRadioButton("Dec", (this.IOInAzPackage.d() == 10));
     jRadioButton.addActionListener(new in(this));
     jPanel3.add(jRadioButton);
     buttonGroup.add(jRadioButton);
-    jRadioButton = new JRadioButton("Hex", (this.c.d() == 16));
+    jRadioButton = new JRadioButton("Hex", (this.IOInAzPackage.d() == 16));
     jRadioButton.addActionListener(new io(this));
     jPanel3.add(jRadioButton);
     buttonGroup.add(jRadioButton);
@@ -75,11 +75,11 @@ public class ii extends JDialog {
     jSlider.setMajorTickSpacing(1);
     jSlider.setMinimum(1);
     jSlider.setMaximum(600);
-    jSlider.setValue(this.c.e());
+    jSlider.setValue(this.IOInAzPackage.e());
     jSlider.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), "Record Length"));
     jSlider.addChangeListener(new ip(this));
     jPanel2.add(jSlider);
-    this.d.setText("  " + this.c.e());
+    this.d.setText("  " + this.IOInAzPackage.e());
     jPanel2.add(this.d);
     jPanel1.add("South", jPanel2);
     jPanel1.add("Center", this.f);
@@ -89,27 +89,27 @@ public class ii extends JDialog {
   }
   
   public void a() {
-    String str = this.c.a();
+    String str = this.IOInAzPackage.a();
     this.e.setText(str);
-    int i = this.c.getCaretPosition() / this.c.getColumns();
-    this.f.setText("Row " + i + ": " + this.c.c());
+    int i = this.IOInAzPackage.getCaretPosition() / this.IOInAzPackage.getColumns();
+    this.f.setText("Row " + i + ": " + this.IOInAzPackage.IOInAzPackage());
   }
   
   public void b() {
     String[] arrayOfString = { "msl", "log", "*" };
     String str = bV.b(this, "Open Log File", arrayOfString, ".", "");
-    c c = new c();
+    IOInAzPackage IOInAzPackage = new IOInAzPackage();
     try {
       long l = System.nanoTime();
-      c.a(str);
-      D.c("Time to open:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
+      IOInAzPackage.a(str);
+      D.IOInAzPackage("Time to open:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
       l = System.nanoTime();
-      int[] arrayOfInt = c.a();
-      D.c("Time to read:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
+      int[] arrayOfInt = IOInAzPackage.a();
+      D.IOInAzPackage("Time to read:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
       l = System.nanoTime();
-      this.c.a(arrayOfInt);
-      D.c("Time to set bytes:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
-      D.c(arrayOfInt.length + " read");
+      this.IOInAzPackage.a(arrayOfInt);
+      D.IOInAzPackage("Time to set bytes:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
+      D.IOInAzPackage(arrayOfInt.length + " read");
     } catch (Exception exception) {
       bV.d("Error opening Log file, check Application log for more detail.\n" + exception.getMessage(), this);
       exception.printStackTrace();
@@ -122,7 +122,7 @@ public class ii extends JDialog {
   }
   
   public void a(int paramInt) {
-    this.c.a(paramInt);
+    this.IOInAzPackage.a(paramInt);
   }
 }
 

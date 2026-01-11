@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.ArrayList;
@@ -31,7 +31,7 @@ public class LastValueWithTrigger extends ac {
     this.c = paramab3;
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = this.a.b(paramS);
     int i = c(paramS);
     if (Double.isNaN(this.f) || this.f != d) {
@@ -43,11 +43,11 @@ public class LastValueWithTrigger extends ac {
     return (this.e.size() > i) ? ((Double)this.e.get(i)).doubleValue() : Double.NaN;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   
-  private int c(S paramS) {
+  private int c(CloneableImplInAxPackage paramS) {
     if (this.d > Integer.MIN_VALUE)
       return this.d; 
     if (this.c != null) {

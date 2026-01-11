@@ -1,63 +1,63 @@
 package bH;
 
-import bV.a;
-import bV.c;
-import bV.d;
-import bV.e;
+import bV.NetworkInBvPackage;
+import bV.ArrayListTostring;
+import bV.ArrayListInBvPackage;
+import bV.BvInterfaceEcho;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
-import s.g;
+import r.NetworkInBvPackage;
+import s.SComponentGolf;
 
 public class P {
-  public static String a = "IniUpdate";
+  public static String NetworkInBvPackage = "IniUpdate";
   
   public static String b = "IncUpdate";
   
-  long c = 604800000L;
+  long ArrayListTostring = 604800000L;
   
-  File d;
+  File ArrayListInBvPackage;
   
-  String e;
+  String BvInterfaceEcho;
   
   public P(File paramFile, String paramString) {
-    this.d = paramFile;
-    this.e = paramString;
+    this.ArrayListInBvPackage = paramFile;
+    this.BvInterfaceEcho = paramString;
   }
   
-  public void a() {
-    String str = a.aR + this.e;
-    long l1 = a.a().a(str, (new Date()).getTime() - this.c - 1L);
+  public void NetworkInBvPackage() {
+    String str = NetworkInBvPackage.aR + this.BvInterfaceEcho;
+    long l1 = NetworkInBvPackage.NetworkInBvPackage().NetworkInBvPackage(str, (new Date()).getTime() - this.ArrayListTostring - 1L);
     long l2 = System.currentTimeMillis() - l1;
-    if (l2 > this.c) {
+    if (l2 > this.ArrayListTostring) {
       Q q = new Q(this);
       q.start();
     } else {
-      D.d("Skipping " + this.e + " update check. Not due for " + (l2 / 8.64E7D) + " days");
+      D.ArrayListInBvPackage("Skipping " + this.BvInterfaceEcho + " update check. Not due for " + (l2 / 8.64E7D) + " days");
     } 
   }
   
   private boolean b() {
-    a a = new a();
-    d d = null;
-    String str = this.e;
-    if (n.a()) {
+    NetworkInBvPackage NetworkInBvPackage = new NetworkInBvPackage();
+    ArrayListInBvPackage ArrayListInBvPackage = null;
+    String str = this.BvInterfaceEcho;
+    if (n.NetworkInBvPackage()) {
       try {
-        e e = new e();
-        e.a(a.a().c(a.aN, ""));
-        e.b(a.b);
-        e.c(a.a().c(str, "0"));
-        e.d(a.a().c(a.aO, ""));
-        e.e(a.a().c(a.aT, ""));
-        e.f(a.a().c(a.cF, ""));
-        e.g(this.e);
-        e.h(a.a().c(a.cO, ""));
-        e.i(g.c().getLanguage());
-        d = a.a(e);
+        BvInterfaceEcho BvInterfaceEcho = new BvInterfaceEcho();
+        BvInterfaceEcho.NetworkInBvPackage(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(NetworkInBvPackage.aN, ""));
+        BvInterfaceEcho.b(NetworkInBvPackage.b);
+        BvInterfaceEcho.ArrayListTostring(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(str, "0"));
+        BvInterfaceEcho.ArrayListInBvPackage(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(NetworkInBvPackage.aO, ""));
+        BvInterfaceEcho.BvInterfaceEcho(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(NetworkInBvPackage.aT, ""));
+        BvInterfaceEcho.f(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(NetworkInBvPackage.cF, ""));
+        BvInterfaceEcho.SComponentGolf(this.BvInterfaceEcho);
+        BvInterfaceEcho.h(NetworkInBvPackage.NetworkInBvPackage().ArrayListTostring(NetworkInBvPackage.cO, ""));
+        BvInterfaceEcho.i(SComponentGolf.ArrayListTostring().getLanguage());
+        ArrayListInBvPackage = NetworkInBvPackage.NetworkInBvPackage(BvInterfaceEcho);
       } catch (IOException iOException) {
         System.out.println("Unable to read from update server, connection to server unavailable");
         return false;
@@ -65,22 +65,22 @@ public class P {
     } else {
       return false;
     } 
-    if (d == null)
+    if (ArrayListInBvPackage == null)
       return false; 
-    if (d.a() == 0) {
-      D.d(this.e + ": No updates available.");
+    if (ArrayListInBvPackage.NetworkInBvPackage() == 0) {
+      D.ArrayListInBvPackage(this.BvInterfaceEcho + ": No updates available.");
       return true;
     } 
-    if (d.a() == 2) {
-      D.d("Internet detected, doing update check: " + this.e);
+    if (ArrayListInBvPackage.NetworkInBvPackage() == 2) {
+      D.ArrayListInBvPackage("Internet detected, doing update check: " + this.BvInterfaceEcho);
       boolean bool = false;
-      Iterator<c> iterator = d.c();
+      Iterator<ArrayListTostring> iterator = ArrayListInBvPackage.ArrayListTostring();
       while (iterator.hasNext()) {
-        c c = iterator.next();
-        if (c.a().equals("fileUpdate"))
+        ArrayListTostring ArrayListTostring = iterator.next();
+        if (ArrayListTostring.NetworkInBvPackage().equals("fileUpdate"))
           try {
             String str3;
-            String[] arrayOfString = c.b();
+            String[] arrayOfString = ArrayListTostring.b();
             String str1 = null;
             if (arrayOfString.length > 2)
               str1 = arrayOfString[2]; 
@@ -90,22 +90,22 @@ public class P {
             } else {
               str3 = str2.substring(str2.lastIndexOf("/") + 1);
             } 
-            a.a(this.d, str3, str2, str1);
+            NetworkInBvPackage.NetworkInBvPackage(this.ArrayListInBvPackage, str3, str2, str1);
           } catch (IOException iOException) {
             bool = true;
-            Logger.getLogger(P.class.getName()).log(Level.SEVERE, "Ini Updater failed to update file: " + c, iOException);
+            Logger.getLogger(P.class.getName()).log(Level.SEVERE, "Ini Updater failed to update file: " + ArrayListTostring, iOException);
           }  
       } 
       if (!bool) {
-        String str1 = d.b();
-        str1 = X.b(str1, a.b + " Update available! Would you like Auto Update to upgrade to version ", "");
+        String str1 = ArrayListInBvPackage.b();
+        str1 = X.b(str1, NetworkInBvPackage.b + " Update available! Would you like Auto Update to upgrade to version ", "");
         str1 = X.b(str1, " now?", "");
-        a.a().b(str, str1.trim());
-        D.d(this.e + ": Update to " + str1);
+        NetworkInBvPackage.NetworkInBvPackage().b(str, str1.trim());
+        D.ArrayListInBvPackage(this.BvInterfaceEcho + ": Update to " + str1);
       } 
       return true;
     } 
-    D.d(this.e + ": No updates accessible.");
+    D.ArrayListInBvPackage(this.BvInterfaceEcho + ": No updates accessible.");
     return true;
   }
 }

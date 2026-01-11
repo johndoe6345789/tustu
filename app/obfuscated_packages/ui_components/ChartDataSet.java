@@ -1,7 +1,7 @@
 package ao;
 
 import W.j;
-import g.k;
+import g.IOJFileChooser;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,7 +10,7 @@ final class ac implements ActionListener {
   ac(j paramj1, Component paramComponent, j paramj2) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String str = k.a("{Set " + this.a.a() + " Index Offset}", true, "Specific Index Offset", true, this.b);
+    String str = IOJFileChooser.a("{Set " + this.a.a() + " Index Offset}", true, "Specific Index Offset", true, this.b);
     if (str != null && !str.isEmpty()) {
       int i = Integer.parseInt(str);
       hx.a().b(this.c, i);

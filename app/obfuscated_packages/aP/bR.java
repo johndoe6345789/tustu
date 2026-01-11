@@ -1,38 +1,38 @@
 package aP;
 
 import G.R;
-import V.a;
-import aZ.a;
-import aZ.f;
-import aZ.j;
+import V.ExceptionInVPackage;
+import aZ.ExceptionInVPackage;
+import aZ.AzInterfaceFoxtrot;
+import aZ.IOArrayList;
 import bH.D;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eB;
 import java.awt.Window;
 import java.io.File;
 import java.util.ArrayList;
-import s.g;
+import s.SComponentGolf;
 
 public class bR extends Thread {
-  eB a = null;
+  eB ExceptionInVPackage = null;
   
   Window b = null;
   
-  a c = null;
+  ExceptionInVPackage c = null;
   
   R[] d = null;
   
   long e = 0L;
   
-  public static String f = "FRD";
+  public static String AzInterfaceFoxtrot = "FRD";
   
-  public static String g = "SD";
+  public static String SComponentGolf = "SD";
   
   ArrayList h = new ArrayList();
   
   String i = "";
   
-  int j = 0;
+  int IOArrayList = 0;
   
   boolean k = true;
   
@@ -43,14 +43,14 @@ public class bR extends Thread {
     this.d = paramArrayOfR;
   }
   
-  public void a(File paramFile1, File paramFile2) {
+  public void ExceptionInVPackage(File paramFile1, File paramFile2) {
     bU bU = new bU(this);
-    bU.a(paramFile1);
+    bU.ExceptionInVPackage(paramFile1);
     bU.b(paramFile2);
-    String str = g;
+    String str = SComponentGolf;
     if (paramFile1.getName().toLowerCase().endsWith(".frd"))
-      str = f; 
-    bU.a(str);
+      str = AzInterfaceFoxtrot; 
+    bU.ExceptionInVPackage(str);
     this.h.add(bU);
   }
   
@@ -60,64 +60,64 @@ public class bR extends Thread {
   }
   
   public void run() {
-    this.a = new eB(this.b, "Transform Raw Log files to MSL File", "Converting all selected log files, please wait...", true, false);
-    this.a.a(new bS(this));
-    this.a.setVisible(true);
+    this.ExceptionInVPackage = new eB(this.b, "Transform Raw Log files to MSL File", "Converting all selected log files, please wait...", true, false);
+    this.ExceptionInVPackage.ExceptionInVPackage(new bS(this));
+    this.ExceptionInVPackage.setVisible(true);
     ArrayList<File> arrayList = new ArrayList();
     File file = null;
     for (byte b = 0; b < this.h.size(); b++) {
-      this.j = b;
+      this.IOArrayList = b;
       bU bU = this.h.get(b);
-      File file1 = bU.a();
+      File file1 = bU.ExceptionInVPackage();
       file = bU.b();
       arrayList.add(file);
       String str = bU.c();
-      this.a.a("Converting log " + file1.getName() + ", please wait...");
-      if (str.equals(f)) {
-        this.c = (a)new f();
+      this.ExceptionInVPackage.ExceptionInVPackage("Converting log " + file1.getName() + ", please wait...");
+      if (str.equals(AzInterfaceFoxtrot)) {
+        this.c = (ExceptionInVPackage)new AzInterfaceFoxtrot();
       } else {
-        this.c = (a)new j();
+        this.c = (ExceptionInVPackage)new IOArrayList();
       } 
-      this.c.a(new bT(this));
+      this.c.ExceptionInVPackage(new bT(this));
       boolean bool = false;
       try {
-        bool = this.c.a(this.d, file1);
-      } catch (a a1) {
+        bool = this.c.ExceptionInVPackage(this.d, file1);
+      } catch (ExceptionInVPackage a1) {
         String str1 = a1.getMessage() + "\n\nWould you like attempt processing this file anyway?";
-        bool = bV.a(str1, this.b, true);
+        bool = bV.ExceptionInVPackage(str1, this.b, true);
       } 
       if (bool) {
         try {
-          this.c.a(this.d, file1, file, false);
-        } catch (a a1) {
+          this.c.ExceptionInVPackage(this.d, file1, file, false);
+        } catch (ExceptionInVPackage a1) {
           a1.printStackTrace();
           String str1 = "Did not complete log conversion for " + file1.getName();
           if (b < this.h.size())
             str1 = str1 + "\nWill continue to try remaining files."; 
-          D.a(str1, (Exception)a1, this.b);
+          D.ExceptionInVPackage(str1, (Exception)a1, this.b);
         } 
       } else {
-        this.a.dispose();
+        this.ExceptionInVPackage.dispose();
         return;
       } 
       if (!this.k)
         break; 
     } 
-    this.a.dispose();
+    this.ExceptionInVPackage.dispose();
     if (file != null && this.h.size() == 1) {
-      if (bV.a(g.b("File ready for viewing, would you like to open it now?"), this.b, true))
-        f.a().a(file); 
+      if (bV.ExceptionInVPackage(SComponentGolf.b("File ready for viewing, would you like to open it now?"), this.b, true))
+        AzInterfaceFoxtrot.ExceptionInVPackage().ExceptionInVPackage(file); 
     } else if (this.i != null && this.i.trim().length() > 0) {
       K k = new K(this.i);
-      k.a(this.b, "Data Transformation Results Log");
-      if (arrayList.size() > 0 && bV.a(g.b("File ready for viewing, would you like to open it now?"), k, true)) {
+      k.ExceptionInVPackage(this.b, "Data Transformation Results Log");
+      if (arrayList.size() > 0 && bV.ExceptionInVPackage(SComponentGolf.b("File ready for viewing, would you like to open it now?"), k, true)) {
         File[] arrayOfFile = arrayList.<File>toArray(new File[arrayList.size()]);
-        f.a().a(arrayOfFile);
+        AzInterfaceFoxtrot.ExceptionInVPackage().ExceptionInVPackage(arrayOfFile);
       } 
     } 
   }
   
-  private void a() {
+  private void ExceptionInVPackage() {
     this.k = false;
     this.c.w();
   }

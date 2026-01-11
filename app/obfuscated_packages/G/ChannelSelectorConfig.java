@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 
 public class ChannelSelectorConfig extends bA {
   private String a = null;
@@ -43,7 +43,7 @@ public class ChannelSelectorConfig extends bA {
     if (paramString.equals("filter32BitChannels")) {
       a(true);
     } else {
-      throw new g("Unknown channelSelector Option: " + paramString + ", Ignored. Known Options: filter32BitChannels");
+      throw new ExceptionPrintstacktrace("Unknown channelSelector Option: " + paramString + ", Ignored. Known Options: filter32BitChannels");
     } 
   }
   

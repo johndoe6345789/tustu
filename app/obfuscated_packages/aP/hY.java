@@ -2,19 +2,19 @@ package aP;
 
 import G.R;
 import G.T;
-import S.m;
-import U.b;
+import S.SInterfaceMike;
+import U.UInterfaceBravo;
 
-class hY implements m {
+class hY implements SInterfaceMike {
   hY(hO paramhO) {}
   
   public void a(String paramString) {
     R r = T.a().c(paramString);
-    double d = b.a(r);
+    double d = UInterfaceBravo.a(r);
     if (d < 0.0D || d > 30.0D) {
-      b.a(r, 30);
+      UInterfaceBravo.a(r, 30);
     } else {
-      b.a(r, (int)d);
+      UInterfaceBravo.a(r, (int)d);
     } 
   }
 }

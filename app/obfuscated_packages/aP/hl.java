@@ -3,7 +3,7 @@ package aP;
 import bt.K;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 class hl extends JTextPane implements K {
   hl(hg paramhg) {
@@ -17,7 +17,7 @@ class hl extends JTextPane implements K {
     if (str == null) {
       setText("");
     } else {
-      setText(g.b(str));
+      setText(SComponentGolf.b(str));
       setCaretPosition(0);
     } 
   }

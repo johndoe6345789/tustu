@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -15,7 +15,7 @@ public class TimeTrueFunction extends ac {
     this.c = paramab;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     if (this.c.b(paramS) != 0.0D) {
       if (this.a < 0L)
         this.a = System.currentTimeMillis(); 
@@ -27,7 +27,7 @@ public class TimeTrueFunction extends ac {
     return this.b;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

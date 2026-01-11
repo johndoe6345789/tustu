@@ -1,13 +1,13 @@
 package bt;
 
 import bH.ab;
-import s.g;
+import s.SComponentGolf;
 
 class bw implements ab {
   bw(bu parambu) {}
   
   public String a(String paramString) {
-    return g.b(paramString);
+    return SComponentGolf.b(paramString);
   }
 }
 

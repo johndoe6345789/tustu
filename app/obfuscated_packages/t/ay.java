@@ -8,17 +8,17 @@ import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
 public class ay extends a implements f {
   JPanel a = new JPanel();
   
-  JCheckBox b = new JCheckBox(g.b("Use Italic Font"));
+  JCheckBox b = new JCheckBox(SComponentGolf.b("Use Italic Font"));
   
   public ay(Window paramWindow, ai paramai) {
     super(paramWindow, "Select Italic Font");
     a(paramai);
-    this.a.setBorder(BorderFactory.createTitledBorder(g.b("Italic Font")));
+    this.a.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Italic Font")));
     this.a.setLayout(new GridLayout(1, 1));
     this.a.add(this.b);
     this.b.addActionListener(new az(this));

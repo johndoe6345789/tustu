@@ -2,7 +2,7 @@ package bt;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import r.i;
+import r.RInterfaceIndia;
 
 class aO extends KeyAdapter {
   boolean a = false;
@@ -12,7 +12,7 @@ class aO extends KeyAdapter {
   public void keyPressed(KeyEvent paramKeyEvent) {
     if (!this.b.isEnabled())
       return; 
-    if (i.a().a("joijt;i609tr0932")) {
+    if (RInterfaceIndia.a().a("joijt;i609tr0932")) {
       this.a = ((paramKeyEvent.getModifiers() & 0x40) == 64 || (paramKeyEvent.getModifiers() & 0x1) == 1);
       boolean bool = ((paramKeyEvent.getModifiers() & 0x80) == 128 || (paramKeyEvent.getModifiers() & 0x2) == 2) ? true : false;
       this.b.p.g((this.a || bool));

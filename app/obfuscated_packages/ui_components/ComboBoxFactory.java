@@ -1,17 +1,17 @@
 package ao;
 
 import com.efiAnalytics.ui.bU;
-import h.i;
+import h.IOProperties;
 
 class ce implements bU {
   ce(cd paramcd) {}
   
   public String l() {
-    return i.b;
+    return IOProperties.b;
   }
   
   public String m() {
-    return i.c;
+    return IOProperties.c;
   }
   
   public String n() {
@@ -19,7 +19,7 @@ class ce implements bU {
   }
   
   public void b(String paramString1, String paramString2) {
-    i.c(paramString1, paramString2);
+    IOProperties.c(paramString1, paramString2);
   }
 }
 

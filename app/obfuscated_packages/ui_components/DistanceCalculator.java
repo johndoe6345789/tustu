@@ -1,33 +1,33 @@
 package ao;
 
 import L.z;
-import W.j;
+import W.BxInterfaceJuliet;
 import W.n;
-import ax.U;
-import bE.b;
-import bE.c;
-import bE.l;
-import bE.p;
-import bE.q;
-import bx.j;
-import h.g;
+import ax.ExceptionInAxPackage;
+import bE.DoubleExtension;
+import bE.BeInterfaceCharlie;
+import bE.BeInterfaceLima;
+import bE.BeInterfacePapa;
+import bE.BeInterfaceQuebec;
+import bx.BxInterfaceJuliet;
+import h.PropertiesExtensionInHPackage;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import k.a;
-import k.d;
+import k.KInterfaceAlpha;
+import k.KComponentDelta;
 
-class eq implements p {
-  private n g = null;
+class eq implements BeInterfacePapa {
+  private n PropertiesExtensionInHPackage = null;
   
-  j a = null;
+  BxInterfaceJuliet KInterfaceAlpha = null;
   
-  j b = null;
+  BxInterfaceJuliet DoubleExtension = null;
   
-  j c = null;
+  BxInterfaceJuliet BeInterfaceCharlie = null;
   
-  List d = new ArrayList();
+  List KComponentDelta = new ArrayList();
   
   HashMap e = new HashMap<>();
   
@@ -39,194 +39,194 @@ class eq implements p {
     this.h = paramfK;
   }
   
-  public double a() {
-    return (this.a == null) ? 0.0D : (this.h.q.a() ? ((this.b != null && n()) ? j() : this.a.e()) : this.h.q.b());
+  public double KInterfaceAlpha() {
+    return (this.KInterfaceAlpha == null) ? 0.0D : (this.h.BeInterfaceQuebec.KInterfaceAlpha() ? ((this.DoubleExtension != null && n()) ? BxInterfaceJuliet() : this.KInterfaceAlpha.e()) : this.h.BeInterfaceQuebec.DoubleExtension());
   }
   
-  private double j() {
+  private double BxInterfaceJuliet() {
     double d1;
     double d2;
-    if (this.b.a().toLowerCase().contains("lat")) {
-      d1 = this.f.a(this.b.h(), this.a.h(), this.b.g(), this.a.h());
-      d2 = this.f.a(this.b.h(), this.a.h(), this.b.h(), this.a.g());
+    if (this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("lat")) {
+      d1 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage(), this.KInterfaceAlpha.h());
+      d2 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage());
     } else {
-      d1 = this.f.a(this.a.h(), this.b.h(), this.a.g(), this.b.h());
-      d2 = this.f.a(this.a.h(), this.b.h(), this.a.h(), this.b.g());
+      d1 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage(), this.DoubleExtension.h());
+      d2 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage());
     } 
     if (d2 > d1) {
-      double d = (this.a.g() - this.a.h()) * 0.05D;
-      return this.a.h() - d;
+      double KComponentDelta = (this.KInterfaceAlpha.PropertiesExtensionInHPackage() - this.KInterfaceAlpha.h()) * 0.05D;
+      return this.KInterfaceAlpha.h() - KComponentDelta;
     } 
     double d3 = d1 / d2 * 1.05D;
-    double d4 = ((this.a.h() + this.a.g()) / 2.0F);
-    return d4 - (d4 - this.a.e()) * d3;
+    double d4 = ((this.KInterfaceAlpha.h() + this.KInterfaceAlpha.PropertiesExtensionInHPackage()) / 2.0F);
+    return d4 - (d4 - this.KInterfaceAlpha.e()) * d3;
   }
   
-  public double b() {
-    return (this.a == null) ? 100.0D : (this.h.q.a() ? ((this.b != null && n()) ? k() : this.a.f()) : this.h.q.c());
+  public double DoubleExtension() {
+    return (this.KInterfaceAlpha == null) ? 100.0D : (this.h.BeInterfaceQuebec.KInterfaceAlpha() ? ((this.DoubleExtension != null && n()) ? k() : this.KInterfaceAlpha.f()) : this.h.BeInterfaceQuebec.BeInterfaceCharlie());
   }
   
   private double k() {
     double d1;
     double d2;
-    if (this.b.a().toLowerCase().contains("lat")) {
-      d1 = this.f.a(this.b.h(), this.a.h(), this.b.g(), this.a.h());
-      d2 = this.f.a(this.b.h(), this.a.h(), this.b.h(), this.a.g());
+    if (this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("lat")) {
+      d1 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage(), this.KInterfaceAlpha.h());
+      d2 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage());
     } else {
-      d1 = this.f.a(this.a.h(), this.b.h(), this.a.g(), this.b.h());
-      d2 = this.f.a(this.a.h(), this.b.h(), this.a.h(), this.b.g());
+      d1 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage(), this.DoubleExtension.h());
+      d2 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage());
     } 
     if (d2 > d1) {
-      double d = (this.a.g() - this.a.h()) * 0.05D;
-      return this.a.g() + d;
+      double KComponentDelta = (this.KInterfaceAlpha.PropertiesExtensionInHPackage() - this.KInterfaceAlpha.h()) * 0.05D;
+      return this.KInterfaceAlpha.PropertiesExtensionInHPackage() + KComponentDelta;
     } 
     double d3 = d1 / d2 * 1.05D;
-    double d4 = ((this.a.h() + this.a.g()) / 2.0F);
-    return d4 + (this.a.f() - d4) * d3;
+    double d4 = ((this.KInterfaceAlpha.h() + this.KInterfaceAlpha.PropertiesExtensionInHPackage()) / 2.0F);
+    return d4 + (this.KInterfaceAlpha.f() - d4) * d3;
   }
   
-  public double c() {
-    return (this.b == null) ? 0.0D : (this.h.q.d() ? ((this.a != null && n()) ? l() : this.b.e()) : this.h.q.e());
+  public double BeInterfaceCharlie() {
+    return (this.DoubleExtension == null) ? 0.0D : (this.h.BeInterfaceQuebec.KComponentDelta() ? ((this.KInterfaceAlpha != null && n()) ? BeInterfaceLima() : this.DoubleExtension.e()) : this.h.BeInterfaceQuebec.e());
   }
   
-  private double l() {
+  private double BeInterfaceLima() {
     double d1;
     double d2;
-    if (this.b.a().toLowerCase().contains("lat")) {
-      d1 = this.f.a(this.b.h(), this.a.h(), this.b.g(), this.a.h());
-      d2 = this.f.a(this.b.h(), this.a.h(), this.b.h(), this.a.g());
+    if (this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("lat")) {
+      d1 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage(), this.KInterfaceAlpha.h());
+      d2 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage());
     } else {
-      d1 = this.f.a(this.a.h(), this.b.h(), this.a.g(), this.b.h());
-      d2 = this.f.a(this.a.h(), this.b.h(), this.a.h(), this.b.g());
+      d1 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage(), this.DoubleExtension.h());
+      d2 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage());
     } 
     if (d1 > d2) {
-      double d = (this.b.g() - this.b.h()) * 0.05D;
-      return this.b.h() - d;
+      double KComponentDelta = (this.DoubleExtension.PropertiesExtensionInHPackage() - this.DoubleExtension.h()) * 0.05D;
+      return this.DoubleExtension.h() - KComponentDelta;
     } 
     double d3 = d2 / d1 * 1.05D;
-    double d4 = ((this.b.h() + this.b.g()) / 2.0F);
-    return d4 - (d4 - this.b.e()) * d3;
+    double d4 = ((this.DoubleExtension.h() + this.DoubleExtension.PropertiesExtensionInHPackage()) / 2.0F);
+    return d4 - (d4 - this.DoubleExtension.e()) * d3;
   }
   
-  public double d() {
-    return (this.b == null) ? 100.0D : (this.h.q.d() ? ((this.a != null && n()) ? m() : this.b.f()) : this.h.q.f());
+  public double KComponentDelta() {
+    return (this.DoubleExtension == null) ? 100.0D : (this.h.BeInterfaceQuebec.KComponentDelta() ? ((this.KInterfaceAlpha != null && n()) ? m() : this.DoubleExtension.f()) : this.h.BeInterfaceQuebec.f());
   }
   
   private double m() {
     double d1;
     double d2;
-    if (this.b.a().toLowerCase().contains("lat")) {
-      d1 = this.f.a(this.b.h(), this.a.h(), this.b.g(), this.a.h());
-      d2 = this.f.a(this.b.h(), this.a.h(), this.b.h(), this.a.g());
+    if (this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("lat")) {
+      d1 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage(), this.KInterfaceAlpha.h());
+      d2 = this.f.KInterfaceAlpha(this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage());
     } else {
-      d1 = this.f.a(this.a.h(), this.b.h(), this.a.g(), this.b.h());
-      d2 = this.f.a(this.a.h(), this.b.h(), this.a.h(), this.b.g());
+      d1 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.PropertiesExtensionInHPackage(), this.DoubleExtension.h());
+      d2 = this.f.KInterfaceAlpha(this.KInterfaceAlpha.h(), this.DoubleExtension.h(), this.KInterfaceAlpha.h(), this.DoubleExtension.PropertiesExtensionInHPackage());
     } 
     if (d1 > d2) {
-      double d = (this.b.g() - this.b.h()) * 0.05D;
-      return this.b.g() + d;
+      double KComponentDelta = (this.DoubleExtension.PropertiesExtensionInHPackage() - this.DoubleExtension.h()) * 0.05D;
+      return this.DoubleExtension.PropertiesExtensionInHPackage() + KComponentDelta;
     } 
     double d3 = d2 / d1 * 1.05D;
-    double d4 = ((this.b.h() + this.b.g()) / 2.0F);
-    return d4 + (this.b.f() - d4) * d3;
+    double d4 = ((this.DoubleExtension.h() + this.DoubleExtension.PropertiesExtensionInHPackage()) / 2.0F);
+    return d4 + (this.DoubleExtension.f() - d4) * d3;
   }
   
   private boolean n() {
-    return ((this.b.a().toLowerCase().contains("lat") && this.a.a().toLowerCase().contains("long")) || (this.b.a().toLowerCase().contains("long") && this.a.a().toLowerCase().contains("lat")));
+    return ((this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("lat") && this.KInterfaceAlpha.KInterfaceAlpha().toLowerCase().contains("long")) || (this.DoubleExtension.KInterfaceAlpha().toLowerCase().contains("long") && this.KInterfaceAlpha.KInterfaceAlpha().toLowerCase().contains("lat")));
   }
   
-  protected boolean a(int paramInt) {
-    for (j j1 : this.h.j.a()) {
+  protected boolean KInterfaceAlpha(int paramInt) {
+    for (BxInterfaceJuliet j1 : this.h.BxInterfaceJuliet.KInterfaceAlpha()) {
       try {
-        String str = d(j1.c());
-        a a = d.a().a(str);
-        if (a.a(this.g, paramInt) != 0.0D)
+        String str = KComponentDelta(j1.BeInterfaceCharlie());
+        KInterfaceAlpha KInterfaceAlpha = KComponentDelta.KInterfaceAlpha().KInterfaceAlpha(str);
+        if (KInterfaceAlpha.KInterfaceAlpha(this.PropertiesExtensionInHPackage, paramInt) != 0.0D)
           return true; 
-      } catch (U u) {
-        this.h.j.a(j1.a(), false);
+      } catch (ExceptionInAxPackage u) {
+        this.h.BxInterfaceJuliet.KInterfaceAlpha(j1.KInterfaceAlpha(), false);
         u.printStackTrace();
       } 
     } 
     return false;
   }
   
-  private String d(String paramString) {
+  private String KComponentDelta(String paramString) {
     String str = (String)this.e.get(paramString);
     if (str == null) {
-      str = g.a().c(paramString);
+      str = PropertiesExtensionInHPackage.KInterfaceAlpha().BeInterfaceCharlie(paramString);
       this.e.put(paramString, str);
     } 
     return str;
   }
   
-  public q b(int paramInt) {
-    double d = (this.c == null) ? Double.NaN : this.c.c(paramInt);
-    boolean bool = a(paramInt);
-    return (q)(bool ? new c(this.a.c(paramInt), this.b.c(paramInt), d) : new b(this.a.c(paramInt), this.b.c(paramInt), d));
+  public BeInterfaceQuebec DoubleExtension(int paramInt) {
+    double KComponentDelta = (this.BeInterfaceCharlie == null) ? Double.NaN : this.BeInterfaceCharlie.BeInterfaceCharlie(paramInt);
+    boolean bool = KInterfaceAlpha(paramInt);
+    return (BeInterfaceQuebec)(bool ? new BeInterfaceCharlie(this.KInterfaceAlpha.BeInterfaceCharlie(paramInt), this.DoubleExtension.BeInterfaceCharlie(paramInt), KComponentDelta) : new DoubleExtension(this.KInterfaceAlpha.BeInterfaceCharlie(paramInt), this.DoubleExtension.BeInterfaceCharlie(paramInt), KComponentDelta));
   }
   
   public int e() {
-    return (this.a == null || this.b == null) ? 0 : this.h.f();
+    return (this.KInterfaceAlpha == null || this.DoubleExtension == null) ? 0 : this.h.f();
   }
   
   public int f() {
-    return this.h.g();
+    return this.h.PropertiesExtensionInHPackage();
   }
   
-  public void a(String paramString) {
-    j j1 = g().a(paramString);
-    this.a = j1;
+  public void KInterfaceAlpha(String paramString) {
+    BxInterfaceJuliet j1 = PropertiesExtensionInHPackage().KInterfaceAlpha(paramString);
+    this.KInterfaceAlpha = j1;
     if (j1 != null)
       this.h.i().h(j1.m()); 
     o();
   }
   
-  public void b(String paramString) {
-    j j1 = g().a(paramString);
-    this.b = j1;
+  public void DoubleExtension(String paramString) {
+    BxInterfaceJuliet j1 = PropertiesExtensionInHPackage().KInterfaceAlpha(paramString);
+    this.DoubleExtension = j1;
     if (j1 != null)
       this.h.i().i(j1.m()); 
     o();
   }
   
-  public void c(String paramString) {
-    j j1 = g().a(paramString);
-    this.c = j1;
+  public void BeInterfaceCharlie(String paramString) {
+    BxInterfaceJuliet j1 = PropertiesExtensionInHPackage().KInterfaceAlpha(paramString);
+    this.BeInterfaceCharlie = j1;
     if (j1 != null)
-      this.h.i().j(j1.m()); 
+      this.h.i().BxInterfaceJuliet(j1.m()); 
     o();
   }
   
-  public n g() {
-    return this.g;
+  public n PropertiesExtensionInHPackage() {
+    return this.PropertiesExtensionInHPackage;
   }
   
-  public void a(n paramn) {
-    this.g = paramn;
+  public void KInterfaceAlpha(n paramn) {
+    this.PropertiesExtensionInHPackage = paramn;
     this.e.clear();
     o();
   }
   
-  public void a(l paraml) {
-    this.d.add(paraml);
+  public void KInterfaceAlpha(BeInterfaceLima paraml) {
+    this.KComponentDelta.add(paraml);
   }
   
-  public void b(l paraml) {
-    this.d.remove(paraml);
+  public void DoubleExtension(BeInterfaceLima paraml) {
+    this.KComponentDelta.remove(paraml);
   }
   
   private void o() {
-    Iterator<l> iterator = this.d.iterator();
+    Iterator<BeInterfaceLima> iterator = this.KComponentDelta.iterator();
     while (iterator.hasNext())
-      ((l)iterator.next()).a(); 
+      ((BeInterfaceLima)iterator.next()).KInterfaceAlpha(); 
   }
   
   public double h() {
-    return (this.c == null) ? Double.NaN : (this.h.q.g() ? this.c.e() : this.h.q.h());
+    return (this.BeInterfaceCharlie == null) ? Double.NaN : (this.h.BeInterfaceQuebec.PropertiesExtensionInHPackage() ? this.BeInterfaceCharlie.e() : this.h.BeInterfaceQuebec.h());
   }
   
   public double i() {
-    return (this.c == null) ? Double.NaN : (this.h.q.g() ? this.c.f() : this.h.q.i());
+    return (this.BeInterfaceCharlie == null) ? Double.NaN : (this.h.BeInterfaceQuebec.PropertiesExtensionInHPackage() ? this.BeInterfaceCharlie.f() : this.h.BeInterfaceQuebec.i());
   }
 }
 

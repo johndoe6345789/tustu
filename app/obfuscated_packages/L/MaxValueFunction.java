@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -23,7 +23,7 @@ public class MaxValueFunction extends ac {
       this.c = paramList.get(1); 
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d = this.b.b(paramS);
     if (this.c != null && (c(paramS) - this.e) > this.c.b(paramS))
       this.d = Double.NaN; 
@@ -34,11 +34,11 @@ public class MaxValueFunction extends ac {
     return this.d;
   }
   
-  private long c(S paramS) {
+  private long c(CloneableImplInAxPackage paramS) {
     return (long)(n.a()).b.b(paramS);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

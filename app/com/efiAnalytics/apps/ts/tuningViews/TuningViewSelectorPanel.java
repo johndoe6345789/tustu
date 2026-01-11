@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.R;
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.BorderLayout;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -16,11 +16,11 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import s.g;
-import v.g;
+import s.SComponentGolf;
+import v.SComponentGolf;
 
 public class TuningViewSelectorPanel extends JPanel {
-  File a = null;
+  File ExceptionInVPackage = null;
   
   J b = new J();
   
@@ -28,17 +28,17 @@ public class TuningViewSelectorPanel extends JPanel {
   
   JTextField d = new JTextField("", 25);
   
-  JCheckBox e = new JCheckBox(g.b("Other"));
+  JCheckBox e = new JCheckBox(SComponentGolf.b("Other"));
   
   JButton f = new JButton("...");
   
-  e g = new e(this);
+  e SComponentGolf = new e(this);
   
   private R h = null;
   
   public b() {
     setLayout(new BorderLayout());
-    setBorder(BorderFactory.createTitledBorder(g.b("Select Tuning View")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Select Tuning View")));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
     this.c.addItem("");
@@ -58,30 +58,30 @@ public class TuningViewSelectorPanel extends JPanel {
     this.b.y();
   }
   
-  public void a(List paramList) {
+  public void ExceptionInVPackage(List paramList) {
     for (k k : paramList)
       this.c.addItem(k); 
     if (this.c.getItemCount() > 1)
       this.c.setSelectedIndex(1); 
   }
   
-  public File a() {
-    return this.a;
+  public File ExceptionInVPackage() {
+    return this.ExceptionInVPackage;
   }
   
-  public void a(File paramFile) {
-    this.a = paramFile;
-    g g = new g();
+  public void ExceptionInVPackage(File paramFile) {
+    this.ExceptionInVPackage = paramFile;
+    SComponentGolf SComponentGolf = new SComponentGolf();
     F f = null;
     try {
-      f = g.a(paramFile);
-      a(f);
-    } catch (a a) {
-      a.printStackTrace();
+      f = SComponentGolf.ExceptionInVPackage(paramFile);
+      ExceptionInVPackage(f);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      ExceptionInVPackage.printStackTrace();
     } 
   }
   
-  public void a(F paramF) {
+  public void ExceptionInVPackage(F paramF) {
     File file = null;
     try {
       file = paramF.d();
@@ -89,19 +89,19 @@ public class TuningViewSelectorPanel extends JPanel {
     if (file != null)
       try {
         remove(this.b);
-        add("Center", this.g);
+        add("Center", this.SComponentGolf);
         BufferedImage bufferedImage = ImageIO.read(file);
-        this.g.a(bufferedImage);
+        this.SComponentGolf.ExceptionInVPackage(bufferedImage);
         validate();
-        this.g.repaint();
+        this.SComponentGolf.repaint();
         return;
       } catch (IOException iOException) {
         Logger.getLogger(b.class.getName()).log(Level.SEVERE, (String)null, iOException);
       }  
-    remove(this.g);
+    remove(this.SComponentGolf);
     add("Center", this.b);
     validate();
-    this.b.a(paramF);
+    this.b.ExceptionInVPackage(paramF);
     this.b.doLayout();
     this.b.z();
   }

@@ -1,8 +1,8 @@
 package t;
 
-import o.f;
+import o.OComponentFoxtrot;
 
-class ac implements f {
+class ac implements OComponentFoxtrot {
   ac(w paramw) {}
   
   public void a(String paramString) {

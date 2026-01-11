@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.search;
 import G.R;
 import G.bv;
 import aP.dd;
-import aP.f;
+import aP.NetworkHashMap;
 
 class SearchNavigationHandler implements l {
   R a;
@@ -16,7 +16,7 @@ class SearchNavigationHandler implements l {
   }
   
   public void a(C paramC) {
-    f.a().a(this.a, this.b, dd.a().c());
+    NetworkHashMap.a().a(this.a, this.b, dd.a().c());
   }
 }
 

@@ -1,10 +1,10 @@
 package aP;
 
-import A.o;
-import A.x;
+import A.AInterfaceOscar;
+import A.AInterfaceXray;
 import G.T;
 import G.bT;
-import V.a;
+import V.ExceptionInVPackage;
 import W.R;
 import W.w;
 import W.z;
@@ -33,33 +33,33 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import r.a;
-import r.j;
-import s.g;
-import z.c;
+import r.ExceptionInVPackage;
+import r.ThreadedFile;
+import s.SComponentGolf;
+import z.ArrayListInZPackage;
 
-public class au extends JPanel implements o {
-  JTextField a = new JTextField(g.b("MyCar"), 30);
+public class au extends JPanel implements AInterfaceOscar {
+  JTextField ExceptionInVPackage = new JTextField(SComponentGolf.b("MyCar"), 30);
   
   JTextField b = new JTextField("", 30);
   
-  JTextField c = new JTextField("", 25);
+  JTextField ArrayListInZPackage = new JTextField("", 25);
   
   JComboBox d = new JComboBox();
   
   JComboBox e = new JComboBox();
   
-  JCheckBox f = new JCheckBox(g.b("Other / Browse"));
+  JCheckBox f = new JCheckBox(SComponentGolf.b("Other / Browse"));
   
-  JCheckBox g;
+  JCheckBox SComponentGolf;
   
-  JButton h = new JButton(g.b("Browse"));
+  JButton h = new JButton(SComponentGolf.b("Browse"));
   
-  JButton i = new JButton(g.b("Browse"));
+  JButton i = new JButton(SComponentGolf.b("Browse"));
   
-  JButton j = new JButton(g.b("Detect"));
+  JButton ThreadedFile = new JButton(SComponentGolf.b("Detect"));
   
-  JButton k = new JButton(g.b("Detect"));
+  JButton k = new JButton(SComponentGolf.b("Detect"));
   
   JLabel l = new JLabel();
   
@@ -67,7 +67,7 @@ public class au extends JPanel implements o {
   
   aY n = null;
   
-  ArrayList o = new ArrayList();
+  ArrayList AInterfaceOscar = new ArrayList();
   
   private String s = null;
   
@@ -86,20 +86,20 @@ public class au extends JPanel implements o {
   }
   
   private void l() {
-    setBorder(BorderFactory.createTitledBorder(g.b("Project Configuration")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Project Configuration")));
     setLayout(new BoxLayout(this, 1));
-    this.a.addFocusListener(new aD(this));
+    this.ExceptionInVPackage.addFocusListener(new aD(this));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
-    jPanel1.setBorder(BorderFactory.createTitledBorder(g.b("Project Name")));
-    jPanel1.add("Center", this.a);
-    this.a.addKeyListener(new aE(this));
+    jPanel1.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Project Name")));
+    jPanel1.add("Center", this.ExceptionInVPackage);
+    this.ExceptionInVPackage.addKeyListener(new aE(this));
     add(jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.setBorder(BorderFactory.createTitledBorder(g.b("Project Directory")));
-    String str = j.u();
-    str = j.u() + this.a.getText() + File.separator;
+    jPanel2.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Project Directory")));
+    String str = ThreadedFile.u();
+    str = ThreadedFile.u() + this.ExceptionInVPackage.getText() + File.separator;
     this.b.setText(str);
     this.b.setEditable(false);
     jPanel2.add("Center", this.b);
@@ -107,7 +107,7 @@ public class au extends JPanel implements o {
     this.h.addActionListener(new aA(this));
     add(jPanel2);
     this.r.setLayout(new BorderLayout());
-    this.r.setBorder(BorderFactory.createTitledBorder(g.b("Firmware")));
+    this.r.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Firmware")));
     this.p = new CardLayout();
     this.q.setLayout(this.p);
     JPanel jPanel3 = new JPanel();
@@ -117,12 +117,12 @@ public class au extends JPanel implements o {
     jPanel4.setLayout(new BorderLayout(5, 5));
     this.d.addItem(new aB(this, null));
     try {
-      File[] arrayOfFile = j.n();
+      File[] arrayOfFile = ThreadedFile.n();
       String str1 = null;
       String str2 = null;
-      if (T.a().c() != null) {
-        str2 = T.a().c().i();
-        str1 = T.a().c().P();
+      if (T.ExceptionInVPackage().ArrayListInZPackage() != null) {
+        str2 = T.ExceptionInVPackage().ArrayListInZPackage().i();
+        str1 = T.ExceptionInVPackage().ArrayListInZPackage().P();
       } 
       for (byte b = 0; b < arrayOfFile.length; b++) {
         if (arrayOfFile[b].isFile()) {
@@ -134,13 +134,13 @@ public class au extends JPanel implements o {
           } 
         } 
       } 
-    } catch (a a) {
-      bV.d(a.getMessage(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getMessage(), this);
     } 
-    D.c("Time to load ini list: " + (System.currentTimeMillis() - l) + "ms.");
+    D.ArrayListInZPackage("Time to load ini list: " + (System.currentTimeMillis() - l) + "ms.");
     jPanel4.add("Center", this.d);
-    jPanel4.add("East", this.j);
-    this.j.addActionListener(new av(this));
+    jPanel4.add("East", this.ThreadedFile);
+    this.ThreadedFile.addActionListener(new av(this));
     jPanel3.add("North", jPanel4);
     this.q.add("Manual", jPanel3);
     JPanel jPanel5 = new JPanel();
@@ -158,28 +158,28 @@ public class au extends JPanel implements o {
     jPanel7.setLayout(new BorderLayout());
     jPanel7.add("West", this.f);
     this.f.addActionListener(new ax(this));
-    jPanel7.add("Center", this.c);
-    this.c.setEnabled(this.f.isSelected());
-    this.c.setEditable(false);
+    jPanel7.add("Center", this.ArrayListInZPackage);
+    this.ArrayListInZPackage.setEnabled(this.f.isSelected());
+    this.ArrayListInZPackage.setEditable(false);
     this.i.setEnabled(this.f.isSelected());
     this.i.addActionListener(new aC(this));
     this.r.add("Center", jPanel7);
-    this.g = new JCheckBox(g.b("Show Advanced / Offline Setup"));
-    this.g.addActionListener(new ay(this));
+    this.SComponentGolf = new JCheckBox(SComponentGolf.b("Show Advanced / Offline Setup"));
+    this.SComponentGolf.addActionListener(new ay(this));
     JPanel jPanel8 = new JPanel();
     jPanel8.setLayout(new BorderLayout());
-    jPanel8.add("East", this.g);
+    jPanel8.add("East", this.SComponentGolf);
     this.r.add("South", jPanel8);
     add(this.r);
-    a(false);
+    ExceptionInVPackage(false);
     JPanel jPanel9 = new JPanel();
     jPanel9.setLayout(new GridLayout());
-    jPanel9.setBorder(BorderFactory.createTitledBorder(g.b("Project Description")));
+    jPanel9.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Project Description")));
     JScrollPane jScrollPane = new JScrollPane(this.m);
     this.m.setLineWrap(true);
     jPanel9.add(jScrollPane);
     jScrollPane.setBorder(BorderFactory.createLoweredBevelBorder());
-    jScrollPane.setPreferredSize(eJ.a(300, 160));
+    jScrollPane.setPreferredSize(eJ.ExceptionInVPackage(300, 160));
     add(jPanel9);
   }
   
@@ -187,15 +187,15 @@ public class au extends JPanel implements o {
     return !this.b.getText().trim().equals("") ? this.b.getText().substring(0, this.b.getText().lastIndexOf(File.separatorChar)) : ".";
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     if (paramBoolean) {
       this.p.show(this.q, "Manual");
-      this.r.setBorder(BorderFactory.createTitledBorder(g.b("ECU Definition")));
+      this.r.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("ECU Definition")));
     } else {
       this.p.show(this.q, "Basic");
-      this.r.setBorder(BorderFactory.createTitledBorder(g.b("Firmware")));
+      this.r.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Firmware")));
     } 
-    this.g.setSelected(paramBoolean);
+    this.SComponentGolf.setSelected(paramBoolean);
   }
   
   public void b(String paramString) {
@@ -203,35 +203,35 @@ public class au extends JPanel implements o {
   }
   
   public void b(boolean paramBoolean) {
-    this.a.setEnabled(!paramBoolean);
+    this.ExceptionInVPackage.setEnabled(!paramBoolean);
     this.b.setEnabled(!paramBoolean);
     this.h.setEnabled(!paramBoolean);
   }
   
-  public void c(String paramString) {
+  public void ArrayListInZPackage(String paramString) {
     if (paramString != null && !paramString.endsWith(File.separator))
       paramString = paramString + File.separator; 
     this.b.setText(paramString);
   }
   
   public void d(String paramString) {
-    a(new File(paramString));
+    ExceptionInVPackage(new File(paramString));
   }
   
-  public void a(File paramFile) {
+  public void ExceptionInVPackage(File paramFile) {
     aB aB = new aB(this, paramFile);
     this.d.addItem(aB);
     this.d.setSelectedItem(aB);
-    this.c.setText(paramFile.getAbsolutePath());
-    String str = z.a(paramFile);
-    if (str != null && T.a().c() != null && T.a().c().i().equals(str) && T.a().c().P() != null && T.a().c().P().length() > 0) {
-      this.l.setText(T.a().c().P());
+    this.ArrayListInZPackage.setText(paramFile.getAbsolutePath());
+    String str = z.ExceptionInVPackage(paramFile);
+    if (str != null && T.ExceptionInVPackage().ArrayListInZPackage() != null && T.ExceptionInVPackage().ArrayListInZPackage().i().equals(str) && T.ExceptionInVPackage().ArrayListInZPackage().P() != null && T.ExceptionInVPackage().ArrayListInZPackage().P().length() > 0) {
+      this.l.setText(T.ExceptionInVPackage().ArrayListInZPackage().P());
     } else if (str != null) {
-      this.l.setText(g.b("Serial Signature") + ": " + str);
+      this.l.setText(SComponentGolf.b("Serial Signature") + ": " + str);
     } 
   }
   
-  public String c() {
+  public String ArrayListInZPackage() {
     return this.m.getText();
   }
   
@@ -240,7 +240,7 @@ public class au extends JPanel implements o {
   }
   
   protected void f(String paramString) {
-    paramString = paramString + File.separator + this.a.getText();
+    paramString = paramString + File.separator + this.ExceptionInVPackage.getText();
     this.b.setText(paramString);
   }
   
@@ -251,21 +251,21 @@ public class au extends JPanel implements o {
     } 
     this.n = new aY(bV.b(this));
     this.n.setVisible(true);
-    this.n.a(this);
-    Iterator<o> iterator = this.o.iterator();
+    this.n.ExceptionInVPackage(this);
+    Iterator<AInterfaceOscar> iterator = this.AInterfaceOscar.iterator();
     while (iterator.hasNext())
-      this.n.a(iterator.next()); 
+      this.n.ExceptionInVPackage(iterator.next()); 
   }
   
   public boolean e() {
     String str = "";
     if (h() == null)
-      str = str + g.b("ECU Configuration is Required, Please provide a valid ECU configuration File.") + "\n"; 
-    File file = g();
+      str = str + SComponentGolf.b("ECU Configuration is Required, Please provide ExceptionInVPackage valid ECU configuration File.") + "\n"; 
+    File file = SComponentGolf();
     if (file == null)
-      str = str + g.b("Project Directory is Required") + ",\n" + g.b("Please select a project directory.") + "\n"; 
+      str = str + SComponentGolf.b("Project Directory is Required") + ",\n" + SComponentGolf.b("Please select ExceptionInVPackage project directory.") + "\n"; 
     if (this.b.isEnabled() && file.exists())
-      str = str + g.b("Project Directory already exists") + ",\n" + g.b("Please select a unique project name-directory combination.") + "\n"; 
+      str = str + SComponentGolf.b("Project Directory already exists") + ",\n" + SComponentGolf.b("Please select ExceptionInVPackage unique project name-directory combination.") + "\n"; 
     if (str.length() > 0) {
       bV.d(str, this);
       return false;
@@ -274,45 +274,45 @@ public class au extends JPanel implements o {
   }
   
   public String f() {
-    return this.a.getText();
+    return this.ExceptionInVPackage.getText();
   }
   
-  public void g(String paramString) {
-    this.a.setText(paramString);
+  public void SComponentGolf(String paramString) {
+    this.ExceptionInVPackage.setText(paramString);
   }
   
-  public File g() {
+  public File SComponentGolf() {
     return (this.b.getText().length() == 0) ? null : new File(this.b.getText());
   }
   
   public File h() {
     if (this.f.isSelected()) {
-      File file = new File(this.c.getText());
+      File file = new File(this.ArrayListInZPackage.getText());
       return file.exists() ? file : null;
     } 
     aB aB = (aB)this.d.getSelectedItem();
-    return (aB == null || aB.a() == null) ? null : aB.a();
+    return (aB == null || aB.ExceptionInVPackage() == null) ? null : aB.ExceptionInVPackage();
   }
   
   public void b(String paramString1, String paramString2, List paramList, bT parambT) {
-    D.c("Ok, device accepted:" + parambT);
+    D.ArrayListInZPackage("Ok, device accepted:" + parambT);
     h(paramString2);
-    a(paramList);
-    a(parambT);
+    ExceptionInVPackage(paramList);
+    ExceptionInVPackage(parambT);
     if (parambT.f()) {
-      boolean bool = bV.a(g.b("The selected controller is in Bootload Mode.") + "\n" + g.b("This means there is no firmware loaded or a boot jumper has been installed.") + "\n" + g.b("To use this controller you must have firmware installed.") + "\n\n" + g.b("Would you like to open the Firmware Loader now?"), this, true);
+      boolean bool = bV.ExceptionInVPackage(SComponentGolf.b("The selected controller is in Bootload Mode.") + "\n" + SComponentGolf.b("This means there is no firmware loaded or ExceptionInVPackage boot jumper has been installed.") + "\n" + SComponentGolf.b("To use this controller you must have firmware installed.") + "\n\n" + SComponentGolf.b("Would you like to open the Firmware Loader now?"), this, true);
       if (bool) {
-        f.a().f();
-        f.a().i(dd.a().c());
+        f.ExceptionInVPackage().f();
+        f.ExceptionInVPackage().i(dd.ExceptionInVPackage().ArrayListInZPackage());
       } 
       return;
     } 
     aB aB = i(parambT.b());
     if (aB == null) {
-      R r = w.a(parambT.b());
-      if (r.a()) {
-        String str1 = g.b("Your installation of " + a.b + " does not have a configuration to support the firmware found:") + "\n" + parambT.c() + "\n\n" + g.b("Required Serial Signature:") + "\n" + parambT.b() + "\n\n" + g.b("However this file is available on EFI Analytics servers.") + "\n" + g.b("Would you like " + a.b + " to download the file for you?") + "\n" + g.b("File Size") + ": " + X.a(r.b()) + "\n";
-        int i = JOptionPane.showConfirmDialog(this, str1, g.b("Internet Download"), 0, 3);
+      R r = w.ExceptionInVPackage(parambT.b());
+      if (r.ExceptionInVPackage()) {
+        String str1 = SComponentGolf.b("Your installation of " + ExceptionInVPackage.b + " does not have ExceptionInVPackage configuration to support the firmware found:") + "\n" + parambT.ArrayListInZPackage() + "\n\n" + SComponentGolf.b("Required Serial Signature:") + "\n" + parambT.b() + "\n\n" + SComponentGolf.b("However this file is available on EFI Analytics servers.") + "\n" + SComponentGolf.b("Would you like " + ExceptionInVPackage.b + " to download the file for you?") + "\n" + SComponentGolf.b("File Size") + ": " + X.ExceptionInVPackage(r.b()) + "\n";
+        int i = JOptionPane.showConfirmDialog(this, str1, SComponentGolf.b("Internet Download"), 0, 3);
         if (i == 0)
           aB = b(parambT); 
         if (aB != null) {
@@ -320,13 +320,13 @@ public class au extends JPanel implements o {
           this.d.setSelectedItem(aB);
         } 
       } else {
-        String str1 = g.b(a.b + " does not have a configuration to support the found firmware") + ":\n" + parambT.c() + "\n\n" + g.b("Required Serial Signature") + ":\n" + parambT.b() + "\n\n\n" + g.b("Please click the 'Other' checkbox and browse") + ", \n" + g.b("to the Ecu Definition (ini) file provided with your firmware.");
+        String str1 = SComponentGolf.b(ExceptionInVPackage.b + " does not have ExceptionInVPackage configuration to support the found firmware") + ":\n" + parambT.ArrayListInZPackage() + "\n\n" + SComponentGolf.b("Required Serial Signature") + ":\n" + parambT.b() + "\n\n\n" + SComponentGolf.b("Please click the 'Other' checkbox and browse") + ", \n" + SComponentGolf.b("to the Ecu Definition (ini) file provided with your firmware.");
         bV.d(str1, this);
       } 
     } 
     String str = null;
-    if (parambT.c() != null && parambT.c().length() > 0 && !parambT.c().equals(parambT.b())) {
-      str = parambT.c();
+    if (parambT.ArrayListInZPackage() != null && parambT.ArrayListInZPackage().length() > 0 && !parambT.ArrayListInZPackage().equals(parambT.b())) {
+      str = parambT.ArrayListInZPackage();
       this.l.setText(str);
     } else if (parambT.b() != null && !parambT.b().isEmpty()) {
       str = parambT.b();
@@ -341,23 +341,23 @@ public class au extends JPanel implements o {
   }
   
   private aB b(bT parambT) {
-    JDialog jDialog = bV.a(dd.a().c(), g.b("Downloading Ecu Definition file for") + " " + parambT.b());
+    JDialog jDialog = bV.ExceptionInVPackage(dd.ExceptionInVPackage().ArrayListInZPackage(), SComponentGolf.b("Downloading Ecu Definition file for") + " " + parambT.b());
     try {
       aB aB = null;
-      R r = w.a(parambT.b(), j.c());
-      if (r.a()) {
-        aB = new aB(this, r.c());
-        if (parambT.c() != null && parambT.c().length() > 5)
-          aB.b(parambT.c()); 
+      R r = w.ExceptionInVPackage(parambT.b(), ThreadedFile.ArrayListInZPackage());
+      if (r.ExceptionInVPackage()) {
+        aB = new aB(this, r.ArrayListInZPackage());
+        if (parambT.ArrayListInZPackage() != null && parambT.ArrayListInZPackage().length() > 5)
+          aB.b(parambT.ArrayListInZPackage()); 
       } else {
         bV.d(r.d(), this);
         return null;
       } 
       if (aB != null);
       return aB;
-    } catch (a a) {
-      Logger.getLogger(au.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
-      bV.d(a.getMessage(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(au.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
+      bV.d(ExceptionInVPackage.getMessage(), this);
       return null;
     } catch (Exception exception) {
       Logger.getLogger(au.class.getName()).log(Level.SEVERE, (String)null, exception);
@@ -377,27 +377,27 @@ public class au extends JPanel implements o {
     return null;
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     this.n.b(this);
-    Iterator<o> iterator = this.o.iterator();
+    Iterator<AInterfaceOscar> iterator = this.AInterfaceOscar.iterator();
     while (iterator.hasNext())
       this.n.b(iterator.next()); 
   }
   
   public void b(double paramDouble) {}
   
-  public void a(String paramString) {}
+  public void ExceptionInVPackage(String paramString) {}
   
   private void m() {
     String[] arrayOfString = { "ini", "ecu" };
-    String str = bV.b(this, g.b("Find ecu definition file"), arrayOfString, "", "");
+    String str = bV.b(this, SComponentGolf.b("Find ecu definition file"), arrayOfString, "", "");
     if (str != null && !str.equals("")) {
-      String str1 = z.a(str);
+      String str1 = z.ExceptionInVPackage(str);
       if (str1 != null) {
         d(str);
         this.f.setSelected(true);
       } else {
-        bV.d(g.b("The selected file does not appear to be a valid ECU Definition file.") + "\n" + g.b("No Valid Signature Found in file") + ":\n" + str, this);
+        bV.d(SComponentGolf.b("The selected file does not appear to be ExceptionInVPackage valid ECU Definition file.") + "\n" + SComponentGolf.b("No Valid Signature Found in file") + ":\n" + str, this);
         this.f.setSelected(false);
       } 
     } else {
@@ -406,11 +406,11 @@ public class au extends JPanel implements o {
     } 
   }
   
-  public boolean a(String paramString1, String paramString2, List paramList, bT parambT) {
+  public boolean ExceptionInVPackage(String paramString1, String paramString2, List paramList, bT parambT) {
     if (paramString2.contains(":")) {
       String str = paramString2.substring(0, paramString2.indexOf(":"));
-      if (!c.a().a(str)) {
-        String str1 = g.b("The Controller found requires a driver that is not available in this edition of the application.");
+      if (!ArrayListInZPackage.ExceptionInVPackage().ExceptionInVPackage(str)) {
+        String str1 = SComponentGolf.b("The Controller found requires ExceptionInVPackage driver that is not available in this edition of the application.");
         bV.d(str1, this);
         return false;
       } 
@@ -428,11 +428,11 @@ public class au extends JPanel implements o {
     this.s = paramString;
   }
   
-  public List j() {
+  public List ThreadedFile() {
     return this.t;
   }
   
-  public void a(List paramList) {
+  public void ExceptionInVPackage(List paramList) {
     this.t = paramList;
   }
   
@@ -440,11 +440,11 @@ public class au extends JPanel implements o {
     return this.u;
   }
   
-  public void a(bT parambT) {
+  public void ExceptionInVPackage(bT parambT) {
     this.u = parambT;
   }
   
-  public void a(x paramx) {}
+  public void ExceptionInVPackage(AInterfaceXray paramx) {}
 }
 
 

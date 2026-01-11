@@ -1,36 +1,36 @@
 package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.cO;
 import java.awt.Font;
 import java.awt.Image;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-import n.b;
+import n.JPanelExtensionInNPackage;
 
 class BurnButtonInitializer implements Runnable {
   c(BurnButtonTv paramBurnButtonTv) {}
   
   public void run() {
-    int i = this.a.c.getWidth();
-    int j = this.a.c.getHeight();
+    int i = this.ExceptionInVPackage.c.getWidth();
+    int j = this.ExceptionInVPackage.c.getHeight();
     int k = (j / 2 < i / 4) ? (j / 2) : (i / 4);
-    Font font = this.a.c.getFont();
-    byte b = 0;
+    Font font = this.ExceptionInVPackage.c.getFont();
+    byte JPanelExtensionInNPackage = 0;
     do {
-      font = new Font(font.getFamily(), font.getStyle(), ++b);
-    } while (i / 2 - k > this.a.c.getFontMetrics(font).stringWidth(this.a.c.getText()) && b < j / 2);
+      font = new Font(font.getFamily(), font.getStyle(), ++JPanelExtensionInNPackage);
+    } while (i / 2 - k > this.ExceptionInVPackage.c.getFontMetrics(font).stringWidth(this.ExceptionInVPackage.c.getText()) && JPanelExtensionInNPackage < j / 2);
     try {
-      Image image = cO.a().a(cO.W, this.a.c, k);
-      this.a.f = new ImageIcon(image);
-      image = cO.a().a(cO.Z, this.a.c, k);
-      this.a.g = new ImageIcon(image);
-    } catch (a a) {
-      Logger.getLogger(b.class.getName()).log(Level.INFO, "Unable to load burn button image.", (Throwable)a);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.W, this.ExceptionInVPackage.c, k);
+      this.ExceptionInVPackage.f = new ImageIcon(image);
+      image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.Z, this.ExceptionInVPackage.c, k);
+      this.ExceptionInVPackage.g = new ImageIcon(image);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(JPanelExtensionInNPackage.class.getName()).log(Level.INFO, "Unable to load burn button image.", (Throwable)ExceptionInVPackage);
     } 
-    this.a.enableBurn(this.a.h);
-    this.a.c.setFont(font);
+    this.ExceptionInVPackage.enableBurn(this.ExceptionInVPackage.h);
+    this.ExceptionInVPackage.c.setFont(font);
   }
 }
 

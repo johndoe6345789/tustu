@@ -1,12 +1,12 @@
 package ao;
 
-import V.h;
+import V.VInterfaceHotel;
 import bH.D;
 import bH.G;
 import bH.X;
-import g.d;
-import g.k;
-import h.i;
+import g.GInterfaceDelta;
+import g.IOJFileChooser;
+import VInterfaceHotel.i;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,7 +35,7 @@ public class ca implements hW {
   
   HashMap c = new HashMap<>();
   
-  HashMap d = new HashMap<>();
+  HashMap GInterfaceDelta = new HashMap<>();
   
   HashMap e = new HashMap<>();
   
@@ -43,7 +43,7 @@ public class ca implements hW {
   
   ArrayList g = new ArrayList();
   
-  boolean h = false;
+  boolean VInterfaceHotel = false;
   
   private static int j = -1;
   
@@ -71,16 +71,16 @@ public class ca implements hW {
   }
   
   private hY l(String paramString) {
-    cb cb = (cb)this.d.get(paramString);
+    cb cb = (cb)this.GInterfaceDelta.get(paramString);
     if (cb == null)
       return null; 
     hY hY = new hY();
     hY.a(e(paramString));
-    hY.b(d(paramString));
-    hY.a((hY.c()).length, (hY.d()).length);
+    hY.b(GInterfaceDelta(paramString));
+    hY.a((hY.c()).length, (hY.GInterfaceDelta()).length);
     a(hY, (Double[][])cb.a());
     hY.f(paramString);
-    hY.d(f(paramString));
+    hY.GInterfaceDelta(f(paramString));
     hY.a(this.f.contains(paramString));
     int i = 0;
     if (paramString.startsWith("veBins")) {
@@ -94,17 +94,17 @@ public class ca implements hW {
       hY.a(100.0D);
       hY.b(2);
       if (paramString.endsWith("2")) {
-        hY.d("PW In2");
+        hY.GInterfaceDelta("PW In2");
       } else {
-        hY.d("PW In1");
+        hY.GInterfaceDelta("PW In1");
       } 
     } else if (paramString.startsWith("afrBTable") || paramString.startsWith("afrATable")) {
       i = 1;
       hY.b(2);
       if (paramString.endsWith("2")) {
-        hY.d("PW In2");
+        hY.GInterfaceDelta("PW In2");
       } else {
-        hY.d("PW In1");
+        hY.GInterfaceDelta("PW In1");
       } 
     } else if (paramString.startsWith("afr")) {
       i = 1;
@@ -113,8 +113,8 @@ public class ca implements hW {
     } else if (paramString.startsWith("veTable") && f()) {
       i = 1;
     } 
-    if (cb.d > j)
-      i = cb.d; 
+    if (cb.GInterfaceDelta > j)
+      i = cb.GInterfaceDelta; 
     hY.a(i);
     return hY;
   }
@@ -134,39 +134,39 @@ public class ca implements hW {
     return this.f.contains(paramString);
   }
   
-  public String[] d(String paramString) {
-    cb cb = (cb)this.b.get(h(paramString));
+  public String[] GInterfaceDelta(String paramString) {
+    cb cb = (cb)this.b.get(VInterfaceHotel(paramString));
     return (String[])cb.a();
   }
   
   public String[] e(String paramString) {
-    cb cb = (cb)this.c.get(h(paramString));
+    cb cb = (cb)this.c.get(VInterfaceHotel(paramString));
     return (String[])cb.a();
   }
   
   public String f(String paramString) {
-    cb cb = (cb)this.c.get(h(paramString));
+    cb cb = (cb)this.c.get(VInterfaceHotel(paramString));
     return cb.c();
   }
   
   public Double[][] g(String paramString) {
-    return (this.d.get(paramString) == null) ? (Double[][])null : (Double[][])((cb)this.d.get(paramString)).a();
+    return (this.GInterfaceDelta.get(paramString) == null) ? (Double[][])null : (Double[][])((cb)this.GInterfaceDelta.get(paramString)).a();
   }
   
   public Iterator c() {
-    return this.d.keySet().iterator();
+    return this.GInterfaceDelta.keySet().iterator();
   }
   
-  public int d() {
-    return this.d.size();
+  public int GInterfaceDelta() {
+    return this.GInterfaceDelta.size();
   }
   
-  public String h(String paramString) {
+  public String VInterfaceHotel(String paramString) {
     return (paramString.startsWith("veTable") || paramString.startsWith("afrTable") || paramString.startsWith("alphaMAPtable") || paramString.startsWith("advanceTable")) ? ((this.c.get(paramString) != null || this.b.get(paramString) != null) ? paramString : paramString.substring(0, paramString.length() - 1)) : paramString;
   }
   
   public void i(String paramString) {
-    this.h = false;
+    this.VInterfaceHotel = false;
     p(paramString);
     File file = new File(paramString);
     try {
@@ -295,9 +295,9 @@ public class ca implements hW {
       } 
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new h("Error Opening MSQ File. \nFile appears to be corrupt.");
+      throw new VInterfaceHotel("Error Opening MSQ File. \nFile appears to be corrupt.");
     } 
-    if (this.h)
+    if (this.VInterfaceHotel)
       q(paramString); 
     ArrayList<String> arrayList = new ArrayList();
     Iterator<String> iterator = c();
@@ -313,7 +313,7 @@ public class ca implements hW {
     } 
     iterator = arrayList.iterator();
     while (iterator.hasNext())
-      this.d.remove(iterator.next()); 
+      this.GInterfaceDelta.remove(iterator.next()); 
     a();
   }
   
@@ -333,7 +333,7 @@ public class ca implements hW {
   
   private boolean n(String paramString) {
     try {
-      double d = Double.parseDouble(paramString);
+      double GInterfaceDelta = Double.parseDouble(paramString);
       return true;
     } catch (Exception exception) {
       return false;
@@ -355,7 +355,7 @@ public class ca implements hW {
   }
   
   public void j(String paramString) {
-    h();
+    VInterfaceHotel();
     try {
       FileOutputStream fileOutputStream = new FileOutputStream(paramString);
       DOMSource dOMSource = new DOMSource(this.a);
@@ -370,9 +370,9 @@ public class ca implements hW {
       fileOutputStream.close();
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new h("Error Saving MSQ. Check Log file for details.");
+      throw new VInterfaceHotel("Error Saving MSQ. Check Log file for details.");
     } 
-    if (this.h)
+    if (this.VInterfaceHotel)
       q(paramString); 
     a();
   }
@@ -413,8 +413,8 @@ public class ca implements hW {
       } else if (node.getNodeName() != null && node.getNodeName().equals("units")) {
         str2 = node.getNodeValue();
       } else if (node.getNodeName() != null && node.getNodeName().equals("rows")) {
-        int k = Integer.parseInt(node.getNodeValue());
-        arrayOfString = new String[k];
+        int IOJFileChooser = Integer.parseInt(node.getNodeValue());
+        arrayOfString = new String[IOJFileChooser];
       } else if (node.getNodeName() != null && node.getNodeName().equals("digits")) {
         i = Integer.parseInt(node.getNodeValue());
       } 
@@ -429,7 +429,7 @@ public class ca implements hW {
   private void b(Node paramNode, String paramString) {
     int i = 0;
     int j = 0;
-    int k = j;
+    int IOJFileChooser = j;
     boolean bool1 = false;
     boolean bool2 = false;
     Double[][] arrayOfDouble = (Double[][])null;
@@ -449,7 +449,7 @@ public class ca implements hW {
         bool1 = node1.getNodeValue().equals("Volts");
         bool2 = node1.getNodeValue().equals("Lambda");
       } else if (node1.getNodeName() != null && node1.getNodeName().equals("digits")) {
-        k = Integer.parseInt(node1.getNodeValue());
+        IOJFileChooser = Integer.parseInt(node1.getNodeValue());
       } 
     } 
     arrayOfDouble = new Double[i][j];
@@ -463,19 +463,19 @@ public class ca implements hW {
     } 
     StringTokenizer stringTokenizer = new StringTokenizer(str3, "\n");
     for (int m = arrayOfDouble.length - 1; m >= 0; m--) {
-      String str = k.a(stringTokenizer.nextToken().trim(), " ", "|");
+      String str = IOJFileChooser.a(stringTokenizer.nextToken().trim(), " ", "|");
       StringTokenizer stringTokenizer1 = new StringTokenizer(str, "|");
       for (byte b1 = 0; b1 < (arrayOfDouble[m]).length; b1++) {
         String str5 = stringTokenizer1.nextToken();
         if (bool1 && !str4.equals("")) {
-          String str6 = k.a(str4, "[Field.O2Volts]", str5);
+          String str6 = IOJFileChooser.a(str4, "[Field.O2Volts]", str5);
           try {
             if (str6.indexOf(".inc") != -1) {
-              str6 = k.a(str4, "Field.O2Volts", str5);
-              str6 = d.a(null, str6, 0);
+              str6 = IOJFileChooser.a(str4, "Field.O2Volts", str5);
+              str6 = GInterfaceDelta.a(null, str6, 0);
             } 
-            str5 = k.a(G.g(str6));
-          } catch (h h) {
+            str5 = IOJFileChooser.a(G.g(str6));
+          } catch (VInterfaceHotel VInterfaceHotel) {
             System.out.println("Error converting afrVolts, using formula:" + str6);
           } catch (IOException iOException) {
             System.out.println("Error loading Mapping File");
@@ -489,8 +489,8 @@ public class ca implements hW {
       } 
     } 
     if (str1.startsWith("veBins"))
-      k = 0; 
-    this.d.put(str1, new cb(this, str1, paramString, str2, arrayOfDouble, k));
+      IOJFileChooser = 0; 
+    this.GInterfaceDelta.put(str1, new cb(this, str1, paramString, str2, arrayOfDouble, IOJFileChooser));
   }
   
   private Node b(Node paramNode) {
@@ -507,7 +507,7 @@ public class ca implements hW {
     Double[][] arrayOfDouble = (Double[][])paramcb.e;
     for (byte b1 = 0; b1 < paramhY.getRowCount(); b1++) {
       for (byte b = 0; b < paramhY.getColumnCount(); b++)
-        arrayOfDouble[b1][b] = paramhY.d(b1, b); 
+        arrayOfDouble[b1][b] = paramhY.GInterfaceDelta(b1, b); 
     } 
     String str = paramcb.b();
     cb cb1 = (cb)this.b.get(str);
@@ -527,7 +527,7 @@ public class ca implements hW {
           String str3 = node1.getNodeValue();
           if ("name".equals(str2) && str3 != null)
             if (str3.equals(str)) {
-              a(node, (Double[][])paramcb.a(), (paramcb.d == 0) ? paramhY.g() : paramcb.d);
+              a(node, (Double[][])paramcb.a(), (paramcb.GInterfaceDelta == 0) ? paramhY.g() : paramcb.GInterfaceDelta);
               bool3 = true;
             } else if (cb1 == null || cb2 == null) {
               if (!bool1 || !bool2)
@@ -535,10 +535,10 @@ public class ca implements hW {
               bool1 = true;
               bool2 = true;
             } else if (str3.equals(cb1.b)) {
-              a(node, a(paramhY.d(), true), cb1.d);
+              a(node, a(paramhY.GInterfaceDelta(), true), cb1.GInterfaceDelta);
               bool1 = true;
             } else if (str3.equals(cb2.b)) {
-              a(node, a(paramhY.c(), false), cb2.d);
+              a(node, a(paramhY.c(), false), cb2.GInterfaceDelta);
               bool2 = true;
             }  
         } 
@@ -577,43 +577,43 @@ public class ca implements hW {
   
   private void g() {
     for (hY hY : this.e.values()) {
-      if (hY.z().endsWith("dozen") && this.e.get(k.a(hY.z(), "dozen", "")) != null) {
-        hY hY1 = (hY)this.e.get(k.a(hY.z(), "dozen", ""));
+      if (hY.z().endsWith("dozen") && this.e.get(IOJFileChooser.a(hY.z(), "dozen", "")) != null) {
+        hY hY1 = (hY)this.e.get(IOJFileChooser.a(hY.z(), "dozen", ""));
         if (hY1.r()) {
           if (hY1.z().endsWith("1")) {
             for (byte b = 0; b < ''; b++)
-              hY.setValueAt(hY1.d(15 - b / 16, b % 16), 11 - b / 12, b % 12); 
+              hY.setValueAt(hY1.GInterfaceDelta(15 - b / 16, b % 16), 11 - b / 12, b % 12); 
             hY hY2 = (hY)this.e.get("veTable2dozen");
             if (hY2 != null)
               for (char c = ''; c < 'Ā'; c++) {
                 int i = c - 144;
-                hY2.setValueAt(hY1.d(15 - c / 16, c % 16), 11 - i / 12, i % 12);
+                hY2.setValueAt(hY1.GInterfaceDelta(15 - c / 16, c % 16), 11 - i / 12, i % 12);
               }  
           } 
           if (hY1.z().endsWith("2")) {
             for (byte b = 0; b < 32; b++) {
               int i = 112 + b;
-              hY.setValueAt(hY1.d(15 - b / 16, b % 16), 11 - i / 12, i % 12);
+              hY.setValueAt(hY1.GInterfaceDelta(15 - b / 16, b % 16), 11 - i / 12, i % 12);
             } 
             hY hY2 = (hY)this.e.get("veTable3dozen");
             if (hY2 != null)
               for (byte b1 = 32; b1 < '°'; b1++) {
                 int i = b1 - 32;
-                hY2.setValueAt(hY1.d(15 - b1 / 16, b1 % 16), 11 - i / 12, i % 12);
+                hY2.setValueAt(hY1.GInterfaceDelta(15 - b1 / 16, b1 % 16), 11 - i / 12, i % 12);
               }  
           } 
           continue;
         } 
         if (hY.r())
           for (byte b = 0; b < ''; b++)
-            hY1.setValueAt(hY.d(11 - b / 12, b % 12), 15 - b / 16, b % 16);  
+            hY1.setValueAt(hY.GInterfaceDelta(11 - b / 12, b % 12), 15 - b / 16, b % 16);  
       } 
     } 
   }
   
-  private void h() {
+  private void VInterfaceHotel() {
     g();
-    for (Map.Entry entry : this.d.entrySet()) {
+    for (Map.Entry entry : this.GInterfaceDelta.entrySet()) {
       String str1 = (String)entry.getKey();
       if (!c(str1))
         continue; 
@@ -642,11 +642,11 @@ public class ca implements hW {
       for (byte b1 = 0; b1 < arrayOfByte.length; b1++) {
         if (arrayOfByte[b1] == b) {
           arrayOfByte[b1] = 32;
-          this.h = true;
+          this.VInterfaceHotel = true;
         } 
       } 
       bufferedInputStream.close();
-      if (this.h) {
+      if (this.VInterfaceHotel) {
         File file1 = new File(paramString);
         FileOutputStream fileOutputStream = new FileOutputStream(file1);
         for (byte b2 = 0; b2 < arrayOfByte.length; b2++)
@@ -661,14 +661,14 @@ public class ca implements hW {
   private void q(String paramString) {
     byte b = 20;
     try {
-      k.b(paramString, "signature=\" \"", "signature=\"\024\"");
-    } catch (h h) {
+      IOJFileChooser.b(paramString, "signature=\" \"", "signature=\"\024\"");
+    } catch (VInterfaceHotel VInterfaceHotel) {
       System.out.println("Error writing dirty msq");
-      throw h;
+      throw VInterfaceHotel;
     } 
   }
   
-  public boolean k(String paramString) {
+  public boolean IOJFileChooser(String paramString) {
     return (this.b.get(paramString) != null && this.c.get(paramString) != null);
   }
 }

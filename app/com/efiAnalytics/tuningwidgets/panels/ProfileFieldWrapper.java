@@ -1,12 +1,12 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import ac.q;
+import ac.AcInterfaceQuebec;
 import bH.R;
 
 class F implements R {
-  private q b = null;
+  private AcInterfaceQuebec b = null;
   
-  public F(A paramA, q paramq) {
+  public F(A paramA, AcInterfaceQuebec paramq) {
     this.b = paramq;
   }
   
@@ -14,7 +14,7 @@ class F implements R {
     return this.b.a();
   }
   
-  public q a() {
+  public AcInterfaceQuebec a() {
     return this.b;
   }
   

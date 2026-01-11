@@ -2,19 +2,19 @@ package com.efiAnalytics.xcp.master.responseProcessors;
 
 import G.R;
 import G.T;
-import bQ.l;
+import bQ.IOHashMap;
 
 public class OnlineStateHandler {
   public void a() {
     R r = T.a().c();
-    if (r != null && r.C() instanceof l)
-      ((l)r.C()).P(); 
+    if (r != null && r.C() instanceof IOHashMap)
+      ((IOHashMap)r.C()).P(); 
   }
   
   public void b() {
     R r = T.a().c();
-    if (r != null && r.C() instanceof l)
-      ((l)r.C()).Q(); 
+    if (r != null && r.C() instanceof IOHashMap)
+      ((IOHashMap)r.C()).Q(); 
   }
 }
 

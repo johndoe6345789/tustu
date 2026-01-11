@@ -4,16 +4,16 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
-import s.g;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 class fL implements ActionListener {
   fL(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    a.a().b(a.bL, jCheckBoxMenuItem.getState() + "");
-    bV.d(g.b("Changes will take effect next time you start TunerStudio."), jCheckBoxMenuItem);
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bL, jCheckBoxMenuItem.getState() + "");
+    bV.d(SComponentGolf.b("Changes will take effect next time you start TunerStudio."), jCheckBoxMenuItem);
   }
 }
 

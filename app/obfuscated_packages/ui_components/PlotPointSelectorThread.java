@@ -1,6 +1,6 @@
 package ao;
 
-import bE.q;
+import bE.BeInterfaceQuebec;
 
 class gn extends Thread {
   int a;
@@ -13,17 +13,17 @@ class gn extends Thread {
   }
   
   public void run() {
-    q q = this.c.i().a(this.c.f, this.a, this.b);
+    BeInterfaceQuebec BeInterfaceQuebec = this.c.i().a(this.c.f, this.a, this.b);
     double d = 0.01D;
-    if (q != null && hx.a().r() != null) {
+    if (BeInterfaceQuebec != null && hx.a().r() != null) {
       double d1 = (this.c.f.b() - this.c.f.a()) * d;
       double d2 = (this.c.f.d() - this.c.f.c()) * d;
       int i = hx.a().p();
       int j = (fK.j(this.c) == 0) ? this.c.f.e() : fK.j(this.c);
       for (int k = fK.k(this.c); k < j; k++) {
         int m = k;
-        q q1 = this.c.f.b(m);
-        if (!this.c.f.a(m) && Math.abs(q1.getX() - q.getX()) < d1 && Math.abs(q1.getY() - q.getY()) < d2) {
+        BeInterfaceQuebec q1 = this.c.f.b(m);
+        if (!this.c.f.a(m) && Math.abs(q1.getX() - BeInterfaceQuebec.getX()) < d1 && Math.abs(q1.getY() - BeInterfaceQuebec.getY()) < d2) {
           hx.a().c(m);
           break;
         } 

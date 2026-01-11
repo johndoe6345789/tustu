@@ -3,32 +3,32 @@ package br;
 import G.R;
 import G.cq;
 import G.cu;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.cA;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 class ae implements cq {
-  ArrayList a = new ArrayList();
+  ArrayList ExceptionInVPackage = new ArrayList();
   
   ae(P paramP, R paramR, String paramString) {
     try {
-      cu.a().a(paramR.c(), paramString, this);
-    } catch (a a) {
-      D.a("Paint updates disabled for Component. " + a.getMessage());
-      a.printStackTrace();
+      cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), paramString, this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Paint updates disabled for Component. " + ExceptionInVPackage.getMessage());
+      ExceptionInVPackage.printStackTrace();
     } 
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
-    Iterator<cA> iterator = this.a.iterator();
+    Iterator<cA> iterator = this.ExceptionInVPackage.iterator();
     while (iterator.hasNext())
-      ((cA)iterator.next()).a(); 
+      ((cA)iterator.next()).ExceptionInVPackage(); 
   }
   
-  public void a(cA paramcA) {
-    this.a.add(paramcA);
+  public void ExceptionInVPackage(cA paramcA) {
+    this.ExceptionInVPackage.add(paramcA);
   }
 }
 

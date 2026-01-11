@@ -2,9 +2,9 @@ package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.R;
 import G.T;
-import V.a;
-import aE.a;
-import aE.e;
+import V.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
+import aE.AeInterfaceEcho;
 import bH.D;
 import bH.X;
 import bH.aa;
@@ -19,140 +19,140 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
-import r.j;
-import s.g;
-import v.g;
+import r.ExceptionInVPackage;
+import r.ThreadedFile;
+import s.SComponentGolf;
+import v.SComponentGolf;
 
-public class TuningViewController implements e, a {
-  n a;
+public class TuningViewController implements AeInterfaceEcho, ExceptionInVPackage {
+  n ExceptionInVPackage;
   
-  a b = null;
+  ExceptionInVPackage b = null;
   
   public z(n paramn) {
-    this.a = paramn;
+    this.ExceptionInVPackage = paramn;
   }
   
-  public void a(a parama, R paramR) {
+  public void ExceptionInVPackage(ExceptionInVPackage parama, R paramR) {
     this.b = parama;
-    String[] arrayOfString = T.a().d();
+    String[] arrayOfString = T.ExceptionInVPackage().d();
     G.c();
     ArrayList<R> arrayList = new ArrayList();
     for (String str : arrayOfString) {
-      R r = T.a().c(str);
+      R r = T.ExceptionInVPackage().c(str);
       if (r != null)
         arrayList.add(r); 
     } 
     try {
       aa aa = new aa();
-      aa.a();
+      aa.ExceptionInVPackage();
       List list = G.b(arrayList);
-      this.a.a(list);
+      this.ExceptionInVPackage.ExceptionInVPackage(list);
       D.c("Tuning View Files loaded in " + aa.d() + "ms.");
-    } catch (a a1) {
-      bV.d("Unable to load Tuning View Tabs for this Project.\nError:\n" + a1.getMessage(), (Component)this.a);
+    } catch (ExceptionInVPackage a1) {
+      bV.d("Unable to load Tuning View Tabs for this Project.\nError:\n" + a1.getMessage(), (Component)this.ExceptionInVPackage);
       Logger.getLogger(z.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
   }
   
   public void e_() {}
   
-  public void a(a parama) {
+  public void ExceptionInVPackage(ExceptionInVPackage parama) {
     byte b = 0;
-    Iterator<J> iterator = this.a.e();
+    Iterator<J> iterator = this.ExceptionInVPackage.AeInterfaceEcho();
     while (iterator.hasNext()) {
-      J j = iterator.next();
-      if (j == null)
+      J ThreadedFile = iterator.next();
+      if (ThreadedFile == null)
         D.b("null TuningViewPanel!!"); 
-      j.b(true);
-      j.repaint();
-      F f = j.g();
-      if (j != null && !j.O() && bV.a(g.b("A Tuning View Tab has been changed.") + "\n" + g.b("Do you want to save the changes?") + "\n" + f.b(), j, true)) {
-        File file = new File(j.a(parama), G.a(b));
-        g g = new g();
+      ThreadedFile.b(true);
+      ThreadedFile.repaint();
+      F f = ThreadedFile.SComponentGolf();
+      if (ThreadedFile != null && !ThreadedFile.O() && bV.ExceptionInVPackage(SComponentGolf.b("A Tuning View Tab has been changed.") + "\n" + SComponentGolf.b("Do you want to save the changes?") + "\n" + f.b(), ThreadedFile, true)) {
+        File file = new File(ThreadedFile.ExceptionInVPackage(parama), G.ExceptionInVPackage(b));
+        SComponentGolf SComponentGolf = new SComponentGolf();
         try {
-          g.a(f, file);
-        } catch (a a1) {
-          bV.d(a1.getMessage(), j);
+          SComponentGolf.ExceptionInVPackage(f, file);
+        } catch (ExceptionInVPackage a1) {
+          bV.d(a1.getMessage(), ThreadedFile);
         } 
       } 
       b++;
     } 
-    this.a.c();
+    this.ExceptionInVPackage.c();
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     c();
   }
   
   private void c() {
     b b = new b();
-    String[] arrayOfString1 = T.a().d();
+    String[] arrayOfString1 = T.ExceptionInVPackage().d();
     String[] arrayOfString2 = new String[arrayOfString1.length];
     ArrayList<R> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < arrayOfString1.length; b1++) {
-      R r = T.a().c(arrayOfString1[b1]);
+      R r = T.ExceptionInVPackage().c(arrayOfString1[b1]);
       arrayList.add(r);
       arrayOfString2[b1] = r.i();
     } 
     C c = new C(this, b, arrayOfString2);
     A a1 = new A(this, arrayList, b);
     a1.start();
-    Window window1 = bV.b((Component)this.a);
+    Window window1 = bV.b((Component)this.ExceptionInVPackage);
     Window window2 = window1;
     if (!(window2 instanceof java.awt.Dialog) && !(window2 instanceof java.awt.Frame))
       window2 = null; 
     ct ct = new ct(window2, b, "Select Tuning View", c, 7);
     if (c != null)
-      ct.a(c); 
-    ct.setSize(eJ.a(640), eJ.a(480));
-    bV.a(window1, (Component)ct);
+      ct.ExceptionInVPackage(c); 
+    ct.setSize(eJ.ExceptionInVPackage(640), eJ.ExceptionInVPackage(480));
+    bV.ExceptionInVPackage(window1, (Component)ct);
     ct.setVisible(true);
   }
   
-  public boolean a(String paramString, n paramn) {
-    int i = this.a.f(paramString);
+  public boolean ExceptionInVPackage(String paramString, n paramn) {
+    int i = this.ExceptionInVPackage.f(paramString);
     if (i >= 0) {
-      File file = new File(j.a(this.b), G.a(i));
+      File file = new File(ThreadedFile.ExceptionInVPackage(this.b), G.ExceptionInVPackage(i));
       file.delete();
-      for (int j = i + 1; j < this.a.getTabCount() - 1; j++) {
-        file = new File(j.a(this.b), G.a(j));
-        File file1 = new File(j.a(this.b), G.a(j - 1));
+      for (int ThreadedFile = i + 1; ThreadedFile < this.ExceptionInVPackage.getTabCount() - 1; ThreadedFile++) {
+        file = new File(ThreadedFile.ExceptionInVPackage(this.b), G.ExceptionInVPackage(ThreadedFile));
+        File file1 = new File(ThreadedFile.ExceptionInVPackage(this.b), G.ExceptionInVPackage(ThreadedFile - 1));
         file.renameTo(file1);
-        this.a.b(j).c(file1.getAbsolutePath());
+        this.ExceptionInVPackage.b(ThreadedFile).c(file1.getAbsolutePath());
       } 
     } 
     return true;
   }
   
-  public void a(J paramJ) {
-    paramJ.a(new B(this, paramJ, paramJ.getName()));
+  public void ExceptionInVPackage(J paramJ) {
+    paramJ.ExceptionInVPackage(new B(this, paramJ, paramJ.getName()));
   }
   
-  public void a(J paramJ, int paramInt) {
-    int i = this.a.f(paramJ.getName());
-    boolean bool = this.a.isEnabledAt(i);
-    J j = this.a.b(paramInt);
-    this.a.a(paramInt);
-    this.a.a(i);
+  public void ExceptionInVPackage(J paramJ, int paramInt) {
+    int i = this.ExceptionInVPackage.f(paramJ.getName());
+    boolean bool = this.ExceptionInVPackage.isEnabledAt(i);
+    J ThreadedFile = this.ExceptionInVPackage.b(paramInt);
+    this.ExceptionInVPackage.ExceptionInVPackage(paramInt);
+    this.ExceptionInVPackage.ExceptionInVPackage(i);
     File file1 = new File(paramJ.w());
     File file2 = G.b(paramInt);
     File file3 = G.b(i);
     while (true) {
-      file3 = new File(file3.getParentFile(), X.b(file3.getName(), "." + a.cp, "a." + a.cp));
+      file3 = new File(file3.getParentFile(), X.b(file3.getName(), "." + ExceptionInVPackage.cp, "ExceptionInVPackage." + ExceptionInVPackage.cp));
       if (!file3.exists()) {
         D.c("renaming: " + file2.getName() + " to " + file3.getName());
         if (file2.exists() && !file2.renameTo(file3)) {
-          D.a("Failed to rename TuningViewFile in movingTuningView.");
-          bV.d("Unable to rename tmp TuningView File.", (Component)this.a);
+          D.ExceptionInVPackage("Failed to rename TuningViewFile in movingTuningView.");
+          bV.d("Unable to rename tmp TuningView File.", (Component)this.ExceptionInVPackage);
           return;
         } 
-        j.c(file3.getAbsolutePath());
+        ThreadedFile.c(file3.getAbsolutePath());
         file2 = G.b(paramInt);
         D.c("renaming: " + file1.getName() + " to " + file2.getName());
         if (!file1.renameTo(file2)) {
-          D.a("Failed to rename TuningViewFile in movingTuningView.");
-          bV.d("Unable to rename TuningView File.\nFrom:" + file1.getAbsolutePath() + "\n  To:" + file2.getAbsolutePath(), (Component)this.a);
+          D.ExceptionInVPackage("Failed to rename TuningViewFile in movingTuningView.");
+          bV.d("Unable to rename TuningView File.\nFrom:" + file1.getAbsolutePath() + "\n  To:" + file2.getAbsolutePath(), (Component)this.ExceptionInVPackage);
           return;
         } 
         paramJ.c(file2.getAbsolutePath());
@@ -160,17 +160,17 @@ public class TuningViewController implements e, a {
         if (!file1.equals(file3)) {
           D.c("renaming: " + file3.getName() + " to " + file1.getName());
           if (file3.renameTo(file1)) {
-            j.c(file1.getAbsolutePath());
+            ThreadedFile.c(file1.getAbsolutePath());
           } else {
-            D.a("Failed to rename TuningViewFile in movingTuningView. " + file3.getName() + " --> " + file1.getName());
-            bV.d("Unable to rename TuningView File.\nFrom:" + file3.getAbsolutePath() + "\n  To:" + file1.getAbsolutePath(), (Component)this.a);
+            D.ExceptionInVPackage("Failed to rename TuningViewFile in movingTuningView. " + file3.getName() + " --> " + file1.getName());
+            bV.d("Unable to rename TuningView File.\nFrom:" + file3.getAbsolutePath() + "\n  To:" + file1.getAbsolutePath(), (Component)this.ExceptionInVPackage);
           } 
         } 
         D.c("Finished moving TV files.");
-        this.a.remove(i);
-        this.a.a(paramJ, paramJ.getName(), paramInt);
+        this.ExceptionInVPackage.remove(i);
+        this.ExceptionInVPackage.ExceptionInVPackage(paramJ, paramJ.getName(), paramInt);
         if (bool)
-          this.a.setSelectedIndex(paramInt); 
+          this.ExceptionInVPackage.setSelectedIndex(paramInt); 
         return;
       } 
     } 

@@ -1,6 +1,6 @@
 package ao;
 
-import i.a;
+import i.IComponentAlpha;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import javax.swing.JComponent;
 
 public class hg extends JComponent {
-  Dimension a = new Dimension(8, 14);
+  Dimension IComponentAlpha = new Dimension(8, 14);
   
   Point b = new Point();
   
@@ -40,18 +40,18 @@ public class hg extends JComponent {
     paramGraphics.drawLine((getInsets()).left + 1, getHeight() / 2 - 1, getWidth() - (getInsets()).left - 2, getHeight() / 2 - 1);
     paramGraphics.setColor(Color.lightGray);
     this.b.setLocation(c(), d());
-    paramGraphics.fill3DRect(this.b.x, this.b.y, this.a.width, this.a.height, true);
+    paramGraphics.fill3DRect(this.b.x, this.b.y, this.IComponentAlpha.width, this.IComponentAlpha.height, true);
   }
   
   private int c() {
-    return (int)((getWidth() - (getInsets()).left - (getInsets()).right) * this.d) + (getInsets()).left - this.a.width / 2;
+    return (int)((getWidth() - (getInsets()).left - (getInsets()).right) * this.d) + (getInsets()).left - this.IComponentAlpha.width / 2;
   }
   
   private int d() {
-    return getHeight() / 2 - this.a.height / 2;
+    return getHeight() / 2 - this.IComponentAlpha.height / 2;
   }
   
-  public void a(int paramInt) {
+  public void IComponentAlpha(int paramInt) {
     this.e = paramInt;
   }
   
@@ -59,16 +59,16 @@ public class hg extends JComponent {
     this.f = paramInt;
   }
   
-  public int a() {
+  public int IComponentAlpha() {
     return (int)((this.f - this.e) * b()) + this.e;
   }
   
   public void c(int paramInt) {
-    a((paramInt - this.e) / (this.f - this.e));
+    IComponentAlpha((paramInt - this.e) / (this.f - this.e));
     repaint();
   }
   
-  public void a(double paramDouble) {
+  public void IComponentAlpha(double paramDouble) {
     this.d = paramDouble;
     this.c = (int)((this.f - this.e) * paramDouble);
   }
@@ -86,15 +86,15 @@ public class hg extends JComponent {
       this.c = paramInt - (getInsets()).left;
     } 
     this.d = this.c / (getWidth() - (getInsets()).right - (getInsets()).left);
-    e(a());
+    e(IComponentAlpha());
   }
   
   private void e(int paramInt) {
-    for (a a : this.h)
-      a.a(paramInt); 
+    for (IComponentAlpha IComponentAlpha : this.h)
+      IComponentAlpha.IComponentAlpha(paramInt); 
   }
   
-  public void a(a parama) {
+  public void IComponentAlpha(IComponentAlpha parama) {
     this.h.add(parama);
   }
   

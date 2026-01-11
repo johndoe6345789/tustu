@@ -1,11 +1,11 @@
 package aP;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import s.g;
+import s.SComponentGolf;
 
 class cG implements ActionListener {
   cG(cc paramcc) {}
@@ -13,9 +13,9 @@ class cG implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     if (jCheckBoxMenuItem.isSelected()) {
-      int i = Integer.parseInt(jCheckBoxMenuItem.getActionCommand());
-      i.c("numberOfOverlays", i + "");
-      bV.d(g.b("The changes will take effect after a restart."), jCheckBoxMenuItem);
+      int IOProperties = Integer.parseInt(jCheckBoxMenuItem.getActionCommand());
+      IOProperties.c("numberOfOverlays", IOProperties + "");
+      bV.d(SComponentGolf.b("The changes will take effect after a restart."), jCheckBoxMenuItem);
     } 
   }
 }

@@ -1,6 +1,6 @@
 package G;
 
-import bI.d;
+import bI.BiInterfaceDelta;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
 public class bP extends Q implements Serializable {
-  private final byte[] d = new byte[8192];
+  private final byte[] BiInterfaceDelta = new byte[8192];
   
   public static String a = "TuningView";
   
@@ -31,13 +31,13 @@ public class bP extends Q implements Serializable {
     if (this.g != null)
       return this.g; 
     if (this.f != null) {
-      byte[] arrayOfByte = d.a(this.f);
+      byte[] arrayOfByte = BiInterfaceDelta.a(this.f);
       ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(arrayOfByte);
       InflaterInputStream inflaterInputStream = new InflaterInputStream(byteArrayInputStream);
       ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
       int i;
-      while ((i = inflaterInputStream.read(this.d)) > 0)
-        byteArrayOutputStream.write(this.d, 0, i); 
+      while ((i = inflaterInputStream.read(this.BiInterfaceDelta)) > 0)
+        byteArrayOutputStream.write(this.BiInterfaceDelta, 0, i); 
       this.g = byteArrayOutputStream.toByteArray();
       return this.g;
     } 
@@ -67,7 +67,7 @@ public class bP extends Q implements Serializable {
         throw throwable;
       } 
       byte[] arrayOfByte = byteArrayOutputStream.toByteArray();
-      this.f = d.a(arrayOfByte);
+      this.f = BiInterfaceDelta.a(arrayOfByte);
       return this.f;
     } 
     throw new IOException("Neither Base64 or decoded data has been set.");

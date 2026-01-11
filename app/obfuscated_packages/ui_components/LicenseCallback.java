@@ -1,15 +1,15 @@
 package ao;
 
-import at.c;
-import h.j;
+import at.IOJMenu;
+import h.HInterfaceJuliet;
 
-class fy implements j {
+class fy implements HInterfaceJuliet {
   fy(fw paramfw) {}
   
   public void a() {
-    String str = c.a().d();
+    String str = IOJMenu.a().d();
     if (!str.equals(""))
-      c.a().c(); 
+      IOJMenu.a().IOJMenu(); 
   }
 }
 

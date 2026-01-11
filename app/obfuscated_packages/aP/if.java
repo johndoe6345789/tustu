@@ -4,13 +4,13 @@ import G.R;
 import G.T;
 import G.aM;
 import G.aN;
-import aE.d;
+import aE.CloneableImpl;
 import bH.D;
 
 class if implements aN {
-  d a;
+  CloneableImpl a;
   
-  if(ie paramie, d paramd) {
+  if(ie paramie, CloneableImpl paramd) {
     this.a = paramd;
   }
   
@@ -23,7 +23,7 @@ class if implements aN {
           if (aM.n(r.p())) {
             int i = (int)aM.j(r.h());
             this.a.a(i);
-            D.d(aM.aL() + " changed, update Project CAN ID to: " + i);
+            D.CloneableImpl(aM.aL() + " changed, update Project CAN ID to: " + i);
           } 
         } catch (Exception exception) {
           D.b("Failed to update Project Can ID");

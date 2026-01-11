@@ -30,14 +30,14 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import r.a;
-import s.g;
-import z.k;
-import z.m;
-import z.n;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
+import z.SerialPortEventListenerUsingJTextArea;
+import z.ExceptionInZPackage;
+import z.ZInterfaceNovember;
 
 public class hs extends JDialog implements ActionListener {
-  final int a = 450;
+  final int IOPropertiesUsingFile = 450;
   
   final int b = 600;
   
@@ -47,7 +47,7 @@ public class hs extends JDialog implements ActionListener {
   
   private JButton f;
   
-  private JPanel g;
+  private JPanel SComponentGolf;
   
   private JPanel h;
   
@@ -57,13 +57,13 @@ public class hs extends JDialog implements ActionListener {
   
   private JTextArea j;
   
-  private JTextArea k;
+  private JTextArea SerialPortEventListenerUsingJTextArea;
   
   private hy l;
   
-  private n m = new n();
+  private ZInterfaceNovember ExceptionInZPackage = new ZInterfaceNovember();
   
-  private k n;
+  private SerialPortEventListenerUsingJTextArea ZInterfaceNovember;
   
   private Properties o = null;
   
@@ -72,12 +72,12 @@ public class hs extends JDialog implements ActionListener {
   public hs(Frame paramFrame, boolean paramBoolean) {
     super(paramFrame, "Mini-Term", true);
     h();
-    a a = a.a();
-    this.p = a.c(a.aA, 3);
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    this.p = IOPropertiesUsingFile.c(IOPropertiesUsingFile.aA, 3);
     addWindowListener(new hx(this, this));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(1, 0));
-    jPanel1.add(new JLabel(g.b("Output Format") + ":", 0));
+    jPanel1.add(new JLabel(SComponentGolf.b("Output Format") + ":", 0));
     ButtonGroup buttonGroup = new ButtonGroup();
     JCheckBox jCheckBox = new JCheckBox("ASCII");
     buttonGroup.add(jCheckBox);
@@ -119,13 +119,13 @@ public class hs extends JDialog implements ActionListener {
     JScrollPane jScrollPane1 = new JScrollPane(this.j);
     this.j.setBorder(BorderFactory.createLoweredBevelBorder());
     this.h.add(jScrollPane1);
-    this.k = new JTextArea();
-    JScrollPane jScrollPane2 = new JScrollPane(this.k);
-    this.k.setBorder(BorderFactory.createLoweredBevelBorder());
-    this.k.setEditable(false);
+    this.SerialPortEventListenerUsingJTextArea = new JTextArea();
+    JScrollPane jScrollPane2 = new JScrollPane(this.SerialPortEventListenerUsingJTextArea);
+    this.SerialPortEventListenerUsingJTextArea.setBorder(BorderFactory.createLoweredBevelBorder());
+    this.SerialPortEventListenerUsingJTextArea.setEditable(false);
     this.h.add(jScrollPane2);
     add(this.h, "Center");
-    R r = T.a().c();
+    R r = T.IOPropertiesUsingFile().c();
     boolean bool = (r != null && r.C().q()) ? true : false;
     this.l = new hy(this, paramFrame);
     if (bool) {
@@ -133,19 +133,19 @@ public class hs extends JDialog implements ActionListener {
       for (byte b = 0; b < arrayOfComponent.length; b++)
         arrayOfComponent[b].setEnabled(false); 
     } 
-    this.g = new JPanel();
-    this.d = new JButton(g.b("Open Port"));
+    this.SComponentGolf = new JPanel();
+    this.d = new JButton(SComponentGolf.b("Open Port"));
     this.d.addActionListener(this);
     this.d.setEnabled(!bool);
-    this.g.add(this.d);
-    this.e = new JButton(g.b("Close Port"));
+    this.SComponentGolf.add(this.d);
+    this.e = new JButton(SComponentGolf.b("Close Port"));
     this.e.addActionListener(this);
     this.e.setEnabled(false);
     this.e.setEnabled(!bool);
-    this.g.add(this.e);
-    this.f = new JButton(g.b("Exit"));
+    this.SComponentGolf.add(this.e);
+    this.f = new JButton(SComponentGolf.b("Exit"));
     this.f.addActionListener(this);
-    this.g.add(this.f);
+    this.SComponentGolf.add(this.f);
     JPanel jPanel3 = new JPanel();
     GridBagLayout gridBagLayout = new GridBagLayout();
     GridBagConstraints gridBagConstraints = new GridBagConstraints();
@@ -154,11 +154,11 @@ public class hs extends JDialog implements ActionListener {
     gridBagLayout.setConstraints(this.l, gridBagConstraints);
     gridBagConstraints.weightx = 1.0D;
     jPanel3.add(this.l);
-    gridBagLayout.setConstraints(this.g, gridBagConstraints);
-    jPanel3.add(this.g);
+    gridBagLayout.setConstraints(this.SComponentGolf, gridBagConstraints);
+    jPanel3.add(this.SComponentGolf);
     add(jPanel3, "South");
-    this.n = new k(this, this.m, this.j, this.k);
-    a();
+    this.ZInterfaceNovember = new SerialPortEventListenerUsingJTextArea(this, this.ExceptionInZPackage, this.j, this.SerialPortEventListenerUsingJTextArea);
+    IOPropertiesUsingFile();
     setSize(600, 450);
     this.j.requestFocus();
   }
@@ -172,35 +172,35 @@ public class hs extends JDialog implements ActionListener {
       arrayOfString = str.split(" ");
     } 
     try {
-      int[] arrayOfInt = c.a(arrayOfString);
+      int[] arrayOfInt = c.IOPropertiesUsingFile(arrayOfString);
       boolean bool = false;
-      if (bool && T.a().c() != null && T.a().c().O().C() != null) {
-        cV cV = T.a().c().O().C();
-        byte[] arrayOfByte = c.a(arrayOfInt);
-        arrayOfByte = cV.a(arrayOfByte);
+      if (bool && T.IOPropertiesUsingFile().c() != null && T.IOPropertiesUsingFile().c().O().C() != null) {
+        cV cV = T.IOPropertiesUsingFile().c().O().C();
+        byte[] arrayOfByte = c.IOPropertiesUsingFile(arrayOfInt);
+        arrayOfByte = cV.IOPropertiesUsingFile(arrayOfByte);
         arrayOfInt = c.b(arrayOfByte);
       } 
       D.c("Sending: " + c.b(arrayOfInt));
-      this.n.a(arrayOfInt);
+      this.ZInterfaceNovember.IOPropertiesUsingFile(arrayOfInt);
     } catch (IOException iOException) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error sending bytes.\nCheck the port is open.Reported Error:\n" + iOException.getMessage());
+      JOptionPane.showMessageDialog(this.rootPane, "Error sending bytes.\nCheck the port is open.Reported Error:\ZInterfaceNovember" + iOException.getMessage());
       Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, iOException);
     } catch (Exception exception) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error Parsing bytes.\nMust be in the format:\n<number><space><number><space>...\nExample: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\nReported Error:\n" + exception.getMessage());
+      JOptionPane.showMessageDialog(this.rootPane, "Error Parsing bytes.\nMust be in the format:\ZInterfaceNovember<number><space><number><space>...\nExample: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\nReported Error:\ZInterfaceNovember" + exception.getMessage());
       Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
   }
   
-  public void a() {
-    this.l.a();
+  public void IOPropertiesUsingFile() {
+    this.l.IOPropertiesUsingFile();
   }
   
-  public void a(int paramInt) {
+  public void IOPropertiesUsingFile(int paramInt) {
     if (paramInt == 2 || paramInt == 1 || paramInt == 3) {
       this.p = paramInt;
       D.c("format changed to:" + paramInt);
-      a a = a.a();
-      a.b(a.aA, "" + paramInt);
+      IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+      IOPropertiesUsingFile.b(IOPropertiesUsingFile.aA, "" + paramInt);
     } 
   }
   
@@ -211,15 +211,15 @@ public class hs extends JDialog implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();
     this.j.requestFocus();
-    if (str.equals(g.b("Open Port")))
+    if (str.equals(SComponentGolf.b("Open Port")))
       try {
         c();
-      } catch (m m) {
-        bV.d("Error Opening Port!\nError opening port,\n" + m.getMessage() + ".\nSelect new settings, try again.", this);
+      } catch (ExceptionInZPackage ExceptionInZPackage) {
+        bV.d("Error Opening Port!\nError opening port,\ZInterfaceNovember" + ExceptionInZPackage.getMessage() + ".\nSelect new settings, try again.", this);
       }  
-    if (str.equals(g.b("Close Port")))
+    if (str.equals(SComponentGolf.b("Close Port")))
       e(); 
-    if (str.equals(g.b("Exit"))) {
+    if (str.equals(SComponentGolf.b("Exit"))) {
       e();
       dispose();
     } 
@@ -228,17 +228,17 @@ public class hs extends JDialog implements ActionListener {
   public void c() {
     this.d.setEnabled(false);
     Cursor cursor = getCursor();
-    a(Cursor.getPredefinedCursor(3));
+    IOPropertiesUsingFile(Cursor.getPredefinedCursor(3));
     this.l.b();
     try {
-      this.n.a();
-    } catch (m m) {
+      this.ZInterfaceNovember.IOPropertiesUsingFile();
+    } catch (ExceptionInZPackage ExceptionInZPackage) {
       this.d.setEnabled(true);
-      a(cursor);
-      throw m;
+      IOPropertiesUsingFile(cursor);
+      throw ExceptionInZPackage;
     } 
     d();
-    a(cursor);
+    IOPropertiesUsingFile(cursor);
   }
   
   public void d() {
@@ -247,27 +247,27 @@ public class hs extends JDialog implements ActionListener {
   }
   
   public void e() {
-    this.n.c();
+    this.ZInterfaceNovember.c();
     this.d.setEnabled(true);
     this.e.setEnabled(false);
   }
   
-  private void a(Cursor paramCursor) {
+  private void IOPropertiesUsingFile(Cursor paramCursor) {
     setCursor(paramCursor);
-    this.k.setCursor(paramCursor);
+    this.SerialPortEventListenerUsingJTextArea.setCursor(paramCursor);
     this.j.setCursor(paramCursor);
   }
   
-  private void g() {
-    this.n.c();
+  private void SComponentGolf() {
+    this.ZInterfaceNovember.c();
     dispose();
   }
   
   private void h() {
-    a a = a.a();
-    this.p = a.c(a.aA, 2);
-    this.m.a(a.c(a.az, "COM1"));
-    this.m.b(a.c(a.ay, "9600"));
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    this.p = IOPropertiesUsingFile.c(IOPropertiesUsingFile.aA, 2);
+    this.ExceptionInZPackage.IOPropertiesUsingFile(IOPropertiesUsingFile.c(IOPropertiesUsingFile.az, "COM1"));
+    this.ExceptionInZPackage.b(IOPropertiesUsingFile.c(IOPropertiesUsingFile.ay, "9600"));
   }
   
   public void setVisible(boolean paramBoolean) {
@@ -276,8 +276,8 @@ public class hs extends JDialog implements ActionListener {
       this.j.requestFocus(); 
   }
   
-  public void a(String paramString) {
-    this.l.a(paramString);
+  public void IOPropertiesUsingFile(String paramString) {
+    this.l.IOPropertiesUsingFile(paramString);
   }
   
   public void b(String paramString) {

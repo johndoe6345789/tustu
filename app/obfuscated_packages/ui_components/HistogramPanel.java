@@ -1,14 +1,14 @@
 package ao;
 
-import V.a;
-import W.j;
+import V.ExceptionInVPackage;
+import W.BxInterfaceJuliet;
 import W.n;
-import aw.a;
-import ax.U;
+import aw.ExceptionInVPackage;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.S;
-import bx.j;
-import bx.l;
+import bx.BxInterfaceJuliet;
+import bx.BxInterfaceLima;
 import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.c;
@@ -26,12 +26,12 @@ import com.efiAnalytics.ui.fh;
 import com.efiAnalytics.ui.fp;
 import com.efiAnalytics.ui.s;
 import com.efiAnalytics.ui.w;
-import g.g;
-import g.k;
-import h.b;
-import h.g;
-import h.i;
-import i.a;
+import ActionListenerInGPackage.ActionListenerInGPackage;
+import ActionListenerInGPackage.k;
+import h.ClassTypeInHPackage;
+import h.ActionListenerInGPackage;
+import h.IOProperties;
+import IOProperties.ExceptionInVPackage;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -60,33 +60,33 @@ import javax.swing.JScrollPane;
 import javax.swing.JSlider;
 import javax.swing.JToggleButton;
 import javax.swing.SwingUtilities;
-import k.a;
-import k.d;
+import k.ExceptionInVPackage;
+import k.KComponentDelta;
 
-public class go extends JPanel implements a {
-  JPanel a = new JPanel();
+public class go extends JPanel implements ExceptionInVPackage {
+  JPanel ExceptionInVPackage = new JPanel();
   
-  e b = new e();
+  e ClassTypeInHPackage = new e();
   
   e c = new e();
   
-  e d = new e();
+  e KComponentDelta = new e();
   
   e e = new e();
   
   de f = new de();
   
-  de g = new de();
+  de ActionListenerInGPackage = new de();
   
   de h = new de();
   
-  de i = new de();
+  de IOProperties = new de();
   
-  de j = new de();
+  de BxInterfaceJuliet = new de();
   
   gX k = new gX(this);
   
-  w l = new w(this.k);
+  w BxInterfaceLima = new w(this.k);
   
   JLabel m = new JLabel(" ", 0);
   
@@ -102,7 +102,7 @@ public class go extends JPanel implements a {
   
   fF s = new fF();
   
-  a t = null;
+  ExceptionInVPackage t = null;
   
   JPanel u = null;
   
@@ -176,7 +176,7 @@ public class go extends JPanel implements a {
   
   static String T = "TableGenColorMode";
   
-  static String U = "TableGenDisplayMode";
+  static String ExceptionInAxPackage = "TableGenDisplayMode";
   
   JScrollPane V;
   
@@ -192,7 +192,7 @@ public class go extends JPanel implements a {
   
   bx ab = new bx(this);
   
-  int ac = eJ.a(14);
+  int ac = eJ.ExceptionInVPackage(14);
   
   boolean ad = true;
   
@@ -200,21 +200,21 @@ public class go extends JPanel implements a {
   
   public go() {
     setLayout(new BorderLayout());
-    this.al = new gW(this, (Component)this.l);
-    this.W = new dD((Component)this.l);
-    this.al.a(250);
-    this.l.h().a(1);
-    this.l.e(true);
-    this.l.setName("Histogram");
-    this.l.c(this.ac);
-    this.l.h().g(false);
-    this.l.f(true);
-    this.l.h().f(BinTableView.g);
-    this.l.h().h(false);
-    this.l.h().getSelectionModel().addListSelectionListener(new gp(this));
-    this.l.h().getColumnModel().addColumnModelListener(new gA(this));
-    this.l.a(new gL(this));
-    this.l.h().a((et)new dQ(i.f(), "TableGenBinTablePrefs_"));
+    this.al = new gW(this, (Component)this.BxInterfaceLima);
+    this.W = new dD((Component)this.BxInterfaceLima);
+    this.al.ExceptionInVPackage(250);
+    this.BxInterfaceLima.h().ExceptionInVPackage(1);
+    this.BxInterfaceLima.e(true);
+    this.BxInterfaceLima.setName("Histogram");
+    this.BxInterfaceLima.c(this.ac);
+    this.BxInterfaceLima.h().ActionListenerInGPackage(false);
+    this.BxInterfaceLima.f(true);
+    this.BxInterfaceLima.h().f(BinTableView.ActionListenerInGPackage);
+    this.BxInterfaceLima.h().h(false);
+    this.BxInterfaceLima.h().getSelectionModel().addListSelectionListener(new gp(this));
+    this.BxInterfaceLima.h().getColumnModel().addColumnModelListener(new gA(this));
+    this.BxInterfaceLima.ExceptionInVPackage(new gL(this));
+    this.BxInterfaceLima.h().ExceptionInVPackage((et)new dQ(IOProperties.f(), "TableGenBinTablePrefs_"));
     setBorder(BorderFactory.createLineBorder(Color.darkGray));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BoxLayout(jPanel1, 1));
@@ -227,37 +227,37 @@ public class go extends JPanel implements a {
     jPanel1.add(jPanel2);
     this.x = new JPanel();
     this.x.setLayout(new BorderLayout());
-    this.a.setLayout(new GridLayout(0, 1, 3, 3));
-    this.a.add(a(" X Axis:", (Component)this.b));
-    this.a.add(a(" Y Axis:", (Component)this.c));
-    this.a.add(a(" Z Axis:", (Component)this.d));
-    this.a.add(new JLabel("Z Axis Delta (Optional)", 0));
-    this.a.setBorder(BorderFactory.createTitledBorder("Axis Fields"));
-    this.a.add((Component)this.e);
-    this.b.addItemListener(new gR(this));
+    this.ExceptionInVPackage.setLayout(new GridLayout(0, 1, 3, 3));
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" X Axis:", (Component)this.ClassTypeInHPackage));
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" Y Axis:", (Component)this.c));
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" Z Axis:", (Component)this.KComponentDelta));
+    this.ExceptionInVPackage.add(new JLabel("Z Axis Delta (Optional)", 0));
+    this.ExceptionInVPackage.setBorder(BorderFactory.createTitledBorder("Axis Fields"));
+    this.ExceptionInVPackage.add((Component)this.e);
+    this.ClassTypeInHPackage.addItemListener(new gR(this));
     this.c.addItemListener(new gS(this));
-    this.d.addItemListener(new gT(this));
+    this.KComponentDelta.addItemListener(new gT(this));
     this.e.addItemListener(new gU(this));
-    this.a.add(new JLabel(" "));
-    byte b;
-    for (b = 0; b < 5; b++)
-      this.f.addItem(Integer.valueOf(b)); 
-    this.a.add(a(" X Digits: ", (Component)this.f));
+    this.ExceptionInVPackage.add(new JLabel(" "));
+    byte ClassTypeInHPackage;
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < 5; ClassTypeInHPackage++)
+      this.f.addItem(Integer.valueOf(ClassTypeInHPackage)); 
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" X Digits: ", (Component)this.f));
     this.f.addActionListener(new gV(this));
-    for (b = 0; b < 5; b++)
-      this.g.addItem(Integer.valueOf(b)); 
-    this.a.add(a(" Y Digits: ", (Component)this.g));
-    this.g.addActionListener(new gq(this));
-    for (b = 0; b < 5; b++)
-      this.h.addItem(Integer.valueOf(b)); 
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < 5; ClassTypeInHPackage++)
+      this.ActionListenerInGPackage.addItem(Integer.valueOf(ClassTypeInHPackage)); 
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" Y Digits: ", (Component)this.ActionListenerInGPackage));
+    this.ActionListenerInGPackage.addActionListener(new gq(this));
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < 5; ClassTypeInHPackage++)
+      this.h.addItem(Integer.valueOf(ClassTypeInHPackage)); 
     this.f.setEnabled(false);
-    this.g.setEnabled(false);
+    this.ActionListenerInGPackage.setEnabled(false);
     this.h.setEnabled(false);
-    this.a.add(a(" Z Digits: ", (Component)this.h));
+    this.ExceptionInVPackage.add(ExceptionInVPackage(" Z Digits: ", (Component)this.h));
     this.h.addActionListener(new gr(this));
     this.X = new JComboBox();
     this.X.addItem(bx.e);
-    this.X.addItem(bx.d);
+    this.X.addItem(bx.KComponentDelta);
     this.X.addItem(bx.f);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
@@ -269,29 +269,29 @@ public class go extends JPanel implements a {
     this.Z.add("East", this.X);
     this.Y.addActionListener(new gt(this));
     try {
-      Image image = cO.a().a(cO.ar, this, 18);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.ar, this, 18);
       this.Y.setText("");
       ImageIcon imageIcon = new ImageIcon(image);
       this.Y.setIcon(imageIcon);
       this.Z.add("West", this.Y);
-      Dimension dimension1 = eJ.a(18, 18);
+      Dimension dimension1 = eJ.ExceptionInVPackage(18, 18);
       this.Y.setMinimumSize(dimension1);
       this.Y.setPreferredSize(dimension1);
-    } catch (a a1) {
+    } catch (ExceptionInVPackage a1) {
       Logger.getLogger(fK.class.getName()).log(Level.WARNING, "Failed to load Scatter plot full screen image.", (Throwable)a1);
     } 
     this.Y.setToolTipText("Toggle Expand");
     this.G.setLayout(new BorderLayout());
     this.aa.setLayout(new BorderLayout());
-    this.aa.add("Center", (Component)this.l);
+    this.aa.add("Center", (Component)this.BxInterfaceLima);
     this.V = new JScrollPane(this.aa);
     this.G.add("Center", this.V);
     this.G.add("North", this.Z);
     this.G.add("West", (Component)this.s);
     this.G.add("South", this.n);
-    this.m.setFont(new Font("Times", 1, eJ.a(18)));
+    this.m.setFont(new Font("Times", 1, eJ.ExceptionInVPackage(18)));
     add("Center", this.G);
-    jPanel1.add(this.a);
+    jPanel1.add(this.ExceptionInVPackage);
     JPanel jPanel4 = new JPanel();
     jPanel4.setBorder(BorderFactory.createTitledBorder("Table Dimensions"));
     jPanel4.setLayout(new BorderLayout());
@@ -323,11 +323,11 @@ public class go extends JPanel implements a {
     JPanel jPanel7 = new JPanel();
     jPanel7.setBorder(BorderFactory.createTitledBorder("Table Display Options"));
     jPanel7.setLayout(new GridLayout(0, 1, 4, 4));
-    this.i.a(S);
-    this.i.a(Q);
-    this.i.a(R);
-    this.i.addActionListener(new gx(this));
-    jPanel7.add((Component)this.i);
+    this.IOProperties.ExceptionInVPackage(S);
+    this.IOProperties.ExceptionInVPackage(Q);
+    this.IOProperties.ExceptionInVPackage(R);
+    this.IOProperties.addActionListener(new gx(this));
+    jPanel7.add((Component)this.IOProperties);
     this.K = new do("Auto", 1);
     this.L = new do("Auto", 1);
     gy gy = new gy(this);
@@ -344,13 +344,13 @@ public class go extends JPanel implements a {
     this.K.addFocusListener(gu);
     this.L.addFocusListener(gu);
     jPanel7.add(jPanel8);
-    this.j.a("Weighted Averages (Default)");
-    this.j.a("Minimum Values");
-    this.j.a("Maximum Values");
-    this.j.addActionListener(new gz(this));
-    jPanel7.add((Component)this.j);
-    Dimension dimension = eJ.a(35, 20);
-    String str = "Minimum Individual Hit Weight - the minimum weight of each hit before it will be included. This can be used to filter data that hit the edgest of the cell. Valid values are 0.0 to 1.0 where the closer to 1, the more centered a hit needs to be before it is included. 0 all hits will be counted with the associated weighting, a value of 1 requires a direct center hit to be included.";
+    this.BxInterfaceJuliet.ExceptionInVPackage("Weighted Averages (Default)");
+    this.BxInterfaceJuliet.ExceptionInVPackage("Minimum Values");
+    this.BxInterfaceJuliet.ExceptionInVPackage("Maximum Values");
+    this.BxInterfaceJuliet.addActionListener(new gz(this));
+    jPanel7.add((Component)this.BxInterfaceJuliet);
+    Dimension dimension = eJ.ExceptionInVPackage(35, 20);
+    String str = "Minimum Individual Hit Weight - the minimum weight of each hit before it will be included. This can be used to filter data that hit the edgest of the cell. Valid values are 0.0 to 1.0 where the closer to 1, the more centered ExceptionInVPackage hit needs to be before it is included. 0 all hits will be counted with the associated weighting, ExceptionInVPackage value of 1 requires ExceptionInVPackage direct center hit to be included.";
     JPanel jPanel9 = new JPanel();
     jPanel9.setLayout(new BorderLayout());
     this.q = new JSlider(0, 0, 100, 0);
@@ -371,7 +371,7 @@ public class go extends JPanel implements a {
     jPanel9.add("Center", this.r);
     this.p.setMinimumSize(dimension);
     this.p.setPreferredSize(dimension);
-    str = "Minimum Total Hit Weight - The minimum cumulative weight a cell must have before it is displayed. This can be used to filter cells that are displaying a value that doesn't have much data generating the value, so less certainty.";
+    str = "Minimum Total Hit Weight - The minimum cumulative weight ExceptionInVPackage cell must have before it is displayed. This can be used to filter cells that are displaying ExceptionInVPackage value that doesn't have much data generating the value, so less certainty.";
     jPanel10 = new JPanel();
     jPanel10.setLayout(new BorderLayout());
     jPanel10.add("Center", this.p);
@@ -382,9 +382,9 @@ public class go extends JPanel implements a {
     JPanel jPanel11 = new JPanel();
     jPanel11.setBorder(BorderFactory.createTitledBorder("Populate X & Y Axis"));
     jPanel11.setLayout(new GridLayout(0, 1));
-    this.E.a("Don't Generate X & Y Axis");
-    this.E.a("Auto-Generate axis High at top");
-    this.E.a("Auto-Generate axis Low at top");
+    this.E.ExceptionInVPackage("Don't Generate X & Y Axis");
+    this.E.ExceptionInVPackage("Auto-Generate axis High at top");
+    this.E.ExceptionInVPackage("Auto-Generate axis Low at top");
     jPanel11.add((Component)this.E);
     this.E.addActionListener(new gD(this));
     this.D = new JButton("Import From Loaded Tune");
@@ -399,42 +399,42 @@ public class go extends JPanel implements a {
     jPanel12.setLayout(new BorderLayout());
     jPanel12.add("Center", jPanel1);
     jPanel2 = new JPanel();
-    jPanel2.setPreferredSize(eJ.a(16, 20));
-    jPanel2.setMinimumSize(eJ.a(16, 20));
+    jPanel2.setPreferredSize(eJ.ExceptionInVPackage(16, 20));
+    jPanel2.setMinimumSize(eJ.ExceptionInVPackage(16, 20));
     jPanel12.add("East", jPanel2);
     JScrollPane jScrollPane = new JScrollPane(jPanel12);
     jScrollPane.setHorizontalScrollBarPolicy(31);
     add("West", jScrollPane);
-    a(true);
-    b().c(1);
+    ExceptionInVPackage(true);
+    ClassTypeInHPackage().c(1);
     c c = new c();
     c.f(0.0D);
     c.f();
-    c.d(Double.MAX_VALUE);
-    c.a(0.0D);
-    c.g(Double.MAX_VALUE);
+    c.KComponentDelta(Double.MAX_VALUE);
+    c.ExceptionInVPackage(0.0D);
+    c.ActionListenerInGPackage(Double.MAX_VALUE);
     c.c(0.0D);
-    b().a(c);
+    ClassTypeInHPackage().ExceptionInVPackage(c);
   }
   
   private void h() {
-    if (this.l.p() > 2) {
-      this.l.c(1);
+    if (this.BxInterfaceLima.p() > 2) {
+      this.BxInterfaceLima.c(1);
     } else {
-      this.l.c(this.ac);
+      this.BxInterfaceLima.c(this.ac);
     } 
     o();
   }
   
-  private double i() {
+  private double IOProperties() {
     return this.q.getValue() / 100.0D;
   }
   
-  public double a() {
+  public double ExceptionInVPackage() {
     return Math.pow(this.r.getValue() / 20.0D, 2.0D);
   }
   
-  private void j() {
+  private void BxInterfaceJuliet() {
     double d1 = Double.NaN;
     double d2 = Double.NaN;
     try {
@@ -443,42 +443,42 @@ public class go extends JPanel implements a {
     try {
       d2 = Double.parseDouble(this.L.getText());
     } catch (NumberFormatException numberFormatException) {}
-    this.l.h().h(d1);
-    this.l.h().g(d2);
-    b().C();
-    a(hx.a().p());
-    this.W.a();
+    this.BxInterfaceLima.h().h(d1);
+    this.BxInterfaceLima.h().ActionListenerInGPackage(d2);
+    ClassTypeInHPackage().C();
+    ExceptionInVPackage(hx.ExceptionInVPackage().p());
+    this.W.ExceptionInVPackage();
   }
   
-  public gX b() {
-    return (gX)this.l.g();
+  public gX ClassTypeInHPackage() {
+    return (gX)this.BxInterfaceLima.ActionListenerInGPackage();
   }
   
   private void k() {
-    if (!this.E.getSelectedItem().equals("Don't Generate X & Y Axis") && b().c() != null && b().getRowCount() > 0 && b().getColumnCount() > 0) {
-      j j1 = b().c().a((String)this.b.getSelectedItem());
-      j j2 = b().c().a((String)this.c.getSelectedItem());
+    if (!this.E.getSelectedItem().equals("Don't Generate X & Y Axis") && ClassTypeInHPackage().c() != null && ClassTypeInHPackage().getRowCount() > 0 && ClassTypeInHPackage().getColumnCount() > 0) {
+      BxInterfaceJuliet j1 = ClassTypeInHPackage().c().ExceptionInVPackage((String)this.ClassTypeInHPackage.getSelectedItem());
+      BxInterfaceJuliet j2 = ClassTypeInHPackage().c().ExceptionInVPackage((String)this.c.getSelectedItem());
       if (j1 != null)
-        b().a(j1.e(), j1.f()); 
+        ClassTypeInHPackage().ExceptionInVPackage(j1.e(), j1.f()); 
       if (j2 != null)
         if (this.E.getSelectedItem().equals("Auto-Generate axis High at top")) {
-          b().b(j2.e(), j2.f());
+          ClassTypeInHPackage().ClassTypeInHPackage(j2.e(), j2.f());
         } else {
-          b().b(j2.f(), j2.e());
+          ClassTypeInHPackage().ClassTypeInHPackage(j2.f(), j2.e());
         }  
       try {
-        this.l.k();
+        this.BxInterfaceLima.k();
       } catch (Exception exception) {}
     } 
   }
   
-  public void b(int paramInt) {
-    if (paramInt == BinTableView.g || paramInt == BinTableView.f || paramInt == BinTableView.e) {
-      this.l.h().f(paramInt);
-      this.W.a();
-      b(T, paramInt + "");
-      if (this.i.getSelectedIndex() != paramInt)
-        this.i.setSelectedIndex(paramInt); 
+  public void ClassTypeInHPackage(int paramInt) {
+    if (paramInt == BinTableView.ActionListenerInGPackage || paramInt == BinTableView.f || paramInt == BinTableView.e) {
+      this.BxInterfaceLima.h().f(paramInt);
+      this.W.ExceptionInVPackage();
+      ClassTypeInHPackage(T, paramInt + "");
+      if (this.IOProperties.getSelectedIndex() != paramInt)
+        this.IOProperties.setSelectedIndex(paramInt); 
     } 
     this.K.setEnabled((paramInt == BinTableView.f));
     this.L.setEnabled((paramInt == BinTableView.f));
@@ -489,24 +489,24 @@ public class go extends JPanel implements a {
   public void c(int paramInt) {
     D.c("##### display mode: " + paramInt);
     if (paramInt != 1 && paramInt != 3 && paramInt != 2) {
-      D.b("Invalid mode for histogram display: " + paramInt);
+      D.ClassTypeInHPackage("Invalid mode for histogram display: " + paramInt);
       paramInt = 1;
     } 
-    if (paramInt != this.l.g().E() || this.l.g().E() != this.j.getSelectedIndex() + 1) {
-      this.l.g().c(paramInt);
-      b(U, paramInt + "");
-      if (this.j.getSelectedIndex() + 1 != paramInt)
-        this.j.setSelectedIndex(paramInt - 1); 
-      this.W.a();
+    if (paramInt != this.BxInterfaceLima.ActionListenerInGPackage().E() || this.BxInterfaceLima.ActionListenerInGPackage().E() != this.BxInterfaceJuliet.getSelectedIndex() + 1) {
+      this.BxInterfaceLima.ActionListenerInGPackage().c(paramInt);
+      ClassTypeInHPackage(ExceptionInAxPackage, paramInt + "");
+      if (this.BxInterfaceJuliet.getSelectedIndex() + 1 != paramInt)
+        this.BxInterfaceJuliet.setSelectedIndex(paramInt - 1); 
+      this.W.ExceptionInVPackage();
     } 
   }
   
-  private void l() {
+  private void BxInterfaceLima() {
     JPopupMenu jPopupMenu = new JPopupMenu();
     jPopupMenu.add(an).addActionListener(new gG(this));
     JMenu jMenu = new JMenu("Delete Saved View");
     gH gH = new gH(this);
-    List list = hC.a();
+    List list = hC.ExceptionInVPackage();
     for (String str : list) {
       if (!str.equals(P))
         jMenu.add(str).addActionListener(gH); 
@@ -524,165 +524,165 @@ public class go extends JPanel implements a {
   
   private void m() {
     try {
-      hC.a(c());
-    } catch (a a1) {
+      hC.ExceptionInVPackage(c());
+    } catch (ExceptionInVPackage a1) {
       Logger.getLogger(go.class.getName()).log(Level.SEVERE, "Ouch", (Throwable)a1);
     } 
   }
   
   private void n() {
     String str = "Histogram View Name";
-    i.c("userParameter_" + str, this.m.getText());
-    g g = new g(k.a(this), "{Histogram View Name}", false, "       Save current Histogram View As", true);
-    if (g.a) {
-      String str1 = g.a();
+    IOProperties.c("userParameter_" + str, this.m.getText());
+    ActionListenerInGPackage ActionListenerInGPackage = new ActionListenerInGPackage(k.ExceptionInVPackage(this), "{Histogram View Name}", false, "       Save current Histogram View As", true);
+    if (ActionListenerInGPackage.ExceptionInVPackage) {
+      String str1 = ActionListenerInGPackage.ExceptionInVPackage();
       hD hD = c();
       hD.e(str1);
       try {
-        hC.a(hD);
-      } catch (a a1) {
+        hC.ExceptionInVPackage(hD);
+      } catch (ExceptionInVPackage a1) {
         a1.printStackTrace();
-        bV.d(a1.getLocalizedMessage(), this);
+        bV.KComponentDelta(a1.getLocalizedMessage(), this);
       } 
     } 
   }
   
-  private void a(String paramString) {
-    if (bV.a("Are you sure you want to delete the view: " + paramString, this, true))
-      hC.b(paramString); 
+  private void ExceptionInVPackage(String paramString) {
+    if (bV.ExceptionInVPackage("Are you sure you want to delete the view: " + paramString, this, true))
+      hC.ClassTypeInHPackage(paramString); 
   }
   
-  private void b(String paramString) {
+  private void ClassTypeInHPackage(String paramString) {
     try {
-      hD hD = hC.a(paramString);
+      hD hD = hC.ExceptionInVPackage(paramString);
       if (hD != null)
-        a(hD); 
-    } catch (a a1) {
+        ExceptionInVPackage(hD); 
+    } catch (ExceptionInVPackage a1) {
       a1.printStackTrace();
-      bV.d(a1.getLocalizedMessage(), this);
+      bV.KComponentDelta(a1.getLocalizedMessage(), this);
     } 
   }
   
   private void o() {
-    if (this.b.getSelectedItem() == null || this.c.getSelectedItem() == null || this.d.getSelectedItem() == null || b().a() == null || b().a()[0] == null)
+    if (this.ClassTypeInHPackage.getSelectedItem() == null || this.c.getSelectedItem() == null || this.KComponentDelta.getSelectedItem() == null || ClassTypeInHPackage().ExceptionInVPackage() == null || ClassTypeInHPackage().ExceptionInVPackage()[0] == null)
       return; 
-    n n = hx.a().r();
-    j j1 = n.a(this.b.getSelectedItem().toString());
-    j j2 = n.a(this.d.getSelectedItem().toString());
+    n n = hx.ExceptionInVPackage().r();
+    BxInterfaceJuliet j1 = n.ExceptionInVPackage(this.ClassTypeInHPackage.getSelectedItem().toString());
+    BxInterfaceJuliet j2 = n.ExceptionInVPackage(this.KComponentDelta.getSelectedItem().toString());
     if (j1 != null && j2 != null) {
       this.ad = false;
-      this.al.a();
+      this.al.ExceptionInVPackage();
     } else {
       c c = new c();
       c.f(0.0D);
       c.f();
-      c.d(Double.MAX_VALUE);
-      c.a(i());
-      c.b(a());
-      c.g(Double.MAX_VALUE);
+      c.KComponentDelta(Double.MAX_VALUE);
+      c.ExceptionInVPackage(IOProperties());
+      c.ClassTypeInHPackage(ExceptionInVPackage());
+      c.ActionListenerInGPackage(Double.MAX_VALUE);
       c.c(0.0D);
-      b().a(c);
-      this.l.h().l();
+      ClassTypeInHPackage().ExceptionInVPackage(c);
+      this.BxInterfaceLima.h().BxInterfaceLima();
     } 
   }
   
   private synchronized void p() {
-    if (b.a().a("tableGenerator")) {
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("tableGenerator")) {
       this.ad = true;
-      long l = System.currentTimeMillis();
+      long BxInterfaceLima = System.currentTimeMillis();
       k();
       c c = new c();
       c.f(0.0D);
       c.f();
-      c.d(Double.MAX_VALUE);
-      c.a(i());
-      c.b(a());
-      c.g(Double.MAX_VALUE);
+      c.KComponentDelta(Double.MAX_VALUE);
+      c.ExceptionInVPackage(IOProperties());
+      c.ClassTypeInHPackage(ExceptionInVPackage());
+      c.ActionListenerInGPackage(Double.MAX_VALUE);
       c.c(0.0D);
-      b().a(c);
-      if (this.b.getSelectedItem() == null || this.c.getSelectedItem() == null || this.d.getSelectedItem() == null || b().a() == null || b().a()[0] == null)
+      ClassTypeInHPackage().ExceptionInVPackage(c);
+      if (this.ClassTypeInHPackage.getSelectedItem() == null || this.c.getSelectedItem() == null || this.KComponentDelta.getSelectedItem() == null || ClassTypeInHPackage().ExceptionInVPackage() == null || ClassTypeInHPackage().ExceptionInVPackage()[0] == null)
         return; 
-      n n = hx.a().r();
-      j j1 = n.a(this.b.getSelectedItem().toString());
-      j j2 = n.a(this.c.getSelectedItem().toString());
-      j j3 = n.a(this.d.getSelectedItem().toString());
-      j j4 = null;
+      n n = hx.ExceptionInVPackage().r();
+      BxInterfaceJuliet j1 = n.ExceptionInVPackage(this.ClassTypeInHPackage.getSelectedItem().toString());
+      BxInterfaceJuliet j2 = n.ExceptionInVPackage(this.c.getSelectedItem().toString());
+      BxInterfaceJuliet j3 = n.ExceptionInVPackage(this.KComponentDelta.getSelectedItem().toString());
+      BxInterfaceJuliet j4 = null;
       if (this.e.getSelectedItem() != null)
-        j4 = n.a(this.e.getSelectedItem().toString()); 
-      Collection collection = this.t.a();
-      byte b = 0;
+        j4 = n.ExceptionInVPackage(this.e.getSelectedItem().toString()); 
+      Collection collection = this.t.ExceptionInVPackage();
+      byte ClassTypeInHPackage = 0;
       if (j1 == null || j3 == null)
         return; 
-      for (int i = this.ah; i < n.d() && i < this.ag && this.ad; i++) {
-        if (!a(n, i)) {
-          double d;
-          float f1 = j1.d(i);
-          float f2 = (j2 != null) ? j2.d(i) : Float.NaN;
+      for (int IOProperties = this.ah; IOProperties < n.KComponentDelta() && IOProperties < this.ag && this.ad; IOProperties++) {
+        if (!ExceptionInVPackage(n, IOProperties)) {
+          double KComponentDelta;
+          float f1 = j1.KComponentDelta(IOProperties);
+          float f2 = (j2 != null) ? j2.KComponentDelta(IOProperties) : Float.NaN;
           if (j4 == null) {
-            d = j3.d(i);
+            KComponentDelta = j3.KComponentDelta(IOProperties);
           } else {
-            d = (j3.d(i) - j4.d(i));
+            KComponentDelta = (j3.KComponentDelta(IOProperties) - j4.KComponentDelta(IOProperties));
           } 
-          if (!Double.isNaN(d)) {
-            double d1 = fh.b(b().b(), f1);
-            double d2 = b().H() ? ((b().getRowCount() - 1) - fh.a(b().a(), f2)) : ((b().getRowCount() - 1) - fh.b(b().a(), f2));
-            d1 = (b().getColumnCount() == 1) ? 0.0D : ((d1 < b().getColumnCount() - 1.000001D) ? (d1 + 1.0E-6D) : (d1 - 1.0E-6D));
-            d2 = (b().getRowCount() == 1) ? 0.0D : ((d2 < b().getRowCount() - 1.000001D) ? (d2 + 1.0E-6D) : (d2 - 1.0E-6D));
+          if (!Double.isNaN(KComponentDelta)) {
+            double d1 = fh.ClassTypeInHPackage(ClassTypeInHPackage().ClassTypeInHPackage(), f1);
+            double d2 = ClassTypeInHPackage().H() ? ((ClassTypeInHPackage().getRowCount() - 1) - fh.ExceptionInVPackage(ClassTypeInHPackage().ExceptionInVPackage(), f2)) : ((ClassTypeInHPackage().getRowCount() - 1) - fh.ClassTypeInHPackage(ClassTypeInHPackage().ExceptionInVPackage(), f2));
+            d1 = (ClassTypeInHPackage().getColumnCount() == 1) ? 0.0D : ((d1 < ClassTypeInHPackage().getColumnCount() - 1.000001D) ? (d1 + 1.0E-6D) : (d1 - 1.0E-6D));
+            d2 = (ClassTypeInHPackage().getRowCount() == 1) ? 0.0D : ((d2 < ClassTypeInHPackage().getRowCount() - 1.000001D) ? (d2 + 1.0E-6D) : (d2 - 1.0E-6D));
             double d3 = Math.ceil(d1) - d1;
-            double d4 = (b().getRowCount() > 1) ? (Math.ceil(d2) - d2) : 1.0D;
+            double d4 = (ClassTypeInHPackage().getRowCount() > 1) ? (Math.ceil(d2) - d2) : 1.0D;
             double d5 = d3 * d4;
-            b().D()[(int)Math.floor(d2)][(int)Math.floor(d1)].a(Double.valueOf(d), d5);
+            ClassTypeInHPackage().D()[(int)Math.floor(d2)][(int)Math.floor(d1)].ExceptionInVPackage(Double.valueOf(KComponentDelta), d5);
             d3 = d1 - Math.floor(d1);
-            d4 = (b().getRowCount() > 1) ? (Math.ceil(d2) - d2) : 1.0D;
+            d4 = (ClassTypeInHPackage().getRowCount() > 1) ? (Math.ceil(d2) - d2) : 1.0D;
             d5 = d3 * d4;
-            b().D()[(int)Math.floor(d2)][(int)Math.ceil(d1)].a(Double.valueOf(d), d5);
-            if (b().getColumnCount() > 1) {
+            ClassTypeInHPackage().D()[(int)Math.floor(d2)][(int)Math.ceil(d1)].ExceptionInVPackage(Double.valueOf(KComponentDelta), d5);
+            if (ClassTypeInHPackage().getColumnCount() > 1) {
               d3 = Math.ceil(d1) - d1;
               d4 = d2 - Math.floor(d2);
               d5 = d3 * d4;
-              b().D()[(int)Math.ceil(d2)][(int)Math.floor(d1)].a(Double.valueOf(d), d5);
+              ClassTypeInHPackage().D()[(int)Math.ceil(d2)][(int)Math.floor(d1)].ExceptionInVPackage(Double.valueOf(KComponentDelta), d5);
             } 
-            if (b().getRowCount() > 1 && b().getColumnCount() > 1) {
+            if (ClassTypeInHPackage().getRowCount() > 1 && ClassTypeInHPackage().getColumnCount() > 1) {
               d3 = Math.abs(d1 - Math.floor(d1));
               d4 = Math.abs(d2 - Math.floor(d2));
               d5 = d3 * d4;
-              b().D()[(int)Math.ceil(d2)][(int)Math.ceil(d1)].a(Double.valueOf(d), d5);
+              ClassTypeInHPackage().D()[(int)Math.ceil(d2)][(int)Math.ceil(d1)].ExceptionInVPackage(Double.valueOf(KComponentDelta), d5);
             } 
           } 
         } else {
-          b++;
+          ClassTypeInHPackage++;
         } 
       } 
-      if (b().getRowCount() == 1) {
-        if (!fp.a(this.aa.getComponents(), this.ab)) {
+      if (ClassTypeInHPackage().getRowCount() == 1) {
+        if (!fp.ExceptionInVPackage(this.aa.getComponents(), this.ab)) {
           this.aa.removeAll();
-          this.aa.add("South", (Component)this.l);
+          this.aa.add("South", (Component)this.BxInterfaceLima);
           this.aa.add("Center", this.ab);
         } 
         this.ab.setVisible(true);
-        this.ab.b();
-      } else if (fp.a(this.aa.getComponents(), this.ab)) {
+        this.ab.ClassTypeInHPackage();
+      } else if (fp.ExceptionInVPackage(this.aa.getComponents(), this.ab)) {
         this.aa.removeAll();
-        this.aa.add("Center", (Component)this.l);
+        this.aa.add("Center", (Component)this.BxInterfaceLima);
       } 
-      this.aa.setPreferredSize(this.l.getPreferredSize());
-      this.l.setVisible(true);
-      this.Y.setVisible((b().getRowCount() > 24 || b().getColumnCount() > 24));
-      this.X.setVisible((b().getRowCount() == 1));
-      if (b().d() != null && b().d().n() != null) {
-        this.ab.c(b().d().n());
+      this.aa.setPreferredSize(this.BxInterfaceLima.getPreferredSize());
+      this.BxInterfaceLima.setVisible(true);
+      this.Y.setVisible((ClassTypeInHPackage().getRowCount() > 24 || ClassTypeInHPackage().getColumnCount() > 24));
+      this.X.setVisible((ClassTypeInHPackage().getRowCount() == 1));
+      if (ClassTypeInHPackage().KComponentDelta() != null && ClassTypeInHPackage().KComponentDelta().n() != null) {
+        this.ab.c(ClassTypeInHPackage().KComponentDelta().n());
       } else {
         this.ab.c("");
       } 
       this.ab.c();
-      for (String str1 : b().b())
-        this.ab.b(str1); 
+      for (String str1 : ClassTypeInHPackage().ClassTypeInHPackage())
+        this.ab.ClassTypeInHPackage(str1); 
       try {
-        hC.a(c());
-      } catch (a a1) {
+        hC.ExceptionInVPackage(c());
+      } catch (ExceptionInVPackage a1) {
         a1.printStackTrace();
       } 
-      String str = b + "";
+      String str = ClassTypeInHPackage + "";
       gJ gJ = new gJ(this, n, str);
       SwingUtilities.invokeLater(gJ);
     } 
@@ -691,79 +691,79 @@ public class go extends JPanel implements a {
   public hD c() {
     hD hD = new hD();
     hD.e(P);
-    hD.b(b().getColumnCount());
-    hD.a(b().getRowCount());
+    hD.ClassTypeInHPackage(ClassTypeInHPackage().getColumnCount());
+    hD.ExceptionInVPackage(ClassTypeInHPackage().getRowCount());
     hD.c(this.f.getSelectedIndex());
-    hD.d(this.g.getSelectedIndex());
+    hD.KComponentDelta(this.ActionListenerInGPackage.getSelectedIndex());
     hD.e(this.h.getSelectedIndex());
-    if (this.b.getSelectedItem() != null) {
-      hD.a(g.a().d(this.b.getSelectedItem().toString()));
+    if (this.ClassTypeInHPackage.getSelectedItem() != null) {
+      hD.ExceptionInVPackage(ActionListenerInGPackage.ExceptionInVPackage().KComponentDelta(this.ClassTypeInHPackage.getSelectedItem().toString()));
     } else {
-      hD.a("");
+      hD.ExceptionInVPackage("");
     } 
     if (this.c.getSelectedItem() != null) {
-      hD.b(g.a().d(this.c.getSelectedItem().toString()));
+      hD.ClassTypeInHPackage(ActionListenerInGPackage.ExceptionInVPackage().KComponentDelta(this.c.getSelectedItem().toString()));
     } else {
-      hD.b("");
+      hD.ClassTypeInHPackage("");
     } 
-    if (this.d.getSelectedItem() != null) {
-      hD.c(g.a().d(this.d.getSelectedItem().toString()));
+    if (this.KComponentDelta.getSelectedItem() != null) {
+      hD.c(ActionListenerInGPackage.ExceptionInVPackage().KComponentDelta(this.KComponentDelta.getSelectedItem().toString()));
     } else {
       hD.c("");
     } 
     if (this.e.getSelectedItem() != null) {
-      hD.d(g.a().d(this.e.getSelectedItem().toString()));
+      hD.KComponentDelta(ActionListenerInGPackage.ExceptionInVPackage().KComponentDelta(this.e.getSelectedItem().toString()));
     } else {
-      hD.d("");
+      hD.KComponentDelta("");
     } 
-    hD.f(this.ab.a());
-    hD.b(b().a());
-    hD.a(b().b());
-    hD.f(this.i.getSelectedIndex());
-    hD.g(this.j.getSelectedIndex() + 1);
-    hD.g((String)this.E.getSelectedItem());
+    hD.f(this.ab.ExceptionInVPackage());
+    hD.ClassTypeInHPackage(ClassTypeInHPackage().ExceptionInVPackage());
+    hD.ExceptionInVPackage(ClassTypeInHPackage().ClassTypeInHPackage());
+    hD.f(this.IOProperties.getSelectedIndex());
+    hD.ActionListenerInGPackage(this.BxInterfaceJuliet.getSelectedIndex() + 1);
+    hD.ActionListenerInGPackage((String)this.E.getSelectedItem());
     hD.h(this.q.getValue());
-    hD.i(this.r.getValue());
+    hD.IOProperties(this.r.getValue());
     return hD;
   }
   
-  public void a(hD paramhD) {
-    if (b().getRowCount() != paramhD.a() || b().getColumnCount() != paramhD.b())
-      b().a(paramhD.a(), paramhD.b()); 
-    b().e(paramhD.g());
-    b().c(paramhD.f());
-    this.l.h().b(paramhD.j());
-    this.l.b(paramhD.k());
-    this.l.h().a(paramhD.l());
-    this.f.setSelectedItem(Integer.valueOf(paramhD.j()));
-    this.g.setSelectedItem(Integer.valueOf(paramhD.k()));
-    this.h.setSelectedItem(Integer.valueOf(paramhD.l()));
-    this.b.setSelectedItem(g.a().a(paramhD.c()));
-    this.c.setSelectedItem(g.a().a(paramhD.d()));
-    this.d.setSelectedItem(g.a().a(paramhD.e()));
-    this.e.setSelectedItem(g.a().a(paramhD.h()));
-    this.H.setText("" + paramhD.a());
-    this.I.setText("" + paramhD.b());
-    this.ab.a(paramhD.m());
-    b(paramhD.n());
-    this.j.setSelectedIndex(paramhD.o() - 1);
+  public void ExceptionInVPackage(hD paramhD) {
+    if (ClassTypeInHPackage().getRowCount() != paramhD.ExceptionInVPackage() || ClassTypeInHPackage().getColumnCount() != paramhD.ClassTypeInHPackage())
+      ClassTypeInHPackage().ExceptionInVPackage(paramhD.ExceptionInVPackage(), paramhD.ClassTypeInHPackage()); 
+    ClassTypeInHPackage().e(paramhD.ActionListenerInGPackage());
+    ClassTypeInHPackage().c(paramhD.f());
+    this.BxInterfaceLima.h().ClassTypeInHPackage(paramhD.BxInterfaceJuliet());
+    this.BxInterfaceLima.ClassTypeInHPackage(paramhD.k());
+    this.BxInterfaceLima.h().ExceptionInVPackage(paramhD.BxInterfaceLima());
+    this.f.setSelectedItem(Integer.valueOf(paramhD.BxInterfaceJuliet()));
+    this.ActionListenerInGPackage.setSelectedItem(Integer.valueOf(paramhD.k()));
+    this.h.setSelectedItem(Integer.valueOf(paramhD.BxInterfaceLima()));
+    this.ClassTypeInHPackage.setSelectedItem(ActionListenerInGPackage.ExceptionInVPackage().ExceptionInVPackage(paramhD.c()));
+    this.c.setSelectedItem(ActionListenerInGPackage.ExceptionInVPackage().ExceptionInVPackage(paramhD.KComponentDelta()));
+    this.KComponentDelta.setSelectedItem(ActionListenerInGPackage.ExceptionInVPackage().ExceptionInVPackage(paramhD.e()));
+    this.e.setSelectedItem(ActionListenerInGPackage.ExceptionInVPackage().ExceptionInVPackage(paramhD.h()));
+    this.H.setText("" + paramhD.ExceptionInVPackage());
+    this.I.setText("" + paramhD.ClassTypeInHPackage());
+    this.ab.ExceptionInVPackage(paramhD.m());
+    ClassTypeInHPackage(paramhD.n());
+    this.BxInterfaceJuliet.setSelectedIndex(paramhD.o() - 1);
     e(paramhD.p());
     this.q.setValue(paramhD.q());
     this.r.setValue(paramhD.r());
-    this.l.k();
+    this.BxInterfaceLima.k();
     o();
   }
   
-  private boolean a(n paramn, int paramInt) {
-    for (j j : this.t.a()) {
+  private boolean ExceptionInVPackage(n paramn, int paramInt) {
+    for (BxInterfaceJuliet BxInterfaceJuliet : this.t.ExceptionInVPackage()) {
       try {
-        String str = c(j.c());
-        a a1 = d.a().a(str);
-        if (a1.a(paramn, paramInt) != 0.0D)
+        String str = c(BxInterfaceJuliet.c());
+        ExceptionInVPackage a1 = KComponentDelta.ExceptionInVPackage().ExceptionInVPackage(str);
+        if (a1.ExceptionInVPackage(paramn, paramInt) != 0.0D)
           return true; 
-      } catch (U u) {
-        this.t.a(j.a(), false);
-        D.d("Filter: " + j.a() + " caused errors with this log, disabling.");
+      } catch (ExceptionInAxPackage u) {
+        this.t.ExceptionInVPackage(BxInterfaceJuliet.ExceptionInVPackage(), false);
+        D.KComponentDelta("Filter: " + BxInterfaceJuliet.ExceptionInVPackage() + " caused errors with this log, disabling.");
         u.printStackTrace();
       } 
     } 
@@ -773,38 +773,38 @@ public class go extends JPanel implements a {
   private String c(String paramString) {
     String str = (String)this.w.get(paramString);
     if (str == null) {
-      str = g.a().c(paramString);
+      str = ActionListenerInGPackage.ExceptionInVPackage().c(paramString);
       this.w.put(paramString, str);
     } 
     return str;
   }
   
   private void q() {
-    int i = (int)Math.round(this.H.e());
-    int j = (int)Math.round(this.I.e());
-    if (i > 0 && j > 0 && (i != this.l.g().getRowCount() || j != this.l.g().getColumnCount())) {
+    int IOProperties = (int)Math.round(this.H.e());
+    int BxInterfaceJuliet = (int)Math.round(this.I.e());
+    if (IOProperties > 0 && BxInterfaceJuliet > 0 && (IOProperties != this.BxInterfaceLima.ActionListenerInGPackage().getRowCount() || BxInterfaceJuliet != this.BxInterfaceLima.ActionListenerInGPackage().getColumnCount())) {
       gX gX1 = new gX(this);
-      gX1.a = this.k.a;
-      gX1.b = this.k.b;
+      gX1.ExceptionInVPackage = this.k.ExceptionInVPackage;
+      gX1.ClassTypeInHPackage = this.k.ClassTypeInHPackage;
       gX1.c = this.k.c;
-      gX1.a(i, j);
-      fh.c(this.l.g(), gX1);
-      gX1.c(this.j.getSelectedIndex() + 1);
-      this.l.setVisible(false);
+      gX1.ExceptionInVPackage(IOProperties, BxInterfaceJuliet);
+      fh.c(this.BxInterfaceLima.ActionListenerInGPackage(), gX1);
+      gX1.c(this.BxInterfaceJuliet.getSelectedIndex() + 1);
+      this.BxInterfaceLima.setVisible(false);
       this.ab.setVisible(false);
-      this.l.a(gX1);
-      gX1.a(hx.a().r());
+      this.BxInterfaceLima.ExceptionInVPackage(gX1);
+      gX1.ExceptionInVPackage(hx.ExceptionInVPackage().r());
       this.k = gX1;
       o();
     } 
   }
   
   private void r() {
-    hE hE = (bq.a().e()).g;
+    hE hE = (bq.ExceptionInVPackage().e()).ActionListenerInGPackage;
     if (hE != null && hE.m() != null) {
       hW hW = hE.m();
       JPopupMenu jPopupMenu = new JPopupMenu();
-      String[] arrayOfString = new String[hW.d()];
+      String[] arrayOfString = new String[hW.KComponentDelta()];
       byte b1 = 0;
       Iterator<String> iterator = hW.c();
       while (iterator.hasNext()) {
@@ -812,24 +812,24 @@ public class go extends JPanel implements a {
         b1++;
       } 
       gK gK = new gK(this);
-      arrayOfString = k.b(arrayOfString);
+      arrayOfString = k.ClassTypeInHPackage(arrayOfString);
       for (byte b2 = 0; b2 < arrayOfString.length; b2++)
         jPopupMenu.add(arrayOfString[b2]).addActionListener(gK); 
       this.D.add(jPopupMenu);
       jPopupMenu.show(this.D, 0, this.D.getHeight());
     } else {
-      bV.d("No Tune Loaded.", this);
+      bV.KComponentDelta("No Tune Loaded.", this);
     } 
   }
   
-  private void d(String paramString) {
+  private void KComponentDelta(String paramString) {
     D.c("Import: " + paramString);
-    hE hE = (bq.a().e()).g;
+    hE hE = (bq.ExceptionInVPackage().e()).ActionListenerInGPackage;
     hW hW = hE.m();
-    hY hY = hW.b(paramString);
-    s s = this.l.g();
+    hY hY = hW.ClassTypeInHPackage(paramString);
+    s s = this.BxInterfaceLima.ActionListenerInGPackage();
     if (s.getColumnCount() != hY.getColumnCount() || s.getRowCount() != hY.getRowCount())
-      s.a(hY.getRowCount(), hY.getColumnCount()); 
+      s.ExceptionInVPackage(hY.getRowCount(), hY.getColumnCount()); 
     fh.c(hY, s);
     this.I.setText(s.getColumnCount() + "");
     this.H.setText(s.getRowCount() + "");
@@ -839,10 +839,10 @@ public class go extends JPanel implements a {
   
   private void e(String paramString) {
     this.E.setSelectedItem(paramString);
-    b("autoGenerateXY", "" + paramString);
+    ClassTypeInHPackage("autoGenerateXY", "" + paramString);
   }
   
-  private JPanel a(String paramString, Component paramComponent) {
+  private JPanel ExceptionInVPackage(String paramString, Component paramComponent) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
     JLabel jLabel = new JLabel(paramString);
@@ -852,7 +852,7 @@ public class go extends JPanel implements a {
     return jPanel;
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     if (this.t == null) {
       this.u = new JPanel();
       this.u.setLayout(new BorderLayout());
@@ -866,64 +866,64 @@ public class go extends JPanel implements a {
       this.B.addActionListener(new gM(this));
       this.B.setPreferredSize(new Dimension(18, 18));
       jPanel.add("West", this.B);
-      this.t = new a(null);
-      this.t.a(new gN(this));
+      this.t = new ExceptionInVPackage(null);
+      this.t.ExceptionInVPackage(new gN(this));
       this.u.add("North", jPanel);
-      M.a().a((l)this.t);
+      M.ExceptionInVPackage().ExceptionInVPackage((BxInterfaceLima)this.t);
       this.u.add("Center", (Component)this.t);
       add("East", this.u);
     } 
     if (paramBoolean);
   }
   
-  public void a(h paramh) {
+  public void ExceptionInVPackage(h paramh) {
     this.y.add(paramh);
   }
   
   private void s() {
-    String str = (this.b.getSelectedItem() == null) ? "" : this.b.getSelectedItem().toString();
+    String str = (this.ClassTypeInHPackage.getSelectedItem() == null) ? "" : this.ClassTypeInHPackage.getSelectedItem().toString();
     Iterator<h> iterator = this.y.iterator();
     while (iterator.hasNext())
-      ((h)iterator.next()).a(str); 
+      ((h)iterator.next()).ExceptionInVPackage(str); 
   }
   
   private void t() {
     String str = (this.c.getSelectedItem() == null) ? "" : this.c.getSelectedItem().toString();
     Iterator<h> iterator = this.y.iterator();
     while (iterator.hasNext())
-      ((h)iterator.next()).b(str); 
+      ((h)iterator.next()).ClassTypeInHPackage(str); 
   }
   
   private void u() {
-    String str = (this.d.getSelectedItem() == null) ? "" : this.d.getSelectedItem().toString();
+    String str = (this.KComponentDelta.getSelectedItem() == null) ? "" : this.KComponentDelta.getSelectedItem().toString();
     Iterator<h> iterator = this.y.iterator();
     while (iterator.hasNext())
       ((h)iterator.next()).c(str); 
   }
   
-  public void a(n paramn) {
-    b().a(paramn);
+  public void ExceptionInVPackage(n paramn) {
+    ClassTypeInHPackage().ExceptionInVPackage(paramn);
     this.w.clear();
-    b(paramn);
-    D.c("Dataset size: " + paramn.d());
-    String str = (String)this.b.getSelectedItem();
-    b().a(str);
+    ClassTypeInHPackage(paramn);
+    D.c("Dataset size: " + paramn.KComponentDelta());
+    String str = (String)this.ClassTypeInHPackage.getSelectedItem();
+    ClassTypeInHPackage().ExceptionInVPackage(str);
     str = (String)this.c.getSelectedItem();
-    b().b(str);
-    str = (String)this.d.getSelectedItem();
-    b().c(str);
+    ClassTypeInHPackage().ClassTypeInHPackage(str);
+    str = (String)this.KComponentDelta.getSelectedItem();
+    ClassTypeInHPackage().c(str);
     try {
-      hD hD = hC.a(P);
+      hD hD = hC.ExceptionInVPackage(P);
       if (hD != null) {
         gO gO = new gO(this, hD);
         SwingUtilities.invokeLater(gO);
       } 
-    } catch (a a1) {
+    } catch (ExceptionInVPackage a1) {
       a1.printStackTrace();
     } 
     if (paramn != null) {
       this.f.setEnabled(true);
-      this.g.setEnabled(true);
+      this.ActionListenerInGPackage.setEnabled(true);
       this.h.setEnabled(true);
       this.H.setEnabled(true);
       this.I.setEnabled(true);
@@ -933,111 +933,111 @@ public class go extends JPanel implements a {
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
     Dimension dimension;
-    int i = (this.b.getPreferredSize()).width;
-    int j = (paramInt3 - 200) / 3;
-    if (i < j) {
-      dimension = new Dimension(i, 20);
+    int IOProperties = (this.ClassTypeInHPackage.getPreferredSize()).width;
+    int BxInterfaceJuliet = (paramInt3 - 200) / 3;
+    if (IOProperties < BxInterfaceJuliet) {
+      dimension = new Dimension(IOProperties, 20);
     } else {
-      dimension = new Dimension(j, 20);
+      dimension = new Dimension(BxInterfaceJuliet, 20);
     } 
-    this.b.setMinimumSize(dimension);
+    this.ClassTypeInHPackage.setMinimumSize(dimension);
     this.c.setMinimumSize(dimension);
-    this.d.setMinimumSize(dimension);
+    this.KComponentDelta.setMinimumSize(dimension);
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
   }
   
-  private void b(n paramn) {
+  private void ClassTypeInHPackage(n paramn) {
     this.am = true;
-    a(this.b, paramn, " ");
-    a(this.c, paramn, " ");
-    a(this.d, paramn, " ");
-    a(this.e, paramn, " ");
+    ExceptionInVPackage(this.ClassTypeInHPackage, paramn, " ");
+    ExceptionInVPackage(this.c, paramn, " ");
+    ExceptionInVPackage(this.KComponentDelta, paramn, " ");
+    ExceptionInVPackage(this.e, paramn, " ");
     this.am = false;
   }
   
-  private void a(e parame, n paramn, String paramString) {
+  private void ExceptionInVPackage(e parame, n paramn, String paramString) {
     if (paramn == null)
       return; 
     String str = (String)parame.getSelectedItem();
     boolean bool1 = false;
-    String[] arrayOfString1 = parame.b();
+    String[] arrayOfString1 = parame.ClassTypeInHPackage();
     String[] arrayOfString2 = new String[paramn.size()];
     boolean bool2 = (arrayOfString1.length == arrayOfString2.length + 1) ? true : false;
-    byte b;
-    for (b = 0; b < paramn.size(); b++) {
-      j j = (j)paramn.get(b);
-      arrayOfString2[b] = j.a();
-      if (bool2 && !arrayOfString2[b].equals(arrayOfString1[b + 1]))
+    byte ClassTypeInHPackage;
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < paramn.size(); ClassTypeInHPackage++) {
+      BxInterfaceJuliet BxInterfaceJuliet = (BxInterfaceJuliet)paramn.get(ClassTypeInHPackage);
+      arrayOfString2[ClassTypeInHPackage] = BxInterfaceJuliet.ExceptionInVPackage();
+      if (bool2 && !arrayOfString2[ClassTypeInHPackage].equals(arrayOfString1[ClassTypeInHPackage + 1]))
         bool2 = false; 
     } 
     if (!bool2) {
       parame.removeAllItems();
       if (parame.getItemCount() == 0)
-        parame.a(paramString); 
-      if (i.a(i.E, i.F))
-        arrayOfString2 = S.a(arrayOfString2); 
-      b = 1;
+        parame.ExceptionInVPackage(paramString); 
+      if (IOProperties.ExceptionInVPackage(IOProperties.E, IOProperties.F))
+        arrayOfString2 = S.ExceptionInVPackage(arrayOfString2); 
+      ClassTypeInHPackage = 1;
       for (byte b1 = 0; b1 < arrayOfString2.length; b1++) {
         if (!bool1 && arrayOfString2[b1].equals(str))
           bool1 = true; 
-        int i = b1 + b;
-        parame.a(arrayOfString2[b1]);
+        int IOProperties = b1 + ClassTypeInHPackage;
+        parame.ExceptionInVPackage(arrayOfString2[b1]);
       } 
     } 
     try {
       if (!bool1)
-        parame.b(str); 
+        parame.ClassTypeInHPackage(str); 
     } catch (Exception exception) {
-      parame.b(paramString);
+      parame.ClassTypeInHPackage(paramString);
     } 
   }
   
-  protected void d() {
-    if (this.b.getSelectedItem() != null && this.c.getSelectedItem() != null && this.d.getSelectedItem() != null && ((String)this.b.getSelectedItem()).length() > 0 && ((String)this.c.getSelectedItem()).length() > 0 && ((String)this.d.getSelectedItem()).length() > 0) {
-      String str = this.b.getSelectedItem() + " vs. " + this.c.getSelectedItem() + " vs. ";
+  protected void KComponentDelta() {
+    if (this.ClassTypeInHPackage.getSelectedItem() != null && this.c.getSelectedItem() != null && this.KComponentDelta.getSelectedItem() != null && ((String)this.ClassTypeInHPackage.getSelectedItem()).length() > 0 && ((String)this.c.getSelectedItem()).length() > 0 && ((String)this.KComponentDelta.getSelectedItem()).length() > 0) {
+      String str = this.ClassTypeInHPackage.getSelectedItem() + " vs. " + this.c.getSelectedItem() + " vs. ";
       if (this.e.getSelectedItem() != null && !this.e.getSelectedItem().toString().isEmpty()) {
-        str = str + "( " + this.d.getSelectedItem() + " - " + this.e.getSelectedItem() + " )";
+        str = str + "( " + this.KComponentDelta.getSelectedItem() + " - " + this.e.getSelectedItem() + " )";
       } else {
-        str = str + this.d.getSelectedItem();
+        str = str + this.KComponentDelta.getSelectedItem();
       } 
       this.m.setText(str);
-      this.n.setText(this.b.getSelectedItem().toString());
+      this.n.setText(this.ClassTypeInHPackage.getSelectedItem().toString());
       this.s.setText(this.c.getSelectedItem().toString());
-      this.l.g().e(this.b.getSelectedItem().toString());
-      this.l.g().d(this.c.getSelectedItem().toString());
+      this.BxInterfaceLima.ActionListenerInGPackage().e(this.ClassTypeInHPackage.getSelectedItem().toString());
+      this.BxInterfaceLima.ActionListenerInGPackage().KComponentDelta(this.c.getSelectedItem().toString());
     } 
   }
   
-  public void a(et paramet) {
+  public void ExceptionInVPackage(et paramet) {
     this.af = paramet;
     e();
   }
   
   public void e() {
     if (this.af != null) {
-      String str1 = a("autoGenerateXY", "Don't Generate X & Y Axis");
+      String str1 = ExceptionInVPackage("autoGenerateXY", "Don't Generate X & Y Axis");
       this.E.setSelectedItem(str1);
     } 
-    String str = a(T, "2");
-    b(Integer.parseInt(str));
-    str = a(U, "1");
+    String str = ExceptionInVPackage(T, "2");
+    ClassTypeInHPackage(Integer.parseInt(str));
+    str = ExceptionInVPackage(ExceptionInAxPackage, "1");
     c(Integer.parseInt(str));
   }
   
-  private String a(String paramString1, String paramString2) {
+  private String ExceptionInVPackage(String paramString1, String paramString2) {
     if (this.af != null) {
-      String str = this.af.a(paramString1);
+      String str = this.af.ExceptionInVPackage(paramString1);
       return (str != null) ? str : paramString2;
     } 
     return paramString2;
   }
   
-  private void b(String paramString1, String paramString2) {
+  private void ClassTypeInHPackage(String paramString1, String paramString2) {
     if (this.af != null)
-      this.af.a(paramString1, paramString2); 
+      this.af.ExceptionInVPackage(paramString1, paramString2); 
   }
   
-  public void d(int paramInt) {
+  public void KComponentDelta(int paramInt) {
     this.ag = paramInt;
     o();
   }
@@ -1051,11 +1051,11 @@ public class go extends JPanel implements a {
     return (String)this.e.getSelectedItem();
   }
   
-  public boolean g() {
-    return (b().a() != null && b().a()[0] != null && b().b() != null && b().b()[0] != null);
+  public boolean ActionListenerInGPackage() {
+    return (ClassTypeInHPackage().ExceptionInVPackage() != null && ClassTypeInHPackage().ExceptionInVPackage()[0] != null && ClassTypeInHPackage().ClassTypeInHPackage() != null && ClassTypeInHPackage().ClassTypeInHPackage()[0] != null);
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     gP gP = new gP(this, paramInt);
     SwingUtilities.invokeLater(gP);
   }

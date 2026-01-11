@@ -1,13 +1,13 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.eA;
 
 class fZ implements eA {
   fZ(dB paramdB) {}
   
-  public boolean a() {
-    return (a.A() != null && a.A().Q());
+  public boolean PropertiesExtension() {
+    return (PropertiesExtension.A() != null && PropertiesExtension.A().Q());
   }
 }
 

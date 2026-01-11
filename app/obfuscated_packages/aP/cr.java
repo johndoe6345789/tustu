@@ -1,6 +1,6 @@
 package aP;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -8,8 +8,8 @@ class cr implements ItemListener {
   cr(cc paramcc) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    i.c(i.K, "true");
-    i.c(i.L, "true");
+    IOProperties.c(IOProperties.K, "true");
+    IOProperties.c(IOProperties.L, "true");
     this.a.b.o();
   }
 }

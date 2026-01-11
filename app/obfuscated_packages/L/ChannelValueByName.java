@@ -1,8 +1,8 @@
 package L;
 
 import G.cZ;
-import I.k;
-import ax.S;
+import I.ThreadedInIPackage;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 
 class ChannelValueByName implements ab {
@@ -15,9 +15,9 @@ class ChannelValueByName implements ab {
     this.b = paramString;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     String str = this.a.a();
-    return k.a().b(str, this.b);
+    return ThreadedInIPackage.a().b(str, this.b);
   }
 }
 

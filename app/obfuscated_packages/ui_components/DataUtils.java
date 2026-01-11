@@ -1,7 +1,7 @@
 package ao;
 
-import g.k;
-import h.i;
+import g.IOJFileChooser;
+import h.IOProperties;
 import java.awt.Color;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
@@ -17,14 +17,14 @@ class ea implements ItemListener {
   public void itemStateChanged(ItemEvent paramItemEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
     if (jCheckBoxMenuItem.getName().equals("graphBackColor")) {
-      i.c("graphBackColor", jCheckBoxMenuItem.getText());
-      this.a.a(i.a("graphBackColor", Color.white));
+      IOProperties.c("graphBackColor", jCheckBoxMenuItem.getText());
+      this.a.a(IOProperties.a("graphBackColor", Color.white));
     } 
     if (jCheckBoxMenuItem.getName().startsWith("graphForeColor")) {
-      i.c(jCheckBoxMenuItem.getName(), jCheckBoxMenuItem.getText());
-      String str = k.a(jCheckBoxMenuItem.getName(), "graphForeColor", "");
-      int i = Integer.parseInt(str);
-      this.a.a(i.a(jCheckBoxMenuItem.getName(), Color.black), i);
+      IOProperties.c(jCheckBoxMenuItem.getName(), jCheckBoxMenuItem.getText());
+      String str = IOJFileChooser.a(jCheckBoxMenuItem.getName(), "graphForeColor", "");
+      int IOProperties = Integer.parseInt(str);
+      this.a.a(IOProperties.a(jCheckBoxMenuItem.getName(), Color.black), IOProperties);
       this.b.a.o();
     } 
   }

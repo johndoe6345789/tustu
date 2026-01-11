@@ -2,8 +2,8 @@ package L;
 
 import G.aI;
 import G.aM;
-import V.g;
-import ax.S;
+import V.ExceptionPrintstacktrace;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -27,7 +27,7 @@ public class ArrayLookup2DFunction extends ac {
     this.d = paramab3;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     c(paramS);
     try {
       double d1 = this.d.b(paramS);
@@ -35,16 +35,16 @@ public class ArrayLookup2DFunction extends ac {
       double d2 = b(arrayOfDouble1, d1);
       double[][] arrayOfDouble2 = this.e.i(this.a.h());
       return a(arrayOfDouble2, d2);
-    } catch (g g) {
-      throw new ax.U("Unable to evaluate tableLookup: " + g.getLocalizedMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      throw new ax.U("Unable to evaluate tableLookup: " + ExceptionPrintstacktrace.getLocalizedMessage());
     } 
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   
-  private void c(S paramS) {
+  private void c(CloneableImplInAxPackage paramS) {
     if (this.e == null) {
       this.e = l.a().a((int)this.b.b(paramS));
       if (this.e == null)

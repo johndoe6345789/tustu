@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import javax.swing.JOptionPane;
 
 class hP implements he {
@@ -8,9 +8,9 @@ class hP implements he {
   
   public void a(String paramString1, String paramString2) {
     if (paramString2 != null && !paramString2.equals("")) {
-      i.c(paramString1, paramString2);
+      IOProperties.c(paramString1, paramString2);
     } else {
-      i.d(paramString1);
+      IOProperties.d(paramString1);
     } 
     if (0 == JOptionPane.showConfirmDialog(this.a.k, "Must reload Tune Settings to take effect.\nReload now?", "Reload Tune Settings?", 0, 3)) {
       this.a.l();
@@ -19,7 +19,7 @@ class hP implements he {
   }
   
   public String a(String paramString) {
-    return i.e(paramString, "");
+    return IOProperties.e(paramString, "");
   }
 }
 

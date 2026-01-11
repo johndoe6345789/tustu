@@ -1,6 +1,6 @@
 package bH;
 
-import V.h;
+import V.VInterfaceHotel;
 import java.util.StringTokenizer;
 
 public class G {
@@ -399,7 +399,7 @@ public class G {
     //   757: iload #22
     //   759: iconst_m1
     //   760: if_icmpne -> 799
-    //   763: new V/h
+    //   763: new V/VInterfaceHotel
     //   766: dup
     //   767: new java/lang/StringBuilder
     //   770: dup
@@ -433,7 +433,7 @@ public class G {
     //   836: ifeq -> 844
     //   839: iload #21
     //   841: ifne -> 871
-    //   844: new V/h
+    //   844: new V/VInterfaceHotel
     //   847: dup
     //   848: new java/lang/StringBuilder
     //   851: dup
@@ -514,7 +514,7 @@ public class G {
     //   1002: astore #9
     //   1004: aload #9
     //   1006: invokevirtual printStackTrace : ()V
-    //   1009: new V/h
+    //   1009: new V/VInterfaceHotel
     //   1012: dup
     //   1013: new java/lang/StringBuilder
     //   1016: dup
@@ -625,7 +625,7 @@ public class G {
     //   1254: astore #11
     //   1256: aload #11
     //   1258: invokestatic b : (Ljava/lang/String;)V
-    //   1261: new V/h
+    //   1261: new V/VInterfaceHotel
     //   1264: dup
     //   1265: aload #11
     //   1267: invokespecial <init> : (Ljava/lang/String;)V
@@ -877,7 +877,7 @@ public class G {
     //   1103	1216	1219	java/lang/Exception
   }
   
-  public static boolean h(String paramString) {
+  public static boolean VInterfaceHotel(String paramString) {
     if (paramString.indexOf("true") != -1 || paramString.indexOf("false") != -1) {
       paramString = X.b(paramString, "true", "1");
       paramString = X.b(paramString, "false", "0");
@@ -899,7 +899,7 @@ public class G {
         if (paramString.indexOf(">=") != -1)
           return (d1 >= d2); 
       } catch (Exception exception) {
-        throw new h("Unable to resolve condition for expression: " + paramString);
+        throw new VInterfaceHotel("Unable to resolve condition for expression: " + paramString);
       } 
     } else {
       i = paramString.indexOf("&");
@@ -929,7 +929,7 @@ public class G {
           d = k(str);
           return bool ? ((d <= 0.0D)) : ((d > 0.0D));
         } catch (Exception exception) {
-          throw new h("Error evaluating condition:" + paramString + ", false returned");
+          throw new VInterfaceHotel("Error evaluating condition:" + paramString + ", false returned");
         } 
       } 
     } 
@@ -966,7 +966,7 @@ public class G {
       } 
       return false;
     } 
-    return h(paramString);
+    return VInterfaceHotel(paramString);
   }
   
   public static boolean j(String paramString) {
@@ -1038,7 +1038,7 @@ public class G {
       return Math.abs(d); 
     if (str.equals("sqrt"))
       return Math.sqrt(d); 
-    throw new h("Unsupported Math function " + str);
+    throw new VInterfaceHotel("Unsupported Math function " + str);
   }
   
   private static int a(String paramString, int paramInt) {

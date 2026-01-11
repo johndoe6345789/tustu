@@ -3,14 +3,14 @@ package com.efiAnalytics.xcp.master.responseProcessors;
 import G.F;
 import G.R;
 import G.T;
-import bQ.l;
+import bQ.IOHashMap;
 
 public class PageChangeHandler {
   public void a(F paramF) {
     R r = T.a().c(paramF.u());
-    if (r.C() instanceof l) {
-      l l = (l)r.C();
-      l.p(paramF.u());
+    if (r.C() instanceof IOHashMap) {
+      IOHashMap IOHashMap = (IOHashMap)r.C();
+      IOHashMap.p(paramF.u());
     } 
   }
 }

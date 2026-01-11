@@ -1,23 +1,23 @@
 package bt;
 
 import com.efiAnalytics.ui.et;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class Table2DPropertyStore implements et {
   Z(W paramW) {}
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.a();
-    a.b(this.a.i + "_" + paramString1, paramString2);
+  public void IOPropertiesUsingFile(String paramString1, String paramString2) {
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    IOPropertiesUsingFile.b(this.IOPropertiesUsingFile.i + "_" + paramString1, paramString2);
   }
   
-  public String a(String paramString) {
+  public String IOPropertiesUsingFile(String paramString) {
     return b(paramString, "");
   }
   
   public String b(String paramString1, String paramString2) {
-    a a = a.a();
-    return a.c(this.a.i + "_" + paramString1, paramString2);
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    return IOPropertiesUsingFile.c(this.IOPropertiesUsingFile.i + "_" + paramString1, paramString2);
   }
 }
 

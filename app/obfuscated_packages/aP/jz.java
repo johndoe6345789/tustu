@@ -1,23 +1,23 @@
 package aP;
 
-import aL.f;
-import r.a;
+import aL.AlInterfaceFoxtrot;
+import r.IOPropertiesUsingFile;
 
-public class jz implements f {
-  public void a(boolean paramBoolean) {
-    a.a().b(a.S, Boolean.toString(paramBoolean));
+public class jz implements AlInterfaceFoxtrot {
+  public void IOPropertiesUsingFile(boolean paramBoolean) {
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.S, Boolean.toString(paramBoolean));
   }
   
-  public boolean a() {
-    return a.a().c(a.S, a.T);
+  public boolean IOPropertiesUsingFile() {
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.S, IOPropertiesUsingFile.T);
   }
   
   public String b() {
-    return a.a().c(a.R, "");
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.R, "");
   }
   
-  public void a(String paramString) {
-    a.a().b(a.R, paramString);
+  public void IOPropertiesUsingFile(String paramString) {
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.R, paramString);
   }
 }
 

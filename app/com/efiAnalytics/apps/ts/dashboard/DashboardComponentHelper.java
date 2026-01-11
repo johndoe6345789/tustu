@@ -5,7 +5,7 @@ import G.T;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.KeyboardFocusManager;
-import r.i;
+import r.RInterfaceIndia;
 
 public class DashboardComponentHelper {
   public static Z a(String[] paramArrayOfString, Z paramZ) {
@@ -35,7 +35,7 @@ public class DashboardComponentHelper {
     T t = paramx.X();
     KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(t);
     paramx.setBackground(Color.DARK_GRAY);
-    boolean bool = i.a().a("d67nhtrbd4es8j");
+    boolean bool = RInterfaceIndia.a().a("d67nhtrbd4es8j");
     paramx.l(bool);
     return paramx;
   }

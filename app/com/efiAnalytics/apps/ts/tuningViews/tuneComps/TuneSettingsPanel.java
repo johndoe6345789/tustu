@@ -20,7 +20,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import s.g;
+import s.SComponentGolf;
 
 public class TuneSettingsPanel extends TuneViewComponent implements bc {
   JPanel c = new JPanel();
@@ -31,7 +31,7 @@ public class TuneSettingsPanel extends TuneViewComponent implements bc {
   
   JScrollPane f = new JScrollPane();
   
-  private String g = null;
+  private String SComponentGolf = null;
   
   private boolean h = false;
   
@@ -45,7 +45,7 @@ public class TuneSettingsPanel extends TuneViewComponent implements bc {
     JButton jButton = new JButton("#");
     jButton.setPreferredSize(new Dimension(eJ.a(15), eJ.a(15)));
     addEditComponent(jButton);
-    jButton.setToolTipText(g.b("Click to select Settings"));
+    jButton.setToolTipText(SComponentGolf.b("Click to select Settings"));
     jButton.addActionListener(new j(this));
     jButton.setFocusable(false);
     this.c.add("East", jButton);
@@ -116,11 +116,11 @@ public class TuneSettingsPanel extends TuneViewComponent implements bc {
   }
   
   public String getSettingPanelName() {
-    return this.g;
+    return this.SComponentGolf;
   }
   
   public void setSettingPanelName(String paramString) {
-    this.g = paramString;
+    this.SComponentGolf = paramString;
   }
   
   public boolean isDirty() {

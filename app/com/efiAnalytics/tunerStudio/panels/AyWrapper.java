@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import G.aY;
-import s.g;
+import s.SComponentGolf;
 
 class AyWrapper {
   private aY b;
@@ -15,7 +15,7 @@ class AyWrapper {
   }
   
   public String toString() {
-    return g.b(this.b.toString());
+    return SComponentGolf.b(this.b.toString());
   }
 }
 

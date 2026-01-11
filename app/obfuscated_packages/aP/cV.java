@@ -1,7 +1,7 @@
 package aP;
 
 import ao.hx;
-import h.i;
+import h.IOProperties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -14,7 +14,7 @@ class cV extends Thread {
     } catch (InterruptedException interruptedException) {
       Logger.getLogger(cc.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
-    if (!i.a(i.ax, i.ay))
+    if (!IOProperties.a(IOProperties.ax, IOProperties.ay))
       hx.a().c(this.a.b.p().o()); 
     hx.a().f();
     cc.g(this.a);

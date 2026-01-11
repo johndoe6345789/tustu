@@ -8,12 +8,12 @@ import G.bA;
 import G.bv;
 import G.cB;
 import G.cu;
-import G.i;
+import G.RInterfaceIndia;
 import G.z;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import W.aa;
 import W.aj;
-import ax.U;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.ac;
 import com.efiAnalytics.ui.bV;
@@ -26,69 +26,69 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import javax.swing.JFrame;
-import r.a;
-import r.i;
-import u.f;
-import u.h;
+import r.IOPropertiesUsingFile;
+import r.RInterfaceIndia;
+import u.UInterfaceFoxtrot;
+import u.JDialogExtensionInUPackage;
 
 public class hH implements cB {
-  ArrayList a = new ArrayList();
+  ArrayList IOPropertiesUsingFile = new ArrayList();
   
   private static final Map b = new HashMap<>();
   
-  public boolean a(Window paramWindow, R paramR, String paramString) {
-    Y y = paramR.h().a();
-    R r = paramR.a(y);
-    z z = new z(ac.a().b());
+  public boolean IOPropertiesUsingFile(Window paramWindow, R paramR, String paramString) {
+    Y y = paramR.JDialogExtensionInUPackage().IOPropertiesUsingFile();
+    R r = paramR.IOPropertiesUsingFile(y);
+    z z = new z(ac.IOPropertiesUsingFile().b());
     try {
       aa aa = new aa();
-      aa.a(r, paramString);
-    } catch (g g) {
-      D.a("Error opening Saved tune.", (Exception)g, paramWindow);
+      aa.IOPropertiesUsingFile(r, paramString);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.IOPropertiesUsingFile("Error opening Saved tune.", (Exception)ExceptionPrintstacktrace, paramWindow);
     } catch (aj aj) {
-      D.a("Password Protected Tune Files. Please configure File Passwords.\nSkipping Difference Report.", (Exception)aj, paramWindow);
+      D.IOPropertiesUsingFile("Password Protected Tune Files. Please configure File Passwords.\nSkipping Difference Report.", (Exception)aj, paramWindow);
       return false;
     } 
-    ArrayList arrayList = z.a(paramR, paramR.h(), y);
+    ArrayList arrayList = z.IOPropertiesUsingFile(paramR, paramR.JDialogExtensionInUPackage(), y);
     if (arrayList.size() == 0)
       return false; 
-    a(arrayList, paramR, y, new File(paramString));
-    this.a.clear();
+    IOPropertiesUsingFile(arrayList, paramR, y, new File(paramString));
+    this.IOPropertiesUsingFile.clear();
     return true;
   }
   
-  public boolean a(R paramR, String paramString) {
-    Y y = paramR.h().a();
-    R r = paramR.a(y);
-    z z = new z(ac.a().b());
+  public boolean IOPropertiesUsingFile(R paramR, String paramString) {
+    Y y = paramR.JDialogExtensionInUPackage().IOPropertiesUsingFile();
+    R r = paramR.IOPropertiesUsingFile(y);
+    z z = new z(ac.IOPropertiesUsingFile().b());
     try {
       aa aa = new aa();
-      aa.a(r, paramString);
-    } catch (g g) {
-      D.a("isDifferenceDetected:: Returning true a file is different, Error opening Saved tune:\n" + paramString);
-      D.a("Saved tune file, it appears corrupt:\n" + paramString, (Exception)g, null);
-      g.printStackTrace();
+      aa.IOPropertiesUsingFile(r, paramString);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.IOPropertiesUsingFile("isDifferenceDetected:: Returning true IOPropertiesUsingFile file is different, Error opening Saved tune:\n" + paramString);
+      D.IOPropertiesUsingFile("Saved tune file, it appears corrupt:\n" + paramString, (Exception)ExceptionPrintstacktrace, null);
+      ExceptionPrintstacktrace.printStackTrace();
       return true;
     } catch (aj aj) {
-      D.a("Password Protected Tune Files. Please configure File Passwords.\nSkipping Difference Report.", (Exception)aj, null);
+      D.IOPropertiesUsingFile("Password Protected Tune Files. Please configure File Passwords.\nSkipping Difference Report.", (Exception)aj, null);
       return false;
     } 
-    ArrayList arrayList = z.a(paramR, paramR.h(), y);
-    int i = paramR.h().k();
-    int j = r.h().l();
-    double d = j / i;
+    ArrayList arrayList = z.IOPropertiesUsingFile(paramR, paramR.JDialogExtensionInUPackage(), y);
+    int RInterfaceIndia = paramR.JDialogExtensionInUPackage().k();
+    int j = r.JDialogExtensionInUPackage().l();
+    double d = j / RInterfaceIndia;
     return (!arrayList.isEmpty() || d >= 0.4D);
   }
   
-  public boolean a(ArrayList paramArrayList, R paramR, Y paramY, String paramString) {
+  public boolean IOPropertiesUsingFile(ArrayList paramArrayList, R paramR, Y paramY, String paramString) {
     boolean bool2;
-    boolean bool1 = a.a().c(a.bu, a.bv);
+    boolean bool1 = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.bu, IOPropertiesUsingFile.bv);
     if (!bool1) {
-      a(paramR, paramY, false);
+      IOPropertiesUsingFile(paramR, paramY, false);
       return false;
     } 
-    z z = new z(ac.a().b());
-    ArrayList arrayList1 = z.a(paramR, paramArrayList);
+    z z = new z(ac.IOPropertiesUsingFile().b());
+    ArrayList arrayList1 = z.IOPropertiesUsingFile(paramR, paramArrayList);
     ArrayList arrayList2 = z.b(paramR, arrayList1);
     Iterator<bv> iterator = arrayList2.iterator();
     while (iterator.hasNext()) {
@@ -97,12 +97,12 @@ public class hH implements cB {
       List list = bv.G();
       if (!list.isEmpty()) {
         for (bA bA : bv.G()) {
-          if (bA.b() != null && a(paramArrayList, bA.b())) {
+          if (bA.b() != null && IOPropertiesUsingFile(paramArrayList, bA.b())) {
             boolean bool3 = false;
             try {
-              bool3 = (bA.aJ() == null || bA.aJ().isEmpty() || i.a(bA.aJ(), (aI)paramR) != 0.0D) ? true : false;
-            } catch (U u) {
-              D.a("Unable to evaluate enable condition: " + bA.aJ());
+              bool3 = (bA.aJ() == null || bA.aJ().isEmpty() || RInterfaceIndia.IOPropertiesUsingFile(bA.aJ(), (aI)paramR) != 0.0D) ? true : false;
+            } catch (ExceptionInAxPackage u) {
+              D.IOPropertiesUsingFile("Unable to evaluate enable condition: " + bA.aJ());
             } 
             if (!bool3) {
               aM aM = paramR.c(bA.b());
@@ -118,10 +118,10 @@ public class hH implements cB {
         iterator.remove(); 
     } 
     if (arrayList2.isEmpty() || paramArrayList.isEmpty()) {
-      a(paramR, paramY, false);
+      IOPropertiesUsingFile(paramR, paramY, false);
       return false;
     } 
-    if (!i.a().a("67r67r8yhdrtrbyuk")) {
+    if (!RInterfaceIndia.IOPropertiesUsingFile().IOPropertiesUsingFile("67r67r8yhdrtrbyuk")) {
       bool2 = b(paramArrayList, paramR, paramY, paramString);
     } else {
       ArrayList<hN> arrayList = new ArrayList();
@@ -131,12 +131,12 @@ public class hH implements cB {
       arrayList.add(hK);
       hJ hJ = new hJ(this, paramR, paramY);
       arrayList.add(hJ);
-      bool2 = a(paramArrayList, paramR, paramY, arrayList, null);
+      bool2 = IOPropertiesUsingFile(paramArrayList, paramR, paramY, arrayList, null);
     } 
     return bool2;
   }
   
-  private boolean a(ArrayList paramArrayList, String paramString) {
+  private boolean IOPropertiesUsingFile(ArrayList paramArrayList, String paramString) {
     for (aM aM : paramArrayList) {
       if (aM.aL().equals(paramString))
         return true; 
@@ -144,7 +144,7 @@ public class hH implements cB {
     return false;
   }
   
-  public void a(ArrayList paramArrayList, R paramR, Y paramY, File paramFile) {
+  public void IOPropertiesUsingFile(ArrayList paramArrayList, R paramR, Y paramY, File paramFile) {
     ArrayList<hI> arrayList = new ArrayList();
     hI hI = new hI(this);
     arrayList.add(hI);
@@ -152,40 +152,40 @@ public class hH implements cB {
     arrayList.add(hM);
     hL hL = new hL(this, paramR, paramY, paramFile);
     arrayList.add(hL);
-    a(paramArrayList, paramR, paramY, arrayList, paramFile);
+    IOPropertiesUsingFile(paramArrayList, paramR, paramY, arrayList, paramFile);
   }
   
-  private boolean a(ArrayList paramArrayList1, R paramR, Y paramY, ArrayList paramArrayList2, File paramFile) {
-    R r = paramR.a(paramY);
-    JFrame jFrame = dd.a().c();
-    h h = null;
+  private boolean IOPropertiesUsingFile(ArrayList paramArrayList1, R paramR, Y paramY, ArrayList paramArrayList2, File paramFile) {
+    R r = paramR.IOPropertiesUsingFile(paramY);
+    JFrame jFrame = dd.IOPropertiesUsingFile().c();
+    JDialogExtensionInUPackage JDialogExtensionInUPackage = null;
     try {
-      h = new h(jFrame, paramR, r, paramArrayList1, paramArrayList2, paramFile);
-      for (f f : this.a) {
-        h.b(f);
-        h.a(f);
+      JDialogExtensionInUPackage = new JDialogExtensionInUPackage(jFrame, paramR, r, paramArrayList1, paramArrayList2, paramFile);
+      for (UInterfaceFoxtrot UInterfaceFoxtrot : this.IOPropertiesUsingFile) {
+        JDialogExtensionInUPackage.b(UInterfaceFoxtrot);
+        JDialogExtensionInUPackage.IOPropertiesUsingFile(UInterfaceFoxtrot);
       } 
-      if (h.a())
+      if (JDialogExtensionInUPackage.IOPropertiesUsingFile())
         return false; 
-      h h1 = (h)b.get(paramR.c());
+      JDialogExtensionInUPackage h1 = (JDialogExtensionInUPackage)b.get(paramR.c());
       if (h1 != null)
         h1.dispose(); 
-      b.put(paramR.c(), h);
-      bV.a(jFrame, (Component)h);
-      h.setVisible(true);
-      return h.b();
+      b.put(paramR.c(), JDialogExtensionInUPackage);
+      bV.IOPropertiesUsingFile(jFrame, (Component)JDialogExtensionInUPackage);
+      JDialogExtensionInUPackage.setVisible(true);
+      return JDialogExtensionInUPackage.b();
     } finally {
-      if (h != null && h.isVisible())
-        h.dispose(); 
-      h = null;
+      if (JDialogExtensionInUPackage != null && JDialogExtensionInUPackage.isVisible())
+        JDialogExtensionInUPackage.dispose(); 
+      JDialogExtensionInUPackage = null;
       b.remove(paramR.c());
     } 
   }
   
   private boolean b(ArrayList<aM> paramArrayList, R paramR, Y paramY, String paramString) {
     long l = System.currentTimeMillis();
-    String str = "There are differences between your offline tune and that\nwhich was last saved to the controller.\nFor advanced difference reports with side by side values, \nGo to EFIAnalytics.com and upgrade " + a.b + " today!\n\nA basic comparison found " + paramArrayList.size() + " Settings with different values \non the Controller than in the currently loaded tune (" + a.cw + ") \nfor " + paramR.c() + "\n\nWould you like to send your offline values to the Controller?\n\nDifferent Settings:\n";
-    z z = new z(ac.a().b());
+    String str = "There are differences between your offline tune and that\nwhich was last saved to the controller.\nFor advanced difference reports with side by side values, \nGo to EFIAnalytics.com and upgrade " + IOPropertiesUsingFile.b + " today!\n\nA basic comparison found " + paramArrayList.size() + " Settings with different values \non the Controller than in the currently loaded tune (" + IOPropertiesUsingFile.cw + ") \nfor " + paramR.c() + "\n\nWould you like to send your offline values to the Controller?\n\nDifferent Settings:\n";
+    z z = new z(ac.IOPropertiesUsingFile().b());
     D.c("Time to get Panels = " + (System.currentTimeMillis() - l) + "ms.");
     byte b1 = 20;
     for (byte b2 = 0; b2 < paramArrayList.size(); b2++) {
@@ -200,48 +200,48 @@ public class hH implements cB {
         str = str + "\n"; 
     } 
     String[] arrayOfString = { "Send Local Settings", "Use Controller Settings", "Get Graphic Difference Reports" };
-    int i;
-    for (i = 2; i == 2; i = bV.b(str, "Tune Differences Detected", dd.a().c(), arrayOfString)) {
-      i = bV.b(str, "Tune Differences Detected", dd.a().c(), arrayOfString);
-      if (i == 0)
-        return a(paramR, paramY); 
-      if (i == 1) {
-        a(paramR, paramY, false);
+    int RInterfaceIndia;
+    for (RInterfaceIndia = 2; RInterfaceIndia == 2; RInterfaceIndia = bV.b(str, "Tune Differences Detected", dd.IOPropertiesUsingFile().c(), arrayOfString)) {
+      RInterfaceIndia = bV.b(str, "Tune Differences Detected", dd.IOPropertiesUsingFile().c(), arrayOfString);
+      if (RInterfaceIndia == 0)
+        return IOPropertiesUsingFile(paramR, paramY); 
+      if (RInterfaceIndia == 1) {
+        IOPropertiesUsingFile(paramR, paramY, false);
         return false;
       } 
-      f.a().h("differenceReports");
+      UInterfaceFoxtrot.IOPropertiesUsingFile().JDialogExtensionInUPackage("differenceReports");
     } 
     return false;
   }
   
-  private boolean a(R paramR, Y paramY, boolean paramBoolean) {
+  private boolean IOPropertiesUsingFile(R paramR, Y paramY, boolean paramBoolean) {
     Thread thread = Thread.currentThread();
     try {
-      paramR.a(thread);
+      paramR.IOPropertiesUsingFile(thread);
       for (byte b = 0; b < paramY.e(); b++) {
         try {
           if (paramBoolean) {
-            paramR.h().b(b, 0, paramY.b(b));
+            paramR.JDialogExtensionInUPackage().b(b, 0, paramY.b(b));
           } else {
-            paramR.h().a(b, 0, paramY.b(b));
+            paramR.JDialogExtensionInUPackage().IOPropertiesUsingFile(b, 0, paramY.b(b));
           } 
-        } catch (g g) {
-          g.printStackTrace();
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          ExceptionPrintstacktrace.printStackTrace();
           return false;
         } 
       } 
     } catch (Exception exception) {}
     paramR.b(thread);
-    cu.a().a("controllerSettingsLoaded", 1.0D);
+    cu.IOPropertiesUsingFile().IOPropertiesUsingFile("controllerSettingsLoaded", 1.0D);
     return true;
   }
   
-  private boolean a(R paramR, Y paramY) {
-    File file = f.a().a(paramR, true);
-    a(paramR, paramY, true);
-    paramR.h().g();
-    boolean bool = f.a().c(paramR, file.getAbsolutePath());
-    cu.a().a("controllerSettingsLoaded", 0.0D);
+  private boolean IOPropertiesUsingFile(R paramR, Y paramY) {
+    File file = UInterfaceFoxtrot.IOPropertiesUsingFile().IOPropertiesUsingFile(paramR, true);
+    IOPropertiesUsingFile(paramR, paramY, true);
+    paramR.JDialogExtensionInUPackage().ExceptionPrintstacktrace();
+    boolean bool = UInterfaceFoxtrot.IOPropertiesUsingFile().c(paramR, file.getAbsolutePath());
+    cu.IOPropertiesUsingFile().IOPropertiesUsingFile("controllerSettingsLoaded", 0.0D);
     return bool;
   }
 }

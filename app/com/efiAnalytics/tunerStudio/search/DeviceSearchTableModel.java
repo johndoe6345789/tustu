@@ -1,9 +1,9 @@
 package com.efiAnalytics.tunerStudio.search;
 
 import B.i;
-import D.a;
-import V.a;
-import bS.o;
+import D.ExceptionInVPackage;
+import V.ExceptionInVPackage;
+import bS.BsInterfaceOscar;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
 import java.awt.Image;
@@ -13,10 +13,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
-import r.a;
+import r.ExceptionInVPackage;
 
 class DeviceSearchTableModel extends DefaultTableModel {
-  Map a = new HashMap<>();
+  Map ExceptionInVPackage = new HashMap<>();
   
   A(r paramr) {}
   
@@ -41,40 +41,40 @@ class DeviceSearchTableModel extends DefaultTableModel {
       f f = this.b.b.get(paramInt1);
       if (paramInt2 == 0)
         try {
-          ImageIcon imageIcon = (ImageIcon)this.a.get(f.b());
+          ImageIcon imageIcon = (ImageIcon)this.ExceptionInVPackage.get(f.b());
           if (imageIcon == null) {
             Image image;
             if (f.b().contains("Gen 4") || f.b().contains("Gen4")) {
-              image = cO.a().a(cO.af, this.b.d, 50);
+              image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.af, this.b.d, 50);
             } else {
-              image = cO.a().a(cO.ag, this.b.d, 50);
+              image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.ag, this.b.d, 50);
             } 
             imageIcon = new ImageIcon(image);
-            this.a.put(f.b(), imageIcon);
+            this.ExceptionInVPackage.put(f.b(), imageIcon);
           } 
           return imageIcon;
-        } catch (a a) {
-          Logger.getLogger(r.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          Logger.getLogger(r.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
           return f.b();
         }  
       if (paramInt2 == 1) {
         null = "<html><center>";
-        int i = eJ.a(5);
-        if (f.b().equals(o.a)) {
+        int i = eJ.ExceptionInVPackage(5);
+        if (f.b().equals(BsInterfaceOscar.ExceptionInVPackage)) {
           i i1 = f.f();
           if (f.f().j() != null && !i1.j().isEmpty()) {
             null = null + "<font size=" + i + ">" + f.b() + " - " + f.f().j() + "</font><br> " + f.f().f() + "<br>Host: " + f.f().c();
-          } else if (f.a() != null && !f.a().isEmpty()) {
-            null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.a() + "</font><br>Host: " + f.f().c();
+          } else if (f.ExceptionInVPackage() != null && !f.ExceptionInVPackage().isEmpty()) {
+            null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.ExceptionInVPackage() + "</font><br>Host: " + f.f().c();
           } else if (f.f().f() != null && !f.f().f().isEmpty()) {
             null = null + "<font size=" + i + ">" + f.b() + " Host: " + f.f().c() + "</font><br>" + f.f().f();
           } else if (f.f().b() != null && !f.f().b().isEmpty()) {
             null = null + "<font size=" + i + ">" + f.f().b() + ", " + f.f().f() + "</font><br>Host: " + f.f().c();
           } else {
-            null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.a() + "</font><br>Host: " + f.f().c();
+            null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.ExceptionInVPackage() + "</font><br>Host: " + f.f().c();
           } 
-        } else if (f.a() != null && !f.a().isEmpty()) {
-          null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.a() + "</font><br>Host: " + f.f().c();
+        } else if (f.ExceptionInVPackage() != null && !f.ExceptionInVPackage().isEmpty()) {
+          null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.ExceptionInVPackage() + "</font><br>Host: " + f.f().c();
         } else if (f.f().j() != null && !f.f().j().isEmpty()) {
           null = null + "<font size=" + i + ">" + f.b() + " - " + f.f().j() + "</font><br> " + f.f().f() + "<br>Host: " + f.f().c();
         } else if (f.f().f() != null && !f.f().f().isEmpty()) {
@@ -82,15 +82,15 @@ class DeviceSearchTableModel extends DefaultTableModel {
         } else if (f.f().b() != null && !f.f().b().isEmpty()) {
           null = null + "<font size=" + i + ">" + f.f().b() + ", " + f.f().f() + "</font><br>Host: " + f.f().c();
         } else {
-          null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.a() + "</font><br>Host: " + f.f().c();
+          null = null + "<font size=" + i + ">" + f.b() + ", Serial# " + f.ExceptionInVPackage() + "</font><br>Host: " + f.f().c();
         } 
-        a a = f.g();
-        if (a != null && a.e() != null && !a.e().isEmpty())
-          null = null + " Registered to: " + a.e() + " " + a.f(); 
+        ExceptionInVPackage ExceptionInVPackage = f.g();
+        if (ExceptionInVPackage != null && ExceptionInVPackage.e() != null && !ExceptionInVPackage.e().isEmpty())
+          null = null + " Registered to: " + ExceptionInVPackage.e() + " " + ExceptionInVPackage.f(); 
         if (f.f().h()) {
           null = null + "<br><font color=red>Currently Busy. To connect, another session must end.</font>";
         } else if (f.h() != null) {
-          null = null + "<br>Local Project: " + f.h().a();
+          null = null + "<br>Local Project: " + f.h().ExceptionInVPackage();
         } 
         return null + "</center></html>";
       } 
@@ -98,26 +98,26 @@ class DeviceSearchTableModel extends DefaultTableModel {
     } 
     if (paramInt2 == 0)
       try {
-        ImageIcon imageIcon = (ImageIcon)this.a.get("Searching");
+        ImageIcon imageIcon = (ImageIcon)this.ExceptionInVPackage.get("Searching");
         if (imageIcon == null) {
-          Image image = cO.a().a(cO.u, this.b.d, r.b(this.b));
+          Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.u, this.b.d, r.b(this.b));
           imageIcon = new ImageIcon(image);
-          this.a.put("Searching", imageIcon);
+          this.ExceptionInVPackage.put("Searching", imageIcon);
         } 
         return imageIcon;
-      } catch (a a) {
-        Logger.getLogger(r.class.getName()).log(Level.WARNING, "Falied to load searching ICON", (Throwable)a);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        Logger.getLogger(r.class.getName()).log(Level.WARNING, "Falied to load searching ICON", (Throwable)ExceptionInVPackage);
         return "";
       }  
     if (paramInt2 == 1)
-      return "<html><center><font size=+1>No " + a.f + " found.</font><br>Connect to the same network as your " + a.f + " and power it on, or select \"Work offline\"</center></html>"; 
+      return "<html><center><font size=+1>No " + ExceptionInVPackage.f + " found.</font><br>Connect to the same network as your " + ExceptionInVPackage.f + " and power it on, or select \"Work offline\"</center></html>"; 
     if (paramInt2 == 2) {
       String str = r.c();
       this.b.e.b(str);
-      this.b.e.a(str);
+      this.b.e.ExceptionInVPackage(str);
       this.b.f.b(str);
-      this.b.f.a(str);
-      this.b.e.a(true);
+      this.b.f.ExceptionInVPackage(str);
+      this.b.e.ExceptionInVPackage(true);
       return "";
     } 
     return "";

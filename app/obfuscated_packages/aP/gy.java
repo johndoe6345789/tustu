@@ -4,15 +4,15 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class gy implements ActionListener {
   gy(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    a.a().b(a.bp, jCheckBoxMenuItem.getState() + "");
-    a.a().b(a.bn, jCheckBoxMenuItem.getState() + "");
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bp, jCheckBoxMenuItem.getState() + "");
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bn, jCheckBoxMenuItem.getState() + "");
     if (jCheckBoxMenuItem.getState()) {
       bV.d("Warning!!\n\nThe VE Analyze and Diagnostics tabs are not accessible in Lite Mode.\n\nYou must restart for the changes to take effect.", jCheckBoxMenuItem);
     } else {

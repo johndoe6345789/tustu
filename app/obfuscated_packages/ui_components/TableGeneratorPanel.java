@@ -6,9 +6,9 @@ import com.efiAnalytics.ui.cg;
 import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
-import h.g;
-import h.i;
-import i.b;
+import h.PropertiesExtensionInHPackage;
+import h.IOProperties;
+import IOProperties.b;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -31,20 +31,20 @@ public class eC extends JPanel implements b {
   
   ArrayList f = new ArrayList();
   
-  go g;
+  go PropertiesExtensionInHPackage;
   
   eI h = new eI(this);
   
   public eC() {
     f();
-    this.g = new go();
-    dQ dQ = new dQ(i.e, "TableGenSetting");
-    this.g.a((et)dQ);
-    hx.a().a(this.g);
+    this.PropertiesExtensionInHPackage = new go();
+    dQ dQ = new dQ(IOProperties.e, "TableGenSetting");
+    this.PropertiesExtensionInHPackage.a((et)dQ);
+    hx.a().a(this.PropertiesExtensionInHPackage);
     hx.a().a(this);
-    this.b.i(true);
+    this.b.IOProperties(true);
     this.a.setLayout(new BorderLayout());
-    this.a.add("Center", this.g);
+    this.a.add("Center", this.PropertiesExtensionInHPackage);
     setLayout(new BorderLayout());
     this.e = new JSplitPane();
     this.e.setOneTouchExpandable(true);
@@ -71,7 +71,7 @@ public class eC extends JPanel implements b {
     this.b.addMouseMotionListener(bZ);
     this.b.h(false);
     this.c.a(new eH(this));
-    this.g.a(new eG(this));
+    this.PropertiesExtensionInHPackage.a(new eG(this));
   }
   
   public void c() {
@@ -124,33 +124,33 @@ public class eC extends JPanel implements b {
   }
   
   public void a(int paramInt) {
-    this.g.e(paramInt);
+    this.PropertiesExtensionInHPackage.e(paramInt);
     this.b.h(paramInt);
     this.b.repaint();
   }
   
   public void b(int paramInt) {
-    this.g.d(paramInt);
-    this.b.i(paramInt);
+    this.PropertiesExtensionInHPackage.d(paramInt);
+    this.b.IOProperties(paramInt);
     this.b.repaint();
   }
   
   private void f() {
     this.f.clear();
     eF eF = new eF(this);
-    eF.a(g.a().a(g.d));
-    eF.b(g.a().a(g.j));
-    eF.c(g.a().a(g.h));
+    eF.a(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.d));
+    eF.b(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.j));
+    eF.c(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.h));
     this.f.add(eF);
     eF = new eF(this);
-    eF.a(g.a().a(g.g));
-    eF.b(g.a().a(g.j));
-    eF.c(g.a().a(g.h));
+    eF.a(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.PropertiesExtensionInHPackage));
+    eF.b(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.j));
+    eF.c(PropertiesExtensionInHPackage.a().a(PropertiesExtensionInHPackage.h));
     this.f.add(eF);
   }
   
   public Component e() {
-    return this.g;
+    return this.PropertiesExtensionInHPackage;
   }
 }
 

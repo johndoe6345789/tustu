@@ -1,17 +1,17 @@
 package aP;
 
-import s.g;
-import u.g;
+import s.SComponentGolf;
+import u.SComponentGolf;
 
-class hI implements g {
+class hI implements SComponentGolf {
   hI(hH paramhH) {}
   
   public String a() {
-    return g.b("Exit - No Changes");
+    return SComponentGolf.b("Exit - No Changes");
   }
   
   public String b() {
-    return g.b("Exits the Difference Report with no changes to the currently loaded tune.");
+    return SComponentGolf.b("Exits the Difference Report with no changes to the currently loaded tune.");
   }
   
   public boolean d() {

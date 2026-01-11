@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import W.ah;
 import bH.D;
@@ -34,10 +34,10 @@ public class at extends g {
         str2 = l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       byte b1 = 0;
       String[] arrayOfString1 = str1.split(Pattern.quote(r()));
@@ -60,8 +60,8 @@ public class at extends g {
         if (str3.contains("  "))
           str3 = X.b(str3, "  ", " "); 
         if (str3.equals("TimeStamp")) {
-          d1.a(3);
-          d1.a("Time");
+          d1.ExceptionInVPackage(3);
+          d1.ExceptionInVPackage("Time");
           d1.b("s");
           str3 = "Time";
         } 
@@ -73,8 +73,8 @@ public class at extends g {
         for (byte b = 0; b < 100 && i(str4); b++)
           str4 = str3 + b; 
         str3 = str4;
-        d1.a(str3);
-        d d2 = a(d1);
+        d1.ExceptionInVPackage(str3);
+        d d2 = ExceptionInVPackage(d1);
         if (d2 != null) {
           this.g.add(d2);
           b1++;
@@ -94,7 +94,7 @@ public class at extends g {
           String str2 = ((d)this.g.get(b)).b();
           if (str1.isEmpty() && str2 != null && !str2.isEmpty()) {
             b++;
-          } else if (!I.a(str1) && Float.isNaN(g(str1))) {
+          } else if (!I.ExceptionInVPackage(str1) && Float.isNaN(g(str1))) {
             ((d)this.g.get(b)).b(str1);
             if (str1.equals("On/Off")) {
               ((d)this.g.get(b)).b(4);
@@ -107,19 +107,19 @@ public class at extends g {
             } 
             b++;
           } else {
-            a(true);
+            ExceptionInVPackage(true);
             c();
-            a(true);
+            ExceptionInVPackage(true);
             break;
           } 
         } 
       } 
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     ArrayList<T> arrayList = new ArrayList();
@@ -141,7 +141,7 @@ public class at extends g {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
       ah = new ah(new InputStreamReader(fileInputStream));
-      str1 = ah.a();
+      str1 = ah.ExceptionInVPackage();
       if (str1 == null)
         return b - 1; 
       while (b == 0 || (str2 != null && !str2.startsWith("TimeStamp"))) {
@@ -150,7 +150,7 @@ public class at extends g {
         str3 = str2;
         str2 = str1;
         b++;
-        str1 = ah.a();
+        str1 = ah.ExceptionInVPackage();
       } 
       if (this.u)
         l(h(str1)); 
@@ -163,9 +163,9 @@ public class at extends g {
         return b - 2; 
       return b - 1;
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new a("Unable to open file for reading:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
-      throw new a("Unable to read from file:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
     } finally {
       if (ah != null)
         try {

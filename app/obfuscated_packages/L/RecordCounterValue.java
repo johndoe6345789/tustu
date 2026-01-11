@@ -1,12 +1,12 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 
 class RecordCounterValue implements ab {
   o(n paramn) {}
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return n.a(this.a);
   }
 }

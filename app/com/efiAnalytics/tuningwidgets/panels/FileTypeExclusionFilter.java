@@ -2,13 +2,13 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import java.io.File;
 import java.io.FileFilter;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class FileTypeExclusionFilter implements FileFilter {
   FileTypeExclusionFilter(X paramX) {}
   
   public boolean accept(File paramFile) {
-    return !paramFile.getName().toLowerCase().endsWith(a.t);
+    return !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t);
   }
 }
 

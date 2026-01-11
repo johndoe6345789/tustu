@@ -1,35 +1,35 @@
 package aP;
 
-import bA.c;
+import bA.JCheckBoxMenuItemExtension;
 import bt.bu;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.fq;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class gD implements ActionListener {
   gD(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    c c = (c)paramActionEvent.getSource();
-    a.a().b(a.cc, Boolean.toString(c.getState()));
-    if (c.isSelected()) {
-      fq fq = new fq(dd.a().c(), true, "Base atmospheric barometric pressure in KPa", a.a().c(a.ai, "100"), bV.a());
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.cc, Boolean.toString(JCheckBoxMenuItemExtension.getState()));
+    if (JCheckBoxMenuItemExtension.isSelected()) {
+      fq fq = new fq(dd.IOPropertiesUsingFile().JCheckBoxMenuItemExtension(), true, "Base atmospheric barometric pressure in KPa", IOPropertiesUsingFile.IOPropertiesUsingFile().JCheckBoxMenuItemExtension(IOPropertiesUsingFile.ai, "100"), bV.IOPropertiesUsingFile());
       fq.setVisible(true);
-      String str = fq.a();
+      String str = fq.IOPropertiesUsingFile();
       if (str != null && !str.isEmpty()) {
         try {
           double d = Double.parseDouble(str);
-          bu.a(d);
-          a.a().b(a.ai, str);
+          bu.IOPropertiesUsingFile(d);
+          IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ai, str);
         } catch (NumberFormatException numberFormatException) {
-          a.a().b(a.ai, "100");
-          bu.a(100.0D);
+          IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ai, "100");
+          bu.IOPropertiesUsingFile(100.0D);
         } 
       } else {
-        a.a().b(a.ai, "100");
-        bu.a(100.0D);
+        IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ai, "100");
+        bu.IOPropertiesUsingFile(100.0D);
       } 
     } 
   }

@@ -4,7 +4,7 @@ import W.j;
 import W.n;
 import com.efiAnalytics.ui.bq;
 import com.efiAnalytics.ui.cj;
-import h.i;
+import h.IOProperties;
 import java.awt.Component;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,15 +14,15 @@ import javax.swing.JMenuItem;
 
 public class S {
   public static bq a(bq parambq, j paramj, Component paramComponent) {
-    int i = i.b("fieldSmoothingFactor_" + paramj.a(), 0);
-    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Field Smoothing (" + paramj.s() + ")", (i > 0));
+    int IOProperties = IOProperties.b("fieldSmoothingFactor_" + paramj.a(), 0);
+    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem("Field Smoothing (" + paramj.s() + ")", (IOProperties > 0));
     jCheckBoxMenuItem.addActionListener(new T(paramj));
     parambq.add(jCheckBoxMenuItem);
     JMenuItem jMenuItem1 = new JMenuItem("Smoothing Factor");
-    jMenuItem1.setEnabled((i > 0));
+    jMenuItem1.setEnabled((IOProperties > 0));
     jMenuItem1.addActionListener(new X(paramj, paramComponent));
     parambq.add(jMenuItem1);
-    String str1 = i.e("FIELD_MIN_MAX_" + paramj.a(), "");
+    String str1 = IOProperties.e("FIELD_MIN_MAX_" + paramj.a(), "");
     String str2 = paramj.a();
     if (str1 != null && str1.indexOf(";") != -1) {
       String str3 = str1.substring(0, str1.indexOf(";"));
@@ -95,7 +95,7 @@ public class S {
   }
   
   private static boolean b(String paramString) {
-    return (i.c("APPEND_FIELD_" + paramString) != null);
+    return (IOProperties.c("APPEND_FIELD_" + paramString) != null);
   }
   
   private static JMenu b(String paramString1, String paramString2, String paramString3) {
@@ -137,9 +137,9 @@ public class S {
   
   private static void a(String paramString, float paramFloat1, float paramFloat2) {
     if (Float.isNaN(paramFloat1) || Float.isNaN(paramFloat2)) {
-      i.d("FIELD_MIN_MAX_" + paramString);
+      IOProperties.d("FIELD_MIN_MAX_" + paramString);
     } else {
-      i.c("FIELD_MIN_MAX_" + paramString, paramFloat1 + ";" + paramFloat2);
+      IOProperties.c("FIELD_MIN_MAX_" + paramString, paramFloat1 + ";" + paramFloat2);
     } 
     n n = hx.a().r();
     if (n != null) {
@@ -153,7 +153,7 @@ public class S {
   }
   
   private static void a() {
-    bq.a().c().i();
+    bq.a().c().IOProperties();
     bq.a().c().repaint();
   }
   

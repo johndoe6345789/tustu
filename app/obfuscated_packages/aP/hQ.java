@@ -1,14 +1,14 @@
 package aP;
 
-import aA.g;
+import aA.AaInterfaceGolf;
 import java.io.File;
-import r.j;
+import r.ThreadedFile;
 
-class hQ implements g {
+class hQ implements AaInterfaceGolf {
   hQ(hO paramhO) {}
   
   public File a() {
-    return j.f();
+    return ThreadedFile.f();
   }
 }
 

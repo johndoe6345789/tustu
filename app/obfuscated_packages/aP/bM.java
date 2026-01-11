@@ -20,10 +20,10 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 public class bM extends JDialog {
-  cn a = new cn();
+  cn IOPropertiesUsingFile = new cn();
   
   cn b = new cn();
   
@@ -36,7 +36,7 @@ public class bM extends JDialog {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add("West", new JLabel("Input File:"));
-    jPanel1.add("Center", (Component)this.a);
+    jPanel1.add("Center", (Component)this.IOPropertiesUsingFile);
     JButton jButton1 = new JButton("Select Input");
     jButton1.addActionListener(new bN(this));
     jPanel1.add("East", jButton1);
@@ -60,29 +60,29 @@ public class bM extends JDialog {
     add(jPanel3);
   }
   
-  public void a() {
+  public void IOPropertiesUsingFile() {
     String[] arrayOfString = { "" };
-    String str1 = a.a().c("encrypDialogDirIn", ".");
-    String str2 = bV.a(this, "Select Input", arrayOfString, "", str1, true);
+    String str1 = IOPropertiesUsingFile.IOPropertiesUsingFile().c("encrypDialogDirIn", ".");
+    String str2 = bV.IOPropertiesUsingFile(this, "Select Input", arrayOfString, "", str1, true);
     if (str2 != null && !str2.isEmpty())
-      a.a().b("encrypDialogDirIn", (new File(str2)).getParent()); 
-    this.a.a(str2);
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b("encrypDialogDirIn", (new File(str2)).getParent()); 
+    this.IOPropertiesUsingFile.IOPropertiesUsingFile(str2);
   }
   
   public void b() {
     String[] arrayOfString = { "" };
-    String str1 = a.a().c("encrypDialogDir", ".");
-    String str2 = bV.a(this, "Select Output", arrayOfString, "", str1, false);
+    String str1 = IOPropertiesUsingFile.IOPropertiesUsingFile().c("encrypDialogDir", ".");
+    String str2 = bV.IOPropertiesUsingFile(this, "Select Output", arrayOfString, "", str1, false);
     if (str2 != null && !str2.isEmpty())
-      a.a().b("encrypDialogDir", (new File(str2)).getParent()); 
-    this.b.a(str2);
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b("encrypDialogDir", (new File(str2)).getParent()); 
+    this.b.IOPropertiesUsingFile(str2);
   }
   
   public void c() {
     FileInputStream fileInputStream;
     ay ay;
     BufferedOutputStream bufferedOutputStream;
-    File file1 = new File(this.a.a());
+    File file1 = new File(this.IOPropertiesUsingFile.IOPropertiesUsingFile());
     if (!file1.exists()) {
       bV.d("Must Select an Input File", this);
       return;
@@ -94,7 +94,7 @@ public class bM extends JDialog {
       return;
     } 
     BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
-    File file2 = new File(this.b.a());
+    File file2 = new File(this.b.IOPropertiesUsingFile());
     if (file2.exists())
       file2.delete(); 
     try {
@@ -130,11 +130,11 @@ public class bM extends JDialog {
     } 
   }
   
-  public static void a(Frame paramFrame) {
+  public static void IOPropertiesUsingFile(Frame paramFrame) {
     bM bM1 = new bM(paramFrame);
     bM1.pack();
     bM1.setSize(600, bM1.getHeight());
-    bV.a(paramFrame, bM1);
+    bV.IOPropertiesUsingFile(paramFrame, bM1);
     bM1.setVisible(true);
   }
 }

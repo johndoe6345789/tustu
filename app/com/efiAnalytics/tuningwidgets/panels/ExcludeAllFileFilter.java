@@ -2,13 +2,13 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import java.io.File;
 import java.io.FileFilter;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ExcludeAllFileFilter implements FileFilter {
   ExcludeAllFileFilter(ProjectArchiveOptionsPanel paramX) {}
   
   public boolean accept(File paramFile) {
-    return (!paramFile.getName().toLowerCase().endsWith(a.cr) && !paramFile.getName().toLowerCase().endsWith(a.cs) && !paramFile.getName().toLowerCase().endsWith(a.cv) && !paramFile.getName().toLowerCase().endsWith(a.t) && !paramFile.getParentFile().getName().equals("restorePoints"));
+    return (!paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cr) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cs) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cv) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t) && !paramFile.getParentFile().getName().equals("restorePoints"));
   }
 }
 

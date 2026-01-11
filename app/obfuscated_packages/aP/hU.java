@@ -1,13 +1,13 @@
 package aP;
 
 import bH.r;
-import n.j;
+import n.NInterfaceJuliet;
 
 class hU implements r {
   hU(hO paramhO) {}
   
   public void a(String paramString) {
-    j.a().a(paramString);
+    NInterfaceJuliet.a().a(paramString);
   }
 }
 

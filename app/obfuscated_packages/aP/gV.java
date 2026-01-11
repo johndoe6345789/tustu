@@ -1,21 +1,21 @@
 package aP;
 
-import bA.c;
-import s.f;
-import s.g;
+import bA.JCheckBoxMenuItemExtension;
+import s.SInterfaceFoxtrot;
+import s.SComponentGolf;
 
-class gV extends c implements f {
+class gV extends JCheckBoxMenuItemExtension implements SInterfaceFoxtrot {
   String a = null;
   
   public gV(dB paramdB, String paramString, boolean paramBoolean1, boolean paramBoolean2) {
-    super(g.b(paramString), paramBoolean1, paramBoolean2);
+    super(SComponentGolf.b(paramString), paramBoolean1, paramBoolean2);
     this.a = paramString;
     addMouseListener(new gU(paramdB, this));
   }
   
   public void a(String paramString) {
     setText(paramString);
-    g.b(this.a, paramString);
+    SComponentGolf.b(this.a, paramString);
   }
   
   public String a() {

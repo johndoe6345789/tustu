@@ -7,13 +7,13 @@ import java.awt.Color;
 import java.awt.Window;
 import java.util.ArrayList;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 class BorderWidthSliderDialog extends bn implements f {
   private boolean a = false;
   
   BorderWidthSliderDialog(Window paramWindow, String paramString) {
-    super(paramWindow, g.b(paramString) + " " + g.b("Slider"));
+    super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new c(this));
     this.c.setMinimum(0);
     this.c.setMaximum(100);

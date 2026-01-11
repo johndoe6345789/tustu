@@ -1,10 +1,10 @@
 package aP;
 
 import G.R;
-import s.g;
-import u.g;
+import s.SComponentGolf;
+import u.SComponentGolf;
 
-class hK implements g {
+class hK implements SComponentGolf {
   R a;
   
   hK(hH paramhH, R paramR) {
@@ -12,11 +12,11 @@ class hK implements g {
   }
   
   public String a() {
-    return g.b("Exit & Go offline");
+    return SComponentGolf.b("Exit & Go offline");
   }
   
   public String b() {
-    return g.b("Go offline and Exits the Difference Report with no changes to the currently loaded tune or Controller.");
+    return SComponentGolf.b("Go offline and Exits the Difference Report with no changes to the currently loaded tune or Controller.");
   }
   
   public boolean d() {

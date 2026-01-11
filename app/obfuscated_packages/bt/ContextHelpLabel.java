@@ -13,7 +13,7 @@ import java.awt.Window;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import s.g;
+import s.SComponentGolf;
 
 public class ContextHelpLabel extends JLabel {
   R a = null;
@@ -41,7 +41,7 @@ public class ContextHelpLabel extends JLabel {
     String str = this.a.w(this.b);
     if (str == null || str.equals(""))
       return; 
-    str = g.b(str);
+    str = SComponentGolf.b(str);
     Window window = bV.b(this);
     bi bi = new bi(window, str, true);
     bi.setSize(eJ.a(322), eJ.a(183));
@@ -57,7 +57,7 @@ public class ContextHelpLabel extends JLabel {
   private void b() {
     String str = this.a.w(this.b);
     if (str != null && str.length() > 0) {
-      str = g.b(str);
+      str = SComponentGolf.b(str);
       StringBuilder stringBuilder = new StringBuilder(str);
       stringBuilder = X.a(stringBuilder, "\\n", "\n");
       stringBuilder = X.a(stringBuilder, "\n", "<br>");

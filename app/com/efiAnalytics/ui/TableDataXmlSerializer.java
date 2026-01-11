@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.an;
 import bH.X;
 import java.io.File;
@@ -23,7 +23,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class TableDataXmlSerializer {
-  public void a(String paramString, s params) {
+  public void ExceptionInVPackage(String paramString, s params) {
     DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
     try {
       DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
@@ -40,34 +40,34 @@ public class TableDataXmlSerializer {
       element3.setAttribute("fileFormat", "1.0");
       element1.appendChild(element3);
       Element element4 = document.createElement("table");
-      element4.setAttribute("rows", "" + (params.a()).length);
+      element4.setAttribute("rows", "" + (params.ExceptionInVPackage()).length);
       element4.setAttribute("cols", "" + (params.b()).length);
       element1.appendChild(element4);
       Element element5 = document.createElement("xAxis");
       element5.setAttribute("cols", "" + (params.b()).length);
       element5.setAttribute("name", "" + params.w());
-      element5.setTextContent(X.a(a(params.b(), false)));
+      element5.setTextContent(X.ExceptionInVPackage(ExceptionInVPackage(params.b(), false)));
       element4.appendChild(element5);
       Element element6 = document.createElement("yAxis");
-      element6.setAttribute("rows", "" + (params.a()).length);
+      element6.setAttribute("rows", "" + (params.ExceptionInVPackage()).length);
       element6.setAttribute("name", "" + params.v());
-      element6.setTextContent(X.a(a(params.a(), true)));
+      element6.setTextContent(X.ExceptionInVPackage(ExceptionInVPackage(params.ExceptionInVPackage(), true)));
       element4.appendChild(element6);
       Element element7 = document.createElement("zValues");
       element7.setAttribute("cols", "" + (params.b()).length);
-      element7.setAttribute("rows", "" + (params.a()).length);
-      element7.setTextContent(X.a(a(params)));
+      element7.setAttribute("rows", "" + (params.ExceptionInVPackage()).length);
+      element7.setTextContent(X.ExceptionInVPackage(ExceptionInVPackage(params)));
       element4.appendChild(element7);
-      a(paramString, document);
-    } catch (a a) {
-      throw a;
+      ExceptionInVPackage(paramString, document);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      throw ExceptionInVPackage;
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new a("Error Saving Table. Check Log file for details.");
+      throw new ExceptionInVPackage("Error Saving Table. Check Log file for details.");
     } 
   }
   
-  private String[][] a(String[] paramArrayOfString, boolean paramBoolean) {
+  private String[][] ExceptionInVPackage(String[] paramArrayOfString, boolean paramBoolean) {
     String[][] arrayOfString = new String[paramArrayOfString.length][1];
     for (byte b = 0; b < arrayOfString.length; b++) {
       if (paramBoolean) {
@@ -79,8 +79,8 @@ public class TableDataXmlSerializer {
     return arrayOfString;
   }
   
-  private String[][] a(an paraman) {
-    String[][] arrayOfString = new String[(paraman.a()).length][(paraman.b()).length];
+  private String[][] ExceptionInVPackage(an paraman) {
+    String[][] arrayOfString = new String[(paraman.ExceptionInVPackage()).length][(paraman.b()).length];
     for (byte b = 0; b < arrayOfString.length; b++) {
       for (byte b1 = 0; b1 < (arrayOfString[0]).length; b1++) {
         Object object = paraman.getValueAt(b, b1);
@@ -94,15 +94,15 @@ public class TableDataXmlSerializer {
     return arrayOfString;
   }
   
-  public s a(String paramString) {
+  public s ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     try {
       File file = new File(paramString);
       fileInputStream = new FileInputStream(file);
-      return a(fileInputStream);
+      return ExceptionInVPackage(fileInputStream);
     } catch (FileNotFoundException fileNotFoundException) {
       fileNotFoundException.printStackTrace();
-      throw new a("Problem loading " + paramString + ", error message:\n" + fileNotFoundException.getMessage() + "\nCheck log file for more details.");
+      throw new ExceptionInVPackage("Problem loading " + paramString + ", error message:\n" + fileNotFoundException.getMessage() + "\nCheck log file for more details.");
     } finally {
       try {
         fileInputStream.close();
@@ -110,7 +110,7 @@ public class TableDataXmlSerializer {
     } 
   }
   
-  public s a(InputStream paramInputStream) {
+  public s ExceptionInVPackage(InputStream paramInputStream) {
     Document document = null;
     s s = new s();
     try {
@@ -131,7 +131,7 @@ public class TableDataXmlSerializer {
               j = Integer.parseInt(node1.getNodeValue());
             } 
           } 
-          s.a(i, j);
+          s.ExceptionInVPackage(i, j);
         } else if (node.hasAttributes() && node.getNodeName().equals("xAxis")) {
           NamedNodeMap namedNodeMap = node.getAttributes();
           for (byte b1 = 0; b1 < namedNodeMap.getLength(); b1++) {
@@ -144,8 +144,8 @@ public class TableDataXmlSerializer {
           } 
           String str = node.getTextContent();
           double[][] arrayOfDouble = new double[j][1];
-          X.a(arrayOfDouble, str);
-          String[] arrayOfString = a(arrayOfDouble);
+          X.ExceptionInVPackage(arrayOfDouble, str);
+          String[] arrayOfString = ExceptionInVPackage(arrayOfDouble);
           s.c(arrayOfString);
         } else if (node.hasAttributes() && node.getNodeName().equals("yAxis")) {
           NamedNodeMap namedNodeMap = node.getAttributes();
@@ -159,37 +159,37 @@ public class TableDataXmlSerializer {
           } 
           String str = node.getTextContent();
           double[][] arrayOfDouble = new double[i][1];
-          X.a(arrayOfDouble, str);
-          String[] arrayOfString = a(arrayOfDouble);
+          X.ExceptionInVPackage(arrayOfDouble, str);
+          String[] arrayOfString = ExceptionInVPackage(arrayOfDouble);
           s.d(arrayOfString);
         } else if (node.hasAttributes() && node.getNodeName().equals("zValues")) {
           String str = node.getTextContent();
           double[][] arrayOfDouble = new double[i][j];
-          X.a(arrayOfDouble, str);
-          s.a(arrayOfDouble);
+          X.ExceptionInVPackage(arrayOfDouble, str);
+          s.ExceptionInVPackage(arrayOfDouble);
         } 
       } 
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new a("Problem loading table, error message:\n" + exception.getMessage() + "\nCheck log file for more details.");
+      throw new ExceptionInVPackage("Problem loading table, error message:\n" + exception.getMessage() + "\nCheck log file for more details.");
     } 
     return s;
   }
   
   public s b(String paramString, s params) {
-    s s1 = a(paramString);
-    fh.a(s1, params);
+    s s1 = ExceptionInVPackage(paramString);
+    fh.ExceptionInVPackage(s1, params);
     return params;
   }
   
-  private String[] a(double[][] paramArrayOfdouble) {
+  private String[] ExceptionInVPackage(double[][] paramArrayOfdouble) {
     String[] arrayOfString = new String[paramArrayOfdouble.length];
     for (byte b = 0; b < paramArrayOfdouble.length; b++)
       arrayOfString[b] = paramArrayOfdouble[b][0] + ""; 
     return arrayOfString;
   }
   
-  public void a(String paramString, Document paramDocument) {
+  public void ExceptionInVPackage(String paramString, Document paramDocument) {
     try {
       File file = new File(paramString);
       if (!file.exists())
@@ -204,7 +204,7 @@ public class TableDataXmlSerializer {
       fileOutputStream.close();
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new a("Error Saving Document. Check Log file for details.");
+      throw new ExceptionInVPackage("Error Saving Document. Check Log file for details.");
     } 
   }
 }

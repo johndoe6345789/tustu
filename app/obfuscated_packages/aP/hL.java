@@ -2,14 +2,14 @@ package aP;
 
 import G.R;
 import G.Y;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
 import java.io.File;
 import java.util.List;
-import r.i;
-import u.g;
+import r.RInterfaceIndia;
+import u.ExceptionPrintstacktrace;
 
-class hL implements g {
+class hL implements ExceptionPrintstacktrace {
   R a;
   
   Y b;
@@ -35,7 +35,7 @@ class hL implements g {
   public boolean d() {
     boolean bool = bV.a("Are you sure you want to load all settings from " + this.c.getName() + "?", dd.a().c(), true);
     if (bool) {
-      if (i.a().a("-=fds[pfds[pgd-0")) {
+      if (RInterfaceIndia.a().a("-=fds[pfds[pgd-0")) {
         String str = "Save before loading " + this.c.getName() + " from a Difference report.";
         f.a().d(this.a, str);
       } 
@@ -45,8 +45,8 @@ class hL implements g {
         for (byte b = 0; b < this.b.e(); b++) {
           try {
             this.a.h().a(b, 0, this.b.b(b));
-            this.a.h().g();
-          } catch (g g1) {
+            this.a.h().ExceptionPrintstacktrace();
+          } catch (ExceptionPrintstacktrace g1) {
             g1.printStackTrace();
             String str = "A strange error occured!\nI am not sure what would cause this, but it appears that it happened.\nPlease report it.";
             bV.d(str, null);

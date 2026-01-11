@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 import bH.D;
 
@@ -13,7 +13,7 @@ public class UnsupportedFeatureFunction extends ac {
     this.a = paramString;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     if (!this.b) {
       D.d(this.a + " not supported in this edition.");
       this.b = true;
@@ -21,7 +21,7 @@ public class UnsupportedFeatureFunction extends ac {
     return Double.NaN;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
 }

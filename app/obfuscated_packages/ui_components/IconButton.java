@@ -1,12 +1,12 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.j;
 import com.efiAnalytics.ui.bq;
 import com.efiAnalytics.ui.br;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
-import h.b;
+import h.ClassTypeInHPackage;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -15,19 +15,19 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class ag extends JButton {
-  private String b = null;
+  private String ClassTypeInHPackage = null;
   
-  int a = 14;
+  int ExceptionInVPackage = 14;
   
   private static Image c = null;
   
   private static Image d = null;
   
   public ag() {
-    c = b();
+    c = ClassTypeInHPackage();
     d = c();
     if (c != null) {
-      ImageIcon imageIcon = new ImageIcon(b());
+      ImageIcon imageIcon = new ImageIcon(ClassTypeInHPackage());
       setIcon(imageIcon);
     } else {
       setText("...");
@@ -37,40 +37,40 @@ public class ag extends JButton {
       setDisabledIcon(imageIcon);
     } 
     addActionListener(new ah(this));
-    Dimension dimension = eJ.a(this.a * 2 / 3 + 8, this.a + 6);
+    Dimension dimension = eJ.ExceptionInVPackage(this.ExceptionInVPackage * 2 / 3 + 8, this.ExceptionInVPackage + 6);
     setPreferredSize(dimension);
     setMinimumSize(dimension);
     setEnabled(false);
   }
   
-  private void a() {
-    if (b.a().a("searchLogFiles")) {
-      j j = hx.a().r().a(this.b);
+  private void ExceptionInVPackage() {
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("searchLogFiles")) {
+      j j = hx.ExceptionInVPackage().r().ExceptionInVPackage(this.ClassTypeInHPackage);
       br br = new br();
-      S.a((bq)br, j, this);
+      S.ExceptionInVPackage((bq)br, j, this);
       add((Component)br);
       br.show(this, 0, getHeight());
     } 
   }
   
-  void a(String paramString) {
-    this.b = paramString;
+  void ExceptionInVPackage(String paramString) {
+    this.ClassTypeInHPackage = paramString;
     setEnabled((paramString != null && !paramString.trim().isEmpty()));
   }
   
-  private Image b() {
+  private Image ClassTypeInHPackage() {
     if (c == null)
       try {
-        c = cO.a().a(cO.y, this, this.a);
-      } catch (a a) {
-        a.printStackTrace();
+        c = cO.ExceptionInVPackage().ExceptionInVPackage(cO.y, this, this.ExceptionInVPackage);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
       }  
     return c;
   }
   
   private Image c() {
     if (d == null)
-      d = GrayFilter.createDisabledImage(b()); 
+      d = GrayFilter.createDisabledImage(ClassTypeInHPackage()); 
     return d;
   }
 }

@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -16,7 +16,7 @@ public class SmoothBasicFunction extends ac {
     this.b = paramab1;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     if (Double.isNaN(this.c)) {
       this.c = this.b.b(paramS);
     } else {
@@ -25,7 +25,7 @@ public class SmoothBasicFunction extends ac {
     return this.c;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

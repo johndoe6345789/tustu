@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 public class SearchBoxPanel extends JPanel {
   Font a = new Font("Helv", 0, eJ.a(11));
@@ -68,11 +68,11 @@ public class SearchBoxPanel extends JPanel {
       for (String str : arrayOfString) {
         R r = T.a().c(str);
         if (r != null) {
-          ArrayList arrayList1 = g.a(r, this.b.getText());
+          ArrayList arrayList1 = SComponentGolf.a(r, this.b.getText());
           arrayList.addAll(arrayList1);
         } 
       } 
-      List list = dd.a().g().b(this.d);
+      List list = dd.a().SComponentGolf().b(this.d);
       arrayList.addAll(list);
     } 
     return arrayList;
@@ -106,7 +106,7 @@ public class SearchBoxPanel extends JPanel {
   }
   
   private void e() {
-    this.b.setText(g.b("Search"));
+    this.b.setText(SComponentGolf.b("Search"));
     this.b.setForeground(Color.gray);
   }
   

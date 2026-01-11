@@ -1,6 +1,6 @@
 package ao;
 
-import g.k;
+import g.IOJFileChooser;
 import java.io.File;
 import java.io.IOException;
 
@@ -16,7 +16,7 @@ public class bt {
   public static String a(String paramString) {
     try {
       String str = (new File(".")).getCanonicalPath() + paramString;
-      str = k.a(str, "\\", "/");
+      str = IOJFileChooser.a(str, "\\", "/");
       return "file:///" + str;
     } catch (IOException iOException) {
       iOException.printStackTrace();

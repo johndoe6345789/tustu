@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import bA.c;
+import bA.JCheckBoxMenuItemExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,8 +8,8 @@ class TriggerStateChangeListener implements ActionListener {
   TriggerStateChangeListener(o paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    c c = (c)paramActionEvent.getSource();
-    this.a.k.a(c.getState());
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    this.a.k.a(JCheckBoxMenuItemExtension.getState());
     this.a.k.i();
   }
 }

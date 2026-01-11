@@ -1,17 +1,17 @@
 package aP;
 
-import bq.a;
+import bq.BqInterfaceAlpha;
 import com.efiAnalytics.ui.bq;
-import s.g;
+import s.SComponentGolf;
 
-class gI extends a {
+class gI extends BqInterfaceAlpha {
   gI(dB paramdB, String paramString) {
-    super(g.b(paramString));
+    super(SComponentGolf.b(paramString));
   }
   
   public void setPopupMenuVisible(boolean paramBoolean) {
     if (paramBoolean) {
-      dd.a().b().a((bq)this);
+      dd.BqInterfaceAlpha().b().BqInterfaceAlpha((bq)this);
     } else {
       removeAll();
     } 

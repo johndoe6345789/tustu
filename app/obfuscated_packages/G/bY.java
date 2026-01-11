@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 import java.util.StringTokenizer;
@@ -62,10 +62,10 @@ public class bY extends Q {
       parambZ.a(arrayOfByte);
     } catch (NumberFormatException numberFormatException) {
       numberFormatException.printStackTrace();
-      throw new g("Unable to parse SendCommand:" + str + "\nCould not convert to number " + numberFormatException.getMessage(), numberFormatException);
+      throw new ExceptionPrintstacktrace("Unable to parse SendCommand:" + str + "\nCould not convert to number " + numberFormatException.getMessage(), numberFormatException);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Unable to parse SendCommand:" + str, exception);
+      throw new ExceptionPrintstacktrace("Unable to parse SendCommand:" + str, exception);
     } 
     return parambZ;
   }

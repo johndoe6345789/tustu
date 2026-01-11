@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -10,7 +10,7 @@ public class aS extends bv {
   
   private final ArrayList f = new ArrayList();
   
-  private final ArrayList g = new ArrayList();
+  private final ArrayList ExceptionPrintstacktrace = new ArrayList();
   
   private final ArrayList h = new ArrayList();
   
@@ -65,11 +65,11 @@ public class aS extends bv {
   }
   
   public Iterator c() {
-    return this.g.iterator();
+    return this.ExceptionPrintstacktrace.iterator();
   }
   
   public void b(Character paramCharacter) {
-    this.g.add(paramCharacter);
+    this.ExceptionPrintstacktrace.add(paramCharacter);
   }
   
   public void b(String paramString) {
@@ -96,7 +96,7 @@ public class aS extends bv {
     this.k = paramString;
   }
   
-  public String g() {
+  public String ExceptionPrintstacktrace() {
     return this.l;
   }
   
@@ -116,7 +116,7 @@ public class aS extends bv {
     return this.o;
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     this.o = paramString;
   }
   
@@ -186,7 +186,7 @@ public class aS extends bv {
     } else if (paramString.equals("extendedDataInSize")) {
       a(true);
     } else {
-      throw new g("Unknown PortEditor Option: " + paramString + ", Known Options: filter32BitChannels, extendedDataInSize");
+      throw new ExceptionPrintstacktrace("Unknown PortEditor Option: " + paramString + ", Known Options: filter32BitChannels, extendedDataInSize");
     } 
   }
   

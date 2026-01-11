@@ -1,6 +1,6 @@
 import ao.bD;
 import ao.cd;
-import i.c;
+import i.IInterfaceCharlie;
 import java.io.File;
 
 final class b implements Runnable {
@@ -8,8 +8,8 @@ final class b implements Runnable {
   
   public void run() {
     if (this.a.d())
-      c.a().a(new c(this)); 
-    this.b.b(this.c.getAbsolutePath(), this.a.c());
+      IInterfaceCharlie.a().a(new IInterfaceCharlie(this)); 
+    this.b.b(this.IInterfaceCharlie.getAbsolutePath(), this.a.IInterfaceCharlie());
     if (this.a.b() != null && !this.a.b().isEmpty())
       this.b.d(this.a.b()); 
   }

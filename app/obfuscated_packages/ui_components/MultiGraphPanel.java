@@ -2,15 +2,15 @@ package ao;
 
 import W.j;
 import W.n;
-import ar.c;
-import ar.f;
+import ar.ArComponentCharlie;
+import ar.ArComponentFoxtrot;
 import bH.S;
 import com.efiAnalytics.ui.eJ;
-import g.g;
-import g.k;
-import h.b;
-import h.g;
-import h.i;
+import ActionListenerInGPackage.ActionListenerInGPackage;
+import ActionListenerInGPackage.k;
+import h.ClassTypeInHPackage;
+import h.ActionListenerInGPackage;
+import h.IOProperties;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -35,23 +35,23 @@ import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 
 public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
-  int a = i.a("numberOfGraphs", i.t);
+  int a = IOProperties.a("numberOfGraphs", IOProperties.t);
   
-  int b = i.a("numberOfOverlays", i.u);
+  int ClassTypeInHPackage = IOProperties.a("numberOfOverlays", IOProperties.u);
   
-  int c = 0;
+  int ArComponentCharlie = 0;
   
   int d = 0;
   
   public static final int e = eJ.a(14);
   
-  Dimension f = null;
+  Dimension ArComponentFoxtrot = null;
   
-  Font g = new Font("Arial Unicode MS", 1, eJ.a(11));
+  Font ActionListenerInGPackage = new Font("Arial Unicode MS", 1, eJ.a(11));
   
   hx h = null;
   
-  boolean i = false;
+  boolean IOProperties = false;
   
   long j = 0L;
   
@@ -74,7 +74,7 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   public hj(hx paramhx) {
     this.h = paramhx;
     setLayout(new BorderLayout());
-    p = i.d();
+    p = IOProperties.d();
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add(this.m, "North");
@@ -92,11 +92,11 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     jPanel1.addMouseListener(hk);
     this.k = new ap("Quick Views");
     this.k.a(new hl(this));
-    this.k.setFont(this.g);
+    this.k.setFont(this.ActionListenerInGPackage);
     this.k.a(new Dimension(eJ.a(90), eJ.a(25)));
   }
   
-  private hw f() {
+  private hw ArComponentFoxtrot() {
     if (this.r == null || !this.r.isAlive()) {
       this.r = new hw(this);
       this.r.start();
@@ -104,18 +104,18 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     return this.r;
   }
   
-  public void c() {
+  public void ArComponentCharlie() {
     JPopupMenu jPopupMenu = new JPopupMenu("menuFieldGroups");
     hm hm = new hm(this);
     this.k.add(jPopupMenu);
-    jPopupMenu.setFont(this.g);
+    jPopupMenu.setFont(this.ActionListenerInGPackage);
     jPopupMenu.add("Save Current As").addActionListener(hm);
-    List list = f.a().b();
+    List list = ArComponentFoxtrot.a().ClassTypeInHPackage();
     JMenu jMenu = new JMenu("Delete Group");
     hn hn = new hn(this);
-    for (c c : list) {
-      if (!c.b().equals("Default")) {
-        JMenuItem jMenuItem1 = new JMenuItem(c.b());
+    for (ArComponentCharlie ArComponentCharlie : list) {
+      if (!ArComponentCharlie.ClassTypeInHPackage().equals("Default")) {
+        JMenuItem jMenuItem1 = new JMenuItem(ArComponentCharlie.ClassTypeInHPackage());
         jMenu.add(jMenuItem1);
         jMenuItem1.addActionListener(hn);
       } 
@@ -124,11 +124,11 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     JMenuItem jMenuItem = jPopupMenu.add("Clear current Selections (CTRL+Delete)");
     jMenuItem.addActionListener(new ho(this));
     jPopupMenu.addSeparator();
-    for (c c : list) {
-      String str1 = c.b();
+    for (ArComponentCharlie ArComponentCharlie : list) {
+      String str1 = ArComponentCharlie.ClassTypeInHPackage();
       JMenuItem jMenuItem1 = new JMenuItem(str1);
       jMenuItem1.addActionListener(hm);
-      String str2 = c.a();
+      String str2 = ArComponentCharlie.a();
       jMenuItem1.setToolTipText(str2);
       jPopupMenu.add(jMenuItem1);
     } 
@@ -137,32 +137,32 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   
   public void a(String paramString) {
     if (paramString.equals("Save Current As")) {
-      g g = new g(k.a(this), "{Field Group Name}", false, "       Save current Field Selection As", true);
-      if (g.a)
-        b(g.a()); 
+      ActionListenerInGPackage ActionListenerInGPackage = new ActionListenerInGPackage(k.a(this), "{Field Group Name}", false, "       Save current Field Selection As", true);
+      if (ActionListenerInGPackage.a)
+        ClassTypeInHPackage(ActionListenerInGPackage.a()); 
     } else {
       d(paramString);
     } 
   }
   
-  public void b(String paramString) {
-    String[] arrayOfString = i.e("graph");
-    i.c("FIELD_GROUP_NAME_" + paramString, paramString);
-    for (byte b = 0; b < arrayOfString.length; b++) {
-      if (arrayOfString[b].indexOf(".") > 0 && arrayOfString[b].length() < 10)
-        i.c("FIELD_SELECTED_GROUP_" + paramString + "_" + arrayOfString[b], i.a(arrayOfString[b], " ")); 
+  public void ClassTypeInHPackage(String paramString) {
+    String[] arrayOfString = IOProperties.e("graph");
+    IOProperties.ArComponentCharlie("FIELD_GROUP_NAME_" + paramString, paramString);
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < arrayOfString.length; ClassTypeInHPackage++) {
+      if (arrayOfString[ClassTypeInHPackage].indexOf(".") > 0 && arrayOfString[ClassTypeInHPackage].length() < 10)
+        IOProperties.ArComponentCharlie("FIELD_SELECTED_GROUP_" + paramString + "_" + arrayOfString[ClassTypeInHPackage], IOProperties.a(arrayOfString[ClassTypeInHPackage], " ")); 
     } 
   }
   
-  public void c(String paramString) {
+  public void ArComponentCharlie(String paramString) {
     eJ eJ = new eJ(k.a(this), "Are you sure you want to delete the field group " + paramString, true);
     if (!eJ.a)
       return; 
-    f.a().b(paramString);
+    ArComponentFoxtrot.a().ClassTypeInHPackage(paramString);
   }
   
   public void d(String paramString) {
-    f.a().a(paramString);
+    ArComponentFoxtrot.a().a(paramString);
   }
   
   public void a() {
@@ -171,10 +171,10 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
       this.m.removeAll();
     } catch (Exception exception) {}
     for (hu hu : this.l)
-      aV.a().b(hu); 
+      aV.a().ClassTypeInHPackage(hu); 
     this.l.clear();
-    this.a = i.a("numberOfGraphs", i.t);
-    this.b = i.a("numberOfOverlays", i.u);
+    this.a = IOProperties.a("numberOfGraphs", IOProperties.t);
+    this.ClassTypeInHPackage = IOProperties.a("numberOfOverlays", IOProperties.u);
     this.m.setLayout(new BoxLayout(this.m, 1));
     this.m.add(this.k);
     hp hp = new hp(this);
@@ -182,36 +182,36 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     if (n == null || n.isEmpty())
       return; 
     String[] arrayOfString = new String[n.size()];
-    byte b;
-    for (b = 0; b < n.size(); b++) {
-      j j = (j)n.get(b);
+    byte ClassTypeInHPackage;
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < n.size(); ClassTypeInHPackage++) {
+      j j = (j)n.get(ClassTypeInHPackage);
       if (j.l()) {
-        arrayOfString[b] = j.a() + p;
+        arrayOfString[ClassTypeInHPackage] = j.a() + p;
       } else {
-        arrayOfString[b] = j.a();
+        arrayOfString[ClassTypeInHPackage] = j.a();
       } 
     } 
-    if (i.a(i.E, i.F))
+    if (IOProperties.a(IOProperties.E, IOProperties.F))
       arrayOfString = S.a(arrayOfString); 
-    for (b = 0; b < this.a; b++) {
-      bo bo = new bo("Graph " + (b + 1));
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < this.a; ClassTypeInHPackage++) {
+      bo bo = new bo("Graph " + (ClassTypeInHPackage + 1));
       this.h.a(bo);
       this.m.add(bo);
-      for (byte b1 = 0; b1 < this.b; b1++) {
-        hu hu = new hu(this, b, b1);
+      for (byte b1 = 0; b1 < this.ClassTypeInHPackage; b1++) {
+        hu hu = new hu(this, ClassTypeInHPackage, b1);
         hu.addKeyListener(hp);
-        hu.setFont(this.g);
+        hu.setFont(this.ActionListenerInGPackage);
         this.l.add(hu);
-        hu.a(aV.a().a(b, b1));
+        hu.a(aV.a().a(ClassTypeInHPackage, b1));
         aV.a().a(hu);
         hu.a(false);
         hu.addKeyListener(this.o);
-        hu.setName("graph" + b + "." + b1);
+        hu.setName("graph" + ClassTypeInHPackage + "." + b1);
         hu.a(" ");
         hu.addItemListener(new hq(this));
         for (String str1 : arrayOfString)
           hu.a(str1); 
-        if (b.a().a("fieldSmoothing")) {
+        if (ClassTypeInHPackage.a().a("fieldSmoothing")) {
           JPanel jPanel = new JPanel();
           jPanel.setLayout(new BorderLayout(eJ.a(3), eJ.a(3)));
           jPanel.add("Center", (Component)hu);
@@ -223,24 +223,24 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
         } else {
           bo.add((Component)hu);
         } 
-        String str = f.a().g();
+        String str = ArComponentFoxtrot.a().ActionListenerInGPackage();
         if (str != null) {
-          c c = f.a().c(str);
-          if (c != null) {
-            String str1 = c.c(e(hu.getName()));
+          ArComponentCharlie ArComponentCharlie = ArComponentFoxtrot.a().ArComponentCharlie(str);
+          if (ArComponentCharlie != null) {
+            String str1 = ArComponentCharlie.ArComponentCharlie(e(hu.getName()));
             if (!str1.equals(" ")) {
               if (str1.contains("Field."))
-                str1 = g.a().a(str1); 
+                str1 = ActionListenerInGPackage.a().a(str1); 
               j j = this.h.r().a(str1);
               if (j != null) {
                 if (j.l()) {
-                  hu.b(str1 + p);
+                  hu.ClassTypeInHPackage(str1 + p);
                 } else {
-                  hu.b(str1);
+                  hu.ClassTypeInHPackage(str1);
                 } 
                 a(str1, hu);
               } else {
-                hu.b(" ");
+                hu.ClassTypeInHPackage(" ");
                 a(" ", hu);
               } 
             } else {
@@ -257,8 +257,8 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     setBackground(getBackground());
     if (this.j == 0L) {
       d();
-      this.r = f();
-      this.r.b();
+      this.r = ArComponentFoxtrot();
+      this.r.ClassTypeInHPackage();
       this.j = System.currentTimeMillis();
     } 
   }
@@ -269,11 +269,11 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   
   protected void a(String paramString, hu paramhu) {
     paramString = e(paramString);
-    String str1 = g.a().e(paramString);
+    String str1 = ActionListenerInGPackage.a().e(paramString);
     if (str1 == null || str1.equals("")) {
-      i.c(paramhu.getName(), paramString);
+      IOProperties.ArComponentCharlie(paramhu.getName(), paramString);
     } else {
-      i.c(paramhu.getName(), "Field." + str1);
+      IOProperties.ArComponentCharlie(paramhu.getName(), "Field." + str1);
     } 
     if (paramString == null || paramString.equals(" ")) {
       a(paramhu.getName(), (j)null);
@@ -310,9 +310,9 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   
   public void setForeground(Color paramColor) {
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      arrayOfComponent[b].setForeground(paramColor.darker());
-      arrayOfComponent[b].repaint();
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < arrayOfComponent.length; ClassTypeInHPackage++) {
+      arrayOfComponent[ClassTypeInHPackage].setForeground(paramColor.darker());
+      arrayOfComponent[ClassTypeInHPackage].repaint();
     } 
     super.setForeground(paramColor);
     repaint();
@@ -320,29 +320,29 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   
   public void setBackground(Color paramColor) {
     super.setBackground(paramColor);
-    for (byte b = 0; b < getComponentCount(); b++)
-      getComponent(b).setBackground(paramColor); 
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < getComponentCount(); ClassTypeInHPackage++)
+      getComponent(ClassTypeInHPackage).setBackground(paramColor); 
     repaint();
   }
   
   public void a(Color paramColor) {}
   
   public void a(Color paramColor, int paramInt) {
-    int i = 0;
+    int IOProperties = 0;
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (arrayOfComponent[b] instanceof Container) {
-        Container container = (Container)arrayOfComponent[b];
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < arrayOfComponent.length; ClassTypeInHPackage++) {
+      if (arrayOfComponent[ClassTypeInHPackage] instanceof Container) {
+        Container container = (Container)arrayOfComponent[ClassTypeInHPackage];
         Component[] arrayOfComponent1 = container.getComponents();
         for (byte b1 = 0; b1 < arrayOfComponent1.length; b1++) {
           if (arrayOfComponent1[b1] instanceof hu) {
-            if (i == paramInt) {
+            if (IOProperties == paramInt) {
               hu hu = (hu)arrayOfComponent1[b1];
               hu.a(paramColor);
               hu.repaint();
               return;
             } 
-            i++;
+            IOProperties++;
           } 
         } 
       } 
@@ -353,17 +353,17 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     return getMinimumSize();
   }
   
-  public void c(boolean paramBoolean) {
-    this.i = paramBoolean;
-    k.b(this);
+  public void ArComponentCharlie(boolean paramBoolean) {
+    this.IOProperties = paramBoolean;
+    k.ClassTypeInHPackage(this);
     Frame frame = k.a(this);
     if (frame != null)
       frame.validate(); 
   }
   
   public Dimension getMinimumSize() {
-    if (this.i) {
-      this.f = super.getMinimumSize();
+    if (this.IOProperties) {
+      this.ArComponentFoxtrot = super.getMinimumSize();
       Dimension dimension = super.getMinimumSize();
       Insets insets = getInsets();
       dimension.width = this.d + insets.left + insets.right;
@@ -373,17 +373,17 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   }
   
   public void setSize(int paramInt1, int paramInt2) {
-    int i = getX();
+    int IOProperties = getX();
     int j = getY();
-    setBounds(i, j, paramInt1, paramInt2);
+    setBounds(IOProperties, j, paramInt1, paramInt2);
   }
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
-    if (this.i) {
+    if (this.IOProperties) {
       paramInt1 = e - (super.getMinimumSize()).width;
       paramInt3 = (super.getMinimumSize()).width;
     } 
-    if (this.i && getWidth() >= (super.getMinimumSize()).width)
+    if (this.IOProperties && getWidth() >= (super.getMinimumSize()).width)
       paramInt1 = getX(); 
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
     a(false);
@@ -403,7 +403,7 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   }
   
   public void e() {
-    if (!this.i)
+    if (!this.IOProperties)
       return; 
     boolean bool = false;
     while ((getLocation()).x > e - (getSize()).width + 2) {
@@ -418,7 +418,7 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
       super.setBounds(point.x, point.y, (getSize()).width, (getSize()).height);
     } 
     if (bool)
-      bq.a().c().requestFocus(); 
+      bq.a().ArComponentCharlie().requestFocus(); 
   }
   
   public void paint(Graphics paramGraphics) {
@@ -427,8 +427,8 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
     paramGraphics.draw3DRect((getSize()).width - 8, 5, 3, (getSize()).height - 10, true);
   }
   
-  public void b(boolean paramBoolean) {
-    c(paramBoolean);
+  public void ClassTypeInHPackage(boolean paramBoolean) {
+    ArComponentCharlie(paramBoolean);
   }
   
   public void mouseDragged(MouseEvent paramMouseEvent) {
@@ -443,11 +443,11 @@ public class hj extends JPanel implements bn, hf, k, MouseMotionListener {
   
   public void repaint() {
     super.repaint();
-    for (byte b = 0; b < getComponentCount(); b++)
-      getComponent(b).repaint(); 
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < getComponentCount(); ClassTypeInHPackage++)
+      getComponent(ClassTypeInHPackage).repaint(); 
   }
   
-  public void b() {
+  public void ClassTypeInHPackage() {
     for (hu hu : this.l)
       hu.setSelectedItem(" "); 
   }

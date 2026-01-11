@@ -2,7 +2,7 @@ package ao;
 
 import W.j;
 import W.n;
-import bE.l;
+import bE.BeInterfaceLima;
 import com.efiAnalytics.ui.s;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -60,9 +60,9 @@ class gX extends s {
   }
   
   private void f() {
-    Iterator<l> iterator = this.d.iterator();
+    Iterator<BeInterfaceLima> iterator = this.d.iterator();
     while (iterator.hasNext())
-      ((l)iterator.next()).a(); 
+      ((BeInterfaceLima)iterator.next()).a(); 
   }
 }
 

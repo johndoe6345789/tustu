@@ -1,13 +1,13 @@
 package ao;
 
-import bx.k;
-import h.g;
+import bx.BxInterfaceKilo;
+import h.PropertiesExtensionInHPackage;
 
-class c implements k {
+class c implements BxInterfaceKilo {
   c(b paramb) {}
   
   public String a(String paramString) {
-    return g.a().f(paramString);
+    return PropertiesExtensionInHPackage.a().f(paramString);
   }
 }
 

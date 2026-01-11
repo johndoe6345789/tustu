@@ -2,8 +2,8 @@ package ao;
 
 import com.efiAnalytics.ui.aN;
 import com.efiAnalytics.ui.bV;
-import d.b;
-import d.g;
+import d.PropertiesExtensionInDPackage;
+import d.HashMapUsingArrayList;
 import java.util.Properties;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -27,8 +27,8 @@ class bv implements HyperlinkListener {
             str2 = str2.substring(0, str2.indexOf("?"));
           } 
           if (str1.equals("appAction")) {
-            b b = b.a(str3);
-            g.a().a(str2, (Properties)b);
+            PropertiesExtensionInDPackage PropertiesExtensionInDPackage = PropertiesExtensionInDPackage.a(str3);
+            HashMapUsingArrayList.a().a(str2, (Properties)PropertiesExtensionInDPackage);
           } else {
             bV.d("Unsure how to handle link: " + str, this.a.a);
           } 

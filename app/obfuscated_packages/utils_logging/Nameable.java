@@ -1,6 +1,6 @@
 package bH;
 
-import bI.e;
+import bI.BiInterfaceEcho;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -48,10 +48,10 @@ public class f {
       byte[] arrayOfByte2 = messageDigest.digest();
       messageDigest.update(arrayOfByte1);
       arrayOfByte2 = messageDigest.digest();
-      e e = new e();
-      e.a(arrayOfByte2);
+      BiInterfaceEcho BiInterfaceEcho = new BiInterfaceEcho();
+      BiInterfaceEcho.a(arrayOfByte2);
       byte[] arrayOfByte3 = new byte[4];
-      arrayOfByte3 = c.a(e.a(), arrayOfByte3, true);
+      arrayOfByte3 = c.a(BiInterfaceEcho.a(), arrayOfByte3, true);
       byte[] arrayOfByte4 = new byte[arrayOfByte2.length + 4];
       System.arraycopy(arrayOfByte3, 0, arrayOfByte4, 0, arrayOfByte3.length);
       System.arraycopy(arrayOfByte2, 0, arrayOfByte4, 4, arrayOfByte2.length);
@@ -77,10 +77,10 @@ public class f {
       arrayOfByte1 = (new String(arrayOfByte1) + paramString6).getBytes();
       messageDigest.update(arrayOfByte1);
       byte[] arrayOfByte2 = messageDigest.digest();
-      e e = new e();
-      e.a(arrayOfByte2);
+      BiInterfaceEcho BiInterfaceEcho = new BiInterfaceEcho();
+      BiInterfaceEcho.a(arrayOfByte2);
       byte[] arrayOfByte3 = new byte[4];
-      arrayOfByte3 = c.a(e.a(), arrayOfByte3, true);
+      arrayOfByte3 = c.a(BiInterfaceEcho.a(), arrayOfByte3, true);
       byte[] arrayOfByte4 = new byte[arrayOfByte2.length + 4];
       System.arraycopy(arrayOfByte3, 0, arrayOfByte4, 0, arrayOfByte3.length);
       System.arraycopy(arrayOfByte2, 0, arrayOfByte4, 4, arrayOfByte2.length);
@@ -106,10 +106,10 @@ public class f {
       arrayOfByte1 = (new String(arrayOfByte1) + paramString6).getBytes();
       messageDigest.update(arrayOfByte1);
       byte[] arrayOfByte2 = messageDigest.digest();
-      e e = new e();
-      e.a(arrayOfByte2);
+      BiInterfaceEcho BiInterfaceEcho = new BiInterfaceEcho();
+      BiInterfaceEcho.a(arrayOfByte2);
       byte[] arrayOfByte3 = new byte[4];
-      arrayOfByte3 = c.a(e.a(), arrayOfByte3, true);
+      arrayOfByte3 = c.a(BiInterfaceEcho.a(), arrayOfByte3, true);
       byte[] arrayOfByte4 = new byte[arrayOfByte2.length + 4];
       System.arraycopy(arrayOfByte3, 0, arrayOfByte4, 0, arrayOfByte3.length);
       System.arraycopy(arrayOfByte2, 0, arrayOfByte4, 4, arrayOfByte2.length);

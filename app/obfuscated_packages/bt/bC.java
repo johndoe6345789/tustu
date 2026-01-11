@@ -1,8 +1,8 @@
 package bt;
 
-import bG.p;
+import bG.BgInterfacePapa;
 
-class bC implements p {
+class bC implements BgInterfacePapa {
   bC(bB parambB) {}
   
   public void a(double paramDouble) {

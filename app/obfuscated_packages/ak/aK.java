@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import bH.D;
 import bH.I;
@@ -29,10 +29,10 @@ public class aK extends g {
         str = l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       byte b1 = 0;
       String[] arrayOfString1 = s();
@@ -61,11 +61,11 @@ public class aK extends g {
         if (str1.contains("  "))
           str1 = X.b(str1, "  ", " "); 
         if (str1.equals("Time")) {
-          d1.a(3);
-          d1.a("Time");
+          d1.ExceptionInVPackage(3);
+          d1.ExceptionInVPackage("Time");
           d1.b("s");
           str1 = "Time";
-          d1.a(0.001F);
+          d1.ExceptionInVPackage(0.001F);
         } 
         try {
           if (arrayOfString1 != null && arrayOfString1.length > b1)
@@ -101,8 +101,8 @@ public class aK extends g {
         for (byte b = 0; b < 100 && i(str2); b++)
           str2 = str1 + b; 
         str1 = str2;
-        d1.a(str1);
-        d d2 = a(d1);
+        d1.ExceptionInVPackage(str1);
+        d d2 = ExceptionInVPackage(d1);
         if (d2 != null) {
           this.g.add(d2);
           b1++;
@@ -124,10 +124,10 @@ public class aK extends g {
       arrayOfString = str.split(Pattern.quote(r()));
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     return arrayOfString;
@@ -145,22 +145,22 @@ public class aK extends g {
         if (str1.isEmpty()) {
           arrayOfString[b] = str1;
           b++;
-        } else if (!I.a(str1) && Float.isNaN(g(str1))) {
+        } else if (!I.ExceptionInVPackage(str1) && Float.isNaN(g(str1))) {
           arrayOfString[b] = str1;
           b++;
         } else {
-          a(true);
+          ExceptionInVPackage(true);
           c();
-          a(true);
+          ExceptionInVPackage(true);
           return null;
         } 
       } 
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     return arrayOfString;
@@ -171,14 +171,14 @@ public class aK extends g {
     String str = null;
     try {
       str = l();
-      a(true);
+      ExceptionInVPackage(true);
       arrayOfString = str.split(Pattern.quote(r()));
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get val from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get val from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     return arrayOfString;

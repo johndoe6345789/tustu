@@ -1,6 +1,6 @@
 package ao;
 
-import g.k;
+import g.IOJFileChooser;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +15,7 @@ final class P implements ActionListener {
       str1 = str1 + str + ", "; 
     if (str1.endsWith(", "))
       str1 = str1.substring(0, str1.length() - 2); 
-    String str2 = k.a("{Save the fields in '" + this.b + "' As}", false, "Selected Fields: " + str1, true, this.c);
+    String str2 = IOJFileChooser.a("{Save the fields in '" + this.b + "' As}", false, "Selected Fields: " + str1, true, this.c);
     if (str2 != null && !str2.isEmpty())
       O.a(str2, this.a); 
   }

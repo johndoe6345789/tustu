@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.search;
 
-import B.g;
+import B.BInterfaceGolf;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -12,7 +12,7 @@ class IpSearchExecutionThread extends Thread {
   public void run() {
     ContinuousIpSearchPanel.access$400(this.b);
     ContinuousIpSearchPanel.access$300(this.b);
-    g.a().a(this.b.d);
+    BInterfaceGolf.a().a(this.b.d);
     while (!this.a) {
       try {
         Thread.sleep((this.b.f / 4));

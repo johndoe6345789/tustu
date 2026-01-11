@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.c;
 
 public class aK extends aM {
@@ -32,12 +32,12 @@ public class aK extends aM {
   }
   
   public int[][] a(Y paramY) {
-    if (g() + a() * m() * e() > paramY.c(d())) {
+    if (ExceptionPrintstacktrace() + a() * m() * e() > paramY.c(d())) {
       String str = "Attempt to retrieve data beyond page size!\n\tCheck offset and size for parameter:" + aL();
-      throw new g(str);
+      throw new ExceptionPrintstacktrace(str);
     } 
     int[][] arrayOfInt = new int[a()][m()];
-    int i = g() + e();
+    int i = ExceptionPrintstacktrace() + e();
     for (byte b = 0; b < arrayOfInt.length; b++) {
       for (byte b1 = 0; b1 < (arrayOfInt[0]).length; b1++) {
         byte b2;

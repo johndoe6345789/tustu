@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 import bH.D;
-import bI.a;
+import bI.IOInBiPackage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class TuningViewData extends ArrayList {
-  private String a = "";
+  private String IOInBiPackage = "";
   
   private String b = "Tuning View";
   
@@ -19,12 +19,12 @@ public class TuningViewData extends ArrayList {
   
   private String e = null;
   
-  public String a() {
-    return this.a;
+  public String IOInBiPackage() {
+    return this.IOInBiPackage;
   }
   
-  public void a(String paramString) {
-    this.a = paramString;
+  public void IOInBiPackage(String paramString) {
+    this.IOInBiPackage = paramString;
   }
   
   public String b() {
@@ -40,9 +40,9 @@ public class TuningViewData extends ArrayList {
       return this.c; 
     if (this.d != null && this.d.exists())
       try {
-        this.c = a.b(this.d.getAbsolutePath());
+        this.c = IOInBiPackage.b(this.d.getAbsolutePath());
       } catch (IOException iOException) {
-        D.a("Failed to write TuningView Preview File.");
+        D.IOInBiPackage("Failed to write TuningView Preview File.");
         Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, iOException);
         return this.c;
       }  
@@ -55,7 +55,7 @@ public class TuningViewData extends ArrayList {
       this.d = null; 
   }
   
-  public void a(File paramFile) {
+  public void IOInBiPackage(File paramFile) {
     this.d = paramFile;
     if (paramFile != null && paramFile.exists())
       this.c = null; 
@@ -68,7 +68,7 @@ public class TuningViewData extends ArrayList {
       String str = b() + Math.random();
       this.d = File.createTempFile(str, ".png");
       this.d.deleteOnExit();
-      a.a(this.c, this.d.getAbsolutePath());
+      IOInBiPackage.IOInBiPackage(this.c, this.d.getAbsolutePath());
       return this.d;
     } 
     return null;

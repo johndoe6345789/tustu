@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
-import s.g;
+import s.SComponentGolf;
 
 public class jL extends JPanel implements jK {
   R a = null;
@@ -18,8 +18,8 @@ public class jL extends JPanel implements jK {
   
   public jL() {
     setLayout(new BorderLayout());
-    setBorder(BorderFactory.createTitledBorder(g.b("Tuners Log")));
-    String str = "<html>" + g.b("Notes and Comments for the current tune") + "</html>";
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Tuners Log")));
+    String str = "<html>" + SComponentGolf.b("Notes and Comments for the current tune") + "</html>";
     JLabel jLabel = new JLabel(str);
     add("North", jLabel);
     JScrollPane jScrollPane = new JScrollPane(this.b);

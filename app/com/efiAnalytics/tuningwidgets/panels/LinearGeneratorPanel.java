@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.et;
 import java.awt.Component;
 import java.awt.GridLayout;
 import javax.swing.BorderFactory;
-import s.g;
+import s.SComponentGolf;
 
 public class LinearGeneratorPanel extends aL {
   bu a = null;
@@ -21,7 +21,7 @@ public class LinearGeneratorPanel extends aL {
   
   public LinearGeneratorPanel(bu parambu) {
     this.a = parambu;
-    setBorder(BorderFactory.createTitledBorder(g.b(parambu.h())));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b(parambu.h())));
     setLayout(new GridLayout(3, 3, 3, 3));
     add(new GeneratorPanelLabel(this, "", 4));
     add(new GeneratorPanelLabel(this, parambu.a(), 0));

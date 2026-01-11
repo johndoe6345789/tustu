@@ -1,10 +1,10 @@
 package bt;
 
-import aH.a;
-import s.g;
+import aH.AhInterfaceAlpha;
+import s.SComponentGolf;
 
 class ae {
-  private a b = null;
+  private AhInterfaceAlpha b = null;
   
   private int c;
   
@@ -13,15 +13,15 @@ class ae {
   }
   
   public boolean equals(Object paramObject) {
-    return (paramObject instanceof ae) ? ((((ae)paramObject).a() == this.c)) : ((paramObject instanceof Integer) ? ((((Integer)paramObject).intValue() == this.c)) : super.equals(paramObject));
+    return (paramObject instanceof ae) ? ((((ae)paramObject).AhInterfaceAlpha() == this.c)) : ((paramObject instanceof Integer) ? ((((Integer)paramObject).intValue() == this.c)) : super.equals(paramObject));
   }
   
   public String toString() {
     if (this.b == null)
-      return this.a.c.R() ? ("<html>" + g.b("Scanning for Devices") + "<br>CAN ID: " + this.c) : ("<html>" + g.b("Connect for device list") + "<br>CAN ID: " + this.c); 
+      return this.AhInterfaceAlpha.c.R() ? ("<html>" + SComponentGolf.b("Scanning for Devices") + "<br>CAN ID: " + this.c) : ("<html>" + SComponentGolf.b("Connect for device list") + "<br>CAN ID: " + this.c); 
     if (!this.b.c())
-      return "<html><font color=gray>" + g.b("No Device Found") + "<br>CAN ID: " + this.c; 
-    String str = this.b.a();
+      return "<html><font color=gray>" + SComponentGolf.b("No Device Found") + "<br>CAN ID: " + this.c; 
+    String str = this.b.AhInterfaceAlpha();
     if (str == null || str.isEmpty())
       str = this.b.d(); 
     if (str == null || str.isEmpty())
@@ -31,11 +31,11 @@ class ae {
     return "<html><font color=blue>" + str + "<br>CAN ID: " + this.c + " Online";
   }
   
-  public int a() {
+  public int AhInterfaceAlpha() {
     return this.c;
   }
   
-  public void a(a parama) {
+  public void AhInterfaceAlpha(AhInterfaceAlpha parama) {
     this.b = parama;
   }
 }

@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,7 +9,7 @@ import java.util.List;
 public class dp implements Serializable {
   private String f = null;
   
-  private String g = null;
+  private String ExceptionPrintstacktrace = null;
   
   private String h = null;
   
@@ -95,11 +95,11 @@ public class dp implements Serializable {
     this.o = paramString;
   }
   
-  public String g() {
+  public String ExceptionPrintstacktrace() {
     return this.q;
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     this.q = paramString;
   }
   
@@ -140,7 +140,7 @@ public class dp implements Serializable {
     if (paramString.equals(d) || paramString.equals(e)) {
       this.a.add(paramString);
     } else {
-      throw new g("Unknown Option: " + paramString);
+      throw new ExceptionPrintstacktrace("Unknown Option: " + paramString);
     } 
   }
   
@@ -157,11 +157,11 @@ public class dp implements Serializable {
   }
   
   public void n(String paramString) {
-    this.g = paramString;
+    this.ExceptionPrintstacktrace = paramString;
   }
   
   public String l() {
-    return this.g;
+    return this.ExceptionPrintstacktrace;
   }
   
   public String m() {

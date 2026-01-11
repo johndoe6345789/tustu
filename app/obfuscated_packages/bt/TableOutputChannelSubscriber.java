@@ -4,23 +4,23 @@ import G.R;
 import G.bh;
 import G.cq;
 import G.cu;
-import V.a;
-import bF.d;
+import V.ExceptionInVPackage;
+import bF.TableModelListenerUsingArrayList;
 import bH.D;
 
 public class TableOutputChannelSubscriber implements cq, bP {
-  double a = Double.NaN;
+  double ExceptionInVPackage = Double.NaN;
   
   T b;
   
-  d c;
+  TableModelListenerUsingArrayList c;
   
-  R d;
+  R TableModelListenerUsingArrayList;
   
   bh e;
   
   public F(R paramR, bh parambh, T paramT) {
-    this.d = paramR;
+    this.TableModelListenerUsingArrayList = paramR;
     this.e = parambh;
     this.b = paramT;
     this.c = paramT.b;
@@ -29,21 +29,21 @@ public class TableOutputChannelSubscriber implements cq, bP {
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (!this.b.isEnabled())
       return; 
-    this.c.a(paramDouble);
+    this.c.ExceptionInVPackage(paramDouble);
     this.b.c();
   }
   
-  public void a() {
-    if (this.e.d() != null)
+  public void ExceptionInVPackage() {
+    if (this.e.TableModelListenerUsingArrayList() != null)
       try {
-        cu.a().a(this.d.c(), this.e.d(), this);
-      } catch (a a) {
-        D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a, this);
+        cu.ExceptionInVPackage().ExceptionInVPackage(this.TableModelListenerUsingArrayList.c(), this.e.TableModelListenerUsingArrayList(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
   }
   
   public void b() {
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
 }
 

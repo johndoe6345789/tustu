@@ -3,9 +3,9 @@ package aP;
 import G.R;
 import G.S;
 import G.bU;
-import I.k;
-import bh.l;
-import y.c;
+import I.ThreadedInIPackage;
+import bh.BhInterfaceLima;
+import y.IOInYPackage;
 
 class hZ implements S {
   R a = null;
@@ -14,17 +14,17 @@ class hZ implements S {
   
   public void a(R paramR) {
     this.a = paramR;
-    l.b().a(this.a);
+    BhInterfaceLima.b().a(this.a);
   }
   
   public void b(R paramR) {
     boolean bool = (this.a != null && this.a.equals(paramR)) ? true : false;
-    k.a().a(paramR.c(), bool);
-    k.a().b();
+    ThreadedInIPackage.a().a(paramR.IOInYPackage(), bool);
+    ThreadedInIPackage.a().b();
   }
   
-  public void c(R paramR) {
-    paramR.a((bU)new c(paramR));
+  public void IOInYPackage(R paramR) {
+    paramR.a((bU)new IOInYPackage(paramR));
   }
 }
 

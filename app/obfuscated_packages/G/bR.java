@@ -1,7 +1,7 @@
 package G;
 
-import V.g;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.X;
 import java.io.Serializable;
@@ -33,7 +33,7 @@ public class bR implements dj, Serializable {
       return Double.NaN; 
     try {
       return i.a(r, this.b);
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       e();
       return Double.NaN;
     } 
@@ -45,7 +45,7 @@ public class bR implements dj, Serializable {
       String[] arrayOfString;
       try {
         arrayOfString = i.f(this.b, r);
-      } catch (U u) {
+      } catch (ExceptionInAxPackage u) {
         D.b("Invalid expression: " + this.b);
         this.b = null;
         return;
@@ -53,7 +53,7 @@ public class bR implements dj, Serializable {
       for (String str : arrayOfString) {
         try {
           double d = i.a(r, str);
-        } catch (g g) {
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           D.b("Disabling expression evaluation, Variable not found '" + str + "' in expression: " + this.b);
           this.b = null;
         } 
@@ -88,8 +88,8 @@ public class bR implements dj, Serializable {
     } 
     try {
       return i.a(r, str);
-    } catch (g g) {
-      D.a("Unable to resolve Expression:" + str + "\n" + g.getMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.a("Unable to resolve Expression:" + str + "\n" + ExceptionPrintstacktrace.getMessage());
       return Double.NaN;
     } 
   }

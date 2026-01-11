@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.io.Serializable;
 import java.util.List;
@@ -10,7 +10,7 @@ public abstract class bL extends Q implements Serializable {
   
   public void a(String paramString) {
     if (paramString == null || (!paramString.equals("fixedAngle") && !paramString.equals("basicPattern") && !paramString.equals("bitArrayPattern")))
-      throw new g("Unrecognized TriggerWheel Pattern Class: " + paramString); 
+      throw new ExceptionPrintstacktrace("Unrecognized TriggerWheel Pattern Class: " + paramString); 
     this.a = paramString;
   }
   

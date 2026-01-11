@@ -1,17 +1,17 @@
 import W.n;
 import ao.hx;
 import bH.D;
-import i.b;
+import i.IComponentBravo;
 import javax.swing.SwingUtilities;
 
-class c implements b {
+class c implements IComponentBravo {
   boolean a = false;
   
-  boolean b = false;
+  boolean IComponentBravo = false;
   
   n c = null;
   
-  c(b paramb) {}
+  c(IComponentBravo paramb) {}
   
   public void a() {}
   
@@ -28,11 +28,11 @@ class c implements b {
     } 
   }
   
-  public void b(n paramn) {}
+  public void IComponentBravo(n paramn) {}
   
-  public void b() {
-    if (this.c != null && !this.b && this.c.d() > 200) {
-      this.b = true;
+  public void IComponentBravo() {
+    if (this.c != null && !this.IComponentBravo && this.c.d() > 200) {
+      this.IComponentBravo = true;
       D.c("Setting index: " + (this.c.d() - 1));
       hx.a().e();
       hx.a().c(this.c.d() - 1);

@@ -1,7 +1,7 @@
 package aP;
 
 import G.J;
-import bA.c;
+import bA.JCheckBoxMenuItemExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,8 +9,8 @@ class dS implements ActionListener {
   dS(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    c c = (c)paramActionEvent.getSource();
-    boolean bool = c.getState();
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    boolean bool = JCheckBoxMenuItemExtension.getState();
     J.e(bool);
   }
 }

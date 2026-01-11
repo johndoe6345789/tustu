@@ -1,10 +1,10 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import V.a;
-import aE.a;
+import V.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
 import aP.dd;
-import aP.f;
-import ai.b;
+import aP.NetworkHashMap;
+import ai.EqualsInAiPackage;
 import bH.D;
 import bH.S;
 import bt.bh;
@@ -29,194 +29,194 @@ import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
 public class DataLogProfileEditorPanel extends bh {
-  JComboBox a = new JComboBox();
+  JComboBox ExceptionInVPackage = new JComboBox();
   
-  A b;
+  A EqualsInAiPackage;
   
   JButton c;
   
   JButton d;
   
-  a e;
+  ExceptionInVPackage e;
   
-  JTextPane f = new JTextPane();
+  JTextPane NetworkHashMap = new JTextPane();
   
   JDialog g = null;
   
   HashMap h = new HashMap<>();
   
-  static String i = s.g.b("Default");
+  static String i = s.g.EqualsInAiPackage("Default");
   
-  public g(a parama) {
+  public g(ExceptionInVPackage parama) {
     this.e = parama;
-    this.b = new A();
-    setBorder(BorderFactory.createTitledBorder(s.g.b("Data Log Profile Editor")));
+    this.EqualsInAiPackage = new A();
+    setBorder(BorderFactory.createTitledBorder(s.g.EqualsInAiPackage("Data Log Profile Editor")));
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.add("West", new JLabel("  " + s.g.b("Current Data Log Profile") + ": "));
-    jPanel2.add("Center", this.a);
+    jPanel2.add("West", new JLabel("  " + s.g.EqualsInAiPackage("Current Data Log Profile") + ": "));
+    jPanel2.add("Center", this.ExceptionInVPackage);
     jPanel1.add("West", jPanel2);
     JPanel jPanel3 = new JPanel();
-    jPanel3.setLayout(new GridLayout(1, 0, eJ.a(3), eJ.a(3)));
-    Dimension dimension = new Dimension(eJ.a(24), eJ.a(24));
+    jPanel3.setLayout(new GridLayout(1, 0, eJ.ExceptionInVPackage(3), eJ.ExceptionInVPackage(3)));
+    Dimension dimension = new Dimension(eJ.ExceptionInVPackage(24), eJ.ExceptionInVPackage(24));
     try {
-      Image image = cO.a().a(cO.a, jPanel3, 20);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.ExceptionInVPackage, jPanel3, 20);
       ImageIcon imageIcon = new ImageIcon(image);
       this.c = new JButton(null, imageIcon);
       this.c.setPreferredSize(dimension);
-      this.c.setToolTipText(s.g.b("Add Logging Profile"));
+      this.c.setToolTipText(s.g.EqualsInAiPackage("Add Logging Profile"));
       this.c.addActionListener(new h(this));
       jPanel3.add(this.c);
-    } catch (a a1) {
-      D.a(a1.getLocalizedMessage());
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage(a1.getLocalizedMessage());
     } 
     try {
-      Image image = cO.a().a(cO.b, jPanel3, 20);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.EqualsInAiPackage, jPanel3, 20);
       ImageIcon imageIcon = new ImageIcon(image);
       this.d = new JButton(null, imageIcon);
       this.d.setPreferredSize(dimension);
-      this.d.setToolTipText(s.g.b("Delete Current Logging Profile"));
+      this.d.setToolTipText(s.g.EqualsInAiPackage("Delete Current Logging Profile"));
       this.d.addActionListener(new i(this));
       jPanel3.add(this.d);
-    } catch (a a1) {
-      D.a(a1.getLocalizedMessage());
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage(a1.getLocalizedMessage());
     } 
     try {
-      Image image = cO.a().a(cO.c, jPanel3, 20);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.c, jPanel3, 20);
       ImageIcon imageIcon = new ImageIcon(image);
       JButton jButton = new JButton(null, imageIcon);
       jButton.setPreferredSize(dimension);
-      jButton.setToolTipText(s.g.b("Open Data Log Profiles Help"));
+      jButton.setToolTipText(s.g.EqualsInAiPackage("Open Data Log Profiles Help"));
       jButton.addActionListener(new j(this));
       jPanel3.add(jButton);
-    } catch (a a1) {
-      D.a(a1.getLocalizedMessage());
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage(a1.getLocalizedMessage());
     } 
     jPanel3.add(new JLabel(" "));
     jPanel1.add("East", jPanel3);
     jPanel1.add("South", new JLabel(" "));
     add("North", jPanel1);
     String[] arrayOfString = parama.P();
-    arrayOfString = S.a(arrayOfString);
+    arrayOfString = S.ExceptionInVPackage(arrayOfString);
     boolean bool = false;
-    for (byte b = 0; b < arrayOfString.length; b++) {
-      n n = new n(this, arrayOfString[b]);
-      this.a.addItem(n);
-      if (!bool && arrayOfString[b].equals(""))
+    for (byte EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfString.length; EqualsInAiPackage++) {
+      n n = new n(this, arrayOfString[EqualsInAiPackage]);
+      this.ExceptionInVPackage.addItem(n);
+      if (!bool && arrayOfString[EqualsInAiPackage].equals(""))
         bool = true; 
-      this.h.put(arrayOfString[b], parama.w(arrayOfString[b]));
+      this.h.put(arrayOfString[EqualsInAiPackage], parama.w(arrayOfString[EqualsInAiPackage]));
     } 
     if (!bool) {
       this.h.put("", new String[0]);
       n n = new n(this, "");
-      this.a.insertItemAt(n, 0);
+      this.ExceptionInVPackage.insertItemAt(n, 0);
     } 
-    this.a.addItemListener(new k(this));
-    add("Center", (Component)this.b);
+    this.ExceptionInVPackage.addItemListener(new k(this));
+    add("Center", (Component)this.EqualsInAiPackage);
     String str = parama.O();
-    this.a.setSelectedItem(new n(this, str));
-    b(str);
-    this.b.h();
+    this.ExceptionInVPackage.setSelectedItem(new n(this, str));
+    EqualsInAiPackage(str);
+    this.EqualsInAiPackage.h();
   }
   
-  private void b(String paramString) {
-    if (!this.b.f().equals(""))
-      this.h.put(this.b.f(), this.b.i()); 
+  private void EqualsInAiPackage(String paramString) {
+    if (!this.EqualsInAiPackage.NetworkHashMap().equals(""))
+      this.h.put(this.EqualsInAiPackage.NetworkHashMap(), this.EqualsInAiPackage.i()); 
     if (paramString.equals(i) || paramString.equals("")) {
       paramString = "";
-      this.b.a(false);
+      this.EqualsInAiPackage.ExceptionInVPackage(false);
       this.d.setEnabled(false);
     } else {
-      this.b.a(true);
+      this.EqualsInAiPackage.ExceptionInVPackage(true);
       this.d.setEnabled(true);
     } 
     String[] arrayOfString = (String[])this.h.get(paramString);
-    arrayOfString = S.a(arrayOfString);
-    this.b.a(paramString, arrayOfString);
+    arrayOfString = S.ExceptionInVPackage(arrayOfString);
+    this.EqualsInAiPackage.ExceptionInVPackage(paramString, arrayOfString);
   }
   
   public void c() {
-    if (!this.b.f().equals(""))
-      this.h.put(this.b.f(), this.b.i()); 
-    this.e.a(this.b.f(), this.b.i());
+    if (!this.EqualsInAiPackage.NetworkHashMap().equals(""))
+      this.h.put(this.EqualsInAiPackage.NetworkHashMap(), this.EqualsInAiPackage.i()); 
+    this.e.ExceptionInVPackage(this.EqualsInAiPackage.NetworkHashMap(), this.EqualsInAiPackage.i());
   }
   
   public void d() {
     String str;
     do {
-      str = bV.a((Component)this, false, s.g.b("Name for your new Logging Profile"), "");
+      str = bV.ExceptionInVPackage((Component)this, false, s.g.EqualsInAiPackage("Name for your new Logging Profile"), "");
     } while (str != null && !str.equals("") && !c(str));
     if (str == null || str.equals(""))
       return; 
-    this.h.put(this.b.f(), this.b.i());
-    this.h.put(str, this.b.i());
-    this.b.a(true);
+    this.h.put(this.EqualsInAiPackage.NetworkHashMap(), this.EqualsInAiPackage.i());
+    this.h.put(str, this.EqualsInAiPackage.i());
+    this.EqualsInAiPackage.ExceptionInVPackage(true);
     this.d.setEnabled(true);
     n n = new n(this, str);
-    this.a.addItem(n);
-    this.a.setSelectedItem(n);
-    this.b.g();
+    this.ExceptionInVPackage.addItem(n);
+    this.ExceptionInVPackage.setSelectedItem(n);
+    this.EqualsInAiPackage.g();
   }
   
   private void h() {
-    b b = new b();
-    b.a(s.g.b("Data Log Profiles"));
-    b.b("/help/datalogProfiles.html");
-    f.a().a(b, dd.a().c());
+    EqualsInAiPackage EqualsInAiPackage = new EqualsInAiPackage();
+    EqualsInAiPackage.ExceptionInVPackage(s.g.EqualsInAiPackage("Data Log Profiles"));
+    EqualsInAiPackage.EqualsInAiPackage("/help/datalogProfiles.html");
+    NetworkHashMap.ExceptionInVPackage().ExceptionInVPackage(EqualsInAiPackage, dd.ExceptionInVPackage().c());
   }
   
   private boolean c(String paramString) {
     if (paramString.contains("|") || paramString.contains(";") || paramString.contains(",")) {
-      bV.d(s.g.b("Illegal Characters.") + " | ; ,", (Component)this);
+      bV.d(s.g.EqualsInAiPackage("Illegal Characters.") + " | ; ,", (Component)this);
       return false;
     } 
     return true;
   }
   
   public void e() {
-    String str = s.g.b("Are you sure you want to delete logging Profile?") + "\n" + s.g.b("Profile") + ": " + this.b.f();
-    boolean bool = bV.a(str, (Component)this, true);
+    String str = s.g.EqualsInAiPackage("Are you sure you want to delete logging Profile?") + "\n" + s.g.EqualsInAiPackage("Profile") + ": " + this.EqualsInAiPackage.NetworkHashMap();
+    boolean bool = bV.ExceptionInVPackage(str, (Component)this, true);
     if (bool) {
-      this.h.remove(this.b.f());
-      this.a.removeItem(new n(this, this.b.f()));
+      this.h.remove(this.EqualsInAiPackage.NetworkHashMap());
+      this.ExceptionInVPackage.removeItem(new n(this, this.EqualsInAiPackage.NetworkHashMap()));
     } 
   }
   
-  public boolean f() {
+  public boolean NetworkHashMap() {
     return true;
   }
   
   public void g() {
     c();
-    String[] arrayOfString = new String[this.a.getItemCount()];
-    for (byte b = 0; b < arrayOfString.length; b++) {
-      arrayOfString[b] = ((n)this.a.getItemAt(b)).a();
-      if (!arrayOfString[b].equals("")) {
-        String[] arrayOfString1 = (String[])this.h.get(arrayOfString[b]);
+    String[] arrayOfString = new String[this.ExceptionInVPackage.getItemCount()];
+    for (byte EqualsInAiPackage = 0; EqualsInAiPackage < arrayOfString.length; EqualsInAiPackage++) {
+      arrayOfString[EqualsInAiPackage] = ((n)this.ExceptionInVPackage.getItemAt(EqualsInAiPackage)).ExceptionInVPackage();
+      if (!arrayOfString[EqualsInAiPackage].equals("")) {
+        String[] arrayOfString1 = (String[])this.h.get(arrayOfString[EqualsInAiPackage]);
         if (arrayOfString1 != null) {
-          this.e.a(arrayOfString[b], arrayOfString1);
+          this.e.ExceptionInVPackage(arrayOfString[EqualsInAiPackage], arrayOfString1);
         } else {
-          D.b("disabledFields null for log profile: " + arrayOfString[b] + ", not saving.");
+          D.EqualsInAiPackage("disabledFields null for log profile: " + arrayOfString[EqualsInAiPackage] + ", not saving.");
         } 
       } 
     } 
-    this.e.a(arrayOfString);
+    this.e.ExceptionInVPackage(arrayOfString);
     this.e.v(i());
   }
   
   private String i() {
-    return ((n)this.a.getSelectedItem()).a();
+    return ((n)this.ExceptionInVPackage.getSelectedItem()).ExceptionInVPackage();
   }
   
-  public void a(Component paramComponent) {
-    this.g = new JDialog(bV.a(paramComponent), s.g.b("Data Log Profile Editor"));
+  public void ExceptionInVPackage(Component paramComponent) {
+    this.g = new JDialog(bV.ExceptionInVPackage(paramComponent), s.g.EqualsInAiPackage("Data Log Profile Editor"));
     this.g.add("Center", (Component)this);
-    JButton jButton1 = new JButton(s.g.b("Cancel"));
+    JButton jButton1 = new JButton(s.g.EqualsInAiPackage("Cancel"));
     jButton1.addActionListener(new l(this));
-    JButton jButton2 = new JButton(s.g.b("Accept"));
+    JButton jButton2 = new JButton(s.g.EqualsInAiPackage("Accept"));
     jButton2.addActionListener(new m(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
@@ -229,7 +229,7 @@ public class DataLogProfileEditorPanel extends bh {
     } 
     this.g.add("South", jPanel);
     this.g.pack();
-    bV.a(bV.a(paramComponent), this.g);
+    bV.ExceptionInVPackage(bV.ExceptionInVPackage(paramComponent), this.g);
     this.g.setVisible(true);
     validate();
     this.g.pack();

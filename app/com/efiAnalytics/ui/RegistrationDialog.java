@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
-import s.g;
+import s.SComponentGolf;
 
 public class RegistrationDialog extends JDialog implements ClipboardOwner {
   public static int a = 1;
@@ -39,7 +39,7 @@ public class RegistrationDialog extends JDialog implements ClipboardOwner {
   
   public static int f = 32;
   
-  public static int g = 64;
+  public static int SComponentGolf = 64;
   
   private ea o = null;
   
@@ -81,7 +81,7 @@ public class RegistrationDialog extends JDialog implements ClipboardOwner {
   }
   
   private String a(String paramString) {
-    return g.b(paramString);
+    return SComponentGolf.b(paramString);
   }
   
   private void c() {

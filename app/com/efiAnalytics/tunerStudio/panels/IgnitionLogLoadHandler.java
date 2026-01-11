@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.Y;
 import bH.D;
 import com.efiAnalytics.ui.aQ;
@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 class IgnitionLogLoadHandler implements Y, aQ {
-  long a = 0L;
+  long ExceptionInVPackage = 0L;
   
   eB b = null;
   
@@ -22,9 +22,9 @@ class IgnitionLogLoadHandler implements Y, aQ {
   
   C(o paramo) {}
   
-  public void a(ArrayList paramArrayList, long paramLong) {
+  public void ExceptionInVPackage(ArrayList paramArrayList, long paramLong) {
     try {
-      this.a = paramLong;
+      this.ExceptionInVPackage = paramLong;
       D d = new D(this);
       SwingUtilities.invokeAndWait(d);
     } catch (InterruptedException interruptedException) {
@@ -34,25 +34,25 @@ class IgnitionLogLoadHandler implements Y, aQ {
     } 
   }
   
-  public boolean a(long paramLong) {
-    double d = paramLong / this.a;
-    this.b.a(d);
+  public boolean ExceptionInVPackage(long paramLong) {
+    double d = paramLong / this.ExceptionInVPackage;
+    this.b.ExceptionInVPackage(d);
     return this.c;
   }
   
-  public void a(ArrayList paramArrayList) {
-    this.e.k.a(paramArrayList);
+  public void ExceptionInVPackage(ArrayList paramArrayList) {
+    this.e.k.ExceptionInVPackage(paramArrayList);
     this.b.setVisible(false);
   }
   
-  public void a(a parama) {
+  public void ExceptionInVPackage(ExceptionInVPackage parama) {
     try {
       this.b.setVisible(false);
     } catch (Exception exception) {}
-    D.a("Unable to load Ignition Log File.", (Exception)parama, this.e.k);
+    D.ExceptionInVPackage("Unable to load Ignition Log File.", (Exception)parama, this.e.k);
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     this.c = false;
   }
 }

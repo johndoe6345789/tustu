@@ -3,7 +3,7 @@ package bH;
 import G.R;
 import G.aI;
 import G.i;
-import V.g;
+import V.ExceptionPrintstacktrace;
 
 public class p {
   public static String a = "+-/=&<>*^!%, [{()}]|\n\t";
@@ -16,7 +16,7 @@ public class p {
       return (Double.isNaN(d) || d != 0.0D);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Unable to evaluate condition:'" + paramString + "'\n" + exception.getMessage() + " \nCheck Log for more detail.");
+      throw new ExceptionPrintstacktrace("Unable to evaluate condition:'" + paramString + "'\n" + exception.getMessage() + " \nCheck Log for more detail.");
     } 
   }
   
@@ -27,7 +27,7 @@ public class p {
       return i.a((aI)paramR, paramString);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Unable to evaluate condition:'" + paramString + "'\n" + exception.getMessage() + " \nCheck Log for more detail.");
+      throw new ExceptionPrintstacktrace("Unable to evaluate condition:'" + paramString + "'\n" + exception.getMessage() + " \nCheck Log for more detail.");
     } 
   }
 }

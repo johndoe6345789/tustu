@@ -5,32 +5,32 @@ import G.R;
 import G.T;
 import G.cx;
 import bH.c;
-import bN.k;
-import bN.t;
-import bS.h;
+import bN.BnInterfaceKilo;
+import bN.BnInterfaceTango;
+import bS.ExceptionInBsPackage;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PageRefreshHandler {
-  k a = null;
+  BnInterfaceKilo a = null;
   
   final List b = new ArrayList();
   
   boolean c = true;
   
-  public void a(F paramF, k paramk, t paramt) {
+  public void a(F paramF, BnInterfaceKilo paramk, BnInterfaceTango paramt) {
     R r = T.a().c(paramF.u());
     if (r == null)
-      throw new h("Invalid EcuConfiguration: " + paramF.u()); 
+      throw new ExceptionInBsPackage("Invalid EcuConfiguration: " + paramF.u()); 
     if (paramt.a() != 252)
-      throw new h("Invalid Service Request Packet: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid Service Request Packet: " + paramt.toString()); 
     byte[] arrayOfByte = paramt.c();
     if (c.a(arrayOfByte[0]) != 224)
-      throw new h("Invalid packet for Refresh Command: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid packet for Refresh Command: " + paramt.toString()); 
     if (arrayOfByte.length < 2)
-      throw new h("Device Required: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Device Required: " + paramt.toString()); 
     if (arrayOfByte.length < 3)
-      throw new h("Page Required: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Page Required: " + paramt.toString()); 
     int i = c.a(arrayOfByte[2]);
     int m = -1;
     int n = -1;
@@ -92,9 +92,9 @@ public class PageRefreshHandler {
     a().a(l);
   }
   
-  private k a() {
+  private BnInterfaceKilo a() {
     if (this.a == null) {
-      this.a = new k(this);
+      this.a = new BnInterfaceKilo(this);
       this.a.start();
     } 
     return this.a;

@@ -5,12 +5,12 @@ import G.aH;
 import G.aM;
 import G.aN;
 import G.aR;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.X;
-import bH.g;
+import bH.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 import javax.swing.JComboBox;
 
 public class OutputChannelComboBox extends JComboBox implements F, bc {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   private R l = null;
   
@@ -34,95 +34,95 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
   
   ArrayList d = new ArrayList();
   
-  g e = new g();
+  ExceptionPrintstacktrace e = new ExceptionPrintstacktrace();
   
   int f = -1;
   
-  int g = -1;
+  int ExceptionPrintstacktrace = -1;
   
   boolean h = false;
   
   boolean i = false;
   
-  boolean j = false;
+  boolean ExceptionExtensionGetmessage = false;
   
   boolean k = false;
   
   public C(R paramR, String paramString1, String paramString2, String paramString3, boolean paramBoolean1, boolean paramBoolean2) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.i = paramBoolean1;
-    this.j = paramBoolean2;
-    this.b = this.a.c(paramString1);
-    this.m = this.a.c(paramString2);
+    this.ExceptionExtensionGetmessage = paramBoolean2;
+    this.b = this.ExceptionInVPackage.c(paramString1);
+    this.m = this.ExceptionInVPackage.c(paramString2);
     if (paramString3 != null && !paramString3.isEmpty())
-      this.n = this.a.c(paramString3); 
-    a(this.a);
+      this.n = this.ExceptionInVPackage.c(paramString3); 
+    ExceptionInVPackage(this.ExceptionInVPackage);
     addActionListener(new D(this));
     this.c = new E(this);
-    aR aR = aR.a();
+    aR aR = aR.ExceptionInVPackage();
     try {
-      aR.a(this.a.c(), this.b.aL(), this.c);
-    } catch (a a) {
-      D.a("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)a, this);
+      aR.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
   }
   
-  protected void a(String paramString) {
+  protected void ExceptionInVPackage(String paramString) {
     if (paramString != null && this.l != null && paramString.length() > 0 && !this.h) {
-      aH aH = this.l.g(paramString);
+      aH aH = this.l.ExceptionPrintstacktrace(paramString);
       try {
-        double[][] arrayOfDouble1 = this.b.i(this.a.h());
+        double[][] arrayOfDouble1 = this.b.i(this.ExceptionInVPackage.h());
         if (this.k) {
           if (this.b.e() >= 4) {
-            arrayOfDouble1[this.g][this.f] = aH.x();
+            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = aH.x();
           } else {
-            arrayOfDouble1[this.g][this.f] = (aH.x() - this.l.O().af());
+            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = (aH.x() - this.l.O().af());
           } 
         } else {
-          arrayOfDouble1[this.g][this.f] = aH.a();
+          arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = aH.ExceptionInVPackage();
         } 
-        this.b.a(this.a.h(), arrayOfDouble1);
+        this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble1);
         if (this.n != null) {
-          this.e.a();
-          this.e.a(aH.aL().getBytes());
-          double[][] arrayOfDouble = this.n.i(this.a.h());
-          arrayOfDouble[this.g][this.f] = this.e.b();
-          this.n.a(this.a.h(), arrayOfDouble);
+          this.e.ExceptionInVPackage();
+          this.e.ExceptionInVPackage(aH.aL().getBytes());
+          double[][] arrayOfDouble = this.n.i(this.ExceptionInVPackage.h());
+          arrayOfDouble[this.ExceptionPrintstacktrace][this.f] = this.e.b();
+          this.n.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
         } 
-        double[][] arrayOfDouble2 = this.m.i(this.a.h());
-        arrayOfDouble2[this.g][this.f] = aH.l();
+        double[][] arrayOfDouble2 = this.m.i(this.ExceptionInVPackage.h());
+        arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = aH.l();
         if (this.i) {
           if (aH.t())
-            arrayOfDouble2[this.g][this.f] = ((int)arrayOfDouble2[this.g][this.f] | 0x40); 
+            arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = ((int)arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] | 0x40); 
           if (!aH.p())
-            arrayOfDouble2[this.g][this.f] = ((int)arrayOfDouble2[this.g][this.f] | 0x80); 
+            arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = ((int)arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] | 0x80); 
         } 
         try {
-          this.m.a(this.a.h(), arrayOfDouble2);
-        } catch (j j) {
+          this.m.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble2);
+        } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
           bV.d("There is an error in your ini not allowing size to be set properly.", this);
         } 
-        a(aH);
-      } catch (j j) {
-        D.a("Value Out of Bounds updating:" + aH.aL() + " offset to " + this.b.aL());
-        Logger.getLogger(C.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
-      } catch (g g1) {
-        D.a("Error updating:" + aH.aL() + " offset to " + this.b.aL());
+        ExceptionInVPackage(aH);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        D.ExceptionInVPackage("Value Out of Bounds updating:" + aH.aL() + " offset to " + this.b.aL());
+        Logger.getLogger(C.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
+      } catch (ExceptionPrintstacktrace g1) {
+        D.ExceptionInVPackage("Error updating:" + aH.aL() + " offset to " + this.b.aL());
       } catch (Exception exception) {
         String str1 = (aH == null) ? "null" : aH.aL();
         String str2 = (this.b == null) ? "null" : this.b.aL();
-        D.a("Unkown Error updating:" + str1 + " offset to " + str2);
+        D.ExceptionInVPackage("Unkown Error updating:" + str1 + " offset to " + str2);
         exception.printStackTrace();
       } 
     } 
   }
   
-  public String a() {
+  public String ExceptionInVPackage() {
     return (String)getSelectedItem();
   }
   
-  public void a(int paramInt) {
-    this.g = paramInt;
+  public void ExceptionInVPackage(int paramInt) {
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public void b(int paramInt) {
@@ -131,12 +131,12 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
   }
   
   public void b() {
-    if (this.g >= 0 && this.f >= 0)
+    if (this.ExceptionPrintstacktrace >= 0 && this.f >= 0)
       try {
-        double d = this.b.i(this.a.h())[this.g][this.f];
+        double d = this.b.i(this.ExceptionInVPackage.h())[this.ExceptionPrintstacktrace][this.f];
         boolean bool = false;
         for (byte b = 0; b < getItemCount(); b++) {
-          aH aH = this.l.g((String)getItemAt(b));
+          aH aH = this.l.ExceptionPrintstacktrace((String)getItemAt(b));
           if (this.k) {
             if (aH != null) {
               long l;
@@ -151,7 +151,7 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
                 break;
               } 
             } 
-          } else if (aH != null && aH.a() == d) {
+          } else if (aH != null && aH.ExceptionInVPackage() == d) {
             setSelectedItem(getItemAt(b));
             bool = true;
             break;
@@ -159,27 +159,27 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
         } 
         if (!bool && getItemCount() > 0)
           setSelectedItem(getItemAt(0)); 
-      } catch (g g1) {
+      } catch (ExceptionPrintstacktrace g1) {
         g1.printStackTrace();
       }  
   }
   
   public void close() {
-    aR aR = aR.a();
-    aR.a(this.c);
+    aR aR = aR.ExceptionInVPackage();
+    aR.ExceptionInVPackage(this.c);
   }
   
-  public void a(p paramp) {
+  public void ExceptionInVPackage(p paramp) {
     this.d.add(paramp);
   }
   
-  private void a(aH paramaH) {
+  private void ExceptionInVPackage(aH paramaH) {
     Iterator<p> iterator = this.d.iterator();
     while (iterator.hasNext())
-      ((p)iterator.next()).a(paramaH); 
+      ((p)iterator.next()).ExceptionInVPackage(paramaH); 
   }
   
-  public void a(R paramR) {
+  public void ExceptionInVPackage(R paramR) {
     this.l = paramR;
     this.h = true;
     removeAllItems();
@@ -189,12 +189,12 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
     ArrayList<String> arrayList = new ArrayList();
     byte b;
     for (b = 0; b < arrayOfString.length; b++) {
-      aH aH = paramR.g(arrayOfString[b]);
-      if (aH.b() != null && !aH.b().equals("formula") && !aH.b().equals("bits") && (!this.j || aH.l() != 4))
+      aH aH = paramR.ExceptionPrintstacktrace(arrayOfString[b]);
+      if (aH.b() != null && !aH.b().equals("formula") && !aH.b().equals("bits") && (!this.ExceptionExtensionGetmessage || aH.l() != 4))
         arrayList.add(arrayOfString[b]); 
     } 
     arrayOfString = arrayList.<String>toArray(new String[arrayList.size()]);
-    arrayOfString = X.a(arrayOfString);
+    arrayOfString = X.ExceptionInVPackage(arrayOfString);
     for (b = 0; b < arrayOfString.length; b++)
       addItem((E)arrayOfString[b]); 
     this.h = false;

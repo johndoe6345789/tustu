@@ -6,11 +6,11 @@ import G.be;
 import G.bi;
 import G.db;
 import G.i;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
-import c.d;
+import c.CInterfaceDelta;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.et;
@@ -21,22 +21,22 @@ import java.awt.KeyboardFocusManager;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
-public class bd extends JPanel implements h, p, d, bc {
-  R a = null;
+public class bd extends JPanel implements h, p, CInterfaceDelta, bc {
+  R ExceptionInVPackage = null;
   
   bi b = null;
   
   be c = null;
   
-  bu d = null;
+  bu CInterfaceDelta = null;
   
   W e = null;
   
   JPanel f = new JPanel();
   
-  bO g = null;
+  bO ExceptionPrintstacktrace = null;
   
   private String k = null;
   
@@ -55,16 +55,16 @@ public class bd extends JPanel implements h, p, d, bc {
   }
   
   public bd(R paramR, bi parambi, be parambe, et paramet) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.b = parambi;
     this.c = parambe;
     this.k = parambe.aJ();
     setLayout(new BorderLayout());
     this.j = paramet;
-    boolean bool = a(m, "false").equals("true");
+    boolean bool = ExceptionInVPackage(m, "false").equals("true");
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    this.h = new JCheckBox(g.b("3D View"));
+    this.h = new JCheckBox(ExceptionPrintstacktrace.b("3D View"));
     this.h.setFocusable(false);
     this.h.setSelected(bool);
     this.h.setMnemonic('D');
@@ -74,8 +74,8 @@ public class bd extends JPanel implements h, p, d, bc {
     if (db != null) {
       String str;
       try {
-        str = g.b(db.a());
-      } catch (g g) {
+        str = ExceptionPrintstacktrace.b(db.ExceptionInVPackage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         str = db.toString();
       } 
       this.i.setText(str);
@@ -83,64 +83,64 @@ public class bd extends JPanel implements h, p, d, bc {
     } 
     bf bf = new bf(this, db);
     try {
-      i.a(paramR.c(), db, bf);
-    } catch (a a) {
-      bV.d("Invalid Title Defined: " + db.toString() + "\nError: " + a.getLocalizedMessage(), this);
+      i.ExceptionInVPackage(paramR.c(), db, bf);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.CInterfaceDelta("Invalid Title Defined: " + db.toString() + "\nError: " + ExceptionInVPackage.getLocalizedMessage(), this);
     } 
     add("North", jPanel);
     add("Center", this.f);
-    a(this.h.isSelected());
+    ExceptionInVPackage(this.h.isSelected());
     addFocusListener(new bg(this));
     bX bX = new bX(paramR, parambe, (e()).f, this);
-    paramR.C().a(bX);
+    paramR.C().ExceptionInVPackage(bX);
     this.l = bX;
-    if (this.d != null) {
-      this.d.e();
-      this.d.a(this.l);
+    if (this.CInterfaceDelta != null) {
+      this.CInterfaceDelta.e();
+      this.CInterfaceDelta.ExceptionInVPackage(this.l);
     } 
     if (this.e != null) {
-      this.e.d();
-      this.e.a(this.l);
+      this.e.CInterfaceDelta();
+      this.e.ExceptionInVPackage(this.l);
     } 
   }
   
-  private String a(String paramString1, String paramString2) {
+  private String ExceptionInVPackage(String paramString1, String paramString2) {
     String str = null;
     if (this.j != null)
-      str = this.j.a(paramString1); 
+      str = this.j.ExceptionInVPackage(paramString1); 
     return (str == null) ? paramString2 : str;
   }
   
-  public void d() {
+  public void CInterfaceDelta() {
     if (this.e != null) {
       this.e.requestFocusInWindow();
-    } else if (this.d != null) {
-      this.d.requestFocusInWindow();
+    } else if (this.CInterfaceDelta != null) {
+      this.CInterfaceDelta.requestFocusInWindow();
     } 
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     if (paramBoolean) {
       this.e = f();
-      a(this.e);
-      this.g = new bO(this, this.e.b());
-      KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this.g);
+      ExceptionInVPackage(this.e);
+      this.ExceptionPrintstacktrace = new bO(this, this.e.b());
+      KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this.ExceptionPrintstacktrace);
     } else {
       if (this.c == null) {
-        bV.d(this.b.a() + " 2D Table not found in configuration.", this);
+        bV.CInterfaceDelta(this.b.ExceptionInVPackage() + " 2D Table not found in configuration.", this);
         return;
       } 
-      if (this.g != null) {
-        KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.g);
-        this.g = null;
+      if (this.ExceptionPrintstacktrace != null) {
+        KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.ExceptionPrintstacktrace);
+        this.ExceptionPrintstacktrace = null;
       } 
-      this.d = e();
-      a(this.d);
+      this.CInterfaceDelta = e();
+      ExceptionInVPackage(this.CInterfaceDelta);
     } 
-    d();
+    CInterfaceDelta();
   }
   
-  private void a(bu parambu) {
+  private void ExceptionInVPackage(bu parambu) {
     this.f.removeAll();
     this.f.setLayout(new GridLayout());
     this.f.add(parambu);
@@ -148,7 +148,7 @@ public class bd extends JPanel implements h, p, d, bc {
     validate();
   }
   
-  private void a(W paramW) {
+  private void ExceptionInVPackage(W paramW) {
     this.f.removeAll();
     this.f.setLayout(new BorderLayout());
     this.f.add("Center", paramW);
@@ -157,20 +157,20 @@ public class bd extends JPanel implements h, p, d, bc {
   }
   
   public bu e() {
-    if (this.d == null) {
-      this.d = new bu(this.a, this.c);
+    if (this.CInterfaceDelta == null) {
+      this.CInterfaceDelta = new bu(this.ExceptionInVPackage, this.c);
       if (this.l != null)
-        this.d.e(); 
+        this.CInterfaceDelta.e(); 
     } 
-    return this.d;
+    return this.CInterfaceDelta;
   }
   
   public W f() {
     if (this.e == null) {
-      this.e = new W(this.a, this.b, false);
+      this.e = new W(this.ExceptionInVPackage, this.b, false);
       if (this.l != null) {
-        this.e.d();
-        this.e.a(this.l);
+        this.e.CInterfaceDelta();
+        this.e.ExceptionInVPackage(this.l);
       } 
     } 
     return this.e;
@@ -187,15 +187,15 @@ public class bd extends JPanel implements h, p, d, bc {
     if (this.l != null) {
       this.l.b();
       if (this.l instanceof aG)
-        this.a.C().b((aG)this.l); 
+        this.ExceptionInVPackage.C().b((aG)this.l); 
     } 
-    if (this.g != null) {
-      KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.g);
-      this.g = null;
+    if (this.ExceptionPrintstacktrace != null) {
+      KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.ExceptionPrintstacktrace);
+      this.ExceptionPrintstacktrace = null;
     } 
-    if (this.d != null) {
-      this.d.close();
-      this.d = null;
+    if (this.CInterfaceDelta != null) {
+      this.CInterfaceDelta.close();
+      this.CInterfaceDelta = null;
     } 
     if (this.e != null) {
       this.e.close();
@@ -203,14 +203,14 @@ public class bd extends JPanel implements h, p, d, bc {
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (a_() != null) {
       boolean bool = true;
       try {
-        bool = p.a(a_(), this.a);
+        bool = p.ExceptionInVPackage(a_(), this.ExceptionInVPackage);
         setEnabled(bool);
       } catch (Exception exception) {
-        D.a(exception.getMessage());
+        D.ExceptionInVPackage(exception.getMessage());
         exception.printStackTrace();
       } 
     } 
@@ -226,54 +226,54 @@ public class bd extends JPanel implements h, p, d, bc {
   
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
-    if (this.d != null)
-      this.d.setEnabled(paramBoolean); 
+    if (this.CInterfaceDelta != null)
+      this.CInterfaceDelta.setEnabled(paramBoolean); 
     if (this.e != null)
       this.e.setEnabled(paramBoolean); 
     this.h.setEnabled(paramBoolean);
   }
   
-  public void a(bP parambP) {
+  public void ExceptionInVPackage(bP parambP) {
     if (this.l != null) {
       this.l.b();
       if (this.l instanceof aG)
-        this.a.C().b((aG)this.l); 
+        this.ExceptionInVPackage.C().b((aG)this.l); 
     } 
     this.l = parambP;
-    if (this.d != null) {
-      this.d.a(parambP);
-      parambP.a();
+    if (this.CInterfaceDelta != null) {
+      this.CInterfaceDelta.ExceptionInVPackage(parambP);
+      parambP.ExceptionInVPackage();
     } 
     if (this.e != null) {
-      this.e.a(parambP);
-      parambP.a();
+      this.e.ExceptionInVPackage(parambP);
+      parambP.ExceptionInVPackage();
     } 
   }
   
-  public void a(double paramDouble1, double paramDouble2) {
+  public void ExceptionInVPackage(double paramDouble1, double paramDouble2) {
     if (this.h.isSelected()) {
-      this.e.a(paramDouble1, paramDouble2);
+      this.e.ExceptionInVPackage(paramDouble1, paramDouble2);
     } else {
-      this.d.a(paramDouble1, paramDouble2);
+      this.CInterfaceDelta.ExceptionInVPackage(paramDouble1, paramDouble2);
     } 
   }
   
   public int c() {
-    return this.h.isSelected() ? 1 : this.d.f();
+    return this.h.isSelected() ? 1 : this.CInterfaceDelta.f();
   }
   
   public R b_() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
-  public be g() {
+  public be ExceptionPrintstacktrace() {
     return this.c;
   }
   
-  public void a(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
-    this.d.a(paramArrayOffloat1, paramArrayOffloat2);
+  public void ExceptionInVPackage(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
+    this.CInterfaceDelta.ExceptionInVPackage(paramArrayOffloat1, paramArrayOffloat2);
     if (this.e != null && paramArrayOffloat2.length > 0 && paramArrayOffloat1.length > 0)
-      this.e.a(paramArrayOffloat1[0], paramArrayOffloat2[0]); 
+      this.e.ExceptionInVPackage(paramArrayOffloat1[0], paramArrayOffloat2[0]); 
   }
 }
 

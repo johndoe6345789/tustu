@@ -2,7 +2,7 @@ package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.T;
 import G.cu;
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.eJ;
 import java.awt.Color;
@@ -33,7 +33,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   
   private boolean h = false;
   
-  List a = new ArrayList();
+  List PropertiesExtension = new ArrayList();
   
   private JButton i = null;
   
@@ -42,9 +42,9 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   private boolean j = false;
   
   public TuneViewComponent() {
-    if ((T.a().d()).length > 1) {
-      this.i = new JButton(T.a().c().c());
-      this.i.setPreferredSize(eJ.a(170, 16));
+    if ((T.PropertiesExtension().d()).length > 1) {
+      this.i = new JButton(T.PropertiesExtension().c().c());
+      this.i.setPreferredSize(eJ.PropertiesExtension(170, 16));
       this.i.addActionListener(new i(this));
     } 
   }
@@ -54,7 +54,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   private void showEcuConfigPopup() {
     JPopupMenu jPopupMenu = new JPopupMenu();
     j j = new j(this);
-    for (String str : T.a().d()) {
+    for (String str : T.PropertiesExtension().d()) {
       JMenuItem jMenuItem = jPopupMenu.add(str);
       jMenuItem.setActionCommand(str);
       jMenuItem.addActionListener(j);
@@ -131,7 +131,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   }
   
   public String getEcuConfigurationName() {
-    return (this.b != null && this.b.equals(cu.a)) ? this.b : ((a.A() != null && a.A().u().equals(this.b)) ? "" : ((this.b != null && !this.b.isEmpty()) ? this.b : this.b));
+    return (this.b != null && this.b.equals(cu.PropertiesExtension)) ? this.b : ((PropertiesExtension.A() != null && PropertiesExtension.A().u().equals(this.b)) ? "" : ((this.b != null && !this.b.isEmpty()) ? this.b : this.b));
   }
   
   public void setEcuConfigurationName(String paramString) {
@@ -142,7 +142,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
     } 
     if (this.i != null)
       if (this.b.isEmpty()) {
-        this.i.setText(T.a().c().c());
+        this.i.setText(T.PropertiesExtension().c().c());
       } else {
         this.i.setText(this.b);
       }  
@@ -160,7 +160,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   
   public void enableEditMode(boolean paramBoolean) {
     if (paramBoolean) {
-      setBorder(BorderFactory.createMatteBorder(eJ.a(14), eJ.a(7), eJ.a(14), eJ.a(7), Color.GRAY));
+      setBorder(BorderFactory.createMatteBorder(eJ.PropertiesExtension(14), eJ.PropertiesExtension(7), eJ.PropertiesExtension(14), eJ.PropertiesExtension(7), Color.GRAY));
       if (this.i != null)
         add(this.i); 
     } else {
@@ -212,15 +212,15 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   }
   
   public void addEditComponent(Component paramComponent) {
-    this.a.add(paramComponent);
+    this.PropertiesExtension.add(paramComponent);
   }
   
   public void removeEditComponent(Component paramComponent) {
-    this.a.remove(paramComponent);
+    this.PropertiesExtension.remove(paramComponent);
   }
   
   public boolean isEditComponent(Component paramComponent) {
-    return this.a.contains(paramComponent);
+    return this.PropertiesExtension.contains(paramComponent);
   }
   
   protected JButton getBtnSelectEcuConfig() {

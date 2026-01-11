@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.search;
 
 import bH.D;
-import bS.o;
+import bS.BsInterfaceOscar;
 import com.efiAnalytics.ui.eV;
 import java.awt.Component;
 import javax.swing.JTable;
@@ -25,7 +25,7 @@ class DeviceStatusCellRenderer extends eV {
     String str = "";
     if (paramInt1 < this.a.b.size() && paramInt2 == 2) {
       f f = this.a.b.get(paramInt1);
-      boolean bool = f.b().equals(o.a);
+      boolean bool = f.b().equals(BsInterfaceOscar.a);
       if (f.c().equals("D")) {
         str = r.d();
         a(false);

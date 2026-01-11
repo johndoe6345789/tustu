@@ -8,9 +8,9 @@ import G.aR;
 import G.bT;
 import G.cq;
 import G.cu;
-import V.a;
-import aU.d;
-import aU.e;
+import V.ExceptionInVPackage;
+import aU.AuInterfaceDelta;
+import aU.AuInterfaceEcho;
 import bH.D;
 import bH.X;
 import com.efiAnalytics.ui.bV;
@@ -26,26 +26,26 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 public class aG extends JPanel implements aG, cq, bc {
-  JDialog a = null;
+  JDialog ExceptionInVPackage = null;
   
   JTextField b = new JTextField("", 4);
   
   JTextField c = new JTextField("", 4);
   
-  dM d = new dM();
+  dM AuInterfaceDelta = new dM();
   
   private R l = null;
   
   private String m = "0";
   
-  int e = 255;
+  int AuInterfaceEcho = 255;
   
   int f = -1;
   
-  int g = -1;
+  int SComponentGolf = -1;
   
   JButton h;
   
@@ -56,13 +56,13 @@ public class aG extends JPanel implements aG, cq, bc {
   aK k = null;
   
   public aG() {
-    setBorder(BorderFactory.createTitledBorder(g.b("Calibrate Throttle")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Calibrate Throttle")));
     FlowLayout flowLayout = new FlowLayout(2);
     flowLayout.setHgap(10);
     setLayout(new BoxLayout(this, 1));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(flowLayout);
-    JLabel jLabel = new JLabel(g.b("Closed throttle ADC count"));
+    JLabel jLabel = new JLabel(SComponentGolf.b("Closed throttle ADC count"));
     jLabel.setMinimumSize(new Dimension(180, 20));
     jPanel1.add(jLabel);
     jPanel1.add(this.b);
@@ -70,24 +70,24 @@ public class aG extends JPanel implements aG, cq, bc {
     add(jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(flowLayout);
-    jLabel = new JLabel(g.b("Full throttle ADC count"));
+    jLabel = new JLabel(SComponentGolf.b("Full throttle ADC count"));
     jLabel.setMinimumSize(new Dimension(180, 20));
     jPanel2.add(jLabel);
     jPanel2.add(this.c);
     jPanel2.add(this.i = b("max"));
     add(jPanel2);
-    this.d.a(0.0D);
-    add((Component)this.d);
+    this.AuInterfaceDelta.ExceptionInVPackage(0.0D);
+    add((Component)this.AuInterfaceDelta);
   }
   
   private JButton b(String paramString) {
-    JButton jButton = new JButton(g.b("Get Current"));
+    JButton jButton = new JButton(SComponentGolf.b("Get Current"));
     jButton.setActionCommand(paramString);
     jButton.addActionListener(new aH(this));
     return jButton;
   }
   
-  private void a(boolean paramBoolean) {
+  private void ExceptionInVPackage(boolean paramBoolean) {
     if (this.l != null) {
       this.h.setEnabled(paramBoolean);
       this.i.setEnabled(paramBoolean);
@@ -103,9 +103,9 @@ public class aG extends JPanel implements aG, cq, bc {
     } 
   }
   
-  public String a() {
+  public String ExceptionInVPackage() {
     if (b() == null || !b().C().q())
-      bV.d("Connection unavailable.", this); 
+      bV.AuInterfaceDelta("Connection unavailable.", this); 
     return this.m;
   }
   
@@ -113,114 +113,114 @@ public class aG extends JPanel implements aG, cq, bc {
     return this.l;
   }
   
-  public void a(R paramR) {
+  public void ExceptionInVPackage(R paramR) {
     this.l = paramR;
     String str = paramR.c();
-    cu cu = cu.a();
-    cu.a(this);
+    cu cu = cu.ExceptionInVPackage();
+    cu.ExceptionInVPackage(this);
     try {
-      cu.a(str, paramR.G().a(), this);
+      cu.ExceptionInVPackage(str, paramR.G().ExceptionInVPackage(), this);
     } catch (Exception exception) {
-      bV.d("Unable to register TP ADC OutputChannel " + paramR.G().a(), this);
+      bV.AuInterfaceDelta("Unable to register TP ADC OutputChannel " + paramR.G().ExceptionInVPackage(), this);
     } 
     try {
-      aH aH = paramR.g(paramR.G().a());
-      this.e = (int)aH.m();
+      aH aH = paramR.SComponentGolf(paramR.G().ExceptionInVPackage());
+      this.AuInterfaceEcho = (int)aH.m();
       String str1 = paramR.G().b();
       String str2 = paramR.G().c();
       aM aM1 = paramR.c(str1);
       aM aM2 = paramR.c(str2);
       if (aM2 != null)
-        this.e = (int)aM2.s(); 
+        this.AuInterfaceEcho = (int)aM2.s(); 
       if (aM1 != null && aM2 != null) {
         this.f = (int)aM1.j(paramR.h());
         this.b.setText("" + this.f);
-        this.g = (int)aM2.j(paramR.h());
-        this.c.setText("" + this.g);
+        this.SComponentGolf = (int)aM2.j(paramR.h());
+        this.c.setText("" + this.SComponentGolf);
         if (aH.k() != null && !aH.k().equals("")) {
-          aM1.a(paramR.p(), 0.0D);
-          aM2.a(paramR.p(), 1023.0D);
+          aM1.ExceptionInVPackage(paramR.p(), 0.0D);
+          aM2.ExceptionInVPackage(paramR.p(), 1023.0D);
           paramR.I();
         } 
         this.j = new aL(this);
-        aR.a().a(paramR.c(), str1, this.j);
+        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), str1, this.j);
         this.k = new aK(this);
-        aR.a().a(paramR.c(), str2, this.k);
+        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), str2, this.k);
       } 
-      a(paramR.R());
-      paramR.C().a(this);
+      ExceptionInVPackage(paramR.R());
+      paramR.C().ExceptionInVPackage(this);
     } catch (Exception exception) {
-      D.c("Unable to get Max tp ADC, using default:" + this.e);
+      D.c("Unable to get Max tp ADC, using default:" + this.AuInterfaceEcho);
     } 
   }
   
   public void c() {
     if (b() == null) {
-      bV.d("No EcuConfiguration set. Can not save calibration.", this);
+      bV.AuInterfaceDelta("No EcuConfiguration set. Can not save calibration.", this);
       return;
     } 
-    d d = e.a(this.l);
-    if (d == null) {
-      bV.d("No Throttle Calibration Writer set. Can not save calibration.", this);
+    AuInterfaceDelta AuInterfaceDelta = AuInterfaceEcho.ExceptionInVPackage(this.l);
+    if (AuInterfaceDelta == null) {
+      bV.AuInterfaceDelta("No Throttle Calibration Writer set. Can not save calibration.", this);
       return;
     } 
     int i = Integer.parseInt(this.b.getText());
     int j = Integer.parseInt(this.c.getText());
-    d.a(this.l, i, j);
+    AuInterfaceDelta.ExceptionInVPackage(this.l, i, j);
   }
   
-  public boolean d() {
+  public boolean AuInterfaceDelta() {
     String str = "";
     try {
       int i = Integer.parseInt(this.c.getText());
       int j = Integer.parseInt(this.b.getText());
       if (j == i) {
-        str = str + g.b("Min and Max can not be the same!") + "\n";
-      } else if (j > i && str.length() == 0 && !bV.a(g.b("Min is greater than than Max!") + "\n" + g.b("Are you sure you want to use these values?"), this, true)) {
+        str = str + SComponentGolf.b("Min and Max can not be the same!") + "\n";
+      } else if (j > i && str.length() == 0 && !bV.ExceptionInVPackage(SComponentGolf.b("Min is greater than than Max!") + "\n" + SComponentGolf.b("Are you sure you want to use these values?"), this, true)) {
         return false;
       } 
       if (j < 0)
-        str = str + g.b("Min should be greater than 0!") + "\n"; 
-      if (i > this.e)
-        str = str + "Max ADC should not be more than " + this.e + "!\n"; 
+        str = str + SComponentGolf.b("Min should be greater than 0!") + "\n"; 
+      if (i > this.AuInterfaceEcho)
+        str = str + "Max ADC should not be more than " + this.AuInterfaceEcho + "!\n"; 
     } catch (NumberFormatException numberFormatException) {
-      bV.d(g.b("TP ADC Min and Max must be numeric!"), this);
+      bV.AuInterfaceDelta(SComponentGolf.b("TP ADC Min and Max must be numeric!"), this);
       return false;
     } 
     if (!str.equals("")) {
-      bV.d(str, this);
+      bV.AuInterfaceDelta(str, this);
       return false;
     } 
     return true;
   }
   
-  public boolean e() {
-    if (d()) {
+  public boolean AuInterfaceEcho() {
+    if (AuInterfaceDelta()) {
       try {
         c();
-      } catch (a a) {
-        D.a("Unable to save Throttle Calibration.", (Exception)a, this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Unable to save Throttle Calibration.", (Exception)ExceptionInVPackage, this);
       } 
     } else {
       return false;
     } 
-    cu cu = cu.a();
-    cu.a(this);
+    cu cu = cu.ExceptionInVPackage();
+    cu.ExceptionInVPackage(this);
     return true;
   }
   
   public void close() {
-    if (this.a != null) {
-      this.a.dispose();
+    if (this.ExceptionInVPackage != null) {
+      this.ExceptionInVPackage.dispose();
     } else {
-      e();
+      AuInterfaceEcho();
     } 
     if (this.j != null) {
-      aR.a().a(this.j);
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.j);
       this.j = null;
     } 
     if (this.k != null) {
-      aR.a().a(this.k);
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.k);
       this.k = null;
     } 
     if (this.l != null)
@@ -228,42 +228,42 @@ public class aG extends JPanel implements aG, cq, bc {
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
-    this.d.a(paramDouble / this.e);
+    this.AuInterfaceDelta.ExceptionInVPackage(paramDouble / this.AuInterfaceEcho);
     this.m = X.b(paramDouble, 0);
   }
   
-  public void a(Component paramComponent) {
-    this.a = new JDialog(bV.a(paramComponent), g.b("Calibrate Throttle Position Sensor"));
-    this.a.add("Center", this);
-    JButton jButton1 = new JButton(g.b("Cancel"));
+  public void ExceptionInVPackage(Component paramComponent) {
+    this.ExceptionInVPackage = new JDialog(bV.ExceptionInVPackage(paramComponent), SComponentGolf.b("Calibrate Throttle Position Sensor"));
+    this.ExceptionInVPackage.add("Center", this);
+    JButton jButton1 = new JButton(SComponentGolf.b("Cancel"));
     jButton1.addActionListener(new aI(this));
-    JButton jButton2 = new JButton(g.b("Accept"));
+    JButton jButton2 = new JButton(SComponentGolf.b("Accept"));
     jButton2.addActionListener(new aJ(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
-    if (bV.d()) {
+    if (bV.AuInterfaceDelta()) {
       jPanel.add(jButton2);
       jPanel.add(jButton1);
     } else {
       jPanel.add(jButton1);
       jPanel.add(jButton2);
     } 
-    this.a.add("South", jPanel);
-    this.a.pack();
-    bV.a(bV.a(paramComponent), this.a);
-    this.a.setVisible(true);
+    this.ExceptionInVPackage.add("South", jPanel);
+    this.ExceptionInVPackage.pack();
+    bV.ExceptionInVPackage(bV.ExceptionInVPackage(paramComponent), this.ExceptionInVPackage);
+    this.ExceptionInVPackage.setVisible(true);
     validate();
-    this.a.pack();
-    this.a.setResizable(false);
+    this.ExceptionInVPackage.pack();
+    this.ExceptionInVPackage.setResizable(false);
   }
   
-  public boolean a(String paramString, bT parambT) {
-    a(true);
+  public boolean ExceptionInVPackage(String paramString, bT parambT) {
+    ExceptionInVPackage(true);
     return true;
   }
   
-  public void a(String paramString) {
-    a(false);
+  public void ExceptionInVPackage(String paramString) {
+    ExceptionInVPackage(false);
   }
 }
 

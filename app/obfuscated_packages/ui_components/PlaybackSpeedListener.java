@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -14,8 +14,8 @@ class el implements ItemListener {
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
-    i.c("playbackSpeed", jCheckBoxMenuItem.getName());
-    this.a.a(i.a("playbackSpeed", 1.0D), false);
+    IOProperties.c("playbackSpeed", jCheckBoxMenuItem.getName());
+    this.a.a(IOProperties.a("playbackSpeed", 1.0D), false);
   }
 }
 

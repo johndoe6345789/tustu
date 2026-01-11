@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,8 +8,8 @@ class cP implements ActionListener {
   cP(cd paramcd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    i.c("forceOpenGL", Boolean.toString(false));
-    i.c("disableD3d", Boolean.toString(false));
+    IOProperties.c("forceOpenGL", Boolean.toString(false));
+    IOProperties.c("disableD3d", Boolean.toString(false));
     cd.b(this.a);
   }
 }

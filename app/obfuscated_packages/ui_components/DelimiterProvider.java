@@ -1,17 +1,17 @@
 package ao;
 
 import W.p;
-import h.i;
+import h.IOProperties;
 
 class fx implements p {
   fx(fw paramfw) {}
   
   public boolean a() {
-    return i.j();
+    return IOProperties.j();
   }
   
   public String b() {
-    return a() ? i.v : i.a("delimiter", i.v);
+    return a() ? IOProperties.v : IOProperties.a("delimiter", IOProperties.v);
   }
 }
 

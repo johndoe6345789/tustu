@@ -1,11 +1,11 @@
 package aP;
 
 import G.R;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.p;
-import c.e;
+import c.CInterfaceEcho;
 
-class bw implements e {
+class bw implements CInterfaceEcho {
   String a = null;
   
   R b = null;
@@ -18,8 +18,8 @@ class bw implements e {
   public boolean a() {
     try {
       return p.a(this.a, this.b);
-    } catch (g g) {
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
       return true;
     } 
   }

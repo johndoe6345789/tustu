@@ -6,7 +6,7 @@ import G.cu;
 import G.i;
 import G.m;
 import G.q;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.X;
 import bH.p;
 import com.efiAnalytics.ui.bV;
@@ -20,7 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class ak extends JPanel implements h, bc {
   R a = null;
@@ -40,7 +40,7 @@ public class ak extends JPanel implements h, bc {
     this.b = parambl;
     this.e = toString();
     setLayout(new FlowLayout(1));
-    this.c = new JButton(g.b(parambl.l()));
+    this.c = new JButton(ExceptionPrintstacktrace.b(parambl.l()));
     this.c.addActionListener(new al(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(4, 4));
@@ -94,8 +94,8 @@ public class ak extends JPanel implements h, bc {
     if (this.b.aJ() != null && this.b.aJ().trim().length() > 0)
       try {
         return p.a(this.b.aJ(), this.a);
-      } catch (g g) {
-        Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       }  
     return true;
   }

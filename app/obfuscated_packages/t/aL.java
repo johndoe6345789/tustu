@@ -3,14 +3,14 @@ package t;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class aL extends KeyAdapter {
   aL(aK paramaK) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();
-    if (this.a.a(jTextField, g.b("Gauge Title")))
+    if (this.a.a(jTextField, SComponentGolf.b("Gauge Title")))
       this.a.c().i(jTextField.getText()); 
   }
 }

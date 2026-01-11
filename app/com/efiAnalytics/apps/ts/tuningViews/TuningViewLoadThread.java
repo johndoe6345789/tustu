@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -11,10 +11,10 @@ class TuningViewLoadThread extends Thread {
   
   public void run() {
     try {
-      List list = G.a(this.a);
-      this.b.a(list);
-    } catch (a a) {
-      bV.d("Failed to load Tuning Views:\n" + a.getLocalizedMessage(), this.c);
+      List list = G.ExceptionInVPackage(this.ExceptionInVPackage);
+      this.b.ExceptionInVPackage(list);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d("Failed to load Tuning Views:\n" + ExceptionInVPackage.getLocalizedMessage(), this.c);
     } 
   }
 }

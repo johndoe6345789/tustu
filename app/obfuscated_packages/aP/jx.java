@@ -1,17 +1,17 @@
 package aP;
 
-import ay.c;
-import ay.p;
+import ay.AyInterfaceCharlie;
+import ay.AyComponentPapa;
 
-class jx implements p {
+class jx implements AyComponentPapa {
   jx(ju paramju) {}
   
-  public void c(c paramc) {
+  public void AyInterfaceCharlie(AyInterfaceCharlie paramc) {
     if (paramc.a().equals("Dash Configuration Server"))
       ju.a(this.a, paramc); 
   }
   
-  public void d(c paramc) {
+  public void d(AyInterfaceCharlie paramc) {
     if (paramc.a().equals("Dash Configuration Server"))
       ju.b(this.a, paramc); 
   }

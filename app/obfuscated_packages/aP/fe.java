@@ -2,19 +2,19 @@ package aP;
 
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.dr;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class fe implements dr {
   fe(dB paramdB) {}
   
-  public void a() {
-    boolean bool = a.a().c(a.J, false);
+  public void IOPropertiesUsingFile() {
+    boolean bool = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.J, false);
     if (bool) {
-      a.a().b(a.J, Boolean.toString(false));
-      if (bV.a(a.b + " must restart for the changes to take effect.\n\nRestart Now?", this.a.h, true))
-        f.a().d(this.a.h); 
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.J, Boolean.toString(false));
+      if (bV.IOPropertiesUsingFile(IOPropertiesUsingFile.b + " must restart for the changes to take effect.\n\nRestart Now?", this.IOPropertiesUsingFile.h, true))
+        f.IOPropertiesUsingFile().d(this.IOPropertiesUsingFile.h); 
     } else {
-      dB.a(this.a);
+      dB.IOPropertiesUsingFile(this.IOPropertiesUsingFile);
     } 
   }
 }

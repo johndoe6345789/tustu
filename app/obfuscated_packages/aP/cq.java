@@ -1,6 +1,6 @@
 package aP;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -9,7 +9,7 @@ class cq implements ItemListener {
   cq(cc paramcc) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    i.c("showGraphHalfMark", ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState() + "");
+    IOProperties.c("showGraphHalfMark", ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState() + "");
     this.a.b.o();
   }
 }

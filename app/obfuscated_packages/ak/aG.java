@@ -1,6 +1,6 @@
 package ak;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.T;
 import bH.D;
 import bH.X;
@@ -18,15 +18,15 @@ public class aG extends g {
     ArrayList<T> arrayList = new ArrayList();
     while (iterator.hasNext()) {
       T t = iterator.next();
-      if (t.a().equals("RTime")) {
+      if (t.ExceptionInVPackage().equals("RTime")) {
         d d = (d)t;
-        d.a("Time");
+        d.ExceptionInVPackage("Time");
       } 
-      if (t.a().equals("Frame")) {
+      if (t.ExceptionInVPackage().equals("Frame")) {
         d d = (d)t;
-        d.a(0);
+        d.ExceptionInVPackage(0);
       } 
-      if (!t.a().contains("Afr Adjustment Required") && (!t.a().startsWith("Col") || t.a().length() > 5) && !t.a().trim().isEmpty())
+      if (!t.ExceptionInVPackage().contains("Afr Adjustment Required") && (!t.ExceptionInVPackage().startsWith("Col") || t.ExceptionInVPackage().length() > 5) && !t.ExceptionInVPackage().trim().isEmpty())
         arrayList.add(t); 
     } 
     return arrayList.iterator();
@@ -36,11 +36,11 @@ public class aG extends g {
     String str1 = null;
     try {
       if (this.t && this.p >= 500 && k())
-        throw new a("This Edition is limited to loading 500 rows of data. \nPlease Register to load large log files."); 
+        throw new ExceptionInVPackage("This Edition is limited to loading 500 rows of data. \nPlease Register to load large log files."); 
       str1 = l();
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("IO Error reading row from file on row " + this.p + ".");
+      throw new ExceptionInVPackage("IO Error reading row from file on row " + this.p + ".");
     } 
     e(str1);
     if (str1.startsWith(r())) {
@@ -220,7 +220,7 @@ public class aG extends g {
     //   249: iload #6
     //   251: ireturn
     //   252: astore #4
-    //   254: new V/a
+    //   254: new V/ExceptionInVPackage
     //   257: dup
     //   258: new java/lang/StringBuilder
     //   261: dup
@@ -233,7 +233,7 @@ public class aG extends g {
     //   277: invokespecial <init> : (Ljava/lang/String;)V
     //   280: athrow
     //   281: astore #4
-    //   283: new V/a
+    //   283: new V/ExceptionInVPackage
     //   286: dup
     //   287: new java/lang/StringBuilder
     //   290: dup
@@ -246,7 +246,7 @@ public class aG extends g {
     //   306: invokespecial <init> : (Ljava/lang/String;)V
     //   309: athrow
     //   310: astore #4
-    //   312: new V/a
+    //   312: new V/ExceptionInVPackage
     //   315: dup
     //   316: new java/lang/StringBuilder
     //   319: dup

@@ -1,13 +1,13 @@
 package aP;
 
-import s.g;
+import s.SComponentGolf;
 
 class bE implements Runnable {
   bE(bD parambD) {}
   
   public void run() {
     f.a().q();
-    hq.a().a(g.b("Auto Logging: Stopped Logging"));
+    hq.a().a(SComponentGolf.b("Auto Logging: Stopped Logging"));
   }
 }
 

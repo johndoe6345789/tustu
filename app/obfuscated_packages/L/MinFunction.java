@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -12,7 +12,7 @@ public class MinFunction extends ac {
     this.a = paramList;
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = Double.MAX_VALUE;
     for (ab ab : this.a) {
       double d1 = ab.b(paramS);
@@ -22,7 +22,7 @@ public class MinFunction extends ac {
     return d;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

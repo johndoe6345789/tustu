@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.i;
-import V.a;
+import V.ExceptionInVPackage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,22 +9,22 @@ class IndicatorChannelSetupRunnable implements Runnable {
   IndicatorChannelSetupRunnable(IndicatorConfigurationProvider paramaN) {}
   
   public void run() {
-    if (Indicator.access$200(this.a.b).b() != null && (Indicator.access$200(this.a.b).b()).length > 0) {
-      this.a.b.g = new IndicatorOutputChannelListener(this.a.b);
-      this.a.b.h = new IndicatorStringUpdateListener(this.a.b);
+    if (Indicator.access$200(this.ExceptionInVPackage.b).b() != null && (Indicator.access$200(this.ExceptionInVPackage.b).b()).length > 0) {
+      this.ExceptionInVPackage.b.g = new IndicatorOutputChannelListener(this.ExceptionInVPackage.b);
+      this.ExceptionInVPackage.b.h = new IndicatorStringUpdateListener(this.ExceptionInVPackage.b);
       try {
-        i.a(this.a.b.e, Indicator.access$200(this.a.b), this.a.b.g, this.a.b.h);
-      } catch (a a) {
-        Logger.getLogger(Indicator.class.getName()).log(Level.SEVERE, "Bad Channel on dash indicator String expression", (Throwable)a);
+        i.ExceptionInVPackage(this.ExceptionInVPackage.b.e, Indicator.access$200(this.ExceptionInVPackage.b), this.ExceptionInVPackage.b.g, this.ExceptionInVPackage.b.h);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        Logger.getLogger(Indicator.class.getName()).log(Level.SEVERE, "Bad Channel on dash indicator String expression", (Throwable)ExceptionInVPackage);
       } 
     } 
-    if (Indicator.access$300(this.a.b).b() != null && (Indicator.access$300(this.a.b).b()).length > 0) {
-      this.a.b.g = (this.a.b.g != null) ? this.a.b.g : new IndicatorOutputChannelListener(this.a.b);
-      this.a.b.h = (this.a.b.h != null) ? this.a.b.h : new IndicatorStringUpdateListener(this.a.b);
+    if (Indicator.access$300(this.ExceptionInVPackage.b).b() != null && (Indicator.access$300(this.ExceptionInVPackage.b).b()).length > 0) {
+      this.ExceptionInVPackage.b.g = (this.ExceptionInVPackage.b.g != null) ? this.ExceptionInVPackage.b.g : new IndicatorOutputChannelListener(this.ExceptionInVPackage.b);
+      this.ExceptionInVPackage.b.h = (this.ExceptionInVPackage.b.h != null) ? this.ExceptionInVPackage.b.h : new IndicatorStringUpdateListener(this.ExceptionInVPackage.b);
       try {
-        i.a(this.a.b.e, Indicator.access$300(this.a.b), this.a.b.g, this.a.b.h);
-      } catch (a a) {
-        Logger.getLogger(Indicator.class.getName()).log(Level.SEVERE, "Bad Channel on dash indicator String expression", (Throwable)a);
+        i.ExceptionInVPackage(this.ExceptionInVPackage.b.e, Indicator.access$300(this.ExceptionInVPackage.b), this.ExceptionInVPackage.b.g, this.ExceptionInVPackage.b.h);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        Logger.getLogger(Indicator.class.getName()).log(Level.SEVERE, "Bad Channel on dash indicator String expression", (Throwable)ExceptionInVPackage);
       } 
     } 
   }

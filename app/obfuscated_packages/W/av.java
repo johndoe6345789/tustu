@@ -4,8 +4,8 @@ import G.F;
 import G.R;
 import G.Y;
 import G.aM;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 import java.io.BufferedOutputStream;
@@ -20,7 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class av extends aw {
-  public void a(R paramR, String paramString, List<String> paramList) {
+  public void ExceptionInVPackage(R paramR, String paramString, List<String> paramList) {
     boolean bool = false;
     try {
       if (paramList == null) {
@@ -28,16 +28,16 @@ public class av extends aw {
         for (String str : paramR.k())
           paramList.add(str); 
       } 
-      int[] arrayOfInt = a(paramString);
-      int[][] arrayOfInt1 = a(paramR, arrayOfInt);
+      int[] arrayOfInt = ExceptionInVPackage(paramString);
+      int[][] arrayOfInt1 = ExceptionInVPackage(paramR, arrayOfInt);
       for (String str : paramList) {
         aM aM = paramR.c(str);
-        boolean bool1 = (aM == null || aM.d() < 0 || a(paramR, aM)) ? true : false;
+        boolean bool1 = (aM == null || aM.d() < 0 || ExceptionInVPackage(paramR, aM)) ? true : false;
         if (!bool1) {
           if (aM.d() >= 0) {
             int[] arrayOfInt2 = new int[aM.z()];
-            System.arraycopy(arrayOfInt1[aM.d()], aM.g(), arrayOfInt2, 0, arrayOfInt2.length);
-            paramR.h().a(aM.d(), aM.g(), arrayOfInt2);
+            System.arraycopy(arrayOfInt1[aM.d()], aM.ExceptionPrintstacktrace(), arrayOfInt2, 0, arrayOfInt2.length);
+            paramR.h().ExceptionInVPackage(aM.d(), aM.ExceptionPrintstacktrace(), arrayOfInt2);
             continue;
           } 
           if (aM.d() == -1)
@@ -48,31 +48,31 @@ public class av extends aw {
         if (aM.d() >= 0)
           D.d("Skip load of " + str); 
       } 
-    } catch (g g) {
-      Logger.getLogger(av.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      throw new a("Failed to set the data from:\n" + paramString);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(av.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      throw new ExceptionInVPackage("Failed to set the data from:\n" + paramString);
     } catch (FileNotFoundException fileNotFoundException) {
       Logger.getLogger(av.class.getName()).log(Level.SEVERE, (String)null, fileNotFoundException);
-      throw new a("Can not access the file:\n" + paramString);
+      throw new ExceptionInVPackage("Can not access the file:\n" + paramString);
     } catch (IOException iOException) {
       Logger.getLogger(av.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      throw new a("An error occurred while reading tune file:\n" + paramString);
+      throw new ExceptionInVPackage("An error occurred while reading tune file:\n" + paramString);
     } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
       Logger.getLogger(av.class.getName()).log(Level.SEVERE, (String)null, arrayIndexOutOfBoundsException);
-      throw new a("Tune file size doesn't match current configuration.\nFile contained " + bool + " bytes, expected " + paramR.O().f(0));
+      throw new ExceptionInVPackage("Tune file size doesn't match current configuration.\nFile contained " + bool + " bytes, expected " + paramR.O().f(0));
     } 
   }
   
-  private boolean a(R paramR, aM paramaM) {
-    int i = paramR.O().y(paramaM.d()) + paramaM.g();
+  private boolean ExceptionInVPackage(R paramR, aM paramaM) {
+    int i = paramR.O().y(paramaM.d()) + paramaM.ExceptionPrintstacktrace();
     int j = i + paramaM.z() - 1;
     if (paramaM.N() || paramaM.H() || !paramaM.C())
       return true; 
-    for (byte b = 0; b < paramR.O().g(); b++) {
-      Iterator<aM> iterator = paramR.a(b);
+    for (byte b = 0; b < paramR.O().ExceptionPrintstacktrace(); b++) {
+      Iterator<aM> iterator = paramR.ExceptionInVPackage(b);
       while (iterator.hasNext()) {
         aM aM1 = iterator.next();
-        int k = paramR.O().y(aM1.d()) + aM1.g();
+        int k = paramR.O().y(aM1.d()) + aM1.ExceptionPrintstacktrace();
         int m = k + aM1.z() - 1;
         if (!aM1.P() && m >= i && k <= j && (aM1.N() || aM1.H() || !aM1.C())) {
           if (paramaM.aL().equals("nosAxisConfig1"));
@@ -83,7 +83,7 @@ public class av extends aw {
     return false;
   }
   
-  protected int[] a(R paramR) {
+  protected int[] ExceptionInVPackage(R paramR) {
     ArrayList<Integer> arrayList = new ArrayList();
     char c = '砀';
     int i = c + 2048;
@@ -93,14 +93,14 @@ public class av extends aw {
       if (j >= c && j + y.c(b1) <= i)
         arrayList.add(Integer.valueOf(b1)); 
     } 
-    arrayList = a(paramR.O(), arrayList);
+    arrayList = ExceptionInVPackage(paramR.O(), arrayList);
     int[] arrayOfInt = new int[arrayList.size()];
     for (byte b2 = 0; b2 < arrayOfInt.length; b2++)
       arrayOfInt[b2] = ((Integer)arrayList.get(b2)).intValue(); 
     return arrayOfInt;
   }
   
-  public ArrayList a(F paramF, ArrayList<Integer> paramArrayList) {
+  public ArrayList ExceptionInVPackage(F paramF, ArrayList<Integer> paramArrayList) {
     for (byte b = 0; b < paramArrayList.size(); b++) {
       for (int i = b + 1; i < paramArrayList.size(); i++) {
         Integer integer1 = paramArrayList.get(b);
@@ -114,17 +114,17 @@ public class av extends aw {
     return paramArrayList;
   }
   
-  public void a(String paramString, R paramR) {
+  public void ExceptionInVPackage(String paramString, R paramR) {
     File file = new File(paramString);
     if (file.exists())
       file.delete(); 
     file.createNewFile();
-    int[] arrayOfInt = a(paramR);
+    int[] arrayOfInt = ExceptionInVPackage(paramR);
     FileOutputStream fileOutputStream = new FileOutputStream(file);
     BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
     for (byte b = 0; b < arrayOfInt.length; b++) {
       int[] arrayOfInt1 = paramR.h().b(arrayOfInt[b]);
-      byte[] arrayOfByte = c.a(arrayOfInt1);
+      byte[] arrayOfByte = c.ExceptionInVPackage(arrayOfInt1);
       bufferedOutputStream.write(arrayOfByte);
     } 
     bufferedOutputStream.flush();

@@ -3,9 +3,9 @@ package aP;
 import G.R;
 import G.aM;
 import G.bv;
-import V.g;
-import V.j;
-import bA.e;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
+import bA.JMenuItemExtensionInBaPackage;
 import com.efiAnalytics.tuningwidgets.panels.W;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
@@ -13,26 +13,26 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import x.a;
+import x.JMenuExtensionSetpopupmenuvisible;
 
 class bp implements ActionListener {
-  bp(bl parambl, R paramR, bv parambv, a parama, e parame) {}
+  bp(bl parambl, R paramR, bv parambv, JMenuExtensionSetpopupmenuvisible parama, JMenuItemExtensionInBaPackage parame) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    aM aM = this.a.c(this.b.aa());
+    aM aM = this.JMenuExtensionSetpopupmenuvisible.c(this.b.aa());
     if (aM == null) {
       bV.d("Invalid Password Parameter.", (Component)this.c);
     } else {
       try {
-        aM.a(this.a.h(), 0.0D);
+        aM.JMenuExtensionSetpopupmenuvisible(this.JMenuExtensionSetpopupmenuvisible.h(), 0.0D);
         this.d.setEnabled(false);
-      } catch (g g) {
-        Logger.getLogger(bl.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(bl.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(bl.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(bl.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
         bV.d("Invalid Password?", (Component)this.c);
       } 
-      W.a();
+      W.JMenuExtensionSetpopupmenuvisible();
     } 
   }
 }

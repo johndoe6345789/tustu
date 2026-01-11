@@ -1,6 +1,6 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,11 +10,11 @@ class fY implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    a.A().b(jCheckBoxMenuItem.getState());
+    PropertiesExtension.A().b(jCheckBoxMenuItem.getState());
     if (jCheckBoxMenuItem.getState()) {
-      f.a().J();
+      f.PropertiesExtension().J();
     } else {
-      f.a().K();
+      f.PropertiesExtension().K();
     } 
   }
 }

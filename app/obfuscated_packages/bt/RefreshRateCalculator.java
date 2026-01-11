@@ -1,15 +1,15 @@
 package bt;
 
-import r.a;
+import r.IOPropertiesUsingFile;
 
 public class RefreshRateCalculator {
-  public static double a() {
+  public static double IOPropertiesUsingFile() {
     int i = b();
     return (i > 10) ? (Math.pow(i, 0.3D) / 6.0D) : 15.0D;
   }
   
   public static int b() {
-    return a.a().a(a.aT, 20000);
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().IOPropertiesUsingFile(IOPropertiesUsingFile.aT, 20000);
   }
 }
 

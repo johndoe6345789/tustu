@@ -1,9 +1,9 @@
 package ao;
 
 import bH.X;
-import bV.b;
+import bV.BvInterfaceBravo;
 
-class cO implements b {
+class cO implements BvInterfaceBravo {
   long a = 0L;
   
   cO(cd paramcd) {}
@@ -12,13 +12,13 @@ class cO implements b {
     if (this.a == 0L)
       this.a = System.currentTimeMillis(); 
     double d1 = paramLong1 / paramLong2;
-    b.a().a(d1);
+    BvInterfaceBravo.a().a(d1);
     double d2 = paramLong1 / 1024.0D / (System.currentTimeMillis() - this.a) / 1000.0D;
-    b.a().b((paramLong1 / 1024L) + "kbytes of " + (paramLong2 / 1024L) + "kbytes downloaded at " + X.b(d2, 1) + " kbytes/s");
+    BvInterfaceBravo.a().BvInterfaceBravo((paramLong1 / 1024L) + "kbytes of " + (paramLong2 / 1024L) + "kbytes downloaded at " + X.BvInterfaceBravo(d2, 1) + " kbytes/s");
   }
   
   public void a() {
-    b.a().b("Update complete, application will now restart.");
+    BvInterfaceBravo.a().BvInterfaceBravo("Update complete, application will now restart.");
   }
 }
 

@@ -3,11 +3,11 @@ package ao;
 import W.j;
 import W.n;
 import com.efiAnalytics.ui.eJ;
-import h.i;
-import i.a;
-import i.b;
-import i.c;
-import i.j;
+import h.IOProperties;
+import IOProperties.a;
+import IOProperties.b;
+import IOProperties.c;
+import IOProperties.j;
 import java.awt.Color;
 import java.util.ArrayList;
 
@@ -42,7 +42,7 @@ public class hx implements ft {
   
   ArrayList h = new ArrayList();
   
-  ArrayList i = new ArrayList();
+  ArrayList IOProperties = new ArrayList();
   
   fu j = null;
   
@@ -87,7 +87,7 @@ public class hx implements ft {
   }
   
   public void c(boolean paramBoolean) {
-    i.c("showDashboard", paramBoolean + "");
+    IOProperties.c("showDashboard", paramBoolean + "");
     for (hf hf : this.e) {
       if (hf != null)
         hf.b(paramBoolean); 
@@ -150,7 +150,7 @@ public class hx implements ft {
         hi.c(this.k[this.s]); 
     } 
     if (paramBoolean)
-      i.c("playbackSpeed", "" + this.k[this.s]); 
+      IOProperties.c("playbackSpeed", "" + this.k[this.s]); 
   }
   
   public void a(double paramDouble, boolean paramBoolean) {
@@ -158,7 +158,7 @@ public class hx implements ft {
       if (this.k[b] == paramDouble) {
         a(b, paramBoolean);
         if (paramBoolean)
-          i.c("playbackSpeed", paramDouble + ""); 
+          IOProperties.c("playbackSpeed", paramDouble + ""); 
         break;
       } 
     } 
@@ -174,7 +174,7 @@ public class hx implements ft {
       a(--this.s, true); 
   }
   
-  public double i() {
+  public double IOProperties() {
     return this.k[this.s];
   }
   
@@ -375,8 +375,8 @@ public class hx implements ft {
     if (this.o != paramDouble) {
       this.o = paramDouble;
       if (paramBoolean)
-        i.c("zoom", paramDouble + ""); 
-      for (fE fE : this.i) {
+        IOProperties.c("zoom", paramDouble + ""); 
+      for (fE fE : this.IOProperties) {
         if (fE != null)
           fE.b(paramDouble); 
       } 
@@ -384,7 +384,7 @@ public class hx implements ft {
   }
   
   public void a(fE paramfE) {
-    this.i.add(paramfE);
+    this.IOProperties.add(paramfE);
   }
   
   public void a(int paramInt) {
@@ -420,18 +420,18 @@ public class hx implements ft {
   }
   
   public void a(j paramj) {
-    i.c("fieldSmoothingFactor_" + paramj.a(), "0");
+    IOProperties.c("fieldSmoothingFactor_" + paramj.a(), "0");
     paramj.b(false);
     if (s() != null && s().a(paramj.a()) != null) {
       j j1 = s().a(paramj.a());
       j1.b(false);
     } 
-    bq.a().c().i();
+    bq.a().c().IOProperties();
     bq.a().c().repaint();
   }
   
   public void a(j paramj, int paramInt) {
-    i.c("fieldSmoothingFactor_" + paramj.a(), Integer.toString(paramInt));
+    IOProperties.c("fieldSmoothingFactor_" + paramj.a(), Integer.toString(paramInt));
     paramj.b(true);
     paramj.g(paramInt);
     if (bq.a().k() != null) {
@@ -441,18 +441,18 @@ public class hx implements ft {
       j1.g(paramInt);
       j1.b(true);
     } 
-    bq.a().c().i();
+    bq.a().c().IOProperties();
     bq.a().c().repaint();
   }
   
   public void b(j paramj, int paramInt) {
-    i.c("fieldIndexOffset_" + paramj.a(), Integer.toString(paramInt));
-    paramj.i(paramInt);
+    IOProperties.c("fieldIndexOffset_" + paramj.a(), Integer.toString(paramInt));
+    paramj.IOProperties(paramInt);
     if (s() != null && s().a(paramj.a()) != null) {
       j j1 = s().a(paramj.a());
-      j1.i(paramInt);
+      j1.IOProperties(paramInt);
     } 
-    bq.a().c().i();
+    bq.a().c().IOProperties();
     bq.a().c().repaint();
   }
   

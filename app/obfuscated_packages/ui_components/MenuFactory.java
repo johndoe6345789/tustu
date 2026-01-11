@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
@@ -109,8 +109,8 @@ public class bZ extends MouseAdapter implements MouseMotionListener, MouseWheelL
   
   public void mouseWheelMoved(MouseWheelEvent paramMouseWheelEvent) {
     double d = paramMouseWheelEvent.getPreciseWheelRotation();
-    String str = i.a(i.G, i.J);
-    if ((str.equals(i.I) ^ (((paramMouseWheelEvent.getModifiers() == 2) ? 1 : 0) | this.g)) != 0) {
+    String str = IOProperties.a(IOProperties.G, IOProperties.J);
+    if ((str.equals(IOProperties.I) ^ (((paramMouseWheelEvent.getModifiers() == 2) ? 1 : 0) | this.g)) != 0) {
       if (d < 0.0D) {
         this.c.y();
       } else {

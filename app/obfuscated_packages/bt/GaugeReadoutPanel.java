@@ -7,8 +7,8 @@ import G.bq;
 import G.bz;
 import G.cq;
 import G.cu;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.p;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.ac;
@@ -32,9 +32,9 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
 public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
-  dD a = new dD(this);
+  dD ExceptionInVPackage = new dD(this);
   
-  GridLayout b = new GridLayout(0, 1, eJ.a(3), eJ.a(4));
+  GridLayout b = new GridLayout(0, 1, eJ.ExceptionInVPackage(3), eJ.ExceptionInVPackage(4));
   
   List c = new ArrayList();
   
@@ -45,9 +45,9 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
   public D(R paramR, bz parambz) {
     this.d = paramR;
     this.e = parambz;
-    a(paramR);
+    ExceptionInVPackage(paramR);
     setLayout(this.b);
-    setBorder(BorderFactory.createEmptyBorder(eJ.a(2), eJ.a(2), eJ.a(1), eJ.a(2)));
+    setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(2)));
   }
   
   public D(R paramR, bq parambq) {
@@ -55,18 +55,18 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     this.e = new bz();
     this.e.u(parambq.aJ());
     this.e.x(parambq.m());
-    a(paramR);
+    ExceptionInVPackage(paramR);
     setLayout(this.b);
-    setBorder(BorderFactory.createEmptyBorder(eJ.a(1), eJ.a(1), eJ.a(1), eJ.a(1)));
-    a(1);
-    aH aH = paramR.g(parambq.b());
+    setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1)));
+    ExceptionInVPackage(1);
+    aH aH = paramR.ExceptionPrintstacktrace(parambq.b());
     if (aH == null)
-      bH.D.a("Invalid Channel Name!!!" + parambq.b()); 
+      bH.D.ExceptionInVPackage("Invalid Channel Name!!!" + parambq.b()); 
     int i = (int)-Math.round(Math.log10(aH.h()));
-    a(parambq.b(), i);
+    ExceptionInVPackage(parambq.b(), i);
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     this.b.setColumns(paramInt);
   }
   
@@ -79,27 +79,27 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     } 
   }
   
-  public void a(ah paramah) {
+  public void ExceptionInVPackage(ah paramah) {
     boolean bool = true;
     try {
-      bool = p.a(paramah.aJ(), b_());
-    } catch (g g) {
-      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      bool = p.ExceptionInVPackage(paramah.aJ(), b_());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     if (bool) {
       Gauge gauge = new Gauge();
       gauge.setEcuConfigurationName(this.d.c());
       gauge.setOutputChannel(paramah.i());
       try {
-        gauge.setTitle(paramah.k().a());
+        gauge.setTitle(paramah.k().ExceptionInVPackage());
       } catch (Exception exception) {
         bH.D.b("Unable to get Title for Gauge Def.. " + paramah.i());
         gauge.setTitle(paramah.i());
       } 
       try {
-        gauge.setUnits(paramah.j().a());
-      } catch (g g) {
-        bH.D.b("Unable to get Units for Gauge Def.. " + paramah.j() + "\nErr: " + g.getLocalizedMessage());
+        gauge.setUnits(paramah.j().ExceptionInVPackage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        bH.D.b("Unable to get Units for Gauge Def.. " + paramah.j() + "\nErr: " + ExceptionPrintstacktrace.getLocalizedMessage());
         gauge.setTitle(paramah.i());
       } 
       gauge.setMin(paramah.b());
@@ -107,7 +107,7 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       gauge.setLowCritical(paramah.o());
       gauge.setLowWarning(paramah.f());
       gauge.setHighCritical(paramah.h());
-      gauge.setHighWarning(paramah.g());
+      gauge.setHighWarning(paramah.ExceptionPrintstacktrace());
       gauge.setValueDigitsVP(paramah.m());
       gauge.setShortClickAction(paramah.r());
       gauge.setLongClickAction(paramah.s());
@@ -120,8 +120,8 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       this.c.add(gauge);
       try {
         gauge.subscribeToOutput();
-      } catch (a a) {
-        bV.d(a.getMessage(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(ExceptionInVPackage.getMessage(), this);
       } 
       add((Component)gauge);
       gauge.setDirty(true);
@@ -129,12 +129,12 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     } 
   }
   
-  protected void a(String paramString, int paramInt) {
+  protected void ExceptionInVPackage(String paramString, int paramInt) {
     boolean bool = true;
     try {
-      bool = p.a(this.e.V(), b_());
-    } catch (g g) {
-      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      bool = p.ExceptionInVPackage(this.e.V(), b_());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     if (bool) {
       Gauge gauge = new Gauge();
@@ -161,8 +161,8 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       this.c.add(gauge);
       try {
         gauge.subscribeToOutput();
-      } catch (a a) {
-        bV.d(a.getMessage(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(ExceptionInVPackage.getMessage(), this);
       } 
       add((Component)gauge);
       gauge.setDirty(true);
@@ -170,23 +170,23 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     } 
   }
   
-  public void a(s params) {
-    this.a.a();
+  public void ExceptionInVPackage(s params) {
+    this.ExceptionInVPackage.ExceptionInVPackage();
   }
   
   public void close() {
     for (Gauge gauge : this.c)
-      cu.a().a((cq)gauge); 
+      cu.ExceptionInVPackage().ExceptionInVPackage((cq)gauge); 
   }
   
   public Dimension getPreferredSize() {
     if (this.c.size() > 1) {
-      int k = eJ.a(38) * this.c.size() / this.b.getColumns();
-      int m = eJ.a(115) * this.b.getColumns();
+      int k = eJ.ExceptionInVPackage(38) * this.c.size() / this.b.getColumns();
+      int m = eJ.ExceptionInVPackage(115) * this.b.getColumns();
       return new Dimension(m, k);
     } 
-    int i = eJ.a(28) * this.c.size() / this.b.getColumns();
-    int j = eJ.a(125) * this.b.getColumns();
+    int i = eJ.ExceptionInVPackage(28) * this.c.size() / this.b.getColumns();
+    int j = eJ.ExceptionInVPackage(125) * this.b.getColumns();
     return new Dimension(j, i);
   }
   
@@ -194,13 +194,13 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     return getPreferredSize();
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (this.e != null && this.e.aJ() != null && !this.e.aJ().equals("")) {
       boolean bool = true;
       try {
-        bool = p.a(this.e.aJ(), b_());
-      } catch (g g) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        bool = p.ExceptionInVPackage(this.e.aJ(), b_());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
       if (isEnabled() && !bool) {
         setEnabled(false);
@@ -218,9 +218,9 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     if (this.e != null && this.e.V() != null && !this.e.V().equals("")) {
       boolean bool = true;
       try {
-        bool = p.a(this.e.V(), b_());
-      } catch (g g) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        bool = p.ExceptionInVPackage(this.e.V(), b_());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
       if (isVisible() && !bool) {
         setVisible(false);

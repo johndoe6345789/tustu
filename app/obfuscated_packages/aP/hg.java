@@ -6,7 +6,7 @@ import G.bM;
 import G.bv;
 import G.cj;
 import G.di;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bt.L;
 import bt.aV;
@@ -28,16 +28,16 @@ import java.util.Iterator;
 import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import n.b;
-import r.a;
-import r.i;
+import n.JPanelExtensionInNPackage;
+import r.IOPropertiesUsingFile;
+import r.RInterfaceIndia;
 
 public class hg extends d implements ab, di, bG, aO {
-  R a = null;
+  R IOPropertiesUsingFile = null;
   
-  bv b = null;
+  bv JPanelExtensionInNPackage = null;
   
-  b c = new b();
+  JPanelExtensionInNPackage c = new JPanelExtensionInNPackage();
   
   bh d = null;
   
@@ -45,11 +45,11 @@ public class hg extends d implements ab, di, bG, aO {
   
   ArrayList f = null;
   
-  hk g = null;
+  hk ExceptionPrintstacktrace = null;
   
   ho h = new ho(this);
   
-  hn i = new hn(this);
+  hn RInterfaceIndia = new hn(this);
   
   hl j = new hl(this);
   
@@ -64,64 +64,64 @@ public class hg extends d implements ab, di, bG, aO {
   }
   
   public hg(R paramR, bv parambv, boolean paramBoolean) {
-    this.a = paramR;
-    this.b = parambv;
+    this.IOPropertiesUsingFile = paramR;
+    this.JPanelExtensionInNPackage = parambv;
     setLayout(new BorderLayout());
     this.d = new bh(paramR, parambv);
     this.f = this.d.k();
     List list1 = parambv.e();
     List list2 = parambv.U();
     ArrayList arrayList = parambv.O();
-    if (parambv.J() > 0 || arrayList.size() > 0 || this.f.size() > 0 || (!list1.isEmpty() && i.a().a("hlk;rd;tporg;'gd")) || !list2.isEmpty()) {
+    if (parambv.J() > 0 || arrayList.size() > 0 || this.f.size() > 0 || (!list1.isEmpty() && RInterfaceIndia.IOPropertiesUsingFile().IOPropertiesUsingFile("hlk;rd;tporg;'gd")) || !list2.isEmpty()) {
       bl bl = new bl(paramR, parambv, this.f);
       add("North", bl);
     } 
-    a((bc)this.d);
+    IOPropertiesUsingFile((bc)this.d);
     if (this.d.l())
       paramR.C().f(false); 
     this.l.setLayout(new BorderLayout());
     add("Center", this.l);
-    boolean bool = a.a().c(a.ci, a.cj);
+    boolean bool = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.ci, IOPropertiesUsingFile.cj);
     if (bool && !(parambv instanceof G.be))
-      a(); 
-    if (a(parambv) || parambv.R() == 4) {
+      IOPropertiesUsingFile(); 
+    if (IOPropertiesUsingFile(parambv) || parambv.R() == 4) {
       this.l.add("Center", (Component)this.d);
     } else {
       JScrollPane jScrollPane = new JScrollPane((Component)this.d);
       this.l.add("Center", jScrollPane);
     } 
-    this.c.a(this);
+    this.c.IOPropertiesUsingFile(this);
     JPanel jPanel = new JPanel();
     FlowLayout flowLayout = new FlowLayout();
     flowLayout.setAlignment(2);
     jPanel.setLayout(flowLayout);
     jPanel.add((Component)this.c);
     this.c.d(paramBoolean);
-    if (list1.isEmpty() && !bM.b(parambv))
+    if (list1.isEmpty() && !bM.JPanelExtensionInNPackage(parambv))
       this.c.e(false); 
     add("South", jPanel);
-    paramR.p().a(this);
+    paramR.p().IOPropertiesUsingFile(this);
     j();
-    paramR.p().a(this);
+    paramR.p().IOPropertiesUsingFile(this);
     this.e = new hm(this, (Component)this);
-    cb.a().a(this.e);
-    paramR.C().a(this.h);
-    paramR.C().a(this.i);
+    cb.IOPropertiesUsingFile().IOPropertiesUsingFile(this.e);
+    paramR.C().IOPropertiesUsingFile(this.h);
+    paramR.C().IOPropertiesUsingFile(this.RInterfaceIndia);
     this.c.c(paramR.C().C());
-    bH.a().a(this);
+    bH.IOPropertiesUsingFile().IOPropertiesUsingFile(this);
   }
   
-  public void a() {
+  public void IOPropertiesUsingFile() {
     List list = this.d.p();
-    if (a(list) && this.k == null) {
-      int i = a.a().o();
-      int j = a.a().a(a.aH, i);
+    if (IOPropertiesUsingFile(list) && this.k == null) {
+      int RInterfaceIndia = IOPropertiesUsingFile.IOPropertiesUsingFile().o();
+      int j = IOPropertiesUsingFile.IOPropertiesUsingFile().IOPropertiesUsingFile(IOPropertiesUsingFile.aH, RInterfaceIndia);
       this.k = new JScrollPane(this.j);
       this.k.setPreferredSize(new Dimension(150, (int)(j * 4.5D)));
       for (L l : list)
-        l.a(this.j); 
+        l.IOPropertiesUsingFile(this.j); 
       this.l.add("South", this.k);
-      Window window = bV.b((Component)this);
+      Window window = bV.JPanelExtensionInNPackage((Component)this);
       if (window != null) {
         window.setSize(window.getWidth(), window.getHeight() + (this.k.getPreferredSize()).height);
       } else {
@@ -130,23 +130,23 @@ public class hg extends d implements ab, di, bG, aO {
     } 
   }
   
-  private boolean a(List paramList) {
+  private boolean IOPropertiesUsingFile(List paramList) {
     for (L l : paramList) {
-      String str = this.a.w(l.d());
+      String str = this.IOPropertiesUsingFile.w(l.d());
       if (str != null && !str.isEmpty())
         return true; 
     } 
     return false;
   }
   
-  public void b() {
+  public void JPanelExtensionInNPackage() {
     if (this.k != null) {
       List list = this.d.p();
       if (list.size() > 0)
         for (L l : list)
-          l.b(this.j);  
+          l.JPanelExtensionInNPackage(this.j);  
       this.l.remove(this.k);
-      Window window = bV.b((Component)this);
+      Window window = bV.JPanelExtensionInNPackage((Component)this);
       if (window != null) {
         window.setSize(window.getWidth(), window.getHeight() - (this.k.getPreferredSize()).height);
       } else {
@@ -156,7 +156,7 @@ public class hg extends d implements ab, di, bG, aO {
     } 
   }
   
-  private boolean a(bv parambv) {
+  private boolean IOPropertiesUsingFile(bv parambv) {
     if (parambv instanceof G.be || parambv instanceof G.bi || parambv instanceof G.bm)
       return true; 
     if (parambv.H() > 0 || (parambv.Z() > 1 && parambv.R() != 3))
@@ -164,19 +164,19 @@ public class hg extends d implements ab, di, bG, aO {
     Iterator<bv> iterator = parambv.K();
     while (iterator.hasNext()) {
       bv bv1 = iterator.next();
-      if (!a(bv1))
+      if (!IOPropertiesUsingFile(bv1))
         return false; 
     } 
     return true;
   }
   
   public boolean c() {
-    if (this.b.O().size() > 0) {
-      f.a().a(this.a, this.b.O().get(0), bV.a((Component)this));
+    if (this.JPanelExtensionInNPackage.O().size() > 0) {
+      f.IOPropertiesUsingFile().IOPropertiesUsingFile(this.IOPropertiesUsingFile, this.JPanelExtensionInNPackage.O().get(0), bV.IOPropertiesUsingFile((Component)this));
       return true;
     } 
     if (this.f.size() > 0) {
-      f.a().a(this.f.get(0), bV.a((Component)this));
+      f.IOPropertiesUsingFile().IOPropertiesUsingFile(this.f.get(0), bV.IOPropertiesUsingFile((Component)this));
       return true;
     } 
     return false;
@@ -184,9 +184,9 @@ public class hg extends d implements ab, di, bG, aO {
   
   public void d() {
     try {
-      this.a.p().d();
-    } catch (g g) {
-      D.a("Error performing redo:", (Exception)g, this);
+      this.IOPropertiesUsingFile.p().d();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.IOPropertiesUsingFile("Error performing redo:", (Exception)ExceptionPrintstacktrace, this);
     } 
     this.d.requestFocus();
     m();
@@ -194,9 +194,9 @@ public class hg extends d implements ab, di, bG, aO {
   
   public void e() {
     try {
-      this.a.p().c();
-    } catch (g g) {
-      D.a("Error performing undo:", (Exception)g, this);
+      this.IOPropertiesUsingFile.p().c();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.IOPropertiesUsingFile("Error performing undo:", (Exception)ExceptionPrintstacktrace, this);
     } 
     m();
   }
@@ -211,7 +211,7 @@ public class hg extends d implements ab, di, bG, aO {
   }
   
   public void f() {
-    g();
+    ExceptionPrintstacktrace();
     hh hh = new hh(this);
     hh.start();
     m();
@@ -222,21 +222,21 @@ public class hg extends d implements ab, di, bG, aO {
     hi.start();
   }
   
-  protected void g() {
+  protected void ExceptionPrintstacktrace() {
     Component[] arrayOfComponent = getComponents();
     for (byte b1 = 0; b1 < arrayOfComponent.length; b1++) {
       if (arrayOfComponent[b1] instanceof bh)
-        a((bh)arrayOfComponent[b1]); 
+        IOPropertiesUsingFile((bh)arrayOfComponent[b1]); 
     } 
   }
   
-  private void a(bh parambh) {
+  private void IOPropertiesUsingFile(bh parambh) {
     Component[] arrayOfComponent = parambh.getComponents();
     for (byte b1 = 0; b1 < arrayOfComponent.length; b1++) {
       if (arrayOfComponent[b1] instanceof aV) {
         ((aV)arrayOfComponent[b1]).h();
       } else if (arrayOfComponent[b1] instanceof bh) {
-        a((bh)arrayOfComponent[b1]);
+        IOPropertiesUsingFile((bh)arrayOfComponent[b1]);
       } 
     } 
   }
@@ -245,73 +245,73 @@ public class hg extends d implements ab, di, bG, aO {
     return (this.d != null && this.d.n());
   }
   
-  public void i() {
-    this.h.a = true;
+  public void RInterfaceIndia() {
+    this.h.IOPropertiesUsingFile = true;
     List list = this.d.p();
     if (list.size() > 0)
       for (L l : list)
-        l.b(this.j);  
-    bH.a().b(this);
+        l.JPanelExtensionInNPackage(this.j);  
+    bH.IOPropertiesUsingFile().JPanelExtensionInNPackage(this);
     if (this.d.l()) {
       f();
-      cj[] arrayOfCj = bM.b(this.a, this.b);
-      f.a().a(this.a, arrayOfCj);
+      cj[] arrayOfCj = bM.JPanelExtensionInNPackage(this.IOPropertiesUsingFile, this.JPanelExtensionInNPackage);
+      f.IOPropertiesUsingFile().IOPropertiesUsingFile(this.IOPropertiesUsingFile, arrayOfCj);
       n();
       f();
-    } else if (!a.a().a(a.cl, "true").equals("false")) {
+    } else if (!IOPropertiesUsingFile.IOPropertiesUsingFile().IOPropertiesUsingFile(IOPropertiesUsingFile.cl, "true").equals("false")) {
       f();
     } 
-    this.a.p().b(this);
-    this.a.C().c(this.h);
-    this.a.C().b(this.i);
+    this.IOPropertiesUsingFile.p().JPanelExtensionInNPackage(this);
+    this.IOPropertiesUsingFile.C().c(this.h);
+    this.IOPropertiesUsingFile.C().JPanelExtensionInNPackage(this.RInterfaceIndia);
     l();
-    cb.a().b(this.e);
-    a((Component)this);
+    cb.IOPropertiesUsingFile().JPanelExtensionInNPackage(this.e);
+    IOPropertiesUsingFile((Component)this);
   }
   
-  private void a(Component paramComponent) {
+  private void IOPropertiesUsingFile(Component paramComponent) {
     if (paramComponent instanceof bc)
       ((bc)paramComponent).close(); 
     if (paramComponent instanceof Container) {
       Container container = (Container)paramComponent;
       for (byte b1 = 0; b1 < container.getComponentCount(); b1++)
-        a(container.getComponent(b1)); 
+        IOPropertiesUsingFile(container.getComponent(b1)); 
     } 
   }
   
   public void j() {
-    if (this.g != null) {
-      this.g.a();
+    if (this.ExceptionPrintstacktrace != null) {
+      this.ExceptionPrintstacktrace.IOPropertiesUsingFile();
     } else {
-      this.g = new hk(this);
-      this.g.a();
-      this.g.start();
+      this.ExceptionPrintstacktrace = new hk(this);
+      this.ExceptionPrintstacktrace.IOPropertiesUsingFile();
+      this.ExceptionPrintstacktrace.start();
     } 
   }
   
   public void k() {
     if (this.d != null)
-      this.d.a(); 
+      this.d.IOPropertiesUsingFile(); 
   }
   
-  public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
-    if (paramString.equals(this.a.c()))
+  public void IOPropertiesUsingFile(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
+    if (paramString.equals(this.IOPropertiesUsingFile.c()))
       j(); 
   }
   
-  public void a(boolean paramBoolean) {
-    this.c.a(paramBoolean);
+  public void IOPropertiesUsingFile(boolean paramBoolean) {
+    this.c.IOPropertiesUsingFile(paramBoolean);
   }
   
-  public void b(boolean paramBoolean) {
-    this.c.b(paramBoolean);
+  public void JPanelExtensionInNPackage(boolean paramBoolean) {
+    this.c.JPanelExtensionInNPackage(paramBoolean);
   }
   
   public void c(boolean paramBoolean) {
     if (paramBoolean) {
-      a();
+      IOPropertiesUsingFile();
     } else {
-      b();
+      JPanelExtensionInNPackage();
     } 
   }
 }

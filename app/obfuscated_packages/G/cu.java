@@ -1,11 +1,11 @@
 package G;
 
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.A;
 import bH.D;
 import bH.c;
-import bQ.l;
+import bQ.IOHashMap;
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
@@ -18,7 +18,7 @@ public class cu implements aF {
   
   private final ConcurrentHashMap f = new ConcurrentHashMap<>();
   
-  private final ConcurrentHashMap g = new ConcurrentHashMap<>();
+  private final ConcurrentHashMap ExceptionPrintstacktrace = new ConcurrentHashMap<>();
   
   private final ArrayList h = new ArrayList();
   
@@ -28,13 +28,13 @@ public class cu implements aF {
   
   private final ConcurrentHashMap k = new ConcurrentHashMap<>();
   
-  private final List l = new ArrayList();
+  private final List IOHashMap = new ArrayList();
   
   private cw m = null;
   
   private boolean n = true;
   
-  public static String a = "Application Events";
+  public static String ExceptionInVPackage = "Application Events";
   
   public static String b = "AppEvent.";
   
@@ -44,30 +44,30 @@ public class cu implements aF {
   
   int d = 0;
   
-  public static cu a() {
+  public static cu ExceptionInVPackage() {
     if (e == null && A.i().b())
       e = new cu(); 
     return e;
   }
   
-  public ConcurrentHashMap a(String paramString) {
+  public ConcurrentHashMap ExceptionInVPackage(String paramString) {
     return (ConcurrentHashMap)this.f.get(paramString);
   }
   
   public int b(String paramString) {
-    return a(paramString).keySet().size();
+    return ExceptionInVPackage(paramString).keySet().size();
   }
   
-  public ArrayList a(String paramString1, String paramString2) {
-    ConcurrentHashMap concurrentHashMap = a(paramString1);
+  public ArrayList ExceptionInVPackage(String paramString1, String paramString2) {
+    ConcurrentHashMap concurrentHashMap = ExceptionInVPackage(paramString1);
     return (ArrayList)concurrentHashMap.get(paramString2);
   }
   
   protected ArrayList c(String paramString) {
-    ArrayList arrayList = (ArrayList)this.g.get(paramString);
+    ArrayList arrayList = (ArrayList)this.ExceptionPrintstacktrace.get(paramString);
     if (arrayList == null) {
       arrayList = new ArrayList();
-      this.g.put(paramString, arrayList);
+      this.ExceptionPrintstacktrace.put(paramString, arrayList);
     } 
     return arrayList;
   }
@@ -89,25 +89,25 @@ public class cu implements aF {
     return (String[])this.h.toArray((Object[])new String[this.h.size()]);
   }
   
-  public void a(String paramString, dj paramdj) {
+  public void ExceptionInVPackage(String paramString, dj paramdj) {
     this.j.put(paramString, paramdj);
   }
   
-  public boolean a(String paramString, cq paramcq) {
+  public boolean ExceptionInVPackage(String paramString, cq paramcq) {
     ArrayList<cq> arrayList = c(paramString);
     boolean bool = arrayList.isEmpty();
     if (!arrayList.contains(paramcq))
       arrayList.add(paramcq); 
     Double double_ = (Double)this.i.get(paramString);
     if (double_ != null)
-      a(paramString, double_.doubleValue()); 
+      ExceptionInVPackage(paramString, double_.doubleValue()); 
     return bool;
   }
   
-  public double g(String paramString) {
+  public double ExceptionPrintstacktrace(String paramString) {
     dj dj = (dj)this.j.get(paramString);
     if (dj != null)
-      return dj.a(); 
+      return dj.ExceptionInVPackage(); 
     Double double_ = (Double)this.i.get(paramString);
     return (double_ != null) ? double_.doubleValue() : Double.NaN;
   }
@@ -115,8 +115,8 @@ public class cu implements aF {
   public List h(String paramString) {
     cp cp = (cp)this.k.get(paramString);
     if (cp != null) {
-      ConcurrentHashMap concurrentHashMap = a(paramString);
-      return (concurrentHashMap != null) ? cp.a(concurrentHashMap.keySet()) : null;
+      ConcurrentHashMap concurrentHashMap = ExceptionInVPackage(paramString);
+      return (concurrentHashMap != null) ? cp.ExceptionInVPackage(concurrentHashMap.keySet()) : null;
     } 
     return null;
   }
@@ -125,10 +125,10 @@ public class cu implements aF {
     cp cp = (cp)this.k.get(paramR.c());
     if (cp == null) {
       cp = new cp(paramR);
-      cp.a(paramR.O());
-      if (paramR.C() instanceof l) {
-        l l = (l)paramR.C();
-        cp.b((co)l.a(paramR.c()));
+      cp.ExceptionInVPackage(paramR.O());
+      if (paramR.C() instanceof IOHashMap) {
+        IOHashMap IOHashMap = (IOHashMap)paramR.C();
+        cp.b((co)IOHashMap.ExceptionInVPackage(paramR.c()));
       } else if (paramR.O().Z() != null) {
         cp.b(new cT(paramR));
       } 
@@ -137,7 +137,7 @@ public class cu implements aF {
     return cp;
   }
   
-  public void a(String paramString, List paramList, cq paramcq) {
+  public void ExceptionInVPackage(String paramString, List paramList, cq paramcq) {
     boolean bool = false;
     for (String str : paramList) {
       if (b(paramString, str, paramcq) && !bool)
@@ -154,7 +154,7 @@ public class cu implements aF {
     } 
   }
   
-  public void a(String paramString1, String paramString2, cq paramcq) {
+  public void ExceptionInVPackage(String paramString1, String paramString2, cq paramcq) {
     boolean bool = b(paramString1, paramString2, paramcq);
     if (!this.o) {
       R r = c().c(paramString1);
@@ -169,26 +169,26 @@ public class cu implements aF {
   
   private boolean b(String paramString1, String paramString2, cq paramcq) {
     boolean bool;
-    if (paramString1.equals(a) || paramString1.startsWith("AppEvent")) {
+    if (paramString1.equals(ExceptionInVPackage) || paramString1.startsWith("AppEvent")) {
       try {
-        bool = a(paramString2, paramcq);
+        bool = ExceptionInVPackage(paramString2, paramcq);
       } catch (Exception exception) {
-        throw new a("Invalid OutputChannel Name: " + paramString2);
+        throw new ExceptionInVPackage("Invalid OutputChannel Name: " + paramString2);
       } 
     } else {
-      ConcurrentHashMap<Object, Object> concurrentHashMap = a(paramString1);
+      ConcurrentHashMap<Object, Object> concurrentHashMap = ExceptionInVPackage(paramString1);
       R r = c().c(paramString1);
       if (concurrentHashMap == null) {
         if (r == null)
-          throw new a("Can not subscribe to ECU Configuration " + paramString1 + "\n It does not appear to be loaded."); 
+          throw new ExceptionInVPackage("Can not subscribe to ECU Configuration " + paramString1 + "\n It does not appear to be loaded."); 
         concurrentHashMap = new ConcurrentHashMap<>();
         synchronized (this.f) {
           this.f.put(paramString1, concurrentHashMap);
         } 
       } 
-      aH aH = r.g(paramString2);
+      aH aH = r.ExceptionPrintstacktrace(paramString2);
       if (aH == null)
-        throw new a("Can not subscribe to OutputChannel " + paramString2 + "\n It is not defined in ECU Configuration " + paramString1 + "."); 
+        throw new ExceptionInVPackage("Can not subscribe to OutputChannel " + paramString2 + "\n It is not defined in ECU Configuration " + paramString1 + "."); 
       ArrayList<cq> arrayList = (ArrayList)concurrentHashMap.get(paramString2);
       if (arrayList == null) {
         arrayList = new ArrayList();
@@ -204,12 +204,12 @@ public class cu implements aF {
     return bool;
   }
   
-  public void a(R paramR) {
+  public void ExceptionInVPackage(R paramR) {
     cp cp = b(paramR);
     cp.b();
   }
   
-  public void a(cq paramcq) {
+  public void ExceptionInVPackage(cq paramcq) {
     boolean bool = false;
     synchronized (this.f) {
       for (ConcurrentHashMap concurrentHashMap : this.f.values()) {
@@ -227,8 +227,8 @@ public class cu implements aF {
         } 
       } 
     } 
-    synchronized (this.g) {
-      for (ArrayList arrayList : this.g.values()) {
+    synchronized (this.ExceptionPrintstacktrace) {
+      for (ArrayList arrayList : this.ExceptionPrintstacktrace.values()) {
         while (arrayList.contains(paramcq)) {
           if (arrayList.remove(paramcq) && !bool)
             bool = true; 
@@ -244,19 +244,19 @@ public class cu implements aF {
     synchronized (this.f) {
       this.f.remove(paramString);
     } 
-    R r = T.a().c(paramString);
+    R r = T.ExceptionInVPackage().c(paramString);
     cp cp = b(r);
-    cp.a();
+    cp.ExceptionInVPackage();
     this.k.remove(paramString);
   }
   
-  public void a(String paramString, double paramDouble) {
+  public void ExceptionInVPackage(String paramString, double paramDouble) {
     if (this.n) {
       if (this.m == null || !this.m.isAlive()) {
         this.m = new cw(this, null);
         this.m.start();
       } 
-      this.m.a(paramString, paramDouble);
+      this.m.ExceptionInVPackage(paramString, paramDouble);
     } else {
       b(paramString, paramDouble);
     } 
@@ -282,46 +282,46 @@ public class cu implements aF {
     this.i.put(paramString, Double.valueOf(paramDouble));
   }
   
-  public void a(ct paramct) {
-    this.l.add(paramct);
+  public void ExceptionInVPackage(ct paramct) {
+    this.IOHashMap.add(paramct);
   }
   
-  public boolean a(R paramR, aH paramaH) {
-    for (ct ct : this.l) {
-      if (!ct.a(paramR, paramaH))
+  public boolean ExceptionInVPackage(R paramR, aH paramaH) {
+    for (ct ct : this.IOHashMap) {
+      if (!ct.ExceptionInVPackage(paramR, paramaH))
         return false; 
     } 
     return true;
   }
   
-  public void a(String paramString, byte[] paramArrayOfbyte) {
+  public void ExceptionInVPackage(String paramString, byte[] paramArrayOfbyte) {
     if (this.n) {
       if (this.m == null || !this.m.isAlive()) {
         this.m = new cw(this, null);
         this.m.start();
       } 
-      this.m.a(paramString, paramArrayOfbyte);
+      this.m.ExceptionInVPackage(paramString, paramArrayOfbyte);
     } else {
       b(paramString, paramArrayOfbyte);
     } 
   }
   
   private void b(String paramString, byte[] paramArrayOfbyte) {
-    ConcurrentHashMap concurrentHashMap = a(paramString);
+    ConcurrentHashMap concurrentHashMap = ExceptionInVPackage(paramString);
     if (concurrentHashMap == null)
       return; 
     R r = c().c(paramString);
     synchronized (concurrentHashMap) {
       try {
         for (String str : concurrentHashMap.keySet()) {
-          aH aH = r.g(str);
-          if (a(r, aH)) {
+          aH aH = r.ExceptionPrintstacktrace(str);
+          if (ExceptionInVPackage(r, aH)) {
             ArrayList arrayList = (ArrayList)concurrentHashMap.get(str);
             if (arrayList != null && !arrayList.isEmpty()) {
               double d = 0.0D;
               try {
                 d = aH.b(paramArrayOfbyte);
-              } catch (g g) {
+              } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
                 D.c("Could not get value for OutputChannel:" + str);
               } catch (Exception exception) {
                 if (r.R()) {
@@ -351,18 +351,18 @@ public class cu implements aF {
   }
   
   public W c() {
-    return T.a();
+    return T.ExceptionInVPackage();
   }
   
-  public void a(String paramString1, String paramString2, double paramDouble) {
-    ArrayList arrayList = a().a(paramString1, paramString2);
+  public void ExceptionInVPackage(String paramString1, String paramString2, double paramDouble) {
+    ArrayList arrayList = ExceptionInVPackage().ExceptionInVPackage(paramString1, paramString2);
     if (arrayList == null)
-      throw new a("EcuConfiguration and/or OutputChannel not found."); 
+      throw new ExceptionInVPackage("EcuConfiguration and/or OutputChannel not found."); 
     for (cq cq : arrayList)
       cq.setCurrentOutputChannelValue(paramString2, paramDouble); 
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.n = paramBoolean;
   }
   

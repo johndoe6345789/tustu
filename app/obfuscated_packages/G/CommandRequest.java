@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ public class CommandRequest extends Q {
   
   private int f = -1;
   
-  private int g = 1;
+  private int ExceptionPrintstacktrace = 1;
   
   private String h = null;
   
@@ -182,9 +182,9 @@ public class CommandRequest extends Q {
   }
   
   public static List b(F paramF, String paramString) {
-    G g = paramF.b(paramString);
+    G ExceptionPrintstacktrace = paramF.b(paramString);
     ArrayList<m> arrayList = new ArrayList();
-    for (H h : g) {
+    for (H h : ExceptionPrintstacktrace) {
       m m1 = new m(paramF);
       m1.d(16);
       int[] arrayOfInt = c.b(h.d());
@@ -263,7 +263,7 @@ public class CommandRequest extends Q {
         return m1;
       } catch (Exception exception) {
         exception.printStackTrace();
-        throw new g("Unable to parse table CRC instruction: " + str);
+        throw new ExceptionPrintstacktrace("Unable to parse table CRC instruction: " + str);
       }  
     return null;
   }
@@ -277,7 +277,7 @@ public class CommandRequest extends Q {
     return m1;
   }
   
-  public static m g(F paramF) {
+  public static m ExceptionPrintstacktrace(F paramF) {
     m m1 = new m(paramF);
     m1.d(3);
     m1.v("Read All Tune Data");
@@ -385,7 +385,7 @@ public class CommandRequest extends Q {
     this.q = paramInt;
   }
   
-  public boolean g() {
+  public boolean ExceptionPrintstacktrace() {
     return this.u;
   }
   
@@ -494,7 +494,7 @@ public class CommandRequest extends Q {
     this.k = paramString;
   }
   
-  public void g(int paramInt) {
+  public void ExceptionPrintstacktrace(int paramInt) {
     this.p = paramInt;
   }
   
@@ -507,7 +507,7 @@ public class CommandRequest extends Q {
   }
   
   public void h(int paramInt) {
-    this.g = paramInt;
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public F v() {

@@ -1,7 +1,7 @@
 package G;
 
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,10 +19,10 @@ class cA implements cq {
         if (this.a.i().equals(ca.d))
           this.b.a(this); 
       } 
-    } catch (g g) {
-      Logger.getLogger(cy.class.getName()).log(Level.SEVERE, "Invalid PcVariable Use for " + this.a.aL(), (Throwable)g);
-    } catch (j j) {
-      Logger.getLogger(cy.class.getName()).log(Level.SEVERE, "Received Invalid OutputChannel value for " + this.a.aL(), (Throwable)j);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(cy.class.getName()).log(Level.SEVERE, "Invalid PcVariable Use for " + this.a.aL(), (Throwable)ExceptionPrintstacktrace);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      Logger.getLogger(cy.class.getName()).log(Level.SEVERE, "Received Invalid OutputChannel value for " + this.a.aL(), (Throwable)ExceptionExtensionGetmessage);
     } 
   }
 }

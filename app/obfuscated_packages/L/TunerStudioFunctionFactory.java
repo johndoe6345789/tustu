@@ -3,14 +3,14 @@ package L;
 import G.R;
 import G.T;
 import G.aI;
-import I.k;
-import ax.A;
+import I.ThreadedInIPackage;
+import ax.AxComponentAlpha;
 import ax.ab;
 import ax.ac;
-import ax.e;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class TunerStudioFunctionFactory extends e {
+public class TunerStudioFunctionFactory extends AbstractInAxPackage {
   private aI b;
   
   private static boolean c = true;
@@ -31,7 +31,7 @@ public class TunerStudioFunctionFactory extends e {
     } else if (paramString.equalsIgnoreCase("table")) {
       ac = d(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getWorkingLocalCanId")) {
-      ac = e(paramString, paramList);
+      ac = AbstractInAxPackage(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelValueByOffset")) {
       ac = h(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelScaleByOffset")) {
@@ -39,7 +39,7 @@ public class TunerStudioFunctionFactory extends e {
     } else if (paramString.equalsIgnoreCase("getChannelTranslateByOffset")) {
       ac = j(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelDigitsByOffset")) {
-      ac = k(paramString, paramList);
+      ac = ThreadedInIPackage(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelMinByOffset")) {
       ac = l(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelMaxByOffset")) {
@@ -80,38 +80,38 @@ public class TunerStudioFunctionFactory extends e {
   
   private ac b(String paramString, List paramList) {
     if (paramList.size() != 0)
-      throw new A(paramString, paramList.size(), 0); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new X();
   }
   
   private ac c(String paramString, List paramList) {
     if (paramList.size() != 0)
-      throw new A(paramString, paramList.size(), 0); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new R();
   }
   
   private ac d(String paramString, List<ab> paramList) {
     if (paramList.size() != 2)
-      throw new A(paramString, paramList.size(), 2); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 2); 
     return new S(paramList.get(0), paramList.get(1));
   }
   
-  private ac e(String paramString, List paramList) {
+  private ac AbstractInAxPackage(String paramString, List paramList) {
     if (!paramList.isEmpty())
-      throw new A(paramString, paramList.size(), 0); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new ad();
   }
   
   private ac f(String paramString, List paramList) {
     if (paramList.isEmpty())
       return new D(this.b); 
-    throw new A(paramString, paramList.size(), 0);
+    throw new AxComponentAlpha(paramString, paramList.size(), 0);
   }
   
   private ac g(String paramString, List paramList) {
     if (paramList.size() >= 2 && paramList.size() <= 3)
       return new ac(paramList); 
-    throw new A(paramString, paramList.size(), 2);
+    throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
   private ac h(String paramString, List<ab> paramList) {
@@ -119,7 +119,7 @@ public class TunerStudioFunctionFactory extends e {
       return new s(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new s(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
   private ac i(String paramString, List<ab> paramList) {
@@ -127,7 +127,7 @@ public class TunerStudioFunctionFactory extends e {
       return new w(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new w(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
   private ac j(String paramString, List<ab> paramList) {
@@ -135,15 +135,15 @@ public class TunerStudioFunctionFactory extends e {
       return new x(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new x(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac k(String paramString, List<ab> paramList) {
+  private ac ThreadedInIPackage(String paramString, List<ab> paramList) {
     if (paramList.size() == 1)
       return new t(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new t(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
   private ac l(String paramString, List<ab> paramList) {
@@ -151,7 +151,7 @@ public class TunerStudioFunctionFactory extends e {
       return new v(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new v(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
   private ac m(String paramString, List<ab> paramList) {
@@ -159,13 +159,13 @@ public class TunerStudioFunctionFactory extends e {
       return new u(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
       return new u(paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 1);
+    throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
   private ac n(String paramString, List<ab> paramList) {
     if (paramList.size() == 2)
       return new d(this.b, paramList.get(0), paramList.get(1)); 
-    throw new A(paramString, paramList.size(), 2);
+    throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
   private ac o(String paramString, List<ab> paramList) {
@@ -173,24 +173,24 @@ public class TunerStudioFunctionFactory extends e {
       return new T(this.b, paramList.get(0), paramList.get(1), paramList.get(2), paramList.get(3), paramList.get(4)); 
     if (paramList.size() == 3)
       return new U(this.b, paramList.get(0), paramList.get(1), paramList.get(2)); 
-    throw new A("Proper usage: tableLookup(array.zArray, array.xArray, array.yArray, xChannel, yChannel), or for 1D tables: tableLookup(array.ValueArrayName, array.LookupArrayName, LookupChannelName)" + paramString, paramList.size(), 5);
+    throw new AxComponentAlpha("Proper usage: tableLookup(array.zArray, array.xArray, array.yArray, xChannel, yChannel), or for 1D tables: tableLookup(array.ValueArrayName, array.LookupArrayName, LookupChannelName)" + paramString, paramList.size(), 5);
   }
   
   private ac p(String paramString, List paramList) {
     if (!paramList.isEmpty())
-      throw new A(paramString, paramList.size(), 0); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new y();
   }
   
   private ac q(String paramString, List paramList) {
     if (!paramList.isEmpty())
-      throw new A(paramString, paramList.size(), 0); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new L(this.a);
   }
   
   private ac r(String paramString, List<ab> paramList) {
     if (paramList.size() != 1)
-      throw new A(paramString, paramList.size(), 1); 
+      throw new AxComponentAlpha(paramString, paramList.size(), 1); 
     String str = ((ab)paramList.get(0)).toString();
     R r = T.a().c();
     if (r != null && this.b.c().equals(r.c())) {
@@ -201,7 +201,7 @@ public class TunerStudioFunctionFactory extends e {
     i i = new i(this);
     j j = new j(this, i, str);
     b b = new b(paramList.get(0), this.a, j);
-    k.a().a(this.b.c(), str, b);
+    ThreadedInIPackage.a().a(this.b.c(), str, b);
     return b;
   }
   

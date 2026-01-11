@@ -2,7 +2,7 @@ package aP;
 
 import G.bT;
 import java.util.List;
-import s.g;
+import s.SComponentGolf;
 
 class bi {
   private String b;
@@ -21,7 +21,7 @@ class bi {
   }
   
   public String toString() {
-    return this.e + ", " + g.b("Found") + ": " + a().c();
+    return this.e + ", " + SComponentGolf.b("Found") + ": " + a().c();
   }
   
   public bT a() {

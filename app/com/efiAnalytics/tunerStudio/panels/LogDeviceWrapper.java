@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import G.cd;
-import s.g;
+import s.SComponentGolf;
 
 class LogDeviceWrapper {
   private cd b = null;
@@ -11,7 +11,7 @@ class LogDeviceWrapper {
   }
   
   public String toString() {
-    return (a() == null) ? "[none]" : ((a().g() == null) ? g.b("Unknown") : g.b(a().g()));
+    return (a() == null) ? "[none]" : ((a().SComponentGolf() == null) ? SComponentGolf.b("Unknown") : SComponentGolf.b(a().SComponentGolf()));
   }
   
   public cd a() {

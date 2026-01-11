@@ -1,10 +1,10 @@
 package G;
 
-import A.l;
-import J.f;
-import J.g;
-import V.a;
-import V.g;
+import A.AInterfaceLima;
+import J.SerializableImpl;
+import J.SerializableImplInJPackage;
+import V.ExceptionInVPackage;
+import V.SerializableImplInJPackage;
 import bH.D;
 import bH.X;
 import java.io.Serializable;
@@ -23,9 +23,9 @@ import java.util.logging.Logger;
 public class ProtocolConfiguration extends Q implements co, Serializable, Cloneable {
   private String e = "basicRequestReply";
   
-  private String f = "big";
+  private String SerializableImpl = "big";
   
-  private int g = 0;
+  private int SerializableImplInJPackage = 0;
   
   private int h = 300;
   
@@ -35,7 +35,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   private boolean k = false;
   
-  private boolean l = false;
+  private boolean AInterfaceLima = false;
   
   private int[] m = null;
   
@@ -93,9 +93,9 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   private int N = 300;
   
-  public static int a = 14;
+  public static int ExceptionInVPackage = 14;
   
-  private int O = a;
+  private int O = ExceptionInVPackage;
   
   private int P = 0;
   
@@ -209,11 +209,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   int d = 0;
   
-  public static boolean a(String paramString) {
+  public static boolean ExceptionInVPackage(String paramString) {
     return (paramString.equals("pageReadCommand") || paramString.equals("pageIdentifier") || paramString.equals("pageValueWrite") || paramString.equals("pageChunkWrite") || paramString.equals("pageActivate") || paramString.equals("pageActivationDelay") || paramString.equals("blockReadTimeout") || paramString.equals("writeBlocks") || paramString.equals("interWriteDelay") || paramString.equals("endianness") || paramString.equals("nPages") || paramString.equals("ochBlockSize") || paramString.equals("ochGetCommand") || paramString.equals("queryCommand") || paramString.equals("versionInfo") || paramString.equals("pageSize") || paramString.equals("burnCommand") || paramString.equals("tableWriteCommand") || paramString.equals("blockingFactor") || paramString.equals("getCommand") || paramString.equals("crc32CheckCommand") || paramString.equals("messageEnvelopeFormat") || paramString.equals("tsWriteBlocks") || paramString.equals("filterEchoBytes") || paramString.equals("validateArrayBounds") || paramString.equals("tableBlockingFactor") || paramString.equals("tableCrcCommand") || paramString.equals("sendTablesWithoutEnvelope") || paramString.equals("maxUnusedRuntimeRange") || paramString.equals("turboBaudOnCommand") || paramString.equals("turboBaudOffCommand") || paramString.equals("scatteredOchGetCommand") || paramString.equals("retrieveConfigError") || paramString.equals("useLegacyFTempUnits") || paramString.equals("enable2ndByteCanId") || paramString.equals("outputChannelStartOffset") || paramString.equals("parameterStartOffset") || paramString.equals("envelopedScanCommands") || paramString.equals("replayConfigTable") || paramString.equals("replayReadCommand") || paramString.equals("replayRecordCountParam") || paramString.equals("defaultBaudRate") || paramString.equals("refreshLocalStoreOnActivity") || paramString.equals("delayAfterPortOpen") || paramString.equals("protocol") || paramString.equals("restrictSquirtRelationship") || paramString.equals("forceBigEndianProtocol") || paramString.equals("readSdCompressed") || paramString.equals("noCommReadDelay") || paramString.equals("defaultIpAddress") || paramString.equals("defaultIpPort") || paramString.equals("defaultRuntimeRecordPerSec") || paramString.equals("ignoreMissingBitOptions") || paramString.equals("autoBurnOnPageChange") || paramString.equals("surpressConfigErrorVerbiage"));
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     try {
       if (paramString1.equals("pageReadCommand")) {
         c(X.c(paramString2, ","));
@@ -222,35 +222,35 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("pageValueWrite")) {
         e(X.c(paramString2, ","));
       } else if (paramString1.equals("pageChunkWrite")) {
-        f(X.c(paramString2, ","));
+        SerializableImpl(X.c(paramString2, ","));
       } else if (paramString1.equals("crc32CheckCommand")) {
-        g(X.c(paramString2, ","));
+        SerializableImplInJPackage(X.c(paramString2, ","));
       } else if (paramString1.equals("burnCommand")) {
-        a(X.c(paramString2, ","));
+        ExceptionInVPackage(X.c(paramString2, ","));
       } else if (paramString1.equals("pageActivate")) {
         h(X.c(paramString2, ","));
       } else if (paramString1.equals("pageActivationDelay")) {
-        b(X.g(paramString2));
+        b(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("blockReadTimeout")) {
-        c(X.g(paramString2));
+        c(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("writeBlocks")) {
-        a(paramString2.equals("on"));
+        ExceptionInVPackage(paramString2.equals("on"));
       } else if (paramString1.equals("tsWriteBlocks")) {
         e(paramString2.equals("on"));
       } else if (paramString1.equals("interWriteDelay")) {
-        d(X.g(paramString2));
+        d(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("endianness")) {
         d(paramString2);
       } else if (paramString1.equals("nPages")) {
-        a(X.g(paramString2));
+        ExceptionInVPackage(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("pageSize")) {
-        a(X.d(paramString2, ","));
+        ExceptionInVPackage(X.d(paramString2, ","));
       } else if (paramString1.equals("ochBlockSize")) {
-        o(X.g(paramString2));
+        o(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("ochGetCommand")) {
-        f(paramString2);
+        SerializableImpl(paramString2);
       } else if (paramString1.equals("getCommand")) {
-        g(paramString2);
+        SerializableImplInJPackage(paramString2);
       } else if (paramString1.equals("queryCommand")) {
         h(paramString2);
       } else if (paramString1.equals("versionInfo")) {
@@ -258,17 +258,17 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("tableWriteCommand")) {
         t(paramString2);
       } else if (paramString1.equals("blockingFactor")) {
-        I(X.g(paramString2));
+        I(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("messageEnvelopeFormat")) {
         c(paramString2);
       } else if (paramString1.equals("filterEchoBytes")) {
-        f(Boolean.parseBoolean(paramString2));
+        SerializableImpl(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("validateArrayBounds")) {
-        g(Boolean.parseBoolean(paramString2));
+        SerializableImplInJPackage(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("tableBlockingFactor")) {
-        H(X.g(paramString2));
+        H(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("maxUnusedRuntimeRange")) {
-        v(X.g(paramString2));
+        v(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("tableCrcCommand")) {
         n(paramString2);
       } else if (paramString1.equals("sendTablesWithoutEnvelope")) {
@@ -284,11 +284,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("useLegacyFTempUnits")) {
         k(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("enable2ndByteCanId")) {
-        l(Boolean.parseBoolean(paramString2));
+        AInterfaceLima(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("parameterStartOffset")) {
         b(X.d(paramString2, ","));
       } else if (paramString1.equals("outputChannelStartOffset")) {
-        z(X.g(paramString2));
+        z(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("envelopedScanCommands")) {
         d(paramString2.equals("enabled"));
       } else if (paramString1.equals("replayConfigTable")) {
@@ -300,11 +300,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("protocol")) {
         s(paramString2);
       } else if (paramString1.equals("defaultBaudRate")) {
-        J(X.g(paramString2));
+        J(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("refreshLocalStoreOnActivity")) {
         m(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("delayAfterPortOpen")) {
-        A(X.g(paramString2));
+        A(X.SerializableImplInJPackage(paramString2));
       } else if (paramString1.equals("restrictSquirtRelationship")) {
         this.al = Boolean.parseBoolean(paramString2);
       } else if (paramString1.equals("forceBigEndianProtocol")) {
@@ -316,9 +316,9 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("defaultRuntimeRecordPerSec")) {
         C(Integer.parseInt(paramString2));
       } else if (paramString1.equals("defaultIpAddress")) {
-        l.a(paramString2);
+        AInterfaceLima.ExceptionInVPackage(paramString2);
       } else if (paramString1.equals("defaultIpPort")) {
-        l.a(Integer.parseInt(paramString2));
+        AInterfaceLima.ExceptionInVPackage(Integer.parseInt(paramString2));
       } else if (paramString1.equals("ignoreMissingBitOptions")) {
         p(Boolean.parseBoolean(paramString2));
       } else if (paramString1.equals("autoBurnOnPageChange")) {
@@ -326,54 +326,54 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       } else if (paramString1.equals("surpressConfigErrorVerbiage")) {
         r(Boolean.parseBoolean(paramString2));
       } else {
-        throw new g("Command:" + paramString1 + " undefined.");
+        throw new SerializableImplInJPackage("Command:" + paramString1 + " undefined.");
       } 
     } catch (Exception exception) {
-      throw new g("Error setting:" + paramString1 + " with value:" + paramString2 + " \nReason: " + exception.getMessage());
+      throw new SerializableImplInJPackage("Error setting:" + paramString1 + " with value:" + paramString2 + " \nReason: " + exception.getMessage());
     } 
   }
   
-  public void a(String paramString1, String paramString2, int paramInt) {
+  public void ExceptionInVPackage(String paramString1, String paramString2, int paramInt) {
     if (paramInt < 0) {
-      a(paramString1, paramString2);
+      ExceptionInVPackage(paramString1, paramString2);
     } else {
       try {
         if (paramString1.equals("pageReadCommand")) {
           e(paramString2, paramInt);
         } else if (paramString1.equals("pageIdentifier")) {
-          f(paramString2, paramInt);
+          SerializableImpl(paramString2, paramInt);
         } else if (paramString1.equals("pageValueWrite")) {
-          g(paramString2, paramInt);
+          SerializableImplInJPackage(paramString2, paramInt);
         } else if (paramString1.equals("pageChunkWrite")) {
           h(paramString2, paramInt);
         } else if (paramString1.equals("crc32CheckCommand")) {
           i(paramString2, paramInt);
         } else if (paramString1.equals("burnCommand")) {
-          a(paramString2, paramInt);
+          ExceptionInVPackage(paramString2, paramInt);
         } else if (paramString1.equals("pageActivate")) {
           j(paramString2, paramInt);
         } else if (paramString1.equals("pageActivationDelay")) {
-          b(X.g(paramString2));
+          b(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("blockReadTimeout")) {
-          c(X.g(paramString2));
+          c(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("writeBlocks")) {
-          a(paramString2.equals("on"));
+          ExceptionInVPackage(paramString2.equals("on"));
         } else if (paramString1.equals("tsWriteBlocks")) {
           e(paramString2.equals("on"));
         } else if (paramString1.equals("interWriteDelay")) {
-          d(X.g(paramString2));
+          d(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("endianness")) {
           d(paramString2);
         } else if (paramString1.equals("nPages")) {
-          a(X.g(paramString2));
+          ExceptionInVPackage(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("pageSize")) {
           b(paramString2, paramInt);
         } else if (paramString1.equals("ochBlockSize")) {
-          o(X.g(paramString2));
+          o(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("ochGetCommand")) {
-          f(paramString2);
+          SerializableImpl(paramString2);
         } else if (paramString1.equals("getCommand")) {
-          g(paramString2);
+          SerializableImplInJPackage(paramString2);
         } else if (paramString1.equals("queryCommand")) {
           h(paramString2);
         } else if (paramString1.equals("versionInfo")) {
@@ -381,17 +381,17 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
         } else if (paramString1.equals("tableWriteCommand")) {
           t(paramString2);
         } else if (paramString1.equals("blockingFactor")) {
-          I(X.g(paramString2));
+          I(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("messageEnvelopeFormat")) {
           c(paramString2);
         } else if (paramString1.equals("filterEchoBytes")) {
-          f(Boolean.parseBoolean(paramString2));
+          SerializableImpl(Boolean.parseBoolean(paramString2));
         } else if (paramString1.equals("validateArrayBounds")) {
-          g(Boolean.parseBoolean(paramString2));
+          SerializableImplInJPackage(Boolean.parseBoolean(paramString2));
         } else if (paramString1.equals("tableBlockingFactor")) {
-          H(X.g(paramString2));
+          H(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("maxUnusedRuntimeRange")) {
-          v(X.g(paramString2));
+          v(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("tableCrcCommand")) {
           n(paramString2);
         } else if (paramString1.equals("sendTablesWithoutEnvelope")) {
@@ -407,11 +407,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
         } else if (paramString1.equals("useLegacyFTempUnits")) {
           k(Boolean.parseBoolean(paramString2));
         } else if (paramString1.equals("enable2ndByteCanId")) {
-          l(Boolean.parseBoolean(paramString2));
+          AInterfaceLima(Boolean.parseBoolean(paramString2));
         } else if (paramString1.equals("parameterStartOffset")) {
           b(X.d(paramString2, ","));
         } else if (paramString1.equals("outputChannelStartOffset")) {
-          z(X.g(paramString2));
+          z(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("envelopedScanCommands")) {
           d(paramString2.equals("enabled"));
         } else if (paramString1.equals("replayConfigTable")) {
@@ -423,11 +423,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
         } else if (paramString1.equals("protocol")) {
           s(paramString2);
         } else if (paramString1.equals("defaultBaudRate")) {
-          J(X.g(paramString2));
+          J(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("refreshLocalStoreOnActivity")) {
           m(Boolean.parseBoolean(paramString2));
         } else if (paramString1.equals("delayAfterPortOpen")) {
-          A(X.g(paramString2));
+          A(X.SerializableImplInJPackage(paramString2));
         } else if (paramString1.equals("restrictSquirtRelationship")) {
           this.al = Boolean.parseBoolean(paramString2);
         } else if (paramString1.equals("forceBigEndianProtocol")) {
@@ -439,46 +439,46 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
         } else if (paramString1.equals("defaultRuntimeRecordPerSec")) {
           C(Integer.parseInt(paramString2));
         } else if (paramString1.equals("defaultIpAddress")) {
-          l.a(paramString2);
+          AInterfaceLima.ExceptionInVPackage(paramString2);
         } else if (paramString1.equals("defaultIpPort")) {
-          l.a(Integer.parseInt(paramString2));
+          AInterfaceLima.ExceptionInVPackage(Integer.parseInt(paramString2));
         } else if (paramString1.equals("ignoreMissingBitOptions")) {
           p(Boolean.parseBoolean(paramString2));
         } else {
-          throw new g("Command:" + paramString1 + " undefined.");
+          throw new SerializableImplInJPackage("Command:" + paramString1 + " undefined.");
         } 
       } catch (Exception exception) {
-        throw new g("Error setting:" + paramString1 + " with value:" + paramString2 + " \nReason: " + exception.getMessage());
+        throw new SerializableImplInJPackage("Error setting:" + paramString1 + " with value:" + paramString2 + " \nReason: " + exception.getMessage());
       } 
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (this.ap != null)
       this.ap.e(); 
   }
   
-  public void a(String paramString, String[] paramArrayOfString) {
-    G g = new G(this);
+  public void ExceptionInVPackage(String paramString, String[] paramArrayOfString) {
+    G SerializableImplInJPackage = new G(this);
     for (byte b = 0; b < paramArrayOfString.length; b++) {
       if (this.Q.containsKey(paramArrayOfString[b])) {
         G g1 = (G)this.Q.get(paramArrayOfString[b]);
         Iterator<E> iterator = g1.iterator();
         while (iterator.hasNext())
-          g.add(iterator.next()); 
+          SerializableImplInJPackage.add(iterator.next()); 
       } else {
         if (!paramArrayOfString[b].trim().startsWith("\"") || !paramArrayOfString[b].trim().endsWith("\""))
-          throw new g("Malformed Command String: " + paramArrayOfString[b]); 
+          throw new SerializableImplInJPackage("Malformed Command String: " + paramArrayOfString[b]); 
         H h = c(x(paramArrayOfString[b]), 0);
         if (h.c())
-          a(h); 
+          ExceptionInVPackage(h); 
         G g1 = new G(this);
         g1.add((E)h);
         this.Q.put(paramArrayOfString[b], g1);
-        g.add((E)h);
+        SerializableImplInJPackage.add((E)h);
       } 
     } 
-    this.Q.put(paramString, g);
+    this.Q.put(paramString, SerializableImplInJPackage);
   }
   
   private String x(String paramString) {
@@ -495,7 +495,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public boolean b() {
     for (String str : this.Q.keySet()) {
-      if (b(str).a())
+      if (b(str).ExceptionInVPackage())
         return true; 
     } 
     return false;
@@ -504,9 +504,9 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   public Collection c() {
     ArrayList<G> arrayList = new ArrayList();
     for (String str : this.Q.keySet()) {
-      G g = b(str);
-      if (g.a())
-        arrayList.add(g); 
+      G SerializableImplInJPackage = b(str);
+      if (SerializableImplInJPackage.ExceptionInVPackage())
+        arrayList.add(SerializableImplInJPackage); 
     } 
     return arrayList;
   }
@@ -522,11 +522,11 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.c;
   }
   
-  public boolean a(String paramString1, String paramString2, boolean paramBoolean) {
+  public boolean ExceptionInVPackage(String paramString1, String paramString2, boolean paramBoolean) {
     for (String str : this.Q.keySet()) {
       if (str.equals(paramString1)) {
-        b(paramString1).a(paramBoolean);
-        b(paramString1).a(paramString2);
+        b(paramString1).ExceptionInVPackage(paramBoolean);
+        b(paramString1).ExceptionInVPackage(paramString2);
         return true;
       } 
     } 
@@ -535,33 +535,33 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public void c(String paramString) {
     if (paramString.equals("msEnvelope_1.0")) {
-      f f = new f();
-      f.d(this.J);
-      a((cR)f);
-      a((cV)new g());
+      SerializableImpl SerializableImpl = new SerializableImpl();
+      SerializableImpl.d(this.J);
+      ExceptionInVPackage((cR)SerializableImpl);
+      ExceptionInVPackage((cV)new SerializableImplInJPackage());
     } else {
-      throw new g("Unknown Envelope format defined for setting messageEnvelopeFormat\nKnown format(s): msEnvelope_1.0");
+      throw new SerializableImplInJPackage("Unknown Envelope format defined for setting messageEnvelopeFormat\nKnown format(s): msEnvelope_1.0");
     } 
   }
   
   public boolean e() {
-    return f().equals("big");
+    return SerializableImpl().equals("big");
   }
   
-  public String f() {
-    return this.f;
+  public String SerializableImpl() {
+    return this.SerializableImpl;
   }
   
   public void d(String paramString) {
-    this.f = paramString;
+    this.SerializableImpl = paramString;
   }
   
-  public int g() {
-    return this.g;
+  public int SerializableImplInJPackage() {
+    return this.SerializableImplInJPackage;
   }
   
-  public void a(int paramInt) {
-    this.g = paramInt;
+  public void ExceptionInVPackage(int paramInt) {
+    this.SerializableImplInJPackage = paramInt;
   }
   
   public int h() {
@@ -581,10 +581,10 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean j() {
-    return (H() || (this.j && D() instanceof f));
+    return (H() || (this.j && D() instanceof SerializableImpl));
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     D.d("Set Write Blocks on = " + paramBoolean);
     this.j = paramBoolean;
   }
@@ -601,68 +601,68 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return (aA() == null) ? null : ((paramInt >= 0 && (aA()).length > paramInt) ? aA()[paramInt] : aA()[0]);
   }
   
-  public void a(String[] paramArrayOfString) {
-    a(a(paramArrayOfString, this.m));
+  public void ExceptionInVPackage(String[] paramArrayOfString) {
+    ExceptionInVPackage(ExceptionInVPackage(paramArrayOfString, this.m));
   }
   
-  public void a(String paramString, int paramInt) {
+  public void ExceptionInVPackage(String paramString, int paramInt) {
     if (this.r == null)
-      this.r = new H[this.g]; 
-    a(this.r, paramString, paramInt);
+      this.r = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.r, paramString, paramInt);
   }
   
   public void b(String[] paramArrayOfString) {
-    H[] arrayOfH = a(paramArrayOfString, this.m);
+    H[] arrayOfH = ExceptionInVPackage(paramArrayOfString, this.m);
     if (this.r != null && this.r.length == arrayOfH.length)
       for (byte b = 0; b < arrayOfH.length; b++) {
         if (this.r[b].b().isEmpty())
           arrayOfH[b] = this.r[b]; 
       }  
-    a(arrayOfH);
+    ExceptionInVPackage(arrayOfH);
   }
   
-  public int f(int paramInt) {
+  public int SerializableImpl(int paramInt) {
     return this.p[paramInt];
   }
   
-  public int[] l() {
+  public int[] AInterfaceLima() {
     return this.p;
   }
   
-  public void a(int[] paramArrayOfint) {
+  public void ExceptionInVPackage(int[] paramArrayOfint) {
     this.p = paramArrayOfint;
   }
   
   public void b(String paramString, int paramInt) {
     int i;
-    if (this.g < paramInt)
-      throw new g("Attempt to set page size on page number higher than set number of pages! Was nPages set before page declaration?"); 
+    if (this.SerializableImplInJPackage < paramInt)
+      throw new SerializableImplInJPackage("Attempt to set page size on page number higher than set number of pages! Was nPages set before page declaration?"); 
     try {
       i = Integer.parseInt(paramString);
     } catch (NumberFormatException numberFormatException) {
-      throw new g("Invalid integer value for pageSize: " + paramString);
+      throw new SerializableImplInJPackage("Invalid integer value for pageSize: " + paramString);
     } 
     if (this.p == null)
-      this.p = new int[this.g]; 
+      this.p = new int[this.SerializableImplInJPackage]; 
     this.p[paramInt] = i;
   }
   
-  public byte[] g(int paramInt) {
-    return a(paramInt, 0, f(paramInt));
+  public byte[] SerializableImplInJPackage(int paramInt) {
+    return ExceptionInVPackage(paramInt, 0, SerializableImpl(paramInt));
   }
   
   public H h(int paramInt) {
     return (paramInt >= (aB()).length) ? aB()[0] : aB()[paramInt];
   }
   
-  public byte[] a(int paramInt1, int paramInt2, int paramInt3) {
+  public byte[] ExceptionInVPackage(int paramInt1, int paramInt2, int paramInt3) {
     H h = h(paramInt1);
-    return h.a(paramInt2, paramInt3, null);
+    return h.ExceptionInVPackage(paramInt2, paramInt3, null);
   }
   
-  public byte[] a(String paramString, int[] paramArrayOfint) {
+  public byte[] ExceptionInVPackage(String paramString, int[] paramArrayOfint) {
     if (ax() == null || ax().length() < 1)
-      throw new g("Table write command not set in current configuration.\nCan not generate a valid send command."); 
+      throw new SerializableImplInJPackage("Table write command not set in current configuration.\nCan not generate ExceptionInVPackage valid send command."); 
     byte[] arrayOfByte = new byte[paramArrayOfint.length + 2];
     try {
       arrayOfByte[0] = ax().getBytes()[0];
@@ -670,7 +670,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       for (byte b = 0; b < paramArrayOfint.length; b++)
         arrayOfByte[b + 2] = (byte)paramArrayOfint[b]; 
     } catch (Exception exception) {
-      throw new g("Error generating Table write command.", exception);
+      throw new SerializableImplInJPackage("Error generating Table write command.", exception);
     } 
     return arrayOfByte;
   }
@@ -681,21 +681,21 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public H c(String paramString, int paramInt) {
     H h = new H(this, paramInt);
-    h.a(paramString);
+    h.ExceptionInVPackage(paramString);
     if (h.c()) {
-      T.a().a(h);
+      T.ExceptionInVPackage().ExceptionInVPackage(h);
       return h;
     } 
-    return a(h);
+    return ExceptionInVPackage(h);
   }
   
   public H e(String paramString) {
     H h = new H(this, 0);
-    h.a(paramString);
-    return a(h);
+    h.ExceptionInVPackage(paramString);
+    return ExceptionInVPackage(h);
   }
   
-  public H a(H paramH) {
+  public H ExceptionInVPackage(H paramH) {
     String str = paramH.b();
     try {
       boolean bool = paramH.c();
@@ -704,14 +704,14 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       int i = (str.indexOf("%") != -1) ? str.indexOf("%") : str.length();
       if (i == -1 && str.indexOf("\\") == -1 && str.indexOf("%") == -1) {
         paramH.b("");
-        paramH.a(str.getBytes());
+        paramH.ExceptionInVPackage(str.getBytes());
         return paramH;
       } 
       paramH.b(str.substring(i));
       if (paramH.e().indexOf("%2o") != -1) {
-        paramH.a(2);
+        paramH.ExceptionInVPackage(2);
       } else if (paramH.e().indexOf("%o") != -1) {
-        paramH.a(1);
+        paramH.ExceptionInVPackage(1);
       } 
       if (paramH.e().indexOf("%2c") != -1) {
         paramH.b(2);
@@ -723,27 +723,27 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       int j = x();
       j = bool ? -1 : j;
       byte[] arrayOfByte = d(str, j);
-      paramH.a(arrayOfByte);
+      paramH.ExceptionInVPackage(arrayOfByte);
     } catch (NumberFormatException numberFormatException) {
       numberFormatException.printStackTrace();
-      throw new g("Unable to parse SendCommand:" + str + "\nCould not convert to number " + numberFormatException.getMessage(), numberFormatException);
+      throw new SerializableImplInJPackage("Unable to parse SendCommand:" + str + "\nCould not convert to number " + numberFormatException.getMessage(), numberFormatException);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Unable to parse SendCommand:" + str, exception);
+      throw new SerializableImplInJPackage("Unable to parse SendCommand:" + str, exception);
     } 
     return paramH;
   }
   
   private String y(String paramString) {
-    ArrayList arrayList = dl.a(paramString);
+    ArrayList arrayList = dl.ExceptionInVPackage(paramString);
     aI aI = E();
     for (String str1 : arrayList) {
       String str2 = X.b(str1, "$", "");
       try {
-        int i = (int)i.a(aI, str2);
+        int i = (int)i.ExceptionInVPackage(aI, str2);
         aM aM = aI.c(str2);
         if (aM.i().equals("array")) {
-          D.a("$Var used in config file, Can not be an array. Line:\n" + paramString, null, null);
+          D.ExceptionInVPackage("$Var used in config file, Can not be an array. Line:\n" + paramString, null, null);
           continue;
         } 
         String str = Integer.toString(i, 16).toUpperCase();
@@ -753,27 +753,27 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
           str = "0" + str; 
         str = "x" + str;
         paramString = X.b(paramString, str1, str);
-      } catch (g g) {
+      } catch (SerializableImplInJPackage SerializableImplInJPackage) {
         if (this.d++ < 3)
-          D.a("$Var name used in config file, but not found as a valid Parameter. Line:\n" + paramString, (Exception)g, null); 
+          D.ExceptionInVPackage("$Var name used in config file, but not found as ExceptionInVPackage valid Parameter. Line:\n" + paramString, (Exception)SerializableImplInJPackage, null); 
       } catch (Exception exception) {
         if (this.d++ < 3)
-          D.a("Error trying to use $Var name config file row. Line:\n" + paramString, exception, null); 
+          D.ExceptionInVPackage("Error trying to use $Var name config file row. Line:\n" + paramString, exception, null); 
       } 
     } 
     return paramString;
   }
   
   private void e(H paramH) {
-    aR.a().a(paramH);
-    ArrayList arrayList = dl.a(paramH.b());
+    aR.ExceptionInVPackage().ExceptionInVPackage(paramH);
+    ArrayList arrayList = dl.ExceptionInVPackage(paramH.b());
     for (String str : arrayList) {
       str = X.b(str, "$", "");
       try {
-        aR.a().a(this.ah, str, paramH);
-      } catch (a a) {
+        aR.ExceptionInVPackage().ExceptionInVPackage(this.ah, str, paramH);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
         D.d(str + " appears to be an invalid EcuParameter");
-        Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+        Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
       } 
     } 
   }
@@ -805,7 +805,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return (byte)Integer.parseInt(paramString, b);
   }
   
-  private H[] a(String[] paramArrayOfString, int[] paramArrayOfint) {
+  private H[] ExceptionInVPackage(String[] paramArrayOfString, int[] paramArrayOfint) {
     H[] arrayOfH = new H[paramArrayOfString.length];
     for (byte b = 0; b < arrayOfH.length; b++) {
       String str = paramArrayOfString[b];
@@ -816,35 +816,35 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return arrayOfH;
   }
   
-  private H[] a(H[] paramArrayOfH, String paramString, int paramInt) {
+  private H[] ExceptionInVPackage(H[] paramArrayOfH, String paramString, int paramInt) {
     if (paramString != null && paramString.indexOf("%2i") != -1) {
       if (aG() == null || (aG()).length < paramInt - 1 || aG()[paramInt] == null || aG()[paramInt].isEmpty())
-        throw new g("2 byte pageIdentifier used, but no page identifier has been defined for previously for page"); 
+        throw new SerializableImplInJPackage("2 byte pageIdentifier used, but no page identifier has been defined for previously for page"); 
       paramString = X.b(paramString, "%2i", aG()[paramInt]);
     } 
     if (paramInt > paramArrayOfH.length - 1)
-      throw new g("Attempt to set command on page higher than defined page count."); 
+      throw new SerializableImplInJPackage("Attempt to set command on page higher than defined page count."); 
     paramArrayOfH[paramInt] = c(paramString, y(paramInt));
     return paramArrayOfH;
   }
   
   public void c(String[] paramArrayOfString) {
-    b(a(paramArrayOfString, this.m));
+    b(ExceptionInVPackage(paramArrayOfString, this.m));
   }
   
   public void e(String paramString, int paramInt) {
     if (this.s == null)
-      this.s = new H[this.g]; 
-    a(this.s, paramString, paramInt);
+      this.s = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.s, paramString, paramInt);
   }
   
   public void d(String[] paramArrayOfString) {
     this.q = paramArrayOfString;
   }
   
-  public void f(String paramString, int paramInt) {
+  public void SerializableImpl(String paramString, int paramInt) {
     if (this.q == null)
-      this.q = new String[this.g]; 
+      this.q = new String[this.SerializableImplInJPackage]; 
     this.q[paramInt] = paramString;
   }
   
@@ -854,48 +854,48 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public void e(String[] paramArrayOfString) {
     if (paramArrayOfString != null) {
-      c(a(paramArrayOfString, this.m));
+      c(ExceptionInVPackage(paramArrayOfString, this.m));
     } else {
       c((H[])null);
     } 
   }
   
-  public void g(String paramString, int paramInt) {
+  public void SerializableImplInJPackage(String paramString, int paramInt) {
     if (this.t == null)
-      this.t = new H[this.g]; 
-    a(this.t, paramString, paramInt);
+      this.t = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.t, paramString, paramInt);
   }
   
   public H j(int paramInt) {
     return (aD() != null && (aD()).length > paramInt) ? aD()[paramInt] : null;
   }
   
-  public void f(String[] paramArrayOfString) {
-    d(a(paramArrayOfString, this.m));
+  public void SerializableImpl(String[] paramArrayOfString) {
+    d(ExceptionInVPackage(paramArrayOfString, this.m));
   }
   
   public void h(String paramString, int paramInt) {
     if (this.u == null)
-      this.u = new H[this.g]; 
-    a(this.u, paramString, paramInt);
+      this.u = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.u, paramString, paramInt);
   }
   
   public boolean k(int paramInt) {
     return (aE() != null && (aE()).length > paramInt);
   }
   
-  public H l(int paramInt) {
+  public H AInterfaceLima(int paramInt) {
     return (aE() != null) ? aE()[paramInt] : null;
   }
   
-  public void g(String[] paramArrayOfString) {
-    e(a(paramArrayOfString, this.m));
+  public void SerializableImplInJPackage(String[] paramArrayOfString) {
+    e(ExceptionInVPackage(paramArrayOfString, this.m));
   }
   
   public void i(String paramString, int paramInt) {
     if (this.w == null)
-      this.w = new H[this.g]; 
-    a(this.w, paramString, paramInt);
+      this.w = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.w, paramString, paramInt);
   }
   
   public byte[] m(int paramInt) {
@@ -903,13 +903,13 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public void h(String[] paramArrayOfString) {
-    f(a(paramArrayOfString, this.m));
+    SerializableImpl(ExceptionInVPackage(paramArrayOfString, this.m));
   }
   
   public void j(String paramString, int paramInt) {
     if (this.v == null)
-      this.v = new H[this.g]; 
-    a(this.v, paramString, paramInt);
+      this.v = new H[this.SerializableImplInJPackage]; 
+    ExceptionInVPackage(this.v, paramString, paramInt);
   }
   
   public void n(int paramInt) {
@@ -923,8 +923,8 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
       Iterator<aH> iterator = aI.K().q();
       while (iterator.hasNext()) {
         aH aH = iterator.next();
-        if (aH.a() + aH.l() > i)
-          i = aH.a() + aH.l(); 
+        if (aH.ExceptionInVPackage() + aH.AInterfaceLima() > i)
+          i = aH.ExceptionInVPackage() + aH.AInterfaceLima(); 
       } 
       this.J = i;
     } 
@@ -933,9 +933,9 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public void o(int paramInt) {
     this.J = paramInt;
-    if (D() != null && D() instanceof f) {
-      f f = (f)D();
-      f.d(paramInt);
+    if (D() != null && D() instanceof SerializableImpl) {
+      SerializableImpl SerializableImpl = (SerializableImpl)D();
+      SerializableImpl.d(paramInt);
     } 
   }
   
@@ -943,12 +943,12 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.x;
   }
   
-  public void f(String paramString) {
+  public void SerializableImpl(String paramString) {
     this.au = (paramString.contains("%2o") && paramString.contains("%2c"));
     this.x = c(paramString, this.n);
   }
   
-  public void g(String paramString) {
+  public void SerializableImplInJPackage(String paramString) {
     this.y = c(paramString, this.n);
   }
   
@@ -974,7 +974,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   public void j(String paramString) {
     if (paramString != null)
-      this.S = X.g(paramString); 
+      this.S = X.SerializableImplInJPackage(paramString); 
   }
   
   public void p(int paramInt) {
@@ -1001,7 +1001,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.ah;
   }
   
-  public void l(String paramString) {
+  public void AInterfaceLima(String paramString) {
     this.ah = paramString;
   }
   
@@ -1017,7 +1017,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return (this.y != null) ? this.y : this.x;
   }
   
-  private void f(H paramH) {
+  private void SerializableImpl(H paramH) {
     this.y = paramH;
   }
   
@@ -1067,7 +1067,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.ao;
   }
   
-  public void a(cV paramcV) {
+  public void ExceptionInVPackage(cV paramcV) {
     this.ao = paramcV;
   }
   
@@ -1075,15 +1075,15 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.ap;
   }
   
-  public void a(cR paramcR) {
+  public void ExceptionInVPackage(cR paramcR) {
     this.ap = paramcR;
   }
   
   public aI E() {
-    return (this.aq != null) ? h.a().a(this.aq) : null;
+    return (this.aq != null) ? h.ExceptionInVPackage().ExceptionInVPackage(this.aq) : null;
   }
   
-  public void a(aI paramaI) {
+  public void ExceptionInVPackage(aI paramaI) {
     if (paramaI != null) {
       this.aq = paramaI.ac();
     } else {
@@ -1128,7 +1128,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     this.k = paramBoolean;
   }
   
-  public void f(boolean paramBoolean) {
+  public void SerializableImpl(boolean paramBoolean) {
     D.d("FilterEchoBytes activated:" + paramBoolean);
     this.ae = paramBoolean;
   }
@@ -1137,7 +1137,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.ak;
   }
   
-  public void g(boolean paramBoolean) {
+  public void SerializableImplInJPackage(boolean paramBoolean) {
     this.ak = paramBoolean;
   }
   
@@ -1150,14 +1150,14 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean K() {
-    return this.l;
+    return this.AInterfaceLima;
   }
   
   public void h(boolean paramBoolean) {
-    this.l = paramBoolean;
+    this.AInterfaceLima = paramBoolean;
   }
   
-  public void a(List paramList) {
+  public void ExceptionInVPackage(List paramList) {
     if (paramList != null) {
       this.ar = new ArrayList();
       this.ar.addAll(paramList);
@@ -1222,12 +1222,12 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.aw;
   }
   
-  public void a(dj paramdj) {
+  public void ExceptionInVPackage(dj paramdj) {
     this.aw = paramdj;
   }
   
   public boolean T() {
-    return (this.ax != null && this.ax.a() != 0.0D);
+    return (this.ax != null && this.ax.ExceptionInVPackage() != 0.0D);
   }
   
   public void b(dj paramdj) {
@@ -1235,7 +1235,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean U() {
-    return (this.ay != null && this.ay.a() != 0.0D);
+    return (this.ay != null && this.ay.ExceptionInVPackage() != 0.0D);
   }
   
   public void c(dj paramdj) {
@@ -1243,7 +1243,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean V() {
-    return (this.az != null && this.az.a() != 0.0D);
+    return (this.az != null && this.az.ExceptionInVPackage() != 0.0D);
   }
   
   public void d(dj paramdj) {
@@ -1261,10 +1261,10 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   
   private void t(boolean paramBoolean) {
     for (dg dg : this.b)
-      dg.a(paramBoolean); 
+      dg.ExceptionInVPackage(paramBoolean); 
   }
   
-  public void a(dg paramdg) {
+  public void ExceptionInVPackage(dg paramdg) {
     this.b.add(paramdg);
   }
   
@@ -1273,7 +1273,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean X() {
-    return (this.aA != null && this.aA.a() != 0.0D);
+    return (this.aA != null && this.aA.ExceptionInVPackage() != 0.0D);
   }
   
   public void e(dj paramdj) {
@@ -1339,7 +1339,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     this.an = paramBoolean;
   }
   
-  public void l(boolean paramBoolean) {
+  public void AInterfaceLima(boolean paramBoolean) {
     this.aE = paramBoolean;
   }
   
@@ -1367,7 +1367,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     this.aM = paramString;
   }
   
-  public void f(dj paramdj) {
+  public void SerializableImpl(dj paramdj) {
     this.aN = paramdj;
   }
   
@@ -1380,10 +1380,10 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public int ai() {
-    return (int)((this.aP == null) ? 0.0D : this.aP.a());
+    return (int)((this.aP == null) ? 0.0D : this.aP.ExceptionInVPackage());
   }
   
-  public void g(dj paramdj) {
+  public void SerializableImplInJPackage(dj paramdj) {
     this.aP = paramdj;
   }
   
@@ -1404,7 +1404,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public boolean B(int paramInt) {
-    return (this.e.equals("XCP") || (this.s.length > paramInt && this.s[paramInt].f() > 0 && this.s[paramInt].g() > 0));
+    return (this.e.equals("XCP") || (this.s.length > paramInt && this.s[paramInt].SerializableImpl() > 0 && this.s[paramInt].SerializableImplInJPackage() > 0));
   }
   
   public String al() {
@@ -1415,7 +1415,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     if (paramString.equals("basicRequestReply") || paramString.equals("XCP")) {
       this.e = paramString;
     } else {
-      throw new g("Unsupported Protocol " + paramString + ", supported values: \"" + "basicRequestReply" + "\", " + "XCP");
+      throw new SerializableImplInJPackage("Unsupported Protocol " + paramString + ", supported values: \"" + "basicRequestReply" + "\", " + "XCP");
     } 
   }
   
@@ -1527,45 +1527,45 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
   }
   
   public void I(int paramInt) {
-    if (this.g == 0)
-      D.a("nPages not defined, blockingFactor can not be set before nPages"); 
-    this.ai = new int[this.g];
+    if (this.SerializableImplInJPackage == 0)
+      D.ExceptionInVPackage("nPages not defined, blockingFactor can not be set before nPages"); 
+    this.ai = new int[this.SerializableImplInJPackage];
     for (byte b = 0; b < this.ai.length; b++)
       this.ai[b] = paramInt; 
   }
   
   public F az() {
-    F f = new F();
-    f.d(f());
-    f.a(this.g);
-    f.b(h());
-    f.c(this.i);
-    f.a(this.j);
-    f.d(this.o);
-    f.a(this.p);
-    f.d(aG());
-    f.n(this.I);
-    f.o(this.J);
-    f.q(this.L);
-    f.D(this.N);
-    f.E(this.O);
-    f.p(this.S);
-    f.k(this.T);
-    f.t(this.U);
-    f.c(this.ai);
-    f.r(this.X);
-    f.w(this.Z);
-    f.c(this.x);
-    f.f(this.y);
-    f.d(this.z);
-    f.b(this.A);
-    f.a(I.a(aA()));
-    f.b(I.a(aB()));
-    f.c(I.a(aC()));
-    f.d(I.a(aD()));
-    f.f(I.a(aF()));
-    f.aq = this.aq;
-    return f;
+    F SerializableImpl = new F();
+    SerializableImpl.d(SerializableImpl());
+    SerializableImpl.ExceptionInVPackage(this.SerializableImplInJPackage);
+    SerializableImpl.b(h());
+    SerializableImpl.c(this.i);
+    SerializableImpl.ExceptionInVPackage(this.j);
+    SerializableImpl.d(this.o);
+    SerializableImpl.ExceptionInVPackage(this.p);
+    SerializableImpl.d(aG());
+    SerializableImpl.n(this.I);
+    SerializableImpl.o(this.J);
+    SerializableImpl.q(this.L);
+    SerializableImpl.D(this.N);
+    SerializableImpl.E(this.O);
+    SerializableImpl.p(this.S);
+    SerializableImpl.k(this.T);
+    SerializableImpl.t(this.U);
+    SerializableImpl.c(this.ai);
+    SerializableImpl.r(this.X);
+    SerializableImpl.w(this.Z);
+    SerializableImpl.c(this.x);
+    SerializableImpl.SerializableImpl(this.y);
+    SerializableImpl.d(this.z);
+    SerializableImpl.b(this.A);
+    SerializableImpl.ExceptionInVPackage(I.ExceptionInVPackage(aA()));
+    SerializableImpl.b(I.ExceptionInVPackage(aB()));
+    SerializableImpl.c(I.ExceptionInVPackage(aC()));
+    SerializableImpl.d(I.ExceptionInVPackage(aD()));
+    SerializableImpl.SerializableImpl(I.ExceptionInVPackage(aF()));
+    SerializableImpl.aq = this.aq;
+    return SerializableImpl;
   }
   
   private void aP() {
@@ -1579,16 +1579,16 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
           for (byte b1 = 0; b1 < arrayOfH.length; b1++) {
             if (arrayOfH[b1] != null)
               try {
-                arrayOfH[b1] = a(arrayOfH[b1]);
-              } catch (g g) {
-                Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+                arrayOfH[b1] = ExceptionInVPackage(arrayOfH[b1]);
+              } catch (SerializableImplInJPackage SerializableImplInJPackage) {
+                Logger.getLogger(F.class.getName()).log(Level.SEVERE, (String)null, (Throwable)SerializableImplInJPackage);
               }  
           } 
         } else if (H.class.isInstance(field.get(this))) {
           try {
             H h = (H)field.get(this);
             if (h != null)
-              h = a(h); 
+              h = ExceptionInVPackage(h); 
           } catch (Exception exception) {}
         } 
       } catch (IllegalArgumentException illegalArgumentException) {
@@ -1619,7 +1619,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.r;
   }
   
-  protected void a(H[] paramArrayOfH) {
+  protected void ExceptionInVPackage(H[] paramArrayOfH) {
     this.r = paramArrayOfH;
   }
   
@@ -1659,7 +1659,7 @@ public class ProtocolConfiguration extends Q implements co, Serializable, Clonea
     return this.v;
   }
   
-  protected void f(H[] paramArrayOfH) {
+  protected void SerializableImpl(H[] paramArrayOfH) {
     this.v = paramArrayOfH;
   }
   

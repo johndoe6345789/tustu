@@ -1,24 +1,24 @@
 package aP;
 
-import ay.a;
-import ay.c;
-import ay.p;
+import ay.AyInterfaceAlpha;
+import ay.AyInterfaceCharlie;
+import ay.AyComponentPapa;
 
-class db implements p {
+class db implements AyComponentPapa {
   db(cc paramcc) {}
   
-  public void c(c paramc) {
-    if (!a.c().a("Log File Server")) {
-      this.a.v.setEnabled(false);
-      this.a.v.validate();
+  public void AyInterfaceCharlie(AyInterfaceCharlie paramc) {
+    if (!AyInterfaceAlpha.AyInterfaceCharlie().AyInterfaceAlpha("Log File Server")) {
+      this.AyInterfaceAlpha.v.setEnabled(false);
+      this.AyInterfaceAlpha.v.validate();
     } 
   }
   
-  public void d(c paramc) {
-    if (paramc.a().equals("Log File Server")) {
-      this.a.v.setEnabled(true);
-      this.a.v.setVisible(true);
-      this.a.v.validate();
+  public void d(AyInterfaceCharlie paramc) {
+    if (paramc.AyInterfaceAlpha().equals("Log File Server")) {
+      this.AyInterfaceAlpha.v.setEnabled(true);
+      this.AyInterfaceAlpha.v.setVisible(true);
+      this.AyInterfaceAlpha.v.validate();
     } 
   }
 }

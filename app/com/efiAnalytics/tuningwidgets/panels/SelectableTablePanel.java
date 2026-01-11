@@ -18,7 +18,7 @@ import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
-import i.c;
+import i.IInterfaceCharlie;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -28,14 +28,14 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
 public class SelectableTablePanel extends JComponent implements t, bc {
   JPanel a = new JPanel();
   
   JLabel b = new JLabel();
   
-  bh c = null;
+  bh IInterfaceCharlie = null;
   
   R d = null;
   
@@ -43,7 +43,7 @@ public class SelectableTablePanel extends JComponent implements t, bc {
   
   ArrayList e = new ArrayList();
   
-  private boolean g = true;
+  private boolean SComponentGolf = true;
   
   private int h = 3;
   
@@ -54,9 +54,9 @@ public class SelectableTablePanel extends JComponent implements t, bc {
     setLayout(new BorderLayout());
     this.a.setLayout(new BorderLayout());
     this.a.add("Center", this.b);
-    this.f = new JButton(g.b("Select a table"));
+    this.f = new JButton(SComponentGolf.b("Select a table"));
     this.f.setPreferredSize(eJ.a(150, 16));
-    this.f.setToolTipText(g.b("Click to select Table"));
+    this.f.setToolTipText(SComponentGolf.b("Click to select Table"));
     this.f.addActionListener(new aw(this));
     this.f.setFocusable(false);
     this.a.add("East", this.f);
@@ -75,8 +75,8 @@ public class SelectableTablePanel extends JComponent implements t, bc {
   private R b() {
     String str = d();
     if (str == null || str.isEmpty())
-      str = T.a().c().c(); 
-    return T.a().c(str);
+      str = T.a().IInterfaceCharlie().IInterfaceCharlie(); 
+    return T.a().IInterfaceCharlie(str);
   }
   
   public Dimension getPreferredSize() {
@@ -89,54 +89,54 @@ public class SelectableTablePanel extends JComponent implements t, bc {
   
   public void a(String paramString) {
     R r = b();
-    bv bv = r.e().c(paramString);
-    c();
+    bv bv = r.e().IInterfaceCharlie(paramString);
+    IInterfaceCharlie();
     if (bv != null) {
-      if (!W.a(r, bv, bV.c())) {
+      if (!W.a(r, bv, bV.IInterfaceCharlie())) {
         bv = new bv();
         bq bq = new bq();
-        bq.e(g.b("Password Protected Information"));
+        bq.e(SComponentGolf.b("Password Protected Information"));
         bv.a((bA)bq);
         bq = new bq();
-        bq.e(g.b("You must have the password to table."));
+        bq.e(SComponentGolf.b("You must have the password to table."));
         bv.a((bA)bq);
       } 
-      this.c = new bh(r, bv, getName(), this.i);
-      add("Center", (Component)this.c);
-      e.a().a(r.c(), this.c);
+      this.IInterfaceCharlie = new bh(r, bv, getName(), this.i);
+      add("Center", (Component)this.IInterfaceCharlie);
+      e.a().a(r.IInterfaceCharlie(), this.IInterfaceCharlie);
       b(paramString);
-      if (this.g) {
+      if (this.SComponentGolf) {
         if (bv.S()) {
-          List list = a((JPanel)this.c);
+          List list = a((JPanel)this.IInterfaceCharlie);
           for (bd bd : list) {
-            Q q = new Q(r, bd.g(), (p)bd);
+            Q q = new Q(r, bd.SComponentGolf(), (p)bd);
             bd.a(q);
-            if (c.a().e() != null)
-              q.a(c.a().f()); 
+            if (IInterfaceCharlie.a().e() != null)
+              q.a(IInterfaceCharlie.a().f()); 
           } 
         } 
         if (bv.T())
-          for (an an : b((JPanel)this.c)) {
+          for (an an : b((JPanel)this.IInterfaceCharlie)) {
             O o = new O(r, an.l(), an);
             an.a(o);
             an.i().j(false);
-            if (c.a().e() != null)
-              o.a(c.a().f()); 
+            if (IInterfaceCharlie.a().e() != null)
+              o.a(IInterfaceCharlie.a().f()); 
             T t1 = an.j();
             if (t1 != null) {
-              P p = new P(r, t1.g(), t1);
+              P p = new P(r, t1.SComponentGolf(), t1);
               an.b(p);
-              if (c.a().e() != null)
-                p.a(c.a().f()); 
+              if (IInterfaceCharlie.a().e() != null)
+                p.a(IInterfaceCharlie.a().f()); 
             } 
           }  
       } 
     } else {
       b((String)null);
     } 
-    String str = bM.c(r, paramString);
+    String str = bM.IInterfaceCharlie(r, paramString);
     if (str == null || str.isEmpty())
-      str = g.b("Select Table"); 
+      str = SComponentGolf.b("Select Table"); 
     a().setText(str);
   }
   
@@ -178,21 +178,21 @@ public class SelectableTablePanel extends JComponent implements t, bc {
     this.i = paramet;
   }
   
-  private void c() {
-    if (this.c != null) {
+  private void IInterfaceCharlie() {
+    if (this.IInterfaceCharlie != null) {
       if (b() != null)
-        e.a().b(b().c(), this.c); 
-      this.c.close();
-      remove((Component)this.c);
+        e.a().b(b().IInterfaceCharlie(), this.IInterfaceCharlie); 
+      this.IInterfaceCharlie.close();
+      remove((Component)this.IInterfaceCharlie);
     } 
   }
   
   public void close() {
-    c();
+    IInterfaceCharlie();
   }
   
   private String d() {
-    return this.d.c();
+    return this.d.IInterfaceCharlie();
   }
   
   public void a(ay paramay) {
@@ -201,11 +201,11 @@ public class SelectableTablePanel extends JComponent implements t, bc {
   
   private void b(String paramString) {
     for (ay ay : this.e)
-      ay.panelSelectionChanged(this.d.c(), paramString); 
+      ay.panelSelectionChanged(this.d.IInterfaceCharlie(), paramString); 
   }
   
   public void a(boolean paramBoolean) {
-    this.g = paramBoolean;
+    this.SComponentGolf = paramBoolean;
   }
   
   public void a(int paramInt) {

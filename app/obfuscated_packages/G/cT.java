@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,8 +39,8 @@ public class cT implements aG, co {
     aM aM = this.a.c(this.a.O().aa());
     try {
       arrayOfDouble = aM.i(this.a.h());
-    } catch (g g) {
-      Logger.getLogger(cT.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(cT.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       arrayOfDouble = new double[aM.b()][1];
     } 
     byte b = 0;

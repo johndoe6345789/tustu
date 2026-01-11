@@ -1,13 +1,13 @@
 package aP;
 
-import c.e;
-import r.a;
+import c.CInterfaceEcho;
+import r.IOPropertiesUsingFile;
 
-class fu implements e {
+class fu implements CInterfaceEcho {
   fu(dB paramdB) {}
   
-  public boolean a() {
-    return a.a().c(a.cA, a.cB).equals(a.cr);
+  public boolean IOPropertiesUsingFile() {
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.cA, IOPropertiesUsingFile.cB).equals(IOPropertiesUsingFile.cr);
   }
 }
 

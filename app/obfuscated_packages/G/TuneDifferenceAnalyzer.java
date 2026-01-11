@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.ab;
 import bH.c;
@@ -25,7 +25,7 @@ public class TuneDifferenceAnalyzer {
         double[][] arrayOfDouble2 = aM.i(paramY2);
         if (aM.n(paramY1) && aM.C() && aM.aL().indexOf("test") == -1 && !a(arrayOfDouble1, arrayOfDouble2, aM.v(), aM.B()) && !aM.N())
           arrayList.add(aM); 
-      } catch (g g) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.a("Failed to get data for EcuPrameter: " + aM.aL());
       } 
     } 

@@ -1,10 +1,10 @@
 package G;
 
 import J.c;
-import J.f;
-import J.h;
-import V.b;
-import V.d;
+import J.SerializableImpl;
+import J.Abstract;
+import V.VInterfaceBravo;
+import V.ExceptionGetmessage;
 import bH.A;
 import bH.D;
 import bH.X;
@@ -26,7 +26,7 @@ import java.util.zip.CRC32;
 public abstract class AbstractController implements Serializable {
   private static HashMap a = new HashMap<>();
   
-  private List b = new CopyOnWriteArrayList();
+  private List VInterfaceBravo = new CopyOnWriteArrayList();
   
   final ConcurrentLinkedQueue p = new ConcurrentLinkedQueue();
   
@@ -98,15 +98,15 @@ public abstract class AbstractController implements Serializable {
   
   protected boolean W = false;
   
-  private boolean d = false;
+  private boolean ExceptionGetmessage = false;
   
-  f X = new f();
+  SerializableImpl X = new SerializableImpl();
   
-  f Y = new f();
+  SerializableImpl Y = new SerializableImpl();
   
   private long e = 0L;
   
-  private String f = "";
+  private String SerializableImpl = "";
   
   int Z = 0;
   
@@ -133,8 +133,8 @@ public abstract class AbstractController implements Serializable {
   v ak = new M(this);
   
   protected J(F paramF) {
-    b(paramF);
-    this.f = paramF.u();
+    VInterfaceBravo(paramF);
+    this.SerializableImpl = paramF.u();
     if (T == null) {
       T = new P(this);
       T.start();
@@ -159,18 +159,18 @@ public abstract class AbstractController implements Serializable {
     paramJ.A = this.A;
     paramJ.B = this.B;
     paramJ.ad = this.ad;
-    paramJ.b = this.b;
+    paramJ.VInterfaceBravo = this.VInterfaceBravo;
     paramJ.y = this.y;
   }
   
   public void t() {
     this.Z = 0;
     this.aa = new int[this.A.size()];
-    byte b = 0;
+    byte VInterfaceBravo = 0;
     for (F f1 : this.A) {
       this.Z += f1.n();
-      this.aa[b] = f1.n();
-      b++;
+      this.aa[VInterfaceBravo] = f1.n();
+      VInterfaceBravo++;
     } 
   }
   
@@ -186,8 +186,8 @@ public abstract class AbstractController implements Serializable {
   
   public void v() {
     if (x() || (e().B() >= 0 && e().x(e().B()))) {
-      f("Going offline before all changes were permanently saved to the Controller.\nThese writes will be lost!");
-      D.d("Going offline before all changes were permanently saved to the Controller.");
+      SerializableImpl("Going offline before all changes were permanently saved to the Controller.\nThese writes will be lost!");
+      D.ExceptionGetmessage("Going offline before all changes were permanently saved to the Controller.");
       this.L = -2;
     } 
     this.p.clear();
@@ -196,17 +196,17 @@ public abstract class AbstractController implements Serializable {
   protected abstract InputStream i();
   
   protected void a(F paramF) {
-    int i = f(paramF);
+    int i = SerializableImpl(paramF);
     if (i >= 0) {
       m m = m.a(paramF, i);
       D.c("Burn Page anonymous: " + (this.L + 1));
-      b(m);
+      VInterfaceBravo(m);
     } else {
       D.c("Skip Burn, last write page: " + i);
     } 
   }
   
-  private int f(F paramF) {
+  private int SerializableImpl(F paramF) {
     int i = -1;
     if (this.p.size() > 0)
       synchronized (this.p) {
@@ -224,14 +224,14 @@ public abstract class AbstractController implements Serializable {
     return i;
   }
   
-  public void b(m paramm) {
+  public void VInterfaceBravo(m paramm) {
     if (O)
-      b("Received Instruction: " + paramm.aL() + ", Page: " + (paramm.o() + 1)); 
+      VInterfaceBravo("Received Instruction: " + paramm.aL() + ", Page: " + (paramm.o() + 1)); 
     if (!this.F || !this.G)
       if (paramm.n() == 7) {
         try {
           c(paramm);
-        } catch (b b1) {
+        } catch (VInterfaceBravo b1) {
           Logger.getLogger(J.class.getName()).log(Level.SEVERE, "Timeout", (Throwable)b1);
         } catch (l l) {
           Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, l);
@@ -239,7 +239,7 @@ public abstract class AbstractController implements Serializable {
       } else {
         return;
       }  
-    byte b = -1;
+    byte VInterfaceBravo = -1;
     if (paramm.n() == 5 || paramm.n() == 4) {
       if (paramm.o() == -1 || paramm.q() < 0)
         D.c("Impossible Write Chunk Instruction!!!"); 
@@ -258,7 +258,7 @@ public abstract class AbstractController implements Serializable {
     } 
     if (paramm.x() && this.L >= 0) {
       m m1 = m.a(paramm.v(), this.L);
-      b(m1);
+      VInterfaceBravo(m1);
     } 
     if (paramm.n() == 6) {
       if (paramm.o() == this.L) {
@@ -266,15 +266,15 @@ public abstract class AbstractController implements Serializable {
           D.c("CommManager got a burn for page " + (this.L + 1) + ", cleared lastWritePage"); 
         this.L = -2;
         this.M = null;
-        D.d("Queueing burn to page:" + (paramm.o() + 1));
-        paramm.b(new K(this));
+        D.ExceptionGetmessage("Queueing burn to page:" + (paramm.o() + 1));
+        paramm.VInterfaceBravo(new K(this));
       } else {
-        D.d("skip burn to page:" + (paramm.o() + 1) + ", lastWritePage = " + this.L);
+        D.ExceptionGetmessage("skip burn to page:" + (paramm.o() + 1) + ", lastWritePage = " + this.L);
       } 
     } else if (paramm.n() == 5 || paramm.n() == 4 || (paramm.n() == 16 && paramm.o() >= 0)) {
       this.L = paramm.o();
       this.M = paramm.v();
-      d(this.M.u(), this.L);
+      ExceptionGetmessage(this.M.u(), this.L);
     } else if (paramm.n() == 3) {
     
     } 
@@ -298,28 +298,28 @@ public abstract class AbstractController implements Serializable {
   }
   
   public boolean x() {
-    byte b = 0;
+    byte VInterfaceBravo = 0;
     ArrayList<Integer> arrayList = new ArrayList();
     for (m m : this.p) {
       if (m.n() == 5 || m.n() == 4) {
         if (!arrayList.contains(Integer.valueOf(m.o() + 1)))
           arrayList.add(Integer.valueOf(m.o() + 1)); 
-        b++;
+        VInterfaceBravo++;
       } 
     } 
-    if (b > 0) {
+    if (VInterfaceBravo > 0) {
       StringBuilder stringBuilder = new StringBuilder();
       Iterator<Integer> iterator = arrayList.iterator();
       while (iterator.hasNext())
         stringBuilder.append(iterator.next()).append(", "); 
-      D.c("Queued Write instructions:" + b + " to page(s) " + stringBuilder.toString());
+      D.c("Queued Write instructions:" + VInterfaceBravo + " to page(s) " + stringBuilder.toString());
       return true;
     } 
     D.c("No Remaining Queue Write instructions");
     return false;
   }
   
-  public abstract boolean b();
+  public abstract boolean VInterfaceBravo();
   
   protected void y() {
     while (!this.p.isEmpty()) {
@@ -344,8 +344,8 @@ public abstract class AbstractController implements Serializable {
         } 
         c(m);
       } catch (Exception exception) {
-        if (b()) {
-          D.d("Exception caught processing instruction, but stop has already been initiated. Doing nothing.");
+        if (VInterfaceBravo()) {
+          D.ExceptionGetmessage("Exception caught processing instruction, but stop has already been initiated. Doing nothing.");
           if (exception instanceof l)
             throw new IOException(exception.getMessage()); 
           continue;
@@ -356,14 +356,14 @@ public abstract class AbstractController implements Serializable {
         o o = new o(m);
         o.a(3);
         o.a("Could not process CommInstruction.\nError written to log.\n" + exception.getMessage());
-        m.b(o);
+        m.VInterfaceBravo(o);
         if (exception instanceof l)
           throw new IOException(exception.getMessage()); 
       } 
     } 
     try {
       if (e().D() == null && e().al().equals("basicRequestReply"))
-        Thread.sleep(e().h()); 
+        Thread.sleep(e().Abstract()); 
     } catch (InterruptedException interruptedException) {}
   }
   
@@ -371,7 +371,7 @@ public abstract class AbstractController implements Serializable {
     while (this.I)
       a(100L); 
     if (O)
-      b("Processing Instruction: " + paramm.aL() + ", Page: " + (paramm.o() + 1)); 
+      VInterfaceBravo("Processing Instruction: " + paramm.aL() + ", Page: " + (paramm.o() + 1)); 
     paramm.m();
     switch (paramm.n()) {
       case 3:
@@ -386,26 +386,26 @@ public abstract class AbstractController implements Serializable {
         break;
       case 5:
         a(paramm.v(), paramm.o());
-        paramm.b(0.2D);
+        paramm.VInterfaceBravo(0.2D);
         e(paramm);
         break;
       case 4:
         a(paramm.v(), paramm.o());
-        f(paramm);
+        SerializableImpl(paramm);
         break;
       case 6:
         try {
           if (paramm.v() != null && paramm.v().x(paramm.o())) {
-            d(paramm);
+            ExceptionGetmessage(paramm);
             break;
           } 
           if (!x())
             a(e().u(), true); 
         } catch (Exception exception) {
           try {
-            d(paramm);
-          } catch (d d) {
-            throw new l(d.getMessage());
+            ExceptionGetmessage(paramm);
+          } catch (ExceptionGetmessage ExceptionGetmessage) {
+            throw new l(ExceptionGetmessage.getMessage());
           } 
         } 
         break;
@@ -440,17 +440,17 @@ public abstract class AbstractController implements Serializable {
         i(paramm);
         break;
       case 4096:
-        h(paramm);
+        Abstract(paramm);
         break;
       case 8192:
         j(paramm);
         break;
       default:
-        D.b("Attempted to process CommInstruction, but type is not supported by this driver:" + paramm.n());
+        D.VInterfaceBravo("Attempted to process CommInstruction, but type is not supported by this driver:" + paramm.n());
         break;
     } 
     if (O)
-      b("Processing Complete: " + paramm.aL()); 
+      VInterfaceBravo("Processing Complete: " + paramm.aL()); 
   }
   
   protected void z() {
@@ -458,13 +458,13 @@ public abstract class AbstractController implements Serializable {
       F f1 = e();
       c(f1);
       if (f1.Q() != null && f1.V() && !f1.W()) {
-        m m = m.d(f1);
+        m m = m.ExceptionGetmessage(f1);
         try {
           c(m);
           int j = (int)f1.S().a();
           a(j);
           f1.i(true);
-          D.d("Activated Turbo Baud, Runtime: " + j);
+          D.ExceptionGetmessage("Activated Turbo Baud, Runtime: " + j);
         } catch (l l) {
           Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, l);
         } 
@@ -474,9 +474,9 @@ public abstract class AbstractController implements Serializable {
       byte[][] arrayOfByte = new byte[this.A.size()][1];
       int i = 0;
       try {
-        byte b;
-        for (b = 0; b < arrayOfByte.length; b++) {
-          F f2 = this.A.get(b);
+        byte VInterfaceBravo;
+        for (VInterfaceBravo = 0; VInterfaceBravo < arrayOfByte.length; VInterfaceBravo++) {
+          F f2 = this.A.get(VInterfaceBravo);
           o(f2.u());
           if (f2.F() && !f2.ap() && f2.o() != null) {
             if (f2.ac() && f2.ad() >= 0) {
@@ -485,18 +485,18 @@ public abstract class AbstractController implements Serializable {
               if (I())
                 D.c("Real OchDelay for " + f2.u() + ": " + bool4 + ", timeout=" + f2.av()); 
               long l = System.nanoTime();
-              arrayOfByte[b] = this.X.b(f2.n());
+              arrayOfByte[VInterfaceBravo] = this.X.VInterfaceBravo(f2.n());
               try {
-                a(f2, arrayOfByte[b], bool3, f2.ad(), bool4);
-              } catch (d d) {
-                D.c("Controller reported Comms error, skipping runtime data read. " + d.getMessage());
-                b(f2.u(), 2);
-                if (d.a() == 147) {
+                a(f2, arrayOfByte[VInterfaceBravo], bool3, f2.ad(), bool4);
+              } catch (ExceptionGetmessage ExceptionGetmessage) {
+                D.c("Controller reported Comms error, skipping runtime data read. " + ExceptionGetmessage.getMessage());
+                VInterfaceBravo(f2.u(), 2);
+                if (ExceptionGetmessage.a() == 147) {
                   cu.a().a(f2.E().K());
-                  throw d;
+                  throw ExceptionGetmessage;
                 } 
-                throw d;
-              } catch (b b1) {
+                throw ExceptionGetmessage;
+              } catch (VInterfaceBravo b1) {
                 cu.a().a(f2.E().K());
                 throw b1;
               } 
@@ -510,31 +510,31 @@ public abstract class AbstractController implements Serializable {
                 boolean bool3 = (((F)this.A.get(0)).D() == null) ? (((F)this.A.get(0)).t() / arrayOfByte.length) : false;
                 if (I())
                   D.c("Real OchDelay for " + f2.u() + ": " + f2.t() + ", timeout=" + f2.av()); 
-                byte[] arrayOfByte2 = a(arrayOfByte1, bool3, f2.av(), this.aa[b], (m)null);
-                if (arrayOfByte2.length != this.aa[b]) {
-                  D.c("unexpected runtime response size: " + arrayOfByte2.length + ", expected: " + this.aa[b]);
-                  b b1 = new b("");
-                  b1.b(this.aa[b]);
+                byte[] arrayOfByte2 = a(arrayOfByte1, bool3, f2.av(), this.aa[VInterfaceBravo], (m)null);
+                if (arrayOfByte2.length != this.aa[VInterfaceBravo]) {
+                  D.c("unexpected runtime response size: " + arrayOfByte2.length + ", expected: " + this.aa[VInterfaceBravo]);
+                  VInterfaceBravo b1 = new VInterfaceBravo("");
+                  b1.VInterfaceBravo(this.aa[VInterfaceBravo]);
                   b1.a(arrayOfByte2.length);
                   throw b1;
                 } 
-                arrayOfByte[b] = this.X.b(arrayOfByte2.length);
-                System.arraycopy(arrayOfByte2, 0, arrayOfByte[b], 0, arrayOfByte2.length);
-              } catch (d d) {
-                if (f2.D() != null && f2.D().c(d.a()))
+                arrayOfByte[VInterfaceBravo] = this.X.VInterfaceBravo(arrayOfByte2.length);
+                System.arraycopy(arrayOfByte2, 0, arrayOfByte[VInterfaceBravo], 0, arrayOfByte2.length);
+              } catch (ExceptionGetmessage ExceptionGetmessage) {
+                if (f2.D() != null && f2.D().c(ExceptionGetmessage.a()))
                   return; 
-                if (b == 0) {
-                  D.c("Controller reported Comms error, skipping runtime data read. " + d.getMessage());
-                  b(f2.u(), 2);
-                  throw new b("Failed to read runtime data.\n" + d.getMessage());
+                if (VInterfaceBravo == 0) {
+                  D.c("Controller reported Comms error, skipping runtime data read. " + ExceptionGetmessage.getMessage());
+                  VInterfaceBravo(f2.u(), 2);
+                  throw new VInterfaceBravo("Failed to read runtime data.\n" + ExceptionGetmessage.getMessage());
                 } 
-                b(f2.u(), 2);
-                throw new b("Failed to communicate with CAN device.\n" + d.getMessage());
+                VInterfaceBravo(f2.u(), 2);
+                throw new VInterfaceBravo("Failed to communicate with CAN device.\n" + ExceptionGetmessage.getMessage());
               } 
               i = (int)((System.nanoTime() - l) / 1000000L);
               if (I())
                 D.c("old style time to read outpc: " + i + " ms."); 
-              if (b < arrayOfByte.length - 1)
+              if (VInterfaceBravo < arrayOfByte.length - 1)
                 a(1L); 
             } else {
               boolean bool3 = (((F)this.A.get(0)).D() == null) ? (((F)this.A.get(0)).t() / arrayOfByte.length) : false;
@@ -542,49 +542,49 @@ public abstract class AbstractController implements Serializable {
                 D.c("Real OchDelay for " + f2.u() + ": " + bool3 + ", timeout=" + f2.av()); 
               long l = System.nanoTime();
               boolean bool4 = false;
-              arrayOfByte[b] = this.X.b(f2.n());
+              arrayOfByte[VInterfaceBravo] = this.X.VInterfaceBravo(f2.n());
               try {
                 List list = f2.L();
                 if (list != null && !list.isEmpty()) {
                   for (w w : list) {
                     if (((F)this.A.get(0)).ar()) {
-                      b(f2, arrayOfByte[b], w.a(), w.c(), 0);
+                      VInterfaceBravo(f2, arrayOfByte[VInterfaceBravo], w.a(), w.c(), 0);
                       continue;
                     } 
-                    b(f2, arrayOfByte[b], w.a(), w.c(), 1 + w.c() / 36);
+                    VInterfaceBravo(f2, arrayOfByte[VInterfaceBravo], w.a(), w.c(), 1 + w.c() / 36);
                   } 
                 } else {
-                  b(f2, arrayOfByte[b], bool4, this.aa[b], bool3);
+                  VInterfaceBravo(f2, arrayOfByte[VInterfaceBravo], bool4, this.aa[VInterfaceBravo], bool3);
                 } 
-              } catch (d d) {
-                D.c("Controller reported Comms error, skipping runtime data read. " + d.getMessage());
-                b(f2.u(), 2);
-                throw d;
+              } catch (ExceptionGetmessage ExceptionGetmessage) {
+                D.c("Controller reported Comms error, skipping runtime data read. " + ExceptionGetmessage.getMessage());
+                VInterfaceBravo(f2.u(), 2);
+                throw ExceptionGetmessage;
               } 
               i = (int)((System.nanoTime() - l) / 1000000L);
               if (I())
                 D.c("Blocked time to read outpc: " + i + " ms."); 
             } 
-            if (b == 0)
+            if (VInterfaceBravo == 0)
               this.ab = i; 
-            if (this.aa[b] != (arrayOfByte[b]).length) {
-              D.b("Och is " + (arrayOfByte[b]).length + ", expected:" + this.aa[b] + ", turn on Comm debug for more data.");
-              b(f2.u(), 4);
+            if (this.aa[VInterfaceBravo] != (arrayOfByte[VInterfaceBravo]).length) {
+              D.VInterfaceBravo("Och is " + (arrayOfByte[VInterfaceBravo]).length + ", expected:" + this.aa[VInterfaceBravo] + ", turn on Comm debug for more data.");
+              VInterfaceBravo(f2.u(), 4);
               return;
             } 
           } 
         } 
-        for (b = 0; b < this.A.size(); b++) {
-          if (((F)this.A.get(b)).F() && !((F)this.A.get(b)).ap())
-            if (b > 0 || b(((F)this.A.get(b)).u(), arrayOfByte[b])) {
-              a(((F)this.A.get(b)).u(), arrayOfByte[b]);
+        for (VInterfaceBravo = 0; VInterfaceBravo < this.A.size(); VInterfaceBravo++) {
+          if (((F)this.A.get(VInterfaceBravo)).F() && !((F)this.A.get(VInterfaceBravo)).ap())
+            if (VInterfaceBravo > 0 || VInterfaceBravo(((F)this.A.get(VInterfaceBravo)).u(), arrayOfByte[VInterfaceBravo])) {
+              a(((F)this.A.get(VInterfaceBravo)).u(), arrayOfByte[VInterfaceBravo]);
             } else {
-              throw new b("Invalid runtime data received.");
+              throw new VInterfaceBravo("Invalid runtime data received.");
             }  
         } 
       } finally {
-        for (byte b = 0; b < arrayOfByte.length; b++)
-          this.X.a(arrayOfByte[b]); 
+        for (byte VInterfaceBravo = 0; VInterfaceBravo < arrayOfByte.length; VInterfaceBravo++)
+          this.X.a(arrayOfByte[VInterfaceBravo]); 
       } 
       boolean bool = (e().aw() == 0) ? true : (int)(1.0E9D / e().aw() - (System.nanoTime() - this.ag));
       if (this.P > 0L) {
@@ -633,7 +633,7 @@ public abstract class AbstractController implements Serializable {
       int m = (k < paramInt2 - i) ? k : (paramInt2 - i);
       byte[] arrayOfByte1 = paramF.Z().a(paramInt1 + i, m, null);
       if (paramInt2 > k && arrayOfByte1.length == 1) {
-        D.b("blockingFactor smaller than ochBlockSize, but ochCommand does not support blocking. Will Attempt reading entire outpc");
+        D.VInterfaceBravo("blockingFactor smaller than ochBlockSize, but ochCommand does not support blocking. Will Attempt reading entire outpc");
         m = paramInt2;
       } 
       byte[] arrayOfByte2 = a(arrayOfByte1, paramInt3, paramF.av(), m, (m)null);
@@ -642,9 +642,9 @@ public abstract class AbstractController implements Serializable {
         i += m;
         continue;
       } 
-      d d = new d("Unexpected runtime response size, expected: " + m + ", received: " + arrayOfByte2.length);
-      d.a(147);
-      throw d;
+      ExceptionGetmessage ExceptionGetmessage = new ExceptionGetmessage("Unexpected runtime response size, expected: " + m + ", received: " + arrayOfByte2.length);
+      ExceptionGetmessage.a(147);
+      throw ExceptionGetmessage;
     } 
     int j = 0;
     for (w w : list) {
@@ -654,14 +654,14 @@ public abstract class AbstractController implements Serializable {
     return paramArrayOfbyte;
   }
   
-  private byte[] b(F paramF, byte[] paramArrayOfbyte, int paramInt1, int paramInt2, int paramInt3) {
+  private byte[] VInterfaceBravo(F paramF, byte[] paramArrayOfbyte, int paramInt1, int paramInt2, int paramInt3) {
     int i = 0;
     while (i < paramInt2) {
       int j = paramF.G(0);
       int k = (j < paramInt2 - i) ? j : (paramInt2 - i);
       byte[] arrayOfByte1 = paramF.o().a(paramInt1 + i, k, null);
       if (paramInt2 > j && arrayOfByte1.length == 1) {
-        D.b("blockingFactor smaller than ochBlockSize, but ochCommand does not support blocking. Will Attempt reading entire outpc");
+        D.VInterfaceBravo("blockingFactor smaller than ochBlockSize, but ochCommand does not support blocking. Will Attempt reading entire outpc");
         k = paramInt2;
       } 
       byte[] arrayOfByte2 = a(arrayOfByte1, paramInt3, paramF.av(), k, (m)null);
@@ -670,14 +670,14 @@ public abstract class AbstractController implements Serializable {
         i += k;
         continue;
       } 
-      throw new d("Unexpected runtime response size, expected: " + k + ", received: " + arrayOfByte2.length);
+      throw new ExceptionGetmessage("Unexpected runtime response size, expected: " + k + ", received: " + arrayOfByte2.length);
     } 
     return paramArrayOfbyte;
   }
   
-  public abstract void d();
+  public abstract void ExceptionGetmessage();
   
-  protected void b(F paramF) {
+  protected void VInterfaceBravo(F paramF) {
     if (this.A.contains(paramF))
       return; 
     this.A.add(paramF);
@@ -689,7 +689,7 @@ public abstract class AbstractController implements Serializable {
     t();
   }
   
-  protected F d(String paramString) {
+  protected F ExceptionGetmessage(String paramString) {
     if (paramString == null || paramString.equals(""))
       return this.A.get(0); 
     for (F f1 : this.A) {
@@ -708,7 +708,7 @@ public abstract class AbstractController implements Serializable {
       if (this.H && paramF.A() >= 0 && paramF.B() >= 0 && paramF.x(paramF.A()) && paramF.A() != paramInt) {
         D.c("Activate Page, burn page " + (paramF.A() + 1) + " new active page=" + (paramInt + 1));
         m m = m.a(paramF, paramF.A());
-        d(m);
+        ExceptionGetmessage(m);
       } 
       if (paramF.m(paramInt) == null) {
         paramF.t(paramInt);
@@ -716,45 +716,45 @@ public abstract class AbstractController implements Serializable {
       } 
       if (paramF.A() == paramInt)
         return; 
-      D.d("Activating page: " + (paramInt + 1));
+      D.ExceptionGetmessage("Activating page: " + (paramInt + 1));
       paramF.t(paramInt);
       byte[] arrayOfByte = paramF.m(paramInt);
       if (arrayOfByte == null)
         return; 
-      a(arrayOfByte, paramF.h());
-    } catch (b b) {
-      throw b;
+      a(arrayOfByte, paramF.Abstract());
+    } catch (VInterfaceBravo VInterfaceBravo) {
+      throw VInterfaceBravo;
     } catch (Exception exception) {
       Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       throw new l("Activating page" + paramInt + ": " + exception.getMessage());
     } 
   }
   
-  protected void d(m paramm) {
+  protected void ExceptionGetmessage(m paramm) {
     F f1 = paramm.v();
     if (f1 == null)
       f1 = e(); 
     if (paramm.o() == -2)
       paramm.e(f1.A()); 
     if (paramm.o() < 0) {
-      D.b("Burn requested for page:" + (paramm.o() + 1));
+      D.VInterfaceBravo("Burn requested for page:" + (paramm.o() + 1));
       return;
     } 
     if (f1.B() < 0) {
       D.c("Request to burn page, but no writes have been performed. Ignoring burn. page: " + (paramm.o() + 1));
       return;
     } 
-    H h = f1.e(paramm.o());
-    byte[] arrayOfByte = h.d();
+    H Abstract = f1.e(paramm.o());
+    byte[] arrayOfByte = Abstract.ExceptionGetmessage();
     o o = new o();
     o.a(paramm);
     if (arrayOfByte == null || arrayOfByte.length == 0) {
-      D.d("Burn Command empty for page " + (paramm.o() + 1) + ", bypassing burn and verification.");
+      D.ExceptionGetmessage("Burn Command empty for page " + (paramm.o() + 1) + ", bypassing burn and verification.");
       f1.u(-2);
       o.a(2);
-      o.b(f1.u());
-      paramm.b(1.0D);
-      paramm.b(o);
+      o.VInterfaceBravo(f1.u());
+      paramm.VInterfaceBravo(1.0D);
+      paramm.VInterfaceBravo(o);
       c(f1.u(), paramm.o());
       if (!x()) {
         this.L = -2;
@@ -763,23 +763,23 @@ public abstract class AbstractController implements Serializable {
       return;
     } 
     try {
-      byte b = -1;
+      byte VInterfaceBravo = -1;
       long l = System.currentTimeMillis();
       if (e().D() != null) {
-        boolean bool1 = (f1.h() > 0) ? f1.h() : true;
+        boolean bool1 = (f1.Abstract() > 0) ? f1.Abstract() : true;
         a(arrayOfByte, 1L, bool1, 0, (m)null);
       } else {
-        b(arrayOfByte, b);
-        if (f1.h() > 0)
-          a(f1.h()); 
+        VInterfaceBravo(arrayOfByte, VInterfaceBravo);
+        if (f1.Abstract() > 0)
+          a(f1.Abstract()); 
       } 
       D.c("Burn time:" + (System.currentTimeMillis() - l) + "ms.");
       f1.u(-2);
       o.a(1);
-      o.b(f1.u());
+      o.VInterfaceBravo(f1.u());
       D.c("burned page " + (paramm.o() + 1));
-    } catch (d d) {
-      throw d;
+    } catch (ExceptionGetmessage ExceptionGetmessage) {
+      throw ExceptionGetmessage;
     } catch (Exception exception) {
       o.a(3);
       o.a("Device burn failed!\nError: " + exception.getMessage());
@@ -787,21 +787,21 @@ public abstract class AbstractController implements Serializable {
       Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     a(true);
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
     c(f1.u(), paramm.o());
     a(false);
     boolean bool = true;
     try {
       bool = r(paramm);
     } catch (l l) {
-      aB.a().b(f1.u(), "Serial Communication error during page burn.\nNo Response from Controller.\n\nPossible loss of data that has been written to the Controller.\nGoing offline.");
+      aB.a().VInterfaceBravo(f1.u(), "Serial Communication error during page burn.\nNo Response from Controller.\n\nPossible loss of data that has been written to the Controller.\nGoing offline.");
       c();
       E();
       o.a(3);
     } 
     if (!bool) {
-      f("Burn Page failed CRC Check.\nCheck Log for full data dump of local and controller Page " + (paramm.o() + 1) + " data.");
+      SerializableImpl("Burn Page failed CRC Check.\nCheck Log for full data dump of local and controller Page " + (paramm.o() + 1) + " data.");
       o.a(3);
       F();
       D.c("Writing the last " + this.D + " comm interactions including the burn, crc and page read to the log file here:");
@@ -813,65 +813,65 @@ public abstract class AbstractController implements Serializable {
     o o = new o();
     o.a(paramm);
     try {
-      b b = new b();
+      VInterfaceBravo VInterfaceBravo = new VInterfaceBravo();
       for (m m1 : paramm.a()) {
-        m1.b(b);
+        m1.VInterfaceBravo(VInterfaceBravo);
         c(m1);
-        if (b.a() == null || b.a().a() == 3) {
+        if (VInterfaceBravo.a() == null || VInterfaceBravo.a().a() == 3) {
           o.a(3);
-          o.a(b.b());
-          paramm.b(o);
+          o.a(VInterfaceBravo.VInterfaceBravo());
+          paramm.VInterfaceBravo(o);
           return;
         } 
-        m1.a(b);
+        m1.a(VInterfaceBravo);
       } 
       o.a(1);
-      o.a(b.a().e());
-      o.a(b.a().d());
+      o.a(VInterfaceBravo.a().e());
+      o.a(VInterfaceBravo.a().ExceptionGetmessage());
     } catch (Exception exception) {
       o.a(3);
       o.a(exception.getMessage());
     } 
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected void e(m paramm) {
     F f1 = paramm.v();
-    H h = f1.j(paramm.o());
-    byte[] arrayOfByte = h.a(paramm.q(), paramm.r(), paramm.p());
+    H Abstract = f1.j(paramm.o());
+    byte[] arrayOfByte = Abstract.a(paramm.q(), paramm.r(), paramm.p());
     o o = new o();
     o.a(paramm);
     try {
       a(arrayOfByte);
       o.a(1);
       f1.u(paramm.o());
-    } catch (b|d b) {
-      if (b instanceof d)
-        D.b("Retrying Controller Rejected Write after " + f1.i() + "ms wait"); 
+    } catch (VInterfaceBravo|ExceptionGetmessage VInterfaceBravo) {
+      if (VInterfaceBravo instanceof ExceptionGetmessage)
+        D.VInterfaceBravo("Retrying Controller Rejected Write after " + f1.i() + "ms wait"); 
       try {
         a(f1.i());
         a(arrayOfByte);
         o.a(1);
         f1.u(paramm.o());
       } catch (Exception exception) {
-        if (b instanceof b)
-          throw b; 
-        if (b instanceof d)
-          D.b("Retrying Controller Rejected Write after " + f1.i() + "ms wait"); 
-        D.b("Controller Rejected Write again, Comm Manager will report error for additional handling.");
+        if (VInterfaceBravo instanceof VInterfaceBravo)
+          throw VInterfaceBravo; 
+        if (VInterfaceBravo instanceof ExceptionGetmessage)
+          D.VInterfaceBravo("Retrying Controller Rejected Write after " + f1.i() + "ms wait"); 
+        D.VInterfaceBravo("Controller Rejected Write again, Comm Manager will report error for additional handling.");
         o.a(3);
-        o.a("Device write failed!\nError: " + b.getMessage());
-        paramm.b(o);
+        o.a("Device write failed!\nError: " + VInterfaceBravo.getMessage());
+        paramm.VInterfaceBravo(o);
         return;
       } 
     } catch (Exception exception) {
       o.a(3);
       o.a("Device write failed!\nError: " + exception.getMessage());
-      paramm.b(o);
+      paramm.VInterfaceBravo(o);
       return;
     } 
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
     N n = (N)this.ad.get(f1.u());
     n.a(paramm.o(), paramm.q(), paramm.p(), false);
   }
@@ -879,7 +879,7 @@ public abstract class AbstractController implements Serializable {
   public abstract void a(boolean paramBoolean);
   
   protected void a(int[] paramArrayOfint1, int[] paramArrayOfint2, int paramInt1, int paramInt2) {
-    String str = "Controller page " + (paramInt1 + 1) + " Does not match Local store:\n                 Controller " + c.d(a(paramArrayOfint2)) + "                      Local Data Store " + c.d(a(paramArrayOfint1)) + "\n" + c.a(paramInt2, paramArrayOfint2, paramArrayOfint1);
+    String str = "Controller page " + (paramInt1 + 1) + " Does not match Local store:\n                 Controller " + c.ExceptionGetmessage(a(paramArrayOfint2)) + "                      Local Data Store " + c.ExceptionGetmessage(a(paramArrayOfint1)) + "\n" + c.a(paramInt2, paramArrayOfint2, paramArrayOfint1);
     O o = new O(this);
     o.a(str);
     T.a(o);
@@ -897,15 +897,15 @@ public abstract class AbstractController implements Serializable {
     F f1 = paramm.v();
     boolean bool = true;
     if (c(f1, paramm.o())) {
-      bool = b(paramm.v(), paramm.o());
+      bool = VInterfaceBravo(paramm.v(), paramm.o());
       if (!bool)
         try {
           N n = (N)this.ad.get(f1.u());
-          int[] arrayOfInt1 = n.b(paramm.o());
+          int[] arrayOfInt1 = n.VInterfaceBravo(paramm.o());
           int[] arrayOfInt2 = a(f1, paramm.o(), (m)null);
           a(arrayOfInt1, arrayOfInt2, paramm.o(), 0);
-          D.d("Retrying CRC call to see if it agrees after read:");
-          b(paramm.v(), paramm.o());
+          D.ExceptionGetmessage("Retrying CRC call to see if it agrees after read:");
+          VInterfaceBravo(paramm.v(), paramm.o());
         } catch (l l) {
           D.c("Failed during CRC check. Here is the stack:");
           Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, l);
@@ -923,10 +923,10 @@ public abstract class AbstractController implements Serializable {
     n.a(paramInt1, paramInt2, paramBoolean);
   }
   
-  protected void f(m paramm) {
+  protected void SerializableImpl(m paramm) {
     F f1 = paramm.v();
-    H h = f1.i(paramm.o());
-    byte[] arrayOfByte = h.a(paramm.q(), paramm.r(), paramm.p());
+    H Abstract = f1.i(paramm.o());
+    byte[] arrayOfByte = Abstract.a(paramm.q(), paramm.r(), paramm.p());
     o o = new o();
     o.a(paramm);
     try {
@@ -946,8 +946,8 @@ public abstract class AbstractController implements Serializable {
     } 
     N n = (N)this.ad.get(f1.u());
     n.a(paramm.o(), paramm.q(), paramm.p(), false);
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
   }
   
   private void s(m paramm) {
@@ -967,11 +967,11 @@ public abstract class AbstractController implements Serializable {
         arrayOfByte1[0] = arrayOfByte2[0];
         arrayOfByte1[1] = arrayOfByte2[1];
         byte[] arrayOfByte = this.X.a(arrayOfByte2.length - 2);
-        for (byte b = 0; b < arrayOfByte.length; b++)
-          arrayOfByte[b] = arrayOfByte2[b + 2]; 
+        for (byte VInterfaceBravo = 0; VInterfaceBravo < arrayOfByte.length; VInterfaceBravo++)
+          arrayOfByte[VInterfaceBravo] = arrayOfByte2[VInterfaceBravo + 2]; 
         a(arrayOfByte1);
-        if (f1.h() > 0)
-          Thread.sleep(f1.h()); 
+        if (f1.Abstract() > 0)
+          Thread.sleep(f1.Abstract()); 
         a(arrayOfByte, paramm);
       } 
       o.a(1);
@@ -979,8 +979,8 @@ public abstract class AbstractController implements Serializable {
       o.a(3);
       o.a("Error: " + exception.getMessage());
     } 
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
   }
   
   protected void g(m paramm) {
@@ -989,7 +989,7 @@ public abstract class AbstractController implements Serializable {
     paramm.m();
     boolean bool = false;
     try {
-      bool = b(paramm.v(), paramm.o());
+      bool = VInterfaceBravo(paramm.v(), paramm.o());
       if (bool) {
         o.a(1);
       } else {
@@ -1001,13 +1001,13 @@ public abstract class AbstractController implements Serializable {
       o.a("Error during Page CRC check.\n" + l.getMessage());
       Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, l);
     } 
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
   }
   
-  protected boolean b(F paramF, int paramInt) {
+  protected boolean VInterfaceBravo(F paramF, int paramInt) {
     boolean bool = false;
-    int i = paramF.f(paramInt);
+    int i = paramF.SerializableImpl(paramInt);
     return a(paramF, paramInt, bool, i);
   }
   
@@ -1017,17 +1017,17 @@ public abstract class AbstractController implements Serializable {
     N n = (N)this.ad.get(paramF.u());
     if (!c(paramF, paramInt1))
       return false; 
-    H h = paramF.l(paramInt1);
-    byte b = 4;
-    byte[] arrayOfByte1 = h.a(0, paramF.f(paramInt1), null);
+    H Abstract = paramF.l(paramInt1);
+    byte VInterfaceBravo = 4;
+    byte[] arrayOfByte1 = Abstract.a(0, paramF.SerializableImpl(paramInt1), null);
     try {
-      arrayOfByte2 = a(arrayOfByte1, 20L, paramF.i(), b, (m)null);
+      arrayOfByte2 = a(arrayOfByte1, 20L, paramF.i(), VInterfaceBravo, (m)null);
     } catch (IOException iOException) {
-      throw new l("Error reading from Controller, command:" + c.d(arrayOfByte1) + "Error:" + iOException.getMessage());
-    } catch (b b1) {
-      throw new l("Timeout during CRC, command:" + c.d(arrayOfByte1) + "Error:" + b1.getMessage());
-    } catch (d d) {
-      throw new l("Controller Reported error during read: " + d.getMessage());
+      throw new l("Error reading from Controller, command:" + c.ExceptionGetmessage(arrayOfByte1) + "Error:" + iOException.getMessage());
+    } catch (VInterfaceBravo b1) {
+      throw new l("Timeout during CRC, command:" + c.ExceptionGetmessage(arrayOfByte1) + "Error:" + b1.getMessage());
+    } catch (ExceptionGetmessage ExceptionGetmessage) {
+      throw new l("Controller Reported error during read: " + ExceptionGetmessage.getMessage());
     } 
     byte[] arrayOfByte3 = arrayOfByte2;
     byte[] arrayOfByte4 = c.a(n.a(paramInt1));
@@ -1036,23 +1036,23 @@ public abstract class AbstractController implements Serializable {
     byte[] arrayOfByte5 = this.X.a(4);
     arrayOfByte5 = c.a((int)this.ae.getValue(), arrayOfByte5, true);
     if (!c.c(arrayOfByte3, arrayOfByte5)) {
-      D.d("CRC Mismatch, will need to refresh page from controller ");
-      D.d("   CRC from controller page " + (paramInt1 + 1) + ":" + c.d(arrayOfByte3));
-      D.d("   Local Data CRC for page " + (paramInt1 + 1) + ": " + c.d(arrayOfByte5));
+      D.ExceptionGetmessage("CRC Mismatch, will need to refresh page from controller ");
+      D.ExceptionGetmessage("   CRC from controller page " + (paramInt1 + 1) + ":" + c.ExceptionGetmessage(arrayOfByte3));
+      D.ExceptionGetmessage("   Local Data CRC for page " + (paramInt1 + 1) + ": " + c.ExceptionGetmessage(arrayOfByte5));
       bool = false;
     } else if (O) {
-      D.d("CRC matches fine. ");
-      D.c("   CRC from controller page " + (paramInt1 + 1) + ":" + c.d(arrayOfByte3));
-      D.c("   Local Data CRC for page " + (paramInt1 + 1) + ": " + c.d(arrayOfByte5));
+      D.ExceptionGetmessage("CRC matches fine. ");
+      D.c("   CRC from controller page " + (paramInt1 + 1) + ":" + c.ExceptionGetmessage(arrayOfByte3));
+      D.c("   Local Data CRC for page " + (paramInt1 + 1) + ": " + c.ExceptionGetmessage(arrayOfByte5));
       bool = true;
     } else {
-      D.c("CRC matches for page " + (paramInt1 + 1) + ":" + c.d(arrayOfByte3));
+      D.c("CRC matches for page " + (paramInt1 + 1) + ":" + c.ExceptionGetmessage(arrayOfByte3));
       bool = true;
     } 
     return bool;
   }
   
-  protected void h(m paramm) {}
+  protected void Abstract(m paramm) {}
   
   protected void i(m paramm) {}
   
@@ -1071,33 +1071,33 @@ public abstract class AbstractController implements Serializable {
       byte b2 = 0;
       do {
         try {
-          boolean bool = (paramm.f() >= 0) ? paramm.f() : true;
+          boolean bool = (paramm.SerializableImpl() >= 0) ? paramm.SerializableImpl() : true;
           if (e().D() != null)
             e().D().a(false); 
-          if (paramm.b() == -1) {
+          if (paramm.VInterfaceBravo() == -1) {
             int i = (f1 != null) ? f1.i() : paramm.w();
             arrayOfByte2 = a(arrayOfByte1, paramm.w(), i, bool, paramm);
           } else {
-            arrayOfByte2 = a(arrayOfByte1, paramm.w(), paramm.b(), bool, paramm);
+            arrayOfByte2 = a(arrayOfByte1, paramm.w(), paramm.VInterfaceBravo(), bool, paramm);
           } 
           if (paramm.o() >= 0) {
             this.L = paramm.o();
             if (f1 != null)
-              d(f1.u(), this.L); 
+              ExceptionGetmessage(f1.u(), this.L); 
           } 
-          if (paramm.d() && arrayOfByte2 != null) {
+          if (paramm.ExceptionGetmessage() && arrayOfByte2 != null) {
             byte[] arrayOfByte = new byte[arrayOfByte2.length];
             System.arraycopy(arrayOfByte2, 0, arrayOfByte, 0, arrayOfByte.length);
             o.a(arrayOfByte);
           } else if (arrayOfByte2 != null) {
-            o.a(c.b(arrayOfByte2));
+            o.a(c.VInterfaceBravo(arrayOfByte2));
           } 
           o.a(1);
-        } catch (b b) {
+        } catch (VInterfaceBravo VInterfaceBravo) {
           if (++b2 < 3) {
-            D.d("Timeout on raw write, retrying:" + b2);
+            D.ExceptionGetmessage("Timeout on raw write, retrying:" + b2);
           } else {
-            throw b;
+            throw VInterfaceBravo;
           } 
         } finally {
           if (e().D() != null)
@@ -1108,10 +1108,10 @@ public abstract class AbstractController implements Serializable {
       o.a(3);
       o.a("Controller Instruction failed!\n\nError: \n" + exception.getMessage());
     } 
-    paramm.b(1.0D);
-    paramm.b(o);
+    paramm.VInterfaceBravo(1.0D);
+    paramm.VInterfaceBravo(o);
     if (O)
-      b("All processing complete for " + paramm.aL()); 
+      VInterfaceBravo("All processing complete for " + paramm.aL()); 
   }
   
   public boolean c(F paramF, int paramInt) {
@@ -1121,53 +1121,53 @@ public abstract class AbstractController implements Serializable {
   protected void l(m paramm) {
     F f1 = paramm.v();
     int[][] arrayOfInt = new int[f1.g()][0];
-    paramm.b(0.0D);
+    paramm.VInterfaceBravo(0.0D);
     m m1 = new m(f1);
     cG cG = new cG(f1, paramm);
-    m1.b(cG);
-    for (byte b = 0; b < arrayOfInt.length; b++) {
+    m1.VInterfaceBravo(cG);
+    for (byte VInterfaceBravo = 0; VInterfaceBravo < arrayOfInt.length; VInterfaceBravo++) {
       if (e().D() == null)
         a(10L); 
-      cG.a(b);
+      cG.a(VInterfaceBravo);
       long l = System.currentTimeMillis();
       try {
-        if (c(f1, b)) {
-          if (b(f1, b)) {
+        if (c(f1, VInterfaceBravo)) {
+          if (VInterfaceBravo(f1, VInterfaceBravo)) {
             N n = (N)this.ad.get(paramm.v().u());
-            arrayOfInt[b] = n.b(b);
-            D.d("CrC matched skipped controller read on page:" + (b + 1));
-          } else if (O && c(f1, b)) {
+            arrayOfInt[VInterfaceBravo] = n.VInterfaceBravo(VInterfaceBravo);
+            D.ExceptionGetmessage("CrC matched skipped controller read on page:" + (VInterfaceBravo + 1));
+          } else if (O && c(f1, VInterfaceBravo)) {
             N n = (N)this.ad.get(f1.u());
-            int[] arrayOfInt1 = n.b(b);
-            arrayOfInt[b] = a(f1, b, m1);
+            int[] arrayOfInt1 = n.VInterfaceBravo(VInterfaceBravo);
+            arrayOfInt[VInterfaceBravo] = a(f1, VInterfaceBravo, m1);
             D.c("Read page time: " + (System.currentTimeMillis() - l) + "ms.");
-            a(arrayOfInt1, arrayOfInt[b], b, 0);
+            a(arrayOfInt1, arrayOfInt[VInterfaceBravo], VInterfaceBravo, 0);
           } else {
-            arrayOfInt[b] = a(f1, b, m1);
+            arrayOfInt[VInterfaceBravo] = a(f1, VInterfaceBravo, m1);
             D.c("Read page time: " + (System.currentTimeMillis() - l) + "ms.");
-            byte[] arrayOfByte = a(arrayOfInt[b]);
-            D.d("Checksum page " + (b + 1) + " data read: " + c.d(arrayOfByte));
+            byte[] arrayOfByte = a(arrayOfInt[VInterfaceBravo]);
+            D.ExceptionGetmessage("Checksum page " + (VInterfaceBravo + 1) + " data read: " + c.ExceptionGetmessage(arrayOfByte));
           } 
         } else {
-          arrayOfInt[b] = a(f1, b, m1);
+          arrayOfInt[VInterfaceBravo] = a(f1, VInterfaceBravo, m1);
           D.c("Read page time: " + (System.currentTimeMillis() - l) + "ms.");
         } 
       } catch (l l1) {
         if (f1.i() < f1.m())
           f1.c(f1.i() + 50); 
-        D.d("Timeout reading page " + (b + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
+        D.ExceptionGetmessage("Timeout reading page " + (VInterfaceBravo + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
         try {
           Thread.sleep((f1.i() * 2));
         } catch (InterruptedException interruptedException) {
           Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, interruptedException);
         } 
         try {
-          arrayOfInt[b] = a(f1, b, m1);
+          arrayOfInt[VInterfaceBravo] = a(f1, VInterfaceBravo, m1);
         } catch (l l2) {
           o o1 = new o();
           o1.a(3);
           o1.a("Serial Failure, Unable to get all pages of data after multiple attempts.");
-          paramm.b(o1);
+          paramm.VInterfaceBravo(o1);
           return;
         } 
       } 
@@ -1175,41 +1175,41 @@ public abstract class AbstractController implements Serializable {
     o o = new o();
     o.a(1);
     o.a(arrayOfInt);
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected void m(m paramm) {
     F f1 = paramm.v();
     int i = paramm.o();
     int[] arrayOfInt = new int[f1.g()];
-    paramm.b(0.0D);
+    paramm.VInterfaceBravo(0.0D);
     try {
       if (c(f1, i)) {
         a(f1, i);
-        if (b(f1, i)) {
+        if (VInterfaceBravo(f1, i)) {
           N n = (N)this.ad.get(paramm.v().u());
-          arrayOfInt = n.b(i);
-          D.d("CrC matched skipped controller read on page:" + i);
+          arrayOfInt = n.VInterfaceBravo(i);
+          D.ExceptionGetmessage("CrC matched skipped controller read on page:" + i);
         } else if (O && c(f1, i)) {
           N n = (N)this.ad.get(f1.u());
-          int[] arrayOfInt1 = n.b(i);
+          int[] arrayOfInt1 = n.VInterfaceBravo(i);
           arrayOfInt = a(f1, i, paramm);
           a(arrayOfInt1, arrayOfInt, i, 0);
         } else {
           arrayOfInt = a(f1, i, paramm);
           byte[] arrayOfByte = a(arrayOfInt);
-          D.d("Checksum of data read: " + c.d(arrayOfByte));
+          D.ExceptionGetmessage("Checksum of data read: " + c.ExceptionGetmessage(arrayOfByte));
         } 
       } else {
         arrayOfInt = a(f1, i, paramm);
       } 
     } catch (l l) {
       if (f1.i() > f1.m()) {
-        D.d("Timeout reading page " + (i + 1) + ", blockReadTimeout=" + f1.i() + ", giving up..");
+        D.ExceptionGetmessage("Timeout reading page " + (i + 1) + ", blockReadTimeout=" + f1.i() + ", giving up..");
         throw l;
       } 
       f1.c(f1.i() + 50);
-      D.d("Timeout reading page " + (i + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
+      D.ExceptionGetmessage("Timeout reading page " + (i + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
       try {
         Thread.sleep(f1.i());
       } catch (InterruptedException interruptedException) {
@@ -1217,12 +1217,12 @@ public abstract class AbstractController implements Serializable {
       } 
       arrayOfInt = a(f1, i, paramm);
     } 
-    paramm.b((i + 1.0D) / arrayOfInt.length);
+    paramm.VInterfaceBravo((i + 1.0D) / arrayOfInt.length);
     o o = new o();
     o.a(paramm);
     o.a(1);
     o.a(arrayOfInt);
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected int[] a(F paramF, int paramInt, m paramm) {
@@ -1230,43 +1230,43 @@ public abstract class AbstractController implements Serializable {
       a(paramF, paramInt);
       long l = System.currentTimeMillis();
       byte[] arrayOfByte = null;
-      if (paramF.aH() == null || paramF.aH()[paramInt] <= 0 || paramF.f(paramInt) < paramF.aH()[paramInt]) {
+      if (paramF.aH() == null || paramF.aH()[paramInt] <= 0 || paramF.SerializableImpl(paramInt) < paramF.aH()[paramInt]) {
         boolean bool;
         if (paramF.D() != null) {
           bool = (paramF.i() > 0) ? paramF.t() : true;
         } else {
           bool = (paramF.i() > 300) ? true : (paramF.i() / 2);
         } 
-        arrayOfByte = a(paramF.g(paramInt), bool, paramF.i(), paramF.f(paramInt), paramm);
-        if (arrayOfByte == null || paramF.f(paramInt) != arrayOfByte.length)
-          throw new IOException("Response size mis-match! Expected:" + paramF.f(paramInt) + ", received:" + arrayOfByte.length); 
+        arrayOfByte = a(paramF.g(paramInt), bool, paramF.i(), paramF.SerializableImpl(paramInt), paramm);
+        if (arrayOfByte == null || paramF.SerializableImpl(paramInt) != arrayOfByte.length)
+          throw new IOException("Response size mis-match! Expected:" + paramF.SerializableImpl(paramInt) + ", received:" + arrayOfByte.length); 
       } else {
         int i = 0;
         int j = paramF.G(paramInt);
-        arrayOfByte = this.X.a(paramF.f(paramInt));
-        while (i < paramF.f(paramInt)) {
-          int k = (i + j < paramF.f(paramInt)) ? j : (paramF.f(paramInt) - i);
+        arrayOfByte = this.X.a(paramF.SerializableImpl(paramInt));
+        while (i < paramF.SerializableImpl(paramInt)) {
+          int k = (i + j < paramF.SerializableImpl(paramInt)) ? j : (paramF.SerializableImpl(paramInt) - i);
           boolean bool = (k / 20 > 20) ? (k / 20) : true;
           byte[] arrayOfByte1 = a(paramF.a(paramInt, i, k), bool, paramF.i(), k, (m)null);
           if (arrayOfByte1 == null || k != arrayOfByte1.length)
-            throw new IOException("Response size mis-match! Expected:" + paramF.f(paramInt) + ", received:" + arrayOfByte.length); 
+            throw new IOException("Response size mis-match! Expected:" + paramF.SerializableImpl(paramInt) + ", received:" + arrayOfByte.length); 
           System.arraycopy(arrayOfByte1, 0, arrayOfByte, i, arrayOfByte1.length);
           i += k;
           if (e().D() == null)
             a(5L); 
-          paramm.b(i / paramF.f(paramInt));
+          paramm.VInterfaceBravo(i / paramF.SerializableImpl(paramInt));
         } 
       } 
       N n = (N)this.ad.get(paramF.u());
-      int[] arrayOfInt = c.b(arrayOfByte);
+      int[] arrayOfInt = c.VInterfaceBravo(arrayOfByte);
       n.a(paramInt, 0, arrayOfInt, true);
       return arrayOfInt;
     } catch (l l) {
       Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", l);
       throw l;
-    } catch (b b) {
-      Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", (Throwable)b);
-      throw b;
+    } catch (VInterfaceBravo VInterfaceBravo) {
+      Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", (Throwable)VInterfaceBravo);
+      throw VInterfaceBravo;
     } catch (Exception exception) {
       throw new l("Error Reading data page " + (paramInt + 1) + "\nReported Error: " + exception.getMessage());
     } 
@@ -1277,19 +1277,19 @@ public abstract class AbstractController implements Serializable {
     F f1 = paramm.v();
     int i = paramm.o();
     int j = paramm.q();
-    int k = paramm.f();
-    paramm.b(0.0D);
+    int k = paramm.SerializableImpl();
+    paramm.VInterfaceBravo(0.0D);
     try {
       if (c(f1, i)) {
         a(f1, i);
-        if (b(f1, i)) {
+        if (VInterfaceBravo(f1, i)) {
           N n = (N)this.ad.get(paramm.v().u());
-          arrayOfInt = new int[paramm.f()];
+          arrayOfInt = new int[paramm.SerializableImpl()];
           System.arraycopy(n.a(i), paramm.q(), arrayOfInt, 0, arrayOfInt.length);
-          D.d("CrC matched skipped controller read on page:" + i);
+          D.ExceptionGetmessage("CrC matched skipped controller read on page:" + i);
         } else if (O && c(f1, i)) {
           N n = (N)this.ad.get(f1.u());
-          int[] arrayOfInt1 = n.b(i);
+          int[] arrayOfInt1 = n.VInterfaceBravo(i);
           arrayOfInt = a(f1, i, j, k, paramm);
           int[] arrayOfInt2 = new int[arrayOfInt.length];
           System.arraycopy(arrayOfInt1, j, arrayOfInt2, 0, arrayOfInt.length);
@@ -1297,18 +1297,18 @@ public abstract class AbstractController implements Serializable {
         } else {
           arrayOfInt = a(f1, i, j, k, paramm);
           byte[] arrayOfByte = a(arrayOfInt);
-          D.d("Checksum of data read: " + c.d(arrayOfByte));
+          D.ExceptionGetmessage("Checksum of data read: " + c.ExceptionGetmessage(arrayOfByte));
         } 
       } else {
         arrayOfInt = a(f1, i, j, k, paramm);
       } 
     } catch (l l) {
       if (f1.i() > f1.m()) {
-        D.d("Timeout reading chunk " + (i + 1) + ", blockReadTimeout=" + f1.i() + ", giving up..");
+        D.ExceptionGetmessage("Timeout reading chunk " + (i + 1) + ", blockReadTimeout=" + f1.i() + ", giving up..");
         throw l;
       } 
       f1.c(f1.i() + 50);
-      D.d("Timeout reading chunk " + (i + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
+      D.ExceptionGetmessage("Timeout reading chunk " + (i + 1) + ", increased blockReadTimeout to " + f1.i() + ", trying once more.");
       try {
         Thread.sleep(f1.i());
       } catch (InterruptedException interruptedException) {
@@ -1316,12 +1316,12 @@ public abstract class AbstractController implements Serializable {
       } 
       arrayOfInt = a(f1, i, j, k, paramm);
     } 
-    paramm.b((i + 1.0D) / arrayOfInt.length);
+    paramm.VInterfaceBravo((i + 1.0D) / arrayOfInt.length);
     o o = new o();
     o.a(paramm);
     o.a(1);
     o.a(arrayOfInt);
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected int[] a(F paramF, int paramInt1, int paramInt2, int paramInt3, m paramm) {
@@ -1339,35 +1339,35 @@ public abstract class AbstractController implements Serializable {
           } 
           arrayOfByte = a(paramF.a(paramInt1, paramInt2, paramInt3), bool, paramF.i(), paramInt3, paramm);
           if (arrayOfByte == null || paramInt3 != arrayOfByte.length)
-            throw new IOException("Response size mis-match! Expected:" + paramF.f(paramInt1) + ", received:" + arrayOfByte.length); 
+            throw new IOException("Response size mis-match! Expected:" + paramF.SerializableImpl(paramInt1) + ", received:" + arrayOfByte.length); 
         } else {
           int i = 0;
           int j = paramF.G(paramInt1);
           arrayOfByte = this.X.a(paramInt3);
           while (i < paramInt3) {
             int k = (paramInt3 - i > j) ? j : (paramInt3 - i);
-            byte b = (e().D() == null) ? 50 : 10;
-            b = (paramF.t() / 3 > b) ? (paramF.t() / 3) : b;
-            byte[] arrayOfByte1 = a(paramF.a(paramInt1, paramInt2 + i, k), b, paramF.i(), k, (m)null);
+            byte VInterfaceBravo = (e().D() == null) ? 50 : 10;
+            VInterfaceBravo = (paramF.t() / 3 > VInterfaceBravo) ? (paramF.t() / 3) : VInterfaceBravo;
+            byte[] arrayOfByte1 = a(paramF.a(paramInt1, paramInt2 + i, k), VInterfaceBravo, paramF.i(), k, (m)null);
             if (arrayOfByte1 == null || k != arrayOfByte1.length)
-              throw new IOException("Response size mis-match! Expected:" + paramF.f(paramInt1) + ", received:" + arrayOfByte.length); 
+              throw new IOException("Response size mis-match! Expected:" + paramF.SerializableImpl(paramInt1) + ", received:" + arrayOfByte.length); 
             System.arraycopy(arrayOfByte1, 0, arrayOfByte, i, arrayOfByte1.length);
             i += k;
             if (e().D() == null)
               a(5L); 
-            paramm.b(i / paramInt3);
+            paramm.VInterfaceBravo(i / paramInt3);
           } 
         } 
         N n = (N)this.ad.get(paramF.u());
-        int[] arrayOfInt = c.b(arrayOfByte);
+        int[] arrayOfInt = c.VInterfaceBravo(arrayOfByte);
         n.a(paramInt1, paramInt2, arrayOfInt, true);
         return arrayOfInt;
       } catch (l l) {
         Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", l);
         throw l;
-      } catch (b b) {
-        Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", (Throwable)b);
-        throw b;
+      } catch (VInterfaceBravo VInterfaceBravo) {
+        Logger.getLogger(J.class.getName()).log(Level.INFO, "Error Reading Page", (Throwable)VInterfaceBravo);
+        throw VInterfaceBravo;
       } catch (Exception exception) {
         throw new l("Error Reading data page " + (paramInt1 + 1) + "\nReported Error: " + exception.getMessage());
       }  
@@ -1390,28 +1390,28 @@ public abstract class AbstractController implements Serializable {
   protected abstract o a(m paramm);
   
   private void t(m paramm) {
-    paramm.b(0.1D);
+    paramm.VInterfaceBravo(0.1D);
     o o = a(paramm);
-    paramm.b(1.0D);
+    paramm.VInterfaceBravo(1.0D);
     if (o == null) {
       o = new o();
       o.a(3);
     } 
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected String a(byte[] paramArrayOfbyte, long paramLong) {
     byte[] arrayOfByte;
     try {
-      arrayOfByte = b(paramArrayOfbyte, paramLong);
-    } catch (d d) {
-      D.c("Controller reported Comms error during read. " + d.getMessage());
+      arrayOfByte = VInterfaceBravo(paramArrayOfbyte, paramLong);
+    } catch (ExceptionGetmessage ExceptionGetmessage) {
+      D.c("Controller reported Comms error during read. " + ExceptionGetmessage.getMessage());
       return null;
     } 
     if (arrayOfByte != null) {
       StringBuilder stringBuilder = new StringBuilder();
-      for (byte b = 0; b < arrayOfByte.length && arrayOfByte[b] != 0 && arrayOfByte[b] != 255; b++)
-        stringBuilder.append((char)arrayOfByte[b]); 
+      for (byte VInterfaceBravo = 0; VInterfaceBravo < arrayOfByte.length && arrayOfByte[VInterfaceBravo] != 0 && arrayOfByte[VInterfaceBravo] != 255; VInterfaceBravo++)
+        stringBuilder.append((char)arrayOfByte[VInterfaceBravo]); 
       return stringBuilder.toString();
     } 
     return null;
@@ -1423,8 +1423,8 @@ public abstract class AbstractController implements Serializable {
     if (l2 <= 0L)
       return; 
     if (l2 < this.ai) {
-      double d = l2 / this.ai;
-      if (l2 < 500000L || Math.random() > d)
+      double ExceptionGetmessage = l2 / this.ai;
+      if (l2 < 500000L || Math.random() > ExceptionGetmessage)
         return; 
     } else {
       l2 -= this.ai;
@@ -1464,25 +1464,25 @@ public abstract class AbstractController implements Serializable {
   }
   
   private void a(byte[] paramArrayOfbyte) {
-    b(paramArrayOfbyte, -1L);
+    VInterfaceBravo(paramArrayOfbyte, -1L);
   }
   
   private void a(byte[] paramArrayOfbyte, m paramm) {
     try {
       long l = -1L;
       a(paramArrayOfbyte, l, l, -1, paramm);
-    } catch (b b) {
+    } catch (VInterfaceBravo VInterfaceBravo) {
       D.a("Write timeout, this shouldn't happen");
-      Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)b);
+      Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceBravo);
     } 
   }
   
   private void a(byte[] paramArrayOfbyte, int paramInt) {
-    b(paramArrayOfbyte, -1L);
+    VInterfaceBravo(paramArrayOfbyte, -1L);
     a(paramInt);
   }
   
-  protected byte[] b(byte[] paramArrayOfbyte, long paramLong) {
+  protected byte[] VInterfaceBravo(byte[] paramArrayOfbyte, long paramLong) {
     return a(paramArrayOfbyte, paramLong, paramLong, -1, (m)null);
   }
   
@@ -1490,7 +1490,7 @@ public abstract class AbstractController implements Serializable {
   
   protected abstract boolean k();
   
-  protected synchronized byte[] b(byte[] paramArrayOfbyte, long paramLong1, long paramLong2, int paramInt, m paramm) {
+  protected synchronized byte[] VInterfaceBravo(byte[] paramArrayOfbyte, long paramLong1, long paramLong2, int paramInt, m paramm) {
     // Byte code:
     //   0: aload_0
     //   1: getfield A : Ljava/util/ArrayList;
@@ -1557,7 +1557,7 @@ public abstract class AbstractController implements Serializable {
     //   130: lload_2
     //   131: lload #4
     //   133: aload #9
-    //   135: invokeinterface b : ()I
+    //   135: invokeinterface VInterfaceBravo : ()I
     //   140: aload #7
     //   142: aload #10
     //   144: invokevirtual a : ([BJJILG/m;Ljava/io/InputStream;)[B
@@ -1586,25 +1586,25 @@ public abstract class AbstractController implements Serializable {
     //   195: ldc 'Time out waiting for response to command \\n'
     //   197: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   200: aload_1
-    //   201: invokestatic d : ([B)Ljava/lang/String;
+    //   201: invokestatic ExceptionGetmessage : ([B)Ljava/lang/String;
     //   204: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   207: invokevirtual toString : ()Ljava/lang/String;
     //   210: astore #14
-    //   212: new V/b
+    //   212: new V/VInterfaceBravo
     //   215: dup
     //   216: aload #14
     //   218: invokespecial <init> : (Ljava/lang/String;)V
     //   221: astore #15
     //   223: aload #15
     //   225: iload #12
-    //   227: invokevirtual b : (I)V
+    //   227: invokevirtual VInterfaceBravo : (I)V
     //   230: aload #15
     //   232: iconst_0
     //   233: invokevirtual a : (I)V
     //   236: aload #15
     //   238: athrow
     //   239: aload_0
-    //   240: getfield Y : LG/f;
+    //   240: getfield Y : LG/SerializableImpl;
     //   243: aload #11
     //   245: arraylength
     //   246: aload #13
@@ -1633,11 +1633,11 @@ public abstract class AbstractController implements Serializable {
     //   286: invokeinterface a : ([B[B)Z
     //   291: ifne -> 537
     //   294: aload #9
-    //   296: invokeinterface d : ()LJ/h;
+    //   296: invokeinterface ExceptionGetmessage : ()LJ/Abstract;
     //   301: instanceof J/i
     //   304: ifeq -> 363
     //   307: aload #9
-    //   309: invokeinterface d : ()LJ/h;
+    //   309: invokeinterface ExceptionGetmessage : ()LJ/Abstract;
     //   314: checkcast J/i
     //   317: astore #15
     //   319: new java/lang/StringBuilder
@@ -1646,7 +1646,7 @@ public abstract class AbstractController implements Serializable {
     //   326: ldc 'call failed protocol validation, running stats: '
     //   328: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   331: aload #15
-    //   333: invokevirtual f : ()I
+    //   333: invokevirtual SerializableImpl : ()I
     //   336: invokevirtual append : (I)Ljava/lang/StringBuilder;
     //   339: ldc ' failed validation, '
     //   341: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1671,24 +1671,24 @@ public abstract class AbstractController implements Serializable {
     //   388: ldc ''
     //   390: astore #15
     //   392: aload_1
-    //   393: invokestatic b : ([B)[I
+    //   393: invokestatic VInterfaceBravo : ([B)[I
     //   396: astore #16
     //   398: aload_0
     //   399: iconst_1
     //   400: invokevirtual a : (Z)V
     //   403: aload #14
-    //   405: invokestatic b : ([B)[I
+    //   405: invokestatic VInterfaceBravo : ([B)[I
     //   408: astore #17
     //   410: invokestatic a : ()LG/cQ;
     //   413: aload #9
     //   415: aload #9
     //   417: aload #14
-    //   419: invokeinterface d : ([B)I
-    //   424: invokeinterface b : (I)Z
+    //   419: invokeinterface ExceptionGetmessage : ([B)I
+    //   424: invokeinterface VInterfaceBravo : (I)Z
     //   429: aload #15
     //   431: aload #9
     //   433: aload #14
-    //   435: invokeinterface d : ([B)I
+    //   435: invokeinterface ExceptionGetmessage : ([B)I
     //   440: aload #9
     //   442: aload #14
     //   444: invokeinterface c : ([B)Ljava/lang/String;
@@ -1698,7 +1698,7 @@ public abstract class AbstractController implements Serializable {
     //   456: aload_0
     //   457: iconst_0
     //   458: invokevirtual a : (Z)V
-    //   461: new V/d
+    //   461: new V/ExceptionGetmessage
     //   464: dup
     //   465: new java/lang/StringBuilder
     //   468: dup
@@ -1718,11 +1718,11 @@ public abstract class AbstractController implements Serializable {
     //   504: aload #9
     //   506: aload #14
     //   508: invokeinterface c : ([B)Ljava/lang/String;
-    //   513: invokevirtual b : (Ljava/lang/String;)V
+    //   513: invokevirtual VInterfaceBravo : (Ljava/lang/String;)V
     //   516: aload #18
     //   518: aload #9
     //   520: aload #14
-    //   522: invokeinterface d : ([B)I
+    //   522: invokeinterface ExceptionGetmessage : ([B)I
     //   527: invokevirtual a : (I)V
     //   530: aload_0
     //   531: invokevirtual G : ()V
@@ -1730,7 +1730,7 @@ public abstract class AbstractController implements Serializable {
     //   536: athrow
     //   537: aload #9
     //   539: aload #14
-    //   541: invokeinterface b : ([B)Z
+    //   541: invokeinterface VInterfaceBravo : ([B)Z
     //   546: ifeq -> 650
     //   549: aload_0
     //   550: iconst_1
@@ -1753,7 +1753,7 @@ public abstract class AbstractController implements Serializable {
     //   592: aload_0
     //   593: iconst_0
     //   594: invokevirtual a : (Z)V
-    //   597: new V/d
+    //   597: new V/ExceptionGetmessage
     //   600: dup
     //   601: new java/lang/StringBuilder
     //   604: dup
@@ -1770,7 +1770,7 @@ public abstract class AbstractController implements Serializable {
     //   633: aload #16
     //   635: aload #9
     //   637: aload #14
-    //   639: invokeinterface d : ([B)I
+    //   639: invokeinterface ExceptionGetmessage : ([B)I
     //   644: invokevirtual a : (I)V
     //   647: aload #16
     //   649: athrow
@@ -1790,7 +1790,7 @@ public abstract class AbstractController implements Serializable {
     //   682: invokevirtual available : ()I
     //   685: invokevirtual append : (I)Ljava/lang/StringBuilder;
     //   688: invokevirtual toString : ()Ljava/lang/String;
-    //   691: invokestatic b : (Ljava/lang/String;)V
+    //   691: invokestatic VInterfaceBravo : (Ljava/lang/String;)V
     //   694: aload #9
     //   696: aload #14
     //   698: invokeinterface a : ([B)[B
@@ -1806,45 +1806,45 @@ public abstract class AbstractController implements Serializable {
       try {
         if (paramLong1 == paramLong2)
           paramLong1 = 1L; 
-        return b(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
-      } catch (d d) {
-        if (bool && cR.a(d.a())) {
-          byte b = (d.a() == 133) ? 50 : 20;
-          if (d.a() == 138)
-            b = 100; 
-          D.c("Protocol reported error after write 0x" + Integer.toHexString(d.a()) + ", waiting " + b + "ms and retry ");
-          a(b);
+        return VInterfaceBravo(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
+      } catch (ExceptionGetmessage ExceptionGetmessage) {
+        if (bool && cR.a(ExceptionGetmessage.a())) {
+          byte VInterfaceBravo = (ExceptionGetmessage.a() == 133) ? 50 : 20;
+          if (ExceptionGetmessage.a() == 138)
+            VInterfaceBravo = 100; 
+          D.c("Protocol reported error after write 0x" + Integer.toHexString(ExceptionGetmessage.a()) + ", waiting " + VInterfaceBravo + "ms and retry ");
+          a(VInterfaceBravo);
           try {
-            byte[] arrayOfByte = b(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
+            byte[] arrayOfByte = VInterfaceBravo(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
             D.c("Protocol retry successful on 2nd try! ");
             return arrayOfByte;
-          } catch (d d1) {
+          } catch (ExceptionGetmessage d1) {
             try {
-              D.c("Protocol reported error on 2nd attempt after write 0x" + Integer.toHexString(d.a()) + ", waiting " + b + "ms and retry ");
-              a(b);
-              byte[] arrayOfByte = b(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
+              D.c("Protocol reported error on 2nd attempt after write 0x" + Integer.toHexString(ExceptionGetmessage.a()) + ", waiting " + VInterfaceBravo + "ms and retry ");
+              a(VInterfaceBravo);
+              byte[] arrayOfByte = VInterfaceBravo(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
               D.c("Protocol retry successful on 3rd try! ");
               return arrayOfByte;
-            } catch (d d2) {
+            } catch (ExceptionGetmessage d2) {
               D.c("Protocol retry FAILED!!! Failed 3 attempts, giving up.");
               d1.a(d1.getMessage() + ", 3 attempts made.");
-              d.b(3);
+              ExceptionGetmessage.VInterfaceBravo(3);
               throw d1;
             } 
           } 
         } 
-        if (cR.b(d.a())) {
-          D.a("Critical Protocol Error, going offline. " + d.toString());
+        if (cR.VInterfaceBravo(ExceptionGetmessage.a())) {
+          D.a("Critical Protocol Error, going offline. " + ExceptionGetmessage.toString());
           c();
-          if (d.b() != null) {
+          if (ExceptionGetmessage.VInterfaceBravo() != null) {
             a(true);
             String str = (e() != null) ? e().u() : "";
-            cQ.a().a(str, d.b());
+            cQ.a().a(str, ExceptionGetmessage.VInterfaceBravo());
             a(false);
           } 
-          throw d;
+          throw ExceptionGetmessage;
         } 
-        throw d;
+        throw ExceptionGetmessage;
       }  
     InputStream inputStream = i();
     return a(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm, inputStream);
@@ -1853,8 +1853,8 @@ public abstract class AbstractController implements Serializable {
   protected boolean a(ArrayList paramArrayList) {
     if (paramArrayList.size() > 14 && c.a(paramArrayList)) {
       byte[] arrayOfByte = this.X.a(paramArrayList.size());
-      for (byte b = 0; b < paramArrayList.size(); b++)
-        arrayOfByte[b] = ((Byte)paramArrayList.get(b)).byteValue(); 
+      for (byte VInterfaceBravo = 0; VInterfaceBravo < paramArrayList.size(); VInterfaceBravo++)
+        arrayOfByte[VInterfaceBravo] = ((Byte)paramArrayList.get(VInterfaceBravo)).byteValue(); 
       String str = new String(arrayOfByte);
       e(str);
       return true;
@@ -1876,10 +1876,10 @@ public abstract class AbstractController implements Serializable {
   }
   
   protected void a(m paramm, double paramDouble) {
-    paramm.b(paramDouble);
+    paramm.VInterfaceBravo(paramDouble);
   }
   
-  protected void f(String paramString) {
+  protected void SerializableImpl(String paramString) {
     this.Q = System.currentTimeMillis() + 10000000L;
     Iterator<cJ> iterator = this.v.iterator();
     while (iterator.hasNext())
@@ -1892,23 +1892,23 @@ public abstract class AbstractController implements Serializable {
   }
   
   public void a(aG paramaG) {
-    if (!this.b.contains(paramaG))
-      this.b.add(paramaG); 
+    if (!this.VInterfaceBravo.contains(paramaG))
+      this.VInterfaceBravo.add(paramaG); 
   }
   
   public void a(ad paramad) {
     this.w.add(paramad);
   }
   
-  public void b(aG paramaG) {
-    this.b.remove(paramaG);
+  public void VInterfaceBravo(aG paramaG) {
+    this.VInterfaceBravo.remove(paramaG);
   }
   
   public void a(aF paramaF) {
     this.q.add(paramaF);
   }
   
-  public void b(aF paramaF) {
+  public void VInterfaceBravo(aF paramaF) {
     this.r.add(paramaF);
   }
   
@@ -1918,24 +1918,24 @@ public abstract class AbstractController implements Serializable {
   }
   
   protected void a(String paramString, byte[] paramArrayOfbyte) {
-    for (byte b = 0; b < this.q.size(); b++) {
-      aF aF = this.q.get(b);
+    for (byte VInterfaceBravo = 0; VInterfaceBravo < this.q.size(); VInterfaceBravo++) {
+      aF aF = this.q.get(VInterfaceBravo);
       try {
         aF.a(paramString, paramArrayOfbyte);
       } catch (Exception exception) {
-        D.b("Exception during notifyOchRecived, finish remaining");
+        D.VInterfaceBravo("Exception during notifyOchRecived, finish remaining");
         Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       } 
     } 
   }
   
-  protected void b(String paramString, int paramInt) {
-    for (byte b = 0; b < this.s.size(); b++) {
-      aE aE = this.s.get(b);
+  protected void VInterfaceBravo(String paramString, int paramInt) {
+    for (byte VInterfaceBravo = 0; VInterfaceBravo < this.s.size(); VInterfaceBravo++) {
+      aE aE = this.s.get(VInterfaceBravo);
       try {
         aE.a(paramString, paramInt);
       } catch (Exception exception) {
-        D.b("Exception during notifyOchRecived, finish remaining");
+        D.VInterfaceBravo("Exception during notifyOchRecived, finish remaining");
         Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       } 
     } 
@@ -1943,7 +1943,7 @@ public abstract class AbstractController implements Serializable {
   
   protected boolean a(String paramString1, String paramString2, bT parambT) {
     boolean bool = true;
-    for (aG aG : this.b) {
+    for (aG aG : this.VInterfaceBravo) {
       try {
         if (!aG.a(paramString1, parambT)) {
           c();
@@ -1951,7 +1951,7 @@ public abstract class AbstractController implements Serializable {
           break;
         } 
       } catch (Exception exception) {
-        D.b("Exception while notifiying EcuOnlineListener of going online.\nlistener: " + aG);
+        D.VInterfaceBravo("Exception while notifiying EcuOnlineListener of going online.\nlistener: " + aG);
         Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       } 
     } 
@@ -1963,18 +1963,18 @@ public abstract class AbstractController implements Serializable {
       g(f1.u());
       f1.w(-1);
     } 
-    b(e().u(), e().u() + " Offline");
+    VInterfaceBravo(e().u(), e().u() + " Offline");
   }
   
   protected void g(String paramString) {
-    for (aG aG : this.b) {
+    for (aG aG : this.VInterfaceBravo) {
       try {
         aG.a(paramString);
       } catch (Exception exception) {}
     } 
   }
   
-  protected boolean b(String paramString, byte[] paramArrayOfbyte) {
+  protected boolean VInterfaceBravo(String paramString, byte[] paramArrayOfbyte) {
     for (aD aD : this.x) {
       if (!aD.a(paramString, paramArrayOfbyte))
         return false; 
@@ -1995,7 +1995,7 @@ public abstract class AbstractController implements Serializable {
       this.z.add(paramu); 
   }
   
-  protected void h(String paramString) {
+  protected void Abstract(String paramString) {
     for (u u : this.z)
       u.a(paramString); 
   }
@@ -2010,7 +2010,7 @@ public abstract class AbstractController implements Serializable {
   
   protected void i(String paramString) {
     for (aV aV : this.t)
-      aV.b(paramString); 
+      aV.VInterfaceBravo(paramString); 
   }
   
   protected void j(String paramString) {
@@ -2020,7 +2020,7 @@ public abstract class AbstractController implements Serializable {
   
   protected void k(String paramString) {
     for (aV aV : this.t)
-      aV.d(paramString); 
+      aV.ExceptionGetmessage(paramString); 
   }
   
   protected void l(String paramString) {
@@ -2033,7 +2033,7 @@ public abstract class AbstractController implements Serializable {
       synchronized (this.u) {
         for (g g : this.u) {
           if (g != null)
-            g.b(paramString, paramInt); 
+            g.VInterfaceBravo(paramString, paramInt); 
         } 
       } 
     } catch (Exception exception) {
@@ -2042,10 +2042,10 @@ public abstract class AbstractController implements Serializable {
     } 
   }
   
-  protected void d(String paramString, int paramInt) {
+  protected void ExceptionGetmessage(String paramString, int paramInt) {
     try {
       synchronized (this.u) {
-        F f1 = d(paramString);
+        F f1 = ExceptionGetmessage(paramString);
         if (f1 == null || f1.x(paramInt))
           for (g g : this.u) {
             if (g != null)
@@ -2059,12 +2059,12 @@ public abstract class AbstractController implements Serializable {
   }
   
   public boolean C() {
-    F f1 = d(L());
+    F f1 = ExceptionGetmessage(L());
     return (this.L >= 0 && (f1 == null || f1.x(this.L)));
   }
   
-  public h D() {
-    return (e().D() instanceof f) ? ((f)e().D()).d() : null;
+  public Abstract D() {
+    return (e().D() instanceof SerializableImpl) ? ((SerializableImpl)e().D()).ExceptionGetmessage() : null;
   }
   
   protected void a(String paramString, boolean paramBoolean) {
@@ -2079,9 +2079,9 @@ public abstract class AbstractController implements Serializable {
     Iterator<ad> iterator = this.w.iterator();
     while (iterator.hasNext()) {
       try {
-        ((ad)iterator.next()).b();
+        ((ad)iterator.next()).VInterfaceBravo();
       } catch (Exception exception) {
-        D.b("EcuDataSyncErrorListener had unhandled Exception, it was caught here.");
+        D.VInterfaceBravo("EcuDataSyncErrorListener had unhandled Exception, it was caught here.");
         Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       } 
     } 
@@ -2093,13 +2093,13 @@ public abstract class AbstractController implements Serializable {
       try {
         ((ad)iterator.next()).a();
       } catch (Exception exception) {
-        D.b("EcuDataSyncErrorListener had unhandled Exception, it was caught here.");
+        D.VInterfaceBravo("EcuDataSyncErrorListener had unhandled Exception, it was caught here.");
         Logger.getLogger(J.class.getName()).log(Level.INFO, (String)null, exception);
       } 
     } 
   }
   
-  protected void b(String paramString1, String paramString2) {
+  protected void VInterfaceBravo(String paramString1, String paramString2) {
     aB.a().a(paramString1, paramString2);
   }
   
@@ -2108,17 +2108,17 @@ public abstract class AbstractController implements Serializable {
       this.u.add(paramg); 
   }
   
-  public boolean b(g paramg) {
+  public boolean VInterfaceBravo(g paramg) {
     return this.u.remove(paramg);
   }
   
-  public void b(boolean paramBoolean) {
+  public void VInterfaceBravo(boolean paramBoolean) {
     this.H = paramBoolean;
   }
   
   public abstract boolean q();
   
-  protected void b(String paramString) {
+  protected void VInterfaceBravo(String paramString) {
     if (I()) {
       O o = new O(this);
       o.a(paramString);
@@ -2135,8 +2135,8 @@ public abstract class AbstractController implements Serializable {
     } 
   }
   
-  protected boolean d(int paramInt) {
-    byte b = 0;
+  protected boolean ExceptionGetmessage(int paramInt) {
+    byte VInterfaceBravo = 0;
     boolean bool1 = false;
     paramInt = (paramInt > 1000) ? 1000 : paramInt;
     boolean bool2 = false;
@@ -2148,7 +2148,7 @@ public abstract class AbstractController implements Serializable {
       byte[] arrayOfByte = null;
       this.E = false;
       boolean bool = false;
-      if (b) {
+      if (VInterfaceBravo) {
         try {
           if (((F)this.A.get(0)).D() != null) {
             cR cR = ((F)this.A.get(0)).D();
@@ -2156,14 +2156,14 @@ public abstract class AbstractController implements Serializable {
             f1.a(cR);
             f1.a(cV);
             if (cV != null)
-              ((F)this.A.get(0)).d(true); 
+              ((F)this.A.get(0)).ExceptionGetmessage(true); 
           } 
           boolean bool3 = false;
-          if (cP.a().b() != null)
+          if (cP.a().VInterfaceBravo() != null)
             try {
               if (i > 1) {
                 c.a().a(f1, i);
-                cP.a().b().a(this.ak, f1, f1.x());
+                cP.a().VInterfaceBravo().a(this.ak, f1, f1.x());
               } else {
                 bool3 = true;
               } 
@@ -2171,7 +2171,7 @@ public abstract class AbstractController implements Serializable {
               bool3 = true;
               if (I())
                 D.c("CommException during ProtocolInitialization of " + f1.u() + ": " + l.getLocalizedMessage()); 
-            } catch (b b1) {
+            } catch (VInterfaceBravo b1) {
               bool3 = true;
               if (I())
                 D.c("CommTimeoutException during ProtocolInitialization of " + f1.u() + ": " + b1.getLocalizedMessage()); 
@@ -2183,85 +2183,85 @@ public abstract class AbstractController implements Serializable {
               f1.H(((F)this.A.get(0)).ay()); 
           } 
           try {
-            arrayOfByte = b(f1.p().d(), paramInt);
-          } catch (d d) {}
+            arrayOfByte = VInterfaceBravo(f1.p().ExceptionGetmessage(), paramInt);
+          } catch (ExceptionGetmessage ExceptionGetmessage) {}
           if (arrayOfByte == null) {
-            f("Failed to communicate with Device :" + f1.u() + ", \ndisabling so other controllers can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
+            SerializableImpl("Failed to communicate with Device :" + f1.u() + ", \ndisabling so other controllers can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
             f1.n(true);
-            D.d("temporarily disabled CAN Device, signature is null.");
+            D.ExceptionGetmessage("temporarily disabled CAN Device, signature is null.");
           } 
         } catch (Exception exception) {
-          f("Failed to communicate with Device :" + f1.u() + ", \ndisabling so other controllers can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
-          D.d("temporarily disabled CAN Device, error trying to get signature.");
+          SerializableImpl("Failed to communicate with Device :" + f1.u() + ", \ndisabling so other controllers can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
+          D.ExceptionGetmessage("temporarily disabled CAN Device, error trying to get signature.");
           f1.n(true);
         } 
       } else {
         g(f1);
         boolean bool3 = f1.G();
-        f1.d(false);
+        f1.ExceptionGetmessage(false);
         try {
-          if (cP.a().b() != null) {
-            cP.a().b().a();
+          if (cP.a().VInterfaceBravo() != null) {
+            cP.a().VInterfaceBravo().a();
             try {
-              i = cP.a().b().a(this.ak);
+              i = cP.a().VInterfaceBravo().a(this.ak);
               if (i > 0)
                 this.E = true; 
               if (i > 1) {
                 c.a().a(f1, i);
-                cP.a().b().a(this.ak, f1, f1.x());
+                cP.a().VInterfaceBravo().a(this.ak, f1, f1.x());
               } 
-              f1.d(bool3);
+              f1.ExceptionGetmessage(bool3);
             } catch (l l) {
               if (I())
                 D.c("CommException during ProtocolInitialization: " + l.getLocalizedMessage()); 
-            } catch (b b1) {
+            } catch (VInterfaceBravo b1) {
               if (I())
                 D.c("CommTimeoutException during ProtocolInitialization: " + b1.getLocalizedMessage()); 
             } 
           } 
           try {
-            arrayOfByte = b(f1.p().d(), paramInt);
+            arrayOfByte = VInterfaceBravo(f1.p().ExceptionGetmessage(), paramInt);
             if (arrayOfByte != null && arrayOfByte.length > 0) {
               byte[] arrayOfByte1 = new byte[arrayOfByte.length];
               System.arraycopy(arrayOfByte, 0, arrayOfByte1, 0, arrayOfByte1.length);
               arrayOfByte = arrayOfByte1;
             } 
             bool2 = true;
-            f1.d(bool3);
-          } catch (d d) {
-            throw new b("Protocol Error communicating with main controller: " + d.getLocalizedMessage());
+            f1.ExceptionGetmessage(bool3);
+          } catch (ExceptionGetmessage ExceptionGetmessage) {
+            throw new VInterfaceBravo("Protocol Error communicating with main controller: " + ExceptionGetmessage.getLocalizedMessage());
           } 
-          if (cP.a().b() != null && !this.E)
+          if (cP.a().VInterfaceBravo() != null && !this.E)
             try {
-              int j = cP.a().b().a(this.ak);
+              int j = cP.a().VInterfaceBravo().a(this.ak);
               if (j > 0)
                 this.E = true; 
               if (j > 1)
-                cP.a().b().a(this.ak, f1, f1.x()); 
+                cP.a().VInterfaceBravo().a(this.ak, f1, f1.x()); 
             } catch (l l) {
               if (I())
                 D.c("CommException during ProtocolInitialization: " + l.getLocalizedMessage()); 
-            } catch (b b1) {
+            } catch (VInterfaceBravo b1) {
               if (I())
                 D.c("CommTimeoutException during ProtocolInitialization: " + b1.getLocalizedMessage()); 
             }  
         } finally {
-          f1.d(bool3);
+          f1.ExceptionGetmessage(bool3);
         } 
       } 
       if (!B())
         throw new cn("GoOnlineApprover rejected."); 
       if (bool)
-        D.d("Device Removed, no further interrogation."); 
-      if (!bool1 && b(arrayOfByte)) {
-        D.d("Sig Bytes:" + c.d(arrayOfByte));
+        D.ExceptionGetmessage("Device Removed, no further interrogation."); 
+      if (!bool1 && VInterfaceBravo(arrayOfByte)) {
+        D.ExceptionGetmessage("Sig Bytes:" + c.ExceptionGetmessage(arrayOfByte));
         String str = null;
         if (arrayOfByte.length == 1 && arrayOfByte[0] == 20)
           arrayOfByte = (arrayOfByte[0] + "").getBytes(); 
-        if (f1.q() != null && e().q().d() != null) {
+        if (f1.q() != null && e().q().ExceptionGetmessage() != null) {
           try {
             try {
-              byte[] arrayOfByte1 = b(f1.q().d(), paramInt);
+              byte[] arrayOfByte1 = VInterfaceBravo(f1.q().ExceptionGetmessage(), paramInt);
               if (arrayOfByte1 != null && arrayOfByte1.length == 2) {
                 int j = c.a(arrayOfByte1[0]);
                 int k = c.a(arrayOfByte1[1]);
@@ -2270,12 +2270,12 @@ public abstract class AbstractController implements Serializable {
               } else {
                 str = new String(arrayOfByte1);
                 str = X.k(str);
-                str = X.h(str);
+                str = X.Abstract(str);
               } 
-            } catch (d d) {
-              Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)d);
+            } catch (ExceptionGetmessage ExceptionGetmessage) {
+              Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionGetmessage);
             } 
-          } catch (b b1) {
+          } catch (VInterfaceBravo b1) {
             if (I())
               D.c("CommTimeoutException during versionInfo: " + b1.getLocalizedMessage()); 
             if (arrayOfByte != null && arrayOfByte.length > 0) {
@@ -2292,32 +2292,32 @@ public abstract class AbstractController implements Serializable {
         a(true);
         this.F = true;
         u();
-        bT bT = bT.b(arrayOfByte);
-        bT.b(str);
-        D.d("Communicating with sig:" + bT.b() + ", " + bT.c());
+        bT bT = bT.VInterfaceBravo(arrayOfByte);
+        bT.VInterfaceBravo(str);
+        D.ExceptionGetmessage("Communicating with sig:" + bT.VInterfaceBravo() + ", " + bT.c());
         if (!bool1)
           if (a(f1.u(), str, bT)) {
             this.E = true;
             cR cR = e().D();
             if (cR != null)
-              cR.d().a(); 
+              cR.ExceptionGetmessage().a(); 
             c(f1);
           } else {
             this.E = false;
             break;
           }  
         a(false);
-      } else if (arrayOfByte != null && c.c(f1.p().d(), arrayOfByte)) {
+      } else if (arrayOfByte != null && c.c(f1.p().ExceptionGetmessage(), arrayOfByte)) {
         bool2 = false;
       } else {
         bool2 = false;
         if (arrayOfByte != null && arrayOfByte.length > 0) {
           if (arrayOfByte.length > 1) {
-            D.b("Unsupported Controller Firmware: " + new String(arrayOfByte));
-            b(f1.u(), "Invalid data received from controller.");
+            D.VInterfaceBravo("Unsupported Controller Firmware: " + new String(arrayOfByte));
+            VInterfaceBravo(f1.u(), "Invalid data received from controller.");
           } 
-          if (b) {
-            f("Failed to communicate with Device :" + f1.u() + ", \ndisabling so we can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
+          if (VInterfaceBravo) {
+            SerializableImpl("Failed to communicate with Device :" + f1.u() + ", \ndisabling so we can go online.\nSetttings Changes Made to this controller during this session will not be sent\nas there is no communication with the controller.");
             iterator.remove();
           } else {
             return false;
@@ -2326,20 +2326,20 @@ public abstract class AbstractController implements Serializable {
           return false;
         } 
       } 
-      b++;
+      VInterfaceBravo++;
     } 
     return true;
   }
   
   protected boolean c(F paramF) {
     if (paramF.Q() != null && paramF.U() && p() && !paramF.W() && paramF.S() != null) {
-      m m = m.d(paramF);
+      m m = m.ExceptionGetmessage(paramF);
       try {
         c(m);
         int i = (int)paramF.S().a();
         a(i);
         paramF.i(true);
-        D.d("Activated Turbo Baud: " + i);
+        D.ExceptionGetmessage("Activated Turbo Baud: " + i);
         return true;
       } catch (l l) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, l);
@@ -2347,24 +2347,24 @@ public abstract class AbstractController implements Serializable {
       } 
     } 
     if (!paramF.U() && p() && paramF.W() && !paramF.T()) {
-      d(paramF);
+      ExceptionGetmessage(paramF);
       return false;
     } 
     return false;
   }
   
-  protected void d(F paramF) {
+  protected void ExceptionGetmessage(F paramF) {
     if (paramF.R() != null && p() && paramF.W()) {
       m m = m.e(paramF);
       try {
         c(m);
-        D.d("Deactivated Full Time Turbo Baud");
+        D.ExceptionGetmessage("Deactivated Full Time Turbo Baud");
       } catch (l l) {
         Logger.getLogger(J.class.getName()).log(Level.SEVERE, (String)null, l);
       } 
       int i = paramF.r();
       a(i);
-      D.d("Deactivated Turbo Baud, returned to: " + i);
+      D.ExceptionGetmessage("Deactivated Turbo Baud, returned to: " + i);
       paramF.i(false);
     } 
   }
@@ -2376,13 +2376,13 @@ public abstract class AbstractController implements Serializable {
         a(i);
         paramF.i(false);
         if (I())
-          D.d("Trying normal baud: " + i); 
+          D.ExceptionGetmessage("Trying normal baud: " + i); 
       } else {
         int i = (int)paramF.S().a();
         a(i);
         paramF.i(true);
         if (I())
-          D.d("Trying Turbo Baud: " + i); 
+          D.ExceptionGetmessage("Trying Turbo Baud: " + i); 
       }  
   }
   
@@ -2395,14 +2395,14 @@ public abstract class AbstractController implements Serializable {
   protected void G() {
     if (this.D <= 0 || I())
       return; 
-    D.d("------------------   Begin Historical Commands ---------------------------");
+    D.ExceptionGetmessage("------------------   Begin Historical Commands ---------------------------");
     Iterator<String> iterator = this.C.iterator();
     while (iterator.hasNext()) {
       String str = iterator.next();
       System.out.println(str);
       iterator.remove();
     } 
-    D.d("-------------------   End Historical Commands ----------------------------");
+    D.ExceptionGetmessage("-------------------   End Historical Commands ----------------------------");
   }
   
   protected void a(String paramString, int[] paramArrayOfint) {
@@ -2422,9 +2422,9 @@ public abstract class AbstractController implements Serializable {
     return k + ":" + X.a(j + "", '0', 2) + "." + X.a(i + "", '0', 3);
   }
   
-  public boolean b(byte[] paramArrayOfbyte) {
+  public boolean VInterfaceBravo(byte[] paramArrayOfbyte) {
     if (paramArrayOfbyte != null) {
-      bT bT = bT.b(paramArrayOfbyte);
+      bT bT = bT.VInterfaceBravo(paramArrayOfbyte);
       if (X.a().a(bT))
         return true; 
     } 
@@ -2438,9 +2438,9 @@ public abstract class AbstractController implements Serializable {
         boolean bool = O;
         for (bO bO : this.B) {
           if (A.i().c() != bO.a(l)) {
-            D.b("Firmware Validation failed, trying once more.");
+            D.VInterfaceBravo("Firmware Validation failed, trying once more.");
             if (A.i().c() != bO.a(l)) {
-              if (bO.b()) {
+              if (bO.VInterfaceBravo()) {
                 c();
                 D.a("Validation failed. Can not connect.");
               } else {
@@ -2482,16 +2482,16 @@ public abstract class AbstractController implements Serializable {
     return this.c;
   }
   
-  public void f(boolean paramBoolean) {
+  public void SerializableImpl(boolean paramBoolean) {
     this.c = paramBoolean;
   }
   
   protected String L() {
-    return this.f;
+    return this.SerializableImpl;
   }
   
   protected void o(String paramString) {
-    this.f = paramString;
+    this.SerializableImpl = paramString;
   }
   
   public void e(int paramInt) {
@@ -2502,7 +2502,7 @@ public abstract class AbstractController implements Serializable {
     return this.e;
   }
   
-  public synchronized void d(long paramLong) {
+  public synchronized void ExceptionGetmessage(long paramLong) {
     this.e = paramLong;
     D.c("Ignore runtime reads for: " + (paramLong - System.currentTimeMillis()));
     if (paramLong < System.currentTimeMillis())
@@ -2510,28 +2510,28 @@ public abstract class AbstractController implements Serializable {
   }
   
   public boolean N() {
-    return this.d;
+    return this.ExceptionGetmessage;
   }
   
   public void g(boolean paramBoolean) {
-    this.d = paramBoolean;
+    this.ExceptionGetmessage = paramBoolean;
   }
   
   private void u(m paramm) {
     o o = new o();
     byte[] arrayOfByte = c.a(paramm.p());
-    int i = (paramm.b() >= 0) ? paramm.b() : e().i();
+    int i = (paramm.VInterfaceBravo() >= 0) ? paramm.VInterfaceBravo() : e().i();
     try {
       String str = a(arrayOfByte, i);
       o.a(1);
       o.a(str);
-    } catch (b b) {
+    } catch (VInterfaceBravo VInterfaceBravo) {
       o.a(3);
       o.a("Timeout");
     } catch (Exception exception) {
       throw new l("Error Reading String \nReported Error: " + exception.getMessage());
     } 
-    paramm.b(o);
+    paramm.VInterfaceBravo(o);
   }
   
   protected abstract boolean p();

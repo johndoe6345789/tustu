@@ -1,8 +1,8 @@
 package G;
 
-import V.g;
-import V.i;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.VInterfaceIndia;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.I;
 import bH.X;
@@ -13,32 +13,32 @@ public class cE {
       try {
         if (paramaM.C())
           paramR.a(paramaM.aL(), paramString); 
-      } catch (g g) {
-        D.b("Attempt to set Parameter value, but not valid for current firmware: " + g.getMessage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.b("Attempt to set Parameter value, but not valid for current firmware: " + ExceptionPrintstacktrace.getMessage());
       } catch (Exception exception) {
-        throw new i("Error setting value: " + paramaM.aL() + " to value: " + paramString);
+        throw new VInterfaceIndia("Error setting value: " + paramaM.aL() + " to value: " + paramString);
       } 
-    } else if (paramaM != null && paramaM.i().equals("string")) {
+    } else if (paramaM != null && paramaM.VInterfaceIndia().equals("string")) {
       try {
         paramR.a(paramaM.aL(), paramString);
-      } catch (g g) {
-        D.b("Failed to set value for " + paramaM.aL() + " value is not valid for current configuration: " + g.getMessage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.b("Failed to set value for " + paramaM.aL() + " value is not valid for current configuration: " + ExceptionPrintstacktrace.getMessage());
       } 
     } else if (paramaM != null && paramString != null) {
-      int i = paramaM.a();
-      int j = paramaM.m();
-      double[][] arrayOfDouble = new double[i][j];
+      int VInterfaceIndia = paramaM.a();
+      int ExceptionExtensionGetmessage = paramaM.m();
+      double[][] arrayOfDouble = new double[VInterfaceIndia][ExceptionExtensionGetmessage];
       try {
-        if (paramaM != null && paramaM.C() && !paramaM.i().equals("string")) {
+        if (paramaM != null && paramaM.C() && !paramaM.VInterfaceIndia().equals("string")) {
           try {
             arrayOfDouble = X.a(arrayOfDouble, paramString);
           } catch (Exception exception) {
             if (!paramaM.aL().startsWith("UNALLOCATED_SPACE"))
-              throw new i("Invalid table data in Constant: " + paramaM.aL() + ", not loading values."); 
+              throw new VInterfaceIndia("Invalid table data in Constant: " + paramaM.aL() + ", not loading values."); 
           } 
           A a = paramaM.c();
           boolean bool = false;
-          if (paramaM.i().equals("array") && arrayOfDouble.length > 0 && a.b() > 0 && (arrayOfDouble.length != a.b() || (arrayOfDouble[0]).length != a.a()))
+          if (paramaM.VInterfaceIndia().equals("array") && arrayOfDouble.length > 0 && a.b() > 0 && (arrayOfDouble.length != a.b() || (arrayOfDouble[0]).length != a.a()))
             if (paramaM.P()) {
               bool = true;
               D.d("Unallocated memory changed, skip loading filler Constants.");
@@ -52,9 +52,9 @@ public class cE {
           if (!bool)
             paramR.a(paramaM.aL(), arrayOfDouble); 
         } 
-      } catch (g g) {
-        D.b("Failed to set value for " + paramaM.aL() + " value is not valid for current configuration: " + g.getMessage());
-      } catch (j j1) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.b("Failed to set value for " + paramaM.aL() + " value is not valid for current configuration: " + ExceptionPrintstacktrace.getMessage());
+      } catch (ExceptionExtensionGetmessage j1) {
         boolean bool1 = false;
         boolean bool2 = false;
         try {
@@ -62,7 +62,7 @@ public class cE {
             for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
               if (arrayOfDouble[b][b1] > paramaM.s()) {
                 if (!bool1) {
-                  if (bM.i(paramR, paramaM.aL()))
+                  if (bM.VInterfaceIndia(paramR, paramaM.aL()))
                     D.b(paramaM.aL() + " row:" + b + ", col:" + b1 + ", One or more value higher than maximum: " + arrayOfDouble[b][b1] + ", Set to the maximum value: " + paramaM.s()); 
                   bool1 = true;
                 } 
@@ -88,18 +88,18 @@ public class cE {
   
   public static String a(R paramR, aM paramaM) {
     try {
-      if (paramaM.i().equals("bits"))
+      if (paramaM.VInterfaceIndia().equals("bits"))
         return paramaM.f(paramR.p()); 
-      if (paramaM.i().equals("string"))
+      if (paramaM.VInterfaceIndia().equals("string"))
         return paramaM.d(paramR.p()); 
-      if (paramaM.i().equals("scalar") || paramaM.i().equals(ca.e) || paramaM.i().equals(ca.d)) {
-        double d = paramaM.j(paramR.p());
+      if (paramaM.VInterfaceIndia().equals("scalar") || paramaM.VInterfaceIndia().equals(ca.e) || paramaM.VInterfaceIndia().equals(ca.d)) {
+        double d = paramaM.ExceptionExtensionGetmessage(paramR.p());
         d = Math.round(d * 1.0E7D) / 1.0E7D;
         return d + "";
       } 
-      if (paramaM.i().equals("array")) {
+      if (paramaM.VInterfaceIndia().equals("array")) {
         String[][] arrayOfString = new String[paramaM.a()][paramaM.m()];
-        double[][] arrayOfDouble = paramaM.i(paramR.p());
+        double[][] arrayOfDouble = paramaM.VInterfaceIndia(paramR.p());
         for (byte b = 0; b < arrayOfDouble.length; b++) {
           for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
             double d = arrayOfDouble[b][b1];
@@ -109,8 +109,8 @@ public class cE {
         } 
         return X.a(arrayOfString);
       } 
-    } catch (g g) {
-      D.a(g.getLocalizedMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.a(ExceptionPrintstacktrace.getLocalizedMessage());
     } 
     return null;
   }

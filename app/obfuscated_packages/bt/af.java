@@ -1,22 +1,22 @@
 package bt;
 
-import aH.a;
-import aH.d;
+import aH.AhInterfaceAlpha;
+import aH.AhInterfaceDelta;
 import bH.D;
 import java.util.List;
 import javax.swing.SwingUtilities;
 
-class af implements d {
+class af implements AhInterfaceDelta {
   af(ac paramac) {}
   
-  public void a(List paramList) {
-    for (a a : paramList) {
-      ae ae = ac.a(this.a, a.b());
+  public void AhInterfaceAlpha(List paramList) {
+    for (AhInterfaceAlpha AhInterfaceAlpha : paramList) {
+      ae ae = ac.AhInterfaceAlpha(this.AhInterfaceAlpha, AhInterfaceAlpha.b());
       if (ae != null) {
-        ae.a(a);
+        ae.AhInterfaceAlpha(AhInterfaceAlpha);
         continue;
       } 
-      D.b("No wrapper found for CAN ID: " + a.b());
+      D.b("No wrapper found for CAN ID: " + AhInterfaceAlpha.b());
     } 
     ag ag = new ag(this);
     SwingUtilities.invokeLater(ag);

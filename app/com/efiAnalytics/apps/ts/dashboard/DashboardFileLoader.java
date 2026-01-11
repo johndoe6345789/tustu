@@ -1,70 +1,70 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
-import com.efiAnalytics.ui.a;
+import com.efiAnalytics.ui.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
-import r.b;
-import r.j;
-import v.c;
+import r.JPanelExtensionInRPackage;
+import r.ThreadedFile;
+import v.IOInVPackage;
 
-class DashboardFileLoader implements a {
-  private b b = null;
+class DashboardFileLoader implements ExceptionInVPackage {
+  private JPanelExtensionInRPackage JPanelExtensionInRPackage = null;
   
-  private String[] c = null;
+  private String[] IOInVPackage = null;
   
-  DashboardFileLoader(x paramx, b paramb, String[] paramArrayOfString) {
-    this.b = paramb;
-    this.c = paramArrayOfString;
+  DashboardFileLoader(x paramx, JPanelExtensionInRPackage paramb, String[] paramArrayOfString) {
+    this.JPanelExtensionInRPackage = paramb;
+    this.IOInVPackage = paramArrayOfString;
   }
   
-  public boolean a() {
+  public boolean ExceptionInVPackage() {
     d();
-    if (this.a.ad() != null)
-      this.a.h(); 
+    if (this.ExceptionInVPackage.ad() != null)
+      this.ExceptionInVPackage.h(); 
     return true;
   }
   
-  public void b() {}
+  public void JPanelExtensionInRPackage() {}
   
-  public void c() {
+  public void IOInVPackage() {
     d();
-    if (this.a.ad() != null)
-      this.a.h(); 
+    if (this.ExceptionInVPackage.ad() != null)
+      this.ExceptionInVPackage.h(); 
   }
   
   private void d() {
     try {
-      c c = new c(j.G());
+      IOInVPackage IOInVPackage = new IOInVPackage(ThreadedFile.G());
       Z z = null;
-      z = c.a(this.b.b().getAbsolutePath());
-      if (this.b.c() && !a(z.d())) {
-        String str = this.c[0];
-        for (byte b1 = 1; b1 < this.c.length; b1++)
-          str = str + " or " + this.c[b1]; 
-        boolean bool = bV.a("Warning: Gauge Cluster firmware signature (" + z.d() + ")\ndoes not match current firmware (" + str + ").\nYou may need to reset gauge output channels.\n \nContinue Loading?", this.a.getParent(), true);
+      z = IOInVPackage.ExceptionInVPackage(this.JPanelExtensionInRPackage.JPanelExtensionInRPackage().getAbsolutePath());
+      if (this.JPanelExtensionInRPackage.IOInVPackage() && !ExceptionInVPackage(z.d())) {
+        String str = this.IOInVPackage[0];
+        for (byte b1 = 1; b1 < this.IOInVPackage.length; b1++)
+          str = str + " or " + this.IOInVPackage[b1]; 
+        boolean bool = bV.ExceptionInVPackage("Warning: Gauge Cluster firmware signature (" + z.d() + ")\ndoes not match current firmware (" + str + ").\nYou may need to reset gauge output channels.\n \nContinue Loading?", this.ExceptionInVPackage.getParent(), true);
         if (!bool)
           return; 
       } 
-      z.b(this.c[0]);
-      String[] arrayOfString = T.a().d();
-      z = ab.a(arrayOfString, z);
-      G.R r = this.a.k;
+      z.JPanelExtensionInRPackage(this.IOInVPackage[0]);
+      String[] arrayOfString = T.ExceptionInVPackage().d();
+      z = ab.ExceptionInVPackage(arrayOfString, z);
+      G.R r = this.ExceptionInVPackage.k;
       if (r != null)
-        (new aa()).b(r, z); 
-      this.a.a(z);
-      this.a.d(this.b.g());
-      x.k(this.a);
-      x.d(this.a, false);
-    } catch (a a1) {
-      D.a("Unable to load dash file:\n" + this.b.b(), (Exception)a1, this.a.getParent());
+        (new aa()).JPanelExtensionInRPackage(r, z); 
+      this.ExceptionInVPackage.ExceptionInVPackage(z);
+      this.ExceptionInVPackage.d(this.JPanelExtensionInRPackage.g());
+      x.k(this.ExceptionInVPackage);
+      x.d(this.ExceptionInVPackage, false);
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage("Unable to load dash file:\n" + this.JPanelExtensionInRPackage.JPanelExtensionInRPackage(), (Exception)a1, this.ExceptionInVPackage.getParent());
     } 
   }
   
-  private boolean a(String paramString) {
-    for (byte b1 = 0; b1 < this.c.length; b1++) {
-      if (this.c[b1].equals(paramString))
+  private boolean ExceptionInVPackage(String paramString) {
+    for (byte b1 = 0; b1 < this.IOInVPackage.length; b1++) {
+      if (this.IOInVPackage[b1].equals(paramString))
         return true; 
     } 
     return false;

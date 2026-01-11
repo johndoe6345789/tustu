@@ -1,10 +1,10 @@
 package ao;
 
 import W.j;
-import ar.c;
-import ar.f;
-import h.g;
-import h.i;
+import ar.ArComponentCharlie;
+import ar.ArComponentFoxtrot;
+import h.PropertiesExtensionInHPackage;
+import h.IOProperties;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,16 +14,16 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class A implements bn {
   ArrayList a = new ArrayList();
   
-  int b = i.a("numberOfGraphs", i.t);
+  int b = IOProperties.a("numberOfGraphs", IOProperties.t);
   
-  int c = i.a("numberOfOverlays", i.u);
+  int ArComponentCharlie = IOProperties.a("numberOfOverlays", IOProperties.u);
   
   HashMap d = new HashMap<>();
   
   B e = new B(this);
   
   public A() {
-    f.a().a(new C(this));
+    ArComponentFoxtrot.a().a(new C(this));
   }
   
   protected void a(String paramString1, String paramString2, int paramInt) {
@@ -37,12 +37,12 @@ public class A implements bn {
   }
   
   private List a(int paramInt) {
-    String str = c(paramInt);
+    String str = ArComponentCharlie(paramInt);
     List<B> list = (List)this.d.get(str);
     if (list == null)
       list = new CopyOnWriteArrayList(); 
     if (list.isEmpty()) {
-      for (byte b = 0; b < this.c; b++)
+      for (byte b = 0; b < this.ArComponentCharlie; b++)
         list.add(this.e); 
       this.d.put(str, list);
     } 
@@ -51,17 +51,17 @@ public class A implements bn {
   
   private int b(int paramInt) {
     List<B> list = a(paramInt);
-    for (byte b = 0; b < this.c; b++) {
+    for (byte b = 0; b < this.ArComponentCharlie; b++) {
       if (b >= list.size() || ((B)list.get(b)).a())
         return b; 
     } 
     return -1;
   }
   
-  private int c() {
+  private int ArComponentCharlie() {
     for (byte b = 0; b < this.b; b++) {
       List<B> list = a(b);
-      for (byte b1 = 0; b1 < this.c; b1++) {
+      for (byte b1 = 0; b1 < this.ArComponentCharlie; b1++) {
         if (b1 >= list.size() || ((B)list.get(b1)).a())
           return b; 
       } 
@@ -69,7 +69,7 @@ public class A implements bn {
     return -1;
   }
   
-  private String c(int paramInt) {
+  private String ArComponentCharlie(int paramInt) {
     return "graph" + paramInt;
   }
   
@@ -82,33 +82,33 @@ public class A implements bn {
   }
   
   public Color a(String paramString, Color paramColor) {
-    int i = c();
-    return (i >= 0) ? a(paramString, paramColor, i) : null;
+    int IOProperties = ArComponentCharlie();
+    return (IOProperties >= 0) ? a(paramString, paramColor, IOProperties) : null;
   }
   
   public Color a(String paramString, Color paramColor, int paramInt) {
-    int i;
-    for (i = b(paramInt); i < 0 && ++paramInt < this.b; i = b(paramInt));
-    return a(paramString, paramColor, paramInt, i);
+    int IOProperties;
+    for (IOProperties = b(paramInt); IOProperties < 0 && ++paramInt < this.b; IOProperties = b(paramInt));
+    return a(paramString, paramColor, paramInt, IOProperties);
   }
   
   public Color a(String paramString, Color paramColor, int paramInt1, int paramInt2) {
     if (paramInt1 == -1)
       paramInt1 = this.b - 1; 
-    if (paramInt2 == -1 || paramInt2 >= this.c)
-      paramInt2 = this.c - 1; 
+    if (paramInt2 == -1 || paramInt2 >= this.ArComponentCharlie)
+      paramInt2 = this.ArComponentCharlie - 1; 
     if (paramColor == null) {
       paramColor = aV.a().a(paramInt1, paramInt2);
     } else {
       aV.a().a(paramColor, paramInt1, paramInt2);
     } 
-    String str = c(paramInt1);
+    String str = ArComponentCharlie(paramInt1);
     j j = hx.a().r().a(paramString);
     a(str, j, paramInt2);
     a(paramString, a(paramInt1, paramInt2));
     List<B> list = a(paramInt1);
     B b = new B(this);
-    b.c = paramString;
+    b.ArComponentCharlie = paramString;
     b.a = paramInt1;
     b.b = paramInt2;
     list.set(paramInt2, b);
@@ -118,11 +118,11 @@ public class A implements bn {
   public void b(String paramString) {
     for (byte b = 0; b < this.b; b++) {
       List<B> list = a(b);
-      for (byte b1 = 0; b1 < this.c; b1++) {
-        if (b1 < list.size() && list.get(b1) != null && ((B)list.get(b1)).c.equals(paramString)) {
+      for (byte b1 = 0; b1 < this.ArComponentCharlie; b1++) {
+        if (b1 < list.size() && list.get(b1) != null && ((B)list.get(b1)).ArComponentCharlie.equals(paramString)) {
           list.set(b1, this.e);
           a(" ", a(b, b1));
-          a(c(b), paramString, b1);
+          a(ArComponentCharlie(b), paramString, b1);
         } 
       } 
     } 
@@ -142,22 +142,22 @@ public class A implements bn {
     for (String str1 : arrayOfString) {
       List list = (List)this.d.get(str1);
       for (B b1 : list)
-        b(b1.c); 
+        b(b1.ArComponentCharlie); 
     } 
     this.d.clear();
-    String str = f.a().g();
-    c c = null;
+    String str = ArComponentFoxtrot.a().PropertiesExtensionInHPackage();
+    ArComponentCharlie ArComponentCharlie = null;
     if (str != null)
-      c = f.a().c(str); 
-    if (c == null || hx.r() == null)
+      ArComponentCharlie = ArComponentFoxtrot.a().ArComponentCharlie(str); 
+    if (ArComponentCharlie == null || hx.r() == null)
       return; 
     for (byte b = 0; b < this.b; b++) {
-      for (byte b1 = 0; b1 < this.c; b1++) {
+      for (byte b1 = 0; b1 < this.ArComponentCharlie; b1++) {
         String str1 = "graph" + b + "." + b1;
-        String str2 = c.c(str1);
+        String str2 = ArComponentCharlie.ArComponentCharlie(str1);
         if (!str2.equals(" ")) {
           if (str2.indexOf("Field.") != -1)
-            str2 = g.a().a(str2); 
+            str2 = PropertiesExtensionInHPackage.a().a(str2); 
           if (hx.r().a(str2) != null)
             a(str2, null, b, b1); 
         } 
@@ -167,7 +167,7 @@ public class A implements bn {
   
   protected void a(String paramString1, String paramString2) {
     j j = hx.a().r().a(paramString1);
-    String str = g.a().e(paramString1);
+    String str = PropertiesExtensionInHPackage.a().e(paramString1);
     if (str != null && !str.equals(""))
       paramString1 = "Field." + str; 
     bm.a().a(paramString2, j);
@@ -180,12 +180,12 @@ public class A implements bn {
   public void b() {
     for (byte b = 0; b < this.b; b++) {
       List<B> list = a(b);
-      for (byte b1 = 0; b1 < this.c; b1++) {
+      for (byte b1 = 0; b1 < this.ArComponentCharlie; b1++) {
         if (b1 < list.size() && list.get(b1) != null) {
-          String str = ((B)list.get(b1)).c;
+          String str = ((B)list.get(b1)).ArComponentCharlie;
           list.set(b1, this.e);
           a(" ", a(b, b1));
-          a(c(b), str, b1);
+          a(ArComponentCharlie(b), str, b1);
         } 
       } 
     } 

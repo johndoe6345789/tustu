@@ -3,9 +3,9 @@ package aP;
 import G.R;
 import G.bv;
 import java.awt.Window;
-import n.l;
+import n.NInterfaceLima;
 
-class ia implements l {
+class ia implements NInterfaceLima {
   ia(hO paramhO) {}
   
   public void a(R paramR, bv parambv, Window paramWindow) {

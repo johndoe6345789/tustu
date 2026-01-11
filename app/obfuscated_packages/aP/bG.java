@@ -4,7 +4,7 @@ import W.aj;
 import W.ak;
 import W.d;
 import W.z;
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cn;
 import java.awt.BorderLayout;
@@ -23,10 +23,10 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import r.a;
+import r.PropertiesExtension;
 
 public class bG extends JDialog {
-  cn a = new cn();
+  cn PropertiesExtension = new cn();
   
   cn b = new cn();
   
@@ -47,13 +47,13 @@ public class bG extends JDialog {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add("West", new JLabel("Input File:"));
-    jPanel1.add("Center", (Component)this.a);
+    jPanel1.add("Center", (Component)this.PropertiesExtension);
     JButton jButton1 = new JButton("Select Input");
     jButton1.addActionListener(new bH(this));
     jPanel1.add("East", jButton1);
-    if (a.A() != null) {
-      String str = a.A().v();
-      this.a.a(str);
+    if (PropertiesExtension.A() != null) {
+      String str = PropertiesExtension.A().v();
+      this.PropertiesExtension.PropertiesExtension(str);
     } 
     add(jPanel1);
     JPanel jPanel2 = new JPanel();
@@ -82,28 +82,28 @@ public class bG extends JDialog {
     add(jPanel4);
   }
   
-  public void a() {
+  public void PropertiesExtension() {
     String[] arrayOfString = { "" };
     String str1 = ".";
-    if (this.a.a() != null && !this.a.a().isEmpty())
-      str1 = (new File(this.a.a())).getParentFile().getAbsolutePath(); 
-    String str2 = a.a().c("encryptDialogDirIn", str1);
-    String str3 = bV.a(this, "Select Input", arrayOfString, "", str2, true);
+    if (this.PropertiesExtension.PropertiesExtension() != null && !this.PropertiesExtension.PropertiesExtension().isEmpty())
+      str1 = (new File(this.PropertiesExtension.PropertiesExtension())).getParentFile().getAbsolutePath(); 
+    String str2 = PropertiesExtension.PropertiesExtension().c("encryptDialogDirIn", str1);
+    String str3 = bV.PropertiesExtension(this, "Select Input", arrayOfString, "", str2, true);
     if (str3 != null && !str3.isEmpty())
-      a.a().b("encryptDialogDirIn", (new File(str3)).getParent()); 
-    this.a.a(str3);
+      PropertiesExtension.PropertiesExtension().b("encryptDialogDirIn", (new File(str3)).getParent()); 
+    this.PropertiesExtension.PropertiesExtension(str3);
   }
   
   public void b() {
     String[] arrayOfString = { "" };
     String str1 = ".";
-    if (this.a.a() != null && !this.a.a().isEmpty())
-      str1 = (new File(this.a.a())).getParentFile().getAbsolutePath(); 
-    String str2 = a.a().c("encryptDialogDir", str1);
-    String str3 = bV.a(this, "Select Output", arrayOfString, "", str2, false);
+    if (this.PropertiesExtension.PropertiesExtension() != null && !this.PropertiesExtension.PropertiesExtension().isEmpty())
+      str1 = (new File(this.PropertiesExtension.PropertiesExtension())).getParentFile().getAbsolutePath(); 
+    String str2 = PropertiesExtension.PropertiesExtension().c("encryptDialogDir", str1);
+    String str3 = bV.PropertiesExtension(this, "Select Output", arrayOfString, "", str2, false);
     if (str3 != null && !str3.isEmpty())
-      a.a().b("encryptDialogDir", (new File(str3)).getParent()); 
-    this.b.a(str3);
+      PropertiesExtension.PropertiesExtension().b("encryptDialogDir", (new File(str3)).getParent()); 
+    this.b.PropertiesExtension(str3);
   }
   
   private boolean c() {
@@ -129,7 +129,7 @@ public class bG extends JDialog {
   }
   
   private void d() {
-    File file1 = new File(this.a.a());
+    File file1 = new File(this.PropertiesExtension.PropertiesExtension());
     if (!file1.exists()) {
       bV.d("Must Select an Input File", this);
       return;
@@ -142,12 +142,12 @@ public class bG extends JDialog {
     if (ak.b(file1)) {
       byte b = 0;
       while (arrayOfByte == null && b++ < 3) {
-        String str = a("Enter the password for the Encrypted Input File:");
+        String str = PropertiesExtension("Enter the password for the Encrypted Input File:");
         if (str == null)
           return; 
         ak ak = new ak();
         try {
-          arrayOfByte = ak.a(file1, str);
+          arrayOfByte = ak.PropertiesExtension(file1, str);
         } catch (FileNotFoundException fileNotFoundException) {
           bV.d("Input File not found.", this);
           return;
@@ -161,7 +161,7 @@ public class bG extends JDialog {
       } 
     } else {
       try {
-        arrayOfByte = d.a(file1);
+        arrayOfByte = d.PropertiesExtension(file1);
       } catch (FileNotFoundException fileNotFoundException) {
         bV.d("Input File not found.", this);
         return;
@@ -171,7 +171,7 @@ public class bG extends JDialog {
         return;
       } 
     } 
-    File file2 = new File(this.b.a());
+    File file2 = new File(this.b.PropertiesExtension());
     if (file2.exists())
       file2.delete(); 
     try {
@@ -182,14 +182,14 @@ public class bG extends JDialog {
       return;
     } 
     if (this.c.isSelected()) {
-      String str1 = z.a(file1);
+      String str1 = z.PropertiesExtension(file1);
       double d = z.c(file1);
       ak ak = new ak();
       String str2 = new String(this.d.getPassword());
       if (!str2.isEmpty()) {
         String str;
         do {
-          str = a("Validate Output File Password:");
+          str = PropertiesExtension("Validate Output File Password:");
           if (str == null)
             return; 
           if (str.equals(str2))
@@ -198,7 +198,7 @@ public class bG extends JDialog {
         } while (!str.equals(str2));
       } 
       try {
-        ak.a(arrayOfByte, file2, str2, str1, d);
+        ak.PropertiesExtension(arrayOfByte, file2, str2, str1, d);
         bV.d("Encrypted file written to:\n" + file2.getAbsolutePath(), this);
       } catch (IOException iOException) {
         Logger.getLogger(bG.class.getName()).log(Level.SEVERE, (String)null, iOException);
@@ -206,7 +206,7 @@ public class bG extends JDialog {
       } 
     } else {
       try {
-        d.a(file2, arrayOfByte);
+        d.PropertiesExtension(file2, arrayOfByte);
         bV.d("Unencrypted file written to:\n" + file2.getAbsolutePath(), this);
       } catch (IOException iOException) {
         bV.d("Unable to Write Output File.\n" + iOException.getMessage(), this);
@@ -215,15 +215,15 @@ public class bG extends JDialog {
     } 
   }
   
-  private String a(String paramString) {
-    return bV.a(this, paramString);
+  private String PropertiesExtension(String paramString) {
+    return bV.PropertiesExtension(this, paramString);
   }
   
-  public static void a(Frame paramFrame) {
+  public static void PropertiesExtension(Frame paramFrame) {
     bG bG1 = new bG(paramFrame);
     bG1.pack();
     bG1.setSize(800, bG1.getHeight());
-    bV.a(paramFrame, bG1);
+    bV.PropertiesExtension(paramFrame, bG1);
     bG1.setVisible(true);
   }
 }

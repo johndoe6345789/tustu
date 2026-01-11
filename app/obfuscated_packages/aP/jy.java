@@ -1,17 +1,17 @@
 package aP;
 
-import ay.c;
-import bA.e;
+import ay.AyInterfaceCharlie;
+import bA.JMenuItemExtensionInBaPackage;
 
-class jy extends e {
-  private c b;
+class jy extends JMenuItemExtensionInBaPackage {
+  private AyInterfaceCharlie b;
   
-  jy(ju paramju, String paramString, c paramc) {
+  jy(ju paramju, String paramString, AyInterfaceCharlie paramc) {
     super(paramString, true);
     this.b = paramc;
   }
   
-  public c a() {
+  public AyInterfaceCharlie a() {
     return this.b;
   }
 }

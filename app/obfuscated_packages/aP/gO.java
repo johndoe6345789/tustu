@@ -1,16 +1,16 @@
 package aP;
 
-import bA.e;
-import bq.a;
+import bA.JMenuItemExtensionInBaPackage;
+import bq.BqInterfaceAlpha;
 import java.io.File;
 import java.util.ArrayList;
 import javax.swing.JMenuItem;
-import r.n;
-import s.g;
+import r.RComponentNovember;
+import s.SComponentGolf;
 
-class gO extends a {
+class gO extends BqInterfaceAlpha {
   gO(dB paramdB) {
-    super(g.b("Recent Vehicle Projects"));
+    super(SComponentGolf.b("Recent Vehicle Projects"));
   }
   
   public void setPopupMenuVisible(boolean paramBoolean) {
@@ -23,15 +23,15 @@ class gO extends a {
   }
   
   private void j() {
-    ArrayList arrayList = (new n()).a();
+    ArrayList arrayList = (new RComponentNovember()).BqInterfaceAlpha();
     if (arrayList.size() > 0)
       for (String str1 : arrayList) {
         String str2 = str1.substring(str1.lastIndexOf(File.separator) + 1);
-        e e = new e();
-        e.setText(str2);
-        e.setActionCommand(str1);
-        e.addActionListener(new gP(this));
-        add((JMenuItem)e);
+        JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage();
+        JMenuItemExtensionInBaPackage.setText(str2);
+        JMenuItemExtensionInBaPackage.setActionCommand(str1);
+        JMenuItemExtensionInBaPackage.addActionListener(new gP(this));
+        add((JMenuItem)JMenuItemExtensionInBaPackage);
       }  
   }
 }

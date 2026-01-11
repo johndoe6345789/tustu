@@ -2,13 +2,13 @@ package aP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class hA implements ActionListener {
   hA(hz paramhz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a.a().b(a.bT, Boolean.toString(this.a.a.isSelected()));
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bT, Boolean.toString(this.IOPropertiesUsingFile.IOPropertiesUsingFile.isSelected()));
   }
 }
 

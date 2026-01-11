@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import V.a;
+import V.ExceptionInVPackage;
 import ak.aE;
 import bH.D;
 import bH.I;
@@ -56,7 +56,7 @@ import javax.swing.table.TableColumnModel;
 public class BinTableView extends JTable implements ClipboardOwner, HierarchyListener {
   private int D = 11;
   
-  int a = 0;
+  int ExceptionInVPackage = 0;
   
   int b = 0;
   
@@ -191,7 +191,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       this.L = 5; 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (I()) {
       String str1 = d("History Trace Length");
       if (str1 != null && !str1.equals("")) {
@@ -202,7 +202,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = d("Smooth Cells - Key: s");
     if (str != null && !str.equals("")) {
       float f = Float.parseFloat(str);
-      a(f);
+      ExceptionInVPackage(f);
     } 
     str = d("Set increment amount");
     if (str != null && !str.equals("")) {
@@ -228,7 +228,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       String str = (String)this.T.get(paramString);
       if (str != null)
         return str; 
-      str = this.O.a(paramString);
+      str = this.O.ExceptionInVPackage(paramString);
       this.T.put(paramString, str);
       return str;
     } 
@@ -239,12 +239,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return ((getSelectedRows()).length <= 1 && (getSelectedColumns()).length <= 1 && g());
   }
   
-  public void a(int paramInt) {
-    this.a = paramInt;
+  public void ExceptionInVPackage(int paramInt) {
+    this.ExceptionInVPackage = paramInt;
   }
   
   public int b() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
   public void b(int paramInt) {
@@ -276,7 +276,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         s s = (s)getModel();
         Double double_ = s.d(i, j);
         if (double_ != null) {
-          str = str + X.c(double_.doubleValue(), this.a) + "\t";
+          str = str + X.c(double_.doubleValue(), this.ExceptionInVPackage) + "\t";
         } else {
           str = str + "\t";
         } 
@@ -300,12 +300,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (str == null)
       return; 
     aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.a(); i++) {
+    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
       aE aE1 = new aE(aE.b(), "\t");
-      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.a(); j++) {
+      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
-          if (I.a(str1))
+          if (I.ExceptionInVPackage(str1))
             s.setValueAt(new Double(str1), i, j); 
         } catch (Exception exception) {
           System.out.println("bad Double " + str1);
@@ -324,12 +324,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (str == null)
       return; 
     aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.a(); i++) {
+    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
       aE aE1 = new aE(aE.b(), "\t");
-      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.a(); j++) {
+      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
-          if (I.a(str1)) {
+          if (I.ExceptionInVPackage(str1)) {
             Double double_ = s.d(i, j);
             double d = Double.valueOf(str1).doubleValue() / 100.0D;
             if (d > -1.0D && d < 1.0D)
@@ -355,12 +355,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (str == null)
       return; 
     aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.a(); i++) {
+    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
       aE aE1 = new aE(aE.b(), "\t");
-      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.a(); j++) {
+      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
-          if (I.a(str1)) {
+          if (I.ExceptionInVPackage(str1)) {
             Double double_ = s.d(i, j);
             double d = Double.valueOf(str1).doubleValue();
             s.setValueAt(Double.valueOf(double_.doubleValue() * d), i, j);
@@ -384,12 +384,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (str == null)
       return; 
     aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.a(); i++) {
+    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
       aE aE1 = new aE(aE.b(), "\t");
-      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.a(); j++) {
+      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
-          if (I.a(str1)) {
+          if (I.ExceptionInVPackage(str1)) {
             Double double_ = s.d(i, j);
             double d = Double.valueOf(str1).doubleValue();
             s.setValueAt(Double.valueOf(double_.doubleValue() + d), i, j);
@@ -413,12 +413,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (str == null)
       return; 
     aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.a(); i++) {
+    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
       aE aE1 = new aE(aE.b(), "\t");
-      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.a(); j++) {
+      for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
-          if (I.a(str1)) {
+          if (I.ExceptionInVPackage(str1)) {
             Double double_ = s.d(i, j);
             double d = Double.valueOf(str1).doubleValue();
             s.setValueAt(Double.valueOf(double_.doubleValue() - d), i, j);
@@ -438,9 +438,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     try {
       str = this.k.getData(DataFlavor.stringFlavor).toString();
     } catch (UnsupportedFlavorException|java.io.IOException unsupportedFlavorException) {
-      String str1 = "Clipboard data not a valid table copy";
+      String str1 = "Clipboard data not ExceptionInVPackage valid table copy";
       bV.d(str1, this);
-      D.a(str1, unsupportedFlavorException);
+      D.ExceptionInVPackage(str1, unsupportedFlavorException);
       return null;
     } 
     if (str == null || str.trim().isEmpty()) {
@@ -506,7 +506,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       Double double_ = s.d(paramInt1, paramInt2);
       double d1 = Double.isNaN(this.J) ? s.A() : this.J;
       double d2 = Double.isNaN(this.I) ? s.B() : this.I;
-      Color color = fh.a(double_.doubleValue(), d1, d2);
+      Color color = fh.ExceptionInVPackage(double_.doubleValue(), d1, d2);
       R().setBackground(color);
       R().setForeground(Color.black);
       if (arrayOfB != null && R() != null) {
@@ -541,7 +541,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         double d3 = (this.j - paramInt2 >= 0.0D) ? Math.abs(this.j - paramInt2 - 1.0D) : Math.abs(1.0D + this.j - paramInt2);
         double d4 = (this.i - paramInt1 >= 0.0D) ? Math.abs(this.i - paramInt1 - 1.0D) : Math.abs(1.0D + this.i - paramInt1);
         double d5 = (d3 == 0.0D || d4 == 0.0D) ? 0.005D : (d3 * d4);
-        if (!fh.a()) {
+        if (!fh.ExceptionInVPackage()) {
           byte b1 = (color.getRed() > 128) ? (color.getRed() - 128) : 0;
           byte b2 = (color.getGreen() > 128) ? (color.getGreen() - 128) : 0;
           byte b3 = (color.getBlue() > 128) ? (color.getBlue() - 128) : 0;
@@ -557,7 +557,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
           color = new Color((int)(i * (1.0D - d5)), (int)(j * (1.0D - d5)), (int)(c + (255 - c) * d5));
         } 
         R().setBackground(color);
-        if (fh.a() && d5 >= 0.5D) {
+        if (fh.ExceptionInVPackage() && d5 >= 0.5D) {
           R().setForeground(Color.WHITE);
           bool = true;
         } 
@@ -593,8 +593,8 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         } else if (d > P() * 0.5D) {
           R().setForeground(new Color(0, 0, 220));
         } 
-      } else if (!bool && arrayOfB != null && double_.doubleValue() != arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].a()) {
-        double d = double_.doubleValue() - arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].a();
+      } else if (!bool && arrayOfB != null && double_.doubleValue() != arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].ExceptionInVPackage()) {
+        double d = double_.doubleValue() - arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].ExceptionInVPackage();
         if (d < 0.0D && Math.abs(d) > P() * 0.5D) {
           if (color.getRed() < 255 || color.getGreen() > 115) {
             R().setForeground(new Color(225, 0, 0));
@@ -610,7 +610,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       if (arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].k() == 0.0D) {
         color = Color.white;
       } else {
-        color = V().a(arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].k());
+        color = V().ExceptionInVPackage(arrayOfB[arrayOfB.length - paramInt1 - 1][paramInt2].k());
       } 
       R().setBackground(color);
       R().setForeground(Color.black);
@@ -681,7 +681,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     jTableHeader.setResizingAllowed(false);
     jTableHeader.setAlignmentX(0.5F);
     aG aG = new aG(this, this);
-    aG.setFont(new Font("Arial Unicode MS", 0, eJ.a(12)));
+    aG.setFont(new Font("Arial Unicode MS", 0, eJ.ExceptionInVPackage(12)));
     jTableHeader.setDefaultRenderer(aG);
     jTableHeader.setForeground(Color.BLACK);
     return jTableHeader;
@@ -697,11 +697,11 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (this.p) {
       Image image = ae();
       try {
-        a(image.getGraphics());
+        ExceptionInVPackage(image.getGraphics());
       } catch (Exception exception) {}
       paramGraphics.drawImage(image, 0, 0, null);
     } else {
-      a(paramGraphics);
+      ExceptionInVPackage(paramGraphics);
     } 
     if (!isEnabled()) {
       Color color = new Color(64, 64, 64, 100);
@@ -710,7 +710,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } 
   }
   
-  public void a(Graphics paramGraphics) {
+  public void ExceptionInVPackage(Graphics paramGraphics) {
     try {
       super.paint(paramGraphics);
     } catch (Exception exception) {
@@ -725,57 +725,57 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       graphics2D.setStroke(this.s);
       int i = i() - 6;
       int j = getRowHeight() - 4;
-      paramGraphics.drawOval((this.m[0]).a - i / 2, (this.m[0]).b - j / 2, i, j);
+      paramGraphics.drawOval((this.m[0]).ExceptionInVPackage - i / 2, (this.m[0]).b - j / 2, i, j);
       graphics2D.setStroke(this.t);
-      paramGraphics.fillOval((this.m[0]).a - 2, (this.m[0]).b - 2, 4, 4);
+      paramGraphics.fillOval((this.m[0]).ExceptionInVPackage - 2, (this.m[0]).b - 2, 4, 4);
       for (byte b = 0; b < this.m.length - 1; b++) {
         if (this.m[b + 1] != null) {
-          paramGraphics.fillOval((this.m[b + 1]).a - 2, (this.m[b + 1]).b - 2, 4, 4);
-          paramGraphics.drawLine((this.m[b]).a, (this.m[b]).b, (this.m[b + 1]).a, (this.m[b + 1]).b);
+          paramGraphics.fillOval((this.m[b + 1]).ExceptionInVPackage - 2, (this.m[b + 1]).b - 2, 4, 4);
+          paramGraphics.drawLine((this.m[b]).ExceptionInVPackage, (this.m[b]).b, (this.m[b + 1]).ExceptionInVPackage, (this.m[b + 1]).b);
         } 
       } 
     } 
   }
   
-  public void a(String[] paramArrayOfString1, String[] paramArrayOfString2) {
+  public void ExceptionInVPackage(String[] paramArrayOfString1, String[] paramArrayOfString2) {
     if (!I()) {
       this.m = null;
       return;
     } 
-    String[] arrayOfString1 = ((s)getModel()).a();
+    String[] arrayOfString1 = ((s)getModel()).ExceptionInVPackage();
     String[] arrayOfString2 = ((s)getModel()).b();
     boolean bool = ((s)getModel()).H();
     this.m = new aM[paramArrayOfString1.length];
     Rectangle rectangle = getCellRect(0, 0, true);
     try {
       for (byte b = 0; b < paramArrayOfString1.length; b++) {
-        double d1 = a(arrayOfString2, Double.parseDouble(paramArrayOfString1[b]));
-        double d2 = bool ? b(arrayOfString1, Double.parseDouble(paramArrayOfString2[b])) : a(arrayOfString1, Double.parseDouble(paramArrayOfString2[b]));
+        double d1 = ExceptionInVPackage(arrayOfString2, Double.parseDouble(paramArrayOfString1[b]));
+        double d2 = bool ? b(arrayOfString1, Double.parseDouble(paramArrayOfString2[b])) : ExceptionInVPackage(arrayOfString1, Double.parseDouble(paramArrayOfString2[b]));
         int i = (int)(rectangle.width * d1) + rectangle.width / 2;
         int j = (int)(rectangle.height * d2) + rectangle.height / 2;
         this.m[b] = new aM(this, i, j, d1, d2);
       } 
     } catch (Exception exception) {}
     if (this.aa && !this.r)
-      a((float)this.i, (float)this.j); 
+      ExceptionInVPackage((float)this.i, (float)this.j); 
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     if (!isEnabled())
       return; 
-    String[] arrayOfString1 = ((s)getModel()).a();
+    String[] arrayOfString1 = ((s)getModel()).ExceptionInVPackage();
     String[] arrayOfString2 = ((s)getModel()).b();
     if (arrayOfString2 == null || arrayOfString2.length == 0 || arrayOfString2[0] == null || arrayOfString1 == null || arrayOfString1.length == 0 || arrayOfString1[0] == null)
       return; 
     double d1 = Double.parseDouble(paramString1);
     double d2 = Double.parseDouble(paramString2);
     boolean bool = ((s)getModel()).H();
-    this.i = bool ? fh.a(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
+    this.i = bool ? fh.ExceptionInVPackage(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
     this.j = fh.b(arrayOfString2, d2);
     if (I()) {
       Rectangle rectangle = getCellRect(0, 0, true);
-      double d3 = a(arrayOfString2, d2);
-      double d4 = bool ? fh.a(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
+      double d3 = ExceptionInVPackage(arrayOfString2, d2);
+      double d4 = bool ? fh.ExceptionInVPackage(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
       int i = (int)Math.round(rectangle.width * d3 + (rectangle.width / 2.0F));
       int j = (int)(rectangle.height * d4) + rectangle.height / 2;
       if (this.m == null || this.m.length < J() + 1) {
@@ -788,41 +788,41 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       this.m[0] = new aM(this, i, j, d2, d1);
     } 
     if (this.h) {
-      this.v.a();
+      this.v.ExceptionInVPackage();
       ar();
     } 
     if (this.aa && !this.r)
-      a((float)this.i, (float)this.j); 
+      ExceptionInVPackage((float)this.i, (float)this.j); 
   }
   
-  public void a(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
+  public void ExceptionInVPackage(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
     if (!isEnabled() || paramArrayOffloat1.length < 1 || paramArrayOffloat2.length < 1)
       return; 
-    String[] arrayOfString1 = ((s)getModel()).a();
+    String[] arrayOfString1 = ((s)getModel()).ExceptionInVPackage();
     String[] arrayOfString2 = ((s)getModel()).b();
     if (arrayOfString2 == null || arrayOfString2.length == 0 || arrayOfString2[0] == null || arrayOfString1 == null || arrayOfString1.length == 0 || arrayOfString1[0] == null)
       return; 
     double d1 = paramArrayOffloat1[0];
     double d2 = paramArrayOffloat2[0];
     boolean bool = ((s)getModel()).H();
-    this.i = bool ? fh.a(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
+    this.i = bool ? fh.ExceptionInVPackage(arrayOfString1, d1) : fh.b(arrayOfString1, d1);
     this.j = fh.b(arrayOfString2, d2);
     if (this.aa && !this.r)
-      a((float)this.i, (float)this.j); 
+      ExceptionInVPackage((float)this.i, (float)this.j); 
     if (I()) {
       int i = Math.min(J() + 1, Math.min(paramArrayOffloat1.length, paramArrayOffloat2.length));
       this.m = new aM[i];
       Rectangle rectangle = getCellRect(0, 0, true);
       for (byte b = 0; b < i; b++) {
-        double d3 = a(arrayOfString2, paramArrayOffloat2[b]);
-        double d4 = bool ? fh.a(arrayOfString1, paramArrayOffloat1[b]) : fh.b(arrayOfString1, paramArrayOffloat1[b]);
+        double d3 = ExceptionInVPackage(arrayOfString2, paramArrayOffloat2[b]);
+        double d4 = bool ? fh.ExceptionInVPackage(arrayOfString1, paramArrayOffloat1[b]) : fh.b(arrayOfString1, paramArrayOffloat1[b]);
         int j = (int)Math.round(rectangle.width * d3 + (rectangle.width / 2.0F));
         int k = (int)(rectangle.height * d4) + rectangle.height / 2;
         this.m[b] = new aM(this, j, k, paramArrayOffloat2[b], paramArrayOffloat1[b]);
       } 
     } 
     if (this.h) {
-      this.v.a();
+      this.v.ExceptionInVPackage();
       ar();
     } 
   }
@@ -830,19 +830,19 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   public void k() {
     if (!isEnabled() || !this.h || !isShowing() || this.m == null)
       return; 
-    String[] arrayOfString1 = ((s)getModel()).a();
+    String[] arrayOfString1 = ((s)getModel()).ExceptionInVPackage();
     String[] arrayOfString2 = ((s)getModel()).b();
     Rectangle rectangle = getCellRect(0, 0, true);
     try {
       for (byte b = 0; b < this.m.length; b++) {
-        double d1 = a(arrayOfString2, (this.m[b]).c);
+        double d1 = ExceptionInVPackage(arrayOfString2, (this.m[b]).c);
         double d2 = b(arrayOfString1, (this.m[b]).d);
         int i = (int)(rectangle.width * d1) + rectangle.width / 2;
         int j = (int)(rectangle.height * d2) + rectangle.height / 2;
-        (this.m[b]).a = i;
+        (this.m[b]).ExceptionInVPackage = i;
         (this.m[b]).b = j;
       } 
-      this.v.a();
+      this.v.ExceptionInVPackage();
     } catch (Exception exception) {}
   }
   
@@ -852,7 +852,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   }
   
   public void m() {
-    this.v.a();
+    this.v.ExceptionInVPackage();
   }
   
   public void n() {
@@ -861,7 +861,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } else if (this.C) {
       r();
     } else {
-      a(aq());
+      ExceptionInVPackage(aq());
     } 
   }
   
@@ -871,16 +871,16 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } else if (this.C) {
       s();
     } else {
-      a(-aq());
+      ExceptionInVPackage(-aq());
     } 
   }
   
   public void p() {
-    a((aq() * L()));
+    ExceptionInVPackage((aq() * L()));
   }
   
   public void q() {
-    a((-aq() * L()));
+    ExceptionInVPackage((-aq() * L()));
   }
   
   public void r() {
@@ -914,7 +914,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       return; 
     D();
     this.h = false;
-    String str = bV.a("{" + c("Multiply Selected Cells by: ex. 1.2 = raise by 20%") + "}", true, c("Scale Cells"), true, this);
+    String str = bV.ExceptionInVPackage("{" + c("Multiply Selected Cells by: ex. 1.2 = raise by 20%") + "}", true, c("Scale Cells"), true, this);
     this.h = true;
     requestFocus();
     if (str != null && !str.equals("")) {
@@ -928,12 +928,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       return; 
     D();
     this.h = false;
-    String str = bV.a("{" + c("Increase Selected Cells by") + ":}", true, c("Add To Cells"), true, this);
+    String str = bV.ExceptionInVPackage("{" + c("Increase Selected Cells by") + ":}", true, c("Add To Cells"), true, this);
     this.h = true;
     requestFocus();
     if (str != null && !str.equals("")) {
       double d = Double.parseDouble(str);
-      a(d);
+      ExceptionInVPackage(d);
     } 
   }
   
@@ -945,7 +945,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     int[] arrayOfInt2 = getSelectedRows();
     if (arrayOfInt1.length == 0 || arrayOfInt2.length == 0)
       return; 
-    fh.a((s)getModel(), arrayOfInt1, arrayOfInt2, M());
+    fh.ExceptionInVPackage((s)getModel(), arrayOfInt1, arrayOfInt2, M());
     repaint();
   }
   
@@ -954,7 +954,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       return; 
     D();
     s s1 = new s();
-    s1.a(2, 2);
+    s1.ExceptionInVPackage(2, 2);
     int[] arrayOfInt1 = getSelectedColumns();
     int[] arrayOfInt2 = getSelectedRows();
     if (arrayOfInt1.length == 0 || arrayOfInt2.length == 0)
@@ -969,14 +969,14 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     arrayOfString1[0] = s2.b()[arrayOfInt1[0]];
     arrayOfString1[1] = s2.b()[arrayOfInt1[arrayOfInt1.length - 1]];
     s1.c(arrayOfString1);
-    arrayOfString2[0] = s2.a()[arrayOfInt2[0]];
-    arrayOfString2[1] = s2.a()[arrayOfInt2[arrayOfInt2.length - 1]];
+    arrayOfString2[0] = s2.ExceptionInVPackage()[arrayOfInt2[0]];
+    arrayOfString2[1] = s2.ExceptionInVPackage()[arrayOfInt2[arrayOfInt2.length - 1]];
     s1.e(arrayOfString2);
     for (int i = arrayOfInt1[0]; i <= arrayOfInt1[arrayOfInt1.length - 1]; i++) {
       for (int j = arrayOfInt2[0]; j <= arrayOfInt2[arrayOfInt2.length - 1]; j++) {
         double d1 = Double.parseDouble(s2.b()[i]);
-        double d2 = Double.parseDouble(s2.a()[j]);
-        double d3 = fh.a(s1, d1, d2);
+        double d2 = Double.parseDouble(s2.ExceptionInVPackage()[j]);
+        double d3 = fh.ExceptionInVPackage(s1, d1, d2);
         s2.setValueAt(new Double(d3), j, i);
       } 
     } 
@@ -996,7 +996,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       double d1 = s.d(i, arrayOfInt1[0]).doubleValue();
       double d2 = s.d(i, arrayOfInt1[arrayOfInt1.length - 1]).doubleValue();
       s s1 = new s();
-      s1.a(1, 2);
+      s1.ExceptionInVPackage(1, 2);
       s1.setValueAt(Double.valueOf(d1), 0, 0);
       s1.setValueAt(Double.valueOf(d2), 0, 1);
       String[] arrayOfString1 = s.b();
@@ -1007,7 +1007,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       for (int j = arrayOfInt1[0]; j <= arrayOfInt1[arrayOfInt1.length - 1]; j++) {
         double d3 = Double.parseDouble(s.b()[j]);
         double d4 = 0.0D;
-        double d5 = fh.a(s1, d3, d4);
+        double d5 = fh.ExceptionInVPackage(s1, d3, d4);
         s.setValueAt(new Double(d5), i, j);
       } 
     } 
@@ -1027,18 +1027,18 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       double d1 = s.d(arrayOfInt2[0], i).doubleValue();
       double d2 = s.d(arrayOfInt2[arrayOfInt2.length - 1], i).doubleValue();
       s s1 = new s();
-      s1.a(2, 1);
+      s1.ExceptionInVPackage(2, 1);
       s1.setValueAt(Double.valueOf(d1), 0, 0);
       s1.setValueAt(Double.valueOf(d2), 1, 0);
-      String[] arrayOfString1 = s.a();
+      String[] arrayOfString1 = s.ExceptionInVPackage();
       String[] arrayOfString2 = { arrayOfString1[arrayOfInt2[arrayOfInt2.length - 1]], arrayOfString1[arrayOfInt2[0]] };
       s1.d(arrayOfString2);
       String[] arrayOfString3 = { "1" };
       s1.c(arrayOfString3);
       for (int j = arrayOfInt2[0]; j <= arrayOfInt2[arrayOfInt2.length - 1]; j++) {
         double d3 = 0.0D;
-        double d4 = Double.parseDouble(s.a()[j]);
-        double d5 = fh.a(s1, d3, d4);
+        double d4 = Double.parseDouble(s.ExceptionInVPackage()[j]);
+        double d5 = fh.ExceptionInVPackage(s1, d3, d4);
         s.setValueAt(new Double(d5), j, i);
       } 
     } 
@@ -1060,7 +1060,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         if (isCellSelected(b1, b) && arrayOfB != null) {
           s s = (s)getModel();
           Double double_ = s.c(b1, b);
-          arrayOfB[arrayOfB.length - 1 - b1][b].b(arrayOfB[arrayOfB.length - 1 - b1][b].a());
+          arrayOfB[arrayOfB.length - 1 - b1][b].b(arrayOfB[arrayOfB.length - 1 - b1][b].ExceptionInVPackage());
           s.setValueAt(double_, b1, b);
         } 
       } 
@@ -1071,16 +1071,16 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (!g())
       return; 
     this.h = false;
-    String str = bV.a("{" + c("Decrease Selected Cells by") + ":}", true, c("Subtract From Cells"), true, this);
+    String str = bV.ExceptionInVPackage("{" + c("Decrease Selected Cells by") + ":}", true, c("Subtract From Cells"), true, this);
     this.h = true;
     requestFocus();
     if (str != null && !str.equals("")) {
       double d = Double.parseDouble(str);
-      a(-d);
+      ExceptionInVPackage(-d);
     } 
   }
   
-  public void a(double paramDouble) {
+  public void ExceptionInVPackage(double paramDouble) {
     if (!g())
       return; 
     D();
@@ -1090,7 +1090,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
           s s = (s)getModel();
           Double double_ = s.d(b, b1);
           if (double_ != null && !double_.isNaN())
-            s.setValueAt(new Double(a(double_.doubleValue(), paramDouble)), b, b1); 
+            s.setValueAt(new Double(ExceptionInVPackage(double_.doubleValue(), paramDouble)), b, b1); 
         } 
       } 
     } 
@@ -1116,7 +1116,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     repaint();
   }
   
-  private double a(double paramDouble1, double paramDouble2) {
+  private double ExceptionInVPackage(double paramDouble1, double paramDouble2) {
     long l = (long)((paramDouble1 + paramDouble2) * 1000000.0D);
     int i = Math.round((float)(l / 100.0D));
     return i / 10000.0D;
@@ -1159,8 +1159,8 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   public void D() {
     s s = (s)getModel();
     if (!s.p()) {
-      bV.d("This is a Read Only table. \nIf this table is edited, the new values will be used for analysis, \nbut will not be saved with Tune File.", this);
-      s.a(true);
+      bV.d("This is ExceptionInVPackage Read Only table. \nIf this table is edited, the new values will be used for analysis, \nbut will not be saved with Tune File.", this);
+      s.ExceptionInVPackage(true);
     } 
     this.l = true;
   }
@@ -1169,7 +1169,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return (getSelectedRowCount() > 1 || getSelectedColumnCount() > 1);
   }
   
-  public void a(String paramString) {
+  public void ExceptionInVPackage(String paramString) {
     s s = (s)getModel();
     if (paramString != null && paramString.equals(c("Increment - Key: > or ,"))) {
       n();
@@ -1241,9 +1241,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         } else if (paramString != null && paramString.equals(c("Insert Column Before Selected"))) {
           this.af.c(getSelectedColumn());
         } else if (paramString != null && paramString.equals(c("Insert Row Above Selected"))) {
-          this.af.a(getSelectedRow());
+          this.af.ExceptionInVPackage(getSelectedRow());
         } else if (paramString != null && paramString.equals(c("Insert Row Below Selected"))) {
-          this.af.a(getSelectedRow() + 1);
+          this.af.ExceptionInVPackage(getSelectedRow() + 1);
         } else if (paramString != null && paramString.equals(c("Delete Selected Row"))) {
           this.af.b(getSelectedRow());
         } else if (paramString != null && paramString.equals(c("Delete Selected Column"))) {
@@ -1251,8 +1251,8 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         } else if (paramString != null && paramString.equals(c("Resize Table"))) {
           this.af.h();
         } 
-      } catch (a a) {
-        bV.d(c(a.getLocalizedMessage()), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        bV.d(c(ExceptionInVPackage.getLocalizedMessage()), this);
       } 
     } 
   }
@@ -1263,35 +1263,35 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   
   public void b(String paramString) {
     String[] arrayOfString = { "table", "vex" };
-    String str1 = paramString + "_" + X.a() + ".table";
+    String str1 = paramString + "_" + X.ExceptionInVPackage() + ".table";
     String str2 = d(n);
-    String str3 = bV.a(this, "Export Table", arrayOfString, str1, str2);
+    String str3 = bV.ExceptionInVPackage(this, "Export Table", arrayOfString, str1, str2);
     if (str3 != null && !str3.equals("")) {
       String str = str3.toLowerCase();
       if (str.endsWith(".vex")) {
         fG fG = new fG();
         try {
-          fG.a((s)getModel(), str3, this.a);
-        } catch (a a) {
-          bV.d("Error Saving VEX file:\n" + a.getMessage(), this);
-          a.printStackTrace();
+          fG.ExceptionInVPackage((s)getModel(), str3, this.ExceptionInVPackage);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          bV.d("Error Saving VEX file:\n" + ExceptionInVPackage.getMessage(), this);
+          ExceptionInVPackage.printStackTrace();
         } 
       } else {
         if (str.indexOf(".table") == -1)
           str3 = str3 + ".table"; 
         eY eY = new eY();
         try {
-          eY.a(str3, (s)getModel());
-        } catch (a a) {
-          bV.d("Error Saving table file:\n" + a.getMessage(), this);
-          a.printStackTrace();
+          eY.ExceptionInVPackage(str3, (s)getModel());
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          bV.d("Error Saving table file:\n" + ExceptionInVPackage.getMessage(), this);
+          ExceptionInVPackage.printStackTrace();
         } 
       } 
     } 
   }
   
   public void F() {
-    String str = bV.a("{" + c("Number of records for History Trace (the blue line)") + "}", true, c("History Length"), true, this);
+    String str = bV.ExceptionInVPackage("{" + c("Number of records for History Trace (the blue line)") + "}", true, c("History Length"), true, this);
     if (str == null || str.equals(""))
       return; 
     int i = (int)Math.round(Double.parseDouble(str));
@@ -1313,11 +1313,11 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       if (str3.toLowerCase().endsWith(".vex")) {
         fG fG = new fG();
         try {
-          fG.a((s)getModel(), str3);
-        } catch (a a) {
-          bV.d(c("Error Importing table!") + "\n" + a.getMessage(), this);
+          fG.ExceptionInVPackage((s)getModel(), str3);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          bV.d(c("Error Importing table!") + "\n" + ExceptionInVPackage.getMessage(), this);
         } catch (Exception exception) {
-          D.a("Unexpected problem importing table!", exception, this);
+          D.ExceptionInVPackage("Unexpected problem importing table!", exception, this);
         } 
       } else {
         eY eY = new eY();
@@ -1335,7 +1335,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     if (!g())
       return; 
     this.h = false;
-    String str = bV.a("{" + c("Set Selected Cells to") + ":}", true, c("Set Cell Values"), true, this);
+    String str = bV.ExceptionInVPackage("{" + c("Set Selected Cells to") + ":}", true, c("Set Cell Values"), true, this);
     this.h = true;
     requestFocus();
     if (str != null && !str.equals("")) {
@@ -1345,7 +1345,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } 
   }
   
-  public void a(int paramInt1, int paramInt2) {
+  public void ExceptionInVPackage(int paramInt1, int paramInt2) {
     int i = paramInt1 / i();
     int j = paramInt2 / getRowHeight();
     if (!isCellSelected(j, i))
@@ -1402,10 +1402,10 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         jMenu.add(c("Subtract Copied Table Values")).addActionListener(as);
       } 
     } 
-    if (this.af != null && this.af.a()) {
+    if (this.af != null && this.af.ExceptionInVPackage()) {
       jPopupMenu.addSeparator();
       bp bp = new bp(c("Adjust Table Size & Shape"));
-      a(bp);
+      ExceptionInVPackage(bp);
       jPopupMenu.add(bp);
     } 
     jPopupMenu.addSeparator();
@@ -1431,7 +1431,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     jPopupMenu.show(this, paramInt1, paramInt2);
   }
   
-  protected bq a(bq parambq) {
+  protected bq ExceptionInVPackage(bq parambq) {
     au au = new au(this);
     if ((getSelectedColumns()).length == 1) {
       if (getColumnCount() < this.af.d() && (getColumnCount() + 1) * getRowCount() <= this.af.f()) {
@@ -1460,7 +1460,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       d1 = Double.parseDouble(this.w.getText());
     } catch (NumberFormatException numberFormatException) {
       if (this.w.getText().trim().isEmpty()) {
-        this.w.a("Auto");
+        this.w.ExceptionInVPackage("Auto");
         this.w.selectAll();
       } 
     } 
@@ -1468,7 +1468,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       d2 = Double.parseDouble(this.x.getText());
     } catch (NumberFormatException numberFormatException) {
       if (this.x.getText().trim().isEmpty()) {
-        this.x.a("Auto");
+        this.x.ExceptionInVPackage("Auto");
         this.x.selectAll();
       } 
     } 
@@ -1503,12 +1503,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
         d1 = Double.parseDouble(d("cellColorMin"));
       } catch (Exception exception) {}
       if (!Double.isNaN(d1))
-        this.w.a(d1); 
+        this.w.ExceptionInVPackage(d1); 
       try {
         d2 = Double.parseDouble(d("cellColorMax"));
       } catch (Exception exception) {}
       if (!Double.isNaN(d2))
-        this.x.a(d2); 
+        this.x.ExceptionInVPackage(d2); 
       av av = new av(this);
       aw aw = new aw(this);
       this.w.addKeyListener(aw);
@@ -1526,10 +1526,10 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       this.x.addFocusListener(av);
     } 
     ax ax = new ax(this);
-    bV.a(this.y, this, c("Color Limits"), ax);
+    bV.ExceptionInVPackage(this.y, this, c("Color Limits"), ax);
   }
   
-  public double a(String[] paramArrayOfString, double paramDouble) {
+  public double ExceptionInVPackage(String[] paramArrayOfString, double paramDouble) {
     return fh.b(paramArrayOfString, paramDouble);
   }
   
@@ -1571,7 +1571,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return this.K;
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.K = paramBoolean;
   }
   
@@ -1594,7 +1594,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       for (byte b1 = 0; b1 < getRowCount(); b1++) {
         if (isCellSelected(b1, b)) {
           b b2 = s.D()[s.j.length - b1 - 1][b];
-          b2.a(paramBoolean);
+          b2.ExceptionInVPackage(paramBoolean);
         } 
       } 
     } 
@@ -1674,7 +1674,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       int j = Integer.parseInt(str1.substring(str1.indexOf(":") + 1, str1.length()));
       if (i < s.j.length && j < (s.j[i]).length) {
         b b = s.D()[s.j.length - i - 1][j];
-        b.a(true);
+        b.ExceptionInVPackage(true);
       } 
     } 
   }
@@ -1683,7 +1683,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return this.O;
   }
   
-  public void a(ab paramab) {
+  public void ExceptionInVPackage(ab paramab) {
     this.O = paramab;
   }
   
@@ -1695,7 +1695,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return this.W;
   }
   
-  public void a(float paramFloat) {
+  public void ExceptionInVPackage(float paramFloat) {
     if (paramFloat < 0.0F)
       paramFloat = 0.0F; 
     if (paramFloat > 1.0D)
@@ -1706,7 +1706,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   }
   
   private void an() {
-    String str = bV.a(this, true, c("Preferred Cell Increment Size"), aq() + "");
+    String str = bV.ExceptionInVPackage(this, true, c("Preferred Cell Increment Size"), aq() + "");
     if (str != null && !str.equals("")) {
       float f = aq();
       try {
@@ -1725,7 +1725,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   }
   
   private void ao() {
-    String str = bV.a(this, true, "<html>" + c("Preferred Multi-Increment Count.") + "<br>" + c("With CTRL key down, will increment this many times"), L() + "");
+    String str = bV.ExceptionInVPackage(this, true, "<html>" + c("Preferred Multi-Increment Count.") + "<br>" + c("With CTRL key down, will increment this many times"), L() + "");
     if (str != null && !str.equals("")) {
       int i = this.P;
       try {
@@ -1736,7 +1736,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
           return;
         } 
         if (i >= 20) {
-          bV.d(c("20 Seems a bit excessive, don't you think?"), this);
+          bV.d(c("20 Seems ExceptionInVPackage bit excessive, don't you think?"), this);
           ao();
           return;
         } 
@@ -1750,7 +1750,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   
   private void ap() {
     String str1 = X.c(X() * 100.0D, 0);
-    String str2 = bV.a(this, true, "<html>" + c("Preferred Percent-Increment Amount.") + "<br>" + c("With SHIFT key down, increments by this percentage"), str1 + "%");
+    String str2 = bV.ExceptionInVPackage(this, true, "<html>" + c("Preferred Percent-Increment Amount.") + "<br>" + c("With SHIFT key down, increments by this percentage"), str1 + "%");
     if (str2 != null && !str2.equals("")) {
       double d = this.Q;
       str2 = X.b(str2, "%", "");
@@ -1762,7 +1762,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
           return;
         } 
         if (d >= 0.5D) {
-          bV.d(c("50 percent Seems a bit excessive, don't you think?"), this);
+          bV.d(c("50 percent Seems ExceptionInVPackage bit excessive, don't you think?"), this);
           ap();
           return;
         } 
@@ -1807,7 +1807,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       this.v.b = Math.round(1000.0D / paramDouble); 
   }
   
-  protected void a(am paramam) {
+  protected void ExceptionInVPackage(am paramam) {
     this.af = paramam;
   }
   
@@ -1818,13 +1818,13 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
       j(paramBoolean); 
   }
   
-  public void a(aA paramaA) {
+  public void ExceptionInVPackage(aA paramaA) {
     this.q.add(paramaA);
   }
   
   private void j(boolean paramBoolean) {
     for (aA aA : this.q)
-      aA.a(paramBoolean); 
+      aA.ExceptionInVPackage(paramBoolean); 
   }
   
   public void e(boolean paramBoolean) {
@@ -1854,8 +1854,8 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   private void ar() {
     Iterator<eg> iterator = this.N.iterator();
     while (iterator.hasNext()) {
-      double d = ((s)getModel()).a(this.i, this.j);
-      ((eg)iterator.next()).a((int)Math.round(this.j), (int)Math.round(this.i), d);
+      double d = ((s)getModel()).ExceptionInVPackage(this.i, this.j);
+      ((eg)iterator.next()).ExceptionInVPackage((int)Math.round(this.j), (int)Math.round(this.i), d);
     } 
   }
   
@@ -1864,7 +1864,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   }
   
   public double P() {
-    return Double.isNaN(this.R) ? (Math.pow(10.0D, 1.0D - this.a) / 10.0D) : this.R;
+    return Double.isNaN(this.R) ? (Math.pow(10.0D, 1.0D - this.ExceptionInVPackage) / 10.0D) : this.R;
   }
   
   public TableCellEditor getDefaultEditor(Class paramClass) {
@@ -1895,7 +1895,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } 
     boolean bool = super.editCellAt(paramInt1, paramInt2, paramEventObject);
     if (bool)
-      this.G.a(); 
+      this.G.ExceptionInVPackage(); 
     return bool;
   }
   
@@ -1937,12 +1937,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     } 
     if (paramKeyEvent.getID() == 401 && paramKeyEvent.getKeyCode() == 10 && isEditing()) {
       this.ae = true;
-    } else if (paramKeyEvent.getID() == 401 && at() && (I.a(paramKeyEvent.getKeyChar() + "") || (paramKeyEvent.getKeyCode() == 8 && !this.z.isEmpty())) && ((paramKeyEvent.getKeyCode() != 46 && paramKeyEvent.getKeyCode() != 110) || (!this.z.isEmpty() && !this.z.contains(".")))) {
+    } else if (paramKeyEvent.getID() == 401 && at() && (I.ExceptionInVPackage(paramKeyEvent.getKeyChar() + "") || (paramKeyEvent.getKeyCode() == 8 && !this.z.isEmpty())) && ((paramKeyEvent.getKeyCode() != 46 && paramKeyEvent.getKeyCode() != 110) || (!this.z.isEmpty() && !this.z.contains(".")))) {
       this.A = System.currentTimeMillis();
       if (paramKeyEvent.getKeyCode() == 8) {
         if (!this.z.isEmpty())
           this.z = this.z.substring(0, this.z.length() - 1); 
-      } else if (!this.z.contains(".") || this.z.length() - this.z.indexOf(".") <= this.a) {
+      } else if (!this.z.contains(".") || this.z.length() - this.z.indexOf(".") <= this.ExceptionInVPackage) {
         this.z += paramKeyEvent.getKeyChar();
       } 
       if (!this.z.isEmpty()) {
@@ -2046,7 +2046,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
           w();
           return true;
       } 
-      if (paramKeyEvent.getModifiers() == 0 && a(paramKeyEvent.getKeyChar()) && !I.a(paramKeyEvent.getKeyChar() + "") && paramKeyEvent.getKeyCode() != 10 && paramKeyEvent.getKeyCode() != 9 && paramKeyEvent.getKeyCode() != 38 && paramKeyEvent.getKeyCode() != 40 && paramKeyEvent.getKeyCode() != 37 && paramKeyEvent.getKeyCode() != 32 && paramKeyEvent.getKeyCode() != 39)
+      if (paramKeyEvent.getModifiers() == 0 && ExceptionInVPackage(paramKeyEvent.getKeyChar()) && !I.ExceptionInVPackage(paramKeyEvent.getKeyChar() + "") && paramKeyEvent.getKeyCode() != 10 && paramKeyEvent.getKeyCode() != 9 && paramKeyEvent.getKeyCode() != 38 && paramKeyEvent.getKeyCode() != 40 && paramKeyEvent.getKeyCode() != 37 && paramKeyEvent.getKeyCode() != 32 && paramKeyEvent.getKeyCode() != 39)
         return true; 
     } 
     if (U && paramKeyEvent.getModifiers() == 0 && paramKeyEvent.getID() == 401) {
@@ -2075,7 +2075,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return false;
   }
   
-  private int[] a(float paramFloat, int paramInt1, int paramInt2) {
+  private int[] ExceptionInVPackage(float paramFloat, int paramInt1, int paramInt2) {
     if (paramInt1 % 2 == 0)
       paramFloat += 0.5F; 
     int[] arrayOfInt = new int[paramInt1];
@@ -2103,12 +2103,12 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return arrayOfInt;
   }
   
-  private void a(float paramFloat1, float paramFloat2) {
+  private void ExceptionInVPackage(float paramFloat1, float paramFloat2) {
     int[] arrayOfInt1 = getSelectedColumns();
     int[] arrayOfInt2 = getSelectedRows();
     if (arrayOfInt1.length * arrayOfInt2.length > 1) {
-      int[] arrayOfInt3 = a(paramFloat2, arrayOfInt1.length, getModel().getColumnCount() - 1);
-      int[] arrayOfInt4 = a(paramFloat1, arrayOfInt2.length, getModel().getRowCount() - 1);
+      int[] arrayOfInt3 = ExceptionInVPackage(paramFloat2, arrayOfInt1.length, getModel().getColumnCount() - 1);
+      int[] arrayOfInt4 = ExceptionInVPackage(paramFloat1, arrayOfInt2.length, getModel().getRowCount() - 1);
       if (arrayOfInt3[arrayOfInt3.length - 1] <= getColumnCount() - 1 && (arrayOfInt1[0] != arrayOfInt3[0] || arrayOfInt2[0] != arrayOfInt4[0])) {
         changeSelection(arrayOfInt4[0], arrayOfInt3[0], false, false);
         changeSelection(arrayOfInt4[arrayOfInt4.length - 1], arrayOfInt3[arrayOfInt3.length - 1], false, true);
@@ -2169,7 +2169,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     return false;
   }
   
-  private boolean a(char paramChar) {
+  private boolean ExceptionInVPackage(char paramChar) {
     return ("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".indexOf(paramChar) != -1);
   }
   
@@ -2180,17 +2180,17 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   }
   
   private String d(String paramString) {
-    return (this.M == null) ? "" : this.M.a(c(paramString));
+    return (this.M == null) ? "" : this.M.ExceptionInVPackage(c(paramString));
   }
   
   private void b(String paramString1, String paramString2) {
     if (this.M != null)
-      this.M.a(c(paramString1), paramString2); 
+      this.M.ExceptionInVPackage(c(paramString1), paramString2); 
   }
   
-  public void a(et paramet) {
+  public void ExceptionInVPackage(et paramet) {
     this.M = paramet;
-    a();
+    ExceptionInVPackage();
   }
   
   public static boolean S() {
@@ -2223,7 +2223,7 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
   
   public fA V() {
     if (this.ac == null)
-      this.ac = fA.a(Color.WHITE); 
+      this.ac = fA.ExceptionInVPackage(Color.WHITE); 
     return this.ac;
   }
   

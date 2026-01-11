@@ -1,10 +1,10 @@
 package aP;
 
-import bA.b;
+import bA.BaInterfaceBravo;
 import java.util.ArrayList;
 import java.util.List;
 
-class gR implements b {
+class gR implements BaInterfaceBravo {
   ArrayList a = new ArrayList();
   
   gR(gQ paramgQ) {}
@@ -13,11 +13,11 @@ class gR implements b {
     this.a.clear();
   }
   
-  public List b() {
+  public List BaInterfaceBravo() {
     return this.a;
   }
   
-  public void b(String paramString) {}
+  public void BaInterfaceBravo(String paramString) {}
 }
 
 

@@ -1,6 +1,6 @@
 package ak;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.V;
 import W.X;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class aa extends V {
-  String a;
+  String ExceptionInVPackage;
   
   String b = "";
   
@@ -54,8 +54,8 @@ public class aa extends V {
       false, true, true, true, true, true, true, true, true, false, 
       true, true, true, false, true, true, true };
   
-  public boolean a(String paramString) {
-    this.a = paramString;
+  public boolean ExceptionInVPackage(String paramString) {
+    this.ExceptionInVPackage = paramString;
     RandomAccessFile randomAccessFile = null;
     try {
       randomAccessFile = new RandomAccessFile(paramString, "r");
@@ -63,7 +63,7 @@ public class aa extends V {
       randomAccessFile.readFully(this.e);
       ah ah = new ah(this);
       ac ac = new ac(this, 64);
-      StringBuilder stringBuilder = (new StringBuilder()).append("Date: ").append(ac.e).append("\n").append("Time: ").append(ac.f).append("\n").append("Format: ").append(ah.a).append(" ").append(ah.b).append(" ").append(ah.d ? "BE" : "LE").append("\n").append("Program: ").append(ah.c).append("\n").append("Operator: ").append(ac.g).append("\n").append("Divition: ").append(ac.h).append("\n").append("Project: ").append(ac.i).append("\n").append("Sub Project: ").append(ac.j).append("\n");
+      StringBuilder stringBuilder = (new StringBuilder()).append("Date: ").append(ac.e).append("\n").append("Time: ").append(ac.f).append("\n").append("Format: ").append(ah.ExceptionInVPackage).append(" ").append(ah.b).append(" ").append(ah.d ? "BE" : "LE").append("\n").append("Program: ").append(ah.c).append("\n").append("Operator: ").append(ac.g).append("\n").append("Divition: ").append(ac.h).append("\n").append("Project: ").append(ac.i).append("\n").append("Sub Project: ").append(ac.j).append("\n");
       if (ac.l != null) {
         stringBuilder.append("Start Comment:\n").append(ac.l.b).append("\nEndComment\n").append("Logged Fields:\n");
       } else {
@@ -118,8 +118,8 @@ public class aa extends V {
         this.l[b2] = Float.NaN; 
       b2 = 1;
       return b2;
-    } catch (IOException|a iOException) {
-      throw new a(iOException.getMessage(), iOException);
+    } catch (IOException|ExceptionInVPackage iOException) {
+      throw new ExceptionInVPackage(iOException.getMessage(), iOException);
     } finally {
       if (randomAccessFile != null)
         try {
@@ -128,7 +128,7 @@ public class aa extends V {
     } 
   }
   
-  public void a() {}
+  public void ExceptionInVPackage() {}
   
   public String i() {
     return X.L;
@@ -141,7 +141,7 @@ public class aa extends V {
   public float[] c() {
     this.l[0] = (float)this.p;
     for (ae ae : this.i)
-      ae.a(); 
+      ae.ExceptionInVPackage(); 
     this.p += this.r;
     this.m++;
     return this.l;
@@ -167,7 +167,7 @@ public class aa extends V {
     return this.b;
   }
   
-  private String a(int paramInt1, int paramInt2) {
+  private String ExceptionInVPackage(int paramInt1, int paramInt2) {
     return (new String(this.e, paramInt1, paramInt2, StandardCharsets.US_ASCII)).replace("�", "°");
   }
 }

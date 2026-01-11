@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.aN;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,7 +9,7 @@ class cw implements ActionListener {
   cw(cd paramcd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    aN.a(i.n);
+    aN.a(IOProperties.n);
   }
 }
 

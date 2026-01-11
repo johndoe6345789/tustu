@@ -1,8 +1,8 @@
 package aP;
 
-import c.e;
+import c.CInterfaceEcho;
 
-class jw implements e {
+class jw implements CInterfaceEcho {
   jw(ju paramju) {}
   
   public boolean a() {

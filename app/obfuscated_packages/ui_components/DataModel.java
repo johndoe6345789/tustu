@@ -1,6 +1,6 @@
 package ao;
 
-import V.h;
+import V.VInterfaceHotel;
 import com.efiAnalytics.ui.b;
 
 public interface a {
@@ -8,7 +8,7 @@ public interface a {
   
   void a(b[][] paramArrayOfb, hY paramhY, int paramInt);
   
-  void a(h paramh);
+  void a(VInterfaceHotel paramh);
   
   void a(hY paramhY);
 }

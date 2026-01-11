@@ -1,12 +1,12 @@
 package ao;
 
-import az.o;
+import az.ThreadedInAzPackage;
 
 class J extends Thread {
   J(I paramI) {}
   
   public void run() {
-    o.d().a();
+    ThreadedInAzPackage.d().a();
   }
 }
 

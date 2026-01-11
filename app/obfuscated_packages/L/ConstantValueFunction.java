@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class ConstantValueFunction extends ac {
@@ -10,7 +10,7 @@ public class ConstantValueFunction extends ac {
     this.a = paramDouble;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return this.a;
   }
 }

@@ -1,11 +1,11 @@
 package L;
 
 import ax.ac;
-import ax.e;
+import ax.AbstractInAxPackage;
 import bH.D;
 import java.util.List;
 
-public class DummyFunctionFactory extends e {
+public class DummyFunctionFactory extends AbstractInAxPackage {
   private static m a = null;
   
   public m() {

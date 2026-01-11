@@ -1,6 +1,6 @@
 package ao;
 
-import c.e;
+import c.CInterfaceEcho;
 import com.efiAnalytics.ui.bs;
 import java.awt.Component;
 import javax.swing.JMenu;
@@ -18,8 +18,8 @@ class dv implements MenuListener {
     JMenu jMenu = (JMenu)paramMenuEvent.getSource();
     for (Component component : jMenu.getMenuComponents()) {
       if (component instanceof bs) {
-        e e = ((bs)component).e();
-        component.setEnabled((e == null || e.a()));
+        CInterfaceEcho CInterfaceEcho = ((bs)component).CInterfaceEcho();
+        component.setEnabled((CInterfaceEcho == null || CInterfaceEcho.a()));
       } 
     } 
   }

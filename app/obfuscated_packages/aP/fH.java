@@ -3,7 +3,7 @@ package aP;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class fH implements ActionListener {
   fH(dB paramdB) {}
@@ -11,8 +11,8 @@ class fH implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     jCheckBoxMenuItem.setSelected(true);
-    a.a().b("navigationStyle", jCheckBoxMenuItem.getActionCommand());
-    this.a.c(jCheckBoxMenuItem.getActionCommand());
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b("navigationStyle", jCheckBoxMenuItem.getActionCommand());
+    this.IOPropertiesUsingFile.c(jCheckBoxMenuItem.getActionCommand());
   }
 }
 

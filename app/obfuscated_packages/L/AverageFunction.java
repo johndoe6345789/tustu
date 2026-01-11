@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -12,14 +12,14 @@ public class AverageFunction extends ac {
     this.a = paramList;
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = 0.0D;
     for (ab ab : this.a)
       d += ab.b(paramS); 
     return d / this.a.size();
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

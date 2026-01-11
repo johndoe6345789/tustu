@@ -15,7 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
 public class AspectRatioPanel extends JPanel {
   do a = new do("", 4);
@@ -92,12 +92,12 @@ public class AspectRatioPanel extends JPanel {
   }
   
   public e a(Component paramComponent) {
-    this.d = new JDialog(bV.a(paramComponent), g.b("Dashboard Forced Aspect Ratio"));
+    this.d = new JDialog(bV.a(paramComponent), SComponentGolf.b("Dashboard Forced Aspect Ratio"));
     this.d.setModalityType(Dialog.ModalityType.APPLICATION_MODAL);
     this.d.add("Center", this);
-    JButton jButton1 = new JButton(g.b("Cancel"));
+    JButton jButton1 = new JButton(SComponentGolf.b("Cancel"));
     jButton1.addActionListener(new c(this));
-    JButton jButton2 = new JButton(g.b("Accept"));
+    JButton jButton2 = new JButton(SComponentGolf.b("Accept"));
     jButton2.addActionListener(new d(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));

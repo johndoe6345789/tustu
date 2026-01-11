@@ -9,9 +9,9 @@ import bH.i;
 import com.efiAnalytics.ui.aN;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.fh;
-import g.k;
-import h.h;
-import h.i;
+import g.IOJFileChooser;
+import HInterfaceHotel.HInterfaceHotel;
+import HInterfaceHotel.i;
 import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileInputStream;
@@ -89,10 +89,10 @@ public class MegaLogViewer {
       bool2 = true;
       bool1 = true;
     } 
-    String str4 = i.k();
+    String str4 = i.IOJFileChooser();
     boolean bool3 = i.a("debug", "false").equals("true");
     if (!bool3) {
-      File file = new File(h.a() + File.separator + str4 + "LogFile.txt");
+      File file = new File(HInterfaceHotel.a() + File.separator + str4 + "LogFile.txt");
       try {
         if (file.exists() && file.length() > 1000000L)
           file.delete(); 
@@ -189,10 +189,10 @@ public class MegaLogViewer {
     try {
       double d = Double.parseDouble(System.getProperty("java.specification.version"));
       String str = "http://www.java.com/en/download/manual.jsp";
-      if (d < 1.6D && k.a("You are currently have JRE version " + d + " installed.\nThis application requires JRE 1.6 or higher.\nIf you continue, you will experience problems.\n \nWould you like to get the latest JRE now?", null, true))
+      if (d < 1.6D && IOJFileChooser.a("You are currently have JRE version " + d + " installed.\nThis application requires JRE 1.6 or higher.\nIf you continue, you will experience problems.\n \nWould you like to get the latest JRE now?", null, true))
         aN.a(str); 
     } catch (Exception exception) {
-      k.a("Unable to determine the JRE version.\nJRE version 1.5 is required for this application", null);
+      IOJFileChooser.a("Unable to determine the JRE version.\nJRE version 1.5 is required for this application", null);
     } 
   }
 }

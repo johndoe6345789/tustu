@@ -1,9 +1,9 @@
 package ao;
 
 import W.j;
-import bC.k;
+import bC.JPanelExtensionUsingRunnable;
 import bH.D;
-import h.g;
+import h.PropertiesExtensionInHPackage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
@@ -15,7 +15,7 @@ public class fu extends Thread {
   
   boolean c = true;
   
-  private boolean g = false;
+  private boolean PropertiesExtensionInHPackage = false;
   
   long d = 0L;
   
@@ -37,7 +37,7 @@ public class fu extends Thread {
   public void a() {
     if (this.a.r() != null)
       for (j j1 : this.a.r()) {
-        String str = g.a().a("Time");
+        String str = PropertiesExtensionInHPackage.a().a("Time");
         if (j1.a().equalsIgnoreCase(str)) {
           this.b = j1;
           break;
@@ -50,7 +50,7 @@ public class fu extends Thread {
   }
   
   public void start() {
-    this.g = false;
+    this.PropertiesExtensionInHPackage = false;
     if (this.b != null) {
       super.start();
       this.a.c();
@@ -58,8 +58,8 @@ public class fu extends Thread {
       cd cd = bq.a().b();
       eJ eJ = new eJ(cd, "No Time Column detected in log. This input is required for log playback.\nWould you like to add mapping now", true);
       if (eJ.a) {
-        k k = b.a().a(cd, "Time");
-        SwingUtilities.invokeLater(new fv(this, k));
+        JPanelExtensionUsingRunnable JPanelExtensionUsingRunnable = b.a().a(cd, "Time");
+        SwingUtilities.invokeLater(new fv(this, JPanelExtensionUsingRunnable));
       } 
       eJ.dispose();
     } 
@@ -76,14 +76,14 @@ public class fu extends Thread {
   }
   
   public synchronized void d() {
-    this.g = !this.g;
+    this.PropertiesExtensionInHPackage = !this.PropertiesExtensionInHPackage;
     b();
   }
   
   public synchronized void e() {
     this.d = System.currentTimeMillis();
     this.e = (long)(1000.0F * this.b.c(this.a.p()));
-    this.g = false;
+    this.PropertiesExtensionInHPackage = false;
     this.a.c();
   }
   
@@ -120,7 +120,7 @@ public class fu extends Thread {
         long l3 = (long)(1000.0F * this.b.c(this.a.p()));
         long l4 = (long)((l3 - this.e) / this.f);
         long l5 = (long)((System.currentTimeMillis() - this.d) * this.a.i());
-        if (this.g) {
+        if (this.PropertiesExtensionInHPackage) {
           this.d = System.currentTimeMillis();
           this.e = (long)(1000.0F * this.b.c(this.a.p()));
         } 
@@ -150,7 +150,7 @@ public class fu extends Thread {
   }
   
   public boolean f() {
-    return this.g;
+    return this.PropertiesExtensionInHPackage;
   }
 }
 

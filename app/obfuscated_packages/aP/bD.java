@@ -1,12 +1,12 @@
 package aP;
 
-import S.d;
+import S.SInterfaceDelta;
 import java.lang.reflect.InvocationTargetException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
-class bD implements d {
+class bD implements SInterfaceDelta {
   bD(bB parambB) {}
   
   public void a() {

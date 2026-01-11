@@ -1,7 +1,7 @@
 package aP;
 
 import ao.bq;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -13,7 +13,7 @@ class cz implements ItemListener {
     if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState())
       this.a.b.p().q(); 
     boolean bool = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState();
-    i.c("holdGraphCentered", "" + bool);
+    IOProperties.c("holdGraphCentered", "" + bool);
     bq.a().c().e(bool);
   }
 }

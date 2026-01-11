@@ -1,7 +1,7 @@
 package W;
 
-import V.a;
-import ak.V;
+import AkInterfaceVictor.ExceptionInVPackage;
+import ak.AkInterfaceVictor;
 import ak.aa;
 import bH.D;
 import bH.I;
@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LogFormatIdentifier {
-  public static String a = "delimitedAscii";
+  public static String ExceptionInVPackage = "delimitedAscii";
   
   public static String b = "VTune Data+";
   
@@ -110,7 +110,7 @@ public class LogFormatIdentifier {
   
   public static String U = "AIM CSV";
   
-  public static String V = "LifRacer CSV";
+  public static String AkInterfaceVictor = "LifRacer CSV";
   
   public static String W = "MAXX_ECU";
   
@@ -134,12 +134,12 @@ public class LogFormatIdentifier {
   
   public static String ag = "Durametric";
   
-  public static String a(File paramFile) {
+  public static String ExceptionInVPackage(File paramFile) {
     if (!paramFile.exists())
       throw new FileNotFoundException("Log File not found:\n" + paramFile.getAbsolutePath()); 
     String str = paramFile.getName().toLowerCase();
     if (str.endsWith(".xls") || str.endsWith(".msl"))
-      return c(paramFile) ? I : a; 
+      return c(paramFile) ? I : ExceptionInVPackage; 
     if (str.endsWith(".mlg"))
       return I; 
     if (str.endsWith(".mtl"))
@@ -148,8 +148,8 @@ public class LogFormatIdentifier {
       return Q; 
     if (str.endsWith(".etl"))
       return K; 
-    if (str.endsWith(".mdf") || str.endsWith(".mf4") || (str.endsWith(".dat") && t.a(paramFile, aa.f)))
-      return t.a(paramFile, V.a) ? M : L; 
+    if (str.endsWith(".mdf") || str.endsWith(".mf4") || (str.endsWith(".dat") && t.ExceptionInVPackage(paramFile, aa.f)))
+      return t.ExceptionInVPackage(paramFile, AkInterfaceVictor.ExceptionInVPackage) ? M : L; 
     if (str.endsWith(".dm3")) {
       String str1 = b(paramFile);
       D.c("'" + str1 + "'");
@@ -162,7 +162,7 @@ public class LogFormatIdentifier {
       D.c("'" + str1 + "'");
       return str1;
     } 
-    return a;
+    return ExceptionInVPackage;
   }
   
   private static String b(File paramFile) {
@@ -183,7 +183,7 @@ public class LogFormatIdentifier {
       } 
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Unable to read DM3 file type identifier.");
+      throw new ExceptionInVPackage("Unable to read DM3 file type identifier.");
     } finally {
       try {
         fileInputStream.close();
@@ -279,7 +279,7 @@ public class LogFormatIdentifier {
         if (str.toUpperCase().indexOf("AIM CSV") != -1)
           return U; 
         if (str.indexOf("####, ##") > 0)
-          return V; 
+          return AkInterfaceVictor; 
         if (str.indexOf("VAGHWNumber") >= 0)
           return X; 
         if (str.indexOf("SiE MDT Graph Log") >= 0)
@@ -294,10 +294,10 @@ public class LogFormatIdentifier {
           return ad; 
         if (b == 0 && str.startsWith("Time;Engine"))
           return ag; 
-        if (b == 3 && a(str))
+        if (b == 3 && ExceptionInVPackage(str))
           return ae; 
         if (str.startsWith("\"Time,"))
-          return a; 
+          return ExceptionInVPackage; 
         if (b == 0 && str.startsWith("Date,Time,") && str.indexOf(" Memory ") > 10)
           return af; 
         if (b == 0 && str.startsWith("Time", 1))
@@ -305,10 +305,10 @@ public class LogFormatIdentifier {
         str = bufferedReader.readLine();
         b++;
       } 
-      return a;
+      return ExceptionInVPackage;
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Unable to read CSV file type.");
+      throw new ExceptionInVPackage("Unable to read CSV file type.");
     } finally {
       try {
         bufferedReader.close();
@@ -318,7 +318,7 @@ public class LogFormatIdentifier {
     } 
   }
   
-  private static boolean a(String paramString) {
+  private static boolean ExceptionInVPackage(String paramString) {
     if (bH.X.e(paramString, ",") < bH.X.e(paramString, ";"))
       return false; 
     String[] arrayOfString = paramString.split(",");
@@ -326,7 +326,7 @@ public class LogFormatIdentifier {
       if (b % 2 == 0) {
         if (bH.X.e(arrayOfString[b], ":") != 2)
           return false; 
-      } else if (!I.a(arrayOfString[b])) {
+      } else if (!I.ExceptionInVPackage(arrayOfString[b])) {
         return false;
       } 
     } 

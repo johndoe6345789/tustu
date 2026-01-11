@@ -5,15 +5,15 @@ import G.T;
 import G.aM;
 import G.r;
 import G.s;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import W.I;
 import W.v;
 import W.z;
-import aE.a;
-import aE.d;
-import aE.g;
+import aE.ExceptionInVPackage;
+import aE.CloneableImpl;
+import aE.ExceptionPrintstacktrace;
 import bH.D;
 import bH.t;
 import com.efiAnalytics.ui.bV;
@@ -29,139 +29,139 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class ig implements fS {
-  aF a = new aF();
+  aF ExceptionInVPackage = new aF();
   
   au b = new au();
   
   aM c = new aM();
   
-  aq d = new aq();
+  aq CloneableImpl = new aq();
   
-  private a h = null;
+  private ExceptionInVPackage h = null;
   
   ds e = new ds("Project Properties");
   
   Window f = null;
   
-  ArrayList g = new ArrayList();
+  ArrayList ExceptionPrintstacktrace = new ArrayList();
   
   public ig(Window paramWindow) {
     this.f = paramWindow;
     try {
-      this.e.a(this);
+      this.e.ExceptionInVPackage(this);
       this.b.b(true);
-      this.e.a(this.b, "Configuration");
+      this.e.ExceptionInVPackage(this.b, "Configuration");
       JPanel jPanel = new JPanel();
       jPanel.setLayout(new FlowLayout(1));
-      jPanel.add(this.a);
+      jPanel.add(this.ExceptionInVPackage);
       ih ih = new ih(this, jPanel);
-      this.e.a(ih, "Settings");
-      this.e.a(this.d, "CAN Devices");
+      this.e.ExceptionInVPackage(ih, "Settings");
+      this.e.ExceptionInVPackage(this.CloneableImpl, "CAN Devices");
     } catch (Exception exception) {
       String str = "Failed to create Option tabs, see log for details.";
-      bV.d(str, paramWindow);
-      D.a(str);
+      bV.CloneableImpl(str, paramWindow);
+      D.ExceptionInVPackage(str);
       exception.printStackTrace();
     } 
   }
   
-  public void a() {
-    this.e.a(this.f, "Project Properties");
+  public void ExceptionInVPackage() {
+    this.e.ExceptionInVPackage(this.f, "Project Properties");
   }
   
   public boolean b() {
     try {
       if (!this.b.e()) {
-        this.e.a(this.b);
+        this.e.ExceptionInVPackage(this.b);
         return false;
       } 
       File file = this.b.h();
-      if (!file.equals(this.h.j())) {
+      if (!file.equals(this.h.ExceptionExtensionGetmessage())) {
         String str = file.getName().toLowerCase().endsWith(".ecu") ? "mainController.ecu" : "mainController.ini";
         this.h.l(str);
-        t.a(file, this.h.j());
-        a.A().remove("firmwareDescription");
+        t.ExceptionInVPackage(file, this.h.ExceptionExtensionGetmessage());
+        ExceptionInVPackage.A().remove("firmwareDescription");
       } 
       this.h.p(this.b.c());
-      this.h.a(this.a.b());
-      R r = T.a().c();
+      this.h.ExceptionInVPackage(this.ExceptionInVPackage.b());
+      R r = T.ExceptionInVPackage().c();
       if (r != null) {
         aM aM1 = r.c("tsCanId");
         try {
           if (aM1 != null)
-            aM1.a(r.p(), this.d.b()); 
-        } catch (g g1) {
+            aM1.ExceptionInVPackage(r.p(), this.CloneableImpl.b()); 
+        } catch (ExceptionPrintstacktrace g1) {
           Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g1);
-        } catch (j j) {
-          Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+        } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+          Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
         } 
       } 
-      this.h.a(this.d.b());
-      this.h.b(this.d.c());
-      if (this.d.d()) {
-        d[] arrayOfD = this.d.a();
+      this.h.ExceptionInVPackage(this.CloneableImpl.b());
+      this.h.b(this.CloneableImpl.c());
+      if (this.CloneableImpl.CloneableImpl()) {
+        CloneableImpl[] arrayOfD = this.CloneableImpl.ExceptionInVPackage();
         this.h.H();
         if (arrayOfD != null)
           for (byte b = 0; b < arrayOfD.length; b++) {
-            this.h.a(arrayOfD[b]);
-            r = T.a().c(arrayOfD[b].a());
+            this.h.ExceptionInVPackage(arrayOfD[b]);
+            r = T.ExceptionInVPackage().c(arrayOfD[b].ExceptionInVPackage());
             if (r != null) {
               aM aM1 = r.c("tsCanId");
               try {
-                aM1.a(r.p(), arrayOfD[b].e());
-              } catch (g g1) {
+                aM1.ExceptionInVPackage(r.p(), arrayOfD[b].e());
+              } catch (ExceptionPrintstacktrace g1) {
                 Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g1);
-              } catch (j j) {
-                Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+              } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+                Logger.getLogger(ig.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
               } 
             } 
           }  
       } else {
-        this.e.a(this.d);
+        this.e.ExceptionInVPackage(this.CloneableImpl);
         return false;
       } 
-      String str1 = z.a(file);
-      if (dd.a().h() != null) {
-        dd.a().h().c(str1);
-      } else if (dd.a().b() != null) {
-        dd.a().b().c(str1);
+      String str1 = z.ExceptionInVPackage(file);
+      if (dd.ExceptionInVPackage().h() != null) {
+        dd.ExceptionInVPackage().h().c(str1);
+      } else if (dd.ExceptionInVPackage().b() != null) {
+        dd.ExceptionInVPackage().b().c(str1);
       } 
-      g g = this.h.i();
-      g.setProperty("firstGearRatio", this.c.a());
-      g.setProperty("secondGearRatio", this.c.b());
-      g.setProperty("thirdGearRatio", this.c.c());
-      g.setProperty("fourthGearRatio", this.c.d());
-      g.setProperty("fifthGearRatio", this.c.e());
-      g.setProperty("sixthGearRatio", this.c.f());
-      g.setProperty("weight", this.c.j());
-      String str2 = this.c.g() ? "Automatic" : "Manual";
-      g.setProperty("transmissionType", str2);
-      g.setProperty("converterStall", this.c.h());
-      g.setProperty("finalDriveRatio", this.c.i());
-      g.a(this.h.h());
+      ExceptionPrintstacktrace ExceptionPrintstacktrace = this.h.i();
+      ExceptionPrintstacktrace.setProperty("firstGearRatio", this.c.ExceptionInVPackage());
+      ExceptionPrintstacktrace.setProperty("secondGearRatio", this.c.b());
+      ExceptionPrintstacktrace.setProperty("thirdGearRatio", this.c.c());
+      ExceptionPrintstacktrace.setProperty("fourthGearRatio", this.c.CloneableImpl());
+      ExceptionPrintstacktrace.setProperty("fifthGearRatio", this.c.e());
+      ExceptionPrintstacktrace.setProperty("sixthGearRatio", this.c.f());
+      ExceptionPrintstacktrace.setProperty("weight", this.c.ExceptionExtensionGetmessage());
+      String str2 = this.c.ExceptionPrintstacktrace() ? "Automatic" : "Manual";
+      ExceptionPrintstacktrace.setProperty("transmissionType", str2);
+      ExceptionPrintstacktrace.setProperty("converterStall", this.c.h());
+      ExceptionPrintstacktrace.setProperty("finalDriveRatio", this.c.i());
+      ExceptionPrintstacktrace.ExceptionInVPackage(this.h.h());
       this.h.b();
       e();
-      d();
+      CloneableImpl();
       return true;
-    } catch (a a1) {
-      D.a("Unable to save changes. Error message:\n", (Exception)a1, this.b);
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage("Unable to save changes. Error message:\n", (Exception)a1, this.b);
       a1.printStackTrace();
       return false;
     } 
   }
   
   public void c() {
-    d();
+    CloneableImpl();
   }
   
-  private void d() {
-    this.d.e();
+  private void CloneableImpl() {
+    this.CloneableImpl.e();
   }
   
-  public boolean a(Container paramContainer) {
+  public boolean ExceptionInVPackage(Container paramContainer) {
     return true;
   }
   
@@ -169,56 +169,56 @@ public class ig implements fS {
     return true;
   }
   
-  public void a(a parama) {
+  public void ExceptionInVPackage(ExceptionInVPackage parama) {
     this.h = parama;
-    this.b.a(parama.j());
-    this.b.g(parama.u());
+    this.b.ExceptionInVPackage(parama.ExceptionExtensionGetmessage());
+    this.b.ExceptionPrintstacktrace(parama.u());
     this.b.c(parama.t());
     this.b.e(parama.B());
     if (parama.E().P() != null) {
       this.b.b(parama.E().P());
     } else {
-      this.b.b(g.b("Serial Signature") + ": " + parama.E().i());
+      this.b.b(ExceptionPrintstacktrace.b("Serial Signature") + ": " + parama.E().i());
     } 
-    s[] arrayOfS = v.a().b(parama.j().getAbsolutePath());
-    arrayOfS = (new I()).a(arrayOfS, parama.j().getAbsolutePath());
-    this.a.a(arrayOfS);
-    R r = T.a().c();
-    this.e.a("CAN Devices", r.b());
+    s[] arrayOfS = v.ExceptionInVPackage().b(parama.ExceptionExtensionGetmessage().getAbsolutePath());
+    arrayOfS = (new I()).ExceptionInVPackage(arrayOfS, parama.ExceptionExtensionGetmessage().getAbsolutePath());
+    this.ExceptionInVPackage.ExceptionInVPackage(arrayOfS);
+    R r = T.ExceptionInVPackage().c();
+    this.e.ExceptionInVPackage("CAN Devices", r.b());
     HashMap hashMap = r.m();
     for (String str : hashMap.keySet()) {
       if (hashMap.get(str) != null && (str.equals("") || str.equals("DEFAULT"))) {
-        this.a.a((r)hashMap.get(str));
+        this.ExceptionInVPackage.ExceptionInVPackage((r)hashMap.get(str));
         continue;
       } 
-      this.a.a(str);
+      this.ExceptionInVPackage.ExceptionInVPackage(str);
     } 
-    g g = parama.i();
-    this.c.a(g.getProperty("firstGearRatio", ""));
-    this.c.b(g.getProperty("secondGearRatio", ""));
-    this.c.c(g.getProperty("thirdGearRatio", ""));
-    this.c.d(g.getProperty("fourthGearRatio", ""));
-    this.c.e(g.getProperty("fifthGearRatio", ""));
-    this.c.f(g.getProperty("sixthGearRatio", ""));
-    this.c.i(g.getProperty("weight", ""));
-    boolean bool = g.getProperty("transmissionType", "").equals("Automatic");
-    this.c.a(bool);
-    this.c.g(g.getProperty("converterStall", ""));
-    this.c.h(g.getProperty("finalDriveRatio", ""));
-    this.d.a(parama);
+    ExceptionPrintstacktrace ExceptionPrintstacktrace = parama.i();
+    this.c.ExceptionInVPackage(ExceptionPrintstacktrace.getProperty("firstGearRatio", ""));
+    this.c.b(ExceptionPrintstacktrace.getProperty("secondGearRatio", ""));
+    this.c.c(ExceptionPrintstacktrace.getProperty("thirdGearRatio", ""));
+    this.c.CloneableImpl(ExceptionPrintstacktrace.getProperty("fourthGearRatio", ""));
+    this.c.e(ExceptionPrintstacktrace.getProperty("fifthGearRatio", ""));
+    this.c.f(ExceptionPrintstacktrace.getProperty("sixthGearRatio", ""));
+    this.c.i(ExceptionPrintstacktrace.getProperty("weight", ""));
+    boolean bool = ExceptionPrintstacktrace.getProperty("transmissionType", "").equals("Automatic");
+    this.c.ExceptionInVPackage(bool);
+    this.c.ExceptionPrintstacktrace(ExceptionPrintstacktrace.getProperty("converterStall", ""));
+    this.c.h(ExceptionPrintstacktrace.getProperty("finalDriveRatio", ""));
+    this.CloneableImpl.ExceptionInVPackage(parama);
   }
   
-  public void a(String paramString) {
-    this.e.a(paramString);
+  public void ExceptionInVPackage(String paramString) {
+    this.e.ExceptionInVPackage(paramString);
   }
   
-  public void a(co paramco) {
-    this.g.add(paramco);
+  public void ExceptionInVPackage(co paramco) {
+    this.ExceptionPrintstacktrace.add(paramco);
   }
   
   private void e() {
-    for (co co : this.g)
-      co.a(); 
+    for (co co : this.ExceptionPrintstacktrace)
+      co.ExceptionInVPackage(); 
   }
 }
 

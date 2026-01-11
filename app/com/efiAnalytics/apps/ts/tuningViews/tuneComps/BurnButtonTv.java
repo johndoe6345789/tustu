@@ -2,7 +2,7 @@ package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
 import G.R;
 import G.T;
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.apps.ts.tuningViews.TuneViewComponent;
 import com.efiAnalytics.apps.ts.tuningViews.h;
 import com.efiAnalytics.ui.cO;
@@ -15,8 +15,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import n.b;
-import s.g;
+import n.JPanelExtensionInNPackage;
+import s.SComponentGolf;
 
 public class BurnButtonTv extends TuneViewComponent {
   private final List k = new ArrayList();
@@ -29,7 +29,7 @@ public class BurnButtonTv extends TuneViewComponent {
   
   ImageIcon f = null;
   
-  ImageIcon g = null;
+  ImageIcon SComponentGolf = null;
   
   boolean h = false;
   
@@ -40,33 +40,33 @@ public class BurnButtonTv extends TuneViewComponent {
   public BurnButtonTv() {
     setLayout((LayoutManager)new h(this));
     try {
-      Image image = cO.a().a(cO.W, (Component)this, 24);
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.W, (Component)this, 24);
       this.f = new ImageIcon(image);
-      image = cO.a().a(cO.Z, (Component)this, 24);
-      this.g = new ImageIcon(image);
-    } catch (a a) {
-      Logger.getLogger(b.class.getName()).log(Level.INFO, "Unable to load burn button image.", (Throwable)a);
+      image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.Z, (Component)this, 24);
+      this.SComponentGolf = new ImageIcon(image);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(JPanelExtensionInNPackage.class.getName()).log(Level.INFO, "Unable to load burn button image.", (Throwable)ExceptionInVPackage);
     } 
-    this.c.setText(g.b("Burn"));
+    this.c.setText(SComponentGolf.JPanelExtensionInNPackage("Burn"));
     add(this.c);
-    this.c.addActionListener(new a(this));
-    b b = new b(this);
-    addMouseListener(b);
+    this.c.addActionListener(new ExceptionInVPackage(this));
+    JPanelExtensionInNPackage JPanelExtensionInNPackage = new JPanelExtensionInNPackage(this);
+    addMouseListener(JPanelExtensionInNPackage);
   }
   
   private void burn() {
-    for (String str : T.a().d()) {
-      R r = T.a().c(str);
+    for (String str : T.ExceptionInVPackage().d()) {
+      R r = T.ExceptionInVPackage().c(str);
       r.I();
     } 
   }
   
   public void initializeComponents() {
     enableBurn(false);
-    for (String str : T.a().d()) {
-      R r = T.a().c(str);
+    for (String str : T.ExceptionInVPackage().d()) {
+      R r = T.ExceptionInVPackage().c(str);
       this.k.add(r);
-      r.C().a(this.d);
+      r.C().ExceptionInVPackage(this.d);
       if (r.C().C())
         enableBurn(true); 
     } 
@@ -74,7 +74,7 @@ public class BurnButtonTv extends TuneViewComponent {
   
   public void close() {
     for (R r : this.k)
-      r.C().b(this.d); 
+      r.C().JPanelExtensionInNPackage(this.d); 
   }
   
   public boolean isDirty() {
@@ -86,8 +86,8 @@ public class BurnButtonTv extends TuneViewComponent {
   public void enableBurn(boolean paramBoolean) {
     if (paramBoolean && this.f != null) {
       this.c.setIcon(this.f);
-    } else if (!paramBoolean && this.g != null) {
-      this.c.setIcon(this.g);
+    } else if (!paramBoolean && this.SComponentGolf != null) {
+      this.c.setIcon(this.SComponentGolf);
     } else {
       this.c.setEnabled(paramBoolean);
     } 
@@ -96,11 +96,11 @@ public class BurnButtonTv extends TuneViewComponent {
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
     if (getWidth() != paramInt3 || getHeight() != paramInt4)
-      if (this.e == null || !this.e.a) {
+      if (this.e == null || !this.e.ExceptionInVPackage) {
         this.e = new e(this);
         this.e.start();
       } else {
-        this.e.a();
+        this.e.ExceptionInVPackage();
       }  
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
   }

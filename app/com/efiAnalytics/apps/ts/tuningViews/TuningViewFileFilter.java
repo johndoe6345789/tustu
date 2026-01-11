@@ -2,11 +2,11 @@ package com.efiAnalytics.apps.ts.tuningViews;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class TuningViewFileFilter implements FilenameFilter {
   public boolean accept(File paramFile, String paramString) {
-    return paramString.toLowerCase().endsWith(a.cp.toLowerCase());
+    return paramString.toLowerCase().endsWith(IOPropertiesUsingFile.cp.toLowerCase());
   }
 }
 

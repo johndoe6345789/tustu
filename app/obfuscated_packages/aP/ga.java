@@ -3,16 +3,16 @@ package aP;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ga implements ActionListener {
   ga(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    a.a().b(a.bf, jCheckBoxMenuItem.getState() + "");
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bf, jCheckBoxMenuItem.getState() + "");
     if (!jCheckBoxMenuItem.getState())
-      a.a().b(a.bg, jCheckBoxMenuItem.getState() + ""); 
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bg, jCheckBoxMenuItem.getState() + ""); 
   }
 }
 

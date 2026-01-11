@@ -3,7 +3,7 @@ package t;
 import G.R;
 import G.T;
 import G.cu;
-import aE.a;
+import aE.PropertiesExtension;
 import bH.X;
 import com.efiAnalytics.apps.ts.dashboard.SingleChannelDashComponent;
 import com.efiAnalytics.apps.ts.dashboard.f;
@@ -21,10 +21,10 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
-public class bi extends a implements f {
-  JComboBox a = new JComboBox();
+public class bi extends PropertiesExtension implements f {
+  JComboBox PropertiesExtension = new JComboBox();
   
   JComboBox b = new JComboBox();
   
@@ -33,45 +33,45 @@ public class bi extends a implements f {
   private JPanel d = new JPanel();
   
   public bi(Window paramWindow, ai paramai) {
-    super(paramWindow, g.b("Select Output Channel"));
-    a(paramai);
+    super(paramWindow, SComponentGolf.b("Select Output Channel"));
+    PropertiesExtension(paramai);
     this.d.setLayout(new BorderLayout());
     add(this.d, "Center");
     String str = "";
     if (c().c())
       str = c().b().getEcuConfigurationName(); 
-    T t = T.a();
-    R r = a(str);
+    T t = T.PropertiesExtension();
+    R r = PropertiesExtension(str);
     if (r == null)
       r = t.c(); 
     String[] arrayOfString = t.d();
-    this.a.setEditable(false);
-    this.a.addItem(new bm(this, g.b("Default"), ""));
+    this.PropertiesExtension.setEditable(false);
+    this.PropertiesExtension.addItem(new bm(this, SComponentGolf.b("Default"), ""));
     for (byte b = 0; b < arrayOfString.length; b++)
-      this.a.addItem(arrayOfString[b]); 
-    this.a.addItem(new bm(this, cu.a, cu.a));
-    s s = c().a().get(0);
-    this.a.setSelectedItem(s.getEcuConfigurationName());
-    this.a.addActionListener(new bj(this));
+      this.PropertiesExtension.addItem(arrayOfString[b]); 
+    this.PropertiesExtension.addItem(new bm(this, cu.PropertiesExtension, cu.PropertiesExtension));
+    s s = c().PropertiesExtension().get(0);
+    this.PropertiesExtension.setSelectedItem(s.getEcuConfigurationName());
+    this.PropertiesExtension.addActionListener(new bj(this));
     this.b.setEditable(false);
-    if (str.equals(cu.a)) {
+    if (str.equals(cu.PropertiesExtension)) {
       d();
     } else {
-      a(r);
+      PropertiesExtension(r);
     } 
     this.b.addActionListener(new bk(this));
-    JButton jButton = new JButton(g.b("Close"));
+    JButton jButton = new JButton(SComponentGolf.b("Close"));
     jButton.addActionListener(new bl(this));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(1, 1));
-    jPanel2.setBorder(BorderFactory.createTitledBorder(g.b("Controller")));
-    jPanel2.add(this.a);
+    jPanel2.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Controller")));
+    jPanel2.add(this.PropertiesExtension);
     jPanel1.add(jPanel2);
     jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(1, 1));
-    jPanel2.setBorder(BorderFactory.createTitledBorder(g.b("Output Channel")));
+    jPanel2.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Output Channel")));
     jPanel2.add(this.b);
     jPanel1.add(jPanel2);
     this.d.add("Center", jPanel1);
@@ -82,30 +82,30 @@ public class bi extends a implements f {
     pack();
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void PropertiesExtension(String paramString1, String paramString2) {
     String str1;
-    Object object = this.a.getSelectedItem();
+    Object object = this.PropertiesExtension.getSelectedItem();
     if (object instanceof bm) {
       bm bm = (bm)object;
-      str1 = bm.a();
+      str1 = bm.PropertiesExtension();
     } else {
       str1 = object.toString();
     } 
-    String str2 = (this.a.getSelectedItem() != null) ? str1 : null;
-    for (byte b = 0; b < this.a.getItemCount(); b++) {
-      if (this.a.getItemAt(b) instanceof bm) {
-        bm bm = this.a.getItemAt(b);
-        String str = bm.a();
+    String str2 = (this.PropertiesExtension.getSelectedItem() != null) ? str1 : null;
+    for (byte b = 0; b < this.PropertiesExtension.getItemCount(); b++) {
+      if (this.PropertiesExtension.getItemAt(b) instanceof bm) {
+        bm bm = this.PropertiesExtension.getItemAt(b);
+        String str = bm.PropertiesExtension();
         if (str != null && str.equals(paramString1))
-          this.a.setSelectedIndex(b); 
+          this.PropertiesExtension.setSelectedIndex(b); 
       } 
     } 
-    this.a.setSelectedItem(paramString1);
-    if (paramString1.equals(cu.a)) {
+    this.PropertiesExtension.setSelectedItem(paramString1);
+    if (paramString1.equals(cu.PropertiesExtension)) {
       d();
     } else {
-      R r = a(paramString1);
-      a(r);
+      R r = PropertiesExtension(paramString1);
+      PropertiesExtension(r);
     } 
     if (paramString2 != null && (this.b.getSelectedItem() == null || !this.b.getSelectedItem().equals(paramString2)))
       this.b.setSelectedItem(paramString2); 
@@ -113,23 +113,23 @@ public class bi extends a implements f {
   
   public void e(ArrayList<SingleChannelDashComponent> paramArrayList) {
     if (!paramArrayList.isEmpty() && paramArrayList.get(0) instanceof SingleChannelDashComponent) {
-      fp.a(this.d, true);
+      fp.PropertiesExtension(this.d, true);
       SingleChannelDashComponent singleChannelDashComponent = paramArrayList.get(0);
       try {
-        a(singleChannelDashComponent.getEcuConfigurationName(), singleChannelDashComponent.getOutputChannel());
+        PropertiesExtension(singleChannelDashComponent.getEcuConfigurationName(), singleChannelDashComponent.getOutputChannel());
       } catch (Exception exception) {
-        a("", "");
+        PropertiesExtension("", "");
       } 
       String str1 = singleChannelDashComponent.getEcuConfigurationName();
       String str2 = singleChannelDashComponent.getOutputChannel();
       Color color = UIManager.getColor("Label.foreground");
-      this.a.setForeground(color);
+      this.PropertiesExtension.setForeground(color);
       this.b.setForeground(color);
       for (s s : paramArrayList) {
         if (s instanceof SingleChannelDashComponent) {
           singleChannelDashComponent = (SingleChannelDashComponent)s;
           if (!singleChannelDashComponent.getEcuConfigurationName().equals(str1)) {
-            this.a.setForeground(Color.GRAY);
+            this.PropertiesExtension.setForeground(Color.GRAY);
             break;
           } 
         } 
@@ -144,23 +144,23 @@ public class bi extends a implements f {
         } 
       } 
     } else {
-      fp.a(this.d, false);
+      fp.PropertiesExtension(this.d, false);
     } 
   }
   
   private void d() {
-    String[] arrayOfString = cu.a().b();
-    arrayOfString = X.a(arrayOfString);
-    a(arrayOfString);
+    String[] arrayOfString = cu.PropertiesExtension().b();
+    arrayOfString = X.PropertiesExtension(arrayOfString);
+    PropertiesExtension(arrayOfString);
   }
   
-  private void a(R paramR) {
+  private void PropertiesExtension(R paramR) {
     String[] arrayOfString = paramR.s();
-    arrayOfString = X.a(arrayOfString);
-    a(arrayOfString);
+    arrayOfString = X.PropertiesExtension(arrayOfString);
+    PropertiesExtension(arrayOfString);
   }
   
-  private void a(String[] paramArrayOfString) {
+  private void PropertiesExtension(String[] paramArrayOfString) {
     ActionListener[] arrayOfActionListener = this.b.getActionListeners();
     byte b;
     for (b = 0; b < arrayOfActionListener.length; b++)
@@ -178,15 +178,15 @@ public class bi extends a implements f {
     } 
   }
   
-  private R a(String paramString) {
-    return (paramString == null || paramString.equals("")) ? a.A().E() : T.a().c(paramString);
+  private R PropertiesExtension(String paramString) {
+    return (paramString == null || paramString.equals("")) ? PropertiesExtension.A().E() : T.PropertiesExtension().c(paramString);
   }
   
-  public JPanel a() {
+  public JPanel PropertiesExtension() {
     return this.d;
   }
   
-  public void a(ArrayList paramArrayList) {
+  public void PropertiesExtension(ArrayList paramArrayList) {
     this.c = true;
     e(paramArrayList);
     this.c = false;

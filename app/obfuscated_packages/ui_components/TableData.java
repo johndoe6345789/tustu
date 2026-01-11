@@ -1,14 +1,14 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.s;
 import com.efiAnalytics.ui.u;
-import h.i;
+import h.IOProperties;
 import java.util.StringTokenizer;
 
 public class hY extends s {
-  private int a = -1;
+  private int ExceptionInVPackage = -1;
   
   private int b = -1;
   
@@ -16,12 +16,12 @@ public class hY extends s {
   
   private double d = 0.0D;
   
-  public void a(String[] paramArrayOfString) {
+  public void ExceptionInVPackage(String[] paramArrayOfString) {
     e(paramArrayOfString);
   }
   
   public String[] c() {
-    return a();
+    return ExceptionInVPackage();
   }
   
   public void b(String[] paramArrayOfString) {
@@ -36,16 +36,16 @@ public class hY extends s {
     hY hY1 = new hY();
     String[] arrayOfString1 = d();
     String[] arrayOfString2 = c();
-    hY1.a(arrayOfString2.length, arrayOfString1.length);
+    hY1.ExceptionInVPackage(arrayOfString2.length, arrayOfString1.length);
     double[][] arrayOfDouble = new double[arrayOfString2.length][arrayOfString1.length];
     hY1.f("Default AFR");
-    hY1.d(i.a("yAxisField", "MAP"));
-    int i = i();
-    hY1.b(i);
-    hY1.a(1);
+    hY1.d(IOProperties.ExceptionInVPackage("yAxisField", "MAP"));
+    int IOProperties = IOProperties();
+    hY1.b(IOProperties);
+    hY1.ExceptionInVPackage(1);
     hY1.b(arrayOfString1);
-    hY1.a(arrayOfString2);
-    String str = i.e("defaultAfrValues", "");
+    hY1.ExceptionInVPackage(arrayOfString2);
+    String str = IOProperties.e("defaultAfrValues", "");
     StringTokenizer stringTokenizer = new StringTokenizer(str, "\t");
     if (stringTokenizer.countTokens() - 1 == arrayOfDouble.length * (arrayOfDouble[0]).length) {
       StringTokenizer stringTokenizer1 = new StringTokenizer(str, "|");
@@ -63,8 +63,8 @@ public class hY extends s {
     } else {
       try {
         u.b(hY1);
-      } catch (a a) {
-        a.printStackTrace();
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
         D.c("Error Generating AFR table, using method 2.");
         for (byte b = 0; b < arrayOfDouble.length; b++) {
           for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
@@ -79,7 +79,7 @@ public class hY extends s {
             } 
           } 
         } 
-        hY1.a(arrayOfDouble);
+        hY1.ExceptionInVPackage(arrayOfDouble);
       } 
     } 
     hY1.C();
@@ -94,22 +94,22 @@ public class hY extends s {
         str = str + e(b, b1) + "\t"; 
       str = str + "|";
     } 
-    i.c("defaultAfrValues", str);
+    IOProperties.c("defaultAfrValues", str);
   }
   
   public int g() {
-    return (this.a == -1) ? o() : this.a;
+    return (this.ExceptionInVPackage == -1) ? o() : this.ExceptionInVPackage;
   }
   
-  public void a(int paramInt) {
-    this.a = paramInt;
+  public void ExceptionInVPackage(int paramInt) {
+    this.ExceptionInVPackage = paramInt;
   }
   
   public int h() {
     return (this.b == -1) ? 0 : this.b;
   }
   
-  public int i() {
+  public int IOProperties() {
     return this.c;
   }
   
@@ -117,7 +117,7 @@ public class hY extends s {
     this.c = (paramInt == -1) ? 0 : paramInt;
   }
   
-  public void a(double paramDouble) {
+  public void ExceptionInVPackage(double paramDouble) {
     this.d = paramDouble;
   }
   

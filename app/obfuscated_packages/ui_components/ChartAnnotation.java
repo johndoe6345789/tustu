@@ -1,11 +1,11 @@
 package ao;
 
 import W.n;
-import i.d;
+import i.IComponentDelta;
 import java.io.File;
 import javax.swing.JToggleButton;
 
-class an implements d {
+class an implements IComponentDelta {
   an(aj paramaj) {}
   
   public void a(String paramString1, String paramString2) {

@@ -1,14 +1,14 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class SystemTimeFunction extends ac {
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     return System.currentTimeMillis() / 1000.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

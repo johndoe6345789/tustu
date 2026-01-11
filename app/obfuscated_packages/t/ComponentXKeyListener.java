@@ -4,13 +4,13 @@ import java.awt.Component;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 class ComponentXKeyListener extends KeyAdapter {
   ComponentXKeyListener(r paramr) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
-    if (this.a.a((Component)this.a.b, g.b("Component X"))) {
+    if (this.a.a((Component)this.a.b, SComponentGolf.b("Component X"))) {
       this.a.c().h((int)this.a.b.e());
       this.a.b.setForeground(UIManager.getColor("Label.foreground"));
     } 

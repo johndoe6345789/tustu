@@ -2,8 +2,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
 import G.aM;
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.X;
 import bt.bZ;
 import com.efiAnalytics.ui.bV;
@@ -23,7 +23,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class RequiredFuelCalculatorDialog extends JDialog {
   DisplacementUnitField a = new DisplacementUnitField(this);
@@ -38,9 +38,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   
   JRadioButton f = null;
   
-  JRadioButton g = null;
+  JRadioButton ExceptionPrintstacktrace = null;
   
-  private bZ j = null;
+  private bZ ExceptionExtensionGetmessage = null;
   
   private et k = null;
   
@@ -49,13 +49,13 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   boolean i = false;
   
   public an(Window paramWindow, R paramR, et paramet, bZ parambZ) {
-    super(paramWindow, g.b("Required Fuel Calculator"));
+    super(paramWindow, ExceptionPrintstacktrace.b("Required Fuel Calculator"));
     this.k = paramet;
     this.h = paramR;
     JPanel jPanel1 = new JPanel();
     setLayout(new BorderLayout());
     add("Center", jPanel1);
-    jPanel1.setBorder(BorderFactory.createTitledBorder(g.b("Required Fuel Calculator")));
+    jPanel1.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Required Fuel Calculator")));
     jPanel1.setLayout(new BorderLayout(10, 10));
     a(parambZ);
     JPanel jPanel2 = new JPanel();
@@ -72,7 +72,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } 
     boolean bool2 = b("injectorUnits", "lb/hr").equals("lb/hr");
     if (bool2) {
-      g();
+      ExceptionPrintstacktrace();
     } else if (!this.i) {
       f();
     } 
@@ -84,7 +84,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   private JPanel b() {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(4, 2, 5, 5));
-    jPanel.add(new JLabel(g.b("Engine Displacement")));
+    jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Engine Displacement")));
     jPanel.add((Component)this.a);
     String str = "enginesize";
     if (this.h.c(str) != null) {
@@ -96,7 +96,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       this.a.a = this.f.isSelected();
       this.a.setText(b("displacement", "350"));
     } 
-    jPanel.add(new JLabel(g.b("Number of Cylinders")));
+    jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Number of Cylinders")));
     jPanel.add((Component)this.b);
     str = "nCylinders";
     if (this.h.c(str) != null) {
@@ -105,7 +105,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } else {
       this.b.setText(b("nCylinders", "8"));
     } 
-    jPanel.add(new JLabel(g.b("Injector Flow")));
+    jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Injector Flow")));
     jPanel.add((Component)this.c);
     str = "staged_pri_size";
     if (this.h.c(str) != null) {
@@ -114,10 +114,10 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       this.i = true;
       this.c.a = true;
     } else {
-      this.c.a = this.g.isSelected();
+      this.c.a = this.ExceptionPrintstacktrace.isSelected();
       this.c.setText(b("injectorFlow", "30"));
     } 
-    jPanel.add(new JLabel(g.b("Air-Fuel Ratio")));
+    jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Air-Fuel Ratio")));
     jPanel.add((Component)this.d);
     str = "stoich";
     if (this.h.c(str) != null) {
@@ -131,32 +131,32 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   
   private JPanel c() {
     JPanel jPanel = new JPanel();
-    jPanel.setBorder(BorderFactory.createTitledBorder(g.b("Units")));
+    jPanel.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Units")));
     boolean bool1 = (!this.i && b("displacementUnits", "CID").equals("CID")) ? true : false;
     jPanel.setLayout(new GridLayout(0, 2));
     ButtonGroup buttonGroup = new ButtonGroup();
-    this.e = new JRadioButton(g.b("CID"));
+    this.e = new JRadioButton(ExceptionPrintstacktrace.b("CID"));
     buttonGroup.add(this.e);
     this.e.addActionListener(new ao(this));
     this.e.setSelected(bool1);
     jPanel.add(this.e);
-    this.f = new JRadioButton(g.b("CC"));
+    this.f = new JRadioButton(ExceptionPrintstacktrace.b("CC"));
     buttonGroup.add(this.f);
     this.f.addActionListener(new ap(this));
     this.f.setSelected(!bool1);
     jPanel.add(this.f);
     buttonGroup = new ButtonGroup();
-    JRadioButton jRadioButton = new JRadioButton(g.b("lb/hr"));
+    JRadioButton jRadioButton = new JRadioButton(ExceptionPrintstacktrace.b("lb/hr"));
     buttonGroup.add(jRadioButton);
     jRadioButton.addActionListener(new aq(this));
     boolean bool2 = (!this.i && b("injectorUnits", "lb/hr").equals("lb/hr")) ? true : false;
     jRadioButton.setSelected(bool2);
     jPanel.add(jRadioButton);
-    this.g = new JRadioButton(g.b("cc/min"));
-    buttonGroup.add(this.g);
-    this.g.addActionListener(new ar(this));
-    this.g.setSelected(!bool2);
-    jPanel.add(this.g);
+    this.ExceptionPrintstacktrace = new JRadioButton(ExceptionPrintstacktrace.b("cc/min"));
+    buttonGroup.add(this.ExceptionPrintstacktrace);
+    this.ExceptionPrintstacktrace.addActionListener(new ar(this));
+    this.ExceptionPrintstacktrace.setSelected(!bool2);
+    jPanel.add(this.ExceptionPrintstacktrace);
     return jPanel;
   }
   
@@ -175,7 +175,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     a("injectorUnits", "cc/min");
   }
   
-  private void g() {
+  private void ExceptionPrintstacktrace() {
     a("injectorUnits", "lb/hr");
     this.c.b();
   }
@@ -183,9 +183,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   private JPanel h() {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
-    JButton jButton2 = new JButton(g.b("Cancel"));
+    JButton jButton2 = new JButton(ExceptionPrintstacktrace.b("Cancel"));
     jButton2.addActionListener(new as(this));
-    JButton jButton1 = new JButton(g.b("Ok"));
+    JButton jButton1 = new JButton(ExceptionPrintstacktrace.b("Ok"));
     jButton1.addActionListener(new at(this));
     if (bV.d()) {
       jPanel.add(jButton1);
@@ -212,23 +212,23 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     d4 = Double.parseDouble(this.a.getText());
     d4 /= d2;
     if (d4 <= 0.0D) {
-      bV.d(g.b("Displacement must be a positive number."), this);
+      bV.d(ExceptionPrintstacktrace.b("Displacement must be a positive number."), this);
       return false;
     } 
     d5 = Double.parseDouble(this.c.getText());
     d5 /= d3;
     if (d5 <= 0.0D) {
-      bV.d(g.b("Injector Flow must be a positive number."), this);
+      bV.d(ExceptionPrintstacktrace.b("Injector Flow must be a positive number."), this);
       return false;
     } 
     d6 = Double.parseDouble(this.d.getText());
     if (d6 <= 0.0D) {
-      bV.d(g.b("AFR must be a positive number."), this);
+      bV.d(ExceptionPrintstacktrace.b("AFR must be a positive number."), this);
       return false;
     } 
     i = Integer.parseInt(this.b.getText());
     if (i <= 0) {
-      bV.d(g.b("Number of Cylinders must be a positive whole number."), this);
+      bV.d(ExceptionPrintstacktrace.b("Number of Cylinders must be a positive whole number."), this);
       return false;
     } 
     double d7 = 3.6E7D;
@@ -241,10 +241,10 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       aM aM = this.h.c(str);
       try {
         aM.a(this.h.h(), d4 * 16.38706D);
-      } catch (g g) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
       } 
     } 
     str = "nCylinders";
@@ -252,10 +252,10 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       aM aM = this.h.c(str);
       try {
         aM.a(this.h.h(), i);
-      } catch (g g) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
       } 
     } 
     str = "staged_pri_size";
@@ -263,10 +263,10 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       aM aM = this.h.c(str);
       try {
         aM.a(this.h.h(), d5 * 10.5D);
-      } catch (g g) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
       } 
     } 
     str = "stoich";
@@ -274,13 +274,13 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       aM aM = this.h.c(str);
       try {
         aM.a(this.h.h(), d6);
-      } catch (g g) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
       } 
     } 
-    this.j.b(X.b(d1, 1));
+    this.ExceptionExtensionGetmessage.b(X.b(d1, 1));
     dispose();
     return true;
   }
@@ -299,7 +299,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   }
   
   public void a(bZ parambZ) {
-    this.j = parambZ;
+    this.ExceptionExtensionGetmessage = parambZ;
   }
 }
 

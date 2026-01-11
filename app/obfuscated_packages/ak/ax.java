@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import W.X;
 import W.ah;
@@ -23,20 +23,20 @@ public class ax extends S {
     super(",", true);
   }
   
-  public boolean a(String paramString) {
+  public boolean ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     try {
       this.h = new File(paramString);
       fileInputStream = new FileInputStream(this.h);
       this.e = new ah(new InputStreamReader(fileInputStream, "ISO-8859-1"));
-      this.n = this.e.a();
+      this.n = this.e.ExceptionInVPackage();
       while (!this.n.startsWith("\"Time\"") && !this.n.startsWith("Time"))
-        this.n = this.e.a(); 
+        this.n = this.e.ExceptionInVPackage(); 
       return true;
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new a("Unable to open file for reading:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
-      throw new a("Unable to read from file:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
     } 
   }
   
@@ -47,10 +47,10 @@ public class ax extends S {
         str1 = l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       byte b = 0;
       if (str1.startsWith("\"Time") || str1.startsWith("Time")) {
@@ -77,7 +77,7 @@ public class ax extends S {
           if (str2.equalsIgnoreCase("lambda"))
             str2 = "Lambda"; 
           d d = new d();
-          d.a(str2.trim());
+          d.ExceptionInVPackage(str2.trim());
           d = b(d);
           this.g.add(d);
           b++;
@@ -100,16 +100,16 @@ public class ax extends S {
             ((d)this.g.get(b++)).b(str1);
             continue;
           } 
-          a(true);
+          ExceptionInVPackage(true);
           break;
         } 
       } 
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     ArrayList<T> arrayList = new ArrayList();
@@ -120,8 +120,8 @@ public class ax extends S {
   }
   
   private d b(d paramd) {
-    if (paramd.a().equals("Time")) {
-      paramd.a(0.001F);
+    if (paramd.ExceptionInVPackage().equals("Time")) {
+      paramd.ExceptionInVPackage(0.001F);
       paramd.b("s");
     } 
     return paramd;

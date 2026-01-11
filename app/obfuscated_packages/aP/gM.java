@@ -1,12 +1,12 @@
 package aP;
 
 import bH.D;
-import bl.l;
-import c.e;
+import bl.ApplicationPluginExtension;
+import c.CInterfaceEcho;
 import com.efiAnalytics.plugin.ApplicationPlugin;
-import r.i;
+import r.RInterfaceIndia;
 
-class gM implements e {
+class gM implements CInterfaceEcho {
   ApplicationPlugin a = null;
   
   public gM(dB paramdB, ApplicationPlugin paramApplicationPlugin) {
@@ -15,8 +15,8 @@ class gM implements e {
   
   public boolean a() {
     try {
-      this.a = l.a().b(this.a.getIdName());
-      return (i.a().a("09jtrkgds;okfds") && this.a.isMenuEnabled());
+      this.a = ApplicationPluginExtension.a().b(this.a.getIdName());
+      return (RInterfaceIndia.a().a("09jtrkgds;okfds") && this.a.isMenuEnabled());
     } catch (Error error) {
       D.a("Error calling isMenuEnabled() on Plugin " + this.a.getIdName() + " by " + this.a.getAuthor() + "\nMessage\n" + error.getMessage());
       return false;

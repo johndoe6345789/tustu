@@ -2,14 +2,14 @@ package ao;
 
 import W.j;
 import W.n;
-import h.g;
+import h.PropertiesExtensionInHPackage;
 
 public class D {
   public static j a(n paramn) {
-    j j = paramn.a(g.a().a("Field.TP"));
+    j j = paramn.a(PropertiesExtensionInHPackage.a().a("Field.TP"));
     if (j != null)
       return j; 
-    j = paramn.a(g.a().a("TPS"));
+    j = paramn.a(PropertiesExtensionInHPackage.a().a("TPS"));
     if (j != null)
       return j; 
     j = paramn.a("TPS");
@@ -17,12 +17,12 @@ public class D {
   }
   
   public static j b(n paramn) {
-    j j = paramn.a(g.a().a("VSS2"));
-    if (j != null && j.g() > j.h()) {
+    j j = paramn.a(PropertiesExtensionInHPackage.a().a("VSS2"));
+    if (j != null && j.PropertiesExtensionInHPackage() > j.h()) {
       bH.D.d("findMphColumn, Using VSS2");
       return j;
     } 
-    j = paramn.a(g.a().a("SmoothMPH"));
+    j = paramn.a(PropertiesExtensionInHPackage.a().a("SmoothMPH"));
     if (j != null) {
       bH.D.d("findMphColumn, Using SmoothMPH");
       return j;
@@ -32,7 +32,7 @@ public class D {
       bH.D.d("findMphColumn, Using MPH");
       return j;
     } 
-    j = paramn.a(g.a().a("Field.speedMPH"));
+    j = paramn.a(PropertiesExtensionInHPackage.a().a("Field.speedMPH"));
     if (j != null) {
       bH.D.d("findMphColumn, Using " + j.a());
       return j;

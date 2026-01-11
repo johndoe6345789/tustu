@@ -1,19 +1,19 @@
 package aP;
 
-import S.d;
-import V.a;
+import S.SInterfaceDelta;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
-import s.g;
+import s.SComponentGolf;
 
-class bC implements d {
+class bC implements SInterfaceDelta {
   bC(bB parambB) {}
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
-      f.a().o();
-      hq.a().a(g.b("Auto Logging: Started Logging"));
-    } catch (a a) {
-      bV.d(a.getLocalizedMessage(), dd.a().c());
+      f.ExceptionInVPackage().o();
+      hq.ExceptionInVPackage().ExceptionInVPackage(SComponentGolf.b("Auto Logging: Started Logging"));
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.SInterfaceDelta(ExceptionInVPackage.getLocalizedMessage(), dd.ExceptionInVPackage().c());
     } 
   }
   

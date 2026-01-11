@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -20,13 +20,13 @@ public class AccelHpFunction extends ac {
     this.d = paramab4;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d1 = this.c.b(paramS);
     double d2 = this.d.b(paramS) / 32.0D * this.a.b(paramS) * 1.46667D / d1 * this.b.b(paramS) * 1.46667D / 550.0D;
     return Double.isNaN(d2) ? 0.0D : d2;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

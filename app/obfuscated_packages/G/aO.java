@@ -1,8 +1,8 @@
 package G;
 
-import V.g;
-import V.j;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import java.util.HashMap;
 import java.util.logging.Level;
@@ -43,12 +43,12 @@ public class aO implements aN, cq {
         double d = i.a(this.d, this.c);
         this.b.a(this.c.h(), d);
         this.a.put(paramString, Double.valueOf(paramDouble));
-      } catch (U u) {
+      } catch (ExceptionInAxPackage u) {
         D.c("unable to evaluate expression: " + this.d + ", Error: " + u.getLocalizedMessage());
-      } catch (g g) {
-        Logger.getLogger(aO.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-      } catch (j j) {
-        D.c("unable to evaluate expression: " + this.d + ", Error: " + j.getLocalizedMessage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(aO.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        D.c("unable to evaluate expression: " + this.d + ", Error: " + ExceptionExtensionGetmessage.getLocalizedMessage());
       }  
   }
   
@@ -56,12 +56,12 @@ public class aO implements aN, cq {
     try {
       double d = i.a(this.d, this.c);
       this.b.a(this.c.h(), d);
-    } catch (U u) {
+    } catch (ExceptionInAxPackage u) {
       D.c("unable to evaluate expression: " + this.d + ", Error: " + u.getLocalizedMessage());
-    } catch (g g) {
-      Logger.getLogger(aO.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
-    } catch (j j) {
-      D.c("unable to evaluate expression: " + this.d + ", Error: " + j.getLocalizedMessage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aO.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      D.c("unable to evaluate expression: " + this.d + ", Error: " + ExceptionExtensionGetmessage.getLocalizedMessage());
     } 
   }
 }

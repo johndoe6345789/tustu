@@ -1,6 +1,6 @@
 package t;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
@@ -14,8 +14,8 @@ class aY extends KeyAdapter {
       return; 
     try {
       String str = jTextField.getText();
-      this.a.c().l(str);
-    } catch (a a) {}
+      this.ExceptionInVPackage.c().l(str);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {}
   }
 }
 

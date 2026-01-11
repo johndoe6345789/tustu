@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -23,7 +23,7 @@ public class RollingDragHpFunction extends ac {
     this.c = paramab3;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d1 = this.a.b(paramS);
     if (Double.isNaN(this.d) || this.d != d1) {
       this.d = d1;
@@ -39,7 +39,7 @@ public class RollingDragHpFunction extends ac {
     this.f = 7.704E-7D * (this.d - 35.0D) * (this.d - 45.0D) + -8.33333E-7D * (this.d - 20.0D) * (this.d - 45.0D) + 3.148E-7D * (this.d - 20.0D) * (this.d - 35.0D);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

@@ -1,6 +1,6 @@
 package ak;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.V;
 import W.X;
 import java.io.BufferedReader;
@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class an extends V {
-  private BufferedReader a = null;
+  private BufferedReader ExceptionInVPackage = null;
   
   private StringBuilder b = null;
   
@@ -31,20 +31,20 @@ public class an extends V {
   
   private final HashMap j = new HashMap<>();
   
-  public boolean a(String paramString) {
+  public boolean ExceptionInVPackage(String paramString) {
     this.b = new StringBuilder();
     this.e = new ArrayList();
     this.f = new ArrayList();
     try {
-      this.a = new BufferedReader(new InputStreamReader(new FileInputStream(paramString)));
-      this.g = this.a.readLine();
+      this.ExceptionInVPackage = new BufferedReader(new InputStreamReader(new FileInputStream(paramString)));
+      this.g = this.ExceptionInVPackage.readLine();
       while (this.g != null && !this.g.startsWith(" LOG")) {
         if (!this.g.trim().isEmpty())
           this.b.append(this.g).append("\n"); 
-        this.g = this.a.readLine();
+        this.g = this.ExceptionInVPackage.readLine();
       } 
       String str = this.g.trim();
-      while ((this.g = this.a.readLine()) != null) {
+      while ((this.g = this.ExceptionInVPackage.readLine()) != null) {
         if (!this.g.isEmpty())
           this.f.add(this.g); 
       } 
@@ -59,15 +59,15 @@ public class an extends V {
       return true;
     } catch (IOException iOException) {
       Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      throw new a("Failed to parse the log file", iOException);
+      throw new ExceptionInVPackage("Failed to parse the log file", iOException);
     } 
   }
   
-  public void a() {
-    if (this.a != null)
+  public void ExceptionInVPackage() {
+    if (this.ExceptionInVPackage != null)
       try {
-        this.a.close();
-        this.a = null;
+        this.ExceptionInVPackage.close();
+        this.ExceptionInVPackage = null;
       } catch (IOException iOException) {
         Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, iOException);
       }  

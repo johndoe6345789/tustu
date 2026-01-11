@@ -5,7 +5,7 @@ import G.n;
 import G.o;
 import bH.D;
 import com.efiAnalytics.ui.bV;
-import s.g;
+import s.SComponentGolf;
 
 class CalibrationWriteProgressHandler implements n {
   CalibrationWriteProgressHandler(CalibrationTablePanel paramJ) {}
@@ -21,15 +21,15 @@ class CalibrationWriteProgressHandler implements n {
         String str = paramo.c();
         if (str.length() > 150)
           str = str.substring(0, 150); 
-        bV.d(g.b("Calibration Table Write Failed!") + "\n" + str, this.a.e);
-        J.a(this.a, g.b("Calibration Table Write Failed!") + "\n" + str);
+        bV.d(SComponentGolf.b("Calibration Table Write Failed!") + "\n" + str, this.a.e);
+        J.a(this.a, SComponentGolf.b("Calibration Table Write Failed!") + "\n" + str);
         D.b("Calibration Table Write Failed!\n" + paramo.c());
       } else {
-        J.a(this.a, g.b("Calibration Table Write Failed!") + "\nUnable to complete write.");
+        J.a(this.a, SComponentGolf.b("Calibration Table Write Failed!") + "\nUnable to complete write.");
       } 
     } else {
       this.a.i.b(1.0D);
-      J.a(this.a, g.b("Write Complete!"));
+      J.a(this.a, SComponentGolf.b("Write Complete!"));
       J.c(this.a);
     } 
   }

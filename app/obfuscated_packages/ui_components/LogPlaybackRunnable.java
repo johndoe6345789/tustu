@@ -1,9 +1,9 @@
 package ao;
 
-import bC.k;
+import bC.JPanelExtensionUsingRunnable;
 
 class fv implements Runnable {
-  fv(fu paramfu, k paramk) {}
+  fv(fu paramfu, JPanelExtensionUsingRunnable paramk) {}
   
   public void run() {
     this.a.a();

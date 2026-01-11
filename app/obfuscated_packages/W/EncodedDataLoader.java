@@ -3,7 +3,7 @@ package W;
 import G.R;
 import G.bP;
 import G.bQ;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.t;
 import java.io.File;
@@ -51,9 +51,9 @@ class EncodedDataLoader implements bQ {
       ab ab = new ab();
       try {
         ab.a(this.c, this.a.getAbsolutePath(), paramString1);
-      } catch (g g) {
-        Logger.getLogger(f.class.getName()).log(Level.SEVERE, g.getMessage(), (Throwable)g);
-        throw new IOException(g.getMessage());
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(f.class.getName()).log(Level.SEVERE, ExceptionPrintstacktrace.getMessage(), (Throwable)ExceptionPrintstacktrace);
+        throw new IOException(ExceptionPrintstacktrace.getMessage());
       } 
       bP = this.c.C(paramString1);
     } 

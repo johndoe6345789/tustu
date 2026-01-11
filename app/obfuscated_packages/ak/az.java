@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import bH.D;
 import bH.X;
@@ -12,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class az extends S {
-  float[] a = null;
+  float[] ExceptionInVPackage = null;
   
   float b = 0.0F;
   
@@ -26,28 +26,28 @@ public class az extends S {
       d d = null;
       List list = m(str);
       for (aA aA : list) {
-        String str1 = aA.a();
+        String str1 = aA.ExceptionInVPackage();
         d = new d();
         if (str1.equals("Interval")) {
           str1 = "Time";
-          d.a(0.001F);
-          d.a(3);
+          d.ExceptionInVPackage(0.001F);
+          d.ExceptionInVPackage(3);
         } 
-        d.a(str1);
+        d.ExceptionInVPackage(str1);
         d.b(aA.b());
         d.c(aA.c());
         d.d(aA.d());
         this.g.add(d);
       } 
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n");
+      D.ExceptionInVPackage("Failed to get units from this row:\n");
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
-    this.a = new float[this.g.size()];
-    for (byte b = 0; b < this.a.length; b++)
-      this.a[b] = Float.NaN; 
+    this.ExceptionInVPackage = new float[this.g.size()];
+    for (byte b = 0; b < this.ExceptionInVPackage.length; b++)
+      this.ExceptionInVPackage[b] = Float.NaN; 
     ArrayList<T> arrayList = new ArrayList();
     Iterator<T> iterator = this.g.iterator();
     while (iterator.hasNext())
@@ -79,7 +79,7 @@ public class az extends S {
     //   44: invokevirtual toString : ()Ljava/lang/String;
     //   47: aload_2
     //   48: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-    //   51: new V/a
+    //   51: new V/ExceptionInVPackage
     //   54: dup
     //   55: new java/lang/StringBuilder
     //   58: dup
@@ -128,7 +128,7 @@ public class az extends S {
     //   157: invokevirtual toString : ()Ljava/lang/String;
     //   160: aload #5
     //   162: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-    //   165: new V/a
+    //   165: new V/ExceptionInVPackage
     //   168: dup
     //   169: new java/lang/StringBuilder
     //   172: dup
@@ -152,7 +152,7 @@ public class az extends S {
     //   212: astore_2
     //   213: aload_2
     //   214: iconst_0
-    //   215: invokevirtual a : (I)Ljava/lang/String;
+    //   215: invokevirtual ExceptionInVPackage : (I)Ljava/lang/String;
     //   218: invokestatic parseFloat : (Ljava/lang/String;)F
     //   221: fstore_3
     //   222: iconst_1
@@ -173,7 +173,7 @@ public class az extends S {
     //   248: if_icmpge -> 301
     //   251: aload_2
     //   252: iload #5
-    //   254: invokevirtual a : (I)Ljava/lang/String;
+    //   254: invokevirtual ExceptionInVPackage : (I)Ljava/lang/String;
     //   257: astore #6
     //   259: aload #6
     //   261: invokevirtual isEmpty : ()Z
@@ -188,14 +188,14 @@ public class az extends S {
     //   282: ldc NaN
     //   284: fstore #7
     //   286: aload_0
-    //   287: getfield a : [F
+    //   287: getfield ExceptionInVPackage : [F
     //   290: iload #5
     //   292: fload #7
     //   294: fastore
     //   295: iinc #5, 1
     //   298: goto -> 242
     //   301: aload_0
-    //   302: getfield a : [F
+    //   302: getfield ExceptionInVPackage : [F
     //   305: areturn
     // Exception table:
     //   from	to	target	type
@@ -211,7 +211,7 @@ public class az extends S {
   private List m(String paramString) {
     ArrayList<aA> arrayList = new ArrayList();
     aE aE = new aE(paramString, ",");
-    while (aE.a()) {
+    while (aE.ExceptionInVPackage()) {
       String str = aE.b();
       aA aA = n(str);
       arrayList.add(aA);
@@ -226,20 +226,20 @@ public class az extends S {
       String str = X.i(aE.b());
       aA = new aA(this, str);
     } catch (Exception exception) {
-      throw new a("Invalid Header data for Race Capture log: " + paramString);
+      throw new ExceptionInVPackage("Invalid Header data for Race Capture log: " + paramString);
     } 
     try {
       String str = X.i(aE.b());
-      aA.a(str);
+      aA.ExceptionInVPackage(str);
     } catch (Exception exception) {}
     try {
-      float f = Float.parseFloat(aE.b());
-      aA.a(f);
+      float VInterfaceFoxtrot = Float.parseFloat(aE.b());
+      aA.ExceptionInVPackage(VInterfaceFoxtrot);
     } catch (Exception exception) {}
     try {
-      float f = Float.parseFloat(aE.b());
-      if (f > aA.c())
-        aA.b(f); 
+      float VInterfaceFoxtrot = Float.parseFloat(aE.b());
+      if (VInterfaceFoxtrot > aA.c())
+        aA.b(VInterfaceFoxtrot); 
     } catch (Exception exception) {}
     return aA;
   }

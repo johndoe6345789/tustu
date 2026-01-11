@@ -1,12 +1,12 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.cu;
-import I.b;
+import I.IInterfaceBravo;
 
 class DemoAnimationThread extends Thread {
   boolean a = true;
   
-  boolean b = false;
+  boolean IInterfaceBravo = false;
   
   DemoAnimationThread(x paramx) {
     setName("GaugeCluster Demo " + x.ai++);
@@ -14,9 +14,9 @@ class DemoAnimationThread extends Thread {
   }
   
   public void run() {
-    while (!this.b && (x.l(this.c) || x.m(this.c))) {
-      if (cu.a().g(b.a) > 0.0D) {
-        this.c.b(false);
+    while (!this.IInterfaceBravo && (x.l(this.c) || x.m(this.c))) {
+      if (cu.a().g(IInterfaceBravo.a) > 0.0D) {
+        this.c.IInterfaceBravo(false);
         x.e(this.c, false);
         x.f(this.c, false);
         this.c.l = null;
@@ -27,7 +27,7 @@ class DemoAnimationThread extends Thread {
       if (x.m(this.c))
         x.e(this.c, false); 
       for (s s : arrayOfS) {
-        if (this.b)
+        if (this.IInterfaceBravo)
           break; 
         if (s instanceof Gauge) {
           Gauge gauge = (Gauge)s;
@@ -69,7 +69,7 @@ class DemoAnimationThread extends Thread {
   }
   
   private void a() {
-    this.b = true;
+    this.IInterfaceBravo = true;
   }
 }
 

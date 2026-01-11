@@ -16,7 +16,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import s.g;
+import s.SComponentGolf;
 
 public class DashTuningPanel extends s implements t, Serializable {
   JPanel a = new JPanel();
@@ -33,7 +33,7 @@ public class DashTuningPanel extends s implements t, Serializable {
     this.a.add("Center", this.b);
     JButton jButton = new JButton("#");
     jButton.setPreferredSize(new Dimension(15, 15));
-    jButton.setToolTipText(g.b("Click to select Settings"));
+    jButton.setToolTipText(SComponentGolf.b("Click to select Settings"));
     jButton.addActionListener(new p(this));
     jButton.setFocusable(false);
     this.a.add("East", jButton);

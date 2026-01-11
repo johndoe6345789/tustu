@@ -4,58 +4,58 @@ import W.ap;
 import W.ar;
 import W.j;
 import W.n;
-import bB.a;
-import bB.q;
-import bB.r;
+import bB.BbInterfaceAlpha;
+import bB.BbInterfaceQuebec;
+import bB.BbInterfaceRomeo;
 import bH.D;
 import java.util.ArrayList;
 import java.util.List;
-import r.a;
+import BbInterfaceRomeo.BbInterfaceAlpha;
 
-public class HighSpeedLoggerFieldLimits implements q {
+public class HighSpeedLoggerFieldLimits implements BbInterfaceQuebec {
   private n d = null;
   
-  private ap e = (ap)new ar((a.a()).an, "HighSpeedLoggerFieldLimits");
+  private ap e = (ap)new ar((BbInterfaceAlpha.BbInterfaceAlpha()).an, "HighSpeedLoggerFieldLimits");
   
-  static String a = "Min";
+  static String BbInterfaceAlpha = "Min";
   
   static String b = "Max";
   
   List c = new ArrayList();
   
-  public void a(r paramr) {
+  public void BbInterfaceAlpha(BbInterfaceRomeo paramr) {
     if (paramr.c()) {
-      this.e.a(a + paramr.e(), Double.toString(Double.NaN));
+      this.e.BbInterfaceAlpha(BbInterfaceAlpha + paramr.e(), Double.toString(Double.NaN));
     } else {
-      this.e.a(a + paramr.e(), Double.toString(paramr.a()));
+      this.e.BbInterfaceAlpha(BbInterfaceAlpha + paramr.e(), Double.toString(paramr.BbInterfaceAlpha()));
     } 
     if (paramr.d()) {
-      this.e.a(b + paramr.e(), Double.toString(Double.NaN));
+      this.e.BbInterfaceAlpha(b + paramr.e(), Double.toString(Double.NaN));
     } else {
-      this.e.a(b + paramr.e(), Double.toString(paramr.b()));
+      this.e.BbInterfaceAlpha(b + paramr.e(), Double.toString(paramr.b()));
     } 
-    a(paramr.e(), paramr.a(), paramr.b());
+    BbInterfaceAlpha(paramr.e(), paramr.BbInterfaceAlpha(), paramr.b());
   }
   
-  private void a(String paramString, double paramDouble1, double paramDouble2) {
+  private void BbInterfaceAlpha(String paramString, double paramDouble1, double paramDouble2) {
     for (U u : this.c)
-      u.a(paramString, paramDouble1, paramDouble2); 
+      u.BbInterfaceAlpha(paramString, paramDouble1, paramDouble2); 
   }
   
-  public void a(U paramU) {
+  public void BbInterfaceAlpha(U paramU) {
     this.c.add(paramU);
   }
   
-  public void a(String paramString) {
-    this.e.a(a + paramString, Double.toString(Double.NaN));
-    this.e.a(b + paramString, Double.toString(Double.NaN));
-    a(paramString, Double.NaN, Double.NaN);
+  public void BbInterfaceAlpha(String paramString) {
+    this.e.BbInterfaceAlpha(BbInterfaceAlpha + paramString, Double.toString(Double.NaN));
+    this.e.BbInterfaceAlpha(b + paramString, Double.toString(Double.NaN));
+    BbInterfaceAlpha(paramString, Double.NaN, Double.NaN);
   }
   
   public double c(String paramString) {
     double d = Double.NaN;
     try {
-      d = Double.parseDouble(this.e.b(a + paramString, Double.toString(Double.NaN)));
+      d = Double.parseDouble(this.e.b(BbInterfaceAlpha + paramString, Double.toString(Double.NaN)));
     } catch (Exception exception) {
       D.b("Unable to load " + paramString + " Min/Max");
     } 
@@ -72,22 +72,22 @@ public class HighSpeedLoggerFieldLimits implements q {
     return d;
   }
   
-  public List a() {
-    ArrayList<a> arrayList = new ArrayList();
+  public List BbInterfaceAlpha() {
+    ArrayList<BbInterfaceAlpha> arrayList = new ArrayList();
     for (j j : c()) {
       double d1 = Double.NaN;
       double d2 = Double.NaN;
       try {
-        d1 = c(j.a());
-        d2 = d(j.a());
+        d1 = c(j.BbInterfaceAlpha());
+        d2 = d(j.BbInterfaceAlpha());
       } catch (Exception exception) {
         D.b("Unable to load Chart Min/Max");
       } 
-      a a = new a();
-      a.a(j.a());
-      a.a(d1);
-      a.b(d2);
-      arrayList.add(a);
+      BbInterfaceAlpha BbInterfaceAlpha = new BbInterfaceAlpha();
+      BbInterfaceAlpha.BbInterfaceAlpha(j.BbInterfaceAlpha());
+      BbInterfaceAlpha.BbInterfaceAlpha(d1);
+      BbInterfaceAlpha.b(d2);
+      arrayList.add(BbInterfaceAlpha);
     } 
     return arrayList;
   }
@@ -95,9 +95,9 @@ public class HighSpeedLoggerFieldLimits implements q {
   public List b() {
     ArrayList<String> arrayList = new ArrayList();
     for (j j : c()) {
-      if (!arrayList.contains(j.a())) {
-        D.c("Adding: " + j.a());
-        arrayList.add(j.a());
+      if (!arrayList.contains(j.BbInterfaceAlpha())) {
+        D.c("Adding: " + j.BbInterfaceAlpha());
+        arrayList.add(j.BbInterfaceAlpha());
       } 
     } 
     return arrayList;
@@ -107,20 +107,20 @@ public class HighSpeedLoggerFieldLimits implements q {
     return this.d;
   }
   
-  public void a(n paramn) {
+  public void BbInterfaceAlpha(n paramn) {
     this.d = paramn;
   }
   
-  public r b(r paramr) {
+  public BbInterfaceRomeo b(BbInterfaceRomeo paramr) {
     return null;
   }
   
-  public r b(String paramString) {
-    a a = new a();
-    a.a(paramString);
-    a.a(c(paramString));
-    a.b(d(paramString));
-    return (r)a;
+  public BbInterfaceRomeo b(String paramString) {
+    BbInterfaceAlpha BbInterfaceAlpha = new BbInterfaceAlpha();
+    BbInterfaceAlpha.BbInterfaceAlpha(paramString);
+    BbInterfaceAlpha.BbInterfaceAlpha(c(paramString));
+    BbInterfaceAlpha.b(d(paramString));
+    return (BbInterfaceRomeo)BbInterfaceAlpha;
   }
 }
 

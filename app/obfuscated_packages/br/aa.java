@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
-import s.g;
+import s.SComponentGolf;
 
 class aa extends JLabel {
   boolean a = false;
@@ -21,7 +21,7 @@ class aa extends JLabel {
   }
   
   public String a() {
-    return !this.c.a.C().q() ? g.b("Offline") : (!P.c(this.c) ? g.b("Idle") : (!P.d(this.c) ? g.b("Tables Inactive") : g.b("Correcting Tables")));
+    return !this.c.a.C().q() ? SComponentGolf.b("Offline") : (!P.c(this.c) ? SComponentGolf.b("Idle") : (!P.d(this.c) ? SComponentGolf.b("Tables Inactive") : SComponentGolf.b("Correcting Tables")));
   }
   
   public void paint(Graphics paramGraphics) {

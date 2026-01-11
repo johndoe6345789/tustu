@@ -7,29 +7,29 @@ import java.awt.Color;
 import java.awt.Window;
 import java.util.ArrayList;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 class aw extends bn implements f {
   int a = 0;
   
   int b = 6;
   
-  private boolean g = false;
+  private boolean SComponentGolf = false;
   
   aw(Window paramWindow, String paramString) {
-    super(paramWindow, g.b(paramString) + " " + g.b("Slider"));
+    super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new ax(this));
     this.c.setMinimum(this.a);
     this.c.setMaximum(this.b);
   }
   
   private void d() {
-    if (!this.g && c() != null)
+    if (!this.SComponentGolf && c() != null)
       c().l(this.c.getValue()); 
   }
   
   public void a(ArrayList paramArrayList) {
-    this.g = true;
+    this.SComponentGolf = true;
     Gauge gauge = b(paramArrayList);
     if (gauge != null) {
       this.c.setEnabled(true);
@@ -48,7 +48,7 @@ class aw extends bn implements f {
     } else {
       this.c.setEnabled(false);
     } 
-    this.g = false;
+    this.SComponentGolf = false;
   }
 }
 

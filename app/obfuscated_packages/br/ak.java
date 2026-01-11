@@ -1,6 +1,6 @@
 package br;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -14,8 +14,8 @@ class ak implements ActionListener {
       String str = this.a.k.getSelectedItem().toString();
       this.a.a.b(str);
       this.a.d.a("egoCorChannel", str);
-    } catch (g g) {
-      bV.d(g.getLocalizedMessage(), (Component)this.a.c);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      bV.d(ExceptionPrintstacktrace.getLocalizedMessage(), (Component)this.a.c);
     } 
   }
 }

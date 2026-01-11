@@ -23,7 +23,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
-import r.j;
+import r.ThreadedFile;
 
 public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallback, bc {
   Gauge a = null;
@@ -303,7 +303,7 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
   }
   
   public static String[] b() {
-    cq.a().a(j.F());
+    cq.a().a(ThreadedFile.F());
     return cq.a().c();
   }
 }

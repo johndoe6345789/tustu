@@ -1,17 +1,17 @@
 package ao;
 
 import bH.D;
-import h.i;
+import h.IOProperties;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
 public class aV implements k {
-  int a = i.a("numberOfGraphs", i.t);
+  int a = IOProperties.a("numberOfGraphs", IOProperties.t);
   
-  int b = i.a("numberOfOverlays", i.u);
+  int b = IOProperties.a("numberOfOverlays", IOProperties.u);
   
-  boolean c = i.a("fieldSelectionStyle", "standardSelection").equals("selectFromDash");
+  boolean c = IOProperties.a("fieldSelectionStyle", "standardSelection").equals("selectFromDash");
   
   private static aV f = null;
   
@@ -78,7 +78,7 @@ public class aV implements k {
       this.g.ensureCapacity(paramInt + 1);
       this.g.set(paramInt, paramColor);
     } 
-    i.c("graphForeColor" + paramInt, b(paramColor));
+    IOProperties.c("graphForeColor" + paramInt, b(paramColor));
     d();
   }
   
@@ -102,17 +102,17 @@ public class aV implements k {
   }
   
   public void a(Color paramColor, int paramInt1, int paramInt2) {
-    int i = paramInt1 * this.b + paramInt2;
-    a(paramColor, i);
+    int IOProperties = paramInt1 * this.b + paramInt2;
+    a(paramColor, IOProperties);
     d();
   }
   
   public Color a(int paramInt1, int paramInt2) {
-    int i = paramInt2;
-    boolean bool = i.a(i.aa, i.ab);
+    int IOProperties = paramInt2;
+    boolean bool = IOProperties.a(IOProperties.aa, IOProperties.ab);
     if (!bool)
-      i += paramInt1 * this.b; 
-    return a(i);
+      IOProperties += paramInt1 * this.b; 
+    return a(IOProperties);
   }
   
   public void a(Color paramColor) {}

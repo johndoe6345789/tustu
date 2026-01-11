@@ -1,7 +1,7 @@
 package com.efiAnalytics.remotefileaccess.http;
 
-import ab.a;
-import ay.k;
+import ab.AbInterfaceAlpha;
+import ay.AyComponentKilo;
 import bH.D;
 import bH.n;
 import com.efiAnalytics.remotefileaccess.DirectoryFiles;
@@ -58,22 +58,22 @@ public class HttpFileAccess implements RemoteFileAccess {
     String str1 = getCoreUrl((paramDirectoryIdentifier == null) ? null : paramDirectoryIdentifier.getDirectoryId());
     str1 = str1 + "action=listLogs";
     try {
-      str2 = k.a(str1);
+      str2 = AyComponentKilo.AbInterfaceAlpha(str1);
     } catch (IOException iOException) {
-      D.a("Failed to read from url: " + str1);
+      D.AbInterfaceAlpha("Failed to read from url: " + str1);
       throw new RemoteAccessException("Unable to read file list from " + this.hostName + ", error: " + iOException.getLocalizedMessage());
     } 
     if (str2.toLowerCase().startsWith("error"))
       throw new RemoteAccessException(str2); 
     try {
-      List list = a.a(RemoteFileDescriptor[].class, str2);
+      List list = AbInterfaceAlpha.AbInterfaceAlpha(RemoteFileDescriptor[].class, str2);
       DirectoryInformation directoryInformation = getDirectoryInformation(paramDirectoryIdentifier);
       DirectoryFiles directoryFiles = new DirectoryFiles();
       directoryFiles.setDirectoryInformation(directoryInformation);
       directoryFiles.setFiles(list);
       return directoryFiles;
     } catch (Exception exception) {
-      D.a("Could not parse this json: " + str2);
+      D.AbInterfaceAlpha("Could not parse this json: " + str2);
       throw new RemoteAccessException("Error parsing response from " + this.hostName + ", error: " + exception.getLocalizedMessage());
     } 
   }
@@ -108,7 +108,7 @@ public class HttpFileAccess implements RemoteFileAccess {
     try {
       this.dlListener.setFileDescriptor(paramRemoteFileDescriptor);
       this.dlListener.setDownloadFile(file);
-      n.a(str, file.getAbsolutePath(), this.dlListener);
+      n.AbInterfaceAlpha(str, file.getAbsolutePath(), this.dlListener);
       file.setLastModified(paramRemoteFileDescriptor.getLastModified());
     } catch (IOException iOException) {
       Logger.getLogger(HttpFileAccess.class.getName()).log(Level.WARNING, "File Download Failed.", iOException);
@@ -123,7 +123,7 @@ public class HttpFileAccess implements RemoteFileAccess {
       throw new RemoteAccessException("fileName is required!"); 
     str = str + "action=deleteLog&logFileName=" + URLEncoder.encode(paramRemoteFileDescriptor.getName());
     try {
-      String str1 = n.a(str);
+      String str1 = n.AbInterfaceAlpha(str);
       if (str1.equals("SUCCESSFUL")) {
         notifyRefreshNeeded();
         return true;
@@ -144,15 +144,15 @@ public class HttpFileAccess implements RemoteFileAccess {
     String str1 = getCoreUrl((paramDirectoryIdentifier == null) ? null : paramDirectoryIdentifier.getDirectoryId());
     str1 = str1 + "action=getDirectoryInfo";
     try {
-      str2 = n.a(str1);
+      str2 = n.AbInterfaceAlpha(str1);
     } catch (IOException iOException) {
-      D.a("Failed to read from url: " + str1);
+      D.AbInterfaceAlpha("Failed to read from url: " + str1);
       throw new RemoteAccessException("Unable to read file list from " + this.hostName + ", error: " + iOException.getLocalizedMessage());
     } 
     try {
-      return (DirectoryInformation)a.b(HttpDirectoryInfo.class, str2);
+      return (DirectoryInformation)AbInterfaceAlpha.b(HttpDirectoryInfo.class, str2);
     } catch (IOException iOException) {
-      D.a("Could not parse this json: " + str2);
+      D.AbInterfaceAlpha("Could not parse this json: " + str2);
       throw new RemoteAccessException("Error parsing response from " + this.hostName + ", error: " + iOException.getLocalizedMessage());
     } 
   }

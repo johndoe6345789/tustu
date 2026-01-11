@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -24,7 +24,7 @@ public class aa extends ac {
     this.a = paramab;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     if (!this.d) {
       if (this.b != null) {
         this.c = (this.b.b(paramS) != 0.0D);
@@ -41,7 +41,7 @@ public class aa extends ac {
     return this.c ? 1.0D : 0.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

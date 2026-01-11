@@ -1,9 +1,9 @@
 package aP;
 
-import br.K;
+import br.ThreadedImagePaint;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import com.efiAnalytics.apps.ts.tuningViews.J;
-import com.efiAnalytics.apps.ts.tuningViews.n;
+import com.efiAnalytics.apps.ts.tuningViews.Isoptimizeddrawingenabled;
 import com.efiAnalytics.tunerStudio.search.m;
 import com.efiAnalytics.ui.dM;
 import java.awt.Window;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import n.n;
+import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
 
 public class dd {
   private static dd b = null;
@@ -38,13 +38,13 @@ public class dd {
   
   private m m = null;
   
-  private cc n = null;
+  private cc Isoptimizeddrawingenabled = null;
   
-  private n o = null;
+  private Isoptimizeddrawingenabled o = null;
   
-  private n p = null;
+  private Isoptimizeddrawingenabled p = null;
   
-  private K q = null;
+  private ThreadedImagePaint q = null;
   
   List a = new ArrayList();
   
@@ -124,18 +124,18 @@ public class dd {
   }
   
   public cc j() {
-    return this.n;
+    return this.Isoptimizeddrawingenabled;
   }
   
   public void a(cc paramcc) {
-    this.n = paramcc;
+    this.Isoptimizeddrawingenabled = paramcc;
   }
   
-  public n k() {
+  public Isoptimizeddrawingenabled k() {
     return this.o;
   }
   
-  public void a(n paramn) {
+  public void a(Isoptimizeddrawingenabled paramn) {
     this.o = paramn;
   }
   
@@ -143,11 +143,11 @@ public class dd {
     return k().c_();
   }
   
-  public void a(n paramn) {
+  public void a(Isoptimizeddrawingenabled paramn) {
     this.p = paramn;
   }
   
-  public n m() {
+  public Isoptimizeddrawingenabled m() {
     return this.p;
   }
   
@@ -163,7 +163,7 @@ public class dd {
     return !this.a.contains(paramWindow);
   }
   
-  public JPanel n() {
+  public JPanel Isoptimizeddrawingenabled() {
     return this.i;
   }
   
@@ -171,11 +171,11 @@ public class dd {
     this.i = paramJPanel;
   }
   
-  public K o() {
+  public ThreadedImagePaint o() {
     return this.q;
   }
   
-  public void a(K paramK) {
+  public void a(ThreadedImagePaint paramK) {
     this.q = paramK;
   }
 }

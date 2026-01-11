@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeListener;
-import s.g;
+import s.SComponentGolf;
 
 class bn extends a implements f {
   JSlider c = new JSlider();
@@ -21,7 +21,7 @@ class bn extends a implements f {
   JLabel e = new JLabel();
   
   bn(Window paramWindow, String paramString) {
-    super(paramWindow, g.b(paramString) + " " + g.b("Slider"));
+    super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     setLayout(new BorderLayout());
     add(this.d, "Center");
     this.d.setLayout(new BorderLayout());
@@ -32,7 +32,7 @@ class bn extends a implements f {
     this.c.addChangeListener(new bo(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
-    JButton jButton = new JButton(g.b("Close"));
+    JButton jButton = new JButton(SComponentGolf.b("Close"));
     jButton.addActionListener(new bp(this));
     jPanel.add(jButton);
     pack();

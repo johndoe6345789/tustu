@@ -1,7 +1,7 @@
 package aP;
 
-import bQ.c;
-import bQ.d;
+import bQ.BqInterfaceCharlie;
+import bQ.BqInterfaceDelta;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
 import java.awt.Font;
@@ -14,14 +14,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
 
-public class aV extends JDialog implements d {
+public class aV extends JDialog implements BqInterfaceDelta {
   JTextPane a = new JTextPane();
   
   JTextPane b = new JTextPane();
   
-  JTextPane c = new JTextPane();
+  JTextPane BqInterfaceCharlie = new JTextPane();
   
-  JLabel d = new JLabel("", 2);
+  JLabel BqInterfaceDelta = new JLabel("", 2);
   
   JLabel e = new JLabel("", 2);
   
@@ -33,7 +33,7 @@ public class aV extends JDialog implements d {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(1, 0, 5, 5));
     jPanel.add(new JLabel("Max ODT's:", 4));
-    jPanel.add(this.d);
+    jPanel.add(this.BqInterfaceDelta);
     jPanel.add(new JLabel("Max ODT Entries's:", 4));
     jPanel.add(this.e);
     jPanel.add(new JLabel("Max Entry Size:", 4));
@@ -42,9 +42,9 @@ public class aV extends JDialog implements d {
     Font font = new Font("Monospaced", 0, eJ.a(12));
     this.a.setFont(font);
     this.b.setFont(font);
-    this.c.setFont(font);
+    this.BqInterfaceCharlie.setFont(font);
     JTabbedPane jTabbedPane = new JTabbedPane(3);
-    JScrollPane jScrollPane = new JScrollPane(this.c);
+    JScrollPane jScrollPane = new JScrollPane(this.BqInterfaceCharlie);
     jTabbedPane.add("ODTs", jScrollPane);
     jScrollPane = new JScrollPane(this.b);
     jTabbedPane.add("Channels", jScrollPane);
@@ -52,27 +52,27 @@ public class aV extends JDialog implements d {
     jTabbedPane.add("Buffer Ranges", jScrollPane);
     add("Center", jTabbedPane);
     b();
-    c.a().a(this);
+    BqInterfaceCharlie.a().a(this);
     setSize(1024, 800);
     setVisible(true);
     bV.a(paramWindow, this);
   }
   
   public void dispose() {
-    c.a().b(this);
+    BqInterfaceCharlie.a().b(this);
     super.dispose();
   }
   
   private void b() {
-    this.d.setText(c.a().f() + "");
-    this.e.setText(c.a().g() + "");
-    this.f.setText(c.a().e() + "");
-    if (c.a().c() != null)
-      this.b.setText(c.b(c.a().c())); 
-    if (c.a().b() != null)
-      this.a.setText(c.a(c.a().b())); 
-    if (c.a().d() != null)
-      this.c.setText(c.c(c.a().d())); 
+    this.BqInterfaceDelta.setText(BqInterfaceCharlie.a().f() + "");
+    this.e.setText(BqInterfaceCharlie.a().g() + "");
+    this.f.setText(BqInterfaceCharlie.a().e() + "");
+    if (BqInterfaceCharlie.a().BqInterfaceCharlie() != null)
+      this.b.setText(BqInterfaceCharlie.b(BqInterfaceCharlie.a().BqInterfaceCharlie())); 
+    if (BqInterfaceCharlie.a().b() != null)
+      this.a.setText(BqInterfaceCharlie.a(BqInterfaceCharlie.a().b())); 
+    if (BqInterfaceCharlie.a().BqInterfaceDelta() != null)
+      this.BqInterfaceCharlie.setText(BqInterfaceCharlie.BqInterfaceCharlie(BqInterfaceCharlie.a().BqInterfaceDelta())); 
   }
   
   public void a() {

@@ -3,9 +3,9 @@ package aP;
 import G.T;
 import G.cL;
 import G.cM;
-import aE.a;
-import aE.d;
-import com.efiAnalytics.tunerStudio.panels.a;
+import aE.PropertiesExtension;
+import aE.CloneableImpl;
+import com.efiAnalytics.tunerStudio.panels.PropertiesExtension;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.ei;
 import com.efiAnalytics.ui.fp;
@@ -23,15 +23,15 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class aq extends JPanel {
-  ei a = new ei();
+  ei PropertiesExtension = new ei();
   
   JComboBox b = new JComboBox();
   
   JComboBox c = new JComboBox();
   
-  a d;
+  PropertiesExtension CloneableImpl;
   
-  a e = null;
+  PropertiesExtension e = null;
   
   public aq() {
     setLayout(new BorderLayout(4, 4));
@@ -53,19 +53,19 @@ public class aq extends JPanel {
     jPanel3.setLayout(new BorderLayout(5, 5));
     jLabel = new JLabel("Serial Protocol: ", 4);
     jPanel3.add("Center", jLabel);
-    jLabel.setToolTipText("<htm>Used to select the protocol used to communicate with the Main Controller.<br>If connecting to a remote device through a device<br> with a different protocol this will be required.<html>");
+    jLabel.setToolTipText("<htm>Used to select the protocol used to communicate with the Main Controller.<br>If connecting to PropertiesExtension remote device through PropertiesExtension device<br> with PropertiesExtension different protocol this will be required.<html>");
     jPanel3.add("East", this.c);
     this.c.setEditable(false);
     at at = new at(this);
-    at.a("Firmware Default");
+    at.PropertiesExtension("Firmware Default");
     at.b("");
     this.c.addItem(at);
-    Iterator<cM> iterator = cL.a().b();
+    Iterator<cM> iterator = cL.PropertiesExtension().b();
     while (iterator.hasNext()) {
       cM cM = iterator.next();
       at = new at(this);
       at.b(cM.c());
-      at.a("Force - " + cM.d());
+      at.PropertiesExtension("Force - " + cM.CloneableImpl());
       this.c.addItem(at);
     } 
     jPanel1.add(jPanel3);
@@ -74,24 +74,24 @@ public class aq extends JPanel {
     add("Center", jPanel4);
     jPanel4.setBorder(BorderFactory.createTitledBorder("CAN Devices"));
     jPanel4.setLayout(new BorderLayout(15, 15));
-    jPanel4.add("North", (Component)this.a);
-    this.a.a(new as(this));
-    this.d = new a(T.a().c());
-    jPanel4.add("Center", (Component)this.d);
-    fp.a((Component)this.d, false);
+    jPanel4.add("North", (Component)this.PropertiesExtension);
+    this.PropertiesExtension.PropertiesExtension(new as(this));
+    this.CloneableImpl = new PropertiesExtension(T.PropertiesExtension().c());
+    jPanel4.add("Center", (Component)this.CloneableImpl);
+    fp.PropertiesExtension((Component)this.CloneableImpl, false);
   }
   
-  public d[] a() {
-    this.d.a();
-    Object[] arrayOfObject = this.a.a();
-    d[] arrayOfD = new d[arrayOfObject.length];
+  public CloneableImpl[] PropertiesExtension() {
+    this.CloneableImpl.PropertiesExtension();
+    Object[] arrayOfObject = this.PropertiesExtension.PropertiesExtension();
+    CloneableImpl[] arrayOfD = new CloneableImpl[arrayOfObject.length];
     for (byte b = 0; b < arrayOfObject.length; b++)
-      arrayOfD[b] = (d)arrayOfObject[b]; 
+      arrayOfD[b] = (CloneableImpl)arrayOfObject[b]; 
     return arrayOfD;
   }
   
-  public void a(d paramd) {
-    this.a.a(paramd);
+  public void PropertiesExtension(CloneableImpl paramd) {
+    this.PropertiesExtension.PropertiesExtension(paramd);
   }
   
   public int b() {
@@ -103,69 +103,69 @@ public class aq extends JPanel {
     return (at != null) ? at.b() : "";
   }
   
-  public boolean d() {
+  public boolean CloneableImpl() {
     String str = "";
-    d[] arrayOfD = a();
+    CloneableImpl[] arrayOfD = PropertiesExtension();
     ArrayList<String> arrayList = new ArrayList();
     for (byte b = 0; b < arrayOfD.length; b++) {
       str = str + b(arrayOfD[b]);
-      if (arrayList.contains(arrayOfD[b].a())) {
-        str = str + "All deveices must have unique Device Identifiers. " + arrayOfD[b].a() + " is assigned to more than 1 device.\n";
+      if (arrayList.contains(arrayOfD[b].PropertiesExtension())) {
+        str = str + "All deveices must have unique Device Identifiers. " + arrayOfD[b].PropertiesExtension() + " is assigned to more than 1 device.\n";
         break;
       } 
-      arrayList.add(arrayOfD[b].a());
+      arrayList.add(arrayOfD[b].PropertiesExtension());
     } 
     if (str.length() > 0) {
-      bV.d("Please correct the following CAN configuration errors\nor remove them from the project if not needed:\n" + str, this);
+      bV.CloneableImpl("Please correct the following CAN configuration errors\nor remove them from the project if not needed:\n" + str, this);
       return false;
     } 
     return true;
   }
   
-  public String b(d paramd) {
+  public String b(CloneableImpl paramd) {
     String str = "";
-    if (paramd.a().length() == 0) {
+    if (paramd.PropertiesExtension().length() == 0) {
       str = str + "Device Identifier missing.\n";
-    } else if (paramd.a().length() > 6) {
-      str = str + "Device Identifier '" + paramd.a() + "' is too long, must be 6 or less characters.\n";
+    } else if (paramd.PropertiesExtension().length() > 6) {
+      str = str + "Device Identifier '" + paramd.PropertiesExtension() + "' is too long, must be 6 or less characters.\n";
     } 
     if (paramd.b().length() == 0)
       str = str + "Device Description missing.\n"; 
     if (paramd.c().length() == 0) {
       str = str + "Controller Configuration file must be set for each CAN device.\n";
-    } else if (this.e != null && !(new File(paramd.a(this.e))).exists()) {
-      str = str + "Device Configuration File must be the full path and file name to a valid file.\n";
+    } else if (this.e != null && !(new File(paramd.PropertiesExtension(this.e))).exists()) {
+      str = str + "Device Configuration File must be the full path and file name to PropertiesExtension valid file.\n";
     } 
     return str;
   }
   
-  public void a(a parama) {
+  public void PropertiesExtension(PropertiesExtension parama) {
     this.e = parama;
-    for (byte b = 0; b < (this.a.a()).length; b++)
-      this.a.a(b); 
-    this.d.a(parama);
+    for (byte b = 0; b < (this.PropertiesExtension.PropertiesExtension()).length; b++)
+      this.PropertiesExtension.PropertiesExtension(b); 
+    this.CloneableImpl.PropertiesExtension(parama);
     if (parama.c() >= 0 && parama.c() < 16) {
       this.b.setSelectedIndex(parama.c());
     } else {
       this.b.setSelectedIndex(0);
     } 
     at at = new at(this);
-    at.b(parama.d());
+    at.b(parama.CloneableImpl());
     this.c.setSelectedItem(at);
-    Iterator<d> iterator = parama.I();
+    Iterator<CloneableImpl> iterator = parama.I();
     while (iterator.hasNext()) {
-      d d = iterator.next();
+      CloneableImpl CloneableImpl = iterator.next();
       try {
-        a(d.g());
+        PropertiesExtension(CloneableImpl.g());
       } catch (CloneNotSupportedException cloneNotSupportedException) {
-        a(d);
+        PropertiesExtension(CloneableImpl);
         Logger.getLogger(aq.class.getName()).log(Level.SEVERE, (String)null, cloneNotSupportedException);
       } 
     } 
   }
   
   public void e() {
-    this.d.d();
+    this.CloneableImpl.CloneableImpl();
   }
 }
 

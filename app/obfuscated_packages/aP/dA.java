@@ -1,14 +1,14 @@
 package aP;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.Frame;
-import r.a;
-import s.g;
+import r.ExceptionInVPackage;
+import s.SComponentGolf;
 
 class dA extends Thread {
-  Frame a = null;
+  Frame ExceptionInVPackage = null;
   
   boolean b = false;
   
@@ -16,14 +16,14 @@ class dA extends Thread {
     super("UpdateThread");
     setDaemon(true);
     this.b = paramBoolean;
-    this.a = paramFrame;
+    this.ExceptionInVPackage = paramFrame;
   }
   
   public void run() {
     try {
       if (!this.c.c) {
         this.c.c = true;
-        hq.a().a(g.b("Checking for updates"));
+        hq.ExceptionInVPackage().ExceptionInVPackage(SComponentGolf.b("Checking for updates"));
         if (!this.b) {
           Thread.currentThread();
           Thread.sleep(3000L);
@@ -31,21 +31,21 @@ class dA extends Thread {
         boolean bool = this.c.l();
         if (!dl.b(this.c) && !bool && this.b) {
           this.c.m();
-          hq.a().a(g.b("No updates available."));
+          hq.ExceptionInVPackage().ExceptionInVPackage(SComponentGolf.b("No updates available."));
         } else {
-          hq.a().a("Update Check Completed");
+          hq.ExceptionInVPackage().ExceptionInVPackage("Update Check Completed");
         } 
-        a.a().b(a.y, "false");
-        a.a().e();
-        i.g();
+        ExceptionInVPackage.ExceptionInVPackage().b(ExceptionInVPackage.y, "false");
+        ExceptionInVPackage.ExceptionInVPackage().e();
+        IOProperties.SComponentGolf();
       } 
-    } catch (a a) {
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
       if (this.b) {
-        bV.d(a.getMessage(), this.a);
-        hq.a().a("");
+        bV.d(ExceptionInVPackage.getMessage(), this.ExceptionInVPackage);
+        hq.ExceptionInVPackage().ExceptionInVPackage("");
       } 
     } catch (Exception exception) {
-      bV.d("Error occured in Autoupdate " + exception.getMessage(), this.a);
+      bV.d("Error occured in Autoupdate " + exception.getMessage(), this.ExceptionInVPackage);
     } finally {
       this.c.c = false;
     } 

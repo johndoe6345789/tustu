@@ -5,21 +5,21 @@ import G.bM;
 import G.bh;
 import W.j;
 import W.n;
-import bF.d;
+import bF.TableModelListenerUsingArrayList;
 import bH.D;
 import bt.T;
 import bt.bP;
-import i.a;
-import i.c;
+import i.IComponentAlpha;
+import i.IInterfaceCharlie;
 
-public class ScalarDataLogListener implements bP, a {
-  T a;
+public class ScalarDataLogListener implements bP, IComponentAlpha {
+  T IComponentAlpha;
   
-  d b;
+  TableModelListenerUsingArrayList b;
   
-  R c;
+  R IInterfaceCharlie;
   
-  bh d;
+  bh TableModelListenerUsingArrayList;
   
   String e = null;
   
@@ -30,57 +30,57 @@ public class ScalarDataLogListener implements bP, a {
   String h = "UNINITIALIZED";
   
   public P(R paramR, bh parambh, T paramT) {
-    this.c = paramR;
-    this.d = parambh;
-    this.a = paramT;
+    this.IInterfaceCharlie = paramR;
+    this.TableModelListenerUsingArrayList = parambh;
+    this.IComponentAlpha = paramT;
     this.b = paramT.f();
-    c();
+    IInterfaceCharlie();
   }
   
-  public void a(boolean paramBoolean) {
+  public void IComponentAlpha(boolean paramBoolean) {
     if (paramBoolean) {
-      c.a().a(this);
+      IInterfaceCharlie.IComponentAlpha().IComponentAlpha(this);
     } else {
-      c.a().b(this);
+      IInterfaceCharlie.IComponentAlpha().b(this);
     } 
   }
   
-  public void a(int paramInt) {
+  public void IComponentAlpha(int paramInt) {
     double d1;
-    if (!this.a.isEnabled() || c.a().e() == null)
+    if (!this.IComponentAlpha.isEnabled() || IInterfaceCharlie.IComponentAlpha().e() == null)
       return; 
-    c();
-    j j = c.a().e().b(this.e);
+    IInterfaceCharlie();
+    j j = IInterfaceCharlie.IComponentAlpha().e().b(this.e);
     if (j != null) {
-      d1 = j.d(paramInt);
+      d1 = j.TableModelListenerUsingArrayList(paramInt);
     } else {
       d1 = Double.NaN;
     } 
-    this.b.a(d1);
-    this.a.c();
+    this.b.IComponentAlpha(d1);
+    this.IComponentAlpha.IInterfaceCharlie();
   }
   
-  public void a() {
-    a(true);
+  public void IComponentAlpha() {
+    IComponentAlpha(true);
   }
   
   public void b() {
-    a(false);
+    IComponentAlpha(false);
   }
   
-  private void c() {
-    String str = this.d.d();
+  private void IInterfaceCharlie() {
+    String str = this.TableModelListenerUsingArrayList.TableModelListenerUsingArrayList();
     if (str == null || str.isEmpty()) {
       this.e = null;
       return;
     } 
-    n n = c.a().e();
-    this.e = bM.j(this.c, str);
+    n n = IInterfaceCharlie.IComponentAlpha().e();
+    this.e = bM.j(this.IInterfaceCharlie, str);
     if (n != null) {
-      if (this.e == null || (this.e.isEmpty() && n.a(str) != null))
+      if (this.e == null || (this.e.isEmpty() && n.IComponentAlpha(str) != null))
         this.e = str; 
       if (this.e == null && str.equals("Load")) {
-        String str1 = this.c.g("Load").e();
+        String str1 = this.IInterfaceCharlie.g("Load").e();
         if (str1.equalsIgnoreCase("kpa") && n.b("MAP") != null) {
           this.e = "MAP";
         } else if (str1.equalsIgnoreCase("TPS") && n.b("TPS") != null) {
@@ -95,7 +95,7 @@ public class ScalarDataLogListener implements bP, a {
       } 
     } 
     if (this.e == null)
-      D.b("No Data Log field defined for X axis of table: " + this.d.aL()); 
+      D.b("No Data Log field defined for X axis of table: " + this.TableModelListenerUsingArrayList.aL()); 
   }
 }
 

@@ -1,12 +1,12 @@
 package aP;
 
 import G.di;
-import n.b;
+import n.JPanelExtensionInNPackage;
 
 class iO implements di {
-  b a = null;
+  JPanelExtensionInNPackage a = null;
   
-  public iO(iL paramiL, b paramb) {
+  public iO(iL paramiL, JPanelExtensionInNPackage paramb) {
     this.a = paramb;
   }
   
@@ -14,8 +14,8 @@ class iO implements di {
     this.a.a(paramBoolean);
   }
   
-  public void b(boolean paramBoolean) {
-    this.a.b(paramBoolean);
+  public void JPanelExtensionInNPackage(boolean paramBoolean) {
+    this.a.JPanelExtensionInNPackage(paramBoolean);
   }
 }
 

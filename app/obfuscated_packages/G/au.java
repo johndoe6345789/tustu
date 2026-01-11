@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 
@@ -26,10 +26,10 @@ class au implements n {
             this.a.h = true;
             this.a.a.h().a(m.o(), 0, paramo.e(), false);
             this.a.h = false;
-            this.a.a.h().g();
-          } catch (g g) {
+            this.a.a.h().ExceptionPrintstacktrace();
+          } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
             D.c("error setting page bytes");
-            g.printStackTrace();
+            ExceptionPrintstacktrace.printStackTrace();
           } 
         } else {
           D.c("Validated Page:" + paramo.b().o());

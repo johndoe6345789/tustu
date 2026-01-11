@@ -1,12 +1,12 @@
 package com.efiAnalytics.testers;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.n;
 import W.o;
-import al.d;
-import am.e;
-import am.h;
-import am.i;
+import al.AbstractInAlPackage;
+import am.AmInterfaceEcho;
+import am.AmComponentHotel;
+import am.PathTostring;
 import bH.D;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -28,30 +28,30 @@ public class MdfToDataSet {
     try {
       Path path = Paths.get("C:\\Users\\p_tob\\Dropbox\\TunerStudioProjects\\support\\MLV\\MF4\\MNOA_2024-03-19_Dyno_UpperInjectorCalWork.mf4", new String[0]);
       seekableByteChannel = Files.newByteChannel(path, new OpenOption[] { StandardOpenOption.READ });
-      String str = a(seekableByteChannel);
+      String str = ExceptionInVPackage(seekableByteChannel);
       if (str.startsWith("4")) {
-        i i = i.a(path, seekableByteChannel);
-        D.c("IDBlock: " + i);
+        PathTostring PathTostring = PathTostring.ExceptionInVPackage(path, seekableByteChannel);
+        D.c("IDBlock: " + PathTostring);
         D.c("Read MDF IDBlock in " + (System.currentTimeMillis() - l) + "ms");
         l = System.currentTimeMillis();
-        h h = i.j();
-        D.c("HDBlock: " + h);
+        AmComponentHotel AmComponentHotel = PathTostring.j();
+        D.c("HDBlock: " + AmComponentHotel);
         D.c("Read HDBlock " + (System.currentTimeMillis() - l) + "ms");
         l = System.currentTimeMillis();
-        List list = d.a(h);
+        List list = AbstractInAlPackage.ExceptionInVPackage(AmComponentHotel);
         byte b = 1;
-        for (e e : list) {
-          D.c("  DGBlock " + b++ + " :" + e);
-          List list1 = d.a(e.f());
-          n n = d.a(list1);
-          String str1 = a(path.toString()) + b + ".msl";
-          o.a(n, str1, "\t");
+        for (AmInterfaceEcho AmInterfaceEcho : list) {
+          D.c("  DGBlock " + b++ + " :" + AmInterfaceEcho);
+          List list1 = AbstractInAlPackage.ExceptionInVPackage(AmInterfaceEcho.f());
+          n n = AbstractInAlPackage.ExceptionInVPackage(list1);
+          String str1 = ExceptionInVPackage(path.toString()) + b + ".msl";
+          o.ExceptionInVPackage(n, str1, "\t");
           if (b > 0)
             break; 
         } 
         D.c("  Read all DGBlocks in " + (System.currentTimeMillis() - l) + "ms");
       } else {
-        throw new a("Invalid file format for MDF4 reader");
+        throw new ExceptionInVPackage("Invalid file format for MDF4 reader");
       } 
     } catch (IOException iOException) {
       Logger.getLogger(MdfReader.class.getName()).log(Level.SEVERE, (String)null, iOException);
@@ -64,7 +64,7 @@ public class MdfToDataSet {
     } 
   }
   
-  private static String a(SeekableByteChannel paramSeekableByteChannel) {
+  private static String ExceptionInVPackage(SeekableByteChannel paramSeekableByteChannel) {
     ByteBuffer byteBuffer = ByteBuffer.allocate(64);
     byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
     paramSeekableByteChannel.position(0L);
@@ -80,10 +80,10 @@ public class MdfToDataSet {
     return new String(arrayOfByte, "ISO-8859-1");
   }
   
-  public static String a(String paramString) {
-    int i = paramString.lastIndexOf(".");
-    if (i > 0)
-      paramString = paramString.substring(0, i); 
+  public static String ExceptionInVPackage(String paramString) {
+    int PathTostring = paramString.lastIndexOf(".");
+    if (PathTostring > 0)
+      paramString = paramString.substring(0, PathTostring); 
     return paramString;
   }
 }

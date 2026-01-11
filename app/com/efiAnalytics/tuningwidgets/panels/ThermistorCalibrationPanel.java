@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.bG;
 import G.bH;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.T;
 import bH.X;
 import com.efiAnalytics.ui.do;
@@ -19,10 +19,10 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import s.g;
+import s.SComponentGolf;
 
 public class ThermistorCalibrationPanel extends AbstractDataPanel {
-  bG a = null;
+  bG ExceptionInVPackage = null;
   
   do b = new do();
   
@@ -34,7 +34,7 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
   
   do f = new do();
   
-  do g = new do();
+  do SComponentGolf = new do();
   
   do h = new do();
   
@@ -44,13 +44,13 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
   
   JComboBox k = new JComboBox();
   
-  public static String l = g.b("Temperature") + "(" + T.a() + "F)";
+  public static String l = SComponentGolf.b("Temperature") + "(" + T.ExceptionInVPackage() + "F)";
   
-  public static String m = g.b("Temperature") + "(" + T.a() + "C)";
+  public static String m = SComponentGolf.b("Temperature") + "(" + T.ExceptionInVPackage() + "C)";
   
   JLabel n = new JLabel(m, 0);
   
-  static String o = "<html><font color=\"gray\">" + g.b("Select a Common Sensor") + "</font></html>";
+  static String o = "<html><font color=\"gray\">" + SComponentGolf.b("Select ExceptionInVPackage Common Sensor") + "</font></html>";
   
   double p;
   
@@ -59,27 +59,27 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
   double r;
   
   public ThermistorCalibrationPanel(bG parambG) {
-    this.a = parambG;
-    setBorder(BorderFactory.createTitledBorder(g.b(parambG.h())));
+    this.ExceptionInVPackage = parambG;
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b(parambG.h())));
     setLayout(new BorderLayout(5, 5));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1, 5, 5));
     this.k.addItem(o);
     this.k.setEditable(false);
-    Iterator<bH> iterator = parambG.a();
+    Iterator<bH> iterator = parambG.ExceptionInVPackage();
     while (iterator.hasNext()) {
       bH bH = iterator.next();
-      this.k.addItem(g.b(bH.a()));
+      this.k.addItem(SComponentGolf.b(bH.ExceptionInVPackage()));
     } 
     this.k.addItemListener(new SensorComboBoxItemListener(this));
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout(2, 2));
-    jPanel2.add("Center", new JLabel(g.b("Common Sensor Values"), 4));
+    jPanel2.add("Center", new JLabel(SComponentGolf.b("Common Sensor Values"), 4));
     jPanel2.add("East", this.k);
     jPanel1.add(jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
-    jPanel3.add("Center", new JLabel(g.b("Bias Resistor Value (Ohms)"), 0));
+    jPanel3.add("Center", new JLabel(SComponentGolf.b("Bias Resistor Value (Ohms)"), 0));
     jPanel3.add("East", (Component)this.b);
     jPanel1.add(jPanel3);
     TemperatureUnitActionListener tempUnitListener = new TemperatureUnitActionListener(this);
@@ -100,10 +100,10 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     JPanel jPanel6 = new JPanel();
     jPanel6.setLayout(new GridLayout(0, 2, 5, 5));
     jPanel6.add(this.n);
-    jPanel6.add(new JLabel(g.b("Resistance (Ohms)"), 0));
+    jPanel6.add(new JLabel(SComponentGolf.b("Resistance (Ohms)"), 0));
     jPanel6.add((Component)this.f);
     jPanel6.add((Component)this.c);
-    jPanel6.add((Component)this.g);
+    jPanel6.add((Component)this.SComponentGolf);
     jPanel6.add((Component)this.d);
     jPanel6.add((Component)this.h);
     jPanel6.add((Component)this.e);
@@ -111,14 +111,14 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     add("Center", jPanel5);
   }
   
-  public void a(String paramString) {
+  public void ExceptionInVPackage(String paramString) {
     if (paramString == null || paramString.trim().equals("") || paramString.trim().equals(o)) {
       this.b.setText("");
       this.c.setText("");
       this.d.setText("");
       this.e.setText("");
       this.f.setText("");
-      this.g.setText("");
+      this.SComponentGolf.setText("");
       this.h.setText("");
       return;
     } 
@@ -132,33 +132,33 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     if (this.i.isSelected()) {
       double d1 = Math.round((bH.c() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
       double d2 = Math.round((bH.e() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
-      double d3 = Math.round((bH.g() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
+      double d3 = Math.round((bH.SComponentGolf() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
       this.f.setText("" + d1);
-      this.g.setText("" + d2);
+      this.SComponentGolf.setText("" + d2);
       this.h.setText("" + d3);
     } else {
       this.f.setText("" + bH.c());
-      this.g.setText("" + bH.e());
-      this.h.setText("" + bH.g());
+      this.SComponentGolf.setText("" + bH.e());
+      this.h.setText("" + bH.SComponentGolf());
     } 
   }
   
   private bH b(String paramString) {
-    Iterator<bH> iterator = this.a.a();
+    Iterator<bH> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
     while (iterator.hasNext()) {
       bH bH = iterator.next();
-      if (g.b(bH.a()).equals(paramString))
+      if (SComponentGolf.b(bH.ExceptionInVPackage()).equals(paramString))
         return bH; 
     } 
     return null;
   }
   
   private void c() {
-    Iterator<bH> iterator = this.a.a();
+    Iterator<bH> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
     while (iterator.hasNext()) {
       bH bH = iterator.next();
-      if (c(bH.a()))
-        this.k.setSelectedItem(g.b(bH.a())); 
+      if (c(bH.ExceptionInVPackage()))
+        this.k.setSelectedItem(SComponentGolf.b(bH.ExceptionInVPackage())); 
     } 
   }
   
@@ -167,61 +167,61 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     if (bH == null)
       return false; 
     if (this.j.isSelected())
-      return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && this.f.getText().equals("" + bH.c()) && this.g.getText().equals("" + bH.e()) && this.h.getText().equals("" + bH.g())); 
+      return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && this.f.getText().equals("" + bH.c()) && this.SComponentGolf.getText().equals("" + bH.e()) && this.h.getText().equals("" + bH.SComponentGolf())); 
     double d1 = Double.parseDouble(this.f.getText());
-    double d2 = Double.parseDouble(this.g.getText());
+    double d2 = Double.parseDouble(this.SComponentGolf.getText());
     double d3 = Double.parseDouble(this.h.getText());
     d1 = Math.round((d1 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
     d2 = Math.round((d2 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
     d3 = Math.round((d3 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
-    return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && d1 == bH.c() && d2 == bH.e() && d3 == bH.g());
+    return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && d1 == bH.c() && d2 == bH.e() && d3 == bH.SComponentGolf());
   }
   
   private void d() {
     if (this.i.isSelected() && !this.n.getText().equals(l)) {
       this.n.setText(l);
-      if (this.f.getText().length() > 0 && this.g.getText().length() > 0 && this.h.getText().length() > 0) {
+      if (this.f.getText().length() > 0 && this.SComponentGolf.getText().length() > 0 && this.h.getText().length() > 0) {
         double d1 = Double.parseDouble(this.f.getText());
-        double d2 = Double.parseDouble(this.g.getText());
+        double d2 = Double.parseDouble(this.SComponentGolf.getText());
         double d3 = Double.parseDouble(this.h.getText());
         d1 = Math.round((d1 * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
         d2 = Math.round((d2 * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
         d3 = Math.round((d3 * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
         this.f.setText(X.b(d1, 3));
-        this.g.setText(X.b(d2, 3));
+        this.SComponentGolf.setText(X.b(d2, 3));
         this.h.setText(X.b(d3, 3));
       } 
     } else if (this.j.isSelected() && !this.n.getText().equals(m)) {
       this.n.setText(m);
-      if (this.f.getText().length() > 0 && this.g.getText().length() > 0 && this.h.getText().length() > 0) {
+      if (this.f.getText().length() > 0 && this.SComponentGolf.getText().length() > 0 && this.h.getText().length() > 0) {
         double d1 = Double.parseDouble(this.f.getText());
-        double d2 = Double.parseDouble(this.g.getText());
+        double d2 = Double.parseDouble(this.SComponentGolf.getText());
         double d3 = Double.parseDouble(this.h.getText());
         d1 = Math.round((d1 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
         d2 = Math.round((d2 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
         d3 = Math.round((d3 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
-        this.f.a(d1);
-        this.g.a(d2);
-        this.h.a(d3);
+        this.f.ExceptionInVPackage(d1);
+        this.SComponentGolf.ExceptionInVPackage(d2);
+        this.h.ExceptionInVPackage(d3);
       } 
     } 
   }
   
-  public String a() {
-    return "//--    Generated by ThermTableGenerator using user input values. \n//--    Bias Resistor value: " + this.b.getText() + " Ohms\n//--    Temperature1: " + this.f.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 1: " + this.c.getText() + " Ohms \n//--    Temperature2: " + this.g.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 2: " + this.d.getText() + " Ohms \n//--    Temperature3: " + this.h.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 3: " + this.e.getText() + " Ohms \n//-- \n";
+  public String ExceptionInVPackage() {
+    return "//--    Generated by ThermTableGenerator using user input values. \n//--    Bias Resistor value: " + this.b.getText() + " Ohms\n//--    Temperature1: " + this.f.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 1: " + this.c.getText() + " Ohms \n//--    Temperature2: " + this.SComponentGolf.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 2: " + this.d.getText() + " Ohms \n//--    Temperature3: " + this.h.getText() + "(" + (this.j.isSelected() ? "C" : "F") + "), \tResistance 3: " + this.e.getText() + " Ohms \n//-- \n";
   }
   
-  public double[] a(int paramInt) {
+  public double[] ExceptionInVPackage(int paramInt) {
     try {
       if (!b())
-        throw new a("You must populate all temperature and resistor values"); 
-    } catch (a a) {
-      throw a;
+        throw new ExceptionInVPackage("You must populate all temperature and resistor values"); 
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      throw ExceptionInVPackage;
     } 
     double[] arrayOfDouble1 = new double[paramInt];
     double[] arrayOfDouble2 = new double[3];
     arrayOfDouble2[0] = Double.parseDouble(this.f.getText());
-    arrayOfDouble2[1] = Double.parseDouble(this.g.getText());
+    arrayOfDouble2[1] = Double.parseDouble(this.SComponentGolf.getText());
     arrayOfDouble2[2] = Double.parseDouble(this.h.getText());
     double d1 = Double.parseDouble(this.c.getText());
     double d2 = Double.parseDouble(this.d.getText());
@@ -253,7 +253,7 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     return arrayOfDouble1;
   }
   
-  double a(double paramDouble) {
+  double ExceptionInVPackage(double paramDouble) {
     return paramDouble * 9.0D / 5.0D - 459.67D;
   }
   
@@ -262,77 +262,77 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
   }
   
   double c(double paramDouble) {
-    return a(b(paramDouble));
+    return ExceptionInVPackage(b(paramDouble));
   }
   
   public boolean b() {
-    if (this.c.getText().length() <= 0 || this.f.getText().length() <= 0 || this.d.getText().length() <= 0 || this.g.getText().length() <= 0 || this.d.getText().length() <= 0 || this.g.getText().length() <= 0 || this.b.getText().length() <= 0)
-      throw new a("You must populate all temperature and resistor values."); 
+    if (this.c.getText().length() <= 0 || this.f.getText().length() <= 0 || this.d.getText().length() <= 0 || this.SComponentGolf.getText().length() <= 0 || this.d.getText().length() <= 0 || this.SComponentGolf.getText().length() <= 0 || this.b.getText().length() <= 0)
+      throw new ExceptionInVPackage("You must populate all temperature and resistor values."); 
     if (this.b.e() < 0.0D)
-      throw new a("Bias Resistor cannot be negative."); 
+      throw new ExceptionInVPackage("Bias Resistor cannot be negative."); 
     if (this.c.e() < 0.0D || this.d.e() < 0.0D || this.e.e() < 0.0D)
-      throw new a("Resistor values cannot be negative."); 
-    if (this.f.e() > 1000.0D || this.g.e() > 1000.0D || this.h.e() > 1000.0D)
-      throw new a("Temperatures are unusual high, are they input correctly?"); 
-    if (this.f.e() > this.g.e() || this.g.e() > this.h.e())
-      throw new a("Temperatures should go from low to high, are they input correctly?"); 
+      throw new ExceptionInVPackage("Resistor values cannot be negative."); 
+    if (this.f.e() > 1000.0D || this.SComponentGolf.e() > 1000.0D || this.h.e() > 1000.0D)
+      throw new ExceptionInVPackage("Temperatures are unusual high, are they input correctly?"); 
+    if (this.f.e() > this.SComponentGolf.e() || this.SComponentGolf.e() > this.h.e())
+      throw new ExceptionInVPackage("Temperatures should go from low to high, are they input correctly?"); 
     return true;
   }
   
   public void setEnabled(boolean paramBoolean) {
-    a(this, paramBoolean);
+    ExceptionInVPackage(this, paramBoolean);
   }
   
-  private void a(Container paramContainer, boolean paramBoolean) {
+  private void ExceptionInVPackage(Container paramContainer, boolean paramBoolean) {
     for (byte b = 0; b < paramContainer.getComponentCount(); b++) {
       Component component = paramContainer.getComponent(b);
       if (component instanceof Container)
-        a((Container)component, paramBoolean); 
+        ExceptionInVPackage((Container)component, paramBoolean); 
       component.setEnabled(paramBoolean);
     } 
   }
   
-  public void a(et paramet) {
-    paramet.a("txtBiasResistor", this.b.getText());
-    paramet.a("txtResistor1", this.c.getText());
-    paramet.a("txtResistor2", this.d.getText());
-    paramet.a("txtResistor3", this.e.getText());
-    paramet.a("txtTemp1", this.f.getText());
-    paramet.a("txtTemp2", this.g.getText());
-    paramet.a("txtTemp3", this.h.getText());
-    paramet.a("chkFahrenheit", "" + this.i.isSelected());
-    paramet.a("chkCelsius", "" + this.j.isSelected());
+  public void ExceptionInVPackage(et paramet) {
+    paramet.ExceptionInVPackage("txtBiasResistor", this.b.getText());
+    paramet.ExceptionInVPackage("txtResistor1", this.c.getText());
+    paramet.ExceptionInVPackage("txtResistor2", this.d.getText());
+    paramet.ExceptionInVPackage("txtResistor3", this.e.getText());
+    paramet.ExceptionInVPackage("txtTemp1", this.f.getText());
+    paramet.ExceptionInVPackage("txtTemp2", this.SComponentGolf.getText());
+    paramet.ExceptionInVPackage("txtTemp3", this.h.getText());
+    paramet.ExceptionInVPackage("chkFahrenheit", "" + this.i.isSelected());
+    paramet.ExceptionInVPackage("chkCelsius", "" + this.j.isSelected());
   }
   
   public void b(et paramet) {
-    String str = paramet.a("chkFahrenheit");
+    String str = paramet.ExceptionInVPackage("chkFahrenheit");
     this.i.setSelected((str != null && str.equals("true")));
-    str = paramet.a("chkCelsius");
+    str = paramet.ExceptionInVPackage("chkCelsius");
     this.j.setSelected((str != null && str.equals("true")));
     if (this.j.isSelected()) {
       this.n.setText(m);
     } else {
       this.n.setText(l);
     } 
-    str = paramet.a("txtBiasResistor");
+    str = paramet.ExceptionInVPackage("txtBiasResistor");
     if (str != null && str.length() > 0)
       this.b.setText(str); 
-    str = paramet.a("txtResistor1");
+    str = paramet.ExceptionInVPackage("txtResistor1");
     if (str != null && str.length() > 0)
       this.c.setText(str); 
-    str = paramet.a("txtResistor2");
+    str = paramet.ExceptionInVPackage("txtResistor2");
     if (str != null && str.length() > 0)
       this.d.setText(str); 
-    str = paramet.a("txtResistor3");
+    str = paramet.ExceptionInVPackage("txtResistor3");
     if (str != null && str.length() > 0)
       this.e.setText(str); 
-    str = paramet.a("txtTemp1");
+    str = paramet.ExceptionInVPackage("txtTemp1");
     if (str != null && str.length() > 0)
       this.f.setText(str); 
-    str = paramet.a("txtTemp2");
+    str = paramet.ExceptionInVPackage("txtTemp2");
     if (str != null && str.length() > 0)
-      this.g.setText(str); 
-    str = paramet.a("txtTemp3");
+      this.SComponentGolf.setText(str); 
+    str = paramet.ExceptionInVPackage("txtTemp3");
     if (str != null && str.length() > 0)
       this.h.setText(str); 
     c();

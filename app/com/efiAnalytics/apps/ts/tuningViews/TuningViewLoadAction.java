@@ -1,31 +1,31 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
-import com.efiAnalytics.ui.a;
+import com.efiAnalytics.ui.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 import java.awt.Cursor;
 import java.io.File;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
-import r.j;
-import s.g;
-import v.g;
+import r.ThreadedFile;
+import s.SComponentGolf;
+import v.SComponentGolf;
 
-class TuningViewLoadAction implements a {
+class TuningViewLoadAction implements ExceptionInVPackage {
   private b c = null;
   
   private String[] d = null;
   
-  J a = null;
+  J ExceptionInVPackage = null;
   
   C(z paramz, b paramb, String[] paramArrayOfString) {
     this.c = paramb;
     this.d = paramArrayOfString;
   }
   
-  public boolean a() {
+  public boolean ExceptionInVPackage() {
     c();
     return true;
   }
@@ -39,57 +39,57 @@ class TuningViewLoadAction implements a {
   
   private void d() {
     try {
-      this.a.setCursor(Cursor.getPredefinedCursor(3));
-      g g = new g();
-      F f = g.a(this.c.a());
-      if (this.c.b() && !a(f.a())) {
+      this.ExceptionInVPackage.setCursor(Cursor.getPredefinedCursor(3));
+      SComponentGolf SComponentGolf = new SComponentGolf();
+      F f = SComponentGolf.ExceptionInVPackage(this.c.ExceptionInVPackage());
+      if (this.c.b() && !ExceptionInVPackage(f.ExceptionInVPackage())) {
         String str = this.d[0];
         for (byte b1 = 1; b1 < this.d.length; b1++)
           str = str + " & " + this.d[b1]; 
-        boolean bool = bV.a("Warning: Gauge Cluster firmware signature (" + f.a() + ")\ndoes not match current firmware (" + str + ").\nYou may need to edit some components of the layout.\n \nContinue Loading?", this.a.getParent(), true);
+        boolean bool = bV.ExceptionInVPackage("Warning: Gauge Cluster firmware signature (" + f.ExceptionInVPackage() + ")\ndoes not match current firmware (" + str + ").\nYou may need to edit some components of the layout.\n \nContinue Loading?", this.ExceptionInVPackage.getParent(), true);
         if (!bool)
           return; 
       } 
-      f.a(this.d[0]);
-      this.a.a(f);
-    } catch (a a1) {
-      D.a("Unable to load dash file:\n" + this.c.a(), (Exception)a1, this.a.getParent());
+      f.ExceptionInVPackage(this.d[0]);
+      this.ExceptionInVPackage.ExceptionInVPackage(f);
+    } catch (ExceptionInVPackage a1) {
+      D.ExceptionInVPackage("Unable to load dash file:\n" + this.c.ExceptionInVPackage(), (Exception)a1, this.ExceptionInVPackage.getParent());
     } finally {
-      this.a.setCursor(Cursor.getPredefinedCursor(0));
+      this.ExceptionInVPackage.setCursor(Cursor.getPredefinedCursor(0));
     } 
   }
   
   private J e() {
-    k k = new k(this.c.a());
+    k k = new k(this.c.ExceptionInVPackage());
     String str = k.b();
     boolean bool = false;
     while (true) {
       if (str.trim().length() == 0) {
-        str = JOptionPane.showInputDialog((Component)this.b.a, g.b("New Tuning View Name"), g.b("Add New Tuning View Tab"), 3);
+        str = JOptionPane.showInputDialog((Component)this.b.ExceptionInVPackage, SComponentGolf.b("New Tuning View Name"), SComponentGolf.b("Add New Tuning View Tab"), 3);
       } else {
-        str = JOptionPane.showInputDialog((Component)this.b.a, g.b("New Tuning View Tab Name"), str);
+        str = JOptionPane.showInputDialog((Component)this.b.ExceptionInVPackage, SComponentGolf.b("New Tuning View Tab Name"), str);
       } 
       if (str == null || str.trim().equals(""))
         return null; 
-      if (this.b.a.d(str)) {
-        bV.d(g.b("Name Already In Use."), (Component)this.b.a);
+      if (this.b.ExceptionInVPackage.d(str)) {
+        bV.d(SComponentGolf.b("Name Already In Use."), (Component)this.b.ExceptionInVPackage);
         bool = true;
       } else {
         bool = false;
       } 
       if (!bool) {
-        J j = new J();
-        j.setName(str);
-        this.b.a.a(j, str);
-        this.b.a.g(str);
-        File file = new File(j.a(this.b.b), G.a(this.b.a.f(str)));
-        j.c(file.getAbsolutePath());
-        return j;
+        J ThreadedFile = new J();
+        ThreadedFile.setName(str);
+        this.b.ExceptionInVPackage.ExceptionInVPackage(ThreadedFile, str);
+        this.b.ExceptionInVPackage.SComponentGolf(str);
+        File file = new File(ThreadedFile.ExceptionInVPackage(this.b.b), G.ExceptionInVPackage(this.b.ExceptionInVPackage.f(str)));
+        ThreadedFile.c(file.getAbsolutePath());
+        return ThreadedFile;
       } 
     } 
   }
   
-  private boolean a(String paramString) {
+  private boolean ExceptionInVPackage(String paramString) {
     for (byte b1 = 0; b1 < this.d.length; b1++) {
       if (this.d[b1].equals(paramString))
         return true; 

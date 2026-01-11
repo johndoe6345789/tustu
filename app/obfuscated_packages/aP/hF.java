@@ -2,14 +2,14 @@ package aP;
 
 import G.R;
 import G.S;
-import c.a;
+import c.CInterfaceAlpha;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import r.a;
-import s.g;
+import r.CInterfaceAlpha;
+import s.SComponentGolf;
 
 public class hF implements S {
-  hG a = new hG(this);
+  hG CInterfaceAlpha = new hG(this);
   
   int b = 0;
   
@@ -17,8 +17,8 @@ public class hF implements S {
   
   String d = "";
   
-  public void a(R paramR) {
-    paramR.C().a(this.a);
+  public void CInterfaceAlpha(R paramR) {
+    paramR.C().CInterfaceAlpha(this.CInterfaceAlpha);
     if (paramR != null)
       this.d = paramR.i(); 
     this.b = 0;
@@ -26,25 +26,25 @@ public class hF implements S {
   
   public void b(R paramR) {
     if (paramR != null && paramR.C() != null)
-      paramR.C().a(this.a); 
+      paramR.C().CInterfaceAlpha(this.CInterfaceAlpha); 
   }
   
   public void c(R paramR) {}
   
-  private void a(String paramString) {
+  private void CInterfaceAlpha(String paramString) {
     if (this.b++ == 2) {
-      boolean bool = a.a().c(a.K, a.L);
+      boolean bool = CInterfaceAlpha.CInterfaceAlpha().c(CInterfaceAlpha.K, CInterfaceAlpha.L);
       if (bool) {
-        String str1 = a.a(this.d, a.f);
-        String str2 = str1 + " " + g.b("not found on") + " " + paramString + "\n\n- If your " + str1 + " is not connected and the above settings are correct,\n select Continue Scanning. Your " + str1 + " will come online when powered up.\n\n- If your " + str1 + " is Connected, Powered and Key On Click \n   \"Search for " + str1 + "\" to detect the correct Communication Settings.\n\n- If you do not want to see this message and always scan until the " + str1 + "\n   is available, click \"Continue Scanning Don't Ask Again\"\n\n" + g.b("What would you like to do?") + "\n ";
+        String str1 = CInterfaceAlpha.CInterfaceAlpha(this.d, CInterfaceAlpha.f);
+        String str2 = str1 + " " + SComponentGolf.b("not found on") + " " + paramString + "\n\n- If your " + str1 + " is not connected and the above settings are correct,\n select Continue Scanning. Your " + str1 + " will come online when powered up.\n\n- If your " + str1 + " is Connected, Powered and Key On Click \n   \"Search for " + str1 + "\" to detect the correct Communication Settings.\n\n- If you do not want to see this message and always scan until the " + str1 + "\n   is available, click \"Continue Scanning Don't Ask Again\"\n\n" + SComponentGolf.b("What would you like to do?") + "\n ";
         String[] arrayOfString = { "<html><center>Continue Scanning<br>Current Settings</center>", "<html><center>Search for<br>" + str1 + "</center>", "<html><center>Continue Scanning<br>Don't Ask Again</center>" };
-        JFrame jFrame = dd.a().c();
+        JFrame jFrame = dd.CInterfaceAlpha().c();
         int i = JOptionPane.showOptionDialog(jFrame, str2, "Controller not Found", 1, 1, null, (Object[])arrayOfString, arrayOfString[0]);
         if (i == 1) {
-          ad ad = f.a().e(jFrame);
+          ad ad = f.CInterfaceAlpha().e(jFrame);
           ad.l();
         } else if (i == 2) {
-          a.a().b(a.K, Boolean.toString(false));
+          CInterfaceAlpha.CInterfaceAlpha().b(CInterfaceAlpha.K, Boolean.toString(false));
         } 
       } 
     } 

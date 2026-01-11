@@ -422,7 +422,7 @@ def analyze_imports(base_dir, rename_mapping):
 # PART 3: BATCH EXECUTION
 # ============================================================================
 
-def execute_rename(base_dir, mapping_file):
+def execute_rename(base_dir, mapping_file, force=False):
     """Execute the batch rename and import updates"""
     print(f"\nLoading mapping from {mapping_file}...")
     
@@ -431,24 +431,153 @@ def execute_rename(base_dir, mapping_file):
     
     rename_mapping = data['rename_mapping']
     files_to_update = data['files_to_update']
+    obfuscated_class_map = data['obfuscated_class_map']
     
     print(f"\n{'='*60}")
     print(f"Ready to rename {len(rename_mapping)} files")
     print(f"Ready to update imports in {len(files_to_update)} files")
     print(f"{'='*60}")
     
-    response = input("\nProceed with rename? (yes/no): ")
-    if response.lower() != 'yes':
-        print("Cancelled.")
-        return
+    if not force:
+        print("\n⚠️  This will modify files in place!")
+        print("Recommended: Create a git commit or backup first")
+        
+        response = input("\nProceed with rename? (yes/no): ")
+        if response.lower() != 'yes':
+            print("Cancelled.")
+            return
     
-    # TODO: Implement actual rename and import update logic
-    print("\n⚠️  Rename execution not yet implemented")
-    print("This would:")
-    print("1. Rename all files according to mapping")
-    print("2. Update class names inside files")
-    print("3. Update all import statements")
-    print("4. Verify no broken references")
+    print("\n" + "="*60)
+    print("STEP 1: Renaming files and updating class declarations")
+    print("="*60)
+    
+    # Build reverse mapping: old_classname -> new_classname
+    class_rename_map = {}
+    for qualified_name, info in obfuscated_class_map.items():
+        old_classname = info['old_classname']
+        new_filename = info['new_path'].split('/')[-1].replace('.java', '')
+        class_rename_map[qualified_name] = {
+            'old_name': old_classname,
+            'new_name': new_filename,
+            'package': info['package']
+        }
+    
+    # Rename files and update class declarations
+    renamed_count = 0
+    for old_path, new_path in rename_mapping.items():
+        old_full = os.path.join(base_dir, old_path)
+        new_full = os.path.join(base_dir, new_path)
+        
+        if not os.path.exists(old_full):
+            print(f"⚠️  Skip (not found): {old_path}")
+            continue
+        
+        try:
+            # Read content
+            with open(old_full, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+            
+            # Extract package and old class name
+            pkg_match = re.search(r'package\s+([\w.]+);', content)
+            class_match = re.search(r'((?:public|private|protected)\s+)?(?:abstract\s+)?(class|interface|enum)\s+(\w+)', content)
+            
+            if pkg_match and class_match:
+                package = pkg_match.group(1)
+                old_classname = class_match.group(3)
+                new_classname = new_path.split('/')[-1].replace('.java', '')
+                
+                # Update class declaration
+                old_decl = class_match.group(0)
+                new_decl = old_decl.replace(f' {old_classname}', f' {new_classname}')
+                content = content.replace(old_decl, new_decl, 1)
+                
+                # Update constructor declarations (if it's a class)
+                if 'class' in old_decl:
+                    # Find constructor patterns: public ClassName(...)
+                    constructor_pattern = rf'((?:public|private|protected)\s+){old_classname}(\s*\([^)]*\))'
+                    content = re.sub(constructor_pattern, rf'\1{new_classname}\2', content)
+            
+            # Write to new location
+            os.makedirs(os.path.dirname(new_full), exist_ok=True)
+            with open(new_full, 'w', encoding='utf-8') as f:
+                f.write(content)
+            
+            # Remove old file if different location
+            if old_full != new_full:
+                os.remove(old_full)
+            
+            renamed_count += 1
+            if renamed_count % 100 == 0:
+                print(f"  Renamed {renamed_count} files...")
+        
+        except Exception as e:
+            print(f"❌ Error renaming {old_path}: {e}")
+    
+    print(f"✅ Renamed {renamed_count} files")
+    
+    print("\n" + "="*60)
+    print("STEP 2: Updating import statements")
+    print("="*60)
+    
+    # Update imports in all affected files
+    updated_count = 0
+    for file_path, imports_info in files_to_update.items():
+        full_path = os.path.join(base_dir, file_path)
+        
+        if not os.path.exists(full_path):
+            # Try the new path (if this file was renamed)
+            if file_path in rename_mapping:
+                full_path = os.path.join(base_dir, rename_mapping[file_path])
+        
+        if not os.path.exists(full_path):
+            print(f"⚠️  Skip (not found): {file_path}")
+            continue
+        
+        try:
+            with open(full_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+            
+            # Update each obfuscated import
+            for imp_info in imports_info:
+                old_import = imp_info['import_statement']
+                old_package = imp_info['old_package']
+                old_classname = imp_info['old_classname']
+                new_filename = imp_info['new_path'].split('/')[-1].replace('.java', '')
+                
+                # Replace: import old.package.OldClass; -> import old.package.NewClass;
+                old_import_stmt = f"import {old_import};"
+                new_import_stmt = f"import {old_package}.{new_filename};"
+                
+                if old_import_stmt in content:
+                    content = content.replace(old_import_stmt, new_import_stmt)
+                    
+                    # Also update any references to the old class name in this file
+                    # (e.g., new OldClass() -> new NewClass())
+                    # Use word boundaries to avoid partial matches
+                    content = re.sub(rf'\b{old_classname}\b', new_filename, content)
+            
+            # Write updated content
+            with open(full_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            
+            updated_count += 1
+            if updated_count % 100 == 0:
+                print(f"  Updated {updated_count} files...")
+        
+        except Exception as e:
+            print(f"❌ Error updating {file_path}: {e}")
+    
+    print(f"✅ Updated imports in {updated_count} files")
+    
+    print("\n" + "="*60)
+    print("RENAME COMPLETE!")
+    print("="*60)
+    print(f"Files renamed: {renamed_count}")
+    print(f"Imports updated: {updated_count}")
+    print("\nRecommended next steps:")
+    print("1. Test compile the project")
+    print("2. Run any tests")
+    print("3. Commit changes if successful")
 
 # ============================================================================
 # MAIN
@@ -502,6 +631,7 @@ def main():
 if __name__ == '__main__':
     import sys
     if '--execute' in sys.argv:
-        execute_rename('/home/rewrich/Documents/GitHub/tustu', 'COMPLETE_RENAME_MAPPING.json')
+        force = '--force' in sys.argv
+        execute_rename('/home/rewrich/Documents/GitHub/tustu', 'COMPLETE_RENAME_MAPPING.json', force=force)
     else:
         main()

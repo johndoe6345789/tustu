@@ -2,10 +2,10 @@ package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
 import G.aM;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 class PortItemModel {
   private String d = "";
@@ -35,14 +35,14 @@ class PortItemModel {
     try {
       double d = this.b.i(this.a.h())[this.e][0];
       return (d != 0.0D);
-    } catch (g g) {
-      D.a("Failed to getValue for " + this.b.aL() + ", index = " + this.e, (Exception)g, null);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.a("Failed to getValue for " + this.b.aL() + ", index = " + this.e, (Exception)ExceptionPrintstacktrace, null);
       return false;
     } 
   }
   
   public String toString() {
-    return g.b(X.b(this.d, "\"", "")) + " ";
+    return ExceptionPrintstacktrace.b(X.b(this.d, "\"", "")) + " ";
   }
 }
 

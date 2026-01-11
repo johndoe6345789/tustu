@@ -1,9 +1,9 @@
 package aP;
 
-import bA.f;
+import bA.BaInterfaceFoxtrot;
 
 class gL implements Runnable {
-  private f b = null;
+  private BaInterfaceFoxtrot b = null;
   
   private boolean c = true;
   
@@ -14,7 +14,7 @@ class gL implements Runnable {
     this.a.l.add(this);
   }
   
-  public void a(f paramf) {
+  public void a(BaInterfaceFoxtrot paramf) {
     this.b = paramf;
   }
   

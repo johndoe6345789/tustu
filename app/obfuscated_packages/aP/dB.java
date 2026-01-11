@@ -13,23 +13,23 @@ import G.bU;
 import G.bv;
 import G.cq;
 import G.cu;
-import aE.a;
-import aE.e;
-import bA.c;
-import bA.d;
-import bA.f;
+import aE.PropertiesExtension;
+import aE.AeInterfaceEcho;
+import bA.JCheckBoxMenuItemExtension;
+import bA.BaInterfaceDelta;
+import bA.BaInterfaceFoxtrot;
 import bH.A;
 import bH.D;
 import bH.J;
 import bH.X;
-import bl.l;
-import bq.b;
-import c.e;
+import bl.ApplicationPluginExtension;
+import bq.ManagerUsingJPopupMenu;
+import JCheckBoxMenuItemExtension.AeInterfaceEcho;
 import com.efiAnalytics.plugin.ApplicationPlugin;
 import com.efiAnalytics.tunerStudio.search.B;
 import com.efiAnalytics.tunerStudio.search.C;
 import com.efiAnalytics.tunerStudio.search.h;
-import com.efiAnalytics.tunerStudio.search.l;
+import com.efiAnalytics.tunerStudio.search.ApplicationPluginExtension;
 import com.efiAnalytics.tunerStudio.search.m;
 import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.bV;
@@ -55,104 +55,104 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
 import javax.swing.UIManager;
-import r.a;
-import r.i;
-import s.e;
-import s.f;
-import s.g;
-import x.a;
+import r.PropertiesExtension;
+import r.RInterfaceIndia;
+import s.AeInterfaceEcho;
+import s.BaInterfaceFoxtrot;
+import s.SComponentGolf;
+import x.PropertiesExtension;
 
-public final class dB implements S, aG, ab, bU, e {
-  public static String a = a.a().a(a.dl, "Toolbar Style");
+public final class dB implements S, aG, ab, bU, AeInterfaceEcho {
+  public static String PropertiesExtension = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dl, "Toolbar Style");
   
-  private String p = a;
+  private String p = PropertiesExtension;
   
-  public static String b = "Help";
+  public static String ManagerUsingJPopupMenu = "Help";
   
-  f c = null;
+  BaInterfaceFoxtrot JCheckBoxMenuItemExtension = null;
   
-  R d = null;
+  R BaInterfaceDelta = null;
   
   private gQ q = new gQ(this);
   
-  d e = null;
+  BaInterfaceDelta AeInterfaceEcho = null;
   
-  S f = new S();
+  S BaInterfaceFoxtrot = new S();
   
-  int g = 3;
+  int SComponentGolf = 3;
   
   JFrame h = null;
   
-  String[] i = new String[] { "resources/cog.png", "resources/wrench2.png", "resources/tools3.png", "resources/tools2.png", "resources/connecting_rod_32.png" };
+  String[] RInterfaceIndia = new String[] { "resources/cog.png", "resources/wrench2.png", "resources/tools3.png", "resources/tools2.png", "resources/connecting_rod_32.png" };
   
   int j = 0;
   
   List k = new ArrayList();
   
-  List l = new ArrayList();
+  List ApplicationPluginExtension = new ArrayList();
   
   gT m;
   
   cq n = new dC(this);
   
-  e o = new eT(this);
+  AeInterfaceEcho o = new eT(this);
   
-  public dB(JFrame paramJFrame, f paramf) {
-    this.c = paramf;
+  public dB(JFrame paramJFrame, BaInterfaceFoxtrot paramf) {
+    this.JCheckBoxMenuItemExtension = paramf;
     this.h = paramJFrame;
     paramJFrame.setJMenuBar(this.q);
     m();
-    c(a.a().c("navigationStyle", a));
+    JCheckBoxMenuItemExtension(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("navigationStyle", PropertiesExtension));
     ToolTipManager.sharedInstance().setDismissDelay(12000);
   }
   
   private void m() {
-    if (i.a().a("09fewlkm309glkfds09"))
-      this.q.add((JMenu)e()); 
-    if (!a.a().a(a.cU, a.cV) && !i.a().a("-rewqjmgdlijyre"))
-      this.q.add((JMenu)g()); 
-    if (!i.a().a("ewq-0rfdrewewr"))
-      this.q.add((JMenu)f()); 
-    if (!i.a().a(";lgd;lgdhf[p"))
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("09fewlkm309glkfds09"))
+      this.q.add((JMenu)AeInterfaceEcho()); 
+    if (!PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.cU, PropertiesExtension.cV) && !RInterfaceIndia.PropertiesExtension().PropertiesExtension("-rewqjmgdlijyre"))
+      this.q.add((JMenu)SComponentGolf()); 
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("ewq-0rfdrewewr"))
+      this.q.add((JMenu)BaInterfaceFoxtrot()); 
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension(";lgd;lgdhf[p"))
       this.q.add((JMenu)h()); 
-    if (!i.a().a("w-0-[-egd;ls"))
-      this.q.add((JMenu)i()); 
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("w-0-[-egd;ls"))
+      this.q.add((JMenu)RInterfaceIndia()); 
     this.q.add((JMenu)j());
     boolean bool = UIManager.getLookAndFeel().getName().contains("OS X");
     if (!bool) {
       m m = new m();
-      dd.a().a(m);
+      dd.PropertiesExtension().PropertiesExtension(m);
       this.q.add((Component)m);
-      if (!i.a().a("432p'[pgd-0[p")) {
+      if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("432p'[pgd-0[p")) {
         m.setEnabled(false);
-        m.setToolTipText(g.b("Register to enable."));
+        m.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Register to enable."));
       } 
     } 
   }
   
-  public List b(String paramString) {
+  public List ManagerUsingJPopupMenu(String paramString) {
     ArrayList<B> arrayList = new ArrayList();
-    for (byte b = 0; b < this.q.getMenuCount(); b++) {
-      JMenu jMenu = this.q.getMenu(b);
+    for (byte ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < this.q.getMenuCount(); ManagerUsingJPopupMenu++) {
+      JMenu jMenu = this.q.getMenu(ManagerUsingJPopupMenu);
       if (jMenu != null && jMenu.isEnabled()) {
         Component[] arrayOfComponent = jMenu.getMenuComponents();
         for (byte b1 = 0; b1 < arrayOfComponent.length; b1++) {
           B b2 = new B();
-          b2.b(jMenu.getText() + " " + g.b("Menu"));
+          b2.ManagerUsingJPopupMenu(jMenu.getText() + " " + SComponentGolf.ManagerUsingJPopupMenu("Menu"));
           if (arrayOfComponent[b1] instanceof JMenu) {
             JMenu jMenu1 = (JMenu)arrayOfComponent[b1];
-            B b3 = a(jMenu1, paramString);
+            B b3 = PropertiesExtension(jMenu1, paramString);
             if (!b3.isEmpty())
               arrayList.add(b3); 
           } else if (arrayOfComponent[b1] instanceof JMenuItem) {
             JMenuItem jMenuItem = (JMenuItem)arrayOfComponent[b1];
             if (jMenuItem != null && jMenuItem.getText() != null && jMenuItem.getText().contains(paramString)) {
-              C c = new C();
-              c.a(jMenuItem.getText());
-              c.b(paramString);
-              c.c(g.b("Menu"));
-              c.a((l)new h(jMenuItem));
-              b2.add(c);
+              C JCheckBoxMenuItemExtension = new C();
+              JCheckBoxMenuItemExtension.PropertiesExtension(jMenuItem.getText());
+              JCheckBoxMenuItemExtension.ManagerUsingJPopupMenu(paramString);
+              JCheckBoxMenuItemExtension.JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Menu"));
+              JCheckBoxMenuItemExtension.PropertiesExtension((ApplicationPluginExtension)new h(jMenuItem));
+              b2.add(JCheckBoxMenuItemExtension);
             } 
           } 
           if (!b2.isEmpty())
@@ -163,63 +163,63 @@ public final class dB implements S, aG, ab, bU, e {
     return arrayList;
   }
   
-  private B a(JMenu paramJMenu, String paramString) {
-    String str = g.b("Menu: ") + paramJMenu.getText();
+  private B PropertiesExtension(JMenu paramJMenu, String paramString) {
+    String str = SComponentGolf.ManagerUsingJPopupMenu("Menu: ") + paramJMenu.getText();
     null = new B();
-    null.b(str);
-    return a(null, paramJMenu, paramString);
+    null.ManagerUsingJPopupMenu(str);
+    return PropertiesExtension(null, paramJMenu, paramString);
   }
   
-  private B a(B paramB, JMenu paramJMenu, String paramString) {
-    D.c("Looking to children of: " + paramJMenu.getText());
-    for (byte b = 0; b < paramJMenu.getItemCount(); b++) {
-      JMenuItem jMenuItem = paramJMenu.getItem(b);
+  private B PropertiesExtension(B paramB, JMenu paramJMenu, String paramString) {
+    D.JCheckBoxMenuItemExtension("Looking to children of: " + paramJMenu.getText());
+    for (byte ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < paramJMenu.getItemCount(); ManagerUsingJPopupMenu++) {
+      JMenuItem jMenuItem = paramJMenu.getItem(ManagerUsingJPopupMenu);
       if (jMenuItem != null && jMenuItem.getText() != null && jMenuItem.getText().contains(paramString)) {
-        C c = new C();
-        c.a(jMenuItem.getText());
-        c.b(paramString);
-        c.c(g.b("Menu"));
-        c.a((l)new h(jMenuItem));
-        paramB.add(c);
+        C JCheckBoxMenuItemExtension = new C();
+        JCheckBoxMenuItemExtension.PropertiesExtension(jMenuItem.getText());
+        JCheckBoxMenuItemExtension.ManagerUsingJPopupMenu(paramString);
+        JCheckBoxMenuItemExtension.JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Menu"));
+        JCheckBoxMenuItemExtension.PropertiesExtension((ApplicationPluginExtension)new h(jMenuItem));
+        paramB.add(JCheckBoxMenuItemExtension);
       } 
     } 
     return paramB;
   }
   
-  public void c(String paramString) {
-    if (paramString.equals("Wrapping Main Menu") && a.a().c("lookAndFeelClass", "").contains("TinyLookAndFeel"))
+  public void JCheckBoxMenuItemExtension(String paramString) {
+    if (paramString.equals("Wrapping Main Menu") && PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("lookAndFeelClass", "").contains("TinyLookAndFeel"))
       paramString = "Main Menu Style"; 
     if (paramString.equals("MegaTune Style"))
       paramString = "Main Menu Style"; 
-    if (paramString.equals(this.p) && this.e != null) {
-      D.c("updateMenuStyle ignoring, already set to " + paramString);
+    if (paramString.equals(this.p) && this.AeInterfaceEcho != null) {
+      D.JCheckBoxMenuItemExtension("updateMenuStyle ignoring, already set to " + paramString);
       return;
     } 
     this.p = paramString;
-    c();
+    JCheckBoxMenuItemExtension();
   }
   
-  public void c() {
+  public void JCheckBoxMenuItemExtension() {
     this.j = 0;
-    if (this.e != null)
+    if (this.AeInterfaceEcho != null)
       n(); 
     if (this.p.equals("Main Menu Style")) {
-      if (this.e != null && !this.e.equals(this.q))
-        this.h.remove(this.e.getComponent()); 
-      this.e = this.q;
-      this.g = 3;
+      if (this.AeInterfaceEcho != null && !this.AeInterfaceEcho.equals(this.q))
+        this.h.remove(this.AeInterfaceEcho.getComponent()); 
+      this.AeInterfaceEcho = this.q;
+      this.SComponentGolf = 3;
     } else if (this.p.equals("Wrapping Main Menu")) {
-      if (this.e != null && !this.e.equals(this.q))
-        this.h.remove(this.e.getComponent()); 
-      this.e = this.q;
-      this.g = 3;
+      if (this.AeInterfaceEcho != null && !this.AeInterfaceEcho.equals(this.q))
+        this.h.remove(this.AeInterfaceEcho.getComponent()); 
+      this.AeInterfaceEcho = this.q;
+      this.SComponentGolf = 3;
     } else {
-      String str = a.a().c("tuningToolbarLocation", "North");
+      String str = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("tuningToolbarLocation", "North");
       gZ gZ = new gZ(this);
       gZ.setOrientation(str.equals("North") ? 0 : 1);
-      this.e = gZ;
-      this.g = 0;
-      this.h.add(str, this.e.getComponent());
+      this.AeInterfaceEcho = gZ;
+      this.SComponentGolf = 0;
+      this.h.add(str, this.AeInterfaceEcho.getComponent());
     } 
     p();
     k();
@@ -227,75 +227,75 @@ public final class dB implements S, aG, ab, bU, e {
   
   private void n() {
     if (this.m != null)
-      gT.a(this.m); 
+      gT.PropertiesExtension(this.m); 
     this.q.removeAll();
-    for (String str : this.e.a().b()) {
-      for (int i = this.e.a(str) - 1; i >= 0; i--) {
-        f f1 = this.e.a(str, i);
-        this.e.a(f1.getComponent());
-        f1.f();
+    for (String str : this.AeInterfaceEcho.PropertiesExtension().ManagerUsingJPopupMenu()) {
+      for (int RInterfaceIndia = this.AeInterfaceEcho.PropertiesExtension(str) - 1; RInterfaceIndia >= 0; RInterfaceIndia--) {
+        BaInterfaceFoxtrot f1 = this.AeInterfaceEcho.PropertiesExtension(str, RInterfaceIndia);
+        this.AeInterfaceEcho.PropertiesExtension(f1.getComponent());
+        f1.BaInterfaceFoxtrot();
       } 
     } 
     m();
   }
   
   private void o() {
-    String str = g.b("Upgrade!");
-    for (String str1 : T.a().d()) {
-      f f1 = a(str1, str);
+    String str = SComponentGolf.ManagerUsingJPopupMenu("Upgrade!");
+    for (String str1 : T.PropertiesExtension().BaInterfaceDelta()) {
+      BaInterfaceFoxtrot f1 = PropertiesExtension(str1, str);
       if (f1 == null) {
-        String str2 = g.b(str);
-        f1 = a(str2, false);
-        f1.c("resources/upgrade24.png");
-        f1.a(new fe(this));
-        this.e.a(str1, f1.getComponent(), e(str1));
+        String str2 = SComponentGolf.ManagerUsingJPopupMenu(str);
+        f1 = PropertiesExtension(str2, false);
+        f1.JCheckBoxMenuItemExtension("resources/upgrade24.png");
+        f1.PropertiesExtension(new fe(this));
+        this.AeInterfaceEcho.PropertiesExtension(str1, f1.getComponent(), AeInterfaceEcho(str1));
       } 
     } 
   }
   
   private void p() {
-    if (this.d == null)
+    if (this.BaInterfaceDelta == null)
       return; 
-    String[] arrayOfString = T.a().d();
-    this.e.a().a();
-    for (byte b = 0; b < arrayOfString.length; b++) {
-      R r = T.a().c(arrayOfString[b]);
+    String[] arrayOfString = T.PropertiesExtension().BaInterfaceDelta();
+    this.AeInterfaceEcho.PropertiesExtension().PropertiesExtension();
+    for (byte ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < arrayOfString.length; ManagerUsingJPopupMenu++) {
+      R r = T.PropertiesExtension().JCheckBoxMenuItemExtension(arrayOfString[ManagerUsingJPopupMenu]);
       gF gF = new gF(this, r);
-      Iterator<aA> iterator = r.e().b();
+      Iterator<aA> iterator = r.AeInterfaceEcho().ManagerUsingJPopupMenu();
       while (iterator.hasNext()) {
         aA aA = iterator.next();
-        f f1 = a(arrayOfString[b], g.b(aA.e()));
+        BaInterfaceFoxtrot f1 = PropertiesExtension(arrayOfString[ManagerUsingJPopupMenu], SComponentGolf.ManagerUsingJPopupMenu(aA.AeInterfaceEcho()));
         if (f1 == null) {
-          String str1 = g.b(aA.h());
+          String str1 = SComponentGolf.ManagerUsingJPopupMenu(aA.h());
           if (str1.equals(aA.h()))
-            str1 = aA.e(); 
-          f1 = a(str1, false);
+            str1 = aA.AeInterfaceEcho(); 
+          f1 = PropertiesExtension(str1, false);
           try {
-            f1.c(d(aA.e()));
+            f1.JCheckBoxMenuItemExtension(BaInterfaceDelta(aA.AeInterfaceEcho()));
           } catch (Exception exception) {
-            D.a("Failed to get icon image.");
+            D.PropertiesExtension("Failed to get icon image.");
             exception.printStackTrace();
           } 
           if (aA.aJ() != null && !aA.aJ().equals("")) {
-            f1.b(aA.aJ());
+            f1.ManagerUsingJPopupMenu(aA.aJ());
             if (f1 instanceof bs)
-              ((bs)f1).a(new gS(this, aA.aJ(), r)); 
+              ((bs)f1).PropertiesExtension(new gS(this, aA.aJ(), r)); 
           } 
-          if (aA.i() != null && !aA.i().equals(""))
-            f1.b(new gS(this, aA.i(), r)); 
-          if (aA.g() != null && !aA.g().equals(""))
-            f1.setMnemonic(aA.g().toUpperCase().charAt(0)); 
-          this.e.a(arrayOfString[b], f1.getComponent(), e(arrayOfString[b]));
+          if (aA.RInterfaceIndia() != null && !aA.RInterfaceIndia().equals(""))
+            f1.ManagerUsingJPopupMenu(new gS(this, aA.RInterfaceIndia(), r)); 
+          if (aA.SComponentGolf() != null && !aA.SComponentGolf().equals(""))
+            f1.setMnemonic(aA.SComponentGolf().toUpperCase().charAt(0)); 
+          this.AeInterfaceEcho.PropertiesExtension(arrayOfString[ManagerUsingJPopupMenu], f1.getComponent(), AeInterfaceEcho(arrayOfString[ManagerUsingJPopupMenu]));
         } 
-        f1.a(gF);
-        String str = (arrayOfString.length > 1) ? arrayOfString[b] : null;
-        a(r, aA, f1, str);
+        f1.PropertiesExtension(gF);
+        String str = (arrayOfString.length > 1) ? arrayOfString[ManagerUsingJPopupMenu] : null;
+        PropertiesExtension(r, aA, f1, str);
       } 
     } 
-    if (this.e.b() > 0 && i.a().a("pokrepopoktrg9034"))
+    if (this.AeInterfaceEcho.ManagerUsingJPopupMenu() > 0 && RInterfaceIndia.PropertiesExtension().PropertiesExtension("pokrepopoktrg9034"))
       o(); 
-    this.e.a().b(this.d.c());
-    d();
+    this.AeInterfaceEcho.PropertiesExtension().ManagerUsingJPopupMenu(this.BaInterfaceDelta.JCheckBoxMenuItemExtension());
+    BaInterfaceDelta();
     fp fp = new fp(this);
     try {
       if (SwingUtilities.isEventDispatchThread()) {
@@ -308,89 +308,89 @@ public final class dB implements S, aG, ab, bU, e {
     } 
   }
   
-  private void a(R paramR, f paramf, aA paramaA, String paramString) {
-    String str = g.a(paramaA.h(), paramaA.e());
+  private void PropertiesExtension(R paramR, BaInterfaceFoxtrot paramf, aA paramaA, String paramString) {
+    String str = SComponentGolf.PropertiesExtension(paramaA.h(), paramaA.AeInterfaceEcho());
     str = (paramString != null && paramString.length() > 0 && paramf.h()) ? (str + " (" + paramString + ")") : str;
     gX gX = new gX(this, str, false);
-    Icon icon = a(paramaA);
+    Icon icon = PropertiesExtension(paramaA);
     if (icon != null)
       gX.setIcon(icon); 
-    gX.setActionCommand(paramR.c() + "." + paramaA.d());
-    gX.setName("" + paramaA.f());
-    if (paramaA.i() != null && !paramaA.i().equals(""))
-      gX.b(new gS(this, paramaA.i(), paramR)); 
+    gX.setActionCommand(paramR.JCheckBoxMenuItemExtension() + "." + paramaA.BaInterfaceDelta());
+    gX.setName("" + paramaA.BaInterfaceFoxtrot());
+    if (paramaA.RInterfaceIndia() != null && !paramaA.RInterfaceIndia().equals(""))
+      gX.ManagerUsingJPopupMenu(new gS(this, paramaA.RInterfaceIndia(), paramR)); 
     if (paramaA.aJ() != null && !paramaA.aJ().equals("")) {
-      gX.a(new gS(this, paramaA.aJ(), paramR));
-      if (a.a().c(a.bl, a.bm)) {
-        String str1 = bM.e(paramR, paramaA.aJ());
-        str1 = X.a(str1, 120, "<br>&nbsp;&nbsp;&nbsp;");
-        StringBuilder stringBuilder = (new StringBuilder("<html><body>")).append(g.b("Enabled when")).append(": ").append(paramaA.aJ()).append("<br><br>").append(g.b("Friendly")).append(": ").append(str1).append("</body></html>");
+      gX.PropertiesExtension(new gS(this, paramaA.aJ(), paramR));
+      if (PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bl, PropertiesExtension.bm)) {
+        String str1 = bM.AeInterfaceEcho(paramR, paramaA.aJ());
+        str1 = X.PropertiesExtension(str1, 120, "<br>&nbsp;&nbsp;&nbsp;");
+        StringBuilder stringBuilder = (new StringBuilder("<html><body>")).append(SComponentGolf.ManagerUsingJPopupMenu("Enabled when")).append(": ").append(paramaA.aJ()).append("<br><br>").append(SComponentGolf.ManagerUsingJPopupMenu("Friendly")).append(": ").append(str1).append("</body></html>");
         gX.setToolTipText(stringBuilder.toString());
       } 
     } 
-    if (paramaA.g() != null && !paramaA.g().equals(""))
-      gX.setMnemonic(paramaA.g().charAt(0)); 
-    if (paramf.getText().equals(b)) {
+    if (paramaA.SComponentGolf() != null && !paramaA.SComponentGolf().equals(""))
+      gX.setMnemonic(paramaA.SComponentGolf().charAt(0)); 
+    if (paramf.getText().equals(ManagerUsingJPopupMenu)) {
       gX.addActionListener(new gJ(this, paramR));
-    } else if (!paramaA.b()) {
+    } else if (!paramaA.ManagerUsingJPopupMenu()) {
       gX.addActionListener(new fA(this));
     } 
     paramf.add((Component)gX);
   }
   
-  private f a(R paramR, aA paramaA, f paramf, String paramString) {
-    Iterator<aA> iterator = paramaA.a();
+  private BaInterfaceFoxtrot PropertiesExtension(R paramR, aA paramaA, BaInterfaceFoxtrot paramf, String paramString) {
+    Iterator<aA> iterator = paramaA.PropertiesExtension();
     while (iterator.hasNext()) {
       aA aA1 = iterator.next();
-      if (aA1.c()) {
+      if (aA1.JCheckBoxMenuItemExtension()) {
         paramf.addSeparator();
         continue;
       } 
-      if (aA1.b()) {
-        String str = g.a(aA1.h(), aA1.e());
+      if (aA1.ManagerUsingJPopupMenu()) {
+        String str = SComponentGolf.PropertiesExtension(aA1.h(), aA1.AeInterfaceEcho());
         str = (paramString != null && paramString.length() > 0) ? (str + " (" + paramString + ")") : str;
         gW gW = new gW(this, str, false);
-        Icon icon = a(aA1);
+        Icon icon = PropertiesExtension(aA1);
         if (icon != null)
           gW.setIcon(icon); 
-        if (aA1.i() != null && !aA1.i().equals(""))
-          gW.b(new gS(this, aA1.i(), paramR)); 
+        if (aA1.RInterfaceIndia() != null && !aA1.RInterfaceIndia().equals(""))
+          gW.ManagerUsingJPopupMenu(new gS(this, aA1.RInterfaceIndia(), paramR)); 
         if (aA1.aJ() != null && !aA1.aJ().equals("")) {
-          gW.a(new gS(this, aA1.aJ(), paramR));
-          if (i.a().a("lk098oijrepoijrgds98ugoi") && a.a().c(a.bl, a.bm)) {
-            String str1 = bM.e(paramR, aA1.aJ());
-            str1 = X.a(str1, 120, "<br>&nbsp;&nbsp;&nbsp;");
-            StringBuilder stringBuilder = (new StringBuilder("<html><body>")).append(g.b("Enabled when")).append(": ").append(aA1.aJ()).append("<br><br>").append(g.b("Friendly")).append(": ").append(str1).append("</body></html>");
+          gW.PropertiesExtension(new gS(this, aA1.aJ(), paramR));
+          if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("lk098oijrepoijrgds98ugoi") && PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bl, PropertiesExtension.bm)) {
+            String str1 = bM.AeInterfaceEcho(paramR, aA1.aJ());
+            str1 = X.PropertiesExtension(str1, 120, "<br>&nbsp;&nbsp;&nbsp;");
+            StringBuilder stringBuilder = (new StringBuilder("<html><body>")).append(SComponentGolf.ManagerUsingJPopupMenu("Enabled when")).append(": ").append(aA1.aJ()).append("<br><br>").append(SComponentGolf.ManagerUsingJPopupMenu("Friendly")).append(": ").append(str1).append("</body></html>");
             gW.setToolTipText(stringBuilder.toString());
           } 
         } 
-        Iterator<aA> iterator1 = aA1.a();
+        Iterator<aA> iterator1 = aA1.PropertiesExtension();
         while (iterator1.hasNext()) {
           aA aA2 = iterator1.next();
-          if (aA2.c()) {
+          if (aA2.JCheckBoxMenuItemExtension()) {
             gW.addSeparator();
             continue;
           } 
-          a(paramR, (f)gW, aA2, paramString);
+          PropertiesExtension(paramR, (BaInterfaceFoxtrot)gW, aA2, paramString);
         } 
         paramf.add((Component)gW);
         continue;
       } 
-      a(paramR, paramf, aA1, paramString);
+      PropertiesExtension(paramR, paramf, aA1, paramString);
     } 
     return paramf;
   }
   
-  private int e(String paramString) {
-    return this.e.a(paramString) - this.g;
+  private int AeInterfaceEcho(String paramString) {
+    return this.AeInterfaceEcho.PropertiesExtension(paramString) - this.SComponentGolf;
   }
   
-  private Icon a(aA paramaA) {
-    R r = T.a().c();
-    bv bv = r.e().c(paramaA.d());
-    aj aj = r.e().b(paramaA.d());
+  private Icon PropertiesExtension(aA paramaA) {
+    R r = T.PropertiesExtension().JCheckBoxMenuItemExtension();
+    bv bv = r.AeInterfaceEcho().JCheckBoxMenuItemExtension(paramaA.BaInterfaceDelta());
+    aj aj = r.AeInterfaceEcho().ManagerUsingJPopupMenu(paramaA.BaInterfaceDelta());
     Object object = null;
-    if (paramaA.b()) {
+    if (paramaA.ManagerUsingJPopupMenu()) {
       Image image1 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/folder16.png"));
       return new ImageIcon(image1);
     } 
@@ -414,23 +414,23 @@ public final class dB implements S, aG, ab, bU, e {
     return new ImageIcon(image);
   }
   
-  public f a(String paramString1, String paramString2) {
-    byte b;
-    for (b = 0; b < this.q.getMenuCount(); b++) {
-      f f1 = (f)this.q.getMenu(b);
-      if (f1 instanceof f) {
-        f f2 = (f)f1;
-        if (f2.a().equals(paramString2))
+  public BaInterfaceFoxtrot PropertiesExtension(String paramString1, String paramString2) {
+    byte ManagerUsingJPopupMenu;
+    for (ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < this.q.getMenuCount(); ManagerUsingJPopupMenu++) {
+      BaInterfaceFoxtrot f1 = (BaInterfaceFoxtrot)this.q.getMenu(ManagerUsingJPopupMenu);
+      if (f1 instanceof BaInterfaceFoxtrot) {
+        BaInterfaceFoxtrot f2 = (BaInterfaceFoxtrot)f1;
+        if (f2.PropertiesExtension().equals(paramString2))
           return f1; 
       } else if (f1 != null && f1.getText().equals(paramString2)) {
         return f1;
       } 
     } 
-    for (b = 0; b < this.e.a(paramString1); b++) {
-      f f1 = this.e.a(paramString1, b);
-      if (f1 instanceof f) {
-        f f2 = (f)f1;
-        if (f2.a().equals(paramString2))
+    for (ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < this.AeInterfaceEcho.PropertiesExtension(paramString1); ManagerUsingJPopupMenu++) {
+      BaInterfaceFoxtrot f1 = this.AeInterfaceEcho.PropertiesExtension(paramString1, ManagerUsingJPopupMenu);
+      if (f1 instanceof BaInterfaceFoxtrot) {
+        BaInterfaceFoxtrot f2 = (BaInterfaceFoxtrot)f1;
+        if (f2.PropertiesExtension().equals(paramString2))
           return f1; 
       } else if (f1 != null && f1.getText().equals(paramString2)) {
         return f1;
@@ -439,13 +439,13 @@ public final class dB implements S, aG, ab, bU, e {
     return null;
   }
   
-  public f d() {
-    int i = a.a().a(a.aH, a.a().o());
+  public BaInterfaceFoxtrot BaInterfaceDelta() {
+    int RInterfaceIndia = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.aH, PropertiesExtension.PropertiesExtension().o());
     Font font1 = this.q.getFont();
-    Font font2 = new Font(font1.getFamily(), font1.getStyle(), i);
-    for (String str : T.a().d()) {
-      for (byte b = 0; b < this.e.a(str); b++) {
-        f f1 = this.e.a(str, b);
+    Font font2 = new Font(font1.getFamily(), font1.getStyle(), RInterfaceIndia);
+    for (String str : T.PropertiesExtension().BaInterfaceDelta()) {
+      for (byte ManagerUsingJPopupMenu = 0; ManagerUsingJPopupMenu < this.AeInterfaceEcho.PropertiesExtension(str); ManagerUsingJPopupMenu++) {
+        BaInterfaceFoxtrot f1 = this.AeInterfaceEcho.PropertiesExtension(str, ManagerUsingJPopupMenu);
         if (f1 instanceof Component) {
           Component component = (Component)f1;
           component.setFont(font2);
@@ -455,14 +455,14 @@ public final class dB implements S, aG, ab, bU, e {
     return null;
   }
   
-  public a e() {
+  public PropertiesExtension AeInterfaceEcho() {
     gN gN = new gN(this, "File", true);
     gN.setMnemonic('F');
     fM fM = new fM(this);
     gW gW = new gW(this, "Vehicle Projects", true);
-    gW.a(this.o);
+    gW.PropertiesExtension(this.o);
     gX gX = null;
-    if (!i.a().a("4320432porepo09")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("4320432porepo09")) {
       gX = new gX(this, "New Project", true);
       gX.setAccelerator(KeyStroke.getKeyStroke(78, 8));
       gX.addActionListener(new fX(this));
@@ -474,7 +474,7 @@ public final class dB implements S, aG, ab, bU, e {
     gW.add((JMenuItem)gX);
     gX = new gX(this, "Close Project", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(88, 8));
-    gX.a(this.o);
+    gX.PropertiesExtension(this.o);
     gX.addActionListener(new gt(this));
     gW.add((JMenuItem)gX);
     gW.addSeparator();
@@ -483,7 +483,7 @@ public final class dB implements S, aG, ab, bU, e {
     gW.add((JMenuItem)gX);
     gX = new gX(this, "Import Project Backup", true);
     gX.addActionListener(new dO(this));
-    gX.a(new dZ(this));
+    gX.PropertiesExtension(new dZ(this));
     gW.add((JMenuItem)gX);
     if (Desktop.isDesktopSupported()) {
       gX = new gX(this, "Show Project Folder", true);
@@ -493,78 +493,78 @@ public final class dB implements S, aG, ab, bU, e {
     gW.addSeparator();
     gX = new gX(this, "Project Properties", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(80, 2));
-    gX.a(this.o);
+    gX.PropertiesExtension(this.o);
     gX.addActionListener(new ev(this));
     gW.add((JMenuItem)gX);
     gN.add((JMenuItem)gW);
-    if (!i.a().a("4320432porepo09")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("4320432porepo09")) {
       gX = new gX(this, "New Project", true);
       gX.setAccelerator(KeyStroke.getKeyStroke(78, 8));
-      gX.a(fM);
+      gX.PropertiesExtension(fM);
       gX.addActionListener(new eG(this));
       gN.add((JMenuItem)gX);
     } 
-    if (!i.a().a("h-0ewkfd[pfd[pew")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("h-0ewkfd[pfd[pew")) {
       gO gO = new gO(this);
       gN.add((JMenuItem)gO);
     } 
     gX = new gX(this, "Open Project", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(79, 8));
-    gX.a(fM);
+    gX.PropertiesExtension(fM);
     gX.addActionListener(new eP(this));
     gN.add((JMenuItem)gX);
     gX = new gX(this, "Import Project Backup", true);
-    gX.a(fM);
+    gX.PropertiesExtension(fM);
     gX.addActionListener(new eQ(this));
     gN.add((JMenuItem)gX);
-    gX.setEnabled(i.a().a("09RGDKDG;LKIGD"));
+    gX.setEnabled(RInterfaceIndia.PropertiesExtension().PropertiesExtension("09RGDKDG;LKIGD"));
     gN.addSeparator();
     gX = new gX(this, "Tune Restore Points", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(82, 2));
     gX.addActionListener(new eR(this));
     gN.add((JMenuItem)gX);
-    if (i.a().a("-=fds[pfds[pgd-0")) {
-      gX.a(this.o);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("-=fds[pfds[pgd-0")) {
+      gX.PropertiesExtension(this.o);
     } else {
       gX.setEnabled(false);
     } 
-    gX = new gX(this, g.b("Load Tune") + " (" + a.cw + ")", true);
+    gX = new gX(this, SComponentGolf.ManagerUsingJPopupMenu("Load Tune") + " (" + PropertiesExtension.cw + ")", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(79, 2));
     gX.addActionListener(new eS(this));
     gN.add((JMenuItem)gX);
     gX = new gX(this, "Save Tune", true);
     gX.setAccelerator(KeyStroke.getKeyStroke(83, 2));
-    gX.a(this.o);
+    gX.PropertiesExtension(this.o);
     gX.addActionListener(new eU(this));
     gN.add((JMenuItem)gX);
     gX = new gX(this, "Save Tune As", true);
-    gX.a(this.o);
+    gX.PropertiesExtension(this.o);
     gX.addActionListener(new eV(this));
     gN.add((JMenuItem)gX);
-    if (i.a().a("67r67r8yhdrtrbyuk")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("67r67r8yhdrtrbyuk")) {
       gX = new gX(this, "Compare Tune", true);
       gX.setAccelerator(KeyStroke.getKeyStroke(77, 2));
-      gX.a(new eW(this));
+      gX.PropertiesExtension(new eW(this));
       gX.addActionListener(new eX(this));
       gN.add((JMenuItem)gX);
     } 
-    boolean bool1 = a.a().a(a.da, a.db);
+    boolean bool1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.da, PropertiesExtension.db);
     if (!bool1) {
       gI gI = new gI(this, "Gauge Cluster");
-      gI.a(new eY(this));
+      gI.PropertiesExtension(new eY(this));
       gN.add((JMenuItem)gI);
     } 
-    boolean bool2 = i.a().a(";LFDS;LFDS0943;L");
+    boolean bool2 = RInterfaceIndia.PropertiesExtension().PropertiesExtension(";LFDS;LFDS0943;L");
     if (bool2) {
       gY gY = new gY(this, "Tuning Views");
-      gY.a(new eZ(this));
+      gY.PropertiesExtension(new eZ(this));
       gN.add((JMenuItem)gY);
     } 
     fa fa = new fa(this);
     gV gV = new gV(this, "Work Offline", false, false);
     gV.setAccelerator(KeyStroke.getKeyStroke(87, 2));
-    gV.a(fa);
-    gV.a(new fb(this));
+    gV.PropertiesExtension(fa);
+    gV.PropertiesExtension(new fb(this));
     gV.addActionListener(new fc(this));
     gN.add((JMenuItem)gV);
     gN.addSeparator();
@@ -574,116 +574,116 @@ public final class dB implements S, aG, ab, bU, e {
     return gN;
   }
   
-  public a f() {
+  public PropertiesExtension BaInterfaceFoxtrot() {
     gW gW = new gW(this, "Data Logging", true);
     if (this.p.equals("Wrapping Main Menu"))
-      gW.b(true); 
-    gW.a(this.o);
+      gW.ManagerUsingJPopupMenu(true); 
+    gW.PropertiesExtension(this.o);
     gW.setMnemonic('D');
-    boolean bool = i.a().a(";'rew-043;lh/lhoi");
+    boolean bool = RInterfaceIndia.PropertiesExtension().PropertiesExtension(";'rew-043;lh/lhoi");
     gX gX1 = new gX(this, "Start Logging", true);
     gX1.setAccelerator(KeyStroke.getKeyStroke(76, 2));
-    gX1.a(new ff(this));
+    gX1.PropertiesExtension(new ff(this));
     gX1.setEnabled(bool);
     gX1.addActionListener(new fg(this));
     gW.add((JMenuItem)gX1);
     gX1 = new gX(this, "Stop", true);
     gX1.setAccelerator(KeyStroke.getKeyStroke(75, 2));
-    gX1.a(new fh(this));
+    gX1.PropertiesExtension(new fh(this));
     gX1.addActionListener(new fi(this));
     gW.add((JMenuItem)gX1);
     gX gX2 = new gX(this, "Logging Profiles", true);
-    if (i.a().a("fg;';'[PD;LSAG")) {
-      gX2.a(this.o);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("fg;';'[PD;LSAG")) {
+      gX2.PropertiesExtension(this.o);
       gX2.addActionListener(new fj(this));
     } else {
       gX2.setEnabled(false);
     } 
     gW.add((JMenuItem)gX2);
     gX gX3 = new gX(this, "Triggered Logging", true);
-    if (i.a().a("FDSDSA-0;L;l0") || i.a().a("sa0-0o0os-0o-0DS")) {
-      gX3.a(this.o);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("FDSDSA-0;L;l0") || RInterfaceIndia.PropertiesExtension().PropertiesExtension("sa0-0o0os-0o-0DS")) {
+      gX3.PropertiesExtension(this.o);
       gX3.addActionListener(new fk(this));
     } else {
       gX3.setEnabled(false);
     } 
     gW.add((JMenuItem)gX3);
     gW.addSeparator();
-    a a1 = new a(g.b("Data Logging Preferences"));
-    a a2 = new a(g.b("Data Log Format"));
+    PropertiesExtension a1 = new PropertiesExtension(SComponentGolf.ManagerUsingJPopupMenu("Data Logging Preferences"));
+    PropertiesExtension a2 = new PropertiesExtension(SComponentGolf.ManagerUsingJPopupMenu("Data Log Format"));
     ButtonGroup buttonGroup = new ButtonGroup();
-    String str = a.a().c(a.cA, a.cB);
-    JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("ASCII Format") + " (" + a.cs + ")");
-    jCheckBoxMenuItem1.setSelected(str.equals(a.cs));
+    String str = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cA, PropertiesExtension.cB);
+    JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("ASCII Format") + " (" + PropertiesExtension.cs + ")");
+    jCheckBoxMenuItem1.setSelected(str.equals(PropertiesExtension.cs));
     jCheckBoxMenuItem1.addActionListener(new fl(this));
     a2.add(jCheckBoxMenuItem1);
     buttonGroup.add(jCheckBoxMenuItem1);
-    JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(g.b("Enhanced Logging Format") + " (" + a.cr + ")");
-    jCheckBoxMenuItem2.setSelected(str.equals(a.cr));
+    JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Enhanced Logging Format") + " (" + PropertiesExtension.cr + ")");
+    jCheckBoxMenuItem2.setSelected(str.equals(PropertiesExtension.cr));
     jCheckBoxMenuItem2.addActionListener(new fm(this));
     a2.add(jCheckBoxMenuItem2);
     buttonGroup.add(jCheckBoxMenuItem2);
     a1.add((JMenuItem)a2);
     gW.add((JMenuItem)a1);
-    if (i.a().a("8754JUREJYFD87")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("8754JUREJYFD87")) {
       JMenu jMenu = new JMenu("Data Log Naming");
-      String str1 = a.a().c(a.ce, a.cf);
+      String str1 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.ce, PropertiesExtension.cf);
       buttonGroup = new ButtonGroup();
-      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(g.b("Name Data Logs On Stop"), str1.equals(a.bX));
+      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Name Data Logs On Stop"), str1.equals(PropertiesExtension.bX));
       jCheckBoxMenuItem3.addActionListener(new fn(this));
       buttonGroup.add(jCheckBoxMenuItem3);
       jMenu.add(jCheckBoxMenuItem3);
-      JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(g.b("Name Data Logs On Start"), str1.equals(a.bY));
+      JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Name Data Logs On Start"), str1.equals(PropertiesExtension.bY));
       jCheckBoxMenuItem4.addActionListener(new fo(this));
       buttonGroup.add(jCheckBoxMenuItem4);
       jMenu.add(jCheckBoxMenuItem4);
-      JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(g.b("Silently Auto Name Log Files"), str1.equals(a.bZ));
+      JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Silently Auto Name Log Files"), str1.equals(PropertiesExtension.bZ));
       jCheckBoxMenuItem5.addActionListener(new fq(this));
       buttonGroup.add(jCheckBoxMenuItem5);
       jMenu.add(jCheckBoxMenuItem5);
       a1.add(jMenu);
-      boolean bool1 = a.a().c(a.ca, a.cb);
-      c c = new c(g.b("Show Rename Dialog on SD Download"), true, bool1);
-      c.a(new fr(this));
-      a1.add((JMenuItem)c);
-      if (i.a().a(" 09s98r32-po3q9264")) {
-        boolean bool2 = a.a().c(a.ae, a.af);
-        c c1 = new c(g.b("Save Tune to Data Log"), true, bool2);
-        c1.a(new fs(this));
+      boolean bool1 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.ca, PropertiesExtension.cb);
+      JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = new JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Show Rename Dialog on SD Download"), true, bool1);
+      JCheckBoxMenuItemExtension.PropertiesExtension(new fr(this));
+      a1.add((JMenuItem)JCheckBoxMenuItemExtension);
+      if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(" 09s98r32-po3q9264")) {
+        boolean bool2 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.ae, PropertiesExtension.af);
+        JCheckBoxMenuItemExtension c1 = new JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Save Tune to Data Log"), true, bool2);
+        c1.PropertiesExtension(new fs(this));
         c1.addActionListener(new ft(this));
-        c1.a(new fu(this));
-        c1.setToolTipText(g.b("Enhanced Logging Format") + " (" + a.cr + ") " + g.b("Required"));
+        c1.PropertiesExtension(new fu(this));
+        c1.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Enhanced Logging Format") + " (" + PropertiesExtension.cr + ") " + SComponentGolf.ManagerUsingJPopupMenu("Required"));
         a1.add((JMenuItem)c1);
       } 
     } 
-    if (i.a().a("sa0-0o0os-0o-0DS")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("sa0-0o0os-0o-0DS")) {
       gX gX = new gX(this, "Re ARM Logging", true);
       gX.addActionListener(new fv(this));
       gX.setAccelerator(KeyStroke.getKeyStroke(65, 2));
-      gX.a(new fw(this));
+      gX.PropertiesExtension(new fw(this));
       gW.add((JMenuItem)gX);
     } 
-    if (!a.a().a(a.cY, a.cZ)) {
+    if (!PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.cY, PropertiesExtension.cZ)) {
       gW.addSeparator();
       gW gW1 = new gW(this, "Import / Conversion");
       gX gX4 = new gX(this, "PalmLog Import Utility", true);
-      gX4.a(this.o);
+      gX4.PropertiesExtension(this.o);
       gX4.addActionListener(new fx(this));
       gW1.add((JMenuItem)gX4);
-      String str1 = a.a().a(a.dn, "Convert Binary Log (MS3, FRD)");
+      String str1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dn, "Convert Binary Log (MS3, FRD)");
       gX gX5 = new gX(this, str1, true);
-      gX5.a(this.o);
+      gX5.PropertiesExtension(this.o);
       gX5.addActionListener(new fy(this));
       gW1.add((JMenuItem)gX5);
       gW.add((JMenuItem)gW1);
-    } else if (i.a().a("098532oiutewlkjg098")) {
-      String str1 = a.a().a(a.dn, "Convert Binary Log (MS3, FRD)");
+    } else if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("098532oiutewlkjg098")) {
+      String str1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dn, "Convert Binary Log (MS3, FRD)");
       gX gX = new gX(this, str1, true);
-      gX.a(this.o);
+      gX.PropertiesExtension(this.o);
       gX.addActionListener(new fz(this));
       gW.add((JMenuItem)gX);
     } 
-    if (i.a().a("6509h;l;lhfoi")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("6509h;ApplicationPluginExtension;lhfoi")) {
       gX1 = new gX(this, "Audio Recording Configuration", true);
       gX1.addActionListener(new fB(this));
       gW.add((JMenuItem)gX1);
@@ -696,29 +696,29 @@ public final class dB implements S, aG, ab, bU, e {
       gX1 = new gX(this, "Show DataLog Folder", true);
       gX1.setAccelerator(KeyStroke.getKeyStroke(76, 8));
       gX1.addActionListener(new fE(this));
-      gX1.a(this.o);
+      gX1.PropertiesExtension(this.o);
       gW.add((JMenuItem)gX1);
     } 
     return gW;
   }
   
-  public a g() {
+  public PropertiesExtension SComponentGolf() {
     gW gW1 = new gW(this, "Options", true);
     gW1.setMnemonic('P');
-    boolean bool1 = i.a().a(";';';'0-=pfpdpd");
-    if (!i.a().a("r-0gds-=-=fd43;ds")) {
+    boolean bool1 = RInterfaceIndia.PropertiesExtension().PropertiesExtension(";';';'0-=pfpdpd");
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("r-0gds-=-=fd43;ds")) {
       gW gW = new gW(this, "Language", true);
-      ArrayList arrayList = g.b();
+      ArrayList arrayList = SComponentGolf.ManagerUsingJPopupMenu();
       ButtonGroup buttonGroup1 = new ButtonGroup();
-      for (e e1 : arrayList) {
+      for (AeInterfaceEcho e1 : arrayList) {
         String str1 = "en";
-        String str2 = e1.b();
-        if (e1.a().equals(str1))
+        String str2 = e1.ManagerUsingJPopupMenu();
+        if (e1.PropertiesExtension().equals(str1))
           str2 = str2 + " (Default)"; 
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str2, true);
         buttonGroup1.add(jCheckBoxMenuItem);
-        jCheckBoxMenuItem.setActionCommand(e1.a());
-        jCheckBoxMenuItem.setSelected(e1.a().equals(a.a().c("viewLanguageCode", str1)));
+        jCheckBoxMenuItem.setActionCommand(e1.PropertiesExtension());
+        jCheckBoxMenuItem.setSelected(e1.PropertiesExtension().equals(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("viewLanguageCode", str1)));
         jCheckBoxMenuItem.addActionListener(new fF(this));
         gW.add(jCheckBoxMenuItem);
       } 
@@ -729,91 +729,91 @@ public final class dB implements S, aG, ab, bU, e {
     ButtonGroup buttonGroup = new ButtonGroup();
     for (UIManager.LookAndFeelInfo lookAndFeelInfo : arrayOfLookAndFeelInfo) {
       String str1 = lookAndFeelInfo.getName();
-      String str2 = a.a().c("defaultLookAndFeelClass", UIManager.getCrossPlatformLookAndFeelClassName());
+      String str2 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("defaultLookAndFeelClass", UIManager.getCrossPlatformLookAndFeelClassName());
       if (lookAndFeelInfo.getClassName().equals(str2))
-        str1 = str1 + " (" + g.b("Default") + ")"; 
+        str1 = str1 + " (" + SComponentGolf.ManagerUsingJPopupMenu("Default") + ")"; 
       if (!str1.equals("Windows Classic") && !str1.startsWith("TinyLookAndFeel")) {
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1, true);
         buttonGroup.add(jCheckBoxMenuItem);
         jCheckBoxMenuItem.setActionCommand(lookAndFeelInfo.getClassName());
-        jCheckBoxMenuItem.setSelected(lookAndFeelInfo.getClassName().equals(a.a().c("lookAndFeelClass", str2)));
+        jCheckBoxMenuItem.setSelected(lookAndFeelInfo.getClassName().equals(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("lookAndFeelClass", str2)));
         jCheckBoxMenuItem.addActionListener(new fG(this));
         gW2.add(jCheckBoxMenuItem);
       } 
     } 
-    if (i.a().a("FS-0FDS;L4"))
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("FS-0FDS;L4"))
       gW1.add(gW2.getComponent()); 
     if (!bool1) {
       gW gW5 = new gW(this, "Navigation", true);
       buttonGroup = new ButtonGroup();
-      JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Main Menu Style"));
+      JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Main Menu Style"));
       jCheckBoxMenuItem1.setActionCommand("Main Menu Style");
-      jCheckBoxMenuItem1.setState(a.a().c("navigationStyle", a).equals("Main Menu Style"));
+      jCheckBoxMenuItem1.setState(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("navigationStyle", PropertiesExtension).equals("Main Menu Style"));
       buttonGroup.add(jCheckBoxMenuItem1);
       jCheckBoxMenuItem1.addActionListener(new fH(this));
       gW5.add(jCheckBoxMenuItem1);
-      if (!a.a().c("lookAndFeelClass", "").contains("TinyLookAndFeel")) {
-        jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Wrapping Main Menu"));
+      if (!PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("lookAndFeelClass", "").contains("TinyLookAndFeel")) {
+        jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Wrapping Main Menu"));
         jCheckBoxMenuItem1.setActionCommand("Wrapping Main Menu");
-        jCheckBoxMenuItem1.setState(a.a().c("navigationStyle", a).equals("Wrapping Main Menu"));
+        jCheckBoxMenuItem1.setState(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("navigationStyle", PropertiesExtension).equals("Wrapping Main Menu"));
         buttonGroup.add(jCheckBoxMenuItem1);
         jCheckBoxMenuItem1.addActionListener(new fI(this));
         gW5.add(jCheckBoxMenuItem1);
       } 
-      jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Toolbar Style"));
+      jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Toolbar Style"));
       jCheckBoxMenuItem1.setActionCommand("Toolbar Style");
-      jCheckBoxMenuItem1.setState(a.a().c("navigationStyle", a).equals("Toolbar Style"));
+      jCheckBoxMenuItem1.setState(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension("navigationStyle", PropertiesExtension).equals("Toolbar Style"));
       buttonGroup.add(jCheckBoxMenuItem1);
       jCheckBoxMenuItem1.addActionListener(new fJ(this));
       gW5.add(jCheckBoxMenuItem1);
       gW gW6 = new gW(this, "Navigation options");
-      boolean bool4 = a.a().c(a.bh, true);
-      jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Show Disabled Menu"));
+      boolean bool4 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bh, true);
+      jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Show Disabled Menu"));
       jCheckBoxMenuItem1.setState(bool4);
       jCheckBoxMenuItem1.addActionListener(new fK(this));
       gW6.add(jCheckBoxMenuItem1);
       gW5.add((JMenuItem)gW6);
       gW1.add((JMenuItem)gW5);
       gW gW7 = new gW(this, "View");
-      boolean bool5 = a.a().c(a.bL, a.bM);
+      boolean bool5 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bL, PropertiesExtension.bM);
       gV gV1 = new gV(this, "Show Gauges on VE Analyze", true, bool5);
       gV1.addActionListener(new fL(this));
-      gV1.a(new fN(this));
+      gV1.PropertiesExtension(new fN(this));
       gW7.add((JMenuItem)gV1);
-      boolean bool6 = a.a().c(a.bN, a.bO);
+      boolean bool6 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bN, PropertiesExtension.bO);
       gV gV2 = new gV(this, "Show Live Graphs on VE Analyze", true, bool6);
       gV2.addActionListener(new fO(this));
-      gV2.a(new fP(this));
+      gV2.PropertiesExtension(new fP(this));
       gW7.add((JMenuItem)gV2);
       gW1.add((JMenuItem)gW7);
-      boolean bool7 = a.a().c(a.bl, a.bm);
+      boolean bool7 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bl, PropertiesExtension.bm);
       gV gV3 = new gV(this, "Show Enable Condition in Menu Tooltips", true, bool7);
       gV3.addActionListener(new fQ(this));
-      gV3.a(new fR(this));
+      gV3.PropertiesExtension(new fR(this));
       gW7.add((JMenuItem)gV3);
       gW1.add((JMenuItem)gW7);
       gW gW8 = new gW(this, "Advanced");
-      JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(g.b("Report INI Warnings"));
+      JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Report INI Warnings"));
       jCheckBoxMenuItem2.addActionListener(new fS(this));
-      boolean bool8 = a.a().c(a.bc, a.bd);
+      boolean bool8 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bc, PropertiesExtension.bd);
       jCheckBoxMenuItem2.setState(bool8);
       gW8.add(jCheckBoxMenuItem2);
-      if (J.a()) {
-        JMenu jMenu = new JMenu(g.b("Video driver work arounds"));
+      if (J.PropertiesExtension()) {
+        JMenu jMenu = new JMenu(SComponentGolf.ManagerUsingJPopupMenu("Video driver work arounds"));
         ButtonGroup buttonGroup1 = new ButtonGroup();
-        JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(g.b("Force OpenGL Active"));
+        JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Force OpenGL Active"));
         jCheckBoxMenuItem4.addActionListener(new fT(this));
-        boolean bool10 = a.a().c(a.F, a.G);
+        boolean bool10 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.F, PropertiesExtension.G);
         jCheckBoxMenuItem4.setState(bool10);
         buttonGroup1.add(jCheckBoxMenuItem4);
         jMenu.add(jCheckBoxMenuItem4);
-        JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(g.b("Disable Direct 3D"));
+        JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Disable Direct 3D"));
         jCheckBoxMenuItem5.addActionListener(new fU(this));
-        boolean bool11 = a.a().c(a.H, a.I);
+        boolean bool11 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.H, PropertiesExtension.I);
         jCheckBoxMenuItem5.setState(bool11);
         buttonGroup1.add(jCheckBoxMenuItem5);
         jMenu.add(jCheckBoxMenuItem5);
-        JCheckBoxMenuItem jCheckBoxMenuItem6 = new JCheckBoxMenuItem(g.b("Java Default (D3D Enabled)"));
+        JCheckBoxMenuItem jCheckBoxMenuItem6 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Java Default (D3D Enabled)"));
         jCheckBoxMenuItem6.addActionListener(new fV(this));
         boolean bool = (!bool10 && !bool11) ? true : false;
         jCheckBoxMenuItem6.setState(bool);
@@ -821,182 +821,182 @@ public final class dB implements S, aG, ab, bU, e {
         jMenu.add(jCheckBoxMenuItem6);
         gW8.add(jMenu);
       } 
-      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(g.b("Always Allow Multiple Instances"));
+      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Always Allow Multiple Instances"));
       jCheckBoxMenuItem3.addActionListener(new fW(this));
-      boolean bool9 = a.a().c(a.bP, a.bQ);
+      boolean bool9 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bP, PropertiesExtension.bQ);
       jCheckBoxMenuItem3.setState(bool9);
       gW8.add(jCheckBoxMenuItem3);
-      if (i.a().a("98fg54lklk")) {
-        boolean bool = (a.A() != null && a.A().Q()) ? true : false;
-        c c = new c(g.b("Run Slave Server"), true, bool);
-        c.addActionListener(new fY(this));
-        c.a(new fZ(this));
-        gW8.add((JMenuItem)c);
-        c.a(this.o);
+      if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("98fg54lklk")) {
+        boolean bool = (PropertiesExtension.A() != null && PropertiesExtension.A().Q()) ? true : false;
+        JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = new JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Run Slave Server"), true, bool);
+        JCheckBoxMenuItemExtension.addActionListener(new fY(this));
+        JCheckBoxMenuItemExtension.PropertiesExtension(new fZ(this));
+        gW8.add((JMenuItem)JCheckBoxMenuItemExtension);
+        JCheckBoxMenuItemExtension.PropertiesExtension(this.o);
       } 
       gW1.add((JMenuItem)gW8);
     } 
     gW gW3 = new gW(this, "Preferences");
-    if (i.a().a(";'GDS0[p'pgd[p")) {
-      boolean bool4 = a.a().c(a.bf, a.cP);
-      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(g.b("Load Last Project on startup"), bool4);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(";'GDS0[p'pgd[p")) {
+      boolean bool4 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bf, PropertiesExtension.cP);
+      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Load Last Project on startup"), bool4);
       jCheckBoxMenuItem.addActionListener(new ga(this));
       gW3.add(jCheckBoxMenuItem);
-      boolean bool5 = a.a().c(a.bg, false);
+      boolean bool5 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bg, false);
       gV gV1 = new gV(this, "Make Dashboards Full Screen", true, bool5);
       gV1.addActionListener(new gb(this));
-      gV1.a(new gc(this));
-      gV1.a(new gd(this));
+      gV1.PropertiesExtension(new gc(this));
+      gV1.PropertiesExtension(new gd(this));
       gW3.add((JMenuItem)gV1);
     } 
     gW gW4 = new gW(this, "Settings Dialog Font Size");
-    int i = a.a().a(a.aH, a.a().o());
+    int RInterfaceIndia = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.aH, PropertiesExtension.PropertiesExtension().o());
     gE gE = new gE(this);
-    int j = a.a().o();
-    for (byte b = 8; b < 41; b++) {
-      String str = (b == j) ? (b + "(" + g.b("Default") + ")") : (b + "");
-      gV gV1 = new gV(this, str, true, (i == b));
-      gE.a((JCheckBoxMenuItem)gV1);
-      gV1.setActionCommand("" + b);
+    int j = PropertiesExtension.PropertiesExtension().o();
+    for (byte ManagerUsingJPopupMenu = 8; ManagerUsingJPopupMenu < 41; ManagerUsingJPopupMenu++) {
+      String str = (ManagerUsingJPopupMenu == j) ? (ManagerUsingJPopupMenu + "(" + SComponentGolf.ManagerUsingJPopupMenu("Default") + ")") : (ManagerUsingJPopupMenu + "");
+      gV gV1 = new gV(this, str, true, (RInterfaceIndia == ManagerUsingJPopupMenu));
+      gE.PropertiesExtension((JCheckBoxMenuItem)gV1);
+      gV1.setActionCommand("" + ManagerUsingJPopupMenu);
       gV1.addActionListener(new ge(this));
       gW4.add((JMenuItem)gV1);
     } 
     gW3.add((JMenuItem)gW4);
-    if (i.a().a("fv-7rkf74nfd67whn5iuchqj")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("fv-7rkf74nfd67whn5iuchqj")) {
       gX gX = new gX(this, "Password Caching Timeout", true);
       gX.addActionListener(new gf(this));
-      gX.b(new gg(this));
+      gX.ManagerUsingJPopupMenu(new gg(this));
       gW3.add((JMenuItem)gX);
     } 
     if (BinTableView.S()) {
-      boolean bool = a.a().a(a.cg, a.ch);
-      gV gV1 = new gV(this, g.b("Mouse wheel scroll changes selected Table cells"), true, bool);
+      boolean bool = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.cg, PropertiesExtension.ch);
+      gV gV1 = new gV(this, SComponentGolf.ManagerUsingJPopupMenu("Mouse wheel scroll changes selected Table cells"), true, bool);
       gV1.addActionListener(new gh(this));
-      gV1.a(new gj(this));
+      gV1.PropertiesExtension(new gj(this));
       gW3.add((JMenuItem)gV1);
     } 
-    if (i.a().a("67r67r8yhdrtrbyuk")) {
-      boolean bool = a.a().c(a.bu, a.bv);
-      gV gV1 = new gV(this, g.b("Perform Difference Report On Connect"), true, bool);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("67r67r8yhdrtrbyuk")) {
+      boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bu, PropertiesExtension.bv);
+      gV gV1 = new gV(this, SComponentGolf.ManagerUsingJPopupMenu("Perform Difference Report On Connect"), true, bool);
       gV1.addActionListener(new gk(this));
-      gV1.a(new gl(this));
+      gV1.PropertiesExtension(new gl(this));
       gW3.add((JMenuItem)gV1);
     } 
-    boolean bool2 = a.a().c(a.bw, true);
-    gV gV = new gV(this, g.b("Automatically Load and Save Current Tune"), true, bool2);
+    boolean bool2 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bw, true);
+    gV gV = new gV(this, SComponentGolf.ManagerUsingJPopupMenu("Automatically Load and Save Current Tune"), true, bool2);
     gV.addActionListener(new gm(this));
-    gV.a(new gn(this));
+    gV.PropertiesExtension(new gn(this));
     gW3.add((JMenuItem)gV);
-    if (i.a().a(",.fesokdsoi4309")) {
-      boolean bool = a.a().c(a.bj, a.bk);
-      gV gV1 = new gV(this, g.b("Prompt if CurrentTune altered by other program"), true, bool);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(",.fesokdsoi4309")) {
+      boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bj, PropertiesExtension.bk);
+      gV gV1 = new gV(this, SComponentGolf.ManagerUsingJPopupMenu("Prompt if CurrentTune altered by other program"), true, bool);
       gV1.addActionListener(new go(this));
-      gV1.a(new gp(this));
+      gV1.PropertiesExtension(new gp(this));
       gW3.add((JMenuItem)gV1);
     } 
     gW1.add((JMenuItem)gW3);
-    if (i.a().a("-=fds[pfds[pgd-0")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("-=fds[pfds[pgd-0")) {
       gW gW = new gW(this, "Restore Points");
-      boolean bool = a.a().c(a.bz, a.bA);
-      JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Save Restore Point on Close"), bool);
-      jCheckBoxMenuItem1.setToolTipText(g.b("When enabled a Restore Point will be created on Project close"));
+      boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bz, PropertiesExtension.bA);
+      JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Save Restore Point on Close"), bool);
+      jCheckBoxMenuItem1.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("When enabled PropertiesExtension Restore Point will be created on Project close"));
       jCheckBoxMenuItem1.addActionListener(new gq(this));
       gW.add(jCheckBoxMenuItem1);
-      bool = a.a().c(a.bD, a.bE);
-      JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(g.b("Save Restore Point on Connect"), bool);
-      jCheckBoxMenuItem2.setToolTipText(g.b("When enabled a Restore Point will be created when connecting to the ECU if it is different from the last restore point"));
+      bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bD, PropertiesExtension.bE);
+      JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Save Restore Point on Connect"), bool);
+      jCheckBoxMenuItem2.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("When enabled PropertiesExtension Restore Point will be created when connecting to the ECU if it is different from the last restore point"));
       jCheckBoxMenuItem2.addActionListener(new gr(this));
       gW.add(jCheckBoxMenuItem2);
-      bool = a.a().c(a.bB, a.bC);
-      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(g.b("Save Restore Point on Tune Save"), bool);
-      jCheckBoxMenuItem3.setToolTipText(g.b("When enabled a Restore Point will be created on Tune Save or CTRL+S"));
+      bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bB, PropertiesExtension.bC);
+      JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Save Restore Point on Tune Save"), bool);
+      jCheckBoxMenuItem3.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("When enabled PropertiesExtension Restore Point will be created on Tune Save or CTRL+S"));
       jCheckBoxMenuItem3.addActionListener(new gs(this));
       gW.add(jCheckBoxMenuItem3);
-      bool = a.a().c(a.bF, a.bG);
-      JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(g.b("Save Restore Point on Tune Open"), bool);
-      jCheckBoxMenuItem4.setToolTipText(g.b("When enabled a Restore Point will be created when loading a Tune file to a controller"));
+      bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bF, PropertiesExtension.bG);
+      JCheckBoxMenuItem jCheckBoxMenuItem4 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Save Restore Point on Tune Open"), bool);
+      jCheckBoxMenuItem4.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("When enabled PropertiesExtension Restore Point will be created when loading PropertiesExtension Tune file to PropertiesExtension controller"));
       jCheckBoxMenuItem4.addActionListener(new gu(this));
       gW.add(jCheckBoxMenuItem4);
-      bool = a.a().c(a.bJ, a.bK);
-      JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(g.b("Skip when no setting changes"), bool);
-      jCheckBoxMenuItem5.setToolTipText(g.b("When enabled a Restore Point will not be saved if a there have been no changes since the last Restore Point"));
+      bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bJ, PropertiesExtension.bK);
+      JCheckBoxMenuItem jCheckBoxMenuItem5 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Skip when no setting changes"), bool);
+      jCheckBoxMenuItem5.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("When enabled PropertiesExtension Restore Point will not be saved if PropertiesExtension there have been no changes since the last Restore Point"));
       jCheckBoxMenuItem5.addActionListener(new gv(this));
       gW.add(jCheckBoxMenuItem5);
-      double d1 = a.a().a(a.bH, a.bI);
-      gX gX = new gX(this, g.b("Maximum Megabytes Disk Space") + ": " + X.a(d1), true);
+      double d1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.bH, PropertiesExtension.bI);
+      gX gX = new gX(this, SComponentGolf.ManagerUsingJPopupMenu("Maximum Megabytes Disk Space") + ": " + X.PropertiesExtension(d1), true);
       gX.addActionListener(new gw(this));
       gW.add((JMenuItem)gX);
       gW1.add((JMenuItem)gW);
     } 
     if (!bool1) {
       gW gW = new gW(this, "Performance");
-      boolean bool4 = a.a().c(a.bo, true);
-      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(g.b("Gauge Float down on start"), bool4);
-      jCheckBoxMenuItem.setToolTipText(g.b("Enable / Disable gauge float down on project open."));
+      boolean bool4 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bo, true);
+      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Gauge Float down on start"), bool4);
+      jCheckBoxMenuItem.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Enable / Disable gauge float down on project open."));
       jCheckBoxMenuItem.addActionListener(new gx(this));
       gW.add(jCheckBoxMenuItem);
-      boolean bool5 = a.a().c(a.bp, false);
+      boolean bool5 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bp, false);
       if (bool5) {
-        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Run In Lite Mode"), bool5);
-        jCheckBoxMenuItem1.setToolTipText(g.b("Turns off features to conserve resources."));
+        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Run In Lite Mode"), bool5);
+        jCheckBoxMenuItem1.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Turns off features to conserve resources."));
         jCheckBoxMenuItem1.addActionListener(new gy(this));
-        if (!i.a().a("poij0um098u8oiukj")) {
+        if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("poij0um098u8oiukj")) {
           gW.add(jCheckBoxMenuItem1);
           jCheckBoxMenuItem1.setEnabled(false);
           jCheckBoxMenuItem1.setState(false);
         } 
       } 
-      if (a.a().b(a.bq, a.br)) {
-        boolean bool = a.a().c(a.bs, a.bt);
-        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Dash Only Mode"), bool);
-        jCheckBoxMenuItem1.setToolTipText(g.b("Disables Tuning functions for faster project load and to conserve resources."));
+      if (PropertiesExtension.PropertiesExtension().ManagerUsingJPopupMenu(PropertiesExtension.bq, PropertiesExtension.br)) {
+        boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.bs, PropertiesExtension.bt);
+        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Dash Only Mode"), bool);
+        jCheckBoxMenuItem1.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Disables Tuning functions for faster project load and to conserve resources."));
         jCheckBoxMenuItem1.addActionListener(new gz(this));
         gW.add(jCheckBoxMenuItem1);
       } else {
-        a.a().b(a.bq, Boolean.toString(false));
+        PropertiesExtension.PropertiesExtension().ManagerUsingJPopupMenu(PropertiesExtension.bq, Boolean.toString(false));
       } 
-      if (i.a().a("_(*UR98ewf098u 98EE 2  *(W")) {
-        boolean bool = a.a().c(a.aa, a.ab);
-        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(g.b("Prevent Sleep when Online"), bool);
-        jCheckBoxMenuItem1.setToolTipText("<html>" + g.b("When active, Screen saver and sleeping will be prevented while online with a controller.") + "<br>" + g.b("When not connected to a controller, sleeping will be allowed."));
+      if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("_(*UR98ewf098u 98EE 2  *(W")) {
+        boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.aa, PropertiesExtension.ab);
+        JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Prevent Sleep when Online"), bool);
+        jCheckBoxMenuItem1.setToolTipText("<html>" + SComponentGolf.ManagerUsingJPopupMenu("When active, Screen saver and sleeping will be prevented while online with PropertiesExtension controller.") + "<br>" + SComponentGolf.ManagerUsingJPopupMenu("When not connected to PropertiesExtension controller, sleeping will be allowed."));
         jCheckBoxMenuItem1.addActionListener(new gA(this));
         gW.add(jCheckBoxMenuItem1);
       } 
       gW1.add((JMenuItem)gW);
-    } else if (i.a().a("_(*UR98ewf098u 98EE 2  *(W") && i.a().a("_(*UR98ewf098u 98EE 2  *(W")) {
-      boolean bool = a.a().c(a.aa, a.ab);
-      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(g.b("Prevent Sleep when Online"), bool);
-      jCheckBoxMenuItem.setToolTipText("<html>" + g.b("When active, Screen saver and sleeping will be prevented while online with a controller.") + "<br>" + g.b("When not connected to a controller, sleeping will be allowed."));
+    } else if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("_(*UR98ewf098u 98EE 2  *(W") && RInterfaceIndia.PropertiesExtension().PropertiesExtension("_(*UR98ewf098u 98EE 2  *(W")) {
+      boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.aa, PropertiesExtension.ab);
+      JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Prevent Sleep when Online"), bool);
+      jCheckBoxMenuItem.setToolTipText("<html>" + SComponentGolf.ManagerUsingJPopupMenu("When active, Screen saver and sleeping will be prevented while online with PropertiesExtension controller.") + "<br>" + SComponentGolf.ManagerUsingJPopupMenu("When not connected to PropertiesExtension controller, sleeping will be allowed."));
       jCheckBoxMenuItem.addActionListener(new gB(this));
       gW3.add(jCheckBoxMenuItem);
     } 
-    if (i.a().a("645fds645fds  fdsd098532#@")) {
-      a a = new a("Preferred Units");
-      gW1.add((JMenuItem)a);
-      boolean bool = a.a().c(a.cc, a.cd);
-      c c = new c(g.b("Convert Table Y Axis kPa to PSI"), true, bool);
-      c.a(new gC(this));
-      c.addActionListener(new gD(this));
-      a.add((JMenuItem)c);
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("645fds645fds  fdsd098532#@")) {
+      PropertiesExtension PropertiesExtension = new PropertiesExtension("Preferred Units");
+      gW1.add((JMenuItem)PropertiesExtension);
+      boolean bool = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cc, PropertiesExtension.cd);
+      JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = new JCheckBoxMenuItemExtension(SComponentGolf.ManagerUsingJPopupMenu("Convert Table Y Axis kPa to PSI"), true, bool);
+      JCheckBoxMenuItemExtension.PropertiesExtension(new gC(this));
+      JCheckBoxMenuItemExtension.addActionListener(new gD(this));
+      PropertiesExtension.add((JMenuItem)JCheckBoxMenuItemExtension);
     } 
-    boolean bool3 = a.a().c(a.J, false);
+    boolean bool3 = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.J, false);
     if (bool3) {
-      JMenuItem jMenuItem = gW1.add(g.b("Enable Registration"));
+      JMenuItem jMenuItem = gW1.add(SComponentGolf.ManagerUsingJPopupMenu("Enable Registration"));
       jMenuItem.addActionListener(new dE(this));
-    } else if (a.a().s()) {
+    } else if (PropertiesExtension.PropertiesExtension().s()) {
       JMenu jMenu = new JMenu("Run as Edition");
       dF dF = new dF(this);
-      String str = a.a().c(a.cn, a.c);
+      String str = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cn, PropertiesExtension.JCheckBoxMenuItemExtension);
       buttonGroup = new ButtonGroup();
-      if (a.do.length > 0) {
-        String str1 = a.do[0] + i.c;
+      if (PropertiesExtension.do.length > 0) {
+        String str1 = PropertiesExtension.do[0] + RInterfaceIndia.JCheckBoxMenuItemExtension;
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1);
         jCheckBoxMenuItem.setSelected(str.equals(str1));
         buttonGroup.add(jCheckBoxMenuItem);
         jCheckBoxMenuItem.addActionListener(dF);
         jMenu.add(jCheckBoxMenuItem);
       } 
-      for (String str1 : a.do) {
+      for (String str1 : PropertiesExtension.do) {
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1);
         jCheckBoxMenuItem.setSelected(str.equals(str1));
         buttonGroup.add(jCheckBoxMenuItem);
@@ -1009,28 +1009,28 @@ public final class dB implements S, aG, ab, bU, e {
   }
   
   private void q() {
-    String str = g.b("Must Restart for changes to take effect.") + "\n" + g.b("Restart Now?");
-    if (bV.a(str, this.h, true))
-      f.a().d(this.h); 
+    String str = SComponentGolf.ManagerUsingJPopupMenu("Must Restart for changes to take effect.") + "\n" + SComponentGolf.ManagerUsingJPopupMenu("Restart Now?");
+    if (bV.PropertiesExtension(str, this.h, true))
+      BaInterfaceFoxtrot.PropertiesExtension().BaInterfaceDelta(this.h); 
   }
   
-  public a h() {
+  public PropertiesExtension h() {
     gW gW = new gW(this, "Communications", true);
     gW.setMnemonic('C');
     dG dG = new dG(this);
     gX gX = new gX(this, "Settings", true);
-    gX.a(dG);
+    gX.PropertiesExtension(dG);
     gX.addActionListener(new dH(this));
     gW.add((JMenuItem)gX);
     gX = new gX(this, "Data Rate", true);
-    if (!i.a().a(" 98 98  0gep9gds09kfg09")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension(" 98 98  0gep9gds09kfg09")) {
       gW.setEnabled(false);
     } else {
-      gX.a(dG);
+      gX.PropertiesExtension(dG);
     } 
     gX.addActionListener(new dI(this));
     gW.add((JMenuItem)gX);
-    ArrayList arrayList = R.a().b();
+    ArrayList arrayList = R.PropertiesExtension().ManagerUsingJPopupMenu();
     if (!arrayList.isEmpty()) {
       gW gW1 = new gW(this, "Disabled COM Ports");
       for (String str : arrayList) {
@@ -1041,43 +1041,43 @@ public final class dB implements S, aG, ab, bU, e {
       } 
       gW.add((JMenuItem)gW1);
     } 
-    if (i.a().a("bd098fsdpokfdslk")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("bd098fsdpokfdslk")) {
       gX = new gX(this, "GPS Configuration", true);
       gX.addActionListener(new dK(this));
       gW.add((JMenuItem)gX);
-    } else if (i.a().a("oewtltroh4fs5dslk")) {
+    } else if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("oewtltroh4fs5dslk")) {
       gX = new gX(this, "Enable GPS Support", true);
       gX.addActionListener(new dL(this));
       gW.add((JMenuItem)gX);
     } 
-    boolean bool1 = a.a().a(a.dc, a.dd);
+    boolean bool1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dc, PropertiesExtension.dd);
     if (!bool1) {
       gX = new gX(this, "Mini Terminal", true);
       gX.addActionListener(new dM(this));
       gW.add((JMenuItem)gX);
     } 
     gV gV = new gV(this, "Verify Data on Burn", false, true);
-    gV.a(new dN(this));
-    gV.a(new dP(this));
+    gV.PropertiesExtension(new dN(this));
+    gV.PropertiesExtension(new dP(this));
     gV.addActionListener(new dQ(this));
-    boolean bool2 = a.a().a(a.de, a.df);
+    boolean bool2 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.de, PropertiesExtension.df);
     if (!bool2) {
       gV gV1 = new gV(this, "Comm Debug Log", false, true);
-      gV1.a(new dR(this));
+      gV1.PropertiesExtension(new dR(this));
       gV1.addActionListener(new dS(this));
       gW.add((JMenuItem)gV1);
     } 
     return gW;
   }
   
-  public a i() {
+  public PropertiesExtension RInterfaceIndia() {
     gW gW1 = new gW(this, "Tools", true);
     gW1.setMnemonic('T');
-    String str = a.a().c(a.cE, null);
-    boolean bool = (str != null && (str.equalsIgnoreCase("philip.tobin@yahoo.com") || str.equalsIgnoreCase("p_tobin@yahoo.com") || str.equalsIgnoreCase("brian@efianalytics.com") || (a.b.equals("BigComm") && (str.equalsIgnoreCase("kjmeaney@msn.com") || str.equalsIgnoreCase("pmosman@hyconinc.com") || str.equalsIgnoreCase("BigStuff3@comcast.net"))) || (a.b.equals("TunerStudio") && (str.equalsIgnoreCase("agrippo1@verizon.net") || str.equalsIgnoreCase("jsm@jsm-net.demon.co.uk"))))) ? true : false;
-    if (i.a().a("GD[PP-0REP")) {
+    String str = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cE, null);
+    boolean bool = (str != null && (str.equalsIgnoreCase("philip.tobin@yahoo.com") || str.equalsIgnoreCase("p_tobin@yahoo.com") || str.equalsIgnoreCase("brian@efianalytics.com") || (PropertiesExtension.ManagerUsingJPopupMenu.equals("BigComm") && (str.equalsIgnoreCase("kjmeaney@msn.com") || str.equalsIgnoreCase("pmosman@hyconinc.com") || str.equalsIgnoreCase("BigStuff3@comcast.net"))) || (PropertiesExtension.ManagerUsingJPopupMenu.equals("TunerStudio") && (str.equalsIgnoreCase("agrippo1@verizon.net") || str.equalsIgnoreCase("jsm@jsm-net.demon.co.uk"))))) ? true : false;
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("GD[PP-0REP")) {
       gX gX1 = new gX(this, "Controller RAM Editor", true);
-      gX1.a(new dT(this));
+      gX1.PropertiesExtension(new dT(this));
       gX1.addActionListener(new dU(this));
       gW1.add((JMenuItem)gX1);
       gX1 = new gX(this, "Binary Log Viewer", true);
@@ -1085,7 +1085,7 @@ public final class dB implements S, aG, ab, bU, e {
       gW1.add((JMenuItem)gX1);
       gX1 = new gX(this, "Expression Evaluator", true);
       gX1.addActionListener(new dW(this));
-      gX1.a(new dX(this));
+      gX1.PropertiesExtension(new dX(this));
       gW1.add((JMenuItem)gX1);
       gX1 = new gX(this, "Binary Diff Report", true);
       gX1.addActionListener(new dY(this));
@@ -1096,73 +1096,73 @@ public final class dB implements S, aG, ab, bU, e {
       gX1 = new gX(this, "Encrypt / Decrypt INI File", true);
       gX1.addActionListener(new eb(this));
       gW1.add((JMenuItem)gX1);
-      if (i.a().a("098po;l;lklkjj")) {
+      if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("098po;ApplicationPluginExtension;lklkjj")) {
         gX1 = new gX(this, "Import ODT Addressing", true);
         gX1.addActionListener(new ec(this));
-        gX1.a(new ed(this));
+        gX1.PropertiesExtension(new ed(this));
         gW1.add((JMenuItem)gX1);
         gX1 = new gX(this, "Import Cal Addressing", true);
         gX1.addActionListener(new ee(this));
-        gX1.a(new ef(this));
+        gX1.PropertiesExtension(new ef(this));
         gW1.add((JMenuItem)gX1);
       } 
       gW1.addSeparator();
     } 
     ju ju = new ju();
     gW1.add((JMenuItem)ju);
-    if (!i.a().a("09;lgdlgd432;okg0")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("09;lgdlgd432;okg0")) {
       gX gX1 = new gX(this, "Protocol Stats", true);
       gX1.addActionListener(new eg(this));
-      gX1.b(new eh(this));
+      gX1.ManagerUsingJPopupMenu(new eh(this));
       gW1.add((JMenuItem)gX1);
       gW1.addSeparator();
     } 
-    if (i.a().a(";LKFDS;LK09")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(";LKFDS;LK09")) {
       gX gX1 = new gX(this, "Update / Install Firmware", true);
       gX1.addActionListener(new ei(this));
       gW1.add((JMenuItem)gX1);
     } 
-    if (i.a().a("098432lkjgd0932=- ")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("098432lkjgd0932=- ")) {
       gX gX1 = new gX(this, "Manage Ini Tuning Views", true);
       gX1.addActionListener(new ej(this));
-      gX1.a(this.o);
+      gX1.PropertiesExtension(this.o);
       gW1.add((JMenuItem)gX1);
     } 
     gX gX = new gX(this, "Add Custom Channel Wizard", true);
     gX.addActionListener(new el(this));
-    if (i.a().a(";lfds09pofs,54w09")) {
-      gX.a(new em(this));
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(";lfds09pofs,54w09")) {
+      gX.PropertiesExtension(new em(this));
     } else {
       gX.setEnabled(false);
-      gX.setToolTipText(g.b("Upgrade to enable"));
+      gX.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Upgrade to enable"));
     } 
     gW1.add((JMenuItem)gX);
     gX = new gX(this, "Custom Channel Editor", true);
     gX.addActionListener(new en(this));
-    if (i.a().a(";lfds09pofs,54w09")) {
-      gX.a(new eo(this));
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(";lfds09pofs,54w09")) {
+      gX.PropertiesExtension(new eo(this));
     } else {
       gX.setEnabled(false);
-      gX.setToolTipText(g.b("Upgrade to enable"));
+      gX.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Upgrade to enable"));
     } 
     gW1.add((JMenuItem)gX);
     gX = new gX(this, "User Action Editor", true);
     gX.addActionListener(new ep(this));
-    if (!i.a().a("poij  fdsz poi9ure895 ms7(")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("poij  fdsz poi9ure895 ms7(")) {
       gX.setEnabled(false);
-      gX.setToolTipText(g.b("Upgrade to enable"));
+      gX.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Upgrade to enable"));
     } 
     gX = new gX(this, "Action Management", true);
     gX.addActionListener(new eq(this));
-    if (!i.a().a("poij  fdsz poi9ure895 ms7(")) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension("poij  fdsz poi9ure895 ms7(")) {
       gX.setEnabled(false);
-      gX.setToolTipText(g.b("Upgrade to enable"));
+      gX.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Upgrade to enable"));
     } else {
-      gX.a(this.o);
+      gX.PropertiesExtension(this.o);
     } 
     gW1.add((JMenuItem)gX);
     gW gW2 = new gW(this, "Calculators", true);
-    if (i.a().a(";oij fds poi fd u ou43t wer3287")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension(";oij fds poi fd u ou43t wer3287")) {
       gX = new gX(this, "Calculator", true);
       gX.addActionListener(new er(this));
       gW2.add((JMenuItem)gX);
@@ -1174,34 +1174,34 @@ public final class dB implements S, aG, ab, bU, e {
       gW2.add((JMenuItem)gX);
     } else {
       gW2.setEnabled(false);
-      gW2.setToolTipText(g.b("Upgrade to enable"));
+      gW2.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Upgrade to enable"));
     } 
     gW1.add((JMenuItem)gW2);
-    boolean bool1 = i.a().a("09jtrkgds;okfds");
-    if (!i.a().a(";,fes;p9rew;o")) {
-      gW gW = new gW(this, a.b + " Plug-ins", true);
-      R r = T.a().c();
-      String str1 = (r != null) ? r.i() : "";
-      byte b = 0;
-      for (ApplicationPlugin applicationPlugin : l.a().c()) {
+    boolean bool1 = RInterfaceIndia.PropertiesExtension().PropertiesExtension("09jtrkgds;okfds");
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension(";,fes;p9rew;o")) {
+      gW gW = new gW(this, PropertiesExtension.ManagerUsingJPopupMenu + " Plug-ins", true);
+      R r = T.PropertiesExtension().JCheckBoxMenuItemExtension();
+      String str1 = (r != null) ? r.RInterfaceIndia() : "";
+      byte ManagerUsingJPopupMenu = 0;
+      for (ApplicationPlugin applicationPlugin : ApplicationPluginExtension.PropertiesExtension().JCheckBoxMenuItemExtension()) {
         if (applicationPlugin.displayPlugin(str1) && applicationPlugin.getPluginType() == 2) {
           gX = new gX(this, applicationPlugin.getDisplayName(), true);
           gX.setName(applicationPlugin.getIdName());
           gX.addActionListener(new eu(this));
           if (!bool1)
-            gX.setToolTipText(g.b("Application Plugin Support not available in this edition")); 
-          gX.a(new gM(this, applicationPlugin));
+            gX.setToolTipText(SComponentGolf.ManagerUsingJPopupMenu("Application Plugin Support not available in this edition")); 
+          gX.PropertiesExtension(new gM(this, applicationPlugin));
           gW.add((JMenuItem)gX);
-          b++;
+          ManagerUsingJPopupMenu++;
         } 
       } 
-      if (b == 0) {
+      if (ManagerUsingJPopupMenu == 0) {
         gX = new gX(this, "No Plugins Installed", true);
         gX.setEnabled(false);
         gW.add((JMenuItem)gX);
       } 
       gW.addSeparator();
-      gX = new gX(this, "Add or Update a Plugin", true);
+      gX = new gX(this, "Add or Update PropertiesExtension Plugin", true);
       gX.setEnabled(bool1);
       gX.addActionListener(new ew(this));
       gW.add((JMenuItem)gX);
@@ -1211,26 +1211,26 @@ public final class dB implements S, aG, ab, bU, e {
       gW1.add((JMenuItem)gW);
       gW1.addSeparator();
     } 
-    if (a.b.equals(i.x) && (a.c.contains("MS") || a.c.contains("RE"))) {
+    if (PropertiesExtension.ManagerUsingJPopupMenu.equals(RInterfaceIndia.x) && (PropertiesExtension.JCheckBoxMenuItemExtension.contains("MS") || PropertiesExtension.JCheckBoxMenuItemExtension.contains("RE"))) {
       gX = new gX(this, "Calibrate TPS", false);
-      gX.a(new ey(this));
+      gX.PropertiesExtension(new ey(this));
       gX.addActionListener(new ez(this));
-      gX.b(new eA(this));
+      gX.ManagerUsingJPopupMenu(new eA(this));
       gW1.add((JMenuItem)gX);
     } 
     return gW1;
   }
   
   private void r() {
-    this.c.F();
+    this.JCheckBoxMenuItemExtension.F();
   }
   
-  public a j() {
-    gW gW = new gW(this, b, true);
+  public PropertiesExtension j() {
+    gW gW = new gW(this, ManagerUsingJPopupMenu, true);
     gW.setMnemonic('H');
-    boolean bool1 = a.a().a(a.dg, a.dh);
+    boolean bool1 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dg, PropertiesExtension.dh);
     if (!bool1) {
-      gX gX1 = new gX(this, a.b + " " + g.b(b), true);
+      gX gX1 = new gX(this, PropertiesExtension.ManagerUsingJPopupMenu + " " + SComponentGolf.ManagerUsingJPopupMenu(ManagerUsingJPopupMenu), true);
       gX1.addActionListener(new eB(this));
       gW.add((JMenuItem)gX1);
       gW.addSeparator();
@@ -1238,11 +1238,11 @@ public final class dB implements S, aG, ab, bU, e {
     gX gX = new gX(this, "Check For Update", true);
     gX.addActionListener(new eC(this));
     gW.add((JMenuItem)gX);
-    boolean bool = (a.a().c(a.cK, false) && A.i().a(a.a().c(a.cF, ""))) ? true : false;
-    boolean bool2 = A.i().a(a.a().c(a.cF, ""));
+    boolean bool = (PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cK, false) && A.RInterfaceIndia().PropertiesExtension(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cF, ""))) ? true : false;
+    boolean bool2 = A.RInterfaceIndia().PropertiesExtension(PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cF, ""));
     if (!bool)
-      a.a().b(a.aQ, "true"); 
-    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(g.b("Automatic Update Check"), a.a().c(a.aQ, false));
+      PropertiesExtension.PropertiesExtension().ManagerUsingJPopupMenu(PropertiesExtension.aQ, "true"); 
+    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(SComponentGolf.ManagerUsingJPopupMenu("Automatic Update Check"), PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.aQ, false));
     jCheckBoxMenuItem.setEnabled(bool);
     jCheckBoxMenuItem.addItemListener(new eD(this));
     gW.add(jCheckBoxMenuItem);
@@ -1261,19 +1261,19 @@ public final class dB implements S, aG, ab, bU, e {
       gX.addActionListener(new eI(this));
       gW.add((JMenuItem)gX);
     } 
-    if (i.a().a("87gdjkjd98fes")) {
+    if (RInterfaceIndia.PropertiesExtension().PropertiesExtension("87gdjkjd98fes")) {
       gX = new gX(this, "Upgrade for even more Features!", true);
       gX.addActionListener(new eJ(this));
       gW.add((JMenuItem)gX);
     } 
     gW.addSeparator();
-    boolean bool3 = a.a().a(a.dj, false);
+    boolean bool3 = PropertiesExtension.PropertiesExtension().PropertiesExtension(PropertiesExtension.dj, false);
     if (bool3) {
-      gX = new gX(this, "Submit " + a.b + " Review", true);
+      gX = new gX(this, "Submit " + PropertiesExtension.ManagerUsingJPopupMenu + " Review", true);
       gX.addActionListener(new eK(this));
       gW.add((JMenuItem)gX);
     } 
-    gX = new gX(this, "Create " + a.b + " Debug Package", true);
+    gX = new gX(this, "Create " + PropertiesExtension.ManagerUsingJPopupMenu + " Debug Package", true);
     gX.addActionListener(new eL(this));
     gW.add((JMenuItem)gX);
     gX = new gX(this, "About", true);
@@ -1282,38 +1282,38 @@ public final class dB implements S, aG, ab, bU, e {
     return gW;
   }
   
-  public void a(R paramR) {
-    if (this.d != null)
-      this.d.p().b(this); 
-    this.d = paramR;
+  public void PropertiesExtension(R paramR) {
+    if (this.BaInterfaceDelta != null)
+      this.BaInterfaceDelta.p().ManagerUsingJPopupMenu(this); 
+    this.BaInterfaceDelta = paramR;
     n();
     p();
     k();
     this.q.validate();
-    if (this.e != null && !this.e.equals(this.q))
-      this.e.validate(); 
+    if (this.AeInterfaceEcho != null && !this.AeInterfaceEcho.equals(this.q))
+      this.AeInterfaceEcho.validate(); 
   }
   
   public void k() {
     if (this.m != null)
-      this.m.a(); 
+      this.m.PropertiesExtension(); 
   }
   
-  public void c(R paramR) {
-    paramR.p().a(this);
+  public void JCheckBoxMenuItemExtension(R paramR) {
+    paramR.p().PropertiesExtension(this);
   }
   
-  public void b(R paramR) {
+  public void ManagerUsingJPopupMenu(R paramR) {
     n();
-    this.e.b(paramR.c());
+    this.AeInterfaceEcho.ManagerUsingJPopupMenu(paramR.JCheckBoxMenuItemExtension());
     p();
-    this.d.p().b(this);
-    paramR.b(this);
-    paramR.C().b(this);
-    cu.a().a(this.n);
+    this.BaInterfaceDelta.p().ManagerUsingJPopupMenu(this);
+    paramR.ManagerUsingJPopupMenu(this);
+    paramR.C().ManagerUsingJPopupMenu(this);
+    cu.PropertiesExtension().PropertiesExtension(this.n);
   }
   
-  public void b(boolean paramBoolean) {
+  public void ManagerUsingJPopupMenu(boolean paramBoolean) {
     if (!SwingUtilities.isEventDispatchThread()) {
       eN eN = new eN(this, paramBoolean);
       try {
@@ -1323,59 +1323,59 @@ public final class dB implements S, aG, ab, bU, e {
       } 
     } else {
       this.q.setEnabled(paramBoolean);
-      if (this.e != null && this.e.getComponent() != null)
-        this.e.getComponent().setEnabled(paramBoolean); 
+      if (this.AeInterfaceEcho != null && this.AeInterfaceEcho.getComponent() != null)
+        this.AeInterfaceEcho.getComponent().setEnabled(paramBoolean); 
     } 
   }
   
-  public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
+  public void PropertiesExtension(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
     k();
   }
   
-  public void a() {
-    b(false);
+  public void PropertiesExtension() {
+    ManagerUsingJPopupMenu(false);
     eO eO = new eO(this);
     eO.start();
   }
   
-  public void a(boolean paramBoolean) {
-    b(true);
+  public void PropertiesExtension(boolean paramBoolean) {
+    ManagerUsingJPopupMenu(true);
   }
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean PropertiesExtension(String paramString, bT parambT) {
     return true;
   }
   
-  public void a(String paramString) {}
+  public void PropertiesExtension(String paramString) {}
   
-  public void a(a parama, R paramR) {}
+  public void PropertiesExtension(PropertiesExtension parama, R paramR) {}
   
   public void e_() {
     this.j = 0;
   }
   
-  public void a(a parama) {}
+  public void PropertiesExtension(PropertiesExtension parama) {}
   
-  public gQ l() {
+  public gQ ApplicationPluginExtension() {
     return this.q;
   }
   
-  public f a(String paramString, boolean paramBoolean) {
+  public BaInterfaceFoxtrot PropertiesExtension(String paramString, boolean paramBoolean) {
     if (this.p.equals("Main Menu Style"))
-      return (f)new gW(this, paramString, paramBoolean); 
+      return (BaInterfaceFoxtrot)new gW(this, paramString, paramBoolean); 
     if (this.p.equals("Wrapping Main Menu")) {
       gW gW = new gW(this, paramString, paramBoolean);
-      gW.b(true);
-      return (f)gW;
+      gW.ManagerUsingJPopupMenu(true);
+      return (BaInterfaceFoxtrot)gW;
     } 
-    b b = new b(paramString, paramBoolean);
-    b.setToolTipText(paramString);
-    b.addMouseListener(new gU(this, (f)b));
-    this.f.a(b);
-    return (f)b;
+    ManagerUsingJPopupMenu ManagerUsingJPopupMenu = new ManagerUsingJPopupMenu(paramString, paramBoolean);
+    ManagerUsingJPopupMenu.setToolTipText(paramString);
+    ManagerUsingJPopupMenu.addMouseListener(new gU(this, (BaInterfaceFoxtrot)ManagerUsingJPopupMenu));
+    this.BaInterfaceFoxtrot.PropertiesExtension(ManagerUsingJPopupMenu);
+    return (BaInterfaceFoxtrot)ManagerUsingJPopupMenu;
   }
   
-  protected String d(String paramString) {
+  protected String BaInterfaceDelta(String paramString) {
     if (paramString.contains("Spark") || paramString.contains("Igni") || paramString.contains("spark") || paramString.contains("igni"))
       return "resources/sparkplug32.png"; 
     if (paramString.contains("Fuel") || paramString.contains("Inj"))
@@ -1410,22 +1410,22 @@ public final class dB implements S, aG, ab, bU, e {
       return "resources/icon-piston_64.png"; 
     if (paramString.contains("CAN"))
       return "resources/Network_64.png"; 
-    String str = this.i[this.j % this.i.length];
+    String str = this.RInterfaceIndia[this.j % this.RInterfaceIndia.length];
     this.j++;
     return str;
   }
   
-  private gK a(f paramf, boolean paramBoolean) {
+  private gK PropertiesExtension(BaInterfaceFoxtrot paramf, boolean paramBoolean) {
     gK gK = (this.k.size() > 0) ? this.k.remove(0) : new gK(this, null);
-    gK.a(paramBoolean);
-    gK.a(paramf);
+    gK.PropertiesExtension(paramBoolean);
+    gK.PropertiesExtension(paramf);
     return gK;
   }
   
-  private gL b(f paramf, boolean paramBoolean) {
-    gL gL = (this.l.size() > 0) ? this.l.remove(0) : new gL(this, null);
-    gL.a(paramBoolean);
-    gL.a(paramf);
+  private gL ManagerUsingJPopupMenu(BaInterfaceFoxtrot paramf, boolean paramBoolean) {
+    gL gL = (this.ApplicationPluginExtension.size() > 0) ? this.ApplicationPluginExtension.remove(0) : new gL(this, null);
+    gL.PropertiesExtension(paramBoolean);
+    gL.PropertiesExtension(paramf);
     return gL;
   }
 }

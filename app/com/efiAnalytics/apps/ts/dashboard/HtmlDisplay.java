@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.X;
 import com.efiAnalytics.ui.bV;
 import java.awt.BorderLayout;
@@ -20,7 +20,7 @@ import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 
 public class HtmlDisplay extends s implements t, Serializable {
-  JEditorPane a = new JEditorPane((new HTMLEditorKit()).getContentType(), "<html><body></body></html>");
+  JEditorPane ExceptionInVPackage = new JEditorPane((new HTMLEditorKit()).getContentType(), "<html><body></body></html>");
   
   String b = "";
   
@@ -32,14 +32,14 @@ public class HtmlDisplay extends s implements t, Serializable {
   
   public HtmlDisplay() {
     setLayout(new BorderLayout());
-    this.a.setBorder(BorderFactory.createLoweredBevelBorder());
-    this.a.setEditable(false);
-    this.a.setContentType("text/html; charset=UTF-8");
-    this.a.putClientProperty("JEditorPane.honorDisplayProperties", Boolean.valueOf(true));
-    this.a.setText("<html><body></body></html>");
-    ((HTMLDocument)this.a.getDocument()).getStyleSheet().addRule(this.c);
-    this.a.addHyperlinkListener(new aI(this));
-    JScrollPane jScrollPane = new JScrollPane(this.a);
+    this.ExceptionInVPackage.setBorder(BorderFactory.createLoweredBevelBorder());
+    this.ExceptionInVPackage.setEditable(false);
+    this.ExceptionInVPackage.setContentType("text/html; charset=UTF-8");
+    this.ExceptionInVPackage.putClientProperty("JEditorPane.honorDisplayProperties", Boolean.valueOf(true));
+    this.ExceptionInVPackage.setText("<html><body></body></html>");
+    ((HTMLDocument)this.ExceptionInVPackage.getDocument()).getStyleSheet().addRule(this.c);
+    this.ExceptionInVPackage.addHyperlinkListener(new aI(this));
+    JScrollPane jScrollPane = new JScrollPane(this.ExceptionInVPackage);
     add("Center", jScrollPane);
   }
   
@@ -48,21 +48,21 @@ public class HtmlDisplay extends s implements t, Serializable {
       String str = paramString;
       if (!str.startsWith("http") && !str.startsWith("file"))
         str = getFullLocalUrlFromRelative(str); 
-      ((AbstractDocument)this.a.getDocument()).setAsynchronousLoadPriority(2);
-      Document document = this.a.getDocument();
+      ((AbstractDocument)this.ExceptionInVPackage.getDocument()).setAsynchronousLoadPriority(2);
+      Document document = this.ExceptionInVPackage.getDocument();
       document.putProperty("stream", null);
       if (str.toLowerCase().endsWith("html") || str.toLowerCase().endsWith("htm")) {
-        this.a.setContentType("text/html; charset=utf-8");
+        this.ExceptionInVPackage.setContentType("text/html; charset=utf-8");
       } else {
-        this.a.setContentType("text/plain; charset=utf-8");
+        this.ExceptionInVPackage.setContentType("text/plain; charset=utf-8");
       } 
-      this.a.setPage(str);
+      this.ExceptionInVPackage.setPage(str);
       this.b = paramString;
     } catch (FileNotFoundException fileNotFoundException) {
       bV.d("File Not Found:\n" + fileNotFoundException.getMessage(), this);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new a("Unable to read file:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to read file:\n" + paramString);
     } 
   }
   
@@ -76,8 +76,8 @@ public class HtmlDisplay extends s implements t, Serializable {
   }
   
   public void setText(String paramString) {
-    this.a.setText(paramString);
-    ((HTMLDocument)this.a.getDocument()).getStyleSheet().addRule(this.c);
+    this.ExceptionInVPackage.setText(paramString);
+    ((HTMLDocument)this.ExceptionInVPackage.getDocument()).getStyleSheet().addRule(this.c);
   }
   
   private String getFullLocalUrlFromRelative(String paramString) {

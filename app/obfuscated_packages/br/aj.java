@@ -1,6 +1,6 @@
 package br;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -14,8 +14,8 @@ class aj implements ActionListener {
       String str = this.a.j.getSelectedItem().toString();
       this.a.a.a(str);
       this.a.d.a("lambdaChannel", str);
-    } catch (g g) {
-      bV.d(g.getLocalizedMessage(), (Component)this.a.c);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      bV.d(ExceptionPrintstacktrace.getLocalizedMessage(), (Component)this.a.c);
     } 
   }
 }

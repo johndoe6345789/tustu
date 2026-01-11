@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import G.cr;
-import J.h;
+import J.Abstract;
 import com.efiAnalytics.apps.ts.dashboard.Z;
 import com.efiAnalytics.apps.ts.dashboard.aa;
 import com.efiAnalytics.apps.ts.dashboard.x;
@@ -22,7 +22,7 @@ import javax.swing.JPanel;
 public class ProtocolStatsPanel extends JPanel implements bc {
   x a = null;
   
-  public F(h paramh) {
+  public F(Abstract paramh) {
     this.a = new x();
     this.a.f(true);
     setBorder(BorderFactory.createTitledBorder("Protocol Stats"));

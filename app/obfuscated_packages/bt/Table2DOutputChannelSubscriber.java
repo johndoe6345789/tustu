@@ -4,12 +4,12 @@ import G.R;
 import G.be;
 import G.cq;
 import G.cu;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.w;
 
 class Table2DOutputChannelSubscriber implements cq, bP {
-  double a = Double.NaN;
+  double ExceptionInVPackage = Double.NaN;
   
   w b;
   
@@ -27,30 +27,30 @@ class Table2DOutputChannelSubscriber implements cq, bP {
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (paramString.equals(this.b.g().w())) {
-      this.a = paramDouble;
-    } else if (paramString.equals(this.b.g().v()) && this.a != Double.NaN) {
+      this.ExceptionInVPackage = paramDouble;
+    } else if (paramString.equals(this.b.g().v()) && this.ExceptionInVPackage != Double.NaN) {
       try {
-        this.b.h().a(paramDouble + "", this.a + "");
+        this.b.h().ExceptionInVPackage(paramDouble + "", this.ExceptionInVPackage + "");
         if (this.e != null)
-          this.e.a(paramDouble, this.a); 
+          this.e.ExceptionInVPackage(paramDouble, this.ExceptionInVPackage); 
       } catch (Exception exception) {}
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
-      cu.a().a(this.c.c(), this.d.f(), this);
-      cu.a().a(this.c.c(), this.d.d(), this);
-    } catch (a a) {
-      D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a, this);
+      cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
+      cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.d(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
     } 
   }
   
   public void b() {
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
-  public void a(p paramp) {
+  public void ExceptionInVPackage(p paramp) {
     this.e = paramp;
   }
 }

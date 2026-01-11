@@ -3,7 +3,7 @@ package aP;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class fK implements ActionListener {
   fK(dB paramdB) {}
@@ -11,7 +11,7 @@ class fK implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     boolean bool = jCheckBoxMenuItem.getState();
-    a.a().b(a.bh, bool + "");
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bh, bool + "");
   }
 }
 

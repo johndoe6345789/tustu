@@ -1,52 +1,52 @@
 package ao;
 
-import Z.c;
-import Z.e;
+import Z.ZInterfaceCharlie;
+import Z.ZInterfaceEcho;
 import bH.X;
-import h.i;
+import h.IOProperties;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class ep implements c {
-  public void a(e parame) {
+public class ep implements ZInterfaceCharlie {
+  public void a(ZInterfaceEcho parame) {
     StringBuilder stringBuilder = new StringBuilder();
     for (String str : parame.b())
       stringBuilder.append(str).append(";"); 
-    i.c("ROOT_FIELD_" + parame.a(), stringBuilder.toString());
+    IOProperties.ZInterfaceCharlie("ROOT_FIELD_" + parame.a(), stringBuilder.toString());
   }
   
   public List a() {
-    ArrayList<e> arrayList = new ArrayList();
-    String[] arrayOfString = i.e("ROOT_FIELD_");
+    ArrayList<ZInterfaceEcho> arrayList = new ArrayList();
+    String[] arrayOfString = IOProperties.ZInterfaceEcho("ROOT_FIELD_");
     for (String str1 : arrayOfString) {
-      String str2 = i.f(str1, "");
+      String str2 = IOProperties.f(str1, "");
       if (!str2.isEmpty()) {
         String str = X.b(str1, "ROOT_FIELD_", "");
-        e e = new e(str);
+        ZInterfaceEcho ZInterfaceEcho = new ZInterfaceEcho(str);
         StringTokenizer stringTokenizer = new StringTokenizer(str2, ";");
         while (stringTokenizer.hasMoreTokens()) {
           String str3 = stringTokenizer.nextToken().trim();
           if (!str3.isEmpty())
-            e.a(str3); 
+            ZInterfaceEcho.a(str3); 
         } 
-        arrayList.add(e);
+        arrayList.add(ZInterfaceEcho);
       } 
     } 
     return arrayList;
   }
   
-  public e a(String paramString) {
-    String str = i.b("ROOT_FIELD_" + paramString, null);
+  public ZInterfaceEcho a(String paramString) {
+    String str = IOProperties.b("ROOT_FIELD_" + paramString, null);
     if (str != null) {
-      e e = new e(paramString);
+      ZInterfaceEcho ZInterfaceEcho = new ZInterfaceEcho(paramString);
       StringTokenizer stringTokenizer = new StringTokenizer(str, ";");
       while (stringTokenizer.hasMoreTokens()) {
         String str1 = stringTokenizer.nextToken().trim();
         if (!str1.isEmpty())
-          e.a(str1); 
+          ZInterfaceEcho.a(str1); 
       } 
-      return e;
+      return ZInterfaceEcho;
     } 
     return null;
   }

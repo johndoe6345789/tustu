@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class aV extends KeyAdapter {
   aV(aO paramaO) {}
@@ -15,10 +15,10 @@ class aV extends KeyAdapter {
       return; 
     try {
       double d = aO.a(this.a, jTextField.getText());
-      if (this.a.a(jTextField, g.b("Historical Peak Value")))
+      if (this.a.a(jTextField, SComponentGolf.b("Historical Peak Value")))
         this.a.c().b(d); 
     } catch (Exception exception) {
-      bV.d(g.b("Numeric Values only"), jTextField);
+      bV.d(SComponentGolf.b("Numeric Values only"), jTextField);
     } 
   }
 }

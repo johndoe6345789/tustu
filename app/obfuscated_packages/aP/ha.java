@@ -1,12 +1,12 @@
 package aP;
 
-import bA.a;
+import bA.BaInterfaceAlpha;
 import java.awt.CardLayout;
 
-class ha implements a {
+class ha implements BaInterfaceAlpha {
   ha(gZ paramgZ, dB paramdB) {}
   
-  public void a(String paramString) {
+  public void BaInterfaceAlpha(String paramString) {
     ((CardLayout)this.b.c.getLayout()).show(this.b.c, paramString);
   }
 }

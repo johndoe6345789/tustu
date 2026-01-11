@@ -1,42 +1,42 @@
 package aP;
 
-import S.b;
-import S.j;
-import S.n;
-import U.a;
+import S.HashMap;
+import S.SInterfaceJuliet;
+import S.SInterfaceNovember;
+import U.UInterfaceAlpha;
 import bH.D;
 import java.util.ArrayList;
 import java.util.List;
-import p.x;
-import r.i;
+import p.IOInPPackage;
+import r.RInterfaceIndia;
 
 public class bB {
   private static bB d = null;
   
-  static String a = a.a;
+  static String UInterfaceAlpha = UInterfaceAlpha.UInterfaceAlpha;
   
-  static String b = a.b;
+  static String HashMap = UInterfaceAlpha.HashMap;
   
   List c = new ArrayList();
   
-  public static bB a() {
+  public static bB UInterfaceAlpha() {
     if (d == null)
       d = new bB(); 
     return d;
   }
   
-  public void b() {
+  public void HashMap() {
     if (this.c.isEmpty()) {
-      j j1 = b.a().a("", a);
-      j1.a(new bC(this));
+      SInterfaceJuliet j1 = HashMap.UInterfaceAlpha().UInterfaceAlpha("", UInterfaceAlpha);
+      j1.UInterfaceAlpha(new bC(this));
       this.c.add(j1);
-      j j2 = b.a().a("", b);
-      j2.a(new bD(this));
+      SInterfaceJuliet j2 = HashMap.UInterfaceAlpha().UInterfaceAlpha("", HashMap);
+      j2.UInterfaceAlpha(new bD(this));
       this.c.add(j2);
     } 
-    if (i.a().a("f(*&rew0987LKJ098342"))
-      for (n n : x.a().b())
-        D.d("User Trigger " + n.a() + " active: " + n.c());  
+    if (RInterfaceIndia.UInterfaceAlpha().UInterfaceAlpha("f(*&rew0987LKJ098342"))
+      for (SInterfaceNovember SInterfaceNovember : IOInPPackage.UInterfaceAlpha().HashMap())
+        D.d("User Trigger " + SInterfaceNovember.UInterfaceAlpha() + " active: " + SInterfaceNovember.c());  
   }
 }
 

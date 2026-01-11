@@ -1,7 +1,7 @@
 package G;
 
-import V.b;
-import V.d;
+import V.VInterfaceBravo;
+import V.ExceptionGetmessage;
 import bH.c;
 
 class ControllerDataValidatorAlt implements v {
@@ -10,9 +10,9 @@ class ControllerDataValidatorAlt implements v {
   public int[] a(byte[] paramArrayOfbyte, int paramInt1, int paramInt2) {
     try {
       byte[] arrayOfByte = this.a.a(paramArrayOfbyte, paramInt1, 200L, paramInt2, (m)null);
-      return c.b(arrayOfByte);
-    } catch (d d) {
-      throw new b(d.getMessage());
+      return c.VInterfaceBravo(arrayOfByte);
+    } catch (ExceptionGetmessage ExceptionGetmessage) {
+      throw new VInterfaceBravo(ExceptionGetmessage.getMessage());
     } 
   }
   

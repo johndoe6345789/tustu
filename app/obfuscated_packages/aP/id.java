@@ -1,18 +1,18 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import java.io.File;
 import java.net.URL;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.filechooser.FileView;
-import r.a;
+import r.PropertiesExtension;
 
 public class id extends FileView {
-  ImageIcon a = null;
+  ImageIcon PropertiesExtension = null;
   
   public id() {
-    this.a = a("resources/TSicon.gif");
+    this.PropertiesExtension = PropertiesExtension("resources/TSicon.gif");
   }
   
   public String getName(File paramFile) {
@@ -24,22 +24,22 @@ public class id extends FileView {
   }
   
   public Boolean isTraversable(File paramFile) {
-    return a(paramFile) ? new Boolean(false) : null;
+    return PropertiesExtension(paramFile) ? new Boolean(false) : null;
   }
   
   public String getTypeDescription(File paramFile) {
-    return a(paramFile) ? (a.b + " Project") : null;
+    return PropertiesExtension(paramFile) ? (PropertiesExtension.b + " Project") : null;
   }
   
   public Icon getIcon(File paramFile) {
-    return a(paramFile) ? this.a : null;
+    return PropertiesExtension(paramFile) ? this.PropertiesExtension : null;
   }
   
-  protected boolean a(File paramFile) {
-    return a.a(paramFile);
+  protected boolean PropertiesExtension(File paramFile) {
+    return PropertiesExtension.PropertiesExtension(paramFile);
   }
   
-  protected ImageIcon a(String paramString) {
+  protected ImageIcon PropertiesExtension(String paramString) {
     URL uRL = getClass().getResource(paramString);
     if (uRL != null)
       return new ImageIcon(uRL); 

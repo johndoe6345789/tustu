@@ -1,7 +1,7 @@
 package ao;
 
-import V.a;
-import V.h;
+import V.ExceptionInVPackage;
+import V.VInterfaceHotel;
 import W.B;
 import W.C;
 import W.n;
@@ -11,12 +11,12 @@ import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
 import com.efiAnalytics.ui.w;
-import g.k;
-import h.b;
-import h.g;
-import h.i;
-import i.a;
-import i.b;
+import g.IOJFileChooser;
+import VInterfaceHotel.IComponentBravo;
+import VInterfaceHotel.g;
+import VInterfaceHotel.i;
+import i.ExceptionInVPackage;
+import i.IComponentBravo;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Container;
@@ -34,10 +34,10 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-public class hE extends JPanel implements B, id, a, b {
-  hZ a = null;
+public class hE extends JPanel implements B, id, ExceptionInVPackage, IComponentBravo {
+  hZ ExceptionInVPackage = null;
   
-  hZ b = null;
+  hZ IComponentBravo = null;
   
   private hW u = null;
   
@@ -53,13 +53,13 @@ public class hE extends JPanel implements B, id, a, b {
   
   String[] g = new String[] { "MAP", "MAP" };
   
-  final int h = 0;
+  final int VInterfaceHotel = 0;
   
   final int i = 1;
   
   boolean j = true;
   
-  JButton k = null;
+  JButton IOJFileChooser = null;
   
   JButton l = null;
   
@@ -88,18 +88,18 @@ public class hE extends JPanel implements B, id, a, b {
     add("Center", this.p);
     setName("Table Tuner");
     this.s.setLayout(new BoxLayout(this.s, 1));
-    int i = i.b("prefFontSize", eJ.a(10));
+    int i = i.IComponentBravo("prefFontSize", eJ.ExceptionInVPackage(10));
     hP hP = new hP(this);
-    this.a = new hZ();
-    this.a.a(hP);
+    this.ExceptionInVPackage = new hZ();
+    this.ExceptionInVPackage.ExceptionInVPackage(hP);
     dQ dQ = new dQ(i.f(), "tuningTable1");
-    this.a.h().a((et)dQ);
-    this.a.c(i);
-    this.s.add((Component)this.a);
+    this.ExceptionInVPackage.VInterfaceHotel().ExceptionInVPackage((et)dQ);
+    this.ExceptionInVPackage.c(i);
+    this.s.add((Component)this.ExceptionInVPackage);
     JPanel jPanel1 = new JPanel();
-    jPanel1.setLayout(new GridLayout(0, 1, eJ.a(5), 0));
+    jPanel1.setLayout(new GridLayout(0, 1, eJ.ExceptionInVPackage(5), 0));
     JPanel jPanel2 = new JPanel();
-    jPanel2.setLayout(new GridLayout(1, 0, eJ.a(2), eJ.a(3)));
+    jPanel2.setLayout(new GridLayout(1, 0, eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(3)));
     JButton jButton = new JButton("Open Tune");
     jButton.setToolTipText("Open Tune File");
     jButton.addActionListener(new hF(this));
@@ -113,13 +113,13 @@ public class hE extends JPanel implements B, id, a, b {
     jPanel2.add(this.c);
     jPanel1.add(jPanel2);
     JPanel jPanel3 = new JPanel();
-    jPanel3.setLayout(new GridLayout(1, 0, eJ.a(2), eJ.a(3)));
-    this.k = new JButton(t);
-    this.k.addActionListener(new hI(this));
-    jPanel3.add(this.k);
-    this.k.setEnabled(b.a().a("veAnalyze"));
+    jPanel3.setLayout(new GridLayout(1, 0, eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(3)));
+    this.IOJFileChooser = new JButton(t);
+    this.IOJFileChooser.addActionListener(new hI(this));
+    jPanel3.add(this.IOJFileChooser);
+    this.IOJFileChooser.setEnabled(IComponentBravo.ExceptionInVPackage().ExceptionInVPackage("veAnalyze"));
     this.m = new JButton("Save Tune As");
-    this.m.setToolTipText("Save Tune to a new file");
+    this.m.setToolTipText("Save Tune to ExceptionInVPackage new file");
     this.m.addActionListener(new hJ(this));
     jPanel3.add(this.m);
     this.d = new hN(this);
@@ -127,12 +127,12 @@ public class hE extends JPanel implements B, id, a, b {
     jPanel3.add(this.d);
     jPanel1.add(jPanel3);
     this.s.add(jPanel1);
-    this.b = new hZ();
-    this.b.a(hP);
+    this.IComponentBravo = new hZ();
+    this.IComponentBravo.ExceptionInVPackage(hP);
     dQ = new dQ(i.f(), "tuningTable2");
-    this.b.h().a((et)dQ);
-    this.b.c(i);
-    this.s.add((Component)this.b);
+    this.IComponentBravo.VInterfaceHotel().ExceptionInVPackage((et)dQ);
+    this.IComponentBravo.c(i);
+    this.s.add((Component)this.IComponentBravo);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new GridLayout(1, 1));
     jPanel4.add(this.o);
@@ -140,51 +140,51 @@ public class hE extends JPanel implements B, id, a, b {
     boolean bool = false;
     if (!bool) {
       JPanel jPanel = new JPanel();
-      jPanel.setMinimumSize(new Dimension(eJ.a(150), eJ.a(200)));
-      jPanel.setPreferredSize(new Dimension(eJ.a(150), eJ.a(300)));
+      jPanel.setMinimumSize(new Dimension(eJ.ExceptionInVPackage(150), eJ.ExceptionInVPackage(200)));
+      jPanel.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(150), eJ.ExceptionInVPackage(300)));
     } else {
       fK fK = new fK();
       add("Center", fK);
       dQ dQ1 = new dQ(i.e, "mainViewScatter1_");
-      fK.a((et)dQ1);
+      fK.ExceptionInVPackage((et)dQ1);
     } 
-    b(false);
+    IComponentBravo(false);
   }
   
-  public void a(Component paramComponent) {
+  public void ExceptionInVPackage(Component paramComponent) {
     this.s.remove(this.o);
     this.s.add(paramComponent);
     this.s.add(this.o);
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.j = paramBoolean;
     if (paramBoolean) {
       this.s.remove(this.o);
-      this.s.add((Component)this.b);
+      this.s.add((Component)this.IComponentBravo);
       this.s.add(this.o);
     } else {
-      this.s.remove((Component)this.b);
+      this.s.remove((Component)this.IComponentBravo);
     } 
-    b(isVisible());
+    IComponentBravo(isVisible());
   }
   
   public JPanel c() {
     return this.s;
   }
   
-  public void b(boolean paramBoolean) {
-    this.a.setVisible(paramBoolean);
+  public void IComponentBravo(boolean paramBoolean) {
+    this.ExceptionInVPackage.setVisible(paramBoolean);
     this.c.setVisible(paramBoolean);
-    this.k.setVisible(paramBoolean);
+    this.IOJFileChooser.setVisible(paramBoolean);
     this.o.setVisible(paramBoolean);
     this.m.setVisible(paramBoolean);
     this.l.setVisible(paramBoolean);
     if (this.j) {
-      this.b.setVisible(paramBoolean);
+      this.IComponentBravo.setVisible(paramBoolean);
       this.d.setVisible(paramBoolean);
     } else {
-      this.b.setVisible(false);
+      this.IComponentBravo.setVisible(false);
       this.d.setVisible(false);
     } 
   }
@@ -193,7 +193,7 @@ public class hE extends JPanel implements B, id, a, b {
     String str = i.e("lastVeFile", "");
     if (!str.equals("") && (new File(str)).exists())
       try {
-        b(str);
+        IComponentBravo(str);
       } catch (Exception exception) {
         Logger.getLogger(hE.class.getName()).log(Level.SEVERE, (String)null, exception);
         bV.d("Unable to open file:\n" + str + "\n \nError Message:\n" + exception.getMessage(), this);
@@ -219,25 +219,25 @@ public class hE extends JPanel implements B, id, a, b {
     return dimension;
   }
   
-  public void a(int paramInt, String paramString) {
+  public void ExceptionInVPackage(int paramInt, String paramString) {
     if (paramString == null)
       return; 
     hW hW1 = m();
     if (hW1 == null)
       return; 
-    hZ hZ1 = (paramInt == 1) ? this.b : this.a;
-    hY hY = hW1.b(paramString);
+    hZ hZ1 = (paramInt == 1) ? this.IComponentBravo : this.ExceptionInVPackage;
+    hY hY = hW1.IComponentBravo(paramString);
     if (hY == null)
       return; 
-    int i = i.a("prefFontSize", eJ.a(10));
-    hZ1.a(hY);
+    int i = i.ExceptionInVPackage("prefFontSize", eJ.ExceptionInVPackage(10));
+    hZ1.ExceptionInVPackage(hY);
     hZ1.f().setToolTipText(hY.v());
-    hZ1.a("<html>" + paramString + "<br>" + this.f + "</html>");
-    hZ1.b(paramString);
-    if (hW1.k(paramString))
-      hZ1.b(true); 
+    hZ1.ExceptionInVPackage("<html>" + paramString + "<br>" + this.f + "</html>");
+    hZ1.IComponentBravo(paramString);
+    if (hW1.IOJFileChooser(paramString))
+      hZ1.IComponentBravo(true); 
     invalidate();
-    hZ1.k();
+    hZ1.IOJFileChooser();
     hZ1.c(i);
     hZ1.setName(paramString);
     if (getParent() != null) {
@@ -264,10 +264,10 @@ public class hE extends JPanel implements B, id, a, b {
     } 
   }
   
-  public void a(hW paramhW, hN paramhN) {
+  public void ExceptionInVPackage(hW paramhW, hN paramhN) {
     paramhN.removeAll();
     if (paramhW != null)
-      hQ.a(paramhW, paramhN, (String)null); 
+      hQ.ExceptionInVPackage(paramhW, paramhN, (String)null); 
   }
   
   public void e() {
@@ -275,12 +275,12 @@ public class hE extends JPanel implements B, id, a, b {
       return; 
     String[] arrayOfString1 = o();
     String str = n();
-    String[] arrayOfString2 = bV.a(this, "Open Tune settings file", arrayOfString1, (String)null, str, true, null, true);
+    String[] arrayOfString2 = bV.ExceptionInVPackage(this, "Open Tune settings file", arrayOfString1, (String)null, str, true, null, true);
     if (arrayOfString2 != null && arrayOfString2.length > 0) {
       this.f = arrayOfString2[0];
       try {
-        b(this.f);
-      } catch (a a1) {
+        IComponentBravo(this.f);
+      } catch (ExceptionInVPackage a1) {
         Logger.getLogger(hE.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         bV.d("Unable to open file:\n" + this.f + "\n \nError Message:\n" + a1.getMessage(), this);
       } 
@@ -292,55 +292,55 @@ public class hE extends JPanel implements B, id, a, b {
       return; 
     if (!c(this.e))
       return; 
-    String str1 = this.c.b();
+    String str1 = this.c.IComponentBravo();
     if (str1.toLowerCase().indexOf("ve") == -1 && str1.indexOf("Fuel") == -1 && str1.indexOf("pwATable") == -1 && str1.indexOf("pwBTable") == -1) {
-      k.a("Please set top table to the VE table you wish to analyze.", this);
+      IOJFileChooser.ExceptionInVPackage("Please set top table to the VE table you wish to analyze.", this);
       return;
     } 
-    String str2 = g.a().a(g.d);
-    if (this.e.a(str2).f() < 100.0D && !k.a("RPM Very low, You probably want to select RPM x 100 from the Options Menu.\nContinue anyway?", this, true))
+    String str2 = g.ExceptionInVPackage().ExceptionInVPackage(g.d);
+    if (this.e.ExceptionInVPackage(str2).f() < 100.0D && !IOJFileChooser.ExceptionInVPackage("RPM Very low, You probably want to select RPM x 100 from the Options Menu.\nContinue anyway?", this, true))
       return; 
-    if (this.e.a(str2).f() > 20000.0D && !k.a("RPM Very High, You probably want to unselect RPM x 100 from the Options Menu.\nContinue anyway?", this, true))
+    if (this.e.ExceptionInVPackage(str2).f() > 20000.0D && !IOJFileChooser.ExceptionInVPackage("RPM Very High, You probably want to unselect RPM x 100 from the Options Menu.\nContinue anyway?", this, true))
       return; 
     String str3 = "";
     String str4 = str1.substring(str1.length() - 1);
     for (byte b1 = 0; b1 < this.c.c(); b1++) {
-      String str = this.c.b(b1).toLowerCase();
-      if ((str.toLowerCase().startsWith("afr") || str.toLowerCase().startsWith("lambda") || str.toLowerCase().startsWith("target afr") || str.toLowerCase().startsWith("target lambda")) && this.c.b(b1).indexOf(str4) != -1)
-        str3 = this.c.b(b1); 
+      String str = this.c.IComponentBravo(b1).toLowerCase();
+      if ((str.toLowerCase().startsWith("afr") || str.toLowerCase().startsWith("lambda") || str.toLowerCase().startsWith("target afr") || str.toLowerCase().startsWith("target lambda")) && this.c.IComponentBravo(b1).indexOf(str4) != -1)
+        str3 = this.c.IComponentBravo(b1); 
     } 
     hY hY = null;
     try {
       if (!i.e("lastVeAnalysisAfrTable", "").equals("Default AFR"))
-        hY = m().b(str3); 
+        hY = m().IComponentBravo(str3); 
     } catch (Exception exception) {}
-    String str5 = this.a.g().v();
-    if (str5 == null || str5.equals("") || this.e.a(str5) == null) {
-      str5 = i.a("yAxisField", g.a().a(g.j));
-      this.a.g().d(str5);
+    String str5 = this.ExceptionInVPackage.g().v();
+    if (str5 == null || str5.equals("") || this.e.ExceptionInVPackage(str5) == null) {
+      str5 = i.ExceptionInVPackage("yAxisField", g.ExceptionInVPackage().ExceptionInVPackage(g.j));
+      this.ExceptionInVPackage.g().d(str5);
     } 
-    this.n = new eK(m(), (hY)this.a.g(), hY, this.e, k.a(this), "VE Analyze");
-    Point point = k.a(this).getLocation();
+    this.n = new eK(m(), (hY)this.ExceptionInVPackage.g(), hY, this.e, IOJFileChooser.ExceptionInVPackage(this), "VE Analyze");
+    Point point = IOJFileChooser.ExceptionInVPackage(this).getLocation();
     this.n.setLocation(point.x + 100, point.y + 50);
-    this.n.a(this);
+    this.n.ExceptionInVPackage(this);
     this.n.setVisible(true);
   }
   
   public boolean g() {
     String str = System.getProperty("java.specification.version");
     if (str == null || str.equals("")) {
-      k.a("Failed to detect Java Version, 1.4 or greater required for Tuning Console. Will try to load.", this);
+      IOJFileChooser.ExceptionInVPackage("Failed to detect Java Version, 1.4 or greater required for Tuning Console. Will try to load.", this);
       return true;
     } 
     double d = Double.parseDouble(str);
     if (d < 1.4D) {
-      k.a("Java Version " + str + " detected, \nJRE version 1.4 or greater required for Tuning Console. \nPlease upgrade JRE to use this feature. \nUpdated JRE can be found at https://www.java.com/en/download/", this);
+      IOJFileChooser.ExceptionInVPackage("Java Version " + str + " detected, \nJRE version 1.4 or greater required for Tuning Console. \nPlease upgrade JRE to use this feature. \nUpdated JRE can be found at https://www.java.com/en/download/", this);
       return false;
     } 
     return true;
   }
   
-  public void a(String paramString) {
+  public void ExceptionInVPackage(String paramString) {
     byte b1 = 65;
     if (paramString != null && paramString.length() > b1) {
       int i = b1 - 19;
@@ -349,76 +349,76 @@ public class hE extends JPanel implements B, id, a, b {
     this.o.setText(paramString);
   }
   
-  public boolean h() {
-    return (m() != null && m().b());
+  public boolean VInterfaceHotel() {
+    return (m() != null && m().IComponentBravo());
   }
   
   public void i() {
-    this.a.j();
-    if (this.b != null)
-      this.b.j(); 
+    this.ExceptionInVPackage.j();
+    if (this.IComponentBravo != null)
+      this.IComponentBravo.j(); 
   }
   
-  public void a(File paramFile) {
-    if (bV.a("File " + paramFile.getName() + " has been modified outside this application.\nReload the file now?", this, true))
+  public void ExceptionInVPackage(File paramFile) {
+    if (bV.ExceptionInVPackage("File " + paramFile.getName() + " has been modified outside this application.\nReload the file now?", this, true))
       try {
-        b(paramFile.getAbsolutePath());
-      } catch (a a1) {
+        IComponentBravo(paramFile.getAbsolutePath());
+      } catch (ExceptionInVPackage a1) {
         Logger.getLogger(hE.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       }  
   }
   
-  public void b(String paramString) {
+  public void IComponentBravo(String paramString) {
     hE hE1 = this;
     hL hL = new hL(this, paramString, hE1);
     hL.run();
   }
   
   public void j() {
-    a("");
-    b((hW)null);
-    a((hW)null, this.c);
-    a((hW)null, this.d);
-    b(true);
+    ExceptionInVPackage("");
+    IComponentBravo((hW)null);
+    ExceptionInVPackage((hW)null, this.c);
+    ExceptionInVPackage((hW)null, this.d);
+    IComponentBravo(true);
     i.c("lastVeFile", "");
     if (this.n != null && this.n.isVisible()) {
       this.n.setVisible(false);
       this.n.dispose();
     } 
     if (this.v != null) {
-      C.a().e(this.v);
+      C.ExceptionInVPackage().e(this.v);
       this.v = null;
     } 
   }
   
-  public void a(hW paramhW) {
-    a(this.f);
-    b(paramhW);
-    a(m(), this.c);
-    a(m(), this.d);
-    b(true);
+  public void ExceptionInVPackage(hW paramhW) {
+    ExceptionInVPackage(this.f);
+    IComponentBravo(paramhW);
+    ExceptionInVPackage(m(), this.c);
+    ExceptionInVPackage(m(), this.d);
+    IComponentBravo(true);
     if (this.c.c() > 0) {
-      if (!this.c.b(i.a("lastTable1", "veBins1")) && !this.c.b("veTable1") && !this.c.b("veBins1") && !this.c.b("fuelTable"))
-        this.c.a(0); 
-      a(0, this.c.b(this.c.d()));
+      if (!this.c.IComponentBravo(i.ExceptionInVPackage("lastTable1", "veBins1")) && !this.c.IComponentBravo("veTable1") && !this.c.IComponentBravo("veBins1") && !this.c.IComponentBravo("fuelTable"))
+        this.c.ExceptionInVPackage(0); 
+      ExceptionInVPackage(0, this.c.IComponentBravo(this.c.d()));
     } 
     if (this.d.c() > 1) {
-      if (!this.d.b(i.e("lastTable2", "advTable1")) && !this.d.b("advanceTable") && !this.d.b("advTable1") && !this.d.b("afrTable1") && !this.d.b("o2Table"))
-        this.d.a(1); 
-      a(1, this.d.b(this.d.d()));
+      if (!this.d.IComponentBravo(i.e("lastTable2", "advTable1")) && !this.d.IComponentBravo("advanceTable") && !this.d.IComponentBravo("advTable1") && !this.d.IComponentBravo("afrTable1") && !this.d.IComponentBravo("o2Table"))
+        this.d.ExceptionInVPackage(1); 
+      ExceptionInVPackage(1, this.d.IComponentBravo(this.d.d()));
     } 
     i.c("lastVeFile", this.f);
     if (this.n != null && this.n.isVisible()) {
       this.n.setVisible(false);
       this.n.dispose();
     } 
-    b(hx.a().p());
+    IComponentBravo(hx.ExceptionInVPackage().p());
     i();
-    paramhW.a();
+    paramhW.ExceptionInVPackage();
   }
   
   private String[] o() {
-    String str = i.a("tuneFileExtensions", "msq;tune");
+    String str = i.ExceptionInVPackage("tuneFileExtensions", "msq;tune");
     return str.split(";");
   }
   
@@ -431,10 +431,10 @@ public class hE extends JPanel implements B, id, a, b {
     return false;
   }
   
-  public void k() {
+  public void IOJFileChooser() {
     String[] arrayOfString = o();
     String str = this.f;
-    str = k.a(this, "Save Tune Configuration file", arrayOfString, this.f, false);
+    str = IOJFileChooser.ExceptionInVPackage(this, "Save Tune Configuration file", arrayOfString, this.f, false);
     if (str == null || str.equals(""))
       return; 
     if (!c(str))
@@ -445,102 +445,102 @@ public class hE extends JPanel implements B, id, a, b {
       }  
     this.f = str;
     if (m() == null) {
-      k.a("Unable to save this " + arrayOfString[0] + " file.\nIt is most likely corrupt.\nTry saving a new " + arrayOfString[0] + " from a supported tuning application.\nIf this problem persists please report it.", this);
+      IOJFileChooser.ExceptionInVPackage("Unable to save this " + arrayOfString[0] + " file.\nIt is most likely corrupt.\nTry saving ExceptionInVPackage new " + arrayOfString[0] + " from ExceptionInVPackage supported tuning application.\nIf this problem persists please report it.", this);
       return;
     } 
     try {
       m().j(this.f);
-    } catch (h h) {
+    } catch (VInterfaceHotel VInterfaceHotel) {
       System.out.println("Error Saving File.");
-      h.printStackTrace();
-      k.a("Error saving msq file.\nSee log file for details.", this);
+      VInterfaceHotel.printStackTrace();
+      IOJFileChooser.ExceptionInVPackage("Error saving msq file.\nSee log file for details.", this);
       return;
     } 
-    a(this.f);
-    a(0, this.c.b(this.c.d()));
+    ExceptionInVPackage(this.f);
+    ExceptionInVPackage(0, this.c.IComponentBravo(this.c.d()));
     if (this.d != null && this.d.isVisible())
-      a(1, this.d.b(this.d.d())); 
+      ExceptionInVPackage(1, this.d.IComponentBravo(this.d.d())); 
     i.c("lastVeFile", this.f);
-    cS.a().a(this);
+    cS.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   public void l() {
     if (m() == null) {
-      k.a("No Tune Settings loaded.\nPlease open an valid Tune Settings file.", this);
+      IOJFileChooser.ExceptionInVPackage("No Tune Settings loaded.\nPlease open an valid Tune Settings file.", this);
       return;
     } 
     try {
-      C.a().c(this.v);
+      C.ExceptionInVPackage().c(this.v);
       m().j(this.f);
-      C.a().d(this.v);
-    } catch (h h) {
+      C.ExceptionInVPackage().d(this.v);
+    } catch (VInterfaceHotel VInterfaceHotel) {
       System.out.println("Error Saving File.");
-      h.printStackTrace();
-      k.a("Error saving Tune Settings file.\nSee log file for details.", this);
+      VInterfaceHotel.printStackTrace();
+      IOJFileChooser.ExceptionInVPackage("Error saving Tune Settings file.\nSee log file for details.", this);
       return;
     } 
-    m().a();
-    a(0, this.c.b(this.c.d()));
+    m().ExceptionInVPackage();
+    ExceptionInVPackage(0, this.c.IComponentBravo(this.c.d()));
     if (this.d != null && this.d.isVisible())
-      a(1, this.d.b(this.d.d())); 
-    cS.a().a(this);
+      ExceptionInVPackage(1, this.d.IComponentBravo(this.d.d())); 
+    cS.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
-  public void b(int paramInt) {
-    if (this.e == null || !isVisible() || this.a == null || !this.a.isVisible())
+  public void IComponentBravo(int paramInt) {
+    if (this.e == null || !isVisible() || this.ExceptionInVPackage == null || !this.ExceptionInVPackage.isVisible())
       return; 
     String str1 = "";
     String str2 = "";
     try {
-      if (this.e.a(this.a.g().v()) == null && !this.r) {
-        String str = i.a("yAxisField", "");
-        if (str.equals("") || str.equals(this.a.g().v())) {
-          k.a("The Y Axis fields \"" + this.a.g().v() + "\" not found in current data log.\nSet the correct Y axis field from \"Options\" Menu for table highlighting\nand VE Analysis to work correctly.", this);
+      if (this.e.ExceptionInVPackage(this.ExceptionInVPackage.g().v()) == null && !this.r) {
+        String str = i.ExceptionInVPackage("yAxisField", "");
+        if (str.equals("") || str.equals(this.ExceptionInVPackage.g().v())) {
+          IOJFileChooser.ExceptionInVPackage("The Y Axis fields \"" + this.ExceptionInVPackage.g().v() + "\" not found in current data log.\nSet the correct Y axis field from \"Options\" Menu for table highlighting\nand VE Analysis to work correctly.", this);
           this.r = true;
         } else {
           Iterator<String> iterator = m().c();
           while (iterator.hasNext()) {
-            hY hY = m().b(iterator.next());
-            if (this.e.a(hY.v()) == null)
+            hY hY = m().IComponentBravo(iterator.next());
+            if (this.e.ExceptionInVPackage(hY.v()) == null)
               hY.d(str); 
           } 
         } 
       } 
-      String str3 = g.a().a(g.d);
-      String str4 = this.a.g().v();
-      if (this.e.a(str4) == null)
-        str4 = i.a("yAxisField", ""); 
-      String str5 = this.b.g().v();
-      if (this.e.a(str5) == null)
-        str5 = i.a("yAxisField", "MAP"); 
-      if (this.e.a(str5) == null)
-        str5 = i.a("yAxisField", "Load"); 
-      if (this.e.a(str3) != null && this.e.a(str4) != null) {
-        str2 = Float.toString(this.e.a(str3).d(paramInt));
-        str1 = Float.toString(this.e.a(str4).d(paramInt));
-        this.a.h().a(str1, str2);
-        int i = this.a.h().J();
+      String str3 = g.ExceptionInVPackage().ExceptionInVPackage(g.d);
+      String str4 = this.ExceptionInVPackage.g().v();
+      if (this.e.ExceptionInVPackage(str4) == null)
+        str4 = i.ExceptionInVPackage("yAxisField", ""); 
+      String str5 = this.IComponentBravo.g().v();
+      if (this.e.ExceptionInVPackage(str5) == null)
+        str5 = i.ExceptionInVPackage("yAxisField", "MAP"); 
+      if (this.e.ExceptionInVPackage(str5) == null)
+        str5 = i.ExceptionInVPackage("yAxisField", "Load"); 
+      if (this.e.ExceptionInVPackage(str3) != null && this.e.ExceptionInVPackage(str4) != null) {
+        str2 = Float.toString(this.e.ExceptionInVPackage(str3).d(paramInt));
+        str1 = Float.toString(this.e.ExceptionInVPackage(str4).d(paramInt));
+        this.ExceptionInVPackage.VInterfaceHotel().ExceptionInVPackage(str1, str2);
+        int i = this.ExceptionInVPackage.VInterfaceHotel().J();
         String[] arrayOfString1 = new String[i];
         String[] arrayOfString2 = new String[i];
         for (byte b1 = 0; b1 < i && paramInt - b1 > 0; b1++) {
-          arrayOfString1[b1] = Float.toString(this.e.a(str4).d(paramInt - b1));
-          arrayOfString2[b1] = Float.toString(this.e.a(str3).d(paramInt - b1));
+          arrayOfString1[b1] = Float.toString(this.e.ExceptionInVPackage(str4).d(paramInt - b1));
+          arrayOfString2[b1] = Float.toString(this.e.ExceptionInVPackage(str3).d(paramInt - b1));
         } 
-        this.a.h().a(arrayOfString2, arrayOfString1);
-        this.a.h().repaint();
+        this.ExceptionInVPackage.VInterfaceHotel().ExceptionInVPackage(arrayOfString2, arrayOfString1);
+        this.ExceptionInVPackage.VInterfaceHotel().repaint();
       } 
-      if (this.e.a(str3) != null && this.e.a(str5) != null) {
-        str1 = Float.toString(this.e.a(str5).d(paramInt));
-        this.b.h().a(str1, str2);
-        int i = this.b.h().J();
+      if (this.e.ExceptionInVPackage(str3) != null && this.e.ExceptionInVPackage(str5) != null) {
+        str1 = Float.toString(this.e.ExceptionInVPackage(str5).d(paramInt));
+        this.IComponentBravo.VInterfaceHotel().ExceptionInVPackage(str1, str2);
+        int i = this.IComponentBravo.VInterfaceHotel().J();
         String[] arrayOfString1 = new String[i];
         String[] arrayOfString2 = new String[i];
         for (byte b1 = 0; b1 < i && paramInt - b1 > 0; b1++) {
-          arrayOfString1[b1] = Float.toString(this.e.a(str5).d(paramInt - b1));
-          arrayOfString2[b1] = Float.toString(this.e.a(str3).d(paramInt - b1));
+          arrayOfString1[b1] = Float.toString(this.e.ExceptionInVPackage(str5).d(paramInt - b1));
+          arrayOfString2[b1] = Float.toString(this.e.ExceptionInVPackage(str3).d(paramInt - b1));
         } 
-        this.b.h().a(arrayOfString2, arrayOfString1);
-        this.b.h().repaint();
+        this.IComponentBravo.VInterfaceHotel().ExceptionInVPackage(arrayOfString2, arrayOfString1);
+        this.IComponentBravo.VInterfaceHotel().repaint();
       } 
     } catch (Exception exception) {
       System.out.println("yVal=" + str1 + ", rpm=" + str2 + ", index=" + paramInt);
@@ -548,107 +548,107 @@ public class hE extends JPanel implements B, id, a, b {
     } 
   }
   
-  public void a(String paramString, hY paramhY) {
-    hY hY1 = m().b(paramString);
+  public void ExceptionInVPackage(String paramString, hY paramhY) {
+    hY hY1 = m().IComponentBravo(paramString);
     for (byte b1 = 0; b1 < paramhY.getRowCount(); b1++) {
       for (byte b2 = 0; b2 < paramhY.getColumnCount(); b2++)
         hY1.setValueAt(paramhY.d(b1, b2), b1, b2); 
     } 
     hY1.C();
-    this.a.h().repaint();
-    this.b.h().repaint();
+    this.ExceptionInVPackage.VInterfaceHotel().repaint();
+    this.IComponentBravo.VInterfaceHotel().repaint();
   }
   
-  public void a(double paramDouble) {}
+  public void ExceptionInVPackage(double paramDouble) {}
   
-  public void a(n paramn) {
+  public void ExceptionInVPackage(n paramn) {
     this.e = paramn;
     if (m() != null)
       m().e(); 
     if (this.n != null && this.n.isShowing())
-      this.n.b(false); 
+      this.n.IComponentBravo(false); 
   }
   
-  public void a() {}
+  public void ExceptionInVPackage() {}
   
-  public void b(n paramn) {}
+  public void IComponentBravo(n paramn) {}
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     if (this.n != null && this.n.isVisible())
-      this.n.a(paramInt); 
+      this.n.ExceptionInVPackage(paramInt); 
     if (!isVisible())
       return; 
-    b(paramInt);
+    IComponentBravo(paramInt);
   }
   
-  public void b() {}
+  public void IComponentBravo() {}
   
   void c(int paramInt) {
-    if (this.a != null && this.c.c() > 0) {
-      this.a.c(paramInt);
-      String str = this.c.b();
+    if (this.ExceptionInVPackage != null && this.c.c() > 0) {
+      this.ExceptionInVPackage.c(paramInt);
+      String str = this.c.IComponentBravo();
       int i = (this.c.d() + 1) % this.c.c();
-      a(0, this.c.b(i));
-      a(0, str);
+      ExceptionInVPackage(0, this.c.IComponentBravo(i));
+      ExceptionInVPackage(0, str);
     } 
-    if (this.b != null && this.d.c() > 0) {
-      this.b.c(paramInt);
-      String str = this.d.b();
+    if (this.IComponentBravo != null && this.d.c() > 0) {
+      this.IComponentBravo.c(paramInt);
+      String str = this.d.IComponentBravo();
       int i = (this.d.d() + 1) % this.d.c();
-      a(1, this.d.b(i));
-      a(1, str);
+      ExceptionInVPackage(1, this.d.IComponentBravo(i));
+      ExceptionInVPackage(1, str);
     } 
   }
   
   private boolean c(n paramn) {
-    String str1 = g.a().a(g.c);
-    String str2 = g.a().a(g.h);
-    String str3 = g.a().a(g.i);
-    String str4 = g.a().a(g.b);
-    String str5 = g.a().a(g.d);
-    String str6 = g.a().a(g.e);
-    String str7 = this.a.g().v();
-    if (str7 == null || str7.equals("") || paramn.a(str7) == null)
-      str7 = i.a("yAxisField", g.a().a(g.j)); 
+    String str1 = g.ExceptionInVPackage().ExceptionInVPackage(g.c);
+    String str2 = g.ExceptionInVPackage().ExceptionInVPackage(g.VInterfaceHotel);
+    String str3 = g.ExceptionInVPackage().ExceptionInVPackage(g.i);
+    String str4 = g.ExceptionInVPackage().ExceptionInVPackage(g.IComponentBravo);
+    String str5 = g.ExceptionInVPackage().ExceptionInVPackage(g.d);
+    String str6 = g.ExceptionInVPackage().ExceptionInVPackage(g.e);
+    String str7 = this.ExceptionInVPackage.g().v();
+    if (str7 == null || str7.equals("") || paramn.ExceptionInVPackage(str7) == null)
+      str7 = i.ExceptionInVPackage("yAxisField", g.ExceptionInVPackage().ExceptionInVPackage(g.j)); 
     String str8 = "";
-    if (str5 == null || paramn.a(str5) == null || str7 == null || paramn.a(str7) == null || ((str2 == null || paramn.a(str2) == null) && (str4 == null || paramn.a(str4) == null) && (str3 == null || paramn.a(str3) == null))) {
+    if (str5 == null || paramn.ExceptionInVPackage(str5) == null || str7 == null || paramn.ExceptionInVPackage(str7) == null || ((str2 == null || paramn.ExceptionInVPackage(str2) == null) && (str4 == null || paramn.ExceptionInVPackage(str4) == null) && (str3 == null || paramn.ExceptionInVPackage(str3) == null))) {
       str8 = str8 + "The following fields are required for VE Analyze to work best:\n" + str5 + "\n" + str2 + " or " + str3 + "\n" + str7 + "\n\nAlso to improve results please log these additional fields:\n" + str6 + "\n" + str1 + "\n";
-      if (i.c.startsWith(b.e))
+      if (i.c.startsWith(IComponentBravo.e))
         str8 = str8 + "dMAP_Corr"; 
       bV.d(str8, this);
       return false;
     } 
-    if ((str6 == null || paramn.a(str6) == null) && !str7.equals("PW In1")) {
-      str8 = "The field used to determine the amount of EGO correction the ECU is applying \"" + str6 + "\"\nWas not found in the currently loaded Log File. If you run VE Analyze it will assume\nthere is no EGO correction being applied by the ECU.\n\nTo correct this, either load a log file with the field \"" + str6 + "\" \nOR\nCheck to make sure the correct \"Field Naming (ECU)\" option is selected \nunder the Options Menu. It may be another field name that is appropriate for your ECU";
+    if ((str6 == null || paramn.ExceptionInVPackage(str6) == null) && !str7.equals("PW In1")) {
+      str8 = "The field used to determine the amount of EGO correction the ECU is applying \"" + str6 + "\"\nWas not found in the currently loaded Log File. If you run VE Analyze it will assume\nthere is no EGO correction being applied by the ECU.\n\nTo correct this, either load ExceptionInVPackage log file with the field \"" + str6 + "\" \nOR\nCheck to make sure the correct \"Field Naming (ECU)\" option is selected \nunder the Options Menu. It may be another field name that is appropriate for your ECU";
       bV.d(str8, this);
     } 
     return true;
   }
   
   public Dimension getPreferredSize() {
-    return (i.e(i.N, i.R).equals(i.P) && this.a != null) ? this.a.getPreferredSize() : super.getPreferredSize();
+    return (i.e(i.N, i.R).equals(i.P) && this.ExceptionInVPackage != null) ? this.ExceptionInVPackage.getPreferredSize() : super.getPreferredSize();
   }
   
-  private List a(List<w> paramList, Container paramContainer) {
+  private List ExceptionInVPackage(List<w> paramList, Container paramContainer) {
     for (Component component : paramContainer.getComponents()) {
       if (component instanceof w) {
         paramList.add((w)component);
       } else if (component instanceof Container) {
-        a(paramList, (Container)component);
+        ExceptionInVPackage(paramList, (Container)component);
       } 
     } 
     return paramList;
   }
   
   private List p() {
-    return a(new ArrayList(), this.s);
+    return ExceptionInVPackage(new ArrayList(), this.s);
   }
   
   public hW m() {
     return this.u;
   }
   
-  public void b(hW paramhW) {
+  public void IComponentBravo(hW paramhW) {
     this.u = paramhW;
   }
 }

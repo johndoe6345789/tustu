@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -11,7 +11,7 @@ class dY implements ItemListener {
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
       String str = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getActionCommand();
-      i.c("prefFontSize", str);
+      IOProperties.c("prefFontSize", str);
       this.a.a.c(Integer.parseInt(str));
       b.a().b();
       cd.b(this.a);

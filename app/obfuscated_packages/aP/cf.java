@@ -3,10 +3,10 @@ package aP;
 import W.n;
 import ao.hx;
 import bH.X;
-import i.b;
+import i.IComponentBravo;
 import java.io.File;
 
-class cf implements b {
+class cf implements IComponentBravo {
   cf(cc paramcc) {}
   
   public void a() {}
@@ -29,12 +29,12 @@ class cf implements b {
     } 
   }
   
-  public void b(n paramn) {
+  public void IComponentBravo(n paramn) {
     if (paramn != null) {
       File file = paramn.k();
       this.a.C = file.getName();
       this.a.A.setText("1: " + this.a.C + " - 2:" + file.getName());
-      this.a.A.setToolTipText("<html>" + X.b(this.a.A.getText(), " - ", "<br>"));
+      this.a.A.setToolTipText("<html>" + X.IComponentBravo(this.a.A.getText(), " - ", "<br>"));
     } else if (hx.a().r() != null) {
       File file = hx.a().r().k();
       this.a.C = file.getName();
@@ -46,7 +46,7 @@ class cf implements b {
     } 
   }
   
-  public void b() {}
+  public void IComponentBravo() {}
 }
 
 

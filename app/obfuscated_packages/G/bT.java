@@ -1,6 +1,6 @@
 package G;
 
-import ae.m;
+import ae.AeInterfaceMike;
 import bH.X;
 
 public class bT {
@@ -8,7 +8,7 @@ public class bT {
   
   private String b = null;
   
-  private m c = null;
+  private AeInterfaceMike c = null;
   
   private int d = -1;
   
@@ -51,11 +51,11 @@ public class bT {
     return (arrayOfByte != null && arrayOfByte.length >= 3 && (arrayOfByte[0] & 0xE0) == 224 && (arrayOfByte[1] & 0xF0) == 0 && arrayOfByte[2] == 62);
   }
   
-  public m e() {
+  public AeInterfaceMike e() {
     return this.c;
   }
   
-  public void a(m paramm) {
+  public void a(AeInterfaceMike paramm) {
     this.c = paramm;
   }
   

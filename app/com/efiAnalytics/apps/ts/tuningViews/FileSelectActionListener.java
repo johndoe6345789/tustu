@@ -5,20 +5,20 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import r.a;
-import r.j;
-import s.g;
+import r.IOPropertiesUsingFile;
+import r.ThreadedFile;
+import s.SComponentGolf;
 
 class FileSelectActionListener implements ActionListener {
   f(b paramb) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String[] arrayOfString = { a.cp };
-    String str = bV.b((Component)paramActionEvent.getSource(), g.b("Select Other Tuning Views"), arrayOfString, "", j.k().getAbsolutePath());
+    String[] arrayOfString = { IOPropertiesUsingFile.cp };
+    String str = bV.b((Component)paramActionEvent.getSource(), SComponentGolf.b("Select Other Tuning Views"), arrayOfString, "", ThreadedFile.k().getAbsolutePath());
     if (str != null) {
-      this.a.d.setText(str);
-      this.a.a = new File(str);
-      this.a.a(this.a.a);
+      this.IOPropertiesUsingFile.d.setText(str);
+      this.IOPropertiesUsingFile.IOPropertiesUsingFile = new File(str);
+      this.IOPropertiesUsingFile.IOPropertiesUsingFile(this.IOPropertiesUsingFile.IOPropertiesUsingFile);
     } 
   }
 }

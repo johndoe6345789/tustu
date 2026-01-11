@@ -8,8 +8,8 @@ import G.br;
 import G.bs;
 import G.cq;
 import G.cu;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.dl;
@@ -23,65 +23,65 @@ import java.util.logging.Logger;
 public class LiveGraphPanel extends dl implements cq, bc {
   private HashMap c = new HashMap<>();
   
-  u a = null;
+  u ExceptionInVPackage = null;
   
   private boolean d = false;
   
   public s() {
-    this.a = new u(this);
+    this.ExceptionInVPackage = new u(this);
     addMouseListener(new v(this));
   }
   
   public s(R paramR, br parambr) {
     if (parambr != null && parambr.b() > 0) {
-      bs[] arrayOfBs = parambr.a();
+      bs[] arrayOfBs = parambr.ExceptionInVPackage();
       for (byte b = 0; b < arrayOfBs.length; b++) {
         try {
-          a(paramR.c(), arrayOfBs[b].a(), arrayOfBs[b].e(), (arrayOfBs[b].d() == null) ? null : new Color(arrayOfBs[b].d().a()), arrayOfBs[b].b(), arrayOfBs[b].c(), arrayOfBs[b].f(), arrayOfBs[b].g());
-        } catch (a a) {
-          D.a("Can not add line to Graph.", (Exception)a, this);
+          ExceptionInVPackage(paramR.c(), arrayOfBs[b].ExceptionInVPackage(), arrayOfBs[b].e(), (arrayOfBs[b].d() == null) ? null : new Color(arrayOfBs[b].d().ExceptionInVPackage()), arrayOfBs[b].b(), arrayOfBs[b].c(), arrayOfBs[b].f(), arrayOfBs[b].ExceptionPrintstacktrace());
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          D.ExceptionInVPackage("Can not add line to Graph.", (Exception)ExceptionInVPackage, this);
         } 
       } 
     } 
     addMouseListener(new v(this));
   }
   
-  public void a(String paramString1, String paramString2, String paramString3, Color paramColor, double paramDouble1, double paramDouble2, boolean paramBoolean1, boolean paramBoolean2) {
-    R r = T.a().c(paramString1);
+  public void ExceptionInVPackage(String paramString1, String paramString2, String paramString3, Color paramColor, double paramDouble1, double paramDouble2, boolean paramBoolean1, boolean paramBoolean2) {
+    R r = T.ExceptionInVPackage().c(paramString1);
     if (r == null)
-      throw new a("Failed to add OutputChannel " + paramString2 + ",\n" + paramString1 + " not currently loaded."); 
-    aH aH = r.g(paramString2);
+      throw new ExceptionInVPackage("Failed to add OutputChannel " + paramString2 + ",\n" + paramString1 + " not currently loaded."); 
+    aH aH = r.ExceptionPrintstacktrace(paramString2);
     if (aH == null)
-      throw new a("Failed to add OutputChannel " + paramString2 + ",\n" + aH + " not found in " + paramString1); 
-    ah ah = a(paramString2, r);
+      throw new ExceptionInVPackage("Failed to add OutputChannel " + paramString2 + ",\n" + aH + " not found in " + paramString1); 
+    ah ah = ExceptionInVPackage(paramString2, r);
     t t = new t(this);
-    t.a(paramString2);
+    t.ExceptionInVPackage(paramString2);
     t.b(paramString2);
     if (paramColor == null)
-      paramColor = a(this.c.size()); 
-    t.a(paramColor);
+      paramColor = ExceptionInVPackage(this.c.size()); 
+    t.ExceptionInVPackage(paramColor);
     if (paramString3 == null || paramString3.equals(""))
       paramString3 = aH.e(); 
     if (paramDouble1 != paramDouble2) {
       t.b(paramDouble1);
       t.c(paramDouble2);
       t.d(aH.d());
-      t.a(paramBoolean2);
+      t.ExceptionInVPackage(paramBoolean2);
       t.b(paramBoolean1);
       t.c(paramString3);
       if (ah != null)
         t.d(ah.l()); 
     } else if (ah != null) {
-      t.b(ah.a());
+      t.b(ah.ExceptionInVPackage());
       t.c(ah.d());
       t.d(ah.l());
-      t.a(paramBoolean2);
+      t.ExceptionInVPackage(paramBoolean2);
       t.b(paramBoolean1);
       if (ah.j() != null && !ah.j().equals("")) {
         try {
-          t.c(ah.j().a());
-        } catch (g g) {
-          Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+          t.c(ah.j().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
           t.c("");
         } 
       } else {
@@ -92,19 +92,19 @@ public class LiveGraphPanel extends dl implements cq, bc {
       t.c(aH.m());
       t.d(aH.d());
       t.c(paramString3);
-      t.a(true);
+      t.ExceptionInVPackage(true);
       t.b(true);
     } 
     this.c.put(paramString2, t);
-    a(t);
-    cu.a().a(paramString1, paramString2, this);
+    ExceptionInVPackage(t);
+    cu.ExceptionInVPackage().ExceptionInVPackage(paramString1, paramString2, this);
   }
   
-  public void a() {
-    cu.a().a(this);
+  public void ExceptionInVPackage() {
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
-  private Color a(int paramInt) {
+  private Color ExceptionInVPackage(int paramInt) {
     switch (paramInt % 4) {
       case 0:
         return Color.CYAN;
@@ -118,7 +118,7 @@ public class LiveGraphPanel extends dl implements cq, bc {
     return Color.MAGENTA;
   }
   
-  private ah a(String paramString, R paramR) {
+  private ah ExceptionInVPackage(String paramString, R paramR) {
     Iterator<ah> iterator = paramR.B();
     while (iterator.hasNext()) {
       ah ah = iterator.next();
@@ -132,7 +132,7 @@ public class LiveGraphPanel extends dl implements cq, bc {
     t t = (t)this.c.get(paramString);
     if (t != null) {
       if (!c()) {
-        t.a(paramDouble);
+        t.ExceptionInVPackage(paramDouble);
         b();
       } 
     } else {
@@ -141,13 +141,13 @@ public class LiveGraphPanel extends dl implements cq, bc {
   }
   
   public void close() {
-    a();
+    ExceptionInVPackage();
   }
   
   public void b() {
-    if (this.a == null)
-      this.a = new u(this); 
-    this.a.a();
+    if (this.ExceptionInVPackage == null)
+      this.ExceptionInVPackage = new u(this); 
+    this.ExceptionInVPackage.ExceptionInVPackage();
   }
   
   public Dimension getMinimumSize() {
@@ -158,7 +158,7 @@ public class LiveGraphPanel extends dl implements cq, bc {
     return this.d;
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.d = paramBoolean;
   }
 }

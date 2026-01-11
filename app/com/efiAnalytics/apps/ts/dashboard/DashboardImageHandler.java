@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import i.j;
+import i.IComponentJuliet;
 import java.awt.Image;
 
-class DashboardImageHandler implements j {
+class DashboardImageHandler implements IComponentJuliet {
   boolean a = false;
   
   DashboardImageHandler(x paramx) {}

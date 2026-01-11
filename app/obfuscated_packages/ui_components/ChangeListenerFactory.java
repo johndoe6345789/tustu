@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -13,12 +13,12 @@ class dg implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JMenuItem jMenuItem = (JMenuItem)paramActionEvent.getSource();
     String str = jMenuItem.getActionCommand();
-    i.d(str);
+    IOProperties.d(str);
     JPopupMenu jPopupMenu = (JPopupMenu)jMenuItem.getParent();
     for (byte b = 0; b < jPopupMenu.getComponentCount(); b++) {
       if (jPopupMenu.getComponent(b) instanceof JCheckBoxMenuItem) {
         JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)jPopupMenu.getComponent(b);
-        jCheckBoxMenuItem.setState(jCheckBoxMenuItem.getName().equals(i.c("DEFAULT_" + str)));
+        jCheckBoxMenuItem.setState(jCheckBoxMenuItem.getName().equals(IOProperties.c("DEFAULT_" + str)));
       } 
     } 
   }

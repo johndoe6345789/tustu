@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import G.R;
 import G.T;
 import G.ac;
-import ac.q;
-import ac.r;
+import ac.AcInterfaceQuebec;
+import ac.AcInterfaceRomeo;
 import bH.D;
 import bt.bh;
 import com.efiAnalytics.ui.eJ;
@@ -22,7 +22,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import s.g;
+import s.SComponentGolf;
 
 public class ProfileDatalogFieldsPanel extends bh {
   R[] a = null;
@@ -39,7 +39,7 @@ public class ProfileDatalogFieldsPanel extends bh {
   
   List f = new ArrayList();
   
-  List g = new ArrayList();
+  List SComponentGolf = new ArrayList();
   
   JPanel h;
   
@@ -54,19 +54,19 @@ public class ProfileDatalogFieldsPanel extends bh {
     this.a = new R[arrayOfString.length];
     for (byte b = 0; b < arrayOfString.length; b++)
       this.a[b] = T.a().c(arrayOfString[b]); 
-    ArrayList arrayList = r.a(this.a);
-    for (q q : arrayList)
-      this.f.add(new F(this, q)); 
+    ArrayList arrayList = AcInterfaceRomeo.a(this.a);
+    for (AcInterfaceQuebec AcInterfaceQuebec : arrayList)
+      this.f.add(new F(this, AcInterfaceQuebec)); 
     this.f = a(this.f);
     setLayout(new BorderLayout(eJ.a(12), eJ.a(12)));
-    setBorder(BorderFactory.createTitledBorder(g.b("Profile Data Log Fields")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Profile Data Log Fields")));
     int i = eJ.a(180);
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
     JScrollPane jScrollPane1 = new JScrollPane(this.c);
     jScrollPane1.setBorder(BorderFactory.createLoweredBevelBorder());
     jScrollPane1.setPreferredSize(new Dimension(i, i));
-    jPanel1.add("North", new JLabel(g.b("Not Logged"), 0));
+    jPanel1.add("North", new JLabel(SComponentGolf.b("Not Logged"), 0));
     jPanel1.add("Center", jScrollPane1);
     jPanel1.add("West", new JLabel(""));
     add("West", jPanel1);
@@ -75,7 +75,7 @@ public class ProfileDatalogFieldsPanel extends bh {
     JScrollPane jScrollPane2 = new JScrollPane(this.e);
     jScrollPane2.setBorder(BorderFactory.createLoweredBevelBorder());
     jScrollPane2.setPreferredSize(new Dimension(i, i));
-    jPanel2.add("North", new JLabel(g.b("Logged Fields"), 0));
+    jPanel2.add("North", new JLabel(SComponentGolf.b("Logged Fields"), 0));
     jPanel2.add("Center", jScrollPane2);
     jPanel2.add("East", new JLabel(""));
     add("East", jPanel2);
@@ -88,24 +88,24 @@ public class ProfileDatalogFieldsPanel extends bh {
     JButton jButton = new JButton(">>");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(65);
-    jButton.setToolTipText(g.b("Add All"));
+    jButton.setToolTipText(SComponentGolf.b("Add All"));
     jButton.addActionListener(new B(this));
     this.h.add(jButton);
     jButton = new JButton(">");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(160);
-    jButton.setToolTipText(g.b("Add selected fields"));
+    jButton.setToolTipText(SComponentGolf.b("Add selected fields"));
     jButton.addActionListener(new C(this));
     this.h.add(jButton);
     jButton = new JButton("<");
     jButton.setPreferredSize(dimension);
     jButton.setMnemonic(153);
-    jButton.setToolTipText(g.b("Remove selected fields"));
+    jButton.setToolTipText(SComponentGolf.b("Remove selected fields"));
     jButton.addActionListener(new D(this));
     this.h.add(jButton);
     jButton = new JButton("<<");
     jButton.setPreferredSize(dimension);
-    jButton.setToolTipText(g.b("Remove All"));
+    jButton.setToolTipText(SComponentGolf.b("Remove All"));
     jButton.setMnemonic(82);
     jButton.addActionListener(new E(this));
     this.h.add(jButton);
@@ -120,12 +120,12 @@ public class ProfileDatalogFieldsPanel extends bh {
     this.b.clear();
     this.d.clear();
     for (F f : this.f) {
-      R r = T.a().c(f.a().g());
+      R AcInterfaceRomeo = T.a().c(f.a().SComponentGolf());
       ac ac = f.a().b();
-      if (r.a(r, ac)) {
+      if (AcInterfaceRomeo.a(AcInterfaceRomeo, ac)) {
         if (f.a().a().contains("Oil"))
           D.c(f.a().a()); 
-        if (this.g != null && (!this.g.contains(f.a().a()) || b(f.a().a()))) {
+        if (this.SComponentGolf != null && (!this.SComponentGolf.contains(f.a().a()) || b(f.a().a()))) {
           this.d.addElement(f);
           continue;
         } 
@@ -139,13 +139,13 @@ public class ProfileDatalogFieldsPanel extends bh {
     int[] arrayOfInt = this.c.getSelectedIndices();
     for (byte b = 0; b < arrayOfInt.length; b++) {
       F f = this.b.getElementAt(arrayOfInt[b]);
-      if (this.g.remove(f.a().a()));
+      if (this.SComponentGolf.remove(f.a().a()));
     } 
     j();
   }
   
   public void d() {
-    this.g.clear();
+    this.SComponentGolf.clear();
     j();
   }
   
@@ -155,8 +155,8 @@ public class ProfileDatalogFieldsPanel extends bh {
       return; 
     for (int i = arrayOfInt.length - 1; i >= 0; i--) {
       F f = this.d.getElementAt(arrayOfInt[i]);
-      if (!b(F.a(f).a()) && !this.g.contains(f.a().a()))
-        this.g.add(this.g.size(), f.a().a()); 
+      if (!b(F.a(f).a()) && !this.SComponentGolf.contains(f.a().a()))
+        this.SComponentGolf.add(this.SComponentGolf.size(), f.a().a()); 
     } 
     j();
   }
@@ -164,7 +164,7 @@ public class ProfileDatalogFieldsPanel extends bh {
   public void removeAll() {
     for (F f : this.f) {
       if (!b(f.a().a()))
-        this.g.add(f.a().a()); 
+        this.SComponentGolf.add(f.a().a()); 
     } 
     j();
   }
@@ -175,11 +175,11 @@ public class ProfileDatalogFieldsPanel extends bh {
   
   public void a(String paramString, String[] paramArrayOfString) {
     this.k = paramString;
-    this.g.clear();
+    this.SComponentGolf.clear();
     for (String str : paramArrayOfString) {
       str = str.trim();
-      if (!this.g.contains(str))
-        this.g.add(str); 
+      if (!this.SComponentGolf.contains(str))
+        this.SComponentGolf.add(str); 
     } 
     j();
   }
@@ -188,7 +188,7 @@ public class ProfileDatalogFieldsPanel extends bh {
     fp.a(this.h, paramBoolean);
   }
   
-  public void g() {
+  public void SComponentGolf() {
     this.l = true;
   }
   
@@ -197,7 +197,7 @@ public class ProfileDatalogFieldsPanel extends bh {
   }
   
   public String[] i() {
-    return (String[])this.g.toArray((Object[])new String[this.g.size()]);
+    return (String[])this.SComponentGolf.toArray((Object[])new String[this.SComponentGolf.size()]);
   }
   
   public List a(List<F> paramList) {

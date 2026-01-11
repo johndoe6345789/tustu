@@ -1,7 +1,7 @@
 package L;
 
 import G.aI;
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class IsOnlineFunction extends ac {
@@ -11,11 +11,11 @@ public class IsOnlineFunction extends ac {
     this.a = paramaI;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     return this.a.R() ? 1.0D : 0.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

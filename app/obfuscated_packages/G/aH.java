@@ -1,7 +1,7 @@
 package G;
 
-import V.g;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.G;
 import bH.X;
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 public class aH extends Q implements Serializable {
   private String f = null;
   
-  private int g = 0;
+  private int ExceptionPrintstacktrace = 0;
   
   private String h = null;
   
@@ -93,11 +93,11 @@ public class aH extends Q implements Serializable {
   }
   
   public int a() {
-    return this.g;
+    return this.ExceptionPrintstacktrace;
   }
   
   public void a(int paramInt) {
-    this.g = paramInt;
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public String b() {
@@ -108,7 +108,7 @@ public class aH extends Q implements Serializable {
     if (paramString.equals("scalar") || paramString.equals("bits") || paramString.equals("dotScalar") || paramString.equals("formula")) {
       this.h = paramString;
     } else {
-      throw new g("Unknown paramClass: " + paramString);
+      throw new ExceptionPrintstacktrace("Unknown paramClass: " + paramString);
     } 
   }
   
@@ -118,9 +118,9 @@ public class aH extends Q implements Serializable {
   
   public void b(String paramString) {
     if (paramString == null || (!paramString.equals("U08") && !paramString.equals("U16") && !paramString.equals("U32") && !paramString.equals("S08") && !paramString.equals("S16") && !paramString.equals("S32") && !paramString.equals("F16") && !paramString.equals("F32")))
-      throw new g("Unsupported data type: " + paramString); 
+      throw new ExceptionPrintstacktrace("Unsupported data type: " + paramString); 
     b((paramString.startsWith("S") || paramString.startsWith("F")));
-    String str = X.b(paramString, "U", "");
+    String str = X.b(paramString, "ExceptionInAxPackage", "");
     str = X.b(str, "S", "");
     str = X.b(str, "F", "");
     try {
@@ -147,8 +147,8 @@ public class aH extends Q implements Serializable {
   public String e() {
     try {
       return (this.k != null) ? this.k.a() : "";
-    } catch (g g) {
-      Logger.getLogger(aM.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(aM.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       return "INVALID";
     } 
   }
@@ -167,7 +167,7 @@ public class aH extends Q implements Serializable {
       this.u = new ArrayList(); 
     int i = (int)Math.pow(2.0D, f());
     if (this.u.size() >= i)
-      throw new g("More bit options defined than possible, max options:" + i + ". Not adding: " + paramString); 
+      throw new ExceptionPrintstacktrace("More bit options defined than possible, max options:" + i + ". Not adding: " + paramString); 
     this.u.add(paramString);
   }
   
@@ -179,7 +179,7 @@ public class aH extends Q implements Serializable {
     this.k = paramdb;
   }
   
-  public dj g() {
+  public dj ExceptionPrintstacktrace() {
     return this.l;
   }
   
@@ -257,7 +257,7 @@ public class aH extends Q implements Serializable {
         try {
           if (this.b != 1)
             this.p = i.a(str, v()); 
-        } catch (U u) {
+        } catch (ExceptionInAxPackage u) {
           if (bool) {
             D.d("EcuOutputChannel::Error executing formula (fastMath):" + str + "\nWas:" + this.n + "\nReported Error:\n" + u.getMessage() + "\n\tUsing last set value for " + aL());
           } else {
@@ -267,7 +267,7 @@ public class aH extends Q implements Serializable {
       } else {
         try {
           str = i.d(str, v());
-          this.p = G.g(str);
+          this.p = G.ExceptionPrintstacktrace(str);
         } catch (Exception exception) {
           D.b("EcuOutputChannel::Error executing formula(legacy) for last value:" + str + "\nWas:" + this.n + "\n\tUsing last set value for " + aL());
         } 
@@ -286,10 +286,10 @@ public class aH extends Q implements Serializable {
       return this.p; 
     if (this.h.equals("scalar")) {
       if (this.i.equals("U32")) {
-        long l = c.b(paramArrayOfbyte, this.g, l(), this.a, p());
+        long l = c.b(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
         this.p = (l + this.m.a()) * this.l.a();
       } else {
-        int i = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+        int i = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
         if (t()) {
           float f = Float.intBitsToFloat(i);
           this.p = (f + this.m.a()) * this.l.a();
@@ -298,10 +298,10 @@ public class aH extends Q implements Serializable {
         } 
       } 
     } else if (this.h.equals("bits")) {
-      int i = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+      int i = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
       this.p = ((i & y()) >> q());
     } else if (this.h.equals("dotScalar")) {
-      int i = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+      int i = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
       this.p = ((i & (this.z ^ 0xFFFFFFFF)) >> this.A) + (i & this.z) / Math.pow(2.0D, this.A);
       this.p = (this.p + this.m.a()) * this.l.a();
     } else if (this.h.equals("formula")) {
@@ -316,18 +316,18 @@ public class aH extends Q implements Serializable {
           } finally {
             this.c = false;
           } 
-        } catch (U u) {
+        } catch (ExceptionInAxPackage u) {
           StringBuilder stringBuilder = new StringBuilder("EcuOutputChannel::Error executing formula for ");
           stringBuilder.append(aL()).append(":");
           stringBuilder.append(str).append("\nWas:").append(this.n).append("\nReported Error:\n").append(u.getMessage());
           try {
-            String[] arrayOfString = i.g(this.n, v());
+            String[] arrayOfString = i.ExceptionPrintstacktrace(this.n, v());
             double[] arrayOfDouble = new double[arrayOfString.length];
             byte b;
             for (b = 0; arrayOfString != null && b < arrayOfString.length; b++) {
               try {
                 arrayOfDouble[b] = i.a(arrayOfString[b], v(), paramArrayOfbyte);
-              } catch (U u1) {
+              } catch (ExceptionInAxPackage u1) {
                 D.b("Could not get value for: " + arrayOfString[b]);
                 arrayOfDouble[b] = Double.NaN;
               } 
@@ -337,21 +337,21 @@ public class aH extends Q implements Serializable {
               for (b = 0; b < arrayOfString.length; b++)
                 stringBuilder.append(arrayOfString[b]).append(" = ").append(arrayOfDouble[b]).append("\n"); 
             } 
-          } catch (U u1) {
+          } catch (ExceptionInAxPackage u1) {
             stringBuilder.append("Failed to get Component Values");
           } 
-          throw new g(stringBuilder.toString());
+          throw new ExceptionPrintstacktrace(stringBuilder.toString());
         } 
       } else {
         str = i.d(str, v(), paramArrayOfbyte);
         try {
-          this.p = G.g(str);
+          this.p = G.ExceptionPrintstacktrace(str);
         } catch (Exception exception) {
-          throw new g("EcuOutputChannel::Error executing formula(legacy):" + str + "\nWas:" + this.n);
+          throw new ExceptionPrintstacktrace("EcuOutputChannel::Error executing formula(legacy):" + str + "\nWas:" + this.n);
         } 
       } 
     } else {
-      throw new g("EcuOutputChannel::getValueFromResponse not intialized, paramClass=" + this.h);
+      throw new ExceptionPrintstacktrace("EcuOutputChannel::getValueFromResponse not intialized, paramClass=" + this.h);
     } 
     return this.p;
   }
@@ -359,19 +359,19 @@ public class aH extends Q implements Serializable {
   public int c(byte[] paramArrayOfbyte) {
     int i;
     if (this.h.equals("scalar") || this.h.equals("dotScalar")) {
-      int j = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+      int j = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
       if (t()) {
         i = j;
       } else {
         i = j;
       } 
     } else if (this.h.equals("bits")) {
-      int j = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+      int j = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
       i = (j & y()) >> q();
     } else {
       if (this.h.equals("formula"))
-        throw new g("Can not get the raw value for a formula based channel"); 
-      throw new g("EcuOutputChannel::getValueFromResponse not intialized, paramClass=" + this.h);
+        throw new ExceptionPrintstacktrace("Can not get the raw value for a formula based channel"); 
+      throw new ExceptionPrintstacktrace("EcuOutputChannel::getValueFromResponse not intialized, paramClass=" + this.h);
     } 
     return Math.round(i);
   }
@@ -454,7 +454,7 @@ public class aH extends Q implements Serializable {
       return true;
     } 
     if (this.h.equals("bits")) {
-      int i = c.a(paramArrayOfbyte, this.g, l(), this.a, p());
+      int i = c.a(paramArrayOfbyte, this.ExceptionPrintstacktrace, l(), this.a, p());
       i &= y() ^ 0xFFFFFFFF;
       int j = (int)paramDouble << q() & y();
       int k = i | j;
@@ -472,13 +472,13 @@ public class aH extends Q implements Serializable {
           this.e = i.f(this.n, h.a().a(this.q));
           if (this.e == null || this.e.length != 1)
             return false; 
-        } catch (U u) {
+        } catch (ExceptionInAxPackage u) {
           Logger.getLogger(aH.class.getName()).log(Level.SEVERE, "Failed to get Channel Terms", (Throwable)u);
           this.e = new String[0];
           return false;
         }  
       aI aI = h.a().a(this.q);
-      aH aH1 = aI.K().g(this.e[0]);
+      aH aH1 = aI.K().ExceptionPrintstacktrace(this.e[0]);
       if (aH1 != null)
         return aH1.a(paramArrayOfbyte, paramDouble); 
     } 

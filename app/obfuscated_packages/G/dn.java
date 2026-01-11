@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 
 public class dn implements db {
   R a;
@@ -19,8 +19,8 @@ public class dn implements db {
       return this.b + str + this.c;
     } catch (Exception exception) {
       if (this.a == null)
-        throw new g("Failed to get Working dir for, No EcuConfiguration set."); 
-      throw new g("Failed to get Working dir for: " + this.a.c() + "\nError: " + exception.getMessage());
+        throw new ExceptionPrintstacktrace("Failed to get Working dir for, No EcuConfiguration set."); 
+      throw new ExceptionPrintstacktrace("Failed to get Working dir for: " + this.a.c() + "\nError: " + exception.getMessage());
     } 
   }
   

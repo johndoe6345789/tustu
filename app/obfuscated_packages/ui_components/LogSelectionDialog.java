@@ -1,6 +1,6 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.J;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
@@ -24,7 +24,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class bE extends JDialog {
-  JLabel a = new JLabel("", 0);
+  JLabel ExceptionInVPackage = new JLabel("", 0);
   
   String b = "<html>Select the logs you wish to close.";
   
@@ -49,19 +49,19 @@ public class bE extends JDialog {
     this.c = paramList2;
     JPanel jPanel1 = new JPanel();
     add("Center", jPanel1);
-    jPanel1.setBorder(BorderFactory.createEmptyBorder(eJ.a(15), eJ.a(15), eJ.a(15), eJ.a(15)));
-    jPanel1.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
-    jPanel1.add("North", this.a);
-    this.a.setText(this.b);
+    jPanel1.setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(15), eJ.ExceptionInVPackage(15), eJ.ExceptionInVPackage(15), eJ.ExceptionInVPackage(15)));
+    jPanel1.setLayout(new BorderLayout(eJ.ExceptionInVPackage(5), eJ.ExceptionInVPackage(5)));
+    jPanel1.add("North", this.ExceptionInVPackage);
+    this.ExceptionInVPackage.setText(this.b);
     try {
-      Image image = cO.a().a(cO.E, this, eJ.a(16));
+      Image image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.E, this, eJ.ExceptionInVPackage(16));
       this.d = new ImageIcon(image);
-      image = cO.a().a(cO.F, this, eJ.a(16));
+      image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.F, this, eJ.ExceptionInVPackage(16));
       this.e = new ImageIcon(image);
-      image = cO.a().a(cO.G, this, eJ.a(16));
+      image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.G, this, eJ.ExceptionInVPackage(16));
       this.f = new ImageIcon(image);
-    } catch (a a) {
-      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(aj.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(0, 1));
@@ -73,7 +73,7 @@ public class bE extends JDialog {
     } 
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout(2));
-    if (J.a()) {
+    if (J.ExceptionInVPackage()) {
       jPanel3.add(this.g);
       jPanel3.add(this.h);
     } else {
@@ -85,28 +85,28 @@ public class bE extends JDialog {
     jPanel1.add("South", jPanel3);
   }
   
-  private void a() {
+  private void ExceptionInVPackage() {
     ArrayList<File> arrayList = new ArrayList();
     for (bI bI : this.j) {
-      if (bI.a())
+      if (bI.ExceptionInVPackage())
         arrayList.add(bI.b()); 
     } 
-    a(arrayList);
+    ExceptionInVPackage(arrayList);
     dispose();
   }
   
   private void b() {
-    a(new ArrayList());
+    ExceptionInVPackage(new ArrayList());
     dispose();
   }
   
-  public void a(bH parambH) {
+  public void ExceptionInVPackage(bH parambH) {
     this.i.add(parambH);
   }
   
-  private void a(List paramList) {
+  private void ExceptionInVPackage(List paramList) {
     for (bH bH : this.i)
-      bH.a(paramList); 
+      bH.ExceptionInVPackage(paramList); 
   }
 }
 

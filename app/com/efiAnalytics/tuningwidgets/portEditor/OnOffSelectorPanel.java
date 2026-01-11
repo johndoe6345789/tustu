@@ -4,9 +4,9 @@ import G.R;
 import G.aM;
 import G.aN;
 import G.aR;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class OnOffSelectorPanel extends JPanel implements bc {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   aM b = null;
   
@@ -27,7 +27,7 @@ public class OnOffSelectorPanel extends JPanel implements bc {
   JComboBox e = new JComboBox();
   
   public OnOffSelectorPanel(R paramR, String paramString1, String paramString2, boolean paramBoolean) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.b = paramR.c(paramString1);
     if (paramBoolean) {
       setLayout(new GridLayout(1, 0));
@@ -40,48 +40,48 @@ public class OnOffSelectorPanel extends JPanel implements bc {
     this.e.addItem("Off");
     this.e.addActionListener(new t(this));
     this.c = new u(this);
-    aR aR = aR.a();
+    aR aR = aR.ExceptionInVPackage();
     try {
-      aR.a(paramR.c(), this.b.aL(), this.c);
-    } catch (a a) {
-      D.a("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)a, this);
+      aR.ExceptionInVPackage(paramR.c(), this.b.aL(), this.c);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
     add(this.e);
-    a();
+    ExceptionInVPackage();
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
-      int i = (int)this.b.i(this.a.h())[this.d][0];
+      int i = (int)this.b.i(this.ExceptionInVPackage.h())[this.d][0];
       if (i == 0) {
         this.e.setSelectedItem("Off");
       } else {
         this.e.setSelectedItem("On");
       } 
-    } catch (g g) {
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
     } 
   }
   
-  private void a(String paramString) {
+  private void ExceptionInVPackage(String paramString) {
     if (paramString.equals("On")) {
-      a(1);
+      ExceptionInVPackage(1);
     } else {
-      a(0);
+      ExceptionInVPackage(0);
     } 
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     if (!this.e.getSelectedItem().equals("" + paramInt))
       this.e.setSelectedItem("" + paramInt); 
     try {
-      double[][] arrayOfDouble = this.b.i(this.a.h());
+      double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
       arrayOfDouble[this.d][0] = paramInt;
-      this.b.a(this.a.h(), arrayOfDouble);
-    } catch (j j) {
-      D.a("Error updating Bianary Value to: " + paramInt + ", checking range for all " + this.b.aL());
+      this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      D.ExceptionInVPackage("Error updating Bianary Value to: " + paramInt + ", checking range for all " + this.b.aL());
       try {
-        double[][] arrayOfDouble = this.b.i(this.a.h());
+        double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
         for (byte b = 0; b < arrayOfDouble.length; b++) {
           if (arrayOfDouble[b][0] > this.b.s()) {
             D.d(this.b.aL() + " value at " + b + " out of bounds, setting to max: " + this.b.s());
@@ -91,30 +91,30 @@ public class OnOffSelectorPanel extends JPanel implements bc {
             arrayOfDouble[b][0] = this.b.r();
           } 
         } 
-        this.b.a(this.a.h(), arrayOfDouble);
-      } catch (g g) {
-        D.a("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)g, this);
-      } catch (j j1) {
-        D.a("Value Out of Bounds, Failed to set Value for " + this.b.aL() + ", index = " + this.d + ", ex message: " + j.getMessage());
+        this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Failed to set Value for " + this.b.aL() + ", index = " + this.d, (Exception)ExceptionPrintstacktrace, this);
+      } catch (ExceptionExtensionGetmessage j1) {
+        D.ExceptionInVPackage("Value Out of Bounds, Failed to set Value for " + this.b.aL() + ", index = " + this.d + ", ex message: " + ExceptionExtensionGetmessage.getMessage());
       } 
-    } catch (g g) {
-      D.a("Error updating Bianary Value to: " + paramInt);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Error updating Bianary Value to: " + paramInt);
     } 
   }
   
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
-    bV.a(this, paramBoolean);
+    bV.ExceptionInVPackage(this, paramBoolean);
   }
   
   public void b(int paramInt) {
     this.d = paramInt;
-    a();
+    ExceptionInVPackage();
   }
   
   public void close() {
-    aR aR = aR.a();
-    aR.a(this.c);
+    aR aR = aR.ExceptionInVPackage();
+    aR.ExceptionInVPackage(this.c);
   }
 }
 

@@ -3,7 +3,7 @@ package aP;
 import G.aG;
 import G.bT;
 import G.do;
-import s.g;
+import s.SComponentGolf;
 
 public class bV implements aG, do {
   private static bV a = null;
@@ -19,7 +19,7 @@ public class bV implements aG, do {
   public void b() {}
   
   public void c() {
-    f.a().e(g.b("Reading Controller Settings"));
+    f.a().e(SComponentGolf.b("Reading Controller Settings"));
   }
   
   public void a(String paramString, double paramDouble) {

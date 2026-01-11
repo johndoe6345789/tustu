@@ -6,7 +6,7 @@ import bH.S;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
-import i.c;
+import i.IInterfaceCharlie;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -20,14 +20,14 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import s.g;
+import s.SComponentGolf;
 
 public class CurveFitControlPanel extends JPanel {
   JComboBox a = new JComboBox();
   
   JComboBox b = new JComboBox();
   
-  JButton c;
+  JButton IInterfaceCharlie;
   
   JButton d;
   
@@ -35,7 +35,7 @@ public class CurveFitControlPanel extends JPanel {
   
   boolean f = false;
   
-  private String g = "";
+  private String SComponentGolf = "";
   
   public a() {
     setLayout(new BorderLayout());
@@ -47,17 +47,17 @@ public class CurveFitControlPanel extends JPanel {
     try {
       Image image = cO.a().a(cO.S, jPanel2, 16);
       ImageIcon imageIcon = new ImageIcon(image);
-      this.c = new JButton(null, imageIcon);
-      this.c.setToolTipText(g.b("Fit Curve to data"));
-      this.c.addActionListener(new b(this));
+      this.IInterfaceCharlie = new JButton(null, imageIcon);
+      this.IInterfaceCharlie.setToolTipText(SComponentGolf.b("Fit Curve to data"));
+      this.IInterfaceCharlie.addActionListener(new b(this));
       Dimension dimension = eJ.a(20, 20);
-      this.c.setPreferredSize(dimension);
-      jPanel2.add(this.c);
+      this.IInterfaceCharlie.setPreferredSize(dimension);
+      jPanel2.add(this.IInterfaceCharlie);
       image = cO.a().a(cO.R, jPanel2, 16);
       imageIcon = new ImageIcon(image);
       this.d = new JButton(null, imageIcon);
-      this.d.setToolTipText(g.b("Add / Edit Data Filter Expression"));
-      this.d.addActionListener(new c(this));
+      this.d.setToolTipText(SComponentGolf.b("Add / Edit Data Filter Expression"));
+      this.d.addActionListener(new IInterfaceCharlie(this));
       this.d.setPreferredSize(dimension);
       jPanel2.add(this.d);
     } catch (V.a a1) {
@@ -66,7 +66,7 @@ public class CurveFitControlPanel extends JPanel {
     add("West", jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
-    jPanel3.add("Center", new JLabel(g.b("X Axis Field:")));
+    jPanel3.add("Center", new JLabel(SComponentGolf.b("X Axis Field:")));
     jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout(1));
     jPanel2.add(this.a);
@@ -74,7 +74,7 @@ public class CurveFitControlPanel extends JPanel {
     jPanel1.add(jPanel3);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout());
-    jPanel4.add("Center", new JLabel(g.b("Y Axis Field:")));
+    jPanel4.add("Center", new JLabel(SComponentGolf.b("Y Axis Field:")));
     jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout(1));
     jPanel2.add(this.b);
@@ -87,10 +87,10 @@ public class CurveFitControlPanel extends JPanel {
   }
   
   private void b() {
-    this.c.setEnabled((this.a.getSelectedItem() != null && !this.a.getSelectedItem().equals("") && this.b.getSelectedItem() != null && !this.b.getSelectedItem().equals("")));
+    this.IInterfaceCharlie.setEnabled((this.a.getSelectedItem() != null && !this.a.getSelectedItem().equals("") && this.b.getSelectedItem() != null && !this.b.getSelectedItem().equals("")));
   }
   
-  private void c() {
+  private void IInterfaceCharlie() {
     for (f f : this.e)
       f.a(); 
   }
@@ -98,19 +98,19 @@ public class CurveFitControlPanel extends JPanel {
   private void d() {
     String str;
     do {
-      String str1 = g.b("Filter Expression") + ": ";
-      str = JOptionPane.showInputDialog(this, str1, this.g);
+      String str1 = SComponentGolf.b("Filter Expression") + ": ";
+      str = JOptionPane.showInputDialog(this, str1, this.SComponentGolf);
     } while (str != null && !d(str));
     if (str != null) {
-      this.g = str;
+      this.SComponentGolf = str;
     } else {
-      d(this.g);
+      d(this.SComponentGolf);
     } 
   }
   
   private boolean d(String paramString) {
     for (f f : this.e) {
-      if (!f.c(paramString))
+      if (!f.IInterfaceCharlie(paramString))
         return false; 
     } 
     return true;
@@ -122,7 +122,7 @@ public class CurveFitControlPanel extends JPanel {
     this.f = true;
     this.a.removeAllItems();
     this.b.removeAllItems();
-    n n = c.a().e();
+    n n = IInterfaceCharlie.a().e();
     if (n != null) {
       ArrayList<String> arrayList = new ArrayList();
       for (j j : n)
@@ -160,8 +160,8 @@ public class CurveFitControlPanel extends JPanel {
       f.b(paramString); 
   }
   
-  public void c(String paramString) {
-    this.g = paramString;
+  public void IInterfaceCharlie(String paramString) {
+    this.SComponentGolf = paramString;
   }
   
   public Dimension getPreferredSize() {

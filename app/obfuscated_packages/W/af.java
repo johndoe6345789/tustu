@@ -1,6 +1,6 @@
 package W;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import bH.c;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class af {
-  public static Date a(File paramFile) {
+  public static Date ExceptionInVPackage(File paramFile) {
     byte b = 26;
     FileInputStream fileInputStream = null;
     try {
@@ -21,12 +21,12 @@ public class af {
       for (i = 0; i < arrayOfInt.length; i++)
         arrayOfInt[i] = fileInputStream.read(); 
       i = c.b(arrayOfInt, b, 4, true, true);
-      return a(i);
+      return ExceptionInVPackage(i);
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new a("File not found:\n" + paramFile.getAbsolutePath());
+      throw new ExceptionInVPackage("File not found:\n" + paramFile.getAbsolutePath());
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Failed to read header from file:\n" + paramFile.getAbsolutePath());
+      throw new ExceptionInVPackage("Failed to read header from file:\n" + paramFile.getAbsolutePath());
     } finally {
       try {
         fileInputStream.close();
@@ -36,13 +36,13 @@ public class af {
     } 
   }
   
-  public static Date a(int paramInt) {
-    int i = c.a(paramInt, 25, 31) + 1980;
-    int j = c.a(paramInt, 21, 24) - 1;
-    int k = c.a(paramInt, 16, 20);
-    int m = c.a(paramInt, 11, 15);
-    int n = c.a(paramInt, 5, 10);
-    int i1 = c.a(paramInt, 0, 4) * 2;
+  public static Date ExceptionInVPackage(int paramInt) {
+    int i = c.ExceptionInVPackage(paramInt, 25, 31) + 1980;
+    int j = c.ExceptionInVPackage(paramInt, 21, 24) - 1;
+    int k = c.ExceptionInVPackage(paramInt, 16, 20);
+    int m = c.ExceptionInVPackage(paramInt, 11, 15);
+    int n = c.ExceptionInVPackage(paramInt, 5, 10);
+    int i1 = c.ExceptionInVPackage(paramInt, 0, 4) * 2;
     Calendar calendar = Calendar.getInstance();
     calendar.set(i, j, k, m, n, i1);
     return calendar.getTime();

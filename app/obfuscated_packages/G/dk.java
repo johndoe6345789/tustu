@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.I;
 import bH.X;
 
@@ -13,14 +13,14 @@ public class dk {
     if (I.a(paramString)) {
       double d;
       if (paramString.startsWith("0x")) {
-        d = X.g(paramString);
+        d = X.ExceptionPrintstacktrace(paramString);
       } else {
         d = Double.parseDouble(paramString);
       } 
       try {
         return new B(d);
       } catch (NumberFormatException numberFormatException) {
-        throw new g("Non-Numeric Value.");
+        throw new ExceptionPrintstacktrace("Non-Numeric Value.");
       } 
     } 
     paramString = X.b(paramString, "{", "");

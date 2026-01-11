@@ -1,14 +1,14 @@
 package ao;
 
-import V.a;
-import az.a;
+import V.ExceptionInVPackage;
+import az.ExceptionInVPackage;
 import bH.D;
-import h.i;
+import h.IOProperties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ei extends Thread {
-  ei(eg parameg, String paramString1, String paramString2, String paramString3, String paramString4, a parama) {}
+  ei(eg parameg, String paramString1, String paramString2, String paramString3, String paramString4, ExceptionInVPackage parama) {}
   
   public void run() {
     try {
@@ -17,21 +17,21 @@ class ei extends Thread {
       Logger.getLogger(cd.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
     try {
-      i.d("firstName", this.a);
-      i.d("lastName", this.b);
-      i.d("registrationKeyV2", this.c);
-      i.d("userEmail", this.d);
-      i.c("quadraticInterpolation", "false");
-      i.c("valid", "false");
-      if (cd.e(this.f.a)) {
+      IOProperties.d("firstName", this.ExceptionInVPackage);
+      IOProperties.d("lastName", this.b);
+      IOProperties.d("registrationKeyV2", this.c);
+      IOProperties.d("userEmail", this.d);
+      IOProperties.c("quadraticInterpolation", "false");
+      IOProperties.c("valid", "false");
+      if (cd.e(this.f.ExceptionInVPackage)) {
         try {
-          i.h();
-          i.g();
-        } catch (a a1) {
-          D.a("Failed to save Registration Information.", (Exception)a1, bq.a().b());
+          IOProperties.h();
+          IOProperties.g();
+        } catch (ExceptionInVPackage a1) {
+          D.ExceptionInVPackage("Failed to save Registration Information.", (Exception)a1, bq.ExceptionInVPackage().b());
           return;
         } 
-        cd.f(this.f.a);
+        cd.f(this.f.ExceptionInVPackage);
       } 
     } finally {
       this.e.setVisible(false);

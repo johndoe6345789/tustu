@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class TimeNowFunction extends ac {
@@ -34,11 +34,11 @@ public class TimeNowFunction extends ac {
     a = paramLong;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     return b() ? ((a() - a) / 1000.0D) : ((System.currentTimeMillis() - a) / 1000.0D);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

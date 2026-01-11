@@ -1,8 +1,8 @@
 package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
 import G.T;
-import V.a;
-import bI.a;
+import V.ExceptionInVPackage;
+import bI.ExceptionInVPackage;
 import com.efiAnalytics.apps.ts.dashboard.Z;
 import com.efiAnalytics.apps.ts.dashboard.ab;
 import com.efiAnalytics.apps.ts.dashboard.u;
@@ -14,68 +14,68 @@ import java.awt.Component;
 import java.awt.LayoutManager;
 import java.io.File;
 import java.io.IOException;
-import r.j;
-import v.c;
+import r.ThreadedFile;
+import v.IOInVPackage;
 
 public class TuneViewGaugeCluster extends TuneViewComponent {
-  x c;
+  x IOInVPackage;
   
   public TuneViewGaugeCluster() {
     setLayout((LayoutManager)new h(this));
-    if (T.a().c() != null) {
-      this.c = new x(T.a().c());
+    if (T.ExceptionInVPackage().IOInVPackage() != null) {
+      this.IOInVPackage = new x(T.ExceptionInVPackage().IOInVPackage());
     } else {
-      this.c = new x();
+      this.IOInVPackage = new x();
     } 
-    ab.a(this.c);
-    add((Component)this.c, "Center");
+    ab.ExceptionInVPackage(this.IOInVPackage);
+    add((Component)this.IOInVPackage, "Center");
   }
   
   public void initializeComponents() {
-    this.c.a(T.a().c());
-    this.c.b();
+    this.IOInVPackage.ExceptionInVPackage(T.ExceptionInVPackage().IOInVPackage());
+    this.IOInVPackage.b();
   }
   
   public String getEncodedDashboard() {
-    Z z = this.c.i();
-    c c = new c(j.G());
+    Z z = this.IOInVPackage.i();
+    IOInVPackage IOInVPackage = new IOInVPackage(ThreadedFile.G());
     String str1 = (Math.random() * 2.0E9D) + "";
     String str2 = "";
     try {
       File file = File.createTempFile(str1, "tempDash");
-      c.a(file.getAbsolutePath(), z);
-      str2 = a.b(file.getAbsolutePath());
+      IOInVPackage.ExceptionInVPackage(file.getAbsolutePath(), z);
+      str2 = ExceptionInVPackage.b(file.getAbsolutePath());
       file.delete();
     } catch (IOException iOException) {
       iOException.printStackTrace();
       bV.d("Unable to write temporary file for Saving TuningView Dashboard.\n" + iOException.getMessage(), (Component)this);
-    } catch (a a) {
-      a.printStackTrace();
-      bV.d("Error Saving TuningView Dashboard.\n" + a.getMessage(), (Component)this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      ExceptionInVPackage.printStackTrace();
+      bV.d("Error Saving TuningView Dashboard.\n" + ExceptionInVPackage.getMessage(), (Component)this);
     } 
     return str2;
   }
   
   public void setEncodedDashboard(String paramString) {
-    c c = new c(j.G());
+    IOInVPackage IOInVPackage = new IOInVPackage(ThreadedFile.G());
     String str = (Math.random() * 2.0E9D) + "";
     try {
       File file = File.createTempFile(str, "tempDash");
-      a.a(paramString, file.getAbsolutePath());
-      Z z = c.a(file.getAbsolutePath());
-      this.c.a(z);
+      ExceptionInVPackage.ExceptionInVPackage(paramString, file.getAbsolutePath());
+      Z z = IOInVPackage.ExceptionInVPackage(file.getAbsolutePath());
+      this.IOInVPackage.ExceptionInVPackage(z);
       file.delete();
     } catch (IOException iOException) {
       iOException.printStackTrace();
       bV.d("Unable to write temporary file for Loading TuningView Dashboard.\n" + iOException.getMessage(), (Component)this);
-    } catch (a a) {
-      a.printStackTrace();
-      bV.d("Error Loading a TuningView Dashboard\n" + a.getMessage(), (Component)this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      ExceptionInVPackage.printStackTrace();
+      bV.d("Error Loading ExceptionInVPackage TuningView Dashboard\n" + ExceptionInVPackage.getMessage(), (Component)this);
     } 
   }
   
   public void close() {
-    this.c.close();
+    this.IOInVPackage.close();
   }
   
   public boolean isShieldedDuringEdit() {
@@ -83,19 +83,19 @@ public class TuneViewGaugeCluster extends TuneViewComponent {
   }
   
   public boolean isDirty() {
-    return !this.c.ae();
+    return !this.IOInVPackage.ae();
   }
   
   public void setClean(boolean paramBoolean) {
-    this.c.k(paramBoolean);
+    this.IOInVPackage.k(paramBoolean);
   }
   
   public void addFullScreenRequestListener(u paramu) {
-    this.c.a(paramu);
+    this.IOInVPackage.ExceptionInVPackage(paramu);
   }
   
   public void removeFullScreenRequestListener(u paramu) {
-    this.c.b(paramu);
+    this.IOInVPackage.b(paramu);
   }
 }
 

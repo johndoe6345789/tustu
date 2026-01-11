@@ -1,6 +1,6 @@
 package G;
 
-import J.h;
+import J.Abstract;
 import java.io.Serializable;
 
 public interface cR extends Serializable {
@@ -22,7 +22,7 @@ public interface cR extends Serializable {
   
   int a(byte[] paramArrayOfbyte, int paramInt);
   
-  h d();
+  Abstract d();
   
   boolean a(int paramInt);
   

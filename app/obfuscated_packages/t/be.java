@@ -10,7 +10,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 public class be extends a implements f {
   JTextField a;
@@ -20,20 +20,20 @@ public class be extends a implements f {
   JPanel c = new JPanel();
   
   public be(Window paramWindow, ai paramai) {
-    super(paramWindow, g.b("Indicator Text"));
+    super(paramWindow, SComponentGolf.b("Indicator Text"));
     a(paramai);
     bh bh = new bh(this);
     this.c.setLayout(new GridLayout(0, 2, 1, 3));
-    String str = g.b("Indicator Text");
+    String str = SComponentGolf.b("Indicator Text");
     this.c.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), str));
-    JLabel jLabel = new JLabel(g.b("On Text"));
+    JLabel jLabel = new JLabel(SComponentGolf.b("On Text"));
     jLabel.setHorizontalAlignment(4);
     this.c.add(jLabel);
     this.a = new JTextField("", 10);
     this.a.addFocusListener(bh);
     this.a.addKeyListener(new bf(this));
     this.c.add(this.a);
-    jLabel = new JLabel(g.b("Off Text"));
+    jLabel = new JLabel(SComponentGolf.b("Off Text"));
     jLabel.setHorizontalAlignment(4);
     this.c.add(jLabel);
     this.b = new JTextField("", 10);

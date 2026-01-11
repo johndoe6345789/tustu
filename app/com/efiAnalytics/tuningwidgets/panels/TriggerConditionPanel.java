@@ -16,27 +16,27 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
-import r.i;
-import s.g;
+import r.RInterfaceIndia;
+import s.SComponentGolf;
 
 class TriggerConditionPanel extends JPanel {
-  JRadioButton a = new JRadioButton(g.b("Manual"));
+  JRadioButton a = new JRadioButton(SComponentGolf.b("Manual"));
   
-  JRadioButton b = new JRadioButton(g.b("Simple"));
+  JRadioButton b = new JRadioButton(SComponentGolf.b("Simple"));
   
-  JRadioButton c = new JRadioButton(g.b("Expression"));
+  JRadioButton c = new JRadioButton(SComponentGolf.b("Expression"));
   
-  JRadioButton d = new JRadioButton(g.b("Log For"));
+  JRadioButton d = new JRadioButton(SComponentGolf.b("Log For"));
   
   JSlider e = null;
   
   JComboBox f = new JComboBox();
   
-  JTextField g;
+  JTextField SComponentGolf;
   
   do h;
   
-  V i;
+  V RInterfaceIndia;
   
   JPanel j;
   
@@ -48,9 +48,9 @@ class TriggerConditionPanel extends JPanel {
   
   boolean n;
   
-  public k(g paramg, R paramR, boolean paramBoolean1, boolean paramBoolean2) {
+  public k(SComponentGolf paramg, R paramR, boolean paramBoolean1, boolean paramBoolean2) {
     ButtonGroup buttonGroup = new ButtonGroup();
-    this.n = i.a().a("sa0-0o0os-0o-0DS");
+    this.n = RInterfaceIndia.a().a("sa0-0o0os-0o-0DS");
     l l = new l(this, paramg);
     if (paramBoolean2) {
       buttonGroup.add(this.a);
@@ -72,12 +72,12 @@ class TriggerConditionPanel extends JPanel {
     this.j = a(this.b);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(3, 3));
-    this.i = new V(paramR);
+    this.RInterfaceIndia = new V(paramR);
     if (this.n) {
-      this.i.removeAllItems();
-      this.i.a("TPS_Pct");
+      this.RInterfaceIndia.removeAllItems();
+      this.RInterfaceIndia.a("TPS_Pct");
     } 
-    jPanel.add("West", (Component)this.i);
+    jPanel.add("West", (Component)this.RInterfaceIndia);
     this.f.setEditable(false);
     this.f.addItem(">");
     this.f.addItem("=");
@@ -89,14 +89,14 @@ class TriggerConditionPanel extends JPanel {
     if (paramBoolean2)
       add(this.j); 
     this.l = a(this.c);
-    this.g = new JTextField("", 25);
-    this.g.setBorder(BorderFactory.createLoweredBevelBorder());
-    this.l.add("Center", this.g);
+    this.SComponentGolf = new JTextField("", 25);
+    this.SComponentGolf.setBorder(BorderFactory.createLoweredBevelBorder());
+    this.l.add("Center", this.SComponentGolf);
     if (!this.n)
       add(this.l); 
     if (paramBoolean1) {
       this.m = a(this.d);
-      if (i.a().a("sa0-0o0os-0o-0DS")) {
+      if (RInterfaceIndia.a().a("sa0-0o0os-0o-0DS")) {
         this.e = new JSlider(0, 0, 30, 30);
         this.e.setMajorTickSpacing(10);
         this.e.setMinorTickSpacing(1);
@@ -119,20 +119,20 @@ class TriggerConditionPanel extends JPanel {
   
   public void a(String paramString) {
     if (paramString == null || paramString.trim().equals(""))
-      paramString = g.q; 
-    if (paramString.equals(g.q)) {
+      paramString = SComponentGolf.q; 
+    if (paramString.equals(SComponentGolf.q)) {
       this.a.setSelected(true);
     } else {
-      this.g.setText(paramString);
+      this.SComponentGolf.setText(paramString);
       String[] arrayOfString = paramString.split(" ");
       if (arrayOfString.length == 3 && (arrayOfString[1].equals("<") || arrayOfString[1].equals("=") || arrayOfString[1].equals(">")) && I.a(arrayOfString[2])) {
         String str = arrayOfString[0].trim();
         if (this.e != null && str.equals("AppEvent.dataLogTime")) {
-          int i = (int)Double.parseDouble(arrayOfString[2]);
-          this.e.setValue(i);
+          int RInterfaceIndia = (int)Double.parseDouble(arrayOfString[2]);
+          this.e.setValue(RInterfaceIndia);
           this.d.setSelected(true);
         } else {
-          this.i.setSelectedItem(str);
+          this.RInterfaceIndia.setSelectedItem(str);
           this.f.setSelectedItem(arrayOfString[1].trim());
           this.h.setText(arrayOfString[2].trim());
           this.b.setSelected(true);
@@ -146,7 +146,7 @@ class TriggerConditionPanel extends JPanel {
   
   public String a() {
     if (this.a.isSelected())
-      return g.q; 
+      return SComponentGolf.q; 
     if (this.d != null && this.d.isSelected()) {
       StringBuilder stringBuilder = new StringBuilder();
       stringBuilder.append("AppEvent.dataLogTime").append(" > ").append(this.e.getValue());
@@ -154,10 +154,10 @@ class TriggerConditionPanel extends JPanel {
     } 
     if (this.b.isSelected()) {
       StringBuilder stringBuilder = new StringBuilder();
-      stringBuilder.append(this.i.getSelectedItem().toString()).append(" ").append(this.f.getSelectedItem().toString()).append(" ").append(this.h.getText());
+      stringBuilder.append(this.RInterfaceIndia.getSelectedItem().toString()).append(" ").append(this.f.getSelectedItem().toString()).append(" ").append(this.h.getText());
       return stringBuilder.toString();
     } 
-    return this.g.getText();
+    return this.SComponentGolf.getText();
   }
   
   public void b() {

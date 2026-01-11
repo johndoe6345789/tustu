@@ -1,0 +1,13 @@
+package d;
+
+import java.util.Properties;
+
+public interface DInterfaceLima {
+  void c(Properties paramProperties);
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/d/l.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

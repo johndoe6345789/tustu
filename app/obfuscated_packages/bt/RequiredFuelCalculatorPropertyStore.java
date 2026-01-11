@@ -1,36 +1,36 @@
 package bt;
 
 import G.R;
-import V.a;
-import aE.a;
-import aE.g;
+import V.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
+import aE.PropertiesExtensionInAePackage;
 import com.efiAnalytics.ui.et;
-import r.a;
+import r.ExceptionInVPackage;
 
 public class RequiredFuelCalculatorPropertyStore implements et {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   public E(R paramR) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     try {
-      g g = a.A().i();
+      PropertiesExtensionInAePackage PropertiesExtensionInAePackage = ExceptionInVPackage.A().i();
       if (paramString1.equals("displacement")) {
-        g.setProperty("engineDisplacement", paramString2);
+        PropertiesExtensionInAePackage.setProperty("engineDisplacement", paramString2);
       } else if (paramString1.equals("injectorFlow")) {
-        g.setProperty("injectorSize", paramString2);
+        PropertiesExtensionInAePackage.setProperty("injectorSize", paramString2);
       } else {
-        a.a().b("reqFuelCalc" + paramString1, paramString2);
+        ExceptionInVPackage.ExceptionInVPackage().b("reqFuelCalc" + paramString1, paramString2);
       } 
-    } catch (a a) {
-      a.printStackTrace();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      ExceptionInVPackage.printStackTrace();
     } 
   }
   
-  public String a(String paramString) {
-    return paramString.equals("displacement") ? c("engineDisplacement", "350") : (paramString.equals("injectorFlow") ? c("injectorSize", "30") : a.a().c("reqFuelCalc" + paramString, ""));
+  public String ExceptionInVPackage(String paramString) {
+    return paramString.equals("displacement") ? c("engineDisplacement", "350") : (paramString.equals("injectorFlow") ? c("injectorSize", "30") : ExceptionInVPackage.ExceptionInVPackage().c("reqFuelCalc" + paramString, ""));
   }
   
   public String b(String paramString1, String paramString2) {
@@ -39,13 +39,13 @@ public class RequiredFuelCalculatorPropertyStore implements et {
   
   private String c(String paramString1, String paramString2) {
     try {
-      g g = a.A().i();
-      String str = g.getProperty(paramString1, "");
+      PropertiesExtensionInAePackage PropertiesExtensionInAePackage = ExceptionInVPackage.A().i();
+      String str = PropertiesExtensionInAePackage.getProperty(paramString1, "");
       if (str.equals(""))
-        str = a.a().c("reqFuelCalc" + paramString1, paramString2); 
+        str = ExceptionInVPackage.ExceptionInVPackage().c("reqFuelCalc" + paramString1, paramString2); 
       return str;
-    } catch (a a) {
-      a.printStackTrace();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      ExceptionInVPackage.printStackTrace();
       return paramString2;
     } 
   }

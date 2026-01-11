@@ -2,17 +2,17 @@ package aP;
 
 import java.io.File;
 import java.io.FileFilter;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class iq implements FileFilter {
-  String a = "";
+  String IOPropertiesUsingFile = "";
   
   iq(String paramString) {
-    this.a = paramString;
+    this.IOPropertiesUsingFile = paramString;
   }
   
   public boolean accept(File paramFile) {
-    return (paramFile.isFile() && paramFile.getName().startsWith(this.a) && paramFile.getName().toLowerCase().endsWith("." + a.cw.toLowerCase()));
+    return (paramFile.isFile() && paramFile.getName().startsWith(this.IOPropertiesUsingFile) && paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()));
   }
 }
 

@@ -3,7 +3,7 @@ package ao;
 import com.efiAnalytics.ui.bq;
 import com.efiAnalytics.ui.br;
 import com.efiAnalytics.ui.eJ;
-import h.b;
+import h.ClassTypeInHPackage;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -21,13 +21,13 @@ public class bo extends JPanel implements k {
   
   Font a = new Font("SansSerif", 1, eJ.a(20));
   
-  int b = eJ.a(30);
+  int ClassTypeInHPackage = eJ.a(30);
   
   int c = eJ.a(15);
   
   public bo() {
     setLayout(new GridLayout(0, 1, 1, 1));
-    if (b.a().a("fieldSmoothing"))
+    if (ClassTypeInHPackage.a().a("fieldSmoothing"))
       addMouseListener(new bp(this)); 
   }
   
@@ -38,7 +38,7 @@ public class bo extends JPanel implements k {
   
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
-    if (b.a().a("fieldSmoothing")) {
+    if (ClassTypeInHPackage.a().a("fieldSmoothing")) {
       paramGraphics.setColor(UIManager.getColor("Label.foreground"));
       paramGraphics.setFont(this.a);
       paramGraphics.drawString("...", getWidth() - eJ.a(25), eJ.a(13));
@@ -56,15 +56,15 @@ public class bo extends JPanel implements k {
   
   public void repaint() {
     super.repaint();
-    for (byte b = 0; b < getComponentCount(); b++)
-      getComponent(b).repaint(); 
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < getComponentCount(); ClassTypeInHPackage++)
+      getComponent(ClassTypeInHPackage).repaint(); 
   }
   
   private void a(int paramInt1, int paramInt2) {
     ArrayList<JComboBox> arrayList = new ArrayList();
     ArrayList<String> arrayList1 = new ArrayList();
-    for (byte b = 0; b < getComponentCount(); b++) {
-      JComboBox jComboBox = a(getComponent(b));
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < getComponentCount(); ClassTypeInHPackage++) {
+      JComboBox jComboBox = a(getComponent(ClassTypeInHPackage));
       if (jComboBox != null) {
         arrayList1.add("" + jComboBox.getSelectedItem());
         arrayList.add(jComboBox);
@@ -81,9 +81,9 @@ public class bo extends JPanel implements k {
       return (JComboBox)paramComponent; 
     if (paramComponent instanceof Container) {
       Container container = (Container)paramComponent;
-      for (byte b = 0; b < container.getComponentCount(); b++) {
-        if (container.getComponent(b) instanceof JComboBox)
-          return (JComboBox)container.getComponent(b); 
+      for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < container.getComponentCount(); ClassTypeInHPackage++) {
+        if (container.getComponent(ClassTypeInHPackage) instanceof JComboBox)
+          return (JComboBox)container.getComponent(ClassTypeInHPackage); 
       } 
     } 
     return null;

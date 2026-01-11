@@ -1,8 +1,8 @@
 package ao;
 
-import aw.b;
+import aw.AwInterfaceBravo;
 
-class gl implements b {
+class gl implements AwInterfaceBravo {
   gl(fK paramfK) {}
   
   public void a(double paramDouble1, double paramDouble2) {
@@ -15,12 +15,12 @@ class gl implements b {
     this.a.h();
   }
   
-  public void b(double paramDouble1, double paramDouble2) {
+  public void AwInterfaceBravo(double paramDouble1, double paramDouble2) {
     this.a.y.setVisible((!this.a.q.a() || !this.a.q.d()));
     this.a.h();
   }
   
-  public void b(boolean paramBoolean) {
+  public void AwInterfaceBravo(boolean paramBoolean) {
     this.a.y.setVisible((!this.a.q.a() || !this.a.q.d()));
     this.a.h();
   }

@@ -5,7 +5,7 @@ import G.aM;
 import G.be;
 import G.cq;
 import G.cu;
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.eJ;
@@ -22,7 +22,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
 public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelListener {
-  R a = null;
+  R ExceptionInVPackage = null;
   
   aM b = null;
   
@@ -43,7 +43,7 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
   s j = null;
   
   public aP(R paramR, s params, String paramString) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.j = params;
     setLayout(new BorderLayout());
     this.f = new w();
@@ -52,19 +52,19 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
     if (paramR != null && paramString != null && !paramString.equals("")) {
       be = (be)paramR.e().c(paramString);
       this.b = paramR.c(be.b());
-      this.c = paramR.c(be.a());
+      this.c = paramR.c(be.ExceptionInVPackage());
       this.h = be.f();
       this.i = be.d();
     } 
     params.addTableModelListener(this);
-    int i = fh.a(params);
-    this.f.h().a(i);
+    int i = fh.ExceptionInVPackage(params);
+    this.f.h().ExceptionInVPackage(i);
     if (this.b != null)
       this.f.b(this.b.v()); 
-    this.f.a(params);
-    int j = eJ.a();
+    this.f.ExceptionInVPackage(params);
+    int j = eJ.ExceptionInVPackage();
     this.f.c(j);
-    this.f.a(false);
+    this.f.ExceptionInVPackage(false);
     setBorder(BorderFactory.createTitledBorder(""));
     add("Center", (Component)this.f);
     this.g = new JLabel();
@@ -92,10 +92,10 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
     } 
     if (paramR != null)
       try {
-        cu.a().a(paramR.c(), be.f(), this);
-        cu.a().a(paramR.c(), be.d(), this);
-      } catch (a a) {
-        D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a, this);
+        cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), be.f(), this);
+        cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), be.d(), this);
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
   }
   
@@ -103,14 +103,14 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
   
   public void close() {
     this.j.removeTableModelListener(this);
-    cu.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (paramString.equals(this.h)) {
       this.e = paramDouble;
     } else if (paramString.equals(this.i) && this.e != Double.NaN) {
-      this.f.h().a(this.e + "", paramDouble + "");
+      this.f.h().ExceptionInVPackage(this.e + "", paramDouble + "");
     } 
   }
 }

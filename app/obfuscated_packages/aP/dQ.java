@@ -2,8 +2,8 @@ package aP;
 
 import G.R;
 import G.T;
-import aE.a;
-import bA.c;
+import aE.PropertiesExtension;
+import bA.JCheckBoxMenuItemExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,13 +11,13 @@ class dQ implements ActionListener {
   dQ(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a a = a.A();
-    if (a != null) {
-      c c = (c)paramActionEvent.getSource();
-      a.a(c.getState());
-      R r = T.a().c();
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    if (PropertiesExtension != null) {
+      JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+      PropertiesExtension.PropertiesExtension(JCheckBoxMenuItemExtension.getState());
+      R r = T.PropertiesExtension().JCheckBoxMenuItemExtension();
       if (r != null)
-        r.O().b(c.getState()); 
+        r.O().b(JCheckBoxMenuItemExtension.getState()); 
     } 
   }
 }

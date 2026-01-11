@@ -1,6 +1,6 @@
 package ao;
 
-import at.c;
+import at.IOJMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,7 +8,7 @@ class cz implements ActionListener {
   cz(cd paramcd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    c.a().b();
+    IOJMenu.a().b();
   }
 }
 

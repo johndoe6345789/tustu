@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 import java.util.List;
 
@@ -17,9 +17,9 @@ public abstract class AbstractListFunction extends ac {
   
   public abstract int c();
   
-  public abstract double a(S paramS);
+  public abstract double a(CloneableImplInAxPackage paramS);
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

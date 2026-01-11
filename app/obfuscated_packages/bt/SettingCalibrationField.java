@@ -8,8 +8,8 @@ import G.ah;
 import G.bk;
 import G.bq;
 import G.bz;
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import com.efiAnalytics.ui.bc;
 import java.awt.BorderLayout;
 import java.util.Iterator;
@@ -17,7 +17,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class SettingCalibrationField extends aV implements bc {
   JButton a;
@@ -36,7 +36,7 @@ public class SettingCalibrationField extends aV implements bc {
     this.e = paramR;
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    this.a = new JButton(g.b("Set to Current"));
+    this.a = new JButton(ExceptionPrintstacktrace.b("Set to Current"));
     this.a.addActionListener(new J(this));
     jPanel.add("West", this.a);
     bz bz = new bz();
@@ -53,16 +53,16 @@ public class SettingCalibrationField extends aV implements bc {
   }
   
   private void o() {
-    aH aH = this.e.g(this.d.i());
+    aH aH = this.e.ExceptionPrintstacktrace(this.d.i());
     if (aH != null) {
       double d = aH.o();
       aM aM = this.e.c(this.b.b());
       try {
         aM.a(this.e.h(), d);
-      } catch (g g) {
-        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value.", (Throwable)g);
-      } catch (j j) {
-        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value. 2", (Throwable)j);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value.", (Throwable)ExceptionPrintstacktrace);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value. 2", (Throwable)ExceptionExtensionGetmessage);
       } 
     } 
   }
@@ -79,7 +79,7 @@ public class SettingCalibrationField extends aV implements bc {
       if (ah2.i().equals(paramString))
         return ah2; 
     } 
-    for (ac ac : paramR.g()) {
+    for (ac ac : paramR.ExceptionPrintstacktrace()) {
       if (ac.a() != null && ac.a().equals(paramString)) {
         ah ah2 = new ah();
         ah2.a(paramString);
@@ -89,7 +89,7 @@ public class SettingCalibrationField extends aV implements bc {
     } 
     ah ah1 = new ah();
     ah1.a(paramString);
-    aH aH = paramR.g(paramString);
+    aH aH = paramR.ExceptionPrintstacktrace(paramString);
     if (aH != null)
       ah1.f(aH.d()); 
     return ah1;

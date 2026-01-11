@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import W.X;
 import bH.D;
@@ -26,10 +26,10 @@ public class au extends g {
         str1 = l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       if (str1.startsWith("\"Elapsed Time\""))
         str1 = X.b(str1, "\"", ""); 
@@ -50,12 +50,12 @@ public class au extends g {
           if (str2.contains("  "))
             str2 = X.b(str2, "  ", " "); 
           d d = new d();
-          if (d.a().equals("Timestamp (mS)") || d.a().equals("Elapsed Time")) {
-            d.a(3);
-            d.a("Time");
+          if (d.ExceptionInVPackage().equals("Timestamp (mS)") || d.ExceptionInVPackage().equals("Elapsed Time")) {
+            d.ExceptionInVPackage(3);
+            d.ExceptionInVPackage("Time");
             d.b("s");
             str2 = "Time";
-            d.a(0.001F);
+            d.ExceptionInVPackage(0.001F);
           } 
           try {
             if (str2.indexOf("_") > 1) {
@@ -70,9 +70,9 @@ public class au extends g {
           } 
           if (str2.trim().equals("time"))
             str2 = "Time"; 
-          d.a(str2.trim());
-          if (d.a().contains("Latitude") || d.a().contains("Longitude"))
-            d.a(7); 
+          d.ExceptionInVPackage(str2.trim());
+          if (d.ExceptionInVPackage().contains("Latitude") || d.ExceptionInVPackage().contains("Longitude"))
+            d.ExceptionInVPackage(7); 
           this.g.add(d);
           b++;
         } 
@@ -90,20 +90,20 @@ public class au extends g {
       while (stringTokenizer.hasMoreTokens()) {
         String str1 = stringTokenizer.nextToken().trim();
         if (b < this.g.size()) {
-          if (!I.a(str1)) {
+          if (!I.ExceptionInVPackage(str1)) {
             ((d)this.g.get(b++)).b(str1);
             continue;
           } 
-          a(true);
+          ExceptionInVPackage(true);
           break;
         } 
       } 
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     ArrayList<T> arrayList = new ArrayList();

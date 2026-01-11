@@ -6,7 +6,7 @@ import G.cZ;
 import G.cq;
 import G.da;
 import G.db;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter;
 import com.efiAnalytics.apps.ts.dashboard.renderers.RectangleIndicatorPainter;
 import com.efiAnalytics.ui.eJ;
@@ -24,7 +24,7 @@ import java.awt.image.ImageObserver;
 import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class Indicator extends SingleChannelDashComponent implements ImageObserver, Serializable {
   private db i = (db)new c("On");
@@ -65,7 +65,7 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   
   String f = null;
   
-  cq g = null;
+  cq ExceptionPrintstacktrace = null;
   
   aN h = null;
   
@@ -126,9 +126,9 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
       if (this.b != null && str.equals(this.b))
         return this.d; 
       this.b = str;
-      this.d = g.b(str);
+      this.d = ExceptionPrintstacktrace.b(str);
       return this.d;
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       return "Error";
     } 
   }
@@ -136,8 +136,8 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   public void setOnText(String paramString) {
     try {
       this.i = da.a().a(this.a, paramString);
-    } catch (g g) {
-      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     invalidatePainter();
   }
@@ -152,9 +152,9 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
       if (this.c != null && str.equals(this.c))
         return this.f; 
       this.c = str;
-      this.f = g.b(str);
+      this.f = ExceptionPrintstacktrace.b(str);
       return this.f;
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       return "Error";
     } 
   }
@@ -162,8 +162,8 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   public void setOffText(String paramString) {
     try {
       this.j = da.a().a(this.a, paramString);
-    } catch (g g) {
-      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     invalidatePainter();
   }

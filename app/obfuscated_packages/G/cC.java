@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.X;
 import java.io.Serializable;
 
@@ -13,7 +13,7 @@ public class cC implements db, Serializable {
   
   private String f = "";
   
-  private int g = -1;
+  private int ExceptionPrintstacktrace = -1;
   
   cZ c = null;
   
@@ -42,16 +42,16 @@ public class cC implements db, Serializable {
         return this.d; 
     } 
     try {
-      if (this.g >= 0) {
+      if (this.ExceptionPrintstacktrace >= 0) {
         String[] arrayOfString = this.a.c(r.h());
-        return this.e + arrayOfString[this.g] + this.f;
+        return this.e + arrayOfString[this.ExceptionPrintstacktrace] + this.f;
       } 
       String str = this.a.d(r.h());
       if (this.a.i().equals("bits"))
         str = X.i(str); 
       return this.e + str + this.f;
     } catch (Exception exception) {
-      throw new g("Failed to get String value for: " + ((this.a != null) ? this.a.aL() : "NULL") + "\nError: " + exception.getMessage());
+      throw new ExceptionPrintstacktrace("Failed to get String value for: " + ((this.a != null) ? this.a.aL() : "NULL") + "\nError: " + exception.getMessage());
     } 
   }
   
@@ -76,11 +76,11 @@ public class cC implements db, Serializable {
   }
   
   public void a(int paramInt) {
-    this.g = paramInt;
+    this.ExceptionPrintstacktrace = paramInt;
   }
   
   public String toString() {
-    return (this.g >= 0) ? (this.e + "$stringValue( " + this.d + "[" + this.g + "] )" + this.f) : (this.e + "$stringValue( " + this.d + " )" + this.f);
+    return (this.ExceptionPrintstacktrace >= 0) ? (this.e + "$stringValue( " + this.d + "[" + this.ExceptionPrintstacktrace + "] )" + this.f) : (this.e + "$stringValue( " + this.d + " )" + this.f);
   }
 }
 

@@ -1,6 +1,6 @@
 package bt;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
 import java.awt.CardLayout;
@@ -74,7 +74,7 @@ class bk implements Runnable {
           ca.b();
         } 
       } 
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.a("Failed to evaluate active condition for panel: " + this.b.n);
     } 
   }

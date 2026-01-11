@@ -1,9 +1,9 @@
 package bt;
 
 import W.n;
-import i.b;
+import i.IComponentBravo;
 
-class aK implements b {
+class aK implements IComponentBravo {
   aK(an paraman) {}
   
   public void a() {}
@@ -19,9 +19,9 @@ class aK implements b {
   
   public void a(n paramn) {}
   
-  public void b(n paramn) {}
+  public void IComponentBravo(n paramn) {}
   
-  public void b() {}
+  public void IComponentBravo() {}
 }
 
 

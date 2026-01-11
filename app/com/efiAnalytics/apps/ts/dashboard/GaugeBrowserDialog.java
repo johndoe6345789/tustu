@@ -19,7 +19,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import r.j;
+import r.ThreadedFile;
 import t.a;
 
 public class GaugeBrowserDialog extends a {
@@ -65,7 +65,7 @@ public class GaugeBrowserDialog extends a {
     jButton2.addActionListener(new i(this));
     jPanel3.add(jButton2);
     JButton jButton3 = new JButton(s.g.b("Done"));
-    jButton3.addActionListener(new j(this));
+    jButton3.addActionListener(new ThreadedFile(this));
     jPanel3.add(jButton3);
     this.e.add("South", jPanel3);
     setSize(eJ.a(900), eJ.a(550));
@@ -95,7 +95,7 @@ public class GaugeBrowserDialog extends a {
   
   public void a() {
     String[] arrayOfString = { "gauge" };
-    String str = bV.a((Component)this, getTitle(), arrayOfString, "", j.w(), true, (ck)new cl());
+    String str = bV.a((Component)this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck)new cl());
     if (str != null && !str.equals("")) {
       n n1 = new n(this, new File(str));
       n1.addMouseListener(new m(this));

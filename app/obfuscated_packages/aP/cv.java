@@ -1,6 +1,6 @@
 package aP;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,9 +10,9 @@ class cv implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    i.c(i.af, Boolean.toString(jCheckBoxMenuItem.isSelected()));
+    IOProperties.c(IOProperties.af, Boolean.toString(jCheckBoxMenuItem.isSelected()));
     this.a.b.p().b(jCheckBoxMenuItem.isSelected());
-    this.a.b.p().i();
+    this.a.b.p().IOProperties();
     this.a.b.p().repaint();
   }
 }

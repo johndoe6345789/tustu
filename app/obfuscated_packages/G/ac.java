@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.R;
 import bH.X;
@@ -33,7 +33,7 @@ public class ac extends Q implements R, Serializable {
   
   public static String f = "hex";
   
-  public static String g = "bits";
+  public static String ExceptionPrintstacktrace = "bits";
   
   public static String h = "Numeric";
   
@@ -98,7 +98,7 @@ public class ac extends Q implements R, Serializable {
   public String b() {
     try {
       return (this.l != null) ? this.l.a() : aL();
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.c("Failed to get DataLog Header name for entry of OutputChannel: " + this.i);
       return "Error";
     } 
@@ -112,8 +112,8 @@ public class ac extends Q implements R, Serializable {
     this.l = paramdb;
     try {
       v(paramdb.a());
-    } catch (g g) {
-      Logger.getLogger(ac.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(ac.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
   }
   
@@ -143,7 +143,7 @@ public class ac extends Q implements R, Serializable {
         this.o = f;
         return;
       case 2:
-        this.o = g;
+        this.o = ExceptionPrintstacktrace;
         return;
       case 4:
         this.o = c;
@@ -165,7 +165,7 @@ public class ac extends Q implements R, Serializable {
     return (this.a == null) ? 0 : (int)Math.round(this.a.a());
   }
   
-  public dj g() {
+  public dj ExceptionPrintstacktrace() {
     return this.a;
   }
   

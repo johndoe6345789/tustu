@@ -9,28 +9,28 @@ import G.bM;
 import G.bj;
 import G.bm;
 import G.bv;
-import G.c;
+import G.IInterfaceCharlie;
 import G.cl;
 import G.cq;
 import G.cu;
 import G.db;
 import G.dj;
-import G.i;
+import G.RInterfaceIndia;
 import G.k;
-import V.a;
-import V.g;
-import V.j;
-import W.i;
-import W.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
+import W.RInterfaceIndia;
+import W.ExceptionExtensionGetmessage;
 import W.n;
-import ax.U;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.X;
 import bH.p;
 import bH.u;
 import bH.w;
-import c.d;
-import com.efiAnalytics.tuningwidgets.panels.a;
+import IInterfaceCharlie.CInterfaceDelta;
+import com.efiAnalytics.tuningwidgets.panels.ExceptionInVPackage;
 import com.efiAnalytics.ui.bN;
 import com.efiAnalytics.ui.bS;
 import com.efiAnalytics.ui.bV;
@@ -40,7 +40,7 @@ import com.efiAnalytics.ui.ef;
 import com.efiAnalytics.ui.et;
 import com.efiAnalytics.ui.fp;
 import com.efiAnalytics.ui.r;
-import i.c;
+import RInterfaceIndia.IInterfaceCharlie;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -62,41 +62,41 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.UIManager;
-import k.a;
-import k.d;
-import r.i;
-import s.g;
+import k.ExceptionInVPackage;
+import k.CInterfaceDelta;
+import r.RInterfaceIndia;
+import s.ExceptionPrintstacktrace;
 
-public class an extends JPanel implements aN, cq, L, d, bS, bc {
-  R a = null;
+public class an extends JPanel implements aN, cq, L, CInterfaceDelta, bS, bc {
+  R ExceptionInVPackage = null;
   
   ArrayList b = new ArrayList();
   
-  ArrayList c = new ArrayList();
+  ArrayList IInterfaceCharlie = new ArrayList();
   
-  static final String d = g.b("Set X Axis Minimum");
+  static final String CInterfaceDelta = ExceptionPrintstacktrace.b("Set X Axis Minimum");
   
-  static final String e = g.b("Set X Axis Maximum");
+  static final String e = ExceptionPrintstacktrace.b("Set X Axis Maximum");
   
-  static final String f = g.b("Auto Scale X Axis Maximum");
+  static final String f = ExceptionPrintstacktrace.b("Auto Scale X Axis Maximum");
   
-  static final String g = g.b("Set Y Axis Minimum");
+  static final String ExceptionPrintstacktrace = ExceptionPrintstacktrace.b("Set Y Axis Minimum");
   
-  static final String h = g.b("Set Y Axis Maximum");
+  static final String h = ExceptionPrintstacktrace.b("Set Y Axis Maximum");
   
-  static final String i = g.b("Auto Scale Y Axis Maximum");
+  static final String RInterfaceIndia = ExceptionPrintstacktrace.b("Auto Scale Y Axis Maximum");
   
-  static final String j = g.b("Selection Follow Mode") + " (CTRL+F)";
+  static final String ExceptionExtensionGetmessage = ExceptionPrintstacktrace.b("Selection Follow Mode") + " (CTRL+F)";
   
-  static final String k = g.b("Set History Timeout");
+  static final String k = ExceptionPrintstacktrace.b("Set History Timeout");
   
-  static final String l = g.b("Show baseline graph") + " (CTRL+B)";
+  static final String l = ExceptionPrintstacktrace.b("Show baseline graph") + " (CTRL+B)";
   
-  static final String m = g.b("Revert to baseline");
+  static final String m = ExceptionPrintstacktrace.b("Revert to baseline");
   
-  static final String n = g.b("Show X-Y Data Log Plot") + " (CTRL+X)";
+  static final String n = ExceptionPrintstacktrace.b("Show X-Y Data Log Plot") + " (CTRL+X)";
   
-  static final String o = g.b("Set Coarse Step Count");
+  static final String o = ExceptionPrintstacktrace.b("Set Coarse Step Count");
   
   private String P = null;
   
@@ -146,121 +146,121 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   
   aK K = new aK(this);
   
-  a L = null;
+  ExceptionInVPackage L = null;
   
   aJ M = null;
   
-  i N = new aM(this);
+  RInterfaceIndia N = new aM(this);
   
   List O = new ArrayList();
   
   public an(R paramR, bm parambm, boolean paramBoolean, et paramet) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.q = parambm;
     if (paramet == null)
       paramet = new aQ(this); 
     this.z = paramet;
-    this.E = i.a().a("09LKFDSLK4K ");
-    this.F = i.a().a(";'DS;'G-043LF;L");
+    this.E = RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("09LKFDSLK4K ");
+    this.F = RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";'DS;'G-043LF;L");
     setLayout(new BorderLayout());
     if (parambm.E()) {
       b(paramBoolean);
     } else {
       this.p = new bN();
-      if (i.a().a("joijt;i609tr0932")) {
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("joijt;i609tr0932")) {
         this.p.h(true);
       } else {
         this.p.h(false);
       } 
       byte b1;
-      for (b1 = 0; b1 < parambm.j(); b1++) {
-        aM aM = paramR.c(parambm.d(b1));
+      for (b1 = 0; b1 < parambm.ExceptionExtensionGetmessage(); b1++) {
+        aM aM = paramR.IInterfaceCharlie(parambm.CInterfaceDelta(b1));
         if (aM == null)
-          throw new a("CurveGraph X Parameter " + parambm.d(b1) + " not found in the current configuration."); 
-        this.c.add(aM);
-        i.a(paramR.c(), aM, this);
+          throw new ExceptionInVPackage("CurveGraph X Parameter " + parambm.CInterfaceDelta(b1) + " not found in the current configuration."); 
+        this.IInterfaceCharlie.add(aM);
+        RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), aM, this);
       } 
-      for (b1 = 0; b1 < parambm.d(); b1++) {
-        aM aM = paramR.c(parambm.b(b1));
-        String str = parambm.a(b1);
+      for (b1 = 0; b1 < parambm.CInterfaceDelta(); b1++) {
+        aM aM = paramR.IInterfaceCharlie(parambm.b(b1));
+        String str = parambm.ExceptionInVPackage(b1);
         boolean bool = true;
         try {
-          bool = (str != null && i.a(str, (aI)paramR) != 0.0D) ? true : false;
-        } catch (U u) {}
+          bool = (str != null && RInterfaceIndia.ExceptionInVPackage(str, (aI)paramR) != 0.0D) ? true : false;
+        } catch (ExceptionInAxPackage u) {}
         if (bool) {
           if (aM == null)
-            throw new a("CurveGraph Y Parameter " + parambm.b(b1) + " not found in the current configuration."); 
+            throw new ExceptionInVPackage("CurveGraph Y Parameter " + parambm.b(b1) + " not found in the current configuration."); 
           this.b.add(aM);
-          i.a(paramR.c(), aM, this);
+          RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), aM, this);
         } 
       } 
       if (this.b.size() == 0)
-        bV.d("No Y Axis Bins for CurveGraph " + parambm.aL() + "\nthe Y Axis must have at least 1 Y Axis Bin assigned.", this); 
+        bV.CInterfaceDelta("No Y Axis Bins for CurveGraph " + parambm.aL() + "\nthe Y Axis must have at least 1 Y Axis Bin assigned.", this); 
       add("Center", (Component)this.p);
       c_(parambm.aJ());
       this.Q = parambm.v();
-      this.p.k((int)a(k, 10000.0D));
+      this.p.k((int)ExceptionInVPackage(k, 10000.0D));
       this.p.h(parambm.p());
-      this.p.i(parambm.o());
+      this.p.RInterfaceIndia(parambm.o());
       this.p.addMouseListener(new ao(this));
       if (this.b.size() > 0 && ((aM)this.b.get(0)).aL() != null) {
         this.t = new JPanel();
         this.t.setLayout(new GridLayout(1, 2, 1, 1));
-        a a1 = new a(paramR, ((aM)this.b.get(0)).aL());
+        ExceptionInVPackage a1 = new ExceptionInVPackage(paramR, ((aM)this.b.get(0)).aL());
         this.t.add(a1);
         l l = new l(paramR, ((aM)this.b.get(0)).aL());
         this.t.add(l);
         this.t.setBackground(Color.BLACK);
         this.p.add(this.t);
       } 
-      if (this.c.size() > 0) {
-        this.x = new int[this.c.size()];
+      if (this.IInterfaceCharlie.size() > 0) {
+        this.x = new int[this.IInterfaceCharlie.size()];
       } else {
         this.x = new int[1];
       } 
-      this.p.a(this);
-      this.p.a(new az(this));
+      this.p.ExceptionInVPackage(this);
+      this.p.ExceptionInVPackage(new az(this));
       cl cl = new cl(this.b.get(0));
-      this.p.a((dj)cl);
-      this.p.h(Math.max(((aM)this.b.get(0)).s(), parambm.c()));
-      this.p.i(((aM)this.b.get(0)).r());
+      this.p.ExceptionInVPackage((dj)cl);
+      this.p.h(Math.max(((aM)this.b.get(0)).s(), parambm.IInterfaceCharlie()));
+      this.p.RInterfaceIndia(((aM)this.b.get(0)).r());
       this.C = new aS(this);
       if (parambm.N() != null)
-        i.a(paramR.c(), parambm.N(), this.C); 
-      this.p.b(g.b(parambm.M()));
+        RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), parambm.N(), this.C); 
+      this.p.b(ExceptionPrintstacktrace.b(parambm.M()));
       this.B = new aR(this);
       byte b2;
       for (b2 = 0; b2 < parambm.k(); b2++)
-        i.a(paramR.c(), parambm.e(b2), this.B); 
+        RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), parambm.e(b2), this.B); 
       for (b2 = 0; b2 < parambm.m(); b2++)
-        i.a(paramR.c(), parambm.f(b2), this); 
-      for (b2 = 0; b2 < parambm.g(); b2++)
-        i.a(paramR.c(), parambm.c(b2), this); 
+        RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), parambm.f(b2), this); 
+      for (b2 = 0; b2 < parambm.ExceptionPrintstacktrace(); b2++)
+        RInterfaceIndia.ExceptionInVPackage(paramR.IInterfaceCharlie(), parambm.IInterfaceCharlie(b2), this); 
       t();
       b2 = 0;
       for (byte b3 = 0; b3 < this.b.size(); b3++) {
-        aR aR1 = aR.a();
+        aR aR1 = aR.ExceptionInVPackage();
         try {
-          aR1.a(paramR.c(), ((aM)this.b.get(b3)).aL(), this);
-          if (this.c != null && this.c.size() > b2)
-            aR1.a(paramR.c(), ((aM)this.c.get(b2)).aL(), this); 
-        } catch (a a1) {
+          aR1.ExceptionInVPackage(paramR.IInterfaceCharlie(), ((aM)this.b.get(b3)).aL(), this);
+          if (this.IInterfaceCharlie != null && this.IInterfaceCharlie.size() > b2)
+            aR1.ExceptionInVPackage(paramR.IInterfaceCharlie(), ((aM)this.IInterfaceCharlie.get(b2)).aL(), this); 
+        } catch (ExceptionInVPackage a1) {
           a1.printStackTrace();
-          D.a("Error subscribing to ParameterValue Changes.", (Exception)a1, this);
+          D.ExceptionInVPackage("Error subscribing to ParameterValue Changes.", (Exception)a1, this);
         } 
-        if (this.c.size() > b2 + 1)
+        if (this.IInterfaceCharlie.size() > b2 + 1)
           b2++; 
       } 
       try {
         v();
-      } catch (g g) {
-        D.a("Error accessing curve parameters", (Exception)g, this);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Error accessing curve parameters", (Exception)ExceptionPrintstacktrace, this);
       } 
       try {
         if (parambm.l() != null)
-          cu.a().a(paramR.c(), parambm.l(), this); 
-      } catch (a a1) {
-        D.a("Unable to subscribe x or y axis for hightlights.", (Exception)a1, this);
+          cu.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), parambm.l(), this); 
+      } catch (ExceptionInVPackage a1) {
+        D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)a1, this);
       } 
       this.p.addFocusListener(new aA(this));
       JPanel jPanel = new JPanel();
@@ -284,56 +284,56 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
       this.r.setLayout(new FlowLayout(1));
       if (!this.F) {
         bv bv = new bv();
-        bv.i(0);
+        bv.RInterfaceIndia(0);
         b2 = 0;
         for (byte b = 0; b < this.b.size(); b++) {
           db db;
-          if (this.c != null && this.c.size() > b2 && !((aM)this.c.get(b2)).H() && !this.p.l()) {
+          if (this.IInterfaceCharlie != null && this.IInterfaceCharlie.size() > b2 && !((aM)this.IInterfaceCharlie.get(b2)).H() && !this.p.l()) {
             bj bj1 = new bj();
             bj1.s(this.p.b(b));
-            bj1.b(((aM)this.c.get(b2)).aL());
-            bj1.a(new aN(this, b2));
-            bj1.a(this.E);
+            bj1.b(((aM)this.IInterfaceCharlie.get(b2)).aL());
+            bj1.ExceptionInVPackage(new aN(this, b2));
+            bj1.ExceptionInVPackage(this.E);
             if (this.b.size() > 1)
-              bj1.a(new k(this.p.a(b).getRGB())); 
-            bv.a((bv)bj1);
+              bj1.ExceptionInVPackage(new k(this.p.ExceptionInVPackage(b).getRGB())); 
+            bv.ExceptionInVPackage((bv)bj1);
           } 
           bj bj = new bj();
-          c c = new c((this.p.c(b) != null) ? this.p.c(b) : ((aM)this.b.get(b)).aL());
+          IInterfaceCharlie IInterfaceCharlie = new IInterfaceCharlie((this.p.IInterfaceCharlie(b) != null) ? this.p.IInterfaceCharlie(b) : ((aM)this.b.get(b)).aL());
           if (parambm.k() > b)
             db = parambm.e(b); 
-          bj.d(db);
+          bj.CInterfaceDelta(db);
           bj.b(((aM)this.b.get(b)).aL());
-          bj.a(this.E);
-          bj.a(new aN(this, b2));
+          bj.ExceptionInVPackage(this.E);
+          bj.ExceptionInVPackage(new aN(this, b2));
           if (this.b.size() > 1) {
-            bj.a(new k(this.p.a(b).getRGB()));
+            bj.ExceptionInVPackage(new k(this.p.ExceptionInVPackage(b).getRGB()));
           } else {
             Color color = UIManager.getColor("TextField.background");
-            bj.a(new k(color.getRGB()));
+            bj.ExceptionInVPackage(new k(color.getRGB()));
           } 
-          if (this.c == null && this.c.isEmpty() && this.p.l() && parambm.s() != null) {
+          if (this.IInterfaceCharlie == null && this.IInterfaceCharlie.isEmpty() && this.p.l() && parambm.s() != null) {
             double[] arrayOfDouble = parambm.s();
             String[] arrayOfString = new String[arrayOfDouble.length];
             for (byte b4 = 0; b4 < arrayOfDouble.length; b4++)
-              arrayOfString[b4] = X.a(arrayOfDouble[b4]); 
-            bj.a(arrayOfString);
+              arrayOfString[b4] = X.ExceptionInVPackage(arrayOfDouble[b4]); 
+            bj.ExceptionInVPackage(arrayOfString);
           } 
-          bv.a((bv)bj);
+          bv.ExceptionInVPackage((bv)bj);
           b2++;
         } 
         bh bh = new bh(paramR, bv);
         this.r.add(bh);
       } 
       JButton jButton1 = new JButton("#");
-      jButton1.setPreferredSize(eJ.a(15, 15));
+      jButton1.setPreferredSize(eJ.ExceptionInVPackage(15, 15));
       jButton1.setToolTipText("Click or Press A to show or hide text based arrays");
       jButton1.addActionListener(new aB(this));
       jButton1.setFocusable(false);
       this.p.add(jButton1);
       JButton jButton2 = new JButton("#");
-      jButton2.setPreferredSize(eJ.a(15, 15));
-      jButton2.setToolTipText(g.b("Click For Options Menu"));
+      jButton2.setPreferredSize(eJ.ExceptionInVPackage(15, 15));
+      jButton2.setToolTipText(ExceptionPrintstacktrace.b("Click For Options Menu"));
       jButton2.addActionListener(new aC(this));
       jButton2.setFocusable(false);
       this.p.add(jButton2);
@@ -341,14 +341,14 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
         try {
           if (this.F) {
             this.v = new T(paramR, parambm, true, paramBoolean);
-            this.v.a(this.G);
-            if (parambm.d() > 1)
+            this.v.ExceptionInVPackage(this.G);
+            if (parambm.CInterfaceDelta() > 1)
               try {
-                for (byte b = 0; b < parambm.d(); b++)
-                  this.w.a(this.p.a(b)); 
-                this.w.a(Color.LIGHT_GRAY);
+                for (byte b = 0; b < parambm.CInterfaceDelta(); b++)
+                  this.w.ExceptionInVPackage(this.p.ExceptionInVPackage(b)); 
+                this.w.ExceptionInVPackage(Color.LIGHT_GRAY);
               } catch (Exception exception) {} 
-            this.v.a(paramet);
+            this.v.ExceptionInVPackage(paramet);
             this.u = new aL(this, this.v);
             this.u.getVerticalScrollBar().addAdjustmentListener(new aD(this));
             jPanel.add("Center", this.u);
@@ -356,38 +356,38 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
             this.u = new aL(this, this.r);
             jPanel.add("South", this.u);
           } 
-        } catch (g g) {
-          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
         this.p.setLayout(this.s = new aH(this, null, jButton1, jButton2));
       } else if (this.F && this.E) {
         try {
           this.w = new T(paramR, parambm, false, paramBoolean);
-          this.w.a(this.G);
+          this.w.ExceptionInVPackage(this.G);
           this.w.setBorder(BorderFactory.createEmptyBorder(5, 8, 5, 8));
-          if (parambm.d() > 1) {
-            for (byte b = 0; b < parambm.d(); b++)
-              this.w.a(this.p.a(b)); 
-            this.w.a(Color.LIGHT_GRAY);
+          if (parambm.CInterfaceDelta() > 1) {
+            for (byte b = 0; b < parambm.CInterfaceDelta(); b++)
+              this.w.ExceptionInVPackage(this.p.ExceptionInVPackage(b)); 
+            this.w.ExceptionInVPackage(Color.LIGHT_GRAY);
           } 
           this.r.setLayout(new GridLayout(1, 1));
           this.r.add(this.w);
           add("South", this.r);
           this.p.setLayout(this.s = new aH(this, null, jButton1, jButton2));
-          this.r.setVisible((parambm.d() <= 1));
-          this.w.a(paramet);
+          this.r.setVisible((parambm.CInterfaceDelta() <= 1));
+          this.w.ExceptionInVPackage(paramet);
           boolean bool = Boolean.parseBoolean(paramet.b("showText", parambm.u() + ""));
           this.r.setVisible(bool);
-        } catch (g g) {}
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
       } else if (this.F) {
         try {
           this.v = new T(paramR, parambm, !this.E, paramBoolean);
-          this.v.a(this.G);
+          this.v.ExceptionInVPackage(this.G);
           this.u = new aL(this, this.v);
-          if (parambm.d() > 1) {
-            for (byte b = 0; b < parambm.d(); b++)
-              this.v.a(this.p.a(b)); 
-            this.w.a(Color.LIGHT_GRAY);
+          if (parambm.CInterfaceDelta() > 1) {
+            for (byte b = 0; b < parambm.CInterfaceDelta(); b++)
+              this.v.ExceptionInVPackage(this.p.ExceptionInVPackage(b)); 
+            this.w.ExceptionInVPackage(Color.LIGHT_GRAY);
           } 
           this.p.add(this.u);
           if (!parambm.u()) {
@@ -398,8 +398,8 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
             this.r.setVisible(true);
           } 
           this.p.setLayout(this.s = new aH(this, this.u, jButton1, jButton2));
-        } catch (g g) {
-          D.a("Configuration File Error.", (Exception)g, this);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          D.ExceptionInVPackage("Configuration File Error.", (Exception)ExceptionPrintstacktrace, this);
         } 
       } else {
         this.u = new aL(this, this.r);
@@ -414,41 +414,41 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
         this.p.setLayout(this.s = new aH(this, this.u, jButton1, jButton2));
       } 
       this.p.u();
-      if (i.a().a(";lkdsaop9ewqewqgd")) {
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";lkdsaop9ewqewqgd")) {
         boolean bool = Boolean.parseBoolean(paramet.b(l, "" + parambm.x()));
         this.p.f(bool);
       } 
-      if (i.a().a("67hgyusg432gvrewhgfds")) {
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("67hgyusg432gvrewhgfds")) {
         s();
-        c.a().a(this.K);
+        IInterfaceCharlie.ExceptionInVPackage().ExceptionInVPackage(this.K);
       } 
       add("East", jPanel);
       this.p.setFocusable(true);
       this.I = new aO(this);
       this.p.addKeyListener(this.I);
     } 
-    c();
+    IInterfaceCharlie();
   }
   
   private void b(boolean paramBoolean) {
     this.r = new aI(this);
     byte b;
-    for (b = 0; b < this.q.j(); b++) {
-      aM aM = this.a.c(this.q.d(b));
+    for (b = 0; b < this.q.ExceptionExtensionGetmessage(); b++) {
+      aM aM = this.ExceptionInVPackage.IInterfaceCharlie(this.q.CInterfaceDelta(b));
       if (aM == null)
-        throw new a("CurveGraph X Parameter " + this.q.d(b) + " not found in the current configuration."); 
-      this.c.add(aM);
+        throw new ExceptionInVPackage("CurveGraph X Parameter " + this.q.CInterfaceDelta(b) + " not found in the current configuration."); 
+      this.IInterfaceCharlie.add(aM);
     } 
-    for (b = 0; b < this.q.d(); b++) {
-      aM aM = this.a.c(this.q.b(b));
+    for (b = 0; b < this.q.CInterfaceDelta(); b++) {
+      aM aM = this.ExceptionInVPackage.IInterfaceCharlie(this.q.b(b));
       this.b.add(aM);
     } 
     if (this.b.size() == 0)
-      bV.d("No Y Axis Bins for 1D Arrays " + this.q.aL() + "\nthe Y Axis must have at least 1 Y Axis Bin assigned.", this); 
+      bV.CInterfaceDelta("No Y Axis Bins for 1D Arrays " + this.q.aL() + "\nthe Y Axis must have at least 1 Y Axis Bin assigned.", this); 
     if (this.F && this.E) {
       try {
-        this.w = new T(this.a, this.q, false, paramBoolean);
-        this.w.a(this.G);
+        this.w = new T(this.ExceptionInVPackage, this.q, false, paramBoolean);
+        this.w.ExceptionInVPackage(this.G);
         this.w.setBorder(BorderFactory.createEmptyBorder(5, 8, 5, 8));
         ArrayList<Color> arrayList = new ArrayList();
         arrayList.add(Color.GREEN);
@@ -461,25 +461,25 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
         arrayList.add(Color.ORANGE);
         arrayList.add(Color.PINK);
         arrayList.add(Color.BLUE);
-        if (this.q.d() > 1)
-          for (byte b1 = 0; b1 < this.q.d(); b1++)
-            this.w.a(arrayList.get(b1 % arrayList.size()));  
-        this.w.a(Color.LIGHT_GRAY);
+        if (this.q.CInterfaceDelta() > 1)
+          for (byte b1 = 0; b1 < this.q.CInterfaceDelta(); b1++)
+            this.w.ExceptionInVPackage(arrayList.get(b1 % arrayList.size()));  
+        this.w.ExceptionInVPackage(Color.LIGHT_GRAY);
         this.r.setLayout(new GridLayout(1, 1));
         this.r.add(this.w);
         add("Center", this.r);
-        this.r.setVisible((this.q.d() <= 1));
+        this.r.setVisible((this.q.CInterfaceDelta() <= 1));
         this.r.setVisible(true);
-      } catch (g g) {}
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } else if (this.F) {
       try {
-        this.v = new T(this.a, this.q, !this.E, paramBoolean);
-        this.v.a(this.G);
+        this.v = new T(this.ExceptionInVPackage, this.q, !this.E, paramBoolean);
+        this.v.ExceptionInVPackage(this.G);
         this.u = new aL(this, this.v);
-        if (this.q.d() > 1) {
-          for (b = 0; b < this.q.d(); b++)
-            this.v.a(this.p.a(b)); 
-          this.w.a(Color.LIGHT_GRAY);
+        if (this.q.CInterfaceDelta() > 1) {
+          for (b = 0; b < this.q.CInterfaceDelta(); b++)
+            this.v.ExceptionInVPackage(this.p.ExceptionInVPackage(b)); 
+          this.w.ExceptionInVPackage(Color.LIGHT_GRAY);
         } 
         add("Center", this.u);
         if (!this.q.u()) {
@@ -489,8 +489,8 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
           this.u.setVisible(true);
           this.r.setVisible(true);
         } 
-      } catch (g g) {
-        D.a("Configuration File Error.", (Exception)g, this);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Configuration File Error.", (Exception)ExceptionPrintstacktrace, this);
       } 
     } else {
       this.u = new aL(this, this.r);
@@ -520,31 +520,31 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     } 
   }
   
-  private a q() {
+  private ExceptionInVPackage q() {
     if (this.L == null) {
-      this.L = new a();
-      this.L.a(new aE(this));
+      this.L = new ExceptionInVPackage();
+      this.L.ExceptionInVPackage(new aE(this));
     } 
     return this.L;
   }
   
-  private boolean c(String paramString) {
+  private boolean IInterfaceCharlie(String paramString) {
     if (paramString == null || paramString.trim().isEmpty())
       return true; 
     try {
-      a a1 = d.a().a(paramString);
-      double d1 = a1.a(c.a().e(), 0);
+      ExceptionInVPackage a1 = CInterfaceDelta.ExceptionInVPackage().ExceptionInVPackage(paramString);
+      double d1 = a1.ExceptionInVPackage(IInterfaceCharlie.ExceptionInVPackage().e(), 0);
       return true;
     } catch (Exception exception) {
-      String str = g.b("Invalid Expression! Expression should reference fields within the data log.") + "\n" + g.b("Example Expression") + ":\n[MAP] > 90";
-      bV.d(str, this);
+      String str = ExceptionPrintstacktrace.b("Invalid Expression! Expression should reference fields within the data log.") + "\n" + ExceptionPrintstacktrace.b("Example Expression") + ":\n[MAP] > 90";
+      bV.CInterfaceDelta(str, this);
       return false;
     } 
   }
   
   public void b(String paramString) {
-    this.M.a(paramString);
-    q().c(paramString);
+    this.M.ExceptionInVPackage(paramString);
+    q().IInterfaceCharlie(paramString);
     this.p.o();
     this.p.repaint();
   }
@@ -555,23 +555,23 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
       int[] arrayOfInt;
       u u = new u();
       if (this.p.z() == 0) {
-        arrayOfDouble = new double[this.p.d(0)];
-        arrayOfInt = new int[this.p.d(0)];
+        arrayOfDouble = new double[this.p.CInterfaceDelta(0)];
+        arrayOfInt = new int[this.p.CInterfaceDelta(0)];
         for (byte b = 0; b < arrayOfInt.length; b++)
           arrayOfInt[b] = b; 
       } else {
-        arrayOfInt = this.p.j(0);
+        arrayOfInt = this.p.ExceptionExtensionGetmessage(0);
         arrayOfDouble = new double[arrayOfInt.length];
       } 
       for (byte b1 = 0; b1 < arrayOfDouble.length; b1++)
-        arrayOfDouble[b1] = this.p.a(0, arrayOfInt[b1]); 
+        arrayOfDouble[b1] = this.p.ExceptionInVPackage(0, arrayOfInt[b1]); 
       aF aF = new aF(this, arrayOfDouble);
-      List<w> list = u.a(this.p.A(), this.p.B(), aF, arrayOfDouble);
-      int j = this.p.C();
+      List<w> list = u.ExceptionInVPackage(this.p.A(), this.p.B(), aF, arrayOfDouble);
+      int ExceptionExtensionGetmessage = this.p.C();
       int k = this.p.D();
       for (byte b2 = 0; b2 < list.size(); b2++) {
-        if (arrayOfInt[b2] >= j && arrayOfInt[b2] <= k)
-          this.p.b(0, arrayOfInt[b2], ((w)list.get(b2)).a()); 
+        if (arrayOfInt[b2] >= ExceptionExtensionGetmessage && arrayOfInt[b2] <= k)
+          this.p.b(0, arrayOfInt[b2], ((w)list.get(b2)).ExceptionInVPackage()); 
       } 
     } 
   }
@@ -579,39 +579,39 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   private void s() {
     boolean bool = false;
     if (this.q.l() != null) {
-      String str = bM.j(this.a, this.q.l());
+      String str = bM.ExceptionExtensionGetmessage(this.ExceptionInVPackage, this.q.l());
       bool = (str != null && !str.isEmpty()) ? true : false;
     } 
     boolean bool1 = Boolean.parseBoolean(this.z.b(n, "" + ((this.q.A() || bool) ? 1 : 0)));
-    this.p.i(bool1);
-    this.p.a(null);
+    this.p.RInterfaceIndia(bool1);
+    this.p.ExceptionInVPackage(null);
     this.p.b(null);
     if (bool1) {
-      n n = c.a().e();
+      n n = IInterfaceCharlie.ExceptionInVPackage().e();
       if (n != null) {
         p();
         String str1 = this.z.b("xPlotColumnName", this.q.B());
         String str2 = this.z.b("yPlotColumnName", this.q.C());
-        if (str1 != null && n.a(str1) != null) {
+        if (str1 != null && n.ExceptionInVPackage(str1) != null) {
           if (this.p.A() != null)
             this.p.A().b(this.N); 
-          j j = n.a(str1);
-          j.a(this.N);
-          this.p.a(j);
-          q().a(str1);
+          ExceptionExtensionGetmessage ExceptionExtensionGetmessage = n.ExceptionInVPackage(str1);
+          ExceptionExtensionGetmessage.ExceptionInVPackage(this.N);
+          this.p.ExceptionInVPackage(ExceptionExtensionGetmessage);
+          q().ExceptionInVPackage(str1);
         } 
-        if (str2 != null && n.a(str2) != null) {
+        if (str2 != null && n.ExceptionInVPackage(str2) != null) {
           if (this.p.B() != null)
             this.p.B().b(this.N); 
-          j j = n.a(str2);
-          j.a(this.N);
-          this.p.b(j);
+          ExceptionExtensionGetmessage ExceptionExtensionGetmessage = n.ExceptionInVPackage(str2);
+          ExceptionExtensionGetmessage.ExceptionInVPackage(this.N);
+          this.p.b(ExceptionExtensionGetmessage);
           q().b(str2);
         } 
         this.M = new aJ(this, n, this.q.D());
         String str3 = this.z.b("xyPlotFilterExp", "");
         b(str3);
-        this.p.a(this.M);
+        this.p.ExceptionInVPackage(this.M);
         this.p.o();
         this.p.repaint();
       } 
@@ -621,25 +621,25 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   }
   
   private void t() {
-    this.p.a();
+    this.p.ExceptionInVPackage();
     for (byte b = 0; b < this.q.k(); b++) {
-      String str = this.q.a(b);
+      String str = this.q.ExceptionInVPackage(b);
       boolean bool = true;
       try {
-        bool = (str != null && i.a(str, (aI)this.a) != 0.0D) ? true : false;
-      } catch (U u) {}
+        bool = (str != null && RInterfaceIndia.ExceptionInVPackage(str, (aI)this.ExceptionInVPackage) != 0.0D) ? true : false;
+      } catch (ExceptionInAxPackage u) {}
       if (bool)
         try {
-          this.p.a(g.b(this.q.e(b).a()));
-        } catch (g g) {
-          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+          this.p.ExceptionInVPackage(ExceptionPrintstacktrace.b(this.q.e(b).ExceptionInVPackage()));
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         }  
     } 
     this.p.o();
     this.p.repaint();
   }
   
-  private double a(ArrayList paramArrayList) {
+  private double ExceptionInVPackage(ArrayList paramArrayList) {
     double d1 = Double.MAX_VALUE;
     Iterator<aM> iterator = paramArrayList.iterator();
     while (iterator.hasNext()) {
@@ -661,7 +661,7 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     return d1;
   }
   
-  private double c(ArrayList paramArrayList) {
+  private double IInterfaceCharlie(ArrayList paramArrayList) {
     double d1 = Double.MIN_VALUE;
     Iterator<aM> iterator = paramArrayList.iterator();
     while (iterator.hasNext()) {
@@ -674,11 +674,11 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   
   private void u() {
     if (this.p.z() > 0) {
-      String str = bV.a("{" + g.b("Set Selected Cells to") + ":}", true, g.b("Set Cell Values"), true, this);
+      String str = bV.ExceptionInVPackage("{" + ExceptionPrintstacktrace.b("Set Selected Cells to") + ":}", true, ExceptionPrintstacktrace.b("Set Cell Values"), true, this);
       requestFocus();
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
-        this.p.j(d1);
+        this.p.ExceptionExtensionGetmessage(d1);
       } 
     } 
   }
@@ -708,36 +708,36 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
     if (this.w != null && this.w.isVisible()) {
       Dimension dimension1 = (this.p != null) ? this.p.getPreferredSize() : new Dimension(0, 0);
-      int j = eJ.a() + 2;
-      Dimension dimension2 = this.w.b(j);
+      int ExceptionExtensionGetmessage = eJ.ExceptionInVPackage() + 2;
+      Dimension dimension2 = this.w.b(ExceptionExtensionGetmessage);
       int k = dimension1.height + dimension2.height;
       int m = paramInt4 - k;
       m = m * 17 / 100;
-      int n = j + m / (this.b.size() + 1);
-      int i1 = Math.round(j * paramInt3 / dimension2.width);
+      int n = ExceptionExtensionGetmessage + m / (this.b.size() + 1);
+      int i1 = Math.round(ExceptionExtensionGetmessage * paramInt3 / dimension2.width);
       int i2 = (i1 > n) ? n : i1;
-      i2 = (i2 > 3 * j) ? (3 * j) : i2;
-      i2 = (i2 < j * 4 / 5) ? (j * 4 / 5) : i2;
+      i2 = (i2 > 3 * ExceptionExtensionGetmessage) ? (3 * ExceptionExtensionGetmessage) : i2;
+      i2 = (i2 < ExceptionExtensionGetmessage * 4 / 5) ? (ExceptionExtensionGetmessage * 4 / 5) : i2;
       int i3 = i2;
       aG aG = new aG(this, i3);
-      this.w.a(i3);
+      this.w.ExceptionInVPackage(i3);
     } 
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
   }
   
-  public void c() {
+  public void IInterfaceCharlie() {
     if (this.p != null) {
       if (this.J == null) {
-        this.J = new G(this.a, this.q, this);
+        this.J = new G(this.ExceptionInVPackage, this.q, this);
       } else {
         this.J.b();
       } 
-      this.J.a();
+      this.J.ExceptionInVPackage();
     } 
     if (this.v != null)
-      this.v.a(); 
+      this.v.ExceptionInVPackage(); 
     if (this.w != null)
-      this.w.a(); 
+      this.w.ExceptionInVPackage(); 
   }
   
   public void e() {
@@ -749,44 +749,44 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
       this.w.b(); 
   }
   
-  public void a(bP parambP) {
+  public void ExceptionInVPackage(bP parambP) {
     e();
     this.J = parambP;
     if (parambP != null)
-      parambP.a(); 
+      parambP.ExceptionInVPackage(); 
   }
   
   public void b(bP parambP) {
     if (this.v != null)
-      this.v.a(parambP); 
+      this.v.ExceptionInVPackage(parambP); 
     if (this.w != null)
-      this.w.a(parambP); 
+      this.w.ExceptionInVPackage(parambP); 
   }
   
   public boolean f() {
     if (!this.r.isVisible() && this.p.w() < 0)
-      this.p.b(this.I.a); 
+      this.p.b(this.I.ExceptionInVPackage); 
     this.r.setVisible(!this.r.isVisible());
-    this.z.a("showText", this.r.isVisible() + "");
+    this.z.ExceptionInVPackage("showText", this.r.isVisible() + "");
     if (this.u != null)
       this.u.setVisible(this.r.isVisible()); 
     return this.r.isVisible();
   }
   
-  protected void g() {
+  protected void ExceptionPrintstacktrace() {
     try {
       for (byte b = 0; b < this.b.size(); b++) {
-        double[][] arrayOfDouble = ((aM)this.b.get(b)).i(this.a.p());
+        double[][] arrayOfDouble = ((aM)this.b.get(b)).RInterfaceIndia(this.ExceptionInVPackage.p());
         for (byte b1 = 0; b1 < arrayOfDouble.length; b1++) {
           this.p.b(b, b1, arrayOfDouble[b1][0]);
-          if (arrayOfDouble[b1][0] > this.p.j())
-            this.p.d(arrayOfDouble[b1][0]); 
+          if (arrayOfDouble[b1][0] > this.p.ExceptionExtensionGetmessage())
+            this.p.CInterfaceDelta(arrayOfDouble[b1][0]); 
           if (arrayOfDouble[b1][0] < this.p.k())
             this.p.e(arrayOfDouble[b1][0]); 
         } 
       } 
-    } catch (g g) {
-      D.a("Error pulling curve y parameter values for CurveGraph: " + this.p, (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Error pulling curve y parameter values for CurveGraph: " + this.p, (Exception)ExceptionPrintstacktrace, this);
     } 
     this.p.repaint();
   }
@@ -794,47 +794,47 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   protected void h() {
     try {
       double[][] arrayOfDouble = null;
-      if (this.c != null && this.c.size() > 0) {
-        for (byte b = 0; b < this.c.size(); b++) {
-          arrayOfDouble = ((aM)this.c.get(b)).i(this.a.p());
+      if (this.IInterfaceCharlie != null && this.IInterfaceCharlie.size() > 0) {
+        for (byte b = 0; b < this.IInterfaceCharlie.size(); b++) {
+          arrayOfDouble = ((aM)this.IInterfaceCharlie.get(b)).RInterfaceIndia(this.ExceptionInVPackage.p());
           for (byte b1 = 0; b1 < arrayOfDouble.length; b1++) {
-            if (b == this.c.size() - 1 && this.b.size() > this.c.size()) {
+            if (b == this.IInterfaceCharlie.size() - 1 && this.b.size() > this.IInterfaceCharlie.size()) {
               for (byte b2 = b; b2 < this.b.size(); b2++)
-                this.p.a(b2, b1, arrayOfDouble[b1][0]); 
+                this.p.ExceptionInVPackage(b2, b1, arrayOfDouble[b1][0]); 
             } else {
-              this.p.a(b, b1, arrayOfDouble[b1][0]);
+              this.p.ExceptionInVPackage(b, b1, arrayOfDouble[b1][0]);
             } 
             if (arrayOfDouble[b1][0] > this.p.h())
               this.p.b(arrayOfDouble[b1][0]); 
-            if (arrayOfDouble[b1][0] < this.p.i())
-              this.p.c(arrayOfDouble[b1][0]); 
+            if (arrayOfDouble[b1][0] < this.p.RInterfaceIndia())
+              this.p.IInterfaceCharlie(arrayOfDouble[b1][0]); 
           } 
         } 
       } else {
         arrayOfDouble = new double[((aM)this.b.get(0)).b()][1];
         for (byte b = 0; b < arrayOfDouble.length; b++)
-          arrayOfDouble[b][0] = (this.p.h() - this.p.i()) * b / arrayOfDouble.length; 
+          arrayOfDouble[b][0] = (this.p.h() - this.p.RInterfaceIndia()) * b / arrayOfDouble.length; 
       } 
-    } catch (g g) {
-      D.a("Error pulling x curve parameters", (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Error pulling x curve parameters", (Exception)ExceptionPrintstacktrace, this);
     } 
     this.p.repaint();
   }
   
-  private void a(ef[] paramArrayOfef) {
+  private void ExceptionInVPackage(ef[] paramArrayOfef) {
     if (this.r != null)
       if (paramArrayOfef != null && paramArrayOfef.length > 0) {
-        a(this.r, paramArrayOfef[paramArrayOfef.length - 1].b());
+        ExceptionInVPackage(this.r, paramArrayOfef[paramArrayOfef.length - 1].b());
       } else {
-        a(this.r, -1);
+        ExceptionInVPackage(this.r, -1);
       }  
     if (this.v != null)
-      this.v.a(paramArrayOfef); 
+      this.v.ExceptionInVPackage(paramArrayOfef); 
     if (this.w != null)
-      this.w.a(paramArrayOfef); 
+      this.w.ExceptionInVPackage(paramArrayOfef); 
   }
   
-  private void a(JPanel paramJPanel, int paramInt) {
+  private void ExceptionInVPackage(JPanel paramJPanel, int paramInt) {
     if (!this.F)
       for (byte b = 0; b < paramJPanel.getComponentCount(); b++) {
         Component component = paramJPanel.getComponent(b);
@@ -849,12 +849,12 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
             this.r.scrollRectToVisible(rectangle);
           } 
         } else if (component instanceof JPanel) {
-          a((JPanel)component, paramInt);
+          ExceptionInVPackage((JPanel)component, paramInt);
         } 
       }  
   }
   
-  private void a(int paramInt) {
+  private void ExceptionInVPackage(int paramInt) {
     if (this.r != null)
       b(this.r, paramInt); 
   }
@@ -865,33 +865,33 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
         Component component = paramJPanel.getComponent(b);
         if (component instanceof R) {
           R r = (R)component;
-          r.a(paramInt);
+          r.ExceptionInVPackage(paramInt);
         } else if (component instanceof JPanel) {
           b((JPanel)component, paramInt);
         } 
       }  
   }
   
-  private int a(double paramDouble) {
-    double d1 = this.p.a(0, 0);
-    for (byte b = 0; b < this.p.d(0); b++) {
-      double d2 = this.p.a(0, b);
+  private int ExceptionInVPackage(double paramDouble) {
+    double d1 = this.p.ExceptionInVPackage(0, 0);
+    for (byte b = 0; b < this.p.CInterfaceDelta(0); b++) {
+      double d2 = this.p.ExceptionInVPackage(0, b);
       if (d2 > paramDouble)
         return (b == 0 || Math.abs(d2 - paramDouble) < Math.abs(paramDouble - d1)) ? b : (b - 1); 
       d1 = d2;
     } 
-    return this.p.d(0) - 1;
+    return this.p.CInterfaceDelta(0) - 1;
   }
   
   public void close() {
-    cu.a().a(this);
-    aR.a().a(this);
+    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    aR.ExceptionInVPackage().ExceptionInVPackage(this);
     if (this.B != null)
-      aR.a().a(this.B); 
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.B); 
     if (this.C != null)
-      aR.a().a(this.C); 
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.C); 
     if (this.r != null)
-      this.r.a(); 
+      this.r.ExceptionInVPackage(); 
     if (this.v != null)
       this.v.close(); 
     if (this.w != null)
@@ -899,7 +899,7 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     e();
     this.H = true;
     if (this.K != null)
-      c.a().b(this.K); 
+      IInterfaceCharlie.ExceptionInVPackage().b(this.K); 
     if (this.p != null && this.p.A() != null)
       this.p.A().b(this.N); 
     if (this.p != null && this.p.B() != null)
@@ -909,26 +909,26 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (!isEnabled())
       return; 
-    int j = a(paramDouble);
-    if (this.x[0] != j) {
-      this.x[0] = j;
-      a(j);
+    int ExceptionExtensionGetmessage = ExceptionInVPackage(paramDouble);
+    if (this.x[0] != ExceptionExtensionGetmessage) {
+      this.x[0] = ExceptionExtensionGetmessage;
+      ExceptionInVPackage(ExceptionExtensionGetmessage);
     } 
-    if (this.y && j != this.p.w()) {
+    if (this.y && ExceptionExtensionGetmessage != this.p.w()) {
       boolean bool = (this.p.x() >= 0) ? this.p.x() : false;
-      a(bool, j);
+      ExceptionInVPackage(bool, ExceptionExtensionGetmessage);
       r[] arrayOfR = new r[1];
-      arrayOfR[0] = new r(bool, j);
-      a((ef[])arrayOfR);
+      arrayOfR[0] = new r(bool, ExceptionExtensionGetmessage);
+      ExceptionInVPackage((ef[])arrayOfR);
       this.p.repaint();
     } 
   }
   
-  private void c(boolean paramBoolean) {
+  private void IInterfaceCharlie(boolean paramBoolean) {
     this.y = paramBoolean;
   }
   
-  private boolean a(ArrayList paramArrayList, String paramString) {
+  private boolean ExceptionInVPackage(ArrayList paramArrayList, String paramString) {
     Iterator<aM> iterator = paramArrayList.iterator();
     while (iterator.hasNext()) {
       if (((aM)iterator.next()).aL().equals(paramString))
@@ -937,150 +937,150 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     return false;
   }
   
-  public void a(String paramString1, String paramString2) {
-    if (a(this.b, paramString2)) {
-      g();
-    } else if (a(this.c, paramString2)) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
+    if (ExceptionInVPackage(this.b, paramString2)) {
+      ExceptionPrintstacktrace();
+    } else if (ExceptionInVPackage(this.IInterfaceCharlie, paramString2)) {
       h();
     } else {
       this.p.h(((aM)this.b.get(0)).s());
-      this.p.i(((aM)this.b.get(0)).r());
-      g();
+      this.p.RInterfaceIndia(((aM)this.b.get(0)).r());
+      ExceptionPrintstacktrace();
       h();
       try {
         v();
-      } catch (g g) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
     } 
   }
   
-  public void a(int paramInt1, int paramInt2, double paramDouble) {
-    if (this.c.isEmpty())
+  public void ExceptionInVPackage(int paramInt1, int paramInt2, double paramDouble) {
+    if (this.IInterfaceCharlie.isEmpty())
       return; 
-    paramInt1 = (paramInt1 < this.c.size()) ? paramInt1 : (this.c.size() - 1);
+    paramInt1 = (paramInt1 < this.IInterfaceCharlie.size()) ? paramInt1 : (this.IInterfaceCharlie.size() - 1);
     try {
-      if (!this.a.p().j() && p.a(this.P, this.a))
+      if (!this.ExceptionInVPackage.p().ExceptionExtensionGetmessage() && p.ExceptionInVPackage(this.P, this.ExceptionInVPackage))
         try {
-          ((aM)this.c.get(paramInt1)).a(this.a.p(), paramDouble, paramInt2, 0);
-        } catch (j j) {
-          this.p.a(paramInt1, paramInt2, j.c());
-        } catch (g g) {
-          D.a("Unable to set Curve X value of " + paramDouble, (Exception)g, this);
+          ((aM)this.IInterfaceCharlie.get(paramInt1)).ExceptionInVPackage(this.ExceptionInVPackage.p(), paramDouble, paramInt2, 0);
+        } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+          this.p.ExceptionInVPackage(paramInt1, paramInt2, ExceptionExtensionGetmessage.IInterfaceCharlie());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          D.ExceptionInVPackage("Unable to set Curve X value of " + paramDouble, (Exception)ExceptionPrintstacktrace, this);
         }  
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.b("Failed to update Curve Array Constant");
     } 
   }
   
   public void b(int paramInt1, int paramInt2, double paramDouble) {
-    if (!this.a.p().j())
+    if (!this.ExceptionInVPackage.p().ExceptionExtensionGetmessage())
       try {
-        ((aM)this.b.get(paramInt1)).a(this.a.p(), paramDouble, paramInt2, 0);
-      } catch (j j) {
+        ((aM)this.b.get(paramInt1)).ExceptionInVPackage(this.ExceptionInVPackage.p(), paramDouble, paramInt2, 0);
+      } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
         if (w())
-          this.p.b(paramInt1, paramInt2, j.c()); 
-      } catch (g g) {
-        D.a("Unable to set Curve Y value of " + paramDouble, (Exception)g, this);
+          this.p.b(paramInt1, paramInt2, ExceptionExtensionGetmessage.IInterfaceCharlie()); 
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Unable to set Curve Y value of " + paramDouble, (Exception)ExceptionPrintstacktrace, this);
       }  
   }
   
   private void v() {
-    boolean bool1 = Boolean.parseBoolean(this.z.b(i, "" + this.q.v()));
+    boolean bool1 = Boolean.parseBoolean(this.z.b(RInterfaceIndia, "" + this.q.v()));
     boolean bool2 = Boolean.parseBoolean(this.z.b(f, "" + this.q.v()));
-    this.p.d(bool2);
+    this.p.CInterfaceDelta(bool2);
     this.p.e(bool1);
     this.p.f();
     String str1 = null;
     byte b1;
     for (b1 = 0; b1 < this.b.size(); b1++) {
-      String str = (this.q.f(b1) != null) ? g.b(this.q.f(b1).a()) : null;
+      String str = (this.q.f(b1) != null) ? ExceptionPrintstacktrace.b(this.q.f(b1).ExceptionInVPackage()) : null;
       if (str == null || str.length() == 0)
         if (this.q.m() > 0) {
-          str = this.q.f(this.q.m() - 1).a();
-        } else if (this.c.size() > b1) {
-          str = ((aM)this.c.get(b1)).aL();
-        } else if (!this.c.isEmpty()) {
-          str = ((aM)this.c.get(this.c.size() - 1)).aL();
+          str = this.q.f(this.q.m() - 1).ExceptionInVPackage();
+        } else if (this.IInterfaceCharlie.size() > b1) {
+          str = ((aM)this.IInterfaceCharlie.get(b1)).aL();
+        } else if (!this.IInterfaceCharlie.isEmpty()) {
+          str = ((aM)this.IInterfaceCharlie.get(this.IInterfaceCharlie.size() - 1)).aL();
         } else {
           str = "";
         }  
-      if (this.c.size() > 0) {
-        boolean bool = (b1 < this.c.size()) ? b1 : (this.c.size() - 1);
-        if (!((aM)this.c.get(bool)).p().equals(""))
-          str = str + " (" + g.b(((aM)this.c.get(bool)).p()) + ")"; 
+      if (this.IInterfaceCharlie.size() > 0) {
+        boolean bool = (b1 < this.IInterfaceCharlie.size()) ? b1 : (this.IInterfaceCharlie.size() - 1);
+        if (!((aM)this.IInterfaceCharlie.get(bool)).p().equals(""))
+          str = str + " (" + ExceptionPrintstacktrace.b(((aM)this.IInterfaceCharlie.get(bool)).p()) + ")"; 
         if (str1 == null || !str1.equals(str)) {
-          this.p.a(str, b1);
+          this.p.ExceptionInVPackage(str, b1);
           str1 = str;
         } 
         if (b1 == 0)
-          this.p.g(Math.max(c(this.c), this.p.q())); 
+          this.p.ExceptionPrintstacktrace(Math.max(IInterfaceCharlie(this.IInterfaceCharlie), this.p.q())); 
       } else {
-        this.p.a(str, b1);
+        this.p.ExceptionInVPackage(str, b1);
       } 
     } 
     b1 = 0;
     String str2 = null;
     for (byte b2 = 0; b2 < this.b.size(); b2++) {
       String str;
-      if (this.q.c(b2) != null) {
-        str = g.b(this.q.c(b2).a()) + " " + g.b(((aM)this.b.get(b2)).p());
+      if (this.q.IInterfaceCharlie(b2) != null) {
+        str = ExceptionPrintstacktrace.b(this.q.IInterfaceCharlie(b2).ExceptionInVPackage()) + " " + ExceptionPrintstacktrace.b(((aM)this.b.get(b2)).p());
       } else {
-        str = g.b(((aM)this.b.get(b2)).p());
+        str = ExceptionPrintstacktrace.b(((aM)this.b.get(b2)).p());
       } 
       this.p.b(str, b2);
       str2 = str;
     } 
-    double d1 = a(h, this.q.c() / 2.0D);
-    double d2 = a(g, this.q.b());
-    if (d2 < this.q.b() || d2 > this.q.c())
+    double d1 = ExceptionInVPackage(h, this.q.IInterfaceCharlie() / 2.0D);
+    double d2 = ExceptionInVPackage(ExceptionPrintstacktrace, this.q.b());
+    if (d2 < this.q.b() || d2 > this.q.IInterfaceCharlie())
       d2 = this.q.b(); 
     if (d1 == d2) {
-      d1 = this.q.c();
+      d1 = this.q.IInterfaceCharlie();
       d2 = this.q.b();
-      this.z.a(g, "");
-      this.z.a(h, "");
+      this.z.ExceptionInVPackage(ExceptionPrintstacktrace, "");
+      this.z.ExceptionInVPackage(h, "");
     } 
     if (bool1) {
       d1 = Double.NEGATIVE_INFINITY;
       d2 = Double.MAX_VALUE;
     } 
-    double d3 = a(o, this.q.a());
+    double d3 = ExceptionInVPackage(o, this.q.ExceptionInVPackage());
     for (byte b3 = 0; b3 < this.b.size(); b3++) {
-      double[][] arrayOfDouble1 = ((aM)this.b.get(b3)).i(this.a.p());
+      double[][] arrayOfDouble1 = ((aM)this.b.get(b3)).RInterfaceIndia(this.ExceptionInVPackage.p());
       double[][] arrayOfDouble2 = null;
-      if (this.c != null && this.c.size() > 0) {
-        arrayOfDouble2 = ((aM)this.c.get(b1)).i(this.a.p());
-        this.p.a(((aM)this.c.get(b1)).B());
-        this.p.a(((aM)this.c.get(b1)).H());
+      if (this.IInterfaceCharlie != null && this.IInterfaceCharlie.size() > 0) {
+        arrayOfDouble2 = ((aM)this.IInterfaceCharlie.get(b1)).RInterfaceIndia(this.ExceptionInVPackage.p());
+        this.p.ExceptionInVPackage(((aM)this.IInterfaceCharlie.get(b1)).B());
+        this.p.ExceptionInVPackage(((aM)this.IInterfaceCharlie.get(b1)).H());
       } else {
         if (this.q.s() == null) {
           arrayOfDouble2 = new double[((aM)this.b.get(b3)).b()][1];
           for (byte b = 0; b < arrayOfDouble2.length; b++)
-            arrayOfDouble2[b][0] = (this.q.i() - this.q.h()) * b / arrayOfDouble2.length; 
+            arrayOfDouble2[b][0] = (this.q.RInterfaceIndia() - this.q.h()) * b / arrayOfDouble2.length; 
         } else {
           double[] arrayOfDouble = this.q.s();
           arrayOfDouble2 = new double[arrayOfDouble.length][1];
           for (byte b = 0; b < arrayOfDouble2.length; b++)
             arrayOfDouble2[b][0] = arrayOfDouble[b]; 
         } 
-        this.p.a(true);
+        this.p.ExceptionInVPackage(true);
       } 
       if (arrayOfDouble1.length != arrayOfDouble2.length)
-        D.a("SettingsCurve:" + this.q.aL() + " x/y size mismatch."); 
-      double d4 = a(e, this.q.i());
-      double d5 = a(d, this.q.h());
+        D.ExceptionInVPackage("SettingsCurve:" + this.q.aL() + " x/y size mismatch."); 
+      double d4 = ExceptionInVPackage(e, this.q.RInterfaceIndia());
+      double d5 = ExceptionInVPackage(CInterfaceDelta, this.q.h());
       if (d4 == d5) {
-        d4 = this.q.i();
+        d4 = this.q.RInterfaceIndia();
         d5 = this.q.h();
-        this.z.a(d, "");
-        this.z.a(e, "");
+        this.z.ExceptionInVPackage(CInterfaceDelta, "");
+        this.z.ExceptionInVPackage(e, "");
       } 
-      if (this.c.size() > 0 && (d5 < a(this.c) || d5 > b(this.c))) {
+      if (this.IInterfaceCharlie.size() > 0 && (d5 < ExceptionInVPackage(this.IInterfaceCharlie) || d5 > b(this.IInterfaceCharlie))) {
         d5 = this.q.h();
-        this.z.a(d, "" + this.q.h());
+        this.z.ExceptionInVPackage(CInterfaceDelta, "" + this.q.h());
       } 
-      if (bool2 && this.c != null) {
+      if (bool2 && this.IInterfaceCharlie != null) {
         d4 = Double.NEGATIVE_INFINITY;
         if (d4 > this.p.q()) {
           d4 = this.p.q();
@@ -1088,19 +1088,19 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
           d4 = this.q.h();
         } 
         for (byte b = 0; b < arrayOfDouble2.length; b++) {
-          this.p.a(b3, arrayOfDouble2[b][0], arrayOfDouble1[b][0]);
-          if (arrayOfDouble2[b][0] > d4 + ((aM)this.c.get(0)).B() * 2.0D) {
-            double d6 = (arrayOfDouble2[b][0] + ((aM)this.c.get(0)).B() * 2.0D > this.p.q()) ? arrayOfDouble2[b][0] : (arrayOfDouble2[b][0] + ((aM)this.c.get(0)).B() * 2.0D);
+          this.p.ExceptionInVPackage(b3, arrayOfDouble2[b][0], arrayOfDouble1[b][0]);
+          if (arrayOfDouble2[b][0] > d4 + ((aM)this.IInterfaceCharlie.get(0)).B() * 2.0D) {
+            double d6 = (arrayOfDouble2[b][0] + ((aM)this.IInterfaceCharlie.get(0)).B() * 2.0D > this.p.q()) ? arrayOfDouble2[b][0] : (arrayOfDouble2[b][0] + ((aM)this.IInterfaceCharlie.get(0)).B() * 2.0D);
             d4 = d6;
           } 
-          this.p.c(b3, b, ((aM)this.b.get(b3)).b(b));
+          this.p.IInterfaceCharlie(b3, b, ((aM)this.b.get(b3)).b(b));
         } 
       } else {
         for (byte b = 0; b < arrayOfDouble2.length; b++) {
           try {
-            this.p.a(b3, arrayOfDouble2[b][0], arrayOfDouble1[b][0]);
+            this.p.ExceptionInVPackage(b3, arrayOfDouble2[b][0], arrayOfDouble1[b][0]);
           } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
-            bV.d("Invalid number of values for curve. All X and Y arrats must be of the same size.", this);
+            bV.CInterfaceDelta("Invalid number of values for curve. All X and Y arrats must be of the same size.", this);
           } 
         } 
       } 
@@ -1121,29 +1121,29 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
           } 
         } 
       } else {
-        d1 = a(h, this.q.c());
+        d1 = ExceptionInVPackage(h, this.q.IInterfaceCharlie());
       } 
       this.p.e(d2);
-      this.p.d(d1);
-      this.p.c(d5);
+      this.p.CInterfaceDelta(d1);
+      this.p.IInterfaceCharlie(d5);
       this.p.b(d4);
       this.p.l((int)d3);
-      if (this.c.size() > b1 + 1)
+      if (this.IInterfaceCharlie.size() > b1 + 1)
         b1++; 
     } 
     if (this.q.z())
-      this.p.a(true); 
+      this.p.ExceptionInVPackage(true); 
   }
   
   public boolean hasFocus() {
-    return a(this);
+    return ExceptionInVPackage(this);
   }
   
-  private boolean a(Component paramComponent) {
+  private boolean ExceptionInVPackage(Component paramComponent) {
     if (paramComponent instanceof Container) {
       Container container = (Container)paramComponent;
       for (Component component : container.getComponents()) {
-        if (a(component))
+        if (ExceptionInVPackage(component))
           return true; 
       } 
     } 
@@ -1151,14 +1151,14 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   }
   
   public R b_() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
-  public bN i() {
+  public bN RInterfaceIndia() {
     return this.p;
   }
   
-  public T j() {
+  public T ExceptionExtensionGetmessage() {
     return (this.v != null) ? this.v : ((this.w != null) ? this.w : null);
   }
   
@@ -1182,10 +1182,10 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     if (a_() != null) {
       boolean bool = true;
       try {
-        bool = p.a(a_(), this.a);
+        bool = p.ExceptionInVPackage(a_(), this.ExceptionInVPackage);
         setEnabled(bool);
       } catch (Exception exception) {
-        D.a(exception.getMessage());
+        D.ExceptionInVPackage(exception.getMessage());
         exception.printStackTrace();
       } 
     } 
@@ -1195,15 +1195,15 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     boolean bool = true;
     if (a_() != null)
       try {
-        bool = p.a(a_(), this.a);
+        bool = p.ExceptionInVPackage(a_(), this.ExceptionInVPackage);
       } catch (Exception exception) {
-        D.a(exception.getMessage());
+        D.ExceptionInVPackage(exception.getMessage());
         exception.printStackTrace();
       }  
     return bool;
   }
   
-  public void a(K paramK) {
+  public void ExceptionInVPackage(K paramK) {
     this.O.add(paramK);
   }
   
@@ -1211,24 +1211,24 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     this.O.remove(paramK);
   }
   
-  private void d(String paramString) {
+  private void CInterfaceDelta(String paramString) {
     for (K k : this.O)
       k.b(paramString); 
   }
   
   private void e(String paramString) {
     for (K k : this.O)
-      k.a(paramString); 
+      k.ExceptionInVPackage(paramString); 
   }
   
-  public String d() {
+  public String CInterfaceDelta() {
     return ((aM)this.b.get(0)).aL();
   }
   
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
     this.p.setEnabled(paramBoolean);
-    fp.a((Component)this.p, paramBoolean);
+    fp.ExceptionInVPackage((Component)this.p, paramBoolean);
     if (this.u != null)
       this.u.setEnabled(paramBoolean); 
     if (this.r != null)
@@ -1242,80 +1242,80 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   public void n() {
     if (this.A == null || !this.A.isAlive())
       this.A = new aP(this); 
-    this.A.a();
+    this.A.ExceptionInVPackage();
   }
   
   private void f(String paramString) {
-    if (paramString.startsWith(d)) {
-      String str = bV.a(this, true, d, X.a(this.p.i()));
+    if (paramString.startsWith(CInterfaceDelta)) {
+      String str = bV.ExceptionInVPackage(this, true, CInterfaceDelta, X.ExceptionInVPackage(this.p.RInterfaceIndia()));
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
-        if (d1 < a(this.c) || d1 > b(this.c)) {
-          bV.d(str + " is out of range, value must be between " + a(this.c) + " and " + b(this.c), this);
+        if (d1 < ExceptionInVPackage(this.IInterfaceCharlie) || d1 > b(this.IInterfaceCharlie)) {
+          bV.CInterfaceDelta(str + " is out of range, value must be between " + ExceptionInVPackage(this.IInterfaceCharlie) + " and " + b(this.IInterfaceCharlie), this);
           return;
         } 
-        this.p.c(d1);
-        this.z.a(d, d1 + "");
+        this.p.IInterfaceCharlie(d1);
+        this.z.ExceptionInVPackage(CInterfaceDelta, d1 + "");
       } 
     } else if (paramString.startsWith(e)) {
-      String str = bV.a(this, true, e, X.a(this.p.h()));
+      String str = bV.ExceptionInVPackage(this, true, e, X.ExceptionInVPackage(this.p.h()));
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
-        if (d1 < a(this.c) || d1 > b(this.c)) {
-          bV.d(str + " is out of range, value must be between " + a(this.c) + " and " + b(this.c), this);
+        if (d1 < ExceptionInVPackage(this.IInterfaceCharlie) || d1 > b(this.IInterfaceCharlie)) {
+          bV.CInterfaceDelta(str + " is out of range, value must be between " + ExceptionInVPackage(this.IInterfaceCharlie) + " and " + b(this.IInterfaceCharlie), this);
           return;
         } 
-        this.z.a(f, "false");
+        this.z.ExceptionInVPackage(f, "false");
         this.p.b(d1);
-        this.z.a(e, d1 + "");
+        this.z.ExceptionInVPackage(e, d1 + "");
       } 
-    } else if (paramString.startsWith(g)) {
-      String str = bV.a(this, true, g, X.a(this.p.k()));
+    } else if (paramString.startsWith(ExceptionPrintstacktrace)) {
+      String str = bV.ExceptionInVPackage(this, true, ExceptionPrintstacktrace, X.ExceptionInVPackage(this.p.k()));
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
-        if (d1 < a(this.b) || d1 > b(this.b)) {
-          bV.d(str + " is out of range, value must be between " + a(this.b) + " and " + b(this.b), this);
+        if (d1 < ExceptionInVPackage(this.b) || d1 > b(this.b)) {
+          bV.CInterfaceDelta(str + " is out of range, value must be between " + ExceptionInVPackage(this.b) + " and " + b(this.b), this);
           return;
         } 
         this.p.e(d1);
-        this.z.a(g, d1 + "");
+        this.z.ExceptionInVPackage(ExceptionPrintstacktrace, d1 + "");
       } 
     } else if (paramString.startsWith(o)) {
-      String str = bV.a(this, true, o, X.a(this.p.K()));
+      String str = bV.ExceptionInVPackage(this, true, o, X.ExceptionInVPackage(this.p.K()));
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
         if (d1 < 1.0D) {
-          bV.d(str + " is out of range, value must be greater than 1", this);
+          bV.CInterfaceDelta(str + " is out of range, value must be greater than 1", this);
           return;
         } 
         this.p.l((int)d1);
-        this.z.a(o, d1 + "");
+        this.z.ExceptionInVPackage(o, d1 + "");
       } 
     } else if (paramString.startsWith(h)) {
-      String str = bV.a(this, true, h, X.a(this.p.j()));
+      String str = bV.ExceptionInVPackage(this, true, h, X.ExceptionInVPackage(this.p.ExceptionExtensionGetmessage()));
       if (str != null && !str.equals("")) {
         double d1 = Double.parseDouble(str);
-        if (d1 < a(this.b) || d1 > b(this.b)) {
-          bV.d(str + " is out of range, value must be between " + a(this.b) + " and " + b(this.b), this);
+        if (d1 < ExceptionInVPackage(this.b) || d1 > b(this.b)) {
+          bV.CInterfaceDelta(str + " is out of range, value must be between " + ExceptionInVPackage(this.b) + " and " + b(this.b), this);
           return;
         } 
-        this.z.a(i, "false");
-        this.p.d(d1);
-        this.z.a(h, d1 + "");
+        this.z.ExceptionInVPackage(RInterfaceIndia, "false");
+        this.p.CInterfaceDelta(d1);
+        this.z.ExceptionInVPackage(h, d1 + "");
       } 
     } else if (paramString.equals(k)) {
-      String str = bV.a(this, true, k + " (s)", X.a((this.p.G() / 1000)));
+      String str = bV.ExceptionInVPackage(this, true, k + " (s)", X.ExceptionInVPackage((this.p.G() / 1000)));
       if (str != null && !str.equals("")) {
-        int j = (int)(Double.parseDouble(str) * 1000.0D);
-        this.p.k(j);
-        this.z.a(k, j + "");
+        int ExceptionExtensionGetmessage = (int)(Double.parseDouble(str) * 1000.0D);
+        this.p.k(ExceptionExtensionGetmessage);
+        this.z.ExceptionInVPackage(k, ExceptionExtensionGetmessage + "");
       } 
     } else if (paramString.equals(m)) {
       this.p.v();
       this.p.o();
       this.p.repaint();
-    } else if (paramString.equals(j)) {
-      c(!this.y);
+    } else if (paramString.equals(ExceptionExtensionGetmessage)) {
+      IInterfaceCharlie(!this.y);
       this.p.repaint();
     } 
     this.p.repaint();
@@ -1324,10 +1324,10 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   private void b(int paramInt1, int paramInt2) {
     JPopupMenu jPopupMenu = new JPopupMenu();
     ap ap = new ap(this);
-    String str1 = this.z.b(g, "");
-    String str2 = (str1.length() == 0) ? g : (g + " (" + str1 + ")");
+    String str1 = this.z.b(ExceptionPrintstacktrace, "");
+    String str2 = (str1.length() == 0) ? ExceptionPrintstacktrace : (ExceptionPrintstacktrace + " (" + str1 + ")");
     JMenuItem jMenuItem = jPopupMenu.add(str2);
-    jMenuItem.setActionCommand(g);
+    jMenuItem.setActionCommand(ExceptionPrintstacktrace);
     jMenuItem.addActionListener(ap);
     if (str1.length() > 0) {
       jMenuItem = jPopupMenu.add("Reset Y Axis Minimum to Default (" + this.q.b() + ")");
@@ -1339,17 +1339,17 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     jMenuItem.setActionCommand(h);
     jMenuItem.addActionListener(ap);
     if (str1.length() > 0) {
-      jMenuItem = jPopupMenu.add("Reset Y Axis Maximum to Default (" + this.q.c() + ")");
+      jMenuItem = jPopupMenu.add("Reset Y Axis Maximum to Default (" + this.q.IInterfaceCharlie() + ")");
       jMenuItem.addActionListener(new ar(this));
     } 
-    boolean bool = Boolean.parseBoolean(this.z.b(i, "" + this.Q));
-    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(i, bool);
+    boolean bool = Boolean.parseBoolean(this.z.b(RInterfaceIndia, "" + this.Q));
+    JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(RInterfaceIndia, bool);
     jCheckBoxMenuItem.addActionListener(new as(this));
     jPopupMenu.add(jCheckBoxMenuItem);
-    str1 = this.z.b(d, "");
-    str2 = (str1.length() == 0) ? d : (d + " (" + str1 + ")");
+    str1 = this.z.b(CInterfaceDelta, "");
+    str2 = (str1.length() == 0) ? CInterfaceDelta : (CInterfaceDelta + " (" + str1 + ")");
     jMenuItem = jPopupMenu.add(str2);
-    jMenuItem.setActionCommand(d);
+    jMenuItem.setActionCommand(CInterfaceDelta);
     jMenuItem.addActionListener(ap);
     if (str1.length() > 0) {
       jMenuItem = jPopupMenu.add("Reset X Axis Minimum to Default (" + this.q.h() + ")");
@@ -1361,14 +1361,14 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
     jMenuItem.setActionCommand(e);
     jMenuItem.addActionListener(ap);
     if (str1.length() > 0) {
-      jMenuItem = jPopupMenu.add("Reset X Axis Maximum to Default (" + this.q.i() + ")");
+      jMenuItem = jPopupMenu.add("Reset X Axis Maximum to Default (" + this.q.RInterfaceIndia() + ")");
       jMenuItem.addActionListener(new au(this));
     } 
     bool = Boolean.parseBoolean(this.z.b(f, "" + this.Q));
     jCheckBoxMenuItem = new JCheckBoxMenuItem(f, bool);
     jCheckBoxMenuItem.addActionListener(new av(this));
     jPopupMenu.add(jCheckBoxMenuItem);
-    if (i.a().a(";lkdsaop9ewqewqgd")) {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage(";lkdsaop9ewqewqgd")) {
       jPopupMenu.addSeparator();
       jPopupMenu.add(k).addActionListener(ap);
       boolean bool1 = Boolean.parseBoolean(this.z.b(l, "false"));
@@ -1376,14 +1376,14 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
       jCheckBoxMenuItem.addActionListener(new aw(this));
       jPopupMenu.add(jCheckBoxMenuItem);
       jPopupMenu.add(m).addActionListener(ap);
-      if (i.a().a("67hgyusg432gvrewhgfds")) {
+      if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("67hgyusg432gvrewhgfds")) {
         boolean bool2 = Boolean.parseBoolean(this.z.b(n, "" + this.q.A()));
         jCheckBoxMenuItem = new JCheckBoxMenuItem(n, bool2);
         jCheckBoxMenuItem.addActionListener(new ax(this));
-        jCheckBoxMenuItem.setEnabled((c.a().e() != null));
+        jCheckBoxMenuItem.setEnabled((IInterfaceCharlie.ExceptionInVPackage().e() != null));
         jPopupMenu.add(jCheckBoxMenuItem);
       } 
-      jCheckBoxMenuItem = new JCheckBoxMenuItem(j, this.y);
+      jCheckBoxMenuItem = new JCheckBoxMenuItem(ExceptionExtensionGetmessage, this.y);
       jCheckBoxMenuItem.addActionListener(ap);
       jPopupMenu.add(jCheckBoxMenuItem);
       str1 = this.z.b(o, "");
@@ -1392,7 +1392,7 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
       jMenuItem.setActionCommand(o);
       jMenuItem.addActionListener(ap);
       if (str1.length() > 0) {
-        jMenuItem = jPopupMenu.add("Reset Coarse Step Count to Default (" + this.q.a() + ")");
+        jMenuItem = jPopupMenu.add("Reset Coarse Step Count to Default (" + this.q.ExceptionInVPackage() + ")");
         jMenuItem.addActionListener(new ay(this));
       } 
     } 
@@ -1402,14 +1402,14 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   
   private void x() {
     boolean bool = !Boolean.parseBoolean(this.z.b(l, "false")) ? true : false;
-    this.z.a(l, bool + "");
+    this.z.ExceptionInVPackage(l, bool + "");
     this.p.f(bool);
     this.p.o();
     this.p.repaint();
   }
   
-  public double a(String paramString, double paramDouble) {
-    String str = this.z.a(paramString);
+  public double ExceptionInVPackage(String paramString, double paramDouble) {
+    String str = this.z.ExceptionInVPackage(paramString);
     if (str == null || str.equals(""))
       return paramDouble; 
     try {
@@ -1422,54 +1422,54 @@ public class an extends JPanel implements aN, cq, L, d, bS, bc {
   public Double[][] o() {
     Double[][] arrayOfDouble;
     if (this.F && this.v != null)
-      return this.v.e().i(); 
+      return this.v.e().RInterfaceIndia(); 
     if (this.F && this.w != null)
-      return this.w.e().i(); 
-    int j = 0;
+      return this.w.e().RInterfaceIndia(); 
+    int ExceptionExtensionGetmessage = 0;
     if (this.q.z()) {
       arrayOfDouble = new Double[this.b.size()][((aM)this.b.get(0)).b()];
     } else {
-      arrayOfDouble = new Double[this.b.size() + this.c.size()][((aM)this.b.get(0)).b()];
-      for (byte b = 0; b < this.c.size(); b++) {
-        aM aM = this.c.get(b);
+      arrayOfDouble = new Double[this.b.size() + this.IInterfaceCharlie.size()][((aM)this.b.get(0)).b()];
+      for (byte b = 0; b < this.IInterfaceCharlie.size(); b++) {
+        aM aM = this.IInterfaceCharlie.get(b);
         try {
-          double[][] arrayOfDouble1 = aM.i(this.a.h());
+          double[][] arrayOfDouble1 = aM.RInterfaceIndia(this.ExceptionInVPackage.h());
           for (byte b1 = 0; b1 < aM.b(); b1++)
             arrayOfDouble[b][b1] = Double.valueOf(arrayOfDouble1[b1][0]); 
-        } catch (g g) {
-          D.a("Failed to get values for Curve xParam: " + aM.aL());
-          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          D.ExceptionInVPackage("Failed to get values for Curve xParam: " + aM.aL());
+          Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
       } 
-      j = this.c.size();
+      ExceptionExtensionGetmessage = this.IInterfaceCharlie.size();
     } 
-    for (int k = j; k < this.b.size(); k++) {
-      aM aM = this.b.get(k - j);
+    for (int k = ExceptionExtensionGetmessage; k < this.b.size(); k++) {
+      aM aM = this.b.get(k - ExceptionExtensionGetmessage);
       try {
-        double[][] arrayOfDouble1 = aM.i(this.a.h());
+        double[][] arrayOfDouble1 = aM.RInterfaceIndia(this.ExceptionInVPackage.h());
         for (byte b = 0; b < aM.b(); b++)
           arrayOfDouble[k][b] = Double.valueOf(arrayOfDouble1[b][0]); 
-      } catch (g g) {
-        D.a("Failed to get values for Curve yParam: " + aM.aL());
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Failed to get values for Curve yParam: " + aM.aL());
+        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
     } 
     return arrayOfDouble;
   }
   
-  public void a(Double[][] paramArrayOfDouble) {
+  public void ExceptionInVPackage(Double[][] paramArrayOfDouble) {
     if (this.F && this.v != null) {
-      this.v.e().a(paramArrayOfDouble);
+      this.v.e().ExceptionInVPackage(paramArrayOfDouble);
     } else if (this.F && this.w != null) {
-      this.w.e().a(paramArrayOfDouble);
+      this.w.e().ExceptionInVPackage(paramArrayOfDouble);
     } 
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     this.r.setVisible(paramBoolean);
   }
   
-  public void a(int paramInt1, int paramInt2) {
+  public void ExceptionInVPackage(int paramInt1, int paramInt2) {
     this.p.b(paramInt1, paramInt2);
   }
 }

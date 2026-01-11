@@ -1,67 +1,67 @@
 package ao;
 
 import W.W;
-import Z.b;
-import ap.a;
-import ap.b;
-import ap.c;
-import at.c;
+import Z.ZInterfaceBravo;
+import ap.ApInterfaceAlpha;
+import ap.ZInterfaceBravo;
+import ap.ApComponentCharlie;
+import at.ApComponentCharlie;
 import bH.A;
-import bv.a;
+import bv.ApInterfaceAlpha;
 import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.bV;
-import d.c;
-import d.g;
-import h.b;
-import h.i;
-import i.f;
-import i.g;
+import d.ApComponentCharlie;
+import d.HashMapUsingArrayList;
+import h.ZInterfaceBravo;
+import h.IOProperties;
+import IOProperties.f;
+import IOProperties.HashMapUsingArrayList;
 import javax.swing.SwingUtilities;
 
 public class fw {
-  public void a() {
-    char c = 'Ϩ';
-    for (byte b = 0; b < '✐' && c < '܈'; b++)
-      c++; 
-    (A.i()).c = c + 166;
-    A.i().a("TunerStudio", "MS", "https://www.efianalytics.com/TunerStudio/download/");
-    A.i().a("TunerStudio", "MS Ultra", "https://www.efianalytics.com/TunerStudio/download/");
-    A.i().a("TunerStudio", "MS Dev", "https://www.efianalytics.com/TunerStudio/download/");
-    A.i().a("MegaLogViewer", "MS", "https://www.efianalytics.com/MegaLogViewer/download/");
-    A.i().a("MegaLogViewer", "HD", "https://www.efianalytics.com/MegaLogViewerHD/download/");
-    A.i().a("MegaLogViewer", "BigStuff3", "https://www.bigcommpro.com/downloads");
-    A.i().a("Shadow Dash MS", "", "https://www.tunerstudio.com/index.php/downloads");
-    A.i().a("Big Dash", "", "https://www.bigcommpro.com/software/bigdash");
-    A.i().a("Big Replay Upload", "", "https://www.bigcommpro.com/software/bigreplay");
-    A.i().a("BigComm", "Pro", "https://bigcommpro.com/software/bigcomm-pro");
-    A.i().a("BigComm", "Pro Single", "https://bigcommpro.com/software/bigcomm-pro");
-    W.a().a(new fx(this));
-    BinTableView.f(b.a().a("tablePremium"));
-    a a = new a();
-    g.a().a(a.a(), (c)a);
-    if (b.a().a("fa-9fdspoijoijnfdz09jfdsa098j")) {
-      String str = c.a().d();
+  public void ApInterfaceAlpha() {
+    char ApComponentCharlie = 'Ϩ';
+    for (byte ZInterfaceBravo = 0; ZInterfaceBravo < '✐' && ApComponentCharlie < '܈'; ZInterfaceBravo++)
+      ApComponentCharlie++; 
+    (A.IOProperties()).ApComponentCharlie = ApComponentCharlie + 166;
+    A.IOProperties().ApInterfaceAlpha("TunerStudio", "MS", "https://www.efianalytics.com/TunerStudio/download/");
+    A.IOProperties().ApInterfaceAlpha("TunerStudio", "MS Ultra", "https://www.efianalytics.com/TunerStudio/download/");
+    A.IOProperties().ApInterfaceAlpha("TunerStudio", "MS Dev", "https://www.efianalytics.com/TunerStudio/download/");
+    A.IOProperties().ApInterfaceAlpha("MegaLogViewer", "MS", "https://www.efianalytics.com/MegaLogViewer/download/");
+    A.IOProperties().ApInterfaceAlpha("MegaLogViewer", "HD", "https://www.efianalytics.com/MegaLogViewerHD/download/");
+    A.IOProperties().ApInterfaceAlpha("MegaLogViewer", "BigStuff3", "https://www.bigcommpro.com/downloads");
+    A.IOProperties().ApInterfaceAlpha("Shadow Dash MS", "", "https://www.tunerstudio.com/index.php/downloads");
+    A.IOProperties().ApInterfaceAlpha("Big Dash", "", "https://www.bigcommpro.com/software/bigdash");
+    A.IOProperties().ApInterfaceAlpha("Big Replay Upload", "", "https://www.bigcommpro.com/software/bigreplay");
+    A.IOProperties().ApInterfaceAlpha("BigComm", "Pro", "https://bigcommpro.com/software/bigcomm-pro");
+    A.IOProperties().ApInterfaceAlpha("BigComm", "Pro Single", "https://bigcommpro.com/software/bigcomm-pro");
+    W.ApInterfaceAlpha().ApInterfaceAlpha(new fx(this));
+    BinTableView.f(ZInterfaceBravo.ApInterfaceAlpha().ApInterfaceAlpha("tablePremium"));
+    ApInterfaceAlpha ApInterfaceAlpha = new ApInterfaceAlpha();
+    HashMapUsingArrayList.ApInterfaceAlpha().ApInterfaceAlpha(ApInterfaceAlpha.ApInterfaceAlpha(), (ApComponentCharlie)ApInterfaceAlpha);
+    if (ZInterfaceBravo.ApInterfaceAlpha().ApInterfaceAlpha("fa-9fdspoijoijnfdz09jfdsa098j")) {
+      String str = ApComponentCharlie.ApInterfaceAlpha().d();
       if (!str.equals(""))
-        c.a().a(str, true); 
-      i.a(new fy(this));
+        ApComponentCharlie.ApInterfaceAlpha().ApInterfaceAlpha(str, true); 
+      IOProperties.ApInterfaceAlpha(new fy(this));
     } 
-    c();
+    ApComponentCharlie();
     fz fz = new fz(this);
     SwingUtilities.invokeLater(fz);
   }
   
-  private void b() {
-    g.a().a((f)new a());
-    if (b.a().a("okdsas32lkg09832jnegm7"))
-      g.a().a((f)new c()); 
-    g.a().a((f)new b());
-    g.a().b();
-    bV.g();
+  private void ZInterfaceBravo() {
+    HashMapUsingArrayList.ApInterfaceAlpha().ApInterfaceAlpha((f)new ApInterfaceAlpha());
+    if (ZInterfaceBravo.ApInterfaceAlpha().ApInterfaceAlpha("okdsas32lkg09832jnegm7"))
+      HashMapUsingArrayList.ApInterfaceAlpha().ApInterfaceAlpha((f)new ApComponentCharlie()); 
+    HashMapUsingArrayList.ApInterfaceAlpha().ApInterfaceAlpha((f)new ZInterfaceBravo());
+    HashMapUsingArrayList.ApInterfaceAlpha().ZInterfaceBravo();
+    bV.HashMapUsingArrayList();
   }
   
-  private void c() {
-    b.a().a(new ep());
-    b.a().b();
+  private void ApComponentCharlie() {
+    ZInterfaceBravo.ApInterfaceAlpha().ApInterfaceAlpha(new ep());
+    ZInterfaceBravo.ApInterfaceAlpha().ZInterfaceBravo();
   }
 }
 

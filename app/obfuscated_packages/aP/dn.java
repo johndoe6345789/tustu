@@ -1,17 +1,17 @@
 package aP;
 
-import aE.c;
-import r.a;
+import aE.AeInterfaceCharlie;
+import r.IOPropertiesUsingFile;
 
-class dn implements c {
+class dn implements AeInterfaceCharlie {
   dn(dl paramdl) {}
   
-  public String a() {
-    return a.b;
+  public String IOPropertiesUsingFile() {
+    return IOPropertiesUsingFile.b;
   }
   
   public String b() {
-    return a.cw;
+    return IOPropertiesUsingFile.cw;
   }
 }
 

@@ -1,8 +1,8 @@
 package aP;
 
-import bA.b;
-import bA.d;
-import bA.f;
+import bA.BaInterfaceBravo;
+import bA.BaInterfaceDelta;
+import bA.BaInterfaceFoxtrot;
 import bH.D;
 import com.efiAnalytics.ui.ci;
 import java.awt.Component;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import javax.swing.JMenuBar;
 
-class gQ extends JMenuBar implements d {
+class gQ extends JMenuBar implements BaInterfaceDelta {
   HashMap a = new HashMap<>();
   
   gQ(dB paramdB) {}
@@ -19,38 +19,38 @@ class gQ extends JMenuBar implements d {
     remove(paramComponent);
   }
   
-  public f a(String paramString, int paramInt) {
-    return (f)getMenu(paramInt);
+  public BaInterfaceFoxtrot a(String paramString, int paramInt) {
+    return (BaInterfaceFoxtrot)getMenu(paramInt);
   }
   
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
     Component[] arrayOfComponent = getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (paramBoolean && arrayOfComponent[b] instanceof f) {
-        f f = (f)arrayOfComponent[b];
-        ci ci = f.c();
-        boolean bool = (ci == null || ci.a(f.d())) ? true : false;
+    for (byte BaInterfaceBravo = 0; BaInterfaceBravo < arrayOfComponent.length; BaInterfaceBravo++) {
+      if (paramBoolean && arrayOfComponent[BaInterfaceBravo] instanceof BaInterfaceFoxtrot) {
+        BaInterfaceFoxtrot BaInterfaceFoxtrot = (BaInterfaceFoxtrot)arrayOfComponent[BaInterfaceBravo];
+        ci ci = BaInterfaceFoxtrot.c();
+        boolean bool = (ci == null || ci.a(BaInterfaceFoxtrot.BaInterfaceDelta())) ? true : false;
         try {
-          f.setEnabled(bool);
+          BaInterfaceFoxtrot.setEnabled(bool);
         } catch (Exception exception) {
           D.c("Error trying to call setEnabled on Root Menu");
         } 
         try {
-          f.setVisible((f.i() == null || f.i().a()));
+          BaInterfaceFoxtrot.setVisible((BaInterfaceFoxtrot.i() == null || BaInterfaceFoxtrot.i().a()));
         } catch (Exception exception) {}
-      } else if (arrayOfComponent[b] != null) {
+      } else if (arrayOfComponent[BaInterfaceBravo] != null) {
         try {
-          arrayOfComponent[b].setEnabled(paramBoolean);
+          arrayOfComponent[BaInterfaceBravo].setEnabled(paramBoolean);
         } catch (Exception exception) {
-          D.c("Error trying to call setEnabled, i=" + b);
+          D.c("Error trying to call setEnabled, i=" + BaInterfaceBravo);
           exception.printStackTrace();
         } 
       } 
     } 
   }
   
-  public b a() {
+  public BaInterfaceBravo a() {
     return new gR(this);
   }
   
@@ -58,7 +58,7 @@ class gQ extends JMenuBar implements d {
     return getMenuCount();
   }
   
-  public int b() {
+  public int BaInterfaceBravo() {
     int i = 0;
     for (ArrayList arrayList : this.a.values())
       i += arrayList.size(); 
@@ -80,7 +80,7 @@ class gQ extends JMenuBar implements d {
     return arrayList;
   }
   
-  public void b(String paramString) {
+  public void BaInterfaceBravo(String paramString) {
     this.a.remove(paramString);
   }
 }

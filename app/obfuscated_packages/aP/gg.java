@@ -1,9 +1,9 @@
 package aP;
 
 import G.T;
-import c.e;
+import c.CInterfaceEcho;
 
-class gg implements e {
+class gg implements CInterfaceEcho {
   gg(dB paramdB) {}
   
   public boolean a() {

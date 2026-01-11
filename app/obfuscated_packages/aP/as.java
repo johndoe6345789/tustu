@@ -1,6 +1,6 @@
 package aP;
 
-import aE.d;
+import aE.CloneableImpl;
 import com.efiAnalytics.ui.eh;
 import com.efiAnalytics.ui.fp;
 import java.awt.Component;
@@ -10,18 +10,18 @@ class as implements eh {
   as(aq paramaq) {}
   
   public void a(DefaultListModel paramDefaultListModel) {
-    d d = new d();
-    d.a("CAN" + ((this.a.a.a()).length + 1));
-    d.b("My CAN Controller");
-    this.a.a.a(d);
-    this.a.a.b(d);
-    this.a.d.a(d);
-    this.a.d.a(true);
-    fp.a((Component)this.a.d, true);
+    CloneableImpl CloneableImpl = new CloneableImpl();
+    CloneableImpl.a("CAN" + ((this.a.a.a()).length + 1));
+    CloneableImpl.b("My CAN Controller");
+    this.a.a.a(CloneableImpl);
+    this.a.a.b(CloneableImpl);
+    this.a.CloneableImpl.a(CloneableImpl);
+    this.a.CloneableImpl.a(true);
+    fp.a((Component)this.a.CloneableImpl, true);
   }
   
   public boolean a(Object paramObject, int paramInt) {
-    this.a.d.validate();
+    this.a.CloneableImpl.validate();
     return true;
   }
   
@@ -30,18 +30,18 @@ class as implements eh {
   }
   
   public void a(Object paramObject) {
-    this.a.d.a((d)paramObject);
-    this.a.d.setEnabled(true);
+    this.a.CloneableImpl.a((CloneableImpl)paramObject);
+    this.a.CloneableImpl.setEnabled(true);
     if (this.a.getParent() != null)
       this.a.getParent().validate(); 
-    this.a.d.a(false);
+    this.a.CloneableImpl.a(false);
   }
   
   public void b(Object paramObject) {
-    this.a.d.setEnabled(false);
-    this.a.d.a();
-    this.a.d.c();
-    this.a.d.validate();
+    this.a.CloneableImpl.setEnabled(false);
+    this.a.CloneableImpl.a();
+    this.a.CloneableImpl.c();
+    this.a.CloneableImpl.validate();
     if (this.a.getParent() != null)
       this.a.getParent().validate(); 
   }

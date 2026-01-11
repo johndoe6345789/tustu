@@ -1,8 +1,8 @@
 package G;
 
-import V.g;
-import ax.Q;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.ArrayListUsingPattern;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.G;
 import bH.I;
@@ -60,7 +60,7 @@ public class bM {
         if (bv != null) {
           bq bq = b(bv, paramString);
           if (bq != null)
-            return b(aA.e()) + " --> " + b(aA1.e()) + " --> " + b(g(paramR, paramString)); 
+            return b(aA.e()) + " --> " + b(aA1.e()) + " --> " + b(ExceptionPrintstacktrace(paramR, paramString)); 
         } 
       } 
     } 
@@ -132,9 +132,9 @@ public class bM {
       try {
         if (str2 == null || str2.equals("") || p.a(str2, paramR))
           arrayList.add(bv); 
-      } catch (g g) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.a("An Error occured while evaluating " + str2);
-        g.printStackTrace();
+        ExceptionPrintstacktrace.printStackTrace();
       } 
     } 
     return arrayList;
@@ -178,8 +178,8 @@ public class bM {
         arrayList.add(aS.h()); 
       if (aS.o() != null)
         arrayList.add(aS.o()); 
-      if (aS.g() != null)
-        arrayList.add(aS.g()); 
+      if (aS.ExceptionPrintstacktrace() != null)
+        arrayList.add(aS.ExceptionPrintstacktrace()); 
       if (aS.f() != null)
         arrayList.add(aS.f()); 
       if (aS.k() != null)
@@ -231,14 +231,14 @@ public class bM {
       if (aM != null) {
         if (hashMap.get(Integer.valueOf(aM.d())) != null) {
           cj cj1 = (cj)hashMap.get(Integer.valueOf(aM.d()));
-          int i = Math.max(cj1.b() + cj1.c(), aM.g() + aM.z());
-          int j = Math.min(cj1.b(), aM.g());
+          int i = Math.max(cj1.b() + cj1.c(), aM.ExceptionPrintstacktrace() + aM.z());
+          int j = Math.min(cj1.b(), aM.ExceptionPrintstacktrace());
           cj1.a(j);
           cj1.b(i - j);
           continue;
         } 
         cj cj = new cj(aM.d());
-        cj.a(aM.g());
+        cj.a(aM.ExceptionPrintstacktrace());
         cj.b(aM.z());
         hashMap.put(Integer.valueOf(aM.d()), cj);
         continue;
@@ -301,10 +301,10 @@ public class bM {
   }
   
   public static String e(R paramR, String paramString) {
-    Q q = new Q();
+    ArrayListUsingPattern q = new ArrayListUsingPattern();
     try {
       q.a(paramString);
-    } catch (U u) {
+    } catch (ExceptionInAxPackage u) {
       Logger.getLogger(bM.class.getName()).log(Level.SEVERE, (String)null, (Throwable)u);
       return paramString;
     } 
@@ -313,7 +313,7 @@ public class bM {
     String[] arrayOfString1 = q.a();
     String[] arrayOfString2 = new String[arrayOfString1.length];
     for (byte b = 0; b < arrayOfString1.length; b++) {
-      arrayOfString2[b] = g(paramR, arrayOfString1[b]);
+      arrayOfString2[b] = ExceptionPrintstacktrace(paramR, arrayOfString1[b]);
       stringBuilder = X.a(stringBuilder, arrayOfString1[b], arrayOfString2[b]);
     } 
     stringBuilder = X.a(stringBuilder, "&&", " AND ");
@@ -391,7 +391,7 @@ public class bM {
     return stringBuilder.toString();
   }
   
-  public static String g(R paramR, String paramString) {
+  public static String ExceptionPrintstacktrace(R paramR, String paramString) {
     bq bq = d(paramR, paramString);
     if (bq != null && bq.l().length() > 0)
       return bq.l(); 
@@ -400,7 +400,7 @@ public class bM {
   }
   
   public static ac h(R paramR, String paramString) {
-    ArrayList<ac> arrayList = paramR.g();
+    ArrayList<ac> arrayList = paramR.ExceptionPrintstacktrace();
     for (byte b = 0; b < arrayList.size(); b++) {
       ac ac = arrayList.get(b);
       if (ac != null && ac.a() != null && ac.a().equals(paramString))
@@ -447,7 +447,7 @@ public class bM {
     } 
     try {
       return p.a(str, paramR);
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       return true;
     } 
   }
@@ -488,11 +488,11 @@ public class bM {
   }
   
   public static String j(R paramR, String paramString) {
-    for (ac ac : paramR.g()) {
+    for (ac ac : paramR.ExceptionPrintstacktrace()) {
       if (ac.a() != null && ac.a().equals(paramString))
         return ac.b(); 
     } 
-    aH aH = paramR.g(paramString);
+    aH aH = paramR.ExceptionPrintstacktrace(paramString);
     if (aH != null && aH.b().equals("formula") && aH.k() != null && aH.k().trim().startsWith("selectExpression("))
       try {
         String str1 = X.b(aH.k().trim(), "selectExpression(", "");
@@ -555,7 +555,7 @@ public class bM {
           if (aA.d() != null && !aA.d().isEmpty())
             arrayList.add(aA); 
         } 
-      } catch (g g) {}
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } 
     return arrayList;
   }
@@ -583,7 +583,7 @@ public class bM {
         } 
         if (aA1.c() && aA != null && !aA.c() && paramIterator.hasNext())
           aA = aA1; 
-      } catch (g g) {}
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } 
   }
   

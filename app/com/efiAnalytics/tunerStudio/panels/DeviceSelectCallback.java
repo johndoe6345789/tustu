@@ -1,14 +1,14 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import aP.V;
-import aP.W;
+import aP.EqualsTostring;
+import aP.ApInterfaceWhiskey;
 import java.awt.Cursor;
 import javax.swing.SwingUtilities;
 
-class DeviceSelectCallback implements W {
+class DeviceSelectCallback implements ApInterfaceWhiskey {
   DeviceSelectCallback(CanDeviceConfigPanel parama) {}
   
-  public void a(V paramV) {
+  public void a(EqualsTostring paramV) {
     if (paramV.b() != null) {
       this.a.g.setCursor(Cursor.getPredefinedCursor(3));
       e e = new e(this, paramV);

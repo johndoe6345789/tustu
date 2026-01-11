@@ -5,23 +5,23 @@ import G.aM;
 import G.aR;
 import G.bM;
 import G.be;
-import V.a;
+import V.ExceptionInVPackage;
 import W.j;
 import W.n;
 import bH.D;
 import bt.bP;
 import bt.p;
-import i.a;
-import i.c;
+import i.ExceptionInVPackage;
+import i.IInterfaceCharlie;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TableDataLogListener implements bP, a {
-  p a;
+public class TableDataLogListener implements bP, ExceptionInVPackage {
+  p ExceptionInVPackage;
   
   R b;
   
-  be c;
+  be IInterfaceCharlie;
   
   String d = null;
   
@@ -37,9 +37,9 @@ public class TableDataLogListener implements bP, a {
   
   public TableDataLogListener(R paramR, be parambe, p paramp) {
     this.b = paramR;
-    this.a = paramp;
-    this.c = parambe;
-    c();
+    this.ExceptionInVPackage = paramp;
+    this.IInterfaceCharlie = parambe;
+    IInterfaceCharlie();
     this.d = bM.j(paramR, parambe.d());
     if (this.d == null && parambe.d() != null && parambe.d().equals("rpm") && paramR.g("RpmHiRes") != null)
       this.d = bM.j(paramR, "RpmHiRes"); 
@@ -47,41 +47,41 @@ public class TableDataLogListener implements bP, a {
       this.d = parambe.g(); 
     if (this.d == null)
       D.b("No Data Log field defined for X axis of table: " + parambe.aL()); 
-    if (paramR.c("LKUP_PARAMETER") != null && paramR.c("LOAD_AXIS_SCALE") != null) {
+    if (paramR.IInterfaceCharlie("LKUP_PARAMETER") != null && paramR.IInterfaceCharlie("LOAD_AXIS_SCALE") != null) {
       this.i = new TableParameterChangeListener(this);
       try {
-        aR.a().a(paramR.c(), "LKUP_PARAMETER", this.i);
-        aR.a().a(paramR.c(), "LOAD_AXIS_SCALE", this.i);
-      } catch (a a1) {
+        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LKUP_PARAMETER", this.i);
+        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LOAD_AXIS_SCALE", this.i);
+      } catch (ExceptionInVPackage a1) {
         Logger.getLogger(TableDataLogListener.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       } 
     } 
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     if (paramBoolean) {
-      c.a().a(this);
+      IInterfaceCharlie.ExceptionInVPackage().ExceptionInVPackage(this);
     } else {
-      c.a().b(this);
+      IInterfaceCharlie.ExceptionInVPackage().b(this);
     } 
   }
   
-  public void a(int paramInt) {
+  public void ExceptionInVPackage(int paramInt) {
     if (paramInt - this.f == 1) {
       double d1;
       j j2;
       double d2;
-      j j1 = c.a().e().b(this.d);
+      j j1 = IInterfaceCharlie.ExceptionInVPackage().e().b(this.d);
       if (j1 != null) {
         d1 = j1.d(paramInt);
       } else {
         d1 = Double.NaN;
       } 
-      c();
-      if (c.a().e().b(this.e) != null) {
-        j2 = c.a().e().b(this.e);
-      } else if (c.a().e().b("MAP") != null) {
-        j2 = c.a().e().b("MAP");
+      IInterfaceCharlie();
+      if (IInterfaceCharlie.ExceptionInVPackage().e().b(this.e) != null) {
+        j2 = IInterfaceCharlie.ExceptionInVPackage().e().b(this.e);
+      } else if (IInterfaceCharlie.ExceptionInVPackage().e().b("MAP") != null) {
+        j2 = IInterfaceCharlie.ExceptionInVPackage().e().b("MAP");
       } else {
         j2 = null;
       } 
@@ -90,7 +90,7 @@ public class TableDataLogListener implements bP, a {
       } else {
         d2 = Double.NaN;
       } 
-      this.a.a(d2, d1);
+      this.ExceptionInVPackage.ExceptionInVPackage(d2, d1);
     } else {
       b(paramInt);
     } 
@@ -98,17 +98,17 @@ public class TableDataLogListener implements bP, a {
   }
   
   public void b(int paramInt) {
-    if (c.a().e() == null)
+    if (IInterfaceCharlie.ExceptionInVPackage().e() == null)
       return; 
-    int i = paramInt - this.a.c();
+    int i = paramInt - this.ExceptionInVPackage.IInterfaceCharlie();
     if (i < 0)
       i = 0; 
-    c();
-    j j1 = c.a().e().b(this.d);
-    j j2 = c.a().e().b(this.e);
-    if (j2 == null && c.a().e().b("MAP") != null)
-      j2 = c.a().e().b("MAP"); 
-    if (c.a().e() != null && j1 != null && j2 != null && paramInt >= i) {
+    IInterfaceCharlie();
+    j j1 = IInterfaceCharlie.ExceptionInVPackage().e().b(this.d);
+    j j2 = IInterfaceCharlie.ExceptionInVPackage().e().b(this.e);
+    if (j2 == null && IInterfaceCharlie.ExceptionInVPackage().e().b("MAP") != null)
+      j2 = IInterfaceCharlie.ExceptionInVPackage().e().b("MAP"); 
+    if (IInterfaceCharlie.ExceptionInVPackage().e() != null && j1 != null && j2 != null && paramInt >= i) {
       float[] arrayOfFloat1 = new float[paramInt - i + 1];
       float[] arrayOfFloat2 = new float[paramInt - i + 1];
       for (int j = i; j <= paramInt; j++) {
@@ -117,21 +117,21 @@ public class TableDataLogListener implements bP, a {
         arrayOfFloat1[arrayOfFloat1.length - 1 - j - i] = (float)d1;
         arrayOfFloat2[arrayOfFloat2.length - 1 - j - i] = (float)d2;
       } 
-      this.a.a(arrayOfFloat2, arrayOfFloat1);
+      this.ExceptionInVPackage.ExceptionInVPackage(arrayOfFloat2, arrayOfFloat1);
     } 
   }
   
-  public void a() {
-    a(true);
+  public void ExceptionInVPackage() {
+    ExceptionInVPackage(true);
   }
   
   public void b() {
-    a(false);
+    ExceptionInVPackage(false);
   }
   
-  private void c() {
-    aM aM = this.b.c(this.c.b());
-    n n = c.a().e();
+  private void IInterfaceCharlie() {
+    aM aM = this.b.IInterfaceCharlie(this.IInterfaceCharlie.b());
+    n n = IInterfaceCharlie.ExceptionInVPackage().e();
     if (n == null) {
       this.g = "UNINITIALIZED";
     } else {
@@ -143,32 +143,32 @@ public class TableDataLogListener implements bP, a {
         this.g = null;
       } 
     } 
-    this.e = bM.j(this.b, this.c.f());
-    if (this.e == null && this.c.h() != null && this.b.g(this.c.h()) != null)
-      this.e = this.c.h(); 
+    this.e = bM.j(this.b, this.IInterfaceCharlie.f());
+    if (this.e == null && this.IInterfaceCharlie.h() != null && this.b.g(this.IInterfaceCharlie.h()) != null)
+      this.e = this.IInterfaceCharlie.h(); 
     if (this.e == null)
       this.e = "MAP"; 
     if (n != null) {
-      j j = n.a(this.e);
-      aM aM1 = this.b.c("LKUP_PARAMETER");
-      aM aM2 = this.b.c("LOAD_AXIS_SCALE");
-      if (aM1 != null && aM2 != null && this.c.f() != null && this.c.f().equals("Load")) {
+      j j = n.ExceptionInVPackage(this.e);
+      aM aM1 = this.b.IInterfaceCharlie("LKUP_PARAMETER");
+      aM aM2 = this.b.IInterfaceCharlie("LOAD_AXIS_SCALE");
+      if (aM1 != null && aM2 != null && this.IInterfaceCharlie.f() != null && this.IInterfaceCharlie.f().equals("Load")) {
         try {
           String str1 = aM1.f(this.b.h());
           String str2 = aM2.f(this.b.h());
-          if (str1 != null && str1.contains("TPS") && n.a("TPS") != null) {
+          if (str1 != null && str1.contains("TPS") && n.ExceptionInVPackage("TPS") != null) {
             this.e = "TPS";
           } else if (str1 != null && str1.contains("MAP") && str2 != null) {
-            if (str2.toLowerCase().contains("psi") && n.a("PRESS_BOOST") != null) {
+            if (str2.toLowerCase().contains("psi") && n.ExceptionInVPackage("PRESS_BOOST") != null) {
               this.e = "PRESS_BOOST";
-            } else if (str2.toLowerCase().contains("psi") && n.a("BOOST_PSI") != null) {
+            } else if (str2.toLowerCase().contains("psi") && n.ExceptionInVPackage("BOOST_PSI") != null) {
               this.e = "BOOST_PSI";
-            } else if (str2.toLowerCase().contains("kpa") && n.a("MAP") != null) {
+            } else if (str2.toLowerCase().contains("kpa") && n.ExceptionInVPackage("MAP") != null) {
               this.e = "MAP";
             } else {
               this.e = "Fuel Load";
             } 
-          } else if (n.a("Fuel Load") != null) {
+          } else if (n.ExceptionInVPackage("Fuel Load") != null) {
             this.e = "Fuel Load";
           } else {
             this.e = "MAP";
@@ -196,9 +196,9 @@ public class TableDataLogListener implements bP, a {
       } 
     } 
     if (this.e == null)
-      D.b("No Data Log field defined for Y axis of table: " + this.c.aL()); 
-    if ((this.d == null || !this.d.isEmpty()) && n != null && n.a(this.d) == null)
-      this.d = bM.j(this.b, this.c.d()); 
+      D.b("No Data Log field defined for Y axis of table: " + this.IInterfaceCharlie.aL()); 
+    if ((this.d == null || !this.d.isEmpty()) && n != null && n.ExceptionInVPackage(this.d) == null)
+      this.d = bM.j(this.b, this.IInterfaceCharlie.d()); 
   }
 }
 

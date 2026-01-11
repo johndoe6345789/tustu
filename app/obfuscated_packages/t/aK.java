@@ -17,7 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
-import s.g;
+import s.SComponentGolf;
 
 public class aK extends a implements f {
   JTextField a;
@@ -27,15 +27,15 @@ public class aK extends a implements f {
   JPanel c = new JPanel();
   
   public aK(Window paramWindow, ai paramai) {
-    super(paramWindow, g.b("Gauge Text"));
+    super(paramWindow, SComponentGolf.b("Gauge Text"));
     a(paramai);
     aN aN = new aN(this);
     this.c.setLayout(new GridLayout(0, 1, eJ.a(1), eJ.a(3)));
-    String str = g.b("Gauge Text");
+    String str = SComponentGolf.b("Gauge Text");
     this.c.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), str));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(2, 2));
-    JLabel jLabel = new JLabel(g.b("Gauge Title"));
+    JLabel jLabel = new JLabel(SComponentGolf.b("Gauge Title"));
     jLabel.setMinimumSize(new Dimension(eJ.a(80), eJ.a(18)));
     jLabel.setPreferredSize(new Dimension(eJ.a(80), eJ.a(18)));
     jLabel.setHorizontalAlignment(4);
@@ -47,7 +47,7 @@ public class aK extends a implements f {
     this.c.add(jPanel);
     jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(2, 2));
-    jLabel = new JLabel(g.b("Gauge Units"));
+    jLabel = new JLabel(SComponentGolf.b("Gauge Units"));
     jLabel.setMinimumSize(eJ.a(80, 18));
     jLabel.setPreferredSize(eJ.a(80, 18));
     jLabel.setHorizontalAlignment(4);

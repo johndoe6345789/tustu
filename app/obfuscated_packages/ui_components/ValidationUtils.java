@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,18 +10,18 @@ class dq implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    i.c(i.ah, Boolean.toString(jCheckBoxMenuItem.isSelected()));
+    IOProperties.c(IOProperties.ah, Boolean.toString(jCheckBoxMenuItem.isSelected()));
     aw.g(jCheckBoxMenuItem.isSelected());
-    int i = i.b("lineTraceSize", i.ae);
-    if (jCheckBoxMenuItem.isSelected() && i < 2) {
+    int IOProperties = IOProperties.b("lineTraceSize", IOProperties.ae);
+    if (jCheckBoxMenuItem.isSelected() && IOProperties < 2) {
       this.a.a.p().c(2);
-      i.c("lineTraceSize", "2");
+      IOProperties.c("lineTraceSize", "2");
     } 
     if (jCheckBoxMenuItem.isSelected()) {
       this.a.a.p().b(true);
-      i.c(i.af, Boolean.toString(true));
+      IOProperties.c(IOProperties.af, Boolean.toString(true));
     } 
-    this.a.a.p().i();
+    this.a.a.p().IOProperties();
     this.a.a.p().repaint();
   }
 }

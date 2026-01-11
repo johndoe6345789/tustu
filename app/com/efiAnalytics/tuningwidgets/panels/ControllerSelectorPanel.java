@@ -23,11 +23,11 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
-import r.a;
-import s.g;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 public class ControllerSelectorPanel extends ck {
-  ButtonGroup a = new ButtonGroup();
+  ButtonGroup IOPropertiesUsingFile = new ButtonGroup();
   
   JTextPane b = new JTextPane();
   
@@ -45,10 +45,10 @@ public class ControllerSelectorPanel extends ck {
       for (byte b = 0; b < paramArrayOfString.length; b++) {
         JRadioButton jRadioButton = new JRadioButton(paramArrayOfString[b]);
         jRadioButton.setActionCommand(paramArrayOfString[b]);
-        this.a.add(jRadioButton);
+        this.IOPropertiesUsingFile.add(jRadioButton);
         this.c.add(jRadioButton);
         if (paramString != null && paramArrayOfString[b].equals(paramString))
-          this.a.setSelected(jRadioButton.getModel(), true); 
+          this.IOPropertiesUsingFile.setSelected(jRadioButton.getModel(), true); 
       }  
     setLayout(new BorderLayout());
     add("North", this.c);
@@ -58,40 +58,40 @@ public class ControllerSelectorPanel extends ck {
     this.b.setBorder(BorderFactory.createEtchedBorder());
   }
   
-  public String a() {
-    return this.a.getSelection().getActionCommand();
+  public String IOPropertiesUsingFile() {
+    return this.IOPropertiesUsingFile.getSelection().getActionCommand();
   }
   
-  public void a(String paramString) {
-    Enumeration<AbstractButton> enumeration = this.a.getElements();
+  public void IOPropertiesUsingFile(String paramString) {
+    Enumeration<AbstractButton> enumeration = this.IOPropertiesUsingFile.getElements();
     while (enumeration.hasMoreElements()) {
       AbstractButton abstractButton = enumeration.nextElement();
-      this.a.setSelected(abstractButton.getModel(), abstractButton.getText().equals(paramString));
+      this.IOPropertiesUsingFile.setSelected(abstractButton.getModel(), abstractButton.getText().equals(paramString));
     } 
-    fp.a(this.c, false);
+    fp.IOPropertiesUsingFile(this.c, false);
   }
   
   public void b(String paramString) {
-    Enumeration<AbstractButton> enumeration = this.a.getElements();
+    Enumeration<AbstractButton> enumeration = this.IOPropertiesUsingFile.getElements();
     while (enumeration.hasMoreElements()) {
       AbstractButton abstractButton = enumeration.nextElement();
       if (abstractButton.getActionCommand().equals(paramString))
-        this.a.setSelected(abstractButton.getModel(), true); 
+        this.IOPropertiesUsingFile.setSelected(abstractButton.getModel(), true); 
     } 
   }
   
-  public void a(File paramFile) {
+  public void IOPropertiesUsingFile(File paramFile) {
     if (paramFile != null) {
       if (this.d.length() > 0) {
         this.b.setText(b() + "\n\n" + c(paramFile));
       } else {
         this.b.setText(c(paramFile));
       } 
-      String str = z.a(paramFile);
-      String[] arrayOfString = T.a().d();
+      String str = z.IOPropertiesUsingFile(paramFile);
+      String[] arrayOfString = T.IOPropertiesUsingFile().d();
       if (arrayOfString != null)
         for (byte b = 0; b < arrayOfString.length; b++) {
-          R r = T.a().c(arrayOfString[b]);
+          R r = T.IOPropertiesUsingFile().c(arrayOfString[b]);
           if (r.i().equals(str))
             b(arrayOfString[b]); 
         }  
@@ -102,24 +102,24 @@ public class ControllerSelectorPanel extends ck {
   
   protected String c(File paramFile) {
     try {
-      String str = g.b("Unrecognized file type");
-      if (paramFile.getName().toLowerCase().endsWith("." + a.cw.toLowerCase()) || paramFile.getName().toLowerCase().endsWith("." + a.cz.toLowerCase()) || paramFile.getName().toLowerCase().indexOf(".ini") != -1 || paramFile.getName().toLowerCase().indexOf(".ecu") != -1) {
+      String str = SComponentGolf.b("Unrecognized file type");
+      if (paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()) || paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cz.toLowerCase()) || paramFile.getName().toLowerCase().indexOf(".ini") != -1 || paramFile.getName().toLowerCase().indexOf(".ecu") != -1) {
         str = "Selected File Info:\n\n";
         try {
-          bT bT = (new aa()).a(paramFile);
+          bT bT = (new aa()).IOPropertiesUsingFile(paramFile);
           if (bT.c() != null && bT.c().length() > 0) {
             String str1 = URLDecoder.decode(bT.c(), "UTF-8");
             str = str + "Firmware:\n" + str1 + "\n\n";
           } 
           str = str + "Signature:\n" + bT.b() + "\n\nLast Modified : " + DateFormat.getDateInstance(2).format(Long.valueOf(paramFile.lastModified()));
         } catch (Exception exception) {}
-      } else if (paramFile.getName().toLowerCase().endsWith("." + a.C)) {
+      } else if (paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.C)) {
         str = "Selected File Info:\n\nOld style BigComm tune file.\nLast Modified : " + DateFormat.getDateInstance(2).format(Long.valueOf(paramFile.lastModified()));
       } 
       return str;
     } catch (Exception exception) {
       Logger.getLogger(ControllerSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, exception);
-      return g.b("Unrecognized file type");
+      return SComponentGolf.b("Unrecognized file type");
     } 
   }
   
@@ -136,7 +136,7 @@ public class ControllerSelectorPanel extends ck {
     this.b.setText(paramString);
   }
   
-  public void a(boolean paramBoolean) {
+  public void IOPropertiesUsingFile(boolean paramBoolean) {
     this.e = paramBoolean;
   }
 }

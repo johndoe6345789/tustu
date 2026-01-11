@@ -5,7 +5,7 @@ import G.aH;
 import G.aM;
 import G.bq;
 import G.dk;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
 import bt.aV;
@@ -23,7 +23,7 @@ class ThresholdSyncValueEditor extends aV {
   }
   
   protected void o() {
-    aH aH = this.a.b.c().g(this.a.c.a());
+    aH aH = this.a.b.c().ExceptionPrintstacktrace(this.a.c.a());
     if (aH != null) {
       z.a(this.a).c(aH.i());
       z.a(this.a).b(aH.h());
@@ -31,16 +31,16 @@ class ThresholdSyncValueEditor extends aV {
       if (i != z.a(this.a).v())
         try {
           z.a(this.a).e(dk.a(i));
-        } catch (g g) {
-          Logger.getLogger(z.class.getName()).log(Level.WARNING, "Failed to update digits provider threshold", (Throwable)g);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(z.class.getName()).log(Level.WARNING, "Failed to update digits provider threshold", (Throwable)ExceptionPrintstacktrace);
         }  
       a(i);
       z.b(this.a).b(aH.h());
       if (i != z.b(this.a).v())
         try {
           z.b(this.a).e(dk.a(i));
-        } catch (g g) {
-          Logger.getLogger(z.class.getName()).log(Level.WARNING, "Failed to update digits provider hysteresis", (Throwable)g);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(z.class.getName()).log(Level.WARNING, "Failed to update digits provider hysteresis", (Throwable)ExceptionPrintstacktrace);
         }  
     } else {
       D.c("Can not find OutputChannel " + this.a.c.a() + " in Config: " + this.a.b.c());
@@ -50,10 +50,10 @@ class ThresholdSyncValueEditor extends aV {
   public void f() {
     if (this.f.b() != null) {
       o();
-      aM aM = this.g.c(this.f.b());
+      aM aM = this.ExceptionPrintstacktrace.c(this.f.b());
       if (this.i != null) {
         try {
-          this.i.a(aM.f(this.g.p()));
+          this.i.a(aM.f(this.ExceptionPrintstacktrace.p()));
         } catch (Exception exception) {
           D.b(exception.getMessage());
         } 
@@ -61,8 +61,8 @@ class ThresholdSyncValueEditor extends aV {
         try {
           double d = aM.i(n().p())[this.f.f()][this.f.h()];
           this.j.setText(X.a(d));
-        } catch (g g) {
-          D.a(g.getMessage(), (Exception)g, this);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          D.a(ExceptionPrintstacktrace.getMessage(), (Exception)ExceptionPrintstacktrace, this);
         } 
       } 
     } 

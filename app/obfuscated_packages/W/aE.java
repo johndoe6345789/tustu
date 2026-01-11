@@ -1,26 +1,26 @@
 package W;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.io.File;
 
 class aE extends Thread {
-  File a;
+  File ExceptionInVPackage;
   
   int b;
   
   aE(aB paramaB, File paramFile, int paramInt) {
     super("LoadTriggerLog");
     setDaemon(true);
-    this.a = paramFile;
+    this.ExceptionInVPackage = paramFile;
     this.b = paramInt;
     setPriority(1);
   }
   
   public void run() {
     try {
-      this.c.a(this.a, this.b);
-    } catch (a a) {
-      aB.a(this.c, a);
+      this.c.ExceptionInVPackage(this.ExceptionInVPackage, this.b);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      aB.ExceptionInVPackage(this.c, ExceptionInVPackage);
     } 
   }
 }

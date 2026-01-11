@@ -1,19 +1,19 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.remotefileaccess.http.FileAccessPreferences;
-import h.i;
-import r.j;
+import h.IOProperties;
+import r.ThreadedFile;
 
 class dc implements FileAccessPreferences {
   dc(cc paramcc) {}
   
   public String getDownloadDirectory() {
-    return (a.A() != null) ? a.A().q() : i.e(i.as, j.u());
+    return (PropertiesExtension.A() != null) ? PropertiesExtension.A().q() : IOProperties.e(IOProperties.as, ThreadedFile.u());
   }
   
   public int getFileExistsPreference() {
-    return i.b(i.ao, i.ap);
+    return IOProperties.b(IOProperties.ao, IOProperties.ap);
   }
 }
 

@@ -2,13 +2,13 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import java.io.File;
 import java.io.FileFilter;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ExcludeDataLogsFileFilter implements FileFilter {
   ExcludeDataLogsFileFilter(ProjectArchiveOptionsPanel paramX) {}
   
   public boolean accept(File paramFile) {
-    return (!paramFile.getName().toLowerCase().endsWith(a.cr) && !paramFile.getName().toLowerCase().endsWith(a.cs) && !paramFile.getName().toLowerCase().endsWith(a.t) && !paramFile.getName().toLowerCase().endsWith(a.cv));
+    return (!paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cr) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cs) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cv));
   }
 }
 

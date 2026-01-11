@@ -2,15 +2,15 @@ package aP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ce implements ActionListener {
   ce(cc paramcc) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    boolean bool = this.a.z.isSelected();
-    a.a().b(a.P, Boolean.toString(bool));
-    this.a.e();
+    boolean bool = this.IOPropertiesUsingFile.z.isSelected();
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.P, Boolean.toString(bool));
+    this.IOPropertiesUsingFile.e();
   }
 }
 

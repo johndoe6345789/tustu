@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,11 +11,11 @@ class OutputChannelActionListener implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
-    this.a.a.setOutputChannel((String)jComboBox.getSelectedItem());
+    this.ExceptionInVPackage.ExceptionInVPackage.setOutputChannel((String)jComboBox.getSelectedItem());
     try {
-      this.a.a.subscribeToOutput();
-    } catch (a a) {
-      bV.d(a.getMessage(), this.a.a);
+      this.ExceptionInVPackage.ExceptionInVPackage.subscribeToOutput();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getMessage(), this.ExceptionInVPackage.ExceptionInVPackage);
     } 
   }
 }

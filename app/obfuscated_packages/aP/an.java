@@ -1,13 +1,13 @@
 package aP;
 
-import z.d;
+import z.ZComponentDelta;
 
 class an {
-  private d b = null;
+  private ZComponentDelta b = null;
   
   private String c = null;
   
-  an(ad paramad, d paramd) {
+  an(ad paramad, ZComponentDelta paramd) {
     this.b = paramd;
   }
   
@@ -15,7 +15,7 @@ class an {
     return (b() != null) ? b() : ((a() == null) ? "INVALID" : a().b());
   }
   
-  public d a() {
+  public ZComponentDelta a() {
     return this.b;
   }
   

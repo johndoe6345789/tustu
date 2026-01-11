@@ -1,6 +1,6 @@
 package ao;
 
-import g.k;
+import g.IOJFileChooser;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -14,7 +14,7 @@ class df implements ItemListener {
       String str2 = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getName();
       String str3 = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getText();
       if (str2.equals("Other")) {
-        String str = k.a("{Enter '" + str3 + "' value }", false, bq.a().b());
+        String str = IOJFileChooser.a("{Enter '" + str3 + "' value }", false, bq.a().b());
         if (str != null && !str.equals(""))
           cd.a(this.a, str1, str, true); 
       } else {

@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -11,8 +11,8 @@ class cN implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
     if (jCheckBoxMenuItem.isSelected()) {
-      i.c("forceOpenGL", Boolean.toString(false));
-      i.c("disableD3d", Boolean.toString(true));
+      IOProperties.c("forceOpenGL", Boolean.toString(false));
+      IOProperties.c("disableD3d", Boolean.toString(true));
       cd.b(this.a);
     } 
   }

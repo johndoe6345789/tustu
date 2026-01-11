@@ -1,11 +1,11 @@
 package aP;
 
-import az.o;
+import az.ThreadedInAzPackage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class do extends Thread {
-  do(dl paramdl, o paramo) {}
+  do(dl paramdl, ThreadedInAzPackage paramo) {}
   
   public void run() {
     try {

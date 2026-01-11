@@ -1,22 +1,22 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 
 class DocumentLoaderThread extends Thread {
-  String a;
+  String ExceptionInVPackage;
   
   DocumentLoaderThread(HtmlDisplay paramHtmlDisplay, String paramString) {
     super("DocLoader");
-    this.a = paramString;
+    this.ExceptionInVPackage = paramString;
     setDaemon(true);
   }
   
   public void run() {
     try {
-      this.b.setDocumentUrl(this.a);
-    } catch (a a) {
-      bV.d(a.getMessage(), this.b.a);
+      this.b.setDocumentUrl(this.ExceptionInVPackage);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getMessage(), this.b.ExceptionInVPackage);
     } 
   }
 }

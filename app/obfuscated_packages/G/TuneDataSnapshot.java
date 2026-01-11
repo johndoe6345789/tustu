@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
 import bH.c;
@@ -21,7 +21,7 @@ public class TuneDataSnapshot extends Q {
   
   boolean f = false;
   
-  aa g = null;
+  aa ExceptionPrintstacktrace = null;
   
   private R k = null;
   
@@ -83,22 +83,22 @@ public class TuneDataSnapshot extends Q {
     this.f = true;
     while (this.e > 0) {
       this.e--;
-      this.g = this.c.get(this.e);
-      if (this.g.f() < l) {
+      this.ExceptionPrintstacktrace = this.c.get(this.e);
+      if (this.ExceptionPrintstacktrace.f() < l) {
         this.e++;
         break;
       } 
       if (this.e == this.c.size() - 1) {
-        aa aa1 = b(this.g.a(), this.g.b(), (this.g.c()).length);
+        aa aa1 = b(this.ExceptionPrintstacktrace.a(), this.ExceptionPrintstacktrace.b(), (this.ExceptionPrintstacktrace.c()).length);
         this.c.set(this.e, aa1);
       } else {
-        aa aa1 = b(this.g.a(), this.g.b(), (this.g.c()).length);
+        aa aa1 = b(this.ExceptionPrintstacktrace.a(), this.ExceptionPrintstacktrace.b(), (this.ExceptionPrintstacktrace.c()).length);
         this.c.set(this.e, aa1);
       } 
-      a(this.g.a(), this.g.b(), this.g.c(), false);
+      a(this.ExceptionPrintstacktrace.a(), this.ExceptionPrintstacktrace.b(), this.ExceptionPrintstacktrace.c(), false);
       if (this.e == this.c.size() - 1)
         d(true); 
-      l = this.g.f() - this.m;
+      l = this.ExceptionPrintstacktrace.f() - this.m;
     } 
     this.f = false;
     if (this.e == 0)
@@ -111,14 +111,14 @@ public class TuneDataSnapshot extends Q {
     long l = 0L;
     if (this.e < this.c.size());
     while (this.e < this.c.size()) {
-      this.g = this.c.get(this.e);
-      if (l - this.g.f() > this.m)
+      this.ExceptionPrintstacktrace = this.c.get(this.e);
+      if (l - this.ExceptionPrintstacktrace.f() > this.m)
         break; 
-      aa aa1 = b(this.g.a(), this.g.b(), (this.g.c()).length);
-      aa1.a(this.g.f());
+      aa aa1 = b(this.ExceptionPrintstacktrace.a(), this.ExceptionPrintstacktrace.b(), (this.ExceptionPrintstacktrace.c()).length);
+      aa1.a(this.ExceptionPrintstacktrace.f());
       this.c.set(this.e, aa1);
-      a(this.g.a(), this.g.b(), this.g.c(), false);
-      l = this.g.f();
+      a(this.ExceptionPrintstacktrace.a(), this.ExceptionPrintstacktrace.b(), this.ExceptionPrintstacktrace.c(), false);
+      l = this.ExceptionPrintstacktrace.f();
       this.e++;
     } 
     if (this.e == this.c.size())
@@ -133,7 +133,7 @@ public class TuneDataSnapshot extends Q {
   
   public synchronized void a(int paramInt1, int paramInt2, int[] paramArrayOfint, boolean paramBoolean1, boolean paramBoolean2) {
     aa aa1 = b(paramInt1, paramInt2, paramArrayOfint.length);
-    if (aa1.equals(this.g) && c.c(aa1.c(), paramArrayOfint) && !paramBoolean1)
+    if (aa1.equals(this.ExceptionPrintstacktrace) && c.c(aa1.c(), paramArrayOfint) && !paramBoolean1)
       return; 
     if (a(paramInt1, paramInt2, paramArrayOfint, paramBoolean1) && paramBoolean2) {
       n();
@@ -160,7 +160,7 @@ public class TuneDataSnapshot extends Q {
         } 
       } 
     } catch (Exception exception) {
-      throw new g("Unable to set bytes \npage:" + paramInt1 + ", offset:" + paramInt2 + ", bytes:\n" + paramArrayOfint + "\n" + exception.getMessage(), exception);
+      throw new ExceptionPrintstacktrace("Unable to set bytes \npage:" + paramInt1 + ", offset:" + paramInt2 + ", bytes:\n" + paramArrayOfint + "\n" + exception.getMessage(), exception);
     } 
     return bool;
   }
@@ -172,7 +172,7 @@ public class TuneDataSnapshot extends Q {
       for (byte b = 0; b < paramArrayOfint.length; b++) {
         if (this.i[paramInt1][paramInt2 + b] != paramArrayOfint[b]) {
           if (this.n)
-            throw new g("Attempt to update readonly ECU Data."); 
+            throw new ExceptionPrintstacktrace("Attempt to update readonly ECU Data."); 
           this.i[paramInt1][paramInt2 + b] = paramArrayOfint[b];
           this.l = true;
           if (b1 == -1)
@@ -181,7 +181,7 @@ public class TuneDataSnapshot extends Q {
         } 
       } 
     } catch (Exception exception) {
-      throw new g("Unable to set bytes \npage:" + paramInt1 + ", offset:" + paramInt2 + ", bytes:\n" + c.a(paramArrayOfint, 8) + "\n" + exception.getMessage(), exception);
+      throw new ExceptionPrintstacktrace("Unable to set bytes \npage:" + paramInt1 + ", offset:" + paramInt2 + ", bytes:\n" + c.a(paramArrayOfint, 8) + "\n" + exception.getMessage(), exception);
     } 
     if (paramBoolean || b1 != -1)
       if (b2 < 0) {
@@ -207,7 +207,7 @@ public class TuneDataSnapshot extends Q {
   }
   
   public void a(F paramF) {
-    a(paramF.g());
+    a(paramF.ExceptionPrintstacktrace());
     int[] arrayOfInt = paramF.l();
     for (byte b = 0; b < arrayOfInt.length; b++)
       a(b, arrayOfInt[b]); 
@@ -327,7 +327,7 @@ public class TuneDataSnapshot extends Q {
     return this.l;
   }
   
-  public void g() {
+  public void ExceptionPrintstacktrace() {
     this.l = false;
     this.c.clear();
     this.e = -1;

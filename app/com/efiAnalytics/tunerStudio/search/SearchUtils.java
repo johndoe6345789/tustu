@@ -7,7 +7,7 @@ import G.bA;
 import G.bq;
 import G.bv;
 import G.i;
-import ax.U;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -92,7 +92,7 @@ public class SearchUtils {
       try {
         if (paramaA.aJ() == null || paramaA.aJ().isEmpty() || i.a(paramaA.aJ(), (aI)paramR) != 0.0D)
           arrayList.add(paramaA); 
-      } catch (U u) {
+      } catch (ExceptionInAxPackage u) {
         Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)u);
       } 
     } 

@@ -3,12 +3,12 @@ package com.efiAnalytics.xcp.master.responseProcessors;
 import G.F;
 import bH.D;
 import bH.c;
-import bN.k;
-import bN.t;
-import bQ.i;
-import bS.h;
+import bN.BnInterfaceKilo;
+import bN.BnInterfaceTango;
+import bQ.BqInterfaceIndia;
+import bS.ExceptionInBsPackage;
 
-public class ServiceRequestProcessor implements i {
+public class ServiceRequestProcessor implements BqInterfaceIndia {
   j a = new j();
   
   e b = new e();
@@ -17,12 +17,12 @@ public class ServiceRequestProcessor implements i {
   
   g d = new g();
   
-  public void a(F paramF, k paramk, t paramt) {
+  public void a(F paramF, BnInterfaceKilo paramk, BnInterfaceTango paramt) {
     if (paramt.a() != 252)
-      throw new h("Invalid Service Request Packet: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid Service Request Packet: " + paramt.toString()); 
     byte[] arrayOfByte = paramt.c();
     if (arrayOfByte.length < 1)
-      throw new h("Invalid Service Request Code: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid Service Request Code: " + paramt.toString()); 
     int n = c.a(arrayOfByte[0]);
     if (n == 224) {
       this.a.a(paramF, paramk, paramt);

@@ -1,30 +1,30 @@
 package aP;
 
-import A.i;
-import B.b;
+import A.AInterfaceIndia;
+import B.BInterfaceBravo;
 import G.F;
 import W.aa;
 import W.t;
-import aD.a;
-import aE.a;
-import aV.w;
-import bB.b;
+import aD.IOInAdPackage;
+import aE.IOInAdPackage;
+import aV.AvInterfaceWhiskey;
+import bB.BInterfaceBravo;
 import bH.W;
-import bh.y;
+import bh.BhInterfaceYankee;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.aa;
 import com.efiAnalytics.tunerStudio.panels.TriggerLoggerPanel;
-import g.b;
-import h.g;
-import h.i;
+import PropertiesExtensionInHPackage.BInterfaceBravo;
+import h.PropertiesExtensionInHPackage;
+import h.AInterfaceIndia;
 import java.awt.Color;
-import r.a;
-import r.i;
-import z.c;
+import r.IOInAdPackage;
+import r.AInterfaceIndia;
+import z.ArrayListInZPackage;
 
 public class bz {
-  public void a(String[] paramArrayOfString, String paramString) {
-    a.i = paramString;
+  public void IOInAdPackage(String[] paramArrayOfString, String paramString) {
+    IOInAdPackage.AInterfaceIndia = paramString;
     String[] arrayOfString = null;
     if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("encryptFile")) {
       arrayOfString = new String[paramArrayOfString.length];
@@ -32,200 +32,200 @@ public class bz {
     } 
     (new bA(this)).start();
     if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("QJ")) || paramString.equals("TunerStudioQJ.jar")) {
-      a.a();
-      a.c = "QJ";
+      IOInAdPackage.IOInAdPackage();
+      IOInAdPackage.ArrayListInZPackage = "QJ";
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("QJ"))
         paramArrayOfString[0] = ""; 
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("TuneMonster")) || paramString.equals("TuneMonsterEFI.jar")) {
-      a.b = a.av;
-      a.a();
-      a.c = "EFI";
-      a.h = "https://www.efianalytics.com/register/register.jsp?appName=TuneMonster";
+      IOInAdPackage.BInterfaceBravo = IOInAdPackage.av;
+      IOInAdPackage.IOInAdPackage();
+      IOInAdPackage.ArrayListInZPackage = "EFI";
+      IOInAdPackage.h = "https://www.efianalytics.com/register/register.jsp?appName=TuneMonster";
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("TuneMonster"))
         paramArrayOfString[0] = ""; 
       hb.p = "Auto Tune";
-      String[] arrayOfString1 = { i.m };
-      a.do = arrayOfString1;
-      a.cP = true;
-      a.ba = c.e;
-      a.be = false;
+      String[] arrayOfString1 = { AInterfaceIndia.m };
+      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.cP = true;
+      IOInAdPackage.ba = ArrayListInZPackage.e;
+      IOInAdPackage.be = false;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("FuelMonster")) || paramString.equals("FuelMonsterTuner.jar")) {
-      a.b = a.aw;
-      a.a();
-      a.c = "Tuner";
-      a.h = "https://www.efianalytics.com/register/register.jsp?appName=FuelMonster";
+      IOInAdPackage.BInterfaceBravo = IOInAdPackage.aw;
+      IOInAdPackage.IOInAdPackage();
+      IOInAdPackage.ArrayListInZPackage = "Tuner";
+      IOInAdPackage.h = "https://www.efianalytics.com/register/register.jsp?appName=FuelMonster";
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("FuelMonster"))
         paramArrayOfString[0] = ""; 
       hb.p = "Auto Tune";
-      String[] arrayOfString1 = { i.n };
-      a.cP = true;
-      a.do = arrayOfString1;
-      a.ba = c.e;
-      a.be = false;
+      String[] arrayOfString1 = { AInterfaceIndia.n };
+      IOInAdPackage.cP = true;
+      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.ba = ArrayListInZPackage.e;
+      IOInAdPackage.be = false;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("GrassRoots")) || paramString.equals("GrassRootsTuner.jar")) {
-      a.b = a.au;
-      a.a();
-      a.c = "Tuner";
-      a.h = "https://www.efianalytics.com/register/register.jsp?appName=GrassRootsTuner";
-      a.v = "registerGr.html";
-      a.w = "registerAppNotConnectedGr.html";
+      IOInAdPackage.BInterfaceBravo = IOInAdPackage.au;
+      IOInAdPackage.IOInAdPackage();
+      IOInAdPackage.ArrayListInZPackage = "Tuner";
+      IOInAdPackage.h = "https://www.efianalytics.com/register/register.jsp?appName=GrassRootsTuner";
+      IOInAdPackage.v = "registerGr.html";
+      IOInAdPackage.AvInterfaceWhiskey = "registerAppNotConnectedGr.html";
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("GrassRoots"))
         paramArrayOfString[0] = ""; 
       hb.p = "Auto Tune";
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("BigComm")) || paramString.equals("BigCommPro.jar")) {
-      a.b = a.as;
-      a.a();
-      if (a.c.contains("Beta")) {
-        a.a();
-        a.c = "Pro(Beta)";
+      IOInAdPackage.BInterfaceBravo = IOInAdPackage.as;
+      IOInAdPackage.IOInAdPackage();
+      if (IOInAdPackage.ArrayListInZPackage.contains("Beta")) {
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = "Pro(Beta)";
       } else {
-        a.a();
-        a.c = "Pro";
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = "Pro";
       } 
-      a.h = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Software";
-      a.v = "registerBC.html";
-      a.w = "registerAppNotConnectedBC.html";
-      aa.b = "http://www.efianalytics.com/:bsq";
-      aa.c = "bsq";
-      a.t = "bsproj";
-      a.C = "big";
-      a.cs = "csv";
-      a.cB = a.cr;
-      aa.b = "BigStuff-Template.dash";
-      aa.a = 7;
-      a.M = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Upgrades";
-      i.A = "./config/dashSplashBigComm.png";
+      IOInAdPackage.h = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Software";
+      IOInAdPackage.v = "registerBC.html";
+      IOInAdPackage.AvInterfaceWhiskey = "registerAppNotConnectedBC.html";
+      aa.BInterfaceBravo = "http://www.efianalytics.com/:bsq";
+      aa.ArrayListInZPackage = "bsq";
+      IOInAdPackage.t = "bsproj";
+      IOInAdPackage.C = "big";
+      IOInAdPackage.cs = "csv";
+      IOInAdPackage.cB = IOInAdPackage.cr;
+      aa.BInterfaceBravo = "BigStuff-Template.dash";
+      aa.IOInAdPackage = 7;
+      IOInAdPackage.M = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Upgrades";
+      AInterfaceIndia.A = "./config/dashSplashBigComm.png";
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("BigComm"))
         paramArrayOfString[0] = ""; 
       hb.p = "Auto-Tune";
       aa.d = Color.BLACK;
-      i.T = "withLabels";
-      a.c = "9600";
+      AInterfaceIndia.T = "withLabels";
+      IOInAdPackage.ArrayListInZPackage = "9600";
       Gauge.s = new Color(8, 8, 8);
       Gauge.u = new Color(241, 255, 255);
       Gauge.t = new Color(37, 37, 46);
       Gauge.v = new Color(255, 44, 20);
-      i.j = "LogViewerBC.properties";
-      i.i = "mlvEmBC.properties";
-      hp.b = new String[3];
-      hp.b[0] = "C:\\Program Files (x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      hp.b[1] = "C:\\Program Files(x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      hp.b[2] = "C:\\Program Files\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      a.D = "http://www.bigcommpro.com/software/megalog";
-      g.a = "FieldMaps/BigStuffReplay.properties";
-      i.x = false;
-      i.t = 5;
-      i.u = 20;
-      dl.b = true;
-      t.a = "./config/ecuDef/BigStuff3-097.ecu";
-      a.ce = a.bX;
-      a.f = "BigStuff3";
-      a.g = "BigStuff3";
-      a.p = "BigStuff3 Serial Number";
-      a.cf = a.bX;
-      a.cb = true;
-      a.a().a("Pro Single");
-      aa.c = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
-      String[] arrayOfString1 = { i.r, i.u, i.t };
-      a.do = arrayOfString1;
-      a.ba = c.e;
+      AInterfaceIndia.j = "LogViewerBC.properties";
+      AInterfaceIndia.AInterfaceIndia = "mlvEmBC.properties";
+      hp.BInterfaceBravo = new String[3];
+      hp.BInterfaceBravo[0] = "C:\\Program Files (x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      hp.BInterfaceBravo[1] = "C:\\Program Files(x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      hp.BInterfaceBravo[2] = "C:\\Program Files\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      IOInAdPackage.D = "http://www.bigcommpro.com/software/megalog";
+      PropertiesExtensionInHPackage.IOInAdPackage = "FieldMaps/BigStuffReplay.properties";
+      AInterfaceIndia.x = false;
+      AInterfaceIndia.t = 5;
+      AInterfaceIndia.u = 20;
+      dl.BInterfaceBravo = true;
+      t.IOInAdPackage = "./config/ecuDef/BigStuff3-097.ecu";
+      IOInAdPackage.ce = IOInAdPackage.bX;
+      IOInAdPackage.f = "BigStuff3";
+      IOInAdPackage.PropertiesExtensionInHPackage = "BigStuff3";
+      IOInAdPackage.p = "BigStuff3 Serial Number";
+      IOInAdPackage.cf = IOInAdPackage.bX;
+      IOInAdPackage.cb = true;
+      IOInAdPackage.IOInAdPackage().IOInAdPackage("Pro Single");
+      aa.ArrayListInZPackage = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
+      String[] arrayOfString1 = { AInterfaceIndia.r, AInterfaceIndia.u, AInterfaceIndia.t };
+      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.ba = ArrayListInZPackage.e;
       TriggerLoggerPanel.Q = true;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("BigCommGen4")) || paramString.equals("BigCommGen4.jar")) {
-      a.b = a.at;
-      a.a();
-      if (a.c.contains("Beta")) {
-        a.a();
-        a.c = i.r + "(Beta)";
+      IOInAdPackage.BInterfaceBravo = IOInAdPackage.at;
+      IOInAdPackage.IOInAdPackage();
+      if (IOInAdPackage.ArrayListInZPackage.contains("Beta")) {
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = AInterfaceIndia.r + "(Beta)";
       } else {
-        a.a();
-        a.c = i.r;
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = AInterfaceIndia.r;
       } 
-      a.h = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Software";
-      a.v = "registerBC.html";
-      a.w = "registerAppNotConnectedBC.html";
-      aa.b = "http://www.efianalytics.com/:bsq";
-      aa.c = "bsq";
-      a.t = "bsproj";
-      a.C = "big";
-      a.cs = "csv";
-      a.cB = a.cr;
-      a.by = true;
-      aa.b = "BigStuff_Gen4-Template.dash";
-      aa.a = 7;
-      a.M = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Upgrades";
-      i.A = "./config/dashSplashBigCommGen4.png";
-      i.t = 5;
-      i.u = 20;
-      i.aI = true;
+      IOInAdPackage.h = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Software";
+      IOInAdPackage.v = "registerBC.html";
+      IOInAdPackage.AvInterfaceWhiskey = "registerAppNotConnectedBC.html";
+      aa.BInterfaceBravo = "http://www.efianalytics.com/:bsq";
+      aa.ArrayListInZPackage = "bsq";
+      IOInAdPackage.t = "bsproj";
+      IOInAdPackage.C = "big";
+      IOInAdPackage.cs = "csv";
+      IOInAdPackage.cB = IOInAdPackage.cr;
+      IOInAdPackage.by = true;
+      aa.BInterfaceBravo = "BigStuff_Gen4-Template.dash";
+      aa.IOInAdPackage = 7;
+      IOInAdPackage.M = "https://www.efianalytics.com/register/browseProducts.jsp?ecuFamily=BigStuff&productCategory=Upgrades";
+      AInterfaceIndia.A = "./config/dashSplashBigCommGen4.png";
+      AInterfaceIndia.t = 5;
+      AInterfaceIndia.u = 20;
+      AInterfaceIndia.aI = true;
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("BigComm"))
         paramArrayOfString[0] = ""; 
       hb.p = "Auto-Tune";
       aa.d = Color.BLACK;
-      i.T = "withLabels";
+      AInterfaceIndia.T = "withLabels";
       Gauge.s = new Color(8, 8, 8);
       Gauge.u = new Color(241, 255, 255);
       Gauge.t = new Color(37, 37, 46);
       Gauge.v = new Color(255, 44, 20);
-      i.j = "LogViewerBC.properties";
-      i.i = "mlvEmBC.properties";
-      hp.b = new String[3];
-      hp.b[0] = "C:\\Program Files (x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      hp.b[1] = "C:\\Program Files(x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      hp.b[2] = "C:\\Program Files\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
-      a.D = "http://www.bigcommpro.com/software/megalog";
-      g.a = "FieldMaps/BigStuffReplay.properties";
-      i.x = false;
-      dl.b = true;
-      t.a = "./config/ecuDef/BigStuff3-097.ecu";
-      a.ce = a.bX;
-      a.f = "BigStuff Gen4";
-      a.g = "BigStuff Gen4";
-      a.p = "BigStuff Serial Number";
-      a.cf = a.bX;
-      a.cb = true;
-      aa.c = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
-      String[] arrayOfString1 = { i.r };
-      a.do = arrayOfString1;
-      a.ap = "bcGen4.reg";
-      a.aq = "bcGen4User.properties";
-      a.ba = c.f;
-      w.a((i)b.c());
-      W.b = 3500;
-      a.e = true;
-      a.g = true;
-      F.a = 100;
-      a.b = "100";
+      AInterfaceIndia.j = "LogViewerBC.properties";
+      AInterfaceIndia.AInterfaceIndia = "mlvEmBC.properties";
+      hp.BInterfaceBravo = new String[3];
+      hp.BInterfaceBravo[0] = "C:\\Program Files (x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      hp.BInterfaceBravo[1] = "C:\\Program Files(x86)\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      hp.BInterfaceBravo[2] = "C:\\Program Files\\EFIAnalytics\\BigStuffLog\\BigStuffLog.exe";
+      IOInAdPackage.D = "http://www.bigcommpro.com/software/megalog";
+      PropertiesExtensionInHPackage.IOInAdPackage = "FieldMaps/BigStuffReplay.properties";
+      AInterfaceIndia.x = false;
+      dl.BInterfaceBravo = true;
+      t.IOInAdPackage = "./config/ecuDef/BigStuff3-097.ecu";
+      IOInAdPackage.ce = IOInAdPackage.bX;
+      IOInAdPackage.f = "BigStuff Gen4";
+      IOInAdPackage.PropertiesExtensionInHPackage = "BigStuff Gen4";
+      IOInAdPackage.p = "BigStuff Serial Number";
+      IOInAdPackage.cf = IOInAdPackage.bX;
+      IOInAdPackage.cb = true;
+      aa.ArrayListInZPackage = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
+      String[] arrayOfString1 = { AInterfaceIndia.r };
+      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.ap = "bcGen4.reg";
+      IOInAdPackage.aq = "bcGen4User.properties";
+      IOInAdPackage.ba = ArrayListInZPackage.f;
+      AvInterfaceWhiskey.IOInAdPackage((AInterfaceIndia)BInterfaceBravo.ArrayListInZPackage());
+      W.BInterfaceBravo = 3500;
+      IOInAdPackage.e = true;
+      IOInAdPackage.PropertiesExtensionInHPackage = true;
+      F.IOInAdPackage = 100;
+      IOInAdPackage.BInterfaceBravo = "100";
       TriggerLoggerPanel.Q = true;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("rusEFI")) || paramString.equals("TunerStudioRE.jar")) {
-      a.a();
-      if (a.c.contains("Beta")) {
-        a.a();
-        a.c = i.j + "(Beta)";
+      IOInAdPackage.IOInAdPackage();
+      if (IOInAdPackage.ArrayListInZPackage.contains("Beta")) {
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = AInterfaceIndia.j + "(Beta)";
       } else {
-        a.a();
-        a.c = i.r;
+        IOInAdPackage.IOInAdPackage();
+        IOInAdPackage.ArrayListInZPackage = AInterfaceIndia.r;
       } 
-      String[] arrayOfString1 = { i.j, i.k, i.l };
-      a.do = arrayOfString1;
-      a.ap = "tsRE.reg";
-      a.aq = "tsReUser.properties";
-      a.f = "rusEFI";
-      a.g = "rusefi";
-      i.j = "LogViewer.properties";
-      i.i = "mlvReEm.properties";
-      i.A = "./config/dashSplashRE.png";
-      a.ba = c.e;
+      String[] arrayOfString1 = { AInterfaceIndia.j, AInterfaceIndia.k, AInterfaceIndia.l };
+      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.ap = "tsRE.reg";
+      IOInAdPackage.aq = "tsReUser.properties";
+      IOInAdPackage.f = "rusEFI";
+      IOInAdPackage.PropertiesExtensionInHPackage = "rusefi";
+      AInterfaceIndia.j = "LogViewer.properties";
+      AInterfaceIndia.AInterfaceIndia = "mlvReEm.properties";
+      AInterfaceIndia.A = "./config/dashSplashRE.png";
+      IOInAdPackage.ba = ArrayListInZPackage.e;
     } else {
-      a.f = "MegaSquirt";
-      a.g = "megasquirt";
-      i.j = "LogViewer.properties";
-      i.i = "mlvEm.properties";
-      i.A = "./config/dashSplash.png";
-      a.ba = c.e;
+      IOInAdPackage.f = "MegaSquirt";
+      IOInAdPackage.PropertiesExtensionInHPackage = "megasquirt";
+      AInterfaceIndia.j = "LogViewer.properties";
+      AInterfaceIndia.AInterfaceIndia = "mlvEm.properties";
+      AInterfaceIndia.A = "./config/dashSplash.png";
+      IOInAdPackage.ba = ArrayListInZPackage.e;
     } 
-    b.a((b)new y());
+    BInterfaceBravo.IOInAdPackage((BInterfaceBravo)new BhInterfaceYankee());
     if (arrayOfString != null && arrayOfString.length > 1)
-      f.a().a(arrayOfString); 
+      f.IOInAdPackage().IOInAdPackage(arrayOfString); 
   }
 }
 

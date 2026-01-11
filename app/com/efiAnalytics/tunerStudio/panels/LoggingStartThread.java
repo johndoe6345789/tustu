@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import V.a;
+import V.ExceptionInVPackage;
 import bH.D;
 
 class LoggingStartThread extends Thread {
@@ -8,10 +8,10 @@ class LoggingStartThread extends Thread {
   
   public void run() {
     try {
-      this.a.k.e();
-      this.a.k.x.a(false);
-    } catch (a a) {
-      D.a("Unable to start Logging.", (Exception)a, this.a.getParent());
+      this.ExceptionInVPackage.k.e();
+      this.ExceptionInVPackage.k.x.ExceptionInVPackage(false);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Unable to start Logging.", (Exception)ExceptionInVPackage, this.ExceptionInVPackage.getParent());
     } 
   }
 }

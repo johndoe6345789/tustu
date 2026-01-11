@@ -1,37 +1,37 @@
-import V.a;
-import aE.a;
-import aP.f;
-import h.i;
+import V.ExceptionInVPackage;
+import aE.ExceptionInVPackage;
+import aP.NetworkHashMap;
+import h.IOProperties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import r.a;
+import r.ExceptionInVPackage;
 
-class i extends Thread {
-  i(h paramh) {}
+class IOProperties extends Thread {
+  IOProperties(h paramh) {}
   
   public void run() {
     setName(getName() + " - TS Shutdown Hook");
-    if (!a.a().q()) {
-      if (a.A() != null)
+    if (!ExceptionInVPackage.ExceptionInVPackage().q()) {
+      if (ExceptionInVPackage.A() != null)
         try {
-          a.A().b();
-        } catch (a a) {
-          Logger.getLogger(TunerStudio.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+          ExceptionInVPackage.A().b();
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          Logger.getLogger(TunerStudio.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
         }  
-      f.a().g();
+      NetworkHashMap.ExceptionInVPackage().g();
     } 
     try {
-      a.a().e();
-      i.g();
-    } catch (a a) {
-      Logger.getLogger(TunerStudio.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      ExceptionInVPackage.ExceptionInVPackage().e();
+      IOProperties.g();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(TunerStudio.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
     Runtime.getRuntime().halt(0);
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/i.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/IOProperties.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

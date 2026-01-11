@@ -3,8 +3,8 @@ package bt;
 import G.R;
 import G.T;
 import G.ah;
-import V.a;
-import V.g;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.aa;
@@ -20,17 +20,17 @@ import java.awt.Dimension;
 public class bI extends bh implements ac {
   private Gauge b = null;
   
-  dD a = new dD(this);
+  dD ExceptionInVPackage = new dD(this);
   
   public bI() {
     setLayout(new bJ(this));
-    a(aa.b());
+    ExceptionInVPackage(aa.b());
     this.b.setSweepAngle(270);
     this.b.setSweepBeginDegree(315);
     this.b.setFaceAngle(360);
   }
   
-  public void a(s params) {
+  public void ExceptionInVPackage(s params) {
     c().repaint();
   }
   
@@ -38,7 +38,7 @@ public class bI extends bh implements ac {
     return this.b;
   }
   
-  public void a(Gauge paramGauge) {
+  public void ExceptionInVPackage(Gauge paramGauge) {
     this.b = paramGauge;
     if (getComponentCount() > 0)
       removeAll(); 
@@ -46,26 +46,26 @@ public class bI extends bh implements ac {
   }
   
   public void b(String paramString) {
-    T t = T.a();
+    T t = T.ExceptionInVPackage();
     R r = t.c();
-    a(r, paramString);
+    ExceptionInVPackage(r, paramString);
   }
   
-  public void a(R paramR, String paramString) {
+  public void ExceptionInVPackage(R paramR, String paramString) {
     ah ah = paramR.k(paramString);
     if (ah == null)
       return; 
     try {
-      this.b.setTitle(ah.k().a());
-      this.b.setUnits(ah.j().a());
-    } catch (g g) {
-      D.a((Exception)g);
+      this.b.setTitle(ah.k().ExceptionInVPackage());
+      this.b.setUnits(ah.j().ExceptionInVPackage());
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage((Exception)ExceptionPrintstacktrace);
     } 
     this.b.setMin(ah.b());
     this.b.setMax(ah.e());
     this.b.setLowWarning(ah.f());
     this.b.setLowCritical(ah.o());
-    this.b.setHighWarning(ah.g());
+    this.b.setHighWarning(ah.ExceptionPrintstacktrace());
     this.b.setHighCritical(ah.h());
     this.b.setOutputChannel(ah.i());
     this.b.setValueDigits(Integer.valueOf(ah.l()));
@@ -73,21 +73,21 @@ public class bI extends bh implements ac {
     this.b.setEcuConfigurationName(paramR.c());
     try {
       this.b.subscribeToOutput();
-    } catch (a a) {
-      bV.d(a.getMessage(), this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getMessage(), this);
     } 
   }
   
-  public void a(GaugePainter paramGaugePainter) {
+  public void ExceptionInVPackage(GaugePainter paramGaugePainter) {
     this.b.setGaugePainter(paramGaugePainter);
   }
   
   public Dimension getPreferredSize() {
-    return new Dimension(eJ.a(160), eJ.a(160));
+    return new Dimension(eJ.ExceptionInVPackage(160), eJ.ExceptionInVPackage(160));
   }
   
   public Dimension getMinimumSize() {
-    return new Dimension(eJ.a(75), eJ.a(75));
+    return new Dimension(eJ.ExceptionInVPackage(75), eJ.ExceptionInVPackage(75));
   }
 }
 

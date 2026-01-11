@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -11,7 +11,7 @@ final class V implements ActionListener {
     if (jCheckBoxMenuItem.isSelected()) {
       S.a(jCheckBoxMenuItem.getName());
     } else {
-      String str = i.c("FIELD_MIN_MAX_" + jCheckBoxMenuItem.getName());
+      String str = IOProperties.c("FIELD_MIN_MAX_" + jCheckBoxMenuItem.getName());
       if (str != null && str.indexOf(";") != -1) {
         String str1 = str.substring(0, str.indexOf(";"));
         String str2 = str.substring(str.indexOf(";") + 1, str.length());

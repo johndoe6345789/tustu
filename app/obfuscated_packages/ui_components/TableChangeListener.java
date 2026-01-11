@@ -1,16 +1,16 @@
 package ao;
 
-import bx.j;
-import bx.s;
+import bx.BxInterfaceJuliet;
+import bx.BxInterfaceSierra;
 
-class gN implements s {
+class gN implements BxInterfaceSierra {
   gN(go paramgo) {}
   
-  public void a(j paramj) {
+  public void a(BxInterfaceJuliet paramj) {
     go.a(this.a);
   }
   
-  public void b(j paramj) {
+  public void b(BxInterfaceJuliet paramj) {
     go.a(this.a);
   }
 }

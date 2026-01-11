@@ -1,15 +1,15 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.n;
 import java.util.ArrayList;
 
 class DataPageList extends ArrayList {
-  int a = 0;
+  int ExceptionInVPackage = 0;
   
   DataPageList(TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
-  public boolean a(n paramn) {
+  public boolean ExceptionInVPackage(n paramn) {
     if (paramn == null)
       return false; 
     super.add(paramn);
@@ -18,39 +18,39 @@ class DataPageList extends ArrayList {
     return true;
   }
   
-  public n a(int paramInt) {
+  public n ExceptionInVPackage(int paramInt) {
     if (paramInt >= 0 && paramInt < size()) {
-      this.a = paramInt;
+      this.ExceptionInVPackage = paramInt;
       return (n)get(paramInt);
     } 
-    throw new a("Not a valid data page for the currently loaded log. " + paramInt);
+    throw new ExceptionInVPackage("Not ExceptionInVPackage valid data page for the currently loaded log. " + paramInt);
   }
   
-  public n a() {
-    if (this.a < size() - 1) {
-      this.a++;
-      return (n)get(this.a);
+  public n ExceptionInVPackage() {
+    if (this.ExceptionInVPackage < size() - 1) {
+      this.ExceptionInVPackage++;
+      return (n)get(this.ExceptionInVPackage);
     } 
     return null;
   }
   
   public n b() {
-    if (this.a > 0) {
-      this.a--;
-      return (n)get(this.a);
+    if (this.ExceptionInVPackage > 0) {
+      this.ExceptionInVPackage--;
+      return (n)get(this.ExceptionInVPackage);
     } 
     return null;
   }
   
   public void clear() {
-    this.a = -1;
+    this.ExceptionInVPackage = -1;
     super.clear();
     this.b.af.clear();
     this.b.ag = 0;
   }
   
   public int c() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
   public int d() {
@@ -58,13 +58,13 @@ class DataPageList extends ArrayList {
   }
   
   public n e() {
-    this.a = size() - 1;
-    return (n)get(this.a);
+    this.ExceptionInVPackage = size() - 1;
+    return (n)get(this.ExceptionInVPackage);
   }
   
   public n f() {
-    this.a = 0;
-    return (n)get(this.a);
+    this.ExceptionInVPackage = 0;
+    return (n)get(this.ExceptionInVPackage);
   }
 }
 

@@ -1,22 +1,22 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.et;
 
 class RefTablePropertyStore implements et {
-  String a = "refTable_" + CalibrationTablePanel.d(this.b) + "_";
+  String PropertiesExtension = "refTable_" + CalibrationTablePanel.d(this.b) + "_";
   
   RefTablePropertyStore(CalibrationTablePanel paramJ) {}
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.A();
-    if (a != null)
-      a.setProperty(this.a + paramString1, paramString2); 
+  public void PropertiesExtension(String paramString1, String paramString2) {
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    if (PropertiesExtension != null)
+      PropertiesExtension.setProperty(this.PropertiesExtension + paramString1, paramString2); 
   }
   
-  public String a(String paramString) {
-    a a = a.A();
-    return (a != null) ? a.getProperty(this.a + paramString, "") : "";
+  public String PropertiesExtension(String paramString) {
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    return (PropertiesExtension != null) ? PropertiesExtension.getProperty(this.PropertiesExtension + paramString, "") : "";
   }
   
   public String b(String paramString1, String paramString2) {

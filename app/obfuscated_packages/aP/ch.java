@@ -1,15 +1,15 @@
 package aP;
 
-import ac.r;
+import ac.AcInterfaceRomeo;
 import ao.hx;
 
 class ch implements Runnable {
   ch(cc paramcc) {}
   
   public void run() {
-    this.a.r.setEnabled(!r.a());
-    this.a.s.setEnabled(r.a());
-    this.a.u.setEnabled((hx.a().r() != null && !hx.a().r().isEmpty()));
+    this.a.AcInterfaceRomeo.setEnabled(!AcInterfaceRomeo.a());
+    this.a.s.setEnabled(AcInterfaceRomeo.a());
+    this.a.u.setEnabled((hx.a().AcInterfaceRomeo() != null && !hx.a().AcInterfaceRomeo().isEmpty()));
   }
 }
 

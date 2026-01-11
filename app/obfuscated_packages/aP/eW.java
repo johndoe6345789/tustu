@@ -1,14 +1,14 @@
 package aP;
 
 import G.T;
-import aE.a;
-import c.e;
+import aE.PropertiesExtension;
+import c.CInterfaceEcho;
 
-class eW implements e {
+class eW implements CInterfaceEcho {
   eW(dB paramdB) {}
   
-  public boolean a() {
-    return (a.A() != null && T.a().c() != null && !T.a().c().p().h());
+  public boolean PropertiesExtension() {
+    return (PropertiesExtension.A() != null && T.PropertiesExtension().c() != null && !T.PropertiesExtension().c().p().h());
   }
 }
 

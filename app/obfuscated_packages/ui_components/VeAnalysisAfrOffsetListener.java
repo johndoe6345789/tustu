@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -9,8 +9,8 @@ class eO implements ChangeListener {
   eO(eK parameK) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    int i = ((JSlider)paramChangeEvent.getSource()).getValue();
-    i.c("WBafrOffSet", "" + i);
+    int IOProperties = ((JSlider)paramChangeEvent.getSource()).getValue();
+    IOProperties.c("WBafrOffSet", "" + IOProperties);
   }
 }
 

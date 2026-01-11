@@ -5,14 +5,14 @@ import G.aM;
 import G.aN;
 import G.aR;
 import G.be;
-import G.i;
-import V.a;
-import V.g;
+import G.RInterfaceIndia;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.J;
 import bH.X;
 import bH.p;
-import c.d;
+import c.CInterfaceDelta;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.fF;
@@ -32,30 +32,30 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
-import r.a;
-import r.i;
-import s.g;
+import r.ExceptionInVPackage;
+import r.RInterfaceIndia;
+import s.ExceptionPrintstacktrace;
 
-public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener {
-  R a = null;
+public class bu extends JPanel implements aN, L, h, CInterfaceDelta, bc, p, TableModelListener {
+  R ExceptionInVPackage = null;
   
   aM b = null;
   
   aM c = null;
   
-  aM d = null;
+  aM CInterfaceDelta = null;
   
   fF e = null;
   
   w f = null;
   
-  JLabel g = null;
+  JLabel ExceptionPrintstacktrace = null;
   
   be h = null;
   
   private String l = null;
   
-  bP i = null;
+  bP RInterfaceIndia = null;
   
   List j = new ArrayList();
   
@@ -68,76 +68,76 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
   }
   
   public bu(R paramR, be parambe, boolean paramBoolean) {
-    this.a = paramR;
+    this.ExceptionInVPackage = paramR;
     this.h = parambe;
     this.l = parambe.aJ();
     setLayout(new BorderLayout());
     this.f = new w();
     this.f.setName(parambe.aL());
-    this.f.h().e(x.a());
+    this.f.h().e(x.ExceptionInVPackage());
     setName(parambe.aL());
-    this.f.a(new bw(this));
+    this.f.ExceptionInVPackage(new bw(this));
     this.b = paramR.c(parambe.c());
     this.c = paramR.c(parambe.b());
-    this.d = paramR.c(parambe.a());
+    this.CInterfaceDelta = paramR.c(parambe.ExceptionInVPackage());
     try {
-      i.a(paramR.c(), this.c, this);
-      i.a(paramR.c(), this.b, this);
-      i.a(paramR.c(), this.c.q(), this);
-      i.a(paramR.c(), this.d.F(), this);
+      RInterfaceIndia.ExceptionInVPackage(paramR.c(), this.c, this);
+      RInterfaceIndia.ExceptionInVPackage(paramR.c(), this.b, this);
+      RInterfaceIndia.ExceptionInVPackage(paramR.c(), this.c.q(), this);
+      RInterfaceIndia.ExceptionInVPackage(paramR.c(), this.CInterfaceDelta.F(), this);
       if (parambe.p() != null)
-        i.a(paramR.c(), parambe.p(), this); 
+        RInterfaceIndia.ExceptionInVPackage(paramR.c(), parambe.p(), this); 
       if (parambe.q() != null)
-        i.a(paramR.c(), parambe.q(), this); 
-    } catch (a a) {
-      Logger.getLogger(bu.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+        RInterfaceIndia.ExceptionInVPackage(paramR.c(), parambe.q(), this); 
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(bu.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
     s s = null;
     try {
       if (paramBoolean) {
-        s = bQ.a().a(paramR, parambe.aL(), parambe.l(), parambe.aL());
+        s = bQ.ExceptionInVPackage().ExceptionInVPackage(paramR, parambe.aL(), parambe.l(), parambe.aL());
       } else {
-        s = bQ.a().b(paramR, parambe.aL());
+        s = bQ.ExceptionInVPackage().b(paramR, parambe.aL());
       } 
       s.addTableModelListener(this);
-      s.a(this.k);
-      this.f.h().a(this.b.v());
+      s.ExceptionInVPackage(this.k);
+      this.f.h().ExceptionInVPackage(this.b.v());
       this.f.b(this.c.v());
-      this.f.a(this.d.v());
-      int i = a(this.c);
-      this.f.h().c((i <= 3 && this.d.v() < 1 && a(this.b) <= 3 && J.a()));
-      this.f.a(s);
+      this.f.ExceptionInVPackage(this.CInterfaceDelta.v());
+      int RInterfaceIndia = ExceptionInVPackage(this.c);
+      this.f.h().c((RInterfaceIndia <= 3 && this.CInterfaceDelta.v() < 1 && ExceptionInVPackage(this.b) <= 3 && J.ExceptionInVPackage()));
+      this.f.ExceptionInVPackage(s);
       this.f.h().f(this.b.B());
-      if (parambe.i() > 0) {
-        this.f.c(parambe.i());
-        this.f.a(false);
+      if (parambe.RInterfaceIndia() > 0) {
+        this.f.c(parambe.RInterfaceIndia());
+        this.f.ExceptionInVPackage(false);
       } else {
-        int j = this.f.getFont().getSize() + a.a().p();
-        int k = a.a().a(a.aH, j);
+        int j = this.f.getFont().getSize() + ExceptionInVPackage.ExceptionInVPackage().p();
+        int k = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aH, j);
         this.f.c(k);
       } 
-      this.f.a(this);
-    } catch (g g) {
-      D.a("Unable to load table. See log for details.", (Exception)g, this);
+      this.f.ExceptionInVPackage(this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to load table. See log for details.", (Exception)ExceptionPrintstacktrace, this);
     } 
     String[] arrayOfString = this.b.Q();
     if (arrayOfString.length == 1 || arrayOfString.length == 2) {
       bY bY = new bY(paramR, parambe, s);
-      this.f.a(bY);
+      this.f.ExceptionInVPackage(bY);
     } 
     this.f.h().addFocusListener(new bx(this));
     add("Center", (Component)this.f);
-    this.g = new JLabel();
-    this.g.setHorizontalAlignment(0);
-    add("South", this.g);
+    this.ExceptionPrintstacktrace = new JLabel();
+    this.ExceptionPrintstacktrace.setHorizontalAlignment(0);
+    add("South", this.ExceptionPrintstacktrace);
     this.e = new fF();
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     JPanel jPanel2 = new JPanel();
     if (parambe.c() != null) {
       jPanel2.setLayout(new GridLayout(2, 1));
-      a a = new a(paramR, parambe.c());
-      jPanel2.add(a);
+      ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage(paramR, parambe.c());
+      jPanel2.add(ExceptionInVPackage);
       l l = new l(paramR, parambe.c());
       jPanel2.add(l);
       jPanel1.add("North", jPanel2);
@@ -147,56 +147,56 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
     if (s.w() != null) {
       String str;
       if (parambe.p() == null) {
-        str = g.b(s.w());
+        str = ExceptionPrintstacktrace.b(s.w());
       } else {
         try {
-          str = g.b(parambe.p().a());
-        } catch (g g) {
-          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to resolve X Axis Label", (Throwable)g);
-          str = g.b(s.w());
+          str = ExceptionPrintstacktrace.b(parambe.p().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to resolve X Axis Label", (Throwable)ExceptionPrintstacktrace);
+          str = ExceptionPrintstacktrace.b(s.w());
         } 
       } 
-      this.g.setText(str);
+      this.ExceptionPrintstacktrace.setText(str);
     } 
     if (s.v() != null) {
       String str;
       if (parambe.q() == null) {
-        str = g.b(s.v());
+        str = ExceptionPrintstacktrace.b(s.v());
       } else {
         try {
-          str = g.b(parambe.q().a());
-        } catch (g g) {
-          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Unable to resolve Y Axis Label", (Throwable)g);
-          str = g.b(s.v());
+          str = ExceptionPrintstacktrace.b(parambe.q().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Unable to resolve Y Axis Label", (Throwable)ExceptionPrintstacktrace);
+          str = ExceptionPrintstacktrace.b(s.v());
         } 
       } 
       if (this.c.p() != null && !this.c.p().equals("")) {
         String str1;
-        if (i.a().a("645fds645fds  fdsd098532#@") && a.a().c(a.cc, a.cd) && this.c.p().toLowerCase().equals("kpa")) {
+        if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("645fds645fds  fdsd098532#@") && ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.cc, ExceptionInVPackage.cd) && this.c.p().toLowerCase().equals("kpa")) {
           str1 = "PSI";
         } else {
           str1 = this.c.p();
         } 
-        str = str + " " + g.b(str1);
+        str = str + " " + ExceptionPrintstacktrace.b(str1);
       } 
-      this.e.setText(g.b(str));
+      this.e.setText(ExceptionPrintstacktrace.b(str));
     } 
-    if (i.a().a("reoirew rew oiurew")) {
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("reoirew rew oiurew")) {
       this.f.c(true);
     } else {
       this.f.c(true);
     } 
-    if (i.a().a("jheoibnw747d mds 982"))
+    if (RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("jheoibnw747d mds 982"))
       this.f.c(); 
-    this.f.a(new bA(this));
-    this.f.a(new bz(this));
+    this.f.ExceptionInVPackage(new bA(this));
+    this.f.ExceptionInVPackage(new bz(this));
     if (parambe.m() || parambe.o())
       this.f.b(false); 
     c();
-    a(paramR, this.c);
+    ExceptionInVPackage(paramR, this.c);
   }
   
-  private void a(R paramR, aM paramaM) {
+  private void ExceptionInVPackage(R paramR, aM paramaM) {
     if (paramaM.p() != null && paramaM.p().equalsIgnoreCase("kpa")) {
       try {
         double[] arrayOfDouble = paramaM.h(paramR.h());
@@ -205,50 +205,50 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
           StringBuilder stringBuilder = new StringBuilder();
           stringBuilder.append("<html>");
           stringBuilder.append(X.b(d1, paramaM.v())).append(" kPa:<br>");
-          stringBuilder.append(X.b(d1 * 0.145038D, 2)).append(" ").append(g.b("PSI Absolute")).append("<br>");
-          stringBuilder.append(X.b((d1 - m) * 0.145038D, 2)).append(" ").append(g.b("PSI Relative to " + m + " kPa")).append("<br>");
-          stringBuilder.append(X.b((d1 - m) * 0.29538D, 2)).append(" ").append(g.b("inHg Relative to " + m + " kPa")).append("<br>");
-          this.f.a(stringBuilder.toString(), b);
+          stringBuilder.append(X.b(d1 * 0.145038D, 2)).append(" ").append(ExceptionPrintstacktrace.b("PSI Absolute")).append("<br>");
+          stringBuilder.append(X.b((d1 - m) * 0.145038D, 2)).append(" ").append(ExceptionPrintstacktrace.b("PSI Relative to " + m + " kPa")).append("<br>");
+          stringBuilder.append(X.b((d1 - m) * 0.29538D, 2)).append(" ").append(ExceptionPrintstacktrace.b("inHg Relative to " + m + " kPa")).append("<br>");
+          this.f.ExceptionInVPackage(stringBuilder.toString(), b);
         } 
-      } catch (g g) {
-        Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to set Y Axis tooltips", (Throwable)g);
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to set Y Axis tooltips", (Throwable)ExceptionPrintstacktrace);
       } 
       by by = new by(this);
       SwingUtilities.invokeLater(by);
     } else {
       this.f.o();
-      this.f.d(false);
+      this.f.CInterfaceDelta(false);
     } 
   }
   
-  private int a(aM paramaM) {
+  private int ExceptionInVPackage(aM paramaM) {
     return (int)Math.log10(paramaM.s()) + paramaM.v();
   }
   
   public void c() {
-    if (this.i == null) {
-      this.i = new H(this.a, this.h, this.f);
+    if (this.RInterfaceIndia == null) {
+      this.RInterfaceIndia = new H(this.ExceptionInVPackage, this.h, this.f);
     } else {
-      this.i.b();
+      this.RInterfaceIndia.b();
     } 
-    this.i.a();
+    this.RInterfaceIndia.ExceptionInVPackage();
   }
   
   public void e() {
-    if (this.i != null)
-      this.i.b(); 
+    if (this.RInterfaceIndia != null)
+      this.RInterfaceIndia.b(); 
   }
   
-  public void a(bP parambP) {
+  public void ExceptionInVPackage(bP parambP) {
     e();
-    this.i = parambP;
+    this.RInterfaceIndia = parambP;
   }
   
   public boolean requestFocusInWindow() {
     return this.f.requestFocusInWindow();
   }
   
-  public void a(int paramInt, String paramString1, String paramString2) {}
+  public void ExceptionInVPackage(int paramInt, String paramString1, String paramString2) {}
   
   public void b(int paramInt, String paramString1, String paramString2) {}
   
@@ -259,16 +259,16 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
         this.f.repaint();
       } catch (Exception exception) {
         exception.printStackTrace();
-        bV.d("Error updating table:\n" + exception.getMessage() + "\nSee log for more detail.", this);
+        bV.CInterfaceDelta("Error updating table:\n" + exception.getMessage() + "\nSee log for more detail.", this);
       }  
   }
   
-  public void a(double paramDouble1, double paramDouble2) {
-    this.f.h().a(Double.toString(paramDouble1), Double.toString(paramDouble2));
+  public void ExceptionInVPackage(double paramDouble1, double paramDouble2) {
+    this.f.h().ExceptionInVPackage(Double.toString(paramDouble1), Double.toString(paramDouble2));
   }
   
-  public void a(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
-    this.f.h().a(paramArrayOffloat1, paramArrayOffloat2);
+  public void ExceptionInVPackage(float[] paramArrayOffloat1, float[] paramArrayOffloat2) {
+    this.f.h().ExceptionInVPackage(paramArrayOffloat1, paramArrayOffloat2);
   }
   
   public int f() {
@@ -277,66 +277,66 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
   
   public void close() {
     e();
-    this.f.g().removeTableModelListener(this);
-    aR.a().a(this);
-    this.f.g().b(this.k);
+    this.f.ExceptionPrintstacktrace().removeTableModelListener(this);
+    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    this.f.ExceptionPrintstacktrace().b(this.k);
   }
   
-  public void a(Double[][] paramArrayOfDouble) {
-    this.f.g().a(paramArrayOfDouble);
+  public void ExceptionInVPackage(Double[][] paramArrayOfDouble) {
+    this.f.ExceptionPrintstacktrace().ExceptionInVPackage(paramArrayOfDouble);
   }
   
-  public Double[][] g() {
-    return this.f.g().s();
+  public Double[][] ExceptionPrintstacktrace() {
+    return this.f.ExceptionPrintstacktrace().s();
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     this.f.b(this.c.v());
-    this.f.h().a(this.b.v());
-    this.f.h().b(this.d.v());
-    if (this.f.g().v() != null) {
+    this.f.h().ExceptionInVPackage(this.b.v());
+    this.f.h().b(this.CInterfaceDelta.v());
+    if (this.f.ExceptionPrintstacktrace().v() != null) {
       String str;
       if (this.h.q() == null) {
-        str = g.b(this.f.g().v());
+        str = ExceptionPrintstacktrace.b(this.f.ExceptionPrintstacktrace().v());
       } else {
         try {
-          str = g.b(this.h.q().a());
-        } catch (g g) {
-          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Unable to resolve Y Axis Label", (Throwable)g);
-          str = g.b(this.f.g().v());
+          str = ExceptionPrintstacktrace.b(this.h.q().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Unable to resolve Y Axis Label", (Throwable)ExceptionPrintstacktrace);
+          str = ExceptionPrintstacktrace.b(this.f.ExceptionPrintstacktrace().v());
         } 
       } 
       if (this.c.p() != null && !this.c.p().equals(""))
-        str = str + " " + g.b(this.c.p()); 
-      this.e.setText(g.b(str));
+        str = str + " " + ExceptionPrintstacktrace.b(this.c.p()); 
+      this.e.setText(ExceptionPrintstacktrace.b(str));
       this.e.repaint();
     } 
-    if (this.f.g().w() != null) {
+    if (this.f.ExceptionPrintstacktrace().w() != null) {
       String str;
       if (this.h.p() == null) {
-        str = g.b(this.f.g().w());
+        str = ExceptionPrintstacktrace.b(this.f.ExceptionPrintstacktrace().w());
       } else {
         try {
-          str = g.b(this.h.p().a());
-        } catch (g g) {
-          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to resolve X Axis Label", (Throwable)g);
-          str = g.b(this.f.g().w());
+          str = ExceptionPrintstacktrace.b(this.h.p().ExceptionInVPackage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          Logger.getLogger(bu.class.getName()).log(Level.WARNING, "Failed to resolve X Axis Label", (Throwable)ExceptionPrintstacktrace);
+          str = ExceptionPrintstacktrace.b(this.f.ExceptionPrintstacktrace().w());
         } 
       } 
-      this.g.setText(str);
+      this.ExceptionPrintstacktrace.setText(str);
     } 
     if (this.c.aL().equals(paramString2))
-      a(this.a, this.c); 
+      ExceptionInVPackage(this.ExceptionInVPackage, this.c); 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     if (a_() != null) {
       boolean bool = true;
       try {
-        bool = p.a(a_(), this.a);
+        bool = p.ExceptionInVPackage(a_(), this.ExceptionInVPackage);
         setEnabled(bool);
       } catch (Exception exception) {
-        D.a(exception.getMessage());
+        D.ExceptionInVPackage(exception.getMessage());
         exception.printStackTrace();
       } 
     } 
@@ -352,7 +352,7 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
   
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
-    this.g.setEnabled(paramBoolean);
+    this.ExceptionPrintstacktrace.setEnabled(paramBoolean);
     this.e.setEnabled(paramBoolean);
     this.f.setEnabled(paramBoolean);
   }
@@ -362,10 +362,10 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
   }
   
   public R b_() {
-    return this.a;
+    return this.ExceptionInVPackage;
   }
   
-  public void a(K paramK) {
+  public void ExceptionInVPackage(K paramK) {
     this.j.add(paramK);
   }
   
@@ -373,7 +373,7 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
     this.j.remove(paramK);
   }
   
-  public String d() {
+  public String CInterfaceDelta() {
     return this.b.aL();
   }
   
@@ -384,10 +384,10 @@ public class bu extends JPanel implements aN, L, h, d, bc, p, TableModelListener
   
   private void c(String paramString) {
     for (K k : this.j)
-      k.a(paramString); 
+      k.ExceptionInVPackage(paramString); 
   }
   
-  public static void a(double paramDouble) {
+  public static void ExceptionInVPackage(double paramDouble) {
     m = paramDouble;
   }
 }

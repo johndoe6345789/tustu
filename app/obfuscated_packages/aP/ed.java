@@ -2,9 +2,9 @@ package aP;
 
 import G.R;
 import G.T;
-import c.e;
+import c.CInterfaceEcho;
 
-class ed implements e {
+class ed implements CInterfaceEcho {
   ed(dB paramdB) {}
   
   public boolean a() {

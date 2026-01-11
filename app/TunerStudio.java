@@ -1,8 +1,8 @@
-import A.v;
-import V.a;
+import A.AInterfaceVictor;
+import V.ExceptionInVPackage;
 import aP.bz;
 import aP.dl;
-import aP.f;
+import aP.NetworkHashMap;
 import bH.D;
 import bH.J;
 import bH.i;
@@ -23,11 +23,11 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 import javax.swing.UIDefaults;
 import javax.swing.UIManager;
-import r.a;
-import r.j;
+import r.ExceptionInVPackage;
+import r.ThreadedFile;
 
 public class TunerStudio {
-  static dl a = null;
+  static dl ExceptionInVPackage = null;
   
   static String b = "AppDebug";
   
@@ -51,9 +51,9 @@ public class TunerStudio {
     } catch (URISyntaxException uRISyntaxException) {
       uRISyntaxException.printStackTrace();
     } 
-    if (J.f())
-      a(); 
-    (new bz()).a(paramArrayOfString, str);
+    if (J.NetworkHashMap())
+      ExceptionInVPackage(); 
+    (new bz()).ExceptionInVPackage(paramArrayOfString, str);
     boolean bool1 = true;
     if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("-noSplash")) {
       System.out.println("Splashscreen suppressed.");
@@ -63,16 +63,16 @@ public class TunerStudio {
     boolean bool2 = bool1;
     if (paramArrayOfString.length > 1)
       paramArrayOfString[0] = paramArrayOfString[1]; 
-    a.cw = a.a().a("tuneFileExt", "msq");
-    a.aj = i;
-    boolean bool3 = a.a().a("debug", "false").equals("true");
-    boolean bool4 = a.a().a("debug", "false").equals("off");
+    ExceptionInVPackage.cw = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage("tuneFileExt", "msq");
+    ExceptionInVPackage.aj = i;
+    boolean bool3 = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage("debug", "false").equals("true");
+    boolean bool4 = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage("debug", "false").equals("off");
     if (bool4) {
-      D.a(false);
+      D.ExceptionInVPackage(false);
     } else if (!bool3) {
-      b = a.b + "AppDebug.txt";
+      b = ExceptionInVPackage.b + "AppDebug.txt";
       try {
-        String str1 = j.t();
+        String str1 = ThreadedFile.t();
         b = str1 + File.separator + b;
         File file = new File(b);
         if (file.exists() && file.length() > 5000000L)
@@ -81,7 +81,7 @@ public class TunerStudio {
         System.out.println("Error deleting log file Output");
       } 
       try {
-        a.a().a(new File(b));
+        ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(new File(b));
         FileOutputStream fileOutputStream = new FileOutputStream(b, !c);
         PrintStream printStream = new PrintStream(fileOutputStream);
         System.setOut(printStream);
@@ -92,8 +92,8 @@ public class TunerStudio {
     } 
     if (!d.isEmpty())
       System.out.println(d); 
-    System.out.println("Starting on " + v.b());
-    System.out.println(a.b + " " + a.a + " started on " + (new Date()).toString());
+    System.out.println("Starting on " + AInterfaceVictor.b());
+    System.out.println(ExceptionInVPackage.b + " " + ExceptionInVPackage.ExceptionInVPackage + " started on " + (new Date()).toString());
     System.out.println("JRE " + System.getProperty("java.version") + ", " + System.getProperty("os.name") + " " + System.getProperty("os.version") + ", " + System.getProperty("os.arch"));
     System.out.println("java.library.path=" + System.getProperty("java.library.path"));
     System.out.println(System.getProperty("java.class.path"));
@@ -105,9 +105,9 @@ public class TunerStudio {
     } catch (Exception exception) {
       exception.printStackTrace();
     } 
-    if (a.a().c(a.F, a.G)) {
+    if (ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.F, ExceptionInVPackage.G)) {
       System.setProperty("sun.java2d.opengl", "true");
-    } else if (a.a().c(a.H, a.I)) {
+    } else if (ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.H, ExceptionInVPackage.I)) {
       System.setProperty("sun.java2d.d3d", "false");
     } 
     try {
@@ -118,19 +118,19 @@ public class TunerStudio {
         System.out.println("Look:" + arrayOfLookAndFeelInfo[b].getName() + ", ClassName:'" + arrayOfLookAndFeelInfo[b].getClassName() + "'"); 
       try {
         System.setProperty("apple.laf.useScreenMenuBar", "false");
-        System.setProperty("com.apple.mrj.application.apple.menu.about.name", a.a().b());
+        System.setProperty("com.apple.mrj.application.apple.menu.about.name", ExceptionInVPackage.ExceptionInVPackage().b());
       } catch (Exception exception) {
         System.out.println("Exception while setting OS X properties: " + exception.getMessage());
       } 
-      String str1 = a.a().a("defaultLookAndFeelClass", UIManager.getCrossPlatformLookAndFeelClassName());
+      String str1 = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage("defaultLookAndFeelClass", UIManager.getCrossPlatformLookAndFeelClassName());
       if (str1.equals("NATIVE"))
         str1 = UIManager.getSystemLookAndFeelClassName(); 
-      String str2 = a.a().c("lookAndFeelClass", str1);
+      String str2 = ExceptionInVPackage.ExceptionInVPackage().c("lookAndFeelClass", str1);
       System.out.println("Setting Look & Feel to:" + str2);
       UIManager.put("FileChooser.useSystemExtensionHiding", Boolean.valueOf(false));
       boolean bool = (str2.equals("de.muntjak.tinylookandfeel.TinyLookAndFeel") && !eJ.b()) ? true : false;
       if (str2.equals("de.muntjak.tinylookandfeel.TinyLookAndFeel"))
-        a.bS = true; 
+        ExceptionInVPackage.bS = true; 
       UIManager.setLookAndFeel(str2);
       if (str2.contains("Nimbus")) {
         UIDefaults uIDefaults = UIManager.getLookAndFeel().getDefaults();
@@ -139,16 +139,16 @@ public class TunerStudio {
         UIManager.getLookAndFeelDefaults().put("Table.cellNoFocusBorder", new Insets(0, 0, 0, 0));
         UIManager.getLookAndFeelDefaults().put("Table.focusCellHighlightBorder", new Insets(0, 0, 0, 0));
       } 
-      f.a().x();
+      NetworkHashMap.ExceptionInVPackage().x();
     } catch (Exception exception) {
       System.out.println("Couldn't set UI");
       exception.printStackTrace();
     } 
     if (bool2) {
-      f f = new f();
+      NetworkHashMap NetworkHashMap = new NetworkHashMap();
       try {
-        SwingUtilities.invokeAndWait(f);
-        if (!J.a())
+        SwingUtilities.invokeAndWait(NetworkHashMap);
+        if (!J.ExceptionInVPackage())
           Thread.sleep(200L); 
         if (J.e())
           Thread.sleep(400L); 
@@ -159,7 +159,7 @@ public class TunerStudio {
       } 
     } 
     g g = new g(bool2, paramArrayOfString);
-    i.b().a();
+    i.b().ExceptionInVPackage();
     try {
       SwingUtilities.invokeAndWait(g);
     } catch (InterruptedException interruptedException) {
@@ -170,16 +170,16 @@ public class TunerStudio {
     Runtime.getRuntime().addShutdownHook(new h());
   }
   
-  private static void a() {
+  private static void ExceptionInVPackage() {
     File file1 = new File("./lib/jssc2.8.jar");
     File file2 = new File("./lib/jssc.jar");
     if (file1.exists() && file1.length() > 0L && file1.length() != file2.length()) {
       d += "Updating JSSC Driver to 2.8 versoin for XP compatability.\n";
       if (file2.delete()) {
         try {
-          t.a(file1, file2);
+          t.ExceptionInVPackage(file1, file2);
           d += "Successfully changed JSSC Library to 2.8 for XP compatability.\n";
-        } catch (a a) {
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
           d += "Failed to copy jssc2.8.jar to jssc.jar, try it manually.\n";
         } 
       } else {

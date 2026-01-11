@@ -1,6 +1,6 @@
 package aP;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -11,9 +11,9 @@ class cu implements ItemListener {
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
       String str = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getActionCommand();
-      i.c("lineTraceSize", str);
+      IOProperties.c("lineTraceSize", str);
       this.a.b.p().c(Integer.parseInt(str));
-      this.a.b.p().i();
+      this.a.b.p().IOProperties();
       this.a.b.p().repaint();
     } 
   }

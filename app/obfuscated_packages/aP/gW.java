@@ -1,16 +1,16 @@
 package aP;
 
-import s.f;
-import s.g;
-import x.a;
+import s.SInterfaceFoxtrot;
+import s.SComponentGolf;
+import x.JMenuExtensionSetpopupmenuvisible;
 
-public class gW extends a implements f {
+public class gW extends JMenuExtensionSetpopupmenuvisible implements SInterfaceFoxtrot {
   String c = null;
   
   public gW(dB paramdB, String paramString, boolean paramBoolean) {
     this.c = paramString;
-    setText(g.b(paramString));
-    a(paramBoolean);
+    setText(SComponentGolf.b(paramString));
+    JMenuExtensionSetpopupmenuvisible(paramBoolean);
     addMouseListener(new gU(paramdB, this));
   }
   
@@ -18,12 +18,12 @@ public class gW extends a implements f {
     this(paramdB, paramString, true);
   }
   
-  public void a(String paramString) {
+  public void JMenuExtensionSetpopupmenuvisible(String paramString) {
     setText(paramString);
-    g.b(this.c, paramString);
+    SComponentGolf.b(this.c, paramString);
   }
   
-  public String a() {
+  public String JMenuExtensionSetpopupmenuvisible() {
     return this.c;
   }
 }

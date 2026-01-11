@@ -4,14 +4,14 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
-import s.g;
+import s.SComponentGolf;
 
 class bk implements ActionListener {
   bk(bi parambi) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
-    if (!this.a.c && (this.a.c().a().size() == 1 || bV.a(g.b("There is more than 1 gauge selected.") + "\n" + g.b("Are you sure you want to set them all to Output Channel") + ": " + jComboBox.getSelectedItem() + "?", jComboBox, true)))
+    if (!this.a.c && (this.a.c().a().size() == 1 || bV.a(SComponentGolf.b("There is more than 1 gauge selected.") + "\n" + SComponentGolf.b("Are you sure you want to set them all to Output Channel") + ": " + jComboBox.getSelectedItem() + "?", jComboBox, true)))
       this.a.c().b((String)jComboBox.getSelectedItem()); 
   }
 }

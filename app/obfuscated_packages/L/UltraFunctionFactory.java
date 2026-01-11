@@ -1,13 +1,13 @@
 package L;
 
-import ax.A;
+import ax.AxComponentAlpha;
 import ax.ac;
-import ax.e;
+import ax.AbstractInAxPackage;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ab extends e {
+public class ab extends AbstractInAxPackage {
   private static ab a = null;
   
   private boolean b = false;
@@ -42,7 +42,7 @@ public class ab extends e {
       if (paramList.size() >= r.b() && paramList.size() <= r.c()) {
         ac = r.a(paramList);
       } else {
-        throw new A(paramString, paramList.size(), r.b());
+        throw new AxComponentAlpha(paramString, paramList.size(), r.b());
       } 
     } 
     return ac;
@@ -55,7 +55,7 @@ public class ab extends e {
   private ac b(String paramString, List paramList) {
     if (paramList.size() >= 2 && paramList.size() <= 4)
       return new Y(paramList); 
-    throw new A(paramString, paramList.size(), 2);
+    throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
   public boolean b() {

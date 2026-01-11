@@ -1,6 +1,6 @@
 package ak;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.T;
 import W.X;
 import bH.D;
@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.StringTokenizer;
 
 public class ay extends S {
-  int a = 0;
+  int ExceptionInVPackage = 0;
   
   public ay() {
     super(",", false);
@@ -25,10 +25,10 @@ public class ay extends S {
         str = "Time" + l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       byte b = 0;
       str = X.b(str, r() + r(), r() + " " + r());
@@ -38,7 +38,7 @@ public class ay extends S {
         l();
         String str1 = l();
         if (c(str1, ",")) {
-          a(true);
+          ExceptionInVPackage(true);
           arrayOfString = null;
         } else {
           arrayOfString = str1.split(",");
@@ -61,11 +61,11 @@ public class ay extends S {
           str1 = X.b(str1, "  ", " "); 
         d d = new d();
         if (str1.equals("Timestamp (mS)") || str1.equals("Elapsed Time")) {
-          d.a(3);
-          d.a("Time");
+          d.ExceptionInVPackage(3);
+          d.ExceptionInVPackage("Time");
           d.b("s");
           str1 = "Time";
-          d.a(0.001F);
+          d.ExceptionInVPackage(0.001F);
         } 
         try {
           if (str1.indexOf("[") > 1 && str1.contains("]")) {
@@ -93,9 +93,9 @@ public class ay extends S {
         for (byte b1 = 0; b1 < 100 && i(str2); b1++)
           str2 = str1 + b1; 
         str1 = str2;
-        d.a(str1);
-        if (d.a().contains("Latitude") || d.a().contains("Longitude"))
-          d.a(7); 
+        d.ExceptionInVPackage(str1);
+        if (d.ExceptionInVPackage().contains("Latitude") || d.ExceptionInVPackage().contains("Longitude"))
+          d.ExceptionInVPackage(7); 
         if (arrayOfString != null && arrayOfString.length > this.g.size())
           d.b(arrayOfString[this.g.size()]); 
         this.g.add(d);
@@ -112,14 +112,14 @@ public class ay extends S {
     Iterator<T> iterator = this.g.iterator();
     while (iterator.hasNext())
       arrayList.add(iterator.next()); 
-    this.a = arrayList.size();
+    this.ExceptionInVPackage = arrayList.size();
     return arrayList.iterator();
   }
   
   public float[] c() {
     float[] arrayOfFloat = super.c();
-    if (arrayOfFloat.length < this.a) {
-      float[] arrayOfFloat1 = new float[this.a];
+    if (arrayOfFloat.length < this.ExceptionInVPackage) {
+      float[] arrayOfFloat1 = new float[this.ExceptionInVPackage];
       System.arraycopy(arrayOfFloat, 0, arrayOfFloat1, 0, arrayOfFloat.length);
       arrayOfFloat = arrayOfFloat1;
     } 

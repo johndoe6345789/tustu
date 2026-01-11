@@ -1,10 +1,10 @@
 package aP;
 
-import A.j;
+import A.Threaded;
 import java.util.List;
 
 class bf extends Thread {
-  bf(aY paramaY, j paramj, List paramList) {}
+  bf(aY paramaY, Threaded paramj, List paramList) {}
   
   public void run() {
     this.a.a(this.b);

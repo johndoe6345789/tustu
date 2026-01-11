@@ -1,7 +1,7 @@
 package ak;
 
-import V.a;
-import V.f;
+import V.ExceptionInVPackage;
+import V.VInterfaceFoxtrot;
 import W.T;
 import W.X;
 import W.m;
@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class aH extends g {
-  float a = -1.0F;
+  float ExceptionInVPackage = -1.0F;
   
   public aH() {
     super(",", false);
@@ -29,10 +29,10 @@ public class aH extends g {
         str1 = l();
       } catch (IOException iOException) {
         iOException.printStackTrace();
-        throw new a("IO Error reading header rows from file.");
-      } catch (a a) {
-        a.printStackTrace();
-        throw new a("No Valid Data found in file");
+        throw new ExceptionInVPackage("IO Error reading header rows from file.");
+      } catch (ExceptionInVPackage ExceptionInVPackage) {
+        ExceptionInVPackage.printStackTrace();
+        throw new ExceptionInVPackage("No Valid Data found in file");
       } 
       if (str1.startsWith("\"Elapsed Time\""))
         str1 = X.b(str1, "\"", ""); 
@@ -60,8 +60,8 @@ public class aH extends g {
             str2 = "ZForce(g)"; 
           d d = new d();
           if (str2.equals("Device Time")) {
-            d.a(3);
-            d.a("Device Time");
+            d.ExceptionInVPackage(3);
+            d.ExceptionInVPackage("Device Time");
             d.b("s");
             str2 = "Device Time";
           } 
@@ -81,9 +81,9 @@ public class aH extends g {
           str2 = str2.trim();
           for (byte b1 = 0; b1 < 100 && i(str2); b1++)
             str2 = str2 + b1; 
-          d.a(str2);
-          if (d.a().contains("Latitude") || d.a().contains("Longitude"))
-            d.a(7); 
+          d.ExceptionInVPackage(str2);
+          if (d.ExceptionInVPackage().contains("Latitude") || d.ExceptionInVPackage().contains("Longitude"))
+            d.ExceptionInVPackage(7); 
           this.g.add(d);
           b++;
         } 
@@ -101,20 +101,20 @@ public class aH extends g {
       while (stringTokenizer.hasMoreTokens()) {
         String str1 = stringTokenizer.nextToken().trim();
         if (b < this.g.size()) {
-          if (!I.a(str1)) {
+          if (!I.ExceptionInVPackage(str1)) {
             ((d)this.g.get(b++)).b(str1);
             continue;
           } 
-          a(true);
+          ExceptionInVPackage(true);
           break;
         } 
       } 
     } catch (IOException iOException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } catch (f f) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)f);
+    } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
     } catch (Exception exception) {
-      D.a("Failed to get units from this row:\n" + str);
+      D.ExceptionInVPackage("Failed to get units from this row:\n" + str);
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
     ArrayList<T> arrayList = new ArrayList();
@@ -133,7 +133,7 @@ public class aH extends g {
   protected float g(String paramString) {
     int i = 0;
     int j = 0;
-    float f = 0.0F;
+    float VInterfaceFoxtrot = 0.0F;
     try {
       StringTokenizer stringTokenizer = new StringTokenizer(paramString, ":");
       if (stringTokenizer.countTokens() > 2) {
@@ -143,11 +143,11 @@ public class aH extends g {
         i = Integer.parseInt(str);
       } 
       j = Integer.parseInt(stringTokenizer.nextToken());
-      f = Float.parseFloat(stringTokenizer.nextToken());
-      float f1 = (i * 3600 + j * 60) + f;
-      if (this.a < 0.0F)
-        this.a = f1; 
-      return f1 - this.a;
+      VInterfaceFoxtrot = Float.parseFloat(stringTokenizer.nextToken());
+      float f1 = (i * 3600 + j * 60) + VInterfaceFoxtrot;
+      if (this.ExceptionInVPackage < 0.0F)
+        this.ExceptionInVPackage = f1; 
+      return f1 - this.ExceptionInVPackage;
     } catch (Exception exception) {
       return 0.0F;
     } 

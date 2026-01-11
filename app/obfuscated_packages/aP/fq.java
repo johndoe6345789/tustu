@@ -2,13 +2,13 @@ package aP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class fq implements ActionListener {
   fq(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a.a().b(a.ce, a.bZ);
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ce, IOPropertiesUsingFile.bZ);
   }
 }
 

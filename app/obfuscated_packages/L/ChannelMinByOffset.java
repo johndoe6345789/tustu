@@ -4,8 +4,8 @@ import G.R;
 import G.T;
 import G.aH;
 import G.aI;
-import ax.S;
-import ax.U;
+import ax.CloneableImplInAxPackage;
+import ax.ExceptionInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.Iterator;
@@ -35,7 +35,7 @@ public class ChannelMinByOffset extends ac {
     this.b = paramab;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d = (this.d != null) ? this.d.b(paramS) : -1.0D;
     if (this.d != null && this.e != d) {
       String[] arrayOfString = T.a().d();
@@ -63,12 +63,12 @@ public class ChannelMinByOffset extends ac {
         } 
       } 
       if (this.f == null && i >= 0)
-        throw new U("No OutputChannel found for offset: " + i); 
+        throw new ExceptionInAxPackage("No OutputChannel found for offset: " + i); 
     } 
     return (this.f != null) ? this.f.n() : 0.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

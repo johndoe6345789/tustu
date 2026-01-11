@@ -2,14 +2,14 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
 import G.aI;
-import G.i;
+import G.RInterfaceIndia;
 import G.q;
-import S.a;
-import S.b;
-import S.e;
-import S.j;
-import U.b;
-import ax.U;
+import S.SInterfaceAlpha;
+import S.HashMap;
+import S.SInterfaceEcho;
+import S.SInterfaceJuliet;
+import ExceptionInAxPackage.HashMap;
+import ax.ExceptionInAxPackage;
 import bH.X;
 import bt.bh;
 import com.efiAnalytics.ui.bV;
@@ -24,28 +24,28 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
-import r.i;
+import r.RInterfaceIndia;
 
 public class AutoLoggingTriggerPanel extends bh implements bc {
-  R a;
+  R SInterfaceAlpha;
   
-  j b;
+  SInterfaceJuliet HashMap;
   
-  j c;
+  SInterfaceJuliet c;
   
-  static String d = b.a;
+  static String d = HashMap.SInterfaceAlpha;
   
-  static String e = b.b;
+  static String SInterfaceEcho = HashMap.HashMap;
   
-  static String f = b.c;
+  static String f = HashMap.c;
   
-  static String g = b.d;
+  static String g = HashMap.d;
   
-  static String h = b.e;
+  static String h = HashMap.SInterfaceEcho;
   
-  static String i = b.f;
+  static String RInterfaceIndia = HashMap.f;
   
-  JCheckBox j;
+  JCheckBox SInterfaceJuliet;
   
   JPanel k;
   
@@ -59,13 +59,13 @@ public class AutoLoggingTriggerPanel extends bh implements bc {
   
   public g(R paramR) {
     String str1;
-    this.a = null;
-    this.j = new JCheckBox(s.g.b("Enabled"));
+    this.SInterfaceAlpha = null;
+    this.SInterfaceJuliet = new JCheckBox(s.g.HashMap("Enabled"));
     this.k = new JPanel();
     this.p = null;
-    this.a = paramR;
-    this.b = b.a().a(paramR.c(), d);
-    this.c = b.a().a(paramR.c(), e);
+    this.SInterfaceAlpha = paramR;
+    this.HashMap = HashMap.SInterfaceAlpha().SInterfaceAlpha(paramR.c(), d);
+    this.c = HashMap.SInterfaceAlpha().SInterfaceAlpha(paramR.c(), SInterfaceEcho);
     d();
     if (paramR.g("TPS_Pct") != null) {
       str1 = "TPS_Pct > 80";
@@ -74,95 +74,95 @@ public class AutoLoggingTriggerPanel extends bh implements bc {
     } else {
       str1 = "";
     } 
-    String str2 = X.b(this.b.d(), f, "");
-    str2 = X.b(str2, "&& AppEvent.dataLogTime == 0", "");
+    String str2 = X.HashMap(this.HashMap.d(), f, "");
+    str2 = X.HashMap(str2, "&& AppEvent.dataLogTime == 0", "");
     if (str2.equals(""))
       str2 = str1; 
-    this.l.a(str2);
-    boolean bool = i.a().a("sa0-0o0os-0o-0DS") ? true : true;
-    String str3 = b.a(this.c, bool);
-    this.m.a(str3);
+    this.l.SInterfaceAlpha(str2);
+    boolean bool = RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS") ? true : true;
+    String str3 = HashMap.SInterfaceAlpha(this.c, bool);
+    this.m.SInterfaceAlpha(str3);
   }
   
   private void d() {
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
-    jPanel1.setBorder(BorderFactory.createTitledBorder(s.g.b("Automatic Logging Trigger")));
+    jPanel1.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Automatic Logging Trigger")));
     jPanel1.setLayout(new BorderLayout());
-    jPanel1.add("North", this.j);
-    boolean bool = i.a().a("sa0-0o0os-0o-0DS");
-    this.j.setSelected((bool || this.b.c()));
-    this.j.setEnabled(!bool);
-    this.j.addActionListener(new h(this));
+    jPanel1.add("North", this.SInterfaceJuliet);
+    boolean bool = RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS");
+    this.SInterfaceJuliet.setSelected((bool || this.HashMap.c()));
+    this.SInterfaceJuliet.setEnabled(!bool);
+    this.SInterfaceJuliet.addActionListener(new h(this));
     this.k.setLayout(new BoxLayout(this.k, 1));
     JPanel jPanel2 = new JPanel();
     this.k.add(jPanel2);
     jPanel2.setLayout(new BorderLayout());
-    this.l = new k(this, this.a, false, true);
-    this.l.setBorder(BorderFactory.createTitledBorder(s.g.b("Start Logging When")));
+    this.l = new k(this, this.SInterfaceAlpha, false, true);
+    this.l.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Start Logging When")));
     jPanel2.add("Center", this.l);
     JPanel jPanel3 = new JPanel();
     this.k.add(jPanel3);
     jPanel3.setLayout(new BorderLayout());
-    this.m = new k(this, this.a, true, !i.a().a("sa0-0o0os-0o-0DS"));
-    this.m.setBorder(BorderFactory.createTitledBorder(s.g.b("Stop Logging When")));
+    this.m = new k(this, this.SInterfaceAlpha, true, !RInterfaceIndia.SInterfaceAlpha().SInterfaceAlpha("sa0-0o0os-0o-0DS"));
+    this.m.setBorder(BorderFactory.createTitledBorder(s.g.HashMap("Stop Logging When")));
     jPanel3.add("Center", this.m);
     jPanel1.add("Center", this.k);
     add("Center", jPanel1);
-    e();
+    SInterfaceEcho();
   }
   
-  private void e() {
-    fp.a(this.k, this.j.isSelected());
-    if (this.j.isSelected()) {
-      this.l.b();
-      this.m.b();
+  private void SInterfaceEcho() {
+    fp.SInterfaceAlpha(this.k, this.SInterfaceJuliet.isSelected());
+    if (this.SInterfaceJuliet.isSelected()) {
+      this.l.HashMap();
+      this.m.HashMap();
     } 
   }
   
   public void close() {
-    e.a().a(this.a.c(), this.b.a());
-    e.a().a(this.a.c(), this.c.a());
-    if (this.j.isSelected())
+    SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), this.HashMap.SInterfaceAlpha());
+    SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), this.c.SInterfaceAlpha());
+    if (this.SInterfaceJuliet.isSelected())
       try {
-        e.a().a(this.a.c(), (a)this.b);
-        e.a().a(this.a.c(), (a)this.c);
+        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.HashMap);
+        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.c(), (SInterfaceAlpha)this.c);
       } catch (q q) {
-        bV.d("No Configuration Found: " + this.a.c(), this.j);
+        bV.d("No Configuration Found: " + this.SInterfaceAlpha.c(), this.SInterfaceJuliet);
       }  
     super.close();
   }
   
   public boolean c() {
     try {
-      i.a(this.l.a(), (aI)this.a);
-    } catch (U u) {
-      bV.d(s.g.b("Invalid Start Logging Expression") + ":" + this.l.a(), (Component)this);
+      RInterfaceIndia.SInterfaceAlpha(this.l.SInterfaceAlpha(), (aI)this.SInterfaceAlpha);
+    } catch (ExceptionInAxPackage u) {
+      bV.d(s.g.HashMap("Invalid Start Logging Expression") + ":" + this.l.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     try {
-      i.a(this.m.a(), (aI)this.a);
-    } catch (U u) {
-      bV.d(s.g.b("Invalid Stop Logging Expression") + ":" + this.m.a(), (Component)this);
+      RInterfaceIndia.SInterfaceAlpha(this.m.SInterfaceAlpha(), (aI)this.SInterfaceAlpha);
+    } catch (ExceptionInAxPackage u) {
+      bV.d(s.g.HashMap("Invalid Stop Logging Expression") + ":" + this.m.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     return true;
   }
   
   private void f() {
-    this.b.e(this.l.a() + f);
-    this.c.e(this.m.a() + g);
-    this.b.f(h);
-    this.c.f(i);
+    this.HashMap.SInterfaceEcho(this.l.SInterfaceAlpha() + f);
+    this.c.SInterfaceEcho(this.m.SInterfaceAlpha() + g);
+    this.HashMap.f(h);
+    this.c.f(RInterfaceIndia);
   }
   
-  public void a(Component paramComponent) {
-    this.p = new JDialog(bV.a(paramComponent), s.g.b("Triggered Logging"));
+  public void SInterfaceAlpha(Component paramComponent) {
+    this.p = new JDialog(bV.SInterfaceAlpha(paramComponent), s.g.HashMap("Triggered Logging"));
     this.p.add("Center", (Component)this);
-    JButton jButton1 = new JButton(s.g.b("Cancel"));
-    jButton1.addActionListener(new i(this));
-    JButton jButton2 = new JButton(s.g.b("Accept"));
-    jButton2.addActionListener(new j(this));
+    JButton jButton1 = new JButton(s.g.HashMap("Cancel"));
+    jButton1.addActionListener(new RInterfaceIndia(this));
+    JButton jButton2 = new JButton(s.g.HashMap("Accept"));
+    jButton2.addActionListener(new SInterfaceJuliet(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
     if (bV.d()) {
@@ -174,7 +174,7 @@ public class AutoLoggingTriggerPanel extends bh implements bc {
     } 
     this.p.add("South", jPanel);
     this.p.pack();
-    bV.a(bV.a(paramComponent), this.p);
+    bV.SInterfaceAlpha(bV.SInterfaceAlpha(paramComponent), this.p);
     this.p.setVisible(true);
     validate();
     this.p.pack();

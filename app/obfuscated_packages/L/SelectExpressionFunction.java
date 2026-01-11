@@ -1,7 +1,7 @@
 package L;
 
-import ax.S;
-import ax.U;
+import ax.CloneableImplInAxPackage;
+import ax.ExceptionInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.ArrayList;
@@ -17,16 +17,16 @@ public class SelectExpressionFunction extends ac {
     this.b = paramList;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     int i = (int)Math.round(this.a.b(paramS));
     try {
       return ((ab)this.b.get(i)).b(paramS);
     } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
-      throw new U("IndexOutOfBounds! index=" + i + ", function: " + toString());
+      throw new ExceptionInAxPackage("IndexOutOfBounds! index=" + i + ", function: " + toString());
     } 
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

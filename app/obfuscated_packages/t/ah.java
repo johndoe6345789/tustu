@@ -1,29 +1,29 @@
 package t;
 
 import com.efiAnalytics.ui.et;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class ah implements et {
-  String a = "";
+  String IOPropertiesUsingFile = "";
   
   String b = "dashCompProperty_";
   
   ah(w paramw, String paramString) {
-    this.a = paramString;
+    this.IOPropertiesUsingFile = paramString;
   }
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.a();
-    a.b(this.b + this.a + "_" + paramString1, paramString2);
+  public void IOPropertiesUsingFile(String paramString1, String paramString2) {
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    IOPropertiesUsingFile.b(this.b + this.IOPropertiesUsingFile + "_" + paramString1, paramString2);
   }
   
-  public String a(String paramString) {
+  public String IOPropertiesUsingFile(String paramString) {
     return b(paramString, "");
   }
   
   public String b(String paramString1, String paramString2) {
-    a a = a.a();
-    return a.c(this.b + this.a + "_" + paramString1, paramString2);
+    IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
+    return IOPropertiesUsingFile.c(this.b + this.IOPropertiesUsingFile + "_" + paramString1, paramString2);
   }
 }
 

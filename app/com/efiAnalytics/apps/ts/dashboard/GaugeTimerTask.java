@@ -1,10 +1,10 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import d.d;
+import DComponentDelta.DComponentDelta;
 import java.util.TimerTask;
 
 class GaugeTimerTask extends TimerTask {
-  private d b = null;
+  private DComponentDelta b = null;
   
   GaugeTimerTask(x paramx) {}
   
@@ -13,7 +13,7 @@ class GaugeTimerTask extends TimerTask {
       x.a(this.a, this.b); 
   }
   
-  public void a(d paramd) {
+  public void a(DComponentDelta paramd) {
     this.b = paramd;
   }
 }

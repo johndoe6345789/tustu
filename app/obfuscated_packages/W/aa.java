@@ -8,8 +8,8 @@ import G.bM;
 import G.bT;
 import G.ca;
 import G.r;
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.I;
 import bH.X;
@@ -114,9 +114,9 @@ public class aa {
     } catch (aj aj) {
       throw aj;
     } catch (Exception exception) {
-      throw new g("Unable to get signature in file:\n" + paramFile.getAbsolutePath());
+      throw new ExceptionPrintstacktrace("Unable to get signature in file:\n" + paramFile.getAbsolutePath());
     } 
-    throw new g("Unable to get signature in file:\n" + paramFile.getAbsolutePath());
+    throw new ExceptionPrintstacktrace("Unable to get signature in file:\n" + paramFile.getAbsolutePath());
   }
   
   public void a(R paramR, String paramString) {
@@ -183,15 +183,15 @@ public class aa {
       } 
     } catch (SAXParseException sAXParseException) {
       sAXParseException.printStackTrace();
-      throw new g("Problem Parsing tune settings file (" + str + "):\n" + sAXParseException.getMessage(), sAXParseException);
+      throw new ExceptionPrintstacktrace("Problem Parsing tune settings file (" + str + "):\n" + sAXParseException.getMessage(), sAXParseException);
     } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
       arrayIndexOutOfBoundsException.printStackTrace();
-      throw new g("Error loading " + str + "\nA constant is defined to out of range memory addresses.\nCheck your offset and page sizes." + arrayIndexOutOfBoundsException.getMessage(), arrayIndexOutOfBoundsException);
+      throw new ExceptionPrintstacktrace("Error loading " + str + "\nA constant is defined to out of range memory addresses.\nCheck your offset and page sizes." + arrayIndexOutOfBoundsException.getMessage(), arrayIndexOutOfBoundsException);
     } catch (aj aj) {
       throw aj;
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Error loading " + str + ": " + exception.getMessage(), exception);
+      throw new ExceptionPrintstacktrace("Error loading " + str + ": " + exception.getMessage(), exception);
     } 
   }
   
@@ -250,8 +250,8 @@ public class aa {
             paramR.a(str1, str2);
             this.e.add(aM);
           } 
-        } catch (g g) {
-          b("Parameter in " + paramString + ", but not valid for current firmware: " + g.getMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          b("Parameter in " + paramString + ", but not valid for current firmware: " + ExceptionPrintstacktrace.getMessage());
         } catch (Exception exception) {
           if (paramBoolean && aM != null)
             b("Value in " + paramString + " '" + str2 + "' for parameter: " + str1 + " is of a type that is not compatible with the current firmware.This will be ignored, please correct manually."); 
@@ -260,8 +260,8 @@ public class aa {
         try {
           paramR.a(str1, str2);
           this.e.add(aM);
-        } catch (g g) {
-          b("Failed to set value for " + str1 + " " + paramString + " value is not valid for current configuration: " + g.getMessage());
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          b("Failed to set value for " + str1 + " " + paramString + " value is not valid for current configuration: " + ExceptionPrintstacktrace.getMessage());
         } 
       } else if (str2 != null) {
         boolean bool1 = (str3 == null) ? ((aM != null) ? aM.a() : true) : Integer.parseInt(str3);
@@ -293,10 +293,10 @@ public class aa {
               this.e.add(aM);
             } 
           } 
-        } catch (g g) {
-          b("Failed to set value for " + str1 + " " + paramString + " value is not valid for current configuration: " + g.getMessage());
-        } catch (j j) {
-          if (!g(str1)) {
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          b("Failed to set value for " + str1 + " " + paramString + " value is not valid for current configuration: " + ExceptionPrintstacktrace.getMessage());
+        } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+          if (!ExceptionPrintstacktrace(str1)) {
             boolean bool3 = false;
             boolean bool4 = false;
             try {
@@ -380,7 +380,7 @@ public class aa {
       return ag;
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Error loading " + paramFile + ": " + exception.getMessage(), exception);
+      throw new ExceptionPrintstacktrace("Error loading " + paramFile + ": " + exception.getMessage(), exception);
     } 
   }
   
@@ -481,7 +481,7 @@ public class aa {
       String[] arrayOfString = new String[arrayList.size()];
       return arrayList.<String>toArray(arrayOfString);
     } catch (Exception exception) {
-      throw new g("Error retrieving settings from " + paramFile + ": " + exception.getMessage(), exception);
+      throw new ExceptionPrintstacktrace("Error retrieving settings from " + paramFile + ": " + exception.getMessage(), exception);
     } 
   }
   
@@ -595,7 +595,7 @@ public class aa {
                 element6.setAttribute("units", aM.p()); 
               if (!aM.i().equals("bits"))
                 element6.setAttribute("digits", aM.v() + ""); 
-              double d = aM.j(paramR.p());
+              double d = aM.ExceptionExtensionGetmessage(paramR.p());
               if (!aM.I()) {
                 d = Math.round(d * 1.0E7D) / 1.0E7D;
                 element6.setTextContent(Double.toString(d));
@@ -675,7 +675,7 @@ public class aa {
       } 
     } catch (ParserConfigurationException parserConfigurationException) {
       parserConfigurationException.printStackTrace();
-      throw new g("Invalid XML parser option. \n" + parserConfigurationException.getMessage(), parserConfigurationException);
+      throw new ExceptionPrintstacktrace("Invalid XML parser option. \n" + parserConfigurationException.getMessage(), parserConfigurationException);
     } 
     D.d("Time to save msq: " + aa1.d());
   }
@@ -730,7 +730,7 @@ public class aa {
             } else if (aM.i().equals("string")) {
               element4.setTextContent(aM.d(paramR.p()));
             } else if (aM.i().equals("scalar") || aM.i().equals(ca.e) || aM.i().equals(ca.d)) {
-              double d = aM.j(paramR.p());
+              double d = aM.ExceptionExtensionGetmessage(paramR.p());
               d = Math.round(d * 1.0E7D) / 1.0E7D;
               element4.setTextContent(d + "");
             } else if (aM.i().equals("array")) {
@@ -754,7 +754,7 @@ public class aa {
       a(paramString, document);
     } catch (ParserConfigurationException parserConfigurationException) {
       parserConfigurationException.printStackTrace();
-      throw new g("Invalid XML parser option. \n" + parserConfigurationException.getMessage(), parserConfigurationException);
+      throw new ExceptionPrintstacktrace("Invalid XML parser option. \n" + parserConfigurationException.getMessage(), parserConfigurationException);
     } 
   }
   
@@ -790,7 +790,7 @@ public class aa {
       y.close();
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new g("Error Saving MSQ. Check Log file for details.");
+      throw new ExceptionPrintstacktrace("Error Saving MSQ. Check Log file for details.");
     } finally {
       if (y != null)
         try {
@@ -799,7 +799,7 @@ public class aa {
     } 
   }
   
-  private boolean g(String paramString) {
+  private boolean ExceptionPrintstacktrace(String paramString) {
     return (paramString.equals("KPaTarg60") || paramString.equals("KPaTarg40") || paramString.equals("KPaTarg10") || paramString.equals("KPaTarg100") || paramString.equals("ipwmTable"));
   }
   

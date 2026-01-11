@@ -3,10 +3,10 @@ package com.efiAnalytics.tunerStudio.panels;
 import G.cd;
 import W.aB;
 import W.n;
-import aE.a;
-import bA.c;
+import aE.PropertiesExtension;
+import bA.JCheckBoxMenuItemExtension;
 import bH.X;
-import bt.j;
+import bt.ThreadedFile;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cn;
 import java.awt.BorderLayout;
@@ -25,16 +25,16 @@ import javax.swing.JLabel;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
-import r.a;
-import r.j;
-import s.g;
+import r.PropertiesExtension;
+import r.ThreadedFile;
+import s.SComponentGolf;
 
 class IgnitionLoggerControlPanel extends JPanel {
-  JButton a = null;
+  JButton PropertiesExtension = null;
   
   JButton b = null;
   
-  JButton c = null;
+  JButton JCheckBoxMenuItemExtension = null;
   
   JButton d = null;
   
@@ -42,37 +42,37 @@ class IgnitionLoggerControlPanel extends JPanel {
   
   JButton f = null;
   
-  JComboBox g = new JComboBox();
+  JComboBox SComponentGolf = new JComboBox();
   
   JComboBox h = new JComboBox();
   
   cn i = new cn();
   
-  JCheckBox j = null;
+  JCheckBox ThreadedFile = null;
   
   TriggerLoggerPanel k;
   
   public o(TriggerLoggerPanel paramTriggerLoggerPanel) {
     this.k = paramTriggerLoggerPanel;
-    setBorder(BorderFactory.createTitledBorder(g.b("Ignition Logger Controls")));
+    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Ignition Logger Controls")));
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new FlowLayout());
-    String str = g.b("Attention!! For a typical continuous Data Log, use the Data Logging menu or the Graphing & Logging tab when available. This tab is for Specialty High Speed Loggers such as trigger wheel, ignition and pin states. Logging is performed using a series of snapshots as the events occur too fast to log in a continuous fashion.");
-    j j = new j(str);
-    jPanel1.add((Component)j);
-    jPanel1.add(new JLabel(g.b("Logger Type:")));
-    jPanel1.add(this.g);
-    this.g.addActionListener(new p(this));
-    this.a = new JButton(g.b("Start"));
-    this.a.addActionListener(new u(this));
-    jPanel1.add(this.a);
-    this.b = new JButton(g.b("Stop"));
+    String str = SComponentGolf.b("Attention!! For PropertiesExtension typical continuous Data Log, use the Data Logging menu or the Graphing & Logging tab when available. This tab is for Specialty High Speed Loggers such as trigger wheel, ignition and pin states. Logging is performed using PropertiesExtension series of snapshots as the events occur too fast to log in PropertiesExtension continuous fashion.");
+    ThreadedFile ThreadedFile = new ThreadedFile(str);
+    jPanel1.add((Component)ThreadedFile);
+    jPanel1.add(new JLabel(SComponentGolf.b("Logger Type:")));
+    jPanel1.add(this.SComponentGolf);
+    this.SComponentGolf.addActionListener(new p(this));
+    this.PropertiesExtension = new JButton(SComponentGolf.b("Start"));
+    this.PropertiesExtension.addActionListener(new u(this));
+    jPanel1.add(this.PropertiesExtension);
+    this.b = new JButton(SComponentGolf.b("Stop"));
     this.b.addActionListener(new v(this));
     jPanel1.add(this.b);
-    this.c = new JButton(g.b("Clear"));
-    this.c.addActionListener(new w(this));
-    jPanel1.add(this.c);
+    this.JCheckBoxMenuItemExtension = new JButton(SComponentGolf.b("Clear"));
+    this.JCheckBoxMenuItemExtension.addActionListener(new w(this));
+    jPanel1.add(this.JCheckBoxMenuItemExtension);
     this.h.addItem("250 ms");
     this.h.addItem("500 ms");
     this.h.addItem("750 ms");
@@ -83,151 +83,151 @@ class IgnitionLoggerControlPanel extends JPanel {
     this.h.setSelectedItem("1000 ms");
     this.h.addActionListener(new x(this));
     jPanel1.add(this.h);
-    if (paramTriggerLoggerPanel.j()) {
+    if (paramTriggerLoggerPanel.ThreadedFile()) {
       if (!TriggerLoggerPanel.Q) {
-        this.e = new JButton(g.b("Options"));
+        this.e = new JButton(SComponentGolf.b("Options"));
         jPanel1.add(this.e);
         this.e.addActionListener(new y(this));
       } 
-      this.f = new JButton(g.b("File"));
+      this.f = new JButton(SComponentGolf.b("File"));
       jPanel1.add(this.f);
       this.f.addActionListener(new z(this));
     } 
     add("West", jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    this.j = new JCheckBox(g.b("Capture to log file:") + "  ");
-    jPanel2.add("West", this.j);
-    this.j.addActionListener(new A(this));
+    this.ThreadedFile = new JCheckBox(SComponentGolf.b("Capture to log file:") + "  ");
+    jPanel2.add("West", this.ThreadedFile);
+    this.ThreadedFile.addActionListener(new A(this));
     jPanel2.add("Center", (Component)this.i);
     add("Center", jPanel2);
   }
   
-  public void a() {
+  public void PropertiesExtension() {
     JPopupMenu jPopupMenu = new JPopupMenu();
-    if (this.k.j()) {
-      JMenuItem jMenuItem = jPopupMenu.add(g.b("Open Log File"));
+    if (this.k.ThreadedFile()) {
+      JMenuItem jMenuItem = jPopupMenu.add(SComponentGolf.b("Open Log File"));
       jMenuItem.addActionListener(new B(this));
     } 
     if (this.k.l()) {
-      JMenuItem jMenuItem = jPopupMenu.add(g.b("Save Current Data to Log"));
+      JMenuItem jMenuItem = jPopupMenu.add(SComponentGolf.b("Save Current Data to Log"));
       jMenuItem.addActionListener(new q(this));
     } 
     jPopupMenu.show(this.f, 0, this.f.getHeight());
   }
   
-  public void a(boolean paramBoolean) {
+  public void PropertiesExtension(boolean paramBoolean) {
     if (paramBoolean) {
-      String[] arrayOfString = { a.ct };
-      String str1 = X.a() + "." + a.ct;
-      a a = a.A();
-      if (a == null || a.q() == null) {
-        bV.d(g.b("There is no project open.\nPlease open a project first."), getParent());
+      String[] arrayOfString = { PropertiesExtension.ct };
+      String str1 = X.PropertiesExtension() + "." + PropertiesExtension.ct;
+      PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+      if (PropertiesExtension == null || PropertiesExtension.q() == null) {
+        bV.d(SComponentGolf.b("There is no project open.\nPlease open PropertiesExtension project first."), getParent());
         return;
       } 
-      String str2 = a.q();
-      str1 = bV.a(getParent(), g.b("Set Ignition Logger File"), arrayOfString, str1, str2);
+      String str2 = PropertiesExtension.q();
+      str1 = bV.PropertiesExtension(getParent(), SComponentGolf.b("Set Ignition Logger File"), arrayOfString, str1, str2);
       if (str1 == null || str1.equals("")) {
-        this.j.setSelected(false);
+        this.ThreadedFile.setSelected(false);
         this.i.setText("");
         return;
       } 
-      if (!str1.toLowerCase().endsWith(a.ct))
-        str1 = str1 + "." + a.ct; 
+      if (!str1.toLowerCase().endsWith(PropertiesExtension.ct))
+        str1 = str1 + "." + PropertiesExtension.ct; 
       File file = new File(str1);
       if (file.exists()) {
-        boolean bool = bV.a(g.b("The selected file already exists.") + "\n" + g.b("Would you like to over write:") + "\n" + str1, this, true);
+        boolean bool = bV.PropertiesExtension(SComponentGolf.b("The selected file already exists.") + "\n" + SComponentGolf.b("Would you like to over write:") + "\n" + str1, this, true);
         if (!bool)
           return; 
       } 
-      c();
-      this.i.a(str1);
+      JCheckBoxMenuItemExtension();
+      this.i.PropertiesExtension(str1);
     } else {
-      this.i.a("");
-      this.k.g();
+      this.i.PropertiesExtension("");
+      this.k.SComponentGolf();
     } 
   }
   
   protected void b() {
     JPopupMenu jPopupMenu = new JPopupMenu();
-    c c = new c(g.b("Render Including Non Interrupt Data"), true, this.k.m());
-    jPopupMenu.add((JMenuItem)c);
-    c.addActionListener(new r(this));
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = new JCheckBoxMenuItemExtension(SComponentGolf.b("Render Including Non Interrupt Data"), true, this.k.m());
+    jPopupMenu.add((JMenuItem)JCheckBoxMenuItemExtension);
+    JCheckBoxMenuItemExtension.addActionListener(new r(this));
     jPopupMenu.show(this.e, 0, this.e.getHeight());
   }
   
-  public void c() {
+  public void JCheckBoxMenuItemExtension() {
     this.k.k();
-    this.i.a("");
-    this.k.g();
+    this.i.PropertiesExtension("");
+    this.k.SComponentGolf();
   }
   
   public void d() {
     try {
       ai ai = this.k.n();
       if (ai == null || ai.isEmpty()) {
-        bV.d(g.b("No data loaded or captured to save!"), this);
+        bV.d(SComponentGolf.b("No data loaded or captured to save!"), this);
         return;
       } 
-      String[] arrayOfString = { a.ct };
-      String str1 = X.a() + "." + a.ct;
-      a a = a.A();
-      if (a == null || a.q() == null) {
-        bV.d(g.b("There is no project open.\nPlease open a project first."), getParent());
+      String[] arrayOfString = { PropertiesExtension.ct };
+      String str1 = X.PropertiesExtension() + "." + PropertiesExtension.ct;
+      PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+      if (PropertiesExtension == null || PropertiesExtension.q() == null) {
+        bV.d(SComponentGolf.b("There is no project open.\nPlease open PropertiesExtension project first."), getParent());
         return;
       } 
-      String str2 = a.q();
-      str1 = bV.a(getParent(), g.b("Save log data"), arrayOfString, str1, str2);
+      String str2 = PropertiesExtension.q();
+      str1 = bV.PropertiesExtension(getParent(), SComponentGolf.b("Save log data"), arrayOfString, str1, str2);
       if (str1 == null || str1.equals("")) {
-        this.j.setSelected(false);
+        this.ThreadedFile.setSelected(false);
         this.i.setText("");
         return;
       } 
-      if (!str1.toLowerCase().endsWith(a.ct))
-        str1 = str1 + "." + a.ct; 
+      if (!str1.toLowerCase().endsWith(PropertiesExtension.ct))
+        str1 = str1 + "." + PropertiesExtension.ct; 
       File file = new File(str1);
       if (file.exists()) {
-        boolean bool = bV.a(g.b("The selected file already exists.") + "\n" + g.b("Would you like to over write:") + "\n" + str1, this, true);
+        boolean bool = bV.PropertiesExtension(SComponentGolf.b("The selected file already exists.") + "\n" + SComponentGolf.b("Would you like to over write:") + "\n" + str1, this, true);
         if (!bool)
           return; 
       } 
       byte b = 0;
       n n = (n)ai.get(b);
-      W.o o1 = W.o.a(n, str1, ",");
+      W.o o1 = W.o.PropertiesExtension(n, str1, ",");
       while (true) {
         n = (n)ai.get(b++);
-        o1.a(n);
+        o1.PropertiesExtension(n);
         if (b >= ai.size()) {
-          o1.a();
-          this.i.a(str1);
+          o1.PropertiesExtension();
+          this.i.PropertiesExtension(str1);
           return;
         } 
       } 
     } catch (IOException iOException) {
-      bV.d(g.b("Failed to save Log Data") + "\n" + iOException.getMessage(), this);
+      bV.d(SComponentGolf.b("Failed to save Log Data") + "\n" + iOException.getMessage(), this);
       Logger.getLogger(o.class.getName()).log(Level.SEVERE, "Failed to save log data.", iOException);
     } 
   }
   
   public void e() {
-    String[] arrayOfString = { a.ct };
-    a a = a.A();
-    String str1 = j.u();
-    if (a != null && a.q() != null)
-      str1 = a.q(); 
-    String str2 = bV.b(getParent(), g.b("Open Ignition Log File"), arrayOfString, "", str1);
+    String[] arrayOfString = { PropertiesExtension.ct };
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    String str1 = ThreadedFile.u();
+    if (PropertiesExtension != null && PropertiesExtension.q() != null)
+      str1 = PropertiesExtension.q(); 
+    String str2 = bV.b(getParent(), SComponentGolf.b("Open Ignition Log File"), arrayOfString, "", str1);
     if (str2 == null || str2.equals(""))
       return; 
-    this.j.setSelected(false);
-    a(str2);
+    this.ThreadedFile.setSelected(false);
+    PropertiesExtension(str2);
   }
   
-  public void a(String paramString) {
+  public void PropertiesExtension(String paramString) {
     aB aB = new aB();
-    aB.a(new C(this));
+    aB.PropertiesExtension(new C(this));
     File file = new File(paramString);
     if (!file.exists()) {
-      bV.d(g.b("Ignition Log File not found:") + "\n" + paramString, this);
+      bV.d(SComponentGolf.b("Ignition Log File not found:") + "\n" + paramString, this);
       return;
     } 
     s s = new s(this, aB, file, paramString);
@@ -235,22 +235,22 @@ class IgnitionLoggerControlPanel extends JPanel {
   }
   
   public boolean f() {
-    return (this.j.isSelected() && this.i.getText().length() > 0);
+    return (this.ThreadedFile.isSelected() && this.i.getText().length() > 0);
   }
   
-  public void g() {
-    E e = (E)this.g.getSelectedItem();
-    if (e == null || e.a() == null)
+  public void SComponentGolf() {
+    E e = (E)this.SComponentGolf.getSelectedItem();
+    if (e == null || e.PropertiesExtension() == null)
       return; 
-    this.k.a(e.a());
-    cd cd = e.a();
+    this.k.PropertiesExtension(e.PropertiesExtension());
+    cd cd = e.PropertiesExtension();
     if ((cd.e() != null && cd.e().trim().length() > 0) || cd.n().equals("UDP_Stream")) {
       this.h.setEnabled(false);
     } else {
       this.h.setEnabled(true);
     } 
     if (this.e != null)
-      if (cd != null && (cd.d().equals(cd.a) || cd.d().equals(cd.e) || cd.d().equals(cd.g) || cd.d().equals(cd.f) || cd.d().equals(cd.h))) {
+      if (cd != null && (cd.d().equals(cd.PropertiesExtension) || cd.d().equals(cd.e) || cd.d().equals(cd.SComponentGolf) || cd.d().equals(cd.f) || cd.d().equals(cd.h))) {
         this.e.setVisible(true);
       } else {
         this.e.setVisible(false);
@@ -260,23 +260,23 @@ class IgnitionLoggerControlPanel extends JPanel {
   
   public ArrayList h() {
     ArrayList<cd> arrayList = new ArrayList();
-    for (byte b = 0; b < this.g.getItemCount(); b++) {
-      if (this.g.getItemAt(b) instanceof E) {
-        E e = this.g.getItemAt(b);
-        arrayList.add(e.a());
+    for (byte b = 0; b < this.SComponentGolf.getItemCount(); b++) {
+      if (this.SComponentGolf.getItemAt(b) instanceof E) {
+        E e = this.SComponentGolf.getItemAt(b);
+        arrayList.add(e.PropertiesExtension());
       } 
     } 
     return arrayList;
   }
   
-  public void a(ArrayList<cd> paramArrayList) {
-    this.g.removeAllItems();
+  public void PropertiesExtension(ArrayList<cd> paramArrayList) {
+    this.SComponentGolf.removeAllItems();
     for (byte b = 0; b < paramArrayList.size(); b++)
-      this.g.addItem(new E(this, paramArrayList.get(b))); 
+      this.SComponentGolf.addItem(new E(this, paramArrayList.get(b))); 
   }
   
   public void b(boolean paramBoolean) {
-    this.a.setEnabled(!paramBoolean);
+    this.PropertiesExtension.setEnabled(!paramBoolean);
     this.b.setEnabled(paramBoolean);
   }
   
@@ -285,15 +285,15 @@ class IgnitionLoggerControlPanel extends JPanel {
     t.start();
   }
   
-  public cd j() {
-    E e = (E)this.g.getSelectedItem();
-    return (e == null) ? null : e.a();
+  public cd ThreadedFile() {
+    E e = (E)this.SComponentGolf.getSelectedItem();
+    return (e == null) ? null : e.PropertiesExtension();
   }
   
   protected void k() {
     String str = (String)this.h.getSelectedItem();
     str = X.b(str, " ms", "");
-    this.k.a(Integer.parseInt(str));
+    this.k.PropertiesExtension(Integer.parseInt(str));
   }
   
   public void l() {
@@ -301,25 +301,25 @@ class IgnitionLoggerControlPanel extends JPanel {
   }
   
   String m() {
-    return this.i.a();
+    return this.i.PropertiesExtension();
   }
   
   public void n() {
-    this.j.setSelected(false);
-    this.i.a("");
-    this.k.g();
+    this.ThreadedFile.setSelected(false);
+    this.i.PropertiesExtension("");
+    this.k.SComponentGolf();
   }
   
-  public void a(int paramInt) {
+  public void PropertiesExtension(int paramInt) {
     this.h.setSelectedItem(paramInt + " ms");
     k();
   }
   
   public void b(String paramString) {
-    for (byte b = 0; b < this.g.getItemCount(); b++) {
-      Object object = this.g.getItemAt(b);
+    for (byte b = 0; b < this.SComponentGolf.getItemCount(); b++) {
+      Object object = this.SComponentGolf.getItemAt(b);
       if (object.toString().equals(paramString))
-        this.g.setSelectedIndex(b); 
+        this.SComponentGolf.setSelectedIndex(b); 
     } 
   }
   

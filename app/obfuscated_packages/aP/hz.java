@@ -10,38 +10,38 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
-import r.a;
-import s.g;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 public class hz extends JPanel {
-  JCheckBox a = new JCheckBox(g.b("Always launch new MegaLogViewer"));
+  JCheckBox IOPropertiesUsingFile = new JCheckBox(SComponentGolf.b("Always launch new MegaLogViewer"));
   
-  String b = g.b("MegaLogViewer Preferences");
+  String b = SComponentGolf.b("MegaLogViewer Preferences");
   
   public hz() {
     setBorder(BorderFactory.createTitledBorder(this.b));
     setLayout(new GridLayout(0, 1));
-    boolean bool = a.a().c(a.bT, a.bU);
-    this.a.setSelected(bool);
-    this.a.addActionListener(new hA(this));
+    boolean bool = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.bT, IOPropertiesUsingFile.bU);
+    this.IOPropertiesUsingFile.setSelected(bool);
+    this.IOPropertiesUsingFile.addActionListener(new hA(this));
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    jPanel.add("Center", this.a);
-    String str = "If checked, a new instnace of MegaLogViewer will be launched for each use. Otherwise the log will be sent to the already running MegaLogViewer";
-    cF cF = new cF(str, g.d());
+    jPanel.add("Center", this.IOPropertiesUsingFile);
+    String str = "If checked, IOPropertiesUsingFile new instnace of MegaLogViewer will be launched for each use. Otherwise the log will be sent to the already running MegaLogViewer";
+    cF cF = new cF(str, SComponentGolf.d());
     jPanel.add("East", (Component)cF);
     add(jPanel);
     jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(1));
-    JButton jButton = new JButton(g.b("Reset and Clear MegaLogViewer Location"));
+    JButton jButton = new JButton(SComponentGolf.b("Reset and Clear MegaLogViewer Location"));
     jButton.addActionListener(new hB(this));
     jPanel.add(jButton);
     add(jPanel);
   }
   
-  public static void a(Component paramComponent) {
+  public static void IOPropertiesUsingFile(Component paramComponent) {
     hz hz1 = new hz();
-    bV.a(hz1, paramComponent, hz1.b, null);
+    bV.IOPropertiesUsingFile(hz1, paramComponent, hz1.b, null);
   }
 }
 

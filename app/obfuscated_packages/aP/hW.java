@@ -1,34 +1,34 @@
 package aP;
 
-import B.b;
-import B.g;
+import B.BInterfaceBravo;
+import B.BInterfaceGolf;
 import G.R;
 import G.T;
 import G.h;
-import aE.a;
-import aE.e;
-import br.r;
+import aE.PropertiesExtension;
+import aE.AeInterfaceEcho;
+import br.BrComponentRomeo;
 import com.efiAnalytics.tuningwidgets.panels.W;
 import java.io.File;
-import r.j;
+import BrComponentRomeo.j;
 
-class hW implements e {
+class hW implements AeInterfaceEcho {
   hW(hO paramhO) {}
   
-  public void a(a parama, R paramR) {}
+  public void PropertiesExtension(PropertiesExtension parama, R paramR) {}
   
   public void e_() {
-    r.a().b();
-    h.a().b();
-    g.a().f();
-    b.c().a(null);
-    W.a();
+    BrComponentRomeo.PropertiesExtension().BInterfaceBravo();
+    h.PropertiesExtension().BInterfaceBravo();
+    BInterfaceGolf.PropertiesExtension().f();
+    BInterfaceBravo.c().PropertiesExtension(null);
+    W.PropertiesExtension();
   }
   
-  public void a(a parama) {
-    R r = T.a().c();
-    if (r != null && b.c().d() != null && b.c().d().e() != null && !b.c().d().e().isEmpty())
-      j.a(new File(parama.t()), b.c().d()); 
+  public void PropertiesExtension(PropertiesExtension parama) {
+    R BrComponentRomeo = T.PropertiesExtension().c();
+    if (BrComponentRomeo != null && BInterfaceBravo.c().d() != null && BInterfaceBravo.c().d().AeInterfaceEcho() != null && !BInterfaceBravo.c().d().AeInterfaceEcho().isEmpty())
+      j.PropertiesExtension(new File(parama.t()), BInterfaceBravo.c().d()); 
   }
 }
 

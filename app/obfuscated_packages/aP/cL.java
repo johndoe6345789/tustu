@@ -1,7 +1,7 @@
 package aP;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,7 +10,7 @@ class cL implements ItemListener {
   cL(cc paramcc) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    i.c(i.aJ, Boolean.toString(((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()));
+    IOProperties.c(IOProperties.aJ, Boolean.toString(((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()));
     bV.d("The Changes will take effect after restarting.", bV.c());
   }
 }

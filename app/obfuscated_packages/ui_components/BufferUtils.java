@@ -1,6 +1,6 @@
 package ao;
 
-import bA.e;
+import bA.JMenuItemExtensionInBaPackage;
 import com.efiAnalytics.ui.bp;
 import java.io.File;
 import java.util.ArrayList;
@@ -25,11 +25,11 @@ class ej extends bp {
     if (arrayList.size() > 0)
       for (String str1 : arrayList) {
         String str2 = str1.substring(str1.lastIndexOf(File.separator) + 1);
-        e e = new e();
-        e.setText(str2);
-        e.setActionCommand(str1);
-        e.addActionListener(new ek(this));
-        add((JMenuItem)e);
+        JMenuItemExtensionInBaPackage JMenuItemExtensionInBaPackage = new JMenuItemExtensionInBaPackage();
+        JMenuItemExtensionInBaPackage.setText(str2);
+        JMenuItemExtensionInBaPackage.setActionCommand(str1);
+        JMenuItemExtensionInBaPackage.addActionListener(new ek(this));
+        add((JMenuItem)JMenuItemExtensionInBaPackage);
       }  
   }
 }

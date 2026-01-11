@@ -1,10 +1,10 @@
 package aP;
 
 import G.bv;
-import c.e;
+import c.CInterfaceEcho;
 import com.efiAnalytics.tuningwidgets.panels.W;
 
-class bq implements e {
+class bq implements CInterfaceEcho {
   bq(bl parambl, bv parambv) {}
   
   public boolean a() {

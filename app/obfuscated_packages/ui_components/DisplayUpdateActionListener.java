@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,7 +10,7 @@ class dZ implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    i.c(i.aa, Boolean.toString(jCheckBoxMenuItem.isSelected()));
+    IOProperties.c(IOProperties.aa, Boolean.toString(jCheckBoxMenuItem.isSelected()));
     cd.c(this.a);
     this.a.a.o();
   }

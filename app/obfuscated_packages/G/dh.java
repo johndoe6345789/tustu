@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 
 public class dh {
@@ -13,16 +13,16 @@ public class dh {
       o o = dc.a(paramR, m, 2000);
       if (o.a() == 1) {
         int i = (int)f.S().a();
-        j.g(true);
+        j.ExceptionPrintstacktrace(true);
         try {
           if (j.a(i)) {
             f.i(true);
             D.d("TurboBaud Activated");
           } else {
-            throw new g("Controller Turbo Activated, failed to change application Baud!\nYou will need to power cycle the controller to reconnect");
+            throw new ExceptionPrintstacktrace("Controller Turbo Activated, failed to change application Baud!\nYou will need to power cycle the controller to reconnect");
           } 
         } finally {
-          j.g(false);
+          j.ExceptionPrintstacktrace(false);
         } 
       } else {
         D.b("Error reported when activating turbo baud: " + o.c());
@@ -48,25 +48,25 @@ public class dh {
       o o = dc.a(paramR, m, 2000);
       if (o.a() == 1) {
         int i = f.r();
-        j.g(true);
+        j.ExceptionPrintstacktrace(true);
         try {
           if (j.a(i)) {
             f.i(false);
-            j.g(false);
+            j.ExceptionPrintstacktrace(false);
             D.d("TurboBaud Deactivated");
           } else {
-            j.g(false);
-            throw new g("Controller Turbo Dectivated, failed to change application Baud!\nYou will need to reload project to reconnect.");
+            j.ExceptionPrintstacktrace(false);
+            throw new ExceptionPrintstacktrace("Controller Turbo Dectivated, failed to change application Baud!\nYou will need to reload project to reconnect.");
           } 
         } finally {
-          j.g(false);
+          j.ExceptionPrintstacktrace(false);
         } 
       } else {
         D.b("Error deactivating Turbo Baud: " + o.c());
       } 
     } else {
       if (f.W() && f.Q() == null)
-        throw new g("No turboBaudOffCommand defined! Cannot disable Turbo"); 
+        throw new ExceptionPrintstacktrace("No turboBaudOffCommand defined! Cannot disable Turbo"); 
       if (f.Q() == null)
         D.d("No turboBaudOffCommand, Turbo Baud disabled. "); 
     } 

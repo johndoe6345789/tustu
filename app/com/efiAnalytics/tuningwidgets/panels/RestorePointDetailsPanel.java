@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import W.ag;
 import com.efiAnalytics.ui.eJ;
-import h.b;
+import h.ClassTypeInHPackage;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -10,12 +10,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
-import s.g;
+import s.SComponentGolf;
 
 public class RestorePointDetailsPanel extends JPanel {
   JLabel a = new JLabel();
   
-  JLabel b = new JLabel();
+  JLabel ClassTypeInHPackage = new JLabel();
   
   JLabel c = new JLabel();
   
@@ -27,15 +27,15 @@ public class RestorePointDetailsPanel extends JPanel {
     setLayout(new BorderLayout());
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(0, 1));
-    jPanel.add(a(g.b("Restore Point Date") + ":", this.c));
-    if (b.a().a(" ,SD;LKODGPOIGD9")) {
-      jPanel.add(a(g.b("Firmware Rev Level") + ":", this.b));
-      jPanel.add(a(g.b("Serial Number") + ":", this.d));
+    jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Restore Point Date") + ":", this.c));
+    if (ClassTypeInHPackage.a().a(" ,SD;LKODGPOIGD9")) {
+      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Firmware Rev Level") + ":", this.ClassTypeInHPackage));
+      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Serial Number") + ":", this.d));
     } else {
-      jPanel.add(a(g.b("Serial Signature") + ":", this.b));
-      jPanel.add(a(g.b("Firmware Version") + ":", this.d));
+      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Serial Signature") + ":", this.ClassTypeInHPackage));
+      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Firmware Version") + ":", this.d));
     } 
-    jPanel.add(new JLabel(g.b("Tune Log Notes") + ":"));
+    jPanel.add(new JLabel(SComponentGolf.ClassTypeInHPackage("Tune Log Notes") + ":"));
     add("North", jPanel);
     this.e.setEditable(false);
     JScrollPane jScrollPane = new JScrollPane(this.e);
@@ -45,21 +45,21 @@ public class RestorePointDetailsPanel extends JPanel {
   public void a(ag paramag) {
     if (paramag == null) {
       this.a.setText("");
-      this.b.setText("");
+      this.ClassTypeInHPackage.setText("");
       this.c.setText("");
       this.d.setText("");
       this.e.setText("");
     } else {
       this.a.setText(paramag.a().getName());
-      this.b.setText(paramag.d());
+      this.ClassTypeInHPackage.setText(paramag.d());
       this.c.setText(paramag.c());
       this.d.setText(paramag.e());
-      if (paramag.b().startsWith("<html")) {
+      if (paramag.ClassTypeInHPackage().startsWith("<html")) {
         this.e.setContentType("text/html");
       } else {
         this.e.setContentType("text/plain");
       } 
-      this.e.setText(paramag.b());
+      this.e.setText(paramag.ClassTypeInHPackage());
       this.e.setCaretPosition(0);
     } 
   }

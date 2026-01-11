@@ -1,21 +1,21 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class iI extends Thread {
-  a a = null;
+  PropertiesExtension PropertiesExtension = null;
   
   File b = null;
   
   String c = null;
   
-  public iI(iH paramiH, String paramString, a parama, File paramFile) {
+  public iI(iH paramiH, String paramString, PropertiesExtension parama, File paramFile) {
     super("UpdateConfigFile");
     setDaemon(true);
-    this.a = parama;
+    this.PropertiesExtension = parama;
     this.b = paramFile;
     this.c = paramString;
   }
@@ -26,7 +26,7 @@ class iI extends Thread {
     } catch (InterruptedException interruptedException) {
       Logger.getLogger(iH.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
-    this.d.a(this.c, this.a, this.b);
+    this.d.PropertiesExtension(this.c, this.PropertiesExtension, this.b);
   }
 }
 

@@ -3,10 +3,10 @@ package aP;
 import G.R;
 import G.aM;
 import java.util.ArrayList;
-import s.g;
-import u.g;
+import s.SComponentGolf;
+import u.SComponentGolf;
 
-class hM implements g {
+class hM implements SComponentGolf {
   R a;
   
   ArrayList b;
@@ -17,11 +17,11 @@ class hM implements g {
   }
   
   public String a() {
-    return g.b("Save Delta Changes");
+    return SComponentGolf.b("Save Delta Changes");
   }
   
   public String b() {
-    return "<html>" + g.b("Saves a partial tune containing only the parameters that have changed.") + "<br>" + g.b("The values on the left will be saved.");
+    return "<html>" + SComponentGolf.b("Saves a partial tune containing only the parameters that have changed.") + "<br>" + SComponentGolf.b("The values on the left will be saved.");
   }
   
   public boolean c() {

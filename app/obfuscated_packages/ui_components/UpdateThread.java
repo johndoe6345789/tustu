@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.bV;
-import h.i;
+import h.IOProperties;
 import java.awt.Frame;
 
 class en extends Thread {
@@ -25,8 +25,8 @@ class en extends Thread {
         boolean bool = this.c.b();
         if (!cd.d(this.c) && !bool && this.b)
           this.c.g(); 
-        i.c(i.y, "false");
-        i.g();
+        IOProperties.c(IOProperties.y, "false");
+        IOProperties.g();
       } 
     } catch (Exception exception) {
       bV.d("Error occured in Autoupdate " + exception.getMessage(), this.a);

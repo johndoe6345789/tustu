@@ -1,7 +1,7 @@
 package ao;
 
 import com.efiAnalytics.ui.aN;
-import h.i;
+import h.IOProperties;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,7 +9,7 @@ class cH implements ActionListener {
   cH(cd paramcd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String str = i.a("onlineHelpUrl", i.m);
+    String str = IOProperties.a("onlineHelpUrl", IOProperties.m);
     aN.a(str);
   }
 }

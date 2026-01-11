@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -10,7 +10,7 @@ class eQ implements ItemListener {
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1) {
       fn fn = (fn)paramItemEvent.getItem();
-      i.c("baseWeight", fn.a());
+      IOProperties.c("baseWeight", fn.a());
     } 
   }
 }

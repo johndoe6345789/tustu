@@ -2,7 +2,7 @@ package ao;
 
 import W.n;
 import com.efiAnalytics.ui.eJ;
-import i.b;
+import i.IComponentBravo;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -12,10 +12,10 @@ import java.util.Iterator;
 import javax.swing.JComponent;
 import javax.swing.UIManager;
 
-public class hz extends JComponent implements b {
+public class hz extends JComponent implements IComponentBravo {
   long a = 0L;
   
-  long b = 800L;
+  long IComponentBravo = 800L;
   
   double c = 0.0D;
   
@@ -66,7 +66,7 @@ public class hz extends JComponent implements b {
     } 
   }
   
-  public void b(double paramDouble) {
+  public void IComponentBravo(double paramDouble) {
     this.c = paramDouble;
     repaint();
   }
@@ -84,7 +84,7 @@ public class hz extends JComponent implements b {
   }
   
   public void a(double paramDouble) {
-    if (System.currentTimeMillis() - this.a > this.b) {
+    if (System.currentTimeMillis() - this.a > this.IComponentBravo) {
       this.c = paramDouble;
       if (this.j != null && paramDouble == 1.0D) {
         HashMap hashMap = this.j.a();
@@ -115,7 +115,7 @@ public class hz extends JComponent implements b {
     repaint(30L);
   }
   
-  public void b(n paramn) {}
+  public void IComponentBravo(n paramn) {}
   
   private void a(int paramInt) {
     double d = (paramInt - this.e);
@@ -127,7 +127,7 @@ public class hz extends JComponent implements b {
   
   private void d(double paramDouble) {
     for (hB hB : this.g)
-      hB.b(paramDouble); 
+      hB.IComponentBravo(paramDouble); 
   }
   
   public void a(hB paramhB) {
@@ -142,7 +142,7 @@ public class hz extends JComponent implements b {
     return new Dimension(eJ.a(150), eJ.a(20));
   }
   
-  public void b() {}
+  public void IComponentBravo() {}
 }
 
 

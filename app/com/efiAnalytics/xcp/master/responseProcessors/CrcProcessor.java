@@ -3,9 +3,9 @@ package com.efiAnalytics.xcp.master.responseProcessors;
 import bH.D;
 import bH.ad;
 import bH.c;
-import bN.k;
-import bN.o;
-import bN.t;
+import bN.BnInterfaceKilo;
+import bN.BnInterfaceOscar;
+import bN.BnInterfaceTango;
 import java.util.zip.CRC32;
 
 public class CrcProcessor {
@@ -30,11 +30,11 @@ public class CrcProcessor {
     D.c("CRC: 0x" + Integer.toHexString(i).toUpperCase());
   }
   
-  public boolean a(k paramk, byte[] paramArrayOfbyte, t paramt) {
+  public boolean a(BnInterfaceKilo paramk, byte[] paramArrayOfbyte, BnInterfaceTango paramt) {
     byte[] arrayOfByte = paramt.c();
     if (arrayOfByte.length != 7) {
       D.c("Invalid CRC Response Packet: \n" + c.d(arrayOfByte));
-      throw new o("Invalid Checksum packet length. Expected 8, received: " + (arrayOfByte.length + 1));
+      throw new BnInterfaceOscar("Invalid Checksum packet length. Expected 8, received: " + (arrayOfByte.length + 1));
     } 
     int i = c.a(arrayOfByte[0]);
     if (i == 8) {
@@ -45,7 +45,7 @@ public class CrcProcessor {
       int m = c.a(arrayOfByte, 3, 4, paramk.g(), false);
       D.c("Controller CRC: 0x" + Integer.toHexString(m).toUpperCase() + ", Local CRC: 0x" + Integer.toHexString(j).toUpperCase());
       if (j != m)
-        D.c("CRC doesn't match!"); 
+        D.c("CRC doesn'BnInterfaceTango match!"); 
       return (j == m);
     } 
     if (i == 9) {

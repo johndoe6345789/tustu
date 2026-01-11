@@ -1,23 +1,23 @@
 package bt;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.et;
 
 class aQ implements et {
   aQ(an paraman) {}
   
-  public void a(String paramString1, String paramString2) {
-    a a = a.A();
-    a.setProperty(this.a.q.aL() + "_" + paramString1, paramString2);
+  public void PropertiesExtension(String paramString1, String paramString2) {
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    PropertiesExtension.setProperty(this.PropertiesExtension.q.aL() + "_" + paramString1, paramString2);
   }
   
-  public String a(String paramString) {
+  public String PropertiesExtension(String paramString) {
     return b(paramString, "");
   }
   
   public String b(String paramString1, String paramString2) {
-    a a = a.A();
-    return a.getProperty(this.a.q.aL() + "_" + paramString1, paramString2);
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    return PropertiesExtension.getProperty(this.PropertiesExtension.q.aL() + "_" + paramString1, paramString2);
   }
 }
 

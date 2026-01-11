@@ -2,9 +2,9 @@ package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.R;
 import G.T;
-import c.d;
+import c.CInterfaceDelta;
 
-class EcuConfigDelegate implements d {
+class EcuConfigDelegate implements CInterfaceDelta {
   J a;
   
   boolean b = true;
@@ -22,7 +22,7 @@ class EcuConfigDelegate implements d {
   }
   
   public void c_(String paramString) {
-    this.a.d(paramString);
+    this.a.CInterfaceDelta(paramString);
   }
   
   public void setEnabled(boolean paramBoolean) {

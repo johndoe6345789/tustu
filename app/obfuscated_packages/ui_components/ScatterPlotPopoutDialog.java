@@ -1,13 +1,13 @@
 package ao;
 
-import bE.k;
-import bE.l;
-import bE.m;
-import bE.q;
+import bE.BeInterfaceKilo;
+import bE.BeInterfaceLima;
+import bE.JComponentExtension;
+import bE.BeInterfaceQuebec;
 import bH.J;
 import com.efiAnalytics.ui.eJ;
-import h.i;
-import i.a;
+import h.IOProperties;
+import IOProperties.a;
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -19,8 +19,8 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class fF extends JDialog implements k, l, a {
-  private m k = new m();
+public class fF extends JDialog implements BeInterfaceKilo, BeInterfaceLima, a {
+  private JComponentExtension BeInterfaceKilo = new JComponentExtension();
   
   eq a = null;
   
@@ -38,19 +38,19 @@ public class fF extends JDialog implements k, l, a {
   
   int h = 100;
   
-  float i = 1.0F;
+  float IOProperties = 1.0F;
   
   String j = "ScatterPlotPopout_";
   
-  private fK l;
+  private fK BeInterfaceLima;
   
   public fF(Window paramWindow, fK paramfK) {
     super(paramWindow, "Scatter Plot popout");
-    this.l = paramfK;
+    this.BeInterfaceLima = paramfK;
     setLayout(new BorderLayout());
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    jPanel.add("Center", (Component)this.k);
+    jPanel.add("Center", (Component)this.BeInterfaceKilo);
     jPanel.add("North", this.b);
     jPanel.add("West", (Component)this.d);
     jPanel.add("South", this.c);
@@ -68,15 +68,15 @@ public class fF extends JDialog implements k, l, a {
     hx.a().a(this);
     f();
     addComponentListener(new fG(this));
-    this.k.a(this);
+    this.BeInterfaceKilo.a(this);
   }
   
   public void a(eq parameq) {
-    if (this.k.b(0) != null)
-      this.k.b(0).b(this); 
+    if (this.BeInterfaceKilo.b(0) != null)
+      this.BeInterfaceKilo.b(0).b(this); 
     parameq.a(this);
     this.a = parameq;
-    this.k.a(parameq, 0);
+    this.BeInterfaceKilo.a(parameq, 0);
     a();
   }
   
@@ -92,26 +92,26 @@ public class fF extends JDialog implements k, l, a {
   }
   
   private void e() {
-    float f = this.k.getWidth() / this.g;
-    double d = (this.k.getHeight() / this.h);
-    this.i = (float)Math.min(d, f);
-    this.k.e(Math.round(this.f * this.i));
-    this.k.d(Math.round(this.e * this.i));
+    float f = this.BeInterfaceKilo.getWidth() / this.g;
+    double d = (this.BeInterfaceKilo.getHeight() / this.h);
+    this.IOProperties = (float)Math.min(d, f);
+    this.BeInterfaceKilo.e(Math.round(this.f * this.IOProperties));
+    this.BeInterfaceKilo.d(Math.round(this.e * this.IOProperties));
   }
   
   public void a() {
     b();
-    this.k.d();
-    this.k.repaint();
+    this.BeInterfaceKilo.d();
+    this.BeInterfaceKilo.repaint();
   }
   
   public void b(int paramInt) {
-    if (this.a != null && paramInt > this.a.f() && this.a.a != null && paramInt < this.a.e() && this.a.b != null && paramInt < this.a.b.i()) {
-      q q = this.a.b(paramInt);
-      this.k.a(q.getX(), q.getY());
-      this.k.repaint();
+    if (this.a != null && paramInt > this.a.f() && this.a.a != null && paramInt < this.a.e() && this.a.b != null && paramInt < this.a.b.IOProperties()) {
+      BeInterfaceQuebec BeInterfaceQuebec = this.a.b(paramInt);
+      this.BeInterfaceKilo.a(BeInterfaceQuebec.getX(), BeInterfaceQuebec.getY());
+      this.BeInterfaceKilo.repaint();
     } else {
-      this.k.l();
+      this.BeInterfaceKilo.BeInterfaceLima();
     } 
   }
   
@@ -130,30 +130,30 @@ public class fF extends JDialog implements k, l, a {
       this.b.setText(str);
       this.c.setText(this.a.a.a());
       this.d.setText(this.a.b.a());
-      this.k.a(this.a.a.a());
-      this.k.b(this.a.b.a());
+      this.BeInterfaceKilo.a(this.a.a.a());
+      this.BeInterfaceKilo.b(this.a.b.a());
       if (this.a.c != null && this.a.c.a() != null) {
-        this.k.c(this.a.c.a());
+        this.BeInterfaceKilo.c(this.a.c.a());
       } else {
-        this.k.c("");
+        this.BeInterfaceKilo.c("");
       } 
     } 
   }
   
   private void f() {
     cd cd = bq.a().b();
-    int i = i.b(this.j + "x", cd.getX() + 10);
-    int j = i.b(this.j + "y", cd.getY() + eJ.a(40));
-    int n = i.b(this.j + "width", eJ.a(400));
-    int i1 = i.b(this.j + "height", eJ.a(400));
-    setBounds(i, j, n, i1);
+    int IOProperties = IOProperties.b(this.j + "x", cd.getX() + 10);
+    int j = IOProperties.b(this.j + "y", cd.getY() + eJ.a(40));
+    int n = IOProperties.b(this.j + "width", eJ.a(400));
+    int i1 = IOProperties.b(this.j + "height", eJ.a(400));
+    setBounds(IOProperties, j, n, i1);
   }
   
   private void g() {
-    i.c(this.j + "x", "" + getX());
-    i.c(this.j + "y", "" + getY());
-    i.c(this.j + "width", "" + getWidth());
-    i.c(this.j + "height", "" + getHeight());
+    IOProperties.c(this.j + "x", "" + getX());
+    IOProperties.c(this.j + "y", "" + getY());
+    IOProperties.c(this.j + "width", "" + getWidth());
+    IOProperties.c(this.j + "height", "" + getHeight());
   }
   
   public void processEvent(AWTEvent paramAWTEvent) {
@@ -166,20 +166,20 @@ public class fF extends JDialog implements k, l, a {
     super.processEvent(paramAWTEvent);
   }
   
-  public m c() {
-    return this.k;
+  public JComponentExtension c() {
+    return this.BeInterfaceKilo;
   }
   
   public void a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
-    this.l.a(paramDouble1, paramDouble2, paramDouble3, paramDouble4);
+    this.BeInterfaceLima.a(paramDouble1, paramDouble2, paramDouble3, paramDouble4);
   }
   
   public fK d() {
-    return this.l;
+    return this.BeInterfaceLima;
   }
   
   public void a(fK paramfK) {
-    this.l = paramfK;
+    this.BeInterfaceLima = paramfK;
   }
 }
 

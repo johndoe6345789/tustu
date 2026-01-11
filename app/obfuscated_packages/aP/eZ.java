@@ -1,8 +1,8 @@
 package aP;
 
-import c.e;
+import c.CInterfaceEcho;
 
-class eZ implements e {
+class eZ implements CInterfaceEcho {
   eZ(dB paramdB) {}
   
   public boolean a() {

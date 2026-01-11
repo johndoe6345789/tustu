@@ -1,7 +1,7 @@
 package ao;
 
-import h.h;
-import h.i;
+import HInterfaceHotel.HInterfaceHotel;
+import HInterfaceHotel.i;
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,7 +16,7 @@ class cR implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     if ((paramActionEvent.getModifiers() & 0x1) != 0 && (paramActionEvent.getModifiers() & 0x2) != 0) {
       try {
-        Desktop.getDesktop().edit(new File(h.a() + File.separator + i.k() + "LogFile.txt"));
+        Desktop.getDesktop().edit(new File(HInterfaceHotel.a() + File.separator + i.k() + "LogFile.txt"));
       } catch (IOException iOException) {
         Logger.getLogger(cd.class.getName()).log(Level.SEVERE, (String)null, iOException);
       } 

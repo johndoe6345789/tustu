@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 
 class ay implements n {
@@ -16,7 +16,7 @@ class ay implements n {
         this.a.h = true;
         this.a.a.h().a(paramo.b().o(), 0, paramo.e());
         this.a.h = false;
-      } catch (g g) {
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.a("Failed on read back for lost data");
       }  
   }

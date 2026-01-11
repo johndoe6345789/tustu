@@ -3,7 +3,7 @@ package com.efiAnalytics.tunerStudio.panels;
 import G.aB;
 import G.n;
 import G.o;
-import s.g;
+import s.SComponentGolf;
 
 class CalibrationWriteCompletionHandler implements n {
   CalibrationWriteCompletionHandler(CalibrationTablePanel paramJ) {}
@@ -16,13 +16,13 @@ class CalibrationWriteCompletionHandler implements n {
     aB.a().e();
     if (paramo.a() == 3) {
       if (paramo.c() != null) {
-        J.a(this.a, g.b("Calibration Table Write Failed!") + "\n" + paramo.c());
+        J.a(this.a, SComponentGolf.b("Calibration Table Write Failed!") + "\n" + paramo.c());
       } else {
-        J.a(this.a, g.b("Calibration Table Write Failed!") + "\nUnable to complete write.");
+        J.a(this.a, SComponentGolf.b("Calibration Table Write Failed!") + "\nUnable to complete write.");
       } 
     } else {
       this.a.i.b(1.0D);
-      J.a(this.a, g.b("Write Complete!"));
+      J.a(this.a, SComponentGolf.b("Write Complete!"));
       J.c(this.a);
     } 
   }

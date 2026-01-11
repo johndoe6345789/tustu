@@ -4,7 +4,7 @@ import G.R;
 import G.aA;
 import G.bM;
 import G.bv;
-import V.g;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
 import com.efiAnalytics.ui.bq;
@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class TuningMenuBuilder implements ActionListener {
   private int c = -1;
@@ -35,7 +35,7 @@ public class TuningMenuBuilder implements ActionListener {
       aA aA = iterator.next();
       try {
         if (!aA.c() && p.a(aA.i(), paramR)) {
-          String str = g.b(aA.e());
+          String str = ExceptionPrintstacktrace.b(aA.e());
           JMenu jMenu = (JMenu)hashMap.get(str);
           if (jMenu == null) {
             jMenu = new JMenu(str);
@@ -48,7 +48,7 @@ public class TuningMenuBuilder implements ActionListener {
               parambq.add(jMenu); 
           } 
         } 
-      } catch (g g) {}
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } 
     return parambq;
   }
@@ -61,7 +61,7 @@ public class TuningMenuBuilder implements ActionListener {
         if (!aA1.c() && p.a(aA1.i(), paramR)) {
           bv bv = paramR.e().c(aA1.d());
           if (a(bv)) {
-            String str = g.b(aA1.e());
+            String str = ExceptionPrintstacktrace.b(aA1.e());
             if (aA1.b()) {
               JMenu jMenu = new JMenu(str);
               a(paramR, aA1.a(), jMenu);
@@ -84,7 +84,7 @@ public class TuningMenuBuilder implements ActionListener {
             continue;
           } 
           if (bv != null && a(paramR, bv)) {
-            String str = g.b(aA1.e());
+            String str = ExceptionPrintstacktrace.b(aA1.e());
             JMenu jMenu = new JMenu(str);
             jMenu.setIcon(this.b.a(aA1));
             a(paramR, bv, jMenu);
@@ -92,7 +92,7 @@ public class TuningMenuBuilder implements ActionListener {
             continue;
           } 
           if (bv == null && a(paramR, aA1)) {
-            String str = g.b(aA1.e());
+            String str = ExceptionPrintstacktrace.b(aA1.e());
             JMenu jMenu = new JMenu(str);
             a(paramR, aA1.a(), jMenu);
             paramJMenu.add(jMenu);
@@ -103,7 +103,7 @@ public class TuningMenuBuilder implements ActionListener {
           paramJMenu.addSeparator();
           aA = aA1;
         } 
-      } catch (g g) {}
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } 
   }
   
@@ -122,9 +122,9 @@ public class TuningMenuBuilder implements ActionListener {
             jMenuItem.setIcon(this.b.a(bv1, null, null));
             paramJMenu.add(jMenuItem);
           } 
-        } catch (g g) {
-          D.a("Fail to set enable condition: " + g.getLocalizedMessage());
-          Logger.getLogger(Q.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+        } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+          D.a("Fail to set enable condition: " + ExceptionPrintstacktrace.getLocalizedMessage());
+          Logger.getLogger(Q.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
         continue;
       } 
@@ -174,7 +174,7 @@ public class TuningMenuBuilder implements ActionListener {
           try {
             String str = bM.a(paramR, bv1.aL());
             return p.a(str, paramR);
-          } catch (g g) {
+          } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
             return true;
           }  
         if (bv1.L() && a(paramR, bv1)) {
@@ -182,9 +182,9 @@ public class TuningMenuBuilder implements ActionListener {
           try {
             if (p.a(str, paramR))
               return true; 
-          } catch (g g) {
-            D.a(g.getMessage());
-            g.printStackTrace();
+          } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+            D.a(ExceptionPrintstacktrace.getMessage());
+            ExceptionPrintstacktrace.printStackTrace();
           } 
         } 
       } 

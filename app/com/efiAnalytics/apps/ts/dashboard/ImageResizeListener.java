@@ -1,18 +1,18 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import i.a;
+import i.IComponentAlpha;
 import java.awt.Image;
 
-class ImageResizeListener implements a {
+class ImageResizeListener implements IComponentAlpha {
   ImageResizeListener(x paramx) {}
   
-  public void a(int paramInt) {
-    if (this.a.k == null || !this.a.k.R()) {
-      x.a(this.a, (Image)null);
-      x.b(this.a, (Image)null);
-      this.a.f.c();
-      this.a.aa = System.currentTimeMillis() + x.ab;
-      X.a(this.a.f, this.a.aa);
+  public void IComponentAlpha(int paramInt) {
+    if (this.IComponentAlpha.k == null || !this.IComponentAlpha.k.R()) {
+      x.IComponentAlpha(this.IComponentAlpha, (Image)null);
+      x.b(this.IComponentAlpha, (Image)null);
+      this.IComponentAlpha.f.c();
+      this.IComponentAlpha.aa = System.currentTimeMillis() + x.ab;
+      X.IComponentAlpha(this.IComponentAlpha.f, this.IComponentAlpha.aa);
     } 
   }
 }

@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.logging.Level;
@@ -19,7 +19,7 @@ public class ce implements Serializable {
   
   private dj f = new B(1.0D);
   
-  private dj g = new B(0.0D);
+  private dj ExceptionPrintstacktrace = new B(0.0D);
   
   private String h = "";
   
@@ -90,11 +90,11 @@ public class ce implements Serializable {
     this.l = paramInt;
   }
   
-  public String g() {
+  public String ExceptionPrintstacktrace() {
     try {
       return (this.e != null) ? this.e.a() : this.d;
-    } catch (g g) {
-      Logger.getLogger(ce.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(ce.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       return this.d;
     } 
   }
@@ -124,15 +124,15 @@ public class ce implements Serializable {
   }
   
   public void b(dj paramdj) {
-    this.g = paramdj;
+    this.ExceptionPrintstacktrace = paramdj;
   }
   
   public void b(double paramDouble) {
-    this.g = new B(paramDouble);
+    this.ExceptionPrintstacktrace = new B(paramDouble);
   }
   
   public double j() {
-    return this.g.a();
+    return this.ExceptionPrintstacktrace.a();
   }
 }
 

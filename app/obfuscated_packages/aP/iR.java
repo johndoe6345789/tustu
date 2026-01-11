@@ -1,17 +1,17 @@
 package aP;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class iR implements iV {
   iR(iP paramiP) {}
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
-      iP.b(this.a);
-    } catch (a a) {
-      Logger.getLogger(iP.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      iP.b(this.ExceptionInVPackage);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      Logger.getLogger(iP.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
   }
 }

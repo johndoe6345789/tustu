@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.q;
-import S.a;
-import S.e;
+import S.SInterfaceAlpha;
+import S.SInterfaceEcho;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,18 +11,18 @@ class AutoLoggingEnabledListener implements ActionListener {
   AutoLoggingEnabledListener(AutoLoggingTriggerPanel paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    if (this.a.j.isSelected()) {
+    if (this.SInterfaceAlpha.j.isSelected()) {
       try {
-        e.a().a(this.a.a.c(), (a)this.a.b);
-        e.a().a(this.a.a.c(), (a)this.a.c);
+        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha)this.SInterfaceAlpha.b);
+        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha)this.SInterfaceAlpha.c);
       } catch (q q) {
-        bV.d("No Configuration Found: " + this.a.a.c(), this.a.j);
+        bV.d("No Configuration Found: " + this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.j);
       } 
     } else {
-      e.a().a(this.a.a.c(), this.a.b.a());
-      e.a().a(this.a.a.c(), this.a.c.a());
+      SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.b.SInterfaceAlpha());
+      SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.c.SInterfaceAlpha());
     } 
-    g.a(this.a);
+    g.SInterfaceAlpha(this.SInterfaceAlpha);
   }
 }
 

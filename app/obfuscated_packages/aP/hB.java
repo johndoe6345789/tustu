@@ -3,14 +3,14 @@ package aP;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import s.g;
+import s.SComponentGolf;
 
 class hB implements ActionListener {
   hB(hz paramhz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().k();
-    String str = g.b("MegaLogViewer locations cleared, the proper location will be used on next launch.");
+    String str = SComponentGolf.b("MegaLogViewer locations cleared, the proper location will be used on next launch.");
     bV.d(str, this.a.a);
   }
 }

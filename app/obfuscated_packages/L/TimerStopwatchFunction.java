@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -39,7 +39,7 @@ public class TimerStopwatchFunction extends ac {
       this.d = paramList.get(3); 
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     if (this.g < 0.0D)
       this.g = c(paramS); 
     double d1 = this.b.b(paramS);
@@ -86,11 +86,11 @@ public class TimerStopwatchFunction extends ac {
     return this.i;
   }
   
-  private double c(S paramS) {
+  private double c(CloneableImplInAxPackage paramS) {
     return (this.c != null) ? this.c.b(paramS) : (System.currentTimeMillis() / 1000.0D);
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

@@ -3,7 +3,7 @@ package aP;
 import ao.bK;
 import ao.bq;
 import ao.hx;
-import h.i;
+import h.IOProperties;
 import java.awt.Component;
 
 class cg implements Runnable {
@@ -14,7 +14,7 @@ class cg implements Runnable {
     if (hx.a().r() != null)
       if (this.a.z.isSelected() && dd.a().n().getComponentCount() == 0) {
         dd.a().n().add((Component)bK);
-        boolean bool = i.a("showDashboard", true);
+        boolean bool = IOProperties.a("showDashboard", true);
         dd.a().c().validate();
         hx.a().c(bool);
       } else if (!this.a.z.isSelected() && bq.a().h().getComponentCount() == 0) {

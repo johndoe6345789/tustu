@@ -2,102 +2,102 @@ package ao;
 
 import W.j;
 import W.n;
-import bB.a;
-import bB.q;
-import bB.r;
+import bB.BbInterfaceAlpha;
+import bB.BbInterfaceQuebec;
+import bB.BbInterfaceRomeo;
 import bH.S;
-import g.b;
-import g.k;
-import h.i;
+import g.ThreadExtensionInGPackage;
+import g.IOJFileChooser;
+import h.IOProperties;
 import java.util.ArrayList;
 import java.util.List;
 
-public class eo implements q {
+public class eo implements BbInterfaceQuebec {
   private void c(String paramString) {
     String str = "FIELD_MIN_MAX_" + paramString;
-    if (i.c(str) == null) {
-      i.d(str);
+    if (IOProperties.c(str) == null) {
+      IOProperties.d(str);
     } else {
-      i.c(str, ";");
+      IOProperties.c(str, ";");
     } 
   }
   
-  public void a(r paramr) {
-    n n = hx.a().r();
-    j j = (n == null) ? null : n.a(paramr.e());
+  public void BbInterfaceAlpha(BbInterfaceRomeo paramr) {
+    n n = hx.BbInterfaceAlpha().BbInterfaceRomeo();
+    j j = (n == null) ? null : n.BbInterfaceAlpha(paramr.e());
     StringBuilder stringBuilder = new StringBuilder();
     if (paramr.c()) {
       stringBuilder.append("Auto");
     } else {
-      stringBuilder.append(paramr.a());
+      stringBuilder.append(paramr.BbInterfaceAlpha());
     } 
     stringBuilder.append(";");
     if (paramr.d()) {
       stringBuilder.append("Auto");
     } else {
-      stringBuilder.append(paramr.b());
+      stringBuilder.append(paramr.ThreadExtensionInGPackage());
     } 
     stringBuilder.append(";");
     stringBuilder.append(paramr.f());
-    i.c("FIELD_MIN_MAX_" + paramr.e(), stringBuilder.toString());
+    IOProperties.c("FIELD_MIN_MAX_" + paramr.e(), stringBuilder.toString());
     if (j != null) {
-      j.g((float)paramr.a());
-      j.f((float)paramr.b());
+      j.g((float)paramr.BbInterfaceAlpha());
+      j.f((float)paramr.ThreadExtensionInGPackage());
       if (paramr.f() != -1) {
         j.e(paramr.f());
       } else {
         j.e(j.B());
       } 
     } 
-    bq.a().e().o();
+    bq.BbInterfaceAlpha().e().o();
   }
   
-  public void a(String paramString) {
+  public void BbInterfaceAlpha(String paramString) {
     c(paramString);
-    bq.a().e().o();
+    bq.BbInterfaceAlpha().e().o();
   }
   
-  public List a() {
-    ArrayList<a> arrayList = new ArrayList();
-    String[] arrayOfString = i.e("FIELD_MIN_MAX_");
-    if (i.a(i.E, i.F))
-      arrayOfString = S.a(arrayOfString); 
-    for (byte b = 0; b < arrayOfString.length; b++) {
-      String str1 = i.a(arrayOfString[b], "");
-      String str2 = k.a(arrayOfString[b], "FIELD_MIN_MAX_", "");
-      if (hx.a().r() == null || hx.a().r().a(str2) != null) {
-        a a;
-        r r = null;
+  public List BbInterfaceAlpha() {
+    ArrayList<BbInterfaceAlpha> arrayList = new ArrayList();
+    String[] arrayOfString = IOProperties.e("FIELD_MIN_MAX_");
+    if (IOProperties.BbInterfaceAlpha(IOProperties.E, IOProperties.F))
+      arrayOfString = S.BbInterfaceAlpha(arrayOfString); 
+    for (byte ThreadExtensionInGPackage = 0; ThreadExtensionInGPackage < arrayOfString.length; ThreadExtensionInGPackage++) {
+      String str1 = IOProperties.BbInterfaceAlpha(arrayOfString[ThreadExtensionInGPackage], "");
+      String str2 = IOJFileChooser.BbInterfaceAlpha(arrayOfString[ThreadExtensionInGPackage], "FIELD_MIN_MAX_", "");
+      if (hx.BbInterfaceAlpha().BbInterfaceRomeo() == null || hx.BbInterfaceAlpha().BbInterfaceRomeo().BbInterfaceAlpha(str2) != null) {
+        BbInterfaceAlpha BbInterfaceAlpha;
+        BbInterfaceRomeo BbInterfaceRomeo = null;
         try {
-          r = b.a().a(str2);
+          BbInterfaceRomeo = ThreadExtensionInGPackage.BbInterfaceAlpha().BbInterfaceAlpha(str2);
         } catch (Exception exception) {}
-        if (r == null) {
-          a = new a(str2);
-          a.a(Double.NaN);
-          a.b(Double.NaN);
-          a.a(-1);
+        if (BbInterfaceRomeo == null) {
+          BbInterfaceAlpha = new BbInterfaceAlpha(str2);
+          BbInterfaceAlpha.BbInterfaceAlpha(Double.NaN);
+          BbInterfaceAlpha.ThreadExtensionInGPackage(Double.NaN);
+          BbInterfaceAlpha.BbInterfaceAlpha(-1);
         } 
-        arrayList.add(a);
+        arrayList.add(BbInterfaceAlpha);
       } 
     } 
     return arrayList;
   }
   
-  public r b(String paramString) {
-    return b.a().a(paramString);
+  public BbInterfaceRomeo ThreadExtensionInGPackage(String paramString) {
+    return ThreadExtensionInGPackage.BbInterfaceAlpha().BbInterfaceAlpha(paramString);
   }
   
-  public List b() {
+  public List ThreadExtensionInGPackage() {
     ArrayList<String> arrayList = new ArrayList();
-    n n = hx.a().r();
+    n n = hx.BbInterfaceAlpha().BbInterfaceRomeo();
     if (n != null)
       for (j j : n)
-        arrayList.add(j.a());  
+        arrayList.add(j.BbInterfaceAlpha());  
     return arrayList;
   }
   
-  public r b(r paramr) {
-    return b.a().a(paramr);
+  public BbInterfaceRomeo ThreadExtensionInGPackage(BbInterfaceRomeo paramr) {
+    return ThreadExtensionInGPackage.BbInterfaceAlpha().BbInterfaceAlpha(paramr);
   }
 }
 

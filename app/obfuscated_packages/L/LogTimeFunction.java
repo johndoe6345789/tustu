@@ -1,16 +1,16 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class LogTimeFunction extends ac {
   public static long a = -1L;
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     return (a >= 0L) ? ((System.currentTimeMillis() - a) / 1000.0D) : -1.0D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

@@ -4,22 +4,22 @@ import bH.I;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
-import s.g;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 class gw implements ActionListener {
   gw(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    double d = a.a().a(a.bH, a.bI);
+    double d = IOPropertiesUsingFile.IOPropertiesUsingFile().IOPropertiesUsingFile(IOPropertiesUsingFile.bH, IOPropertiesUsingFile.bI);
     String str;
-    for (str = "z"; !I.a(str) && str.length() > 0; str = bV.a(this.a.h, true, "Maximum MegaBytes for a Projects Restore points.", "" + d));
-    if (I.a(str) && str.length() > 0) {
+    for (str = "z"; !I.IOPropertiesUsingFile(str) && str.length() > 0; str = bV.IOPropertiesUsingFile(this.IOPropertiesUsingFile.h, true, "Maximum MegaBytes for IOPropertiesUsingFile Projects Restore points.", "" + d));
+    if (I.IOPropertiesUsingFile(str) && str.length() > 0) {
       if (paramActionEvent.getSource() instanceof gX) {
         gX gX = (gX)paramActionEvent.getSource();
-        gX.setText(g.b("Maximum Disk Space in MB") + ": " + str);
+        gX.setText(SComponentGolf.b("Maximum Disk Space in MB") + ": " + str);
       } 
-      a.a().b(a.bH, str);
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bH, str);
     } 
   }
 }

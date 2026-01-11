@@ -1,13 +1,13 @@
 package aP;
 
 import com.efiAnalytics.ui.eA;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class gC implements eA {
   gC(dB paramdB) {}
   
-  public boolean a() {
-    return a.a().c(a.cc, a.cd);
+  public boolean IOPropertiesUsingFile() {
+    return IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.cc, IOPropertiesUsingFile.cd);
   }
 }
 

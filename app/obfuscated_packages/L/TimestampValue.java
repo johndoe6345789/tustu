@@ -1,12 +1,12 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 
 class TimestampValue implements ab {
   p(n paramn) {}
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return (this.a.c >= 0L) ? this.a.c : System.currentTimeMillis();
   }
 }

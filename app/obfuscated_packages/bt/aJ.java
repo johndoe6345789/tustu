@@ -1,36 +1,36 @@
 package bt;
 
 import W.n;
-import ax.U;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.h;
 import com.efiAnalytics.ui.bT;
-import k.a;
-import k.d;
+import k.KInterfaceAlpha;
+import k.KComponentDelta;
 
 class aJ implements h, bT {
-  n a;
+  n KInterfaceAlpha;
   
   private String c;
   
   aJ(an paraman, n paramn, String paramString) {
-    this.a = paramn;
+    this.KInterfaceAlpha = paramn;
     this.c = paramString;
   }
   
-  public boolean a(int paramInt) {
+  public boolean KInterfaceAlpha(int paramInt) {
     if (this.c == null || this.c.isEmpty())
       return true; 
     try {
-      a a = d.a().a(this.c);
-      return (a.a(this.a, paramInt) == 0.0D);
-    } catch (U u) {
-      D.a("Unable to evaluate CurvePlotFilter: " + this.c);
+      KInterfaceAlpha KInterfaceAlpha = KComponentDelta.KInterfaceAlpha().KInterfaceAlpha(this.c);
+      return (KInterfaceAlpha.KInterfaceAlpha(this.KInterfaceAlpha, paramInt) == 0.0D);
+    } catch (ExceptionInAxPackage u) {
+      D.KInterfaceAlpha("Unable to evaluate CurvePlotFilter: " + this.c);
       return true;
     } 
   }
   
-  public void a(String paramString) {
+  public void KInterfaceAlpha(String paramString) {
     this.c = paramString;
   }
 }

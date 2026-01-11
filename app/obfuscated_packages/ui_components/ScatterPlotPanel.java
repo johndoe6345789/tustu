@@ -1,16 +1,16 @@
 package ao;
 
-import V.a;
+import V.ExceptionInVPackage;
 import W.j;
 import W.n;
-import aw.a;
-import aw.c;
-import bE.k;
-import bE.m;
-import bE.q;
+import aw.ExceptionInVPackage;
+import aw.AwInterfaceCharlie;
+import bE.BeInterfaceKilo;
+import bE.JComponentExtension;
+import bE.BeInterfaceQuebec;
 import bH.D;
 import bH.S;
-import bx.l;
+import bx.BxInterfaceLima;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.dE;
@@ -18,10 +18,10 @@ import com.efiAnalytics.ui.e;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
 import com.efiAnalytics.ui.fF;
-import g.g;
-import g.k;
-import h.b;
-import h.i;
+import ActionListenerInGPackage.ActionListenerInGPackage;
+import ActionListenerInGPackage.BeInterfaceKilo;
+import h.ClassTypeInHPackage;
+import h.IOProperties;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -46,14 +46,14 @@ import javax.swing.JPopupMenu;
 import javax.swing.JToggleButton;
 import javax.swing.JToolBar;
 
-public class fK extends JPanel implements k {
-  private m z = new m();
+public class fK extends JPanel implements BeInterfaceKilo {
+  private JComponentExtension z = new JComponentExtension();
   
-  JToolBar a = new JToolBar();
+  JToolBar ExceptionInVPackage = new JToolBar();
   
-  JToolBar b = new JToolBar();
+  JToolBar ClassTypeInHPackage = new JToolBar();
   
-  e c = new e();
+  e AwInterfaceCharlie = new e();
   
   e d = new e();
   
@@ -61,19 +61,19 @@ public class fK extends JPanel implements k {
   
   eq f = new eq(this);
   
-  JLabel g = new JLabel(" ", 0);
+  JLabel ActionListenerInGPackage = new JLabel(" ", 0);
   
   JLabel h = new JLabel(" ", 0);
   
-  fF i = new fF();
+  fF IOProperties = new fF();
   
-  a j = null;
+  ExceptionInVPackage j = null;
   
-  JPanel k = null;
+  JPanel BeInterfaceKilo = null;
   
-  JToggleButton l = new JToggleButton("Scales");
+  JToggleButton BxInterfaceLima = new JToggleButton("Scales");
   
-  JButton m = new JButton("Saved Views");
+  JButton JComponentExtension = new JButton("Saved Views");
   
   JButton n = new JButton("Pop");
   
@@ -121,7 +121,7 @@ public class fK extends JPanel implements k {
   
   JPanel p;
   
-  c q = null;
+  AwInterfaceCharlie BeInterfaceQuebec = null;
   
   private String U = "zColorKey";
   
@@ -148,79 +148,79 @@ public class fK extends JPanel implements k {
   public fK() {
     setLayout(new BorderLayout());
     this.V = new dE((Component)this.z);
-    this.V.a(250);
-    this.z.a(this);
+    this.V.ExceptionInVPackage(250);
+    this.z.ExceptionInVPackage(this);
     setBorder(BorderFactory.createLineBorder(Color.darkGray));
     this.p = new JPanel();
     this.p.setLayout(new BorderLayout());
     try {
-      Image image1 = cO.a().a(cO.ar, this, 20);
+      Image image1 = cO.ExceptionInVPackage().ExceptionInVPackage(cO.ar, this, 20);
       this.n.setText("");
       ImageIcon imageIcon1 = new ImageIcon(image1);
       this.n.setIcon(imageIcon1);
-    } catch (a a1) {
+    } catch (ExceptionInVPackage a1) {
       this.n.setText("Popout");
       Logger.getLogger(fK.class.getName()).log(Level.WARNING, "Failed to load Scatter plot full screen image.", (Throwable)a1);
     } 
-    if (b.a().a("fdsahoirew098rew3284lksafd"))
-      this.a.add(this.n); 
-    this.a.add(this.m);
-    this.a.add(new JLabel(" X Axis:"));
-    this.a.add((Component)this.c);
-    this.a.add(new JLabel(" Y Axis:"));
-    this.a.add((Component)this.d);
-    this.a.add(new JLabel(" Z Axis:"));
-    this.a.add((Component)this.e);
-    this.a.add(this.l);
-    Dimension dimension = eJ.a(140, getFont().getSize() + 4);
-    this.c.setPreferredSize(dimension);
+    if (ClassTypeInHPackage.ExceptionInVPackage().ExceptionInVPackage("fdsahoirew098rew3284lksafd"))
+      this.ExceptionInVPackage.add(this.n); 
+    this.ExceptionInVPackage.add(this.JComponentExtension);
+    this.ExceptionInVPackage.add(new JLabel(" X Axis:"));
+    this.ExceptionInVPackage.add((Component)this.AwInterfaceCharlie);
+    this.ExceptionInVPackage.add(new JLabel(" Y Axis:"));
+    this.ExceptionInVPackage.add((Component)this.d);
+    this.ExceptionInVPackage.add(new JLabel(" Z Axis:"));
+    this.ExceptionInVPackage.add((Component)this.e);
+    this.ExceptionInVPackage.add(this.BxInterfaceLima);
+    Dimension dimension = eJ.ExceptionInVPackage(140, getFont().getSize() + 4);
+    this.AwInterfaceCharlie.setPreferredSize(dimension);
     this.d.setPreferredSize(dimension);
     this.e.setPreferredSize(dimension);
-    this.m.addActionListener(new fL(this));
-    this.c.addItemListener(new fW(this));
+    this.JComponentExtension.addActionListener(new fL(this));
+    this.AwInterfaceCharlie.addItemListener(new fW(this));
     this.d.addItemListener(new gc(this));
     this.e.addItemListener(new gd(this));
-    this.l.addActionListener(new ge(this));
+    this.BxInterfaceLima.addActionListener(new ge(this));
     this.n.addActionListener(new gf(this));
-    this.p.add("North", this.a);
+    this.p.add("North", this.ExceptionInVPackage);
     add("North", this.p);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
     jPanel.add("Center", (Component)this.z);
-    jPanel.add("North", this.g);
-    jPanel.add("West", (Component)this.i);
+    jPanel.add("North", this.ActionListenerInGPackage);
+    jPanel.add("West", (Component)this.IOProperties);
     jPanel.add("South", this.h);
-    this.g.setOpaque(true);
-    this.i.setOpaque(true);
+    this.ActionListenerInGPackage.setOpaque(true);
+    this.IOProperties.setOpaque(true);
     this.h.setOpaque(true);
-    this.g.setBackground(Color.BLACK);
-    this.i.setBackground(Color.BLACK);
+    this.ActionListenerInGPackage.setBackground(Color.BLACK);
+    this.IOProperties.setBackground(Color.BLACK);
     this.h.setBackground(Color.BLACK);
-    this.g.setForeground(Color.WHITE);
-    this.i.setForeground(Color.WHITE);
+    this.ActionListenerInGPackage.setForeground(Color.WHITE);
+    this.IOProperties.setForeground(Color.WHITE);
     this.h.setForeground(Color.WHITE);
-    this.g.setFont(new Font("Times", 1, eJ.a(18)));
+    this.ActionListenerInGPackage.setFont(new Font("Times", 1, eJ.ExceptionInVPackage(18)));
     add("Center", jPanel);
-    this.z.a(this.f, 0);
+    this.z.ExceptionInVPackage(this.f, 0);
     this.z.addMouseListener(new gk(this));
-    this.q = new c(null);
-    this.q.a(new gl(this));
-    this.b.add((Component)this.q);
-    this.p.add("Center", this.b);
-    a(new gm(this));
-    a(true);
+    this.BeInterfaceQuebec = new AwInterfaceCharlie(null);
+    this.BeInterfaceQuebec.ExceptionInVPackage(new gl(this));
+    this.ClassTypeInHPackage.add((Component)this.BeInterfaceQuebec);
+    this.p.add("Center", this.ClassTypeInHPackage);
+    ExceptionInVPackage(new gm(this));
+    ExceptionInVPackage(true);
     Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/zoomout.gif"));
-    image = eJ.a(image);
+    image = eJ.ExceptionInVPackage(image);
     ImageIcon imageIcon = new ImageIcon(image);
     this.y = new JButton(null, imageIcon);
     this.z.add(this.y);
-    this.y.setVisible((!this.q.a() || !this.q.d()));
+    this.y.setVisible((!this.BeInterfaceQuebec.ExceptionInVPackage() || !this.BeInterfaceQuebec.d()));
     this.y.addActionListener(new gg(this));
     image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/scatter_line.png"));
-    image = eJ.a(image, 20);
+    image = eJ.ExceptionInVPackage(image, 20);
     this.w = new ImageIcon(image);
     image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/scatter_dots.png"));
-    image = eJ.a(image, 20);
+    image = eJ.ExceptionInVPackage(image, 20);
     this.x = new ImageIcon(image);
     this.v = new JToggleButton(null, this.x);
     this.z.add(this.v);
@@ -232,7 +232,7 @@ public class fK extends JPanel implements k {
     jPopupMenu.add(M).addActionListener(new gi(this));
     JMenu jMenu = new JMenu("Delete Saved View");
     fM fM = new fM(this);
-    List list = fI.a();
+    List list = fI.ExceptionInVPackage();
     for (String str : list) {
       if (!str.equals(o))
         jMenu.add(str).addActionListener(fM); 
@@ -244,219 +244,219 @@ public class fK extends JPanel implements k {
       if (!str.equals(o))
         jPopupMenu.add(str).addActionListener(fN); 
     } 
-    this.m.add(jPopupMenu);
-    jPopupMenu.show(this.m, 0, this.m.getHeight());
+    this.JComponentExtension.add(jPopupMenu);
+    jPopupMenu.show(this.JComponentExtension, 0, this.JComponentExtension.getHeight());
   }
   
   private void d(String paramString) {
-    fI.b(paramString);
+    fI.ClassTypeInHPackage(paramString);
   }
   
   private void t() {
     String str = "Scatter Plot View Name";
-    i.c("userParameter_" + str, this.g.getText());
-    g g = new g(k.a(this), "{" + str + "}", false, "       Save current Histogram View As", true);
-    if (g.a) {
-      String str1 = g.a();
-      fH fH = a();
-      fH.a(str1);
-      fI.a(fH);
+    IOProperties.AwInterfaceCharlie("userParameter_" + str, this.ActionListenerInGPackage.getText());
+    ActionListenerInGPackage ActionListenerInGPackage = new ActionListenerInGPackage(BeInterfaceKilo.ExceptionInVPackage(this), "{" + str + "}", false, "       Save current Histogram View As", true);
+    if (ActionListenerInGPackage.ExceptionInVPackage) {
+      String str1 = ActionListenerInGPackage.ExceptionInVPackage();
+      fH fH = ExceptionInVPackage();
+      fH.ExceptionInVPackage(str1);
+      fI.ExceptionInVPackage(fH);
     } 
   }
   
   private void e(String paramString) {
     fH fH = null;
     try {
-      fH = fI.a(paramString);
-    } catch (a a1) {
+      fH = fI.ExceptionInVPackage(paramString);
+    } catch (ExceptionInVPackage a1) {
       Logger.getLogger(fK.class.getName()).log(Level.WARNING, "Scatter Plot View " + paramString + " cannot be loaded.", (Throwable)a1);
     } 
     if (fH == null) {
       bV.d("Scatter Plot View " + paramString + " cannot be loaded.", this);
       return;
     } 
-    a(fH);
+    ExceptionInVPackage(fH);
   }
   
-  private void a(fH paramfH) {
-    this.c.b(paramfH.b());
-    this.q.b(paramfH.e(), paramfH.f());
-    this.q.b(paramfH.g());
-    this.d.b(paramfH.c());
-    this.q.a(paramfH.h(), paramfH.i());
-    this.q.a(paramfH.j());
-    this.e.b(paramfH.d());
-    this.q.c(paramfH.k(), paramfH.l());
-    this.q.c(paramfH.m());
+  private void ExceptionInVPackage(fH paramfH) {
+    this.AwInterfaceCharlie.ClassTypeInHPackage(paramfH.ClassTypeInHPackage());
+    this.BeInterfaceQuebec.ClassTypeInHPackage(paramfH.e(), paramfH.f());
+    this.BeInterfaceQuebec.ClassTypeInHPackage(paramfH.ActionListenerInGPackage());
+    this.d.ClassTypeInHPackage(paramfH.AwInterfaceCharlie());
+    this.BeInterfaceQuebec.ExceptionInVPackage(paramfH.h(), paramfH.IOProperties());
+    this.BeInterfaceQuebec.ExceptionInVPackage(paramfH.j());
+    this.e.ClassTypeInHPackage(paramfH.d());
+    this.BeInterfaceQuebec.AwInterfaceCharlie(paramfH.BeInterfaceKilo(), paramfH.BxInterfaceLima());
+    this.BeInterfaceQuebec.AwInterfaceCharlie(paramfH.JComponentExtension());
   }
   
   private void u() {
-    fF fF1 = bq.a().a(this);
-    fF1.a(this.f);
-    fF1.a(this.z.n(), this.z.o());
+    fF fF1 = bq.ExceptionInVPackage().ExceptionInVPackage(this);
+    fF1.ExceptionInVPackage(this.f);
+    fF1.ExceptionInVPackage(this.z.n(), this.z.o());
     if (!fF1.isVisible())
       fF1.setVisible(true); 
-    fF1.b(this.z.getWidth(), this.z.getHeight());
+    fF1.ClassTypeInHPackage(this.z.getWidth(), this.z.getHeight());
   }
   
-  public fH a() {
-    fH fH = new fH(this.g.getText());
-    String str = (this.c.getSelectedItem() == null) ? " " : this.c.getSelectedItem().toString();
-    fH.b(str);
-    fH.a(this.q.b());
-    fH.b(this.q.c());
-    fH.a(this.q.a());
+  public fH ExceptionInVPackage() {
+    fH fH = new fH(this.ActionListenerInGPackage.getText());
+    String str = (this.AwInterfaceCharlie.getSelectedItem() == null) ? " " : this.AwInterfaceCharlie.getSelectedItem().toString();
+    fH.ClassTypeInHPackage(str);
+    fH.ExceptionInVPackage(this.BeInterfaceQuebec.ClassTypeInHPackage());
+    fH.ClassTypeInHPackage(this.BeInterfaceQuebec.AwInterfaceCharlie());
+    fH.ExceptionInVPackage(this.BeInterfaceQuebec.ExceptionInVPackage());
     str = (this.d.getSelectedItem() == null) ? " " : this.d.getSelectedItem().toString();
-    fH.c(str);
-    fH.c(this.q.e());
-    fH.d(this.q.f());
-    fH.b(this.q.d());
+    fH.AwInterfaceCharlie(str);
+    fH.AwInterfaceCharlie(this.BeInterfaceQuebec.e());
+    fH.d(this.BeInterfaceQuebec.f());
+    fH.ClassTypeInHPackage(this.BeInterfaceQuebec.d());
     str = (this.e.getSelectedItem() == null) ? " " : this.e.getSelectedItem().toString();
     fH.d(str);
-    fH.e(this.q.h());
-    fH.f(this.q.i());
-    fH.c(this.q.g());
+    fH.e(this.BeInterfaceQuebec.h());
+    fH.f(this.BeInterfaceQuebec.IOProperties());
+    fH.AwInterfaceCharlie(this.BeInterfaceQuebec.ActionListenerInGPackage());
     return fH;
   }
   
-  public void a(boolean paramBoolean) {
+  public void ExceptionInVPackage(boolean paramBoolean) {
     if (this.j == null) {
-      this.k = new JPanel();
-      this.k.setBackground(Color.BLACK);
-      this.k.setLayout(new BorderLayout());
+      this.BeInterfaceKilo = new JPanel();
+      this.BeInterfaceKilo.setBackground(Color.BLACK);
+      this.BeInterfaceKilo.setLayout(new BorderLayout());
       JPanel jPanel1 = new JPanel();
       jPanel1.setLayout(new BorderLayout());
       Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/icon_close_11x11.gif"));
-      image = eJ.a(image, jPanel1);
+      image = eJ.ExceptionInVPackage(image, jPanel1);
       ImageIcon imageIcon = new ImageIcon(image);
       this.s = new JButton(null, imageIcon);
       this.s.setFocusable(false);
       this.s.setToolTipText("Close");
       this.s.addActionListener(new fO(this));
-      this.s.setPreferredSize(new Dimension(eJ.a(14), eJ.a(14)));
+      this.s.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(14), eJ.ExceptionInVPackage(14)));
       JPanel jPanel2 = new JPanel();
       jPanel2.setLayout(new BorderLayout());
       jPanel2.add("North", this.s);
       jPanel1.add("East", jPanel2);
-      this.k.add("North", jPanel1);
+      this.BeInterfaceKilo.add("North", jPanel1);
       image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/filter-16.png"));
-      image = eJ.a(image, jPanel2);
+      image = eJ.ExceptionInVPackage(image, jPanel2);
       imageIcon = new ImageIcon(image);
       this.t = new JButton(null, imageIcon);
       this.t.setFocusable(false);
       this.t.setToolTipText("Show Filters");
       this.t.addActionListener(new fP(this));
-      this.t.setPreferredSize(new Dimension(eJ.a(18), eJ.a(18)));
+      this.t.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(18), eJ.ExceptionInVPackage(18)));
       this.z.add(this.t);
       this.z.setLayout(new gj(this));
       image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/edit-icon.png"));
-      image = eJ.a(image, jPanel2);
+      image = eJ.ExceptionInVPackage(image, jPanel2);
       imageIcon = new ImageIcon(image);
       this.u = new JButton(null, imageIcon);
       this.u.setFocusable(false);
       this.u.setToolTipText("Show Filters");
       this.u.addActionListener(new fQ(this));
-      this.u.setPreferredSize(new Dimension(eJ.a(18), eJ.a(18)));
+      this.u.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(18), eJ.ExceptionInVPackage(18)));
       jPanel1.add("West", this.u);
-      this.j = new a(null);
-      this.j.a(new fR(this));
-      M.a().a((l)this.j);
-      this.k.add("Center", (Component)this.j);
-      add("East", this.k);
+      this.j = new ExceptionInVPackage(null);
+      this.j.ExceptionInVPackage(new fR(this));
+      M.ExceptionInVPackage().ExceptionInVPackage((BxInterfaceLima)this.j);
+      this.BeInterfaceKilo.add("Center", (Component)this.j);
+      add("East", this.BeInterfaceKilo);
     } 
     if (paramBoolean);
-    this.k.setVisible(paramBoolean);
+    this.BeInterfaceKilo.setVisible(paramBoolean);
     this.t.setVisible(!paramBoolean);
-    a(K, "" + paramBoolean);
+    ExceptionInVPackage(K, "" + paramBoolean);
   }
   
   private void v() {
-    if (this.j.a().isEmpty()) {
+    if (this.j.ExceptionInVPackage().isEmpty()) {
       this.t.setBackground(getBackground());
     } else {
       this.t.setBackground(Color.RED);
     } 
   }
   
-  public void b() {
-    boolean bool = this.l.isSelected();
-    b(bool);
+  public void ClassTypeInHPackage() {
+    boolean bool = this.BxInterfaceLima.isSelected();
+    ClassTypeInHPackage(bool);
   }
   
-  public void b(boolean paramBoolean) {
-    this.l.setSelected(paramBoolean);
-    this.q.setVisible(paramBoolean);
-    a(L, "" + paramBoolean);
+  public void ClassTypeInHPackage(boolean paramBoolean) {
+    this.BxInterfaceLima.setSelected(paramBoolean);
+    this.BeInterfaceQuebec.setVisible(paramBoolean);
+    ExceptionInVPackage(L, "" + paramBoolean);
   }
   
-  public void a(h paramh) {
+  public void ExceptionInVPackage(h paramh) {
     this.r.add(paramh);
   }
   
   private void w() {
-    String str = (this.c.getSelectedItem() == null) ? "" : this.c.getSelectedItem().toString();
+    String str = (this.AwInterfaceCharlie.getSelectedItem() == null) ? "" : this.AwInterfaceCharlie.getSelectedItem().toString();
     Iterator<h> iterator = this.r.iterator();
     while (iterator.hasNext())
-      ((h)iterator.next()).a(str); 
+      ((h)iterator.next()).ExceptionInVPackage(str); 
   }
   
   private void x() {
     String str = (this.d.getSelectedItem() == null) ? "" : this.d.getSelectedItem().toString();
     Iterator<h> iterator = this.r.iterator();
     while (iterator.hasNext())
-      ((h)iterator.next()).b(str); 
+      ((h)iterator.next()).ClassTypeInHPackage(str); 
   }
   
   private void y() {
     String str = (this.e.getSelectedItem() == null) ? "" : this.e.getSelectedItem().toString();
     Iterator<h> iterator = this.r.iterator();
     while (iterator.hasNext())
-      ((h)iterator.next()).c(str); 
+      ((h)iterator.next()).AwInterfaceCharlie(str); 
   }
   
-  public void a(n paramn) {
-    this.f.a(paramn);
+  public void ExceptionInVPackage(n paramn) {
+    this.f.ExceptionInVPackage(paramn);
     if (paramn != null && paramn.size() > 0) {
-      b(paramn);
-      this.y.setVisible((!this.q.a() || !this.q.d()));
-      D.c("Dataset size: " + paramn.d());
-      String str = (String)this.c.getSelectedItem();
-      this.f.a(str);
+      ClassTypeInHPackage(paramn);
+      this.y.setVisible((!this.BeInterfaceQuebec.ExceptionInVPackage() || !this.BeInterfaceQuebec.d()));
+      D.AwInterfaceCharlie("Dataset size: " + paramn.d());
+      String str = (String)this.AwInterfaceCharlie.getSelectedItem();
+      this.f.ExceptionInVPackage(str);
       str = (String)this.d.getSelectedItem();
-      this.f.b(str);
+      this.f.ClassTypeInHPackage(str);
       str = (String)this.e.getSelectedItem();
-      this.f.c(str);
+      this.f.AwInterfaceCharlie(str);
     } 
   }
   
-  public void c() {
-    if (this.q.a()) {
-      double d1 = this.f.a();
-      double d2 = this.f.b();
-      this.q.b(d1, d2);
+  public void AwInterfaceCharlie() {
+    if (this.BeInterfaceQuebec.ExceptionInVPackage()) {
+      double d1 = this.f.ExceptionInVPackage();
+      double d2 = this.f.ClassTypeInHPackage();
+      this.BeInterfaceQuebec.ClassTypeInHPackage(d1, d2);
     } 
-    if (this.q.d()) {
-      double d1 = this.f.c();
+    if (this.BeInterfaceQuebec.d()) {
+      double d1 = this.f.AwInterfaceCharlie();
       double d2 = this.f.d();
-      this.q.a(d1, d2);
+      this.BeInterfaceQuebec.ExceptionInVPackage(d1, d2);
     } 
-    if (this.q.g()) {
+    if (this.BeInterfaceQuebec.ActionListenerInGPackage()) {
       double d1 = this.f.h();
-      double d2 = this.f.i();
-      this.q.c(d1, d2);
+      double d2 = this.f.IOProperties();
+      this.BeInterfaceQuebec.AwInterfaceCharlie(d1, d2);
     } 
   }
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
     Dimension dimension;
-    int i = (this.c.getPreferredSize()).width;
-    int j = (paramInt3 - eJ.a(260)) / 3;
-    if (i < j) {
-      dimension = new Dimension(i, 20);
+    int IOProperties = (this.AwInterfaceCharlie.getPreferredSize()).width;
+    int j = (paramInt3 - eJ.ExceptionInVPackage(260)) / 3;
+    if (IOProperties < j) {
+      dimension = new Dimension(IOProperties, 20);
     } else {
       dimension = new Dimension(j, 20);
     } 
-    this.c.setMinimumSize(dimension);
+    this.AwInterfaceCharlie.setMinimumSize(dimension);
     this.d.setMinimumSize(dimension);
     this.e.setMinimumSize(dimension);
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
@@ -465,93 +465,93 @@ public class fK extends JPanel implements k {
   public void repaint() {
     super.repaint();
     if (this.z != null)
-      this.z.a(); 
+      this.z.ExceptionInVPackage(); 
   }
   
-  private void b(n paramn) {
+  private void ClassTypeInHPackage(n paramn) {
     this.W = true;
-    a(this.c, paramn, " ");
-    a(this.d, paramn, " ");
-    a(this.e, paramn, G);
+    ExceptionInVPackage(this.AwInterfaceCharlie, paramn, " ");
+    ExceptionInVPackage(this.d, paramn, " ");
+    ExceptionInVPackage(this.e, paramn, G);
     e();
     this.W = false;
   }
   
-  private void a(e parame, n paramn, String paramString) {
+  private void ExceptionInVPackage(e parame, n paramn, String paramString) {
     if (paramn == null)
       return; 
     String str = (String)parame.getSelectedItem();
     boolean bool1 = false;
-    String[] arrayOfString1 = parame.b();
+    String[] arrayOfString1 = parame.ClassTypeInHPackage();
     String[] arrayOfString2 = new String[paramn.size()];
     boolean bool2 = (arrayOfString1.length == arrayOfString2.length + 1) ? true : false;
-    byte b;
-    for (b = 0; b < paramn.size(); b++) {
-      j j = (j)paramn.get(b);
-      arrayOfString2[b] = j.a();
-      if (bool2 && !arrayOfString2[b].equals(arrayOfString1[b + 1]))
+    byte ClassTypeInHPackage;
+    for (ClassTypeInHPackage = 0; ClassTypeInHPackage < paramn.size(); ClassTypeInHPackage++) {
+      j j = (j)paramn.get(ClassTypeInHPackage);
+      arrayOfString2[ClassTypeInHPackage] = j.ExceptionInVPackage();
+      if (bool2 && !arrayOfString2[ClassTypeInHPackage].equals(arrayOfString1[ClassTypeInHPackage + 1]))
         bool2 = false; 
     } 
     if (!bool2) {
       parame.removeAllItems();
       if (parame.getItemCount() == 0)
-        parame.a(paramString); 
-      if (i.a(i.E, i.F))
-        arrayOfString2 = S.a(arrayOfString2); 
-      b = 1;
+        parame.ExceptionInVPackage(paramString); 
+      if (IOProperties.ExceptionInVPackage(IOProperties.E, IOProperties.F))
+        arrayOfString2 = S.ExceptionInVPackage(arrayOfString2); 
+      ClassTypeInHPackage = 1;
       for (byte b1 = 0; b1 < arrayOfString2.length; b1++) {
         if (!bool1 && arrayOfString2[b1].equals(str))
           bool1 = true; 
-        int i = b1 + b;
-        parame.a(arrayOfString2[b1]);
+        int IOProperties = b1 + ClassTypeInHPackage;
+        parame.ExceptionInVPackage(arrayOfString2[b1]);
       } 
     } 
     try {
       if (!bool1)
-        parame.b(str); 
+        parame.ClassTypeInHPackage(str); 
     } catch (Exception exception) {
-      parame.b(paramString);
+      parame.ClassTypeInHPackage(paramString);
     } 
   }
   
   protected void d() {
-    if (this.c.getSelectedItem() != null && this.d.getSelectedItem() != null && ((String)this.c.getSelectedItem()).length() > 0 && ((String)this.d.getSelectedItem()).length() > 0) {
+    if (this.AwInterfaceCharlie.getSelectedItem() != null && this.d.getSelectedItem() != null && ((String)this.AwInterfaceCharlie.getSelectedItem()).length() > 0 && ((String)this.d.getSelectedItem()).length() > 0) {
       String str;
       if (this.e.getSelectedItem() != null && !this.e.getSelectedItem().toString().equals(" ")) {
-        str = this.d.getSelectedItem() + " vs " + this.c.getSelectedItem() + " vs " + this.e.getSelectedItem().toString();
+        str = this.d.getSelectedItem() + " vs " + this.AwInterfaceCharlie.getSelectedItem() + " vs " + this.e.getSelectedItem().toString();
       } else {
-        str = this.d.getSelectedItem() + " vs " + this.c.getSelectedItem();
+        str = this.d.getSelectedItem() + " vs " + this.AwInterfaceCharlie.getSelectedItem();
       } 
-      this.g.setText(str);
-      this.h.setText(this.c.getSelectedItem().toString());
-      this.i.setText(this.d.getSelectedItem().toString());
-      this.z.a(this.c.getSelectedItem().toString());
-      this.z.b(this.d.getSelectedItem().toString());
+      this.ActionListenerInGPackage.setText(str);
+      this.h.setText(this.AwInterfaceCharlie.getSelectedItem().toString());
+      this.IOProperties.setText(this.d.getSelectedItem().toString());
+      this.z.ExceptionInVPackage(this.AwInterfaceCharlie.getSelectedItem().toString());
+      this.z.ClassTypeInHPackage(this.d.getSelectedItem().toString());
       if (this.e.getSelectedItem() != null) {
-        this.z.c(this.e.getSelectedItem().toString());
+        this.z.AwInterfaceCharlie(this.e.getSelectedItem().toString());
       } else {
-        this.z.c("");
+        this.z.AwInterfaceCharlie("");
       } 
     } 
   }
   
-  public void a(int paramInt) {
-    if (paramInt > this.C && this.f.a != null && paramInt < this.B && this.f.b != null && paramInt < this.f.b.i()) {
-      q q = this.f.b(paramInt);
-      this.z.a(q.getX(), q.getY());
+  public void ExceptionInVPackage(int paramInt) {
+    if (paramInt > this.C && this.f.ExceptionInVPackage != null && paramInt < this.B && this.f.ClassTypeInHPackage != null && paramInt < this.f.ClassTypeInHPackage.IOProperties()) {
+      BeInterfaceQuebec BeInterfaceQuebec = this.f.ClassTypeInHPackage(paramInt);
+      this.z.ExceptionInVPackage(BeInterfaceQuebec.getX(), BeInterfaceQuebec.getY());
       this.z.repaint();
     } else {
-      this.z.l();
+      this.z.BxInterfaceLima();
     } 
   }
   
-  public void a(et paramet) {
+  public void ExceptionInVPackage(et paramet) {
     this.A = paramet;
   }
   
-  private boolean a(e parame, String paramString) {
-    for (byte b = 0; b < parame.getItemCount(); b++) {
-      if (parame.a(b).equals(paramString))
+  private boolean ExceptionInVPackage(e parame, String paramString) {
+    for (byte ClassTypeInHPackage = 0; ClassTypeInHPackage < parame.getItemCount(); ClassTypeInHPackage++) {
+      if (parame.ExceptionInVPackage(ClassTypeInHPackage).equals(paramString))
         return true; 
     } 
     return false;
@@ -559,140 +559,140 @@ public class fK extends JPanel implements k {
   
   public void e() {
     if (this.A != null) {
-      String str1 = this.A.a(D);
-      String str2 = this.A.a(E);
-      if (str1 != null && a(this.c, str1)) {
-        this.c.b(str1);
+      String str1 = this.A.ExceptionInVPackage(D);
+      String str2 = this.A.ExceptionInVPackage(E);
+      if (str1 != null && ExceptionInVPackage(this.AwInterfaceCharlie, str1)) {
+        this.AwInterfaceCharlie.ClassTypeInHPackage(str1);
       } else {
         str1 = null;
       } 
-      if (str2 != null && a(this.d, str2)) {
-        this.d.b(str2);
+      if (str2 != null && ExceptionInVPackage(this.d, str2)) {
+        this.d.ClassTypeInHPackage(str2);
       } else {
         str2 = null;
       } 
       if ((str1 == null || str2 == null) && this.I != null && this.J != null) {
-        this.c.b(this.I);
-        this.d.b(this.J);
+        this.AwInterfaceCharlie.ClassTypeInHPackage(this.I);
+        this.d.ClassTypeInHPackage(this.J);
       } 
-      String str3 = this.A.a(F);
+      String str3 = this.A.ExceptionInVPackage(F);
       if (str3 == null && this.H != null)
         str3 = this.H; 
       if (str3 != null)
-        this.e.b(str3); 
-      String str4 = this.A.a(this.U);
+        this.e.ClassTypeInHPackage(str3); 
+      String str4 = this.A.ExceptionInVPackage(this.U);
       if (str4 != null)
         try {
           d(Integer.parseInt(str4));
         } catch (NumberFormatException numberFormatException) {
           d(1);
         }  
-      String str5 = this.A.a(K);
+      String str5 = this.A.ExceptionInVPackage(K);
       boolean bool1 = (str5 != null && Boolean.parseBoolean(str5)) ? true : false;
-      a(bool1);
-      str5 = this.A.a(L);
+      ExceptionInVPackage(bool1);
+      str5 = this.A.ExceptionInVPackage(L);
       boolean bool2 = (str5 != null && Boolean.parseBoolean(str5)) ? true : false;
-      b(bool2);
+      ClassTypeInHPackage(bool2);
       double d = 0.0D;
-      int i = 0;
+      int IOProperties = 0;
       try {
-        str5 = this.A.a(O);
+        str5 = this.A.ExceptionInVPackage(O);
         if (str5 != null) {
           d = Double.parseDouble(str5);
-          i = (int)Math.round(d);
-          this.z.d(i);
+          IOProperties = (int)Math.round(d);
+          this.z.d(IOProperties);
         } 
       } catch (NumberFormatException numberFormatException) {}
       try {
-        str5 = this.A.a(P);
+        str5 = this.A.ExceptionInVPackage(P);
         if (str5 != null) {
           d = Double.parseDouble(str5);
-          i = (int)Math.round(d);
-          this.z.e(i);
+          IOProperties = (int)Math.round(d);
+          this.z.e(IOProperties);
         } 
       } catch (NumberFormatException numberFormatException) {}
       try {
-        str5 = this.A.a(R);
+        str5 = this.A.ExceptionInVPackage(R);
         if (str5 != null) {
-          i = Integer.parseInt(str5);
-          this.z.f(i);
+          IOProperties = Integer.parseInt(str5);
+          this.z.f(IOProperties);
         } 
       } catch (Exception exception) {}
       try {
-        str5 = this.A.a(Q);
+        str5 = this.A.ExceptionInVPackage(Q);
         if (str5 != null) {
-          i = Integer.parseInt(str5);
-          this.z.g(i);
+          IOProperties = Integer.parseInt(str5);
+          this.z.ActionListenerInGPackage(IOProperties);
         } 
       } catch (Exception exception) {}
       try {
-        str5 = this.A.a(S);
+        str5 = this.A.ExceptionInVPackage(S);
         if (str5 != null) {
-          i = Integer.parseInt(str5);
-          this.z.k(i);
+          IOProperties = Integer.parseInt(str5);
+          this.z.BeInterfaceKilo(IOProperties);
         } 
       } catch (Exception exception) {}
     } 
   }
   
-  private void a(String paramString1, String paramString2) {
+  private void ExceptionInVPackage(String paramString1, String paramString2) {
     if (this.A != null)
-      this.A.a(paramString1, paramString2); 
+      this.A.ExceptionInVPackage(paramString1, paramString2); 
   }
   
   public int f() {
     return this.B;
   }
   
-  public void b(int paramInt) {
+  public void ClassTypeInHPackage(int paramInt) {
     this.B = paramInt;
     this.z.d();
-    this.V.a();
+    this.V.ExceptionInVPackage();
   }
   
-  public int g() {
+  public int ActionListenerInGPackage() {
     return this.C;
   }
   
-  public void c(int paramInt) {
+  public void AwInterfaceCharlie(int paramInt) {
     this.C = paramInt;
     this.z.d();
-    this.V.a();
+    this.V.ExceptionInVPackage();
   }
   
-  public void a(String paramString) {
+  public void ExceptionInVPackage(String paramString) {
     this.I = paramString;
   }
   
-  public void b(String paramString) {
+  public void ClassTypeInHPackage(String paramString) {
     this.J = paramString;
   }
   
-  public void c(String paramString) {
+  public void AwInterfaceCharlie(String paramString) {
     this.H = paramString;
   }
   
-  public void a(Component paramComponent, int paramInt1, int paramInt2) {
+  public void ExceptionInVPackage(Component paramComponent, int paramInt1, int paramInt2) {
     JPopupMenu jPopupMenu = new JPopupMenu();
     JMenu jMenu = new JMenu("Z Axis Color Mode");
-    String str = this.A.a(this.U);
+    String str = this.A.ExceptionInVPackage(this.U);
     if (str == null || str.equals(""))
-      str = "" + this.z.k(); 
-    i i = new i();
-    JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Color to Max Value for Point", str.equals("" + m.a));
-    i.a(jCheckBoxMenuItem1);
+      str = "" + this.z.BeInterfaceKilo(); 
+    IOProperties IOProperties = new IOProperties();
+    JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Color to Max Value for Point", str.equals("" + JComponentExtension.ExceptionInVPackage));
+    IOProperties.ExceptionInVPackage(jCheckBoxMenuItem1);
     jCheckBoxMenuItem1.addItemListener(new fS(this));
     jMenu.add(jCheckBoxMenuItem1);
-    JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Color to Average Value for Point", str.equals("" + m.b));
-    i.a(jCheckBoxMenuItem2);
+    JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Color to Average Value for Point", str.equals("" + JComponentExtension.ClassTypeInHPackage));
+    IOProperties.ExceptionInVPackage(jCheckBoxMenuItem2);
     jCheckBoxMenuItem2.addItemListener(new fT(this));
     jMenu.add(jCheckBoxMenuItem2);
-    JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Color to Min Value for Point", str.equals("" + m.c));
-    i.a(jCheckBoxMenuItem3);
+    JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Color to Min Value for Point", str.equals("" + JComponentExtension.AwInterfaceCharlie));
+    IOProperties.ExceptionInVPackage(jCheckBoxMenuItem3);
     jCheckBoxMenuItem3.addItemListener(new fU(this));
     jMenu.add(jCheckBoxMenuItem3);
     jPopupMenu.add(jMenu);
-    if (!this.q.a() || !this.q.d()) {
+    if (!this.BeInterfaceQuebec.ExceptionInVPackage() || !this.BeInterfaceQuebec.d()) {
       JMenuItem jMenuItem1 = new JMenuItem("Default X & Y Scale");
       jMenuItem1.addActionListener(new fV(this));
       jPopupMenu.add(jMenuItem1);
@@ -716,33 +716,33 @@ public class fK extends JPanel implements k {
   }
   
   public void d(int paramInt) {
-    this.z.c(paramInt);
+    this.z.AwInterfaceCharlie(paramInt);
     this.z.d();
     this.z.repaint();
-    a(this.U, paramInt + "");
+    ExceptionInVPackage(this.U, paramInt + "");
   }
   
   public void h() {
     this.z.d();
     this.z.repaint();
-    if (bq.a().j() != null && bq.a().j().d().equals(this)) {
-      bq.a().j().c().d();
-      bq.a().j().c().repaint();
+    if (bq.ExceptionInVPackage().j() != null && bq.ExceptionInVPackage().j().d().equals(this)) {
+      bq.ExceptionInVPackage().j().AwInterfaceCharlie().d();
+      bq.ExceptionInVPackage().j().AwInterfaceCharlie().repaint();
     } 
   }
   
-  public void a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
-    this.q.b(paramDouble1, paramDouble2);
-    this.q.a(paramDouble3, paramDouble4);
-    this.q.b(false);
-    this.q.a(false);
+  public void ExceptionInVPackage(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+    this.BeInterfaceQuebec.ClassTypeInHPackage(paramDouble1, paramDouble2);
+    this.BeInterfaceQuebec.ExceptionInVPackage(paramDouble3, paramDouble4);
+    this.BeInterfaceQuebec.ClassTypeInHPackage(false);
+    this.BeInterfaceQuebec.ExceptionInVPackage(false);
     this.y.setVisible(true);
     repaint();
-    if (bq.a().j() != null && bq.a().j().d().equals(this))
-      bq.a().j().c().a(); 
+    if (bq.ExceptionInVPackage().j() != null && bq.ExceptionInVPackage().j().d().equals(this))
+      bq.ExceptionInVPackage().j().AwInterfaceCharlie().ExceptionInVPackage(); 
   }
   
-  public m i() {
+  public JComponentExtension IOProperties() {
     return this.z;
   }
 }

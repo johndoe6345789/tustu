@@ -2,7 +2,7 @@ package ao;
 
 import bH.X;
 import com.efiAnalytics.ui.bq;
-import h.i;
+import h.IOProperties;
 import java.awt.Component;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,19 +51,19 @@ public class O {
       str = str + str1 + ","; 
     if (str.endsWith(","))
       str = str.substring(0, str.length() - 1); 
-    i.c("GRAPH_FIELD_GROUP_NAME_" + paramString, str);
+    IOProperties.c("GRAPH_FIELD_GROUP_NAME_" + paramString, str);
   }
   
   public static List a() {
     ArrayList<String> arrayList = new ArrayList();
-    String[] arrayOfString = i.e("GRAPH_FIELD_GROUP_NAME_");
+    String[] arrayOfString = IOProperties.e("GRAPH_FIELD_GROUP_NAME_");
     for (String str : arrayOfString)
       arrayList.add(X.b(str, "GRAPH_FIELD_GROUP_NAME_", "")); 
     return arrayList;
   }
   
   public static List a(String paramString) {
-    String str = i.f("GRAPH_FIELD_GROUP_NAME_" + paramString, "");
+    String str = IOProperties.f("GRAPH_FIELD_GROUP_NAME_" + paramString, "");
     ArrayList<String> arrayList = new ArrayList();
     String[] arrayOfString = str.split(",");
     for (String str1 : arrayOfString)

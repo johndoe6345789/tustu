@@ -1,11 +1,11 @@
 package t;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class aU implements FocusListener {
   aU(aO paramaO) {}
@@ -18,10 +18,10 @@ class aU implements FocusListener {
       return; 
     try {
       String str = jTextField.getText();
-      this.a.c().p(str);
-    } catch (a a) {
-      bV.d(g.b("Valid Expressions or Numeric Values only.") + "\n" + a.getLocalizedMessage(), jTextField);
-      jTextField.setText(this.a.p);
+      this.ExceptionInVPackage.c().p(str);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(SComponentGolf.b("Valid Expressions or Numeric Values only.") + "\n" + ExceptionInVPackage.getLocalizedMessage(), jTextField);
+      jTextField.setText(this.ExceptionInVPackage.p);
     } 
   }
 }

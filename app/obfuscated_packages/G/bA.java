@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 
 public abstract class bA extends Q implements Serializable {
@@ -11,7 +11,7 @@ public abstract class bA extends Q implements Serializable {
   public String l() {
     try {
       return (this.a == null) ? null : this.a.a();
-    } catch (g g) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       return "error";
     } 
   }

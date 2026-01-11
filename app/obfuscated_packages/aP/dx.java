@@ -1,7 +1,7 @@
 package aP;
 
 import W.U;
-import aE.a;
+import aE.PropertiesExtension;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.File;
@@ -14,7 +14,7 @@ final class dx extends TransferHandler {
   public boolean canImport(TransferHandler.TransferSupport paramTransferSupport) {
     for (DataFlavor dataFlavor : paramTransferSupport.getDataFlavors()) {
       if (dataFlavor.isFlavorJavaFileListType()) {
-        if (a.A() != null)
+        if (PropertiesExtension.A() != null)
           return true; 
         try {
           List<File> list = (List)paramTransferSupport.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
@@ -33,7 +33,7 @@ final class dx extends TransferHandler {
     try {
       List<File> list = (List)paramTransferSupport.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
       if (list != null && list.size() > 0)
-        f.a().a(dd.a().c(), list.get(0)); 
+        f.PropertiesExtension().PropertiesExtension(dd.PropertiesExtension().c(), list.get(0)); 
     } catch (UnsupportedFlavorException|java.io.IOException unsupportedFlavorException) {
       return false;
     } 

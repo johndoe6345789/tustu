@@ -4,18 +4,18 @@ import com.efiAnalytics.ui.aN;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import r.a;
-import s.g;
+import r.IOPropertiesUsingFile;
+import s.SComponentGolf;
 
 class eJ implements ActionListener {
   eJ(dB paramdB) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String str = a.a().c(a.cF, "");
+    String str = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.cF, "");
     if (str.isEmpty()) {
-      bV.d(g.b("Registration Key not found."), this.a.h);
+      bV.d(SComponentGolf.b("Registration Key not found."), this.IOPropertiesUsingFile.h);
     } else {
-      aN.a("https://www.efianalytics.com/register/upgradeSoftware.jsp?regKey=" + str);
+      aN.IOPropertiesUsingFile("https://www.efianalytics.com/register/upgradeSoftware.jsp?regKey=" + str);
     } 
   }
 }

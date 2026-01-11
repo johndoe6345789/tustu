@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.List;
@@ -26,7 +26,7 @@ public class ac extends ac {
     this.f = paramList;
   }
   
-  public synchronized double a(S paramS) {
+  public synchronized double a(CloneableImplInAxPackage paramS) {
     if (!this.e && this.c != null && Double.isNaN(this.d))
       this.d = this.c.b(paramS); 
     if (this.a.b(paramS) != 0.0D)
@@ -34,7 +34,7 @@ public class ac extends ac {
     return this.d;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

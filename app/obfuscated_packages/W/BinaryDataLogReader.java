@@ -1,6 +1,6 @@
 package W;
 
-import V.a;
+import V.ExceptionInVPackage;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,18 +21,18 @@ public abstract class BinaryDataLogReader extends DataLogReader {
   
   private byte[] i = null;
   
-  long a = 0L;
+  long ExceptionInVPackage = 0L;
   
   int b = 0;
   
-  public boolean a(String paramString) {
+  public boolean ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     try {
       File file = new File(paramString);
       fileInputStream = new FileInputStream(file);
       this.e = new BufferedInputStream(fileInputStream);
       this.e.skip(this.f.b());
-      this.a = file.length();
+      this.ExceptionInVPackage = file.length();
       if (this.f.f() > 0)
         this.g = new byte[this.f.f()]; 
       this.h = new byte[this.f.e()];
@@ -40,14 +40,14 @@ public abstract class BinaryDataLogReader extends DataLogReader {
       return true;
     } catch (FileNotFoundException fileNotFoundException) {
       fileNotFoundException.printStackTrace();
-      throw new a("File not found:\n" + paramString);
+      throw new ExceptionInVPackage("File not found:\n" + paramString);
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Unable to open file:\n" + paramString);
+      throw new ExceptionInVPackage("Unable to open file:\n" + paramString);
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
       this.e.close();
     } catch (IOException iOException) {
@@ -69,7 +69,7 @@ public abstract class BinaryDataLogReader extends DataLogReader {
       if (this.g != null) {
         i = this.e.read(this.g);
         if (this.f.g() != null)
-          for (int j = (int)this.f.g().a(this.g); j != this.h.length && i > 0; j = (int)this.f.g().a(this.g)) {
+          for (int j = (int)this.f.g().ExceptionInVPackage(this.g); j != this.h.length && i > 0; j = (int)this.f.g().ExceptionInVPackage(this.g)) {
             System.out.println("Skipping:" + j);
             this.e.skip(j);
             i = this.e.read(this.g);
@@ -82,28 +82,28 @@ public abstract class BinaryDataLogReader extends DataLogReader {
       } else {
         this.i = this.h;
       } 
-      float[] arrayOfFloat = new float[this.f.a()];
-      for (byte b1 = 0; b1 < this.f.a(); b1++) {
-        a a = this.f.a(b1);
-        arrayOfFloat[b1] = a.a(this.i);
+      float[] arrayOfFloat = new float[this.f.ExceptionInVPackage()];
+      for (byte b1 = 0; b1 < this.f.ExceptionInVPackage(); b1++) {
+        ExceptionInVPackage ExceptionInVPackage = this.f.ExceptionInVPackage(b1);
+        arrayOfFloat[b1] = ExceptionInVPackage.ExceptionInVPackage(this.i);
       } 
       this.b++;
       return arrayOfFloat;
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new a("Error reading from file. Stopping.");
+      throw new ExceptionInVPackage("Error reading from file. Stopping.");
     } 
   }
   
   public long d() {
-    return (this.a - this.f.b()) / this.f.c();
+    return (this.ExceptionInVPackage - this.f.b()) / this.f.c();
   }
   
   public boolean e() {
-    return ((this.b * this.f.c() + this.f.b()) < this.a - this.f.c());
+    return ((this.b * this.f.c() + this.f.b()) < this.ExceptionInVPackage - this.f.c());
   }
   
-  public void a(c paramc) {
+  public void ExceptionInVPackage(c paramc) {
     this.f = paramc;
   }
   

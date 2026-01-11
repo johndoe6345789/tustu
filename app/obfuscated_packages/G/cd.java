@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +18,7 @@ public class cd implements Serializable {
   
   public static String f = "stdMS3Composite";
   
-  public static String g = "stdMS2SyncComposite";
+  public static String ExceptionPrintstacktrace = "stdMS2SyncComposite";
   
   public static String h = "stdMS3SyncComposite";
   
@@ -93,7 +93,7 @@ public class cd implements Serializable {
     if (paramString.equals(a) || paramString.equals(b) || paramString.equals(c) || paramString.equals(d)) {
       this.p = paramString;
     } else {
-      throw new g("Invalid logger type! Valid types:" + a + ", " + b + " and " + c + " and " + d);
+      throw new ExceptionPrintstacktrace("Invalid logger type! Valid types:" + a + ", " + b + " and " + c + " and " + d);
     } 
   }
   
@@ -113,7 +113,7 @@ public class cd implements Serializable {
     this.x = paramInt;
   }
   
-  public String g() {
+  public String ExceptionPrintstacktrace() {
     return this.q;
   }
   
@@ -177,11 +177,11 @@ public class cd implements Serializable {
     return this.n;
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     if (paramString.equals("UDP_Stream") || paramString.equals("Standard")) {
       this.n = paramString;
     } else {
-      throw new g("Unknown logProcessorType! Supported types: Standard, UDP_Stream");
+      throw new ExceptionPrintstacktrace("Unknown logProcessorType! Supported types: Standard, UDP_Stream");
     } 
   }
   

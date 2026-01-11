@@ -15,7 +15,7 @@ import java.awt.geom.Area;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 public class RectangleIndicatorPainter implements IndicatorPainter {
   static String NAME = "Basic Rectangle Indicator";
@@ -37,7 +37,7 @@ public class RectangleIndicatorPainter implements IndicatorPainter {
   private boolean maskImages = false;
   
   public RectangleIndicatorPainter() {
-    this.maskImages = a.a().c(a.al, false);
+    this.maskImages = IOPropertiesUsingFile.IOPropertiesUsingFile().c(IOPropertiesUsingFile.al, false);
   }
   
   public String getName() {
@@ -115,16 +115,16 @@ public class RectangleIndicatorPainter implements IndicatorPainter {
     int j = paramIndicator.getWidth() - (paramIndicator.insets()).left - (paramIndicator.insets()).right;
     String str = paramIndicator.getFontFamily();
     boolean bool = paramIndicator.isItalicFont() ? true : false;
-    Font font = cq.a().a(str, bool, i);
+    Font font = cq.IOPropertiesUsingFile().IOPropertiesUsingFile(str, bool, i);
     if (font.canDisplayUpTo(paramIndicator.onText()) >= 0 && font.canDisplayUpTo(paramIndicator.offText()) >= 0)
-      font = cq.a().a("", bool, i); 
+      font = cq.IOPropertiesUsingFile().IOPropertiesUsingFile("", bool, i); 
     while (true) {
       FontMetrics fontMetrics = paramIndicator.getFontMetrics(font);
       if ((fontMetrics.stringWidth(paramIndicator.onText()) < j && fontMetrics.stringWidth(paramIndicator.offText()) < j) || i < 1) {
         this.textFont = font;
         return this.textFont;
       } 
-      font = cq.a().a(str, bool, --i);
+      font = cq.IOPropertiesUsingFile().IOPropertiesUsingFile(str, bool, --i);
     } 
   }
   

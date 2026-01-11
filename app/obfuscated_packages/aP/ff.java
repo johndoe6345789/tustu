@@ -1,13 +1,13 @@
 package aP;
 
-import aE.a;
-import c.e;
+import aE.PropertiesExtension;
+import c.CInterfaceEcho;
 
-class ff implements e {
+class ff implements CInterfaceEcho {
   ff(dB paramdB) {}
   
-  public boolean a() {
-    return (a.A() != null);
+  public boolean PropertiesExtension() {
+    return (PropertiesExtension.A() != null);
   }
 }
 

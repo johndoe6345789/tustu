@@ -3,14 +3,14 @@ package t;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
-import s.g;
+import s.SComponentGolf;
 
 class bg extends KeyAdapter {
   bg(be parambe) {}
   
   public void keyReleased(KeyEvent paramKeyEvent) {
     JTextField jTextField = (JTextField)paramKeyEvent.getSource();
-    if (this.a.a(jTextField, g.b("Indicator Off Text")))
+    if (this.a.a(jTextField, SComponentGolf.b("Indicator Off Text")))
       this.a.c().r(jTextField.getText()); 
   }
 }

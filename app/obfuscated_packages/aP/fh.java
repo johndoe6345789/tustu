@@ -1,13 +1,13 @@
 package aP;
 
-import ac.r;
-import c.e;
+import ac.AcInterfaceRomeo;
+import c.CInterfaceEcho;
 
-class fh implements e {
+class fh implements CInterfaceEcho {
   fh(dB paramdB) {}
   
   public boolean a() {
-    return r.a();
+    return AcInterfaceRomeo.a();
   }
 }
 

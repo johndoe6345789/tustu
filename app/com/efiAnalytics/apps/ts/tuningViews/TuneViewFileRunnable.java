@@ -1,30 +1,30 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class TuneViewFileRunnable implements Runnable {
-  k a;
+  k ExceptionInVPackage;
   
   List b;
   
   boolean c = false;
   
   v(n paramn, List paramList, k paramk) {
-    this.a = paramk;
+    this.ExceptionInVPackage = paramk;
     this.b = paramList;
   }
   
   public void run() {
     try {
-      this.d.a(this.a);
-      this.b.remove(this.a);
-    } catch (a a) {
-      bV.d("Failed to load Tune View File:\n" + ((this.a.a() != null) ? this.a.a().getAbsolutePath() : "null") + "\nError:\n" + a.getMessage(), this.d.getParent());
-      Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      this.d.ExceptionInVPackage(this.ExceptionInVPackage);
+      this.b.remove(this.ExceptionInVPackage);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d("Failed to load Tune View File:\n" + ((this.ExceptionInVPackage.ExceptionInVPackage() != null) ? this.ExceptionInVPackage.ExceptionInVPackage().getAbsolutePath() : "null") + "\nError:\n" + ExceptionInVPackage.getMessage(), this.d.getParent());
+      Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
   }
 }

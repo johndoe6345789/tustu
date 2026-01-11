@@ -1,15 +1,15 @@
 package com.efiAnalytics.ui;
 
-import c.e;
+import c.CInterfaceEcho;
 
 public interface VisibilityController {
   void setVisible(boolean paramBoolean);
   
-  e e();
+  CInterfaceEcho CInterfaceEcho();
   
-  e i();
+  CInterfaceEcho i();
   
-  void a(e parame);
+  void a(CInterfaceEcho parame);
   
   void setEnabled(boolean paramBoolean);
 }

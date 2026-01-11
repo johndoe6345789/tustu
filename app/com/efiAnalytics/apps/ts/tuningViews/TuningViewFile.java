@@ -12,9 +12,9 @@ import com.efiAnalytics.tuningwidgets.panels.W;
 import com.efiAnalytics.ui.bV;
 import java.io.File;
 import java.util.ArrayList;
-import r.j;
-import s.g;
-import v.g;
+import r.ThreadedFile;
+import s.SComponentGolf;
+import v.SComponentGolf;
 
 public class TuningViewFile {
   public static String a = "TuneView_";
@@ -44,17 +44,17 @@ public class TuningViewFile {
   public String toString() {
     String str = (this.c != null) ? this.c.b() : z.d(this.b);
     if (this.d != null && !this.d.isEmpty())
-      return str + " (" + g.b(this.d) + ")"; 
-    boolean bool = this.b.getAbsolutePath().startsWith(j.l().getAbsolutePath());
-    return bool ? (str + " (" + g.b("Default") + ")") : (str + " (" + g.b("User Tune View") + ")");
+      return str + " (" + SComponentGolf.b(this.d) + ")"; 
+    boolean bool = this.b.getAbsolutePath().startsWith(ThreadedFile.l().getAbsolutePath());
+    return bool ? (str + " (" + SComponentGolf.b("Default") + ")") : (str + " (" + SComponentGolf.b("User Tune View") + ")");
   }
   
   public F d() {
     if (this.c == null && this.b != null && this.b.exists()) {
       aa aa = new aa();
       aa.a();
-      g g = new g();
-      this.c = g.a(this.b);
+      SComponentGolf SComponentGolf = new SComponentGolf();
+      this.c = SComponentGolf.a(this.b);
       D.d("Time to read " + this.b.getName() + ": " + aa.d() + "ms.");
       if (!a(this.c))
         this.c = null; 

@@ -1,9 +1,9 @@
 package W;
 
-import V.a;
+import V.ExceptionInVPackage;
 
-public class RecoverableException extends a {
-  private boolean a = true;
+public class RecoverableException extends ExceptionInVPackage {
+  private boolean ExceptionInVPackage = true;
   
   public m(String paramString) {
     super(paramString);
@@ -11,11 +11,11 @@ public class RecoverableException extends a {
   
   public m(String paramString, boolean paramBoolean) {
     super(paramString);
-    this.a = paramBoolean;
+    this.ExceptionInVPackage = paramBoolean;
   }
   
-  public boolean a() {
-    return this.a;
+  public boolean ExceptionInVPackage() {
+    return this.ExceptionInVPackage;
   }
 }
 

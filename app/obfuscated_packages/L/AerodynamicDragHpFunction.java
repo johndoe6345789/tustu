@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 
@@ -20,12 +20,12 @@ public class AerodynamicDragHpFunction extends ac {
     this.d = paramab4;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     double d = this.a.b(paramS) * Math.pow(this.b.b(paramS), 3.0D) * this.c.b(paramS) * this.d.b(paramS) / 2.0D;
     return d / 745.7D;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

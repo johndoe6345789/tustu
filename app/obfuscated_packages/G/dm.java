@@ -1,6 +1,6 @@
 package G;
 
-import V.g;
+import V.ExceptionPrintstacktrace;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -43,7 +43,7 @@ public class dm implements Serializable {
   
   ArrayList f = new ArrayList();
   
-  ArrayList g = new ArrayList();
+  ArrayList ExceptionPrintstacktrace = new ArrayList();
   
   ArrayList h = new ArrayList();
   
@@ -88,11 +88,11 @@ public class dm implements Serializable {
     this.o = paramString;
   }
   
-  public String g() {
+  public String ExceptionPrintstacktrace() {
     return this.p;
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     this.p = paramString;
   }
   
@@ -131,12 +131,12 @@ public class dm implements Serializable {
   }
   
   public void k(String paramString) {
-    if (!this.g.contains(paramString))
-      this.g.add(paramString); 
+    if (!this.ExceptionPrintstacktrace.contains(paramString))
+      this.ExceptionPrintstacktrace.add(paramString); 
   }
   
   public Iterator l() {
-    return this.g.iterator();
+    return this.ExceptionPrintstacktrace.iterator();
   }
   
   public void l(String paramString) {
@@ -168,7 +168,7 @@ public class dm implements Serializable {
     if (paramString.equals("disableMaxPercentLimit")) {
       this.b.add(paramString);
     } else {
-      throw new g("Unknown Option: " + paramString);
+      throw new ExceptionPrintstacktrace("Unknown Option: " + paramString);
     } 
   }
   
@@ -177,7 +177,7 @@ public class dm implements Serializable {
   }
   
   public String p() {
-    return (this.r != null) ? this.r : g();
+    return (this.r != null) ? this.r : ExceptionPrintstacktrace();
   }
   
   public void p(String paramString) {

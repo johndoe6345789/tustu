@@ -1,14 +1,14 @@
 package aP;
 
-import aE.a;
+import aE.PropertiesExtension;
 import com.efiAnalytics.ui.eA;
 
 class dP implements eA {
   dP(dB paramdB) {}
   
-  public boolean a() {
-    a a = a.A();
-    return (a != null) ? a.r() : false;
+  public boolean PropertiesExtension() {
+    PropertiesExtension PropertiesExtension = PropertiesExtension.A();
+    return (PropertiesExtension != null) ? PropertiesExtension.r() : false;
   }
 }
 

@@ -1,6 +1,6 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import V.a;
+import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,9 +10,9 @@ class AddSelectedFieldsActionListener implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {
-      this.a.d();
-    } catch (a a) {
-      bV.d(a.getLocalizedMessage(), this.a.h);
+      this.ExceptionInVPackage.d();
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      bV.d(ExceptionInVPackage.getLocalizedMessage(), this.ExceptionInVPackage.h);
     } 
   }
 }

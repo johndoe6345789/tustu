@@ -1,11 +1,11 @@
 package ao;
 
-import at.c;
+import at.IOJMenu;
 import bH.J;
 import bH.t;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
-import h.b;
+import h.ClassTypeInHPackage;
 import java.awt.BorderLayout;
 import java.awt.Dialog;
 import java.awt.FlowLayout;
@@ -24,9 +24,9 @@ import javax.swing.JTextField;
 public class ha extends JPanel {
   JComboBox a = new JComboBox();
   
-  JTextField b = new JTextField();
+  JTextField ClassTypeInHPackage = new JTextField();
   
-  JRadioButton c;
+  JRadioButton IOJMenu;
   
   JRadioButton d;
   
@@ -44,22 +44,22 @@ public class ha extends JPanel {
     add("North", new JLabel("Import Settings Profile"));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
-    String str = c.a().d();
+    String str = IOJMenu.a().d();
     ButtonGroup buttonGroup = new ButtonGroup();
-    this.c = new JRadioButton("Import into current Setting Profile: " + str, true);
-    jPanel1.add(this.c);
-    buttonGroup.add(this.c);
+    this.IOJMenu = new JRadioButton("Import into current Setting Profile: " + str, true);
+    jPanel1.add(this.IOJMenu);
+    buttonGroup.add(this.IOJMenu);
     this.d = new JRadioButton("New Profile: ");
     buttonGroup.add(this.d);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add("West", this.d);
-    jPanel2.add("Center", this.b);
+    jPanel2.add("Center", this.ClassTypeInHPackage);
     jPanel1.add(jPanel2);
-    this.b.setEnabled(false);
+    this.ClassTypeInHPackage.setEnabled(false);
     this.d.addActionListener(new hb(this));
     add("Center", jPanel1);
-    this.d.setEnabled(b.a().a("fa-9fdspoijoijnfdz09jfdsa098j"));
+    this.d.setEnabled(ClassTypeInHPackage.a().a("fa-9fdspoijoijnfdz09jfdsa098j"));
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout(1));
     this.f = new JButton("Cancel");
@@ -78,11 +78,11 @@ public class ha extends JPanel {
   }
   
   public void a(String paramString) {
-    this.b.setText(paramString);
+    this.ClassTypeInHPackage.setText(paramString);
   }
   
   public String a() {
-    return this.b.getText();
+    return this.ClassTypeInHPackage.getText();
   }
   
   private void d() {
@@ -91,20 +91,20 @@ public class ha extends JPanel {
   }
   
   private void e() {
-    if (this.c.isSelected() || t.a(this.b.getText())) {
+    if (this.IOJMenu.isSelected() || t.a(this.ClassTypeInHPackage.getText())) {
       this.g.dispose();
-    } else if (this.b.getText().isEmpty()) {
-      bV.d("You must enter a name for the Setting Profile.", bq.a().b());
+    } else if (this.ClassTypeInHPackage.getText().isEmpty()) {
+      bV.d("You must enter a name for the Setting Profile.", bq.a().ClassTypeInHPackage());
     } else {
-      bV.d("Invalid Profile Name: '" + this.b.getText() + "'. Please remove any special characters.", bq.a().b());
+      bV.d("Invalid Profile Name: '" + this.ClassTypeInHPackage.getText() + "'. Please remove any special characters.", bq.a().ClassTypeInHPackage());
     } 
   }
   
-  public boolean b() {
+  public boolean ClassTypeInHPackage() {
     return this.d.isSelected();
   }
   
-  public boolean c() {
+  public boolean IOJMenu() {
     return this.h;
   }
   

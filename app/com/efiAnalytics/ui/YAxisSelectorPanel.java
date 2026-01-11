@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import bz.a;
+import bz.ManagerRemovelayoutcomponent;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.LayoutManager;
@@ -9,32 +9,32 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 public class YAxisSelectorPanel extends JPanel {
-  a a = new a(0, 5, eJ.a(6), eJ.a(6));
+  ManagerRemovelayoutcomponent ManagerRemovelayoutcomponent = new ManagerRemovelayoutcomponent(0, 5, eJ.ManagerRemovelayoutcomponent(6), eJ.ManagerRemovelayoutcomponent(6));
   
   int b = 160;
   
   int c = -1;
   
   public fl() {
-    setLayout((LayoutManager)this.a);
-    this.a.a(false);
+    setLayout((LayoutManager)this.ManagerRemovelayoutcomponent);
+    this.ManagerRemovelayoutcomponent.ManagerRemovelayoutcomponent(false);
     String str = "Y Axis Selectors";
-    if (bV.a() != null)
-      str = bV.a().a(str); 
+    if (bV.ManagerRemovelayoutcomponent() != null)
+      str = bV.ManagerRemovelayoutcomponent().ManagerRemovelayoutcomponent(str); 
     setBorder(BorderFactory.createTitledBorder(str));
   }
   
   public void setSize(int paramInt1, int paramInt2) {
-    a(paramInt1);
+    ManagerRemovelayoutcomponent(paramInt1);
     super.setSize(paramInt1, paramInt2);
   }
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
-    a(paramInt3);
+    ManagerRemovelayoutcomponent(paramInt3);
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
   }
   
-  private int a() {
+  private int ManagerRemovelayoutcomponent() {
     int i = 30;
     Component[] arrayOfComponent = getComponents();
     for (byte b = 0; b < arrayOfComponent.length; b++) {
@@ -45,18 +45,18 @@ public class YAxisSelectorPanel extends JPanel {
           i = j; 
       } 
     } 
-    i += (i > eJ.a(120)) ? 0 : eJ.a(20);
+    i += (i > eJ.ManagerRemovelayoutcomponent(120)) ? 0 : eJ.ManagerRemovelayoutcomponent(20);
     return i;
   }
   
-  public void a(int paramInt) {
+  public void ManagerRemovelayoutcomponent(int paramInt) {
     if (getComponentCount() > 0) {
       byte b = 2;
-      int i = paramInt / a();
+      int i = paramInt / ManagerRemovelayoutcomponent();
       if (i < b)
         i = b; 
-      this.a.b(i);
-      this.a.a(0);
+      this.ManagerRemovelayoutcomponent.b(i);
+      this.ManagerRemovelayoutcomponent.ManagerRemovelayoutcomponent(0);
       if (i != this.c && getParent() != null) {
         fm fm = new fm(this);
         SwingUtilities.invokeLater(fm);

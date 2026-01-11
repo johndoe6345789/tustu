@@ -1,6 +1,6 @@
 package L;
 
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ab;
 import ax.ac;
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class LastValueFunction extends ac {
     this.b = paramab2;
   }
   
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     int i = c(paramS);
     if (i > this.f)
       this.f = i + 1; 
@@ -38,11 +38,11 @@ public class LastValueFunction extends ac {
     return (this.d.size() > i) ? ((Double)this.d.get(i)).doubleValue() : Double.NaN;
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   
-  private int c(S paramS) {
+  private int c(CloneableImplInAxPackage paramS) {
     if (this.c > Integer.MIN_VALUE)
       return this.c; 
     if (this.b != null) {

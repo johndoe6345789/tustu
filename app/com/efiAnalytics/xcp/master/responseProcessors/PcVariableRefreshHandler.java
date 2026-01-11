@@ -5,30 +5,30 @@ import G.R;
 import G.T;
 import G.m;
 import bH.c;
-import bN.k;
-import bN.t;
-import bS.h;
+import bN.BnInterfaceKilo;
+import bN.BnInterfaceTango;
+import bS.ExceptionInBsPackage;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PcVariableRefreshHandler {
-  h a = null;
+  ExceptionInBsPackage a = null;
   
   final List b = new ArrayList();
   
   boolean c = true;
   
-  public void a(F paramF, k paramk, t paramt) {
+  public void a(F paramF, BnInterfaceKilo paramk, BnInterfaceTango paramt) {
     R r = T.a().c(paramF.u());
     if (r == null)
-      throw new h("Invalid EcuConfiguration: " + paramF.u()); 
+      throw new ExceptionInBsPackage("Invalid EcuConfiguration: " + paramF.u()); 
     if (paramt.a() != 252)
-      throw new h("Invalid Service Request Packet: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid Service Request Packet: " + paramt.toString()); 
     byte[] arrayOfByte = paramt.c();
     if (c.a(arrayOfByte[0]) != 227)
-      throw new h("Invalid packet for Refresh PC Var: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("Invalid packet for Refresh PC Var: " + paramt.toString()); 
     if (arrayOfByte.length < 2)
-      throw new h("COMMAND Required: " + paramt.toString()); 
+      throw new ExceptionInBsPackage("COMMAND Required: " + paramt.toString()); 
     int i = c.a(arrayOfByte[1]);
     if (i == bU.g.b) {
       a(r);
@@ -36,10 +36,10 @@ public class PcVariableRefreshHandler {
       byte[] arrayOfByte1 = new byte[arrayOfByte.length - 2];
       String str = new String(arrayOfByte1);
       if (str.trim().isEmpty())
-        throw new h("PcVariableName Required when not read all: " + paramt.toString()); 
+        throw new ExceptionInBsPackage("PcVariableName Required when not read all: " + paramt.toString()); 
       a(r, str);
     } else {
-      throw new h("Invalid COMMAND: " + paramt.toString());
+      throw new ExceptionInBsPackage("Invalid COMMAND: " + paramt.toString());
     } 
   }
   
@@ -68,9 +68,9 @@ public class PcVariableRefreshHandler {
     a().a(i);
   }
   
-  private h a() {
+  private ExceptionInBsPackage a() {
     if (this.a == null) {
-      this.a = new h(this);
+      this.a = new ExceptionInBsPackage(this);
       this.a.start();
     } 
     return this.a;

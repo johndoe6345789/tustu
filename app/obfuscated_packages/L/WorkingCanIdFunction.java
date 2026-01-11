@@ -1,16 +1,16 @@
 package L;
 
 import G.T;
-import ax.S;
+import ax.CloneableImplInAxPackage;
 import ax.ac;
 
 public class WorkingCanIdFunction extends ac {
-  public double a(S paramS) {
+  public double a(CloneableImplInAxPackage paramS) {
     T t = T.a();
     return (t.c() == null) ? -1.0D : t.c().O().P();
   }
   
-  public double b(S paramS) {
+  public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
   

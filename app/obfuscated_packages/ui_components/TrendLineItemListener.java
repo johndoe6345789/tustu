@@ -1,6 +1,6 @@
 package ao;
 
-import bE.m;
+import bE.JComponentExtension;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,7 +10,7 @@ class fS implements ItemListener {
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState())
-      this.a.d(m.a); 
+      this.a.d(JComponentExtension.a); 
   }
 }
 

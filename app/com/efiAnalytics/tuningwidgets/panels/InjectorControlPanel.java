@@ -1,6 +1,6 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import C.a;
+import C.ExceptionInVPackage;
 import G.R;
 import G.aM;
 import G.aN;
@@ -8,9 +8,9 @@ import G.aR;
 import G.bA;
 import G.bq;
 import G.bv;
-import V.a;
-import V.g;
-import V.j;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.X;
 import bt.A;
@@ -32,10 +32,10 @@ import java.awt.Window;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class InjectorControlPanel extends d implements aN, aO, bc {
-  y a;
+  y ExceptionInVPackage;
   
   R b = null;
   
@@ -47,119 +47,119 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   
   aV f = null;
   
-  private boolean g = true;
+  private boolean ExceptionPrintstacktrace = true;
   
   public aF(R paramR) {
     this.b = paramR;
-    this.c = g();
-    this.d = j();
-    this.g = paramR.O().an();
+    this.c = ExceptionPrintstacktrace();
+    this.d = ExceptionExtensionGetmessage();
+    this.ExceptionPrintstacktrace = paramR.O().an();
     setLayout(new BorderLayout());
     add("North", this.d);
     add("East", (Component)this.c);
-    aR aR = aR.a();
+    aR aR = aR.ExceptionInVPackage();
     try {
-      aR.a(paramR.c(), "reqFuel", this);
-      aR.a(paramR.c(), "alternate", this);
-      aR.a(paramR.c(), "nCylinders", this);
-      aR.a(paramR.c(), "nInjectors", this);
-      aR.a(paramR.c(), "divider", this);
-    } catch (a a) {
-      D.a("Unable to register all parameters.", (Exception)a, this);
+      aR.ExceptionInVPackage(paramR.c(), "reqFuel", this);
+      aR.ExceptionInVPackage(paramR.c(), "alternate", this);
+      aR.ExceptionInVPackage(paramR.c(), "nCylinders", this);
+      aR.ExceptionInVPackage(paramR.c(), "nInjectors", this);
+      aR.ExceptionInVPackage(paramR.c(), "divider", this);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Unable to register all parameters.", (Exception)ExceptionInVPackage, this);
     } 
     n();
     c();
   }
   
-  protected boolean a(String paramString) {
+  protected boolean ExceptionInVPackage(String paramString) {
     aM aM1 = this.b.c("nCylinders");
     aM aM2 = this.b.c("divider");
     aM aM3 = this.b.c("alternate");
     try {
-      int i = (int)aM1.j(this.b.p());
+      int i = (int)aM1.ExceptionExtensionGetmessage(this.b.p());
       double d1 = Double.parseDouble(paramString);
-      double d2 = aM1.j(this.b.p()) / d1;
-      int j = (int)d2;
-      double d3 = (aM3.j(this.b.p()) > 0.0D) ? 2.0D : 1.0D;
-      if (this.g) {
+      double d2 = aM1.ExceptionExtensionGetmessage(this.b.p()) / d1;
+      int ExceptionExtensionGetmessage = (int)d2;
+      double d3 = (aM3.ExceptionExtensionGetmessage(this.b.p()) > 0.0D) ? 2.0D : 1.0D;
+      if (this.ExceptionPrintstacktrace) {
         if (i % d1 != 0.0D || (d3 == 2.0D && d1 % 2.0D != 0.0D)) {
           if (d3 == 2.0D && (i % d1 != 0.0D || d1 % 2.0D != 0.0D)) {
-            bV.d("Can not alternate " + i + " cyl with " + (int)d1 + " squirts.\nEither set to Simultaneous or adjust squirts so that:\ncyl / squirts produces a whole number with no remainder,\nsquirts is an even number and evenly divisible into the number of cylinders.\n", (Component)this);
+            bV.d("Can not alternate " + i + " cyl with " + (int)d1 + " squirts.\nEither set to Simultaneous or adjust squirts so that:\ncyl / squirts produces ExceptionInVPackage whole number with no remainder,\nsquirts is an even number and evenly divisible into the number of cylinders.\n", (Component)this);
           } else {
-            bV.d(i + " cyl is not valid with " + (int)d1 + " squirts.\nAdjust squirts so that:\ncyl / squirts produces a whole number\n", (Component)this);
+            bV.d(i + " cyl is not valid with " + (int)d1 + " squirts.\nAdjust squirts so that:\ncyl / squirts produces ExceptionInVPackage whole number\n", (Component)this);
           } 
           return false;
         } 
-        if (Math.abs(d2 - j) > 0.001D) {
-          bV.d(paramString + " Injections Per Cycle not valid for " + i + " cylinders.\n(Number of Cylinders) / (Injections Per Cycle) must produce a whole number.\nPlease correct.\n", (Component)this);
+        if (Math.abs(d2 - ExceptionExtensionGetmessage) > 0.001D) {
+          bV.d(paramString + " Injections Per Cycle not valid for " + i + " cylinders.\n(Number of Cylinders) / (Injections Per Cycle) must produce ExceptionInVPackage whole number.\nPlease correct.\n", (Component)this);
           return false;
         } 
       } 
-      aM2.a(this.b.p(), j);
+      aM2.ExceptionInVPackage(this.b.p(), ExceptionExtensionGetmessage);
       return true;
-    } catch (g g) {
-      D.a("Unable to retrive values for nCylinders or divider", (Exception)g, this);
-    } catch (j j) {
-      D.a("Can not set value", (Exception)j, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      D.ExceptionInVPackage("Can not set value", (Exception)ExceptionExtensionGetmessage, this);
     } 
     return false;
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     E e = new E(this.b);
     aG aG = new aG(this);
     Window window = bV.b((Component)this);
     an an = new an(window, this.b, (et)e, aG);
-    bV.a(window, an);
+    bV.ExceptionInVPackage(window, an);
     an.setVisible(true);
   }
   
   protected void b(String paramString) {
     String str = this.e.getText();
     this.e.setText(paramString);
-    this.f.j();
+    this.f.ExceptionExtensionGetmessage();
     b();
   }
   
-  private bh g() {
+  private bh ExceptionPrintstacktrace() {
     bv bv = new bv();
-    a a = a.a();
+    ExceptionInVPackage ExceptionInVPackage = ExceptionInVPackage.ExceptionInVPackage();
     bv.v("injControl");
-    a(bv, c("Control Algorithm"), "algorithm");
-    a(bv, c("Injector Staging"), "alternate");
-    a(bv, c("Engine Stroke"), "twoStroke");
-    a(bv, c("Number of Cylinders"), "nCylinders");
-    a(bv, c("Injector Port Type"), "injType");
-    a(bv, c("Number of Injectors"), "nInjectors");
-    a(bv, c("Engine Type"), "engineType");
+    ExceptionInVPackage(bv, c("Control Algorithm"), "algorithm");
+    ExceptionInVPackage(bv, c("Injector Staging"), "alternate");
+    ExceptionInVPackage(bv, c("Engine Stroke"), "twoStroke");
+    ExceptionInVPackage(bv, c("Number of Cylinders"), "nCylinders");
+    ExceptionInVPackage(bv, c("Injector Port Type"), "injType");
+    ExceptionInVPackage(bv, c("Number of Injectors"), "nInjectors");
+    ExceptionInVPackage(bv, c("Engine Type"), "engineType");
     bh bh1 = new bh(this.b, bv);
     JPanel jPanel = h();
     jPanel.add("Center", (Component)new bb(c("Squirts Per Engine Cycle")));
-    this.a = new y();
-    this.a.addItem("1");
-    this.a.addItem("2");
-    this.a.addItem("3");
-    this.a.addItem("4");
-    this.a.addItem("5");
-    this.a.addItem("6");
-    this.a.addItem("7");
-    this.a.addItem("8");
-    this.a.a(new aH(this));
-    jPanel.add("East", (Component)this.a);
+    this.ExceptionInVPackage = new y();
+    this.ExceptionInVPackage.addItem("1");
+    this.ExceptionInVPackage.addItem("2");
+    this.ExceptionInVPackage.addItem("3");
+    this.ExceptionInVPackage.addItem("4");
+    this.ExceptionInVPackage.addItem("5");
+    this.ExceptionInVPackage.addItem("6");
+    this.ExceptionInVPackage.addItem("7");
+    this.ExceptionInVPackage.addItem("8");
+    this.ExceptionInVPackage.ExceptionInVPackage(new aH(this));
+    jPanel.add("East", (Component)this.ExceptionInVPackage);
     bh1.add(jPanel, 1);
     return bh1;
   }
   
-  private bq a(bv parambv, String paramString1, String paramString2) {
+  private bq ExceptionInVPackage(bv parambv, String paramString1, String paramString2) {
     bq bq = new bq();
     bq.e(paramString1);
     bq.b(paramString2);
-    parambv.a((bA)bq);
+    parambv.ExceptionInVPackage((bA)bq);
     return bq;
   }
   
   private String c(String paramString) {
-    return g.b(this.b.u(paramString));
+    return ExceptionPrintstacktrace.b(this.b.u(paramString));
   }
   
   private JPanel h() {
@@ -168,7 +168,7 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     return aK;
   }
   
-  private JPanel j() {
+  private JPanel ExceptionExtensionGetmessage() {
     JPanel jPanel1 = new JPanel();
     jPanel1.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), c("Calculate Required Fuel")));
     jPanel1.setLayout(new BorderLayout());
@@ -182,16 +182,16 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(0, 1, 3, 3));
     this.e = new A("");
-    this.e.a(new aJ(this));
+    this.e.ExceptionInVPackage(new aJ(this));
     bq bq = new bq();
     bq.e("");
     bq.b("reqFuel");
     this.f = new aV(this.b, bq);
     this.f.c(false);
     try {
-      aR.a().a(this.b.c(), "reqFuel", (aN)this.f);
-    } catch (a a) {
-      D.a("Error subscribing to reqFuel", (Exception)a, this);
+      aR.ExceptionInVPackage().ExceptionInVPackage(this.b.c(), "reqFuel", (aN)this.f);
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+      D.ExceptionInVPackage("Error subscribing to reqFuel", (Exception)ExceptionInVPackage, this);
     } 
     jPanel3.add((Component)this.e);
     jPanel3.add((Component)this.f);
@@ -213,33 +213,33 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
       if (str.equals(""))
         str = "0.0"; 
       double d1 = Double.parseDouble(str);
-      double d2 = aM4.j(this.b.p()) + 1.0D;
-      double d3 = aM2.j(this.b.p());
-      double d4 = aM1.j(this.b.p());
+      double d2 = aM4.ExceptionExtensionGetmessage(this.b.p()) + 1.0D;
+      double d3 = aM2.ExceptionExtensionGetmessage(this.b.p());
+      double d4 = aM1.ExceptionExtensionGetmessage(this.b.p());
       double d5 = d1 * d2 * d3 / d4;
-      aM3.a(this.b.p(), d5);
-    } catch (g g) {
-      g.printStackTrace();
-    } catch (j j) {
-      bV.d("ReqFuel " + j.getMessage(), (Component)this);
+      aM3.ExceptionInVPackage(this.b.p(), d5);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      ExceptionPrintstacktrace.printStackTrace();
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
+      bV.d("ReqFuel " + ExceptionExtensionGetmessage.getMessage(), (Component)this);
       try {
-        if (j.a() == 2) {
-          aM3.a(this.b.h(), aM3.r());
-        } else if (j.a() == 1) {
-          aM3.a(this.b.h(), aM3.s());
+        if (ExceptionExtensionGetmessage.ExceptionInVPackage() == 2) {
+          aM3.ExceptionInVPackage(this.b.h(), aM3.r());
+        } else if (ExceptionExtensionGetmessage.ExceptionInVPackage() == 1) {
+          aM3.ExceptionInVPackage(this.b.h(), aM3.s());
         } 
-      } catch (g g) {
-        D.a("Error trying to set reqFuel.");
-        g.printStackTrace();
-      } catch (j j1) {
-        D.a("reset reqFuel but it is still out of bounds? This shouldn't happen.");
+      } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+        D.ExceptionInVPackage("Error trying to set reqFuel.");
+        ExceptionPrintstacktrace.printStackTrace();
+      } catch (ExceptionExtensionGetmessage j1) {
+        D.ExceptionInVPackage("reset reqFuel but it is still out of bounds? This shouldn't happen.");
         j1.printStackTrace();
       } 
       this.f.i();
     } 
   }
   
-  public void a(String paramString1, String paramString2) {
+  public void ExceptionInVPackage(String paramString1, String paramString2) {
     if (paramString2.startsWith("reqFuel")) {
       c();
     } else if (paramString2.startsWith("alternate")) {
@@ -256,19 +256,19 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   }
   
   private boolean m() {
-    return a(this.a.a());
+    return ExceptionInVPackage(this.ExceptionInVPackage.ExceptionInVPackage());
   }
   
   private boolean n() {
     aM aM1 = this.b.c("nCylinders");
     aM aM2 = this.b.c("divider");
     try {
-      int i = (int)aM1.j(this.b.p());
-      double d1 = aM1.j(this.b.p()) / aM2.j(this.b.p());
-      int j = (int)d1;
-      this.a.a("" + j);
-    } catch (g g) {
-      D.a("Unable to retrive values for nCylinders or divider", (Exception)g, this);
+      int i = (int)aM1.ExceptionExtensionGetmessage(this.b.p());
+      double d1 = aM1.ExceptionExtensionGetmessage(this.b.p()) / aM2.ExceptionExtensionGetmessage(this.b.p());
+      int ExceptionExtensionGetmessage = (int)d1;
+      this.ExceptionInVPackage.ExceptionInVPackage("" + ExceptionExtensionGetmessage);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
     } 
     return true;
   }
@@ -279,10 +279,10 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     aM aM3 = this.b.c("reqFuel");
     aM aM4 = this.b.c("alternate");
     try {
-      double d1 = aM3.j(this.b.p());
-      double d2 = aM4.j(this.b.p()) + 1.0D;
-      double d3 = aM2.j(this.b.p());
-      double d4 = aM1.j(this.b.p());
+      double d1 = aM3.ExceptionExtensionGetmessage(this.b.p());
+      double d2 = aM4.ExceptionExtensionGetmessage(this.b.p()) + 1.0D;
+      double d3 = aM2.ExceptionExtensionGetmessage(this.b.p());
+      double d4 = aM1.ExceptionExtensionGetmessage(this.b.p());
       double d5 = d1 * d4 / d2 * d3;
       this.e.setText(X.b(d5, 1));
     } catch (Exception exception) {
@@ -293,16 +293,16 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   public void d() {
     try {
       this.b.p().d();
-    } catch (g g) {
-      D.a("Error performing redo:", (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Error performing redo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }
   
   public void e() {
     try {
       this.b.p().c();
-    } catch (g g) {
-      D.a("Error performing undo:", (Exception)g, this);
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Error performing undo:", (Exception)ExceptionPrintstacktrace, this);
     } 
   }
   
@@ -314,13 +314,13 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     f();
     this.f.close();
     this.c.close();
-    aR.a().a(this);
+    aR.ExceptionInVPackage().ExceptionInVPackage(this);
     l();
   }
   
   public void close() {
-    aR aR = aR.a();
-    aR.a(this);
+    aR aR = aR.ExceptionInVPackage();
+    aR.ExceptionInVPackage(this);
   }
 }
 

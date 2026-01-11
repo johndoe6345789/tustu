@@ -16,12 +16,12 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JWindow;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 public class iJ extends JWindow {
-  JLabel a = new JLabel("Starting " + a.b + " " + a.c + " " + a.a);
+  JLabel IOPropertiesUsingFile = new JLabel("Starting " + IOPropertiesUsingFile.b + " " + IOPropertiesUsingFile.c + " " + IOPropertiesUsingFile.IOPropertiesUsingFile);
   
-  String[] b = new String[] { "Get a better tune and Faster with VE Analyze Live!", "Load Crank Trigger logs and page through data", "Advanced 3D table features and customizations", "Support the effort to bring you better tuning tools!", "Full Screen Dashboards", "Get a Wide Selection of Gauge styles and dashboards", "Toggle from 2D to 3D view on any table", "Have multiple Tabbed dashboards open at all times", "Difference Reports - Compare your tune to a saved state or ECU", "Save comments with any setting" };
+  String[] b = new String[] { "Get IOPropertiesUsingFile better tune and Faster with VE Analyze Live!", "Load Crank Trigger logs and page through data", "Advanced 3D table features and customizations", "Support the effort to bring you better tuning tools!", "Full Screen Dashboards", "Get IOPropertiesUsingFile Wide Selection of Gauge styles and dashboards", "Toggle from 2D to 3D view on any table", "Have multiple Tabbed dashboards open at all times", "Difference Reports - Compare your tune to IOPropertiesUsingFile saved state or ECU", "Save comments with any setting" };
   
   public iJ(Frame paramFrame, String paramString, boolean paramBoolean) {
     super(paramFrame);
@@ -30,7 +30,7 @@ public class iJ extends JWindow {
     jPanel.setLayout(new BorderLayout());
     add("Center", jPanel);
     jPanel.setBorder(BorderFactory.createRaisedBevelBorder());
-    this.a.setBorder(BorderFactory.createEtchedBorder());
+    this.IOPropertiesUsingFile.setBorder(BorderFactory.createEtchedBorder());
     if (paramBoolean) {
       JPanel jPanel1 = new JPanel();
       jPanel1.setLayout(new BorderLayout());
@@ -41,7 +41,7 @@ public class iJ extends JWindow {
       jPanel1.add("East", jButton);
       jPanel.add("North", jPanel1);
     } 
-    jPanel.add("South", this.a);
+    jPanel.add("South", this.IOPropertiesUsingFile);
     Image image = Toolkit.getDefaultToolkit().getImage(paramString);
     char c1 = 'ľ';
     char c2 = 'Ę';
@@ -52,10 +52,10 @@ public class iJ extends JWindow {
     } catch (InterruptedException interruptedException) {
       Logger.getLogger(iJ.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
-    if (image.getHeight(null) > eJ.a(c1)) {
-      image = eJ.a(image, this, c1);
-    } else if (image.getHeight(null) < eJ.a(c2)) {
-      image = eJ.a(image, this, c2);
+    if (image.getHeight(null) > eJ.IOPropertiesUsingFile(c1)) {
+      image = eJ.IOPropertiesUsingFile(image, this, c1);
+    } else if (image.getHeight(null) < eJ.IOPropertiesUsingFile(c2)) {
+      image = eJ.IOPropertiesUsingFile(image, this, c2);
     } 
     ImageIcon imageIcon = new ImageIcon(image);
     JLabel jLabel = new JLabel();
@@ -74,13 +74,13 @@ public class iJ extends JWindow {
     return super.imageUpdate(paramImage, paramInt1, paramInt2, paramInt3, paramInt4, paramInt5);
   }
   
-  public void a(String paramString) {
-    this.a.setText(paramString);
-    this.a.repaint();
+  public void IOPropertiesUsingFile(String paramString) {
+    this.IOPropertiesUsingFile.setText(paramString);
+    this.IOPropertiesUsingFile.repaint();
   }
   
-  public String a() {
-    return this.a.getText();
+  public String IOPropertiesUsingFile() {
+    return this.IOPropertiesUsingFile.getText();
   }
 }
 

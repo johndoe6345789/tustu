@@ -1,7 +1,7 @@
 package G;
 
-import V.g;
-import ax.U;
+import V.ExceptionPrintstacktrace;
+import ax.ExceptionInAxPackage;
 import bH.X;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class BitStringValueProvider implements db, Serializable {
   
   private String f = null;
   
-  private String g = null;
+  private String ExceptionPrintstacktrace = null;
   
   StringBuffer e = new StringBuffer();
   
@@ -46,14 +46,14 @@ public class BitStringValueProvider implements db, Serializable {
         if (this.f != null && !this.f.isEmpty())
           this.e.append(this.f); 
         this.e.append(X.i(((String)this.a.y().get(i)).toString()));
-        if (this.g != null && !this.g.isEmpty())
-          this.e.append(this.g); 
+        if (this.ExceptionPrintstacktrace != null && !this.ExceptionPrintstacktrace.isEmpty())
+          this.e.append(this.ExceptionPrintstacktrace); 
         return this.e.toString();
       } 
       return "";
-    } catch (U u) {
+    } catch (ExceptionInAxPackage u) {
       String str = "bit class value provider error! Failed to evaluate:\n" + this.b + "Error: " + u.getMessage();
-      throw new g(str);
+      throw new ExceptionPrintstacktrace(str);
     } 
   }
   
@@ -63,7 +63,7 @@ public class BitStringValueProvider implements db, Serializable {
       return null; 
     try {
       return i.f(this.b, aI);
-    } catch (U u) {
+    } catch (ExceptionInAxPackage u) {
       Logger.getLogger(d.class.getName()).log(Level.SEVERE, (String)null, (Throwable)u);
       return null;
     } 
@@ -74,8 +74,8 @@ public class BitStringValueProvider implements db, Serializable {
     if (this.f != null && !this.f.isEmpty())
       this.e.append(this.f); 
     this.e.append("bitStringValue( " + ((this.a != null) ? this.a.aL() : this.d) + " ,  " + this.b + " )");
-    if (this.g != null && !this.g.isEmpty())
-      this.e.append(this.g); 
+    if (this.ExceptionPrintstacktrace != null && !this.ExceptionPrintstacktrace.isEmpty())
+      this.e.append(this.ExceptionPrintstacktrace); 
     return this.e.toString();
   }
   
@@ -84,7 +84,7 @@ public class BitStringValueProvider implements db, Serializable {
   }
   
   public void b(String paramString) {
-    this.g = paramString;
+    this.ExceptionPrintstacktrace = paramString;
   }
 }
 

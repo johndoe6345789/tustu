@@ -9,10 +9,10 @@ import G.de;
 import G.df;
 import G.dm;
 import G.i;
-import V.a;
-import V.g;
-import aE.a;
-import ax.U;
+import V.ExceptionInVPackage;
+import V.ExceptionPrintstacktrace;
+import aE.ExceptionInVPackage;
+import ax.ExceptionInAxPackage;
 import bH.D;
 import bH.p;
 import bt.bQ;
@@ -34,10 +34,10 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import s.g;
+import s.ExceptionPrintstacktrace;
 
 public class ag extends JPanel {
-  n a = null;
+  n ExceptionInVPackage = null;
   
   c b = null;
   
@@ -49,7 +49,7 @@ public class ag extends JPanel {
   
   df f;
   
-  R g;
+  R ExceptionPrintstacktrace;
   
   String h;
   
@@ -61,18 +61,18 @@ public class ag extends JPanel {
   
   JComboBox l = new JComboBox();
   
-  JCheckBox m = new JCheckBox(g.b("Deactivate"));
+  JCheckBox m = new JCheckBox(ExceptionPrintstacktrace.b("Deactivate"));
   
   public ag(R paramR, de paramde, String paramString, c paramc) {
-    this.g = paramR;
+    this.ExceptionPrintstacktrace = paramR;
     this.e = paramde;
     this.h = paramString;
-    this.f = paramde.a(paramString);
-    this.d = new dQ((Properties)a.A(), "TrimTablePanel_" + paramString);
+    this.f = paramde.ExceptionInVPackage(paramString);
+    this.d = new dQ((Properties)ExceptionInVPackage.A(), "TrimTablePanel_" + paramString);
     this.c = new bh();
     setLayout(new BorderLayout());
     add((Component)this.c, "Center");
-    this.a = r.a().a(paramR, (dm)paramde, paramString, paramc);
+    this.ExceptionInVPackage = r.ExceptionInVPackage().ExceptionInVPackage(paramR, (dm)paramde, paramString, paramc);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(0));
     add(jPanel, "North");
@@ -88,13 +88,13 @@ public class ag extends JPanel {
       this.l.addItem(iterator.next()); 
     if (this.f.f() != null && !this.f.f().trim().isEmpty()) {
       jPanel.add(new JLabel("       "));
-      jPanel.add(new JLabel(g.b("EGO Sensor:")));
+      jPanel.add(new JLabel(ExceptionPrintstacktrace.b("EGO Sensor:")));
       jPanel.add(this.l);
       jPanel.add(new JLabel("       "));
     } else {
-      jPanel.add(new JLabel(g.b("AFR:")));
+      jPanel.add(new JLabel(ExceptionPrintstacktrace.b("AFR:")));
       jPanel.add(this.j);
-      jPanel.add(new JLabel(g.b("EGO Corr:")));
+      jPanel.add(new JLabel(ExceptionPrintstacktrace.b("EGO Corr:")));
       jPanel.add(this.k);
     } 
     jPanel.add(this.m);
@@ -102,7 +102,7 @@ public class ag extends JPanel {
     this.m.setSelected(bool);
     this.m.addActionListener(new ah(this));
     try {
-      String str = this.d.a("egoCorChannel");
+      String str = this.d.ExceptionInVPackage("egoCorChannel");
       if (str != null) {
         this.k.setSelectedItem(str);
       } else {
@@ -113,7 +113,7 @@ public class ag extends JPanel {
       bV.d("Invalid Lambda Sensor Index, setting first", (Component)this.c);
     } 
     try {
-      String str = this.d.a("lambdaChannel");
+      String str = this.d.ExceptionInVPackage("lambdaChannel");
       if (str != null) {
         this.j.setSelectedItem(str);
       } else {
@@ -126,30 +126,30 @@ public class ag extends JPanel {
     this.l.addActionListener(new ai(this));
     this.j.addActionListener(new aj(this));
     this.k.addActionListener(new ak(this));
-    a(this.f);
+    ExceptionInVPackage(this.f);
   }
   
-  private void a(df paramdf) {
-    be be = (be)this.g.e().c(paramdf.b());
+  private void ExceptionInVPackage(df paramdf) {
+    be be = (be)this.ExceptionPrintstacktrace.e().c(paramdf.b());
     be = be.j();
-    be.a(true);
-    this.i.setText(g.b(paramdf.e()));
+    be.ExceptionInVPackage(true);
+    this.i.setText(ExceptionPrintstacktrace.b(paramdf.e()));
     be.h("veAnalyze_");
-    be.u(paramdf.a());
+    be.u(paramdf.ExceptionInVPackage());
     try {
-      s s = bQ.a().a(this.g, be.aL(), be.l(), be.aL());
+      s s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionPrintstacktrace, be.aL(), be.l(), be.aL());
       s.c(1);
-    } catch (g g) {
-      D.a("Unable to get Table Model for " + be.aL() + " with prefix:" + be.l());
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to get Table Model for " + be.aL() + " with prefix:" + be.l());
+      ExceptionPrintstacktrace.printStackTrace();
     } 
-    this.c.a(this.g, (bv)be);
-    this.c.c_(paramdf.a());
+    this.c.ExceptionInVPackage(this.ExceptionPrintstacktrace, (bv)be);
+    this.c.c_(paramdf.ExceptionInVPackage());
     if (paramdf.f() != null && !paramdf.f().trim().isEmpty()) {
       boolean bool;
       try {
-        bool = (int)Math.round(i.a(paramdf.f(), (aI)this.g));
-      } catch (U u) {
+        bool = (int)Math.round(i.ExceptionInVPackage(paramdf.f(), (aI)this.ExceptionPrintstacktrace));
+      } catch (ExceptionInAxPackage u) {
         Logger.getLogger(ag.class.getName()).log(Level.SEVERE, (String)null, (Throwable)u);
         bool = false;
       } 
@@ -168,51 +168,51 @@ public class ag extends JPanel {
     } 
   }
   
-  public void a() {
+  public void ExceptionInVPackage() {
     try {
-      s s = bQ.a().a(this.g, this.h, "veAnalyze_", this.h);
+      s s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionPrintstacktrace, this.h, "veAnalyze_", this.h);
       b[][] arrayOfB = s.D();
-      s = bQ.a().a(this.g, this.h, "", this.h);
+      s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionPrintstacktrace, this.h, "", this.h);
       for (byte b = 0; b < s.getRowCount(); b++) {
         for (byte b1 = 0; b1 < s.getColumnCount(); b1++)
           s.setValueAt(arrayOfB[arrayOfB.length - b - 1][b1].i(), b, b1); 
       } 
-    } catch (g g) {
-      D.a("Unable to get Table Model for " + this.h + " with prefix:" + "veAnalyze_");
-      g.printStackTrace();
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.ExceptionInVPackage("Unable to get Table Model for " + this.h + " with prefix:" + "veAnalyze_");
+      ExceptionPrintstacktrace.printStackTrace();
     } 
   }
   
   public void b() {
     if (this.m.isSelected()) {
-      fp.a((Component)this.c, false);
-      if (this.a.b())
+      fp.ExceptionInVPackage((Component)this.c, false);
+      if (this.ExceptionInVPackage.b())
         try {
-          a(false);
-        } catch (a a) {
-          Logger.getLogger(ag.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+          ExceptionInVPackage(false);
+        } catch (ExceptionInVPackage ExceptionInVPackage) {
+          Logger.getLogger(ag.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
         }  
     } else {
-      this.c.a();
+      this.c.ExceptionInVPackage();
       if (this.c.isEnabled())
-        fp.a((Component)this.c, true); 
+        fp.ExceptionInVPackage((Component)this.c, true); 
     } 
   }
   
   public boolean c() {
     boolean bool = true;
     try {
-      bool = (this.f.a() == null || p.a(this.f.a(), this.g)) ? true : false;
-    } catch (g g) {
-      Logger.getLogger(ag.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      bool = (this.f.ExceptionInVPackage() == null || p.ExceptionInVPackage(this.f.ExceptionInVPackage(), this.ExceptionPrintstacktrace)) ? true : false;
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      Logger.getLogger(ag.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
     return (!this.m.isSelected() && bool);
   }
   
   public boolean d() {
     try {
-      s s1 = bQ.a().b(this.g, this.h, "");
-      s s2 = bQ.a().b(this.g, this.h, "veAnalyze_");
+      s s1 = bQ.ExceptionInVPackage().b(this.ExceptionPrintstacktrace, this.h, "");
+      s s2 = bQ.ExceptionInVPackage().b(this.ExceptionPrintstacktrace, this.h, "veAnalyze_");
       if (s1 != null && s2 != null) {
         b[][] arrayOfB = s2.D();
         if (arrayOfB == null)
@@ -225,34 +225,34 @@ public class ag extends JPanel {
         } 
       } 
     } catch (Exception exception) {
-      D.a("Unable to get Table Model for " + this.h + " with prefix:" + "veAnalyze_");
+      D.ExceptionInVPackage("Unable to get Table Model for " + this.h + " with prefix:" + "veAnalyze_");
       exception.printStackTrace();
     } 
     return false;
   }
   
-  protected void a(boolean paramBoolean) {
+  protected void ExceptionInVPackage(boolean paramBoolean) {
     boolean bool = true;
     try {
-      bool = (i.a(this.f.a(), (aI)this.g) != 0.0D) ? true : false;
-    } catch (U u) {}
+      bool = (i.ExceptionInVPackage(this.f.ExceptionInVPackage(), (aI)this.ExceptionPrintstacktrace) != 0.0D) ? true : false;
+    } catch (ExceptionInAxPackage u) {}
     if (bool && paramBoolean && !this.m.isSelected()) {
-      this.a.c();
+      this.ExceptionInVPackage.c();
     } else {
-      this.a.e();
+      this.ExceptionInVPackage.e();
     } 
   }
   
   public void e() {
-    this.a.close();
+    this.ExceptionInVPackage.close();
   }
   
   public void f() {
-    this.a.a();
+    this.ExceptionInVPackage.ExceptionInVPackage();
   }
   
-  public void a(aH paramaH) {
-    this.a.a(paramaH);
+  public void ExceptionInVPackage(aH paramaH) {
+    this.ExceptionInVPackage.ExceptionInVPackage(paramaH);
   }
 }
 

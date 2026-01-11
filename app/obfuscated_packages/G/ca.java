@@ -1,7 +1,7 @@
 package G;
 
-import V.g;
-import V.j;
+import V.ExceptionPrintstacktrace;
+import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.c;
 import java.util.logging.Level;
@@ -21,7 +21,7 @@ public class ca extends aM implements Cloneable {
       this.b = paramString;
     } else {
       String str = "Invalid Parameter Class for PcVariable " + aL() + " attemped parameterClass: " + paramString + "\nParameter Class must be 1 of: " + "bits" + "," + "scalar" + "," + "array";
-      throw new g(str);
+      throw new ExceptionPrintstacktrace(str);
     } 
   }
   
@@ -47,7 +47,7 @@ public class ca extends aM implements Cloneable {
   public int[][] a(Y paramY) {
     if (a() * m() * e() > k((Y)null).c(0)) {
       String str = "Attempt to retrieve data beyond page size!\n\tCheck offset and size for parameter:" + aL();
-      throw new g(str);
+      throw new ExceptionPrintstacktrace(str);
     } 
     int[][] arrayOfInt = new int[a()][m()];
     int i = 0;
@@ -85,9 +85,9 @@ public class ca extends aM implements Cloneable {
       } else {
         a(k((Y)null), paramDouble);
       } 
-    } catch (g g) {
-      D.a("Unable to set defaultValue for " + aL() + ", " + g.getMessage());
-    } catch (j j) {
+    } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
+      D.a("Unable to set defaultValue for " + aL() + ", " + ExceptionPrintstacktrace.getMessage());
+    } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       D.a("Value Out of Bounds: defaultValue for " + aL());
     } 
     super.d(paramDouble);
@@ -117,7 +117,7 @@ public class ca extends aM implements Cloneable {
     return this.f;
   }
   
-  public void g(String paramString) {
+  public void ExceptionPrintstacktrace(String paramString) {
     this.f = paramString;
   }
 }

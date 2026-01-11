@@ -1,6 +1,6 @@
 package ao;
 
-import h.i;
+import h.IOProperties;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JCheckBoxMenuItem;
@@ -10,7 +10,7 @@ class fc implements ItemListener {
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
-    i.c("veAnalysisDisableOverrunFilter", jCheckBoxMenuItem.getState() + "");
+    IOProperties.c("veAnalysisDisableOverrunFilter", jCheckBoxMenuItem.getState() + "");
   }
 }
 

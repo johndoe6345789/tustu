@@ -5,17 +5,17 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import r.a;
+import r.IOPropertiesUsingFile;
 
 class aA implements ActionListener {
   aA(au paramau) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    File file = new File(this.a.b.getText());
-    String str = bV.a(file.getParent(), (Component)paramActionEvent.getSource());
+    File file = new File(this.IOPropertiesUsingFile.b.getText());
+    String str = bV.IOPropertiesUsingFile(file.getParent(), (Component)paramActionEvent.getSource());
     if (str != null) {
-      this.a.f(str);
-      a.a().b(a.aV, this.a.b());
+      this.IOPropertiesUsingFile.f(str);
+      IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.aV, this.IOPropertiesUsingFile.b());
     } 
   }
 }
