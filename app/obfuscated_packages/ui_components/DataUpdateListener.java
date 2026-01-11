@@ -1,15 +1,26 @@
 package ao;
 
-import java.awt.Color;
+import bx.j;
+import bx.s;
 
-public interface k {
-  void a(Color paramColor);
+class fR implements s {
+  fR(fK paramfK) {}
   
-  void a(Color paramColor, int paramInt);
+  public void a(j paramj) {
+    fK.i(this.a);
+    this.a.i().d();
+    this.a.i().repaint();
+  }
+  
+  public void b(j paramj) {
+    fK.i(this.a);
+    this.a.i().d();
+    this.a.i().repaint();
+  }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/k.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fR.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

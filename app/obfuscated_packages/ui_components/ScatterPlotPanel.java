@@ -1,258 +1,754 @@
 package ao;
 
+import V.a;
+import W.j;
 import W.n;
-import com.efiAnalytics.ui.cK;
-import com.efiAnalytics.ui.cg;
-import com.efiAnalytics.ui.dQ;
+import aw.a;
+import aw.c;
+import bE.k;
+import bE.m;
+import bE.q;
+import bH.D;
+import bH.S;
+import bx.l;
+import com.efiAnalytics.ui.bV;
+import com.efiAnalytics.ui.cO;
+import com.efiAnalytics.ui.dE;
+import com.efiAnalytics.ui.e;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.et;
-import com.efiAnalytics.ui.fc;
-import h.g;
+import com.efiAnalytics.ui.fF;
+import g.g;
+import g.k;
+import h.b;
 import h.i;
-import i.b;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-import javax.swing.JSplitPane;
-import javax.swing.SwingUtilities;
+import javax.swing.JPopupMenu;
+import javax.swing.JToggleButton;
+import javax.swing.JToolBar;
 
-public class er extends JPanel implements b {
-  Map a = new HashMap<>();
+public class fK extends JPanel implements k {
+  private m z = new m();
   
-  JPanel b = new JPanel();
+  JToolBar a = new JToolBar();
   
-  aw c = new aw(hx.a());
+  JToolBar b = new JToolBar();
   
-  cg d = new cg();
+  e c = new e();
   
-  n e = null;
+  e d = new e();
   
-  JSplitPane f = null;
+  e e = new e();
   
-  ArrayList g = new ArrayList();
+  eq f = new eq(this);
   
-  JPanel h = new JPanel();
+  JLabel g = new JLabel(" ", 0);
   
-  JButton i = null;
+  JLabel h = new JLabel(" ", 0);
   
-  public er() {
-    g();
-    int i = i.b("scatterPlotRows", 1);
-    int j = i.b("scatterPlotCols", 2);
-    a(i, j);
+  fF i = new fF();
+  
+  a j = null;
+  
+  JPanel k = null;
+  
+  JToggleButton l = new JToggleButton("Scales");
+  
+  JButton m = new JButton("Saved Views");
+  
+  JButton n = new JButton("Pop");
+  
+  private et A = null;
+  
+  private int B = 0;
+  
+  private int C = 0;
+  
+  private static String D = "xField";
+  
+  private static String E = "yField";
+  
+  private static String F = "zField";
+  
+  private static String G = "Hits";
+  
+  private String H = "Hits";
+  
+  private String I = null;
+  
+  private String J = null;
+  
+  private static String K = "showFilterPanel";
+  
+  private static String L = "showRangeScale";
+  
+  public static String o = "Current View";
+  
+  private static String M = "Save Current View As";
+  
+  private static String N = "Delete View";
+  
+  private static String O = "Minimum Dot Size";
+  
+  private static String P = "Maximum Dot Size";
+  
+  private static String Q = "Number of Y Sections";
+  
+  private static String R = "Number of X Sections";
+  
+  private static String S = "Maximum Number of Z Gradients";
+  
+  private static int T = 30;
+  
+  JPanel p;
+  
+  c q = null;
+  
+  private String U = "zColorKey";
+  
+  ArrayList r = new ArrayList();
+  
+  private dE V = null;
+  
+  private boolean W = false;
+  
+  JButton s = null;
+  
+  JButton t = null;
+  
+  JButton u = null;
+  
+  JToggleButton v = null;
+  
+  ImageIcon w = null;
+  
+  ImageIcon x = null;
+  
+  JButton y = null;
+  
+  public fK() {
     setLayout(new BorderLayout());
-    boolean bool = false;
-    if (bool) {
-      this.f = new JSplitPane();
-      this.f.setOneTouchExpandable(true);
-      this.f.setOrientation(0);
-      add("Center", this.f);
-      this.f.setTopComponent(this.b);
-    } else {
-      add("Center", this.b);
+    this.V = new dE((Component)this.z);
+    this.V.a(250);
+    this.z.a(this);
+    setBorder(BorderFactory.createLineBorder(Color.darkGray));
+    this.p = new JPanel();
+    this.p.setLayout(new BorderLayout());
+    try {
+      Image image1 = cO.a().a(cO.ar, this, 20);
+      this.n.setText("");
+      ImageIcon imageIcon1 = new ImageIcon(image1);
+      this.n.setIcon(imageIcon1);
+    } catch (a a1) {
+      this.n.setText("Popout");
+      Logger.getLogger(fK.class.getName()).log(Level.WARNING, "Failed to load Scatter plot full screen image.", (Throwable)a1);
     } 
-    this.h.setLayout(new BorderLayout());
-    this.h.add("Center", this.c);
+    if (b.a().a("fdsahoirew098rew3284lksafd"))
+      this.a.add(this.n); 
+    this.a.add(this.m);
+    this.a.add(new JLabel(" X Axis:"));
+    this.a.add((Component)this.c);
+    this.a.add(new JLabel(" Y Axis:"));
+    this.a.add((Component)this.d);
+    this.a.add(new JLabel(" Z Axis:"));
+    this.a.add((Component)this.e);
+    this.a.add(this.l);
+    Dimension dimension = eJ.a(140, getFont().getSize() + 4);
+    this.c.setPreferredSize(dimension);
+    this.d.setPreferredSize(dimension);
+    this.e.setPreferredSize(dimension);
+    this.m.addActionListener(new fL(this));
+    this.c.addItemListener(new fW(this));
+    this.d.addItemListener(new gc(this));
+    this.e.addItemListener(new gd(this));
+    this.l.addActionListener(new ge(this));
+    this.n.addActionListener(new gf(this));
+    this.p.add("North", this.a);
+    add("North", this.p);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
-    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/table16.png"));
-    image = eJ.a(image, jPanel);
+    jPanel.add("Center", (Component)this.z);
+    jPanel.add("North", this.g);
+    jPanel.add("West", (Component)this.i);
+    jPanel.add("South", this.h);
+    this.g.setOpaque(true);
+    this.i.setOpaque(true);
+    this.h.setOpaque(true);
+    this.g.setBackground(Color.BLACK);
+    this.i.setBackground(Color.BLACK);
+    this.h.setBackground(Color.BLACK);
+    this.g.setForeground(Color.WHITE);
+    this.i.setForeground(Color.WHITE);
+    this.h.setForeground(Color.WHITE);
+    this.g.setFont(new Font("Times", 1, eJ.a(18)));
+    add("Center", jPanel);
+    this.z.a(this.f, 0);
+    this.z.addMouseListener(new gk(this));
+    this.q = new c(null);
+    this.q.a(new gl(this));
+    this.b.add((Component)this.q);
+    this.p.add("Center", this.b);
+    a(new gm(this));
+    a(true);
+    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/zoomout.gif"));
+    image = eJ.a(image);
     ImageIcon imageIcon = new ImageIcon(image);
-    this.i = new JButton(null, imageIcon);
-    this.i.setFocusable(false);
-    this.i.setToolTipText("Close");
-    this.i.addActionListener(new es(this));
-    this.i.setPreferredSize(new Dimension(eJ.a(24), eJ.a(24)));
-    jPanel.add("East", this.i);
-    jPanel.add("Center", (Component)this.d);
-    this.h.add("South", jPanel);
-    if (bool) {
-      this.f.setBottomComponent(this.h);
+    this.y = new JButton(null, imageIcon);
+    this.z.add(this.y);
+    this.y.setVisible((!this.q.a() || !this.q.d()));
+    this.y.addActionListener(new gg(this));
+    image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/scatter_line.png"));
+    image = eJ.a(image, 20);
+    this.w = new ImageIcon(image);
+    image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/scatter_dots.png"));
+    image = eJ.a(image, 20);
+    this.x = new ImageIcon(image);
+    this.v = new JToggleButton(null, this.x);
+    this.z.add(this.v);
+    this.v.addActionListener(new gh(this));
+  }
+  
+  private void s() {
+    JPopupMenu jPopupMenu = new JPopupMenu();
+    jPopupMenu.add(M).addActionListener(new gi(this));
+    JMenu jMenu = new JMenu("Delete Saved View");
+    fM fM = new fM(this);
+    List list = fI.a();
+    for (String str : list) {
+      if (!str.equals(o))
+        jMenu.add(str).addActionListener(fM); 
+    } 
+    jPopupMenu.add(jMenu);
+    jPopupMenu.addSeparator();
+    fN fN = new fN(this);
+    for (String str : list) {
+      if (!str.equals(o))
+        jPopupMenu.add(str).addActionListener(fN); 
+    } 
+    this.m.add(jPopupMenu);
+    jPopupMenu.show(this.m, 0, this.m.getHeight());
+  }
+  
+  private void d(String paramString) {
+    fI.b(paramString);
+  }
+  
+  private void t() {
+    String str = "Scatter Plot View Name";
+    i.c("userParameter_" + str, this.g.getText());
+    g g = new g(k.a(this), "{" + str + "}", false, "       Save current Histogram View As", true);
+    if (g.a) {
+      String str1 = g.a();
+      fH fH = a();
+      fH.a(str1);
+      fI.a(fH);
+    } 
+  }
+  
+  private void e(String paramString) {
+    fH fH = null;
+    try {
+      fH = fI.a(paramString);
+    } catch (a a1) {
+      Logger.getLogger(fK.class.getName()).log(Level.WARNING, "Scatter Plot View " + paramString + " cannot be loaded.", (Throwable)a1);
+    } 
+    if (fH == null) {
+      bV.d("Scatter Plot View " + paramString + " cannot be loaded.", this);
+      return;
+    } 
+    a(fH);
+  }
+  
+  private void a(fH paramfH) {
+    this.c.b(paramfH.b());
+    this.q.b(paramfH.e(), paramfH.f());
+    this.q.b(paramfH.g());
+    this.d.b(paramfH.c());
+    this.q.a(paramfH.h(), paramfH.i());
+    this.q.a(paramfH.j());
+    this.e.b(paramfH.d());
+    this.q.c(paramfH.k(), paramfH.l());
+    this.q.c(paramfH.m());
+  }
+  
+  private void u() {
+    fF fF1 = bq.a().a(this);
+    fF1.a(this.f);
+    fF1.a(this.z.n(), this.z.o());
+    if (!fF1.isVisible())
+      fF1.setVisible(true); 
+    fF1.b(this.z.getWidth(), this.z.getHeight());
+  }
+  
+  public fH a() {
+    fH fH = new fH(this.g.getText());
+    String str = (this.c.getSelectedItem() == null) ? " " : this.c.getSelectedItem().toString();
+    fH.b(str);
+    fH.a(this.q.b());
+    fH.b(this.q.c());
+    fH.a(this.q.a());
+    str = (this.d.getSelectedItem() == null) ? " " : this.d.getSelectedItem().toString();
+    fH.c(str);
+    fH.c(this.q.e());
+    fH.d(this.q.f());
+    fH.b(this.q.d());
+    str = (this.e.getSelectedItem() == null) ? " " : this.e.getSelectedItem().toString();
+    fH.d(str);
+    fH.e(this.q.h());
+    fH.f(this.q.i());
+    fH.c(this.q.g());
+    return fH;
+  }
+  
+  public void a(boolean paramBoolean) {
+    if (this.j == null) {
+      this.k = new JPanel();
+      this.k.setBackground(Color.BLACK);
+      this.k.setLayout(new BorderLayout());
+      JPanel jPanel1 = new JPanel();
+      jPanel1.setLayout(new BorderLayout());
+      Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/icon_close_11x11.gif"));
+      image = eJ.a(image, jPanel1);
+      ImageIcon imageIcon = new ImageIcon(image);
+      this.s = new JButton(null, imageIcon);
+      this.s.setFocusable(false);
+      this.s.setToolTipText("Close");
+      this.s.addActionListener(new fO(this));
+      this.s.setPreferredSize(new Dimension(eJ.a(14), eJ.a(14)));
+      JPanel jPanel2 = new JPanel();
+      jPanel2.setLayout(new BorderLayout());
+      jPanel2.add("North", this.s);
+      jPanel1.add("East", jPanel2);
+      this.k.add("North", jPanel1);
+      image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/filter-16.png"));
+      image = eJ.a(image, jPanel2);
+      imageIcon = new ImageIcon(image);
+      this.t = new JButton(null, imageIcon);
+      this.t.setFocusable(false);
+      this.t.setToolTipText("Show Filters");
+      this.t.addActionListener(new fP(this));
+      this.t.setPreferredSize(new Dimension(eJ.a(18), eJ.a(18)));
+      this.z.add(this.t);
+      this.z.setLayout(new gj(this));
+      image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/edit-icon.png"));
+      image = eJ.a(image, jPanel2);
+      imageIcon = new ImageIcon(image);
+      this.u = new JButton(null, imageIcon);
+      this.u.setFocusable(false);
+      this.u.setToolTipText("Show Filters");
+      this.u.addActionListener(new fQ(this));
+      this.u.setPreferredSize(new Dimension(eJ.a(18), eJ.a(18)));
+      jPanel1.add("West", this.u);
+      this.j = new a(null);
+      this.j.a(new fR(this));
+      M.a().a((l)this.j);
+      this.k.add("Center", (Component)this.j);
+      add("East", this.k);
+    } 
+    if (paramBoolean);
+    this.k.setVisible(paramBoolean);
+    this.t.setVisible(!paramBoolean);
+    a(K, "" + paramBoolean);
+  }
+  
+  private void v() {
+    if (this.j.a().isEmpty()) {
+      this.t.setBackground(getBackground());
     } else {
-      add("South", this.h);
+      this.t.setBackground(Color.RED);
     } 
-    cK cK = new cK();
-    cK.a(new et(this));
-    this.h.add("North", (Component)cK);
-    Dimension dimension = new Dimension(eJ.a(150), eJ.a(150));
-    this.c.setMinimumSize(dimension);
-    this.c.setPreferredSize(dimension);
-    this.c.setMaximumSize(dimension);
-    this.c.a(Color.BLACK);
-    this.c.b(Color.lightGray);
-    this.c.e(false);
-    hx.a().a(this.c);
-    bZ bZ = new bZ(hx.a());
-    this.c.addMouseListener(bZ);
-    this.c.addMouseMotionListener(bZ);
-    this.c.h(false);
-    this.d.a(new eB(this));
-    hx.a().a(new ez(this));
   }
   
-  private void f() {
-    fc fc = new fc();
-    fc.pack();
-    int i = (this.i.getLocationOnScreen()).x + this.i.getWidth() - fc.getWidth();
-    int j = (this.i.getLocationOnScreen()).y - fc.getHeight();
-    fc.setLocation(i, j);
-    fc.a(new eu(this));
-    fc.setVisible(true);
+  public void b() {
+    boolean bool = this.l.isSelected();
+    b(bool);
   }
   
-  public void a(int paramInt1, int paramInt2) {
-    this.b.removeAll();
-    this.c.p();
-    this.a.clear();
-    this.b.setLayout(new GridLayout(paramInt1, paramInt2));
-    for (byte b1 = 0; b1 < paramInt1; b1++) {
-      for (byte b2 = 0; b2 < paramInt2; b2++) {
-        fK fK = new fK();
-        this.b.add(fK);
-        String str = b(b1, b2);
-        this.a.put(str, fK);
-        fK.a(new eA(this, b2 * (b1 + 1)));
-        dQ dQ = new dQ(i.e, "curve_" + b1 + "_" + b2);
-        fK.a((et)dQ);
-      } 
-    } 
-    if (this.e != null) {
-      a(1.0D);
-      a(this.e);
+  public void b(boolean paramBoolean) {
+    this.l.setSelected(paramBoolean);
+    this.q.setVisible(paramBoolean);
+    a(L, "" + paramBoolean);
+  }
+  
+  public void a(h paramh) {
+    this.r.add(paramh);
+  }
+  
+  private void w() {
+    String str = (this.c.getSelectedItem() == null) ? "" : this.c.getSelectedItem().toString();
+    Iterator<h> iterator = this.r.iterator();
+    while (iterator.hasNext())
+      ((h)iterator.next()).a(str); 
+  }
+  
+  private void x() {
+    String str = (this.d.getSelectedItem() == null) ? "" : this.d.getSelectedItem().toString();
+    Iterator<h> iterator = this.r.iterator();
+    while (iterator.hasNext())
+      ((h)iterator.next()).b(str); 
+  }
+  
+  private void y() {
+    String str = (this.e.getSelectedItem() == null) ? "" : this.e.getSelectedItem().toString();
+    Iterator<h> iterator = this.r.iterator();
+    while (iterator.hasNext())
+      ((h)iterator.next()).c(str); 
+  }
+  
+  public void a(n paramn) {
+    this.f.a(paramn);
+    if (paramn != null && paramn.size() > 0) {
+      b(paramn);
+      this.y.setVisible((!this.q.a() || !this.q.d()));
+      D.c("Dataset size: " + paramn.d());
+      String str = (String)this.c.getSelectedItem();
+      this.f.a(str);
+      str = (String)this.d.getSelectedItem();
+      this.f.b(str);
+      str = (String)this.e.getSelectedItem();
+      this.f.c(str);
     } 
   }
   
   public void c() {
-    g();
-    Iterator<fK> iterator = this.a.values().iterator();
-    for (byte b1 = 0; iterator.hasNext(); b1++) {
-      ey ey = c(b1);
-      fK fK = iterator.next();
-      if (this.e != null)
-        fK.a(this.e); 
-      if (ey != null) {
-        fK.a(ey.a());
-        fK.b(ey.b());
-        if (ey.c() != null)
-          fK.c(ey.c()); 
-      } 
-      fK.e();
+    if (this.q.a()) {
+      double d1 = this.f.a();
+      double d2 = this.f.b();
+      this.q.b(d1, d2);
     } 
-  }
-  
-  private ey c(int paramInt) {
-    return (this.g.size() == 0) ? null : this.g.get(paramInt % this.g.size());
-  }
-  
-  public Component d() {
-    return this.b;
-  }
-  
-  private String b(int paramInt1, int paramInt2) {
-    return "scatterPlot_" + paramInt1 + "_" + paramInt2;
-  }
-  
-  public void a() {}
-  
-  public void a(double paramDouble) {
-    if (paramDouble == 1.0D) {
-      ev ev = new ev(this);
-      SwingUtilities.invokeLater(ev);
-    } else {
-      ew ew = new ew(this, paramDouble);
-      SwingUtilities.invokeLater(ew);
+    if (this.q.d()) {
+      double d1 = this.f.c();
+      double d2 = this.f.d();
+      this.q.a(d1, d2);
     } 
-  }
-  
-  public void a(n paramn) {
-    this.e = paramn;
-    if (paramn != null) {
-      ex ex = new ex(this, paramn);
-      ex.start();
+    if (this.q.g()) {
+      double d1 = this.f.h();
+      double d2 = this.f.i();
+      this.q.c(d1, d2);
     } 
-  }
-  
-  public void b(n paramn) {}
-  
-  public void b() {
-    Iterator iterator = this.a.keySet().iterator();
-    while (iterator.hasNext()) {
-      fK fK = (fK)this.a.get(iterator.next());
-      fK.repaint();
-    } 
-    this.c.b();
   }
   
   public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
+    Dimension dimension;
+    int i = (this.c.getPreferredSize()).width;
+    int j = (paramInt3 - eJ.a(260)) / 3;
+    if (i < j) {
+      dimension = new Dimension(i, 20);
+    } else {
+      dimension = new Dimension(j, 20);
+    } 
+    this.c.setMinimumSize(dimension);
+    this.d.setMinimumSize(dimension);
+    this.e.setMinimumSize(dimension);
     super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
-    e();
   }
   
-  public double e() {
-    double d = 1.0D;
-    if (this.e != null && this.e.d() > 0)
-      d = this.c.getWidth() / this.e.d(); 
-    this.c.b(d);
-    return d;
+  public void repaint() {
+    super.repaint();
+    if (this.z != null)
+      this.z.a(); 
+  }
+  
+  private void b(n paramn) {
+    this.W = true;
+    a(this.c, paramn, " ");
+    a(this.d, paramn, " ");
+    a(this.e, paramn, G);
+    e();
+    this.W = false;
+  }
+  
+  private void a(e parame, n paramn, String paramString) {
+    if (paramn == null)
+      return; 
+    String str = (String)parame.getSelectedItem();
+    boolean bool1 = false;
+    String[] arrayOfString1 = parame.b();
+    String[] arrayOfString2 = new String[paramn.size()];
+    boolean bool2 = (arrayOfString1.length == arrayOfString2.length + 1) ? true : false;
+    byte b;
+    for (b = 0; b < paramn.size(); b++) {
+      j j = (j)paramn.get(b);
+      arrayOfString2[b] = j.a();
+      if (bool2 && !arrayOfString2[b].equals(arrayOfString1[b + 1]))
+        bool2 = false; 
+    } 
+    if (!bool2) {
+      parame.removeAllItems();
+      if (parame.getItemCount() == 0)
+        parame.a(paramString); 
+      if (i.a(i.E, i.F))
+        arrayOfString2 = S.a(arrayOfString2); 
+      b = 1;
+      for (byte b1 = 0; b1 < arrayOfString2.length; b1++) {
+        if (!bool1 && arrayOfString2[b1].equals(str))
+          bool1 = true; 
+        int i = b1 + b;
+        parame.a(arrayOfString2[b1]);
+      } 
+    } 
+    try {
+      if (!bool1)
+        parame.b(str); 
+    } catch (Exception exception) {
+      parame.b(paramString);
+    } 
+  }
+  
+  protected void d() {
+    if (this.c.getSelectedItem() != null && this.d.getSelectedItem() != null && ((String)this.c.getSelectedItem()).length() > 0 && ((String)this.d.getSelectedItem()).length() > 0) {
+      String str;
+      if (this.e.getSelectedItem() != null && !this.e.getSelectedItem().toString().equals(" ")) {
+        str = this.d.getSelectedItem() + " vs " + this.c.getSelectedItem() + " vs " + this.e.getSelectedItem().toString();
+      } else {
+        str = this.d.getSelectedItem() + " vs " + this.c.getSelectedItem();
+      } 
+      this.g.setText(str);
+      this.h.setText(this.c.getSelectedItem().toString());
+      this.i.setText(this.d.getSelectedItem().toString());
+      this.z.a(this.c.getSelectedItem().toString());
+      this.z.b(this.d.getSelectedItem().toString());
+      if (this.e.getSelectedItem() != null) {
+        this.z.c(this.e.getSelectedItem().toString());
+      } else {
+        this.z.c("");
+      } 
+    } 
   }
   
   public void a(int paramInt) {
-    Iterator<fK> iterator = this.a.values().iterator();
-    while (iterator.hasNext())
-      ((fK)iterator.next()).c(paramInt); 
-    this.c.h(paramInt);
-    this.c.repaint();
+    if (paramInt > this.C && this.f.a != null && paramInt < this.B && this.f.b != null && paramInt < this.f.b.i()) {
+      q q = this.f.b(paramInt);
+      this.z.a(q.getX(), q.getY());
+      this.z.repaint();
+    } else {
+      this.z.l();
+    } 
+  }
+  
+  public void a(et paramet) {
+    this.A = paramet;
+  }
+  
+  private boolean a(e parame, String paramString) {
+    for (byte b = 0; b < parame.getItemCount(); b++) {
+      if (parame.a(b).equals(paramString))
+        return true; 
+    } 
+    return false;
+  }
+  
+  public void e() {
+    if (this.A != null) {
+      String str1 = this.A.a(D);
+      String str2 = this.A.a(E);
+      if (str1 != null && a(this.c, str1)) {
+        this.c.b(str1);
+      } else {
+        str1 = null;
+      } 
+      if (str2 != null && a(this.d, str2)) {
+        this.d.b(str2);
+      } else {
+        str2 = null;
+      } 
+      if ((str1 == null || str2 == null) && this.I != null && this.J != null) {
+        this.c.b(this.I);
+        this.d.b(this.J);
+      } 
+      String str3 = this.A.a(F);
+      if (str3 == null && this.H != null)
+        str3 = this.H; 
+      if (str3 != null)
+        this.e.b(str3); 
+      String str4 = this.A.a(this.U);
+      if (str4 != null)
+        try {
+          d(Integer.parseInt(str4));
+        } catch (NumberFormatException numberFormatException) {
+          d(1);
+        }  
+      String str5 = this.A.a(K);
+      boolean bool1 = (str5 != null && Boolean.parseBoolean(str5)) ? true : false;
+      a(bool1);
+      str5 = this.A.a(L);
+      boolean bool2 = (str5 != null && Boolean.parseBoolean(str5)) ? true : false;
+      b(bool2);
+      double d = 0.0D;
+      int i = 0;
+      try {
+        str5 = this.A.a(O);
+        if (str5 != null) {
+          d = Double.parseDouble(str5);
+          i = (int)Math.round(d);
+          this.z.d(i);
+        } 
+      } catch (NumberFormatException numberFormatException) {}
+      try {
+        str5 = this.A.a(P);
+        if (str5 != null) {
+          d = Double.parseDouble(str5);
+          i = (int)Math.round(d);
+          this.z.e(i);
+        } 
+      } catch (NumberFormatException numberFormatException) {}
+      try {
+        str5 = this.A.a(R);
+        if (str5 != null) {
+          i = Integer.parseInt(str5);
+          this.z.f(i);
+        } 
+      } catch (Exception exception) {}
+      try {
+        str5 = this.A.a(Q);
+        if (str5 != null) {
+          i = Integer.parseInt(str5);
+          this.z.g(i);
+        } 
+      } catch (Exception exception) {}
+      try {
+        str5 = this.A.a(S);
+        if (str5 != null) {
+          i = Integer.parseInt(str5);
+          this.z.k(i);
+        } 
+      } catch (Exception exception) {}
+    } 
+  }
+  
+  private void a(String paramString1, String paramString2) {
+    if (this.A != null)
+      this.A.a(paramString1, paramString2); 
+  }
+  
+  public int f() {
+    return this.B;
   }
   
   public void b(int paramInt) {
-    Iterator<fK> iterator = this.a.values().iterator();
-    while (iterator.hasNext())
-      ((fK)iterator.next()).b(paramInt); 
-    this.c.i(paramInt);
-    this.c.repaint();
+    this.B = paramInt;
+    this.z.d();
+    this.V.a();
   }
   
-  public Dimension getMinimumSize() {
-    Dimension dimension = super.getMinimumSize();
-    dimension.width = 300;
-    dimension.height = 200;
-    return dimension;
+  public int g() {
+    return this.C;
   }
   
-  public Dimension getPreferredSize() {
-    Dimension dimension = super.getPreferredSize();
-    dimension.width = 300;
-    return dimension;
+  public void c(int paramInt) {
+    this.C = paramInt;
+    this.z.d();
+    this.V.a();
   }
   
-  private void g() {
-    this.g.clear();
-    ey ey = new ey(this);
-    ey.a(g.a().a(g.d));
-    ey.b(g.a().a(g.j));
-    ey.c(g.a().a(g.h));
-    this.g.add(ey);
-    ey = new ey(this);
-    ey.a(g.a().a(g.g));
-    ey.b(g.a().a(g.j));
-    ey.c(g.a().a(g.h));
-    this.g.add(ey);
+  public void a(String paramString) {
+    this.I = paramString;
+  }
+  
+  public void b(String paramString) {
+    this.J = paramString;
+  }
+  
+  public void c(String paramString) {
+    this.H = paramString;
+  }
+  
+  public void a(Component paramComponent, int paramInt1, int paramInt2) {
+    JPopupMenu jPopupMenu = new JPopupMenu();
+    JMenu jMenu = new JMenu("Z Axis Color Mode");
+    String str = this.A.a(this.U);
+    if (str == null || str.equals(""))
+      str = "" + this.z.k(); 
+    i i = new i();
+    JCheckBoxMenuItem jCheckBoxMenuItem1 = new JCheckBoxMenuItem("Color to Max Value for Point", str.equals("" + m.a));
+    i.a(jCheckBoxMenuItem1);
+    jCheckBoxMenuItem1.addItemListener(new fS(this));
+    jMenu.add(jCheckBoxMenuItem1);
+    JCheckBoxMenuItem jCheckBoxMenuItem2 = new JCheckBoxMenuItem("Color to Average Value for Point", str.equals("" + m.b));
+    i.a(jCheckBoxMenuItem2);
+    jCheckBoxMenuItem2.addItemListener(new fT(this));
+    jMenu.add(jCheckBoxMenuItem2);
+    JCheckBoxMenuItem jCheckBoxMenuItem3 = new JCheckBoxMenuItem("Color to Min Value for Point", str.equals("" + m.c));
+    i.a(jCheckBoxMenuItem3);
+    jCheckBoxMenuItem3.addItemListener(new fU(this));
+    jMenu.add(jCheckBoxMenuItem3);
+    jPopupMenu.add(jMenu);
+    if (!this.q.a() || !this.q.d()) {
+      JMenuItem jMenuItem1 = new JMenuItem("Default X & Y Scale");
+      jMenuItem1.addActionListener(new fV(this));
+      jPopupMenu.add(jMenuItem1);
+    } 
+    JMenuItem jMenuItem = new JMenuItem(O);
+    jMenuItem.addActionListener(new fX(this));
+    jPopupMenu.add(jMenuItem);
+    jMenuItem = new JMenuItem(P);
+    jMenuItem.addActionListener(new fY(this));
+    jPopupMenu.add(jMenuItem);
+    jMenuItem = new JMenuItem(Q);
+    jMenuItem.addActionListener(new fZ(this));
+    jPopupMenu.add(jMenuItem);
+    jMenuItem = new JMenuItem(R);
+    jMenuItem.addActionListener(new ga(this));
+    jPopupMenu.add(jMenuItem);
+    jMenuItem = new JMenuItem(S);
+    jMenuItem.addActionListener(new gb(this));
+    jPopupMenu.add(jMenuItem);
+    jPopupMenu.show(paramComponent, paramInt1, paramInt2);
+  }
+  
+  public void d(int paramInt) {
+    this.z.c(paramInt);
+    this.z.d();
+    this.z.repaint();
+    a(this.U, paramInt + "");
+  }
+  
+  public void h() {
+    this.z.d();
+    this.z.repaint();
+    if (bq.a().j() != null && bq.a().j().d().equals(this)) {
+      bq.a().j().c().d();
+      bq.a().j().c().repaint();
+    } 
+  }
+  
+  public void a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+    this.q.b(paramDouble1, paramDouble2);
+    this.q.a(paramDouble3, paramDouble4);
+    this.q.b(false);
+    this.q.a(false);
+    this.y.setVisible(true);
+    repaint();
+    if (bq.a().j() != null && bq.a().j().d().equals(this))
+      bq.a().j().c().a(); 
+  }
+  
+  public m i() {
+    return this.z;
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/er.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fK.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */
