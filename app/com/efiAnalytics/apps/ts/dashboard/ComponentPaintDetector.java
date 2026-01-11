@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-public interface aR {
+public interface ComponentPaintDetector {
   boolean isComponentPaintedAt(int paramInt1, int paramInt2);
 }
 
