@@ -7,7 +7,7 @@ class PcVariableRefreshRequest {
   
   private String c = null;
   
-  public i(g paramg, R paramR) {
+  public PcVariableRefreshRequest(g paramg, R paramR) {
     this.b = paramR;
   }
   

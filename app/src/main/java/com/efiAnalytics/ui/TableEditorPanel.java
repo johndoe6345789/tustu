@@ -104,7 +104,7 @@ public class TableEditorPanel extends JPanel implements TableModelListener {
   
   private boolean F = false;
   
-  public w(s params) {
+  public TableEditorPanel(s params) {
     this();
     ExceptionInVPackage(params);
   }

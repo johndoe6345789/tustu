@@ -5,7 +5,7 @@ public class SelectedPoint implements ef {
   
   int a;
   
-  public r(int paramInt1, int paramInt2) {
+  public SelectedPoint(int paramInt1, int paramInt2) {
     this.b = paramInt1;
     this.a = paramInt2;
   }

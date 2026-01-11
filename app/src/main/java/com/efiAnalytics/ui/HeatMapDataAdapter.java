@@ -13,7 +13,7 @@ public class HeatMapDataAdapter implements cD, TableModelListener {
   
   ArrayList a = new ArrayList();
   
-  public v(s params) {
+  public HeatMapDataAdapter(s params) {
     this.b = params;
     params.addTableModelListener(this);
   }

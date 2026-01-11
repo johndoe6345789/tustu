@@ -11,7 +11,7 @@ class PageRefreshRequest {
   
   private int e = Integer.MAX_VALUE;
   
-  l(j paramj, R paramR, int paramInt) {
+  PageRefreshRequest(j paramj, R paramR, int paramInt) {
     this.b = paramR;
     this.c = paramInt;
   }
