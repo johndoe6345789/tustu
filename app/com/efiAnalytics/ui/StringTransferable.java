@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 
-class ad implements Transferable {
-  ad(ac paramac, StringBuilder paramStringBuilder) {}
+class StringTransferable implements Transferable {
+  StringTransferable(TableTransferHandler paramac, StringBuilder paramStringBuilder) {}
   
   public DataFlavor[] getTransferDataFlavors() {
     return new DataFlavor[] { DataFlavor.stringFlavor };

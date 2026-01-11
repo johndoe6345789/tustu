@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import s.g;
 
-public class aM extends aL {
+public class ThermistorCalibrationPanel extends AbstractDataPanel {
   bG a = null;
   
   do b = new do();
@@ -58,7 +58,7 @@ public class aM extends aL {
   
   double r;
   
-  public aM(bG parambG) {
+  public ThermistorCalibrationPanel(bG parambG) {
     this.a = parambG;
     setBorder(BorderFactory.createTitledBorder(g.b(parambG.h())));
     setLayout(new BorderLayout(5, 5));
@@ -71,7 +71,7 @@ public class aM extends aL {
       bH bH = iterator.next();
       this.k.addItem(g.b(bH.a()));
     } 
-    this.k.addItemListener(new aN(this));
+    this.k.addItemListener(new SensorComboBoxItemListener(this));
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout(2, 2));
     jPanel2.add("Center", new JLabel(g.b("Common Sensor Values"), 4));
@@ -82,14 +82,14 @@ public class aM extends aL {
     jPanel3.add("Center", new JLabel(g.b("Bias Resistor Value (Ohms)"), 0));
     jPanel3.add("East", (Component)this.b);
     jPanel1.add(jPanel3);
-    aO aO = new aO(this);
+    TemperatureUnitActionListener tempUnitListener = new TemperatureUnitActionListener(this);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new GridLayout(1, 2));
     ButtonGroup buttonGroup = new ButtonGroup();
     buttonGroup.add(this.i);
     jPanel4.add(this.i);
-    this.i.addActionListener(aO);
-    this.j.addActionListener(aO);
+    this.i.addActionListener(tempUnitListener);
+    this.j.addActionListener(tempUnitListener);
     buttonGroup.add(this.j);
     jPanel4.add(this.j);
     this.j.setSelected(true);

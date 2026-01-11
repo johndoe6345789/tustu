@@ -5,8 +5,8 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import javax.swing.JTextField;
 
-class aT extends FocusAdapter {
-  aT(aQ paramaQ) {}
+class WeightFieldFocusAdapter extends FocusAdapter {
+  WeightFieldFocusAdapter(WeightInputPanel paramaQ) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     JTextField jTextField = (JTextField)paramFocusEvent.getSource();

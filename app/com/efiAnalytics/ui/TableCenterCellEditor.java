@@ -4,8 +4,8 @@ import java.awt.Component;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JTable;
 
-class aa extends DefaultCellEditor {
-  aa(S paramS) {
+class TableCenterCellEditor extends DefaultCellEditor {
+  TableCenterCellEditor(S paramS) {
     super(new do());
     do do = (do)getComponent();
     do.setHorizontalAlignment(0);

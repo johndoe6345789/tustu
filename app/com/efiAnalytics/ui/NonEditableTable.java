@@ -5,12 +5,12 @@ import javax.swing.JTable;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
-class ae extends JTable {
+class NonEditableTable extends JTable {
   TableCellRenderer a = null;
   
-  public ae(w paramw, Object[][] paramArrayOfObject, Object[] paramArrayOfObject1) {
+  public NonEditableTable(w paramw, Object[][] paramArrayOfObject, Object[] paramArrayOfObject1) {
     super(paramArrayOfObject, paramArrayOfObject1);
-    setSelectionModel(new af(this, paramw));
+    setSelectionModel(new NoSelectionModel(this, paramw));
   }
   
   public void a(TableCellRenderer paramTableCellRenderer) {

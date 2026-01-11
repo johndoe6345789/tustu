@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aO implements ActionListener {
-  aO(aM paramaM) {}
+class TemperatureUnitActionListener implements ActionListener {
+  TemperatureUnitActionListener(ThermistorCalibrationPanel paramaM) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     aM.a(this.a);

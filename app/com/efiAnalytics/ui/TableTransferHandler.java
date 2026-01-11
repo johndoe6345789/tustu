@@ -6,8 +6,8 @@ import javax.swing.JTable;
 import javax.swing.TransferHandler;
 import javax.swing.plaf.UIResource;
 
-class ac extends TransferHandler implements UIResource {
-  ac(S paramS) {}
+class TableTransferHandler extends TransferHandler implements UIResource {
+  TableTransferHandler(S paramS) {}
   
   protected Transferable createTransferable(JComponent paramJComponent) {
     if (paramJComponent instanceof JTable) {

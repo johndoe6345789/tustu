@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import bH.X;
 import javax.swing.table.DefaultTableCellRenderer;
 
-class ab extends DefaultTableCellRenderer {
-  public ab(S paramS) {
+class FormattedTableCellRenderer extends DefaultTableCellRenderer {
+  public FormattedTableCellRenderer(S paramS) {
     setHorizontalAlignment(0);
   }
   

@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aj implements ActionListener {
-  aj(ae paramae) {}
+class RemoveSelectedFieldsActionListener implements ActionListener {
+  RemoveSelectedFieldsActionListener(ReplayFieldSelectorPanel paramae) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.f();

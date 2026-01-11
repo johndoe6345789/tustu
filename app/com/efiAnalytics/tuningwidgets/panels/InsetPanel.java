@@ -4,7 +4,7 @@ import java.awt.Insets;
 import javax.swing.JPanel;
 
 class InsetPanel extends JPanel {
-  aE(az paramaz) {}
+  InsetPanel(aF paramaF) {}
   
   public Insets getInsets() {
     return new Insets(1, 1, 1, 1);
@@ -12,7 +12,7 @@ class InsetPanel extends JPanel {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aE.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aK.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

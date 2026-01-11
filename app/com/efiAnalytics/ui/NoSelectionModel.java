@@ -2,8 +2,8 @@ package com.efiAnalytics.ui;
 
 import javax.swing.DefaultListSelectionModel;
 
-class af extends DefaultListSelectionModel {
-  af(ae paramae, w paramw) {}
+class NoSelectionModel extends DefaultListSelectionModel {
+  NoSelectionModel(NonEditableTable paramae, w paramw) {}
   
   public int getMinSelectionIndex() {
     return 1100000;

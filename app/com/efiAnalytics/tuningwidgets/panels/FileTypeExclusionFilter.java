@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileFilter;
 import r.a;
 
-class ab implements FileFilter {
-  ab(X paramX) {}
+class FileTypeExclusionFilter implements FileFilter {
+  FileTypeExclusionFilter(X paramX) {}
   
   public boolean accept(File paramFile) {
     return !paramFile.getName().toLowerCase().endsWith(a.t);

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileFilter;
 import r.a;
 
-class aa implements FileFilter {
-  aa(X paramX) {}
+class RestorePointsExclusionFilter implements FileFilter {
+  RestorePointsExclusionFilter(X paramX) {}
   
   public boolean accept(File paramFile) {
     return (!paramFile.getParentFile().getName().equals("restorePoints") && !paramFile.getName().toLowerCase().endsWith(a.t));

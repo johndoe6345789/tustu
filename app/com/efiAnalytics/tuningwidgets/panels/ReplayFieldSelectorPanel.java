@@ -31,7 +31,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.g;
 
-public class ae extends bh implements aN {
+public class ReplayFieldSelectorPanel extends bh implements aN {
   R a = null;
   
   aM b = null;
@@ -116,7 +116,7 @@ public class ae extends bh implements aN {
     try {
       aR.a().a(this.a.c(), this.b.aL(), this);
     } catch (a a) {
-      Logger.getLogger(ae.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
+      Logger.getLogger(ReplayFieldSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a);
     } 
     c();
   }

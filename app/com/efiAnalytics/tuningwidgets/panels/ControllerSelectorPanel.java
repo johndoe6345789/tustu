@@ -26,7 +26,7 @@ import javax.swing.UIManager;
 import r.a;
 import s.g;
 
-public class ac extends ck {
+public class ControllerSelectorPanel extends ck {
   ButtonGroup a = new ButtonGroup();
   
   JTextPane b = new JTextPane();
@@ -118,7 +118,7 @@ public class ac extends ck {
       } 
       return str;
     } catch (Exception exception) {
-      Logger.getLogger(ac.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(ControllerSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, exception);
       return g.b("Unrecognized file type");
     } 
   }

@@ -7,29 +7,29 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class aQ extends JPanel {
+public class WeightInputPanel extends JPanel {
   JTextField a;
   
   JTextField b;
   
-  public aQ(String paramString) {
+  public WeightInputPanel(String paramString) {
     setBorder(BorderFactory.createTitledBorder(paramString));
-    aT aT = new aT(this);
+    WeightFieldFocusAdapter weightFieldFocusAdapter = new WeightFieldFocusAdapter(this);
     setLayout(new GridLayout(1, 2, 14, 14));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add("East", new JLabel("lbs."));
     this.a = new JTextField("", 6);
-    this.a.addKeyListener(new aR(this));
-    this.a.addFocusListener(aT);
+    this.a.addKeyListener(new PoundsKeyAdapter(this));
+    this.a.addFocusListener(weightFieldFocusAdapter);
     jPanel1.add("Center", this.a);
     add(jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add("East", new JLabel("kg."));
     this.b = new JTextField("", 6);
-    this.b.addKeyListener(new aS(this));
-    this.b.addFocusListener(aT);
+    this.b.addKeyListener(new KilogramsKeyAdapter(this));
+    this.b.addFocusListener(weightFieldFocusAdapter);
     jPanel2.add("Center", this.b);
     add(jPanel2);
   }

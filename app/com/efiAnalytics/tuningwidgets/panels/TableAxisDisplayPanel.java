@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
-public class aP extends JPanel implements cq, bc, TableModelListener {
+public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelListener {
   R a = null;
   
   aM b = null;

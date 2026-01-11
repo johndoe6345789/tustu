@@ -4,14 +4,14 @@ import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class al extends Thread {
-  al(ae paramae) {}
+class FieldSelectorUpdateThread extends Thread {
+  FieldSelectorUpdateThread(ReplayFieldSelectorPanel paramae) {}
   
   public void run() {
     try {
       Thread.sleep(500L);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(ae.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+      Logger.getLogger(ReplayFieldSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
     this.a.c();
     this.a.d.validate();

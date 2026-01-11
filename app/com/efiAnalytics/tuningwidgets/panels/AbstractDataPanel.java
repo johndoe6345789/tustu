@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import com.efiAnalytics.ui.et;
 import javax.swing.JPanel;
 
-public abstract class aL extends JPanel {
+public abstract class AbstractDataPanel extends JPanel {
   public abstract double[] a(int paramInt);
   
   public String a() {

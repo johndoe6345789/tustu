@@ -10,7 +10,7 @@ import java.io.File;
 import javax.swing.JPanel;
 import r.a;
 
-public class ad extends JPanel {
+public class HelpBrowserPanel extends JPanel {
   f a = null;
   
   public ad() {

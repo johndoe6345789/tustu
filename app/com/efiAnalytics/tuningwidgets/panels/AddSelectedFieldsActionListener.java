@@ -5,8 +5,8 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class ai implements ActionListener {
-  ai(ae paramae) {}
+class AddSelectedFieldsActionListener implements ActionListener {
+  AddSelectedFieldsActionListener(ReplayFieldSelectorPanel paramae) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {

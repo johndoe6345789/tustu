@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-class aR extends KeyAdapter {
-  aR(aQ paramaQ) {}
+class PoundsKeyAdapter extends KeyAdapter {
+  PoundsKeyAdapter(WeightInputPanel paramaQ) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     try {

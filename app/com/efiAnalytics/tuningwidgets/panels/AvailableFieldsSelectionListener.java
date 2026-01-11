@@ -3,12 +3,12 @@ package com.efiAnalytics.tuningwidgets.panels;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class af implements ListSelectionListener {
-  af(ae paramae) {}
+class AvailableFieldsSelectionListener implements ListSelectionListener {
+  AvailableFieldsSelectionListener(ReplayFieldSelectorPanel paramae) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     if (!paramListSelectionEvent.getValueIsAdjusting())
-      ae.a(this.a, this.a.d.getSelectedValue()); 
+      ReplayFieldSelectorPanel.a(this.a, this.a.d.getSelectedValue()); 
   }
 }
 

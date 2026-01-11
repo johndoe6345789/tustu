@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-class aN implements ItemListener {
-  aN(aM paramaM) {}
+class SensorComboBoxItemListener implements ItemListener {
+  SensorComboBoxItemListener(ThermistorCalibrationPanel paramaM) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     this.a.a(paramItemEvent.getItem().toString());
