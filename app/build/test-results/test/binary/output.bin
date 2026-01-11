@@ -1,6 +1,11 @@
 PJAR location: /home/rewrich/Documents/GitHub/tustu/app/build/libs/app-1.0.0.jar
 JAR size: 32006 bytes
 Main-Class: TunerStudio
+JAR contents:
+  Class files: 60
+  Resource files: 3
+  Total entries: 63
+  Has TunerStudio.class: false
 Manifest attributes:
   Main-Class: TunerStudio
 $  Implementation-Title: TunerStudio
