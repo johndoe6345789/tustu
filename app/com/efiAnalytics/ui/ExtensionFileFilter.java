@@ -1,46 +1,53 @@
 package com.efiAnalytics.ui;
 
 import java.io.File;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
 import javax.swing.filechooser.FileFilter;
 
-public class ExtensionFileFilter extends FileFilter implements Serializable {
-  String a = "";
+public class ExtensionFileFilter extends FileFilter {
+  private String b;
   
-  ArrayList b = new ArrayList();
+  String a = null;
   
-  public dd(String paramString) {
-    a(paramString);
-  }
-  
-  public void a(String paramString) {
-    this.a = paramString;
-  }
-  
-  public void b(String paramString) {
-    this.b.add(paramString.toLowerCase());
+  public cx(String paramString) {
+    this.b = paramString;
   }
   
   public boolean accept(File paramFile) {
-    if (paramFile.isDirectory())
-      return true; 
-    Iterator<String> iterator = this.b.iterator();
-    while (iterator.hasNext()) {
-      if (paramFile.getName().toLowerCase().indexOf(("." + (String)iterator.next()).toLowerCase()) != -1)
-        return true; 
-    } 
-    return false;
+    return paramFile.isDirectory() ? true : (paramFile.getName().toLowerCase().endsWith("." + this.b));
   }
   
   public String getDescription() {
-    return this.a;
+    if (this.a != null)
+      return this.a; 
+    String str = this.b.toLowerCase();
+    switch (str) {
+      case "mlg":
+        return "MegaLogViewer Binary Data Log (*.mlg)";
+      case "msl":
+        return "MegaLogViewer ASCII Data Log (*.msl)";
+      case "csv":
+        return "Comma Separated Values (*.csv)";
+      case "msq":
+        return "Tune File (*.msq)";
+      case "bigtune":
+        return "BigStuff Calibration (*.bigtune)";
+      case "tsproj":
+        return "TunerStudio Project Archive (*.tsproj)";
+      case "bsproj":
+        return "BigComm Project Archive (*.bsproj)";
+      case "xls":
+        return "Excel (*.xls)";
+    } 
+    return this.b + " File (*." + str + ")";
+  }
+  
+  public String a() {
+    return this.b;
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dd.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cx.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

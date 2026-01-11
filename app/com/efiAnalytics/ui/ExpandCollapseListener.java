@@ -1,13 +1,13 @@
 package com.efiAnalytics.ui;
 
-public interface fE {
-  void a();
+public interface ExpandCollapseListener {
+  void l();
   
-  void b();
+  void m();
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fE.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cP.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */
