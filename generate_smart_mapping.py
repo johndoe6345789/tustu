@@ -56,14 +56,49 @@ def extract_class_info(filepath, content):
     # Try to infer specific name from content
     specific_name = None
     
-    # Check for listener/callback patterns with specific event types
-    for impl in info['implements']:
-        if 'Listener' in impl or 'Callback' in impl:
-            # Extract the specific type (e.g., "DeviceUpdate" from "DeviceUpdateListener")
-            specific = impl.replace('Listener', '').replace('Callback', '').replace('Handler', '')
-            if len(specific) > 2:
-                specific_name = f"{specific}Listener"
-                break
+    # Special handling for ActionListener - look at body content first
+    if 'ActionListener' in info['implements']:
+        # Look for dispose pattern (dialog closers)
+        if '.dispose()' in content:
+            specific_name = 'DialogCloseListener'
+        # Look for specific UI components
+        elif 'JRadioButton' in content:
+            specific_name = 'RadioButtonListener'
+        elif 'JCheckBox' in content:
+            specific_name = 'CheckBoxListener'
+        elif 'JMenuItem' in content or 'MenuItem' in content:
+            specific_name = 'MenuItemListener'
+        elif ('JDialog' in content or 'Dialog' in content) and content.count('Dialog') > 1:
+            if 'submit' in content.lower() or 'ok' in content.lower():
+                specific_name = 'DialogSubmitListener'
+            elif 'cancel' in content.lower():
+                specific_name = 'DialogCancelListener'
+            else:
+                specific_name = 'DialogActionListener'
+        elif ('JFrame' in content or 'Frame' in content) and content.count('Frame') > 1:
+            specific_name = 'FrameActionListener'
+        elif ('JButton' in content or 'Button' in content) and content.count('Button') > 2:
+            specific_name = 'ButtonActionListener'
+        # Look for method calls that indicate purpose
+        if not specific_name:
+            action_hints = re.findall(r'\.set(\w+)\(|\.show(\w+)\(|\.open(\w+)\(|\.close(\w+)\(|\.start(\w+)\(', content)
+            if action_hints:
+                actions = [a for group in action_hints for a in group if a]
+                if actions:
+                    specific_name = f"{actions[0]}ActionListener"
+        # Fallback to generic ActionListener
+        if not specific_name:
+            specific_name = 'ActionListener'
+    
+    # Check for OTHER listener/callback patterns with specific event types (not ActionListener)
+    if not specific_name:
+        for impl in info['implements']:
+            if impl != 'ActionListener' and ('Listener' in impl or 'Callback' in impl):
+                # Extract the specific type (e.g., "DeviceUpdate" from "DeviceUpdateListener")
+                specific = impl.replace('Listener', '').replace('Callback', '').replace('Handler', '')
+                if len(specific) > 2:
+                    specific_name = f"{specific}Listener"
+                    break
     
     # Look for dominant field types (what this class manages)
     if not specific_name and info['field_types']:
@@ -129,9 +164,20 @@ def extract_class_info(filepath, content):
     return info
 
 def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
-    """Generate a creative, unique filename"""
+    """Generate a creative, unique filename using specific inference first"""
     
-    # Strategy 1: Use actual class name ONLY if it's not obfuscated (multi-char)
+    # Strategy 1: Use the specific inferred name (most descriptive)
+    if class_info.get('specific_name') and len(class_info['specific_name']) > 2:
+        base_name = class_info['specific_name']
+        candidate = f"{base_name}.java"
+        if candidate not in used_names:
+            return candidate
+        # If already used, add package hint
+        candidate = f"{base_name}_{pkg_name}.java"
+        if candidate not in used_names:
+            return candidate
+    
+    # Strategy 2: Use actual class name ONLY if it's not obfuscated (multi-char)
     if class_info['class_name'] and len(class_info['class_name']) > 2:
         base_name = class_info['class_name']
         candidate = f"{base_name}.java"
@@ -142,21 +188,26 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
         if candidate not in used_names:
             return candidate
     
-    # Strategy 2: Use description + letter (more specific than just letter)
+    # Strategy 3: Use description WITHOUT letter suffix (cleaner)
     if class_info['description']:
+        base_name = class_info['description']
+        candidate = f"{base_name}.java"
+        if candidate not in used_names:
+            return candidate
+        # Add letter only if needed for uniqueness
         base_name = f"{class_info['description']}_{fallback_letter.upper()}"
         candidate = f"{base_name}.java"
         if candidate not in used_names:
             return candidate
     
-    # Strategy 3: Use extends class name if meaningful
+    # Strategy 4: Use extends class name if meaningful
     if class_info['extends'] and len(class_info['extends']) > 2:
         base_name = f"{class_info['extends']}{fallback_letter.upper()}"
         candidate = f"{base_name}.java"
         if candidate not in used_names:
             return candidate
     
-    # Strategy 4: Use implements interface if meaningful
+    # Strategy 5: Use implements interface if meaningful
     if class_info['implements']:
         for impl in class_info['implements']:
             impl_name = impl.split('.')[-1]  # Get simple name
@@ -166,7 +217,7 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
                 if candidate not in used_names:
                     return candidate
     
-    # Strategy 5: Use first meaningful method name + letter
+    # Strategy 6: Use first meaningful method name + letter
     if class_info['key_methods']:
         for method in class_info['key_methods']:
             if len(method) > 2:  # Meaningful method name
@@ -175,7 +226,7 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
                 if candidate not in used_names:
                     return candidate
     
-    # Strategy 6: Package context + letter
+    # Strategy 7: Package context + letter
     base_name = f"{pkg_name.split('_')[0].capitalize()}{fallback_letter.upper()}"
     candidate = f"{base_name}.java"
     if candidate not in used_names:
