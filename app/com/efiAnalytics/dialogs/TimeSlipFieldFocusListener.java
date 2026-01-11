@@ -1,0 +1,22 @@
+package com.efiAnalytics.dialogs;
+
+import com.efiAnalytics.ui.do;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+
+class TimeSlipFieldFocusListener implements FocusListener {
+  f(e parame) {}
+  
+  public void focusGained(FocusEvent paramFocusEvent) {
+    do do = (do)paramFocusEvent.getSource();
+    do.selectAll();
+  }
+  
+  public void focusLost(FocusEvent paramFocusEvent) {}
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/dialogs/f.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */
