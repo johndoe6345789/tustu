@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 public interface IComponentJuliet {
   void a();

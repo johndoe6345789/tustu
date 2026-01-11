@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 import java.io.File;
 import java.io.FileNotFoundException;

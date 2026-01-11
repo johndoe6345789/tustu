@@ -1,4 +1,4 @@
-package n;
+package system.notification_system;
 
 import W.A;
 import r.IOPropertiesUsingFile;

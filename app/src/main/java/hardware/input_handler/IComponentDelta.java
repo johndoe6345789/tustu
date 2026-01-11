@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 public interface IComponentDelta {
   void a(String paramString1, String paramString2);

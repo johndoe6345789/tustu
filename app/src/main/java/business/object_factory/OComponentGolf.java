@@ -1,4 +1,4 @@
-package o;
+package business.object_factory;
 
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;

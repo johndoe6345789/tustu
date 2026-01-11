@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 public interface IComponentAlpha {
   void a(int paramInt);

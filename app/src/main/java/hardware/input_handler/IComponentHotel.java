@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

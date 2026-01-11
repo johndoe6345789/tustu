@@ -1,4 +1,4 @@
-package o;
+package business.object_factory;
 
 import java.util.Comparator;
 

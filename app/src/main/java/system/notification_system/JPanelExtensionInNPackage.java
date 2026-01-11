@@ -1,4 +1,4 @@
-package n;
+package system.notification_system;
 
 import V.ExceptionInVPackage;
 import com.efiAnalytics.ui.aO;

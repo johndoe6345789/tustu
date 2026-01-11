@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 public interface IInterfaceFoxtrot {
   boolean a(String paramString1, String paramString2);

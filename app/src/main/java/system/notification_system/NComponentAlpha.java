@@ -1,4 +1,4 @@
-package n;
+package system.notification_system;
 
 public interface NComponentAlpha {
   boolean a();

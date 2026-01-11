@@ -1,4 +1,4 @@
-package n;
+package system.notification_system;
 
 public NInterfaceIndianterface NInterfaceIndia {
   void a(String paramString);

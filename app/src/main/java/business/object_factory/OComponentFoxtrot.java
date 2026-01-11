@@ -1,4 +1,4 @@
-package o;
+package business.object_factory;
 
 public interface OComponentFoxtrot {
   void a(String paramString);

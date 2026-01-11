@@ -1,4 +1,4 @@
-package o;
+package business.object_factory;
 
 import bA.JMenuItemExtensionInBaPackage;
 import d.DComponentCharlie;

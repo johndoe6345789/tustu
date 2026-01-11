@@ -1,4 +1,4 @@
-package n;
+package system.notification_system;
 
 import java.util.ArrayList;
 import java.util.List;

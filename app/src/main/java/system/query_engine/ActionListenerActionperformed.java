@@ -1,4 +1,4 @@
-package Q;
+package system.query_engine;
 
 import com.efiAnalytics.ui.dq;
 import java.awt.event.ActionEvent;

@@ -1,4 +1,4 @@
-package l;
+package system.locale_manager;
 
 import L.r;
 import ax.CloneableImplInAxPackage;

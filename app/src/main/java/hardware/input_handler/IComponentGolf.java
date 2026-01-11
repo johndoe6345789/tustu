@@ -1,4 +1,4 @@
-package i;
+package hardware.input_handler;
 
 import HInterfaceHotel.HInterfaceHotel;
 import java.io.File;

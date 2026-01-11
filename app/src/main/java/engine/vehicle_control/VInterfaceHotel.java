@@ -1,4 +1,4 @@
-package V;
+package engine.vehicle_control;
 
 public class VInterfaceHotel extends Exception {
   public VInterfaceHotel() {}
