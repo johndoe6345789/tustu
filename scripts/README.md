@@ -30,10 +30,10 @@ python3 tustu_tools.py --help
 
 ## 📚 Documentation
 
-- **TUSTU_TOOLS_README.md** - Complete usage guide with examples
-- **README_SCRIPTS.md** - Detailed overview and migration guide
-- **legacy/README.md** - Info about original scripts
-- **data/README.md** - JSON data files documentation
+- **[TUSTU_TOOLS_README.md](TUSTU_TOOLS_README.md)** - Complete usage guide with examples
+- **[legacy/README.md](legacy/README.md)** - Info about original scripts
+- **[data/README.md](data/README.md)** - JSON data files documentation
+- **[docs/](docs/)** - Additional documentation (migration guide, style guide, etc.)
 
 ## 🛠️ Main Tool
 
