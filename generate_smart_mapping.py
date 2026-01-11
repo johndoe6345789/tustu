@@ -21,6 +21,10 @@ def extract_class_info(filepath, content):
         'implements': [],
         'key_methods': [],
         'field_types': [],
+        'field_names': [],
+        'string_literals': [],
+        'imported_classes': [],
+        'instantiated_classes': [],
         'description': None,
         'specific_name': None
     }
@@ -53,42 +57,142 @@ def extract_class_info(filepath, content):
     field_types = re.findall(r'(?:private|protected|public)\s+(?:static\s+)?(?:final\s+)?(\w+)\s+\w+\s*[;=]', content)
     info['field_types'] = [f for f in field_types if len(f) > 2][:10]  # Meaningful types only
     
+    # Extract field names for context
+    field_names = re.findall(r'(?:private|protected|public)\s+(?:static\s+)?(?:final\s+)?\w+\s+(\w+)\s*[;=]', content)
+    info['field_names'] = [f for f in field_names if len(f) > 1][:10]
+    
+    # Extract string literals for domain understanding
+    string_literals = re.findall(r'"([^"]{5,40})"', content)  # 5-40 char strings
+    info['string_literals'] = string_literals[:5]
+    
+    # Extract imported classes (just the class name, not full package)
+    imports = re.findall(r'import\s+[\w.]+\.(\w+);', content)
+    info['imported_classes'] = [i for i in imports if len(i) > 2][:10]
+    
+    # Extract instantiated classes (new ClassName())
+    instantiations = re.findall(r'new\s+(\w+)\s*\(', content)
+    info['instantiated_classes'] = [i for i in instantiations if len(i) > 2][:10]
+    
     # Try to infer specific name from content
     specific_name = None
     
     # Special handling for ActionListener - look at body content first
     if 'ActionListener' in info['implements']:
-        # Look for dispose pattern (dialog closers)
+        # Extract more context from the code body
+        content_lower = content.lower()
+        
+        # Look for method calls to understand the action
+        method_calls = re.findall(r'\.(\w+)\(', content)
+        meaningful_calls = [m for m in method_calls if len(m) > 3 and m not in ['this', 'super', 'toString', 'equals', 'hashCode', 'getClass']]
+        
+        # Look for field assignments to understand what's being modified
+        field_assignments = re.findall(r'this\.(\w+)\s*=', content)
+        meaningful_fields = [f for f in field_assignments if len(f) > 1]
+        
+        # Look for specific patterns with more context
         if '.dispose()' in content:
-            specific_name = 'DialogCloseListener'
-        # Look for specific UI components
+            # Check what's being disposed
+            if 'dialog' in content_lower:
+                if 'cancel' in content_lower or 'close' in content_lower:
+                    specific_name = 'CancelDialogAndCloseListener'
+                else:
+                    specific_name = 'DisposeDialogListener'
+            elif 'window' in content_lower or 'frame' in content_lower:
+                specific_name = 'CloseWindowListener'
+            else:
+                specific_name = 'DisposeListener'
+        
+        # RadioButton with specific context
         elif 'JRadioButton' in content:
-            specific_name = 'RadioButtonListener'
+            if 'rating' in content_lower or 'feedback' in content_lower:
+                specific_name = 'RatingSelectionRadioButtonListener'
+            elif 'parse' in content_lower or 'Integer.parseInt' in content:
+                specific_name = 'ParseIntegerFromRadioButtonListener'
+            elif meaningful_fields:
+                specific_name = f"Update{meaningful_fields[0].capitalize()}FromRadioButtonListener"
+            else:
+                specific_name = 'RadioButtonSelectionListener'
+        
+        # CheckBox with specific context
         elif 'JCheckBox' in content:
-            specific_name = 'CheckBoxListener'
+            if 'enable' in content_lower or 'disable' in content_lower:
+                specific_name = 'ToggleEnableStateCheckBoxListener'
+            elif 'visible' in content_lower or 'visibility' in content_lower:
+                specific_name = 'ToggleVisibilityCheckBoxListener'
+            elif meaningful_fields:
+                specific_name = f"Update{meaningful_fields[0].capitalize()}CheckBoxListener"
+            else:
+                specific_name = 'CheckBoxStateChangeListener'
+        
+        # MenuItem with context
         elif 'JMenuItem' in content or 'MenuItem' in content:
-            specific_name = 'MenuItemListener'
+            if 'open' in content_lower:
+                specific_name = 'OpenMenuItemListener'
+            elif 'save' in content_lower:
+                specific_name = 'SaveMenuItemListener'
+            elif 'exit' in content_lower or 'quit' in content_lower:
+                specific_name = 'ExitMenuItemListener'
+            else:
+                specific_name = 'MenuItemActionListener'
+        
+        # Dialog patterns with more specificity
         elif ('JDialog' in content or 'Dialog' in content) and content.count('Dialog') > 1:
-            if 'submit' in content.lower() or 'ok' in content.lower():
-                specific_name = 'DialogSubmitListener'
-            elif 'cancel' in content.lower():
-                specific_name = 'DialogCancelListener'
+            if 'submit' in content_lower or 'ok' in content_lower:
+                if 'validation' in content_lower or 'validate' in content_lower:
+                    specific_name = 'ValidateAndSubmitDialogListener'
+                else:
+                    specific_name = 'SubmitDialogListener'
+            elif 'cancel' in content_lower:
+                specific_name = 'CancelDialogListener'
+            elif 'apply' in content_lower:
+                specific_name = 'ApplyDialogChangesListener'
             else:
                 specific_name = 'DialogActionListener'
+        
+        # Frame actions
         elif ('JFrame' in content or 'Frame' in content) and content.count('Frame') > 1:
-            specific_name = 'FrameActionListener'
+            if 'minimize' in content_lower:
+                specific_name = 'MinimizeFrameListener'
+            elif 'maximize' in content_lower:
+                specific_name = 'MaximizeFrameListener'
+            else:
+                specific_name = 'FrameActionListener'
+        
+        # Button actions
         elif ('JButton' in content or 'Button' in content) and content.count('Button') > 2:
-            specific_name = 'ButtonActionListener'
-        # Look for method calls that indicate purpose
+            if 'browse' in content_lower:
+                specific_name = 'BrowseButtonClickListener'
+            elif 'search' in content_lower:
+                specific_name = 'SearchButtonClickListener'
+            else:
+                specific_name = 'ButtonClickActionListener'
+        
+        # Look for method calls that indicate purpose (more specific)
         if not specific_name:
-            action_hints = re.findall(r'\.set(\w+)\(|\.show(\w+)\(|\.open(\w+)\(|\.close(\w+)\(|\.start(\w+)\(', content)
-            if action_hints:
-                actions = [a for group in action_hints for a in group if a]
-                if actions:
-                    specific_name = f"{actions[0]}ActionListener"
+            if 'setEnabled' in meaningful_calls:
+                specific_name = 'ToggleComponentEnabledStateListener'
+            elif 'setVisible' in meaningful_calls:
+                specific_name = 'ToggleComponentVisibilityListener'
+            elif 'setText' in meaningful_calls:
+                specific_name = 'UpdateTextFieldListener'
+            elif 'setSelected' in meaningful_calls:
+                specific_name = 'UpdateSelectionStateListener'
+            elif any(m.startswith('show') for m in meaningful_calls):
+                show_methods = [m for m in meaningful_calls if m.startswith('show')]
+                specific_name = f"{show_methods[0].capitalize()}Listener"
+            elif any(m.startswith('open') for m in meaningful_calls):
+                open_methods = [m for m in meaningful_calls if m.startswith('open')]
+                specific_name = f"{open_methods[0].capitalize()}Listener"
+            elif any(m.startswith('start') for m in meaningful_calls):
+                start_methods = [m for m in meaningful_calls if m.startswith('start')]
+                specific_name = f"{start_methods[0].capitalize()}Listener"
+            elif meaningful_calls and len(meaningful_calls) > 0:
+                # Use the most prominent method call
+                specific_name = f"{meaningful_calls[0].capitalize()}ActionListener"
+        
         # Fallback to generic ActionListener
         if not specific_name:
-            specific_name = 'ActionListener'
+            specific_name = 'GenericActionListener'
     
     # Check for OTHER listener/callback patterns with specific event types (not ActionListener)
     if not specific_name:
@@ -104,12 +208,68 @@ def extract_class_info(filepath, content):
     if not specific_name and info['field_types']:
         type_counts = {}
         for ft in info['field_types']:
-            if ft not in ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map']:
+            if ft not in ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map', 'Object']:
                 type_counts[ft] = type_counts.get(ft, 0) + 1
         if type_counts:
             dominant_type = max(type_counts.items(), key=lambda x: x[1])[0]
             if len(dominant_type) > 2:
-                specific_name = f"{dominant_type}Manager"
+                # Check if we have multiple of same type - more specific naming
+                if type_counts[dominant_type] > 1:
+                    specific_name = f"Multiple{dominant_type}Manager"
+                else:
+                    specific_name = f"{dominant_type}Manager"
+    
+    # Look at instantiated classes for more specific naming
+    if not specific_name and info['instantiated_classes']:
+        # Filter out common types
+        meaningful_classes = [c for c in info['instantiated_classes'] 
+                            if c not in ['StringBuilder', 'StringBuffer', 'ArrayList', 'HashMap', 'HashSet', 
+                                       'LinkedList', 'TreeMap', 'TreeSet', 'Vector', 'Hashtable', 'Exception',
+                                       'RuntimeException', 'IllegalArgumentException', 'Date', 'Calendar',
+                                       'String', 'Integer', 'Long', 'Double', 'Float', 'Boolean', 'Object']]
+        if meaningful_classes:
+            # Get most common instantiation
+            class_counts = {}
+            for cls in meaningful_classes:
+                class_counts[cls] = class_counts.get(cls, 0) + 1
+            most_common = max(class_counts.items(), key=lambda x: x[1])[0]
+            # Only use if it's not an exception being thrown
+            if not most_common.endswith('Exception'):
+                if class_counts[most_common] > 1:
+                    specific_name = f"Multiple{most_common}Creator"
+                else:
+                    specific_name = f"{most_common}Creator"
+    
+    # Use string literals to understand domain context
+    if not specific_name and info['string_literals']:
+        # Look for domain-specific keywords in strings
+        combined_strings = ' '.join(info['string_literals']).lower()
+        domain_keywords = {
+            'error': 'ErrorHandler',
+            'warning': 'WarningHandler',
+            'log': 'LogHandler',
+            'file': 'FileHandler',
+            'connection': 'ConnectionHandler',
+            'socket': 'SocketHandler',
+            'serial': 'SerialHandler',
+            'port': 'PortHandler',
+            'device': 'DeviceHandler',
+            'sensor': 'SensorHandler',
+            'gauge': 'GaugeHandler',
+            'table': 'TableHandler',
+            'chart': 'ChartHandler',
+            'graph': 'GraphHandler',
+            'config': 'ConfigHandler',
+            'setting': 'SettingsHandler',
+            'parameter': 'ParameterHandler',
+            'tuning': 'TuningHandler',
+            'calibration': 'CalibrationHandler',
+            'diagnostic': 'DiagnosticHandler',
+        }
+        for keyword, handler_name in domain_keywords.items():
+            if keyword in combined_strings:
+                specific_name = handler_name
+                break
     
     # Look for method name patterns (verbs + nouns)
     if not specific_name and info['key_methods']:
@@ -172,8 +332,28 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
         candidate = f"{base_name}.java"
         if candidate not in used_names:
             return candidate
-        # If already used, add package hint
-        candidate = f"{base_name}_{pkg_name}.java"
+        # Add instantiated class context if available
+        if class_info.get('instantiated_classes'):
+            inst_class = class_info['instantiated_classes'][0]
+            candidate = f"{base_name}For{inst_class}.java"
+            if candidate not in used_names:
+                return candidate
+        # Add field type context
+        if class_info.get('field_types'):
+            field_type = class_info['field_types'][0]
+            candidate = f"{base_name}With{field_type}.java"
+            if candidate not in used_names:
+                return candidate
+        # Add method name context
+        if class_info.get('key_methods'):
+            method = class_info['key_methods'][0]
+            if len(method) > 2:
+                candidate = f"{base_name}{method.capitalize()}.java"
+                if candidate not in used_names:
+                    return candidate
+        # Add package hint
+        pkg_suffix = pkg_name.replace('_', '').capitalize()
+        candidate = f"{base_name}In{pkg_suffix}.java"
         if candidate not in used_names:
             return candidate
     
@@ -183,20 +363,75 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
         candidate = f"{base_name}.java"
         if candidate not in used_names:
             return candidate
+        # Add context from what it creates/manages
+        if class_info.get('instantiated_classes'):
+            inst_class = class_info['instantiated_classes'][0]
+            candidate = f"{base_name}Creating{inst_class}.java"
+            if candidate not in used_names:
+                return candidate
+        # Add context from imports
+        if class_info.get('imported_classes'):
+            for imp in class_info['imported_classes'][:3]:
+                candidate = f"{base_name}Using{imp}.java"
+                if candidate not in used_names:
+                    return candidate
         # If already used, add the package hint
-        candidate = f"{base_name}_{pkg_name}.java"
+        pkg_suffix = pkg_name.replace('_', '').capitalize()
+        candidate = f"{base_name}In{pkg_suffix}.java"
         if candidate not in used_names:
             return candidate
     
-    # Strategy 3: Use description WITHOUT letter suffix (cleaner)
+    # Strategy 3: Use description with enriched context
     if class_info['description']:
         base_name = class_info['description']
         candidate = f"{base_name}.java"
         if candidate not in used_names:
             return candidate
-        # Add letter only if needed for uniqueness
-        base_name = f"{class_info['description']}_{fallback_letter.upper()}"
-        candidate = f"{base_name}.java"
+        
+        # Add field type context for Managers/Services (avoid redundancy)
+        if 'Manager' in base_name or 'Service' in base_name or 'Handler' in base_name:
+            if class_info.get('field_types'):
+                for field_type in class_info['field_types'][:3]:
+                    # Skip if field type is in the base name
+                    if field_type.lower() not in base_name.lower():
+                        candidate = f"{field_type}{base_name}.java"
+                        if candidate not in used_names:
+                            return candidate
+            
+            if class_info.get('instantiated_classes'):
+                for inst_class in class_info['instantiated_classes'][:3]:
+                    # Skip if class is in the base name
+                    if inst_class.lower() not in base_name.lower():
+                        candidate = f"{inst_class}{base_name}.java"
+                        if candidate not in used_names:
+                            return candidate
+            
+            # Use field names for context
+            if class_info.get('field_names'):
+                for field_name in class_info['field_names'][:3]:
+                    if len(field_name) > 2 and field_name.lower() not in base_name.lower():
+                        candidate = f"{field_name.capitalize()}{base_name}.java"
+                        if candidate not in used_names:
+                            return candidate
+        
+        # Add primary method name (avoid common getters/setters)
+        if class_info.get('key_methods'):
+            for method in class_info['key_methods'][:5]:
+                if len(method) > 3 and method not in ['toString', 'hashCode', 'equals', 'getClass']:
+                    # Skip common patterns
+                    if not method.startswith('get') and not method.startswith('set'):
+                        candidate = f"{method.capitalize()}{base_name}.java"
+                        if candidate not in used_names:
+                            return candidate
+        
+        # Add package context
+        pkg_suffix = pkg_name.replace('_', '').capitalize()
+        candidate = f"{pkg_suffix}{base_name}.java"
+        if candidate not in used_names:
+            return candidate
+        
+        # Add letter as last resort before numbering
+        candidate = f"{base_name}_{fallback_letter.upper()}.java"
         if candidate not in used_names:
             return candidate
     
@@ -232,16 +467,18 @@ def generate_creative_name(class_info, pkg_name, fallback_letter, used_names):
     if candidate not in used_names:
         return candidate
     
-    # Strategy 7: Fallback with number suffix
+    # Strategy 8: Ensure absolute uniqueness with sequential numbering
     base = f"{pkg_name.split('_')[0].capitalize()}_{fallback_letter.upper()}"
     candidate = f"{base}.java"
     if candidate not in used_names:
         return candidate
     
-    # Add number suffix
+    # Add number suffix - guaranteed to be unique
     counter = 1
     while f"{base}_{counter}.java" in used_names:
         counter += 1
+        if counter > 1000:  # Safety limit
+            break
     return f"{base}_{counter}.java"
 
 def generate_smart_mapping_v2():
@@ -419,6 +656,35 @@ def generate_smart_mapping_v2():
     with open(mapping_file, 'w') as f:
         json.dump(mapping, f, indent=2, sort_keys=True)
     
+    # Post-process to ensure ALL names are unique across entire workspace
+    print("\nEnsuring global uniqueness...")
+    global_name_count = {}
+    for old_path, new_path in mapping.items():
+        new_name = new_path.split('/')[-1]
+        if new_name not in global_name_count:
+            global_name_count[new_name] = []
+        global_name_count[new_name].append((old_path, new_path))
+    
+    # Fix duplicates by adding small numeric suffixes
+    duplicates_fixed = 0
+    for new_name, paths in global_name_count.items():
+        if len(paths) > 1:
+            # Keep first one, rename others
+            for idx, (old_path, new_path) in enumerate(paths[1:], start=2):
+                # Insert number before .java extension
+                base_name = new_name[:-5]  # Remove .java
+                unique_name = f"{base_name}{idx}.java"
+                # Update the new path
+                new_dir = '/'.join(new_path.split('/')[:-1])
+                mapping[old_path] = f"{new_dir}/{unique_name}"
+                duplicates_fixed += 1
+    
+    # Save the globally unique mapping
+    with open(mapping_file, 'w') as f:
+        json.dump(mapping, f, indent=2, sort_keys=True)
+    
+    print(f"Fixed {duplicates_fixed} duplicate filenames for global uniqueness")
+    
     print(f"\n{'='*60}")
     print(f"Generated smart mapping: {mapping_file}")
     print(f"{'='*60}")
@@ -428,6 +694,7 @@ def generate_smart_mapping_v2():
     print(f"Used fallback names:       {stats['used_fallback']}")
     print(f"Skipped (already renamed): {stats['skipped_renamed']}")
     print(f"Skipped (empty):           {stats['skipped_empty']}")
+    print(f"Global duplicates fixed:   {duplicates_fixed}")
     
     # Save analysis details
     analysis_file = "/home/rewrich/Documents/GitHub/tustu/JAVA_ANALYSIS_DETAILED.json"
