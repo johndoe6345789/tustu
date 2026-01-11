@@ -1,7 +1,7 @@
 package B;
 
-public interface j {
-  void a(String paramString, i parami);
+public interface DeviceUpdateListener {
+  void a(String paramString, DiscoveredDevice parami);
 }
 
 

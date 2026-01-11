@@ -5,31 +5,31 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public abstract class a implements f {
+public abstract class AbstractConnectionManager implements ControllerInterface {
   private final Collection b = new CopyOnWriteArrayList();
-  
+
   ArrayList a = new ArrayList();
-  
-  public void a(y paramy) {
+
+  public void a(DataReceivedListener paramy) {
     if (!this.a.contains(paramy))
       this.a.add(paramy); 
   }
   
-  public void b(y paramy) {
+  public void b(DataReceivedListener paramy) {
     this.a.remove(paramy);
   }
   
-  public void a(e parame) {
+  public void a(ConnectionEventListener parame) {
     if (!this.b.contains(parame))
-      this.b.add(parame); 
+      this.b.add(parame);
   }
-  
-  public void b(e parame) {
+
+  public void b(ConnectionEventListener parame) {
     this.b.remove(parame);
   }
-  
+
   protected void a() {
-    for (e e : this.b) {
+    for (ConnectionEventListener e : this.b) {
       try {
         e.c();
       } catch (Exception exception) {
@@ -40,7 +40,7 @@ public abstract class a implements f {
   }
   
   protected void b() {
-    for (e e : this.b) {
+    for (ConnectionEventListener e : this.b) {
       try {
         e.d();
       } catch (Exception exception) {

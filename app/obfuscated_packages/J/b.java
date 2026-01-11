@@ -4,7 +4,7 @@ import G.cV;
 import G.f;
 import java.io.Serializable;
 
-public class b implements cV, Serializable {
+public class ChecksumEncoder implements cV, Serializable {
   f a = new f();
   
   public byte[] a(byte[] paramArrayOfbyte) {

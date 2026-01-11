@@ -1,6 +1,6 @@
 package ak;
 
-import M.a;
+import M.KalmanFilter;
 import V.a;
 import W.T;
 import bH.D;
@@ -29,14 +29,14 @@ public class X extends g {
   
   int M = 0;
   
-  private a N;
-  
+  private KalmanFilter N;
+
   public X() {
     super("\t", false);
     double d1 = 50.0D;
     double d2 = 3.0D;
     double d3 = 5000.0D;
-    this.N = a.a(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
+    this.N = KalmanFilter.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
   }
   
   public boolean a(String paramString) {

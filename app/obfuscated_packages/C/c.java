@@ -1,6 +1,6 @@
 package C;
 
-public class c implements d {
+public class IdentityStringProcessor implements StringProcessor {
   public String a(String paramString) {
     return paramString;
   }

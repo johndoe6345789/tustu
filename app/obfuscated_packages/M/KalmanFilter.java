@@ -2,7 +2,7 @@ package M;
 
 import linear_algebra.Matrix;
 
-public class a {
+public class KalmanFilter {
   protected Matrix a;
   
   protected Matrix b;
@@ -23,17 +23,17 @@ public class a {
   
   protected Matrix j;
   
-  public static a a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4, double paramDouble5) {
-    a a1 = new a();
-    a1.i((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D } })).f());
-    a1.e(b.b(4, 4).a(0.0D));
-    a1.c(new b(new double[][] { { 1.0D, 0.0D, paramDouble3, 0.0D }, { 0.0D, 1.0D, 0.0D, paramDouble3 }, { 0.0D, 0.0D, 1.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 1.0D } }));
-    a1.b((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D } })).f());
-    a1.h(new b(new double[][] { { 0.0D } }));
-    a1.f((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 0.0D, 1.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 1.0D } })).a(Math.pow(paramDouble4, 2.0D)));
-    a1.d(new b(new double[][] { { 1.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 1.0D, 0.0D, 0.0D } }));
-    a1.g(b.b(2, 2).a(paramDouble5));
-    return a1;
+  public static KalmanFilter create(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4, double paramDouble5) {
+    KalmanFilter filter = new KalmanFilter();
+    filter.i((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D } })).f());
+    filter.e(b.b(4, 4).a(0.0D));
+    filter.c(new b(new double[][] { { 1.0D, 0.0D, paramDouble3, 0.0D }, { 0.0D, 1.0D, 0.0D, paramDouble3 }, { 0.0D, 0.0D, 1.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 1.0D } }));
+    filter.b((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D } })).f());
+    filter.h(new b(new double[][] { { 0.0D } }));
+    filter.f((new b(new double[][] { { 0.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 0.0D, 1.0D, 0.0D }, { 0.0D, 0.0D, 0.0D, 1.0D } })).a(Math.pow(paramDouble4, 2.0D)));
+    filter.d(new b(new double[][] { { 1.0D, 0.0D, 0.0D, 0.0D }, { 0.0D, 1.0D, 0.0D, 0.0D } }));
+    filter.g(b.b(2, 2).a(paramDouble5));
+    return filter;
   }
   
   public void a() {

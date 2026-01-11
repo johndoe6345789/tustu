@@ -1,31 +1,31 @@
 package L;
 
-import M.a;
+import M.KalmanFilter;
 import linear_algebra.Matrix;
 import ax.S;
 import ax.ab;
 import ax.ac;
 
 public class SmoothFilteredFunction extends ac {
-  private a c;
-  
+  private KalmanFilter c;
+
   private ab d;
-  
+
   private ab e;
-  
+
   private double f = Double.NaN;
-  
+
   double a = Double.NaN;
-  
+
   double b = Double.NaN;
-  
+
   public O(ab paramab1, ab paramab2) {
     this.e = paramab2;
     this.d = paramab1;
     double d1 = 50.0D;
     double d2 = 3.0D;
     double d3 = 5000.0D;
-    this.c = a.a(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
+    this.c = KalmanFilter.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
   }
   
   public double a(S paramS) {

@@ -3,7 +3,7 @@ package C;
 import java.util.Locale;
 import java.util.Map;
 
-public interface e {
+public interface TranslationMapLoader {
   Map a(String paramString, Locale paramLocale);
 }
 

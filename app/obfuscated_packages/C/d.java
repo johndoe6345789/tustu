@@ -1,6 +1,6 @@
 package C;
 
-public interface d {
+public interface StringProcessor {
   String a(String paramString);
 }
 

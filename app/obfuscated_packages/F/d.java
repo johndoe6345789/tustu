@@ -1,7 +1,7 @@
 package F;
 
-enum d {
-  a, b, c;
+enum LeaseState {
+  AVAILABLE, RESERVED, IN_USE;
 }
 
 

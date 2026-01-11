@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class i {
+public class DiscoveredDevice {
   private String a = "";
   
   private String b = "";
@@ -44,7 +44,7 @@ public class i {
     if (this.i != null)
       properties.setProperty("projectUUID", this.i); 
     for (byte b = 0; b < this.m.size(); b++) {
-      i i1 = this.m.get(b);
+      DiscoveredDevice i1 = this.m.get(b);
       String str = "CAN_DEVICE_" + b + "_";
       properties.setProperty(str + "slaveType", i1.i());
       properties.setProperty(str + "id", i1.b());
@@ -58,8 +58,8 @@ public class i {
     return properties;
   }
   
-  public static i a(Properties paramProperties) {
-    i i1 = new i();
+  public static DiscoveredDevice a(Properties paramProperties) {
+    DiscoveredDevice i1 = new DiscoveredDevice();
     i1.f(paramProperties.getProperty("slaveType", ""));
     i1.a(paramProperties.getProperty("id", ""));
     i1.b(paramProperties.getProperty("host", ""));
@@ -74,7 +74,7 @@ public class i {
       } catch (Exception exception) {} 
     byte b = 0;
     for (String str2 = "CAN_DEVICE_" + b + "_"; paramProperties.get(str2 + "projectName") != null; str2 = "CAN_DEVICE_" + ++b + "_") {
-      i i2 = new i();
+      DiscoveredDevice i2 = new DiscoveredDevice();
       i2.f(paramProperties.getProperty(str2 + "slaveType"));
       i2.a(paramProperties.getProperty(str2 + "id"));
       i2.b(paramProperties.getProperty(str2 + "host"));
@@ -163,8 +163,8 @@ public class i {
   }
   
   public boolean equals(Object paramObject) {
-    if (paramObject instanceof i) {
-      i i1 = (i)paramObject;
+    if (paramObject instanceof DiscoveredDevice) {
+      DiscoveredDevice i1 = (DiscoveredDevice)paramObject;
       return (a(this.a, i1.i()) && a(this.b, i1.b()) && a(this.c, i1.c()) && a(this.e, i1.d()) && a(this.f, i1.e()) && a(this.g, i1.f()) && a(this.h, i1.j()) && this.j == i1.g() && this.l == i1.h());
     } 
     return super.equals(paramObject);
@@ -194,7 +194,7 @@ public class i {
     return this.m;
   }
   
-  public void a(i parami) {
+  public void a(DiscoveredDevice parami) {
     this.m.add(parami);
   }
   

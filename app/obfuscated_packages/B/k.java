@@ -1,7 +1,7 @@
 package B;
 
-public interface k {
-  void a(i parami);
+public interface DeviceDiscoveryListener {
+  void a(DiscoveredDevice parami);
 }
 
 

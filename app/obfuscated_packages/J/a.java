@@ -6,16 +6,16 @@ import bH.D;
 import bH.c;
 import java.io.Serializable;
 
-public class a implements cR, Serializable {
+public class BasicEnvelopeDecoder implements cR, Serializable {
   f a = new f();
-  
+
   int b = 2;
-  
+
   int c = 1;
-  
+
   int d = 1;
-  
-  i e = new i();
+
+  ProtocolStatistics e = new ProtocolStatistics();
   
   public static int f = 1;
   
@@ -72,7 +72,7 @@ public class a implements cR, Serializable {
     return (paramInt >= 0) ? (paramInt + this.d) : -1;
   }
   
-  public h d() {
+  public AbstractProtocolStatistics d() {
     return this.e;
   }
   

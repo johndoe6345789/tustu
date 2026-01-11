@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-public class a {
+public class LocalizationManager {
   public static String a = "MS3 Verified B&G";
   
   public static String b = "Comm time out: Code 17743";
@@ -13,7 +13,7 @@ public class a {
   
   public static String d = "Warning!!\n\n Communication Established!\n\nHowever, there is a confguration error with your firmware.\nCheck to make sure your MS3 firmware is correctly loaded.\n\nGoing offline.\n";
   
-  private static a i = null;
+  private static LocalizationManager i = null;
   
   Map e = new HashMap<>();
   
@@ -23,17 +23,17 @@ public class a {
   
   Locale h = this.g;
   
-  private e j = null;
+  private TranslationMapLoader j = null;
   
-  public static a a(e parame) {
-    a a1 = a();
+  public static LocalizationManager a(TranslationMapLoader parame) {
+    LocalizationManager a1 = a();
     a1.b(parame);
     return a1;
   }
-  
-  public static a a() {
+
+  public static LocalizationManager a() {
     if (i == null)
-      i = new a(); 
+      i = new LocalizationManager();
     return i;
   }
   

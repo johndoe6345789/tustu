@@ -5,7 +5,7 @@ import G.aF;
 import G.aG;
 import G.bT;
 import G.cu;
-import M.a;
+import M.KalmanFilter;
 import linear_algebra.Matrix;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -19,13 +19,13 @@ public class f implements aF, aG {
   
   int d = 10;
   
-  private a e;
-  
+  private KalmanFilter e;
+
   public f() {
     double d1 = 50.0D;
     double d2 = 3.0D;
     double d3 = 5000.0D;
-    this.e = a.a(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
+    this.e = KalmanFilter.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
   }
   
   public void a(String paramString, byte[] paramArrayOfbyte) {

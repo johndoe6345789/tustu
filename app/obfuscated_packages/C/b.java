@@ -1,7 +1,7 @@
 package C;
 
-public class b extends Exception {
-  public b(String paramString) {
+public class LocalizationException extends Exception {
+  public LocalizationException(String paramString) {
     super(paramString);
   }
 }

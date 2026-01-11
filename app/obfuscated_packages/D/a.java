@@ -8,7 +8,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.Properties;
 
-public class a {
+public class ActivationData {
   private String a;
   
   private String b;

@@ -3,7 +3,7 @@ package C;
 import bH.X;
 import java.util.Properties;
 
-public class f {
+public class RegistrationMessages {
   public static String a = "*$email";
   
   public static String b = "*$appName";
