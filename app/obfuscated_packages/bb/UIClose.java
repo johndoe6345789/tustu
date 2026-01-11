@@ -12,11 +12,11 @@ import A.AInterfaceVictor;
 import A.AInterfaceXray;
 import G.R;
 import G.T;
-import G.bT;
-import W.ap;
-import W.ar;
-import aP.aY;
-import aP.ad;
+import G.AeInterfaceMikeTostring;
+import W.WInterfaceAp;
+import W.Properties;
+import aP.ManagerIoinabpackage;
+import aP.ManagerIoinbpackage;
 import aV.AvInterfaceWhiskey;
 import aW.JPanelExtensionInAwPackage;
 import aW.AwInterfacePapa;
@@ -47,9 +47,9 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
   
   JPanelExtensionInAwPackage JPanelExtensionInAwPackage;
   
-  aY b = null;
+  ManagerIoinabpackage b = null;
   
-  private bT n = null;
+  private AeInterfaceMikeTostring n = null;
   
   JLabel AInterfaceCharlie = new JLabel();
   
@@ -77,7 +77,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
     setLayout(this.AInterfaceGolf);
     JPanel jPanel1 = Threaded();
     add(jPanel1, "Advanced Connection Settings");
-    this.b = new aY();
+    this.b = new ManagerIoinabpackage();
     this.b.b(true);
     this.b.setVisible(true);
     this.b.JPanelExtensionInAwPackage(this);
@@ -164,7 +164,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
         this.JPanelExtensionInAwPackage.JPanelExtensionInAwPackage(IO);
       } 
     } else {
-      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage((ap)new ar((JPanelExtensionInAwPackage.JPanelExtensionInAwPackage()).an, "FirmwareLoader"));
+      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage((WInterfaceAp)new Properties((JPanelExtensionInAwPackage.JPanelExtensionInAwPackage()).an, "FirmwareLoader"));
       try {
         String str = JPanelExtensionInAwPackage.JPanelExtensionInAwPackage().AInterfaceCharlie("firmwareLoaderCiId", AvInterfaceWhiskey.AInterfaceCharlie().b().JPanelExtensionInAwPackage());
         IO IO = AvInterfaceWhiskey.AInterfaceCharlie().JPanelExtensionInAwPackage(str, "DEFAULT_INSTANCE");
@@ -192,10 +192,10 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
       } 
     } 
     if (this.m.JPanelExtensionInAwPackage() != null) {
-      ap ap = AInterfaceVictor.JPanelExtensionInAwPackage().AInterfaceCharlie();
-      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage((ap)new ar((JPanelExtensionInAwPackage.JPanelExtensionInAwPackage()).an, "FirmwareLoader"));
+      WInterfaceAp WInterfaceAp = AInterfaceVictor.JPanelExtensionInAwPackage().AInterfaceCharlie();
+      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage((WInterfaceAp)new Properties((JPanelExtensionInAwPackage.JPanelExtensionInAwPackage()).an, "FirmwareLoader"));
       AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage("FirmwareLoader", i().JPanelExtensionInAwPackage());
-      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage(ap);
+      AInterfaceVictor.JPanelExtensionInAwPackage().JPanelExtensionInAwPackage(WInterfaceAp);
     } 
   }
   
@@ -232,7 +232,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
       } catch (IllegalAccessException illegalAccessException) {} 
   }
   
-  public boolean JPanelExtensionInAwPackage(String paramString1, String paramString2, List paramList, bT parambT) {
+  public boolean JPanelExtensionInAwPackage(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     if (paramString2.contains(":")) {
       String str = paramString2.substring(0, paramString2.indexOf(":"));
       paramString2 = paramString2.substring(paramString2.indexOf(":") + 1);
@@ -243,7 +243,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
         try {
           IO.JPanelExtensionInAwPackage(AInterfaceCharlie.JPanelExtensionInAwPackage(), AInterfaceCharlie.b());
         } catch (Exception Exception) {
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
+          Logger.getLogger(ManagerIoinbpackage.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
         } 
       } 
       this.JPanelExtensionInAwPackage.JPanelExtensionInAwPackage(IO);
@@ -275,7 +275,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
     this.d.setText("Failed");
   }
   
-  public bT AInterfaceGolf() {
+  public AeInterfaceMikeTostring AInterfaceGolf() {
     return this.n;
   }
   
@@ -292,7 +292,7 @@ public class UIClose extends JPanel implements AInterfaceOscar, AwInterfacePapa,
             if (AInterfaceCharlie.b() != null && !IO.JPanelExtensionInAwPackage(AInterfaceCharlie.JPanelExtensionInAwPackage()).equals(AInterfaceCharlie.b()))
               IO.JPanelExtensionInAwPackage(AInterfaceCharlie.JPanelExtensionInAwPackage(), AInterfaceCharlie.b()); 
           } catch (Exception Exception) {
-            Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
+            Logger.getLogger(ManagerIoinbpackage.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
           } 
         } 
         this.JPanelExtensionInAwPackage.JPanelExtensionInAwPackage(IO);

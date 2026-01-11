@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
 import G.T;
-import G.aM;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import aE.PropertiesExtension;
 import bH.D;
@@ -23,7 +23,7 @@ public class ControllerSelectorPanel extends JPanel {
   
   PropertiesExtension c = PropertiesExtension.A();
   
-  aM d = null;
+  Manager d = null;
   
   private int f = -1;
   

@@ -1,17 +1,17 @@
 package I;
 
-import G.aG;
-import G.bT;
-import G.cu;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
+import G.ManagerUsingArrayList;
 
-public class IInterfaceGolf implements aG {
-  public boolean a(String paramString, bT parambT) {
-    cu.a().a("controllerOnline", 1.0D);
+public class IInterfaceGolf implements GInterfaceAg {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
+    ManagerUsingArrayList.a().a("controllerOnline", 1.0D);
     return true;
   }
   
   public void a(String paramString) {
-    cu.a().a("controllerOnline", 0.0D);
+    ManagerUsingArrayList.a().a("controllerOnline", 0.0D);
   }
 }
 

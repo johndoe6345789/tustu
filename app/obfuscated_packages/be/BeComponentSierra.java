@@ -2,9 +2,9 @@ package be;
 
 import G.Q;
 import G.R;
-import G.aH;
-import G.ac;
-import G.ah;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GInterfaceAh;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import bH.J;
@@ -66,8 +66,8 @@ public class BeComponentSierra extends JPanel {
       c c1 = (c)d();
       if (c1.ExceptionInVPackage()) {
         try {
-          aH aH = this.d.ExceptionPrintstacktrace(c1.b().aL());
-          if (aH != null && !aH.aN() && !bV.ExceptionInVPackage(ExceptionPrintstacktrace.b("There is an existing OuputChannel in the main config by that name.") + "\n" + ExceptionPrintstacktrace.b("Are you sure you want to over-ride that channel?"), this, true))
+          SerializableImpl SerializableImpl = this.d.ExceptionPrintstacktrace(c1.b().aL());
+          if (SerializableImpl != null && !SerializableImpl.aN() && !bV.ExceptionInVPackage(ExceptionPrintstacktrace.b("There is an existing OuputChannel in the main config by that name.") + "\n" + ExceptionPrintstacktrace.b("Are you sure you want to over-ride that channel?"), this, true))
             return; 
           this.h.ExceptionInVPackage(c1.b());
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
@@ -130,16 +130,16 @@ public class BeComponentSierra extends JPanel {
         b();
       } 
     } 
-    if (paramQ instanceof aH) {
+    if (paramQ instanceof SerializableImpl) {
       this.f.add(f());
-      f().ExceptionInVPackage((aH)paramQ);
-    } else if (paramQ instanceof ah) {
+      f().ExceptionInVPackage((SerializableImpl)paramQ);
+    } else if (paramQ instanceof GInterfaceAh) {
       this.f.add(ExceptionPrintstacktrace());
-      ExceptionPrintstacktrace().ExceptionInVPackage((ah)paramQ);
-    } else if (paramQ instanceof ac) {
+      ExceptionPrintstacktrace().ExceptionInVPackage((GInterfaceAh)paramQ);
+    } else if (paramQ instanceof SerializableImplExceptionprintstacktrace) {
       this.f.add(e());
-      e().ExceptionInVPackage((ac)paramQ);
-      e().ExceptionInVPackage((((ac)paramQ).ExceptionInVPackage() == null));
+      e().ExceptionInVPackage((SerializableImplExceptionprintstacktrace)paramQ);
+      e().ExceptionInVPackage((((SerializableImplExceptionprintstacktrace)paramQ).ExceptionInVPackage() == null));
     } 
     fp.ExceptionInVPackage(this.ExceptionPrintstacktrace, (this.f.getComponentCount() > 0));
     this.f.doLayout();

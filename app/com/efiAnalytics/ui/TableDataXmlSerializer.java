@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 import V.ExceptionInVPackage;
-import W.an;
+import W.WInterfaceAn;
 import bH.X;
 import java.io.File;
 import java.io.FileInputStream;
@@ -79,7 +79,7 @@ public class TableDataXmlSerializer {
     return arrayOfString;
   }
   
-  private String[][] ExceptionInVPackage(an paraman) {
+  private String[][] ExceptionInVPackage(WInterfaceAn paraman) {
     String[][] arrayOfString = new String[(paraman.ExceptionInVPackage()).length][(paraman.b()).length];
     for (byte b = 0; b < arrayOfString.length; b++) {
       for (byte b1 = 0; b1 < (arrayOfString[0]).length; b1++) {

@@ -1,14 +1,14 @@
 package bt;
 
 import G.R;
-import G.aN;
-import G.aR;
-import G.bh;
-import G.bm;
-import G.bv;
-import G.cq;
-import G.cu;
-import G.db;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.CloneableImplUsingArrayList;
+import G.CloneableImplInGPackage;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDb;
 import G.RInterfaceIndia;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -31,8 +31,8 @@ import java.util.logging.Logger;
 import javax.swing.JPanel;
 import r.RInterfaceIndia;
 
-public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier, bP, TableModelListenerUsingArrayList, bc {
-  bh ExceptionInVPackage;
+public class BinTablePanel extends JPanel implements GInterfaceAn, GComponentCq, TextChangeNotifier, bP, TableModelListenerUsingArrayList, bc {
+  CloneableImplUsingArrayList ExceptionInVPackage;
   
   TableModelListenerUsingArrayList b;
   
@@ -48,29 +48,29 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
   
   List h = new ArrayList();
   
-  public T(R paramR, bm parambm, boolean paramBoolean1, boolean paramBoolean2) {
+  public T(R paramR, CloneableImplInGPackage parambm, boolean paramBoolean1, boolean paramBoolean2) {
     String str = parambm.aL() + "_accessoryTable";
     if (paramBoolean1)
       str = str + "_vertical"; 
-    bv bv = paramR.e().c(str);
-    if (bv != null && !(bv instanceof bh))
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(str);
+    if (ArrayListExceptionprintstacktraceInGPackage != null && !(ArrayListExceptionprintstacktraceInGPackage instanceof CloneableImplUsingArrayList))
       throw new ExceptionPrintstacktrace(str + ", name already used but not defined as ExceptionInVPackage 1DTable"); 
-    this.ExceptionInVPackage = (bh)bv;
+    this.ExceptionInVPackage = (CloneableImplUsingArrayList)ArrayListExceptionprintstacktraceInGPackage;
     if (this.ExceptionInVPackage == null) {
-      this.ExceptionInVPackage = new bh();
+      this.ExceptionInVPackage = new CloneableImplUsingArrayList();
       this.ExceptionInVPackage.b(parambm.l());
       byte b;
       for (b = 0; b < parambm.TableModelListenerUsingArrayList(); b++)
         this.ExceptionInVPackage.ExceptionInVPackage(parambm.b(b), parambm.ExceptionInVPackage(b)); 
       if (parambm.k() > 0) {
         for (b = 0; b < parambm.k(); b++) {
-          db db = parambm.e(b);
-          this.ExceptionInVPackage.ExceptionInVPackage(db);
+          GInterfaceDb GInterfaceDb = parambm.e(b);
+          this.ExceptionInVPackage.ExceptionInVPackage(GInterfaceDb);
         } 
       } else {
         for (b = 0; b < parambm.ExceptionPrintstacktrace(); b++) {
-          db db = parambm.c(b);
-          this.ExceptionInVPackage.ExceptionInVPackage(db);
+          GInterfaceDb GInterfaceDb = parambm.c(b);
+          this.ExceptionInVPackage.ExceptionInVPackage(GInterfaceDb);
         } 
       } 
       for (b = 0; b < parambm.k(); b++)
@@ -84,7 +84,7 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
       this.ExceptionInVPackage.ExceptionPrintstacktrace(parambm.n());
       this.ExceptionInVPackage.ExceptionInVPackage(parambm.z());
       this.ExceptionInVPackage.v(str);
-      paramR.e().ExceptionInVPackage((bv)this.ExceptionInVPackage);
+      paramR.e().ExceptionInVPackage((ArrayListExceptionprintstacktraceInGPackage)this.ExceptionInVPackage);
     } else if (!paramBoolean2) {
       this.ExceptionInVPackage.b(paramBoolean1);
       this.ExceptionInVPackage.u(parambm.aJ());
@@ -95,7 +95,7 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
     ExceptionInVPackage(paramR, this.ExceptionInVPackage, paramBoolean2);
   }
   
-  private void ExceptionInVPackage(R paramR, bh parambh, boolean paramBoolean) {
+  private void ExceptionInVPackage(R paramR, CloneableImplUsingArrayList parambh, boolean paramBoolean) {
     this.TableModelListenerUsingArrayList = paramR;
     this.ExceptionInVPackage = parambh;
     this.f = parambh.aJ();
@@ -110,7 +110,7 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
     setLayout(new BorderLayout());
     add("Center", (Component)this.b);
     try {
-      aR.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), parambh.TableModelListenerUsingArrayList(0), this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), parambh.TableModelListenerUsingArrayList(0), this);
     } catch (Exception exception) {
       D.TableModelListenerUsingArrayList("No Column Parameter");
     } 
@@ -153,8 +153,8 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
   }
   
   public void close() {
-    aR.ExceptionInVPackage().ExceptionInVPackage(this);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
     b();
   }
   
@@ -219,7 +219,7 @@ public class BinTablePanel extends JPanel implements aN, cq, TextChangeNotifier,
       parambP.ExceptionInVPackage(); 
   }
   
-  public bh ExceptionPrintstacktrace() {
+  public CloneableImplUsingArrayList ExceptionPrintstacktrace() {
     return this.ExceptionInVPackage;
   }
   

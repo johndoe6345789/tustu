@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import W.ap;
+import W.WInterfaceAp;
 import X.IOInXPackage;
 import bH.D;
 import bH.ab;
@@ -266,7 +266,7 @@ public class DialogUtilities {
     return a(paramComponent, paramString1, paramArrayOfString, paramString2, paramString3, paramBoolean1, paramck, paramBoolean2, null);
   }
   
-  public static String[] a(Component paramComponent, String paramString1, String[] paramArrayOfString, String paramString2, String paramString3, boolean paramBoolean1, ck paramck, boolean paramBoolean2, ap paramap) {
+  public static String[] a(Component paramComponent, String paramString1, String[] paramArrayOfString, String paramString2, String paramString3, boolean paramBoolean1, ck paramck, boolean paramBoolean2, WInterfaceAp paramap) {
     boolean bool = true;
     String str = "";
     if (paramArrayOfString != null)

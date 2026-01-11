@@ -1,6 +1,6 @@
 package aV;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
@@ -10,7 +10,7 @@ class MouseAdapterExtension extends MouseAdapter {
   b(a parama) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    NetworkHashMap.a().a(this.a.d, dd.a().c());
+    NetworkHashMap.a().a(this.a.d, ThreadedJFrameIsoptimizeddrawingenabled.a().c());
   }
   
   public void mouseEntered(MouseEvent paramMouseEvent) {

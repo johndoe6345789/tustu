@@ -3,7 +3,7 @@ package aI;
 import C.a;
 import C.b;
 import G.R;
-import G.dh;
+import G.GInterfaceDh;
 import G.m;
 import G.o;
 import V.ExceptionPrintstacktrace;
@@ -163,7 +163,7 @@ public class AiInterfacePapa implements q {
     } finally {
       try {
         if (this.a.O().T())
-          dh.b(this.a); 
+          GInterfaceDh.b(this.a); 
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(p.class.getName()).log(Level.WARNING, "Failed to stop turbo baud.", (Throwable)ExceptionPrintstacktrace);
       } 

@@ -1,15 +1,15 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.bq;
-import bt.aV;
+import G.GComponentBq;
+import bt.ExceptionUsingComponent;
 import com.efiAnalytics.ui.bV;
 import java.awt.Container;
 
-class EnableableValueEditor extends aV {
-  bq a;
+class EnableableValueEditor extends ExceptionUsingComponent {
+  GComponentBq a;
   
-  public EnableableValueEditor(OutputPortEditor paramOutputPortEditor, R paramR, bq parambq) {
+  public EnableableValueEditor(OutputPortEditor paramOutputPortEditor, R paramR, GComponentBq parambq) {
     super(paramR, parambq);
     this.a = parambq;
   }

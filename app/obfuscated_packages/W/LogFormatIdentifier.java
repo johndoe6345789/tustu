@@ -2,7 +2,7 @@ package W;
 
 import AkInterfaceVictor.ExceptionInVPackage;
 import ak.AkInterfaceVictor;
-import ak.aa;
+import ak.ExceptioninvpackageInAkPackage;
 import bH.D;
 import bH.I;
 import bH.t;
@@ -120,7 +120,7 @@ public class LogFormatIdentifier {
   
   public static String Z = "NSFW_PCM_Logger_CVS";
   
-  public static String aa = "Serdia_Log";
+  public static String ExceptioninvpackageInAkPackage = "Serdia_Log";
   
   public static String ab = "VehiCAL_Log";
   
@@ -148,7 +148,7 @@ public class LogFormatIdentifier {
       return Q; 
     if (str.endsWith(".etl"))
       return K; 
-    if (str.endsWith(".mdf") || str.endsWith(".mf4") || (str.endsWith(".dat") && t.ExceptionInVPackage(paramFile, aa.f)))
+    if (str.endsWith(".mdf") || str.endsWith(".mf4") || (str.endsWith(".dat") && t.ExceptionInVPackage(paramFile, ExceptioninvpackageInAkPackage.f)))
       return t.ExceptionInVPackage(paramFile, AkInterfaceVictor.ExceptionInVPackage) ? M : L; 
     if (str.endsWith(".dm3")) {
       String str1 = b(paramFile);
@@ -283,7 +283,7 @@ public class LogFormatIdentifier {
         if (str.indexOf("VAGHWNumber") >= 0)
           return X; 
         if (str.indexOf("SiE MDT Graph Log") >= 0)
-          return aa; 
+          return ExceptioninvpackageInAkPackage; 
         if (bool && b == 1 && str.indexOf("Elapsed time") >= 0)
           return ab; 
         if (str.startsWith("Clock Time, Elapsed Time"))

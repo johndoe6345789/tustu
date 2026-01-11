@@ -1,9 +1,9 @@
 package bt;
 
 import G.R;
-import G.aA;
-import G.bM;
-import G.bv;
+import G.ArrayList;
+import G.ExceptionprintstacktraceInGPackage;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
@@ -30,20 +30,20 @@ public class TuningMenuBuilder implements ActionListener {
   public bq a(bq parambq, R paramR, int paramInt) {
     this.c = paramInt;
     HashMap<Object, Object> hashMap = new HashMap<>();
-    Iterator<aA> iterator = paramR.e().b();
+    Iterator<ArrayList> iterator = paramR.e().b();
     while (iterator.hasNext()) {
-      aA aA = iterator.next();
+      ArrayList ArrayList = iterator.next();
       try {
-        if (!aA.c() && p.a(aA.i(), paramR)) {
-          String str = ExceptionPrintstacktrace.b(aA.e());
+        if (!ArrayList.c() && p.a(ArrayList.i(), paramR)) {
+          String str = ExceptionPrintstacktrace.b(ArrayList.e());
           JMenu jMenu = (JMenu)hashMap.get(str);
           if (jMenu == null) {
             jMenu = new JMenu(str);
-            jMenu.setEnabled(p.a(aA.aJ(), paramR));
+            jMenu.setEnabled(p.a(ArrayList.aJ(), paramR));
             hashMap.put(str, jMenu);
           } 
-          if (aA.b()) {
-            a(paramR, aA.a(), jMenu);
+          if (ArrayList.b()) {
+            a(paramR, ArrayList.a(), jMenu);
             if (jMenu.getMenuComponentCount() > 0)
               parambq.add(jMenu); 
           } 
@@ -53,14 +53,14 @@ public class TuningMenuBuilder implements ActionListener {
     return parambq;
   }
   
-  private void a(R paramR, Iterator<aA> paramIterator, JMenu paramJMenu) {
-    aA aA = null;
+  private void a(R paramR, Iterator<ArrayList> paramIterator, JMenu paramJMenu) {
+    ArrayList ArrayList = null;
     while (paramIterator.hasNext()) {
-      aA aA1 = paramIterator.next();
+      ArrayList aA1 = paramIterator.next();
       try {
         if (!aA1.c() && p.a(aA1.i(), paramR)) {
-          bv bv = paramR.e().c(aA1.d());
-          if (a(bv)) {
+          ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(aA1.d());
+          if (a(ArrayListExceptionprintstacktraceInGPackage)) {
             String str = ExceptionPrintstacktrace.b(aA1.e());
             if (aA1.b()) {
               JMenu jMenu = new JMenu(str);
@@ -79,19 +79,19 @@ public class TuningMenuBuilder implements ActionListener {
               jMenuItem.setEnabled(p.a(aA1.aJ(), paramR));
               jMenuItem.setIcon(this.b.a(aA1));
               paramJMenu.add(jMenuItem);
-              aA = aA1;
+              ArrayList = aA1;
             } 
             continue;
           } 
-          if (bv != null && a(paramR, bv)) {
+          if (ArrayListExceptionprintstacktraceInGPackage != null && a(paramR, ArrayListExceptionprintstacktraceInGPackage)) {
             String str = ExceptionPrintstacktrace.b(aA1.e());
             JMenu jMenu = new JMenu(str);
             jMenu.setIcon(this.b.a(aA1));
-            a(paramR, bv, jMenu);
+            a(paramR, ArrayListExceptionprintstacktraceInGPackage, jMenu);
             paramJMenu.add(jMenu);
             continue;
           } 
-          if (bv == null && a(paramR, aA1)) {
+          if (ArrayListExceptionprintstacktraceInGPackage == null && a(paramR, aA1)) {
             String str = ExceptionPrintstacktrace.b(aA1.e());
             JMenu jMenu = new JMenu(str);
             a(paramR, aA1.a(), jMenu);
@@ -99,24 +99,24 @@ public class TuningMenuBuilder implements ActionListener {
           } 
           continue;
         } 
-        if (aA1.c() && aA != null && !aA.c() && paramIterator.hasNext()) {
+        if (aA1.c() && ArrayList != null && !ArrayList.c() && paramIterator.hasNext()) {
           paramJMenu.addSeparator();
-          aA = aA1;
+          ArrayList = aA1;
         } 
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     } 
   }
   
-  private void a(R paramR, bv parambv, JMenu paramJMenu) {
-    Iterator<bv> iterator = parambv.K();
+  private void a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, JMenu paramJMenu) {
+    Iterator<ArrayListExceptionprintstacktraceInGPackage> iterator = parambv.K();
     while (iterator.hasNext()) {
-      bv bv1 = iterator.next();
+      ArrayListExceptionprintstacktraceInGPackage bv1 = iterator.next();
       if (a(bv1)) {
         try {
-          String str = bM.a(paramR, bv1.aL());
+          String str = ExceptionprintstacktraceInGPackage.a(paramR, bv1.aL());
           boolean bool = p.a(str, paramR);
           if (bool) {
-            JMenuItem jMenuItem = new JMenuItem(bM.c(paramR, bv1.aL()));
+            JMenuItem jMenuItem = new JMenuItem(ExceptionprintstacktraceInGPackage.c(paramR, bv1.aL()));
             jMenuItem.addActionListener(this);
             jMenuItem.setActionCommand(bv1.aL());
             jMenuItem.setIcon(this.b.a(bv1, null, null));
@@ -133,15 +133,15 @@ public class TuningMenuBuilder implements ActionListener {
     } 
   }
   
-  private boolean a(bv parambv) {
+  private boolean a(ArrayListExceptionprintstacktraceInGPackage parambv) {
     byte b = 0;
     if (parambv instanceof G.be) {
       b = 1;
     } else if (parambv instanceof G.bm) {
       b = 2;
-    } else if (parambv instanceof bv && parambv.R() == 3 && parambv.S()) {
+    } else if (parambv instanceof ArrayListExceptionprintstacktraceInGPackage && parambv.R() == 3 && parambv.S()) {
       b = 1;
-    } else if (parambv instanceof bv && (parambv.R() == 3 || parambv.R() == 4) && parambv.T()) {
+    } else if (parambv instanceof ArrayListExceptionprintstacktraceInGPackage && (parambv.R() == 3 || parambv.R() == 4) && parambv.T()) {
       b = 2;
     } else {
       b = -1;
@@ -149,36 +149,36 @@ public class TuningMenuBuilder implements ActionListener {
     return ((b & this.c) == b);
   }
   
-  private boolean a(R paramR, aA paramaA) {
-    bv bv = paramR.e().c(paramaA.d());
-    if (bv != null && (a(bv) || a(paramR, bv)))
+  private boolean a(R paramR, ArrayList paramaA) {
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(paramaA.d());
+    if (ArrayListExceptionprintstacktraceInGPackage != null && (a(ArrayListExceptionprintstacktraceInGPackage) || a(paramR, ArrayListExceptionprintstacktraceInGPackage)))
       return true; 
     if (paramaA.b()) {
-      Iterator<aA> iterator = paramaA.a();
+      Iterator<ArrayList> iterator = paramaA.a();
       while (iterator.hasNext()) {
-        aA aA1 = iterator.next();
-        bv = paramR.e().c(aA1.d());
-        if (bv != null && (a(bv) || a(paramR, bv)))
+        ArrayList aA1 = iterator.next();
+        ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(aA1.d());
+        if (ArrayListExceptionprintstacktraceInGPackage != null && (a(ArrayListExceptionprintstacktraceInGPackage) || a(paramR, ArrayListExceptionprintstacktraceInGPackage)))
           return true; 
       } 
     } 
     return false;
   }
   
-  private boolean a(R paramR, bv parambv) {
+  private boolean a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     if (parambv.L()) {
-      Iterator<bv> iterator = parambv.K();
+      Iterator<ArrayListExceptionprintstacktraceInGPackage> iterator = parambv.K();
       while (iterator.hasNext()) {
-        bv bv1 = iterator.next();
+        ArrayListExceptionprintstacktraceInGPackage bv1 = iterator.next();
         if (a(bv1))
           try {
-            String str = bM.a(paramR, bv1.aL());
+            String str = ExceptionprintstacktraceInGPackage.a(paramR, bv1.aL());
             return p.a(str, paramR);
           } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
             return true;
           }  
         if (bv1.L() && a(paramR, bv1)) {
-          String str = bM.a(paramR, bv1.aL());
+          String str = ExceptionprintstacktraceInGPackage.a(paramR, bv1.aL());
           try {
             if (p.a(str, paramR))
               return true; 

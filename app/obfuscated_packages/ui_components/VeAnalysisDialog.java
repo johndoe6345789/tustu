@@ -7,7 +7,7 @@ import W.n;
 import bH.D;
 import bH.T;
 import bH.X;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import com.efiAnalytics.tuningwidgets.panels.aP;
 import com.efiAnalytics.ui.BinTableView;
 import com.efiAnalytics.ui.b;
@@ -566,7 +566,7 @@ public class eK extends JDialog implements IComponentAlpha, IComponentAlpha {
     try {
       s s = null;
       if (b.IComponentAlpha().IComponentAlpha("advancedVeAnalyze"))
-        s = bQ.IComponentAlpha().IComponentAlpha(this.IComponentAlpha.ExceptionPrintstacktrace(), this.IComponentAlpha.getName()); 
+        s = ManagerBfcomponentcharlie.IComponentAlpha().IComponentAlpha(this.IComponentAlpha.ExceptionPrintstacktrace(), this.IComponentAlpha.getName()); 
       this.d.IComponentAlpha(this.e, this.f, s, this.l, b, this.j, this.k, arrayOfE);
     } catch (VInterfaceHotel VInterfaceHotel) {
       k.IComponentAlpha(VInterfaceHotel.getMessage(), this);
@@ -663,7 +663,7 @@ public class eK extends JDialog implements IComponentAlpha, IComponentAlpha {
   
   private void f() {
     try {
-      s s = bQ.IComponentAlpha().IComponentAlpha(this.IComponentAlpha.ExceptionPrintstacktrace(), this.IComponentAlpha.getName());
+      s s = ManagerBfcomponentcharlie.IComponentAlpha().IComponentAlpha(this.IComponentAlpha.ExceptionPrintstacktrace(), this.IComponentAlpha.getName());
       aP aP = new aP(null, s, this.IComponentAlpha.getName());
       IComponentAlpha((bc)aP);
       aP.setPreferredSize(new Dimension(eJ.IComponentAlpha(290), eJ.IComponentAlpha(170)));

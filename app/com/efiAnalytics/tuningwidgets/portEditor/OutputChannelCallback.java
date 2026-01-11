@@ -1,9 +1,9 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.aH;
+import G.SerializableImpl;
 
 public interface OutputChannelCallback {
-  void a(aH paramaH);
+  void a(SerializableImpl paramaH);
 }
 
 

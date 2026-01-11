@@ -1,17 +1,17 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class SmoothBasicFunction extends ac {
-  private ab a;
+public class SmoothBasicFunction extends AbstractInAxPackage {
+  private AxInterfaceAb a;
   
-  private ab b;
+  private AxInterfaceAb b;
   
   private double c = Double.NaN;
   
-  public P(ab paramab1, ab paramab2) {
+  public P(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
   }

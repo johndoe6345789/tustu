@@ -1,13 +1,13 @@
 package J;
 
-import G.cR;
-import G.cu;
+import G.GInterfaceCr;
+import G.ManagerUsingArrayList;
 import bH.D;
 import bH.c;
 import bH.d;
 import java.io.Serializable;
 
-public class SerializableImpl implements cR, Serializable {
+public class SerializableImpl implements GInterfaceCr, Serializable {
   d a = new d();
   
   private boolean h = true;
@@ -31,7 +31,7 @@ public class SerializableImpl implements cR, Serializable {
   public SerializableImpl() {
     String[] arrayOfString = this.f.s();
     for (byte b = 0; b < arrayOfString.length; b++)
-      cu.a().d(arrayOfString[b]); 
+      ManagerUsingArrayList.a().d(arrayOfString[b]); 
     this.f.b();
   }
   
@@ -276,10 +276,10 @@ public class SerializableImpl implements cR, Serializable {
   
   private void g() {
     if (this.c < this.f.f()) {
-      cu.a().a("protocolError", 1.0D);
+      ManagerUsingArrayList.a().a("protocolError", 1.0D);
       this.c = this.f.f();
     } else {
-      cu.a().a("protocolError", 0.0D);
+      ManagerUsingArrayList.a().a("protocolError", 0.0D);
     } 
     this.f.an();
   }

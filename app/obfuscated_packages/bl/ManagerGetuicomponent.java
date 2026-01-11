@@ -1,14 +1,14 @@
 package bl;
 
 import G.R;
-import G.bM;
-import G.be;
-import G.bm;
-import G.bq;
-import G.bv;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
+import G.CloneableImplInGPackage;
+import G.GComponentBq;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import bH.D;
-import bt.aV;
-import bt.bh;
+import bt.ExceptionUsingComponent;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.plugin.ecu.servers.UiSettingServer;
 import com.efiAnalytics.ui.bc;
 import java.awt.Component;
@@ -33,13 +33,13 @@ public class ManagerGetuicomponent implements UiSettingServer {
   
   public JComponent getUiComponent(String paramString) {
     if (this.a.c(paramString) != null) {
-      bq bq = bM.d(this.a, paramString);
-      if (bq != null)
-        return (JComponent)new aV(this.a, bq); 
+      GComponentBq GComponentBq = ExceptionprintstacktraceInGPackage.d(this.a, paramString);
+      if (GComponentBq != null)
+        return (JComponent)new ExceptionUsingComponent(this.a, GComponentBq); 
     } 
     if (this.a.e().c(paramString) != null) {
-      bv bv = this.a.e().c(paramString);
-      return (JComponent)new bh(this.a, bv);
+      ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = this.a.e().c(paramString);
+      return (JComponent)new ExceptionEqualsinaipackage(this.a, ArrayListExceptionprintstacktraceInGPackage);
     } 
     D.d("UiSettingServer:: UiComponent not found in Configuration: " + this.a.c());
     return null;
@@ -62,11 +62,11 @@ public class ManagerGetuicomponent implements UiSettingServer {
   public List getUiPanelNames() {
     if (this.b == null) {
       this.b = new ArrayList();
-      Iterator<bv> iterator = this.a.e().d();
+      Iterator<ArrayListExceptionprintstacktraceInGPackage> iterator = this.a.e().d();
       while (iterator.hasNext()) {
-        bv bv = iterator.next();
-        if (!(bv instanceof be) && !(bv instanceof bm))
-          this.b.add(bv.aL()); 
+        ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = iterator.next();
+        if (!(ArrayListExceptionprintstacktraceInGPackage instanceof CloneableImpl) && !(ArrayListExceptionprintstacktraceInGPackage instanceof CloneableImplInGPackage))
+          this.b.add(ArrayListExceptionprintstacktraceInGPackage.aL()); 
       } 
     } 
     return this.b;
@@ -75,11 +75,11 @@ public class ManagerGetuicomponent implements UiSettingServer {
   public List getUiCurves() {
     if (this.d == null) {
       this.d = new ArrayList();
-      Iterator<bv> iterator = this.a.e().d();
+      Iterator<ArrayListExceptionprintstacktraceInGPackage> iterator = this.a.e().d();
       while (iterator.hasNext()) {
-        bv bv = iterator.next();
-        if (bv instanceof bm)
-          this.d.add(g.a((bm)bv)); 
+        ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = iterator.next();
+        if (ArrayListExceptionprintstacktraceInGPackage instanceof CloneableImplInGPackage)
+          this.d.add(g.a((CloneableImplInGPackage)ArrayListExceptionprintstacktraceInGPackage)); 
       } 
     } 
     return this.d;
@@ -88,7 +88,7 @@ public class ManagerGetuicomponent implements UiSettingServer {
   public List getUiTable() {
     if (this.c == null) {
       this.c = new ArrayList();
-      Iterator<be> iterator = this.a.n();
+      Iterator<CloneableImpl> iterator = this.a.n();
       while (iterator.hasNext())
         this.c.add(q.a(iterator.next())); 
     } 

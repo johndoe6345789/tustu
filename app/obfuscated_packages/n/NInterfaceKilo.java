@@ -1,6 +1,6 @@
 package AyComponentNovember;
 
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import V.ExceptionInVPackage;
 import ay.FileInAyPackage;
 import ay.AyComponentNovember;
@@ -30,7 +30,7 @@ public class NInterfaceKilo implements AyComponentOscar {
     return ExceptionInVPackage;
   }
   
-  public void ExceptionInVPackage(bT parambT) {
+  public void ExceptionInVPackage(AeInterfaceMikeTostring parambT) {
     ExceptionInVPackage.ExceptionInVPackage().b(ExceptionInVPackage.W + parambT.b(), parambT.b());
     ExceptionInVPackage.ExceptionInVPackage().b(ExceptionInVPackage.X + parambT.b(), parambT.c());
     try {

@@ -3,8 +3,8 @@ package ao;
 import V.ExceptionInVPackage;
 import W.U;
 import W.X;
-import W.ap;
-import W.ar;
+import W.WInterfaceAp;
+import W.Properties;
 import ai.JPanelExtensionInAiPackage;
 import as.ExceptionInVPackage;
 import as.JDialogExtensionDispose;
@@ -1996,8 +1996,8 @@ public class cd extends JFrame implements hi, WindowListener {
   public String[] b(String paramString) {
     String[] arrayOfString1 = W();
     String str = i.JMenuItemExtensionInBaPackage("lastFileDir", BiInterfaceHotel.ArrayListInBvPackage());
-    ar ar = new ar(i.JPanelExtensionInAiPackage(), "FileDialog_");
-    String[] arrayOfString2 = bV.ExceptionInVPackage(this, paramString, arrayOfString1, (String)null, str, true, null, true, (ap)ar);
+    Properties Properties = new Properties(i.JPanelExtensionInAiPackage(), "FileDialog_");
+    String[] arrayOfString2 = bV.ExceptionInVPackage(this, paramString, arrayOfString1, (String)null, str, true, null, true, (WInterfaceAp)Properties);
     if (arrayOfString2 != null && arrayOfString2.length >= 1 && arrayOfString2[0] != null && arrayOfString2[0].lastIndexOf(File.separator) != -1) {
       String str1 = arrayOfString2[0].substring(0, arrayOfString2[0].lastIndexOf(File.separator));
       i.IOJMenu("lastFileDir", str1);

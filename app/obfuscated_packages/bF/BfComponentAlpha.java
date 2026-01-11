@@ -1,7 +1,7 @@
 package bF;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class BfComponentAlpha implements x {
   R a;
   
-  aM b;
+  Manager b;
   
   public BfComponentAlpha(R paramR, String paramString) {
     this.a = paramR;

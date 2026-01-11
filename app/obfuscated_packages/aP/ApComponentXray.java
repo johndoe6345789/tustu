@@ -1,8 +1,8 @@
 package aP;
 
-import G.ab;
+import G.GInterfaceAb;
 
-class ApComponentXray implements ab {
+class ApComponentXray implements GInterfaceAb {
   x(f paramf) {}
   
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {

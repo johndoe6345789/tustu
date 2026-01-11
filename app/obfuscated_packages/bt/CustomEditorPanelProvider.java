@@ -1,13 +1,13 @@
 package bt;
 
 import G.R;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import javax.swing.JPanel;
 
 public interface CustomEditorPanelProvider {
-  boolean a(bv parambv);
+  boolean a(ArrayListExceptionprintstacktraceInGPackage parambv);
   
-  JPanel a(R paramR, bv parambv);
+  JPanel a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv);
 }
 
 

@@ -3,12 +3,12 @@ package h;
 import W.V;
 import W.W;
 import W.X;
-import W.aa;
-import W.ak;
-import ak.aI;
-import ak.ao;
-import ak.AkComponentEcho;
-import ak.AkGolfImpl;
+import W.NetworkExceptionprintstacktrace;
+import W.IOInWPackage;
+import IOInWPackage.aI;
+import IOInWPackage.ao;
+import IOInWPackage.AkComponentEcho;
+import IOInWPackage.AkGolfImpl;
 import bH.X;
 import AkGolfImpl.JInterfaceAlpha;
 import j.JInterfaceAlpha;
@@ -142,13 +142,13 @@ public class ClassTypeInHPackage {
         char[] arrayOfChar = { 
             'E', 'F', 'I', 'A', 'K', 'AkComponentEcho', 'y', '!', '0', '8', 
             '8', '2', '8', '3', '5', '4' };
-        ak.JInterfaceAlpha(arrayOfChar);
+        IOInWPackage.JInterfaceAlpha(arrayOfChar);
       } else if (paramString2.equals(AkComponentEcho + b)) {
         b();
         char[] arrayOfChar = { 
             'E', 'F', 'I', 'A', 'K', 'AkComponentEcho', 'y', '!', '0', '8', 
             '8', '2', '8', '3', '5', '4' };
-        ak.JInterfaceAlpha(arrayOfChar);
+        IOInWPackage.JInterfaceAlpha(arrayOfChar);
       } else if (paramString2.equals(c + b)) {
         this.JInterfaceAlpha.add("tuningPanelVisible");
         this.JInterfaceAlpha.add("showRegisterTab");
@@ -193,7 +193,7 @@ public class ClassTypeInHPackage {
     this.JInterfaceAlpha.add("tuningPanelVisible");
     this.JInterfaceAlpha.add("fieldNameNormalization");
     AkGolfImpl.b.JInterfaceAlpha(2500);
-    aa.d = true;
+    NetworkExceptionprintstacktrace.d = true;
     W.JInterfaceAlpha().JInterfaceAlpha(X.JInterfaceAlpha, AkComponentEcho.class);
     W.JInterfaceAlpha().JInterfaceAlpha(X.w, AkComponentEcho.class);
     W.JInterfaceAlpha().JInterfaceAlpha(X.I, ao.class);
@@ -235,7 +235,7 @@ public class ClassTypeInHPackage {
     this.JInterfaceAlpha.add("timeslipData");
     this.JInterfaceAlpha.add(";lkewlk nbi3k48tjh265'");
     i.v = ",";
-    aa.d = true;
+    NetworkExceptionprintstacktrace.d = true;
     W.JInterfaceAlpha().JInterfaceAlpha(X.JInterfaceAlpha, AkGolfImpl.class);
     W.JInterfaceAlpha().JInterfaceAlpha(X.w, AkComponentEcho.class);
     W.JInterfaceAlpha().JInterfaceAlpha(X.I, ao.class);

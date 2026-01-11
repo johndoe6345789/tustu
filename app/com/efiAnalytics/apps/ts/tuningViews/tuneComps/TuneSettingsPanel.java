@@ -2,11 +2,11 @@ package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
 import G.R;
 import G.T;
-import G.bD;
-import G.bM;
-import G.bv;
+import G.GInterfaceBd;
+import G.ExceptionprintstacktraceInGPackage;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import bt.Q;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import bt.e;
 import com.efiAnalytics.apps.ts.tuningViews.TuneViewComponent;
 import com.efiAnalytics.apps.ts.tuningViews.h;
@@ -27,7 +27,7 @@ public class TuneSettingsPanel extends TuneViewComponent implements bc {
   
   JLabel d = new JLabel();
   
-  bh e = null;
+  ExceptionEqualsinaipackage e = null;
   
   JScrollPane f = new JScrollPane();
   
@@ -78,19 +78,19 @@ public class TuneSettingsPanel extends TuneViewComponent implements bc {
   
   private void updateSelectedPanel() {
     if (getSettingPanelName() != null) {
-      bD bD;
+      GInterfaceBd GInterfaceBd;
       R r = getEcuConfiguration();
-      bv bv = r.e().c(getSettingPanelName());
+      ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.e().c(getSettingPanelName());
       closeSettingsPanel();
-      if (bv == null && getSettingPanelName().startsWith("std_")) {
-        bD = new bD();
-        bD.v(getSettingPanelName());
-        int i = bM.k(r, getSettingPanelName());
-        bD.a(i);
-        r.e().a((bv)bD);
+      if (ArrayListExceptionprintstacktraceInGPackage == null && getSettingPanelName().startsWith("std_")) {
+        GInterfaceBd = new GInterfaceBd();
+        GInterfaceBd.v(getSettingPanelName());
+        int i = ExceptionprintstacktraceInGPackage.k(r, getSettingPanelName());
+        GInterfaceBd.a(i);
+        r.e().a((ArrayListExceptionprintstacktraceInGPackage)GInterfaceBd);
       } 
-      if (bD != null) {
-        this.e = new bh(r, (bv)bD);
+      if (GInterfaceBd != null) {
+        this.e = new ExceptionEqualsinaipackage(r, (ArrayListExceptionprintstacktraceInGPackage)GInterfaceBd);
         this.f.setViewportView((Component)this.e);
         e.a().a(r.c(), this.e);
       } 

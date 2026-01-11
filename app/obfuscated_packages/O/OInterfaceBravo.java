@@ -1,12 +1,12 @@
 package O;
 
-import G.bT;
-import G.cX;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCx;
 import bH.D;
 import bH.c;
 
-public class OInterfaceBravo implements cX {
-  public boolean a(bT parambT) {
+public class OInterfaceBravo implements GInterfaceCx {
+  public boolean a(AeInterfaceMikeTostring parambT) {
     if (parambT != null && parambT.b() != null && (parambT.b().startsWith("BigStuff Gen4") || parambT.b().startsWith("BigStuff Rim")))
       return true; 
     if (parambT != null && parambT.a() != null)

@@ -1,8 +1,8 @@
 package aY;
 
-import aP.aU;
+import aP.ApInterfaceAu;
 
-class AyInterfaceTango implements aU {
+class AyInterfaceTango implements ApInterfaceAu {
   t(s params) {}
   
   public void a(String paramString) {

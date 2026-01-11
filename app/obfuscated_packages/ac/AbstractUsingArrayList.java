@@ -1,16 +1,16 @@
-package ac;
+package SerializableImplExceptionprintstacktrace;
 
 import G.J;
 import G.R;
 import G.T;
-import G.aF;
-import G.ac;
-import G.cq;
-import G.cu;
+import G.GInterfaceAf;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import G.i;
 import L.y;
 import V.ExceptionInVPackage;
-import W.as;
+import W.OutputStreamExtension;
 import W.e;
 import bH.D;
 import bH.aa;
@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class AbstractUsingArrayList implements aF {
+public abstract class AbstractUsingArrayList implements GInterfaceAf {
   protected ArrayList d = new ArrayList();
   
   static List e = new ArrayList();
@@ -66,7 +66,7 @@ public abstract class AbstractUsingArrayList implements aF {
   
   private boolean t = true;
   
-  private cq u = null;
+  private GComponentCq u = null;
   
   private static B v = null;
   
@@ -165,7 +165,7 @@ public abstract class AbstractUsingArrayList implements aF {
     } 
     for (String str : hashMap.keySet()) {
       List list = (List)hashMap.get(str);
-      cu.ExceptionInVPackage().ExceptionInVPackage(str, list, this.u);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(str, list, this.u);
     } 
     D.c("Time to subscribe all data log channels: " + aa.d());
     try {
@@ -191,7 +191,7 @@ public abstract class AbstractUsingArrayList implements aF {
     this.h = true;
     try {
       String str1 = paramArrayOfString[0];
-      String str2 = "Channels active on main config " + str1 + ": " + cu.ExceptionInVPackage().b(str1);
+      String str2 = "Channels active on main config " + str1 + ": " + ManagerUsingArrayList.ExceptionInVPackage().b(str1);
       D.d(str2);
     } catch (Exception exception) {}
   }
@@ -219,7 +219,7 @@ public abstract class AbstractUsingArrayList implements aF {
         b--;
       } 
       ExceptionInVPackage(this.g);
-      cu.ExceptionInVPackage().ExceptionInVPackage(this.u);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.u);
       q();
       if (!this.m && this.l != null && this.l.exists()) {
         D.d("No records written to log file: " + this.l.getName() + ", will delete.");
@@ -234,7 +234,7 @@ public abstract class AbstractUsingArrayList implements aF {
       this.k.ExceptionInVPackage(); 
   }
   
-  protected boolean ExceptionInVPackage(R paramR, ac paramac) {
+  protected boolean ExceptionInVPackage(R paramR, SerializableImplExceptionprintstacktrace paramac) {
     String str = T.ExceptionInVPackage().c().equals(paramR) ? "" : paramR.c();
     return (!ExceptionInVPackage(str, this.r, paramac.b()) && r.ExceptionInVPackage(paramR, paramac));
   }
@@ -256,31 +256,31 @@ public abstract class AbstractUsingArrayList implements aF {
     for (byte b = 0; b < paramArrayOfR.length; b++) {
       if (paramArrayOfR[b].S()) {
         q = 0;
-        for (ac ac : paramArrayOfR[b].g()) {
-          if (ExceptionInVPackage(paramArrayOfR[b], ac)) {
+        for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : paramArrayOfR[b].g()) {
+          if (ExceptionInVPackage(paramArrayOfR[b], SerializableImplExceptionprintstacktrace)) {
             q q = new q();
             if (b == 0) {
-              String str = ac.b();
+              String str = SerializableImplExceptionprintstacktrace.b();
               byte b1 = 0;
               while (ExceptionInVPackage(arrayList, str))
-                str = ac.b() + "_" + b1++; 
+                str = SerializableImplExceptionprintstacktrace.b() + "_" + b1++; 
               q.ExceptionInVPackage(str);
             } else {
-              String str = paramArrayOfR[b].c() + "." + ac.b();
+              String str = paramArrayOfR[b].c() + "." + SerializableImplExceptionprintstacktrace.b();
               byte b1 = 0;
               while (ExceptionInVPackage(arrayList, str))
-                str = paramArrayOfR[b].c() + "." + ac.b() + "_" + b1++; 
+                str = paramArrayOfR[b].c() + "." + SerializableImplExceptionprintstacktrace.b() + "_" + b1++; 
               q.ExceptionInVPackage(str);
             } 
             q.b(paramArrayOfR[b].c());
-            q.ExceptionInVPackage(ac);
+            q.ExceptionInVPackage(SerializableImplExceptionprintstacktrace);
             q.ExceptionInVPackage(b);
-            q.ExceptionInVPackage(paramArrayOfR[b].g(ac.ExceptionInVPackage()));
-            q.b(ac.f());
+            q.ExceptionInVPackage(paramArrayOfR[b].g(SerializableImplExceptionprintstacktrace.ExceptionInVPackage()));
+            q.b(SerializableImplExceptionprintstacktrace.f());
             if (q.h() > q)
               q = q.h(); 
-            q.c(ac.m());
-            q.d(ac.n());
+            q.c(SerializableImplExceptionprintstacktrace.m());
+            q.d(SerializableImplExceptionprintstacktrace.n());
             arrayList.add(q);
           } 
         } 
@@ -333,7 +333,7 @@ public abstract class AbstractUsingArrayList implements aF {
       } 
       long l3 = System.nanoTime() - l2;
       if (v != null)
-        cu.ExceptionInVPackage().ExceptionInVPackage("dataLogTime", v.ExceptionInVPackage()); 
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage("dataLogTime", v.ExceptionInVPackage()); 
       ExceptionInVPackage(this.g, arrayOfByte);
       long l4 = System.nanoTime() - l2 - l3;
       p();
@@ -382,10 +382,10 @@ public abstract class AbstractUsingArrayList implements aF {
       exception.printStackTrace();
     } 
     e e = new e(new FileOutputStream(file));
-    as as = new as((OutputStream)e);
+    OutputStreamExtension OutputStreamExtension = new OutputStreamExtension((OutputStream)e);
     this.l = file;
     this.m = false;
-    return (OutputStream)as;
+    return (OutputStream)OutputStreamExtension;
   }
   
   public String n() {
@@ -474,7 +474,7 @@ public abstract class AbstractUsingArrayList implements aF {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/h.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/SerializableImplExceptionprintstacktrace/h.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

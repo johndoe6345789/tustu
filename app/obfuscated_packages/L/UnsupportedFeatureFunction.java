@@ -1,10 +1,10 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 import bH.D;
 
-public class UnsupportedFeatureFunction extends ac {
+public class UnsupportedFeatureFunction extends AbstractInAxPackage {
   String a = "";
   
   boolean b = false;

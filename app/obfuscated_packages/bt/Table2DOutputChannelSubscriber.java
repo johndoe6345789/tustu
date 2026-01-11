@@ -1,14 +1,14 @@
 package bt;
 
 import G.R;
-import G.be;
-import G.cq;
-import G.cu;
+import G.CloneableImpl;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.w;
 
-class Table2DOutputChannelSubscriber implements cq, bP {
+class Table2DOutputChannelSubscriber implements GComponentCq, bP {
   double ExceptionInVPackage = Double.NaN;
   
   w b;
@@ -17,9 +17,9 @@ class Table2DOutputChannelSubscriber implements cq, bP {
   
   R c;
   
-  be d;
+  CloneableImpl d;
   
-  public H(R paramR, be parambe, w paramw) {
+  public H(R paramR, CloneableImpl parambe, w paramw) {
     this.c = paramR;
     this.d = parambe;
     this.b = paramw;
@@ -39,15 +39,15 @@ class Table2DOutputChannelSubscriber implements cq, bP {
   
   public void ExceptionInVPackage() {
     try {
-      cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
-      cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.d(), this);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.d(), this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
     } 
   }
   
   public void b() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   public void ExceptionInVPackage(p paramp) {

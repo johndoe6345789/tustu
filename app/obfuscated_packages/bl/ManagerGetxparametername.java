@@ -1,6 +1,6 @@
 package bl;
 
-import G.be;
+import G.CloneableImpl;
 import com.efiAnalytics.plugin.ecu.UiTable;
 
 public class ManagerGetxparametername implements UiTable {
@@ -64,7 +64,7 @@ public class ManagerGetxparametername implements UiTable {
     this.f = paramString;
   }
   
-  public static q a(be parambe) {
+  public static q a(CloneableImpl parambe) {
     q q1 = new q();
     q1.a(parambe.aL());
     q1.e(parambe.d());

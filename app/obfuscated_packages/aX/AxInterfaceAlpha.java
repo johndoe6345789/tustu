@@ -1,7 +1,7 @@
 package aX;
 
 import A.Exception;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.fL;
 import com.efiAnalytics.ui.fS;
@@ -77,7 +77,7 @@ public class AxInterfaceAlpha implements fS {
   public void a(Window paramWindow) {
     String str = g.b("Pair Bluetooth Adapter");
     this.b = this.a.a(paramWindow, str);
-    dd.a().a(this.b);
+    ThreadedJFrameIsoptimizeddrawingenabled.a().a(this.b);
     this.b.setVisible(true);
   }
 }

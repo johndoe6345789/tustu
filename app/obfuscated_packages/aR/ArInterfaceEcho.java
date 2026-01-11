@@ -1,6 +1,6 @@
 package aR;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
@@ -20,7 +20,7 @@ public class ArInterfaceEcho implements DComponentCharlie {
   }
   
   public void a(Properties paramProperties) {
-    NetworkHashMap.a().b(dd.a().DComponentCharlie());
+    NetworkHashMap.a().b(ThreadedJFrameIsoptimizeddrawingenabled.a().DComponentCharlie());
   }
   
   public String a() {

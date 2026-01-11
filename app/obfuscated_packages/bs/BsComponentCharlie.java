@@ -1,6 +1,6 @@
 package bs;
 
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
@@ -18,7 +18,7 @@ class BsComponentCharlie implements fy {
     if (paramString.equals(""))
       return true; 
     try {
-      double d = i.a((aI)this.b.a, " " + paramString + " ");
+      double d = i.a((GInterfaceAi)this.b.a, " " + paramString + " ");
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       bV.d("Error:" + ExceptionPrintstacktrace.getMessage(), this.a);
       return false;

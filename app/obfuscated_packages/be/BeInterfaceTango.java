@@ -1,8 +1,8 @@
 package be;
 
 import G.R;
-import G.ac;
-import G.ah;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GInterfaceAh;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -70,11 +70,11 @@ public class BeInterfaceTango extends JPanel {
     return true;
   }
   
-  public ac b() {
+  public SerializableImplExceptionprintstacktrace b() {
     return this.d.isSelected() ? this.a.a() : null;
   }
   
-  public ah c() {
+  public GInterfaceAh c() {
     return this.c.isSelected() ? this.b.a() : null;
   }
 }

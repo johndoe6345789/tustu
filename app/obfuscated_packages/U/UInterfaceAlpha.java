@@ -2,14 +2,14 @@ package U;
 
 import S.SInterfaceGolf;
 import S.SInterfaceJuliet;
-import W.ap;
+import W.WInterfaceAp;
 
 public class UInterfaceAlpha implements SInterfaceGolf {
   public static String a = "Data log";
   
   public static String b = "Stop Data log";
   
-  private ap e = null;
+  private WInterfaceAp e = null;
   
   SInterfaceJuliet c = null;
   
@@ -41,7 +41,7 @@ public class UInterfaceAlpha implements SInterfaceGolf {
     return null;
   }
   
-  public void a(ap paramap) {
+  public void a(WInterfaceAp paramap) {
     this.e = paramap;
   }
 }

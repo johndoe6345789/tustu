@@ -2,7 +2,7 @@ package ak;
 
 import V.ExceptionInVPackage;
 import W.X;
-import W.ah;
+import W.ManagerUsingReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -49,12 +49,12 @@ public class AkInterfaceIndia extends g {
     String str4 = "";
     String str5 = "";
     byte b = 0;
-    ah ah = null;
+    ManagerUsingReader ManagerUsingReader = null;
     try {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
-      ah = new ah(new InputStreamReader(fileInputStream));
-      str1 = ah.ExceptionInVPackage();
+      ManagerUsingReader = new ManagerUsingReader(new InputStreamReader(fileInputStream));
+      str1 = ManagerUsingReader.ExceptionInVPackage();
       if (str1 == null)
         return b - 1; 
       while (b == 0 || (!b_(str1) && str2.indexOf(".ecf") != -1)) {
@@ -67,7 +67,7 @@ public class AkInterfaceIndia extends g {
           str2 = str1;
           b++;
         } 
-        str1 = ah.ExceptionInVPackage();
+        str1 = ManagerUsingReader.ExceptionInVPackage();
       } 
       if (this.u)
         l(h(str1)); 
@@ -84,9 +84,9 @@ public class AkInterfaceIndia extends g {
     } catch (IOException iOException) {
       throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
     } finally {
-      if (ah != null)
+      if (ManagerUsingReader != null)
         try {
-          ah.close();
+          ManagerUsingReader.close();
         } catch (IOException iOException) {
           Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
         }  

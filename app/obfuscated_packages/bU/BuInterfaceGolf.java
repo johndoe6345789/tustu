@@ -1,8 +1,8 @@
 package bU;
 
 import G.R;
-import G.aM;
-import G.cE;
+import G.Manager;
+import G.GInterfaceCe;
 import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
 import bN.BnInterfaceTango;
@@ -37,11 +37,11 @@ public class BuInterfaceGolf implements ExceptionInBsPackage {
       if (b == a) {
         String str = new String(arrayOfByte1);
         R r = paramo.f();
-        aM aM = r.c(str);
-        if (aM != null) {
-          String str1 = cE.a(r, aM);
+        Manager Manager = r.c(str);
+        if (Manager != null) {
+          String str1 = GInterfaceCe.a(r, Manager);
           if (str1 != null) {
-            str1 = aM.aL() + "=" + str1;
+            str1 = Manager.aL() + "=" + str1;
             TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.a().b();
             TostringInBnPackage.a(255);
             TostringInBnPackage.b(str1.getBytes());
@@ -63,7 +63,7 @@ public class BuInterfaceGolf implements ExceptionInBsPackage {
       } else if (b == b) {
         R r = paramo.f();
         try {
-          String str = cE.a(r);
+          String str = GInterfaceCe.a(r);
           TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.a().b();
           TostringInBnPackage.a(255);
           TostringInBnPackage.b(str.getBytes());

@@ -1,13 +1,13 @@
 package I;
 
 import G.R;
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class IInterfaceOscar implements cq {
+public class IInterfaceOscar implements GComponentCq {
   public static int a = 255;
   
   public static int b = 65535;
@@ -30,7 +30,7 @@ public class IInterfaceOscar implements cq {
     this.f = paramString;
     this.d = paramInt;
     this.c = 0;
-    cu.a().a(this.e.c(), paramString, this);
+    ManagerUsingArrayList.a().a(this.e.c(), paramString, this);
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
@@ -40,7 +40,7 @@ public class IInterfaceOscar implements cq {
   }
   
   public void a() {
-    cu.a().a(this);
+    ManagerUsingArrayList.a().a(this);
   }
   
   public void a(n paramn) {

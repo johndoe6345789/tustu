@@ -1,14 +1,14 @@
 package I;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 
 public class IInterfaceQuebec {
   private r a = null;
   
   public IInterfaceQuebec() {
-    cu.a().d("hourOfDay");
-    cu.a().d("minuteOfHour");
-    cu.a().d("secondOfMinute");
+    ManagerUsingArrayList.a().d("hourOfDay");
+    ManagerUsingArrayList.a().d("minuteOfHour");
+    ManagerUsingArrayList.a().d("secondOfMinute");
   }
   
   public void a() {

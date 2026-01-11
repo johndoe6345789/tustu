@@ -1,8 +1,8 @@
 package af;
 
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import J.SerializableImplInJPackage;
 import ad.AdInterfaceAlpha;
 import ad.ExceptionInAdPackage;
@@ -24,13 +24,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class AfInterfaceFoxtrot implements n {
-  cV AdInterfaceAlpha = null;
+  GInterfaceCv AdInterfaceAlpha = null;
   
-  cR b = null;
+  GInterfaceCr b = null;
   
-  cV ExceptionInAdPackage = (cV)new SerializableImplInJPackage();
+  GInterfaceCv ExceptionInAdPackage = (GInterfaceCv)new SerializableImplInJPackage();
   
-  cR AdInterfaceDelta = (cR)new J.f();
+  GInterfaceCr AdInterfaceDelta = (GInterfaceCr)new J.f();
   
   List e = new ArrayList();
   
@@ -163,7 +163,7 @@ public class AfInterfaceFoxtrot implements n {
     return "https://www.msextra.com/forums/viewforum.php?f=101";
   }
   
-  public bT AdInterfaceAlpha(IOInAePackage paramp) {
+  public AeInterfaceMikeTostring AdInterfaceAlpha(IOInAePackage paramp) {
     return j.f(paramp);
   }
   
@@ -180,11 +180,11 @@ public class AfInterfaceFoxtrot implements n {
     this.SerializableImplInJPackage.AdInterfaceAlpha(this.h);
   }
   
-  public cR AdInterfaceAlpha(bT parambT) {
+  public GInterfaceCr AdInterfaceAlpha(AeInterfaceMikeTostring parambT) {
     return this.b;
   }
   
-  public cV b(bT parambT) {
+  public GInterfaceCv b(AeInterfaceMikeTostring parambT) {
     return this.AdInterfaceAlpha;
   }
   

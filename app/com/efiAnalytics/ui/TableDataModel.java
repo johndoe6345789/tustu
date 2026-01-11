@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-import W.an;
+import W.WInterfaceAn;
 import bH.I;
 import bH.X;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
-public class TableDataModel implements an, TableModel {
+public class TableDataModel implements WInterfaceAn, TableModel {
   ArrayList g = new ArrayList();
   
   Double[][] h;

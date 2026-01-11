@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
@@ -12,7 +12,7 @@ class PortItemModel {
   
   R a = null;
   
-  aM b = null;
+  Manager b = null;
   
   private int e = 0;
   

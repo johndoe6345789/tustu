@@ -1,6 +1,6 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.bu;
+import G.GComponentBu;
 import com.efiAnalytics.ui.do;
 import com.efiAnalytics.ui.et;
 import java.awt.Component;
@@ -9,7 +9,7 @@ import javax.swing.BorderFactory;
 import s.SComponentGolf;
 
 public class LinearGeneratorPanel extends aL {
-  bu a = null;
+  GComponentBu a = null;
   
   do b = new do();
   
@@ -19,7 +19,7 @@ public class LinearGeneratorPanel extends aL {
   
   do e = new do();
   
-  public LinearGeneratorPanel(bu parambu) {
+  public LinearGeneratorPanel(GComponentBu parambu) {
     this.a = parambu;
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b(parambu.h())));
     setLayout(new GridLayout(3, 3, 3, 3));

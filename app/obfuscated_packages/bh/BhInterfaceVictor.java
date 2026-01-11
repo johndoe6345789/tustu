@@ -2,9 +2,9 @@ package bh;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.ac;
-import G.cu;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import W.j;
 import W.n;
@@ -31,7 +31,7 @@ public class BhInterfaceVictor implements ExceptionInVPackage {
   Map e;
   
   public BhInterfaceVictor() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d);
     this.e = new HashMap<>();
   }
   
@@ -71,27 +71,27 @@ public class BhInterfaceVictor implements ExceptionInVPackage {
           D.d("EcuConfig '" + str1 + "' not found, using working config");
           r = T.ExceptionInVPackage().c();
         } 
-        ac ac = ExceptionInVPackage(r, str2);
-        if (ac != null)
+        SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = ExceptionInVPackage(r, str2);
+        if (SerializableImplExceptionprintstacktrace != null)
           try {
-            aH aH = r.g(ac.ExceptionInVPackage());
+            SerializableImpl SerializableImpl = r.g(SerializableImplExceptionprintstacktrace.ExceptionInVPackage());
             byte[] arrayOfByte = ExceptionInVPackage(r);
-            if (aH != null && !aH.ExceptionInVPackage(arrayOfByte, j.d(paramInt))) {
-              arrayList.add(new w(this, str1, aH, j.d(paramInt)));
-              if (!this.c.contains(aH))
-                this.c.add(aH); 
+            if (SerializableImpl != null && !SerializableImpl.ExceptionInVPackage(arrayOfByte, j.d(paramInt))) {
+              arrayList.add(new w(this, str1, SerializableImpl, j.d(paramInt)));
+              if (!this.c.contains(SerializableImpl))
+                this.c.add(SerializableImpl); 
             } 
           } catch (Exception exception) {} 
       } 
       for (String str : this.ExceptionInVPackage.keySet()) {
         try {
-          cu.ExceptionInVPackage().ExceptionInVPackage(str, (byte[])this.ExceptionInVPackage.get(str));
+          ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(str, (byte[])this.ExceptionInVPackage.get(str));
         } catch (Exception exception) {}
       } 
       for (w w : arrayList) {
         w.d().c(w.b());
         try {
-          cu.ExceptionInVPackage().ExceptionInVPackage(w.c(), w.ExceptionInVPackage(), w.b());
+          ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(w.c(), w.ExceptionInVPackage(), w.b());
         } catch (ExceptionInVPackage a1) {}
       } 
     } 
@@ -115,12 +115,12 @@ public class BhInterfaceVictor implements ExceptionInVPackage {
     return map;
   }
   
-  private ac ExceptionInVPackage(R paramR, String paramString) {
-    Map<String, ac> map = ExceptionInVPackage(paramR.c());
-    ac ac = (ac)map.get(paramString);
-    if (ac != null)
-      return ac; 
-    for (ac ac1 : paramR.g()) {
+  private SerializableImplExceptionprintstacktrace ExceptionInVPackage(R paramR, String paramString) {
+    Map<String, SerializableImplExceptionprintstacktrace> map = ExceptionInVPackage(paramR.c());
+    SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = (SerializableImplExceptionprintstacktrace)map.get(paramString);
+    if (SerializableImplExceptionprintstacktrace != null)
+      return SerializableImplExceptionprintstacktrace; 
+    for (SerializableImplExceptionprintstacktrace ac1 : paramR.g()) {
       String str = X.b(ac1.b(), "-", " ");
       if (str.equals(paramString)) {
         map.put(paramString, ac1);

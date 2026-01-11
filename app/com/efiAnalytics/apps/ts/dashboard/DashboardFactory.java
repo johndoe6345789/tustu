@@ -1,10 +1,10 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.R;
-import G.ah;
-import G.ak;
-import G.cr;
-import G.cu;
+import G.GInterfaceAh;
+import G.Exceptionprintstacktrace;
+import G.GComponentCr;
+import G.ManagerUsingArrayList;
 import G.k;
 import I.IInterfaceDelta;
 import V.ExceptionInVPackage;
@@ -54,7 +54,7 @@ public class DashboardFactory {
     for (Component component : paramZ.IOInVPackage()) {
       if (component instanceof SingleChannelDashComponent) {
         SingleChannelDashComponent singleChannelDashComponent = (SingleChannelDashComponent)component;
-        if (singleChannelDashComponent.getOutputChannel() != null && !singleChannelDashComponent.getOutputChannel().isEmpty() && !singleChannelDashComponent.getEcuConfigurationName().equals(cu.ExceptionInVPackage) && paramR.g(singleChannelDashComponent.getOutputChannel()) == null)
+        if (singleChannelDashComponent.getOutputChannel() != null && !singleChannelDashComponent.getOutputChannel().isEmpty() && !singleChannelDashComponent.getEcuConfigurationName().equals(ManagerUsingArrayList.ExceptionInVPackage) && paramR.g(singleChannelDashComponent.getOutputChannel()) == null)
           return false; 
       } 
     } 
@@ -83,7 +83,7 @@ public class DashboardFactory {
     if (!file.exists())
       throw new ExceptionInVPackage("Invalid Dashboard Template: " + paramString); 
     Z z = (new IOInVPackage(ThreadedFile.G())).ExceptionInVPackage(file.getAbsolutePath());
-    ArrayList<ah> arrayList = ExceptionInVPackage(paramR, arrayOfString, true);
+    ArrayList<GInterfaceAh> arrayList = ExceptionInVPackage(paramR, arrayOfString, true);
     z.b(paramR.i());
     byte b1 = 7;
     double d1 = 0.004D;
@@ -131,10 +131,10 @@ public class DashboardFactory {
       double IInterfaceDelta = d8 + d6 * b6;
       for (byte b = 0; b < b1 && b6 * b1 + b < arrayList.size(); b++) {
         int m = b6 * b1 + b;
-        ah ah = arrayList.get(m);
+        GInterfaceAh GInterfaceAh = arrayList.get(m);
         Gauge gauge1 = new Gauge();
         ExceptionInVPackage(gauge, gauge1);
-        ExceptionInVPackage(gauge1, ah);
+        ExceptionInVPackage(gauge1, GInterfaceAh);
         gauge1.setRelativeX(b * d5 + d2);
         gauge1.setRelativeY(IInterfaceDelta);
         gauge1.setRelativeWidth(d5 - d2 * 2.0D);
@@ -144,10 +144,10 @@ public class DashboardFactory {
       } 
     } 
     double d9 = d8 + d6 * i + d1;
-    Iterator<ak> iterator = paramR.A();
+    Iterator<Exceptionprintstacktrace> iterator = paramR.A();
     while (iterator.hasNext()) {
-      ak ak = iterator.next();
-      if (ak.k()) {
+      Exceptionprintstacktrace Exceptionprintstacktrace = iterator.next();
+      if (Exceptionprintstacktrace.k()) {
         Indicator indicator = new Indicator();
         double d10 = (int)(b4 * d4);
         indicator.setRelativeX((d7 + b4 * d4) % 1.0D);
@@ -155,13 +155,13 @@ public class DashboardFactory {
         indicator.setRelativeY(d11);
         indicator.setRelativeWidth(d4 - d7 * 2.0D);
         indicator.setRelativeHeight(d3 - d7 * 2.0D);
-        indicator.setOnText(ak.ExceptionInVPackage().toString());
-        indicator.setOnBackgroundColor(new Color(ak.g().ExceptionInVPackage()));
-        indicator.setOnTextColor(new Color(ak.i().ExceptionInVPackage()));
-        indicator.setOffText(ak.IInterfaceDelta().toString());
-        indicator.setOffBackgroundColor(new Color(ak.h().ExceptionInVPackage()));
-        indicator.setOffTextColor(new Color(ak.ThreadedFile().ExceptionInVPackage()));
-        indicator.setOutputChannel(ak.f());
+        indicator.setOnText(Exceptionprintstacktrace.ExceptionInVPackage().toString());
+        indicator.setOnBackgroundColor(new Color(Exceptionprintstacktrace.g().ExceptionInVPackage()));
+        indicator.setOnTextColor(new Color(Exceptionprintstacktrace.i().ExceptionInVPackage()));
+        indicator.setOffText(Exceptionprintstacktrace.IInterfaceDelta().toString());
+        indicator.setOffBackgroundColor(new Color(Exceptionprintstacktrace.h().ExceptionInVPackage()));
+        indicator.setOffTextColor(new Color(Exceptionprintstacktrace.ThreadedFile().ExceptionInVPackage()));
+        indicator.setOutputChannel(Exceptionprintstacktrace.f());
         b4++;
         arrayOfS[b5] = indicator;
         b5++;
@@ -233,7 +233,7 @@ public class DashboardFactory {
     return z;
   }
   
-  public Z ExceptionInVPackage(ArrayList<ah> paramArrayList, int paramInt) {
+  public Z ExceptionInVPackage(ArrayList<GInterfaceAh> paramArrayList, int paramInt) {
     Z z = new Z();
     z.ExceptionInVPackage(Color.BLACK);
     double d1 = 1.0D / paramInt;
@@ -246,7 +246,7 @@ public class DashboardFactory {
         int ThreadedFile = b1 + paramInt * b;
         double IInterfaceDelta = b1 * d1;
         if (ThreadedFile < paramArrayList.size()) {
-          ah ah = paramArrayList.get(ThreadedFile);
+          GInterfaceAh GInterfaceAh = paramArrayList.get(ThreadedFile);
           Gauge gauge = new Gauge();
           gauge.setRelativeX(IInterfaceDelta);
           gauge.setRelativeY(b * d3);
@@ -254,7 +254,7 @@ public class DashboardFactory {
           gauge.setRelativeHeight(d3);
           gauge.setBackColor(new Color(0, 0, 0, 0));
           gauge.setFontColor(Color.WHITE);
-          gauge = b(gauge, ah);
+          gauge = b(gauge, GInterfaceAh);
           int k = (int)(Math.random() * 2.147483647E9D);
           HistogramPainter histogramPainter = new HistogramPainter();
           gauge.setNeedleColor(ExceptionInVPackage(ThreadedFile));
@@ -270,7 +270,7 @@ public class DashboardFactory {
           gauge.setWarnColor(Color.BLACK);
           gauge.setCriticalColor(Color.BLACK);
           gauge.setFontColor(Color.WHITE);
-          gauge = b(gauge, ah);
+          gauge = b(gauge, GInterfaceAh);
           gauge.setBorderWidth(0);
           gauge.setTitle("");
           gauge.setUnits("");
@@ -304,7 +304,7 @@ public class DashboardFactory {
     return new Color(0, 255, 0);
   }
   
-  private Gauge ExceptionInVPackage(Gauge paramGauge, ah paramah) {
+  private Gauge ExceptionInVPackage(Gauge paramGauge, GInterfaceAh paramah) {
     paramGauge.setTitle(paramah.k().toString());
     paramGauge.setUnits(paramah.ThreadedFile().toString());
     paramGauge.setMinVP(paramah.b());
@@ -320,7 +320,7 @@ public class DashboardFactory {
     return paramGauge;
   }
   
-  private Gauge b(Gauge paramGauge, ah paramah) {
+  private Gauge b(Gauge paramGauge, GInterfaceAh paramah) {
     paramGauge.setTitle(paramah.k().toString());
     paramGauge.setUnits(paramah.ThreadedFile().toString());
     paramGauge.setMin(paramah.b());
@@ -350,14 +350,14 @@ public class DashboardFactory {
       }  
     String[] arrayOfString = IOInVPackage(paramR, paramString);
     Gauge gauge = IInterfaceDelta();
-    ArrayList<ah> arrayList = ExceptionInVPackage(paramR, arrayOfString, true);
+    ArrayList<GInterfaceAh> arrayList = ExceptionInVPackage(paramR, arrayOfString, true);
     Z z = new Z();
     z.ExceptionInVPackage(Color.BLACK);
     z.b(paramR.i());
     double d1 = 0.0D;
     double d2 = 0.0015D;
     double d3 = 0.0015D;
-    ArrayList<ak> arrayList1 = ExceptionInVPackage();
+    ArrayList<Exceptionprintstacktrace> arrayList1 = ExceptionInVPackage();
     if (paramString.equals("FrontPage")) {
       d2 = 0.005D;
       d1 = 0.031D;
@@ -377,7 +377,7 @@ public class DashboardFactory {
       for (byte b = 0; b < paramInt2; b++) {
         int k = b + paramInt2 * b2;
         if (k < arrayList.size()) {
-          ah ah = arrayList.get(k);
+          GInterfaceAh GInterfaceAh = arrayList.get(k);
           Gauge gauge1 = new Gauge();
           gauge1.setRelativeX(b * d4 + d3);
           gauge1.setRelativeY(b2 * d5 + d2);
@@ -394,19 +394,19 @@ public class DashboardFactory {
             gauge1.setRelativeBorderWidth2(0.02D);
             gauge1.setDisplayValueAt180(true);
           } 
-          gauge1.setCounterClockwise(ah.q());
-          gauge1.setTitle(ah.k().toString());
-          gauge1.setUnits(ah.ThreadedFile().toString());
-          gauge1.setMin(ah.b());
-          gauge1.setMax(ah.e());
-          gauge1.setLowWarning(ah.f());
-          gauge1.setLowCritical(ah.o());
-          gauge1.setHighWarning(ah.g());
-          gauge1.setHighCritical(ah.h());
-          gauge1.setOutputChannel(ah.i());
-          gauge1.setValueDigits(ah.m());
-          gauge1.setLabelDigits(ah.n());
-          gauge1.setValue(ah.IInterfaceDelta());
+          gauge1.setCounterClockwise(GInterfaceAh.q());
+          gauge1.setTitle(GInterfaceAh.k().toString());
+          gauge1.setUnits(GInterfaceAh.ThreadedFile().toString());
+          gauge1.setMin(GInterfaceAh.b());
+          gauge1.setMax(GInterfaceAh.e());
+          gauge1.setLowWarning(GInterfaceAh.f());
+          gauge1.setLowCritical(GInterfaceAh.o());
+          gauge1.setHighWarning(GInterfaceAh.g());
+          gauge1.setHighCritical(GInterfaceAh.h());
+          gauge1.setOutputChannel(GInterfaceAh.i());
+          gauge1.setValueDigits(GInterfaceAh.m());
+          gauge1.setLabelDigits(GInterfaceAh.n());
+          gauge1.setValue(GInterfaceAh.IInterfaceDelta());
           arrayOfS[k] = gauge1;
         } 
       } 
@@ -422,40 +422,40 @@ public class DashboardFactory {
       double d7 = 0.0015D;
       null = paramR.A();
       while (null.hasNext()) {
-        ak ak = null.next();
-        if (ak.k()) {
+        Exceptionprintstacktrace Exceptionprintstacktrace = null.next();
+        if (Exceptionprintstacktrace.k()) {
           Indicator indicator = new Indicator();
           double IInterfaceDelta = (int)(b2 * d6);
           indicator.setRelativeX((d7 + b2 * d6) % 1.0D);
           indicator.setRelativeY(1.0D - d7 - d1 * (ThreadedFile - IInterfaceDelta));
           indicator.setRelativeWidth(d6 - d7 * 2.0D);
           indicator.setRelativeHeight(d1 - d7 * 2.0D);
-          indicator.setOnText(ak.ExceptionInVPackage().toString());
-          indicator.setOnBackgroundColor(new Color(ak.g().ExceptionInVPackage()));
-          indicator.setOnTextColor(new Color(ak.i().ExceptionInVPackage()));
-          indicator.setOffText(ak.IInterfaceDelta().toString());
-          indicator.setOffBackgroundColor(new Color(ak.h().ExceptionInVPackage()));
-          indicator.setOffTextColor(new Color(ak.ThreadedFile().ExceptionInVPackage()));
-          indicator.setOutputChannel(ak.f());
+          indicator.setOnText(Exceptionprintstacktrace.ExceptionInVPackage().toString());
+          indicator.setOnBackgroundColor(new Color(Exceptionprintstacktrace.g().ExceptionInVPackage()));
+          indicator.setOnTextColor(new Color(Exceptionprintstacktrace.i().ExceptionInVPackage()));
+          indicator.setOffText(Exceptionprintstacktrace.IInterfaceDelta().toString());
+          indicator.setOffBackgroundColor(new Color(Exceptionprintstacktrace.h().ExceptionInVPackage()));
+          indicator.setOffTextColor(new Color(Exceptionprintstacktrace.ThreadedFile().ExceptionInVPackage()));
+          indicator.setOutputChannel(Exceptionprintstacktrace.f());
           arrayOfS[arrayOfS.length - b2 - 1] = indicator;
           b2++;
         } 
       } 
-      for (ak ak : arrayList1) {
+      for (Exceptionprintstacktrace Exceptionprintstacktrace : arrayList1) {
         Indicator indicator = new Indicator();
         double IInterfaceDelta = (int)(b2 * d6);
-        indicator.setEcuConfigurationName(cu.ExceptionInVPackage);
+        indicator.setEcuConfigurationName(ManagerUsingArrayList.ExceptionInVPackage);
         indicator.setRelativeX((d7 + b2 * d6) % 1.0D);
         indicator.setRelativeY(1.0D - d7 - d1 * (ThreadedFile - IInterfaceDelta));
         indicator.setRelativeWidth(d6 - d7 * 2.0D);
         indicator.setRelativeHeight(d1 - d7 * 2.0D);
-        indicator.setOnText(ak.ExceptionInVPackage().toString());
-        indicator.setOnBackgroundColor(ExceptionInVPackage(ak.g()));
-        indicator.setOnTextColor(ExceptionInVPackage(ak.i()));
-        indicator.setOffText(ak.IInterfaceDelta().toString());
-        indicator.setOffBackgroundColor(ExceptionInVPackage(ak.h()));
-        indicator.setOffTextColor(ExceptionInVPackage(ak.ThreadedFile()));
-        indicator.setOutputChannel(ak.f());
+        indicator.setOnText(Exceptionprintstacktrace.ExceptionInVPackage().toString());
+        indicator.setOnBackgroundColor(ExceptionInVPackage(Exceptionprintstacktrace.g()));
+        indicator.setOnTextColor(ExceptionInVPackage(Exceptionprintstacktrace.i()));
+        indicator.setOffText(Exceptionprintstacktrace.IInterfaceDelta().toString());
+        indicator.setOffBackgroundColor(ExceptionInVPackage(Exceptionprintstacktrace.h()));
+        indicator.setOffTextColor(ExceptionInVPackage(Exceptionprintstacktrace.ThreadedFile()));
+        indicator.setOutputChannel(Exceptionprintstacktrace.f());
         arrayOfS[arrayOfS.length - b2 - 1] = indicator;
         b2++;
       } 
@@ -477,7 +477,7 @@ public class DashboardFactory {
   }
   
   public Z ExceptionInVPackage(R paramR) {
-    return ExceptionInVPackage((cr)paramR);
+    return ExceptionInVPackage((GComponentCr)paramR);
   }
   
   public Z b(R paramR) {
@@ -507,19 +507,19 @@ public class DashboardFactory {
     arrayList.add("veCurr1");
     arrayList.add("advSpark");
     arrayList.add("iacstep");
-    ArrayList<ah> arrayList1 = new ArrayList();
+    ArrayList<GInterfaceAh> arrayList1 = new ArrayList();
     String[] arrayOfString = paramR.s();
     Object[] arrayOfObject = S.ExceptionInVPackage((Object[])arrayOfString);
     for (byte b = 0; b < arrayOfObject.length; b++) {
       if (arrayList.contains(arrayOfObject[b])) {
-        ah ah = ExceptionInVPackage(paramR, (String)arrayOfObject[b]);
-        if (ah != null)
-          arrayList1.add(ah); 
+        GInterfaceAh GInterfaceAh = ExceptionInVPackage(paramR, (String)arrayOfObject[b]);
+        if (GInterfaceAh != null)
+          arrayList1.add(GInterfaceAh); 
       } 
     } 
     List list = S.ExceptionInVPackage(arrayList1);
-    ArrayList<ah> arrayList2 = new ArrayList();
-    Iterator<ah> iterator = list.iterator();
+    ArrayList<GInterfaceAh> arrayList2 = new ArrayList();
+    Iterator<GInterfaceAh> iterator = list.iterator();
     while (iterator.hasNext())
       arrayList2.add(iterator.next()); 
     Z z = ExceptionInVPackage(arrayList2, 2);
@@ -546,7 +546,7 @@ public class DashboardFactory {
     return b;
   }
   
-  public Z ExceptionInVPackage(cr paramcr) {
+  public Z ExceptionInVPackage(GComponentCr paramcr) {
     String[] arrayOfString = paramcr.s();
     Object[] arrayOfObject = S.ExceptionInVPackage((Object[])arrayOfString);
     Z z = new Z();
@@ -590,7 +590,7 @@ public class DashboardFactory {
   }
   
   private ArrayList ExceptionInVPackage(R paramR, String[] paramArrayOfString, boolean paramBoolean) {
-    ArrayList<ah> arrayList = new ArrayList();
+    ArrayList<GInterfaceAh> arrayList = new ArrayList();
     for (String str : paramArrayOfString) {
       if (paramR.k(str) != null && (!str.equals("veBucketGauge") || paramBoolean))
         arrayList.add(paramR.k(str)); 
@@ -607,14 +607,14 @@ public class DashboardFactory {
       if (arrayOfComponent[b] instanceof Gauge) {
         Gauge gauge = (Gauge)arrayOfComponent[b];
         if (paramR.O().ae() && ((bool1 && gauge.getUnits() != null && (gauge.getUnits().contains(T.ExceptionInVPackage() + "F") || gauge.getUnits().endsWith("F"))) || (!bool1 && gauge.getUnits() != null && (gauge.getUnits().contains(T.ExceptionInVPackage() + "C") || gauge.getUnits().endsWith("C"))) || (gauge.units() != null && gauge.units().contains("%TEMP")))) {
-          ah ah = ExceptionInVPackage(paramR, gauge.getOutputChannel());
-          if (ah != null) {
-            gauge.setMin(ah.b());
-            gauge.setMax(ah.e());
-            gauge.setLowWarning(ah.f());
-            gauge.setLowCritical(ah.o());
-            gauge.setHighWarning(ah.g());
-            gauge.setHighCritical(ah.h());
+          GInterfaceAh GInterfaceAh = ExceptionInVPackage(paramR, gauge.getOutputChannel());
+          if (GInterfaceAh != null) {
+            gauge.setMin(GInterfaceAh.b());
+            gauge.setMax(GInterfaceAh.e());
+            gauge.setLowWarning(GInterfaceAh.f());
+            gauge.setLowCritical(GInterfaceAh.o());
+            gauge.setHighWarning(GInterfaceAh.g());
+            gauge.setHighCritical(GInterfaceAh.h());
             if (bool1) {
               gauge.setUnits(T.ExceptionInVPackage() + "C");
             } else {
@@ -622,17 +622,17 @@ public class DashboardFactory {
             } 
           } 
         } else if (bool2 && gauge.getOutputChannel() != null && gauge.getOutputChannel().contains("afr")) {
-          ah ah = ExceptionInVPackage(paramR, "egoVoltage");
-          if (ah != null) {
-            gauge.setMin(ah.b());
-            gauge.setMax(ah.e());
-            gauge.setUnits(ah.ThreadedFile().toString());
-            gauge.setTitle(ah.k().toString());
-            gauge.setOutputChannel(ah.i());
-            gauge.setLowWarning(ah.f());
-            gauge.setLowCritical(ah.o());
-            gauge.setHighWarning(ah.g());
-            gauge.setHighCritical(ah.h());
+          GInterfaceAh GInterfaceAh = ExceptionInVPackage(paramR, "egoVoltage");
+          if (GInterfaceAh != null) {
+            gauge.setMin(GInterfaceAh.b());
+            gauge.setMax(GInterfaceAh.e());
+            gauge.setUnits(GInterfaceAh.ThreadedFile().toString());
+            gauge.setTitle(GInterfaceAh.k().toString());
+            gauge.setOutputChannel(GInterfaceAh.i());
+            gauge.setLowWarning(GInterfaceAh.f());
+            gauge.setLowCritical(GInterfaceAh.o());
+            gauge.setHighWarning(GInterfaceAh.g());
+            gauge.setHighCritical(GInterfaceAh.h());
           } 
         } 
       } 
@@ -640,19 +640,19 @@ public class DashboardFactory {
     return paramZ;
   }
   
-  public ah ExceptionInVPackage(R paramR, String paramString) {
-    Iterator<ah> iterator = paramR.B();
+  public GInterfaceAh ExceptionInVPackage(R paramR, String paramString) {
+    Iterator<GInterfaceAh> iterator = paramR.B();
     while (iterator.hasNext()) {
-      ah ah = iterator.next();
-      if (ah.i().equals(paramString))
-        return ah; 
+      GInterfaceAh GInterfaceAh = iterator.next();
+      if (GInterfaceAh.i().equals(paramString))
+        return GInterfaceAh; 
     } 
     return null;
   }
   
   public ArrayList ExceptionInVPackage() {
-    ArrayList<ak> arrayList = new ArrayList();
-    Iterator<ak> iterator = IInterfaceDelta.ExceptionInVPackage().b();
+    ArrayList<Exceptionprintstacktrace> arrayList = new ArrayList();
+    Iterator<Exceptionprintstacktrace> iterator = IInterfaceDelta.ExceptionInVPackage().b();
     while (iterator.hasNext())
       arrayList.add(iterator.next()); 
     return arrayList;

@@ -1,6 +1,6 @@
 package br;
 
-import G.aH;
+import G.SerializableImpl;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,10 +10,10 @@ class BrInterfaceYankee implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(this.a.b.n());
     this.a.b.r(paramActionEvent.getActionCommand());
-    aH aH = this.a.a.g(this.a.b.r());
+    SerializableImpl SerializableImpl = this.a.a.g(this.a.b.r());
     for (ag ag : this.a.p) {
       ag.f();
-      ag.a(aH);
+      ag.a(SerializableImpl);
     } 
     this.a.m.a("targetLambdaTableName", this.a.b.c());
     this.a.m.a("targetLambdaChannelName", this.a.b.r());

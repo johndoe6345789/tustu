@@ -1,8 +1,8 @@
 package ae;
 
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import java.io.File;
 import java.util.List;
 
@@ -15,9 +15,9 @@ public interface AeInterfaceQuebec {
   
   List d();
   
-  cR a(bT parambT);
+  GInterfaceCr a(AeInterfaceMikeTostring parambT);
   
-  cV b(bT parambT);
+  GInterfaceCv b(AeInterfaceMikeTostring parambT);
   
   boolean a(m paramm);
   
@@ -33,7 +33,7 @@ public interface AeInterfaceQuebec {
   
   String e();
   
-  bT a(p paramp);
+  AeInterfaceMikeTostring a(p paramp);
   
   void f();
   

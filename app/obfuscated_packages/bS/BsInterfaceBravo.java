@@ -1,7 +1,7 @@
 package bS;
 
 import G.F;
-import G.aF;
+import G.GInterfaceAf;
 import bH.D;
 import bH.TostringInBoPackage;
 import bN.BnInterfaceKilo;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BsInterfaceBravo implements aF {
+public class BsInterfaceBravo implements GInterfaceAf {
   private TostringInBoPackage g;
   
   F BoInterfaceAlpha;

@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.aN;
+import G.GInterfaceAn;
 
-class OutputChannelUpdateListener implements aN {
+class OutputChannelUpdateListener implements GInterfaceAn {
   OutputChannelUpdateListener(C paramC) {}
   
   public void a(String paramString1, String paramString2) {

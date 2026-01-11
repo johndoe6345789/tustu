@@ -1,6 +1,6 @@
 package be;
 
-import G.ac;
+import G.SerializableImplExceptionprintstacktrace;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,7 +8,7 @@ class BeComponentHotel implements ActionListener {
   h(g paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.d.setEnabled(this.a.f.getSelectedItem().equals(ac.h));
+    this.a.d.setEnabled(this.a.f.getSelectedItem().equals(SerializableImplExceptionprintstacktrace.h));
   }
 }
 

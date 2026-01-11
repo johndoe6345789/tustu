@@ -1,10 +1,10 @@
 package bD;
 
-import W.aA;
+import W.WInterfaceAa;
 import java.util.List;
 
 public interface BdInterfaceGolf {
-  aA a(List paramList);
+  WInterfaceAa a(List paramList);
 }
 
 

@@ -3,9 +3,9 @@ package aI;
 import G.R;
 import G.S;
 import G.T;
-import G.cq;
-import G.cu;
-import G.dc;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDc;
 import G.m;
 import V.ExceptionInVPackage;
 import bH.D;
@@ -19,10 +19,10 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ThreadedSetcurrentoutputchannelvalue implements S, cq {
+public class ThreadedSetcurrentoutputchannelvalue implements S, GComponentCq {
   R ExceptionInVPackage = null;
   
-  dc b = new dc();
+  GInterfaceDc b = new GInterfaceDc();
   
   private boolean p = true;
   
@@ -71,7 +71,7 @@ public class ThreadedSetcurrentoutputchannelvalue implements S, cq {
   
   private void e() {
     try {
-      cu.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), d.ExceptionInVPackage, this);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), d.ExceptionInVPackage, this);
       T.ExceptionInVPackage().ExceptionInVPackage(this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
@@ -208,7 +208,7 @@ public class ThreadedSetcurrentoutputchannelvalue implements S, cq {
   
   public void b(R paramR) {
     if (paramR.equals(this.ExceptionInVPackage)) {
-      cu.ExceptionInVPackage().ExceptionInVPackage(this);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
       r.remove(paramR.c());
     } 
   }

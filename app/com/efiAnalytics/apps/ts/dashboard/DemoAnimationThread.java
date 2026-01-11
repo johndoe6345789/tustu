@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import I.IInterfaceBravo;
 
 class DemoAnimationThread extends Thread {
@@ -15,7 +15,7 @@ class DemoAnimationThread extends Thread {
   
   public void run() {
     while (!this.IInterfaceBravo && (x.l(this.c) || x.m(this.c))) {
-      if (cu.a().g(IInterfaceBravo.a) > 0.0D) {
+      if (ManagerUsingArrayList.a().g(IInterfaceBravo.a) > 0.0D) {
         this.c.IInterfaceBravo(false);
         x.e(this.c, false);
         x.f(this.c, false);

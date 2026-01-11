@@ -1,10 +1,10 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import G.cZ;
+import G.GInterfaceCz;
 import java.io.Serializable;
 
-class GaugeConfigProvider implements cZ, Serializable {
+class GaugeConfigProvider implements GInterfaceCz, Serializable {
   GaugeConfigProvider(Gauge paramGauge) {}
   
   public String a() {

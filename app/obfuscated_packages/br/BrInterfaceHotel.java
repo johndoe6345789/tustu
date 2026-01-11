@@ -1,20 +1,20 @@
 package br;
 
 import G.R;
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.cA;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-class BrInterfaceHotel implements cq {
+class BrInterfaceHotel implements GComponentCq {
   ArrayList ExceptionInVPackage = new ArrayList();
   
   H(s params, R paramR, String paramString) {
     try {
-      cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), paramString, this);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), paramString, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Paint updates disabled for Component. " + ExceptionInVPackage.getMessage());
       ExceptionInVPackage.printStackTrace();

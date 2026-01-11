@@ -1,15 +1,15 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class RollingDragHpFunction extends ac {
-  ab a;
+public class RollingDragHpFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c;
+  AxInterfaceAb c;
   
   double d = Double.NaN;
   
@@ -17,7 +17,7 @@ public class RollingDragHpFunction extends ac {
   
   double f = Double.NaN;
   
-  protected M(ab paramab1, ab paramab2, ab paramab3) {
+  protected M(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
     this.a = paramab2;
     this.b = paramab1;
     this.c = paramab3;

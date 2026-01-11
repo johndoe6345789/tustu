@@ -1,11 +1,11 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import G.cZ;
+import G.GInterfaceCz;
 import java.io.Serializable;
 import javax.swing.SwingUtilities;
 
-class IndicatorConfigurationProvider implements cZ, Serializable {
+class IndicatorConfigurationProvider implements GInterfaceCz, Serializable {
   boolean a = false;
   
   IndicatorConfigurationProvider(Indicator paramIndicator) {}

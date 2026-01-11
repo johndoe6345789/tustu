@@ -3,7 +3,7 @@ package T;
 import G.R;
 import G.T;
 import G.Y;
-import G.cu;
+import G.ManagerUsingArrayList;
 import bH.D;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,10 +34,10 @@ class ThreadExtensionInTPackage extends Thread {
             List list = b(str);
             for (e e : arrayList) {
               if (a(list, e)) {
-                cu.a().a(e.a(), 1.0D);
+                ManagerUsingArrayList.a().a(e.a(), 1.0D);
                 continue;
               } 
-              cu.a().a(e.a(), 0.0D);
+              ManagerUsingArrayList.a().a(e.a(), 0.0D);
             } 
             list.clear();
           } 

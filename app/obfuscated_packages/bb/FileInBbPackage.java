@@ -3,8 +3,8 @@ package bb;
 import G.T;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
-import aP.dd;
-import aP.iP;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
+import aP.ManagerUsingHashMap;
 import ae.AeComponentCharlie;
 import ae.ThreadedInAePackage;
 import ae.FileUsingHashMap;
@@ -92,14 +92,14 @@ public class FileInBbPackage implements fS {
       this.ExceptionInVPackage.e(this.n); 
     this.ExceptionInVPackage.ExceptionInVPackage(this);
     try {
-      iP.ExceptionInVPackage().ExceptionInVPackage(new o(this));
+      ManagerUsingHashMap.ExceptionInVPackage().ExceptionInVPackage(new o(this));
     } catch (ExceptionInVPackage a1) {
       Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
   }
   
   public boolean b() {
-    dd.ExceptionInVPackage().b(this.AeInterfaceQuebec);
+    ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().b(this.AeInterfaceQuebec);
     for (byte b = 0; b < this.ExceptionInVPackage.e(); b++) {
       if (this.ExceptionInVPackage.ExceptionInVPackage(b) instanceof bc)
         ((bc)this.ExceptionInVPackage.ExceptionInVPackage(b)).close(); 
@@ -108,7 +108,7 @@ public class FileInBbPackage implements fS {
   }
   
   public void AeComponentCharlie() {
-    dd.ExceptionInVPackage().b(this.AeInterfaceQuebec);
+    ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().b(this.AeInterfaceQuebec);
     for (byte b = 0; b < this.ExceptionInVPackage.e(); b++) {
       if (this.ExceptionInVPackage.ExceptionInVPackage(b) instanceof bc)
         ((bc)this.ExceptionInVPackage.ExceptionInVPackage(b)).close(); 
@@ -298,7 +298,7 @@ public class FileInBbPackage implements fS {
   public void ExceptionInVPackage(Window paramWindow) {
     String str = SComponentGolf.b("Firmware Update Utility");
     this.AeInterfaceQuebec = this.ExceptionInVPackage.ExceptionInVPackage(paramWindow, str);
-    dd.ExceptionInVPackage().ExceptionInVPackage(this.AeInterfaceQuebec);
+    ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().ExceptionInVPackage(this.AeInterfaceQuebec);
     this.AeInterfaceQuebec.setVisible(true);
   }
   

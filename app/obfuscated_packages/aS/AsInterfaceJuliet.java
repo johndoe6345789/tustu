@@ -1,10 +1,10 @@
 package aS;
 
-import G.bU;
-import G.cq;
-import G.cu;
+import G.GInterfaceBu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 
-class AsInterfaceJuliet implements bU, cq {
+class AsInterfaceJuliet implements GInterfaceBu, GComponentCq {
   int a = 65535;
   
   j(g paramg) {}
@@ -16,7 +16,7 @@ class AsInterfaceJuliet implements bU, cq {
   }
   
   private void a(double paramDouble) {
-    cu.a().a("powerCycleRequired", paramDouble);
+    ManagerUsingArrayList.a().a("powerCycleRequired", paramDouble);
     this.b.c = paramDouble;
   }
   

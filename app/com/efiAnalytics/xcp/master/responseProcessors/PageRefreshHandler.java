@@ -3,7 +3,7 @@ package com.efiAnalytics.xcp.master.responseProcessors;
 import G.F;
 import G.R;
 import G.T;
-import G.cx;
+import G.GComponentCx;
 import bH.c;
 import bN.BnInterfaceKilo;
 import bN.BnInterfaceTango;
@@ -46,9 +46,9 @@ public class PageRefreshHandler {
         a(r, i);
       } 
     } else if (m >= 0 && n > 0) {
-      cx.a(r, i, m, n);
+      GComponentCx.a(r, i, m, n);
     } else {
-      cx.a(r, i);
+      GComponentCx.a(r, i);
     } 
   }
   

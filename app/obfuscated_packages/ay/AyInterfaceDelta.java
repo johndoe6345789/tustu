@@ -1,8 +1,8 @@
 package ay;
 
-import G.cZ;
+import G.GInterfaceCz;
 
-class AyInterfaceDelta implements cZ {
+class AyInterfaceDelta implements GInterfaceCz {
   String a;
   
   d(c paramc, String paramString) {

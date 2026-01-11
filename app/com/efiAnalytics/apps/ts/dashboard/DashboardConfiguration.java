@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import java.awt.Color;
 import java.awt.Component;
 import java.io.Serializable;
@@ -75,7 +75,7 @@ public class DashboardConfiguration implements Serializable {
       for (byte b = 0; b < this.f.length; b++) {
         if (this.f[b] instanceof s) {
           s s = (s)this.f[b];
-          if (s.getEcuConfigurationName() != null && !s.getEcuConfigurationName().equals(cu.a))
+          if (s.getEcuConfigurationName() != null && !s.getEcuConfigurationName().equals(ManagerUsingArrayList.a))
             s.setEcuConfigurationName(paramString); 
         } 
       }  

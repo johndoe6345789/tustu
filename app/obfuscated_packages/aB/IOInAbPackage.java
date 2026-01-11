@@ -3,7 +3,7 @@ package aB;
 import A.a;
 import B.l;
 import G.l;
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import bH.D;
 import com.ftdi.FTD2XXException;
 import com.ftdi.FTDevice;
@@ -206,7 +206,7 @@ public class IOInAbPackage extends a {
       } else {
         this.h = paramObject.toString();
         if (b(this.h)) {
-          hq.a().a("Counterfeit FTDI Chip!! " + this.h);
+          NInterfaceIndiaImpl.a().a("Counterfeit FTDI Chip!! " + this.h);
           D.b("The serial cable being used appears to be using a Counterfeit FTDI chipset!!!");
         } 
       } 
@@ -234,7 +234,7 @@ public class IOInAbPackage extends a {
     if (this.b == null)
       return "USB D2XX, Serial #" + g + " @ " + this.f + " Baud"; 
     if (b(this.h)) {
-      hq.a().a("Counterfeit FTDI Chip!! " + this.h);
+      NInterfaceIndiaImpl.a().a("Counterfeit FTDI Chip!! " + this.h);
       D.b("The serial cable being used appears to be using a Counterfeit FTDI chipset!!!");
       return "Counterfeit FTDI Serial #" + this.b.getDevSerialNumber() + " @ " + this.f + " Baud";
     } 

@@ -2,7 +2,7 @@ package aH;
 
 import G.F;
 import G.R;
-import G.dc;
+import G.GInterfaceDc;
 import G.m;
 import G.o;
 import bH.D;
@@ -84,7 +84,7 @@ public class AhInterfaceBravo {
   private List c(R paramR) {
     ArrayList<a> arrayList = new ArrayList();
     if (paramR.R()) {
-      dc dc = new dc();
+      GInterfaceDc GInterfaceDc = new GInterfaceDc();
       for (byte b1 = 0; b1 <= 14; b1++) {
         if (b1 != paramR.O().x()) {
           a a = new a();
@@ -98,7 +98,7 @@ public class AhInterfaceBravo {
           m.c(false);
           m.v("Query Signature CAN ID " + b1);
           if (b1 == 11);
-          o o = dc.a(paramR, m, 500);
+          o o = GInterfaceDc.a(paramR, m, 500);
           if (o.a() == 1) {
             String str = X.a(o.g());
             a.b(str);
@@ -111,7 +111,7 @@ public class AhInterfaceBravo {
             m1.b(true);
             m1.c(false);
             m1.v("Query Info CAN ID " + b1);
-            o = dc.a(paramR, m1, 500);
+            o = GInterfaceDc.a(paramR, m1, 500);
             if (o.a() == 1) {
               String str1 = X.a(o.g());
               a.a(str1);

@@ -1,9 +1,9 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
@@ -17,9 +17,9 @@ import s.ExceptionPrintstacktrace;
 public class ConditionComboBox extends JComboBox implements bc {
   R ExceptionInVPackage = null;
   
-  aM b = null;
+  Manager b = null;
   
-  aN c = null;
+  GInterfaceAn c = null;
   
   String[] d = null;
   
@@ -34,9 +34,9 @@ public class ConditionComboBox extends JComboBox implements bc {
       addItem((E)b(paramArrayOfString[b])); 
     addActionListener(new w(this));
     this.c = new x(this);
-    aR aR = aR.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
-      aR.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
@@ -139,8 +139,8 @@ public class ConditionComboBox extends JComboBox implements bc {
   }
   
   public void close() {
-    aR aR = aR.ExceptionInVPackage();
-    aR.ExceptionInVPackage(this.c);
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage(this.c);
   }
 }
 

@@ -1,22 +1,22 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class MaxValueFunction extends ac {
+public class MaxValueFunction extends AbstractInAxPackage {
   List a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c = null;
+  AxInterfaceAb c = null;
   
   double d = Double.NaN;
   
   long e = 0L;
   
-  protected H(List<ab> paramList) {
+  protected H(List<AxInterfaceAb> paramList) {
     this.a = paramList;
     this.b = paramList.get(0);
     if (paramList.size() > 1)
@@ -46,7 +46,7 @@ public class MaxValueFunction extends ac {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("maxValue( ");
     for (byte b = 0; b < this.a.size(); b++) {
-      ab ab1 = this.a.get(b);
+      AxInterfaceAb ab1 = this.a.get(b);
       stringBuilder.append(ab1.toString());
       if (b + 1 < this.a.size())
         stringBuilder.append(", "); 

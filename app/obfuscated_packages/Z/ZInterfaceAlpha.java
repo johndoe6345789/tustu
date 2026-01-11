@@ -2,8 +2,8 @@ package Z;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.ac;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
 import G.i;
 import V.ExceptionPrintstacktrace;
 import W.j;
@@ -17,19 +17,19 @@ public class ZInterfaceAlpha implements d {
     R r = T.a().c();
     if (r != null) {
       ArrayList arrayList1 = r.ExceptionPrintstacktrace();
-      for (ac ac : arrayList1) {
-        aH aH = r.ExceptionPrintstacktrace(ac.a());
-        if (aH != null && aH.b().equals("formula") && !a(ac.b(), paramList)) {
-          String str = aH.k();
+      for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : arrayList1) {
+        SerializableImpl SerializableImpl = r.ExceptionPrintstacktrace(SerializableImplExceptionprintstacktrace.a());
+        if (SerializableImpl != null && SerializableImpl.b().equals("formula") && !a(SerializableImplExceptionprintstacktrace.b(), paramList)) {
+          String str = SerializableImpl.k();
           try {
             str = i.a(str, r);
             j j = new j();
-            j.a(ac.b());
+            j.a(SerializableImplExceptionprintstacktrace.b());
             j.c(str);
-            j.e(ac.d());
+            j.e(SerializableImplExceptionprintstacktrace.d());
             arrayList.add(j);
           } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-            D.b("Unable to convert DataLogField \"" + ac.b() + "\" Error: " + ExceptionPrintstacktrace.getLocalizedMessage());
+            D.b("Unable to convert DataLogField \"" + SerializableImplExceptionprintstacktrace.b() + "\" Error: " + ExceptionPrintstacktrace.getLocalizedMessage());
           } 
         } 
       } 

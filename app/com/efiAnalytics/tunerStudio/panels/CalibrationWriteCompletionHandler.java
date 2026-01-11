@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.aB;
+import G.ArrayListInGPackage;
 import G.n;
 import G.o;
 import s.SComponentGolf;
@@ -13,7 +13,7 @@ class CalibrationWriteCompletionHandler implements n {
   }
   
   public void a(o paramo) {
-    aB.a().e();
+    ArrayListInGPackage.a().e();
     if (paramo.a() == 3) {
       if (paramo.c() != null) {
         J.a(this.a, SComponentGolf.b("Calibration Table Write Failed!") + "\n" + paramo.c());
@@ -28,7 +28,7 @@ class CalibrationWriteCompletionHandler implements n {
   }
   
   public void e() {
-    aB.a().d();
+    ArrayListInGPackage.a().d();
   }
 }
 

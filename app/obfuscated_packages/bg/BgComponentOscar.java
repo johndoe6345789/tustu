@@ -1,6 +1,6 @@
 package bg;
 
-import G.bf;
+import G.GInterfaceBf;
 import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,19 +32,19 @@ public class BgComponentOscar extends JPanel {
     add("Center", jScrollPane);
   }
   
-  public void a(bf parambf) {
+  public void a(GInterfaceBf parambf) {
     this.b.add(parambf);
     this.c.fireTableDataChanged();
   }
   
-  public boolean b(bf parambf) {
+  public boolean b(GInterfaceBf parambf) {
     boolean bool = this.b.remove(parambf);
     this.c.fireTableDataChanged();
     this.a.validate();
     return bool;
   }
   
-  public bf a() {
+  public GInterfaceBf a() {
     int i = this.a.getSelectedRow();
     return (i >= 0) ? this.b.get(i) : null;
   }
@@ -52,10 +52,10 @@ public class BgComponentOscar extends JPanel {
   public void b() {
     int i = this.a.getSelectedRow();
     if (i > 0) {
-      bf bf = this.b.remove(i);
-      this.b.add(i - 1, bf);
+      GInterfaceBf GInterfaceBf = this.b.remove(i);
+      this.b.add(i - 1, GInterfaceBf);
       for (byte b = 0; b < this.b.size(); b++)
-        ((bf)this.b.get(b)).a(b); 
+        ((GInterfaceBf)this.b.get(b)).a(b); 
       this.c.fireTableDataChanged();
       this.a.getSelectionModel().setSelectionInterval(i - 1, i - 1);
     } 
@@ -64,10 +64,10 @@ public class BgComponentOscar extends JPanel {
   public void c() {
     int i = this.a.getSelectedRow();
     if (i >= 0 && i < this.b.size() - 1) {
-      bf bf = this.b.remove(i);
-      this.b.add(i + 1, bf);
+      GInterfaceBf GInterfaceBf = this.b.remove(i);
+      this.b.add(i + 1, GInterfaceBf);
       for (byte b = 0; b < this.b.size(); b++)
-        ((bf)this.b.get(b)).a(b); 
+        ((GInterfaceBf)this.b.get(b)).a(b); 
       this.c.fireTableDataChanged();
       this.a.getSelectionModel().setSelectionInterval(i + 1, i + 1);
     } 
@@ -78,9 +78,9 @@ public class BgComponentOscar extends JPanel {
   }
   
   private void e() {
-    bf bf = a();
+    GInterfaceBf GInterfaceBf = a();
     for (t t : this.d)
-      t.a(bf); 
+      t.a(GInterfaceBf); 
   }
   
   public int d() {

@@ -1,6 +1,6 @@
 package aR;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import d.DComponentCharlie;
 import d.ExceptionInDPackage;
@@ -38,7 +38,7 @@ public class NetworkInArPackage implements DComponentCharlie {
       Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, unsupportedEncodingException);
     } 
     try {
-      NetworkHashMap.a().a(dd.a().DComponentCharlie(), str);
+      NetworkHashMap.a().a(ThreadedJFrameIsoptimizeddrawingenabled.a().DComponentCharlie(), str);
     } catch (Exception exception) {
       throw new ExceptionInDPackage(exception.getLocalizedMessage());
     } 

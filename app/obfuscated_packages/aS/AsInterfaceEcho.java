@@ -1,9 +1,9 @@
 package aS;
 
-import G.cq;
-import aP.dd;
+import G.GComponentCq;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 
-class AsInterfaceEcho implements cq {
+class AsInterfaceEcho implements GComponentCq {
   int a = 65535;
   
   b b;
@@ -14,7 +14,7 @@ class AsInterfaceEcho implements cq {
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (paramString.equals("seconds") && paramDouble < this.a && this.a < 65533) {
-      dd.a().b().ac();
+      ThreadedJFrameIsoptimizeddrawingenabled.a().b().ac();
       this.b.b = false;
       this.b.d = null;
     } 

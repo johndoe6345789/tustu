@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 
-public class TimeNowFunction extends ac {
+public class TimeNowFunction extends AbstractInAxPackage {
   private static long a = System.currentTimeMillis();
   
   private static boolean b = false;

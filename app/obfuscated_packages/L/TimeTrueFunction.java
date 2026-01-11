@@ -1,17 +1,17 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class TimeTrueFunction extends ac {
-  private ab c;
+public class TimeTrueFunction extends AbstractInAxPackage {
+  private AxInterfaceAb c;
   
   long a = -1L;
   
   double b = 0.0D;
   
-  public Z(ab paramab) {
+  public Z(AxInterfaceAb paramab) {
     this.c = paramab;
   }
   

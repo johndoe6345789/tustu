@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.aB;
+import G.ArrayListInGPackage;
 import G.n;
 import G.o;
 import bH.D;
@@ -15,7 +15,7 @@ class CalibrationWriteProgressHandler implements n {
   }
   
   public void a(o paramo) {
-    aB.a().e();
+    ArrayListInGPackage.a().e();
     if (paramo.a() == 3) {
       if (paramo.c() != null) {
         String str = paramo.c();
@@ -35,7 +35,7 @@ class CalibrationWriteProgressHandler implements n {
   }
   
   public void e() {
-    aB.a().d();
+    ArrayListInGPackage.a().d();
   }
 }
 

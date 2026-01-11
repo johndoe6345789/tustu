@@ -1,21 +1,19 @@
 package aP;
 
-import java.io.File;
-import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
+import com.efiAnalytics.apps.ts.dashboard.x;
+import java.awt.Window;
 
 class RunnableImplInApPackage implements Runnable {
-  A(f paramf, File[] paramArrayOfFile) {}
+  bY(bW parambW, x paramx1, x paramx2) {}
   
   public void run() {
-    Isoptimizeddrawingenabled Isoptimizeddrawingenabled = dd.a().i().a();
-    Isoptimizeddrawingenabled.g(hb.r);
-    F f1 = new F(this.b, this.a);
-    f1.start();
+    Window window = this.a.v();
+    this.b.a(window);
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/A.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bY.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

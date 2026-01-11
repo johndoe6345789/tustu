@@ -1,6 +1,6 @@
 package be;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,8 +8,8 @@ class BeComponentMike implements ActionListener {
   m(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    ak ak = this.a.e.n(paramActionEvent.getActionCommand());
-    j.a(this.a, ak);
+    Exceptionprintstacktrace Exceptionprintstacktrace = this.a.e.n(paramActionEvent.getActionCommand());
+    j.a(this.a, Exceptionprintstacktrace);
   }
 }
 

@@ -1,16 +1,16 @@
 package I;
 
 import G.T;
-import G.aF;
-import G.aG;
-import G.bT;
-import G.cu;
+import G.GInterfaceAf;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
+import G.ManagerUsingArrayList;
 import M.KalmanFilterUsingMatrix;
 import linear_algebra.Matrix;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class KalmanFilterUsingMatrix implements aF, aG {
+public class KalmanFilterUsingMatrix implements GInterfaceAf, GInterfaceAg {
   public static String a = "runtimeDataRate";
   
   float b = 0.0F;
@@ -44,7 +44,7 @@ public class KalmanFilterUsingMatrix implements aF, aG {
       this.e.i(new Matrix(new double[][] { { f1 }, { 0.0D }, { 0.0D }, { 0.0D } }));
       this.e.a();
       this.b = (this.b * f2 + (float)this.e.b().a(0, 0)) / (f2 + 1.0F);
-      cu.a().a(a, (this.b * 1.0F));
+      ManagerUsingArrayList.a().a(a, (this.b * 1.0F));
       if (i > f1 * 1.15D) {
         this.d = (int)Math.ceil(f1);
         this.c.clear();
@@ -57,13 +57,13 @@ public class KalmanFilterUsingMatrix implements aF, aG {
     } 
   }
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     return true;
   }
   
   public void a(String paramString) {
     this.b = 0.0F;
-    cu.a().a(a, 0.0D);
+    ManagerUsingArrayList.a().a(a, 0.0D);
   }
 }
 

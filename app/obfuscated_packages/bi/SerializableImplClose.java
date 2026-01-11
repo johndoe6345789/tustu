@@ -2,7 +2,7 @@ package bi;
 
 import G.R;
 import G.T;
-import G.dg;
+import G.GInterfaceDg;
 import aG.AgInterfaceBravo;
 import aP.NetworkHashMap;
 import bH.D;
@@ -46,7 +46,7 @@ public class SerializableImplClose extends d implements bc, Serializable {
   
   AgInterfaceBravo g = null;
   
-  dg h = new d(this);
+  GInterfaceDg h = new d(this);
   
   public SerializableImplClose(R paramR) {
     this.a = paramR.c();

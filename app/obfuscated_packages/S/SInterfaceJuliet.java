@@ -1,10 +1,10 @@
 package S;
 
 import G.T;
-import W.ap;
+import W.WInterfaceAp;
 
 public class SInterfaceJuliet extends h {
-  private ap c = null;
+  private WInterfaceAp c = null;
   
   private boolean d = true;
   
@@ -13,7 +13,7 @@ public class SInterfaceJuliet extends h {
     i(paramString);
   }
   
-  public ap h() {
+  public WInterfaceAp h() {
     return b.a().b();
   }
   

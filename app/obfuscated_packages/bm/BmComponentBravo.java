@@ -1,7 +1,7 @@
 package bm;
 
 import G.R;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import V.ExceptionInVPackage;
 import bH.D;
 import bk.ExceptionInVPackage;
@@ -10,11 +10,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class BmComponentBravo implements N {
-  public boolean ExceptionInVPackage(bv parambv) {
+  public boolean ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage parambv) {
     return (parambv instanceof G.bD && parambv.aL().equals("std_ms3Rtc"));
   }
   
-  public JPanel ExceptionInVPackage(R paramR, bv parambv) {
+  public JPanel ExceptionInVPackage(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     try {
       return (JPanel)new ExceptionInVPackage(paramR);
     } catch (ExceptionInVPackage ExceptionInVPackage) {

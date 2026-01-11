@@ -1,7 +1,7 @@
 package aZ;
 
 import G.R;
-import W.aq;
+import W.WInterfaceAq;
 import ac.AcComponentCharlie;
 import java.io.File;
 
@@ -12,7 +12,7 @@ public AbstractInAzPackagebstract class AbstractInAzPackage extends AcComponentC
   
   public abstract void w();
   
-  public abstract void a(aq paramaq);
+  public abstract void a(WInterfaceAq paramaq);
   
   public abstract int x();
 }

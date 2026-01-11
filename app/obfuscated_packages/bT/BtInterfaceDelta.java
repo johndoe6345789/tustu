@@ -1,8 +1,8 @@
 package bT;
 
 import G.R;
-import G.aH;
-import G.cu;
+import G.SerializableImpl;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.TostringInBoPackage;
 import bN.BnInterfaceKilo;
@@ -64,15 +64,15 @@ public class BtInterfaceDelta implements ExceptionInVPackage {
       l2.ExceptionInVPackage(n);
       long l3 = System.currentTimeMillis();
       List list = ExceptionInVPackage(r, i1, n);
-      cu.ExceptionInVPackage().BsInterfaceDelta();
-      for (aH aH : list) {
+      ManagerUsingArrayList.ExceptionInVPackage().BsInterfaceDelta();
+      for (SerializableImpl SerializableImpl : list) {
         try {
-          cu.ExceptionInVPackage().ExceptionInVPackage(r.TostringInBoPackage(), aH.aL(), TostringInBoPackage.n());
+          ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(r.TostringInBoPackage(), SerializableImpl.aL(), TostringInBoPackage.n());
         } catch (ExceptionInVPackage a1) {
           Logger.getLogger(D.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         } 
       } 
-      cu.ExceptionInVPackage().e();
+      ManagerUsingArrayList.ExceptionInVPackage().e();
       if (m < TostringInBoPackage.TostringInBoPackage() - 1) {
         BsInterfaceDelta.f(m + 1);
       } else {
@@ -101,12 +101,12 @@ public class BtInterfaceDelta implements ExceptionInVPackage {
   }
   
   private List ExceptionInVPackage(R paramR, int paramInt1, int paramInt2) {
-    ArrayList<aH> arrayList = new ArrayList();
-    Iterator<aH> iterator = paramR.q();
+    ArrayList<SerializableImpl> arrayList = new ArrayList();
+    Iterator<SerializableImpl> iterator = paramR.q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
-      if (aH.ExceptionInVPackage() >= paramInt1 && aH.ExceptionInVPackage() < paramInt1 + paramInt2)
-        arrayList.add(aH); 
+      SerializableImpl SerializableImpl = iterator.next();
+      if (SerializableImpl.ExceptionInVPackage() >= paramInt1 && SerializableImpl.ExceptionInVPackage() < paramInt1 + paramInt2)
+        arrayList.add(SerializableImpl); 
     } 
     return arrayList;
   }
@@ -114,20 +114,20 @@ public class BtInterfaceDelta implements ExceptionInVPackage {
   private int ExceptionInVPackage(R paramR, long paramLong) {
     if (paramLong < paramR.O().n())
       return (int)paramLong; 
-    aH aH = b(paramR, paramLong);
-    if (aH == null) {
+    SerializableImpl SerializableImpl = b(paramR, paramLong);
+    if (SerializableImpl == null) {
       bH.D.ExceptionInVPackage("Can not find ExceptionInVPackage channel at address 0x" + Long.toHexString(paramLong).toUpperCase());
       return (int)paramLong;
     } 
-    return aH.ExceptionInVPackage();
+    return SerializableImpl.ExceptionInVPackage();
   }
   
-  private aH b(R paramR, long paramLong) {
-    Iterator<aH> iterator = paramR.q();
+  private SerializableImpl b(R paramR, long paramLong) {
+    Iterator<SerializableImpl> iterator = paramR.q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
-      if (aH.x() == paramLong)
-        return aH; 
+      SerializableImpl SerializableImpl = iterator.next();
+      if (SerializableImpl.x() == paramLong)
+        return SerializableImpl; 
     } 
     return null;
   }

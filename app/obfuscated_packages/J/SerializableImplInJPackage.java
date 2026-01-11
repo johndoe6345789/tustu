@@ -1,12 +1,12 @@
 package J;
 
-import G.cV;
+import G.GInterfaceCv;
 import G.f;
 import bH.c;
 import bH.d;
 import java.io.Serializable;
 
-public class SerializableImplInJPackage implements cV, Serializable {
+public class SerializableImplInJPackage implements GInterfaceCv, Serializable {
   f a = new f();
   
   d b = new d();

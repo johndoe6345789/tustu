@@ -1,8 +1,8 @@
 package bO;
 
-import G.cq;
+import G.GComponentCq;
 
-class BoInterfaceDelta implements cq {
+class BoInterfaceDelta implements GComponentCq {
   d(c paramc) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}

@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.R;
-import G.bf;
+import G.GInterfaceBf;
 import W.z;
 import aE.PropertiesExtension;
 import bH.D;
@@ -33,13 +33,13 @@ public class TuningViewFileLoader {
   public static List PropertiesExtension(R paramR) {
     ArrayList<k> arrayList = new ArrayList();
     List list = paramR.af();
-    for (bf bf : list) {
+    for (GInterfaceBf GInterfaceBf : list) {
       try {
-        k k = new k(bf.e().b(bf.aL(), bf.PropertiesExtension()));
+        k k = new k(GInterfaceBf.e().b(GInterfaceBf.aL(), GInterfaceBf.PropertiesExtension()));
         k.PropertiesExtension("Current ECU Definition");
         arrayList.add(k);
       } catch (Exception exception) {
-        D.PropertiesExtension("Failed to load Default TuneView from ecuConfig! name: " + bf.aL() + ", md5: " + bf.PropertiesExtension() + "\nError: " + exception.getLocalizedMessage());
+        D.PropertiesExtension("Failed to load Default TuneView from ecuConfig! name: " + GInterfaceBf.aL() + ", md5: " + GInterfaceBf.PropertiesExtension() + "\nError: " + exception.getLocalizedMessage());
       } 
     } 
     File[] arrayOfFile = ThreadedFile.l().listFiles(new H());

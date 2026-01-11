@@ -1,8 +1,8 @@
 package ah;
 
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import ae.AeInterfaceDelta;
 import ae.FileUsingHashMap;
 import ae.AeInterfaceMike;
@@ -43,11 +43,11 @@ public class ThreadedInAhPackage implements AeInterfaceQuebec {
     return this.b;
   }
   
-  public cR a(bT parambT) {
+  public GInterfaceCr a(AeInterfaceMikeTostring parambT) {
     return null;
   }
   
-  public cV b(bT parambT) {
+  public GInterfaceCv b(AeInterfaceMikeTostring parambT) {
     return null;
   }
   
@@ -112,8 +112,8 @@ public class ThreadedInAhPackage implements AeInterfaceQuebec {
     return "https://bigstuff3efi.com/";
   }
   
-  public bT a(IOInAePackage paramp) {
-    return new bT();
+  public AeInterfaceMikeTostring a(IOInAePackage paramp) {
+    return new AeInterfaceMikeTostring();
   }
   
   public void f() {}

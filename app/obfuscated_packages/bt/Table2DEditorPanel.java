@@ -1,11 +1,11 @@
 package bt;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.be;
-import G.bi;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.CloneableImpl;
+import G.GInterfaceBi;
 import G.RInterfaceIndia;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -43,22 +43,22 @@ import r.ExceptionInVPackage;
 import r.RInterfaceIndia;
 import s.ExceptionPrintstacktrace;
 
-public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, bc, eS {
+public class Table2DEditorPanel extends JPanel implements GInterfaceAn, AiInterfaceEcho, bc, eS {
   private R q;
   
   JSplitPane ExceptionInVPackage = new JSplitPane();
   
   eM EqualsInAiPackage = null;
   
-  be c = null;
+  CloneableImpl c = null;
   
   bt AiInterfaceDelta = null;
   
-  aM AiInterfaceEcho = null;
+  Manager AiInterfaceEcho = null;
   
-  aM f = null;
+  Manager f = null;
   
-  aM ExceptionPrintstacktrace = null;
+  Manager ExceptionPrintstacktrace = null;
   
   bO h = null;
   
@@ -86,11 +86,11 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
   
   private bP u = null;
   
-  public W(R paramR, bi parambi, boolean paramBoolean) {
+  public W(R paramR, GInterfaceBi parambi, boolean paramBoolean) {
     this(paramR, parambi, paramBoolean, (et)null);
   }
   
-  public W(R paramR, bi parambi, boolean paramBoolean, et paramet) {
+  public W(R paramR, GInterfaceBi parambi, boolean paramBoolean, et paramet) {
     if (paramet == null)
       paramet = new Z(this); 
     this.ExceptionExtensionGetmessage = paramet;
@@ -98,7 +98,7 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
     this.AiInterfaceDelta = new bt(bool, new X(this));
     this.q = paramR;
     try {
-      this.c = (be)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
+      this.c = (CloneableImpl)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
       this.EqualsInAiPackage = this.AiInterfaceDelta.h();
     } catch (Exception exception) {
       D.EqualsInAiPackage("Unable to get 3D table layout by name: " + parambi.ExceptionInVPackage());
@@ -213,7 +213,7 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
   public void close() {
     KeyboardFocusManager.getCurrentKeyboardFocusManager().removeKeyEventDispatcher(this.h);
     AiInterfaceDelta();
-    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this);
     if (this.Isoptimizeddrawingenabled != null && this.Isoptimizeddrawingenabled.getComponentCount() > 0) {
       this.Isoptimizeddrawingenabled.f();
       (new aa()).ExceptionInVPackage(this.Isoptimizeddrawingenabled, ExceptionInVPackage.A(), this.RInterfaceIndia);
@@ -230,13 +230,13 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
       this.ExceptionExtensionGetmessage.ExceptionInVPackage("selectedDash", this.m.getTitleAt(this.m.getSelectedIndex())); 
   }
   
-  public void ExceptionInVPackage(R paramR, bi parambi) {
+  public void ExceptionInVPackage(R paramR, GInterfaceBi parambi) {
     try {
-      aR aR = aR.ExceptionInVPackage();
-      aR.ExceptionInVPackage(this);
+      ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(this);
       AiInterfaceDelta();
       eR eR = new eR();
-      be be1 = (be)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
+      CloneableImpl be1 = (CloneableImpl)paramR.AiInterfaceEcho().c(parambi.ExceptionInVPackage());
       if (be1.p() != null) {
         try {
           eR.EqualsInAiPackage(be1.p().ExceptionInVPackage());
@@ -282,9 +282,9 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
         D.ExceptionInVPackage("Error mapping 3D view to Parameter. ", (Exception)ExceptionPrintstacktrace, this);
       } 
       try {
-        aR.ExceptionInVPackage(paramR.c(), this.ExceptionPrintstacktrace.aL(), this);
-        aR.ExceptionInVPackage(paramR.c(), this.f.aL(), this);
-        aR.ExceptionInVPackage(paramR.c(), this.AiInterfaceEcho.aL(), this);
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), this.ExceptionPrintstacktrace.aL(), this);
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), this.f.aL(), this);
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), this.AiInterfaceEcho.aL(), this);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         bV.AiInterfaceDelta("Error subscribing for parameter changes.", this);
         ExceptionInVPackage.printStackTrace();
@@ -394,7 +394,7 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
         eR.ExceptionInVPackage(EqualsInAiPackage, arrayOfDouble[EqualsInAiPackage]); 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-      D.ExceptionInVPackage("X Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
+      D.ExceptionInVPackage("X Axis failed on update, it may now CloneableImpl out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   
@@ -406,7 +406,7 @@ public class Table2DEditorPanel extends JPanel implements aN, AiInterfaceEcho, b
         eR.EqualsInAiPackage(EqualsInAiPackage, arrayOfDouble[EqualsInAiPackage]); 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-      D.ExceptionInVPackage("X Axis failed on update, it may now be out of sync.", (Exception)ExceptionPrintstacktrace, null);
+      D.ExceptionInVPackage("X Axis failed on update, it may now CloneableImpl out of sync.", (Exception)ExceptionPrintstacktrace, null);
     } 
   }
   

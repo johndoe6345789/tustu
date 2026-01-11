@@ -1,7 +1,7 @@
 package bh;
 
 import G.R;
-import G.bi;
+import G.GInterfaceBi;
 import java.util.Iterator;
 
 public class BhInterfaceAlpha {
@@ -25,18 +25,18 @@ public class BhInterfaceAlpha {
   
   private static String a(R paramR, String paramString) {
     String str = null;
-    Iterator<bi> iterator = paramR.o();
+    Iterator<GInterfaceBi> iterator = paramR.o();
     while (iterator.hasNext()) {
-      bi bi = iterator.next();
-      if (bi.a().toLowerCase().startsWith(paramString.toLowerCase()))
-        return bi.a(); 
+      GInterfaceBi GInterfaceBi = iterator.next();
+      if (GInterfaceBi.a().toLowerCase().startsWith(paramString.toLowerCase()))
+        return GInterfaceBi.a(); 
     } 
     return str;
   }
   
   private static String c(R paramR) {
     try {
-      return ((bi)paramR.o().next()).a();
+      return ((GInterfaceBi)paramR.o().next()).a();
     } catch (Exception exception) {
       return null;
     } 

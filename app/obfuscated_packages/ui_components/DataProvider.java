@@ -1,11 +1,11 @@
 package ao;
 
-import W.aq;
+import W.WInterfaceAq;
 import com.efiAnalytics.ui.bV;
 import java.awt.Window;
 import javax.swing.JDialog;
 
-class d implements aq {
+class d implements WInterfaceAq {
   JDialog a = null;
   
   d(b paramb, Window paramWindow) {}

@@ -1,9 +1,9 @@
 package av;
 
-import G.be;
+import G.CloneableImpl;
 
 public interface AvComponentPapa {
-  boolean a(be parambe);
+  boolean a(CloneableImpl parambe);
 }
 
 

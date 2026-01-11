@@ -1,18 +1,18 @@
 package bb;
 
-import G.bU;
-import aP.dd;
+import G.GInterfaceBu;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import com.efiAnalytics.ui.bV;
 import s.SComponentGolf;
 
-class BbComponentCharlie implements bU {
+class BbComponentCharlie implements GInterfaceBu {
   C(x paramx) {}
   
   public void a() {}
   
   public void a(boolean paramBoolean) {
     if (!paramBoolean)
-      bV.d(SComponentGolf.b("Error reading current settings. Please load your tune manually."), dd.a().c()); 
+      bV.d(SComponentGolf.b("Error reading current settings. Please load your tune manually."), ThreadedJFrameIsoptimizeddrawingenabled.a().c()); 
   }
 }
 

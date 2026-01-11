@@ -1,6 +1,6 @@
 package ae;
 
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import W.z;
 import ad.AdInterfaceAlpha;
 import ad.AdInterfaceBravo;
@@ -99,7 +99,7 @@ public class FileUsingHashMap {
     this.f = paramFile;
   }
   
-  public File AdInterfaceAlpha(bT parambT) {
+  public File AdInterfaceAlpha(AeInterfaceMikeTostring parambT) {
     List<File> list = c();
     if (!AdInterfaceBravo())
       return null; 

@@ -1,12 +1,12 @@
 package aY;
 
-import W.ag;
+import W.FileInWPackage;
 import r.IOPropertiesUsingFile;
 
 class TostringInAyPackage {
-  ag IOPropertiesUsingFile = null;
+  FileInWPackage IOPropertiesUsingFile = null;
   
-  B(s params, ag paramag) {
+  B(s params, FileInWPackage paramag) {
     this.IOPropertiesUsingFile = paramag;
   }
   

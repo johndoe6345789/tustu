@@ -1,6 +1,6 @@
 package br;
 
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import bH.D;
 import bH.G;
@@ -28,7 +28,7 @@ class ListenerTablechanged implements TableModelListener {
       int i = (int)Math.round(d * 255.0D / 5.0D);
       String str = X.b(this.a, "egoADC", i + "");
       try {
-        str = i.c(str, (aI)this.d.d);
+        str = i.c(str, (GInterfaceAi)this.d.d);
         double d1 = G.g(str);
         this.b.a(Double.valueOf(d1), paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
         this.d.c.b();

@@ -3,10 +3,10 @@ package aK;
 import A.IO;
 import A.AInterfaceGolf;
 import G.J;
-import G.cu;
+import G.ManagerUsingArrayList;
 import G.l;
 import I.IInterfaceHotel;
-import ak.aE;
+import ak.AkInterfaceAe;
 import bH.D;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -76,18 +76,18 @@ public class Writer implements AInterfaceGolf {
   }
   
   private IO a(String paramString) {
-    aE aE = new aE(paramString, ",");
-    String str = aE.b();
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(paramString, ",");
+    String str = AkInterfaceAe.b();
     if (str.equals("$GPGGA") || str.equals("$GNGGA")) {
-      String str1 = aE.b();
-      String str2 = aE.b();
-      String str3 = aE.b();
-      String str4 = aE.b();
-      String str5 = aE.b();
-      String str6 = aE.b();
-      String str7 = aE.b();
-      String str8 = aE.b();
-      String str9 = aE.b();
+      String str1 = AkInterfaceAe.b();
+      String str2 = AkInterfaceAe.b();
+      String str3 = AkInterfaceAe.b();
+      String str4 = AkInterfaceAe.b();
+      String str5 = AkInterfaceAe.b();
+      String str6 = AkInterfaceAe.b();
+      String str7 = AkInterfaceAe.b();
+      String str8 = AkInterfaceAe.b();
+      String str9 = AkInterfaceAe.b();
       if (str6 != null && !str6.equals("") && !str6.equals("0")) {
         try {
           this.p = Integer.parseInt(str6);
@@ -131,14 +131,14 @@ public class Writer implements AInterfaceGolf {
         } 
       } 
     } else if (str.equals("$GPRMC") || str.equals("$GNRMC")) {
-      String str1 = aE.b();
-      String str2 = aE.b();
-      String str3 = aE.b();
-      String str4 = aE.b();
-      String str5 = aE.b();
-      String str6 = aE.b();
-      String str7 = aE.b();
-      String str8 = aE.b();
+      String str1 = AkInterfaceAe.b();
+      String str2 = AkInterfaceAe.b();
+      String str3 = AkInterfaceAe.b();
+      String str4 = AkInterfaceAe.b();
+      String str5 = AkInterfaceAe.b();
+      String str6 = AkInterfaceAe.b();
+      String str7 = AkInterfaceAe.b();
+      String str8 = AkInterfaceAe.b();
       if (str2 != null && !str2.equals("") && str2.equals("A")) {
         if (this.m != b) {
           long l = b(str1);
@@ -295,8 +295,8 @@ public class Writer implements AInterfaceGolf {
   public synchronized void d() {
     if (this.t == null)
       throw new l("Attempt to start External GPS with not Interface set."); 
-    cu.a().a(IInterfaceHotel.n, 0.0D);
-    cu.a().a(IInterfaceHotel.m, 0.0D);
+    ManagerUsingArrayList.a().a(IInterfaceHotel.n, 0.0D);
+    ManagerUsingArrayList.a().a(IInterfaceHotel.m, 0.0D);
     if (this.q == null) {
       this.q = new b(this);
       this.q.setDaemon(true);
@@ -323,8 +323,8 @@ public class Writer implements AInterfaceGolf {
       this.m = a;
     } 
     c();
-    cu.a().a(IInterfaceHotel.n, 0.0D);
-    cu.a().a(IInterfaceHotel.m, 0.0D);
+    ManagerUsingArrayList.a().a(IInterfaceHotel.n, 0.0D);
+    ManagerUsingArrayList.a().a(IInterfaceHotel.m, 0.0D);
     if (this.v != null)
       try {
         this.v.close();

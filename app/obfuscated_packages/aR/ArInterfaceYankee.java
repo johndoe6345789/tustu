@@ -3,7 +3,7 @@ package aR;
 import G.T;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import br.BrInterfaceFoxtrot;
 import d.DComponentCharlie;
 import d.ExceptionInDPackage;
@@ -63,7 +63,7 @@ public class ArInterfaceYankee implements DComponentCharlie {
     } catch (Exception exception) {
       throw new ExceptionInDPackage("Invalid Table Index: " + str);
     } 
-    if (dd.ExceptionInVPackage().o() != null && (DInterfaceIndia < 0 || DInterfaceIndia > dd.ExceptionInVPackage().o().DComponentCharlie()))
+    if (ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o() != null && (DInterfaceIndia < 0 || DInterfaceIndia > ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o().DComponentCharlie()))
       throw new ExceptionInDPackage("Invalid Table Index: " + str); 
   }
   
@@ -71,8 +71,8 @@ public class ArInterfaceYankee implements DComponentCharlie {
     this.DComponentCharlie.clear();
     DInterfaceIndia DInterfaceIndia = new DInterfaceIndia(b, "");
     DInterfaceIndia.ExceptionInVPackage(0);
-    if (dd.ExceptionInVPackage().o() != null) {
-      int j = dd.ExceptionInVPackage().o().DComponentCharlie();
+    if (ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o() != null) {
+      int j = ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o().DComponentCharlie();
       ArrayList<String> arrayList = new ArrayList();
       for (byte b = 0; b <= j; b++)
         arrayList.add(Integer.toString(b)); 

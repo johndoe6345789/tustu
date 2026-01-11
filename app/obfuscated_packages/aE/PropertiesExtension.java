@@ -3,8 +3,8 @@ package aE;
 import A.AInterfaceVictor;
 import G.R;
 import G.r;
-import W.ap;
-import W.ar;
+import W.WInterfaceAp;
+import W.Properties;
 import bH.D;
 import bH.R;
 import bH.S;
@@ -79,8 +79,8 @@ public class PropertiesExtension extends Properties {
   private boolean x = false;
   
   public PropertiesExtension() {
-    AInterfaceVictor.a().a((ap)new ar(this, "CommSetting"));
-    BqInterfaceJuliet.a().a((ap)new ar(this, "CommSetting"));
+    AInterfaceVictor.a().a((WInterfaceAp)new Properties(this, "CommSetting"));
+    BqInterfaceJuliet.a().a((WInterfaceAp)new Properties(this, "CommSetting"));
   }
   
   public void a() {

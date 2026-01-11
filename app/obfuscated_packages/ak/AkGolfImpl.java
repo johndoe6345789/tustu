@@ -6,7 +6,7 @@ import W.T;
 import W.V;
 import W.X;
 import W.Z;
-import W.ah;
+import W.ManagerUsingReader;
 import W.m;
 import bH.D;
 import bH.I;
@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class AkGolfImpl extends V {
-  ah e = null;
+  ManagerUsingReader e = null;
   
   String VInterfaceFoxtrot = m();
   
@@ -121,7 +121,7 @@ public class AkGolfImpl extends V {
         } catch (Exception exception) {}
         fileInputStream = new FileInputStream(this.h);
       } 
-      this.e = new ah(new InputStreamReader(fileInputStream, this.j));
+      this.e = new ManagerUsingReader(new InputStreamReader(fileInputStream, this.j));
       String str = null;
       for (byte b = 0; b <= i; b++) {
         str = this.n;
@@ -345,11 +345,11 @@ public class AkGolfImpl extends V {
   
   protected int ExceptionInVPackage(String paramString1, String paramString2) {
     byte b = -1;
-    ah ah1 = null;
+    ManagerUsingReader ah1 = null;
     try {
       this.h = new File(paramString1);
       FileInputStream fileInputStream = new FileInputStream(this.h);
-      ah1 = new ah(new InputStreamReader(fileInputStream));
+      ah1 = new ManagerUsingReader(new InputStreamReader(fileInputStream));
       String str;
       while ((str = ah1.ExceptionInVPackage()) != null) {
         b++;
@@ -377,7 +377,7 @@ public class AkGolfImpl extends V {
     String str4 = "";
     String str5 = "";
     byte b = 0;
-    ah ah1 = null;
+    ManagerUsingReader ah1 = null;
     try {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
@@ -401,7 +401,7 @@ public class AkGolfImpl extends V {
         } catch (Exception exception) {}
         fileInputStream = new FileInputStream(this.h);
       } 
-      ah1 = new ah(new InputStreamReader(fileInputStream, this.j));
+      ah1 = new ManagerUsingReader(new InputStreamReader(fileInputStream, this.j));
       str1 = ah1.ExceptionInVPackage();
       if (str1 == null)
         return b - 1; 
@@ -445,11 +445,11 @@ public class AkGolfImpl extends V {
   
   protected String ExceptionInVPackage(String paramString, int paramInt) {
     StringBuilder stringBuilder = new StringBuilder();
-    ah ah1 = null;
+    ManagerUsingReader ah1 = null;
     try {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
-      ah1 = new ah(new InputStreamReader(fileInputStream));
+      ah1 = new ManagerUsingReader(new InputStreamReader(fileInputStream));
       for (byte b = 0; b < paramInt; b++) {
         stringBuilder.append(ah1.ExceptionInVPackage());
         if (b < paramInt - 1)

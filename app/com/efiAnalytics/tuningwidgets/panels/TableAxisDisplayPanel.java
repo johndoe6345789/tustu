@@ -1,10 +1,10 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aM;
-import G.be;
-import G.cq;
-import G.cu;
+import G.Manager;
+import G.CloneableImpl;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.bc;
@@ -21,12 +21,12 @@ import javax.swing.JPanel;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
-public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelListener {
+public class TableAxisDisplayPanel extends JPanel implements GComponentCq, bc, TableModelListener {
   R ExceptionInVPackage = null;
   
-  aM b = null;
+  Manager b = null;
   
-  aM c = null;
+  Manager c = null;
   
   fF d = null;
   
@@ -48,13 +48,13 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
     setLayout(new BorderLayout());
     this.f = new w();
     this.f.setName(params.z());
-    be be = null;
+    CloneableImpl CloneableImpl = null;
     if (paramR != null && paramString != null && !paramString.equals("")) {
-      be = (be)paramR.e().c(paramString);
-      this.b = paramR.c(be.b());
-      this.c = paramR.c(be.ExceptionInVPackage());
-      this.h = be.f();
-      this.i = be.d();
+      CloneableImpl = (CloneableImpl)paramR.e().c(paramString);
+      this.b = paramR.c(CloneableImpl.b());
+      this.c = paramR.c(CloneableImpl.ExceptionInVPackage());
+      this.h = CloneableImpl.f();
+      this.i = CloneableImpl.d();
     } 
     params.addTableModelListener(this);
     int i = fh.ExceptionInVPackage(params);
@@ -92,8 +92,8 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
     } 
     if (paramR != null)
       try {
-        cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), be.f(), this);
-        cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), be.d(), this);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), CloneableImpl.f(), this);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), CloneableImpl.d(), this);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
@@ -103,7 +103,7 @@ public class TableAxisDisplayPanel extends JPanel implements cq, bc, TableModelL
   
   public void close() {
     this.j.removeTableModelListener(this);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {

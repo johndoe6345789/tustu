@@ -2,11 +2,11 @@ package be;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.ac;
-import G.ah;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GInterfaceAh;
 import V.ExceptionPrintstacktrace;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.fL;
@@ -36,41 +36,41 @@ public class BeComponentAlpha implements fS {
   }
   
   public boolean b() {
-    aH aH = null;
-    ac ac = null;
-    ah ah = null;
+    SerializableImpl SerializableImpl = null;
+    SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = null;
+    GInterfaceAh GInterfaceAh = null;
     try {
-      aH = this.a.b();
+      SerializableImpl = this.a.b();
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       bV.d(ExceptionPrintstacktrace.b("Problem with OutputChannel, Message:") + "\n" + ExceptionPrintstacktrace.getLocalizedMessage(), (Component)this.d);
       return false;
     } 
     try {
-      ac = this.b.b();
+      SerializableImplExceptionprintstacktrace = this.b.b();
     } catch (V.a a1) {
       Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       bV.d(ExceptionPrintstacktrace.b("Problem with Data log Field, Message:") + "\n" + a1.getLocalizedMessage(), (Component)this.d);
       return false;
     } 
     try {
-      ah = this.b.c();
+      GInterfaceAh = this.b.c();
     } catch (V.a a1) {
       Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       bV.d(ExceptionPrintstacktrace.b("Problem with Gauge Template, Message:") + "\n" + a1.getLocalizedMessage(), (Component)this.d);
       return false;
     } 
-    if (ah != null) {
-      ah.s(true);
-      this.c.a(ah);
+    if (GInterfaceAh != null) {
+      GInterfaceAh.s(true);
+      this.c.a(GInterfaceAh);
     } 
-    if (ac != null) {
-      ac.s(true);
-      this.c.a(ac);
+    if (SerializableImplExceptionprintstacktrace != null) {
+      SerializableImplExceptionprintstacktrace.s(true);
+      this.c.a(SerializableImplExceptionprintstacktrace);
     } 
-    if (aH != null) {
-      aH.s(true);
-      this.c.a(aH);
+    if (SerializableImpl != null) {
+      SerializableImpl.s(true);
+      this.c.a(SerializableImpl);
     } 
     return NetworkHashMap.a().b(this.c);
   }
@@ -92,7 +92,7 @@ public class BeComponentAlpha implements fS {
   }
   
   public void a() {
-    JDialog jDialog = this.d.a(dd.a().c(), ExceptionPrintstacktrace.b("Add a new Channel"), false);
+    JDialog jDialog = this.d.a(ThreadedJFrameIsoptimizeddrawingenabled.a().c(), ExceptionPrintstacktrace.b("Add a new Channel"), false);
     jDialog.setVisible(true);
   }
 }

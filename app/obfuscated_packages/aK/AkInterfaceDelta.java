@@ -1,6 +1,6 @@
 package aK;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import I.ArrayListInIPackage;
 import I.IInterfaceHotel;
 import java.util.HashMap;
@@ -68,22 +68,22 @@ public class AkInterfaceDelta implements g {
   
   private void u() {
     if (ArrayListInIPackage.a().ArrayListInIPackage()) {
-      cu.a().a(IInterfaceHotel.d, o());
-      cu.a().a(IInterfaceHotel.b, g());
-      cu.a().a(IInterfaceHotel.a, f());
-      cu.a().a(IInterfaceHotel.ArrayListInIPackage, e());
-      cu.a().a(IInterfaceHotel.e, n());
-      cu.a().a(IInterfaceHotel.f, i());
-      cu.a().a(IInterfaceHotel.g, IInterfaceHotel());
-      cu.a().a(IInterfaceHotel.IInterfaceHotel, p());
-      cu.a().a(IInterfaceHotel.i, j());
-      cu.a().a(IInterfaceHotel.j, l());
-      cu.a().a(IInterfaceHotel.k, m());
-      cu.a().a(IInterfaceHotel.l, k());
-      cu.a().a(IInterfaceHotel.m, 1.0D);
-      cu.a().a(IInterfaceHotel.n, 1.0D);
-      cu.a().a(IInterfaceHotel.r, s());
-      cu.a().a(IInterfaceHotel.p, this.i);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.d, o());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.b, g());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.a, f());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.ArrayListInIPackage, e());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.e, n());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.f, i());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.g, IInterfaceHotel());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.IInterfaceHotel, p());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.i, j());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.j, l());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.k, m());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.l, k());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.m, 1.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.n, 1.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.r, s());
+      ManagerUsingArrayList.a().a(IInterfaceHotel.p, this.i);
     } 
   }
   
@@ -97,21 +97,21 @@ public class AkInterfaceDelta implements g {
   
   public void a(String paramString, int paramInt, HashMap paramHashMap) {
     if (paramInt == a.b) {
-      cu.a().a(IInterfaceHotel.n, 1.0D);
-      cu.a().a(IInterfaceHotel.m, 0.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.n, 1.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.m, 0.0D);
     } else if (paramInt == a.a || paramInt == a.ArrayListInIPackage) {
-      cu.a().a(IInterfaceHotel.n, 0.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.n, 0.0D);
       this.i = 0.0F;
-      cu.a().a(IInterfaceHotel.q, 0.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.q, 0.0D);
       this.l = 0;
-      cu.a().a(IInterfaceHotel.p, this.i);
-      cu.a().a(IInterfaceHotel.m, 0.0D);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.p, this.i);
+      ManagerUsingArrayList.a().a(IInterfaceHotel.m, 0.0D);
     } 
     if (paramHashMap != null && paramHashMap.containsKey("satellites")) {
       Object object = paramHashMap.get("satellites");
       if (object != null) {
         int i = Integer.parseInt(object.toString());
-        cu.a().a(IInterfaceHotel.q, i);
+        ManagerUsingArrayList.a().a(IInterfaceHotel.q, i);
         this.l = i;
       } 
     } 

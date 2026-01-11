@@ -1,6 +1,6 @@
 package bk;
 
-import W.aA;
+import W.WInterfaceAa;
 import aP.NetworkHashMap;
 import bD.BdInterfaceGolf;
 import com.efiAnalytics.ui.bV;
@@ -10,7 +10,7 @@ import java.util.List;
 class BkInterfaceGolf implements BdInterfaceGolf {
   BdInterfaceGolf(d paramd) {}
   
-  public aA a(List<File> paramList) {
+  public WInterfaceAa a(List<File> paramList) {
     String[] arrayOfString = new String[paramList.size()];
     for (byte b = 0; b < paramList.size(); b++)
       arrayOfString[b] = ((File)paramList.get(b)).getAbsolutePath(); 

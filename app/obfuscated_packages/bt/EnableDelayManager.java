@@ -3,13 +3,13 @@ package bt;
 import G.R;
 import G.S;
 import G.T;
-import G.ab;
+import G.GInterfaceAb;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class EnableDelayManager implements S, ab {
+public class EnableDelayManager implements S, GInterfaceAb {
   private static e d = null;
   
   HashMap a = new HashMap<>();

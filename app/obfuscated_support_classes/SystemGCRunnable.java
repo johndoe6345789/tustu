@@ -1,8 +1,8 @@
-import aP.dl;
+import aP.WindowListenerAzinterfacecharlie;
 
 final class f implements Runnable {
   public void run() {
-    dl.g();
+    WindowListenerAzinterfacecharlie.g();
   }
 }
 

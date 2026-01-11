@@ -2,11 +2,11 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import G.R;
 import G.T;
-import G.cu;
+import G.ManagerUsingArrayList;
 
 public class EcuConfigurationHelper {
   public static R a(s params) {
-    return (params.getEcuConfigurationName() == null || params.getEcuConfigurationName().isEmpty() || params.getEcuConfigurationName().equals(cu.a)) ? T.a().c() : T.a().c(params.getEcuConfigurationName());
+    return (params.getEcuConfigurationName() == null || params.getEcuConfigurationName().isEmpty() || params.getEcuConfigurationName().equals(ManagerUsingArrayList.a)) ? T.a().c() : T.a().c(params.getEcuConfigurationName());
   }
 }
 

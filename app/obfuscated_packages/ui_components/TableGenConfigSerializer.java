@@ -1,7 +1,7 @@
 package ao;
 
 import V.ExceptionInVPackage;
-import ak.aE;
+import ak.AkInterfaceAe;
 import bH.D;
 import bH.X;
 import h.IOProperties;
@@ -61,47 +61,47 @@ public class hC {
       return null; 
     hD hD = new hD();
     try {
-      aE aE = new aE(str, ExceptionInVPackage);
-      hD.ExceptionInVPackage(Integer.parseInt(aE.b()));
-      hD.b(Integer.parseInt(aE.b()));
-      hD.c(Integer.parseInt(aE.b()));
-      hD.d(Integer.parseInt(aE.b()));
-      hD.e(Integer.parseInt(aE.b()));
-      hD.ExceptionInVPackage(aE.b());
-      hD.b(aE.b());
-      hD.c(aE.b());
-      hD.d(aE.b());
-      String[] arrayOfString1 = X.c(aE.b(), b);
+      AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, ExceptionInVPackage);
+      hD.ExceptionInVPackage(Integer.parseInt(AkInterfaceAe.b()));
+      hD.b(Integer.parseInt(AkInterfaceAe.b()));
+      hD.c(Integer.parseInt(AkInterfaceAe.b()));
+      hD.d(Integer.parseInt(AkInterfaceAe.b()));
+      hD.e(Integer.parseInt(AkInterfaceAe.b()));
+      hD.ExceptionInVPackage(AkInterfaceAe.b());
+      hD.b(AkInterfaceAe.b());
+      hD.c(AkInterfaceAe.b());
+      hD.d(AkInterfaceAe.b());
+      String[] arrayOfString1 = X.c(AkInterfaceAe.b(), b);
       hD.ExceptionInVPackage(arrayOfString1);
-      String[] arrayOfString2 = X.c(aE.b(), b);
+      String[] arrayOfString2 = X.c(AkInterfaceAe.b(), b);
       String[] arrayOfString3 = new String[arrayOfString2.length];
       for (byte b = 0; b < arrayOfString3.length; b++)
         arrayOfString3[b] = arrayOfString2[arrayOfString2.length - 1 - b]; 
       hD.b(arrayOfString2);
-      if (aE.ExceptionInVPackage())
-        hD.f(aE.b()); 
-      if (aE.ExceptionInVPackage()) {
+      if (AkInterfaceAe.ExceptionInVPackage())
+        hD.f(AkInterfaceAe.b()); 
+      if (AkInterfaceAe.ExceptionInVPackage()) {
         try {
-          hD.f(Integer.parseInt(aE.b()));
+          hD.f(Integer.parseInt(AkInterfaceAe.b()));
         } catch (Exception exception) {
           D.c("Failed to parse Color Mode");
           exception.printStackTrace();
         } 
         try {
-          hD.g(Integer.parseInt(aE.b()));
+          hD.g(Integer.parseInt(AkInterfaceAe.b()));
         } catch (Exception exception) {
           D.c("Failed to parse Display Mode");
           exception.printStackTrace();
         } 
-        hD.g(aE.b());
+        hD.g(AkInterfaceAe.b());
         try {
-          hD.h(Integer.parseInt(aE.b()));
+          hD.h(Integer.parseInt(AkInterfaceAe.b()));
         } catch (Exception exception) {
           D.c("Failed to parse Min Window Weight");
           exception.printStackTrace();
         } 
         try {
-          hD.IOProperties(Integer.parseInt(aE.b()));
+          hD.IOProperties(Integer.parseInt(AkInterfaceAe.b()));
         } catch (Exception exception) {
           D.c("Failed to parse Min Total Weight");
           exception.printStackTrace();

@@ -1,6 +1,6 @@
 package br;
 
-import G.aH;
+import G.SerializableImpl;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,7 +10,7 @@ class BrComponentUniform implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(paramActionEvent.getActionCommand());
     this.a.b.r(null);
-    this.a.h.a((aH)null);
+    this.a.h.a((SerializableImpl)null);
     this.a.h.a();
     this.a.m.a("targetLambdaTableName", this.a.b.c());
     this.a.m.a("targetLambdaChannelName", "");

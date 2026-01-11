@@ -1,8 +1,8 @@
 package K;
 
-import G.cq;
+import G.GComponentCq;
 
-public KInterfaceCharlielass KInterfaceCharlie implements cq {
+public KInterfaceCharlielass KInterfaceCharlie implements GComponentCq {
   private double a = 0.0D;
   
   private static c b = null;

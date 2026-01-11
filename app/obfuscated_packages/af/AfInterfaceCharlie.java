@@ -1,8 +1,8 @@
 package af;
 
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import J.SerializableImpl;
 import J.SerializableImplInJPackage;
 import ad.AdInterfaceAlpha;
@@ -22,13 +22,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public AfInterfaceCharlielass AfInterfaceCharlie implements n {
-  cV AdInterfaceAlpha = null;
+  GInterfaceCv AdInterfaceAlpha = null;
   
-  cR b = null;
+  GInterfaceCr b = null;
   
-  cV c = (cV)new SerializableImplInJPackage();
+  GInterfaceCv c = (GInterfaceCv)new SerializableImplInJPackage();
   
-  cR AdInterfaceDelta = (cR)new SerializableImpl();
+  GInterfaceCr AdInterfaceDelta = (GInterfaceCr)new SerializableImpl();
   
   List e = new ArrayList();
   
@@ -68,11 +68,11 @@ public AfInterfaceCharlielass AfInterfaceCharlie implements n {
     return arrayList;
   }
   
-  public cR AdInterfaceAlpha(bT parambT) {
+  public GInterfaceCr AdInterfaceAlpha(AeInterfaceMikeTostring parambT) {
     return this.b;
   }
   
-  public cV b(bT parambT) {
+  public GInterfaceCv b(AeInterfaceMikeTostring parambT) {
     return this.AdInterfaceAlpha;
   }
   
@@ -173,7 +173,7 @@ public AfInterfaceCharlielass AfInterfaceCharlie implements n {
     return this.FileUsingHashMap;
   }
   
-  public bT AdInterfaceAlpha(IOInAePackage paramp) {
+  public AeInterfaceMikeTostring AdInterfaceAlpha(IOInAePackage paramp) {
     return j.SerializableImpl(paramp);
   }
   

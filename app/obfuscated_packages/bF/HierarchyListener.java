@@ -1,7 +1,7 @@
 package bF;
 
 import G.c;
-import G.db;
+import G.GInterfaceDb;
 import bH.I;
 import bH.X;
 import bH.ab;
@@ -215,7 +215,7 @@ public class HierarchyListener extends JTable implements ClipboardOwner, Hierarc
   protected TableModel createDefaultDataModel() {
     y y = new y();
     c c = new c(8);
-    c.a((db)new c("Row 1"));
+    c.a((GInterfaceDb)new c("Row 1"));
     for (byte b = 0; b < c.a(); b++)
       c.a(b, Double.valueOf(50.0D)); 
     y.a(c);

@@ -1,7 +1,7 @@
 package aa;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import W.M;
 import W.N;
 import W.O;
@@ -39,12 +39,12 @@ public class AaInterfaceAlpha implements O {
       byte b = 0;
       for (M m : paramN) {
         String str = m.a();
-        aM aM = (!m.YInterfaceDelta() && m.f() != null) ? paramR.c(m.f()) : null;
-        if (aM != null && m.f() != null && this.a.containsKey(m.f())) {
+        Manager Manager = (!m.YInterfaceDelta() && m.f() != null) ? paramR.c(m.f()) : null;
+        if (Manager != null && m.f() != null && this.a.containsKey(m.f())) {
           YInterfaceDelta YInterfaceDelta = (YInterfaceDelta)this.a.get(m.f());
           String[] arrayOfString = str.split(",");
           if (arrayOfString.length > 2 && YInterfaceDelta != null) {
-            int i = YInterfaceDelta.a() - paramR.O().y(aM.YInterfaceDelta());
+            int i = YInterfaceDelta.a() - paramR.O().y(Manager.YInterfaceDelta());
             arrayOfString[2] = "  0x" + X.a(Integer.toHexString(i).toUpperCase(), '0', 4);
             StringBuilder stringBuilder = new StringBuilder();
             for (byte b1 = 0; b1 < arrayOfString.length; b1++) {
@@ -54,7 +54,7 @@ public class AaInterfaceAlpha implements O {
             } 
             str = stringBuilder.toString();
           } 
-        } else if (aM == null) {
+        } else if (Manager == null) {
         
         } 
         if (str.trim().isEmpty()) {

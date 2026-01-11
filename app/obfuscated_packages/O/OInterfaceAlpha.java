@@ -1,10 +1,10 @@
 package O;
 
-import G.bT;
-import G.cX;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCx;
 
-public class OInterfaceAlpha implements cX {
-  public boolean a(bT parambT) {
+public class OInterfaceAlpha implements GInterfaceCx {
+  public boolean a(AeInterfaceMikeTostring parambT) {
     return (parambT != null && parambT.b() != null && parambT.b().length() > 4 && !parambT.b().isEmpty() && !a(parambT.a()));
   }
   

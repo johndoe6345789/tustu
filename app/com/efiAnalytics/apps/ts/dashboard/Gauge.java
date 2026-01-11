@@ -1,13 +1,13 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.B;
-import G.aR;
+import G.ManagerUsingConcurrentHashMap;
 import G.c;
-import G.cZ;
-import G.da;
-import G.db;
-import G.dj;
-import G.dk;
+import G.GInterfaceCz;
+import G.GInterfaceDa;
+import G.GInterfaceDb;
+import G.GInterfaceDj;
+import G.GInterfaceDk;
 import G.i;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -31,18 +31,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import s.ExceptionPrintstacktrace;
 
-public class Gauge extends SingleChannelDashComponent implements aR, Serializable {
-  protected dj ExceptionInVPackage = (dj)new B(0.0D);
+public class Gauge extends SingleChannelDashComponent implements ManagerUsingConcurrentHashMap, Serializable {
+  protected GInterfaceDj ExceptionInVPackage = (GInterfaceDj)new B(0.0D);
   
-  protected dj b = (dj)new B(100.0D);
+  protected GInterfaceDj b = (GInterfaceDj)new B(100.0D);
   
-  private dj T = (dj)new B(Double.NEGATIVE_INFINITY);
+  private GInterfaceDj T = (GInterfaceDj)new B(Double.NEGATIVE_INFINITY);
   
-  protected dj c = (dj)new B(Double.NEGATIVE_INFINITY);
+  protected GInterfaceDj c = (GInterfaceDj)new B(Double.NEGATIVE_INFINITY);
   
-  protected dj d = (dj)new B(85.0D);
+  protected GInterfaceDj d = (GInterfaceDj)new B(85.0D);
   
-  protected dj f = (dj)new B(93.0D);
+  protected GInterfaceDj f = (GInterfaceDj)new B(93.0D);
   
   private double U = 0.0D;
   
@@ -58,11 +58,11 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   private boolean W = false;
   
-  protected db k = (db)new c("Units");
+  protected GInterfaceDb k = (GInterfaceDb)new c("Units");
   
-  protected db l = (db)new c("Demo");
+  protected GInterfaceDb l = (GInterfaceDb)new c("Demo");
   
-  protected dj m = (dj)new B(1.0D);
+  protected GInterfaceDj m = (GInterfaceDj)new B(1.0D);
   
   private int X = -1;
   
@@ -136,7 +136,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   private transient Image al = null;
   
-  cZ I = null;
+  GInterfaceCz I = null;
   
   w J = new w(this);
   
@@ -244,14 +244,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     initExpressionMonitor(this.P, this.m);
   }
   
-  public dj getMinVP() {
+  public GInterfaceDj getMinVP() {
     return this.ExceptionInVPackage;
   }
   
   public void setMin(Object paramObject) {
     if (!(this.ExceptionInVPackage instanceof G.bR)) {
       try {
-        this.ExceptionInVPackage = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.ExceptionInVPackage = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.J, this.ExceptionInVPackage);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.WARNING, "Failed to set min monitor", (Throwable)ExceptionPrintstacktrace);
@@ -262,7 +262,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setMinVP(Object paramObject) {
     try {
-      this.ExceptionInVPackage = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.ExceptionInVPackage = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.J, this.ExceptionInVPackage);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.WARNING, "Failed to set up Min Monitor", (Throwable)ExceptionPrintstacktrace);
@@ -270,9 +270,9 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     invalidatePainter();
   }
   
-  private void initExpressionMonitor(w paramw, dj paramdj) {
+  private void initExpressionMonitor(w paramw, GInterfaceDj paramdj) {
     if (this.I.ExceptionInVPackage() != null && !this.I.ExceptionInVPackage().isEmpty()) {
-      aR.ExceptionInVPackage().ExceptionInVPackage(paramw);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(paramw);
       try {
         i.ExceptionInVPackage(this.I.ExceptionInVPackage(), paramdj, paramw);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
@@ -289,14 +289,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return max();
   }
   
-  public dj getMaxVP() {
+  public GInterfaceDj getMaxVP() {
     return this.b;
   }
   
   public void setMax(Object paramObject) {
     if (!(this.b instanceof G.bR)) {
       try {
-        this.b = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.b = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.K, this.b);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -307,7 +307,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setMaxVP(Object paramObject) {
     try {
-      this.b = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.b = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.K, this.b);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -323,14 +323,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return lowWarning();
   }
   
-  public dj getLowWarningVP() {
+  public GInterfaceDj getLowWarningVP() {
     return this.c;
   }
   
   public void setLowWarning(Object paramObject) {
     if (!(this.c instanceof G.bR)) {
       try {
-        this.c = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.c = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.L, this.c);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -341,7 +341,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setLowWarningVP(Object paramObject) {
     try {
-      this.c = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.c = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.L, this.c);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -357,13 +357,13 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return highWarning();
   }
   
-  public dj getHighWarningVP() {
+  public GInterfaceDj getHighWarningVP() {
     return this.d;
   }
   
   public void setHighWarningVP(Object paramObject) {
     try {
-      this.d = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.d = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.N, this.d);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -374,7 +374,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   public void setHighWarning(Object paramObject) {
     if (!(this.d instanceof G.bR)) {
       try {
-        this.d = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.d = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.N, this.d);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -391,14 +391,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return highCritical();
   }
   
-  public dj getHighCriticalVP() {
+  public GInterfaceDj getHighCriticalVP() {
     return this.f;
   }
   
   public void setHighCritical(Object paramObject) {
     if (!(this.f instanceof G.bR)) {
       try {
-        this.f = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.f = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.O, this.f);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -409,7 +409,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setHighCriticalVP(Object paramObject) {
     try {
-      this.f = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.f = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.O, this.f);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -425,14 +425,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return lowCritical();
   }
   
-  public dj getLowCriticalVP() {
+  public GInterfaceDj getLowCriticalVP() {
     return this.T;
   }
   
   public void setLowCritical(Object paramObject) {
     if (!(this.T instanceof G.bR)) {
       try {
-        this.T = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.T = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.M, this.T);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -443,7 +443,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setLowCriticalVP(Object paramObject) {
     try {
-      this.T = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.T = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.M, this.T);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -500,7 +500,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setUnits(String paramString) {
     try {
-      this.k = da.ExceptionInVPackage().ExceptionInVPackage(this.I, paramString);
+      this.k = GInterfaceDa.ExceptionInVPackage().ExceptionInVPackage(this.I, paramString);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
@@ -530,7 +530,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setTitle(String paramString) {
     try {
-      this.l = da.ExceptionInVPackage().ExceptionInVPackage(this.I, paramString);
+      this.l = GInterfaceDa.ExceptionInVPackage().ExceptionInVPackage(this.I, paramString);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
@@ -547,14 +547,14 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
     return valueDigits();
   }
   
-  public dj getValueDigitsVP() {
+  public GInterfaceDj getValueDigitsVP() {
     return this.m;
   }
   
   public void setValueDigits(Object paramObject) {
     if (!(this.m instanceof G.bR)) {
       try {
-        this.m = dk.ExceptionInVPackage(this.I, paramObject.toString());
+        this.m = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
         initExpressionMonitor(this.P, this.m);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -566,7 +566,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   
   public void setValueDigitsVP(Object paramObject) {
     try {
-      this.m = dk.ExceptionInVPackage(this.I, paramObject.toString());
+      this.m = GInterfaceDk.ExceptionInVPackage(this.I, paramObject.toString());
       initExpressionMonitor(this.P, this.m);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
@@ -908,7 +908,7 @@ public class Gauge extends SingleChannelDashComponent implements aR, Serializabl
   }
   
   public boolean isComponentPaintedAt(int paramInt1, int paramInt2) {
-    return (getGaugePainter() instanceof aR) ? ((aR)getGaugePainter()).isComponentPaintedAt(paramInt1, paramInt2) : ((paramInt1 <= getWidth() && paramInt2 <= getHeight()));
+    return (getGaugePainter() instanceof ManagerUsingConcurrentHashMap) ? ((ManagerUsingConcurrentHashMap)getGaugePainter()).isComponentPaintedAt(paramInt1, paramInt2) : ((paramInt1 <= getWidth() && paramInt2 <= getHeight()));
   }
   
   public boolean isDirty() {

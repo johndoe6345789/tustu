@@ -1,6 +1,6 @@
 package ac;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,10 +9,10 @@ public class ThreadedInAcPackage extends Thread {
   
   public void run() {
     while (this.a) {
-      cu.a().a("dataLoggingActive", 1.0D);
+      ManagerUsingArrayList.a().a("dataLoggingActive", 1.0D);
       if (h.v() == null) {
         double d = (System.currentTimeMillis() - this.b.j) / 1000.0D;
-        cu.a().a("dataLogTime", d);
+        ManagerUsingArrayList.a().a("dataLogTime", d);
       } 
       try {
         Thread.sleep(1000L);
@@ -20,7 +20,7 @@ public class ThreadedInAcPackage extends Thread {
         Logger.getLogger(h.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
       } 
     } 
-    cu.a().a("dataLoggingActive", 0.0D);
+    ManagerUsingArrayList.a().a("dataLoggingActive", 0.0D);
   }
   
   public void a() {

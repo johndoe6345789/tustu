@@ -1,15 +1,15 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class IsNaNFunction extends ac {
-  ab a;
+public class IsNaNFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
   boolean b = false;
   
-  C(ab paramab) {
+  C(AxInterfaceAb paramab) {
     this.a = paramab;
   }
   

@@ -1,12 +1,12 @@
 package bf;
 
-import G.ac;
+import G.SerializableImplExceptionprintstacktrace;
 import java.util.Comparator;
 
 class BfInterfaceIndia implements Comparator {
   i(a parama) {}
   
-  public int a(ac paramac1, ac paramac2) {
+  public int a(SerializableImplExceptionprintstacktrace paramac1, SerializableImplExceptionprintstacktrace paramac2) {
     return paramac1.b().toLowerCase().compareTo(paramac2.b().toLowerCase());
   }
 }

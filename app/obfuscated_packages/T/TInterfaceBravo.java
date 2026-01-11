@@ -1,8 +1,8 @@
 package T;
 
-import G.ab;
+import G.GInterfaceAb;
 
-class TInterfaceBravo implements ab {
+class TInterfaceBravo implements GInterfaceAb {
   b(a parama) {}
   
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {

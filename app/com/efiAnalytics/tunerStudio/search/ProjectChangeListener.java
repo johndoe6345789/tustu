@@ -1,13 +1,13 @@
 package com.efiAnalytics.tunerStudio.search;
 
-import G.aG;
-import G.bT;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
 import javax.swing.SwingUtilities;
 
-class ProjectChangeListener implements aG {
+class ProjectChangeListener implements GInterfaceAg {
   x(r paramr) {}
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     y y = new y(this);
     SwingUtilities.invokeLater(y);
     return true;

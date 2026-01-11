@@ -2,12 +2,12 @@ package bt;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.ah;
-import G.br;
-import G.bs;
-import G.cq;
-import G.cu;
+import G.SerializableImpl;
+import G.GInterfaceAh;
+import G.GInterfaceBr;
+import G.GComponentBs;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import bH.D;
@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class LiveGraphPanel extends dl implements cq, bc {
+public class LiveGraphPanel extends dl implements GComponentCq, bc {
   private HashMap c = new HashMap<>();
   
   u ExceptionInVPackage = null;
@@ -32,9 +32,9 @@ public class LiveGraphPanel extends dl implements cq, bc {
     addMouseListener(new v(this));
   }
   
-  public s(R paramR, br parambr) {
+  public s(R paramR, GInterfaceBr parambr) {
     if (parambr != null && parambr.b() > 0) {
-      bs[] arrayOfBs = parambr.ExceptionInVPackage();
+      GComponentBs[] arrayOfBs = parambr.ExceptionInVPackage();
       for (byte b = 0; b < arrayOfBs.length; b++) {
         try {
           ExceptionInVPackage(paramR.c(), arrayOfBs[b].ExceptionInVPackage(), arrayOfBs[b].e(), (arrayOfBs[b].d() == null) ? null : new Color(arrayOfBs[b].d().ExceptionInVPackage()), arrayOfBs[b].b(), arrayOfBs[b].c(), arrayOfBs[b].f(), arrayOfBs[b].ExceptionPrintstacktrace());
@@ -50,10 +50,10 @@ public class LiveGraphPanel extends dl implements cq, bc {
     R r = T.ExceptionInVPackage().c(paramString1);
     if (r == null)
       throw new ExceptionInVPackage("Failed to add OutputChannel " + paramString2 + ",\n" + paramString1 + " not currently loaded."); 
-    aH aH = r.ExceptionPrintstacktrace(paramString2);
-    if (aH == null)
-      throw new ExceptionInVPackage("Failed to add OutputChannel " + paramString2 + ",\n" + aH + " not found in " + paramString1); 
-    ah ah = ExceptionInVPackage(paramString2, r);
+    SerializableImpl SerializableImpl = r.ExceptionPrintstacktrace(paramString2);
+    if (SerializableImpl == null)
+      throw new ExceptionInVPackage("Failed to add OutputChannel " + paramString2 + ",\n" + SerializableImpl + " not found in " + paramString1); 
+    GInterfaceAh GInterfaceAh = ExceptionInVPackage(paramString2, r);
     t t = new t(this);
     t.ExceptionInVPackage(paramString2);
     t.b(paramString2);
@@ -61,25 +61,25 @@ public class LiveGraphPanel extends dl implements cq, bc {
       paramColor = ExceptionInVPackage(this.c.size()); 
     t.ExceptionInVPackage(paramColor);
     if (paramString3 == null || paramString3.equals(""))
-      paramString3 = aH.e(); 
+      paramString3 = SerializableImpl.e(); 
     if (paramDouble1 != paramDouble2) {
       t.b(paramDouble1);
       t.c(paramDouble2);
-      t.d(aH.d());
+      t.d(SerializableImpl.d());
       t.ExceptionInVPackage(paramBoolean2);
       t.b(paramBoolean1);
       t.c(paramString3);
-      if (ah != null)
-        t.d(ah.l()); 
-    } else if (ah != null) {
-      t.b(ah.ExceptionInVPackage());
-      t.c(ah.d());
-      t.d(ah.l());
+      if (GInterfaceAh != null)
+        t.d(GInterfaceAh.l()); 
+    } else if (GInterfaceAh != null) {
+      t.b(GInterfaceAh.ExceptionInVPackage());
+      t.c(GInterfaceAh.d());
+      t.d(GInterfaceAh.l());
       t.ExceptionInVPackage(paramBoolean2);
       t.b(paramBoolean1);
-      if (ah.j() != null && !ah.j().equals("")) {
+      if (GInterfaceAh.j() != null && !GInterfaceAh.j().equals("")) {
         try {
-          t.c(ah.j().ExceptionInVPackage());
+          t.c(GInterfaceAh.j().ExceptionInVPackage());
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
           t.c("");
@@ -88,20 +88,20 @@ public class LiveGraphPanel extends dl implements cq, bc {
         t.c(paramString3);
       } 
     } else {
-      t.b(aH.n());
-      t.c(aH.m());
-      t.d(aH.d());
+      t.b(SerializableImpl.n());
+      t.c(SerializableImpl.m());
+      t.d(SerializableImpl.d());
       t.c(paramString3);
       t.ExceptionInVPackage(true);
       t.b(true);
     } 
     this.c.put(paramString2, t);
     ExceptionInVPackage(t);
-    cu.ExceptionInVPackage().ExceptionInVPackage(paramString1, paramString2, this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramString1, paramString2, this);
   }
   
   public void ExceptionInVPackage() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   private Color ExceptionInVPackage(int paramInt) {
@@ -118,12 +118,12 @@ public class LiveGraphPanel extends dl implements cq, bc {
     return Color.MAGENTA;
   }
   
-  private ah ExceptionInVPackage(String paramString, R paramR) {
-    Iterator<ah> iterator = paramR.B();
+  private GInterfaceAh ExceptionInVPackage(String paramString, R paramR) {
+    Iterator<GInterfaceAh> iterator = paramR.B();
     while (iterator.hasNext()) {
-      ah ah = iterator.next();
-      if (ah.i().equals(paramString))
-        return ah; 
+      GInterfaceAh GInterfaceAh = iterator.next();
+      if (GInterfaceAh.i().equals(paramString))
+        return GInterfaceAh; 
     } 
     return null;
   }

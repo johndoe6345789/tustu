@@ -1,11 +1,11 @@
 package n;
 
 import G.R;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import java.awt.Window;
 
 public interface NInterfaceLima {
-  void a(R paramR, bv parambv, Window paramWindow);
+  void a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, Window paramWindow);
 }
 
 

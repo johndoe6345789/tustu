@@ -1,10 +1,10 @@
 package P;
 
-import G.bL;
+import G.GInterfaceBl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PInterfaceAlpha extends bL {
+public class PInterfaceAlpha extends GInterfaceBl {
   private String b = null;
   
   private String c = "rising";

@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import V.ExceptionInVPackage;
-import bt.bI;
+import bt.ManagerUsingGauge;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
@@ -18,7 +18,7 @@ class GaugePreviewPanel extends JPanel {
   
   JLabel c = new JLabel("", 0);
   
-  bI d = new bI();
+  ManagerUsingGauge d = new ManagerUsingGauge();
   
   public GaugePreviewPanel(g paramg, File paramFile) {
     this.d.setPreferredSize(new Dimension(this.b, this.b));

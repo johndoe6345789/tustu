@@ -1,12 +1,12 @@
 package bQ;
 
-import G.aH;
+import G.SerializableImpl;
 import java.util.Comparator;
 
 class ComparatorImplInBqPackage implements Comparator {
   v(u paramu) {}
   
-  public int a(aH paramaH1, aH paramaH2) {
+  public int a(SerializableImpl paramaH1, SerializableImpl paramaH2) {
     return (int)(paramaH1.x() - paramaH2.x());
   }
 }

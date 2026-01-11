@@ -1,10 +1,10 @@
 package J;
 
-import G.cV;
+import G.GInterfaceCv;
 import G.f;
 import java.io.Serializable;
 
-public class ChecksumEncoder implements cV, Serializable {
+public class ChecksumEncoder implements GInterfaceCv, Serializable {
   f a = new f();
   
   public byte[] a(byte[] paramArrayOfbyte) {

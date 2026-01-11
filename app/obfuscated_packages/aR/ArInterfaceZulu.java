@@ -1,7 +1,7 @@
 package aR;
 
 import aE.PropertiesExtension;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
@@ -22,7 +22,7 @@ public class ArInterfaceZulu implements DComponentCharlie {
   }
   
   public void PropertiesExtension(Properties paramProperties) {
-    NetworkHashMap.PropertiesExtension().SComponentGolf(dd.PropertiesExtension().DComponentCharlie());
+    NetworkHashMap.PropertiesExtension().SComponentGolf(ThreadedJFrameIsoptimizeddrawingenabled.PropertiesExtension().DComponentCharlie());
   }
   
   public String PropertiesExtension() {

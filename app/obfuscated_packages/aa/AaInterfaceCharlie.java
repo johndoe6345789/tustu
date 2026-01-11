@@ -2,8 +2,8 @@ package aa;
 
 import G.Q;
 import G.R;
-import G.bP;
-import G.bf;
+import G.IOInGPackage;
+import G.GInterfaceBf;
 import W.N;
 import W.O;
 import W.r;
@@ -25,18 +25,18 @@ public AaInterfaceCharlielass AaInterfaceCharlie implements O {
   
   public void a(R paramR, BufferedWriter paramBufferedWriter, N paramN, r paramr) {
     Collection collection = paramR.ag();
-    for (bP bP : collection) {
-      if (a(paramR, bP) && (paramr == null || paramr.a((Q)bP))) {
-        paramBufferedWriter.append(bP.aL()).append(" = ");
-        paramBufferedWriter.append(bP.b());
+    for (IOInGPackage IOInGPackage : collection) {
+      if (a(paramR, IOInGPackage) && (paramr == null || paramr.a((Q)IOInGPackage))) {
+        paramBufferedWriter.append(IOInGPackage.aL()).append(" = ");
+        paramBufferedWriter.append(IOInGPackage.b());
         paramBufferedWriter.newLine();
       } 
     } 
   }
   
-  private boolean a(R paramR, bP parambP) {
-    for (bf bf : paramR.af()) {
-      if (bf.aL().equals(parambP.aL()))
+  private boolean a(R paramR, IOInGPackage parambP) {
+    for (GInterfaceBf GInterfaceBf : paramR.af()) {
+      if (GInterfaceBf.aL().equals(parambP.aL()))
         return true; 
     } 
     return false;

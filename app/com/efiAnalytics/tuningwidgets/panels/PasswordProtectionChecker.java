@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aM;
-import G.bv;
+import G.Manager;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import com.efiAnalytics.ui.bV;
@@ -20,17 +20,17 @@ public class PasswordProtectionChecker {
   
   static int b = IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ag, 10) * 60000;
   
-  public static boolean IOPropertiesUsingFile(R paramR, bv parambv, Component paramComponent) {
+  public static boolean IOPropertiesUsingFile(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, Component paramComponent) {
     List list = parambv.ab();
     for (String str : list) {
-      aM aM = paramR.c(str);
-      if (aM == null) {
+      Manager Manager = paramR.c(str);
+      if (Manager == null) {
         bV.d("Password Protection is not configured correctly for this Dialog.", paramComponent);
         continue;
       } 
       long l = 0L;
       try {
-        l = (long)aM.j(paramR.h());
+        l = (long)Manager.j(paramR.h());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(PasswordProtectionChecker.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         bV.d("Error Checking Password!!! See Log for details.", paramComponent);
@@ -61,17 +61,17 @@ public class PasswordProtectionChecker {
     return true;
   }
   
-  public static boolean IOPropertiesUsingFile(R paramR, bv parambv) {
+  public static boolean IOPropertiesUsingFile(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     List list = parambv.ab();
     for (String str : list) {
-      aM aM = paramR.c(str);
-      if (aM == null) {
+      Manager Manager = paramR.c(str);
+      if (Manager == null) {
         D.b("Password Protection is not configured correctly for this Dialog.");
         continue;
       } 
       long l = 0L;
       try {
-        l = (long)aM.j(paramR.h());
+        l = (long)Manager.j(paramR.h());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(PasswordProtectionChecker.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         return false;

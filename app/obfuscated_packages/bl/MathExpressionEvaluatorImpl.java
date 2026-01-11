@@ -2,7 +2,7 @@ package bl;
 
 import G.R;
 import G.T;
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import com.efiAnalytics.plugin.ecu.MathException;
 import com.efiAnalytics.plugin.ecu.servers.MathExpressionEvaluator;
@@ -13,7 +13,7 @@ final class MathExpressionEvaluatorImpl implements MathExpressionEvaluator {
       R r = T.a().c(paramString1);
       if (r == null)
         throw new MathException("Controller " + paramString1 + " is not know. This does not appear to be a loaded controller"); 
-      return i.a(paramString2, (aI)r);
+      return i.a(paramString2, (GInterfaceAi)r);
     } catch (Exception exception) {
       throw new MathException(exception.getMessage());
     } 

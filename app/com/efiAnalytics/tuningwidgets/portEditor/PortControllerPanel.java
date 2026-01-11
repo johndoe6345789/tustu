@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aM;
-import G.aS;
+import G.Manager;
+import G.ArrayListExceptionprintstacktrace;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import java.awt.BorderLayout;
@@ -23,15 +23,15 @@ class PortControllerPanel extends JPanel implements bc {
   
   JPanel c = null;
   
-  public PortControllerPanel(OutputPortEditor paramOutputPortEditor, R paramR, aS paramaS) {
-    aM aM = paramR.c(paramaS.m());
+  public PortControllerPanel(OutputPortEditor paramOutputPortEditor, R paramR, ArrayListExceptionprintstacktrace paramaS) {
+    Manager Manager = paramR.c(paramaS.m());
     setLayout(new GridLayout(0, 1, 8, 8));
     int RInterfaceIndia = 0;
-    if (aM != null)
-      if (aM.c().a() == 1 || !RInterfaceIndia.a().a("HF-0FD-0HHFJG")) {
+    if (Manager != null)
+      if (Manager.c().a() == 1 || !RInterfaceIndia.a().a("HF-0FD-0HHFJG")) {
         RInterfaceIndia = 1;
       } else {
-        RInterfaceIndia = aM.c().b();
+        RInterfaceIndia = Manager.c().b();
       }  
     this.c = new JPanel();
     this.c.setLayout(new FlowLayout(2));

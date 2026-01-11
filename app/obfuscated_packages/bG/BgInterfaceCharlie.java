@@ -1,9 +1,9 @@
 package bG;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
 import P.PInterfaceAlpha;
 import V.PInterfaceAlpha;
 import V.ExceptionPrintstacktrace;
@@ -12,7 +12,7 @@ import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
+public BgInterfaceCharlielass BgInterfaceCharlie implements GInterfaceAn, E, G, p {
   R PInterfaceAlpha;
   
   m b;
@@ -21,11 +21,11 @@ public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
   
   private b ExceptionPrintstacktrace;
   
-  aM d = null;
+  Manager d = null;
   
-  aM e = null;
+  Manager e = null;
   
-  aM f = null;
+  Manager f = null;
   
   public BgInterfaceCharlie(R paramR, PInterfaceAlpha parama, m paramm) {
     this.PInterfaceAlpha = paramR;
@@ -35,7 +35,7 @@ public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
     if (this.d == null)
       throw new ExceptionPrintstacktrace("BitArrayParameter not found."); 
     try {
-      aR.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.d.aL(), this);
+      ManagerUsingConcurrentHashMap.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.d.aL(), this);
     } catch (PInterfaceAlpha a1) {
       Logger.getLogger(c.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
     } 
@@ -43,7 +43,7 @@ public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
       this.e = paramR.c(parama.d());
       if (this.e != null)
         try {
-          aR.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.e.aL(), this);
+          ManagerUsingConcurrentHashMap.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.e.aL(), this);
         } catch (PInterfaceAlpha a1) {
           Logger.getLogger(c.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         }  
@@ -52,7 +52,7 @@ public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
       this.f = paramR.c(parama.c());
       if (this.f != null)
         try {
-          aR.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.f.aL(), this);
+          ManagerUsingConcurrentHashMap.PInterfaceAlpha().PInterfaceAlpha(paramR.c(), this.f.aL(), this);
         } catch (PInterfaceAlpha a1) {
           Logger.getLogger(c.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
         }  
@@ -114,7 +114,7 @@ public BgInterfaceCharlielass BgInterfaceCharlie implements aN, E, G, p {
   }
   
   public void c() {
-    aR.PInterfaceAlpha().PInterfaceAlpha(this);
+    ManagerUsingConcurrentHashMap.PInterfaceAlpha().PInterfaceAlpha(this);
     this.b.b(this);
   }
   

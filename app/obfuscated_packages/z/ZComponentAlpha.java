@@ -1,7 +1,7 @@
 package z;
 
 import G.R;
-import G.aF;
+import G.GInterfaceAf;
 import bH.D;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -47,10 +47,10 @@ public class ZComponentAlpha {
   }
   
   private void a(byte[] paramArrayOfbyte) {
-    Iterator<aF> iterator = this.e.iterator();
+    Iterator<GInterfaceAf> iterator = this.e.iterator();
     while (iterator.hasNext()) {
       try {
-        ((aF)iterator.next()).a(this.a.c(), paramArrayOfbyte);
+        ((GInterfaceAf)iterator.next()).a(this.a.c(), paramArrayOfbyte);
       } catch (Exception exception) {
         D.a("Exception while notifiying BurstMode OchListener");
         exception.printStackTrace();
@@ -58,11 +58,11 @@ public class ZComponentAlpha {
     } 
   }
   
-  public void a(aF paramaF) {
+  public void a(GInterfaceAf paramaF) {
     this.e.add(paramaF);
   }
   
-  public void b(aF paramaF) {
+  public void b(GInterfaceAf paramaF) {
     this.e.remove(paramaF);
   }
   

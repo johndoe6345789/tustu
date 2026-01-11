@@ -1,7 +1,7 @@
 package Y;
 
 import G.R;
-import G.aH;
+import G.SerializableImpl;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.io.BufferedReader;
@@ -25,45 +25,45 @@ public class YInterfaceAlpha {
   public void a(R paramR, File paramFile, boolean paramBoolean) {
     List list = a(paramFile);
     for (b b : list) {
-      aH aH = paramR.ExceptionPrintstacktrace(b.c());
-      if (paramBoolean && aH == null) {
-        aH = new aH(paramR.c());
-        aH.v(b.c());
+      SerializableImpl SerializableImpl = paramR.ExceptionPrintstacktrace(b.c());
+      if (paramBoolean && SerializableImpl == null) {
+        SerializableImpl = new SerializableImpl(paramR.c());
+        SerializableImpl.v(b.c());
         try {
           if (b.b() == 1) {
-            aH.b("U08");
+            SerializableImpl.b("U08");
           } else if (b.b() == 2) {
-            aH.b("U16");
+            SerializableImpl.b("U16");
           } else if (b.b() == 4) {
-            aH.b("S32");
+            SerializableImpl.b("S32");
           } else {
             D.b("Invalid size for " + b.c() + " setting to U08");
-            aH.b("U08");
+            SerializableImpl.b("U08");
           } 
-          aH.b(0);
-          aH.a("scalar");
-          aH.a(1.0D);
-          aH.b(0.0D);
+          SerializableImpl.b(0);
+          SerializableImpl.a("scalar");
+          SerializableImpl.a(1.0D);
+          SerializableImpl.b(0.0D);
           int i = a(paramR);
-          aH.a(i);
-          paramR.a(aH);
+          SerializableImpl.a(i);
+          paramR.a(SerializableImpl);
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Bad Param class, shouldn't happen", (Throwable)ExceptionPrintstacktrace);
         } 
         continue;
       } 
-      if (aH != null)
-        aH.a(b.a()); 
+      if (SerializableImpl != null)
+        SerializableImpl.a(b.a()); 
     } 
   }
   
   private int a(R paramR) {
     int i = 0;
-    Iterator<aH> iterator = paramR.q();
+    Iterator<SerializableImpl> iterator = paramR.q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
-      if (aH.a() + aH.l() > i)
-        i = aH.a() + aH.l(); 
+      SerializableImpl SerializableImpl = iterator.next();
+      if (SerializableImpl.a() + SerializableImpl.l() > i)
+        i = SerializableImpl.a() + SerializableImpl.l(); 
     } 
     return i;
   }

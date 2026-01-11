@@ -1,12 +1,12 @@
 package be;
 
 import G.R;
-import G.aI;
-import G.ac;
-import G.da;
-import G.db;
-import G.dj;
-import G.dk;
+import G.GInterfaceAi;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GInterfaceDa;
+import G.GInterfaceDb;
+import G.GInterfaceDj;
+import G.GInterfaceDk;
 import G.i;
 import V.ExceptionInVPackage;
 import ax.ExceptionInAxPackage;
@@ -39,7 +39,7 @@ public class BeComponentGolf extends JPanel implements o {
   
   R g = null;
   
-  ac h = null;
+  SerializableImplExceptionprintstacktrace h = null;
   
   n i = new n();
   
@@ -55,12 +55,12 @@ public class BeComponentGolf extends JPanel implements o {
     add(ExceptionInVPackage("OutputChannel", this.e, "The OutputChannel assigned to this data log field, this is the value that will be logged."));
     this.e.setPreferredSize(this.ExceptionInVPackage.getPreferredSize());
     this.e.addActionListener(this.i);
-    this.f.addItem(ac.e);
-    this.f.addItem(ac.d);
-    this.f.addItem(ac.f);
-    this.f.addItem(ac.h);
-    this.f.addItem(ac.c);
-    this.f.addItem(ac.b);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.e);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.d);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.f);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.h);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.c);
+    this.f.addItem(SerializableImplExceptionprintstacktrace.b);
     this.f.setSelectedItem(Integer.valueOf(0));
     this.f.setPreferredSize(this.ExceptionInVPackage.getPreferredSize());
     this.f.addActionListener(new h(this));
@@ -82,15 +82,15 @@ public class BeComponentGolf extends JPanel implements o {
     ExceptionInVPackage(paramR);
   }
   
-  public ac ExceptionInVPackage() {
+  public SerializableImplExceptionprintstacktrace ExceptionInVPackage() {
     if (this.h == null)
-      this.h = new ac(); 
+      this.h = new SerializableImplExceptionprintstacktrace(); 
     try {
       this.h.b(this.e.getSelectedItem().toString());
     } catch (Exception exception) {}
     try {
-      db db = da.ExceptionInVPackage().ExceptionInVPackage(this.g, this.ExceptionInVPackage.getText());
-      this.h.ExceptionInVPackage(db);
+      GInterfaceDb GInterfaceDb = GInterfaceDa.ExceptionInVPackage().ExceptionInVPackage(this.g, this.ExceptionInVPackage.getText());
+      this.h.ExceptionInVPackage(GInterfaceDb);
     } catch (V.g g1) {
       throw new ExceptionInVPackage(g1.getMessage());
     } 
@@ -98,8 +98,8 @@ public class BeComponentGolf extends JPanel implements o {
       this.h.u(this.b.getText()); 
     if (!this.c.getText().trim().isEmpty())
       try {
-        dj dj = dk.ExceptionInVPackage((aI)this.g, this.c.getText());
-        this.h.ExceptionInVPackage(dj);
+        GInterfaceDj GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.g, this.c.getText());
+        this.h.ExceptionInVPackage(GInterfaceDj);
       } catch (V.g g1) {
         throw new ExceptionInVPackage(g1.getMessage());
       }  
@@ -153,7 +153,7 @@ public class BeComponentGolf extends JPanel implements o {
     String str2 = this.b.getText().trim();
     if (!str2.isEmpty())
       try {
-        i.ExceptionInVPackage(str2, (aI)this.g);
+        i.ExceptionInVPackage(str2, (GInterfaceAi)this.g);
       } catch (ExceptionInAxPackage u) {
         r.c();
         r.ExceptionInVPackage(u.getLocalizedMessage());
@@ -162,7 +162,7 @@ public class BeComponentGolf extends JPanel implements o {
     String str3 = this.c.getText().trim();
     if (!str3.isEmpty())
       try {
-        i.ExceptionInVPackage(str3, (aI)this.g);
+        i.ExceptionInVPackage(str3, (GInterfaceAi)this.g);
       } catch (ExceptionInAxPackage u) {
         r.c();
         r.ExceptionInVPackage(u.getLocalizedMessage());
@@ -188,7 +188,7 @@ public class BeComponentGolf extends JPanel implements o {
     } 
   }
   
-  public void ExceptionInVPackage(ac paramac) {
+  public void ExceptionInVPackage(SerializableImplExceptionprintstacktrace paramac) {
     this.h = paramac;
     this.ExceptionInVPackage.setText(this.h.b());
     this.b.setText(this.h.aJ());

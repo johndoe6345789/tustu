@@ -1,9 +1,9 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.aN;
+import G.GInterfaceAn;
 import javax.swing.SwingUtilities;
 
-class LogRecordSizeListener implements aN {
+class LogRecordSizeListener implements GInterfaceAn {
   LogRecordSizeListener(DatalogFieldSelectorPanel paramn) {}
   
   public void a(String paramString1, String paramString2) {

@@ -1,8 +1,8 @@
 package bL;
 
-import G.aH;
-import G.aI;
-import G.aM;
+import G.SerializableImpl;
+import G.GInterfaceAi;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 
@@ -20,15 +20,15 @@ public class BlInterfaceFoxtrot extends k {
     a(false);
   }
   
-  public boolean a(aI paramaI, byte[] paramArrayOfbyte) {
+  public boolean a(GInterfaceAi paramaI, byte[] paramArrayOfbyte) {
     boolean bool = false;
     try {
-      aH aH = paramaI.ExceptionPrintstacktrace(b());
-      double d1 = aH.b(paramArrayOfbyte);
+      SerializableImpl SerializableImpl = paramaI.ExceptionPrintstacktrace(b());
+      double d1 = SerializableImpl.b(paramArrayOfbyte);
       double d2 = 14.7D;
-      aM aM = paramaI.c("stoich");
-      if (aM != null)
-        d2 = aM.j(paramaI.h()); 
+      Manager Manager = paramaI.c("stoich");
+      if (Manager != null)
+        d2 = Manager.j(paramaI.h()); 
       if (d1 < 2.0D)
         d1 *= d2; 
       double d3 = 0.843D * d2;

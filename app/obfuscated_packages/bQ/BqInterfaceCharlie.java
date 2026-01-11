@@ -1,6 +1,6 @@
 package bQ;
 
-import G.aH;
+import G.SerializableImpl;
 import G.w;
 import bH.X;
 import bO.BoInterfaceAlpha;
@@ -62,13 +62,13 @@ public BqInterfaceCharlielass BqInterfaceCharlie {
     return stringBuilder.toString();
   }
   
-  public static String b(List<aH> paramList) {
+  public static String b(List<SerializableImpl> paramList) {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append(X.b("Channel", ' ', 40)).append(" \t").append("address\t\t").append("Length\n");
     int i = 0;
     for (byte b = 0; b < paramList.size(); b++) {
-      stringBuilder.append(X.b(((aH)paramList.get(b)).aL(), ' ', 40)).append("\t").append("0x").append(Long.toHexString(((aH)paramList.get(b)).x()).toUpperCase()).append("\t\t").append(((aH)paramList.get(b)).BoInterfaceLima()).append("\n");
-      i += ((aH)paramList.get(b)).BoInterfaceLima();
+      stringBuilder.append(X.b(((SerializableImpl)paramList.get(b)).aL(), ' ', 40)).append("\t").append("0x").append(Long.toHexString(((SerializableImpl)paramList.get(b)).x()).toUpperCase()).append("\t\t").append(((SerializableImpl)paramList.get(b)).BoInterfaceLima()).append("\n");
+      i += ((SerializableImpl)paramList.get(b)).BoInterfaceLima();
     } 
     stringBuilder.append("Channel Count: ").append(paramList.size()).append("\tTotal Bytes: ").append(i).append("\n");
     return stringBuilder.toString();

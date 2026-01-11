@@ -1,8 +1,8 @@
 package br;
 
-import G.cq;
+import G.GComponentCq;
 
-class BrInterfacePapa implements cq {
+class BrInterfacePapa implements GComponentCq {
   p(n paramn) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}

@@ -1,20 +1,20 @@
 package bm;
 
 import G.R;
-import G.bv;
-import aP.aG;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import aP.ManagerAuinterfacedelta;
 import bt.N;
 import javax.swing.JPanel;
 
 public class BmComponentDelta implements N {
-  public boolean a(bv parambv) {
+  public boolean a(ArrayListExceptionprintstacktraceInGPackage parambv) {
     return (parambv instanceof G.bD && parambv.aL().equals("std_tpscal"));
   }
   
-  public JPanel a(R paramR, bv parambv) {
-    aG aG = new aG();
-    aG.a(paramR);
-    return (JPanel)aG;
+  public JPanel a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
+    ManagerAuinterfacedelta ManagerAuinterfacedelta = new ManagerAuinterfacedelta();
+    ManagerAuinterfacedelta.a(paramR);
+    return (JPanel)ManagerAuinterfacedelta;
   }
 }
 

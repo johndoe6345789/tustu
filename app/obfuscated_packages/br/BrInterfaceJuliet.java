@@ -1,9 +1,9 @@
 package br;
 
 import G.R;
-import G.de;
-import G.dm;
-import W.ab;
+import G.GInterfaceDe;
+import G.GInterfaceDm;
+import W.ManagerUsingFile;
 import aE.PropertiesExtension;
 import aE.AeInterfaceEcho;
 import com.efiAnalytics.ui.c;
@@ -46,17 +46,17 @@ public class BrInterfaceJuliet implements AeInterfaceEcho {
     return arrayList;
   }
   
-  public dm PropertiesExtension(R paramR, String paramString) {
-    dm dm = paramR.r(paramString);
-    if (dm != null)
-      return dm; 
+  public GInterfaceDm PropertiesExtension(R paramR, String paramString) {
+    GInterfaceDm GInterfaceDm = paramR.r(paramString);
+    if (GInterfaceDm != null)
+      return GInterfaceDm; 
     c(paramR);
     return paramR.r(paramString);
   }
   
-  public de b(R paramR, String paramString) {
-    de de = paramR.s(paramString);
-    return (de != null) ? de : paramR.s(paramString);
+  public GInterfaceDe b(R paramR, String paramString) {
+    GInterfaceDe GInterfaceDe = paramR.s(paramString);
+    return (GInterfaceDe != null) ? GInterfaceDe : paramR.s(paramString);
   }
   
   private void c(R paramR) {
@@ -88,8 +88,8 @@ public class BrInterfaceJuliet implements AeInterfaceEcho {
   private void d(R paramR, String paramString) {
     boolean bool = (PropertiesExtension.PropertiesExtension().c(PropertiesExtension.bq, PropertiesExtension.br) && PropertiesExtension.PropertiesExtension().c(PropertiesExtension.bs, PropertiesExtension.bt)) ? true : false;
     if (!bool) {
-      ab ab = new ab();
-      ab.PropertiesExtension(paramR, paramString, false);
+      ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
+      ManagerUsingFile.PropertiesExtension(paramR, paramString, false);
     } 
   }
   

@@ -2,10 +2,10 @@ package aS;
 
 import G.R;
 import G.S;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.cu;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.D;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AsInterfaceGolf implements S, aN {
+public class AsInterfaceGolf implements S, GInterfaceAn {
   String ExceptionInVPackage = "seconds";
   
   HashMap b = new HashMap<>();
@@ -30,29 +30,29 @@ public class AsInterfaceGolf implements S, aN {
     ArrayList<String> arrayList = b(paramR.c());
     Map<String, String> map = ExceptionInVPackage(paramR.c());
     for (byte b = 0; b < arrayOfString.length; b++) {
-      aM aM = paramR.c(arrayOfString[b]);
-      if (aM.E()) {
+      Manager Manager = paramR.c(arrayOfString[b]);
+      if (Manager.E()) {
         arrayList.add(arrayOfString[b]);
-        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), arrayOfString[b], this);
-        if (aM.i().equals("bits"))
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), arrayOfString[b], this);
+        if (Manager.i().equals("bits"))
           try {
-            map.put(aM.aL(), aM.f(paramR.h()));
+            map.put(Manager.aL(), Manager.f(paramR.h()));
           } catch (V.g g1) {
             Logger.getLogger(g.class.getName()).log(Level.WARNING, "PowerCycleMonitor unable to store bit param value", (Throwable)g1);
           }  
       } 
     } 
     if (!arrayList.isEmpty()) {
-      cu.ExceptionInVPackage().d("powerCycleRequired");
+      ManagerUsingArrayList.ExceptionInVPackage().d("powerCycleRequired");
       j j = new j(this);
       paramR.ExceptionInVPackage(j);
       if (paramR.g(this.ExceptionInVPackage) != null) {
-        cu.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), this.ExceptionInVPackage, j);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), this.ExceptionInVPackage, j);
       } else {
         D.ExceptionInVPackage("Failed to subscribe PowerCycle Monitor to outputchannel: " + this.ExceptionInVPackage);
       } 
-      cu.ExceptionInVPackage().ExceptionInVPackage("controllerSettingsLoaded", j);
-      cu.ExceptionInVPackage().ExceptionInVPackage("powerCycleRequired", new i(this, paramR));
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage("controllerSettingsLoaded", j);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage("powerCycleRequired", new i(this, paramR));
       this.d.put(paramR.c(), paramR);
     } 
   }
@@ -78,13 +78,13 @@ public class AsInterfaceGolf implements S, aN {
   public void ExceptionInVPackage(R paramR) {}
   
   public void b(R paramR) {
-    cu.ExceptionInVPackage().i(paramR.c());
+    ManagerUsingArrayList.ExceptionInVPackage().i(paramR.c());
     this.b.remove(paramR.c());
     if (this.b.isEmpty())
-      cu.ExceptionInVPackage().f("powerCycleRequired"); 
+      ManagerUsingArrayList.ExceptionInVPackage().f("powerCycleRequired"); 
     this.e.remove(paramR.c());
     this.d.remove(paramR.c());
-    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   public void c(R paramR) {
@@ -97,12 +97,12 @@ public class AsInterfaceGolf implements S, aN {
   
   public void ExceptionInVPackage(String paramString1, String paramString2) {
     R r = (R)this.d.get(paramString1);
-    aM aM = r.c(paramString2);
-    if (aM.i().equals("bits"))
+    Manager Manager = r.c(paramString2);
+    if (Manager.i().equals("bits"))
       try {
         Map<String, String> map = ExceptionInVPackage(r.c());
         String str1 = (String)map.get(paramString2);
-        String str2 = aM.f(r.h());
+        String str2 = Manager.f(r.h());
         map.put(paramString2, str2);
         if (str1 != null && str2 != null && str1.equals(str2))
           return; 
@@ -110,7 +110,7 @@ public class AsInterfaceGolf implements S, aN {
         Logger.getLogger(g.class.getName()).log(Level.INFO, "Strange, PowerCycleMonitor can't get last bit value.", (Throwable)g1);
       }  
     if (r != null && r.R()) {
-      cu.ExceptionInVPackage().ExceptionInVPackage("powerCycleRequired", 1.0D);
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage("powerCycleRequired", 1.0D);
       D.d(paramString2 + " changed and requires ExceptionInVPackage PowerCycle");
       if (this.c == 0.0D)
         ExceptionInVPackage(); 

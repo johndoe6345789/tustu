@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import W.ap;
-import W.ar;
+import W.WInterfaceAp;
+import W.Properties;
 import W.j;
 import W.n;
 import bB.BbInterfaceAlpha;
@@ -15,7 +15,7 @@ import BbInterfaceRomeo.BbInterfaceAlpha;
 public class HighSpeedLoggerFieldLimits implements BbInterfaceQuebec {
   private n d = null;
   
-  private ap e = (ap)new ar((BbInterfaceAlpha.BbInterfaceAlpha()).an, "HighSpeedLoggerFieldLimits");
+  private WInterfaceAp e = (WInterfaceAp)new Properties((BbInterfaceAlpha.BbInterfaceAlpha()).an, "HighSpeedLoggerFieldLimits");
   
   static String BbInterfaceAlpha = "Min";
   

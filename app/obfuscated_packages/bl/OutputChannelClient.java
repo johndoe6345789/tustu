@@ -1,9 +1,9 @@
 package bl;
 
-import G.cq;
+import G.GComponentCq;
 import com.efiAnalytics.plugin.ecu.OutputChannelClient;
 
-class OutputChannelClient implements cq {
+class OutputChannelClient implements GComponentCq {
   private OutputChannelClient b = null;
   
   b(a parama, OutputChannelClient paramOutputChannelClient) {

@@ -2,7 +2,7 @@ package u;
 
 import G.R;
 import bH.D;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import c.CInterfaceAlpha;
 import com.efiAnalytics.ui.cI;
 import com.efiAnalytics.ui.dz;
@@ -70,7 +70,7 @@ public class JDialogExtensionInUPackage extends JDialog {
     jPanel1.add("South", jPanel2);
     add("North", jPanel1);
     D.d("Difference Report disabling shared table Models");
-    bQ.CInterfaceAlpha().CInterfaceAlpha(false);
+    ManagerBfcomponentcharlie.CInterfaceAlpha().CInterfaceAlpha(false);
     this.e = new d(paramR1, paramR2, paramArrayList1);
     this.d = new dz(this.e, SComponentGolf.d());
     add("Center", (Component)this.d);
@@ -132,7 +132,7 @@ public class JDialogExtensionInUPackage extends JDialog {
   public void dispose() {
     this.e.close();
     D.d("Difference Report enabling shared table Models");
-    bQ.CInterfaceAlpha().CInterfaceAlpha(true);
+    ManagerBfcomponentcharlie.CInterfaceAlpha().CInterfaceAlpha(true);
     super.dispose();
   }
   

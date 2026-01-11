@@ -1,10 +1,10 @@
 package av;
 
 import G.T;
-import G.aI;
-import G.aM;
-import G.bM;
-import G.be;
+import G.GInterfaceAi;
+import G.Manager;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
 import G.i;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -63,23 +63,23 @@ public AvInterfaceCharlielass AvInterfaceCharlie extends ExceptionPrintstacktrac
       D.ExceptionInVPackage("Failed to determine Y Axis field! " + g1.getLocalizedMessage());
     } 
     String str = bool1 ? "TPS" : (bool2 ? "MAP" : "BOOST_PSI");
-    Iterator<be> iterator = this.b.n();
+    Iterator<CloneableImpl> iterator = this.b.n();
     while (iterator.hasNext()) {
-      be be = iterator.next();
-      if (this.d == null || this.d.ExceptionInVPackage(be)) {
-        String str1 = bM.ExceptionInVPackage(this.b, be.aL());
+      CloneableImpl CloneableImpl = iterator.next();
+      if (this.d == null || this.d.ExceptionInVPackage(CloneableImpl)) {
+        String str1 = ExceptionprintstacktraceInGPackage.ExceptionInVPackage(this.b, CloneableImpl.aL());
         boolean bool = true;
         try {
-          bool = (str1 == null || (!str1.isEmpty() && i.ExceptionInVPackage(str1, (aI)this.b) != 0.0D)) ? true : false;
+          bool = (str1 == null || (!str1.isEmpty() && i.ExceptionInVPackage(str1, (GInterfaceAi)this.b) != 0.0D)) ? true : false;
         } catch (ExceptionInAxPackage u) {
           D.c("Failed to evaluate: " + str1);
         } 
         if (bool) {
-          aM aM1 = this.b.c(be.ExceptionInVPackage());
-          aM aM2 = this.b.c(be.b());
-          aM aM3 = this.b.c(be.c());
+          Manager aM1 = this.b.c(CloneableImpl.ExceptionInVPackage());
+          Manager aM2 = this.b.c(CloneableImpl.b());
+          Manager aM3 = this.b.c(CloneableImpl.c());
           String str2 = null;
-          if (be.f().equalsIgnoreCase("Load")) {
+          if (CloneableImpl.f().equalsIgnoreCase("Load")) {
             String str4 = aM2.p();
             if (str4 != null)
               str4 = str4.toUpperCase(); 
@@ -92,10 +92,10 @@ public AvInterfaceCharlielass AvInterfaceCharlie extends ExceptionPrintstacktrac
             i i = new i(this.b, aM1, aM2, aM3);
             i.d(str2);
             i.e(str3);
-            i.f(be.aL());
-            this.c.put(be.aL(), i);
+            i.f(CloneableImpl.aL());
+            this.c.put(CloneableImpl.aL(), i);
           } catch (ExceptionInVPackage ExceptionInVPackage) {
-            D.ExceptionInVPackage("Unable to load table:" + be.aL(), (Exception)ExceptionInVPackage, null);
+            D.ExceptionInVPackage("Unable to load table:" + CloneableImpl.aL(), (Exception)ExceptionInVPackage, null);
             Logger.getLogger(ExceptionPrintstacktrace.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
           } 
         } 

@@ -1,7 +1,7 @@
 package com.efiAnalytics.xcp.master.responseProcessors;
 
 import G.F;
-import G.aI;
+import G.GInterfaceAi;
 import bH.D;
 import bH.TostringInBoPackage;
 import bN.BnInterfaceHotel;
@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class OdtDataProcessor {
   BqInterfaceEcho a;
   
-  aI b;
+  GInterfaceAi b;
   
   BoInterfaceLima TostringInBoPackage;
   
@@ -34,7 +34,7 @@ public class OdtDataProcessor {
   
   int g = 0;
   
-  public b(aI paramaI, BoInterfaceLima paraml, BqInterfaceEcho parame) {
+  public b(GInterfaceAi paramaI, BoInterfaceLima paraml, BqInterfaceEcho parame) {
     this.a = parame;
     this.b = paramaI;
     this.TostringInBoPackage = paraml;

@@ -1,6 +1,6 @@
 package AkGolfImpl;
 
-import G.cb;
+import G.GComponentCb;
 import L.n;
 import V.VInterfaceHotel;
 import W.T;
@@ -258,8 +258,8 @@ public class ThreadExtensionInGPackage extends Thread {
               AkGolfImpl AkGolfImpl = AkGolfImpl.KInterfaceAlpha();
               for (j j : arrayList) {
                 int k = 0;
-                if (cb.KInterfaceAlpha().b(j.KInterfaceAlpha()))
-                  k = cb.KInterfaceAlpha().KInterfaceAlpha(j.KInterfaceAlpha()).intValue(); 
+                if (GComponentCb.KInterfaceAlpha().b(j.KInterfaceAlpha()))
+                  k = GComponentCb.KInterfaceAlpha().KInterfaceAlpha(j.KInterfaceAlpha()).intValue(); 
                 int m = i.b("fieldSmoothingFactor_" + j.KInterfaceAlpha(), k);
                 if (m > 0) {
                   j.AkGolfImpl(m);

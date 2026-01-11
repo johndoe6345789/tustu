@@ -1,6 +1,6 @@
 package bl;
 
-import G.bm;
+import G.CloneableImplInGPackage;
 import com.efiAnalytics.plugin.ecu.UiCurve;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +56,7 @@ public class ManagerGetname implements UiCurve {
     return this.d.get(paramInt);
   }
   
-  public static g a(bm parambm) {
+  public static g a(CloneableImplInGPackage parambm) {
     g g1 = new g();
     g1.a(parambm.aL());
     g1.c(parambm.l());

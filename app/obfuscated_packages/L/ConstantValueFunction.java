@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 
-public class ConstantValueFunction extends ac {
+public class ConstantValueFunction extends AbstractInAxPackage {
   double a;
   
   public f(double paramDouble) {

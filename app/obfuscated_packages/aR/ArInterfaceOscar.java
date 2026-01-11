@@ -1,7 +1,7 @@
 package aR;
 
 import aP.NetworkHashMap;
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
 import java.util.Properties;
@@ -24,7 +24,7 @@ public class ArInterfaceOscar implements DComponentCharlie {
     if (RInterfaceIndia.a().a("poij  fdsz poi9ure895 ms7(")) {
       NetworkHashMap.a().O();
     } else {
-      hq.a().a("cannot display Action Manager settings.");
+      NInterfaceIndiaImpl.a().a("cannot display Action Manager settings.");
     } 
   }
   

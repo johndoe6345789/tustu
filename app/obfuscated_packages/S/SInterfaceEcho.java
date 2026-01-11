@@ -1,13 +1,13 @@
 package S;
 
-import G.aF;
-import G.cq;
+import G.GInterfaceAf;
+import G.GComponentCq;
 import G.q;
 import bH.D;
 import java.util.Collection;
 import java.util.HashMap;
 
-public class SInterfaceEcho implements aF, cq {
+public class SInterfaceEcho implements GInterfaceAf, GComponentCq {
   HashMap a = new HashMap<>();
   
   private static e c = null;

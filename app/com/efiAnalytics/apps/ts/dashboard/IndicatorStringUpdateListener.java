@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.aN;
+import G.GInterfaceAn;
 import java.io.Serializable;
 
-class IndicatorStringUpdateListener implements aN, Serializable {
+class IndicatorStringUpdateListener implements GInterfaceAn, Serializable {
   IndicatorStringUpdateListener(Indicator paramIndicator) {}
   
   public void a(String paramString1, String paramString2) {

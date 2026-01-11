@@ -1,11 +1,11 @@
 package aO;
 
-import G.cd;
+import G.GComponentCd;
 
 class TostringInAoPackage {
-  private cd b = null;
+  private GComponentCd b = null;
   
-  i(a parama, cd paramcd) {
+  i(a parama, GComponentCd paramcd) {
     this.b = paramcd;
   }
   
@@ -13,7 +13,7 @@ class TostringInAoPackage {
     return (a() == null) ? "[none]" : ((a().g() == null) ? "Unknown" : a().g());
   }
   
-  public cd a() {
+  public GComponentCd a() {
     return this.b;
   }
 }

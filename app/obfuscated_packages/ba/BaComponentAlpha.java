@@ -2,7 +2,7 @@ package ba;
 
 import G.R;
 import W.B;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import com.efiAnalytics.ui.bV;
 import java.io.File;
@@ -16,8 +16,8 @@ public class BaComponentAlpha implements B {
   
   public void a(File paramFile) {
     String str = "The file '" + paramFile.getName() + "' has been changed by another program.\n\nWould you like " + r.a.b + " to load the changes?";
-    if (bV.a(str, dd.a().c(), true))
-      NetworkHashMap.a().a(dd.a().c(), this.a, paramFile.getAbsolutePath()); 
+    if (bV.a(str, ThreadedJFrameIsoptimizeddrawingenabled.a().c(), true))
+      NetworkHashMap.a().a(ThreadedJFrameIsoptimizeddrawingenabled.a().c(), this.a, paramFile.getAbsolutePath()); 
   }
 }
 

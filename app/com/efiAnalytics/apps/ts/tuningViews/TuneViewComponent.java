@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.T;
-import G.cu;
+import G.ManagerUsingArrayList;
 import aE.PropertiesExtension;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.eJ;
@@ -131,7 +131,7 @@ public abstract class TuneViewComponent extends JPanel implements bc {
   }
   
   public String getEcuConfigurationName() {
-    return (this.b != null && this.b.equals(cu.PropertiesExtension)) ? this.b : ((PropertiesExtension.A() != null && PropertiesExtension.A().u().equals(this.b)) ? "" : ((this.b != null && !this.b.isEmpty()) ? this.b : this.b));
+    return (this.b != null && this.b.equals(ManagerUsingArrayList.PropertiesExtension)) ? this.b : ((PropertiesExtension.A() != null && PropertiesExtension.A().u().equals(this.b)) ? "" : ((this.b != null && !this.b.isEmpty()) ? this.b : this.b));
   }
   
   public void setEcuConfigurationName(String paramString) {

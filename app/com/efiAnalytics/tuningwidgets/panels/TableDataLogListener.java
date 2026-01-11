@@ -1,27 +1,27 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aM;
-import G.aR;
-import G.bM;
-import G.be;
+import G.Manager;
+import G.ManagerUsingConcurrentHashMap;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
 import V.ExceptionInVPackage;
 import W.j;
 import W.n;
 import bH.D;
-import bt.bP;
+import bt.BtInterfaceBp;
 import bt.p;
 import i.ExceptionInVPackage;
 import i.IInterfaceCharlie;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TableDataLogListener implements bP, ExceptionInVPackage {
+public class TableDataLogListener implements BtInterfaceBp, ExceptionInVPackage {
   p ExceptionInVPackage;
   
   R b;
   
-  be IInterfaceCharlie;
+  CloneableImpl IInterfaceCharlie;
   
   String d = null;
   
@@ -35,14 +35,14 @@ public class TableDataLogListener implements bP, ExceptionInVPackage {
   
   Runnable h = new TableDataLogRunnable(this);
   
-  public TableDataLogListener(R paramR, be parambe, p paramp) {
+  public TableDataLogListener(R paramR, CloneableImpl parambe, p paramp) {
     this.b = paramR;
     this.ExceptionInVPackage = paramp;
     this.IInterfaceCharlie = parambe;
     IInterfaceCharlie();
-    this.d = bM.j(paramR, parambe.d());
+    this.d = ExceptionprintstacktraceInGPackage.j(paramR, parambe.d());
     if (this.d == null && parambe.d() != null && parambe.d().equals("rpm") && paramR.g("RpmHiRes") != null)
-      this.d = bM.j(paramR, "RpmHiRes"); 
+      this.d = ExceptionprintstacktraceInGPackage.j(paramR, "RpmHiRes"); 
     if (this.d == null && parambe.g() != null && paramR.g(parambe.g()) != null)
       this.d = parambe.g(); 
     if (this.d == null)
@@ -50,8 +50,8 @@ public class TableDataLogListener implements bP, ExceptionInVPackage {
     if (paramR.IInterfaceCharlie("LKUP_PARAMETER") != null && paramR.IInterfaceCharlie("LOAD_AXIS_SCALE") != null) {
       this.i = new TableParameterChangeListener(this);
       try {
-        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LKUP_PARAMETER", this.i);
-        aR.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LOAD_AXIS_SCALE", this.i);
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LKUP_PARAMETER", this.i);
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(paramR.IInterfaceCharlie(), "LOAD_AXIS_SCALE", this.i);
       } catch (ExceptionInVPackage a1) {
         Logger.getLogger(TableDataLogListener.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       } 
@@ -130,28 +130,28 @@ public class TableDataLogListener implements bP, ExceptionInVPackage {
   }
   
   private void IInterfaceCharlie() {
-    aM aM = this.b.IInterfaceCharlie(this.IInterfaceCharlie.b());
+    Manager Manager = this.b.IInterfaceCharlie(this.IInterfaceCharlie.b());
     n n = IInterfaceCharlie.ExceptionInVPackage().e();
     if (n == null) {
       this.g = "UNINITIALIZED";
     } else {
-      if (this.g != null && !this.g.equals("UNINITIALIZED") && aM.p() != null && this.g != null && this.g.equals(aM.p()) && this.i == null)
+      if (this.g != null && !this.g.equals("UNINITIALIZED") && Manager.p() != null && this.g != null && this.g.equals(Manager.p()) && this.i == null)
         return; 
-      if (aM != null) {
-        this.g = aM.p();
+      if (Manager != null) {
+        this.g = Manager.p();
       } else {
         this.g = null;
       } 
     } 
-    this.e = bM.j(this.b, this.IInterfaceCharlie.f());
+    this.e = ExceptionprintstacktraceInGPackage.j(this.b, this.IInterfaceCharlie.f());
     if (this.e == null && this.IInterfaceCharlie.h() != null && this.b.g(this.IInterfaceCharlie.h()) != null)
       this.e = this.IInterfaceCharlie.h(); 
     if (this.e == null)
       this.e = "MAP"; 
     if (n != null) {
       j j = n.ExceptionInVPackage(this.e);
-      aM aM1 = this.b.IInterfaceCharlie("LKUP_PARAMETER");
-      aM aM2 = this.b.IInterfaceCharlie("LOAD_AXIS_SCALE");
+      Manager aM1 = this.b.IInterfaceCharlie("LKUP_PARAMETER");
+      Manager aM2 = this.b.IInterfaceCharlie("LOAD_AXIS_SCALE");
       if (aM1 != null && aM2 != null && this.IInterfaceCharlie.f() != null && this.IInterfaceCharlie.f().equals("Load")) {
         try {
           String str1 = aM1.f(this.b.h());
@@ -177,20 +177,20 @@ public class TableDataLogListener implements bP, ExceptionInVPackage {
           Logger.getLogger(TableDataLogListener.class.getName()).log(Level.SEVERE, (String)null, exception);
           this.e = "Fuel Load";
         } 
-      } else if (j == null || (this.e.equals("Load") && j.e() == j.f()) || (aM != null && aM.p() != null && !aM.p().isEmpty() && j.n() != null && !j.n().isEmpty() && !j.n().equalsIgnoreCase(aM.p()))) {
-        if (aM.p().equalsIgnoreCase("kpa") && n.b("MAP") != null) {
+      } else if (j == null || (this.e.equals("Load") && j.e() == j.f()) || (Manager != null && Manager.p() != null && !Manager.p().isEmpty() && j.n() != null && !j.n().isEmpty() && !j.n().equalsIgnoreCase(Manager.p()))) {
+        if (Manager.p().equalsIgnoreCase("kpa") && n.b("MAP") != null) {
           this.e = "MAP";
-        } else if (aM.p().equalsIgnoreCase("TPS") && n.b("TPS") != null) {
+        } else if (Manager.p().equalsIgnoreCase("TPS") && n.b("TPS") != null) {
           this.e = "TPS";
-        } else if (aM.p().equalsIgnoreCase("TPS") && n.b("TPS_Pct") != null) {
+        } else if (Manager.p().equalsIgnoreCase("TPS") && n.b("TPS_Pct") != null) {
           this.e = "TPS_Pct";
-        } else if (aM.p().equalsIgnoreCase("psi") && n.b("Boost psi") != null) {
+        } else if (Manager.p().equalsIgnoreCase("psi") && n.b("Boost psi") != null) {
           this.e = "Boost psi";
-        } else if (aM.p().equalsIgnoreCase("psi") && n.b("Boost") != null) {
+        } else if (Manager.p().equalsIgnoreCase("psi") && n.b("Boost") != null) {
           this.e = "Boost";
-        } else if (aM.p().equalsIgnoreCase("psig") && n.b("PRESS_BOOST") != null) {
+        } else if (Manager.p().equalsIgnoreCase("psig") && n.b("PRESS_BOOST") != null) {
           this.e = "PRESS_BOOST";
-        } else if (aM.p().equalsIgnoreCase("psig") && n.b("BOOST_PSI") != null) {
+        } else if (Manager.p().equalsIgnoreCase("psig") && n.b("BOOST_PSI") != null) {
           this.e = "BOOST_PSI";
         } 
       } 
@@ -198,7 +198,7 @@ public class TableDataLogListener implements bP, ExceptionInVPackage {
     if (this.e == null)
       D.b("No Data Log field defined for Y axis of table: " + this.IInterfaceCharlie.aL()); 
     if ((this.d == null || !this.d.isEmpty()) && n != null && n.ExceptionInVPackage(this.d) == null)
-      this.d = bM.j(this.b, this.IInterfaceCharlie.d()); 
+      this.d = ExceptionprintstacktraceInGPackage.j(this.b, this.IInterfaceCharlie.d()); 
   }
 }
 

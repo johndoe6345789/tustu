@@ -2,7 +2,7 @@ package com.efiAnalytics.apps.ts.tuningViews;
 
 import G.R;
 import G.T;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import W.z;
 import bH.D;
 import bH.aa;
@@ -79,8 +79,8 @@ public class TuningViewFile {
         str2 = ((SelectableTable)tuneViewComponent).getSelectedTableName();
       } 
       if (str2 != null && !str2.isEmpty()) {
-        bv bv = r.e().c(str2);
-        if (bv != null && !W.a(r, bv, bV.c()))
+        ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.e().c(str2);
+        if (ArrayListExceptionprintstacktraceInGPackage != null && !W.a(r, ArrayListExceptionprintstacktraceInGPackage, bV.c()))
           return false; 
       } 
     } 

@@ -1,6 +1,6 @@
 package I;
 
-import G.ah;
+import G.GInterfaceAh;
 import bH.q;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,62 +33,62 @@ public ArrayListInIPackagelass ArrayListInIPackage {
   }
   
   private ArrayList e() {
-    ah ah = new ah();
-    ah.v(f.a + "Gauge");
-    ah.a(f.a);
-    ah.a(0.0D);
-    ah.b(100.0D);
-    ah.d(75.0D);
-    ah.e(90.0D);
-    ah.c(10.0D);
-    ah.h(5.0D);
-    ah.c("Runtime Data Rate");
-    ah.b("/sec");
-    ah.g(1.0D);
-    ah.f(1.0D);
-    this.g.add(ah);
-    ah = new ah();
-    ah.v("dataLogRecordCountGauge");
-    ah.a("dataLogRecordCount");
-    ah.a(0.0D);
-    ah.b(50000.0D);
-    ah.d(200000.0D);
-    ah.e(250000.0D);
-    ah.c(0.0D);
-    ah.h(0.0D);
-    ah.c("Records Logged");
-    ah.b("Records");
-    ah.g(0.0D);
-    ah.f(0.0D);
-    this.g.add(ah);
-    ah = new ah();
-    ah.v("interrogationProgressGauge");
-    ah.a("interrogationProgress");
-    ah.a(0.0D);
-    ah.b(100.0D);
-    ah.d(200000.0D);
-    ah.e(250000.0D);
-    ah.c(0.0D);
-    ah.h(0.0D);
-    ah.c("Interrogation Progress");
-    ah.b("%");
-    ah.g(0.0D);
-    ah.f(0.0D);
-    this.g.add(ah);
-    ah = new ah();
-    ah.v("dataLogTimeGauge");
-    ah.a("dataLogTime");
-    ah.a(0.0D);
-    ah.b(600.0D);
-    ah.d(200000.0D);
-    ah.e(250000.0D);
-    ah.c(0.0D);
-    ah.h(0.0D);
-    ah.c("Log Time");
-    ah.b("s.");
-    ah.g(2.0D);
-    ah.f(2.0D);
-    this.g.add(ah);
+    GInterfaceAh GInterfaceAh = new GInterfaceAh();
+    GInterfaceAh.v(f.a + "Gauge");
+    GInterfaceAh.a(f.a);
+    GInterfaceAh.a(0.0D);
+    GInterfaceAh.b(100.0D);
+    GInterfaceAh.d(75.0D);
+    GInterfaceAh.e(90.0D);
+    GInterfaceAh.c(10.0D);
+    GInterfaceAh.h(5.0D);
+    GInterfaceAh.c("Runtime Data Rate");
+    GInterfaceAh.b("/sec");
+    GInterfaceAh.g(1.0D);
+    GInterfaceAh.f(1.0D);
+    this.g.add(GInterfaceAh);
+    GInterfaceAh = new GInterfaceAh();
+    GInterfaceAh.v("dataLogRecordCountGauge");
+    GInterfaceAh.a("dataLogRecordCount");
+    GInterfaceAh.a(0.0D);
+    GInterfaceAh.b(50000.0D);
+    GInterfaceAh.d(200000.0D);
+    GInterfaceAh.e(250000.0D);
+    GInterfaceAh.c(0.0D);
+    GInterfaceAh.h(0.0D);
+    GInterfaceAh.c("Records Logged");
+    GInterfaceAh.b("Records");
+    GInterfaceAh.g(0.0D);
+    GInterfaceAh.f(0.0D);
+    this.g.add(GInterfaceAh);
+    GInterfaceAh = new GInterfaceAh();
+    GInterfaceAh.v("interrogationProgressGauge");
+    GInterfaceAh.a("interrogationProgress");
+    GInterfaceAh.a(0.0D);
+    GInterfaceAh.b(100.0D);
+    GInterfaceAh.d(200000.0D);
+    GInterfaceAh.e(250000.0D);
+    GInterfaceAh.c(0.0D);
+    GInterfaceAh.h(0.0D);
+    GInterfaceAh.c("Interrogation Progress");
+    GInterfaceAh.b("%");
+    GInterfaceAh.g(0.0D);
+    GInterfaceAh.f(0.0D);
+    this.g.add(GInterfaceAh);
+    GInterfaceAh = new GInterfaceAh();
+    GInterfaceAh.v("dataLogTimeGauge");
+    GInterfaceAh.a("dataLogTime");
+    GInterfaceAh.a(0.0D);
+    GInterfaceAh.b(600.0D);
+    GInterfaceAh.d(200000.0D);
+    GInterfaceAh.e(250000.0D);
+    GInterfaceAh.c(0.0D);
+    GInterfaceAh.h(0.0D);
+    GInterfaceAh.c("Log Time");
+    GInterfaceAh.b("s.");
+    GInterfaceAh.g(2.0D);
+    GInterfaceAh.f(2.0D);
+    this.g.add(GInterfaceAh);
     if (this.c) {
       a.a();
       a.a(this.g);
@@ -104,12 +104,12 @@ public ArrayListInIPackagelass ArrayListInIPackage {
     return this.g;
   }
   
-  public ah a(String paramString) {
-    Iterator<ah> iterator = b();
+  public GInterfaceAh a(String paramString) {
+    Iterator<GInterfaceAh> iterator = b();
     while (iterator.hasNext()) {
-      ah ah = iterator.next();
-      if (ah.aL().equals(paramString))
-        return ah; 
+      GInterfaceAh GInterfaceAh = iterator.next();
+      if (GInterfaceAh.aL().equals(paramString))
+        return GInterfaceAh; 
     } 
     return null;
   }

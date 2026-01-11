@@ -3,7 +3,7 @@ package K;
 import G.R;
 import G.S;
 import G.T;
-import G.cx;
+import G.GComponentCx;
 import G.q;
 import S.SInterfaceAlpha;
 import S.SInterfaceDelta;
@@ -11,7 +11,7 @@ import S.SInterfaceEcho;
 import bH.D;
 
 public class KInterfaceHotel implements S, SInterfaceDelta {
-  private cx SInterfaceDelta;
+  private GComponentCx SInterfaceDelta;
   
   S.h SInterfaceAlpha;
   
@@ -22,7 +22,7 @@ public class KInterfaceHotel implements S, SInterfaceDelta {
   public KInterfaceHotel(R paramR, int paramInt, String paramString) {
     this.b = paramR;
     this.c = paramInt;
-    this.SInterfaceDelta = new cx(paramR);
+    this.SInterfaceDelta = new GComponentCx(paramR);
     this.SInterfaceAlpha = new S.h();
     this.SInterfaceAlpha.g("TriggeredPage " + (paramInt + 1) + " Refresh: " + paramString);
     this.SInterfaceAlpha.SInterfaceEcho(paramString);

@@ -1,12 +1,12 @@
 package bf;
 
-import G.ah;
+import G.GInterfaceAh;
 import java.util.Comparator;
 
 class BfInterfaceHotel implements Comparator {
   h(a parama) {}
   
-  public int a(ah paramah1, ah paramah2) {
+  public int a(GInterfaceAh paramah1, GInterfaceAh paramah2) {
     return paramah1.aL().toLowerCase().compareTo(paramah2.aL().toLowerCase());
   }
 }

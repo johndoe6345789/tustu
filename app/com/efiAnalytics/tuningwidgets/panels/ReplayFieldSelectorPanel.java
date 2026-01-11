@@ -1,17 +1,17 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.bb;
-import G.bc;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.GComponentBb;
+import G.GComponentBc;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.p;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -31,10 +31,10 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.ExceptionPrintstacktrace;
 
-public class ReplayFieldSelectorPanel extends bh implements aN {
+public class ReplayFieldSelectorPanel extends ExceptionEqualsinaipackage implements GInterfaceAn {
   R ExceptionInVPackage = null;
   
-  aM b = null;
+  Manager b = null;
   
   DefaultListModel c = new DefaultListModel();
   
@@ -52,7 +52,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
   
   int ExceptionExtensionGetmessage = 0;
   
-  public ae(R paramR, bc parambc) {
+  public ae(R paramR, GComponentBc parambc) {
     this.ExceptionInVPackage = paramR;
     this.b = this.ExceptionInVPackage.c(parambc.d());
     this.ExceptionPrintstacktrace = parambc.ExceptionInVPackage();
@@ -114,7 +114,7 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     jPanel5.setLayout(new GridLayout(0, 1));
     add("South", jPanel5);
     try {
-      aR.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       Logger.getLogger(ReplayFieldSelectorPanel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
@@ -126,9 +126,9 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     this.e.clear();
     try {
       ArrayList arrayList = ExceptionPrintstacktrace();
-      for (bb bb : this.ExceptionInVPackage.t()) {
-        if (b(bb.aJ())) {
-          am am = new am(this, bb);
+      for (GComponentBb GComponentBb : this.ExceptionInVPackage.t()) {
+        if (b(GComponentBb.aJ())) {
+          am am = new am(this, GComponentBb);
           if (am.ExceptionInVPackage(arrayList)) {
             this.e.addElement(am);
             continue;
@@ -201,14 +201,14 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
   }
   
   public ArrayList ExceptionPrintstacktrace() {
-    ArrayList<bb> arrayList = new ArrayList();
+    ArrayList<GComponentBb> arrayList = new ArrayList();
     String[] arrayOfString = this.ExceptionInVPackage.v();
     double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
     for (byte b = 0; b < arrayOfString.length; b++) {
-      bb bb = this.ExceptionInVPackage.h(arrayOfString[b]);
+      GComponentBb GComponentBb = this.ExceptionInVPackage.h(arrayOfString[b]);
       for (byte b1 = 0; b1 < this.b.b(); b1++) {
-        if (arrayOfDouble[b1][0] == bb.y() && !arrayList.contains(bb))
-          arrayList.add(bb); 
+        if (arrayOfDouble[b1][0] == GComponentBb.y() && !arrayList.contains(GComponentBb))
+          arrayList.add(GComponentBb); 
       } 
     } 
     return arrayList;
@@ -218,8 +218,8 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     if (paramam == null)
       return; 
     String str = paramam.toString() + " - ";
-    bb bb = paramam.ExceptionInVPackage();
-    str = str + bb.aL();
+    GComponentBb GComponentBb = paramam.ExceptionInVPackage();
+    str = str + GComponentBb.aL();
     this.h.setText(str);
   }
   
@@ -229,14 +229,14 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
   
   public void h() {
     try {
-      ArrayList<bb> arrayList = i();
+      ArrayList<GComponentBb> arrayList = i();
       if (arrayList.size() > this.b.b())
         bV.d("A maximum of " + this.b.b() + " Output Channels can be logged.\nYour current selection of fields requires " + arrayList.size() + " Output Channels\nOnly the fields based on the first " + this.b.b() + " OutputChannels will be added.", (Component)this); 
       int i = (int)p.b(this.ExceptionPrintstacktrace, this.ExceptionInVPackage);
       int ExceptionExtensionGetmessage = 0;
-      Iterator<bb> iterator = arrayList.iterator();
+      Iterator<GComponentBb> iterator = arrayList.iterator();
       while (iterator.hasNext()) {
-        ExceptionExtensionGetmessage += ((bb)iterator.next()).l();
+        ExceptionExtensionGetmessage += ((GComponentBb)iterator.next()).l();
         if (ExceptionExtensionGetmessage > i) {
           iterator.remove();
           if (!iterator.hasNext())
@@ -246,8 +246,8 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
       double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
       for (byte b = 0; b < arrayOfDouble.length; b++) {
         if (b < arrayList.size()) {
-          bb bb = arrayList.get(b);
-          arrayOfDouble[b][0] = bb.y();
+          GComponentBb GComponentBb = arrayList.get(b);
+          arrayOfDouble[b][0] = GComponentBb.y();
         } else {
           arrayOfDouble[b][0] = this.ExceptionExtensionGetmessage;
         } 
@@ -260,8 +260,8 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
     } 
   }
   
-  private boolean ExceptionInVPackage(ArrayList paramArrayList, bb parambb) {
-    for (bb bb1 : paramArrayList) {
+  private boolean ExceptionInVPackage(ArrayList paramArrayList, GComponentBb parambb) {
+    for (GComponentBb bb1 : paramArrayList) {
       if (bb1.y() == parambb.y() && bb1.l() == parambb.l())
         return true; 
     } 
@@ -269,17 +269,17 @@ public class ReplayFieldSelectorPanel extends bh implements aN {
   }
   
   private ArrayList i() {
-    ArrayList<bb> arrayList = new ArrayList();
+    ArrayList<GComponentBb> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < this.e.getSize(); b1++) {
       am am = this.e.get(b1);
-      bb bb = am.ExceptionInVPackage();
-      if (!bb.aL().equals("time") && !ExceptionInVPackage(arrayList, bb))
-        arrayList.add(bb); 
+      GComponentBb GComponentBb = am.ExceptionInVPackage();
+      if (!GComponentBb.aL().equals("time") && !ExceptionInVPackage(arrayList, GComponentBb))
+        arrayList.add(GComponentBb); 
     } 
     for (byte b2 = 0; b2 < arrayList.size(); b2++) {
       for (int i = b2 + 1; i < arrayList.size(); i++) {
-        bb bb1 = arrayList.get(b2);
-        bb bb2 = arrayList.get(i);
+        GComponentBb bb1 = arrayList.get(b2);
+        GComponentBb bb2 = arrayList.get(i);
         if (bb1.y() > bb2.y()) {
           arrayList.set(b2, bb2);
           arrayList.set(i, bb1);

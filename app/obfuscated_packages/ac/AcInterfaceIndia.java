@@ -1,8 +1,8 @@
 package ac;
 
-import G.cq;
+import G.GComponentCq;
 
-class AcInterfaceIndia implements cq {
+class AcInterfaceIndia implements GComponentCq {
   i(h paramh) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}

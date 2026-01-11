@@ -1,6 +1,6 @@
 package aR;
 
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import d.DComponentCharlie;
 import d.ExceptionInDPackage;
 import d.DInterfaceIndia;
@@ -34,7 +34,7 @@ public class ArInterfaceVictor implements DComponentCharlie {
     String str = paramProperties.getProperty(a, null);
     if (str == null || str.isEmpty())
       throw new ExceptionInDPackage(a + " is required"); 
-    hq.a().a(str);
+    NInterfaceIndiaImpl.a().a(str);
   }
   
   public void b(Properties paramProperties) {

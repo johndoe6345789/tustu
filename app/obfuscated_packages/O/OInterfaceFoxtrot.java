@@ -1,13 +1,13 @@
 package O;
 
-import G.bT;
-import G.cX;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCx;
 import bH.D;
 
-public class OInterfaceFoxtrot implements cX {
+public class OInterfaceFoxtrot implements GInterfaceCx {
   boolean a = false;
   
-  public boolean a(bT parambT) {
+  public boolean a(AeInterfaceMikeTostring parambT) {
     if (parambT != null && parambT.b() != null && parambT.b().length() < 8) {
       if (!this.a) {
         D.c("Other than specific legacy devices, signature len should be at least 8 characters, rejecting: " + parambT.b());

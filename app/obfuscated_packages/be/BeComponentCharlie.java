@@ -1,7 +1,7 @@
 package be;
 
 import G.R;
-import G.aH;
+import G.SerializableImpl;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -34,7 +34,7 @@ public BeComponentCharlielass BeComponentCharlie extends JPanel implements o {
   
   R RInterfaceIndia;
   
-  aH j = null;
+  SerializableImpl j = null;
   
   private boolean k = true;
   
@@ -101,9 +101,9 @@ public BeComponentCharlielass BeComponentCharlie extends JPanel implements o {
     return this.ExceptionPrintstacktrace.isSelected() ? this.e.a() : this.f.a();
   }
   
-  public aH b() {
+  public SerializableImpl b() {
     if (this.j == null)
-      this.j = new aH(this.RInterfaceIndia.ac()); 
+      this.j = new SerializableImpl(this.RInterfaceIndia.ac()); 
     this.j.a("formula");
     if (this.ExceptionPrintstacktrace.isSelected()) {
       this.j.v(this.e.b());
@@ -117,7 +117,7 @@ public BeComponentCharlielass BeComponentCharlie extends JPanel implements o {
     return this.j;
   }
   
-  public void a(aH paramaH) {
+  public void a(SerializableImpl paramaH) {
     this.j = paramaH;
     if (paramaH.b() == null) {
       a(true);

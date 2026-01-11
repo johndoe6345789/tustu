@@ -1,10 +1,10 @@
 package J;
 
-import G.cr;
-import G.cu;
+import G.GComponentCr;
+import G.ManagerUsingArrayList;
 import java.io.Serializable;
 
-public class JInterfaceJuliet extends h implements cr, Serializable {
+public class JInterfaceJuliet extends h implements GComponentCr, Serializable {
   public static String b = "ReSyncedCommsCount";
   
   public static String c = "wrongCounterCount";
@@ -61,7 +61,7 @@ public class JInterfaceJuliet extends h implements cr, Serializable {
   
   public void e() {
     this.e++;
-    cu.a().a("CTO_PacketsSentCount", this.e);
+    ManagerUsingArrayList.a().a("CTO_PacketsSentCount", this.e);
   }
   
   public void f() {
@@ -86,17 +86,17 @@ public class JInterfaceJuliet extends h implements cr, Serializable {
   
   public void j() {
     this.j++;
-    cu.a().a("DTO_PacketsSentCount", this.j);
+    ManagerUsingArrayList.a().a("DTO_PacketsSentCount", this.j);
   }
   
   public void k() {
     this.k++;
-    cu.a().a("DTO_PacketsReceivedCount", this.k);
+    ManagerUsingArrayList.a().a("DTO_PacketsReceivedCount", this.k);
   }
   
   public void l() {
     this.l++;
-    cu.a().a("wrongCounterCount", this.l);
+    ManagerUsingArrayList.a().a("wrongCounterCount", this.l);
   }
   
   public void a(int paramInt) {
@@ -121,12 +121,12 @@ public class JInterfaceJuliet extends h implements cr, Serializable {
   
   public void p() {
     this.r++;
-    cu.a().a("uploadPacketCount", this.r);
+    ManagerUsingArrayList.a().a("uploadPacketCount", this.r);
   }
   
   public void q() {
     this.s++;
-    cu.a().a("downloadPacketCount", this.s);
+    ManagerUsingArrayList.a().a("downloadPacketCount", this.s);
   }
   
   public void r() {
@@ -179,31 +179,31 @@ public class JInterfaceJuliet extends h implements cr, Serializable {
   }
   
   public String c() {
-    return cu.a;
+    return ManagerUsingArrayList.a;
   }
   
   public void x() {
-    cu.a().a("CTO_PacketsSentCount", this.e);
-    cu.a().a("CTO_PacketsReceivedCount", this.f);
-    cu.a().a("CTO_PacketTimeout", this.g);
-    cu.a().a("CTO_RetryFailedCount", this.h);
-    cu.a().a("CTO_RetrySuccessCount", this.i);
-    cu.a().a("DTO_PacketsSentCount", this.j);
-    cu.a().a("DTO_PacketsReceivedCount", this.k);
-    cu.a().a("wrongCounterCount", this.l);
-    cu.a().a("missingFrameCount", this.m);
-    cu.a().a("lostPacketCount", this.n);
-    cu.a().a("failedPacketCrcCount", this.o);
-    cu.a().a("syncCount", this.p);
-    cu.a().a("resyncDataStreamCount", this.q);
-    cu.a().a(b, this.w);
-    cu.a().a("uploadPacketCount", this.r);
-    cu.a().a("downloadPacketCount", this.s);
-    cu.a().a("burnPageOkCount", this.t);
-    cu.a().a("burnPageFailedCount", this.u);
-    cu.a().a("controllerBusyCount", this.v);
-    cu.a().a("CRC_Cal_Block_Match", this.x);
-    cu.a().a("CRC_Cal_Block_No_Match", this.y);
+    ManagerUsingArrayList.a().a("CTO_PacketsSentCount", this.e);
+    ManagerUsingArrayList.a().a("CTO_PacketsReceivedCount", this.f);
+    ManagerUsingArrayList.a().a("CTO_PacketTimeout", this.g);
+    ManagerUsingArrayList.a().a("CTO_RetryFailedCount", this.h);
+    ManagerUsingArrayList.a().a("CTO_RetrySuccessCount", this.i);
+    ManagerUsingArrayList.a().a("DTO_PacketsSentCount", this.j);
+    ManagerUsingArrayList.a().a("DTO_PacketsReceivedCount", this.k);
+    ManagerUsingArrayList.a().a("wrongCounterCount", this.l);
+    ManagerUsingArrayList.a().a("missingFrameCount", this.m);
+    ManagerUsingArrayList.a().a("lostPacketCount", this.n);
+    ManagerUsingArrayList.a().a("failedPacketCrcCount", this.o);
+    ManagerUsingArrayList.a().a("syncCount", this.p);
+    ManagerUsingArrayList.a().a("resyncDataStreamCount", this.q);
+    ManagerUsingArrayList.a().a(b, this.w);
+    ManagerUsingArrayList.a().a("uploadPacketCount", this.r);
+    ManagerUsingArrayList.a().a("downloadPacketCount", this.s);
+    ManagerUsingArrayList.a().a("burnPageOkCount", this.t);
+    ManagerUsingArrayList.a().a("burnPageFailedCount", this.u);
+    ManagerUsingArrayList.a().a("controllerBusyCount", this.v);
+    ManagerUsingArrayList.a().a("CRC_Cal_Block_Match", this.x);
+    ManagerUsingArrayList.a().a("CRC_Cal_Block_No_Match", this.y);
   }
 }
 

@@ -1,7 +1,7 @@
 package aS;
 
 import G.R;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -32,7 +32,7 @@ class AsInterfaceKilo extends Thread {
       } 
       bool = (this.b.C() == null || !this.b.C().x()) ? true : false;
       if (bool && a()) {
-        this.e = dd.a().b();
+        this.e = ThreadedJFrameIsoptimizeddrawingenabled.a().b();
         this.e.l(SComponentGolf.b("Settings Changed that Require a Power Cycle to Take Effect."));
       } 
     } 

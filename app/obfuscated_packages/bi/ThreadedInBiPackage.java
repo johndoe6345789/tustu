@@ -1,7 +1,7 @@
 package bi;
 
 import G.R;
-import G.dc;
+import G.GInterfaceDc;
 import G.m;
 import G.o;
 import aP.NetworkHashMap;
@@ -44,21 +44,21 @@ public class ThreadedInBiPackage extends d {
     } catch (InterruptedException interruptedException) {
       Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
     } 
-    dc dc = new dc();
+    GInterfaceDc GInterfaceDc = new GInterfaceDc();
     m m = a(this.a);
-    o o = dc.a(this.e, m, 60);
+    o o = GInterfaceDc.a(this.e, m, 60);
     if (o.a() == 3) {
       D.a("Bootstrap Failed on Write 1! :" + o.c());
       return false;
     } 
     m = a(this.b);
-    o = dc.a(this.e, m, 60);
+    o = GInterfaceDc.a(this.e, m, 60);
     if (o.a() == 3) {
       D.a("Bootstrap Failed on Write 2! :" + o.c());
       return false;
     } 
     m = a(this.c);
-    o = dc.a(this.e, m, 60);
+    o = GInterfaceDc.a(this.e, m, 60);
     if (o.a() == 3) {
       D.a("Bootstrap Failed on Write 3! :" + o.c());
       return false;
@@ -66,7 +66,7 @@ public class ThreadedInBiPackage extends d {
     m = a(this.d);
     m.b(0);
     m.a(true);
-    o = dc.a(this.e, m, 60);
+    o = GInterfaceDc.a(this.e, m, 60);
     if (o.a() == 3) {
       D.a("Bootstrap Failed on Write 4! :" + o.c());
       return false;

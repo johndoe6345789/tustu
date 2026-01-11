@@ -1,11 +1,11 @@
 package k;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class KComponentFoxtrot extends ac {
-  private ab e;
+public class KComponentFoxtrot extends AbstractInAxPackage {
+  private AxInterfaceAb e;
   
   double a = Double.NaN;
   
@@ -15,7 +15,7 @@ public class KComponentFoxtrot extends ac {
   
   double d = 0.0D;
   
-  public KComponentFoxtrot(ab paramab) {
+  public KComponentFoxtrot(AxInterfaceAb paramab) {
     this.e = paramab;
   }
   

@@ -1,13 +1,13 @@
 package aP;
 
-import G.aN;
-import G.db;
+import G.GInterfaceAn;
+import G.GInterfaceDb;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.dF;
 import s.ExceptionPrintstacktrace;
 
-class ApComponentOscar implements aN {
-  o(f paramf, db paramdb, dF paramdF) {}
+class ApComponentOscar implements GInterfaceAn {
+  o(f paramf, GInterfaceDb paramdb, dF paramdF) {}
   
   public void a(String paramString1, String paramString2) {
     String str;

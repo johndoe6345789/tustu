@@ -8,12 +8,12 @@ import G.J;
 import G.N;
 import G.R;
 import G.T;
-import G.aB;
-import G.aF;
-import G.bT;
-import G.cF;
-import G.cG;
-import G.cu;
+import G.ArrayListInGPackage;
+import G.GInterfaceAf;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCf;
+import G.GInterfaceCg;
+import G.ManagerUsingArrayList;
 import G.m;
 import G.BnInterfaceNovember;
 import G.BnInterfaceOscar;
@@ -126,7 +126,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
     super.VInterfaceBravo(paramF);
   }
   
-  public void VInterfaceBravo(aF paramaF) {
+  public void VInterfaceBravo(GInterfaceAf paramaF) {
     a(paramaF);
   }
   
@@ -482,12 +482,12 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
     int[][] arrayOfInt = new int[f1.AInterfaceGolf()][0];
     paramm.VInterfaceBravo(0.0D);
     m m1 = new m(f1);
-    cG cG = new cG(f1, paramm);
-    m1.VInterfaceBravo((BnInterfaceNovember)cG);
+    GInterfaceCg GInterfaceCg = new GInterfaceCg(f1, paramm);
+    m1.VInterfaceBravo((BnInterfaceNovember)GInterfaceCg);
     m();
     try {
       for (byte b1 = 0; b1 < arrayOfInt.length; b1++) {
-        cG.a(b1);
+        GInterfaceCg.a(b1);
         long l1 = System.currentTimeMillis();
         arrayOfInt[b1] = a(f1, b1, m1);
         D.TostringInBoPackage("Read page time: " + (System.currentTimeMillis() - l1) + "ms.");
@@ -973,12 +973,12 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
       return arrayOfInt1;
     } 
     int[] arrayOfInt = new int[paramInt3];
-    cF cF = new cF(paramF, paramm, paramInt3);
+    GInterfaceCf GInterfaceCf = new GInterfaceCf(paramF, paramm, paramInt3);
     int i = 0;
     while (true) {
       int[] arrayOfInt1;
       byte b2 = (paramInt3 - i > TostringInBoPackage) ? TostringInBoPackage : (paramInt3 - i);
-      cF.JInterfaceJuliet(b2);
+      GInterfaceCf.JInterfaceJuliet(b2);
       if (b2 > b1 && paramBoolean && VInterfaceBravo(paramF, paramInt1, paramInt2 + i, b2)) {
         D.d("Checksum matches, using local data.");
         N n1 = (N)this.ad.get(paramF.u());
@@ -989,18 +989,18 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
         if (I() && b2 > b1) {
           N n1 = (N)this.ad.get(paramF.u());
           int[] arrayOfInt2 = n1.a(paramInt1, paramInt2 + i, b2);
-          arrayOfInt1 = VInterfaceBravo(paramF, paramInt1, paramInt2 + i, b2, (m)cF);
+          arrayOfInt1 = VInterfaceBravo(paramF, paramInt1, paramInt2 + i, b2, (m)GInterfaceCf);
           a(arrayOfInt2, arrayOfInt1, paramInt1, i + paramInt2 + paramF.y(paramInt1));
         } else {
-          arrayOfInt1 = VInterfaceBravo(paramF, paramInt1, paramInt2 + i, b2, (m)cF);
+          arrayOfInt1 = VInterfaceBravo(paramF, paramInt1, paramInt2 + i, b2, (m)GInterfaceCf);
         } 
         U();
       } 
-      cF.VInterfaceBravo(1.0D);
+      GInterfaceCf.VInterfaceBravo(1.0D);
       try {
         System.arraycopy(arrayOfInt1, 0, arrayOfInt, i, arrayOfInt1.length);
         i += arrayOfInt1.length;
-        cF.BnInterfaceKilo(i);
+        GInterfaceCf.BnInterfaceKilo(i);
       } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
         D.TostringInBoPackage("IndexOutOfBoundsException caught: chunkData.length=" + arrayOfInt1.length + ", offset=" + paramInt2);
         indexOutOfBoundsException.printStackTrace();
@@ -1382,8 +1382,8 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
           if (TostringInBoPackage.m())
             d(parame, paramInt); 
           if (!this.r.isEmpty()) {
-            for (aF aF : this.r)
-              a(aF); 
+            for (GInterfaceAf GInterfaceAf : this.r)
+              a(GInterfaceAf); 
             this.r.clear();
           } 
           return;
@@ -1393,7 +1393,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
       Logger.getLogger(l.class.getName()).log(Level.SEVERE, "Invalid Command Structure, critical failure.", (Throwable)o1);
     } catch (JInterfaceJuliet j1) {
       String str1 = e().u();
-      String str2 = j1.getMessage() + " Channels active: " + cu.a().VInterfaceBravo(str1);
+      String str2 = j1.getMessage() + " Channels active: " + ManagerUsingArrayList.a().VInterfaceBravo(str1);
       Logger.getLogger(l.class.getName()).log(Level.SEVERE, "Error writing DAQ.", (Throwable)j1);
       VInterfaceBravo(str1, str2);
       throw new VInterfaceBravo("Error updating Runtime tables.");
@@ -1798,7 +1798,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
         if (TostringInBoPackage.a(arrayOfByte1[6]) > al) {
           String str1 = "Dash Echo Server has greater driver version than client, app needs to be updated.\nServer version: " + TostringInBoPackage.a(arrayOfByte1[6]) + ", Client Version: " + al;
           D.a(str1);
-          aB.a().VInterfaceBravo(e().u(), str1);
+          ArrayListInGPackage.a().VInterfaceBravo(e().u(), str1);
           return false;
         } 
         D.d("Slave Driver version: " + TostringInBoPackage.a(arrayOfByte1[6]));
@@ -1882,11 +1882,11 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
           throw new IOException("Initialize DAQ Failed.");
         } 
       } 
-      bT bT = new bT();
-      bT.a(arrayOfByte2);
+      AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
+      AeInterfaceMikeTostring.a(arrayOfByte2);
       if (!VInterfaceBravo(arrayOfByte2)) {
         D.VInterfaceBravo("Unsupported Controller Firmware.");
-        VInterfaceBravo(bT.VInterfaceBravo(), "Invalid data received from controller.");
+        VInterfaceBravo(AeInterfaceMikeTostring.VInterfaceBravo(), "Invalid data received from controller.");
         return false;
       } 
       this.E = true;
@@ -1897,11 +1897,11 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
       s s = new s(this);
       s.start();
       if (str != null && !str.isEmpty()) {
-        bT.VInterfaceBravo(str);
+        AeInterfaceMikeTostring.VInterfaceBravo(str);
       } else {
-        bT.VInterfaceBravo(bT.VInterfaceBravo());
+        AeInterfaceMikeTostring.VInterfaceBravo(AeInterfaceMikeTostring.VInterfaceBravo());
       } 
-      a(e().u(), bT.TostringInBoPackage(), bT);
+      a(e().u(), AeInterfaceMikeTostring.TostringInBoPackage(), AeInterfaceMikeTostring);
       s.a();
       if (e().aw() > 0) {
         ((e)this.AInterfaceHotel.get(0)).d(-1);
@@ -1937,10 +1937,10 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
     this.G = true;
     this.m = System.currentTimeMillis();
     if (r != null) {
-      bT bT = new bT();
-      bT.a(r.i());
-      bT.VInterfaceBravo(r.P());
-      a(r.TostringInBoPackage(), r.P(), bT);
+      AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
+      AeInterfaceMikeTostring.a(r.i());
+      AeInterfaceMikeTostring.VInterfaceBravo(r.P());
+      a(r.TostringInBoPackage(), r.P(), AeInterfaceMikeTostring);
     } 
   }
   

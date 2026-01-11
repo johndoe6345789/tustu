@@ -1,9 +1,9 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
@@ -11,10 +11,10 @@ import bH.D;
 import com.efiAnalytics.ui.bc;
 import javax.swing.JCheckBox;
 
-class PortConfigCheckBox extends JCheckBox implements aN, bc {
+class PortConfigCheckBox extends JCheckBox implements GInterfaceAn, bc {
   R ExceptionInVPackage = null;
   
-  aM b = null;
+  Manager b = null;
   
   private int d = 0;
   
@@ -22,9 +22,9 @@ class PortConfigCheckBox extends JCheckBox implements aN, bc {
     super(paramString2);
     this.ExceptionInVPackage = paramR;
     this.b = paramR.c(paramString1);
-    aR aR = aR.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
-      aR.ExceptionInVPackage(paramR.c(), paramString1, this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), paramString1, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Failed to subscribe " + paramString1 + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
@@ -79,8 +79,8 @@ class PortConfigCheckBox extends JCheckBox implements aN, bc {
   }
   
   public void close() {
-    aR aR = aR.ExceptionInVPackage();
-    aR.ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage(this);
   }
 }
 

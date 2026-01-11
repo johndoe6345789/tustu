@@ -1,7 +1,7 @@
 package L;
 
 import ax.AxComponentAlpha;
-import ax.ac;
+import ax.AbstractInAxPackage;
 import ax.AbstractInAxPackage;
 import java.util.HashMap;
 import java.util.List;
@@ -24,8 +24,8 @@ public class ab extends AbstractInAxPackage {
     this.c.put(paramr.a().toLowerCase(), paramr);
   }
   
-  public ac a(String paramString, List paramList) {
-    ac ac;
+  public AbstractInAxPackage a(String paramString, List paramList) {
+    AbstractInAxPackage AbstractInAxPackage;
     f f = null;
     if (paramString.equalsIgnoreCase("isUltraFunctionsAvaliable") || paramString.equalsIgnoreCase("isUltraFunctionsAvailable")) {
       if (this.b) {
@@ -36,23 +36,23 @@ public class ab extends AbstractInAxPackage {
     } else if (a(paramString) && !this.b) {
       g g = new g(paramString);
     } else if (paramString.equalsIgnoreCase("timeToExceed")) {
-      ac = b(paramString, paramList);
+      AbstractInAxPackage = b(paramString, paramList);
     } else if (this.c.containsKey(paramString.toLowerCase())) {
       r r = (r)this.c.get(paramString.toLowerCase());
       if (paramList.size() >= r.b() && paramList.size() <= r.c()) {
-        ac = r.a(paramList);
+        AbstractInAxPackage = r.a(paramList);
       } else {
         throw new AxComponentAlpha(paramString, paramList.size(), r.b());
       } 
     } 
-    return ac;
+    return AbstractInAxPackage;
   }
   
   private boolean a(String paramString) {
     return paramString.equalsIgnoreCase("timeToExceed");
   }
   
-  private ac b(String paramString, List paramList) {
+  private AbstractInAxPackage b(String paramString, List paramList) {
     if (paramList.size() >= 2 && paramList.size() <= 4)
       return new Y(paramList); 
     throw new AxComponentAlpha(paramString, paramList.size(), 2);

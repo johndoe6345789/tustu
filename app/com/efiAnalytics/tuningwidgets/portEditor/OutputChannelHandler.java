@@ -1,11 +1,11 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.aH;
+import G.SerializableImpl;
 
 class OutputChannelHandler implements p {
   OutputChannelHandler(z paramz) {}
   
-  public void a(aH paramaH) {
+  public void a(SerializableImpl paramaH) {
     z.a(this.a, paramaH);
   }
 }

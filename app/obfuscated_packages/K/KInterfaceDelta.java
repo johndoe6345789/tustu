@@ -1,7 +1,7 @@
 package K;
 
 import G.R;
-import G.aM;
+import G.Manager;
 
 public class KInterfaceDelta {
   public static double a(double[][] paramArrayOfdouble1, double[][] paramArrayOfdouble2, double paramDouble) {
@@ -35,7 +35,7 @@ public class KInterfaceDelta {
     return d1;
   }
   
-  public static double[] a(R paramR, aM paramaM) {
+  public static double[] a(R paramR, Manager paramaM) {
     double[] arrayOfDouble = new double[paramaM.b()];
     double[][] arrayOfDouble1 = paramaM.i(paramR.p());
     for (byte b = 0; b < arrayOfDouble.length; b++)

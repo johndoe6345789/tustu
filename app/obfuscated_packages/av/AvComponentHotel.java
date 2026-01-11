@@ -1,9 +1,9 @@
 package av;
 
-import G.aM;
-import G.be;
+import G.Manager;
+import G.CloneableImpl;
 import G.c;
-import G.db;
+import G.GInterfaceDb;
 import h.IOProperties;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -50,12 +50,12 @@ public class AvComponentHotel extends g {
       } 
       IOProperties.c("yAxisField", str2);
       c c = new c(str2);
-      Iterator<be> iterator = this.b.n();
+      Iterator<CloneableImpl> iterator = this.b.n();
       while (iterator.hasNext()) {
-        be be = iterator.next();
-        be.b(str1);
-        be.e(str2);
-        be.b((db)c);
+        CloneableImpl CloneableImpl = iterator.next();
+        CloneableImpl.b(str1);
+        CloneableImpl.e(str2);
+        CloneableImpl.b((GInterfaceDb)c);
       } 
       this.b.h().g();
       g();
@@ -81,9 +81,9 @@ public class AvComponentHotel extends g {
   }
   
   private int a(String paramString, int paramInt) {
-    aM aM = this.b.c(paramString);
-    double d = aM.F().a();
-    int IOProperties = aM.b();
+    Manager Manager = this.b.c(paramString);
+    double d = Manager.F().a();
+    int IOProperties = Manager.b();
     double[][] arrayOfDouble = new double[IOProperties][1];
     paramInt--;
     for (byte b = 0; b < IOProperties; b++)
@@ -93,10 +93,10 @@ public class AvComponentHotel extends g {
   }
   
   private void b(String paramString, int paramInt) {
-    aM aM = this.b.c(paramString);
-    double d = aM.F().a();
-    int IOProperties = (int)(aM.c()).b.a();
-    int j = (int)(aM.c()).a.a();
+    Manager Manager = this.b.c(paramString);
+    double d = Manager.F().a();
+    int IOProperties = (int)(Manager.c()).b.a();
+    int j = (int)(Manager.c()).a.a();
     double[][] arrayOfDouble = new double[IOProperties][j];
     paramInt--;
     for (byte b = 0; b < IOProperties; b++) {
@@ -107,11 +107,11 @@ public class AvComponentHotel extends g {
   }
   
   private void c(String paramString, int paramInt) {
-    aM aM = this.b.c(paramString);
-    double d = aM.F().a();
-    int IOProperties = (int)(aM.c()).b.a();
-    int j = (int)(aM.c()).a.a();
-    double[][] arrayOfDouble = aM.IOProperties(this.b.p());
+    Manager Manager = this.b.c(paramString);
+    double d = Manager.F().a();
+    int IOProperties = (int)(Manager.c()).b.a();
+    int j = (int)(Manager.c()).a.a();
+    double[][] arrayOfDouble = Manager.IOProperties(this.b.p());
     paramInt--;
     for (byte b = 0; b < IOProperties; b++) {
       for (byte b1 = 0; b1 < j; b1++) {

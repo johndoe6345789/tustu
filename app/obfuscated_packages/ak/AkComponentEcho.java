@@ -4,7 +4,7 @@ import V.ExceptionInVPackage;
 import V.VInterfaceFoxtrot;
 import W.T;
 import W.X;
-import W.ah;
+import W.ManagerUsingReader;
 import bH.D;
 import bH.X;
 import java.io.File;
@@ -29,7 +29,7 @@ public class AkComponentEcho extends g {
     try {
       this.h = new File(paramString);
       fileInputStream = new FileInputStream(this.h);
-      this.e = new ah(new InputStreamReader(fileInputStream));
+      this.e = new ManagerUsingReader(new InputStreamReader(fileInputStream));
       this.n = this.e.ExceptionInVPackage();
       while (!this.n.contains(",Log Records Used") && !this.n.contains(",Replay Records Used") && !this.n.startsWith("Log for BigComm Pro"))
         this.n = this.e.ExceptionInVPackage(); 

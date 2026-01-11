@@ -1,8 +1,8 @@
 package bh;
 
 import G.R;
-import G.aG;
-import G.bT;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
 import W.j;
 import aE.PropertiesExtension;
 import ac.AcComponentCharlie;
@@ -25,7 +25,7 @@ import java.util.Properties;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class UICloseInBhPackage extends aX implements aG, AcInterfaceFoxtrot, bc {
+public class UICloseInBhPackage extends aX implements GInterfaceAg, AcInterfaceFoxtrot, bc {
   n n = null;
   
   private R q = null;
@@ -131,7 +131,7 @@ public class UICloseInBhPackage extends aX implements aG, AcInterfaceFoxtrot, bc
     IOProperties.AcComponentCharlie("hideSelector", paramBoolean + "");
   }
   
-  public boolean PropertiesExtension(String paramString, bT parambT) {
+  public boolean PropertiesExtension(String paramString, AeInterfaceMikeTostring parambT) {
     return true;
   }
   

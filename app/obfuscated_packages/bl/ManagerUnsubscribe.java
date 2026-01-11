@@ -2,8 +2,8 @@ package bl;
 
 import G.R;
 import G.T;
-import G.aM;
-import G.aR;
+import G.Manager;
+import G.ManagerUsingConcurrentHashMap;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.plugin.ecu.ControllerException;
 import com.efiAnalytics.plugin.ecu.ControllerParameter;
@@ -19,7 +19,7 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
       R r = T.a().c(paramString1);
       d d = new d(this, paramControllerParameterChangeListener);
       this.a.put(paramControllerParameterChangeListener, d);
-      aR.a().a(r.c(), paramString2, d);
+      ManagerUsingConcurrentHashMap.a().a(r.c(), paramString2, d);
     } catch (Exception exception) {
       throw new ControllerException(exception.getMessage());
     } 
@@ -27,7 +27,7 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
   
   public void unsubscribe(ControllerParameterChangeListener paramControllerParameterChangeListener) {
     d d = (d)this.a.get(paramControllerParameterChangeListener);
-    aR.a().a(d);
+    ManagerUsingConcurrentHashMap.a().a(d);
     this.a.remove(paramControllerParameterChangeListener);
   }
   
@@ -40,23 +40,23 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
     R r = T.a().c(paramString1);
     if (r == null)
       throw new ControllerException("No Controller Configuration loaded"); 
-    aM aM = r.c(paramString2);
-    if (aM == null)
+    Manager Manager = r.c(paramString2);
+    if (Manager == null)
       throw new ControllerException("Controller Parameter not found in working controller configuration.\n" + r.c()); 
     ControllerParameter controllerParameter = new ControllerParameter();
-    controllerParameter.setUnits(aM.p());
-    controllerParameter.setDecimalPlaces(aM.v());
-    controllerParameter.setMax(aM.s());
-    controllerParameter.setMin(aM.r());
-    controllerParameter.setOptionDescriptions(aM.y());
-    controllerParameter.setParamClass(aM.i());
+    controllerParameter.setUnits(Manager.p());
+    controllerParameter.setDecimalPlaces(Manager.v());
+    controllerParameter.setMax(Manager.s());
+    controllerParameter.setMin(Manager.r());
+    controllerParameter.setOptionDescriptions(Manager.y());
+    controllerParameter.setParamClass(Manager.i());
     try {
-      if (aM.i().equals("bits")) {
-        controllerParameter.setStringValue(aM.f(r.p()));
-      } else if (aM.i().equals("scalar")) {
-        controllerParameter.setScalarValue(aM.j(r.p()));
-      } else if (aM.i().equals("array")) {
-        controllerParameter.setArrayValues(aM.i(r.p()));
+      if (Manager.i().equals("bits")) {
+        controllerParameter.setStringValue(Manager.f(r.p()));
+      } else if (Manager.i().equals("scalar")) {
+        controllerParameter.setScalarValue(Manager.j(r.p()));
+      } else if (Manager.i().equals("array")) {
+        controllerParameter.setArrayValues(Manager.i(r.p()));
       } 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       throw new ControllerException(ExceptionPrintstacktrace.getMessage());
@@ -67,8 +67,8 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
   public void updateParameter(String paramString1, String paramString2, double paramDouble) {
     try {
       R r = T.a().c(paramString1);
-      aM aM = r.c(paramString2);
-      aM.a(r.p(), paramDouble);
+      Manager Manager = r.c(paramString2);
+      Manager.a(r.p(), paramDouble);
     } catch (Exception exception) {
       throw new ControllerException(exception.getMessage());
     } 
@@ -77,8 +77,8 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
   public void updateParameter(String paramString1, String paramString2, double[][] paramArrayOfdouble) {
     try {
       R r = T.a().c(paramString1);
-      aM aM = r.c(paramString2);
-      aM.a(r.p(), paramArrayOfdouble);
+      Manager Manager = r.c(paramString2);
+      Manager.a(r.p(), paramArrayOfdouble);
     } catch (Exception exception) {
       throw new ControllerException(exception.getMessage());
     } 
@@ -87,8 +87,8 @@ public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterS
   public void updateParameter(String paramString1, String paramString2, String paramString3) {
     try {
       R r = T.a().c(paramString1);
-      aM aM = r.c(paramString2);
-      aM.a(r.p(), paramString3);
+      Manager Manager = r.c(paramString2);
+      Manager.a(r.p(), paramString3);
     } catch (Exception exception) {
       throw new ControllerException(exception.getMessage());
     } 

@@ -1,19 +1,19 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class AccelHpFunction extends ac {
-  ab a;
+public class AccelHpFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c;
+  AxInterfaceAb c;
   
-  ab d;
+  AxInterfaceAb d;
   
-  protected a(ab paramab1, ab paramab2, ab paramab3, ab paramab4) {
+  protected a(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3, AxInterfaceAb paramab4) {
     this.b = paramab1;
     this.a = paramab2;
     this.c = paramab3;

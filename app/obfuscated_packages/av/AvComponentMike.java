@@ -1,9 +1,9 @@
 package av;
 
-import G.be;
+import G.CloneableImpl;
 
 final class AvComponentMike implements p {
-  public boolean a(be parambe) {
+  public boolean a(CloneableImpl parambe) {
     return !parambe.aL().toLowerCase().contains("trim");
   }
 }

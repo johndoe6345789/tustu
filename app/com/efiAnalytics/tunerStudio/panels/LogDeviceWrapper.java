@@ -1,12 +1,12 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.cd;
+import G.GComponentCd;
 import s.SComponentGolf;
 
 class LogDeviceWrapper {
-  private cd b = null;
+  private GComponentCd b = null;
   
-  LogDeviceWrapper(o paramo, cd paramcd) {
+  LogDeviceWrapper(o paramo, GComponentCd paramcd) {
     this.b = paramcd;
   }
   
@@ -14,7 +14,7 @@ class LogDeviceWrapper {
     return (a() == null) ? "[none]" : ((a().SComponentGolf() == null) ? SComponentGolf.b("Unknown") : SComponentGolf.b(a().SComponentGolf()));
   }
   
-  public cd a() {
+  public GComponentCd a() {
     return this.b;
   }
 }

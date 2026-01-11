@@ -1,7 +1,7 @@
 package br;
 
 import V.ExceptionInVPackage;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.D;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +38,9 @@ public class BrInterfaceFoxtrot {
   }
   
   public synchronized void ExceptionInVPackage(String paramString) {
-    if (dd.ExceptionInVPackage().o() == null)
+    if (ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o() == null)
       throw new ExceptionInVPackage("VE Analyze Tabs unavailable."); 
-    dd.ExceptionInVPackage().o().ExceptionInVPackage();
+    ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o().ExceptionInVPackage();
     for (al al : this.ExceptionInVPackage) {
       if (al instanceof s) {
         s s = (s)al;
@@ -54,10 +54,10 @@ public class BrInterfaceFoxtrot {
   }
   
   public synchronized void ExceptionInVPackage(int paramInt) {
-    if (dd.ExceptionInVPackage().o() == null)
+    if (ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o() == null)
       throw new ExceptionInVPackage("VE Analyze Tabs unavailable."); 
     if (SwingUtilities.isEventDispatchThread()) {
-      dd.ExceptionInVPackage().o().ExceptionInVPackage();
+      ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o().ExceptionInVPackage();
       try {
         ((al)this.ExceptionInVPackage.get(paramInt)).ExceptionInVPackage(true);
       } catch (Exception exception) {
@@ -70,10 +70,10 @@ public class BrInterfaceFoxtrot {
   }
   
   public synchronized void b(int paramInt) {
-    if (dd.ExceptionInVPackage().o() == null)
+    if (ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o() == null)
       throw new ExceptionInVPackage("VE Analyze Tabs unavailable."); 
     if (SwingUtilities.isEventDispatchThread()) {
-      dd.ExceptionInVPackage().o().ExceptionInVPackage();
+      ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().o().ExceptionInVPackage();
       try {
         ((al)this.ExceptionInVPackage.get(paramInt)).ExceptionInVPackage(false);
       } catch (Exception exception) {

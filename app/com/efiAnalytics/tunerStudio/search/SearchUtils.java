@@ -1,11 +1,11 @@
 package com.efiAnalytics.tunerStudio.search;
 
 import G.R;
-import G.aA;
-import G.aI;
-import G.bA;
-import G.bq;
-import G.bv;
+import G.ArrayList;
+import G.GInterfaceAi;
+import G.Abstract;
+import G.GComponentBq;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import G.i;
 import ax.ExceptionInAxPackage;
 import bH.D;
@@ -21,14 +21,14 @@ public class SearchUtils {
     ArrayList<B> arrayList = new ArrayList();
     List list = a(paramR);
     String str = paramString.toLowerCase();
-    for (aA aA : list) {
-      bv bv = paramR.e().c(aA.d());
-      if (bv instanceof bv) {
-        F f = new F(paramR, bv);
-        ArrayList<C> arrayList1 = a(bv, paramString);
-        if (s.g.b(aA.e()).toLowerCase().contains(str)) {
+    for (ArrayList ArrayList : list) {
+      ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = paramR.e().c(ArrayList.d());
+      if (ArrayListExceptionprintstacktraceInGPackage instanceof ArrayListExceptionprintstacktraceInGPackage) {
+        F f = new F(paramR, ArrayListExceptionprintstacktraceInGPackage);
+        ArrayList<C> arrayList1 = a(ArrayListExceptionprintstacktraceInGPackage, paramString);
+        if (s.g.b(ArrayList.e()).toLowerCase().contains(str)) {
           C c = new C();
-          c.a(s.g.b(aA.e()));
+          c.a(s.g.b(ArrayList.e()));
           c.c(s.g.b("Menu"));
           c.b(paramString);
           c.a(f);
@@ -43,7 +43,7 @@ public class SearchUtils {
             } 
           } 
           B b1 = new B();
-          String str1 = (bv.M() != null && !bv.M().isEmpty()) ? bv.M() : aA.e();
+          String str1 = (ArrayListExceptionprintstacktraceInGPackage.M() != null && !ArrayListExceptionprintstacktraceInGPackage.M().isEmpty()) ? ArrayListExceptionprintstacktraceInGPackage.M() : ArrayList.e();
           b1.b(s.g.b(str1));
           for (C c : arrayList1)
             c.a(f); 
@@ -52,12 +52,12 @@ public class SearchUtils {
         } 
         continue;
       } 
-      if (bv instanceof G.be) {
-        D.d("Search not checking Table: " + aA.d());
+      if (ArrayListExceptionprintstacktraceInGPackage instanceof G.be) {
+        D.d("Search not checking Table: " + ArrayList.d());
         continue;
       } 
-      if (bv instanceof G.bm)
-        D.d("Search not checking curve: " + aA.d()); 
+      if (ArrayListExceptionprintstacktraceInGPackage instanceof G.bm)
+        D.d("Search not checking curve: " + ArrayList.d()); 
     } 
     for (byte b = 0; b < arrayList.size(); b++) {
       B b1 = arrayList.get(b);
@@ -71,26 +71,26 @@ public class SearchUtils {
   
   public static List a(R paramR) {
     ArrayList arrayList = new ArrayList();
-    Iterator<aA> iterator = paramR.e().b();
+    Iterator<ArrayList> iterator = paramR.e().b();
     while (iterator.hasNext()) {
-      aA aA = iterator.next();
-      List list = a(paramR, aA);
+      ArrayList ArrayList = iterator.next();
+      List list = a(paramR, ArrayList);
       arrayList.addAll(list);
     } 
     return arrayList;
   }
   
-  private static List a(R paramR, aA paramaA) {
-    ArrayList<aA> arrayList = new ArrayList();
+  private static List a(R paramR, ArrayList paramaA) {
+    ArrayList<ArrayList> arrayList = new ArrayList();
     if (paramaA.b()) {
-      Iterator<aA> iterator = paramaA.a();
+      Iterator<ArrayList> iterator = paramaA.a();
       while (iterator.hasNext()) {
         List list = a(paramR, iterator.next());
         arrayList.addAll(list);
       } 
     } else {
       try {
-        if (paramaA.aJ() == null || paramaA.aJ().isEmpty() || i.a(paramaA.aJ(), (aI)paramR) != 0.0D)
+        if (paramaA.aJ() == null || paramaA.aJ().isEmpty() || i.a(paramaA.aJ(), (GInterfaceAi)paramR) != 0.0D)
           arrayList.add(paramaA); 
       } catch (ExceptionInAxPackage u) {
         Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)u);
@@ -99,7 +99,7 @@ public class SearchUtils {
     return arrayList;
   }
   
-  private static ArrayList a(bv parambv, String paramString) {
+  private static ArrayList a(ArrayListExceptionprintstacktraceInGPackage parambv, String paramString) {
     B b = new B();
     String str = paramString.toLowerCase();
     if (parambv.M() != null && s.g.b(parambv.M()).toLowerCase().contains(str) && !b.c(s.g.b(s.g.b(parambv.M())))) {
@@ -109,20 +109,20 @@ public class SearchUtils {
       c.b(paramString);
       b.add((E)c);
     } 
-    Iterator<bA> iterator = parambv.F();
+    Iterator<Abstract> iterator = parambv.F();
     while (iterator.hasNext()) {
-      bA bA = iterator.next();
-      if (bA instanceof bq) {
-        bq bq = (bq)bA;
-        if (bq.l() != null && s.g.b(bq.l()).toLowerCase().contains(str) && !b.c(s.g.b(bq.l()))) {
+      Abstract Abstract = iterator.next();
+      if (Abstract instanceof GComponentBq) {
+        GComponentBq GComponentBq = (GComponentBq)Abstract;
+        if (GComponentBq.l() != null && s.g.b(GComponentBq.l()).toLowerCase().contains(str) && !b.c(s.g.b(GComponentBq.l()))) {
           C c = new C();
-          if (bq.b() != null && bq.b().length() > 0) {
+          if (GComponentBq.b() != null && GComponentBq.b().length() > 0) {
             c.c(s.g.b("Setting"));
-            c.a(s.g.b(bq.l()));
+            c.a(s.g.b(GComponentBq.l()));
           } else {
             c.c(s.g.b("Label"));
           } 
-          c.a(s.g.b(bq.l()));
+          c.a(s.g.b(GComponentBq.l()));
           c.b(paramString);
           b.add((E)c);
         } 
@@ -130,7 +130,7 @@ public class SearchUtils {
     } 
     iterator = parambv.K();
     while (iterator.hasNext()) {
-      bv bv1 = (bv)iterator.next();
+      ArrayListExceptionprintstacktraceInGPackage bv1 = (ArrayListExceptionprintstacktraceInGPackage)iterator.next();
       ArrayList<? extends E> arrayList = a(bv1, paramString);
       if (arrayList != null)
         b.addAll(arrayList); 

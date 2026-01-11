@@ -1,18 +1,18 @@
 package K;
 
 import G.R;
-import G.aC;
-import G.aM;
-import G.bA;
-import G.bm;
-import G.bq;
-import G.br;
-import G.bs;
-import G.bv;
+import G.GInterfaceAc;
+import G.Manager;
+import G.Abstract;
+import G.CloneableImplInGPackage;
+import G.GComponentBq;
+import G.GInterfaceBr;
+import G.GComponentBs;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import G.c;
-import G.db;
+import G.GInterfaceDb;
 
-public class AccelEnrichmentWizard extends bv {
+public class AccelEnrichmentWizard extends ArrayListExceptionprintstacktraceInGPackage {
   private String a = "";
   
   private R f = null;
@@ -22,169 +22,169 @@ public class AccelEnrichmentWizard extends bv {
       this.a = paramInt + ""; 
     this.f = paramR;
     s("Accel Enrichment Wizard");
-    aM aM1 = paramR.c(aC.h + this.a);
-    aM aM2 = paramR.c(aC.i + this.a);
-    aM aM3 = paramR.c(aC.s + this.a);
-    aM aM4 = paramR.c(aC.t + this.a);
-    aM aM5 = paramR.c(aC.r + this.a);
-    aM aM6 = paramR.c(aC.u + this.a);
-    bv bv1 = new bv();
+    Manager aM1 = paramR.c(GInterfaceAc.h + this.a);
+    Manager aM2 = paramR.c(GInterfaceAc.i + this.a);
+    Manager aM3 = paramR.c(GInterfaceAc.s + this.a);
+    Manager aM4 = paramR.c(GInterfaceAc.t + this.a);
+    Manager aM5 = paramR.c(GInterfaceAc.r + this.a);
+    Manager aM6 = paramR.c(GInterfaceAc.u + this.a);
+    ArrayListExceptionprintstacktraceInGPackage bv1 = new ArrayListExceptionprintstacktraceInGPackage();
     bv1.v("accelCurves");
     bv1.i(0);
     if (aM3 != null && aM4 != null) {
-      bm bm = new bm();
-      bm.s("MAP Based AE");
-      bm.v("mapDotCurve");
-      bm.c(aM3.aL());
-      bm.a(aM4.aL());
-      bm.g(aM4.b());
-      bm.h(aM3.b() + 2);
-      bm.a((db)new c("PW Adder"));
-      bm.c((db)new c("Rate"));
-      bm.d(500.0D);
-      bm.c(aM3.r());
-      bm.b(true);
+      CloneableImplInGPackage CloneableImplInGPackage = new CloneableImplInGPackage();
+      CloneableImplInGPackage.s("MAP Based AE");
+      CloneableImplInGPackage.v("mapDotCurve");
+      CloneableImplInGPackage.c(aM3.aL());
+      CloneableImplInGPackage.a(aM4.aL());
+      CloneableImplInGPackage.g(aM4.b());
+      CloneableImplInGPackage.h(aM3.b() + 2);
+      CloneableImplInGPackage.a((GInterfaceDb)new c("PW Adder"));
+      CloneableImplInGPackage.c((GInterfaceDb)new c("Rate"));
+      CloneableImplInGPackage.d(500.0D);
+      CloneableImplInGPackage.c(aM3.r());
+      CloneableImplInGPackage.b(true);
       if (aM4.s() > 20.0D) {
-        bm.b(20.0D);
+        CloneableImplInGPackage.b(20.0D);
       } else {
-        bm.b(aM4.s());
+        CloneableImplInGPackage.b(aM4.s());
       } 
-      bm.a(aM4.r());
-      bm.d(aC.v);
+      CloneableImplInGPackage.a(aM4.r());
+      CloneableImplInGPackage.d(GInterfaceAc.v);
       if (aM1 != null) {
-        bm.u("mapProportion" + this.a + " > 0");
+        CloneableImplInGPackage.u("mapProportion" + this.a + " > 0");
       } else if (aM2 != null) {
-        bm.u("tpsProportion" + this.a + " <100");
+        CloneableImplInGPackage.u("tpsProportion" + this.a + " <100");
       } 
-      bv1.a((bv)bm);
+      bv1.a((ArrayListExceptionprintstacktraceInGPackage)CloneableImplInGPackage);
     } 
     double d = 30.0D;
     if (aM5 != null && aM6 != null) {
-      bm bm = new bm();
-      bm.s("TPS Based AE");
-      bm.v("tpsDotCurve");
-      bm.c(aM5.aL());
-      bm.a(aM6.aL());
-      bm.g(aM6.b());
-      bm.h(aM5.b() + 2);
-      bm.a((db)new c("PW Adder"));
-      bm.c((db)new c("Rate"));
-      bm.b(true);
+      CloneableImplInGPackage CloneableImplInGPackage = new CloneableImplInGPackage();
+      CloneableImplInGPackage.s("TPS Based AE");
+      CloneableImplInGPackage.v("tpsDotCurve");
+      CloneableImplInGPackage.c(aM5.aL());
+      CloneableImplInGPackage.a(aM6.aL());
+      CloneableImplInGPackage.g(aM6.b());
+      CloneableImplInGPackage.h(aM5.b() + 2);
+      CloneableImplInGPackage.a((GInterfaceDb)new c("PW Adder"));
+      CloneableImplInGPackage.c((GInterfaceDb)new c("Rate"));
+      CloneableImplInGPackage.b(true);
       if (aM5.s() > 2000.0D) {
-        bm.d(2000.0D);
+        CloneableImplInGPackage.d(2000.0D);
         d = 2000.0D;
       } else {
-        bm.d(aM5.s());
+        CloneableImplInGPackage.d(aM5.s());
       } 
-      bm.c(aM5.r());
+      CloneableImplInGPackage.c(aM5.r());
       if (aM6.s() > 20.0D) {
-        bm.b(20.0D);
+        CloneableImplInGPackage.b(20.0D);
       } else {
-        bm.b(aM6.s());
+        CloneableImplInGPackage.b(aM6.s());
       } 
-      bm.a(aM6.r());
-      bm.d(aC.w);
+      CloneableImplInGPackage.a(aM6.r());
+      CloneableImplInGPackage.d(GInterfaceAc.w);
       if (aM3 == null || aM4 == null)
-        bm.c(true); 
+        CloneableImplInGPackage.c(true); 
       if (aM2 != null) {
-        bm.u("tpsProportion" + this.a + " > 0");
+        CloneableImplInGPackage.u("tpsProportion" + this.a + " > 0");
       } else if (aM1 != null) {
-        bm.u("mapProportion" + this.a + " == 0");
+        CloneableImplInGPackage.u("mapProportion" + this.a + " == 0");
       } 
-      bv1.a((bv)bm);
+      bv1.a((ArrayListExceptionprintstacktraceInGPackage)CloneableImplInGPackage);
     } 
     a(bv1);
-    bv bv2 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv2 = new ArrayListExceptionprintstacktraceInGPackage();
     bv2.i(0);
     if (aM1 != null) {
-      bq bq1 = new bq();
+      GComponentBq bq1 = new GComponentBq();
       bq1.e("Throttle Position vs Manifold Pressure Accel Enrichment Strategy");
       bq1.b(aM1.aL());
       bq1.c(true);
-      bv2.a((bA)bq1);
+      bv2.a((Abstract)bq1);
     } 
     if (aM2 != null) {
-      bq bq1 = new bq();
+      GComponentBq bq1 = new GComponentBq();
       bq1.e("Throttle Position vs Manifold Pressure Accel Enrichment Strategy, Percent TPS Driven");
       bq1.b(aM2.aL());
-      bv2.a((bA)bq1);
+      bv2.a((Abstract)bq1);
     } 
     a(bv2);
     if (paramBoolean) {
-      br br = new br();
-      bs bs = new bs();
-      bs.a(aC.v);
-      bs.a(0.0D);
-      bs.b(100.0D);
-      bs.b("kPa/s");
-      bs.b(true);
-      bs.a(false);
-      bs.a(0.0D);
-      br.a(bs);
-      bs = new bs();
-      bs.a(aC.w);
-      bs.a(0.0D);
-      bs.b(10.0D);
-      bs.b(true);
-      bs.a(true);
+      GInterfaceBr GInterfaceBr = new GInterfaceBr();
+      GComponentBs GComponentBs = new GComponentBs();
+      GComponentBs.a(GInterfaceAc.v);
+      GComponentBs.a(0.0D);
+      GComponentBs.b(100.0D);
+      GComponentBs.b("kPa/s");
+      GComponentBs.b(true);
+      GComponentBs.a(false);
+      GComponentBs.a(0.0D);
+      GInterfaceBr.a(GComponentBs);
+      GComponentBs = new GComponentBs();
+      GComponentBs.a(GInterfaceAc.w);
+      GComponentBs.a(0.0D);
+      GComponentBs.b(10.0D);
+      GComponentBs.b(true);
+      GComponentBs.a(true);
       if (aM5 != null)
-        bs.b(aM5.p()); 
-      br.a(bs);
-      if (paramR.g(aC.y) != null) {
-        bs = new bs();
-        bs.a(aC.y);
-        br.a(bs);
-      } else if (paramR.g(aC.y + "1") != null) {
-        bs = new bs();
-        bs.a(aC.y + "1");
-        br.a(bs);
+        GComponentBs.b(aM5.p()); 
+      GInterfaceBr.a(GComponentBs);
+      if (paramR.g(GInterfaceAc.y) != null) {
+        GComponentBs = new GComponentBs();
+        GComponentBs.a(GInterfaceAc.y);
+        GInterfaceBr.a(GComponentBs);
+      } else if (paramR.g(GInterfaceAc.y + "1") != null) {
+        GComponentBs = new GComponentBs();
+        GComponentBs.a(GInterfaceAc.y + "1");
+        GInterfaceBr.a(GComponentBs);
       } else {
-        bs = new bs();
-        bs.a(aC.x);
-        br.a(bs);
+        GComponentBs = new GComponentBs();
+        GComponentBs.a(GInterfaceAc.x);
+        GInterfaceBr.a(GComponentBs);
       } 
-      a((bv)br);
+      a((ArrayListExceptionprintstacktraceInGPackage)GInterfaceBr);
     } 
-    bv bv3 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv3 = new ArrayListExceptionprintstacktraceInGPackage();
     bv3.i(0);
-    bv bv4 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv4 = new ArrayListExceptionprintstacktraceInGPackage();
     bv4.s(" ");
-    bq bq = null;
-    bq = new bq();
-    bq.b(aC.o + this.a);
-    bq.e("MAPdot Threshold");
-    bv4.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.l + this.a);
-    bq.e("Accel Time");
-    bv4.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.q + this.a);
-    bq.e("Accel Taper Time");
-    bv4.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.p + this.a);
-    bq.e("End Pulsewidth");
-    bv4.a((bA)bq);
+    GComponentBq GComponentBq = null;
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.o + this.a);
+    GComponentBq.e("MAPdot Threshold");
+    bv4.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.l + this.a);
+    GComponentBq.e("Accel Time");
+    bv4.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.q + this.a);
+    GComponentBq.e("Accel Taper Time");
+    bv4.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.p + this.a);
+    GComponentBq.e("End Pulsewidth");
+    bv4.a((Abstract)GComponentBq);
     bv3.a(bv4);
-    bv bv5 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv5 = new ArrayListExceptionprintstacktraceInGPackage();
     bv5.s(" ");
-    bq = new bq();
-    bq.b(aC.k + this.a);
-    bq.e("TPSdot Threshold");
-    bv5.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.m + this.a);
-    bq.e("Decel Fuel Amount");
-    bv5.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.j + this.a);
-    bq.e("Cold Accel Enrichment");
-    bv5.a((bA)bq);
-    bq = new bq();
-    bq.b(aC.n + this.a);
-    bq.e("Cold Accel Multiplier");
-    bv5.a((bA)bq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.k + this.a);
+    GComponentBq.e("TPSdot Threshold");
+    bv5.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.m + this.a);
+    GComponentBq.e("Decel Fuel Amount");
+    bv5.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.j + this.a);
+    GComponentBq.e("Cold Accel Enrichment");
+    bv5.a((Abstract)GComponentBq);
+    GComponentBq = new GComponentBq();
+    GComponentBq.b(GInterfaceAc.n + this.a);
+    GComponentBq.e("Cold Accel Multiplier");
+    bv5.a((Abstract)GComponentBq);
     bv3.a(bv5);
     a(bv3);
   }

@@ -1,25 +1,25 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.bM;
-import G.bh;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImplUsingArrayList;
 import W.j;
 import W.n;
 import bF.TableModelListenerUsingArrayList;
 import bH.D;
 import bt.T;
-import bt.bP;
+import bt.BtInterfaceBp;
 import i.IComponentAlpha;
 import i.IInterfaceCharlie;
 
-public class ScalarDataLogListener implements bP, IComponentAlpha {
+public class ScalarDataLogListener implements BtInterfaceBp, IComponentAlpha {
   T IComponentAlpha;
   
   TableModelListenerUsingArrayList b;
   
   R IInterfaceCharlie;
   
-  bh TableModelListenerUsingArrayList;
+  CloneableImplUsingArrayList TableModelListenerUsingArrayList;
   
   String e = null;
   
@@ -29,7 +29,7 @@ public class ScalarDataLogListener implements bP, IComponentAlpha {
   
   String h = "UNINITIALIZED";
   
-  public P(R paramR, bh parambh, T paramT) {
+  public P(R paramR, CloneableImplUsingArrayList parambh, T paramT) {
     this.IInterfaceCharlie = paramR;
     this.TableModelListenerUsingArrayList = parambh;
     this.IComponentAlpha = paramT;
@@ -75,7 +75,7 @@ public class ScalarDataLogListener implements bP, IComponentAlpha {
       return;
     } 
     n n = IInterfaceCharlie.IComponentAlpha().e();
-    this.e = bM.j(this.IInterfaceCharlie, str);
+    this.e = ExceptionprintstacktraceInGPackage.j(this.IInterfaceCharlie, str);
     if (n != null) {
       if (this.e == null || (this.e.isEmpty() && n.IComponentAlpha(str) != null))
         this.e = str; 

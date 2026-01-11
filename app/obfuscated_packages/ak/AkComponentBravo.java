@@ -1,7 +1,7 @@
 package ak;
 
 import V.ExceptionInVPackage;
-import W.ah;
+import W.ManagerUsingReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -153,7 +153,7 @@ public class AkComponentBravo extends g {
     //   262: getfield h : Ljava/io/File;
     //   265: invokespecial <init> : (Ljava/io/File;)V
     //   268: astore #9
-    //   270: new W/ah
+    //   270: new W/ManagerUsingReader
     //   273: dup
     //   274: new java/io/InputStreamReader
     //   277: dup
@@ -538,16 +538,16 @@ public class AkComponentBravo extends g {
   
   protected String c(String paramString) {
     boolean bool = false;
-    ah ah = null;
+    ManagerUsingReader ManagerUsingReader = null;
     try {
       this.h = new File(paramString);
       FileInputStream fileInputStream = new FileInputStream(this.h);
       byte[] arrayOfByte = new byte[2];
       fileInputStream.read(arrayOfByte);
-      ah = new ah(new InputStreamReader(fileInputStream, this.j));
+      ManagerUsingReader = new ManagerUsingReader(new InputStreamReader(fileInputStream, this.j));
       for (byte b1 = 0; b1 < 30; b1++)
-        ah.ExceptionInVPackage(); 
-      String str = ah.ExceptionInVPackage();
+        ManagerUsingReader.ExceptionInVPackage(); 
+      String str = ManagerUsingReader.ExceptionInVPackage();
       if (str == null)
         return ","; 
       if (str.contains("\",\""))
@@ -558,9 +558,9 @@ public class AkComponentBravo extends g {
     } catch (IOException iOException) {
       throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
     } finally {
-      if (ah != null)
+      if (ManagerUsingReader != null)
         try {
-          ah.close();
+          ManagerUsingReader.close();
         } catch (IOException iOException) {
           Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
         }  

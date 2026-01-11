@@ -2,8 +2,8 @@ package aa;
 
 import G.Q;
 import G.R;
-import G.aH;
-import G.dj;
+import G.SerializableImpl;
+import G.GInterfaceDj;
 import W.N;
 import W.O;
 import W.P;
@@ -22,16 +22,16 @@ public class AaInterfaceEcho implements O {
   }
   
   public void a(R paramR, BufferedWriter paramBufferedWriter, N paramN, r paramr) {
-    Iterator<aH> iterator = paramR.q();
+    Iterator<SerializableImpl> iterator = paramR.q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
-      if (paramr == null || paramr.a((Q)aH))
-        a(paramR, aH, paramBufferedWriter); 
+      SerializableImpl SerializableImpl = iterator.next();
+      if (paramr == null || paramr.a((Q)SerializableImpl))
+        a(paramR, SerializableImpl, paramBufferedWriter); 
     } 
     paramBufferedWriter.write("\n\n");
   }
   
-  private void a(R paramR, aH paramaH, BufferedWriter paramBufferedWriter) {
+  private void a(R paramR, SerializableImpl paramaH, BufferedWriter paramBufferedWriter) {
     if (paramaH.b().equals("formula")) {
       paramBufferedWriter.write("     ");
       paramBufferedWriter.write(paramaH.aL());
@@ -70,22 +70,22 @@ public class AaInterfaceEcho implements O {
       paramBufferedWriter.write("\"");
       paramBufferedWriter.write(paramaH.e());
       paramBufferedWriter.write("\", ");
-      dj dj = paramaH.g();
-      if (dj instanceof G.B) {
+      GInterfaceDj GInterfaceDj = paramaH.g();
+      if (GInterfaceDj instanceof G.B) {
         paramBufferedWriter.write(X.a(Double.toString(paramaH.h()), ' ', P.b));
         paramBufferedWriter.write(", ");
       } else {
         paramBufferedWriter.write("{");
-        paramBufferedWriter.write(dj.toString());
+        paramBufferedWriter.write(GInterfaceDj.toString());
         paramBufferedWriter.write(" }, ");
       } 
-      dj = paramaH.j();
-      if (dj instanceof G.B) {
+      GInterfaceDj = paramaH.j();
+      if (GInterfaceDj instanceof G.B) {
         paramBufferedWriter.write(X.a(Double.toString(paramaH.i()), ' ', P.b));
         paramBufferedWriter.write(", ");
       } else {
         paramBufferedWriter.write("{");
-        paramBufferedWriter.write(dj.toString());
+        paramBufferedWriter.write(GInterfaceDj.toString());
         paramBufferedWriter.write(" }, ");
       } 
       if (!paramaH.s())

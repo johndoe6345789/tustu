@@ -2,7 +2,7 @@ package p;
 
 import G.R;
 import G.T;
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import G.q;
 import S.SInterfaceAlpha;
@@ -12,7 +12,7 @@ import S.SInterfaceNovember;
 import ax.ExceptionInAxPackage;
 import bH.X;
 import bH.ab;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.cF;
@@ -37,7 +37,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class PInterfaceGolf extends bh implements bc {
+public class PInterfaceGolf extends ExceptionEqualsinaipackage implements bc {
   private String p = "Define the name of this Event Trigger. It must be unique to all Event based triggers. Should not contain spaces or special characters.";
   
   private String q = "The target Action that will be triggered based on your Trigger conditions.";
@@ -184,7 +184,7 @@ public class PInterfaceGolf extends bh implements bc {
     if (X.f(paramh.SInterfaceAlpha()) || paramh.SInterfaceAlpha().contains(" "))
       str = str + s.g.b("Name cannot contain special characters!") + "\SInterfaceNovember"; 
     try {
-      i.SInterfaceAlpha(paramh.d(), (aI)this.b);
+      i.SInterfaceAlpha(paramh.d(), (GInterfaceAi)this.b);
     } catch (ExceptionInAxPackage u) {
       str = str + s.g.b("Invalid Trigger Expression") + ":" + this.j.SInterfaceAlpha() + "\SInterfaceNovember";
       if (u.getMessage() != null && !u.getMessage().isEmpty())
@@ -192,7 +192,7 @@ public class PInterfaceGolf extends bh implements bc {
     } 
     if (!paramh.f())
       try {
-        i.SInterfaceAlpha(paramh.SInterfaceEcho(), (aI)this.b);
+        i.SInterfaceAlpha(paramh.SInterfaceEcho(), (GInterfaceAi)this.b);
       } catch (ExceptionInAxPackage u) {
         str = str + s.g.b("Invalid Reset Expression") + ":" + this.k.SInterfaceAlpha() + "\SInterfaceNovember";
         if (u.getMessage() != null && !u.getMessage().isEmpty())

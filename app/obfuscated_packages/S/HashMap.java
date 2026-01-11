@@ -4,7 +4,7 @@ import G.R;
 import G.S;
 import G.T;
 import U.UInterfaceAlpha;
-import W.ap;
+import W.WInterfaceAp;
 import bH.D;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,7 +14,7 @@ import java.util.List;
 public class HashMap implements S {
   private final UInterfaceAlpha b = new UInterfaceAlpha();
   
-  private ap c = null;
+  private WInterfaceAp c = null;
   
   private final List d = new ArrayList();
   
@@ -85,11 +85,11 @@ public class HashMap implements S {
     this.d.add(paramg);
   }
   
-  public ap b() {
+  public WInterfaceAp b() {
     return this.c;
   }
   
-  public void UInterfaceAlpha(ap paramap) {
+  public void UInterfaceAlpha(WInterfaceAp paramap) {
     this.c = paramap;
     this.b.UInterfaceAlpha(paramap);
   }

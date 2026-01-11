@@ -1,12 +1,12 @@
 package aY;
 
-import W.ag;
+import W.FileInWPackage;
 import java.util.Comparator;
 
 class ComparatorImpl implements Comparator {
   z(s params) {}
   
-  public int a(ag paramag1, ag paramag2) {
+  public int a(FileInWPackage paramag1, FileInWPackage paramag2) {
     return paramag1.a().getName().compareTo(paramag2.a().getName());
   }
 }

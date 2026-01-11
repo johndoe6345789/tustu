@@ -2,7 +2,7 @@ package e;
 
 import G.R;
 import G.T;
-import G.aH;
+import G.SerializableImpl;
 import G.DInterfaceIndia;
 import V.ExceptionPrintstacktrace;
 import d.DComponentCharlie;
@@ -64,8 +64,8 @@ public class EInterfaceEcho implements DComponentCharlie {
         throw new d.e("Configuration Name not found: " + str1); 
       throw new d.e("No working configuration and no config name requested");
     } 
-    aH aH = r.ExceptionPrintstacktrace(str2);
-    if (aH == null)
+    SerializableImpl SerializableImpl = r.ExceptionPrintstacktrace(str2);
+    if (SerializableImpl == null)
       throw new d.e("OutputChannel not found: " + str2); 
   }
   
@@ -77,11 +77,11 @@ public class EInterfaceEcho implements DComponentCharlie {
       this.DComponentCharlie = r.DComponentCharlie();
       DInterfaceIndia.a(0);
       ArrayList<String> arrayList1 = new ArrayList();
-      Iterator<aH> iterator = r.q();
+      Iterator<SerializableImpl> iterator = r.q();
       while (iterator.hasNext()) {
-        aH aH = iterator.next();
-        if (aH.s() && aH.w())
-          arrayList1.add(aH.aL()); 
+        SerializableImpl SerializableImpl = iterator.next();
+        if (SerializableImpl.s() && SerializableImpl.w())
+          arrayList1.add(SerializableImpl.aL()); 
       } 
       Collections.sort(arrayList1);
       ArrayList<String> arrayList2 = new ArrayList();

@@ -1,6 +1,6 @@
 package br;
 
-import G.aH;
+import G.SerializableImpl;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,7 +11,7 @@ class BrInterfaceRomeo implements ActionListener {
     this.a.b.c(paramActionEvent.getActionCommand());
     this.a.b.r(null);
     for (ag ag : this.a.p) {
-      ag.a((aH)null);
+      ag.a((SerializableImpl)null);
       ag.f();
     } 
     this.a.m.a("targetLambdaTableName", this.a.b.c());

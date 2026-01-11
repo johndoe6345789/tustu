@@ -1,12 +1,12 @@
 package ac;
 
-import G.aF;
+import G.GInterfaceAf;
 import bH.D;
 import bH.c;
 import java.io.OutputStream;
 import java.util.HashMap;
 
-public class AcInterfaceOscar implements aF {
+public class AcInterfaceOscar implements GInterfaceAf {
   private static o e = null;
   
   HashMap a;

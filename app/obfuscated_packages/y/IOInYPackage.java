@@ -1,7 +1,7 @@
 package y;
 
 import G.R;
-import G.bU;
+import G.GInterfaceBu;
 import V.ExceptionPrintstacktrace;
 import ae.AeInterfaceMike;
 import ae.AeInterfaceOscar;
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Properties;
 import r.IOInBiPackage;
 
-public IOInYPackagelass IOInYPackage implements bU {
+public IOInYPackagelass IOInYPackage implements GInterfaceBu {
   R IOInBiPackage;
   
   public IOInYPackage(R paramR) {

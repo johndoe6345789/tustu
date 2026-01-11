@@ -3,9 +3,9 @@ package bl;
 import G.R;
 import G.S;
 import G.T;
-import G.aH;
-import G.cq;
-import G.cu;
+import G.SerializableImpl;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import com.efiAnalytics.plugin.ecu.ControllerException;
 import com.efiAnalytics.plugin.ecu.OutputChannel;
 import com.efiAnalytics.plugin.ecu.OutputChannelClient;
@@ -23,7 +23,7 @@ public class ManagerSubscribe implements S, OutputChannelServer {
     try {
       List<b> list = a(paramString1);
       b b = new b(this, paramOutputChannelClient);
-      cu.a().a(paramString1, paramString2, b);
+      ManagerUsingArrayList.a().a(paramString1, paramString2, b);
       list.add(b);
     } catch (V.a a1) {
       throw new ControllerException(a1.getMessage());
@@ -32,9 +32,9 @@ public class ManagerSubscribe implements S, OutputChannelServer {
   
   public void unsubscribeConfiguration(String paramString) {
     List list = a(paramString);
-    Iterator<cq> iterator = list.iterator();
+    Iterator<GComponentCq> iterator = list.iterator();
     while (iterator.hasNext()) {
-      cu.a().a(iterator.next());
+      ManagerUsingArrayList.a().a(iterator.next());
       iterator.remove();
     } 
   }
@@ -42,7 +42,7 @@ public class ManagerSubscribe implements S, OutputChannelServer {
   public void unsubscribe(OutputChannelClient paramOutputChannelClient) {
     b b = a(paramOutputChannelClient);
     if (b != null) {
-      cu.a().a(b);
+      ManagerUsingArrayList.a().a(b);
       a(b);
     } 
   }
@@ -79,14 +79,14 @@ public class ManagerSubscribe implements S, OutputChannelServer {
     R r = T.a().c(paramString1);
     if (r == null)
       throw new ControllerException("Controller Not Found for configuration: " + paramString1); 
-    aH aH = r.g(paramString2);
-    if (aH == null)
+    SerializableImpl SerializableImpl = r.g(paramString2);
+    if (SerializableImpl == null)
       throw new ControllerException("OutputChannel " + paramString2 + " Not Found in configuration: " + paramString1); 
     OutputChannel outputChannel = new OutputChannel();
-    outputChannel.setFormula(aH.k());
-    outputChannel.setMaxValue(aH.m());
-    outputChannel.setMinValue(aH.n());
-    outputChannel.setUnits(aH.e());
+    outputChannel.setFormula(SerializableImpl.k());
+    outputChannel.setMaxValue(SerializableImpl.m());
+    outputChannel.setMinValue(SerializableImpl.n());
+    outputChannel.setUnits(SerializableImpl.e());
     outputChannel.setName(paramString2);
     return outputChannel;
   }

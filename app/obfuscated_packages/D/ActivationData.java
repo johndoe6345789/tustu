@@ -1,6 +1,6 @@
 package D;
 
-import W.ak;
+import W.IOInWPackage;
 import bI.BiInterfaceIndia;
 import f.ExceptionExtensionInFPackage;
 import f.BiInterfaceIndia;
@@ -136,15 +136,15 @@ public class ActivationData {
     properties.setProperty("p", k(g()));
     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
     properties.store(byteArrayOutputStream, "");
-    ak ak = new ak();
-    return ak.a(byteArrayOutputStream.toByteArray(), "");
+    IOInWPackage IOInWPackage = new IOInWPackage();
+    return IOInWPackage.a(byteArrayOutputStream.toByteArray(), "");
   }
   
   public void a(byte[] paramArrayOfbyte) {
     Properties properties = new Properties();
     try {
-      ak ak = new ak();
-      byte[] arrayOfByte = ak.b(paramArrayOfbyte, "");
+      IOInWPackage IOInWPackage = new IOInWPackage();
+      byte[] arrayOfByte = IOInWPackage.b(paramArrayOfbyte, "");
       properties.load(new ByteArrayInputStream(arrayOfByte));
     } catch (Exception exception) {
       throw new ExceptionExtensionInFPackage("Invalid activation data.");

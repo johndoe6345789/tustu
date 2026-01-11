@@ -1,9 +1,9 @@
 package bS;
 
 import G.R;
-import G.aR;
-import G.cI;
-import G.cu;
+import G.ManagerUsingConcurrentHashMap;
+import G.GInterfaceCi;
+import G.ManagerUsingArrayList;
 import bN.BnInterfaceFoxtrot;
 import bN.BnInterfaceGolf;
 import bN.BnInterfaceIndia;
@@ -90,7 +90,7 @@ public class BsInterfaceOscar {
   
   public void a() {
     for (BpInterfaceBravo b1 : this.BnInterfaceTango.a)
-      cu.a().a(b1.a().n()); 
+      ManagerUsingArrayList.a().a(b1.a().n()); 
     this.BnInterfaceFoxtrot.TostringInBoPackage();
     this.j.TostringInBoPackage();
     this.BnInterfaceFoxtrot.BpInterfaceBravo(this.BnInterfaceGolf);
@@ -101,7 +101,7 @@ public class BsInterfaceOscar {
       e.a();
     } 
     this.s.clear();
-    aR.a().BpInterfaceBravo((cI)this.u);
+    ManagerUsingConcurrentHashMap.a().BpInterfaceBravo((GInterfaceCi)this.u);
   }
   
   private void n() {
@@ -125,7 +125,7 @@ public class BsInterfaceOscar {
     e e = new e(this, this.h);
     this.s.add(e);
     this.h.h().a(e);
-    aR.a().a((cI)this.u);
+    ManagerUsingConcurrentHashMap.a().a((GInterfaceCi)this.u);
   }
   
   public void BpInterfaceBravo() {

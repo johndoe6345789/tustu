@@ -1,18 +1,18 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class TimerStopwatchFunction extends ac {
-  ab a;
+public class TimerStopwatchFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c;
+  AxInterfaceAb c;
   
-  ab d = null;
+  AxInterfaceAb d = null;
   
   double e = 0.0D;
   
@@ -30,7 +30,7 @@ public class TimerStopwatchFunction extends ac {
   
   int l = 0;
   
-  protected Y(List<ab> paramList) {
+  protected Y(List<AxInterfaceAb> paramList) {
     this.a = paramList.get(0);
     this.b = paramList.get(1);
     if (paramList.size() > 2)

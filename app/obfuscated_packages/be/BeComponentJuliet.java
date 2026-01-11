@@ -1,8 +1,8 @@
 package be;
 
 import G.R;
-import G.ac;
-import G.ak;
+import G.SerializableImplExceptionprintstacktrace;
+import G.Exceptionprintstacktrace;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.br;
@@ -66,14 +66,14 @@ public class BeComponentJuliet extends JPanel implements o {
       JMenu jMenu2 = jMenu1;
       if (arrayList.size() > b2)
         jMenu2 = new JMenu(SComponentGolf.b("Predefined Indicators 1")); 
-      for (ak ak : arrayList) {
+      for (Exceptionprintstacktrace Exceptionprintstacktrace : arrayList) {
         if (b1++ % b2 == 0) {
           jMenu2 = new JMenu(SComponentGolf.b("Predefined Indicators") + " " + (b1 / b2 + 1));
           jMenu1.add(jMenu2);
         } 
-        JMenuItem jMenuItem = new JMenuItem(SComponentGolf.b(ak.b()));
+        JMenuItem jMenuItem = new JMenuItem(SComponentGolf.b(Exceptionprintstacktrace.b()));
         jMenuItem.addActionListener(m);
-        jMenuItem.setActionCommand(ak.aL());
+        jMenuItem.setActionCommand(Exceptionprintstacktrace.aL());
         jMenu2.add(jMenuItem);
       } 
     } 
@@ -81,13 +81,13 @@ public class BeComponentJuliet extends JPanel implements o {
     br.show(this.f, 0, this.f.getHeight());
   }
   
-  private void ExceptionInVPackage(ak paramak) {
+  private void ExceptionInVPackage(Exceptionprintstacktrace paramak) {
     try {
-      ac ac = this.d.ExceptionInVPackage();
-      ac.c(paramak.b());
-      ac.b(4);
-      ac.b(paramak.f());
-      this.d.ExceptionInVPackage(ac);
+      SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = this.d.ExceptionInVPackage();
+      SerializableImplExceptionprintstacktrace.c(paramak.b());
+      SerializableImplExceptionprintstacktrace.b(4);
+      SerializableImplExceptionprintstacktrace.b(paramak.f());
+      this.d.ExceptionInVPackage(SerializableImplExceptionprintstacktrace);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage((Exception)ExceptionInVPackage);
     } 
@@ -101,7 +101,7 @@ public class BeComponentJuliet extends JPanel implements o {
     this.d.ExceptionInVPackage(paramR);
   }
   
-  public void ExceptionInVPackage(ac paramac) {
+  public void ExceptionInVPackage(SerializableImplExceptionprintstacktrace paramac) {
     this.d.ExceptionInVPackage(paramac);
   }
   

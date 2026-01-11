@@ -1,12 +1,12 @@
 package J;
 
-import G.cR;
+import G.GInterfaceCr;
 import G.f;
 import bH.D;
 import bH.c;
 import java.io.Serializable;
 
-public class BasicEnvelopeDecoder implements cR, Serializable {
+public class BasicEnvelopeDecoder implements GInterfaceCr, Serializable {
   f a = new f();
 
   int b = 2;

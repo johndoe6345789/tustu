@@ -1,13 +1,13 @@
 package au;
 
-import aO.UI;
+import aO.ManagerInAoPackage;
 import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.et;
 import h.IOProperties;
 import java.awt.Component;
 import java.util.ArrayList;
 
-public AuComponentCharlielass AuComponentCharlie extends UI {
+public AuComponentCharlielass AuComponentCharlie extends ManagerInAoPackage {
   public AuComponentCharlie() {
     super(true, true);
     b b = new b();
@@ -23,7 +23,7 @@ public AuComponentCharlielass AuComponentCharlie extends UI {
   }
   
   public Component a() {
-    return UI();
+    return ManagerInAoPackage();
   }
 }
 

@@ -1,12 +1,12 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.ba;
+import G.Tostring;
 import s.SComponentGolf;
 
 class BaWrapper {
-  private ba b;
+  private Tostring b;
   
-  public BaWrapper(CalibrationTablePanel paramJ, ba paramba) {
+  public BaWrapper(CalibrationTablePanel paramJ, Tostring paramba) {
     this.b = paramba;
   }
   
@@ -14,7 +14,7 @@ class BaWrapper {
     return SComponentGolf.b(this.b.toString());
   }
   
-  public ba a() {
+  public Tostring a() {
     return this.b;
   }
   

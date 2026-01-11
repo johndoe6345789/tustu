@@ -1,6 +1,6 @@
 package bg;
 
-import G.bf;
+import G.GInterfaceBf;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
@@ -12,7 +12,7 @@ public class UIInBgPackage extends JPanel {
   
   JTextField b = new JTextField("", 20);
   
-  bf c = null;
+  GInterfaceBf c = null;
   
   public UIInBgPackage() {
     setLayout(new GridLayout(1, 0));

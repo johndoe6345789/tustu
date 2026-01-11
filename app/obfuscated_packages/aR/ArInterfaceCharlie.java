@@ -1,9 +1,9 @@
 package aR;
 
 import V.ExceptionInVPackage;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import ac.AcInterfaceRomeo;
 import bH.D;
 import d.DComponentCharlie;
@@ -29,12 +29,12 @@ public class ArInterfaceCharlie implements DComponentCharlie {
   public void ExceptionInVPackage(Properties paramProperties) {
     try {
       if (AcInterfaceRomeo.ExceptionInVPackage()) {
-        NetworkHashMap.ExceptionInVPackage().SComponentGolf(dd.ExceptionInVPackage().DComponentCharlie());
+        NetworkHashMap.ExceptionInVPackage().SComponentGolf(ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().DComponentCharlie());
       } else {
         NetworkHashMap.ExceptionInVPackage().o();
       } 
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      hq.ExceptionInVPackage().d(ExceptionInVPackage.getLocalizedMessage());
+      NInterfaceIndiaImpl.ExceptionInVPackage().d(ExceptionInVPackage.getLocalizedMessage());
       D.d(ExceptionInVPackage.getLocalizedMessage());
     } 
   }

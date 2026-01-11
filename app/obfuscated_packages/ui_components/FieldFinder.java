@@ -1,7 +1,7 @@
 package ao;
 
-import W.aa;
-import aO.UI;
+import W.NetworkExceptionprintstacktrace;
+import aO.ManagerInAoPackage;
 import com.efiAnalytics.ui.fh;
 import h.ClassTypeInHPackage;
 import h.PropertiesExtensionInHPackage;
@@ -28,7 +28,7 @@ public class I {
       IOProperties.n = "https://www.efianalytics.com/MegaLogViewerHD/register.html";
       IOProperties.m = "https://www.efianalytics.com/MegaLogViewerHD/";
       IOProperties.l = "HogLogViewer.jar";
-      IOProperties.UI = "MegaLogViewerHD.exe";
+      IOProperties.ManagerInAoPackage = "MegaLogViewerHD.exe";
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("dyno")) || paramString.equals("DynoSpectrum.jar")) {
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("dyno"))
         paramArrayOfString = new String[0]; 
@@ -48,11 +48,11 @@ public class I {
       IOProperties.m = "https://www.efianalytics.com/DynoSpectrum/";
       IOProperties.z = true;
       IOProperties.l = "DynoSpectrum.jar";
-      IOProperties.UI = "DynoSpectrum.exe";
+      IOProperties.ManagerInAoPackage = "DynoSpectrum.exe";
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("big")) || paramString.equals("BigStuffLog.jar")) {
       if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("big"))
         paramArrayOfString = new String[0]; 
-      IOProperties.ClassTypeInHPackage = ClassTypeInHPackage.UI;
+      IOProperties.ClassTypeInHPackage = ClassTypeInHPackage.ManagerInAoPackage;
       if (IOProperties.c.contains(ClassTypeInHPackage.d)) {
         IOProperties.c = ClassTypeInHPackage.e + ClassTypeInHPackage.ClassTypeInHPackage + ClassTypeInHPackage.d;
       } else {
@@ -68,13 +68,13 @@ public class I {
       IOProperties.T = "withLabels";
       PropertiesExtensionInHPackage.IOPropertiesUsingFile = "FieldMaps/BigStuffReplay.properties";
       IOProperties.w = "big";
-      aa.c = "bsq";
-      IOProperties.UI = "BigStuffLog.exe";
+      NetworkExceptionprintstacktrace.c = "bsq";
+      IOProperties.ManagerInAoPackage = "BigStuffLog.exe";
       IOProperties.l = "BigStuffLog.jar";
       IOProperties.V = true;
       IOProperties.x = false;
       hE.t = "Auto Tune";
-      UI.A = true;
+      ManagerInAoPackage.A = true;
       fh.IOPropertiesUsingFile(true);
     } 
   }

@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import bt.bZ;
+import bt.BtInterfaceBz;
 
-class ReqFuelTextCallback implements bZ {
+class ReqFuelTextCallback implements BtInterfaceBz {
   aJ(aF paramaF) {}
   
   public void b(String paramString) {

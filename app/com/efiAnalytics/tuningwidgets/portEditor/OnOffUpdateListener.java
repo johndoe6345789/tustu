@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.aN;
+import G.GInterfaceAn;
 
-class OnOffUpdateListener implements aN {
+class OnOffUpdateListener implements GInterfaceAn {
   OnOffUpdateListener(s params) {}
   
   public void a(String paramString1, String paramString2) {

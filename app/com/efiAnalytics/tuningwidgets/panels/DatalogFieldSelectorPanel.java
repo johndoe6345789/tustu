@@ -2,23 +2,23 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.B;
 import G.R;
-import G.aH;
-import G.aI;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.ac;
-import G.ag;
-import G.al;
-import G.bR;
-import G.dj;
+import G.SerializableImpl;
+import G.GInterfaceAi;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GComponentAg;
+import G.GComponentAl;
+import G.SerializableImplTostring;
+import G.GInterfaceDj;
 import G.i;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.p;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import java.awt.BorderLayout;
@@ -41,12 +41,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.ExceptionPrintstacktrace;
 
-public class DatalogFieldSelectorPanel extends bh implements aN, bc {
+public class DatalogFieldSelectorPanel extends ExceptionEqualsinaipackage implements GInterfaceAn, bc {
   R ExceptionInVPackage = null;
   
-  aM b = null;
+  Manager b = null;
   
-  aM c = null;
+  Manager c = null;
   
   DefaultListModel d = new DefaultListModel();
   
@@ -56,7 +56,7 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   
   JList ExceptionPrintstacktrace = new JList(this.f);
   
-  dj h = (dj)new B(55.0D);
+  GInterfaceDj h = (GInterfaceDj)new B(55.0D);
   
   JLabel i = new JLabel(" ");
   
@@ -68,15 +68,15 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   
   int m = 0;
   
-  public n(R paramR, ag paramag) {
+  public n(R paramR, GComponentAg paramag) {
     this.ExceptionInVPackage = paramR;
     this.b = this.ExceptionInVPackage.c(paramag.ExceptionInVPackage());
     this.c = this.ExceptionInVPackage.c(paramag.b());
     this.h = paramag.c();
-    if (this.h instanceof bR) {
-      String[] arrayOfString = i.h(((bR)this.h).c(), (aI)paramR);
+    if (this.h instanceof SerializableImplTostring) {
+      String[] arrayOfString = i.h(((SerializableImplTostring)this.h).c(), (GInterfaceAi)paramR);
       try {
-        i.ExceptionInVPackage(paramR, ((bR)this.h).c(), new o(this));
+        i.ExceptionInVPackage(paramR, ((SerializableImplTostring)this.h).c(), new o(this));
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         Logger.getLogger(n.class.getName()).log(Level.WARNING, "Failed to subscribe listener to log record size limit expression", (Throwable)ExceptionInVPackage);
       } 
@@ -146,7 +146,7 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
     jPanel6.add(this.k);
     add("South", jPanel5);
     try {
-      aR.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
     } 
@@ -159,29 +159,29 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
     ArrayList<z> arrayList2 = new ArrayList();
     try {
       ArrayList arrayList = ExceptionPrintstacktrace();
-      for (ac ac : this.ExceptionInVPackage.ExceptionPrintstacktrace()) {
-        if (b(ac.aJ())) {
-          aH aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(ac.ExceptionInVPackage());
-          if (aH.b().equals("bits"))
-            aH = i.ExceptionInVPackage(this.ExceptionInVPackage, aH.ExceptionInVPackage()); 
-          ArrayList arrayList3 = i.ExceptionInVPackage((aI)this.ExceptionInVPackage, aH);
-          z z = new z(this, ac, arrayList3);
-          z.ExceptionInVPackage((aH != null && aH.b().equals("formula")));
-          if (!ac.ExceptionInVPackage().equals("dataLogTime") && (arrayList3.isEmpty() || aH.w())) {
-            D.c("skipping: " + ac.b());
+      for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : this.ExceptionInVPackage.ExceptionPrintstacktrace()) {
+        if (b(SerializableImplExceptionprintstacktrace.aJ())) {
+          SerializableImpl SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(SerializableImplExceptionprintstacktrace.ExceptionInVPackage());
+          if (SerializableImpl.b().equals("bits"))
+            SerializableImpl = i.ExceptionInVPackage(this.ExceptionInVPackage, SerializableImpl.ExceptionInVPackage()); 
+          ArrayList arrayList3 = i.ExceptionInVPackage((GInterfaceAi)this.ExceptionInVPackage, SerializableImpl);
+          z z = new z(this, SerializableImplExceptionprintstacktrace, arrayList3);
+          z.ExceptionInVPackage((SerializableImpl != null && SerializableImpl.b().equals("formula")));
+          if (!SerializableImplExceptionprintstacktrace.ExceptionInVPackage().equals("dataLogTime") && (arrayList3.isEmpty() || SerializableImpl.w())) {
+            D.c("skipping: " + SerializableImplExceptionprintstacktrace.b());
             continue;
           } 
-          if (z.ExceptionInVPackage(arrayList) || ac.ExceptionInVPackage().equals("dataLogTime") || ac.ExceptionInVPackage().equals("engine")) {
+          if (z.ExceptionInVPackage(arrayList) || SerializableImplExceptionprintstacktrace.ExceptionInVPackage().equals("dataLogTime") || SerializableImplExceptionprintstacktrace.ExceptionInVPackage().equals("engine")) {
             arrayList2.add(z);
             continue;
           } 
           arrayList1.add(z);
         } 
       } 
-      for (al al : this.ExceptionInVPackage.f()) {
-        ArrayList<al> arrayList3 = new ArrayList();
-        arrayList3.add(al);
-        z z = new z(this, al, arrayList3);
+      for (GComponentAl GComponentAl : this.ExceptionInVPackage.f()) {
+        ArrayList<GComponentAl> arrayList3 = new ArrayList();
+        arrayList3.add(GComponentAl);
+        z z = new z(this, GComponentAl, arrayList3);
         if (z.ExceptionInVPackage(arrayList)) {
           arrayList2.add(z);
           continue;
@@ -251,10 +251,10 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
       return; 
     if (arrayOfInt.length == 1 && ((z)this.ExceptionPrintstacktrace.getModel().getElementAt(arrayOfInt[0])).b == null) {
       z z = this.ExceptionPrintstacktrace.getModel().getElementAt(arrayOfInt[0]);
-      aH aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(z.ExceptionInVPackage.ExceptionInVPackage());
+      SerializableImpl SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(z.ExceptionInVPackage.ExceptionInVPackage());
       ArrayList arrayList = z.ExceptionInVPackage();
       List list = ExceptionInVPackage(arrayList);
-      if (aH != null && aH.b().equals("formula")) {
+      if (SerializableImpl != null && SerializableImpl.b().equals("formula")) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(ExceptionPrintstacktrace.b("This field requires no SD record space because it is generated from fields that are already logged")).append(".\n").append(ExceptionPrintstacktrace.b("This field will be removed if any of the following are removed")).append(":\n");
         for (z z1 : list) {
@@ -315,20 +315,20 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   }
   
   public ArrayList ExceptionPrintstacktrace() {
-    ArrayList<aH> arrayList = new ArrayList();
+    ArrayList<SerializableImpl> arrayList = new ArrayList();
     String[] arrayOfString = this.ExceptionInVPackage.s();
     double[][] arrayOfDouble = this.b.i(this.ExceptionInVPackage.h());
     for (byte b = 0; b < arrayOfString.length; b++) {
-      aH aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(arrayOfString[b]);
+      SerializableImpl SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(arrayOfString[b]);
       for (byte b1 = 0; b1 < this.b.b(); b1++) {
-        if (!aH.b().equals("formula") && arrayOfDouble[b1][0] == aH.ExceptionInVPackage() && !arrayList.contains(aH))
-          arrayList.add(aH); 
+        if (!SerializableImpl.b().equals("formula") && arrayOfDouble[b1][0] == SerializableImpl.ExceptionInVPackage() && !arrayList.contains(SerializableImpl))
+          arrayList.add(SerializableImpl); 
       } 
     } 
-    for (al al : this.ExceptionInVPackage.f()) {
+    for (GComponentAl GComponentAl : this.ExceptionInVPackage.f()) {
       for (byte b1 = 0; b1 < this.b.b(); b1++) {
-        if (arrayOfDouble[b1][0] == al.ExceptionInVPackage() && !arrayList.contains(al))
-          arrayList.add(al); 
+        if (arrayOfDouble[b1][0] == GComponentAl.ExceptionInVPackage() && !arrayList.contains(GComponentAl))
+          arrayList.add(GComponentAl); 
       } 
     } 
     return arrayList;
@@ -338,37 +338,37 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
     if (paramz == null)
       return; 
     try {
-      aH aH;
+      SerializableImpl SerializableImpl;
       String str = paramz.toString() + " - ";
-      ArrayList<aH> arrayList = paramz.ExceptionInVPackage();
+      ArrayList<SerializableImpl> arrayList = paramz.ExceptionInVPackage();
       if (paramz.b != null) {
-        al al = paramz.b;
+        GComponentAl GComponentAl = paramz.b;
       } else {
-        aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(paramz.ExceptionInVPackage.ExceptionInVPackage());
+        SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(paramz.ExceptionInVPackage.ExceptionInVPackage());
       } 
       ArrayList arrayList1 = ExceptionPrintstacktrace();
       int i = 0;
       int ExceptionExtensionGetmessage = 0;
       int k;
       for (k = 0; k < arrayList.size(); k++) {
-        str = str + ((aH)arrayList.get(k)).aL();
+        str = str + ((SerializableImpl)arrayList.get(k)).aL();
         if (k < arrayList.size() - 1)
           str = str + ", "; 
         if (!arrayList1.contains(arrayList.get(k)))
-          i += ((aH)arrayList.get(k)).l(); 
-        ExceptionExtensionGetmessage += ((aH)arrayList.get(k)).l();
+          i += ((SerializableImpl)arrayList.get(k)).l(); 
+        ExceptionExtensionGetmessage += ((SerializableImpl)arrayList.get(k)).l();
       } 
-      if (i == 0 || (aH != null && aH.b().equals("formula"))) {
+      if (i == 0 || (SerializableImpl != null && SerializableImpl.b().equals("formula"))) {
         this.i.setText(str);
       } else {
         this.i.setText(str);
       } 
       if (!paramBoolean) {
         this.ExceptionExtensionGetmessage.setText(ExceptionPrintstacktrace.b("Record Bytes Required") + ": " + i);
-      } else if (aH != null && aH.b().equals("formula")) {
+      } else if (SerializableImpl != null && SerializableImpl.b().equals("formula")) {
         this.ExceptionExtensionGetmessage.setText(ExceptionPrintstacktrace.b("0 Bytes.") + " " + ExceptionPrintstacktrace.b("Underlying Channels") + ": " + ExceptionExtensionGetmessage);
       } else {
-        this.ExceptionExtensionGetmessage.setText(ExceptionPrintstacktrace.b("Record Bytes Used") + ": " + aH.l());
+        this.ExceptionExtensionGetmessage.setText(ExceptionPrintstacktrace.b("Record Bytes Used") + ": " + SerializableImpl.l());
       } 
       k = ExceptionExtensionGetmessage();
       int m = (int)this.h.ExceptionInVPackage();
@@ -380,13 +380,13 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   
   protected boolean h() {
     ArrayList arrayList = q();
-    ArrayList<aH> arrayList1 = new ArrayList();
+    ArrayList<SerializableImpl> arrayList1 = new ArrayList();
     int i = (int)this.h.ExceptionInVPackage();
     int ExceptionExtensionGetmessage = 0;
-    for (aH aH : arrayList) {
-      ExceptionExtensionGetmessage += aH.l();
+    for (SerializableImpl SerializableImpl : arrayList) {
+      ExceptionExtensionGetmessage += SerializableImpl.l();
       if (ExceptionExtensionGetmessage > i)
-        arrayList1.add(aH); 
+        arrayList1.add(SerializableImpl); 
     } 
     if (arrayList1.isEmpty())
       return true; 
@@ -420,9 +420,9 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
       throw new ExceptionInVPackage("A maximum of " + this.b.b() + " Output Channels can be logged.\nYour current selection of fields requires more \nOutput Channels than supported by the firmware."); 
     int i = (int)this.h.ExceptionInVPackage();
     int ExceptionExtensionGetmessage = 0;
-    Iterator<aH> iterator = arrayList2.iterator();
+    Iterator<SerializableImpl> iterator = arrayList2.iterator();
     while (iterator.hasNext()) {
-      ExceptionExtensionGetmessage += ((aH)iterator.next()).l();
+      ExceptionExtensionGetmessage += ((SerializableImpl)iterator.next()).l();
       if (ExceptionExtensionGetmessage > i) {
         iterator.remove();
         if (!iterator.hasNext())
@@ -435,22 +435,22 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   private int ExceptionExtensionGetmessage() {
     int i = 0;
     ArrayList arrayList = q();
-    Iterator<aH> iterator = arrayList.iterator();
+    Iterator<SerializableImpl> iterator = arrayList.iterator();
     while (iterator.hasNext())
-      i += ((aH)iterator.next()).l(); 
+      i += ((SerializableImpl)iterator.next()).l(); 
     return i;
   }
   
   public void i() {
     try {
-      ArrayList<aH> arrayList = q();
+      ArrayList<SerializableImpl> arrayList = q();
       if (arrayList.size() > this.b.b())
         bV.d("A maximum of " + this.b.b() + " Output Channels can be logged.\nYour current selection of fields requires " + arrayList.size() + " Output Channels\nOnly the fields based on the first " + this.b.b() + " OutputChannels will be added.", (Component)this); 
       int i = (int)this.h.ExceptionInVPackage();
       int ExceptionExtensionGetmessage = 0;
-      Iterator<aH> iterator = arrayList.iterator();
+      Iterator<SerializableImpl> iterator = arrayList.iterator();
       while (iterator.hasNext()) {
-        ExceptionExtensionGetmessage += ((aH)iterator.next()).l();
+        ExceptionExtensionGetmessage += ((SerializableImpl)iterator.next()).l();
         if (ExceptionExtensionGetmessage > i) {
           iterator.remove();
           if (!iterator.hasNext())
@@ -462,10 +462,10 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
       String str = "Writing Offsets:\n";
       for (byte b = 0; b < arrayOfDouble1.length; b++) {
         if (b < arrayList.size()) {
-          aH aH = arrayList.get(b);
-          arrayOfDouble1[b][0] = aH.ExceptionInVPackage();
-          arrayOfDouble2[b][0] = aH.l();
-          str = str + aH.ExceptionInVPackage() + ", len=" + aH.l() + "\n";
+          SerializableImpl SerializableImpl = arrayList.get(b);
+          arrayOfDouble1[b][0] = SerializableImpl.ExceptionInVPackage();
+          arrayOfDouble2[b][0] = SerializableImpl.l();
+          str = str + SerializableImpl.ExceptionInVPackage() + ", len=" + SerializableImpl.l() + "\n";
         } else {
           arrayOfDouble1[b][0] = this.m;
           arrayOfDouble2[b][0] = 0.0D;
@@ -481,8 +481,8 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
     } 
   }
   
-  private boolean ExceptionInVPackage(ArrayList paramArrayList, aH paramaH) {
-    for (aH aH1 : paramArrayList) {
+  private boolean ExceptionInVPackage(ArrayList paramArrayList, SerializableImpl paramaH) {
+    for (SerializableImpl aH1 : paramArrayList) {
       if (aH1.ExceptionInVPackage() >= paramaH.ExceptionInVPackage() && aH1.ExceptionInVPackage() + aH1.l() <= paramaH.ExceptionInVPackage() + paramaH.l())
         return true; 
     } 
@@ -490,25 +490,25 @@ public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   }
   
   public void close() {
-    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this);
     super.close();
   }
   
   private ArrayList q() {
-    ArrayList<aH> arrayList = new ArrayList();
+    ArrayList<SerializableImpl> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < this.f.getSize(); b1++) {
       z z = this.f.get(b1);
       ArrayList arrayList1 = z.ExceptionInVPackage();
-      for (aH aH : arrayList1) {
-        if (!aH.aL().equals("dataLogTime") && !ExceptionInVPackage(arrayList, aH))
-          arrayList.add(aH); 
+      for (SerializableImpl SerializableImpl : arrayList1) {
+        if (!SerializableImpl.aL().equals("dataLogTime") && !ExceptionInVPackage(arrayList, SerializableImpl))
+          arrayList.add(SerializableImpl); 
       } 
     } 
     arrayList = i.ExceptionInVPackage(this.ExceptionInVPackage, arrayList);
     for (byte b2 = 0; b2 < arrayList.size(); b2++) {
       for (int i = b2 + 1; i < arrayList.size(); i++) {
-        aH aH1 = arrayList.get(b2);
-        aH aH2 = arrayList.get(i);
+        SerializableImpl aH1 = arrayList.get(b2);
+        SerializableImpl aH2 = arrayList.get(i);
         if (aH1.ExceptionInVPackage() > aH2.ExceptionInVPackage()) {
           arrayList.set(b2, aH2);
           arrayList.set(i, aH1);

@@ -1,13 +1,13 @@
 package S;
 
 import G.T;
-import W.ap;
+import W.WInterfaceAp;
 import d.DComponentCharlie;
 import d.HashMapUsingArrayList;
 import d.DInterfaceMike;
 
 public class SInterfaceNovember extends h implements k {
-  private ap DComponentCharlie = null;
+  private WInterfaceAp DComponentCharlie = null;
   
   private String d = null;
   
@@ -20,11 +20,11 @@ public class SInterfaceNovember extends h implements k {
     i(paramString);
   }
   
-  public ap h() {
+  public WInterfaceAp h() {
     return this.DComponentCharlie;
   }
   
-  public void a(ap paramap) {
+  public void a(WInterfaceAp paramap) {
     this.DComponentCharlie = paramap;
   }
   

@@ -2,17 +2,17 @@ package L;
 
 import ax.CloneableImplInAxPackage;
 import ax.ExceptionInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SelectExpressionFunction extends ac {
-  ab a;
+public class SelectExpressionFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
   List b = new ArrayList();
   
-  public N(ab paramab, List paramList) {
+  public N(AxInterfaceAb paramab, List paramList) {
     this.a = paramab;
     this.b = paramList;
   }
@@ -20,7 +20,7 @@ public class SelectExpressionFunction extends ac {
   public double a(CloneableImplInAxPackage paramS) {
     int i = (int)Math.round(this.a.b(paramS));
     try {
-      return ((ab)this.b.get(i)).b(paramS);
+      return ((AxInterfaceAb)this.b.get(i)).b(paramS);
     } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
       throw new ExceptionInAxPackage("IndexOutOfBounds! index=" + i + ", function: " + toString());
     } 
@@ -34,7 +34,7 @@ public class SelectExpressionFunction extends ac {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("selectExpression( ");
     stringBuilder.append(this.a.toString());
-    for (ab ab1 : this.b) {
+    for (AxInterfaceAb ab1 : this.b) {
       stringBuilder.append(", ");
       stringBuilder.append(ab1.toString());
     } 

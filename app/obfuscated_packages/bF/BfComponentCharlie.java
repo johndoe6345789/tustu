@@ -1,26 +1,26 @@
 package bF;
 
 import G.B;
-import G.db;
-import G.dj;
+import G.GInterfaceDb;
+import G.GInterfaceDj;
 import c.CInterfaceEcho;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public BfComponentCharlielass BfComponentCharlie implements C {
-  private db c = (db)new G.c("");
+  private GInterfaceDb c = (GInterfaceDb)new G.c("");
   
   double[] a = new double[8];
   
   double[] b = new double[8];
   
-  private dj d = (dj)new B(0.0D);
+  private GInterfaceDj d = (GInterfaceDj)new B(0.0D);
   
-  private dj CInterfaceEcho = (dj)new B(Double.MIN_VALUE);
+  private GInterfaceDj CInterfaceEcho = (GInterfaceDj)new B(Double.MIN_VALUE);
   
-  private dj f = (dj)new B(Double.MAX_VALUE);
+  private GInterfaceDj f = (GInterfaceDj)new B(Double.MAX_VALUE);
   
-  private dj g = (dj)new B(1.0D);
+  private GInterfaceDj g = (GInterfaceDj)new B(1.0D);
   
   private CInterfaceEcho h = null;
   
@@ -98,19 +98,19 @@ public BfComponentCharlielass BfComponentCharlie implements C {
     return this.b[paramInt];
   }
   
-  public void a(dj paramdj) {
+  public void a(GInterfaceDj paramdj) {
     this.d = paramdj;
   }
   
-  public void b(dj paramdj) {
+  public void b(GInterfaceDj paramdj) {
     this.CInterfaceEcho = paramdj;
   }
   
-  public void c(dj paramdj) {
+  public void c(GInterfaceDj paramdj) {
     this.f = paramdj;
   }
   
-  public void a(db paramdb) {
+  public void a(GInterfaceDb paramdb) {
     this.c = paramdb;
   }
   
@@ -118,7 +118,7 @@ public BfComponentCharlielass BfComponentCharlie implements C {
     return this.g.a(paramInt);
   }
   
-  public void d(dj paramdj) {
+  public void d(GInterfaceDj paramdj) {
     this.g = paramdj;
   }
   

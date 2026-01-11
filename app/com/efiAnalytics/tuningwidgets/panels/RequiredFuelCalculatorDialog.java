@@ -1,11 +1,11 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import bH.X;
-import bt.bZ;
+import bt.BtInterfaceBz;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.do;
 import com.efiAnalytics.ui.et;
@@ -40,7 +40,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   
   JRadioButton ExceptionPrintstacktrace = null;
   
-  private bZ ExceptionExtensionGetmessage = null;
+  private BtInterfaceBz ExceptionExtensionGetmessage = null;
   
   private et k = null;
   
@@ -48,7 +48,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   
   boolean i = false;
   
-  public an(Window paramWindow, R paramR, et paramet, bZ parambZ) {
+  public an(Window paramWindow, R paramR, et paramet, BtInterfaceBz parambZ) {
     super(paramWindow, ExceptionPrintstacktrace.b("Required Fuel Calculator"));
     this.k = paramet;
     this.h = paramR;
@@ -88,8 +88,8 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     jPanel.add((Component)this.a);
     String str = "enginesize";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
-      this.a.setText(aM.e(this.h.p()));
+      Manager Manager = this.h.c(str);
+      this.a.setText(Manager.e(this.h.p()));
       this.i = true;
       this.a.a = true;
     } else {
@@ -100,8 +100,8 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     jPanel.add((Component)this.b);
     str = "nCylinders";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
-      this.b.setText(aM.e(this.h.p()));
+      Manager Manager = this.h.c(str);
+      this.b.setText(Manager.e(this.h.p()));
     } else {
       this.b.setText(b("nCylinders", "8"));
     } 
@@ -109,8 +109,8 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     jPanel.add((Component)this.c);
     str = "staged_pri_size";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
-      this.c.setText(aM.e(this.h.p()));
+      Manager Manager = this.h.c(str);
+      this.c.setText(Manager.e(this.h.p()));
       this.i = true;
       this.c.a = true;
     } else {
@@ -121,8 +121,8 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     jPanel.add((Component)this.d);
     str = "stoich";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
-      this.d.setText(aM.e(this.h.p()));
+      Manager Manager = this.h.c(str);
+      this.d.setText(Manager.e(this.h.p()));
     } else {
       this.d.setText(b("afr", "14.7"));
     } 
@@ -238,9 +238,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     d1 = d9 / d10 / 10.0D;
     String str = "enginesize";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
+      Manager Manager = this.h.c(str);
       try {
-        aM.a(this.h.h(), d4 * 16.38706D);
+        Manager.a(this.h.h(), d4 * 16.38706D);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
@@ -249,9 +249,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } 
     str = "nCylinders";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
+      Manager Manager = this.h.c(str);
       try {
-        aM.a(this.h.h(), i);
+        Manager.a(this.h.h(), i);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
@@ -260,9 +260,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } 
     str = "staged_pri_size";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
+      Manager Manager = this.h.c(str);
       try {
-        aM.a(this.h.h(), d5 * 10.5D);
+        Manager.a(this.h.h(), d5 * 10.5D);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
@@ -271,9 +271,9 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } 
     str = "stoich";
     if (this.h.c(str) != null) {
-      aM aM = this.h.c(str);
+      Manager Manager = this.h.c(str);
       try {
-        aM.a(this.h.h(), d6);
+        Manager.a(this.h.h(), d6);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
@@ -298,7 +298,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     return (str == null || str.equals("")) ? paramString2 : str;
   }
   
-  public void a(bZ parambZ) {
+  public void a(BtInterfaceBz parambZ) {
     this.ExceptionExtensionGetmessage = parambZ;
   }
 }

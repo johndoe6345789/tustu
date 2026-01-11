@@ -2,7 +2,7 @@ package aR;
 
 import G.R;
 import G.T;
-import G.bM;
+import G.ExceptionprintstacktraceInGPackage;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import aE.ExceptionInVPackage;
@@ -123,7 +123,7 @@ public class ArInterfaceAlpha implements cY, DComponentCharlie {
     B b = new B(this, paramActionListener);
     List list = j();
     for (String str : list) {
-      JMenuItem jMenuItem = new JMenuItem(bM.DComponentCharlie(T.ExceptionInVPackage().DComponentCharlie(), str));
+      JMenuItem jMenuItem = new JMenuItem(ExceptionprintstacktraceInGPackage.DComponentCharlie(T.ExceptionInVPackage().DComponentCharlie(), str));
       jMenuItem.setActionCommand(str);
       jMenuItem.addActionListener(b);
       jMenu.add(jMenuItem);

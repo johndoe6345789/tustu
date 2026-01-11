@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import javax.swing.JLabel;
 
 class JLabelExtensionInBrPackage extends JLabel {
-  G(s params) {}
+  ad(P paramP) {}
   
   public void paint(Graphics paramGraphics) {
     paramGraphics.setColor(getBackground());
@@ -14,7 +14,7 @@ class JLabelExtensionInBrPackage extends JLabel {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/G.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/ad.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

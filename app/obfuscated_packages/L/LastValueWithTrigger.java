@@ -1,17 +1,17 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LastValueWithTrigger extends ac {
-  ab a;
+public class LastValueWithTrigger extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c = null;
+  AxInterfaceAb c = null;
   
   int d = Integer.MIN_VALUE;
   
@@ -19,13 +19,13 @@ public class LastValueWithTrigger extends ac {
   
   double f = Double.NaN;
   
-  protected F(ab paramab1, ab paramab2) {
+  protected F(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
     this.d = 1;
   }
   
-  protected F(ab paramab1, ab paramab2, ab paramab3) {
+  protected F(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
     this.a = paramab2;
     this.b = paramab1;
     this.c = paramab3;

@@ -3,9 +3,9 @@ package ae;
 import A.IO;
 import A.AInterfaceGolf;
 import G.J;
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import G.IO;
 import bH.X;
 import bH.c;
@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class IOInAePackage implements AInterfaceGolf {
   private IO d = null;
   
-  private bT e = null;
+  private AeInterfaceMikeTostring e = null;
   
   q a = null;
   
@@ -106,8 +106,8 @@ public class IOInAePackage implements AInterfaceGolf {
   private byte[] a(byte[] paramArrayOfbyte) {
     if (this.a.b(this.e) == null)
       return paramArrayOfbyte; 
-    cV cV = this.a.b(this.e);
-    return cV.a(paramArrayOfbyte);
+    GInterfaceCv GInterfaceCv = this.a.b(this.e);
+    return GInterfaceCv.a(paramArrayOfbyte);
   }
   
   private void a(String paramString, byte[] paramArrayOfbyte) {
@@ -126,16 +126,16 @@ public class IOInAePackage implements AInterfaceGolf {
   private byte[] a(byte[] paramArrayOfbyte1, byte[] paramArrayOfbyte2) {
     if (this.a.a(this.e) == null)
       return paramArrayOfbyte2; 
-    cR cR = this.a.a(this.e);
-    if (cR.a(paramArrayOfbyte1, paramArrayOfbyte2))
-      return cR.a(paramArrayOfbyte2); 
-    String str = cR.c();
+    GInterfaceCr GInterfaceCr = this.a.a(this.e);
+    if (GInterfaceCr.a(paramArrayOfbyte1, paramArrayOfbyte2))
+      return GInterfaceCr.a(paramArrayOfbyte2); 
+    String str = GInterfaceCr.c();
     v v = new v(str);
-    v.a(cR.b(cR.d(paramArrayOfbyte2)));
+    v.a(GInterfaceCr.b(GInterfaceCr.d(paramArrayOfbyte2)));
     throw v;
   }
   
-  private cR b() {
+  private GInterfaceCr b() {
     return (this.a.a(this.e) == null) ? null : this.a.a(this.e);
   }
   

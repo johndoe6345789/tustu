@@ -1,8 +1,8 @@
 package W;
 
 import G.R;
-import G.bP;
-import G.bQ;
+import G.IOInGPackage;
+import G.GInterfaceBq;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.t;
@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class EncodedDataLoader implements bQ {
+class EncodedDataLoader implements GInterfaceBq {
   File a;
   
   File b;
@@ -24,7 +24,7 @@ class EncodedDataLoader implements bQ {
     this.b = paramFile1;
   }
   
-  public bP a(String paramString1, String paramString2) {
+  public IOInGPackage a(String paramString1, String paramString2) {
     if (this.b == null)
       throw new IOException("Cache Dir not set! Cannot load Encoded Data."); 
     if (paramString2 != null) {
@@ -34,7 +34,7 @@ class EncodedDataLoader implements bQ {
           String str = t.c(file);
           if (paramString2.equals(str)) {
             byte[] arrayOfByte = d.a(file);
-            bP bP1 = new bP(paramString1);
+            IOInGPackage bP1 = new IOInGPackage(paramString1);
             bP1.a(arrayOfByte);
             return bP1;
           } 
@@ -46,8 +46,8 @@ class EncodedDataLoader implements bQ {
     } 
     if (this.a == null)
       throw new IOException("Ini File not set! Cannot load Encoded Data from ini."); 
-    bP bP = this.c.C(paramString1);
-    if (bP == null) {
+    IOInGPackage IOInGPackage = this.c.C(paramString1);
+    if (IOInGPackage == null) {
       ab ab = new ab();
       try {
         ab.a(this.c, this.a.getAbsolutePath(), paramString1);
@@ -55,10 +55,10 @@ class EncodedDataLoader implements bQ {
         Logger.getLogger(f.class.getName()).log(Level.SEVERE, ExceptionPrintstacktrace.getMessage(), (Throwable)ExceptionPrintstacktrace);
         throw new IOException(ExceptionPrintstacktrace.getMessage());
       } 
-      bP = this.c.C(paramString1);
+      IOInGPackage = this.c.C(paramString1);
     } 
-    if (bP != null) {
-      byte[] arrayOfByte = bP.a();
+    if (IOInGPackage != null) {
+      byte[] arrayOfByte = IOInGPackage.a();
       String str = t.a(arrayOfByte);
       if (!str.equalsIgnoreCase(paramString2)) {
         D.a("Data Checksum does not match the ini file, caching will not work!!!!!!!! INI MD5: " + paramString2 + ", calc md5: " + str);
@@ -66,7 +66,7 @@ class EncodedDataLoader implements bQ {
       } 
       File file = new File(this.b, paramString2);
       d.a(file, arrayOfByte);
-      return bP;
+      return IOInGPackage;
     } 
     D.b("EncodeData '" + paramString1 + "' not found in cache or ini. Returning null");
     return null;
@@ -75,8 +75,8 @@ class EncodedDataLoader implements bQ {
   public File b(String paramString1, String paramString2) {
     File file = new File(this.b, paramString2);
     if (!file.exists()) {
-      bP bP = a(paramString1, paramString2);
-      byte[] arrayOfByte = bP.a();
+      IOInGPackage IOInGPackage = a(paramString1, paramString2);
+      byte[] arrayOfByte = IOInGPackage.a();
       d.a(file, arrayOfByte);
     } 
     return file;

@@ -2,39 +2,39 @@ package L;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.aI;
-import G.cq;
-import G.cu;
+import G.SerializableImpl;
+import G.GInterfaceAi;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ChannelValueByOffset extends ac implements cq {
-  aI ExceptionInVPackage;
+public class ChannelValueByOffset extends AbstractInAxPackage implements GComponentCq {
+  GInterfaceAi ExceptionInVPackage;
   
-  ab b;
+  AxInterfaceAb b;
   
   int c = -1;
   
-  ab d = null;
+  AxInterfaceAb d = null;
   
   int e = -1;
   
-  aH f = null;
+  SerializableImpl f = null;
   
   double g = Double.NaN;
   
-  public s(ab paramab1, ab paramab2) {
+  public s(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public s(aI paramaI, ab paramab) {
+  public s(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.ExceptionInVPackage = paramaI;
     this.b = paramab;
   }
@@ -46,7 +46,7 @@ public class ChannelValueByOffset extends ac implements cq {
       for (String str : arrayOfString) {
         R r = T.ExceptionInVPackage().c(str);
         if (r.O().x() == d) {
-          this.ExceptionInVPackage = (aI)r;
+          this.ExceptionInVPackage = (GInterfaceAi)r;
           this.e = (int)d;
           break;
         } 
@@ -57,16 +57,16 @@ public class ChannelValueByOffset extends ac implements cq {
       return Double.NaN; 
     int i = (int)this.b.b(paramS);
     if (this.c == -1 || i != this.c || this.f == null) {
-      cu.ExceptionInVPackage().ExceptionInVPackage(this);
-      Iterator<aH> iterator = this.ExceptionInVPackage.K().q();
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
+      Iterator<SerializableImpl> iterator = this.ExceptionInVPackage.K().q();
       while (iterator.hasNext()) {
-        aH aH1 = iterator.next();
+        SerializableImpl aH1 = iterator.next();
         if (aH1.b().equals("scalar") && aH1.ExceptionInVPackage() == i) {
           this.f = aH1;
           this.c = i;
           this.g = this.f.o();
           try {
-            cu.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.f.aL(), this);
+            ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage.c(), this.f.aL(), this);
             return aH1.o();
           } catch (ExceptionInVPackage ExceptionInVPackage) {
             Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);

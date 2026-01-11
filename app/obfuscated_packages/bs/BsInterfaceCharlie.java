@@ -1,8 +1,8 @@
 package bs;
 
 import G.R;
-import G.dp;
-import W.ab;
+import G.GInterfaceDp;
+import W.ManagerUsingFile;
 import aE.PropertiesExtension;
 import aE.AeInterfaceEcho;
 import java.util.ArrayList;
@@ -31,10 +31,10 @@ public class BsInterfaceCharlie implements AeInterfaceEcho {
     return arrayList;
   }
   
-  public dp PropertiesExtension(R paramR, String paramString) {
-    dp dp = paramR.t(paramString);
-    if (dp != null)
-      return dp; 
+  public GInterfaceDp PropertiesExtension(R paramR, String paramString) {
+    GInterfaceDp GInterfaceDp = paramR.t(paramString);
+    if (GInterfaceDp != null)
+      return GInterfaceDp; 
     b(paramR);
     return paramR.t(paramString);
   }
@@ -77,8 +77,8 @@ public class BsInterfaceCharlie implements AeInterfaceEcho {
   private void b(R paramR, String paramString) {
     boolean bool = (PropertiesExtension.PropertiesExtension().c(PropertiesExtension.bq, PropertiesExtension.br) && PropertiesExtension.PropertiesExtension().c(PropertiesExtension.bs, PropertiesExtension.bt)) ? true : false;
     if (!bool) {
-      ab ab = new ab();
-      ab.PropertiesExtension(paramR, paramString, false);
+      ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
+      ManagerUsingFile.PropertiesExtension(paramR, paramString, false);
     } 
   }
   

@@ -1,7 +1,7 @@
 package aG;
 
 import G.R;
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import V.ExceptionPrintstacktrace;
 import bH.D;
@@ -17,7 +17,7 @@ public AgInterfaceCharlielass AgInterfaceCharlie {
   
   private static boolean a(R paramR, String paramString) {
     try {
-      return (i.a((aI)paramR, paramString) != 0.0D);
+      return (i.a((GInterfaceAi)paramR, paramString) != 0.0D);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.d("Unable to get value for '" + paramString + "' Assumed to be disabled.");
       return false;

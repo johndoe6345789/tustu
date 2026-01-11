@@ -2,35 +2,35 @@ package L;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.aI;
+import G.SerializableImpl;
+import G.GInterfaceAi;
 import ax.CloneableImplInAxPackage;
 import ax.ExceptionInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.Iterator;
 
-public class ChannelMinByOffset extends ac {
-  aI a;
+public class ChannelMinByOffset extends AbstractInAxPackage {
+  GInterfaceAi a;
   
-  ab b;
+  AxInterfaceAb b;
   
   int c = -1;
   
-  ab d = null;
+  AxInterfaceAb d = null;
   
   int e = -1;
   
-  aH f = null;
+  SerializableImpl f = null;
   
   double g = Double.NaN;
   
-  public v(ab paramab1, ab paramab2) {
+  public v(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public v(aI paramaI, ab paramab) {
+  public v(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.a = paramaI;
     this.b = paramab;
   }
@@ -42,7 +42,7 @@ public class ChannelMinByOffset extends ac {
       for (String str : arrayOfString) {
         R r = T.a().c(str);
         if (r.O().x() == d) {
-          this.a = (aI)r;
+          this.a = (GInterfaceAi)r;
           this.e = (int)d;
           break;
         } 
@@ -53,9 +53,9 @@ public class ChannelMinByOffset extends ac {
       return Double.NaN; 
     int i = (int)this.b.b(paramS);
     if (this.c == -1 || i != this.c || this.f == null) {
-      Iterator<aH> iterator = this.a.K().q();
+      Iterator<SerializableImpl> iterator = this.a.K().q();
       while (iterator.hasNext()) {
-        aH aH1 = iterator.next();
+        SerializableImpl aH1 = iterator.next();
         if (aH1.b().equals("scalar") && aH1.a() == i) {
           this.f = aH1;
           this.c = i;

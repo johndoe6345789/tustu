@@ -1,17 +1,17 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class RecordNumberAlternate extends ac {
-  ab a;
+public class RecordNumberAlternate extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
   double b = Double.NaN;
   
   int c = 0;
   
-  protected L(ab paramab) {
+  protected L(AxInterfaceAb paramab) {
     this.a = paramab;
   }
   

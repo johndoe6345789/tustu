@@ -1,13 +1,13 @@
-package br;
+package GInterfaceBr;
 
 import G.R;
-import G.ah;
-import G.bM;
-import G.br;
-import G.bs;
-import G.bv;
-import G.de;
-import G.dm;
+import G.GInterfaceAh;
+import G.ExceptionprintstacktraceInGPackage;
+import G.GInterfaceBr;
+import G.GComponentBs;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.GInterfaceDe;
+import G.GInterfaceDm;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import aE.ExceptionInVPackage;
@@ -15,7 +15,7 @@ import bH.D;
 import bH.J;
 import bH.K;
 import bH.p;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import bt.d;
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.apps.ts.dashboard.Z;
@@ -78,7 +78,7 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
   
   m h = null;
   
-  dm i = null;
+  GInterfaceDm i = null;
   
   R j = null;
   
@@ -98,10 +98,10 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
   
   boolean p = false;
   
-  public UIWindowClose(R paramR, dm paramdm) {
+  public UIWindowClose(R paramR, GInterfaceDm paramdm) {
     this.j = paramR;
     this.i = paramdm;
-    this.k = bM.ExceptionInVPackage(paramR, paramdm.b());
+    this.k = ExceptionprintstacktraceInGPackage.ExceptionInVPackage(paramR, paramdm.b());
     this.d = new dQ((Properties)ExceptionInVPackage.A(), "VeAnalyzeConsole." + paramdm.b());
     try {
       if (this.k == null || this.k.equals("") || p.ExceptionInVPackage(this.k, paramR))
@@ -118,8 +118,8 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
     this.e.setOrientation(1);
     this.f.setOrientation(0);
     try {
-      if (this.i instanceof de) {
-        this.ExceptionPrintstacktrace = new P(this.j, (de)this.i);
+      if (this.i instanceof GInterfaceDe) {
+        this.ExceptionPrintstacktrace = new P(this.j, (GInterfaceDe)this.i);
       } else {
         this.ExceptionPrintstacktrace = new s(this.j, this.i);
       } 
@@ -130,17 +130,17 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
     this.f.setOneTouchExpandable(true);
     this.e.setOneTouchExpandable(true);
     this.f.setTopComponent((Component)this.ExceptionPrintstacktrace);
-    br br = ExceptionInVPackage(this.j, this.i);
-    bh bh = new bh(this.j, (bv)br);
-    ExceptionInVPackage((bc)bh);
-    this.f.setBottomComponent((Component)bh);
+    GInterfaceBr GInterfaceBr = ExceptionInVPackage(this.j, this.i);
+    ExceptionEqualsinaipackage ExceptionEqualsinaipackage = new ExceptionEqualsinaipackage(this.j, (ArrayListExceptionprintstacktraceInGPackage)GInterfaceBr);
+    ExceptionInVPackage((bc)ExceptionEqualsinaipackage);
+    this.f.setBottomComponent((Component)ExceptionEqualsinaipackage);
     if (r.i.ExceptionInVPackage().ExceptionInVPackage("gd09ifdspokrwpo3209") || !ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.bN, ExceptionInVPackage.bO)) {
-      this.f.remove((Component)bh);
+      this.f.remove((Component)ExceptionEqualsinaipackage);
       this.f.setDividerSize(0);
-      bh = null;
+      ExceptionEqualsinaipackage = null;
       this.o = true;
     } 
-    if (!r.i.ExceptionInVPackage().ExceptionInVPackage("h98oiu32lkpk3209") && ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.bL, ExceptionInVPackage.bM)) {
+    if (!r.i.ExceptionInVPackage().ExceptionInVPackage("h98oiu32lkpk3209") && ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.bL, ExceptionInVPackage.ExceptionprintstacktraceInGPackage)) {
       this.b = new x(this.j);
       this.b.setName("VeAnalyzeConsole." + this.i.b());
       KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher((KeyEventDispatcher)this.b.X());
@@ -262,42 +262,42 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
       this.d.ExceptionInVPackage("verticalSplitPos", eJ.b(j) + ""); 
   }
   
-  private br ExceptionInVPackage(R paramR, dm paramdm) {
-    br br = new br();
-    bs bs = ExceptionInVPackage(paramR, paramdm.ExceptionPrintstacktrace());
-    if (bs != null)
-      br.ExceptionInVPackage(bs); 
-    bs = ExceptionInVPackage(paramR, paramdm.h());
-    if (bs != null)
-      br.ExceptionInVPackage(bs); 
-    bs = ExceptionInVPackage(paramR, paramdm.f());
-    if (bs != null)
-      br.ExceptionInVPackage(bs); 
-    bs = ExceptionInVPackage(paramR, paramdm.e());
-    if (bs != null)
-      br.ExceptionInVPackage(bs); 
-    return br;
+  private GInterfaceBr ExceptionInVPackage(R paramR, GInterfaceDm paramdm) {
+    GInterfaceBr GInterfaceBr = new GInterfaceBr();
+    GComponentBs GComponentBs = ExceptionInVPackage(paramR, paramdm.ExceptionPrintstacktrace());
+    if (GComponentBs != null)
+      GInterfaceBr.ExceptionInVPackage(GComponentBs); 
+    GComponentBs = ExceptionInVPackage(paramR, paramdm.h());
+    if (GComponentBs != null)
+      GInterfaceBr.ExceptionInVPackage(GComponentBs); 
+    GComponentBs = ExceptionInVPackage(paramR, paramdm.f());
+    if (GComponentBs != null)
+      GInterfaceBr.ExceptionInVPackage(GComponentBs); 
+    GComponentBs = ExceptionInVPackage(paramR, paramdm.e());
+    if (GComponentBs != null)
+      GInterfaceBr.ExceptionInVPackage(GComponentBs); 
+    return GInterfaceBr;
   }
   
-  private bs ExceptionInVPackage(R paramR, String paramString) {
+  private GComponentBs ExceptionInVPackage(R paramR, String paramString) {
     aa aa = new aa();
-    ah ah = aa.ExceptionInVPackage(paramR, paramString);
-    bs bs = new bs();
-    if (ah != null) {
+    GInterfaceAh GInterfaceAh = aa.ExceptionInVPackage(paramR, paramString);
+    GComponentBs GComponentBs = new GComponentBs();
+    if (GInterfaceAh != null) {
       try {
-        bs.ExceptionInVPackage(ah.i());
-        bs.ExceptionInVPackage(ah.ExceptionInVPackage());
-        bs.b(ah.d());
-        bs.b(ah.j().ExceptionInVPackage());
+        GComponentBs.ExceptionInVPackage(GInterfaceAh.i());
+        GComponentBs.ExceptionInVPackage(GInterfaceAh.ExceptionInVPackage());
+        GComponentBs.b(GInterfaceAh.d());
+        GComponentBs.b(GInterfaceAh.j().ExceptionInVPackage());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
     } else {
-      bs.b(true);
-      bs.ExceptionInVPackage(true);
-      bs.ExceptionInVPackage(paramString);
+      GComponentBs.b(true);
+      GComponentBs.ExceptionInVPackage(true);
+      GComponentBs.ExceptionInVPackage(paramString);
     } 
-    return bs;
+    return GComponentBs;
   }
   
   public void close() {
@@ -394,7 +394,7 @@ public class UIWindowClose extends d implements bc, ExceptionInVPackage {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/i.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/GInterfaceBr/i.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

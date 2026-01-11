@@ -1,8 +1,8 @@
 package bs;
 
-import G.cq;
+import G.GComponentCq;
 
-class BsComponentEcho implements cq {
+class BsComponentEcho implements GComponentCq {
   E(D paramD) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}

@@ -1,11 +1,11 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class MinFunction extends ac {
+public class MinFunction extends AbstractInAxPackage {
   List a;
   
   protected I(List paramList) {
@@ -14,8 +14,8 @@ public class MinFunction extends ac {
   
   public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = Double.MAX_VALUE;
-    for (ab ab : this.a) {
-      double d1 = ab.b(paramS);
+    for (AxInterfaceAb AxInterfaceAb : this.a) {
+      double d1 = AxInterfaceAb.b(paramS);
       if (d1 < d)
         d = d1; 
     } 
@@ -30,8 +30,8 @@ public class MinFunction extends ac {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("min( ");
     for (byte b = 0; b < this.a.size(); b++) {
-      ab ab = this.a.get(b);
-      stringBuilder.append(ab.toString());
+      AxInterfaceAb AxInterfaceAb = this.a.get(b);
+      stringBuilder.append(AxInterfaceAb.toString());
       if (b + 1 < this.a.size())
         stringBuilder.append(", "); 
     } 

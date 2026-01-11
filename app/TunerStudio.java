@@ -1,7 +1,7 @@
 import A.AInterfaceVictor;
 import V.ExceptionInVPackage;
-import aP.bz;
-import aP.dl;
+import aP.Ioinadpackage;
+import aP.WindowListenerAzinterfacecharlie;
 import aP.NetworkHashMap;
 import bH.D;
 import bH.J;
@@ -27,7 +27,7 @@ import r.ExceptionInVPackage;
 import r.ThreadedFile;
 
 public class TunerStudio {
-  static dl ExceptionInVPackage = null;
+  static WindowListenerAzinterfacecharlie ExceptionInVPackage = null;
   
   static String b = "AppDebug";
   
@@ -53,7 +53,7 @@ public class TunerStudio {
     } 
     if (J.NetworkHashMap())
       ExceptionInVPackage(); 
-    (new bz()).ExceptionInVPackage(paramArrayOfString, str);
+    (new Ioinadpackage()).ExceptionInVPackage(paramArrayOfString, str);
     boolean bool1 = true;
     if (paramArrayOfString.length > 0 && paramArrayOfString[0].equals("-noSplash")) {
       System.out.println("Splashscreen suppressed.");

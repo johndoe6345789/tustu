@@ -1,12 +1,12 @@
 package be;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import java.util.Comparator;
 
 class ComparatorImplInBePackage implements Comparator {
   l(j paramj) {}
   
-  public int a(ak paramak1, ak paramak2) {
+  public int a(Exceptionprintstacktrace paramak1, Exceptionprintstacktrace paramak2) {
     return paramak1.a().toString().compareToIgnoreCase(paramak2.a().toString());
   }
 }

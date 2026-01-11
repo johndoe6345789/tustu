@@ -1,10 +1,10 @@
 package aF;
 
 import G.R;
-import G.aD;
-import G.aG;
-import G.aH;
-import G.bT;
+import G.SerializableExtension;
+import G.GInterfaceAg;
+import G.SerializableImpl;
+import G.AeInterfaceMikeTostring;
 import G.l;
 import V.ExceptionPrintstacktrace;
 import bH.D;
@@ -13,10 +13,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import z.SerialPortEventListenerUsingRXTXCommDriver;
 
-public class AfInterfaceAlpha implements aD, aG {
+public class AfInterfaceAlpha implements SerializableExtension, GInterfaceAg {
   R a = null;
   
-  aH b = null;
+  SerializableImpl b = null;
   
   int c = -1;
   
@@ -104,7 +104,7 @@ public class AfInterfaceAlpha implements aD, aG {
     return (a() + 255 - paramInt) % 256;
   }
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     if (paramString.equals(this.a.c())) {
       this.c = -1;
       this.a.O().s(0);

@@ -2,10 +2,10 @@ package bb;
 
 import G.R;
 import G.Y;
-import G.cB;
+import G.GInterfaceCb;
 import java.util.ArrayList;
 
-class BbInterfaceDelta implements cB {
+class BbInterfaceDelta implements GInterfaceCb {
   D(x paramx) {}
   
   public boolean a(ArrayList paramArrayList, R paramR, Y paramY, String paramString) {

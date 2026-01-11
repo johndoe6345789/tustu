@@ -1,23 +1,23 @@
 package L;
 
-import G.aI;
-import G.aM;
+import G.GInterfaceAi;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import ax.CloneableImplInAxPackage;
 import ax.ExceptionInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class ArrayLookupFunction extends ac {
-  ab a = null;
+public class ArrayLookupFunction extends AbstractInAxPackage {
+  AxInterfaceAb a = null;
   
-  ab b;
+  AxInterfaceAb b;
   
-  aM c = null;
+  Manager c = null;
   
-  aI d;
+  GInterfaceAi d;
   
-  public d(aI paramaI, ab paramab1, ab paramab2) {
+  public d(GInterfaceAi paramaI, AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
     this.d = paramaI;

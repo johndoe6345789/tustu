@@ -2,8 +2,8 @@ package aj;
 
 import G.R;
 import G.T;
-import G.ac;
-import G.cu;
+import G.SerializableImplExceptionprintstacktrace;
+import G.ManagerUsingArrayList;
 import W.j;
 import W.n;
 import bH.D;
@@ -25,18 +25,18 @@ public class AjInterfaceAlpha {
           D.d("EcuConfig '" + str1 + "' not found, using working config");
           r = T.a().c();
         } 
-        ac ac = a(r, str2);
-        if (ac != null)
+        SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = a(r, str2);
+        if (SerializableImplExceptionprintstacktrace != null)
           try {
-            cu.a().a(r.c(), ac.a(), j.d(paramInt));
+            ManagerUsingArrayList.a().a(r.c(), SerializableImplExceptionprintstacktrace.a(), j.d(paramInt));
           } catch (Exception exception) {} 
       }  
   }
   
-  private ac a(R paramR, String paramString) {
-    for (ac ac : paramR.g()) {
-      if (ac.b().equals(paramString))
-        return ac; 
+  private SerializableImplExceptionprintstacktrace a(R paramR, String paramString) {
+    for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : paramR.g()) {
+      if (SerializableImplExceptionprintstacktrace.b().equals(paramString))
+        return SerializableImplExceptionprintstacktrace; 
     } 
     return null;
   }

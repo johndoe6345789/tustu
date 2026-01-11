@@ -1,13 +1,13 @@
 package bh;
 
 import G.R;
-import G.aH;
-import G.ct;
+import G.SerializableImpl;
+import G.GComponentCt;
 
-class BhInterfaceXray implements ct {
+class BhInterfaceXray implements GComponentCt {
   x(v paramv) {}
   
-  public boolean a(R paramR, aH paramaH) {
+  public boolean a(R paramR, SerializableImpl paramaH) {
     return (paramR.R() || !this.a.c.contains(paramaH));
   }
 }

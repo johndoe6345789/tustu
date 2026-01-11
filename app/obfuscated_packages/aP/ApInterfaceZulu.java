@@ -2,8 +2,8 @@ package aP;
 
 import G.R;
 import G.T;
-import G.aM;
-import G.aN;
+import G.Manager;
+import G.GInterfaceAn;
 import V.ExceptionPrintstacktrace;
 import aE.PropertiesExtension;
 import aE.CloneableImpl;
@@ -11,7 +11,7 @@ import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ApInterfaceZulu implements aN {
+public class ApInterfaceZulu implements GInterfaceAn {
   PropertiesExtension PropertiesExtension = null;
   
   public ApInterfaceZulu(PropertiesExtension parama) {
@@ -24,10 +24,10 @@ public class ApInterfaceZulu implements aN {
       D.b("Unable to update CAN ID, no EcuConfiguration found for " + paramString1);
       return;
     } 
-    aM aM = r.c(paramString2);
+    Manager Manager = r.c(paramString2);
     try {
       CloneableImpl CloneableImpl = this.PropertiesExtension.t(paramString1);
-      int i = (int)aM.j(r.p());
+      int i = (int)Manager.j(r.p());
       if (CloneableImpl != null) {
         CloneableImpl.PropertiesExtension(i);
       } else {

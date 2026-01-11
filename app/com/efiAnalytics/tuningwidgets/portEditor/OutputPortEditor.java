@@ -1,9 +1,9 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aM;
-import G.aS;
-import G.bq;
+import G.Manager;
+import G.ArrayListExceptionprintstacktrace;
+import G.GComponentBq;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import bH.D;
@@ -38,17 +38,17 @@ import s.ExceptionPrintstacktrace;
 public class OutputPortEditor extends JPanel implements bc {
   R a = null;
   
-  private aM o = null;
+  private Manager o = null;
   
-  private aM p = null;
+  private Manager p = null;
   
-  private aM q = null;
+  private Manager q = null;
   
-  private aM r = null;
+  private Manager r = null;
   
-  private aM s = null;
+  private Manager s = null;
   
-  private aM t = null;
+  private Manager t = null;
   
   private List u = new ArrayList();
   
@@ -66,7 +66,7 @@ public class OutputPortEditor extends JPanel implements bc {
   
   ExceptionExtensionGetmessage ExceptionPrintstacktrace = null;
   
-  aS h = null;
+  ArrayListExceptionprintstacktrace h = null;
   
   JLabel RInterfaceIndia = new JLabel(ExceptionPrintstacktrace.b("Active Delay"), 0);
   
@@ -80,7 +80,7 @@ public class OutputPortEditor extends JPanel implements bc {
   
   JButton n = null;
   
-  public OutputPortEditor(R paramR, aS paramaS) {
+  public OutputPortEditor(R paramR, ArrayListExceptionprintstacktrace paramaS) {
     this.h = paramaS;
     this.a = paramR;
     this.o = paramR.c(paramaS.d());
@@ -159,9 +159,9 @@ public class OutputPortEditor extends JPanel implements bc {
       JPanel jPanel = new JPanel();
       jPanel.setLayout(new GridLayout(0, 1));
       jPanel.add(this.RInterfaceIndia);
-      bq bq = new bq();
-      bq.b(paramaS.t());
-      this.e = new ExceptionPrintstacktrace(this, paramR, bq);
+      GComponentBq GComponentBq = new GComponentBq();
+      GComponentBq.b(paramaS.t());
+      this.e = new ExceptionPrintstacktrace(this, paramR, GComponentBq);
       jPanel.add((Component)this.e);
       jPanel6.add(jPanel);
     } 
@@ -169,14 +169,14 @@ public class OutputPortEditor extends JPanel implements bc {
       JPanel jPanel = new JPanel();
       jPanel.setLayout(new GridLayout(0, 1));
       jPanel.add(this.ExceptionExtensionGetmessage);
-      bq bq = new bq();
-      bq.b(paramaS.u());
-      this.f = new ExceptionPrintstacktrace(this, paramR, bq);
+      GComponentBq GComponentBq = new GComponentBq();
+      GComponentBq.b(paramaS.u());
+      this.f = new ExceptionPrintstacktrace(this, paramR, GComponentBq);
       jPanel.add((Component)this.f);
       jPanel6.add(jPanel);
     } 
     for (byte b2 = 0; b2 < this.u.size(); b2++) {
-      aM aM1 = this.u.get(b2);
+      Manager aM1 = this.u.get(b2);
       if (aM1 != null) {
         JPanel jPanel = new JPanel();
         jPanel.setLayout(new GridLayout(0, 1));
@@ -185,9 +185,9 @@ public class OutputPortEditor extends JPanel implements bc {
         } else {
           jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Attribute " + b2), 0));
         } 
-        bq bq = new bq();
-        bq.b(aM1.aL());
-        ExceptionPrintstacktrace g1 = new ExceptionPrintstacktrace(this, paramR, bq);
+        GComponentBq GComponentBq = new GComponentBq();
+        GComponentBq.b(aM1.aL());
+        ExceptionPrintstacktrace g1 = new ExceptionPrintstacktrace(this, paramR, GComponentBq);
         jPanel.add((Component)g1);
         this.l.add(g1);
         jPanel6.add(jPanel);

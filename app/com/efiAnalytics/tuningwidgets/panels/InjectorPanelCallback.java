@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import bt.bZ;
+import bt.BtInterfaceBz;
 
-class InjectorPanelCallback implements bZ {
+class InjectorPanelCallback implements BtInterfaceBz {
   aG(aF paramaF) {}
   
   public void b(String paramString) {

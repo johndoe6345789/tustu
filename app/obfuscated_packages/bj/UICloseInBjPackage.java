@@ -1,13 +1,13 @@
 package bj;
 
 import G.R;
-import G.bo;
+import G.GComponentBo;
 import V.ExceptionPrintstacktrace;
 import aG.ManagerUsingFTPClient;
 import bD.UIRemoteFileAccessClose;
 import bH.p;
-import bt.aV;
-import bt.ca;
+import bt.ExceptionUsingComponent;
+import bt.BtInterfaceCa;
 import bt.d;
 import bt.h;
 import com.efiAnalytics.remotefileaccess.RemoteFileAccess;
@@ -20,10 +20,10 @@ import java.util.logging.Logger;
 import javax.swing.JPanel;
 import s.ExceptionPrintstacktrace;
 
-public class UICloseInBjPackage extends d implements ca, h, bc {
+public class UICloseInBjPackage extends d implements BtInterfaceCa, h, bc {
   R a;
   
-  bo b;
+  GComponentBo b;
   
   ManagerUsingFTPClient c = null;
   
@@ -33,14 +33,14 @@ public class UICloseInBjPackage extends d implements ca, h, bc {
   
   JPanel f = null;
   
-  public UICloseInBjPackage(R paramR, bo parambo) {
+  public UICloseInBjPackage(R paramR, GComponentBo parambo) {
     this.a = paramR;
     this.b = parambo;
     setLayout(new BorderLayout());
     this.f = new JPanel();
     this.f.setLayout(new BorderLayout());
     if (parambo == null)
-      parambo = new bo(); 
+      parambo = new GComponentBo(); 
     this.c = new ManagerUsingFTPClient(paramR, parambo, aE.a.A().L());
     UIRemoteFileAccessClose UIRemoteFileAccessClose = new UIRemoteFileAccessClose((RemoteFileAccess)this.c, ExceptionPrintstacktrace.d());
     UIRemoteFileAccessClose.a(new b(this));
@@ -60,7 +60,7 @@ public class UICloseInBjPackage extends d implements ca, h, bc {
       try {
         bool = p.a(this.b.aJ(), this.a);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(aV.class.getName()).log(Level.WARNING, "Failed to evaluate enable condition", (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(ExceptionUsingComponent.class.getName()).log(Level.WARNING, "Failed to evaluate enable condition", (Throwable)ExceptionPrintstacktrace);
       } 
       if (isEnabled() && !bool) {
         setEnabled(false);
@@ -80,7 +80,7 @@ public class UICloseInBjPackage extends d implements ca, h, bc {
       try {
         bool = p.a(this.b.V(), this.a);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(aV.class.getName()).log(Level.WARNING, "Failed to evaluate visible condition", (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(ExceptionUsingComponent.class.getName()).log(Level.WARNING, "Failed to evaluate visible condition", (Throwable)ExceptionPrintstacktrace);
       } 
       if (isVisible() && !bool) {
         setVisible(false);

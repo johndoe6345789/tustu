@@ -2,9 +2,9 @@ package be;
 
 import G.Q;
 import G.R;
-import G.aH;
-import G.ac;
-import G.ah;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GInterfaceAh;
 import s.SComponentGolf;
 
 public class BeComponentRomeo {
@@ -15,7 +15,7 @@ public class BeComponentRomeo {
   public static String c = SComponentGolf.b("Data Log Field");
   
   public static Q a(String paramString, R paramR) {
-    return (Q)(paramString.equals(a) ? new aH(paramR.ac()) : (paramString.equals(b) ? new ah() : (paramString.equals(c) ? new ac() : null)));
+    return (Q)(paramString.equals(a) ? new SerializableImpl(paramR.SerializableImplExceptionprintstacktrace()) : (paramString.equals(b) ? new GInterfaceAh() : (paramString.equals(c) ? new SerializableImplExceptionprintstacktrace() : null)));
   }
 }
 

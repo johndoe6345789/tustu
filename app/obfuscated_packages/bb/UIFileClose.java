@@ -2,7 +2,7 @@ package bb;
 
 import G.R;
 import G.T;
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import G.l;
 import G.m;
 import V.ExceptionInVPackage;
@@ -132,7 +132,7 @@ public class UIFileClose extends JPanel implements AeInterfaceEcho, bc, fT {
     return true;
   }
   
-  private void ExceptionInVPackage(FileUsingHashMap paramk, bT parambT) {
+  private void ExceptionInVPackage(FileUsingHashMap paramk, AeInterfaceMikeTostring parambT) {
     File file1 = paramk.ExceptionInVPackage(parambT);
     if (file1 == null) {
       String str = "Unable to update project ECU Definition file. No proper match found in this firmware package.\nThe proper ECU Definition will be required on connect before reloading your tune.";
@@ -199,14 +199,14 @@ public class UIFileClose extends JPanel implements AeInterfaceEcho, bc, fT {
       throw new ExceptionInVPackage("There is no Main Configuration set, can not load calibration."); 
     this.b.C().ExceptionInVPackage(this.SComponentGolf);
     this.b.O().b(false);
-    bT bT = null;
+    AeInterfaceMikeTostring AeInterfaceMikeTostring = null;
     try {
       if (this.m.ExceptionInVPackage().FileUsingHashMap() != 3)
         this.m.ExceptionInVPackage().NetworkHashMap(); 
       byte b = 0;
       while (b < 3) {
-        bT = this.l.ExceptionInVPackage(this.m);
-        if (bT == null || (bT.ExceptionInVPackage()).length == 3) {
+        AeInterfaceMikeTostring = this.l.ExceptionInVPackage(this.m);
+        if (AeInterfaceMikeTostring == null || (AeInterfaceMikeTostring.ExceptionInVPackage()).length == 3) {
           bV.d(SComponentGolf.b("Is your Controller powered and boot jumper removed?") + "\n" + SComponentGolf.b("If so, try power cycling your controller."), this);
           b++;
         } 
@@ -221,9 +221,9 @@ public class UIFileClose extends JPanel implements AeInterfaceEcho, bc, fT {
       if (this.m.ExceptionInVPackage().FileUsingHashMap() == 3)
         this.m.ExceptionInVPackage().SComponentGolf(); 
     } 
-    if (bT == null)
+    if (AeInterfaceMikeTostring == null)
       throw new ExceptionInVPackage("Unable to read serial signature, can not restore calibration."); 
-    ExceptionInVPackage(this.FileUsingHashMap, bT);
+    ExceptionInVPackage(this.FileUsingHashMap, AeInterfaceMikeTostring);
     if (T.ExceptionInVPackage().c() != null)
       T.ExceptionInVPackage().c().C().c(); 
     NetworkHashMap();

@@ -1,7 +1,7 @@
 package ao;
 
 import V.ExceptionInVPackage;
-import ak.aE;
+import ak.AkInterfaceAe;
 import bH.X;
 import h.IOProperties;
 import java.util.ArrayList;
@@ -35,31 +35,31 @@ public class fI {
       return null; 
     fH fH = new fH(paramString);
     try {
-      aE aE = new aE(str, ExceptionInVPackage);
-      if (aE.ExceptionInVPackage())
-        fH.b(aE.b()); 
-      if (aE.ExceptionInVPackage())
-        fH.ExceptionInVPackage(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.b(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.ExceptionInVPackage(Boolean.valueOf(aE.b()).booleanValue()); 
-      if (aE.ExceptionInVPackage())
-        fH.c(aE.b()); 
-      if (aE.ExceptionInVPackage())
-        fH.c(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.d(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.b(Boolean.valueOf(aE.b()).booleanValue()); 
-      if (aE.ExceptionInVPackage())
-        fH.d(aE.b()); 
-      if (aE.ExceptionInVPackage())
-        fH.e(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.f(Double.parseDouble(aE.b())); 
-      if (aE.ExceptionInVPackage())
-        fH.c(Boolean.valueOf(aE.b()).booleanValue()); 
+      AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, ExceptionInVPackage);
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.b(AkInterfaceAe.b()); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.ExceptionInVPackage(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.b(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.ExceptionInVPackage(Boolean.valueOf(AkInterfaceAe.b()).booleanValue()); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.c(AkInterfaceAe.b()); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.c(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.d(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.b(Boolean.valueOf(AkInterfaceAe.b()).booleanValue()); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.d(AkInterfaceAe.b()); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.e(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.f(Double.parseDouble(AkInterfaceAe.b())); 
+      if (AkInterfaceAe.ExceptionInVPackage())
+        fH.c(Boolean.valueOf(AkInterfaceAe.b()).booleanValue()); 
       return fH;
     } catch (Exception exception) {
       exception.printStackTrace();

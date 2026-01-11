@@ -3,15 +3,15 @@ package L;
 import M.KalmanFilterUsingMatrix;
 import linear_algebra.Matrix;
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class SmoothFilteredFunction extends ac {
+public class SmoothFilteredFunction extends AbstractInAxPackage {
   private KalmanFilterUsingMatrix c;
 
-  private ab d;
+  private AxInterfaceAb d;
 
-  private ab e;
+  private AxInterfaceAb e;
 
   private double f = Double.NaN;
 
@@ -19,7 +19,7 @@ public class SmoothFilteredFunction extends ac {
 
   double b = Double.NaN;
 
-  public O(ab paramab1, ab paramab2) {
+  public O(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.e = paramab2;
     this.d = paramab1;
     double d1 = 50.0D;

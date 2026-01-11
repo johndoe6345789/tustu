@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 import V.ExceptionInVPackage;
-import ak.aE;
+import ak.AkInterfaceAe;
 import bH.D;
 import bH.I;
 import bH.X;
@@ -299,9 +299,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = ad();
     if (str == null)
       return; 
-    aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
-      aE aE1 = new aE(aE.b(), "\t");
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, "\n");
+    for (int i = getSelectedRow(); i < s.getRowCount() && AkInterfaceAe.ExceptionInVPackage(); i++) {
+      AkInterfaceAe aE1 = new AkInterfaceAe(AkInterfaceAe.b(), "\t");
       for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
@@ -323,9 +323,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = ad();
     if (str == null)
       return; 
-    aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
-      aE aE1 = new aE(aE.b(), "\t");
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, "\n");
+    for (int i = getSelectedRow(); i < s.getRowCount() && AkInterfaceAe.ExceptionInVPackage(); i++) {
+      AkInterfaceAe aE1 = new AkInterfaceAe(AkInterfaceAe.b(), "\t");
       for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
@@ -354,9 +354,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = ad();
     if (str == null)
       return; 
-    aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
-      aE aE1 = new aE(aE.b(), "\t");
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, "\n");
+    for (int i = getSelectedRow(); i < s.getRowCount() && AkInterfaceAe.ExceptionInVPackage(); i++) {
+      AkInterfaceAe aE1 = new AkInterfaceAe(AkInterfaceAe.b(), "\t");
       for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
@@ -383,9 +383,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = ad();
     if (str == null)
       return; 
-    aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
-      aE aE1 = new aE(aE.b(), "\t");
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, "\n");
+    for (int i = getSelectedRow(); i < s.getRowCount() && AkInterfaceAe.ExceptionInVPackage(); i++) {
+      AkInterfaceAe aE1 = new AkInterfaceAe(AkInterfaceAe.b(), "\t");
       for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {
@@ -412,9 +412,9 @@ public class BinTableView extends JTable implements ClipboardOwner, HierarchyLis
     String str = ad();
     if (str == null)
       return; 
-    aE aE = new aE(str, "\n");
-    for (int i = getSelectedRow(); i < s.getRowCount() && aE.ExceptionInVPackage(); i++) {
-      aE aE1 = new aE(aE.b(), "\t");
+    AkInterfaceAe AkInterfaceAe = new AkInterfaceAe(str, "\n");
+    for (int i = getSelectedRow(); i < s.getRowCount() && AkInterfaceAe.ExceptionInVPackage(); i++) {
+      AkInterfaceAe aE1 = new AkInterfaceAe(AkInterfaceAe.b(), "\t");
       for (int j = getSelectedColumn(); j < s.getColumnCount() && aE1.ExceptionInVPackage(); j++) {
         String str1 = aE1.b();
         try {

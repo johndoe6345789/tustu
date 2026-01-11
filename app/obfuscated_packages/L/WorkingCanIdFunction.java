@@ -2,9 +2,9 @@ package L;
 
 import G.T;
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 
-public class WorkingCanIdFunction extends ac {
+public class WorkingCanIdFunction extends AbstractInAxPackage {
   public double a(CloneableImplInAxPackage paramS) {
     T t = T.a();
     return (t.c() == null) ? -1.0D : t.c().O().P();

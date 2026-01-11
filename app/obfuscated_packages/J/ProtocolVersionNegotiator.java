@@ -1,22 +1,22 @@
 package J;
 
 import G.F;
-import G.bY;
-import G.cO;
+import G.GInterfaceBy;
+import G.GInterfaceCo;
 import G.v;
 import bH.D;
 import bH.c;
 import java.io.Serializable;
 
-public class ProtocolVersionNegotiator implements cO, Serializable {
-  bY a = null;
+public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
+  GInterfaceBy a = null;
 
   int b = -1;
 
   BlockingFactorHolder c = null;
 
   public ProtocolVersionNegotiator() {
-    this.a = new bY();
+    this.a = new GInterfaceBy();
     this.a.a("F");
     this.a.e("I");
     this.a.d("f%cId");

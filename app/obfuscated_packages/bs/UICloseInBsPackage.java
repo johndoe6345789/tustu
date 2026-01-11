@@ -1,10 +1,10 @@
 package bs;
 
 import G.R;
-import G.be;
-import G.bm;
-import G.bv;
-import G.dp;
+import G.CloneableImpl;
+import G.CloneableImplInGPackage;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.GInterfaceDp;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import aE.ExceptionInVPackage;
@@ -13,8 +13,8 @@ import bE.JComponentExtension;
 import bE.BeInterfacePapa;
 import bH.D;
 import bH.X;
-import bt.bQ;
-import bt.bh;
+import bt.ManagerBfcomponentcharlie;
+import bt.ExceptionEqualsinaipackage;
 import bt.d;
 import com.efiAnalytics.tuningwidgets.panels.aP;
 import com.efiAnalytics.ui.bV;
@@ -51,7 +51,7 @@ import r.ExceptionInVPackage;
 import s.ExceptionPrintstacktrace;
 
 public class UICloseInBsPackage extends d implements bc {
-  dp ExceptionInVPackage;
+  GInterfaceDp ExceptionInVPackage;
   
   D b = null;
   
@@ -69,7 +69,7 @@ public class UICloseInBsPackage extends d implements bc {
   
   dD i = null;
   
-  bm j;
+  CloneableImplInGPackage j;
   
   w k = null;
   
@@ -87,10 +87,10 @@ public class UICloseInBsPackage extends d implements bc {
   
   z r = null;
   
-  public UICloseInBsPackage(R paramR, dp paramdp) {
+  public UICloseInBsPackage(R paramR, GInterfaceDp paramdp) {
     this.ExceptionInVPackage = paramdp;
     this.c = paramR;
-    this.j = (bm)paramR.e().c(paramdp.c());
+    this.j = (CloneableImplInGPackage)paramR.e().c(paramdp.c());
     this.Isoptimizeddrawingenabled = new dQ((Properties)ExceptionInVPackage.A(), "WueAnalyzePanel_" + paramdp.c());
     String str = this.Isoptimizeddrawingenabled.b("targetLambdaTableName", paramdp.NetworkHashMap());
     if (str != null && !str.equals(""))
@@ -126,7 +126,7 @@ public class UICloseInBsPackage extends d implements bc {
     this.JComponentExtension.setToolTipText("<html>" + ExceptionPrintstacktrace.b("Check to have WUE Analyze Recommendations automatically <br>sent to the controller. If unchecked, WUE Analyze Live will <br>produce the recommended warmup enrichment curve, but not send changes until the Apply button is clicked.</html>"));
     this.JComponentExtension.setSelected(!this.BeInterfacePapa.equals("Manually"));
     this.JComponentExtension.addActionListener(new o(this));
-    if (!this.ExceptionInVPackage.l(dp.d)) {
+    if (!this.ExceptionInVPackage.l(GInterfaceDp.d)) {
       jPanel3.add(this.JComponentExtension);
     } else {
       this.JComponentExtension.setSelected(false);
@@ -135,7 +135,7 @@ public class UICloseInBsPackage extends d implements bc {
     } 
     JButton jButton1 = new JButton(ExceptionPrintstacktrace.b("Apply"));
     jButton1.setMnemonic('A');
-    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will be running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
+    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will CloneableImpl running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
     jButton1.addActionListener(new BeInterfacePapa(this));
     jPanel3.add(jButton1);
     JButton jButton2 = new JButton(ExceptionPrintstacktrace.b("Save on ECU"));
@@ -147,7 +147,7 @@ public class UICloseInBsPackage extends d implements bc {
     this.o.setLayout(new FlowLayout());
     jPanel3.add(this.o);
     JCheckBox jCheckBox = new JCheckBox(ExceptionPrintstacktrace.b("Extended Prediction") + "   ");
-    jCheckBox.setToolTipText("<html>" + ExceptionPrintstacktrace.b("Predict warmup values beyond the temperature range <br>of data collected during this session.<br>This will produce best guess estimates for very cold temperatures <br>that may be difficult to collect data for.</html>"));
+    jCheckBox.setToolTipText("<html>" + ExceptionPrintstacktrace.b("Predict warmup values beyond the temperature range <br>of data collected during this session.<br>This will produce best guess estimates for very cold temperatures <br>that may CloneableImpl difficult to collect data for.</html>"));
     boolean bool = Boolean.parseBoolean(this.Isoptimizeddrawingenabled.b("extendBeyondData", "true"));
     jCheckBox.setSelected(bool);
     jCheckBox.addActionListener(new r(this));
@@ -172,16 +172,16 @@ public class UICloseInBsPackage extends d implements bc {
       throw new ExceptionPrintstacktrace("WUE Analyzer: Can not locate Warm up Curve " + this.ExceptionInVPackage.c() + " in " + this.c.c()); 
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(1, 1));
-    bv bv1 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv1 = new ArrayListExceptionprintstacktraceInGPackage();
     bv1.i(2);
-    bv bv2 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv2 = new ArrayListExceptionprintstacktraceInGPackage();
     bv2.t("Center");
     bv2.s(ExceptionPrintstacktrace.b("Warmup Enrichment Curve"));
     this.j.d(true);
-    bv2.ExceptionInVPackage((bv)this.j);
+    bv2.ExceptionInVPackage((ArrayListExceptionprintstacktraceInGPackage)this.j);
     bv1.ExceptionInVPackage(bv2);
-    bh bh = new bh(this.c, bv1);
-    jPanel.add((Component)bh);
+    ExceptionEqualsinaipackage ExceptionEqualsinaipackage = new ExceptionEqualsinaipackage(this.c, bv1);
+    jPanel.add((Component)ExceptionEqualsinaipackage);
     return jPanel;
   }
   
@@ -273,18 +273,18 @@ public class UICloseInBsPackage extends d implements bc {
       throw new ExceptionPrintstacktrace("WUE Analyzer: Can not locate AFR Compensation Curve " + this.ExceptionInVPackage.ExceptionPrintstacktrace() + " in " + this.c.c()); 
     Isoptimizeddrawingenabled.addTab(ExceptionPrintstacktrace.b("Error Plot"), d());
     Isoptimizeddrawingenabled.addTab(ExceptionPrintstacktrace.b("Recommended WUE Plot"), e());
-    bv bv1 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv1 = new ArrayListExceptionprintstacktraceInGPackage();
     bv1.i(2);
-    bv bv2 = new bv();
+    ArrayListExceptionprintstacktraceInGPackage bv2 = new ArrayListExceptionprintstacktraceInGPackage();
     bv2.s(ExceptionPrintstacktrace.b("Temperature based adjustment to target Lambda"));
     bv2.t("Center");
     bv2.ExceptionInVPackage(this.c.e().c(this.ExceptionInVPackage.ExceptionPrintstacktrace()));
     bv1.ExceptionInVPackage(bv2);
-    bh bh = new bh(this.c, bv1);
-    bh.setPreferredSize(new Dimension(400, 280));
+    ExceptionEqualsinaipackage ExceptionEqualsinaipackage = new ExceptionEqualsinaipackage(this.c, bv1);
+    ExceptionEqualsinaipackage.setPreferredSize(new Dimension(400, 280));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
-    jPanel1.add("Center", (Component)bh);
+    jPanel1.add("Center", (Component)ExceptionEqualsinaipackage);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage(this.c, this.ExceptionInVPackage);
@@ -327,9 +327,9 @@ public class UICloseInBsPackage extends d implements bc {
         br.add(jCheckBoxMenuItem);
         continue;
       } 
-      be be = (be)this.c.e().c(str);
-      if (be != null) {
-        JCheckBoxMenuItem jCheckBoxMenuItem = ExceptionInVPackage(X.b(ExceptionPrintstacktrace.b(be.M()), "\"", ""), str, bool);
+      CloneableImpl CloneableImpl = (CloneableImpl)this.c.e().c(str);
+      if (CloneableImpl != null) {
+        JCheckBoxMenuItem jCheckBoxMenuItem = ExceptionInVPackage(X.b(ExceptionPrintstacktrace.b(CloneableImpl.M()), "\"", ""), str, bool);
         br.add(jCheckBoxMenuItem);
         continue;
       } 
@@ -366,7 +366,7 @@ public class UICloseInBsPackage extends d implements bc {
         String str = "veTable1Tbl";
         if (iterator.hasNext())
           str = iterator.next(); 
-        s s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.c, this.ExceptionInVPackage.NetworkHashMap(), "", str);
+        s s = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.c, this.ExceptionInVPackage.NetworkHashMap(), "", str);
         aP aP = new aP(this.c, s, str);
         ExceptionInVPackage((bc)aP);
         bV.ExceptionInVPackage((Component)aP, (Component)this, ExceptionPrintstacktrace.b("Target AFR Table"), (bc)aP);
@@ -413,7 +413,7 @@ public class UICloseInBsPackage extends d implements bc {
   private void h() {
     try {
       this.b.e();
-      if (this.ExceptionInVPackage.l(dp.e))
+      if (this.ExceptionInVPackage.l(GInterfaceDp.e))
         i(); 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);

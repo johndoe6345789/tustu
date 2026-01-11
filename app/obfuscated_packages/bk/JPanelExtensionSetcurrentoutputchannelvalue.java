@@ -1,8 +1,8 @@
 package bk;
 
 import G.R;
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import aI.CloneableImplInAiPackage;
 import aI.ManagerGetfilesin;
 import aI.AiInterfacePapa;
@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import s.SComponentGolf;
 
-public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implements cq, AiInterfaceQuebec, bc {
+public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implements GComponentCq, AiInterfaceQuebec, bc {
   static final String a = SComponentGolf.b("SD Logging Active");
   
   static final String b = SComponentGolf.b("SD Logging Idle");
@@ -131,7 +131,7 @@ public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implemen
     if (paramBoolean)
       add("South", jPanel2); 
     this.j.a(this);
-    cu.a().a(paramR.c(), CloneableImplInAiPackage.a, this);
+    ManagerUsingArrayList.a().a(paramR.c(), CloneableImplInAiPackage.a, this);
   }
   
   private void CloneableImplInAiPackage() {
@@ -209,7 +209,7 @@ public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implemen
     this.AiInterfaceQuebec.close();
     this.ManagerGetfilesin.close();
     this.j.b(this);
-    cu.a().a(this);
+    ManagerUsingArrayList.a().a(this);
   }
   
   public void a(boolean paramBoolean) {

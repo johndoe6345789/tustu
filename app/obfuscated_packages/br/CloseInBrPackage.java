@@ -1,13 +1,13 @@
 package br;
 
 import G.R;
-import G.aF;
-import G.aH;
-import G.aI;
-import G.aM;
-import G.be;
-import G.cu;
-import G.dm;
+import G.GInterfaceAf;
+import G.SerializableImpl;
+import G.GInterfaceAi;
+import G.Manager;
+import G.CloneableImpl;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDm;
 import G.i;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -18,7 +18,7 @@ import bH.BlInterfacePapa;
 import bL.TostringInBlPackage;
 import bL.BlInterfaceLima;
 import bL.BlInterfacePapa;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.c;
 import com.efiAnalytics.ui.fh;
@@ -28,8 +28,8 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class CloseInBrPackage implements aF, bc {
-  dm ExceptionInVPackage = null;
+public class CloseInBrPackage implements GInterfaceAf, bc {
+  GInterfaceDm ExceptionInVPackage = null;
   
   ArrayList b = new ArrayList();
   
@@ -37,19 +37,19 @@ public class CloseInBrPackage implements aF, bc {
   
   R d = null;
   
-  aH e = null;
+  SerializableImpl e = null;
   
-  aH f = null;
+  SerializableImpl f = null;
   
-  aH ExceptionPrintstacktrace = null;
+  SerializableImpl ExceptionPrintstacktrace = null;
   
-  aH h = null;
+  SerializableImpl h = null;
   
-  aH i = null;
+  SerializableImpl i = null;
   
-  aH j = null;
+  SerializableImpl j = null;
   
-  private aH m = null;
+  private SerializableImpl m = null;
   
   private int n = 0;
   
@@ -73,14 +73,14 @@ public class CloseInBrPackage implements aF, bc {
   
   BlInterfacePapa BlInterfaceLima = new BlInterfacePapa(this);
   
-  protected CloseInBrPackage(R paramR, dm paramdm, String paramString, c paramc) {
+  protected CloseInBrPackage(R paramR, GInterfaceDm paramdm, String paramString, c paramc) {
     this.ExceptionInVPackage = paramdm;
     this.d = paramR;
     try {
-      this.BlInterfacePapa = bQ.ExceptionInVPackage().ExceptionInVPackage(paramR, paramString, "", paramString);
-      this.q = bQ.ExceptionInVPackage().ExceptionInVPackage(paramR, paramString, "veAnalyze_", paramString);
+      this.BlInterfacePapa = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(paramR, paramString, "", paramString);
+      this.q = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(paramR, paramString, "veAnalyze_", paramString);
       this.r = ExceptionInVPackage(paramR, paramdm);
-      this.s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.BlInterfacePapa, paramString);
+      this.s = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.BlInterfacePapa, paramString);
       this.q.ExceptionInVPackage(this.r, paramc);
       this.TostringInBlPackage = new o(this, this.q, this.r);
       this.r.addTableModelListener(this.TostringInBlPackage);
@@ -126,19 +126,19 @@ public class CloseInBrPackage implements aF, bc {
     } 
   }
   
-  private s ExceptionInVPackage(R paramR, dm paramdm) {
-    s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(paramR, paramdm.c(), paramdm.b());
-    if (bQ.ExceptionInVPackage().b(paramdm.c()))
+  private s ExceptionInVPackage(R paramR, GInterfaceDm paramdm) {
+    s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(paramR, paramdm.c(), paramdm.b());
+    if (ManagerBfcomponentcharlie.ExceptionInVPackage().b(paramdm.c()))
       return s1; 
-    be be = (be)paramR.e().c(paramdm.c());
-    if (be == null)
+    CloneableImpl CloneableImpl = (CloneableImpl)paramR.e().c(paramdm.c());
+    if (CloneableImpl == null)
       return null; 
-    aM aM = paramR.c(be.c());
-    if (aM.BlInterfacePapa() != null && aM.BlInterfacePapa().equalsIgnoreCase("Volts")) {
+    Manager Manager = paramR.c(CloneableImpl.c());
+    if (Manager.BlInterfacePapa() != null && Manager.BlInterfacePapa().equalsIgnoreCase("Volts")) {
       s s2 = new s();
       s2.ExceptionInVPackage(s1.getRowCount(), s1.getColumnCount());
       fh.ExceptionInVPackage(s1, s2);
-      aH aH1 = paramR.ExceptionPrintstacktrace(paramdm.e());
+      SerializableImpl aH1 = paramR.ExceptionPrintstacktrace(paramdm.e());
       if (aH1 == null)
         throw new ExceptionPrintstacktrace("Unable to calculate AFR based on current sensor configuration."); 
       String str = aH1.TostringInBlPackage();
@@ -148,7 +148,7 @@ public class CloseInBrPackage implements aF, bc {
           int i = (int)Math.round(d * 255.0D / 5.0D);
           String str1 = X.b(str, "egoADC", i + "");
           str1 = X.b(str1, "egoVoltage", d + "");
-          str1 = i.c(str1, (aI)paramR);
+          str1 = i.c(str1, (GInterfaceAi)paramR);
           try {
             double d1 = G.ExceptionPrintstacktrace(str1);
             s2.setValueAt(Double.valueOf(d1), b, b1);
@@ -166,7 +166,7 @@ public class CloseInBrPackage implements aF, bc {
   
   protected boolean ExceptionInVPackage(byte[] paramArrayOfbyte) {
     for (TostringInBlPackage TostringInBlPackage : this.b) {
-      if (TostringInBlPackage.ExceptionInVPackage((aI)this.d, paramArrayOfbyte)) {
+      if (TostringInBlPackage.ExceptionInVPackage((GInterfaceAi)this.d, paramArrayOfbyte)) {
         this.t = TostringInBlPackage.ExceptionInVPackage();
         this.o++;
         return true;
@@ -236,13 +236,13 @@ public class CloseInBrPackage implements aF, bc {
   }
   
   public void c() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.i.aL(), this.BlInterfaceLima);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.e.aL(), this.BlInterfaceLima);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.f.aL(), this.BlInterfaceLima);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.ExceptionPrintstacktrace.aL(), this.BlInterfaceLima);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.h.aL(), this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.i.aL(), this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.e.aL(), this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.f.aL(), this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.ExceptionPrintstacktrace.aL(), this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.h.aL(), this.BlInterfaceLima);
     if (this.j != null)
-      cu.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.j.aL(), this.BlInterfaceLima); 
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.d.c(), this.j.aL(), this.BlInterfaceLima); 
     this.c.b();
     ExceptionInVPackage();
     this.c.c();
@@ -254,14 +254,14 @@ public class CloseInBrPackage implements aF, bc {
   
   public void e() {
     this.c.d();
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.BlInterfaceLima);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.BlInterfaceLima);
   }
   
   public boolean f() {
     if (this.ExceptionInVPackage.d() == null || this.ExceptionInVPackage.d().equals(""))
       return true; 
     try {
-      String str = i.d(this.ExceptionInVPackage.d(), (aI)this.d);
+      String str = i.d(this.ExceptionInVPackage.d(), (GInterfaceAi)this.d);
       return BlInterfacePapa.ExceptionInVPackage(str, this.d);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.c("VE Analyze Live is Unable to evaluate TableActiveCondition :\n\t" + this.ExceptionInVPackage.d() + "\n\tAssuming the table is active");
@@ -297,19 +297,19 @@ public class CloseInBrPackage implements aF, bc {
     this.r.removeTableModelListener(this.TostringInBlPackage);
   }
   
-  public void ExceptionInVPackage(aH paramaH) {
+  public void ExceptionInVPackage(SerializableImpl paramaH) {
     this.m = paramaH;
   }
   
   public void ExceptionInVPackage(String paramString) {
-    aH aH1 = this.d.ExceptionPrintstacktrace(paramString);
+    SerializableImpl aH1 = this.d.ExceptionPrintstacktrace(paramString);
     if (aH1 == null)
       throw new ExceptionPrintstacktrace(paramString + " is not ExceptionInVPackage valid channel in configuration " + this.d.c()); 
     this.i = aH1;
   }
   
   public void b(String paramString) {
-    aH aH1 = this.d.ExceptionPrintstacktrace(paramString);
+    SerializableImpl aH1 = this.d.ExceptionPrintstacktrace(paramString);
     if (aH1 == null)
       throw new ExceptionPrintstacktrace(paramString + " is no ExceptionInVPackage valid channel in configuration " + this.d.c()); 
     this.j = aH1;

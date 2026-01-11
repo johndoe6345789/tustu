@@ -1,10 +1,10 @@
 package be;
 
 import G.R;
-import G.aI;
-import G.ah;
-import G.dj;
-import G.dk;
+import G.GInterfaceAi;
+import G.GInterfaceAh;
+import G.GInterfaceDj;
+import G.GInterfaceDk;
 import G.i;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
@@ -53,7 +53,7 @@ public class BeInterfaceYankee extends JPanel implements o {
   
   R m = null;
   
-  ah n = null;
+  GInterfaceAh n = null;
   
   n o = new n();
   
@@ -130,7 +130,7 @@ public class BeInterfaceYankee extends JPanel implements o {
     return jPanel1;
   }
   
-  public void ExceptionInVPackage(ah paramah) {
+  public void ExceptionInVPackage(GInterfaceAh paramah) {
     this.n = paramah;
     this.ExceptionInVPackage.setText(paramah.aL());
     this.ExceptionInVPackage.setEnabled(false);
@@ -148,36 +148,36 @@ public class BeInterfaceYankee extends JPanel implements o {
     this.o.b();
   }
   
-  public ah ExceptionInVPackage() {
+  public GInterfaceAh ExceptionInVPackage() {
     if (this.n == null)
-      this.n = new ah(); 
+      this.n = new GInterfaceAh(); 
     this.n.v(this.ExceptionInVPackage.getText());
     this.n.c(this.b.getText());
     this.n.b(this.c.getText());
     this.n.d(this.l.getSelectedItem().toString());
     this.n.ExceptionInVPackage(this.k.getSelectedItem().toString());
     try {
-      dj dj = dk.ExceptionInVPackage((aI)this.m, this.d.getText());
-      i.ExceptionInVPackage(this.d.getText(), (aI)this.m);
-      this.n.ExceptionInVPackage(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.e.getText());
-      i.ExceptionInVPackage(this.e.getText(), (aI)this.m);
-      this.n.b(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.f.getText());
-      i.ExceptionInVPackage(this.f.getText(), (aI)this.m);
-      this.n.h(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.ExceptionPrintstacktrace.getText());
-      i.ExceptionInVPackage(this.ExceptionPrintstacktrace.getText(), (aI)this.m);
-      this.n.c(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.h.getText());
-      i.ExceptionInVPackage(this.h.getText(), (aI)this.m);
-      this.n.d(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.i.getText());
-      i.ExceptionInVPackage(this.i.getText(), (aI)this.m);
-      this.n.e(dj);
-      dj = dk.ExceptionInVPackage((aI)this.m, this.j.getText());
-      i.ExceptionInVPackage(this.j.getText(), (aI)this.m);
-      this.n.f(dj);
+      GInterfaceDj GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.d.getText());
+      i.ExceptionInVPackage(this.d.getText(), (GInterfaceAi)this.m);
+      this.n.ExceptionInVPackage(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.e.getText());
+      i.ExceptionInVPackage(this.e.getText(), (GInterfaceAi)this.m);
+      this.n.b(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.f.getText());
+      i.ExceptionInVPackage(this.f.getText(), (GInterfaceAi)this.m);
+      this.n.h(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.ExceptionPrintstacktrace.getText());
+      i.ExceptionInVPackage(this.ExceptionPrintstacktrace.getText(), (GInterfaceAi)this.m);
+      this.n.c(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.h.getText());
+      i.ExceptionInVPackage(this.h.getText(), (GInterfaceAi)this.m);
+      this.n.d(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.i.getText());
+      i.ExceptionInVPackage(this.i.getText(), (GInterfaceAi)this.m);
+      this.n.e(GInterfaceDj);
+      GInterfaceDj = GInterfaceDk.ExceptionInVPackage((GInterfaceAi)this.m, this.j.getText());
+      i.ExceptionInVPackage(this.j.getText(), (GInterfaceAi)this.m);
+      this.n.f(GInterfaceDj);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       throw new ExceptionInVPackage(ExceptionPrintstacktrace.getMessage());
     } catch (ExceptionInAxPackage u) {
@@ -252,13 +252,13 @@ public class BeInterfaceYankee extends JPanel implements o {
       return r;
     } 
     try {
-      i.ExceptionInVPackage(this.d.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.e.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.f.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.ExceptionPrintstacktrace.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.h.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.i.getText(), (aI)this.m);
-      i.ExceptionInVPackage(this.j.getText(), (aI)this.m);
+      i.ExceptionInVPackage(this.d.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.e.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.f.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.ExceptionPrintstacktrace.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.h.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.i.getText(), (GInterfaceAi)this.m);
+      i.ExceptionInVPackage(this.j.getText(), (GInterfaceAi)this.m);
     } catch (ExceptionInAxPackage u) {
       r.c();
       r.ExceptionInVPackage(u.getMessage());
@@ -282,7 +282,7 @@ public class BeInterfaceYankee extends JPanel implements o {
     arrayList.add(p);
     null = paramR.B();
     while (null.hasNext()) {
-      ah ah1 = null.next();
+      GInterfaceAh ah1 = null.next();
       if (ah1.p() != null && !arrayList.contains(ah1.p()))
         arrayList.add(ah1.p()); 
     } 

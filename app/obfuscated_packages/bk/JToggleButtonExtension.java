@@ -1,15 +1,15 @@
 package bk;
 
 import G.R;
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import aI.CloneableImplInAiPackage;
 import aI.AiInterfacePapa;
 import com.efiAnalytics.ui.bc;
 import javax.swing.JToggleButton;
 import s.SComponentGolf;
 
-public class JToggleButtonExtension extends JToggleButton implements cq, bc {
+public class JToggleButtonExtension extends JToggleButton implements GComponentCq, bc {
   R a = null;
   
   AiInterfacePapa b = null;
@@ -22,7 +22,7 @@ public class JToggleButtonExtension extends JToggleButton implements cq, bc {
     this.a = paramR;
     this.b = new AiInterfacePapa(paramR);
     setText(SComponentGolf.b("Start SD Log"));
-    cu.a().a(paramR.c(), CloneableImplInAiPackage.a, this);
+    ManagerUsingArrayList.a().a(paramR.c(), CloneableImplInAiPackage.a, this);
     addActionListener(new AiInterfacePapa(this));
   }
   
@@ -35,7 +35,7 @@ public class JToggleButtonExtension extends JToggleButton implements cq, bc {
   }
   
   public void close() {
-    cu.a().a(this);
+    ManagerUsingArrayList.a().a(this);
     this.b.a();
   }
   

@@ -1,9 +1,9 @@
 package aR;
 
 import G.T;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
 import java.util.Properties;
@@ -23,9 +23,9 @@ public class ArInterfacePapa implements DComponentCharlie {
   
   public void a(Properties paramProperties) {
     if (T.a().DComponentCharlie() != null) {
-      NetworkHashMap.a().e(dd.a().DComponentCharlie());
+      NetworkHashMap.a().e(ThreadedJFrameIsoptimizeddrawingenabled.a().DComponentCharlie());
     } else {
-      hq.a().a("No Project open, cannot display Comms settings.");
+      NInterfaceIndiaImpl.a().a("No Project open, cannot display Comms settings.");
     } 
   }
   

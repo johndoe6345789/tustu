@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.R;
-import G.aI;
-import G.dj;
-import G.dk;
+import G.GInterfaceAi;
+import G.GInterfaceDj;
+import G.GInterfaceDk;
 import bH.D;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -18,8 +18,8 @@ class MinValueKeyAdapter extends KeyAdapter {
       return; 
     try {
       R r = r.a(this.a.a());
-      dj dj = dk.a((aI)r, jTextField.getText());
-      this.a.a().setMin(dj);
+      GInterfaceDj GInterfaceDj = GInterfaceDk.a((GInterfaceAi)r, jTextField.getText());
+      this.a.a().setMin(GInterfaceDj);
       this.a.a().repaint();
     } catch (Exception exception) {
       D.c("Invalid expression: " + jTextField.getText());

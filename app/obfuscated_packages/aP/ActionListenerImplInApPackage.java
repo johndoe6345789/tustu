@@ -4,15 +4,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerImplInApPackage implements ActionListener {
-  i(f paramf) {}
+  ag(ad paramad) {}
   
-  public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.l();
-  }
+  public void actionPerformed(ActionEvent paramActionEvent) {}
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/i.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ag.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

@@ -1,7 +1,7 @@
 package bT;
 
 import G.R;
-import G.aH;
+import G.SerializableImpl;
 import bH.D;
 import bH.c;
 import bN.TostringInBnPackage;
@@ -32,8 +32,8 @@ public class BtInterfaceKilo implements BsInterfaceAlpha {
     try {
       TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
       int i = c.BsInterfaceAlpha(arrayOfByte, 1, 2, k1.g(), false);
-      aH aH = r.b(i);
-      if (aH == null) {
+      SerializableImpl SerializableImpl = r.b(i);
+      if (SerializableImpl == null) {
         TostringInBnPackage.BsInterfaceAlpha(254);
         byte[] arrayOfByte2 = new byte[1];
         arrayOfByte2[0] = 34;
@@ -45,12 +45,12 @@ public class BtInterfaceKilo implements BsInterfaceAlpha {
       byte[] arrayOfByte1 = new byte[6];
       arrayOfByte1[0] = 4;
       arrayOfByte1[1] = -1;
-      arrayOfByte1[2] = (byte)aH.aL().length();
+      arrayOfByte1[2] = (byte)SerializableImpl.aL().length();
       arrayOfByte1[3] = 0;
       arrayOfByte1[4] = 0;
       arrayOfByte1[5] = 15;
       paramo.d(BnInterfaceOscar.c);
-      paramo.BsInterfaceAlpha(aH.aL().getBytes());
+      paramo.BsInterfaceAlpha(SerializableImpl.aL().getBytes());
       TostringInBnPackage.b(arrayOfByte1);
       paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
       return;

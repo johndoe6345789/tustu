@@ -2,14 +2,14 @@ package com.efiAnalytics.tunerStudio.panels;
 
 import G.R;
 import G.T;
-import G.aX;
-import G.aY;
-import G.aj;
-import G.bF;
-import G.bG;
-import G.ba;
-import G.bu;
-import G.dc;
+import G.SerializableImplUsingArrayList;
+import G.SerializableImplEquals;
+import G.GComponentAj;
+import G.AbstractInGPackage;
+import G.GInterfaceBg;
+import G.Tostring;
+import G.GComponentBu;
+import G.GInterfaceDc;
 import G.m;
 import G.o;
 import V.ExceptionInVPackage;
@@ -61,7 +61,7 @@ import s.ExceptionPrintstacktrace;
 public class CalibrationTablePanel extends d implements bc {
   R ExceptionInVPackage = null;
   
-  aX b = null;
+  SerializableImplUsingArrayList b = null;
   
   JComboBox c = new JComboBox();
   
@@ -87,18 +87,18 @@ public class CalibrationTablePanel extends d implements bc {
   
   boolean n = true;
   
-  public J(R paramR, aX paramaX) {
+  public J(R paramR, SerializableImplUsingArrayList paramaX) {
     this.ExceptionInVPackage = paramR;
     this.b = paramaX;
     ExceptionInVPackage(this);
     setLayout(new BorderLayout());
     if (paramaX.O().size() > 0) {
-      aj aj = paramR.e().b(paramaX.O().get(0));
-      if (aj != null && aj.d() != null) {
+      GComponentAj GComponentAj = paramR.e().b(paramaX.O().get(0));
+      if (GComponentAj != null && GComponentAj.d() != null) {
         JMenuBar jMenuBar = new JMenuBar();
         JMenu jMenu = new JMenu(ExceptionPrintstacktrace.b("Help"));
         jMenuBar.add(jMenu);
-        JMenuItem jMenuItem = new JMenuItem(aj.d());
+        JMenuItem jMenuItem = new JMenuItem(GComponentAj.d());
         jMenuItem.addActionListener(new K(this));
         jMenu.add(jMenuItem);
         add("North", jMenuBar);
@@ -121,10 +121,10 @@ public class CalibrationTablePanel extends d implements bc {
       jPanel2.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Sensor Table")));
       this.c.setEditable(false);
       jPanel2.add("Center", this.c);
-      Iterator<aY> iterator1 = paramaX.b();
+      Iterator<SerializableImplEquals> iterator1 = paramaX.b();
       while (iterator1.hasNext()) {
-        aY aY = iterator1.next();
-        this.c.addItem(new S(this, aY));
+        SerializableImplEquals SerializableImplEquals = iterator1.next();
+        this.c.addItem(new S(this, SerializableImplEquals));
       } 
       this.c.addItemListener(new L(this));
     } 
@@ -136,22 +136,22 @@ public class CalibrationTablePanel extends d implements bc {
       jPanel.add("Center", this.d);
       if (paramaX.j() > 1)
         jPanel1.add(jPanel); 
-      Iterator<ba> iterator1 = paramaX.NetworkHashMap();
+      Iterator<Tostring> iterator1 = paramaX.NetworkHashMap();
       while (iterator1.hasNext()) {
-        ba ba = iterator1.next();
-        this.d.addItem(new R(this, ba));
+        Tostring Tostring = iterator1.next();
+        this.d.addItem(new R(this, Tostring));
       } 
       this.d.addItemListener(new M(this));
     } 
     this.j.setLayout(new CardLayout());
     jPanel1.add(this.j);
-    Iterator<bF> iterator = paramaX.ExceptionPrintstacktrace();
+    Iterator<AbstractInGPackage> iterator = paramaX.ExceptionPrintstacktrace();
     while (iterator.hasNext()) {
-      bF bF = iterator.next();
+      AbstractInGPackage AbstractInGPackage = iterator.next();
       try {
-        aL aL = ExceptionInVPackage(bF);
-        this.j.add((Component)aL, bF.ExceptionPrintstacktrace());
-        this.NetworkHashMap.put(bF.ExceptionPrintstacktrace(), aL);
+        aL aL = ExceptionInVPackage(AbstractInGPackage);
+        this.j.add((Component)aL, AbstractInGPackage.ExceptionPrintstacktrace());
+        this.NetworkHashMap.put(AbstractInGPackage.ExceptionPrintstacktrace(), aL);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         D.ExceptionInVPackage(ExceptionInVPackage.getMessage(), (Exception)ExceptionInVPackage, this);
       } 
@@ -186,24 +186,24 @@ public class CalibrationTablePanel extends d implements bc {
       if (arrayOfByte != null) {
         aa aa = new aa();
         aa.ExceptionInVPackage();
-        ba ba = ExceptionInVPackage(arrayOfByte);
+        Tostring Tostring = ExceptionInVPackage(arrayOfByte);
         aa.b();
-        D.c("Found solution:" + ((ba == null) ? "No Match" : ba.ExceptionInVPackage()));
+        D.c("Found solution:" + ((Tostring == null) ? "No Match" : Tostring.ExceptionInVPackage()));
         D.c(" Time to find solution:" + aa.c());
-        ExceptionInVPackage(ba);
+        ExceptionInVPackage(Tostring);
       } 
     } 
   }
   
   private byte[] ExceptionInVPackage(String paramString) {
-    dc dc = new dc();
+    GInterfaceDc GInterfaceDc = new GInterfaceDc();
     int i = c.d(paramString);
     int j = this.b.c() * this.b.d();
     try {
       m m = m.ExceptionInVPackage(this.ExceptionInVPackage.O(), i, j);
       if (m != null) {
         m.c(this.m);
-        o o = dc.ExceptionInVPackage(this.ExceptionInVPackage, m, 600);
+        o o = GInterfaceDc.ExceptionInVPackage(this.ExceptionInVPackage, m, 600);
         if (o.ExceptionInVPackage() == 1)
           return c.ExceptionInVPackage(o.e()); 
         this.n = false;
@@ -216,25 +216,25 @@ public class CalibrationTablePanel extends d implements bc {
     return null;
   }
   
-  private ba ExceptionInVPackage(byte[] paramArrayOfbyte) {
+  private Tostring ExceptionInVPackage(byte[] paramArrayOfbyte) {
     for (byte b = 0; b < this.d.getItemCount(); b++) {
       R r = this.d.getItemAt(b);
-      ba ba = r.ExceptionInVPackage();
-      byte[] arrayOfByte = b(ba);
+      Tostring Tostring = r.ExceptionInVPackage();
+      byte[] arrayOfByte = b(Tostring);
       if (arrayOfByte != null && c.b(paramArrayOfbyte, arrayOfByte)) {
         D.c("Found solution. Solution Checksum: " + c.d(arrayOfByte) + ", controller checksum: " + c.d(paramArrayOfbyte));
-        return ba;
+        return Tostring;
       } 
       if (arrayOfByte != null) {
-        D.c("Solution " + ba.ExceptionInVPackage() + " doesn't match. Solution Checksum: " + c.d(arrayOfByte) + ", controller checksum: " + c.d(paramArrayOfbyte));
+        D.c("Solution " + Tostring.ExceptionInVPackage() + " doesn't match. Solution Checksum: " + c.d(arrayOfByte) + ", controller checksum: " + c.d(paramArrayOfbyte));
       } else {
-        D.c("Can not calculate solution for: " + ba.ExceptionInVPackage());
+        D.c("Can not calculate solution for: " + Tostring.ExceptionInVPackage());
       } 
     } 
     return null;
   }
   
-  private byte[] b(ba paramba) {
+  private byte[] b(Tostring paramba) {
     try {
       int[] arrayOfInt = c(paramba);
       this.k.reset();
@@ -247,11 +247,11 @@ public class CalibrationTablePanel extends d implements bc {
     } 
   }
   
-  public void ExceptionInVPackage(ba paramba) {
+  public void ExceptionInVPackage(Tostring paramba) {
     if (paramba != null)
       for (byte b = 0; b < this.d.getItemCount(); b++) {
         R r = this.d.getItemAt(b);
-        ba ba1 = r.ExceptionInVPackage();
+        Tostring ba1 = r.ExceptionInVPackage();
         if (ba1.equals(paramba))
           this.d.setSelectedIndex(b); 
       }  
@@ -261,20 +261,20 @@ public class CalibrationTablePanel extends d implements bc {
     R r = (R)this.d.getSelectedItem();
     if (r == null)
       return; 
-    ba ba = r.ExceptionInVPackage();
-    if (ba == null)
+    Tostring Tostring = r.ExceptionInVPackage();
+    if (Tostring == null)
       return; 
-    if (this.NetworkHashMap.get(ba.b()) != null) {
+    if (this.NetworkHashMap.get(Tostring.b()) != null) {
       CardLayout cardLayout = (CardLayout)this.j.getLayout();
-      cardLayout.show(this.j, ba.b());
+      cardLayout.show(this.j, Tostring.b());
     } 
     for (aL aL : this.NetworkHashMap.values())
-      aL.setEnabled((ba.b() != null && this.NetworkHashMap.get(ba.b()) != null && aL.equals(this.NetworkHashMap.get(ba.b())))); 
+      aL.setEnabled((Tostring.b() != null && this.NetworkHashMap.get(Tostring.b()) != null && aL.equals(this.NetworkHashMap.get(Tostring.b())))); 
   }
   
   private String e() {
-    aY aY = ((S)this.c.getSelectedItem()).ExceptionInVPackage();
-    return aY.ExceptionInVPackage();
+    SerializableImplEquals SerializableImplEquals = ((S)this.c.getSelectedItem()).ExceptionInVPackage();
+    return SerializableImplEquals.ExceptionInVPackage();
   }
   
   public void b() {
@@ -351,11 +351,11 @@ public class CalibrationTablePanel extends d implements bc {
   
   private int[] NetworkHashMap() {
     R r = (R)this.d.getSelectedItem();
-    ba ba = r.ExceptionInVPackage();
-    return c(ba);
+    Tostring Tostring = r.ExceptionInVPackage();
+    return c(Tostring);
   }
   
-  private int[] c(ba paramba) {
+  private int[] c(Tostring paramba) {
     String str = paramba.b();
     if (paramba.b().trim().length() == 0)
       throw new ExceptionInVPackage("You must select ExceptionInVPackage valid input solution to generate table."); 
@@ -517,12 +517,12 @@ public class CalibrationTablePanel extends d implements bc {
     NetworkHashMap.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.O().get(0), bV.ExceptionInVPackage((Component)this));
   }
   
-  private aL ExceptionInVPackage(bF parambF) {
+  private aL ExceptionInVPackage(AbstractInGPackage parambF) {
     try {
       if (parambF.ExceptionPrintstacktrace().equals("linearGenerator"))
-        return (aL)new M((bu)parambF); 
+        return (aL)new M((GComponentBu)parambF); 
       if (parambF.ExceptionPrintstacktrace().equals("thermGenerator"))
-        return (aL)new aM((bG)parambF); 
+        return (aL)new aM((GInterfaceBg)parambF); 
       if (parambF.ExceptionPrintstacktrace().equals("fileBrowseGenerator"))
         return (aL)new G(parambF.VInterfaceHotel()); 
     } catch (Exception exception) {}

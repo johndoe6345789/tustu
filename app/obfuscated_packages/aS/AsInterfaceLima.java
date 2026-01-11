@@ -1,11 +1,11 @@
 package aS;
 
 import G.R;
-import G.ak;
+import G.Exceptionprintstacktrace;
 import G.c;
-import G.cu;
-import G.db;
-import G.dm;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDb;
+import G.GInterfaceDm;
 import G.k;
 import I.IInterfaceDelta;
 import V.ExceptionPrintstacktrace;
@@ -33,24 +33,24 @@ public class AsInterfaceLima {
   
   public String a(R paramR, String paramString) {
     String str = a + paramString;
-    cu.a().IInterfaceDelta(str);
-    cu.a().a(str, 0.0D);
+    ManagerUsingArrayList.a().IInterfaceDelta(str);
+    ManagerUsingArrayList.a().a(str, 0.0D);
     this.b.put(paramString, str);
     try {
-      dm dm = BrInterfaceJuliet.a().a(paramR, paramString);
-      if (dm != null) {
-        ak ak = new ak();
-        ak.v(str + "Active");
-        ak.a((db)new c("VEAL " + paramString));
-        ak.b((db)new c("VEAL " + paramString));
-        ak.a(k.s);
-        ak.b(k.a);
-        ak.c(k.RInterfaceIndia);
-        ak.IInterfaceDelta(k.c);
+      GInterfaceDm GInterfaceDm = BrInterfaceJuliet.a().a(paramR, paramString);
+      if (GInterfaceDm != null) {
+        Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
+        Exceptionprintstacktrace.v(str + "Active");
+        Exceptionprintstacktrace.a((GInterfaceDb)new c("VEAL " + paramString));
+        Exceptionprintstacktrace.b((GInterfaceDb)new c("VEAL " + paramString));
+        Exceptionprintstacktrace.a(k.s);
+        Exceptionprintstacktrace.b(k.a);
+        Exceptionprintstacktrace.c(k.RInterfaceIndia);
+        Exceptionprintstacktrace.IInterfaceDelta(k.c);
         if (RInterfaceIndia.a().a("poij  fdsz poi9ure895 ms7("))
-          ak.b(ArInterfaceAlpha.a + "?" + ArInterfaceAlpha.b + "=" + paramString); 
-        ak.a(str);
-        IInterfaceDelta.a().a(ak);
+          Exceptionprintstacktrace.b(ArInterfaceAlpha.a + "?" + ArInterfaceAlpha.b + "=" + paramString); 
+        Exceptionprintstacktrace.a(str);
+        IInterfaceDelta.a().a(Exceptionprintstacktrace);
       } 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {}
     return str;
@@ -70,7 +70,7 @@ public class AsInterfaceLima {
   public void a(String paramString) {
     String str = (String)this.b.get(paramString);
     if (str != null) {
-      cu.a().a(str, 1.0D);
+      ManagerUsingArrayList.a().a(str, 1.0D);
     } else {
       D.b("Attempt to start VE Analyze on unregistered table name: " + paramString);
     } 
@@ -79,7 +79,7 @@ public class AsInterfaceLima {
   public void b(String paramString) {
     String str = (String)this.b.get(paramString);
     if (str != null) {
-      cu.a().a(str, 0.0D);
+      ManagerUsingArrayList.a().a(str, 0.0D);
     } else {
       D.b("Attempt to stop VE Analyze on unregistered table name: " + paramString);
     } 

@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.cu;
+import G.ManagerUsingArrayList;
 import bH.X;
 import com.efiAnalytics.ui.e;
 import java.awt.event.ActionListener;
@@ -17,7 +17,7 @@ public class EventsComboBox extends e {
   }
   
   public void a(R paramR) {
-    if (paramR.c().equals(cu.a)) {
+    if (paramR.c().equals(ManagerUsingArrayList.a)) {
       a();
     } else {
       b(paramR);
@@ -25,14 +25,14 @@ public class EventsComboBox extends e {
   }
   
   private void a() {
-    String[] arrayOfString = cu.a().b();
+    String[] arrayOfString = ManagerUsingArrayList.a().b();
     arrayOfString = X.a(arrayOfString);
     a(arrayOfString);
   }
   
   private void b(R paramR) {
     ArrayList<String> arrayList = new ArrayList();
-    String[] arrayOfString1 = cu.a().b();
+    String[] arrayOfString1 = ManagerUsingArrayList.a().b();
     arrayOfString1 = X.a(arrayOfString1);
     for (String str : arrayOfString1)
       arrayList.add("AppEvent." + str); 

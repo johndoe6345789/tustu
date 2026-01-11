@@ -1,25 +1,25 @@
 package K;
 
 import G.R;
-import G.cx;
-import G.dj;
+import G.GComponentCx;
+import G.GInterfaceDj;
 
 public class KInterfaceFoxtrot {
-  private cx a;
+  private GComponentCx a;
   
   private R b;
   
   private int c;
   
-  private dj d;
+  private GInterfaceDj d;
   
   private g e = null;
   
-  public KInterfaceFoxtrot(R paramR, int paramInt, dj paramdj) {
+  public KInterfaceFoxtrot(R paramR, int paramInt, GInterfaceDj paramdj) {
     this.b = paramR;
     this.c = paramInt;
     this.d = paramdj;
-    this.a = new cx(paramR);
+    this.a = new GComponentCx(paramR);
   }
   
   public void a() {

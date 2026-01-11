@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.aN;
+import G.GInterfaceAn;
 
-class TableParameterChangeListener implements aN {
+class TableParameterChangeListener implements GInterfaceAn {
   TableParameterChangeListener(TableDataLogListener paramQ) {}
   
   public void a(String paramString1, String paramString2) {

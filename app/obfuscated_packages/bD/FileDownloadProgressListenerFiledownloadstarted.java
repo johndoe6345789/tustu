@@ -1,6 +1,6 @@
 package bD;
 
-import W.aA;
+import W.WInterfaceAa;
 import bH.D;
 import bH.X;
 import com.efiAnalytics.remotefileaccess.FileDownloadProgressListener;
@@ -92,7 +92,7 @@ public class FileDownloadProgressListenerFiledownloadstarted implements FileDown
       try {
         if (this.i.c() != null) {
           g g = this.i.c();
-          aA aA = g.a(this.b);
+          WInterfaceAa WInterfaceAa = g.a(this.b);
         } 
       } catch (Exception exception) {
         Logger.getLogger(b.class.getName()).log(Level.SEVERE, (String)null, exception);

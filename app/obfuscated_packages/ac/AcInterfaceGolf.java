@@ -1,16 +1,16 @@
 package ac;
 
-import G.aG;
-import G.bT;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
 
-public class AcInterfaceGolf implements aG {
+public class AcInterfaceGolf implements GInterfaceAg {
   int a = 500;
   
   long b = 0L;
   
   long c = 0L;
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     h h = h.k();
     if (h != null && h.u() && System.currentTimeMillis() - this.b > this.a) {
       this.b = System.currentTimeMillis();

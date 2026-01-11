@@ -1,7 +1,7 @@
 package aR;
 
-import aP.bW;
-import aP.dd;
+import aP.ManagerNcomponentalpha;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
 import java.util.Properties;
@@ -24,8 +24,8 @@ public class ArInterfaceIndia implements DComponentCharlie {
   }
   
   public void a(Properties paramProperties) {
-    bW bW = dd.a().h();
-    bW.a(true);
+    ManagerNcomponentalpha ManagerNcomponentalpha = ThreadedJFrameIsoptimizeddrawingenabled.a().h();
+    ManagerNcomponentalpha.a(true);
   }
   
   public void b(Properties paramProperties) {}

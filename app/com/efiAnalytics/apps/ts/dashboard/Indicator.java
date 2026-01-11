@@ -1,11 +1,11 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.aN;
+import G.GInterfaceAn;
 import G.c;
-import G.cZ;
-import G.cq;
-import G.da;
-import G.db;
+import G.GInterfaceCz;
+import G.GComponentCq;
+import G.GInterfaceDa;
+import G.GInterfaceDb;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter;
 import com.efiAnalytics.apps.ts.dashboard.renderers.RectangleIndicatorPainter;
@@ -27,9 +27,9 @@ import java.util.logging.Logger;
 import s.ExceptionPrintstacktrace;
 
 public class Indicator extends SingleChannelDashComponent implements ImageObserver, Serializable {
-  private db i = (db)new c("On");
+  private GInterfaceDb i = (GInterfaceDb)new c("On");
   
-  private db j = (db)new c("Off");
+  private GInterfaceDb j = (GInterfaceDb)new c("Off");
   
   private Color k = Color.RED;
   
@@ -55,7 +55,7 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   
   private Image v = null;
   
-  cZ a = null;
+  GInterfaceCz a = null;
   
   String b = null;
   
@@ -65,9 +65,9 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   
   String f = null;
   
-  cq ExceptionPrintstacktrace = null;
+  GComponentCq ExceptionPrintstacktrace = null;
   
-  aN h = null;
+  GInterfaceAn h = null;
   
   public Indicator() {
     setPainter((IndicatorPainter)new RectangleIndicatorPainter());
@@ -75,7 +75,7 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
     setRelativeY(0.02D);
     setRelativeWidth(0.12D);
     setRelativeHeight(0.035D);
-    this.a = new aN(this);
+    this.a = new GInterfaceAn(this);
   }
   
   public void setRunDemo(boolean paramBoolean) {
@@ -135,7 +135,7 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   
   public void setOnText(String paramString) {
     try {
-      this.i = da.a().a(this.a, paramString);
+      this.i = GInterfaceDa.a().a(this.a, paramString);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 
@@ -161,7 +161,7 @@ public class Indicator extends SingleChannelDashComponent implements ImageObserv
   
   public void setOffText(String paramString) {
     try {
-      this.j = da.a().a(this.a, paramString);
+      this.j = GInterfaceDa.a().a(this.a, paramString);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 

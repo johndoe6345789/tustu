@@ -1,10 +1,10 @@
 package A;
 
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import java.util.List;
 
 public interface AInterfaceOscar {
-  boolean a(String paramString1, String paramString2, List paramList, bT parambT);
+  boolean a(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT);
   
   void b(double paramDouble);
   

@@ -1,6 +1,6 @@
 package bO;
 
-import G.cq;
+import G.GComponentCq;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -156,7 +156,7 @@ public TostringInBoPackagelass TostringInBoPackage {
     } 
   }
   
-  public cq n() {
+  public GComponentCq n() {
     return this.q;
   }
   

@@ -3,7 +3,7 @@ package aI;
 import G.R;
 import G.m;
 import G.o;
-import W.af;
+import W.IOExceptioninvpackage;
 import bH.D;
 import bH.c;
 import com.efiAnalytics.remotefileaccess.RemoteAccessException;
@@ -93,7 +93,7 @@ public class AiInterfaceJuliet {
       int[] arrayOfInt3 = new int[4];
       System.arraycopy(paramArrayOfint, 14, arrayOfInt3, 0, 4);
       int i = c.b(arrayOfInt3, 0, 4, false, true);
-      remoteFileDescriptor.setLastModified(af.a(i).getTime());
+      remoteFileDescriptor.setLastModified(IOExceptioninvpackage.a(i).getTime());
       long l1 = c.c(paramArrayOfint, 18, 4, true, true);
       D.c("Sector Number: " + l1);
       v v = new v();

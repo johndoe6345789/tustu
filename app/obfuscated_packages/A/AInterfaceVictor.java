@@ -2,7 +2,7 @@ package A;
 
 import G.R;
 import G.T;
-import W.ap;
+import W.WInterfaceAp;
 import bH.J;
 import java.net.InetAddress;
 import java.util.HashMap;
@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 public class AInterfaceVictor {
   private static v c = null;
   
-  private ap d = null;
+  private WInterfaceAp d = null;
   
   HashMap a = new HashMap<>();
   
@@ -138,11 +138,11 @@ public class AInterfaceVictor {
     return str;
   }
   
-  public void a(ap paramap) {
+  public void a(WInterfaceAp paramap) {
     this.d = paramap;
   }
   
-  public ap c() {
+  public WInterfaceAp c() {
     return this.d;
   }
   

@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import bt.bZ;
+import bt.BtInterfaceBz;
 
-class StringChangeCallback implements bZ {
+class StringChangeCallback implements BtInterfaceBz {
   aD(az paramaz) {}
   
   public void b(String paramString) {

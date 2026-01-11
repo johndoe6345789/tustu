@@ -1,14 +1,14 @@
 package bn;
 
 import G.R;
-import G.bI;
-import G.bM;
+import G.EqualsInGPackage;
+import G.ExceptionprintstacktraceInGPackage;
 import V.ExceptionPrintstacktrace;
 import aE.PropertiesExtension;
 import bH.D;
 import bH.X;
 import bo.JPanelExtensionInBoPackage;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import com.efiAnalytics.ui.dQ;
 import com.efiAnalytics.ui.et;
 import com.efiAnalytics.ui.s;
@@ -37,14 +37,14 @@ public BnInterfaceCharlielass BnInterfaceCharlie {
     return f;
   }
   
-  public PropertiesExtension PropertiesExtension(R paramR, bI parambI) {
+  public PropertiesExtension PropertiesExtension(R paramR, EqualsInGPackage parambI) {
     String str = X.JPanelExtensionInBoPackage(parambI.aL(), " ", "");
     if (this.e.get(str) != null)
       return (PropertiesExtension)this.e.get(str); 
     if (str.equals(PropertiesExtension))
       try {
-        s s = bQ.PropertiesExtension().PropertiesExtension(paramR, parambI.PropertiesExtension(), "", "");
-        String str1 = bM.c(paramR, parambI.PropertiesExtension());
+        s s = ManagerBfcomponentcharlie.PropertiesExtension().PropertiesExtension(paramR, parambI.PropertiesExtension(), "", "");
+        String str1 = ExceptionprintstacktraceInGPackage.c(paramR, parambI.PropertiesExtension());
         str1 = ExceptionPrintstacktrace.JPanelExtensionInBoPackage(str1);
         return (PropertiesExtension)new JPanelExtensionInBoPackage(str1, paramR, parambI.PropertiesExtension(), s, (et)new dQ((Properties)PropertiesExtension.A(), "veGenerator"), JPanelExtensionInBoPackage.p);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
@@ -56,8 +56,8 @@ public BnInterfaceCharlielass BnInterfaceCharlie {
       }  
     if (str.equals(JPanelExtensionInBoPackage))
       try {
-        s s = bQ.PropertiesExtension().PropertiesExtension(paramR, parambI.PropertiesExtension(), "", "");
-        String str1 = bM.c(paramR, parambI.PropertiesExtension());
+        s s = ManagerBfcomponentcharlie.PropertiesExtension().PropertiesExtension(paramR, parambI.PropertiesExtension(), "", "");
+        String str1 = ExceptionprintstacktraceInGPackage.c(paramR, parambI.PropertiesExtension());
         str1 = ExceptionPrintstacktrace.JPanelExtensionInBoPackage(str1);
         if (paramR.d("NARROW_BAND_EGO") != null)
           D.PropertiesExtension("Narrow band AFR target generation is are not currently supported - Use at own risk", null, null); 

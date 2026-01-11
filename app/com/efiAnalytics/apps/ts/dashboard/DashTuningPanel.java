@@ -2,9 +2,9 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import G.R;
 import G.T;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import bt.Q;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -23,7 +23,7 @@ public class DashTuningPanel extends s implements t, Serializable {
   
   JLabel b = new JLabel();
   
-  bh c = null;
+  ExceptionEqualsinaipackage c = null;
   
   JScrollPane d = new JScrollPane();
   
@@ -59,10 +59,10 @@ public class DashTuningPanel extends s implements t, Serializable {
   
   private void menuClicked(String paramString) {
     R r = getEcuConfiguration();
-    bv bv = r.e().c(paramString);
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.e().c(paramString);
     closeSettingsPanel();
-    if (bv != null) {
-      this.c = new bh(r, bv);
+    if (ArrayListExceptionprintstacktraceInGPackage != null) {
+      this.c = new ExceptionEqualsinaipackage(r, ArrayListExceptionprintstacktraceInGPackage);
       this.d.setViewportView((Component)this.c);
     } 
   }

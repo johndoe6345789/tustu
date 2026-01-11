@@ -7,7 +7,7 @@ class ThreadedInBrPackage extends Thread {
   
   boolean b = true;
   
-  public ThreadedInBrPackage(s params, int paramInt) {
+  public ThreadedInBrPackage(P paramP, int paramInt) {
     super("VE ApplyThread");
     this.a = paramInt;
     setDaemon(true);
@@ -17,14 +17,14 @@ class ThreadedInBrPackage extends Thread {
     while (this.b) {
       try {
         Thread.sleep((this.a * 1000));
-        this.c.b();
+        this.c.a();
       } catch (Exception exception) {
         D.c("Exception in the apply Thread, handled but here is the stack:");
         exception.printStackTrace();
       } 
     } 
-    while (this.c.h.b())
-      this.c.b(); 
+    while (((ag)this.c.p.get(0)).a.b())
+      this.c.a(); 
   }
   
   public void a() {
@@ -33,7 +33,7 @@ class ThreadedInBrPackage extends Thread {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/F.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/ac.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

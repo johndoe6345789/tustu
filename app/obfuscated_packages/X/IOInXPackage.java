@@ -1,6 +1,6 @@
 package X;
 
-import W.aj;
+import W.ExceptionExtension;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -86,9 +86,9 @@ public class IOInXPackage implements b {
     try {
       return cipher.doFinal(paramArrayOfbyte);
     } catch (IllegalBlockSizeException illegalBlockSizeException) {
-      throw new aj("Invalid Password");
+      throw new ExceptionExtension("Invalid Password");
     } catch (BadPaddingException badPaddingException) {
-      throw new aj("Invalid Password");
+      throw new ExceptionExtension("Invalid Password");
     } 
   }
   

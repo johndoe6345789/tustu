@@ -2,9 +2,9 @@ package com.efiAnalytics.ui;
 
 import G.R;
 import G.T;
-import G.aG;
-import G.aV;
-import G.bT;
+import G.GInterfaceAg;
+import G.GInterfaceAv;
+import G.AeInterfaceMikeTostring;
 import G.l;
 import bH.ab;
 import java.awt.BasicStroke;
@@ -21,7 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
-public class CommunicationIndicator extends JLabel implements aG, aV {
+public class CommunicationIndicator extends JLabel implements GInterfaceAg, GInterfaceAv {
   int a = 0;
   
   Insets b = eJ.a(new Insets(1, 1, 1, 1));
@@ -108,7 +108,7 @@ public class CommunicationIndicator extends JLabel implements aG, aV {
     } 
   }
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     this.a |= 0x1;
     setToolTipText(getToolTipText());
     this.i.a();

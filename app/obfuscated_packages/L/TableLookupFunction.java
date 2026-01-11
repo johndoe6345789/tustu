@@ -1,19 +1,19 @@
 package L;
 
 import ax.ExceptionInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import bH.F;
 import java.io.FileNotFoundException;
 
-public class TableLookupFunction extends ac {
-  ab a = null;
+public class TableLookupFunction extends AbstractInAxPackage {
+  AxInterfaceAb a = null;
   
-  ab b = null;
+  AxInterfaceAb b = null;
   
   String c = null;
   
-  public S(ab paramab1, ab paramab2) {
+  public S(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
   }

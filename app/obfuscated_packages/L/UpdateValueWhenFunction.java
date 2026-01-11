@@ -1,16 +1,16 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class ac extends ac {
-  ab a;
+public class AbstractInAxPackage extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c = null;
+  AxInterfaceAb c = null;
   
   double d = Double.NaN;
   
@@ -18,7 +18,7 @@ public class ac extends ac {
   
   List f;
   
-  protected ac(List<ab> paramList) {
+  protected AbstractInAxPackage(List<AxInterfaceAb> paramList) {
     this.a = paramList.get(0);
     this.b = paramList.get(1);
     if (paramList.size() > 2)
@@ -42,7 +42,7 @@ public class ac extends ac {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("updateValueWhen( ");
     for (byte b = 0; b < this.f.size(); b++) {
-      ab ab1 = this.f.get(b);
+      AxInterfaceAb ab1 = this.f.get(b);
       stringBuilder.append(ab1.toString());
       if (b + 1 < this.f.size())
         stringBuilder.append(", "); 
@@ -53,7 +53,7 @@ public class ac extends ac {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/ac.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/AbstractInAxPackage.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

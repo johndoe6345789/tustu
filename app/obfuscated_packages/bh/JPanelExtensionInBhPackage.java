@@ -1,7 +1,7 @@
 package bh;
 
 import G.R;
-import G.di;
+import G.GInterfaceDi;
 import bH.D;
 import com.efiAnalytics.tuningwidgets.panels.SelectableTablePanel;
 import com.efiAnalytics.ui.bc;
@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import n.JPanelExtensionInNPackage;
 
-public class JPanelExtensionInBhPackage extends JPanel implements di, bc {
+public class JPanelExtensionInBhPackage extends JPanel implements GInterfaceDi, bc {
   private u h = new u(this);
   
   JPanelExtensionInNPackage a = new JPanelExtensionInNPackage(16);

@@ -1,8 +1,8 @@
 package ag;
 
-import G.bT;
-import G.cR;
-import G.cV;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCr;
+import G.GInterfaceCv;
 import ad.ExceptionInAdPackage;
 import ad.AdInterfaceDelta;
 import ae.AdInterfaceDelta;
@@ -48,11 +48,11 @@ public class AgComponentAlpha implements AeInterfaceQuebec {
     return arrayList;
   }
   
-  public cR a(bT parambT) {
+  public GInterfaceCr a(AeInterfaceMikeTostring parambT) {
     return null;
   }
   
-  public cV b(bT parambT) {
+  public GInterfaceCv b(AeInterfaceMikeTostring parambT) {
     return null;
   }
   
@@ -133,7 +133,7 @@ public class AgComponentAlpha implements AeInterfaceQuebec {
     return "https://www.msefi.com/";
   }
   
-  public bT a(IOInAePackage paramp) {
+  public AeInterfaceMikeTostring a(IOInAePackage paramp) {
     return IOInAfPackage.f(paramp);
   }
   

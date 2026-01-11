@@ -1,27 +1,27 @@
 package L;
 
-import G.dj;
+import G.GInterfaceDj;
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class AccumulateFunction extends ac implements dj {
-  ab a;
+public class AccumulateFunction extends AbstractInAxPackage implements GInterfaceDj {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c = null;
+  AxInterfaceAb c = null;
   
   double d = Double.NaN;
   
   double e = Double.NaN;
   
-  protected b(ab paramab1, ab paramab2) {
+  protected b(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
   }
   
-  protected b(ab paramab1, ab paramab2, ab paramab3) {
+  protected b(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
     this.a = paramab2;
     this.b = paramab1;
     this.c = paramab3;

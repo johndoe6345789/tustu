@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.aN;
+import G.GInterfaceAn;
 import java.io.Serializable;
 
-class GaugePainterInvalidator implements aN, Serializable {
+class GaugePainterInvalidator implements GInterfaceAn, Serializable {
   GaugePainterInvalidator(Gauge paramGauge) {}
   
   public void a(String paramString1, String paramString2) {

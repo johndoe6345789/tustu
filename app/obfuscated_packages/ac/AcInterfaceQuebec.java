@@ -1,16 +1,16 @@
-package ac;
+package SerializableImplExceptionprintstacktrace;
 
-import G.aH;
-import G.ac;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
 import bH.X;
 import bH.c;
 
 public class AcInterfaceQuebec {
   private String a = null;
   
-  private ac b = null;
+  private SerializableImplExceptionprintstacktrace b = null;
   
-  private aH c = null;
+  private SerializableImpl c = null;
   
   private int d = 0;
   
@@ -52,19 +52,19 @@ public class AcInterfaceQuebec {
     this.a = paramString;
   }
   
-  public ac b() {
+  public SerializableImplExceptionprintstacktrace b() {
     return this.b;
   }
   
-  public void a(ac paramac) {
+  public void a(SerializableImplExceptionprintstacktrace paramac) {
     this.b = paramac;
   }
   
-  public aH c() {
+  public SerializableImpl c() {
     return this.c;
   }
   
-  public void a(aH paramaH) {
+  public void a(SerializableImpl paramaH) {
     this.c = paramaH;
   }
   
@@ -125,7 +125,7 @@ public class AcInterfaceQuebec {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/q.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/SerializableImplExceptionprintstacktrace/q.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

@@ -1,22 +1,22 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.bM;
-import G.bm;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImplInGPackage;
 import W.j;
 import W.n;
 import bH.D;
-import bt.an;
-import bt.bP;
+import bt.ManagerIinterfacecharlie;
+import bt.BtInterfaceBp;
 import i.IComponentAlpha;
 import i.IInterfaceCharlie;
 
-public class Table2DDataLogListener implements bP, IComponentAlpha {
-  an IComponentAlpha;
+public class Table2DDataLogListener implements BtInterfaceBp, IComponentAlpha {
+  ManagerIinterfacecharlie IComponentAlpha;
   
   R b;
   
-  bm IInterfaceCharlie;
+  CloneableImplInGPackage IInterfaceCharlie;
   
   String d = null;
   
@@ -26,7 +26,7 @@ public class Table2DDataLogListener implements bP, IComponentAlpha {
   
   String g = "UNINITIALIZED";
   
-  public O(R paramR, bm parambm, an paraman) {
+  public O(R paramR, CloneableImplInGPackage parambm, ManagerIinterfacecharlie paraman) {
     this.b = paramR;
     this.IComponentAlpha = paraman;
     this.IInterfaceCharlie = parambm;
@@ -83,7 +83,7 @@ public class Table2DDataLogListener implements bP, IComponentAlpha {
       return;
     } 
     n n = IInterfaceCharlie.IComponentAlpha().e();
-    this.e = bM.j(this.b, str);
+    this.e = ExceptionprintstacktraceInGPackage.j(this.b, str);
     if (n != null) {
       if (this.e == null || (this.e.isEmpty() && n.IComponentAlpha(str) != null))
         this.e = str; 
@@ -116,7 +116,7 @@ public class Table2DDataLogListener implements bP, IComponentAlpha {
     if (n.IComponentAlpha(str) != null) {
       this.d = str;
     } else {
-      this.d = bM.j(this.b, str);
+      this.d = ExceptionprintstacktraceInGPackage.j(this.b, str);
     } 
     if (n != null) {
       if (this.d == null || (this.d.isEmpty() && n.IComponentAlpha(str) != null))

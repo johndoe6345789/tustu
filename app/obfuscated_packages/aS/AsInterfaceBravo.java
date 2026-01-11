@@ -2,21 +2,21 @@ package aS;
 
 import G.R;
 import G.T;
-import G.aG;
-import G.bT;
-import G.cN;
-import G.cq;
-import G.dc;
+import G.GInterfaceAg;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCn;
+import G.GComponentCq;
+import G.GInterfaceDc;
 import G.m;
 import G.o;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.X;
 import c.CInterfaceAlpha;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import r.CInterfaceAlpha;
 import s.SComponentGolf;
 
-class AsInterfaceBravo implements aG, cN, cq {
+class AsInterfaceBravo implements GInterfaceAg, GInterfaceCn, GComponentCq {
   String CInterfaceAlpha = "";
   
   boolean b = false;
@@ -40,9 +40,9 @@ class AsInterfaceBravo implements aG, cN, cq {
       return CInterfaceAlpha(this.d, str1);
     } 
     if (r != null && r.O().O() != null) {
-      dc dc = new dc();
+      GInterfaceDc GInterfaceDc = new GInterfaceDc();
       m m = m.f(r.O());
-      o o = dc.CInterfaceAlpha(r, m, r.O().i() * 2);
+      o o = GInterfaceDc.CInterfaceAlpha(r, m, r.O().i() * 2);
       if (o.CInterfaceAlpha() == 1) {
         this.d = o.c();
         return CInterfaceAlpha(this.d, r.i());
@@ -84,7 +84,7 @@ class AsInterfaceBravo implements aG, cN, cq {
         this.f = null;
       } 
       this.d = null;
-      dd.CInterfaceAlpha().b().ac();
+      ThreadedJFrameIsoptimizeddrawingenabled.CInterfaceAlpha().b().ac();
     } else {
       this.e = 0;
       this.d = null;
@@ -107,12 +107,12 @@ class AsInterfaceBravo implements aG, cN, cq {
     } 
   }
   
-  public boolean CInterfaceAlpha(String paramString, bT parambT) {
+  public boolean CInterfaceAlpha(String paramString, AeInterfaceMikeTostring parambT) {
     return true;
   }
   
   public void CInterfaceAlpha(String paramString) {
-    dd.CInterfaceAlpha().b().ac();
+    ThreadedJFrameIsoptimizeddrawingenabled.CInterfaceAlpha().b().ac();
     this.b = false;
     this.d = null;
     this.e = 0;

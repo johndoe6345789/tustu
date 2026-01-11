@@ -1,6 +1,6 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import W.ag;
+import W.FileInWPackage;
 import com.efiAnalytics.ui.eJ;
 import h.ClassTypeInHPackage;
 import java.awt.BorderLayout;
@@ -42,7 +42,7 @@ public class RestorePointDetailsPanel extends JPanel {
     add("Center", jScrollPane);
   }
   
-  public void a(ag paramag) {
+  public void a(FileInWPackage paramag) {
     if (paramag == null) {
       this.a.setText("");
       this.ClassTypeInHPackage.setText("");

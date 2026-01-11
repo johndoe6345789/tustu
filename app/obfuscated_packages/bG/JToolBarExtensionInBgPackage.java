@@ -1,8 +1,8 @@
 package bG;
 
 import V.ExceptionInVPackage;
-import W.ap;
-import W.ar;
+import W.WInterfaceAp;
+import W.Properties;
 import aE.ExceptionInVPackage;
 import bH.D;
 import bH.I;
@@ -29,14 +29,14 @@ import javax.swing.JToolBar;
 public class JToolBarExtensionInBgPackage extends JToolBar implements j {
   m ExceptionInVPackage;
   
-  ap b;
+  WInterfaceAp b;
   
   ArrayList c = new ArrayList();
   
   public JToolBarExtensionInBgPackage(m paramm) {
     this.ExceptionInVPackage = paramm;
     b();
-    this.b = (ap)new ar((Properties)ExceptionInVPackage.A(), "TriggerWheelewditor_" + paramm.getName());
+    this.b = (WInterfaceAp)new Properties((Properties)ExceptionInVPackage.A(), "TriggerWheelewditor_" + paramm.getName());
     paramm.ExceptionInVPackage(this);
     paramm.setFocusable(true);
     paramm.addKeyListener(new D(this));

@@ -4,7 +4,7 @@ import G.r;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.VInterfaceHotel;
-import W.aa;
+import W.NetworkExceptionprintstacktrace;
 import W.z;
 import av.AvInterfaceCharlie;
 import av.AvComponentFoxtrot;
@@ -66,10 +66,10 @@ public class hX {
   }
   
   private r[] ExceptionInVPackage(File paramFile) {
-    aa aa = new aa();
+    NetworkExceptionprintstacktrace NetworkExceptionprintstacktrace = new NetworkExceptionprintstacktrace();
     String[] arrayOfString = null;
     try {
-      arrayOfString = aa.AvInterfaceCharlie(paramFile);
+      arrayOfString = NetworkExceptionprintstacktrace.AvInterfaceCharlie(paramFile);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       D.ExceptionInVPackage("Failed to retrieve settings, loading without.");
     } 

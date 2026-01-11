@@ -1,0 +1,13 @@
+package G;
+
+import java.io.Serializable;
+
+public interface SerializableExtension extends Serializable {
+  boolean a(String paramString, byte[] paramArrayOfbyte);
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/aD.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

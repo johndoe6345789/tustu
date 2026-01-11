@@ -2,7 +2,7 @@ package aY;
 
 import G.R;
 import G.T;
-import W.ag;
+import W.FileInWPackage;
 import aP.NetworkHashMap;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
@@ -14,10 +14,10 @@ class AyInterfaceVictor implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     R r = T.a().c(this.a.NetworkHashMap.a());
-    ag ag = this.a.b.a();
-    if (r == null || ag == null)
+    FileInWPackage FileInWPackage = this.a.b.a();
+    if (r == null || FileInWPackage == null)
       bV.d(SComponentGolf.b("You must select a Restore Point and a Controller to restore."), this.a.b); 
-    String str = ag.a().getAbsolutePath();
+    String str = FileInWPackage.a().getAbsolutePath();
     NetworkHashMap.a().b(r, str);
   }
 }

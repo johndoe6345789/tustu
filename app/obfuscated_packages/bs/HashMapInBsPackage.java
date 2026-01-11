@@ -1,9 +1,9 @@
 package bs;
 
 import G.R;
-import G.aW;
-import G.bm;
-import G.dp;
+import G.SerializableImplInGPackage;
+import G.CloneableImplInGPackage;
+import G.GInterfaceDp;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
 import bH.D;
@@ -28,37 +28,37 @@ public class HashMapInBsPackage {
     return ExceptionInVPackage;
   }
   
-  public ArrayList ExceptionInVPackage(R paramR, dp paramdp) {
+  public ArrayList ExceptionInVPackage(R paramR, GInterfaceDp paramdp) {
     String str = paramR.c() + "." + paramdp.c();
     if (!this.b.containsKey(str)) {
       String str1 = paramR.c() + "." + paramdp.c();
       dQ dQ = new dQ((Properties)ExceptionInVPackage.A(), str1);
       ArrayList<TostringInBlPackage> arrayList = new ArrayList();
-      Iterator<aW> iterator = paramdp.i();
+      Iterator<SerializableImplInGPackage> iterator = paramdp.i();
       while (iterator.hasNext()) {
-        aW aW = iterator.next();
+        SerializableImplInGPackage SerializableImplInGPackage = iterator.next();
         TostringInBlPackage TostringInBlPackage = null;
-        if (aW.aL().startsWith("std_"))
+        if (SerializableImplInGPackage.aL().startsWith("std_"))
           try {
-            TostringInBlPackage = ExceptionInVPackage(paramR, paramdp, aW, (et)dQ);
+            TostringInBlPackage = ExceptionInVPackage(paramR, paramdp, SerializableImplInGPackage, (et)dQ);
           } catch (ExceptionInVPackage ExceptionInVPackage) {
-            D.b("Unable to create Standard VE Analyze Filter: " + aW.aL() + ", will try as ExceptionInVPackage normal filter.");
+            D.b("Unable to create Standard VE Analyze Filter: " + SerializableImplInGPackage.aL() + ", will try as ExceptionInVPackage normal filter.");
             ExceptionInVPackage.printStackTrace();
           }  
         if (TostringInBlPackage == null) {
           TostringInBlPackage = new TostringInBlPackage();
-          TostringInBlPackage.ExceptionInVPackage(aW.ExceptionInVPackage());
-          TostringInBlPackage.c(aW.b());
-          TostringInBlPackage.ExceptionInVPackage(aW.c());
-          if (aW.SComponentGolf()) {
-            double d = Double.parseDouble(ExceptionInVPackage((et)dQ, TostringInBlPackage.SComponentGolf(), aW.c() + ""));
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.ExceptionInVPackage());
+          TostringInBlPackage.c(SerializableImplInGPackage.b());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.c());
+          if (SerializableImplInGPackage.SComponentGolf()) {
+            double d = Double.parseDouble(ExceptionInVPackage((et)dQ, TostringInBlPackage.SComponentGolf(), SerializableImplInGPackage.c() + ""));
             TostringInBlPackage.ExceptionInVPackage(d);
             TostringInBlPackage.ExceptionInVPackage((et)dQ);
           } 
-          TostringInBlPackage.ExceptionInVPackage(aW.d());
-          TostringInBlPackage.d(aW.e());
-          TostringInBlPackage.e(aW.aL());
-          TostringInBlPackage.ExceptionInVPackage(aW.SComponentGolf());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.d());
+          TostringInBlPackage.d(SerializableImplInGPackage.e());
+          TostringInBlPackage.e(SerializableImplInGPackage.aL());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.SComponentGolf());
         } 
         TostringInBlPackage.d();
         arrayList.add(TostringInBlPackage);
@@ -68,9 +68,9 @@ public class HashMapInBsPackage {
     return (ArrayList)this.b.get(str);
   }
   
-  private TostringInBlPackage ExceptionInVPackage(R paramR, dp paramdp, aW paramaW, et paramet) {
-    bm bm = (bm)paramR.e().c(paramdp.c());
-    if (bm == null)
+  private TostringInBlPackage ExceptionInVPackage(R paramR, GInterfaceDp paramdp, SerializableImplInGPackage paramaW, et paramet) {
+    CloneableImplInGPackage CloneableImplInGPackage = (CloneableImplInGPackage)paramR.e().c(paramdp.c());
+    if (CloneableImplInGPackage == null)
       throw new ExceptionInVPackage("Can not find WUE Curve: " + paramdp.c() + " in current configuration."); 
     TostringInBlPackage TostringInBlPackage = new TostringInBlPackage();
     if (paramaW.aL().equals("std_Custom")) {

@@ -1,6 +1,6 @@
 package aS;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import com.efiAnalytics.ui.bV;
 import java.awt.BorderLayout;
 import java.util.logging.Level;
@@ -28,9 +28,9 @@ class ThreadExtensionInAsPackage extends Thread {
       jPanel.add("Center", jLabel);
       d d = new d(this);
       if (this.IOPropertiesUsingFile.SComponentGolf.d) {
-        bV.IOPropertiesUsingFile(jPanel, dd.IOPropertiesUsingFile().c(), SComponentGolf.b("Attention") + "!", d);
+        bV.IOPropertiesUsingFile(jPanel, ThreadedJFrameIsoptimizeddrawingenabled.IOPropertiesUsingFile().c(), SComponentGolf.b("Attention") + "!", d);
       } else {
-        bV.IOPropertiesUsingFile(jPanel, dd.IOPropertiesUsingFile().c(), SComponentGolf.b("Error") + "!", d);
+        bV.IOPropertiesUsingFile(jPanel, ThreadedJFrameIsoptimizeddrawingenabled.IOPropertiesUsingFile().c(), SComponentGolf.b("Error") + "!", d);
       } 
     } 
     try {
@@ -42,7 +42,7 @@ class ThreadExtensionInAsPackage extends Thread {
     if (this.IOPropertiesUsingFile.d != null && this.IOPropertiesUsingFile.d.length() > 0)
       str = str + "\n \nReported Setting Error:       \n" + this.IOPropertiesUsingFile.d; 
     str = str + "\n\nYou must correct this error, then power cycle your controller.";
-    this.IOPropertiesUsingFile.f = dd.IOPropertiesUsingFile().b();
+    this.IOPropertiesUsingFile.f = ThreadedJFrameIsoptimizeddrawingenabled.IOPropertiesUsingFile().b();
     this.IOPropertiesUsingFile.f.l(str);
   }
 }

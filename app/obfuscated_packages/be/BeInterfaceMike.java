@@ -1,7 +1,7 @@
 package be;
 
 import G.R;
-import G.aH;
+import G.SerializableImpl;
 import G.i;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
@@ -175,8 +175,8 @@ public class BeInterfaceMike extends JPanel implements o {
       bV.d(SComponentGolf.b("You must enter ExceptionInVPackage name for the new OutputChannel."), this);
       return false;
     } 
-    aH aH = this.q.SComponentGolf(str);
-    if (aH != null && !aH.aN()) {
+    SerializableImpl SerializableImpl = this.q.SComponentGolf(str);
+    if (SerializableImpl != null && !SerializableImpl.aN()) {
       boolean bool = bV.ExceptionInVPackage(SComponentGolf.b("There is already ExceptionInVPackage channel by the same name in the firmware definition.") + "\n" + SComponentGolf.b("Your new Channel will over ride the existing channel.") + "\n\n" + SComponentGolf.b("Are you sure you wish to use this channel name?"), this, true);
       if (!bool)
         return false; 

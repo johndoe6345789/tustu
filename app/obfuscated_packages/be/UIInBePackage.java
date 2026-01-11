@@ -3,8 +3,8 @@ package be;
 import G.Q;
 import G.R;
 import G.T;
-import G.aH;
-import G.ah;
+import G.SerializableImpl;
+import G.GInterfaceAh;
 import V.ExceptionInVPackage;
 import aP.NetworkHashMap;
 import bH.X;
@@ -166,13 +166,13 @@ public class UIInBePackage extends JPanel implements p {
       bV.d("Failed to create new component", this);
       return;
     } 
-    if (q instanceof ah) {
+    if (q instanceof GInterfaceAh) {
       String str1 = "Name of new " + DefaultMutableTreeNodeExtension.toString();
       String str2 = bV.ExceptionInVPackage(this, false, SComponentGolf.b(str1), SComponentGolf.b("My") + X.b(DefaultMutableTreeNodeExtension.toString(), " ", ""));
       if (str2 == null || str2.trim().isEmpty())
         return; 
       q.v(X.b(str2, " ", "_"));
-      ((ah)q).d(SComponentGolf.b("My Gauges"));
+      ((GInterfaceAh)q).d(SComponentGolf.b("My Gauges"));
     } else {
       String str = SComponentGolf.b("My") + X.b(DefaultMutableTreeNodeExtension.toString(), " ", "");
       q.v(X.b(str, " ", "_"));
@@ -186,11 +186,11 @@ public class UIInBePackage extends JPanel implements p {
   
   private void NetworkHashMap() {
     if (this.i.b != null)
-      if (this.i.b instanceof aH) {
-        aH aH = (aH)this.i.b;
-        if (this.c.ExceptionInVPackage(aH.aL()) && bV.ExceptionInVPackage(SComponentGolf.b("There are Gauge Templates referencing this OutputChannel.") + "\n" + SComponentGolf.b("Would you like to delete these Gauge Templates also?."), this, true))
-          this.c.b(aH.aL()); 
-        this.c.b(aH);
+      if (this.i.b instanceof SerializableImpl) {
+        SerializableImpl SerializableImpl = (SerializableImpl)this.i.b;
+        if (this.c.ExceptionInVPackage(SerializableImpl.aL()) && bV.ExceptionInVPackage(SComponentGolf.b("There are Gauge Templates referencing this OutputChannel.") + "\n" + SComponentGolf.b("Would you like to delete these Gauge Templates also?."), this, true))
+          this.c.b(SerializableImpl.aL()); 
+        this.c.b(SerializableImpl);
       } else {
         this.c.b(this.i.b);
       }  

@@ -1,8 +1,8 @@
 package q;
 
 import bt.A;
-import bt.bK;
-import bt.bb;
+import bt.JTextFieldExtension;
+import bt.JLabelExtensionSettext;
 import bt.y;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
@@ -14,11 +14,11 @@ public class QInterfaceFoxtrot {
     c c = new c();
     h.a().a(A.class, c);
     e e = new e();
-    h.a().a(bK.class, e);
+    h.a().a(JTextFieldExtension.class, e);
     b b = new b();
     h.a().a(y.class, b);
     d d = new d();
-    h.a().a(bb.class, d);
+    h.a().a(JLabelExtensionSettext.class, d);
     b();
   }
   

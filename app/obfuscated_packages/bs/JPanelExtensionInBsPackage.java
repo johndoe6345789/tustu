@@ -1,7 +1,7 @@
 package bs;
 
 import G.R;
-import G.dp;
+import G.GInterfaceDp;
 import bH.X;
 import bL.TostringInBlPackage;
 import com.efiAnalytics.ui.bV;
@@ -16,11 +16,11 @@ import s.SComponentGolf;
 public class JPanelExtensionInBsPackage extends JPanel {
   R a = null;
   
-  dp b = null;
+  GInterfaceDp b = null;
   
   ArrayList c = null;
   
-  public JPanelExtensionInBsPackage(R paramR, dp paramdp) {
+  public JPanelExtensionInBsPackage(R paramR, GInterfaceDp paramdp) {
     this.a = paramR;
     setLayout(new BorderLayout());
     e e = e.a();

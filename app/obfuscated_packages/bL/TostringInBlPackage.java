@@ -1,7 +1,7 @@
 package bL;
 
-import G.aH;
-import G.aI;
+import G.SerializableImpl;
+import G.GInterfaceAi;
 import G.i;
 import bH.D;
 import com.efiAnalytics.ui.et;
@@ -25,7 +25,7 @@ public class TostringInBlPackage {
   
   private boolean i = true;
   
-  public boolean a(aI paramaI, byte[] paramArrayOfbyte) {
+  public boolean a(GInterfaceAi paramaI, byte[] paramArrayOfbyte) {
     boolean bool = false;
     if (this.f == 128) {
       if (this.c == null || this.c.equals(""))
@@ -39,8 +39,8 @@ public class TostringInBlPackage {
       } 
     } else {
       try {
-        aH aH = paramaI.g(this.b);
-        double d1 = aH.b(paramArrayOfbyte);
+        SerializableImpl SerializableImpl = paramaI.g(this.b);
+        double d1 = SerializableImpl.b(paramArrayOfbyte);
         double d2 = 0.0D;
         d2 = this.e;
         bool = a(d1, d2, this.f);

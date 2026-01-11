@@ -1,17 +1,17 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class IsTrueForFunction extends ac {
-  private ab b;
+public class IsTrueForFunction extends AbstractInAxPackage {
+  private AxInterfaceAb b;
   
-  private ab c;
+  private AxInterfaceAb c;
   
   long a = -1L;
   
-  public E(ab paramab1, ab paramab2) {
+  public E(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.b = paramab1;
     this.c = paramab2;
   }

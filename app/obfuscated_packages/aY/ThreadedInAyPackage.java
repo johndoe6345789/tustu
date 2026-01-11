@@ -1,9 +1,9 @@
 package aY;
 
 import G.R;
-import G.aF;
+import G.GInterfaceAf;
 import V.ExceptionInVPackage;
-import aP.ab;
+import aP.JComboBoxExtension;
 import aZ.AzInterfaceBravo;
 import ac.AcComponentCharlie;
 import bH.D;
@@ -45,7 +45,7 @@ public class ThreadedInAyPackage extends JDialog {
   
   JComboBox h = new JComboBox();
   
-  ab ZInterfaceIndia = null;
+  JComboBoxExtension ZInterfaceIndia = null;
   
   ZInterfaceIndia j = new ZInterfaceIndia();
   
@@ -91,7 +91,7 @@ public class ThreadedInAyPackage extends JDialog {
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(1, 0, 5, 5));
     jPanel3.add(new JLabel(SComponentGolf.AzInterfaceBravo("Port") + ":", 4));
-    this.ZInterfaceIndia = new ab(paramR);
+    this.ZInterfaceIndia = new JComboBoxExtension(paramR);
     this.ZInterfaceIndia.setPreferredSize(new Dimension(80, 24));
     jPanel3.add(ExceptionInVPackage((Component)this.ZInterfaceIndia, "North"));
     this.ZInterfaceIndia.setSelectedItem(paramR.O().s());
@@ -166,7 +166,7 @@ public class ThreadedInAyPackage extends JDialog {
     this.l.ExceptionInVPackage(this.n);
     if (!this.n);
     this.m = (AcComponentCharlie)new AzInterfaceBravo();
-    this.l.ExceptionInVPackage((aF)this.m);
+    this.l.ExceptionInVPackage((GInterfaceAf)this.m);
     this.l.ExceptionInVPackage(new ZInterfaceIndia(this));
     this.SComponentGolf.setText(SComponentGolf.AzInterfaceBravo("Polling device") + "...");
     this.h.setEnabled(false);
@@ -182,7 +182,7 @@ public class ThreadedInAyPackage extends JDialog {
     if (this.l != null) {
       this.l.AzInterfaceBravo();
       if (this.m != null) {
-        this.l.AzInterfaceBravo((aF)this.m);
+        this.l.AzInterfaceBravo((GInterfaceAf)this.m);
         try {
           this.m.l();
         } catch (ExceptionInVPackage a1) {

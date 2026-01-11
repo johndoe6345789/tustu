@@ -3,20 +3,20 @@ package com.efiAnalytics.apps.ts.dashboard;
 import C.ExceptionInVPackage;
 import G.R;
 import G.T;
-import G.aF;
-import G.aG;
-import G.ah;
-import G.ak;
-import G.bT;
-import G.cq;
-import G.cu;
+import G.GInterfaceAf;
+import G.GInterfaceAg;
+import G.GInterfaceAh;
+import G.Exceptionprintstacktrace;
+import G.AeInterfaceMikeTostring;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import G.RInterfaceIndia;
 import I.ArrayListInIPackage;
 import I.IInterfaceDelta;
 import K.ArrayListInIPackage;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
-import W.ap;
+import W.WInterfaceAp;
 import aE.ExceptionInVPackage;
 import bH.A;
 import bH.D;
@@ -99,14 +99,14 @@ import r.RComponentMike;
 import r.RInterfaceOscar;
 import r.RInterfacePapa;
 import s.ExceptionPrintstacktrace;
-import t.aj;
+import t.ThreadedInTPackage;
 import t.w;
 import v.ArrayListInIPackage;
 
-public class x extends JComponent implements aF, aG, ac, bc {
-  private Image aj = null;
+public class x extends JComponent implements GInterfaceAf, GInterfaceAg, ac, bc {
+  private Image ThreadedInTPackage = null;
   
-  private Image ak = null;
+  private Image Exceptionprintstacktrace = null;
   
   private Image al = null;
   
@@ -134,7 +134,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   boolean RInterfaceIndia = false;
   
-  private String ap = "";
+  private String WInterfaceAp = "";
   
   private Image aq = null;
   
@@ -150,7 +150,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private boolean aw = false;
   
-  ap IComponentJuliet = null;
+  WInterfaceAp IComponentJuliet = null;
   
   private boolean ax = false;
   
@@ -172,9 +172,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private w aE = null;
   
-  private ArrayList aF = new ArrayList();
+  private ArrayList GInterfaceAf = new ArrayList();
   
-  private boolean aG = true;
+  private boolean GInterfaceAg = true;
   
   private String aH = null;
   
@@ -316,7 +316,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   int ag = eJ.ExceptionInVPackage(2);
   
-  Stroke ah = new BasicStroke(this.ag);
+  Stroke GInterfaceAh = new BasicStroke(this.ag);
   
   static int ai = 0;
   
@@ -334,8 +334,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
       setDoubleBuffered(true);
       setFocusable(true);
       this.aN = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.ck, "false").equals("true");
-      this.aZ = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aF, this.aZ);
-      this.aY = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.aG, this.aY);
+      this.aZ = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.GInterfaceAf, this.aZ);
+      this.aY = ExceptionInVPackage.ExceptionInVPackage().ExceptionInVPackage(ExceptionInVPackage.GInterfaceAg, this.aY);
       this.f = new X(this);
       this.f.start();
     } 
@@ -402,7 +402,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public void ExceptionInVPackage() {
     for (s s : r())
       ArrayListInIPackage(s); 
-    this.ak = null;
+    this.Exceptionprintstacktrace = null;
     repaint();
   }
   
@@ -410,9 +410,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
     params.removeMouseListener(this.ExceptionPrintstacktrace);
     params.removeMouseMotionListener(this.ExceptionPrintstacktrace);
     remove(params);
-    if (params instanceof cq) {
-      cu cu = cu.ExceptionInVPackage();
-      cu.ExceptionInVPackage((cq)params);
+    if (params instanceof GComponentCq) {
+      ManagerUsingArrayList ManagerUsingArrayList = ManagerUsingArrayList.ExceptionInVPackage();
+      ManagerUsingArrayList.ExceptionInVPackage((GComponentCq)params);
     } 
   }
   
@@ -428,13 +428,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void setBackground(Color paramColor) {
     super.setBackground(paramColor);
-    this.aj = null;
+    this.ThreadedInTPackage = null;
     this.aq = null;
     if (getParent() != null)
       getParent().setBackground(paramColor); 
   }
   
-  private boolean ah() {
+  private boolean GInterfaceAh() {
     return (getComponentCount() > 0 && !(getComponent(0) instanceof HtmlDisplay));
   }
   
@@ -445,7 +445,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void paint(Graphics paramGraphics) {
     long l1 = System.nanoTime();
-    boolean bool = (D() && ah()) ? true : false;
+    boolean bool = (D() && GInterfaceAh()) ? true : false;
     if (bool) {
       ExceptionInVPackage(paramGraphics, D(), bool);
     } else {
@@ -496,7 +496,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ExceptionInVPackage(Graphics paramGraphics, boolean paramBoolean) {
-    if ((paramBoolean || L()) && (this.aK.equals(RInterfacePapa) || this.aq == null || this.ap == null || this.ap.equals(""))) {
+    if ((paramBoolean || L()) && (this.aK.equals(RInterfacePapa) || this.aq == null || this.WInterfaceAp == null || this.WInterfaceAp.equals(""))) {
       Color color = getBackground();
       if (this.aJ != null && this.RComponentMike && this.aJ.getAlpha() > 0) {
         Point2D.Float float_1 = new Point2D.Float((getWidth() / 3), (getHeight() * 5 / 6));
@@ -508,8 +508,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } 
       paramGraphics.fillRect(0, 0, getWidth(), getHeight());
     } 
-    if (this.ap != null && !this.ap.equals("") && this.aq == null)
-      this.aq = Toolkit.getDefaultToolkit().getImage(this.ap); 
+    if (this.WInterfaceAp != null && !this.WInterfaceAp.equals("") && this.aq == null)
+      this.aq = Toolkit.getDefaultToolkit().getImage(this.WInterfaceAp); 
     if ((paramBoolean || L()) && this.aq != null && this.aq.getWidth(null) > 0)
       if (this.aK.equals(n)) {
         paramGraphics.drawImage(this.aq, 0, 0, getWidth(), getHeight(), null);
@@ -548,7 +548,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       if (paramBoolean2) {
         Image image = aD();
         Graphics2D graphics2D1 = (Graphics2D)image.getGraphics();
-        if (aj()) {
+        if (ThreadedInTPackage()) {
           Graphics2D graphics2D = (Graphics2D)paramGraphics;
           graphics2D1.setColor(this.ExceptionInVPackage);
           graphics2D1.setComposite(AlphaComposite.getInstance(2));
@@ -667,7 +667,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     paramGraphics.drawImage(this.al, 0, 0, null);
   }
   
-  public boolean ExceptionInVPackage(String paramString, bT parambT) {
+  public boolean ExceptionInVPackage(String paramString, AeInterfaceMikeTostring parambT) {
     if (ExceptionInVPackage.A().E().ArrayListInIPackage().equals(paramString)) {
       this.IInterfaceDelta = 6.0D;
       ab();
@@ -710,7 +710,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           gauge.invalidate();
         } else if (s instanceof Indicator) {
           Indicator indicator = (Indicator)s;
-          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.ExceptionInVPackage))
+          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(ManagerUsingArrayList.ExceptionInVPackage))
             indicator.setValue(0.0D); 
           indicator.setRunDemo(false);
         } 
@@ -722,7 +722,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           gauge.invalidate();
         } else if (s instanceof Indicator) {
           Indicator indicator = (Indicator)s;
-          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(cu.ExceptionInVPackage)) {
+          if (indicator.getEcuConfigurationName() != null && !indicator.getEcuConfigurationName().equals(ManagerUsingArrayList.ExceptionInVPackage)) {
             indicator.goDead();
           } else if (indicator.isRunDemo()) {
             indicator.setRunDemo(false);
@@ -783,13 +783,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
           graphics.dispose();
           s.setDirty(false);
         } 
-        if (this.aF.contains(s))
+        if (this.GInterfaceAf.contains(s))
           ExceptionInVPackage(paramGraphics, s); 
       } 
     } 
   }
   
-  private boolean aj() {
+  private boolean ThreadedInTPackage() {
     if (this.aT)
       return true; 
     Component[] arrayOfComponent = getComponents();
@@ -834,7 +834,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           graphics2D.dispose();
           s.setDirty(false);
         } 
-        if (this.aF.contains(s))
+        if (this.GInterfaceAf.contains(s))
           ExceptionInVPackage(paramGraphics, s); 
       } 
     } 
@@ -906,7 +906,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
         Graphics2D graphics2D = (Graphics2D)paramGraphics;
         graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        graphics2D.setStroke(this.ah);
+        graphics2D.setStroke(this.GInterfaceAh);
       } 
       paramGraphics.setFont(getFont());
       Color color = Color.yellow;
@@ -966,7 +966,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
         jMenu.add(L).addActionListener(v);
         JMenuItem jMenuItem1 = parambq.add(O);
         jMenuItem1.addActionListener(v);
-        if (this.aF.size() > 0) {
+        if (this.GInterfaceAf.size() > 0) {
           jMenu.add(M).addActionListener(v);
         } else {
           jMenuItem1.setEnabled(false);
@@ -1008,19 +1008,19 @@ public class x extends JComponent implements aF, aG, ac, bc {
         jMenu1.add(z).addActionListener(v);
       } 
       jMenu.insert(jMenu1, ManagerPreferredlayoutsize++);
-      if (this.aF.size() > 0) {
+      if (this.GInterfaceAf.size() > 0) {
         JMenuItem jMenuItem = new JMenuItem(A);
         jMenuItem.addActionListener(v);
         jMenu.insert(jMenuItem, ManagerPreferredlayoutsize++);
       } 
       if (am()) {
         parambq.addSeparator();
-        if (this.aF.size() > 1) {
+        if (this.GInterfaceAf.size() > 1) {
           JMenuItem jMenuItem = new JMenuItem(U);
           jMenuItem.addActionListener(v);
           jMenu.insert(jMenuItem, ManagerPreferredlayoutsize++);
-          if (this.aF.get(0) instanceof Gauge) {
-            Gauge gauge = this.aF.get(0);
+          if (this.GInterfaceAf.get(0) instanceof Gauge) {
+            Gauge gauge = this.GInterfaceAf.get(0);
             if (gauge.getGroupId() != 0) {
               jMenuItem = new JMenuItem(V);
               jMenuItem.addActionListener(v);
@@ -1083,29 +1083,29 @@ public class x extends JComponent implements aF, aG, ac, bc {
       while (iterator.hasNext())
         arrayList.add(iterator.next()); 
       List list = S.ExceptionInVPackage(arrayList);
-      O RInterfaceOscar = new O(this, cu.ExceptionInVPackage);
+      O RInterfaceOscar = new O(this, ManagerUsingArrayList.ExceptionInVPackage);
       HashMap<Object, Object> hashMap = new HashMap<>();
-      for (ah ah : list) {
+      for (GInterfaceAh GInterfaceAh : list) {
         String str = "";
         try {
-          str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.k().ExceptionInVPackage());
+          str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(GInterfaceAh.k().ExceptionInVPackage());
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
         } 
-        JMenuItem jMenuItem = new JMenuItem(str + " - " + ah.aL());
-        jMenuItem.setActionCommand(ah.aL());
+        JMenuItem jMenuItem = new JMenuItem(str + " - " + GInterfaceAh.aL());
+        jMenuItem.setActionCommand(GInterfaceAh.aL());
         jMenuItem.addActionListener(RInterfaceOscar);
-        if (ah.RInterfacePapa() == null || ah.RInterfacePapa().equals("")) {
+        if (GInterfaceAh.RInterfacePapa() == null || GInterfaceAh.RInterfacePapa().equals("")) {
           jMenu1.add(jMenuItem);
           continue;
         } 
-        if (hashMap.containsKey(ah.RInterfacePapa())) {
-          ((ArrayList<JMenuItem>)hashMap.get(ah.RInterfacePapa())).add(jMenuItem);
+        if (hashMap.containsKey(GInterfaceAh.RInterfacePapa())) {
+          ((ArrayList<JMenuItem>)hashMap.get(GInterfaceAh.RInterfacePapa())).add(jMenuItem);
           continue;
         } 
         ArrayList<JMenuItem> arrayList1 = new ArrayList();
         arrayList1.add(jMenuItem);
-        hashMap.put(ah.RInterfacePapa(), arrayList1);
+        hashMap.put(GInterfaceAh.RInterfacePapa(), arrayList1);
       } 
       for (String str : hashMap.keySet()) {
         jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize(str));
@@ -1125,29 +1125,29 @@ public class x extends JComponent implements aF, aG, ac, bc {
           if (r != null && r.B() != null) {
             byte b3 = 0;
             byte b4 = 25;
-            ArrayList<ah> arrayList1 = new ArrayList();
-            Iterator<ah> iterator1 = r.B();
+            ArrayList<GInterfaceAh> arrayList1 = new ArrayList();
+            Iterator<GInterfaceAh> iterator1 = r.B();
             while (iterator1.hasNext()) {
-              ah ah = iterator1.next();
+              GInterfaceAh GInterfaceAh = iterator1.next();
               boolean bool = true;
               try {
-                bool = RInterfacePapa.ExceptionInVPackage(ah.aJ(), r);
+                bool = RInterfacePapa.ExceptionInVPackage(GInterfaceAh.aJ(), r);
               } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
                 Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
               } 
               if (bool)
-                arrayList1.add(ah); 
+                arrayList1.add(GInterfaceAh); 
             } 
             List list1 = S.ExceptionInVPackage(arrayList1);
             iterator1 = null;
             String str = null;
-            for (ah ah : list1) {
-              if (b3++ % b4 == 0 || !X.ExceptionInVPackage(ah.RInterfacePapa(), str)) {
-                if (!X.ExceptionInVPackage(ah.RInterfacePapa(), str)) {
+            for (GInterfaceAh GInterfaceAh : list1) {
+              if (b3++ % b4 == 0 || !X.ExceptionInVPackage(GInterfaceAh.RInterfacePapa(), str)) {
+                if (!X.ExceptionInVPackage(GInterfaceAh.RInterfacePapa(), str)) {
                   b3 = 1;
-                  str = ah.RInterfacePapa();
+                  str = GInterfaceAh.RInterfacePapa();
                 } 
-                String str2 = (ah.RInterfacePapa() == null) ? (ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Templates") + " ") : ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.RInterfacePapa());
+                String str2 = (GInterfaceAh.RInterfacePapa() == null) ? (ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Gauge Templates") + " ") : ExceptionPrintstacktrace.ManagerPreferredlayoutsize(GInterfaceAh.RInterfacePapa());
                 String str3 = (b3 > b4) ? ((b3 / b4 + 1) + "") : "";
                 if (arrayOfString.length == 1) {
                   jMenu1 = new JMenu(str2 + " " + str3);
@@ -1166,12 +1166,12 @@ public class x extends JComponent implements aF, aG, ac, bc {
               } 
               String str1 = "";
               try {
-                str1 = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ah.k().ExceptionInVPackage());
+                str1 = ExceptionPrintstacktrace.ManagerPreferredlayoutsize(GInterfaceAh.k().ExceptionInVPackage());
               } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
                 Logger.getLogger(x.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
               } 
-              JMenuItem jMenuItem = new JMenuItem(str1 + " - " + ah.aL());
-              jMenuItem.setActionCommand(ah.aL());
+              JMenuItem jMenuItem = new JMenuItem(str1 + " - " + GInterfaceAh.aL());
+              jMenuItem.setActionCommand(GInterfaceAh.aL());
               jMenuItem.addActionListener(RInterfaceOscar);
               jMenu1.add(jMenuItem);
             } 
@@ -1189,10 +1189,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
       while (iterator.hasNext())
         arrayList.add(iterator.next()); 
       List list = S.ExceptionInVPackage(arrayList);
-      P RInterfacePapa = new P(this, cu.ExceptionInVPackage);
-      for (ak ak : list) {
-        JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + ak.ManagerPreferredlayoutsize() + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + ak.e());
-        jMenuItem.setActionCommand(ak.aL());
+      P RInterfacePapa = new P(this, ManagerUsingArrayList.ExceptionInVPackage);
+      for (Exceptionprintstacktrace Exceptionprintstacktrace : list) {
+        JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + Exceptionprintstacktrace.ManagerPreferredlayoutsize() + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + Exceptionprintstacktrace.e());
+        jMenuItem.setActionCommand(Exceptionprintstacktrace.aL());
         jMenuItem.addActionListener(RInterfacePapa);
         jMenu1.add(jMenuItem);
       } 
@@ -1211,7 +1211,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
           byte b1 = 1;
           byte b2 = 25;
           list = new ArrayList();
-          Iterator<ak> iterator1 = r.A();
+          Iterator<Exceptionprintstacktrace> iterator1 = r.A();
           while (iterator1.hasNext())
             list.add(iterator1.next()); 
           list = S.ExceptionInVPackage(list);
@@ -1221,9 +1221,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
               jMenu1 = new JMenu(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Predefined Indicators") + " " + (b1 / b2 + 1));
               parambq.add(jMenu1);
             } 
-            ak ak = iterator1.next();
-            JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ak.ManagerPreferredlayoutsize()) + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(ak.e()));
-            jMenuItem.setActionCommand(ak.aL());
+            Exceptionprintstacktrace Exceptionprintstacktrace = iterator1.next();
+            JMenuItem jMenuItem = new JMenuItem(ExceptionPrintstacktrace.ManagerPreferredlayoutsize("On") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(Exceptionprintstacktrace.ManagerPreferredlayoutsize()) + " - " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Off") + ": " + ExceptionPrintstacktrace.ManagerPreferredlayoutsize(Exceptionprintstacktrace.e()));
+            jMenuItem.setActionCommand(Exceptionprintstacktrace.aL());
             jMenuItem.addActionListener(RInterfacePapa);
             jMenu1.add(jMenuItem);
           } 
@@ -1288,8 +1288,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
     return parambq;
   }
   
-  private void ak() {
-    for (s s : this.aF) {
+  private void Exceptionprintstacktrace() {
+    for (s s : this.GInterfaceAf) {
       if (s instanceof SingleChannelDashComponent) {
         SingleChannelDashComponent singleChannelDashComponent = (SingleChannelDashComponent)s;
         String str1 = singleChannelDashComponent.getOutputChannel();
@@ -1304,7 +1304,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private boolean al() {
-    Iterator iterator = this.aF.iterator();
+    Iterator iterator = this.GInterfaceAf.iterator();
     while (iterator.hasNext()) {
       if (iterator.next() instanceof Indicator)
         return true; 
@@ -1313,7 +1313,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private boolean am() {
-    Iterator iterator = this.aF.iterator();
+    Iterator iterator = this.GInterfaceAf.iterator();
     while (iterator.hasNext()) {
       if (iterator.next() instanceof Gauge)
         return true; 
@@ -1370,7 +1370,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public Component ExceptionPrintstacktrace() {
-    return (this.aF.size() > 0) ? this.aF.get(0) : null;
+    return (this.GInterfaceAf.size() > 0) ? this.GInterfaceAf.get(0) : null;
   }
   
   public void ManagerPreferredlayoutsize(String paramString) {
@@ -1405,7 +1405,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } else if (paramString.equals(C)) {
       ManagerPreferredlayoutsize(false);
     } else if (paramString.equals(O)) {
-      ap();
+      WInterfaceAp();
     } else if (paramString.equals(P)) {
       aq();
     } else if (paramString.equals(R)) {
@@ -1413,7 +1413,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } else if (paramString.equals(S)) {
       ar();
     } else if (paramString.equals(K)) {
-      aF();
+      GInterfaceAf();
     } 
     Component component = ExceptionPrintstacktrace();
     if (component == null) {
@@ -1443,12 +1443,12 @@ public class x extends JComponent implements aF, aG, ac, bc {
           IInterfaceDelta(gauge); 
       } 
     } 
-    this.ak = null;
+    this.Exceptionprintstacktrace = null;
     repaint();
   }
   
   private void an() {
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       if (s instanceof Gauge)
         ((Gauge)s).setGroupId(0); 
     } 
@@ -1456,13 +1456,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   private void ao() {
     int RInterfaceIndia = (int)(Math.random() * 2.147483647E9D);
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       if (s instanceof Gauge)
         ((Gauge)s).setGroupId(RInterfaceIndia); 
     } 
   }
   
-  private void ap() {
+  private void WInterfaceAp() {
     ExceptionInVPackage(r(), aM);
   }
   
@@ -1529,7 +1529,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public void ArrayListInIPackage(String paramString) {
     if (ad() != null) {
       ExceptionInVPackage(ad(), paramString);
-      this.aG = true;
+      this.GInterfaceAg = true;
     } else {
       at();
     } 
@@ -1538,7 +1538,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public void h() {
     if (ad() != null) {
       ExceptionInVPackage(ad(), (String)null);
-      this.aG = true;
+      this.GInterfaceAg = true;
     } else {
       at();
     } 
@@ -1576,15 +1576,15 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ExceptionInVPackage(ArrayList paramArrayList) {
-    String[] arrayOfString = { ExceptionInVPackage.cq };
+    String[] arrayOfString = { ExceptionInVPackage.GComponentCq };
     ExceptionInVPackage a1 = ExceptionInVPackage.A();
     if (a1 == null)
       bV.IInterfaceDelta("There is no project open.\nPlease open ExceptionInVPackage project first.", this); 
-    String str = bV.ExceptionInVPackage(this, "Save Gauge", arrayOfString, "*." + ExceptionInVPackage.cq, IComponentJuliet.IComponentJuliet().getAbsolutePath(), false);
+    String str = bV.ExceptionInVPackage(this, "Save Gauge", arrayOfString, "*." + ExceptionInVPackage.GComponentCq, IComponentJuliet.IComponentJuliet().getAbsolutePath(), false);
     if (str == null)
       return; 
-    if (!str.toLowerCase().endsWith("." + ExceptionInVPackage.cq))
-      str = str + "." + ExceptionInVPackage.cq; 
+    if (!str.toLowerCase().endsWith("." + ExceptionInVPackage.GComponentCq))
+      str = str + "." + ExceptionInVPackage.GComponentCq; 
     IComponentJuliet.e((new File(str)).getParentFile());
     ExceptionInVPackage(paramArrayList, str);
   }
@@ -1640,7 +1640,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public boolean e(String paramString) {
-    if (!this.aG) {
+    if (!this.GInterfaceAg) {
       String str = null;
       if (getName() == null || getName().equals("") || !ExceptionInVPackage.ExceptionInVPackage().ArrayListInIPackage().getLanguage().equals(ExceptionPrintstacktrace.ArrayListInIPackage().getLanguage())) {
         str = ExceptionPrintstacktrace.ManagerPreferredlayoutsize("This Project's dashboard layout has been modified.") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Would you like to save the changes to this project?");
@@ -1731,7 +1731,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } 
       k(false);
     } else {
-      this.aG = true;
+      this.GInterfaceAg = true;
     } 
     this.ar = paramString;
     ExceptionInVPackage(z);
@@ -1779,7 +1779,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     ManagerPreferredlayoutsize();
     invalidate();
     validate();
-    this.ak = null;
+    this.Exceptionprintstacktrace = null;
     repaint();
     if (!str.equals(""))
       str = str + "\n\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("To correct this:") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("- right click on any Gauge or indicator with ExceptionInVPackage red line through it.") + "\n" + ExceptionPrintstacktrace.ManagerPreferredlayoutsize("- Select ExceptionInVPackage valid Gauge or Indicator Template from the menu."); 
@@ -1803,7 +1803,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public boolean imageUpdate(Image paramImage, int paramInt1, int paramInt2, int paramInt3, int paramInt4, int paramInt5) {
     if (paramInt1 == 32) {
-      this.aj = null;
+      this.ThreadedInTPackage = null;
       aC().getGraphics();
       return true;
     } 
@@ -1811,7 +1811,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private void ax() {
-    String[] arrayOfString = { ExceptionInVPackage.cq };
+    String[] arrayOfString = { ExceptionInVPackage.GComponentCq };
     String str = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Open Gauge Layout"), arrayOfString, "*." + ExceptionInVPackage.co, IComponentJuliet.h().getAbsolutePath(), true);
     if (str == null)
       return; 
@@ -1853,10 +1853,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } catch (ExceptionInVPackage a1) {
       bV.IInterfaceDelta(a1.getMessage(), this);
     } 
-    this.aF.clear();
+    this.GInterfaceAf.clear();
     for (s s : arrayList)
-      this.aF.add(s); 
-    aG();
+      this.GInterfaceAf.add(s); 
+    GInterfaceAg();
     repaint();
     validate();
   }
@@ -1871,23 +1871,23 @@ public class x extends JComponent implements aF, aG, ac, bc {
     Color color = bV.ExceptionInVPackage(this, ExceptionPrintstacktrace.ManagerPreferredlayoutsize("Choose Background Dither Color"), C());
     ExceptionInVPackage(color);
     k(false);
-    this.aj = null;
+    this.ThreadedInTPackage = null;
   }
   
   public void l() {
     this.aq = null;
-    this.ap = null;
-    this.aj = null;
+    this.WInterfaceAp = null;
+    this.ThreadedInTPackage = null;
     repaint();
     k(false);
   }
   
   private void aA() {
     String str = "Select Indicator Off Image";
-    aj aj = new aj(bV.ManagerPreferredlayoutsize(this), IComponentJuliet.G(), str);
-    bV.ExceptionInVPackage(this, (Component)aj);
-    aj.ExceptionInVPackage(new D(this));
-    aj.setVisible(true);
+    ThreadedInTPackage ThreadedInTPackage = new ThreadedInTPackage(bV.ManagerPreferredlayoutsize(this), IComponentJuliet.G(), str);
+    bV.ExceptionInVPackage(this, (Component)ThreadedInTPackage);
+    ThreadedInTPackage.ExceptionInVPackage(new D(this));
+    ThreadedInTPackage.setVisible(true);
   }
   
   public void IInterfaceDelta(s params) {
@@ -1970,13 +1970,13 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public ArrayList r() {
-    return this.aF;
+    return this.GInterfaceAf;
   }
   
   public void ExceptionInVPackage(Indicator paramIndicator, String paramString1, String paramString2) {
-    ak ak = null;
-    if (paramString2.equals(cu.ExceptionInVPackage)) {
-      ak = IInterfaceDelta.ExceptionInVPackage().ArrayListInIPackage(paramString1);
+    Exceptionprintstacktrace Exceptionprintstacktrace = null;
+    if (paramString2.equals(ManagerUsingArrayList.ExceptionInVPackage)) {
+      Exceptionprintstacktrace = IInterfaceDelta.ExceptionInVPackage().ArrayListInIPackage(paramString1);
     } else {
       T t = T.ExceptionInVPackage();
       R r = null;
@@ -1985,14 +1985,14 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } else {
         r = t.ArrayListInIPackage(paramString2);
       } 
-      ak = r.n(paramString1);
+      Exceptionprintstacktrace = r.n(paramString1);
     } 
     paramIndicator.setEcuConfigurationName(paramString2);
-    paramIndicator.setOutputChannel(ak.f());
-    paramIndicator.setOnText(ak.ExceptionInVPackage().toString());
-    paramIndicator.setOffText(ak.IInterfaceDelta().toString());
-    paramIndicator.setShortClickAction(ak.l());
-    paramIndicator.setLongClickAction(ak.RComponentMike());
+    paramIndicator.setOutputChannel(Exceptionprintstacktrace.f());
+    paramIndicator.setOnText(Exceptionprintstacktrace.ExceptionInVPackage().toString());
+    paramIndicator.setOffText(Exceptionprintstacktrace.IInterfaceDelta().toString());
+    paramIndicator.setShortClickAction(Exceptionprintstacktrace.l());
+    paramIndicator.setLongClickAction(Exceptionprintstacktrace.RComponentMike());
     try {
       paramIndicator.subscribeToOutput();
     } catch (ExceptionInVPackage a1) {
@@ -2000,7 +2000,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } 
     paramIndicator.setDirty(true);
     paramIndicator.repaint();
-    this.aG = false;
+    this.GInterfaceAg = false;
   }
   
   private List ExceptionInVPackage(Gauge paramGauge) {
@@ -2028,38 +2028,38 @@ public class x extends JComponent implements aF, aG, ac, bc {
     } else {
       r = t.ArrayListInIPackage(paramString2);
     } 
-    ah ah = null;
-    if (paramString2.equals(cu.ExceptionInVPackage)) {
-      ah = ArrayListInIPackage.ExceptionInVPackage().ExceptionInVPackage(paramString1);
+    GInterfaceAh GInterfaceAh = null;
+    if (paramString2.equals(ManagerUsingArrayList.ExceptionInVPackage)) {
+      GInterfaceAh = ArrayListInIPackage.ExceptionInVPackage().ExceptionInVPackage(paramString1);
     } else {
-      ah = r.k(paramString1);
+      GInterfaceAh = r.k(paramString1);
     } 
-    if (ah == null) {
+    if (GInterfaceAh == null) {
       D.ArrayListInIPackage("Gauge:" + paramString1 + " not found in current configuration.");
       return;
     } 
     for (Gauge gauge : ExceptionInVPackage(paramGauge)) {
       if (!gauge.title().isEmpty())
-        gauge.setTitle(ah.k().toString()); 
+        gauge.setTitle(GInterfaceAh.k().toString()); 
       gauge.setEcuConfigurationName(paramString2);
-      gauge.setUnits(ah.IComponentJuliet().toString());
-      gauge.setMinVP(ah.ManagerPreferredlayoutsize());
-      gauge.setMaxVP(ah.e());
+      gauge.setUnits(GInterfaceAh.IComponentJuliet().toString());
+      gauge.setMinVP(GInterfaceAh.ManagerPreferredlayoutsize());
+      gauge.setMaxVP(GInterfaceAh.e());
       if (gauge.isGoingDead())
-        gauge.setValue(ah.IInterfaceDelta()); 
-      gauge.setShortClickAction(ah.r());
-      gauge.setLongClickAction(ah.s());
-      if (gauge.getValue() > ah.IInterfaceDelta() || gauge.getValue() < ah.ExceptionInVPackage()) {
-        gauge.setValue(ah.ExceptionInVPackage());
+        gauge.setValue(GInterfaceAh.IInterfaceDelta()); 
+      gauge.setShortClickAction(GInterfaceAh.r());
+      gauge.setLongClickAction(GInterfaceAh.s());
+      if (gauge.getValue() > GInterfaceAh.IInterfaceDelta() || gauge.getValue() < GInterfaceAh.ExceptionInVPackage()) {
+        gauge.setValue(GInterfaceAh.ExceptionInVPackage());
         gauge.invalidate();
       } 
-      gauge.setLowWarningVP(ah.f());
-      gauge.setLowCriticalVP(ah.RInterfaceOscar());
-      gauge.setHighWarningVP(ah.ExceptionPrintstacktrace());
-      gauge.setHighCriticalVP(ah.h());
-      gauge.setOutputChannel(ah.RInterfaceIndia());
-      gauge.setValueDigitsVP(ah.RComponentMike());
-      gauge.setLabelDigits(ah.n());
+      gauge.setLowWarningVP(GInterfaceAh.f());
+      gauge.setLowCriticalVP(GInterfaceAh.RInterfaceOscar());
+      gauge.setHighWarningVP(GInterfaceAh.ExceptionPrintstacktrace());
+      gauge.setHighCriticalVP(GInterfaceAh.h());
+      gauge.setOutputChannel(GInterfaceAh.RInterfaceIndia());
+      gauge.setValueDigitsVP(GInterfaceAh.RComponentMike());
+      gauge.setLabelDigits(GInterfaceAh.n());
       try {
         gauge.subscribeToOutput();
       } catch (ExceptionInVPackage a1) {
@@ -2068,7 +2068,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       gauge.invalidate();
       gauge.repaint();
     } 
-    this.aG = false;
+    this.GInterfaceAg = false;
     ExceptionInVPackage(paramGauge, paramString1);
   }
   
@@ -2081,18 +2081,18 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } 
     } 
     boolean bool = A();
-    Iterator<aG> iterator = this.aW.iterator();
+    Iterator<GInterfaceAg> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).ExceptionInVPackage(ManagerPreferredlayoutsize, paramString, bool); 
+      ((GInterfaceAg)iterator.next()).ExceptionInVPackage(ManagerPreferredlayoutsize, paramString, bool); 
   }
   
   private void aB() {
-    Iterator<aG> iterator = this.aW.iterator();
+    Iterator<GInterfaceAg> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).ExceptionInVPackage(); 
+      ((GInterfaceAg)iterator.next()).ExceptionInVPackage(); 
   }
   
-  public void ExceptionInVPackage(aG paramaG) {
+  public void ExceptionInVPackage(GInterfaceAg paramaG) {
     this.aW.add(paramaG);
   }
   
@@ -2126,32 +2126,32 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   private Image aC() {
-    if (this.aj == null || this.aj.getWidth(null) != getWidth() || this.aj.getHeight(null) != getHeight()) {
+    if (this.ThreadedInTPackage == null || this.ThreadedInTPackage.getWidth(null) != getWidth() || this.ThreadedInTPackage.getHeight(null) != getHeight()) {
       GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
       GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
       GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
-      this.aj = graphicsConfiguration.createCompatibleImage(getWidth(), getHeight(), 3);
-      Graphics2D graphics2D = (Graphics2D)this.aj.getGraphics();
+      this.ThreadedInTPackage = graphicsConfiguration.createCompatibleImage(getWidth(), getHeight(), 3);
+      Graphics2D graphics2D = (Graphics2D)this.ThreadedInTPackage.getGraphics();
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      ExceptionInVPackage(this.aj.getGraphics(), true, false);
+      ExceptionInVPackage(this.ThreadedInTPackage.getGraphics(), true, false);
     } 
-    return this.aj;
+    return this.ThreadedInTPackage;
   }
   
   private Image aD() {
-    if (this.ak == null || this.ak.getWidth(null) != getWidth() || this.ak.getHeight(null) != getHeight()) {
+    if (this.Exceptionprintstacktrace == null || this.Exceptionprintstacktrace.getWidth(null) != getWidth() || this.Exceptionprintstacktrace.getHeight(null) != getHeight()) {
       GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
       GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
       GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
-      this.ak = graphicsConfiguration.createCompatibleImage(getWidth(), getHeight(), 3);
-      Graphics2D graphics2D = (Graphics2D)this.ak.getGraphics();
+      this.Exceptionprintstacktrace = graphicsConfiguration.createCompatibleImage(getWidth(), getHeight(), 3);
+      Graphics2D graphics2D = (Graphics2D)this.Exceptionprintstacktrace.getGraphics();
       graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
       graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
       ExceptionInVPackage(graphics2D, true);
       ArrayListInIPackage(graphics2D);
     } 
-    return this.ak;
+    return this.Exceptionprintstacktrace;
   }
   
   public boolean s() {
@@ -2194,8 +2194,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.an.dispose();
       this.an = null;
       this.RInterfaceIndia = false;
-      if (this.aj != null)
-        this.aj.flush(); 
+      if (this.ThreadedInTPackage != null)
+        this.ThreadedInTPackage.flush(); 
     } 
   }
   
@@ -2209,8 +2209,8 @@ public class x extends JComponent implements aF, aG, ac, bc {
       } finally {
         this.an = null;
         this.RInterfaceIndia = false;
-        if (this.aj != null)
-          this.aj.flush(); 
+        if (this.ThreadedInTPackage != null)
+          this.ThreadedInTPackage.flush(); 
       } 
     } 
     return null;
@@ -2221,7 +2221,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < arrayOfComponent.length; ManagerPreferredlayoutsize++) {
       if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
         s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
-        this.aF.add(s);
+        this.GInterfaceAf.add(s);
       } 
     } 
     repaint();
@@ -2233,15 +2233,15 @@ public class x extends JComponent implements aF, aG, ac, bc {
       if (arrayOfComponent[ManagerPreferredlayoutsize] instanceof s) {
         s s = (s)arrayOfComponent[ManagerPreferredlayoutsize];
         Rectangle rectangle = s.getBounds();
-        if (rectangle.x > paramRectangle.x && rectangle.y > paramRectangle.y && rectangle.x + rectangle.width < paramRectangle.x + paramRectangle.width && rectangle.y + rectangle.height < paramRectangle.y + paramRectangle.height && !this.aF.contains(s))
-          this.aF.add(s); 
+        if (rectangle.x > paramRectangle.x && rectangle.y > paramRectangle.y && rectangle.x + rectangle.width < paramRectangle.x + paramRectangle.width && rectangle.y + rectangle.height < paramRectangle.y + paramRectangle.height && !this.GInterfaceAf.contains(s))
+          this.GInterfaceAf.add(s); 
       } 
     } 
-    aG();
+    GInterfaceAg();
   }
   
   public boolean e(s params) {
-    return this.aF.contains(params);
+    return this.GInterfaceAf.contains(params);
   }
   
   public int x() {
@@ -2271,7 +2271,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
       this.an.add("Center", jPanel);
       this.an.validate();
       this.an.doLayout();
-      this.aj = null;
+      this.ThreadedInTPackage = null;
       repaint();
       validate();
       requestFocus();
@@ -2433,12 +2433,12 @@ public class x extends JComponent implements aF, aG, ac, bc {
     this.aw = paramBoolean;
   }
   
-  private void aF() {
+  private void GInterfaceAf() {
     Z z = ManagerPreferredlayoutsize(this.k);
     ExceptionInVPackage(z);
-    Iterator<aG> iterator = this.aW.iterator();
+    Iterator<GInterfaceAg> iterator = this.aW.iterator();
     while (iterator.hasNext())
-      ((aG)iterator.next()).ExceptionInVPackage(); 
+      ((GInterfaceAg)iterator.next()).ExceptionInVPackage(); 
   }
   
   public void E() {
@@ -2451,7 +2451,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     ExceptionInVPackage((Image)null);
   }
   
-  public void ExceptionInVPackage(ap paramap) {
+  public void ExceptionInVPackage(WInterfaceAp paramap) {
     this.IComponentJuliet = paramap;
   }
   
@@ -2514,7 +2514,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public String J() {
-    return (this.ap == null) ? "" : this.ap;
+    return (this.WInterfaceAp == null) ? "" : this.WInterfaceAp;
   }
   
   public void ExceptionInVPackage(Image paramImage) {
@@ -2522,9 +2522,9 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void RInterfaceIndia(String paramString) {
-    this.ap = paramString;
+    this.WInterfaceAp = paramString;
     this.aq = null;
-    this.aj = null;
+    this.ThreadedInTPackage = null;
   }
   
   public String K() {
@@ -2534,7 +2534,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   public void IComponentJuliet(String paramString) {
     if (paramString != null && (paramString.equals(RInterfacePapa) || paramString.equals(RInterfaceOscar) || paramString.equals(n))) {
       this.aK = paramString;
-      this.aj = null;
+      this.ThreadedInTPackage = null;
     } 
   }
   
@@ -2548,10 +2548,10 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void RInterfaceIndia(boolean paramBoolean) {
     if (paramBoolean)
-      this.aG = false; 
+      this.GInterfaceAg = false; 
     this.at = paramBoolean;
-    this.aj = null;
-    this.ak = null;
+    this.ThreadedInTPackage = null;
+    this.Exceptionprintstacktrace = null;
     repaint();
     IInterfaceDelta(Y, "" + paramBoolean);
   }
@@ -2561,33 +2561,33 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void N() {
-    this.aF.clear();
-    aG();
+    this.GInterfaceAf.clear();
+    GInterfaceAg();
   }
   
   public void ExceptionInVPackage(s params, boolean paramBoolean) {
     if (paramBoolean)
-      this.aF.clear(); 
-    if (this.aF.contains(params) && !paramBoolean) {
-      this.aF.remove(params);
+      this.GInterfaceAf.clear(); 
+    if (this.GInterfaceAf.contains(params) && !paramBoolean) {
+      this.GInterfaceAf.remove(params);
     } else {
-      if (!this.aF.contains(params))
-        this.aF.add(params); 
+      if (!this.GInterfaceAf.contains(params))
+        this.GInterfaceAf.add(params); 
       if (params instanceof Gauge) {
         Gauge gauge = (Gauge)params;
         if (gauge.getGroupId() != Gauge.Q)
           ManagerPreferredlayoutsize(gauge.getGroupId()); 
       } 
     } 
-    aG();
+    GInterfaceAg();
   }
   
   private void ManagerPreferredlayoutsize(int paramInt) {
     for (byte ManagerPreferredlayoutsize = 0; ManagerPreferredlayoutsize < getComponentCount(); ManagerPreferredlayoutsize++) {
       if (getComponent(ManagerPreferredlayoutsize) instanceof Gauge) {
         Gauge gauge = (Gauge)getComponent(ManagerPreferredlayoutsize);
-        if (gauge.getGroupId() == paramInt && gauge.getGroupId() != Gauge.Q && !this.aF.contains(gauge))
-          this.aF.add(gauge); 
+        if (gauge.getGroupId() == paramInt && gauge.getGroupId() != Gauge.Q && !this.GInterfaceAf.contains(gauge))
+          this.GInterfaceAf.add(gauge); 
       } 
     } 
   }
@@ -2600,7 +2600,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
         s.setAntialiasingOn(paramBoolean);
       } 
     } 
-    this.aj = null;
+    this.ThreadedInTPackage = null;
     repaint();
     IInterfaceDelta("antiAliasingOn", "" + paramBoolean);
   }
@@ -2646,7 +2646,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void T() {
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       s.setSize(s.getWidth() + 1, s.getHeight());
       s.updateRelativeBoundsToCurrent();
       s.validate();
@@ -2655,7 +2655,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void U() {
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       s.setSize(s.getWidth() - 1, s.getHeight());
       s.updateRelativeBoundsToCurrent();
       s.validate();
@@ -2663,7 +2663,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void V() {
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       s.setSize(s.getWidth(), s.getHeight() + 1);
       s.updateRelativeBoundsToCurrent();
       s.validate();
@@ -2671,7 +2671,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public void W() {
-    for (s s : this.aF) {
+    for (s s : this.GInterfaceAf) {
       s.setSize(s.getWidth(), s.getHeight() - 1);
       s.updateRelativeBoundsToCurrent();
       s.validate();
@@ -2738,7 +2738,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
     this.aV.add(paramf);
   }
   
-  private void aG() {
+  private void GInterfaceAg() {
     for (f f : this.aV)
       f.ExceptionInVPackage(r()); 
   }
@@ -2760,7 +2760,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
         s.setDirty(true);
       } 
     } 
-    this.aj = null;
+    this.ThreadedInTPackage = null;
     this.al = null;
     repaint();
     if (paramString != null && paramString.length() > 0) {
@@ -2776,7 +2776,7 @@ public class x extends JComponent implements aF, aG, ac, bc {
   
   public void l(String paramString) {
     this.aI = paramString;
-    this.aj = null;
+    this.ThreadedInTPackage = null;
     this.al = null;
     repaint();
   }
@@ -2794,11 +2794,11 @@ public class x extends JComponent implements aF, aG, ac, bc {
   }
   
   public boolean ae() {
-    return this.aG;
+    return this.GInterfaceAg;
   }
   
   public void k(boolean paramBoolean) {
-    this.aG = paramBoolean;
+    this.GInterfaceAg = paramBoolean;
   }
   
   public boolean af() {

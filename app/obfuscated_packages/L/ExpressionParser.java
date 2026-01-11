@@ -1,7 +1,7 @@
 package L;
 
-import G.aI;
-import G.aM;
+import G.GInterfaceAi;
+import G.Manager;
 import G.i;
 import ax.ArrayListUsingPattern;
 import ax.ExceptionInAxPackage;
@@ -13,13 +13,13 @@ import java.util.logging.Logger;
 public class ExpressionParser extends ArrayListUsingPattern {
   String a = "";
   
-  aI b = null;
+  GInterfaceAi b = null;
   
   static h c = null;
   
   private static String f = "array.";
   
-  public k(aI paramaI) {
+  public k(GInterfaceAi paramaI) {
     this.b = paramaI;
     if (c == null) {
       c = new h(paramaI);
@@ -48,10 +48,10 @@ public class ExpressionParser extends ArrayListUsingPattern {
       int i = paramString.indexOf(f) + f.length();
       int j = a(paramString, i);
       String str2 = paramString.substring(i, j);
-      aM aM = this.b.c(str2);
-      if (aM == null)
+      Manager Manager = this.b.c(str2);
+      if (Manager == null)
         throw new ExceptionInAxPackage("unknown EcuParameter " + str2 + " in expresstion: " + this.a); 
-      int m = l.a().a(aM);
+      int m = l.a().a(Manager);
       String str3 = paramString.substring(j);
       paramString = str1 + m + str3;
     } 

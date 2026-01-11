@@ -1,13 +1,13 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class aa extends ac {
-  ab a;
+public class aa extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b = null;
+  AxInterfaceAb b = null;
   
   boolean c = false;
   
@@ -15,12 +15,12 @@ public class aa extends ac {
   
   double e = 0.0D;
   
-  protected aa(ab paramab1, ab paramab2) {
+  protected aa(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab1;
     this.b = paramab2;
   }
   
-  protected aa(ab paramab) {
+  protected aa(AxInterfaceAb paramab) {
     this.a = paramab;
   }
   

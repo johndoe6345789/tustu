@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.aN;
+import G.GInterfaceAn;
 
-class ConditionUpdateListener implements aN {
+class ConditionUpdateListener implements GInterfaceAn {
   ConditionUpdateListener(v paramv) {}
   
   public void a(String paramString1, String paramString2) {

@@ -1,10 +1,10 @@
 package aS;
 
 import G.R;
-import G.cq;
-import aP.dd;
+import G.GComponentCq;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 
-class AsInterfaceIndia implements cq {
+class AsInterfaceIndia implements GComponentCq {
   boolean a = false;
   
   k b = null;
@@ -29,7 +29,7 @@ class AsInterfaceIndia implements cq {
     } else if (this.a && paramDouble == 0.0D) {
       if (this.b.b() != null)
         this.b.b().ac(); 
-      dd.a().b().ac();
+      ThreadedJFrameIsoptimizeddrawingenabled.a().b().ac();
       this.a = false;
     } 
   }

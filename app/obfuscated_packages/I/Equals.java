@@ -1,17 +1,17 @@
 package I;
 
-import G.dj;
+import G.GInterfaceDj;
 
 class Equals {
   private String b;
   
   private String c;
   
-  private dj d;
+  private GInterfaceDj d;
   
   private double e = Double.NaN;
   
-  l(k paramk, String paramString1, String paramString2, dj paramdj) {
+  l(k paramk, String paramString1, String paramString2, GInterfaceDj paramdj) {
     this.b = paramString1;
     this.c = paramString2;
     this.d = paramdj;
@@ -25,7 +25,7 @@ class Equals {
     return this.c;
   }
   
-  public dj c() {
+  public GInterfaceDj c() {
     return this.d;
   }
   

@@ -2,8 +2,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
 import G.T;
-import G.bT;
-import W.aa;
+import G.AeInterfaceMikeTostring;
+import W.NetworkExceptionprintstacktrace;
 import W.z;
 import bH.D;
 import com.efiAnalytics.ui.ck;
@@ -106,12 +106,12 @@ public class ControllerSelectorPanel extends ck {
       if (paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()) || paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cz.toLowerCase()) || paramFile.getName().toLowerCase().indexOf(".ini") != -1 || paramFile.getName().toLowerCase().indexOf(".ecu") != -1) {
         str = "Selected File Info:\n\n";
         try {
-          bT bT = (new aa()).IOPropertiesUsingFile(paramFile);
-          if (bT.c() != null && bT.c().length() > 0) {
-            String str1 = URLDecoder.decode(bT.c(), "UTF-8");
+          AeInterfaceMikeTostring AeInterfaceMikeTostring = (new NetworkExceptionprintstacktrace()).IOPropertiesUsingFile(paramFile);
+          if (AeInterfaceMikeTostring.c() != null && AeInterfaceMikeTostring.c().length() > 0) {
+            String str1 = URLDecoder.decode(AeInterfaceMikeTostring.c(), "UTF-8");
             str = str + "Firmware:\n" + str1 + "\n\n";
           } 
-          str = str + "Signature:\n" + bT.b() + "\n\nLast Modified : " + DateFormat.getDateInstance(2).format(Long.valueOf(paramFile.lastModified()));
+          str = str + "Signature:\n" + AeInterfaceMikeTostring.b() + "\n\nLast Modified : " + DateFormat.getDateInstance(2).format(Long.valueOf(paramFile.lastModified()));
         } catch (Exception exception) {}
       } else if (paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.C)) {
         str = "Selected File Info:\n\nOld style BigComm tune file.\nLast Modified : " + DateFormat.getDateInstance(2).format(Long.valueOf(paramFile.lastModified()));

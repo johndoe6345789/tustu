@@ -1,9 +1,9 @@
 package bS;
 
 import G.R;
-import G.aG;
-import G.ab;
-import G.bT;
+import G.GInterfaceAg;
+import G.GInterfaceAb;
+import G.AeInterfaceMikeTostring;
 import G.g;
 import bH.c;
 import bN.TostringInBnPackage;
@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BsInterfaceEcho implements aG, ab, g {
+public class BsInterfaceEcho implements GInterfaceAg, GInterfaceAb, g {
   R a;
   
   Map b = new HashMap<>();
@@ -96,7 +96,7 @@ public class BsInterfaceEcho implements aG, ab, g {
     } 
   }
   
-  public boolean a(String paramString, bT parambT) {
+  public boolean a(String paramString, AeInterfaceMikeTostring parambT) {
     try {
       a(true);
     } catch (BnInterfaceOscar o1) {

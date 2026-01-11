@@ -1,8 +1,8 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
 import bH.D;
@@ -10,7 +10,7 @@ import DComponentDelta.DComponentDelta;
 import DComponentDelta.j;
 import java.io.Serializable;
 
-public abstract class SingleChannelDashComponent extends s implements cq, DComponentDelta, j, Serializable {
+public abstract class SingleChannelDashComponent extends s implements GComponentCq, DComponentDelta, j, Serializable {
   protected String S = null;
   
   private String ExceptionInVPackage = null;
@@ -42,13 +42,13 @@ public abstract class SingleChannelDashComponent extends s implements cq, DCompo
   
   public void subscribeToOutput() {
     String str = this.e;
-    if (ExceptionInVPackage.A() != null && (str == null || str.equals("") || (!str.equals(cu.ExceptionInVPackage) && T.ExceptionInVPackage().c(str) == null)))
+    if (ExceptionInVPackage.A() != null && (str == null || str.equals("") || (!str.equals(ManagerUsingArrayList.ExceptionInVPackage) && T.ExceptionInVPackage().c(str) == null)))
       str = ExceptionInVPackage.A().u(); 
     try {
       if (getOutputChannel() != null && !isOnDontSubscribeList(getOutputChannel())) {
-        cu cu = cu.ExceptionInVPackage();
-        cu.ExceptionInVPackage(this);
-        cu.ExceptionInVPackage(str, getOutputChannel(), this);
+        ManagerUsingArrayList ManagerUsingArrayList = ManagerUsingArrayList.ExceptionInVPackage();
+        ManagerUsingArrayList.ExceptionInVPackage(this);
+        ManagerUsingArrayList.ExceptionInVPackage(str, getOutputChannel(), this);
       } 
     } catch (Exception exception) {
       if (this.DComponentDelta == null || (getOutputChannel() != null && !this.DComponentDelta.equals(getOutputChannel()))) {
@@ -62,7 +62,7 @@ public abstract class SingleChannelDashComponent extends s implements cq, DCompo
   }
   
   public void unsubscribeToOutput() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
   
   private boolean isOnDontSubscribeList(String paramString) {

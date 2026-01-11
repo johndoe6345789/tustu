@@ -1,6 +1,6 @@
 package aN;
 
-import W.ap;
+import W.WInterfaceAp;
 import bH.X;
 import bH.c;
 import com.efiAnalytics.ui.bV;
@@ -38,9 +38,9 @@ public class JDialogExtension extends JDialog {
   
   JButton f;
   
-  ap g = null;
+  WInterfaceAp g = null;
   
-  public JDialogExtension(Frame paramFrame, ap paramap) {
+  public JDialogExtension(Frame paramFrame, WInterfaceAp paramap) {
     super(paramFrame);
     setTitle("Binary File Difference");
     setDefaultCloseOperation(2);

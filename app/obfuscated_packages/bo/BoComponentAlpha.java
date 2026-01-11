@@ -1,7 +1,7 @@
 package bo;
 
 import G.R;
-import W.ab;
+import W.ManagerUsingFile;
 import bH.D;
 import r.ThreadedFile;
 
@@ -11,8 +11,8 @@ public class BoComponentAlpha {
     if (!bool && !paramR.U()) {
       String str = b(paramR);
       if (str != null) {
-        ab ab = new ab();
-        ab.a(paramR, str, false);
+        ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
+        ManagerUsingFile.a(paramR, str, false);
       } else {
         D.d("Not Loading default Tools because non are defined for signature: " + paramR.i());
       } 

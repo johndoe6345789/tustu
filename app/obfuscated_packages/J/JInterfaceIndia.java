@@ -1,15 +1,15 @@
 package J;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import G.c;
-import G.cr;
-import G.cu;
-import G.db;
+import G.GComponentCr;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDb;
 import G.k;
 import I.IInterfaceDelta;
 import java.io.Serializable;
 
-public class JInterfaceIndia extends h implements cr, Serializable {
+public class JInterfaceIndia extends h implements GComponentCr, Serializable {
   public static String b = "protocolError";
   
   protected String[] c = new String[] { 
@@ -80,7 +80,7 @@ public class JInterfaceIndia extends h implements cr, Serializable {
   }
   
   public int f() {
-    return m() + n() + o() + p() + q() + r() + v() + V() + u() + W() + X() + Y() + Z() + aa() + ab() + ac() + af() + ad() + ae() + ai() + aj() + ak();
+    return m() + n() + o() + p() + q() + r() + v() + V() + u() + W() + X() + Y() + Z() + aa() + ab() + ac() + af() + ad() + ae() + ai() + aj() + Exceptionprintstacktrace();
   }
   
   public void a() {
@@ -331,7 +331,7 @@ public class JInterfaceIndia extends h implements cr, Serializable {
   }
   
   public String c() {
-    return cu.a;
+    return ManagerUsingArrayList.a;
   }
   
   public int V() {
@@ -435,16 +435,16 @@ public class JInterfaceIndia extends h implements cr, Serializable {
   }
   
   public void b() {
-    ak ak = new ak();
-    ak.v("protocolError");
-    ak.a((db)new c("Protocol Error"));
-    ak.b((db)new c("Protocol Error"));
-    ak.a(k.q);
-    ak.b(k.a);
-    ak.c(k.i);
-    ak.IInterfaceDelta(k.c);
-    ak.a(h.a);
-    IInterfaceDelta.a().a(ak);
+    Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
+    Exceptionprintstacktrace.v("protocolError");
+    Exceptionprintstacktrace.a((GInterfaceDb)new c("Protocol Error"));
+    Exceptionprintstacktrace.b((GInterfaceDb)new c("Protocol Error"));
+    Exceptionprintstacktrace.a(k.q);
+    Exceptionprintstacktrace.b(k.a);
+    Exceptionprintstacktrace.c(k.i);
+    Exceptionprintstacktrace.IInterfaceDelta(k.c);
+    Exceptionprintstacktrace.a(h.a);
+    IInterfaceDelta.a().a(Exceptionprintstacktrace);
   }
   
   public void IInterfaceDelta() {
@@ -467,7 +467,7 @@ public class JInterfaceIndia extends h implements cr, Serializable {
     this.E = paramInt;
   }
   
-  public int ak() {
+  public int Exceptionprintstacktrace() {
     return this.F;
   }
   
@@ -484,35 +484,35 @@ public class JInterfaceIndia extends h implements cr, Serializable {
   }
   
   public void an() {
-    cu.a().a("okCount", g());
-    cu.a().a("runtimeDataCount", h());
-    cu.a().a("pageReadCount", i());
-    cu.a().a("configErrorCount", j());
-    cu.a().a("burnOk", k());
-    cu.a().a("pageTenOk", l());
-    cu.a().a("underrunCount", m());
-    cu.a().a("overrunCount", n());
-    cu.a().a("unrecognizedCommand", o());
-    cu.a().a("remoteCrcFailureCount", p());
-    cu.a().a("busyCount", u());
-    cu.a().a("outOfRangeCount", q());
-    cu.a().a("flashLockedCount", r());
-    cu.a().a("pcCrcFailureCount", v());
-    cu.a().a("undefinedErrorCount", V());
-    cu.a().a("parityErrorCount", W());
-    cu.a().a("framingErrorCount", X());
-    cu.a().a("serialNoiseErrorCount", Y());
-    cu.a().a("txmodeErrorCount", Z());
-    cu.a().a("unknownErrorCount", aa());
-    cu.a().a("sequenceFailure1", ab());
-    cu.a().a("sequenceFailure2", ac());
-    cu.a().a("canQueueFull", ad());
-    cu.a().a("canTimeout", ae());
-    cu.a().a("canFailure", af());
-    cu.a().a("canData", ah());
-    cu.a().a("canDeviceUnavailable", ai());
-    cu.a().a("genericError", aj());
-    cu.a().a("criticalError", ak());
+    ManagerUsingArrayList.a().a("okCount", g());
+    ManagerUsingArrayList.a().a("runtimeDataCount", h());
+    ManagerUsingArrayList.a().a("pageReadCount", i());
+    ManagerUsingArrayList.a().a("configErrorCount", j());
+    ManagerUsingArrayList.a().a("burnOk", k());
+    ManagerUsingArrayList.a().a("pageTenOk", l());
+    ManagerUsingArrayList.a().a("underrunCount", m());
+    ManagerUsingArrayList.a().a("overrunCount", n());
+    ManagerUsingArrayList.a().a("unrecognizedCommand", o());
+    ManagerUsingArrayList.a().a("remoteCrcFailureCount", p());
+    ManagerUsingArrayList.a().a("busyCount", u());
+    ManagerUsingArrayList.a().a("outOfRangeCount", q());
+    ManagerUsingArrayList.a().a("flashLockedCount", r());
+    ManagerUsingArrayList.a().a("pcCrcFailureCount", v());
+    ManagerUsingArrayList.a().a("undefinedErrorCount", V());
+    ManagerUsingArrayList.a().a("parityErrorCount", W());
+    ManagerUsingArrayList.a().a("framingErrorCount", X());
+    ManagerUsingArrayList.a().a("serialNoiseErrorCount", Y());
+    ManagerUsingArrayList.a().a("txmodeErrorCount", Z());
+    ManagerUsingArrayList.a().a("unknownErrorCount", aa());
+    ManagerUsingArrayList.a().a("sequenceFailure1", ab());
+    ManagerUsingArrayList.a().a("sequenceFailure2", ac());
+    ManagerUsingArrayList.a().a("canQueueFull", ad());
+    ManagerUsingArrayList.a().a("canTimeout", ae());
+    ManagerUsingArrayList.a().a("canFailure", af());
+    ManagerUsingArrayList.a().a("canData", ah());
+    ManagerUsingArrayList.a().a("canDeviceUnavailable", ai());
+    ManagerUsingArrayList.a().a("genericError", aj());
+    ManagerUsingArrayList.a().a("criticalError", Exceptionprintstacktrace());
   }
 }
 

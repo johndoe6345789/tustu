@@ -2,16 +2,16 @@ package aS;
 
 import G.R;
 import G.S;
-import G.aH;
-import G.cJ;
-import G.cQ;
-import G.cu;
-import aP.dd;
+import G.SerializableImpl;
+import G.GInterfaceCj;
+import G.GInterfaceCq;
+import G.ManagerUsingArrayList;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AsInterfaceAlpha implements S, cJ {
+public class AsInterfaceAlpha implements S, GInterfaceCj {
   HashMap a = new HashMap<>();
   
   long b = 0L;
@@ -28,7 +28,7 @@ public class AsInterfaceAlpha implements S, cJ {
   
   boolean d = false;
   
-  private aH d(R paramR) {
+  private SerializableImpl d(R paramR) {
     this.c = paramR;
     return (paramR.g("Config Error!OC") != null) ? paramR.g("Config Error!OC") : ((paramR.g("Config ErrorOC") != null) ? paramR.g("Config ErrorOC") : null);
   }
@@ -37,27 +37,27 @@ public class AsInterfaceAlpha implements S, cJ {
   
   public void b(R paramR) {
     b b = (b)this.a.get(paramR.c());
-    dd.a().b().ac();
+    ThreadedJFrameIsoptimizeddrawingenabled.a().b().ac();
     if (b != null)
-      cu.a().a(b); 
+      ManagerUsingArrayList.a().a(b); 
   }
   
   public void c(R paramR) {
-    aH aH = d(paramR);
+    SerializableImpl SerializableImpl = d(paramR);
     b b = new b(this, paramR.c());
     this.a.put(paramR.c(), b);
-    cQ.a().a(paramR.c(), b);
+    GInterfaceCq.a().a(paramR.c(), b);
     paramR.C().a(b);
     this.d = paramR.O().au();
-    if (aH != null)
+    if (SerializableImpl != null)
       try {
-        cu.a().a(paramR.c(), aH.aL(), b);
+        ManagerUsingArrayList.a().a(paramR.c(), SerializableImpl.aL(), b);
       } catch (V.a a1) {
         Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       }  
     if (paramR.g("seconds") != null)
       try {
-        cu.a().a(paramR.c(), "seconds", new e(this, b));
+        ManagerUsingArrayList.a().a(paramR.c(), "seconds", new e(this, b));
       } catch (V.a a1) {
         Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
       }  

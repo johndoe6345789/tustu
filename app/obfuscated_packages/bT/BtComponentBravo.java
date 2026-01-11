@@ -1,6 +1,6 @@
 package bT;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import bH.D;
 import bH.TostringInBoPackage;
 import bN.BnInterfaceKilo;
@@ -45,7 +45,7 @@ public class BtComponentBravo implements BsInterfaceAlpha {
       } 
       TostringInBnPackage.BsInterfaceAlpha(255);
       byte[] arrayOfByte1 = new byte[0];
-      cu.BsInterfaceAlpha().BsInterfaceAlpha(TostringInBoPackage.n());
+      ManagerUsingArrayList.BsInterfaceAlpha().BsInterfaceAlpha(TostringInBoPackage.n());
       BsInterfaceDelta.i(i);
       BsInterfaceDelta.BsInterfaceAlpha(i);
       TostringInBnPackage.b(arrayOfByte1);

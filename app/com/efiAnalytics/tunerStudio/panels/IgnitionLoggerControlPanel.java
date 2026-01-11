@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.cd;
-import W.aB;
+import G.GComponentCd;
+import W.ManagerInWPackage;
 import W.n;
 import aE.PropertiesExtension;
 import bA.JCheckBoxMenuItemExtension;
@@ -223,14 +223,14 @@ class IgnitionLoggerControlPanel extends JPanel {
   }
   
   public void PropertiesExtension(String paramString) {
-    aB aB = new aB();
-    aB.PropertiesExtension(new C(this));
+    ManagerInWPackage ManagerInWPackage = new ManagerInWPackage();
+    ManagerInWPackage.PropertiesExtension(new C(this));
     File file = new File(paramString);
     if (!file.exists()) {
       bV.d(SComponentGolf.b("Ignition Log File not found:") + "\n" + paramString, this);
       return;
     } 
-    s s = new s(this, aB, file, paramString);
+    s s = new s(this, ManagerInWPackage, file, paramString);
     s.start();
   }
   
@@ -243,14 +243,14 @@ class IgnitionLoggerControlPanel extends JPanel {
     if (e == null || e.PropertiesExtension() == null)
       return; 
     this.k.PropertiesExtension(e.PropertiesExtension());
-    cd cd = e.PropertiesExtension();
-    if ((cd.e() != null && cd.e().trim().length() > 0) || cd.n().equals("UDP_Stream")) {
+    GComponentCd GComponentCd = e.PropertiesExtension();
+    if ((GComponentCd.e() != null && GComponentCd.e().trim().length() > 0) || GComponentCd.n().equals("UDP_Stream")) {
       this.h.setEnabled(false);
     } else {
       this.h.setEnabled(true);
     } 
     if (this.e != null)
-      if (cd != null && (cd.d().equals(cd.PropertiesExtension) || cd.d().equals(cd.e) || cd.d().equals(cd.SComponentGolf) || cd.d().equals(cd.f) || cd.d().equals(cd.h))) {
+      if (GComponentCd != null && (GComponentCd.d().equals(GComponentCd.PropertiesExtension) || GComponentCd.d().equals(GComponentCd.e) || GComponentCd.d().equals(GComponentCd.SComponentGolf) || GComponentCd.d().equals(GComponentCd.f) || GComponentCd.d().equals(GComponentCd.h))) {
         this.e.setVisible(true);
       } else {
         this.e.setVisible(false);
@@ -259,7 +259,7 @@ class IgnitionLoggerControlPanel extends JPanel {
   }
   
   public ArrayList h() {
-    ArrayList<cd> arrayList = new ArrayList();
+    ArrayList<GComponentCd> arrayList = new ArrayList();
     for (byte b = 0; b < this.SComponentGolf.getItemCount(); b++) {
       if (this.SComponentGolf.getItemAt(b) instanceof E) {
         E e = this.SComponentGolf.getItemAt(b);
@@ -269,7 +269,7 @@ class IgnitionLoggerControlPanel extends JPanel {
     return arrayList;
   }
   
-  public void PropertiesExtension(ArrayList<cd> paramArrayList) {
+  public void PropertiesExtension(ArrayList<GComponentCd> paramArrayList) {
     this.SComponentGolf.removeAllItems();
     for (byte b = 0; b < paramArrayList.size(); b++)
       this.SComponentGolf.addItem(new E(this, paramArrayList.get(b))); 
@@ -285,7 +285,7 @@ class IgnitionLoggerControlPanel extends JPanel {
     t.start();
   }
   
-  public cd ThreadedFile() {
+  public GComponentCd ThreadedFile() {
     E e = (E)this.SComponentGolf.getSelectedItem();
     return (e == null) ? null : e.PropertiesExtension();
   }

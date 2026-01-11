@@ -3,7 +3,7 @@ package aZ;
 import G.R;
 import G.T;
 import V.ExceptionInVPackage;
-import W.aq;
+import W.WInterfaceAq;
 import ac.AbstractUsingArrayList;
 import ac.AcInterfaceMike;
 import bH.D;
@@ -406,15 +406,15 @@ public class AzInterfaceFoxtrot extends ExceptionInVPackage {
       this.d.add(new AcInterfaceMike((AbstractUsingArrayList)this, paramArrayOfString[b], b, arrayOfR[b].O().n())); 
   }
   
-  public void ExceptionInVPackage(aq paramaq) {
+  public void ExceptionInVPackage(WInterfaceAq paramaq) {
     this.C.add(paramaq);
   }
   
   private void ExceptionInVPackage(double paramDouble) {
-    Iterator<aq> iterator = this.C.iterator();
+    Iterator<WInterfaceAq> iterator = this.C.iterator();
     while (iterator.hasNext()) {
       try {
-        ((aq)iterator.next()).ExceptionInVPackage(paramDouble);
+        ((WInterfaceAq)iterator.next()).ExceptionInVPackage(paramDouble);
       } catch (Exception exception) {
         D.b("Exeption caught during progress notification. Continuing...");
         exception.printStackTrace();
@@ -423,10 +423,10 @@ public class AzInterfaceFoxtrot extends ExceptionInVPackage {
   }
   
   private void y() {
-    Iterator<aq> iterator = this.C.iterator();
+    Iterator<WInterfaceAq> iterator = this.C.iterator();
     while (iterator.hasNext()) {
       try {
-        ((aq)iterator.next()).ExceptionInVPackage();
+        ((WInterfaceAq)iterator.next()).ExceptionInVPackage();
       } catch (Exception exception) {
         D.b("Exeption caught during progress notification (Complete). Continuing...");
         exception.printStackTrace();

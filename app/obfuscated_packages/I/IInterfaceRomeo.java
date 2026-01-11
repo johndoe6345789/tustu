@@ -1,6 +1,6 @@
 package I;
 
-import G.cu;
+import G.ManagerUsingArrayList;
 import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,9 +17,9 @@ class IInterfaceRomeo extends Thread {
       int i = calendar.get(11);
       int j = calendar.get(12);
       int k = calendar.get(13);
-      cu.a().a("hourOfDay", i);
-      cu.a().a("minuteOfHour", j);
-      cu.a().a("secondOfMinute", k);
+      ManagerUsingArrayList.a().a("hourOfDay", i);
+      ManagerUsingArrayList.a().a("minuteOfHour", j);
+      ManagerUsingArrayList.a().a("secondOfMinute", k);
       int m = (int)(1000L - System.currentTimeMillis() - calendar.getTimeInMillis());
       try {
         sleep(m);

@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import bt.bZ;
+import bt.BtInterfaceBz;
 
-class SquirtsChangeHandler implements bZ {
+class SquirtsChangeHandler implements BtInterfaceBz {
   aH(aF paramaF) {}
   
   public void b(String paramString) {

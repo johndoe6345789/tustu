@@ -1,6 +1,6 @@
 package aj;
 
-import G.aB;
+import G.ArrayListInGPackage;
 import G.n;
 import G.o;
 
@@ -10,11 +10,11 @@ class AjInterfaceEcho implements n {
   public void a(double paramDouble) {}
   
   public void a(o paramo) {
-    aB.a().e();
+    ArrayListInGPackage.a().e();
   }
   
   public void e() {
-    aB.a().d();
+    ArrayListInGPackage.a().d();
   }
 }
 

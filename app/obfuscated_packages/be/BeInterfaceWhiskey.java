@@ -2,7 +2,7 @@ package be;
 
 import G.R;
 import V.ExceptionInVPackage;
-import W.ak;
+import W.IOInWPackage;
 import aE.ExceptionInVPackage;
 import bt.ByInterfaceJuliet;
 import by.JPanelExtensionInByPackage;
@@ -83,7 +83,7 @@ public class BeInterfaceWhiskey extends JPanel implements o {
     jPanel6.add(ExceptionInVPackage("Expression", new JLabel(), "<html>" + SComponentGolf.b("Enter ExceptionInVPackage mathematical expression based on other Channels or Setting Parameters")), "North");
     ArrayList<ByInterfaceIndia> arrayList = new ArrayList();
     arrayList.add(ByInterfaceJuliet.ExceptionInVPackage(paramR));
-    if (!ak.b(ExceptionInVPackage.A().ByInterfaceJuliet()))
+    if (!IOInWPackage.b(ExceptionInVPackage.A().ByInterfaceJuliet()))
       arrayList.add(ByInterfaceJuliet.b(paramR)); 
     ByInterfaceMike ByInterfaceMike = ByInterfaceNovember.ExceptionInVPackage();
     this.c = new JPanelExtensionInByPackage(arrayList, ByInterfaceMike, SComponentGolf.JPanelExtensionInByPackage());

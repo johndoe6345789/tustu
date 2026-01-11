@@ -1,11 +1,11 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class AverageFunction extends ac {
+public class AverageFunction extends AbstractInAxPackage {
   List a;
   
   protected e(List paramList) {
@@ -14,8 +14,8 @@ public class AverageFunction extends ac {
   
   public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = 0.0D;
-    for (ab ab : this.a)
-      d += ab.b(paramS); 
+    for (AxInterfaceAb AxInterfaceAb : this.a)
+      d += AxInterfaceAb.b(paramS); 
     return d / this.a.size();
   }
   
@@ -27,8 +27,8 @@ public class AverageFunction extends ac {
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("avg( ");
     for (byte b = 0; b < this.a.size(); b++) {
-      ab ab = this.a.get(b);
-      stringBuilder.append(ab.toString());
+      AxInterfaceAb AxInterfaceAb = this.a.get(b);
+      stringBuilder.append(AxInterfaceAb.toString());
       if (b + 1 < this.a.size())
         stringBuilder.append(", "); 
     } 

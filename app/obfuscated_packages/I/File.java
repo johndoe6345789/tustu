@@ -1,7 +1,7 @@
 package I;
 
 import G.R;
-import W.ab;
+import W.ManagerUsingFile;
 import bH.D;
 import bH.I;
 import bH.X;
@@ -69,9 +69,9 @@ public class File {
       } 
       boolean bool = false;
       if (str2 != null) {
-        ab ab = new ab();
-        ab.a(false);
-        ab.a(paramR, this.b.getAbsolutePath() + str2, false, bool);
+        ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
+        ManagerUsingFile.a(false);
+        ManagerUsingFile.a(paramR, this.b.getAbsolutePath() + str2, false, bool);
       } 
     } 
   }

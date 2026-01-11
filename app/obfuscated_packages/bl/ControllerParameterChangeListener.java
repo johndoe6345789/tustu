@@ -1,9 +1,9 @@
 package bl;
 
-import G.aN;
+import G.GInterfaceAn;
 import com.efiAnalytics.plugin.ecu.ControllerParameterChangeListener;
 
-class ControllerParameterChangeListener implements aN {
+class ControllerParameterChangeListener implements GInterfaceAn {
   private ControllerParameterChangeListener b = null;
   
   d(c paramc, ControllerParameterChangeListener paramControllerParameterChangeListener) {

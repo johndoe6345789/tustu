@@ -1,9 +1,9 @@
 package I;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import G.c;
-import G.cu;
-import G.db;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDb;
 import G.k;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,15 +19,15 @@ public class IInterfaceDelta {
     return b;
   }
   
-  public void a(ak paramak) {
+  public void a(Exceptionprintstacktrace paramak) {
     if (!a(paramak.aL()))
       e().add(paramak); 
   }
   
   public boolean a(String paramString) {
     for (byte b = 0; b < e().size(); b++) {
-      ak ak = this.a.get(b);
-      if (ak.aL().equals(paramString))
+      Exceptionprintstacktrace Exceptionprintstacktrace = this.a.get(b);
+      if (Exceptionprintstacktrace.aL().equals(paramString))
         return true; 
     } 
     return false;
@@ -35,8 +35,8 @@ public class IInterfaceDelta {
   
   public void b(String paramString) {
     for (byte b = 0; b < e().size(); b++) {
-      ak ak = this.a.get(b);
-      if (ak.aL().equals(paramString))
+      Exceptionprintstacktrace Exceptionprintstacktrace = this.a.get(b);
+      if (Exceptionprintstacktrace.aL().equals(paramString))
         this.a.remove(b); 
     } 
   }
@@ -61,28 +61,28 @@ public class IInterfaceDelta {
   }
   
   private ArrayList f() {
-    ak ak = new ak();
-    ak.v("dataLoggingActive");
-    ak.a((db)new c("Data Logging"));
-    ak.b((db)new c("Data Logging"));
-    ak.a(k.s);
-    ak.b(k.a);
-    ak.c(k.i);
-    ak.d(k.c);
-    ak.b("toggleDatalogging?");
-    ak.a("dataLoggingActive");
-    this.a.add(ak);
-    if (cu.a().e("powerCycleRequired")) {
-      ak = new ak();
-      ak.v("powerCycleRequired");
-      ak.a((db)new c("Power Cycle"));
-      ak.b((db)new c("Power Cycle"));
-      ak.a(k.k);
-      ak.b(k.a);
-      ak.c(k.i);
-      ak.d(k.c);
-      ak.a("powerCycleRequired");
-      this.a.add(ak);
+    Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
+    Exceptionprintstacktrace.v("dataLoggingActive");
+    Exceptionprintstacktrace.a((GInterfaceDb)new c("Data Logging"));
+    Exceptionprintstacktrace.b((GInterfaceDb)new c("Data Logging"));
+    Exceptionprintstacktrace.a(k.s);
+    Exceptionprintstacktrace.b(k.a);
+    Exceptionprintstacktrace.c(k.i);
+    Exceptionprintstacktrace.d(k.c);
+    Exceptionprintstacktrace.b("toggleDatalogging?");
+    Exceptionprintstacktrace.a("dataLoggingActive");
+    this.a.add(Exceptionprintstacktrace);
+    if (ManagerUsingArrayList.a().e("powerCycleRequired")) {
+      Exceptionprintstacktrace = new Exceptionprintstacktrace();
+      Exceptionprintstacktrace.v("powerCycleRequired");
+      Exceptionprintstacktrace.a((GInterfaceDb)new c("Power Cycle"));
+      Exceptionprintstacktrace.b((GInterfaceDb)new c("Power Cycle"));
+      Exceptionprintstacktrace.a(k.k);
+      Exceptionprintstacktrace.b(k.a);
+      Exceptionprintstacktrace.c(k.i);
+      Exceptionprintstacktrace.d(k.c);
+      Exceptionprintstacktrace.a("powerCycleRequired");
+      this.a.add(Exceptionprintstacktrace);
     } 
     if (c.a().c())
       h.b(this.a); 
@@ -93,12 +93,12 @@ public class IInterfaceDelta {
     return this.a;
   }
   
-  public ak c(String paramString) {
-    Iterator<ak> iterator = c();
+  public Exceptionprintstacktrace c(String paramString) {
+    Iterator<Exceptionprintstacktrace> iterator = c();
     while (iterator.hasNext()) {
-      ak ak = iterator.next();
-      if (ak.aL().equals(paramString))
-        return ak; 
+      Exceptionprintstacktrace Exceptionprintstacktrace = iterator.next();
+      if (Exceptionprintstacktrace.aL().equals(paramString))
+        return Exceptionprintstacktrace; 
     } 
     return null;
   }

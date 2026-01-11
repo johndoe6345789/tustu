@@ -279,13 +279,15 @@ def generate_smart_mapping(base_dir):
         if not os.path.isdir(pkg_path):
             continue
         
-        java_files = [f for f in os.listdir(pkg_path) if f.endswith('.java') and len(f) == 6]
+        java_files = [f for f in os.listdir(pkg_path) if f.endswith('.java')]
         
         for java_file in sorted(java_files):
             filepath = os.path.join(pkg_path, java_file)
             rel_path = os.path.relpath(filepath, base_dir)
             
-            if len(java_file.replace('.java', '')) > 1:
+            # Skip if filename is already long (likely already renamed)
+            filename_without_ext = java_file.replace('.java', '')
+            if len(filename_without_ext) > 2:
                 continue
             
             try:

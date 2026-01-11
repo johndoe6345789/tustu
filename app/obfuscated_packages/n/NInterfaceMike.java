@@ -3,7 +3,7 @@ package n;
 import G.R;
 import G.T;
 import V.ExceptionPrintstacktrace;
-import W.aa;
+import W.NetworkExceptionprintstacktrace;
 import W.d;
 import aE.PropertiesExtension;
 import ac.AcInterfaceVictor;
@@ -48,12 +48,12 @@ public class NInterfaceMike implements AcInterfaceVictor {
     if (str != null)
       return str; 
     D.c("No currenttune, will generate new msq for infodata.");
-    aa aa = new aa();
+    NetworkExceptionprintstacktrace NetworkExceptionprintstacktrace = new NetworkExceptionprintstacktrace();
     R r = T.PropertiesExtension().c();
     if (r != null) {
       try {
         File file = File.createTempFile(X.PropertiesExtension(), "msq");
-        aa.PropertiesExtension(r, file.getAbsolutePath(), new o());
+        NetworkExceptionprintstacktrace.PropertiesExtension(r, file.getAbsolutePath(), new o());
         str = new String(d.PropertiesExtension(file));
       } catch (IOException iOException) {
         Logger.getLogger(m.class.getName()).log(Level.SEVERE, "Failed to create temp file for start tune Info Data", iOException);

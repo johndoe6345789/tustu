@@ -1,4 +1,4 @@
-import aP.dl;
+import aP.WindowListenerAzinterfacecharlie;
 import aP.NetworkHashMap;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
@@ -11,10 +11,10 @@ final class SComponentGolf implements Runnable {
   SComponentGolf(boolean paramBoolean, String[] paramArrayOfString) {}
   
   public void run() {
-    dl dl = new dl(this.IOPropertiesUsingFile);
-    TunerStudio.IOPropertiesUsingFile = dl;
+    WindowListenerAzinterfacecharlie WindowListenerAzinterfacecharlie = new WindowListenerAzinterfacecharlie(this.IOPropertiesUsingFile);
+    TunerStudio.IOPropertiesUsingFile = WindowListenerAzinterfacecharlie;
     if (TunerStudio.c)
-      bV.d("Unable to delete " + TunerStudio.b + "\nAttempted to clear file instead.", (Component)dl); 
+      bV.d("Unable to delete " + TunerStudio.b + "\nAttempted to clear file instead.", (Component)WindowListenerAzinterfacecharlie); 
     if (this.b.length > 0 && !this.b[0].equals("")) {
       for (byte b = 0; b < this.b.length; b++)
         System.out.println("arg found " + b + ":" + this.b[b]); 
@@ -28,19 +28,19 @@ final class SComponentGolf implements Runnable {
           } 
         }  
       if (this.b[0].toLowerCase().contains(".msq") || bool) {
-        NetworkHashMap.IOPropertiesUsingFile().c((Window)dl, this.b[0]);
+        NetworkHashMap.IOPropertiesUsingFile().c((Window)WindowListenerAzinterfacecharlie, this.b[0]);
       } else if (this.b[0].toLowerCase().endsWith("." + IOPropertiesUsingFile.t)) {
         if (RInterfaceIndia.IOPropertiesUsingFile().IOPropertiesUsingFile("09RGDKDG;LKIGD")) {
           NetworkHashMap.IOPropertiesUsingFile().IOPropertiesUsingFile(this.b[0]);
         } else {
-          bV.d(SComponentGolf.b("Open Project Archive not supported in this edition."), (Component)dl);
-          dl.n();
+          bV.d(SComponentGolf.b("Open Project Archive not supported in this edition."), (Component)WindowListenerAzinterfacecharlie);
+          WindowListenerAzinterfacecharlie.n();
         } 
       } else {
-        dl.RInterfaceIndia();
+        WindowListenerAzinterfacecharlie.RInterfaceIndia();
       } 
     } else {
-      dl.RInterfaceIndia();
+      WindowListenerAzinterfacecharlie.RInterfaceIndia();
     } 
     TunerStudio.IOPropertiesUsingFile.h();
   }

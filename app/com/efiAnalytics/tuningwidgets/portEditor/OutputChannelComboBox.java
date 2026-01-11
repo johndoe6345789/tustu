@@ -1,10 +1,10 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
 import G.R;
-import G.aH;
-import G.aM;
-import G.aN;
-import G.aR;
+import G.SerializableImpl;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
@@ -24,13 +24,13 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
   
   private R l = null;
   
-  aM b = null;
+  Manager b = null;
   
-  aN c = null;
+  GInterfaceAn c = null;
   
-  private aM m = null;
+  private Manager m = null;
   
-  private aM n = null;
+  private Manager n = null;
   
   ArrayList d = new ArrayList();
   
@@ -59,9 +59,9 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
     ExceptionInVPackage(this.ExceptionInVPackage);
     addActionListener(new D(this));
     this.c = new E(this);
-    aR aR = aR.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
-      aR.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(this.ExceptionInVPackage.c(), this.b.aL(), this.c);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Failed to subscribe " + this.b.aL() + " for update notification.", (Exception)ExceptionInVPackage, this);
     } 
@@ -69,32 +69,32 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
   
   protected void ExceptionInVPackage(String paramString) {
     if (paramString != null && this.l != null && paramString.length() > 0 && !this.h) {
-      aH aH = this.l.ExceptionPrintstacktrace(paramString);
+      SerializableImpl SerializableImpl = this.l.ExceptionPrintstacktrace(paramString);
       try {
         double[][] arrayOfDouble1 = this.b.i(this.ExceptionInVPackage.h());
         if (this.k) {
           if (this.b.e() >= 4) {
-            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = aH.x();
+            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = SerializableImpl.x();
           } else {
-            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = (aH.x() - this.l.O().af());
+            arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = (SerializableImpl.x() - this.l.O().af());
           } 
         } else {
-          arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = aH.ExceptionInVPackage();
+          arrayOfDouble1[this.ExceptionPrintstacktrace][this.f] = SerializableImpl.ExceptionInVPackage();
         } 
         this.b.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble1);
         if (this.n != null) {
           this.e.ExceptionInVPackage();
-          this.e.ExceptionInVPackage(aH.aL().getBytes());
+          this.e.ExceptionInVPackage(SerializableImpl.aL().getBytes());
           double[][] arrayOfDouble = this.n.i(this.ExceptionInVPackage.h());
           arrayOfDouble[this.ExceptionPrintstacktrace][this.f] = this.e.b();
           this.n.ExceptionInVPackage(this.ExceptionInVPackage.h(), arrayOfDouble);
         } 
         double[][] arrayOfDouble2 = this.m.i(this.ExceptionInVPackage.h());
-        arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = aH.l();
+        arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = SerializableImpl.l();
         if (this.i) {
-          if (aH.t())
+          if (SerializableImpl.t())
             arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = ((int)arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] | 0x40); 
-          if (!aH.p())
+          if (!SerializableImpl.p())
             arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] = ((int)arrayOfDouble2[this.ExceptionPrintstacktrace][this.f] | 0x80); 
         } 
         try {
@@ -102,14 +102,14 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
         } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
           bV.d("There is an error in your ini not allowing size to be set properly.", this);
         } 
-        ExceptionInVPackage(aH);
+        ExceptionInVPackage(SerializableImpl);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        D.ExceptionInVPackage("Value Out of Bounds updating:" + aH.aL() + " offset to " + this.b.aL());
+        D.ExceptionInVPackage("Value Out of Bounds updating:" + SerializableImpl.aL() + " offset to " + this.b.aL());
         Logger.getLogger(C.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
       } catch (ExceptionPrintstacktrace g1) {
-        D.ExceptionInVPackage("Error updating:" + aH.aL() + " offset to " + this.b.aL());
+        D.ExceptionInVPackage("Error updating:" + SerializableImpl.aL() + " offset to " + this.b.aL());
       } catch (Exception exception) {
-        String str1 = (aH == null) ? "null" : aH.aL();
+        String str1 = (SerializableImpl == null) ? "null" : SerializableImpl.aL();
         String str2 = (this.b == null) ? "null" : this.b.aL();
         D.ExceptionInVPackage("Unkown Error updating:" + str1 + " offset to " + str2);
         exception.printStackTrace();
@@ -136,14 +136,14 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
         double d = this.b.i(this.ExceptionInVPackage.h())[this.ExceptionPrintstacktrace][this.f];
         boolean bool = false;
         for (byte b = 0; b < getItemCount(); b++) {
-          aH aH = this.l.ExceptionPrintstacktrace((String)getItemAt(b));
+          SerializableImpl SerializableImpl = this.l.ExceptionPrintstacktrace((String)getItemAt(b));
           if (this.k) {
-            if (aH != null) {
+            if (SerializableImpl != null) {
               long l;
               if (this.b.e() >= 4) {
-                l = aH.x();
+                l = SerializableImpl.x();
               } else {
-                l = aH.x() - this.l.O().af();
+                l = SerializableImpl.x() - this.l.O().af();
               } 
               if (l == d) {
                 setSelectedItem(getItemAt(b));
@@ -151,7 +151,7 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
                 break;
               } 
             } 
-          } else if (aH != null && aH.ExceptionInVPackage() == d) {
+          } else if (SerializableImpl != null && SerializableImpl.ExceptionInVPackage() == d) {
             setSelectedItem(getItemAt(b));
             bool = true;
             break;
@@ -165,15 +165,15 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
   }
   
   public void close() {
-    aR aR = aR.ExceptionInVPackage();
-    aR.ExceptionInVPackage(this.c);
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage(this.c);
   }
   
   public void ExceptionInVPackage(p paramp) {
     this.d.add(paramp);
   }
   
-  private void ExceptionInVPackage(aH paramaH) {
+  private void ExceptionInVPackage(SerializableImpl paramaH) {
     Iterator<p> iterator = this.d.iterator();
     while (iterator.hasNext())
       ((p)iterator.next()).ExceptionInVPackage(paramaH); 
@@ -189,8 +189,8 @@ public class OutputChannelComboBox extends JComboBox implements F, bc {
     ArrayList<String> arrayList = new ArrayList();
     byte b;
     for (b = 0; b < arrayOfString.length; b++) {
-      aH aH = paramR.ExceptionPrintstacktrace(arrayOfString[b]);
-      if (aH.b() != null && !aH.b().equals("formula") && !aH.b().equals("bits") && (!this.ExceptionExtensionGetmessage || aH.l() != 4))
+      SerializableImpl SerializableImpl = paramR.ExceptionPrintstacktrace(arrayOfString[b]);
+      if (SerializableImpl.b() != null && !SerializableImpl.b().equals("formula") && !SerializableImpl.b().equals("bits") && (!this.ExceptionExtensionGetmessage || SerializableImpl.l() != 4))
         arrayList.add(arrayOfString[b]); 
     } 
     arrayOfString = arrayList.<String>toArray(new String[arrayList.size()]);

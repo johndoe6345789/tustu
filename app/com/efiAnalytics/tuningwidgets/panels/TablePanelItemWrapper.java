@@ -1,25 +1,25 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.bb;
+import G.GComponentBb;
 import java.util.ArrayList;
 
 class TablePanelItemWrapper {
-  bb a = null;
+  GComponentBb a = null;
   
-  public am(ae paramae, bb parambb) {
+  public am(ae paramae, GComponentBb parambb) {
     this.a = parambb;
   }
   
   public boolean a(ArrayList paramArrayList) {
     byte b = 0;
-    for (bb bb1 : paramArrayList) {
+    for (GComponentBb bb1 : paramArrayList) {
       if (this.a.equals(bb1) && ++b == 1)
         return true; 
     } 
     return false;
   }
   
-  public bb a() {
+  public GComponentBb a() {
     return this.a;
   }
   

@@ -1,10 +1,10 @@
 package P;
 
-import G.bL;
+import G.GInterfaceBl;
 import java.util.ArrayList;
 import java.util.List;
 
-public PInterfaceCharlielass PInterfaceCharlie extends bL {
+public PInterfaceCharlielass PInterfaceCharlie extends GInterfaceBl {
   private double b = 0.0D;
   
   private double[] c = null;

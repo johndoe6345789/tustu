@@ -1,10 +1,10 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.bG;
-import G.bH;
+import G.GInterfaceBg;
+import G.GInterfaceBh;
 import V.ExceptionInVPackage;
-import bH.T;
-import bH.X;
+import GInterfaceBh.T;
+import GInterfaceBh.X;
 import com.efiAnalytics.ui.do;
 import com.efiAnalytics.ui.et;
 import java.awt.BorderLayout;
@@ -22,7 +22,7 @@ import javax.swing.JRadioButton;
 import s.SComponentGolf;
 
 public class ThermistorCalibrationPanel extends AbstractDataPanel {
-  bG ExceptionInVPackage = null;
+  GInterfaceBg ExceptionInVPackage = null;
   
   do b = new do();
   
@@ -58,7 +58,7 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
   
   double r;
   
-  public ThermistorCalibrationPanel(bG parambG) {
+  public ThermistorCalibrationPanel(GInterfaceBg parambG) {
     this.ExceptionInVPackage = parambG;
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b(parambG.h())));
     setLayout(new BorderLayout(5, 5));
@@ -66,10 +66,10 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
     jPanel1.setLayout(new GridLayout(0, 1, 5, 5));
     this.k.addItem(o);
     this.k.setEditable(false);
-    Iterator<bH> iterator = parambG.ExceptionInVPackage();
+    Iterator<GInterfaceBh> iterator = parambG.ExceptionInVPackage();
     while (iterator.hasNext()) {
-      bH bH = iterator.next();
-      this.k.addItem(SComponentGolf.b(bH.ExceptionInVPackage()));
+      GInterfaceBh GInterfaceBh = iterator.next();
+      this.k.addItem(SComponentGolf.b(GInterfaceBh.ExceptionInVPackage()));
     } 
     this.k.addItemListener(new SensorComboBoxItemListener(this));
     JPanel jPanel2 = new JPanel();
@@ -122,59 +122,59 @@ public class ThermistorCalibrationPanel extends AbstractDataPanel {
       this.h.setText("");
       return;
     } 
-    bH bH = b(paramString);
-    if (bH == null)
+    GInterfaceBh GInterfaceBh = b(paramString);
+    if (GInterfaceBh == null)
       return; 
-    this.b.setText("" + bH.b());
-    this.c.setText("" + bH.d());
-    this.d.setText("" + bH.f());
-    this.e.setText("" + bH.h());
+    this.b.setText("" + GInterfaceBh.b());
+    this.c.setText("" + GInterfaceBh.d());
+    this.d.setText("" + GInterfaceBh.f());
+    this.e.setText("" + GInterfaceBh.h());
     if (this.i.isSelected()) {
-      double d1 = Math.round((bH.c() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
-      double d2 = Math.round((bH.e() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
-      double d3 = Math.round((bH.SComponentGolf() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
+      double d1 = Math.round((GInterfaceBh.c() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
+      double d2 = Math.round((GInterfaceBh.e() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
+      double d3 = Math.round((GInterfaceBh.SComponentGolf() * 9.0D / 5.0D + 32.0D) * 1000.0D) / 1000.0D;
       this.f.setText("" + d1);
       this.SComponentGolf.setText("" + d2);
       this.h.setText("" + d3);
     } else {
-      this.f.setText("" + bH.c());
-      this.SComponentGolf.setText("" + bH.e());
-      this.h.setText("" + bH.SComponentGolf());
+      this.f.setText("" + GInterfaceBh.c());
+      this.SComponentGolf.setText("" + GInterfaceBh.e());
+      this.h.setText("" + GInterfaceBh.SComponentGolf());
     } 
   }
   
-  private bH b(String paramString) {
-    Iterator<bH> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
+  private GInterfaceBh b(String paramString) {
+    Iterator<GInterfaceBh> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
     while (iterator.hasNext()) {
-      bH bH = iterator.next();
-      if (SComponentGolf.b(bH.ExceptionInVPackage()).equals(paramString))
-        return bH; 
+      GInterfaceBh GInterfaceBh = iterator.next();
+      if (SComponentGolf.b(GInterfaceBh.ExceptionInVPackage()).equals(paramString))
+        return GInterfaceBh; 
     } 
     return null;
   }
   
   private void c() {
-    Iterator<bH> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
+    Iterator<GInterfaceBh> iterator = this.ExceptionInVPackage.ExceptionInVPackage();
     while (iterator.hasNext()) {
-      bH bH = iterator.next();
-      if (c(bH.ExceptionInVPackage()))
-        this.k.setSelectedItem(SComponentGolf.b(bH.ExceptionInVPackage())); 
+      GInterfaceBh GInterfaceBh = iterator.next();
+      if (c(GInterfaceBh.ExceptionInVPackage()))
+        this.k.setSelectedItem(SComponentGolf.b(GInterfaceBh.ExceptionInVPackage())); 
     } 
   }
   
   private boolean c(String paramString) {
-    bH bH = b(paramString);
-    if (bH == null)
+    GInterfaceBh GInterfaceBh = b(paramString);
+    if (GInterfaceBh == null)
       return false; 
     if (this.j.isSelected())
-      return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && this.f.getText().equals("" + bH.c()) && this.SComponentGolf.getText().equals("" + bH.e()) && this.h.getText().equals("" + bH.SComponentGolf())); 
+      return (this.b.getText().equals("" + GInterfaceBh.b()) && this.c.getText().equals("" + GInterfaceBh.d()) && this.d.getText().equals("" + GInterfaceBh.f()) && this.e.getText().equals("" + GInterfaceBh.h()) && this.f.getText().equals("" + GInterfaceBh.c()) && this.SComponentGolf.getText().equals("" + GInterfaceBh.e()) && this.h.getText().equals("" + GInterfaceBh.SComponentGolf())); 
     double d1 = Double.parseDouble(this.f.getText());
     double d2 = Double.parseDouble(this.SComponentGolf.getText());
     double d3 = Double.parseDouble(this.h.getText());
     d1 = Math.round((d1 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
     d2 = Math.round((d2 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
     d3 = Math.round((d3 - 32.0D) * 5.0D / 9.0D * 1000.0D) / 1000.0D;
-    return (this.b.getText().equals("" + bH.b()) && this.c.getText().equals("" + bH.d()) && this.d.getText().equals("" + bH.f()) && this.e.getText().equals("" + bH.h()) && d1 == bH.c() && d2 == bH.e() && d3 == bH.SComponentGolf());
+    return (this.b.getText().equals("" + GInterfaceBh.b()) && this.c.getText().equals("" + GInterfaceBh.d()) && this.d.getText().equals("" + GInterfaceBh.f()) && this.e.getText().equals("" + GInterfaceBh.h()) && d1 == GInterfaceBh.c() && d2 == GInterfaceBh.e() && d3 == GInterfaceBh.SComponentGolf());
   }
   
   private void d() {

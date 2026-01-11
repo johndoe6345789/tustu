@@ -1,7 +1,7 @@
 package bU;
 
 import G.R;
-import G.dh;
+import G.GInterfaceDh;
 import V.ExceptionPrintstacktrace;
 import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
@@ -33,7 +33,7 @@ public class BuInterfaceFoxtrot implements ExceptionInBsPackage {
     if (b == a) {
       R r = paramo.f();
       try {
-        dh.a(r);
+        GInterfaceDh.a(r);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(f.class.getName()).log(Level.WARNING, "Failed to activate Turbo baud", (Throwable)ExceptionPrintstacktrace);
       } 
@@ -47,7 +47,7 @@ public class BuInterfaceFoxtrot implements ExceptionInBsPackage {
     } else if (b == b) {
       R r = paramo.f();
       try {
-        dh.b(r);
+        GInterfaceDh.b(r);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(f.class.getName()).log(Level.WARNING, "Failed to deactivate Turbo baud", (Throwable)ExceptionPrintstacktrace);
       } 

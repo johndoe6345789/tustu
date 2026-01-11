@@ -2,11 +2,11 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
 import G.T;
-import G.ac;
-import ac.AcInterfaceQuebec;
-import ac.AcInterfaceRomeo;
+import G.SerializableImplExceptionprintstacktrace;
+import SerializableImplExceptionprintstacktrace.AcInterfaceQuebec;
+import SerializableImplExceptionprintstacktrace.AcInterfaceRomeo;
 import bH.D;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.ui.eJ;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.SComponentGolf;
 
-public class ProfileDatalogFieldsPanel extends bh {
+public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
   R[] a = null;
   
   private String k = "";
@@ -121,8 +121,8 @@ public class ProfileDatalogFieldsPanel extends bh {
     this.d.clear();
     for (F f : this.f) {
       R AcInterfaceRomeo = T.a().c(f.a().SComponentGolf());
-      ac ac = f.a().b();
-      if (AcInterfaceRomeo.a(AcInterfaceRomeo, ac)) {
+      SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = f.a().b();
+      if (AcInterfaceRomeo.a(AcInterfaceRomeo, SerializableImplExceptionprintstacktrace)) {
         if (f.a().a().contains("Oil"))
           D.c(f.a().a()); 
         if (this.SComponentGolf != null && (!this.SComponentGolf.contains(f.a().a()) || b(f.a().a()))) {

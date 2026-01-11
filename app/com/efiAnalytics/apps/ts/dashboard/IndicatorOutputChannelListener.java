@@ -1,8 +1,8 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-import G.cq;
+import G.GComponentCq;
 
-class IndicatorOutputChannelListener implements cq {
+class IndicatorOutputChannelListener implements GComponentCq {
   double a = -1.0D;
   
   IndicatorOutputChannelListener(Indicator paramIndicator) {}

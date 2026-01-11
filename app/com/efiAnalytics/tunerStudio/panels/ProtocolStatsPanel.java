@@ -1,6 +1,6 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.cr;
+import G.GComponentCr;
 import J.Abstract;
 import com.efiAnalytics.apps.ts.dashboard.Z;
 import com.efiAnalytics.apps.ts.dashboard.aa;
@@ -30,7 +30,7 @@ public class ProtocolStatsPanel extends JPanel implements bc {
     add("Center", (Component)this.a);
     setPreferredSize(eJ.a(800, 320));
     setMinimumSize(eJ.a(800, 320));
-    Z z = (new aa()).a((cr)paramh);
+    Z z = (new aa()).a((GComponentCr)paramh);
     this.a.a(z);
     this.a.setEnabled(false);
   }

@@ -2,119 +2,119 @@ package L;
 
 import G.R;
 import G.T;
-import G.aI;
+import G.GInterfaceAi;
 import I.ThreadedInIPackage;
 import ax.AxComponentAlpha;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import ax.AbstractInAxPackage;
 import java.util.List;
 
 public class TunerStudioFunctionFactory extends AbstractInAxPackage {
-  private aI b;
+  private GInterfaceAi b;
   
   private static boolean c = true;
   
-  ab a;
+  AxInterfaceAb a;
   
-  public h(aI paramaI) {
+  public h(GInterfaceAi paramaI) {
     this.b = paramaI;
     this.a = (n.a()).a;
   }
   
-  public ac a(String paramString, List paramList) {
-    ac ac = null;
+  public AbstractInAxPackage a(String paramString, List paramList) {
+    AbstractInAxPackage AbstractInAxPackage = null;
     if (paramString.equalsIgnoreCase("timeNow"))
-      ac = b(paramString, paramList); 
+      AbstractInAxPackage = b(paramString, paramList); 
     if (paramString.equalsIgnoreCase("systemTime")) {
-      ac = c(paramString, paramList);
+      AbstractInAxPackage = c(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("table")) {
-      ac = d(paramString, paramList);
+      AbstractInAxPackage = d(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getWorkingLocalCanId")) {
-      ac = AbstractInAxPackage(paramString, paramList);
+      AbstractInAxPackage = AbstractInAxPackage(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelValueByOffset")) {
-      ac = h(paramString, paramList);
+      AbstractInAxPackage = h(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelScaleByOffset")) {
-      ac = i(paramString, paramList);
+      AbstractInAxPackage = i(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelTranslateByOffset")) {
-      ac = j(paramString, paramList);
+      AbstractInAxPackage = j(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelDigitsByOffset")) {
-      ac = ThreadedInIPackage(paramString, paramList);
+      AbstractInAxPackage = ThreadedInIPackage(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelMinByOffset")) {
-      ac = l(paramString, paramList);
+      AbstractInAxPackage = l(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("getChannelMaxByOffset")) {
-      ac = m(paramString, paramList);
+      AbstractInAxPackage = m(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("counter")) {
-      ac = q(paramString, paramList);
+      AbstractInAxPackage = q(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("arrayValue")) {
-      ac = n(paramString, paramList);
+      AbstractInAxPackage = n(paramString, paramList);
     } else if (c && paramString.equalsIgnoreCase("tableLookup")) {
-      ac = o(paramString, paramList);
+      AbstractInAxPackage = o(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("tableLookup")) {
-      ac = new g(paramString);
+      AbstractInAxPackage = new g(paramString);
     } else if (paramString.equalsIgnoreCase("getLogTime")) {
-      ac = p(paramString, paramList);
+      AbstractInAxPackage = p(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("isOnline")) {
-      ac = f(paramString, paramList);
+      AbstractInAxPackage = f(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("updateValueWhen")) {
-      ac = g(paramString, paramList);
+      AbstractInAxPackage = g(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("isAdvancedMathAvaliable") || paramString.equalsIgnoreCase("isAdvancedMathAvailable")) {
       if (c) {
-        ac = new f(1.0D);
+        AbstractInAxPackage = new f(1.0D);
       } else {
-        ac = new f(0.0D);
+        AbstractInAxPackage = new f(0.0D);
       } 
     } else if (paramString.equalsIgnoreCase("persistentAccumulate")) {
       if (c) {
-        ac = r(paramString, paramList);
+        AbstractInAxPackage = r(paramString, paramList);
       } else {
-        ac = new g(paramString);
+        AbstractInAxPackage = new g(paramString);
       } 
     } 
-    return ac;
+    return AbstractInAxPackage;
   }
   
   public static void a(boolean paramBoolean) {
     c = paramBoolean;
   }
   
-  private ac b(String paramString, List paramList) {
+  private AbstractInAxPackage b(String paramString, List paramList) {
     if (paramList.size() != 0)
       throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new X();
   }
   
-  private ac c(String paramString, List paramList) {
+  private AbstractInAxPackage c(String paramString, List paramList) {
     if (paramList.size() != 0)
       throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new R();
   }
   
-  private ac d(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage d(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() != 2)
       throw new AxComponentAlpha(paramString, paramList.size(), 2); 
     return new S(paramList.get(0), paramList.get(1));
   }
   
-  private ac AbstractInAxPackage(String paramString, List paramList) {
+  private AbstractInAxPackage AbstractInAxPackage(String paramString, List paramList) {
     if (!paramList.isEmpty())
       throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new ad();
   }
   
-  private ac f(String paramString, List paramList) {
+  private AbstractInAxPackage f(String paramString, List paramList) {
     if (paramList.isEmpty())
       return new D(this.b); 
     throw new AxComponentAlpha(paramString, paramList.size(), 0);
   }
   
-  private ac g(String paramString, List paramList) {
+  private AbstractInAxPackage g(String paramString, List paramList) {
     if (paramList.size() >= 2 && paramList.size() <= 3)
-      return new ac(paramList); 
+      return new AbstractInAxPackage(paramList); 
     throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
-  private ac h(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage h(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new s(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -122,7 +122,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac i(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage i(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new w(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -130,7 +130,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac j(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage j(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new x(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -138,7 +138,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac ThreadedInIPackage(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage ThreadedInIPackage(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new t(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -146,7 +146,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac l(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage l(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new v(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -154,7 +154,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac m(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage m(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 1)
       return new u(this.b, paramList.get(0)); 
     if (paramList.size() == 2)
@@ -162,13 +162,13 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha(paramString, paramList.size(), 1);
   }
   
-  private ac n(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage n(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 2)
       return new d(this.b, paramList.get(0), paramList.get(1)); 
     throw new AxComponentAlpha(paramString, paramList.size(), 2);
   }
   
-  private ac o(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage o(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() == 5)
       return new T(this.b, paramList.get(0), paramList.get(1), paramList.get(2), paramList.get(3), paramList.get(4)); 
     if (paramList.size() == 3)
@@ -176,22 +176,22 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     throw new AxComponentAlpha("Proper usage: tableLookup(array.zArray, array.xArray, array.yArray, xChannel, yChannel), or for 1D tables: tableLookup(array.ValueArrayName, array.LookupArrayName, LookupChannelName)" + paramString, paramList.size(), 5);
   }
   
-  private ac p(String paramString, List paramList) {
+  private AbstractInAxPackage p(String paramString, List paramList) {
     if (!paramList.isEmpty())
       throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new y();
   }
   
-  private ac q(String paramString, List paramList) {
+  private AbstractInAxPackage q(String paramString, List paramList) {
     if (!paramList.isEmpty())
       throw new AxComponentAlpha(paramString, paramList.size(), 0); 
     return new L(this.a);
   }
   
-  private ac r(String paramString, List<ab> paramList) {
+  private AbstractInAxPackage r(String paramString, List<AxInterfaceAb> paramList) {
     if (paramList.size() != 1)
       throw new AxComponentAlpha(paramString, paramList.size(), 1); 
-    String str = ((ab)paramList.get(0)).toString();
+    String str = ((AxInterfaceAb)paramList.get(0)).toString();
     R r = T.a().c();
     if (r != null && this.b.c().equals(r.c())) {
       String str1 = r.c();
@@ -205,7 +205,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
     return b;
   }
   
-  public void a(aI paramaI) {
+  public void a(GInterfaceAi paramaI) {
     this.b = paramaI;
   }
 }

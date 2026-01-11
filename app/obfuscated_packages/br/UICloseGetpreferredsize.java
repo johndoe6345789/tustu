@@ -1,11 +1,11 @@
 package br;
 
 import G.R;
-import G.aH;
-import G.bM;
-import G.be;
-import G.bv;
-import G.dm;
+import G.SerializableImpl;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.GInterfaceDm;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import aE.ExceptionInVPackage;
@@ -15,8 +15,8 @@ import bH.D;
 import bH.X;
 import bH.p;
 import bL.ExceptionInVPackage;
-import bt.bQ;
-import bt.bh;
+import bt.ManagerBfcomponentcharlie;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.tuningwidgets.panels.aP;
 import com.efiAnalytics.ui.b;
 import com.efiAnalytics.ui.bV;
@@ -55,9 +55,9 @@ import s.ExceptionPrintstacktrace;
 public class UICloseGetpreferredsize extends al implements bc {
   R ExceptionInVPackage = null;
   
-  dm b = null;
+  GInterfaceDm b = null;
   
-  bh c = null;
+  ExceptionEqualsinaipackage c = null;
   
   Isoptimizeddrawingenabled d = null;
   
@@ -85,7 +85,7 @@ public class UICloseGetpreferredsize extends al implements bc {
   
   private String p = null;
   
-  public UICloseGetpreferredsize(R paramR, dm paramdm) {
+  public UICloseGetpreferredsize(R paramR, GInterfaceDm paramdm) {
     this.ExceptionInVPackage = paramR;
     this.b = paramdm;
     this.p = paramdm.b();
@@ -100,7 +100,7 @@ public class UICloseGetpreferredsize extends al implements bc {
     if (paramdm.o("disableMaxPercentLimit"))
       this.i.NetworkHashMap(); 
     this.h = r.ExceptionInVPackage().ExceptionInVPackage(paramR, paramdm, this.i);
-    this.c = new bh();
+    this.c = new ExceptionEqualsinaipackage();
     ExceptionInVPackage((bc)this.c);
     this.ExceptionPrintstacktrace = new I(this);
     this.h.ExceptionInVPackage(this.ExceptionPrintstacktrace);
@@ -115,7 +115,7 @@ public class UICloseGetpreferredsize extends al implements bc {
     jPanel1.setLayout(new BorderLayout());
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b(bM.c(this.ExceptionInVPackage, e())) + " " + ExceptionPrintstacktrace.b("Control Panel")));
+    jPanel2.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b(ExceptionprintstacktraceInGPackage.c(this.ExceptionInVPackage, e())) + " " + ExceptionPrintstacktrace.b("Control Panel")));
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BoxLayout(jPanel3, 0));
     this.e = new D(this, ExceptionPrintstacktrace.b("Idle"), 0);
@@ -135,7 +135,7 @@ public class UICloseGetpreferredsize extends al implements bc {
     jPanel4.add(this.k);
     JButton jButton1 = new JButton(ExceptionPrintstacktrace.b("Apply"));
     jButton1.setMnemonic('S');
-    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will be running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
+    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will CloneableImpl running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
     jButton1.addActionListener(new w(this));
     jPanel4.add(jButton1);
     JButton jButton2 = new JButton(ExceptionPrintstacktrace.b("Save on ECU"));
@@ -233,8 +233,8 @@ public class UICloseGetpreferredsize extends al implements bc {
   
   private void ExceptionPrintstacktrace() {
     try {
-      com.efiAnalytics.ui.s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, e());
-      com.efiAnalytics.ui.s s2 = bQ.ExceptionInVPackage().ExceptionInVPackage(s1, this.b.b());
+      com.efiAnalytics.ui.s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, e());
+      com.efiAnalytics.ui.s s2 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(s1, this.b.b());
       aP aP = new aP(this.ExceptionInVPackage, s2, this.b.b());
       ExceptionInVPackage((bc)aP);
       aP.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(290), eJ.ExceptionInVPackage(170)));
@@ -255,9 +255,9 @@ public class UICloseGetpreferredsize extends al implements bc {
         br.add(jCheckBoxMenuItem);
         continue;
       } 
-      be be = (be)this.ExceptionInVPackage.e().c(str);
-      if (be != null) {
-        JCheckBoxMenuItem jCheckBoxMenuItem = b(X.b(ExceptionPrintstacktrace.b(be.M()), "\"", ""), str, bool);
+      CloneableImpl CloneableImpl = (CloneableImpl)this.ExceptionInVPackage.e().c(str);
+      if (CloneableImpl != null) {
+        JCheckBoxMenuItem jCheckBoxMenuItem = b(X.b(ExceptionPrintstacktrace.b(CloneableImpl.M()), "\"", ""), str, bool);
         br.add(jCheckBoxMenuItem);
         continue;
       } 
@@ -267,11 +267,11 @@ public class UICloseGetpreferredsize extends al implements bc {
     while (iterator.hasNext()) {
       String str1 = iterator.next();
       boolean bool = str1.equals(this.b.s());
-      aH aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(str1);
-      String str2 = bM.j(this.ExceptionInVPackage, str1);
+      SerializableImpl SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(str1);
+      String str2 = ExceptionprintstacktraceInGPackage.j(this.ExceptionInVPackage, str1);
       if (str2 == null)
         str2 = str1; 
-      if (aH != null) {
+      if (SerializableImpl != null) {
         JCheckBoxMenuItem jCheckBoxMenuItem = ExceptionInVPackage(X.b(ExceptionPrintstacktrace.b(str2), "\"", ""), str1, bool);
         br.add(jCheckBoxMenuItem);
         continue;
@@ -323,7 +323,7 @@ public class UICloseGetpreferredsize extends al implements bc {
   private void h() {
     if (this.b.c().equals("afrTSCustom")) {
       try {
-        com.efiAnalytics.ui.s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.c(), "", this.b.b());
+        com.efiAnalytics.ui.s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.c(), "", this.b.b());
         aP aP = new aP(this.ExceptionInVPackage, s1, this.b.b());
         ExceptionInVPackage((bc)aP);
         bV.ExceptionInVPackage((Component)aP, (Component)this, ExceptionPrintstacktrace.b("Target AFR Table"), (bc)aP);
@@ -336,18 +336,18 @@ public class UICloseGetpreferredsize extends al implements bc {
     } 
   }
   
-  private void ExceptionInVPackage(dm paramdm) {
-    be be = (be)this.ExceptionInVPackage.e().c(e());
-    be = be.j();
-    be.h("veAnalyze_");
+  private void ExceptionInVPackage(GInterfaceDm paramdm) {
+    CloneableImpl CloneableImpl = (CloneableImpl)this.ExceptionInVPackage.e().c(e());
+    CloneableImpl = CloneableImpl.j();
+    CloneableImpl.h("veAnalyze_");
     try {
-      com.efiAnalytics.ui.s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, be.aL(), be.AsInterfaceLima(), be.aL());
+      com.efiAnalytics.ui.s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, CloneableImpl.aL(), CloneableImpl.AsInterfaceLima(), CloneableImpl.aL());
       s1.c(1);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage("Unable to get Table Model for " + be.aL() + " with prefix:" + be.AsInterfaceLima());
+      D.ExceptionInVPackage("Unable to get Table Model for " + CloneableImpl.aL() + " with prefix:" + CloneableImpl.AsInterfaceLima());
       ExceptionPrintstacktrace.printStackTrace();
     } 
-    this.c.ExceptionInVPackage(this.ExceptionInVPackage, (bv)be);
+    this.c.ExceptionInVPackage(this.ExceptionInVPackage, (ArrayListExceptionprintstacktraceInGPackage)CloneableImpl);
   }
   
   public void ExceptionInVPackage(String paramString) {
@@ -362,9 +362,9 @@ public class UICloseGetpreferredsize extends al implements bc {
   
   public void b() {
     try {
-      com.efiAnalytics.ui.s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b(), "veAnalyze_", this.b.b());
+      com.efiAnalytics.ui.s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b(), "veAnalyze_", this.b.b());
       b[][] arrayOfB = s1.D();
-      s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b(), "", this.b.b());
+      s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b(), "", this.b.b());
       for (byte b = 0; b < s1.getRowCount(); b++) {
         for (byte b1 = 0; b1 < s1.getColumnCount(); b1++)
           s1.setValueAt(arrayOfB[arrayOfB.length - b - 1][b1].i(), b, b1); 
@@ -377,8 +377,8 @@ public class UICloseGetpreferredsize extends al implements bc {
   
   public boolean c() {
     try {
-      com.efiAnalytics.ui.s s1 = bQ.ExceptionInVPackage().b(this.ExceptionInVPackage, this.b.b(), "");
-      com.efiAnalytics.ui.s s2 = bQ.ExceptionInVPackage().b(this.ExceptionInVPackage, this.b.b(), "veAnalyze_");
+      com.efiAnalytics.ui.s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().b(this.ExceptionInVPackage, this.b.b(), "");
+      com.efiAnalytics.ui.s s2 = ManagerBfcomponentcharlie.ExceptionInVPackage().b(this.ExceptionInVPackage, this.b.b(), "veAnalyze_");
       if (s1 != null && s2 != null) {
         b[][] arrayOfB = s2.D();
         if (arrayOfB == null)
@@ -420,7 +420,7 @@ public class UICloseGetpreferredsize extends al implements bc {
   }
   
   protected void ExceptionInVPackage(boolean paramBoolean) {
-    String str = bM.ExceptionInVPackage(this.ExceptionInVPackage, e());
+    String str = ExceptionprintstacktraceInGPackage.ExceptionInVPackage(this.ExceptionInVPackage, e());
     boolean bool = true;
     try {
       bool = p.ExceptionInVPackage(str, this.ExceptionInVPackage);

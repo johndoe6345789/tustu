@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
 import G.B;
-import G.dj;
+import G.GInterfaceDj;
 import W.j;
 import bH.D;
 import bH.X;
@@ -25,7 +25,7 @@ import javax.swing.JComponent;
 public class CurveEditorComponent extends JComponent implements FocusListener {
   private double G = 1.0D;
   
-  private dj H = (dj)new B(1.0D);
+  private GInterfaceDj H = (GInterfaceDj)new B(1.0D);
   
   private ArrayList I = new ArrayList();
   
@@ -924,7 +924,7 @@ public class CurveEditorComponent extends JComponent implements FocusListener {
     return this.H.a(paramInt);
   }
   
-  public void a(dj paramdj) {
+  public void a(GInterfaceDj paramdj) {
     this.H = paramdj;
     String str = "" + paramdj.a();
     this.S = 0;

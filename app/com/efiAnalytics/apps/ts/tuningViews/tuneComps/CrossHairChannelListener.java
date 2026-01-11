@@ -1,11 +1,11 @@
 package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
-import G.cq;
+import G.GComponentCq;
 import bH.X;
 import com.efiAnalytics.ui.fh;
 import java.awt.Color;
 
-class CrossHairChannelListener implements cq {
+class CrossHairChannelListener implements GComponentCq {
   int a = -1;
   
   Double b = Double.valueOf(Double.NaN);

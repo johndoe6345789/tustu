@@ -1,13 +1,13 @@
 package br;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.D;
 
 class BrComponentHotel implements Runnable {
   h(f paramf, int paramInt) {}
   
   public void run() {
-    dd.a().o().a();
+    ThreadedJFrameIsoptimizeddrawingenabled.a().o().a();
     try {
       ((al)this.b.a.get(this.a)).a(false);
     } catch (Exception exception) {

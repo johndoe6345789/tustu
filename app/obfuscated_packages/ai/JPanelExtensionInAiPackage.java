@@ -1,6 +1,6 @@
 package ai;
 
-import G.aj;
+import G.GComponentAj;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.bV;
@@ -53,12 +53,12 @@ public class JPanelExtensionInAiPackage extends JPanel {
     add("South", this.c);
   }
   
-  public JPanelExtensionInAiPackage(aj paramaj) {
+  public JPanelExtensionInAiPackage(GComponentAj paramaj) {
     this();
     ExceptionInVPackage(paramaj);
   }
   
-  public void ExceptionInVPackage(aj paramaj) {
+  public void ExceptionInVPackage(GComponentAj paramaj) {
     if (paramaj.b() != null && !paramaj.b().equals("")) {
       this.ExceptionInVPackage.setText("<html>" + paramaj.c() + "<br><br>Web Help: <ExceptionInVPackage href=\"" + paramaj.b() + "\">" + paramaj.b() + "</ExceptionInVPackage></html>");
     } else {

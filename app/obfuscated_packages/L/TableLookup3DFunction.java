@@ -1,37 +1,37 @@
 package L;
 
-import G.aI;
-import G.aM;
+import G.GInterfaceAi;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import ax.CloneableImplInAxPackage;
 import ax.ExceptionInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 
-public class TableLookup3DFunction extends ac {
-  aI a;
+public class TableLookup3DFunction extends AbstractInAxPackage {
+  GInterfaceAi a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c;
+  AxInterfaceAb c;
   
-  ab d;
+  AxInterfaceAb d;
   
-  ab e;
+  AxInterfaceAb e;
   
-  ab f;
+  AxInterfaceAb f;
   
-  aM ExceptionPrintstacktrace = null;
+  Manager ExceptionPrintstacktrace = null;
   
-  aM h = null;
+  Manager h = null;
   
-  aM i = null;
+  Manager i = null;
   
   double[] j = null;
   
   double[] k = null;
   
-  public T(aI paramaI, ab paramab1, ab paramab2, ab paramab3, ab paramab4, ab paramab5) {
+  public T(GInterfaceAi paramaI, AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3, AxInterfaceAb paramab4, AxInterfaceAb paramab5) {
     this.a = paramaI;
     this.b = paramab1;
     this.c = paramab2;

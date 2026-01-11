@@ -1,16 +1,16 @@
 package L;
 
-import G.cZ;
+import G.GInterfaceCz;
 import I.ThreadedInIPackage;
 import ax.CloneableImplInAxPackage;
-import ax.ab;
+import ax.AxInterfaceAb;
 
-class ChannelValueByName implements ab {
-  cZ a;
+class ChannelValueByName implements AxInterfaceAb {
+  GInterfaceCz a;
   
   String b;
   
-  j(h paramh, cZ paramcZ, String paramString) {
+  j(h paramh, GInterfaceCz paramcZ, String paramString) {
     this.a = paramcZ;
     this.b = paramString;
   }

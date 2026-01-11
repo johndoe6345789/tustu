@@ -2,8 +2,8 @@ package aO;
 
 import C.c;
 import C.d;
-import G.cd;
-import W.aB;
+import G.GComponentCd;
+import W.ManagerInWPackage;
 import bH.X;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cm;
@@ -131,14 +131,14 @@ class JPanelExtensionInAoPackage extends JPanel {
     if (paramString == null || paramString.equals(""))
       return; 
     this.j.setSelected(false);
-    aB aB = new aB();
-    aB.a(new g(this));
+    ManagerInWPackage ManagerInWPackage = new ManagerInWPackage();
+    ManagerInWPackage.a(new g(this));
     File file = new File(paramString);
     if (!file.exists()) {
       bV.d("Ignition Log File not found:\n" + paramString, this);
       return;
     } 
-    aB.b(file, this.k.i() + 1);
+    ManagerInWPackage.b(file, this.k.i() + 1);
     this.m.a(file.getParentFile());
     this.i.a(paramString);
     this.j.setSelected(false);
@@ -149,7 +149,7 @@ class JPanelExtensionInAoPackage extends JPanel {
     if (i == null || i.a() == null)
       return; 
     this.k.a(i.a());
-    if (i.a().d().equals(cd.a)) {
+    if (i.a().d().equals(GComponentCd.a)) {
       this.h.setEnabled(false);
     } else {
       this.h.setEnabled(true);
@@ -157,7 +157,7 @@ class JPanelExtensionInAoPackage extends JPanel {
     this.k.d();
   }
   
-  public void a(ArrayList<cd> paramArrayList) {
+  public void a(ArrayList<GComponentCd> paramArrayList) {
     this.g.removeAllItems();
     for (byte b = 0; b < paramArrayList.size(); b++)
       this.g.addItem(new i(this, paramArrayList.get(b))); 

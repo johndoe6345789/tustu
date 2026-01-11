@@ -1,8 +1,8 @@
 package H;
 
 import G.R;
-import G.aH;
-import G.bb;
+import G.SerializableImpl;
+import G.GComponentBb;
 
 public class HInterfaceDelta extends e {
   public HInterfaceDelta(R paramR) {
@@ -10,9 +10,9 @@ public class HInterfaceDelta extends e {
     a(paramR.c() + "_ExtendedReplay");
   }
   
-  public aH g(String paramString) {
-    bb bb = ((R)a()).i(paramString);
-    return (aH)((bb != null) ? bb : ((R)a()).g(paramString));
+  public SerializableImpl g(String paramString) {
+    GComponentBb GComponentBb = ((R)a()).i(paramString);
+    return (SerializableImpl)((GComponentBb != null) ? GComponentBb : ((R)a()).g(paramString));
   }
 }
 

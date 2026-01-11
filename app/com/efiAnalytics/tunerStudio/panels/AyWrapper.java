@@ -1,16 +1,16 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.aY;
+import G.SerializableImplEquals;
 import s.SComponentGolf;
 
 class AyWrapper {
-  private aY b;
+  private SerializableImplEquals b;
   
-  AyWrapper(CalibrationTablePanel paramJ, aY paramaY) {
+  AyWrapper(CalibrationTablePanel paramJ, SerializableImplEquals paramaY) {
     this.b = paramaY;
   }
   
-  public aY a() {
+  public SerializableImplEquals a() {
     return this.b;
   }
   

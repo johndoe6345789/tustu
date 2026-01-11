@@ -1,9 +1,9 @@
 package aR;
 
 import V.ExceptionInVPackage;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
-import aP.hq;
+import aP.NInterfaceIndiaImpl;
 import bH.D;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
@@ -31,10 +31,10 @@ public class ArInterfaceXray implements DComponentCharlie {
       if (bool) {
         NetworkHashMap.ExceptionInVPackage().o();
       } else {
-        NetworkHashMap.ExceptionInVPackage().NetworkHashMap(dd.ExceptionInVPackage().DComponentCharlie());
+        NetworkHashMap.ExceptionInVPackage().NetworkHashMap(ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().DComponentCharlie());
       } 
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      hq.ExceptionInVPackage().d(ExceptionInVPackage.getLocalizedMessage());
+      NInterfaceIndiaImpl.ExceptionInVPackage().d(ExceptionInVPackage.getLocalizedMessage());
       D.d(ExceptionInVPackage.getLocalizedMessage());
     } 
   }

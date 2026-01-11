@@ -1,6 +1,6 @@
 package com.efiAnalytics.xcp.master.responseProcessors;
 
-import G.cx;
+import G.GComponentCx;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,10 +30,10 @@ class PageRefreshThread extends Thread {
           } 
           for (l l : arrayList) {
             if (l.a(l)) {
-              cx.a(l.a(), l.b());
+              GComponentCx.a(l.a(), l.b());
               continue;
             } 
-            cx.a(l.a(), l.b(), l.c(), l.d());
+            GComponentCx.a(l.a(), l.b(), l.c(), l.d());
           } 
         } 
       } 

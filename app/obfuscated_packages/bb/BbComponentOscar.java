@@ -1,9 +1,9 @@
 package bb;
 
-import aP.ja;
+import aP.ApInterfaceJa;
 import ae.AeInterfaceQuebec;
 
-class BbComponentOscar implements ja {
+class BbComponentOscar implements ApInterfaceJa {
   o(n paramn) {}
   
   public String a() {

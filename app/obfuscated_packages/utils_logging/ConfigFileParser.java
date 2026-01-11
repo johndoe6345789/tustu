@@ -1,7 +1,7 @@
 package bH;
 
 import C.f;
-import W.ak;
+import W.IOInWPackage;
 import W.d;
 import W.z;
 import java.io.File;
@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 public class e {
   public boolean a(String paramString1, String paramString2, String paramString3) {
     File file1 = new File(paramString2);
-    if (ak.b(file1)) {
+    if (IOInWPackage.b(file1)) {
       D.a("Already Encrypted: " + paramString2);
       return false;
     } 
@@ -43,9 +43,9 @@ public class e {
     } 
     String str = z.a(file1);
     double d = z.c(file1);
-    ak ak = new ak();
+    IOInWPackage IOInWPackage = new IOInWPackage();
     try {
-      ak.a(arrayOfByte, file2, paramString1, str, d);
+      IOInWPackage.a(arrayOfByte, file2, paramString1, str, d);
       D.d("file written to:\n" + file2.getAbsolutePath());
       return true;
     } catch (IOException iOException) {

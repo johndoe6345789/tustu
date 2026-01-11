@@ -1,6 +1,6 @@
 package ag;
 
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import ae.AeInterfaceDelta;
 import ae.FileUsingHashMap;
 import ae.AeInterfaceMike;
@@ -92,8 +92,8 @@ public AgComponentCharlielass AgComponentCharlie implements AeInterfaceSierra, A
     i = m1.b();
     if (i > 0)
       return i; 
-    bT bT = IOInAfPackage.f(paramp);
-    AeInterfaceMike m2 = AeInterfaceOscar.b(bT);
+    AeInterfaceMikeTostring AeInterfaceMikeTostring = IOInAfPackage.f(paramp);
+    AeInterfaceMike m2 = AeInterfaceOscar.b(AeInterfaceMikeTostring);
     if (m2 != null)
       i |= m2.b(); 
     return i;

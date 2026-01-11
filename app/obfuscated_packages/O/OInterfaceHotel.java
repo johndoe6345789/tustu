@@ -1,11 +1,11 @@
 package O;
 
 import G.T;
-import G.bT;
-import G.cX;
+import G.AeInterfaceMikeTostring;
+import G.GInterfaceCx;
 
-public class OInterfaceHotel implements cX {
-  public boolean a(bT parambT) {
+public class OInterfaceHotel implements GInterfaceCx {
+  public boolean a(AeInterfaceMikeTostring parambT) {
     if (parambT != null) {
       String str = parambT.b();
       if (str.equals("\024") || str.equals("\n"))

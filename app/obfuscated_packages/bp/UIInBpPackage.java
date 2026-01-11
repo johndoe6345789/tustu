@@ -1,15 +1,15 @@
 package bp;
 
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.ah;
-import G.bq;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.GInterfaceAh;
+import G.GComponentBq;
 import V.ExceptionPrintstacktrace;
 import bH.D;
-import bt.aV;
-import bt.bI;
+import bt.ExceptionUsingComponent;
+import bt.ManagerUsingGauge;
 import bt.d;
 import com.efiAnalytics.apps.ts.dashboard.aa;
 import com.efiAnalytics.apps.ts.dashboard.renderers.BasicReadoutGaugePainter;
@@ -29,10 +29,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import s.ExceptionPrintstacktrace;
 
-public class UIInBpPackage extends d implements aN, aO {
-  aV a = null;
+public class UIInBpPackage extends d implements GInterfaceAn, aO {
+  ExceptionUsingComponent a = null;
   
-  aM b = null;
+  Manager b = null;
   
   R c = null;
   
@@ -42,35 +42,35 @@ public class UIInBpPackage extends d implements aN, aO {
     setBorder(BorderFactory.createEmptyBorder(10, 15, 15, 15));
     setLayout(new BorderLayout());
     aa aa = new aa();
-    ah ah = aa.a(paramR, "advance");
-    ah.c(ExceptionPrintstacktrace.b("Advance"));
+    GInterfaceAh GInterfaceAh = aa.a(paramR, "advance");
+    GInterfaceAh.c(ExceptionPrintstacktrace.b("Advance"));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
-    bI bI = new bI();
-    bI.c().setBackColor(Color.BLACK);
-    bI.c().setFontColor(Color.WHITE);
-    bI.c().setFontSizeAdjustment(-4);
-    bI.b(ah.aL());
-    bI.a((GaugePainter)new BasicReadoutGaugePainter());
-    jPanel1.add((Component)bI);
+    ManagerUsingGauge ManagerUsingGauge = new ManagerUsingGauge();
+    ManagerUsingGauge.c().setBackColor(Color.BLACK);
+    ManagerUsingGauge.c().setFontColor(Color.WHITE);
+    ManagerUsingGauge.c().setFontSizeAdjustment(-4);
+    ManagerUsingGauge.b(GInterfaceAh.aL());
+    ManagerUsingGauge.a((GaugePainter)new BasicReadoutGaugePainter());
+    jPanel1.add((Component)ManagerUsingGauge);
     add("Center", jPanel1);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(0, 1));
     jPanel2.add(new JLabel(ExceptionPrintstacktrace.b("Match above value with timing light reading."), 0));
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout(2));
-    bq bq = new bq();
-    bq.v("offsetField");
-    bq.e(ExceptionPrintstacktrace.b("Ignition Offset angle"));
-    bq.b("triggerOffset");
-    this.a = new aV(paramR, bq);
+    GComponentBq GComponentBq = new GComponentBq();
+    GComponentBq.v("offsetField");
+    GComponentBq.e(ExceptionPrintstacktrace.b("Ignition Offset angle"));
+    GComponentBq.b("triggerOffset");
+    this.a = new ExceptionUsingComponent(paramR, GComponentBq);
     this.a.setFont(new Font("Helv", 1, 20));
     try {
-      aR aR = aR.a();
-      aR.a(paramR.c(), bq.b(), (aN)this.a);
+      ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.a();
+      ManagerUsingConcurrentHashMap.a(paramR.c(), GComponentBq.b(), (GInterfaceAn)this.a);
     } catch (V.a a1) {
       a1.printStackTrace();
-      D.a("Error subscribing to ParameterValue Changes. Parameter:" + bq.b(), (Exception)a1, this);
+      D.a("Error subscribing to ParameterValue Changes. Parameter:" + GComponentBq.b(), (Exception)a1, this);
     } 
     jPanel3.add((Component)this.a);
     JPanel jPanel4 = new JPanel();
@@ -141,7 +141,7 @@ public class UIInBpPackage extends d implements aN, aO {
   public void i() {
     f();
     this.a.close();
-    aR.a().a(this);
+    ManagerUsingConcurrentHashMap.a().a(this);
     l();
   }
   

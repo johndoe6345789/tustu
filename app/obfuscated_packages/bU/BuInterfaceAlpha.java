@@ -1,8 +1,8 @@
 package bU;
 
 import G.R;
-import G.aM;
-import G.cE;
+import G.Manager;
+import G.GInterfaceCe;
 import V.VInterfaceIndia;
 import bH.D;
 import bN.TostringInBnPackage;
@@ -32,10 +32,10 @@ public class BuInterfaceAlpha implements ExceptionInBsPackage {
           String str3 = str.substring(0, str.indexOf("="));
           String str4 = str.substring(str.indexOf("=") + 1);
           R r = paramo.f();
-          aM aM = r.c(str3);
-          if (aM != null)
+          Manager Manager = r.c(str3);
+          if (Manager != null)
             try {
-              cE.a(r, aM, str4);
+              GInterfaceCe.a(r, Manager, str4);
               b2++;
             } catch (VInterfaceIndia VInterfaceIndia) {
               str2 = str2 + VInterfaceIndia.getLocalizedMessage() + "\n";

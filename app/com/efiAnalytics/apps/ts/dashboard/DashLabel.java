@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.c;
-import G.cZ;
-import G.da;
-import G.db;
+import G.GInterfaceCz;
+import G.GInterfaceDa;
+import G.GInterfaceDb;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.cq;
 import java.awt.Color;
@@ -20,13 +20,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DashLabel extends s implements Serializable {
-  protected db a = (db)new c("Label");
+  protected GInterfaceDb a = (GInterfaceDb)new c("Label");
   
   private Color d = null;
   
   private Color f = Color.DARK_GRAY;
   
-  cZ b = null;
+  GInterfaceCz b = null;
   
   private Font ExceptionPrintstacktrace = null;
   
@@ -58,7 +58,7 @@ public class DashLabel extends s implements Serializable {
   
   public void setText(String paramString) {
     try {
-      this.a = da.a().a(this.b, paramString);
+      this.a = GInterfaceDa.a().a(this.b, paramString);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(DashLabel.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
     } 

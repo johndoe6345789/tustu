@@ -1,6 +1,6 @@
 package be;
 
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 
 class BeInterfaceFoxtrot implements S {
@@ -14,7 +14,7 @@ class BeInterfaceFoxtrot implements S {
       return r;
     } 
     try {
-      i.a(paramString, (aI)this.a.i);
+      i.a(paramString, (GInterfaceAi)this.a.i);
     } catch (Exception exception) {
       r.c();
       if (exception.getMessage() == null || exception.getMessage().length() < 10) {

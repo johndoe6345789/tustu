@@ -3,14 +3,14 @@ package H;
 import G.R;
 import G.T;
 import G.Y;
-import G.aH;
-import G.aI;
-import G.aM;
-import G.bb;
+import G.SerializableImpl;
+import G.GInterfaceAi;
+import G.Manager;
+import G.GComponentBb;
 import G.r;
 import java.io.Serializable;
 
-public class ReplayDataSource implements aI, Serializable {
+public class ReplayDataSource implements GInterfaceAi, Serializable {
   private String a;
   
   private String b;
@@ -20,16 +20,16 @@ public class ReplayDataSource implements aI, Serializable {
     this.b = paramR.c() + "_Replay";
   }
   
-  public aH g(String paramString) {
-    bb bb = ((R)a()).h(paramString);
-    return (aH)((bb != null) ? bb : a().g(paramString));
+  public SerializableImpl g(String paramString) {
+    GComponentBb GComponentBb = ((R)a()).h(paramString);
+    return (SerializableImpl)((GComponentBb != null) ? GComponentBb : a().g(paramString));
   }
   
-  protected aI a() {
-    return (aI)T.a().c(this.a);
+  protected GInterfaceAi a() {
+    return (GInterfaceAi)T.a().c(this.a);
   }
   
-  public aM c(String paramString) {
+  public Manager c(String paramString) {
     return a().c(paramString);
   }
   

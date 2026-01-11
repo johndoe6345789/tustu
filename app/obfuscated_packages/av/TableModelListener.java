@@ -1,6 +1,6 @@
 package av;
 
-import G.aN;
+import G.GInterfaceAn;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
@@ -9,7 +9,7 @@ import com.efiAnalytics.ui.s;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 
-class TableModelListener implements aN, TableModelListener {
+class TableModelListener implements GInterfaceAn, TableModelListener {
   k a = null;
   
   j(i parami) {}

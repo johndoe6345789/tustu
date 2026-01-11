@@ -1,7 +1,7 @@
-package ac;
+package SerializableImplExceptionprintstacktrace;
 
-import G.aH;
-import G.ac;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
 import V.ExceptionPrintstacktrace;
 
 public class AcInterfaceXray extends w {
@@ -25,11 +25,11 @@ public class AcInterfaceXray extends w {
   
   public void a(q paramq) {
     this.a = paramq;
-    aH aH = paramq.c();
-    if (!aH.b().equals("formula")) {
-      this.E = (float)aH.h();
-      this.F = (float)aH.i();
-      a(aH.c());
+    SerializableImpl SerializableImpl = paramq.c();
+    if (!SerializableImpl.b().equals("formula")) {
+      this.E = (float)SerializableImpl.h();
+      this.F = (float)SerializableImpl.i();
+      a(SerializableImpl.c());
     } else if (paramq.b().e() == 1 || paramq.b().e() == 2) {
       a("U32");
     } else if (paramq.b().e() == 3) {
@@ -41,9 +41,9 @@ public class AcInterfaceXray extends w {
     a((byte)paramq.e());
     b(this.E);
     c(this.F);
-    ac ac = paramq.b();
+    SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = paramq.b();
     b(paramq.a());
-    e(ac.e());
+    e(SerializableImplExceptionprintstacktrace.e());
     c(paramq.i());
   }
   
@@ -152,7 +152,7 @@ public class AcInterfaceXray extends w {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/x.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/SerializableImplExceptionprintstacktrace/x.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

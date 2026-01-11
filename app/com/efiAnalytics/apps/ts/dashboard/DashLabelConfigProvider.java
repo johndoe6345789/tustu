@@ -1,9 +1,9 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import G.cZ;
+import G.GInterfaceCz;
 
-class DashLabelConfigProvider implements cZ {
+class DashLabelConfigProvider implements GInterfaceCz {
   DashLabelConfigProvider(DashLabel paramDashLabel) {}
   
   public String a() {

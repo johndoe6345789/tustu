@@ -1,15 +1,15 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LastValueFunction extends ac {
-  ab a;
+public class LastValueFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b = null;
+  AxInterfaceAb b = null;
   
   int c = Integer.MIN_VALUE;
   
@@ -19,7 +19,7 @@ public class LastValueFunction extends ac {
   
   int f = 1;
   
-  protected K(ab paramab1, ab paramab2) {
+  protected K(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab1;
     this.b = paramab2;
   }

@@ -3,9 +3,9 @@ package y;
 import C.a;
 import G.R;
 import G.T;
-import G.aT;
-import G.bO;
-import G.dc;
+import G.GInterfaceAt;
+import G.GInterfaceBo;
+import G.GInterfaceDc;
 import G.v;
 import V.VInterfaceBravo;
 import bH.D;
@@ -14,8 +14,8 @@ import bI.BiInterfaceGolf;
 import java.io.IOException;
 import java.util.Properties;
 
-public class YInterfaceFoxtrot implements bO {
-  aT k = null;
+public class YInterfaceFoxtrot implements GInterfaceBo {
+  GInterfaceAt k = null;
   
   String l = "";
   
@@ -43,7 +43,7 @@ public class YInterfaceFoxtrot implements bO {
   
   private byte[] f = new byte[] { -95, -77, -12, 5, -114, -74, 45, 36, 90 };
   
-  private dc BiInterfaceGolf = new dc();
+  private GInterfaceDc BiInterfaceGolf = new GInterfaceDc();
   
   int[] s = new int[] { 
       152, 52, 220, 241, 65, 233, 7, 66, 233, 149, 
@@ -67,7 +67,7 @@ public class YInterfaceFoxtrot implements bO {
       78, 39, 117, 242, 90, 118, 245, 136, 253, 6, 
       242, 96, 31, 160, 242, 131 };
   
-  public YInterfaceFoxtrot(String paramString, aT paramaT) {
+  public YInterfaceFoxtrot(String paramString, GInterfaceAt paramaT) {
     this.k = paramaT;
     this.l = paramString;
   }

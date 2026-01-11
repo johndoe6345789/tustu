@@ -2,12 +2,12 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import C.ExceptionInVPackage;
 import G.R;
-import G.aM;
-import G.aN;
-import G.aR;
-import G.bA;
-import G.bq;
-import G.bv;
+import G.Manager;
+import G.GInterfaceAn;
+import G.ManagerUsingConcurrentHashMap;
+import G.Abstract;
+import G.GComponentBq;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
@@ -15,9 +15,9 @@ import bH.D;
 import bH.X;
 import bt.A;
 import bt.E;
-import bt.aV;
-import bt.bb;
-import bt.bh;
+import bt.ExceptionUsingComponent;
+import bt.JLabelExtensionSettext;
+import bt.ExceptionEqualsinaipackage;
 import bt.d;
 import bt.y;
 import com.efiAnalytics.ui.aO;
@@ -34,18 +34,18 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import s.ExceptionPrintstacktrace;
 
-public class InjectorControlPanel extends d implements aN, aO, bc {
+public class InjectorControlPanel extends d implements GInterfaceAn, aO, bc {
   y ExceptionInVPackage;
   
   R b = null;
   
-  bh c = null;
+  ExceptionEqualsinaipackage c = null;
   
   JPanel d = null;
   
   A e = null;
   
-  aV f = null;
+  ExceptionUsingComponent f = null;
   
   private boolean ExceptionPrintstacktrace = true;
   
@@ -57,13 +57,13 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     setLayout(new BorderLayout());
     add("North", this.d);
     add("East", (Component)this.c);
-    aR aR = aR.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
-      aR.ExceptionInVPackage(paramR.c(), "reqFuel", this);
-      aR.ExceptionInVPackage(paramR.c(), "alternate", this);
-      aR.ExceptionInVPackage(paramR.c(), "nCylinders", this);
-      aR.ExceptionInVPackage(paramR.c(), "nInjectors", this);
-      aR.ExceptionInVPackage(paramR.c(), "divider", this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "reqFuel", this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "alternate", this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "nCylinders", this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "nInjectors", this);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "divider", this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Unable to register all parameters.", (Exception)ExceptionInVPackage, this);
     } 
@@ -72,9 +72,9 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   }
   
   protected boolean ExceptionInVPackage(String paramString) {
-    aM aM1 = this.b.c("nCylinders");
-    aM aM2 = this.b.c("divider");
-    aM aM3 = this.b.c("alternate");
+    Manager aM1 = this.b.c("nCylinders");
+    Manager aM2 = this.b.c("divider");
+    Manager aM3 = this.b.c("alternate");
     try {
       int i = (int)aM1.ExceptionExtensionGetmessage(this.b.p());
       double d1 = Double.parseDouble(paramString);
@@ -121,20 +121,20 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     b();
   }
   
-  private bh ExceptionPrintstacktrace() {
-    bv bv = new bv();
+  private ExceptionEqualsinaipackage ExceptionPrintstacktrace() {
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = new ArrayListExceptionprintstacktraceInGPackage();
     ExceptionInVPackage ExceptionInVPackage = ExceptionInVPackage.ExceptionInVPackage();
-    bv.v("injControl");
-    ExceptionInVPackage(bv, c("Control Algorithm"), "algorithm");
-    ExceptionInVPackage(bv, c("Injector Staging"), "alternate");
-    ExceptionInVPackage(bv, c("Engine Stroke"), "twoStroke");
-    ExceptionInVPackage(bv, c("Number of Cylinders"), "nCylinders");
-    ExceptionInVPackage(bv, c("Injector Port Type"), "injType");
-    ExceptionInVPackage(bv, c("Number of Injectors"), "nInjectors");
-    ExceptionInVPackage(bv, c("Engine Type"), "engineType");
-    bh bh1 = new bh(this.b, bv);
+    ArrayListExceptionprintstacktraceInGPackage.v("injControl");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Control Algorithm"), "algorithm");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Injector Staging"), "alternate");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Engine Stroke"), "twoStroke");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Number of Cylinders"), "nCylinders");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Injector Port Type"), "injType");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Number of Injectors"), "nInjectors");
+    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, c("Engine Type"), "engineType");
+    ExceptionEqualsinaipackage bh1 = new ExceptionEqualsinaipackage(this.b, ArrayListExceptionprintstacktraceInGPackage);
     JPanel jPanel = h();
-    jPanel.add("Center", (Component)new bb(c("Squirts Per Engine Cycle")));
+    jPanel.add("Center", (Component)new JLabelExtensionSettext(c("Squirts Per Engine Cycle")));
     this.ExceptionInVPackage = new y();
     this.ExceptionInVPackage.addItem("1");
     this.ExceptionInVPackage.addItem("2");
@@ -150,12 +150,12 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     return bh1;
   }
   
-  private bq ExceptionInVPackage(bv parambv, String paramString1, String paramString2) {
-    bq bq = new bq();
-    bq.e(paramString1);
-    bq.b(paramString2);
-    parambv.ExceptionInVPackage((bA)bq);
-    return bq;
+  private GComponentBq ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage parambv, String paramString1, String paramString2) {
+    GComponentBq GComponentBq = new GComponentBq();
+    GComponentBq.e(paramString1);
+    GComponentBq.b(paramString2);
+    parambv.ExceptionInVPackage((Abstract)GComponentBq);
+    return GComponentBq;
   }
   
   private String c(String paramString) {
@@ -183,13 +183,13 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     jPanel3.setLayout(new GridLayout(0, 1, 3, 3));
     this.e = new A("");
     this.e.ExceptionInVPackage(new aJ(this));
-    bq bq = new bq();
-    bq.e("");
-    bq.b("reqFuel");
-    this.f = new aV(this.b, bq);
+    GComponentBq GComponentBq = new GComponentBq();
+    GComponentBq.e("");
+    GComponentBq.b("reqFuel");
+    this.f = new ExceptionUsingComponent(this.b, GComponentBq);
     this.f.c(false);
     try {
-      aR.ExceptionInVPackage().ExceptionInVPackage(this.b.c(), "reqFuel", (aN)this.f);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.b.c(), "reqFuel", (GInterfaceAn)this.f);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       D.ExceptionInVPackage("Error subscribing to reqFuel", (Exception)ExceptionInVPackage, this);
     } 
@@ -204,10 +204,10 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   }
   
   public void b() {
-    aM aM1 = this.b.c("nInjectors");
-    aM aM2 = this.b.c("divider");
-    aM aM3 = this.b.c("reqFuel");
-    aM aM4 = this.b.c("alternate");
+    Manager aM1 = this.b.c("nInjectors");
+    Manager aM2 = this.b.c("divider");
+    Manager aM3 = this.b.c("reqFuel");
+    Manager aM4 = this.b.c("alternate");
     try {
       String str = this.e.getText();
       if (str.equals(""))
@@ -260,8 +260,8 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   }
   
   private boolean n() {
-    aM aM1 = this.b.c("nCylinders");
-    aM aM2 = this.b.c("divider");
+    Manager aM1 = this.b.c("nCylinders");
+    Manager aM2 = this.b.c("divider");
     try {
       int i = (int)aM1.ExceptionExtensionGetmessage(this.b.p());
       double d1 = aM1.ExceptionExtensionGetmessage(this.b.p()) / aM2.ExceptionExtensionGetmessage(this.b.p());
@@ -274,10 +274,10 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
   }
   
   public void c() {
-    aM aM1 = this.b.c("nInjectors");
-    aM aM2 = this.b.c("divider");
-    aM aM3 = this.b.c("reqFuel");
-    aM aM4 = this.b.c("alternate");
+    Manager aM1 = this.b.c("nInjectors");
+    Manager aM2 = this.b.c("divider");
+    Manager aM3 = this.b.c("reqFuel");
+    Manager aM4 = this.b.c("alternate");
     try {
       double d1 = aM3.ExceptionExtensionGetmessage(this.b.p());
       double d2 = aM4.ExceptionExtensionGetmessage(this.b.p()) + 1.0D;
@@ -314,13 +314,13 @@ public class InjectorControlPanel extends d implements aN, aO, bc {
     f();
     this.f.close();
     this.c.close();
-    aR.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this);
     l();
   }
   
   public void close() {
-    aR aR = aR.ExceptionInVPackage();
-    aR.ExceptionInVPackage(this);
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+    ManagerUsingConcurrentHashMap.ExceptionInVPackage(this);
   }
 }
 

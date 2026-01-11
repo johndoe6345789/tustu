@@ -9,8 +9,8 @@ import S.SInterfaceGolf;
 import S.Timer;
 import S.SInterfaceLima;
 import S.SInterfaceNovember;
-import W.ap;
-import W.ar;
+import W.WInterfaceAp;
+import W.Properties;
 import bH.D;
 import bH.X;
 import java.io.File;
@@ -133,8 +133,8 @@ public class IOInPPackage implements SInterfaceGolf, SInterfaceLima {
       fileInputStream = new FileInputStream(paramFile);
       properties.load(fileInputStream);
       SInterfaceNovember SInterfaceNovember = new SInterfaceNovember();
-      ar ar = new ar(properties, "");
-      SInterfaceNovember.SInterfaceAlpha((ap)ar);
+      Properties Properties = new Properties(properties, "");
+      SInterfaceNovember.SInterfaceAlpha((WInterfaceAp)Properties);
       String str = X.b(paramFile.getName(), SInterfaceAlpha, "");
       SInterfaceNovember.SInterfaceGolf(str);
       SInterfaceNovember.Timer("");
@@ -160,8 +160,8 @@ public class IOInPPackage implements SInterfaceGolf, SInterfaceLima {
   
   public boolean b(SInterfaceNovember paramn) {
     Properties properties = new Properties();
-    ar ar = new ar(properties, "");
-    paramn.SInterfaceAlpha((ap)ar);
+    Properties Properties = new Properties(properties, "");
+    paramn.SInterfaceAlpha((WInterfaceAp)Properties);
     paramn.i("");
     File file1 = ThreadedFile.B();
     File file2 = new File(file1, paramn.SInterfaceAlpha() + SInterfaceAlpha);
@@ -173,12 +173,12 @@ public class IOInPPackage implements SInterfaceGolf, SInterfaceLima {
     FileOutputStream fileOutputStream = null;
     try {
       fileOutputStream = new FileOutputStream(file2);
-      ap ap = paramn.Timer();
-      if (!(ap instanceof ar)) {
+      WInterfaceAp WInterfaceAp = paramn.Timer();
+      if (!(WInterfaceAp instanceof Properties)) {
         D.SInterfaceAlpha("EventTrigger Persistor not instanceof PropertiesPersistor!!");
         return false;
       } 
-      Properties properties1 = ((ar)ap).SInterfaceAlpha();
+      Properties properties1 = ((Properties)WInterfaceAp).SInterfaceAlpha();
       properties1.store(fileOutputStream, "Attributes for ExpressionEventTrigger: " + paramn.SInterfaceAlpha());
       return true;
     } catch (IOException iOException) {

@@ -3,14 +3,14 @@ package c;
 import G.R;
 import G.S;
 import G.T;
-import G.ab;
+import G.GInterfaceAb;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CInterfaceBravo implements S, ab {
+public class CInterfaceBravo implements S, GInterfaceAb {
   int a = 300;
   
   private static b c = null;

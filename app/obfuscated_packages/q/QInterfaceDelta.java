@@ -1,24 +1,24 @@
 package q;
 
 import bH.D;
-import bt.bb;
+import bt.JLabelExtensionSettext;
 import java.awt.Color;
 import java.awt.Component;
 
 public class QInterfaceDelta implements i {
   public void a(Component paramComponent) {
-    bb bb = (bb)paramComponent;
-    bb.setText("");
-    bb.setEnabled(true);
-    bb.setForeground(Color.BLACK);
-    bb.setOpaque(false);
+    JLabelExtensionSettext JLabelExtensionSettext = (JLabelExtensionSettext)paramComponent;
+    JLabelExtensionSettext.setText("");
+    JLabelExtensionSettext.setEnabled(true);
+    JLabelExtensionSettext.setForeground(Color.BLACK);
+    JLabelExtensionSettext.setOpaque(false);
   }
   
   public void b(Component paramComponent) {
-    bb bb = (bb)paramComponent;
-    bb.setEnabled(true);
-    if (bb.getText() != null && bb.getText().length() > 0)
-      D.c("Check out: " + bb.getText()); 
+    JLabelExtensionSettext JLabelExtensionSettext = (JLabelExtensionSettext)paramComponent;
+    JLabelExtensionSettext.setEnabled(true);
+    if (JLabelExtensionSettext.getText() != null && JLabelExtensionSettext.getText().length() > 0)
+      D.c("Check out: " + JLabelExtensionSettext.getText()); 
   }
 }
 

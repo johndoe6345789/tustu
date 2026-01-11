@@ -1,13 +1,13 @@
 package L;
 
-import G.aI;
+import G.GInterfaceAi;
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 
-public class IsOnlineFunction extends ac {
-  aI a;
+public class IsOnlineFunction extends AbstractInAxPackage {
+  GInterfaceAi a;
   
-  public D(aI paramaI) {
+  public D(GInterfaceAi paramaI) {
     this.a = paramaI;
   }
   

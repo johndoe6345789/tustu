@@ -1,13 +1,13 @@
 package br;
 
 import G.R;
-import G.aH;
-import G.aM;
-import G.ab;
-import G.bM;
-import G.be;
-import G.de;
-import G.dm;
+import G.SerializableImpl;
+import G.Manager;
+import G.GInterfaceAb;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
+import G.GInterfaceDe;
+import G.GInterfaceDm;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import aE.ExceptionInVPackage;
@@ -15,7 +15,7 @@ import aP.NetworkHashMap;
 import bH.D;
 import bH.X;
 import bL.ExceptionInVPackage;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import com.efiAnalytics.tuningwidgets.panels.aP;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
@@ -55,10 +55,10 @@ import Isoptimizeddrawingenabled.Isoptimizeddrawingenabled;
 import r.ExceptionInVPackage;
 import s.ExceptionPrintstacktrace;
 
-public class UICloseGetminimumsize extends al implements ab, bc {
+public class UICloseGetminimumsize extends al implements GInterfaceAb, bc {
   R ExceptionInVPackage = null;
   
-  de b = null;
+  GInterfaceDe b = null;
   
   Isoptimizeddrawingenabled c = null;
   
@@ -90,7 +90,7 @@ public class UICloseGetminimumsize extends al implements ab, bc {
   
   String q = "15";
   
-  public UICloseGetminimumsize(R paramR, de paramde) {
+  public UICloseGetminimumsize(R paramR, GInterfaceDe paramde) {
     this.ExceptionInVPackage = paramR;
     this.b = paramde;
     this.m = new dQ((Properties)ExceptionInVPackage.A(), "TrimAnalyzePanel_" + paramde.b());
@@ -134,7 +134,7 @@ public class UICloseGetminimumsize extends al implements ab, bc {
     jPanel3.add(this.k);
     JButton jButton1 = new JButton(ExceptionPrintstacktrace.b("Apply"));
     jButton1.setMnemonic('S');
-    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will be running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
+    jButton1.setToolTipText(ExceptionPrintstacktrace.b("<html>Send the VE Analyze Recommendations<br>to the ECU Now. The engine will CloneableImpl running on the recommended <br>VE Table, but not nessecarily permenantly stored.</html>"));
     jButton1.addActionListener(new T(this));
     jPanel3.add(jButton1);
     JButton jButton2 = new JButton(ExceptionPrintstacktrace.b("Save on ECU"));
@@ -153,7 +153,7 @@ public class UICloseGetminimumsize extends al implements ab, bc {
     jPanel4.add("North", (Component)ExceptionInVPackage);
     JPanel jPanel5 = new JPanel();
     jPanel5.setLayout(new BorderLayout());
-    ExceptionInVPackage a1 = new ExceptionInVPackage(this.ExceptionInVPackage, (dm)this.b);
+    ExceptionInVPackage a1 = new ExceptionInVPackage(this.ExceptionInVPackage, (GInterfaceDm)this.b);
     jPanel5.add("Center", a1);
     jPanel4.add("Center", jPanel5);
     JPanel jPanel6 = new JPanel();
@@ -214,7 +214,7 @@ public class UICloseGetminimumsize extends al implements ab, bc {
     ExceptionInVPackage(false);
   }
   
-  private void ExceptionInVPackage(de paramde) {
+  private void ExceptionInVPackage(GInterfaceDe paramde) {
     this.d.setLayout(new CardLayout());
     this.p.clear();
     JPanel jPanel1 = new JPanel();
@@ -228,8 +228,8 @@ public class UICloseGetminimumsize extends al implements ab, bc {
     ButtonGroup buttonGroup = new ButtonGroup();
     int i = 6;
     try {
-      aM aM = this.ExceptionInVPackage.c(((be)this.ExceptionInVPackage.e().c(paramde.ExceptionInVPackage(0))).ExceptionInVPackage());
-      i = aM.b();
+      Manager Manager = this.ExceptionInVPackage.c(((CloneableImpl)this.ExceptionInVPackage.e().c(paramde.ExceptionInVPackage(0))).ExceptionInVPackage());
+      i = Manager.b();
     } catch (Exception exception) {}
     byte b1 = (i > 8) ? 2 : 4;
     b1 = (paramde.ExceptionInVPackage() > b1) ? b1 : paramde.ExceptionInVPackage();
@@ -298,8 +298,8 @@ public class UICloseGetminimumsize extends al implements ab, bc {
   
   private void i() {
     try {
-      s s1 = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b());
-      s s2 = bQ.ExceptionInVPackage().ExceptionInVPackage(s1, this.b.b());
+      s s1 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.b());
+      s s2 = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(s1, this.b.b());
       aP aP = new aP(this.ExceptionInVPackage, s2, this.b.b());
       ExceptionInVPackage((bc)aP);
       aP.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(290), eJ.ExceptionInVPackage(170)));
@@ -320,9 +320,9 @@ public class UICloseGetminimumsize extends al implements ab, bc {
         br.add(jCheckBoxMenuItem);
         continue;
       } 
-      be be = (be)this.ExceptionInVPackage.e().c(str);
-      if (be != null) {
-        JCheckBoxMenuItem jCheckBoxMenuItem = b(X.b(ExceptionPrintstacktrace.b(be.M()), "\"", ""), str, bool);
+      CloneableImpl CloneableImpl = (CloneableImpl)this.ExceptionInVPackage.e().c(str);
+      if (CloneableImpl != null) {
+        JCheckBoxMenuItem jCheckBoxMenuItem = b(X.b(ExceptionPrintstacktrace.b(CloneableImpl.M()), "\"", ""), str, bool);
         br.add(jCheckBoxMenuItem);
         continue;
       } 
@@ -332,11 +332,11 @@ public class UICloseGetminimumsize extends al implements ab, bc {
     while (iterator.hasNext()) {
       String str1 = iterator.next();
       boolean bool = str1.equals(this.b.s());
-      aH aH = this.ExceptionInVPackage.ExceptionPrintstacktrace(str1);
-      String str2 = bM.j(this.ExceptionInVPackage, str1);
+      SerializableImpl SerializableImpl = this.ExceptionInVPackage.ExceptionPrintstacktrace(str1);
+      String str2 = ExceptionprintstacktraceInGPackage.j(this.ExceptionInVPackage, str1);
       if (str2 == null)
         str2 = str1; 
-      if (aH != null) {
+      if (SerializableImpl != null) {
         JCheckBoxMenuItem jCheckBoxMenuItem = ExceptionInVPackage(X.b(ExceptionPrintstacktrace.b(str2), "\"", ""), str1, bool);
         br.add(jCheckBoxMenuItem);
         continue;
@@ -386,7 +386,7 @@ public class UICloseGetminimumsize extends al implements ab, bc {
   private void j() {
     if (this.b.c().equals("afrTSCustom")) {
       try {
-        s s = bQ.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.c(), "", this.b.b());
+        s s = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(this.ExceptionInVPackage, this.b.c(), "", this.b.b());
         aP aP = new aP(this.ExceptionInVPackage, s, this.b.b());
         ExceptionInVPackage((bc)aP);
         bV.ExceptionInVPackage((Component)aP, (Component)this, ExceptionPrintstacktrace.b("Target AFR Table"), (bc)aP);

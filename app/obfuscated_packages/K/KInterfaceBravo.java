@@ -1,18 +1,18 @@
 package K;
 
 import G.T;
-import G.aM;
-import G.ab;
-import G.bM;
+import G.Manager;
+import G.GInterfaceAb;
+import G.ExceptionprintstacktraceInGPackage;
 
-public class KInterfaceBravo implements ab {
+public class KInterfaceBravo implements GInterfaceAb {
   int a = 0;
   
   long b = 0L;
   
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
-    aM aM = bM.a(T.a().c(paramString), paramInt1, paramInt2, paramInt1);
-    if (aM != null && aM.C())
+    Manager Manager = ExceptionprintstacktraceInGPackage.a(T.a().c(paramString), paramInt1, paramInt2, paramInt1);
+    if (Manager != null && Manager.C())
       this.a += paramArrayOfint.length; 
     this.b |= (long)Math.pow(2.0D, paramInt1);
   }

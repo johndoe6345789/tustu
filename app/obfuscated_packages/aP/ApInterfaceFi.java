@@ -1,0 +1,23 @@
+package aP;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JCheckBoxMenuItem;
+import r.IOPropertiesUsingFile;
+
+class ApInterfaceFi implements ActionListener {
+  fI(dB paramdB) {}
+  
+  public void actionPerformed(ActionEvent paramActionEvent) {
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    jCheckBoxMenuItem.setSelected(true);
+    IOPropertiesUsingFile.IOPropertiesUsingFile().b("navigationStyle", jCheckBoxMenuItem.getActionCommand());
+    this.IOPropertiesUsingFile.c(jCheckBoxMenuItem.getActionCommand());
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fI.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

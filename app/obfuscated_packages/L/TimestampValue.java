@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
+import ax.AxInterfaceAb;
 
-class TimestampValue implements ab {
+class TimestampValue implements AxInterfaceAb {
   p(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {

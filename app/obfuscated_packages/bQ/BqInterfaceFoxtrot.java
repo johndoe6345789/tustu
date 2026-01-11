@@ -2,7 +2,7 @@ package bQ;
 
 import A.AInterfaceEcho;
 import G.F;
-import G.aV;
+import G.GInterfaceAv;
 import G.n;
 import J.JInterfaceJuliet;
 import V.VInterfaceBravo;
@@ -70,28 +70,28 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
     VInterfaceBravo((this.BnInterfaceKilo != null) ? this.BnInterfaceKilo.u() : null);
   }
   
-  public void a(aV paramaV) {
+  public void a(GInterfaceAv paramaV) {
     this.f.add(paramaV);
   }
   
   private void a(String paramString) {
-    for (aV aV : this.f)
-      aV.VInterfaceBravo(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f)
+      GInterfaceAv.VInterfaceBravo(paramString); 
   }
   
   private void VInterfaceBravo(String paramString) {
-    for (aV aV : this.f)
-      aV.c(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f)
+      GInterfaceAv.c(paramString); 
   }
   
   private void c(String paramString) {
-    for (aV aV : this.f)
-      aV.d(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f)
+      GInterfaceAv.d(paramString); 
   }
   
   private void d(String paramString) {
-    for (aV aV : this.f)
-      aV.AInterfaceEcho(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f)
+      GInterfaceAv.AInterfaceEcho(paramString); 
   }
   
   public void a(BnInterfaceKilo paramk) {

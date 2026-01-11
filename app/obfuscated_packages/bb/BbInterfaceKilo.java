@@ -1,7 +1,7 @@
 package bb;
 
 import V.ExceptionInVPackage;
-import aP.iP;
+import aP.ManagerUsingHashMap;
 import ae.AeInterfaceQuebec;
 import com.efiAnalytics.apps.ts.dashboard.HtmlDisplay;
 import com.efiAnalytics.ui.eJ;
@@ -88,7 +88,7 @@ public class BbInterfaceKilo extends JPanel implements fT {
         } 
       } 
       file.deleteOnExit();
-      return iP.ExceptionInVPackage().ExceptionInVPackage(paramFile, file);
+      return ManagerUsingHashMap.ExceptionInVPackage().ExceptionInVPackage(paramFile, file);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
       return paramFile;

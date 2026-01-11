@@ -2,8 +2,8 @@ package bg;
 
 import G.R;
 import G.T;
-import G.bP;
-import G.bf;
+import G.IOInGPackage;
+import G.GInterfaceBf;
 import W.d;
 import aP.NetworkHashMap;
 import aa.AaInterfaceCharlie;
@@ -165,14 +165,14 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
   }
   
   private void d() {
-    for (bf bf : this.a.af()) {
+    for (GInterfaceBf GInterfaceBf : this.a.af()) {
       try {
         SComponentGolf SComponentGolf = new SComponentGolf();
-        byte[] arrayOfByte = bf.d().a();
+        byte[] arrayOfByte = GInterfaceBf.d().a();
         InputStreamReader inputStreamReader = new InputStreamReader(new ByteArrayInputStream(arrayOfByte));
         F NetworkHashMap = SComponentGolf.a(inputStreamReader);
-        this.e.put(bf.aL(), NetworkHashMap);
-        this.b.a(bf);
+        this.e.put(GInterfaceBf.aL(), NetworkHashMap);
+        this.b.a(GInterfaceBf);
       } catch (IOException iOException) {
         Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load Tuning View", iOException);
         bV.d("Failed to Load Tuning View:\n" + iOException.getLocalizedMessage(), this);
@@ -225,7 +225,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     //   82: aload_2
     //   83: invokespecial a : (Ljava/lang/String;)Z
     //   86: ifeq -> 2
-    //   89: new G/bf
+    //   89: new G/GInterfaceBf
     //   92: dup
     //   93: invokespecial <init> : ()V
     //   96: astore #4
@@ -264,7 +264,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     //   171: aload_0
     //   172: getfield b : Lbg/o;
     //   175: aload #4
-    //   177: invokevirtual a : (LG/bf;)V
+    //   177: invokevirtual a : (LG/GInterfaceBf;)V
     //   180: goto -> 235
     //   183: astore #5
     //   185: ldc 'Error turning Tune View to String.'
@@ -319,32 +319,32 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
   }
   
   private void i() {
-    bf bf = this.b.a();
-    if (bf != null) {
-      this.b.b(bf);
-      this.e.remove(bf.aL());
+    GInterfaceBf GInterfaceBf = this.b.a();
+    if (GInterfaceBf != null) {
+      this.b.b(GInterfaceBf);
+      this.e.remove(GInterfaceBf.aL());
     } 
   }
   
   private void ThreadedFile() {
     this.a.af().clear();
     try {
-      for (bf bf : this.b.b) {
-        bP bP = bf.d();
-        bP.v(bf.aL());
-        F NetworkHashMap = (F)this.e.get(bP.aL());
+      for (GInterfaceBf GInterfaceBf : this.b.b) {
+        IOInGPackage IOInGPackage = GInterfaceBf.d();
+        IOInGPackage.v(GInterfaceBf.aL());
+        F NetworkHashMap = (F)this.e.get(IOInGPackage.aL());
         if (NetworkHashMap != null) {
-          NetworkHashMap.b(bf.AaInterfaceCharlie());
+          NetworkHashMap.b(GInterfaceBf.AaInterfaceCharlie());
         } else {
           D.a("Cannot update TuningView attributes, no instance loaded!");
         } 
         try {
-          bf.a(SComponentGolf.a(NetworkHashMap));
+          GInterfaceBf.a(SComponentGolf.a(NetworkHashMap));
         } catch (V.a a1) {
           Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to update TuningView in EcuTuningView", (Throwable)a1);
         } 
-        this.a.a(bP);
-        this.a.a(bf);
+        this.a.a(IOInGPackage);
+        this.a.a(GInterfaceBf);
       } 
       ArrayList<NetworkHashMap> arrayList = new ArrayList();
       arrayList.add(new NetworkHashMap());
@@ -355,7 +355,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     } 
   }
   
-  public void a(bf parambf) {
+  public void a(GInterfaceBf parambf) {
     if (parambf != null) {
       F NetworkHashMap = (F)this.e.get(parambf.aL());
       if (NetworkHashMap == null)
@@ -395,7 +395,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     return true;
   }
   
-  private F b(bf parambf) {
+  private F b(GInterfaceBf parambf) {
     byte[] arrayOfByte = parambf.d().a();
     String str = t.a(arrayOfByte);
     File file = new File(ThreadedFile.H(), str);

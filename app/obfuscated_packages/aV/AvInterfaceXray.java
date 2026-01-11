@@ -1,7 +1,7 @@
 package aV;
 
 import A.AInterfaceRomeo;
-import G.cu;
+import G.ManagerUsingArrayList;
 import I.IInterfaceHotel;
 import aK.Writer;
 import aK.AkInterfaceDelta;
@@ -203,9 +203,9 @@ public class AvInterfaceXray {
   }
   
   private void i() {
-    cu.Writer().Writer(IInterfaceHotel.c, new y(this));
-    cu.Writer().Writer(IInterfaceHotel.Writer, new z(this));
-    cu.Writer().Writer(IInterfaceHotel.b, new A(this));
+    ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.c, new y(this));
+    ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.Writer, new z(this));
+    ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.b, new A(this));
   }
   
   private String b(String paramString, AInterfaceRomeo paramr) {

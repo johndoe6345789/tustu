@@ -1,6 +1,6 @@
 package bG;
 
-import W.ap;
+import W.WInterfaceAp;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.do;
 import java.awt.BorderLayout;
@@ -27,11 +27,11 @@ public class JDialogExtensionInBgPackage extends JDialog {
   
   private boolean g = false;
   
-  ap e = null;
+  WInterfaceAp e = null;
   
   String f = "<html><body>These are just the starting point settings for your wheel.<br>Starting with a symetrical n-m wheel, you will then be able to<br>Add/Remove/Move and resize teeth.</body></html>";
   
-  public JDialogExtensionInBgPackage(Window paramWindow, ap paramap) {
+  public JDialogExtensionInBgPackage(Window paramWindow, WInterfaceAp paramap) {
     super(paramWindow, "Set Base Teeth");
     setModalityType(Dialog.ModalityType.APPLICATION_MODAL);
     this.e = paramap;

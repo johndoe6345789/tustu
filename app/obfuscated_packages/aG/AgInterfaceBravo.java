@@ -1,11 +1,11 @@
 package aG;
 
 import G.R;
-import G.aH;
-import G.aM;
-import G.bb;
-import G.cx;
-import G.dc;
+import G.SerializableImpl;
+import G.Manager;
+import G.GComponentBb;
+import G.GComponentCx;
+import G.GInterfaceDc;
 import G.e;
 import G.i;
 import G.m;
@@ -66,19 +66,19 @@ public class AgInterfaceBravo {
       bufferedWriter.newLine();
       bufferedWriter.append("Record #").append(",");
       bufferedWriter.append("Time").append(",");
-      ArrayList<bb> arrayList1 = this.a.t();
+      ArrayList<GComponentBb> arrayList1 = this.a.t();
       if (c()) {
         arrayList1 = this.a.u();
       } else {
         arrayList1 = this.a.t();
       } 
-      ArrayList<bb> arrayList2 = new ArrayList();
+      ArrayList<GComponentBb> arrayList2 = new ArrayList();
       int k = arrayList1.size();
       for (byte b1 = 0; b1 < k; b1++) {
-        bb bb = arrayList1.get(b1);
-        if (bb.s()) {
-          arrayList2.add(bb);
-          bufferedWriter.append(bb.aL());
+        GComponentBb GComponentBb = arrayList1.get(b1);
+        if (GComponentBb.s()) {
+          arrayList2.add(GComponentBb);
+          bufferedWriter.append(GComponentBb.aL());
           if (b1 < k - 1)
             bufferedWriter.append(","); 
         } 
@@ -90,8 +90,8 @@ public class AgInterfaceBravo {
       byte[] arrayOfByte1 = new byte[i];
       float f = 0.02F;
       if (c() && this.a.c("AFRM_Hdw_Cfg") != null) {
-        aM aM = this.a.c("AFRM_Hdw_Cfg");
-        int m = (int)aM.j(this.a.h());
+        Manager Manager = this.a.c("AFRM_Hdw_Cfg");
+        int m = (int)Manager.j(this.a.h());
         switch (m) {
           case 0:
             f = 0.02F;
@@ -115,9 +115,9 @@ public class AgInterfaceBravo {
         stringBuilder.append(f1).append(",");
         System.arraycopy(arrayOfByte, i * b2, arrayOfByte1, 0, arrayOfByte1.length);
         for (byte b3 = 0; b3 < k; b3++) {
-          bb bb = arrayList1.get(b3);
+          GComponentBb GComponentBb = arrayList1.get(b3);
           try {
-            stringBuilder.append(bb.a(arrayOfByte1));
+            stringBuilder.append(GComponentBb.a(arrayOfByte1));
           } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
             stringBuilder.append(" ");
           } 
@@ -140,14 +140,14 @@ public class AgInterfaceBravo {
         stringBuilder.append(X.b(f1, 2)).append(",");
         System.arraycopy(arrayOfByte, i * b2, arrayOfByte1, 0, arrayOfByte1.length);
         for (byte b3 = 0; b3 < k; b3++) {
-          bb bb = arrayList1.get(b3);
+          GComponentBb GComponentBb = arrayList1.get(b3);
           try {
-            if (bb.b().equals("formula")) {
-              ArrayList<aH> arrayList = i.a(bb.v(), (aH)bb);
-              bb bb1 = null;
+            if (GComponentBb.b().equals("formula")) {
+              ArrayList<SerializableImpl> arrayList = i.a(GComponentBb.v(), (SerializableImpl)GComponentBb);
+              GComponentBb bb1 = null;
               for (byte b4 = 0; b4 < arrayList.size(); b4++) {
-                if (arrayList.get(b4) instanceof bb && !((aH)arrayList.get(b4)).b().equals("formula")) {
-                  bb1 = (bb)arrayList.get(b4);
+                if (arrayList.get(b4) instanceof GComponentBb && !((SerializableImpl)arrayList.get(b4)).b().equals("formula")) {
+                  bb1 = (GComponentBb)arrayList.get(b4);
                   break;
                 } 
               } 
@@ -157,7 +157,7 @@ public class AgInterfaceBravo {
                 stringBuilder.append("0");
               } 
             } else {
-              stringBuilder.append(bb.c(arrayOfByte1));
+              stringBuilder.append(GComponentBb.c(arrayOfByte1));
             } 
           } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
             stringBuilder.append(" ");
@@ -228,15 +228,15 @@ public class AgInterfaceBravo {
     String str = this.a.O().ah();
     if (str == null)
       throw new RemoteAccessException("Configuration Error, replayRecordCountParam not set!"); 
-    aM aM1 = this.a.c(str);
+    Manager aM1 = this.a.c(str);
     if (aM1 == null)
       throw new RemoteAccessException("Configuration Error, replayRecordCountParam " + aM1 + " not found!"); 
     a(3000);
-    cx.b(this.a, aM1.d());
-    aM aM2 = this.a.c("Key_On_Baro");
+    GComponentCx.b(this.a, aM1.d());
+    Manager aM2 = this.a.c("Key_On_Baro");
     if (aM2 != null)
-      cx.b(this.a, aM2.d()); 
-    dc dc = new dc();
+      GComponentCx.b(this.a, aM2.d()); 
+    GInterfaceDc GInterfaceDc = new GInterfaceDc();
     try {
       i = (int)aM1.j(this.a.p());
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
@@ -257,7 +257,7 @@ public class AgInterfaceBravo {
     this.a.O().d(45);
     this.a.O().a(false);
     try {
-      o o = dc.a(this.a, m, 3000);
+      o o = GInterfaceDc.a(this.a, m, 3000);
       try {
         a(2000);
         e.b(this.a);
@@ -278,15 +278,15 @@ public class AgInterfaceBravo {
     String str = this.a.O().ah();
     if (str == null)
       throw new RemoteAccessException("Configuration Error, replayRecordCountParam not set!"); 
-    aM aM1 = this.a.c(str);
+    Manager aM1 = this.a.c(str);
     if (aM1 == null)
       throw new RemoteAccessException("Configuration Error, replayRecordCountParam " + aM1 + " not found!"); 
     a(1000);
-    cx.b(this.a, aM1.d());
-    aM aM2 = this.a.c("Key_On_Baro");
+    GComponentCx.b(this.a, aM1.d());
+    Manager aM2 = this.a.c("Key_On_Baro");
     if (aM2 != null)
-      cx.b(this.a, aM2.d()); 
-    dc dc = new dc();
+      GComponentCx.b(this.a, aM2.d()); 
+    GInterfaceDc GInterfaceDc = new GInterfaceDc();
     try {
       i = (int)aM1.j(this.a.p());
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
@@ -320,7 +320,7 @@ public class AgInterfaceBravo {
         k = (16384 + i1) % m;
         a(3000);
         m m1 = a.a(this.a.O(), b1, k, b2);
-        o o = dc.a(this.a, m1, 4000);
+        o o = GInterfaceDc.a(this.a, m1, 4000);
         if (o.a() != 1 || o.e() == null)
           throw new RemoteAccessException("Replay Read interrupted!\n " + o.c()); 
         int[] arrayOfInt1 = o.e();

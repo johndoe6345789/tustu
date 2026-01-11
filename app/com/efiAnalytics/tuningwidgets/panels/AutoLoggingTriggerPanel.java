@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.aI;
+import G.GInterfaceAi;
 import G.RInterfaceIndia;
 import G.q;
 import S.SInterfaceAlpha;
@@ -11,7 +11,7 @@ import S.SInterfaceJuliet;
 import ExceptionInAxPackage.HashMap;
 import ax.ExceptionInAxPackage;
 import bH.X;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.fp;
@@ -26,7 +26,7 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import r.RInterfaceIndia;
 
-public class AutoLoggingTriggerPanel extends bh implements bc {
+public class AutoLoggingTriggerPanel extends ExceptionEqualsinaipackage implements bc {
   R SInterfaceAlpha;
   
   SInterfaceJuliet HashMap;
@@ -135,13 +135,13 @@ public class AutoLoggingTriggerPanel extends bh implements bc {
   
   public boolean c() {
     try {
-      RInterfaceIndia.SInterfaceAlpha(this.l.SInterfaceAlpha(), (aI)this.SInterfaceAlpha);
+      RInterfaceIndia.SInterfaceAlpha(this.l.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
     } catch (ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Start Logging Expression") + ":" + this.l.SInterfaceAlpha(), (Component)this);
       return false;
     } 
     try {
-      RInterfaceIndia.SInterfaceAlpha(this.m.SInterfaceAlpha(), (aI)this.SInterfaceAlpha);
+      RInterfaceIndia.SInterfaceAlpha(this.m.SInterfaceAlpha(), (GInterfaceAi)this.SInterfaceAlpha);
     } catch (ExceptionInAxPackage u) {
       bV.d(s.g.HashMap("Invalid Stop Logging Expression") + ":" + this.m.SInterfaceAlpha(), (Component)this);
       return false;

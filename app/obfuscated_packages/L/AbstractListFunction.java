@@ -1,10 +1,10 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public abstract class AbstractListFunction extends ac {
+public abstract class AbstractListFunction extends AbstractInAxPackage {
   List b;
   
   protected r(List paramList) {

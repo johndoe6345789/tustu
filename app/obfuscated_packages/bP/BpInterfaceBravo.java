@@ -2,7 +2,7 @@ package bP;
 
 import G.R;
 import G.T;
-import G.cI;
+import G.GInterfaceCi;
 import bH.D;
 import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
@@ -11,7 +11,7 @@ import bN.BnInterfaceUniform;
 import bS.BnInterfaceOscar;
 import bU.BuInterfaceGolf;
 
-public class BpInterfaceBravo implements cI {
+public class BpInterfaceBravo implements GInterfaceCi {
   BnInterfaceOscar a;
   
   public BpInterfaceBravo(BnInterfaceOscar paramo) {

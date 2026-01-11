@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
 import G.T;
-import G.cu;
+import G.ManagerUsingArrayList;
 import java.awt.Graphics;
 import java.awt.geom.Area;
 import java.io.Serializable;
@@ -163,7 +163,7 @@ public abstract class DashboardComponent extends JComponent implements Serializa
   }
   
   public String getEcuConfigurationName() {
-    return (this.e != null && this.e.equals(cu.a)) ? this.e : ((T.a().c() != null && T.a().c().c().equals(this.e)) ? "" : ((this.e != null && !this.e.isEmpty()) ? this.e : this.e));
+    return (this.e != null && this.e.equals(ManagerUsingArrayList.a)) ? this.e : ((T.a().c() != null && T.a().c().c().equals(this.e)) ? "" : ((this.e != null && !this.e.isEmpty()) ? this.e : this.e));
   }
   
   public void setEcuConfigurationName(String paramString) {

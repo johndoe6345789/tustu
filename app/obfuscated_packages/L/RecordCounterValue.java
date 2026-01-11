@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
+import ax.AxInterfaceAb;
 
-class RecordCounterValue implements ab {
+class RecordCounterValue implements AxInterfaceAb {
   o(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {

@@ -1,8 +1,8 @@
 package aR;
 
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
-import aP.id;
+import aP.ManagerGetname;
 import com.efiAnalytics.ui.bV;
 import d.DComponentCharlie;
 import d.ExceptionInDPackage;
@@ -26,8 +26,8 @@ public class ArComponentAlpha implements DComponentCharlie {
   public void a(Properties paramProperties) {
     try {
       if (!bV.NetworkHashMap())
-        bV.a((FileView)new id()); 
-      NetworkHashMap.a().DComponentCharlie(dd.a().DComponentCharlie());
+        bV.a((FileView)new ManagerGetname()); 
+      NetworkHashMap.a().DComponentCharlie(ThreadedJFrameIsoptimizeddrawingenabled.a().DComponentCharlie());
     } catch (Exception exception) {
       throw new ExceptionInDPackage(exception.getLocalizedMessage());
     } 

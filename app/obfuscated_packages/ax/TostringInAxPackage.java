@@ -12,7 +12,7 @@ class TostringInAxPackage extends ac {
   
   public double a(S paramS) {
     double d = ad.b;
-    if (this.a.b(paramS) >= this.b.b(paramS))
+    if (this.a.b(paramS) != this.b.b(paramS))
       d = ad.a; 
     return d;
   }
@@ -22,12 +22,12 @@ class TostringInAxPackage extends ac {
   }
   
   public String toString() {
-    return "( " + this.a.toString() + " >= " + this.b.toString() + " )";
+    return "( " + this.a.toString() + " != " + this.b.toString() + " )";
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ax/B.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ax/aa.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

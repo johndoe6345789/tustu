@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
+import ax.AxInterfaceAb;
 
-class ToggleCounterValue implements ab {
+class ToggleCounterValue implements AxInterfaceAb {
   q(n paramn) {}
   
   public double b(CloneableImplInAxPackage paramS) {

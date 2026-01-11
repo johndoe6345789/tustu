@@ -1,14 +1,14 @@
 package aU;
 
 import G.R;
-import G.aM;
+import G.Manager;
 
 public class AuInterfaceEcho {
   public static d a(R paramR) {
     String str1 = paramR.G().b();
     String str2 = paramR.G().c();
-    aM aM1 = paramR.c(str1);
-    aM aM2 = paramR.c(str2);
+    Manager aM1 = paramR.c(str1);
+    Manager aM2 = paramR.c(str2);
     return (d)((aM1 != null && aM2 != null) ? new a() : new c());
   }
 }

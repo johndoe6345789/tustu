@@ -4,7 +4,7 @@ import G.n;
 import G.o;
 import aD.SerialPortEventListener;
 import aD.OutputStreamExtension;
-import aP.hs;
+import aP.ActionListenerUsingJButton;
 import bH.D;
 import bH.c;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import jssc.SerialPortEventListener;
 import jssc.SerialPortException;
 
 public class SerialPortEventListenerUsingJTextArea implements n, SerialPortEventListener {
-  private hs b;
+  private ActionListenerUsingJButton b;
   
   private JTextArea c;
   
@@ -38,7 +38,7 @@ public class SerialPortEventListenerUsingJTextArea implements n, SerialPortEvent
   
   private n j;
   
-  public SerialPortEventListenerUsingJTextArea(hs paramhs, n paramn, JTextArea paramJTextArea1, JTextArea paramJTextArea2) {
+  public SerialPortEventListenerUsingJTextArea(ActionListenerUsingJButton paramhs, n paramn, JTextArea paramJTextArea1, JTextArea paramJTextArea2) {
     this.b = paramhs;
     this.OutputStreamExtension = paramn;
     this.c = paramJTextArea1;

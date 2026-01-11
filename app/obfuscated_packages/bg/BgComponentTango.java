@@ -1,9 +1,9 @@
 package bg;
 
-import G.bf;
+import G.GInterfaceBf;
 
 public interface BgComponentTango {
-  void a(bf parambf);
+  void a(GInterfaceBf parambf);
 }
 
 

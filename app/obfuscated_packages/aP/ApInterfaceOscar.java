@@ -1,7 +1,7 @@
 package aP;
 
 import G.R;
-import G.ab;
+import G.GInterfaceAb;
 import K.KInterfaceBravo;
 import V.ExceptionInVPackage;
 import W.z;
@@ -83,10 +83,10 @@ public class ApInterfaceOscar extends Thread {
         this.h = System.currentTimeMillis();
         String str = this.c[KInterfaceBravo % this.c.length];
         KInterfaceBravo b1 = new KInterfaceBravo();
-        this.d.p().ExceptionInVPackage((ab)b1);
+        this.d.p().ExceptionInVPackage((GInterfaceAb)b1);
         f.ExceptionInVPackage().ExceptionInVPackage(dd.ExceptionInVPackage().c(), this.d, str);
         this.KInterfaceBravo = b1.ExceptionInVPackage();
-        this.d.p().KInterfaceBravo((ab)b1);
+        this.d.p().KInterfaceBravo((GInterfaceAb)b1);
         if (this.KInterfaceBravo == 0) {
           this.f = true;
         } else {

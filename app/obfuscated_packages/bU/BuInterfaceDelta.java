@@ -1,7 +1,7 @@
 package bU;
 
 import G.R;
-import G.dc;
+import G.GInterfaceDc;
 import G.m;
 import G.BnInterfaceOscar;
 import bH.D;
@@ -81,11 +81,11 @@ public class BuInterfaceDelta implements ExceptionInBsPackage {
   public BnInterfaceOscar a(R paramR, byte[] paramArrayOfbyte) {
     int[] arrayOfInt = c.b(paramArrayOfbyte);
     m m = m.a(paramR.O(), arrayOfInt);
-    dc dc = new dc();
+    GInterfaceDc GInterfaceDc = new GInterfaceDc();
     m.c(this.e);
     m.b(this.d);
     m.a(this.c);
-    return dc.a(paramR, m, 3000);
+    return GInterfaceDc.a(paramR, m, 3000);
   }
   
   void a(int paramInt) {

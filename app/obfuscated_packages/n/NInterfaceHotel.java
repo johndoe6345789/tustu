@@ -1,7 +1,7 @@
 package n;
 
 import G.R;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import com.efiAnalytics.ui.bV;
 import java.awt.Window;
 
@@ -16,7 +16,7 @@ public class NInterfaceHotel {
     return a;
   }
   
-  public void a(R paramR, bv parambv, Window paramWindow) {
+  public void a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv, Window paramWindow) {
     if (this.b != null) {
       this.b.a(paramR, parambv, paramWindow);
     } else {

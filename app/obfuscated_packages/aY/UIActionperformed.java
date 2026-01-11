@@ -2,8 +2,8 @@ package aY;
 
 import G.R;
 import G.T;
-import W.ag;
-import aP.dd;
+import W.FileInWPackage;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
@@ -17,14 +17,14 @@ class UIActionperformed implements ActionListener {
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     R r = T.IOPropertiesUsingFile().c(this.IOPropertiesUsingFile.NetworkHashMap.IOPropertiesUsingFile());
-    ag ag = this.IOPropertiesUsingFile.b.IOPropertiesUsingFile();
-    if (r == null || ag == null)
+    FileInWPackage FileInWPackage = this.IOPropertiesUsingFile.b.IOPropertiesUsingFile();
+    if (r == null || FileInWPackage == null)
       bV.d(SComponentGolf.b("You must select IOPropertiesUsingFile Restore Point and IOPropertiesUsingFile Controller to restore."), this.IOPropertiesUsingFile.b); 
-    JFrame jFrame = dd.IOPropertiesUsingFile().c();
-    String str = SComponentGolf.b("Load Restore Point to replace current settings?") + "\n\n" + SComponentGolf.b("All current settings will be over written with the settings in the selected Restore Point.") + "\n\n" + SComponentGolf.b("Selected Restore Point") + ": " + ag.d(IOPropertiesUsingFile.cw);
+    JFrame jFrame = ThreadedJFrameIsoptimizeddrawingenabled.IOPropertiesUsingFile().c();
+    String str = SComponentGolf.b("Load Restore Point to replace current settings?") + "\n\n" + SComponentGolf.b("All current settings will be over written with the settings in the selected Restore Point.") + "\n\n" + SComponentGolf.b("Selected Restore Point") + ": " + FileInWPackage.d(IOPropertiesUsingFile.cw);
     if (bV.IOPropertiesUsingFile(str, jFrame, true)) {
-      NetworkHashMap.IOPropertiesUsingFile().d(r, "Before loading Restore Point " + ag.d(IOPropertiesUsingFile.cw) + " to " + r.c());
-      String str1 = ag.IOPropertiesUsingFile().getAbsolutePath();
+      NetworkHashMap.IOPropertiesUsingFile().d(r, "Before loading Restore Point " + FileInWPackage.d(IOPropertiesUsingFile.cw) + " to " + r.c());
+      String str1 = FileInWPackage.IOPropertiesUsingFile().getAbsolutePath();
       NetworkHashMap.IOPropertiesUsingFile().IOPropertiesUsingFile(jFrame, r, str1);
     } 
   }

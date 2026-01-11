@@ -1,8 +1,8 @@
 package bQ;
 
-import G.aV;
+import G.GInterfaceAv;
 
-class BqInterfaceQuebec implements aV {
+class BqInterfaceQuebec implements GInterfaceAv {
   q(l paraml) {}
   
   public void b(String paramString) {

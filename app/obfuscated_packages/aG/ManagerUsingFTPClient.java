@@ -3,7 +3,7 @@ package aG;
 import A.IO;
 import B.o;
 import G.R;
-import G.bo;
+import G.GComponentBo;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.p;
@@ -33,7 +33,7 @@ import org.apache.commons.net.ftp.FTPReply;
 public class ManagerUsingFTPClient implements RemoteFileAccess {
   private final FTPClient h = new FTPClient();
   
-  bo a;
+  GComponentBo a;
   
   R b;
   
@@ -55,7 +55,7 @@ public class ManagerUsingFTPClient implements RemoteFileAccess {
   
   boolean ExceptionPrintstacktrace = false;
   
-  public ManagerUsingFTPClient(R paramR, bo parambo, File paramFile) {
+  public ManagerUsingFTPClient(R paramR, GComponentBo parambo, File paramFile) {
     this.b = paramR;
     this.a = parambo;
     this.IO = paramFile;

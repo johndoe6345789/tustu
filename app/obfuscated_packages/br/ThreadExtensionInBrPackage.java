@@ -3,7 +3,7 @@ package br;
 class ThreadExtensionInBrPackage extends Thread {
   boolean a = true;
   
-  public ThreadExtensionInBrPackage(D paramD) {
+  public ThreadExtensionInBrPackage(aa paramaa) {
     super("Flasher");
     setDaemon(true);
   }
@@ -27,7 +27,7 @@ class ThreadExtensionInBrPackage extends Thread {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/E.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/ab.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

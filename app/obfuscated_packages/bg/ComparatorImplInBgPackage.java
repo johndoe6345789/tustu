@@ -1,12 +1,12 @@
 package bg;
 
-import G.bf;
+import G.GInterfaceBf;
 import java.util.Comparator;
 
 class ComparatorImplInBgPackage implements Comparator {
   r(q paramq) {}
   
-  public int a(bf parambf1, bf parambf2) {
+  public int a(GInterfaceBf parambf1, GInterfaceBf parambf2) {
     return parambf2.f() - parambf1.f();
   }
 }

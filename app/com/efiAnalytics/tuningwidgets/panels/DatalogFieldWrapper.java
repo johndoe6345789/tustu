@@ -1,26 +1,26 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.aH;
-import G.ac;
-import G.al;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
+import G.GComponentAl;
 import java.util.ArrayList;
 import java.util.List;
 
 class DatalogFieldWrapper {
-  ac a = null;
+  SerializableImplExceptionprintstacktrace a = null;
   
-  al b = null;
+  GComponentAl b = null;
   
   ArrayList c = null;
   
   private boolean e = false;
   
-  public z(n paramn, ac paramac, ArrayList paramArrayList) {
+  public z(n paramn, SerializableImplExceptionprintstacktrace paramac, ArrayList paramArrayList) {
     this.a = paramac;
     this.c = paramArrayList;
   }
   
-  public z(n paramn, al paramal, ArrayList paramArrayList) {
+  public z(n paramn, GComponentAl paramal, ArrayList paramArrayList) {
     this.b = paramal;
     this.c = paramArrayList;
   }
@@ -35,8 +35,8 @@ class DatalogFieldWrapper {
   }
   
   public boolean b(List paramList) {
-    for (aH aH : paramList) {
-      if (this.c.contains(aH))
+    for (SerializableImpl SerializableImpl : paramList) {
+      if (this.c.contains(SerializableImpl))
         return true; 
     } 
     return false;

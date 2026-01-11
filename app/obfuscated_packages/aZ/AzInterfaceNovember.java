@@ -3,7 +3,7 @@ package aZ;
 import G.r;
 import G.s;
 import V.ExceptionInVPackage;
-import W.ai;
+import W.WInterfaceAi;
 import bH.D;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,7 +14,7 @@ import org.w3c.dom.NodeList;
 import r.ThreadedFile;
 import v.IOHashMapInVPackage;
 
-public class AzInterfaceNovember extends IOHashMapInVPackage implements ai {
+public class AzInterfaceNovember extends IOHashMapInVPackage implements WInterfaceAi {
   public s[] ExceptionInVPackage() {
     return ExceptionInVPackage(ThreadedFile.ExceptionInVPackage);
   }

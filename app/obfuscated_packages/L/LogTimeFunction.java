@@ -1,9 +1,9 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ac;
+import ax.AbstractInAxPackage;
 
-public class LogTimeFunction extends ac {
+public class LogTimeFunction extends AbstractInAxPackage {
   public static long a = -1L;
   
   public double a(CloneableImplInAxPackage paramS) {

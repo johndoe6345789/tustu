@@ -1,25 +1,25 @@
 package bt;
 
 import G.R;
-import G.bm;
-import G.cq;
-import G.cu;
+import G.CloneableImplInGPackage;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.bN;
 
-public class CurveOutputChannelSubscriber implements cq, bP {
+public class CurveOutputChannelSubscriber implements GComponentCq, bP {
   double ExceptionInVPackage = Double.NaN;
   
   bN b;
   
   R c;
   
-  bm d;
+  CloneableImplInGPackage d;
   
   an e;
   
-  public G(R paramR, bm parambm, an paraman) {
+  public G(R paramR, CloneableImplInGPackage parambm, an paraman) {
     this.c = paramR;
     this.d = parambm;
     this.b = paraman.p;
@@ -45,20 +45,20 @@ public class CurveOutputChannelSubscriber implements cq, bP {
   public void ExceptionInVPackage() {
     if (this.d.l() != null)
       try {
-        cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.l(), this);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.l(), this);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
     if (this.d.f() != null)
       try {
-        cu.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), this.d.f(), this);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         D.ExceptionInVPackage("Unable to subscribe x or y axis for hightlights.", (Exception)ExceptionInVPackage, this);
       }  
   }
   
   public void b() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
 }
 

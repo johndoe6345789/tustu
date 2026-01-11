@@ -1,8 +1,8 @@
 package aN;
 
 import G.R;
-import G.aL;
-import G.aM;
+import G.GInterfaceAl;
+import G.Manager;
 import bH.X;
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -39,23 +39,23 @@ public class JDialogExtensionInAnPackage extends JDialog {
       int j = paramR.O().y(b);
       stringBuilder.append("page = ").append(b + 1).append(", size = ").append((paramR.p().b(b)).length).append(", Page Offset = 0x").append(Integer.toHexString(j).toUpperCase()).append(" (").append(j).append(")").append("\n");
       int k = -1;
-      ArrayList<aM> arrayList = new ArrayList();
+      ArrayList<Manager> arrayList = new ArrayList();
       null = paramR.a(b);
       while (null.hasNext()) {
-        aM aM = null.next();
-        arrayList.add(aM);
+        Manager Manager = null.next();
+        arrayList.add(Manager);
       } 
-      arrayList = aL.b(arrayList);
-      for (aM aM : arrayList) {
-        if (aM.N())
+      arrayList = GInterfaceAl.b(arrayList);
+      for (Manager Manager : arrayList) {
+        if (Manager.N())
           stringBuilder.append("&"); 
-        stringBuilder.append("\t").append(X.b(aM.aL(), ' ', 25));
+        stringBuilder.append("\t").append(X.b(Manager.GInterfaceAl(), ' ', 25));
         stringBuilder.append(" \toffset = ");
-        stringBuilder.append(aM.g()).append(", \tbyte length = ").append(aM.z());
-        int m = paramR.O().y(b) + aM.g();
+        stringBuilder.append(Manager.g()).append(", \tbyte length = ").append(Manager.z());
+        int m = paramR.O().y(b) + Manager.g();
         boolean bool = (m <= k) ? true : false;
         stringBuilder.append(", \tStart Address = ").append("0x").append(Integer.toHexString(m).toUpperCase());
-        k = paramR.O().y(b) + aM.g() + aM.z() - 1;
+        k = paramR.O().y(b) + Manager.g() + Manager.z() - 1;
         stringBuilder.append(", \tEnd Address = ").append("0x").append(Integer.toHexString(k).toUpperCase());
         if (bool) {
           stringBuilder.append(" *\n");

@@ -1,8 +1,8 @@
 package bi;
 
-import G.dg;
+import G.GInterfaceDg;
 
-class BiComponentDelta implements dg {
+class BiComponentDelta implements GInterfaceDg {
   d(a parama) {}
   
   public void a(boolean paramBoolean) {

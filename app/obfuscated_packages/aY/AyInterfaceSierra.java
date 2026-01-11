@@ -1,9 +1,9 @@
 package aY;
 
-import W.ag;
+import W.FileInWPackage;
 import W.z;
 import aE.PropertiesExtension;
-import aP.aS;
+import aP.UI;
 import com.efiAnalytics.tuningwidgets.panels.U;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
@@ -38,7 +38,7 @@ public class AyInterfaceSierra extends JPanel {
   
   JButton e = null;
   
-  aS f = null;
+  UI f = null;
   
   public AyInterfaceSierra(PropertiesExtension parama) {
     this.PropertiesExtension = parama;
@@ -58,7 +58,7 @@ public class AyInterfaceSierra extends JPanel {
     jScrollPane.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Restore Points")));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
-    this.f = new aS();
+    this.f = new UI();
     this.f.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Controller to Restore")));
     this.f.PropertiesExtension(new t(this));
     jPanel1.add("North", (Component)this.f);
@@ -99,7 +99,7 @@ public class AyInterfaceSierra extends JPanel {
     Collections.sort(arrayList, z);
     Iterator<?> iterator = arrayList.iterator();
     while (iterator.hasNext())
-      this.b.PropertiesExtension((ag)iterator.next()); 
+      this.b.PropertiesExtension((FileInWPackage)iterator.next()); 
     this.b.setBorder(BorderFactory.createLoweredBevelBorder());
   }
 }

@@ -2,12 +2,12 @@ package com.efiAnalytics.tunerStudio.panels;
 
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import ai.EqualsInAiPackage;
 import bH.D;
 import bH.S;
-import bt.bh;
+import bt.ExceptionEqualsinaipackage;
 import com.efiAnalytics.tuningwidgets.panels.A;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cO;
@@ -28,7 +28,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
-public class DataLogProfileEditorPanel extends bh {
+public class DataLogProfileEditorPanel extends ExceptionEqualsinaipackage {
   JComboBox ExceptionInVPackage = new JComboBox();
   
   A EqualsInAiPackage;
@@ -165,7 +165,7 @@ public class DataLogProfileEditorPanel extends bh {
     EqualsInAiPackage EqualsInAiPackage = new EqualsInAiPackage();
     EqualsInAiPackage.ExceptionInVPackage(s.g.EqualsInAiPackage("Data Log Profiles"));
     EqualsInAiPackage.EqualsInAiPackage("/help/datalogProfiles.html");
-    NetworkHashMap.ExceptionInVPackage().ExceptionInVPackage(EqualsInAiPackage, dd.ExceptionInVPackage().c());
+    NetworkHashMap.ExceptionInVPackage().ExceptionInVPackage(EqualsInAiPackage, ThreadedJFrameIsoptimizeddrawingenabled.ExceptionInVPackage().c());
   }
   
   private boolean c(String paramString) {

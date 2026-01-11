@@ -1,6 +1,6 @@
 package bt;
 
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class CustomEditorPanelRegistry {
     this.b.add(paramN);
   }
   
-  public N a(bv parambv) {
+  public N a(ArrayListExceptionprintstacktraceInGPackage parambv) {
     for (N n : this.b) {
       if (n.a(parambv))
         return n; 

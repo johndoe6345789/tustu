@@ -2,11 +2,11 @@ package aR;
 
 import G.R;
 import G.T;
-import G.aA;
-import G.bM;
-import G.bv;
+import G.ArrayList;
+import G.ExceptionprintstacktraceInGPackage;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import aE.PropertiesExtension;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
 import bt.O;
 import com.efiAnalytics.ui.cY;
@@ -58,7 +58,7 @@ public class ArInterfaceSierra implements cY, DComponentCharlie {
       r = T.PropertiesExtension().DComponentCharlie(str2);
     } 
     String str3 = (r != null) ? (r.DComponentCharlie() + "." + str1) : str1;
-    NetworkHashMap.PropertiesExtension().PropertiesExtension(str3, "0", dd.PropertiesExtension().DComponentCharlie());
+    NetworkHashMap.PropertiesExtension().PropertiesExtension(str3, "0", ThreadedJFrameIsoptimizeddrawingenabled.PropertiesExtension().DComponentCharlie());
   }
   
   public String PropertiesExtension() {
@@ -78,16 +78,16 @@ public class ArInterfaceSierra implements cY, DComponentCharlie {
     } 
     if (r == null)
       throw new ExceptionInDPackage("EcuConfiguration not found with the provided name."); 
-    bv bv = r.ExceptionInDPackage().DComponentCharlie(str1);
-    if (bv == null)
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.ExceptionInDPackage().DComponentCharlie(str1);
+    if (ArrayListExceptionprintstacktraceInGPackage == null)
       throw new ExceptionInDPackage("EcuConfiguration not found with the provided name."); 
   }
   
   public ArrayListExtensionInDPackage ExceptionInDPackage() {
     ArrayList<TostringInDPackage> arrayList = new ArrayList();
-    List list = bM.PropertiesExtension(T.PropertiesExtension().DComponentCharlie());
-    for (aA aA : list)
-      arrayList.add(new TostringInDPackage(aA.d(), aA.ExceptionInDPackage())); 
+    List list = ExceptionprintstacktraceInGPackage.PropertiesExtension(T.PropertiesExtension().DComponentCharlie());
+    for (ArrayList ArrayList : list)
+      arrayList.add(new TostringInDPackage(ArrayList.d(), ArrayList.ExceptionInDPackage())); 
     this.b.PropertiesExtension(arrayList);
     this.b.DComponentCharlie("Select the Dialog you want to open when this action is triggered.");
     return this.PropertiesExtension;

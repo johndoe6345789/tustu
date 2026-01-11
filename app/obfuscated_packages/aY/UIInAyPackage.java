@@ -1,7 +1,7 @@
 package aY;
 
 import G.R;
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
@@ -50,7 +50,7 @@ public class UIInAyPackage extends JDialog {
   
   protected void a() {
     try {
-      double d = i.a((aI)this.c, " " + this.a.getText() + " ");
+      double d = i.a((GInterfaceAi)this.c, " " + this.a.getText() + " ");
       this.b.setText("" + d);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       bV.d("Error:" + ExceptionPrintstacktrace.getMessage(), this);

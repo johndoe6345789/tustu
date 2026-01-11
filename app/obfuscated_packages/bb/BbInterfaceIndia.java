@@ -2,7 +2,7 @@ package bb;
 
 import A.AInterfaceOscar;
 import A.AInterfaceXray;
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import java.awt.Cursor;
 import java.util.List;
 import s.SComponentGolf;
@@ -10,7 +10,7 @@ import s.SComponentGolf;
 class BbInterfaceIndia implements AInterfaceOscar {
   i(d paramd) {}
   
-  public boolean a(String paramString1, String paramString2, List paramList, bT parambT) {
+  public boolean a(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     return true;
   }
   

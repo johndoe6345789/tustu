@@ -1,29 +1,29 @@
 package J;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import G.c;
-import G.cr;
-import G.db;
+import G.GComponentCr;
+import G.GInterfaceDb;
 import G.k;
 import I.IInterfaceDelta;
 import java.io.Serializable;
 
-public abstract class Abstract implements cr, Serializable {
+public abstract class Abstract implements GComponentCr, Serializable {
   public static String a = "protocolError";
   
   public abstract void a();
   
   public void b() {
-    ak ak = new ak();
-    ak.v("protocolError");
-    ak.a((db)new c("Protocol Error"));
-    ak.b((db)new c("Protocol Error"));
-    ak.a(k.q);
-    ak.b(k.a);
-    ak.c(k.i);
-    ak.IInterfaceDelta(k.c);
-    ak.a(a);
-    IInterfaceDelta.a().a(ak);
+    Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
+    Exceptionprintstacktrace.v("protocolError");
+    Exceptionprintstacktrace.a((GInterfaceDb)new c("Protocol Error"));
+    Exceptionprintstacktrace.b((GInterfaceDb)new c("Protocol Error"));
+    Exceptionprintstacktrace.a(k.q);
+    Exceptionprintstacktrace.b(k.a);
+    Exceptionprintstacktrace.c(k.i);
+    Exceptionprintstacktrace.IInterfaceDelta(k.c);
+    Exceptionprintstacktrace.a(a);
+    IInterfaceDelta.a().a(Exceptionprintstacktrace);
   }
   
   public void IInterfaceDelta() {

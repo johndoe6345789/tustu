@@ -1,6 +1,6 @@
 package v;
 
-import G.dj;
+import G.GInterfaceDj;
 import V.ExceptionInVPackage;
 import bH.D;
 import java.awt.Color;
@@ -130,7 +130,7 @@ public class IOHashMapInVPackage {
               } else if (str1.equals("com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter") || str1.equals("IndicatorPainter")) {
                 str1 = "IndicatorPainter";
                 element.setTextContent(com.efiAnalytics.apps.ts.dashboard.renderers.e.ExceptionInVPackage(method.invoke(paramObject, new Object[0])));
-              } else if (method.getReturnType().equals(dj.class)) {
+              } else if (method.getReturnType().equals(GInterfaceDj.class)) {
                 str1 = ExceptionInVPackage.g;
                 Object object = method.invoke(paramObject, new Object[0]);
                 if (object == null)

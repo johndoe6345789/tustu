@@ -2,7 +2,7 @@ package aI;
 
 import C.a;
 import G.R;
-import G.dh;
+import G.GInterfaceDh;
 import G.m;
 import G.o;
 import V.ExceptionPrintstacktrace;
@@ -117,7 +117,7 @@ public class ManagerGetfilesin implements q, r, s, RemoteFileAccess {
       this.ExceptionPrintstacktrace.a(3000);
       try {
         if (this.a.O().T())
-          dh.a(this.a); 
+          GInterfaceDh.a(this.a); 
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 
@@ -132,7 +132,7 @@ public class ManagerGetfilesin implements q, r, s, RemoteFileAccess {
       throw new RemoteAccessException("Error Writing File to Local File System. Error:\n" + iOException.getMessage());
     } finally {
       try {
-        dh.b(this.a);
+        GInterfaceDh.b(this.a);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
       } 

@@ -2,7 +2,7 @@ package aY;
 
 import G.R;
 import G.T;
-import G.cu;
+import G.ManagerUsingArrayList;
 import aE.PropertiesExtension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +17,7 @@ class AyInterfaceKilo implements ActionListener {
       R r = T.PropertiesExtension().c();
       if (r != null) {
         r.c(Integer.parseInt(paramActionEvent.getActionCommand()));
-        cu.PropertiesExtension().PropertiesExtension(r);
+        ManagerUsingArrayList.PropertiesExtension().PropertiesExtension(r);
       } 
     } 
   }

@@ -2,9 +2,9 @@ package bt;
 
 import G.R;
 import G.T;
-import G.aA;
-import G.aj;
-import G.bv;
+import G.ArrayList;
+import G.GComponentAj;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.Icon;
@@ -15,14 +15,14 @@ public class MenuItemIconProvider {
   
   int b = 0;
   
-  public Icon a(aA paramaA) {
+  public Icon a(ArrayList paramaA) {
     R r = T.a().c();
-    bv bv = r.e().c(paramaA.d());
-    aj aj = r.e().b(paramaA.d());
-    return a(bv, aj, paramaA);
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.e().c(paramaA.d());
+    GComponentAj GComponentAj = r.e().b(paramaA.d());
+    return a(ArrayListExceptionprintstacktraceInGPackage, GComponentAj, paramaA);
   }
   
-  public Icon a(bv parambv, aj paramaj, aA paramaA) {
+  public Icon a(ArrayListExceptionprintstacktraceInGPackage parambv, GComponentAj paramaj, ArrayList paramaA) {
     if (paramaA != null && paramaA.b()) {
       Image image1 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/folder16.png"));
       return new ImageIcon(image1);
@@ -35,7 +35,7 @@ public class MenuItemIconProvider {
       Image image1 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/curve.png"));
       return new ImageIcon(image1);
     } 
-    if (paramaj instanceof aj) {
+    if (paramaj instanceof GComponentAj) {
       Image image1 = Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/help16.gif"));
       return new ImageIcon(image1);
     } 

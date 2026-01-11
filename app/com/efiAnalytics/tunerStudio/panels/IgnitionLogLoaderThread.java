@@ -1,14 +1,14 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import V.ExceptionInVPackage;
-import W.aB;
+import W.ManagerInWPackage;
 import bH.D;
 import java.io.File;
 import java.util.ArrayList;
 import s.SComponentGolf;
 
 class IgnitionLogLoaderThread extends Thread {
-  IgnitionLogLoaderThread(o paramo, aB paramaB, File paramFile, String paramString) {}
+  IgnitionLogLoaderThread(o paramo, ManagerInWPackage paramaB, File paramFile, String paramString) {}
   
   public void run() {
     try {

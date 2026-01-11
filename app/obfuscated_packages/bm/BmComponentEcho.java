@@ -1,7 +1,7 @@
 package bm;
 
 import G.R;
-import G.bv;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import bH.D;
 import bp.UIInBpPackage;
 import bt.N;
@@ -9,11 +9,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class BmComponentEcho implements N {
-  public boolean UIInBpPackage(bv parambv) {
+  public boolean UIInBpPackage(ArrayListExceptionprintstacktraceInGPackage parambv) {
     return (parambv instanceof G.bD && parambv.aL().equals("std_trigwiz"));
   }
   
-  public JPanel UIInBpPackage(R paramR, bv parambv) {
+  public JPanel UIInBpPackage(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     try {
       return (JPanel)new UIInBpPackage(paramR);
     } catch (Exception exception) {

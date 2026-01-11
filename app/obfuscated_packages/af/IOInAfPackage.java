@@ -1,7 +1,7 @@
 package af;
 
 import G.J;
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import G.f;
 import ad.AdInterfaceAlpha;
 import ad.AdInterfaceBravo;
@@ -627,7 +627,7 @@ public class IOInAfPackage implements AdInterfaceAlpha {
     } 
   }
   
-  public static bT f(IOInAePackage paramp) {
+  public static AeInterfaceMikeTostring f(IOInAePackage paramp) {
     byte[] arrayOfByte1 = { 81 };
     byte[] arrayOfByte2 = null;
     try {
@@ -637,16 +637,16 @@ public class IOInAfPackage implements AdInterfaceAlpha {
     } 
     if (arrayOfByte2 == null || arrayOfByte2.length == 0)
       return null; 
-    bT bT = new bT();
-    bT.AdInterfaceAlpha(arrayOfByte2);
+    AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
+    AeInterfaceMikeTostring.AdInterfaceAlpha(arrayOfByte2);
     byte[] arrayOfByte3 = { 83 };
     try {
       arrayOfByte2 = paramp.AdInterfaceAlpha(arrayOfByte3, 20, 600);
-      bT.AdInterfaceBravo(X.k(new String(arrayOfByte2)));
+      AeInterfaceMikeTostring.AdInterfaceBravo(X.k(new String(arrayOfByte2)));
     } catch (Exception exception) {
       Logger.getLogger(k.class.getName()).log(Level.SEVERE, "Protocol Error querying signature", exception);
     } 
-    return bT;
+    return AeInterfaceMikeTostring;
   }
 }
 

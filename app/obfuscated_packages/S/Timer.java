@@ -2,7 +2,7 @@ package S;
 
 import G.R;
 import G.T;
-import G.aI;
+import G.GInterfaceAi;
 import G.i;
 import ax.ExceptionInAxPackage;
 import bH.D;
@@ -130,7 +130,7 @@ public class Timer implements a {
     if (c() && d() != null && !d().equals("") && !this.i.contains(paramString)) {
       double d;
       try {
-        d = i.a(d(), (aI)r, paramArrayOfbyte);
+        d = i.a(d(), (GInterfaceAi)r, paramArrayOfbyte);
       } catch (Exception exception) {
         D.b(exception.getLocalizedMessage() + ". Trigger Condition not valid for currently loaded config: " + d());
         d = 0.0D;
@@ -149,7 +149,7 @@ public class Timer implements a {
       double d;
       R r = T.a().c(paramString);
       try {
-        d = i.a(d(), (aI)r);
+        d = i.a(d(), (GInterfaceAi)r);
       } catch (ExceptionInAxPackage u) {
         D.b(u.getLocalizedMessage() + ": Bad Trigger Condition: " + e());
         this.i.add(paramString);
@@ -168,7 +168,7 @@ public class Timer implements a {
     if (c() && e() != null && !f() && !e().equals("")) {
       boolean bool;
       try {
-        bool = (i.a(e(), (aI)r, paramArrayOfbyte) != 0.0D && i.a(d(), (aI)r, paramArrayOfbyte) == 0.0D) ? true : false;
+        bool = (i.a(e(), (GInterfaceAi)r, paramArrayOfbyte) != 0.0D && i.a(d(), (GInterfaceAi)r, paramArrayOfbyte) == 0.0D) ? true : false;
       } catch (ExceptionInAxPackage u) {
         D.b(u.getLocalizedMessage() + ". Trigger Reset Condition not valid for current config: " + e());
         this.i.add(paramString);
@@ -188,7 +188,7 @@ public class Timer implements a {
     if (c() && e() != null && !f() && !e().equals("") && !this.i.contains(paramString)) {
       boolean bool;
       try {
-        bool = (i.a(e(), (aI)r) != 0.0D && i.a(d(), (aI)r) == 0.0D) ? true : false;
+        bool = (i.a(e(), (GInterfaceAi)r) != 0.0D && i.a(d(), (GInterfaceAi)r) == 0.0D) ? true : false;
       } catch (ExceptionInAxPackage u) {
         D.b(u.getLocalizedMessage() + ": Bad Trigger Reset Condition: " + e());
         bool = false;

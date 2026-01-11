@@ -1,7 +1,7 @@
 package br;
 
 import G.R;
-import G.dm;
+import G.GInterfaceDm;
 import com.efiAnalytics.ui.c;
 import java.util.HashMap;
 
@@ -16,7 +16,7 @@ public class BrComponentRomeo {
     return a;
   }
   
-  public n a(R paramR, dm paramdm, String paramString, c paramc) {
+  public n a(R paramR, GInterfaceDm paramdm, String paramString, c paramc) {
     String str = paramR.c() + "." + paramString;
     n n = (n)this.b.get(str);
     if (n == null) {
@@ -26,7 +26,7 @@ public class BrComponentRomeo {
     return n;
   }
   
-  public n a(R paramR, dm paramdm, c paramc) {
+  public n a(R paramR, GInterfaceDm paramdm, c paramc) {
     return a(paramR, paramdm, paramdm.b(), paramc);
   }
   

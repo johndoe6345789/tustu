@@ -1,19 +1,19 @@
 package y;
 
 import G.R;
-import G.aT;
+import G.GInterfaceAt;
 import java.util.ArrayList;
 
 public class YComponentAlpha {
   private static a b = null;
   
-  aT a = null;
+  GInterfaceAt a = null;
   
-  private YComponentAlpha(aT paramaT) {
+  private YComponentAlpha(GInterfaceAt paramaT) {
     this.a = paramaT;
   }
   
-  public static a a(aT paramaT) {
+  public static a a(GInterfaceAt paramaT) {
     if (b == null)
       b = new a(paramaT); 
     return b;

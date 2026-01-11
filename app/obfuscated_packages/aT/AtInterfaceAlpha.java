@@ -2,12 +2,12 @@ package aT;
 
 import G.R;
 import G.T;
-import G.bT;
-import aP.iH;
+import G.AeInterfaceMikeTostring;
+import aP.ThreadedExceptioninvpackage;
 import bH.D;
 
-public class AtInterfaceAlpha extends iH {
-  public boolean a(String paramString1, String paramString2, bT parambT) {
+public class AtInterfaceAlpha extends ThreadedExceptioninvpackage {
+  public boolean a(String paramString1, String paramString2, AeInterfaceMikeTostring parambT) {
     int i = 0;
     try {
       if (paramString2.length() == 2 || paramString2.length() == 3)

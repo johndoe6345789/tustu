@@ -2,20 +2,20 @@ package H;
 
 import G.R;
 import G.T;
-import G.aB;
-import G.aD;
-import G.aH;
+import G.ArrayListInGPackage;
+import G.SerializableExtension;
+import G.SerializableImpl;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 
-public class HInterfaceBravo implements aD {
+public class HInterfaceBravo implements SerializableExtension {
   public boolean a(String paramString, byte[] paramArrayOfbyte) {
     R r = T.a().c(paramString);
-    aH aH = r.ExceptionPrintstacktrace("Vbatt");
-    if (aH != null)
+    SerializableImpl SerializableImpl = r.ExceptionPrintstacktrace("Vbatt");
+    if (SerializableImpl != null)
       try {
-        if (aH.b(paramArrayOfbyte) < 4.0D) {
-          aB.a().a("Key Turned off, disconnecting");
+        if (SerializableImpl.b(paramArrayOfbyte) < 4.0D) {
+          ArrayListInGPackage.a().a("Key Turned off, disconnecting");
           return false;
         } 
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {

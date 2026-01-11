@@ -1,11 +1,11 @@
 package K;
 
 import G.R;
-import G.aH;
-import G.aM;
-import G.aS;
-import G.bU;
-import G.bv;
+import G.SerializableImpl;
+import G.Manager;
+import G.ArrayListExceptionprintstacktrace;
+import G.GInterfaceBu;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import bH.D;
@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class KInterfaceEcho implements bU {
+public class KInterfaceEcho implements GInterfaceBu {
   ExceptionPrintstacktrace a = new ExceptionPrintstacktrace();
   
   R b;
@@ -32,13 +32,13 @@ public class KInterfaceEcho implements bU {
   }
   
   public void a(R paramR) {
-    Iterator<bv> iterator = paramR.e().d();
+    Iterator<ArrayListExceptionprintstacktraceInGPackage> iterator = paramR.e().d();
     while (iterator.hasNext()) {
-      bv bv = iterator.next();
-      if (bv instanceof aS) {
-        aS aS = (aS)bv;
+      ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = iterator.next();
+      if (ArrayListExceptionprintstacktraceInGPackage instanceof ArrayListExceptionprintstacktrace) {
+        ArrayListExceptionprintstacktrace ArrayListExceptionprintstacktrace = (ArrayListExceptionprintstacktrace)ArrayListExceptionprintstacktraceInGPackage;
         try {
-          a(paramR, aS);
+          a(paramR, ArrayListExceptionprintstacktrace);
         } catch (ExceptionPrintstacktrace g1) {
           Logger.getLogger(e.class.getName()).log(Level.WARNING, "Error trying to validate PortEditor addressing.", (Throwable)g1);
         } 
@@ -46,7 +46,7 @@ public class KInterfaceEcho implements bU {
     } 
   }
   
-  private void a(R paramR, aS paramaS) {
+  private void a(R paramR, ArrayListExceptionprintstacktrace paramaS) {
     String str = paramaS.r();
     if (str == null || str.isEmpty())
       return; 
@@ -56,19 +56,19 @@ public class KInterfaceEcho implements bU {
       bool1 = true; 
     if (a(paramR, paramaS.h()))
       bool1 = true; 
-    aM aM1 = paramR.c(str);
+    Manager aM1 = paramR.c(str);
     if (aM1 == null) {
       D.b("PortEditor: outputName parameter not found in configuration. " + str);
       return;
     } 
-    aM aM2 = paramR.c(paramaS.ExceptionPrintstacktrace());
+    Manager aM2 = paramR.c(paramaS.ExceptionPrintstacktrace());
     if (!aM2.c().equals(aM1.c())) {
       D.b("PortEditor outputOffset and outputName should be the same size! Cannot validate offsets.");
       return;
     } 
-    aM aM3 = paramR.c(paramaS.t());
-    aM aM4 = paramR.c(paramaS.u());
-    aM aM5 = paramR.c(paramaS.d());
+    Manager aM3 = paramR.c(paramaS.t());
+    Manager aM4 = paramR.c(paramaS.u());
+    Manager aM5 = paramR.c(paramaS.d());
     double[][] arrayOfDouble1 = aM5.i(paramR.h());
     boolean bool = paramR.O().al().equals("XCP");
     double[][] arrayOfDouble2 = aM2.i(paramR.h());
@@ -80,23 +80,23 @@ public class KInterfaceEcho implements bU {
         for (byte b1 = 0; b1 < arrayOfDouble2.length; b1++) {
           double d1 = arrayOfDouble2[b1][b];
           double d2 = arrayOfDouble3[b1][b];
-          aH aH = a(paramR, (int)d1, aM2, bool);
+          SerializableImpl SerializableImpl = a(paramR, (int)d1, aM2, bool);
           if (d2 > 0.0D) {
             boolean bool3 = false;
-            if (aH == null) {
+            if (SerializableImpl == null) {
               D.d("PortEditor: No channel at offset/address, updating.");
               bool3 = true;
             } else {
               this.a.a();
-              this.a.a(aH.aL().getBytes());
+              this.a.a(SerializableImpl.aL().getBytes());
               if (this.a.b() != d2) {
                 D.d("PortEditor offset/address does not match name crc, updating.");
                 bool3 = true;
               } 
             } 
             if (bool3) {
-              aH = a(paramR, d2);
-              if (aH == null) {
+              SerializableImpl = a(paramR, d2);
+              if (SerializableImpl == null) {
                 D.b("No Channel found in configuration for crc: " + d2 + ", no way to know this port is using valid conditions!");
                 arrayOfDouble3[b1][b] = 0.0D;
                 try {
@@ -108,14 +108,14 @@ public class KInterfaceEcho implements bU {
               } else {
                 if (bool) {
                   if (aM2.e() >= 4) {
-                    arrayOfDouble2[b1][b] = aH.x();
+                    arrayOfDouble2[b1][b] = SerializableImpl.x();
                   } else {
-                    arrayOfDouble2[b1][b] = (aH.x() - paramR.O().af());
+                    arrayOfDouble2[b1][b] = (SerializableImpl.x() - paramR.O().af());
                   } 
                 } else {
-                  arrayOfDouble2[b1][b] = aH.a();
+                  arrayOfDouble2[b1][b] = SerializableImpl.a();
                 } 
-                D.d("Updated PortEditor channel based on crc. condition:" + b1 + ", offsetIndex:" + b + " Channel assigned: " + aH.aL());
+                D.d("Updated PortEditor channel based on crc. condition:" + b1 + ", offsetIndex:" + b + " Channel assigned: " + SerializableImpl.aL());
                 bool1 = true;
               } 
             } 
@@ -157,15 +157,15 @@ public class KInterfaceEcho implements bU {
   }
   
   private boolean a(R paramR, String paramString) {
-    aM aM = paramR.c(paramString);
-    if (aM == null) {
+    Manager Manager = paramR.c(paramString);
+    if (Manager == null) {
       D.b("Parameter not found, cannot perform specific check: " + paramString);
       return false;
     } 
     boolean bool = false;
-    List list = aM.ExceptionExtensionGetmessage();
+    List list = Manager.ExceptionExtensionGetmessage();
     if (list != null && !list.isEmpty()) {
-      double[][] arrayOfDouble = aM.i(paramR.p());
+      double[][] arrayOfDouble = Manager.i(paramR.p());
       for (byte b = 0; b < arrayOfDouble.length; b++) {
         for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
           if (!list.contains(Double.valueOf(arrayOfDouble[b][b1]))) {
@@ -176,7 +176,7 @@ public class KInterfaceEcho implements bU {
       } 
       if (bool)
         try {
-          aM.a(paramR.h(), arrayOfDouble);
+          Manager.a(paramR.h(), arrayOfDouble);
         } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
           D.b(ExceptionExtensionGetmessage.getMessage());
         }  
@@ -184,36 +184,36 @@ public class KInterfaceEcho implements bU {
     return bool;
   }
   
-  private aH a(R paramR, int paramInt, aM paramaM, boolean paramBoolean) {
-    Iterator<aH> iterator = paramR.K().q();
+  private SerializableImpl a(R paramR, int paramInt, Manager paramaM, boolean paramBoolean) {
+    Iterator<SerializableImpl> iterator = paramR.K().q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
+      SerializableImpl SerializableImpl = iterator.next();
       if (paramBoolean) {
         long l;
         if (paramaM == null || paramaM.e() < 4) {
-          l = aH.x() - paramR.O().af();
+          l = SerializableImpl.x() - paramR.O().af();
         } else {
-          l = aH.x();
+          l = SerializableImpl.x();
         } 
-        if (aH.b().equals("scalar") && l == paramInt)
-          return aH; 
+        if (SerializableImpl.b().equals("scalar") && l == paramInt)
+          return SerializableImpl; 
         continue;
       } 
-      if (aH.b().equals("scalar") && aH.a() == paramInt)
-        return aH; 
+      if (SerializableImpl.b().equals("scalar") && SerializableImpl.a() == paramInt)
+        return SerializableImpl; 
     } 
     return null;
   }
   
-  private aH a(R paramR, double paramDouble) {
-    Iterator<aH> iterator = paramR.K().q();
+  private SerializableImpl a(R paramR, double paramDouble) {
+    Iterator<SerializableImpl> iterator = paramR.K().q();
     while (iterator.hasNext()) {
-      aH aH = iterator.next();
-      if (aH.b().equals("scalar")) {
+      SerializableImpl SerializableImpl = iterator.next();
+      if (SerializableImpl.b().equals("scalar")) {
         this.a.a();
-        this.a.a(aH.aL().getBytes());
+        this.a.a(SerializableImpl.aL().getBytes());
         if (this.a.b() == paramDouble)
-          return aH; 
+          return SerializableImpl; 
       } 
     } 
     return null;

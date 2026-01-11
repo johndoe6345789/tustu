@@ -1,6 +1,6 @@
 package aY;
 
-import W.ag;
+import W.FileInWPackage;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
@@ -8,8 +8,8 @@ class ListSelectionListener implements ListSelectionListener {
   u(s params) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
-    ag ag = this.a.b.a();
-    this.a.c.a(ag);
+    FileInWPackage FileInWPackage = this.a.b.a();
+    this.a.c.a(FileInWPackage);
   }
 }
 

@@ -2,7 +2,7 @@ package aa;
 
 import G.Q;
 import G.R;
-import G.bf;
+import G.GInterfaceBf;
 import W.N;
 import W.O;
 import W.r;
@@ -24,13 +24,13 @@ public class AaInterfaceFoxtrot implements O {
   
   public void a(R paramR, BufferedWriter paramBufferedWriter, N paramN, r paramr) {
     List list = paramR.af();
-    for (bf bf : list) {
-      if (paramr == null || paramr.a((Q)bf)) {
+    for (GInterfaceBf GInterfaceBf : list) {
+      if (paramr == null || paramr.a((Q)GInterfaceBf)) {
         paramBufferedWriter.append("tuningView = ");
-        paramBufferedWriter.append(bf.aL()).append(", ");
-        paramBufferedWriter.append("\"").append(bf.c()).append("\", ");
-        paramBufferedWriter.append(bf.a()).append(", ");
-        paramBufferedWriter.append("{ ").append((bf.aJ() != null) ? bf.aJ() : "").append(" }");
+        paramBufferedWriter.append(GInterfaceBf.aL()).append(", ");
+        paramBufferedWriter.append("\"").append(GInterfaceBf.c()).append("\", ");
+        paramBufferedWriter.append(GInterfaceBf.a()).append(", ");
+        paramBufferedWriter.append("{ ").append((GInterfaceBf.aJ() != null) ? GInterfaceBf.aJ() : "").append(" }");
         paramBufferedWriter.newLine();
       } 
     } 

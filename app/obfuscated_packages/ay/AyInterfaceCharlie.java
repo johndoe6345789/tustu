@@ -1,6 +1,6 @@
 package ay;
 
-import G.cZ;
+import G.GInterfaceCz;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -26,8 +26,8 @@ public AyInterfaceCharlielass AyInterfaceCharlie {
   }
   
   public String a(String paramString) {
-    cZ cZ = (cZ)this.a.get(paramString);
-    return (cZ == null) ? null : cZ.a();
+    GInterfaceCz GInterfaceCz = (GInterfaceCz)this.a.get(paramString);
+    return (GInterfaceCz == null) ? null : GInterfaceCz.a();
   }
   
   public Set b() {

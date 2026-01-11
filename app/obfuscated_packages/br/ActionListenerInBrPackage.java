@@ -2,18 +2,18 @@ package br;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JComponent;
 
 class ActionListenerInBrPackage implements ActionListener {
-  A(s params) {}
+  ah(ag paramag) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    s.a(this.a, (JComponent)paramActionEvent.getSource());
+    this.a.b();
+    this.a.d.a("deactivated", Boolean.toString(this.a.m.isSelected()));
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/A.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/ah.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

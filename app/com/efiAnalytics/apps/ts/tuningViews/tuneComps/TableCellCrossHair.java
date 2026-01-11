@@ -2,15 +2,15 @@ package com.efiAnalytics.apps.ts.tuningViews.tuneComps;
 
 import G.R;
 import G.T;
-import G.aM;
-import G.bM;
-import G.be;
-import G.bv;
-import G.cu;
+import G.Manager;
+import G.ExceptionprintstacktraceInGPackage;
+import G.CloneableImpl;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.ManagerUsingArrayList;
 import V.ExceptionInVPackage;
 import bH.X;
 import bt.Q;
-import bt.bQ;
+import bt.ManagerBfcomponentcharlie;
 import com.efiAnalytics.apps.ts.dashboard.t;
 import com.efiAnalytics.apps.ts.tuningViews.TuneViewComponent;
 import com.efiAnalytics.apps.ts.tuningViews.h;
@@ -90,22 +90,22 @@ public class TableCellCrossHair extends TuneViewComponent implements t {
   
   private void setSelectedTable(String paramString) {
     R r = getEcuConfiguration();
-    bv bv = r.e().c(paramString);
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.j);
-    if (bv != null) {
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.e().c(paramString);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.j);
+    if (ArrayListExceptionprintstacktraceInGPackage != null) {
       this.r = paramString;
       try {
-        this.i = bQ.ExceptionInVPackage().ExceptionInVPackage(r, paramString);
+        this.i = ManagerBfcomponentcharlie.ExceptionInVPackage().ExceptionInVPackage(r, paramString);
         if (this.i == null)
           throw new ExceptionInVPackage("Unknown Table: " + paramString); 
-        this.SComponentGolf.setText(bM.c(r, paramString));
-        be be = (be)r.e().c(paramString);
-        this.k = be.d();
-        this.l = be.f();
-        cu.ExceptionInVPackage().ExceptionInVPackage(r.c(), this.k, this.j);
-        cu.ExceptionInVPackage().ExceptionInVPackage(r.c(), this.l, this.j);
-        aM aM = r.c(be.c());
-        this.p = aM.v();
+        this.SComponentGolf.setText(ExceptionprintstacktraceInGPackage.c(r, paramString));
+        CloneableImpl CloneableImpl = (CloneableImpl)r.e().c(paramString);
+        this.k = CloneableImpl.d();
+        this.l = CloneableImpl.f();
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(r.c(), this.k, this.j);
+        ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(r.c(), this.l, this.j);
+        Manager Manager = r.c(CloneableImpl.c());
+        this.p = Manager.v();
         setClean(false);
         double d = this.i.d(0, 0).doubleValue();
         this.c.ExceptionInVPackage(X.b(d, this.p));
@@ -147,7 +147,7 @@ public class TableCellCrossHair extends TuneViewComponent implements t {
   }
   
   public void close() {
-    cu.ExceptionInVPackage().ExceptionInVPackage(this.j);
+    ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this.j);
   }
   
   public boolean isDirty() {

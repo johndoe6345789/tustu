@@ -1,18 +1,18 @@
 package L;
 
 import ax.CloneableImplInAxPackage;
-import ax.ab;
-import ax.ac;
+import ax.AxInterfaceAb;
+import ax.AbstractInAxPackage;
 import java.util.List;
 
-public class ConditionalIfFunction extends ac {
-  ab a;
+public class ConditionalIfFunction extends AbstractInAxPackage {
+  AxInterfaceAb a;
   
-  ab b;
+  AxInterfaceAb b;
   
-  ab c;
+  AxInterfaceAb c;
   
-  protected B(List<ab> paramList) {
+  protected B(List<AxInterfaceAb> paramList) {
     this.a = paramList.get(0);
     this.b = paramList.get(1);
     this.c = paramList.get(2);

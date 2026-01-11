@@ -1,21 +1,21 @@
 package bm;
 
 import G.R;
-import G.bo;
-import G.bv;
+import G.GComponentBo;
+import G.ArrayListExceptionprintstacktraceInGPackage;
 import bH.D;
 import bt.N;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class UIInBmPackage implements N {
-  public boolean a(bv parambv) {
-    return parambv instanceof bo;
+  public boolean a(ArrayListExceptionprintstacktraceInGPackage parambv) {
+    return parambv instanceof GComponentBo;
   }
   
-  public JPanel a(R paramR, bv parambv) {
+  public JPanel a(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     try {
-      return (JPanel)new bj.a(paramR, (bo)parambv);
+      return (JPanel)new bj.a(paramR, (GComponentBo)parambv);
     } catch (V.a a1) {
       D.a("Unable to show FTP File Browser.", (Exception)a1, this);
       JPanel jPanel = new JPanel();

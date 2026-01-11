@@ -5,15 +5,19 @@ import java.io.FileFilter;
 import r.IOPropertiesUsingFile;
 
 class FileFilterImpl implements FileFilter {
-  r(q paramq) {}
+  String IOPropertiesUsingFile = "";
+  
+  iq(String paramString) {
+    this.IOPropertiesUsingFile = paramString;
+  }
   
   public boolean accept(File paramFile) {
-    return (!paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.ct) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cs) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cr) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cv) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t) && !paramFile.getParentFile().getName().equals("restorePoints"));
+    return (paramFile.isFile() && paramFile.getName().startsWith(this.IOPropertiesUsingFile) && paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()));
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/r.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iq.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

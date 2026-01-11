@@ -1,6 +1,6 @@
 package aY;
 
-import W.ag;
+import W.FileInWPackage;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 
@@ -15,12 +15,12 @@ class JListExtension extends JList {
     setVisibleRowCount(12);
   }
   
-  public void a(ag paramag) {
+  public void a(FileInWPackage paramag) {
     B b = new B(this.b, paramag);
     this.a.add(0, b);
   }
   
-  public ag a() {
+  public FileInWPackage a() {
     B b = (B)getSelectedValue();
     return (b != null) ? b.a : null;
   }

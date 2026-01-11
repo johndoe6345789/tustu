@@ -1,6 +1,6 @@
 package L;
 
-import G.aM;
+import G.Manager;
 import java.util.HashMap;
 
 public class ParameterIndexManager {
@@ -21,13 +21,13 @@ public class ParameterIndexManager {
     this.b = 0;
   }
   
-  public int a(aM paramaM) {
+  public int a(Manager paramaM) {
     this.a.put(Integer.valueOf(this.b), paramaM);
     return this.b++;
   }
   
-  public aM a(int paramInt) {
-    return (aM)this.a.get(Integer.valueOf(paramInt));
+  public Manager a(int paramInt) {
+    return (Manager)this.a.get(Integer.valueOf(paramInt));
   }
 }
 

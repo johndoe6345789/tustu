@@ -1,7 +1,7 @@
 package aU;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
@@ -16,8 +16,8 @@ public AuInterfaceCharlielass AuInterfaceCharlie implements d {
     e.ExceptionInVPackage(str1, paramInt1, paramInt2);
     String str2 = paramR.G().b();
     String str3 = paramR.G().c();
-    aM aM1 = paramR.c(str2);
-    aM aM2 = paramR.c(str3);
+    Manager aM1 = paramR.c(str2);
+    Manager aM2 = paramR.c(str3);
     try {
       if (aM1 != null)
         aM1.ExceptionInVPackage(paramR.p(), paramInt1); 

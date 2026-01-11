@@ -1,7 +1,7 @@
 package aR;
 
-import aP.bW;
-import aP.dd;
+import aP.ManagerNcomponentalpha;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
 import java.util.Properties;
@@ -24,8 +24,8 @@ public class ArInterfaceHotel implements DComponentCharlie {
   }
   
   public void a(Properties paramProperties) {
-    bW bW = dd.a().h();
-    bW.b(true);
+    ManagerNcomponentalpha ManagerNcomponentalpha = ThreadedJFrameIsoptimizeddrawingenabled.a().h();
+    ManagerNcomponentalpha.b(true);
   }
   
   public void b(Properties paramProperties) {}

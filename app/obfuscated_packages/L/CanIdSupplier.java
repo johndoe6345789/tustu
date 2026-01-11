@@ -2,9 +2,9 @@ package L;
 
 import G.R;
 import G.T;
-import G.cZ;
+import G.GInterfaceCz;
 
-class CanIdSupplier implements cZ {
+class CanIdSupplier implements GInterfaceCz {
   i(h paramh) {}
   
   public String a() {

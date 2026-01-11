@@ -1,12 +1,12 @@
 package bQ;
 
-import G.cq;
-import G.cu;
+import G.GComponentCq;
+import G.ManagerUsingArrayList;
 import J.JInterfaceJuliet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ThreadedInBqPackage implements cq {
+public class ThreadedInBqPackage implements GComponentCq {
   l a;
   
   JInterfaceJuliet b;
@@ -27,7 +27,7 @@ public class ThreadedInBqPackage implements cq {
   }
   
   public void a() {
-    cu.a().a(JInterfaceJuliet.c, this);
+    ManagerUsingArrayList.a().a(JInterfaceJuliet.c, this);
   }
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}

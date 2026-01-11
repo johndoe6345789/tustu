@@ -1,7 +1,7 @@
 package aU;
 
 import G.R;
-import G.aM;
+import G.Manager;
 import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
 import javax.swing.SwingUtilities;
@@ -10,8 +10,8 @@ public class AuInterfaceAlpha implements d {
   public void a(R paramR, int paramInt1, int paramInt2) {
     String str1 = paramR.G().b();
     String str2 = paramR.G().c();
-    aM aM1 = paramR.c(str1);
-    aM aM2 = paramR.c(str2);
+    Manager aM1 = paramR.c(str1);
+    Manager aM2 = paramR.c(str2);
     if (!paramR.C().q());
     try {
       aM1.a(paramR.p(), paramInt1);

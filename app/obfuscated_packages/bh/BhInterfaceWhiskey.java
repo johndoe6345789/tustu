@@ -1,15 +1,15 @@
 package bh;
 
-import G.aH;
+import G.SerializableImpl;
 
 class BhInterfaceWhiskey {
   private final String b;
   
-  private final aH c;
+  private final SerializableImpl c;
   
   private final double d;
   
-  w(v paramv, String paramString, aH paramaH, double paramDouble) {
+  w(v paramv, String paramString, SerializableImpl paramaH, double paramDouble) {
     this.b = paramString;
     this.c = paramaH;
     this.d = paramDouble;
@@ -27,7 +27,7 @@ class BhInterfaceWhiskey {
     return this.b;
   }
   
-  public aH d() {
+  public SerializableImpl d() {
     return this.c;
   }
 }

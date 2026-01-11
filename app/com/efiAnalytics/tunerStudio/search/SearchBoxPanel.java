@@ -2,7 +2,7 @@ package com.efiAnalytics.tunerStudio.search;
 
 import G.R;
 import G.T;
-import aP.dd;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import com.efiAnalytics.ui.eJ;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -72,7 +72,7 @@ public class SearchBoxPanel extends JPanel {
           arrayList.addAll(arrayList1);
         } 
       } 
-      List list = dd.a().SComponentGolf().b(this.d);
+      List list = ThreadedJFrameIsoptimizeddrawingenabled.a().SComponentGolf().b(this.d);
       arrayList.addAll(list);
     } 
     return arrayList;

@@ -1,9 +1,9 @@
 package av;
 
-import G.be;
+import G.CloneableImpl;
 
 final class AvInterfaceDelta implements p {
-  public boolean a(be parambe) {
+  public boolean a(CloneableImpl parambe) {
     return (parambe.aL().toLowerCase().contains("fuel") || parambe.aL().toLowerCase().contains("spark") || parambe.aL().toLowerCase().contains("lambda"));
   }
 }

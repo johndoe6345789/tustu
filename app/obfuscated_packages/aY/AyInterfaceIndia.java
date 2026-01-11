@@ -1,10 +1,10 @@
 package aY;
 
-import G.aF;
+import G.GInterfaceAf;
 import bH.X;
 import s.SComponentGolf;
 
-class AyInterfaceIndia implements aF {
+class AyInterfaceIndia implements GInterfaceAf {
   i(f paramf) {}
   
   public void a(String paramString, byte[] paramArrayOfbyte) {

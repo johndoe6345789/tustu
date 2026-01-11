@@ -2,12 +2,12 @@ package bQ;
 
 import G.R;
 import G.T;
-import G.aB;
-import G.aG;
-import G.aH;
-import G.bT;
-import G.co;
-import G.cu;
+import G.ArrayListInGPackage;
+import G.GInterfaceAg;
+import G.SerializableImpl;
+import G.AeInterfaceMikeTostring;
+import G.GComponentCo;
+import G.ManagerUsingArrayList;
 import G.m;
 import G.w;
 import bH.D;
@@ -24,7 +24,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class BqInterfaceUniform implements aG, co {
+public class BqInterfaceUniform implements GInterfaceAg, GComponentCo {
   R BoInterfaceAlpha = null;
   
   private BnInterfaceKilo g = null;
@@ -53,7 +53,7 @@ public class BqInterfaceUniform implements aG, co {
     this.h = parama;
   }
   
-  public boolean BoInterfaceAlpha(String paramString, bT parambT) {
+  public boolean BoInterfaceAlpha(String paramString, AeInterfaceMikeTostring parambT) {
     if (this.BoInterfaceAlpha == null && paramString.equals(this.BnInterfaceKilo))
       this.BoInterfaceAlpha = T.BoInterfaceAlpha().TostringInBoPackage(paramString); 
     if (this.d != null);
@@ -81,7 +81,7 @@ public class BqInterfaceUniform implements aG, co {
     } else if (!this.f) {
       this.f = true;
       try {
-        cu.BoInterfaceAlpha().h(this.BnInterfaceKilo);
+        ManagerUsingArrayList.BoInterfaceAlpha().h(this.BnInterfaceKilo);
       } finally {
         this.f = false;
       } 
@@ -99,32 +99,32 @@ public class BqInterfaceUniform implements aG, co {
       BoInterfaceLima BoInterfaceLima = null;
       int n = 0;
       byte b1 = 1;
-      ArrayList<aH> arrayList1 = new ArrayList();
+      ArrayList<SerializableImpl> arrayList1 = new ArrayList();
       for (w w : paramList) {
-        aH aH = BoInterfaceAlpha(w.BoInterfaceAlpha());
-        arrayList1.add(aH);
+        SerializableImpl SerializableImpl = BoInterfaceAlpha(w.BoInterfaceAlpha());
+        arrayList1.add(SerializableImpl);
       } 
       Collections.sort(arrayList1, new v(this));
       boolean bool = false;
       byte b2 = 0;
-      for (aH aH : arrayList1) {
-        if (aH != null) {
-          if (BoInterfaceLima != null && aH.x() + aH.BoInterfaceLima() - BoInterfaceLima.BoInterfaceAlpha() <= BoInterfaceIndia) {
-            long l1 = Math.max(BoInterfaceLima.BoInterfaceAlpha() + BoInterfaceLima.b(), aH.x() + aH.BoInterfaceLima());
-            BoInterfaceLima.BoInterfaceAlpha(Math.min(BoInterfaceLima.BoInterfaceAlpha(), aH.x()));
+      for (SerializableImpl SerializableImpl : arrayList1) {
+        if (SerializableImpl != null) {
+          if (BoInterfaceLima != null && SerializableImpl.x() + SerializableImpl.BoInterfaceLima() - BoInterfaceLima.BoInterfaceAlpha() <= BoInterfaceIndia) {
+            long l1 = Math.max(BoInterfaceLima.BoInterfaceAlpha() + BoInterfaceLima.b(), SerializableImpl.x() + SerializableImpl.BoInterfaceLima());
+            BoInterfaceLima.BoInterfaceAlpha(Math.min(BoInterfaceLima.BoInterfaceAlpha(), SerializableImpl.x()));
             n -= BoInterfaceLima.b();
             BoInterfaceLima.BoInterfaceAlpha((int)(l1 - BoInterfaceLima.BoInterfaceAlpha()));
             n += BoInterfaceLima.b();
             BoInterfaceIndia i1 = new BoInterfaceIndia();
-            i1.BoInterfaceAlpha(aH.BoInterfaceAlpha());
-            i1.b(aH.BoInterfaceLima());
-            i1.TostringInBoPackage((int)(aH.x() - BoInterfaceLima.BoInterfaceAlpha()));
+            i1.BoInterfaceAlpha(SerializableImpl.BoInterfaceAlpha());
+            i1.b(SerializableImpl.BoInterfaceLima());
+            i1.TostringInBoPackage((int)(SerializableImpl.x() - BoInterfaceLima.BoInterfaceAlpha()));
             BoInterfaceLima.BoInterfaceAlpha(i1);
             continue;
           } 
           BoInterfaceLima = new BoInterfaceLima();
-          BoInterfaceLima.BoInterfaceAlpha(aH.x());
-          BoInterfaceLima.BoInterfaceAlpha(aH.BoInterfaceLima());
+          BoInterfaceLima.BoInterfaceAlpha(SerializableImpl.x());
+          BoInterfaceLima.BoInterfaceAlpha(SerializableImpl.BoInterfaceLima());
           n += BoInterfaceLima.b();
           byte b = (arrayList.size() == 1) ? (this.g.BoInterfaceAlpha() + b1) : b1;
           if (n >= this.g.j() - b || k1.size() >= m)
@@ -139,14 +139,14 @@ public class BqInterfaceUniform implements aG, co {
             }  
           if (!bool) {
             BoInterfaceIndia i1 = new BoInterfaceIndia();
-            i1.BoInterfaceAlpha(aH.BoInterfaceAlpha());
-            i1.b(aH.BoInterfaceLima());
-            i1.TostringInBoPackage((int)(aH.x() - BoInterfaceLima.BoInterfaceAlpha()));
+            i1.BoInterfaceAlpha(SerializableImpl.BoInterfaceAlpha());
+            i1.b(SerializableImpl.BoInterfaceLima());
+            i1.TostringInBoPackage((int)(SerializableImpl.x() - BoInterfaceLima.BoInterfaceAlpha()));
             BoInterfaceLima.BoInterfaceAlpha(i1);
             k1.add(BoInterfaceLima);
             continue;
           } 
-          D.b("ODT Full, skipping channel: " + aH.aL());
+          D.b("ODT Full, skipping channel: " + SerializableImpl.aL());
           b2++;
         } 
       } 
@@ -157,28 +157,28 @@ public class BqInterfaceUniform implements aG, co {
         stringBuilder.append(TostringInBoPackage.b(arrayList1)).append("\n");
         stringBuilder.append(TostringInBoPackage.TostringInBoPackage(arrayList)).append("\n");
         D.TostringInBoPackage(stringBuilder.toString());
-        aB.BoInterfaceAlpha().b(this.BnInterfaceKilo, "Exceeding MAX ODT's \n" + b2 + " channels will not be updated.\nSee Log for channels overflow channels");
+        ArrayListInGPackage.BoInterfaceAlpha().b(this.BnInterfaceKilo, "Exceeding MAX ODT's \n" + b2 + " channels will not be updated.\nSee Log for channels overflow channels");
       } 
     } 
     return arrayList;
   }
   
-  private aH BoInterfaceAlpha(int paramInt) {
-    aH aH = (aH)this.TostringInBoPackage.get(Integer.valueOf(paramInt));
-    if (aH == null) {
-      Iterator<aH> iterator = this.BoInterfaceAlpha.K().q();
+  private SerializableImpl BoInterfaceAlpha(int paramInt) {
+    SerializableImpl SerializableImpl = (SerializableImpl)this.TostringInBoPackage.get(Integer.valueOf(paramInt));
+    if (SerializableImpl == null) {
+      Iterator<SerializableImpl> iterator = this.BoInterfaceAlpha.K().q();
       while (iterator.hasNext()) {
-        aH aH1 = iterator.next();
+        SerializableImpl aH1 = iterator.next();
         if (!aH1.b().equals("formula") && aH1.BoInterfaceAlpha() == paramInt) {
-          aH = aH1;
+          SerializableImpl = aH1;
           this.TostringInBoPackage.put(Integer.valueOf(paramInt), aH1);
           break;
         } 
       } 
     } 
-    if (aH == null)
+    if (SerializableImpl == null)
       D.b("No Channel found for offset: " + paramInt + ", cannot create ODT Entry"); 
-    return aH;
+    return SerializableImpl;
   }
   
   public void BoInterfaceAlpha(TostringInBoPackage paramc) {

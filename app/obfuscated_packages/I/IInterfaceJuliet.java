@@ -1,31 +1,31 @@
 package I;
 
-import G.ah;
-import G.cu;
+import G.GInterfaceAh;
+import G.ManagerUsingArrayList;
 import java.util.ArrayList;
 
 public class IInterfaceJuliet {
   public static String a = "magneticCompass";
   
   public static void a() {
-    cu.a().d(a);
+    ManagerUsingArrayList.a().d(a);
   }
   
-  public static void a(ArrayList<ah> paramArrayList) {
-    ah ah = new ah();
-    ah.v(a + "Gauge");
-    ah.a(a);
-    ah.a(0.0D);
-    ah.b(360.0D);
-    ah.d(1000.0D);
-    ah.e(1000.0D);
-    ah.c(-1.75D);
-    ah.h(-2.0D);
-    ah.c("Direction");
-    ah.b("°");
-    ah.g(0.0D);
-    ah.f(1.0D);
-    paramArrayList.add(ah);
+  public static void a(ArrayList<GInterfaceAh> paramArrayList) {
+    GInterfaceAh GInterfaceAh = new GInterfaceAh();
+    GInterfaceAh.v(a + "Gauge");
+    GInterfaceAh.a(a);
+    GInterfaceAh.a(0.0D);
+    GInterfaceAh.b(360.0D);
+    GInterfaceAh.d(1000.0D);
+    GInterfaceAh.e(1000.0D);
+    GInterfaceAh.c(-1.75D);
+    GInterfaceAh.h(-2.0D);
+    GInterfaceAh.c("Direction");
+    GInterfaceAh.b("°");
+    GInterfaceAh.g(0.0D);
+    GInterfaceAh.f(1.0D);
+    paramArrayList.add(GInterfaceAh);
   }
 }
 

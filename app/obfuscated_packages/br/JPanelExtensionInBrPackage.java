@@ -3,7 +3,6 @@ package br;
 import bH.X;
 import bL.BlInterfaceLima;
 import bL.BlInterfaceMike;
-import com.efiAnalytics.ui.eJ;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -29,9 +28,9 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
   
   JLabel h = new JLabel();
   
-  JLabel i = new G(this.j);
+  JLabel i = new ad(this.j);
   
-  I(s params) {
+  af(P paramP) {
     setBorder(BorderFactory.createTitledBorder("VeAnalyze Stats"));
     setLayout(new GridLayout(0, 3, 6, 2));
     add(a("Total Records", this.a));
@@ -49,7 +48,7 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
     paramString = SComponentGolf.b(paramString) + ": ";
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(1, 0));
-    paramJLabel.setMinimumSize(new Dimension(eJ.a(60), eJ.a(14)));
+    paramJLabel.setMinimumSize(new Dimension(60, 14));
     paramJLabel.setHorizontalAlignment(2);
     JLabel jLabel = new JLabel(paramString, 4);
     jPanel.add(jLabel);
@@ -66,21 +65,19 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
     this.SComponentGolf.setText(paramm.c() + "");
     this.h.setText(X.a(paramm.SComponentGolf()));
     this.f.setText(X.b(paramm.e(), 1));
-    if (!this.j.h.k().isEmpty()) {
+    if (!((ag)this.j.p.get(0)).a.k().equals("")) {
       this.i.setBackground(Color.yellow);
       this.i.setForeground(Color.BLACK);
     } else {
       this.i.setBackground(this.f.getBackground());
       this.i.setForeground(this.f.getForeground());
-      if (!this.j.j.isEnabled())
-        this.j.j.setEnabled(true); 
     } 
-    this.i.setText(this.j.h.k());
+    this.i.setText(((ag)this.j.p.get(0)).a.k());
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/I.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/af.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

@@ -2,7 +2,7 @@ package B;
 
 import A.AInterfaceCharlie;
 import A.AInterfaceOscar;
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import ae.AInterfaceOscar;
 import bH.D;
 import bH.I;
@@ -108,7 +108,7 @@ public class Network {
       k.a(parami); 
   }
   
-  private void a(String paramString1, String paramString2, List paramList, bT parambT) {
+  private void a(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     for (AInterfaceOscar AInterfaceOscar : this.n)
       AInterfaceOscar.a(paramString1, paramString2, paramList, parambT); 
   }
@@ -153,15 +153,15 @@ public class Network {
     } else {
       str4 = "21845";
     } 
-    bT bT = new bT();
+    AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
     if (hashMap.get(a) != null && ((String)hashMap.get(a)).startsWith("BigStuff")) {
       str5 = (String)hashMap.get(a) + " " + (String)hashMap.get(b);
     } else {
       str5 = (String)hashMap.get(b);
     } 
-    bT.a(str5);
-    bT.b(str3);
-    bT.a(AInterfaceOscar.b(bT));
+    AeInterfaceMikeTostring.a(str5);
+    AeInterfaceMikeTostring.b(str3);
+    AeInterfaceMikeTostring.a(AInterfaceOscar.b(AeInterfaceMikeTostring));
     if (hashMap.get(g) != null && ((String)hashMap.get(g)).equalsIgnoreCase("UDP")) {
       this.r = AInterfaceOscar.b;
     } else if (hashMap.get(g) != null && ((String)hashMap.get(g)).equalsIgnoreCase("TCP")) {
@@ -173,7 +173,7 @@ public class Network {
     arrayList.add(AInterfaceCharlie);
     AInterfaceCharlie = new AInterfaceCharlie(IOHashMap.k, str4);
     arrayList.add(AInterfaceCharlie);
-    a(str1, str6, arrayList, bT);
+    a(str1, str6, arrayList, AeInterfaceMikeTostring);
     if (!this.AInterfaceOscar.isEmpty()) {
       i i = new i();
       i.f((String)hashMap.get(a));
@@ -236,11 +236,11 @@ public class Network {
       str1 = str1 + " IP:" + paramString1;
       if (hashMap.get(str + i) != null && !((String)hashMap.get(str + i)).equals("0"))
         str1 = str1 + " In Use"; 
-      bT = new bT();
+      AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
       str5 = (String)hashMap.get(str + b);
-      bT.a(str5);
-      bT.b(str3);
-      bT.a(AInterfaceOscar.b(bT));
+      AeInterfaceMikeTostring.a(str5);
+      AeInterfaceMikeTostring.b(str3);
+      AeInterfaceMikeTostring.a(AInterfaceOscar.b(AeInterfaceMikeTostring));
       if (hashMap.get(str + g) != null && ((String)hashMap.get(str + g)).equalsIgnoreCase("UDP")) {
         this.r = AInterfaceOscar.b;
       } else if (hashMap.get(str + g) != null && ((String)hashMap.get(str + g)).equalsIgnoreCase("TCP")) {
@@ -254,11 +254,11 @@ public class Network {
       arrayList.add(AInterfaceCharlie);
       try {
         int i = Integer.parseInt((String)hashMap.getOrDefault(str + j, "-1"));
-        bT.a(i);
+        AeInterfaceMikeTostring.a(i);
       } catch (Exception exception) {
         D.b("Unable to get CAN ID from broadcast");
       } 
-      a(str1, str6, arrayList, bT);
+      a(str1, str6, arrayList, AeInterfaceMikeTostring);
     } 
   }
   

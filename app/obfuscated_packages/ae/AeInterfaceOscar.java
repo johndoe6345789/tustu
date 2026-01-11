@@ -1,6 +1,6 @@
 package ae;
 
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import bH.D;
 
 public class AeInterfaceOscar {
@@ -151,7 +151,7 @@ public class AeInterfaceOscar {
     return m;
   }
   
-  public static boolean a(bT parambT) {
+  public static boolean a(AeInterfaceMikeTostring parambT) {
     if (parambT != null) {
       byte[] arrayOfByte = parambT.a();
       if (arrayOfByte != null && (arrayOfByte[0] & 0xE0) == 224 && (arrayOfByte[1] & 0xF0) == 0 && arrayOfByte[2] == 62)
@@ -160,7 +160,7 @@ public class AeInterfaceOscar {
     return true;
   }
   
-  public static m b(bT parambT) {
+  public static m b(AeInterfaceMikeTostring parambT) {
     if (parambT != null && parambT.b() != null) {
       String str1 = parambT.b();
       int i = 0;

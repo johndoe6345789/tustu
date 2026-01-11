@@ -2,10 +2,10 @@ package I;
 
 import G.R;
 import G.T;
-import G.aH;
-import G.dj;
+import G.SerializableImpl;
+import G.GInterfaceDj;
 import G.i;
-import W.am;
+import W.WInterfaceAm;
 import bH.D;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ThreadedInIPackage {
-  private am c = null;
+  private WInterfaceAm c = null;
   
   private static k d = null;
   
@@ -31,7 +31,7 @@ public class ThreadedInIPackage {
     return d;
   }
   
-  public void a(am paramam) {
+  public void a(WInterfaceAm paramam) {
     this.c = paramam;
   }
   
@@ -56,12 +56,12 @@ public class ThreadedInIPackage {
     if (paramString1 == null || paramString1.isEmpty())
       paramString1 = T.a().c().c(); 
     R r = T.a().c(paramString1);
-    aH aH = r.g(paramString2);
-    if (aH != null && aH.b().equals("formula")) {
-      String str = aH.k();
+    SerializableImpl SerializableImpl = r.g(paramString2);
+    if (SerializableImpl != null && SerializableImpl.b().equals("formula")) {
+      String str = SerializableImpl.k();
       this.b = Thread.currentThread();
       i.b(paramString1, paramString2);
-      double d = aH.o();
+      double d = SerializableImpl.o();
       this.b = null;
     } 
   }
@@ -88,7 +88,7 @@ public class ThreadedInIPackage {
     return d;
   }
   
-  public void a(String paramString1, String paramString2, dj paramdj) {
+  public void a(String paramString1, String paramString2, GInterfaceDj paramdj) {
     l l = new l(this, paramString1, paramString2, paramdj);
     List<l> list = a(paramString1);
     if (list.contains(paramString2))

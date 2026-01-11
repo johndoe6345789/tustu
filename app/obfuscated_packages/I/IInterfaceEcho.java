@@ -1,9 +1,9 @@
 package I;
 
-import G.ak;
+import G.Exceptionprintstacktrace;
 import G.c;
-import G.cu;
-import G.db;
+import G.ManagerUsingArrayList;
+import G.GInterfaceDb;
 import G.k;
 import java.util.ArrayList;
 
@@ -13,31 +13,31 @@ public class IInterfaceEcho {
   public static String b = "controllerConnected";
   
   public static void a() {
-    cu.a().d(a);
-    cu.a().d(b);
+    ManagerUsingArrayList.a().d(a);
+    ManagerUsingArrayList.a().d(b);
   }
   
-  public static void a(ArrayList<ak> paramArrayList) {
-    ak ak = new ak();
-    ak.v(a + "Indicator");
-    ak.a((db)new c("Connecting"));
-    ak.b((db)new c(""));
-    ak.a(k.s);
-    ak.b(k.b);
-    ak.c(k.i);
-    ak.d(k.c);
-    ak.a(a);
-    paramArrayList.add(ak);
-    ak = new ak();
-    ak.v(b + "Indicator");
-    ak.a((db)new c("Connected"));
-    ak.b((db)new c("Not Connected"));
-    ak.a(k.s);
-    ak.b(k.b);
-    ak.c(k.i);
-    ak.d(k.c);
-    ak.a(b);
-    paramArrayList.add(ak);
+  public static void a(ArrayList<Exceptionprintstacktrace> paramArrayList) {
+    Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
+    Exceptionprintstacktrace.v(a + "Indicator");
+    Exceptionprintstacktrace.a((GInterfaceDb)new c("Connecting"));
+    Exceptionprintstacktrace.b((GInterfaceDb)new c(""));
+    Exceptionprintstacktrace.a(k.s);
+    Exceptionprintstacktrace.b(k.b);
+    Exceptionprintstacktrace.c(k.i);
+    Exceptionprintstacktrace.d(k.c);
+    Exceptionprintstacktrace.a(a);
+    paramArrayList.add(Exceptionprintstacktrace);
+    Exceptionprintstacktrace = new Exceptionprintstacktrace();
+    Exceptionprintstacktrace.v(b + "Indicator");
+    Exceptionprintstacktrace.a((GInterfaceDb)new c("Connected"));
+    Exceptionprintstacktrace.b((GInterfaceDb)new c("Not Connected"));
+    Exceptionprintstacktrace.a(k.s);
+    Exceptionprintstacktrace.b(k.b);
+    Exceptionprintstacktrace.c(k.i);
+    Exceptionprintstacktrace.d(k.c);
+    Exceptionprintstacktrace.a(b);
+    paramArrayList.add(Exceptionprintstacktrace);
   }
 }
 

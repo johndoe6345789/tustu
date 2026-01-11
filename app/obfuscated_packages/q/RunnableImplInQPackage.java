@@ -2,8 +2,8 @@ package q;
 
 import bH.D;
 import bt.A;
-import bt.bK;
-import bt.bb;
+import bt.JTextFieldExtension;
+import bt.JLabelExtensionSettext;
 import bt.y;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,8 +15,8 @@ class RunnableImplInQPackage implements Runnable {
       h.a().a(JLabel.class, 75);
       h.a().a(A.class, 50);
       h.a().a(y.class, 35);
-      h.a().a(bb.class, 120);
-      h.a().a(bK.class, 20);
+      h.a().a(JLabelExtensionSettext.class, 120);
+      h.a().a(JTextFieldExtension.class, 20);
     } catch (Exception exception) {
       D.a("Seed UI Cache failed!");
       Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, exception);

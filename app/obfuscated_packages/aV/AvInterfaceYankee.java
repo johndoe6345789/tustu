@@ -1,8 +1,8 @@
 package aV;
 
-import G.dj;
+import G.GInterfaceDj;
 
-class AvInterfaceYankee implements dj {
+class AvInterfaceYankee implements GInterfaceDj {
   y(x paramx) {}
   
   public double a() {

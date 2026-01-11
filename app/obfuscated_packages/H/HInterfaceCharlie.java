@@ -2,14 +2,14 @@ package H;
 
 import G.R;
 import G.T;
-import G.aM;
-import G.bU;
-import G.bb;
+import G.Manager;
+import G.GInterfaceBu;
+import G.GComponentBb;
 import bH.D;
 import java.util.ArrayList;
 import java.util.List;
 
-public HInterfaceCharlielass HInterfaceCharlie implements bU {
+public HInterfaceCharlielass HInterfaceCharlie implements GInterfaceBu {
   int a = 255;
   
   public void a() {}
@@ -27,8 +27,8 @@ public HInterfaceCharlielass HInterfaceCharlie implements bU {
       } 
       try {
         boolean bool = true;
-        aM aM = r.c(r.O().ag());
-        double[][] arrayOfDouble = aM.i(r.h());
+        Manager Manager = r.c(r.O().ag());
+        double[][] arrayOfDouble = Manager.i(r.h());
         if (arrayList != null) {
           List<Integer> list = b(arrayList);
           for (byte b = 0; b < arrayOfDouble.length; b++) {
@@ -46,12 +46,12 @@ public HInterfaceCharlielass HInterfaceCharlie implements bU {
         } 
         if (!bool) {
           D.d("Replay Pad does not match current configuration, Updating Replay Pad.");
-          aM.b(true);
-          aM.a(r.h(), arrayOfDouble);
-          aM.b(false);
+          Manager.b(true);
+          Manager.a(r.h(), arrayOfDouble);
+          Manager.b(false);
           try {
             if (aG.c.b(r)) {
-              aM aM1 = r.c("Log_Time");
+              Manager aM1 = r.c("Log_Time");
               if (aM1 != null && aM1.j(r.h()) > aM1.s())
                 aM1.a(r.h(), aM1.s()); 
             } 
@@ -67,9 +67,9 @@ public HInterfaceCharlielass HInterfaceCharlie implements bU {
   
   private List b(List paramList) {
     ArrayList<Integer> arrayList = new ArrayList();
-    for (bb bb : paramList) {
-      if (!arrayList.contains(Integer.valueOf(bb.y())))
-        arrayList.add(Integer.valueOf(bb.y())); 
+    for (GComponentBb GComponentBb : paramList) {
+      if (!arrayList.contains(Integer.valueOf(GComponentBb.y())))
+        arrayList.add(Integer.valueOf(GComponentBb.y())); 
     } 
     return a(arrayList);
   }

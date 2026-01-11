@@ -1,15 +1,15 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import G.R;
-import G.bT;
+import G.AeInterfaceMikeTostring;
 import G.s;
 import W.I;
 import W.v;
 import W.z;
 import aE.CloneableImpl;
 import aP.ItemListener;
-import aP.aF;
-import aP.iH;
+import aP.JPanelExtension;
+import aP.ThreadedExceptioninvpackage;
 import bH.t;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
@@ -43,7 +43,7 @@ public class CanDeviceConfigPanel extends JPanel {
   
   JCheckBox f = new JCheckBox(SComponentGolf.b("Disable Runtime Data"));
   
-  aF SComponentGolf = new aF();
+  JPanelExtension SComponentGolf = new JPanelExtension();
   
   private CloneableImpl ThreadedFile = null;
   
@@ -222,15 +222,15 @@ public class CanDeviceConfigPanel extends JPanel {
   
   public void a(aH.a parama) {
     if (parama.CloneableImpl() != null && !parama.CloneableImpl().isEmpty()) {
-      bT bT = new bT();
-      bT.a(parama.CloneableImpl());
-      bT.b(parama.a());
+      AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
+      AeInterfaceMikeTostring.a(parama.CloneableImpl());
+      AeInterfaceMikeTostring.b(parama.a());
       File file = new File(this.c.getText());
       String str = z.a(file);
-      if (str == null || str.equals(bT.b()))
+      if (str == null || str.equals(AeInterfaceMikeTostring.b()))
         return; 
       try {
-        file = ThreadedFile.CloneableImpl(bT.b());
+        file = ThreadedFile.CloneableImpl(AeInterfaceMikeTostring.b());
       } catch (V.a a1) {
         a1.printStackTrace();
       } 
@@ -239,7 +239,7 @@ public class CanDeviceConfigPanel extends JPanel {
         this.SComponentGolf.validate();
       } else {
         try {
-          file = iH.a(bT);
+          file = ThreadedExceptioninvpackage.a(AeInterfaceMikeTostring);
         } catch (FileNotFoundException fileNotFoundException) {}
         if (file != null && file.exists()) {
           b(file.getAbsolutePath());

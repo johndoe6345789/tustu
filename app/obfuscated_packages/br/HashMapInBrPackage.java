@@ -1,10 +1,10 @@
 package br;
 
 import G.R;
-import G.aM;
-import G.aW;
-import G.be;
-import G.dm;
+import G.Manager;
+import G.SerializableImplInGPackage;
+import G.CloneableImpl;
+import G.GInterfaceDm;
 import V.ExceptionInVPackage;
 import aE.ExceptionInVPackage;
 import bH.D;
@@ -29,37 +29,37 @@ public class HashMapInBrPackage {
     return ExceptionInVPackage;
   }
   
-  public ArrayList ExceptionInVPackage(R paramR, dm paramdm) {
+  public ArrayList ExceptionInVPackage(R paramR, GInterfaceDm paramdm) {
     String str = paramR.c() + "." + paramdm.b();
     if (!this.b.containsKey(str)) {
       String str1 = paramR.c() + "." + paramdm.b();
       dQ dQ = new dQ((Properties)ExceptionInVPackage.A(), str1);
       ArrayList<TostringInBlPackage> arrayList = new ArrayList();
-      Iterator<aW> iterator = paramdm.i();
+      Iterator<SerializableImplInGPackage> iterator = paramdm.i();
       while (iterator.hasNext()) {
-        aW aW = iterator.next();
+        SerializableImplInGPackage SerializableImplInGPackage = iterator.next();
         TostringInBlPackage TostringInBlPackage = null;
-        if (aW.aL().startsWith("std_"))
+        if (SerializableImplInGPackage.aL().startsWith("std_"))
           try {
-            TostringInBlPackage = ExceptionInVPackage(paramR, paramdm, aW, (et)dQ);
+            TostringInBlPackage = ExceptionInVPackage(paramR, paramdm, SerializableImplInGPackage, (et)dQ);
           } catch (ExceptionInVPackage ExceptionInVPackage) {
-            D.b("Unable to create Standard VE Analyze Filter: " + aW.aL() + ", will try as ExceptionInVPackage normal filter.");
+            D.b("Unable to create Standard VE Analyze Filter: " + SerializableImplInGPackage.aL() + ", will try as ExceptionInVPackage normal filter.");
             ExceptionInVPackage.printStackTrace();
           }  
         if (TostringInBlPackage == null) {
           TostringInBlPackage = new TostringInBlPackage();
-          TostringInBlPackage.ExceptionInVPackage(aW.ExceptionInVPackage());
-          TostringInBlPackage.c(aW.b());
-          TostringInBlPackage.ExceptionInVPackage(aW.c());
-          if (aW.SComponentGolf()) {
-            double d = Double.parseDouble(ExceptionInVPackage((et)dQ, TostringInBlPackage.SComponentGolf(), aW.c() + ""));
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.ExceptionInVPackage());
+          TostringInBlPackage.c(SerializableImplInGPackage.b());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.c());
+          if (SerializableImplInGPackage.SComponentGolf()) {
+            double d = Double.parseDouble(ExceptionInVPackage((et)dQ, TostringInBlPackage.SComponentGolf(), SerializableImplInGPackage.c() + ""));
             TostringInBlPackage.ExceptionInVPackage(d);
             TostringInBlPackage.ExceptionInVPackage((et)dQ);
           } 
-          TostringInBlPackage.ExceptionInVPackage(aW.d());
-          TostringInBlPackage.d(aW.e());
-          TostringInBlPackage.e(aW.aL());
-          TostringInBlPackage.ExceptionInVPackage(aW.SComponentGolf());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.d());
+          TostringInBlPackage.d(SerializableImplInGPackage.e());
+          TostringInBlPackage.e(SerializableImplInGPackage.aL());
+          TostringInBlPackage.ExceptionInVPackage(SerializableImplInGPackage.SComponentGolf());
         } 
         TostringInBlPackage.d();
         arrayList.add(TostringInBlPackage);
@@ -75,61 +75,61 @@ public class HashMapInBrPackage {
     return (ArrayList)this.b.get(str);
   }
   
-  private TostringInBlPackage ExceptionInVPackage(R paramR, dm paramdm, aW paramaW, et paramet) {
-    be be = (be)paramR.e().c(paramdm.b());
-    if (be == null)
+  private TostringInBlPackage ExceptionInVPackage(R paramR, GInterfaceDm paramdm, SerializableImplInGPackage paramaW, et paramet) {
+    CloneableImpl CloneableImpl = (CloneableImpl)paramR.e().c(paramdm.b());
+    if (CloneableImpl == null)
       throw new ExceptionInVPackage("Can not find VE table: " + paramdm.b() + " in current configuration."); 
     TostringInBlPackage TostringInBlPackage = new TostringInBlPackage();
     if (paramaW.aL().equals("std_xAxisMin")) {
-      aM aM = paramR.c(be.ExceptionInVPackage());
-      if (aM == null)
-        throw new ExceptionInVPackage("X Axis Parameter " + be.ExceptionInVPackage() + " not found in current Configuration."); 
+      Manager Manager = paramR.c(CloneableImpl.ExceptionInVPackage());
+      if (Manager == null)
+        throw new ExceptionInVPackage("X Axis Parameter " + CloneableImpl.ExceptionInVPackage() + " not found in current Configuration."); 
       TostringInBlPackage.e(paramaW.aL());
-      TostringInBlPackage.ExceptionInVPackage(be.d());
+      TostringInBlPackage.ExceptionInVPackage(CloneableImpl.d());
       TostringInBlPackage.ExceptionInVPackage(4);
-      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), aM.r() + ""));
+      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), Manager.r() + ""));
       TostringInBlPackage.ExceptionInVPackage(d);
       TostringInBlPackage.ExceptionInVPackage(paramet);
-      TostringInBlPackage.d("Min " + be.d());
+      TostringInBlPackage.d("Min " + CloneableImpl.d());
       return TostringInBlPackage;
     } 
     if (paramaW.aL().equals("std_xAxisMax")) {
-      aM aM = paramR.c(be.ExceptionInVPackage());
-      if (aM == null)
-        throw new ExceptionInVPackage("X Axis Parameter " + be.ExceptionInVPackage() + " not found in current Configuration."); 
+      Manager Manager = paramR.c(CloneableImpl.ExceptionInVPackage());
+      if (Manager == null)
+        throw new ExceptionInVPackage("X Axis Parameter " + CloneableImpl.ExceptionInVPackage() + " not found in current Configuration."); 
       TostringInBlPackage.e(paramaW.aL());
-      TostringInBlPackage.ExceptionInVPackage(be.d());
+      TostringInBlPackage.ExceptionInVPackage(CloneableImpl.d());
       TostringInBlPackage.ExceptionInVPackage(2);
-      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), aM.s() + ""));
+      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), Manager.s() + ""));
       TostringInBlPackage.ExceptionInVPackage(d);
       TostringInBlPackage.ExceptionInVPackage(paramet);
-      TostringInBlPackage.d("Max " + be.d());
+      TostringInBlPackage.d("Max " + CloneableImpl.d());
       return TostringInBlPackage;
     } 
     if (paramaW.aL().equals("std_yAxisMin")) {
-      aM aM = paramR.c(be.b());
-      if (aM == null)
-        throw new ExceptionInVPackage("Y Axis Parameter " + be.b() + " not found in current Configuration."); 
+      Manager Manager = paramR.c(CloneableImpl.b());
+      if (Manager == null)
+        throw new ExceptionInVPackage("Y Axis Parameter " + CloneableImpl.b() + " not found in current Configuration."); 
       TostringInBlPackage.e(paramaW.aL());
-      TostringInBlPackage.ExceptionInVPackage(be.BlInterfaceFoxtrot());
+      TostringInBlPackage.ExceptionInVPackage(CloneableImpl.BlInterfaceFoxtrot());
       TostringInBlPackage.ExceptionInVPackage(4);
-      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), aM.r() + ""));
+      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), Manager.r() + ""));
       TostringInBlPackage.ExceptionInVPackage(d);
       TostringInBlPackage.ExceptionInVPackage(paramet);
-      TostringInBlPackage.d("Min " + be.BlInterfaceFoxtrot());
+      TostringInBlPackage.d("Min " + CloneableImpl.BlInterfaceFoxtrot());
       return TostringInBlPackage;
     } 
     if (paramaW.aL().equals("std_yAxisMax")) {
-      aM aM = paramR.c(be.b());
-      if (aM == null)
-        throw new ExceptionInVPackage("Y Axis Parameter " + be.b() + " not found in current Configuration."); 
+      Manager Manager = paramR.c(CloneableImpl.b());
+      if (Manager == null)
+        throw new ExceptionInVPackage("Y Axis Parameter " + CloneableImpl.b() + " not found in current Configuration."); 
       TostringInBlPackage.e(paramaW.aL());
-      TostringInBlPackage.ExceptionInVPackage(be.BlInterfaceFoxtrot());
+      TostringInBlPackage.ExceptionInVPackage(CloneableImpl.BlInterfaceFoxtrot());
       TostringInBlPackage.ExceptionInVPackage(2);
-      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), aM.s() + ""));
+      double d = Double.parseDouble(ExceptionInVPackage(paramet, TostringInBlPackage.SComponentGolf(), Manager.s() + ""));
       TostringInBlPackage.ExceptionInVPackage(d);
       TostringInBlPackage.ExceptionInVPackage(paramet);
-      TostringInBlPackage.d("Max " + be.BlInterfaceFoxtrot());
+      TostringInBlPackage.d("Max " + CloneableImpl.BlInterfaceFoxtrot());
       return TostringInBlPackage;
     } 
     if (paramaW.aL().equals("std_Custom")) {
