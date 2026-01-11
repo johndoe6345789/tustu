@@ -291,6 +291,189 @@ class KeyGeneratorTab(QWidget):
             QMessageBox.information(self, "Copied", "Registration key copied to clipboard!")
 
 
+class EmailParserTab(QWidget):
+    """Tab for parsing registration info from email text"""
+    
+    def __init__(self):
+        super().__init__()
+        self.init_ui()
+    
+    def init_ui(self):
+        layout = QVBoxLayout()
+        
+        # Instructions
+        instructions = QLabel(
+            "Paste your registration email below. The system will automatically extract:\n"
+            "• First Name\n"
+            "• Last Name\n"
+            "• Email Address\n"
+            "• Registration Key\n"
+            "• Serial Number (if present)"
+        )
+        instructions.setWordWrap(True)
+        instructions.setStyleSheet("background-color: #e3f2fd; padding: 10px; border-radius: 5px;")
+        layout.addWidget(instructions)
+        
+        # Input area
+        input_group = QGroupBox("Paste Registration Email Here")
+        input_layout = QVBoxLayout()
+        
+        self.email_text = QTextEdit()
+        self.email_text.setPlaceholderText(
+            "[Registration]\n"
+            "First Name: John\n"
+            "Last Name: Doe\n"
+            "Registered email: john.doe@example.com\n"
+            "Serial Number: ABC123\n"
+            "Registration Key: XYZ789\n"
+            "[End Registration]"
+        )
+        self.email_text.setMinimumHeight(150)
+        input_layout.addWidget(self.email_text)
+        
+        input_group.setLayout(input_layout)
+        layout.addWidget(input_group)
+        
+        # Parse button
+        parse_btn = QPushButton("Parse Registration Information")
+        parse_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #2196F3;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            QPushButton:hover {
+                background-color: #1976D2;
+            }
+        """)
+        parse_btn.clicked.connect(self.parse_email)
+        layout.addWidget(parse_btn)
+        
+        # Output area
+        output_group = QGroupBox("Extracted Information")
+        output_layout = QFormLayout()
+        
+        self.first_name_output = QLineEdit()
+        self.first_name_output.setReadOnly(True)
+        output_layout.addRow("First Name:", self.first_name_output)
+        
+        self.last_name_output = QLineEdit()
+        self.last_name_output.setReadOnly(True)
+        output_layout.addRow("Last Name:", self.last_name_output)
+        
+        self.email_output = QLineEdit()
+        self.email_output.setReadOnly(True)
+        output_layout.addRow("Email:", self.email_output)
+        
+        self.serial_output = QLineEdit()
+        self.serial_output.setReadOnly(True)
+        output_layout.addRow("Serial Number:", self.serial_output)
+        
+        self.key_output = QTextEdit()
+        self.key_output.setReadOnly(True)
+        self.key_output.setMaximumHeight(60)
+        self.key_output.setFont(QFont("Courier", 11, QFont.Weight.Bold))
+        output_layout.addRow("Registration Key:", self.key_output)
+        
+        output_group.setLayout(output_layout)
+        layout.addWidget(output_group)
+        
+        # Copy button
+        copy_btn = QPushButton("Copy Registration Key")
+        copy_btn.clicked.connect(self.copy_key)
+        layout.addWidget(copy_btn)
+        
+        layout.addStretch()
+        self.setLayout(layout)
+    
+    def parse_email(self):
+        """Parse registration information from email text"""
+        text = self.email_text.toPlainText()
+        
+        if not text.strip():
+            QMessageBox.warning(self, "Empty Input", "Please paste the registration email text.")
+            return
+        
+        try:
+            # Parse the email text
+            in_registration = False
+            first_name = ""
+            last_name = ""
+            email = ""
+            serial = ""
+            reg_key = ""
+            
+            for line in text.split('\n'):
+                line = line.strip()
+                
+                if '[Registration]' in line or line.startswith('Registration'):
+                    in_registration = True
+                    continue
+                
+                if '[End Registration]' in line or not in_registration:
+                    if '[End Registration]' in line:
+                        break
+                    continue
+                
+                if in_registration:
+                    # Parse different fields
+                    if line.startswith('First Name') and ':' in line:
+                        first_name = line.split(':', 1)[1].strip()
+                    elif line.startswith('Last Name') and ':' in line:
+                        last_name = line.split(':', 1)[1].strip()
+                    elif 'email' in line.lower() and ':' in line:
+                        email = line.split(':', 1)[1].strip()
+                    elif 'Serial Number' in line and ':' in line:
+                        serial = line.split(':', 1)[1].strip()
+                    elif 'Registration Key' in line and ':' in line:
+                        key_part = line.split(':', 1)[1].strip()
+                        reg_key = key_part if key_part else reg_key
+                    elif reg_key and line and not ':' in line:
+                        # Continue multi-line registration key
+                        reg_key += line.strip()
+            
+            # Update output fields
+            self.first_name_output.setText(first_name)
+            self.last_name_output.setText(last_name)
+            self.email_output.setText(email)
+            self.serial_output.setText(serial)
+            self.key_output.setPlainText(reg_key)
+            
+            if first_name or last_name or email or reg_key:
+                self.key_output.setStyleSheet("background-color: #e8f5e9; color: #2e7d32;")
+                QMessageBox.information(
+                    self, 
+                    "Success", 
+                    "Registration information parsed successfully!"
+                )
+            else:
+                QMessageBox.warning(
+                    self,
+                    "No Data Found",
+                    "Could not find registration information in the pasted text.\n\n"
+                    "Make sure the text contains fields like:\n"
+                    "First Name: ...\n"
+                    "Last Name: ...\n"
+                    "Registered email: ...\n"
+                    "Registration Key: ..."
+                )
+        
+        except Exception as e:
+            QMessageBox.critical(self, "Parse Error", f"Error parsing email: {str(e)}")
+    
+    def copy_key(self):
+        """Copy registration key to clipboard"""
+        key = self.key_output.toPlainText()
+        if key:
+            QApplication.clipboard().setText(key)
+            QMessageBox.information(self, "Copied", "Registration key copied to clipboard!")
+        else:
+            QMessageBox.warning(self, "No Key", "No registration key to copy.")
+
+
 class MainWindow(QMainWindow):
     """Main application window"""
     
@@ -378,6 +561,10 @@ class MainWindow(QMainWindow):
             RegistrationKeyGenerator.generate_key_8param
         )
         tabs.addTab(tab4, "Full (8 Params)")
+        
+        # Tab 5: Email Parser
+        tab5 = EmailParserTab()
+        tabs.addTab(tab5, "Parse Email 📧")
         
         main_layout.addWidget(tabs)
         
