@@ -1,0 +1,18 @@
+package com.efiAnalytics.tuningwidgets.portEditor;
+
+import G.aN;
+
+class OutputChannelUpdateListener implements aN {
+  OutputChannelUpdateListener(C paramC) {}
+  
+  public void a(String paramString1, String paramString2) {
+    if (paramString1.equals(this.a.a.c()) && paramString2.equals(this.a.b.aL()))
+      this.a.b(); 
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/E.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */
