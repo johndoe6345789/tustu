@@ -1,4 +1,4 @@
-package bb;
+package business.button_builders;
 
 class BbComponentQuebec implements Runnable {
   BbComponentQuebec(p paramp, String paramString) {}

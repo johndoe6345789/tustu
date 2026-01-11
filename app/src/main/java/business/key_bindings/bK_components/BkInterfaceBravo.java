@@ -1,4 +1,4 @@
-package bK;
+package business.key_bindings.bK_components;
 
 class BkInterfaceBravo {
   byte[] a;

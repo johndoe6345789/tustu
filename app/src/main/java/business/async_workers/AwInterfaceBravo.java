@@ -1,4 +1,4 @@
-package aw;
+package business.async_workers;
 
 public interface AwInterfaceBravo {
   void a(double paramDouble1, double paramDouble2);

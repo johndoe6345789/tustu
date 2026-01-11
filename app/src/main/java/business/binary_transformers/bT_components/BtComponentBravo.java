@@ -1,4 +1,4 @@
-package bT;
+package business.binary_transformers.bT_components;
 
 import G.ManagerUsingArrayList;
 import bH.D;

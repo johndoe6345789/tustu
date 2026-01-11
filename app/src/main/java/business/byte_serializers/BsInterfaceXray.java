@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 class BsInterfaceXray extends Thread {
   boolean a = true;

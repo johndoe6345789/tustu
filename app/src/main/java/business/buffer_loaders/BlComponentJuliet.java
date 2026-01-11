@@ -1,4 +1,4 @@
-package bl;
+package business.buffer_loaders;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package bW;
+package business.byte_writers.bW_components;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;

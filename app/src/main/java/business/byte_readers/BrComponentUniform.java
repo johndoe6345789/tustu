@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import G.SerializableImpl;
 import java.awt.event.ActionEvent;

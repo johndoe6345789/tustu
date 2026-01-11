@@ -1,4 +1,4 @@
-package bO;
+package business.business_objects.bO_components;
 
 public class BoInterfaceHotel {
   private int a = 1;

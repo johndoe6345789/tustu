@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 public interface BxInterfaceYankee {
   boolean a();

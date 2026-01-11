@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;

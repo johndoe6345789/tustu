@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import java.awt.Component;
 import java.awt.Container;

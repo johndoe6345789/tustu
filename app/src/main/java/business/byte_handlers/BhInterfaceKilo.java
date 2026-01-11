@@ -1,4 +1,4 @@
-package bh;
+package business.byte_handlers;
 
 class BhInterfaceKilo implements Runnable {
   k(b paramb) {}

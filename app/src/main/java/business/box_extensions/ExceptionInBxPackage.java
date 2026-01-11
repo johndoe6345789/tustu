@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 public class ExceptionInBxPackage extends Exception {
   public ExceptionInBxPackage(String paramString) {

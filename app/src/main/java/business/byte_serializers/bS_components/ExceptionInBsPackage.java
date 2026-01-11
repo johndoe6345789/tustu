@@ -1,4 +1,4 @@
-package bS;
+package business.byte_serializers.bS_components;
 
 public class ExceptionInBsPackage extends Exception {
   private int a = 0;

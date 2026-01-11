@@ -1,4 +1,4 @@
-package bk;
+package business.key_bindings;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

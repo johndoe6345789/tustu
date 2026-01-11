@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class BtInterfaceAy implements Runnable {
   aY(aV paramaV) {}

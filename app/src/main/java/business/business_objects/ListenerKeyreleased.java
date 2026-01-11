@@ -1,4 +1,4 @@
-package bo;
+package business.business_objects;
 
 import bH.X;
 import java.awt.event.KeyEvent;

@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 import G.SerializableImpl;
 import G.GInterfaceAi;

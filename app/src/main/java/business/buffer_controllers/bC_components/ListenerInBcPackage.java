@@ -1,4 +1,4 @@
-package bC;
+package business.buffer_controllers.bC_components;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

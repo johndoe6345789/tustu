@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class ThreadedInBtPackage extends Thread {
   boolean a;

@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 class BfInterfaceJuliet implements Runnable {
   BfInterfaceJuliet(D paramD) {}

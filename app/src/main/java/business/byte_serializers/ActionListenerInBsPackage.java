@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class BtInterfaceBj implements Runnable {
   bj(bh parambh1, bh parambh2, int paramInt) {}

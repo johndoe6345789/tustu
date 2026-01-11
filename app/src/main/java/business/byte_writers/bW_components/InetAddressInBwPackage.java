@@ -1,4 +1,4 @@
-package bW;
+package business.byte_writers.bW_components;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

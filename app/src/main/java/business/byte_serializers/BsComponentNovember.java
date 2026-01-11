@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;

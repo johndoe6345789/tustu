@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 public class BlInterfaceMike {
   private int a = 0;

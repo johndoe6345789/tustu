@@ -1,4 +1,4 @@
-package ay;
+package business.array_adapters;
 
 public interface AyInterfaceEcho {
   void a(c paramc);

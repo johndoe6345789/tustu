@@ -1,4 +1,4 @@
-package by;
+package business.byte_arrays;
 
 import G.R;
 import bH.S;

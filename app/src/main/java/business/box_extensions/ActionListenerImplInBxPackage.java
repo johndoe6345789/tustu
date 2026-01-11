@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

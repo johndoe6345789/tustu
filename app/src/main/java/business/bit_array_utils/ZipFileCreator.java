@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

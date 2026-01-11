@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import aE.PropertiesExtension;
 import com.efiAnalytics.ui.BinTableView;

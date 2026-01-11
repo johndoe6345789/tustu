@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import G.R;
 import V.ExceptionInVPackage;

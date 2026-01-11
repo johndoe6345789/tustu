@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import java.net.MalformedURLException;
 import java.net.URL;

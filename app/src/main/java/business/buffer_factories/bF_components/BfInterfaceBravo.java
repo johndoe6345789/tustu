@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 public interface BfInterfaceBravo {
   void a(int paramInt1, int paramInt2, double paramDouble);

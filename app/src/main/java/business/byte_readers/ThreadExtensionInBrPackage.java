@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 class ThreadExtensionInBrPackage extends Thread {
   boolean a = true;

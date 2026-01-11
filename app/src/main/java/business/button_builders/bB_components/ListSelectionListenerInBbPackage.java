@@ -1,4 +1,4 @@
-package bB;
+package business.button_builders.bB_components;
 
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;

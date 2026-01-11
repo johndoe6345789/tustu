@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 class ThreadedInBgPackage implements Runnable {
   m(l paraml) {}

@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;

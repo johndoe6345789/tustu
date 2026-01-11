@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 import com.efiAnalytics.ui.eJ;
 import java.awt.Dimension;

@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package az;
+package business.action_zones;
 
 public class ExceptionExtensionInAzPackage extends Exception {
   public ExceptionExtensionInAzPackage(String paramString) {

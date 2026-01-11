@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class BtInterfaceBt extends Thread {
   boolean a = true;

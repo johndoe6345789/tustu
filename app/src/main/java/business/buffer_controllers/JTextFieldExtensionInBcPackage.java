@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 import javax.swing.BorderFactory;
 import javax.swing.JTextField;

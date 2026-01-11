@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 public interface BeInterfaceLima {
   void a();

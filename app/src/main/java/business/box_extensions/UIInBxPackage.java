@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 import bH.X;
 import bH.ab;

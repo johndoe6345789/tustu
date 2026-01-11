@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

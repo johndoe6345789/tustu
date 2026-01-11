@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import com.efiAnalytics.ui.eJ;
 import java.awt.Component;

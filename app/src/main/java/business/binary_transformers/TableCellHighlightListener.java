@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 public interface TableCellHighlightListener {
   void a(double paramDouble1, double paramDouble2);

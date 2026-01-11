@@ -1,4 +1,4 @@
-package bN;
+package business.notification_beans.bN_components;
 
 import java.util.ArrayList;
 import java.util.List;

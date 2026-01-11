@@ -1,4 +1,4 @@
-package bC;
+package business.buffer_controllers.bC_components;
 
 import javax.swing.AbstractListModel;
 

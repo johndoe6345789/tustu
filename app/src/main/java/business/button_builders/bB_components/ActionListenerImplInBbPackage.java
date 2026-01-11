@@ -1,4 +1,4 @@
-package bB;
+package business.button_builders.bB_components;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

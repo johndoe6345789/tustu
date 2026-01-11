@@ -1,4 +1,4 @@
-package bT;
+package business.binary_transformers.bT_components;
 
 import bN.BnInterfaceTango;
 import bS.BsInterfaceAlpha;

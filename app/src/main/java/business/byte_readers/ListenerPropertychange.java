@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

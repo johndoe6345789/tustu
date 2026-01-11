@@ -1,4 +1,4 @@
-package bJ;
+package business.job_runners.bJ_components;
 
 import java.util.Arrays;
 import org.apache.commons.math3.linear.MatrixUtils;

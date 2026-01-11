@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 public interface BxInterfaceSierra {
   void a(j paramj);

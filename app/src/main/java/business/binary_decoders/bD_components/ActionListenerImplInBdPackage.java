@@ -1,4 +1,4 @@
-package bD;
+package business.binary_decoders.bD_components;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package bM;
+package business.binary_mappers.bM_components;
 
 public BmInterfaceCharlielass BmInterfaceCharlie {
   protected int a = 0;

@@ -1,4 +1,4 @@
-package bI;
+package business.batch_importers.bI_components;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 import com.efiAnalytics.ui.fh;
 import javax.swing.event.TableModelEvent;

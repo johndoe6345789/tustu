@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

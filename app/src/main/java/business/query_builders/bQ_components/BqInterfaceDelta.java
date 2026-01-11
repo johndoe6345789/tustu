@@ -1,4 +1,4 @@
-package bQ;
+package business.query_builders.bQ_components;
 
 public interface BqInterfaceDelta {
   void a();

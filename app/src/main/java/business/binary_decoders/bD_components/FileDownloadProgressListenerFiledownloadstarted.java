@@ -1,4 +1,4 @@
-package bD;
+package business.binary_decoders.bD_components;
 
 import W.WInterfaceAa;
 import bH.D;

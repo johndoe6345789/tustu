@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import G.SerializableImplExceptionprintstacktrace;
 import java.awt.event.ActionEvent;

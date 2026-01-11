@@ -1,4 +1,4 @@
-package bD;
+package business.binary_decoders.bD_components;
 
 import com.efiAnalytics.remotefileaccess.RemoteFileDescriptor;
 import com.efiAnalytics.ui.eJ;

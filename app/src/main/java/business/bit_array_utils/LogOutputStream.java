@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 public interface s {
   void a(String paramString, Exception paramException, Object paramObject);

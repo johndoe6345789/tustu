@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 import java.awt.Component;
 import java.awt.Container;

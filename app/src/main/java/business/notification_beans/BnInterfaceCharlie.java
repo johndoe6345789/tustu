@@ -1,4 +1,4 @@
-package bn;
+package business.notification_beans;
 
 import G.R;
 import G.EqualsInGPackage;

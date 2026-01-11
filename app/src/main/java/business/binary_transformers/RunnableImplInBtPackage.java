@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class RunnableImplInBtPackage implements Runnable {
   aG(an paraman, int paramInt) {}

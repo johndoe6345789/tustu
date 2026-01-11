@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 import ae.AeInterfaceTango;
 import java.awt.BorderLayout;

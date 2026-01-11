@@ -1,4 +1,4 @@
-package bk;
+package business.key_bindings;
 
 import W.WInterfaceAa;
 import aP.NetworkHashMap;

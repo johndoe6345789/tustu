@@ -1,4 +1,4 @@
-package ay;
+package business.array_adapters;
 
 public interface AyComponentOscar {
   void a(n paramn);

@@ -1,4 +1,4 @@
-package az;
+package business.action_zones;
 
 public class AzComponentEcho extends Exception {
   public AzComponentEcho(String paramString) {

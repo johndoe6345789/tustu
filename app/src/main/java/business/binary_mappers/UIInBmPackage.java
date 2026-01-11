@@ -1,4 +1,4 @@
-package bm;
+package business.binary_mappers;
 
 import G.R;
 import G.GComponentBo;

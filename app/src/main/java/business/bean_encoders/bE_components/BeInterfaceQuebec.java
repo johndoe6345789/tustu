@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 public interface BeInterfaceQuebec {
   double getX();

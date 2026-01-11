@@ -1,4 +1,4 @@
-package av;
+package business.abstract_views;
 
 class ThreadedInAvPackage extends Thread {
   boolean a = true;

@@ -1,4 +1,4 @@
-package bz;
+package business.buffer_zones;
 
 import java.awt.Component;
 import java.awt.Container;

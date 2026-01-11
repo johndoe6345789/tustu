@@ -1,4 +1,4 @@
-package bJ;
+package business.job_runners.bJ_components;
 
 public interface BjInterfaceCharlie {
   void a(double[] paramArrayOfdouble1, double[] paramArrayOfdouble2);

@@ -1,4 +1,4 @@
-package bI;
+package business.batch_importers.bI_components;
 
 public class BiInterfaceGolf {
   private static final int[] a = new int[] { 

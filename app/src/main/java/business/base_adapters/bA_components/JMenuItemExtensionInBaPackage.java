@@ -1,4 +1,4 @@
-package bA;
+package business.base_adapters.bA_components;
 
 import com.efiAnalytics.ui.bs;
 import javax.swing.JMenuItem;

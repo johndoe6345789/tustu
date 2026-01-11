@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 public class BeComponentBravo {
   public static String a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_ ";

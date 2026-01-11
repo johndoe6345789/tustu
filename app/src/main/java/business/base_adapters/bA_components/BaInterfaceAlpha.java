@@ -1,4 +1,4 @@
-package bA;
+package business.base_adapters.bA_components;
 
 public interface BaInterfaceAlpha {
   void a(String paramString);

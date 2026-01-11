@@ -1,4 +1,4 @@
-package bo;
+package business.business_objects;
 
 import com.efiAnalytics.ui.NumericTextField;
 import java.awt.event.FocusEvent;

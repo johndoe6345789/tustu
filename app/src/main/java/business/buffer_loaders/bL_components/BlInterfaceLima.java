@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 public interface BlInterfaceLima {
   void a(m paramm);

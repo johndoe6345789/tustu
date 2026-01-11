@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import aP.NetworkHashMap;
 import ai.EqualsInAiPackage;

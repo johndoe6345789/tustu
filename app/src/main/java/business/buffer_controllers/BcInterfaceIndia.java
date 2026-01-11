@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 interface BcInterfaceIndia {
   Object a();

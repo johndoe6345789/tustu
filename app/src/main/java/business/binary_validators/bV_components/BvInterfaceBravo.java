@@ -1,4 +1,4 @@
-package bV;
+package business.binary_validators.bV_components;
 
 public interface BvInterfaceBravo {
   void a(long paramLong1, long paramLong2);

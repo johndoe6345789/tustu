@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 import com.efiAnalytics.ui.eJ;
 import java.awt.Point;

@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import G.R;
 import G.GInterfaceAi;

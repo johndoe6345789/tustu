@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ListSelectionEvent;

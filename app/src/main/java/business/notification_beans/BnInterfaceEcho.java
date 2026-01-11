@@ -1,4 +1,4 @@
-package bn;
+package business.notification_beans;
 
 public class BnInterfaceEcho extends Exception {
   public BnInterfaceEcho(String paramString) {

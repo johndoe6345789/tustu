@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import javax.swing.BorderFactory;
 import javax.swing.JTextField;

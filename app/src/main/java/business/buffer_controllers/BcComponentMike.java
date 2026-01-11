@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 public interface BcComponentMike {
   void a(String paramString, Object paramObject);

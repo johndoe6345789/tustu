@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 class BwInterfaceIndia {
   String a;

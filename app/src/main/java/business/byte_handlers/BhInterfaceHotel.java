@@ -1,4 +1,4 @@
-package bh;
+package business.byte_handlers;
 
 class BhInterfaceHotel implements Runnable {
   h(b paramb) {}

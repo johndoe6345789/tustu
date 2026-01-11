@@ -1,4 +1,4 @@
-package bB;
+package business.button_builders.bB_components;
 
 public class BbInterfaceAlpha implements r {
   private double a = Double.NaN;

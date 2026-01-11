@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import G.Manager;
 import G.GInterfaceAn;

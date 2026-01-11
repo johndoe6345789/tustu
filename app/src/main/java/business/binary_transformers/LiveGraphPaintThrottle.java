@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class LiveGraphPaintThrottle extends Thread {
   long a = 120L;

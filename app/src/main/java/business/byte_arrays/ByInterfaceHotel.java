@@ -1,4 +1,4 @@
-package by;
+package business.byte_arrays;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

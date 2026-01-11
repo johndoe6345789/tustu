@@ -1,4 +1,4 @@
-package bU;
+package business.buffer_utilities.bU_components;
 
 import G.R;
 import G.Manager;

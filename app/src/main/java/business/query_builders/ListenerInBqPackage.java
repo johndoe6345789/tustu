@@ -1,4 +1,4 @@
-package bq;
+package business.query_builders;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;

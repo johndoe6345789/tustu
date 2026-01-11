@@ -1,4 +1,4 @@
-package by;
+package business.byte_arrays;
 
 public class ByInterfaceLima {
   private String a;

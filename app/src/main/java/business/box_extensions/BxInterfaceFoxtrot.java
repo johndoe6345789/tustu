@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 class BxInterfaceFoxtrot implements y {
   f(c paramc) {}

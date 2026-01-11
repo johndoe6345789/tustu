@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import java.awt.KeyEventDispatcher;
 import java.awt.event.KeyEvent;

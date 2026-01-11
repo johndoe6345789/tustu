@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

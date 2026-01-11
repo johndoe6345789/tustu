@@ -1,4 +1,4 @@
-package bS;
+package business.byte_serializers.bS_components;
 
 public interface BsInterfaceQuebec {
   void a(r paramr);

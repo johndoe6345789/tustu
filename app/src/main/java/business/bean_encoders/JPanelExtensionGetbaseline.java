@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import java.awt.Component;
 import javax.swing.JPanel;

@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class ThreadExtensionInBtPackage extends Thread {
   long a = Math.round(1000.0D / x.a());

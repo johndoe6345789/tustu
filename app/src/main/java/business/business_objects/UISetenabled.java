@@ -1,4 +1,4 @@
-package bo;
+package business.business_objects;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;

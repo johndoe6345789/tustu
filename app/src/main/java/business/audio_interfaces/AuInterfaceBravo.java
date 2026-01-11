@@ -1,4 +1,4 @@
-package au;
+package business.audio_interfaces;
 
 import G.GComponentCd;
 import G.GComponentCe;

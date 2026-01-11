@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import com.efiAnalytics.ui.NumericTextField;
 import java.awt.event.KeyEvent;

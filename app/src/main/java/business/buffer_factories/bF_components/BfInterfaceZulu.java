@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 class BfInterfaceZulu implements x {
   z(y paramy) {}

@@ -1,4 +1,4 @@
-package bb;
+package business.button_builders;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

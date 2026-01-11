@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 class BgComponentSierra implements Runnable {
   s(q paramq) {}

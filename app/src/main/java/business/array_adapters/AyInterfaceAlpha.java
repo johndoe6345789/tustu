@@ -1,4 +1,4 @@
-package ay;
+package business.array_adapters;
 
 import java.util.ArrayList;
 import java.util.List;

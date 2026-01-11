@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import com.efiAnalytics.ui.fp;
 import java.awt.event.ActionEvent;

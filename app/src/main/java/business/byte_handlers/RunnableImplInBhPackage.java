@@ -1,4 +1,4 @@
-package bh;
+package business.byte_handlers;
 
 class RunnableImplInBhPackage implements Runnable {
   e(b paramb) {}

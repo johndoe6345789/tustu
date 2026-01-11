@@ -1,4 +1,4 @@
-package bo;
+package business.business_objects;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

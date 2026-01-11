@@ -1,4 +1,4 @@
-package bb;
+package business.button_builders;
 
 import G.GInterfaceBu;
 import aP.ThreadedJFrameIsoptimizeddrawingenabled;

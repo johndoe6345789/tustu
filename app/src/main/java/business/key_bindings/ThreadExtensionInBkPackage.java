@@ -1,4 +1,4 @@
-package bk;
+package business.key_bindings;
 
 class ThreadExtensionInBkPackage extends Thread {
   boolean a = true;

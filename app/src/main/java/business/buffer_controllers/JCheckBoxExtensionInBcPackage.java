@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 import bH.D;
 import javax.swing.JCheckBox;

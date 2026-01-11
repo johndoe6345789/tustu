@@ -1,4 +1,4 @@
-package ay;
+package business.array_adapters;
 
 class AyComponentMike extends Thread {
   AyComponentMike(l paraml, String paramString) {

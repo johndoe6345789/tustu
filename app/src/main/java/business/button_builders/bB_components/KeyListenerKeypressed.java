@@ -1,4 +1,4 @@
-package bB;
+package business.button_builders.bB_components;
 
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;

@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 import V.ExceptionInVPackage;
 import bH.D;

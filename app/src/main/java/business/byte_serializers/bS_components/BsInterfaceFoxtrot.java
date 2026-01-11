@@ -1,4 +1,4 @@
-package bS;
+package business.byte_serializers.bS_components;
 
 class BsInterfaceFoxtrot {
   private int b = 0;

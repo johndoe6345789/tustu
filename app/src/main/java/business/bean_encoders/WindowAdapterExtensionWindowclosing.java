@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import com.efiAnalytics.ui.bV;
 import java.awt.event.WindowAdapter;

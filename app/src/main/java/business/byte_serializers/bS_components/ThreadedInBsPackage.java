@@ -1,4 +1,4 @@
-package bS;
+package business.byte_serializers.bS_components;
 
 import bN.BnInterfaceOscar;
 import java.util.logging.Level;

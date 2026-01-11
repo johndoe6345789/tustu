@@ -1,4 +1,4 @@
-package bI;
+package business.batch_importers.bI_components;
 
 public class BiInterfaceEcho {
   int a = -1;

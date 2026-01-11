@@ -1,4 +1,4 @@
-package bi;
+package business.batch_importers;
 
 class ThreadExtensionInBiPackage extends Thread {
   f(a parama) {}

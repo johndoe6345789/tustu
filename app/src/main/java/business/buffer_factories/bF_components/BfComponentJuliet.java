@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

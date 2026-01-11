@@ -1,4 +1,4 @@
-package bG;
+package business.binding_generators.bG_components;
 
 public interface BgInterfaceEcho {
   void d();

@@ -1,4 +1,4 @@
-package bO;
+package business.business_objects.bO_components;
 
 public class ExceptionInBoPackage extends Exception {
   public ExceptionInBoPackage(String paramString) {

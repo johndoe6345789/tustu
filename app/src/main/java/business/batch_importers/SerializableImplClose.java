@@ -1,4 +1,4 @@
-package bi;
+package business.batch_importers;
 
 import G.R;
 import G.T;

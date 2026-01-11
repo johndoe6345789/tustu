@@ -1,4 +1,4 @@
-package by;
+package business.byte_arrays;
 
 import java.util.ArrayList;
 import java.util.Collections;

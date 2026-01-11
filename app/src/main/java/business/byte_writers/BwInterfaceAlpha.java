@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.calculators.calculator.Calculator;

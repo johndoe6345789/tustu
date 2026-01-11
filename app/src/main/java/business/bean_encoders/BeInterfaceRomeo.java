@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 public class BeInterfaceRomeo {
   public static int a = 0;

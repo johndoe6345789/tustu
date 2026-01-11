@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import com.efiAnalytics.ui.bt;
 import com.efiAnalytics.ui.eM;

@@ -1,4 +1,4 @@
-package bi;
+package business.batch_importers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

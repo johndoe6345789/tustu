@@ -1,4 +1,4 @@
-package bW;
+package business.byte_writers.bW_components;
 
 enum EnumInBwPackage {
   a, b, c, d, e, f, g, h;

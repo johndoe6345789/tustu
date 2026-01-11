@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import ax.ArrayListUsingPattern;
 import ax.ExceptionInAxPackage;

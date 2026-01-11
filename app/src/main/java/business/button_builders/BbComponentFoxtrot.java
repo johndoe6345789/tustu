@@ -1,4 +1,4 @@
-package bb;
+package business.button_builders;
 
 class BbComponentFoxtrot extends Thread {
   f(d paramd) {}

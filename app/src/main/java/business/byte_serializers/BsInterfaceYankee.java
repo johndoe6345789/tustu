@@ -1,4 +1,4 @@
-package bs;
+package business.byte_serializers;
 
 import bH.D;
 

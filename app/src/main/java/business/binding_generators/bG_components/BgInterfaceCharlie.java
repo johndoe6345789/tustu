@@ -1,4 +1,4 @@
-package bG;
+package business.binding_generators.bG_components;
 
 import G.R;
 import G.Manager;

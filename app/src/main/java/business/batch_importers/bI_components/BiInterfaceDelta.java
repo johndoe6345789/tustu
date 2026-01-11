@@ -1,4 +1,4 @@
-package bI;
+package business.batch_importers.bI_components;
 
 import bH.D;
 import bH.q;

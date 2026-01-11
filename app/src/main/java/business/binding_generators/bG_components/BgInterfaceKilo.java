@@ -1,4 +1,4 @@
-package bG;
+package business.binding_generators.bG_components;
 
 public class BgInterfaceKilo {
   private double a = Double.NaN;

@@ -1,4 +1,4 @@
-package ap;
+package business.app_interfaces;
 
 import IOInIPackage.IComponentGolf;
 import IOInIPackage.IOInIPackage;

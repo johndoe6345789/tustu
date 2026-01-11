@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 public interface BtInterfaceBg {
   void c(boolean paramBoolean);

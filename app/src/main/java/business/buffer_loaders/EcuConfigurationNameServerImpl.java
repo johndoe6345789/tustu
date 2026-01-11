@@ -1,4 +1,4 @@
-package bl;
+package business.buffer_loaders;
 
 import G.T;
 import com.efiAnalytics.plugin.ecu.servers.EcuConfigurationNameServer;

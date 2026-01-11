@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bH.D;

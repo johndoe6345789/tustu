@@ -1,4 +1,4 @@
-package bO;
+package business.business_objects.bO_components;
 
 public class BoInterfaceAlpha {
   private final f a = new f();

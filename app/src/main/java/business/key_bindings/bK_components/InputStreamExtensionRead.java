@@ -1,4 +1,4 @@
-package bK;
+package business.key_bindings.bK_components;
 
 import java.io.IOException;
 import java.io.InputStream;

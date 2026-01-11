@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;

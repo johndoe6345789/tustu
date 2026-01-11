@@ -1,4 +1,4 @@
-package bO;
+package business.business_objects.bO_components;
 
 import bH.c;
 

@@ -1,4 +1,4 @@
-package bD;
+package business.binary_decoders.bD_components;
 
 import bH.D;
 import com.efiAnalytics.remotefileaccess.DirectoryFiles;

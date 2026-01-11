@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 public interface BxInterfaceKilo {
   String a(String paramString);

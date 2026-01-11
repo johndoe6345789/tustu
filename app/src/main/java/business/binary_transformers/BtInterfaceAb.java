@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import com.efiAnalytics.apps.ts.dashboard.Gauge;
 import com.efiAnalytics.ui.eg;

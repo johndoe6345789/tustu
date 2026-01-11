@@ -1,4 +1,4 @@
-package ba;
+package business.base_adapters;
 
 import G.R;
 import W.B;

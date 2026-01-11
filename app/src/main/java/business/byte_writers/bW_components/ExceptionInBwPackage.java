@@ -1,4 +1,4 @@
-package bW;
+package business.byte_writers.bW_components;
 
 public class ExceptionInBwPackage extends IllegalArgumentException {
   public ExceptionInBwPackage() {}

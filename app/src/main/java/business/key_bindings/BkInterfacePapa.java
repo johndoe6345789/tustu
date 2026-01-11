@@ -1,4 +1,4 @@
-package bk;
+package business.key_bindings;
 
 import aI.ExceptionExtensionInAiPackage;
 import com.efiAnalytics.ui.bV;

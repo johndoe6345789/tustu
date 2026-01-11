@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 public class BlInterfacePapa {
   private double a = Double.NaN;

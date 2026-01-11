@@ -1,4 +1,4 @@
-package bM;
+package business.binary_mappers.bM_components;
 
 import G.R;
 import java.util.ArrayList;

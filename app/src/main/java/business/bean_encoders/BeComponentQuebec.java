@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 class BeComponentQuebec {
   String a;

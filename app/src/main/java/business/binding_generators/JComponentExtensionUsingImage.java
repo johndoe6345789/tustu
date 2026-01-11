@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 import java.awt.Graphics;
 import java.awt.Image;

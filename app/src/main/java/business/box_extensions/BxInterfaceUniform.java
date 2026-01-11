@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/u.class

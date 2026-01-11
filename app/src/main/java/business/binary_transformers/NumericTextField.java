@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import com.efiAnalytics.ui.NumericTextField;
 import java.awt.Dimension;

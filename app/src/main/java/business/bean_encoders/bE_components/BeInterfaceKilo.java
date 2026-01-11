@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 public interface BeInterfaceKilo {
   void a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4);

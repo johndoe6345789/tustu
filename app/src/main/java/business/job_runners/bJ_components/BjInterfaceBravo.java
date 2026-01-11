@@ -1,4 +1,4 @@
-package bJ;
+package business.job_runners.bJ_components;
 
 public class BjInterfaceBravo extends a {
   protected double[] a(double paramDouble) {

@@ -1,4 +1,4 @@
-package bz;
+package business.buffer_zones;
 
 import bH.D;
 import com.efiAnalytics.apps.ts.dashboard.x;

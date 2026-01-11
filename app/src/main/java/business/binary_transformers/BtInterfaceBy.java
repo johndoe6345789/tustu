@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 class BtInterfaceBy implements Runnable {
   by(bu parambu) {}

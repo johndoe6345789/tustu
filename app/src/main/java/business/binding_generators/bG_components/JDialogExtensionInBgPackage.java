@@ -1,4 +1,4 @@
-package bG;
+package business.binding_generators.bG_components;
 
 import W.WInterfaceAp;
 import com.efiAnalytics.ui.bV;

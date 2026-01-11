@@ -1,4 +1,4 @@
-package bg;
+package business.binding_generators;
 
 import G.GInterfaceBf;
 import java.awt.BorderLayout;

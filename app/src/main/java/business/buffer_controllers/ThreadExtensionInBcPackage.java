@@ -1,4 +1,4 @@
-package bc;
+package business.buffer_controllers;
 
 import java.awt.Color;
 import java.util.logging.Level;

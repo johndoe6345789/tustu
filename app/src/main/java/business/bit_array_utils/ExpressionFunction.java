@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package bl;
+package business.buffer_loaders;
 
 import G.CloneableImpl;
 import com.efiAnalytics.plugin.ecu.UiTable;

@@ -1,4 +1,4 @@
-package bt;
+package business.binary_transformers;
 
 import java.awt.Color;
 import java.awt.Component;

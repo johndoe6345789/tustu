@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 import java.awt.Toolkit;
 import javax.swing.text.AttributeSet;

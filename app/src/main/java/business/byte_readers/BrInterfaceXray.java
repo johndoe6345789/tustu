@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;

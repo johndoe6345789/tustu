@@ -1,4 +1,4 @@
-package ay;
+package business.array_adapters;
 
 public interface AyComponentPapa {
   void c(c paramc);

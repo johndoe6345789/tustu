@@ -1,4 +1,4 @@
-package bq;
+package business.query_builders;
 
 import com.efiAnalytics.ui.bq;
 import x.JMenuExtensionSetpopupmenuvisible;

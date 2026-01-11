@@ -1,4 +1,4 @@
-package bQ;
+package business.query_builders.bQ_components;
 
 import G.f;
 import bN.BnInterfaceKilo;

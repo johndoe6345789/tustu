@@ -1,4 +1,4 @@
-package bq;
+package business.query_builders;
 
 import bA.JCheckBoxMenuItemExtension;
 import bA.BaInterfaceFoxtrot;

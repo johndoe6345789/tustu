@@ -1,4 +1,4 @@
-package bR;
+package business.byte_readers.bR_components;
 
 import bH.D;
 import bN.BnInterfaceKilo;

@@ -1,4 +1,4 @@
-package bl;
+package business.buffer_loaders;
 
 import G.GComponentCq;
 import com.efiAnalytics.plugin.ecu.OutputChannelClient;

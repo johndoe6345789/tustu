@@ -1,4 +1,4 @@
-package bM;
+package business.binary_mappers.bM_components;
 
 public class BmInterfaceAlpha {
   private double a;

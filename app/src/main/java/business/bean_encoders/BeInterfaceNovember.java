@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

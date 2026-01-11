@@ -1,4 +1,4 @@
-package bF;
+package business.buffer_factories.bF_components;
 
 class RunnableImplInBfPackage implements Runnable {
   RunnableImplInBfPackage(D paramD, int paramInt1, int paramInt2) {}

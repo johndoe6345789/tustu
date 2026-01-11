@@ -1,4 +1,4 @@
-package bN;
+package business.notification_beans.bN_components;
 
 import G.J;
 import G.f;

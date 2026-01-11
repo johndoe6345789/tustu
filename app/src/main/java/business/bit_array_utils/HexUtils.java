@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import com.efiAnalytics.ui.eJ;
 import java.awt.Color;

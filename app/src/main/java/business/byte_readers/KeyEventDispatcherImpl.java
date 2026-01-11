@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import java.awt.KeyEventDispatcher;
 import java.awt.event.KeyEvent;

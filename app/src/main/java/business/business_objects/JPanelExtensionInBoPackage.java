@@ -1,4 +1,4 @@
-package bo;
+package business.business_objects;
 
 import G.R;
 import G.Manager;

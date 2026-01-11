@@ -1,4 +1,4 @@
-package bL;
+package business.buffer_loaders.bL_components;
 
 class BlInterfaceHotel {
   private double b = Double.NaN;

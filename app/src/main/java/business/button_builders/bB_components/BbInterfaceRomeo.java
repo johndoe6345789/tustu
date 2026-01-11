@@ -1,4 +1,4 @@
-package bB;
+package business.button_builders.bB_components;
 
 public interface BbInterfaceRomeo {
   String e();

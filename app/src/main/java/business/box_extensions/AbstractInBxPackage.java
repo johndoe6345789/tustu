@@ -1,4 +1,4 @@
-package bx;
+package business.box_extensions;
 
 import java.util.ArrayList;
 import java.util.List;

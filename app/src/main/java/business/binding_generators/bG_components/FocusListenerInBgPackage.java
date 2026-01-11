@@ -1,4 +1,4 @@
-package bG;
+package business.binding_generators.bG_components;
 
 import com.efiAnalytics.ui.NumericTextField;
 import java.awt.event.FocusEvent;

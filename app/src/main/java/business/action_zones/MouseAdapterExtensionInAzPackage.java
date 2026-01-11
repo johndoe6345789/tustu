@@ -1,4 +1,4 @@
-package az;
+package business.action_zones;
 
 import com.efiAnalytics.ui.aN;
 import java.awt.event.MouseAdapter;

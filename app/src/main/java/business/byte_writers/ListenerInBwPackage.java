@@ -1,4 +1,4 @@
-package bw;
+package business.byte_writers;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

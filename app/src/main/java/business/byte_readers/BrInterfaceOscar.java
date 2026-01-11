@@ -1,4 +1,4 @@
-package br;
+package business.byte_readers;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

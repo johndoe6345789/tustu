@@ -1,4 +1,4 @@
-package bA;
+package business.base_adapters.bA_components;
 
 import c.CInterfaceEcho;
 import com.efiAnalytics.ui.ci;

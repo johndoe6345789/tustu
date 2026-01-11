@@ -1,4 +1,4 @@
-package bN;
+package business.notification_beans.bN_components;
 
 public class ExceptionExtensionInBnPackage extends Exception {
   private byte[] a;

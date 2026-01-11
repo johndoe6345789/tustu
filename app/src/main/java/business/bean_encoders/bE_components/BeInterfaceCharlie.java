@@ -1,4 +1,4 @@
-package bE;
+package business.bean_encoders.bE_components;
 
 public BeInterfaceCharlielass BeInterfaceCharlie extends b {
   public BeInterfaceCharlie(double paramDouble1, double paramDouble2, double paramDouble3) {

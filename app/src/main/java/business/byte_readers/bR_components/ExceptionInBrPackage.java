@@ -1,4 +1,4 @@
-package bR;
+package business.byte_readers.bR_components;
 
 public class ExceptionInBrPackage extends Exception {
   private int a;

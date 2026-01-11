@@ -1,4 +1,4 @@
-package bS;
+package business.byte_serializers.bS_components;
 
 import bN.BnInterfaceFoxtrot;
 import bN.BnInterfaceGolf;

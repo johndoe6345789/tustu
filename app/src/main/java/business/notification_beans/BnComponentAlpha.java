@@ -1,4 +1,4 @@
-package bn;
+package business.notification_beans;
 
 import java.awt.Component;
 

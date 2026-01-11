@@ -1,4 +1,4 @@
-package be;
+package business.bean_encoders;
 
 public interface BeInterfaceSierra {
   R a(String paramString);

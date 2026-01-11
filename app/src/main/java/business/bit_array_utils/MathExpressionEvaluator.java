@@ -1,4 +1,4 @@
-package bH;
+package business.bit_array_utils;
 
 import W.j;
 import bJ.BjInterfaceBravo;
