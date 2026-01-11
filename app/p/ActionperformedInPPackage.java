@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionperformedInPPackage implements ActionListener {
-  L(J paramJ) {}
+  ActionperformedInPPackage(J paramJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = J.a(this.a, "Are you sure your want to delete the selected User Action?");

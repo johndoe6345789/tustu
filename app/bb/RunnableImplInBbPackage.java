@@ -4,7 +4,7 @@ import bH.D;
 import java.awt.Cursor;
 
 class RunnableImplInBbPackage implements Runnable {
-  J(I paramI) {}
+  RunnableImplInBbPackage(I paramI) {}
   
   public void run() {
     this.a.b.getGlassPane().setCursor(Cursor.getDefaultCursor());

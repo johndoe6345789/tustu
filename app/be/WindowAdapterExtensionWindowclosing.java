@@ -7,7 +7,7 @@ import javax.swing.JDialog;
 import s.SComponentGolf;
 
 class WindowAdapterExtensionWindowclosing extends WindowAdapter {
-  I(C paramC, JDialog paramJDialog) {}
+  WindowAdapterExtensionWindowclosing(C paramC, JDialog paramJDialog) {}
   
   public void windowClosing(WindowEvent paramWindowEvent) {
     if (this.b.c != null && this.b.c.c() && bV.a(SComponentGolf.b("There are unsaved changes, Save them Now?"), this.a, true))

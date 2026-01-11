@@ -18,7 +18,7 @@ import r.ExceptionInVPackage;
 class DeviceSearchTableModel extends DefaultTableModel {
   Map ExceptionInVPackage = new HashMap<>();
   
-  A(r paramr) {}
+  DeviceSearchTableModel(r paramr) {}
   
   public boolean isCellEditable(int paramInt1, int paramInt2) {
     return (paramInt2 == 2);

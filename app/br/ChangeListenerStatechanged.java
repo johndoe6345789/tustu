@@ -7,7 +7,7 @@ import javax.swing.event.ChangeListener;
 import n.NComponentAlpha;
 
 class ChangeListenerStatechanged implements ChangeListener {
-  M(K paramK) {}
+  ChangeListenerStatechanged(K paramK) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     Component component = this.NComponentAlpha.getSelectedComponent();

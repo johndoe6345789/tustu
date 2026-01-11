@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TuningViewLoaderThread extends Thread {
-  A(z paramz, ArrayList paramArrayList, b paramb) {}
+  TuningViewLoaderThread(z paramz, ArrayList paramArrayList, b paramb) {}
   
   public void run() {
     try {

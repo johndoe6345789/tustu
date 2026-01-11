@@ -5,7 +5,7 @@ class BeComponentQuebec {
   
   String b;
   
-  Q(M paramM) {}
+  BeComponentQuebec(M paramM) {}
 }
 
 

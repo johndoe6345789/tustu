@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class ActionListenerInPPackage implements ActionListener {
-  G(D paramD) {}
+  ActionListenerInPPackage(D paramD) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.f.getSelectedItem() != null) {

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class GaugeClusterRefreshActionListener implements ActionListener {
-  A(x paramx) {}
+  GaugeClusterRefreshActionListener(x paramx) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.t();

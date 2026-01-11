@@ -1,7 +1,7 @@
 package bF;
 
 class BfInterfaceJuliet implements Runnable {
-  J(D paramD) {}
+  BfInterfaceJuliet(D paramD) {}
   
   public void run() {
     this.a.q();

@@ -6,7 +6,7 @@ import java.awt.event.FocusListener;
 class ArrayEditorFocusListener implements FocusListener {
   int a = -1;
   
-  S(R paramR, int paramInt) {
+  ArrayEditorFocusListener(R paramR, int paramInt) {
     this.a = paramInt;
   }
   

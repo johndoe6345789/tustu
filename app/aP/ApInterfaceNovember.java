@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApInterfaceNovember extends Thread {
-  N(M paramM, int paramInt) {}
+  ApInterfaceNovember(M paramM, int paramInt) {}
   
   public void run() {
     try {

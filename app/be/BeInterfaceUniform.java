@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceUniform implements ActionListener {
-  U(T paramT) {}
+  BeInterfaceUniform(T paramT) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     fp.a(this.a.b, this.a.c.isSelected());

@@ -7,7 +7,7 @@ import com.efiAnalytics.ui.PropertiesExtension;
 class ApInterfaceEcho implements PropertiesExtension {
   String PropertiesExtension = null;
   
-  E(f paramf, String paramString) {
+  ApInterfaceEcho(f paramf, String paramString) {
     this.PropertiesExtension = paramString;
   }
   

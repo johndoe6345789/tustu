@@ -9,7 +9,7 @@ class CommDebugLogEntry {
   
   private String e;
   
-  O(J paramJ) {
+  CommDebugLogEntry(J paramJ) {
     this.e = J.b(paramJ);
   }
   

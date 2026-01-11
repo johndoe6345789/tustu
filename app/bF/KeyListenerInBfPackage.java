@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class KeyListenerInBfPackage implements KeyListener {
-  M(L paramL, D paramD) {}
+  KeyListenerInBfPackage(L paramL, D paramD) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     a(paramKeyEvent);

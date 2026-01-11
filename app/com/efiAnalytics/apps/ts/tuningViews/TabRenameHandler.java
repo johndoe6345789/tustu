@@ -7,7 +7,7 @@ class TabRenameHandler implements m {
   
   String b;
   
-  B(z paramz, J paramJ, String paramString) {
+  TabRenameHandler(z paramz, J paramJ, String paramString) {
     this.a = paramJ;
     this.b = paramString;
   }

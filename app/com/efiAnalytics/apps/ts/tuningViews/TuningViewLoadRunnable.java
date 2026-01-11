@@ -3,7 +3,7 @@ package com.efiAnalytics.apps.ts.tuningViews;
 import javax.swing.SwingUtilities;
 
 class TuningViewLoadRunnable implements Runnable {
-  D(C paramC) {}
+  TuningViewLoadRunnable(C paramC) {}
   
   public void run() {
     if (this.a.a == null)

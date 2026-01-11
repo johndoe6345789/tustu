@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrInterfaceYankee implements ActionListener {
-  Y(P paramP) {}
+  BrInterfaceYankee(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(this.a.b.n());

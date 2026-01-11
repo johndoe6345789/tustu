@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceMike implements ActionListener {
-  M(J paramJ) {}
+  PInterfaceMike(J paramJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     J.c(this.a);

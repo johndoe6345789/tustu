@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrInterfaceTango implements ActionListener {
-  T(P paramP) {}
+  BrInterfaceTango(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();

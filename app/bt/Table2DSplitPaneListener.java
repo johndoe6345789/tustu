@@ -4,7 +4,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 class Table2DSplitPaneListener implements PropertyChangeListener {
-  Y(W paramW) {}
+  Table2DSplitPaneListener(W paramW) {}
   
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     int i = this.a.a.getDividerLocation();

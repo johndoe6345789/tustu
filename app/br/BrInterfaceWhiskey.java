@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 class BrInterfaceWhiskey implements ActionListener {
-  W(P paramP) {}
+  BrInterfaceWhiskey(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     P.a(this.a, (JComponent)paramActionEvent.getSource());

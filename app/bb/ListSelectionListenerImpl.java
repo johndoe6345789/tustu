@@ -4,7 +4,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerImpl implements ListSelectionListener {
-  H(E paramE) {}
+  ListSelectionListenerImpl(E paramE) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     K k = this.a.h.getSelectedValue();

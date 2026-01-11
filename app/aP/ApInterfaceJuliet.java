@@ -18,7 +18,7 @@ class ApInterfaceJuliet extends Thread {
   
   M c;
   
-  J(f paramf, File paramFile, String paramString, M paramM) {
+  ApInterfaceJuliet(f paramf, File paramFile, String paramString, M paramM) {
     super("UnarchiveProcessor");
     setDaemon(true);
     this.PropertiesExtension = paramFile;

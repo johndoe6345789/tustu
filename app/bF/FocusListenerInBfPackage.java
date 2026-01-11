@@ -6,7 +6,7 @@ import java.awt.event.FocusListener;
 import javax.swing.table.TableCellEditor;
 
 class FocusListenerInBfPackage implements FocusListener {
-  H(D paramD) {}
+  FocusListenerInBfPackage(D paramD) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {}
   

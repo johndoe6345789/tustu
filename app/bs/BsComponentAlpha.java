@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 class BsComponentAlpha extends BeInterfaceAlpha implements BmInterfaceEcho {
   int BeInterfaceAlpha = 400;
   
-  A(k paramk) {}
+  BsComponentAlpha(k paramk) {}
   
   public void BeInterfaceAlpha(BmInterfaceDelta paramd) {
     int i = this.b.b.BeInterfaceAlpha(paramd.BmInterfaceEcho());

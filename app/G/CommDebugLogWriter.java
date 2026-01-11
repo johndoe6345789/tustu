@@ -13,7 +13,7 @@ class CommDebugLogWriter extends Thread {
   
   int c = 0;
   
-  P(J paramJ) {
+  CommDebugLogWriter(J paramJ) {
     setName("CommDebugLogWriter");
     setDaemon(true);
     setPriority(1);

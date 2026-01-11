@@ -7,7 +7,7 @@ import javax.swing.JList;
 class JListExtension extends JList {
   DefaultListModel a = null;
   
-  A(s params) {
+  JListExtension(s params) {
     this.a = new DefaultListModel();
     setCellRenderer(new C(params));
     setModel(this.a);

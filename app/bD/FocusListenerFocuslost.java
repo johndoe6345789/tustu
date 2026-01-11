@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class FocusListenerFocuslost implements FocusListener {
-  O(N paramN, I paramI) {}
+  FocusListenerFocuslost(N paramN, I paramI) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.b.b.selectAll();

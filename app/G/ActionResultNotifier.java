@@ -3,7 +3,7 @@ package G;
 class ActionResultNotifier implements aN {
   String a = null;
   
-  V(T paramT, String paramString) {
+  ActionResultNotifier(T paramT, String paramString) {
     this.a = paramString;
   }
   

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BbInterfaceFoxtrot implements ActionListener {
-  F(E paramE) {}
+  BbInterfaceFoxtrot(E paramE) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     E.a(this.a);

@@ -9,7 +9,7 @@ public class IsNaNFunction extends AbstractInAxPackage {
   
   boolean b = false;
   
-  C(AxInterfaceAb paramab) {
+  IsNaNFunction(AxInterfaceAb paramab) {
     this.a = paramab;
   }
   

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceNovember implements ActionListener {
-  N(M paramM) {}
+  BeInterfaceNovember(M paramM) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     M.a(this.a);

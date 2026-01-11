@@ -3,7 +3,7 @@ package be;
 import G.Q;
 
 class BeInterfaceJuliet implements q {
-  J(C paramC) {}
+  BeInterfaceJuliet(C paramC) {}
   
   public boolean a(Q paramQ) {
     return paramQ.aN();

@@ -10,7 +10,7 @@ class SearchNavigationHandler implements l {
   
   ArrayListExceptionprintstacktraceInGPackage b;
   
-  F(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
+  SearchNavigationHandler(R paramR, ArrayListExceptionprintstacktraceInGPackage parambv) {
     this.a = paramR;
     this.b = parambv;
   }

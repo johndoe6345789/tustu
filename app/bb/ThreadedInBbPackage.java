@@ -12,7 +12,7 @@ import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
 
 class ThreadedInBbPackage extends Thread {
-  I(E paramE, File paramFile, JDialog paramJDialog) {}
+  ThreadedInBbPackage(E paramE, File paramFile, JDialog paramJDialog) {}
   
   public void run() {
     try {

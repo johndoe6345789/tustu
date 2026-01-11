@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class BdInterfaceHotel extends Thread {
   boolean a = true;
   
-  H(G paramG) {
+  BdInterfaceHotel(G paramG) {
     super("Remote table wait");
     setDaemon(true);
   }

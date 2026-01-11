@@ -4,7 +4,7 @@ import d.DInterfaceAlpha;
 import d.DComponentCharlie;
 
 class PInterfaceEcho implements DInterfaceAlpha {
-  E(D paramD) {}
+  PInterfaceEcho(D paramD) {}
   
   public boolean DInterfaceAlpha(DComponentCharlie paramc) {
     return paramc.f();

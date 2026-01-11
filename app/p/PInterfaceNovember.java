@@ -1,7 +1,7 @@
 package p;
 
 class PInterfaceNovember implements f {
-  N(J paramJ) {}
+  PInterfaceNovember(J paramJ) {}
   
   public boolean a() {
     return J.d(this.a);

@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrInterfaceRomeo implements ActionListener {
-  R(P paramP) {}
+  BrInterfaceRomeo(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(paramActionEvent.getActionCommand());

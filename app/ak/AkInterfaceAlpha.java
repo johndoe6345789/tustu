@@ -4,7 +4,7 @@ import W.T;
 import W.k;
 
 class AkInterfaceAlpha implements T {
-  A(w paramw) {}
+  AkInterfaceAlpha(w paramw) {}
   
   public String a() {
     return "Time";

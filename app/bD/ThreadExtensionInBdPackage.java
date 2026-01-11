@@ -5,7 +5,7 @@ import java.util.List;
 class ThreadExtensionInBdPackage extends Thread {
   List a = null;
   
-  A(r paramr, List paramList) {
+  ThreadExtensionInBdPackage(r paramr, List paramList) {
     super("Download");
     setDaemon(true);
     this.a = paramList;

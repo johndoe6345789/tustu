@@ -20,7 +20,7 @@ class TuningViewLoadAction implements ExceptionInVPackage {
   
   J ExceptionInVPackage = null;
   
-  C(z paramz, b paramb, String[] paramArrayOfString) {
+  TuningViewLoadAction(z paramz, b paramb, String[] paramArrayOfString) {
     this.c = paramb;
     this.d = paramArrayOfString;
   }

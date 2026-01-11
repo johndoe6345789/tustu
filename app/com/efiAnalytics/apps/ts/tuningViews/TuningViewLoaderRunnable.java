@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 class TuningViewLoaderRunnable implements Runnable {
-  W(V paramV) {}
+  TuningViewLoaderRunnable(V paramV) {}
   
   public void run() {
     V.a(this.a);

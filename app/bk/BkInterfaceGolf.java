@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.List;
 
 class BkInterfaceGolf implements BdInterfaceGolf {
-  BdInterfaceGolf(d paramd) {}
+  BkInterfaceGolf(d paramd) {}
   
   public WInterfaceAa a(List<File> paramList) {
     String[] arrayOfString = new String[paramList.size()];

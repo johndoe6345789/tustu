@@ -1,7 +1,7 @@
 package ax;
 
 class AxInterfaceRomeo implements T {
-  R(Q paramQ) {}
+  AxInterfaceRomeo(Q paramQ) {}
 }
 
 

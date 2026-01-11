@@ -13,7 +13,7 @@ class Close implements bc {
   
   String b = "";
   
-  I(f paramf, Dialog paramDialog, String paramString) {
+  Close(f paramf, Dialog paramDialog, String paramString) {
     this.PropertiesExtension = paramDialog;
     this.b = paramString;
   }

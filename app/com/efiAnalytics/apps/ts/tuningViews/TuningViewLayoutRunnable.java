@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 class TuningViewLayoutRunnable implements Runnable {
-  E(D paramD) {}
+  TuningViewLayoutRunnable(D paramD) {}
   
   public void run() {
     if (this.a.a.a.w() != null && !this.a.a.a.w().isEmpty()) {

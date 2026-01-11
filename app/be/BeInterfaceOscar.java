@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import s.SComponentGolf;
 
 class BeInterfaceOscar implements ActionListener {
-  O(M paramM) {}
+  BeInterfaceOscar(M paramM) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = this.a.d();

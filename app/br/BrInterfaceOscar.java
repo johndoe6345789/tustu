@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class BrInterfaceOscar extends Thread {
   boolean a = true;
   
-  O(K paramK) {}
+  BrInterfaceOscar(K paramK) {}
   
   public void run() {
     while (this.a) {

@@ -1,7 +1,7 @@
 package com.efiAnalytics.apps.ts.tuningViews;
 
 class PanelUpdateRunnable implements Runnable {
-  P(J paramJ) {}
+  PanelUpdateRunnable(J paramJ) {}
   
   public void run() {
     J.a(this.a);

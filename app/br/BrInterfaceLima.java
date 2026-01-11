@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.bV;
 import java.awt.Component;
 
 class BrInterfaceLima extends Thread {
-  L(K paramK) {}
+  BrInterfaceLima(K paramK) {}
   
   public void run() {
     try {

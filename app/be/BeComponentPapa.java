@@ -11,7 +11,7 @@ class BeComponentPapa {
   
   String e;
   
-  P(M paramM) {}
+  BeComponentPapa(M paramM) {}
 }
 
 

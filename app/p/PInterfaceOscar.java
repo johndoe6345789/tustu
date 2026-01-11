@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfaceOscar implements ActionListener {
-  O(J paramJ) {}
+  PInterfaceOscar(J paramJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     J.e(this.a);

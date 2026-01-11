@@ -3,7 +3,7 @@ package bD;
 import com.efiAnalytics.remotefileaccess.RefreshNeededListener;
 
 class RefreshNeededListener implements RefreshNeededListener {
-  D(r paramr) {}
+  RefreshNeededListener(r paramr) {}
   
   public void refreshView() {
     this.a.e();

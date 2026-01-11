@@ -5,7 +5,7 @@ import L.n;
 class DataReceivedCallback implements aF {
   int a = 0;
   
-  U(T paramT) {}
+  DataReceivedCallback(T paramT) {}
   
   public void a(String paramString, byte[] paramArrayOfbyte) {
     if (this.b.c() != null && paramString.equals(this.b.c().c()))

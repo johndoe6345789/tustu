@@ -9,7 +9,7 @@ public class EqualsTostring {
   
   private int c;
   
-  V(T paramT, int paramInt) {
+  EqualsTostring(T paramT, int paramInt) {
     this.c = paramInt;
   }
   

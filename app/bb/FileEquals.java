@@ -10,7 +10,7 @@ class FileEquals {
   
   boolean a = false;
   
-  K(E paramE, FileUsingHashMap paramk, File paramFile, boolean paramBoolean) {
+  FileEquals(E paramE, FileUsingHashMap paramk, File paramFile, boolean paramBoolean) {
     this.c = paramFile;
     this.d = paramk;
     this.a = paramBoolean;

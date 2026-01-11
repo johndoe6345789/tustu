@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.et;
 import r.IOPropertiesUsingFile;
 
 class Table2DPropertyStore implements et {
-  Z(W paramW) {}
+  Table2DPropertyStore(W paramW) {}
   
   public void IOPropertiesUsingFile(String paramString1, String paramString2) {
     IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();

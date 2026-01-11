@@ -5,7 +5,7 @@ import V.ExceptionGetmessage;
 import bH.c;
 
 class ControllerDataValidatorAlt implements v {
-  M(J paramJ) {}
+  ControllerDataValidatorAlt(J paramJ) {}
   
   public int[] a(byte[] paramArrayOfbyte, int paramInt1, int paramInt2) {
     try {

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TuningViewLoadThread extends Thread {
-  O(J paramJ, ArrayList paramArrayList, b paramb, Component paramComponent) {}
+  TuningViewLoadThread(J paramJ, ArrayList paramArrayList, b paramb, Component paramComponent) {}
   
   public void run() {
     try {

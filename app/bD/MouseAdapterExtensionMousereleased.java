@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionMousereleased extends MouseAdapter {
-  E(r paramr) {}
+  MouseAdapterExtensionMousereleased(r paramr) {}
   
   public void mouseReleased(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.isPopupTrigger())

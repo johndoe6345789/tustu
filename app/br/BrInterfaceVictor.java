@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BrInterfaceVictor implements ActionListener {
-  V(P paramP) {}
+  BrInterfaceVictor(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     P.a(this.a);

@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceYankee implements Runnable {
-  Y(X paramX) {}
+  ApInterfaceYankee(X paramX) {}
   
   public void run() {
     this.a.a.c.repaint();

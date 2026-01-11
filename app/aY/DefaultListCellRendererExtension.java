@@ -13,7 +13,7 @@ import javax.swing.JList;
 class DefaultListCellRendererExtension extends DefaultListCellRenderer {
   Icon a = null;
   
-  C(s params) {}
+  DefaultListCellRendererExtension(s params) {}
   
   public Component getListCellRendererComponent(JList<?> paramJList, Object paramObject, int paramInt, boolean paramBoolean1, boolean paramBoolean2) {
     Component component = super.getListCellRendererComponent(paramJList, paramObject, paramInt, paramBoolean1, paramBoolean2);

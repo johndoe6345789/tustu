@@ -1,7 +1,7 @@
 package bF;
 
 class ThreadedInBfPackage implements Runnable {
-  I(D paramD) {}
+  ThreadedInBfPackage(D paramD) {}
   
   public void run() {
     this.a.o();

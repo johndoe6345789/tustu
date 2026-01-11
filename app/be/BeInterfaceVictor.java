@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceVictor implements ActionListener {
-  V(T paramT) {}
+  BeInterfaceVictor(T paramT) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     fp.a(this.a.a, this.a.d.isSelected());

@@ -4,7 +4,7 @@ import com.efiAnalytics.ui.et;
 import r.IOPropertiesUsingFile;
 
 class ApInterfaceCharlie implements et {
-  C(f paramf) {}
+  ApInterfaceCharlie(f paramf) {}
   
   public void IOPropertiesUsingFile(String paramString1, String paramString2) {
     IOPropertiesUsingFile.IOPropertiesUsingFile().b(paramString1, paramString2);

@@ -12,7 +12,7 @@ class TuningViewLoader implements ExceptionInVPackage {
   
   private String[] c = null;
   
-  V(J paramJ, b paramb, String[] paramArrayOfString) {
+  TuningViewLoader(J paramJ, b paramb, String[] paramArrayOfString) {
     this.b = paramb;
     this.c = paramArrayOfString;
   }

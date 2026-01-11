@@ -4,7 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 class KeyAdapterExtension extends KeyAdapter {
-  E(D paramD) {}
+  KeyAdapterExtension(D paramD) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {
     D.a(this.a, paramKeyEvent);

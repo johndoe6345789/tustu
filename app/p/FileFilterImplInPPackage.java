@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileFilter;
 
 class FileFilterImplInPPackage implements FileFilter {
-  A(z paramz) {}
+  FileFilterImplInPPackage(z paramz) {}
   
   public boolean accept(File paramFile) {
     return paramFile.getName().toLowerCase().endsWith(z.a);

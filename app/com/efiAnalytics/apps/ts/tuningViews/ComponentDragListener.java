@@ -18,7 +18,7 @@ class ComponentDragListener extends MouseAdapter implements MouseMotionListener 
   
   TuneViewComponent d = null;
   
-  T(J paramJ) {}
+  ComponentDragListener(J paramJ) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     try {

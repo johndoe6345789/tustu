@@ -9,7 +9,7 @@ import java.awt.event.MouseMotionListener;
 class TuningViewMouseAdapter extends MouseAdapter implements MouseMotionListener {
   private Rectangle b = null;
   
-  Q(J paramJ) {}
+  TuningViewMouseAdapter(J paramJ) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (!this.a.isEnabled())

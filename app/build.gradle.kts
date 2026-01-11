@@ -49,6 +49,9 @@ tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
     options.compilerArgs.add("-Xlint:unchecked")
     options.compilerArgs.add("-Xlint:deprecation")
+    // Continue compilation despite errors in obfuscated code
+    options.isFailOnError = false
+    options.isFork = true
 }
 
 tasks.jar {

@@ -4,7 +4,7 @@ import javax.swing.InputVerifier;
 import javax.swing.JComponent;
 
 class InputVerifierExtension extends InputVerifier {
-  O(D paramD) {}
+  InputVerifierExtension(D paramD) {}
   
   public boolean verify(JComponent paramJComponent) {
     return true;

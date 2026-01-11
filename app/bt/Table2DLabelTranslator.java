@@ -4,7 +4,7 @@ import bH.ab;
 import s.SComponentGolf;
 
 class Table2DLabelTranslator implements ab {
-  X(W paramW) {}
+  Table2DLabelTranslator(W paramW) {}
   
   public String a(String paramString) {
     return SComponentGolf.b(paramString);

@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceGolf implements ActionListener {
-  G(C paramC) {}
+  BeInterfaceGolf(C paramC) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     C.d(this.a);

@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JRadioButton;
 
 class BrInterfaceXray implements ActionListener {
-  X(P paramP) {}
+  BrInterfaceXray(P paramP) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JRadioButton jRadioButton = (JRadioButton)paramActionEvent.getSource();

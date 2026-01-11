@@ -6,7 +6,7 @@ import com.efiAnalytics.ui.bV;
 import s.SComponentGolf;
 
 class BbComponentCharlie implements GInterfaceBu {
-  C(x paramx) {}
+  BbComponentCharlie(x paramx) {}
   
   public void a() {}
   

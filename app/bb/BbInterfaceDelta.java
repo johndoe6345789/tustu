@@ -6,7 +6,7 @@ import G.GInterfaceCb;
 import java.util.ArrayList;
 
 class BbInterfaceDelta implements GInterfaceCb {
-  D(x paramx) {}
+  BbInterfaceDelta(x paramx) {}
   
   public boolean a(ArrayList paramArrayList, R paramR, Y paramY, String paramString) {
     x.c(this.a);

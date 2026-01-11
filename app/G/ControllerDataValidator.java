@@ -6,7 +6,7 @@ import bH.D;
 import bH.c;
 
 class ControllerDataValidator implements v {
-  L(J paramJ) {}
+  ControllerDataValidator(J paramJ) {}
   
   public int[] a(byte[] paramArrayOfbyte, int paramInt1, int paramInt2) {
     try {

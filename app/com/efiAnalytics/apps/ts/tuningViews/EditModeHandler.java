@@ -3,7 +3,7 @@ package com.efiAnalytics.apps.ts.tuningViews;
 import com.efiAnalytics.apps.ts.dashboard.u;
 
 class EditModeHandler implements u {
-  K(J paramJ) {}
+  EditModeHandler(J paramJ) {}
   
   public boolean a() {
     this.a.t();

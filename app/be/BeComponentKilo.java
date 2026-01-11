@@ -4,7 +4,7 @@ import G.Q;
 import bf.BfComponentLima;
 
 class BeComponentKilo implements BfComponentLima {
-  K(C paramC) {}
+  BeComponentKilo(C paramC) {}
   
   public void a(String paramString) {
     C.a(this.a);

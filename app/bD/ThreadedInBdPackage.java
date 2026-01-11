@@ -7,7 +7,7 @@ import com.efiAnalytics.remotefileaccess.RemoteAccessException;
 import java.util.List;
 
 class ThreadedInBdPackage extends Thread {
-  C(r paramr) {
+  ThreadedInBdPackage(r paramr) {
     super("Read Dir Thread");
     setDaemon(true);
   }

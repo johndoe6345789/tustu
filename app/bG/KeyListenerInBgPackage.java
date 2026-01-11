@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class KeyListenerInBgPackage implements KeyListener {
-  D(q paramq) {}
+  KeyListenerInBgPackage(q paramq) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {}
   

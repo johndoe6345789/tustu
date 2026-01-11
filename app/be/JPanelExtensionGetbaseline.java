@@ -4,7 +4,7 @@ import java.awt.Component;
 import javax.swing.JPanel;
 
 class JPanelExtensionGetbaseline extends JPanel {
-  W(T paramT) {}
+  JPanelExtensionGetbaseline(T paramT) {}
   
   public Component.BaselineResizeBehavior getBaselineResizeBehavior() {
     return Component.BaselineResizeBehavior.CONSTANT_ASCENT;

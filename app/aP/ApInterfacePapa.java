@@ -3,7 +3,7 @@ package aP;
 import G.g;
 
 class ApInterfacePapa implements g {
-  P(O paramO) {}
+  ApInterfacePapa(O paramO) {}
   
   public void b(String paramString, int paramInt) {}
   

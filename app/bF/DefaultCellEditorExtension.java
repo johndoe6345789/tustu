@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 class DefaultCellEditorExtension extends DefaultCellEditor {
   private int b = 0;
   
-  L(D paramD) {
+  DefaultCellEditorExtension(D paramD) {
     super((JTextField)new NumericTextField());
     do do = (do)getComponent();
     do.setFont(paramD.getFont());

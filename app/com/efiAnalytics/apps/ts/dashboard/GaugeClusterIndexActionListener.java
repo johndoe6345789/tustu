@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class GaugeClusterIndexActionListener implements ActionListener {
-  B(x paramx) {}
+  GaugeClusterIndexActionListener(x paramx) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     int i = Integer.parseInt(paramActionEvent.getActionCommand());

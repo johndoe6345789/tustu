@@ -7,7 +7,7 @@ import java.util.List;
 import javax.swing.SwingUtilities;
 
 class ApInterfaceXray implements AhInterfaceDelta {
-  X(T paramT) {}
+  ApInterfaceXray(T paramT) {}
   
   public void AhInterfaceAlpha(List paramList) {
     for (AhInterfaceAlpha AhInterfaceAlpha : paramList) {

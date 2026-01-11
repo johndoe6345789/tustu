@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class PInterfacePapa implements ActionListener {
-  P(J paramJ) {}
+  PInterfacePapa(J paramJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     J.f(this.a);

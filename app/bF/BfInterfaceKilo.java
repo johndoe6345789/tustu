@@ -1,7 +1,7 @@
 package bF;
 
 class BfInterfaceKilo implements Runnable {
-  K(D paramD) {}
+  BfInterfaceKilo(D paramD) {}
   
   public void run() {
     this.a.q();

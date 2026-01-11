@@ -4,7 +4,7 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 class NumericTextFieldFocusAdapter extends FocusAdapter {
-  B(A paramA) {}
+  NumericTextFieldFocusAdapter(A paramA) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.selectAll();

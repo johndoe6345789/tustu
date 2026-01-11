@@ -6,7 +6,7 @@ import r.IOPropertiesUsingFile;
 class TostringInAyPackage {
   FileInWPackage IOPropertiesUsingFile = null;
   
-  B(s params, FileInWPackage paramag) {
+  TostringInAyPackage(s params, FileInWPackage paramag) {
     this.IOPropertiesUsingFile = paramag;
   }
   

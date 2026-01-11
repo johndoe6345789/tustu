@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 class ManagerInPPackage extends DefaultTableModel {
   String[] a = new String[] { R.a(this.b, "Name"), R.a(this.b, "Display Name"), R.a(this.b, "Description") };
   
-  S(R paramR) {
+  ManagerInPPackage(R paramR) {
     setColumnIdentifiers((Object[])this.a);
   }
   

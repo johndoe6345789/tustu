@@ -20,7 +20,7 @@ class IgnitionLogLoadHandler implements Y, aQ {
   
   final aQ d = this;
   
-  C(o paramo) {}
+  IgnitionLogLoadHandler(o paramo) {}
   
   public void ExceptionInVPackage(ArrayList paramArrayList, long paramLong) {
     try {

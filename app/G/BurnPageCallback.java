@@ -1,7 +1,7 @@
 package G;
 
 class BurnPageCallback implements n {
-  K(J paramJ) {}
+  BurnPageCallback(J paramJ) {}
   
   public void a(double paramDouble) {}
   

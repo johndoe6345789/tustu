@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class RepaintThread extends Thread {
   boolean a = true;
   
-  X(J paramJ) {}
+  RepaintThread(J paramJ) {}
   
   public void run() {
     while (this.a) {

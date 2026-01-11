@@ -1,7 +1,7 @@
 package bF;
 
 class RunnableImplInBfPackage implements Runnable {
-  F(D paramD, int paramInt1, int paramInt2) {}
+  RunnableImplInBfPackage(D paramD, int paramInt1, int paramInt2) {}
   
   public void run() {
     this.c.changeSelection(this.a, this.b, false, false);

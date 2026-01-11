@@ -3,7 +3,7 @@ package bs;
 import G.GComponentCq;
 
 class BsComponentEcho implements GComponentCq {
-  E(D paramD) {}
+  BsComponentEcho(D paramD) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}
 }

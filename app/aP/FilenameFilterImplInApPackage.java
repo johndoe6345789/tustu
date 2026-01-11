@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 class FilenameFilterImplInApPackage implements FilenameFilter {
-  B(f paramf) {}
+  FilenameFilterImplInApPackage(f paramf) {}
   
   public boolean accept(File paramFile, String paramString) {
     return paramString.toLowerCase().endsWith(".sh");

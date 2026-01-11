@@ -12,7 +12,7 @@ import java.util.Iterator;
 class BrInterfaceHotel implements GComponentCq {
   ArrayList ExceptionInVPackage = new ArrayList();
   
-  H(s params, R paramR, String paramString) {
+  BrInterfaceHotel(s params, R paramR, String paramString) {
     try {
       ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(paramR.c(), paramString, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {

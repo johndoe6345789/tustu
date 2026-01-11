@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 public class TuningViewKeyDispatcher implements KeyEventDispatcher {
   J a = null;
   
-  R(J paramJ1, J paramJ2) {
+  TuningViewKeyDispatcher(J paramJ1, J paramJ2) {
     this.a = paramJ2;
   }
   

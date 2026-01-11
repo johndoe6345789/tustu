@@ -6,7 +6,7 @@ import java.util.Objects;
 class TostringHashcode {
   private DComponentCharlie b;
   
-  I(D paramD, DComponentCharlie paramc) {
+  TostringHashcode(D paramD, DComponentCharlie paramc) {
     this.b = paramc;
   }
   

@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ThreadExtensionInBbPackage extends Thread {
-  B(A paramA) {}
+  ThreadExtensionInBbPackage(A paramA) {}
   
   public void run() {
     try {

@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class BinTableFocusListener implements FocusListener {
-  U(T paramT) {}
+  BinTableFocusListener(T paramT) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     T.a(this.a, this.a.a.b(0));

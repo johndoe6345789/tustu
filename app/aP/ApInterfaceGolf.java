@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.aN;
 class ApInterfaceGolf implements by {
   String a;
   
-  G(f paramf, String paramString) {
+  ApInterfaceGolf(f paramf, String paramString) {
     this.a = paramString;
   }
   

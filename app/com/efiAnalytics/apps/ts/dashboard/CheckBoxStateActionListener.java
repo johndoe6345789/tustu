@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class CheckBoxStateActionListener implements ActionListener {
-  C(x paramx) {}
+  CheckBoxStateActionListener(x paramx) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.i(((JCheckBoxMenuItem)paramActionEvent.getSource()).getState());

@@ -3,7 +3,7 @@ package bb;
 import G.g;
 
 class BbComponentAlpha implements g {
-  A(x paramx) {}
+  BbComponentAlpha(x paramx) {}
   
   public void b(String paramString, int paramInt) {}
   

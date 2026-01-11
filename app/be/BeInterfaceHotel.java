@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BeInterfaceHotel implements ActionListener {
-  H(C paramC) {}
+  BeInterfaceHotel(C paramC) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     C.e(this.a);

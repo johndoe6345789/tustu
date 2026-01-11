@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
 class CrosshairToggleListener implements ActionListener {
-  L(J paramJ) {}
+  CrosshairToggleListener(J paramJ) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     J.a(this.a, ((JCheckBoxMenuItem)paramActionEvent.getSource()).getState());

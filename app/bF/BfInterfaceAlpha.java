@@ -5,7 +5,7 @@ class BfInterfaceAlpha {
   
   int b;
   
-  A(y paramy, int paramInt1, int paramInt2) {
+  BfInterfaceAlpha(y paramy, int paramInt1, int paramInt2) {
     this.b = paramInt2;
     this.a = paramInt1;
   }

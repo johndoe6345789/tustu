@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class SettingCalibrationFieldActionListener implements ActionListener {
-  J(I paramI) {}
+  SettingCalibrationFieldActionListener(I paramI) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     I.a(this.a);

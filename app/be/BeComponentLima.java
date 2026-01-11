@@ -9,7 +9,7 @@ class BeComponentLima implements BfKiloImpl {
   
   Q b = null;
   
-  L(C paramC) {}
+  BeComponentLima(C paramC) {}
   
   public void a(DefaultMutableTreeNodeExtension paramj) {
     this.a = paramj;

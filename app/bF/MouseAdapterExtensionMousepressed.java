@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionMousepressed extends MouseAdapter {
-  P(D paramD) {}
+  MouseAdapterExtensionMousepressed(D paramD) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3)

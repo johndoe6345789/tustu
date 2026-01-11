@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class BbInterfaceGolf implements ActionListener {
-  G(E paramE) {}
+  BbInterfaceGolf(E paramE) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = this.a.f.isSelected();
