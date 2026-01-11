@@ -27,7 +27,7 @@ public class ComponentPositionDialog extends a implements f {
   
   NumericTextField e = new NumericTextField();
   
-  public r(Window paramWindow, ai paramai, String paramString) {
+  public ComponentPositionDialog(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);
     a(paramai);
     setLayout(new BorderLayout());

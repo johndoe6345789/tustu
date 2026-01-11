@@ -6,7 +6,7 @@ import javax.swing.JDialog;
 class WizardDialogCallback implements fS {
   JDialog a = null;
   
-  public fP(fL paramfL, JDialog paramJDialog) {
+  public WizardDialogCallback(fL paramfL, JDialog paramJDialog) {
     this.a = paramJDialog;
   }
   

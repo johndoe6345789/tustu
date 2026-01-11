@@ -19,11 +19,11 @@ public class DropdownButton extends cp implements ItemSelectable, ActionListener
   
   JPopupMenu A = new JPopupMenu();
   
-  public dc() {
+  public DropdownButton() {
     this("");
   }
   
-  public dc(String paramString) {
+  public DropdownButton(String paramString) {
     super(paramString);
     add(this.A);
     a(this);

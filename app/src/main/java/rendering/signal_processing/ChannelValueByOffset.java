@@ -29,12 +29,12 @@ public class ChannelValueByOffset extends AbstractInAxPackage implements GCompon
   
   double g = Double.NaN;
   
-  public s(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ChannelValueByOffset(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public s(GInterfaceAi paramaI, AxInterfaceAb paramab) {
+  public ChannelValueByOffset(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.ExceptionInVPackage = paramaI;
     this.b = paramab;
   }

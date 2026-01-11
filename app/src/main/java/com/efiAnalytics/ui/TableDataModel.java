@@ -48,7 +48,7 @@ public class TableDataModel implements WInterfaceAn, TableModel {
   
   private int f = 0;
   
-  public s() {
+  public TableDataModel() {
     a(16, 16);
   }
   

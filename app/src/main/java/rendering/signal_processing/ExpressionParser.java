@@ -19,7 +19,7 @@ public class ExpressionParser extends ArrayListUsingPattern {
   
   private static String f = "array.";
   
-  public k(GInterfaceAi paramaI) {
+  public ExpressionParser(GInterfaceAi paramaI) {
     this.b = paramaI;
     if (c == null) {
       c = new h(paramaI);

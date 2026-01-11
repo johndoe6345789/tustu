@@ -16,7 +16,7 @@ class BinTableHeaderCellRenderer extends DefaultTableCellRenderer {
   
   JTable d;
   
-  public aG(BinTableView paramBinTableView, JTable paramJTable) {
+  public BinTableHeaderCellRenderer(BinTableView paramBinTableView, JTable paramJTable) {
     this.d = paramJTable;
     setHorizontalAlignment(0);
     setForeground(Color.BLACK);

@@ -37,7 +37,7 @@ public class LineChartComponent extends AbstractChartComponent {
   
   double k = 0.0D;
   
-  public aU() {
+  public LineChartComponent() {
     addMouseListener(new aW(this));
   }
   

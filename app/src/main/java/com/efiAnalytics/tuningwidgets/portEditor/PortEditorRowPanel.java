@@ -34,7 +34,7 @@ public class PortEditorRowPanel extends JPanel implements F, bc {
   
   int g = -1;
   
-  public z(R paramR, ArrayListExceptionprintstacktrace paramaS, int paramInt) {
+  public PortEditorRowPanel(R paramR, ArrayListExceptionprintstacktrace paramaS, int paramInt) {
     this.a = paramR;
     this.h = this.a.c(paramaS.h());
     this.i = this.a.c(paramaS.i());

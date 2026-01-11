@@ -32,7 +32,7 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
   
   boolean c = false;
   
-  public ad(Gauge paramGauge) {
+  public GaugePropertiesPanel(Gauge paramGauge) {
     this.a = paramGauge;
     this.c = paramGauge.isRunDemo();
     c();

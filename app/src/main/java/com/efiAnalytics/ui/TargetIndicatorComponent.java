@@ -46,7 +46,7 @@ public class TargetIndicatorComponent extends JComponent {
   
   Font g = new Font("Dialog", 0, 12);
   
-  public aR() {
+  public TargetIndicatorComponent() {
     setBorder(BorderFactory.createLoweredBevelBorder());
   }
   

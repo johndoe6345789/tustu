@@ -5,9 +5,9 @@ import java.io.Serializable;
 public class SimpleStringValueProvider implements db, Serializable {
   String a = "";
   
-  public c() {}
+  public SimpleStringValueProvider() {}
   
-  public c(String paramString) {
+  public SimpleStringValueProvider(String paramString) {
     a(paramString);
   }
   

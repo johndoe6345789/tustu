@@ -20,7 +20,7 @@ public class ButtonCellEditorRenderer extends AbstractCellEditor implements Tabl
   
   private final JButton d = new JButton();
   
-  public eV() {
+  public ButtonCellEditorRenderer() {
     this.d.addActionListener(new eW(this));
   }
   

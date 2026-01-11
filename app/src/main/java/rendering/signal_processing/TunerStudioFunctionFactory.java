@@ -17,7 +17,7 @@ public class TunerStudioFunctionFactory extends AbstractInAxPackage {
   
   AxInterfaceAb a;
   
-  public h(GInterfaceAi paramaI) {
+  public TunerStudioFunctionFactory(GInterfaceAi paramaI) {
     this.b = paramaI;
     this.a = (n.a()).a;
   }

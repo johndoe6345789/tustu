@@ -69,16 +69,16 @@ public class LogChannel implements R {
   
   private boolean C = true;
   
-  public j() {
+  public LogChannel() {
     this.d = new L();
   }
   
-  public j(String paramString) {
+  public LogChannel(String paramString) {
     this.d = new L();
     this.a = paramString;
   }
   
-  public j(String paramString, int paramInt) {
+  public LogChannel(String paramString, int paramInt) {
     paramInt = (paramInt < z) ? z : paramInt;
     paramInt = (paramInt > A) ? A : paramInt;
     this.d = new L(paramInt);

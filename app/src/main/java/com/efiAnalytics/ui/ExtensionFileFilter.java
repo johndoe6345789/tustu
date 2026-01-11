@@ -8,7 +8,7 @@ public class ExtensionFileFilter extends FileFilter {
   
   String a = null;
   
-  public cx(String paramString) {
+  public ExtensionFileFilter(String paramString) {
     this.b = paramString;
   }
   

@@ -7,7 +7,7 @@ class BinTablePaintThrottle extends Thread {
   
   boolean c = false;
   
-  public aK(BinTableView paramBinTableView) {
+  public BinTablePaintThrottle(BinTableView paramBinTableView) {
     super("BinTablePaintThrottle");
     setDaemon(true);
     start();

@@ -25,12 +25,12 @@ public class ChannelTranslateByOffset extends AbstractInAxPackage {
   
   double g = Double.NaN;
   
-  public x(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ChannelTranslateByOffset(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public x(GInterfaceAi paramaI, AxInterfaceAb paramab) {
+  public ChannelTranslateByOffset(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.a = paramaI;
     this.b = paramab;
   }

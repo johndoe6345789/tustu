@@ -9,7 +9,7 @@ import java.io.File;
 public class ImagePreviewPanel extends ck {
   Image a = null;
   
-  public cl() {
+  public ImagePreviewPanel() {
     Dimension dimension = new Dimension(150, 200);
     setPreferredSize(dimension);
     setMinimumSize(dimension);

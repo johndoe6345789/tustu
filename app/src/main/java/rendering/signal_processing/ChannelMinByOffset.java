@@ -25,12 +25,12 @@ public class ChannelMinByOffset extends AbstractInAxPackage {
   
   double g = Double.NaN;
   
-  public v(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ChannelMinByOffset(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public v(GInterfaceAi paramaI, AxInterfaceAb paramab) {
+  public ChannelMinByOffset(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.a = paramaI;
     this.b = paramab;
   }

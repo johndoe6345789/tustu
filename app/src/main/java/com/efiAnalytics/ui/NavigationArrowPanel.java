@@ -24,7 +24,7 @@ public class NavigationArrowPanel extends JPanel {
   
   Color e = null;
   
-  public cK() {
+  public NavigationArrowPanel() {
     a();
     addMouseListener(new cL(this));
     Color color = UIManager.getColor("Button.foreground");

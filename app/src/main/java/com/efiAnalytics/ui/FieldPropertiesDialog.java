@@ -39,7 +39,7 @@ public class FieldPropertiesDialog extends JDialog implements ActionListener {
   
   JComboBox h = null;
   
-  public cj(Frame paramFrame, n paramn, String paramString1, String paramString2, String paramString3) {
+  public FieldPropertiesDialog(Frame paramFrame, n paramn, String paramString1, String paramString2, String paramString3) {
     super(paramFrame, "Field Properties", true);
     this.g = paramFrame;
     setLayout(new BorderLayout());

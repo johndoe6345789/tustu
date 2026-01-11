@@ -14,9 +14,9 @@ public class CommsProfile extends Q implements R, Serializable {
   
   private R e = null;
   
-  public r() {}
+  public CommsProfile() {}
   
-  public r(String paramString) {
+  public CommsProfile(String paramString) {
     v(paramString);
   }
   

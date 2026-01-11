@@ -60,7 +60,7 @@ public class LineGraphPanel extends aS {
   
   private boolean B = true;
   
-  public cZ() {
+  public LineGraphPanel() {
     d(25);
     a(false);
   }

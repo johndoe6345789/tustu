@@ -47,7 +47,7 @@ public class DataLogProfileEditorPanel extends ExceptionEqualsinaipackage {
   
   static String i = s.g.EqualsInAiPackage("Default");
   
-  public g(ExceptionInVPackage parama) {
+  public DataLogProfileEditorPanel(ExceptionInVPackage parama) {
     this.e = parama;
     this.EqualsInAiPackage = new A();
     setBorder(BorderFactory.createTitledBorder(s.g.EqualsInAiPackage("Data Log Profile Editor")));

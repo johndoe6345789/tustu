@@ -6,7 +6,7 @@ import java.util.ArrayList;
 class TablePanelItemWrapper {
   GComponentBb a = null;
   
-  public am(ae paramae, GComponentBb parambb) {
+  public TablePanelItemWrapper(ae paramae, GComponentBb parambb) {
     this.a = parambb;
   }
   

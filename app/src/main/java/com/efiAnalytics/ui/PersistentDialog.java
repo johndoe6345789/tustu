@@ -13,15 +13,15 @@ public class PersistentDialog extends JDialog implements bc {
   
   private et a = null;
   
-  public dF(Window paramWindow, String paramString) {
+  public PersistentDialog(Window paramWindow, String paramString) {
     this(paramWindow, paramString, (aO)null);
   }
   
-  public dF(Window paramWindow, String paramString, aO paramaO) {
+  public PersistentDialog(Window paramWindow, String paramString, aO paramaO) {
     this(paramWindow, paramString, paramaO, false);
   }
   
-  public dF(Window paramWindow, String paramString, aO paramaO, boolean paramBoolean) {
+  public PersistentDialog(Window paramWindow, String paramString, aO paramaO, boolean paramBoolean) {
     super(paramWindow, paramString, JDialog.DEFAULT_MODALITY_TYPE);
     setModal(paramBoolean);
     this.o = paramaO;

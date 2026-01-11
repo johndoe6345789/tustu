@@ -18,7 +18,7 @@ class EncodedDataLoader implements GInterfaceBq {
   
   R c;
   
-  public f(R paramR, File paramFile1, File paramFile2) {
+  public EncodedDataLoader(R paramR, File paramFile1, File paramFile2) {
     this.c = paramR;
     this.a = paramFile2;
     this.b = paramFile1;

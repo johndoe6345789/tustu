@@ -20,7 +20,7 @@ public class PaintThrottleThread extends Thread {
   
   Object c = new Object();
   
-  public dD(Component paramComponent) {
+  public PaintThrottleThread(Component paramComponent) {
     super("Generic Paint Throttle");
     setDaemon(true);
     this.f = paramComponent;

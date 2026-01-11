@@ -38,7 +38,7 @@ public class ProgressPanel extends JPanel implements KeyListener, Serializable {
   
   int f = 550;
   
-  public dO() {
+  public ProgressPanel() {
     setLayout(new GridBagLayout());
     setOpaque(false);
     this.a.setIndeterminate(true);

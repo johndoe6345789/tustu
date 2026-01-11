@@ -60,7 +60,7 @@ public class DeviceSearchTable extends JTable implements S, eX {
   
   int h = 0;
   
-  public r() {
+  public DeviceSearchTable() {
     setModel(this.c);
     setSelectionMode(0);
     setRowSelectionAllowed(true);

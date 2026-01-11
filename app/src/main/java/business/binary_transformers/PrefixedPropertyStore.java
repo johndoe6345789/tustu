@@ -6,7 +6,7 @@ import r.IOPropertiesUsingFile;
 public class PrefixedPropertyStore implements et {
   String IOPropertiesUsingFile = "";
   
-  public i(String paramString) {
+  public PrefixedPropertyStore(String paramString) {
     this.IOPropertiesUsingFile = paramString;
   }
   

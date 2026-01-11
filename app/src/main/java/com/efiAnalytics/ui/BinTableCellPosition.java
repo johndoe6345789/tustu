@@ -9,7 +9,7 @@ class BinTableCellPosition {
   
   double d;
   
-  public aM(BinTableView paramBinTableView, int paramInt1, int paramInt2, double paramDouble1, double paramDouble2) {
+  public BinTableCellPosition(BinTableView paramBinTableView, int paramInt1, int paramInt2, double paramDouble1, double paramDouble2) {
     this.a = paramInt1;
     this.b = paramInt2;
     this.c = paramDouble1;

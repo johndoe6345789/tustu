@@ -22,7 +22,7 @@ public class FloatPolygon implements Shape, Serializable {
   
   private GeneralPath f;
   
-  public dL() {
+  public FloatPolygon() {
     this.b = new float[4];
     this.c = new float[4];
   }

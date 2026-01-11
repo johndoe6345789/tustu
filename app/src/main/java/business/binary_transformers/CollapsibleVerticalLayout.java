@@ -24,12 +24,12 @@ public class CollapsibleVerticalLayout implements LayoutManager2, ContainerListe
   
   List d = new ArrayList();
   
-  public q(Container paramContainer, int paramInt) {
+  public CollapsibleVerticalLayout(Container paramContainer, int paramInt) {
     this.a = paramInt;
     this.c = paramContainer;
   }
   
-  public q(Container paramContainer) {
+  public CollapsibleVerticalLayout(Container paramContainer) {
     this(paramContainer, 1);
   }
   

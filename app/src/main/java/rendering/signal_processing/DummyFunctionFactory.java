@@ -8,7 +8,7 @@ import java.util.List;
 public class DummyFunctionFactory extends AbstractInAxPackage {
   private static m a = null;
   
-  public m() {
+  public DummyFunctionFactory() {
     D.c("Dummy Function Factory Created.");
   }
   

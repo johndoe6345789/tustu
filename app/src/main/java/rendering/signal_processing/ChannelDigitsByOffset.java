@@ -25,12 +25,12 @@ public class ChannelDigitsByOffset extends AbstractInAxPackage {
   
   double g = Double.NaN;
   
-  public t(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ChannelDigitsByOffset(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public t(GInterfaceAi paramaI, AxInterfaceAb paramab) {
+  public ChannelDigitsByOffset(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.a = paramaI;
     this.b = paramab;
   }

@@ -32,7 +32,7 @@ class BinTableCellRenderer extends DefaultTableCellRenderer {
   
   Border h = BorderFactory.createEmptyBorder(0, 0, 0, 0);
   
-  public aD(BinTableView paramBinTableView1, BinTableView paramBinTableView2) {
+  public BinTableCellRenderer(BinTableView paramBinTableView1, BinTableView paramBinTableView2) {
     this.a = paramBinTableView2;
     UIDefaults uIDefaults = new UIDefaults();
     uIDefaults.put("TextArea.borderPainter", new aE(this, paramBinTableView1));

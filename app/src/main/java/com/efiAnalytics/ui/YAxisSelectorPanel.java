@@ -15,7 +15,7 @@ public class YAxisSelectorPanel extends JPanel {
   
   int c = -1;
   
-  public fl() {
+  public YAxisSelectorPanel() {
     setLayout((LayoutManager)this.ManagerRemovelayoutcomponent);
     this.ManagerRemovelayoutcomponent.ManagerRemovelayoutcomponent(false);
     String str = "Y Axis Selectors";

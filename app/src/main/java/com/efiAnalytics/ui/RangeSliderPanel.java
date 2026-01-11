@@ -39,7 +39,7 @@ public class RangeSliderPanel extends JPanel {
   
   Rectangle n = null;
   
-  public cg() {
+  public RangeSliderPanel() {
     ch ch = new ch(this);
     addMouseMotionListener(ch);
     addMouseListener(ch);

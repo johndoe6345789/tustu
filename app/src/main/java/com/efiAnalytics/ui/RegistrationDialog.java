@@ -71,7 +71,7 @@ public class RegistrationDialog extends JDialog implements ClipboardOwner {
   
   Clipboard n = Toolkit.getDefaultToolkit().getSystemClipboard();
   
-  public dS(Window paramWindow, O paramO) {
+  public RegistrationDialog(Window paramWindow, O paramO) {
     super(paramWindow);
     setTitle(a("Enter Registration Information"));
     this.k = paramO;

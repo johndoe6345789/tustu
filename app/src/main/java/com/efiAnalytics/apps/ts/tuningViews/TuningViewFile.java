@@ -25,7 +25,7 @@ public class TuningViewFile {
   
   private String d = null;
   
-  public k(File paramFile) {
+  public TuningViewFile(File paramFile) {
     this.b = paramFile;
   }
   

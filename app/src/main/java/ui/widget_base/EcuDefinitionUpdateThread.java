@@ -10,7 +10,7 @@ class EcuDefinitionUpdateThread extends Thread {
   
   File c;
   
-  public x(String paramString, double paramDouble, File paramFile) {
+  public EcuDefinitionUpdateThread(String paramString, double paramDouble, File paramFile) {
     this.a = paramString;
     this.b = paramDouble;
     this.c = paramFile;

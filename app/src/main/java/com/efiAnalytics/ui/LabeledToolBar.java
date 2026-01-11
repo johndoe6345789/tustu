@@ -10,7 +10,7 @@ class LabeledToolBar extends JToolBar {
   
   Font b = new Font("Arial Unicode MS", 1, eJ.a(12));
   
-  public ak(w paramw, String paramString) {
+  public LabeledToolBar(w paramw, String paramString) {
     super(paramString);
   }
   

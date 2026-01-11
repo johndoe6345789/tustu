@@ -10,7 +10,7 @@ public class TruncatedPathLabel extends JLabel {
   
   double b = 0.0D;
   
-  public cn() {
+  public TruncatedPathLabel() {
     setFont(new Font("SansSerif", 0, eJ.a(11)));
     this.b = (getFontMetrics(getFont()).stringWidth("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ") / 52);
   }

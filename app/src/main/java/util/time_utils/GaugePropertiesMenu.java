@@ -156,7 +156,7 @@ public class GaugePropertiesMenu extends JMenu implements f {
   
   ButtonGroup aj = new ButtonGroup();
   
-  public w() {
+  public GaugePropertiesMenu() {
     super(SComponentGolf.b("Gauge Properties"));
   }
   

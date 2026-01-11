@@ -37,7 +37,7 @@ public class CurveFitControlPanel extends JPanel {
   
   private String SComponentGolf = "";
   
-  public a() {
+  public CurveFitControlPanel() {
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(1, 0, eJ.a(5), eJ.a(5)));

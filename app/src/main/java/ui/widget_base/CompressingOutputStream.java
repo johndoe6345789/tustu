@@ -13,7 +13,7 @@ public class CompressingOutputStream extends OutputStream {
   
   boolean c = false;
   
-  public y(OutputStream paramOutputStream) {
+  public CompressingOutputStream(OutputStream paramOutputStream) {
     this.a = paramOutputStream;
   }
   

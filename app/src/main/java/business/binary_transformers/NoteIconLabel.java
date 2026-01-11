@@ -23,7 +23,7 @@ public class NoteIconLabel extends JLabel {
   
   static ImageIcon d = null;
   
-  public a(R paramR, String paramString) {
+  public NoteIconLabel(R paramR, String paramString) {
     if (!RInterfaceIndia.a().a("lkjfgblkjgdoijre98u"))
       return; 
     this.a = paramR;

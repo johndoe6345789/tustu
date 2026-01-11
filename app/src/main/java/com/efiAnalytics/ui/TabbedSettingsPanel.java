@@ -24,7 +24,7 @@ public class TabbedSettingsPanel extends JPanel {
   
   boolean f = false;
   
-  public ds(String paramString) {
+  public TabbedSettingsPanel(String paramString) {
     paramString = (paramString == null) ? "" : paramString;
     this.c = paramString;
     setLayout(new BorderLayout());

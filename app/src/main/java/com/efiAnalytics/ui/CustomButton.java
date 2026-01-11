@@ -66,14 +66,14 @@ public class CustomButton extends JComponent {
   
   boolean y = true;
   
-  public cp(String paramString) {
+  public CustomButton(String paramString) {
     this.a = paramString;
     enableEvents(16L);
     this.o = new Vector();
     repaint();
   }
   
-  public cp(String paramString, Image paramImage) {
+  public CustomButton(String paramString, Image paramImage) {
     this(paramString);
     this.b = this.b;
     this.p = paramImage;
@@ -85,13 +85,13 @@ public class CustomButton extends JComponent {
       b(false); 
   }
   
-  public cp(String paramString, Image paramImage, Dimension paramDimension) {
+  public CustomButton(String paramString, Image paramImage, Dimension paramDimension) {
     this(paramString, paramImage);
     if (paramDimension != null)
       this.r = paramDimension; 
   }
   
-  public cp(String paramString, Image paramImage, Dimension paramDimension1, Dimension paramDimension2) {
+  public CustomButton(String paramString, Image paramImage, Dimension paramDimension1, Dimension paramDimension2) {
     this(paramString, paramImage, paramDimension1);
     this.t = paramDimension2;
   }

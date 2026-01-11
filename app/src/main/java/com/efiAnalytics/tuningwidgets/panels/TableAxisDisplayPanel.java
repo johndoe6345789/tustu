@@ -42,7 +42,7 @@ public class TableAxisDisplayPanel extends JPanel implements GComponentCq, bc, T
   
   s j = null;
   
-  public aP(R paramR, s params, String paramString) {
+  public TableAxisDisplayPanel(R paramR, s params, String paramString) {
     this.ExceptionInVPackage = paramR;
     this.j = params;
     setLayout(new BorderLayout());

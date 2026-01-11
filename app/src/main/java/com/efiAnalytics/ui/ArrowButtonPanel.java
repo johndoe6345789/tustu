@@ -24,7 +24,7 @@ public class ArrowButtonPanel extends JPanel {
   
   Color e = null;
   
-  public fC() {
+  public ArrowButtonPanel() {
     a();
     addMouseListener(new fD(this));
     Color color = UIManager.getColor("Button.foreground");

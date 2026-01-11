@@ -48,11 +48,11 @@ public class CommunicationIndicator extends JLabel implements GInterfaceAg, GInt
   
   long l = System.currentTimeMillis();
   
-  public ep() {
+  public CommunicationIndicator() {
     this("");
   }
   
-  public ep(String paramString) {
+  public CommunicationIndicator(String paramString) {
     this.m = paramString;
     setMinimumSize(this.h);
     setPreferredSize(this.h);

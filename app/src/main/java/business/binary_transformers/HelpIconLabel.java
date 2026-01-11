@@ -20,7 +20,7 @@ public class HelpIconLabel extends JLabel {
   
   String b = null;
   
-  public j(String paramString) {
+  public HelpIconLabel(String paramString) {
     this.b = paramString;
     try {
       Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("Help32.png"));

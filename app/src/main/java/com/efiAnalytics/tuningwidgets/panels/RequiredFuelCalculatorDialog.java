@@ -48,7 +48,7 @@ public class RequiredFuelCalculatorDialog extends JDialog {
   
   boolean i = false;
   
-  public an(Window paramWindow, R paramR, et paramet, BtInterfaceBz parambZ) {
+  public RequiredFuelCalculatorDialog(Window paramWindow, R paramR, et paramet, BtInterfaceBz parambZ) {
     super(paramWindow, ExceptionPrintstacktrace.b("Required Fuel Calculator"));
     this.k = paramet;
     this.h = paramR;

@@ -165,7 +165,7 @@ public class CurveEditorComponent extends JComponent implements FocusListener {
   
   double F = 0.0D;
   
-  public bN() {
+  public CurveEditorComponent() {
     setBackground(Color.BLACK);
     setForeground(Color.WHITE);
     bO bO = new bO(this);

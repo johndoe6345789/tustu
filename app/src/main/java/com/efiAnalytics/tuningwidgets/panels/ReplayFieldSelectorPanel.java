@@ -52,7 +52,7 @@ public class ReplayFieldSelectorPanel extends ExceptionEqualsinaipackage impleme
   
   int ExceptionExtensionGetmessage = 0;
   
-  public ae(R paramR, GComponentBc parambc) {
+  public ReplayFieldSelectorPanel(R paramR, GComponentBc parambc) {
     this.ExceptionInVPackage = paramR;
     this.b = this.ExceptionInVPackage.c(parambc.d());
     this.ExceptionPrintstacktrace = parambc.ExceptionInVPackage();

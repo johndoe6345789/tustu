@@ -22,7 +22,7 @@ public class HexByteTextArea extends JTextArea {
   
   private ArrayList e = new ArrayList();
   
-  public aP() {
+  public HexByteTextArea() {
     setAutoscrolls(true);
     setFont(new Font("Monospaced", 0, 12));
     setColumns(77);

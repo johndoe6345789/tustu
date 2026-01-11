@@ -37,12 +37,12 @@ public class CommentBoxWindow extends JWindow {
   
   boolean h = false;
   
-  public bi(Window paramWindow, String paramString) {
+  public CommentBoxWindow(Window paramWindow, String paramString) {
     this(paramWindow, paramString, false);
     a();
   }
   
-  public bi(Window paramWindow, String paramString, boolean paramBoolean) {
+  public CommentBoxWindow(Window paramWindow, String paramString, boolean paramBoolean) {
     super(paramWindow);
     a();
     setBackground(new Color(0, 0, 0, 0));

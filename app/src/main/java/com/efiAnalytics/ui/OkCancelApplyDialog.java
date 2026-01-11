@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 public class OkCancelApplyDialog extends JDialog {
   ArrayList a = new ArrayList();
   
-  public ct(Window paramWindow, JComponent paramJComponent, String paramString, a parama, int paramInt) {
+  public OkCancelApplyDialog(Window paramWindow, JComponent paramJComponent, String paramString, a parama, int paramInt) {
     super(paramWindow, paramString);
     setLayout(new BorderLayout());
     a(parama);

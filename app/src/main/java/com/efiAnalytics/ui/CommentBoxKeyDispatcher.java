@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 class CommentBoxKeyDispatcher implements KeyEventDispatcher {
   Component a = null;
   
-  public bn(bi parambi, Component paramComponent) {
+  public CommentBoxKeyDispatcher(bi parambi, Component paramComponent) {
     this.a = paramComponent;
   }
   

@@ -37,7 +37,7 @@ public class ControllerSelectorPanel extends ck {
   
   private boolean e = false;
   
-  public ac(String[] paramArrayOfString, String paramString) {
+  public ControllerSelectorPanel(String[] paramArrayOfString, String paramString) {
     setBorder(BorderFactory.createTitledBorder("Controller"));
     this.c = new JPanel();
     this.c.setLayout(new GridLayout(0, 1));

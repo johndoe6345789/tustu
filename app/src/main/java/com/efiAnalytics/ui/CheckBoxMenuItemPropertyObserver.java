@@ -7,7 +7,7 @@ public class CheckBoxMenuItemPropertyObserver implements dR {
   
   String b = "";
   
-  public ba(JCheckBoxMenuItem paramJCheckBoxMenuItem, String paramString) {
+  public CheckBoxMenuItemPropertyObserver(JCheckBoxMenuItem paramJCheckBoxMenuItem, String paramString) {
     this.a = paramJCheckBoxMenuItem;
     this.b = paramString;
   }

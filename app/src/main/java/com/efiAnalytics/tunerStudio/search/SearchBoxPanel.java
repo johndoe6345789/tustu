@@ -28,7 +28,7 @@ public class SearchBoxPanel extends JPanel {
   
   q e = null;
   
-  public m() {
+  public SearchBoxPanel() {
     setOpaque(false);
     this.b.setFont(this.a);
     this.b.setFocusCycleRoot(false);

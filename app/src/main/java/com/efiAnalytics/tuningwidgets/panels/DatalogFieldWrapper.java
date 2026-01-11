@@ -15,12 +15,12 @@ class DatalogFieldWrapper {
   
   private boolean e = false;
   
-  public z(n paramn, SerializableImplExceptionprintstacktrace paramac, ArrayList paramArrayList) {
+  public DatalogFieldWrapper(n paramn, SerializableImplExceptionprintstacktrace paramac, ArrayList paramArrayList) {
     this.a = paramac;
     this.c = paramArrayList;
   }
   
-  public z(n paramn, GComponentAl paramal, ArrayList paramArrayList) {
+  public DatalogFieldWrapper(n paramn, GComponentAl paramal, ArrayList paramArrayList) {
     this.b = paramal;
     this.c = paramArrayList;
   }

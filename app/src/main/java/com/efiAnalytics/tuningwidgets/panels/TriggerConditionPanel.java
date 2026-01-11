@@ -48,7 +48,7 @@ class TriggerConditionPanel extends JPanel {
   
   boolean n;
   
-  public k(SComponentGolf paramg, R paramR, boolean paramBoolean1, boolean paramBoolean2) {
+  public TriggerConditionPanel(SComponentGolf paramg, R paramR, boolean paramBoolean1, boolean paramBoolean2) {
     ButtonGroup buttonGroup = new ButtonGroup();
     this.n = RInterfaceIndia.a().a("sa0-0o0os-0o-0DS");
     l l = new l(this, paramg);

@@ -33,7 +33,7 @@ public class Table3DDataModel {
     a(paramInt1, paramInt2);
   }
   
-  public eR() {
+  public Table3DDataModel() {
     a(1, 1);
   }
   

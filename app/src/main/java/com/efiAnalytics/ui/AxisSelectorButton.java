@@ -30,13 +30,13 @@ public class AxisSelectorButton extends JComponent {
   
   List b = new ArrayList();
   
-  public fn(String paramString, Color paramColor) {
+  public AxisSelectorButton(String paramString, Color paramColor) {
     this();
     this.d = paramString;
     this.e = paramColor;
   }
   
-  public fn() {
+  public AxisSelectorButton() {
     addMouseListener(new fo(this));
     setForeground(UIManager.getColor("Label.foreground"));
     setBackground(UIManager.getColor("Label.background"));

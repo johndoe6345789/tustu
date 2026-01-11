@@ -13,7 +13,7 @@ public class TuneViewComponentLayout implements LayoutManager2 {
   
   Component c = null;
   
-  public h(TuneViewComponent paramTuneViewComponent) {
+  public TuneViewComponentLayout(TuneViewComponent paramTuneViewComponent) {
     this.a = paramTuneViewComponent;
     this.b = new g(paramTuneViewComponent);
     this.a.add(this.b);

@@ -25,7 +25,7 @@ public class ColorChooserPanel extends JPanel implements bc {
   
   JButton f;
   
-  public bd() {
+  public ColorChooserPanel() {
     setLayout(new BorderLayout());
     add("Center", this.a);
     JPanel jPanel = new JPanel();

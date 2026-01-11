@@ -43,7 +43,7 @@ public class EditableListPanel extends JPanel implements ListSelectionListener {
   
   public static String m = "Lower Item Index";
   
-  public ei() {
+  public EditableListPanel() {
     this.a.setVisibleRowCount(4);
     this.a.setModel(this.b);
     this.a.addListSelectionListener(this);

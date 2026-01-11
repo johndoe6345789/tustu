@@ -60,7 +60,7 @@ public abstract class AbstractChartComponent extends JComponent {
   
   int h = eJ.a(25);
   
-  public aS() {
+  public AbstractChartComponent() {
     setBackground(Color.BLACK);
     setForeground(Color.lightGray);
     aT aT = new aT(this);

@@ -13,7 +13,7 @@ public class AerodynamicDragHpFunction extends AbstractInAxPackage {
   
   AxInterfaceAb d;
   
-  protected c(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3, AxInterfaceAb paramab4) {
+  protected AerodynamicDragHpFunction(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3, AxInterfaceAb paramab4) {
     this.b = paramab1;
     this.a = paramab2;
     this.c = paramab3;

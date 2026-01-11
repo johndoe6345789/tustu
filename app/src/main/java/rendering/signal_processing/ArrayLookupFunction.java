@@ -17,7 +17,7 @@ public class ArrayLookupFunction extends AbstractInAxPackage {
   
   GInterfaceAi d;
   
-  public d(GInterfaceAi paramaI, AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ArrayLookupFunction(GInterfaceAi paramaI, AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
     this.d = paramaI;

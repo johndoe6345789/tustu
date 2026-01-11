@@ -41,7 +41,7 @@ public class TimeSlipPanel extends JPanel {
   
   JLabel l = new JLabel("", 0);
   
-  public e(String paramString, ab paramab) {
+  public TimeSlipPanel(String paramString, ab paramab) {
     this.BuComponentAlpha = paramab;
     setLayout(new BorderLayout(5, 5));
     JPanel jPanel1 = new JPanel();

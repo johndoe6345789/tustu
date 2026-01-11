@@ -1,7 +1,7 @@
 package G;
 
 public class GenericException extends Exception {
-  public q(String paramString) {
+  public GenericException(String paramString) {
     super(paramString);
   }
 }

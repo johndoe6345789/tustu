@@ -7,7 +7,7 @@ import java.util.List;
 public abstract class AbstractListFunction extends AbstractInAxPackage {
   List b;
   
-  protected r(List paramList) {
+  protected AbstractListFunction(List paramList) {
     this.b = paramList;
   }
   

@@ -19,11 +19,11 @@ public class CommentIconLabel extends JLabel {
   
   private ab c = null;
   
-  public cI(String paramString) {
+  public CommentIconLabel(String paramString) {
     this(paramString, (ab)null);
   }
   
-  public cI(String paramString, ab paramab) {
+  public CommentIconLabel(String paramString, ab paramab) {
     this.b = paramString;
     this.c = paramab;
     try {

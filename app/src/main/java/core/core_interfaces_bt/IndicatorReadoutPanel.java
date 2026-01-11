@@ -38,7 +38,7 @@ public class IndicatorReadoutPanel extends bh implements ca, RefreshableComponen
   
   GInterfaceBt e;
   
-  public r(R paramR, GInterfaceBt parambt) {
+  public IndicatorReadoutPanel(R paramR, GInterfaceBt parambt) {
     this.d = paramR;
     this.e = parambt;
     ExceptionInVPackage(paramR);

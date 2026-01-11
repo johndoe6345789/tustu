@@ -22,7 +22,7 @@ public class ContextHelpLabel extends JLabel {
   
   static ImageIcon c = null;
   
-  public l(R paramR, String paramString) {
+  public ContextHelpLabel(R paramR, String paramString) {
     this.a = paramR;
     this.b = paramString;
     if (c == null)

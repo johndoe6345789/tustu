@@ -20,7 +20,7 @@ public class WaitBarComponent extends JComponent {
   
   fI d = null;
   
-  public fH() {
+  public WaitBarComponent() {
     setMinimumSize(new Dimension(100, eJ.a(4)));
     setPreferredSize(new Dimension(100, eJ.a(4)));
     setOpaque(true);

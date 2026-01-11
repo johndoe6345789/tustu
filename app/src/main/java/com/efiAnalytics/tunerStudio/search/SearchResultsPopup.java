@@ -21,7 +21,7 @@ public class SearchResultsPopup extends JWindow {
   
   List d = new ArrayList();
   
-  public i() {
+  public SearchResultsPopup() {
     this.a.setLayout(new BoxLayout(this.a, 1));
     JScrollPane jScrollPane = new JScrollPane(this.a);
     jScrollPane.setMaximumSize(new Dimension(this.b, this.c));

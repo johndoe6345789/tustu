@@ -52,7 +52,7 @@ class IgnitionLoggerControlPanel extends JPanel {
   
   TriggerLoggerPanel k;
   
-  public o(TriggerLoggerPanel paramTriggerLoggerPanel) {
+  public IgnitionLoggerControlPanel(TriggerLoggerPanel paramTriggerLoggerPanel) {
     this.k = paramTriggerLoggerPanel;
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Ignition Logger Controls")));
     setLayout(new BorderLayout());

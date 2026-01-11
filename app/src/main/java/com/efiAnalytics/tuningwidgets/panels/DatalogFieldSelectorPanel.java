@@ -68,7 +68,7 @@ public class DatalogFieldSelectorPanel extends ExceptionEqualsinaipackage implem
   
   int m = 0;
   
-  public n(R paramR, GComponentAg paramag) {
+  public DatalogFieldSelectorPanel(R paramR, GComponentAg paramag) {
     this.ExceptionInVPackage = paramR;
     this.b = this.ExceptionInVPackage.c(paramag.ExceptionInVPackage());
     this.c = this.ExceptionInVPackage.c(paramag.b());

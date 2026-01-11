@@ -23,7 +23,7 @@ public class CommandResponse {
       b(paramm.v().u()); 
   }
   
-  public o() {}
+  public CommandResponse() {}
   
   public int a() {
     return this.a;

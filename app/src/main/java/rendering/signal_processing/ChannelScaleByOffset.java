@@ -25,12 +25,12 @@ public class ChannelScaleByOffset extends AbstractInAxPackage {
   
   double g = Double.NaN;
   
-  public w(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  public ChannelScaleByOffset(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.d = paramab1;
     this.b = paramab2;
   }
   
-  public w(GInterfaceAi paramaI, AxInterfaceAb paramab) {
+  public ChannelScaleByOffset(GInterfaceAi paramaI, AxInterfaceAb paramab) {
     this.a = paramaI;
     this.b = paramab;
   }

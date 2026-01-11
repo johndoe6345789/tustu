@@ -22,7 +22,7 @@ public class Table3DColorMapPanel extends JComponent {
   
   private Image g = null;
   
-  public cA() {
+  public Table3DColorMapPanel() {
     this.b = new dD(this);
     this.b.b(1000);
     setToolTipText("Hey");

@@ -20,7 +20,7 @@ public class TimeSlipDialog extends JDialog {
   
   ArrayList c = new ArrayList();
   
-  public b(Window paramWindow, String paramString, ab paramab) {
+  public TimeSlipDialog(Window paramWindow, String paramString, ab paramab) {
     super(paramWindow, paramString, Dialog.ModalityType.MODELESS);
     this.BuComponentAlpha = new e(paramString, paramab);
     this.b = paramab;

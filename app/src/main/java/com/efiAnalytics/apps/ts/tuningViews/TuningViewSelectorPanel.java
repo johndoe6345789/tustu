@@ -36,7 +36,7 @@ public class TuningViewSelectorPanel extends JPanel {
   
   private R h = null;
   
-  public b() {
+  public TuningViewSelectorPanel() {
     setLayout(new BorderLayout());
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Select Tuning View")));
     JPanel jPanel = new JPanel();

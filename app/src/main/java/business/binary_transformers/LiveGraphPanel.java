@@ -27,12 +27,12 @@ public class LiveGraphPanel extends dl implements GComponentCq, bc {
   
   private boolean d = false;
   
-  public s() {
+  public LiveGraphPanel() {
     this.ExceptionInVPackage = new u(this);
     addMouseListener(new v(this));
   }
   
-  public s(R paramR, GInterfaceBr parambr) {
+  public LiveGraphPanel(R paramR, GInterfaceBr parambr) {
     if (parambr != null && parambr.b() > 0) {
       GComponentBs[] arrayOfBs = parambr.ExceptionInVPackage();
       for (byte b = 0; b < arrayOfBs.length; b++) {

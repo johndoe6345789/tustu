@@ -50,23 +50,23 @@ public class UserParameterDialog extends JDialog implements ActionListener {
   
   JPanel l = new JPanel();
   
-  public fs(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2) {
+  public UserParameterDialog(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2) {
     this(paramWindow, paramString1, paramBoolean1, paramString2, paramBoolean2, (fx)null);
   }
   
-  public fs(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, String[] paramArrayOfString) {
+  public UserParameterDialog(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, String[] paramArrayOfString) {
     this(paramWindow, paramString1, paramBoolean1, paramString2, paramBoolean2, (fx)null, (fy)null, (ab)null, paramArrayOfString);
   }
   
-  public fs(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx) {
+  public UserParameterDialog(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx) {
     this(paramWindow, paramString1, paramBoolean1, paramString2, paramBoolean2, paramfx, (fy)null, (ab)null, (String[])null);
   }
   
-  public fs(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx, fy paramfy, ab paramab) {
+  public UserParameterDialog(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx, fy paramfy, ab paramab) {
     this(paramWindow, paramString1, paramBoolean1, paramString2, paramBoolean2, paramfx, paramfy, paramab, (String[])null);
   }
   
-  public fs(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx, fy paramfy, ab paramab, String[] paramArrayOfString) {
+  public UserParameterDialog(Window paramWindow, String paramString1, boolean paramBoolean1, String paramString2, boolean paramBoolean2, fx paramfx, fy paramfy, ab paramab, String[] paramArrayOfString) {
     super(paramWindow, "User Parameter", Dialog.ModalityType.DOCUMENT_MODAL);
     this.n = paramab;
     setTitle(a(""));

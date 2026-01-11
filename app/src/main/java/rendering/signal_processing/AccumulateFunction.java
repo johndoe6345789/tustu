@@ -16,12 +16,12 @@ public class AccumulateFunction extends AbstractInAxPackage implements GInterfac
   
   double e = Double.NaN;
   
-  protected b(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
+  protected AccumulateFunction(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
   }
   
-  protected b(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
+  protected AccumulateFunction(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
     this.a = paramab2;
     this.b = paramab1;
     this.c = paramab3;

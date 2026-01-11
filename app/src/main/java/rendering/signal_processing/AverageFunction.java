@@ -8,7 +8,7 @@ import java.util.List;
 public class AverageFunction extends AbstractInAxPackage {
   List a;
   
-  protected e(List paramList) {
+  protected AverageFunction(List paramList) {
     this.a = paramList;
   }
   

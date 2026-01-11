@@ -5,7 +5,7 @@ import java.io.File;
 public class ProjectFolder {
   private File a;
   
-  public k(File paramFile) {
+  public ProjectFolder(File paramFile) {
     this.a = paramFile;
   }
   

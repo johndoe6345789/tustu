@@ -3,9 +3,9 @@ package com.efiAnalytics.ui;
 import javax.swing.JMenu;
 
 public class DynamicMenu extends JMenu implements bq {
-  public bp() {}
+  public DynamicMenu() {}
   
-  public bp(String paramString) {
+  public DynamicMenu(String paramString) {
     super(paramString);
   }
 }

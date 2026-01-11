@@ -20,7 +20,7 @@ public class ProgressBar extends JComponent {
   
   Color g = Color.red;
   
-  public dM() {
+  public ProgressBar() {
     dN dN = new dN(this);
     addMouseListener(dN);
     addMouseMotionListener(dN);

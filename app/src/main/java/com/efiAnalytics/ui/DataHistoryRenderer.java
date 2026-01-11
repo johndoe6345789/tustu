@@ -35,7 +35,7 @@ public class DataHistoryRenderer {
   
   Stroke i = new BasicStroke(2.0F, 1, 2);
   
-  public dm(JComponent paramJComponent) {
+  public DataHistoryRenderer(JComponent paramJComponent) {
     this.b = paramJComponent;
   }
   

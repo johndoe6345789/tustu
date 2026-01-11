@@ -19,7 +19,7 @@ public class GridSelectionWindow extends JWindow {
   
   ArrayList f = new ArrayList();
   
-  public fc() {
+  public GridSelectionWindow() {
     setLayout(new GridLayout(this.e, this.d));
     ff ff = new ff(this);
     for (byte b = 0; b < this.e; b++) {

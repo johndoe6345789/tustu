@@ -21,7 +21,7 @@ public class WebViewPanel extends JPanel {
   
   private WebEngine e;
   
-  public eD() {
+  public WebViewPanel() {
     a();
   }
   

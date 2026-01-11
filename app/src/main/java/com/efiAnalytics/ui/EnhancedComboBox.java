@@ -10,7 +10,7 @@ public class EnhancedComboBox extends JComboBox {
   
   Color b = null;
   
-  public de() {
+  public EnhancedComboBox() {
     setDoubleBuffered(false);
     addMouseListener(new df(this));
     addFocusListener(new dg(this));

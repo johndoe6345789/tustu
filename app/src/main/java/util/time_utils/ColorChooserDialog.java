@@ -88,7 +88,7 @@ public class ColorChooserDialog extends IOPropertiesUsingFile implements f {
   
   JDialog H = null;
   
-  public d(Window paramWindow, ai paramai, String paramString) {
+  public ColorChooserDialog(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);
     IOPropertiesUsingFile((et)new dQ((IOPropertiesUsingFile.IOPropertiesUsingFile()).an, "DashDesignerColorDialog"));
     IOPropertiesUsingFile(paramai);

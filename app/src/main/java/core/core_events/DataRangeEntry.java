@@ -9,7 +9,7 @@ public class DataRangeEntry implements Serializable {
   
   private String c;
   
-  public y(String paramString, int paramInt1, int paramInt2) {
+  public DataRangeEntry(String paramString, int paramInt1, int paramInt2) {
     this.c = paramString;
     this.a = paramInt1;
     this.b = paramInt2;

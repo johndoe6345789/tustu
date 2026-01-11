@@ -7,7 +7,7 @@ public class PageIndexException extends Exception {
   
   private boolean c = true;
   
-  public l(String paramString) {
+  public PageIndexException(String paramString) {
     super(paramString);
   }
   

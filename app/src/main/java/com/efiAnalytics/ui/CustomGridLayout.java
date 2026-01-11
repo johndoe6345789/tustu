@@ -17,7 +17,7 @@ public class CustomGridLayout implements LayoutManager, Serializable {
   
   int d;
   
-  public cR() {
+  public CustomGridLayout() {
     this(1, 0, 0, 0);
   }
   

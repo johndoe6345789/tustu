@@ -88,7 +88,7 @@ public class Table3DViewComponent extends JComponent implements FocusListener {
   
   Stroke i = new BasicStroke(1.0F, 0, 2, 0.0F, new float[] { 1.0F, 2.0F }, 0.0F);
   
-  public eM() {
+  public Table3DViewComponent() {
     if (A.i().b()) {
       this.a = new eT(this);
       eP eP = new eP(this);

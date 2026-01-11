@@ -5,7 +5,7 @@ import javax.swing.JMenuItem;
 public class MenuItemActionHandler implements l {
   JMenuItem a;
   
-  public h(JMenuItem paramJMenuItem) {
+  public MenuItemActionHandler(JMenuItem paramJMenuItem) {
     this.a = paramJMenuItem;
   }
   

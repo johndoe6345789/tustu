@@ -13,7 +13,7 @@ import r.ExceptionInVPackage;
 public class HelpBrowserPanel extends JPanel {
   JPanelExtensionInAiPackage ExceptionInVPackage = null;
   
-  public ad() {
+  public HelpBrowserPanel() {
     this.ExceptionInVPackage = new JPanelExtensionInAiPackage();
     setLayout(new BorderLayout());
     add("Center", (Component)this.ExceptionInVPackage);

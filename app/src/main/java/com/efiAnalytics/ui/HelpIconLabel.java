@@ -18,11 +18,11 @@ public class HelpIconLabel extends JLabel {
   
   ab b;
   
-  public cF(String paramString, ab paramab) {
+  public HelpIconLabel(String paramString, ab paramab) {
     this(paramString, paramab, 32);
   }
   
-  public cF(String paramString, ab paramab, int paramInt) {
+  public HelpIconLabel(String paramString, ab paramab, int paramInt) {
     this.b = paramab;
     this.c = paramString;
     if (a == null)

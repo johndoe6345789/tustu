@@ -109,7 +109,7 @@ public class TableEditorPanel extends JPanel implements TableModelListener {
     ExceptionInVPackage(params);
   }
   
-  public w() {
+  public TableEditorPanel() {
     if (UIManager.getLookAndFeel().toString().contains("Nimbus")) {
       this.u = 2;
     } else {

@@ -11,7 +11,7 @@ class PcVariableRefreshRequest {
     this.b = paramR;
   }
   
-  public i(g paramg, R paramR, String paramString) {
+  public PcVariableRefreshRequest(g paramg, R paramR, String paramString) {
     this.b = paramR;
     this.c = paramString;
   }

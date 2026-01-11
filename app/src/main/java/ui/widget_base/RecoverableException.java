@@ -5,11 +5,11 @@ import V.ExceptionInVPackage;
 public class RecoverableException extends ExceptionInVPackage {
   private boolean ExceptionInVPackage = true;
   
-  public m(String paramString) {
+  public RecoverableException(String paramString) {
     super(paramString);
   }
   
-  public m(String paramString, boolean paramBoolean) {
+  public RecoverableException(String paramString, boolean paramBoolean) {
     super(paramString);
     this.ExceptionInVPackage = paramBoolean;
   }

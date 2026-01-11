@@ -11,11 +11,11 @@ public class ValueComboBox extends JComboBox implements ItemListener {
   
   private int b = 1;
   
-  public y() {
+  public ValueComboBox() {
     this("");
   }
   
-  public y(String paramString) {
+  public ValueComboBox(String paramString) {
     addItemListener(this);
   }
   

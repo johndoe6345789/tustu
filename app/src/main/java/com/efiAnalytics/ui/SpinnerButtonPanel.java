@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class SpinnerButtonPanel extends JPanel {
   ArrayList a = new ArrayList();
   
-  public ew() {
+  public SpinnerButtonPanel() {
     setLayout(new GridLayout(2, 1));
     ez ez = new ez(this, 1);
     ez.setFocusable(false);

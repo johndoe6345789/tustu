@@ -32,7 +32,7 @@ public class UserInputDialog extends JDialog implements ActionListener {
   
   private ab g = null;
   
-  public fq(Window paramWindow, boolean paramBoolean, String paramString1, String paramString2, ab paramab) {
+  public UserInputDialog(Window paramWindow, boolean paramBoolean, String paramString1, String paramString2, ab paramab) {
     super(paramWindow, "User Input", Dialog.ModalityType.TOOLKIT_MODAL);
     this.f = paramBoolean;
     this.e = paramWindow;

@@ -14,7 +14,7 @@ public class TimestampDisplayLabel extends JLabel {
   
   private boolean d = true;
   
-  public fj() {
+  public TimestampDisplayLabel() {
     setHorizontalAlignment(0);
   }
   

@@ -23,7 +23,7 @@ public class BitStringValueProvider implements db, Serializable {
   
   StringBuffer e = new StringBuffer();
   
-  public d(cZ paramcZ, String paramString1, String paramString2) {
+  public BitStringValueProvider(cZ paramcZ, String paramString1, String paramString2) {
     this.c = paramcZ;
     this.d = paramString1;
     this.b = paramString2;

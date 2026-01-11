@@ -33,7 +33,7 @@ public class PdfViewerDialog {
   
   et c = null;
   
-  public dK(Window paramWindow) {
+  public PdfViewerDialog(Window paramWindow) {
     this.a = new SwingController();
     Properties properties = new Properties();
     properties.setProperty("application.showLocalStorageDialogs", Boolean.FALSE.toString());

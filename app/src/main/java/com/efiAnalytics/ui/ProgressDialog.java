@@ -17,7 +17,7 @@ public class ProgressDialog extends JDialog {
   
   JLabel c = new JLabel("", 0);
   
-  public eB(Window paramWindow, String paramString1, String paramString2, boolean paramBoolean1, boolean paramBoolean2) {
+  public ProgressDialog(Window paramWindow, String paramString1, String paramString2, boolean paramBoolean1, boolean paramBoolean2) {
     super(paramWindow, paramString1, JDialog.DEFAULT_MODALITY_TYPE);
     setModal(paramBoolean2);
     setLayout(new BorderLayout());

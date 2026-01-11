@@ -23,7 +23,7 @@ public class MessageDialog extends JDialog implements ActionListener {
   
   JButton c;
   
-  public dk(Frame paramFrame, String paramString, boolean paramBoolean) {
+  public MessageDialog(Frame paramFrame, String paramString, boolean paramBoolean) {
     super(paramFrame, "Message", true);
     setLayout(new BorderLayout());
     Panel panel = new Panel();

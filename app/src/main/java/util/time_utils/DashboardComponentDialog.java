@@ -20,7 +20,7 @@ public abstract class DashboardComponentDialog extends JDialog {
   
   boolean f = true;
   
-  public a(Window paramWindow, String paramString) {
+  public DashboardComponentDialog(Window paramWindow, String paramString) {
     super(paramWindow, paramString);
   }
   

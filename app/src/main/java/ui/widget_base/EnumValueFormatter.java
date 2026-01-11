@@ -5,7 +5,7 @@ import java.util.List;
 public class EnumValueFormatter implements ValueFormatter {
   private String[] a;
   
-  public l(List paramList) {
+  public EnumValueFormatter(List paramList) {
     this.a = (String[])paramList.toArray((Object[])new String[0]);
   }
   

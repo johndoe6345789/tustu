@@ -37,15 +37,15 @@ public class WizardPanel extends JPanel {
   
   ArrayList h = new ArrayList();
   
-  public fL() {
+  public WizardPanel() {
     this((String)null);
   }
   
-  public fL(String paramString) {
+  public WizardPanel(String paramString) {
     this(paramString, (ab)null);
   }
   
-  public fL(String paramString, ab paramab) {
+  public WizardPanel(String paramString, ab paramab) {
     a(paramab);
     paramString = (paramString == null) ? "" : a(paramString);
     setBorder(BorderFactory.createEmptyBorder(5, 5, 25, 5));

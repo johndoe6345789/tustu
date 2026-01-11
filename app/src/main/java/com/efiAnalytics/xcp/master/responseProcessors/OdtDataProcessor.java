@@ -34,7 +34,7 @@ public class OdtDataProcessor {
   
   int g = 0;
   
-  public b(GInterfaceAi paramaI, BoInterfaceLima paraml, BqInterfaceEcho parame) {
+  public OdtDataProcessor(GInterfaceAi paramaI, BoInterfaceLima paraml, BqInterfaceEcho parame) {
     this.a = parame;
     this.b = paramaI;
     this.TostringInBoPackage = paraml;

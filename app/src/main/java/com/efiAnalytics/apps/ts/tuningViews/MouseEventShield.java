@@ -9,7 +9,7 @@ import javax.swing.JComponent;
 public class MouseEventShield extends JComponent {
   TuneViewComponent a;
   
-  public g(TuneViewComponent paramTuneViewComponent) {
+  public MouseEventShield(TuneViewComponent paramTuneViewComponent) {
     this.a = paramTuneViewComponent;
   }
   

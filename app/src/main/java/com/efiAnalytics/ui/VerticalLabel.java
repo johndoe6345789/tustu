@@ -10,9 +10,9 @@ public class VerticalLabel extends JLabel {
   
   private Dimension b = null;
   
-  public fF() {}
+  public VerticalLabel() {}
   
-  public fF(String paramString) {
+  public VerticalLabel(String paramString) {
     setText(paramString);
     repaint();
   }
