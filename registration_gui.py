@@ -6,6 +6,7 @@ Implements the registration key generation algorithm with a graphical interface.
 
 import sys
 import hashlib
+import random
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QTextEdit, QTabWidget, QGroupBox,
@@ -13,6 +14,54 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
+
+
+class DummyDataGenerator:
+    """Generate realistic test data for registration"""
+    
+    FIRST_NAMES = [
+        "James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph",
+        "Mary", "Patricia", "Jennifer", "Linda", "Barbara", "Elizabeth", "Susan", "Jessica",
+        "Thomas", "Charles", "Christopher", "Daniel", "Matthew", "Anthony", "Mark", "Donald",
+        "Nancy", "Karen", "Betty", "Helen", "Sandra", "Donna", "Carol", "Ruth"
+    ]
+    
+    LAST_NAMES = [
+        "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis",
+        "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas",
+        "Taylor", "Moore", "Jackson", "Martin", "Lee", "Thompson", "White", "Harris",
+        "Clark", "Lewis", "Robinson", "Walker", "Young", "Allen", "King", "Wright"
+    ]
+    
+    DOMAINS = [
+        "gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "icloud.com",
+        "company.com", "business.net", "enterprise.org", "tech.io", "example.com"
+    ]
+    
+    PRODUCTS = ["MegaLogViewer", "TunerStudio", "DataLogger"]
+    
+    SECRETS = ["secret123", "testkey", "demo2024", "abc123xyz"]
+    
+    SERIALS = ["SN001", "SN002", "ABC123", "XYZ789", "DEV001", "TEST99"]
+    
+    @staticmethod
+    def generate():
+        """Generate a complete set of dummy registration data"""
+        first_name = random.choice(DummyDataGenerator.FIRST_NAMES)
+        last_name = random.choice(DummyDataGenerator.LAST_NAMES)
+        email = f"{first_name.lower()}.{last_name.lower()}@{random.choice(DummyDataGenerator.DOMAINS)}"
+        product = random.choice(DummyDataGenerator.PRODUCTS)
+        secret = random.choice(DummyDataGenerator.SECRETS)
+        serial = random.choice(DummyDataGenerator.SERIALS)
+        
+        return {
+            'first_name': first_name,
+            'last_name': last_name,
+            'email': email,
+            'product': product,
+            'secret': secret,
+            'serial': serial
+        }
 
 
 class RegistrationKeyGenerator:
@@ -225,6 +274,24 @@ class KeyGeneratorTab(QWidget):
         # Button layout
         button_layout = QHBoxLayout()
         
+        # Load Test Data button
+        test_data_btn = QPushButton("Load Test Data")
+        test_data_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #2196F3;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            QPushButton:hover {
+                background-color: #1976D2;
+            }
+        """)
+        test_data_btn.clicked.connect(self.load_test_data)
+        button_layout.addWidget(test_data_btn)
+        
         # Generate button
         generate_btn = QPushButton("Generate Registration Key")
         generate_btn.setStyleSheet("""
@@ -307,6 +374,40 @@ class KeyGeneratorTab(QWidget):
                 
         except Exception as e:
             QMessageBox.critical(self, "Error", f"An error occurred: {str(e)}")
+    
+    def load_test_data(self):
+        """Load dummy test data into the input fields"""
+        data = DummyDataGenerator.generate()
+        
+        # Map dummy data to input fields
+        field_mapping = {
+            'first_name': data['first_name'],
+            'last_name': data['last_name'],
+            'email': data['email'],
+            'product_name': data['product'],
+            'secret': data['secret'],
+            'serial': data['serial'],
+            'month': '01',
+            'year': '2015'
+        }
+        
+        # Populate fields that exist in this tab
+        for field_name, widget in self.inputs.items():
+            if field_name in field_mapping:
+                widget.setText(field_mapping[field_name])
+        
+        # Show info about loaded data
+        QMessageBox.information(
+            self,
+            "Test Data Loaded",
+            f"Dummy test data loaded:\n\n"
+            f"Name: {data['first_name']} {data['last_name']}\n"
+            f"Email: {data['email']}\n"
+            f"Product: {data['product']}\n"
+            f"Secret: {data['secret']}\n"
+            f"Serial: {data['serial']}\n\n"
+            f"Click 'Generate Registration Key' to create a valid key for this data."
+        )
     
     def copy_to_clipboard(self):
         """Copy the generated key to clipboard"""
@@ -472,6 +573,24 @@ class EmailParserTab(QWidget):
         
         # Button layout
         button_layout = QHBoxLayout()
+        
+        # Load Test Data button
+        test_data_btn = QPushButton("Load Test Data")
+        test_data_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #9C27B0;
+                color: white;
+                padding: 8px;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+            QPushButton:hover {
+                background-color: #7B1FA2;
+            }
+        """)
+        test_data_btn.clicked.connect(self.load_test_data)
+        button_layout.addWidget(test_data_btn)
         
         # Parse button
         parse_btn = QPushButton("Parse Email")
@@ -744,11 +863,42 @@ class EmailParserTab(QWidget):
             f"  Email: {email}\n"
             f"  Product: {product}"
         )
-        copy_btn.clicked.connect(self.copy_key)
-        layout.addWidget(copy_btn)
+    
+    def load_test_data(self):
+        """Load test data with a valid generated key"""
+        data = DummyDataGenerator.generate()
         
-        layout.addStretch()
-        self.setLayout(layout)
+        # Generate a valid key for this data using 5-param algorithm
+        valid_key = RegistrationKeyGenerator.generate_key_5param(
+            data['first_name'],
+            data['last_name'],
+            data['product'],
+            data['secret'],
+            data['email']
+        )
+        
+        # Populate the fields
+        self.first_name_output.setText(data['first_name'])
+        self.last_name_output.setText(data['last_name'])
+        self.email_output.setText(data['email'])
+        self.serial_output.setText(data['serial'])
+        self.key_output.setPlainText(valid_key)
+        
+        # Show info
+        QMessageBox.information(
+            self,
+            "Test Data Loaded",
+            f"Dummy test data with VALID key loaded:\n\n"
+            f"Name: {data['first_name']} {data['last_name']}\n"
+            f"Email: {data['email']}\n"
+            f"Product: {data['product']}\n"
+            f"Secret: {data['secret']}\n"
+            f"Serial: {data['serial']}\n"
+            f"Algorithm: 5-parameter (Standard)\n\n"
+            f"You can now:\n"
+            f"• Click 'Generate Email Format' to create formatted text\n"
+            f"• Click 'Validate Key' to verify (use product={data['product']}, secret={data['secret']})"
+        )
     
     def parse_email(self):
         """Parse registration information from email text"""

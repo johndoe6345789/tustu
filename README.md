@@ -206,15 +206,24 @@ The Email Parser tab provides bi-directional functionality:
   [End Registration]
   ```
 
-#### Validation
-- Click "Validate Key" on any tab to verify registration key correctness
-- Uses exact string comparison matching the Java implementation
-- Prompts for product name and secret key if needed
-- Indicates valid/invalid keys with color-coded feedback
+#### Test Data Generator
+- Click **"Load Test Data"** button on any tab (blue/purple button)
+- Automatically populates fields with realistic dummy data
+- Generates **valid registration keys** that pass validation
+- Includes first/last names, emails, products, secrets, and serials
+- EmailParser tab: generates complete set including valid key
+- Saves time during testing and development
 
-### Running the GUI
-```bash
-python3 registration_gui.py
+**Available Test Data**:
+- 32 first names (James, Mary, Robert, Jennifer, etc.)
+- 32 last names (Smith, Johnson, Williams, etc.)
+- 10 email domains (gmail.com, company.com, etc.)
+- 3 products: MegaLogViewer, TunerStudio, DataLogger
+- 4 secrets: secret123, testkey, demo2024, abc123xyz
+- 6 serial numbers: SN001, ABC123, XYZ789, etc.
+
+**Validation Guarantee**: Keys generated with test data are mathematically valid and will pass validation using the correct product/secret combination.
+
 ```
 
 ### Requirements
