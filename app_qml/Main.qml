@@ -36,10 +36,27 @@ ApplicationWindow {
         
         Menu {
             title: "&Communications"
-            MenuItem { text: "Connect"; checkable: true }
-            MenuItem { text: "Settings..." }
+            MenuItem { 
+                text: "Connect"; 
+                checkable: true 
+                onTriggered: {
+                    if (checked) {
+                        connectionDialog.open()
+                    } else {
+                        statusLabel.text = "Disconnected"
+                        statusLabel.color = "#ff6b6b"
+                    }
+                }
+            }
+            MenuItem { text: "Settings..."; onTriggered: connectionDialog.open() }
             MenuSeparator {}
-            MenuItem { text: "Detect Port" }
+            MenuItem { 
+                text: "Detect Port"
+                onTriggered: {
+                    statusLabel.text = "Detecting ports..."
+                    detectTimer.start()
+                }
+            }
         }
         
         Menu {
@@ -51,10 +68,18 @@ ApplicationWindow {
         
         Menu {
             title: "&Data Logging"
-            MenuItem { text: "Start Log (F2)" }
-            MenuItem { text: "Stop Log (F3)" }
+            MenuItem { 
+                id: startLogMenuItem
+                text: "Start Log (F2)" 
+                onTriggered: {
+                    text = "Stop Log (F3)"
+                    statusLabel.text = "Logging Active..."
+                    statusLabel.color = "#f39c12"
+                }
+            }
             MenuSeparator {}
             MenuItem { text: "View Logs..." }
+            MenuItem { text: "Log Settings..." }
         }
         
         Menu {
@@ -512,6 +537,122 @@ ApplicationWindow {
                 font.bold: true
                 Layout.fillWidth: true
                 wrapMode: Text.WordWrap
+            }
+        }
+    }
+    
+    // Connection Dialog
+    Dialog {
+        id: connectionDialog
+        title: "Connection Settings"
+        modal: true
+        width: 450
+        standardButtons: Dialog.Ok | Dialog.Cancel
+        
+        ColumnLayout {
+            spacing: 15
+            width: parent.width
+            
+            GroupBox {
+                title: "Serial Port Configuration"
+                Layout.fillWidth: true
+                
+                GridLayout {
+                    columns: 2
+                    rowSpacing: 10
+                    columnSpacing: 10
+                    anchors.fill: parent
+                    
+                    Label { text: "Port:" }
+                    ComboBox {
+                        id: portCombo
+                        Layout.fillWidth: true
+                        model: ["COM1", "COM3", "COM4", "/dev/ttyUSB0", "/dev/ttyACM0"]
+                        currentIndex: 1
+                    }
+                    
+                    Label { text: "Baud Rate:" }
+                    ComboBox {
+                        id: baudCombo
+                        Layout.fillWidth: true
+                        model: ["9600", "19200", "38400", "57600", "115200", "230400"]
+                        currentIndex: 4
+                    }
+                    
+                    Label { text: "Data Bits:" }
+                    ComboBox {
+                        Layout.fillWidth: true
+                        model: ["8", "7"]
+                        currentIndex: 0
+                    }
+                    
+                    Label { text: "Stop Bits:" }
+                    ComboBox {
+                        Layout.fillWidth: true
+                        model: ["1", "2"]
+                        currentIndex: 0
+                    }
+                    
+                    Label { text: "Parity:" }
+                    ComboBox {
+                        Layout.fillWidth: true
+                        model: ["None", "Even", "Odd"]
+                        currentIndex: 0
+                    }
+                }
+            }
+            
+            GroupBox {
+                title: "ECU Type"
+                Layout.fillWidth: true
+                
+                ComboBox {
+                    anchors.fill: parent
+                    model: ["MegaSquirt-II", "MegaSquirt-III", "MS2Extra", "MS3Pro", "Speeduino"]
+                    currentIndex: 0
+                }
+            }
+            
+            RowLayout {
+                Layout.fillWidth: true
+                
+                Button {
+                    text: "Detect Port"
+                    onClicked: {
+                        statusLabel.text = "Detecting ports..."
+                        detectTimer.start()
+                    }
+                }
+                
+                Button {
+                    text: "Test Connection"
+                    onClicked: {
+                        statusLabel.text = "Testing connection..."
+                        testTimer.start()
+                    }
+                }
+                
+                Item { Layout.fillWidth: true }
+            }
+        }
+        
+        onAccepted: {
+            statusLabel.text = "Connected to " + portCombo.currentText + " @ " + baudCombo.currentText
+            statusLabel.color = "#2ecc71"
+        }
+        
+        Timer {
+            id: detectTimer
+            interval: 1500
+            onTriggered: statusLabel.text = "Port detection complete"
+        }
+        
+        Timer {
+            id: testTimer
+            interval: 1000
+            onTriggered: {
+                statusLabel.text = "Connection OK"
+                statusLabel.color = "#2ecc71"
             }
         }
     }
