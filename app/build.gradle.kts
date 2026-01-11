@@ -32,6 +32,14 @@ tasks.test {
     useJUnitPlatform()
     testLogging {
         events("passed", "skipped", "failed")
+        showStandardStreams = true
+    }
+    // Add JAR to test classpath
+    doFirst {
+        val jarFile = file("build/libs/app-1.0.0.jar")
+        if (jarFile.exists()) {
+            classpath = classpath + files(jarFile)
+        }
     }
 }
 
