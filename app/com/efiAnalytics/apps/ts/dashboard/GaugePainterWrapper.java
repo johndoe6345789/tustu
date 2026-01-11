@@ -2,10 +2,10 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import com.efiAnalytics.apps.ts.dashboard.renderers.GaugePainter;
 
-class aE {
+class GaugePainterWrapper {
   GaugePainter a = null;
   
-  public aE(ad paramad, GaugePainter paramGaugePainter) {
+  public GaugePainterWrapper(ad paramad, GaugePainter paramGaugePainter) {
     this.a = paramGaugePainter;
   }
   
@@ -18,8 +18,8 @@ class aE {
   }
   
   public boolean equals(Object paramObject) {
-    if (paramObject instanceof aE) {
-      GaugePainter gaugePainter = ((aE)paramObject).a();
+    if (paramObject instanceof GaugePainterWrapper) {
+      GaugePainter gaugePainter = ((GaugePainterWrapper)paramObject).a();
       return gaugePainter.getName().equals(this.a.getName());
     } 
     return false;

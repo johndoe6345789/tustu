@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-public interface aQ {
+public interface RefreshCallback {
   void a();
 }
 

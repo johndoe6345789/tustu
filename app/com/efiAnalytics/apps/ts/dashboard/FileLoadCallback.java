@@ -2,7 +2,7 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import java.io.File;
 
-public interface aK {
+public interface FileLoadCallback {
   void a(File paramFile);
 }
 

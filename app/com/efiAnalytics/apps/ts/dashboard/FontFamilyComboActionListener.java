@@ -4,8 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
 
-class aD implements ActionListener {
-  aD(ad paramad) {}
+class FontFamilyComboActionListener implements ActionListener {
+  FontFamilyComboActionListener(ad paramad) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();

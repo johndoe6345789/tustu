@@ -2,10 +2,10 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import java.io.Serializable;
 
-class aM extends Thread implements Serializable {
+class IndicatorDemoThread extends Thread implements Serializable {
   boolean a = false;
   
-  public aM(Indicator paramIndicator, boolean paramBoolean) {
+  public IndicatorDemoThread(Indicator paramIndicator, boolean paramBoolean) {
     super("Indicator Demo");
     this.a = paramBoolean;
     setDaemon(true);

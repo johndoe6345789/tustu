@@ -8,7 +8,7 @@ import java.util.Properties;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
-class aI implements HyperlinkListener {
+class HtmlDisplayHyperlinkListener implements HyperlinkListener {
   long a = 0L;
   
   int b = 2000;

@@ -5,18 +5,18 @@ import G.cZ;
 import java.io.Serializable;
 import javax.swing.SwingUtilities;
 
-class aN implements cZ, Serializable {
+class IndicatorConfigurationProvider implements cZ, Serializable {
   boolean a = false;
   
-  aN(Indicator paramIndicator) {}
+  IndicatorConfigurationProvider(Indicator paramIndicator) {}
   
   public String a() {
     String str = this.b.getEcuConfigurationName();
     if ((str == null || str.isEmpty()) && T.a().c() != null)
       str = T.a().c().c(); 
     if (!this.a && T.a().c(this.b.e) != null) {
-      aO aO = new aO(this);
-      SwingUtilities.invokeLater(aO);
+      IndicatorChannelSetupRunnable indicatorChannelSetupRunnable = new IndicatorChannelSetupRunnable(this);
+      SwingUtilities.invokeLater(indicatorChannelSetupRunnable);
       this.a = true;
     } 
     return str;

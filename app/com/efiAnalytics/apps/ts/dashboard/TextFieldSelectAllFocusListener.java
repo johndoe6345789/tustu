@@ -4,8 +4,8 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
-class aF implements FocusListener {
-  aF(ad paramad) {}
+class TextFieldSelectAllFocusListener implements FocusListener {
+  TextFieldSelectAllFocusListener(ad paramad) {}
   
   public void focusLost(FocusEvent paramFocusEvent) {}
   

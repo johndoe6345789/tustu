@@ -2,10 +2,10 @@ package com.efiAnalytics.apps.ts.dashboard;
 
 import G.cq;
 
-class aL implements cq {
+class IndicatorOutputChannelListener implements cq {
   double a = -1.0D;
   
-  aL(Indicator paramIndicator) {}
+  IndicatorOutputChannelListener(Indicator paramIndicator) {}
   
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
     if (paramDouble != this.a) {

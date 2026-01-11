@@ -3,10 +3,10 @@ package com.efiAnalytics.apps.ts.dashboard;
 import V.a;
 import com.efiAnalytics.ui.bV;
 
-class aJ extends Thread {
+class DocumentLoaderThread extends Thread {
   String a;
   
-  aJ(HtmlDisplay paramHtmlDisplay, String paramString) {
+  DocumentLoaderThread(HtmlDisplay paramHtmlDisplay, String paramString) {
     super("DocLoader");
     this.a = paramString;
     setDaemon(true);

@@ -3,7 +3,7 @@ package com.efiAnalytics.apps.ts.dashboard;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class aH extends ArrayList implements Serializable {
+public class DataHistoryBuffer extends ArrayList implements Serializable {
   private int a = 200;
   
   public void a(double paramDouble) {

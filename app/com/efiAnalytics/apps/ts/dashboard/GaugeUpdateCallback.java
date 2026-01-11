@@ -1,6 +1,6 @@
 package com.efiAnalytics.apps.ts.dashboard;
 
-public interface aG {
+public interface GaugeUpdateCallback {
   void a(int paramInt, String paramString, boolean paramBoolean);
   
   void a();

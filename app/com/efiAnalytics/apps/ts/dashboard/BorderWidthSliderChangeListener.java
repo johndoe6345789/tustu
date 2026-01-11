@@ -4,8 +4,8 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-class aB implements ChangeListener {
-  aB(ad paramad) {}
+class BorderWidthSliderChangeListener implements ChangeListener {
+  BorderWidthSliderChangeListener(ad paramad) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     int i = ((JSlider)paramChangeEvent.getSource()).getValue();

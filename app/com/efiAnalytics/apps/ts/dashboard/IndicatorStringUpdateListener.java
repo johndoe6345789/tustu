@@ -3,8 +3,8 @@ package com.efiAnalytics.apps.ts.dashboard;
 import G.aN;
 import java.io.Serializable;
 
-class aP implements aN, Serializable {
-  aP(Indicator paramIndicator) {}
+class IndicatorStringUpdateListener implements aN, Serializable {
+  IndicatorStringUpdateListener(Indicator paramIndicator) {}
   
   public void a(String paramString1, String paramString2) {
     this.a.invalidatePainter();
