@@ -11,23 +11,10 @@ class ComboBoxKeyAdapter extends KeyAdapter {
   
   String[] c = null;
   
-  dh(de paramde) {}
-  
-  private int a() {
-    if (this.c == null) {
-      this.c = new String[this.d.getModel().getSize()];
-      for (byte b1 = 0; b1 < this.c.length; b1++)
-        this.c[b1] = this.d.getModel().getElementAt(b1).toString().toLowerCase(); 
-    } 
-    for (byte b = 0; b < this.c.length; b++) {
-      if (this.c[b].startsWith(this.b.toString()))
-        return b; 
-    } 
-    return -1;
-  }
+  i(e parame) {}
   
   public void keyPressed(KeyEvent paramKeyEvent) {
-    int i;
+    int j;
     long l;
     char c;
     byte b = 0;
@@ -46,41 +33,49 @@ class ComboBoxKeyAdapter extends KeyAdapter {
         break;
       case 10:
         return;
+      case 17:
+        return;
+      case 16:
+        return;
+      case 8:
+        if (this.b.length() > 0)
+          this.b.deleteCharAt(this.b.length() - 1); 
       default:
+        if (paramKeyEvent.isAltDown() || paramKeyEvent.isControlDown() || paramKeyEvent.isActionKey())
+          return; 
         l = System.currentTimeMillis();
         c = Character.toLowerCase(paramKeyEvent.getKeyChar());
-        if (l - this.a > 1500L) {
+        if (l - this.a > 3000L) {
           this.b.setLength(0);
           this.b.append(c);
           this.a = l;
-          break;
+        } else {
+          this.b.append(c);
         } 
-        this.b.append(c);
-        i = a();
-        if (i != -1)
-          this.d.setSelectedIndex(i); 
+        this.d.c(this.b.toString());
         break;
     } 
-    int j = this.d.getSelectedIndex();
+    int k = this.d.getSelectedIndex();
     if (b != 0) {
       paramKeyEvent.consume();
-      i = j + b;
-      if (i < 0) {
-        i = 0;
-      } else if (i >= this.d.getItemCount()) {
-        i = this.d.getItemCount() - 1;
+      j = k + b;
+      if (j < 0) {
+        j = 0;
+      } else if (j >= this.d.getItemCount()) {
+        j = this.d.getItemCount() - 1;
       } 
-      this.d.setSelectedIndex(i);
+      this.d.setSelectedIndex(j);
     } else {
-      i = this.d.getKeySelectionManager().selectionForKey(paramKeyEvent.getKeyChar(), this.d.getModel());
+      j = this.d.getKeySelectionManager().selectionForKey(paramKeyEvent.getKeyChar(), this.d.getModel());
     } 
-    if (i == -1 || i != j)
-      SwingUtilities.invokeLater(new di(this)); 
+    paramKeyEvent.consume();
+    if (j == -1 || j != k)
+      SwingUtilities.invokeLater(new j(this)); 
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dh.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/i.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

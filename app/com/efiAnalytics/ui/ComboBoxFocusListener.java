@@ -4,7 +4,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 class ComboBoxFocusListener implements FocusListener {
-  ComboBoxFocusListener(de paramde) {}
+  g(e parame) {}
   
   public void focusGained(FocusEvent paramFocusEvent) {
     this.a.repaint();
@@ -16,7 +16,7 @@ class ComboBoxFocusListener implements FocusListener {
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dg.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/g.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */
