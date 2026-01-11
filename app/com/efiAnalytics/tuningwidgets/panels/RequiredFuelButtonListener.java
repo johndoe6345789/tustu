@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aI implements ActionListener {
+class RequiredFuelButtonListener implements ActionListener {
   aI(aF paramaF) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {

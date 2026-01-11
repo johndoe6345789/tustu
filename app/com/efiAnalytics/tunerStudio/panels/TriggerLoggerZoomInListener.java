@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class as implements ActionListener {
-  as(ao paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
+class TriggerLoggerZoomInListener implements ActionListener {
+  TriggerLoggerZoomInListener(TriggerLoggerControlPanel paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.b.g.a(0.0D);

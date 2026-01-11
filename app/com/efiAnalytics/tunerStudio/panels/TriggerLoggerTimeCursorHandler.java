@@ -4,8 +4,8 @@ import com.efiAnalytics.ui.aY;
 import java.awt.Rectangle;
 import java.util.StringTokenizer;
 
-class an implements aY {
-  an(TriggerLoggerPanel paramTriggerLoggerPanel) {}
+class TriggerLoggerTimeCursorHandler implements aY {
+  TriggerLoggerTimeCursorHandler(TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void a(double paramDouble1, double paramDouble2) {
     String str1 = this.a.b.getText();

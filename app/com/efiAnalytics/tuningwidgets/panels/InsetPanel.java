@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.Insets;
 import javax.swing.JPanel;
 
-class aE extends JPanel {
+class InsetPanel extends JPanel {
   aE(az paramaz) {}
   
   public Insets getInsets() {

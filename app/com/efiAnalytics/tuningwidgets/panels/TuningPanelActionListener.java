@@ -3,7 +3,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aC implements ActionListener {
+class TuningPanelActionListener implements ActionListener {
   aC(az paramaz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {

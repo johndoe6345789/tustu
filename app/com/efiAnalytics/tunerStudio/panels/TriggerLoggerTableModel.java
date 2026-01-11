@@ -2,8 +2,8 @@ package com.efiAnalytics.tunerStudio.panels;
 
 import javax.swing.table.DefaultTableModel;
 
-class al extends DefaultTableModel {
-  al(TriggerLoggerPanel paramTriggerLoggerPanel) {}
+class TriggerLoggerTableModel extends DefaultTableModel {
+  TriggerLoggerTableModel(TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public boolean isCellEditable(int paramInt1, int paramInt2) {
     return false;

@@ -4,8 +4,8 @@ import W.n;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aw implements ActionListener {
-  aw(ao paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
+class TriggerLoggerEndButtonListener implements ActionListener {
+  TriggerLoggerEndButtonListener(TriggerLoggerControlPanel paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.b.g.l()) {

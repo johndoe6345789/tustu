@@ -9,12 +9,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import r.m;
 
-class ax extends Thread {
+class TriggerLoggerPlaybackThread extends Thread {
   boolean a = true;
   
   boolean b = false;
   
-  ax(TriggerLoggerPanel paramTriggerLoggerPanel) {}
+  TriggerLoggerPlaybackThread(TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void run() {
     try {

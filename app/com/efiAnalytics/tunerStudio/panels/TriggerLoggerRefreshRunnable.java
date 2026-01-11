@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-class ak implements Runnable {
-  ak(aj paramaj) {}
+class TriggerLoggerRefreshRunnable implements Runnable {
+  TriggerLoggerRefreshRunnable(HighSpeedLoggerThrottleThread paramaj) {}
   
   public void run() {
     TriggerLoggerPanel.a(this.a.e, TriggerLoggerPanel.e(this.a.e).e());

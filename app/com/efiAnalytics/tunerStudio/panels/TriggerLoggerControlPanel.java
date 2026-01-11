@@ -17,7 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 
-class ao extends JPanel {
+class TriggerLoggerControlPanel extends JPanel {
   JScrollBar a = new JScrollBar(0);
   
   JLabel b = new JLabel("  0", 0);
@@ -30,7 +30,7 @@ class ao extends JPanel {
   
   Image f = null;
   
-  public ao(TriggerLoggerPanel paramTriggerLoggerPanel) {
+  public TriggerLoggerControlPanel(TriggerLoggerPanel paramTriggerLoggerPanel) {
     JPanel jPanel = new JPanel();
     jPanel.setBackground(Color.GRAY);
     setLayout(new BorderLayout());

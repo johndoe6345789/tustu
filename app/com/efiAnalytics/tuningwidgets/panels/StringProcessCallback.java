@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import bt.bZ;
 
-class aB implements bZ {
+class StringProcessCallback implements bZ {
   aB(az paramaz) {}
   
   public void b(String paramString) {

@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import bt.bZ;
 
-class aH implements bZ {
+class SquirtsChangeHandler implements bZ {
   aH(aF paramaF) {}
   
   public void b(String paramString) {

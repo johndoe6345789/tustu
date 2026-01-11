@@ -34,7 +34,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import s.g;
 
-public class aF extends d implements aN, aO, bc {
+public class InjectorControlPanel extends d implements aN, aO, bc {
   y a;
   
   R b = null;

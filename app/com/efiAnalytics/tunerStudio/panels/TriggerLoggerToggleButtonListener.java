@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class aq implements ActionListener {
-  aq(ao paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
+class TriggerLoggerToggleButtonListener implements ActionListener {
+  TriggerLoggerToggleButtonListener(TriggerLoggerControlPanel paramao, TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     TriggerLoggerPanel.g(this.b.g);

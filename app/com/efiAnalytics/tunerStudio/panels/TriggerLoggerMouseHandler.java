@@ -4,14 +4,14 @@ import com.efiAnalytics.ui.eJ;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class am extends MouseAdapter {
+class TriggerLoggerMouseHandler extends MouseAdapter {
   int a = eJ.a(4);
   
   boolean b = false;
   
   boolean c = false;
   
-  am(TriggerLoggerPanel paramTriggerLoggerPanel) {}
+  TriggerLoggerMouseHandler(TriggerLoggerPanel paramTriggerLoggerPanel) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {}
   

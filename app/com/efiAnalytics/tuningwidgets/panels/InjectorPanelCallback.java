@@ -2,7 +2,7 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import bt.bZ;
 
-class aG implements bZ {
+class InjectorPanelCallback implements bZ {
   aG(aF paramaF) {}
   
   public void b(String paramString) {
