@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class I extends MouseAdapter {
-  I(w paramw) {}
+class RowHeaderClickListener extends MouseAdapter {
+  RowHeaderClickListener(w paramw) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (this.a.isEnabled() && paramMouseEvent.getClickCount() == 1 && paramMouseEvent.getButton() == 1) {

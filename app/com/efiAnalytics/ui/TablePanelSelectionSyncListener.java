@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
-class P implements aA {
-  P(w paramw) {}
+class TablePanelSelectionSyncListener implements aA {
+  TablePanelSelectionSyncListener(w paramw) {}
   
   public void a(boolean paramBoolean) {
     if (paramBoolean ^ this.a.i.isSelected())

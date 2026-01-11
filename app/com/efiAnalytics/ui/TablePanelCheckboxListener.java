@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class O implements ActionListener {
-  O(w paramw) {}
+class TablePanelCheckboxListener implements ActionListener {
+  TablePanelCheckboxListener(w paramw) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.d(this.a.i.isSelected());

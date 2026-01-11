@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class L implements ActionListener {
-  L(w paramw) {}
+class TablePanelEditListener implements ActionListener {
+  TablePanelEditListener(w paramw) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.e();

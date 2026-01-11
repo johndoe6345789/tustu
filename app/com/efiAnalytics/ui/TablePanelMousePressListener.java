@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class J extends MouseAdapter {
-  J(w paramw) {}
+class TablePanelMousePressListener extends MouseAdapter {
+  TablePanelMousePressListener(w paramw) {}
   
   public void mousePressed(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getButton() == 3) {
