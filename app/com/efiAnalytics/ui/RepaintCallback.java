@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface dC {
+public interface RepaintCallback {
   void a();
 }
 

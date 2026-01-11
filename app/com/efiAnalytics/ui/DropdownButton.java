@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
-public class dc extends cp implements ItemSelectable, ActionListener {
+public class DropdownButton extends cp implements ItemSelectable, ActionListener {
   ArrayList z = new ArrayList();
   
   JPopupMenu A = new JPopupMenu();
