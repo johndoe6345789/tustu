@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 import r.i;
 import s.g;
 
-class k extends JPanel {
+class TriggerConditionPanel extends JPanel {
   JRadioButton a = new JRadioButton(g.b("Manual"));
   
   JRadioButton b = new JRadioButton(g.b("Simple"));

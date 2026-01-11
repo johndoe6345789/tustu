@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.g;
 
-public class A extends bh {
+public class ProfileDatalogFieldsPanel extends bh {
   R[] a = null;
   
   private String k = "";

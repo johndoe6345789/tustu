@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class j implements ActionListener {
-  j(g paramg) {}
+class AutoLoggingOkListener implements ActionListener {
+  AutoLoggingOkListener(AutoLoggingTriggerPanel paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.c()) {

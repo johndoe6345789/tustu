@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class B implements ActionListener {
-  B(A paramA) {}
+class ProfileAddAllFieldsListener implements ActionListener {
+  ProfileAddAllFieldsListener(ProfileDatalogFieldsPanel paramA) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.d();

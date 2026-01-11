@@ -2,8 +2,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 import java.util.Comparator;
 
-class x implements Comparator {
-  x(n paramn) {}
+class DatalogFieldComparator implements Comparator {
+  DatalogFieldComparator(DatalogFieldSelectorPanel paramn) {}
   
   public int a(z paramz1, z paramz2) {
     return paramz1.toString().compareToIgnoreCase(paramz2.toString());

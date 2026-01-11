@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import G.aN;
 import javax.swing.SwingUtilities;
 
-class o implements aN {
-  o(n paramn) {}
+class LogRecordSizeListener implements aN {
+  LogRecordSizeListener(DatalogFieldSelectorPanel paramn) {}
   
   public void a(String paramString1, String paramString2) {
     p p = new p(this);

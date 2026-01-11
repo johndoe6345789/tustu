@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-class r implements ListSelectionListener {
-  r(n paramn) {}
+class AvailableFieldSelectionListener implements ListSelectionListener {
+  AvailableFieldSelectionListener(DatalogFieldSelectorPanel paramn) {}
   
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     if (!paramListSelectionEvent.getValueIsAdjusting())

@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import s.g;
 
-public class a extends JPanel {
+public class CurveFitControlPanel extends JPanel {
   JComboBox a = new JComboBox();
   
   JComboBox b = new JComboBox();

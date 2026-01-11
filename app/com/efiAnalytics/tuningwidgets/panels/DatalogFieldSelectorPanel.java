@@ -41,7 +41,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import s.g;
 
-public class n extends bh implements aN, bc {
+public class DatalogFieldSelectorPanel extends bh implements aN, bc {
   R a = null;
   
   aM b = null;

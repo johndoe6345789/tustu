@@ -6,7 +6,7 @@ import G.al;
 import java.util.ArrayList;
 import java.util.List;
 
-class z {
+class DatalogFieldWrapper {
   ac a = null;
   
   al b = null;

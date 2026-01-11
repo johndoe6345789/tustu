@@ -1,6 +1,6 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-public interface f {
+public interface CurveFitListener {
   void a(String paramString);
   
   void b(String paramString);

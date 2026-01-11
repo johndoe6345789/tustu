@@ -26,7 +26,7 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import r.i;
 
-public class g extends bh implements bc {
+public class AutoLoggingTriggerPanel extends bh implements bc {
   R a;
   
   j b;

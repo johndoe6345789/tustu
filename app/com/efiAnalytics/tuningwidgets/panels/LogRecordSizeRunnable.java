@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-class p implements Runnable {
-  p(o paramo) {}
+class LogRecordSizeRunnable implements Runnable {
+  LogRecordSizeRunnable(LogRecordSizeListener paramo) {}
   
   public void run() {
     this.a.a.h();

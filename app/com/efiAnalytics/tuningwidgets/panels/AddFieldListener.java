@@ -5,8 +5,8 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class t implements ActionListener {
-  t(n paramn) {}
+class AddFieldListener implements ActionListener {
+  AddFieldListener(DatalogFieldSelectorPanel paramn) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {

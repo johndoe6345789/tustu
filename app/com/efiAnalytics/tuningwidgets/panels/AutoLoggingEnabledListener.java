@@ -7,8 +7,8 @@ import com.efiAnalytics.ui.bV;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class h implements ActionListener {
-  h(g paramg) {}
+class AutoLoggingEnabledListener implements ActionListener {
+  AutoLoggingEnabledListener(AutoLoggingTriggerPanel paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.j.isSelected()) {

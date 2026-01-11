@@ -5,8 +5,8 @@ import javax.swing.JLabel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-class m implements ChangeListener {
-  m(k paramk, g paramg, JLabel paramJLabel) {}
+class TriggerSliderListener implements ChangeListener {
+  TriggerSliderListener(TriggerConditionPanel paramk, AutoLoggingTriggerPanel paramg, JLabel paramJLabel) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     String str = this.c.e.getValue() + " s.";

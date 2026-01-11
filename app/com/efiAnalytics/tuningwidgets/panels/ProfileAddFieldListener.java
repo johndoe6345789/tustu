@@ -3,16 +3,16 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class c implements ActionListener {
-  c(a parama) {}
+class ProfileAddFieldListener implements ActionListener {
+  ProfileAddFieldListener(ProfileDatalogFieldsPanel paramA) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a.b(this.a);
+    this.a.c();
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/c.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/C.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

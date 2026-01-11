@@ -1,7 +1,7 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-class y implements Runnable {
-  y(n paramn) {}
+class DatalogFieldUpdateRunnable implements Runnable {
+  DatalogFieldUpdateRunnable(DatalogFieldSelectorPanel paramn) {}
   
   public void run() {
     this.a.c();

@@ -3,8 +3,8 @@ package com.efiAnalytics.tuningwidgets.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class w implements ActionListener {
-  w(n paramn) {}
+class RemoveAllFieldsListener implements ActionListener {
+  RemoveAllFieldsListener(DatalogFieldSelectorPanel paramn) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.removeAll();

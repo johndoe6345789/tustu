@@ -5,8 +5,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
-class q extends Thread {
-  q(n paramn, Runnable paramRunnable) {}
+class DatalogUpdateThread extends Thread {
+  DatalogUpdateThread(DatalogFieldSelectorPanel paramn, Runnable paramRunnable) {}
   
   public void run() {
     try {
