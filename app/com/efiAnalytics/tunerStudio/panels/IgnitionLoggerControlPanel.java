@@ -29,7 +29,7 @@ import r.a;
 import r.j;
 import s.g;
 
-class o extends JPanel {
+class IgnitionLoggerControlPanel extends JPanel {
   JButton a = null;
   
   JButton b = null;

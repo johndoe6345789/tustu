@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class i implements ActionListener {
-  i(g paramg) {}
+class DeleteProfileListener implements ActionListener {
+  DeleteProfileListener(DataLogProfileEditorPanel paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.e();

@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class l implements ActionListener {
-  l(g paramg) {}
+class ProfileCloseListener implements ActionListener {
+  ProfileCloseListener(DataLogProfileEditorPanel paramg) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.close();

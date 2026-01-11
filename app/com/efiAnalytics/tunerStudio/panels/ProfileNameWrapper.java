@@ -1,14 +1,14 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-class n {
+class ProfileNameWrapper {
   private String b;
   
-  n(g paramg, String paramString) {
+  ProfileNameWrapper(DataLogProfileEditorPanel paramg, String paramString) {
     this.b = paramString;
   }
   
   public String toString() {
-    return this.b.equals("") ? g.i : this.b;
+    return this.b.equals("") ? DataLogProfileEditorPanel.i : this.b;
   }
   
   public String a() {

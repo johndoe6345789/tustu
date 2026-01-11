@@ -3,8 +3,8 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class p implements ActionListener {
-  p(o paramo) {}
+class LoggerTypeListener implements ActionListener {
+  LoggerTypeListener(IgnitionLoggerControlPanel paramo) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.l();

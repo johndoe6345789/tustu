@@ -3,13 +3,13 @@ package com.efiAnalytics.tunerStudio.panels;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-class k implements ItemListener {
-  k(g paramg) {}
+class ProfileItemListener implements ItemListener {
+  ProfileItemListener(DataLogProfileEditorPanel paramg) {}
   
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1) {
-      String str = ((n)paramItemEvent.getItem()).a();
-      g.a(this.a, str);
+      String str = ((ProfileNameWrapper)paramItemEvent.getItem()).a();
+      DataLogProfileEditorPanel.a(this.a, str);
       this.a.b.h();
     } 
   }
