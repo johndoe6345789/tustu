@@ -20,7 +20,9 @@ def extract_class_info(filepath, content):
         'extends': None,
         'implements': [],
         'key_methods': [],
-        'description': None
+        'field_types': [],
+        'description': None,
+        'specific_name': None
     }
     
     # Extract class/interface/enum declaration
@@ -43,9 +45,54 @@ def extract_class_info(filepath, content):
         for impl in implements_match:
             info['implements'].extend([i.strip() for i in impl.split(',')])
     
-    # Extract key public methods (first 5)
+    # Extract ALL public methods (not just first 5)
     methods = re.findall(r'public\s+(?:static\s+)?(?:synchronized\s+)?\w+\s+(\w+)\s*\(', content)
-    info['key_methods'] = methods[:5]
+    info['key_methods'] = methods
+    
+    # Extract field types to understand what this class manages
+    field_types = re.findall(r'(?:private|protected|public)\s+(?:static\s+)?(?:final\s+)?(\w+)\s+\w+\s*[;=]', content)
+    info['field_types'] = [f for f in field_types if len(f) > 2][:10]  # Meaningful types only
+    
+    # Try to infer specific name from content
+    specific_name = None
+    
+    # Check for listener/callback patterns with specific event types
+    for impl in info['implements']:
+        if 'Listener' in impl or 'Callback' in impl:
+            # Extract the specific type (e.g., "DeviceUpdate" from "DeviceUpdateListener")
+            specific = impl.replace('Listener', '').replace('Callback', '').replace('Handler', '')
+            if len(specific) > 2:
+                specific_name = f"{specific}Listener"
+                break
+    
+    # Look for dominant field types (what this class manages)
+    if not specific_name and info['field_types']:
+        type_counts = {}
+        for ft in info['field_types']:
+            if ft not in ['int', 'long', 'boolean', 'double', 'float', 'String', 'List', 'Map']:
+                type_counts[ft] = type_counts.get(ft, 0) + 1
+        if type_counts:
+            dominant_type = max(type_counts.items(), key=lambda x: x[1])[0]
+            if len(dominant_type) > 2:
+                specific_name = f"{dominant_type}Manager"
+    
+    # Look for method name patterns (verbs + nouns)
+    if not specific_name and info['key_methods']:
+        # Find methods with meaningful names (>3 chars)
+        meaningful_methods = [m for m in info['key_methods'] if len(m) > 3]
+        if meaningful_methods:
+            # Look for common patterns
+            for method in meaningful_methods:
+                # handleXxx, processXxx, manageXxx patterns
+                for prefix in ['handle', 'process', 'manage', 'update', 'create', 'build']:
+                    if method.lower().startswith(prefix) and len(method) > len(prefix) + 2:
+                        noun = method[len(prefix):].capitalize()
+                        specific_name = f"{noun}Handler"
+                        break
+                if specific_name:
+                    break
+    
+    info['specific_name'] = specific_name
     
     # Generate description based on context
     desc_parts = []
