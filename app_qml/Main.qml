@@ -16,7 +16,7 @@ ApplicationWindow {
             MenuItem { text: "Open Project..."; onTriggered: console.log("Open") }
             MenuItem { text: "Recent Projects" }
             MenuSeparator {}
-            MenuItem { text: "Save Configuration"; shortcut: "Ctrl+S" }
+            MenuItem { text: "Save Configuration" }
             MenuItem { text: "Save As..." }
             MenuSeparator {}
             MenuItem { text: "Exit"; onTriggered: Qt.quit() }
@@ -48,8 +48,8 @@ ApplicationWindow {
         
         Menu {
             title: "&Data Logging"
-            MenuItem { text: "Start Log"; shortcut: "F2" }
-            MenuItem { text: "Stop Log"; shortcut: "F3" }
+            MenuItem { text: "Start Log (F2)" }
+            MenuItem { text: "Stop Log (F3)" }
             MenuSeparator {}
             MenuItem { text: "View Logs..." }
         }
