@@ -7,7 +7,7 @@ import java.awt.Component;
 import java.awt.KeyboardFocusManager;
 import r.i;
 
-public class ab {
+public class DashboardComponentHelper {
   public static Z a(String[] paramArrayOfString, Z paramZ) {
     Component[] arrayOfComponent = paramZ.c();
     for (byte b = 0; b < arrayOfComponent.length; b++) {

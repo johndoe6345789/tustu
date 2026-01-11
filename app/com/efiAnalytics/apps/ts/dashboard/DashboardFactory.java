@@ -27,7 +27,7 @@ import r.a;
 import r.j;
 import v.c;
 
-public class aa {
+public class DashboardFactory {
   public static int a = 1;
   
   public static String b = null;
@@ -46,7 +46,7 @@ public class aa {
   
   private final int j = 6;
   
-  private static aa k = new aa();
+  private static DashboardFactory k = new DashboardFactory();
   
   public static Color d = Color.GRAY;
   
