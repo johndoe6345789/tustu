@@ -394,12 +394,10 @@ class EmailParserTab(QWidget):
         
         # Instructions
         instructions = QLabel(
-            "Paste your registration email below. The system will automatically extract:\n"
-            "• First Name\n"
-            "• Last Name\n"
-            "• Email Address\n"
-            "• Registration Key\n"
-            "• Serial Number (if present)"
+            "Parse or Generate Registration Emails:\n\n"
+            "• PARSE: Paste a registration email and click 'Parse Email' to extract fields\n"
+            "• GENERATE: Fill in the fields below and click 'Generate Email Format' to create formatted text\n"
+            "• VALIDATE: Click 'Validate Key' to check if the registration key is correct"
         )
         instructions.setWordWrap(True)
         instructions.setStyleSheet("background-color: #e3f2fd; padding: 10px; border-radius: 5px;")
@@ -448,23 +446,23 @@ class EmailParserTab(QWidget):
         output_layout = QFormLayout()
         
         self.first_name_output = QLineEdit()
-        self.first_name_output.setReadOnly(True)
+        self.first_name_output.setPlaceholderText("Enter or parse first name")
         output_layout.addRow("First Name:", self.first_name_output)
         
         self.last_name_output = QLineEdit()
-        self.last_name_output.setReadOnly(True)
+        self.last_name_output.setPlaceholderText("Enter or parse last name")
         output_layout.addRow("Last Name:", self.last_name_output)
         
         self.email_output = QLineEdit()
-        self.email_output.setReadOnly(True)
+        self.email_output.setPlaceholderText("Enter or parse email address")
         output_layout.addRow("Email:", self.email_output)
         
         self.serial_output = QLineEdit()
-        self.serial_output.setReadOnly(True)
+        self.serial_output.setPlaceholderText("Optional serial number")
         output_layout.addRow("Serial Number:", self.serial_output)
         
         self.key_output = QTextEdit()
-        self.key_output.setReadOnly(True)
+        self.key_output.setPlaceholderText("Enter or parse registration key")
         self.key_output.setMaximumHeight(60)
         self.key_output.setFont(QFont("Courier", 11, QFont.Weight.Bold))
         output_layout.addRow("Registration Key:", self.key_output)
@@ -474,6 +472,29 @@ class EmailParserTab(QWidget):
         
         # Button layout
         button_layout = QHBoxLayout()
+        
+        # Parse button
+        parse_btn = QPushButton("Parse Email")
+        parse_btn.clicked.connect(self.parse_email)
+        button_layout.addWidget(parse_btn)
+        
+        # Generate button
+        generate_btn = QPushButton("Generate Email Format")
+        generate_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #4CAF50;
+                color: white;
+                padding: 8px;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+            QPushButton:hover {
+                background-color: #45a049;
+            }
+        """)
+        generate_btn.clicked.connect(self.generate_email)
+        button_layout.addWidget(generate_btn)
         
         # Copy button
         copy_btn = QPushButton("Copy Registration Key")
@@ -577,6 +598,48 @@ class EmailParserTab(QWidget):
         
         except Exception as e:
             QMessageBox.critical(self, "Parse Error", f"Error parsing email: {str(e)}")
+    
+    def generate_email(self):
+        """Generate registration email format from current field values"""
+        first_name = self.first_name_output.text().strip()
+        last_name = self.last_name_output.text().strip()
+        email = self.email_output.text().strip()
+        serial = self.serial_output.text().strip()
+        reg_key = self.key_output.toPlainText().strip()
+        
+        if not all([first_name, last_name, email, reg_key]):
+            QMessageBox.warning(
+                self,
+                "Incomplete Information",
+                "Please fill in at least First Name, Last Name, Email, and Registration Key\n"
+                "before generating the email format."
+            )
+            return
+        
+        # Generate the email format
+        email_format = "[Registration]\n"
+        email_format += f"First Name: {first_name}\n"
+        email_format += f"Last Name: {last_name}\n"
+        email_format += f"Registered email: {email}\n"
+        
+        if serial:
+            email_format += f"Serial Number: {serial}\n"
+        
+        email_format += f"Registration Key: {reg_key}\n"
+        email_format += "[End Registration]"
+        
+        # Display in the text area
+        self.email_text.setPlainText(email_format)
+        
+        # Copy to clipboard
+        QApplication.clipboard().setText(email_format)
+        
+        QMessageBox.information(
+            self,
+            "Email Generated",
+            "Registration email format generated and copied to clipboard!\n\n"
+            "You can now paste this into an email or document."
+        )
     
     def copy_key(self):
         """Copy registration key to clipboard"""

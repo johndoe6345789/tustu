@@ -166,3 +166,62 @@ if (calculatedKey != null && calculatedKey.equals(userEnteredKey) && !alreadyReg
 - No salt/random component (deterministic output)
 - Multiple hash iterations for additional complexity
 - Custom encoding prevents simple reverse engineering
+
+## GUI Application
+
+The PyQt6 GUI (`registration_gui.py`) provides an intuitive interface for:
+
+### Key Generation
+- **Basic Tab**: 4-parameter algorithm (first name, last name, product, email)
+- **5-Parameter Tab**: Standard algorithm with secret key
+- **7-Parameter Tab**: Enhanced algorithm with date fields (month, year)
+- **8-Parameter Tab**: Full algorithm with serial number support
+
+### Email Parser Tab
+The Email Parser tab provides bi-directional functionality:
+
+#### Parse Mode
+- Paste a registration email in `[Registration]...[End Registration]` format
+- Click "Parse Email" to extract:
+  - First Name
+  - Last Name
+  - Email Address
+  - Serial Number (if present)
+  - Registration Key
+
+#### Generate Mode
+- Manually enter or edit registration information in the fields
+- Click "Generate Email Format" to create formatted registration text
+- The generated email is automatically:
+  - Displayed in the text area
+  - Copied to clipboard
+- Format matches MegaLogViewer's expected structure:
+  ```
+  [Registration]
+  First Name: John
+  Last Name: Doe
+  Registered email: john.doe@example.com
+  Serial Number: ABC123
+  Registration Key: XYZ789...
+  [End Registration]
+  ```
+
+#### Validation
+- Click "Validate Key" on any tab to verify registration key correctness
+- Uses exact string comparison matching the Java implementation
+- Prompts for product name and secret key if needed
+- Indicates valid/invalid keys with color-coded feedback
+
+### Running the GUI
+```bash
+python3 registration_gui.py
+```
+
+### Requirements
+- Python 3.6+
+- PyQt6 6.6.0+
+
+Install dependencies:
+```bash
+pip install PyQt6
+```
