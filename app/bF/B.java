@@ -1,0 +1,11 @@
+package bF;
+
+public interface B {
+  void a(int paramInt1, int paramInt2, double paramDouble);
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/B.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

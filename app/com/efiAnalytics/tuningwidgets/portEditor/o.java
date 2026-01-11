@@ -1,0 +1,53 @@
+package com.efiAnalytics.tuningwidgets.portEditor;
+
+import G.R;
+import G.aM;
+import V.g;
+import bH.D;
+import bH.X;
+import s.g;
+
+class o {
+  private String d = "";
+  
+  R a = null;
+  
+  aM b = null;
+  
+  private int e = 0;
+  
+  public o(OutputPortEditor paramOutputPortEditor, R paramR, String paramString1, String paramString2, int paramInt) {
+    this.d = paramString2;
+    this.a = paramR;
+    this.b = paramR.c(paramString1);
+    this.e = paramInt;
+  }
+  
+  public String a() {
+    return this.d;
+  }
+  
+  public boolean equals(Object paramObject) {
+    return (paramObject instanceof String) ? a().equals(paramObject) : super.equals(paramObject);
+  }
+  
+  public boolean b() {
+    try {
+      double d = this.b.i(this.a.h())[this.e][0];
+      return (d != 0.0D);
+    } catch (g g) {
+      D.a("Failed to getValue for " + this.b.aL() + ", index = " + this.e, (Exception)g, null);
+      return false;
+    } 
+  }
+  
+  public String toString() {
+    return g.b(X.b(this.d, "\"", "")) + " ";
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/o.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

@@ -1,0 +1,989 @@
+package com.efiAnalytics.apps.ts.dashboard;
+
+import G.B;
+import G.aR;
+import G.c;
+import G.cZ;
+import G.da;
+import G.db;
+import G.dj;
+import G.dk;
+import G.i;
+import V.a;
+import V.g;
+import bH.D;
+import bH.X;
+import com.efiAnalytics.apps.ts.dashboard.renderers.GaugePainter;
+import com.efiAnalytics.apps.ts.dashboard.renderers.RoundAnalogGaugePainter;
+import com.efiAnalytics.apps.ts.dashboard.renderers.f;
+import com.efiAnalytics.ui.eJ;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.MediaTracker;
+import java.awt.RenderingHints;
+import java.awt.Toolkit;
+import java.awt.geom.Area;
+import java.io.Serializable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import s.g;
+
+public class Gauge extends SingleChannelDashComponent implements aR, Serializable {
+  protected dj a = (dj)new B(0.0D);
+  
+  protected dj b = (dj)new B(100.0D);
+  
+  private dj T = (dj)new B(Double.NEGATIVE_INFINITY);
+  
+  protected dj c = (dj)new B(Double.NEGATIVE_INFINITY);
+  
+  protected dj d = (dj)new B(85.0D);
+  
+  protected dj f = (dj)new B(93.0D);
+  
+  private double U = 0.0D;
+  
+  private double V = 100.0D;
+  
+  protected int g = 0;
+  
+  protected int h = 360;
+  
+  protected int i = 300;
+  
+  protected int j = 300;
+  
+  private boolean W = false;
+  
+  protected db k = (db)new c("Units");
+  
+  protected db l = (db)new c("Demo");
+  
+  protected dj m = (dj)new B(1.0D);
+  
+  private int X = -1;
+  
+  protected int n = 0;
+  
+  protected int o = 8;
+  
+  private double Y = Double.NaN;
+  
+  protected int p = 0;
+  
+  protected double q = -1.0D;
+  
+  protected double r = -1.0D;
+  
+  public static Color s = new Color(245, 245, 245);
+  
+  public static Color t = new Color(105, 105, 122);
+  
+  public static Color u = new Color(29, 31, 82);
+  
+  public static Color v = new Color(0, 0, 102);
+  
+  protected Color w = s;
+  
+  protected Color x = u;
+  
+  protected Color y = t;
+  
+  protected Color z = Color.yellow;
+  
+  protected Color A = Color.red;
+  
+  protected Color B = v;
+  
+  protected String C = "";
+  
+  protected double D = 0.0D;
+  
+  protected double E = 0.0D;
+  
+  private long Z = 0L;
+  
+  private double aa = 0.0D;
+  
+  private int ab = 15000;
+  
+  private long ac = 0L;
+  
+  private boolean ad = true;
+  
+  public static int F = 0;
+  
+  public static int G = 1;
+  
+  private int ae = G;
+  
+  private boolean af = true;
+  
+  private boolean ag = false;
+  
+  protected GaugePainter H = null;
+  
+  private transient aH ah = null;
+  
+  private String ai = null;
+  
+  private transient Image aj = null;
+  
+  private String ak = null;
+  
+  private transient Image al = null;
+  
+  cZ I = null;
+  
+  w J = new w(this);
+  
+  w K = new w(this);
+  
+  w L = new w(this);
+  
+  w M = new w(this);
+  
+  w N = new w(this);
+  
+  w O = new w(this);
+  
+  w P = new w(this);
+  
+  private int am = 0;
+  
+  public static int Q = 0;
+  
+  int R = -1;
+  
+  private String an = null;
+  
+  private String ao = null;
+  
+  private String ap = null;
+  
+  private String aq = null;
+  
+  public Gauge() {
+    setGaugePainter((GaugePainter)new RoundAnalogGaugePainter());
+    this.I = new v(this);
+  }
+  
+  public void paint(Graphics paramGraphics) {
+    if (this.H != null && getWidth() > 0 && getHeight() > 0) {
+      this.H.paintGauge(paramGraphics, this);
+      if (isInvalidState())
+        paintInvalid(paramGraphics); 
+    } 
+    setDirty(false);
+  }
+  
+  private void paintInvalid(Graphics paramGraphics) {
+    if (getBackColor().getRed() > 220 && getBackColor().getBlue() < 92 && getBackColor().getGreen() < 92) {
+      paramGraphics.setXORMode(getBackColor());
+    } else {
+      paramGraphics.setColor(Color.red);
+    } 
+    BasicStroke basicStroke = new BasicStroke(eJ.a(3));
+    Graphics2D graphics2D = (Graphics2D)paramGraphics;
+    graphics2D.setStroke(basicStroke);
+    graphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+    graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+    int i = getHeight() - 1;
+    paramGraphics.drawOval((getWidth() - i) / 2, 0, i, i);
+    int j = (int)((i / 2) * 1.414213D / 2.0D);
+    int k = getWidth() / 2;
+    int m = getHeight() / 2;
+    paramGraphics.drawLine(k - j, m - j, k + j, m + j);
+    paramGraphics.drawRect(1, 1, getWidth() - 3, getHeight() - 3);
+  }
+  
+  public void invalidate() {
+    if (this.H != null) {
+      this.E = getValue();
+      this.H.invalidate();
+    } 
+    this.X = -1;
+    super.invalidate();
+  }
+  
+  public void setBounds(int paramInt1, int paramInt2, int paramInt3, int paramInt4) {
+    if (this.H != null && (paramInt3 != getWidth() || paramInt4 != getHeight()))
+      this.H.invalidate(); 
+    this.R = paramInt2;
+    super.setBounds(paramInt1, paramInt2, paramInt3, paramInt4);
+  }
+  
+  public GaugePainter getGaugePainter() {
+    return this.H;
+  }
+  
+  public void setGaugePainter(GaugePainter paramGaugePainter) {
+    this.H = paramGaugePainter;
+    paramGaugePainter.initialize(this);
+    repaint();
+  }
+  
+  public double min() {
+    return getDefaultMin();
+  }
+  
+  public double getMin() {
+    return min();
+  }
+  
+  public void initializeExpressionMonitors() {
+    initExpressionMonitor(this.J, this.a);
+    initExpressionMonitor(this.K, this.b);
+    initExpressionMonitor(this.M, this.T);
+    initExpressionMonitor(this.L, this.c);
+    initExpressionMonitor(this.O, this.f);
+    initExpressionMonitor(this.N, this.d);
+    initExpressionMonitor(this.P, this.m);
+  }
+  
+  public dj getMinVP() {
+    return this.a;
+  }
+  
+  public void setMin(Object paramObject) {
+    if (!(this.a instanceof G.bR)) {
+      try {
+        this.a = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.J, this.a);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.WARNING, "Failed to set min monitor", (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public void setMinVP(Object paramObject) {
+    try {
+      this.a = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.J, this.a);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.WARNING, "Failed to set up Min Monitor", (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  private void initExpressionMonitor(w paramw, dj paramdj) {
+    if (this.I.a() != null && !this.I.a().isEmpty()) {
+      aR.a().a(paramw);
+      try {
+        i.a(this.I.a(), paramdj, paramw);
+      } catch (a a) {
+        D.a((Exception)a);
+      } 
+    } 
+  }
+  
+  public double max() {
+    return getDefaultMax();
+  }
+  
+  public double getMax() {
+    return max();
+  }
+  
+  public dj getMaxVP() {
+    return this.b;
+  }
+  
+  public void setMax(Object paramObject) {
+    if (!(this.b instanceof G.bR)) {
+      try {
+        this.b = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.K, this.b);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public void setMaxVP(Object paramObject) {
+    try {
+      this.b = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.K, this.b);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public double lowWarning() {
+    return this.c.a();
+  }
+  
+  public double getLowWarning() {
+    return lowWarning();
+  }
+  
+  public dj getLowWarningVP() {
+    return this.c;
+  }
+  
+  public void setLowWarning(Object paramObject) {
+    if (!(this.c instanceof G.bR)) {
+      try {
+        this.c = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.L, this.c);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public void setLowWarningVP(Object paramObject) {
+    try {
+      this.c = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.L, this.c);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public double highWarning() {
+    return this.d.a();
+  }
+  
+  public double getHighWarning() {
+    return highWarning();
+  }
+  
+  public dj getHighWarningVP() {
+    return this.d;
+  }
+  
+  public void setHighWarningVP(Object paramObject) {
+    try {
+      this.d = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.N, this.d);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public void setHighWarning(Object paramObject) {
+    if (!(this.d instanceof G.bR)) {
+      try {
+        this.d = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.N, this.d);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public double highCritical() {
+    return this.f.a();
+  }
+  
+  public double getHighCritical() {
+    return highCritical();
+  }
+  
+  public dj getHighCriticalVP() {
+    return this.f;
+  }
+  
+  public void setHighCritical(Object paramObject) {
+    if (!(this.f instanceof G.bR)) {
+      try {
+        this.f = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.O, this.f);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public void setHighCriticalVP(Object paramObject) {
+    try {
+      this.f = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.O, this.f);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public double lowCritical() {
+    return this.T.a();
+  }
+  
+  public double getLowCritical() {
+    return lowCritical();
+  }
+  
+  public dj getLowCriticalVP() {
+    return this.T;
+  }
+  
+  public void setLowCritical(Object paramObject) {
+    if (!(this.T instanceof G.bR)) {
+      try {
+        this.T = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.M, this.T);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+  }
+  
+  public void setLowCriticalVP(Object paramObject) {
+    try {
+      this.T = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.M, this.T);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public boolean isPegLimits() {
+    return this.ad;
+  }
+  
+  public void setPegLimits(boolean paramBoolean) {
+    this.ad = paramBoolean;
+  }
+  
+  public int getGroupId() {
+    return this.am;
+  }
+  
+  public void setGroupId(int paramInt) {
+    this.am = paramInt;
+  }
+  
+  public int getStartAngle() {
+    return this.g;
+  }
+  
+  public void setStartAngle(int paramInt) {
+    this.g = paramInt;
+    invalidatePainter();
+  }
+  
+  public int getFaceAngle() {
+    return this.h;
+  }
+  
+  public void setFaceAngle(int paramInt) {
+    this.h = paramInt;
+    invalidatePainter();
+  }
+  
+  public String units() {
+    try {
+      String str = this.k.a();
+      if (this.an != null && str.equals(this.an))
+        return this.ao; 
+      this.an = str;
+      this.ao = g.b(str);
+      return this.ao;
+    } catch (g g) {
+      return "";
+    } 
+  }
+  
+  public void setUnits(String paramString) {
+    try {
+      this.k = da.a().a(this.I, paramString);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public String getUnits() {
+    return this.k.toString();
+  }
+  
+  public String title() {
+    try {
+      String str = this.l.a();
+      if (this.ap != null && str.equals(this.ap))
+        return this.aq; 
+      this.ap = str;
+      this.aq = g.b(str);
+      return this.aq;
+    } catch (g g) {
+      return "Error";
+    } 
+  }
+  
+  public String getTitle() {
+    return this.l.toString();
+  }
+  
+  public void setTitle(String paramString) {
+    try {
+      this.l = da.a().a(this.I, paramString);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public int valueDigits() {
+    if (this.X == -1)
+      this.X = (int)Math.round(this.m.a()); 
+    return this.X;
+  }
+  
+  public int getValueDigits() {
+    return valueDigits();
+  }
+  
+  public dj getValueDigitsVP() {
+    return this.m;
+  }
+  
+  public void setValueDigits(Object paramObject) {
+    if (!(this.m instanceof G.bR)) {
+      try {
+        this.m = dk.a(this.I, paramObject.toString());
+        initExpressionMonitor(this.P, this.m);
+      } catch (g g) {
+        Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+      } 
+      invalidatePainter();
+    } 
+    this.X = -1;
+  }
+  
+  public void setValueDigitsVP(Object paramObject) {
+    try {
+      this.m = dk.a(this.I, paramObject.toString());
+      initExpressionMonitor(this.P, this.m);
+    } catch (g g) {
+      Logger.getLogger(Gauge.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g);
+    } 
+    invalidatePainter();
+  }
+  
+  public int getLabelDigits() {
+    return this.n;
+  }
+  
+  public void setLabelDigits(int paramInt) {
+    this.n = paramInt;
+    invalidatePainter();
+  }
+  
+  public double getMajorTicks() {
+    return this.q;
+  }
+  
+  public void setMajorTicks(double paramDouble) {
+    this.q = paramDouble;
+    invalidatePainter();
+  }
+  
+  public double getMinorTicks() {
+    return this.r;
+  }
+  
+  public void setMinorTicks(double paramDouble) {
+    this.r = paramDouble;
+    invalidatePainter();
+  }
+  
+  public Color getBackColor() {
+    return this.w;
+  }
+  
+  public void setBackColor(Color paramColor) {
+    this.w = paramColor;
+    invalidatePainter();
+  }
+  
+  public Color getFontColor() {
+    return this.x;
+  }
+  
+  public void setFontColor(Color paramColor) {
+    this.x = paramColor;
+    invalidatePainter();
+  }
+  
+  public Color getTrimColor() {
+    return this.y;
+  }
+  
+  public void setTrimColor(Color paramColor) {
+    this.y = paramColor;
+    invalidatePainter();
+  }
+  
+  public Color getWarnColor() {
+    return this.z;
+  }
+  
+  public void setWarnColor(Color paramColor) {
+    this.z = paramColor;
+    invalidatePainter();
+  }
+  
+  public Color getCriticalColor() {
+    return this.A;
+  }
+  
+  public void setCriticalColor(Color paramColor) {
+    this.A = paramColor;
+    invalidatePainter();
+  }
+  
+  public Color getNeedleColor() {
+    return this.B;
+  }
+  
+  public void setNeedleColor(Color paramColor) {
+    this.B = paramColor;
+  }
+  
+  public int getSweepAngle() {
+    return this.i;
+  }
+  
+  public void setSweepAngle(int paramInt) {
+    this.i = paramInt;
+    invalidatePainter();
+  }
+  
+  public int getSweepBeginDegree() {
+    return this.j;
+  }
+  
+  public void setSweepBeginDegree(int paramInt) {
+    this.j = paramInt;
+    invalidatePainter();
+  }
+  
+  public String getGaugeStyle() {
+    return this.H.getName();
+  }
+  
+  public String getDisplayValue() {
+    return X.c(getValue(), valueDigits());
+  }
+  
+  public double getValue() {
+    return this.D;
+  }
+  
+  public void setValue(double paramDouble) {
+    updateSmoothedValue(paramDouble);
+    boolean bool = (getValue() != paramDouble || Math.abs(this.E - paramDouble) / (this.b.a() - this.a.a()) > 0.004D) ? true : false;
+    this.D = paramDouble;
+    if (bool && myGaugeContainer() != null) {
+      myGaugeContainer().a(this);
+      setDirty(true);
+    } 
+  }
+  
+  public boolean isRunDemo() {
+    return false;
+  }
+  
+  public void setRunDemo(boolean paramBoolean) {}
+  
+  public boolean isShapeLockedToAspect() {
+    return this.H.isShapeLockedToAspect();
+  }
+  
+  public boolean isGoingDead() {
+    return false;
+  }
+  
+  public void setCurrentOutputChannelValue(String paramString1, String paramString2) {}
+  
+  public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
+    if (!Double.isNaN(paramDouble)) {
+      setValue(paramDouble);
+      double d = paramDouble;
+      if (getHistoricalPeakValue() < d || System.currentTimeMillis() - this.ac > getHistoryDelay()) {
+        this.ac = System.currentTimeMillis();
+        setHistoricalPeakValue(d);
+      } 
+      if (this.ah != null)
+        this.ah.a(paramDouble); 
+    } 
+  }
+  
+  private double updateSmoothedValue(double paramDouble) {
+    if (this.ae == G) {
+      long l = System.nanoTime() - this.Z;
+      this.Z = System.nanoTime();
+      if (l < 250000000L && !Double.isInfinite(this.E)) {
+        double d = this.E;
+        this.E = (this.D * l + d * 6.0E7D) / (l + 60000000L);
+      } else {
+        this.E = paramDouble;
+      } 
+    } else {
+      this.E = paramDouble;
+    } 
+    return this.E;
+  }
+  
+  public double getSmoothedValue() {
+    return this.E;
+  }
+  
+  public void goDead() {}
+  
+  public boolean isMustPaint() {
+    return (!isValid() || getBackColor().getAlpha() < 200 || getWarnColor().getAlpha() < 200 || getCriticalColor().getAlpha() < 200);
+  }
+  
+  public void paintBackground(Graphics paramGraphics) {
+    if (this.H != null)
+      this.H.paintBackground(paramGraphics, this); 
+  }
+  
+  public boolean requiresBackgroundRepaint() {
+    return !isValid() ? true : ((this.H != null) ? this.H.requiresBackgroundRepaint(this) : false);
+  }
+  
+  public void updateGauge(Graphics paramGraphics) {
+    if (this.H != null)
+      this.H.updateGauge(paramGraphics, this); 
+    if (isInvalidState())
+      paintInvalid(paramGraphics); 
+  }
+  
+  public boolean isDisplayValueAt180() {
+    return this.ag;
+  }
+  
+  public void setDisplayValueAt180(boolean paramBoolean) {
+    this.ag = paramBoolean;
+  }
+  
+  public int getNeedleSmoothing() {
+    return this.ae;
+  }
+  
+  public void setNeedleSmoothing(int paramInt) {
+    this.ae = paramInt;
+  }
+  
+  public double getDefaultMin() {
+    return Double.isNaN(getMinVP().a()) ? this.U : getMinVP().a();
+  }
+  
+  public void setDefaultMin(double paramDouble) {
+    this.U = paramDouble;
+  }
+  
+  public double getDefaultMax() {
+    return Double.isNaN(getMaxVP().a()) ? this.V : getMaxVP().a();
+  }
+  
+  public void setDefaultMax(double paramDouble) {
+    this.V = paramDouble;
+  }
+  
+  public void setRelativeBorderWidth2(double paramDouble) {
+    this.Y = paramDouble;
+  }
+  
+  public String getNeedleImageFileName() {
+    return this.ak;
+  }
+  
+  public void setNeedleImageFileName(String paramString) {
+    if (paramString != null && !paramString.startsWith("IMG_ID_"))
+      this.al = null; 
+    this.ak = paramString;
+    invalidatePainter();
+    repaint();
+  }
+  
+  public int getBorderWidth() {
+    return Double.isNaN(this.Y) ? this.o : (int)Math.round(getShortestSize() * getRelativeBorderWidth2());
+  }
+  
+  public double getRelativeBorderWidth2() {
+    return this.Y;
+  }
+  
+  public int getShortestSize() {
+    return (getWidth() > getHeight()) ? getHeight() : getWidth();
+  }
+  
+  public void setBorderWidth(int paramInt) {
+    this.o = paramInt;
+    invalidatePainter();
+  }
+  
+  public int getFontSizeAdjustment() {
+    return this.p;
+  }
+  
+  public void setFontSizeAdjustment(int paramInt) {
+    this.p = paramInt;
+    invalidatePainter();
+  }
+  
+  public void invalidatePainter() {
+    this.X = -1;
+    this.aj = null;
+    this.al = null;
+    if (this.H != null) {
+      this.H.invalidate();
+      setDirty(true);
+      repaint();
+    } 
+  }
+  
+  public double getHistoricalPeakValue() {
+    return this.aa;
+  }
+  
+  public void setHistoricalPeakValue(double paramDouble) {
+    this.aa = paramDouble;
+  }
+  
+  public boolean isShowHistory() {
+    return this.af;
+  }
+  
+  public void setShowHistory(boolean paramBoolean) {
+    this.aa = this.a.a();
+    this.af = paramBoolean;
+  }
+  
+  public int getHistoryDelay() {
+    return this.ab;
+  }
+  
+  public void setHistoryDelay(int paramInt) {
+    this.ab = paramInt;
+  }
+  
+  public void setAntialiasingOn(boolean paramBoolean) {
+    super.setAntialiasingOn(paramBoolean);
+    invalidate();
+  }
+  
+  public aH setCaptureHistoricalData(boolean paramBoolean) {
+    if (paramBoolean) {
+      if (this.ah == null)
+        this.ah = new aH(); 
+    } else {
+      this.ah = null;
+    } 
+    return this.ah;
+  }
+  
+  public String formatDouble(double paramDouble, int paramInt) {
+    return X.b(paramDouble, paramInt);
+  }
+  
+  public int historySize() {
+    return (this.ah == null) ? -1 : this.ah.size();
+  }
+  
+  public boolean isCounterClockwise() {
+    return this.W;
+  }
+  
+  public void setCounterClockwise(boolean paramBoolean) {
+    this.W = paramBoolean;
+    invalidate();
+  }
+  
+  public boolean isComponentPaintedAt(int paramInt1, int paramInt2) {
+    return (getGaugePainter() instanceof aR) ? ((aR)getGaugePainter()).isComponentPaintedAt(paramInt1, paramInt2) : ((paramInt1 <= getWidth() && paramInt2 <= getHeight()));
+  }
+  
+  public boolean isDirty() {
+    if (super.isDirty())
+      return true; 
+    double d1 = max() - min();
+    double d2 = Math.abs(getSmoothedValue() - getValue()) / d1;
+    if (d2 > Math.pow(10.0D, -valueDigits())) {
+      myGaugeContainer().a(this);
+      return true;
+    } 
+    return false;
+  }
+  
+  public String getBackgroundImageFileName() {
+    return this.ai;
+  }
+  
+  public void setBackgroundImageFileName(String paramString) {
+    this.ai = paramString;
+    if (paramString != null && !paramString.startsWith("IMG_ID_"))
+      if (!paramString.equals("")) {
+        this.aj = Toolkit.getDefaultToolkit().getImage(paramString);
+        MediaTracker mediaTracker = new MediaTracker(this);
+        mediaTracker.addImage(this.aj, 0);
+        try {
+          mediaTracker.waitForAll(250L);
+        } catch (InterruptedException interruptedException) {
+          Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+        } 
+      } else {
+        this.aj = null;
+      }  
+    invalidatePainter();
+    repaint();
+  }
+  
+  public Image backgroundImage() {
+    if (this.ai != null && !this.ai.isEmpty())
+      if (!this.ai.equals("")) {
+        this.aj = Toolkit.getDefaultToolkit().getImage(this.ai);
+        MediaTracker mediaTracker = new MediaTracker(this);
+        mediaTracker.addImage(this.aj, 0);
+        try {
+          mediaTracker.waitForAll(250L);
+        } catch (InterruptedException interruptedException) {
+          Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+        } 
+      } else {
+        this.aj = null;
+      }  
+    return this.aj;
+  }
+  
+  public Image needleImage(int paramInt) {
+    if (paramInt > 0 && this.ak != null && !this.ak.equals("") && !this.ak.startsWith("IMG_ID_") && (this.al == null || this.al.getHeight(null) != paramInt))
+      this.al = f.a().a(this.ak, paramInt, this); 
+    return this.al;
+  }
+  
+  public boolean imageUpdate(Image paramImage, int paramInt1, int paramInt2, int paramInt3, int paramInt4, int paramInt5) {
+    if (paramInt1 == 32) {
+      invalidatePainter();
+      repaint();
+    } 
+    return super.imageUpdate(paramImage, paramInt1, paramInt2, paramInt3, paramInt4, paramInt5);
+  }
+  
+  public Area areaPainted() {
+    return this.H.areaPainted(this);
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/Gauge.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

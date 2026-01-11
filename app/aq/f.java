@@ -1,0 +1,20 @@
+package aq;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JDialog;
+
+class f implements ActionListener {
+  f(a parama, JDialog paramJDialog) {}
+  
+  public void actionPerformed(ActionEvent paramActionEvent) {
+    if (a.e(this.b))
+      this.a.dispose(); 
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aq/f.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

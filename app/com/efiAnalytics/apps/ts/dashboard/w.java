@@ -1,0 +1,18 @@
+package com.efiAnalytics.apps.ts.dashboard;
+
+import G.aN;
+import java.io.Serializable;
+
+class w implements aN, Serializable {
+  w(Gauge paramGauge) {}
+  
+  public void a(String paramString1, String paramString2) {
+    this.a.invalidatePainter();
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/w.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

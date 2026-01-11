@@ -1,0 +1,21 @@
+package ao;
+
+import bE.m;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import javax.swing.JCheckBoxMenuItem;
+
+class fU implements ItemListener {
+  fU(fK paramfK) {}
+  
+  public void itemStateChanged(ItemEvent paramItemEvent) {
+    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState())
+      this.a.d(m.c); 
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fU.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

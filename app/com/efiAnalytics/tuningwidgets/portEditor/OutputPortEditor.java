@@ -1,0 +1,362 @@
+package com.efiAnalytics.tuningwidgets.portEditor;
+
+import G.R;
+import G.aM;
+import G.aS;
+import G.bq;
+import V.g;
+import V.j;
+import bH.D;
+import bH.X;
+import bH.p;
+import bt.a;
+import bt.l;
+import com.efiAnalytics.ui.bc;
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+import r.i;
+import s.g;
+
+public class OutputPortEditor extends JPanel implements bc {
+  R a = null;
+  
+  private aM o = null;
+  
+  private aM p = null;
+  
+  private aM q = null;
+  
+  private aM r = null;
+  
+  private aM s = null;
+  
+  private aM t = null;
+  
+  private List u = new ArrayList();
+  
+  private l v = new l(this);
+  
+  h b = null;
+  
+  s c = null;
+  
+  s d = null;
+  
+  g e = null;
+  
+  g f = null;
+  
+  j g = null;
+  
+  aS h = null;
+  
+  JLabel i = new JLabel(g.b("Active Delay"), 0);
+  
+  JLabel j = new JLabel(g.b("InActive Delay"), 0);
+  
+  List k = new ArrayList();
+  
+  List l = new ArrayList();
+  
+  JButton m = null;
+  
+  JButton n = null;
+  
+  public OutputPortEditor(R paramR, aS paramaS) {
+    this.h = paramaS;
+    this.a = paramR;
+    this.o = paramR.c(paramaS.d());
+    this.p = paramR.c(paramaS.h());
+    this.q = paramR.c(paramaS.i());
+    this.r = paramR.c(paramaS.j());
+    this.s = paramR.c(paramaS.t());
+    this.t = paramR.c(paramaS.u());
+    for (String str : paramaS.v())
+      this.u.add(paramR.c(str)); 
+    for (String str : paramaS.w())
+      this.k.add(new JLabel(g.b(str), 0)); 
+    a();
+    setLayout(new BorderLayout(5, 5));
+    JPanel jPanel1 = new JPanel();
+    jPanel1.setBorder(BorderFactory.createTitledBorder(g.b("Output Port")));
+    this.n = c();
+    jPanel1.setLayout(new GridLayout());
+    byte b1 = 0;
+    Iterator<String> iterator = paramaS.a();
+    while (iterator.hasNext()) {
+      String str = iterator.next();
+      boolean bool = true;
+      try {
+        bool = p.a(paramaS.a(b1), paramR);
+      } catch (g g1) {
+        Logger.getLogger(OutputPortEditor.class.getName()).log(Level.SEVERE, (String)null, (Throwable)g1);
+      } 
+      if (bool && !str.equals("INVALID") && !str.equals("\"INVALID\""))
+        l.a(this.v, new o(this, paramR, paramaS.d(), str, b1)); 
+      b1++;
+    } 
+    this.v.setSelectedIndex(0);
+    l.a(this.v, new a(this));
+    this.v.setBackground(getBackground());
+    JPanel jPanel2 = new JPanel();
+    jPanel2.setLayout(new BorderLayout());
+    JPanel jPanel3 = new JPanel();
+    jPanel3.setLayout(new BorderLayout());
+    jPanel3.add("West", new JLabel(g.b("Port")));
+    JPanel jPanel4 = new JPanel();
+    jPanel4.setLayout(new FlowLayout(2));
+    l l1 = new l(paramR, paramaS.d());
+    jPanel4.add((Component)l1);
+    if (i.a().a("HF-0FD-0HHFJG")) {
+      a a = new a(paramR, paramaS.d());
+      jPanel4.add((Component)a);
+      this.m = b();
+      jPanel4.add(this.m);
+      jPanel4.add(this.n);
+      f();
+    } 
+    jPanel3.add("Center", jPanel4);
+    jPanel2.add("North", jPanel3);
+    JScrollPane jScrollPane = new JScrollPane(this.v);
+    jPanel2.add("Center", jScrollPane);
+    jPanel1.add(jPanel2);
+    add("West", jPanel1);
+    JPanel jPanel5 = new JPanel();
+    jPanel5.setLayout(new BorderLayout());
+    JPanel jPanel6 = new JPanel();
+    jPanel6.setBorder(BorderFactory.createTitledBorder(g.b("Port Settings")));
+    jPanel6.setLayout(new FlowLayout(1, 10, 10));
+    this.b = new h(this, paramR, this.o.aL(), g.b("Enabled"));
+    this.b.addItemListener(new b(this));
+    JPanel jPanel7 = new JPanel();
+    jPanel7.setLayout(new GridLayout(0, 1));
+    jPanel7.add(new JLabel(""));
+    jPanel7.add(this.b);
+    jPanel6.add(jPanel7);
+    this.c = new s(paramR, paramaS.k(), g.b("Power On Value"), false);
+    jPanel6.add(this.c);
+    this.d = new s(paramR, paramaS.l(), g.b("Active Value"), false);
+    jPanel6.add(this.d);
+    if (paramaS.t() != null && paramR.c(paramaS.t()) != null) {
+      JPanel jPanel = new JPanel();
+      jPanel.setLayout(new GridLayout(0, 1));
+      jPanel.add(this.i);
+      bq bq = new bq();
+      bq.b(paramaS.t());
+      this.e = new g(this, paramR, bq);
+      jPanel.add((Component)this.e);
+      jPanel6.add(jPanel);
+    } 
+    if (paramaS.u() != null && paramR.c(paramaS.u()) != null) {
+      JPanel jPanel = new JPanel();
+      jPanel.setLayout(new GridLayout(0, 1));
+      jPanel.add(this.j);
+      bq bq = new bq();
+      bq.b(paramaS.u());
+      this.f = new g(this, paramR, bq);
+      jPanel.add((Component)this.f);
+      jPanel6.add(jPanel);
+    } 
+    for (byte b2 = 0; b2 < this.u.size(); b2++) {
+      aM aM1 = this.u.get(b2);
+      if (aM1 != null) {
+        JPanel jPanel = new JPanel();
+        jPanel.setLayout(new GridLayout(0, 1));
+        if (this.k.size() > b2) {
+          jPanel.add(this.k.get(b2));
+        } else {
+          jPanel.add(new JLabel(g.b("Attribute " + b2), 0));
+        } 
+        bq bq = new bq();
+        bq.b(aM1.aL());
+        g g1 = new g(this, paramR, bq);
+        jPanel.add((Component)g1);
+        this.l.add(g1);
+        jPanel6.add(jPanel);
+      } 
+    } 
+    jPanel5.add("North", jPanel6);
+    f f = new f(this);
+    f.setLayout(new FlowLayout(1, 6, 6));
+    f.setBorder(BorderFactory.createTitledBorder(g.b("Active Conditions")));
+    this.g = new j(this, paramR, paramaS);
+    f.add(this.g);
+    jPanel5.add("Center", f);
+    add("Center", jPanel5);
+    a(0);
+    a(this.b.isSelected());
+    c c = new c(this);
+    SwingUtilities.invokeLater(c);
+  }
+  
+  private void a() {
+    if (this.s == null && this.t == null)
+      return; 
+    try {
+      double[][] arrayOfDouble = this.o.i(this.a.h());
+      if (this.s != null) {
+        double[][] arrayOfDouble1 = this.s.i(this.a.h());
+        for (byte b = 0; b < arrayOfDouble.length; b++) {
+          if (arrayOfDouble[b][0] == 0.0D)
+            arrayOfDouble1[b][0] = 0.0D; 
+        } 
+        try {
+          this.s.a(this.a.h(), arrayOfDouble1);
+        } catch (j j1) {
+          Logger.getLogger(OutputPortEditor.class.getName()).log(Level.SEVERE, "Zero should be supported by onDelay", (Throwable)j1);
+        } 
+      } 
+      if (this.t != null) {
+        double[][] arrayOfDouble1 = this.t.i(this.a.h());
+        for (byte b = 0; b < arrayOfDouble.length; b++) {
+          if (arrayOfDouble[b][0] == 0.0D)
+            arrayOfDouble1[b][0] = 0.0D; 
+        } 
+        try {
+          this.t.a(this.a.h(), arrayOfDouble1);
+        } catch (j j1) {
+          Logger.getLogger(OutputPortEditor.class.getName()).log(Level.SEVERE, "Zero should be supported by offDelay", (Throwable)j1);
+        } 
+      } 
+    } catch (g g1) {
+      D.a((Exception)g1);
+    } 
+  }
+  
+  private JButton b() {
+    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("rename.png"));
+    ImageIcon imageIcon = new ImageIcon(image);
+    JButton jButton = new JButton(null, imageIcon);
+    jButton.setFocusable(false);
+    jButton.setToolTipText(g.b("Set an alias name for selected port"));
+    jButton.addActionListener(new d(this));
+    jButton.setPreferredSize(new Dimension(18, 18));
+    return jButton;
+  }
+  
+  private JButton c() {
+    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("eraser16.png"));
+    ImageIcon imageIcon = new ImageIcon(image);
+    JButton jButton = new JButton(null, imageIcon);
+    jButton.setFocusable(false);
+    jButton.setToolTipText(g.b("Clear alias name for selected port, return to default naming."));
+    jButton.addActionListener(new e(this));
+    jButton.setPreferredSize(new Dimension(18, 18));
+    jButton.setEnabled(false);
+    return jButton;
+  }
+  
+  private void d() {
+    o o = (o)this.v.a();
+    String str1 = X.b(o.a(), "\"", "");
+    String str2 = g.b(str1);
+    String str3 = JOptionPane.showInputDialog(this, g.b("Enter Alias for") + " " + str2, str2);
+    if (str3 != null && !str3.isEmpty())
+      g.c(str1, str3); 
+    this.v.repaint();
+  }
+  
+  private void e() {
+    o o = (o)this.v.a();
+    String str = X.b(o.a(), "\"", "");
+    g.d(str);
+    this.v.repaint();
+  }
+  
+  protected void a(String paramString) {
+    for (byte b = 0; b < this.v.b(); b++) {
+      o o = (o)this.v.a(b);
+      String str = o.a();
+      if (paramString.equals(str)) {
+        a(o.a(o));
+        f();
+        return;
+      } 
+    } 
+  }
+  
+  private void f() {
+    o o = (o)this.v.a();
+    String str = X.b(o.a(), "\"", "");
+    this.n.setEnabled(g.e(str));
+  }
+  
+  private void a(boolean paramBoolean) {
+    this.c.setEnabled(paramBoolean);
+    this.d.setEnabled(paramBoolean);
+    this.g.setEnabled(paramBoolean);
+    if (this.e != null) {
+      this.e.setEnabled(paramBoolean);
+      this.i.setEnabled(paramBoolean);
+    } 
+    if (this.f != null) {
+      this.f.setEnabled(paramBoolean);
+      this.j.setEnabled(paramBoolean);
+    } 
+    for (g g1 : this.l)
+      g1.setEnabled(paramBoolean); 
+    for (JLabel jLabel : this.k)
+      jLabel.setEnabled(paramBoolean); 
+  }
+  
+  protected void a(int paramInt) {
+    this.b.a(paramInt);
+    this.b.b();
+    this.c.b(paramInt);
+    this.d.b(paramInt);
+    this.g.a(paramInt);
+    if (this.e != null)
+      this.e.c(paramInt); 
+    if (this.f != null)
+      this.f.c(paramInt); 
+    for (g g1 : this.l)
+      g1.c(paramInt); 
+  }
+  
+  public void close() {
+    for (byte b = 0; b < getComponentCount(); b++) {
+      Component component = getComponent(b);
+      if (component instanceof bc)
+        ((bc)component).close(); 
+    } 
+    this.b.close();
+    if (this.q != null) {
+      this.q.b(1.0D);
+      this.q.c(0.0D);
+    } 
+    if (this.r != null) {
+      this.r.b(1.0D);
+      this.r.c(0.0D);
+    } 
+    if (this.e != null)
+      this.e.close(); 
+    if (this.f != null)
+      this.f.close(); 
+    for (g g1 : this.l)
+      g1.close(); 
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/OutputPortEditor.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

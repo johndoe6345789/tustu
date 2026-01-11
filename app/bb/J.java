@@ -1,0 +1,20 @@
+package bb;
+
+import bH.D;
+import java.awt.Cursor;
+
+class J implements Runnable {
+  J(I paramI) {}
+  
+  public void run() {
+    this.a.b.getGlassPane().setCursor(Cursor.getDefaultCursor());
+    this.a.b.getGlassPane().setVisible(false);
+    D.c("Set default Cursor");
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bb/J.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

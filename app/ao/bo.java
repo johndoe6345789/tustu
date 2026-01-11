@@ -1,0 +1,97 @@
+package ao;
+
+import com.efiAnalytics.ui.bq;
+import com.efiAnalytics.ui.br;
+import com.efiAnalytics.ui.eJ;
+import h.b;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.GridLayout;
+import java.util.ArrayList;
+import javax.swing.BorderFactory;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+
+public class bo extends JPanel implements k {
+  private String d = null;
+  
+  Font a = new Font("SansSerif", 1, eJ.a(20));
+  
+  int b = eJ.a(30);
+  
+  int c = eJ.a(15);
+  
+  public bo() {
+    setLayout(new GridLayout(0, 1, 1, 1));
+    if (b.a().a("fieldSmoothing"))
+      addMouseListener(new bp(this)); 
+  }
+  
+  public bo(String paramString) {
+    this();
+    a(paramString);
+  }
+  
+  public void paint(Graphics paramGraphics) {
+    super.paint(paramGraphics);
+    if (b.a().a("fieldSmoothing")) {
+      paramGraphics.setColor(UIManager.getColor("Label.foreground"));
+      paramGraphics.setFont(this.a);
+      paramGraphics.drawString("...", getWidth() - eJ.a(25), eJ.a(13));
+    } 
+  }
+  
+  public void a(String paramString) {
+    setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), paramString));
+    this.d = paramString;
+  }
+  
+  public void a(Color paramColor) {}
+  
+  public void a(Color paramColor, int paramInt) {}
+  
+  public void repaint() {
+    super.repaint();
+    for (byte b = 0; b < getComponentCount(); b++)
+      getComponent(b).repaint(); 
+  }
+  
+  private void a(int paramInt1, int paramInt2) {
+    ArrayList<JComboBox> arrayList = new ArrayList();
+    ArrayList<String> arrayList1 = new ArrayList();
+    for (byte b = 0; b < getComponentCount(); b++) {
+      JComboBox jComboBox = a(getComponent(b));
+      if (jComboBox != null) {
+        arrayList1.add("" + jComboBox.getSelectedItem());
+        arrayList.add(jComboBox);
+      } 
+    } 
+    br br = new br();
+    O.a((bq)br, this.d, arrayList, arrayList1, this);
+    add((Component)br);
+    br.show(this, paramInt1, paramInt2);
+  }
+  
+  private JComboBox a(Component paramComponent) {
+    if (paramComponent instanceof JComboBox)
+      return (JComboBox)paramComponent; 
+    if (paramComponent instanceof Container) {
+      Container container = (Container)paramComponent;
+      for (byte b = 0; b < container.getComponentCount(); b++) {
+        if (container.getComponent(b) instanceof JComboBox)
+          return (JComboBox)container.getComponent(b); 
+      } 
+    } 
+    return null;
+  }
+}
+
+
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/bo.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */
