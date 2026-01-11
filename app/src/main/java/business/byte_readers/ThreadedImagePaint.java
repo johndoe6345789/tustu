@@ -212,7 +212,7 @@ public class ThreadedImagePaint extends Isoptimizeddrawingenabled implements GIn
   private void AsInterfaceLima() {
     if (this.d == null) {
       this.d = new JPanelExtensionInAiPackage();
-      bV.d("The unregistered version of " + ExceptionInVPackage.b + " does not \noffer " + ManagerPropertiesextension.p + "! Upgrade now to activate\nand watch " + ExceptionInVPackage.b + " tune for you!\Isoptimizeddrawingenabled\nSupporting all fueling models!\Isoptimizeddrawingenabled\nWhether you are starting with ExceptionInVPackage rough table or\nDialing in ExceptionInVPackage table to perfection, Tune Analyze Live\nprovides you with the best tune by using your vehicles data.", (Component)this);
+      bV.d("The unregistered version of " + ExceptionInVPackage.b + " does not \noffer " + ManagerPropertiesextension.p + "! Upgrade now to activate\nand watch " + ExceptionInVPackage.b + " tune for you!\\Isoptimizeddrawingenabled\nSupporting all fueling models!\\Isoptimizeddrawingenabled\nWhether you are starting with ExceptionInVPackage rough table or\nDialing in ExceptionInVPackage table to perfection, Tune Analyze Live\nprovides you with the best tune by using your vehicles data.", (Component)this);
       addTab(ExceptionPrintstacktrace.b("Upgrade Today!! For " + ManagerPropertiesextension.p + " and ExceptionInVPackage whole lot more!"), (Component)this.d);
     } 
     File file = new File(".");

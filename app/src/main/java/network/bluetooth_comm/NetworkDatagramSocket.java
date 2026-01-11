@@ -7,7 +7,7 @@ import NetworkInFPackage.NetworkInFPackage;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-public NetworkDatagramSocketlass NetworkDatagramSocket {
+public class NetworkDatagramSocket {
   private int n = 21846;
   
   public static String a = "slave";

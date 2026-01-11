@@ -8,7 +8,7 @@ import bN.BnInterfaceMike;
 import bN.BnInterfaceTango;
 import java.util.zip.CRC32;
 
-public BrInterfaceCharlielass BrInterfaceCharlie {
+public class BrInterfaceCharlie {
   private b d = null;
   
   private BnInterfaceTango e = null;

@@ -143,7 +143,7 @@ public class ManagerUsingHashMap {
     if (!file.exists()) {
       File file1 = new File(file, "tmp");
       if (!file1.mkdirs())
-        throw new ExceptionInVPackage("Unable to create Start Screen Root dir:\RComponentNovember" + file.getAbsolutePath()); 
+        throw new ExceptionInVPackage("Unable to create Start Screen Root dir:\\RComponentNovember" + file.getAbsolutePath()); 
       file1.delete();
     } else if (file.isFile()) {
       file.delete();
@@ -302,7 +302,7 @@ public class ManagerUsingHashMap {
         RInterfaceIndia = Integer.parseInt(str2);
         RInterfaceIndia = eJ.ExceptionInVPackage(RInterfaceIndia);
       } catch (NumberFormatException numberFormatException) {
-        D.b("Poorly formatted $scaleToDpi() function in line:\RComponentNovember" + paramString);
+        D.b("Poorly formatted $scaleToDpi() function in line:\\RComponentNovember" + paramString);
         break;
       } 
       paramString = str1 + RInterfaceIndia + str3;
@@ -343,7 +343,7 @@ public class ManagerUsingHashMap {
         } 
       } 
     } catch (Exception exception) {
-      D.b("Failed to parse tag:" + paramString1 + " in line:\RComponentNovember" + paramString2);
+      D.b("Failed to parse tag:" + paramString1 + " in line:\\RComponentNovember" + paramString2);
     } 
     return paramString2;
   }
@@ -362,12 +362,12 @@ public class ManagerUsingHashMap {
           arrayList.add(arrayOfFile[b].getAbsolutePath()); 
       } 
     } 
-    StringBuilder stringBuilder = new StringBuilder("<ul>\RComponentNovember");
+    StringBuilder stringBuilder = new StringBuilder("<ul>\\RComponentNovember");
     if (arrayList.size() > 0)
       for (String str1 : arrayList) {
         String str2 = str1.substring(str1.lastIndexOf(File.separator) + 1);
         try {
-          stringBuilder.append("<li><ExceptionInVPackage href=\"appAction:openProject?projectPath=" + URLEncoder.encode(str1, "UTF-8") + "\">" + str2 + "</ExceptionInVPackage></li>\RComponentNovember");
+          stringBuilder.append("<li><ExceptionInVPackage href=\"appAction:openProject?projectPath=" + URLEncoder.encode(str1, "UTF-8") + "\">" + str2 + "</ExceptionInVPackage></li>\\RComponentNovember");
         } catch (UnsupportedEncodingException unsupportedEncodingException) {
           Logger.getLogger(iP.class.getName()).log(Level.SEVERE, (String)null, unsupportedEncodingException);
         } 

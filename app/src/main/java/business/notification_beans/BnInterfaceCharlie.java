@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import s.ExceptionPrintstacktrace;
 
-public BnInterfaceCharlielass BnInterfaceCharlie {
+public class BnInterfaceCharlie {
   public static String PropertiesExtension = "veTableGenerator";
   
   public static String JPanelExtensionInBoPackage = "afrTableGenerator";

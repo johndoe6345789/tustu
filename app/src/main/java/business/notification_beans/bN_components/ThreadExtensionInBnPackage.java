@@ -10,7 +10,7 @@ class ThreadExtensionInBnPackage extends Thread {
   
   boolean c = false;
   
-  q(p paramp) {
+  public void q(p paramp) {
     if (paramp.j == p.h) {
       setName("XCP Reader_Slave_" + Math.random());
     } else if (paramp.j == p.i) {

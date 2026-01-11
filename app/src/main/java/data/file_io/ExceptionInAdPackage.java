@@ -1,6 +1,6 @@
 package ad;
 
-public ExceptionInAdPackagelass ExceptionInAdPackage extends Exception {
+public class ExceptionInAdPackage extends Exception {
   public ExceptionInAdPackage(String paramString) {
     super(paramString);
   }

@@ -5,7 +5,7 @@ class BqInterfaceRomeo {
   
   private final double c;
   
-  r(l paraml, byte[] paramArrayOfbyte, double paramDouble) {
+  public void r(l paraml, byte[] paramArrayOfbyte, double paramDouble) {
     this.b = paramArrayOfbyte;
     this.c = paramDouble;
   }

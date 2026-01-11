@@ -2,7 +2,7 @@ package business.byte_arrays;
 
 import java.util.List;
 
-public ByInterfaceIndianterface ByInterfaceIndia {
+public interface ByInterfaceIndia {
   String a();
   
   List b();

@@ -7,7 +7,7 @@ class ThreadExtensionInKPackage extends Thread {
   
   int b = 0;
   
-  g(f paramf) {
+  public void g(f paramf) {
     super("Timed Page read: " + f.a(paramf));
   }
   

@@ -1,6 +1,6 @@
 package D;
 
-public DInterfaceCharlielass DInterfaceCharlie {
+public class DInterfaceCharlie {
   private int a = 0;
   
   private a b = null;

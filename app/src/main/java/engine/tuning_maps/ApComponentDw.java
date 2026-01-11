@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApComponentDw extends Thread {
-  dw(dl paramdl) {
+  public void dw(dl paramdl) {
     super("MainFrameDelayValidate");
     setDaemon(true);
   }

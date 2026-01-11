@@ -8,7 +8,7 @@ class ManagerUsingAhInterfaceAlpha {
   
   private int c;
   
-  ae(ac paramac, int paramInt) {
+  public void ae(ac paramac, int paramInt) {
     this.c = paramInt;
   }
   

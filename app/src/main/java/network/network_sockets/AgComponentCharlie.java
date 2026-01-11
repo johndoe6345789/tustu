@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public AgComponentCharlielass AgComponentCharlie implements AeInterfaceSierra, AfComponentAlpha {
+public class AgComponentCharlie implements AeInterfaceSierra, AfComponentAlpha {
   List AeInterfaceDelta = new ArrayList();
   
   public List AfComponentAlpha(FileUsingHashMap paramk) {

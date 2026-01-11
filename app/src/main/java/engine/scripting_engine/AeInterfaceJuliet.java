@@ -5,7 +5,7 @@ class AeInterfaceJuliet implements u {
   
   double b = 1.0D;
   
-  j(f paramf, double paramDouble1, double paramDouble2) {
+  public void j(f paramf, double paramDouble1, double paramDouble2) {
     this.a = paramDouble1;
     this.b = paramDouble2;
   }

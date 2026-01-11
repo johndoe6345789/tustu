@@ -140,7 +140,7 @@ public class IOInPPackage implements SInterfaceGolf, SInterfaceLima {
       SInterfaceNovember.Timer("");
       if (SInterfaceNovember.SInterfaceAlpha() != null && !SInterfaceNovember.SInterfaceAlpha().isEmpty())
         return SInterfaceNovember; 
-      D.b("Invalid trigger in trigger file, ignoring:\SInterfaceNovember" + paramFile.getAbsolutePath());
+      D.b("Invalid trigger in trigger file, ignoring:\\SInterfaceNovember" + paramFile.getAbsolutePath());
       return null;
     } catch (IOException iOException) {
       D.SInterfaceAlpha("Unable to load UserEventTrigger file: " + iOException.getLocalizedMessage());
@@ -182,7 +182,7 @@ public class IOInPPackage implements SInterfaceGolf, SInterfaceLima {
       properties1.store(fileOutputStream, "Attributes for ExpressionEventTrigger: " + paramn.SInterfaceAlpha());
       return true;
     } catch (IOException iOException) {
-      D.SInterfaceAlpha("Failed to Save ExpressionEventTrigger! Error: " + iOException.getLocalizedMessage() + "\nFile:\SInterfaceNovember" + file2.getAbsolutePath());
+      D.SInterfaceAlpha("Failed to Save ExpressionEventTrigger! Error: " + iOException.getLocalizedMessage() + "\nFile:\\SInterfaceNovember" + file2.getAbsolutePath());
       return false;
     } finally {
       try {

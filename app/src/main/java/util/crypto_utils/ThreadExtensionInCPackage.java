@@ -8,7 +8,7 @@ class ThreadExtensionInCPackage extends Thread {
   
   long b = 0L;
   
-  c(b paramb) {
+  public void c(b paramb) {
     super("EnableByCondition Service");
     setDaemon(true);
   }

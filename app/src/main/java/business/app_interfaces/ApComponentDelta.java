@@ -10,7 +10,7 @@ class ApComponentDelta extends Thread {
   
   private String c = null;
   
-  d(c paramc) {
+  public void d(c paramc) {
     super("PIPE_ACTION_INDEX_CHANGED PubThread");
   }
   

@@ -9,7 +9,7 @@ import bH.D;
 import java.util.ArrayList;
 import java.util.List;
 
-public HInterfaceCharlielass HInterfaceCharlie implements GInterfaceBu {
+public class HInterfaceCharlie implements GInterfaceBu {
   int a = 255;
   
   public void a() {}

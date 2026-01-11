@@ -5,7 +5,7 @@ import bH.D;
 class AjInterfaceMike extends Thread {
   boolean a = true;
   
-  m(k paramk) {
+  public void m(k paramk) {
     super("UDP_LoggerReceiveThread_" + Math.random());
   }
   

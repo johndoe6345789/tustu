@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 class ThreadExtensionInBcPackage extends Thread {
   boolean a = true;
   
-  c(a parama) {
+  public void c(a parama) {
     super("LoaderOption Blink");
     setDaemon(true);
   }

@@ -15,7 +15,7 @@ import javax.swing.JRadioButton;
 import r.RInterfaceIndia;
 import s.ExceptionPrintstacktrace;
 
-public BeComponentCharlielass BeComponentCharlie extends JPanel implements o {
+public class BeComponentCharlie extends JPanel implements o {
   static String a = "Advanced";
   
   static String b = "Simple";

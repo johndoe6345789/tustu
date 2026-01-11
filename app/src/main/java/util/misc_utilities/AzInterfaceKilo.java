@@ -7,7 +7,7 @@ class AzInterfaceKilo {
   
   int b = -1;
   
-  k(j paramj, int paramInt1, int paramInt2) {
+  public void k(j paramj, int paramInt1, int paramInt2) {
     this.a = paramInt1;
     this.b = paramInt2;
   }

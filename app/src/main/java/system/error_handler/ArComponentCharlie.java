@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public ArComponentCharlielass ArComponentCharlie {
+public class ArComponentCharlie {
   private String ZInterfaceBravo;
   
   private List c = new ArrayList();

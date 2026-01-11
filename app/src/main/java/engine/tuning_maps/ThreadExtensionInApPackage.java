@@ -1,7 +1,7 @@
 package aP;
 
 class ThreadExtensionInApPackage extends Thread {
-  ac(ab paramab) {
+  public void ac(ab paramab) {
     super("PortScan");
     setDaemon(true);
   }

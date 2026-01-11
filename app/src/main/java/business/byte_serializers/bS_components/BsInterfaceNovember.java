@@ -10,7 +10,7 @@ class BsInterfaceNovember extends Thread {
   
   private boolean c = true;
   
-  n(l paraml, r paramr) {
+  public void n(l paraml, r paramr) {
     super("SlaveConnection: " + paramr.h());
     this.b = paramr;
   }

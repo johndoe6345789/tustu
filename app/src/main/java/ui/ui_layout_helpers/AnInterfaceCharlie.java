@@ -4,7 +4,7 @@ import am.TostringInAmPackage;
 import am.AmInterfaceDelta;
 
 public class AnInterfaceCharlie extends a {
-  c(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
+  public AnInterfaceCharlie(AmInterfaceDelta paramd, TostringInAmPackage paramb) {
     super(paramd, paramb);
   }
   

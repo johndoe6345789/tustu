@@ -3,7 +3,7 @@ package G;
 class ThreadedInGPackage extends Thread {
   o a = null;
   
-  ax(an paraman, o paramo) {
+  public void ax(an paraman, o paramo) {
     super("MSyncReadProcess");
     setDaemon(true);
     this.a = paramo;

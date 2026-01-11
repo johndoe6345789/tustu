@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public YInterfaceCharlielass YInterfaceCharlie {
+public class YInterfaceCharlie {
   String a = "\\s+";
   
   int b = 0;

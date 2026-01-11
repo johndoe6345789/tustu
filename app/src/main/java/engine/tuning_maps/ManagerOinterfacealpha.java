@@ -295,7 +295,7 @@ public class ManagerOinterfacealpha extends Thread {
       try {
         AvInterfaceXray.OInterfaceAlpha().OInterfaceDelta();
       } catch (Exception exception) {
-        bV.OInterfaceDelta("Failed to initalize GPS:\AzInterfaceNovember" + exception.getLocalizedMessage(), dd.OInterfaceAlpha().ThreadExtensionUsingNetworkInterface());
+        bV.OInterfaceDelta("Failed to initalize GPS:\\AzInterfaceNovember" + exception.getLocalizedMessage(), dd.OInterfaceAlpha().ThreadExtensionUsingNetworkInterface());
         Logger.getLogger(hO.class.getName()).log(Level.SEVERE, (String)null, exception);
       } 
     } 

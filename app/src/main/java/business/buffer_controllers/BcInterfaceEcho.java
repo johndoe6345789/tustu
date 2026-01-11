@@ -3,7 +3,7 @@ package business.buffer_controllers;
 import com.efiAnalytics.ui.NumericTextField;
 
 class BcInterfaceEcho extends NumericTextField implements i {
-  e(a parama) {
+  public void e(a parama) {
     super("", 10);
     b(0);
   }

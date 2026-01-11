@@ -1,6 +1,6 @@
 package engine.vehicle_control;
 
-public VInterfaceCharlielass VInterfaceCharlie extends g {
+public class VInterfaceCharlie extends g {
   public VInterfaceCharlie(String paramString) {
     super(paramString);
   }

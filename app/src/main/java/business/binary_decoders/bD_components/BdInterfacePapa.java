@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class BdInterfacePapa extends Thread {
-  p(i parami) {
+  public void p(i parami) {
     super("Read Dir");
     setDaemon(true);
   }

@@ -5,7 +5,7 @@ import bH.q;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public ArrayListInIPackagelass ArrayListInIPackage {
+public class ArrayListInIPackage {
   private static c b = null;
   
   boolean a = false;

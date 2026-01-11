@@ -5,14 +5,14 @@ import com.ftdi.FTD2XXException;
 import com.ftdi.FTDevice;
 import java.io.InputStream;
 
-public ManagerReadlass ManagerRead extends InputStream {
+public class ManagerRead extends InputStream {
   FTDevice a;
   
   int b = -1;
   
   boolean c = false;
   
-  c(FTDevice paramFTDevice) {
+  public ManagerRead(FTDevice paramFTDevice) {
     this.a = paramFTDevice;
   }
   

@@ -3,7 +3,7 @@ package business.binary_validators.bV_components;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public ArrayListTostringlass ArrayListTostring {
+public class ArrayListTostring {
   private String a = "";
   
   private ArrayList b = new ArrayList();

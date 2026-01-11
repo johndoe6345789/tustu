@@ -4,7 +4,7 @@ import G.F;
 import bN.BnInterfaceKilo;
 import bN.BnInterfaceTango;
 
-public BqInterfaceIndianterface BqInterfaceIndia {
+public interface BqInterfaceIndia {
   void a(F paramF, BnInterfaceKilo paramk, BnInterfaceTango paramt);
 }
 

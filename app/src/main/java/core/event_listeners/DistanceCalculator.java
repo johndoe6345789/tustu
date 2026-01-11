@@ -35,7 +35,7 @@ class eq implements BeInterfacePapa {
   
   private final fK h;
   
-  eq(fK paramfK) {
+  public void eq(fK paramfK) {
     this.h = paramfK;
   }
   

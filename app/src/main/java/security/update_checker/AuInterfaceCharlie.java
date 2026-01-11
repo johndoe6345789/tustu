@@ -9,7 +9,7 @@ import W.E;
 import java.io.File;
 import r.ExceptionExtensionGetmessage;
 
-public AuInterfaceCharlielass AuInterfaceCharlie implements d {
+public class AuInterfaceCharlie implements d {
   public void ExceptionInVPackage(R paramR, int paramInt1, int paramInt2) {
     String str1 = paramR.F() + File.separatorChar + ExceptionExtensionGetmessage.h;
     E e = new E();

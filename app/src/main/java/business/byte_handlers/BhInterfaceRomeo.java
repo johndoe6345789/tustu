@@ -8,7 +8,7 @@ import com.efiAnalytics.ui.aO;
 class BhInterfaceRomeo implements aO {
   R a;
   
-  r(n paramn, R paramR) {
+  public void r(n paramn, R paramR) {
     this.a = paramR;
   }
   

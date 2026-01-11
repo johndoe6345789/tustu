@@ -4,7 +4,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JTextField;
 
 class JTextFieldExtensionInBcPackage extends JTextField implements i {
-  h(a parama) {
+  public void h(a parama) {
     super("", 10);
     setBorder(BorderFactory.createLoweredBevelBorder());
   }

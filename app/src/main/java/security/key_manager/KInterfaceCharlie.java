@@ -2,7 +2,7 @@ package K;
 
 import G.GComponentCq;
 
-public KInterfaceCharlielass KInterfaceCharlie implements GComponentCq {
+public class KInterfaceCharlie implements GComponentCq {
   private double a = 0.0D;
   
   private static c b = null;

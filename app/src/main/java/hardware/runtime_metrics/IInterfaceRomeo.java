@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class IInterfaceRomeo extends Thread {
-  r(q paramq) {
+  public void r(q paramq) {
     super("ClockPublisher_" + Math.random());
     setDaemon(true);
   }

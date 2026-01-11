@@ -4,7 +4,7 @@ import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public FilterOutputStreamExtensionlass FilterOutputStreamExtension extends FilterOutputStream {
+public class FilterOutputStreamExtension extends FilterOutputStream {
   private boolean a;
   
   private int b;

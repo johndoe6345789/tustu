@@ -9,7 +9,7 @@ class ThreadExtensionInAyPackage extends Thread {
   
   int b = 2500;
   
-  b(a parama) {
+  public void b(a parama) {
     setName("HttpServices Scan Thread " + Math.random());
   }
   

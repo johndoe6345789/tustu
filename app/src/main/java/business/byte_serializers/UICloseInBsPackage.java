@@ -393,7 +393,7 @@ public class UICloseInBsPackage extends d implements bc {
         k();
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
-        bV.d("Could not start WUE Analyze!\Isoptimizeddrawingenabled" + ExceptionInVPackage.getLocalizedMessage(), (Component)this);
+        bV.d("Could not start WUE Analyze!\\Isoptimizeddrawingenabled" + ExceptionInVPackage.getLocalizedMessage(), (Component)this);
         ExceptionInVPackage(false);
       } 
     } else {
@@ -403,7 +403,7 @@ public class UICloseInBsPackage extends d implements bc {
         this.b.ExceptionInVPackage(paramBoolean);
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
-        bV.d("Could not stop WUE Analyze!\Isoptimizeddrawingenabled" + ExceptionInVPackage.getLocalizedMessage(), (Component)this);
+        bV.d("Could not stop WUE Analyze!\\Isoptimizeddrawingenabled" + ExceptionInVPackage.getLocalizedMessage(), (Component)this);
       } 
       j();
     } 
@@ -417,7 +417,7 @@ public class UICloseInBsPackage extends d implements bc {
         i(); 
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      bV.d("Error Applying Recommended WUE.\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.getMessage(), (Component)this);
+      bV.d("Error Applying Recommended WUE.\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.getMessage(), (Component)this);
     } 
   }
   

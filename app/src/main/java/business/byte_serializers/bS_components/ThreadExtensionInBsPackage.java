@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class ThreadExtensionInBsPackage extends Thread {
   boolean a = true;
   
-  c(b paramb) {
+  public void c(b paramb) {
     super("DAQ List Slave Processor");
   }
   

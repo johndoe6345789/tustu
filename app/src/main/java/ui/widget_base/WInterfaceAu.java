@@ -10,7 +10,7 @@ class WInterfaceAu extends Thread {
   
   int a = 0;
   
-  au(as paramas) {
+  public void au(as paramas) {
     super("Queue Write");
     setDaemon(true);
   }

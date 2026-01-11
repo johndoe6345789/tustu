@@ -183,10 +183,10 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       D.c("Sending: " + c.b(arrayOfInt));
       this.ZInterfaceNovember.IOPropertiesUsingFile(arrayOfInt);
     } catch (IOException iOException) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error sending bytes.\nCheck the port is open.Reported Error:\ZInterfaceNovember" + iOException.getMessage());
+      JOptionPane.showMessageDialog(this.rootPane, "Error sending bytes.\nCheck the port is open.Reported Error:\\ZInterfaceNovember" + iOException.getMessage());
       Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, iOException);
     } catch (Exception exception) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error Parsing bytes.\nMust be in the format:\ZInterfaceNovember<number><space><number><space>...\nExample: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\nReported Error:\ZInterfaceNovember" + exception.getMessage());
+      JOptionPane.showMessageDialog(this.rootPane, "Error Parsing bytes.\nMust be in the format:\\ZInterfaceNovember<number><space><number><space>...\nExample: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\nReported Error:\\ZInterfaceNovember" + exception.getMessage());
       Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, exception);
     } 
   }
@@ -215,7 +215,7 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       try {
         c();
       } catch (ExceptionInZPackage ExceptionInZPackage) {
-        bV.d("Error Opening Port!\nError opening port,\ZInterfaceNovember" + ExceptionInZPackage.getMessage() + ".\nSelect new settings, try again.", this);
+        bV.d("Error Opening Port!\nError opening port,\\ZInterfaceNovember" + ExceptionInZPackage.getMessage() + ".\nSelect new settings, try again.", this);
       }  
     if (str.equals(SComponentGolf.b("Close Port")))
       e(); 

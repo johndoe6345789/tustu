@@ -45,7 +45,7 @@ public class NInterfaceKilo implements AyComponentOscar {
       String str1 = ExceptionInVPackage.ExceptionInVPackage().c(ExceptionInVPackage.X + paramn.ExceptionInVPackage(), "");
       if (str1.isEmpty())
         str1 = paramn.ExceptionInVPackage(); 
-      String str2 = ExceptionInVPackage("The correct ECU Definition has been downloaded for the Firmware") + ":\AyComponentNovember" + str1 + "\AyComponentNovember\AyComponentNovember" + ExceptionInVPackage("You may now connect to your Controller with this firmware.") + "\AyComponentNovember" + ExceptionInVPackage("When prompted for ExceptionInVPackage signature mismatch, select 'Update ECU Definition'");
+      String str2 = ExceptionInVPackage("The correct ECU Definition has been downloaded for the Firmware") + ":\\AyComponentNovember" + str1 + "\\AyComponentNovember\\AyComponentNovember" + ExceptionInVPackage("You may now connect to your Controller with this firmware.") + "\\AyComponentNovember" + ExceptionInVPackage("When prompted for ExceptionInVPackage signature mismatch, select 'Update ECU Definition'");
       j.ExceptionInVPackage().b(str2);
       ExceptionInVPackage.ExceptionInVPackage().e(ExceptionInVPackage.W + paramn.ExceptionInVPackage());
       ExceptionInVPackage.ExceptionInVPackage().e(ExceptionInVPackage.X + paramn.ExceptionInVPackage());

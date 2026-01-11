@@ -5,7 +5,7 @@ import java.awt.Color;
 import java.awt.Component;
 import javax.swing.UIManager;
 
-public QInterfaceCharlielass QInterfaceCharlie implements i {
+public class QInterfaceCharlie implements i {
   public void a(Component paramComponent) {
     A a = (A)paramComponent;
     a.setText("");

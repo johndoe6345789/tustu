@@ -14,7 +14,7 @@ import bT.BtInterfaceCharlie;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public BuInterfaceCharlielass BuInterfaceCharlie implements ExceptionInBsPackage {
+public class BuInterfaceCharlie implements ExceptionInBsPackage {
   public int a() {
     return 163;
   }

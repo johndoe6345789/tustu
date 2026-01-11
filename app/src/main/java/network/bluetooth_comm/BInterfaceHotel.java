@@ -8,7 +8,7 @@ class BInterfaceHotel extends Thread {
   
   int b = 2000;
   
-  h(g paramg) {
+  public void h(g paramg) {
     setName("UDP Scan Thread " + Math.random());
   }
   

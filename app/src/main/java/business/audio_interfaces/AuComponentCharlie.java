@@ -7,7 +7,7 @@ import h.IOProperties;
 import java.awt.Component;
 import java.util.ArrayList;
 
-public AuComponentCharlielass AuComponentCharlie extends ManagerInAoPackage {
+public class AuComponentCharlie extends ManagerInAoPackage {
   public AuComponentCharlie() {
     super(true, true);
     b b = new b();

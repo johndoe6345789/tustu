@@ -14,7 +14,7 @@ class ThreadExtensionInAiPackage extends Thread {
   
   long d;
   
-  g(e parame, h paramh, int paramInt1, int paramInt2, long paramLong) {
+  public void g(e parame, h paramh, int paramInt1, int paramInt2, long paramLong) {
     super("ratioEntry");
     setDaemon(true);
     this.a = paramh;

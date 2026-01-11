@@ -8,7 +8,7 @@ class AsInterfaceEcho implements GComponentCq {
   
   b b;
   
-  e(a parama, b paramb) {
+  public void e(a parama, b paramb) {
     this.b = paramb;
   }
   

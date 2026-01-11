@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract AbstractInFPackagelass AbstractInFPackage {
+public abstractclass AbstractInFPackage {
   public static boolean a = false;
   
   protected static b b = null;

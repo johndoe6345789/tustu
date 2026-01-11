@@ -8,7 +8,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.filechooser.FileView;
 
-public FileViewExtensionlass FileViewExtension extends FileView {
+public class FileViewExtension extends FileView {
   ImageIcon ExceptionInVPackage = null;
   
   ImageIcon b = null;

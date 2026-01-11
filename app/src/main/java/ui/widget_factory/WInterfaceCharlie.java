@@ -2,7 +2,7 @@ package w;
 
 import r.RInterfaceOscar;
 
-public WInterfaceCharlielass WInterfaceCharlie implements RInterfaceOscar {
+public class WInterfaceCharlie implements RInterfaceOscar {
   public boolean a(String paramString1, String paramString2) {
     if (paramString2 != null && paramString2.length() > 6 && paramString1.length() > 7) {
       String str1 = paramString1.substring(0, 7);

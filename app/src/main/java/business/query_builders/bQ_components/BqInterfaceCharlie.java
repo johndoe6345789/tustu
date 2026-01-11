@@ -9,7 +9,7 @@ import bO.BoInterfaceLima;
 import java.util.ArrayList;
 import java.util.List;
 
-public BqInterfaceCharlielass BqInterfaceCharlie {
+public class BqInterfaceCharlie {
   private static c BoInterfaceAlpha = null;
   
   private int b = -1;

@@ -417,13 +417,13 @@ public class NetworkHashMap {
       if (bool) {
         boolean bool1 = false;
         do {
-          str2 = bV.NInterfaceAlpha(paramWindow, false, ExceptionPrintstacktrace.BInterfaceBravo("A new project will be created for this " + NInterfaceAlpha.NInterfaceAlpha(str, NInterfaceAlpha.f)) + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("This will help keep logs and calibration files related to this device organized.") + ".\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("What would you like to name this project?"), str2);
+          str2 = bV.NInterfaceAlpha(paramWindow, false, ExceptionPrintstacktrace.BInterfaceBravo("A new project will be created for this " + NInterfaceAlpha.NInterfaceAlpha(str, NInterfaceAlpha.f)) + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("This will help keep logs and calibration files related to this device organized.") + ".\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("What would you like to name this project?"), str2);
           if (str2 == null || str2.equals("")) {
             bool1 = false;
           } else {
             file2 = new File(SInterfaceJuliet.AcInterfaceUniform(), str2);
             if (file2.exists()) {
-              boolean bool2 = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("There is already NInterfaceAlpha project by that name.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Overwrite?"), paramWindow, true);
+              boolean bool2 = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("There is already NInterfaceAlpha project by that name.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Overwrite?"), paramWindow, true);
               if (!bool2) {
                 str2 = null;
                 bool1 = true;
@@ -472,7 +472,7 @@ public class NetworkHashMap {
   public void NInterfaceAlpha(Window paramWindow, String paramString) {
     File file = new File(paramString);
     if (!file.exists()) {
-      bV.AiInterfaceDelta("A valid Project was not found at:\Isoptimizeddrawingenabled" + paramString, paramWindow);
+      bV.AiInterfaceDelta("A valid Project was not found at:\\Isoptimizeddrawingenabled" + paramString, paramWindow);
       return;
     } 
     (new H(this, paramWindow, paramString)).start();
@@ -527,7 +527,7 @@ public class NetworkHashMap {
         } else {
           File file1 = new File(SInterfaceJuliet.AcInterfaceUniform(), str);
           if (file1.exists()) {
-            boolean bool1 = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("There is already NInterfaceAlpha project by that name.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Overwrite?"), dd.NInterfaceAlpha().DInterfaceCharlie(), true);
+            boolean bool1 = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("There is already NInterfaceAlpha project by that name.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Overwrite?"), dd.NInterfaceAlpha().DInterfaceCharlie(), true);
             if (!bool1) {
               str = null;
               bool = true;
@@ -609,7 +609,7 @@ public class NetworkHashMap {
       dM.BInterfaceBravo(0.4D);
       NInterfaceAlpha.NInterfaceAlpha(a1);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\Isoptimizeddrawingenabled", (Exception)ExceptionPrintstacktrace, paramWindow);
+      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\\Isoptimizeddrawingenabled", (Exception)ExceptionPrintstacktrace, paramWindow);
       K ThreadedInIPackage = new K(AcInterfaceDelta.f());
       ThreadedInIPackage.NInterfaceAlpha(paramWindow);
       if (ExceptionPrintstacktrace.NInterfaceAlpha() != 2 && bV.NInterfaceAlpha("Would you like to update your Controller configuration file?", paramWindow, true)) {
@@ -623,14 +623,14 @@ public class NetworkHashMap {
       SInterfaceLima();
       return;
     } catch (KInterfaceEcho KInterfaceEcho) {
-      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\Isoptimizeddrawingenabled", (Exception)KInterfaceEcho, paramWindow);
+      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\\Isoptimizeddrawingenabled", (Exception)KInterfaceEcho, paramWindow);
       if (bV.NInterfaceAlpha("The project  " + file.getName() + " appears to be corrupt. \nWould you like to create NInterfaceAlpha new Project?", paramWindow, true))
         BInterfaceBravo(paramWindow); 
       if (bool)
         SInterfaceLima(); 
       return;
     } catch (NInterfaceAlpha a2) {
-      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\Isoptimizeddrawingenabled", (Exception)a2, paramWindow);
+      AcInterfaceDelta.NInterfaceAlpha("A problem was encountered loading the project " + file.getName() + ".\\Isoptimizeddrawingenabled", (Exception)a2, paramWindow);
       K ThreadedInIPackage = new K(AcInterfaceDelta.f());
       ThreadedInIPackage.NInterfaceAlpha(paramWindow);
       if (bool)
@@ -703,7 +703,7 @@ public class NetworkHashMap {
               try {
                 PInterfaceZulu = (new DInterfaceCharlie(SInterfaceJuliet.G())).NInterfaceAlpha(str1);
               } catch (NInterfaceAlpha a2) {
-                bV.AiInterfaceDelta("Gauge Cluster for " + r1.DInterfaceCharlie() + " is corrupt,\nthe default will be used instead.\nLoad error:\Isoptimizeddrawingenabled" + a2.getMessage(), paramWindow);
+                bV.AiInterfaceDelta("Gauge Cluster for " + r1.DInterfaceCharlie() + " is corrupt,\nthe default will be used instead.\nLoad error:\\Isoptimizeddrawingenabled" + a2.getMessage(), paramWindow);
               }  
             if (PInterfaceZulu == null) {
               PInterfaceZulu = (new NetworkExceptionprintstacktrace()).NInterfaceAlpha(r1, "FrontPage", 1);
@@ -844,7 +844,7 @@ public class NetworkHashMap {
       ExceptionPrintstacktrace(dd.NInterfaceAlpha().DInterfaceCharlie());
       bW bW = dd.NInterfaceAlpha().Abstract();
       if (NInterfaceAlpha != null && !t.NInterfaceAlpha(NInterfaceAlpha.t(), 1024L)) {
-        bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Unable to save current project.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Either the disk is full or the you have insufficient rights."), dd.NInterfaceAlpha().DInterfaceCharlie());
+        bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Unable to save current project.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Either the disk is full or the you have insufficient rights."), dd.NInterfaceAlpha().DInterfaceCharlie());
         return true;
       } 
       hx.NInterfaceAlpha().SInterfaceJuliet();
@@ -861,7 +861,7 @@ public class NetworkHashMap {
               File file = NInterfaceAlpha.AiInterfaceDelta(BsInterfaceRomeo.DInterfaceCharlie());
               NetworkExceptionprintstacktrace NetworkExceptionprintstacktrace = new NetworkExceptionprintstacktrace();
               NetworkExceptionprintstacktrace.BInterfaceBravo(BsInterfaceRomeo, file.getAbsolutePath(), (A)new BsInterfaceOscar());
-              AcInterfaceDelta.AiInterfaceDelta("Saved PC variables for " + BsInterfaceRomeo.DInterfaceCharlie() + " to:\Isoptimizeddrawingenabled" + file.getAbsolutePath());
+              AcInterfaceDelta.AiInterfaceDelta("Saved PC variables for " + BsInterfaceRomeo.DInterfaceCharlie() + " to:\\Isoptimizeddrawingenabled" + file.getAbsolutePath());
             } 
             if (NInterfaceAlpha != null && !NInterfaceAlpha.UICloseInPPackage()) {
               KInterfaceEcho(BsInterfaceRomeo);
@@ -1090,7 +1090,7 @@ public class NetworkHashMap {
       return; 
     File file = new File(str4);
     if (!file.exists()) {
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("File not found") + ":\Isoptimizeddrawingenabled" + str4, paramFrame);
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("File not found") + ":\\Isoptimizeddrawingenabled" + str4, paramFrame);
       return;
     } 
     if (paramR == null)
@@ -1103,7 +1103,7 @@ public class NetworkHashMap {
     NInterfaceAlpha.ExceptionPrintstacktrace(str2);
     String str5 = PInterfaceZulu.NInterfaceAlpha(str4);
     if (str5 != null && !str5.equals("null") && !paramR.i().equals(str5)) {
-      String str = ExceptionPrintstacktrace.BInterfaceBravo("Signatures do not match!") + "\nTune File signature: " + str5 + "\nConfiguration signature: " + paramR.i() + "\Isoptimizeddrawingenabled \Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Do you want to load it anyway?");
+      String str = ExceptionPrintstacktrace.BInterfaceBravo("Signatures do not match!") + "\nTune File signature: " + str5 + "\nConfiguration signature: " + paramR.i() + "\\Isoptimizeddrawingenabled \\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Do you want to load it anyway?");
       if (!bV.NInterfaceAlpha(str, paramFrame, true))
         return; 
       paramR.O().NetworkInBPackage("");
@@ -1111,7 +1111,7 @@ public class NetworkHashMap {
     if (paramR.UIInBePackage().q()) {
       String str = ExceptionPrintstacktrace.BInterfaceBravo("Would you like to send & burn configuration to controller?");
       if (!paramR.p().Abstract() && paramList == null) {
-        str = str + "\Isoptimizeddrawingenabled\nThe current settings will be replaced by the\Isoptimizeddrawingenabled settings in " + file.getName();
+        str = str + "\\Isoptimizeddrawingenabled\nThe current settings will be replaced by the\\Isoptimizeddrawingenabled settings in " + file.getName();
         if (i.NInterfaceAlpha().NInterfaceAlpha("-=fds[pfds[pgd-0") && NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.bF, NInterfaceAlpha.bG))
           str = str + "\nA restore point with the current " + NInterfaceAlpha.NInterfaceAlpha(str5, NInterfaceAlpha.f) + " settings will be created."; 
       } 
@@ -1122,10 +1122,10 @@ public class NetworkHashMap {
         AiInterfaceDelta(paramR, str6);
       } 
     } else if (paramList == null && !paramR.p().Abstract() && NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.bw, true)) {
-      String str = ExceptionPrintstacktrace.BInterfaceBravo("This will load all settings from the file:") + "\Isoptimizeddrawingenabled" + file.getName() + "\nCurrentTune." + NInterfaceAlpha.cw + " will be be updated with all settings from " + file.getName();
+      String str = ExceptionPrintstacktrace.BInterfaceBravo("This will load all settings from the file:") + "\\Isoptimizeddrawingenabled" + file.getName() + "\nCurrentTune." + NInterfaceAlpha.cw + " will be be updated with all settings from " + file.getName();
       if (i.NInterfaceAlpha().NInterfaceAlpha("-=fds[pfds[pgd-0") && NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.bF, NInterfaceAlpha.bG))
         str = str + "\nA restore point with current CurrentTune." + NInterfaceAlpha.cw + " settings will be created."; 
-      str = str + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to proceed?");
+      str = str + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to proceed?");
       if (!bV.NInterfaceAlpha(str, paramFrame, true))
         return; 
       if (i.NInterfaceAlpha().NInterfaceAlpha("-=fds[pfds[pgd-0") && NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.bF, NInterfaceAlpha.bG)) {
@@ -1159,7 +1159,7 @@ public class NetworkHashMap {
       return; 
     File file = new File(str2);
     if (!file.exists()) {
-      bV.AiInterfaceDelta("File not found:\Isoptimizeddrawingenabled" + str2, paramFrame);
+      bV.AiInterfaceDelta("File not found:\\Isoptimizeddrawingenabled" + str2, paramFrame);
       return;
     } 
     DInterfaceCharlie(paramFrame, str2);
@@ -1167,7 +1167,7 @@ public class NetworkHashMap {
   
   public void DInterfaceCharlie(Window paramWindow, String paramString) {
     String str1 = PInterfaceZulu.NInterfaceAlpha(paramString);
-    String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Would you like to use one of your existing projects to open this " + NInterfaceAlpha.cw + "?") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Alternatively, NInterfaceAlpha temporary project can be used for viewing purposes only.") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Note:") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("For working on NInterfaceAlpha controller you should always create and open your own Project.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Temporary projects disable saving the " + NInterfaceAlpha.cw + " and establishing communication with the controller.");
+    String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Would you like to use one of your existing projects to open this " + NInterfaceAlpha.cw + "?") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Alternatively, NInterfaceAlpha temporary project can be used for viewing purposes only.") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Note:") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("For working on NInterfaceAlpha controller you should always create and open your own Project.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Temporary projects disable saving the " + NInterfaceAlpha.cw + " and establishing communication with the controller.");
     String[] arrayOfString = { ExceptionPrintstacktrace.BInterfaceBravo("Use an existing Project"), ExceptionPrintstacktrace.BInterfaceBravo("Use NInterfaceAlpha Temporary Project") };
     boolean bool = (0 == JOptionPane.showOptionDialog(paramWindow, str2, ExceptionPrintstacktrace.BInterfaceBravo("Tune File Project"), 0, 3, null, (Object[])arrayOfString, arrayOfString[1])) ? true : false;
     if (bool) {
@@ -1260,7 +1260,7 @@ public class NetworkHashMap {
             return;
           } 
           if (!paramR.i().equals(str)) {
-            boolean bool = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("This tune file was saved from NInterfaceAlpha different firmware than the selected Controller.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Are you sure you want to load this tune?"), paramWindow, true);
+            boolean bool = bV.NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("This tune file was saved from NInterfaceAlpha different firmware than the selected Controller.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Are you sure you want to load this tune?"), paramWindow, true);
             if (!bool)
               return; 
           } 
@@ -1371,7 +1371,7 @@ public class NetworkHashMap {
           AcInterfaceDelta.AiInterfaceDelta("Bundled Java found, using that for restart.");
           str5 = X.BInterfaceBravo(file.getAbsolutePath(), " ", "\\ ");
           str4 = file.getAbsolutePath() + " -cp .:./plugins/:lib:./lib/*.jar -Djava.library.path=lib -jar " + str2;
-          AcInterfaceDelta.AiInterfaceDelta("Bundled Java found, using that for restart. Restart Command:\Isoptimizeddrawingenabled" + str4);
+          AcInterfaceDelta.AiInterfaceDelta("Bundled Java found, using that for restart. Restart Command:\\Isoptimizeddrawingenabled" + str4);
           String[] arrayOfString = { str5, "Staging", str4 };
           Runtime.getRuntime().exec(arrayOfString);
         } else {
@@ -1468,7 +1468,7 @@ public class NetworkHashMap {
       paramR.JDialogExtensionInBdPackage();
       String str = "Sending, " + BInterfaceBravo.NInterfaceAlpha() + " bytes.";
       hq.NInterfaceAlpha().NInterfaceAlpha(str);
-      AcInterfaceDelta.AiInterfaceDelta("Loaded Restore point " + paramString + "\Isoptimizeddrawingenabled\t" + str);
+      AcInterfaceDelta.AiInterfaceDelta("Loaded Restore point " + paramString + "\\Isoptimizeddrawingenabled\t" + str);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       AcInterfaceDelta.NInterfaceAlpha("Error opening Tune Restore Point.", (Exception)ExceptionPrintstacktrace, dd.NInterfaceAlpha().DInterfaceCharlie());
       return false;
@@ -1623,7 +1623,7 @@ public class NetworkHashMap {
       p.NInterfaceAlpha(file, paramR, SInterfaceJuliet);
     } catch (IOException iOException) {
       Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving custom.ini") + "\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving custom.ini") + "\\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
       return false;
     } 
     return true;
@@ -1651,7 +1651,7 @@ public class NetworkHashMap {
       file2.delete();
     } catch (IOException iOException) {
       Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ini") + "\nWill attempt to restore previous file.\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ini") + "\nWill attempt to restore previous file.\\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
       File file = new File(file1.getParentFile(), "Failed_" + file1.getName());
       file.delete();
       try {
@@ -1693,7 +1693,7 @@ public class NetworkHashMap {
       KInterfaceEcho.NInterfaceAlpha(paramR);
       ManagerUsingArrayList.NInterfaceAlpha().NInterfaceAlpha(paramR);
     } catch (IOException iOException) {
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ECU Definition") + "\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ECU Definition") + "\\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
   }
   
@@ -1713,7 +1713,7 @@ public class NetworkHashMap {
       arrayList.add(new NInterfaceAlpha(list));
       NInterfaceAlpha(paramR, arrayList);
     } catch (IOException iOException) {
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ECU Definition") + "\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Error saving ECU Definition") + "\\Isoptimizeddrawingenabled" + iOException.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
   }
   
@@ -1787,7 +1787,7 @@ public class NetworkHashMap {
         IOExceptioninvpackageInWPackage.NInterfaceAlpha(paramString, paramR);
       } catch (IOException iOException) {
         Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-        bV.AiInterfaceDelta("Error Saving Tune.\Isoptimizeddrawingenabled" + iOException.getMessage(), jFrame);
+        bV.AiInterfaceDelta("Error Saving Tune.\\Isoptimizeddrawingenabled" + iOException.getMessage(), jFrame);
         return;
       } 
     } else {
@@ -1883,7 +1883,7 @@ public class NetworkHashMap {
     if (str2 == null || str2.equals(""))
       return; 
     File file = new File(str2);
-    String str3 = ExceptionPrintstacktrace.BInterfaceBravo("File already exists!") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Are you sure you want to over write this file?") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + file.getName();
+    String str3 = ExceptionPrintstacktrace.BInterfaceBravo("File already exists!") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Are you sure you want to over write this file?") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + file.getName();
     if (file.exists() && !bV.NInterfaceAlpha(str3, paramWindow, true))
       return; 
     if (str2 != null && str2.length() > 0) {
@@ -1905,7 +1905,7 @@ public class NetworkHashMap {
     } 
     R BsInterfaceRomeo = T.NInterfaceAlpha().DInterfaceCharlie();
     if (BsInterfaceRomeo == null || BsInterfaceRomeo.Abstract().Abstract()) {
-      String str = ExceptionPrintstacktrace.BInterfaceBravo("Attention!!") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("There is no tune loaded.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Before generating NInterfaceAlpha log file, it is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Otherwise some field values will be incorrect.") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to process this log file anyway?");
+      String str = ExceptionPrintstacktrace.BInterfaceBravo("Attention!!") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("There is no tune loaded.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Before generating NInterfaceAlpha log file, it is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Otherwise some field values will be incorrect.") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to process this log file anyway?");
       boolean bool1 = bV.NInterfaceAlpha(str, paramFrame, true);
       if (!bool1)
         return; 
@@ -1950,7 +1950,7 @@ public class NetworkHashMap {
     } 
     R BsInterfaceRomeo = T.NInterfaceAlpha().DInterfaceCharlie();
     if (BsInterfaceRomeo == null || BsInterfaceRomeo.Abstract().Abstract()) {
-      String str1 = "Attention!!\nThere is no tune loaded. Before generating NInterfaceAlpha log file,\nit is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.\nOtherwise some field values will be incorrect.\Isoptimizeddrawingenabled\nWould you like to process this log file anyway?";
+      String str1 = "Attention!!\nThere is no tune loaded. Before generating NInterfaceAlpha log file,\nit is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.\nOtherwise some field values will be incorrect.\\Isoptimizeddrawingenabled\nWould you like to process this log file anyway?";
       boolean bool = bV.NInterfaceAlpha(str1, paramFrame, true);
       if (!bool)
         return; 
@@ -2075,7 +2075,7 @@ public class NetworkHashMap {
         ExceptionPrintstacktrace(str2);
       } 
     } else {
-      bV.AiInterfaceDelta("Data Logging is not enabled in this edition of " + NInterfaceAlpha.BInterfaceBravo + "\Isoptimizeddrawingenabled\nUpgrade Now!", paramWindow);
+      bV.AiInterfaceDelta("Data Logging is not enabled in this edition of " + NInterfaceAlpha.BInterfaceBravo + "\\Isoptimizeddrawingenabled\nUpgrade Now!", paramWindow);
     } 
   }
   
@@ -2094,7 +2094,7 @@ public class NetworkHashMap {
       NInterfaceAlpha.SInterfaceJuliet(str3);
       ExceptionPrintstacktrace(str2);
     } else {
-      bV.AiInterfaceDelta("Data Logging is not enabled in this edition of " + NInterfaceAlpha.BInterfaceBravo + "\Isoptimizeddrawingenabled\nUpgrade Now!", dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Data Logging is not enabled in this edition of " + NInterfaceAlpha.BInterfaceBravo + "\\Isoptimizeddrawingenabled\nUpgrade Now!", dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
   }
   
@@ -2157,7 +2157,7 @@ public class NetworkHashMap {
       hq.NInterfaceAlpha().NInterfaceAlpha("Capturing DataLog");
       return new File(DInterfaceCharlie.Isoptimizeddrawingenabled());
     } catch (Exception exception) {
-      bV.AiInterfaceDelta("Failed to start log file. Error:\Isoptimizeddrawingenabled" + exception.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Failed to start log file. Error:\\Isoptimizeddrawingenabled" + exception.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
       exception.printStackTrace();
       return null;
     } 
@@ -2233,7 +2233,7 @@ public class NetworkHashMap {
           File file = new File(str);
           String str1 = ExceptionPrintstacktrace.BInterfaceBravo("File already exists.");
           str1 = str1 + ExceptionPrintstacktrace.BInterfaceBravo("Overwrite File?");
-          str1 = str1 + "\Isoptimizeddrawingenabled";
+          str1 = str1 + "\\Isoptimizeddrawingenabled";
           if (file.exists() && file.length() > 1000L) {
             File file1;
             String str2 = NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.cA, NInterfaceAlpha.cB);
@@ -2458,13 +2458,13 @@ public class NetworkHashMap {
         File file = t.BInterfaceBravo(uRL);
         String str1 = paramR.V() + file.getName();
         if (!Isoptimizeddrawingenabled.BInterfaceBravo()) {
-          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Help Manual not found on your computer.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Try again while connected to Internet and it can be downloaded for future offline use.");
+          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Help Manual not found on your computer.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Try again while connected to Internet and it can be downloaded for future offline use.");
           bV.AiInterfaceDelta(str2, paramFrame);
         } else if (!Isoptimizeddrawingenabled.BInterfaceBravo(str1)) {
-          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Help Manual not found on your computer.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Also not found on server.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Check with your firmware provider and place manual on your computer at") + ":\Isoptimizeddrawingenabled" + file.getAbsolutePath();
+          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("Help Manual not found on your computer.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Also not found on server.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Check with your firmware provider and place manual on your computer at") + ":\\Isoptimizeddrawingenabled" + file.getAbsolutePath();
           bV.AiInterfaceDelta(str2, paramFrame);
         } else {
-          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("The help manual for your firmware is not installed.") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to download it now?");
+          String str2 = ExceptionPrintstacktrace.BInterfaceBravo("The help manual for your firmware is not installed.") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Would you like to download it now?");
           if (bV.NInterfaceAlpha(str2, paramFrame, true)) {
             G ExceptionPrintstacktrace = new G(this, str);
             NInterfaceAlpha(ExceptionPrintstacktrace.BInterfaceBravo("Downloading Help Manual"), str1, file, ExceptionPrintstacktrace);
@@ -2510,7 +2510,7 @@ public class NetworkHashMap {
       try {
         f1.BInterfaceBravo(paramb.BInterfaceBravo());
       } catch (NInterfaceAlpha NInterfaceAlpha) {
-        AcInterfaceDelta.NInterfaceAlpha("Unable to open help:\Isoptimizeddrawingenabled" + paramb.BInterfaceBravo(), (Exception)NInterfaceAlpha, paramWindow);
+        AcInterfaceDelta.NInterfaceAlpha("Unable to open help:\\Isoptimizeddrawingenabled" + paramb.BInterfaceBravo(), (Exception)NInterfaceAlpha, paramWindow);
       } 
       f1.NInterfaceAlpha(paramWindow, paramb.NInterfaceAlpha());
     } 
@@ -2529,7 +2529,7 @@ public class NetworkHashMap {
       paramString1 = paramString1.substring(paramString1.lastIndexOf(".") + 1);
     } 
     if (BsInterfaceRomeo.Abstract().Abstract()) {
-      String str = ExceptionPrintstacktrace.BInterfaceBravo("Attention!!") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("There is no tune loaded. Before doing any configuration") + ",\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("it is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.") + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("It is not advised to create NInterfaceAlpha tune (" + NInterfaceAlpha.cw + ") from scratch.");
+      String str = ExceptionPrintstacktrace.BInterfaceBravo("Attention!!") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("There is no tune loaded. Before doing any configuration") + ",\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("it is recommended to either load an (" + NInterfaceAlpha.cw + ") or connect to NInterfaceAlpha controller.") + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("It is not advised to create NInterfaceAlpha tune (" + NInterfaceAlpha.cw + ") from scratch.");
       bV.AiInterfaceDelta(str, paramFrame);
     } 
     ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = BsInterfaceRomeo.KInterfaceEcho().DInterfaceCharlie(paramString1);
@@ -2537,9 +2537,9 @@ public class NetworkHashMap {
       iL iL = iL.NInterfaceAlpha();
       try {
         if (!iL.NInterfaceAlpha(paramFrame, BsInterfaceRomeo, paramString1, paramString2))
-          bV.AiInterfaceDelta(paramString1 + " " + ExceptionPrintstacktrace.BInterfaceBravo("not found in current configuration.") + "\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Perhaps it hasn't been created."), paramFrame); 
+          bV.AiInterfaceDelta(paramString1 + " " + ExceptionPrintstacktrace.BInterfaceBravo("not found in current configuration.") + "\\Isoptimizeddrawingenabled" + ExceptionPrintstacktrace.BInterfaceBravo("Perhaps it hasn't been created."), paramFrame); 
       } catch (NInterfaceAlpha NInterfaceAlpha) {
-        bV.AiInterfaceDelta("Error showing dialog " + paramString1 + "\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), paramFrame);
+        bV.AiInterfaceDelta("Error showing dialog " + paramString1 + "\\Isoptimizeddrawingenabled\\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), paramFrame);
       } 
       return;
     } 
@@ -2583,7 +2583,7 @@ public class NetworkHashMap {
     try {
       applicationPlugin = SInterfaceLima.NInterfaceAlpha().NInterfaceAlpha(file1);
       if (SInterfaceLima.NInterfaceAlpha().DInterfaceCharlie(applicationPlugin.getIdName())) {
-        String str3 = "A plugin with NInterfaceAlpha matching ID: '" + applicationPlugin.getIdName() + "' is already installed.\Isoptimizeddrawingenabled\nDo you want to replace it with the new one?";
+        String str3 = "A plugin with NInterfaceAlpha matching ID: '" + applicationPlugin.getIdName() + "' is already installed.\\Isoptimizeddrawingenabled\nDo you want to replace it with the new one?";
         if (!bV.NInterfaceAlpha(str3, dd.NInterfaceAlpha().DInterfaceCharlie(), true))
           return; 
         bool = true;
@@ -2592,13 +2592,13 @@ public class NetworkHashMap {
       if (!bV.NInterfaceAlpha(str, dd.NInterfaceAlpha().DInterfaceCharlie(), true))
         return; 
     } catch (NInterfaceAlpha NInterfaceAlpha) {
-      bV.AiInterfaceDelta("Error loading Plugin:\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Error loading Plugin:\\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } catch (Exception exception) {
-      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\Isoptimizeddrawingenabled" + exception.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\\Isoptimizeddrawingenabled" + exception.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } catch (UnsupportedClassVersionError unsupportedClassVersionError) {
-      bV.AiInterfaceDelta("Unsupported Class Vesion loading Plugin.\nError:\Isoptimizeddrawingenabled" + unsupportedClassVersionError.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Unsupported Class Vesion loading Plugin.\nError:\\Isoptimizeddrawingenabled" + unsupportedClassVersionError.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } catch (Error error) {
-      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\Isoptimizeddrawingenabled" + error.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\\Isoptimizeddrawingenabled" + error.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
     try {
       file2 = SInterfaceJuliet.BInterfaceBravo();
@@ -2643,11 +2643,11 @@ public class NetworkHashMap {
       bV.NInterfaceAlpha((Component)Abstract, dd.NInterfaceAlpha().DInterfaceCharlie(), applicationPlugin.getDisplayName(), (bc)Abstract);
     } catch (NInterfaceAlpha NInterfaceAlpha) {
       Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, (Throwable)NInterfaceAlpha);
-      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Unable to display Plugin") + "\nError:\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta(ExceptionPrintstacktrace.BInterfaceBravo("Unable to display Plugin") + "\nError:\\Isoptimizeddrawingenabled" + NInterfaceAlpha.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } catch (UnsupportedClassVersionError unsupportedClassVersionError) {
-      bV.AiInterfaceDelta("Unsupported Class Vesion loading Plugin.\nError:\Isoptimizeddrawingenabled" + unsupportedClassVersionError.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Unsupported Class Vesion loading Plugin.\nError:\\Isoptimizeddrawingenabled" + unsupportedClassVersionError.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } catch (Error error) {
-      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\Isoptimizeddrawingenabled" + error.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
+      bV.AiInterfaceDelta("Unknown Error loading Plugin.\nIs this NInterfaceAlpha valid Plugin file?\nError:\\Isoptimizeddrawingenabled" + error.getMessage(), dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
   }
   
@@ -3025,7 +3025,7 @@ public class NetworkHashMap {
   }
   
   public void A() {
-    boolean bool = bV.NInterfaceAlpha("The application will be closed after removing the Registration.\Isoptimizeddrawingenabled \nThis computer will be removed from the count of active computers using \nyour registration within 30-60 days.\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled Are you sure you want to remove the registration information Now?", dd.NInterfaceAlpha().DInterfaceCharlie(), true);
+    boolean bool = bV.NInterfaceAlpha("The application will be closed after removing the Registration.\\Isoptimizeddrawingenabled \nThis computer will be removed from the count of active computers using \nyour registration within 30-60 days.\\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled Are you sure you want to remove the registration information Now?", dd.NInterfaceAlpha().DInterfaceCharlie(), true);
     if (!bool)
       return; 
     NInterfaceAlpha.NInterfaceAlpha().AiInterfaceDelta(NInterfaceAlpha.cC, "");
@@ -3040,7 +3040,7 @@ public class NetworkHashMap {
     } catch (NInterfaceAlpha NInterfaceAlpha) {
       AcInterfaceDelta.NInterfaceAlpha("Failed to save registration file.", (Exception)NInterfaceAlpha, dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
-    bV.AiInterfaceDelta(NInterfaceAlpha.BInterfaceBravo + " " + NInterfaceAlpha.DInterfaceCharlie + " registration has been removed.\Isoptimizeddrawingenabled" + NInterfaceAlpha.BInterfaceBravo + " will now close.", dd.NInterfaceAlpha().DInterfaceCharlie());
+    bV.AiInterfaceDelta(NInterfaceAlpha.BInterfaceBravo + " " + NInterfaceAlpha.DInterfaceCharlie + " registration has been removed.\\Isoptimizeddrawingenabled" + NInterfaceAlpha.BInterfaceBravo + " will now close.", dd.NInterfaceAlpha().DInterfaceCharlie());
     Exception();
   }
   
@@ -3117,7 +3117,7 @@ public class NetworkHashMap {
       bV.NInterfaceAlpha(dd.NInterfaceAlpha().DInterfaceCharlie(), (Component)f1);
       f1.BInterfaceBravo(str);
     } catch (NInterfaceAlpha NInterfaceAlpha) {
-      AcInterfaceDelta.NInterfaceAlpha("Unable to open help:\Isoptimizeddrawingenabled" + str, (Exception)NInterfaceAlpha, dd.NInterfaceAlpha().DInterfaceCharlie());
+      AcInterfaceDelta.NInterfaceAlpha("Unable to open help:\\Isoptimizeddrawingenabled" + str, (Exception)NInterfaceAlpha, dd.NInterfaceAlpha().DInterfaceCharlie());
     } 
     f1.setPreferredSize(eJ.NInterfaceAlpha(1050, 800));
     f1.NInterfaceAlpha(dd.NInterfaceAlpha().DInterfaceCharlie(), ExceptionPrintstacktrace.BInterfaceBravo("Upgrade Now!!"));
@@ -3321,7 +3321,7 @@ public class NetworkHashMap {
   public void T() {
     AcInterfaceUniform AcInterfaceUniform = new AcInterfaceUniform(this);
     AcInterfaceUniform.BInterfaceBravo("userParameter_Timeout in Minutes", NInterfaceAlpha.NInterfaceAlpha().DInterfaceCharlie(NInterfaceAlpha.ag, NInterfaceAlpha.ah));
-    String str1 = "Once you enter NInterfaceAlpha password for NInterfaceAlpha password protected dialog\nit will be cached for the set number of minutes without\nthe need to re-enter for any dialog using the same password.\Isoptimizeddrawingenabled\nNote: The Cache is cleared when closing the project.";
+    String str1 = "Once you enter NInterfaceAlpha password for NInterfaceAlpha password protected dialog\nit will be cached for the set number of minutes without\nthe need to re-enter for any dialog using the same password.\\Isoptimizeddrawingenabled\nNote: The Cache is cleared when closing the project.";
     String str2 = bV.NInterfaceAlpha("{Timeout in Minutes}", true, str1, true, dd.NInterfaceAlpha().DInterfaceCharlie(), AcInterfaceUniform, null);
     if (str2 != null && !str2.isEmpty())
       try {

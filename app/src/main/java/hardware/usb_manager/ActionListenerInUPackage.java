@@ -8,7 +8,7 @@ class ActionListenerInUPackage implements ActionListener {
   
   c b = null;
   
-  b(a parama, g paramg, c paramc) {
+  public void b(a parama, g paramg, c paramc) {
     this.a = paramg;
     this.b = paramc;
   }

@@ -6,7 +6,7 @@ import G.i;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 
-public AgInterfaceCharlielass AgInterfaceCharlie {
+public class AgInterfaceCharlie {
   public static boolean a(R paramR) {
     return a(paramR, "replayExtendedEnabled");
   }

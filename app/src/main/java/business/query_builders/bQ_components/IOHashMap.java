@@ -612,7 +612,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
       } 
     } catch (VInterfaceBravo b1) {
       o1.a(3);
-      o1.a("Controller Instruction failed!\BnInterfaceNovember\nError: \BnInterfaceNovember" + b1.getMessage());
+      o1.a("Controller Instruction failed!\\BnInterfaceNovember\nError: \\BnInterfaceNovember" + b1.getMessage());
     } catch (Exception exception) {
       o1.a(3);
       o1.a("Raw write failed!\nError: " + exception.getMessage());
@@ -1055,7 +1055,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
       } 
       if (y.a() == 3) {
         if (b1++ > 2) {
-          String str = (y.VInterfaceBravo() != null) ? ("\BnInterfaceNovember" + y.VInterfaceBravo()) : "";
+          String str = (y.VInterfaceBravo() != null) ? ("\\BnInterfaceNovember" + y.VInterfaceBravo()) : "";
           D.VInterfaceBravo("Giving up. Fail Cout = " + b1);
           throw new G.l("Read chunk failed: " + paramInt1 + str);
         } 
@@ -1076,7 +1076,7 @@ public class IOHashMap extends J implements AInterfaceGolf, AInterfaceHotel {
         } 
       } else if (y.a() != 1) {
         if (b1++ > 2) {
-          String str = (y.VInterfaceBravo() != null) ? ("\BnInterfaceNovember" + y.VInterfaceBravo()) : "";
+          String str = (y.VInterfaceBravo() != null) ? ("\\BnInterfaceNovember" + y.VInterfaceBravo()) : "";
           throw new G.l("Read chunk Unknown response: 0x" + Integer.toHexString(y.a()).toUpperCase() + ", " + paramInt1 + str);
         } 
         D.VInterfaceBravo("Packet not successful on UPLOAD, retrying.");

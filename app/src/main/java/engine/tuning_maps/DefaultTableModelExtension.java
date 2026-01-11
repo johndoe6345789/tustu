@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 class DefaultTableModelExtension extends DefaultTableModel {
   private jq b = null;
   
-  jp(jc paramjc) {
+  public void jp(jc paramjc) {
     addTableModelListener(paramjc.g);
   }
 }

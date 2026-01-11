@@ -9,7 +9,7 @@ class ThreadExtensionInBlPackage extends Thread {
   
   private boolean c = false;
   
-  o(n paramn) {
+  public void o(n paramn) {
     super("VE Analyze Processor");
     setDaemon(true);
   }

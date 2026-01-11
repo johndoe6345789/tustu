@@ -5,7 +5,7 @@ import A.AInterfaceEcho;
 class BsInterfaceMike implements AInterfaceEcho {
   r a;
   
-  m(l paraml, r paramr) {
+  public void m(l paraml, r paramr) {
     this.a = paramr;
     l.a(paraml);
   }

@@ -5,7 +5,7 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
 
 class DefaultCellEditorExtension extends DefaultCellEditor {
-  jq(jc paramjc) {
+  public void jq(jc paramjc) {
     super(new JTextField());
     JTextField jTextField = (JTextField)getComponent();
     jTextField.setFont(paramjc.getFont());

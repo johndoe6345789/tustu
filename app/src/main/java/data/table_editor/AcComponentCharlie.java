@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public AcComponentCharlielass AcComponentCharlie extends h {
+public class AcComponentCharlie extends h {
   private static c p = null;
   
   private List q = Collections.synchronizedList(new ArrayList());

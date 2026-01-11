@@ -5,7 +5,7 @@ class v implements w {
   
   private double c;
   
-  v(u paramu, double paramDouble1, double paramDouble2) {
+  public void v(u paramu, double paramDouble1, double paramDouble2) {
     this.b = paramDouble1;
     this.c = paramDouble2;
   }

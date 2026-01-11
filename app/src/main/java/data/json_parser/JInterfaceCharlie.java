@@ -7,7 +7,7 @@ import h.PropertiesExtensionInHPackage;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public JInterfaceCharlielass JInterfaceCharlie implements HComponentAlpha {
+public class JInterfaceCharlie implements HComponentAlpha {
   public void HComponentAlpha(ArrayList paramArrayList) {
     ArrayList<String> arrayList = new ArrayList();
     Iterator<j> iterator = paramArrayList.iterator();

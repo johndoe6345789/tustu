@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-public AwInterfaceCharlielass AwInterfaceCharlie extends JPanel {
+public class AwInterfaceCharlie extends JPanel {
   ab a = null;
   
   JPanelExtensionInBePackage b = null;

@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.StringTokenizer;
 
-public IOInAzPackagelass IOInAzPackage {
+public class IOInAzPackage {
   int a = 0;
   
   String b = "";

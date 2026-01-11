@@ -3,7 +3,7 @@ package ae;
 import java.util.ArrayList;
 import java.util.List;
 
-public AeComponentCharlielass AeComponentCharlie {
+public class AeComponentCharlie {
   public static List a(List paramList, k paramk) {
     ArrayList<s> arrayList = new ArrayList();
     for (s s : paramList) {

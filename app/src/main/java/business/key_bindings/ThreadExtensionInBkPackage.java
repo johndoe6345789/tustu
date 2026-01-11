@@ -3,7 +3,7 @@ package business.key_bindings;
 class ThreadExtensionInBkPackage extends Thread {
   boolean a = true;
   
-  c(a parama) {
+  public void c(a parama) {
     super("RTC Refresh");
     setDaemon(true);
   }

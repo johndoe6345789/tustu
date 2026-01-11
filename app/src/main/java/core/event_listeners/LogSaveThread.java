@@ -11,7 +11,7 @@ class g extends Thread {
   
   n b;
   
-  g(b paramb, o paramo, n paramn) {
+  public void g(b paramb, o paramo, n paramn) {
     this.a = paramo;
     this.b = paramn;
   }

@@ -7,7 +7,7 @@ import javax.swing.table.DefaultTableModel;
 class ManagerGetcolumncount extends DefaultTableModel {
   String[] a = new String[] { b.a(this.b, "Standard Name"), b.a(this.b, "Imported Log Names") };
   
-  d(b paramb) {
+  public void d(b paramb) {
     setColumnIdentifiers((Object[])this.a);
   }
   

@@ -1,7 +1,7 @@
 package y;
 
 class ThreadExtensionInYPackage extends Thread {
-  e(c paramc) {
+  public void e(c paramc) {
     super("SenderThread");
   }
   

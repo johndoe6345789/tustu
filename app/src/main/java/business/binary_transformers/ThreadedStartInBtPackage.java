@@ -3,7 +3,7 @@ package business.binary_transformers;
 import java.awt.Color;
 
 class ThreadedStartInBtPackage extends Thread {
-  bt(bq parambq) {
+  public void bt(bq parambq) {
     super("SliderWarnBlink");
   }
   

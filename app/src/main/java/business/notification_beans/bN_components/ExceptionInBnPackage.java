@@ -1,6 +1,6 @@
 package business.notification_beans.bN_components;
 
-public ExceptionInBnPackagelass ExceptionInBnPackage extends Exception {}
+public class ExceptionInBnPackage extends Exception {}
 
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bN/c.class

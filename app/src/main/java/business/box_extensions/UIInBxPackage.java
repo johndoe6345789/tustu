@@ -35,7 +35,7 @@ class UIInBxPackage extends JPanel {
   
   List h = new ArrayList();
   
-  m(ab paramab) {
+  public void m(ab paramab) {
     this.f = paramab;
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();

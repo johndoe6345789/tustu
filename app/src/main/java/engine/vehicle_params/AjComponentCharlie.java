@@ -8,7 +8,7 @@ import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.util.ArrayList;
 
-public AjComponentCharlielass AjComponentCharlie {
+public class AjComponentCharlie {
   public static String a = "NextAddress";
   
   public static String b = "LastAddress";

@@ -9,7 +9,7 @@ import bt.N;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public BmComponentCharlielass BmComponentCharlie implements N {
+public class BmComponentCharlie implements N {
   public boolean ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage parambv) {
     return (parambv instanceof G.bD && parambv.aL().equals("std_ms3SdConsole"));
   }

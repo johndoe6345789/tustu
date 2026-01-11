@@ -9,7 +9,7 @@ class en extends Thread {
   
   boolean b = false;
   
-  en(cd paramcd, boolean paramBoolean, Frame paramFrame) {
+  public void en(cd paramcd, boolean paramBoolean, Frame paramFrame) {
     super("UpdateThread");
     setDaemon(true);
     this.b = paramBoolean;

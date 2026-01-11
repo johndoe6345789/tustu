@@ -11,7 +11,7 @@ import com.efiAnalytics.plugin.ecu.ControllerParameterChangeListener;
 import com.efiAnalytics.plugin.ecu.servers.ControllerParameterServer;
 import java.util.HashMap;
 
-public ManagerUnsubscribelass ManagerUnsubscribe implements ControllerParameterServer {
+public class ManagerUnsubscribe implements ControllerParameterServer {
   HashMap a = new HashMap<>();
   
   public void subscribe(String paramString1, String paramString2, ControllerParameterChangeListener paramControllerParameterChangeListener) {

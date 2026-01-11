@@ -8,7 +8,7 @@ import javax.swing.JScrollPane;
 class hv extends JScrollPane {
   JComponent a;
   
-  hv(hj paramhj, JComponent paramJComponent) {
+  public void hv(hj paramhj, JComponent paramJComponent) {
     super(paramJComponent);
     this.a = paramJComponent;
     setHorizontalScrollBarPolicy(31);

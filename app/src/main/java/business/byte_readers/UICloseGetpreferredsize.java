@@ -458,7 +458,7 @@ public class UICloseGetpreferredsize extends al implements bc {
   public void close() {
     ExceptionInVPackage(false);
     if (c()) {
-      boolean bool = bV.ExceptionInVPackage(ExceptionPrintstacktrace.b("VE Analysis has recommended VE changes that have not been sent to the controller.\Isoptimizeddrawingenabled Would you like to save the recommended table to the controller now?"), (Component)this, true);
+      boolean bool = bV.ExceptionInVPackage(ExceptionPrintstacktrace.b("VE Analysis has recommended VE changes that have not been sent to the controller.\\Isoptimizeddrawingenabled Would you like to save the recommended table to the controller now?"), (Component)this, true);
       if (bool)
         d(); 
     } 

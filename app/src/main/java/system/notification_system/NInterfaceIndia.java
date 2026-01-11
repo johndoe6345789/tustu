@@ -1,6 +1,6 @@
 package system.notification_system;
 
-public NInterfaceIndianterface NInterfaceIndia {
+public interface NInterfaceIndia {
   void a(String paramString);
   
   void b(String paramString);

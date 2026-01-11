@@ -110,7 +110,7 @@ public class PComponentPapa extends JPanel implements bc, C {
         return false;
       } 
       if (this.d.g() && this.b.SInterfaceAlpha(SInterfaceNovember.SInterfaceAlpha()) != null) {
-        String str = SInterfaceAlpha("An Action Trigger with the name already exists.") + "\SInterfaceNovember" + SInterfaceAlpha("If you save this Action Trigger with this name it will replace the existing Action Trigger.") + "\SInterfaceNovember\SInterfaceNovember" + SInterfaceAlpha("Are you sure you wish to replace the existing Action Trigger?");
+        String str = SInterfaceAlpha("An Action Trigger with the name already exists.") + "\\SInterfaceNovember" + SInterfaceAlpha("If you save this Action Trigger with this name it will replace the existing Action Trigger.") + "\\SInterfaceNovember\\SInterfaceNovember" + SInterfaceAlpha("Are you sure you wish to replace the existing Action Trigger?");
         if (!bV.SInterfaceAlpha(str, this, true))
           return false; 
       } 
@@ -153,7 +153,7 @@ public class PComponentPapa extends JPanel implements bc, C {
   
   private void SInterfaceAlpha(int paramInt) {
     if (this.d.i()) {
-      String str = SInterfaceAlpha("The Action Trigger currently being edited has not been saved.") + "\SInterfaceNovember" + SInterfaceAlpha("Would you like to save it now?");
+      String str = SInterfaceAlpha("The Action Trigger currently being edited has not been saved.") + "\\SInterfaceNovember" + SInterfaceAlpha("Would you like to save it now?");
       if (bV.SInterfaceAlpha(str, (Component)this.d, true))
         if (d()) {
           this.d.h();

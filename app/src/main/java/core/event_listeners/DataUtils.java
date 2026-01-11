@@ -10,7 +10,7 @@ import javax.swing.JCheckBoxMenuItem;
 class ea implements ItemListener {
   hx a = null;
   
-  ea(cd paramcd, hx paramhx) {
+  public void ea(cd paramcd, hx paramhx) {
     this.a = paramhx;
   }
   

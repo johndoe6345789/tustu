@@ -3,7 +3,7 @@ package aj;
 class ThreadExtensionInAjPackage extends Thread {
   boolean a = true;
   
-  i(d paramd) {
+  public void i(d paramd) {
     super("ReadTimer");
     setDaemon(true);
   }

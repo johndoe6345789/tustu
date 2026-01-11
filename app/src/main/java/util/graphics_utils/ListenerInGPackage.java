@@ -9,7 +9,7 @@ class ListenerInGPackage implements ActionListener {
   
   j b;
   
-  i(g paramg, de paramde, j paramj) {
+  public void i(g paramg, de paramde, j paramj) {
     this.a = paramde;
     this.b = paramj;
   }

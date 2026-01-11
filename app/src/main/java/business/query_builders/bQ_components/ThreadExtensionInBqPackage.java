@@ -23,7 +23,7 @@ class ThreadExtensionInBqPackage extends Thread {
   
   boolean e = false;
   
-  n(l paraml) {
+  public void n(l paraml) {
     super("XCP CommDriverConnect " + Math.random());
     setDaemon(true);
     try {

@@ -11,7 +11,7 @@ class AsInterfaceIndia implements GComponentCq {
   
   R c = null;
   
-  i(g paramg, R paramR) {
+  public void i(g paramg, R paramR) {
     this.c = paramR;
   }
   

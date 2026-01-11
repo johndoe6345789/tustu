@@ -4,7 +4,7 @@ import G.GComponentCq;
 import java.util.ArrayList;
 import java.util.List;
 
-public TostringInBoPackagelass TostringInBoPackage {
+public class TostringInBoPackage {
   private final e e = new e();
   
   public static byte a = 32;

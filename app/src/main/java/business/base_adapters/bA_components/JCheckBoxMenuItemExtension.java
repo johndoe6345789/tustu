@@ -5,7 +5,7 @@ import com.efiAnalytics.ui.bs;
 import com.efiAnalytics.ui.eA;
 import javax.swing.JCheckBoxMenuItem;
 
-public JCheckBoxMenuItemExtensionlass JCheckBoxMenuItemExtension extends JCheckBoxMenuItem implements bs {
+public class JCheckBoxMenuItemExtension extends JCheckBoxMenuItem implements bs {
   private boolean a = true;
   
   private CInterfaceEcho b = null;

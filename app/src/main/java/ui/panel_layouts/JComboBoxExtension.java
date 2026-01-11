@@ -3,7 +3,7 @@ package aW;
 import javax.swing.JComboBox;
 
 class JComboBoxExtension extends JComboBox implements n {
-  l(e parame) {
+  public void l(e parame) {
     setEditable(true);
   }
   

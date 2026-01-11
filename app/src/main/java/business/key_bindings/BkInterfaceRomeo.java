@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class BkInterfaceRomeo extends Thread {
   boolean a = true;
   
-  r(q paramq) {
+  public void r(q paramq) {
     super("Toggle Blink");
     setDaemon(true);
   }

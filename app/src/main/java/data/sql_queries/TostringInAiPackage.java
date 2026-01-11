@@ -1,6 +1,6 @@
 package aI;
 
-public TostringInAiPackagelass TostringInAiPackage {
+public class TostringInAiPackage {
   private int a = 0;
   
   private int b = -1;

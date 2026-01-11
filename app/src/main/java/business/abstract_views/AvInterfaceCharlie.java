@@ -19,7 +19,7 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public AvInterfaceCharlielass AvInterfaceCharlie extends ExceptionPrintstacktrace {
+public class AvInterfaceCharlie extends ExceptionPrintstacktrace {
   protected static c ExceptionInVPackage = null;
   
   public static c f() {

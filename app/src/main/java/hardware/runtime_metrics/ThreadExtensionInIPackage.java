@@ -1,7 +1,7 @@
 package I;
 
 class ThreadExtensionInIPackage extends Thread {
-  m(k paramk) {
+  public void m(k paramk) {
     super("TimedStoreAccumulated");
   }
   

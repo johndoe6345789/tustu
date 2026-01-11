@@ -37,7 +37,7 @@ import org.w3c.dom.NodeList;
 import r.ExceptionInVPackage;
 import r.ThreadedFile;
 
-public IOInVPackagelass IOInVPackage extends e {
+public class IOInVPackage extends e {
   File ExceptionInVPackage;
   
   File b;

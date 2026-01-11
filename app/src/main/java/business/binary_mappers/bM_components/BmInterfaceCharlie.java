@@ -1,6 +1,6 @@
 package business.binary_mappers.bM_components;
 
-public BmInterfaceCharlielass BmInterfaceCharlie {
+public class BmInterfaceCharlie {
   protected int a = 0;
   
   private double c = 14.7D;
@@ -11,7 +11,7 @@ public BmInterfaceCharlielass BmInterfaceCharlie {
   
   private int e;
   
-  c(int paramInt) {
+  public BmInterfaceCharlie(int paramInt) {
     this.e = paramInt;
   }
   

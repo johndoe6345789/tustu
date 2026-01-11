@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApComponentIx extends Thread {
-  ix(iw paramiw) {
+  public void ix(iw paramiw) {
     super("SendBlockCleanup");
     setDaemon(true);
   }

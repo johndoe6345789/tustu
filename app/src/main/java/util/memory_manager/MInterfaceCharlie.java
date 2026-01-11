@@ -2,7 +2,7 @@ package m;
 
 import java.util.List;
 
-public MInterfaceCharlielass MInterfaceCharlie {
+public class MInterfaceCharlie {
   public MInterfaceCharlie(a parama) {}
   
   public void a(List paramList) {

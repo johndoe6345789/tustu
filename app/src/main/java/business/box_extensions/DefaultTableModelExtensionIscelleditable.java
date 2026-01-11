@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 class DefaultTableModelExtensionIscelleditable extends DefaultTableModel {
   String[] a = new String[] { t.a(this.b, "On"), t.a(this.b, "Filter Name") };
   
-  w(t paramt) {
+  public void w(t paramt) {
     setColumnIdentifiers((Object[])this.a);
   }
   

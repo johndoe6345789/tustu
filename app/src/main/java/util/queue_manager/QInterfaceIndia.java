@@ -2,7 +2,7 @@ package q;
 
 import java.awt.Component;
 
-public QInterfaceIndianterface QInterfaceIndia {
+public interface QInterfaceIndia {
   void a(Component paramComponent);
   
   void b(Component paramComponent);

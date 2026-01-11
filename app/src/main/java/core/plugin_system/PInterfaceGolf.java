@@ -180,23 +180,23 @@ public class PInterfaceGolf extends ExceptionEqualsinaipackage implements bc {
   public void SInterfaceAlpha(Timer paramh) {
     String str = "";
     if (paramh.SInterfaceAlpha() == null || paramh.SInterfaceAlpha().trim().isEmpty())
-      str = str + s.g.b("Name is required.") + "\SInterfaceNovember"; 
+      str = str + s.g.b("Name is required.") + "\\SInterfaceNovember"; 
     if (X.f(paramh.SInterfaceAlpha()) || paramh.SInterfaceAlpha().contains(" "))
-      str = str + s.g.b("Name cannot contain special characters!") + "\SInterfaceNovember"; 
+      str = str + s.g.b("Name cannot contain special characters!") + "\\SInterfaceNovember"; 
     try {
       i.SInterfaceAlpha(paramh.d(), (GInterfaceAi)this.b);
     } catch (ExceptionInAxPackage u) {
-      str = str + s.g.b("Invalid Trigger Expression") + ":" + this.j.SInterfaceAlpha() + "\SInterfaceNovember";
+      str = str + s.g.b("Invalid Trigger Expression") + ":" + this.j.SInterfaceAlpha() + "\\SInterfaceNovember";
       if (u.getMessage() != null && !u.getMessage().isEmpty())
-        str = str + "     Err: " + s.g.b(u.getLocalizedMessage()) + "\SInterfaceNovember"; 
+        str = str + "     Err: " + s.g.b(u.getLocalizedMessage()) + "\\SInterfaceNovember"; 
     } 
     if (!paramh.f())
       try {
         i.SInterfaceAlpha(paramh.SInterfaceEcho(), (GInterfaceAi)this.b);
       } catch (ExceptionInAxPackage u) {
-        str = str + s.g.b("Invalid Reset Expression") + ":" + this.k.SInterfaceAlpha() + "\SInterfaceNovember";
+        str = str + s.g.b("Invalid Reset Expression") + ":" + this.k.SInterfaceAlpha() + "\\SInterfaceNovember";
         if (u.getMessage() != null && !u.getMessage().isEmpty())
-          str = str + "     Err: " + s.g.b(u.getLocalizedMessage()) + "\SInterfaceNovember"; 
+          str = str + "     Err: " + s.g.b(u.getLocalizedMessage()) + "\\SInterfaceNovember"; 
       }  
     if (!str.isEmpty())
       throw new SInterfaceEcho(str); 

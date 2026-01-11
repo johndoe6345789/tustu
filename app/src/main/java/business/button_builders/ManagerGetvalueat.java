@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 class ManagerGetvalueat extends DefaultTableModel {
   String[] a = new String[] { l.a(this.b, "Firmware Loader"), l.a(this.b, "Description") };
   
-  m(l paraml) {
+  public void m(l paraml) {
     setColumnIdentifiers((Object[])this.a);
   }
   

@@ -7,7 +7,7 @@ import c.CInterfaceEcho;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public BfComponentCharlielass BfComponentCharlie implements C {
+public class BfComponentCharlie implements C {
   private GInterfaceDb c = (GInterfaceDb)new G.c("");
   
   double[] a = new double[8];

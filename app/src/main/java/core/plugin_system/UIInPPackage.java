@@ -19,7 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public UIInPPackagelass UIInPPackage extends JPanel {
+public class UIInPPackage extends JPanel {
   private DInterfaceIndia f = null;
   
   JLabel a = new JLabel("", 4);

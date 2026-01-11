@@ -6,7 +6,7 @@ import bH.R;
 class AeInterfaceBravo implements R {
   r a;
   
-  b(a parama, r paramr) {
+  public void b(a parama, r paramr) {
     this.a = paramr;
   }
   

@@ -2,7 +2,7 @@ package business.binding_generators.bG_components;
 
 import java.util.List;
 
-public BgInterfaceIndianterface BgInterfaceIndia {
+public interface BgInterfaceIndia {
   void a(List paramList);
 }
 

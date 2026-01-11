@@ -11,7 +11,7 @@ class cb {
   
   Object e = null;
   
-  cb(ca paramca, String paramString1, String paramString2, String paramString3, Object paramObject, int paramInt) {
+  public void cb(ca paramca, String paramString1, String paramString2, String paramString3, Object paramObject, int paramInt) {
     this.b = paramString1;
     this.a = paramString2;
     this.e = paramObject;

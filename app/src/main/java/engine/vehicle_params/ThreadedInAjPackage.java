@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 class ThreadedInAjPackage extends Thread {
   boolean a = true;
   
-  j(d paramd) {
+  public void j(d paramd) {
     super("SendCaller");
     setDaemon(true);
   }

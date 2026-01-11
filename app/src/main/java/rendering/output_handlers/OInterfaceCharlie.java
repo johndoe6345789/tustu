@@ -4,7 +4,7 @@ import G.AeInterfaceMikeTostring;
 import G.GInterfaceCx;
 import bH.D;
 
-public OInterfaceCharlielass OInterfaceCharlie implements GInterfaceCx {
+public class OInterfaceCharlie implements GInterfaceCx {
   public boolean a(AeInterfaceMikeTostring parambT) {
     if (parambT != null && parambT.a() != null && (parambT.a()).length == 1 && parambT.a()[0] != 20) {
       D.d("Valid BigStuff3 signature: " + bH.c.d(parambT.a()));

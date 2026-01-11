@@ -8,7 +8,7 @@ class EnableDelayThread extends Thread {
   
   long b = System.currentTimeMillis() + this.a;
   
-  f(e parame) {
+  public void f(e parame) {
     super("EnableDelay");
     setDaemon(true);
   }

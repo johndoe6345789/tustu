@@ -7,7 +7,7 @@ class hu extends e implements aU {
   
   int b;
   
-  hu(hj paramhj, int paramInt1, int paramInt2) {
+  public void hu(hj paramhj, int paramInt1, int paramInt2) {
     this.a = paramInt1;
     this.b = paramInt2;
   }

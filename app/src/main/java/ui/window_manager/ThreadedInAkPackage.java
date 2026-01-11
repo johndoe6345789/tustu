@@ -3,7 +3,7 @@ package aK;
 class ThreadedInAkPackage extends Thread {
   boolean a = false;
   
-  e(d paramd) {
+  public void e(d paramd) {
     super("GPSPublisher");
     setDaemon(true);
   }

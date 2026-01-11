@@ -2,7 +2,7 @@ package business.button_builders.bB_components;
 
 import h.IOProperties;
 
-public BbInterfaceCharlielass BbInterfaceCharlie implements b {
+public class BbInterfaceCharlie implements b {
   public r a(String paramString) {
     String str = IOProperties.a("FIELD_MIN_MAX_" + paramString, null);
     a a = new a();

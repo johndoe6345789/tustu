@@ -3,7 +3,7 @@ package k;
 import ax.ExceptionInAxPackage;
 import java.io.File;
 
-public FileInKPackagelass FileInKPackage extends ExceptionInAxPackage {
+public class FileInKPackage extends ExceptionInAxPackage {
   private File a = null;
   
   public FileInKPackage(String paramString, Throwable paramThrowable) {

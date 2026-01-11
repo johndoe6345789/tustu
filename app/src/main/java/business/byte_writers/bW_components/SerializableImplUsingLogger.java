@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public SerializableImplUsingLoggerlass SerializableImplUsingLogger implements Serializable {
+public class SerializableImplUsingLogger implements Serializable {
   private static final Logger c;
   
   private final byte d;

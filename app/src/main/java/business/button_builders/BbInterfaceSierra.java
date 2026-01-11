@@ -21,7 +21,7 @@ class BbInterfaceSierra extends JPanel {
   
   boolean e = false;
   
-  s(p paramp) {
+  public void s(p paramp) {
     setLayout(new BorderLayout(eJ.ExceptionInVPackage(10), eJ.ExceptionInVPackage(10)));
     add("Center", this.b);
     add("East", this.ExceptionInVPackage);

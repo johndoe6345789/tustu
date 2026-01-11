@@ -1,6 +1,6 @@
 package aJ;
 
-public AjInterfaceCharlielass AjInterfaceCharlie {
+public class AjInterfaceCharlie {
   private int a = 0;
   
   private a b = null;

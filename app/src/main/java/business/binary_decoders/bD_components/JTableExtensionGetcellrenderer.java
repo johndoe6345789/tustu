@@ -12,7 +12,7 @@ import javax.swing.table.TableRowSorter;
 class JTableExtensionGetcellrenderer extends JTable {
   f a = new f(this);
   
-  c(F paramF) {
+  public void c(F paramF) {
     super(paramF);
     setAutoResizeMode(1);
     TableColumn tableColumn = getColumnModel().getColumn(F.a);

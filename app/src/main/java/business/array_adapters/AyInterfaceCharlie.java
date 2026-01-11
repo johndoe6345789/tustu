@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public AyInterfaceCharlielass AyInterfaceCharlie {
+public class AyInterfaceCharlie {
   private String b;
   
   private String c;

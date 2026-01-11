@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import javax.swing.JMenuItem;
 
 class ej extends bp {
-  ej(cd paramcd) {
+  public void ej(cd paramcd) {
     super("Recent Viewed Log Files");
   }
   

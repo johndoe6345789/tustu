@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class ApComponentIu extends Thread {
-  iu(ir paramir) {
+  public void iu(ir paramir) {
     super("SalesLabelRotation");
     setDaemon(true);
   }

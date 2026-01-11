@@ -5,7 +5,7 @@ import java.io.IOException;
 class ThreadedInBnPackage extends Thread {
   boolean a = true;
   
-  s(r paramr) {
+  public void s(r paramr) {
     if (r.a(paramr)) {
       setName("XCP Writer_Master" + Math.random());
     } else {

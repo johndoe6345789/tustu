@@ -10,7 +10,7 @@ import h.IOProperties;
 public class bk implements ArComponentEcho {
   bn a;
   
-  bk(aX paramaX, bn parambn) {
+  public bk(aX paramaX, bn parambn) {
     this.a = parambn;
   }
   

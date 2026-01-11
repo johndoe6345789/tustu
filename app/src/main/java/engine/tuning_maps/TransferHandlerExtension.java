@@ -9,7 +9,7 @@ import java.util.List;
 import javax.swing.TransferHandler;
 
 final class TransferHandlerExtension extends TransferHandler {
-  dx(dl paramdl) {}
+  public TransferHandlerExtension(dl paramdl) {
   
   public boolean canImport(TransferHandler.TransferSupport paramTransferSupport) {
     for (DataFlavor dataFlavor : paramTransferSupport.getDataFlavors()) {

@@ -21,7 +21,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.JToolBar;
 
-public JPanelExtensionInBxPackagelass JPanelExtensionInBxPackage extends JPanel implements l, bc {
+public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
   ab a = null;
   
   o b = null;

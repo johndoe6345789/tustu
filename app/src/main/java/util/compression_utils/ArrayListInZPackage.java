@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public ArrayListInZPackagelass ArrayListInZPackage {
+public class ArrayListInZPackage {
   public static String a = "MegaSquirtRs232CommManager";
   
   public static String b = "MegaSquirtRs232CommManagerAlternate";

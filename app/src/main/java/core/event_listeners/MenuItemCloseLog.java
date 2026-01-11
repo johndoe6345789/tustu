@@ -9,7 +9,7 @@ class au extends JMenuItem {
   
   private int c;
   
-  au(ar paramar, Color paramColor, int paramInt) {
+  public void au(ar paramar, Color paramColor, int paramInt) {
     super("      ");
     this.b = paramColor;
     this.c = paramInt;

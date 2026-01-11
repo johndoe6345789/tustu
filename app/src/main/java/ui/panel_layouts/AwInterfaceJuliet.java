@@ -3,7 +3,7 @@ package aW;
 import com.efiAnalytics.ui.NumericTextField;
 
 class AwInterfaceJuliet extends NumericTextField implements n {
-  j(e parame) {
+  public void j(e parame) {
     super("", 10);
     b(0);
   }

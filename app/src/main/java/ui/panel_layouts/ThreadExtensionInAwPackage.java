@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 class ThreadExtensionInAwPackage extends Thread {
   boolean a = true;
   
-  h(e parame) {
+  public void h(e parame) {
     super("IS Blink");
     setDaemon(true);
   }

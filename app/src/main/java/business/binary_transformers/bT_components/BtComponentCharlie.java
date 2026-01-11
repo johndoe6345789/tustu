@@ -11,7 +11,7 @@ import bS.BnInterfaceOscar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public BtComponentCharlielass BtComponentCharlie implements BsInterfaceAlpha {
+public class BtComponentCharlie implements BsInterfaceAlpha {
   public void BsInterfaceAlpha(BnInterfaceOscar paramo, BnInterfaceTango paramt) {
     if (paramt.BsInterfaceAlpha() != BsInterfaceAlpha())
       throw new ExceptionInBsPackage("PID:CONNECT Wrong handler! this handler is for 0x" + Integer.toHexString(BsInterfaceAlpha()).toUpperCase()); 

@@ -1,7 +1,7 @@
 import ao.cd;
 
 final class e extends Thread {
-  e(cd paramcd) {}
+  public e(cd paramcd) {
   
   public void run() {
     this.a.n();

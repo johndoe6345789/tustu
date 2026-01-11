@@ -7,7 +7,7 @@ import javax.swing.tree.DefaultTreeModel;
 public class BfComponentMike implements BePapaImpl {
   a a;
   
-  m(a parama) {
+  public BfComponentMike(a parama) {
     this.a = parama;
   }
   

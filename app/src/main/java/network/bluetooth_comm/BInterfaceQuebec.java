@@ -3,7 +3,7 @@ package B;
 class BInterfaceQuebec extends Thread {
   boolean a = true;
   
-  q(p paramp) {
+  public void q(p paramp) {
     super("UDP_ReceiveThread_" + Math.random());
   }
   

@@ -7,7 +7,7 @@ class AzInterfaceGolf {
   
   int b = -1;
   
-  g(f paramf, int paramInt1, int paramInt2) {
+  public void g(f paramf, int paramInt1, int paramInt2) {
     this.a = paramInt1;
     this.b = paramInt2;
   }

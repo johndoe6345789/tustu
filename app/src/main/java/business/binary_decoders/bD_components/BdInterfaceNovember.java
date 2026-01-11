@@ -1,7 +1,7 @@
 package business.binary_decoders.bD_components;
 
 class BdInterfaceNovember extends Thread {
-  n(i parami) {
+  public void n(i parami) {
     super("Delete");
     setDaemon(true);
   }

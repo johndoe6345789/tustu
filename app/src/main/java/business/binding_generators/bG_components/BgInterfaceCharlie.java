@@ -12,7 +12,7 @@ import bH.D;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public BgInterfaceCharlielass BgInterfaceCharlie implements GInterfaceAn, E, G, p {
+public class BgInterfaceCharlie implements GInterfaceAn, E, G, p {
   R PInterfaceAlpha;
   
   m b;

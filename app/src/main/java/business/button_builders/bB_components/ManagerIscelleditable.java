@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 class ManagerIscelleditable extends DefaultTableModel {
   String[] a = new String[] { h.a(this.b, "Field Name"), h.a(this.b, "Scaling"), h.a(this.b, "Digits") };
   
-  k(h paramh) {
+  public void k(h paramh) {
     setColumnIdentifiers((Object[])this.a);
   }
   

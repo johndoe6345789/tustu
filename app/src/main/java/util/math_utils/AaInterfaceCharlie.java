@@ -10,7 +10,7 @@ import W.r;
 import java.io.BufferedWriter;
 import java.util.Collection;
 
-public AaInterfaceCharlielass AaInterfaceCharlie implements O {
+public class AaInterfaceCharlie implements O {
   static String a = "EncodedData";
   
   static String b = ";This section allows for objects to be stored in the ini.\n     ;This section is typically managed only by the application.\n     ;Each record contains a reference name and the encoded data\n     ;Format:\n     ;   referenceName = base64Data";

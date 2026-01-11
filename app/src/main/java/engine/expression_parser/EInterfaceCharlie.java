@@ -5,7 +5,7 @@ import d.DComponentCharlie;
 import d.ArrayListExtensionInDPackage;
 import java.util.Properties;
 
-public EInterfaceCharlielass EInterfaceCharlie implements DComponentCharlie {
+public class EInterfaceCharlie implements DComponentCharlie {
   String a = null;
   
   public String b() {

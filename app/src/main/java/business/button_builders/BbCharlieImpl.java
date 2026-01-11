@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextPane;
 
-public BbCharlieImpllass BbCharlieImpl extends JPanel implements fT {
+public class BbCharlieImpl extends JPanel implements fT {
   private AeInterfaceQuebec e = null;
   
   boolean a = true;

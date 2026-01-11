@@ -30,7 +30,7 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
   
   JLabel i = new ad(this.j);
   
-  af(P paramP) {
+  public void af(P paramP) {
     setBorder(BorderFactory.createTitledBorder("VeAnalyze Stats"));
     setLayout(new GridLayout(0, 3, 6, 2));
     add(a("Total Records", this.a));

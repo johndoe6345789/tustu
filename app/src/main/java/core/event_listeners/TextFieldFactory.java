@@ -7,7 +7,7 @@ class cc {
   
   String b = null;
   
-  cc(ca paramca, Node paramNode, String paramString) {
+  public void cc(ca paramca, Node paramNode, String paramString) {
     this.a = paramNode;
     this.b = paramString;
   }

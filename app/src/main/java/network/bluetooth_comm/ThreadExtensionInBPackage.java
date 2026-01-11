@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 class ThreadExtensionInBPackage extends Thread {
   boolean PropertiesExtension = false;
   
-  d(c paramc) {
+  public void d(c paramc) {
     super("BroadcastListener");
   }
   

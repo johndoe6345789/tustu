@@ -1,6 +1,6 @@
 package E;
 
-public RunnableExtensionnterface RunnableExtension extends Runnable {}
+public interface RunnableExtension extends Runnable {}
 
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/E/i.class

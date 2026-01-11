@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 class ManagerInBxPackage extends DefaultTableModel {
   String[] a = new String[] { o.a(this.b, "Name"), o.a(this.b, "Description") };
   
-  p(o paramo) {
+  public void p(o paramo) {
     setColumnIdentifiers((Object[])this.a);
   }
   

@@ -8,7 +8,7 @@ class ApInterfaceHk extends Thread {
   
   long b = System.currentTimeMillis() + this.a;
   
-  hk(hg paramhg) {
+  public void hk(hg paramhg) {
     super("EnableDelay");
     setDaemon(true);
   }

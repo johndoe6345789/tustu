@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Properties;
 import r.IOInBiPackage;
 
-public IOInYPackagelass IOInYPackage implements GInterfaceBu {
+public class IOInYPackage implements GInterfaceBu {
   R IOInBiPackage;
   
   public IOInYPackage(R paramR) {

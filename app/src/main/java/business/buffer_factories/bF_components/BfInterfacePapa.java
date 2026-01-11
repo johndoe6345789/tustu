@@ -4,7 +4,7 @@ import java.awt.Color;
 import javax.swing.UIManager;
 
 class BfInterfacePapa extends v {
-  p(d paramd) {
+  public void p(d paramd) {
     super(paramd.a);
     a(false);
     setBackground(UIManager.getColor("Label.background"));

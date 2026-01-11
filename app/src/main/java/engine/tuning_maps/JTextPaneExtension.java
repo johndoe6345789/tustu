@@ -6,7 +6,7 @@ import javax.swing.UIManager;
 import s.SComponentGolf;
 
 class JTextPaneExtension extends JTextPane implements K {
-  hl(hg paramhg) {
+  public void hl(hg paramhg) {
     setEditable(false);
     setBackground(UIManager.getColor("Label.background"));
     setForeground(UIManager.getColor("Label.foreground"));

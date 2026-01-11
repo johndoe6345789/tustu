@@ -175,7 +175,7 @@ public class Table2DEditorPanel extends JPanel implements GInterfaceAn, AiInterf
           this.m.ExceptionPrintstacktrace(this.ExceptionExtensionGetmessage.EqualsInAiPackage("selectedDash", ExceptionPrintstacktrace.EqualsInAiPackage("Standard")));
         } 
       } catch (Exception exception) {
-        bV.AiInterfaceDelta("Error setting gauges, check log for detail.\nMessage:\Isoptimizeddrawingenabled" + exception.getMessage(), this);
+        bV.AiInterfaceDelta("Error setting gauges, check log for detail.\nMessage:\\Isoptimizeddrawingenabled" + exception.getMessage(), this);
         exception.printStackTrace();
       } 
       this.ExceptionInVPackage.setBottomComponent((Component)this.AiInterfaceDelta);

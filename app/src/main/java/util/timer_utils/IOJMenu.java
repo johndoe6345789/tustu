@@ -31,7 +31,7 @@ import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-public IOJMenulass IOJMenu {
+public class IOJMenu {
   private static c ExceptionInVPackage = null;
   
   private JMenu ClassTypeInHPackage = null;

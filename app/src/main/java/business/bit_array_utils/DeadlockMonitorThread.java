@@ -7,7 +7,7 @@ import javax.swing.SwingUtilities;
 class k extends Thread {
   boolean a = true;
   
-  k(i parami) {
+  public void k(i parami) {
     super("DeadLockMonitor");
     setDaemon(true);
   }

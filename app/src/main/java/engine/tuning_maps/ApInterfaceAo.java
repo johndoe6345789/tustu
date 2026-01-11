@@ -1,7 +1,7 @@
 package aP;
 
 class ApInterfaceAo extends Thread {
-  ao(ad paramad) {
+  public void ao(ad paramad) {
     super("PortScanB");
     setDaemon(true);
   }

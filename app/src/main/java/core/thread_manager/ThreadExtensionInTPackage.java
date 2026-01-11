@@ -21,7 +21,7 @@ class ThreadExtensionInTPackage extends Thread {
   
   int d = 250;
   
-  c(a parama) {
+  public void c(a parama) {
     super("Cal Monitor");
   }
   

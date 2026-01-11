@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public ThreadExtensionUsingNetworkInterfacelass ThreadExtensionUsingNetworkInterface extends Thread {
+public class ThreadExtensionUsingNetworkInterface extends Thread {
   private boolean i = true;
   
   private int j = 67;

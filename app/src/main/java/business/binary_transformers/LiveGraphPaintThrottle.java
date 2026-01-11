@@ -5,7 +5,7 @@ class LiveGraphPaintThrottle extends Thread {
   
   boolean b = false;
   
-  u(s params) {
+  public void u(s params) {
     super("LiveGraph PaintThrottle");
     setDaemon(true);
   }

@@ -32,7 +32,7 @@ class UIInBsPackage extends JPanel implements BmInterfaceEcho {
   
   JLabel j = new JLabel();
   
-  z(k paramk) {
+  public void z(k paramk) {
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Warmup Analyze Stats")));
     setLayout(new GridLayout(0, 3, 6, 2));
     add(a("Total Records", this.a));

@@ -11,7 +11,7 @@ class BgInterfaceOscar {
   
   private int f;
   
-  o(m paramm, int paramInt) {
+  public void o(m paramm, int paramInt) {
     this.f = paramInt;
   }
   
