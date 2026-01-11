@@ -4,7 +4,7 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 class DocumentListener implements DocumentListener {
-  n(f paramf) {}
+  DocumentListener(f paramf) {}
   
   public void insertUpdate(DocumentEvent paramDocumentEvent) {
     try {

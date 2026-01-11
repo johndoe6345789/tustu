@@ -2,7 +2,7 @@ package business.action_zones;
 
 import bH.ab;
 
-public AzInterfaceCharlielass AzInterfaceCharlie {
+public class AzInterfaceCharlie {
   public static String a = "Your Registration Successfully Activated. Thank You!";
   
   public static String b = "Valid Activation.";

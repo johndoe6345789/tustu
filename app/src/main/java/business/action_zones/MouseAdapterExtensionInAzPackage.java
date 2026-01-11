@@ -5,7 +5,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionInAzPackage extends MouseAdapter {
-  g(f paramf) {}
+  MouseAdapterExtensionInAzPackage(f paramf) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     aN.a("https://www.efianalytics.com/activate");

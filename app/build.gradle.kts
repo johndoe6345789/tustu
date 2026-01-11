@@ -21,7 +21,20 @@ sourceSets {
             srcDirs("src/main/resources")
         }
     }
+    test {
+        java {
+            srcDirs("src/test/java")
+        }
+    }
 }
+
+tasks.test {
+    useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}
+
 
 tasks.withType<ProcessResources> {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -38,6 +51,12 @@ dependencies {
     
     // Add any JAR files from the lib directory if they exist
     implementation(fileTree(mapOf("dir" to "lib", "include" to listOf("*.jar"))))
+    
+    // Testing dependencies
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
+    testImplementation("org.assertj:assertj-swing-junit:3.17.1")
+    testImplementation("org.awaitility:awaitility:4.2.0")
 }
 
 application {

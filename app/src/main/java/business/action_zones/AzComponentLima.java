@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AzComponentLima implements ActionListener {
-  l(f paramf) {}
+  AzComponentLima(f paramf) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.e(this.a);

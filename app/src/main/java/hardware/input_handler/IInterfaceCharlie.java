@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public IInterfaceCharlielass IInterfaceCharlie {
+public class IInterfaceCharlie {
   List a = new CopyOnWriteArrayList();
   
   List b = new CopyOnWriteArrayList();

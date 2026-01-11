@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class AzComponentMike implements ActionListener {
-  m(f paramf) {}
+  AzComponentMike(f paramf) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.f(this.a);

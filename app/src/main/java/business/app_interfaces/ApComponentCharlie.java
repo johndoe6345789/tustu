@@ -5,7 +5,7 @@ import bH.D;
 import i.IComponentAlpha;
 import i.IInterfaceFoxtrot;
 
-public ApComponentCharlielass ApComponentCharlie implements IComponentAlpha, IInterfaceFoxtrot {
+public class ApComponentCharlie implements IComponentAlpha, IInterfaceFoxtrot {
   d IComponentAlpha = null;
   
   boolean b = false;
