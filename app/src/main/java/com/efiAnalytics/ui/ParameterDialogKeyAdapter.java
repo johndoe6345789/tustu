@@ -4,7 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 class ParameterDialogKeyAdapter extends KeyAdapter {
-  ft(fs paramfs) {}
+  ParameterDialogKeyAdapter(fs paramfs) {}
   
   public void keyTyped(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyChar() == '\033')

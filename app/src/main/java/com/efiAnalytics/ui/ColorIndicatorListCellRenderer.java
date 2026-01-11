@@ -9,6 +9,9 @@ class ColorIndicatorListCellRenderer extends DefaultListCellRenderer {
   boolean a = false;
 
   ColorIndicatorListCellRenderer(e parame) {}
+  
+  public void paint(Graphics paramGraphics) {
+    super.paint(paramGraphics);
     if (this.b.g != null && this.a) {
       int i = eJ.a(9);
       int j = eJ.a(12);

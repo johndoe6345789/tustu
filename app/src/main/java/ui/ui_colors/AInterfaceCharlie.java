@@ -1,6 +1,6 @@
 package A;
 
-public AInterfaceCharlielass AInterfaceCharlie {
+public class AInterfaceCharlie {
   private String a;
   
   private Object b;

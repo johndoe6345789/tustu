@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class FocusRequestThread extends Thread {
-  fw(fs paramfs) {}
+  FocusRequestThread(fs paramfs) {}
   
   public void run() {
     try {

@@ -2,7 +2,7 @@ package A;
 
 import java.util.List;
 
-public AInterfaceIndianterface AInterfaceIndia {
+public interface AInterfaceIndia {
   List a();
   
   q b();
