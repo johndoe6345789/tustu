@@ -40,7 +40,7 @@ class JavaFileAnalyzer:
             'singleton': re.compile(r'private\s+static\s+\w+\s+instance|getInstance\(\)', re.IGNORECASE),
         }
     
-    def analyze_file(self, filepath):
+    def analyze_file(self, filepath, filename=None):
         """Analyze a single Java file and return heuristic name suggestions"""
         try:
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
@@ -49,6 +49,12 @@ class JavaFileAnalyzer:
             return None
         
         if not content.strip():
+            return None
+        
+        # Skip if already renamed (multi-character class names, CamelCase, etc.)
+        basename = filename or os.path.basename(filepath).replace('.java', '')
+        if len(basename) > 1 and basename[0].isupper():
+            # Already renamed (CamelCase names like "Matrix", "Repository", etc.)
             return None
         
         scores = defaultdict(int)
@@ -255,14 +261,19 @@ class JavaFileAnalyzer:
             'details': details
         }
     
-    def analyze_package(self, package_dir):
+    def analyze_package(self, package_dir, pkg_name):
         """Analyze all Java files in a package and suggest names"""
         results = {}
         
         for file in sorted(os.listdir(package_dir)):
             if file.endswith('.java'):
                 filepath = os.path.join(package_dir, file)
-                analysis = self.analyze_file(filepath)
+                # Only analyze single-letter or very short filenames
+                basename = file.replace('.java', '')
+                if len(basename) > 2:
+                    # Skip already-renamed files
+                    continue
+                analysis = self.analyze_file(filepath, file)
                 if analysis:
                     results[file] = analysis
         
@@ -285,7 +296,7 @@ def main():
             print(f"Analyzing package: {pkg}")
             print('='*60)
             
-            results = analyzer.analyze_package(pkg_path)
+            results = analyzer.analyze_package(pkg_path, pkg)
             output[pkg] = results
             
             for filename, analysis in sorted(results.items()):

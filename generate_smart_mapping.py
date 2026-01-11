@@ -16,13 +16,14 @@ sys.path.insert(0, '/home/rewrich/Documents/GitHub/tustu')
 from analyze_java_files import JavaFileAnalyzer
 
 def generate_smart_mapping():
-    """Generate mapping using heuristic analysis"""
+    """Generate mapping using heuristic analysis of Java files"""
     
     analyzer = JavaFileAnalyzer()
     base_path = "/home/rewrich/Documents/GitHub/tustu/app/obfuscated_packages"
     
     mapping = {}
     analysis_details = {}
+    skipped = {'already_renamed': 0, 'empty': 0, 'error': 0}
     
     # Package-level descriptive names
     package_renames = {
@@ -110,9 +111,16 @@ def generate_smart_mapping():
                 continue
             
             filepath = os.path.join(old_pkg_path, file)
+            basename = file.replace('.java', '')
+            
+            # Skip files that are already renamed (multi-char or CamelCase)
+            if len(basename) > 2 or (len(basename) > 1 and basename[0].isupper()):
+                skipped['already_renamed'] += 1
+                continue
             
             # Skip already completed renames
             if pkg_dir == "a" and file in ["a.java", "b.java", "c.java"]:
+                skipped['already_renamed'] += 1
                 continue
             
             try:
@@ -120,17 +128,18 @@ def generate_smart_mapping():
                     content = f.read()
                 
                 if not content.strip():
+                    skipped['empty'] += 1
                     continue
                 
                 # Analyze the file
-                analysis = analyzer.analyze_file(filepath)
+                analysis = analyzer.analyze_file(filepath, file)
                 
                 if analysis and 'suggested_name' in analysis:
                     new_file = analysis['suggested_name']
                     analysis_details[f"{pkg_dir}/{file}"] = analysis
                 else:
-                    # Fallback to generic name
-                    new_file = file.replace('.java', '').title() + '.java'
+                    # Fallback: use generic name
+                    new_file = f"Component_{basename}.java"
                 
                 old_full = f"app/obfuscated_packages/{pkg_dir}/{file}"
                 new_full = f"app/obfuscated_packages/{new_pkg}/{new_file}"
@@ -142,7 +151,7 @@ def generate_smart_mapping():
                     print(f"Processed {processed_count} files...")
                 
             except Exception as e:
-                print(f"Error processing {pkg_dir}/{file}: {e}")
+                skipped['error'] += 1
                 continue
     
     # Save mapping
@@ -152,6 +161,10 @@ def generate_smart_mapping():
     
     print(f"\nGenerated smart mapping: {mapping_file}")
     print(f"Total files mapped: {len(mapping)}")
+    print(f"Skipped (already renamed): {skipped['already_renamed']}")
+    print(f"Skipped (empty): {skipped['empty']}")
+    print(f"Skipped (error): {skipped['error']}")
+    print(f"Total processed: {processed_count}")
     
     # Save analysis details
     analysis_file = "/home/rewrich/Documents/GitHub/tustu/JAVA_ANALYSIS_DETAILED.json"
