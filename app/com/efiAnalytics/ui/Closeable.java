@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface bc {
+public interface Closeable {
   void close();
 }
 

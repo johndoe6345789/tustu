@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import javax.swing.JComponent;
 
-public class cA extends JComponent {
+public class Table3DColorMapPanel extends JComponent {
   private cD c = null;
   
   ArrayList a = new ArrayList();

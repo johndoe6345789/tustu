@@ -10,7 +10,7 @@ import javax.swing.JColorChooser;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 
-public class bd extends JPanel implements bc {
+public class ColorChooserPanel extends JPanel implements bc {
   JColorChooser a = new JColorChooser();
   
   ArrayList b = new ArrayList();

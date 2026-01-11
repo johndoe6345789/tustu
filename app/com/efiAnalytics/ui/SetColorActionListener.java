@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class cd implements ActionListener {
+class SetColorActionListener implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     bV.e.setColor(bV.f);
   }

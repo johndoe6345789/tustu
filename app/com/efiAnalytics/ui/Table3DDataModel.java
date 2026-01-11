@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface cD {
+public interface Table3DDataModel {
   int a();
   
   double a(int paramInt);

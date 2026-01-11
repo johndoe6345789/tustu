@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class be implements ActionListener {
-  be(bd parambd) {}
+class ColorChooserApplyListener implements ActionListener {
+  ColorChooserApplyListener(bd parambd) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     bd.a(this.a, this.a.a.getColor());

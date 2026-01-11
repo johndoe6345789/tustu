@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.Component;
 import javax.swing.JOptionPane;
 
-class cb implements Runnable {
-  cb(Component paramComponent, String paramString) {}
+class MessageDialogRunnable implements Runnable {
+  MessageDialogRunnable(Component paramComponent, String paramString) {}
   
   public void run() {
     JOptionPane.showMessageDialog(this.a, this.b);

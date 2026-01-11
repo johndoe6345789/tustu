@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
-class da {
+class TableStatisticsOverlay {
   BufferedImage a = null;
   
   int b = eJ.a(25);

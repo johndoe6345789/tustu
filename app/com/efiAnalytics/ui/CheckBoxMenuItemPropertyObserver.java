@@ -2,7 +2,7 @@ package com.efiAnalytics.ui;
 
 import javax.swing.JCheckBoxMenuItem;
 
-public class ba implements dR {
+public class CheckBoxMenuItemPropertyObserver implements dR {
   JCheckBoxMenuItem a = null;
   
   String b = "";

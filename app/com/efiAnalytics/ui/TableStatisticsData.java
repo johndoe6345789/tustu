@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-class db {
+class TableStatisticsData {
   private double b = 0.0D;
   
   private double c = 0.0D;

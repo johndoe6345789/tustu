@@ -4,8 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBoxMenuItem;
 
-class bB implements ActionListener {
-  bB(bt parambt) {}
+class Table3DPanelCheckboxMenuListener implements ActionListener {
+  Table3DPanelCheckboxMenuListener(bt parambt) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = ((JCheckBoxMenuItem)paramActionEvent.getSource()).isSelected();

@@ -3,20 +3,16 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class bb implements ActionListener {
-  bc a = null;
-  
-  public bb(bc parambc) {
-    this.a = parambc;
-  }
+class PageNavigatorNextListener implements ActionListener {
+  PageNavigatorNextListener(dz paramdz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.close();
+    dz.a(this.a);
   }
 }
 
 
-/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bb.class
+/* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dA.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3
  */

@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class dB implements ActionListener {
-  dB(dz paramdz) {}
+class PageNavigatorPreviousListener implements ActionListener {
+  PageNavigatorPreviousListener(dz paramdz) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     dz.b(this.a);

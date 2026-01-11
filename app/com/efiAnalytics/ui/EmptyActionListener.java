@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class cc implements ActionListener {
+class EmptyActionListener implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {}
 }
 

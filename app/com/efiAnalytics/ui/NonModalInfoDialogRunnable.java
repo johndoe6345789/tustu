@@ -4,8 +4,8 @@ import java.awt.Component;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
-class ca implements Runnable {
-  ca(String paramString, Component paramComponent) {}
+class NonModalInfoDialogRunnable implements Runnable {
+  NonModalInfoDialogRunnable(String paramString, Component paramComponent) {}
   
   public void run() {
     JOptionPane jOptionPane = new JOptionPane(this.a, 3);

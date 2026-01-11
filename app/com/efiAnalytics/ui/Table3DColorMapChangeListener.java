@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
-class cB implements cE {
-  cB(cA paramcA) {}
+class Table3DColorMapChangeListener implements cE {
+  Table3DColorMapChangeListener(cA paramcA) {}
   
   public void a(int paramInt1, int paramInt2) {
     this.a.b.a();

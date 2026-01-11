@@ -2,12 +2,12 @@ package com.efiAnalytics.ui;
 
 import java.awt.Color;
 
-class cC {
+class ColorMapValueEntry {
   private double b = 0.0D;
   
   private Color c = null;
   
-  cC(cA paramcA) {}
+  ColorMapValueEntry(cA paramcA) {}
   
   public double a() {
     return this.b;

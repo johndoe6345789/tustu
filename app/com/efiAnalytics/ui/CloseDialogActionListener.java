@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JDialog;
 
-class ce implements ActionListener {
+class CloseDialogActionListener implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
     for (Component component = (Component)paramActionEvent.getSource(); component != null; component = component.getParent()) {
       if (component instanceof JDialog) {
