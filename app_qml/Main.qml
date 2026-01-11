@@ -656,3 +656,134 @@ ApplicationWindow {
             }
         }
     }
+    
+    // Calibrate TPS Dialog
+    Dialog {
+        id: calibrateTpsDialog
+        title: "Throttle Position Sensor Calibration"
+        modal: true
+        width: 450
+        standardButtons: Dialog.Close
+        
+        ColumnLayout {
+            spacing: 15
+            width: parent.width
+            
+            Label {
+                text: "TPS Calibration Wizard"
+                font.pixelSize: 18
+                font.bold: true
+            }
+            
+            Label {
+                text: "This wizard will guide you through calibrating the throttle position sensor."
+                wrapMode: Text.WordWrap
+                Layout.fillWidth: true
+            }
+            
+            GroupBox {
+                title: "Step 1: Closed Throttle"
+                Layout.fillWidth: true
+                
+                ColumnLayout {
+                    spacing: 10
+                    
+                    Label {
+                        text: "1. Make sure throttle is fully closed\n2. Click 'Capture Closed' button"
+                        wrapMode: Text.WordWrap
+                    }
+                    
+                    RowLayout {
+                        Label { text: "Closed Value:" }
+                        TextField {
+                            id: tpsClosedField
+                            text: "0.45V"
+                            readOnly: true
+                            Layout.preferredWidth: 100
+                        }
+                        Button {
+                            text: "Capture Closed"
+                            onClicked: {
+                                tpsClosedField.text = (Math.random() * 0.5 + 0.3).toFixed(2) + "V"
+                            }
+                        }
+                    }
+                }
+            }
+            
+            GroupBox {
+                title: "Step 2: Open Throttle"
+                Layout.fillWidth: true
+                
+                ColumnLayout {
+                    spacing: 10
+                    
+                    Label {
+                        text: "1. Press throttle to fully open (WOT)\n2. Click 'Capture Open' button"
+                        wrapMode: Text.WordWrap
+                    }
+                    
+                    RowLayout {
+                        Label { text: "Open Value:" }
+                        TextField {
+                            id: tpsOpenField
+                            text: "4.52V"
+                            readOnly: true
+                            Layout.preferredWidth: 100
+                        }
+                        Button {
+                            text: "Capture Open"
+                            onClicked: {
+                                tpsOpenField.text = (Math.random() * 0.5 + 4.3).toFixed(2) + "V"
+                            }
+                        }
+                    }
+                }
+            }
+            
+            GroupBox {
+                title: "Current Reading"
+                Layout.fillWidth: true
+                
+                GridLayout {
+                    columns: 2
+                    rowSpacing: 5
+                    columnSpacing: 10
+                    
+                    Label { text: "Raw ADC:" }
+                    Label { text: "512"; font.bold: true }
+                    
+                    Label { text: "Voltage:" }
+                    Label { text: "2.50V"; font.bold: true }
+                    
+                    Label { text: "TPS %:" }
+                    Label { text: "50%"; font.bold: true; color: "#2ecc71" }
+                }
+            }
+            
+            RowLayout {
+                Layout.fillWidth: true
+                
+                Button {
+                    text: "Apply Calibration"
+                    highlighted: true
+                    onClicked: {
+                        statusLabel.text = "TPS Calibration Applied"
+                        statusLabel.color = "#2ecc71"
+                        calibrateTpsDialog.close()
+                    }
+                }
+                
+                Button {
+                    text: "Reset to Defaults"
+                    onClicked: {
+                        tpsClosedField.text = "0.45V"
+                        tpsOpenField.text = "4.52V"
+                    }
+                }
+                
+                Item { Layout.fillWidth: true }
+            }
+        }
+    }
+}
