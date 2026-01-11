@@ -9,7 +9,7 @@ import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
-public class fC extends JPanel {
+public class ArrowButtonPanel extends JPanel {
   Polygon a = new Polygon();
   
   Polygon b = new Polygon();

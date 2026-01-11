@@ -2,12 +2,12 @@ package com.efiAnalytics.ui;
 
 import java.awt.Color;
 
-class fB {
+class ColorGradientStop {
   private double b = 0.0D;
   
   private Color c = null;
   
-  fB(fA paramfA) {}
+  ColorGradientStop(ColorGradientInterpolator paramfA) {}
   
   public double a() {
     return this.b;

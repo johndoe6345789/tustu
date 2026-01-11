@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 
-class fd implements WindowFocusListener {
-  fd(fc paramfc) {}
+class GridSelectionFocusListener implements WindowFocusListener {
+  GridSelectionFocusListener(GridSelectionWindow paramfc) {}
   
   public void windowGainedFocus(WindowEvent paramWindowEvent) {}
   

@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface fa {
+public interface CellSelectionListener {
   void a(int paramInt1, int paramInt2);
 }
 

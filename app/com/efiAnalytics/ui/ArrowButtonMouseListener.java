@@ -3,8 +3,8 @@ package com.efiAnalytics.ui;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-class fD implements MouseListener {
-  fD(fC paramfC) {}
+class ArrowButtonMouseListener implements MouseListener {
+  ArrowButtonMouseListener(ArrowButtonPanel paramfC) {}
   
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.getY() > this.a.c && paramMouseEvent.getY() < 2 * this.a.c) {

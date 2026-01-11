@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import javax.swing.JWindow;
 import javax.swing.SwingUtilities;
 
-public class fc extends JWindow {
+public class GridSelectionWindow extends JWindow {
   int a = -1;
   
   int b = -1;

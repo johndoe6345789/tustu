@@ -1,7 +1,7 @@
 package com.efiAnalytics.ui;
 
-class fe implements Runnable {
-  fe(fc paramfc) {}
+class GridSelectionFocusRunnable implements Runnable {
+  GridSelectionFocusRunnable(GridSelectionWindow paramfc) {}
   
   public void run() {
     this.a.requestFocus();

@@ -1,6 +1,6 @@
 package com.efiAnalytics.ui;
 
-public interface fb {
+public interface TableSelectionListener {
   void a(int paramInt1, int paramInt2);
 }
 

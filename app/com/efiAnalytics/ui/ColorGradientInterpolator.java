@@ -3,7 +3,7 @@ package com.efiAnalytics.ui;
 import java.awt.Color;
 import java.util.ArrayList;
 
-public class fA {
+public class ColorGradientInterpolator {
   ArrayList a = new ArrayList();
   
   private Color b = Color.WHITE;
@@ -51,8 +51,8 @@ public class fA {
     return this.b;
   }
   
-  public static fA a(Color paramColor) {
-    fA fA1 = new fA();
+  public static ColorGradientInterpolator a(Color paramColor) {
+    ColorGradientInterpolator fA1 = new ColorGradientInterpolator();
     fA1.a(0.0D, paramColor);
     fA1.a(8.0D, Color.yellow);
     fA1.a(50.0D, Color.GREEN);
