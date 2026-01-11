@@ -9,7 +9,7 @@ import hashlib
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QTextEdit, QTabWidget, QGroupBox,
-    QFormLayout, QMessageBox
+    QFormLayout, QMessageBox, QInputDialog
 )
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
@@ -198,10 +198,11 @@ class RegistrationKeyGenerator:
 class KeyGeneratorTab(QWidget):
     """Base class for key generator tabs"""
     
-    def __init__(self, title, fields, generator_func):
+    def __init__(self, title, fields, generator_func, supports_validation=True):
         super().__init__()
         self.fields = fields
         self.generator_func = generator_func
+        self.supports_validation = supports_validation
         self.init_ui()
     
     def init_ui(self):
@@ -220,6 +221,8 @@ class KeyGeneratorTab(QWidget):
         
         input_group.setLayout(input_layout)
         layout.addWidget(input_group)
+        Button layout
+        button_layout = QHBoxLayout()
         
         # Generate button
         generate_btn = QPushButton("Generate Registration Key")
@@ -237,6 +240,28 @@ class KeyGeneratorTab(QWidget):
             }
         """)
         generate_btn.clicked.connect(self.generate_key)
+        button_layout.addWidget(generate_btn)
+        
+        # Validate button (if supported)
+        if self.supports_validation:
+            validate_btn = QPushButton("Validate Key")
+            validate_btn.setStyleSheet("""
+                QPushButton {
+                    background-color: #FF9800;
+                    color: white;
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                }
+                QPushButton:hover {
+                    background-color: #F57C00;
+                }
+            """)
+            validate_btn.clicked.connect(self.validate_key)
+            button_layout.addWidget(validate_btn)
+        
+        layout.addLayout(button_layoutself.generate_key)
         layout.addWidget(generate_btn)
         
         # Output group
@@ -265,6 +290,72 @@ class KeyGeneratorTab(QWidget):
         try:
             # Get input values
             values = {key: widget.text().strip() for key, widget in self.inputs.items()}
+    
+    def validate_key(self):
+        """Validate a registration key (mimics Java validation logic)"""
+        try:
+            # Get input values
+            values = {key: widget.text().strip() for key, widget in self.inputs.items()}
+            
+            # Check if we have a key to validate
+            current_key = self.output.toPlainText().strip()
+            if not current_key:
+                # Ask user to enter or paste a key
+                key_to_validate, ok = QInputDialog.getText(
+                    self, 
+                    "Enter Registration Key",
+                    "Enter the registration key to validate:",
+                    QLineEdit.EchoMode.Normal
+                )
+                if not ok or not key_to_validate.strip():
+                    return
+                current_key = key_to_validate.strip()
+            
+            # Validate inputs
+            if not all(values.values()):
+                QMessageBox.warning(self, "Missing Input", "Please fill in all fields to validate.")
+                return
+            
+            # Generate expected key using the same algorithm (mimics Java validation)
+            expected_key = self.generator_func(**values)
+            
+            if expected_key is None:
+                QMessageBox.error(self, "Validation Error", "Failed to generate expected key for validation.")
+                return
+            
+            # Compare keys (case-sensitive, exact match - mimics Java equals())
+            if expected_key == current_key:
+                # Valid key
+                self.output.setPlainText(current_key)
+                self.output.setStyleSheet("background-color: #c8e6c9; color: #2e7d32; border: 3px solid #4CAF50;")
+                QMessageBox.information(
+                    self,
+                    "✓ Valid Registration",
+                    f"Registration key is VALID!\n\n"
+                    f"Registered to:\n"
+                    f"  Name: {values.get('first_name', '')} {values.get('last_name', '')}\n"
+                    f"  Email: {values.get('email', '')}\n"
+                    f"  Product: {values.get('product_name', 'N/A')}"
+                )
+            else:
+                # Invalid key
+                self.output.setPlainText(current_key)
+                self.output.setStyleSheet("background-color: #ffcdd2; color: #c62828; border: 3px solid #f44336;")
+                
+                # Create detailed error message
+                error_msg = "Registration key is INVALID!\n\n"
+                error_msg += "Please check:\n"
+                error_msg += "  • First name and last name are correct\n"
+                error_msg += "  • Email address matches exactly\n"
+                error_msg += "  • Product name is correct\n"
+                error_msg += "  • Key was copied completely\n"
+                error_msg += "  • Correct algorithm variant is selected\n\n"
+                error_msg += "Keys are case-sensitive!"
+                
+                QMessageBox.warning(self, "✗ Invalid Registration", error_msg)
+                
+        except Exception as e:
+            QMessageBox.critical(self, "Validation Error", f"An error occurred during validation: {str(e)}")
             
             # Validate inputs
             if not all(values.values()):
@@ -315,10 +406,33 @@ class EmailParserTab(QWidget):
         layout.addWidget(instructions)
         
         # Input area
-        input_group = QGroupBox("Paste Registration Email Here")
-        input_layout = QVBoxLayout()
+        inButton layout
+        button_layout = QHBoxLayout()
         
-        self.email_text = QTextEdit()
+        # Copy button
+        copy_btn = QPushButton("Copy Registration Key")
+        copy_btn.clicked.connect(self.copy_key)
+        button_layout.addWidget(copy_btn)
+        
+        # Validate button
+        validate_btn = QPushButton("Validate Key")
+        validate_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #FF9800;
+                color: white;
+                padding: 8px;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+            QPushButton:hover {
+                background-color: #F57C00;
+            }
+        """)
+        validate_btn.clicked.connect(self.validate_parsed_key)
+        button_layout.addWidget(validate_btn)
+        
+        layout.addLayout(button_layoutit()
         self.email_text.setPlaceholderText(
             "[Registration]\n"
             "First Name: John\n"
@@ -383,6 +497,101 @@ class EmailParserTab(QWidget):
         
         # Copy button
         copy_btn = QPushButton("Copy Registration Key")
+    
+    def validate_parsed_key(self):
+        """Validate the parsed registration key"""
+        first_name = self.first_name_output.text().strip()
+        last_name = self.last_name_output.text().strip()
+        email = self.email_output.text().strip()
+        reg_key = self.key_output.toPlainText().strip()
+        
+        if not all([first_name, last_name, email, reg_key]):
+            QMessageBox.warning(
+                self,
+                "Incomplete Information",
+                "Please parse an email with complete registration information first."
+            )
+            return
+        
+        # Ask for product name and secret
+        product_name, ok1 = QInputDialog.getText(
+            self,
+            "Product Name",
+            "Enter product name (e.g., 'MegaLogViewer'):",
+            QLineEdit.EchoMode.Normal,
+            "MegaLogViewer"
+        )
+        if not ok1 or not product_name.strip():
+            return
+        
+        secret, ok2 = QInputDialog.getText(
+            self,
+            "Secret Key",
+            "Enter secret key (leave empty for 5-param algorithm):",
+            QLineEdit.EchoMode.Normal,
+            ""
+        )
+        if not ok2:
+            return
+        
+        try:
+            # Try different algorithms
+            if secret.strip():
+                # Try 8-param first (with fields)
+                serial = self.serial_output.text().strip()
+                if serial:
+                    expected_key = RegistrationKeyGenerator.generate_key_8param(
+                        first_name, last_name, product_name, secret, email, "01", "2015", serial
+                    )
+                    if expected_key == reg_key:
+                        self._show_valid_result(first_name, last_name, email, product_name, "8-parameter (Full)")
+                        return
+                
+                # Try 7-param
+                expected_key = RegistrationKeyGenerator.generate_key_7param(
+                    first_name, last_name, product_name, secret, email, "01", "2015"
+                )
+                if expected_key == reg_key:
+                    self._show_valid_result(first_name, last_name, email, product_name, "7-parameter (Enhanced)")
+                    return
+                
+                # Try 5-param
+                expected_key = RegistrationKeyGenerator.generate_key_5param(
+                    first_name, last_name, product_name, secret, email
+                )
+                if expected_key == reg_key:
+                    self._show_valid_result(first_name, last_name, email, product_name, "5-parameter (Standard)")
+                    return
+            
+            # All validation attempts failed
+            self.key_output.setStyleSheet("background-color: #ffcdd2; color: #c62828; border: 3px solid #f44336;")
+            QMessageBox.warning(
+                self,
+                "✗ Invalid Registration",
+                "Registration key is INVALID!\n\n"
+                "The key does not match any known algorithm variant.\n"
+                "Please verify:\n"
+                "  • Product name is correct\n"
+                "  • Secret key is correct\n"
+                "  • Name and email match exactly"
+            )
+            
+        except Exception as e:
+            QMessageBox.critical(self, "Validation Error", f"Error during validation: {str(e)}")
+    
+    def _show_valid_result(self, first_name, last_name, email, product, algorithm):
+        """Show valid registration result"""
+        self.key_output.setStyleSheet("background-color: #c8e6c9; color: #2e7d32; border: 3px solid #4CAF50;")
+        QMessageBox.information(
+            self,
+            "✓ Valid Registration",
+            f"Registration key is VALID!\n\n"
+            f"Algorithm: {algorithm}\n"
+            f"Registered to:\n"
+            f"  Name: {first_name} {last_name}\n"
+            f"  Email: {email}\n"
+            f"  Product: {product}"
+        )
         copy_btn.clicked.connect(self.copy_key)
         layout.addWidget(copy_btn)
         
@@ -421,7 +630,8 @@ class EmailParserTab(QWidget):
                 if in_registration:
                     # Parse different fields
                     if line.startswith('First Name') and ':' in line:
-                        first_name = line.split(':', 1)[1].strip()
+                        first_name = line.split(':', 1),
+            supports_validation=False  # Obfuscation only, no key validation[1].strip()
                     elif line.startswith('Last Name') and ':' in line:
                         last_name = line.split(':', 1)[1].strip()
                     elif 'email' in line.lower() and ':' in line:
