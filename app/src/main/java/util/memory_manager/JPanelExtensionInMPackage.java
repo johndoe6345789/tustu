@@ -2,8 +2,8 @@ package m;
 
 import am.AmInterfaceEcho;
 import bH.X;
-import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.AmInterfaceEcho;
+import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -26,13 +26,16 @@ import javax.swing.JScrollPane;
 
 public class JPanelExtensionInMPackage extends JPanel {
   private List d = new ArrayList();
-  
+
   List a = new ArrayList();
-  
+
   List b;
-  
-  String c = "<html>Click 'Select and Open' to open all Data Groups or select a subset. <br>Note: By selecting all Data Groups, the Data Rate may be lowered for <br>      higher speed Data Groups.";
-  
+
+  String c =
+      "<html>Click 'Select and Open' to open all Data Groups or select a subset. <br>Note: By"
+          + " selecting all Data Groups, the Data Rate may be lowered for <br>      higher speed"
+          + " Data Groups.";
+
   public JPanelExtensionInMPackage(List paramList) {
     setLayout(new BorderLayout());
     setBorder(BorderFactory.createLoweredSoftBevelBorder());
@@ -71,12 +74,11 @@ public class JPanelExtensionInMPackage extends JPanel {
     jPanel2.add("East", jButton);
     jLabel.setFont(font);
     jPanel1.add(jPanel2);
-    for (AmInterfaceEcho AmInterfaceEcho : paramList)
-      jPanel1.add(a(AmInterfaceEcho)); 
+    for (AmInterfaceEcho AmInterfaceEcho : paramList) jPanel1.add(a(AmInterfaceEcho));
     JScrollPane jScrollPane = new JScrollPane(jPanel1);
     add("Center", jScrollPane);
   }
-  
+
   private void a(Component paramComponent, int paramInt1, int paramInt2) {
     JPopupMenu jPopupMenu = new JPopupMenu();
     JMenuItem jMenuItem = jPopupMenu.add("Select All");
@@ -86,7 +88,7 @@ public class JPanelExtensionInMPackage extends JPanel {
     add(jPopupMenu);
     jPopupMenu.show(paramComponent, paramInt1, paramInt2);
   }
-  
+
   private JPanel a(AmInterfaceEcho parame) {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
@@ -103,9 +105,8 @@ public class JPanelExtensionInMPackage extends JPanel {
     jPanel3.add(new JLabel(X.c(j.a(), 2), 0));
     jPanel2.add(jPanel3);
     AmInterfaceEcho e1 = new AmInterfaceEcho();
-    for (String str : j.d)
-      e1.a(str); 
-    jPanel2.add((Component)e1);
+    for (String str : j.d) e1.a(str);
+    jPanel2.add((Component) e1);
     jPanel1.add("Center", jPanel2);
     JCheckBox jCheckBox = new JCheckBox("load ", true);
     jCheckBox.setActionCommand(Integer.toString(parame.h()));
@@ -115,7 +116,7 @@ public class JPanelExtensionInMPackage extends JPanel {
     jPanel1.add("East", jCheckBox);
     return jPanel1;
   }
-  
+
   public static List a(Window paramWindow, List paramList, c paramc) {
     d d1 = new d(paramList);
     i i = new i(d1, paramList, paramc);
@@ -123,20 +124,19 @@ public class JPanelExtensionInMPackage extends JPanel {
     jDialog.setModalityType(Dialog.ModalityType.APPLICATION_MODAL);
     jDialog.pack();
     if (jDialog.getHeight() > paramWindow.getHeight() * 0.7D) {
-      jDialog.setSize(jDialog.getWidth() + eJ.a(25), (int)(paramWindow.getHeight() * 0.7D));
+      jDialog.setSize(jDialog.getWidth() + eJ.a(25), (int) (paramWindow.getHeight() * 0.7D));
     } else {
       jDialog.setSize(jDialog.getWidth() + eJ.a(25), jDialog.getHeight());
-    } 
+    }
     bV.a(paramWindow, jDialog);
     jDialog.setVisible(true);
     return paramList;
   }
-  
+
   public List a() {
     return this.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/m/d.class
  * Java compiler version: 8 (52.0)

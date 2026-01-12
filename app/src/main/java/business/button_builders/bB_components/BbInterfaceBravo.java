@@ -2,10 +2,9 @@ package business.button_builders.bB_components;
 
 public interface BbInterfaceBravo {
   r a(String paramString);
-  
+
   r a(r paramr);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bB/b.class
  * Java compiler version: 8 (52.0)

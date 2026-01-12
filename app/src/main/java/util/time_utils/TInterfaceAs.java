@@ -15,9 +15,9 @@ import s.SComponentGolf;
 
 public class TInterfaceAs extends a implements f {
   JTextField a;
-  
+
   JPanel b = new JPanel();
-  
+
   public TInterfaceAs(Window paramWindow, ai paramai) {
     super(paramWindow, SComponentGolf.b("Label Text"));
     a(paramai);
@@ -34,7 +34,7 @@ public class TInterfaceAs extends a implements f {
     this.b.add(this.a);
     add("Center", this.b);
   }
-  
+
   public void e(ArrayList<DashLabel> paramArrayList) {
     if (paramArrayList.isEmpty()) {
       this.a.setText("");
@@ -45,30 +45,27 @@ public class TInterfaceAs extends a implements f {
       this.a.setText(dashLabel.getText().toString());
     } else if (paramArrayList.size() == 1 && paramArrayList.get(0) instanceof DashLabel) {
       setEnabled(false);
-    } 
+    }
   }
-  
+
   public void a(ArrayList paramArrayList) {
     ArrayList<DashLabel> arrayList = new ArrayList();
     for (DashLabel dashLabel : paramArrayList) {
-      if (dashLabel instanceof DashLabel)
-        arrayList.add(dashLabel); 
-    } 
+      if (dashLabel instanceof DashLabel) arrayList.add(dashLabel);
+    }
     e(arrayList);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     Component[] arrayOfComponent = this.b.getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++)
-      arrayOfComponent[b].setEnabled(paramBoolean); 
+    for (byte b = 0; b < arrayOfComponent.length; b++) arrayOfComponent[b].setEnabled(paramBoolean);
     this.b.setEnabled(paramBoolean);
   }
-  
+
   public JPanel a() {
     return this.b;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/as.class
  * Java compiler version: 8 (52.0)

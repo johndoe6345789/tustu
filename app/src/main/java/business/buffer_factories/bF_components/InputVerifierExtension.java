@@ -5,12 +5,11 @@ import javax.swing.JComponent;
 
 class InputVerifierExtension extends InputVerifier {
   InputVerifierExtension(D paramD) {}
-  
+
   public boolean verify(JComponent paramJComponent) {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/O.class
  * Java compiler version: 8 (52.0)

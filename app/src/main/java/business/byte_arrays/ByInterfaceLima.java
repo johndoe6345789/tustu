@@ -2,22 +2,21 @@ package business.byte_arrays;
 
 public class ByInterfaceLima {
   private String a;
-  
+
   private boolean b = false;
-  
+
   public ByInterfaceLima(String paramString) {
     this.a = paramString;
   }
-  
+
   public void a(boolean paramBoolean) {
     this.b = paramBoolean;
   }
-  
+
   public String a() {
     return this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/by/l.class
  * Java compiler version: 8 (52.0)

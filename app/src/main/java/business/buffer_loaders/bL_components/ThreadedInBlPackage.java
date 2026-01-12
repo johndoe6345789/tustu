@@ -9,53 +9,53 @@ import com.efiAnalytics.ui.s;
 
 public class ThreadedInBlPackage {
   private s f = null;
-  
+
   private s g = null;
-  
+
   private s h = null;
-  
+
   private s i = null;
-  
+
   i ExceptionInVPackage = null;
-  
+
   g b = null;
-  
+
   g c = null;
-  
+
   r d = new r(this);
-  
-  private b[][] j = (b[][])null;
-  
+
+  private b[][] j = (b[][]) null;
+
   c e = null;
-  
+
   private long k = -1L;
-  
+
   private long l = -1L;
-  
+
   private float m = 1.0F;
-  
+
   private float n = 0.0F;
-  
+
   public ThreadedInBlPackage(s params1, s params2, s params3, s params4, c paramc) {
     this.g = params2;
     this.h = params3;
     this.i = params4;
     this.f = params1;
     params4.addTableModelListener(this.d);
-    int j = (int)Math.ceil(fh.c(params4)) / 6;
+    int j = (int) Math.ceil(fh.c(params4)) / 6;
     this.ExceptionInVPackage = new i(params1, j);
     double d = fh.d(params3);
     this.b = new g(j, 100.0D);
     this.c = new g(j, d);
   }
-  
+
   public void ExceptionInVPackage(p paramp) {
     if (this.l == -1L) {
       this.l = paramp.g();
       this.b.ExceptionInVPackage(paramp.c(), paramp.g());
       this.ExceptionInVPackage.ExceptionInVPackage(c(), paramp.g());
       return;
-    } 
+    }
     this.l = paramp.g();
     try {
       this.b.ExceptionInVPackage(paramp.c(), paramp.g());
@@ -65,20 +65,28 @@ public class ThreadedInBlPackage {
         this.j = this.g.D();
       } else {
         this.j = this.g.ExceptionInVPackage(this.h, this.e);
-      } 
+      }
       double d1 = fh.b(this.g.b(), paramp.ExceptionInVPackage());
-      double d2 = this.g.getRowCount() - fh.ExceptionInVPackage(this.g.ExceptionInVPackage(), paramp.b()) - 1.0D;
+      double d2 =
+          this.g.getRowCount()
+              - fh.ExceptionInVPackage(this.g.ExceptionInVPackage(), paramp.b())
+              - 1.0D;
       double d3 = fh.b(this.h.b(), paramp.h());
-      double d4 = this.h.getRowCount() - fh.ExceptionInVPackage(this.h.ExceptionInVPackage(), paramp.i()) - 1.0D;
+      double d4 =
+          this.h.getRowCount()
+              - fh.ExceptionInVPackage(this.h.ExceptionInVPackage(), paramp.i())
+              - 1.0D;
       if (!paramp.e()) {
-        int j = (int)Math.round(fh.ExceptionInVPackage(this.i, paramp.ExceptionInVPackage(), paramp.b()));
+        int j =
+            (int)
+                Math.round(
+                    fh.ExceptionInVPackage(this.i, paramp.ExceptionInVPackage(), paramp.b()));
         long l = paramp.g() - j;
         s s1 = this.ExceptionInVPackage.ExceptionInVPackage(l, 100);
         double d5 = paramp.d();
         double d6 = this.b.ExceptionInVPackage(l, 100);
         if (s1 != null && !Double.isNaN(d6)) {
-          if (d6 < 50.0D)
-            d6 += 100.0D; 
+          if (d6 < 50.0D) d6 += 100.0D;
           for (byte b1 = 0; b1 < this.g.getRowCount(); b1++) {
             Thread.yield();
             for (byte b2 = 0; b2 < this.g.getColumnCount(); b2++) {
@@ -94,46 +102,46 @@ public class ThreadedInBlPackage {
                   if (Double.isNaN(d12)) {
                     D.d("Target Lambda unavailable, waiting for data.");
                     return;
-                  } 
+                  }
                 } else {
                   d12 = this.h.ExceptionInVPackage(d4, d3);
-                } 
-                double d13 = (d10 * d6 / 100.0D * d5 / d12 + d11 * d6 / 100.0D * d5 / d12) / 2.0D - this.n;
+                }
+                double d13 =
+                    (d10 * d6 / 100.0D * d5 / d12 + d11 * d6 / 100.0D * d5 / d12) / 2.0D - this.n;
                 this.j[b1][b2].ExceptionInVPackage(Double.valueOf(d13), d9);
-              } 
-            } 
-          } 
+              }
+            }
+          }
         } else {
           D.c("filtering record, no historic table close enough.");
-        } 
-      } 
+        }
+      }
     } catch (Exception exception) {
       exception.printStackTrace();
       throw new ExceptionInVPackage("Error calculating VE values. Debug info written to log file.");
-    } 
+    }
   }
-  
+
   public s ExceptionInVPackage() {
     return this.g;
   }
-  
+
   public s b() {
     return this.h;
   }
-  
+
   public void ExceptionInVPackage(s params) {
     this.h = params;
   }
-  
+
   public s c() {
     return this.f;
   }
-  
+
   void ExceptionInVPackage(float paramFloat) {
     this.n = paramFloat;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bL/q.class
  * Java compiler version: 8 (52.0)

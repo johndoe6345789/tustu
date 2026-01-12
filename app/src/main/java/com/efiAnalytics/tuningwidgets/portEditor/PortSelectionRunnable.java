@@ -2,14 +2,12 @@ package com.efiAnalytics.tuningwidgets.portEditor;
 
 class PortSelectionRunnable implements Runnable {
   PortSelectionRunnable(OutputPortEditor paramOutputPortEditor) {}
-  
+
   public void run() {
-    o o = (o)OutputPortEditor.a(this.a).a();
-    if (o != null)
-      this.a.a(o.a()); 
+    o o = (o) OutputPortEditor.a(this.a).a();
+    if (o != null) this.a.a(o.a());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/c.class
  * Java compiler version: 8 (52.0)

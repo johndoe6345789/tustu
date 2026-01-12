@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BgInterfaceYankee implements ActionListener {
   BgInterfaceYankee(q paramq) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.e(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/y.class
  * Java compiler version: 8 (52.0)

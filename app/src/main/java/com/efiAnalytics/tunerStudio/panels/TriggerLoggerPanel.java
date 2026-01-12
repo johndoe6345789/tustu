@@ -1,24 +1,26 @@
 package com.efiAnalytics.tunerStudio.panels;
 
 import B.BInterfaceNovember;
-import G.R;
-import G.S;
-import G.T;
-import G.GInterfaceAg;
+import BInterfaceNovember.BInterfaceNovember;
+import BInterfaceNovember.ExceptionPrintstacktrace;
 import G.AeInterfaceMikeTostring;
 import G.GComponentCd;
 import G.GComponentCe;
 import G.GComponentCf;
 import G.GComponentCi;
+import G.GInterfaceAg;
+import G.R;
+import G.S;
+import G.T;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
-import W.j;
 import W.BInterfaceNovember;
+import W.j;
 import aE.ExceptionInVPackage;
 import aZ.FileInAzPackage;
-import aj.ExceptionInVPackage;
 import aj.AjComponentBravo;
 import aj.AjComponentCharlie;
+import aj.ExceptionInVPackage;
 import aj.FileInAzPackage;
 import aj.NetworkDatagramSocketInAjPackage;
 import ao.aV;
@@ -68,142 +70,141 @@ import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import BInterfaceNovember.ExceptionPrintstacktrace;
-import BInterfaceNovember.BInterfaceNovember;
 import r.ExceptionInVPackage;
 import s.ExceptionPrintstacktrace;
 
-public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjComponentBravo, ExceptionPrintstacktrace {
+public class TriggerLoggerPanel extends JPanel
+    implements S, GInterfaceAg, AjComponentBravo, ExceptionPrintstacktrace {
   o ExceptionInVPackage = null;
-  
+
   JTextArea AjComponentBravo = new JTextArea();
-  
+
   al AjComponentCharlie = new al(this);
-  
+
   JTable FileInAzPackage = new JTable(this.AjComponentCharlie);
-  
+
   private ai ah = new ai(this);
-  
+
   q e = new q();
-  
+
   cZ f = new cZ();
-  
+
   boolean ExceptionPrintstacktrace = true;
-  
-  JPanel h = (JPanel)new fl();
-  
+
+  JPanel h = (JPanel) new fl();
+
   JPanel i = new JPanel();
-  
+
   JComboBox j = new JComboBox();
-  
+
   List NetworkDatagramSocketInAjPackage = new ArrayList();
-  
+
   List JPanelExtensionInBbPackage = new ArrayList();
-  
+
   int m = 3;
-  
+
   JComboBox BInterfaceNovember = new JComboBox();
-  
+
   JCheckBox o = new JCheckBox();
-  
+
   JSplitPane p = new JSplitPane();
-  
+
   aU q = new aU();
-  
+
   JPanel r = new JPanel();
-  
+
   JPanel s = new JPanel();
-  
+
   x t = null;
-  
+
   HashMap u = new HashMap<>();
-  
+
   FileInAzPackage v = null;
-  
+
   boolean w = false;
-  
+
   ao x = new ao(this);
-  
+
   aS y = null;
-  
+
   private BInterfaceNovember ai = null;
-  
+
   double z = 1.0D;
-  
+
   int A = 0;
-  
+
   int B = 0;
-  
+
   private et aj = null;
-  
+
   I C = new I();
-  
+
   BInterfaceNovember D = new BInterfaceNovember();
-  
+
   boolean E = true;
-  
+
   T F = new T();
-  
+
   static String G = ExceptionPrintstacktrace.AjComponentBravo("Raw Log Page");
-  
+
   static String H = ExceptionPrintstacktrace.AjComponentBravo("Data View");
-  
+
   static String I = ExceptionPrintstacktrace.AjComponentBravo("Gauges");
-  
+
   static String J = ExceptionPrintstacktrace.AjComponentBravo("Set Y-Axis Min / Max");
-  
+
   static String K = "IgnitionLoggerCluster";
-  
+
   static String L = "splitPanePosition";
-  
+
   static String M = "scrollBarPosition";
-  
+
   static String N = "selectedGaugeTab";
-  
+
   static String O = "zoom";
-  
+
   static String P = "pollingDelay";
-  
+
   public static boolean Q = false;
-  
+
   ExceptionInVPackage R = null;
-  
+
   private boolean ak = false;
-  
+
   private boolean al = Q;
-  
+
   public static int S = 250;
-  
+
   R T = null;
-  
+
   private static String am = "Record#";
-  
+
   static float U = 0.03125F;
-  
+
   float V = U;
-  
+
   static float W = 1.0F;
-  
+
   float X = W;
-  
+
   JScrollPane Y;
-  
+
   boolean Z = true;
-  
+
   ax aa = null;
-  
+
   ExceptionInVPackage ab = new ExceptionInVPackage();
-  
+
   aj ac = null;
-  
+
   boolean ad = false;
-  
+
   int ae = 1;
-  
+
   BInterfaceNovember af = new BInterfaceNovember();
-  
+
   int ag = 0;
-  
+
   public TriggerLoggerPanel(boolean paramBoolean) {
     this.ak = paramBoolean;
     this.Z = paramBoolean;
@@ -236,7 +237,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       this.D.addTab(H, this.Y);
       int i = getFont().getSize() + eJ.ExceptionInVPackage(4);
       this.FileInAzPackage.setRowHeight(i);
-    } 
+    }
     this.D.addTab(G, jScrollPane);
     this.D.setTabPlacement(3);
     add("North", this.ExceptionInVPackage);
@@ -246,10 +247,10 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     this.p.setRightComponent(this.r);
     add("South", this.x);
     if (paramBoolean) {
-      this.p.setLeftComponent((Component)this.D);
+      this.p.setLeftComponent((Component) this.D);
     } else {
       this.p.setLeftComponent(jScrollPane);
-    } 
+    }
     this.p.setOneTouchExpandable(true);
     this.p.addPropertyChangeListener("dividerLocation", new Z(this));
     aa aa = new aa(this);
@@ -262,7 +263,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         jComboBox.addItem(" ");
         jComboBox.addItemListener(aa);
         this.NetworkDatagramSocketInAjPackage.add(jComboBox);
-      }  
+      }
     this.i.setLayout(new BorderLayout(eJ.ExceptionInVPackage(5), eJ.ExceptionInVPackage(5)));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(1, 0, eJ.ExceptionInVPackage(10), eJ.ExceptionInVPackage(5)));
@@ -289,65 +290,68 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       JComboBox jComboBox = this.NetworkDatagramSocketInAjPackage.get(b1);
       jPanel2 = new JPanel();
       jPanel2.setLayout(new BorderLayout());
-      jPanel2.add("West", new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Y Axis") + " " + (b1 + 1) + ": "));
+      jPanel2.add(
+          "West",
+          new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Y Axis") + " " + (b1 + 1) + ": "));
       jPanel2.add("Center", jComboBox);
       jPanel1.add(jPanel2);
-    } 
-    if (this.ExceptionPrintstacktrace)
-      jPanel1.add(new JPanel()); 
+    }
+    if (this.ExceptionPrintstacktrace) jPanel1.add(new JPanel());
     jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.add("West", new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Chart Options") + ": "));
+    jPanel2.add(
+        "West", new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Chart Options") + ": "));
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(1, 0));
     jPanel3.add(this.o);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout());
-    jPanel4.add("Center", new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Page Overlays") + ": ", 4));
+    jPanel4.add(
+        "Center", new JLabel(ExceptionPrintstacktrace.AjComponentBravo("Page Overlays") + ": ", 4));
     jPanel4.add("East", this.BInterfaceNovember);
     jPanel3.add(jPanel4);
     jPanel2.add("Center", jPanel3);
     this.i.add("East", jPanel2);
     this.F.ExceptionInVPackage(new ae(this));
   }
-  
+
   public void ExceptionInVPackage(File paramFile) {
     this.ExceptionInVPackage.ExceptionInVPackage(paramFile.getAbsolutePath());
   }
-  
+
   private void o() {
-    if (this.ai == null)
-      return; 
+    if (this.ai == null) return;
     GComponentCd GComponentCd = h(this.ai);
-    if (GComponentCd == null)
-      return; 
-    String str = (String)this.j.getSelectedItem();
+    if (GComponentCd == null) return;
+    String str = (String) this.j.getSelectedItem();
     if (str != null && !str.isEmpty()) {
       GComponentCi GComponentCi = GComponentCd.h(str);
       if (GComponentCi != null && GComponentCi.FileInAzPackage().equals(str)) {
         this.f.e(GComponentCi.AjComponentCharlie());
         this.f.ExceptionPrintstacktrace(GComponentCi.AjComponentBravo());
-      } 
+      }
       for (JComboBox jComboBox : this.NetworkDatagramSocketInAjPackage) {
-        String str1 = (String)jComboBox.getSelectedItem();
+        String str1 = (String) jComboBox.getSelectedItem();
         if (str1 != null && !str1.trim().isEmpty()) {
           GComponentCi = GComponentCd.h(str1);
           if (GComponentCi != null && GComponentCi.FileInAzPackage().equals(str)) {
             this.f.e(GComponentCi.AjComponentCharlie());
             this.f.ExceptionPrintstacktrace(GComponentCi.AjComponentBravo());
-          } 
-        } 
-      } 
-    } 
+          }
+        }
+      }
+    }
   }
-  
+
   protected FileInAzPackage ExceptionInVPackage() {
     GComponentCd GComponentCd = this.ExceptionInVPackage.j();
-    return (GComponentCd != null) ? AjComponentBravo(GComponentCd.BInterfaceNovember()) : AjComponentBravo("Standard");
+    return (GComponentCd != null)
+        ? AjComponentBravo(GComponentCd.BInterfaceNovember())
+        : AjComponentBravo("Standard");
   }
-  
+
   protected FileInAzPackage AjComponentBravo(String paramString) {
-    FileInAzPackage d1 = (FileInAzPackage)this.u.get(paramString);
+    FileInAzPackage d1 = (FileInAzPackage) this.u.get(paramString);
     if (d1 == null) {
       if (paramString.equals("UDP_Stream")) {
         GComponentCd GComponentCd = this.ExceptionInVPackage.j();
@@ -364,16 +368,16 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         d2.ExceptionInVPackage(this);
         d1 = d2;
         this.u.put("Standard", d1);
-      } 
+      }
     } else if (paramString.equals("UDP_Stream")) {
       GComponentCd GComponentCd = this.ExceptionInVPackage.j();
-      ((NetworkDatagramSocketInAjPackage)d1).FileInAzPackage(GComponentCd.o());
-      ((NetworkDatagramSocketInAjPackage)d1).h(p());
+      ((NetworkDatagramSocketInAjPackage) d1).FileInAzPackage(GComponentCd.o());
+      ((NetworkDatagramSocketInAjPackage) d1).h(p());
       d1.ExceptionInVPackage(this.T);
-    } 
+    }
     return d1;
   }
-  
+
   private String p() {
     String str = ExceptionInVPackage.ExceptionInVPackage().FileInAzPackage(ExceptionInVPackage.bb);
     if (str != null && !str.isEmpty()) {
@@ -381,26 +385,26 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         try {
           return InetAddress.getLocalHost().getHostAddress();
         } catch (Exception exception) {
-          Logger.getLogger(TriggerLoggerPanel.class.getName()).log(Level.SEVERE, (String)null, exception);
+          Logger.getLogger(TriggerLoggerPanel.class.getName())
+              .log(Level.SEVERE, (String) null, exception);
           return null;
-        }  
+        }
       return str;
-    } 
+    }
     return BInterfaceNovember.ExceptionInVPackage(this.T);
   }
-  
+
   private void q() {
-    if (this.ad || this.ExceptionInVPackage.j() == null)
-      return; 
+    if (this.ad || this.ExceptionInVPackage.j() == null) return;
     String str = "Logger." + this.ExceptionInVPackage.j().ExceptionPrintstacktrace() + ".";
     if (this.j.getSelectedItem() != null)
-      AjComponentBravo(str + "X", this.j.getSelectedItem().toString()); 
+      AjComponentBravo(str + "X", this.j.getSelectedItem().toString());
     if (!this.ExceptionPrintstacktrace) {
       for (byte b1 = 0; b1 < this.NetworkDatagramSocketInAjPackage.size(); b1++) {
         JComboBox jComboBox = this.NetworkDatagramSocketInAjPackage.get(b1);
         if (jComboBox.getSelectedItem() != null)
-          AjComponentBravo(str + "Y" + (b1 + 1), jComboBox.getSelectedItem().toString()); 
-      } 
+          AjComponentBravo(str + "Y" + (b1 + 1), jComboBox.getSelectedItem().toString());
+      }
     } else {
       for (byte b1 = 0; b1 < this.JPanelExtensionInBbPackage.size(); b1++) {
         fn fn = this.JPanelExtensionInBbPackage.get(b1);
@@ -408,35 +412,35 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
           AjComponentBravo(str + "Y_" + fn.AjComponentBravo(), Boolean.toString(true));
         } else {
           AjComponentBravo(str + "Y_" + fn.AjComponentBravo(), Boolean.toString(false));
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
-  
+
   private void r() {
-    if (this.ExceptionInVPackage.j() == null)
-      return; 
+    if (this.ExceptionInVPackage.j() == null) return;
     this.ad = true;
     String str1 = "Logger." + this.ExceptionInVPackage.j().ExceptionPrintstacktrace() + ".";
     String str2 = am;
     if (this.ExceptionInVPackage.j().q() != null && !this.ExceptionInVPackage.j().q().isEmpty())
-      str2 = this.ExceptionInVPackage.j().q(); 
+      str2 = this.ExceptionInVPackage.j().q();
     this.j.setSelectedItem(ExceptionInVPackage(str1 + "X", str2));
     if (!this.ExceptionPrintstacktrace) {
       for (byte b1 = 0; b1 < this.NetworkDatagramSocketInAjPackage.size(); b1++) {
         JComboBox jComboBox = this.NetworkDatagramSocketInAjPackage.get(b1);
         jComboBox.setSelectedItem(ExceptionInVPackage(str1 + "Y" + (b1 + 1), " "));
-      } 
+      }
     } else {
       for (byte b1 = 0; b1 < this.JPanelExtensionInBbPackage.size(); b1++) {
         fn fn = this.JPanelExtensionInBbPackage.get(b1);
-        boolean bool = Boolean.parseBoolean(ExceptionInVPackage(str1 + "Y_" + fn.AjComponentBravo(), "true"));
+        boolean bool =
+            Boolean.parseBoolean(ExceptionInVPackage(str1 + "Y_" + fn.AjComponentBravo(), "true"));
         fn.ExceptionInVPackage(bool);
-      } 
-    } 
+      }
+    }
     this.ad = false;
   }
-  
+
   private x e(R paramR) {
     this.R = ExceptionInVPackage.A();
     Z z1 = (new aa()).ExceptionInVPackage(paramR, ExceptionInVPackage.A(), K, 5);
@@ -449,10 +453,9 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     x1.setMinimumSize(eJ.ExceptionInVPackage(1, 150));
     return x1;
   }
-  
+
   public void AjComponentCharlie() {
-    if (this.aj == null)
-      return; 
+    if (this.aj == null) return;
     int i = Integer.parseInt(ExceptionInVPackage(L, "" + (this.D.getPreferredSize()).width));
     this.p.setDividerLocation(i);
     String str = ExceptionInVPackage(N, I);
@@ -462,38 +465,40 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     boolean bool = Boolean.getBoolean(ExceptionInVPackage("Show Lines", "false"));
     this.o.setSelected(bool);
   }
-  
+
   public void FileInAzPackage() {
-    if (this.aj == null)
-      return; 
+    if (this.aj == null) return;
     AjComponentBravo(L, "" + this.p.getDividerLocation());
     AjComponentBravo(O, this.z + "");
     AjComponentBravo(N, this.D.getTitleAt(this.D.getSelectedIndex()));
     AjComponentBravo(P, this.ExceptionInVPackage.o() + "");
     AjComponentBravo("Show Lines", Boolean.toString(this.o.isSelected()));
-    double d1 = (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum() <= 0) ? 0.0D : ((this.x.ExceptionInVPackage.getValue() - this.x.ExceptionInVPackage.getMinimum()) / (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum()));
+    double d1 =
+        (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum() <= 0)
+            ? 0.0D
+            : ((this.x.ExceptionInVPackage.getValue() - this.x.ExceptionInVPackage.getMinimum())
+                / (this.x.ExceptionInVPackage.getMaximum()
+                    - this.x.ExceptionInVPackage.getMinimum()));
     AjComponentBravo(M, Double.toString(d1));
   }
-  
+
   private String ExceptionInVPackage(String paramString1, String paramString2) {
     String str = null;
-    if (this.aj != null)
-      str = this.aj.ExceptionInVPackage(paramString1); 
+    if (this.aj != null) str = this.aj.ExceptionInVPackage(paramString1);
     return (str != null && !str.equals("")) ? str : paramString2;
   }
-  
+
   private void AjComponentBravo(String paramString1, String paramString2) {
-    if (this.aj != null)
-      this.aj.ExceptionInVPackage(paramString1, paramString2); 
+    if (this.aj != null) this.aj.ExceptionInVPackage(paramString1, paramString2);
   }
-  
+
   public void e() {
     GComponentCd GComponentCd = this.ExceptionInVPackage.j();
     try {
       GComponentCd.AjComponentCharlie();
     } catch (ExceptionPrintstacktrace g1) {
       throw new ExceptionInVPackage("Failed to reset logger fields:\n" + g1.getLocalizedMessage());
-    } 
+    }
     boolean bool = (GComponentCd.f() == -1) ? true : GComponentCd.f();
     ExceptionInVPackage().AjComponentBravo(bool);
     ExceptionInVPackage().ExceptionInVPackage(GComponentCd);
@@ -506,32 +511,30 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     } catch (ExceptionPrintstacktrace g1) {
       g1.printStackTrace();
       throw new ExceptionInVPackage(g1.getMessage());
-    } 
+    }
     ExceptionInVPackage().ExceptionPrintstacktrace(GComponentCd.e());
     this.w = false;
     this.E = true;
     ExceptionInVPackage().AjComponentBravo();
     this.ExceptionInVPackage.AjComponentBravo(true);
   }
-  
+
   public void f() {
     ExceptionInVPackage().AjComponentCharlie();
     this.ExceptionInVPackage.AjComponentBravo(false);
-    if (this.ah.size() > 0)
-      this.x.ExceptionInVPackage(true); 
+    if (this.ah.size() > 0) this.x.ExceptionInVPackage(true);
   }
-  
+
   public void ExceptionInVPackage(R paramR) {
     FileInAzPackage(paramR);
     this.E = true;
   }
-  
+
   public void FileInAzPackage(R paramR) {
     ExceptionInVPackage().ExceptionInVPackage();
     ExceptionInVPackage().ExceptionInVPackage(paramR);
     ArrayList arrayList = (new AjComponentCharlie()).ExceptionInVPackage(paramR);
-    if (this.ak)
-      arrayList.addAll(paramR.x()); 
+    if (this.ak) arrayList.addAll(paramR.x());
     this.ExceptionInVPackage.ExceptionInVPackage(arrayList);
     if (this.ExceptionInVPackage.j() != null) {
       ExceptionInVPackage(this.ExceptionInVPackage.j());
@@ -539,26 +542,28 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         ExceptionInVPackage(e(paramR));
         AjComponentCharlie();
       } catch (ExceptionInVPackage a1) {
-        D.ExceptionInVPackage(ExceptionPrintstacktrace.AjComponentBravo("Problem creating Logger Gauge Cluster"), (Exception)a1, this);
-      } 
-    } 
+        D.ExceptionInVPackage(
+            ExceptionPrintstacktrace.AjComponentBravo("Problem creating Logger Gauge Cluster"),
+            (Exception) a1,
+            this);
+      }
+    }
   }
-  
+
   private void ExceptionInVPackage(x paramx) {
-    if (this.t != null)
-      this.t.AjComponentCharlie(); 
+    if (this.t != null) this.t.AjComponentCharlie();
     this.s.removeAll();
-    this.s.add("Center", (Component)paramx);
+    this.s.add("Center", (Component) paramx);
     this.t = paramx;
   }
-  
+
   protected void ExceptionInVPackage(GComponentCd paramcd) {
     this.ah.clear();
     try {
       paramcd.AjComponentCharlie();
     } catch (ExceptionPrintstacktrace g1) {
       g1.printStackTrace();
-    } 
+    }
     this.ai = null;
     this.AjComponentBravo.setText("");
     this.AjComponentCharlie.getDataVector().clear();
@@ -566,8 +571,9 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     this.ExceptionInVPackage.BInterfaceNovember();
     ExceptionInVPackage().ExceptionInVPackage();
     if (paramcd.FileInAzPackage().equals(GComponentCd.ExceptionInVPackage)) {
-      ExceptionInVPackage((aS)this.q, false);
-      this.q.AjComponentBravo(ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
+      ExceptionInVPackage((aS) this.q, false);
+      this.q.AjComponentBravo(
+          ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
       this.q.AjComponentCharlie(paramcd.ExceptionInVPackage());
       this.q.ExceptionInVPackage();
       this.q.repaint();
@@ -575,14 +581,15 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       String str = (GComponentCe != null) ? GComponentCe.FileInAzPackage() : "";
       this.q.FileInAzPackage(str);
     } else if (paramcd.FileInAzPackage().equals(GComponentCd.FileInAzPackage)) {
-      ExceptionInVPackage((aS)this.f, true);
+      ExceptionInVPackage((aS) this.f, true);
       if (this.ExceptionPrintstacktrace) {
         this.f.AjComponentBravo("");
       } else if (paramcd != null) {
-        this.f.AjComponentBravo(ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
+        this.f.AjComponentBravo(
+            ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
       } else {
         this.f.AjComponentBravo(ExceptionPrintstacktrace.AjComponentBravo("Generic Data Mode"));
-      } 
+      }
       this.f.AjComponentBravo(this.o.isSelected());
       this.f.AjComponentCharlie(paramcd.ExceptionInVPackage());
       this.f.ExceptionInVPackage();
@@ -593,67 +600,71 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       byte b1;
       for (b1 = 0; b1 < paramcd.AjComponentBravo().i(); b1++) {
         GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage(b1);
-        if (!GComponentCe.i())
-          this.j.addItem(GComponentCe.ExceptionPrintstacktrace()); 
-      } 
+        if (!GComponentCe.i()) this.j.addItem(GComponentCe.ExceptionPrintstacktrace());
+      }
       if (!this.ExceptionPrintstacktrace) {
-        for (JComboBox<String> jComboBox : (Iterable<JComboBox<String>>)this.NetworkDatagramSocketInAjPackage) {
+        for (JComboBox<String> jComboBox :
+            (Iterable<JComboBox<String>>) this.NetworkDatagramSocketInAjPackage) {
           jComboBox.removeAllItems();
           jComboBox.addItem(" ");
           for (byte b2 = 0; b2 < paramcd.AjComponentBravo().i(); b2++) {
             GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage(b2);
-            if (!GComponentCe.i())
-              jComboBox.addItem(GComponentCe.ExceptionPrintstacktrace()); 
-          } 
-        } 
+            if (!GComponentCe.i()) jComboBox.addItem(GComponentCe.ExceptionPrintstacktrace());
+          }
+        }
       } else {
         this.h.removeAll();
         this.JPanelExtensionInBbPackage.clear();
         for (b1 = 0; b1 < paramcd.AjComponentBravo().i(); b1++) {
           GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage(b1);
           if (!GComponentCe.i()) {
-            fn fn = new fn(GComponentCe.ExceptionPrintstacktrace(), aV.ExceptionInVPackage().ExceptionInVPackage(b1));
-            this.h.add((Component)fn);
+            fn fn =
+                new fn(
+                    GComponentCe.ExceptionPrintstacktrace(),
+                    aV.ExceptionInVPackage().ExceptionInVPackage(b1));
+            this.h.add((Component) fn);
             this.JPanelExtensionInBbPackage.add(fn);
             fn.ExceptionInVPackage(new af(this));
-          } 
-        } 
+          }
+        }
         ag ag = new ag(this);
         SwingUtilities.invokeLater(ag);
         AjComponentBravo(paramcd);
         r();
-      } 
+      }
       AjComponentBravo(paramcd);
       r();
       this.ad = false;
     } else {
-      ExceptionInVPackage((aS)this.e, false);
-      this.e.AjComponentBravo(ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
+      ExceptionInVPackage((aS) this.e, false);
+      this.e.AjComponentBravo(
+          ExceptionPrintstacktrace.AjComponentBravo(paramcd.ExceptionPrintstacktrace()));
       this.e.AjComponentCharlie(paramcd.ExceptionInVPackage());
       this.e.ExceptionInVPackage();
       this.e.FileInAzPackage(0.0D);
       GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage("ToothTime");
       if (GComponentCe == null)
-        GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage("TriggerTime"); 
+        GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage("TriggerTime");
       String str = (GComponentCe != null) ? GComponentCe.FileInAzPackage() : "";
       this.e.e(str);
       this.e.repaint();
-    } 
+    }
   }
-  
+
   private void AjComponentBravo(GComponentCd paramcd) {
     this.ad = true;
     String str = this.j.getSelectedItem().toString();
     if (!this.ExceptionPrintstacktrace) {
-      for (JComboBox<String> jComboBox : (Iterable<JComboBox<String>>)this.NetworkDatagramSocketInAjPackage) {
+      for (JComboBox<String> jComboBox :
+          (Iterable<JComboBox<String>>) this.NetworkDatagramSocketInAjPackage) {
         jComboBox.removeAllItems();
         jComboBox.addItem(" ");
         for (byte b1 = 0; b1 < paramcd.AjComponentBravo().i(); b1++) {
           GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage(b1);
           if (!GComponentCe.i() && !GComponentCe.ExceptionPrintstacktrace().equals(str))
-            jComboBox.addItem(GComponentCe.ExceptionPrintstacktrace()); 
-        } 
-      } 
+            jComboBox.addItem(GComponentCe.ExceptionPrintstacktrace());
+        }
+      }
     } else {
       this.h.removeAll();
       this.JPanelExtensionInBbPackage.clear();
@@ -661,93 +672,93 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       for (byte b2 = 0; b2 < paramcd.AjComponentBravo().i(); b2++) {
         GComponentCe GComponentCe = paramcd.AjComponentBravo().ExceptionInVPackage(b2);
         if (!GComponentCe.i() && !GComponentCe.ExceptionPrintstacktrace().equals(str)) {
-          fn fn = new fn(GComponentCe.ExceptionPrintstacktrace(), aV.ExceptionInVPackage().ExceptionInVPackage(b1++));
-          this.h.add((Component)fn);
+          fn fn =
+              new fn(
+                  GComponentCe.ExceptionPrintstacktrace(),
+                  aV.ExceptionInVPackage().ExceptionInVPackage(b1++));
+          this.h.add((Component) fn);
           this.JPanelExtensionInBbPackage.add(fn);
           fn.ExceptionInVPackage(new W(this));
-        } 
-      } 
+        }
+      }
       this.h.validate();
       this.r.doLayout();
-    } 
+    }
     r();
     this.ad = false;
   }
-  
+
   public void ExceptionInVPackage(int paramInt) {
     AjComponentBravo("Standard").ExceptionInVPackage(paramInt);
   }
-  
+
   void ExceptionPrintstacktrace() {
     try {
       this.v.ExceptionInVPackage();
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     this.v = null;
   }
-  
+
   private void ExceptionInVPackage(aS paramaS, boolean paramBoolean) {
     if (this.y != null) {
-      this.r.remove((Component)this.y);
+      this.r.remove((Component) this.y);
       this.y.AjComponentCharlie();
-    } 
+    }
     this.y = paramaS;
-    this.r.add("Center", (Component)paramaS);
+    this.r.add("Center", (Component) paramaS);
     if (paramBoolean) {
       this.r.add("South", this.i);
-      if (this.ExceptionPrintstacktrace)
-        this.r.add("North", this.h); 
-      if (paramaS instanceof cZ)
-        ((cZ)paramaS).AjComponentCharlie(!this.ExceptionPrintstacktrace); 
+      if (this.ExceptionPrintstacktrace) this.r.add("North", this.h);
+      if (paramaS instanceof cZ) ((cZ) paramaS).AjComponentCharlie(!this.ExceptionPrintstacktrace);
       this.r.validate();
     } else {
       this.r.remove(this.h);
       this.r.remove(this.i);
       this.r.validate();
-    } 
+    }
     this.r.doLayout();
   }
-  
+
   public void AjComponentBravo(R paramR) {
     FileInAzPackage();
     if (this.t != null && this.t.getComponentCount() > 0) {
       this.t.f();
       (new aa()).ExceptionInVPackage(this.t, this.R, K);
       this.t.AjComponentCharlie();
-    } 
+    }
   }
-  
+
   public void AjComponentCharlie(R paramR) {}
-  
+
   private GComponentCd h(BInterfaceNovember paramn) {
     ArrayList arrayList = this.ExceptionInVPackage.h();
     for (GComponentCd GComponentCd : arrayList) {
       GComponentCf GComponentCf = GComponentCd.AjComponentBravo();
-      if (ExceptionInVPackage(paramn, GComponentCf))
-        return GComponentCd; 
-    } 
+      if (ExceptionInVPackage(paramn, GComponentCf)) return GComponentCd;
+    }
     return null;
   }
-  
+
   private boolean ExceptionInVPackage(BInterfaceNovember paramn, GComponentCf paramcf) {
     List list = paramcf.j();
     for (String str : list) {
-      if (paramn.ExceptionInVPackage(str) == null)
-        return false; 
-    } 
+      if (paramn.ExceptionInVPackage(str) == null) return false;
+    }
     return true;
   }
-  
+
   public void ExceptionInVPackage(ArrayList<BInterfaceNovember> paramArrayList) {
     this.E = false;
     if (paramArrayList.size() == 0) {
       bV.FileInAzPackage("Data set empty, can't load it.", this);
       return;
-    } 
+    }
     GComponentCd GComponentCd = h(paramArrayList.get(0));
     if (GComponentCd == null) {
       bV.FileInAzPackage("Unable to identify log file type.", this);
       return;
-    } 
+    }
     this.ExceptionInVPackage.AjComponentBravo(GComponentCd.ExceptionPrintstacktrace());
     this.ah.clear();
     int i = 0;
@@ -756,43 +767,48 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     Iterator<BInterfaceNovember> iterator = paramArrayList.iterator();
     while (iterator.hasNext()) {
       if (i == j) {
-        bV.FileInAzPackage("Data set size exceeds current maximum of " + j + ".\nOnly the first " + j + " will be loaded.", this);
+        bV.FileInAzPackage(
+            "Data set size exceeds current maximum of "
+                + j
+                + ".\nOnly the first "
+                + j
+                + " will be loaded.",
+            this);
         break;
-      } 
+      }
       BInterfaceNovember n1 = iterator.next();
       if (bool) {
         ExceptionInVPackage(n1);
         bool = false;
       } else {
         this.ah.ExceptionInVPackage(n1);
-      } 
+      }
       i++;
-    } 
+    }
     AjComponentBravo(0);
     o();
   }
-  
+
   public void AjComponentBravo(int paramInt) {
     try {
       BInterfaceNovember n1 = this.ah.ExceptionInVPackage(paramInt);
       i(n1);
     } catch (ExceptionInVPackage a1) {
-      D.ExceptionInVPackage("Unable to display page " + paramInt, (Exception)a1, this);
-    } 
+      D.ExceptionInVPackage("Unable to display page " + paramInt, (Exception) a1, this);
+    }
   }
-  
+
   public void ExceptionInVPackage(BInterfaceNovember paramn) {
     GComponentCd GComponentCd = this.ExceptionInVPackage.j();
     if (this.E && this.ExceptionInVPackage.j().JPanelExtensionInBbPackage()) {
       this.E = false;
-      if (GComponentCd == null || GComponentCd.JPanelExtensionInBbPackage())
-        return; 
-    } 
+      if (GComponentCd == null || GComponentCd.JPanelExtensionInBbPackage()) return;
+    }
     this.ah.ExceptionInVPackage(paramn);
     if (this.ac == null || !this.ac.isAlive()) {
       this.ac = new aj(this);
       this.ac.start();
-    } 
+    }
     this.ac.ExceptionInVPackage();
     try {
       ExceptionPrintstacktrace(paramn);
@@ -800,17 +816,16 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       if (!this.w) {
         D.ExceptionInVPackage("Unable to write data to log file.", iOException, this);
         this.w = true;
-      } 
-    } 
+      }
+    }
     if (GComponentCd != null && !GComponentCd.JPanelExtensionInBbPackage()) {
       X x1 = new X(this);
       SwingUtilities.invokeLater(x1);
-    } 
+    }
   }
-  
+
   public void AjComponentBravo(BInterfaceNovember paramn) {
-    if (this.E)
-      this.E = false; 
+    if (this.E) this.E = false;
     this.ah.ExceptionInVPackage(paramn);
     i(this.ah.e());
     try {
@@ -819,25 +834,24 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       if (!this.w) {
         D.ExceptionInVPackage("Unable to write data to log file.", iOException, this);
         this.w = true;
-      } 
-    } 
+      }
+    }
   }
-  
+
   protected void h() {
     this.x.ExceptionInVPackage(this.ah.size());
     this.x.AjComponentBravo(this.ah.AjComponentCharlie() + 1);
   }
-  
+
   private void i(BInterfaceNovember paramn) {
-    if (paramn == null)
-      return; 
+    if (paramn == null) return;
     this.ai = paramn;
     for (j j : paramn) {
       if (this.C.ExceptionInVPackage(j.ExceptionInVPackage())) {
         j.AjComponentBravo(true);
         j.ExceptionPrintstacktrace(this.C.AjComponentBravo(j.ExceptionInVPackage()));
-      } 
-    } 
+      }
+    }
     if (paramn.FileInAzPackage() != this.B) {
       this.B = paramn.FileInAzPackage();
       if (this.B > 1000) {
@@ -846,44 +860,43 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       } else {
         this.X = W;
         this.V = U;
-      } 
+      }
       if (this.z > this.X) {
         this.z = this.X;
       } else if (this.z < this.V) {
         this.z = this.V;
-      } 
+      }
       this.x.ExceptionInVPackage();
-    } 
+    }
     h();
     try {
       m(paramn);
     } catch (ExceptionInVPackage a1) {
-      D.ExceptionInVPackage("There was an error reading this log file.", (Exception)a1, this);
-    } 
+      D.ExceptionInVPackage("There was an error reading this log file.", (Exception) a1, this);
+    }
     FileInAzPackage(paramn);
     this.ab.ExceptionInVPackage(0, paramn);
   }
-  
+
   private BInterfaceNovember j(BInterfaceNovember paramn) {
     for (j j1 : paramn) {
       j j2 = this.af.ExceptionInVPackage(j1.ExceptionInVPackage());
       if (j2 == null) {
         j2 = new j(j1.ExceptionInVPackage());
         this.af.ExceptionInVPackage(j2);
-      } 
+      }
       j2.AjComponentBravo(j1.r());
       j2.ExceptionPrintstacktrace(j1.s());
       for (byte b1 = 0; b1 < j1.i(); b1++) {
         float f = j1.FileInAzPackage(b1);
         j2.ExceptionInVPackage(f);
-        while (j2.v() > this.ae * j1.v())
-          j2.h(0); 
-      } 
-    } 
+        while (j2.v() > this.ae * j1.v()) j2.h(0);
+      }
+    }
     this.af.ExceptionInVPackage(this.af.FileInAzPackage() - 1, "End of read " + this.ag++);
     return this.af;
   }
-  
+
   protected void AjComponentCharlie(BInterfaceNovember paramn) {
     if (this.ae > 1)
       if (ExceptionInVPackage().f()) {
@@ -893,18 +906,23 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         int i = this.x.FileInAzPackage() - 1;
         int j = Math.max(0, i - this.ae);
         while (j <= i) {
-          BInterfaceNovember n1 = (BInterfaceNovember)this.ah.get(j++);
+          BInterfaceNovember n1 = (BInterfaceNovember) this.ah.get(j++);
           paramn = j(n1);
-        } 
-      }  
+        }
+      }
     if (this.y instanceof cZ) {
       j[] arrayOfJ;
       String str = (this.j.getSelectedItem() != null) ? this.j.getSelectedItem().toString() : "";
-      int i = (int)(paramn.FileInAzPackage() * this.z);
+      int i = (int) (paramn.FileInAzPackage() * this.z);
       j j = paramn.ExceptionInVPackage(str);
       if (j != null) {
         double d1 = (j.f() - j.e());
-        double d2 = (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum() == 0) ? 0.0D : ((this.x.ExceptionInVPackage.getValue() - this.x.ExceptionInVPackage.getMinimum()) / (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum()));
+        double d2 =
+            (this.x.ExceptionInVPackage.getMaximum() - this.x.ExceptionInVPackage.getMinimum() == 0)
+                ? 0.0D
+                : ((this.x.ExceptionInVPackage.getValue() - this.x.ExceptionInVPackage.getMinimum())
+                    / (this.x.ExceptionInVPackage.getMaximum()
+                        - this.x.ExceptionInVPackage.getMinimum()));
         double d3 = 1.0D - this.z;
         double d4 = j.e() + d2 * d3 * d1;
         double d5 = d4 + this.z * d1;
@@ -917,14 +935,15 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         this.f.ExceptionInVPackage(am);
       } else {
         return;
-      } 
+      }
       if (!this.ExceptionPrintstacktrace) {
         arrayOfJ = new j[this.NetworkDatagramSocketInAjPackage.size()];
         for (byte b1 = 0; b1 < this.NetworkDatagramSocketInAjPackage.size(); b1++) {
           JComboBox jComboBox = this.NetworkDatagramSocketInAjPackage.get(b1);
-          String str1 = (jComboBox.getSelectedItem() != null) ? jComboBox.getSelectedItem().toString() : "";
+          String str1 =
+              (jComboBox.getSelectedItem() != null) ? jComboBox.getSelectedItem().toString() : "";
           arrayOfJ[b1] = paramn.ExceptionInVPackage(str1);
-        } 
+        }
       } else {
         arrayOfJ = new j[this.JPanelExtensionInBbPackage.size()];
         for (byte b1 = 0; b1 < this.JPanelExtensionInBbPackage.size(); b1++) {
@@ -934,9 +953,9 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
             arrayOfJ[b1] = paramn.ExceptionInVPackage(str1);
           } else {
             arrayOfJ[b1] = null;
-          } 
-        } 
-      } 
+          }
+        }
+      }
       if (!ExceptionInVPackage(arrayOfJ)) {
         this.f.ExceptionInVPackage();
         o();
@@ -956,26 +975,28 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               this.f.ExceptionInVPackage(b1, (j1.f() * 3.0F / 2.0F));
             } else if (!Double.isNaN(d5)) {
               this.f.ExceptionInVPackage(b1, d5);
-            } 
+            }
             if (Double.isNaN(d4) && Double.isNaN(this.f.ExceptionPrintstacktrace(b1))) {
               this.f.AjComponentBravo(b1, j1.e());
-            } else if (Double.isNaN(d4) && (this.f.ExceptionPrintstacktrace(b1) > j1.e() || this.f.ExceptionPrintstacktrace(b1) > d3)) {
+            } else if (Double.isNaN(d4)
+                && (this.f.ExceptionPrintstacktrace(b1) > j1.e()
+                    || this.f.ExceptionPrintstacktrace(b1) > d3)) {
               this.f.AjComponentBravo(b1, j1.e());
             } else if (!Double.isNaN(d4)) {
               this.f.AjComponentBravo(b1, d4);
-            } 
+            }
             this.f.AjComponentBravo(b1, j1.ExceptionInVPackage());
             for (byte b2 = 0; b2 < paramn.FileInAzPackage(); b2++) {
               float f = (j != null) ? j.AjComponentCharlie(b2) : b2;
               Point2D.Float float_ = new Point2D.Float(f, j1.AjComponentCharlie(b2));
               this.f.ExceptionInVPackage(float_, b1);
-            } 
+            }
           } else {
             this.f.AjComponentBravo(b1, "");
             this.f.AjComponentBravo(b1, Double.NaN);
             this.f.ExceptionInVPackage(b1, Double.NaN);
-          } 
-        } 
+          }
+        }
         this.f.repaint();
       } else {
         this.f.ExceptionInVPackage();
@@ -984,30 +1005,32 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         this.f.ExceptionInVPackage(0.0D);
         this.f.AjComponentBravo(0.0D);
         this.f.repaint();
-      } 
+      }
     } else if (this.y instanceof q) {
       String str = (this.j.getSelectedItem() != null) ? this.j.getSelectedItem().toString() : "";
-      int i = (int)(paramn.FileInAzPackage() * this.z);
+      int i = (int) (paramn.FileInAzPackage() * this.z);
       j j = paramn.ExceptionInVPackage(str);
       if (j != null) {
         this.e.ExceptionInVPackage();
         this.e.FileInAzPackage(j.f());
         this.e.AjComponentCharlie(j.e());
-        for (int NetworkDatagramSocketInAjPackage = this.A; NetworkDatagramSocketInAjPackage < i + this.A && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage(); NetworkDatagramSocketInAjPackage++)
-          this.e.ExceptionInVPackage(j.AjComponentCharlie(NetworkDatagramSocketInAjPackage)); 
+        for (int NetworkDatagramSocketInAjPackage = this.A;
+            NetworkDatagramSocketInAjPackage < i + this.A
+                && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage();
+            NetworkDatagramSocketInAjPackage++)
+          this.e.ExceptionInVPackage(j.AjComponentCharlie(NetworkDatagramSocketInAjPackage));
         this.e.repaint();
-      } 
-    } 
+      }
+    }
   }
-  
+
   private boolean ExceptionInVPackage(j[] paramArrayOfj) {
     for (j j1 : paramArrayOfj) {
-      if (j1 != null)
-        return false; 
-    } 
+      if (j1 != null) return false;
+    }
     return true;
   }
-  
+
   protected void FileInAzPackage(BInterfaceNovember paramn) {
     GComponentCd GComponentCd = this.ExceptionInVPackage.j();
     if (GComponentCd.FileInAzPackage().equals(GComponentCd.FileInAzPackage)) {
@@ -1016,9 +1039,9 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       f(paramn);
     } else {
       e(paramn);
-    } 
+    }
   }
-  
+
   protected void e(BInterfaceNovember paramn) {
     // Byte code:
     //   0: aload_0
@@ -2267,21 +2290,22 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     //   2487: invokevirtual repaint : ()V
     //   2490: return
   }
-  
+
   protected void f(BInterfaceNovember paramn) {
-    if (this.y == null)
-      return; 
+    if (this.y == null) return;
     if (this.y.equals(this.e)) {
-      int i = (int)(paramn.FileInAzPackage() * this.z);
-      j j = (j)paramn.get(0);
+      int i = (int) (paramn.FileInAzPackage() * this.z);
+      j j = (j) paramn.get(0);
       this.e.ExceptionInVPackage();
-      if (j.f() < this.e.i() / 2.0D)
-        this.e.FileInAzPackage(0.0D); 
-      for (int NetworkDatagramSocketInAjPackage = this.A; NetworkDatagramSocketInAjPackage < i + this.A && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage(); NetworkDatagramSocketInAjPackage++)
-        this.e.ExceptionInVPackage(j.AjComponentCharlie(NetworkDatagramSocketInAjPackage)); 
+      if (j.f() < this.e.i() / 2.0D) this.e.FileInAzPackage(0.0D);
+      for (int NetworkDatagramSocketInAjPackage = this.A;
+          NetworkDatagramSocketInAjPackage < i + this.A
+              && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage();
+          NetworkDatagramSocketInAjPackage++)
+        this.e.ExceptionInVPackage(j.AjComponentCharlie(NetworkDatagramSocketInAjPackage));
       this.e.repaint();
     } else if (this.y.equals(this.q)) {
-      int i = (int)(paramn.FileInAzPackage() * this.z);
+      int i = (int) (paramn.FileInAzPackage() * this.z);
       j j1 = paramn.ExceptionInVPackage("Time");
       j j2 = paramn.ExceptionInVPackage("ToothTime");
       j j3 = paramn.ExceptionInVPackage("PriLevel");
@@ -2289,15 +2313,21 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       j j5 = paramn.ExceptionInVPackage("Sync");
       j j6 = paramn.ExceptionInVPackage("Trigger");
       this.q.ExceptionInVPackage();
-      double d1 = (j1.AjComponentCharlie(this.A) > 0.0F) ? j1.AjComponentCharlie(this.A) : NetworkDatagramSocketInAjPackage(paramn);
-      double d2 = (j1.AjComponentCharlie(i + this.A - 1) > 0.0F) ? j1.AjComponentCharlie(i + this.A - 1) : JPanelExtensionInBbPackage(paramn);
+      double d1 =
+          (j1.AjComponentCharlie(this.A) > 0.0F)
+              ? j1.AjComponentCharlie(this.A)
+              : NetworkDatagramSocketInAjPackage(paramn);
+      double d2 =
+          (j1.AjComponentCharlie(i + this.A - 1) > 0.0F)
+              ? j1.AjComponentCharlie(i + this.A - 1)
+              : JPanelExtensionInBbPackage(paramn);
       this.q.AjComponentBravo(d1);
       this.q.e(d2);
       if (j6.f() == 0.0F && j4.e() == j4.f()) {
         this.q.FileInAzPackage(2.0D);
       } else {
         this.q.FileInAzPackage(3.0D);
-      } 
+      }
       boolean bool1 = false;
       boolean bool2 = false;
       long JPanelExtensionInBbPackage = System.currentTimeMillis();
@@ -2315,36 +2345,33 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       for (b6 = 2; b6 < paramn.FileInAzPackage(); b6++) {
         if (j2.AjComponentCharlie(b6) == 0.0D) {
           b5++;
-          if (!bool3)
-            j++; 
+          if (!bool3) j++;
         } else {
           b5 = 0;
           bool3 = true;
-        } 
+        }
         if (b5 <= 2) {
           if (!bool1 && j3.f() != j3.e() && j2.AjComponentCharlie(b6) > 0.0D) {
-            if (d3 != -1.0D && d3 != j3.AjComponentCharlie(b6))
-              bool1 = true; 
+            if (d3 != -1.0D && d3 != j3.AjComponentCharlie(b6)) bool1 = true;
             d3 = j3.AjComponentCharlie(b6);
-          } 
+          }
           if (!bool2 && j4.f() != j4.e() && j2.AjComponentCharlie(b6) > 0.0D) {
-            if (d4 != -1.0D && f != -1.0F && f != j4.AjComponentCharlie(b6))
-              bool2 = true; 
+            if (d4 != -1.0D && f != -1.0F && f != j4.AjComponentCharlie(b6)) bool2 = true;
             f = j4.AjComponentCharlie(b6);
-          } 
+          }
           d4 = j4.AjComponentCharlie(b6);
           if (j4.AjComponentCharlie(b6) == 1.0F) {
             b1++;
           } else {
             b2++;
-          } 
+          }
           if (j3.AjComponentCharlie(b6) == 1.0F) {
             b3++;
           } else {
             b4++;
-          } 
-        } 
-      } 
+          }
+        }
+      }
       b6 = (b1 < b2) ? 1 : 0;
       boolean bool4 = (b3 > b4) ? true : false;
       d3 = -1.0D;
@@ -2352,7 +2379,10 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       double d5 = -1.0D;
       double d6 = 1.5D;
       int NetworkDatagramSocketInAjPackage;
-      for (NetworkDatagramSocketInAjPackage = this.A; NetworkDatagramSocketInAjPackage < i + this.A && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage(); NetworkDatagramSocketInAjPackage++) {
+      for (NetworkDatagramSocketInAjPackage = this.A;
+          NetworkDatagramSocketInAjPackage < i + this.A
+              && NetworkDatagramSocketInAjPackage < paramn.FileInAzPackage();
+          NetworkDatagramSocketInAjPackage++) {
         if (bool1 || j6.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 0.0F) {
           double d7 = j3.AjComponentCharlie(NetworkDatagramSocketInAjPackage);
           if (d3 == -1.0D) {
@@ -2366,19 +2396,20 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               this.q.ExceptionInVPackage(0, aZ);
               aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d7);
               this.q.ExceptionInVPackage(0, aZ);
-            } 
+            }
           } else if (bool1) {
             aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d3);
             aZ.ExceptionInVPackage(true);
             this.q.ExceptionInVPackage(0, aZ);
             aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d7);
             this.q.ExceptionInVPackage(0, aZ);
-          } else if (NetworkDatagramSocketInAjPackage == i + this.A - 1 || NetworkDatagramSocketInAjPackage == paramn.FileInAzPackage() - 1) {
+          } else if (NetworkDatagramSocketInAjPackage == i + this.A - 1
+              || NetworkDatagramSocketInAjPackage == paramn.FileInAzPackage() - 1) {
             if (!bool1) {
               boolean bool = (bool4 == true) ? false : true;
               aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), bool);
               this.q.ExceptionInVPackage(0, aZ);
-            } 
+            }
           } else if (d7 == bool4) {
             boolean bool = (bool4 == true) ? false : true;
             aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), bool);
@@ -2389,9 +2420,9 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
             aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), bool);
             aZ.ExceptionInVPackage(true);
             this.q.ExceptionInVPackage(0, aZ);
-          } 
+          }
           d3 = d7;
-        } 
+        }
         if (bool2 || j6.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 1.0F) {
           double d7 = j4.AjComponentCharlie(NetworkDatagramSocketInAjPackage);
           double d8 = d7 + d6;
@@ -2418,21 +2449,23 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               this.q.ExceptionInVPackage(1, aZ);
               aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d8);
               this.q.ExceptionInVPackage(1, aZ);
-            } 
+            }
           } else if (bool2) {
             aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d5);
             aZ.ExceptionInVPackage(true);
             this.q.ExceptionInVPackage(1, aZ);
             aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d8);
             this.q.ExceptionInVPackage(1, aZ);
-          } else if (NetworkDatagramSocketInAjPackage == i + this.A - 1 || NetworkDatagramSocketInAjPackage == paramn.FileInAzPackage() - 1) {
+          } else if (NetworkDatagramSocketInAjPackage == i + this.A - 1
+              || NetworkDatagramSocketInAjPackage == paramn.FileInAzPackage() - 1) {
             if (!bool2) {
               double d9 = b6 + d6;
               aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d9);
               aZ.ExceptionInVPackage(true);
               this.q.ExceptionInVPackage(1, aZ);
-            } 
-          } else if (j6.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 1.0F || (b6 != d7 && d8 != d5)) {
+            }
+          } else if (j6.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 1.0F
+              || (b6 != d7 && d8 != d5)) {
             double d9 = (d8 == d6) ? (1.0D + d6) : d6;
             aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d9);
             aZ.ExceptionInVPackage(true);
@@ -2442,11 +2475,12 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
             aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), d9);
             aZ.ExceptionInVPackage(true);
             this.q.ExceptionInVPackage(1, aZ);
-          } 
+          }
           d5 = d8;
           d4 = d7;
-        } 
-        if (j5.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 0.0F && j2.AjComponentCharlie(NetworkDatagramSocketInAjPackage) > 0.0F) {
+        }
+        if (j5.AjComponentCharlie(NetworkDatagramSocketInAjPackage) == 0.0F
+            && j2.AjComponentCharlie(NetworkDatagramSocketInAjPackage) > 0.0F) {
           aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), -0.75D);
           aZ.ExceptionInVPackage(true);
           this.q.ExceptionInVPackage(2, aZ);
@@ -2456,12 +2490,13 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
           aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), -0.75D);
           aZ.ExceptionInVPackage(true);
           this.q.ExceptionInVPackage(2, aZ);
-        } else if (NetworkDatagramSocketInAjPackage == this.A || NetworkDatagramSocketInAjPackage == i + this.A - 1) {
+        } else if (NetworkDatagramSocketInAjPackage == this.A
+            || NetworkDatagramSocketInAjPackage == i + this.A - 1) {
           aZ aZ = new aZ(j1.AjComponentCharlie(NetworkDatagramSocketInAjPackage), -0.75D);
           aZ.ExceptionInVPackage(true);
           this.q.ExceptionInVPackage(2, aZ);
-        } 
-      } 
+        }
+      }
       if (j6.f() == 1.0F)
         if (bool2) {
           if (d5 > 0.0D) {
@@ -2474,9 +2509,8 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               d5 = (d7 == 0.0D) ? (1.0D + d6) : d6;
             } else {
               double d8 = AjComponentBravo(paramn, this.q.t());
-              if (d8 >= 0.0D)
-                d5 = (d8 == 0.0D) ? d6 : (1.0D + d6); 
-            } 
+              if (d8 >= 0.0D) d5 = (d8 == 0.0D) ? d6 : (1.0D + d6);
+            }
             if (d5 > 0.0D) {
               aZ aZ = new aZ(this.q.AjComponentBravo(), d5);
               aZ.ExceptionInVPackage(true);
@@ -2484,8 +2518,8 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               aZ = new aZ(this.q.t(), d5);
               aZ.ExceptionInVPackage(true);
               this.q.ExceptionInVPackage(1, aZ);
-            } 
-          } 
+            }
+          }
         } else {
           double d7 = b6 + d6;
           aZ aZ = new aZ(this.q.AjComponentBravo(), d7);
@@ -2494,7 +2528,7 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
           aZ = new aZ(this.q.t(), d7);
           aZ.ExceptionInVPackage(true);
           this.q.ExceptionInVPackage(1, aZ);
-        }  
+        }
       NetworkDatagramSocketInAjPackage = paramn.FileInAzPackage();
       int m = NetworkDatagramSocketInAjPackage - b5 - this.A;
       if (b5 > 0) {
@@ -2507,54 +2541,51 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
         if (d8 > 0.0D) {
           this.q.AjComponentBravo(this.q.AjComponentBravo() - d8);
           this.q.e(this.q.AjComponentBravo() + i * d7);
-        } 
-        if (d9 > 0.0D)
-          this.q.e(this.q.t() + d9); 
-      } 
+        }
+        if (d9 > 0.0D) this.q.e(this.q.t() + d9);
+      }
       this.q.repaint();
-    } 
+    }
   }
-  
+
   private double NetworkDatagramSocketInAjPackage(BInterfaceNovember paramn) {
     j j = paramn.ExceptionInVPackage("Time");
     for (byte b1 = 0; b1 < paramn.FileInAzPackage(); b1++) {
-      if (j.AjComponentCharlie(b1) != 0.0F)
-        return j.AjComponentCharlie(b1); 
-    } 
+      if (j.AjComponentCharlie(b1) != 0.0F) return j.AjComponentCharlie(b1);
+    }
     return 0.0D;
   }
-  
+
   private double JPanelExtensionInBbPackage(BInterfaceNovember paramn) {
     j j = paramn.ExceptionInVPackage("Time");
     for (int i = paramn.FileInAzPackage() - 1; i >= 0; i--) {
-      if (j.AjComponentCharlie(i) != 0.0F)
-        return j.AjComponentCharlie(i); 
-    } 
+      if (j.AjComponentCharlie(i) != 0.0F) return j.AjComponentCharlie(i);
+    }
     return 0.0D;
   }
-  
+
   private double ExceptionInVPackage(BInterfaceNovember paramn, double paramDouble) {
     j j1 = paramn.ExceptionInVPackage("Time");
     j j2 = paramn.ExceptionInVPackage("SecLevel");
     j j3 = paramn.ExceptionInVPackage("Trigger");
     for (byte b1 = 0; b1 < paramn.FileInAzPackage(); b1++) {
       if (j1.AjComponentCharlie(b1) > paramDouble && j3.AjComponentCharlie(b1) == 1.0F)
-        return j2.AjComponentCharlie(b1); 
-    } 
+        return j2.AjComponentCharlie(b1);
+    }
     return -1.0D;
   }
-  
+
   private double AjComponentBravo(BInterfaceNovember paramn, double paramDouble) {
     j j1 = paramn.ExceptionInVPackage("Time");
     j j2 = paramn.ExceptionInVPackage("SecLevel");
     j j3 = paramn.ExceptionInVPackage("Trigger");
     for (int i = paramn.FileInAzPackage() - 1; i >= 0; i--) {
       if (j1.AjComponentCharlie(i) < paramDouble && j3.AjComponentCharlie(i) == 1.0F)
-        return j2.AjComponentCharlie(i); 
-    } 
+        return j2.AjComponentCharlie(i);
+    }
     return -1.0D;
   }
-  
+
   protected void i() {
     this.A = this.x.AjComponentCharlie();
     if (this.ai != null) {
@@ -2562,18 +2593,16 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       if (GComponentCd.FileInAzPackage().equals(GComponentCd.FileInAzPackage)) {
         if (this.j.getSelectedItem() != null) {
           j j = this.ai.ExceptionInVPackage(this.j.getSelectedItem().toString());
-          if (j != null)
-            this.f.f(j.BInterfaceNovember()); 
-        } 
+          if (j != null) this.f.f(j.BInterfaceNovember());
+        }
         if (!this.ExceptionPrintstacktrace) {
           for (byte b1 = 0; b1 < this.NetworkDatagramSocketInAjPackage.size(); b1++) {
             JComboBox jComboBox = this.NetworkDatagramSocketInAjPackage.get(b1);
             if (jComboBox.getSelectedItem() != null) {
               j j = this.ai.ExceptionInVPackage(jComboBox.getSelectedItem().toString());
-              if (j != null)
-                this.f.ExceptionInVPackage(b1, j.BInterfaceNovember()); 
-            } 
-          } 
+              if (j != null) this.f.ExceptionInVPackage(b1, j.BInterfaceNovember());
+            }
+          }
         } else {
           for (byte b1 = 0; b1 < this.JPanelExtensionInBbPackage.size(); b1++) {
             fn fn = this.JPanelExtensionInBbPackage.get(b1);
@@ -2582,18 +2611,17 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
               if (j != null) {
                 this.f.ExceptionInVPackage(b1, j.BInterfaceNovember());
                 this.f.ExceptionInVPackage(b1, fn.AjComponentCharlie());
-              } 
-            } 
-          } 
-        } 
-      } 
+              }
+            }
+          }
+        }
+      }
       FileInAzPackage(this.ai);
-    } 
+    }
   }
-  
+
   private void m(BInterfaceNovember paramn) {
-    if (!this.AjComponentBravo.isDisplayable() && !this.FileInAzPackage.isDisplayable())
-      return; 
+    if (!this.AjComponentBravo.isDisplayable() && !this.FileInAzPackage.isDisplayable()) return;
     if (paramn.FileInAzPackage() == 0) {
       this.AjComponentBravo.setText("Empty read, No Data Received from Controller");
       this.AjComponentCharlie.getDataVector().clear();
@@ -2606,130 +2634,125 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       stringBuffer.append(paramn.ExceptionPrintstacktrace() + "\n");
       byte b1;
       for (b1 = 0; b1 < paramn.size(); b1++) {
-        j j = (j)paramn.get(b1);
+        j j = (j) paramn.get(b1);
         stringBuffer.append(j.ExceptionInVPackage());
         vector.add(j.ExceptionInVPackage());
-        if (b1 < paramn.size() - 1)
-          stringBuffer.append("\t"); 
-      } 
+        if (b1 < paramn.size() - 1) stringBuffer.append("\t");
+      }
       stringBuffer.append("\n");
       try {
         for (b1 = 0; b1 < paramn.size(); b1++) {
-          j j = (j)paramn.get(b1);
+          j j = (j) paramn.get(b1);
           stringBuffer.append(j.BInterfaceNovember());
-          if (b1 < paramn.size() - 1)
-            stringBuffer.append("\t"); 
-        } 
+          if (b1 < paramn.size() - 1) stringBuffer.append("\t");
+        }
       } catch (Exception exception) {
         throw new ExceptionInVPackage("Invalid units row in log file.");
-      } 
+      }
       stringBuffer.append("\n");
       if (this.Z) {
         for (b1 = 0; b1 < paramn.FileInAzPackage(); b1++) {
           Vector<Float> vector2 = new Vector();
           vector1.add(vector2);
           for (byte b2 = 0; b2 < paramn.size(); b2++) {
-            j j = (j)paramn.get(b2);
+            j j = (j) paramn.get(b2);
             vector2.add(Float.valueOf(j.FileInAzPackage(b1)));
-          } 
-        } 
+          }
+        }
         synchronized (this.AjComponentCharlie) {
           this.AjComponentCharlie.setDataVector(vector1, vector);
-        } 
-      } 
+        }
+      }
       for (b1 = 0; b1 < paramn.FileInAzPackage(); b1++) {
         try {
           for (byte b2 = 0; b2 < paramn.size(); b2++) {
-            j j = (j)paramn.get(b2);
+            j j = (j) paramn.get(b2);
             stringBuffer.append(j.AjComponentCharlie(b1) + "");
-            if (b2 < paramn.size() - 1)
-              stringBuffer.append("\t"); 
-          } 
+            if (b2 < paramn.size() - 1) stringBuffer.append("\t");
+          }
         } catch (Exception exception) {
-          throw new ExceptionInVPackage("Invalid data found at record: " + b1 + "\nThis file does not appear valid.");
-        } 
+          throw new ExceptionInVPackage(
+              "Invalid data found at record: " + b1 + "\nThis file does not appear valid.");
+        }
         stringBuffer.append("\n");
-      } 
+      }
       this.AjComponentBravo.setText(stringBuffer.toString());
-    } 
+    }
     this.AjComponentBravo.setCaretPosition(0);
   }
-  
+
   public void ExceptionPrintstacktrace(BInterfaceNovember paramn) {
     String str = this.ExceptionInVPackage.m();
-    if (!this.ExceptionInVPackage.f() && (str == null || str.equals("")))
-      return; 
-    if (this.v == null && (paramn.isEmpty() || ((j)paramn.get(0)).x()))
-      return; 
+    if (!this.ExceptionInVPackage.f() && (str == null || str.equals(""))) return;
+    if (this.v == null && (paramn.isEmpty() || ((j) paramn.get(0)).x())) return;
     if (this.v == null) {
       String str1 = this.T.P();
-      if (str1 == null || str1.isEmpty())
-        str1 = this.T.i(); 
+      if (str1 == null || str1.isEmpty()) str1 = this.T.i();
       String str2 = "Firmware: " + str1;
-      if (paramn.ExceptionPrintstacktrace() != null && !paramn.ExceptionPrintstacktrace().equals(""))
-        str2 = str2 + "\nHeader: " + paramn.ExceptionPrintstacktrace(); 
+      if (paramn.ExceptionPrintstacktrace() != null
+          && !paramn.ExceptionPrintstacktrace().equals(""))
+        str2 = str2 + "\nHeader: " + paramn.ExceptionPrintstacktrace();
       paramn.FileInAzPackage(str2);
       this.v = FileInAzPackage.ExceptionInVPackage(paramn, str, ',');
-    } 
+    }
     this.v.ExceptionInVPackage(paramn);
   }
-  
+
   protected void ExceptionInVPackage(double paramDouble) {
     if (this.z / 2.0D > this.V) {
       ExceptionInVPackage(this.z / 2.0D, paramDouble);
     } else {
       ExceptionInVPackage(this.V, paramDouble);
-    } 
+    }
   }
-  
+
   private int s() {
-    return (int)Math.round(this.B * this.z);
+    return (int) Math.round(this.B * this.z);
   }
-  
+
   public void ExceptionInVPackage(double paramDouble1, double paramDouble2) {
     double d1 = this.x.AjComponentBravo();
     double d2 = 0.0D;
-    if (paramDouble1 == this.z)
-      return; 
+    if (paramDouble1 == this.z) return;
     if (paramDouble1 > this.z) {
       this.z = paramDouble1;
       d2 = -(s() * paramDouble2 / this.B) / 2.0D;
     } else {
       d2 = s() * paramDouble2 / this.B / 2.0D;
       this.z = paramDouble1;
-    } 
+    }
     AjComponentBravo(O, paramDouble1 + "");
     this.x.ExceptionInVPackage();
     this.x.ExceptionInVPackage(d1 + d2);
     i();
   }
-  
+
   protected void AjComponentBravo(double paramDouble) {
     if (this.z * 2.0D < this.X) {
       ExceptionInVPackage(this.z * 2.0D, paramDouble);
     } else {
       ExceptionInVPackage(this.X, paramDouble);
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(et paramet) {
     this.aj = paramet;
     this.C.ExceptionInVPackage(paramet);
   }
-  
+
   public boolean ExceptionInVPackage(String paramString, AeInterfaceMikeTostring parambT) {
     this.E = true;
     return true;
   }
-  
+
   public void ExceptionInVPackage(String paramString) {
     this.ExceptionInVPackage.JPanelExtensionInBbPackage();
   }
-  
+
   public boolean j() {
     return this.ak;
   }
-  
+
   public void NetworkDatagramSocketInAjPackage() {
     this.ah.clear();
     this.af.clear();
@@ -2741,23 +2764,23 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
     this.x.ExceptionInVPackage(false);
     h();
   }
-  
+
   public boolean JPanelExtensionInBbPackage() {
     return (this.ah.size() > 0);
   }
-  
+
   public boolean m() {
     return this.al;
   }
-  
+
   public void ExceptionInVPackage(boolean paramBoolean) {
     this.al = paramBoolean;
   }
-  
+
   protected ai BInterfaceNovember() {
     return this.ah;
   }
-  
+
   private void t() {
     if (this.aa != null && this.aa.ExceptionInVPackage) {
       this.aa.ExceptionInVPackage();
@@ -2766,62 +2789,65 @@ public class TriggerLoggerPanel extends JPanel implements S, GInterfaceAg, AjCom
       this.aa = new ax(this);
       this.aa.start();
       ao.ExceptionInVPackage(this.x, false);
-    } 
+    }
   }
-  
+
   private void ExceptionInVPackage(int paramInt1, int paramInt2) {
     JPopupMenu jPopupMenu = new JPopupMenu();
     JMenuItem jMenuItem = jPopupMenu.add(J);
     jMenuItem.addActionListener(new Y(this));
     List list = u();
     if (!list.isEmpty()) {
-      ExceptionInVPackage a1 = new ExceptionInVPackage(ExceptionPrintstacktrace.AjComponentBravo("Field Smoothing"));
-      jPopupMenu.add((JMenuItem)a1);
+      ExceptionInVPackage a1 =
+          new ExceptionInVPackage(ExceptionPrintstacktrace.AjComponentBravo("Field Smoothing"));
+      jPopupMenu.add((JMenuItem) a1);
       for (String str : list) {
         j j = this.ai.ExceptionInVPackage(str);
         if (j != null) {
           ExceptionInVPackage a2 = new ExceptionInVPackage(str);
-          this.C.ExceptionInVPackage((bq)a2, j, this);
-          a1.add((JMenuItem)a2);
-        } 
-      } 
-    } 
+          this.C.ExceptionInVPackage((bq) a2, j, this);
+          a1.add((JMenuItem) a2);
+        }
+      }
+    }
     this.f.add(jPopupMenu);
-    jPopupMenu.show((Component)this.f, paramInt1, paramInt2);
+    jPopupMenu.show((Component) this.f, paramInt1, paramInt2);
   }
-  
+
   private List u() {
     ArrayList<String> arrayList = new ArrayList();
     if (this.j.getSelectedItem() != null && !this.j.getSelectedItem().toString().trim().isEmpty())
-      arrayList.add(this.j.getSelectedItem().toString()); 
+      arrayList.add(this.j.getSelectedItem().toString());
     if (!this.ExceptionPrintstacktrace) {
       for (JComboBox jComboBox : this.NetworkDatagramSocketInAjPackage) {
-        if (jComboBox.getSelectedItem() != null && !jComboBox.getSelectedItem().toString().trim().isEmpty())
-          arrayList.add(jComboBox.getSelectedItem().toString()); 
-      } 
+        if (jComboBox.getSelectedItem() != null
+            && !jComboBox.getSelectedItem().toString().trim().isEmpty())
+          arrayList.add(jComboBox.getSelectedItem().toString());
+      }
     } else {
       for (fn fn : this.JPanelExtensionInBbPackage) {
-        if (fn.FileInAzPackage())
-          arrayList.add(fn.AjComponentBravo()); 
-      } 
-    } 
+        if (fn.FileInAzPackage()) arrayList.add(fn.AjComponentBravo());
+      }
+    }
     return arrayList;
   }
-  
+
   private void v() {
     if (this.ai != null) {
       this.F.ExceptionInVPackage(this.ai);
-      JPanelExtensionInBbPackage JPanelExtensionInBbPackage = new JPanelExtensionInBbPackage(ExceptionPrintstacktrace.FileInAzPackage(), this.F);
+      JPanelExtensionInBbPackage JPanelExtensionInBbPackage =
+          new JPanelExtensionInBbPackage(ExceptionPrintstacktrace.FileInAzPackage(), this.F);
       JPanelExtensionInBbPackage.ExceptionInVPackage(bV.AjComponentBravo(this));
-    } 
+    }
   }
-  
+
   public void AjComponentBravo() {
-    if (ExceptionInVPackage() != null && ExceptionInVPackage().f() && ExceptionInVPackage().h() != null && ExceptionInVPackage().h().r())
-      f(); 
+    if (ExceptionInVPackage() != null
+        && ExceptionInVPackage().f()
+        && ExceptionInVPackage().h() != null
+        && ExceptionInVPackage().h().r()) f();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/TriggerLoggerPanel.class
  * Java compiler version: 8 (52.0)

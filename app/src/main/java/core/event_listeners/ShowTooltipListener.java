@@ -7,13 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class dB implements ItemListener {
   dB(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    boolean bool = ((JCheckBoxMenuItem)paramItemEvent.getItem()).getState();
+    boolean bool = ((JCheckBoxMenuItem) paramItemEvent.getItem()).getState();
     IOProperties.c(IOProperties.aj, Boolean.toString(bool));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/dB.class
  * Java compiler version: 8 (52.0)

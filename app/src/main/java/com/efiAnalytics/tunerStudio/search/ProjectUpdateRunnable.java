@@ -2,13 +2,12 @@ package com.efiAnalytics.tunerStudio.search;
 
 class ProjectUpdateRunnable implements Runnable {
   ProjectUpdateRunnable(x paramx) {}
-  
+
   public void run() {
     this.a.a.a();
     this.a.a.c.fireTableDataChanged();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/y.class
  * Java compiler version: 8 (52.0)

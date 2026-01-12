@@ -6,14 +6,13 @@ import javax.swing.JCheckBox;
 
 class BtComponentBe implements ActionListener {
   be(bd parambd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBox jCheckBox = (JCheckBox)paramActionEvent.getSource();
+    JCheckBox jCheckBox = (JCheckBox) paramActionEvent.getSource();
     this.a.j.a(bd.h(), "" + jCheckBox.isSelected());
     this.a.a(jCheckBox.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/be.class
  * Java compiler version: 8 (52.0)

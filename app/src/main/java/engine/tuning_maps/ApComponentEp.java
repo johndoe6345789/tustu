@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApComponentEp implements ActionListener {
   ep(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().N();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ep.class
  * Java compiler version: 8 (52.0)

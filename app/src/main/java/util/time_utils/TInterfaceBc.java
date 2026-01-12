@@ -6,18 +6,17 @@ import javax.swing.JTextField;
 
 class TInterfaceBc extends KeyAdapter {
   bc(aO paramaO) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    JTextField jTextField = (JTextField)paramKeyEvent.getSource();
-    if (jTextField.getText().equals(""))
-      return; 
+    JTextField jTextField = (JTextField) paramKeyEvent.getSource();
+    if (jTextField.getText().equals("")) return;
     try {
       String str = jTextField.getText();
       this.a.c().m(str);
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/bc.class
  * Java compiler version: 8 (52.0)

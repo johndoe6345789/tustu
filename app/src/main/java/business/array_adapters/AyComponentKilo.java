@@ -13,7 +13,7 @@ public class AyComponentKilo {
     URL uRL = new URL(paramString);
     return a(uRL);
   }
-  
+
   public static String a(URL paramURL) {
     InputStream inputStream = null;
     try {
@@ -24,15 +24,13 @@ public class AyComponentKilo {
       throw iOException;
     } finally {
       try {
-        if (inputStream != null)
-          inputStream.close(); 
+        if (inputStream != null) inputStream.close();
       } catch (IOException iOException) {
-        Logger.getLogger(H.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      } 
-    } 
+        Logger.getLogger(H.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ay/k.class
  * Java compiler version: 8 (52.0)

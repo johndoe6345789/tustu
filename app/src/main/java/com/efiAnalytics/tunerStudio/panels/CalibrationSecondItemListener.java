@@ -5,12 +5,11 @@ import java.awt.event.ItemListener;
 
 class CalibrationSecondItemListener implements ItemListener {
   CalibrationSecondItemListener(CalibrationTablePanel paramJ) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
     CalibrationTablePanel.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/M.class
  * Java compiler version: 8 (52.0)

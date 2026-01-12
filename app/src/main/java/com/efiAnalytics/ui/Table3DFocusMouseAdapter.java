@@ -5,13 +5,11 @@ import java.awt.event.MouseEvent;
 
 class Table3DFocusMouseAdapter extends MouseAdapter {
   Table3DFocusMouseAdapter(eM parameM) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    if (this.a.isEnabled())
-      this.a.requestFocus(); 
+    if (this.a.isEnabled()) this.a.requestFocus();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/eN.class
  * Java compiler version: 8 (52.0)

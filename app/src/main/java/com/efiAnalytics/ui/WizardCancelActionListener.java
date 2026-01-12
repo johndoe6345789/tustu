@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class WizardCancelActionListener implements ActionListener {
   WizardCancelActionListener(fL paramfL) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fM.class
  * Java compiler version: 8 (52.0)

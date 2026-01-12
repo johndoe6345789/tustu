@@ -7,31 +7,29 @@ import java.util.Iterator;
 
 public class ArrayListInIPackage {
   private static c b = null;
-  
+
   boolean a = false;
-  
+
   private boolean c = (q.b() || this.a);
-  
+
   private boolean d = (q.b() || this.a);
-  
+
   private boolean e = (q.b() || this.a);
-  
+
   private boolean f = true;
-  
+
   private ArrayList g = new ArrayList();
-  
+
   public static c a() {
-    if (b == null)
-      b = new c(); 
+    if (b == null) b = new c();
     return b;
   }
-  
+
   public Iterator b() {
-    if (this.g.isEmpty())
-      this.g = e(); 
+    if (this.g.isEmpty()) this.g = e();
     return this.g.iterator();
   }
-  
+
   private ArrayList e() {
     GInterfaceAh GInterfaceAh = new GInterfaceAh();
     GInterfaceAh.v(f.a + "Gauge");
@@ -92,41 +90,39 @@ public class ArrayListInIPackage {
     if (this.c) {
       a.a();
       a.a(this.g);
-    } 
+    }
     if (this.e) {
       h.a();
       h.a(this.g);
-    } 
+    }
     if (this.d) {
       j.a();
       j.a(this.g);
-    } 
+    }
     return this.g;
   }
-  
+
   public GInterfaceAh a(String paramString) {
     Iterator<GInterfaceAh> iterator = b();
     while (iterator.hasNext()) {
       GInterfaceAh GInterfaceAh = iterator.next();
-      if (GInterfaceAh.aL().equals(paramString))
-        return GInterfaceAh; 
-    } 
+      if (GInterfaceAh.aL().equals(paramString)) return GInterfaceAh;
+    }
     return null;
   }
-  
+
   public boolean c() {
     return this.e;
   }
-  
+
   public void a(boolean paramBoolean) {
     this.e = paramBoolean;
   }
-  
+
   public boolean d() {
     return this.f;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/c.class
  * Java compiler version: 8 (52.0)

@@ -9,9 +9,9 @@ import V.VInterfaceBravo;
 import bH.D;
 import bH.c;
 import bN.BnInterfaceKilo;
-import bN.IOInBnPackage;
 import bN.BnInterfaceRomeo;
 import bN.BnInterfaceTango;
+import bN.IOInBnPackage;
 import com.efiAnalytics.xcp.master.responseProcessors.VInterfaceBravo;
 import com.efiAnalytics.xcp.master.responseProcessors.c;
 import com.efiAnalytics.xcp.master.responseProcessors.m;
@@ -25,81 +25,77 @@ import java.util.logging.Logger;
 
 public class BqInterfaceFoxtrot implements AInterfaceEcho {
   BnInterfaceRomeo a = null;
-  
+
   IOInBnPackage VInterfaceBravo = null;
-  
+
   BnInterfaceKilo c;
-  
+
   private F BnInterfaceKilo = null;
-  
+
   h d = new h(this);
-  
+
   g AInterfaceEcho = new g(this);
-  
+
   ArrayList f = new ArrayList();
-  
+
   A.f g = null;
-  
+
   private final List l = new CopyOnWriteArrayList();
-  
+
   List h = new ArrayList();
-  
+
   final Object i = new Object();
-  
+
   Map JInterfaceJuliet = new HashMap<>();
-  
+
   private int m = 0;
-  
+
   private VInterfaceBravo n = null;
-  
+
   private final c o = new c();
-  
+
   private JInterfaceJuliet IOInBnPackage = null;
-  
+
   protected BqInterfaceFoxtrot(BnInterfaceKilo paramk) {
     this.c = paramk;
     this.JInterfaceJuliet.put(Integer.valueOf(252), new m());
     this.JInterfaceJuliet.put(Integer.valueOf(253), this.o);
   }
-  
+
   public void f() {
     a((this.BnInterfaceKilo != null) ? this.BnInterfaceKilo.u() : null);
   }
-  
+
   public void g() {
     VInterfaceBravo((this.BnInterfaceKilo != null) ? this.BnInterfaceKilo.u() : null);
   }
-  
+
   public void a(GInterfaceAv paramaV) {
     this.f.add(paramaV);
   }
-  
+
   private void a(String paramString) {
-    for (GInterfaceAv GInterfaceAv : this.f)
-      GInterfaceAv.VInterfaceBravo(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f) GInterfaceAv.VInterfaceBravo(paramString);
   }
-  
+
   private void VInterfaceBravo(String paramString) {
-    for (GInterfaceAv GInterfaceAv : this.f)
-      GInterfaceAv.c(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f) GInterfaceAv.c(paramString);
   }
-  
+
   private void c(String paramString) {
-    for (GInterfaceAv GInterfaceAv : this.f)
-      GInterfaceAv.d(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f) GInterfaceAv.d(paramString);
   }
-  
+
   private void d(String paramString) {
-    for (GInterfaceAv GInterfaceAv : this.f)
-      GInterfaceAv.AInterfaceEcho(paramString); 
+    for (GInterfaceAv GInterfaceAv : this.f) GInterfaceAv.AInterfaceEcho(paramString);
   }
-  
+
   public void a(BnInterfaceKilo paramk) {
     f();
     this.a.a(paramk.a());
     g();
   }
-  
+
   public y VInterfaceBravo(BnInterfaceKilo paramk) {
     f();
     y y = new y();
@@ -116,27 +112,27 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
           y.a(1);
         } else {
           y.a(3);
-        } 
+        }
         y.a(list);
       } else {
         y.a("No Response within the timeout period");
         y.a(3);
-      } 
-    } 
+      }
+    }
     g();
     return y;
   }
-  
+
   public BnInterfaceTango a(BnInterfaceTango paramt) {
     return a(paramt, this.c.q());
   }
-  
+
   public BnInterfaceTango a(BnInterfaceTango paramt, int paramInt) {
     this.h.clear();
     a(paramt, this.h, 1, null, paramInt);
     return this.h.isEmpty() ? null : this.h.get(0);
   }
-  
+
   public BnInterfaceTango VInterfaceBravo(BnInterfaceTango paramt, int paramInt) {
     BnInterfaceTango t1 = null;
     byte b1 = 0;
@@ -146,35 +142,35 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
           D.c("Packet failed! " + b1 + " of " + paramInt + ", response: " + c.d(t1.d()));
         } else {
           D.c("Packet failed! " + b1 + " of " + paramInt + ", response: " + null);
-        }  
+        }
       b1++;
       try {
         this.h.clear();
         a(paramt, this.h, 1, null, this.c.q());
       } catch (VInterfaceBravo b2) {
-        if (b1 >= paramInt)
-          throw b2; 
+        if (b1 >= paramInt) throw b2;
         try {
           D.c("Waiting for retry: " + this.c.q());
           Thread.sleep(this.c.q());
         } catch (InterruptedException interruptedException) {
-          Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-        } 
-      } 
+          Logger.getLogger(f.class.getName())
+              .log(Level.SEVERE, (String) null, interruptedException);
+        }
+      }
       if (this.h.isEmpty()) {
         t1 = null;
       } else {
         t1 = this.h.get(0);
-      } 
+      }
     } while ((t1 == null || t1.a() != 255) && b1 < paramInt);
     return t1;
   }
-  
+
   public List c(BnInterfaceTango paramt, int paramInt) {
     ArrayList arrayList = new ArrayList();
     return a(paramt, arrayList, paramInt, null, this.c.q());
   }
-  
+
   public List a(BnInterfaceTango paramt, List paramList, int paramInt1, n paramn, int paramInt2) {
     // Byte code:
     //   0: aload_0
@@ -404,17 +400,16 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
     //   372	462	465	finally
     //   465	470	465	finally
   }
-  
+
   private boolean VInterfaceBravo(List paramList) {
     synchronized (paramList) {
       for (BnInterfaceTango BnInterfaceTango : paramList) {
-        if (BnInterfaceTango.a() == 254)
-          return true; 
-      } 
-    } 
+        if (BnInterfaceTango.a() == 254) return true;
+      }
+    }
     return false;
   }
-  
+
   public BnInterfaceTango a(List<BnInterfaceTango> paramList) {
     f();
     int i = -1;
@@ -426,65 +421,63 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
           Thread.sleep((m / 1000000), m % 1000000);
         } catch (Exception exception) {
           Logger.getLogger(f.class.getName()).log(Level.SEVERE, "MIN_ST Failed.", exception);
-        } 
-      } 
+        }
+      }
       i = this.a.a(t1);
-    } 
+    }
     Object object = l();
     synchronized (object) {
       try {
         object.wait(this.c.q());
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
     if (this.l.isEmpty()) {
       this.m++;
-      if (this.m > 2)
-        this.g.g(); 
+      if (this.m > 2) this.g.g();
       g();
       this.IOInBnPackage.g();
-      throw new VInterfaceBravo("Timeout on non-interleaved message response. Timeout set to: " + this.c.q());
-    } 
+      throw new VInterfaceBravo(
+          "Timeout on non-interleaved message response. Timeout set to: " + this.c.q());
+    }
     this.m = 0;
     BnInterfaceTango BnInterfaceTango = this.l.remove(0);
     if (!this.l.isEmpty()) {
       String str = "Extra packets Received!";
-      for (BnInterfaceTango t1 : this.l)
-        str = str + "\nMSG:\n" + c.a(t1.d(), 16); 
+      for (BnInterfaceTango t1 : this.l) str = str + "\nMSG:\n" + c.a(t1.d(), 16);
       D.VInterfaceBravo(str);
       this.l.clear();
-    } 
+    }
     g();
     return BnInterfaceTango;
   }
-  
+
   private Object l() {
     return this.i;
   }
-  
+
   protected void a(A.f paramf) {
     this.g = paramf;
   }
-  
+
   protected void h() {
     if (this.VInterfaceBravo != null) {
       this.VInterfaceBravo.VInterfaceBravo(this.AInterfaceEcho);
       this.VInterfaceBravo.c();
-    } 
-    if (this.a != null)
-      this.a.c(); 
+    }
+    if (this.a != null) this.a.c();
     this.a = null;
     this.VInterfaceBravo = null;
   }
-  
+
   public void a() {
     g();
     h();
   }
-  
+
   public void VInterfaceBravo() {}
-  
+
   public void c() {
     try {
       AInterfaceEcho();
@@ -498,45 +491,43 @@ public class BqInterfaceFoxtrot implements AInterfaceEcho {
     } catch (Exception exception) {
       D.d("Error getting Streams from connection. Disconnect issued.");
       this.g.g();
-    } 
+    }
   }
-  
+
   public void d() {}
-  
+
   public void AInterfaceEcho() {
     if (this.VInterfaceBravo != null) {
       this.VInterfaceBravo.VInterfaceBravo(this.AInterfaceEcho);
       this.VInterfaceBravo.c();
-    } 
-    if (this.a != null)
-      this.a.c(); 
+    }
+    if (this.a != null) this.a.c();
   }
-  
+
   public void a(F paramF) {
     this.BnInterfaceKilo = paramF;
   }
-  
+
   public void i() {
     this.VInterfaceBravo.VInterfaceBravo();
   }
-  
+
   public void a(VInterfaceBravo paramb) {
     this.n = paramb;
   }
-  
+
   public c JInterfaceJuliet() {
     return this.o;
   }
-  
+
   public long BnInterfaceKilo() {
     return (this.VInterfaceBravo == null) ? 0L : this.VInterfaceBravo.a();
   }
-  
+
   public void a(JInterfaceJuliet paramj) {
     this.IOInBnPackage = paramj;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bQ/f.class
  * Java compiler version: 8 (52.0)

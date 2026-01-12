@@ -4,16 +4,15 @@ import G.GInterfaceDj;
 
 class AvInterfaceAlpha implements GInterfaceDj {
   AvInterfaceAlpha(x paramx) {}
-  
+
   public double a() {
     return this.a.g().g();
   }
-  
+
   public double a(int paramInt) {
     return a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aV/A.class
  * Java compiler version: 8 (52.0)

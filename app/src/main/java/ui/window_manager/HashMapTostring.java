@@ -4,52 +4,57 @@ import java.util.HashMap;
 
 public class HashMapTostring {
   private String a;
-  
+
   private long b = 0L;
-  
+
   private double c = 0.0D;
-  
+
   private double d = 0.0D;
-  
+
   private boolean e = false;
-  
+
   private double f = 0.0D;
-  
+
   private boolean g = false;
-  
+
   private float h = 0.0F;
-  
+
   private boolean i = false;
-  
+
   private float j = 0.0F;
-  
+
   private boolean k = false;
-  
+
   private float l = 0.0F;
-  
+
   private int m = 0;
-  
+
   private double n = 0.0D;
-  
+
   private double o = 0.0D;
-  
+
   private double p = 0.0D;
-  
+
   private double q = 0.0D;
-  
+
   private float r = 0.0F;
-  
+
   private float s = 0.0F;
-  
+
   private float[] t = new float[2];
-  
+
   private HashMap u = null;
-  
+
   public HashMapTostring(String paramString) {
     this.a = paramString;
   }
-  
-  private static void a(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4, float[] paramArrayOffloat) {
+
+  private static void a(
+      double paramDouble1,
+      double paramDouble2,
+      double paramDouble3,
+      double paramDouble4,
+      float[] paramArrayOffloat) {
     byte b1 = 20;
     paramDouble1 *= 0.017453292519943295D;
     paramDouble3 *= 0.017453292519943295D;
@@ -96,26 +101,37 @@ public class HashMapTostring {
       double d30 = d29 / 1024.0D * (256.0D + d29 * (-128.0D + d29 * (74.0D - 47.0D * d29)));
       double d31 = d3 / 16.0D * d17 * (4.0D + d3 * (4.0D - 3.0D * d17));
       double d32 = d18 * d18;
-      d16 = d30 * d20 * (d18 + d30 / 4.0D * (d19 * (-1.0D + 2.0D * d32) - d30 / 6.0D * d18 * (-3.0D + 4.0D * d20 * d20) * (-3.0D + 4.0D * d32)));
-      d23 = d5 + (1.0D - d31) * d3 * d28 * (d15 + d31 * d20 * (d18 + d31 * d19 * (-1.0D + 2.0D * d18 * d18)));
+      d16 =
+          d30
+              * d20
+              * (d18
+                  + d30
+                      / 4.0D
+                      * (d19 * (-1.0D + 2.0D * d32)
+                          - d30 / 6.0D * d18 * (-3.0D + 4.0D * d20 * d20) * (-3.0D + 4.0D * d32)));
+      d23 =
+          d5
+              + (1.0D - d31)
+                  * d3
+                  * d28
+                  * (d15 + d31 * d20 * (d18 + d31 * d19 * (-1.0D + 2.0D * d18 * d18)));
       double d33 = (d23 - d24) / d23;
-      if (Math.abs(d33) < 1.0E-12D)
-        break; 
-    } 
-    float f1 = (float)(d2 * d6 * (d15 - d16));
+      if (Math.abs(d33) < 1.0E-12D) break;
+    }
+    float f1 = (float) (d2 * d6 * (d15 - d16));
     paramArrayOffloat[0] = f1;
     if (paramArrayOffloat.length > 1) {
-      float f2 = (float)Math.atan2(d10 * d22, d9 * d12 - d11 * d10 * d21);
-      f2 = (float)(f2 * 57.29577951308232D);
+      float f2 = (float) Math.atan2(d10 * d22, d9 * d12 - d11 * d10 * d21);
+      f2 = (float) (f2 * 57.29577951308232D);
       paramArrayOffloat[1] = f2;
       if (paramArrayOffloat.length > 2) {
-        float f3 = (float)Math.atan2(d9 * d22, -d11 * d10 + d9 * d12 * d21);
-        f3 = (float)(f3 * 57.29577951308232D);
+        float f3 = (float) Math.atan2(d9 * d22, -d11 * d10 + d9 * d12 * d21);
+        f3 = (float) (f3 * 57.29577951308232D);
         paramArrayOffloat[2] = f3;
-      } 
-    } 
+      }
+    }
   }
-  
+
   public float a(f paramf) {
     synchronized (this.t) {
       if (this.c != this.n || this.d != this.o || paramf.c != this.p || paramf.d != this.q) {
@@ -126,11 +142,11 @@ public class HashMapTostring {
         this.q = paramf.d;
         this.r = this.t[0];
         this.s = this.t[1];
-      } 
+      }
       return this.r;
-    } 
+    }
   }
-  
+
   public float b(f paramf) {
     synchronized (this.t) {
       if (this.c != this.n || this.d != this.o || paramf.c != this.p || paramf.d != this.q) {
@@ -141,88 +157,109 @@ public class HashMapTostring {
         this.q = paramf.d;
         this.r = this.t[0];
         this.s = this.t[1];
-      } 
+      }
       return this.s;
-    } 
+    }
   }
-  
+
   public long a() {
     return this.b;
   }
-  
+
   public void a(long paramLong) {
     this.b = paramLong;
   }
-  
+
   public double b() {
     return this.c;
   }
-  
+
   public void a(double paramDouble) {
     this.c = paramDouble;
   }
-  
+
   public double c() {
     return this.d;
   }
-  
+
   public void b(double paramDouble) {
     this.d = paramDouble;
   }
-  
+
   public double d() {
     return this.f;
   }
-  
+
   public void c(double paramDouble) {
     this.f = paramDouble;
     this.e = true;
   }
-  
+
   public float e() {
     return this.h;
   }
-  
+
   public void a(float paramFloat) {
     this.h = paramFloat;
     this.g = true;
   }
-  
+
   public float f() {
     return this.j;
   }
-  
+
   public void b(float paramFloat) {
-    while (paramFloat < 0.0F)
-      paramFloat += 360.0F; 
-    while (paramFloat >= 360.0F)
-      paramFloat -= 360.0F; 
+    while (paramFloat < 0.0F) paramFloat += 360.0F;
+    while (paramFloat >= 360.0F) paramFloat -= 360.0F;
     this.j = paramFloat;
     this.i = true;
   }
-  
+
   public float g() {
     return this.l;
   }
-  
+
   public void c(float paramFloat) {
     this.l = paramFloat;
     this.k = true;
   }
-  
+
   public String toString() {
-    return "Location[mProvider=" + this.a + ",mTime=" + this.b + ",mLatitude=" + this.c + ",mLongitude=" + this.d + ",mHasAltitude=" + this.e + ",mAltitude=" + this.f + ",mHasSpeed=" + this.g + ",mSpeed=" + this.h + ",mHasBearing=" + this.i + ",mBearing=" + this.j + ",mHasAccuracy=" + this.k + ",mAccuracy=" + this.l + "]";
+    return "Location[mProvider="
+        + this.a
+        + ",mTime="
+        + this.b
+        + ",mLatitude="
+        + this.c
+        + ",mLongitude="
+        + this.d
+        + ",mHasAltitude="
+        + this.e
+        + ",mAltitude="
+        + this.f
+        + ",mHasSpeed="
+        + this.g
+        + ",mSpeed="
+        + this.h
+        + ",mHasBearing="
+        + this.i
+        + ",mBearing="
+        + this.j
+        + ",mHasAccuracy="
+        + this.k
+        + ",mAccuracy="
+        + this.l
+        + "]";
   }
-  
+
   public HashMap h() {
     return this.u;
   }
-  
+
   public void a(HashMap paramHashMap) {
     this.u = paramHashMap;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aK/f.class
  * Java compiler version: 8 (52.0)

@@ -7,13 +7,13 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceFw implements ActionListener {
   ApInterfaceFw(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bP, jCheckBoxMenuItem.getState() + "");
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.bP, jCheckBoxMenuItem.getState() + "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fW.class
  * Java compiler version: 8 (52.0)

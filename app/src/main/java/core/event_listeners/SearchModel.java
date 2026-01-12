@@ -6,13 +6,12 @@ import java.awt.event.ActionListener;
 
 class cJ implements ActionListener {
   cJ(cd paramcd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     IOProperties.c("lastUpdateCheckDate", "0");
     (new en(this.a, true, bq.a().b())).start();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cJ.class
  * Java compiler version: 8 (52.0)

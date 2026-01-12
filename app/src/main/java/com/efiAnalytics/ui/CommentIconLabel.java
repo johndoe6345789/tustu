@@ -14,15 +14,15 @@ import javax.swing.JLabel;
 
 public class CommentIconLabel extends JLabel {
   ImageIcon a = null;
-  
+
   String b = null;
-  
+
   private ab c = null;
-  
+
   public CommentIconLabel(String paramString) {
-    this(paramString, (ab)null);
+    this(paramString, (ab) null);
   }
-  
+
   public CommentIconLabel(String paramString, ab paramab) {
     this.b = paramString;
     this.c = paramab;
@@ -34,18 +34,16 @@ public class CommentIconLabel extends JLabel {
       addMouseListener(new cJ(this));
     } catch (Exception exception) {
       D.a("Could no load icon image resources/comment3.png");
-    } 
+    }
     setIcon(this.a);
     b();
     setOpaque(false);
   }
-  
+
   public void a() {
-    if (this.b == null)
-      this.b = ""; 
+    if (this.b == null) this.b = "";
     String str = this.b;
-    if (str == null || str.equals(""))
-      return; 
+    if (str == null || str.equals("")) return;
     str = a(str);
     Window window = bV.b(this);
     bi bi = new bi(window, str, true);
@@ -54,12 +52,13 @@ public class CommentIconLabel extends JLabel {
     point.y += getHeight() / 2;
     point.x -= eJ.a(10);
     Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-    if (point.x + bi.getWidth() > dimension.width);
+    if (point.x + bi.getWidth() > dimension.width)
+      ;
     bi.setLocation(point);
-    setToolTipText((String)null);
+    setToolTipText((String) null);
     bi.setVisible(true);
   }
-  
+
   private void b() {
     if (this.b != null && this.b.length() > 0) {
       String str = this.b;
@@ -71,16 +70,15 @@ public class CommentIconLabel extends JLabel {
       stringBuilder.append("</html>");
       setToolTipText(stringBuilder.toString());
     } else {
-      setToolTipText((String)null);
-      setIcon((Icon)null);
-    } 
+      setToolTipText((String) null);
+      setIcon((Icon) null);
+    }
   }
-  
+
   private String a(String paramString) {
     return (this.c != null) ? this.c.a(paramString) : paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cI.class
  * Java compiler version: 8 (52.0)

@@ -3,8 +3,8 @@ package business.byte_writers;
 import ax.ArrayListUsingPattern;
 import ax.ExceptionInAxPackage;
 import bH.ac;
-import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.NumericTextField;
+import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -25,30 +25,30 @@ import javax.swing.JScrollPane;
 
 public class UIInBwPackage extends JPanel {
   final DefaultListModel a = new DefaultListModel();
-  
+
   JList b = new JList(this.a);
-  
+
   NumericTextField c = new NumericTextField();
-  
+
   NumericTextField d = new NumericTextField();
-  
+
   JLabel e = new JLabel("", 0);
-  
+
   JLabel f = new JLabel("", 0);
-  
+
   List g = new ArrayList();
-  
+
   i h = null;
-  
+
   HashMap i = new HashMap<>();
-  
+
   j j = new j(this);
-  
+
   public UIInBwPackage(Window paramWindow) {
     a();
     c();
   }
-  
+
   private void a() {
     setBorder(BorderFactory.createTitledBorder(ac.a().a("Conversion Calculator")));
     setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
@@ -61,9 +61,9 @@ public class UIInBwPackage extends JPanel {
     jPanel2.add(this.e);
     jPanel2.add(new JLabel(""));
     jPanel2.add(this.f);
-    jPanel2.add((Component)this.c);
+    jPanel2.add((Component) this.c);
     jPanel2.add(new JLabel("-->>", 0));
-    jPanel2.add((Component)this.d);
+    jPanel2.add((Component) this.d);
     jPanel1.add(jPanel2);
     add("Center", jPanel1);
     this.d.setEditable(false);
@@ -72,42 +72,42 @@ public class UIInBwPackage extends JPanel {
     this.b.addListSelectionListener(new h(this));
     setPreferredSize(eJ.a(480, 240));
   }
-  
+
   private i a(Object paramObject) {
-    if (paramObject == null)
-      return null; 
+    if (paramObject == null) return null;
     for (i i1 : this.g) {
-      if (i1.a.equals(paramObject))
-        return i1; 
-    } 
+      if (i1.a.equals(paramObject)) return i1;
+    }
     return null;
   }
-  
+
   private void b() {
     if (this.h != null) {
       String str = this.h.d;
-      ArrayListUsingPattern q = (ArrayListUsingPattern)this.i.get(str);
+      ArrayListUsingPattern q = (ArrayListUsingPattern) this.i.get(str);
       if (q == null) {
         q = new ArrayListUsingPattern();
         try {
           q.a(str);
           this.i.put(str, q);
         } catch (ExceptionInAxPackage u) {
-          Logger.getLogger(f.class.getName()).log(Level.WARNING, "Unable to parser expression", (Throwable)u);
+          Logger.getLogger(f.class.getName())
+              .log(Level.WARNING, "Unable to parser expression", (Throwable) u);
           bV.d(a("Unable to parse expression") + ": " + str, this);
-        } 
-      } 
+        }
+      }
       try {
         q.a("inputVar", this.c.e());
         double d = q.d();
         this.d.a(d);
       } catch (ExceptionInAxPackage u) {
-        Logger.getLogger(f.class.getName()).log(Level.WARNING, "Unable to evaluate expression", (Throwable)u);
+        Logger.getLogger(f.class.getName())
+            .log(Level.WARNING, "Unable to evaluate expression", (Throwable) u);
         bV.d(a("Unable to evaluate expression") + ": " + str, this);
-      } 
-    } 
+      }
+    }
   }
-  
+
   private void c() {
     this.g.add(new i(this, "Degrees F to Degrees C", "°F", "°C", "(inputVar - 32) * 5 / 9", 1));
     this.g.add(new i(this, "Degrees C to Degrees F", "°C", "°F", "(inputVar * 9 / 5) + 32", 1));
@@ -128,15 +128,13 @@ public class UIInBwPackage extends JPanel {
     this.g.add(new i(this, "cc/min to lb/hr", "cc/min", "lb/hr", "inputVar / 10.5", 1));
     this.g.add(new i(this, "1/4 mile ET to 1/8 mile ET", "s.", "s.", "inputVar / 1.55", 2));
     this.g.add(new i(this, "1/8 mile ET to 1/4 mile ET", "s.", "s.", "inputVar * 1.55", 2));
-    for (i i1 : this.g)
-      this.a.addElement(i1.a); 
+    for (i i1 : this.g) this.a.addElement(i1.a);
   }
-  
+
   private String a(String paramString) {
     return ac.a().a(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bw/f.class
  * Java compiler version: 8 (52.0)

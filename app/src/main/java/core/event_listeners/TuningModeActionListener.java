@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ek implements ActionListener {
   ek(ej paramej) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.b(paramActionEvent.getActionCommand(), false);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ek.class
  * Java compiler version: 8 (52.0)

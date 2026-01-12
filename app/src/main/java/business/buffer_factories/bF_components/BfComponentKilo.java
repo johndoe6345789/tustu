@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class BfComponentKilo implements ActionListener {
   BfComponentKilo(d paramd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a.o();
     this.a.a.repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/k.class
  * Java compiler version: 8 (52.0)

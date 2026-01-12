@@ -2,12 +2,12 @@ package business.byte_readers;
 
 class ThreadExtensionInBrPackage extends Thread {
   boolean a = true;
-  
+
   public ThreadExtensionInBrPackage(aa paramaa) {
     super("Flasher");
     setDaemon(true);
   }
-  
+
   public void run() {
     while (this.a) {
       this.b.a = !this.b.a;
@@ -15,17 +15,17 @@ class ThreadExtensionInBrPackage extends Thread {
       this.b.repaint();
       try {
         Thread.sleep(1000L);
-      } catch (InterruptedException interruptedException) {}
-    } 
+      } catch (InterruptedException interruptedException) {
+      }
+    }
     this.b.a = false;
     this.b.repaint();
   }
-  
+
   public void a() {
     this.a = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/ab.class
  * Java compiler version: 8 (52.0)

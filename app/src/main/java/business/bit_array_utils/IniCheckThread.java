@@ -7,7 +7,7 @@ class Q extends Thread {
   Q(P paramP) {
     super("INI Check");
   }
-  
+
   public void run() {
     boolean bool = false;
     while (!bool) {
@@ -15,12 +15,11 @@ class Q extends Thread {
       try {
         Thread.sleep(60000L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(P.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(P.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/Q.class
  * Java compiler version: 8 (52.0)

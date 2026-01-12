@@ -6,12 +6,10 @@ public class AInterfacePapa {
       boolean bool = paramh.r();
       paramh.c();
       paramh.a(paramf);
-      if (bool)
-        paramh.d(); 
-    } 
+      if (bool) paramh.d();
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/A/p.class
  * Java compiler version: 8 (52.0)

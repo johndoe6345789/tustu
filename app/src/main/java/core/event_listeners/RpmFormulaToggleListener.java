@@ -6,12 +6,11 @@ import javax.swing.JCheckBoxMenuItem;
 
 class dK implements ItemListener {
   dK(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    this.a.a("RPM_USE_FORMULA", ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState());
+    this.a.a("RPM_USE_FORMULA", ((JCheckBoxMenuItem) paramItemEvent.getSource()).getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/dK.class
  * Java compiler version: 8 (52.0)

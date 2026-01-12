@@ -6,12 +6,14 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceHa implements ActionListener {
   ApInterfaceHa(hz paramhz) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bT, Boolean.toString(this.IOPropertiesUsingFile.IOPropertiesUsingFile.isSelected()));
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(
+            IOPropertiesUsingFile.bT,
+            Boolean.toString(this.IOPropertiesUsingFile.IOPropertiesUsingFile.isSelected()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hA.class
  * Java compiler version: 8 (52.0)

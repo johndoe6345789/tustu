@@ -10,7 +10,6 @@ class ee extends JMenu implements bq {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ee.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class ActionperformedInArPackage implements ActionListener {
   ActionperformedInArPackage(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();
     g.a(this.a, str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ar/i.class
  * Java compiler version: 8 (52.0)

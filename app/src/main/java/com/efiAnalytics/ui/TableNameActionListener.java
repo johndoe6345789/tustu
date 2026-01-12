@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class TableNameActionListener implements ActionListener {
   TableNameActionListener(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = (this.a.getName() != null) ? this.a.getName() : "";
     this.a.a.b(str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/R.class
  * Java compiler version: 8 (52.0)

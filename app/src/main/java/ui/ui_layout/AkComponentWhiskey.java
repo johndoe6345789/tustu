@@ -23,33 +23,33 @@ import javax.xml.bind.Unmarshaller;
 
 public class AkComponentWhiskey extends V {
   byte[] ExceptionInVPackage = null;
-  
+
   String b;
-  
+
   StringBuilder e = new StringBuilder();
-  
+
   float[] f = null;
-  
+
   int g = 0;
-  
+
   int h;
-  
+
   int i;
-  
+
   float j = 0.0F;
-  
+
   float k;
-  
+
   HashMap l = new HashMap<>();
-  
+
   List m = new ArrayList();
-  
+
   List n = new ArrayList();
-  
+
   public String i() {
     return X.Q;
   }
-  
+
   public boolean ExceptionInVPackage(String paramString) {
     this.b = paramString;
     GZIPInputStream gZIPInputStream = null;
@@ -59,13 +59,19 @@ public class AkComponentWhiskey extends V {
       byte[] arrayOfByte = new byte[1024];
       int i;
       while ((i = gZIPInputStream.read(arrayOfByte)) != -1)
-        byteArrayOutputStream.write(arrayOfByte, 0, i); 
+        byteArrayOutputStream.write(arrayOfByte, 0, i);
       byteArrayOutputStream.flush();
       this.ExceptionInVPackage = byteArrayOutputStream.toByteArray();
       int j = c.ExceptionInVPackage(this.ExceptionInVPackage, 0, 4, false, false);
       int k = c.ExceptionInVPackage(this.ExceptionInVPackage, 4, 4, false, false);
       this.h = c.ExceptionInVPackage(this.ExceptionInVPackage, 8, 4, false, false);
-      this.e.append("FileName: ").append(paramString).append("\nVersion: ").append(k).append("\nNumRecords: ").append(this.h);
+      this.e
+          .append("FileName: ")
+          .append(paramString)
+          .append("\nVersion: ")
+          .append(k)
+          .append("\nNumRecords: ")
+          .append(this.h);
       String str = null;
       switch (j) {
         case 541089920:
@@ -80,9 +86,10 @@ public class AkComponentWhiskey extends V {
           break;
         default:
           throw new ExceptionInVPackage("Invalid file header");
-      } 
+      }
       if (this.ExceptionInVPackage.length < 12 + this.h * this.i)
-        throw new ExceptionInVPackage("Failed to open " + paramString + " - Log file is incomplete"); 
+        throw new ExceptionInVPackage(
+            "Failed to open " + paramString + " - Log file is incomplete");
       b(str);
       return true;
     } catch (IOException iOException) {
@@ -92,19 +99,19 @@ public class AkComponentWhiskey extends V {
         try {
           gZIPInputStream.close();
         } catch (IOException iOException) {
-          Logger.getLogger(w.class.getName()).log(Level.SEVERE, (String)null, iOException);
-        }  
-    } 
+          Logger.getLogger(w.class.getName()).log(Level.SEVERE, (String) null, iOException);
+        }
+    }
   }
-  
+
   private void b(String paramString) {
     this.m.add(new A(this));
     File file = new File(paramString);
     if (file.isFile() && file.exists())
       try {
-        JAXBContext jAXBContext = JAXBContext.newInstance(new Class[] { z.class });
+        JAXBContext jAXBContext = JAXBContext.newInstance(new Class[] {z.class});
         Unmarshaller unmarshaller = jAXBContext.createUnmarshaller();
-        z z = (z)unmarshaller.unmarshal(file);
+        z z = (z) unmarshaller.unmarshal(file);
         int i = 0;
         this.e.append("\nLogging fields: ");
         for (D d : z.ExceptionInVPackage.ExceptionInVPackage.ExceptionInVPackage) {
@@ -121,69 +128,72 @@ public class AkComponentWhiskey extends V {
                     while (b < j) {
                       arrayList.add("UNDEFINED");
                       b++;
-                    } 
+                    }
                     arrayList.add(b1.ExceptionInVPackage);
                     b++;
-                  } 
+                  }
                   break;
-                } 
-              } 
+                }
+              }
               d1.b(255);
-              d1.ExceptionInVPackage((k)new l(arrayList));
-            } 
+              d1.ExceptionInVPackage((k) new l(arrayList));
+            }
             this.m.add(d1);
             this.n.add(new x(d, i));
             this.e.append("\n").append(d.ExceptionInVPackage).append("[").append(d.c).append("]");
-          } 
+          }
           i += d.d.endsWith("byte") ? 1 : 2;
-        } 
+        }
       } catch (JAXBException jAXBException) {
-        Logger.getLogger(w.class.getName()).log(Level.SEVERE, (String)null, (Throwable)jAXBException);
-      }  
+        Logger.getLogger(w.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) jAXBException);
+      }
     this.f = new float[this.n.size() + 1];
   }
-  
+
   public void ExceptionInVPackage() {
     this.ExceptionInVPackage = null;
   }
-  
+
   public Iterator b() {
     return this.m.iterator();
   }
-  
+
   public float[] c() {
     this.f[0] = this.j;
     byte b = 1;
     for (x x : this.n) {
-      this.f[b] = x.d * c.ExceptionInVPackage(this.ExceptionInVPackage, 12 + this.g * this.i + x.b, x.c, false, false);
+      this.f[b] =
+          x.d
+              * c.ExceptionInVPackage(
+                  this.ExceptionInVPackage, 12 + this.g * this.i + x.b, x.c, false, false);
       b++;
-    } 
+    }
     this.j += this.k;
     this.g++;
     return this.f;
   }
-  
+
   public long d() {
     return this.h;
   }
-  
+
   public boolean e() {
     return (this.g < this.h);
   }
-  
+
   public boolean f() {
     return false;
   }
-  
+
   public HashMap g() {
     return this.l;
   }
-  
+
   public String h() {
     return this.e.toString();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/w.class
  * Java compiler version: 8 (52.0)

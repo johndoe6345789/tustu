@@ -6,16 +6,20 @@ import r.IOPropertiesUsingFile;
 
 class FileFilterImpl implements FileFilter {
   String IOPropertiesUsingFile = "";
-  
+
   FileFilterImpl(String paramString) {
     this.IOPropertiesUsingFile = paramString;
   }
-  
+
   public boolean accept(File paramFile) {
-    return (paramFile.isFile() && paramFile.getName().startsWith(this.IOPropertiesUsingFile) && paramFile.getName().toLowerCase().endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()));
+    return (paramFile.isFile()
+        && paramFile.getName().startsWith(this.IOPropertiesUsingFile)
+        && paramFile
+            .getName()
+            .toLowerCase()
+            .endsWith("." + IOPropertiesUsingFile.cw.toLowerCase()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iq.class
  * Java compiler version: 8 (52.0)

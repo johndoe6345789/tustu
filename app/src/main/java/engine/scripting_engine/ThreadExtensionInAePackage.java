@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 class ThreadExtensionInAePackage extends Thread {
   ThreadExtensionInAePackage(f paramf, w paramw) {}
-  
+
   public void run() {
     List<d> list = null;
     try {
@@ -21,7 +21,7 @@ class ThreadExtensionInAePackage extends Thread {
       list = new ArrayList<>();
       list.add(d);
     } catch (Exception exception) {
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, exception);
     } finally {
       if (list == null) {
         d d = new d();
@@ -29,12 +29,11 @@ class ThreadExtensionInAePackage extends Thread {
         d.a("Unhandled Error occurred.");
         list = new ArrayList<>();
         list.add(d);
-      } 
+      }
       this.a.a(list);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ae/g.class
  * Java compiler version: 8 (52.0)

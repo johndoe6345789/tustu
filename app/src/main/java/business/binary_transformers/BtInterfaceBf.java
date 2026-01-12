@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BtInterfaceBf implements ActionListener {
   BtInterfaceBf(bB parambB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     bB.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bF.class
  * Java compiler version: 8 (52.0)

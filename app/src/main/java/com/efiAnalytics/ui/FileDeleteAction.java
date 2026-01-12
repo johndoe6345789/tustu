@@ -8,7 +8,7 @@ import javax.swing.JFileChooser;
 
 class FileDeleteAction extends AbstractAction {
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JFileChooser jFileChooser = (JFileChooser)paramActionEvent.getSource();
+    JFileChooser jFileChooser = (JFileChooser) paramActionEvent.getSource();
     try {
       File[] arrayOfFile;
       if (jFileChooser.isMultiSelectionEnabled()) {
@@ -18,18 +18,16 @@ class FileDeleteAction extends AbstractAction {
         arrayOfFile[0] = jFileChooser.getSelectedFile();
       } else {
         return;
-      } 
+      }
       if (arrayOfFile != null && bV.i() == 0) {
-        for (File file : arrayOfFile)
-          Files.delete(file.toPath()); 
+        for (File file : arrayOfFile) Files.delete(file.toPath());
         jFileChooser.rescanCurrentDirectory();
-      } 
+      }
     } catch (Exception exception) {
       System.out.println(exception);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bX.class
  * Java compiler version: 8 (52.0)

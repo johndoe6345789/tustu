@@ -7,7 +7,7 @@ import javax.swing.JCheckBoxMenuItem;
 
 final class V implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     if (jCheckBoxMenuItem.isSelected()) {
       S.a(jCheckBoxMenuItem.getName());
     } else {
@@ -18,11 +18,10 @@ final class V implements ActionListener {
         S.a(jCheckBoxMenuItem.getName(), str1, str2);
       } else {
         S.a(jCheckBoxMenuItem.getName(), "", "");
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/V.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class CommentBoxCloseListener implements ActionListener {
   CommentBoxCloseListener(bi parambi) {}
-  
+
   public void CommentBoxCloseListener(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bl.class
  * Java compiler version: 8 (52.0)

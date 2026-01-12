@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TabbedSettingsCancelAction implements ActionListener {
   TabbedSettingsCancelAction(TabbedSettingsPanel paramds) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     ds.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/du.class
  * Java compiler version: 8 (52.0)

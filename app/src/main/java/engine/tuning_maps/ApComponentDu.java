@@ -4,7 +4,7 @@ import bH.D;
 
 class ApComponentDu extends Thread {
   du(dl paramdl) {}
-  
+
   public void run() {
     try {
       Thread.sleep(120000L);
@@ -12,10 +12,10 @@ class ApComponentDu extends Thread {
       D.g();
       D.c("Application close timeout. All threads stacks printed. Exiting.");
       Runtime.getRuntime().halt(3);
-    } catch (InterruptedException interruptedException) {}
+    } catch (InterruptedException interruptedException) {
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/du.class
  * Java compiler version: 8 (52.0)

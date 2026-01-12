@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BgInterfaceZulu implements ActionListener {
   BgInterfaceZulu(q paramq) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/z.class
  * Java compiler version: 8 (52.0)

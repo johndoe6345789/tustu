@@ -18,39 +18,40 @@ import s.SComponentGolf;
 
 public class TInterfaceAf extends a implements f {
   String a = "Gauge Angles";
-  
+
   JSlider b;
-  
+
   JSlider c;
-  
+
   JSlider d;
-  
+
   JSlider e;
-  
+
   JPanel SComponentGolf = new JPanel();
-  
+
   JLabel h;
-  
+
   JLabel i;
-  
+
   JLabel j;
-  
+
   JLabel k;
-  
+
   public static String l = SComponentGolf.b("Face Angle / Fill");
-  
+
   public static String m = SComponentGolf.b("Face Start Angle / Height");
-  
+
   public static String n = SComponentGolf.b("Sweep Angle");
-  
+
   public static String o = SComponentGolf.b("Needle Start Angle");
-  
+
   private boolean p = false;
-  
+
   public TInterfaceAf(Window paramWindow, ai paramai) {
     super(paramWindow, SComponentGolf.b("Gauge Angles"));
     a(paramai);
-    this.SComponentGolf.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), this.a));
+    this.SComponentGolf.setBorder(
+        BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), this.a));
     this.SComponentGolf.setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new GridLayout(0, 1));
@@ -89,13 +90,13 @@ public class TInterfaceAf extends a implements f {
     add(this.SComponentGolf, "Center");
     pack();
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.p = true;
     e(paramArrayList);
     this.p = false;
   }
-  
+
   public void e(ArrayList paramArrayList) {
     Gauge gauge = b(paramArrayList);
     if (gauge != null) {
@@ -114,34 +115,35 @@ public class TInterfaceAf extends a implements f {
       this.j.setForeground(color);
       this.k.setForeground(color);
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getFaceAngle() != gauge.getFaceAngle()) {
+        if (s instanceof Gauge && ((Gauge) s).getFaceAngle() != gauge.getFaceAngle()) {
           this.h.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getStartAngle() != gauge.getStartAngle()) {
+        if (s instanceof Gauge && ((Gauge) s).getStartAngle() != gauge.getStartAngle()) {
           this.i.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getSweepBeginDegree() != gauge.getSweepBeginDegree()) {
+        if (s instanceof Gauge
+            && ((Gauge) s).getSweepBeginDegree() != gauge.getSweepBeginDegree()) {
           this.j.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getSweepAngle() != gauge.getSweepAngle()) {
+        if (s instanceof Gauge && ((Gauge) s).getSweepAngle() != gauge.getSweepAngle()) {
           this.k.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
     } else {
       fp.a(a(), false);
-    } 
+    }
   }
-  
+
   private JSlider a(int paramInt1, int paramInt2, int paramInt3, String paramString) {
     JSlider jSlider = new JSlider();
     jSlider.setMajorTickSpacing(10 / (paramInt3 - paramInt2));
@@ -149,15 +151,15 @@ public class TInterfaceAf extends a implements f {
     jSlider.setMaximum(paramInt3);
     jSlider.setValue(paramInt1);
     jSlider.setPaintTrack(true);
-    jSlider.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
+    jSlider.setBorder(
+        BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
     return jSlider;
   }
-  
+
   public JPanel a() {
     return this.SComponentGolf;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aF.class
  * Java compiler version: 8 (52.0)

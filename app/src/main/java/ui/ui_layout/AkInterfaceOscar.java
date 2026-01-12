@@ -10,11 +10,11 @@ public class AkInterfaceOscar extends g {
   public AkInterfaceOscar() {
     super(",", false);
   }
-  
+
   public String i() {
     return X.y;
   }
-  
+
   protected int b(String paramString) {
     byte b = 0;
     BufferedReader bufferedReader = null;
@@ -23,12 +23,11 @@ public class AkInterfaceOscar extends g {
       FileInputStream fileInputStream = new FileInputStream(this.h);
       bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
       String str = bufferedReader.readLine();
-      if (str == null)
-        return b - 1; 
+      if (str == null) return b - 1;
       while (b < 'Ϩ' && !str.startsWith("[Channel Information]")) {
         b++;
         str = bufferedReader.readLine();
-      } 
+      }
       return b + 2;
     } catch (Exception exception) {
       return 0;
@@ -37,11 +36,10 @@ public class AkInterfaceOscar extends g {
         bufferedReader.close();
       } catch (Exception exception) {
         exception.printStackTrace();
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/O.class
  * Java compiler version: 8 (52.0)

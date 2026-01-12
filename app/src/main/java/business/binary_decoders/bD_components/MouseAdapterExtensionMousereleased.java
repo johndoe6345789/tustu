@@ -5,22 +5,20 @@ import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionMousereleased extends MouseAdapter {
   MouseAdapterExtensionMousereleased(r paramr) {}
-  
+
   public void mouseReleased(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.isPopupTrigger())
-      r.a(this.a, paramMouseEvent.getX(), paramMouseEvent.getY()); 
+      r.a(this.a, paramMouseEvent.getX(), paramMouseEvent.getY());
   }
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
     if (paramMouseEvent.isPopupTrigger()) {
       r.a(this.a, paramMouseEvent.getX(), paramMouseEvent.getY());
       return;
-    } 
-    if (paramMouseEvent.getButton() == 1 && paramMouseEvent.getClickCount() == 2)
-      r.a(this.a); 
+    }
+    if (paramMouseEvent.getButton() == 1 && paramMouseEvent.getClickCount() == 2) r.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/E.class
  * Java compiler version: 8 (52.0)

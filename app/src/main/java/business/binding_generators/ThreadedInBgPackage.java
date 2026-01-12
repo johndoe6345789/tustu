@@ -2,12 +2,11 @@ package business.binding_generators;
 
 class ThreadedInBgPackage implements Runnable {
   ThreadedInBgPackage(l paraml) {}
-  
+
   public void run() {
     l.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/m.class
  * Java compiler version: 8 (52.0)

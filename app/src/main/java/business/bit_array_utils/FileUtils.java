@@ -17,8 +17,7 @@ import java.util.logging.Logger;
 
 public class t {
   public static boolean a(String paramString) {
-    if (paramString == null || paramString.isEmpty())
-      return false; 
+    if (paramString == null || paramString.isEmpty()) return false;
     try {
       File file = new File(System.getProperty("user.home") + File.separator + paramString);
       file.createNewFile();
@@ -26,16 +25,15 @@ public class t {
       return true;
     } catch (Exception exception) {
       return false;
-    } 
+    }
   }
-  
+
   public static void a(String paramString1, String paramString2) {
     File file1 = new File(paramString1);
     File file2 = new File(paramString2);
-    if (!file1.equals(file2))
-      a(file1, file2); 
+    if (!file1.equals(file2)) a(file1, file2);
   }
-  
+
   public static boolean a(String paramString, long paramLong) {
     long l = System.currentTimeMillis();
     File file = new File(paramString, "test123abc~~");
@@ -43,8 +41,7 @@ public class t {
     try {
       fileOutputStream = new FileOutputStream(file);
       byte b;
-      for (b = 0; b < paramLong; b++)
-        fileOutputStream.write(b % 255); 
+      for (b = 0; b < paramLong; b++) fileOutputStream.write(b % 255);
       b = 1;
       return b;
     } catch (FileNotFoundException fileNotFoundException) {
@@ -55,20 +52,22 @@ public class t {
       if (fileOutputStream != null)
         try {
           fileOutputStream.close();
-        } catch (IOException iOException) {} 
+        } catch (IOException iOException) {
+        }
       file.delete();
-    } 
+    }
   }
-  
+
   public static void a(File paramFile1, File paramFile2) {
     a(paramFile1, paramFile2, true);
   }
-  
+
   public static void a(File paramFile1, File paramFile2, boolean paramBoolean) {
     a(paramFile1, paramFile2, null, paramBoolean);
   }
-  
-  public static void a(File paramFile1, File paramFile2, FileFilter paramFileFilter, boolean paramBoolean) {
+
+  public static void a(
+      File paramFile1, File paramFile2, FileFilter paramFileFilter, boolean paramBoolean) {
     // Byte code:
     //   0: aload_0
     //   1: invokevirtual isDirectory : ()Z
@@ -200,7 +199,8 @@ public class t {
     //   277: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   280: aconst_null
     //   281: aload #6
-    //   283: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   283: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   286: aload #5
     //   288: ifnull -> 462
     //   291: aload #5
@@ -215,7 +215,8 @@ public class t {
     //   314: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   317: aconst_null
     //   318: aload #6
-    //   320: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   320: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   323: goto -> 462
     //   326: astore #6
     //   328: aload #6
@@ -256,7 +257,8 @@ public class t {
     //   413: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   416: aconst_null
     //   417: aload #10
-    //   419: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   419: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   422: aload #5
     //   424: ifnull -> 459
     //   427: aload #5
@@ -271,7 +273,8 @@ public class t {
     //   450: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   453: aconst_null
     //   454: aload #10
-    //   456: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   456: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   459: aload #9
     //   461: athrow
     //   462: return
@@ -286,7 +289,7 @@ public class t {
     //   395	400	403	java/io/IOException
     //   427	437	440	java/io/IOException
   }
-  
+
   public static void b(File paramFile1, File paramFile2) {
     // Byte code:
     //   0: aload_0
@@ -460,7 +463,8 @@ public class t {
     //   361: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   364: aconst_null
     //   365: aload #6
-    //   367: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   367: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   370: aload #5
     //   372: ifnull -> 536
     //   375: aload #5
@@ -473,7 +477,8 @@ public class t {
     //   393: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   396: aconst_null
     //   397: aload #6
-    //   399: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   399: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   402: goto -> 536
     //   405: astore #6
     //   407: aload #6
@@ -514,7 +519,8 @@ public class t {
     //   492: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   495: aconst_null
     //   496: aload #15
-    //   498: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   498: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   501: aload #5
     //   503: ifnull -> 533
     //   506: aload #5
@@ -527,7 +533,8 @@ public class t {
     //   524: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   527: aconst_null
     //   528: aload #15
-    //   530: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   530: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   533: aload #14
     //   535: athrow
     //   536: return
@@ -546,34 +553,32 @@ public class t {
     //   474	479	482	java/io/IOException
     //   506	511	514	java/io/IOException
   }
-  
+
   public static boolean a(File paramFile) {
     File[] arrayOfFile = File.listRoots();
     for (byte b = 0; b < arrayOfFile.length; b++) {
-      if (paramFile.equals(arrayOfFile[b]))
-        return true; 
-    } 
+      if (paramFile.equals(arrayOfFile[b])) return true;
+    }
     return false;
   }
-  
+
   public static String b(String paramString) {
     if (paramString != null && paramString.indexOf(File.separatorChar) != -1)
-      paramString = paramString.substring(paramString.lastIndexOf(File.separatorChar) + 1); 
+      paramString = paramString.substring(paramString.lastIndexOf(File.separatorChar) + 1);
     return paramString;
   }
-  
+
   public static void b(File paramFile) {
     if (paramFile.isDirectory()) {
       File[] arrayOfFile = paramFile.listFiles();
-      for (byte b = 0; b < arrayOfFile.length; b++)
-        b(arrayOfFile[b]); 
+      for (byte b = 0; b < arrayOfFile.length; b++) b(arrayOfFile[b]);
       D.c("Delete Results " + paramFile.getName() + " " + paramFile.delete());
     } else if (paramFile.isFile()) {
       D.c("Delete Results " + paramFile.getName() + " " + paramFile.delete());
       return;
-    } 
+    }
   }
-  
+
   public static String a(byte[] paramArrayOfbyte) {
     MessageDigest messageDigest;
     try {
@@ -582,27 +587,27 @@ public class t {
     } catch (NoSuchAlgorithmException noSuchAlgorithmException) {
       noSuchAlgorithmException.printStackTrace();
       return null;
-    } 
+    }
     byte[] arrayOfByte = messageDigest.digest(paramArrayOfbyte);
     StringBuilder stringBuilder = new StringBuilder();
     for (byte b = 0; b < arrayOfByte.length; b++)
-      stringBuilder.append(Integer.toString((arrayOfByte[b] & 0xFF) + 256, 16).substring(1)); 
+      stringBuilder.append(Integer.toString((arrayOfByte[b] & 0xFF) + 256, 16).substring(1));
     return stringBuilder.toString();
   }
-  
+
   public static String c(File paramFile) {
     byte[] arrayOfByte = d(paramFile);
     StringBuilder stringBuilder = new StringBuilder();
     for (byte b = 0; b < arrayOfByte.length; b++)
-      stringBuilder.append(Integer.toString((arrayOfByte[b] & 0xFF) + 256, 16).substring(1)); 
+      stringBuilder.append(Integer.toString((arrayOfByte[b] & 0xFF) + 256, 16).substring(1));
     return stringBuilder.toString();
   }
-  
+
   public static byte[] d(File paramFile) {
     FileInputStream fileInputStream = new FileInputStream(paramFile);
     return a(fileInputStream);
   }
-  
+
   public static byte[] a(InputStream paramInputStream) {
     // Byte code:
     //   0: ldc 'MD5'
@@ -654,30 +659,31 @@ public class t {
     //   57	59	57	finally
     //   59	63	66	java/io/IOException
   }
-  
+
   public static boolean a(URL paramURL) {
     if (paramURL != null && paramURL.getProtocol().equals("file")) {
       File file = b(paramURL);
       return (file != null && file.exists());
-    } 
+    }
     return true;
   }
-  
+
   public static File b(URL paramURL) {
     if (paramURL != null && paramURL.getProtocol().equals("file")) {
       String str = "";
       if (paramURL.getHost() != null && paramURL.getHost().length() > 0)
-        str = str + paramURL.getHost() + ":"; 
+        str = str + paramURL.getHost() + ":";
       try {
         str = str + URLDecoder.decode(paramURL.getFile(), "UTF-8");
       } catch (UnsupportedEncodingException unsupportedEncodingException) {
-        Logger.getLogger(t.class.getName()).log(Level.SEVERE, (String)null, unsupportedEncodingException);
-      } 
+        Logger.getLogger(t.class.getName())
+            .log(Level.SEVERE, (String) null, unsupportedEncodingException);
+      }
       return new File(str);
-    } 
+    }
     return null;
   }
-  
+
   public static boolean a(File paramFile, byte[] paramArrayOfbyte) {
     FileInputStream fileInputStream = new FileInputStream(paramFile);
     try {
@@ -685,9 +691,8 @@ public class t {
       fileInputStream.read(arrayOfByte);
       byte b;
       for (b = 0; b < arrayOfByte.length; b++) {
-        if (arrayOfByte[b] != paramArrayOfbyte[b])
-          return false; 
-      } 
+        if (arrayOfByte[b] != paramArrayOfbyte[b]) return false;
+      }
       b = 1;
       return b;
     } catch (IOException iOException) {
@@ -696,11 +701,11 @@ public class t {
     } finally {
       try {
         fileInputStream.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/t.class
  * Java compiler version: 8 (52.0)

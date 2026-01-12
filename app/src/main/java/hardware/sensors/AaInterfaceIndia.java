@@ -4,16 +4,14 @@ import ay.AyComponentHotel;
 
 class AaInterfaceIndia implements AyComponentHotel {
   AaInterfaceIndia(AyComponentHotel paramh) {}
-  
+
   public void a(boolean paramBoolean) {
     if (paramBoolean) {
       this.a.b();
-      if ((AyComponentHotel.a(this.a)).length == 0)
-        this.a.c.d(); 
-    } 
+      if ((AyComponentHotel.a(this.a)).length == 0) this.a.c.d();
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aA/i.class
  * Java compiler version: 8 (52.0)

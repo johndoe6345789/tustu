@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewAntialiasingListener implements ActionListener {
   ThreeDViewAntialiasingListener(bt parambt) {}
-  
+
   public void ThreeDViewAntialiasingListener(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     this.a.e(jCheckBoxMenuItem.getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bw.class
  * Java compiler version: 8 (52.0)

@@ -25,15 +25,17 @@ public class ThrottleCalibrationGenerator {
       int j = -1;
       j = Math.round(100.0F * (i - paramInt1) / (paramInt2 - paramInt1));
       arrayOfG[b] = new CalibrationDataRow(this, "DB", "" + j, "" + i);
-    } 
+    }
     File file = new File(paramString, "throttlefactor.inc");
     return ExceptionInVPackage(file, f, arrayOfG);
   }
-  
+
   public File ExceptionInVPackage(File paramFile, F paramF, CalibrationDataRow[] paramArrayOfG) {
     try {
       if (paramFile.exists() && !paramFile.delete())
-        throw new ExceptionInVPackage("Unable to delete existing inc file! Check permissions.\n" + paramFile.getAbsolutePath()); 
+        throw new ExceptionInVPackage(
+            "Unable to delete existing inc file! Check permissions.\n"
+                + paramFile.getAbsolutePath());
       paramFile.createNewFile();
       FileOutputStream fileOutputStream = new FileOutputStream(paramFile);
       PrintStream printStream = new PrintStream(fileOutputStream);
@@ -41,20 +43,32 @@ public class ThrottleCalibrationGenerator {
       printStream.println(paramF.b());
       for (byte b = 0; b < paramArrayOfG.length; b++) {
         if (paramArrayOfG[b].b() != null && !paramArrayOfG[b].b().equals("")) {
-          printStream.println("\t" + paramArrayOfG[b].ExceptionInVPackage() + "\t" + X.ExceptionInVPackage(paramArrayOfG[b].b(), ' ', 3) + "T\t; " + X.ExceptionInVPackage(paramArrayOfG[b].c(), ' ', 3));
+          printStream.println(
+              "\t"
+                  + paramArrayOfG[b].ExceptionInVPackage()
+                  + "\t"
+                  + X.ExceptionInVPackage(paramArrayOfG[b].b(), ' ', 3)
+                  + "T\t; "
+                  + X.ExceptionInVPackage(paramArrayOfG[b].c(), ' ', 3));
         } else {
-          printStream.println("\t" + paramArrayOfG[b].ExceptionInVPackage() + "\t" + X.ExceptionInVPackage(paramArrayOfG[b].b(), ' ', 3) + "\t; " + X.ExceptionInVPackage(paramArrayOfG[b].c(), ' ', 3));
-        } 
-      } 
+          printStream.println(
+              "\t"
+                  + paramArrayOfG[b].ExceptionInVPackage()
+                  + "\t"
+                  + X.ExceptionInVPackage(paramArrayOfG[b].b(), ' ', 3)
+                  + "\t; "
+                  + X.ExceptionInVPackage(paramArrayOfG[b].c(), ' ', 3));
+        }
+      }
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Error writing " + paramFile.getAbsoluteFile() + "\n" + exception.getMessage());
-    } 
+      throw new ExceptionInVPackage(
+          "Error writing " + paramFile.getAbsoluteFile() + "\n" + exception.getMessage());
+    }
     F.c();
     return paramFile;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/E.class
  * Java compiler version: 8 (52.0)

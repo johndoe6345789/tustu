@@ -9,23 +9,32 @@ import java.awt.event.ActionListener;
 
 class AutoLoggingEnabledListener implements ActionListener {
   AutoLoggingEnabledListener(AutoLoggingTriggerPanel paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.SInterfaceAlpha.j.isSelected()) {
       try {
-        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha)this.SInterfaceAlpha.b);
-        SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha)this.SInterfaceAlpha.c);
+        SInterfaceEcho.SInterfaceAlpha()
+            .SInterfaceAlpha(
+                this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha) this.SInterfaceAlpha.b);
+        SInterfaceEcho.SInterfaceAlpha()
+            .SInterfaceAlpha(
+                this.SInterfaceAlpha.SInterfaceAlpha.c(), (SInterfaceAlpha) this.SInterfaceAlpha.c);
       } catch (q q) {
-        bV.d("No Configuration Found: " + this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.j);
-      } 
+        bV.d(
+            "No Configuration Found: " + this.SInterfaceAlpha.SInterfaceAlpha.c(),
+            this.SInterfaceAlpha.j);
+      }
     } else {
-      SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.b.SInterfaceAlpha());
-      SInterfaceEcho.SInterfaceAlpha().SInterfaceAlpha(this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.c.SInterfaceAlpha());
-    } 
+      SInterfaceEcho.SInterfaceAlpha()
+          .SInterfaceAlpha(
+              this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.b.SInterfaceAlpha());
+      SInterfaceEcho.SInterfaceAlpha()
+          .SInterfaceAlpha(
+              this.SInterfaceAlpha.SInterfaceAlpha.c(), this.SInterfaceAlpha.c.SInterfaceAlpha());
+    }
     g.SInterfaceAlpha(this.SInterfaceAlpha);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/h.class
  * Java compiler version: 8 (52.0)

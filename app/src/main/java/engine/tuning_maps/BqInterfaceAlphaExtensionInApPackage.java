@@ -8,17 +8,16 @@ class BqInterfaceAlphaExtensionInApPackage extends BqInterfaceAlpha {
   BqInterfaceAlphaExtensionInApPackage(dB paramdB, String paramString) {
     super(SComponentGolf.b(paramString));
   }
-  
+
   public void setPopupMenuVisible(boolean paramBoolean) {
     if (paramBoolean) {
-      dd.BqInterfaceAlpha().l().BqInterfaceAlpha((bq)this);
+      dd.BqInterfaceAlpha().l().BqInterfaceAlpha((bq) this);
     } else {
       removeAll();
-    } 
+    }
     super.setPopupMenuVisible(paramBoolean);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gY.class
  * Java compiler version: 8 (52.0)

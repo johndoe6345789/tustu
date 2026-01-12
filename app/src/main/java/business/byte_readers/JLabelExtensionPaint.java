@@ -9,9 +9,9 @@ import s.SComponentGolf;
 
 class JLabelExtensionPaint extends JLabel {
   boolean a = false;
-  
+
   ab b = null;
-  
+
   public JLabelExtensionPaint(P paramP, String paramString, int paramInt) {
     super(paramString, paramInt);
     setPreferredSize(new Dimension(110, 26));
@@ -19,11 +19,17 @@ class JLabelExtensionPaint extends JLabel {
     setMaximumSize(new Dimension(110, 26));
     setBorder(BorderFactory.createEtchedBorder(0));
   }
-  
+
   public String a() {
-    return !this.c.a.C().q() ? SComponentGolf.b("Offline") : (!P.c(this.c) ? SComponentGolf.b("Idle") : (!P.d(this.c) ? SComponentGolf.b("Tables Inactive") : SComponentGolf.b("Correcting Tables")));
+    return !this.c.a.C().q()
+        ? SComponentGolf.b("Offline")
+        : (!P.c(this.c)
+            ? SComponentGolf.b("Idle")
+            : (!P.d(this.c)
+                ? SComponentGolf.b("Tables Inactive")
+                : SComponentGolf.b("Correcting Tables")));
   }
-  
+
   public void paint(Graphics paramGraphics) {
     if (this.a) {
       byte b = 14;
@@ -31,20 +37,18 @@ class JLabelExtensionPaint extends JLabel {
       int j = (getHeight() - b) / 2;
       paramGraphics.setColor(Color.red);
       paramGraphics.fill3DRect(0, 0, getWidth(), getHeight(), true);
-    } 
+    }
     super.paint(paramGraphics);
   }
-  
+
   public void a(boolean paramBoolean) {
-    if (this.b != null)
-      this.b.a(); 
+    if (this.b != null) this.b.a();
     if (paramBoolean) {
       this.b = new ab(this);
       this.b.start();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/aa.class
  * Java compiler version: 8 (52.0)

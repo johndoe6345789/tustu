@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 
 class SInterfaceDeltaImplInApPackage implements SInterfaceDelta {
   SInterfaceDeltaImplInApPackage(bB parambB) {}
-  
+
   public void a() {
     bE bE = new bE(this);
     if (SwingUtilities.isEventDispatchThread()) {
@@ -17,16 +17,16 @@ class SInterfaceDeltaImplInApPackage implements SInterfaceDelta {
       try {
         SwingUtilities.invokeAndWait(bE);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(bB.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+        Logger.getLogger(bB.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
       } catch (InvocationTargetException invocationTargetException) {
-        Logger.getLogger(bB.class.getName()).log(Level.SEVERE, (String)null, invocationTargetException);
-      } 
-    } 
+        Logger.getLogger(bB.class.getName())
+            .log(Level.SEVERE, (String) null, invocationTargetException);
+      }
+    }
   }
-  
+
   public void b() {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bD.class
  * Java compiler version: 8 (52.0)

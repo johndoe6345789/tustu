@@ -8,16 +8,15 @@ import java.awt.event.ActionListener;
 
 class CrossHairActionListener implements ActionListener {
   CrossHairActionListener(TableCellCrossHair paramTableCellCrossHair) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {
       TableCellCrossHair.access$100(this.ExceptionInVPackage, paramActionEvent.getActionCommand());
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      bV.d(ExceptionInVPackage.getMessage(), (Component)this.ExceptionInVPackage.c);
-    } 
+      bV.d(ExceptionInVPackage.getMessage(), (Component) this.ExceptionInVPackage.c);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/tuneComps/h.class
  * Java compiler version: 8 (52.0)

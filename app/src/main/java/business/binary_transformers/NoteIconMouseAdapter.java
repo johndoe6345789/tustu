@@ -5,13 +5,11 @@ import java.awt.event.MouseEvent;
 
 class NoteIconMouseAdapter extends MouseAdapter {
   NoteIconMouseAdapter(a parama) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    if (this.a.isEnabled())
-      this.a.a(); 
+    if (this.a.isEnabled()) this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/b.class
  * Java compiler version: 8 (52.0)

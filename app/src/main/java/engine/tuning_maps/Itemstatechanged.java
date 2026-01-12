@@ -8,16 +8,15 @@ import javax.swing.JCheckBoxMenuItem;
 
 class Itemstatechanged implements ItemListener {
   cj(cc paramcc) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
+    if (((JCheckBoxMenuItem) paramItemEvent.getSource()).getState()) {
       IOProperties.c(IOProperties.N, IOProperties.Q);
       hx.a().c(true);
       this.a.b.e(IOProperties.Q);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cj.class
  * Java compiler version: 8 (52.0)

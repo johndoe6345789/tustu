@@ -20,31 +20,31 @@ import javax.swing.SwingUtilities;
 
 public class WizardPanel extends JPanel {
   JButton a = new JButton("Cancel");
-  
+
   JButton b = new JButton("Next >");
-  
+
   JPanel c = new JPanel();
-  
+
   int d = 0;
-  
+
   CardLayout e = new CardLayout();
-  
+
   ArrayList f = new ArrayList();
-  
+
   boolean g = false;
-  
+
   private ab i = null;
-  
+
   ArrayList h = new ArrayList();
-  
+
   public WizardPanel() {
-    this((String)null);
+    this((String) null);
   }
-  
+
   public WizardPanel(String paramString) {
-    this(paramString, (ab)null);
+    this(paramString, (ab) null);
   }
-  
+
   public WizardPanel(String paramString, ab paramab) {
     a(paramab);
     paramString = (paramString == null) ? "" : a(paramString);
@@ -60,27 +60,26 @@ public class WizardPanel extends JPanel {
     add("South", jPanel);
     this.c.setLayout(this.e);
     if (paramString != null && !paramString.isEmpty())
-      this.c.setBorder(BorderFactory.createTitledBorder(a(paramString))); 
+      this.c.setBorder(BorderFactory.createTitledBorder(a(paramString)));
     add("Center", this.c);
   }
-  
+
   public void a(Container paramContainer) {
-    if (!this.h.contains(paramContainer))
-      this.h.add(paramContainer); 
+    if (!this.h.contains(paramContainer)) this.h.add(paramContainer);
   }
-  
+
   public void b(Container paramContainer) {
     this.h.remove(paramContainer);
   }
-  
+
   public void a(boolean paramBoolean) {
     this.a.setEnabled(paramBoolean);
   }
-  
+
   private String a(String paramString) {
     return (g() != null) ? g().a(paramString) : paramString;
   }
-  
+
   public void a() {
     setCursor(Cursor.getPredefinedCursor(3));
     boolean bool = false;
@@ -92,120 +91,119 @@ public class WizardPanel extends JPanel {
         if (container != null && this.h.contains(container)) {
           this.d++;
           this.e.next(this.c);
-        } 
+        }
         bool = !d(h()) ? true : false;
         f();
-      } 
+      }
     } else {
       c();
-    } 
+    }
     if (bool) {
       fO fO = new fO(this);
       SwingUtilities.invokeLater(fO);
-    } 
+    }
     setCursor(Cursor.getPredefinedCursor(0));
   }
-  
+
   public void b() {
     if (this.d > 0) {
       this.d--;
       this.e.previous(this.c);
-      for (Container container = a(this.d); container != null && this.h.contains(container); container = a(this.d)) {
+      for (Container container = a(this.d);
+          container != null && this.h.contains(container);
+          container = a(this.d)) {
         this.d--;
         this.e.previous(this.c);
-      } 
+      }
       f();
     } else {
       d();
-    } 
+    }
   }
-  
+
   public void c() {
     if (c(h()))
       for (fS fS : this.f) {
-        if (!fS.b())
-          break; 
-      }  
+        if (!fS.b()) break;
+      }
   }
-  
+
   public boolean c(Container paramContainer) {
     for (fS fS : this.f) {
-      if (!fS.a(paramContainer))
-        return false; 
-    } 
+      if (!fS.a(paramContainer)) return false;
+    }
     return true;
   }
-  
+
   public boolean d(Container paramContainer) {
     for (fS fS : this.f) {
-      if (!fS.b(paramContainer))
-        return false; 
-    } 
+      if (!fS.b(paramContainer)) return false;
+    }
     return true;
   }
-  
+
   public void d() {
-    for (fS fS : this.f)
-      fS.c(); 
+    for (fS fS : this.f) fS.c();
     D.c("Cancel Wizard");
   }
-  
+
   public Container a(int paramInt) {
-    return (paramInt >= 0 && paramInt < this.c.getComponentCount()) ? (Container)((Container)this.c.getComponent(paramInt)).getComponent(0) : null;
+    return (paramInt >= 0 && paramInt < this.c.getComponentCount())
+        ? (Container) ((Container) this.c.getComponent(paramInt)).getComponent(0)
+        : null;
   }
-  
+
   public int e() {
     return this.c.getComponentCount();
   }
-  
+
   private Container h() {
     for (byte b = 0; b < this.c.getComponentCount(); b++) {
       if (this.c.getComponent(b).isVisible())
-        return (Container)((Container)this.c.getComponent(b)).getComponent(0); 
-    } 
+        return (Container) ((Container) this.c.getComponent(b)).getComponent(0);
+    }
     return null;
   }
-  
+
   public void e(Container paramContainer) {
     JPanel jPanel = new JPanel();
     if (paramContainer instanceof fT) {
-      fT fT = (fT)paramContainer;
+      fT fT = (fT) paramContainer;
       if (fT.g_()) {
         jPanel.setLayout(new GridLayout(1, 1));
       } else {
         jPanel.setLayout(new fR(this));
-      } 
+      }
     } else {
       jPanel.setLayout(new fR(this));
-    } 
+    }
     jPanel.add(paramContainer);
     this.c.add(jPanel, "" + this.c.getComponentCount());
   }
-  
+
   public void a(fS paramfS) {
     this.f.add(paramfS);
   }
-  
+
   public void f() {
     if (this.d == 0) {
       this.a.setText(a("Cancel"));
     } else {
       this.a.setText("< " + a("Back"));
-    } 
+    }
     if (this.d == this.c.getComponentCount() - 1) {
       this.b.setText(a("Finish"));
     } else {
       this.b.setText(a("Next") + " >");
-    } 
+    }
   }
-  
+
   public JDialog a(Window paramWindow, String paramString) {
     return a(paramWindow, paramString, true);
   }
-  
+
   public JDialog a(Window paramWindow, String paramString, boolean paramBoolean) {
-    if (paramString == null || paramString.equals(""))
-      paramString = "Wizard"; 
+    if (paramString == null || paramString.equals("")) paramString = "Wizard";
     paramString = a(paramString);
     fQ fQ = new fQ(this, paramWindow, paramString);
     fQ.add("Center", this);
@@ -213,22 +211,20 @@ public class WizardPanel extends JPanel {
     fQ.pack();
     a(new fP(this, fQ));
     bV.a(paramWindow, fQ);
-    if (paramBoolean)
-      fQ.setModalityType(Dialog.ModalityType.DOCUMENT_MODAL); 
+    if (paramBoolean) fQ.setModalityType(Dialog.ModalityType.DOCUMENT_MODAL);
     return fQ;
   }
-  
+
   public ab g() {
     return this.i;
   }
-  
+
   public void a(ab paramab) {
     this.i = paramab;
     this.a.setText(a("Cancel"));
     this.b.setText(a("Next") + " >");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fL.class
  * Java compiler version: 8 (52.0)

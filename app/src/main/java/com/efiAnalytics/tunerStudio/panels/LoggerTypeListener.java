@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class LoggerTypeListener implements ActionListener {
   LoggerTypeListener(IgnitionLoggerControlPanel paramo) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.l();
     this.a.g();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/p.class
  * Java compiler version: 8 (52.0)

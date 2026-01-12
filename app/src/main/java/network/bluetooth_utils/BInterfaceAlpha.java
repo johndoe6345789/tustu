@@ -11,11 +11,10 @@ public class BInterfaceAlpha {
       d = Math.abs(paramDouble2) * Math.sqrt(1.0D + d * d);
     } else {
       d = 0.0D;
-    } 
+    }
     return d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/b/a.class
  * Java compiler version: 8 (52.0)

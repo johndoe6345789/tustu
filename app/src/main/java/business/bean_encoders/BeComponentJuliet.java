@@ -1,8 +1,8 @@
 package business.bean_encoders;
 
+import G.Exceptionprintstacktrace;
 import G.R;
 import G.SerializableImplExceptionprintstacktrace;
-import G.Exceptionprintstacktrace;
 import V.ExceptionInVPackage;
 import bH.D;
 import com.efiAnalytics.ui.br;
@@ -22,17 +22,17 @@ import s.SComponentGolf;
 
 public class BeComponentJuliet extends JPanel implements o {
   static String ExceptionInVPackage = "Log Other OutputChannels";
-  
+
   static String b = "Log Indicator";
-  
+
   CardLayout c = new CardLayout();
-  
+
   SComponentGolf d;
-  
+
   R e;
-  
+
   JButton f;
-  
+
   public BeComponentJuliet(R paramR) {
     this.e = paramR;
     setLayout(new BorderLayout());
@@ -46,16 +46,15 @@ public class BeComponentJuliet extends JPanel implements o {
     if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("09ggdslkmkgoiu")) {
       fp.ExceptionInVPackage(this.d, false);
       this.f.setEnabled(false);
-    } 
+    }
     add("Center", this.d);
   }
-  
+
   public void ExceptionInVPackage() {
     br br = new br();
     ArrayList<?> arrayList = new ArrayList();
     Iterator iterator = this.e.A();
-    while (iterator.hasNext())
-      arrayList.add(iterator.next()); 
+    while (iterator.hasNext()) arrayList.add(iterator.next());
     Collections.sort(arrayList, new l(this));
     if (!arrayList.isEmpty()) {
       m m = new m(this);
@@ -64,56 +63,55 @@ public class BeComponentJuliet extends JPanel implements o {
       byte b1 = 0;
       byte b2 = 25;
       JMenu jMenu2 = jMenu1;
-      if (arrayList.size() > b2)
-        jMenu2 = new JMenu(SComponentGolf.b("Predefined Indicators 1")); 
+      if (arrayList.size() > b2) jMenu2 = new JMenu(SComponentGolf.b("Predefined Indicators 1"));
       for (Exceptionprintstacktrace Exceptionprintstacktrace : arrayList) {
         if (b1++ % b2 == 0) {
           jMenu2 = new JMenu(SComponentGolf.b("Predefined Indicators") + " " + (b1 / b2 + 1));
           jMenu1.add(jMenu2);
-        } 
+        }
         JMenuItem jMenuItem = new JMenuItem(SComponentGolf.b(Exceptionprintstacktrace.b()));
         jMenuItem.addActionListener(m);
         jMenuItem.setActionCommand(Exceptionprintstacktrace.aL());
         jMenu2.add(jMenuItem);
-      } 
-    } 
-    this.f.add((Component)br);
+      }
+    }
+    this.f.add((Component) br);
     br.show(this.f, 0, this.f.getHeight());
   }
-  
+
   private void ExceptionInVPackage(Exceptionprintstacktrace paramak) {
     try {
-      SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = this.d.ExceptionInVPackage();
+      SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace =
+          this.d.ExceptionInVPackage();
       SerializableImplExceptionprintstacktrace.c(paramak.b());
       SerializableImplExceptionprintstacktrace.b(4);
       SerializableImplExceptionprintstacktrace.b(paramak.f());
       this.d.ExceptionInVPackage(SerializableImplExceptionprintstacktrace);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      D.ExceptionInVPackage((Exception)ExceptionInVPackage);
-    } 
+      D.ExceptionInVPackage((Exception) ExceptionInVPackage);
+    }
   }
-  
+
   public boolean c() {
     return this.d.c();
   }
-  
+
   public void ExceptionInVPackage(R paramR) {
     this.d.ExceptionInVPackage(paramR);
   }
-  
+
   public void ExceptionInVPackage(SerializableImplExceptionprintstacktrace paramac) {
     this.d.ExceptionInVPackage(paramac);
   }
-  
+
   void ExceptionInVPackage(boolean paramBoolean) {
     if (!RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("09ggdslkmkgoiu")) {
       this.f.setEnabled(false);
     } else {
       this.f.setEnabled(paramBoolean);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/j.class
  * Java compiler version: 8 (52.0)

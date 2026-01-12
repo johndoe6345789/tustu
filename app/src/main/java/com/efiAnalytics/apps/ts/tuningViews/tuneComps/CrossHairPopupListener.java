@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class CrossHairPopupListener implements ActionListener {
   CrossHairPopupListener(TableCellCrossHair paramTableCellCrossHair) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     TableCellCrossHair.access$000(this.a, this.a.d.getX(), this.a.d.getY() + this.a.d.getHeight());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/tuneComps/g.class
  * Java compiler version: 8 (52.0)

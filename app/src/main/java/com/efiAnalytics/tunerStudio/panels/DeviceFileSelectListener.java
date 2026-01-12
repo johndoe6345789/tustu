@@ -8,17 +8,22 @@ import s.SComponentGolf;
 
 class DeviceFileSelectListener implements ActionListener {
   DeviceFileSelectListener(CanDeviceConfigPanel parama) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String[] arrayOfString = { "ini", "ecu" };
-    String str = bV.b((Component)paramActionEvent.getSource(), SComponentGolf.b("Find CAN Device definition file"), arrayOfString, "", "");
+    String[] arrayOfString = {"ini", "ecu"};
+    String str =
+        bV.b(
+            (Component) paramActionEvent.getSource(),
+            SComponentGolf.b("Find CAN Device definition file"),
+            arrayOfString,
+            "",
+            "");
     if (str != null) {
       a.a(this.a, str);
       this.a.SComponentGolf.validate();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/f.class
  * Java compiler version: 8 (52.0)

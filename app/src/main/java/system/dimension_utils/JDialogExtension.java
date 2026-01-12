@@ -27,19 +27,19 @@ import javax.swing.JTextPane;
 
 public class JDialogExtension extends JDialog {
   JTextPane a;
-  
+
   JTextPane b;
-  
+
   JTextField c = new JTextField();
-  
+
   JTextField d = new JTextField();
-  
+
   JLabel e = new JLabel("<html> <br> </html>");
-  
+
   JButton f;
-  
+
   WInterfaceAp g = null;
-  
+
   public JDialogExtension(Frame paramFrame, WInterfaceAp paramap) {
     super(paramFrame);
     setTitle("Binary File Difference");
@@ -87,7 +87,7 @@ public class JDialogExtension extends JDialog {
     this.a.addCaretListener(new c(this));
     b();
   }
-  
+
   private JPanel a(JTextField paramJTextField, String paramString) {
     JPanel jPanel = new JPanel();
     paramJTextField.setBorder(BorderFactory.createLoweredBevelBorder());
@@ -99,20 +99,29 @@ public class JDialogExtension extends JDialog {
     jButton.addActionListener(new d(this, paramJTextField));
     return jPanel;
   }
-  
+
   private void a() {
     String str1 = b(this.a.getSelectedText());
     String str2 = b(c(this.a.getSelectedText()));
     if (str1.length() > 0) {
       BigInteger bigInteger1 = new BigInteger(str1, 16);
       BigInteger bigInteger2 = new BigInteger(str2, 16);
-      String str = "<html>Big endian Decimal: " + bigInteger1.toString(10) + ", Bin: " + bigInteger1.toString(2) + "<br>Lit endian Decimal: " + bigInteger2.toString(10) + ", Bin: " + bigInteger2.toString(2) + "</html>";
+      String str =
+          "<html>Big endian Decimal: "
+              + bigInteger1.toString(10)
+              + ", Bin: "
+              + bigInteger1.toString(2)
+              + "<br>Lit endian Decimal: "
+              + bigInteger2.toString(10)
+              + ", Bin: "
+              + bigInteger2.toString(2)
+              + "</html>";
       this.e.setText(str);
     } else {
       this.e.setText("");
-    } 
+    }
   }
-  
+
   private String b(String paramString) {
     paramString = X.b(paramString, "x0", "");
     paramString = X.b(paramString, "x", "");
@@ -121,32 +130,30 @@ public class JDialogExtension extends JDialog {
     paramString = X.b(paramString, "\t", "");
     return X.b(paramString, " ", "");
   }
-  
+
   private String c(String paramString) {
     String[] arrayOfString = paramString.split("x");
     StringBuilder stringBuilder = new StringBuilder();
-    for (int i = arrayOfString.length - 1; i >= 0; i--)
-      stringBuilder.append(arrayOfString[i]); 
+    for (int i = arrayOfString.length - 1; i >= 0; i--) stringBuilder.append(arrayOfString[i]);
     return stringBuilder.toString();
   }
-  
+
   private void a(String paramString1, String paramString2) {
-    if (this.g != null)
-      this.g.a(paramString1, paramString2); 
+    if (this.g != null) this.g.a(paramString1, paramString2);
   }
-  
+
   private String b(String paramString1, String paramString2) {
     return (this.g != null) ? this.g.b(paramString1, paramString2) : paramString2;
   }
-  
+
   private void b() {
     if ((new File(this.c.getText())).exists() && (new File(this.d.getText())).exists()) {
       this.f.setEnabled(true);
     } else {
       this.f.setEnabled(false);
-    } 
+    }
   }
-  
+
   private void c() {
     int[] arrayOfInt1;
     int[] arrayOfInt2;
@@ -156,22 +163,26 @@ public class JDialogExtension extends JDialog {
       bV.d("File not found:\n" + this.c.getText(), this);
       return;
     } catch (IOException iOException) {
-      bV.d("Error loading file '" + iOException.getLocalizedMessage() + "':\n" + this.c.getText(), this);
+      bV.d(
+          "Error loading file '" + iOException.getLocalizedMessage() + "':\n" + this.c.getText(),
+          this);
       return;
-    } 
+    }
     try {
       arrayOfInt2 = a(this.d.getText());
     } catch (FileNotFoundException fileNotFoundException) {
       bV.d("File not found:\n" + this.c.getText(), this);
       return;
     } catch (IOException iOException) {
-      bV.d("Error loading file '" + iOException.getLocalizedMessage() + "':\n" + this.c.getText(), this);
+      bV.d(
+          "Error loading file '" + iOException.getLocalizedMessage() + "':\n" + this.c.getText(),
+          this);
       return;
-    } 
+    }
     this.a.setText(c.a(arrayOfInt1, arrayOfInt2));
     this.a.setCaretPosition(0);
   }
-  
+
   protected int[] a(String paramString) {
     File file = new File(paramString);
     FileInputStream fileInputStream = new FileInputStream(file);
@@ -179,14 +190,13 @@ public class JDialogExtension extends JDialog {
     ArrayList<Integer> arrayList = new ArrayList();
     int i;
     for (i = bufferedInputStream.read(); i != -1; i = bufferedInputStream.read())
-      arrayList.add(Integer.valueOf(i)); 
+      arrayList.add(Integer.valueOf(i));
     int[] arrayOfInt = new int[arrayList.size()];
     for (byte b = 0; b < arrayOfInt.length; b++)
-      arrayOfInt[b] = ((Integer)arrayList.get(b)).intValue(); 
+      arrayOfInt[b] = ((Integer) arrayList.get(b)).intValue();
     return arrayOfInt;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aN/a.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class OkButtonListener implements ActionListener {
   OkButtonListener(ct paramct) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cu.class
  * Java compiler version: 8 (52.0)

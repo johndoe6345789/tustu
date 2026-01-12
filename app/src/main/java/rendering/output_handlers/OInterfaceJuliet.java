@@ -5,10 +5,12 @@ import G.GInterfaceCx;
 
 public class OInterfaceJuliet implements GInterfaceCx {
   public boolean a(AeInterfaceMikeTostring parambT) {
-    return ((parambT != null && parambT.b() != null && parambT.b().toLowerCase().startsWith("monsterfirmware")) || parambT.b().toLowerCase().startsWith("monsterpwmod"));
+    return ((parambT != null
+            && parambT.b() != null
+            && parambT.b().toLowerCase().startsWith("monsterfirmware"))
+        || parambT.b().toLowerCase().startsWith("monsterpwmod"));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/O/j.class
  * Java compiler version: 8 (52.0)

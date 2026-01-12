@@ -4,13 +4,12 @@ import java.awt.Cursor;
 
 class ApInterfaceId extends Thread {
   ApInterfaceId(iC paramiC) {}
-  
+
   public void run() {
     iA.a(this.a.a);
     this.a.a.setCursor(Cursor.getDefaultCursor());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iD.class
  * Java compiler version: 8 (52.0)

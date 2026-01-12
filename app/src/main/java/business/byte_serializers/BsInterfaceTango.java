@@ -4,12 +4,11 @@ import com.efiAnalytics.ui.dC;
 
 class BsInterfaceTango implements dC {
   BsInterfaceTango(k paramk) {}
-  
+
   public void a() {
     this.a.d.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/t.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ProfileAddAllFieldsListener implements ActionListener {
   ProfileAddAllFieldsListener(ProfileDatalogFieldsPanel paramA) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/B.class
  * Java compiler version: 8 (52.0)

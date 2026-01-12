@@ -2,12 +2,11 @@ package engine.vehicle_control;
 
 public class VInterfaceFoxtrot extends a {
   public VInterfaceFoxtrot() {}
-  
+
   public VInterfaceFoxtrot(String paramString) {
     super(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/V/f.class
  * Java compiler version: 8 (52.0)

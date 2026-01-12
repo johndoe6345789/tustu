@@ -8,11 +8,11 @@ import bH.D;
 
 public class HInterfaceAlpha implements GComponentAi, GComponentCq {
   private static long a = 0L;
-  
+
   public static long a() {
     return a;
   }
-  
+
   public boolean a(v paramv) {
     byte[] arrayOfByte = new byte[5];
     arrayOfByte[0] = -1;
@@ -28,16 +28,15 @@ public class HInterfaceAlpha implements GComponentAi, GComponentCq {
       if (!bool) {
         ArrayListInGPackage.a().a("BigStuff3 found, Key On to connect");
         a = System.currentTimeMillis();
-      } 
+      }
       return bool;
-    } 
+    }
     D.d("Could not get value for Vbatt");
     return false;
   }
-  
+
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/H/a.class
  * Java compiler version: 8 (52.0)

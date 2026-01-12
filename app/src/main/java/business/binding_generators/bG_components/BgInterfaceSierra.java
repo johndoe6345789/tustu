@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BgInterfaceSierra implements ActionListener {
   BgInterfaceSierra(q paramq) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.e(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/s.class
  * Java compiler version: 8 (52.0)

@@ -7,13 +7,13 @@ import java.util.logging.Logger;
 
 class ApInterfaceLima implements Runnable {
   ApInterfaceLima(f paramf) {}
-  
+
   public void run() {
     String str;
     if (!this.a.g()) {
       this.a.b = false;
       return;
-    } 
+    }
     f.a().y();
     if (J.a()) {
       str = "shutdown /p";
@@ -21,18 +21,17 @@ class ApInterfaceLima implements Runnable {
       str = "sudo shutdown -h now";
     } else {
       str = "sudo shutdown now";
-    } 
+    }
     try {
       Runtime.getRuntime().exec(str);
       System.exit(0);
     } catch (IOException iOException) {
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } finally {
       this.a.b = false;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/l.class
  * Java compiler version: 8 (52.0)

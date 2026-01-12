@@ -2,12 +2,11 @@ package business.buffer_factories.bF_components;
 
 class BfInterfaceZulu implements x {
   BfInterfaceZulu(y paramy) {}
-  
+
   public String a(int paramInt) {
     return "";
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/z.class
  * Java compiler version: 8 (52.0)

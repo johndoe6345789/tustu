@@ -7,12 +7,12 @@ import javax.swing.JTextField;
 
 class WeightFieldFocusAdapter extends FocusAdapter {
   WeightFieldFocusAdapter(WeightInputPanel paramaQ) {}
-  
+
   public void focusGained(FocusEvent paramFocusEvent) {
-    JTextField jTextField = (JTextField)paramFocusEvent.getSource();
+    JTextField jTextField = (JTextField) paramFocusEvent.getSource();
     jTextField.selectAll();
   }
-  
+
   public void focusLost(FocusEvent paramFocusEvent) {
     if (paramFocusEvent.getSource() == this.a.b)
       try {
@@ -21,7 +21,7 @@ class WeightFieldFocusAdapter extends FocusAdapter {
         this.a.a.setText((i * 22 / 10) + "");
       } catch (NumberFormatException numberFormatException) {
         bV.d("Weight must be numeric.", this.a.b);
-      }  
+      }
     if (paramFocusEvent.getSource() == this.a.a)
       try {
         String str = this.a.a.getText();
@@ -29,10 +29,9 @@ class WeightFieldFocusAdapter extends FocusAdapter {
         this.a.b.setText((i * 10 / 22) + "");
       } catch (NumberFormatException numberFormatException) {
         bV.d("Weight must be numeric.", this.a.a);
-      }  
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aT.class
  * Java compiler version: 8 (52.0)

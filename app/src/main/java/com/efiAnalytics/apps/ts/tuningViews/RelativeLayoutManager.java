@@ -15,46 +15,45 @@ public class RelativeLayoutManager implements LayoutManager2 {
     double d2 = (paramContainer.getHeight() - insets.top - insets.bottom);
     for (byte b = 0; b < arrayOfComponent.length; b++) {
       if (arrayOfComponent[b] instanceof TuneViewComponent) {
-        TuneViewComponent tuneViewComponent = (TuneViewComponent)arrayOfComponent[b];
-        int i = insets.left + (int)Math.round(d1 * tuneViewComponent.getRelativeX());
-        int j = insets.top + (int)Math.round(d2 * tuneViewComponent.getRelativeY());
-        int k = (int)Math.round(d1 * tuneViewComponent.getRelativeWidth());
-        int m = (int)Math.round(d2 * tuneViewComponent.getRelativeHeight());
+        TuneViewComponent tuneViewComponent = (TuneViewComponent) arrayOfComponent[b];
+        int i = insets.left + (int) Math.round(d1 * tuneViewComponent.getRelativeX());
+        int j = insets.top + (int) Math.round(d2 * tuneViewComponent.getRelativeY());
+        int k = (int) Math.round(d1 * tuneViewComponent.getRelativeWidth());
+        int m = (int) Math.round(d2 * tuneViewComponent.getRelativeHeight());
         tuneViewComponent.setBounds(i, j, k, m);
         tuneViewComponent.validate();
-      } 
-    } 
+      }
+    }
   }
-  
+
   public Dimension preferredLayoutSize(Container paramContainer) {
     return new Dimension(eJ.a(320), eJ.a(260));
   }
-  
+
   public Dimension minimumLayoutSize(Container paramContainer) {
     return new Dimension(eJ.a(320), eJ.a(240));
   }
-  
+
   public void addLayoutComponent(String paramString, Component paramComponent) {}
-  
+
   public void removeLayoutComponent(Component paramComponent) {}
-  
+
   public void addLayoutComponent(Component paramComponent, Object paramObject) {}
-  
+
   public Dimension maximumLayoutSize(Container paramContainer) {
     return new Dimension(2147483647, 2147483647);
   }
-  
+
   public float getLayoutAlignmentX(Container paramContainer) {
     return 0.5F;
   }
-  
+
   public float getLayoutAlignmentY(Container paramContainer) {
     return 0.5F;
   }
-  
+
   public void invalidateLayout(Container paramContainer) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/l.class
  * Java compiler version: 8 (52.0)

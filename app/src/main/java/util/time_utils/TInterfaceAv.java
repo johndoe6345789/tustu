@@ -8,21 +8,18 @@ import s.SComponentGolf;
 
 class TInterfaceAv extends KeyAdapter {
   TInterfaceAv(aO paramaO) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    JTextField jTextField = (JTextField)paramKeyEvent.getSource();
-    if (jTextField.getText().equals(""))
-      return; 
+    JTextField jTextField = (JTextField) paramKeyEvent.getSource();
+    if (jTextField.getText().equals("")) return;
     try {
       double d = aO.a(this.a, jTextField.getText());
-      if (this.a.a(jTextField, SComponentGolf.b("Historical Peak Value")))
-        this.a.c().b(d); 
+      if (this.a.a(jTextField, SComponentGolf.b("Historical Peak Value"))) this.a.c().b(d);
     } catch (Exception exception) {
       bV.d(SComponentGolf.b("Numeric Values only"), jTextField);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aV.class
  * Java compiler version: 8 (52.0)

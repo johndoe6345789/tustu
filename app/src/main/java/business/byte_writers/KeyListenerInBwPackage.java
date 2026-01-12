@@ -6,17 +6,16 @@ import java.awt.event.KeyListener;
 
 class KeyListenerInBwPackage implements KeyListener {
   KeyListenerInBwPackage(b paramb) {}
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {}
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    ((NumericTextField)paramKeyEvent.getSource()).d();
+    ((NumericTextField) paramKeyEvent.getSource()).d();
     this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bw/c.class
  * Java compiler version: 8 (52.0)

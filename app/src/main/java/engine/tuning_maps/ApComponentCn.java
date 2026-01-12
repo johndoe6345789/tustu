@@ -7,13 +7,12 @@ import java.awt.event.ActionListener;
 
 class ApComponentCn implements ActionListener {
   cn(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     hx.a().j();
     f.a().f(bV.c());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cn.class
  * Java compiler version: 8 (52.0)

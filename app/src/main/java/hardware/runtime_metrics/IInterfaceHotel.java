@@ -1,51 +1,51 @@
 package I;
 
-import G.GInterfaceAh;
 import G.Exceptionprintstacktrace;
-import G.c;
-import G.ManagerUsingArrayList;
+import G.GInterfaceAh;
 import G.GInterfaceDb;
+import G.ManagerUsingArrayList;
+import G.c;
 import G.k;
 import bH.q;
 import java.util.ArrayList;
 
 public class IInterfaceHotel {
   public static String a = "gpsSpeedMPH";
-  
+
   public static String b = "gpsSpeedKPH";
-  
+
   public static String c = "gpsSpeed";
-  
+
   public static String d = "gpsAltitude";
-  
+
   public static String e = "gpsAltitudeFeet";
-  
+
   public static String f = "latitude";
-  
+
   public static String g = "longitude";
-  
+
   public static String h = "gpsHeading";
-  
+
   public static String i = "gpsAccuracy";
-  
+
   public static String j = "gpsPositionX";
-  
+
   public static String k = "gpsPositionY";
-  
+
   public static String l = "gpsTime";
-  
+
   public static String m = "GPS_Update";
-  
+
   public static String n = "gpsActive";
-  
+
   public static String o = "gpsUsingExternal";
-  
+
   public static String p = "gpsUpdateRate";
-  
+
   public static String q = "gpsSatellites";
-  
+
   public static String r = "gpsHasFix";
-  
+
   public static void a() {
     ManagerUsingArrayList.a().d(a);
     ManagerUsingArrayList.a().d(b);
@@ -62,10 +62,9 @@ public class IInterfaceHotel {
     ManagerUsingArrayList.a().d(m);
     ManagerUsingArrayList.a().d(n);
     ManagerUsingArrayList.a().d(r);
-    if (q.b())
-      ManagerUsingArrayList.a().d(o); 
+    if (q.b()) ManagerUsingArrayList.a().d(o);
   }
-  
+
   public static void a(ArrayList<GInterfaceAh> paramArrayList) {
     GInterfaceAh GInterfaceAh = new GInterfaceAh();
     GInterfaceAh.v(a + "Gauge");
@@ -263,12 +262,12 @@ public class IInterfaceHotel {
     GInterfaceAh.d("GPS");
     paramArrayList.add(GInterfaceAh);
   }
-  
+
   public static void b(ArrayList<Exceptionprintstacktrace> paramArrayList) {
     Exceptionprintstacktrace Exceptionprintstacktrace = new Exceptionprintstacktrace();
     Exceptionprintstacktrace.v("gpsUpdate");
-    Exceptionprintstacktrace.a((GInterfaceDb)new c("GPS Update"));
-    Exceptionprintstacktrace.b((GInterfaceDb)new c(""));
+    Exceptionprintstacktrace.a((GInterfaceDb) new c("GPS Update"));
+    Exceptionprintstacktrace.b((GInterfaceDb) new c(""));
     Exceptionprintstacktrace.a(k.s);
     Exceptionprintstacktrace.b(k.A);
     Exceptionprintstacktrace.c(k.i);
@@ -277,8 +276,8 @@ public class IInterfaceHotel {
     paramArrayList.add(Exceptionprintstacktrace);
     Exceptionprintstacktrace = new Exceptionprintstacktrace();
     Exceptionprintstacktrace.v("gpsActive");
-    Exceptionprintstacktrace.a((GInterfaceDb)new c("GPS Active"));
-    Exceptionprintstacktrace.b((GInterfaceDb)new c("GPS Not Active"));
+    Exceptionprintstacktrace.a((GInterfaceDb) new c("GPS Active"));
+    Exceptionprintstacktrace.b((GInterfaceDb) new c("GPS Not Active"));
     Exceptionprintstacktrace.a(k.s);
     Exceptionprintstacktrace.b(k.a);
     Exceptionprintstacktrace.c(k.i);
@@ -287,8 +286,8 @@ public class IInterfaceHotel {
     paramArrayList.add(Exceptionprintstacktrace);
     Exceptionprintstacktrace = new Exceptionprintstacktrace();
     Exceptionprintstacktrace.v("gpsHasFix");
-    Exceptionprintstacktrace.a((GInterfaceDb)new c("GPS Fix"));
-    Exceptionprintstacktrace.b((GInterfaceDb)new c("GPS Fix"));
+    Exceptionprintstacktrace.a((GInterfaceDb) new c("GPS Fix"));
+    Exceptionprintstacktrace.b((GInterfaceDb) new c("GPS Fix"));
     Exceptionprintstacktrace.a(k.s);
     Exceptionprintstacktrace.b(k.a);
     Exceptionprintstacktrace.c(k.i);
@@ -298,18 +297,17 @@ public class IInterfaceHotel {
     if (q.b()) {
       Exceptionprintstacktrace = new Exceptionprintstacktrace();
       Exceptionprintstacktrace.v("gpsuseingExternal");
-      Exceptionprintstacktrace.a((GInterfaceDb)new c("External GPS"));
-      Exceptionprintstacktrace.b((GInterfaceDb)new c("Internal GPS"));
+      Exceptionprintstacktrace.a((GInterfaceDb) new c("External GPS"));
+      Exceptionprintstacktrace.b((GInterfaceDb) new c("Internal GPS"));
       Exceptionprintstacktrace.a(k.s);
       Exceptionprintstacktrace.b(k.a);
       Exceptionprintstacktrace.c(k.i);
       Exceptionprintstacktrace.d(k.c);
       Exceptionprintstacktrace.a(o);
       paramArrayList.add(Exceptionprintstacktrace);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/h.class
  * Java compiler version: 8 (52.0)

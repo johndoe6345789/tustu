@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class DoneButtonListener implements ActionListener {
   DoneButtonListener(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/j.class
  * Java compiler version: 8 (52.0)

@@ -23,21 +23,21 @@ import javax.swing.JTextField;
 
 public class ha extends JPanel {
   JComboBox a = new JComboBox();
-  
+
   JTextField ClassTypeInHPackage = new JTextField();
-  
+
   JRadioButton IOJMenu;
-  
+
   JRadioButton d;
-  
+
   JButton e;
-  
+
   JButton f;
-  
+
   private boolean h = false;
-  
+
   JDialog g = null;
-  
+
   public ha() {
     setBorder(BorderFactory.createEmptyBorder(eJ.a(10), eJ.a(10), eJ.a(10), eJ.a(10)));
     setLayout(new BorderLayout());
@@ -66,48 +66,52 @@ public class ha extends JPanel {
     if (J.a()) {
       this.e = new JButton("Ok");
       jPanel3.add(this.e);
-    } 
+    }
     jPanel3.add(this.f);
     if (!J.a()) {
       this.e = new JButton("Accept");
       jPanel3.add(this.e);
-    } 
+    }
     add("South", jPanel3);
     this.f.addActionListener(new hc(this));
     this.e.addActionListener(new hd(this));
   }
-  
+
   public void a(String paramString) {
     this.ClassTypeInHPackage.setText(paramString);
   }
-  
+
   public String a() {
     return this.ClassTypeInHPackage.getText();
   }
-  
+
   private void d() {
     this.h = true;
     this.g.dispose();
   }
-  
+
   private void e() {
     if (this.IOJMenu.isSelected() || t.a(this.ClassTypeInHPackage.getText())) {
       this.g.dispose();
     } else if (this.ClassTypeInHPackage.getText().isEmpty()) {
       bV.d("You must enter a name for the Setting Profile.", bq.a().ClassTypeInHPackage());
     } else {
-      bV.d("Invalid Profile Name: '" + this.ClassTypeInHPackage.getText() + "'. Please remove any special characters.", bq.a().ClassTypeInHPackage());
-    } 
+      bV.d(
+          "Invalid Profile Name: '"
+              + this.ClassTypeInHPackage.getText()
+              + "'. Please remove any special characters.",
+          bq.a().ClassTypeInHPackage());
+    }
   }
-  
+
   public boolean ClassTypeInHPackage() {
     return this.d.isSelected();
   }
-  
+
   public boolean IOJMenu() {
     return this.h;
   }
-  
+
   public void a(Window paramWindow) {
     this.g = new JDialog(paramWindow, "Setting Profile", Dialog.ModalityType.APPLICATION_MODAL);
     this.g.add("Center", this);
@@ -116,7 +120,6 @@ public class ha extends JPanel {
     this.g.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ha.class
  * Java compiler version: 8 (52.0)

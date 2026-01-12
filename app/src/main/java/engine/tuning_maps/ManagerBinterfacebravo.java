@@ -1,7 +1,8 @@
 package aP;
 
-import A.IO;
 import A.AInterfaceVictor;
+import A.IO;
+import AInterfaceVictor.ArrayListInZPackage;
 import B.BInterfaceBravo;
 import B.RInterfaceIndia;
 import G.R;
@@ -18,18 +19,17 @@ import com.efiAnalytics.apps.ts.dashboard.Z;
 import com.efiAnalytics.apps.ts.dashboard.aa;
 import java.io.File;
 import java.util.Map;
+import r.BqInterfaceJuliet;
 import r.ExceptionInVPackage;
 import r.RInterfaceIndia;
-import r.BqInterfaceJuliet;
 import s.ExceptionInVPackage;
-import AInterfaceVictor.ArrayListInZPackage;
 import z.ArrayListInZPackage;
 
 public class ManagerBinterfacebravo {
   private boolean ExceptionInVPackage = false;
-  
+
   private static boolean BInterfaceBravo = true;
-  
+
   public ExceptionInVPackage ExceptionInVPackage(String paramString) {
     // Byte code:
     //   0: iconst_0
@@ -374,11 +374,13 @@ public class ManagerBinterfacebravo {
     //   748: aload #5
     //   750: invokevirtual BqInterfaceJuliet : ()Ljava/io/File;
     //   753: invokevirtual getParentFile : ()Ljava/io/File;
-    //   756: invokevirtual ExceptionInVPackage : (Ljava/lang/String;Ljava/io/File;)Ljava/lang/Object;
+    //   756: invokevirtual ExceptionInVPackage :
+    // (Ljava/lang/String;Ljava/io/File;)Ljava/lang/Object;
     //   759: astore #17
     //   761: aload #17
     //   763: ifnonnull -> 774
-    //   766: ldc 'failed to load cached config definition, will load ini. Error: Matching Config not found in cache'
+    //   766: ldc 'failed to load cached config definition, will load ini. Error: Matching Config
+    // not found in cache'
     //   768: invokestatic d : (Ljava/lang/String;)V
     //   771: goto -> 842
     //   774: aload_3
@@ -587,7 +589,8 @@ public class ManagerBinterfacebravo {
     //   1250: aload #5
     //   1252: invokevirtual BqInterfaceJuliet : ()Ljava/io/File;
     //   1255: invokevirtual getParentFile : ()Ljava/io/File;
-    //   1258: invokevirtual ExceptionInVPackage : (Ljava/lang/Object;Ljava/lang/String;Ljava/io/File;)V
+    //   1258: invokevirtual ExceptionInVPackage :
+    // (Ljava/lang/Object;Ljava/lang/String;Ljava/io/File;)V
     //   1261: goto -> 1302
     //   1264: astore #17
     //   1266: ldc aP/ie
@@ -603,7 +606,8 @@ public class ManagerBinterfacebravo {
     //   1291: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   1294: invokevirtual toString : ()Ljava/lang/String;
     //   1297: aload #17
-    //   1299: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1299: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1302: new java/lang/StringBuilder
     //   1305: dup
     //   1306: invokespecial <init> : ()V
@@ -742,7 +746,8 @@ public class ManagerBinterfacebravo {
     //   1624: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1627: aconst_null
     //   1628: aload #18
-    //   1630: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1630: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1633: aload_3
     //   1634: invokevirtual O : ()LG/F;
     //   1637: iload #16
@@ -835,7 +840,8 @@ public class ManagerBinterfacebravo {
     //   1842: ldc 'Unable to get Wue Analyze Supported Curves.'
     //   1844: aload #15
     //   1846: aload_0
-    //   1847: invokestatic ExceptionInVPackage : (Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/Object;)V
+    //   1847: invokestatic ExceptionInVPackage :
+    // (Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/Object;)V
     //   1850: aload_3
     //   1851: aload #5
     //   1853: aload_3
@@ -883,7 +889,8 @@ public class ManagerBinterfacebravo {
     //   1953: invokestatic ArrayListInZPackage : ()LA/RInterfaceIndia;
     //   1956: aload #16
     //   1958: aconst_null
-    //   1959: invokevirtual ExceptionInVPackage : (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
+    //   1959: invokevirtual ExceptionInVPackage :
+    // (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
     //   1962: invokevirtual ArrayListInZPackage : (LG/J;)LG/J;
     //   1965: pop
     //   1966: goto -> 2133
@@ -912,7 +919,8 @@ public class ManagerBinterfacebravo {
     //   2026: invokestatic ArrayListInZPackage : ()LA/RInterfaceIndia;
     //   2029: aload #16
     //   2031: aconst_null
-    //   2032: invokevirtual ExceptionInVPackage : (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
+    //   2032: invokevirtual ExceptionInVPackage :
+    // (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
     //   2035: invokevirtual ArrayListInZPackage : (LG/J;)LG/J;
     //   2038: pop
     //   2039: goto -> 2100
@@ -1129,7 +1137,8 @@ public class ManagerBinterfacebravo {
     //   2545: aload #16
     //   2547: aload #21
     //   2549: invokevirtual ArrayListInZPackage : ()Ljava/lang/String;
-    //   2552: invokevirtual ExceptionInVPackage : (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
+    //   2552: invokevirtual ExceptionInVPackage :
+    // (LG/R;Ljava/lang/String;LA/RInterfaceIndia;LB/RInterfaceIndia;Ljava/lang/String;)LG/J;
     //   2555: invokevirtual ArrayListInZPackage : (LG/J;)LG/J;
     //   2558: pop
     //   2559: goto -> 2678
@@ -1254,7 +1263,8 @@ public class ManagerBinterfacebravo {
     //   2851: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   2854: aconst_null
     //   2855: aload #26
-    //   2857: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   2857: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   2860: invokestatic ExceptionInVPackage : ()LG/aR;
     //   2863: aload #18
     //   2865: invokevirtual ExceptionInVPackage : ()Ljava/lang/String;
@@ -1345,7 +1355,8 @@ public class ManagerBinterfacebravo {
     //   3061: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   3064: aconst_null
     //   3065: aload #18
-    //   3067: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   3067: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   3070: aload #5
     //   3072: areturn
     // Exception table:
@@ -1378,30 +1389,39 @@ public class ManagerBinterfacebravo {
     //   2932	2998	3001	java/lang/Exception
     //   3034	3048	3051	V/ExceptionInVPackage
   }
-  
-  public ExceptionInVPackage ExceptionInVPackage(String paramString, File paramFile, r[] paramArrayOfr) {
+
+  public ExceptionInVPackage ExceptionInVPackage(
+      String paramString, File paramFile, r[] paramArrayOfr) {
     ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage();
     ExceptionInVPackage.h(BqInterfaceJuliet.u() + "Temp");
     ExceptionInVPackage.RInterfaceIndia("Temp");
     R r1 = new R();
     r1.ExceptionInVPackage(ExceptionInVPackage.u());
-    r1.ExceptionInVPackage((Map)ExceptionInVPackage.ExceptionInVPackage());
+    r1.ExceptionInVPackage((Map) ExceptionInVPackage.ExceptionInVPackage());
     if (paramArrayOfr != null) {
       for (byte BInterfaceBravo = 0; BInterfaceBravo < paramArrayOfr.length; BInterfaceBravo++)
-        r1.ExceptionInVPackage(paramArrayOfr[BInterfaceBravo]); 
+        r1.ExceptionInVPackage(paramArrayOfr[BInterfaceBravo]);
       ExceptionInVPackage.ExceptionInVPackage(paramArrayOfr);
-    } 
+    }
     ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
     ManagerUsingFile.ExceptionInVPackage(BInterfaceBravo());
     try {
       r1.q(ExceptionInVPackage.t());
       r1 = ManagerUsingFile.ExceptionInVPackage(r1, paramFile.getCanonicalPath());
-      r1.ArrayListInZPackage(ArrayListInZPackage.ExceptionInVPackage().ExceptionInVPackage(r1, ExceptionInVPackage.ba, AvInterfaceWhiskey.ArrayListInZPackage(), null, null));
+      r1.ArrayListInZPackage(
+          ArrayListInZPackage.ExceptionInVPackage()
+              .ExceptionInVPackage(
+                  r1,
+                  ExceptionInVPackage.ba,
+                  AvInterfaceWhiskey.ArrayListInZPackage(),
+                  null,
+                  null));
       r1.O().BInterfaceBravo(ExceptionInVPackage.r());
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Error loading Configuration based on \n" + paramFile.getAbsolutePath(), exception);
-    } 
+      throw new ExceptionInVPackage(
+          "Error loading Configuration based on \n" + paramFile.getAbsolutePath(), exception);
+    }
     ExceptionInVPackage.ExceptionInVPackage();
     ExceptionInVPackage.IOHashMap(paramFile.getName());
     t.ExceptionInVPackage(paramFile, ExceptionInVPackage.BqInterfaceJuliet());
@@ -1415,77 +1435,89 @@ public class ManagerBinterfacebravo {
       ExceptionInVPackage.o(ExceptionInVPackage.n());
     } else {
       ExceptionInVPackage.e();
-    } 
+    }
     ExceptionInVPackage.BInterfaceBravo();
     return ExceptionInVPackage;
   }
-  
-  public ExceptionInVPackage ExceptionInVPackage(String paramString1, String paramString2, File paramFile, r[] paramArrayOfr) {
+
+  public ExceptionInVPackage ExceptionInVPackage(
+      String paramString1, String paramString2, File paramFile, r[] paramArrayOfr) {
     ExceptionInVPackage ExceptionInVPackage = new ExceptionInVPackage();
-    ExceptionInVPackage.e(RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("poij fe07r32;lkjrew09345rv"));
+    ExceptionInVPackage.e(
+        RInterfaceIndia.ExceptionInVPackage().ExceptionInVPackage("poij fe07r32;lkjrew09345rv"));
     String str1 = BqInterfaceJuliet.u() + paramString1;
     ExceptionInVPackage.h(str1);
     ExceptionInVPackage.RInterfaceIndia(paramString1);
     R r1 = new R();
     r1.ExceptionInVPackage(ExceptionInVPackage.u());
-    r1.ExceptionInVPackage((Map)ExceptionInVPackage.ExceptionInVPackage());
+    r1.ExceptionInVPackage((Map) ExceptionInVPackage.ExceptionInVPackage());
     if (paramArrayOfr != null) {
       for (byte BInterfaceBravo = 0; BInterfaceBravo < paramArrayOfr.length; BInterfaceBravo++)
-        r1.ExceptionInVPackage(paramArrayOfr[BInterfaceBravo]); 
+        r1.ExceptionInVPackage(paramArrayOfr[BInterfaceBravo]);
       ExceptionInVPackage.ExceptionInVPackage(paramArrayOfr);
-    } 
+    }
     ManagerUsingFile ManagerUsingFile = new ManagerUsingFile();
     RInterfaceIndia RInterfaceIndia = BqInterfaceJuliet.d(new File(str1));
     try {
       r1.q(ExceptionInVPackage.t());
       r1 = ManagerUsingFile.ExceptionInVPackage(r1, paramFile.getCanonicalPath());
-      r1.ArrayListInZPackage(ArrayListInZPackage.ExceptionInVPackage().ExceptionInVPackage(r1, ExceptionInVPackage.ba, AvInterfaceWhiskey.ArrayListInZPackage(), RInterfaceIndia, null));
+      r1.ArrayListInZPackage(
+          ArrayListInZPackage.ExceptionInVPackage()
+              .ExceptionInVPackage(
+                  r1,
+                  ExceptionInVPackage.ba,
+                  AvInterfaceWhiskey.ArrayListInZPackage(),
+                  RInterfaceIndia,
+                  null));
       T.ExceptionInVPackage().ExceptionInVPackage(r1);
       r1.O().BInterfaceBravo(ExceptionInVPackage.r());
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Error loading Configuration based on \n" + paramFile.getAbsolutePath(), exception);
-    } 
+      throw new ExceptionInVPackage(
+          "Error loading Configuration based on \n" + paramFile.getAbsolutePath(), exception);
+    }
     ExceptionInVPackage.ExceptionInVPackage();
     ExceptionInVPackage.IOHashMap(paramFile.getName());
-    String str2 = paramFile.getName().toLowerCase().endsWith(".ecu") ? "mainController.ecu" : "mainController.ini";
+    String str2 =
+        paramFile.getName().toLowerCase().endsWith(".ecu")
+            ? "mainController.ecu"
+            : "mainController.ini";
     ExceptionInVPackage.IOHashMap(str2);
     t.ExceptionInVPackage(paramFile, ExceptionInVPackage.BqInterfaceJuliet());
     String str3 = "Project " + paramString1;
-    if (BInterfaceBravo.ArrayListInZPackage().d() != null && !BInterfaceBravo.ArrayListInZPackage().d().e().isEmpty()) {
+    if (BInterfaceBravo.ArrayListInZPackage().d() != null
+        && !BInterfaceBravo.ArrayListInZPackage().d().e().isEmpty()) {
       str3 = str3 + "\nfor serial Number: " + BInterfaceBravo.ArrayListInZPackage().d().e();
       ExceptionInVPackage.ArrayListInZPackage(paramString1, IOHashMap.ExceptionInVPackage);
-    } 
+    }
     ExceptionInVPackage.p(str3);
     ExceptionInVPackage.ExceptionInVPackage(paramArrayOfr);
     Z z = (new aa()).ExceptionInVPackage(r1, "FrontPage", 2, 4);
     z.BInterfaceBravo(paramString2);
     ArrayListInZPackage ArrayListInZPackage = new ArrayListInZPackage(BqInterfaceJuliet.G());
     if (!ExceptionInVPackage.IOHashMap().exists())
-      ArrayListInZPackage.ExceptionInVPackage(ExceptionInVPackage.IOHashMap().getAbsolutePath(), z); 
+      ArrayListInZPackage.ExceptionInVPackage(ExceptionInVPackage.IOHashMap().getAbsolutePath(), z);
     ExceptionInVPackage.o(ExceptionInVPackage.n());
     if (r1.C() instanceof IOHashMap) {
-      IO IO = ((IOHashMap)r1.C()).ExceptionInVPackage();
+      IO IO = ((IOHashMap) r1.C()).ExceptionInVPackage();
       BqInterfaceJuliet.ExceptionInVPackage().ExceptionInVPackage(paramString1, IO.h());
       BqInterfaceJuliet.ExceptionInVPackage().ExceptionInVPackage(paramString1, IO);
       AInterfaceVictor.ExceptionInVPackage().ExceptionInVPackage(paramString1, IO.h());
       AInterfaceVictor.ExceptionInVPackage().ExceptionInVPackage(paramString1, IO);
-    } 
-    if (ExceptionInVPackage.U())
-      ExceptionInVPackage.e(); 
+    }
+    if (ExceptionInVPackage.U()) ExceptionInVPackage.e();
     ExceptionInVPackage.BInterfaceBravo();
     return ExceptionInVPackage;
   }
-  
+
   public boolean ExceptionInVPackage() {
     return this.ExceptionInVPackage;
   }
-  
+
   public static boolean BInterfaceBravo() {
     return BInterfaceBravo;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ie.class
  * Java compiler version: 8 (52.0)

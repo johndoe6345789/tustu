@@ -1,8 +1,8 @@
 package business.button_builders;
 
-import ae.FileUsingHashMap;
 import ae.AeInterfaceLima;
 import ae.AeInterfaceXray;
+import ae.FileUsingHashMap;
 import com.efiAnalytics.ui.bV;
 import java.io.File;
 import java.io.IOException;
@@ -13,29 +13,38 @@ import s.SComponentGolf;
 
 class ThreadedInBbPackage extends Thread {
   ThreadedInBbPackage(E paramE, File paramFile, JDialog paramJDialog) {}
-  
+
   public void run() {
     try {
-      FileUsingHashMap FileUsingHashMap = AeInterfaceLima.IOPropertiesUsingFile(this.IOPropertiesUsingFile);
+      FileUsingHashMap FileUsingHashMap =
+          AeInterfaceLima.IOPropertiesUsingFile(this.IOPropertiesUsingFile);
       if (FileUsingHashMap != null && FileUsingHashMap.IOPropertiesUsingFile()) {
         this.c.f.setSelected(true);
         this.c.e.setText(this.IOPropertiesUsingFile.getAbsolutePath());
         this.c.e.setEnabled(true);
         this.c.IOPropertiesUsingFile(FileUsingHashMap);
-        IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.E, this.IOPropertiesUsingFile.getParentFile().getAbsolutePath());
+        IOPropertiesUsingFile.IOPropertiesUsingFile()
+            .b(
+                IOPropertiesUsingFile.E,
+                this.IOPropertiesUsingFile.getParentFile().getAbsolutePath());
       } else {
-        bV.d(SComponentGolf.b("The selected file does not appear to be IOPropertiesUsingFile firmware file."), this.b);
+        bV.d(
+            SComponentGolf.b(
+                "The selected file does not appear to be IOPropertiesUsingFile firmware file."),
+            this.b);
         this.c.f.setSelected(false);
         this.c.e.setText("");
         this.c.e.setEnabled(false);
-      } 
+      }
     } catch (AeInterfaceXray AeInterfaceXray) {
       bV.d(SComponentGolf.b(AeInterfaceXray.getMessage()), this.b);
       this.c.f.setSelected(false);
       this.c.e.setText("");
       this.c.e.setEnabled(false);
     } catch (IOException iOException) {
-      bV.d(SComponentGolf.b("Error Reading File.") + "\n" + iOException.getLocalizedMessage(), this.b);
+      bV.d(
+          SComponentGolf.b("Error Reading File.") + "\n" + iOException.getLocalizedMessage(),
+          this.b);
       this.c.f.setSelected(false);
       this.c.e.setText("");
       this.c.e.setEnabled(false);
@@ -54,10 +63,9 @@ class ThreadedInBbPackage extends Thread {
     } finally {
       J j = new J(this);
       SwingUtilities.invokeLater(j);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bb/I.class
  * Java compiler version: 8 (52.0)

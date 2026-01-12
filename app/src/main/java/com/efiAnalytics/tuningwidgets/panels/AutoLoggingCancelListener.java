@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class AutoLoggingCancelListener implements ActionListener {
   AutoLoggingCancelListener(AutoLoggingTriggerPanel paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.close();
     this.a.p.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/i.class
  * Java compiler version: 8 (52.0)

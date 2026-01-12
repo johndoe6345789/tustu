@@ -28,16 +28,22 @@ import s.SComponentGolf;
 
 public class JDialogExtensionInUPackage extends JDialog {
   File CInterfaceAlpha;
-  
+
   ArrayList b;
-  
+
   ArrayList c;
-  
+
   dz d;
-  
+
   d e;
-  
-  public JDialogExtensionInUPackage(Window paramWindow, R paramR1, R paramR2, ArrayList paramArrayList1, ArrayList paramArrayList2, File paramFile) {
+
+  public JDialogExtensionInUPackage(
+      Window paramWindow,
+      R paramR1,
+      R paramR2,
+      ArrayList paramArrayList1,
+      ArrayList paramArrayList2,
+      File paramFile) {
     super(paramWindow, SComponentGolf.b("Difference Report"), Dialog.DEFAULT_MODALITY_TYPE);
     String str1;
     this.CInterfaceAlpha = null;
@@ -57,9 +63,24 @@ public class JDialogExtensionInUPackage extends JDialog {
       setDefaultCloseOperation(0);
     } else {
       str1 = paramFile.getName();
-    } 
-    String str2 = "<html><center><b>" + SComponentGolf.b("Difference Report") + ":</b><br>" + SComponentGolf.b("There are differences between the settings currently in " + CInterfaceAlpha.b + " and the settings") + "<br>" + SComponentGolf.b("that were found in the") + " " + str1 + ". ";
-    str2 = str2 + SComponentGolf.b("You must select which settings you wish to use.") + "</center></html>";
+    }
+    String str2 =
+        "<html><center><b>"
+            + SComponentGolf.b("Difference Report")
+            + ":</b><br>"
+            + SComponentGolf.b(
+                "There are differences between the settings currently in "
+                    + CInterfaceAlpha.b
+                    + " and the settings")
+            + "<br>"
+            + SComponentGolf.b("that were found in the")
+            + " "
+            + str1
+            + ". ";
+    str2 =
+        str2
+            + SComponentGolf.b("You must select which settings you wish to use.")
+            + "</center></html>";
     jTextPane.setText(str2);
     jTextPane.putClientProperty("JEditorPane.honorDisplayProperties", Boolean.valueOf(true));
     jPanel1.add("Center", jTextPane);
@@ -73,7 +94,7 @@ public class JDialogExtensionInUPackage extends JDialog {
     ManagerBfcomponentcharlie.CInterfaceAlpha().CInterfaceAlpha(false);
     this.e = new d(paramR1, paramR2, paramArrayList1);
     this.d = new dz(this.e, SComponentGolf.d());
-    add("Center", (Component)this.d);
+    add("Center", (Component) this.d);
     k k = new k(this, getContentPane());
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(1, 0));
@@ -87,10 +108,15 @@ public class JDialogExtensionInUPackage extends JDialog {
       jPanel.add(CInterfaceAlpha);
       jPanel3.add(jPanel);
       k.CInterfaceAlpha(CInterfaceAlpha);
-      if (b1++ < 1)
-        CInterfaceAlpha.requestFocus(); 
-      str3 = str3 + "<b>" + SComponentGolf.b(SComponentGolf.CInterfaceAlpha()) + " - </b>" + SComponentGolf.b(SComponentGolf.b()) + "<br><br>";
-    } 
+      if (b1++ < 1) CInterfaceAlpha.requestFocus();
+      str3 =
+          str3
+              + "<b>"
+              + SComponentGolf.b(SComponentGolf.CInterfaceAlpha())
+              + " - </b>"
+              + SComponentGolf.b(SComponentGolf.b())
+              + "<br><br>";
+    }
     str3 = str3 + "</body></html>";
     JPanel jPanel4 = new JPanel();
     jPanel4.setToolTipText(str3);
@@ -98,16 +124,16 @@ public class JDialogExtensionInUPackage extends JDialog {
     jPanel4.add("Center", jPanel3);
     add("South", jPanel4);
     cI cI = new cI(str3);
-    k.CInterfaceAlpha((Component)cI);
-    jPanel4.add("East", (Component)cI);
+    k.CInterfaceAlpha((Component) cI);
+    jPanel4.add("East", (Component) cI);
     pack();
     Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
     dimension.height -= eJ.CInterfaceAlpha(100);
-    setSize(getWidth() + (this.d.CInterfaceAlpha().getVerticalScrollBar().getPreferredSize()).width, getHeight());
-    if (getWidth() < dimension.width)
-      dimension.width = getWidth(); 
-    if (getHeight() > dimension.height)
-      setSize(dimension); 
+    setSize(
+        getWidth() + (this.d.CInterfaceAlpha().getVerticalScrollBar().getPreferredSize()).width,
+        getHeight());
+    if (getWidth() < dimension.width) dimension.width = getWidth();
+    if (getHeight() > dimension.height) setSize(dimension);
     j j = new j(this);
     j.addMouseListener(k);
     j.addMouseMotionListener(k);
@@ -115,45 +141,43 @@ public class JDialogExtensionInUPackage extends JDialog {
     k.CInterfaceAlpha(this.d.CInterfaceAlpha().getVerticalScrollBar());
     byte b2;
     for (b2 = 0; b2 < this.d.CInterfaceAlpha().getHorizontalScrollBar().getComponentCount(); b2++)
-      k.CInterfaceAlpha(this.d.CInterfaceAlpha().getHorizontalScrollBar().getComponent(b2)); 
+      k.CInterfaceAlpha(this.d.CInterfaceAlpha().getHorizontalScrollBar().getComponent(b2));
     for (b2 = 0; b2 < this.d.CInterfaceAlpha().getVerticalScrollBar().getComponentCount(); b2++)
-      k.CInterfaceAlpha(this.d.CInterfaceAlpha().getVerticalScrollBar().getComponent(b2)); 
+      k.CInterfaceAlpha(this.d.CInterfaceAlpha().getVerticalScrollBar().getComponent(b2));
     k.CInterfaceAlpha(this.d.b());
     k.CInterfaceAlpha(this.d.c());
     JRootPane jRootPane = getRootPane();
     jRootPane.setGlassPane(j);
     j.CInterfaceAlpha();
   }
-  
+
   public boolean CInterfaceAlpha() {
     return this.e.b.isEmpty();
   }
-  
+
   public void dispose() {
     this.e.close();
     D.d("Difference Report enabling shared table Models");
     ManagerBfcomponentcharlie.CInterfaceAlpha().CInterfaceAlpha(true);
     super.dispose();
   }
-  
+
   public boolean b() {
     Iterator<SComponentGolf> iterator = this.c.iterator();
     while (iterator.hasNext()) {
-      if (((SComponentGolf)iterator.next()).c())
-        return true; 
-    } 
+      if (((SComponentGolf) iterator.next()).c()) return true;
+    }
     return false;
   }
-  
+
   public void CInterfaceAlpha(f paramf) {
     this.b.add(paramf);
   }
-  
+
   public void b(f paramf) {
     this.b.remove(paramf);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/u/h.class
  * Java compiler version: 8 (52.0)

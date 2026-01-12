@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class BcInterfaceMike implements ActionListener {
   BcInterfaceMike(k paramk) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     k.a(this.a);
     this.a.d.g();
@@ -13,7 +13,6 @@ class BcInterfaceMike implements ActionListener {
     this.a.f.setEnabled(false);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bC/m.class
  * Java compiler version: 8 (52.0)

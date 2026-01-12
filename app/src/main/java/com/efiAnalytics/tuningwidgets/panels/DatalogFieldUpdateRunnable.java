@@ -2,12 +2,11 @@ package com.efiAnalytics.tuningwidgets.panels;
 
 class DatalogFieldUpdateRunnable implements Runnable {
   DatalogFieldUpdateRunnable(DatalogFieldSelectorPanel paramn) {}
-  
+
   public void run() {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/y.class
  * Java compiler version: 8 (52.0)

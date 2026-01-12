@@ -35,33 +35,43 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 public class Staging implements ActionListener {
   JTextPane a = new JTextPane();
-  
+
   JLabel b = new JLabel("Waiting for Application to Exit.");
-  
+
   JButton c = new JButton("Cancel");
-  
+
   public static String d = i();
-  
+
   private static String f = "File Still Locked, waiting.";
-  
+
   public static String e = "Successful";
-  
-  private static String g = "<html><body><center><h1>Completing EFI Analytics Update</h1></center>Please wait while updated files are extracted. <br>This may take a moment. <br><br>Please wait....<br></body></html>";
-  
-  private static String h = "<html><body><center><h1>Completing EFI Analytics Update</h1></center>If You see a message of locked files, <br>make sure all instances of " + d + " are closed. <br><br>Please wait....<br></body></html>";
-  
-  private static String i = "<html><body><center><h1>Completing EFI Analytics Update</h1></center>Restarting " + d + ", <br><br>Please wait....<br></body></html>";
-  
+
+  private static String g =
+      "<html><body><center><h1>Completing EFI Analytics Update</h1></center>Please wait while"
+          + " updated files are extracted. <br>This may take a moment. <br><br>Please"
+          + " wait....<br></body></html>";
+
+  private static String h =
+      "<html><body><center><h1>Completing EFI Analytics Update</h1></center>If You see a message of"
+          + " locked files, <br>make sure all instances of "
+          + d
+          + " are closed. <br><br>Please wait....<br></body></html>";
+
+  private static String i =
+      "<html><body><center><h1>Completing EFI Analytics Update</h1></center>Restarting "
+          + d
+          + ", <br><br>Please wait....<br></body></html>";
+
   private static String j = "DIE";
-  
+
   private HashMap k = new HashMap<>();
-  
+
   private static float l = -1.0F;
-  
+
   public Staging() {
     d();
   }
-  
+
   public static void main(String[] paramArrayOfString) {
     File file1 = new File(".", "Staging.log");
     try {
@@ -71,16 +81,15 @@ public class Staging implements ActionListener {
       System.setErr(printStream);
     } catch (Exception exception) {
       System.out.println("Error creating log file Output");
-    } 
+    }
     System.out.println("Updated: " + (new Date()).toString());
     System.out.println("Completing Installation, args: ");
     if (paramArrayOfString == null) {
       System.out.println("null");
     } else {
       System.out.println("args len: " + paramArrayOfString.length);
-      for (String str : paramArrayOfString)
-        System.out.println(str); 
-    } 
+      for (String str : paramArrayOfString) System.out.println(str);
+    }
     Staging staging = new Staging();
     JFrame jFrame = null;
     byte b = 0;
@@ -91,29 +100,30 @@ public class Staging implements ActionListener {
       if (arrayOfString[b1].endsWith("temp") || arrayOfString[b1].toLowerCase().endsWith(".zip")) {
         jFrame = staging.f();
         break;
-      } 
-    } 
+      }
+    }
     b1 = 0;
     byte b2;
     for (b2 = 0; b2 < arrayOfString.length; b2++) {
       if (arrayOfString[b2].toLowerCase().endsWith(".zip")) {
         b1 = 1;
         break;
-      } 
-    } 
+      }
+    }
     if (b1 != 0 && !a()) {
       System.out.println("zip files detected on non windows");
       try {
-        Process process = Runtime.getRuntime().exec(new String[] { "bash", "-c", "chmod -R 777 *" });
+        Process process = Runtime.getRuntime().exec(new String[] {"bash", "-c", "chmod -R 777 *"});
         process.waitFor();
       } catch (Exception exception) {
         exception.printStackTrace();
-      } 
-    } 
+      }
+    }
     h();
     try {
       Thread.sleep(2000L);
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     arrayOfString = file2.list();
     for (b2 = 0; b2 < arrayOfString.length; b2++) {
       if (arrayOfString[b2].toLowerCase().endsWith(".zip")) {
@@ -121,17 +131,17 @@ public class Staging implements ActionListener {
         String str = arrayOfString[b2].substring(0, arrayOfString[b2].length() - 4);
         staging.b.setText("Updating files in: " + str);
         try {
-          if (a(arrayOfString[b2], arrayOfString[b2].replace(".zip", ""), (String)null).equals(e))
-            (new File(arrayOfString[b2])).delete(); 
+          if (a(arrayOfString[b2], arrayOfString[b2].replace(".zip", ""), (String) null).equals(e))
+            (new File(arrayOfString[b2])).delete();
         } catch (ZipException zipException) {
           staging.b.setText("ERROR While Extracting: " + arrayOfString[b2]);
           zipException.printStackTrace();
         } catch (IOException iOException) {
           staging.b.setText("ERROR While Extracting: " + arrayOfString[b2]);
           iOException.printStackTrace();
-        } 
-      } 
-    } 
+        }
+      }
+    }
     staging.a.setText(h);
     while (b++ >= 0) {
       arrayOfString = file2.list();
@@ -148,34 +158,36 @@ public class Staging implements ActionListener {
               if (file4.renameTo(new File(str2))) {
                 staging.b.setText("Updated File: " + file3.getName());
               } else {
-                System.out.println("Error completing installation. Unable to rename new file to " + file3.getName());
+                System.out.println(
+                    "Error completing installation. Unable to rename new file to "
+                        + file3.getName());
                 staging.b.setText("Unable to rename new file to " + file3.getName());
                 b2 = 0;
-              } 
+              }
             } else {
               f += ".";
               staging.b.setText(f);
               b2 = 0;
-            } 
+            }
           } else {
             staging.b.setText("Updated File: " + file3.getName());
             System.out.println("Updated File: " + file3.getName());
-          } 
-        } 
-      } 
-      if (b == 15)
-        staging.c.setEnabled(true); 
+          }
+        }
+      }
+      if (b == 15) staging.c.setEnabled(true);
       h();
       if (b2 != 0) {
         b = -2;
         staging.b.setText("Completed File Updates, Restarting Application.");
         System.out.println("Completed File Updates, Restarting Application.");
         break;
-      } 
+      }
       try {
         Thread.sleep(2000L);
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
     if (paramArrayOfString != null && paramArrayOfString.length > 0) {
       String str = paramArrayOfString[0];
       str = b(str, "(Beta)", "");
@@ -185,27 +197,25 @@ public class Staging implements ActionListener {
           File file = (new File(".")).getAbsoluteFile();
           System.out.println("Setting launch dir to:\n" + file.getAbsolutePath());
           System.out.println("Launching app:\n" + str);
-          Process process = Runtime.getRuntime().exec(str, (String[])null, file);
+          Process process = Runtime.getRuntime().exec(str, (String[]) null, file);
           try {
             Thread.sleep(2000L);
           } catch (Exception exception) {
             exception.printStackTrace();
-          } 
-          if (jFrame != null)
-            jFrame.dispose(); 
-          BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+          }
+          if (jFrame != null) jFrame.dispose();
+          BufferedReader bufferedReader =
+              new BufferedReader(new InputStreamReader(process.getInputStream()));
           String str1;
-          while ((str1 = bufferedReader.readLine()) != null)
-            System.out.println(str1); 
+          while ((str1 = bufferedReader.readLine()) != null) System.out.println(str1);
           bufferedReader.close();
         } catch (Exception exception) {
           exception.printStackTrace();
-        }  
-    } 
-    if (jFrame != null)
-      jFrame.dispose(); 
+        }
+    }
+    if (jFrame != null) jFrame.dispose();
   }
-  
+
   private JFrame f() {
     JFrame jFrame = new JFrame("Completing Auto Update");
     jFrame.setLayout(new BorderLayout(8, 8));
@@ -243,47 +253,61 @@ public class Staging implements ActionListener {
     jFrame.setAlwaysOnTop(true);
     return jFrame;
   }
-  
+
   private void g() {
-    String str = "<html><body><center><h1>Update Cancelled</h1></center>It is taking an excessively long time to update all files.<br><br>Some files appear to be locked, this usually indicates<br> there is still and instance of " + d + " running.<br>Make sure all instances of " + d + " are closed, <br>reboot your computer if nessecary.<br><br>Then Run " + d + " as Administrator.<br>The update will then be completed automatically.</body></html>";
+    String str =
+        "<html><body><center><h1>Update Cancelled</h1></center>It is taking an excessively long"
+            + " time to update all files.<br><br>Some files appear to be locked, this usually"
+            + " indicates<br> there is still and instance of "
+            + d
+            + " running.<br>Make sure all instances of "
+            + d
+            + " are closed, <br>reboot your computer if nessecary.<br><br>Then Run "
+            + d
+            + " as Administrator.<br>The update will then be completed"
+            + " automatically.</body></html>";
     JOptionPane.showMessageDialog(this.c, str);
     System.exit(0);
   }
-  
+
   private static String b(String paramString1, String paramString2, String paramString3) {
     for (int i = paramString1.indexOf(paramString2); i >= 0; i = paramString1.indexOf(paramString2))
-      paramString1 = paramString1.substring(0, i) + paramString3 + paramString1.substring(i + paramString2.length()); 
+      paramString1 =
+          paramString1.substring(0, i)
+              + paramString3
+              + paramString1.substring(i + paramString2.length());
     return paramString1;
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    if (paramActionEvent.getSource().equals(this.c))
-      g(); 
+    if (paramActionEvent.getSource().equals(this.c)) g();
   }
-  
+
   public static boolean a() {
     String str = System.getProperty("os.name", "Windows");
     return str.startsWith("Win");
   }
-  
+
   public static String a(String paramString1, String paramString2, String paramString3) {
     ZipFile zipFile = new ZipFile(paramString1);
     Enumeration<? extends ZipEntry> enumeration = zipFile.entries();
     while (enumeration.hasMoreElements()) {
       ZipEntry zipEntry = enumeration.nextElement();
       String str = zipEntry.getName();
-      if (str.length() > 4)
-        str = str.substring(str.length() - 4, str.length()).toLowerCase(); 
-      if (paramString3 == null || zipEntry.isDirectory() || str.equals(".jpg") || str.equals("jpeg") || str.equals(".gif")) {
+      if (str.length() > 4) str = str.substring(str.length() - 4, str.length()).toLowerCase();
+      if (paramString3 == null
+          || zipEntry.isDirectory()
+          || str.equals(".jpg")
+          || str.equals("jpeg")
+          || str.equals(".gif")) {
         String str1 = a(zipFile, zipEntry, paramString2);
-        if (!str1.equals(e))
-          return str1; 
-      } 
-    } 
+        if (!str1.equals(e)) return str1;
+      }
+    }
     zipFile.close();
     return e;
   }
-  
+
   public static String a(ZipFile paramZipFile, ZipEntry paramZipEntry, String paramString) {
     InputStream inputStream = paramZipFile.getInputStream(paramZipEntry);
     File file1 = new File(paramString + "/" + paramZipEntry.getName());
@@ -294,20 +318,19 @@ public class Staging implements ActionListener {
     if (paramZipEntry.isDirectory()) {
       file1.mkdir();
     } else {
-      if (file1.exists())
-        file1.delete(); 
+      if (file1.exists()) file1.delete();
       file1.createNewFile();
-      BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file1));
+      BufferedOutputStream bufferedOutputStream =
+          new BufferedOutputStream(new FileOutputStream(file1));
       int i;
-      while ((i = inputStream.read()) != -1)
-        bufferedOutputStream.write(i); 
+      while ((i = inputStream.read()) != -1) bufferedOutputStream.write(i);
       bufferedOutputStream.flush();
       bufferedOutputStream.close();
-    } 
+    }
     inputStream.close();
     return e;
   }
-  
+
   private static void h() {
     try {
       File file = new File(b(), d + ".pipe");
@@ -318,57 +341,50 @@ public class Staging implements ActionListener {
       fileOutputStream.close();
       file.deleteOnExit();
     } catch (IOException iOException) {
-      Logger.getLogger(Staging.class.getName()).log(Level.WARNING, "Unable to create instance monitor file", iOException);
-    } 
+      Logger.getLogger(Staging.class.getName())
+          .log(Level.WARNING, "Unable to create instance monitor file", iOException);
+    }
   }
-  
+
   public static File b() {
     File file = new File(c() + ".efiAnalytics" + File.separator + d + File.separator);
-    if (!file.exists())
-      file.mkdirs(); 
+    if (!file.exists()) file.mkdirs();
     return file;
   }
-  
+
   public static String c() {
     return System.getProperty("user.home") + File.separator;
   }
-  
+
   private static String i() {
     File file = new File("BigComm.properties");
-    if (file.exists())
-      return "BigComm"; 
+    if (file.exists()) return "BigComm";
     file = new File("FuelMonster.properties");
-    if (file.exists())
-      return "Fuel Monster"; 
+    if (file.exists()) return "Fuel Monster";
     file = new File("TuneMonster.properties");
-    if (file.exists())
-      return "Tune Monster"; 
+    if (file.exists()) return "Tune Monster";
     file = new File("BigCommGen4.properties");
-    if (file.exists())
-      return "BigComm Gen4"; 
+    if (file.exists()) return "BigComm Gen4";
     file = new File("TunerStudio.properties");
-    if (file.exists())
-      return "TunerStudio"; 
+    if (file.exists()) return "TunerStudio";
     file = new File("TSDash.properties");
-    if (file.exists())
-      return "TS Dash"; 
+    if (file.exists()) return "TS Dash";
     file = new File("MegaLogViewer.properties");
-    if (file.exists())
-      return "MegaLogViewer"; 
+    if (file.exists()) return "MegaLogViewer";
     file = new File("HogLogViewer.properties");
-    if (file.exists())
-      return "MegaLogViewer"; 
+    if (file.exists()) return "MegaLogViewer";
     file = new File("BigStuff3.properties");
     return file.exists() ? "MegaLogViewer" : "TunerStudio";
   }
-  
+
   public void d() {
     boolean bool = (a() && UIManager.getLookAndFeel().isNativeLookAndFeel()) ? true : false;
     try {
       UIManager.setLookAndFeel(UIManager.getLookAndFeel());
     } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
-      Logger.getLogger(Staging.class.getName()).log(Level.SEVERE, (String)null, unsupportedLookAndFeelException);
-    } 
+      Logger.getLogger(Staging.class.getName())
+          .log(Level.SEVERE, (String) null, unsupportedLookAndFeelException);
+    }
     Font font1 = UIManager.getFont("Label.font");
     byte b = 12;
     int i = e();
@@ -384,54 +400,54 @@ public class Staging implements ActionListener {
       if (object != null && object.toString().toLowerCase().contains("font")) {
         Font font = UIManager.getFont(object);
         if (font != null && !bool) {
-          Float float_ = (Float)this.k.get(object);
+          Float float_ = (Float) this.k.get(object);
           if (float_ == null) {
             this.k.put(object, Float.valueOf(font.getSize2D()));
             float_ = Float.valueOf(font.getSize2D());
-          } 
-          Font font3 = new Font(font.getFamily(), font.getStyle(), Math.round(a(float_.floatValue() * f)));
+          }
+          Font font3 =
+              new Font(font.getFamily(), font.getStyle(), Math.round(a(float_.floatValue() * f)));
           UIManager.put(object, font3);
         } else if (font == null) {
           System.out.println("no update:" + object);
-        } 
+        }
       } else if (object != null && object.toString().equals("ScrollBar.width")) {
         System.out.println(object);
         if (UIManager.getInt(object) < 20)
-          UIManager.put(object, Float.valueOf(a(UIManager.getInt(object)))); 
+          UIManager.put(object, Float.valueOf(a(UIManager.getInt(object))));
       } else if (UIManager.get(object) instanceof Font) {
         System.out.println("no update:" + object);
-      } 
-    } 
+      }
+    }
     if (font2 != null) {
-      Font font = new Font(font2.getFamily(), font2.getStyle(), (int)a(12.0F));
+      Font font = new Font(font2.getFamily(), font2.getStyle(), (int) a(12.0F));
       UIManager.getLookAndFeel().getDefaults().put("defaultFont", font);
-    } 
+    }
   }
-  
+
   public static int e() {
     byte b = 12;
     if (a()) {
       int i = Toolkit.getDefaultToolkit().getScreenResolution();
       return Math.round(b * i / 96.0F);
-    } 
+    }
     return b;
   }
-  
+
   public static float a(float paramFloat) {
     return a() ? (paramFloat * j() / 96.0F) : paramFloat;
   }
-  
+
   private static float j() {
     if (l < 0.0F)
       try {
         l = Toolkit.getDefaultToolkit().getScreenResolution();
       } catch (Error error) {
         l = Toolkit.getDefaultToolkit().getScreenResolution();
-      }  
+      }
     return l;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/Staging.class
  * Java compiler version: 8 (52.0)

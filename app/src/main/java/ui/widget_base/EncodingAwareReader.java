@@ -24,7 +24,7 @@ public class EncodingAwareReader {
           str1 = "UTF-8";
         } else {
           str1 = "ISO-8859-1";
-        } 
+        }
         String str2 = new String(arrayOfByte, str1);
         StringReader stringReader = new StringReader(str2);
         bufferedReader = new BufferedReader(stringReader);
@@ -37,16 +37,16 @@ public class EncodingAwareReader {
           str = "UTF-8";
         } else {
           str = "ISO-8859-1";
-        } 
+        }
         FileInputStream fileInputStream = new FileInputStream(paramFile);
         bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, str));
-      } 
+      }
     } catch (UnsupportedEncodingException unsupportedEncodingException) {
       throw new IOException("Unsupported Encoding");
-    } 
+    }
     return bufferedReader;
   }
-  
+
   public static BufferedReader a(File paramFile, String paramString) {
     BufferedReader bufferedReader;
     try {
@@ -58,7 +58,7 @@ public class EncodingAwareReader {
           str1 = "UTF-8";
         } else {
           str1 = "ISO-8859-1";
-        } 
+        }
         String str2 = new String(arrayOfByte, str1);
         StringReader stringReader = new StringReader(str2);
         bufferedReader = new BufferedReader(stringReader);
@@ -71,16 +71,16 @@ public class EncodingAwareReader {
           str = "UTF-8";
         } else {
           str = "ISO-8859-1";
-        } 
+        }
         FileInputStream fileInputStream = new FileInputStream(paramFile);
         bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, str));
-      } 
+      }
     } catch (UnsupportedEncodingException unsupportedEncodingException) {
       throw new IOException("Unsupported Encoding");
-    } 
+    }
     return bufferedReader;
   }
-  
+
   public static BufferedReader b(File paramFile) {
     BufferedReader bufferedReader;
     try {
@@ -96,34 +96,35 @@ public class EncodingAwareReader {
           str = "UTF-8";
         } else {
           str = "ISO-8859-1";
-        } 
+        }
         FileInputStream fileInputStream = new FileInputStream(paramFile);
         bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, str));
-      } 
+      }
     } catch (UnsupportedEncodingException unsupportedEncodingException) {
       throw new IOException("Unsupported Encoding");
-    } 
+    }
     return bufferedReader;
   }
-  
+
   private static boolean c(File paramFile) {
     byte[] arrayOfByte = new byte[3];
     FileInputStream fileInputStream = null;
     try {
       fileInputStream = new FileInputStream(paramFile);
       fileInputStream.read(arrayOfByte);
-      if (arrayOfByte[0] == -17 && arrayOfByte[1] == -69 && arrayOfByte[2] == -65)
-        return true; 
+      if (arrayOfByte[0] == -17 && arrayOfByte[1] == -69 && arrayOfByte[2] == -65) return true;
     } catch (FileNotFoundException fileNotFoundException) {
       return false;
     } catch (IOException iOException) {
-      Logger.getLogger(s.class.getName()).log(Level.WARNING, "Failed to read file in BOM check", iOException);
+      Logger.getLogger(s.class.getName())
+          .log(Level.WARNING, "Failed to read file in BOM check", iOException);
       return false;
     } finally {
       try {
         fileInputStream.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
     BufferedReader bufferedReader = null;
     try {
       bufferedReader = new BufferedReader(new FileReader(paramFile));
@@ -137,32 +138,36 @@ public class EncodingAwareReader {
     } finally {
       try {
         bufferedReader.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
   }
-  
+
   private static boolean a(byte[] paramArrayOfbyte) {
     try {
       byte b;
-      for (b = 0; b < 'Ǵ' && paramArrayOfbyte[b] != 10; b++);
+      for (b = 0; b < 'Ǵ' && paramArrayOfbyte[b] != 10; b++)
+        ;
       byte[] arrayOfByte = new byte[b];
       System.arraycopy(paramArrayOfbyte, 0, arrayOfByte, 0, arrayOfByte.length);
       String str = new String(arrayOfByte, "UTF-8");
       return a(str);
     } catch (Exception exception) {
       return false;
-    } 
+    }
   }
-  
+
   private static boolean a(String paramString) {
     if (paramString != null && paramString.contains("=")) {
       String str = paramString.substring(paramString.indexOf("=") + 1);
-      return (str.contains("UTF-8") || str.contains("UTF8") || str.contains("utf-8") || str.contains("utf8"));
-    } 
+      return (str.contains("UTF-8")
+          || str.contains("UTF8")
+          || str.contains("utf-8")
+          || str.contains("utf8"));
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/s.class
  * Java compiler version: 8 (52.0)

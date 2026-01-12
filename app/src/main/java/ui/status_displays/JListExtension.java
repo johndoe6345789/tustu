@@ -6,7 +6,7 @@ import javax.swing.JList;
 
 class JListExtension extends JList {
   DefaultListModel a = null;
-  
+
   JListExtension(s params) {
     this.a = new DefaultListModel();
     setCellRenderer(new C(params));
@@ -14,18 +14,17 @@ class JListExtension extends JList {
     setSelectionMode(0);
     setVisibleRowCount(12);
   }
-  
+
   public void a(FileInWPackage paramag) {
     B b = new B(this.b, paramag);
     this.a.add(0, b);
   }
-  
+
   public FileInWPackage a() {
-    B b = (B)getSelectedValue();
+    B b = (B) getSelectedValue();
     return (b != null) ? b.a : null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/A.class
  * Java compiler version: 8 (52.0)

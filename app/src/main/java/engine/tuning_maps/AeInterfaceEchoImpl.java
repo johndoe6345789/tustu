@@ -1,8 +1,8 @@
 package aP;
 
 import G.R;
-import aE.PropertiesExtension;
 import aE.AeInterfaceEcho;
+import aE.PropertiesExtension;
 import com.efiAnalytics.apps.ts.dashboard.x;
 import com.efiAnalytics.ui.dn;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import javax.swing.SwingUtilities;
 
 class AeInterfaceEchoImpl implements AeInterfaceEcho {
   final AeInterfaceEcho PropertiesExtension = this;
-  
+
   dr(dl paramdl) {}
-  
+
   public void PropertiesExtension(PropertiesExtension parama, R paramR) {
     bW bW = dd.PropertiesExtension().h();
     int i = dn.b();
@@ -28,23 +28,22 @@ class AeInterfaceEchoImpl implements AeInterfaceEcho {
         } else {
           x.PropertiesExtension(j);
           arrayList.add(Integer.valueOf(j));
-        }  
-    } 
+        }
+    }
     for (b = 0; b < i && b < bW.c(); b++) {
       if (!arrayList.contains(Integer.valueOf(b)) && !arrayList1.isEmpty()) {
         x x = arrayList1.remove(0);
         x.PropertiesExtension(b);
-      } 
-    } 
+      }
+    }
     ds ds = new ds(this);
     SwingUtilities.invokeLater(ds);
   }
-  
+
   public void e_() {}
-  
+
   public void PropertiesExtension(PropertiesExtension parama) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/dr.class
  * Java compiler version: 8 (52.0)

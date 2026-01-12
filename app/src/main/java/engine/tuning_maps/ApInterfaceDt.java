@@ -5,12 +5,11 @@ import c.CInterfaceEcho;
 
 class ApInterfaceDt implements CInterfaceEcho {
   ApInterfaceDt(dB paramdB) {}
-  
+
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() != null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/dT.class
  * Java compiler version: 8 (52.0)

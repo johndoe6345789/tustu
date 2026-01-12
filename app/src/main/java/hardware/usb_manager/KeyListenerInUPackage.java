@@ -10,25 +10,24 @@ class KeyListenerInUPackage extends JComponent implements KeyListener {
     addKeyListener(this);
     setFocusTraversalKeysEnabled(false);
   }
-  
+
   public void a() {
     setVisible(true);
     requestFocusInWindow();
   }
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {
     paramKeyEvent.consume();
   }
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {
     paramKeyEvent.consume();
   }
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
     paramKeyEvent.consume();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/u/j.class
  * Java compiler version: 8 (52.0)

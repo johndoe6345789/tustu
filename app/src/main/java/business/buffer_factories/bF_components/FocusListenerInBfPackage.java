@@ -7,9 +7,9 @@ import javax.swing.table.TableCellEditor;
 
 class FocusListenerInBfPackage implements FocusListener {
   FocusListenerInBfPackage(D paramD) {}
-  
+
   public void focusGained(FocusEvent paramFocusEvent) {}
-  
+
   public void focusLost(FocusEvent paramFocusEvent) {
     TableCellEditor tableCellEditor = this.a.getCellEditor();
     if (tableCellEditor != null)
@@ -17,10 +17,9 @@ class FocusListenerInBfPackage implements FocusListener {
         tableCellEditor.stopCellEditing();
       } else {
         tableCellEditor.cancelCellEditing();
-      }  
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/H.class
  * Java compiler version: 8 (52.0)

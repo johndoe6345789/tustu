@@ -6,12 +6,12 @@ import r.IOPropertiesUsingFile;
 
 class RestorePointsExclusionFilter implements FileFilter {
   RestorePointsExclusionFilter(X paramX) {}
-  
+
   public boolean accept(File paramFile) {
-    return (!paramFile.getParentFile().getName().equals("restorePoints") && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t));
+    return (!paramFile.getParentFile().getName().equals("restorePoints")
+        && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aa.class
  * Java compiler version: 8 (52.0)

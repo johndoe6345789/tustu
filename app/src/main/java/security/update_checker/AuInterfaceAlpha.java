@@ -1,9 +1,9 @@
 package aU;
 
-import G.R;
 import G.Manager;
-import V.ExceptionPrintstacktrace;
+import G.R;
 import V.ExceptionExtensionGetmessage;
+import V.ExceptionPrintstacktrace;
 import javax.swing.SwingUtilities;
 
 public class AuInterfaceAlpha implements d {
@@ -12,7 +12,8 @@ public class AuInterfaceAlpha implements d {
     String str2 = paramR.G().c();
     Manager aM1 = paramR.c(str1);
     Manager aM2 = paramR.c(str2);
-    if (!paramR.C().q());
+    if (!paramR.C().q())
+      ;
     try {
       aM1.a(paramR.p(), paramInt1);
       aM2.a(paramR.p(), paramInt2);
@@ -24,10 +25,9 @@ public class AuInterfaceAlpha implements d {
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       ExceptionExtensionGetmessage.printStackTrace();
       throw new V.a("Unable to set TPS Parameter:\n" + ExceptionExtensionGetmessage.getMessage());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aU/a.class
  * Java compiler version: 8 (52.0)

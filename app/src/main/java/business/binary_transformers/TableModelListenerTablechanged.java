@@ -1,13 +1,13 @@
 package business.binary_transformers;
 
-import G.R;
-import G.Manager;
-import G.GInterfaceAn;
-import G.ManagerUsingConcurrentHashMap;
 import G.CloneableImpl;
+import G.GInterfaceAn;
+import G.Manager;
+import G.ManagerUsingConcurrentHashMap;
+import G.R;
 import G.i;
-import V.ExceptionPrintstacktrace;
 import V.ExceptionExtensionGetmessage;
+import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.X;
 import com.efiAnalytics.ui.bV;
@@ -19,25 +19,25 @@ import javax.swing.event.TableModelListener;
 
 class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener {
   R a = null;
-  
+
   Manager b = null;
-  
+
   Manager c = null;
-  
+
   Manager d = null;
-  
+
   s e = null;
-  
+
   bT f = null;
-  
+
   long ExceptionPrintstacktrace = System.currentTimeMillis();
-  
+
   int h = 3000;
-  
+
   public TableModelListenerTablechanged(bQ parambQ, R paramR, s params, String paramString) {
     this.e = params;
     this.a = paramR;
-    CloneableImpl CloneableImpl = (CloneableImpl)paramR.e().c(paramString);
+    CloneableImpl CloneableImpl = (CloneableImpl) paramR.e().c(paramString);
     this.b = paramR.c(CloneableImpl.a());
     this.c = paramR.c(CloneableImpl.b());
     this.d = paramR.c(CloneableImpl.c());
@@ -48,76 +48,114 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
     i.a(paramR.c(), this.d, this);
     i.a(paramR.c(), this.b, this);
   }
-  
+
   public void a() {
     ManagerUsingConcurrentHashMap.a().a(this);
     this.e.removeTableModelListener(this);
   }
-  
+
   public void tableChanged(TableModelEvent paramTableModelEvent) {
-    s s1 = (s)paramTableModelEvent.getSource();
+    s s1 = (s) paramTableModelEvent.getSource();
     if (paramTableModelEvent.getFirstRow() == -1 && paramTableModelEvent.getColumn() < this.b.b()) {
       try {
         double d = this.b.a(this.a.p())[paramTableModelEvent.getColumn()][0];
         a(paramTableModelEvent.getColumn(), s1.b()[paramTableModelEvent.getColumn()] + "", d + "");
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(bQ.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
     } else if (paramTableModelEvent.getColumn() == -1) {
       try {
         if (this.e.getRowCount() != this.c.a() / 2) {
           double d = this.c.a(this.a.p())[paramTableModelEvent.getFirstRow()][0];
-          b(paramTableModelEvent.getFirstRow(), s1.a()[paramTableModelEvent.getFirstRow()] + "", d + "");
-        } 
+          b(
+              paramTableModelEvent.getFirstRow(),
+              s1.a()[paramTableModelEvent.getFirstRow()] + "",
+              d + "");
+        }
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(bQ.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(bQ.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
     } else {
       try {
-        double d = s1.e(paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn()).doubleValue();
+        double d =
+            s1.e(paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn())
+                .doubleValue();
         if (d > -2.14711111E8D) {
-          this.d.a(this.a.p(), d, paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
+          this.d.a(
+              this.a.p(), d, paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
           if (this.e.D() != null)
-            this.e.D()[paramTableModelEvent.getFirstRow()][paramTableModelEvent.getColumn()].a(d); 
-        } 
+            this.e.D()[paramTableModelEvent.getFirstRow()][paramTableModelEvent.getColumn()].a(d);
+        }
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         ExceptionPrintstacktrace.printStackTrace();
         bV.d("Error updating table:\n" + ExceptionPrintstacktrace.getMessage(), bV.c());
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        s1.a(new Double(ExceptionExtensionGetmessage.c()), paramTableModelEvent.getFirstRow(), paramTableModelEvent.getColumn());
+        s1.a(
+            new Double(ExceptionExtensionGetmessage.c()),
+            paramTableModelEvent.getFirstRow(),
+            paramTableModelEvent.getColumn());
       } catch (Exception exception) {
         exception.printStackTrace();
-        bV.d("Error updating table:\n" + exception.getMessage() + "\nSee log for more detail.", bV.c());
-      } 
-    } 
+        bV.d(
+            "Error updating table:\n" + exception.getMessage() + "\nSee log for more detail.",
+            bV.c());
+      }
+    }
   }
-  
+
   public void a(int paramInt, String paramString1, String paramString2) {
     double d = Double.parseDouble(paramString1);
     try {
       this.b.a(this.a.p(), d, paramInt, 0);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-      D.a("Error updating y Axis.", (Exception)ExceptionPrintstacktrace, bV.c());
+      D.a("Error updating y Axis.", (Exception) ExceptionPrintstacktrace, bV.c());
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
       if (System.currentTimeMillis() - this.h > this.ExceptionPrintstacktrace)
         if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 1) {
-          bV.d(this.i.a("The attempted value exceeds the set maximum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+          bV.d(
+              this.i.a("The attempted value exceeds the set maximum for the X axis.")
+                  + " ("
+                  + this.b.aL()
+                  + ")\n"
+                  + this.i.a("Attempted Value")
+                  + ": "
+                  + ExceptionExtensionGetmessage.b()
+                  + "\n"
+                  + this.i.a("Set Limit")
+                  + ": "
+                  + ExceptionExtensionGetmessage.c(),
+              bV.c());
           this.ExceptionPrintstacktrace = System.currentTimeMillis();
-        } else if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 2) {
-          bV.d(this.i.a("The attempted value is below the set minimum for the X axis.") + " (" + this.b.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+        } else if (ExceptionExtensionGetmessage.d() == paramInt
+            && ExceptionExtensionGetmessage.a() == 2) {
+          bV.d(
+              this.i.a("The attempted value is below the set minimum for the X axis.")
+                  + " ("
+                  + this.b.aL()
+                  + ")\n"
+                  + this.i.a("Attempted Value")
+                  + ": "
+                  + ExceptionExtensionGetmessage.b()
+                  + "\n"
+                  + this.i.a("Set Limit")
+                  + ": "
+                  + ExceptionExtensionGetmessage.c(),
+              bV.c());
           this.ExceptionPrintstacktrace = System.currentTimeMillis();
-        }  
+        }
       D.b(paramString1 + " is out of range.\nLimit:" + ExceptionExtensionGetmessage.c());
       double d1 = Double.parseDouble(paramString1);
       if (d1 > this.b.s()) {
         this.e.a(this.b.s() + "", paramInt);
       } else {
         this.e.a(this.b.r() + "", paramInt);
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void b(int paramInt, String paramString1, String paramString2) {
     if (this.e.getRowCount() != this.c.a() / 2) {
       double d = Double.parseDouble(paramString1);
@@ -125,27 +163,53 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
         this.c.a(this.a.p(), d, this.c.b() - 1 - paramInt, 0);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         ExceptionPrintstacktrace.printStackTrace();
-        D.a("Error updating y Axis.", (Exception)ExceptionPrintstacktrace, bV.c());
+        D.a("Error updating y Axis.", (Exception) ExceptionPrintstacktrace, bV.c());
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
         if (System.currentTimeMillis() - this.h > this.ExceptionPrintstacktrace)
-          if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 1) {
-            bV.d(this.i.a("The attempted value exceeds the set maximum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+          if (ExceptionExtensionGetmessage.d() == paramInt
+              && ExceptionExtensionGetmessage.a() == 1) {
+            bV.d(
+                this.i.a("The attempted value exceeds the set maximum for the Y axis.")
+                    + " ("
+                    + this.c.aL()
+                    + ")\n"
+                    + this.i.a("Attempted Value")
+                    + ": "
+                    + ExceptionExtensionGetmessage.b()
+                    + "\n"
+                    + this.i.a("Set Limit")
+                    + ": "
+                    + ExceptionExtensionGetmessage.c(),
+                bV.c());
             this.ExceptionPrintstacktrace = System.currentTimeMillis();
-          } else if (ExceptionExtensionGetmessage.d() == paramInt && ExceptionExtensionGetmessage.a() == 2) {
-            bV.d(this.i.a("The attempted value is below the set minimum for the Y axis.") + " (" + this.c.aL() + ")\n" + this.i.a("Attempted Value") + ": " + ExceptionExtensionGetmessage.b() + "\n" + this.i.a("Set Limit") + ": " + ExceptionExtensionGetmessage.c(), bV.c());
+          } else if (ExceptionExtensionGetmessage.d() == paramInt
+              && ExceptionExtensionGetmessage.a() == 2) {
+            bV.d(
+                this.i.a("The attempted value is below the set minimum for the Y axis.")
+                    + " ("
+                    + this.c.aL()
+                    + ")\n"
+                    + this.i.a("Attempted Value")
+                    + ": "
+                    + ExceptionExtensionGetmessage.b()
+                    + "\n"
+                    + this.i.a("Set Limit")
+                    + ": "
+                    + ExceptionExtensionGetmessage.c(),
+                bV.c());
             this.ExceptionPrintstacktrace = System.currentTimeMillis();
-          }  
+          }
         D.b(paramString1 + " is out of range.\nLimit:" + ExceptionExtensionGetmessage.c());
         double d1 = Double.parseDouble(paramString1);
         if (ExceptionExtensionGetmessage.a() == 1) {
           this.e.b(ExceptionExtensionGetmessage.c() + "", paramInt);
         } else {
           this.e.b(ExceptionExtensionGetmessage.c() + "", paramInt);
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
-  
+
   public void a(String paramString1, String paramString2) {
     if (paramString2 != null && paramString2.equals(this.d.aL())) {
       d();
@@ -157,9 +221,9 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
       f();
       d();
       e();
-    } 
+    }
   }
-  
+
   private void b() {
     try {
       String[] arrayOfString = a(this.c.i(this.a.p()), this.c.v());
@@ -167,39 +231,45 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
         this.e.d(arrayOfString);
         String[] arrayOfString1 = this.e.a();
         for (byte b1 = 0; b1 < arrayOfString1.length; b1++)
-          this.e.a(Double.valueOf(Double.parseDouble(arrayOfString1[b1])), b1, -1); 
-      } 
+          this.e.a(Double.valueOf(Double.parseDouble(arrayOfString1[b1])), b1, -1);
+      }
       for (byte b = 0; b < arrayOfString.length; b++) {
         if (this.e.getRowCount() == arrayOfString.length / 2) {
-          if (b % 2 == 1);
+          if (b % 2 == 1)
+            ;
         } else {
           this.e.b(arrayOfString[b], arrayOfString.length - 1 - b);
-        } 
-      } 
+        }
+      }
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-      D.a("Y Axis failed on update, it may now CloneableImpl out of sync.", (Exception)ExceptionPrintstacktrace, null);
-    } 
+      D.a(
+          "Y Axis failed on update, it may now CloneableImpl out of sync.",
+          (Exception) ExceptionPrintstacktrace,
+          null);
+    }
   }
-  
+
   private String[] a(double[][] paramArrayOfdouble, int paramInt) {
     String[] arrayOfString = new String[paramArrayOfdouble.length];
     for (byte b = 0; b < paramArrayOfdouble.length; b++)
-      arrayOfString[b] = "" + X.b(paramArrayOfdouble[b][0], paramInt); 
+      arrayOfString[b] = "" + X.b(paramArrayOfdouble[b][0], paramInt);
     return arrayOfString;
   }
-  
+
   private void c() {
     try {
       String[] arrayOfString = a(this.b.i(this.a.p()), this.b.v());
-      for (byte b = 0; b < arrayOfString.length; b++)
-        this.e.a(arrayOfString[b], b); 
+      for (byte b = 0; b < arrayOfString.length; b++) this.e.a(arrayOfString[b], b);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-      D.a("X Axis failed on update, it may now CloneableImpl out of sync.", (Exception)ExceptionPrintstacktrace, null);
-    } 
+      D.a(
+          "X Axis failed on update, it may now CloneableImpl out of sync.",
+          (Exception) ExceptionPrintstacktrace,
+          null);
+    }
   }
-  
+
   private void d() {
     if (this.f == null) {
       this.f = new bT(this);
@@ -207,9 +277,9 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
       this.f.start();
     } else {
       this.f.a();
-    } 
+    }
   }
-  
+
   private void e() {
     if (this.f == null) {
       this.f = new bT(this);
@@ -217,9 +287,9 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
       this.f.start();
     } else {
       this.f.b();
-    } 
+    }
   }
-  
+
   private void f() {
     if (this.f == null) {
       this.f = new bT(this);
@@ -227,25 +297,23 @@ class TableModelListenerTablechanged implements GInterfaceAn, TableModelListener
       this.f.start();
     } else {
       this.f.c();
-    } 
+    }
   }
-  
+
   private void ExceptionPrintstacktrace() {
     try {
       double[][] arrayOfDouble = this.d.i(this.a.p());
       for (byte b = 0; b < arrayOfDouble.length; b++) {
         for (byte b1 = 0; b1 < (arrayOfDouble[0]).length; b1++) {
           double d = this.e.e(b, b1).doubleValue();
-          if (arrayOfDouble[b][b1] != d)
-            this.e.a(Double.valueOf(arrayOfDouble[b][b1]), b, b1); 
-        } 
-      } 
+          if (arrayOfDouble[b][b1] != d) this.e.a(Double.valueOf(arrayOfDouble[b][b1]), b, b1);
+        }
+      }
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bS.class
  * Java compiler version: 8 (52.0)

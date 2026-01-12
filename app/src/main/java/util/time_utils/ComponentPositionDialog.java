@@ -18,15 +18,15 @@ import s.SComponentGolf;
 
 public class ComponentPositionDialog extends a implements f {
   JPanel a = new JPanel();
-  
+
   NumericTextField b = new NumericTextField();
-  
+
   NumericTextField c = new NumericTextField();
-  
+
   NumericTextField d = new NumericTextField();
-  
+
   NumericTextField e = new NumericTextField();
-  
+
   public ComponentPositionDialog(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);
     a(paramai);
@@ -39,19 +39,19 @@ public class ComponentPositionDialog extends a implements f {
     this.a.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Component Position")));
     this.a.setLayout(new GridLayout(0, 2, eJ.a(3), eJ.a(3)));
     this.a.add(new JLabel(SComponentGolf.b("Component X :"), 4));
-    this.a.add((Component)this.b);
+    this.a.add((Component) this.b);
     this.a.add(new JLabel(SComponentGolf.b("Component Y :"), 4));
-    this.a.add((Component)this.c);
+    this.a.add((Component) this.c);
     this.a.add(new JLabel(SComponentGolf.b("Component Width :"), 4));
-    this.a.add((Component)this.d);
+    this.a.add((Component) this.d);
     this.a.add(new JLabel(SComponentGolf.b("Component Height :"), 4));
-    this.a.add((Component)this.e);
+    this.a.add((Component) this.e);
     this.b.addKeyListener(new s(this));
     this.c.addKeyListener(new t(this));
     this.d.addKeyListener(new u(this));
     this.e.addKeyListener(new v(this));
   }
-  
+
   public void e(ArrayList<s> paramArrayList) {
     if (paramArrayList.isEmpty()) {
       setEnabled(false);
@@ -62,10 +62,10 @@ public class ComponentPositionDialog extends a implements f {
       this.c.a(s.getY());
       this.d.a(s.getWidth());
       this.e.a(s.getHeight());
-    } 
+    }
     f(paramArrayList);
   }
-  
+
   private void f(ArrayList paramArrayList) {
     Color color1 = UIManager.getColor("TextField.foreground");
     Color color2 = Color.GRAY;
@@ -73,50 +73,47 @@ public class ComponentPositionDialog extends a implements f {
     this.c.setForeground(color1);
     this.d.setForeground(color1);
     this.e.setForeground(color1);
-    if (color2 == null)
-      return; 
+    if (color2 == null) return;
     for (s s : paramArrayList) {
       if (s.getX() != this.b.e()) {
         this.b.setForeground(color2);
         break;
-      } 
-    } 
+      }
+    }
     for (s s : paramArrayList) {
       if (s.getY() != this.c.e()) {
         this.c.setForeground(color2);
         break;
-      } 
-    } 
+      }
+    }
     for (s s : paramArrayList) {
       if (s.getWidth() != this.d.e()) {
         this.d.setForeground(color2);
         break;
-      } 
-    } 
+      }
+    }
     for (s s : paramArrayList) {
       if (s.getHeight() != this.e.e()) {
         this.e.setForeground(color2);
         break;
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void a(ArrayList paramArrayList) {
     e(paramArrayList);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     Component[] arrayOfComponent = this.a.getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++)
-      arrayOfComponent[b].setEnabled(paramBoolean); 
+    for (byte b = 0; b < arrayOfComponent.length; b++) arrayOfComponent[b].setEnabled(paramBoolean);
     this.a.setEnabled(paramBoolean);
   }
-  
+
   public JPanel a() {
     return this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/r.class
  * Java compiler version: 8 (52.0)

@@ -1,7 +1,7 @@
 package business.byte_serializers;
 
-import G.R;
 import G.GInterfaceDp;
+import G.R;
 import bH.X;
 import bL.TostringInBlPackage;
 import com.efiAnalytics.ui.bV;
@@ -15,11 +15,11 @@ import s.SComponentGolf;
 
 public class JPanelExtensionInBsPackage extends JPanel {
   R a = null;
-  
+
   GInterfaceDp b = null;
-  
+
   ArrayList c = null;
-  
+
   public JPanelExtensionInBsPackage(R paramR, GInterfaceDp paramdp) {
     this.a = paramR;
     setLayout(new BorderLayout());
@@ -33,12 +33,12 @@ public class JPanelExtensionInBsPackage extends JPanel {
         if (TostringInBlPackage.h()) {
           JButton jButton = a(TostringInBlPackage);
           jPanel.add(jButton);
-        } 
-      } 
+        }
+      }
       add("Center", jPanel);
-    } 
+    }
   }
-  
+
   private JButton a(TostringInBlPackage paramk) {
     JButton jButton = new JButton();
     jButton.setName(paramk.SComponentGolf());
@@ -46,46 +46,61 @@ public class JPanelExtensionInBsPackage extends JPanel {
     jButton.addActionListener(new b(this));
     return jButton;
   }
-  
+
   private void a(JButton paramJButton, TostringInBlPackage paramk) {
     if (paramk.e() == 128) {
       String str = paramk.f();
-      paramJButton.setText(SComponentGolf.b(paramk.a()) + (str.equals("") ? SComponentGolf.b("Off") : SComponentGolf.b("On")));
+      paramJButton.setText(
+          SComponentGolf.b(paramk.a())
+              + (str.equals("") ? SComponentGolf.b("Off") : SComponentGolf.b("On")));
     } else {
       paramJButton.setText(SComponentGolf.b(paramk.a()) + ": " + X.a(paramk.c()));
-    } 
+    }
   }
-  
+
   private void a(JButton paramJButton) {
     TostringInBlPackage TostringInBlPackage = a(paramJButton.getName());
     if (TostringInBlPackage.e() == 128) {
       d d = new d(this, TostringInBlPackage);
       String str = "";
-      str = bV.a("{Custom filter condition}", false, "Performs custom filter as evaluated by " + r.a.b + ".\nSee website for more details. \nex. (throttle > 25 ) || rpm > 3000 \nfilters any record where throttle is greater than 25% OR rpm is greater than 3000.\nTo deactivate custom filter, press cancel or clear and press Ok.", true, this, d, new c(this, this));
+      str =
+          bV.a(
+              "{Custom filter condition}",
+              false,
+              "Performs custom filter as evaluated by "
+                  + r.a.b
+                  + ".\n"
+                  + "See website for more details. \n"
+                  + "ex. (throttle > 25 ) || rpm > 3000 \n"
+                  + "filters any record where throttle is greater than 25% OR rpm is greater than"
+                  + " 3000.\n"
+                  + "To deactivate custom filter, press cancel or clear and press Ok.",
+              true,
+              this,
+              d,
+              new c(this, this));
       if (str != null && !str.equals("")) {
         TostringInBlPackage.c(str);
       } else {
         TostringInBlPackage.c("");
-      } 
+      }
     } else {
-      String str = bV.a(this, true, SComponentGolf.b(TostringInBlPackage.a()), "" + TostringInBlPackage.c());
-      if (str == null || str.equals(""))
-        return; 
+      String str =
+          bV.a(this, true, SComponentGolf.b(TostringInBlPackage.a()), "" + TostringInBlPackage.c());
+      if (str == null || str.equals("")) return;
       double d = Double.parseDouble(str);
       TostringInBlPackage.a(d);
-    } 
+    }
     a(paramJButton, TostringInBlPackage);
   }
-  
+
   private TostringInBlPackage a(String paramString) {
     for (TostringInBlPackage TostringInBlPackage : this.c) {
-      if (TostringInBlPackage.SComponentGolf().equals(paramString))
-        return TostringInBlPackage; 
-    } 
+      if (TostringInBlPackage.SComponentGolf().equals(paramString)) return TostringInBlPackage;
+    }
     return null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/a.class
  * Java compiler version: 8 (52.0)

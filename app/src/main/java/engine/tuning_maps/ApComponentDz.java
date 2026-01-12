@@ -3,8 +3,16 @@ package aP;
 import az.JDialogExtensionInAzPackage;
 
 class ApComponentDz extends Thread {
-  ApComponentDz(dy paramdy, String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6, JDialogExtensionInAzPackage parama) {}
-  
+  ApComponentDz(
+      dy paramdy,
+      String paramString1,
+      String paramString2,
+      String paramString3,
+      String paramString4,
+      String paramString5,
+      String paramString6,
+      JDialogExtensionInAzPackage parama) {}
+
   public void run() {
     // Byte code:
     //   0: ldc2_w 200
@@ -31,9 +39,11 @@ class ApComponentDz extends Thread {
     //   46: getfield d : Ljava/lang/String;
     //   49: aload_0
     //   50: getfield e : Ljava/lang/String;
-    //   53: invokevirtual JDialogExtensionInAzPackage : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    //   53: invokevirtual JDialogExtensionInAzPackage :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     //   56: ifeq -> 128
-    //   59: ldc 'The registration information provided is not valid.\\nPlease obtain JDialogExtensionInAzPackage valid registion. '
+    //   59: ldc 'The registration information provided is not valid.\\nPlease obtain
+    // JDialogExtensionInAzPackage valid registion. '
     //   61: aload_0
     //   62: getfield h : LaP/dy;
     //   65: getfield JDialogExtensionInAzPackage : LaP/dl;
@@ -50,7 +60,8 @@ class ApComponentDz extends Thread {
     //   93: getfield e : Ljava/lang/String;
     //   96: ldc '(Beta)'
     //   98: ldc ''
-    //   100: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   100: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   103: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   106: invokevirtual toString : ()Ljava/lang/String;
     //   109: invokestatic JDialogExtensionInAzPackage : (Ljava/lang/String;)V
@@ -127,7 +138,8 @@ class ApComponentDz extends Thread {
     //   283: aload_2
     //   284: invokestatic JDialogExtensionInAzPackage : ()LaP/dd;
     //   287: invokevirtual c : ()Ljavax/swing/JFrame;
-    //   290: invokestatic JDialogExtensionInAzPackage : (Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/Object;)V
+    //   290: invokestatic JDialogExtensionInAzPackage :
+    // (Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/Object;)V
     //   293: aload_0
     //   294: getfield g : Laz/JDialogExtensionInAzPackage;
     //   297: iconst_0
@@ -198,7 +210,6 @@ class ApComponentDz extends Thread {
     //   309	396	414	finally
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/dz.class
  * Java compiler version: 8 (52.0)

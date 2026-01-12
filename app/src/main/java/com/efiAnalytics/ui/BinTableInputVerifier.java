@@ -5,12 +5,11 @@ import javax.swing.JComponent;
 
 class BinTableInputVerifier extends InputVerifier {
   BinTableInputVerifier(BinTableView paramBinTableView) {}
-  
+
   public boolean verify(JComponent paramJComponent) {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/aI.class
  * Java compiler version: 8 (52.0)

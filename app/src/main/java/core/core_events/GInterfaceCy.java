@@ -19,12 +19,11 @@ public class GInterfaceCy {
       paramArrayList.add("injOpen0");
       paramArrayList.add("battFac0");
     } else if (paramString.equals("std_accel")) {
-    
-    } 
+
+    }
     return paramArrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/cY.class
  * Java compiler version: 8 (52.0)

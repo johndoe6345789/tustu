@@ -2,16 +2,15 @@ package business.notification_beans.bN_components;
 
 public class BnInterfaceIndia {
   private int a = -128;
-  
+
   public BnInterfaceIndia(int paramInt) {
     this.a = paramInt;
   }
-  
+
   public void a(int paramInt) {
     this.a = paramInt;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bN/i.class
  * Java compiler version: 8 (52.0)

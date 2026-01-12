@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GInterfaceDl {
   public static String a = "+-/=&<>*^!,% [{()}]|\n\t?:\\";
-  
+
   public static ArrayList a(String paramString) {
     ArrayList<String> arrayList = new ArrayList();
     String str = "";
@@ -14,19 +14,15 @@ public class GInterfaceDl {
         bool = true;
       } else if (a.indexOf(paramString.charAt(b)) != -1) {
         bool = false;
-        if (str.trim().length() > 0)
-          arrayList.add(str); 
+        if (str.trim().length() > 0) arrayList.add(str);
         str = "";
-      } 
-      if (bool)
-        str = str + paramString.charAt(b); 
-    } 
-    if (str.trim().length() > 0)
-      arrayList.add(str.trim()); 
+      }
+      if (bool) str = str + paramString.charAt(b);
+    }
+    if (str.trim().length() > 0) arrayList.add(str.trim());
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/dl.class
  * Java compiler version: 8 (52.0)

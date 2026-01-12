@@ -5,11 +5,11 @@ import bH.D;
 
 class GInterfaceAy implements n {
   ay(an paraman) {}
-  
+
   public void e() {}
-  
+
   public void a(double paramDouble) {}
-  
+
   public void a(o paramo) {
     if (paramo.a() == 1)
       try {
@@ -18,10 +18,9 @@ class GInterfaceAy implements n {
         this.a.h = false;
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.a("Failed on read back for lost data");
-      }  
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/ay.class
  * Java compiler version: 8 (52.0)

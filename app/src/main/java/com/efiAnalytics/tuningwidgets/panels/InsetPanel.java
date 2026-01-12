@@ -5,12 +5,11 @@ import javax.swing.JPanel;
 
 class InsetPanel extends JPanel {
   InsetPanel(aF paramaF) {}
-  
+
   public Insets getInsets() {
     return new Insets(1, 1, 1, 1);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aK.class
  * Java compiler version: 8 (52.0)

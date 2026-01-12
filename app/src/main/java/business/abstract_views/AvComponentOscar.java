@@ -5,16 +5,15 @@ import h.IOProperties;
 
 class AvComponentOscar implements A {
   AvComponentOscar(l paraml) {}
-  
+
   public String a() {
     return "MegaLogViewer HD Ini Loader";
   }
-  
+
   public String b() {
     return IOProperties.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/av/o.class
  * Java compiler version: 8 (52.0)

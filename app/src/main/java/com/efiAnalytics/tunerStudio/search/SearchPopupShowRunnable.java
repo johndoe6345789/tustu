@@ -2,12 +2,11 @@ package com.efiAnalytics.tunerStudio.search;
 
 class SearchPopupShowRunnable implements Runnable {
   SearchPopupShowRunnable(m paramm) {}
-  
+
   public void run() {
     this.a.c.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/p.class
  * Java compiler version: 8 (52.0)

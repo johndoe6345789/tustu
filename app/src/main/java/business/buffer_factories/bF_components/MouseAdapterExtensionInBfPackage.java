@@ -5,12 +5,12 @@ import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionInBfPackage extends MouseAdapter {
   MouseAdapterExtensionInBfPackage(d paramd) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    if (paramMouseEvent.getClickCount() == 1);
+    if (paramMouseEvent.getClickCount() == 1)
+      ;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/e.class
  * Java compiler version: 8 (52.0)

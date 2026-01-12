@@ -6,13 +6,12 @@ import javax.swing.event.HyperlinkListener;
 
 class HyperlinkListenerInBlPackage implements HyperlinkListener {
   HyperlinkListenerInBlPackage(h paramh) {}
-  
+
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
     if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED))
-      aN.a(paramHyperlinkEvent.getURL().toString()); 
+      aN.a(paramHyperlinkEvent.getURL().toString());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bl/k.class
  * Java compiler version: 8 (52.0)

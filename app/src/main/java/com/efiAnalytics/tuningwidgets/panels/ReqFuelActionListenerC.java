@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ReqFuelActionListenerC implements ActionListener {
   ReqFuelActionListenerC(RequiredFuelCalculatorDialog paraman) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     an.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aq.class
  * Java compiler version: 8 (52.0)

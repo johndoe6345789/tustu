@@ -6,13 +6,12 @@ import javax.swing.JRadioButton;
 
 class BtInterfaceBn implements ActionListener {
   bn(bl parambl) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JRadioButton jRadioButton = (JRadioButton)paramActionEvent.getSource();
+    JRadioButton jRadioButton = (JRadioButton) paramActionEvent.getSource();
     this.a.b(jRadioButton.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bn.class
  * Java compiler version: 8 (52.0)

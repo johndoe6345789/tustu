@@ -6,13 +6,12 @@ import javax.swing.JToggleButton;
 
 class BrComponentTango implements ActionListener {
   BrComponentTango(s params) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JToggleButton jToggleButton = (JToggleButton)paramActionEvent.getSource();
+    JToggleButton jToggleButton = (JToggleButton) paramActionEvent.getSource();
     this.a.a(jToggleButton.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/t.class
  * Java compiler version: 8 (52.0)

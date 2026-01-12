@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 public class AuInterfaceBravo implements AoInterfaceJuliet {
   public static String a = "NextAddress";
-  
+
   public static String b = "LastAddress";
-  
+
   public static String c = "Units";
-  
+
   public ArrayList a(String paramString) {
     ArrayList<GComponentCd> arrayList = new ArrayList();
     arrayList.add(a(a(), paramString));
@@ -23,25 +23,24 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     arrayList.add(a(c(), paramString));
     return arrayList;
   }
-  
+
   private GComponentCd a(GComponentCd paramcd, String paramString) {
-    if (paramString.startsWith("MS3"))
-      a(paramcd); 
+    if (paramString.startsWith("MS3")) a(paramcd);
     return paramcd;
   }
-  
+
   private GComponentCd a(GComponentCd paramcd) {
     int i = paramcd.b().b("ToothTime");
     i = (i == -1) ? paramcd.b().b("TriggerTime") : i;
     if (i == -1) {
       D.b("Did not find Time Column, not adjusting scalar");
       return paramcd;
-    } 
+    }
     GComponentCe GComponentCe = paramcd.b().a(i);
     GComponentCe.a(0.001D);
     return paramcd;
   }
-  
+
   public GComponentCd a() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -49,7 +48,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.b("( status3 & 0x02 ) == 0x02");
     GComponentCd.c("Composite Logger");
     GComponentCd.d("r\\x00\\xf2\\x00\\x00\\x04\\x00");
@@ -87,7 +86,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd b() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -95,7 +94,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.b("( status3 & 0x02 ) == 0x02");
     GComponentCd.c("Sync Error Logger");
     GComponentCd.d("r\\x00\\xf3\\x00\\x00\\x04\\x00");
@@ -138,7 +137,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd c() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -146,7 +145,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Trigger Logger");
     GComponentCd.d("r\\x00\\xf1\\x00\\x00\\x04\\x00");
     GComponentCf GComponentCf = new GComponentCf();
@@ -162,7 +161,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd d() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -170,7 +169,7 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Tooth Logger");
     GComponentCd.d("r\\x00\\xf0\\x00\\x00\\x04\\x00");
     GComponentCf GComponentCf = new GComponentCf();
@@ -187,7 +186,6 @@ public class AuInterfaceBravo implements AoInterfaceJuliet {
     return GComponentCd;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/au/b.class
  * Java compiler version: 8 (52.0)

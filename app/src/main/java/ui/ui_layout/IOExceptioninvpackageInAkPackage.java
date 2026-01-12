@@ -1,8 +1,8 @@
 package ak;
 
 import V.ExceptionInVPackage;
-import W.T;
 import W.ManagerUsingReader;
+import W.T;
 import bH.X;
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,11 +17,10 @@ public class IOExceptioninvpackageInAkPackage extends g {
   public IOExceptioninvpackageInAkPackage() {
     super(";", false);
   }
-  
+
   public boolean ExceptionInVPackage(String paramString) {
     int i = b(paramString);
-    if (i > 0)
-      this.w = ExceptionInVPackage(paramString, i); 
+    if (i > 0) this.w = ExceptionInVPackage(paramString, i);
     FileInputStream fileInputStream = null;
     try {
       this.h = new File(paramString);
@@ -32,16 +31,16 @@ public class IOExceptioninvpackageInAkPackage extends g {
       for (byte b = 0; b <= i; b++) {
         str = this.n;
         this.n = this.e.ExceptionInVPackage();
-      } 
+      }
       this.t = true;
       return true;
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
       throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
-    } 
+    }
   }
-  
+
   public Iterator b() {
     String str = null;
     try {
@@ -49,12 +48,11 @@ public class IOExceptioninvpackageInAkPackage extends g {
     } catch (IOException iOException) {
       iOException.printStackTrace();
       throw new ExceptionInVPackage("IO Error reading header rows from file.");
-    } 
+    }
     byte b = 0;
     while (!str.trim().isEmpty()) {
       if (str.startsWith("'''") || str.startsWith("';")) {
-        if (str.startsWith("';"))
-          str = str.substring(2).trim(); 
+        if (str.startsWith("';")) str = str.substring(2).trim();
         String[] arrayOfString = str.split(Pattern.quote(r()));
         d d = new d();
         for (byte b1 = 0; b1 < arrayOfString.length && b1 <= 1; b1++) {
@@ -66,39 +64,37 @@ public class IOExceptioninvpackageInAkPackage extends g {
               d.b("s");
             } else {
               d.ExceptionInVPackage(X.i(arrayOfString[b1]));
-            } 
+            }
             String str1 = d.ExceptionInVPackage();
-            for (byte b2 = 0; b2 < 100 && i(str1); b2++)
-              str1 = d.ExceptionInVPackage() + b2; 
+            for (byte b2 = 0; b2 < 100 && i(str1); b2++) str1 = d.ExceptionInVPackage() + b2;
             d.ExceptionInVPackage(str1);
             d d1 = ExceptionInVPackage(d);
             if (d1 != null) {
               this.g.add(d1);
               b++;
-            } 
+            }
           } else if (b1 == 1 && !d.ExceptionInVPackage().equals("Time")) {
             d.b(X.i(arrayOfString[b1]));
-          } 
-        } 
-      } 
+          }
+        }
+      }
       try {
         str = l();
         if (!str.startsWith("'")) {
           ExceptionInVPackage(true);
           break;
-        } 
+        }
       } catch (IOException iOException) {
         iOException.printStackTrace();
         throw new ExceptionInVPackage("IO Error reading header rows from file.");
-      } 
-    } 
+      }
+    }
     ArrayList<T> arrayList = new ArrayList();
     Iterator<T> iterator = this.g.iterator();
-    while (iterator.hasNext())
-      arrayList.add(iterator.next()); 
+    while (iterator.hasNext()) arrayList.add(iterator.next());
     return arrayList.iterator();
   }
-  
+
   protected int b(String paramString) {
     // Byte code:
     //   0: ldc ''
@@ -153,7 +149,8 @@ public class IOExceptioninvpackageInAkPackage extends g {
     //   105: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   108: aconst_null
     //   109: aload #5
-    //   111: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   111: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   114: goto -> 212
     //   117: astore #5
     //   119: new V/ExceptionInVPackage
@@ -194,7 +191,8 @@ public class IOExceptioninvpackageInAkPackage extends g {
     //   200: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   203: aconst_null
     //   204: aload #7
-    //   206: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   206: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   209: aload #6
     //   211: athrow
     //   212: iload_3
@@ -209,7 +207,6 @@ public class IOExceptioninvpackageInAkPackage extends g {
     //   182	187	190	java/io/IOException
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/aD.class
  * Java compiler version: 8 (52.0)

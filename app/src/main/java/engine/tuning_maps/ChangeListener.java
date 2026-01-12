@@ -6,13 +6,12 @@ import javax.swing.event.ChangeListener;
 
 class ChangeListener implements ChangeListener {
   ChangeListener(aM paramaM) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    JCheckBox jCheckBox = (JCheckBox)paramChangeEvent.getSource();
+    JCheckBox jCheckBox = (JCheckBox) paramChangeEvent.getSource();
     this.a.g.setEnabled(jCheckBox.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aN.class
  * Java compiler version: 8 (52.0)

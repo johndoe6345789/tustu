@@ -6,25 +6,24 @@ import java.util.Map;
 
 class AkInterfaceXray {
   boolean ExceptionInVPackage;
-  
+
   int b = 0;
-  
+
   int c = 0;
-  
+
   float d = 1.0F;
-  
+
   private static final Map e = new HashMap<>();
-  
+
   public AkInterfaceXray(D paramD, int paramInt) {
     this.ExceptionInVPackage = "sbyte,sword".contains(paramD.d);
-    Integer integer = (Integer)e.get(paramD.d);
-    if (integer == null)
-      throw new ExceptionInVPackage("Unknown storage mapping " + paramD.d); 
+    Integer integer = (Integer) e.get(paramD.d);
+    if (integer == null) throw new ExceptionInVPackage("Unknown storage mapping " + paramD.d);
     this.c = integer.intValue();
     this.d = "percent7".equals(paramD.d) ? 0.78125F : (1.0F / Float.parseFloat(paramD.f));
     this.b = paramInt;
   }
-  
+
   static {
     e.put("ubyte", Integer.valueOf(1));
     e.put("ubyte:1", Integer.valueOf(1));
@@ -36,7 +35,6 @@ class AkInterfaceXray {
     e.put("sword", Integer.valueOf(2));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/x.class
  * Java compiler version: 8 (52.0)

@@ -15,28 +15,28 @@ public class OnlineExecutionImpl implements OnlineExecution {
       r.C().c();
     } else {
       D.b("Plugin Request to go offline, but no ECU Configuration loaded.");
-    } 
+    }
   }
-  
+
   public void goOnline() {
     R r = T.a().c();
     if (r != null) {
       try {
         r.C().d();
       } catch (l l) {
-        Logger.getLogger(p.class.getName()).log(Level.WARNING, "Error trying to go online", (Throwable)l);
-      } 
+        Logger.getLogger(p.class.getName())
+            .log(Level.WARNING, "Error trying to go online", (Throwable) l);
+      }
     } else {
       D.b("Plugin Request to go online, but no ECU Configuration loaded.");
-    } 
+    }
   }
-  
+
   public boolean isOnline() {
     R r = T.a().c();
     return (r != null) ? r.R() : false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bl/p.class
  * Java compiler version: 8 (52.0)

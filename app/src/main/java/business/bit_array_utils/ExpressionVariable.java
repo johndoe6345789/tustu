@@ -11,9 +11,9 @@ import javax.swing.JTextField;
 
 public class x extends JPanel {
   JTextField a = new JTextField();
-  
+
   JTextField b = new JTextField();
-  
+
   public x() {
     setLayout(new GridLayout(0, 1));
     JPanel jPanel1 = new JPanel();
@@ -36,12 +36,11 @@ public class x extends JPanel {
     jPanel3.add("Center", this.b);
     add(jPanel3);
   }
-  
+
   public void a(Window paramWindow) {
     bV.a(this, paramWindow, "Float Conversion", null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/x.class
  * Java compiler version: 8 (52.0)

@@ -5,11 +5,11 @@ import bH.D;
 
 public class GInterfaceCh implements n {
   public void e() {}
-  
+
   public void a(double paramDouble) {}
-  
+
   public void a(o paramo) {
-    R r = (R)paramo.b().v().E();
+    R r = (R) paramo.b().v().E();
     if (paramo.a() == 1)
       for (String str : paramo.c().split("~")) {
         int VInterfaceIndia = str.indexOf("=");
@@ -22,14 +22,13 @@ public class GInterfaceCh implements n {
               cE.a(r, aM, str2);
             } catch (VInterfaceIndia i1) {
               D.a("Failed to set PcVariiable Value: " + str + ", Err:" + i1.getLocalizedMessage());
-            }  
+            }
         } else {
           D.b("Invalid PcVariable line: " + str);
-        } 
-      }  
+        }
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/cH.class
  * Java compiler version: 8 (52.0)

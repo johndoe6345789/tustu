@@ -5,12 +5,11 @@ import java.io.BufferedWriter;
 
 public interface IniSectionWriter {
   String a();
-  
+
   String b();
-  
+
   void a(R paramR, BufferedWriter paramBufferedWriter, N paramN, r paramr);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/O.class
  * Java compiler version: 8 (52.0)

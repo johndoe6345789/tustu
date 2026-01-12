@@ -13,25 +13,25 @@ import s.SComponentGolf;
 
 class UIInBsPackage extends JPanel implements BmInterfaceEcho {
   JLabel a = new JLabel();
-  
+
   JLabel b = new JLabel();
-  
+
   JLabel c = new JLabel();
-  
+
   JLabel BmInterfaceDelta = new JLabel();
-  
+
   JLabel BmInterfaceEcho = new JLabel();
-  
+
   JLabel f = new JLabel();
-  
+
   JLabel SComponentGolf = new JLabel();
-  
+
   JLabel h = new JLabel();
-  
+
   JLabel i = new JLabel();
-  
+
   JLabel j = new JLabel();
-  
+
   public void z(k paramk) {
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Warmup Analyze Stats")));
     setLayout(new GridLayout(0, 3, 6, 2));
@@ -46,7 +46,7 @@ class UIInBsPackage extends JPanel implements BmInterfaceEcho {
     add(a("Coolant Temperature", this.f));
     add(a("Active Filter", this.SComponentGolf));
   }
-  
+
   private JPanel a(String paramString, JLabel paramJLabel) {
     paramString = SComponentGolf.b(paramString) + ": ";
     JPanel jPanel = new JPanel();
@@ -58,7 +58,7 @@ class UIInBsPackage extends JPanel implements BmInterfaceEcho {
     jPanel.add(paramJLabel);
     return jPanel;
   }
-  
+
   public void a(BmInterfaceDelta paramd) {
     this.a.setText(paramd.a() + "");
     this.b.setText(paramd.b() + "");
@@ -72,7 +72,7 @@ class UIInBsPackage extends JPanel implements BmInterfaceEcho {
     } else {
       this.SComponentGolf.setBackground(this.c.getBackground());
       this.SComponentGolf.setOpaque(false);
-    } 
+    }
     this.SComponentGolf.setText(this.k.b.b());
     this.h.setText(X.a(paramd.c()));
     this.i.setText(X.a(paramd.BmInterfaceDelta()));
@@ -80,7 +80,6 @@ class UIInBsPackage extends JPanel implements BmInterfaceEcho {
     this.j.setText(X.c(f, 2));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/z.class
  * Java compiler version: 8 (52.0)

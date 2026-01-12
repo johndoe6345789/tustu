@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ActionListenerImplInAzPackage implements ActionListener {
   ActionListenerImplInAzPackage(f paramf) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/az/j.class
  * Java compiler version: 8 (52.0)

@@ -23,25 +23,25 @@ import s.SComponentGolf;
 
 public class UICloseInBkPackage extends d implements IInterfaceNovember, bc {
   AiInterfacePapa a = null;
-  
+
   JButton b = null;
-  
+
   fj c = new fj();
-  
+
   fj d = null;
-  
+
   IInterfaceOscar e = null;
-  
+
   R f;
-  
+
   int SComponentGolf = 60000;
-  
+
   c h = null;
-  
+
   public UICloseInBkPackage(R paramR) {
     this(paramR, false);
   }
-  
+
   public UICloseInBkPackage(R paramR, boolean paramBoolean) {
     this.f = paramR;
     this.a = new AiInterfacePapa(paramR);
@@ -53,12 +53,11 @@ public class UICloseInBkPackage extends d implements IInterfaceNovember, bc {
       jPanel.add(new JLabel("Local PC Time:"));
       this.d = new fj();
       this.d.a(new Date());
-      jPanel.add((Component)this.d);
+      jPanel.add((Component) this.d);
       jPanel.add(new JLabel("Current MS3 Time:"));
-    } 
-    jPanel.add((Component)this.c);
-    if (this.SComponentGolf <= 1000)
-      this.c.a(false); 
+    }
+    jPanel.add((Component) this.c);
+    if (this.SComponentGolf <= 1000) this.c.a(false);
     add("Center", jPanel);
     this.b = new JButton("Set MS3 Time to Now");
     this.b.addActionListener(new b(this));
@@ -68,56 +67,53 @@ public class UICloseInBkPackage extends d implements IInterfaceNovember, bc {
     this.e.a(this);
     this.e.a("seconds", IInterfaceOscar.b);
   }
-  
+
   private void a() {
     try {
       this.a.a(new Date());
       b();
     } catch (RemoteAccessException remoteAccessException) {
-      bV.d(remoteAccessException.getMessage(), (Component)this);
-    } 
+      bV.d(remoteAccessException.getMessage(), (Component) this);
+    }
   }
-  
+
   private synchronized void b() {
     if (this.h == null) {
       this.h = new c(this);
       this.h.start();
     } else {
       notify();
-    } 
+    }
   }
-  
+
   private synchronized void c() {
     try {
       Date date = this.a.SComponentGolf();
       this.c.a(date);
     } catch (RemoteAccessException remoteAccessException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)remoteAccessException);
+      Logger.getLogger(a.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) remoteAccessException);
       this.c.a();
-    } 
+    }
     try {
       wait(this.SComponentGolf);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-    } 
+      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+    }
   }
-  
+
   public void close() {
     this.e.a();
     this.e.b(this);
-    if (this.h != null)
-      this.h.a(); 
-    if (this.d != null)
-      this.d.a(); 
-    if (this.c != null)
-      this.c.a(); 
+    if (this.h != null) this.h.a();
+    if (this.d != null) this.d.a();
+    if (this.c != null) this.c.a();
   }
-  
+
   public void a(String paramString) {
     b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bk/a.class
  * Java compiler version: 8 (52.0)

@@ -18,29 +18,29 @@ import javax.swing.JTextPane;
 
 public class TimeSlipPanel extends JPanel {
   ab BuComponentAlpha = null;
-  
+
   NumericTextField b;
-  
+
   NumericTextField c;
-  
+
   NumericTextField d;
-  
+
   NumericTextField e;
-  
+
   NumericTextField f;
-  
+
   NumericTextField g;
-  
+
   NumericTextField h;
-  
+
   NumericTextField IOProperties;
-  
+
   NumericTextField j;
-  
+
   JTextPane k = new JTextPane();
-  
+
   JLabel l = new JLabel("", 0);
-  
+
   public TimeSlipPanel(String paramString, ab paramab) {
     this.BuComponentAlpha = paramab;
     setLayout(new BorderLayout(5, 5));
@@ -88,11 +88,14 @@ public class TimeSlipPanel extends JPanel {
     jPanel3.setLayout(new BorderLayout(8, 8));
     jPanel3.setBorder(BorderFactory.createTitledBorder(BuComponentAlpha("Rollout Time")));
     JLabel jLabel = new JLabel();
-    jLabel.setText(BuComponentAlpha("The delay in seconds between releasing the trans brake and the car breaking the beam."));
+    jLabel.setText(
+        BuComponentAlpha(
+            "The delay in seconds between releasing the trans brake and the car breaking the"
+                + " beam."));
     jPanel3.add("Center", jLabel);
     this.j = new NumericTextField("", 5);
     this.j.b(3);
-    jPanel3.add("East", (Component)this.j);
+    jPanel3.add("East", (Component) this.j);
     this.j.setText(IOProperties.e(IOProperties.aw, "0.300"));
     jPanel2.add("North", jPanel3);
     JPanel jPanel4 = new JPanel();
@@ -104,26 +107,26 @@ public class TimeSlipPanel extends JPanel {
     jPanel2.add("Center", jPanel4);
     add("North", this.l);
   }
-  
+
   private JPanel BuComponentAlpha(DoObj paramDoObj, String paramString) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(eJ.BuComponentAlpha(5), eJ.BuComponentAlpha(5)));
     JLabel jLabel = new JLabel(BuComponentAlpha(paramString), 4);
     jPanel.add(jLabel, "Center");
-    jPanel.add((Component)paramdo, "East");
+    jPanel.add((Component) paramdo, "East");
     return jPanel;
   }
-  
+
   private String BuComponentAlpha(String paramString) {
     if (this.BuComponentAlpha != null)
-      paramString = this.BuComponentAlpha.BuComponentAlpha(paramString); 
+      paramString = this.BuComponentAlpha.BuComponentAlpha(paramString);
     return paramString;
   }
-  
+
   public String BuComponentAlpha() {
     return this.j.getText();
   }
-  
+
   public void BuComponentAlpha(BuComponentAlpha parama) {
     this.b.BuComponentAlpha(parama.BuComponentAlpha());
     this.c.BuComponentAlpha(parama.g());
@@ -136,16 +139,19 @@ public class TimeSlipPanel extends JPanel {
     String str = parama.j();
     str = X.b(str, "\\n", "\n");
     this.k.setText(str);
-    if (!Double.isNaN(parama.k()))
-      this.j.BuComponentAlpha(parama.k()); 
+    if (!Double.isNaN(parama.k())) this.j.BuComponentAlpha(parama.k());
     if (parama.l()) {
-      this.l.setText("<html><center>This timeslip data was <b>generated</b> by " + IOProperties.b + ".<br>Change to actual timeslip values and click Apply to save real vaules to log file.<center>");
+      this.l.setText(
+          "<html><center>This timeslip data was <b>generated</b> by "
+              + IOProperties.b
+              + ".<br>Change to actual timeslip values and click Apply to save real vaules to log"
+              + " file.<center>");
     } else {
       this.l.setText("<html><center>Timeslip data from log file.</center>");
-    } 
+    }
     doLayout();
   }
-  
+
   public BuComponentAlpha b() {
     BuComponentAlpha BuComponentAlpha = new BuComponentAlpha();
     BuComponentAlpha.BuComponentAlpha(this.b.e());
@@ -162,7 +168,6 @@ public class TimeSlipPanel extends JPanel {
     return BuComponentAlpha;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/dialogs/e.class
  * Java compiler version: 8 (52.0)

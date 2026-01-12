@@ -4,7 +4,7 @@ public class FInterfaceAlpha extends b {
   public FInterfaceAlpha(String paramString) {
     f(paramString);
   }
-  
+
   public void f(String paramString) {
     System.out.println("Local IP: " + paramString);
     int i = Integer.parseInt(paramString.substring(paramString.lastIndexOf(".") + 1));
@@ -15,14 +15,13 @@ public class FInterfaceAlpha extends b {
     } else {
       g(str + "128");
       h(str + "200");
-    } 
+    }
     k(paramString);
     j(paramString);
     i("0.0.0.0");
     a(3600);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/F/a.class
  * Java compiler version: 8 (52.0)

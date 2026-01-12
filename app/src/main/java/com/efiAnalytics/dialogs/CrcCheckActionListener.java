@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class CrcCheckActionListener implements ActionListener {
   CrcCheckActionListener(CrcCheckPanel paramCrcCheckPanel) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     CrcCheckPanel.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/dialogs/a.class
  * Java compiler version: 8 (52.0)

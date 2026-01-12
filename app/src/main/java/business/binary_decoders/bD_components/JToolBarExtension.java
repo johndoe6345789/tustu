@@ -7,20 +7,19 @@ import javax.swing.JToolBar;
 
 class JToolBarExtension extends JToolBar {
   String a = "";
-  
+
   Font b = new Font("Arial Unicode MS", 1, eJ.a(12));
-  
+
   public JToolBarExtension(r paramr, String paramString) {
     super(paramString);
   }
-  
+
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
     paramGraphics.setFont(this.b);
     paramGraphics.drawString(this.a, 6, 12);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/B.class
  * Java compiler version: 8 (52.0)

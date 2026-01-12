@@ -14,34 +14,40 @@ import s.SComponentGolf;
 
 public class RestorePointDetailsPanel extends JPanel {
   JLabel a = new JLabel();
-  
+
   JLabel ClassTypeInHPackage = new JLabel();
-  
+
   JLabel c = new JLabel();
-  
+
   JLabel d = new JLabel();
-  
+
   JTextPane e = new JTextPane();
-  
+
   public U() {
     RestorePointDetailsPanel(new BorderLayout());
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(0, 1));
     jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Restore Point Date") + ":", this.c));
     if (ClassTypeInHPackage.a().a(" ,SD;LKODGPOIGD9")) {
-      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Firmware Rev Level") + ":", this.ClassTypeInHPackage));
+      jPanel.add(
+          a(
+              SComponentGolf.ClassTypeInHPackage("Firmware Rev Level") + ":",
+              this.ClassTypeInHPackage));
       jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Serial Number") + ":", this.d));
     } else {
-      jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Serial Signature") + ":", this.ClassTypeInHPackage));
+      jPanel.add(
+          a(
+              SComponentGolf.ClassTypeInHPackage("Serial Signature") + ":",
+              this.ClassTypeInHPackage));
       jPanel.add(a(SComponentGolf.ClassTypeInHPackage("Firmware Version") + ":", this.d));
-    } 
+    }
     jPanel.add(new JLabel(SComponentGolf.ClassTypeInHPackage("Tune Log Notes") + ":"));
     RestorePointDetailsPanel("North", jPanel);
     this.e.setEditable(false);
     JScrollPane jScrollPane = new JScrollPane(this.e);
     RestorePointDetailsPanel("Center", jScrollPane);
   }
-  
+
   public void RestorePointDetailsPanel(FileInWPackage paramag) {
     if (paramag == null) {
       this.a.setText("");
@@ -58,12 +64,12 @@ public class RestorePointDetailsPanel extends JPanel {
         this.e.setContentType("text/html");
       } else {
         this.e.setContentType("text/plain");
-      } 
+      }
       this.e.setText(paramag.ClassTypeInHPackage());
       this.e.setCaretPosition(0);
-    } 
+    }
   }
-  
+
   private JPanel RestorePointDetailsPanel(String paramString, JLabel paramJLabel) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
@@ -75,7 +81,6 @@ public class RestorePointDetailsPanel extends JPanel {
     return jPanel;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/U.class
  * Java compiler version: 8 (52.0)

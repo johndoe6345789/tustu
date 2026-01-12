@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ThreeDViewColorShadeListener implements ActionListener {
   ThreeDViewColorShadeListener(bt parambt) {}
-  
+
   public void ThreeDViewColorShadeListener(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     this.a.c(jCheckBoxMenuItem.getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bv.class
  * Java compiler version: 8 (52.0)

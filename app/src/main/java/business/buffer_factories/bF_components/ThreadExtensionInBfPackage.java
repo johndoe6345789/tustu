@@ -6,15 +6,15 @@ import javax.swing.SwingUtilities;
 
 class ThreadExtensionInBfPackage extends Thread {
   int a = 200;
-  
+
   long b = System.currentTimeMillis() + this.a;
-  
+
   int c = 50;
-  
+
   boolean d = true;
-  
+
   ThreadExtensionInBfPackage(d paramd) {}
-  
+
   public void run() {
     while (this.d) {
       if (System.currentTimeMillis() > this.b) {
@@ -23,20 +23,19 @@ class ThreadExtensionInBfPackage extends Thread {
         t t = new t(this);
         SwingUtilities.invokeLater(t);
         continue;
-      } 
+      }
       try {
         Thread.sleep(this.c);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(d.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(d.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
-  
+
   private void a() {
     this.b = System.currentTimeMillis() + this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/s.class
  * Java compiler version: 8 (52.0)

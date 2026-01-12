@@ -1,13 +1,13 @@
 package business.byte_serializers.bS_components;
 
-import bT.BtInterfaceAlpha;
-import bT.BtInterfaceBravo;
-import bT.BtInterfaceCharlie;
-import bT.BtInterfaceDelta;
 import bT.BtComponentAlpha;
 import bT.BtComponentBravo;
 import bT.BtComponentCharlie;
 import bT.BtComponentDelta;
+import bT.BtInterfaceAlpha;
+import bT.BtInterfaceBravo;
+import bT.BtInterfaceCharlie;
+import bT.BtInterfaceDelta;
 import bT.BtInterfaceEcho;
 import bT.BtInterfaceFoxtrot;
 import bT.BtInterfaceGolf;
@@ -18,7 +18,6 @@ import bT.BtInterfaceLima;
 import bT.BtInterfaceMike;
 import bT.BtInterfaceNovember;
 import bT.BtInterfaceOscar;
-import bT.NetworkInBtPackage;
 import bT.BtInterfaceQuebec;
 import bT.BtInterfaceRomeo;
 import bT.BtInterfaceSierra;
@@ -29,16 +28,17 @@ import bT.BtInterfaceWhiskey;
 import bT.BtInterfaceXray;
 import bT.BtInterfaceYankee;
 import bT.BtInterfaceZulu;
+import bT.NetworkInBtPackage;
 import java.util.HashMap;
 import java.util.Map;
 
 public class BsInterfaceKilo {
   private final Map BtComponentAlpha = new HashMap<>();
-  
+
   protected BsInterfaceKilo() {
     BtComponentAlpha();
   }
-  
+
   private void BtComponentAlpha() {
     this.BtComponentAlpha.put(Integer.valueOf(255), new BtComponentCharlie());
     this.BtComponentAlpha.put(Integer.valueOf(254), new BtComponentDelta());
@@ -71,12 +71,11 @@ public class BsInterfaceKilo {
     this.BtComponentAlpha.put(Integer.valueOf(227), new BtComponentBravo());
     this.BtComponentAlpha.put(Integer.valueOf(241), new BtInterfaceCharlie());
   }
-  
+
   public BtComponentAlpha BtComponentAlpha(int paramInt) {
-    return (BtComponentAlpha)this.BtComponentAlpha.get(Integer.valueOf(paramInt));
+    return (BtComponentAlpha) this.BtComponentAlpha.get(Integer.valueOf(paramInt));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bS/k.class
  * Java compiler version: 8 (52.0)

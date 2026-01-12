@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.R;
-import G.Manager;
 import G.ArrayListExceptionprintstacktrace;
+import G.Manager;
+import G.R;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import java.awt.BorderLayout;
@@ -18,12 +18,13 @@ import s.SComponentGolf;
 
 class PortControllerPanel extends JPanel implements bc {
   ArrayList a = new ArrayList();
-  
+
   ArrayList b = new ArrayList();
-  
+
   JPanel c = null;
-  
-  public PortControllerPanel(OutputPortEditor paramOutputPortEditor, R paramR, ArrayListExceptionprintstacktrace paramaS) {
+
+  public PortControllerPanel(
+      OutputPortEditor paramOutputPortEditor, R paramR, ArrayListExceptionprintstacktrace paramaS) {
     Manager Manager = paramR.c(paramaS.m());
     setLayout(new GridLayout(0, 1, 8, 8));
     int RInterfaceIndia = 0;
@@ -32,13 +33,13 @@ class PortControllerPanel extends JPanel implements bc {
         RInterfaceIndia = 1;
       } else {
         RInterfaceIndia = Manager.c().b();
-      }  
+      }
     this.c = new JPanel();
     this.c.setLayout(new FlowLayout(2));
     JLabel jLabel = new JLabel(SComponentGolf.b("Controller") + "                ");
     String str = paramaS.o();
     if (str != null && paramR.c(str) != null && RInterfaceIndia.a().a("HF-0FD-0HHFJG"))
-      this.c.add(jLabel); 
+      this.c.add(jLabel);
     this.c.add(new JLabel(" " + SComponentGolf.b("Output Channel") + " "));
     this.c.add(new JLabel("                   "));
     this.c.add(new JLabel("  " + SComponentGolf.b("Threshold")));
@@ -52,7 +53,7 @@ class PortControllerPanel extends JPanel implements bc {
         ArrayList<String> arrayList = new ArrayList();
         Iterator iterator = paramaS.c();
         while (iterator.hasNext())
-          arrayList.add((new StringBuilder()).append(iterator.next()).append("").toString()); 
+          arrayList.add((new StringBuilder()).append(iterator.next()).append("").toString());
         String[] arrayOfString = new String[arrayList.size()];
         arrayOfString = arrayList.<String>toArray(arrayOfString);
         v v = new v(paramR, paramaS.m(), arrayOfString);
@@ -63,43 +64,38 @@ class PortControllerPanel extends JPanel implements bc {
         f.setLayout(new BorderLayout(8, 8));
         f.add("West", v);
         add(f);
-      } 
-    } 
+      }
+    }
     a(0);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     bV.a(this.c, paramBoolean);
     for (byte b = 0; b < this.a.size(); b++) {
       z z = this.a.get(b);
       bV.a(z, paramBoolean);
-      if (b < this.b.size())
-        ((v)this.b.get(b)).setEnabled(paramBoolean); 
+      if (b < this.b.size()) ((v) this.b.get(b)).setEnabled(paramBoolean);
       if (paramBoolean && b < this.b.size()) {
         v v = this.b.get(b);
         paramBoolean = v.a();
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void a(int paramInt) {
     Iterator<v> iterator = this.b.iterator();
-    while (iterator.hasNext())
-      ((v)iterator.next()).b(paramInt); 
+    while (iterator.hasNext()) ((v) iterator.next()).b(paramInt);
     iterator = this.a.iterator();
-    while (iterator.hasNext())
-      ((z)iterator.next()).a(paramInt); 
+    while (iterator.hasNext()) ((z) iterator.next()).a(paramInt);
   }
-  
+
   public void close() {
     for (byte b = 0; b < getComponentCount(); b++) {
       Component component = getComponent(b);
-      if (component instanceof bc)
-        ((bc)component).close(); 
-    } 
+      if (component instanceof bc) ((bc) component).close();
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/j.class
  * Java compiler version: 8 (52.0)

@@ -13,13 +13,13 @@ import java.util.logging.Logger;
 
 public class AkInterfaceAz extends S {
   float[] ExceptionInVPackage = null;
-  
+
   float b = 0.0F;
-  
+
   public AkInterfaceAz() {
     super(",", false);
   }
-  
+
   public Iterator b() {
     try {
       String str = h();
@@ -32,29 +32,29 @@ public class AkInterfaceAz extends S {
           str1 = "Time";
           d.ExceptionInVPackage(0.001F);
           d.ExceptionInVPackage(3);
-        } 
+        }
         d.ExceptionInVPackage(str1);
         d.b(aA.b());
         d.c(aA.c());
         d.d(aA.d());
         this.g.add(d);
-      } 
+      }
     } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
+      Logger.getLogger(g.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) VInterfaceFoxtrot);
     } catch (Exception exception) {
       D.ExceptionInVPackage("Failed to get units from this row:\n");
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
-    } 
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, exception);
+    }
     this.ExceptionInVPackage = new float[this.g.size()];
     for (byte b = 0; b < this.ExceptionInVPackage.length; b++)
-      this.ExceptionInVPackage[b] = Float.NaN; 
+      this.ExceptionInVPackage[b] = Float.NaN;
     ArrayList<T> arrayList = new ArrayList();
     Iterator<T> iterator = this.g.iterator();
-    while (iterator.hasNext())
-      arrayList.add(iterator.next()); 
+    while (iterator.hasNext()) arrayList.add(iterator.next());
     return arrayList.iterator();
   }
-  
+
   public float[] c() {
     // Byte code:
     //   0: aload_0
@@ -127,7 +127,8 @@ public class AkInterfaceAz extends S {
     //   154: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   157: invokevirtual toString : ()Ljava/lang/String;
     //   160: aload #5
-    //   162: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   162: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   165: new V/ExceptionInVPackage
     //   168: dup
     //   169: new java/lang/StringBuilder
@@ -203,11 +204,11 @@ public class AkInterfaceAz extends S {
     //   112	117	120	java/io/IOException
     //   270	277	280	java/lang/NumberFormatException
   }
-  
+
   protected int b(String paramString) {
     return 1;
   }
-  
+
   private List m(String paramString) {
     ArrayList<aA> arrayList = new ArrayList();
     aE aE = new aE(paramString, ",");
@@ -215,10 +216,10 @@ public class AkInterfaceAz extends S {
       String str = aE.b();
       aA aA = n(str);
       arrayList.add(aA);
-    } 
+    }
     return arrayList;
   }
-  
+
   private aA n(String paramString) {
     aE aE = new aE(paramString, "|");
     aA aA = null;
@@ -227,24 +228,25 @@ public class AkInterfaceAz extends S {
       aA = new aA(this, str);
     } catch (Exception exception) {
       throw new ExceptionInVPackage("Invalid Header data for Race Capture log: " + paramString);
-    } 
+    }
     try {
       String str = X.i(aE.b());
       aA.ExceptionInVPackage(str);
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     try {
       float VInterfaceFoxtrot = Float.parseFloat(aE.b());
       aA.ExceptionInVPackage(VInterfaceFoxtrot);
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     try {
       float VInterfaceFoxtrot = Float.parseFloat(aE.b());
-      if (VInterfaceFoxtrot > aA.c())
-        aA.b(VInterfaceFoxtrot); 
-    } catch (Exception exception) {}
+      if (VInterfaceFoxtrot > aA.c()) aA.b(VInterfaceFoxtrot);
+    } catch (Exception exception) {
+    }
     return aA;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/az.class
  * Java compiler version: 8 (52.0)

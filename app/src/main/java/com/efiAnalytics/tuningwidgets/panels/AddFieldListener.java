@@ -7,16 +7,15 @@ import java.awt.event.ActionListener;
 
 class AddFieldListener implements ActionListener {
   AddFieldListener(DatalogFieldSelectorPanel paramn) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {
       this.ExceptionInVPackage.e();
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       bV.d(ExceptionInVPackage.getLocalizedMessage(), this.ExceptionInVPackage.i);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/t.class
  * Java compiler version: 8 (52.0)

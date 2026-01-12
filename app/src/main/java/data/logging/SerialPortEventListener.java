@@ -14,27 +14,26 @@ import jssc.SerialPortException;
 
 public class SerialPortEventListener extends InputStream implements SerialPortEventListener {
   SerialPort a = null;
-  
+
   int b = 0;
-  
+
   byte[] c = new byte[1];
-  
+
   byte[] d = null;
-  
+
   int e = 200;
-  
+
   List f = new ArrayList();
-  
+
   public SerialPortEventListener(SerialPort paramSerialPort) {
     this.a = paramSerialPort;
     paramSerialPort.addEventListener(this);
   }
-  
+
   public void a(SerialPortEventListener paramSerialPortEventListener) {
-    if (!this.f.contains(this))
-      this.f.add(paramSerialPortEventListener); 
+    if (!this.f.contains(this)) this.f.add(paramSerialPortEventListener);
   }
-  
+
   public synchronized int read() {
     a();
     try {
@@ -42,12 +41,13 @@ public class SerialPortEventListener extends InputStream implements SerialPortEv
         try {
           wait(300L);
         } catch (InterruptedException interruptedException) {
-          Logger.getLogger(d.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-        }  
+          Logger.getLogger(d.class.getName())
+              .log(Level.SEVERE, (String) null, interruptedException);
+        }
       if (this.a.getInputBufferBytesCount() <= 0) {
         this.b = 0;
         return -1;
-      } 
+      }
       int i = c.a(this.a.readBytes(1)[0]);
       this.b--;
       return i;
@@ -55,13 +55,13 @@ public class SerialPortEventListener extends InputStream implements SerialPortEv
       throw new IOException(serialPortException.getMessage() + ", Port:" + this.a.getPortName());
     } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
       throw new IOException(this.a.getPortName() + ": No bytes available.");
-    } 
+    }
   }
-  
+
   public int read(byte[] paramArrayOfbyte) {
     return read(paramArrayOfbyte, 0, paramArrayOfbyte.length);
   }
-  
+
   public int read(byte[] paramArrayOfbyte, int paramInt1, int paramInt2) {
     // Byte code:
     //   0: aload_0
@@ -326,33 +326,32 @@ public class SerialPortEventListener extends InputStream implements SerialPortEv
     //   392	394	395	jssc/SerialPortException
     //   392	394	438	java/lang/IndexOutOfBoundsException
   }
-  
+
   private void a() {
-    if (this.a == null)
-      throw new IOException("serialPort not set!"); 
+    if (this.a == null) throw new IOException("serialPort not set!");
     if (!this.a.isOpened())
-      throw new IOException("serialPort " + this.a.getPortName() + " not open"); 
+      throw new IOException("serialPort " + this.a.getPortName() + " not open");
   }
-  
+
   public synchronized void serialEvent(SerialPortEvent paramSerialPortEvent) {
     if (paramSerialPortEvent.isRXCHAR()) {
       this.b += paramSerialPortEvent.getEventValue();
       notify();
-    } 
+    }
     for (SerialPortEventListener serialPortEventListener : this.f)
-      serialPortEventListener.serialEvent(paramSerialPortEvent); 
+      serialPortEventListener.serialEvent(paramSerialPortEvent);
   }
-  
+
   public int available() {
     try {
       return this.a.getInputBufferBytesCount();
     } catch (SerialPortException serialPortException) {
-      Logger.getLogger(d.class.getName()).log(Level.SEVERE, (String)null, (Throwable)serialPortException);
+      Logger.getLogger(d.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) serialPortException);
       return 0;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aD/d.class
  * Java compiler version: 8 (52.0)

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class TablePanelModifyListener implements ActionListener {
   TablePanelModifyListener(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = w.a(this.a);
     w.a(this.a, true);
@@ -13,7 +13,6 @@ class TablePanelModifyListener implements ActionListener {
     w.a(this.a, bool);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/M.class
  * Java compiler version: 8 (52.0)

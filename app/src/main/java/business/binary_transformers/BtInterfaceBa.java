@@ -6,23 +6,24 @@ import com.efiAnalytics.ui.et;
 
 class BtInterfaceBa implements et {
   BtInterfaceBa(bu parambu) {}
-  
+
   public void PropertiesExtension(String paramString1, String paramString2) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();
-    PropertiesExtension.setProperty("2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
+    PropertiesExtension.setProperty(
+        "2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
   }
-  
+
   public String PropertiesExtension(String paramString) {
     String str = "";
     return paramString.equals(BinTableView.n) ? PropertiesExtension.A().t() : b(paramString, str);
   }
-  
+
   public String b(String paramString1, String paramString2) {
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();
-    return PropertiesExtension.getProperty("2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
+    return PropertiesExtension.getProperty(
+        "2DTable_" + this.PropertiesExtension.getName() + "_" + paramString1, paramString2);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bA.class
  * Java compiler version: 8 (52.0)

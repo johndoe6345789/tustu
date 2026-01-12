@@ -1,8 +1,8 @@
 package business.bean_encoders;
 
+import G.GInterfaceAh;
 import G.R;
 import G.SerializableImplExceptionprintstacktrace;
-import G.GInterfaceAh;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.fp;
 import java.awt.BorderLayout;
@@ -13,15 +13,15 @@ import s.SComponentGolf;
 
 public class BeInterfaceTango extends JPanel {
   SComponentGolf a;
-  
+
   y b;
-  
+
   JCheckBox c;
-  
+
   JCheckBox d;
-  
+
   R e;
-  
+
   public BeInterfaceTango(R paramR) {
     this.e = paramR;
     FlowLayout flowLayout = new FlowLayout(1);
@@ -46,39 +46,38 @@ public class BeInterfaceTango extends JPanel {
     fp.a(this.b, false);
     fp.a(this.a, false);
   }
-  
+
   public void a(String paramString) {
     this.a.a(paramString);
     this.b.a(paramString);
   }
-  
+
   public boolean a() {
     if (this.c.isSelected()) {
       R r = this.b.b();
       if (!r.a()) {
         bV.d(SComponentGolf.b(r.d()), this);
         return false;
-      } 
-    } 
+      }
+    }
     if (this.d.isSelected()) {
       R r = this.a.b();
       if (!r.a()) {
         bV.d(SComponentGolf.b(r.d()), this);
         return false;
-      } 
-    } 
+      }
+    }
     return true;
   }
-  
+
   public SerializableImplExceptionprintstacktrace b() {
     return this.d.isSelected() ? this.a.a() : null;
   }
-  
+
   public GInterfaceAh c() {
     return this.c.isSelected() ? this.b.a() : null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/T.class
  * Java compiler version: 8 (52.0)

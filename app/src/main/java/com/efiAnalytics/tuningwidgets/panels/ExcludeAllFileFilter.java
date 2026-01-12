@@ -6,12 +6,15 @@ import r.IOPropertiesUsingFile;
 
 class ExcludeAllFileFilter implements FileFilter {
   ExcludeAllFileFilter(ProjectArchiveOptionsPanel paramX) {}
-  
+
   public boolean accept(File paramFile) {
-    return (!paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cr) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cs) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cv) && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t) && !paramFile.getParentFile().getName().equals("restorePoints"));
+    return (!paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cr)
+        && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cs)
+        && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.cv)
+        && !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t)
+        && !paramFile.getParentFile().getName().equals("restorePoints"));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/Y.class
  * Java compiler version: 8 (52.0)

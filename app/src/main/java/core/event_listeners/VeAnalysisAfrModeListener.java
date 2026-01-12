@@ -6,14 +6,12 @@ import javax.swing.event.ChangeListener;
 
 class eW implements ChangeListener {
   eW(eK parameK) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    JRadioButton jRadioButton = (JRadioButton)paramChangeEvent.getSource();
-    if (jRadioButton.isSelected())
-      eK.a(this.a, "AFR"); 
+    JRadioButton jRadioButton = (JRadioButton) paramChangeEvent.getSource();
+    if (jRadioButton.isSelected()) eK.a(this.a, "AFR");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eW.class
  * Java compiler version: 8 (52.0)

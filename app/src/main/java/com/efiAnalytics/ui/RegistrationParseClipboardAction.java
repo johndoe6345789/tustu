@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class RegistrationParseClipboardAction implements ActionListener {
   RegistrationParseClipboardAction(RegistrationDialog paramdS) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     dS.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dV.class
  * Java compiler version: 8 (52.0)

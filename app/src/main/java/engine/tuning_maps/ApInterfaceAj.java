@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceAj implements ActionListener {
   aj(ad paramad) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.l();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aj.class
  * Java compiler version: 8 (52.0)

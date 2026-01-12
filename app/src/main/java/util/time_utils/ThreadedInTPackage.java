@@ -23,15 +23,15 @@ import s.SComponentGolf;
 
 public class ThreadedInTPackage extends a {
   List a = new ArrayList();
-  
+
   JPanel b = new JPanel();
-  
+
   ar c;
-  
+
   HashMap d = new HashMap<>();
-  
+
   JPanel e = new JPanel();
-  
+
   public ThreadedInTPackage(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString));
     setLayout(new BorderLayout());
@@ -73,20 +73,19 @@ public class ThreadedInTPackage extends a {
     setSize(eJ.a(800), eJ.a(450));
     setResizable(false);
   }
-  
+
   public ThreadedInTPackage(Window paramWindow, File paramFile, String paramString) {
     this(paramWindow, paramString);
     a(paramFile);
     a(ThreadedFile.i());
   }
-  
+
   public ThreadedInTPackage(Window paramWindow, List paramList, String paramString) {
     this(paramWindow, paramString);
-    for (File file : paramList)
-      a(file); 
+    for (File file : paramList) a(file);
     a(ThreadedFile.i());
   }
-  
+
   public void a(File paramFile) {
     File[] arrayOfFile = paramFile.listFiles(new ao(this));
     if (arrayOfFile != null)
@@ -96,32 +95,30 @@ public class ThreadedInTPackage extends a {
           ar1.addMouseListener(new ap(this));
           this.b.add(ar1);
           this.d.put(arrayOfFile[b].getName(), ar1);
-        } 
-      }  
+        }
+      }
   }
-  
+
   public void a() {
-    String[] arrayOfString = { "gif", "jpg", "jpeg", "png" };
-    String str = bV.a(this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck)new cl());
+    String[] arrayOfString = {"gif", "jpg", "jpeg", "png"};
+    String str = bV.a(this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck) new cl());
     if (str != null && !str.equals("")) {
       ar ar1 = new ar(this, new File(str));
       ar1.addMouseListener(new aq(this));
       this.b.add(ar1);
       this.b.validate();
       this.c.a(ar1.a);
-    } 
+    }
   }
-  
+
   public void a(aK paramaK) {
     this.a.add(paramaK);
   }
-  
+
   private void b(File paramFile) {
-    for (aK aK : this.a)
-      aK.a(paramFile); 
+    for (aK aK : this.a) aK.a(paramFile);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aj.class
  * Java compiler version: 8 (52.0)

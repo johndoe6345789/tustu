@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class RemoveAllFieldsActionListener implements ActionListener {
   RemoveAllFieldsActionListener(ReplayFieldSelectorPanel paramae) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.removeAll();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/ak.class
  * Java compiler version: 8 (52.0)

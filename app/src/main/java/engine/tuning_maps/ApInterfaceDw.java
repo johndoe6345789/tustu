@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceDw implements ActionListener {
   ApInterfaceDw(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/dW.class
  * Java compiler version: 8 (52.0)

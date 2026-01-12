@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceCk implements ActionListener {
   ApInterfaceCk(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     this.a.b.e(jCheckBoxMenuItem.getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cK.class
  * Java compiler version: 8 (52.0)

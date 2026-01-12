@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TablePanelMenuItemListener implements ActionListener {
   TablePanelMenuItemListener(SelectableTablePanel paramSelectableTablePanel) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a(paramActionEvent.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/ax.class
  * Java compiler version: 8 (52.0)

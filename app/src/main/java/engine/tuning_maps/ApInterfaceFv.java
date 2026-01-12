@@ -7,15 +7,16 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceFv implements ActionListener {
   ApInterfaceFv(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.F, Boolean.toString(false));
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.H, Boolean.toString(false));
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.F, Boolean.toString(false));
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.H, Boolean.toString(false));
     dB.b(this.IOPropertiesUsingFile);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fV.class
  * Java compiler version: 8 (52.0)

@@ -9,9 +9,9 @@ import javax.swing.JTextField;
 
 public class WeightInputPanel extends JPanel {
   JTextField a;
-  
+
   JTextField b;
-  
+
   public WeightInputPanel(String paramString) {
     setBorder(BorderFactory.createTitledBorder(paramString));
     WeightFieldFocusAdapter weightFieldFocusAdapter = new WeightFieldFocusAdapter(this);
@@ -33,20 +33,20 @@ public class WeightInputPanel extends JPanel {
     jPanel2.add("Center", this.b);
     add(jPanel2);
   }
-  
+
   public String a() {
     return this.a.getText();
   }
-  
+
   public void a(String paramString) {
     try {
       int i = Integer.parseInt(paramString) * 10 / 22;
       this.a.setText(paramString);
       this.b.setText(i + "");
-    } catch (NumberFormatException numberFormatException) {}
+    } catch (NumberFormatException numberFormatException) {
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aQ.class
  * Java compiler version: 8 (52.0)

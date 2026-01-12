@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TimeSlipCancelListener implements ActionListener {
   TimeSlipCancelListener(b paramb) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     b.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/dialogs/d.class
  * Java compiler version: 8 (52.0)

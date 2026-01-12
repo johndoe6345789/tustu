@@ -11,19 +11,18 @@ import s.SComponentGolf;
 
 class BorderWidthSliderDialog extends bn implements f {
   private boolean a = false;
-  
+
   BorderWidthSliderDialog(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new c(this));
     this.c.setMinimum(0);
     this.c.setMaximum(100);
   }
-  
+
   private void d() {
-    if (!this.a && c() != null)
-      c().f(this.c.getValue()); 
+    if (!this.a && c() != null) c().f(this.c.getValue());
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.a = true;
     Gauge gauge = b(paramArrayList);
@@ -34,20 +33,19 @@ class BorderWidthSliderDialog extends bn implements f {
       this.e.setText("" + gauge.getBorderWidth());
       for (s s : paramArrayList) {
         if (s instanceof Gauge) {
-          Gauge gauge1 = (Gauge)s;
+          Gauge gauge1 = (Gauge) s;
           if (gauge1.getBorderWidth() != gauge.getBorderWidth()) {
             this.e.setForeground(Color.GRAY);
             break;
-          } 
-        } 
-      } 
+          }
+        }
+      }
     } else {
       this.c.setEnabled(false);
-    } 
+    }
     this.a = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/b.class
  * Java compiler version: 8 (52.0)

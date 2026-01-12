@@ -7,10 +7,11 @@ import javax.swing.text.JTextComponent;
 
 final class hT extends AbstractAction {
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JOptionPane.showMessageDialog((JTextComponent)paramActionEvent.getSource(), "Please open log file in order to insert field names");
+    JOptionPane.showMessageDialog(
+        (JTextComponent) paramActionEvent.getSource(),
+        "Please open log file in order to insert field names");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/hT.class
  * Java compiler version: 8 (52.0)

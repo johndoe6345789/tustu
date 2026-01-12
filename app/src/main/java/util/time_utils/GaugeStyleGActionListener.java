@@ -7,14 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class GaugeStyleGActionListener implements ActionListener {
   GaugeStyleGActionListener(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    if (jCheckBoxMenuItem.getState())
-      this.a.a.d(Gauge.G); 
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    if (jCheckBoxMenuItem.getState()) this.a.a.d(Gauge.G);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/D.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BgInterfaceWhiskey implements ActionListener {
   BgInterfaceWhiskey(q paramq) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/w.class
  * Java compiler version: 8 (52.0)

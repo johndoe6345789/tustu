@@ -7,15 +7,13 @@ import java.awt.event.ActionListener;
 
 class ActionListenerInAvPackage implements ActionListener {
   ActionListenerInAvPackage(a parama) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    fp.a((Component)this.a.b, this.a.c.isSelected());
+    fp.a((Component) this.a.b, this.a.c.isSelected());
     x.a().a(this.a.c.isSelected());
-    if (!x.a().h() && this.a.c.isSelected())
-      a.a(this.a); 
+    if (!x.a().h() && this.a.c.isSelected()) a.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aV/c.class
  * Java compiler version: 8 (52.0)

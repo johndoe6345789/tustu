@@ -2,10 +2,9 @@ package aP;
 
 public interface ApInterfaceJa {
   String a();
-  
+
   String b();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ja.class
  * Java compiler version: 8 (52.0)

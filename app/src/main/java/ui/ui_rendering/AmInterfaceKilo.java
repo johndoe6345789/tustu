@@ -8,25 +8,25 @@ import java.nio.channels.SeekableByteChannel;
 
 public class AmInterfaceKilo extends a {
   public static String b = "##TX";
-  
+
   private String c;
-  
+
   private AmInterfaceKilo(SeekableByteChannel paramSeekableByteChannel, long paramLong) {
     super(paramSeekableByteChannel, paramLong);
   }
-  
+
   public String e() {
     return this.c;
   }
-  
+
   private void b(String paramString) {
     this.c = paramString;
   }
-  
+
   public String toString() {
     return "TXBLOCK [txData=" + this.c + "]";
   }
-  
+
   public static k b(SeekableByteChannel paramSeekableByteChannel, long paramLong) {
     k k1 = new k(paramSeekableByteChannel, paramLong);
     ByteBuffer byteBuffer = ByteBuffer.allocate(24);
@@ -36,20 +36,19 @@ public class AmInterfaceKilo extends a {
     byteBuffer.rewind();
     k1.a(AbstractInAlPackage.a(byteBuffer, 4));
     if (!k1.b().equals(b))
-      throw new IOException("Wrong block type - expected '" + b + "', found '" + k1.b() + "'"); 
+      throw new IOException("Wrong block type - expected '" + b + "', found '" + k1.b() + "'");
     byteBuffer.get(new byte[4]);
     k1.a(AbstractInAlPackage.e(byteBuffer));
     k1.b(AbstractInAlPackage.e(byteBuffer));
-    byteBuffer = ByteBuffer.allocate((int)k1.c() + 24);
+    byteBuffer = ByteBuffer.allocate((int) k1.c() + 24);
     byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
     paramSeekableByteChannel.position(paramLong + 24L);
     paramSeekableByteChannel.read(byteBuffer);
     byteBuffer.rewind();
-    k1.b(AbstractInAlPackage.b(byteBuffer, (int)(k1.c() - 24L)));
+    k1.b(AbstractInAlPackage.b(byteBuffer, (int) (k1.c() - 24L)));
     return k1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/am/k.class
  * Java compiler version: 8 (52.0)

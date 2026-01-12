@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BkInterfaceKilo implements ActionListener {
   BkInterfaceKilo(h paramh) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     h.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bk/k.class
  * Java compiler version: 8 (52.0)

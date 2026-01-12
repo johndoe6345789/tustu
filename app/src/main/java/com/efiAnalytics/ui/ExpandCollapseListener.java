@@ -2,10 +2,9 @@ package com.efiAnalytics.ui;
 
 public interface ExpandCollapseListener {
   void l();
-  
+
   void m();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cP.class
  * Java compiler version: 8 (52.0)

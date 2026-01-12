@@ -6,12 +6,12 @@ import r.IOPropertiesUsingFile;
 
 class ApComponentFo implements ActionListener {
   fo(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ce, IOPropertiesUsingFile.bY);
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.ce, IOPropertiesUsingFile.bY);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fo.class
  * Java compiler version: 8 (52.0)

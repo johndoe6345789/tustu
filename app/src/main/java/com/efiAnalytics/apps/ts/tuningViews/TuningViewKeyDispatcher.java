@@ -6,11 +6,11 @@ import java.awt.event.KeyEvent;
 
 public class TuningViewKeyDispatcher implements KeyEventDispatcher {
   J a = null;
-  
+
   TuningViewKeyDispatcher(J paramJ1, J paramJ2) {
     this.a = paramJ2;
   }
-  
+
   public boolean dispatchKeyEvent(KeyEvent paramKeyEvent) {
     // Byte code:
     //   0: aload_0
@@ -30,7 +30,8 @@ public class TuningViewKeyDispatcher implements KeyEventDispatcher {
     //   30: if_icmpne -> 273
     //   33: aload_1
     //   34: invokevirtual getKeyCode : ()I
-    //   37: lookupswitch default -> 229, 9 -> 222, 37 -> 141, 38 -> 168, 39 -> 105, 40 -> 195, 127 -> 96
+    //   37: lookupswitch default -> 229, 9 -> 222, 37 -> 141, 38 -> 168, 39 -> 105, 40 -> 195, 127
+    // -> 96
     //   96: aload_0
     //   97: getfield b : Lcom/efiAnalytics/apps/ts/tuningViews/J;
     //   100: invokevirtual d : ()V
@@ -165,29 +166,26 @@ public class TuningViewKeyDispatcher implements KeyEventDispatcher {
     //   393: iconst_0
     //   394: ireturn
   }
-  
+
   private boolean a(Object paramObject) {
-    if (!(paramObject instanceof Component))
-      return false; 
-    Component component = (Component)paramObject;
-    if (this.a.equals(paramObject))
-      return true; 
+    if (!(paramObject instanceof Component)) return false;
+    Component component = (Component) paramObject;
+    if (this.a.equals(paramObject)) return true;
     while (component != null) {
-      if (component.equals(this.a) || (J.d(this.b) != null && component.equals(J.d(this.b)) && J.b(this.b).contains(paramObject)))
-        return true; 
+      if (component.equals(this.a)
+          || (J.d(this.b) != null
+              && component.equals(J.d(this.b))
+              && J.b(this.b).contains(paramObject))) return true;
       component = component.getParent();
-      if (component instanceof java.awt.Window)
-        return false; 
-    } 
+      if (component instanceof java.awt.Window) return false;
+    }
     Component[] arrayOfComponent = this.b.getComponents();
     for (byte b = 0; b < arrayOfComponent.length; b++) {
-      if (paramObject.equals(arrayOfComponent[b]))
-        return true; 
-    } 
+      if (paramObject.equals(arrayOfComponent[b])) return true;
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/R.class
  * Java compiler version: 8 (52.0)

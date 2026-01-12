@@ -8,42 +8,41 @@ import java.util.List;
 
 public interface AeInterfaceQuebec {
   String a();
-  
+
   String b();
-  
+
   List c();
-  
+
   List d();
-  
+
   GInterfaceCr a(AeInterfaceMikeTostring parambT);
-  
+
   GInterfaceCv b(AeInterfaceMikeTostring parambT);
-  
+
   boolean a(m paramm);
-  
+
   boolean a(k paramk);
-  
+
   d a(k paramk, p paramp, u paramu);
-  
+
   boolean a(m paramm, File paramFile);
-  
+
   boolean b(m paramm, File paramFile);
-  
+
   String a(File paramFile);
-  
+
   String e();
-  
+
   AeInterfaceMikeTostring a(p paramp);
-  
+
   void f();
-  
+
   void a(String paramString);
-  
+
   boolean g();
-  
+
   List b(m paramm);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ae/q.class
  * Java compiler version: 8 (52.0)

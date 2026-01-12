@@ -1,8 +1,8 @@
 package aH;
 
 import G.F;
-import G.R;
 import G.GInterfaceDc;
+import G.R;
 import G.m;
 import G.o;
 import bH.D;
@@ -15,41 +15,39 @@ import java.util.logging.Logger;
 
 public class AhInterfaceBravo {
   private static b c = null;
-  
+
   private final Object d = new Object();
-  
+
   private boolean e = false;
-  
+
   List a = null;
-  
+
   List b = new ArrayList();
-  
+
   public static b a() {
-    if (c == null)
-      c = new b(); 
+    if (c == null) c = new b();
     return c;
   }
-  
+
   public void a(d paramd) {
     this.b.add(paramd);
   }
-  
+
   public void b(d paramd) {
     this.b.add(paramd);
   }
-  
+
   private void a(List paramList) {
-    for (d d : this.b)
-      d.a(paramList); 
+    for (d d : this.b) d.a(paramList);
   }
-  
+
   public void a(R paramR) {
     if (!this.e && paramR.b()) {
       c c = new c(this, paramR);
       c.start();
-    } 
+    }
   }
-  
+
   public List b(R paramR) {
     if (!this.e) {
       this.e = true;
@@ -59,10 +57,10 @@ public class AhInterfaceBravo {
       c();
     } else {
       b();
-    } 
+    }
     return this.a;
   }
-  
+
   private void b() {
     if (this.e)
       synchronized (this.d) {
@@ -70,17 +68,18 @@ public class AhInterfaceBravo {
           try {
             this.d.wait(10000L);
           } catch (InterruptedException interruptedException) {
-            Logger.getLogger(b.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-          }  
-      }  
+            Logger.getLogger(b.class.getName())
+                .log(Level.SEVERE, (String) null, interruptedException);
+          }
+      }
   }
-  
+
   private void c() {
     synchronized (this.d) {
       this.d.notifyAll();
-    } 
+    }
   }
-  
+
   private List c(R paramR) {
     ArrayList<a> arrayList = new ArrayList();
     if (paramR.R()) {
@@ -97,7 +96,8 @@ public class AhInterfaceBravo {
           m.b(true);
           m.c(false);
           m.v("Query Signature CAN ID " + b1);
-          if (b1 == 11);
+          if (b1 == 11)
+            ;
           o o = GInterfaceDc.a(paramR, m, 500);
           if (o.a() == 1) {
             String str = X.a(o.g());
@@ -115,16 +115,17 @@ public class AhInterfaceBravo {
             if (o.a() == 1) {
               String str1 = X.a(o.g());
               a.a(str1);
-            } 
+            }
           } else {
             D.c("CAN ID: " + b1 + ", " + o.c());
             a.a("Not Detected");
             a.a(false);
-          } 
-          if (b1 == 12);
+          }
+          if (b1 == 12)
+            ;
           arrayList.add(a);
-        } 
-      } 
+        }
+      }
     } else if (paramR.C() instanceof bQ.l) {
       for (byte b1 = 0; b1 <= 14; b1++) {
         if (b1 != paramR.O().x()) {
@@ -132,21 +133,20 @@ public class AhInterfaceBravo {
           a.a(b1);
           a.a("Unsupported on Dash Echo");
           a.a(false);
-        } 
-      } 
+        }
+      }
     } else {
       for (byte b1 = 0; b1 <= 14; b1++) {
         if (b1 != paramR.O().x()) {
           a a = new a();
           a.a(b1);
           a.a(false);
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aH/b.class
  * Java compiler version: 8 (52.0)

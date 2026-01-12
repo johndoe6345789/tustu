@@ -6,14 +6,12 @@ import javax.swing.event.ChangeListener;
 
 class fg implements ChangeListener {
   fg(eK parameK) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    JRadioButton jRadioButton = (JRadioButton)paramChangeEvent.getSource();
-    if (jRadioButton.isSelected())
-      eK.a(this.a, "Gego"); 
+    JRadioButton jRadioButton = (JRadioButton) paramChangeEvent.getSource();
+    if (jRadioButton.isSelected()) eK.a(this.a, "Gego");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fg.class
  * Java compiler version: 8 (52.0)

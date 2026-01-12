@@ -4,16 +4,15 @@ import java.io.Serializable;
 
 public class GComponentBk extends bq implements Serializable {
   private String a = null;
-  
+
   public String a() {
     return this.a;
   }
-  
+
   public void a(String paramString) {
     this.a = paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/bk.class
  * Java compiler version: 8 (52.0)

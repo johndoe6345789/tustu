@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class AyInterfaceNovember implements ActionListener {
   AyInterfaceNovember(l paraml) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/n.class
  * Java compiler version: 8 (52.0)

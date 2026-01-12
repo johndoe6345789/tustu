@@ -7,13 +7,13 @@ import javax.swing.JPanel;
 
 class LabeledInputPanel extends JPanel {
   TextField a = null;
-  
+
   JLabel b = null;
-  
+
   LabeledInputPanel(dS paramdS, String paramString1, String paramString2) {
     this(paramdS, paramString1, paramString2, false);
   }
-  
+
   LabeledInputPanel(dS paramdS, String paramString1, String paramString2, boolean paramBoolean) {
     setLayout(new BorderLayout());
     JLabel jLabel = new JLabel(paramString1 + " ");
@@ -27,22 +27,21 @@ class LabeledInputPanel extends JPanel {
     } else {
       this.b = new JLabel(paramString2);
       add("East", this.b);
-    } 
+    }
   }
-  
+
   public void requestFocus() {
     if (this.a != null) {
       this.a.requestFocus();
     } else {
       super.requestFocus();
-    } 
+    }
   }
-  
+
   public String a() {
     return (this.b == null) ? this.a.getText() : this.b.getText();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ea.class
  * Java compiler version: 8 (52.0)

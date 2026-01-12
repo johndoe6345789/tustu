@@ -1,8 +1,8 @@
 package business.binary_transformers;
 
+import G.GInterfaceAh;
 import G.R;
 import G.T;
-import G.GInterfaceAh;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import bH.D;
@@ -19,9 +19,9 @@ import java.awt.Dimension;
 
 public class ManagerUsingGauge extends bh implements ac {
   private Gauge b = null;
-  
+
   dD ExceptionInVPackage = new dD(this);
-  
+
   public ManagerUsingGauge() {
     setLayout(new bJ(this));
     ExceptionInVPackage(aa.b());
@@ -29,38 +29,36 @@ public class ManagerUsingGauge extends bh implements ac {
     this.b.setSweepBeginDegree(315);
     this.b.setFaceAngle(360);
   }
-  
+
   public void ExceptionInVPackage(s params) {
     c().repaint();
   }
-  
+
   public Gauge c() {
     return this.b;
   }
-  
+
   public void ExceptionInVPackage(Gauge paramGauge) {
     this.b = paramGauge;
-    if (getComponentCount() > 0)
-      removeAll(); 
-    add((Component)paramGauge);
+    if (getComponentCount() > 0) removeAll();
+    add((Component) paramGauge);
   }
-  
+
   public void b(String paramString) {
     T t = T.ExceptionInVPackage();
     R r = t.c();
     ExceptionInVPackage(r, paramString);
   }
-  
+
   public void ExceptionInVPackage(R paramR, String paramString) {
     GInterfaceAh GInterfaceAh = paramR.k(paramString);
-    if (GInterfaceAh == null)
-      return; 
+    if (GInterfaceAh == null) return;
     try {
       this.b.setTitle(GInterfaceAh.k().ExceptionInVPackage());
       this.b.setUnits(GInterfaceAh.j().ExceptionInVPackage());
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage((Exception)ExceptionPrintstacktrace);
-    } 
+      D.ExceptionInVPackage((Exception) ExceptionPrintstacktrace);
+    }
     this.b.setMin(GInterfaceAh.b());
     this.b.setMax(GInterfaceAh.e());
     this.b.setLowWarning(GInterfaceAh.f());
@@ -75,22 +73,21 @@ public class ManagerUsingGauge extends bh implements ac {
       this.b.subscribeToOutput();
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       bV.d(ExceptionInVPackage.getMessage(), this);
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(GaugePainter paramGaugePainter) {
     this.b.setGaugePainter(paramGaugePainter);
   }
-  
+
   public Dimension getPreferredSize() {
     return new Dimension(eJ.ExceptionInVPackage(160), eJ.ExceptionInVPackage(160));
   }
-  
+
   public Dimension getMinimumSize() {
     return new Dimension(eJ.ExceptionInVPackage(75), eJ.ExceptionInVPackage(75));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bI.class
  * Java compiler version: 8 (52.0)

@@ -4,13 +4,11 @@ import G.GInterfaceAn;
 
 class OutputChannelUpdateListener implements GInterfaceAn {
   OutputChannelUpdateListener(C paramC) {}
-  
+
   public void a(String paramString1, String paramString2) {
-    if (paramString1.equals(this.a.a.c()) && paramString2.equals(this.a.b.aL()))
-      this.a.b(); 
+    if (paramString1.equals(this.a.a.c()) && paramString2.equals(this.a.b.aL())) this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/E.class
  * Java compiler version: 8 (52.0)

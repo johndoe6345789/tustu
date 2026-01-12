@@ -8,18 +8,18 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceGa implements ActionListener {
   ApInterfaceGa(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.aa, Boolean.toString(jCheckBoxMenuItem.getState()));
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.aa, Boolean.toString(jCheckBoxMenuItem.getState()));
     if (jCheckBoxMenuItem.getState()) {
       dI.IOPropertiesUsingFile().b();
     } else {
       dI.IOPropertiesUsingFile().c();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gA.class
  * Java compiler version: 8 (52.0)

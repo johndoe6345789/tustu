@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceAm implements ActionListener {
   am(ad paramad) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.j();
     this.a.i();
@@ -15,10 +15,9 @@ class ApInterfaceAm implements ActionListener {
       this.a.i.C().d();
     } catch (l l) {
       D.d("Unable to go online. Error: " + l.getLocalizedMessage());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/am.class
  * Java compiler version: 8 (52.0)

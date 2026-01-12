@@ -5,14 +5,13 @@ import java.awt.event.WindowFocusListener;
 
 class GridSelectionFocusListener implements WindowFocusListener {
   GridSelectionFocusListener(GridSelectionWindow paramfc) {}
-  
+
   public void windowGainedFocus(WindowEvent paramWindowEvent) {}
-  
+
   public void windowLostFocus(WindowEvent paramWindowEvent) {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fd.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceFx implements ActionListener {
   ApInterfaceFx(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.b(this.a.h);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fX.class
  * Java compiler version: 8 (52.0)

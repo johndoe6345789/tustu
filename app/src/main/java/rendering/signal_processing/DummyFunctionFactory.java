@@ -1,17 +1,16 @@
 package L;
 
 import ax.AbstractInAxPackage;
-import ax.AbstractInAxPackage;
 import bH.D;
 import java.util.List;
 
 public class DummyFunctionFactory extends AbstractInAxPackage {
   private static m a = null;
-  
+
   public DummyFunctionFactory() {
     D.c("Dummy Function Factory Created.");
   }
-  
+
   public AbstractInAxPackage a(String paramString, List paramList) {
     AbstractInAxPackage AbstractInAxPackage = null;
     if (paramString.equalsIgnoreCase("smoothBasic")) {
@@ -53,18 +52,16 @@ public class DummyFunctionFactory extends AbstractInAxPackage {
     } else if (paramString.equalsIgnoreCase("toggle")) {
       AbstractInAxPackage = b(paramString, paramList);
     } else if (paramString.equalsIgnoreCase("cosXXXX")) {
-    
-    } 
-    if (AbstractInAxPackage == null)
-      AbstractInAxPackage = n.a().a(paramString, paramList); 
+
+    }
+    if (AbstractInAxPackage == null) AbstractInAxPackage = n.a().a(paramString, paramList);
     return AbstractInAxPackage;
   }
-  
+
   private AbstractInAxPackage b(String paramString, List paramList) {
     return new g(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/m.class
  * Java compiler version: 8 (52.0)

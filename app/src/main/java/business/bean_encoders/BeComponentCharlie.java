@@ -17,27 +17,27 @@ import s.ExceptionPrintstacktrace;
 
 public class BeComponentCharlie extends JPanel implements o {
   static String a = "Advanced";
-  
+
   static String b = "Simple";
-  
+
   CardLayout c = new CardLayout();
-  
+
   JPanel d = new JPanel();
-  
+
   M e;
-  
+
   w f;
-  
+
   JRadioButton ExceptionPrintstacktrace;
-  
+
   JRadioButton h;
-  
+
   R RInterfaceIndia;
-  
+
   SerializableImpl j = null;
-  
+
   private boolean k = true;
-  
+
   public BeComponentCharlie(R paramR) {
     this.RInterfaceIndia = paramR;
     setLayout(new BorderLayout());
@@ -69,11 +69,10 @@ public class BeComponentCharlie extends JPanel implements o {
     add(this.d, "Center");
     this.f.b(new f(this));
     this.f.a(new e(this));
-    if (!RInterfaceIndia.a().a("09ggdslkmkgoiu"))
-      fp.a(this.f, false); 
+    if (!RInterfaceIndia.a().a("09ggdslkmkgoiu")) fp.a(this.f, false);
     this.ExceptionPrintstacktrace.setSelected(true);
   }
-  
+
   private void a(String paramString) {
     this.c.show(this.d, paramString);
     if (paramString.equals(a)) {
@@ -81,29 +80,28 @@ public class BeComponentCharlie extends JPanel implements o {
       this.f.b(this.e.e());
       try {
         String str = this.e.d();
-        if (str.endsWith("- 0.0 )/( 0.0 - 0.0 ))"))
-          str = ""; 
+        if (str.endsWith("- 0.0 )/( 0.0 - 0.0 ))")) str = "";
         this.f.a(str);
-      } catch (Exception exception) {}
+      } catch (Exception exception) {
+      }
     } else {
       this.e.a(this.f.b(), d());
       this.e.a(this.f.e());
-    } 
+    }
   }
-  
+
   public void a(R paramR) {
     this.e.a(paramR);
     this.f.a(paramR);
     this.RInterfaceIndia = paramR;
   }
-  
+
   public boolean a() {
     return this.ExceptionPrintstacktrace.isSelected() ? this.e.a() : this.f.a();
   }
-  
+
   public SerializableImpl b() {
-    if (this.j == null)
-      this.j = new SerializableImpl(this.RInterfaceIndia.ac()); 
+    if (this.j == null) this.j = new SerializableImpl(this.RInterfaceIndia.ac());
     this.j.a("formula");
     if (this.ExceptionPrintstacktrace.isSelected()) {
       this.j.v(this.e.b());
@@ -113,10 +111,10 @@ public class BeComponentCharlie extends JPanel implements o {
       this.j.v(this.f.b());
       this.j.e(this.f.d());
       this.j.c(this.f.e());
-    } 
+    }
     return this.j;
   }
-  
+
   public void a(SerializableImpl paramaH) {
     this.j = paramaH;
     if (paramaH.b() == null) {
@@ -124,44 +122,43 @@ public class BeComponentCharlie extends JPanel implements o {
       try {
         this.j.a("formula");
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(c.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(c.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
     } else {
       a(false);
-    } 
+    }
     if (this.j.k() != null && !this.e.b(this.j.k())) {
       this.h.setSelected(true);
       a(a);
     } else {
       this.ExceptionPrintstacktrace.setSelected(true);
       a(b);
-    } 
+    }
     if (this.ExceptionPrintstacktrace.isSelected()) {
-      if (this.j.k() != null)
-        this.e.a(this.j.k(), this.j.e()); 
+      if (this.j.k() != null) this.e.a(this.j.k(), this.j.e());
       this.e.a(this.j.aL(), d());
     } else {
       this.f.a(this.j.aL(), d());
       this.f.a(this.j.k());
       this.f.b(this.j.e());
-    } 
+    }
     this.e.f();
     this.f.f();
   }
-  
+
   public boolean c() {
     return (this.f.c() || this.e.c());
   }
-  
+
   public boolean d() {
     return this.k;
   }
-  
+
   public void a(boolean paramBoolean) {
     this.k = paramBoolean;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/c.class
  * Java compiler version: 8 (52.0)

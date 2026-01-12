@@ -14,16 +14,18 @@ import s.SComponentGolf;
 
 public class JPanelExtensionInAyPackage extends JPanel {
   public JPanelExtensionInAyPackage(String paramString) {
-    a(paramString, (ActionListener)null);
+    a(paramString, (ActionListener) null);
   }
-  
+
   private void a(String paramString, ActionListener paramActionListener) {
-    if (paramActionListener == null)
-      paramActionListener = new k(this); 
+    if (paramActionListener == null) paramActionListener = new k(this);
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Data Rate")));
     setLayout(new GridLayout(0, 1));
     add(new JLabel(SComponentGolf.b("Speed may be limited by device or cable.")));
-    add(new JLabel(SComponentGolf.b("RInterfaceIndia.e. Bluetooth cable may slow actual data rate") + "."));
+    add(
+        new JLabel(
+            SComponentGolf.b("RInterfaceIndia.e. Bluetooth cable may slow actual data rate")
+                + "."));
     add(new JLabel(" "));
     ButtonGroup buttonGroup = new ButtonGroup();
     String str = SComponentGolf.b("Reads Per Second");
@@ -108,12 +110,11 @@ public class JPanelExtensionInAyPackage extends JPanel {
     add(jRadioButton);
     buttonGroup.add(jRadioButton);
   }
-  
+
   public void a(Component paramComponent) {
     bV.a(this, paramComponent, SComponentGolf.b("Set Data Rate"), null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/j.class
  * Java compiler version: 8 (52.0)

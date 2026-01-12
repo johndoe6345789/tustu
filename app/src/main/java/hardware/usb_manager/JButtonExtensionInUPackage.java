@@ -7,25 +7,25 @@ import javax.swing.ToolTipManager;
 class JButtonExtensionInUPackage extends JButton {
   public JButtonExtensionInUPackage(g paramg, c paramc) {
     super(paramg.a());
-    if (paramg.b() != null)
-      setToolTipText(paramg.b()); 
+    if (paramg.b() != null) setToolTipText(paramg.b());
     addActionListener(new b(this, paramg, paramc));
   }
-  
+
   public void a() {
     ToolTipManager toolTipManager = ToolTipManager.sharedInstance();
-    MouseEvent mouseEvent = new MouseEvent(this, 504, System.currentTimeMillis(), 0, 0, 0, 0, false);
+    MouseEvent mouseEvent =
+        new MouseEvent(this, 504, System.currentTimeMillis(), 0, 0, 0, 0, false);
     toolTipManager.mouseMoved(mouseEvent);
   }
-  
+
   public void b() {
     ToolTipManager toolTipManager = ToolTipManager.sharedInstance();
-    MouseEvent mouseEvent = new MouseEvent(this, 505, System.currentTimeMillis(), 0, 0, 0, 0, false);
+    MouseEvent mouseEvent =
+        new MouseEvent(this, 505, System.currentTimeMillis(), 0, 0, 0, 0, false);
     toolTipManager.mouseMoved(mouseEvent);
     toolTipManager.mouseExited(mouseEvent);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/u/a.class
  * Java compiler version: 8 (52.0)

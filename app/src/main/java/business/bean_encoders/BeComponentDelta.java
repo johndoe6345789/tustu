@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BeComponentDelta implements ActionListener {
   BeComponentDelta(c paramc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     c.a(this.a, paramActionEvent.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/d.class
  * Java compiler version: 8 (52.0)

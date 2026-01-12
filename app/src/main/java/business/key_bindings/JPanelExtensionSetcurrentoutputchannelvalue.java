@@ -1,13 +1,13 @@
 package business.key_bindings;
 
-import G.R;
 import G.GComponentCq;
 import G.ManagerUsingArrayList;
-import aI.CloneableImplInAiPackage;
-import aI.ManagerGetfilesin;
+import G.R;
 import aI.AiInterfacePapa;
 import aI.AiInterfaceQuebec;
+import aI.CloneableImplInAiPackage;
 import aI.ExceptionExtensionInAiPackage;
+import aI.ManagerGetfilesin;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.dO;
@@ -21,59 +21,60 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import s.SComponentGolf;
 
-public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implements GComponentCq, AiInterfaceQuebec, bc {
+public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel
+    implements GComponentCq, AiInterfaceQuebec, bc {
   static final String a = SComponentGolf.b("SD Logging Active");
-  
+
   static final String b = SComponentGolf.b("SD Logging Idle");
-  
+
   static final String c = SComponentGolf.b("SD Card Ready");
-  
+
   static final String CloneableImplInAiPackage = SComponentGolf.b("SD Card not Ready");
-  
+
   static final String e = SComponentGolf.b("SD Error!");
-  
+
   static final String f = SComponentGolf.b("No SD Errors");
-  
+
   static final String SComponentGolf = SComponentGolf.b("SD Card In");
-  
+
   static final String h = SComponentGolf.b("No SD Card");
-  
+
   R i = null;
-  
+
   AiInterfacePapa j = null;
-  
+
   o k = null;
-  
+
   a ManagerGetfilesin = null;
-  
+
   JButton m = null;
-  
+
   JButton n = null;
-  
+
   JButton o = null;
-  
+
   JButton AiInterfacePapa = null;
-  
+
   AiInterfaceQuebec AiInterfaceQuebec = null;
-  
+
   AiInterfaceQuebec r = null;
-  
+
   AiInterfaceQuebec s = null;
-  
+
   AiInterfaceQuebec t = null;
-  
+
   JPanel u = null;
-  
+
   private ManagerGetfilesin z = null;
-  
+
   n v = new n(this);
-  
+
   dO ExceptionExtensionInAiPackage = new dO();
-  
+
   boolean x = false;
-  
+
   boolean y = false;
-  
+
   public JPanelExtensionSetcurrentoutputchannelvalue(R paramR, boolean paramBoolean) {
     this.i = paramR;
     this.j = new AiInterfacePapa(paramR);
@@ -127,83 +128,98 @@ public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implemen
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add("Center", jPanel1);
     this.ManagerGetfilesin = new a(paramR, true);
-    jPanel2.add("South", (Component)this.ManagerGetfilesin);
-    if (paramBoolean)
-      add("South", jPanel2); 
+    jPanel2.add("South", (Component) this.ManagerGetfilesin);
+    if (paramBoolean) add("South", jPanel2);
     this.j.a(this);
     ManagerUsingArrayList.a().a(paramR.c(), CloneableImplInAiPackage.a, this);
   }
-  
+
   private void CloneableImplInAiPackage() {
     try {
       this.j.e();
     } catch (ExceptionExtensionInAiPackage ExceptionExtensionInAiPackage) {
       bV.CloneableImplInAiPackage(ExceptionExtensionInAiPackage.getMessage(), this);
-    } 
+    }
   }
-  
+
   private void e() {
     try {
       this.j.CloneableImplInAiPackage();
     } catch (ExceptionExtensionInAiPackage ExceptionExtensionInAiPackage) {
       bV.CloneableImplInAiPackage(ExceptionExtensionInAiPackage.getMessage(), this);
-    } 
+    }
   }
-  
+
   private void f() {
     try {
       this.j.f();
     } catch (ExceptionExtensionInAiPackage ExceptionExtensionInAiPackage) {
       bV.CloneableImplInAiPackage(ExceptionExtensionInAiPackage.getMessage(), this);
-    } 
+    }
   }
-  
+
   public void a() {
-    boolean bool = bV.a(SComponentGolf.b("Are you sure you want to format the SD card?") + "\n" + SComponentGolf.b("All files will be deleted."), this, true);
+    boolean bool =
+        bV.a(
+            SComponentGolf.b("Are you sure you want to format the SD card?")
+                + "\n"
+                + SComponentGolf.b("All files will be deleted."),
+            this,
+            true);
     if (bool) {
       m m = new m(this);
       m.start();
-    } 
+    }
   }
-  
+
   public void b() {
     JRootPane jRootPane = getRootPane();
     if (!(jRootPane.getGlassPane() instanceof dO)) {
       this.ExceptionExtensionInAiPackage.b(true);
-      jRootPane.setGlassPane((Component)this.ExceptionExtensionInAiPackage);
+      jRootPane.setGlassPane((Component) this.ExceptionExtensionInAiPackage);
       Component component = jRootPane.getGlassPane();
       component.setVisible(true);
     } else {
-      this.ExceptionExtensionInAiPackage = (dO)jRootPane.getGlassPane();
-    } 
+      this.ExceptionExtensionInAiPackage = (dO) jRootPane.getGlassPane();
+    }
     this.ExceptionExtensionInAiPackage.a(SComponentGolf.b("Formatting SD Card, Please wait"));
     this.ExceptionExtensionInAiPackage.setVisible(true);
   }
-  
+
   public void c() {
     this.ExceptionExtensionInAiPackage.setVisible(false);
   }
-  
+
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
-    boolean bool1 = (((int)paramDouble & CloneableImplInAiPackage.CloneableImplInAiPackage) == CloneableImplInAiPackage.CloneableImplInAiPackage) ? true : false;
-    boolean bool2 = (((int)paramDouble & CloneableImplInAiPackage.c) == CloneableImplInAiPackage.c) ? true : false;
+    boolean bool1 =
+        (((int) paramDouble & CloneableImplInAiPackage.CloneableImplInAiPackage)
+                == CloneableImplInAiPackage.CloneableImplInAiPackage)
+            ? true
+            : false;
+    boolean bool2 =
+        (((int) paramDouble & CloneableImplInAiPackage.c) == CloneableImplInAiPackage.c)
+            ? true
+            : false;
     this.r.a(bool2);
     this.k.setEnabled((bool2 || bool1));
-    boolean bool3 = (((int)paramDouble & CloneableImplInAiPackage.e) == CloneableImplInAiPackage.e) ? true : false;
+    boolean bool3 =
+        (((int) paramDouble & CloneableImplInAiPackage.e) == CloneableImplInAiPackage.e)
+            ? true
+            : false;
     this.s.a(bool3);
-    boolean bool = (((int)paramDouble & CloneableImplInAiPackage.b) == CloneableImplInAiPackage.b);
+    boolean bool = (((int) paramDouble & CloneableImplInAiPackage.b) == CloneableImplInAiPackage.b);
     this.t.a(bool);
     if (bool != this.m.isEnabled()) {
       this.m.setEnabled(bool);
       this.n.setEnabled(bool);
       this.o.setEnabled(bool);
-    } 
+    }
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
   }
-  
+
   public void close() {
     this.k.close();
     this.AiInterfaceQuebec.close();
@@ -211,28 +227,27 @@ public class JPanelExtensionSetcurrentoutputchannelvalue extends JPanel implemen
     this.j.b(this);
     ManagerUsingArrayList.a().a(this);
   }
-  
+
   public void a(boolean paramBoolean) {
     this.y = paramBoolean;
     SComponentGolf();
   }
-  
+
   public void b(boolean paramBoolean) {
     this.x = paramBoolean;
     this.AiInterfaceQuebec.a(paramBoolean);
     SComponentGolf();
   }
-  
+
   public void a(ManagerGetfilesin paraml) {
     this.z = paraml;
     SComponentGolf();
   }
-  
+
   private void SComponentGolf() {
     this.AiInterfacePapa.setEnabled((this.z != null && !this.x && this.y));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bk/h.class
  * Java compiler version: 8 (52.0)

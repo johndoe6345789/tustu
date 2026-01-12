@@ -17,7 +17,7 @@ public class TurboBaudHandler {
       m.a(true);
       o o = dc.a(paramR, m, 650);
       if (o.a() == 1) {
-        int i = (int)f.S().a();
+        int i = (int) f.S().a();
         j.ExceptionPrintstacktrace(true);
         a(50);
         try {
@@ -40,30 +40,35 @@ public class TurboBaudHandler {
                 D.d("Turbo Baud Change Failed, reverted to standard baud: " + k);
               } else {
                 D.d("Turbo Baud Change Failed, Failed to revert to standard baud");
-              } 
-            } 
+              }
+            }
           } else {
-            throw new ExceptionPrintstacktrace("Controller Turbo Activated, failed to change application Baud!\nYou will need to power cycle the controller to reconnect");
-          } 
+            throw new ExceptionPrintstacktrace(
+                "Controller Turbo Activated, failed to change application Baud!\n"
+                    + "You will need to power cycle the controller to reconnect");
+          }
         } finally {
           j.ExceptionPrintstacktrace(false);
-        } 
+        }
       } else {
-        throw new ExceptionPrintstacktrace("Controller Turbo failed to Activate!\nYou may need to power cycle the controller to reconnect. \n" + o.c());
-      } 
+        throw new ExceptionPrintstacktrace(
+            "Controller Turbo failed to Activate!\n"
+                + "You may need to power cycle the controller to reconnect. \n"
+                + o.c());
+      }
     } else if (f.Q() == null) {
       D.d("No turboBaudOnCommand, Turbo Baud disabled. ");
-    } 
+    }
   }
-  
+
   private static void a(int paramInt) {
     try {
       Thread.sleep(paramInt);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(dh.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-    } 
+      Logger.getLogger(dh.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+    }
   }
-  
+
   public static void b(R paramR) {
     J j = paramR.C();
     F f = paramR.O();
@@ -82,22 +87,23 @@ public class TurboBaudHandler {
             D.d("TurboBaud Deactivated");
           } else {
             j.ExceptionPrintstacktrace(false);
-            throw new ExceptionPrintstacktrace("Controller Turbo Dectivated, failed to change application Baud!\nYou will need to reload project to reconnect.");
-          } 
+            throw new ExceptionPrintstacktrace(
+                "Controller Turbo Dectivated, failed to change application Baud!\n"
+                    + "You will need to reload project to reconnect.");
+          }
         } finally {
           j.ExceptionPrintstacktrace(false);
-        } 
+        }
       } else {
         throw new ExceptionPrintstacktrace("Controller Turbo failed to Deactivate!");
-      } 
+      }
     } else {
       if (f.W() && f.Q() == null)
-        throw new ExceptionPrintstacktrace("No turboBaudOffCommand defined! Cannot disable Turbo"); 
-      if (f.Q() == null)
-        D.d("No turboBaudOffCommand, Turbo Baud disabled. "); 
-    } 
+        throw new ExceptionPrintstacktrace("No turboBaudOffCommand defined! Cannot disable Turbo");
+      if (f.Q() == null) D.d("No turboBaudOffCommand, Turbo Baud disabled. ");
+    }
   }
-  
+
   public static void c(R paramR) {
     J j = paramR.C();
     F f = paramR.O();
@@ -109,14 +115,12 @@ public class TurboBaudHandler {
       m.b(1);
       m.i(5);
       o o = dc.a(paramR, m, 50);
-      if (o.a() != 1)
-        D.b("Turbo ping not successful: " + o.c()); 
+      if (o.a() != 1) D.b("Turbo ping not successful: " + o.c());
     } else if (f.Q() == null) {
       D.d("No turboBaudOnCommand, Turbo Baud disabled. ");
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/e.class
  * Java compiler version: 8 (52.0)

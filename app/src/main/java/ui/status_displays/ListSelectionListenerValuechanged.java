@@ -6,7 +6,7 @@ import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerValuechanged implements ListSelectionListener {
   ListSelectionListenerValuechanged(s params) {}
-  
+
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
     FileInWPackage FileInWPackage = this.a.b.a();
     boolean bool = (FileInWPackage != null) ? true : false;
@@ -14,7 +14,6 @@ class ListSelectionListenerValuechanged implements ListSelectionListener {
     this.a.e.setEnabled(bool);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/x.class
  * Java compiler version: 8 (52.0)

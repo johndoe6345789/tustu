@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TablePanelPopupTriggerListener implements ActionListener {
   TablePanelPopupTriggerListener(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     w.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/Q.class
  * Java compiler version: 8 (52.0)

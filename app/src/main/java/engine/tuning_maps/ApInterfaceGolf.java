@@ -4,16 +4,15 @@ import com.efiAnalytics.ui.aN;
 
 class ApInterfaceGolf implements by {
   String a;
-  
+
   ApInterfaceGolf(f paramf, String paramString) {
     this.a = paramString;
   }
-  
+
   public void a() {
     aN.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/G.class
  * Java compiler version: 8 (52.0)

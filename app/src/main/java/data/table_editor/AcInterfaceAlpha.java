@@ -2,12 +2,11 @@ package ac;
 
 public interface AcInterfaceAlpha {
   String a();
-  
+
   String b();
-  
+
   String c();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/a.class
  * Java compiler version: 8 (52.0)

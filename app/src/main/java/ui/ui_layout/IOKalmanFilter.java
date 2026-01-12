@@ -14,21 +14,21 @@ import java.util.Iterator;
 
 public class IOKalmanFilter extends g {
   File ExceptionInVPackage = null;
-  
+
   d b = null;
-  
+
   boolean H = false;
-  
+
   int I = -1;
-  
+
   float J = -1.0F;
-  
+
   float K = 0.0F;
-  
+
   int L = -1;
-  
+
   int M = 0;
-  
+
   private KalmanFilterUsingMatrix N;
 
   public IOKalmanFilter() {
@@ -36,9 +36,11 @@ public class IOKalmanFilter extends g {
     double d1 = 50.0D;
     double d2 = 3.0D;
     double d3 = 5000.0D;
-    this.N = KalmanFilterUsingMatrix.create(0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
+    this.N =
+        KalmanFilterUsingMatrix.create(
+            0.0D, 0.0D, d1, Math.pow(d2, 2.0D) / 2.0D, Math.pow(d3, 2.0D));
   }
-  
+
   public boolean ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     this.t = true;
@@ -49,24 +51,28 @@ public class IOKalmanFilter extends g {
       fileInputStream.read(arrayOfByte);
       try {
         fileInputStream.close();
-      } catch (Exception exception) {}
+      } catch (Exception exception) {
+      }
       if (arrayOfByte[0] == 80 && arrayOfByte[1] == 75) {
-        ArrayList<File> arrayList = ae.ExceptionInVPackage(file, file.getParentFile(), "maxxecu-log;compressed-maxxecu-log");
+        ArrayList<File> arrayList =
+            ae.ExceptionInVPackage(
+                file, file.getParentFile(), "maxxecu-log;compressed-maxxecu-log");
         if (arrayList.size() > 0) {
-          paramString = ((File)arrayList.get(0)).getAbsolutePath();
+          paramString = ((File) arrayList.get(0)).getAbsolutePath();
           this.ExceptionInVPackage = arrayList.get(0);
         } else {
           throw new ExceptionInVPackage("Unable to open file:\n" + paramString);
-        } 
-      } 
+        }
+      }
     } catch (FileNotFoundException fileNotFoundException) {
-      throw new ExceptionInVPackage("Unable to open file for reading:\n" + fileNotFoundException.getLocalizedMessage());
+      throw new ExceptionInVPackage(
+          "Unable to open file for reading:\n" + fileNotFoundException.getLocalizedMessage());
     } catch (IOException iOException) {
       throw new ExceptionInVPackage("Unable to read from file:\n" + paramString);
-    } 
+    }
     return super.ExceptionInVPackage(paramString);
   }
-  
+
   public Iterator b() {
     ArrayList<T> arrayList = new ArrayList();
     byte b = 0;
@@ -75,26 +81,28 @@ public class IOKalmanFilter extends g {
       T t = iterator.next();
       arrayList.add(t);
       if (t instanceof d) {
-        d d1 = (d)t;
+        d d1 = (d) t;
         d1.b("");
-      } 
-      if (this.I < 0 && (t.ExceptionInVPackage().equals("ECU on time") || t.ExceptionInVPackage().equals("Log Timestamp"))) {
+      }
+      if (this.I < 0
+          && (t.ExceptionInVPackage().equals("ECU on time")
+              || t.ExceptionInVPackage().equals("Log Timestamp"))) {
         this.I = b;
         this.H = t.ExceptionInVPackage().equals("Log Timestamp");
         D.c("ECU on time index: " + this.I);
-      } 
+      }
       b++;
-    } 
+    }
     if (this.I >= 0) {
       this.b = new d();
       this.b.ExceptionInVPackage("Time");
       this.b.b("s");
       this.b.ExceptionInVPackage(3);
       arrayList.add(this.b);
-    } 
+    }
     return arrayList.iterator();
   }
-  
+
   public float[] c() {
     // Byte code:
     //   0: aload_0
@@ -309,14 +317,12 @@ public class IOKalmanFilter extends g {
     //   337: aload_1
     //   338: areturn
   }
-  
+
   public void ExceptionInVPackage() {
     super.ExceptionInVPackage();
-    if (this.ExceptionInVPackage != null)
-      this.ExceptionInVPackage.delete(); 
+    if (this.ExceptionInVPackage != null) this.ExceptionInVPackage.delete();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/X.class
  * Java compiler version: 8 (52.0)

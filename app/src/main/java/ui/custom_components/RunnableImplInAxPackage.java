@@ -6,7 +6,7 @@ import s.SComponentGolf;
 
 class RunnableImplInAxPackage implements Runnable {
   RunnableImplInAxPackage(h paramh) {}
-  
+
   public void run() {
     this.a.e.setEnabled(true);
     this.a.f.c();
@@ -18,16 +18,18 @@ class RunnableImplInAxPackage implements Runnable {
         m m = this.a.d.elementAt(b);
         try {
           String str = m.a().getFriendlyName(false);
-          if (str != null && (str.toLowerCase().startsWith("efi anal") || str.toLowerCase().startsWith("efianal"))) {
+          if (str != null
+              && (str.toLowerCase().startsWith("efi anal")
+                  || str.toLowerCase().startsWith("efianal"))) {
             this.a.c.setSelectedIndex(b);
             break;
-          } 
-        } catch (IOException iOException) {}
-      } 
-    } 
+          }
+        } catch (IOException iOException) {
+        }
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aX/k.class
  * Java compiler version: 8 (52.0)

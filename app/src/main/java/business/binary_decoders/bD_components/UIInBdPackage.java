@@ -12,15 +12,15 @@ import javax.swing.JPanel;
 
 public class UIInBdPackage extends JPanel {
   JLabel a = new JLabel(" ?", 2);
-  
+
   JLabel b = new JLabel("? KB", 2);
-  
+
   JLabel c = new JLabel("?.?? GB", 2);
-  
+
   ab d = null;
-  
+
   JPanel e = null;
-  
+
   public UIInBdPackage(ab paramab) {
     this.d = paramab;
     setLayout(new GridLayout(1, 0));
@@ -32,24 +32,24 @@ public class UIInBdPackage extends JPanel {
     setMinimumSize(eJ.a(400, 24));
     setPreferredSize(eJ.a(400, 24));
   }
-  
+
   public void a(long paramLong) {
     if (paramLong > 0L) {
       this.e.setVisible(true);
       this.c.setText(X.a(paramLong));
     } else {
       this.e.setVisible(false);
-    } 
+    }
   }
-  
+
   public void b(long paramLong) {
     this.b.setText(X.a(paramLong));
   }
-  
+
   public void a(int paramInt) {
     this.a.setText("" + paramInt);
   }
-  
+
   private JPanel a(JLabel paramJLabel, String paramString) {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new FlowLayout(1));
@@ -61,12 +61,11 @@ public class UIInBdPackage extends JPanel {
     jPanel1.add(jPanel2);
     return jPanel1;
   }
-  
+
   public String a() {
     return this.b.getText();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/h.class
  * Java compiler version: 8 (52.0)

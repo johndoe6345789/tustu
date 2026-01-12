@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceGp implements ActionListener {
   ApInterfaceGp(gO paramgO) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().a(dd.a().c(), paramActionEvent.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gP.class
  * Java compiler version: 8 (52.0)

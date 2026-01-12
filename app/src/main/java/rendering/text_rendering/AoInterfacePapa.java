@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 class AoInterfacePapa implements aY {
   AoInterfacePapa(k paramk) {}
-  
+
   public void a(double paramDouble1, double paramDouble2) {
     String str1 = this.a.b.getText();
     byte b = 0;
@@ -30,16 +30,16 @@ class AoInterfacePapa implements aY {
               Rectangle rectangle = this.a.E.getBounds();
               rectangle.y += this.a.d.getHeight() * (b - 10) / this.a.c.getRowCount();
               this.a.d.scrollRectToVisible(rectangle);
-            } 
+            }
             break;
-          } 
+          }
           b++;
-        } catch (NumberFormatException numberFormatException) {}
-      } 
-    } 
+        } catch (NumberFormatException numberFormatException) {
+        }
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aO/p.class
  * Java compiler version: 8 (52.0)

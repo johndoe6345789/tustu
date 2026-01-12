@@ -7,12 +7,11 @@ public class NInterfaceOscar implements A {
   public String IOPropertiesUsingFile() {
     return IOPropertiesUsingFile.IOPropertiesUsingFile().b();
   }
-  
+
   public String b() {
     return IOPropertiesUsingFile.IOPropertiesUsingFile;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/n/o.class
  * Java compiler version: 8 (52.0)

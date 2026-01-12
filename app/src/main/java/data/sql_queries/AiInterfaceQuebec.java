@@ -2,10 +2,9 @@ package aI;
 
 public interface AiInterfaceQuebec {
   void a(boolean paramBoolean);
-  
+
   void b(boolean paramBoolean);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aI/q.class
  * Java compiler version: 8 (52.0)

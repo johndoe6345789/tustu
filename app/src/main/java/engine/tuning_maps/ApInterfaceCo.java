@@ -7,12 +7,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceCo implements ActionListener {
   ApInterfaceCo(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     b.a().e(bV.c());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cO.class
  * Java compiler version: 8 (52.0)

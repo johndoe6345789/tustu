@@ -4,15 +4,15 @@ import java.io.Serializable;
 
 public class MatrixInverter implements Serializable {
   private double[][] a;
-  
+
   private int b;
-  
+
   private int c;
-  
+
   private int d;
-  
+
   private int[] e;
-  
+
   public MatrixInverter(Matrix paramb) {
     // Byte code:
     //   0: aload_0
@@ -258,20 +258,18 @@ public class MatrixInverter implements Serializable {
     //   441: goto -> 76
     //   444: return
   }
-  
+
   public boolean a() {
     for (byte b = 0; b < this.c; b++) {
-      if (this.a[b][b] == 0.0D)
-        return false; 
-    } 
+      if (this.a[b][b] == 0.0D) return false;
+    }
     return true;
   }
-  
+
   public Matrix a(Matrix paramb) {
     if (paramb.d() != this.b)
-      throw new IllegalArgumentException("Matrix row dimensions must agree."); 
-    if (!a())
-      throw new RuntimeException("Matrix is singular."); 
+      throw new IllegalArgumentException("Matrix row dimensions must agree.");
+    if (!a()) throw new RuntimeException("Matrix is singular.");
     int i = paramb.e();
     Matrix b1 = paramb.a(this.e, 0, i - 1);
     double[][] arrayOfDouble = b1.b();
@@ -279,22 +277,20 @@ public class MatrixInverter implements Serializable {
     for (j = 0; j < this.c; j++) {
       for (int k = j + 1; k < this.c; k++) {
         for (byte b2 = 0; b2 < i; b2++)
-          arrayOfDouble[k][b2] = arrayOfDouble[k][b2] - arrayOfDouble[j][b2] * this.a[k][j]; 
-      } 
-    } 
+          arrayOfDouble[k][b2] = arrayOfDouble[k][b2] - arrayOfDouble[j][b2] * this.a[k][j];
+      }
+    }
     for (j = this.c - 1; j >= 0; j--) {
       byte b2;
-      for (b2 = 0; b2 < i; b2++)
-        arrayOfDouble[j][b2] = arrayOfDouble[j][b2] / this.a[j][j]; 
+      for (b2 = 0; b2 < i; b2++) arrayOfDouble[j][b2] = arrayOfDouble[j][b2] / this.a[j][j];
       for (b2 = 0; b2 < j; b2++) {
         for (byte b3 = 0; b3 < i; b3++)
-          arrayOfDouble[b2][b3] = arrayOfDouble[b2][b3] - arrayOfDouble[j][b3] * this.a[b2][j]; 
-      } 
-    } 
+          arrayOfDouble[b2][b3] = arrayOfDouble[b2][b3] - arrayOfDouble[j][b3] * this.a[b2][j];
+      }
+    }
     return b1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/a/a.class
  * Java compiler version: 8 (52.0)

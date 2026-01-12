@@ -21,12 +21,12 @@ public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
     this.a.e("I");
     this.a.d("f%cId");
   }
-  
+
   public void a() {
     this.b = -1;
     this.c = null;
   }
-  
+
   public int a(v paramv) {
     int[] arrayOfInt = paramv.a(this.a.a().a(null), 250, 3);
     if (arrayOfInt != null) {
@@ -34,22 +34,20 @@ public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
       String str = new String(arrayOfByte);
       try {
         int i = Integer.parseInt(str);
-        if (i > 3)
-          D.b("Unsupported Protocol Version Detected " + i + ", using Highest known 003."); 
+        if (i > 3) D.b("Unsupported Protocol Version Detected " + i + ", using Highest known 003.");
         return i;
       } catch (NumberFormatException numberFormatException) {
         return 0;
-      } 
-    } 
+      }
+    }
     return 0;
   }
-  
+
   public boolean a(v paramv, F paramF, int paramInt) {
     BlockingFactorHolder e1;
-    if (this.b < 0)
-      this.b = paramv.a(this.a.e().b(), 10, 1)[0];
+    if (this.b < 0) this.b = paramv.a(this.a.e().b(), 10, 1)[0];
     if (this.c == null) {
-      this.a.d().a((byte)this.b);
+      this.a.d().a((byte) this.b);
       int[] arrayOfInt = paramv.a(this.a.d().a(null), 10, 5);
       this.c = new BlockingFactorHolder(this);
       this.c.a(arrayOfInt);
@@ -58,8 +56,7 @@ public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
     paramF.w(this.b);
     if (this.b != paramInt) {
       this.a.d().a(paramInt);
-      if (paramF.D() instanceof CrcEnvelopeDecoder)
-        ((CrcEnvelopeDecoder)paramF.D()).b(false);
+      if (paramF.D() instanceof CrcEnvelopeDecoder) ((CrcEnvelopeDecoder) paramF.D()).b(false);
       try {
         int[] arrayOfInt = paramv.a(this.a.d().a(null), 10, 5);
         e1 = new BlockingFactorHolder(this);
@@ -70,16 +67,23 @@ public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
           e1 = new BlockingFactorHolder(this);
           e1.b = paramF.ay();
           e1.a = paramF.G(0);
-          D.d("Failed to get Target BlockingFactors, using ini values on CAN ID:" + paramInt + ", " + e1.toString());
+          D.d(
+              "Failed to get Target BlockingFactors, using ini values on CAN ID:"
+                  + paramInt
+                  + ", "
+                  + e1.toString());
         } catch (Exception exception1) {
           e1 = new BlockingFactorHolder(this);
           e1.b = 0;
           e1.a = 64;
-          D.d("Failed to get Target BlockingFactors, using default values on CAN ID:" + paramInt + ", " + e1.toString());
+          D.d(
+              "Failed to get Target BlockingFactors, using default values on CAN ID:"
+                  + paramInt
+                  + ", "
+                  + e1.toString());
         }
       } finally {
-        if (paramF.D() instanceof CrcEnvelopeDecoder)
-          ((CrcEnvelopeDecoder)paramF.D()).b(true);
+        if (paramF.D() instanceof CrcEnvelopeDecoder) ((CrcEnvelopeDecoder) paramF.D()).b(true);
       }
     } else {
       e1 = this.c;
@@ -90,7 +94,6 @@ public class ProtocolVersionNegotiator implements GInterfaceCo, Serializable {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/J/d.class
  * Java compiler version: 8 (52.0)

@@ -7,27 +7,31 @@ import java.awt.event.ActionListener;
 
 class gb implements ActionListener {
   gb(fK paramfK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String[] arrayOfString = new String[1];
     arrayOfString[0] = this.a.i().r() + "";
-    String str = bV.a("{Maximum Number of Z Gradients}", true, fK.r(), true, (Component)this.a.i(), arrayOfString);
-    if (str == null)
-      return; 
+    String str =
+        bV.a(
+            "{Maximum Number of Z Gradients}",
+            true,
+            fK.r(),
+            true,
+            (Component) this.a.i(),
+            arrayOfString);
+    if (str == null) return;
     try {
       double d = Double.parseDouble(str);
-      if (d < 1.0D)
-        d = 1.0D; 
-      int i = (int)Math.round(d);
+      if (d < 1.0D) d = 1.0D;
+      int i = (int) Math.round(d);
       fK.a(this.a, fK.r(), "" + i);
       this.a.i().k(i);
     } catch (Exception exception) {
-      bV.d("Invalid value: " + str, (Component)this.a.i());
-    } 
+      bV.d("Invalid value: " + str, (Component) this.a.i());
+    }
     this.a.h();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/gb.class
  * Java compiler version: 8 (52.0)

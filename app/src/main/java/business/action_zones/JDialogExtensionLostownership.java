@@ -3,10 +3,10 @@ package business.action_zones;
 import bH.X;
 import bH.ab;
 import com.efiAnalytics.ui.bV;
+import f.ExceptionExtensionInFPackage;
+import f.FInterfaceDelta;
 import f.IODateTostring;
 import f.IOTostring;
-import f.FInterfaceDelta;
-import f.ExceptionExtensionInFPackage;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dialog;
@@ -36,49 +36,92 @@ import javax.swing.JTextPane;
 
 public class JDialogExtensionLostownership extends JDialog implements ClipboardOwner {
   IOTostring IODateTostring;
-  
+
   JTextPane IOTostring = new JTextPane();
-  
+
   JTextPane c = new JTextPane();
-  
+
   IODateTostring FInterfaceDelta = null;
-  
+
   ab e = null;
-  
+
   FInterfaceDelta f = null;
-  
+
   JButton g = null;
-  
+
   JButton ExceptionExtensionInFPackage = null;
-  
-  public JDialogExtensionLostownership(Window paramWindow, FInterfaceDelta paramd, ab paramab, IOTostring paramb) {
-    super(paramWindow, paramab.IODateTostring("Offline Activate") + " " + X.IOTostring(paramd.IODateTostring(), "Lite!", ""), Dialog.ModalityType.APPLICATION_MODAL);
+
+  public JDialogExtensionLostownership(
+      Window paramWindow, FInterfaceDelta paramd, ab paramab, IOTostring paramb) {
+    super(
+        paramWindow,
+        paramab.IODateTostring("Offline Activate")
+            + " "
+            + X.IOTostring(paramd.IODateTostring(), "Lite!", ""),
+        Dialog.ModalityType.APPLICATION_MODAL);
     this.e = paramab;
     this.IODateTostring = paramb;
     this.f = paramd;
     c();
   }
-  
+
   private void c() {
     byte b1;
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
-    jPanel1.setBorder(BorderFactory.createTitledBorder(this.f.f() + " " + this.e.IODateTostring("Offline Registration Activation")));
+    jPanel1.setBorder(
+        BorderFactory.createTitledBorder(
+            this.f.f() + " " + this.e.IODateTostring("Offline Registration Activation")));
     this.g = new JButton(this.e.IODateTostring("Accept"));
     this.ExceptionExtensionInFPackage = new JButton(this.e.IODateTostring("Cancel"));
     JLabel jLabel = new JLabel();
-    String str = "<html><body><H1>" + this.e.IODateTostring("5 Step Offline Activation") + "</H1><strong>" + this.e.IODateTostring("Step 1") + "</strong> - " + this.e.IODateTostring("Save Activation Request to File ActivationRequest.txt on IODateTostring USB drive or other medium.") + "<br><strong>" + this.e.IODateTostring("Step 2") + "</strong> - " + this.e.IODateTostring("On IODateTostring Computer that is connected to the Internet, open IODateTostring web browser and go to") + "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=\"blue\"><u>https://www.efianalytics.com/activate</u></font><br><strong>" + this.e.IODateTostring("Step 3") + "</strong> - " + this.e.IODateTostring("Upload your saved ActivationRequest.txt, the site will provide you with ActivationCode.txt") + "<br><strong>" + this.e.IODateTostring("Step 4") + "</strong> - " + this.e.IODateTostring("Return to TunerStudio and click Load Activation From File to load ActivationCode.txt into TunerStudio") + "<br><strong>" + this.e.IODateTostring("Step 5") + "</strong> - " + this.e.IODateTostring("Click Accept") + "<br>" + this.e.IODateTostring("Done!") + "</body></html>";
+    String str =
+        "<html><body><H1>"
+            + this.e.IODateTostring("5 Step Offline Activation")
+            + "</H1><strong>"
+            + this.e.IODateTostring("Step 1")
+            + "</strong> - "
+            + this.e.IODateTostring(
+                "Save Activation Request to File ActivationRequest.txt on IODateTostring USB drive"
+                    + " or other medium.")
+            + "<br><strong>"
+            + this.e.IODateTostring("Step 2")
+            + "</strong> - "
+            + this.e.IODateTostring(
+                "On IODateTostring Computer that is connected to the Internet, open IODateTostring"
+                    + " web browser and go to")
+            + "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font"
+            + " color=\"blue\"><u>https://www.efianalytics.com/activate</u></font><br><strong>"
+            + this.e.IODateTostring("Step 3")
+            + "</strong> - "
+            + this.e.IODateTostring(
+                "Upload your saved ActivationRequest.txt, the site will provide you with"
+                    + " ActivationCode.txt")
+            + "<br><strong>"
+            + this.e.IODateTostring("Step 4")
+            + "</strong> - "
+            + this.e.IODateTostring(
+                "Return to TunerStudio and click Load Activation From File to load"
+                    + " ActivationCode.txt into TunerStudio")
+            + "<br><strong>"
+            + this.e.IODateTostring("Step 5")
+            + "</strong> - "
+            + this.e.IODateTostring("Click Accept")
+            + "<br>"
+            + this.e.IODateTostring("Done!")
+            + "</body></html>";
     jLabel.setText(str);
     jLabel.addMouseListener(new g(this));
     jPanel1.add("North", jLabel);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.setBorder(BorderFactory.createTitledBorder(this.e.IODateTostring("Activation Request")));
+    jPanel2.setBorder(
+        BorderFactory.createTitledBorder(this.e.IODateTostring("Activation Request")));
     if ((Toolkit.getDefaultToolkit().getScreenSize()).height < 640) {
       b1 = 60;
     } else {
       b1 = 120;
-    } 
+    }
     this.IOTostring.setMinimumSize(new Dimension(520, b1));
     this.IOTostring.setPreferredSize(new Dimension(520, b1));
     this.IOTostring.setMaximumSize(new Dimension(520, b1));
@@ -91,8 +134,8 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
       this.IOTostring.selectAll();
     } catch (IOException iOException) {
       bV.FInterfaceDelta(iOException.getMessage(), this);
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } 
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, iOException);
+    }
     jPanel2.add("Center", this.IOTostring);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new FlowLayout(2));
@@ -107,7 +150,8 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
     jPanel1.add("Center", jPanel2);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout());
-    jPanel4.setBorder(BorderFactory.createTitledBorder(this.e.IODateTostring("Server Activation Code")));
+    jPanel4.setBorder(
+        BorderFactory.createTitledBorder(this.e.IODateTostring("Server Activation Code")));
     this.c.setMinimumSize(new Dimension(520, 120));
     this.c.setPreferredSize(new Dimension(520, 120));
     this.c.setMaximumSize(new Dimension(520, 120));
@@ -136,27 +180,29 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
     add("South", jPanel5);
     add("Center", jPanel1);
   }
-  
+
   private void FInterfaceDelta() {
     dispose();
   }
-  
+
   private void e() {
     this.FInterfaceDelta = null;
     dispose();
   }
-  
+
   private void f() {
     this.IOTostring.selectAll();
     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
     StringSelection stringSelection = new StringSelection(this.IOTostring.getText());
     clipboard.setContents(stringSelection, this);
   }
-  
+
   private void g() {
     String str1 = this.f.IOTostring();
-    String[] arrayOfString = { "txt" };
-    String str2 = bV.IOTostring(this, this.e.IODateTostring("Load Activation From File"), arrayOfString, "*.txt", str1);
+    String[] arrayOfString = {"txt"};
+    String str2 =
+        bV.IOTostring(
+            this, this.e.IODateTostring("Load Activation From File"), arrayOfString, "*.txt", str1);
     if (str2 != null && !str2.equals("")) {
       File file = new File(str2);
       FileReader fileReader = null;
@@ -164,8 +210,7 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
         fileReader = new FileReader(file);
         StringBuilder stringBuilder = new StringBuilder();
         int i;
-        for (i = fileReader.read(); i != -1; i = fileReader.read())
-          stringBuilder.append((char)i); 
+        for (i = fileReader.read(); i != -1; i = fileReader.read()) stringBuilder.append((char) i);
         this.c.setText(stringBuilder.toString());
       } catch (IOException iOException) {
         bV.FInterfaceDelta("unable to read file:\n" + file.getAbsolutePath(), this);
@@ -174,57 +219,64 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
           try {
             fileReader.close();
           } catch (IOException iOException) {
-            Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-          }  
-      } 
-    } 
+            Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, iOException);
+          }
+      }
+    }
   }
-  
+
   private void ExceptionExtensionInFPackage() {
     this.IOTostring.selectAll();
     String str1 = this.IOTostring.getText();
     String str2 = this.f.IOTostring();
-    String[] arrayOfString = { "txt" };
-    String str3 = bV.IODateTostring(this, "Save Activation Request to File", arrayOfString, this.f.f() + "ActivationRequest.txt", str2);
+    String[] arrayOfString = {"txt"};
+    String str3 =
+        bV.IODateTostring(
+            this,
+            "Save Activation Request to File",
+            arrayOfString,
+            this.f.f() + "ActivationRequest.txt",
+            str2);
     if (str3 != null && !str3.equals("")) {
       File file = new File(str3);
       FileWriter fileWriter = null;
       try {
-        if (file.exists())
-          file.delete(); 
+        if (file.exists()) file.delete();
         if (file.createNewFile()) {
           fileWriter = new FileWriter(file);
           fileWriter.write(str1);
         } else {
           bV.FInterfaceDelta("Can not write file to:\n" + file.getAbsolutePath(), this);
-        } 
+        }
       } catch (IOException iOException) {
         bV.FInterfaceDelta("Can not write to file:\n" + file.getAbsolutePath(), this);
       } finally {
         if (fileWriter != null)
           try {
             fileWriter.close();
-          } catch (Exception exception) {} 
-      } 
-    } 
+          } catch (Exception exception) {
+          }
+      }
+    }
   }
-  
+
   public String IODateTostring() {
     return this.c.getText();
   }
-  
+
   private void i() {
     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
     try {
       String str = clipboard.getData(DataFlavor.stringFlavor).toString();
       this.c.setText(str);
     } catch (UnsupportedFlavorException unsupportedFlavorException) {
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, unsupportedFlavorException);
+      Logger.getLogger(f.class.getName())
+          .log(Level.SEVERE, (String) null, unsupportedFlavorException);
     } catch (IOException iOException) {
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } 
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, iOException);
+    }
   }
-  
+
   private void j() {
     String str = IODateTostring();
     if (str != null && !str.trim().equals("")) {
@@ -236,11 +288,14 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
         this.FInterfaceDelta = null;
         this.g.setEnabled(false);
         return;
-      } 
+      }
       if (this.FInterfaceDelta.ExceptionExtensionInFPackage().before(new Date())) {
-        bV.FInterfaceDelta("This Activation code has expired. Please request IODateTostring new one from:\nhttps://www.efianalytics.com/activate", this);
+        bV.FInterfaceDelta(
+            "This Activation code has expired. Please request IODateTostring new one from:\n"
+                + "https://www.efianalytics.com/activate",
+            this);
         return;
-      } 
+      }
       o o = o.FInterfaceDelta();
       FInterfaceDelta d1 = o.IODateTostring(this.FInterfaceDelta);
       if (d1.IODateTostring() != 0) {
@@ -248,18 +303,17 @@ public class JDialogExtensionLostownership extends JDialog implements ClipboardO
         this.FInterfaceDelta = null;
         this.g.setEnabled(false);
         return;
-      } 
-    } 
+      }
+    }
     this.g.setEnabled(true);
   }
-  
+
   public void lostOwnership(Clipboard paramClipboard, Transferable paramTransferable) {}
-  
+
   public IODateTostring IOTostring() {
     return this.FInterfaceDelta;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/az/f.class
  * Java compiler version: 8 (52.0)

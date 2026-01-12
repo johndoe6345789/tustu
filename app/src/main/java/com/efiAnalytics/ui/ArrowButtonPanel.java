@@ -11,31 +11,29 @@ import javax.swing.UIManager;
 
 public class ArrowButtonPanel extends JPanel {
   Polygon a = new Polygon();
-  
+
   Polygon b = new Polygon();
-  
+
   int c = 10;
-  
+
   private boolean f = true;
-  
+
   private boolean g = true;
-  
+
   List d = new ArrayList();
-  
+
   Color e = null;
-  
+
   public ArrowButtonPanel() {
     a();
     addMouseListener(new fD(this));
     Color color = UIManager.getColor("Button.foreground");
-    if (color != null)
-      setForeground(color); 
+    if (color != null) setForeground(color);
     color = UIManager.getColor("SplitPane.background");
-    if (color != null)
-      setBackground(color); 
+    if (color != null) setBackground(color);
     this.e = UIManager.getColor("SplitPane.highlight");
   }
-  
+
   private void a() {
     int i = this.c;
     byte b = 1;
@@ -49,42 +47,37 @@ public class ArrowButtonPanel extends JPanel {
     this.b.addPoint(b + i / 2, j + i + i / 2);
     this.b.addPoint(b, j + 2 * i);
   }
-  
+
   public void paint(Graphics paramGraphics) {
     paramGraphics.setColor(getBackground());
     paramGraphics.fill3DRect(0, 0, getWidth(), getHeight(), true);
     paramGraphics.setColor(this.e);
     paramGraphics.draw3DRect(0, 0, getWidth(), getHeight(), true);
     paramGraphics.setColor(getForeground());
-    if (this.f)
-      paramGraphics.fillPolygon(this.b); 
-    if (this.g)
-      paramGraphics.fillPolygon(this.a); 
+    if (this.f) paramGraphics.fillPolygon(this.b);
+    if (this.g) paramGraphics.fillPolygon(this.a);
   }
-  
+
   public void a(fE paramfE) {
     this.d.add(paramfE);
   }
-  
+
   public Dimension getPreferredSize() {
     return new Dimension(2 + this.c / 2, 4 * this.c);
   }
-  
+
   public void setBackground(Color paramColor) {
     super.setBackground(paramColor);
   }
-  
+
   private void b() {
-    for (fE fE : this.d)
-      fE.a(); 
+    for (fE fE : this.d) fE.a();
   }
-  
+
   private void c() {
-    for (fE fE : this.d)
-      fE.b(); 
+    for (fE fE : this.d) fE.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fC.class
  * Java compiler version: 8 (52.0)

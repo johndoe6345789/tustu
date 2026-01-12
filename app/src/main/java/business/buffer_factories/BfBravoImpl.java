@@ -5,12 +5,11 @@ import W.r;
 
 class BfBravoImpl implements r {
   BfBravoImpl(a parama) {}
-  
+
   public boolean a(Q paramQ) {
     return paramQ.aN();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bf/b.class
  * Java compiler version: 8 (52.0)

@@ -7,23 +7,21 @@ import javax.swing.JCheckBoxMenuItem;
 
 class df implements ItemListener {
   df(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
     if (paramItemEvent.getStateChange() == 1) {
-      String str1 = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getActionCommand();
-      String str2 = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getName();
-      String str3 = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getText();
+      String str1 = ((JCheckBoxMenuItem) paramItemEvent.getSource()).getActionCommand();
+      String str2 = ((JCheckBoxMenuItem) paramItemEvent.getSource()).getName();
+      String str3 = ((JCheckBoxMenuItem) paramItemEvent.getSource()).getText();
       if (str2.equals("Other")) {
         String str = IOJFileChooser.a("{Enter '" + str3 + "' value }", false, bq.a().b());
-        if (str != null && !str.equals(""))
-          cd.a(this.a, str1, str, true); 
+        if (str != null && !str.equals("")) cd.a(this.a, str1, str, true);
       } else {
         cd.a(this.a, str1, str2, true);
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/df.class
  * Java compiler version: 8 (52.0)

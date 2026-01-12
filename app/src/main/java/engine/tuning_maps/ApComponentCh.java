@@ -5,14 +5,14 @@ import ao.hx;
 
 class ApComponentCh implements Runnable {
   ch(cc paramcc) {}
-  
+
   public void run() {
     this.a.AcInterfaceRomeo.setEnabled(!AcInterfaceRomeo.a());
     this.a.s.setEnabled(AcInterfaceRomeo.a());
-    this.a.u.setEnabled((hx.a().AcInterfaceRomeo() != null && !hx.a().AcInterfaceRomeo().isEmpty()));
+    this.a.u.setEnabled(
+        (hx.a().AcInterfaceRomeo() != null && !hx.a().AcInterfaceRomeo().isEmpty()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ch.class
  * Java compiler version: 8 (52.0)

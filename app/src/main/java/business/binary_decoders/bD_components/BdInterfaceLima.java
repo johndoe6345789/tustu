@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BdInterfaceLima implements ActionListener {
   BdInterfaceLima(i parami) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     i.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/l.class
  * Java compiler version: 8 (52.0)

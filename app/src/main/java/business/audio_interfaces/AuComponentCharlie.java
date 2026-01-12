@@ -15,18 +15,17 @@ public class AuComponentCharlie extends ManagerInAoPackage {
     ArrayList arrayList = b.a("ALL");
     a(arrayList);
     dQ dQ = new dQ(IOProperties.f(), "TiggerLog");
-    a a = new a((et)dQ);
+    a a = new a((et) dQ);
     a(a);
     b(10000);
-    a((et)dQ);
+    a((et) dQ);
     b();
   }
-  
+
   public Component a() {
     return ManagerInAoPackage();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/au/c.class
  * Java compiler version: 8 (52.0)

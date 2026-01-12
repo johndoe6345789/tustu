@@ -10,18 +10,17 @@ import javax.swing.JComponent;
 
 class ApComponentBv implements ActionListener {
   bv(bl parambl) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    Frame frame = bV.a((Component)paramActionEvent.getSource());
+    Frame frame = bV.a((Component) paramActionEvent.getSource());
     try {
-      String str = ((JComponent)paramActionEvent.getSource()).getName();
+      String str = ((JComponent) paramActionEvent.getSource()).getName();
       f.a().a(paramActionEvent.getActionCommand(), str, frame);
     } catch (Exception exception) {
       D.a("Error showing dialog:\n" + exception.getMessage(), exception, frame);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bv.class
  * Java compiler version: 8 (52.0)

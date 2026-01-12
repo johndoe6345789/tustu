@@ -9,29 +9,29 @@ import java.util.StringTokenizer;
 
 public class hY extends s {
   private int ExceptionInVPackage = -1;
-  
+
   private int b = -1;
-  
+
   private int c = -1;
-  
+
   private double d = 0.0D;
-  
+
   public void ExceptionInVPackage(String[] paramArrayOfString) {
     e(paramArrayOfString);
   }
-  
+
   public String[] c() {
     return ExceptionInVPackage();
   }
-  
+
   public void b(String[] paramArrayOfString) {
     c(paramArrayOfString);
   }
-  
+
   public String[] d() {
     return b();
   }
-  
+
   public hY e() {
     hY hY1 = new hY();
     String[] arrayOfString1 = d();
@@ -57,9 +57,9 @@ public class hY extends s {
             hY1.setValueAt(new Double(str1), j, b);
           } catch (Exception exception) {
             System.out.println("bad Double " + str1);
-          } 
-        } 
-      } 
+          }
+        }
+      }
     } else {
       try {
         u.b(hY1);
@@ -76,56 +76,54 @@ public class hY extends s {
               arrayOfDouble[b][b1] = (new Double(13.2D)).doubleValue();
             } else {
               arrayOfDouble[b][b1] = (new Double(12.5D)).doubleValue();
-            } 
-          } 
-        } 
+            }
+          }
+        }
         hY1.ExceptionInVPackage(arrayOfDouble);
-      } 
-    } 
+      }
+    }
     hY1.C();
     hY1.q();
     return hY1;
   }
-  
+
   public void f() {
     String str = "";
     for (byte b = 0; b < getRowCount(); b++) {
-      for (byte b1 = 0; b1 < getColumnCount(); b1++)
-        str = str + e(b, b1) + "\t"; 
+      for (byte b1 = 0; b1 < getColumnCount(); b1++) str = str + e(b, b1) + "\t";
       str = str + "|";
-    } 
+    }
     IOProperties.c("defaultAfrValues", str);
   }
-  
+
   public int g() {
     return (this.ExceptionInVPackage == -1) ? o() : this.ExceptionInVPackage;
   }
-  
+
   public void ExceptionInVPackage(int paramInt) {
     this.ExceptionInVPackage = paramInt;
   }
-  
+
   public int h() {
     return (this.b == -1) ? 0 : this.b;
   }
-  
+
   public int IOProperties() {
     return this.c;
   }
-  
+
   public void b(int paramInt) {
     this.c = (paramInt == -1) ? 0 : paramInt;
   }
-  
+
   public void ExceptionInVPackage(double paramDouble) {
     this.d = paramDouble;
   }
-  
+
   public double j() {
     return this.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/hY.class
  * Java compiler version: 8 (52.0)

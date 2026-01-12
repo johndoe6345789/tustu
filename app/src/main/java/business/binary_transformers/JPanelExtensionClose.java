@@ -1,8 +1,8 @@
 package business.binary_transformers;
 
-import G.R;
 import G.GComponentBl;
 import G.ManagerUsingArrayList;
+import G.R;
 import G.i;
 import G.m;
 import G.q;
@@ -24,17 +24,17 @@ import s.ExceptionPrintstacktrace;
 
 public class JPanelExtensionClose extends JPanel implements h, bc {
   R a = null;
-  
+
   GComponentBl b = null;
-  
+
   JButton c;
-  
+
   am d;
-  
+
   String e = null;
-  
+
   boolean f = false;
-  
+
   public JPanelExtensionClose(R paramR, GComponentBl parambl) {
     this.a = paramR;
     this.b = parambl;
@@ -51,15 +51,15 @@ public class JPanelExtensionClose extends JPanel implements h, bc {
       this.c.setToolTipText(str);
       l l = new l(paramR, parambl.a());
       jPanel.add("East", l);
-    } 
+    }
     if (parambl.aJ() != null && !parambl.aJ().trim().equals(""))
       try {
         i.b(this.e, paramR.c(), parambl.aJ());
       } catch (q q) {
-        Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, (Throwable)q);
-      }  
+        Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String) null, (Throwable) q);
+      }
   }
-  
+
   private void b() {
     List<m> list = m.b(this.a.O(), this.b.a());
     m m = null;
@@ -70,53 +70,51 @@ public class JPanelExtensionClose extends JPanel implements h, bc {
     } else {
       bV.d("Command " + this.b.a() + " not found in current configuration.", this);
       return;
-    } 
+    }
     this.a.C().b(m);
     if (this.b.b(GComponentBl.d)) {
       String str = X.b(this.b.d(), "\\n", "\n");
       bV.d(str, this);
-    } 
+    }
     if (this.b.b(GComponentBl.e)) {
       Window window = bV.b(this);
-      if (window instanceof dF)
-        ((dF)window).k(); 
+      if (window instanceof dF) ((dF) window).k();
       window.dispose();
-    } 
+    }
   }
-  
+
   public void a() {
     boolean bool = c();
-    if (this.c.isEnabled() != bool)
-      this.c.setEnabled(bool); 
+    if (this.c.isEnabled() != bool) this.c.setEnabled(bool);
   }
-  
+
   private boolean c() {
     if (this.b.aJ() != null && this.b.aJ().trim().length() > 0)
       try {
         return p.a(this.b.aJ(), this.a);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      }  
+        Logger.getLogger(ak.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
     return true;
   }
-  
+
   public void close() {
     if (!this.f) {
       if (this.d != null) {
         am.a(this.d);
         i.a(this.e, this.a.c(), this.b.aJ());
         ManagerUsingArrayList.a().a(this.d);
-      } 
+      }
       if ((this.b.c() & GComponentBl.b) != 0 && c()) {
         b();
       } else if ((this.b.c() & GComponentBl.c) != 0 && !c()) {
         b();
-      } 
+      }
       this.f = true;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/ak.class
  * Java compiler version: 8 (52.0)

@@ -9,17 +9,16 @@ import s.SComponentGolf;
 
 class ApInterfaceCg implements ActionListener {
   ApInterfaceCg(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     if (jCheckBoxMenuItem.isSelected()) {
       int IOProperties = Integer.parseInt(jCheckBoxMenuItem.getActionCommand());
       IOProperties.c("numberOfOverlays", IOProperties + "");
       bV.d(SComponentGolf.b("The changes will take effect after a restart."), jCheckBoxMenuItem);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cG.class
  * Java compiler version: 8 (52.0)

@@ -5,13 +5,11 @@ import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListenerInBgPackage implements ListSelectionListener {
   ListSelectionListenerInBgPackage(o paramo) {}
-  
+
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
-    if (!paramListSelectionEvent.getValueIsAdjusting())
-      o.a(this.a); 
+    if (!paramListSelectionEvent.getValueIsAdjusting()) o.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/p.class
  * Java compiler version: 8 (52.0)

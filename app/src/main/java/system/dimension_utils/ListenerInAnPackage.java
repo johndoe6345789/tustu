@@ -8,11 +8,11 @@ import javax.swing.JTextField;
 
 class ListenerInAnPackage implements ActionListener {
   JTextField a;
-  
+
   ListenerInAnPackage(a parama, JTextField paramJTextField) {
     this.a = paramJTextField;
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String[] arrayOfString = null;
     String str1 = a.a(this.b, "lastDir", null);
@@ -21,11 +21,10 @@ class ListenerInAnPackage implements ActionListener {
       this.a.setText(str2);
       File file = (new File(str2)).getParentFile();
       a.b(this.b, "lastDir", file.getAbsolutePath());
-    } 
+    }
     a.c(this.b);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aN/d.class
  * Java compiler version: 8 (52.0)

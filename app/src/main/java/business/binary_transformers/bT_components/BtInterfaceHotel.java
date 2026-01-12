@@ -5,12 +5,12 @@ import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 import bN.BnInterfaceKilo;
-import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
 import bN.BnInterfaceTango;
 import bN.BnInterfaceUniform;
-import bS.BsInterfaceAlpha;
+import bN.TostringInBnPackage;
 import bS.BnInterfaceOscar;
+import bS.BsInterfaceAlpha;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,18 +18,23 @@ public class BtInterfaceHotel implements BsInterfaceAlpha {
   public int BsInterfaceAlpha() {
     return 237;
   }
-  
+
   public void BsInterfaceAlpha(BnInterfaceOscar paramo, BnInterfaceTango paramt) {
     if (paramt.BsInterfaceAlpha() != BsInterfaceAlpha())
-      throw new bS.h("PID:CAL_SHORT_DOWNLOAD Wrong handler! this handler is for 0x" + Integer.toHexString(BsInterfaceAlpha()).toUpperCase()); 
+      throw new bS.h(
+          "PID:CAL_SHORT_DOWNLOAD Wrong handler! this handler is for 0x"
+              + Integer.toHexString(BsInterfaceAlpha()).toUpperCase());
     try {
       BnInterfaceKilo BnInterfaceKilo = paramo.d();
       byte[] arrayOfByte = paramt.c();
       if (arrayOfByte == null)
-        throw new bS.h("PID:CAL_SHORT_DOWNLOAD valid packet data not found."); 
+        throw new bS.h("PID:CAL_SHORT_DOWNLOAD valid packet data not found.");
       if (arrayOfByte.length < 7)
-        throw new bS.h("PID:CAL_SHORT_DOWNLOAD invalid packet data length, expected minimum 8 bytes, found: " + (arrayOfByte.length + 1)); 
-      int i = c.BsInterfaceAlpha(arrayOfByte, 3, 4, BnInterfaceKilo.ExceptionPrintstacktrace(), false);
+        throw new bS.h(
+            "PID:CAL_SHORT_DOWNLOAD invalid packet data length, expected minimum 8 bytes, found: "
+                + (arrayOfByte.length + 1));
+      int i =
+          c.BsInterfaceAlpha(arrayOfByte, 3, 4, BnInterfaceKilo.ExceptionPrintstacktrace(), false);
       paramo.d(i);
       byte b = arrayOfByte[0];
       R r = paramo.f();
@@ -38,21 +43,25 @@ public class BtInterfaceHotel implements BsInterfaceAlpha {
       i -= r.O().y(j);
       byte b1 = 7;
       if (arrayOfByte.length != m + b1)
-        throw new bS.h("PID:CAL_SHORT_DOWNLOAD invalid packet data length, expected byte count: " + (m + b1 + 1) + ", received: " + (arrayOfByte.length + 1)); 
+        throw new bS.h(
+            "PID:CAL_SHORT_DOWNLOAD invalid packet data length, expected byte count: "
+                + (m + b1 + 1)
+                + ", received: "
+                + (arrayOfByte.length + 1));
       if ((r.O().TostringInBnPackage()).length < j || j < 0) {
         TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
         TostringInBnPackage.BsInterfaceAlpha(254);
-        byte[] arrayOfByte1 = { 38 };
+        byte[] arrayOfByte1 = {38};
         TostringInBnPackage.b(arrayOfByte1);
         paramo.c(38);
-        paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+        paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
       } else if (i + m > r.O().f(j) || i < 0) {
         TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
         TostringInBnPackage.BsInterfaceAlpha(254);
-        byte[] arrayOfByte1 = { 34 };
+        byte[] arrayOfByte1 = {34};
         TostringInBnPackage.b(arrayOfByte1);
         paramo.c(34);
-        paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+        paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
       } else {
         try {
           byte[] arrayOfByte1 = new byte[arrayOfByte.length - b1];
@@ -60,25 +69,24 @@ public class BtInterfaceHotel implements BsInterfaceAlpha {
           r.h().BsInterfaceAlpha(j, m, c.b(arrayOfByte1));
           TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
           TostringInBnPackage.BsInterfaceAlpha(255);
-          paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+          paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
           TostringInBnPackage.BsInterfaceAlpha(254);
-          byte[] arrayOfByte1 = { 34 };
+          byte[] arrayOfByte1 = {34};
           TostringInBnPackage.b(arrayOfByte1);
           paramo.c(34);
-          paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+          paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
           D.c("CAL_SHORT_DOWNLOAD: Error updating local data store from DownloadHandler");
           ExceptionPrintstacktrace.printStackTrace();
-        } 
-      } 
+        }
+      }
     } catch (BnInterfaceOscar o1) {
-      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String)null, (Throwable)o1);
+      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String) null, (Throwable) o1);
       throw new bS.h(o1.getLocalizedMessage());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bT/h.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class cF implements ActionListener {
   cF(cd paramcd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.u();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cF.class
  * Java compiler version: 8 (52.0)

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class gg implements ActionListener {
   gg(fK paramfK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.q.b(true);
     this.a.q.a(true);
@@ -13,7 +13,6 @@ class gg implements ActionListener {
     this.a.h();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/gg.class
  * Java compiler version: 8 (52.0)

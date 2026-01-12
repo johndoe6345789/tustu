@@ -8,23 +8,21 @@ import v.IOInVPackage;
 
 class ThreadedInRPackage extends Thread {
   ThreadedInRPackage(b paramb, File paramFile) {}
-  
+
   public void run() {
     IOInVPackage IOInVPackage = new IOInVPackage(j.G());
     Z z = null;
     try {
       z = IOInVPackage.ExceptionInVPackage(this.ExceptionInVPackage.getAbsolutePath());
-      if (b.ExceptionInVPackage(this.b) != null)
-        z.d(b.ExceptionInVPackage(this.b).IOInVPackage()); 
+      if (b.ExceptionInVPackage(this.b) != null) z.d(b.ExceptionInVPackage(this.b).IOInVPackage());
       this.b.b.ExceptionInVPackage(z);
       this.b.b.e(true);
       SwingUtilities.invokeLater(this.b.g);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       ExceptionInVPackage.printStackTrace();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/r/e.class
  * Java compiler version: 8 (52.0)

@@ -35,83 +35,83 @@ import javax.swing.UIManager;
 
 public class ManagerInAoPackage extends JPanel {
   ExceptionInVPackage ExceptionInVPackage = null;
-  
+
   JTextArea b = new JTextArea();
-  
+
   o c = new o(this);
-  
+
   JTable d = new JTable(this.c);
-  
+
   n e = new n(this);
-  
+
   q f = new q();
-  
+
   JSplitPane g = new JSplitPane();
-  
+
   aU h = new aU();
-  
+
   JPanel i = new JPanel();
-  
+
   JPanel j = new JPanel();
-  
+
   o k = null;
-  
+
   boolean l = false;
-  
+
   q m = new q(this);
-  
+
   aS n = null;
-  
+
   n o = null;
-  
+
   double p = 1.0D;
-  
+
   int q = 0;
-  
+
   int r = 0;
-  
+
   private et G = null;
-  
+
   eK s = new eK();
-  
+
   boolean t = true;
-  
-  d u = (d)new c();
-  
+
+  d u = (d) new c();
+
   private j H = null;
-  
+
   private String I = this.u.ExceptionInVPackage("Raw Log Page");
-  
+
   private String J = this.u.ExceptionInVPackage("Data View");
-  
+
   static String v = "IgnitionLoggerCluster";
-  
+
   static String w = "splitPanePosition";
-  
+
   static String x = "selectedGaugeTab";
-  
+
   static String y = "zoom";
-  
+
   static String z = "pollingDelay";
-  
+
   public static boolean A = false;
-  
+
   static String B = "renderAllData";
-  
+
   private boolean K = false;
-  
+
   private boolean L = A;
-  
+
   static int C = 100;
-  
+
   private int M = C;
-  
+
   boolean D = false;
-  
+
   JScrollPane E;
-  
+
   boolean F = true;
-  
+
   public ManagerInAoPackage(boolean paramBoolean1, boolean paramBoolean2) {
     this.D = paramBoolean2;
     this.K = paramBoolean1;
@@ -135,7 +135,7 @@ public class ManagerInAoPackage extends JPanel {
       this.s.addTab(this.J, this.E);
       int i = getFont().getSize() + eJ.ExceptionInVPackage(4);
       this.d.setRowHeight(i);
-    } 
+    }
     this.s.addTab(this.I, jScrollPane);
     this.s.setTabPlacement(3);
     add("North", this.ExceptionInVPackage);
@@ -145,17 +145,16 @@ public class ManagerInAoPackage extends JPanel {
     this.g.setRightComponent(this.i);
     if (paramBoolean1) {
       add("South", this.m);
-      this.g.setLeftComponent((Component)this.s);
+      this.g.setLeftComponent((Component) this.s);
     } else {
       this.g.setLeftComponent(this.E);
-    } 
+    }
     this.g.addPropertyChangeListener("dividerLocation", new l(this));
     this.g.setOneTouchExpandable(true);
   }
-  
+
   public void b() {
-    if (this.G == null)
-      return; 
+    if (this.G == null) return;
     int i = Integer.parseInt(ExceptionInVPackage(w, "" + (this.s.getPreferredSize()).width));
     this.g.setDividerLocation(i);
     double d1 = Double.parseDouble(ExceptionInVPackage(y, "1.0"));
@@ -163,32 +162,30 @@ public class ManagerInAoPackage extends JPanel {
     String str = ExceptionInVPackage(x, this.J);
     this.s.g(str);
   }
-  
+
   private String ExceptionInVPackage(String paramString1, String paramString2) {
     String str = null;
-    if (this.G != null)
-      str = this.G.ExceptionInVPackage(paramString1); 
+    if (this.G != null) str = this.G.ExceptionInVPackage(paramString1);
     return (str != null && !str.equals("")) ? str : paramString2;
   }
-  
+
   private void b(String paramString1, String paramString2) {
-    if (this.G != null)
-      this.G.ExceptionInVPackage(paramString1, paramString2); 
+    if (this.G != null) this.G.ExceptionInVPackage(paramString1, paramString2);
   }
-  
+
   protected void ExceptionInVPackage(ArrayList paramArrayList) {
     this.ExceptionInVPackage.ExceptionInVPackage(paramArrayList);
   }
-  
+
   protected void ExceptionInVPackage(cm paramcm) {
     this.ExceptionInVPackage.ExceptionInVPackage(paramcm);
   }
-  
+
   protected void ExceptionInVPackage(GComponentCd paramcd) {
     this.e.clear();
     this.b.setText("");
     if (paramcd.d().equals(GComponentCd.ExceptionInVPackage)) {
-      ExceptionInVPackage((aS)this.h);
+      ExceptionInVPackage((aS) this.h);
       this.h.b(paramcd.g());
       this.h.c(paramcd.ExceptionInVPackage());
       this.h.ExceptionInVPackage();
@@ -197,65 +194,62 @@ public class ManagerInAoPackage extends JPanel {
       String str = (GComponentCe != null) ? GComponentCe.d() : "";
       this.h.d(str);
     } else {
-      ExceptionInVPackage((aS)this.f);
+      ExceptionInVPackage((aS) this.f);
       this.f.b(paramcd.g());
       this.f.c(paramcd.ExceptionInVPackage());
       this.f.ExceptionInVPackage();
       this.f.d(0.0D);
       GComponentCe GComponentCe = paramcd.b().ExceptionInVPackage("ToothTime");
-      if (GComponentCe == null)
-        GComponentCe = paramcd.b().ExceptionInVPackage("TriggerTime"); 
+      if (GComponentCe == null) GComponentCe = paramcd.b().ExceptionInVPackage("TriggerTime");
       String str = (GComponentCe != null) ? GComponentCe.d() : "";
       this.f.e(str);
       this.f.repaint();
-    } 
+    }
   }
-  
+
   void c() {
     try {
       this.k.ExceptionInVPackage();
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     this.k = null;
   }
-  
+
   private void ExceptionInVPackage(aS paramaS) {
-    if (this.n != null)
-      this.i.remove((Component)this.n); 
+    if (this.n != null) this.i.remove((Component) this.n);
     this.n = paramaS;
-    this.i.add("Center", (Component)paramaS);
+    this.i.add("Center", (Component) paramaS);
     this.i.doLayout();
   }
-  
+
   private GComponentCd e(n paramn) {
     ArrayList arrayList = this.H.ExceptionInVPackage(paramn.f());
     for (GComponentCd GComponentCd : arrayList) {
       GComponentCf GComponentCf = GComponentCd.b();
-      if (ExceptionInVPackage(paramn, GComponentCf))
-        return GComponentCd; 
-    } 
+      if (ExceptionInVPackage(paramn, GComponentCf)) return GComponentCd;
+    }
     return null;
   }
-  
+
   private boolean ExceptionInVPackage(n paramn, GComponentCf paramcf) {
     List list = paramcf.j();
     for (String str : list) {
-      if (paramn.ExceptionInVPackage(str) == null)
-        return false; 
-    } 
+      if (paramn.ExceptionInVPackage(str) == null) return false;
+    }
     return true;
   }
-  
+
   public void b(ArrayList<n> paramArrayList) {
     this.t = false;
     if (paramArrayList.size() == 0) {
       bV.d("Data set empty, can't load it.", this);
       return;
-    } 
+    }
     GComponentCd GComponentCd = e(paramArrayList.get(0));
     if (GComponentCd == null) {
       bV.d("Unable to identify log file type.", this);
       return;
-    } 
+    }
     this.ExceptionInVPackage.b(GComponentCd.g());
     this.e.clear();
     int i = 0;
@@ -263,62 +257,67 @@ public class ManagerInAoPackage extends JPanel {
     Iterator<n> iterator = paramArrayList.iterator();
     while (iterator.hasNext()) {
       if (i == m) {
-        bV.d("Data set size exceeds current maximum of " + m + ".\nOnly the first " + m + " will be loaded.", this);
+        bV.d(
+            "Data set size exceeds current maximum of "
+                + m
+                + ".\nOnly the first "
+                + m
+                + " will be loaded.",
+            this);
         break;
-      } 
+      }
       ExceptionInVPackage(iterator.next());
       i++;
-    } 
+    }
     ExceptionInVPackage(0);
   }
-  
+
   public void ExceptionInVPackage(int paramInt) {
     try {
       n n1 = this.e.ExceptionInVPackage(paramInt);
       f(n1);
     } catch (ExceptionInVPackage a1) {
-      D.ExceptionInVPackage("Unable to display page " + paramInt, (Exception)a1, this);
-    } 
+      D.ExceptionInVPackage("Unable to display page " + paramInt, (Exception) a1, this);
+    }
   }
-  
+
   public void ExceptionInVPackage(n paramn) {
     if (this.t) {
       this.t = false;
       return;
-    } 
+    }
     this.e.ExceptionInVPackage(paramn);
   }
-  
+
   protected void d() {
     this.m.ExceptionInVPackage(this.e.size());
     this.m.b(this.e.c() + 1);
   }
-  
+
   private void f(n paramn) {
-    if (paramn == null)
-      return; 
+    if (paramn == null) return;
     this.o = paramn;
     if (paramn.d() != this.r) {
       this.r = paramn.d();
       this.m.b();
-    } 
+    }
     d();
     try {
       i(paramn);
     } catch (ExceptionInVPackage a1) {
-      D.ExceptionInVPackage("There was an error reading this log file.", (Exception)a1, this);
-    } 
+      D.ExceptionInVPackage("There was an error reading this log file.", (Exception) a1, this);
+    }
     b(paramn);
   }
-  
+
   protected void b(n paramn) {
     if (j()) {
       d(paramn);
     } else {
       c(paramn);
-    } 
+    }
   }
-  
+
   protected void c(n paramn) {
     // Byte code:
     //   0: aload_0
@@ -1553,7 +1552,7 @@ public class ManagerInAoPackage extends JPanel {
     //   2460: invokevirtual repaint : ()V
     //   2463: return
   }
-  
+
   protected void d(n paramn) {
     // Byte code:
     //   0: aload_0
@@ -2793,56 +2792,50 @@ public class ManagerInAoPackage extends JPanel {
     //   2473: invokevirtual repaint : ()V
     //   2476: return
   }
-  
+
   private double g(n paramn) {
     j j1 = paramn.ExceptionInVPackage("Time");
     for (byte b = 0; b < paramn.d(); b++) {
-      if (j1.c(b) != 0.0F)
-        return j1.c(b); 
-    } 
+      if (j1.c(b) != 0.0F) return j1.c(b);
+    }
     return 0.0D;
   }
-  
+
   private double h(n paramn) {
     j j1 = paramn.ExceptionInVPackage("Time");
     for (int i = paramn.d() - 1; i >= 0; i--) {
-      if (j1.c(i) != 0.0F)
-        return j1.c(i); 
-    } 
+      if (j1.c(i) != 0.0F) return j1.c(i);
+    }
     return 0.0D;
   }
-  
+
   private double ExceptionInVPackage(n paramn, double paramDouble) {
     j j1 = paramn.ExceptionInVPackage("Time");
     j j2 = paramn.ExceptionInVPackage("SecLevel");
     j j3 = paramn.ExceptionInVPackage("Trigger");
     for (byte b = 0; b < paramn.d(); b++) {
-      if (j1.c(b) > paramDouble && j3.c(b) == 1.0F)
-        return j2.c(b); 
-    } 
+      if (j1.c(b) > paramDouble && j3.c(b) == 1.0F) return j2.c(b);
+    }
     return -1.0D;
   }
-  
+
   private double b(n paramn, double paramDouble) {
     j j1 = paramn.ExceptionInVPackage("Time");
     j j2 = paramn.ExceptionInVPackage("SecLevel");
     j j3 = paramn.ExceptionInVPackage("Trigger");
     for (int i = paramn.d() - 1; i >= 0; i--) {
-      if (j1.c(i) < paramDouble && j3.c(i) == 1.0F)
-        return j2.c(i); 
-    } 
+      if (j1.c(i) < paramDouble && j3.c(i) == 1.0F) return j2.c(i);
+    }
     return -1.0D;
   }
-  
+
   protected void e() {
     this.q = this.m.d();
-    if (this.o != null)
-      b(this.o); 
+    if (this.o != null) b(this.o);
   }
-  
+
   private void i(n paramn) {
-    if (!this.b.isDisplayable() && !this.d.isDisplayable())
-      return; 
+    if (!this.b.isDisplayable() && !this.d.isDisplayable()) return;
     if (paramn.d() == 0) {
       this.b.setText("Empty read, No Data Received from Controller");
       this.c.getDataVector().clear();
@@ -2855,118 +2848,114 @@ public class ManagerInAoPackage extends JPanel {
       stringBuffer.append(paramn.g() + "\n");
       byte b;
       for (b = 0; b < paramn.size(); b++) {
-        j j1 = (j)paramn.get(b);
+        j j1 = (j) paramn.get(b);
         stringBuffer.append(j1.ExceptionInVPackage());
         vector.add(j1.ExceptionInVPackage());
-        if (b < paramn.size() - 1)
-          stringBuffer.append("\t"); 
-      } 
+        if (b < paramn.size() - 1) stringBuffer.append("\t");
+      }
       stringBuffer.append("\n");
       try {
         for (b = 0; b < paramn.size(); b++) {
-          j j1 = (j)paramn.get(b);
+          j j1 = (j) paramn.get(b);
           stringBuffer.append(j1.n());
-          if (b < paramn.size() - 1)
-            stringBuffer.append("\t"); 
-        } 
+          if (b < paramn.size() - 1) stringBuffer.append("\t");
+        }
       } catch (Exception exception) {
         throw new ExceptionInVPackage("Invalid units row in log file.");
-      } 
+      }
       stringBuffer.append("\n");
       if (this.F) {
         for (b = 0; b < paramn.d(); b++) {
           Vector<Float> vector2 = new Vector();
           vector1.add(vector2);
           for (byte b1 = 0; b1 < paramn.size(); b1++) {
-            j j1 = (j)paramn.get(b1);
+            j j1 = (j) paramn.get(b1);
             vector2.add(Float.valueOf(j1.d(b)));
-          } 
-        } 
+          }
+        }
         synchronized (this.c) {
           this.c.setDataVector(vector1, vector);
-        } 
-      } 
+        }
+      }
       if (paramn.d() > 0) {
         for (b = 0; b < paramn.d(); b++) {
           try {
             for (byte b1 = 0; b1 < paramn.size(); b1++) {
-              j j1 = (j)paramn.get(b1);
+              j j1 = (j) paramn.get(b1);
               stringBuffer.append(j1.c(b) + "");
-              if (b1 < paramn.size() - 1)
-                stringBuffer.append("\t"); 
-            } 
+              if (b1 < paramn.size() - 1) stringBuffer.append("\t");
+            }
           } catch (Exception exception) {
-            throw new ExceptionInVPackage("Invalid data found at record: " + b + "\nThis file does not appear valid.");
-          } 
+            throw new ExceptionInVPackage(
+                "Invalid data found at record: " + b + "\nThis file does not appear valid.");
+          }
           stringBuffer.append("\n");
-        } 
+        }
       } else {
         stringBuffer.append("This read contained no data.");
         ArrayList<Integer> arrayList = new ArrayList();
         byte b1;
         for (b1 = 0; b1 < this.e.size(); b1++) {
-          if (((n)this.e.get(b1)).d() > 0)
-            arrayList.add(new Integer(b1 + 1)); 
-        } 
+          if (((n) this.e.get(b1)).d() > 0) arrayList.add(new Integer(b1 + 1));
+        }
         if (arrayList.size() > 0) {
           stringBuffer.append("Data Was receive for pages:\n");
           for (b1 = 0; b1 < arrayList.size(); b1++)
-            stringBuffer.append(arrayList.get(b1)).append("\n"); 
+            stringBuffer.append(arrayList.get(b1)).append("\n");
         } else {
           stringBuffer.append("No viewable Data in entire file");
-        } 
-      } 
+        }
+      }
       this.b.setText(stringBuffer.toString());
-    } 
+    }
     this.b.setCaretPosition(0);
   }
-  
+
   protected void ExceptionInVPackage(double paramDouble) {
     if (this.p / 2.0D > 0.0625D) {
       ExceptionInVPackage(this.p / 2.0D, paramDouble);
     } else {
       ExceptionInVPackage(0.0625D, paramDouble);
-    } 
+    }
   }
-  
+
   private int ExceptionInVPackage() {
-    return (int)Math.round(this.r * this.p);
+    return (int) Math.round(this.r * this.p);
   }
-  
+
   public void ExceptionInVPackage(double paramDouble1, double paramDouble2) {
     double d1 = this.m.c();
     double d2 = 0.0D;
-    if (paramDouble1 == this.p)
-      return; 
+    if (paramDouble1 == this.p) return;
     if (paramDouble1 > this.p) {
       this.p = paramDouble1;
       d2 = -(ExceptionInVPackage() * paramDouble2 / this.r) / 2.0D;
     } else {
       d2 = ExceptionInVPackage() * paramDouble2 / this.r / 2.0D;
       this.p = paramDouble1;
-    } 
+    }
     b(y, paramDouble1 + "");
     this.m.b();
     this.m.ExceptionInVPackage(d1 + d2);
     e();
   }
-  
+
   protected void b(double paramDouble) {
     if (this.p * 2.0D < 1.0D) {
       ExceptionInVPackage(this.p * 2.0D, paramDouble);
     } else {
       ExceptionInVPackage(1.0D, paramDouble);
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(et paramet) {
     this.G = paramet;
   }
-  
+
   public boolean f() {
     return this.K;
   }
-  
+
   public void g() {
     this.e.clear();
     this.b.setText("");
@@ -2974,40 +2963,39 @@ public class ManagerInAoPackage extends JPanel {
     this.n.repaint();
     d();
   }
-  
+
   public boolean h() {
     return (this.e.size() > 0);
   }
-  
+
   public void ExceptionInVPackage(j paramj) {
     this.H = paramj;
   }
-  
+
   public int i() {
     return this.M;
   }
-  
+
   public void b(int paramInt) {
     this.M = paramInt;
   }
-  
+
   public void ExceptionInVPackage(String paramString) {
     this.ExceptionInVPackage.ExceptionInVPackage(paramString);
   }
-  
+
   public boolean j() {
     return this.L;
   }
-  
+
   public void ExceptionInVPackage(boolean paramBoolean) {
     this.L = paramBoolean;
   }
-  
+
   protected Component k() {
-    return (Component)this.n;
+    return (Component) this.n;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aO/k.class
  * Java compiler version: 8 (52.0)

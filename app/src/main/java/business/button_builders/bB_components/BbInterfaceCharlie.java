@@ -17,26 +17,27 @@ public class BbInterfaceCharlie implements b {
           a.a(Double.NaN);
         } else {
           a.a(Double.parseDouble(str1));
-        } 
+        }
         if (str2.contains("Auto")) {
           a.b(Double.NaN);
         } else {
           a.b(Double.parseDouble(str2));
-        } 
+        }
         if (str3.contains("Auto")) {
           a.a(-1);
         } else {
           a.a(Integer.parseInt(str3));
-        } 
-      } catch (Exception exception) {}
+        }
+      } catch (Exception exception) {
+      }
     } else {
       a.a(Double.NaN);
       a.b(Double.NaN);
       a.a(-1);
-    } 
+    }
     return a;
   }
-  
+
   public r a(r paramr) {
     a a = null;
     String str = IOProperties.c("FIELD_MIN_MAX_" + paramr.e());
@@ -52,24 +53,23 @@ public class BbInterfaceCharlie implements b {
           a.a(Double.NaN);
         } else {
           a.a(Double.parseDouble(str1));
-        } 
+        }
         if (str2.contains("Auto")) {
           a.b(Double.NaN);
         } else {
           a.b(Double.parseDouble(str2));
-        } 
+        }
         if (str3.contains("Auto")) {
           a.a(-1);
         } else {
           a.a(Integer.parseInt(str3));
-        } 
+        }
       } catch (Exception exception) {
         return null;
-      }  
+      }
     return a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bB/c.class
  * Java compiler version: 8 (52.0)

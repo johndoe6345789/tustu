@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApComponentEr implements ActionListener {
   er(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().i("Calculator");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/er.class
  * Java compiler version: 8 (52.0)

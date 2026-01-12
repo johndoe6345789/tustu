@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 
 class KilogramsKeyAdapter extends KeyAdapter {
   KilogramsKeyAdapter(WeightInputPanel paramaQ) {}
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {
     try {
       String str = this.a.b.getText() + paramKeyEvent.getKeyChar();
@@ -13,10 +13,9 @@ class KilogramsKeyAdapter extends KeyAdapter {
       this.a.a.setText((i * 22 / 10) + "");
     } catch (NumberFormatException numberFormatException) {
       paramKeyEvent.consume();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/aS.class
  * Java compiler version: 8 (52.0)

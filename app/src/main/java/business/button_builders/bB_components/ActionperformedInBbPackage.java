@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class ActionperformedInBbPackage implements ActionListener {
   ActionperformedInBbPackage(l paraml) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     l.a(this.a);
     this.a.b.f();
@@ -14,7 +14,6 @@ class ActionperformedInBbPackage implements ActionListener {
     this.a.e.setEnabled(false);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bB/m.class
  * Java compiler version: 8 (52.0)

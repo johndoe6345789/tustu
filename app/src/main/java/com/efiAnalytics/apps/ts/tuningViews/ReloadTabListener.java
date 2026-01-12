@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class ReloadTabListener implements ActionListener {
   ReloadTabListener(n paramn, int paramInt) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     J j = this.b.a(this.b.getTitleAt(this.a));
     j.j();
@@ -13,10 +13,9 @@ class ReloadTabListener implements ActionListener {
       j.h();
     } else {
       j.b(false);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/s.class
  * Java compiler version: 8 (52.0)

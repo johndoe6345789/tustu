@@ -19,10 +19,29 @@ import javax.swing.JWindow;
 import r.IOPropertiesUsingFile;
 
 public class JWindowExtension extends JWindow {
-  JLabel IOPropertiesUsingFile = new JLabel("Starting " + IOPropertiesUsingFile.b + " " + IOPropertiesUsingFile.c + " " + IOPropertiesUsingFile.IOPropertiesUsingFile);
-  
-  String[] b = new String[] { "Get IOPropertiesUsingFile better tune and Faster with VE Analyze Live!", "Load Crank Trigger logs and page through data", "Advanced 3D table features and customizations", "Support the effort to bring you better tuning tools!", "Full Screen Dashboards", "Get IOPropertiesUsingFile Wide Selection of Gauge styles and dashboards", "Toggle from 2D to 3D view on any table", "Have multiple Tabbed dashboards open at all times", "Difference Reports - Compare your tune to IOPropertiesUsingFile saved state or ECU", "Save comments with any setting" };
-  
+  JLabel IOPropertiesUsingFile =
+      new JLabel(
+          "Starting "
+              + IOPropertiesUsingFile.b
+              + " "
+              + IOPropertiesUsingFile.c
+              + " "
+              + IOPropertiesUsingFile.IOPropertiesUsingFile);
+
+  String[] b =
+      new String[] {
+        "Get IOPropertiesUsingFile better tune and Faster with VE Analyze Live!",
+        "Load Crank Trigger logs and page through data",
+        "Advanced 3D table features and customizations",
+        "Support the effort to bring you better tuning tools!",
+        "Full Screen Dashboards",
+        "Get IOPropertiesUsingFile Wide Selection of Gauge styles and dashboards",
+        "Toggle from 2D to 3D view on any table",
+        "Have multiple Tabbed dashboards open at all times",
+        "Difference Reports - Compare your tune to IOPropertiesUsingFile saved state or ECU",
+        "Save comments with any setting"
+      };
+
   public JWindowExtension(Frame paramFrame, String paramString, boolean paramBoolean) {
     super(paramFrame);
     setLayout(new BorderLayout());
@@ -34,13 +53,13 @@ public class JWindowExtension extends JWindow {
     if (paramBoolean) {
       JPanel jPanel1 = new JPanel();
       jPanel1.setLayout(new BorderLayout());
-      int k = (int)Math.round(Math.random() * (this.b.length - 1));
+      int k = (int) Math.round(Math.random() * (this.b.length - 1));
       jPanel1.add("Center", new JLabel(this.b[k], 2));
       JButton jButton = new JButton("Learn More!");
       jButton.addActionListener(new iK(this));
       jPanel1.add("East", jButton);
       jPanel.add("North", jPanel1);
-    } 
+    }
     jPanel.add("South", this.IOPropertiesUsingFile);
     Image image = Toolkit.getDefaultToolkit().getImage(paramString);
     char c1 = 'ľ';
@@ -50,13 +69,13 @@ public class JWindowExtension extends JWindow {
     try {
       mediaTracker.waitForAll(2000L);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(iJ.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-    } 
+      Logger.getLogger(iJ.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+    }
     if (image.getHeight(null) > eJ.IOPropertiesUsingFile(c1)) {
       image = eJ.IOPropertiesUsingFile(image, this, c1);
     } else if (image.getHeight(null) < eJ.IOPropertiesUsingFile(c2)) {
       image = eJ.IOPropertiesUsingFile(image, this, c2);
-    } 
+    }
     ImageIcon imageIcon = new ImageIcon(image);
     JLabel jLabel = new JLabel();
     jLabel.setIcon(imageIcon);
@@ -68,22 +87,22 @@ public class JWindowExtension extends JWindow {
     setLocation(i, j);
     setVisible(true);
   }
-  
-  public boolean imageUpdate(Image paramImage, int paramInt1, int paramInt2, int paramInt3, int paramInt4, int paramInt5) {
+
+  public boolean imageUpdate(
+      Image paramImage, int paramInt1, int paramInt2, int paramInt3, int paramInt4, int paramInt5) {
     D.c("info: " + paramInt1 + ", width:" + paramInt4 + ", height:" + paramInt5);
     return super.imageUpdate(paramImage, paramInt1, paramInt2, paramInt3, paramInt4, paramInt5);
   }
-  
+
   public void IOPropertiesUsingFile(String paramString) {
     this.IOPropertiesUsingFile.setText(paramString);
     this.IOPropertiesUsingFile.repaint();
   }
-  
+
   public String IOPropertiesUsingFile() {
     return this.IOPropertiesUsingFile.getText();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iJ.class
  * Java compiler version: 8 (52.0)

@@ -6,13 +6,13 @@ import javax.swing.SwingUtilities;
 
 class ComboBoxKeyAdapter extends KeyAdapter {
   long a = 0L;
-  
+
   StringBuilder b = new StringBuilder(20);
-  
+
   String[] c = null;
-  
+
   ComboBoxKeyAdapter(e parame) {}
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {
     int j;
     long l;
@@ -38,11 +38,11 @@ class ComboBoxKeyAdapter extends KeyAdapter {
       case 16:
         return;
       case 8:
-        if (this.b.length() > 0)
-          this.b.deleteCharAt(this.b.length() - 1); 
+        if (this.b.length() > 0) this.b.deleteCharAt(this.b.length() - 1);
       default:
-        if (paramKeyEvent.isAltDown() || paramKeyEvent.isControlDown() || paramKeyEvent.isActionKey())
-          return; 
+        if (paramKeyEvent.isAltDown()
+            || paramKeyEvent.isControlDown()
+            || paramKeyEvent.isActionKey()) return;
         l = System.currentTimeMillis();
         c = Character.toLowerCase(paramKeyEvent.getKeyChar());
         if (l - this.a > 3000L) {
@@ -51,10 +51,10 @@ class ComboBoxKeyAdapter extends KeyAdapter {
           this.a = l;
         } else {
           this.b.append(c);
-        } 
+        }
         this.d.c(this.b.toString());
         break;
-    } 
+    }
     int k = this.d.getSelectedIndex();
     if (b != 0) {
       paramKeyEvent.consume();
@@ -63,17 +63,18 @@ class ComboBoxKeyAdapter extends KeyAdapter {
         j = 0;
       } else if (j >= this.d.getItemCount()) {
         j = this.d.getItemCount() - 1;
-      } 
+      }
       this.d.setSelectedIndex(j);
     } else {
-      j = this.d.getKeySelectionManager().selectionForKey(paramKeyEvent.getKeyChar(), this.d.getModel());
-    } 
+      j =
+          this.d
+              .getKeySelectionManager()
+              .selectionForKey(paramKeyEvent.getKeyChar(), this.d.getModel());
+    }
     paramKeyEvent.consume();
-    if (j == -1 || j != k)
-      SwingUtilities.invokeLater(new j(this)); 
+    if (j == -1 || j != k) SwingUtilities.invokeLater(new j(this));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/i.class
  * Java compiler version: 8 (52.0)

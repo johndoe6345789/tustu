@@ -1,8 +1,8 @@
 package q;
 
 import bt.A;
-import bt.JTextFieldExtension;
 import bt.JLabelExtensionSettext;
+import bt.JTextFieldExtension;
 import bt.y;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
@@ -21,13 +21,12 @@ public class QInterfaceFoxtrot {
     h.a().a(JLabelExtensionSettext.class, d);
     b();
   }
-  
+
   private static void b() {
     g g = new g();
     SwingUtilities.invokeLater(g);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/q/f.class
  * Java compiler version: 8 (52.0)

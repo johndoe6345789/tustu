@@ -8,12 +8,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceCm implements ActionListener {
   cm(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     b.a().a(hx.a().r(), this.a.D, bV.c());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cm.class
  * Java compiler version: 8 (52.0)

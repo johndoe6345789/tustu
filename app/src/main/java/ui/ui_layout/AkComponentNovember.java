@@ -19,12 +19,11 @@ public class AkComponentNovember extends b {
     l.a(c, 83);
     a(c);
   }
-  
+
   public String i() {
     return X.e;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/n.class
  * Java compiler version: 8 (52.0)

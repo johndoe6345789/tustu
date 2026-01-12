@@ -1,9 +1,9 @@
 package business.byte_handlers;
 
-import G.R;
-import G.T;
-import G.SerializableImplExceptionprintstacktrace;
 import G.GInterfaceAh;
+import G.R;
+import G.SerializableImplExceptionprintstacktrace;
+import G.T;
 import bB.BbInterfaceAlpha;
 import bB.BbInterfaceBravo;
 import bB.BbInterfaceRomeo;
@@ -26,18 +26,19 @@ public class BhInterfaceYankee implements BbInterfaceBravo {
           BbInterfaceAlpha.BbInterfaceAlpha(Double.NaN);
         } else {
           BbInterfaceAlpha.BbInterfaceAlpha(Double.parseDouble(str1));
-        } 
+        }
         if (str2.contains("Auto")) {
           BbInterfaceAlpha.BbInterfaceBravo(Double.NaN);
         } else {
           BbInterfaceAlpha.BbInterfaceBravo(Double.parseDouble(str2));
-        } 
+        }
         if (str3.contains("Auto")) {
           BbInterfaceAlpha.BbInterfaceAlpha(-1);
         } else {
           BbInterfaceAlpha.BbInterfaceAlpha(Integer.parseInt(str3));
-        } 
-      } catch (Exception exception) {}
+        }
+      } catch (Exception exception) {
+      }
     } else {
       GInterfaceAh GInterfaceAh = BbInterfaceBravo(paramString);
       if (GInterfaceAh != null) {
@@ -48,11 +49,11 @@ public class BhInterfaceYankee implements BbInterfaceBravo {
         BbInterfaceAlpha.BbInterfaceAlpha(Double.NaN);
         BbInterfaceAlpha.BbInterfaceBravo(Double.NaN);
         BbInterfaceAlpha.BbInterfaceAlpha(-1);
-      } 
-    } 
-    return (BbInterfaceRomeo)BbInterfaceAlpha;
+      }
+    }
+    return (BbInterfaceRomeo) BbInterfaceAlpha;
   }
-  
+
   public BbInterfaceRomeo BbInterfaceAlpha(BbInterfaceRomeo paramr) {
     BbInterfaceAlpha BbInterfaceAlpha = null;
     String str = IOProperties.c("FIELD_MIN_MAX_" + paramr.e());
@@ -68,20 +69,20 @@ public class BhInterfaceYankee implements BbInterfaceBravo {
           BbInterfaceAlpha.BbInterfaceAlpha(Double.NaN);
         } else {
           BbInterfaceAlpha.BbInterfaceAlpha(Double.parseDouble(str1));
-        } 
+        }
         if (str2.contains("Auto")) {
           BbInterfaceAlpha.BbInterfaceBravo(Double.NaN);
         } else {
           BbInterfaceAlpha.BbInterfaceBravo(Double.parseDouble(str2));
-        } 
+        }
         if (str3.contains("Auto")) {
           BbInterfaceAlpha.BbInterfaceAlpha(-1);
         } else {
           BbInterfaceAlpha.BbInterfaceAlpha(Integer.parseInt(str3));
-        } 
+        }
       } catch (Exception exception) {
         return null;
-      }  
+      }
     BbInterfaceAlpha = new BbInterfaceAlpha();
     BbInterfaceAlpha.BbInterfaceAlpha(paramr.e());
     GInterfaceAh GInterfaceAh = BbInterfaceBravo(paramr.e());
@@ -93,10 +94,10 @@ public class BhInterfaceYankee implements BbInterfaceBravo {
       BbInterfaceAlpha.BbInterfaceAlpha(Double.NaN);
       BbInterfaceAlpha.BbInterfaceBravo(Double.NaN);
       BbInterfaceAlpha.BbInterfaceAlpha(-1);
-    } 
-    return (BbInterfaceRomeo)BbInterfaceAlpha;
+    }
+    return (BbInterfaceRomeo) BbInterfaceAlpha;
   }
-  
+
   private GInterfaceAh BbInterfaceBravo(String paramString) {
     if (paramString.contains(".")) {
       String str1 = paramString.substring(0, paramString.indexOf('.'));
@@ -106,36 +107,40 @@ public class BhInterfaceYankee implements BbInterfaceBravo {
         SerializableImplExceptionprintstacktrace ac1 = BbInterfaceAlpha(r1, str2);
         if (ac1 != null) {
           GInterfaceAh GInterfaceAh = BbInterfaceBravo(r1, ac1.BbInterfaceAlpha());
-          if (GInterfaceAh != null)
-            return GInterfaceAh; 
-        } 
-      } 
-    } 
+          if (GInterfaceAh != null) return GInterfaceAh;
+        }
+      }
+    }
     R BbInterfaceRomeo = T.BbInterfaceAlpha().c();
-    SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = BbInterfaceAlpha(BbInterfaceRomeo, paramString);
-    return (SerializableImplExceptionprintstacktrace != null && SerializableImplExceptionprintstacktrace.BbInterfaceAlpha() != null && !SerializableImplExceptionprintstacktrace.BbInterfaceAlpha().isEmpty()) ? BbInterfaceBravo(BbInterfaceRomeo, SerializableImplExceptionprintstacktrace.BbInterfaceAlpha()) : null;
+    SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace =
+        BbInterfaceAlpha(BbInterfaceRomeo, paramString);
+    return (SerializableImplExceptionprintstacktrace != null
+            && SerializableImplExceptionprintstacktrace.BbInterfaceAlpha() != null
+            && !SerializableImplExceptionprintstacktrace.BbInterfaceAlpha().isEmpty())
+        ? BbInterfaceBravo(
+            BbInterfaceRomeo, SerializableImplExceptionprintstacktrace.BbInterfaceAlpha())
+        : null;
   }
-  
+
   private SerializableImplExceptionprintstacktrace BbInterfaceAlpha(R paramR, String paramString) {
-    for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : paramR.g()) {
-      String str = X.BbInterfaceBravo(SerializableImplExceptionprintstacktrace.BbInterfaceBravo(), "-", " ");
-      if (str.equals(paramString))
-        return SerializableImplExceptionprintstacktrace; 
-    } 
+    for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace :
+        paramR.g()) {
+      String str =
+          X.BbInterfaceBravo(SerializableImplExceptionprintstacktrace.BbInterfaceBravo(), "-", " ");
+      if (str.equals(paramString)) return SerializableImplExceptionprintstacktrace;
+    }
     return null;
   }
-  
+
   private GInterfaceAh BbInterfaceBravo(R paramR, String paramString) {
     Iterator<GInterfaceAh> iterator = paramR.B();
     while (iterator.hasNext()) {
       GInterfaceAh GInterfaceAh = iterator.next();
-      if (GInterfaceAh.IOProperties().equals(paramString))
-        return GInterfaceAh; 
-    } 
+      if (GInterfaceAh.IOProperties().equals(paramString)) return GInterfaceAh;
+    }
     return null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bh/y.class
  * Java compiler version: 8 (52.0)

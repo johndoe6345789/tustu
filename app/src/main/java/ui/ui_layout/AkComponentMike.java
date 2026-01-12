@@ -19,12 +19,11 @@ public class AkComponentMike extends b {
     l.a(c, 83);
     a(c);
   }
-  
+
   public String i() {
     return X.f;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/m.class
  * Java compiler version: 8 (52.0)

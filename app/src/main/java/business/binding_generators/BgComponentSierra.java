@@ -2,12 +2,11 @@ package business.binding_generators;
 
 class BgComponentSierra implements Runnable {
   BgComponentSierra(q paramq) {}
-  
+
   public void run() {
     this.a.fireTableDataChanged();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/s.class
  * Java compiler version: 8 (52.0)

@@ -20,20 +20,22 @@ public class NInterfaceMike implements AcInterfaceVictor {
   public String PropertiesExtension() {
     return "LogStart_MAIN_TUNE";
   }
-  
+
   public String b() {
     return "msq";
   }
-  
+
   public boolean c() {
     return false;
   }
-  
+
   public String d() {
-    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension(" 09s98r32-po3q9264") || !PropertiesExtension.PropertiesExtension().c(PropertiesExtension.ae, PropertiesExtension.af)) {
+    if (!RInterfaceIndia.PropertiesExtension().PropertiesExtension(" 09s98r32-po3q9264")
+        || !PropertiesExtension.PropertiesExtension()
+            .c(PropertiesExtension.ae, PropertiesExtension.af)) {
       D.d("Not saving tune to data log, option disabled.");
       return null;
-    } 
+    }
     PropertiesExtension PropertiesExtension = PropertiesExtension.A();
     String str = null;
     if (PropertiesExtension != null) {
@@ -42,13 +44,14 @@ public class NInterfaceMike implements AcInterfaceVictor {
         try {
           str = new String(d.PropertiesExtension(file));
         } catch (IOException iOException) {
-          Logger.getLogger(m.class.getName()).log(Level.SEVERE, "Error reading " + file.getName(), iOException);
-        }  
-    } 
-    if (str != null)
-      return str; 
+          Logger.getLogger(m.class.getName())
+              .log(Level.SEVERE, "Error reading " + file.getName(), iOException);
+        }
+    }
+    if (str != null) return str;
     D.c("No currenttune, will generate new msq for infodata.");
-    NetworkExceptionprintstacktrace NetworkExceptionprintstacktrace = new NetworkExceptionprintstacktrace();
+    NetworkExceptionprintstacktrace NetworkExceptionprintstacktrace =
+        new NetworkExceptionprintstacktrace();
     R r = T.PropertiesExtension().c();
     if (r != null) {
       try {
@@ -56,17 +59,21 @@ public class NInterfaceMike implements AcInterfaceVictor {
         NetworkExceptionprintstacktrace.PropertiesExtension(r, file.getAbsolutePath(), new o());
         str = new String(d.PropertiesExtension(file));
       } catch (IOException iOException) {
-        Logger.getLogger(m.class.getName()).log(Level.SEVERE, "Failed to create temp file for start tune Info Data", iOException);
+        Logger.getLogger(m.class.getName())
+            .log(Level.SEVERE, "Failed to create temp file for start tune Info Data", iOException);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(m.class.getName()).log(Level.SEVERE, "Failed to save temp file msq for start tune Info Data", (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(m.class.getName())
+            .log(
+                Level.SEVERE,
+                "Failed to save temp file msq for start tune Info Data",
+                (Throwable) ExceptionPrintstacktrace);
+      }
     } else {
       D.c("Main Config is null, skipping tune info data.");
-    } 
+    }
     return str;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/n/m.class
  * Java compiler version: 8 (52.0)

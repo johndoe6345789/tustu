@@ -5,21 +5,20 @@ import java.awt.event.KeyEvent;
 
 class DeviceIdKeyAdapter extends KeyAdapter {
   DeviceIdKeyAdapter(CanDeviceConfigPanel parama) {}
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {
     String str = " /\\'\"+-*/_)(&^%$#@!~`;<>,.:;?";
     if (this.a.a.getText().length() > 6 || str.indexOf(paramKeyEvent.getKeyChar()) >= 0)
-      paramKeyEvent.consume(); 
+      paramKeyEvent.consume();
   }
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
     if (this.a.a.getText().length() > 0) {
       a.a(this.a).a(this.a.a.getText());
       this.a.getParent().repaint();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/b.class
  * Java compiler version: 8 (52.0)

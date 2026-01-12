@@ -2,8 +2,8 @@ package q;
 
 import bH.D;
 import bt.A;
-import bt.JTextFieldExtension;
 import bt.JLabelExtensionSettext;
+import bt.JTextFieldExtension;
 import bt.y;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,11 +19,10 @@ class RunnableImplInQPackage implements Runnable {
       h.a().a(JTextFieldExtension.class, 20);
     } catch (Exception exception) {
       D.a("Seed UI Cache failed!");
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, exception);
-    } 
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, exception);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/q/g.class
  * Java compiler version: 8 (52.0)

@@ -7,12 +7,11 @@ public class AkComponentSierra extends g {
     super(";", false);
     b(true);
   }
-  
+
   public String i() {
     return X.ag;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/s.class
  * Java compiler version: 8 (52.0)

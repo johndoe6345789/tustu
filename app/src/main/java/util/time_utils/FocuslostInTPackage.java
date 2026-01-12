@@ -6,15 +6,14 @@ import javax.swing.JTextField;
 
 class FocuslostInTPackage implements FocusListener {
   bh(be parambe) {}
-  
+
   public void focusLost(FocusEvent paramFocusEvent) {}
-  
+
   public void focusGained(FocusEvent paramFocusEvent) {
-    JTextField jTextField = (JTextField)paramFocusEvent.getSource();
+    JTextField jTextField = (JTextField) paramFocusEvent.getSource();
     jTextField.selectAll();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/bh.class
  * Java compiler version: 8 (52.0)

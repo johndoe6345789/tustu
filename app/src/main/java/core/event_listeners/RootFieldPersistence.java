@@ -11,11 +11,10 @@ import java.util.StringTokenizer;
 public class ep implements ZInterfaceCharlie {
   public void a(ZInterfaceEcho parame) {
     StringBuilder stringBuilder = new StringBuilder();
-    for (String str : parame.b())
-      stringBuilder.append(str).append(";"); 
+    for (String str : parame.b()) stringBuilder.append(str).append(";");
     IOProperties.ZInterfaceCharlie("ROOT_FIELD_" + parame.a(), stringBuilder.toString());
   }
-  
+
   public List a() {
     ArrayList<ZInterfaceEcho> arrayList = new ArrayList();
     String[] arrayOfString = IOProperties.ZInterfaceEcho("ROOT_FIELD_");
@@ -27,15 +26,14 @@ public class ep implements ZInterfaceCharlie {
         StringTokenizer stringTokenizer = new StringTokenizer(str2, ";");
         while (stringTokenizer.hasMoreTokens()) {
           String str3 = stringTokenizer.nextToken().trim();
-          if (!str3.isEmpty())
-            ZInterfaceEcho.a(str3); 
-        } 
+          if (!str3.isEmpty()) ZInterfaceEcho.a(str3);
+        }
         arrayList.add(ZInterfaceEcho);
-      } 
-    } 
+      }
+    }
     return arrayList;
   }
-  
+
   public ZInterfaceEcho a(String paramString) {
     String str = IOProperties.b("ROOT_FIELD_" + paramString, null);
     if (str != null) {
@@ -43,15 +41,13 @@ public class ep implements ZInterfaceCharlie {
       StringTokenizer stringTokenizer = new StringTokenizer(str, ";");
       while (stringTokenizer.hasMoreTokens()) {
         String str1 = stringTokenizer.nextToken().trim();
-        if (!str1.isEmpty())
-          ZInterfaceEcho.a(str1); 
-      } 
+        if (!str1.isEmpty()) ZInterfaceEcho.a(str1);
+      }
       return ZInterfaceEcho;
-    } 
+    }
     return null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ep.class
  * Java compiler version: 8 (52.0)

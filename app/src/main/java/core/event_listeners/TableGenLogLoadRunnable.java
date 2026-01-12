@@ -6,7 +6,7 @@ import h.PropertiesExtensionInHPackage;
 
 class eE implements Runnable {
   eE(eC parameC, n paramn) {}
-  
+
   public void run() {
     this.b.b.a(this.a);
     PropertiesExtensionInHPackage PropertiesExtensionInHPackage = PropertiesExtensionInHPackage.a();
@@ -17,7 +17,6 @@ class eE implements Runnable {
     this.b.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eE.class
  * Java compiler version: 8 (52.0)

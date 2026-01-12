@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceEg implements ActionListener {
   ApInterfaceEg(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.b(this.a.h);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/eG.class
  * Java compiler version: 8 (52.0)

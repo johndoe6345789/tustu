@@ -8,14 +8,13 @@ import java.io.File;
 
 class IComponentBravoImpl implements IComponentBravo {
   cf(cc paramcc) {}
-  
+
   public void a() {}
-  
+
   public void a(double paramDouble) {
-    if (paramDouble == 1.0D)
-      cc.f(this.a); 
+    if (paramDouble == 1.0D) cc.f(this.a);
   }
-  
+
   public void a(n paramn) {
     this.a.e();
     if (paramn != null) {
@@ -26,9 +25,9 @@ class IComponentBravoImpl implements IComponentBravo {
     } else {
       this.a.A.setText("");
       this.a.A.setToolTipText(null);
-    } 
+    }
   }
-  
+
   public void IComponentBravo(n paramn) {
     if (paramn != null) {
       File file = paramn.k();
@@ -43,12 +42,11 @@ class IComponentBravoImpl implements IComponentBravo {
     } else {
       this.a.A.setText("");
       this.a.A.setToolTipText(null);
-    } 
+    }
   }
-  
+
   public void IComponentBravo() {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cf.class
  * Java compiler version: 8 (52.0)

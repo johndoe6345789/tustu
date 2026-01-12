@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 
 class WebViewStageInitRunnable implements Runnable {
   WebViewStageInitRunnable(eD parameD) {}
-  
+
   public void run() {
     eD.a(this.a, new Stage());
     eD.c(this.a).setTitle("Hello Java FX");
     eD.c(this.a).setResizable(true);
     Group group = new Group();
-    Scene scene = new Scene((Parent)group, 80.0D, 20.0D);
+    Scene scene = new Scene((Parent) group, 80.0D, 20.0D);
     eD.c(this.a).setScene(scene);
     eD.a(this.a, new WebView());
     eD.a(this.a, eD.d(this.a).getEngine());
@@ -25,7 +25,6 @@ class WebViewStageInitRunnable implements Runnable {
     eD.e(this.a).setScene(scene);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/eI.class
  * Java compiler version: 8 (52.0)

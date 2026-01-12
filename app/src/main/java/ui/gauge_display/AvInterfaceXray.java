@@ -1,44 +1,42 @@
 package aV;
 
 import A.AInterfaceRomeo;
+import AInterfaceRomeo.Writer;
 import G.ManagerUsingArrayList;
 import I.IInterfaceHotel;
-import aK.Writer;
 import aK.AkInterfaceDelta;
 import aK.AkInterfaceGolf;
-import AInterfaceRomeo.Writer;
+import aK.Writer;
 
 public class AvInterfaceXray {
   public static String Writer = "GPS";
-  
+
   private static x b = null;
-  
+
   private Writer c = null;
-  
+
   private AkInterfaceDelta AkInterfaceDelta = null;
-  
+
   private boolean e = false;
-  
+
   public static x Writer() {
-    if (b == null)
-      b = new x(); 
+    if (b == null) b = new x();
     return b;
   }
-  
+
   public Writer b() {
-    if (this.c == null)
-      this.c = Writer.b(); 
+    if (this.c == null) this.c = Writer.b();
     return this.c;
   }
-  
+
   public boolean c() {
     return Writer.Writer().c(Writer.aY, false);
   }
-  
+
   public void Writer(boolean paramBoolean) {
     Writer.Writer().b(Writer.aY, Boolean.toString(paramBoolean));
   }
-  
+
   public void AkInterfaceDelta() {
     // Byte code:
     //   0: aload_0
@@ -87,7 +85,8 @@ public class AvInterfaceXray {
     //   103: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   106: aconst_null
     //   107: aload #7
-    //   109: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   109: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   112: goto -> 140
     //   115: astore #7
     //   117: ldc aV/x
@@ -96,7 +95,8 @@ public class AvInterfaceXray {
     //   125: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   128: aconst_null
     //   129: aload #7
-    //   131: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   131: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   134: goto -> 140
     //   137: goto -> 42
     //   140: aload #4
@@ -136,7 +136,8 @@ public class AvInterfaceXray {
     //   237: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   240: aconst_null
     //   241: aload #8
-    //   243: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   243: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   246: goto -> 277
     //   249: new java/lang/StringBuilder
     //   252: dup
@@ -188,70 +189,69 @@ public class AvInterfaceXray {
     //   80	90	115	java/lang/IllegalAccessException
     //   208	224	227	A/s
   }
-  
+
   public void e() {
     Writer a1 = b();
     if (a1 != null && this.e) {
       a1.f();
-      a1.b((AkInterfaceGolf)AkInterfaceGolf());
+      a1.b((AkInterfaceGolf) AkInterfaceGolf());
       if (a1.Writer() != null)
         try {
           a1.Writer().AkInterfaceGolf();
-        } catch (Exception exception) {} 
+        } catch (Exception exception) {
+        }
       this.e = false;
-    } 
+    }
   }
-  
+
   private void i() {
     ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.c, new y(this));
     ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.Writer, new z(this));
     ManagerUsingArrayList.Writer().Writer(IInterfaceHotel.b, new A(this));
   }
-  
+
   private String b(String paramString, AInterfaceRomeo paramr) {
     return paramString + "_" + paramr.c();
   }
-  
+
   public void Writer(String paramString1, String paramString2) {
     String str = paramString1 + "_ControllerInterface";
     Writer.Writer().b(str, paramString2);
   }
-  
+
   public String Writer(String paramString) {
     String str = paramString + "_ControllerInterface";
     return Writer.Writer().c(str, null);
   }
-  
+
   public void Writer(String paramString, AInterfaceRomeo paramr, Object paramObject) {
     String str = b(paramString, paramr);
     Writer.Writer().b(str, paramObject.toString());
   }
-  
+
   public Object Writer(String paramString, AInterfaceRomeo paramr) {
     if (paramr.Writer() == 2 || paramr.Writer() == 3) {
       String str1 = b(paramString, paramr);
       int i = Writer.Writer().c(str1, -2147483648);
       return (i == Integer.MIN_VALUE) ? null : Integer.valueOf(i);
-    } 
+    }
     String str = b(paramString, paramr);
     return Writer.Writer().c(str, null);
   }
-  
+
   public void f() {
     e();
   }
-  
+
   public AkInterfaceDelta AkInterfaceGolf() {
-    if (this.AkInterfaceDelta == null)
-      this.AkInterfaceDelta = new AkInterfaceDelta(); 
+    if (this.AkInterfaceDelta == null) this.AkInterfaceDelta = new AkInterfaceDelta();
     return this.AkInterfaceDelta;
   }
-  
+
   public boolean IInterfaceHotel() {
     return this.e;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aV/x.class
  * Java compiler version: 8 (52.0)

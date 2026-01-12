@@ -16,21 +16,21 @@ import javax.swing.JScrollPane;
 
 public class JPanelExtensionPaint extends JPanel {
   c a = null;
-  
+
   F b = null;
-  
+
   H c = null;
-  
+
   Image d = null;
-  
+
   Image e = null;
-  
+
   Image f = null;
-  
+
   Font g = new Font("Ariel", 1, eJ.a(13));
-  
+
   private String h = null;
-  
+
   public JPanelExtensionPaint() {
     this.b = new F();
     setLayout(new BorderLayout());
@@ -41,28 +41,27 @@ public class JPanelExtensionPaint extends JPanel {
     setPreferredSize(eJ.a(600, 300));
     setMinimumSize(eJ.a(450, 200));
   }
-  
+
   public void a(boolean paramBoolean) {
     this.a.a(paramBoolean);
   }
-  
+
   public List a() {
     ArrayList<RemoteFileDescriptor> arrayList = new ArrayList();
     int[] arrayOfInt = this.a.getSelectedRows();
     if (arrayOfInt != null && arrayOfInt.length > 0) {
       byte b;
       for (b = 0; b < arrayOfInt.length; b++)
-        arrayOfInt[b] = this.a.convertRowIndexToModel(arrayOfInt[b]); 
-      for (b = 0; b < arrayOfInt.length; b++)
-        arrayList.add(this.b.a(arrayOfInt[b])); 
-    } 
+        arrayOfInt[b] = this.a.convertRowIndexToModel(arrayOfInt[b]);
+      for (b = 0; b < arrayOfInt.length; b++) arrayList.add(this.b.a(arrayOfInt[b]));
+    }
     return arrayList;
   }
-  
+
   protected c b() {
     return this.a;
   }
-  
+
   public void paint(Graphics paramGraphics) {
     try {
       super.paint(paramGraphics);
@@ -80,18 +79,19 @@ public class JPanelExtensionPaint extends JPanel {
           Image image = b(e());
           i = (getWidth() - image.getWidth(null)) / 2;
           paramGraphics.drawImage(image, i, j + image2.getHeight(null) + eJ.a(5), null);
-        } 
-      } 
-    } catch (Exception exception) {}
+        }
+      }
+    } catch (Exception exception) {
+    }
   }
-  
+
   private Image f() {
     Image image = g();
     if (this.e == null || this.e.getHeight(null) < image.getHeight(null))
-      this.e = createImage(image.getWidth(null) + eJ.a(20), image.getHeight(null) + eJ.a(20)); 
+      this.e = createImage(image.getWidth(null) + eJ.a(20), image.getHeight(null) + eJ.a(20));
     return this.e;
   }
-  
+
   private Image b(String paramString) {
     String[] arrayOfString = paramString.split("\n");
     FontMetrics fontMetrics = getFontMetrics(this.g);
@@ -106,55 +106,53 @@ public class JPanelExtensionPaint extends JPanel {
       graphics.setColor(Color.BLACK);
       graphics.setFont(this.g);
       for (byte b = 0; b < arrayOfString.length; b++)
-        graphics.drawString(arrayOfString[b], i, fontMetrics.getHeight() * (b + 1) + i / 2); 
-    } 
+        graphics.drawString(arrayOfString[b], i, fontMetrics.getHeight() * (b + 1) + i / 2);
+    }
     return this.f;
   }
-  
+
   private int a(String[] paramArrayOfString, FontMetrics paramFontMetrics) {
     int i = 0;
     for (byte b = 0; b < paramArrayOfString.length; b++) {
       int j = paramFontMetrics.stringWidth(paramArrayOfString[b]);
-      if (j > i)
-        i = j; 
-    } 
+      if (j > i) i = j;
+    }
     return i;
   }
-  
+
   private Image g() {
     if (this.d == null)
-      this.d = Toolkit.getDefaultToolkit().getImage(getClass().getResource("wait-large.gif")); 
+      this.d = Toolkit.getDefaultToolkit().getImage(getClass().getResource("wait-large.gif"));
     return this.d;
   }
-  
+
   public void c() {
     d();
     this.c = new H(this);
     this.c.start();
   }
-  
+
   public void d() {
     if (this.c != null) {
       this.c.a = false;
       this.c = null;
-    } 
-    a((String)null);
+    }
+    a((String) null);
   }
-  
+
   public void a(List paramList) {
     this.b.a();
     this.b.a(paramList);
   }
-  
+
   public String e() {
     return this.h;
   }
-  
+
   public void a(String paramString) {
     this.h = paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/G.class
  * Java compiler version: 8 (52.0)

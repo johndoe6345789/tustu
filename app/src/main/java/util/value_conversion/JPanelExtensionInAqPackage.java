@@ -27,30 +27,29 @@ import javax.swing.JScrollPane;
 
 public class JPanelExtensionInAqPackage extends JPanel {
   et a;
-  
+
   public static String b = "logViewerHiddenFieldList";
-  
+
   DefaultListModel c = new DefaultListModel();
-  
+
   JList d = new JList(this.c);
-  
+
   DefaultListModel e = new DefaultListModel();
-  
+
   JList f = new JList(this.e);
-  
+
   List g = null;
-  
+
   List h = null;
-  
+
   JLabel i = new JLabel(" ");
-  
+
   public JPanelExtensionInAqPackage(et paramet) {
     this.a = paramet;
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(eJ.a(10), eJ.a(10)));
     String str = paramet.a(b);
-    if (str == null)
-      str = ""; 
+    if (str == null) str = "";
     this.h = a(str);
     this.g = f();
     JPanel jPanel2 = new JPanel();
@@ -104,96 +103,86 @@ public class JPanelExtensionInAqPackage extends JPanel {
     add("South", jPanel5);
     a();
   }
-  
+
   private void a() {
     S.b(this.g);
     for (String str : this.g) {
       if (this.h.contains(str)) {
         this.c.addElement(str);
         continue;
-      } 
+      }
       this.e.addElement(str);
-    } 
+    }
   }
-  
+
   private void b() {
     List list1 = this.d.getSelectedValuesList();
     List list2 = this.f.getSelectedValuesList();
     for (String str : list1) {
-      if (!list2.contains(str))
-        this.e.addElement(str); 
+      if (!list2.contains(str)) this.e.addElement(str);
       this.c.removeElement(str);
-    } 
+    }
   }
-  
+
   private void c() {
     List list1 = this.d.getSelectedValuesList();
     List list2 = this.f.getSelectedValuesList();
     for (String str : list2) {
-      if (!list1.contains(str))
-        this.c.addElement(str); 
+      if (!list1.contains(str)) this.c.addElement(str);
       this.e.removeElement(str);
-    } 
+    }
   }
-  
+
   private void d() {
     List list = this.f.getSelectedValuesList();
     for (String str : this.g) {
-      if (!list.contains(str))
-        this.e.addElement(str); 
-    } 
+      if (!list.contains(str)) this.e.addElement(str);
+    }
     this.c.removeAllElements();
   }
-  
+
   private void e() {
     List list = this.d.getSelectedValuesList();
     for (String str : this.g) {
-      if (!list.contains(str))
-        this.c.addElement(str); 
-    } 
+      if (!list.contains(str)) this.c.addElement(str);
+    }
     this.e.removeAllElements();
   }
-  
+
   private List f() {
     ArrayList<String> arrayList = new ArrayList();
     n n = hx.a().r();
-    if (n != null)
-      for (j j : n)
-        arrayList.add(j.a());  
+    if (n != null) for (j j : n) arrayList.add(j.a());
     return arrayList;
   }
-  
+
   public static List a(String paramString) {
     ArrayList<String> arrayList = new ArrayList();
     StringTokenizer stringTokenizer = new StringTokenizer(paramString, ",");
-    while (stringTokenizer.hasMoreTokens())
-      arrayList.add(stringTokenizer.nextToken().trim()); 
+    while (stringTokenizer.hasMoreTokens()) arrayList.add(stringTokenizer.nextToken().trim());
     return arrayList;
   }
-  
+
   private String a(List<String> paramList) {
     StringBuilder stringBuilder = new StringBuilder();
     for (byte b = 0; b < paramList.size(); b++) {
       String str = paramList.get(b);
       stringBuilder.append(str);
-      if (b < paramList.size() - 1)
-        stringBuilder.append(","); 
-    } 
+      if (b < paramList.size() - 1) stringBuilder.append(",");
+    }
     return stringBuilder.toString();
   }
-  
+
   private boolean g() {
     byte b;
     for (b = 0; b < this.c.getSize(); b++) {
       String str1 = this.c.get(b);
-      if (!this.h.contains(str1))
-        this.h.add(str1); 
-    } 
+      if (!this.h.contains(str1)) this.h.add(str1);
+    }
     for (b = 0; b < this.e.getSize(); b++) {
       String str1 = this.e.get(b);
-      if (this.h.contains(str1))
-        this.h.remove(str1); 
-    } 
+      if (this.h.contains(str1)) this.h.remove(str1);
+    }
     String str = a(this.h);
     this.a.a(b, str);
     bq.a().d().c(new n());
@@ -201,11 +190,11 @@ public class JPanelExtensionInAqPackage extends JPanel {
     bq.a().e().t();
     return true;
   }
-  
+
   private boolean h() {
     return true;
   }
-  
+
   public void a(Frame paramFrame) {
     JDialog jDialog = new JDialog(paramFrame, "Select Displayed Fields");
     jDialog.setLayout(new BorderLayout());
@@ -224,7 +213,6 @@ public class JPanelExtensionInAqPackage extends JPanel {
     jDialog.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aq/a.class
  * Java compiler version: 8 (52.0)

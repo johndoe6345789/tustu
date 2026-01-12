@@ -13,11 +13,11 @@ import javax.swing.JTabbedPane;
 
 public class PComponentAlpha extends JPanel implements bc {
   ab a;
-  
+
   J b;
-  
+
   p c;
-  
+
   public PComponentAlpha(SInterfaceLima paraml, B paramB, ab paramab) {
     this.a = paramab;
     setLayout(new BorderLayout());
@@ -30,26 +30,24 @@ public class PComponentAlpha extends JPanel implements bc {
     paramB.a(this.c);
     jTabbedPane.add(a("User Actions"), this.b);
   }
-  
+
   private String a(String paramString) {
-    if (this.a != null)
-      paramString = this.a.a(paramString); 
+    if (this.a != null) paramString = this.a.a(paramString);
     return paramString;
   }
-  
+
   public void a(Window paramWindow) {
     JDialog jDialog = bV.b(this, paramWindow, a("Action Manager"), this);
     jDialog.pack();
     bV.a(paramWindow, jDialog);
     jDialog.setVisible(true);
   }
-  
+
   public void close() {
     this.c.close();
     this.b.close();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/a.class
  * Java compiler version: 8 (52.0)

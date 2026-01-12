@@ -7,13 +7,12 @@ import javax.swing.event.ChangeListener;
 
 class ChangeListenerInPPackage implements ChangeListener {
   ChangeListenerInPPackage(m paramm, g paramg, JLabel paramJLabel) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
     String str = this.c.d.getValue() + " s.";
     this.b.setText(X.a(str, ' ', 8));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/o.class
  * Java compiler version: 8 (52.0)

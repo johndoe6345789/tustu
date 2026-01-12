@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TablePanelUpdateListener implements ActionListener {
   TablePanelUpdateListener(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/N.class
  * Java compiler version: 8 (52.0)

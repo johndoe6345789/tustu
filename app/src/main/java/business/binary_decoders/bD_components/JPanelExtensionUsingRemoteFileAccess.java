@@ -32,23 +32,23 @@ import javax.swing.RootPaneContainer;
 
 public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, bc {
   private RemoteFileAccess h = null;
-  
+
   p a = null;
-  
+
   ab b = null;
-  
+
   h c = null;
-  
+
   dO d = new dO();
-  
+
   b e = new b(this);
-  
+
   private g i = null;
-  
+
   q f = new q(this);
-  
+
   List g = null;
-  
+
   public JPanelExtensionUsingRemoteFileAccess(RemoteFileAccess paramRemoteFileAccess, ab paramab) {
     this.h = paramRemoteFileAccess;
     this.b = paramab;
@@ -74,7 +74,7 @@ public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, b
     paramRemoteFileAccess.addRefreshNeededListener(this.f);
     e();
   }
-  
+
   private JPanel f() {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new FlowLayout(1));
@@ -108,99 +108,113 @@ public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, b
     jPanel1.add(jPanel2);
     return jPanel1;
   }
-  
+
   private String a(String paramString) {
     return (this.b == null) ? paramString : this.b.a(paramString);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
   }
-  
+
   public void a() {
     JRootPane jRootPane = getRootPane();
     if (!(jRootPane.getGlassPane() instanceof dO)) {
       this.d.b(true);
-      jRootPane.setGlassPane((Component)this.d);
+      jRootPane.setGlassPane((Component) this.d);
       Component component = jRootPane.getGlassPane();
       component.setVisible(true);
     } else {
-      this.d = (dO)jRootPane.getGlassPane();
-    } 
+      this.d = (dO) jRootPane.getGlassPane();
+    }
     this.d.a(a("Preparing Download") + "....");
     this.d.setVisible(true);
   }
-  
+
   public void d() {
     this.d.setVisible(false);
   }
-  
+
   public dO b() {
     return this.d;
   }
-  
+
   private void g() {
     a();
     o o = new o(this);
     o.start();
   }
-  
+
   private void h() {
     List<RemoteFileDescriptor> list = null;
     try {
       b().a(a("Retrieving File List") + "...");
       list = k();
-      String str = a("Are you sure you want to download the following files?") + "\n" + a("File Count") + ": " + list.size() + "\n" + a("Total Size") + ": " + this.c.a() + "\n";
+      String str =
+          a("Are you sure you want to download the following files?")
+              + "\n"
+              + a("File Count")
+              + ": "
+              + list.size()
+              + "\n"
+              + a("Total Size")
+              + ": "
+              + this.c.a()
+              + "\n";
       for (byte b1 = 0; b1 < list.size(); b1++) {
         if (b1 < 4 || list.size() == 5) {
-          str = str + "\n - " + ((RemoteFileDescriptor)list.get(b1)).getName();
+          str = str + "\n - " + ((RemoteFileDescriptor) list.get(b1)).getName();
         } else {
           str = str + "\n - (" + (list.size() - 4) + " More...)";
           break;
-        } 
-      } 
+        }
+      }
       if (list.isEmpty()) {
         bV.d(a("No Files Found on SD card."), this);
         d();
         return;
-      } 
+      }
       if (!bV.a(str, this, true)) {
         d();
         return;
-      } 
+      }
     } catch (RemoteAccessException remoteAccessException) {
       bV.d(a(remoteAccessException.getMessage()), this.c);
       d();
-    } 
+    }
     Iterator<RemoteFileDescriptor> iterator = list.iterator();
-    while (iterator.hasNext())
-      this.e.a(iterator.next()); 
+    while (iterator.hasNext()) this.e.a(iterator.next());
     ArrayList<String> arrayList = new ArrayList();
     for (RemoteFileDescriptor remoteFileDescriptor : list) {
       try {
         this.h.readRemoteFile(this.h.getDownloadDirectory(), remoteFileDescriptor);
       } catch (RemoteAccessException remoteAccessException) {
-        String str = a("Error downloading file") + ": " + remoteFileDescriptor.getName() + "\n" + remoteAccessException.getMessage();
+        String str =
+            a("Error downloading file")
+                + ": "
+                + remoteFileDescriptor.getName()
+                + "\n"
+                + remoteAccessException.getMessage();
         if (!arrayList.contains(str)) {
-          D.a(str, (Exception)remoteAccessException, this);
+          D.a(str, (Exception) remoteAccessException, this);
           arrayList.add(str);
-        } 
+        }
         if (remoteAccessException.isTerminalToBatch()) {
           d();
           break;
-        } 
-      } 
-    } 
+        }
+      }
+    }
     arrayList.clear();
   }
-  
+
   private void i() {
     a();
     b().a(a("Retrieving File List") + "...");
     n n = new n(this);
     n.start();
   }
-  
+
   private void j() {
     List<RemoteFileDescriptor> list = null;
     try {
@@ -208,24 +222,24 @@ public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, b
       String str = a("Are you sure you want to delete the following files?");
       for (byte b2 = 0; b2 < list.size(); b2++) {
         if (b2 < 4 || list.size() == 5) {
-          str = str + "\n - " + ((RemoteFileDescriptor)list.get(b2)).getName();
+          str = str + "\n - " + ((RemoteFileDescriptor) list.get(b2)).getName();
         } else {
           str = str + "\n - (" + (list.size() - 4) + " More...)";
           break;
-        } 
-      } 
+        }
+      }
       if (list.isEmpty()) {
         bV.d(a("No Files Found on SD card."), this);
         d();
         return;
-      } 
+      }
       if (!bV.a(str, this, true)) {
         d();
         return;
-      } 
+      }
     } catch (RemoteAccessException remoteAccessException) {
       d();
-    } 
+    }
     double d = list.size();
     byte b1 = 0;
     try {
@@ -237,50 +251,49 @@ public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, b
           b().a(b1++ / d);
           this.h.deleteFile(remoteFileDescriptor);
         } catch (RemoteAccessException remoteAccessException) {
-          D.a(remoteAccessException.getMessage(), (Exception)remoteAccessException, this);
-          if (remoteAccessException.isTerminalToBatch())
-            break; 
-        } 
-      } 
+          D.a(remoteAccessException.getMessage(), (Exception) remoteAccessException, this);
+          if (remoteAccessException.isTerminalToBatch()) break;
+        }
+      }
     } finally {
       d();
-    } 
+    }
   }
-  
+
   public static void a(JComponent paramJComponent) {
-    RootPaneContainer rootPaneContainer = (RootPaneContainer)paramJComponent.getTopLevelAncestor();
+    RootPaneContainer rootPaneContainer = (RootPaneContainer) paramJComponent.getTopLevelAncestor();
     if (rootPaneContainer != null) {
       rootPaneContainer.getGlassPane().setCursor(Cursor.getPredefinedCursor(3));
       rootPaneContainer.getGlassPane().setVisible(true);
-    } 
+    }
   }
-  
+
   public static void b(JComponent paramJComponent) {
-    RootPaneContainer rootPaneContainer = (RootPaneContainer)paramJComponent.getTopLevelAncestor();
+    RootPaneContainer rootPaneContainer = (RootPaneContainer) paramJComponent.getTopLevelAncestor();
     if (rootPaneContainer != null) {
       rootPaneContainer.getGlassPane().setCursor(Cursor.getPredefinedCursor(0));
       rootPaneContainer.getGlassPane().setVisible(false);
-    } 
+    }
   }
-  
+
   public void e() {
     if (this.a == null || !this.a.isAlive()) {
       a(this);
       this.a = new p(this);
       this.a.start();
       D.c("Refresh File List called");
-    } 
+    }
   }
-  
+
   public void close() {
     this.h.removeFileDownloadProgressListener(this.e);
     this.h.addRefreshNeededListener(this.f);
   }
-  
+
   public g c() {
     return this.i;
   }
-  
+
   private List k() {
     DirectoryFiles directoryFiles = this.h.getFilesIn(null);
     DirectoryInformation directoryInformation = directoryFiles.getDirectoryInformation();
@@ -290,7 +303,6 @@ public class JPanelExtensionUsingRemoteFileAccess extends JPanel implements a, b
     return directoryFiles.getFiles();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/i.class
  * Java compiler version: 8 (52.0)

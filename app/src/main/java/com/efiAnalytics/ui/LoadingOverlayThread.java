@@ -5,25 +5,24 @@ import java.util.logging.Logger;
 
 class LoadingOverlayThread extends Thread {
   boolean a = true;
-  
+
   LoadingOverlayThread(fJ paramfJ) {}
-  
+
   public void run() {
     while (this.a) {
       this.b.repaint();
       try {
         sleep(30L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(fJ.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(fJ.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
-  
+
   public void a() {
     this.a = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/fK.class
  * Java compiler version: 8 (52.0)

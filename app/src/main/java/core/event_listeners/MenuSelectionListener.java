@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class dO implements ItemListener {
   dO(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState())
-      cd.a(this.a, ((JCheckBoxMenuItem)paramItemEvent.getSource()).getText()); 
+    if (((JCheckBoxMenuItem) paramItemEvent.getSource()).getState())
+      cd.a(this.a, ((JCheckBoxMenuItem) paramItemEvent.getSource()).getText());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/dO.class
  * Java compiler version: 8 (52.0)

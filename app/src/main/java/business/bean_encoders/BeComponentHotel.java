@@ -6,12 +6,12 @@ import java.awt.event.ActionListener;
 
 class BeComponentHotel implements ActionListener {
   BeComponentHotel(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.d.setEnabled(this.a.f.getSelectedItem().equals(SerializableImplExceptionprintstacktrace.h));
+    this.a.d.setEnabled(
+        this.a.f.getSelectedItem().equals(SerializableImplExceptionprintstacktrace.h));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/h.class
  * Java compiler version: 8 (52.0)

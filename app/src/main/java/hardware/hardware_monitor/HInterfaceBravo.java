@@ -1,10 +1,10 @@
 package H;
 
-import G.R;
-import G.T;
 import G.ArrayListInGPackage;
+import G.R;
 import G.SerializableExtension;
 import G.SerializableImpl;
+import G.T;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 
@@ -17,14 +17,13 @@ public class HInterfaceBravo implements SerializableExtension {
         if (SerializableImpl.b(paramArrayOfbyte) < 4.0D) {
           ArrayListInGPackage.a().a("Key Turned off, disconnecting");
           return false;
-        } 
+        }
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         D.a("Unable to get value for Vbatt OutputChannel.");
-      }  
+      }
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/H/b.class
  * Java compiler version: 8 (52.0)

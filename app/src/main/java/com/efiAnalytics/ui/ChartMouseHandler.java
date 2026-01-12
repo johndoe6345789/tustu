@@ -8,32 +8,31 @@ import java.awt.event.MouseMotionListener;
 
 public class ChartMouseHandler extends MouseAdapter implements MouseListener, MouseMotionListener {
   public ChartMouseHandler(aS paramaS) {}
-  
+
   public void ChartMouseHandler(MouseEvent paramMouseEvent) {
     Rectangle rectangle = this.a.k();
     if (rectangle.contains(paramMouseEvent.getX(), paramMouseEvent.getY())) {
       aS.a(this.a, paramMouseEvent.getX());
       aS.b(this.a, paramMouseEvent.getY());
       this.a.repaint();
-    } 
+    }
   }
-  
+
   public void ChartMouseHandler(MouseEvent paramMouseEvent) {
     Rectangle rectangle = this.a.k();
     if (rectangle.contains(paramMouseEvent.getX(), paramMouseEvent.getY())) {
       aS.a(this.a, paramMouseEvent.getX());
       aS.b(this.a, paramMouseEvent.getY());
       this.a.repaint();
-    } 
+    }
   }
-  
+
   public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
-  
+
   public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
-  
+
   public void ChartMouseHandler(MouseEvent paramMouseEvent) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/aT.class
  * Java compiler version: 8 (52.0)

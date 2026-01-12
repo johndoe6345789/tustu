@@ -21,11 +21,11 @@ import s.SComponentGolf;
 
 public class UISetenabled extends a implements f {
   JTextField a;
-  
+
   JTextField b;
-  
+
   JPanel c = new JPanel();
-  
+
   public UISetenabled(Window paramWindow, ai paramai) {
     super(paramWindow, SComponentGolf.b("Gauge Text"));
     a(paramai);
@@ -59,7 +59,7 @@ public class UISetenabled extends a implements f {
     this.c.add(jPanel);
     add("Center", this.c);
   }
-  
+
   public void e(ArrayList paramArrayList) {
     Gauge gauge = b(paramArrayList);
     if (gauge != null) {
@@ -69,38 +69,36 @@ public class UISetenabled extends a implements f {
       this.a.setForeground(UIManager.getColor("Label.foreground"));
       this.b.setForeground(UIManager.getColor("Label.foreground"));
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getTitle().equals(gauge.getTitle())) {
+        if (s instanceof Gauge && !((Gauge) s).getTitle().equals(gauge.getTitle())) {
           this.a.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getUnits().equals(gauge.getUnits())) {
+        if (s instanceof Gauge && !((Gauge) s).getUnits().equals(gauge.getUnits())) {
           this.b.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
     } else {
       fp.a(a(), false);
-    } 
+    }
   }
-  
+
   public void a(ArrayList paramArrayList) {
     e(paramArrayList);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     Component[] arrayOfComponent = this.c.getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++)
-      arrayOfComponent[b].setEnabled(paramBoolean); 
+    for (byte b = 0; b < arrayOfComponent.length; b++) arrayOfComponent[b].setEnabled(paramBoolean);
     this.c.setEnabled(paramBoolean);
   }
-  
+
   public JPanel a() {
     return this.c;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aK.class
  * Java compiler version: 8 (52.0)

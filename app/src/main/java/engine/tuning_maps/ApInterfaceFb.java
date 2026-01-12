@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceFb implements ActionListener {
   ApInterfaceFb(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.n(this.a.h);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fB.class
  * Java compiler version: 8 (52.0)

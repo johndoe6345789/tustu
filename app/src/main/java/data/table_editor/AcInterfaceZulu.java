@@ -4,25 +4,25 @@ import V.ExceptionPrintstacktrace;
 
 public class AcInterfaceZulu extends w {
   D a;
-  
+
   private byte[] b = new byte[4];
-  
+
   private byte[] C = new byte[4];
-  
+
   private byte D = 0;
-  
+
   private float E = 1.0F;
-  
+
   private float F = 0.0F;
-  
+
   public AcInterfaceZulu(D paramD) {
     a(paramD);
   }
-  
+
   public void a(D paramD) {
     this.a = paramD;
-    this.E = (float)paramD.ExceptionPrintstacktrace();
-    this.F = (float)paramD.h();
+    this.E = (float) paramD.ExceptionPrintstacktrace();
+    this.F = (float) paramD.h();
     b(paramD.f());
     if (paramD.f() == 1) {
       a("U32");
@@ -30,7 +30,7 @@ public class AcInterfaceZulu extends w {
       a("S64");
     } else {
       a("S32");
-    } 
+    }
     d(paramD.b());
     a(paramD.i());
     b(this.E);
@@ -38,7 +38,7 @@ public class AcInterfaceZulu extends w {
     b(paramD.a());
     e(paramD.k());
   }
-  
+
   public byte[] a(int paramInt) {
     byte[] arrayOfByte = new byte[d(paramInt)];
     int i = 0;
@@ -54,44 +54,52 @@ public class AcInterfaceZulu extends w {
     System.arraycopy(this.C, 0, arrayOfByte, i, this.C.length);
     i += this.C.length;
     arrayOfByte[i] = this.D;
-    if (paramInt > 1)
-      System.arraycopy(this.y, 0, arrayOfByte, ++i, this.y.length); 
+    if (paramInt > 1) System.arraycopy(this.y, 0, arrayOfByte, ++i, this.y.length);
     return arrayOfByte;
   }
-  
+
   public byte[] a(double paramDouble) {
     byte b = ExceptionPrintstacktrace();
     if (b == d || b == c) {
       byte[] arrayOfByte = new byte[1];
-      arrayOfByte[0] = (byte)(int)Math.round(paramDouble / this.E - this.F);
+      arrayOfByte[0] = (byte) (int) Math.round(paramDouble / this.E - this.F);
       return arrayOfByte;
-    } 
+    }
     if (b == f || b == e) {
       byte[] arrayOfByte = new byte[2];
-      int i = (int)Math.round(paramDouble / this.E - this.F);
-      arrayOfByte[0] = (byte)((i & 0xFF00) >> 8);
-      arrayOfByte[1] = (byte)(i & 0xFF);
+      int i = (int) Math.round(paramDouble / this.E - this.F);
+      arrayOfByte[0] = (byte) ((i & 0xFF00) >> 8);
+      arrayOfByte[1] = (byte) (i & 0xFF);
       return arrayOfByte;
-    } 
+    }
     if (b == h || b == ExceptionPrintstacktrace) {
-      int i = (int)Math.round(paramDouble / this.E - this.F);
+      int i = (int) Math.round(paramDouble / this.E - this.F);
       return f(i);
-    } 
+    }
     if (b == j) {
-      float f = (float)(paramDouble / this.E - this.F);
+      float f = (float) (paramDouble / this.E - this.F);
       return a(f);
-    } 
+    }
     if (b == i) {
       long l = Math.round(paramDouble / this.E - this.F);
       return a(l);
-    } 
+    }
     throw new ExceptionPrintstacktrace("Unsupported Field type: " + b);
   }
-  
+
   public int d(int paramInt) {
-    return (paramInt == 1) ? (1 + this.x.length + this.z.length + this.A.length + this.b.length + this.C.length + 1) : (1 + this.x.length + this.z.length + this.A.length + this.b.length + this.C.length + this.y.length + 1);
+    return (paramInt == 1)
+        ? (1 + this.x.length + this.z.length + this.A.length + this.b.length + this.C.length + 1)
+        : (1
+            + this.x.length
+            + this.z.length
+            + this.A.length
+            + this.b.length
+            + this.C.length
+            + this.y.length
+            + 1);
   }
-  
+
   private void a(String paramString) {
     if (paramString.equals("U08")) {
       b(c);
@@ -109,28 +117,27 @@ public class AcInterfaceZulu extends w {
       b(j);
     } else {
       throw new ExceptionPrintstacktrace("Unsupported Logger Field Type: " + paramString);
-    } 
+    }
   }
-  
+
   public void b(float paramFloat) {
     this.E = paramFloat;
     this.b = a(paramFloat, this.b);
   }
-  
+
   public void c(float paramFloat) {
     this.F = paramFloat;
     this.C = a(paramFloat, this.C);
   }
-  
+
   public void a(byte paramByte) {
     this.D = paramByte;
   }
-  
+
   public double a(byte[][] paramArrayOfbyte) {
     return this.a.j();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/z.class
  * Java compiler version: 8 (52.0)

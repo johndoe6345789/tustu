@@ -9,7 +9,7 @@ import javax.swing.SwingUtilities;
 
 class TuningViewLoaderAsync extends Thread {
   TuningViewLoaderAsync(n paramn, List paramList) {}
-  
+
   public void run() {
     ArrayList<k> arrayList = new ArrayList();
     arrayList.addAll(this.a);
@@ -20,14 +20,14 @@ class TuningViewLoaderAsync extends Thread {
         SwingUtilities.invokeAndWait(v);
         sleep(20L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+        Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
       } catch (InvocationTargetException invocationTargetException) {
-        Logger.getLogger(n.class.getName()).log(Level.SEVERE, (String)null, invocationTargetException);
-      } 
-    } 
+        Logger.getLogger(n.class.getName())
+            .log(Level.SEVERE, (String) null, invocationTargetException);
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/p.class
  * Java compiler version: 8 (52.0)

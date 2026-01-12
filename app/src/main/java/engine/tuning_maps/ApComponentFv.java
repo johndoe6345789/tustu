@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApComponentFv implements ActionListener {
   fv(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().e();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fv.class
  * Java compiler version: 8 (52.0)

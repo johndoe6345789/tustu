@@ -5,12 +5,11 @@ import c.CInterfaceEcho;
 
 class ApComponentEh implements CInterfaceEcho {
   eh(dB paramdB) {}
-  
+
   public boolean a() {
     return (T.a().c() != null && T.a().c().C().D() != null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/eh.class
  * Java compiler version: 8 (52.0)

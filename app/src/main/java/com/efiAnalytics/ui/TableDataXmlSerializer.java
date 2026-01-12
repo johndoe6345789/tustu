@@ -51,7 +51,8 @@ public class TableDataXmlSerializer {
       Element element6 = document.createElement("yAxis");
       element6.setAttribute("rows", "" + (params.ExceptionInVPackage()).length);
       element6.setAttribute("name", "" + params.v());
-      element6.setTextContent(X.ExceptionInVPackage(ExceptionInVPackage(params.ExceptionInVPackage(), true)));
+      element6.setTextContent(
+          X.ExceptionInVPackage(ExceptionInVPackage(params.ExceptionInVPackage(), true)));
       element4.appendChild(element6);
       Element element7 = document.createElement("zValues");
       element7.setAttribute("cols", "" + (params.b()).length);
@@ -64,9 +65,9 @@ public class TableDataXmlSerializer {
     } catch (Exception exception) {
       exception.printStackTrace();
       throw new ExceptionInVPackage("Error Saving Table. Check Log file for details.");
-    } 
+    }
   }
-  
+
   private String[][] ExceptionInVPackage(String[] paramArrayOfString, boolean paramBoolean) {
     String[][] arrayOfString = new String[paramArrayOfString.length][1];
     for (byte b = 0; b < arrayOfString.length; b++) {
@@ -74,13 +75,14 @@ public class TableDataXmlSerializer {
         arrayOfString[arrayOfString.length - 1 - b][0] = paramArrayOfString[b];
       } else {
         arrayOfString[b][0] = paramArrayOfString[b];
-      } 
-    } 
+      }
+    }
     return arrayOfString;
   }
-  
+
   private String[][] ExceptionInVPackage(WInterfaceAn paraman) {
-    String[][] arrayOfString = new String[(paraman.ExceptionInVPackage()).length][(paraman.b()).length];
+    String[][] arrayOfString =
+        new String[(paraman.ExceptionInVPackage()).length][(paraman.b()).length];
     for (byte b = 0; b < arrayOfString.length; b++) {
       for (byte b1 = 0; b1 < (arrayOfString[0]).length; b1++) {
         Object object = paraman.getValueAt(b, b1);
@@ -88,12 +90,12 @@ public class TableDataXmlSerializer {
           arrayOfString[arrayOfString.length - 1 - b][b1] = object.toString();
         } else {
           arrayOfString[arrayOfString.length - 1 - b][b1] = "";
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return arrayOfString;
   }
-  
+
   public s ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     try {
@@ -102,14 +104,20 @@ public class TableDataXmlSerializer {
       return ExceptionInVPackage(fileInputStream);
     } catch (FileNotFoundException fileNotFoundException) {
       fileNotFoundException.printStackTrace();
-      throw new ExceptionInVPackage("Problem loading " + paramString + ", error message:\n" + fileNotFoundException.getMessage() + "\nCheck log file for more details.");
+      throw new ExceptionInVPackage(
+          "Problem loading "
+              + paramString
+              + ", error message:\n"
+              + fileNotFoundException.getMessage()
+              + "\nCheck log file for more details.");
     } finally {
       try {
         fileInputStream.close();
-      } catch (IOException iOException) {}
-    } 
+      } catch (IOException iOException) {
+      }
+    }
   }
-  
+
   public s ExceptionInVPackage(InputStream paramInputStream) {
     Document document = null;
     s s = new s();
@@ -129,8 +137,8 @@ public class TableDataXmlSerializer {
               i = Integer.parseInt(node1.getNodeValue());
             } else if (node1.getNodeName() != null && node1.getNodeName().equals("cols")) {
               j = Integer.parseInt(node1.getNodeValue());
-            } 
-          } 
+            }
+          }
           s.ExceptionInVPackage(i, j);
         } else if (node.hasAttributes() && node.getNodeName().equals("xAxis")) {
           NamedNodeMap namedNodeMap = node.getAttributes();
@@ -138,10 +146,9 @@ public class TableDataXmlSerializer {
             Node node1 = namedNodeMap.item(b1);
             if (node1.getNodeName() != null && node1.getNodeName().equals("name")) {
               String str1 = node1.getNodeValue();
-              if (str1 != null && str1.length() > 0)
-                s.e(str1); 
-            } 
-          } 
+              if (str1 != null && str1.length() > 0) s.e(str1);
+            }
+          }
           String str = node.getTextContent();
           double[][] arrayOfDouble = new double[j][1];
           X.ExceptionInVPackage(arrayOfDouble, str);
@@ -153,10 +160,9 @@ public class TableDataXmlSerializer {
             Node node1 = namedNodeMap.item(b1);
             if (node1.getNodeName() != null && node1.getNodeName().equals("name")) {
               String str1 = node1.getNodeValue();
-              if (str1 != null && str1.length() > 0)
-                s.d(str1); 
-            } 
-          } 
+              if (str1 != null && str1.length() > 0) s.d(str1);
+            }
+          }
           String str = node.getTextContent();
           double[][] arrayOfDouble = new double[i][1];
           X.ExceptionInVPackage(arrayOfDouble, str);
@@ -167,33 +173,35 @@ public class TableDataXmlSerializer {
           double[][] arrayOfDouble = new double[i][j];
           X.ExceptionInVPackage(arrayOfDouble, str);
           s.ExceptionInVPackage(arrayOfDouble);
-        } 
-      } 
+        }
+      }
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Problem loading table, error message:\n" + exception.getMessage() + "\nCheck log file for more details.");
-    } 
+      throw new ExceptionInVPackage(
+          "Problem loading table, error message:\n"
+              + exception.getMessage()
+              + "\nCheck log file for more details.");
+    }
     return s;
   }
-  
+
   public s b(String paramString, s params) {
     s s1 = ExceptionInVPackage(paramString);
     fh.ExceptionInVPackage(s1, params);
     return params;
   }
-  
+
   private String[] ExceptionInVPackage(double[][] paramArrayOfdouble) {
     String[] arrayOfString = new String[paramArrayOfdouble.length];
     for (byte b = 0; b < paramArrayOfdouble.length; b++)
-      arrayOfString[b] = paramArrayOfdouble[b][0] + ""; 
+      arrayOfString[b] = paramArrayOfdouble[b][0] + "";
     return arrayOfString;
   }
-  
+
   public void ExceptionInVPackage(String paramString, Document paramDocument) {
     try {
       File file = new File(paramString);
-      if (!file.exists())
-        file.createNewFile(); 
+      if (!file.exists()) file.createNewFile();
       FileOutputStream fileOutputStream = new FileOutputStream(file);
       DOMSource dOMSource = new DOMSource(paramDocument);
       StreamResult streamResult = new StreamResult(fileOutputStream);
@@ -205,10 +213,9 @@ public class TableDataXmlSerializer {
     } catch (Exception exception) {
       exception.printStackTrace();
       throw new ExceptionInVPackage("Error Saving Document. Check Log file for details.");
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/eY.class
  * Java compiler version: 8 (52.0)

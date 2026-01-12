@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class PageNavigatorPreviousListener implements ActionListener {
   PageNavigatorPreviousListener(dz paramdz) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     dz.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dB.class
  * Java compiler version: 8 (52.0)

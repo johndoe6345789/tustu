@@ -4,11 +4,11 @@ import java.awt.Graphics2D;
 import javax.swing.Painter;
 
 class BinTableCellBorderPainter implements Painter {
-  BinTableCellBorderPainter(BinTableCellRenderer paramBinTableCellRenderer, BinTableView paramBinTableView) {}
-  
+  BinTableCellBorderPainter(
+      BinTableCellRenderer paramBinTableCellRenderer, BinTableView paramBinTableView) {}
+
   public void paint(Graphics2D paramGraphics2D, Object paramObject, int paramInt1, int paramInt2) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/aE.class
  * Java compiler version: 8 (52.0)

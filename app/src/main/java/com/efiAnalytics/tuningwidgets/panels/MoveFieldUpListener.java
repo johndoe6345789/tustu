@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class MoveFieldUpListener implements ActionListener {
   MoveFieldUpListener(DatalogFieldSelectorPanel paramn) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.f();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/v.class
  * Java compiler version: 8 (52.0)

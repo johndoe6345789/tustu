@@ -24,19 +24,19 @@ import s.SComponentGolf;
 
 public class CurveFitControlPanel extends JPanel {
   JComboBox a = new JComboBox();
-  
+
   JComboBox b = new JComboBox();
-  
+
   JButton IInterfaceCharlie;
-  
+
   JButton d;
-  
+
   List e = new ArrayList();
-  
+
   boolean f = false;
-  
+
   private String SComponentGolf = "";
-  
+
   public CurveFitControlPanel() {
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
@@ -62,7 +62,7 @@ public class CurveFitControlPanel extends JPanel {
       jPanel2.add(this.d);
     } catch (V.a a1) {
       bV.d(a1.getLocalizedMessage(), jPanel2);
-    } 
+    }
     add("West", jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
@@ -85,16 +85,19 @@ public class CurveFitControlPanel extends JPanel {
     this.b.addActionListener(new e(this));
     b();
   }
-  
+
   private void b() {
-    this.IInterfaceCharlie.setEnabled((this.a.getSelectedItem() != null && !this.a.getSelectedItem().equals("") && this.b.getSelectedItem() != null && !this.b.getSelectedItem().equals("")));
+    this.IInterfaceCharlie.setEnabled(
+        (this.a.getSelectedItem() != null
+            && !this.a.getSelectedItem().equals("")
+            && this.b.getSelectedItem() != null
+            && !this.b.getSelectedItem().equals("")));
   }
-  
+
   private void IInterfaceCharlie() {
-    for (f f : this.e)
-      f.a(); 
+    for (f f : this.e) f.a();
   }
-  
+
   private void d() {
     String str;
     do {
@@ -105,74 +108,69 @@ public class CurveFitControlPanel extends JPanel {
       this.SComponentGolf = str;
     } else {
       d(this.SComponentGolf);
-    } 
+    }
   }
-  
+
   private boolean d(String paramString) {
     for (f f : this.e) {
-      if (!f.IInterfaceCharlie(paramString))
-        return false; 
-    } 
+      if (!f.IInterfaceCharlie(paramString)) return false;
+    }
     return true;
   }
-  
+
   public void a() {
-    String str1 = (String)this.a.getSelectedItem();
-    String str2 = (String)this.b.getSelectedItem();
+    String str1 = (String) this.a.getSelectedItem();
+    String str2 = (String) this.b.getSelectedItem();
     this.f = true;
     this.a.removeAllItems();
     this.b.removeAllItems();
     n n = IInterfaceCharlie.a().e();
     if (n != null) {
       ArrayList<String> arrayList = new ArrayList();
-      for (j j : n)
-        arrayList.add(j.a()); 
+      for (j j : n) arrayList.add(j.a());
       List list = S.b(arrayList);
       for (String str : list) {
         this.a.addItem(str);
         this.b.addItem(str);
-      } 
-    } 
+      }
+    }
     this.f = false;
   }
-  
+
   public void a(String paramString) {
     if (this.a.getSelectedItem() == null || !this.a.getSelectedItem().equals(paramString))
-      this.a.setSelectedItem(paramString); 
+      this.a.setSelectedItem(paramString);
   }
-  
+
   public void b(String paramString) {
     if (this.b.getSelectedItem() == null || !this.b.getSelectedItem().equals(paramString))
-      this.b.setSelectedItem(paramString); 
+      this.b.setSelectedItem(paramString);
   }
-  
+
   public void a(f paramf) {
     this.e.add(paramf);
   }
-  
+
   private void e(String paramString) {
-    for (f f : this.e)
-      f.a(paramString); 
+    for (f f : this.e) f.a(paramString);
   }
-  
+
   private void f(String paramString) {
-    for (f f : this.e)
-      f.b(paramString); 
+    for (f f : this.e) f.b(paramString);
   }
-  
+
   public void IInterfaceCharlie(String paramString) {
     this.SComponentGolf = paramString;
   }
-  
+
   public Dimension getPreferredSize() {
     return super.getPreferredSize();
   }
-  
+
   public Dimension getMinimumSize() {
     return super.getMinimumSize();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/a.class
  * Java compiler version: 8 (52.0)

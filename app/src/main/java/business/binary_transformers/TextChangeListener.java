@@ -2,10 +2,9 @@ package business.binary_transformers;
 
 public interface TextChangeListener {
   void a(String paramString);
-  
+
   void b(String paramString);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/K.class
  * Java compiler version: 8 (52.0)

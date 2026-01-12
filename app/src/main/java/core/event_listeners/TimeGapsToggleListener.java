@@ -6,12 +6,11 @@ import javax.swing.JCheckBoxMenuItem;
 
 class dM implements ItemListener {
   dM(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    this.a.a("timeGapsOn", ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState());
+    this.a.a("timeGapsOn", ((JCheckBoxMenuItem) paramItemEvent.getSource()).getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/dM.class
  * Java compiler version: 8 (52.0)

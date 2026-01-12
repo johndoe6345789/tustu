@@ -11,17 +11,15 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
   ArrayList a = new ArrayList();
 
   public void a(DataReceivedListener paramy) {
-    if (!this.a.contains(paramy))
-      this.a.add(paramy); 
+    if (!this.a.contains(paramy)) this.a.add(paramy);
   }
-  
+
   public void b(DataReceivedListener paramy) {
     this.a.remove(paramy);
   }
-  
+
   public void a(ConnectionEventListener parame) {
-    if (!this.b.contains(parame))
-      this.b.add(parame);
+    if (!this.b.contains(parame)) this.b.add(parame);
   }
 
   public void b(ConnectionEventListener parame) {
@@ -35,10 +33,10 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
       } catch (Exception exception) {
         D.a("Exception in notifyConnected()");
         D.a(exception);
-      } 
-    } 
+      }
+    }
   }
-  
+
   protected void b() {
     for (ConnectionEventListener e : this.b) {
       try {
@@ -46,10 +44,10 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
       } catch (Exception exception) {
         D.a("Exception in notifyConnectionAttemptFailed()");
         D.a(exception);
-      } 
-    } 
+      }
+    }
   }
-  
+
   protected void c() {
     for (ConnectionEventListener e : this.b) {
       try {
@@ -57,10 +55,10 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
       } catch (Exception exception) {
         D.a("Exception in notifyConnectionAttemptStarting()");
         D.a(exception);
-      } 
-    } 
+      }
+    }
   }
-  
+
   protected void d() {
     for (ConnectionEventListener e : this.b) {
       try {
@@ -68,10 +66,10 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
       } catch (Exception exception) {
         D.a("Exception in notifyConnectionLost()");
         D.a(exception);
-      } 
-    } 
+      }
+    }
   }
-  
+
   protected void e() {
     for (ConnectionEventListener e : this.b) {
       try {
@@ -79,11 +77,10 @@ public abstract class AbstractConnectionManager implements ControllerInterface {
       } catch (Exception exception) {
         D.a("Exception in notifyConnectionClosing()");
         D.a(exception);
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/A/a.class
  * Java compiler version: 8 (52.0)

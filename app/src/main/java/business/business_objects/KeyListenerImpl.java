@@ -6,20 +6,19 @@ import java.awt.event.KeyListener;
 
 class KeyListenerImpl implements KeyListener {
   KeyListenerImpl(b paramb) {}
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {
     D.c("Typed");
   }
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {
     D.c("Pressed");
   }
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
     D.c("Release");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bo/j.class
  * Java compiler version: 8 (52.0)

@@ -5,11 +5,11 @@ import V.ExceptionInVPackage;
 import W.IOInWPackage;
 import aE.ExceptionInVPackage;
 import bt.ByInterfaceJuliet;
-import by.JPanelExtensionInByPackage;
 import by.ByInterfaceIndia;
 import by.ByInterfaceJuliet;
 import by.ByInterfaceMike;
 import by.ByInterfaceNovember;
+import by.JPanelExtensionInByPackage;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.cO;
 import com.efiAnalytics.ui.eJ;
@@ -31,23 +31,24 @@ import s.SComponentGolf;
 
 public class BeInterfaceWhiskey extends JPanel implements o {
   private R f = null;
-  
+
   JTextField ExceptionInVPackage = new JTextField("", 15);
-  
+
   JTextField b = new JTextField("", 3);
-  
+
   JPanelExtensionInByPackage c;
-  
+
   private S SComponentGolf = null;
-  
+
   private S h = null;
-  
+
   String JPanelExtensionInByPackage = "";
-  
+
   ByInterfaceNovember e = new ByInterfaceNovember();
-  
+
   public BeInterfaceWhiskey(R paramR) {
-    setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("OutputChannel Expression Editor")));
+    setBorder(
+        BorderFactory.createTitledBorder(SComponentGolf.b("OutputChannel Expression Editor")));
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(10, 10));
@@ -56,14 +57,22 @@ public class BeInterfaceWhiskey extends JPanel implements o {
     this.ExceptionInVPackage.addKeyListener(this.e);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout(0));
-    JPanel jPanel3 = ExceptionInVPackage("Channel Name", this.ExceptionInVPackage, SComponentGolf.b("A unique name to reference this channel.") + " " + SComponentGolf.b("This name will be added to the available Channel List and can be used by gauges, data log fields or other expressions."));
+    JPanel jPanel3 =
+        ExceptionInVPackage(
+            "Channel Name",
+            this.ExceptionInVPackage,
+            SComponentGolf.b("A unique name to reference this channel.")
+                + " "
+                + SComponentGolf.b(
+                    "This name will be added to the available Channel List and can be used by"
+                        + " gauges, data log fields or other expressions."));
     jPanel2.add(jPanel3);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout());
     jPanel4.add(this.b, "West");
     this.b.addKeyListener(this.e);
     this.b.setBorder(BorderFactory.createBevelBorder(1));
-    JPanel jPanel5 = ExceptionInVPackage("Units", jPanel4, (String)null);
+    JPanel jPanel5 = ExceptionInVPackage("Units", jPanel4, (String) null);
     jPanel2.add(jPanel5);
     jPanel2.add(new JLabel(" "));
     jPanel1.add(jPanel2, "Center");
@@ -71,8 +80,9 @@ public class BeInterfaceWhiskey extends JPanel implements o {
     try {
       image = cO.ExceptionInVPackage().ExceptionInVPackage(cO.M, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      Logger.getLogger(w.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionInVPackage);
-    } 
+      Logger.getLogger(w.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) ExceptionInVPackage);
+    }
     ImageIcon imageIcon = new ImageIcon(image);
     JButton jButton = new JButton(imageIcon);
     jButton.setPreferredSize(new Dimension(eJ.ExceptionInVPackage(28), eJ.ExceptionInVPackage(28)));
@@ -80,17 +90,27 @@ public class BeInterfaceWhiskey extends JPanel implements o {
     jButton.addActionListener(new x(this));
     JPanel jPanel6 = new JPanel();
     jPanel6.setLayout(new BorderLayout());
-    jPanel6.add(ExceptionInVPackage("Expression", new JLabel(), "<html>" + SComponentGolf.b("Enter ExceptionInVPackage mathematical expression based on other Channels or Setting Parameters")), "North");
+    jPanel6.add(
+        ExceptionInVPackage(
+            "Expression",
+            new JLabel(),
+            "<html>"
+                + SComponentGolf.b(
+                    "Enter ExceptionInVPackage mathematical expression based on other Channels or"
+                        + " Setting Parameters")),
+        "North");
     ArrayList<ByInterfaceIndia> arrayList = new ArrayList();
     arrayList.add(ByInterfaceJuliet.ExceptionInVPackage(paramR));
     if (!IOInWPackage.b(ExceptionInVPackage.A().ByInterfaceJuliet()))
-      arrayList.add(ByInterfaceJuliet.b(paramR)); 
+      arrayList.add(ByInterfaceJuliet.b(paramR));
     ByInterfaceMike ByInterfaceMike = ByInterfaceNovember.ExceptionInVPackage();
-    this.c = new JPanelExtensionInByPackage(arrayList, ByInterfaceMike, SComponentGolf.JPanelExtensionInByPackage());
-    jPanel6.add((Component)this.c, "Center");
+    this.c =
+        new JPanelExtensionInByPackage(
+            arrayList, ByInterfaceMike, SComponentGolf.JPanelExtensionInByPackage());
+    jPanel6.add((Component) this.c, "Center");
     add(jPanel6, "Center");
   }
-  
+
   private void SComponentGolf() {
     R r = null;
     try {
@@ -99,15 +119,16 @@ public class BeInterfaceWhiskey extends JPanel implements o {
       r = new R();
       r.c();
       r.ExceptionInVPackage("Circular Dependency!");
-    } 
+    }
     if (r.ExceptionInVPackage()) {
       bV.JPanelExtensionInByPackage(SComponentGolf.b("Valid Expression!"), this);
     } else {
       bV.JPanelExtensionInByPackage(SComponentGolf.b(r.JPanelExtensionInByPackage()), this);
-    } 
+    }
   }
-  
-  private JPanel ExceptionInVPackage(String paramString1, Component paramComponent, String paramString2) {
+
+  private JPanel ExceptionInVPackage(
+      String paramString1, Component paramComponent, String paramString2) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(5, 5));
     Dimension dimension = new Dimension(eJ.ExceptionInVPackage(100), eJ.ExceptionInVPackage(20));
@@ -117,80 +138,85 @@ public class BeInterfaceWhiskey extends JPanel implements o {
     jPanel.add(paramComponent, "Center");
     if (paramString2 != null) {
       ByInterfaceJuliet ByInterfaceJuliet = new ByInterfaceJuliet(SComponentGolf.b(paramString2));
-      jPanel.add((Component)ByInterfaceJuliet, "East");
-    } 
+      jPanel.add((Component) ByInterfaceJuliet, "East");
+    }
     return jPanel;
   }
-  
+
   public boolean ExceptionInVPackage() {
     if (this.SComponentGolf != null) {
       R r = this.SComponentGolf.ExceptionInVPackage(this.ExceptionInVPackage.getText());
       if (!r.ExceptionInVPackage()) {
-        String str = (r.JPanelExtensionInByPackage() != null) ? r.JPanelExtensionInByPackage() : "Invalid Channel Name";
+        String str =
+            (r.JPanelExtensionInByPackage() != null)
+                ? r.JPanelExtensionInByPackage()
+                : "Invalid Channel Name";
         str = SComponentGolf.b(str);
         bV.JPanelExtensionInByPackage(str, this);
         return false;
-      } 
-    } 
+      }
+    }
     if (this.h != null) {
       R r = this.h.ExceptionInVPackage(this.c.b());
       if (!r.ExceptionInVPackage()) {
-        String str = (r.JPanelExtensionInByPackage() != null) ? r.JPanelExtensionInByPackage() : "Invalid Expression";
+        String str =
+            (r.JPanelExtensionInByPackage() != null)
+                ? r.JPanelExtensionInByPackage()
+                : "Invalid Expression";
         str = SComponentGolf.b(str);
         bV.JPanelExtensionInByPackage(str, this);
         return false;
-      } 
-    } 
+      }
+    }
     return true;
   }
-  
+
   public void ExceptionInVPackage(R paramR) {
     this.f = paramR;
   }
-  
+
   public String b() {
     return this.ExceptionInVPackage.getText();
   }
-  
+
   public void ExceptionInVPackage(String paramString, boolean paramBoolean) {
     this.ExceptionInVPackage.setText(paramString);
     this.ExceptionInVPackage.setEditable(paramBoolean);
   }
-  
+
   public String JPanelExtensionInByPackage() {
     return this.c.b();
   }
-  
+
   public void ExceptionInVPackage(String paramString) {
     this.c.JPanelExtensionInByPackage(paramString);
   }
-  
+
   public void ExceptionInVPackage(S paramS) {
     this.SComponentGolf = paramS;
   }
-  
+
   public void b(S paramS) {
     this.h = paramS;
   }
-  
+
   public void b(String paramString) {
     this.b.setText(paramString);
   }
-  
+
   public String e() {
     return this.b.getText();
   }
-  
+
   public boolean c() {
     return (this.e.ExceptionInVPackage() || !this.JPanelExtensionInByPackage.equals(this.c.b()));
   }
-  
+
   public void f() {
     this.e.b();
     this.JPanelExtensionInByPackage = this.c.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/w.class
  * Java compiler version: 8 (52.0)

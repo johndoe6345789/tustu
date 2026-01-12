@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceIm implements ActionListener {
   im(ii paramii) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a(2);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/im.class
  * Java compiler version: 8 (52.0)

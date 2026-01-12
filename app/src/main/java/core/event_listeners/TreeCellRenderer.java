@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class bw implements ActionListener {
   bw(bu parambu) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/bw.class
  * Java compiler version: 8 (52.0)

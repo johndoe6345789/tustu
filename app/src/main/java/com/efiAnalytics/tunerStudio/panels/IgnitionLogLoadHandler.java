@@ -13,50 +13,51 @@ import javax.swing.SwingUtilities;
 
 class IgnitionLogLoadHandler implements Y, aQ {
   long ExceptionInVPackage = 0L;
-  
+
   eB b = null;
-  
+
   boolean c = true;
-  
+
   final aQ d = this;
-  
+
   IgnitionLogLoadHandler(o paramo) {}
-  
+
   public void ExceptionInVPackage(ArrayList paramArrayList, long paramLong) {
     try {
       this.ExceptionInVPackage = paramLong;
       D d = new D(this);
       SwingUtilities.invokeAndWait(d);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(o.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+      Logger.getLogger(o.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
     } catch (InvocationTargetException invocationTargetException) {
-      Logger.getLogger(o.class.getName()).log(Level.SEVERE, (String)null, invocationTargetException);
-    } 
+      Logger.getLogger(o.class.getName())
+          .log(Level.SEVERE, (String) null, invocationTargetException);
+    }
   }
-  
+
   public boolean ExceptionInVPackage(long paramLong) {
     double d = paramLong / this.ExceptionInVPackage;
     this.b.ExceptionInVPackage(d);
     return this.c;
   }
-  
+
   public void ExceptionInVPackage(ArrayList paramArrayList) {
     this.e.k.ExceptionInVPackage(paramArrayList);
     this.b.setVisible(false);
   }
-  
+
   public void ExceptionInVPackage(ExceptionInVPackage parama) {
     try {
       this.b.setVisible(false);
-    } catch (Exception exception) {}
-    D.ExceptionInVPackage("Unable to load Ignition Log File.", (Exception)parama, this.e.k);
+    } catch (Exception exception) {
+    }
+    D.ExceptionInVPackage("Unable to load Ignition Log File.", (Exception) parama, this.e.k);
   }
-  
+
   public void ExceptionInVPackage() {
     this.c = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/C.class
  * Java compiler version: 8 (52.0)

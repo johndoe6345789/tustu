@@ -5,13 +5,11 @@ import java.awt.event.MouseEvent;
 
 class MouseAdapterExtensionInByPackage extends MouseAdapter {
   MouseAdapterExtensionInByPackage(d paramd) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    if (paramMouseEvent.getClickCount() == 1)
-      this.a.a(); 
+    if (paramMouseEvent.getClickCount() == 1) this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/by/e.class
  * Java compiler version: 8 (52.0)

@@ -5,16 +5,15 @@ import java.awt.event.ActionListener;
 
 class BgComponentJuliet implements ActionListener {
   BgComponentJuliet(a parama) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (a.i(this.a)) {
       a.g(this.a);
       a.h(this.a);
       this.a.f.dispose();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/j.class
  * Java compiler version: 8 (52.0)

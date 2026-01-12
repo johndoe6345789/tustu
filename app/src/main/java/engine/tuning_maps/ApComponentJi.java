@@ -5,7 +5,7 @@ import java.util.Vector;
 
 class ApComponentJi implements GInterfaceAb {
   ji(jc paramjc) {}
-  
+
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
     if (paramInt1 == this.a.k) {
       int i = paramInt2;
@@ -17,12 +17,11 @@ class ApComponentJi implements GInterfaceAb {
         if (++i >= paramInt2 + paramArrayOfint.length) {
           this.a.g.repaint();
           break;
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ji.class
  * Java compiler version: 8 (52.0)

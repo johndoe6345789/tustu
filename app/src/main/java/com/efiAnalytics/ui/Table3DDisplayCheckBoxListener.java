@@ -6,13 +6,12 @@ import javax.swing.JCheckBox;
 
 class Table3DDisplayCheckBoxListener implements ActionListener {
   Table3DDisplayCheckBoxListener(bt parambt) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    boolean bool = ((JCheckBox)paramActionEvent.getSource()).isSelected();
+    boolean bool = ((JCheckBox) paramActionEvent.getSource()).isSelected();
     this.a.d(bool);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bJ.class
  * Java compiler version: 8 (52.0)

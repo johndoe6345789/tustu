@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class AyInterfaceMike implements ActionListener {
   AyInterfaceMike(l paraml) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/m.class
  * Java compiler version: 8 (52.0)

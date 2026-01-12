@@ -5,10 +5,9 @@ import java.io.IOException;
 
 public class EcuDefinitionFinder {
   public static String a = null;
-  
+
   public static File a(File[] paramArrayOfFile, String paramString) {
-    if (paramString == null && a != null)
-      return new File(a); 
+    if (paramString == null && a != null) return new File(a);
     File[] arrayOfFile = a(paramArrayOfFile);
     File file = null;
     double d = -2.0D;
@@ -22,17 +21,20 @@ public class EcuDefinitionFinder {
               if (d1 > d) {
                 d = d1;
                 file = arrayOfFile[b];
-              } 
-            } 
-          }  
-      } 
-    } 
+              }
+            }
+          }
+      }
+    }
     return file;
   }
-  
+
   public static File[] a(File[] paramArrayOfFile) {
     if (paramArrayOfFile.length <= 0)
-      throw new IOException("Ecu Definition directory not found, expected at:\n" + paramArrayOfFile[0].getAbsolutePath() + "\nYour installation appears corrupt."); 
+      throw new IOException(
+          "Ecu Definition directory not found, expected at:\n"
+              + paramArrayOfFile[0].getAbsolutePath()
+              + "\nYour installation appears corrupt.");
     u u = new u();
     File[] arrayOfFile = null;
     for (byte b = 0; b < paramArrayOfFile.length; b++) {
@@ -45,12 +47,11 @@ public class EcuDefinitionFinder {
         System.arraycopy(arrayOfFile, 0, arrayOfFile2, 0, arrayOfFile.length);
         System.arraycopy(arrayOfFile1, 0, arrayOfFile2, arrayOfFile.length, arrayOfFile1.length);
         arrayOfFile = arrayOfFile2;
-      } 
-    } 
+      }
+    }
     return arrayOfFile;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/t.class
  * Java compiler version: 8 (52.0)

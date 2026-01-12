@@ -7,13 +7,13 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceGx implements ActionListener {
   gx(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bo, jCheckBoxMenuItem.getState() + "");
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.bo, jCheckBoxMenuItem.getState() + "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gx.class
  * Java compiler version: 8 (52.0)

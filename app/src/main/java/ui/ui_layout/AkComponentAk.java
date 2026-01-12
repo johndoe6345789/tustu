@@ -11,20 +11,20 @@ import java.util.logging.Logger;
 
 class AkComponentAk {
   protected int t;
-  
+
   protected int u;
-  
+
   Map v = new HashMap<>();
-  
+
   public AkComponentAk(aa paramaa, int paramInt) {
     this.t = paramInt;
     l();
   }
-  
+
   public AkComponentAk(aa paramaa) {
     this(paramaa, 0);
   }
-  
+
   protected final void l() {
     this.u = this.t;
     if (this.t > 0)
@@ -50,22 +50,27 @@ class AkComponentAk {
                 field.set(this, aa.a(this.w, this.u, i).trim());
                 break;
               case 8:
-                field.set(this, Double.valueOf(ByteBuffer.wrap(this.w.e, this.u, i).order(this.w.k ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN).getDouble()));
+                field.set(
+                    this,
+                    Double.valueOf(
+                        ByteBuffer.wrap(this.w.e, this.u, i)
+                            .order(this.w.k ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN)
+                            .getDouble()));
                 break;
               case 9:
                 bool = (c.a(this.w.e, this.u, i, true, false) != 0) ? true : false;
                 field.setBoolean(this, bool);
-                if (y.d())
-                  this.w.k = bool; 
+                if (y.d()) this.w.k = bool;
                 break;
-            } 
+            }
             this.u += i;
-          } catch (IllegalArgumentException|IllegalAccessException illegalArgumentException) {
-            Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, illegalArgumentException);
-          }  
-      }  
+          } catch (IllegalArgumentException | IllegalAccessException illegalArgumentException) {
+            Logger.getLogger(ak.class.getName())
+                .log(Level.SEVERE, (String) null, illegalArgumentException);
+          }
+      }
   }
-  
+
   public String toString() {
     StringBuilder stringBuilder = new StringBuilder(getClass() + "{\n");
     for (Field field : getClass().getDeclaredFields()) {
@@ -74,24 +79,33 @@ class AkComponentAk {
       if (y == null || this.w.j >= y.c())
         try {
           Object object = field.get(this);
-          if (object == null)
-            object = "null"; 
+          if (object == null) object = "null";
           if (y != null) {
             stringBuilder.append("\t").append(field.getName());
             stringBuilder.append("(").append(y.a().name()).append("[").append(y.b()).append("])=");
-            stringBuilder.append((y.a() == Z.i) ? String.format("0x%08X", new Object[] { Integer.valueOf(Integer.parseInt(object.toString())) }) : object);
+            stringBuilder.append(
+                (y.a() == Z.i)
+                    ? String.format(
+                        "0x%08X",
+                        new Object[] {Integer.valueOf(Integer.parseInt(object.toString()))})
+                    : object);
             stringBuilder.append(",\n");
           } else {
-            stringBuilder.append("\t").append(field.getName()).append("=").append(object.toString()).append("\n");
-          } 
-        } catch (IllegalArgumentException|IllegalAccessException illegalArgumentException) {
-          Logger.getLogger(ak.class.getName()).log(Level.SEVERE, (String)null, illegalArgumentException);
-        }  
-    } 
+            stringBuilder
+                .append("\t")
+                .append(field.getName())
+                .append("=")
+                .append(object.toString())
+                .append("\n");
+          }
+        } catch (IllegalArgumentException | IllegalAccessException illegalArgumentException) {
+          Logger.getLogger(ak.class.getName())
+              .log(Level.SEVERE, (String) null, illegalArgumentException);
+        }
+    }
     return stringBuilder.append("}").toString();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/ak.class
  * Java compiler version: 8 (52.0)

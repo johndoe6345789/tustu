@@ -4,15 +4,14 @@ import java.util.List;
 
 public class MInterfaceCharlie {
   public MInterfaceCharlie(a parama) {}
-  
+
   public void a(List paramList) {
     this.a.b = paramList;
     synchronized (this) {
       notifyAll();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/m/c.class
  * Java compiler version: 8 (52.0)

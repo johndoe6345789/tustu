@@ -5,14 +5,13 @@ import java.awt.event.ActionListener;
 
 class BtComponentAy implements ActionListener {
   ay(an paraman) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.z.a(an.o, "");
     this.a.p.l(this.a.q.a());
     this.a.p.repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/ay.class
  * Java compiler version: 8 (52.0)

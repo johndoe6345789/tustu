@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 class SearchGroupPanel extends JPanel {
   JPanel a = new JPanel();
-  
+
   SearchGroupPanel(i parami, B paramB, String paramString) {
     setLayout(new BorderLayout());
     JPanel jPanel = new JPanel();
@@ -28,20 +28,19 @@ class SearchGroupPanel extends JPanel {
       D d = new D();
       d.a(c);
       this.a.add(d);
-    } 
+    }
     add("Center", this.a);
   }
-  
+
   public List a() {
     ArrayList<D> arrayList = new ArrayList();
     for (byte b = 0; b < this.a.getComponentCount(); b++) {
-      D d = (D)this.a.getComponent(b);
+      D d = (D) this.a.getComponent(b);
       arrayList.add(d);
-    } 
+    }
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/j.class
  * Java compiler version: 8 (52.0)

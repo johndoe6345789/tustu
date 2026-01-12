@@ -8,14 +8,13 @@ class JScrollPaneExtension extends JScrollPane {
   public JScrollPaneExtension(hC paramhC, Component paramComponent) {
     super(paramComponent);
   }
-  
+
   public Dimension getPreferredSize() {
     Dimension dimension = super.getPreferredSize();
     dimension.width += 25;
     return dimension;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hE.class
  * Java compiler version: 8 (52.0)

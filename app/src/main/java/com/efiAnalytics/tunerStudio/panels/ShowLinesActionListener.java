@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class ShowLinesActionListener implements ActionListener {
   ShowLinesActionListener(TriggerLoggerPanel paramTriggerLoggerPanel) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     boolean bool = this.a.o.isSelected();
     TriggerLoggerPanel.a(this.a, "Show Lines", Boolean.toString(bool));
@@ -14,7 +14,6 @@ class ShowLinesActionListener implements ActionListener {
     this.a.f.repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/ac.class
  * Java compiler version: 8 (52.0)

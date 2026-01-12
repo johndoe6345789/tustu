@@ -7,14 +7,13 @@ import javax.swing.JComboBox;
 
 class ActionperformedInAsPackage implements ActionListener {
   ActionperformedInAsPackage(j paramj, JComboBox paramJComboBox) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     IOProperties.c(IOProperties.at, "" + this.a.getSelectedIndex());
     this.b.a.setEnabled((this.a.getSelectedIndex() == IOProperties.av));
     this.b.b.setEnabled((this.a.getSelectedIndex() == IOProperties.av));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/as/m.class
  * Java compiler version: 8 (52.0)

@@ -6,12 +6,11 @@ import c.CInterfaceEcho;
 
 class ApInterfaceCn implements CInterfaceEcho {
   ApInterfaceCn(cc paramcc) {}
-  
+
   public boolean a() {
     return (hx.a().AcInterfaceRomeo() != null && !AcInterfaceRomeo.a());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cN.class
  * Java compiler version: 8 (52.0)

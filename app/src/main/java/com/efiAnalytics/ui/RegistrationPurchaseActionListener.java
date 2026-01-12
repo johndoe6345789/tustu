@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class RegistrationPurchaseActionListener implements ActionListener {
   RegistrationPurchaseActionListener(cT paramcT) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.e();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cV.class
  * Java compiler version: 8 (52.0)

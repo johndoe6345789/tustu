@@ -4,12 +4,11 @@ import G.GInterfaceAn;
 
 class BtInterfaceAr implements GInterfaceAn {
   BtInterfaceAr(an paraman) {}
-  
+
   public void a(String paramString1, String paramString2) {
     an.e(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/aR.class
  * Java compiler version: 8 (52.0)

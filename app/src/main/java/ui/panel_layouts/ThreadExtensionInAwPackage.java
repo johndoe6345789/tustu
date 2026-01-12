@@ -6,12 +6,12 @@ import java.util.logging.Logger;
 
 class ThreadExtensionInAwPackage extends Thread {
   boolean a = true;
-  
+
   public void h(e parame) {
     super("IS Blink");
     setDaemon(true);
   }
-  
+
   public synchronized void run() {
     while (this.a) {
       Color color = this.b.c.getBackground();
@@ -19,24 +19,22 @@ class ThreadExtensionInAwPackage extends Thread {
       try {
         wait(500L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
       this.b.c.setBackground(color);
       try {
-        if (this.a)
-          wait(800L); 
+        if (this.a) wait(800L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
-  
+
   public synchronized void a() {
     this.a = false;
     notify();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aW/h.class
  * Java compiler version: 8 (52.0)

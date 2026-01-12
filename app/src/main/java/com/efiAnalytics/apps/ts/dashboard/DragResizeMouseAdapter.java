@@ -10,21 +10,21 @@ import java.util.List;
 
 class DragResizeMouseAdapter extends MouseAdapter implements MouseMotionListener {
   List a = new ArrayList();
-  
+
   List b = new ArrayList();
-  
+
   List c = new ArrayList();
-  
+
   List d = new ArrayList();
-  
+
   boolean e = false;
-  
+
   s f = null;
-  
+
   Point g = null;
-  
+
   DragResizeMouseAdapter(x paramx) {}
-  
+
   public void mousePressed(MouseEvent paramMouseEvent) {
     // Byte code:
     //   0: aload_0
@@ -272,12 +272,11 @@ class DragResizeMouseAdapter extends MouseAdapter implements MouseMotionListener
     //   72	493	514	finally
     //   514	516	514	finally
   }
-  
+
   public void mouseReleased(MouseEvent paramMouseEvent) {
     if (!this.h.L() && paramMouseEvent.getSource() instanceof s)
-      this.h.dispatchEvent(paramMouseEvent); 
-    if (!this.h.isEnabled())
-      return; 
+      this.h.dispatchEvent(paramMouseEvent);
+    if (!this.h.isEnabled()) return;
     s s1 = (this.f != null) ? this.f : a(paramMouseEvent);
     for (s s2 : x.g(this.h)) {
       if (this.e) {
@@ -286,29 +285,27 @@ class DragResizeMouseAdapter extends MouseAdapter implements MouseMotionListener
         s2.setRelativeWidth(d3);
         s2.setRelativeHeight(d4);
         continue;
-      } 
+      }
       double d1 = s2.getX() / this.h.getWidth();
       double d2 = s2.getY() / this.h.getHeight();
       s2.setRelativeX(d1);
       s2.setRelativeY(d2);
-    } 
+    }
     this.e = false;
     s1 = null;
   }
-  
+
   public void mouseExited(MouseEvent paramMouseEvent) {
-    if (!this.h.isEnabled())
-      return; 
-    s s1 = (s)paramMouseEvent.getSource();
+    if (!this.h.isEnabled()) return;
+    s s1 = (s) paramMouseEvent.getSource();
     if (s1.hasFocus() && this.h.getCursor().getType() != 0)
-      this.h.setCursor(Cursor.getDefaultCursor()); 
+      this.h.setCursor(Cursor.getDefaultCursor());
   }
-  
+
   public void mouseDragged(MouseEvent paramMouseEvent) {
     if (!this.h.L() && paramMouseEvent.getSource() instanceof s)
-      this.h.dispatchEvent(paramMouseEvent); 
-    if (!this.h.isEnabled() || !this.h.L())
-      return; 
+      this.h.dispatchEvent(paramMouseEvent);
+    if (!this.h.isEnabled() || !this.h.L()) return;
     this.f.invalidate();
     if (this.e) {
       int i = 0;
@@ -322,41 +319,41 @@ class DragResizeMouseAdapter extends MouseAdapter implements MouseMotionListener
         if (point != null)
           for (byte b = 0; b < x.g(this.h).size(); b++) {
             s s1 = x.g(this.h).get(b);
-            i = ((Integer)this.c.get(b)).intValue() + point.x - this.g.x;
-            j = ((Integer)this.d.get(b)).intValue() - this.g.y - point.y;
+            i = ((Integer) this.c.get(b)).intValue() + point.x - this.g.x;
+            j = ((Integer) this.d.get(b)).intValue() - this.g.y - point.y;
             s1.setSize(i, j);
-          }  
-      } 
+          }
+      }
     } else if (this.f != null) {
       Point point = this.f.getParent().getMousePosition();
       if (point != null && this.f != null)
         for (byte b = 0; b < x.g(this.h).size(); b++) {
           s s1 = x.g(this.h).get(b);
-          int i = point.x - ((Integer)this.a.get(b)).intValue();
-          int j = point.y - ((Integer)this.b.get(b)).intValue();
+          int i = point.x - ((Integer) this.a.get(b)).intValue();
+          int j = point.y - ((Integer) this.b.get(b)).intValue();
           s1.setLocation(i, j);
-        }  
-    } 
+        }
+    }
   }
-  
+
   public void mouseMoved(MouseEvent paramMouseEvent) {
-    if (!this.h.isEnabled())
-      return; 
+    if (!this.h.isEnabled()) return;
     s s1 = (this.f != null) ? this.f : a(paramMouseEvent);
-    if (s1.hasFocus() && paramMouseEvent.getX() > s1.getWidth() - x.h(this.h) && paramMouseEvent.getY() > s1.getHeight() - x.h(this.h)) {
+    if (s1.hasFocus()
+        && paramMouseEvent.getX() > s1.getWidth() - x.h(this.h)
+        && paramMouseEvent.getY() > s1.getHeight() - x.h(this.h)) {
       this.h.setCursor(Cursor.getPredefinedCursor(5));
     } else if (this.h.getCursor().getType() != 0) {
       this.h.setCursor(Cursor.getDefaultCursor());
-    } 
+    }
   }
-  
+
   private s a(MouseEvent paramMouseEvent) {
-    s s1 = (s)paramMouseEvent.getSource();
+    s s1 = (s) paramMouseEvent.getSource();
     s s2 = this.h.a(s1.getX() + paramMouseEvent.getX(), s1.getY() + paramMouseEvent.getY());
     return (s2 == null) ? s1 : s2;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/W.class
  * Java compiler version: 8 (52.0)

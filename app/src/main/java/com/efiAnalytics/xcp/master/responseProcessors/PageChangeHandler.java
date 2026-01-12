@@ -9,12 +9,11 @@ public class PageChangeHandler {
   public void a(F paramF) {
     R r = T.a().c(paramF.u());
     if (r.C() instanceof IOHashMap) {
-      IOHashMap IOHashMap = (IOHashMap)r.C();
+      IOHashMap IOHashMap = (IOHashMap) r.C();
       IOHashMap.p(paramF.u());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/xcp/master/responseProcessors/f.class
  * Java compiler version: 8 (52.0)

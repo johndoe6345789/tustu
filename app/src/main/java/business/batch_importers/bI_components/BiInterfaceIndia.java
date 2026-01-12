@@ -22,7 +22,7 @@ import javax.crypto.NoSuchPaddingException;
 
 public class BiInterfaceIndia {
   static PublicKey a = null;
-  
+
   public static PublicKey a(InputStream paramInputStream) {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(paramInputStream));
     try {
@@ -39,21 +39,21 @@ public class BiInterfaceIndia {
     } finally {
       try {
         bufferedReader.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
   }
-  
+
   private static PublicKey a() {
-    if (a == null)
-      a = a(h.a().b()); 
+    if (a == null) a = a(h.a().b());
     return a;
   }
-  
+
   public static byte[] a(byte[] paramArrayOfbyte) {
     PublicKey publicKey = a();
     return a(paramArrayOfbyte, publicKey);
   }
-  
+
   public static byte[] a(byte[] paramArrayOfbyte, Key paramKey) {
     String str;
     try {
@@ -61,31 +61,32 @@ public class BiInterfaceIndia {
       cipher.init(1, paramKey);
       return cipher.doFinal(paramArrayOfbyte);
     } catch (IllegalBlockSizeException illegalBlockSizeException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, illegalBlockSizeException);
+      Logger.getLogger(i.class.getName())
+          .log(Level.SEVERE, (String) null, illegalBlockSizeException);
       str = illegalBlockSizeException.getMessage();
-      if (paramArrayOfbyte != null)
-        D.c(c.d(paramArrayOfbyte)); 
+      if (paramArrayOfbyte != null) D.c(c.d(paramArrayOfbyte));
     } catch (BadPaddingException badPaddingException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, badPaddingException);
+      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String) null, badPaddingException);
       str = badPaddingException.getMessage();
     } catch (InvalidKeyException invalidKeyException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, invalidKeyException);
+      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String) null, invalidKeyException);
       str = invalidKeyException.getMessage();
     } catch (NoSuchAlgorithmException noSuchAlgorithmException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, noSuchAlgorithmException);
+      Logger.getLogger(i.class.getName())
+          .log(Level.SEVERE, (String) null, noSuchAlgorithmException);
       str = noSuchAlgorithmException.getMessage();
     } catch (NoSuchPaddingException noSuchPaddingException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, noSuchPaddingException);
+      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String) null, noSuchPaddingException);
       str = noSuchPaddingException.getMessage();
-    } 
+    }
     throw new IOException("Failed to encrypt data: " + str);
   }
-  
+
   public static byte[] b(byte[] paramArrayOfbyte) {
     PublicKey publicKey = a();
     return b(paramArrayOfbyte, publicKey);
   }
-  
+
   public static byte[] b(byte[] paramArrayOfbyte, Key paramKey) {
     String str;
     try {
@@ -102,11 +103,10 @@ public class BiInterfaceIndia {
       str = noSuchAlgorithmException.getMessage();
     } catch (NoSuchPaddingException noSuchPaddingException) {
       str = noSuchPaddingException.getMessage();
-    } 
+    }
     throw new IOException("Failed to encrypt data: " + str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bI/i.class
  * Java compiler version: 8 (52.0)

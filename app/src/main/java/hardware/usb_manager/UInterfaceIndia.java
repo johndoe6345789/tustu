@@ -2,12 +2,11 @@ package u;
 
 class UInterfaceIndia implements c {
   UInterfaceIndia(h paramh) {}
-  
+
   public void a() {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/u/i.class
  * Java compiler version: 8 (52.0)

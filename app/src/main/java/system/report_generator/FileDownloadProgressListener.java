@@ -7,18 +7,18 @@ import javax.swing.SwingUtilities;
 
 class FileDownloadProgressListener implements FileDownloadProgressListener {
   FileDownloadProgressListener(b paramb) {}
-  
+
   public void fileDownloadStarted(RemoteFileDescriptor paramRemoteFileDescriptor) {}
-  
+
   public void fileDownloadProgressUpdate(long paramLong1, long paramLong2) {}
-  
-  public void fileDownloadCompleted(RemoteFileDescriptor paramRemoteFileDescriptor, File paramFile) {
-    String[] arrayOfString = { paramFile.getAbsolutePath() };
+
+  public void fileDownloadCompleted(
+      RemoteFileDescriptor paramRemoteFileDescriptor, File paramFile) {
+    String[] arrayOfString = {paramFile.getAbsolutePath()};
     d d = new d(this, paramFile, arrayOfString);
     SwingUtilities.invokeLater(d);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/as/c.class
  * Java compiler version: 8 (52.0)

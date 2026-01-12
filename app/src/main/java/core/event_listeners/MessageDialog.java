@@ -18,11 +18,11 @@ import javax.swing.JPanel;
 
 public class eJ extends JDialog implements ActionListener {
   boolean a = false;
-  
+
   JButton b;
-  
+
   JButton c;
-  
+
   public eJ(Frame paramFrame, String paramString, boolean paramBoolean) {
     super(paramFrame, "Message", true);
     setLayout(new BorderLayout());
@@ -32,10 +32,9 @@ public class eJ extends JDialog implements ActionListener {
     StringTokenizer stringTokenizer = new StringTokenizer(paramString, "\n");
     while (stringTokenizer.hasMoreElements()) {
       JLabel jLabel = new JLabel(stringTokenizer.nextToken(), 0);
-      if (jLabel.getText().startsWith("!"))
-        jLabel.setBackground(Color.red); 
+      if (jLabel.getText().startsWith("!")) jLabel.setBackground(Color.red);
       jPanel.add(jLabel);
-    } 
+    }
     add(new JLabel(""), "West");
     add(new JLabel(""), "East");
     add(new JLabel(""), "North");
@@ -46,42 +45,44 @@ public class eJ extends JDialog implements ActionListener {
     Point point = paramFrame.getLocation();
     if (point.getX() <= 0.0D || point.getY() <= 0.0D) {
       dimension1 = Toolkit.getDefaultToolkit().getScreenSize();
-      setLocation((int)(point.getX() + (dimension1.getWidth() - dimension2.getWidth()) / 2.0D), (int)(point.getY() + (dimension1.getHeight() - dimension2.getHeight()) / 2.0D));
+      setLocation(
+          (int) (point.getX() + (dimension1.getWidth() - dimension2.getWidth()) / 2.0D),
+          (int) (point.getY() + (dimension1.getHeight() - dimension2.getHeight()) / 2.0D));
     } else {
-      setLocation((int)(point.getX() + (dimension1.getWidth() - dimension2.getWidth()) / 2.0D), (int)(point.getY() + (dimension1.getHeight() - dimension2.getHeight()) / 2.0D));
-    } 
+      setLocation(
+          (int) (point.getX() + (dimension1.getWidth() - dimension2.getWidth()) / 2.0D),
+          (int) (point.getY() + (dimension1.getHeight() - dimension2.getHeight()) / 2.0D));
+    }
     setVisible(true);
   }
-  
+
   protected void a(boolean paramBoolean) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout());
     a(jPanel);
-    if (paramBoolean == true)
-      b(jPanel); 
+    if (paramBoolean == true) b(jPanel);
     add("South", jPanel);
   }
-  
+
   protected void a(JPanel paramJPanel) {
     paramJPanel.add(this.b = new JButton("Yes"));
     this.b.addActionListener(this);
   }
-  
+
   protected void b(JPanel paramJPanel) {
     paramJPanel.add(this.c = new JButton("No"));
     this.c.addActionListener(this);
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (paramActionEvent.getSource() == this.b) {
       this.a = true;
       setVisible(false);
     } else if (paramActionEvent.getSource() == this.c) {
       setVisible(false);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eJ.class
  * Java compiler version: 8 (52.0)

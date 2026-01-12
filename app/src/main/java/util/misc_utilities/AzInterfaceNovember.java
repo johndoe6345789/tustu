@@ -18,7 +18,7 @@ public class AzInterfaceNovember extends IOHashMapInVPackage implements WInterfa
   public s[] ExceptionInVPackage() {
     return ExceptionInVPackage(ThreadedFile.ExceptionInVPackage);
   }
-  
+
   public s[] ExceptionInVPackage(String paramString) {
     ArrayList<s> arrayList = new ArrayList();
     Document document = c(paramString);
@@ -33,20 +33,20 @@ public class AzInterfaceNovember extends IOHashMapInVPackage implements WInterfa
           } catch (Exception exception) {
             D.b("Failed to load Option Group:" + node.toString());
             exception.printStackTrace();
-          }  
-      } 
+          }
+      }
       s[] arrayOfS = new s[arrayList.size()];
       byte b2 = 0;
       Iterator<s> iterator = arrayList.iterator();
-      while (iterator.hasNext())
-        arrayOfS[b2++] = iterator.next(); 
+      while (iterator.hasNext()) arrayOfS[b2++] = iterator.next();
       return arrayOfS;
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Failed to load Gauge Cluster " + exception.getMessage(), exception);
-    } 
+      throw new ExceptionInVPackage(
+          "Failed to load Gauge Cluster " + exception.getMessage(), exception);
+    }
   }
-  
+
   private s b(Node paramNode) {
     s s = new s();
     NamedNodeMap namedNodeMap = paramNode.getAttributes();
@@ -65,20 +65,21 @@ public class AzInterfaceNovember extends IOHashMapInVPackage implements WInterfa
         node2 = namedNodeMap1.getNamedItem("displayName");
         r.ExceptionInVPackage(node2.getTextContent());
         node2 = namedNodeMap1.getNamedItem("infoLink");
-        if (node2 != null)
-          r.b(node2.getTextContent()); 
+        if (node2 != null) r.b(node2.getTextContent());
         node2 = namedNodeMap1.getNamedItem("default");
         if (node2 != null) {
-          boolean bool = (node2.getTextContent() != null && node2.getTextContent().equals("true")) ? true : false;
+          boolean bool =
+              (node2.getTextContent() != null && node2.getTextContent().equals("true"))
+                  ? true
+                  : false;
           r.ExceptionInVPackage(bool);
-        } 
+        }
         s.ExceptionInVPackage(r);
-      } 
-    } 
+      }
+    }
     return s;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aZ/n.class
  * Java compiler version: 8 (52.0)

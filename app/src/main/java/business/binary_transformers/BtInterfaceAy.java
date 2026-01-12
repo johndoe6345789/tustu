@@ -2,12 +2,11 @@ package business.binary_transformers;
 
 class BtInterfaceAy implements Runnable {
   BtInterfaceAy(aV paramaV) {}
-  
+
   public void run() {
     this.a.f();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/aY.class
  * Java compiler version: 8 (52.0)

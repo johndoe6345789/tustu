@@ -31,7 +31,8 @@ public class JDialogExtensionInAzPackage extends JDialog {
     jPanel1.add("Center", jPanel2);
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(0, 1, 4, 4));
-    jPanel3.add(new JLabel(paramab.a("Verifying and activating registration on this computer."), 0));
+    jPanel3.add(
+        new JLabel(paramab.a("Verifying and activating registration on this computer."), 0));
     jPanel3.add(new JLabel(paramab.a("Please Wait") + "....", 0));
     jPanel3.add(new JLabel(" ", 0));
     jPanel1.add("South", jPanel3);
@@ -39,7 +40,6 @@ public class JDialogExtensionInAzPackage extends JDialog {
     pack();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/az/a.class
  * Java compiler version: 8 (52.0)

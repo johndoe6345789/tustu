@@ -6,13 +6,12 @@ import javax.swing.JCheckBox;
 
 class ActionListenerImplActionperformed implements ActionListener {
   ActionListenerImplActionperformed(a parama) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBox jCheckBox = (JCheckBox)paramActionEvent.getSource();
+    JCheckBox jCheckBox = (JCheckBox) paramActionEvent.getSource();
     this.a.a(jCheckBox.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aO/e.class
  * Java compiler version: 8 (52.0)

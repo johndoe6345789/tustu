@@ -14,24 +14,23 @@ public class BwInterfaceAlpha {
       c(paramWindow);
     } else {
       bV.d("Unknown Calculator: " + paramString, paramWindow);
-    } 
+    }
   }
-  
+
   private static void a(Window paramWindow) {
     new Calculator(paramWindow);
   }
-  
+
   private static void b(Window paramWindow) {
     b b = new b();
     bV.a(b, paramWindow, "Two Point Calculator", null);
   }
-  
+
   private static void c(Window paramWindow) {
     f f = new f(paramWindow);
     bV.a(f, paramWindow, "Unit Conversion Calculator", null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bw/a.class
  * Java compiler version: 8 (52.0)

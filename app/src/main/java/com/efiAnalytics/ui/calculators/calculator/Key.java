@@ -23,25 +23,24 @@ enum Key {
   r("%", Calculator::e),
   s(".", Calculator::d),
   t("C", Calculator::b);
-  
+
   private String u;
-  
+
   private BiConsumer v;
-  
+
   Key(String paramString1, BiConsumer paramBiConsumer) {
     this.u = paramString1;
     this.v = paramBiConsumer;
   }
-  
+
   public String toString() {
     return this.u;
   }
-  
+
   public BiConsumer a() {
     return this.v;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/calculators/calculator/Key.class
  * Java compiler version: 8 (52.0)

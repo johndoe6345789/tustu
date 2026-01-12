@@ -7,18 +7,17 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceFy implements ActionListener {
   ApInterfaceFy(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     PropertiesExtension.A().b(jCheckBoxMenuItem.getState());
     if (jCheckBoxMenuItem.getState()) {
       f.PropertiesExtension().J();
     } else {
       f.PropertiesExtension().K();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fY.class
  * Java compiler version: 8 (52.0)

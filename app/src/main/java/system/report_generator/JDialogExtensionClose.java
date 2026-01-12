@@ -1,11 +1,11 @@
 package as;
 
+import HInterfaceHotel.HInterfaceHotel;
+import HInterfaceHotel.i;
 import bH.ac;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.bc;
 import com.efiAnalytics.ui.eJ;
-import HInterfaceHotel.HInterfaceHotel;
-import HInterfaceHotel.i;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -23,13 +23,13 @@ import javax.swing.JTextField;
 
 public class JDialogExtensionClose extends JDialog implements bc {
   JTextField a = new JTextField("", 30);
-  
+
   JButton b = new JButton("...");
-  
+
   public JDialogExtensionClose(Window paramWindow) {
     this(paramWindow, true);
   }
-  
+
   public JDialogExtensionClose(Window paramWindow, boolean paramBoolean) {
     super(paramWindow);
     setTitle(a("Remote File Open Preferences"));
@@ -42,7 +42,7 @@ public class JDialogExtensionClose extends JDialog implements bc {
     jPanel.add(jButton);
     add("South", jPanel);
   }
-  
+
   private JPanel a() {
     JPanel jPanel1 = new JPanel();
     jPanel1.setBorder(BorderFactory.createTitledBorder(a("File Download Preferences")));
@@ -74,7 +74,7 @@ public class JDialogExtensionClose extends JDialog implements bc {
     jPanel1.add(jPanel2);
     return jPanel1;
   }
-  
+
   private JPanel a(String paramString, JComponent paramJComponent) {
     int i = eJ.a(100);
     JPanel jPanel1 = new JPanel();
@@ -87,7 +87,7 @@ public class JDialogExtensionClose extends JDialog implements bc {
     jPanel1.add("East", jPanel2);
     return jPanel1;
   }
-  
+
   private boolean b() {
     int i = i.b(i.at, i.au);
     if (i == i.av) {
@@ -97,29 +97,27 @@ public class JDialogExtensionClose extends JDialog implements bc {
         if (!file.exists() || !file.isDirectory()) {
           bV.d(file.getAbsolutePath() + "\n" + a("is not a valid Directory."), this.a);
           return false;
-        } 
+        }
         if (!HInterfaceHotel.a(str)) {
           bV.d(a("Do not have write access to directory") + "\n" + file.getAbsolutePath(), this.a);
           return false;
-        } 
+        }
         return true;
-      } 
+      }
       bV.d(a("A valid Directory is required if downloading to a specific directory."), this.a);
       return false;
-    } 
+    }
     return true;
   }
-  
+
   private String a(String paramString) {
     return ac.a().a(paramString);
   }
-  
+
   public void close() {
-    if (b())
-      dispose(); 
+    if (b()) dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/as/j.class
  * Java compiler version: 8 (52.0)

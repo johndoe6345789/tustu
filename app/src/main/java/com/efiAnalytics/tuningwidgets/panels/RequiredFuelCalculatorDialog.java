@@ -1,13 +1,13 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.R;
 import G.Manager;
-import V.ExceptionPrintstacktrace;
+import G.R;
 import V.ExceptionExtensionGetmessage;
+import V.ExceptionPrintstacktrace;
 import bH.X;
 import bt.BtInterfaceBz;
-import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.NumericTextField;
+import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.et;
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -27,35 +27,37 @@ import s.ExceptionPrintstacktrace;
 
 public class RequiredFuelCalculatorDialog extends JDialog {
   DisplacementUnitField a = new DisplacementUnitField(this);
-  
+
   NumericTextField b = new NumericTextField();
-  
+
   InjectorFlowUnitField c = new InjectorFlowUnitField(this);
-  
+
   NumericTextField d = new NumericTextField();
-  
+
   JRadioButton e = null;
-  
+
   JRadioButton f = null;
-  
+
   JRadioButton ExceptionPrintstacktrace = null;
-  
+
   private BtInterfaceBz ExceptionExtensionGetmessage = null;
-  
+
   private et k = null;
-  
+
   R h = null;
-  
+
   boolean i = false;
-  
-  public RequiredFuelCalculatorDialog(Window paramWindow, R paramR, et paramet, BtInterfaceBz parambZ) {
+
+  public RequiredFuelCalculatorDialog(
+      Window paramWindow, R paramR, et paramet, BtInterfaceBz parambZ) {
     super(paramWindow, ExceptionPrintstacktrace.b("Required Fuel Calculator"));
     this.k = paramet;
     this.h = paramR;
     JPanel jPanel1 = new JPanel();
     setLayout(new BorderLayout());
     add("Center", jPanel1);
-    jPanel1.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Required Fuel Calculator")));
+    jPanel1.setBorder(
+        BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Required Fuel Calculator")));
     jPanel1.setLayout(new BorderLayout(10, 10));
     a(parambZ);
     JPanel jPanel2 = new JPanel();
@@ -69,23 +71,23 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       d();
     } else if (!this.i) {
       e();
-    } 
+    }
     boolean bool2 = b("injectorUnits", "lb/hr").equals("lb/hr");
     if (bool2) {
       ExceptionPrintstacktrace();
     } else if (!this.i) {
       f();
-    } 
+    }
     pack();
     setResizable(false);
     setAlwaysOnTop(true);
   }
-  
+
   private JPanel b() {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(4, 2, 5, 5));
     jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Engine Displacement")));
-    jPanel.add((Component)this.a);
+    jPanel.add((Component) this.a);
     String str = "enginesize";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
@@ -95,18 +97,18 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } else {
       this.a.a = this.f.isSelected();
       this.a.setText(b("displacement", "350"));
-    } 
+    }
     jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Number of Cylinders")));
-    jPanel.add((Component)this.b);
+    jPanel.add((Component) this.b);
     str = "nCylinders";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
       this.b.setText(Manager.e(this.h.p()));
     } else {
       this.b.setText(b("nCylinders", "8"));
-    } 
+    }
     jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Injector Flow")));
-    jPanel.add((Component)this.c);
+    jPanel.add((Component) this.c);
     str = "staged_pri_size";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
@@ -116,19 +118,19 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } else {
       this.c.a = this.ExceptionPrintstacktrace.isSelected();
       this.c.setText(b("injectorFlow", "30"));
-    } 
+    }
     jPanel.add(new JLabel(ExceptionPrintstacktrace.b("Air-Fuel Ratio")));
-    jPanel.add((Component)this.d);
+    jPanel.add((Component) this.d);
     str = "stoich";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
       this.d.setText(Manager.e(this.h.p()));
     } else {
       this.d.setText(b("afr", "14.7"));
-    } 
+    }
     return jPanel;
   }
-  
+
   private JPanel c() {
     JPanel jPanel = new JPanel();
     jPanel.setBorder(BorderFactory.createTitledBorder(ExceptionPrintstacktrace.b("Units")));
@@ -159,27 +161,27 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     jPanel.add(this.ExceptionPrintstacktrace);
     return jPanel;
   }
-  
+
   private void d() {
     a("displacementUnits", "CID");
     this.a.b();
   }
-  
+
   private void e() {
     a("displacementUnits", "CC");
     this.a.a();
   }
-  
+
   private void f() {
     this.c.a();
     a("injectorUnits", "cc/min");
   }
-  
+
   private void ExceptionPrintstacktrace() {
     a("injectorUnits", "lb/hr");
     this.c.b();
   }
-  
+
   private JPanel h() {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
@@ -193,10 +195,10 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     } else {
       jPanel.add(jButton2);
       jPanel.add(jButton1);
-    } 
+    }
     return jPanel;
   }
-  
+
   public boolean a() {
     a("displacement", this.a.getText());
     a("nCylinders", this.b.getText());
@@ -214,23 +216,24 @@ public class RequiredFuelCalculatorDialog extends JDialog {
     if (d4 <= 0.0D) {
       bV.d(ExceptionPrintstacktrace.b("Displacement must be a positive number."), this);
       return false;
-    } 
+    }
     d5 = Double.parseDouble(this.c.getText());
     d5 /= d3;
     if (d5 <= 0.0D) {
       bV.d(ExceptionPrintstacktrace.b("Injector Flow must be a positive number."), this);
       return false;
-    } 
+    }
     d6 = Double.parseDouble(this.d.getText());
     if (d6 <= 0.0D) {
       bV.d(ExceptionPrintstacktrace.b("AFR must be a positive number."), this);
       return false;
-    } 
+    }
     i = Integer.parseInt(this.b.getText());
     if (i <= 0) {
-      bV.d(ExceptionPrintstacktrace.b("Number of Cylinders must be a positive whole number."), this);
+      bV.d(
+          ExceptionPrintstacktrace.b("Number of Cylinders must be a positive whole number."), this);
       return false;
-    } 
+    }
     double d7 = 3.6E7D;
     double d8 = 4.27793E-5D;
     double d9 = d7 * d4 * d8;
@@ -242,67 +245,72 @@ public class RequiredFuelCalculatorDialog extends JDialog {
       try {
         Manager.a(this.h.h(), d4 * 16.38706D);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
-      } 
-    } 
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionExtensionGetmessage);
+      }
+    }
     str = "nCylinders";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
       try {
         Manager.a(this.h.h(), i);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
-      } 
-    } 
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionExtensionGetmessage);
+      }
+    }
     str = "staged_pri_size";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
       try {
         Manager.a(this.h.h(), d5 * 10.5D);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
-      } 
-    } 
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionExtensionGetmessage);
+      }
+    }
     str = "stoich";
     if (this.h.c(str) != null) {
       Manager Manager = this.h.c(str);
       try {
         Manager.a(this.h.h(), d6);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        Logger.getLogger(an.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtensionGetmessage);
-      } 
-    } 
+        Logger.getLogger(an.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionExtensionGetmessage);
+      }
+    }
     this.ExceptionExtensionGetmessage.b(X.b(d1, 1));
     dispose();
     return true;
   }
-  
+
   private void a(String paramString1, String paramString2) {
-    if (this.k == null)
-      return; 
+    if (this.k == null) return;
     this.k.a(paramString1, paramString2);
   }
-  
+
   private String b(String paramString1, String paramString2) {
-    if (this.k == null)
-      return paramString2; 
+    if (this.k == null) return paramString2;
     String str = this.k.a(paramString1);
     return (str == null || str.equals("")) ? paramString2 : str;
   }
-  
+
   public void a(BtInterfaceBz parambZ) {
     this.ExceptionExtensionGetmessage = parambZ;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/an.class
  * Java compiler version: 8 (52.0)

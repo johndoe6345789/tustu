@@ -7,18 +7,17 @@ import javax.swing.JCheckBoxMenuItem;
 
 class el implements ItemListener {
   hx a = null;
-  
+
   public void el(cd paramcd, hx paramhx) {
     this.a = paramhx;
   }
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramItemEvent.getSource();
     IOProperties.c("playbackSpeed", jCheckBoxMenuItem.getName());
     this.a.a(IOProperties.a("playbackSpeed", 1.0D), false);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/el.class
  * Java compiler version: 8 (52.0)

@@ -6,7 +6,6 @@ public class VInterfaceCharlie extends g {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/V/c.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

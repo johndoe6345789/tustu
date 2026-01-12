@@ -13,15 +13,15 @@ import javax.swing.SwingUtilities;
 
 class ThreadedInAoPackage implements Y, aQ {
   long ExceptionInVPackage = 0L;
-  
+
   eB b = null;
-  
+
   boolean c = true;
-  
+
   final aQ d = this;
-  
+
   ThreadedInAoPackage(ExceptionInVPackage parama) {}
-  
+
   public void ExceptionInVPackage(ArrayList paramArrayList, long paramLong) {
     try {
       this.ExceptionInVPackage = paramLong;
@@ -30,37 +30,39 @@ class ThreadedInAoPackage implements Y, aQ {
         h.run();
       } else {
         SwingUtilities.invokeAndWait(h);
-      } 
+      }
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(ExceptionInVPackage.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+      Logger.getLogger(ExceptionInVPackage.class.getName())
+          .log(Level.SEVERE, (String) null, interruptedException);
     } catch (InvocationTargetException invocationTargetException) {
-      Logger.getLogger(ExceptionInVPackage.class.getName()).log(Level.SEVERE, (String)null, invocationTargetException);
-    } 
+      Logger.getLogger(ExceptionInVPackage.class.getName())
+          .log(Level.SEVERE, (String) null, invocationTargetException);
+    }
   }
-  
+
   public boolean ExceptionInVPackage(long paramLong) {
     double d = paramLong / this.ExceptionInVPackage;
     this.b.ExceptionInVPackage(d);
     return this.c;
   }
-  
+
   public void ExceptionInVPackage(ArrayList paramArrayList) {
     this.e.k.b(paramArrayList);
     this.b.setVisible(false);
   }
-  
+
   public void ExceptionInVPackage(ExceptionInVPackage parama) {
     try {
       this.b.setVisible(false);
-    } catch (Exception exception) {}
-    D.ExceptionInVPackage("Unable to load Ignition Log File.", (Exception)parama, this.e.k);
+    } catch (Exception exception) {
+    }
+    D.ExceptionInVPackage("Unable to load Ignition Log File.", (Exception) parama, this.e.k);
   }
-  
+
   public void ExceptionInVPackage() {
     this.c = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aO/g.class
  * Java compiler version: 8 (52.0)

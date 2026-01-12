@@ -13,9 +13,9 @@ import javax.swing.UIManager;
 
 class JComponentExtensionUsingImage extends JComponent {
   private Image b = null;
-  
+
   JComponentExtensionUsingImage(a parama) {}
-  
+
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (this.b != null) {
@@ -23,25 +23,25 @@ class JComponentExtensionUsingImage extends JComponent {
     } else {
       paramGraphics.setColor(UIManager.getColor("Label.foreground"));
       paramGraphics.drawString("Tune View Preview", 10, 20);
-    } 
+    }
   }
-  
+
   public void a(File paramFile) {
     try {
       BufferedImage bufferedImage = ImageIO.read(paramFile);
       this.b = bufferedImage;
     } catch (IOException iOException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load preview image", iOException);
-    } 
+      Logger.getLogger(a.class.getName())
+          .log(Level.SEVERE, "Failed to load preview image", iOException);
+    }
     repaint();
   }
-  
+
   private void a() {
     this.b = null;
     repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/k.class
  * Java compiler version: 8 (52.0)

@@ -11,7 +11,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 public class O {
-  public static bq a(bq parambq, String paramString, List paramList1, List paramList2, Component paramComponent) {
+  public static bq a(
+      bq parambq, String paramString, List paramList1, List paramList2, Component paramComponent) {
     JMenuItem jMenuItem = new JMenuItem("Save " + paramString + " Fields As");
     jMenuItem.addActionListener(new P(paramList2, paramString, paramComponent));
     parambq.add(jMenuItem);
@@ -22,7 +23,7 @@ public class O {
       jMenuItem = jMenu.add(str);
       jMenuItem.addActionListener(q);
       jMenuItem.setName(str);
-    } 
+    }
     parambq.add(jMenu);
     parambq.addSeparator();
     R r = new R(paramList1);
@@ -30,48 +31,43 @@ public class O {
       jMenuItem = parambq.add(str);
       jMenuItem.addActionListener(r);
       jMenuItem.setName(str);
-    } 
+    }
     return parambq;
   }
-  
+
   public static void a(List<JComboBox> paramList, String paramString) {
     List list = a(paramString);
     for (byte b = 0; b < paramList.size(); b++) {
       if (list.size() > b) {
-        ((JComboBox)paramList.get(b)).setSelectedItem(list.get(b));
+        ((JComboBox) paramList.get(b)).setSelectedItem(list.get(b));
       } else {
-        ((JComboBox)paramList.get(b)).setSelectedItem(" ");
-      } 
-    } 
+        ((JComboBox) paramList.get(b)).setSelectedItem(" ");
+      }
+    }
   }
-  
+
   public static void a(String paramString, List paramList) {
     String str = "";
-    for (String str1 : paramList)
-      str = str + str1 + ","; 
-    if (str.endsWith(","))
-      str = str.substring(0, str.length() - 1); 
+    for (String str1 : paramList) str = str + str1 + ",";
+    if (str.endsWith(",")) str = str.substring(0, str.length() - 1);
     IOProperties.c("GRAPH_FIELD_GROUP_NAME_" + paramString, str);
   }
-  
+
   public static List a() {
     ArrayList<String> arrayList = new ArrayList();
     String[] arrayOfString = IOProperties.e("GRAPH_FIELD_GROUP_NAME_");
-    for (String str : arrayOfString)
-      arrayList.add(X.b(str, "GRAPH_FIELD_GROUP_NAME_", "")); 
+    for (String str : arrayOfString) arrayList.add(X.b(str, "GRAPH_FIELD_GROUP_NAME_", ""));
     return arrayList;
   }
-  
+
   public static List a(String paramString) {
     String str = IOProperties.f("GRAPH_FIELD_GROUP_NAME_" + paramString, "");
     ArrayList<String> arrayList = new ArrayList();
     String[] arrayOfString = str.split(",");
-    for (String str1 : arrayOfString)
-      arrayList.add(str1); 
+    for (String str1 : arrayOfString) arrayList.add(str1);
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/O.class
  * Java compiler version: 8 (52.0)

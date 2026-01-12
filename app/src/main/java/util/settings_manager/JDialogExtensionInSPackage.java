@@ -15,17 +15,20 @@ import r.RInterfaceIndia;
 
 public class JDialogExtensionInSPackage extends JDialog {
   JLabel a = new JLabel("", 0);
-  
+
   JLabel b = new JLabel("", 0);
-  
+
   JTextField c = new JTextField();
-  
+
   f d = null;
-  
+
   String e = null;
-  
+
   public JDialogExtensionInSPackage(f paramf) {
-    super(bV.b(paramf.getComponent()), g.b("Update Translation"), Dialog.ModalityType.APPLICATION_MODAL);
+    super(
+        bV.b(paramf.getComponent()),
+        g.b("Update Translation"),
+        Dialog.ModalityType.APPLICATION_MODAL);
     this.d = paramf;
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
@@ -59,31 +62,29 @@ public class JDialogExtensionInSPackage extends JDialog {
     jPanel3.add(jButton2);
     jPanel1.add("South", jPanel3);
   }
-  
+
   private void a() {
-    if (!this.e.equals(this.c.getText()))
-      this.d.a(this.c.getText()); 
+    if (!this.e.equals(this.c.getText())) this.d.a(this.c.getText());
     dispose();
   }
-  
+
   private void b() {
     dispose();
   }
-  
+
   private String a(String paramString) {
     return g.b(paramString);
   }
-  
+
   public static void a(f paramf) {
     if (RInterfaceIndia.a().a("-=[pfds;'43-0pd")) {
       b b1 = new b(paramf);
       b1.pack();
       bV.a(paramf.getComponent(), b1);
       b1.setVisible(true);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/s/b.class
  * Java compiler version: 8 (52.0)

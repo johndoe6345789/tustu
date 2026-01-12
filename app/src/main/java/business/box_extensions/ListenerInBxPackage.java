@@ -6,14 +6,12 @@ import java.awt.event.ActionListener;
 
 class ListenerInBxPackage implements ActionListener {
   ListenerInBxPackage(c paramc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = c.a(this.a, "Are you sure you want to delete the selected Data Filter?");
-    if (bV.a(str, this.a.b, true))
-      this.a.c(); 
+    if (bV.a(str, this.a.b, true)) this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/e.class
  * Java compiler version: 8 (52.0)

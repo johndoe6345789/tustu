@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceBq implements ActionListener {
   ApInterfaceBq(bM parambM) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bQ.class
  * Java compiler version: 8 (52.0)

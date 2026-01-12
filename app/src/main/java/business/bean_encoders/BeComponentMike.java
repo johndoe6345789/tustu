@@ -6,13 +6,13 @@ import java.awt.event.ActionListener;
 
 class BeComponentMike implements ActionListener {
   BeComponentMike(j paramj) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    Exceptionprintstacktrace Exceptionprintstacktrace = this.a.e.n(paramActionEvent.getActionCommand());
+    Exceptionprintstacktrace Exceptionprintstacktrace =
+        this.a.e.n(paramActionEvent.getActionCommand());
     j.a(this.a, Exceptionprintstacktrace);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/m.class
  * Java compiler version: 8 (52.0)

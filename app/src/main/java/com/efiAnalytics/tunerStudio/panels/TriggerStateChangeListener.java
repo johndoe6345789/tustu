@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 
 class TriggerStateChangeListener implements ActionListener {
   TriggerStateChangeListener(o paramo) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension =
+        (JCheckBoxMenuItemExtension) paramActionEvent.getSource();
     this.a.k.a(JCheckBoxMenuItemExtension.getState());
     this.a.k.i();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/r.class
  * Java compiler version: 8 (52.0)

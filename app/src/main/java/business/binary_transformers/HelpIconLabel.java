@@ -17,9 +17,9 @@ import s.SComponentGolf;
 
 public class HelpIconLabel extends JLabel {
   ImageIcon a = null;
-  
+
   String b = null;
-  
+
   public HelpIconLabel(String paramString) {
     this.b = paramString;
     try {
@@ -29,18 +29,16 @@ public class HelpIconLabel extends JLabel {
       addMouseListener(new k(this));
     } catch (Exception exception) {
       D.a("Could no load icon image resources/comment3.png");
-    } 
+    }
     setIcon(this.a);
     b();
     setOpaque(false);
   }
-  
+
   public void a() {
-    if (this.b == null)
-      this.b = ""; 
+    if (this.b == null) this.b = "";
     String str = this.b;
-    if (str == null || str.equals(""))
-      return; 
+    if (str == null || str.equals("")) return;
     str = SComponentGolf.b(str);
     Window window = bV.b(this);
     bi bi = new bi(window, str, true);
@@ -49,12 +47,13 @@ public class HelpIconLabel extends JLabel {
     point.y += getHeight() / 2;
     point.x -= eJ.a(10);
     Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-    if (point.x + bi.getWidth() > dimension.width);
+    if (point.x + bi.getWidth() > dimension.width)
+      ;
     bi.setLocation(point);
-    setToolTipText((String)null);
+    setToolTipText((String) null);
     bi.setVisible(true);
   }
-  
+
   private void b() {
     if (this.b != null && this.b.length() > 0) {
       String str = this.b;
@@ -66,12 +65,11 @@ public class HelpIconLabel extends JLabel {
       stringBuilder.append("</html>");
       setToolTipText(stringBuilder.toString());
     } else {
-      setToolTipText((String)null);
-      setIcon((Icon)null);
-    } 
+      setToolTipText((String) null);
+      setIcon((Icon) null);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/j.class
  * Java compiler version: 8 (52.0)

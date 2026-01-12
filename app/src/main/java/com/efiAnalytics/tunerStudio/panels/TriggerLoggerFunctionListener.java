@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class TriggerLoggerFunctionListener implements ActionListener {
   TriggerLoggerFunctionListener(TriggerLoggerPanel paramTriggerLoggerPanel) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     TriggerLoggerPanel.f(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/Y.class
  * Java compiler version: 8 (52.0)

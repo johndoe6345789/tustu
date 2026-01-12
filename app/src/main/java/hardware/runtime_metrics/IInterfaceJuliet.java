@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public class IInterfaceJuliet {
   public static String a = "magneticCompass";
-  
+
   public static void a() {
     ManagerUsingArrayList.a().d(a);
   }
-  
+
   public static void a(ArrayList<GInterfaceAh> paramArrayList) {
     GInterfaceAh GInterfaceAh = new GInterfaceAh();
     GInterfaceAh.v(a + "Gauge");
@@ -28,7 +28,6 @@ public class IInterfaceJuliet {
     paramArrayList.add(GInterfaceAh);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/j.class
  * Java compiler version: 8 (52.0)

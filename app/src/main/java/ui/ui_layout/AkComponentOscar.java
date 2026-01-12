@@ -32,12 +32,11 @@ public class AkComponentOscar extends b {
     c.a(l.b(l.v));
     a(c);
   }
-  
+
   public String i() {
     return X.j;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/o.class
  * Java compiler version: 8 (52.0)

@@ -4,12 +4,11 @@ import G.GInterfaceAb;
 
 class TInterfaceBravo implements GInterfaceAb {
   TInterfaceBravo(a parama) {}
-  
+
   public void a(String paramString, int paramInt1, int paramInt2, int[] paramArrayOfint) {
     c.a(a.a(this.a), new d(this.a, paramString, paramInt1, paramInt2, paramArrayOfint.length));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/T/b.class
  * Java compiler version: 8 (52.0)

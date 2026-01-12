@@ -9,23 +9,25 @@ import s.SComponentGolf;
 
 class ListenerFocuslost implements FocusListener {
   ListenerFocuslost(aO paramaO) {}
-  
+
   public void focusGained(FocusEvent paramFocusEvent) {}
-  
+
   public void focusLost(FocusEvent paramFocusEvent) {
-    JTextField jTextField = (JTextField)paramFocusEvent.getSource();
-    if (jTextField.getText().equals(""))
-      return; 
+    JTextField jTextField = (JTextField) paramFocusEvent.getSource();
+    if (jTextField.getText().equals("")) return;
     try {
       String str = jTextField.getText();
       this.ExceptionInVPackage.c().m(str);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      bV.d(SComponentGolf.b("Valid Expressions or Numeric Values only.") + "\n" + ExceptionInVPackage.getLocalizedMessage(), jTextField);
+      bV.d(
+          SComponentGolf.b("Valid Expressions or Numeric Values only.")
+              + "\n"
+              + ExceptionInVPackage.getLocalizedMessage(),
+          jTextField);
       jTextField.setText(this.ExceptionInVPackage.n);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aQ.class
  * Java compiler version: 8 (52.0)

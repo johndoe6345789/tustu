@@ -12,34 +12,34 @@ import javax.swing.JPanel;
 
 public class WebViewPanel extends JPanel {
   private Stage a;
-  
+
   private WebView b;
-  
+
   private JFXPanel c;
-  
+
   private JButton d;
-  
+
   private WebEngine e;
-  
+
   public WebViewPanel() {
     a();
   }
-  
+
   private void a() {
     this.c = new JFXPanel();
     b();
     setLayout(new BorderLayout());
-    add((Component)this.c, "Center");
+    add((Component) this.c, "Center");
     this.d = new JButton();
     this.d.addActionListener(new eE(this));
     this.d.setText("Reload");
     this.c.addComponentListener(new eG(this));
   }
-  
+
   private void b() {
     PlatformImpl.startup(new eI(this));
   }
-  
+
   private void c() {
     int i = getParent().getWidth();
     int j = getParent().getHeight();
@@ -47,7 +47,6 @@ public class WebViewPanel extends JPanel {
     this.b.setPrefSize(i, j);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/eD.class
  * Java compiler version: 8 (52.0)

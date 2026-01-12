@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceAv implements ActionListener {
   av(au paramau) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/av.class
  * Java compiler version: 8 (52.0)

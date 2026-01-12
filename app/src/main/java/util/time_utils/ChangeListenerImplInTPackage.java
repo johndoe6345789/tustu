@@ -6,16 +6,15 @@ import javax.swing.event.ChangeListener;
 
 class ChangeListenerImplInTPackage implements ChangeListener {
   ChangeListenerImplInTPackage(aF paramaF) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    int i = ((JSlider)paramChangeEvent.getSource()).getValue();
-    if (!aF.a(this.a) && this.a.a((JSlider)paramChangeEvent.getSource(), aF.o)) {
+    int i = ((JSlider) paramChangeEvent.getSource()).getValue();
+    if (!aF.a(this.a) && this.a.a((JSlider) paramChangeEvent.getSource(), aF.o)) {
       this.a.c().c(i);
       this.a.j.setText("" + i);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aI.class
  * Java compiler version: 8 (52.0)

@@ -31,22 +31,21 @@ import org.w3c.dom.Node;
 
 public class IOHashMapInVPackage {
   private HashMap ExceptionInVPackage = new HashMap<>();
-  
+
   public void ExceptionInVPackage(String paramString, Document paramDocument) {
     File file = new File(paramString);
     if (!file.exists()) {
-      if (!file.getParentFile().exists())
-        file.getParentFile().mkdirs(); 
+      if (!file.getParentFile().exists()) file.getParentFile().mkdirs();
       try {
         file.createNewFile();
       } catch (IOException iOException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, iOException);
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, iOException);
         throw new ExceptionInVPackage("Error writing to file. \n" + paramString);
-      } 
-    } 
+      }
+    }
     ExceptionInVPackage(file, paramDocument);
   }
-  
+
   public void ExceptionInVPackage(File paramFile, Document paramDocument) {
     FileOutputStream fileOutputStream = null;
     try {
@@ -65,11 +64,12 @@ public class IOHashMapInVPackage {
         try {
           fileOutputStream.close();
         } catch (Exception exception) {
-          Logger.getLogger(e.class.getName()).log(Level.WARNING, "Failed to close stream after saving Document", exception);
-        }  
-    } 
+          Logger.getLogger(e.class.getName())
+              .log(Level.WARNING, "Failed to close stream after saving Document", exception);
+        }
+    }
   }
-  
+
   public Document c(String paramString) {
     Document document = null;
     FileInputStream fileInputStream = null;
@@ -80,41 +80,50 @@ public class IOHashMapInVPackage {
       document = documentBuilder.parse(fileInputStream);
     } catch (Exception exception) {
       exception.printStackTrace();
-      throw new ExceptionInVPackage("Problem loading " + paramString + ", error message:\n" + exception.getMessage() + "\nCheck log file for more details.");
+      throw new ExceptionInVPackage(
+          "Problem loading "
+              + paramString
+              + ", error message:\n"
+              + exception.getMessage()
+              + "\nCheck log file for more details.");
     } finally {
       if (fileInputStream != null)
         try {
           fileInputStream.close();
         } catch (Exception exception) {
-          Logger.getLogger(e.class.getName()).log(Level.WARNING, "Failed to close stream after reading Document", exception);
-        }  
-    } 
+          Logger.getLogger(e.class.getName())
+              .log(Level.WARNING, "Failed to close stream after reading Document", exception);
+        }
+    }
     return document;
   }
-  
-  public Element ExceptionInVPackage(Document paramDocument, Element paramElement, Object paramObject) {
+
+  public Element ExceptionInVPackage(
+      Document paramDocument, Element paramElement, Object paramObject) {
     Class<?> clazz = paramObject.getClass();
     paramElement.setAttribute("type", ExceptionInVPackage.ExceptionInVPackage(paramObject));
     while (clazz.getPackage().getName().contains("efiAnalytics")) {
       Method[] arrayOfMethod = clazz.getDeclaredMethods();
-      AccessibleObject.setAccessible((AccessibleObject[])arrayOfMethod, true);
+      AccessibleObject.setAccessible((AccessibleObject[]) arrayOfMethod, true);
       for (byte b = 0; b < arrayOfMethod.length; b++) {
         Method method = arrayOfMethod[b];
         Class[] arrayOfClass = method.getParameterTypes();
-        if (Modifier.isPublic(method.getModifiers()) && arrayOfClass.length == 0 && (method.getName().startsWith("get") || method.getName().startsWith("is"))) {
+        if (Modifier.isPublic(method.getModifiers())
+            && arrayOfClass.length == 0
+            && (method.getName().startsWith("get") || method.getName().startsWith("is"))) {
           String str = null;
           if (method.getName().startsWith("is")) {
             str = method.getName().substring(2);
           } else {
             str = method.getName().substring(3);
-          } 
+          }
           try {
             Element element = paramDocument.createElement(str);
             synchronized (element) {
               String str1 = method.getReturnType().getName();
               if (str1.equals("java.awt.Color")) {
                 str1 = "Color";
-                Color color = (Color)method.invoke(paramObject, new Object[0]);
+                Color color = (Color) method.invoke(paramObject, new Object[0]);
                 if (color != null) {
                   element.setAttribute("red", "" + color.getRed());
                   element.setAttribute("green", "" + color.getGreen());
@@ -123,63 +132,68 @@ public class IOHashMapInVPackage {
                   element.setTextContent("" + color.getRGB());
                 } else {
                   element.setTextContent("Transparent");
-                } 
-              } else if (str1.equals("com.efiAnalytics.apps.ts.dashboard.renderers.GaugePainter") || str1.equals("GaugePainter")) {
+                }
+              } else if (str1.equals("com.efiAnalytics.apps.ts.dashboard.renderers.GaugePainter")
+                  || str1.equals("GaugePainter")) {
                 str1 = "GaugePainter";
-                element.setTextContent(com.efiAnalytics.apps.ts.dashboard.renderers.e.ExceptionInVPackage(method.invoke(paramObject, new Object[0])));
-              } else if (str1.equals("com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter") || str1.equals("IndicatorPainter")) {
+                element.setTextContent(
+                    com.efiAnalytics.apps.ts.dashboard.renderers.e.ExceptionInVPackage(
+                        method.invoke(paramObject, new Object[0])));
+              } else if (str1.equals(
+                      "com.efiAnalytics.apps.ts.dashboard.renderers.IndicatorPainter")
+                  || str1.equals("IndicatorPainter")) {
                 str1 = "IndicatorPainter";
-                element.setTextContent(com.efiAnalytics.apps.ts.dashboard.renderers.e.ExceptionInVPackage(method.invoke(paramObject, new Object[0])));
+                element.setTextContent(
+                    com.efiAnalytics.apps.ts.dashboard.renderers.e.ExceptionInVPackage(
+                        method.invoke(paramObject, new Object[0])));
               } else if (method.getReturnType().equals(GInterfaceDj.class)) {
                 str1 = ExceptionInVPackage.g;
                 Object object = method.invoke(paramObject, new Object[0]);
-                if (object == null)
-                  object = ""; 
+                if (object == null) object = "";
                 element.setTextContent(object.toString());
               } else if (method.getReturnType().equals(Properties.class)) {
                 str1 = "Properties";
-                String str2 = ExceptionInVPackage((Properties)method.invoke(paramObject, new Object[0]));
+                String str2 =
+                    ExceptionInVPackage((Properties) method.invoke(paramObject, new Object[0]));
                 element.setTextContent(str2);
               } else {
                 element.setTextContent(method.invoke(paramObject, new Object[0]) + "");
-              } 
-              if (str1.equals("java.lang.String"))
-                str1 = "String"; 
+              }
+              if (str1.equals("java.lang.String")) str1 = "String";
               element.setAttribute("type", str1);
-              if (element.getTextContent() != null)
-                paramElement.appendChild(element); 
-            } 
+              if (element.getTextContent() != null) paramElement.appendChild(element);
+            }
           } catch (Exception exception) {
             D.ExceptionInVPackage("Error writing Object to XML\n" + paramObject);
             exception.printStackTrace();
             throw new ExceptionInVPackage("Error writing Object to XML");
-          } 
-        } 
-      } 
+          }
+        }
+      }
       clazz = clazz.getSuperclass();
-    } 
+    }
     return paramElement;
   }
-  
+
   public String ExceptionInVPackage(Node paramNode, String paramString) {
     NamedNodeMap namedNodeMap = paramNode.getAttributes();
-    if (namedNodeMap == null)
-      return null; 
+    if (namedNodeMap == null) return null;
     for (byte b = 0; b < namedNodeMap.getLength(); b++) {
       Node node = namedNodeMap.item(b);
       if (node.getNodeName() != null && node.getNodeName().equals(paramString))
-        return node.getNodeValue(); 
-    } 
+        return node.getNodeValue();
+    }
     D.b("Attribute not found: " + paramString);
     return null;
   }
-  
+
   public Object ExceptionInVPackage(Node paramNode) {
     // Byte code:
     //   0: aload_0
     //   1: aload_1
     //   2: ldc 'type'
-    //   4: invokevirtual ExceptionInVPackage : (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;
+    //   4: invokevirtual ExceptionInVPackage :
+    // (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;
     //   7: astore_2
     //   8: aconst_null
     //   9: astore_3
@@ -217,7 +231,8 @@ public class IOHashMapInVPackage {
     //   86: aload_0
     //   87: aload #9
     //   89: ldc 'type'
-    //   91: invokevirtual ExceptionInVPackage : (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;
+    //   91: invokevirtual ExceptionInVPackage :
+    // (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;
     //   94: astore #11
     //   96: aload #11
     //   98: ifnull -> 856
@@ -233,7 +248,8 @@ public class IOHashMapInVPackage {
     //   123: aload_0
     //   124: aload #6
     //   126: aload #12
-    //   128: invokespecial ExceptionInVPackage : ([Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/reflect/Method;
+    //   128: invokespecial ExceptionInVPackage :
+    // ([Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/reflect/Method;
     //   131: astore_3
     //   132: aload_3
     //   133: ifnull -> 856
@@ -484,7 +500,8 @@ public class IOHashMapInVPackage {
     //   674: invokevirtual equals : (Ljava/lang/Object;)Z
     //   677: ifeq -> 710
     //   680: aload #13
-    //   682: invokestatic ExceptionInVPackage : (Ljava/lang/String;)Lcom/efiAnalytics/apps/ts/dashboard/renderers/GaugePainter;
+    //   682: invokestatic ExceptionInVPackage :
+    // (Ljava/lang/String;)Lcom/efiAnalytics/apps/ts/dashboard/renderers/GaugePainter;
     //   685: astore #14
     //   687: iconst_1
     //   688: anewarray java/lang/Object
@@ -508,7 +525,8 @@ public class IOHashMapInVPackage {
     //   724: invokevirtual equals : (Ljava/lang/Object;)Z
     //   727: ifeq -> 760
     //   730: aload #13
-    //   732: invokestatic b : (Ljava/lang/String;)Lcom/efiAnalytics/apps/ts/dashboard/renderers/IndicatorPainter;
+    //   732: invokestatic b :
+    // (Ljava/lang/String;)Lcom/efiAnalytics/apps/ts/dashboard/renderers/IndicatorPainter;
     //   735: astore #14
     //   737: iconst_1
     //   738: anewarray java/lang/Object
@@ -618,27 +636,28 @@ public class IOHashMapInVPackage {
     //   10	866	942	finally
     //   873	944	942	finally
   }
-  
+
   private void ExceptionInVPackage() {
     this.ExceptionInVPackage.clear();
   }
-  
+
   private void ExceptionInVPackage(Method[] paramArrayOfMethod) {
     Class<?> clazz = paramArrayOfMethod[0].getDeclaringClass();
-    while (paramArrayOfMethod != null && paramArrayOfMethod[0] != null && clazz.getPackage().getName().indexOf("efiAnalytics") != -1) {
+    while (paramArrayOfMethod != null
+        && paramArrayOfMethod[0] != null
+        && clazz.getPackage().getName().indexOf("efiAnalytics") != -1) {
       for (byte b = 0; b < paramArrayOfMethod.length; b++)
-        this.ExceptionInVPackage.put(paramArrayOfMethod[b].getName(), paramArrayOfMethod[b]); 
+        this.ExceptionInVPackage.put(paramArrayOfMethod[b].getName(), paramArrayOfMethod[b]);
       clazz = clazz.getSuperclass();
       paramArrayOfMethod = clazz.getMethods();
-    } 
+    }
   }
-  
+
   private Method ExceptionInVPackage(Method[] paramArrayOfMethod, String paramString) {
-    if (this.ExceptionInVPackage.isEmpty())
-      ExceptionInVPackage(paramArrayOfMethod); 
-    return (Method)this.ExceptionInVPackage.get(paramString);
+    if (this.ExceptionInVPackage.isEmpty()) ExceptionInVPackage(paramArrayOfMethod);
+    return (Method) this.ExceptionInVPackage.get(paramString);
   }
-  
+
   private String ExceptionInVPackage(Properties paramProperties) {
     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
     try {
@@ -646,32 +665,34 @@ public class IOHashMapInVPackage {
       return byteArrayOutputStream.toString("UTF-8");
     } catch (IOException iOException) {
       D.ExceptionInVPackage("Failed to Save ExceptionInVPackage properties to XML");
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, iOException);
       return "";
     } finally {
       try {
         byteArrayOutputStream.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
   }
-  
+
   private Properties ExceptionInVPackage(String paramString) {
-    ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(paramString.getBytes(StandardCharsets.UTF_8));
+    ByteArrayInputStream byteArrayInputStream =
+        new ByteArrayInputStream(paramString.getBytes(StandardCharsets.UTF_8));
     Properties properties = new Properties();
     try {
       properties.load(byteArrayInputStream);
     } catch (IOException iOException) {
       D.ExceptionInVPackage("Failed to load Properties from String: " + paramString);
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } finally {
       try {
         byteArrayInputStream.close();
-      } catch (Exception exception) {}
-    } 
+      } catch (Exception exception) {
+      }
+    }
     return properties;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/v/e.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class CalibrationActionListener implements ActionListener {
   CalibrationActionListener(CalibrationTablePanel paramJ) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/N.class
  * Java compiler version: 8 (52.0)

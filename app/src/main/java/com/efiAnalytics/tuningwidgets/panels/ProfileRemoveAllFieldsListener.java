@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class E implements ActionListener {
   E(A paramA) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.removeAll();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/E.class
  * Java compiler version: 8 (52.0)

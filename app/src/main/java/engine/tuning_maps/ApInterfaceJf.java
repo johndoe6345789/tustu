@@ -4,12 +4,11 @@ import B.i;
 
 class ApInterfaceJf implements Runnable {
   ApInterfaceJf(jC paramjC, i parami) {}
-  
+
   public void run() {
     f.a().a(this.a, true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/jF.class
  * Java compiler version: 8 (52.0)

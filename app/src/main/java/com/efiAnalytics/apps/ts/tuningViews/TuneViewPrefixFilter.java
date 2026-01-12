@@ -9,7 +9,6 @@ class TuneViewPrefixFilter implements FilenameFilter {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/I.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

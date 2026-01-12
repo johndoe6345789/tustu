@@ -4,10 +4,9 @@ import java.util.List;
 
 public interface ByInterfaceIndia {
   String a();
-  
+
   List b();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/by/i.class
  * Java compiler version: 8 (52.0)

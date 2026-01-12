@@ -9,7 +9,6 @@ class FilenameFilterImplInSPackage implements FilenameFilter {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/s/h.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

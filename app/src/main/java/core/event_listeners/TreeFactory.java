@@ -4,12 +4,11 @@ import c.CInterfaceEcho;
 
 class cn implements CInterfaceEcho {
   cn(cd paramcd) {}
-  
+
   public boolean a() {
     return (hx.a().r() != null && hx.a().r().j());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cn.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BrInterfaceTango implements ActionListener {
   BrInterfaceTango(P paramP) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/T.class
  * Java compiler version: 8 (52.0)

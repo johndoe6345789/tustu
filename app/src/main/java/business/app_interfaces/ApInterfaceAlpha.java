@@ -14,13 +14,12 @@ public class ApInterfaceAlpha implements IInterfaceFoxtrot {
         bq.a().b().c();
       } else {
         D.a("Log File not found: " + file.getAbsolutePath());
-      } 
+      }
       return true;
-    } 
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ap/a.class
  * Java compiler version: 8 (52.0)

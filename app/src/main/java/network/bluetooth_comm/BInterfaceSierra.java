@@ -15,18 +15,18 @@ import java.util.logging.Logger;
 
 public class BInterfaceSierra extends o implements AInterfaceRomeo {
   c k;
-  
+
   boolean l = true;
-  
+
   R m;
-  
+
   public BInterfaceSierra(R paramR) {
     this.m = paramR;
     this.k = new c(paramR);
     a(true);
     c(30000);
   }
-  
+
   public AInterfaceRomeo v() {
     this.l = true;
     this.k.b(z());
@@ -35,13 +35,12 @@ public class BInterfaceSierra extends o implements AInterfaceRomeo {
     try {
       this.c = InetAddress.getLocalHost().getHostAddress();
     } catch (UnknownHostException unknownHostException) {
-      Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String)null, unknownHostException);
+      Logger.getLogger(s.class.getName()).log(Level.SEVERE, (String) null, unknownHostException);
       throw new l("failed to get localhost ip address");
-    } 
+    }
     if (this.c == null || this.c.equals(""))
-      throw new l("IP Address or host name not set! Can not open UDP "); 
-    if (this.d <= 0)
-      throw new l("Invalid Port:" + this.d + " Can not open UDP "); 
+      throw new l("IP Address or host name not set! Can not open UDP ");
+    if (this.d <= 0) throw new l("Invalid Port:" + this.d + " Can not open UDP ");
     c();
     try {
       D.c("Opening UDP Server listener: " + y());
@@ -50,9 +49,10 @@ public class BInterfaceSierra extends o implements AInterfaceRomeo {
         try {
           s1.a(r1.c(), a(r1.c()));
         } catch (A.s s2) {
-          Logger.getLogger(m.class.getName()).log(Level.WARNING, "Failed to set Setting", (Throwable)s2);
-        } 
-      } 
+          Logger.getLogger(m.class.getName())
+              .log(Level.WARNING, "Failed to set Setting", (Throwable) s2);
+        }
+      }
       s1.a(true);
       DatagramSocket datagramSocket = s1.t();
       byte[] arrayOfByte = new byte[50];
@@ -66,10 +66,9 @@ public class BInterfaceSierra extends o implements AInterfaceRomeo {
           i = datagramPacket.getLength();
           D.c("bytesRecieved = " + i);
         } catch (Exception exception) {
-          if (this.l)
-            D.d("No Connection on UDP, try again."); 
+          if (this.l) D.d("No Connection on UDP, try again.");
           i = 0;
-        } 
+        }
       } while (this.l && i <= 0);
       if (datagramPacket.getLength() > 0) {
         s1.a(datagramSocket);
@@ -81,29 +80,28 @@ public class BInterfaceSierra extends o implements AInterfaceRomeo {
         s1.b(3);
         s1.a();
         return s1;
-      } 
+      }
     } catch (IOException iOException) {
       g();
       D.a(iOException);
     } finally {
       this.k.a();
-    } 
+    }
     return null;
   }
-  
+
   public void w() {
     this.l = false;
   }
-  
+
   public int s() {
     return 2;
   }
-  
+
   public int x() {
     return 1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/B/s.class
  * Java compiler version: 8 (52.0)

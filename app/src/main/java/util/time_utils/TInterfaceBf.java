@@ -7,14 +7,13 @@ import s.SComponentGolf;
 
 class TInterfaceBf extends KeyAdapter {
   bf(be parambe) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    JTextField jTextField = (JTextField)paramKeyEvent.getSource();
+    JTextField jTextField = (JTextField) paramKeyEvent.getSource();
     if (this.a.a(jTextField, SComponentGolf.b("Indicator On Text")))
-      this.a.c().q(jTextField.getText()); 
+      this.a.c().q(jTextField.getText());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/bf.class
  * Java compiler version: 8 (52.0)

@@ -2,13 +2,12 @@ package com.efiAnalytics.tunerStudio.search;
 
 class DeviceTableUpdateRunnable implements Runnable {
   DeviceTableUpdateRunnable(r paramr) {}
-  
+
   public void run() {
     this.a.c.fireTableDataChanged();
     this.a.removeEditor();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/u.class
  * Java compiler version: 8 (52.0)

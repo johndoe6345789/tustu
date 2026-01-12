@@ -2,12 +2,12 @@ package com.efiAnalytics.testers;
 
 import V.ExceptionInVPackage;
 import al.AbstractInAlPackage;
-import am.AmInterfaceCharlie;
 import am.AbstractInAlPackage;
-import am.AmInterfaceEcho;
 import am.AmComponentHotel;
-import am.PathTostring;
+import am.AmInterfaceCharlie;
+import am.AmInterfaceEcho;
 import am.AmInterfaceKilo;
+import am.PathTostring;
 import bH.D;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -27,8 +27,11 @@ public class MdfReader {
     SeekableByteChannel seekableByteChannel = null;
     long l = System.currentTimeMillis();
     try {
-      Path path = Paths.get("C:\\Users\\p_tob\\Dropbox\\TunerStudioProjects\\support\\MLV\\MF4\\MNOA_2024-03-19_Dyno_UpperInjectorCalWork.mf4", new String[0]);
-      seekableByteChannel = Files.newByteChannel(path, new OpenOption[] { StandardOpenOption.READ });
+      Path path =
+          Paths.get(
+              "C:\\Users\\p_tob\\Dropbox\\TunerStudioProjects\\support\\MLV\\MF4\\MNOA_2024-03-19_Dyno_UpperInjectorCalWork.mf4",
+              new String[0]);
+      seekableByteChannel = Files.newByteChannel(path, new OpenOption[] {StandardOpenOption.READ});
       String str = ExceptionInVPackage(seekableByteChannel);
       if (str.startsWith("4")) {
         PathTostring PathTostring = PathTostring.ExceptionInVPackage(path, seekableByteChannel);
@@ -53,29 +56,28 @@ public class MdfReader {
           for (AbstractInAlPackage AbstractInAlPackage : list1) {
             String str1 = AbstractInAlPackage.o().AmInterfaceEcho();
             stringBuilder.append(str1);
-            if (b2)
-              stringBuilder.append(", "); 
+            if (b2) stringBuilder.append(", ");
             if (AbstractInAlPackage.q() instanceof AmInterfaceKilo) {
-              AmInterfaceKilo AmInterfaceKilo = (AmInterfaceKilo)AbstractInAlPackage.q();
+              AmInterfaceKilo AmInterfaceKilo = (AmInterfaceKilo) AbstractInAlPackage.q();
               String str2 = AmInterfaceKilo.AmInterfaceEcho();
               if (str2 != null && !str2.isEmpty())
-                stringBuilder.append("(").append(str2).append(")"); 
-            } 
+                stringBuilder.append("(").append(str2).append(")");
+            }
             b2++;
-          } 
+          }
           D.AmInterfaceCharlie("      Read CGBlock in " + (System.currentTimeMillis() - l) + "ms");
           D.AmInterfaceCharlie("      " + b2 + " Channel Names: " + stringBuilder.toString());
-        } 
+        }
         D.AmInterfaceCharlie("  Read all DGBlocks in " + (System.currentTimeMillis() - l) + "ms");
         l = System.currentTimeMillis();
       } else {
         throw new ExceptionInVPackage("Not ExceptionInVPackage MDF 4 file");
-      } 
+      }
     } catch (IOException iOException) {
-      Logger.getLogger(MdfReader.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } 
+      Logger.getLogger(MdfReader.class.getName()).log(Level.SEVERE, (String) null, iOException);
+    }
   }
-  
+
   private static String ExceptionInVPackage(SeekableByteChannel paramSeekableByteChannel) {
     ByteBuffer byteBuffer = ByteBuffer.allocate(64);
     byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
@@ -85,14 +87,12 @@ public class MdfReader {
     byte[] arrayOfByte = new byte[8];
     byteBuffer.get(arrayOfByte);
     String str = new String(arrayOfByte, "ISO-8859-1");
-    if (!str.equals("MDF     "))
-      throw new IOException("Invalid or corrupt MDF file: " + str); 
+    if (!str.equals("MDF     ")) throw new IOException("Invalid or corrupt MDF file: " + str);
     arrayOfByte = new byte[8];
     byteBuffer.get(arrayOfByte);
     return new String(arrayOfByte, "ISO-8859-1");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/testers/MdfReader.class
  * Java compiler version: 8 (52.0)

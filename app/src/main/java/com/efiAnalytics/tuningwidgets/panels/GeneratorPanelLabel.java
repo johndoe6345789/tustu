@@ -7,16 +7,16 @@ import javax.swing.JLabel;
 
 class GeneratorPanelLabel extends JLabel {
   public GeneratorPanelLabel(LinearGeneratorPanel paramM, String paramString, int paramInt) {
-    super(paramString, (Icon)null, paramInt);
+    super(paramString, (Icon) null, paramInt);
   }
-  
+
   public Dimension getPreferredSize() {
     Dimension dimension = super.getPreferredSize();
     Insets insets = getInsets();
     dimension.width = getFontMetrics(getFont()).stringWidth(getText()) + insets.left + insets.right;
     return dimension;
   }
-  
+
   public Dimension getMinimumSize() {
     Dimension dimension = super.getPreferredSize();
     Insets insets = getInsets();
@@ -24,7 +24,6 @@ class GeneratorPanelLabel extends JLabel {
     return dimension;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/N.class
  * Java compiler version: 8 (52.0)

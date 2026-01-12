@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 
 class ListenerInArPackage implements ActionListener {
   String a;
-  
+
   ActionListener b;
-  
+
   public ListenerInArPackage(b paramb, String paramString, ActionListener paramActionListener) {
     this.a = paramString;
     this.b = paramActionListener;
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();
     this.c.a.clear();
@@ -23,10 +23,9 @@ class ListenerInArPackage implements ActionListener {
       DInterfaceIndia i2 = new DInterfaceIndia("commandName", str);
       this.c.a.a(i2);
       this.b.actionPerformed(paramActionEvent);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aR/d.class
  * Java compiler version: 8 (52.0)

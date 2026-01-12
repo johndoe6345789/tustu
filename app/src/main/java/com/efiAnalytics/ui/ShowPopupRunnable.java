@@ -2,13 +2,12 @@ package com.efiAnalytics.ui;
 
 class ShowPopupRunnable implements Runnable {
   ShowPopupRunnable(ComboBoxKeyAdapter parami) {}
-  
+
   public void run() {
     this.a.d.showPopup();
     this.a.d.requestFocusInWindow();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/j.class
  * Java compiler version: 8 (52.0)

@@ -6,12 +6,12 @@ import javax.swing.JMenuItem;
 
 class aG implements ActionListener {
   aG(aw paramaw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.a(((JMenuItem)paramActionEvent.getSource()).getName(), paramActionEvent.getActionCommand());
+    this.a.a(
+        ((JMenuItem) paramActionEvent.getSource()).getName(), paramActionEvent.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/aG.class
  * Java compiler version: 8 (52.0)

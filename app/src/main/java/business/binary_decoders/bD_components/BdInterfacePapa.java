@@ -12,7 +12,7 @@ class BdInterfacePapa extends Thread {
     super("Read Dir");
     setDaemon(true);
   }
-  
+
   public void run() {
     try {
       i.a(this.a.c);
@@ -23,14 +23,14 @@ class BdInterfacePapa extends Thread {
       this.a.c.b(directoryInformation.getUsedBytes());
       this.a.c.a(directoryInformation.getTotalBytes());
     } catch (RemoteAccessException remoteAccessException) {
-      Logger.getLogger(r.class.getName()).log(Level.SEVERE, (String)null, (Throwable)remoteAccessException);
+      Logger.getLogger(r.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) remoteAccessException);
     } finally {
       this.a.a = null;
       i.b(this.a.c);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/p.class
  * Java compiler version: 8 (52.0)

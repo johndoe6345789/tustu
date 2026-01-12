@@ -29,21 +29,21 @@ import javax.swing.UIManager;
 
 public class JPanelExtensionInAlPackage extends JPanel {
   ab a = null;
-  
+
   f b;
-  
+
   JComboBox c = new JComboBox();
-  
+
   JButton d;
-  
+
   JButton e;
-  
+
   JPanel f = new JPanel();
-  
+
   JDialog g = null;
-  
+
   JCheckBox h;
-  
+
   public JPanelExtensionInAlPackage(f paramf, ab paramab) {
     this.b = paramf;
     this.a = paramab;
@@ -66,17 +66,16 @@ public class JPanelExtensionInAlPackage extends JPanel {
     } else {
       jPanel.add(this.e);
       jPanel.add(this.d);
-    } 
+    }
     add("South", jPanel);
     List list = a();
     this.f.setLayout(new GridLayout(0, 1, eJ.a(5), eJ.a(5)));
-    for (e e : list)
-      this.c.addItem(e); 
+    for (e e : list) this.c.addItem(e);
     b(paramf.b());
     this.f.add(a("Audio Input", this.c));
     add("Center", this.f);
   }
-  
+
   private JPanel a(String paramString, Component paramComponent) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
@@ -89,7 +88,7 @@ public class JPanelExtensionInAlPackage extends JPanel {
     jPanel.add("Center", paramComponent);
     return jPanel;
   }
-  
+
   private List a() {
     ArrayList<e> arrayList = new ArrayList();
     Mixer.Info[] arrayOfInfo = AudioSystem.getMixerInfo();
@@ -102,32 +101,32 @@ public class JPanelExtensionInAlPackage extends JPanel {
         for (Line.Info info1 : arrayOfInfo1) {
           D.d("\t--- " + info1);
           arrayList.add(new e(this, info, mixer, info1));
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return arrayList;
   }
-  
+
   private void b() {
-    e e = (e)this.c.getSelectedItem();
+    e e = (e) this.c.getSelectedItem();
     this.b.a(e.toString());
     if (this.g != null) {
       this.g.dispose();
       this.g = null;
-    } 
+    }
   }
-  
+
   private void c() {
     if (this.g != null) {
       this.g.dispose();
       this.g = null;
-    } 
+    }
   }
-  
+
   private void d() {
     this.b.a(this.h.isSelected());
   }
-  
+
   public void a(Window paramWindow) {
     this.g = new JDialog(paramWindow, a("Data Log Audio Configuration"));
     this.g.add("Center", this);
@@ -135,23 +134,21 @@ public class JPanelExtensionInAlPackage extends JPanel {
     bV.a(paramWindow, this.g);
     this.g.setVisible(true);
   }
-  
+
   private String a(String paramString) {
-    if (this.a != null)
-      paramString = this.a.a(paramString); 
+    if (this.a != null) paramString = this.a.a(paramString);
     return paramString;
   }
-  
+
   private void b(String paramString) {
     for (byte b = 0; b < this.c.getItemCount(); b++) {
-      if (((e)this.c.getItemAt(b)).equals(paramString)) {
+      if (((e) this.c.getItemAt(b)).equals(paramString)) {
         this.c.setSelectedIndex(b);
         return;
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aL/a.class
  * Java compiler version: 8 (52.0)

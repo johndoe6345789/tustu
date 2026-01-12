@@ -6,7 +6,7 @@ import javax.swing.JTabbedPane;
 
 class JTabbedPaneExtension extends JTabbedPane {
   JTabbedPaneExtension(g paramg) {}
-  
+
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (getTabCount() == 0) {
@@ -17,10 +17,9 @@ class JTabbedPaneExtension extends JTabbedPane {
       paramGraphics.drawString(str1, (getWidth() - fontMetrics.stringWidth(str1)) / 2, j);
       j += paramGraphics.getFont().getSize();
       paramGraphics.drawString(str2, (getWidth() - fontMetrics.stringWidth(str2)) / 2, j);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/as/i.class
  * Java compiler version: 8 (52.0)

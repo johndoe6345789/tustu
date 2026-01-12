@@ -7,18 +7,17 @@ import javax.swing.JTextField;
 
 class TInterfaceAy extends KeyAdapter {
   TInterfaceAy(aO paramaO) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    JTextField jTextField = (JTextField)paramKeyEvent.getSource();
-    if (jTextField.getText().equals(""))
-      return; 
+    JTextField jTextField = (JTextField) paramKeyEvent.getSource();
+    if (jTextField.getText().equals("")) return;
     try {
       String str = jTextField.getText();
       this.ExceptionInVPackage.c().l(str);
-    } catch (ExceptionInVPackage ExceptionInVPackage) {}
+    } catch (ExceptionInVPackage ExceptionInVPackage) {
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aY.class
  * Java compiler version: 8 (52.0)

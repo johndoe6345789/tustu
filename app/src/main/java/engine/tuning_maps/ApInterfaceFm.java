@@ -5,12 +5,11 @@ import c.CInterfaceEcho;
 
 class ApInterfaceFm implements CInterfaceEcho {
   ApInterfaceFm(dB paramdB) {}
-  
+
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() == null);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fM.class
  * Java compiler version: 8 (52.0)

@@ -7,13 +7,13 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceGv implements ActionListener {
   gv(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bJ, jCheckBoxMenuItem.getState() + "");
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.bJ, jCheckBoxMenuItem.getState() + "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gv.class
  * Java compiler version: 8 (52.0)

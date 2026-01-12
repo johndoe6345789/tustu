@@ -17,34 +17,34 @@ import javax.swing.JPanel;
 
 public class JPanelExtensionInAaPackage extends JPanel {
   private String c;
-  
+
   private String d;
-  
+
   JDialog a = null;
-  
+
   D.a b = null;
-  
+
   private ab e = null;
-  
+
   private e f = null;
-  
+
   private e g = null;
-  
+
   private e h = null;
-  
+
   private e i = null;
-  
+
   private e j = null;
-  
+
   private e k = null;
-  
+
   public JPanelExtensionInAaPackage(String paramString1, String paramString2, ab paramab) {
     this.e = paramab;
     this.c = paramString1;
     this.d = paramString2;
     c();
   }
-  
+
   private void c() {
     setLayout(new BorderLayout(eJ.a(10), eJ.a(10)));
     JPanel jPanel1 = new JPanel();
@@ -79,11 +79,11 @@ public class JPanelExtensionInAaPackage extends JPanel {
     jPanel3.add(jButton);
     add("South", jPanel3);
   }
-  
+
   private String a(String paramString) {
     return (b() != null) ? b().a(paramString) : paramString;
   }
-  
+
   public void a(D.a parama) {
     this.b = parama;
     this.f.a(parama.a());
@@ -93,31 +93,27 @@ public class JPanelExtensionInAaPackage extends JPanel {
     this.j.a(parama.d());
     this.k.a(parama.g());
   }
-  
+
   private void d() {
-    if (this.a != null)
-      this.a.dispose(); 
+    if (this.a != null) this.a.dispose();
   }
-  
+
   public D.a a() {
     return this.b;
   }
-  
+
   private void e() {
     String str = "";
-    if (this.h.a().trim().equals(""))
-      str = str + "Invalid First Name\n"; 
-    if (this.i.a().trim().equals(""))
-      str = str + "Invalid Last Name\n"; 
+    if (this.h.a().trim().equals("")) str = str + "Invalid First Name\n";
+    if (this.i.a().trim().equals("")) str = str + "Invalid Last Name\n";
     if (this.j.a().trim().equals("") || !this.j.a().contains("@") || !this.j.a().contains("."))
-      str = str + "Invalid eMail Address\n"; 
+      str = str + "Invalid eMail Address\n";
     if (!str.equals("")) {
       str = "Please correct the following:\n" + str;
       JOptionPane.showMessageDialog(this, str);
       return;
-    } 
-    if (this.b == null)
-      this.b = new D.a(); 
+    }
+    if (this.b == null) this.b = new D.a();
     this.b.a(this.c);
     this.b.b(this.d);
     this.b.e(this.h.a());
@@ -125,12 +121,12 @@ public class JPanelExtensionInAaPackage extends JPanel {
     this.b.d(this.j.a());
     this.b.g(this.k.a());
     az.a a1 = new az.a(this.a, bV.a());
-    bV.a(this.a, (Component)a1);
+    bV.a(this.a, (Component) a1);
     a1.setVisible(true);
     d d = new d(this, a1);
     d.start();
   }
-  
+
   public JDialog a(Window paramWindow) {
     this.a = new JDialog(paramWindow, a("Device Activation"));
     this.a.add("Center", this);
@@ -139,12 +135,11 @@ public class JPanelExtensionInAaPackage extends JPanel {
     this.a.setModalityType(Dialog.ModalityType.DOCUMENT_MODAL);
     return this.a;
   }
-  
+
   public ab b() {
     return this.e;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aA/a.class
  * Java compiler version: 8 (52.0)

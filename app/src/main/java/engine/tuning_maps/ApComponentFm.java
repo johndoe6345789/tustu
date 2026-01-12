@@ -6,12 +6,12 @@ import r.IOPropertiesUsingFile;
 
 class ApComponentFm implements ActionListener {
   fm(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.cA, IOPropertiesUsingFile.cr);
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.cA, IOPropertiesUsingFile.cr);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fm.class
  * Java compiler version: 8 (52.0)

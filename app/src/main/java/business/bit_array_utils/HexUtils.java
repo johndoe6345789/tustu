@@ -18,12 +18,12 @@ import javax.swing.text.Document;
 
 public class Y extends JFrame {
   JEditorPane a = new JEditorPane();
-  
+
   public Y() {
     a();
     setVisible(true);
   }
-  
+
   private void a() {
     JScrollPane jScrollPane = new JScrollPane(this.a);
     jScrollPane.setHorizontalScrollBarPolicy(31);
@@ -37,7 +37,7 @@ public class Y extends JFrame {
     this.a.setText(">");
     this.a.setCaretColor(Color.WHITE);
   }
-  
+
   private void b() {
     String str = c();
     if (str != null && !str.isEmpty()) {
@@ -47,9 +47,10 @@ public class Y extends JFrame {
         bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
         String str1;
         while ((str1 = bufferedReader.readLine()) != null) {
-          if (!str1.endsWith("\n"));
+          if (!str1.endsWith("\n"))
+            ;
           a(str1);
-        } 
+        }
       } catch (Exception exception) {
         exception.printStackTrace();
         a("Error executing command '" + str + "'\n" + exception.getLocalizedMessage() + "\n>");
@@ -57,48 +58,48 @@ public class Y extends JFrame {
       } finally {
         try {
           bufferedReader.close();
-        } catch (Exception exception) {}
-      } 
-    } 
+        } catch (Exception exception) {
+        }
+      }
+    }
     a("\n>");
   }
-  
+
   private void a(String paramString) {
     Document document = this.a.getDocument();
     try {
       document.insertString(document.getLength(), paramString, null);
       this.a.setCaretPosition(document.getLength());
     } catch (BadLocationException badLocationException) {
-      Logger.getLogger(Y.class.getName()).log(Level.SEVERE, (String)null, badLocationException);
-    } 
+      Logger.getLogger(Y.class.getName()).log(Level.SEVERE, (String) null, badLocationException);
+    }
   }
-  
+
   private String c() {
     StringTokenizer stringTokenizer = new StringTokenizer(this.a.getText(), "\n");
     while (stringTokenizer.hasMoreTokens()) {
       String str = stringTokenizer.nextToken();
       if (!stringTokenizer.hasMoreTokens()) {
-        if (str.startsWith(">"))
-          str = str.substring(1); 
+        if (str.startsWith(">")) str = str.substring(1);
         return str;
-      } 
-    } 
+      }
+    }
     return null;
   }
-  
+
   private static String[] d() {
     return new String[0];
   }
-  
+
   private static File e() {
     String str = System.getenv("SystemRoot");
     File file = new File(str, "System32" + File.separatorChar + "wbem");
     if (!file.exists() || !file.isDirectory())
-      throw new IOException('"' + file.getAbsolutePath() + "\" does not exist or is not a directory!"); 
+      throw new IOException(
+          '"' + file.getAbsolutePath() + "\" does not exist or is not a directory!");
     return file;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/Y.class
  * Java compiler version: 8 (52.0)

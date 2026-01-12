@@ -6,8 +6,7 @@ public class ProtocolAdapterFactory {
   private static ProtocolAdapterFactory a = null;
 
   public static ProtocolAdapterFactory a() {
-    if (a == null)
-      a = new ProtocolAdapterFactory();
+    if (a == null) a = new ProtocolAdapterFactory();
     return a;
   }
 
@@ -18,7 +17,6 @@ public class ProtocolAdapterFactory {
       paramF.a(new CrcEnvelopeEncoder());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/J/c.class
  * Java compiler version: 8 (52.0)

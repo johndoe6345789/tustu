@@ -2,35 +2,38 @@ package aP;
 
 import A.AInterfaceCharlie;
 import A.AInterfaceDelta;
-import A.IO;
 import A.AInterfaceGolf;
 import A.AInterfaceHotel;
-import A.Threaded;
 import A.AInterfaceOscar;
 import A.AInterfacePapa;
 import A.AInterfaceRomeo;
-import A.Exception;
 import A.AInterfaceVictor;
 import A.AInterfaceXray;
+import A.Exception;
+import A.IO;
+import A.Threaded;
+import AInterfaceRomeo.IOInBPackage;
+import AInterfaceRomeo.Threaded;
 import B.IOInBPackage;
 import B.ZInterfaceIndia;
+import Exception.AInterfaceGolf;
+import G.AInterfaceOscar;
+import G.AeInterfaceMikeTostring;
+import G.ArrayListInGPackage;
 import G.J;
 import G.R;
 import G.T;
-import G.ArrayListInGPackage;
-import G.AeInterfaceMikeTostring;
 import G.l;
 import G.m;
 import G.n;
-import G.AInterfaceOscar;
 import V.IOInBPackage;
-import W.WInterfaceAp;
 import W.Properties;
+import W.WInterfaceAp;
 import aD.IOInBPackage;
 import aE.IOInBPackage;
 import aV.AvInterfaceWhiskey;
-import aW.IOInBPackage;
 import aW.AInterfacePapa;
+import aW.IOInBPackage;
 import ae.AInterfaceOscar;
 import bQ.Threaded;
 import com.efiAnalytics.ui.bV;
@@ -53,9 +56,6 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
-import AInterfaceRomeo.IOInBPackage;
-import AInterfaceRomeo.Threaded;
-import Exception.AInterfaceGolf;
 import z.AInterfaceCharlie;
 import z.AInterfaceDelta;
 import z.SerialPortEventListenerUsingRXTXCommDriver;
@@ -63,58 +63,60 @@ import z.ZInterfaceIndia;
 
 public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, AInterfacePapa {
   JDialog IOInBPackage = null;
-  
+
   JComboBox b = null;
-  
+
   JComboBox AInterfaceCharlie = null;
-  
+
   JComboBox AInterfaceDelta = null;
-  
+
   JComboBox SerialPortEventListenerUsingRXTXCommDriver = null;
-  
+
   JLabel IO = new JLabel();
-  
+
   JButton AInterfaceGolf = new JButton(AInterfaceGolf.b("Test Port"));
-  
+
   JButton AInterfaceHotel = new JButton(AInterfaceGolf.b("Detect"));
-  
+
   R ZInterfaceIndia = null;
-  
+
   ZInterfaceIndia Threaded = new ZInterfaceIndia();
-  
+
   String k = "";
-  
+
   String l = "";
-  
+
   String m = "";
-  
+
   IOInBPackage n;
-  
+
   J AInterfaceOscar = null;
-  
-  WInterfaceAp AInterfacePapa = (WInterfaceAp)new Properties(new Properties(), "TempCommSettings");
-  
+
+  WInterfaceAp AInterfacePapa = (WInterfaceAp) new Properties(new Properties(), "TempCommSettings");
+
   aY q = null;
-  
+
   JPanel AInterfaceRomeo = null;
-  
+
   JPanel Exception = null;
-  
+
   private String u = AInterfaceGolf.b("Scanning Ports") + "...";
-  
+
   private static String AInterfaceVictor = "LegacyComSettings";
-  
+
   private static String AvInterfaceWhiskey = "MegaSquirtComSettings";
-  
+
   boolean t = false;
-  
+
   public ManagerIoinbpackage() {
-    this((R)null);
+    this((R) null);
   }
-  
+
   public ManagerIoinbpackage(R paramR) {
     this.ZInterfaceIndia = paramR;
-    TitledBorder titledBorder = BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), AInterfaceGolf.b("Communication Settings"));
+    TitledBorder titledBorder =
+        BorderFactory.createTitledBorder(
+            BorderFactory.createEtchedBorder(0), AInterfaceGolf.b("Communication Settings"));
     setBorder(titledBorder);
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
@@ -130,17 +132,15 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     JLabel jLabel = new JLabel();
     jLabel.setText(AInterfaceGolf.b("Configuration") + ":");
     boolean bool = false;
-    if (bool)
-      jPanel3.add(jLabel); 
+    if (bool) jPanel3.add(jLabel);
     this.b = new JComboBox();
     k();
     T t = T.IOInBPackage();
     if (t.AInterfaceCharlie() != null)
-      this.b.setSelectedItem(t.AInterfaceCharlie().AInterfaceCharlie()); 
+      this.b.setSelectedItem(t.AInterfaceCharlie().AInterfaceCharlie());
     this.b.addActionListener(new ae(this));
     jPanel5.add("North", this.b);
-    if (bool && this.b.getItemCount() > 0)
-      jPanel4.add(jPanel5); 
+    if (bool && this.b.getItemCount() > 0) jPanel4.add(jPanel5);
     jPanel5 = new JPanel();
     byte b1 = 0;
     jPanel5.setLayout(new BorderLayout());
@@ -158,14 +158,14 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
       if (AInterfaceDelta.IOInBPackage().equals(str)) {
         an.IOInBPackage(AInterfaceDelta.b() + " (" + AInterfaceGolf.b("Default") + ")");
         this.AInterfaceCharlie.setSelectedItem(an);
-      } 
-    } 
+      }
+    }
     this.AInterfaceCharlie.addActionListener(new af(this));
     jPanel5.add("South", this.AInterfaceCharlie);
     if (b1 > 1) {
       jPanel3.add(jLabel);
       jPanel4.add(jPanel5);
-    } 
+    }
     jPanel2.add(jPanel3);
     jPanel2.add(jPanel4);
     jPanel1.add("North", jPanel2);
@@ -210,12 +210,13 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     this.AInterfaceDelta = new JComboBox();
     String[] arrayOfString = this.Threaded.AInterfaceCharlie();
     for (byte b2 = 0; b2 < arrayOfString.length; b2++)
-      this.AInterfaceDelta.addItem(arrayOfString[b2]); 
+      this.AInterfaceDelta.addItem(arrayOfString[b2]);
     if (this.ZInterfaceIndia != null && IOInBPackage.A() != null) {
-      this.AInterfaceDelta.setSelectedItem(IOInBPackage.A().m(this.ZInterfaceIndia.AInterfaceCharlie()));
+      this.AInterfaceDelta.setSelectedItem(
+          IOInBPackage.A().m(this.ZInterfaceIndia.AInterfaceCharlie()));
     } else {
       this.AInterfaceDelta.setSelectedItem(IOInBPackage.AInterfaceCharlie);
-    } 
+    }
     this.AInterfaceDelta.addActionListener(new ah(this));
     jPanel5.add("North", this.AInterfaceDelta);
     jPanel4.add(jPanel5);
@@ -240,130 +241,147 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     this.AInterfaceHotel.addActionListener(new aj(this));
     IOInBPackage(false);
     add("South", jPanel11);
-    ((CardLayout)this.AInterfaceRomeo.getLayout()).show(this.AInterfaceRomeo, AvInterfaceWhiskey);
+    ((CardLayout) this.AInterfaceRomeo.getLayout()).show(this.AInterfaceRomeo, AvInterfaceWhiskey);
     try {
-      b((String)this.b.getSelectedItem());
+      b((String) this.b.getSelectedItem());
     } catch (IOInBPackage a1) {
-      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
-    } 
+      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) a1);
+    }
     AInterfaceDelta.IOInBPackage().IOInBPackage(true);
   }
-  
+
   private void m() {
-    an an = (an)this.AInterfaceCharlie.getSelectedItem();
-    if (an.IOInBPackage().IOInBPackage().equals(AInterfaceCharlie.SerialPortEventListenerUsingRXTXCommDriver)) {
+    an an = (an) this.AInterfaceCharlie.getSelectedItem();
+    if (an.IOInBPackage()
+        .IOInBPackage()
+        .equals(AInterfaceCharlie.SerialPortEventListenerUsingRXTXCommDriver)) {
       this.SerialPortEventListenerUsingRXTXCommDriver.setEnabled(false);
     } else {
       this.SerialPortEventListenerUsingRXTXCommDriver.setEnabled(true);
-    } 
+    }
     ZInterfaceIndia i1 = null;
-    if (IOInBPackage.A() != null)
-      i1 = Threaded.AInterfaceDelta(new File(IOInBPackage.A().t())); 
-    this.AInterfaceOscar = AInterfaceCharlie.IOInBPackage().IOInBPackage(this.ZInterfaceIndia, an.IOInBPackage().IOInBPackage(), AvInterfaceWhiskey.AInterfaceCharlie(), i1, null);
+    if (IOInBPackage.A() != null) i1 = Threaded.AInterfaceDelta(new File(IOInBPackage.A().t()));
+    this.AInterfaceOscar =
+        AInterfaceCharlie.IOInBPackage()
+            .IOInBPackage(
+                this.ZInterfaceIndia,
+                an.IOInBPackage().IOInBPackage(),
+                AvInterfaceWhiskey.AInterfaceCharlie(),
+                i1,
+                null);
     if (this.AInterfaceOscar instanceof AInterfaceGolf) {
       IO IO = this.n.b();
       this.n.IOInBPackage(IO);
-      ((CardLayout)this.AInterfaceRomeo.getLayout()).show(this.AInterfaceRomeo, AvInterfaceWhiskey);
+      ((CardLayout) this.AInterfaceRomeo.getLayout())
+          .show(this.AInterfaceRomeo, AvInterfaceWhiskey);
     } else {
-      ((CardLayout)this.AInterfaceRomeo.getLayout()).show(this.AInterfaceRomeo, AInterfaceVictor);
-    } 
+      ((CardLayout) this.AInterfaceRomeo.getLayout()).show(this.AInterfaceRomeo, AInterfaceVictor);
+    }
     n();
   }
-  
+
   private void n() {
     this.IO.setText(AInterfaceGolf.b("Not tested"));
   }
-  
+
   public void b() {
     setCursor(Cursor.getPredefinedCursor(3));
     this.AInterfaceGolf.setEnabled(false);
     String[] arrayOfString = this.Threaded.IOInBPackage();
     this.SerialPortEventListenerUsingRXTXCommDriver.removeAllItems();
     for (byte b = 0; b < arrayOfString.length; b++)
-      this.SerialPortEventListenerUsingRXTXCommDriver.addItem(arrayOfString[b]); 
+      this.SerialPortEventListenerUsingRXTXCommDriver.addItem(arrayOfString[b]);
     if (this.ZInterfaceIndia != null && IOInBPackage.A() != null) {
-      this.SerialPortEventListenerUsingRXTXCommDriver.setSelectedItem(IOInBPackage.A().n(this.ZInterfaceIndia.AInterfaceCharlie()));
+      this.SerialPortEventListenerUsingRXTXCommDriver.setSelectedItem(
+          IOInBPackage.A().n(this.ZInterfaceIndia.AInterfaceCharlie()));
     } else if (bV.AInterfaceDelta()) {
       this.SerialPortEventListenerUsingRXTXCommDriver.setSelectedItem("COM1");
     } else if (this.SerialPortEventListenerUsingRXTXCommDriver.getItemCount() > 0) {
       this.SerialPortEventListenerUsingRXTXCommDriver.setSelectedIndex(0);
-    } 
+    }
     this.AInterfaceGolf.setEnabled(true);
     setCursor(Cursor.getDefaultCursor());
   }
-  
+
   public void b(String paramString) {
-    if (paramString == null)
-      return; 
+    if (paramString == null) return;
     T t = T.IOInBPackage();
     R AInterfaceRomeo = t.AInterfaceCharlie(paramString);
     if (AInterfaceRomeo == null)
-      throw new IOInBPackage("Ecu Configuration " + paramString + " not currently loaded."); 
+      throw new IOInBPackage("Ecu Configuration " + paramString + " not currently loaded.");
     IOInBPackage(AInterfaceRomeo);
   }
-  
+
   public void IOInBPackage(R paramR) {
-    if (paramR == null)
-      throw new IOInBPackage("Ecu Configuration not valid."); 
+    if (paramR == null) throw new IOInBPackage("Ecu Configuration not valid.");
     this.ZInterfaceIndia = paramR;
     ak ak = new ak(this, paramR);
     this.t = true;
     ak.start();
     IOInBPackage(this.b, this.ZInterfaceIndia.AInterfaceCharlie());
     IOInBPackage(this.AInterfaceDelta, this.ZInterfaceIndia.O().AInterfaceRomeo() + "");
-    IOInBPackage(this.SerialPortEventListenerUsingRXTXCommDriver, this.ZInterfaceIndia.O().Exception());
+    IOInBPackage(
+        this.SerialPortEventListenerUsingRXTXCommDriver, this.ZInterfaceIndia.O().Exception());
     this.k = this.ZInterfaceIndia.O().Exception();
     this.l = this.ZInterfaceIndia.O().AInterfaceRomeo() + "";
     if (paramR.C() != null) {
       this.m = paramR.C().n();
     } else {
       this.m = IOInBPackage.aC;
-    } 
-    this.n = new IOInBPackage(AvInterfaceWhiskey.AInterfaceCharlie(), (AInterfaceGolf)AInterfaceVictor.IOInBPackage().IOInBPackage(paramR));
+    }
+    this.n =
+        new IOInBPackage(
+            AvInterfaceWhiskey.AInterfaceCharlie(),
+            (AInterfaceGolf) AInterfaceVictor.IOInBPackage().IOInBPackage(paramR));
     this.Exception.removeAll();
-    this.Exception.add((Component)this.n);
+    this.Exception.add((Component) this.n);
     this.n.IOInBPackage(this);
     m();
     if (paramR.C() instanceof AInterfaceGolf) {
-      AInterfaceGolf AInterfaceGolf = (AInterfaceGolf)paramR.C();
+      AInterfaceGolf AInterfaceGolf = (AInterfaceGolf) paramR.C();
       IO IO = AInterfaceGolf.IOInBPackage();
       if (IO != null) {
         IOInBPackage(IO);
       } else if (AvInterfaceWhiskey.AInterfaceCharlie().b() != null) {
         try {
-          IO = AvInterfaceWhiskey.AInterfaceCharlie().b().AInterfaceCharlie(paramR.AInterfaceCharlie());
+          IO =
+              AvInterfaceWhiskey.AInterfaceCharlie()
+                  .b()
+                  .AInterfaceCharlie(paramR.AInterfaceCharlie());
         } catch (InstantiationException instantiationException) {
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, instantiationException);
         } catch (IllegalAccessException illegalAccessException) {
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
-        } 
-      } 
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, illegalAccessException);
+        }
+      }
       this.n.IOInBPackage(IO);
-    } 
+    }
   }
-  
+
   private void IOInBPackage(JComboBox paramJComboBox, String paramString) {
     paramJComboBox.setSelectedItem(paramString);
   }
-  
+
   public void AInterfaceCharlie() {
     WInterfaceAp ap1 = new WInterfaceAp(this, this);
     ap1.start();
   }
-  
+
   public String AInterfaceDelta() {
-    return (String)this.AInterfaceDelta.getSelectedItem();
+    return (String) this.AInterfaceDelta.getSelectedItem();
   }
-  
+
   public String IO() {
-    return (String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem();
+    return (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem();
   }
-  
+
   public String AInterfaceGolf() {
-    an an = (an)this.AInterfaceCharlie.getSelectedItem();
+    an an = (an) this.AInterfaceCharlie.getSelectedItem();
     return an.IOInBPackage().IOInBPackage();
   }
-  
+
   public void AInterfaceCharlie(String paramString) {
     for (byte b = 0; b < this.AInterfaceCharlie.getItemCount(); b++) {
       Object object = this.AInterfaceCharlie.getItemAt(b);
@@ -373,36 +391,36 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
           this.AInterfaceCharlie.setSelectedItem(an);
           this.m = paramString;
           return;
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
-  
+
   public void AInterfaceHotel() {
     if (this.ZInterfaceIndia != null && this.ZInterfaceIndia.C() instanceof AInterfaceGolf) {
-      AInterfaceGolf AInterfaceGolf = (AInterfaceGolf)this.ZInterfaceIndia.C();
+      AInterfaceGolf AInterfaceGolf = (AInterfaceGolf) this.ZInterfaceIndia.C();
       IO IO = AInterfaceGolf.IOInBPackage();
       b(IO);
-    } 
+    }
     if (this.ZInterfaceIndia != null && this.t)
       try {
         this.ZInterfaceIndia.C().AInterfaceDelta();
       } catch (l l) {
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
-      }  
+        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) l);
+      }
     ZInterfaceIndia();
   }
-  
+
   public synchronized void ZInterfaceIndia() {
-    if (this.IOInBPackage != null)
-      this.IOInBPackage.dispose(); 
+    if (this.IOInBPackage != null) this.IOInBPackage.dispose();
     Threaded Threaded = Threaded.IOInBPackage();
     Threaded.b(this);
     AInterfaceDelta.IOInBPackage().IOInBPackage(false);
   }
-  
+
   public void IOInBPackage(Component paramComponent) {
-    this.IOInBPackage = new JDialog(bV.IOInBPackage(paramComponent), AInterfaceGolf.b("Communication Settings"));
+    this.IOInBPackage =
+        new JDialog(bV.IOInBPackage(paramComponent), AInterfaceGolf.b("Communication Settings"));
     this.IOInBPackage.add("Center", this);
     JButton jButton1 = new JButton(AInterfaceGolf.b("Cancel"));
     jButton1.addActionListener(new al(this));
@@ -416,7 +434,7 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     } else {
       jPanel.add(jButton1);
       jPanel.add(jButton2);
-    } 
+    }
     this.IOInBPackage.add("South", jPanel);
     this.IOInBPackage.pack();
     bV.IOInBPackage(bV.IOInBPackage(paramComponent), this.IOInBPackage);
@@ -425,184 +443,239 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     this.IOInBPackage.pack();
     this.IOInBPackage.setResizable(false);
   }
-  
+
   public void IOInBPackage(boolean paramBoolean) {
     this.AInterfaceHotel.setEnabled(paramBoolean);
     this.AInterfaceHotel.setVisible(paramBoolean);
   }
-  
+
   public void Threaded() {
     IOInBPackage a1 = IOInBPackage.A();
     IOInBPackage(a1);
   }
-  
+
   public void IOInBPackage(IOInBPackage parama) {
-    this.ZInterfaceIndia.O().Threaded((String)this.AInterfaceDelta.getSelectedItem());
-    this.ZInterfaceIndia.O().k((String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
+    this.ZInterfaceIndia.O().Threaded((String) this.AInterfaceDelta.getSelectedItem());
+    this.ZInterfaceIndia.O()
+        .k((String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
     String str = AInterfaceGolf();
     if (parama != null && parama.u().equals(this.b.getSelectedItem())) {
-      parama.IOInBPackage((String)this.b.getSelectedItem(), (String)this.AInterfaceDelta.getSelectedItem());
-      parama.b((String)this.b.getSelectedItem(), (String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
+      parama.IOInBPackage(
+          (String) this.b.getSelectedItem(), (String) this.AInterfaceDelta.getSelectedItem());
+      parama.b(
+          (String) this.b.getSelectedItem(),
+          (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
       parama.AInterfaceCharlie(this.ZInterfaceIndia.AInterfaceCharlie(), str);
-    } 
+    }
     if (this.ZInterfaceIndia.C() instanceof SerialPortEventListenerUsingRXTXCommDriver) {
-      SerialPortEventListenerUsingRXTXCommDriver SerialPortEventListenerUsingRXTXCommDriver = (SerialPortEventListenerUsingRXTXCommDriver)this.ZInterfaceIndia.C();
+      SerialPortEventListenerUsingRXTXCommDriver SerialPortEventListenerUsingRXTXCommDriver =
+          (SerialPortEventListenerUsingRXTXCommDriver) this.ZInterfaceIndia.C();
       String str1 = SerialPortEventListenerUsingRXTXCommDriver.IO();
       String str2 = SerialPortEventListenerUsingRXTXCommDriver.AInterfaceGolf();
-      if (!this.AInterfaceDelta.getSelectedItem().equals(str1) || !str2.endsWith((String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem()))
-        this.ZInterfaceIndia.C().AInterfaceCharlie(); 
-    } 
+      if (!this.AInterfaceDelta.getSelectedItem().equals(str1)
+          || !str2.endsWith(
+              (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem()))
+        this.ZInterfaceIndia.C().AInterfaceCharlie();
+    }
     if (this.AInterfaceOscar instanceof bQ.l)
       try {
         IO IO = this.n.b();
-        Threaded.IOInBPackage().IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO.AInterfaceHotel());
+        Threaded.IOInBPackage()
+            .IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO.AInterfaceHotel());
         List list = IO.l();
         for (AInterfaceRomeo AInterfaceRomeo : list) {
-          IO.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie(), this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()));
+          IO.IOInBPackage(
+              AInterfaceRomeo.AInterfaceCharlie(),
+              this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()));
           if (AInterfaceRomeo.AInterfaceCharlie().equals("Baud Rate")) {
-            parama.IOInBPackage((String)this.b.getSelectedItem(), this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
-            this.ZInterfaceIndia.O().Threaded(this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
-          } 
-        } 
+            parama.IOInBPackage(
+                (String) this.b.getSelectedItem(),
+                this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
+            this.ZInterfaceIndia.O()
+                .Threaded(this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
+          }
+        }
         Threaded.IOInBPackage().IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO);
-        AInterfacePapa.IOInBPackage((AInterfaceHotel)this.AInterfaceOscar, IO);
+        AInterfacePapa.IOInBPackage((AInterfaceHotel) this.AInterfaceOscar, IO);
         if (IO instanceof IOInBPackage && IOInBPackage.A() != null) {
           ZInterfaceIndia i1 = Threaded.AInterfaceDelta(new File(IOInBPackage.A().t()));
           if (i1 != null) {
-            IOInBPackage a1 = (IOInBPackage)IO;
+            IOInBPackage a1 = (IOInBPackage) IO;
             i1.AInterfaceDelta(a1.IOInBPackage());
             Threaded.IOInBPackage(new File(IOInBPackage.A().t()), i1);
-          } 
-        } 
+          }
+        }
       } catch (l l) {
         bV.AInterfaceDelta(l.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
+        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) l);
       } catch (Exception Exception) {
         bV.AInterfaceDelta(Exception.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
-      }  
+        Logger.getLogger(ad.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) Exception);
+      }
     if (this.AInterfaceOscar instanceof AInterfaceHotel)
       try {
         IO IO = this.n.b();
-        AInterfaceVictor.IOInBPackage().IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO.AInterfaceHotel());
+        AInterfaceVictor.IOInBPackage()
+            .IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO.AInterfaceHotel());
         List list = IO.l();
         for (AInterfaceRomeo AInterfaceRomeo : list) {
-          IO.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie(), this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()));
+          IO.IOInBPackage(
+              AInterfaceRomeo.AInterfaceCharlie(),
+              this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()));
           if (AInterfaceRomeo.AInterfaceCharlie().equals("Baud Rate")) {
-            parama.IOInBPackage((String)this.b.getSelectedItem(), this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
-            this.ZInterfaceIndia.O().Threaded(this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
-          } 
-        } 
+            parama.IOInBPackage(
+                (String) this.b.getSelectedItem(),
+                this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
+            this.ZInterfaceIndia.O()
+                .Threaded(this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()).toString());
+          }
+        }
         AInterfaceVictor.IOInBPackage().IOInBPackage(this.ZInterfaceIndia.AInterfaceCharlie(), IO);
-        AInterfacePapa.IOInBPackage((AInterfaceHotel)this.AInterfaceOscar, IO);
+        AInterfacePapa.IOInBPackage((AInterfaceHotel) this.AInterfaceOscar, IO);
       } catch (l l) {
         bV.AInterfaceDelta(l.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
+        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) l);
       } catch (Exception Exception) {
         bV.AInterfaceDelta(Exception.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
-      }  
+        Logger.getLogger(ad.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) Exception);
+      }
     if (this.AInterfaceOscar != null && !this.AInterfaceOscar.equals(this.ZInterfaceIndia.C())) {
       this.ZInterfaceIndia.C().AInterfaceCharlie();
       this.ZInterfaceIndia.b(this.AInterfaceOscar);
-    } 
+    }
   }
-  
+
   private synchronized void AInterfaceOscar() {
     boolean bool = this.ZInterfaceIndia.O().G();
     this.ZInterfaceIndia.O().AInterfaceDelta(true);
     if (this.AInterfaceOscar instanceof SerialPortEventListenerUsingRXTXCommDriver) {
       boolean bool1 = true;
       if (!bool1) {
-        SerialPortEventListenerUsingRXTXCommDriver SerialPortEventListenerUsingRXTXCommDriver = (SerialPortEventListenerUsingRXTXCommDriver)this.AInterfaceOscar;
+        SerialPortEventListenerUsingRXTXCommDriver SerialPortEventListenerUsingRXTXCommDriver =
+            (SerialPortEventListenerUsingRXTXCommDriver) this.AInterfaceOscar;
         setCursor(Cursor.getPredefinedCursor(3));
         this.AInterfaceGolf.setEnabled(false);
-        m m = m.IOInBPackage((String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(), (String)this.AInterfaceDelta.getSelectedItem());
+        m m =
+            m.IOInBPackage(
+                (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(),
+                (String) this.AInterfaceDelta.getSelectedItem());
         m.b(this);
         this.IO.setText("");
         SerialPortEventListenerUsingRXTXCommDriver.b(m);
         SerialPortEventListenerUsingRXTXCommDriver.AInterfaceCharlie();
         SerialPortEventListenerUsingRXTXCommDriver.l();
-        if (this.IO.getText().equals(""))
-          this.IO.setText(AInterfaceGolf.b("Failed") + "!"); 
+        if (this.IO.getText().equals("")) this.IO.setText(AInterfaceGolf.b("Failed") + "!");
         this.AInterfaceGolf.setEnabled(true);
         setCursor(Cursor.getDefaultCursor());
       } else {
         IO IO = null;
         try {
-          IO = AvInterfaceWhiskey.AInterfaceCharlie().IOInBPackage(IOInBPackage.AInterfaceDelta, this.ZInterfaceIndia.AInterfaceCharlie());
+          IO =
+              AvInterfaceWhiskey.AInterfaceCharlie()
+                  .IOInBPackage(
+                      IOInBPackage.AInterfaceDelta, this.ZInterfaceIndia.AInterfaceCharlie());
           IO.IOInBPackage("Baud Rate", this.AInterfaceDelta.getSelectedItem());
-          IO.IOInBPackage("Com Port", this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
+          IO.IOInBPackage(
+              "Com Port", this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem());
           ZInterfaceIndia i1 = null;
           if (IOInBPackage.A() != null)
-            i1 = Threaded.AInterfaceDelta(new File(IOInBPackage.A().t())); 
-          J Threaded = AInterfaceCharlie.IOInBPackage().IOInBPackage(this.ZInterfaceIndia, AInterfaceCharlie.SerialPortEventListenerUsingRXTXCommDriver, AvInterfaceWhiskey.AInterfaceCharlie(), i1, null);
-          AInterfacePapa.IOInBPackage((AInterfaceHotel)Threaded, IO);
+            i1 = Threaded.AInterfaceDelta(new File(IOInBPackage.A().t()));
+          J Threaded =
+              AInterfaceCharlie.IOInBPackage()
+                  .IOInBPackage(
+                      this.ZInterfaceIndia,
+                      AInterfaceCharlie.SerialPortEventListenerUsingRXTXCommDriver,
+                      AvInterfaceWhiskey.AInterfaceCharlie(),
+                      i1,
+                      null);
+          AInterfacePapa.IOInBPackage((AInterfaceHotel) Threaded, IO);
           setCursor(Cursor.getPredefinedCursor(3));
           this.AInterfaceGolf.setEnabled(false);
-          m m = m.IOInBPackage((String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(), (String)this.AInterfaceDelta.getSelectedItem());
+          m m =
+              m.IOInBPackage(
+                  (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(),
+                  (String) this.AInterfaceDelta.getSelectedItem());
           m.b(this);
           this.IO.setText("");
           Threaded.b(m);
-          if (this.IO.getText().equals(""))
-            this.IO.setText(AInterfaceGolf.b("Failed") + "!"); 
+          if (this.IO.getText().equals("")) this.IO.setText(AInterfaceGolf.b("Failed") + "!");
           this.AInterfaceGolf.setEnabled(true);
           setCursor(Cursor.getDefaultCursor());
         } catch (l l) {
           bV.AInterfaceDelta(l.getMessage(), this);
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
+          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) l);
         } catch (Exception Exception) {
           bV.AInterfaceDelta(Exception.getMessage(), this);
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, (Throwable) Exception);
         } catch (InstantiationException instantiationException) {
-          bV.AInterfaceDelta(AInterfaceGolf.b("Application Error testing port. Your port may work fine, try it without testing."), this);
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
+          bV.AInterfaceDelta(
+              AInterfaceGolf.b(
+                  "Application Error testing port. Your port may work fine, try it without"
+                      + " testing."),
+              this);
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, instantiationException);
         } catch (IllegalAccessException illegalAccessException) {
-          bV.AInterfaceDelta(AInterfaceGolf.b("Application Error testing port. Your port may work fine, try it without testing."), this);
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
+          bV.AInterfaceDelta(
+              AInterfaceGolf.b(
+                  "Application Error testing port. Your port may work fine, try it without"
+                      + " testing."),
+              this);
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, illegalAccessException);
         } finally {
           if (IO != null)
             try {
               IO.AInterfaceGolf();
-            } catch (Exception exception) {} 
-        } 
-      } 
+            } catch (Exception exception) {
+            }
+        }
+      }
     } else if (this.AInterfaceOscar instanceof AInterfaceGolf) {
       IO IO = null;
       try {
         IO = this.n.b();
         List list = IO.l();
         for (AInterfaceRomeo AInterfaceRomeo : list)
-          IO.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie(), this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie())); 
-        AInterfacePapa.IOInBPackage((AInterfaceHotel)this.AInterfaceOscar, IO);
+          IO.IOInBPackage(
+              AInterfaceRomeo.AInterfaceCharlie(),
+              this.n.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie()));
+        AInterfacePapa.IOInBPackage((AInterfaceHotel) this.AInterfaceOscar, IO);
         setCursor(Cursor.getPredefinedCursor(3));
         this.AInterfaceGolf.setEnabled(false);
-        m m = m.IOInBPackage((String)this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(), (String)this.AInterfaceDelta.getSelectedItem());
+        m m =
+            m.IOInBPackage(
+                (String) this.SerialPortEventListenerUsingRXTXCommDriver.getSelectedItem(),
+                (String) this.AInterfaceDelta.getSelectedItem());
         m.b(this);
         this.IO.setText("");
         this.AInterfaceOscar.b(m);
-        if (this.IO.getText().equals(""))
-          this.IO.setText(AInterfaceGolf.b("Failed") + "!"); 
+        if (this.IO.getText().equals("")) this.IO.setText(AInterfaceGolf.b("Failed") + "!");
         this.AInterfaceGolf.setEnabled(true);
         setCursor(Cursor.getDefaultCursor());
       } catch (l l) {
         bV.AInterfaceDelta(l.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)l);
+        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, (Throwable) l);
       } catch (Exception Exception) {
         bV.AInterfaceDelta(Exception.getMessage(), this);
-        Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
+        Logger.getLogger(ad.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) Exception);
       } finally {
         if (IO != null)
           try {
             IO.AInterfaceGolf();
-          } catch (Exception exception) {} 
-      } 
-    } 
+          } catch (Exception exception) {
+          }
+      }
+    }
     this.ZInterfaceIndia.O().AInterfaceDelta(bool);
   }
-  
+
   public void IOInBPackage(double paramDouble) {}
-  
+
   public synchronized void IOInBPackage(AInterfaceOscar paramo) {
     ArrayListInGPackage.IOInBPackage().SerialPortEventListenerUsingRXTXCommDriver();
     if (paramo.IOInBPackage() == 1) {
@@ -610,105 +683,122 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
     } else {
       this.IO.setText(AInterfaceGolf.b("Failed") + "!");
       this.IO.repaint();
-    } 
+    }
     this.AInterfaceGolf.setEnabled(true);
     setCursor(Cursor.getDefaultCursor());
     notify();
   }
-  
-  public boolean IOInBPackage(String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
+
+  public boolean IOInBPackage(
+      String paramString1, String paramString2, List paramList, AeInterfaceMikeTostring parambT) {
     try {
       if (!AInterfaceOscar.IOInBPackage(parambT)) {
-        String str = AInterfaceGolf.b("A Controller was found on") + " " + paramString1 + ".\n" + AInterfaceGolf.b("However, there appears to be no Firmware loaded.") + "\n" + AInterfaceGolf.b("Please check help for information on getting and installing firmware.") + "\n\n" + AInterfaceGolf.b("You must have firmware installed to connect.");
+        String str =
+            AInterfaceGolf.b("A Controller was found on")
+                + " "
+                + paramString1
+                + ".\n"
+                + AInterfaceGolf.b("However, there appears to be no Firmware loaded.")
+                + "\n"
+                + AInterfaceGolf.b(
+                    "Please check help for information on getting and installing firmware.")
+                + "\n\n"
+                + AInterfaceGolf.b("You must have firmware installed to connect.");
         bV.AInterfaceDelta(str, this);
-      } 
+      }
       if (paramString2.contains(":")) {
         String str = paramString2.substring(0, paramString2.indexOf(":"));
         if (!AInterfaceCharlie.IOInBPackage().IOInBPackage(str)) {
-          String str1 = AInterfaceGolf.b("The Controller found requires IOInBPackage driver that is not available in this edition of the application.");
+          String str1 =
+              AInterfaceGolf.b(
+                  "The Controller found requires IOInBPackage driver that is not available in this"
+                      + " edition of the application.");
           bV.AInterfaceDelta(str1, this);
           return false;
-        } 
+        }
         paramString2 = paramString2.substring(paramString2.indexOf(":") + 1, paramString2.length());
         AInterfaceCharlie(str);
-      } 
-      IO IO = AvInterfaceWhiskey.AInterfaceCharlie().IOInBPackage(paramString2, this.ZInterfaceIndia.AInterfaceCharlie());
+      }
+      IO IO =
+          AvInterfaceWhiskey.AInterfaceCharlie()
+              .IOInBPackage(paramString2, this.ZInterfaceIndia.AInterfaceCharlie());
       for (AInterfaceCharlie AInterfaceCharlie : paramList) {
         try {
           IO.IOInBPackage(AInterfaceCharlie.IOInBPackage(), AInterfaceCharlie.b());
         } catch (Exception Exception) {
-          Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, (Throwable)Exception);
-        } 
-      } 
+          Logger.getLogger(ad.class.getName())
+              .log(Level.SEVERE, (String) null, (Throwable) Exception);
+        }
+      }
       this.n.IOInBPackage(IO);
     } catch (InstantiationException instantiationException) {
-      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
+      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, instantiationException);
     } catch (IllegalAccessException illegalAccessException) {
-      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
-    } 
+      Logger.getLogger(ad.class.getName()).log(Level.SEVERE, (String) null, illegalAccessException);
+    }
     if (paramString2.equals(IOInBPackage.AInterfaceDelta)) {
       AInterfaceCharlie(AInterfaceCharlie.IOInBPackage);
       for (AInterfaceCharlie AInterfaceCharlie : paramList) {
         if (AInterfaceCharlie.IOInBPackage().equals("Baud Rate")) {
           IOInBPackage(this.AInterfaceDelta, AInterfaceCharlie.b().toString());
           continue;
-        } 
+        }
         if (AInterfaceCharlie.IOInBPackage().equals("Com Port")) {
-          IOInBPackage(this.SerialPortEventListenerUsingRXTXCommDriver, AInterfaceCharlie.b().toString());
+          IOInBPackage(
+              this.SerialPortEventListenerUsingRXTXCommDriver, AInterfaceCharlie.b().toString());
           continue;
-        } 
+        }
         if (AInterfaceCharlie.IOInBPackage().equals("2nd Com Port"))
-          IOInBPackage(this.SerialPortEventListenerUsingRXTXCommDriver, AInterfaceCharlie.b().toString()); 
-      } 
-    } 
+          IOInBPackage(
+              this.SerialPortEventListenerUsingRXTXCommDriver, AInterfaceCharlie.b().toString());
+      }
+    }
     return true;
   }
-  
+
   public void b(double paramDouble) {}
-  
+
   public void IOInBPackage() {}
-  
+
   public void k() {
     this.b.removeAllItems();
     T t = T.IOInBPackage();
     String[] arrayOfString = t.AInterfaceDelta();
-    if (this.ZInterfaceIndia == null)
-      this.ZInterfaceIndia = t.AInterfaceCharlie(); 
-    for (byte b = 0; b < arrayOfString.length; b++)
-      this.b.addItem(arrayOfString[b]); 
+    if (this.ZInterfaceIndia == null) this.ZInterfaceIndia = t.AInterfaceCharlie();
+    for (byte b = 0; b < arrayOfString.length; b++) this.b.addItem(arrayOfString[b]);
   }
-  
+
   public void SerialPortEventListenerUsingRXTXCommDriver() {
     ArrayListInGPackage.IOInBPackage().AInterfaceDelta();
   }
-  
+
   public void l() {
     if (this.q != null) {
       this.q.SerialPortEventListenerUsingRXTXCommDriver();
       this.q = null;
-    } 
+    }
     this.q = new aY(bV.b(this));
     this.q.setVisible(true);
     this.q.IOInBPackage(this);
   }
-  
+
   public void IOInBPackage(String paramString) {}
-  
+
   private void IOInBPackage(IO paramf) {
     try {
       IOInBPackage(paramf, this.AInterfacePapa);
     } catch (Exception exception) {
-      Logger.getLogger(ad.class.getName()).log(Level.WARNING, "Failed to capture ControllerInterface setting", exception);
-    } 
+      Logger.getLogger(ad.class.getName())
+          .log(Level.WARNING, "Failed to capture ControllerInterface setting", exception);
+    }
     IO f1 = this.n.b(paramf.AInterfaceHotel());
-    if (f1 != null)
-      b(f1, this.AInterfacePapa); 
+    if (f1 != null) b(f1, this.AInterfacePapa);
   }
-  
+
   private void b(IO paramf) {
     b(paramf, this.AInterfacePapa);
   }
-  
+
   private WInterfaceAp IOInBPackage(IO paramf, WInterfaceAp paramap) {
     String str = paramf.AInterfaceHotel();
     List list = paramf.l();
@@ -717,12 +807,12 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
       if (object != null) {
         paramap.IOInBPackage(str + AInterfaceRomeo.AInterfaceCharlie(), object.toString());
         continue;
-      } 
+      }
       paramap.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie(), "");
-    } 
+    }
     return paramap;
   }
-  
+
   private void b(IO paramf, WInterfaceAp paramap) {
     String str = paramf.AInterfaceHotel();
     List list = paramf.l();
@@ -733,18 +823,18 @@ public class ManagerIoinbpackage extends JPanel implements AInterfaceOscar, n, A
       try {
         paramf.IOInBPackage(AInterfaceRomeo.AInterfaceCharlie(), str1);
       } catch (Exception exception) {
-        Logger.getLogger(ad.class.getName()).log(Level.WARNING, "Unable to set ControllerInterface setting", exception);
-      } 
-    } 
+        Logger.getLogger(ad.class.getName())
+            .log(Level.WARNING, "Unable to set ControllerInterface setting", exception);
+      }
+    }
   }
-  
+
   public void IOInBPackage(String paramString1, String paramString2) {
     n();
   }
-  
+
   public void IOInBPackage(AInterfaceXray paramx) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ad.class
  * Java compiler version: 8 (52.0)

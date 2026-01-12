@@ -7,24 +7,23 @@ import c.CInterfaceEcho;
 
 class ApInterfaceBw implements CInterfaceEcho {
   String a = null;
-  
+
   R b = null;
-  
+
   ApInterfaceBw(bl parambl, String paramString, R paramR) {
     this.a = paramString;
     this.b = paramR;
   }
-  
+
   public boolean a() {
     try {
       return p.a(this.a, this.b);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       return true;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bw.class
  * Java compiler version: 8 (52.0)

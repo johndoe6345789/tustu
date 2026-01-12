@@ -2,15 +2,15 @@ package aP;
 
 class ApInterfaceHh extends Thread {
   hh(hg paramhg) {}
-  
+
   public void run() {
     try {
       Thread.sleep(250L);
-    } catch (InterruptedException interruptedException) {}
+    } catch (InterruptedException interruptedException) {
+    }
     this.a.a.I();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hh.class
  * Java compiler version: 8 (52.0)

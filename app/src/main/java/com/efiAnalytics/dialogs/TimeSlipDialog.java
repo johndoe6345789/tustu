@@ -15,11 +15,11 @@ import javax.swing.JPanel;
 
 public class TimeSlipDialog extends JDialog {
   e BuComponentAlpha;
-  
+
   ab b = null;
-  
+
   ArrayList c = new ArrayList();
-  
+
   public TimeSlipDialog(Window paramWindow, String paramString, ab paramab) {
     super(paramWindow, paramString, Dialog.ModalityType.MODELESS);
     this.BuComponentAlpha = new e(paramString, paramab);
@@ -38,47 +38,43 @@ public class TimeSlipDialog extends JDialog {
     } else {
       jPanel.add(jButton2);
       jPanel.add(jButton1);
-    } 
+    }
     add(jPanel, "South");
   }
-  
+
   public void BuComponentAlpha(BuComponentAlpha parama) {
     this.BuComponentAlpha.BuComponentAlpha(parama);
   }
-  
+
   public BuComponentAlpha BuComponentAlpha() {
     return this.BuComponentAlpha.b();
   }
-  
+
   public String b() {
     return this.BuComponentAlpha.BuComponentAlpha();
   }
-  
+
   private void c() {
     for (BuComponentAlpha BuComponentAlpha : this.c) {
-      if (!BuComponentAlpha.BuComponentAlpha())
-        return; 
-    } 
+      if (!BuComponentAlpha.BuComponentAlpha()) return;
+    }
     dispose();
   }
-  
+
   private void d() {
-    for (BuComponentAlpha BuComponentAlpha : this.c)
-      BuComponentAlpha.b(); 
+    for (BuComponentAlpha BuComponentAlpha : this.c) BuComponentAlpha.b();
     dispose();
   }
-  
+
   public void BuComponentAlpha(BuComponentAlpha parama) {
     this.c.add(parama);
   }
-  
+
   private String BuComponentAlpha(String paramString) {
-    if (this.b != null)
-      paramString = this.b.BuComponentAlpha(paramString); 
+    if (this.b != null) paramString = this.b.BuComponentAlpha(paramString);
     return paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/dialogs/b.class
  * Java compiler version: 8 (52.0)

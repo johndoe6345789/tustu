@@ -9,13 +9,13 @@ import java.util.List;
 
 public class YInterfaceCharlie {
   String a = "\\s+";
-  
+
   int b = 0;
-  
+
   int c = 4;
-  
+
   int d = 5;
-  
+
   public List a(File paramFile) {
     ArrayList<d> arrayList = new ArrayList();
     BufferedReader bufferedReader = new BufferedReader(new FileReader(paramFile));
@@ -30,32 +30,39 @@ public class YInterfaceCharlie {
           d.a(j);
           d.b(i);
           arrayList.add(d);
-        } 
-      } 
+        }
+      }
     } finally {
       try {
         bufferedReader.close();
       } catch (Exception exception) {
         D.c("failed to close reader");
-      } 
-    } 
+      }
+    }
     return arrayList;
   }
-  
+
   private boolean a(String[] paramArrayOfString) {
-    return (paramArrayOfString.length - 1 < this.d) ? false : (!a(paramArrayOfString[this.b]) ? false : (!a(paramArrayOfString[this.c]) ? false : (paramArrayOfString[this.d].startsWith("_") ? false : (!paramArrayOfString[this.d].contains(".")))));
+    return (paramArrayOfString.length - 1 < this.d)
+        ? false
+        : (!a(paramArrayOfString[this.b])
+            ? false
+            : (!a(paramArrayOfString[this.c])
+                ? false
+                : (paramArrayOfString[this.d].startsWith("_")
+                    ? false
+                    : (!paramArrayOfString[this.d].contains(".")))));
   }
-  
+
   private boolean a(String paramString) {
     try {
       int i = Integer.parseInt(paramString, 16);
       return true;
     } catch (Exception exception) {
       return false;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/Y/c.class
  * Java compiler version: 8 (52.0)

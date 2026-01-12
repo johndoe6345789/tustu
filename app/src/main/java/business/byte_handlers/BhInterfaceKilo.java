@@ -2,12 +2,11 @@ package business.byte_handlers;
 
 class BhInterfaceKilo implements Runnable {
   BhInterfaceKilo(b paramb) {}
-  
+
   public void run() {
     b.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bh/k.class
  * Java compiler version: 8 (52.0)

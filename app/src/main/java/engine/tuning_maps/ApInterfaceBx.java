@@ -1,7 +1,7 @@
 package aP;
 
-import G.R;
 import G.EqualsInGPackage;
+import G.R;
 import bH.D;
 import com.efiAnalytics.ui.bV;
 import java.awt.Component;
@@ -10,14 +10,14 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceBx implements ActionListener {
   R a;
-  
+
   EqualsInGPackage b;
-  
+
   ApInterfaceBx(bl parambl, R paramR, EqualsInGPackage parambI) {
     this.a = paramR;
     this.b = parambI;
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     try {
       Component component = this.c.getComponent();
@@ -25,10 +25,9 @@ class ApInterfaceBx implements ActionListener {
       f.a().a(this.a, this.b, component);
     } catch (Exception exception) {
       D.a("Error showing dialog:\n" + exception.getMessage(), exception, null);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bx.class
  * Java compiler version: 8 (52.0)

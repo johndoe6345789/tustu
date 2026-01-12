@@ -24,15 +24,15 @@ import t.a;
 
 public class GaugeBrowserDialog extends a {
   List a = new ArrayList();
-  
+
   JPanel b = new JPanel();
-  
+
   n c;
-  
+
   HashMap d = new HashMap<>();
-  
+
   JPanel e = new JPanel();
-  
+
   public GaugeBrowserDialog(Window paramWindow, String paramString) {
     super(paramWindow, s.g.b(paramString));
     setLayout(new BorderLayout());
@@ -70,13 +70,12 @@ public class GaugeBrowserDialog extends a {
     this.e.add("South", jPanel3);
     setSize(eJ.a(900), eJ.a(550));
   }
-  
+
   public GaugeBrowserDialog(Window paramWindow, List paramList, String paramString) {
     this(paramWindow, paramString);
-    for (File file : paramList)
-      a(file); 
+    for (File file : paramList) a(file);
   }
-  
+
   public void a(File paramFile) {
     File[] arrayOfFile = paramFile.listFiles(new k(this));
     for (byte b = 0; b < arrayOfFile.length; b++) {
@@ -86,35 +85,35 @@ public class GaugeBrowserDialog extends a {
           n1.addMouseListener(new l(this));
           this.b.add(n1);
           this.d.put(arrayOfFile[b].getName(), n1);
-        } 
+        }
       } catch (Exception exception) {
         D.c("Exception adding a gauge to the selection for file: " + arrayOfFile[b]);
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void a() {
-    String[] arrayOfString = { "gauge" };
-    String str = bV.a((Component)this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck)new cl());
+    String[] arrayOfString = {"gauge"};
+    String str =
+        bV.a(
+            (Component) this, getTitle(), arrayOfString, "", ThreadedFile.w(), true, (ck) new cl());
     if (str != null && !str.equals("")) {
       n n1 = new n(this, new File(str));
       n1.addMouseListener(new m(this));
       this.b.add(n1);
       this.b.validate();
       this.c.a(n1.a);
-    } 
+    }
   }
-  
+
   public void a(a parama) {
     this.a.add(parama);
   }
-  
+
   private void b(File paramFile) {
-    for (a a1 : this.a)
-      a1.a(paramFile); 
+    for (a a1 : this.a) a1.a(paramFile);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/g.class
  * Java compiler version: 8 (52.0)

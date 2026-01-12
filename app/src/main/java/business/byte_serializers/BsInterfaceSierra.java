@@ -9,7 +9,7 @@ import s.SComponentGolf;
 
 class BsInterfaceSierra implements ActionListener {
   BsInterfaceSierra(k paramk) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     EqualsInAiPackage EqualsInAiPackage = new EqualsInAiPackage();
     EqualsInAiPackage.a(SComponentGolf.EqualsInAiPackage("WUE Analyze Live Help"));
@@ -17,7 +17,6 @@ class BsInterfaceSierra implements ActionListener {
     NetworkHashMap.a().a(EqualsInAiPackage, bV.a(this.a.k));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/s.class
  * Java compiler version: 8 (52.0)

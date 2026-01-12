@@ -2,12 +2,11 @@ package aI;
 
 interface AiInterfaceHotel {
   void a(byte[] paramArrayOfbyte);
-  
+
   void a();
-  
+
   int b();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aI/h.class
  * Java compiler version: 8 (52.0)

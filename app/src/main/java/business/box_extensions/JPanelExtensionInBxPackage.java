@@ -23,17 +23,17 @@ import javax.swing.JToolBar;
 
 public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
   ab a = null;
-  
+
   o b = null;
-  
+
   m c = null;
-  
+
   b d;
-  
+
   int e = -1;
-  
+
   JButton f;
-  
+
   public JPanelExtensionInBxPackage(b paramb, ab paramab) {
     this.a = paramab;
     this.d = paramb;
@@ -42,8 +42,7 @@ public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
     setLayout(new BorderLayout());
     this.b = new o(paramab);
     Iterator<j> iterator = paramb.d().iterator();
-    while (iterator.hasNext())
-      this.b.a(iterator.next()); 
+    while (iterator.hasNext()) this.b.a(iterator.next());
     this.b.getSelectionModel().addListSelectionListener(new i(this, null));
     JScrollPane jScrollPane = new JScrollPane(this.b);
     this.b.setFillsViewportHeight(true);
@@ -75,7 +74,7 @@ public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
     this.c.a(new f(this));
     add("South", this.c);
   }
-  
+
   private JMenuBar e() {
     JMenuBar jMenuBar = new JMenuBar();
     JMenu jMenu = new JMenu("File");
@@ -88,33 +87,35 @@ public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
     jMenu.add(jMenuItem2);
     return jMenuBar;
   }
-  
+
   private void f() {
     this.d.c();
   }
-  
+
   private void g() {
     this.d.b();
   }
-  
+
   private void a(int paramInt) {
     if (this.c.d()) {
-      String str = c("The Filter currently being edited has not been saved.") + "\n" + c("Would you like to save it now?");
+      String str =
+          c("The Filter currently being edited has not been saved.")
+              + "\n"
+              + c("Would you like to save it now?");
       if (bV.a(str, this.c, true))
         if (a()) {
           this.c.b();
         } else {
-          if (this.e >= 0)
-            this.b.getSelectionModel().setSelectionInterval(paramInt, paramInt); 
+          if (this.e >= 0) this.b.getSelectionModel().setSelectionInterval(paramInt, paramInt);
           return;
-        }  
-    } 
+        }
+    }
     this.f.setEnabled(true);
     this.e = paramInt;
     j j = this.b.a(paramInt);
     this.c.a(j);
   }
-  
+
   public boolean a() {
     j j = this.c.a();
     try {
@@ -122,36 +123,36 @@ public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
         this.d.b(j);
         this.c.b();
         return true;
-      } 
+      }
       return false;
     } catch (x x) {
       String str = c(x.getLocalizedMessage());
       bV.d(str, this);
       return false;
-    } 
+    }
   }
-  
+
   public void b() {
     j j = new j();
     this.c.b(j);
   }
-  
+
   public void b(String paramString) {
     this.d.a(paramString);
   }
-  
+
   public void c() {
     j j = this.c.a();
     if (this.c != null) {
       b(j.a());
       this.f.setEnabled(false);
-    } 
+    }
   }
-  
+
   private String c(String paramString) {
     return (this.a != null) ? this.a.a(paramString) : paramString;
   }
-  
+
   public void a(Window paramWindow) {
     JDialog jDialog = bV.b(this, paramWindow, c("Data Filter Editor"), this);
     jDialog.add("North", e());
@@ -159,33 +160,31 @@ public class JPanelExtensionInBxPackage extends JPanel implements l, bc {
     bV.a(paramWindow, jDialog);
     jDialog.setVisible(true);
   }
-  
+
   public void a(k paramk) {
     this.c.a(paramk);
   }
-  
+
   public void close() {
-    if (this.c.d())
-      a(); 
+    if (this.c.d()) a();
   }
-  
+
   public void a(j paramj) {
     this.b.b(paramj);
   }
-  
+
   public void a(String paramString) {
     this.b.a(paramString);
   }
-  
+
   public void b(j paramj) {
     this.b.b(paramj);
   }
-  
+
   public JTextPane d() {
     return this.c.e();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/c.class
  * Java compiler version: 8 (52.0)

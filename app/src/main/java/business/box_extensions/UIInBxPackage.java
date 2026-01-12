@@ -18,23 +18,23 @@ import javax.swing.JTextPane;
 
 class UIInBxPackage extends JPanel {
   j a = null;
-  
+
   private k i = null;
-  
+
   JTextField b = new q("", 15);
-  
+
   JTextField c = new JTextField("", 50);
-  
+
   JTextPane d = new JTextPane();
-  
+
   JButton e = null;
-  
+
   ab f = null;
-  
+
   boolean g = true;
-  
+
   List h = new ArrayList();
-  
+
   public void m(ab paramab) {
     this.f = paramab;
     setLayout(new BorderLayout());
@@ -49,7 +49,14 @@ class UIInBxPackage extends JPanel {
     jScrollPane.setPreferredSize(dimension);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.add("North", new JLabel("<html>" + a("Expression, Filter Data When:") + "          " + a("Example") + ": [RPM] > 6000 && [TPS] < 90<br>Press CTRL+Space for Field List"));
+    jPanel2.add(
+        "North",
+        new JLabel(
+            "<html>"
+                + a("Expression, Filter Data When:")
+                + "          "
+                + a("Example")
+                + ": [RPM] > 6000 && [TPS] < 90<br>Press CTRL+Space for Field List"));
     jPanel2.add("Center", jScrollPane);
     add("Center", jPanel2);
     this.e = new JButton(a("Save"));
@@ -60,7 +67,7 @@ class UIInBxPackage extends JPanel {
     add("South", jPanel3);
     b();
   }
-  
+
   private JPanel a(String paramString, JTextField paramJTextField) {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
@@ -74,7 +81,7 @@ class UIInBxPackage extends JPanel {
     jPanel1.add("Center", jPanel2);
     return jPanel1;
   }
-  
+
   public void a(j paramj) {
     if (paramj != null) {
       this.a = paramj;
@@ -88,9 +95,9 @@ class UIInBxPackage extends JPanel {
       this.d.selectAll();
     } else {
       b();
-    } 
+    }
   }
-  
+
   public void b(j paramj) {
     this.a = paramj;
     this.b.setText(paramj.a());
@@ -101,17 +108,16 @@ class UIInBxPackage extends JPanel {
     this.d.setEnabled(true);
     this.b.requestFocus();
   }
-  
+
   public j a() {
     this.a.a(this.b.getText().trim());
     this.a.b(this.c.getText());
     String str = X.b(this.d.getText(), "\n", " ");
-    if (this.i != null)
-      str = this.i.a(str); 
+    if (this.i != null) str = this.i.a(str);
     this.a.c(str);
     return this.a;
   }
-  
+
   public void b() {
     this.a = null;
     this.b.setEnabled(false);
@@ -121,36 +127,37 @@ class UIInBxPackage extends JPanel {
     this.d.setEnabled(false);
     this.d.setText("");
   }
-  
+
   public void a(y paramy) {
     this.h.add(paramy);
   }
-  
+
   public boolean c() {
     for (y y : this.h) {
-      if (!y.a())
-        return false; 
-    } 
+      if (!y.a()) return false;
+    }
     return true;
   }
-  
+
   private String a(String paramString) {
     return (this.f != null) ? this.f.a(paramString) : paramString;
   }
-  
+
   public boolean d() {
-    return (this.a != null && (!this.a.a().equals(this.b.getText().trim()) || !this.a.b().equals(this.c.getText()) || !this.a.c().equals(this.d.getText())));
+    return (this.a != null
+        && (!this.a.a().equals(this.b.getText().trim())
+            || !this.a.b().equals(this.c.getText())
+            || !this.a.c().equals(this.d.getText())));
   }
-  
+
   public void a(k paramk) {
     this.i = paramk;
   }
-  
+
   public JTextPane e() {
     return this.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/m.class
  * Java compiler version: 8 (52.0)

@@ -7,15 +7,16 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceFt implements ActionListener {
   ApInterfaceFt(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.F, Boolean.toString(jCheckBoxMenuItem.getState()));
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.H, Boolean.toString(!jCheckBoxMenuItem.getState()));
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.F, Boolean.toString(jCheckBoxMenuItem.getState()));
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.H, Boolean.toString(!jCheckBoxMenuItem.getState()));
     dB.b(this.IOPropertiesUsingFile);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fT.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.Color;
 
 class GaugeColorSetterC implements bh {
   GaugeColorSetterC(w paramw) {}
-  
+
   public void a(Color paramColor) {
     this.a.a.c(paramColor);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/K.class
  * Java compiler version: 8 (52.0)

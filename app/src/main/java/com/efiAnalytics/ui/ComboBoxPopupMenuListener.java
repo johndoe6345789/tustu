@@ -5,16 +5,15 @@ import javax.swing.event.PopupMenuListener;
 
 class ComboBoxPopupMenuListener implements PopupMenuListener {
   ComboBoxPopupMenuListener(e parame) {}
-  
+
   public void popupMenuWillBecomeVisible(PopupMenuEvent paramPopupMenuEvent) {}
-  
+
   public void popupMenuWillBecomeInvisible(PopupMenuEvent paramPopupMenuEvent) {
     e.a(this.a);
   }
-  
+
   public void popupMenuCanceled(PopupMenuEvent paramPopupMenuEvent) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/h.class
  * Java compiler version: 8 (52.0)

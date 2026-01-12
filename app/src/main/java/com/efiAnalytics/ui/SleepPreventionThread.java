@@ -9,9 +9,9 @@ import java.util.logging.Logger;
 
 class SleepPreventionThread extends Thread {
   private boolean b = true;
-  
+
   SleepPreventionThread(dI paramdI) {}
-  
+
   public void run() {
     try {
       Robot robot = new Robot();
@@ -21,22 +21,22 @@ class SleepPreventionThread extends Thread {
           Point point = MouseInfo.getPointerInfo().getLocation();
           robot.mouseMove(point.x + 1, point.y + 1);
           robot.mouseMove(point.x, point.y);
-        } 
-      } 
+        }
+      }
     } catch (AWTException aWTException) {
-      Logger.getLogger(dI.class.getName()).log(Level.WARNING, "Unable to start Sleep Prevent", aWTException);
-    } 
+      Logger.getLogger(dI.class.getName())
+          .log(Level.WARNING, "Unable to start Sleep Prevent", aWTException);
+    }
   }
-  
+
   public boolean a() {
     return this.b;
   }
-  
+
   public void a(boolean paramBoolean) {
     this.b = paramBoolean;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dJ.class
  * Java compiler version: 8 (52.0)

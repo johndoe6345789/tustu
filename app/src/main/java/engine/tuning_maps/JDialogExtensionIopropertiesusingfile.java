@@ -24,11 +24,11 @@ import r.IOPropertiesUsingFile;
 
 public class JDialogExtensionIopropertiesusingfile extends JDialog {
   cn IOPropertiesUsingFile = new cn();
-  
+
   cn b = new cn();
-  
+
   Frame c = null;
-  
+
   public JDialogExtensionIopropertiesusingfile(Frame paramFrame) {
     super(paramFrame, "File Encryption Dialog");
     this.c = paramFrame;
@@ -36,7 +36,7 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add("West", new JLabel("Input File:"));
-    jPanel1.add("Center", (Component)this.IOPropertiesUsingFile);
+    jPanel1.add("Center", (Component) this.IOPropertiesUsingFile);
     JButton jButton1 = new JButton("Select Input");
     jButton1.addActionListener(new bN(this));
     jPanel1.add("East", jButton1);
@@ -44,7 +44,7 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add("West", new JLabel("Output File:"));
-    jPanel2.add("Center", (Component)this.b);
+    jPanel2.add("Center", (Component) this.b);
     JButton jButton2 = new JButton("Select Output");
     jButton2.addActionListener(new bO(this));
     jPanel2.add("East", jButton2);
@@ -59,25 +59,27 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
     jPanel3.add(jButton4);
     add(jPanel3);
   }
-  
+
   public void IOPropertiesUsingFile() {
-    String[] arrayOfString = { "" };
+    String[] arrayOfString = {""};
     String str1 = IOPropertiesUsingFile.IOPropertiesUsingFile().c("encrypDialogDirIn", ".");
     String str2 = bV.IOPropertiesUsingFile(this, "Select Input", arrayOfString, "", str1, true);
     if (str2 != null && !str2.isEmpty())
-      IOPropertiesUsingFile.IOPropertiesUsingFile().b("encrypDialogDirIn", (new File(str2)).getParent()); 
+      IOPropertiesUsingFile.IOPropertiesUsingFile()
+          .b("encrypDialogDirIn", (new File(str2)).getParent());
     this.IOPropertiesUsingFile.IOPropertiesUsingFile(str2);
   }
-  
+
   public void b() {
-    String[] arrayOfString = { "" };
+    String[] arrayOfString = {""};
     String str1 = IOPropertiesUsingFile.IOPropertiesUsingFile().c("encrypDialogDir", ".");
     String str2 = bV.IOPropertiesUsingFile(this, "Select Output", arrayOfString, "", str1, false);
     if (str2 != null && !str2.isEmpty())
-      IOPropertiesUsingFile.IOPropertiesUsingFile().b("encrypDialogDir", (new File(str2)).getParent()); 
+      IOPropertiesUsingFile.IOPropertiesUsingFile()
+          .b("encrypDialogDir", (new File(str2)).getParent());
     this.b.IOPropertiesUsingFile(str2);
   }
-  
+
   public void c() {
     FileInputStream fileInputStream;
     FileOutputStreamExtension FileOutputStreamExtension;
@@ -86,38 +88,37 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
     if (!file1.exists()) {
       bV.d("Must Select an Input File", this);
       return;
-    } 
+    }
     try {
       fileInputStream = new FileInputStream(file1);
     } catch (FileNotFoundException fileNotFoundException) {
       bV.d("Error reading file:\n" + file1.getAbsolutePath(), this);
       return;
-    } 
+    }
     BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
     File file2 = new File(this.b.IOPropertiesUsingFile());
-    if (file2.exists())
-      file2.delete(); 
+    if (file2.exists()) file2.delete();
     try {
       file2.createNewFile();
     } catch (IOException iOException) {
       iOException.printStackTrace();
       bV.d("Failed to create file:\n" + file2.getAbsolutePath(), this);
       return;
-    } 
+    }
     try {
       FileOutputStreamExtension = new FileOutputStreamExtension(file2);
-      bufferedOutputStream = new BufferedOutputStream((OutputStream)FileOutputStreamExtension);
+      bufferedOutputStream = new BufferedOutputStream((OutputStream) FileOutputStreamExtension);
     } catch (FileNotFoundException fileNotFoundException) {
       bV.d("Error reading file:\n" + file2.getAbsolutePath(), this);
       fileNotFoundException.printStackTrace();
       return;
-    } 
+    }
     try {
       int i;
       for (i = bufferedInputStream.read(); i != -1; i = bufferedInputStream.read())
-        bufferedOutputStream.write(i); 
+        bufferedOutputStream.write(i);
     } catch (IOException iOException) {
-      Logger.getLogger(bM.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(bM.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } finally {
       try {
         bufferedOutputStream.flush();
@@ -125,11 +126,11 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
         FileOutputStreamExtension.flush();
         FileOutputStreamExtension.close();
       } catch (IOException iOException) {
-        Logger.getLogger(bM.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      } 
-    } 
+        Logger.getLogger(bM.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
+    }
   }
-  
+
   public static void IOPropertiesUsingFile(Frame paramFrame) {
     bM bM1 = new bM(paramFrame);
     bM1.pack();
@@ -138,7 +139,6 @@ public class JDialogExtensionIopropertiesusingfile extends JDialog {
     bM1.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bM.class
  * Java compiler version: 8 (52.0)

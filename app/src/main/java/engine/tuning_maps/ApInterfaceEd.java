@@ -7,15 +7,14 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceEd implements ItemListener {
   ApInterfaceEd(dB paramdB) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.aQ, "" + jCheckBoxMenuItem.getState());
-    if (jCheckBoxMenuItem.getState())
-      ((dl)dd.IOPropertiesUsingFile().c()).e(); 
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramItemEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.aQ, "" + jCheckBoxMenuItem.getState());
+    if (jCheckBoxMenuItem.getState()) ((dl) dd.IOPropertiesUsingFile().c()).e();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/eD.class
  * Java compiler version: 8 (52.0)

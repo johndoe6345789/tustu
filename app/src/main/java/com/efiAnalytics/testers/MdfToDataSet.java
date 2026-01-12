@@ -4,8 +4,8 @@ import V.ExceptionInVPackage;
 import W.n;
 import W.o;
 import al.AbstractInAlPackage;
-import am.AmInterfaceEcho;
 import am.AmComponentHotel;
+import am.AmInterfaceEcho;
 import am.PathTostring;
 import bH.D;
 import java.io.IOException;
@@ -26,8 +26,11 @@ public class MdfToDataSet {
     SeekableByteChannel seekableByteChannel = null;
     long l = System.currentTimeMillis();
     try {
-      Path path = Paths.get("C:\\Users\\p_tob\\Dropbox\\TunerStudioProjects\\support\\MLV\\MF4\\MNOA_2024-03-19_Dyno_UpperInjectorCalWork.mf4", new String[0]);
-      seekableByteChannel = Files.newByteChannel(path, new OpenOption[] { StandardOpenOption.READ });
+      Path path =
+          Paths.get(
+              "C:\\Users\\p_tob\\Dropbox\\TunerStudioProjects\\support\\MLV\\MF4\\MNOA_2024-03-19_Dyno_UpperInjectorCalWork.mf4",
+              new String[0]);
+      seekableByteChannel = Files.newByteChannel(path, new OpenOption[] {StandardOpenOption.READ});
       String str = ExceptionInVPackage(seekableByteChannel);
       if (str.startsWith("4")) {
         PathTostring PathTostring = PathTostring.ExceptionInVPackage(path, seekableByteChannel);
@@ -46,24 +49,23 @@ public class MdfToDataSet {
           n n = AbstractInAlPackage.ExceptionInVPackage(list1);
           String str1 = ExceptionInVPackage(path.toString()) + b + ".msl";
           o.ExceptionInVPackage(n, str1, "\t");
-          if (b > 0)
-            break; 
-        } 
+          if (b > 0) break;
+        }
         D.c("  Read all DGBlocks in " + (System.currentTimeMillis() - l) + "ms");
       } else {
         throw new ExceptionInVPackage("Invalid file format for MDF4 reader");
-      } 
+      }
     } catch (IOException iOException) {
-      Logger.getLogger(MdfReader.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(MdfReader.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } finally {
       try {
         seekableByteChannel.close();
       } catch (Exception exception) {
-        Logger.getLogger(MdfToDataSet.class.getName()).log(Level.SEVERE, (String)null, exception);
-      } 
-    } 
+        Logger.getLogger(MdfToDataSet.class.getName()).log(Level.SEVERE, (String) null, exception);
+      }
+    }
   }
-  
+
   private static String ExceptionInVPackage(SeekableByteChannel paramSeekableByteChannel) {
     ByteBuffer byteBuffer = ByteBuffer.allocate(64);
     byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
@@ -73,21 +75,18 @@ public class MdfToDataSet {
     byte[] arrayOfByte = new byte[8];
     byteBuffer.get(arrayOfByte);
     String str = new String(arrayOfByte, "ISO-8859-1");
-    if (!str.equals("MDF     "))
-      throw new IOException("Invalid or corrupt MDF file: " + str); 
+    if (!str.equals("MDF     ")) throw new IOException("Invalid or corrupt MDF file: " + str);
     arrayOfByte = new byte[8];
     byteBuffer.get(arrayOfByte);
     return new String(arrayOfByte, "ISO-8859-1");
   }
-  
+
   public static String ExceptionInVPackage(String paramString) {
     int PathTostring = paramString.lastIndexOf(".");
-    if (PathTostring > 0)
-      paramString = paramString.substring(0, PathTostring); 
+    if (PathTostring > 0) paramString = paramString.substring(0, PathTostring);
     return paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/testers/MdfToDataSet.class
  * Java compiler version: 8 (52.0)

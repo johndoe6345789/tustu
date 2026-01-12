@@ -21,12 +21,11 @@ public class AkComponentQuebec extends b {
     c.a(l.d);
     a(c);
   }
-  
+
   public String i() {
     return X.b;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/q.class
  * Java compiler version: 8 (52.0)

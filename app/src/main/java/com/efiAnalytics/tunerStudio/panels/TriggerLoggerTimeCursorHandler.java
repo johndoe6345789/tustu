@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 class TriggerLoggerTimeCursorHandler implements aY {
   TriggerLoggerTimeCursorHandler(TriggerLoggerPanel paramTriggerLoggerPanel) {}
-  
+
   public void a(double paramDouble1, double paramDouble2) {
     String str1 = this.a.b.getText();
     byte b = 0;
@@ -30,16 +30,16 @@ class TriggerLoggerTimeCursorHandler implements aY {
               Rectangle rectangle = this.a.Y.getBounds();
               rectangle.y += this.a.d.getHeight() * (b - 10) / this.a.c.getRowCount();
               this.a.d.scrollRectToVisible(rectangle);
-            } 
+            }
             break;
-          } 
+          }
           b++;
-        } catch (NumberFormatException numberFormatException) {}
-      } 
-    } 
+        } catch (NumberFormatException numberFormatException) {
+        }
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/an.class
  * Java compiler version: 8 (52.0)

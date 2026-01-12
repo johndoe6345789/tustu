@@ -5,20 +5,21 @@ import javax.swing.filechooser.FileFilter;
 
 public class ExtensionFileFilter extends FileFilter {
   private String b;
-  
+
   String a = null;
-  
+
   public ExtensionFileFilter(String paramString) {
     this.b = paramString;
   }
-  
+
   public boolean accept(File paramFile) {
-    return paramFile.isDirectory() ? true : (paramFile.getName().toLowerCase().endsWith("." + this.b));
+    return paramFile.isDirectory()
+        ? true
+        : (paramFile.getName().toLowerCase().endsWith("." + this.b));
   }
-  
+
   public String getDescription() {
-    if (this.a != null)
-      return this.a; 
+    if (this.a != null) return this.a;
     String str = this.b.toLowerCase();
     switch (str) {
       case "mlg":
@@ -37,15 +38,14 @@ public class ExtensionFileFilter extends FileFilter {
         return "BigComm Project Archive (*.bsproj)";
       case "xls":
         return "Excel (*.xls)";
-    } 
+    }
     return this.b + " File (*." + str + ")";
   }
-  
+
   public String a() {
     return this.b;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cx.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ListenerInBcPackage implements ActionListener {
   ListenerInBcPackage(e parame) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bC/g.class
  * Java compiler version: 8 (52.0)

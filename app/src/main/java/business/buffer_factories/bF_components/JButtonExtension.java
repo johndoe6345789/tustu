@@ -8,16 +8,15 @@ class JButtonExtension extends JButton {
     super(paramString, paramIcon);
     super.setEnabled(false);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     if (this.a.d()) {
       super.setEnabled(paramBoolean);
     } else {
       super.setEnabled(false);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/r.class
  * Java compiler version: 8 (52.0)

@@ -17,68 +17,65 @@ import java.util.StringTokenizer;
 
 public class NetworkInAyPackage {
   private int e = 21852;
-  
+
   public static String a = "Service:";
-  
+
   public static String b = "DISCOVER_HTTP_SERVICES";
-  
+
   private g f = null;
-  
+
   List c = new ArrayList();
-  
+
   private boolean g = false;
-  
+
   private static final Map h = new HashMap<>();
-  
+
   static boolean d = true;
-  
+
   private NetworkInAyPackage() {}
-  
+
   private NetworkInAyPackage(int paramInt) {
     this.e = paramInt;
   }
-  
+
   public static f a(int paramInt) {
-    f f1 = (f)h.get(Integer.valueOf(paramInt));
+    f f1 = (f) h.get(Integer.valueOf(paramInt));
     if (f1 == null) {
       f1 = new f(paramInt);
       h.put(Integer.valueOf(paramInt), f1);
-    } 
+    }
     return f1;
   }
-  
+
   public static f a() {
     return a(21852);
   }
-  
+
   public void a(e parame) {
     this.c.add(parame);
   }
-  
+
   public void b() {
     if (this.f == null || !this.f.isAlive()) {
       this.f = new g(this);
       this.f.start();
     } else {
       this.f.a();
-    } 
+    }
   }
-  
+
   private void a(c paramc) {
-    for (e e : this.c)
-      e.a(paramc); 
+    for (e e : this.c) e.a(paramc);
   }
-  
+
   private void c() {
-    for (e e : this.c)
-      e.a(); 
+    for (e e : this.c) e.a();
   }
-  
+
   private void d() {
-    for (e e : this.c)
-      e.b(); 
+    for (e e : this.c) e.b();
   }
-  
+
   private void a(String paramString1, String paramString2) {
     ArrayList<c> arrayList = new ArrayList();
     c c = null;
@@ -91,50 +88,51 @@ public class NetworkInAyPackage {
           c = new c(str1, paramString1);
           arrayList.add(c);
           continue;
-        } 
+        }
         if (c != null) {
           String str1 = str.substring(0, str.indexOf("="));
           String str2 = str.substring(str.indexOf("=") + 1, str.length());
           str2 = a(c, str2);
           c.a(str1, str2);
           continue;
-        } 
+        }
         D.c("Service Attribute given, but no service defined? " + str);
-      } catch (Exception exception) {}
-    } 
-    for (c c1 : arrayList)
-      a(c1); 
+      } catch (Exception exception) {
+      }
+    }
+    for (c c1 : arrayList) a(c1);
   }
-  
+
   private String a(c paramc, String paramString) {
     if (paramString.contains("$ipAddress"))
-      paramString = X.b(paramString, "$ipAddress", paramc.c()); 
+      paramString = X.b(paramString, "$ipAddress", paramc.c());
     return paramString;
   }
-  
+
   private void e() {
     c();
     DatagramSocket datagramSocket = new DatagramSocket();
     datagramSocket.setBroadcast(true);
     this.g = true;
     byte[] arrayOfByte = b.getBytes();
-    DatagramPacket datagramPacket = new DatagramPacket(arrayOfByte, arrayOfByte.length, InetAddress.getByName("255.255.255.255"), this.e);
+    DatagramPacket datagramPacket =
+        new DatagramPacket(
+            arrayOfByte, arrayOfByte.length, InetAddress.getByName("255.255.255.255"), this.e);
     datagramSocket.send(datagramPacket);
     Enumeration<NetworkInterface> enumeration = NetworkInterface.getNetworkInterfaces();
     while (enumeration.hasMoreElements()) {
       NetworkInterface networkInterface = enumeration.nextElement();
-      if (networkInterface.isLoopback() || !networkInterface.isUp())
-        continue; 
+      if (networkInterface.isLoopback() || !networkInterface.isUp()) continue;
       for (InterfaceAddress interfaceAddress : networkInterface.getInterfaceAddresses()) {
         InetAddress inetAddress = interfaceAddress.getBroadcast();
-        if (inetAddress == null)
-          continue; 
+        if (inetAddress == null) continue;
         try {
           datagramPacket = new DatagramPacket(arrayOfByte, arrayOfByte.length, inetAddress, this.e);
           datagramSocket.send(datagramPacket);
-        } catch (Exception exception) {}
-      } 
-    } 
+        } catch (Exception exception) {
+        }
+      }
+    }
     ArrayList<String> arrayList = new ArrayList();
     long l = System.currentTimeMillis() + 1500L;
     datagramSocket.setSoTimeout(2500);
@@ -151,18 +149,25 @@ public class NetworkInAyPackage {
           arrayList.add(str3);
           boolean bool = false;
           if (bool)
-            a("192.168.0.122", a + "LogFileServer\nLink=http://192.168.4.77:16680/LogFileActions\nsupportsList=true\nsupportsDownload=true\nsupportsDelete=true\n"); 
-        } 
-      } catch (SocketTimeoutException socketTimeoutException) {}
+            a(
+                "192.168.0.122",
+                a
+                    + "LogFileServer\n"
+                    + "Link=http://192.168.4.77:16680/LogFileActions\n"
+                    + "supportsList=true\n"
+                    + "supportsDownload=true\n"
+                    + "supportsDelete=true\n");
+        }
+      } catch (SocketTimeoutException socketTimeoutException) {
+      }
       if (l - System.currentTimeMillis() <= 0L) {
         datagramSocket.close();
         this.g = false;
         return;
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ay/f.class
  * Java compiler version: 8 (52.0)

@@ -6,16 +6,14 @@ import java.awt.Component;
 
 class RunnableImpl implements Runnable {
   RunnableImpl(a parama) {}
-  
+
   public void run() {
-    if (this.a.c != null)
-      this.a.c.dispose(); 
+    if (this.a.c != null) this.a.c.dispose();
     this.a.c = new d(this.a.f, a.a(this.a, "DistantDesktop Launcher"), a.a(this.a));
-    bV.a(this.a.f, (Component)this.a.c);
+    bV.a(this.a.f, (Component) this.a.c);
     this.a.c.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aM/b.class
  * Java compiler version: 8 (52.0)

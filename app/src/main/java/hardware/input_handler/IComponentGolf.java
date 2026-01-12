@@ -10,49 +10,46 @@ import java.util.logging.Logger;
 
 public class IComponentGolf {
   public static int a = 250;
-  
+
   File b = new File(HInterfaceHotel.a(), "MLV.pipe");
-  
+
   private static g d = null;
-  
+
   private final int e = 86400000;
-  
+
   private final List f = new ArrayList();
-  
+
   HInterfaceHotel c = null;
-  
+
   private boolean g = false;
-  
+
   public static g a() {
-    if (d == null)
-      d = new g(); 
+    if (d == null) d = new g();
     return d;
   }
-  
+
   public void b() {
-    if (this.b.lastModified() < System.currentTimeMillis() - 86400000L)
-      this.b.delete(); 
+    if (this.b.lastModified() < System.currentTimeMillis() - 86400000L) this.b.delete();
     d();
     this.c = new HInterfaceHotel(this);
     this.c.start();
   }
-  
+
   public void c() {
     this.b.delete();
     HInterfaceHotel.a(this.c);
   }
-  
+
   public void a(f paramf) {
     this.f.add(paramf);
   }
-  
+
   private void a(String paramString1, String paramString2) {
     for (f f : this.f) {
-      if (f.a(paramString1, paramString2))
-        return; 
-    } 
+      if (f.a(paramString1, paramString2)) return;
+    }
   }
-  
+
   private void d() {
     if (this.b.exists()) {
       this.b.setLastModified(System.currentTimeMillis());
@@ -61,11 +58,11 @@ public class IComponentGolf {
         this.b.createNewFile();
       } catch (IOException iOException) {
         Logger.getLogger(g.class.getName()).log(Level.SEVERE, "Failed to create Pipe", iOException);
-      } 
-    } 
+      }
+    }
     this.b.deleteOnExit();
   }
-  
+
   private void e() {
     // Byte code:
     //   0: aconst_null
@@ -174,7 +171,8 @@ public class IComponentGolf {
     //   205: getstatic java/util/logging/Level.WARNING : Ljava/util/logging/Level;
     //   208: ldc 'Could not read from pipe file.'
     //   210: aload_2
-    //   211: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   211: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   214: aload_0
     //   215: getfield b : Ljava/io/File;
     //   218: invokevirtual delete : ()Z
@@ -214,12 +212,11 @@ public class IComponentGolf {
     //   242	244	242	finally
     //   248	252	255	java/lang/Exception
   }
-  
+
   public void a(boolean paramBoolean) {
     this.g = paramBoolean;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/i/g.class
  * Java compiler version: 8 (52.0)

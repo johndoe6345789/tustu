@@ -2,18 +2,17 @@ package G;
 
 class ThreadedInGPackage extends Thread {
   o a = null;
-  
+
   public void ax(an paraman, o paramo) {
     super("MSyncReadProcess");
     setDaemon(true);
     this.a = paramo;
   }
-  
+
   public void run() {
     this.b.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/ax.class
  * Java compiler version: 8 (52.0)

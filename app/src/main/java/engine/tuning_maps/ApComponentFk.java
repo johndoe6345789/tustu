@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApComponentFk implements ActionListener {
   fk(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().l(dd.a().c());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fk.class
  * Java compiler version: 8 (52.0)

@@ -4,10 +4,9 @@ import java.awt.Component;
 
 public interface QInterfaceIndia {
   void a(Component paramComponent);
-  
+
   void b(Component paramComponent);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/q/i.class
  * Java compiler version: 8 (52.0)

@@ -1,10 +1,10 @@
 package A;
 
-import G.F;
 import G.AeInterfaceMikeTostring;
+import G.F;
 import G.l;
-import V.VInterfaceBravo;
 import V.ExceptionGetmessage;
+import V.VInterfaceBravo;
 import ae.AeInterfaceOscar;
 import bH.J;
 import bH.c;
@@ -15,60 +15,63 @@ import java.util.logging.Logger;
 
 public class ThreadedInAPackage extends t {
   AeInterfaceMikeTostring a = null;
-  
+
   l VInterfaceBravo = null;
-  
+
   VInterfaceBravo c = null;
-  
+
   n ExceptionGetmessage = null;
-  
+
   private String al = "ECU";
-  
+
   public ThreadedInAPackage(F paramF) {
     super(paramF);
   }
-  
+
   public void f() {
     if (this.ExceptionGetmessage != null && this.ExceptionGetmessage.isAlive()) {
       this.ExceptionGetmessage.a = false;
       this.ExceptionGetmessage.interrupt();
-    } 
+    }
     this.ExceptionGetmessage = new n(this);
     this.ExceptionGetmessage.start();
   }
-  
+
   public void g() {
     if (this.ExceptionGetmessage != null && this.ExceptionGetmessage.isAlive())
-      this.ExceptionGetmessage.a = false; 
+      this.ExceptionGetmessage.a = false;
   }
-  
+
   public AeInterfaceMikeTostring a(f paramf, List paramList) {
     this.a = null;
     this.VInterfaceBravo = null;
     this.c = null;
     char c = '憨';
-    if (!J.a())
-      c = '憨'; 
+    if (!J.a()) c = '憨';
     long l1 = System.currentTimeMillis();
     n.a(this.ExceptionGetmessage, paramf, paramList);
     do {
       try {
         Thread.sleep(20L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } while (this.VInterfaceBravo == null && this.c == null && this.a == null && System.currentTimeMillis() - l1 < c && this.ExceptionGetmessage.ExceptionGetmessage);
-    if (this.VInterfaceBravo == null && this.c == null && System.currentTimeMillis() - l1 > (c - 1)) {
+        Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    } while (this.VInterfaceBravo == null
+        && this.c == null
+        && this.a == null
+        && System.currentTimeMillis() - l1 < c
+        && this.ExceptionGetmessage.ExceptionGetmessage);
+    if (this.VInterfaceBravo == null
+        && this.c == null
+        && System.currentTimeMillis() - l1 > (c - 1)) {
       this.VInterfaceBravo = new l("Timeout trying to connect to: " + paramf.n());
       f();
-    } 
-    if (this.VInterfaceBravo != null)
-      throw this.VInterfaceBravo; 
-    if (this.c != null)
-      throw this.c; 
+    }
+    if (this.VInterfaceBravo != null) throw this.VInterfaceBravo;
+    if (this.c != null) throw this.c;
     return this.a;
   }
-  
+
   private synchronized AeInterfaceMikeTostring VInterfaceBravo(f paramf, List paramList) {
     // Byte code:
     //   0: aconst_null
@@ -117,7 +120,8 @@ public class ThreadedInAPackage extends t {
     //   98: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   101: aconst_null
     //   102: aload #7
-    //   104: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   104: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   107: aload_2
     //   108: invokeinterface iterator : ()Ljava/util/Iterator;
     //   113: astore #7
@@ -600,7 +604,8 @@ public class ThreadedInAPackage extends t {
     //   1190: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1193: aconst_null
     //   1194: aload #7
-    //   1196: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1196: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1199: goto -> 1148
     //   1202: goto -> 1661
     //   1205: astore #5
@@ -652,7 +657,8 @@ public class ThreadedInAPackage extends t {
     //   1322: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1325: aconst_null
     //   1326: aload #7
-    //   1328: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1328: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1331: goto -> 1280
     //   1334: goto -> 1661
     //   1337: astore #5
@@ -693,7 +699,8 @@ public class ThreadedInAPackage extends t {
     //   1425: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1428: aconst_null
     //   1429: aload #7
-    //   1431: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1431: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1434: goto -> 1383
     //   1437: goto -> 1661
     //   1440: astore #5
@@ -724,7 +731,8 @@ public class ThreadedInAPackage extends t {
     //   1501: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1504: aconst_null
     //   1505: aload #7
-    //   1507: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1507: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1510: goto -> 1459
     //   1513: goto -> 1661
     //   1516: astore #5
@@ -754,7 +762,8 @@ public class ThreadedInAPackage extends t {
     //   1576: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1579: aconst_null
     //   1580: aload #7
-    //   1582: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1582: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1585: goto -> 1534
     //   1588: goto -> 1661
     //   1591: astore #19
@@ -782,7 +791,8 @@ public class ThreadedInAPackage extends t {
     //   1646: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1649: aconst_null
     //   1650: aload #22
-    //   1652: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1652: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1655: goto -> 1604
     //   1658: aload #19
     //   1660: athrow
@@ -821,32 +831,34 @@ public class ThreadedInAPackage extends t {
     //   1591	1593	1591	finally
     //   1626	1633	1636	java/lang/InterruptedException
   }
-  
+
   public void a(String paramString) {
     this.al = paramString;
   }
-  
+
   private int s() {
     byte[] arrayOfByte = new byte[1];
     arrayOfByte[0] = -73;
     try {
       byte[] arrayOfByte1 = a(arrayOfByte, 450L, 350L, 6, null);
-      return (arrayOfByte1 == null || arrayOfByte1[0] != -36) ? -1 : c.a(arrayOfByte1, 1, 2, true, false);
+      return (arrayOfByte1 == null || arrayOfByte1[0] != -36)
+          ? -1
+          : c.a(arrayOfByte1, 1, 2, true, false);
     } catch (IOException iOException) {
-      Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } catch (VInterfaceBravo b1) {
-      Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String)null, (Throwable)b1);
+      Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String) null, (Throwable) b1);
     } catch (ExceptionGetmessage ExceptionGetmessage) {
-      Logger.getLogger(m.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionGetmessage);
-    } 
+      Logger.getLogger(m.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) ExceptionGetmessage);
+    }
     return -1;
   }
-  
+
   public ae.m VInterfaceBravo(int paramInt) {
     return AeInterfaceOscar.a(paramInt);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/A/m.class
  * Java compiler version: 8 (52.0)

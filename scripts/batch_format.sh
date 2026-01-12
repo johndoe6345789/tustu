@@ -21,7 +21,7 @@ if [ -f /tmp/google-java-format.jar ]; then
     echo ""
     echo "[2/3] Running google-java-format..."
     find app/src/main/java -name "*.java" | while read -r file; do
-        java -jar /tmp/google-java-format.jar --replace "$file" 2>/dev/null || true
+        java -jar /tmp/google-java-format.jar --replace "$file"
     done
     echo "Formatted all Java files."
 else

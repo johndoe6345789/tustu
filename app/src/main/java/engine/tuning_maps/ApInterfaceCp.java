@@ -7,13 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceCp implements ActionListener {
   ApInterfaceCp(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     IOProperties.c(IOProperties.aB, Boolean.toString(jCheckBoxMenuItem.getState()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cP.class
  * Java compiler version: 8 (52.0)

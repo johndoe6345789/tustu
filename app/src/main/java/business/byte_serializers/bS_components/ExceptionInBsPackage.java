@@ -2,12 +2,11 @@ package business.byte_serializers.bS_components;
 
 public class ExceptionInBsPackage extends Exception {
   private int a = 0;
-  
+
   public ExceptionInBsPackage(String paramString) {
     super(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bS/h.class
  * Java compiler version: 8 (52.0)

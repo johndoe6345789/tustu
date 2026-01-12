@@ -24,21 +24,20 @@ import r.ThreadedFile;
 
 public class ApplicationPluginExtension {
   static HashMap ExceptionInVPackage = new HashMap<>();
-  
+
   private static l e = null;
-  
+
   Map b = new HashMap<>();
-  
+
   Map c = new HashMap<>();
-  
+
   Map d = new HashMap<>();
-  
+
   public static l ExceptionInVPackage() {
-    if (e == null)
-      e = new l(); 
+    if (e == null) e = new l();
     return e;
   }
-  
+
   public static void b() {
     try {
       c c = new c();
@@ -51,38 +50,39 @@ public class ApplicationPluginExtension {
       ControllerAccess.getInstance().setBurnExecutor(new f());
       ControllerAccess.getInstance().setOnlineExecutor(new p());
     } catch (Exception exception) {
-      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, exception);
-      throw new ExceptionInVPackage("Failed to initialize Plugin Server, error:\n" + exception.getMessage());
-    } 
+      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, exception);
+      throw new ExceptionInVPackage(
+          "Failed to initialize Plugin Server, error:\n" + exception.getMessage());
+    }
   }
-  
+
   public ApplicationPlugin ExceptionInVPackage(String paramString) {
     ApplicationPlugin applicationPlugin;
-    Class<ApplicationPlugin> clazz = (Class)this.b.get(paramString);
+    Class<ApplicationPlugin> clazz = (Class) this.b.get(paramString);
     try {
       applicationPlugin = clazz.newInstance();
       applicationPlugin.initialize(ControllerAccess.getInstance());
     } catch (InstantiationException instantiationException) {
-      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
+      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, instantiationException);
       throw new ExceptionInVPackage("Unable to create Plugin: " + paramString);
     } catch (IllegalAccessException illegalAccessException) {
-      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
+      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, illegalAccessException);
       throw new ExceptionInVPackage("Unable to create Plugin: " + paramString);
     } catch (Exception exception) {
-      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, exception);
       throw new ExceptionInVPackage("Plugin Not Found: " + paramString);
-    } 
+    }
     return applicationPlugin;
   }
-  
+
   public Collection c() {
     return this.c.values();
   }
-  
+
   public ApplicationPlugin b(String paramString) {
-    return (ApplicationPlugin)this.c.get(paramString);
+    return (ApplicationPlugin) this.c.get(paramString);
   }
-  
+
   public void d() {
     File file = ThreadedFile.b();
     File[] arrayOfFile = file.listFiles(new o(this));
@@ -90,45 +90,64 @@ public class ApplicationPluginExtension {
       try {
         c(arrayOfFile[b]);
       } catch (Exception exception) {
-        D.ExceptionInVPackage("Failed to initialize plugin in file:\n" + arrayOfFile[b].getAbsolutePath(), exception, null);
-      } 
-    } 
+        D.ExceptionInVPackage(
+            "Failed to initialize plugin in file:\n" + arrayOfFile[b].getAbsolutePath(),
+            exception,
+            null);
+      }
+    }
   }
-  
+
   private void c(File paramFile) {
     JarInputStream jarInputStream = null;
     D.c("Loading Plugin from " + paramFile.getName());
     try {
       Class<?> clazz;
-      BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(paramFile));
+      BufferedInputStream bufferedInputStream =
+          new BufferedInputStream(new FileInputStream(paramFile));
       jarInputStream = new JarInputStream(bufferedInputStream);
       Manifest manifest = jarInputStream.getManifest();
       String str = manifest.getMainAttributes().getValue("ApplicationPlugin");
       if (str == null || str.length() == 0)
-        str = manifest.getMainAttributes().getValue("Main-Class"); 
+        str = manifest.getMainAttributes().getValue("Main-Class");
       if (str == null || str.length() == 0)
-        throw new ExceptionInVPackage("ApplicationPlugin not defined in Manifest for jar:\n" + paramFile.getAbsolutePath()); 
-      URLClassLoader uRLClassLoader = URLClassLoader.newInstance(new URL[] { paramFile.toURI().toURL() }, getClass().getClassLoader());
+        throw new ExceptionInVPackage(
+            "ApplicationPlugin not defined in Manifest for jar:\n" + paramFile.getAbsolutePath());
+      URLClassLoader uRLClassLoader =
+          URLClassLoader.newInstance(
+              new URL[] {paramFile.toURI().toURL()}, getClass().getClassLoader());
       try {
         clazz = Class.forName(str, true, uRLClassLoader);
       } catch (ClassNotFoundException classNotFoundException) {
-        throw new ExceptionInVPackage("ApplicationPlugin class '" + str + "' not found in jar file:\n" + paramFile.getAbsolutePath());
-      } 
+        throw new ExceptionInVPackage(
+            "ApplicationPlugin class '"
+                + str
+                + "' not found in jar file:\n"
+                + paramFile.getAbsolutePath());
+      }
       Class<? extends ApplicationPlugin> clazz1 = clazz.asSubclass(ApplicationPlugin.class);
       try {
         ApplicationPlugin applicationPlugin = clazz1.newInstance();
         if (applicationPlugin.getRequiredPluginSpec() > 1.0D)
-          throw new ExceptionInVPackage("Plugin requires Specification: " + applicationPlugin.getRequiredPluginSpec() + "\nCurrently using: " + 1.0D); 
+          throw new ExceptionInVPackage(
+              "Plugin requires Specification: "
+                  + applicationPlugin.getRequiredPluginSpec()
+                  + "\nCurrently using: "
+                  + 1.0D);
         this.b.put(applicationPlugin.getIdName(), clazz1);
         this.c.put(applicationPlugin.getIdName(), applicationPlugin);
         this.d.put(applicationPlugin.getIdName(), paramFile);
       } catch (InstantiationException instantiationException) {
-        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, instantiationException);
-        throw new ExceptionInVPackage("Failed to instantiate '" + str + "' in jar file:\n" + paramFile.getAbsolutePath());
+        Logger.getLogger(l.class.getName())
+            .log(Level.SEVERE, (String) null, instantiationException);
+        throw new ExceptionInVPackage(
+            "Failed to instantiate '" + str + "' in jar file:\n" + paramFile.getAbsolutePath());
       } catch (IllegalAccessException illegalAccessException) {
-        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, illegalAccessException);
-        throw new ExceptionInVPackage("Failed to instantiate '" + str + "' in jar file:\n" + paramFile.getAbsolutePath());
-      } 
+        Logger.getLogger(l.class.getName())
+            .log(Level.SEVERE, (String) null, illegalAccessException);
+        throw new ExceptionInVPackage(
+            "Failed to instantiate '" + str + "' in jar file:\n" + paramFile.getAbsolutePath());
+      }
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Plugin file not found: " + paramFile.getAbsolutePath());
     } catch (IOException iOException) {
@@ -138,39 +157,55 @@ public class ApplicationPluginExtension {
       throw new ExceptionInVPackage("Error loading Plugin file: " + paramFile.getAbsolutePath());
     } catch (AbstractMethodError abstractMethodError) {
       abstractMethodError.printStackTrace();
-      throw new ExceptionInVPackage("Error calling core Plugin API method: \n" + abstractMethodError.getMessage() + "\nOn Plugin in file:\n" + paramFile.getName());
+      throw new ExceptionInVPackage(
+          "Error calling core Plugin API method: \n"
+              + abstractMethodError.getMessage()
+              + "\nOn Plugin in file:\n"
+              + paramFile.getName());
     } catch (Error error) {
       error.printStackTrace();
-      throw new ExceptionInVPackage("This jar file does not meet minimum Plugin API Specifications: \n" + paramFile.getAbsolutePath());
+      throw new ExceptionInVPackage(
+          "This jar file does not meet minimum Plugin API Specifications: \n"
+              + paramFile.getAbsolutePath());
     } finally {
       try {
-        if (jarInputStream != null)
-          jarInputStream.close(); 
+        if (jarInputStream != null) jarInputStream.close();
       } catch (IOException iOException) {
-        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      } 
-    } 
+        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
+    }
   }
-  
+
   public ApplicationPlugin ExceptionInVPackage(File paramFile) {
     JarInputStream jarInputStream = null;
     D.c("Loading Plugin from " + paramFile.getName());
     try {
       Class<?> clazz;
-      BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(paramFile));
+      BufferedInputStream bufferedInputStream =
+          new BufferedInputStream(new FileInputStream(paramFile));
       jarInputStream = new JarInputStream(bufferedInputStream);
       Manifest manifest = jarInputStream.getManifest();
       String str = manifest.getMainAttributes().getValue("ApplicationPlugin");
       if (str == null || str.length() == 0)
-        str = manifest.getMainAttributes().getValue("Main-Class"); 
+        str = manifest.getMainAttributes().getValue("Main-Class");
       if (str == null || str.length() == 0)
-        throw new ExceptionInVPackage("File does not appear to be ExceptionInVPackage valid " + ExceptionInVPackage.b + " Plugin\n ApplicationPlugin not defined in Manifest of jar file:\n" + paramFile.getAbsolutePath()); 
-      URLClassLoader uRLClassLoader = URLClassLoader.newInstance(new URL[] { paramFile.toURI().toURL() }, getClass().getClassLoader());
+        throw new ExceptionInVPackage(
+            "File does not appear to be ExceptionInVPackage valid "
+                + ExceptionInVPackage.b
+                + " Plugin\n ApplicationPlugin not defined in Manifest of jar file:\n"
+                + paramFile.getAbsolutePath());
+      URLClassLoader uRLClassLoader =
+          URLClassLoader.newInstance(
+              new URL[] {paramFile.toURI().toURL()}, getClass().getClassLoader());
       try {
         clazz = Class.forName(str, true, uRLClassLoader);
       } catch (ClassNotFoundException classNotFoundException) {
-        throw new ExceptionInVPackage("ApplicationPlugin class '" + str + "' not found in jar file:\n" + paramFile.getAbsolutePath());
-      } 
+        throw new ExceptionInVPackage(
+            "ApplicationPlugin class '"
+                + str
+                + "' not found in jar file:\n"
+                + paramFile.getAbsolutePath());
+      }
       Class<? extends ApplicationPlugin> clazz1 = clazz.asSubclass(ApplicationPlugin.class);
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Plugin file not found: " + paramFile.getAbsolutePath());
@@ -180,33 +215,33 @@ public class ApplicationPluginExtension {
       try {
         jarInputStream.close();
       } catch (IOException iOException) {
-        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      } 
-    } 
+        Logger.getLogger(l.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
+    }
   }
-  
+
   public boolean c(String paramString) {
     return (this.b.get(paramString) != null);
   }
-  
+
   public void d(String paramString) {
-    File file = (File)this.d.get(paramString);
+    File file = (File) this.d.get(paramString);
     if (file == null || !file.exists())
-      throw new ExceptionInVPackage("Plugin " + paramString + " not installed or file name changed."); 
+      throw new ExceptionInVPackage(
+          "Plugin " + paramString + " not installed or file name changed.");
     this.b.remove(paramString);
     this.c.remove(paramString);
     c(file);
   }
-  
+
   public File e(String paramString) {
-    return (File)this.d.get(paramString);
+    return (File) this.d.get(paramString);
   }
-  
+
   public boolean b(File paramFile) {
     return this.d.containsValue(paramFile);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bl/l.class
  * Java compiler version: 8 (52.0)

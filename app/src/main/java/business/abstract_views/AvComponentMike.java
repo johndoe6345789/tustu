@@ -8,7 +8,6 @@ final class AvComponentMike implements p {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/av/m.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

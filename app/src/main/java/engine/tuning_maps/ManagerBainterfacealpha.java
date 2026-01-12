@@ -12,9 +12,9 @@ import s.SComponentGolf;
 
 class ManagerBainterfacealpha extends JPanel implements BaInterfaceBravo {
   JComboBox BaInterfaceAlpha = new JComboBox();
-  
+
   ArrayList BaInterfaceBravo = new ArrayList();
-  
+
   public ManagerBainterfacealpha(dB paramdB) {
     setLayout(new BorderLayout());
     add("North", new JLabel(SComponentGolf.BaInterfaceBravo("Device")));
@@ -24,40 +24,39 @@ class ManagerBainterfacealpha extends JPanel implements BaInterfaceBravo {
     add("Center", jPanel);
     this.BaInterfaceAlpha.addActionListener(new gH(this, paramdB));
   }
-  
+
   public void BaInterfaceAlpha(String paramString) {
     this.BaInterfaceAlpha.addItem(paramString);
   }
-  
+
   public void BaInterfaceAlpha() {
     this.BaInterfaceAlpha.removeAllItems();
   }
-  
+
   public List BaInterfaceBravo() {
     ArrayList<String> arrayList = new ArrayList();
     for (byte b1 = 0; b1 < this.BaInterfaceAlpha.getItemCount(); b1++)
-      arrayList.add(this.BaInterfaceAlpha.getItemAt(b1)); 
+      arrayList.add(this.BaInterfaceAlpha.getItemAt(b1));
     return arrayList;
   }
-  
+
   public void BaInterfaceBravo(String paramString) {
     this.BaInterfaceAlpha.setSelectedItem(paramString);
   }
-  
+
   public void BaInterfaceAlpha(BaInterfaceAlpha parama) {
     this.BaInterfaceBravo.add(parama);
   }
-  
+
   private void d(String paramString) {
     for (BaInterfaceAlpha BaInterfaceAlpha : this.BaInterfaceBravo)
-      BaInterfaceAlpha.BaInterfaceAlpha(paramString); 
+      BaInterfaceAlpha.BaInterfaceAlpha(paramString);
   }
-  
+
   public void c(String paramString) {
     this.BaInterfaceAlpha.removeItem(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gG.class
  * Java compiler version: 8 (52.0)

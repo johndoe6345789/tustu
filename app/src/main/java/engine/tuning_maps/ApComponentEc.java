@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApComponentEc implements ActionListener {
   ec(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c.c(this.a.d);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ec.class
  * Java compiler version: 8 (52.0)

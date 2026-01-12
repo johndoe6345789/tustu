@@ -17,13 +17,13 @@ import s.SComponentGolf;
 
 public class UIInTPackage extends a implements f {
   JComboBox a = new JComboBox();
-  
+
   JPanel b = new JPanel();
-  
+
   String c = SComponentGolf.b("Default");
-  
+
   private boolean d = false;
-  
+
   public UIInTPackage(Window paramWindow, ai paramai) {
     super(paramWindow, "Select Font Family");
     a(paramai);
@@ -34,8 +34,7 @@ public class UIInTPackage extends a implements f {
     this.a.setEditable(false);
     this.a.addItem(this.c);
     String[] arrayOfString = cq.a().c();
-    for (byte b = 0; b < arrayOfString.length; b++)
-      this.a.addItem(arrayOfString[b]); 
+    for (byte b = 0; b < arrayOfString.length; b++) this.a.addItem(arrayOfString[b]);
     s s = c().a().get(0);
     this.a.setSelectedItem(s.getFontFamily());
     this.a.addActionListener(new aB(this));
@@ -48,15 +47,15 @@ public class UIInTPackage extends a implements f {
     add("South", jPanel);
     pack();
   }
-  
+
   public void a(String paramString) {
     if (paramString == null || paramString.equals("")) {
       this.a.setSelectedItem(this.c);
     } else {
       this.a.setSelectedItem(paramString);
-    } 
+    }
   }
-  
+
   public void e(ArrayList<s> paramArrayList) {
     if (paramArrayList.size() > 0) {
       this.a.setEnabled(true);
@@ -68,24 +67,23 @@ public class UIInTPackage extends a implements f {
         if (!s.getFontFamily().equals(s1.getFontFamily())) {
           this.a.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
     } else {
       this.a.setEnabled(false);
-    } 
+    }
   }
-  
+
   public JPanel a() {
     return this.b;
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.d = true;
     e(paramArrayList);
     this.d = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aA.class
  * Java compiler version: 8 (52.0)

@@ -29,25 +29,37 @@ import s.SComponentGolf;
 
 public class AyInterfaceSierra extends JPanel {
   PropertiesExtension PropertiesExtension = null;
-  
+
   A b = new A(this);
-  
+
   U c = new U();
-  
+
   JButton d = null;
-  
+
   JButton e = null;
-  
+
   UI f = null;
-  
+
   public AyInterfaceSierra(PropertiesExtension parama) {
     this.PropertiesExtension = parama;
     setLayout(new BorderLayout());
     JLabel jLabel = new JLabel();
-    String str = "<html><p>" + SComponentGolf.b("Restore Points are automatically saved on key events set in preferences.") + " " + SComponentGolf.b("Each Restore Point contains all Controller Settings for that point in time.") + " " + SComponentGolf.b("Below you can retrieve those settings or view changes made since that Restore Point.") + "</p></html>";
+    String str =
+        "<html><p>"
+            + SComponentGolf.b(
+                "Restore Points are automatically saved on key events set in preferences.")
+            + " "
+            + SComponentGolf.b(
+                "Each Restore Point contains all Controller Settings for that point in time.")
+            + " "
+            + SComponentGolf.b(
+                "Below you can retrieve those settings or view changes made since that Restore"
+                    + " Point.")
+            + "</p></html>";
     jLabel.setText(str);
     jLabel.setPreferredSize(new Dimension(eJ.PropertiesExtension(300), eJ.PropertiesExtension(80)));
-    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("restore-icon-02.png"));
+    Image image =
+        Toolkit.getDefaultToolkit().getImage(getClass().getResource("restore-icon-02.png"));
     ImageIcon imageIcon = new ImageIcon(image);
     jLabel.setIcon(imageIcon);
     jLabel.setIconTextGap(eJ.PropertiesExtension(15));
@@ -61,9 +73,9 @@ public class AyInterfaceSierra extends JPanel {
     this.f = new UI();
     this.f.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Controller to Restore")));
     this.f.PropertiesExtension(new t(this));
-    jPanel1.add("North", (Component)this.f);
+    jPanel1.add("North", (Component) this.f);
     this.c.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Selected Restore Point")));
-    jPanel1.add("Center", (Component)this.c);
+    jPanel1.add("Center", (Component) this.c);
     add("Center", jPanel1);
     PropertiesExtension();
     this.b.addListSelectionListener(new u(this));
@@ -86,24 +98,23 @@ public class AyInterfaceSierra extends JPanel {
     this.b.addListSelectionListener(new x(this));
     add("South", jPanel2);
   }
-  
+
   public void PropertiesExtension(Component paramComponent) {
     bV.PropertiesExtension(this, paramComponent, SComponentGolf.b("Tune Restore Points"), null);
   }
-  
+
   private void PropertiesExtension() {
     this.b.PropertiesExtension.clear();
     y y = new y(this);
-    ArrayList<?> arrayList = z.PropertiesExtension(ThreadedFile.b(this.PropertiesExtension), PropertiesExtension.cw, y);
+    ArrayList<?> arrayList =
+        z.PropertiesExtension(ThreadedFile.b(this.PropertiesExtension), PropertiesExtension.cw, y);
     z z = new z(this);
     Collections.sort(arrayList, z);
     Iterator<?> iterator = arrayList.iterator();
-    while (iterator.hasNext())
-      this.b.PropertiesExtension((FileInWPackage)iterator.next()); 
+    while (iterator.hasNext()) this.b.PropertiesExtension((FileInWPackage) iterator.next());
     this.b.setBorder(BorderFactory.createLoweredBevelBorder());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/s.class
  * Java compiler version: 8 (52.0)

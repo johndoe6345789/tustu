@@ -1,18 +1,17 @@
 package business.binary_transformers;
 
-import G.R;
-import G.SerializableImpl;
-import G.Manager;
-import G.SerializableImplExceptionprintstacktrace;
-import G.GInterfaceAh;
 import G.GComponentBk;
 import G.GComponentBq;
 import G.GComponentBz;
-import V.ExceptionPrintstacktrace;
+import G.GInterfaceAh;
+import G.Manager;
+import G.R;
+import G.SerializableImpl;
+import G.SerializableImplExceptionprintstacktrace;
 import V.ExceptionExtensionGetmessage;
+import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bc;
 import java.awt.BorderLayout;
-import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
@@ -21,17 +20,17 @@ import s.ExceptionPrintstacktrace;
 
 public class SettingCalibrationField extends aV implements bc {
   JButton a;
-  
+
   GComponentBk b;
-  
+
   D c;
-  
+
   GInterfaceAh d = new GInterfaceAh();
-  
+
   R e;
-  
+
   public I(R paramR, GComponentBk parambk) {
-    super(paramR, (GComponentBq)parambk);
+    super(paramR, (GComponentBq) parambk);
     this.b = parambk;
     this.e = paramR;
     JPanel jPanel = new JPanel();
@@ -51,7 +50,7 @@ public class SettingCalibrationField extends aV implements bc {
     jPanel.add("East", this.c);
     a(jPanel);
   }
-  
+
   private void o() {
     SerializableImpl SerializableImpl = this.e.ExceptionPrintstacktrace(this.d.i());
     if (SerializableImpl != null) {
@@ -60,42 +59,49 @@ public class SettingCalibrationField extends aV implements bc {
       try {
         Manager.a(this.e.h(), d);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value.", (Throwable)ExceptionPrintstacktrace);
+        Logger.getLogger(I.class.getName())
+            .log(
+                Level.SEVERE,
+                "SettingCalibrationField failed to set value.",
+                (Throwable) ExceptionPrintstacktrace);
       } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-        Logger.getLogger(I.class.getName()).log(Level.SEVERE, "SettingCalibrationField failed to set value. 2", (Throwable)ExceptionExtensionGetmessage);
-      } 
-    } 
+        Logger.getLogger(I.class.getName())
+            .log(
+                Level.SEVERE,
+                "SettingCalibrationField failed to set value. 2",
+                (Throwable) ExceptionExtensionGetmessage);
+      }
+    }
   }
-  
+
   public void close() {
     super.close();
     this.c.close();
   }
-  
+
   private GInterfaceAh a(R paramR, String paramString) {
     null = paramR.B();
     while (null.hasNext()) {
       GInterfaceAh ah2 = null.next();
-      if (ah2.i().equals(paramString))
-        return ah2; 
-    } 
-    for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace : paramR.ExceptionPrintstacktrace()) {
-      if (SerializableImplExceptionprintstacktrace.a() != null && SerializableImplExceptionprintstacktrace.a().equals(paramString)) {
+      if (ah2.i().equals(paramString)) return ah2;
+    }
+    for (SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace :
+        paramR.ExceptionPrintstacktrace()) {
+      if (SerializableImplExceptionprintstacktrace.a() != null
+          && SerializableImplExceptionprintstacktrace.a().equals(paramString)) {
         GInterfaceAh ah2 = new GInterfaceAh();
         ah2.a(paramString);
         ah2.f(SerializableImplExceptionprintstacktrace.d());
         return ah2;
-      } 
-    } 
+      }
+    }
     GInterfaceAh ah1 = new GInterfaceAh();
     ah1.a(paramString);
     SerializableImpl SerializableImpl = paramR.ExceptionPrintstacktrace(paramString);
-    if (SerializableImpl != null)
-      ah1.f(SerializableImpl.d()); 
+    if (SerializableImpl != null) ah1.f(SerializableImpl.d());
     return ah1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/I.class
  * Java compiler version: 8 (52.0)

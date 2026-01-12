@@ -11,7 +11,7 @@ import javax.swing.table.TableRowSorter;
 
 class JTableExtensionGetcellrenderer extends JTable {
   f a = new f(this);
-  
+
   public void c(F paramF) {
     super(paramF);
     setAutoResizeMode(1);
@@ -30,7 +30,7 @@ class JTableExtensionGetcellrenderer extends JTable {
     setRowHeight(i);
     setShowGrid(false);
     TableRowSorter<F> tableRowSorter = new TableRowSorter<>(paramF);
-    setRowSorter((RowSorter)tableRowSorter);
+    setRowSorter((RowSorter) tableRowSorter);
     ArrayList<RowSorter.SortKey> arrayList = new ArrayList();
     tableRowSorter.setSortable(F.a, false);
     arrayList.add(new RowSorter.SortKey(F.b, SortOrder.ASCENDING));
@@ -40,7 +40,7 @@ class JTableExtensionGetcellrenderer extends JTable {
     tableRowSorter.setSortKeys(arrayList);
     tableRowSorter.sort();
   }
-  
+
   public void a(boolean paramBoolean) {
     if (paramBoolean) {
       TableColumn tableColumn = getColumnModel().getColumn(F.c);
@@ -54,14 +54,13 @@ class JTableExtensionGetcellrenderer extends JTable {
       tableColumn.setPreferredWidth(i);
       tableColumn.setWidth(i);
       tableColumn.setMaxWidth(i * 2);
-    } 
+    }
   }
-  
+
   public TableCellRenderer getCellRenderer(int paramInt1, int paramInt2) {
     return this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/c.class
  * Java compiler version: 8 (52.0)

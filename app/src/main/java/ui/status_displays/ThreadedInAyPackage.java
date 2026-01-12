@@ -1,7 +1,7 @@
 package aY;
 
-import G.R;
 import G.GInterfaceAf;
+import G.R;
 import V.ExceptionInVPackage;
 import aP.JComboBoxExtension;
 import aZ.AzInterfaceBravo;
@@ -30,37 +30,36 @@ import z.ZInterfaceIndia;
 
 public class ThreadedInAyPackage extends JDialog {
   R ExceptionInVPackage = null;
-  
+
   cn AzInterfaceBravo = new cn();
-  
+
   JLabel AcComponentCharlie = new JLabel();
-  
+
   JLabel d = new JLabel();
-  
+
   JLabel e = new JLabel();
-  
+
   String f = SComponentGolf.AzInterfaceBravo("Idle: Click 'Start Logging' to begin processing");
-  
+
   JLabel SComponentGolf = new JLabel(this.f, 0);
-  
+
   JComboBox h = new JComboBox();
-  
+
   JComboBoxExtension ZInterfaceIndia = null;
-  
+
   ZInterfaceIndia j = new ZInterfaceIndia();
-  
+
   JButton k = new JButton(SComponentGolf.AzInterfaceBravo("Start Logging"));
-  
+
   ExceptionInVPackage l = null;
-  
+
   AcComponentCharlie m = null;
-  
+
   boolean n = false;
-  
+
   public ThreadedInAyPackage(Frame paramFrame, R paramR, File paramFile, boolean paramBoolean) {
     super(paramFrame, SComponentGolf.AzInterfaceBravo("Burst Mode Logger"), true);
-    if (paramBoolean)
-      setTitle(SComponentGolf.AzInterfaceBravo("Palm Extract Utility")); 
+    if (paramBoolean) setTitle(SComponentGolf.AzInterfaceBravo("Palm Extract Utility"));
     this.n = paramBoolean;
     this.ExceptionInVPackage = paramR;
     this.AzInterfaceBravo.setPreferredSize(new Dimension(100, 20));
@@ -80,35 +79,35 @@ public class ThreadedInAyPackage extends JDialog {
       jPanel2.add(new JLabel(SComponentGolf.AzInterfaceBravo("Palm Logger Extract Utility"), 0));
     } else {
       jPanel2.add(new JLabel(SComponentGolf.AzInterfaceBravo("Burst Mode Logger"), 0));
-    } 
-    jPanel2.add((Component)this.AzInterfaceBravo);
+    }
+    jPanel2.add((Component) this.AzInterfaceBravo);
     try {
       this.AzInterfaceBravo.ExceptionInVPackage(paramFile.getCanonicalPath());
     } catch (IOException iOException) {
-      D.ExceptionInVPackage(SComponentGolf.AzInterfaceBravo("Failed to get canonical path for burst file"));
+      D.ExceptionInVPackage(
+          SComponentGolf.AzInterfaceBravo("Failed to get canonical path for burst file"));
       iOException.printStackTrace();
-    } 
+    }
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(1, 0, 5, 5));
     jPanel3.add(new JLabel(SComponentGolf.AzInterfaceBravo("Port") + ":", 4));
     this.ZInterfaceIndia = new JComboBoxExtension(paramR);
     this.ZInterfaceIndia.setPreferredSize(new Dimension(80, 24));
-    jPanel3.add(ExceptionInVPackage((Component)this.ZInterfaceIndia, "North"));
+    jPanel3.add(ExceptionInVPackage((Component) this.ZInterfaceIndia, "North"));
     this.ZInterfaceIndia.setSelectedItem(paramR.O().s());
     jPanel3.add(new JLabel(SComponentGolf.AzInterfaceBravo("Baud") + ":", 4));
     String[] arrayOfString = this.j.AcComponentCharlie();
     for (byte AzInterfaceBravo = 0; AzInterfaceBravo < arrayOfString.length; AzInterfaceBravo++)
-      this.h.addItem(arrayOfString[AzInterfaceBravo]); 
+      this.h.addItem(arrayOfString[AzInterfaceBravo]);
     if (paramBoolean) {
       this.h.setSelectedItem("115200");
     } else {
       this.h.setSelectedItem(Integer.valueOf(paramR.O().r()));
-    } 
+    }
     this.h.setPreferredSize(new Dimension(80, 24));
     jPanel3.add(ExceptionInVPackage(this.h, "North"));
     jPanel3.add(new JLabel(""));
-    if (paramBoolean)
-      jPanel2.add(jPanel3); 
+    if (paramBoolean) jPanel2.add(jPanel3);
     jPanel2.add(new JLabel(" "));
     jPanel2.add(this.SComponentGolf);
     jPanel2.add(new JLabel(" "));
@@ -134,68 +133,69 @@ public class ThreadedInAyPackage extends JDialog {
     jPanel1.add("South", jPanel5);
     pack();
   }
-  
+
   public void ExceptionInVPackage() {
     if (this.l != null && this.l.AcComponentCharlie()) {
       AcComponentCharlie();
       try {
         Thread.sleep(300L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
     dispose();
   }
-  
+
   private void d() {
     if (this.l == null || !this.l.AcComponentCharlie()) {
       try {
         AzInterfaceBravo();
       } catch (ExceptionInVPackage a1) {
-        D.ExceptionInVPackage("Unable to start burst capture.", (Exception)a1, this);
-      } 
+        D.ExceptionInVPackage("Unable to start burst capture.", (Exception) a1, this);
+      }
     } else {
       AcComponentCharlie();
-    } 
+    }
   }
-  
+
   public void AzInterfaceBravo() {
-    if (this.l != null)
-      this.l.AzInterfaceBravo(); 
+    if (this.l != null) this.l.AzInterfaceBravo();
     this.l = new ExceptionInVPackage(this.ExceptionInVPackage);
     this.l.ExceptionInVPackage(this.n);
-    if (!this.n);
-    this.m = (AcComponentCharlie)new AzInterfaceBravo();
-    this.l.ExceptionInVPackage((GInterfaceAf)this.m);
+    if (!this.n)
+      ;
+    this.m = (AcComponentCharlie) new AzInterfaceBravo();
+    this.l.ExceptionInVPackage((GInterfaceAf) this.m);
     this.l.ExceptionInVPackage(new ZInterfaceIndia(this));
     this.SComponentGolf.setText(SComponentGolf.AzInterfaceBravo("Polling device") + "...");
     this.h.setEnabled(false);
     this.ZInterfaceIndia.setEnabled(false);
-    this.m.ExceptionInVPackage(this.ExceptionInVPackage.AcComponentCharlie(), this.AzInterfaceBravo.ExceptionInVPackage());
+    this.m.ExceptionInVPackage(
+        this.ExceptionInVPackage.AcComponentCharlie(), this.AzInterfaceBravo.ExceptionInVPackage());
     this.l.AzInterfaceBravo(this.ZInterfaceIndia.getSelectedItem().toString());
     this.l.ExceptionInVPackage(this.h.getSelectedItem().toString());
     this.l.ExceptionInVPackage();
     this.k.setText(SComponentGolf.AzInterfaceBravo("Stop Logging"));
   }
-  
+
   public void AcComponentCharlie() {
     if (this.l != null) {
       this.l.AzInterfaceBravo();
       if (this.m != null) {
-        this.l.AzInterfaceBravo((GInterfaceAf)this.m);
+        this.l.AzInterfaceBravo((GInterfaceAf) this.m);
         try {
           this.m.l();
         } catch (ExceptionInVPackage a1) {
-          D.ExceptionInVPackage("Could not stop data log.", (Exception)a1, this);
-        } 
-      } 
-    } 
+          D.ExceptionInVPackage("Could not stop data log.", (Exception) a1, this);
+        }
+      }
+    }
     this.k.setText(SComponentGolf.AzInterfaceBravo("Start Logging"));
     this.SComponentGolf.setText(this.f);
     this.h.setEnabled(true);
     this.ZInterfaceIndia.setEnabled(true);
   }
-  
+
   private JPanel ExceptionInVPackage(Component paramComponent, String paramString) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
@@ -203,7 +203,6 @@ public class ThreadedInAyPackage extends JDialog {
     return jPanel;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/f.class
  * Java compiler version: 8 (52.0)

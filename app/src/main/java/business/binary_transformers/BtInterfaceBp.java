@@ -2,10 +2,9 @@ package business.binary_transformers;
 
 public interface BtInterfaceBp {
   void a();
-  
+
   void b();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bP.class
  * Java compiler version: 8 (52.0)

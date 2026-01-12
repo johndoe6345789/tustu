@@ -7,13 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ct implements ActionListener {
   ct(cd paramcd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     IOProperties.c(IOProperties.az, Boolean.toString(jCheckBoxMenuItem.getState()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ct.class
  * Java compiler version: 8 (52.0)

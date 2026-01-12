@@ -7,12 +7,11 @@ import java.awt.event.ActionListener;
 
 class cw implements ActionListener {
   cw(cd paramcd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     aN.a(IOProperties.n);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cw.class
  * Java compiler version: 8 (52.0)

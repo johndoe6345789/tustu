@@ -12,45 +12,46 @@ public class IOInAkPackage extends g {
   public IOInAkPackage() {
     super("\t", false);
   }
-  
+
   public Iterator b() {
     Iterator<T> iterator = super.b();
     ArrayList<T> arrayList = new ArrayList();
     while (iterator.hasNext()) {
       T t = iterator.next();
       if (t.ExceptionInVPackage().equals("RTime")) {
-        d d = (d)t;
+        d d = (d) t;
         d.ExceptionInVPackage("Time");
-      } 
+      }
       if (t.ExceptionInVPackage().equals("Frame")) {
-        d d = (d)t;
+        d d = (d) t;
         d.ExceptionInVPackage(0);
-      } 
-      if (!t.ExceptionInVPackage().contains("Afr Adjustment Required") && (!t.ExceptionInVPackage().startsWith("Col") || t.ExceptionInVPackage().length() > 5) && !t.ExceptionInVPackage().trim().isEmpty())
-        arrayList.add(t); 
-    } 
+      }
+      if (!t.ExceptionInVPackage().contains("Afr Adjustment Required")
+          && (!t.ExceptionInVPackage().startsWith("Col") || t.ExceptionInVPackage().length() > 5)
+          && !t.ExceptionInVPackage().trim().isEmpty()) arrayList.add(t);
+    }
     return arrayList.iterator();
   }
-  
+
   public float[] c() {
     String str1 = null;
     try {
       if (this.t && this.p >= 500 && k())
-        throw new ExceptionInVPackage("This Edition is limited to loading 500 rows of data. \nPlease Register to load large log files."); 
+        throw new ExceptionInVPackage(
+            "This Edition is limited to loading 500 rows of data. \n"
+                + "Please Register to load large log files.");
       str1 = l();
     } catch (IOException iOException) {
       iOException.printStackTrace();
       throw new ExceptionInVPackage("IO Error reading row from file on row " + this.p + ".");
-    } 
+    }
     e(str1);
     if (str1.startsWith(r())) {
       String str = "0";
-      if (this.i != null && this.i.length > 0)
-        str = this.i[0] + ""; 
+      if (this.i != null && this.i.length > 0) str = this.i[0] + "";
       str1 = str + str1;
-    } 
-    if (this.m == -1L)
-      this.m = this.h.length() / (str1.length() + 3); 
+    }
+    if (this.m == -1L) this.m = this.h.length() / (str1.length() + 3);
     String str2 = r();
     aE aE = new aE(str1, str2);
     this.i = new float[aE.c()];
@@ -62,7 +63,7 @@ public class IOInAkPackage extends g {
         D.c("Error Parsing record:\n" + str1);
         str = "0";
         exception.printStackTrace();
-      } 
+      }
       if (str.indexOf("[") != -1) {
         str = X.b(str, "[", "");
         str = X.b(str, "]", "");
@@ -72,31 +73,33 @@ public class IOInAkPackage extends g {
             this.i[b] = Float.parseFloat(arrayOfString[0]);
           } catch (NumberFormatException numberFormatException) {
             this.i[b] = Float.NaN;
-          } 
+          }
           b++;
           str = arrayOfString[1];
-        } 
-      } else if ((str.contains("-") || str.contains("+") || str.contains("F") || str.contains("!")) && str.contains(" ")) {
+        }
+      } else if ((str.contains("-") || str.contains("+") || str.contains("F") || str.contains("!"))
+          && str.contains(" ")) {
         str = str.substring(str.lastIndexOf(" "), str.length());
-      } 
+      }
       try {
         str = X.b(str, ",", ".");
         this.i[b] = Float.parseFloat(str);
       } catch (NumberFormatException numberFormatException) {
         this.i[b] = Float.NaN;
-      } 
-    } 
+      }
+    }
     return this.i;
   }
-  
+
   protected void e(String paramString) {
-    if (paramString.indexOf("Frame") > -1);
+    if (paramString.indexOf("Frame") > -1)
+      ;
   }
-  
+
   protected boolean b_(String paramString) {
     return (paramString != null && !paramString.startsWith("Frame") && !paramString.isEmpty());
   }
-  
+
   protected int b(String paramString) {
     // Byte code:
     //   0: iconst_0
@@ -172,7 +175,8 @@ public class IOInAkPackage extends g {
     //   143: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   146: aconst_null
     //   147: aload #7
-    //   149: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   149: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   152: iload #6
     //   154: ireturn
     //   155: aload #5
@@ -193,7 +197,8 @@ public class IOInAkPackage extends g {
     //   189: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   192: aconst_null
     //   193: aload #7
-    //   195: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   195: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   198: iload #6
     //   200: ireturn
     //   201: aload_3
@@ -216,7 +221,8 @@ public class IOInAkPackage extends g {
     //   240: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   243: aconst_null
     //   244: aload #7
-    //   246: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   246: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   249: iload #6
     //   251: ireturn
     //   252: astore #4
@@ -271,7 +277,8 @@ public class IOInAkPackage extends g {
     //   362: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   365: aconst_null
     //   366: aload #9
-    //   368: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   368: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   371: aload #8
     //   373: athrow
     // Exception table:
@@ -300,7 +307,6 @@ public class IOInAkPackage extends g {
     //   345	349	352	java/io/IOException
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/aG.class
  * Java compiler version: 8 (52.0)

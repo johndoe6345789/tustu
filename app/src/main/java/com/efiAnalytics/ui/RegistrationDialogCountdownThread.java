@@ -4,22 +4,21 @@ class RegistrationDialogCountdownThread extends Thread {
   RegistrationDialogCountdownThread(cT paramcT) {
     RegistrationDialogCountdownThread(true);
   }
-  
+
   public void RegistrationDialogCountdownThread() {
     while (cS.b(this.a.c) > 0) {
       this.a.b.setText(cT.a(this.a));
       try {
         Thread.sleep(1000L);
-      } catch (InterruptedException interruptedException) {}
+      } catch (InterruptedException interruptedException) {
+      }
       cS.c(this.a.c);
-    } 
+    }
     this.a.b.setText(cT.a(this.a));
     this.a.b.setEnabled(true);
-    if (this.a.a)
-      this.a.dispose(); 
+    if (this.a.a) this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cX.class
  * Java compiler version: 8 (52.0)

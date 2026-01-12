@@ -7,17 +7,15 @@ public class GInterfaceCs implements aN {
       String[] arrayOfString = i.h(str, paramR);
       if (arrayOfString != null)
         for (byte b = 0; b < arrayOfString.length; b++)
-          aR.a().a(paramR.c(), arrayOfString[b], this);  
-    } 
+          aR.a().a(paramR.c(), arrayOfString[b], this);
+    }
   }
-  
+
   public void a(String paramString1, String paramString2) {
     R r = T.a().c(paramString1);
-    if (r != null)
-      cu.a().a(r); 
+    if (r != null) cu.a().a(r);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/cS.class
  * Java compiler version: 8 (52.0)

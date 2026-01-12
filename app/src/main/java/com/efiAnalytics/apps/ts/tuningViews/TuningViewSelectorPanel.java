@@ -21,21 +21,21 @@ import v.SComponentGolf;
 
 public class TuningViewSelectorPanel extends JPanel {
   File ExceptionInVPackage = null;
-  
+
   J b = new J();
-  
+
   JComboBox c = new JComboBox();
-  
+
   JTextField d = new JTextField("", 25);
-  
+
   JCheckBox e = new JCheckBox(SComponentGolf.b("Other"));
-  
+
   JButton f = new JButton("...");
-  
+
   e SComponentGolf = new e(this);
-  
+
   private R h = null;
-  
+
   public TuningViewSelectorPanel() {
     setLayout(new BorderLayout());
     setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Select Tuning View")));
@@ -57,18 +57,16 @@ public class TuningViewSelectorPanel extends JPanel {
     add("Center", this.b);
     this.b.y();
   }
-  
+
   public void ExceptionInVPackage(List paramList) {
-    for (k k : paramList)
-      this.c.addItem(k); 
-    if (this.c.getItemCount() > 1)
-      this.c.setSelectedIndex(1); 
+    for (k k : paramList) this.c.addItem(k);
+    if (this.c.getItemCount() > 1) this.c.setSelectedIndex(1);
   }
-  
+
   public File ExceptionInVPackage() {
     return this.ExceptionInVPackage;
   }
-  
+
   public void ExceptionInVPackage(File paramFile) {
     this.ExceptionInVPackage = paramFile;
     SComponentGolf SComponentGolf = new SComponentGolf();
@@ -78,14 +76,15 @@ public class TuningViewSelectorPanel extends JPanel {
       ExceptionInVPackage(f);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
       ExceptionInVPackage.printStackTrace();
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(F paramF) {
     File file = null;
     try {
       file = paramF.d();
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
     if (file != null)
       try {
         remove(this.b);
@@ -96,8 +95,8 @@ public class TuningViewSelectorPanel extends JPanel {
         this.SComponentGolf.repaint();
         return;
       } catch (IOException iOException) {
-        Logger.getLogger(b.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      }  
+        Logger.getLogger(b.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
     remove(this.SComponentGolf);
     add("Center", this.b);
     validate();
@@ -105,12 +104,11 @@ public class TuningViewSelectorPanel extends JPanel {
     this.b.doLayout();
     this.b.z();
   }
-  
+
   public boolean b() {
     return this.e.isSelected();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/b.class
  * Java compiler version: 8 (52.0)

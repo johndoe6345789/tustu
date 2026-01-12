@@ -1,9 +1,11 @@
 package business.button_builders;
 
-import ae.FileUsingHashMap;
+import AeInterfaceRomeo.a;
+import AeInterfaceRomeo.j;
 import ae.AeInterfaceMike;
 import ae.AeInterfaceQuebec;
 import ae.AeInterfaceRomeo;
+import ae.FileUsingHashMap;
 import bH.D;
 import com.efiAnalytics.ui.bV;
 import com.efiAnalytics.ui.eJ;
@@ -23,35 +25,33 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
-import AeInterfaceRomeo.a;
-import AeInterfaceRomeo.j;
 import s.SComponentGolf;
 
 public class UIInBbPackage extends JPanel {
   JTextPane a = new JTextPane();
-  
+
   JLabel b = new JLabel("Select");
-  
+
   JLabel c = new JLabel("", 0);
-  
+
   JLabel d = new JLabel();
-  
+
   JTextField e = new JTextField("", 30);
-  
+
   JCheckBox f = new JCheckBox(SComponentGolf.b("Other / Browse"));
-  
+
   private FileUsingHashMap FileUsingHashMap = null;
-  
+
   JPanel SComponentGolf = new JPanel();
-  
+
   JList h = new JList();
-  
+
   DefaultListModel i = new DefaultListModel();
-  
+
   private AeInterfaceMike l = null;
-  
+
   AeInterfaceQuebec j = null;
-  
+
   public UIInBbPackage() {
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
@@ -70,7 +70,7 @@ public class UIInBbPackage extends JPanel {
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new GridLayout(1, 1));
     jPanel4.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Available Firmwares")));
-    String[] arrayOfString = { "Firmware download Service Unavailable, Browse to local file" };
+    String[] arrayOfString = {"Firmware download Service Unavailable, Browse to local file"};
     JList<String> jList = new JList<>(arrayOfString);
     jList.setVisibleRowCount(5);
     jList.setPreferredSize(eJ.a(200, 100));
@@ -94,7 +94,7 @@ public class UIInBbPackage extends JPanel {
       jPanel5.add("West", this.f);
       this.f.addActionListener(new G(this));
       this.e.setEnabled(this.f.isSelected());
-    } 
+    }
     jPanel5.add("Center", this.e);
     this.e.setEditable(false);
     jPanel1.add(jPanel5);
@@ -109,7 +109,7 @@ public class UIInBbPackage extends JPanel {
     jPanel1.add(this.SComponentGolf);
     add("Center", jPanel1);
   }
-  
+
   private void b() {
     String str1 = "zip;mot;s19";
     str1 = a.a().a(a.V, str1);
@@ -118,7 +118,7 @@ public class UIInBbPackage extends JPanel {
     String str3 = bV.b(this, SComponentGolf.b("Select Firmware File"), arrayOfString, "", str2);
     if (str3 != null && !str3.equals("")) {
       File file = new File(str3);
-      JDialog jDialog = (JDialog)bV.b(this);
+      JDialog jDialog = (JDialog) bV.b(this);
       jDialog.getGlassPane().setCursor(Cursor.getPredefinedCursor(3));
       jDialog.getGlassPane().setVisible(true);
       D.c("Set WAIT Cursor");
@@ -126,23 +126,24 @@ public class UIInBbPackage extends JPanel {
       i.start();
     } else {
       this.f.setSelected(false);
-    } 
+    }
   }
-  
+
   public FileUsingHashMap a() {
     return this.FileUsingHashMap;
   }
-  
+
   public void a(FileUsingHashMap paramk) {
     this.FileUsingHashMap = null;
     this.i.clear();
     List<File> list = paramk.d();
     List<AeInterfaceQuebec> list1 = AeInterfaceRomeo.a().a(paramk, this.l);
     for (File file : list) {
-      boolean bool = (list1.size() > 0 && ((AeInterfaceQuebec)list1.get(0)).b(this.l, file)) ? true : false;
+      boolean bool =
+          (list1.size() > 0 && ((AeInterfaceQuebec) list1.get(0)).b(this.l, file)) ? true : false;
       K k1 = new K(this, paramk, file, bool);
       this.i.addElement(k1);
-    } 
+    }
     this.FileUsingHashMap = paramk;
     if (list.size() > 1) {
       this.SComponentGolf.setVisible(true);
@@ -151,12 +152,12 @@ public class UIInBbPackage extends JPanel {
         if (list1.size() > 0) {
           for (byte b = 0; b < list.size(); b++) {
             File file = list.get(b);
-            if (((AeInterfaceQuebec)list1.get(0)).b(this.l, file)) {
+            if (((AeInterfaceQuebec) list1.get(0)).b(this.l, file)) {
               bool = true;
               this.h.setSelectedIndex(b);
               break;
-            } 
-          } 
+            }
+          }
         } else {
           for (byte b = 0; b < list.size(); b++) {
             File file = list.get(b);
@@ -164,20 +165,20 @@ public class UIInBbPackage extends JPanel {
               bool = true;
               this.h.setSelectedIndex(b);
               break;
-            } 
-          } 
-        } 
+            }
+          }
+        }
       } else if (list1.size() == 1) {
         for (byte b = 0; b < list.size(); b++) {
-          if (((AeInterfaceQuebec)list1.get(0)).a(this.l, list.get(b))) {
-            String str = ((AeInterfaceQuebec)list1.get(0)).a(list.get(b));
+          if (((AeInterfaceQuebec) list1.get(0)).a(this.l, list.get(b))) {
+            String str = ((AeInterfaceQuebec) list1.get(0)).a(list.get(b));
             this.h.setSelectedIndex(b);
             bool = true;
             break;
-          } 
-        } 
+          }
+        }
         this.j = list1.get(0);
-      } 
+      }
       if (this.j != null && !bool)
         for (byte b = 0; b < this.i.getSize(); b++) {
           K k1 = this.i.elementAt(b);
@@ -185,30 +186,40 @@ public class UIInBbPackage extends JPanel {
           if (k1.a && !bool) {
             this.h.setSelectedIndex(b);
             bool = true;
-          } 
-        }  
+          }
+        }
     } else {
       this.SComponentGolf.setVisible(false);
       this.h.setSelectedIndex(0);
-    } 
+    }
   }
-  
+
   public void a(AeInterfaceMike paramm) {
     this.l = paramm;
     List list = AeInterfaceRomeo.a().a(paramm);
     this.c.setText("<html>" + SComponentGolf.b("Found") + ": <b>" + paramm.a() + "</b>");
     if (list.isEmpty()) {
-      String str = "<html>" + SComponentGolf.b("Loading firmware to this device is not supported by this application.") + ":<br>" + paramm.a();
+      String str =
+          "<html>"
+              + SComponentGolf.b(
+                  "Loading firmware to this device is not supported by this application.")
+              + ":<br>"
+              + paramm.a();
       this.d.setText(str);
       this.f.setEnabled(false);
     } else {
-      String str = "<html>" + SComponentGolf.b("Download firmware compatible with the detected hardware") + ":<br><b>" + paramm.a() + "</b><br>" + SComponentGolf.b("Then check the box below and browse to the download location.");
+      String str =
+          "<html>"
+              + SComponentGolf.b("Download firmware compatible with the detected hardware")
+              + ":<br><b>"
+              + paramm.a()
+              + "</b><br>"
+              + SComponentGolf.b("Then check the box below and browse to the download location.");
       this.d.setText(str);
       this.f.setEnabled(true);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bb/E.class
  * Java compiler version: 8 (52.0)

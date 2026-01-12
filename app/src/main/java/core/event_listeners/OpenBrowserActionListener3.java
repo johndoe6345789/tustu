@@ -6,12 +6,11 @@ import java.awt.event.ActionListener;
 
 class cX implements ActionListener {
   cX(cd paramcd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     aN.a(this.a.x());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cX.class
  * Java compiler version: 8 (52.0)

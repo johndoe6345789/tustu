@@ -5,16 +5,16 @@ import javax.swing.JLabel;
 
 public class StandByDetector {
   private b a;
-  
+
   public StandByDetector(b paramb) {
     this.a = paramb;
     init();
   }
-  
+
   private native boolean init();
-  
+
   public native void setAllowStandby(boolean paramBoolean);
-  
+
   public static void main(String[] paramArrayOfString) {
     StandByDetector standByDetector = new StandByDetector(new a());
     standByDetector.setAllowStandby(false);
@@ -24,12 +24,11 @@ public class StandByDetector {
     jFrame.setVisible(true);
     jFrame.setDefaultCloseOperation(3);
   }
-  
+
   static {
     System.loadLibrary("StandByDetector");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/ha/common/windows/StandByDetector.class
  * Java compiler version: 8 (52.0)

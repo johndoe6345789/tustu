@@ -8,17 +8,16 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceCl implements ItemListener {
   cl(cc paramcc) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
+    if (((JCheckBoxMenuItem) paramItemEvent.getSource()).getState()) {
       IOProperties.c(IOProperties.N, IOProperties.O);
       hx.a().c(true);
       this.a.b.e(IOProperties.O);
       hx.a().c(true);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cl.class
  * Java compiler version: 8 (52.0)

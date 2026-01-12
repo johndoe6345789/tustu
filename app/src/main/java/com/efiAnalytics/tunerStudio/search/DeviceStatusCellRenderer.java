@@ -8,19 +8,30 @@ import javax.swing.JTable;
 
 class DeviceStatusCellRenderer extends eV {
   DeviceStatusCellRenderer(r paramr) {}
-  
-  public Component getTableCellRendererComponent(JTable paramJTable, Object paramObject, boolean paramBoolean1, boolean paramBoolean2, int paramInt1, int paramInt2) {
-    Component component = super.getTableCellRendererComponent(paramJTable, paramObject, paramBoolean1, paramBoolean2, paramInt1, paramInt2);
+
+  public Component getTableCellRendererComponent(
+      JTable paramJTable,
+      Object paramObject,
+      boolean paramBoolean1,
+      boolean paramBoolean2,
+      int paramInt1,
+      int paramInt2) {
+    Component component =
+        super.getTableCellRendererComponent(
+            paramJTable, paramObject, paramBoolean1, paramBoolean2, paramInt1, paramInt2);
     a(paramInt1, paramInt2);
     return component;
   }
-  
-  public Component getTableCellEditorComponent(JTable paramJTable, Object paramObject, boolean paramBoolean, int paramInt1, int paramInt2) {
-    Component component = super.getTableCellEditorComponent(paramJTable, paramObject, paramBoolean, paramInt1, paramInt2);
+
+  public Component getTableCellEditorComponent(
+      JTable paramJTable, Object paramObject, boolean paramBoolean, int paramInt1, int paramInt2) {
+    Component component =
+        super.getTableCellEditorComponent(
+            paramJTable, paramObject, paramBoolean, paramInt1, paramInt2);
     a(paramInt1, paramInt2);
     return component;
   }
-  
+
   public String a(int paramInt1, int paramInt2) {
     String str = "";
     if (paramInt1 < this.a.b.size() && paramInt2 == 2) {
@@ -48,23 +59,22 @@ class DeviceStatusCellRenderer extends eV {
         D.a("Unknown Device Status: " + f.c());
         str = r.i();
         a(false);
-      } 
+      }
       if (f.f().h()) {
         str = "Busy";
         a(false);
       } else {
         a(true);
-      } 
+      }
       b(str);
       a(str);
     } else {
       b(r.c());
       a(r.c());
-    } 
+    }
     return str;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/w.class
  * Java compiler version: 8 (52.0)

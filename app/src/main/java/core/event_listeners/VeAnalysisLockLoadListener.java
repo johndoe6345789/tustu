@@ -6,12 +6,11 @@ import javax.swing.JButton;
 
 class eU implements ActionListener {
   eU(eK parameK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.b((JButton)paramActionEvent.getSource());
+    this.a.b((JButton) paramActionEvent.getSource());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eU.class
  * Java compiler version: 8 (52.0)

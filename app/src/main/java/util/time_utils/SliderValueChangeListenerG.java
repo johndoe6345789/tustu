@@ -6,15 +6,13 @@ import javax.swing.event.ChangeListener;
 
 class SliderValueChangeListenerG implements ChangeListener {
   SliderValueChangeListenerG(w paramw) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    JSlider jSlider = (JSlider)paramChangeEvent.getSource();
+    JSlider jSlider = (JSlider) paramChangeEvent.getSource();
     int i = jSlider.getValue();
-    if (w.a(this.a, jSlider, w.y))
-      this.a.a.g(i); 
+    if (w.a(this.a, jSlider, w.y)) this.a.a.g(i);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/W.class
  * Java compiler version: 8 (52.0)

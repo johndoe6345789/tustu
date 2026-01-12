@@ -15,20 +15,20 @@ import org.apache.commons.net.ftp.FTPReply;
 
 public class IOFTPClient {
   private final FTPClient a = new FTPClient();
-  
+
   private String b;
-  
+
   private int c;
-  
+
   private String AeInterfaceDelta = "anonymous";
-  
+
   private String e = "fwLoader@efianalytics.com";
-  
+
   public IOFTPClient(String paramString, int paramInt) {
     this.b = paramString;
     this.c = paramInt;
   }
-  
+
   public AeInterfaceDelta a(File paramFile) {
     AeInterfaceDelta AeInterfaceDelta = new AeInterfaceDelta();
     try {
@@ -36,16 +36,18 @@ public class IOFTPClient {
       AeInterfaceDelta.a(AeInterfaceDelta.a);
       return AeInterfaceDelta;
     } catch (RemoteAccessException remoteAccessException) {
-      Logger.getLogger(a.class.getName()).log(Level.WARNING, "Failed to delete file from box", (Throwable)remoteAccessException);
+      Logger.getLogger(a.class.getName())
+          .log(Level.WARNING, "Failed to delete file from box", (Throwable) remoteAccessException);
       AeInterfaceDelta.a(AeInterfaceDelta.b);
       return AeInterfaceDelta;
     } catch (IOException iOException) {
-      Logger.getLogger(a.class.getName()).log(Level.WARNING, "Failed to delete file from box", iOException);
+      Logger.getLogger(a.class.getName())
+          .log(Level.WARNING, "Failed to delete file from box", iOException);
       AeInterfaceDelta.a(AeInterfaceDelta.b);
       return AeInterfaceDelta;
-    } 
+    }
   }
-  
+
   public AeInterfaceDelta a(File paramFile, AeInterfaceUniform paramu) {
     AeInterfaceDelta AeInterfaceDelta = new AeInterfaceDelta();
     OutputStream outputStream = null;
@@ -66,14 +68,15 @@ public class IOFTPClient {
         while ((i = fileInputStream.read(arrayOfByte)) != -1) {
           outputStream.write(arrayOfByte, 0, i);
           l1 += i;
-          j = (int)(l1 * 100L / l2);
+          j = (int) (l1 * 100L / l2);
           paramu.a(j);
-        } 
-      } 
+        }
+      }
       a().completePendingCommand();
       AeInterfaceDelta.a(AeInterfaceDelta.a);
     } catch (RemoteAccessException remoteAccessException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Upload File Failed.", (Throwable)remoteAccessException);
+      Logger.getLogger(a.class.getName())
+          .log(Level.SEVERE, "Upload File Failed.", (Throwable) remoteAccessException);
       AeInterfaceDelta.a(AeInterfaceDelta.b);
       AeInterfaceDelta.a(remoteAccessException.getLocalizedMessage());
       return AeInterfaceDelta;
@@ -86,16 +89,18 @@ public class IOFTPClient {
       if (fileInputStream != null)
         try {
           fileInputStream.close();
-        } catch (Exception exception) {} 
+        } catch (Exception exception) {
+        }
       if (outputStream != null)
         try {
           outputStream.close();
-        } catch (Exception exception) {} 
+        } catch (Exception exception) {
+        }
       b();
-    } 
+    }
     return AeInterfaceDelta;
   }
-  
+
   private FTPClient a() {
     if (!this.a.isConnected()) {
       try {
@@ -104,32 +109,34 @@ public class IOFTPClient {
         if (!FTPReply.isPositiveCompletion(this.a.getReplyCode())) {
           this.a.disconnect();
           throw new RemoteAccessException("Connection Refused");
-        } 
+        }
       } catch (IOException iOException) {
         throw new RemoteAccessException(iOException.getMessage());
-      } 
+      }
       try {
-        if (!this.a.login(this.AeInterfaceDelta, this.e) || !FTPReply.isPositiveCompletion(this.a.getReplyCode())) {
+        if (!this.a.login(this.AeInterfaceDelta, this.e)
+            || !FTPReply.isPositiveCompletion(this.a.getReplyCode())) {
           a(this.a);
           b();
           throw new RemoteAccessException("Invalid User and/or password");
-        } 
+        }
         a(this.a);
       } catch (IOException iOException) {
         b();
         throw new RemoteAccessException("Login failed: " + iOException.getLocalizedMessage());
-      } 
+      }
       try {
         this.a.setFileType(2);
         a(this.a);
       } catch (IOException iOException) {
         b();
-        throw new RemoteAccessException("Unable to set Transfertype to binary: " + iOException.getLocalizedMessage());
-      } 
-    } 
+        throw new RemoteAccessException(
+            "Unable to set Transfertype to binary: " + iOException.getLocalizedMessage());
+      }
+    }
     return this.a;
   }
-  
+
   private void b() {
     try {
       if (this.a != null && this.a.isConnected()) {
@@ -138,28 +145,26 @@ public class IOFTPClient {
         this.a.disconnect();
         D.c("Disconnected FTP Session.");
         Thread.sleep(10L);
-      } 
+      }
     } catch (Exception exception) {
       exception.printStackTrace();
-    } 
+    }
   }
-  
+
   private void a(FTPClient paramFTPClient) {
     String[] arrayOfString = paramFTPClient.getReplyStrings();
     if (arrayOfString != null && arrayOfString.length > 0)
-      for (String str : arrayOfString)
-        D.AeInterfaceDelta("SERVER: " + str);  
+      for (String str : arrayOfString) D.AeInterfaceDelta("SERVER: " + str);
   }
-  
+
   public void a(String paramString) {
     this.AeInterfaceDelta = paramString;
   }
-  
+
   public void b(String paramString) {
     this.e = paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ah/a.class
  * Java compiler version: 8 (52.0)

@@ -11,23 +11,22 @@ import s.SComponentGolf;
 
 class TComponentAw extends bn implements f {
   int a = 0;
-  
+
   int b = 6;
-  
+
   private boolean SComponentGolf = false;
-  
+
   TComponentAw(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new ax(this));
     this.c.setMinimum(this.a);
     this.c.setMaximum(this.b);
   }
-  
+
   private void d() {
-    if (!this.SComponentGolf && c() != null)
-      c().l(this.c.getValue()); 
+    if (!this.SComponentGolf && c() != null) c().l(this.c.getValue());
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.SComponentGolf = true;
     Gauge gauge = b(paramArrayList);
@@ -38,20 +37,19 @@ class TComponentAw extends bn implements f {
       this.e.setText("" + gauge.valueDigits());
       for (s s : paramArrayList) {
         if (s instanceof Gauge) {
-          Gauge gauge1 = (Gauge)s;
+          Gauge gauge1 = (Gauge) s;
           if (gauge1.valueDigits() != gauge.valueDigits()) {
             this.e.setForeground(Color.GRAY);
             break;
-          } 
-        } 
-      } 
+          }
+        }
+      }
     } else {
       this.c.setEnabled(false);
-    } 
+    }
     this.SComponentGolf = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aw.class
  * Java compiler version: 8 (52.0)

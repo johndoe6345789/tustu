@@ -2,12 +2,11 @@ package aP;
 
 class ApInterfaceFd implements Runnable {
   ApInterfaceFd(fC paramfC) {}
-  
+
   public void run() {
     this.a.a.c.a(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fD.class
  * Java compiler version: 8 (52.0)

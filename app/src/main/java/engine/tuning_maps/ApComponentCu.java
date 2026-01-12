@@ -7,18 +7,17 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApComponentCu implements ItemListener {
   cu(cc paramcc) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState()) {
-      String str = ((JCheckBoxMenuItem)paramItemEvent.getSource()).getActionCommand();
+    if (((JCheckBoxMenuItem) paramItemEvent.getSource()).getState()) {
+      String str = ((JCheckBoxMenuItem) paramItemEvent.getSource()).getActionCommand();
       IOProperties.c("lineTraceSize", str);
       this.a.b.p().c(Integer.parseInt(str));
       this.a.b.p().IOProperties();
       this.a.b.p().repaint();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cu.class
  * Java compiler version: 8 (52.0)

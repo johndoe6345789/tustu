@@ -6,12 +6,11 @@ import javax.swing.JCheckBoxMenuItem;
 
 class dV implements ItemListener {
   dV(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    this.a.a("loadReverse", ((JCheckBoxMenuItem)paramItemEvent.getSource()).getState());
+    this.a.a("loadReverse", ((JCheckBoxMenuItem) paramItemEvent.getSource()).getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/dV.class
  * Java compiler version: 8 (52.0)

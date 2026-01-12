@@ -6,12 +6,11 @@ import javax.swing.JButton;
 
 class fa implements ActionListener {
   fa(eK parameK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.g((JButton)paramActionEvent.getSource());
+    this.a.g((JButton) paramActionEvent.getSource());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fa.class
  * Java compiler version: 8 (52.0)

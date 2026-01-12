@@ -18,24 +18,24 @@ public class IOExceptioninvpackage {
       fileInputStream = new FileInputStream(paramFile);
       int[] arrayOfInt = new int[b + 4];
       int i;
-      for (i = 0; i < arrayOfInt.length; i++)
-        arrayOfInt[i] = fileInputStream.read(); 
+      for (i = 0; i < arrayOfInt.length; i++) arrayOfInt[i] = fileInputStream.read();
       i = c.b(arrayOfInt, b, 4, true, true);
       return ExceptionInVPackage(i);
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("File not found:\n" + paramFile.getAbsolutePath());
     } catch (IOException iOException) {
       iOException.printStackTrace();
-      throw new ExceptionInVPackage("Failed to read header from file:\n" + paramFile.getAbsolutePath());
+      throw new ExceptionInVPackage(
+          "Failed to read header from file:\n" + paramFile.getAbsolutePath());
     } finally {
       try {
         fileInputStream.close();
       } catch (IOException iOException) {
         D.b("MS3 SD Log Transformer: Failed to close file???");
-      } 
-    } 
+      }
+    }
   }
-  
+
   public static Date ExceptionInVPackage(int paramInt) {
     int i = c.ExceptionInVPackage(paramInt, 25, 31) + 1980;
     int j = c.ExceptionInVPackage(paramInt, 21, 24) - 1;
@@ -48,7 +48,6 @@ public class IOExceptioninvpackage {
     return calendar.getTime();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/af.class
  * Java compiler version: 8 (52.0)

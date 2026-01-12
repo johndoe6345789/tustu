@@ -5,12 +5,11 @@ import c.CInterfaceEcho;
 
 class ApComponentFa implements CInterfaceEcho {
   fa(dB paramdB) {}
-  
+
   public boolean PropertiesExtension() {
     return (PropertiesExtension.A() != null && !PropertiesExtension.A().J());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fa.class
  * Java compiler version: 8 (52.0)

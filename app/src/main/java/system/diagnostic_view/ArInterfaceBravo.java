@@ -6,10 +6,10 @@ import G.T;
 import G.m;
 import bH.D;
 import com.efiAnalytics.ui.cY;
-import d.DComponentCharlie;
-import d.ExceptionInDPackage;
-import d.DInterfaceIndia;
 import d.ArrayListExtensionInDPackage;
+import d.DComponentCharlie;
+import d.DInterfaceIndia;
+import d.ExceptionInDPackage;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,23 +20,23 @@ import s.SComponentGolf;
 
 public class ArInterfaceBravo implements cY, DComponentCharlie {
   ArrayListExtensionInDPackage a = new ArrayListExtensionInDPackage();
-  
+
   public String a() {
     return "sendControllerCommand";
   }
-  
+
   public String b() {
     return "Send Controller Command";
   }
-  
+
   public String DComponentCharlie() {
     return "Settings Dialogs";
   }
-  
+
   public boolean d() {
     return (T.a().DComponentCharlie() != null && T.a().DComponentCharlie().O().b());
   }
-  
+
   public void a(Properties paramProperties) {
     R r;
     String str1 = paramProperties.getProperty("ecuConfig");
@@ -44,14 +44,16 @@ public class ArInterfaceBravo implements cY, DComponentCharlie {
       r = T.a().DComponentCharlie();
     } else {
       r = T.a().DComponentCharlie(str1);
-    } 
+    }
     if (r == null) {
-      D.a("Failed to send Controller command as the EcuConfiguration name was not found. Name: " + str1);
+      D.a(
+          "Failed to send Controller command as the EcuConfiguration name was not found. Name: "
+              + str1);
       throw new ExceptionInDPackage("EcuConfiguration not found with the provided name.");
-    } 
+    }
     String str2 = paramProperties.getProperty("commandName");
     if (str2 == null || str2.isEmpty())
-      throw new ExceptionInDPackage("Missing required parameter commandName"); 
+      throw new ExceptionInDPackage("Missing required parameter commandName");
     List<m> list = m.b(r.O(), str2);
     m m = null;
     if (list.size() > 1) {
@@ -60,10 +62,10 @@ public class ArInterfaceBravo implements cY, DComponentCharlie {
       m = list.get(0);
     } else {
       throw new ExceptionInDPackage("Command " + str2 + " not found in current configuration.");
-    } 
+    }
     r.C().b(m);
   }
-  
+
   public void b(Properties paramProperties) {
     R r;
     String str1 = paramProperties.getProperty("ecuConfig");
@@ -71,16 +73,18 @@ public class ArInterfaceBravo implements cY, DComponentCharlie {
       r = T.a().DComponentCharlie();
     } else {
       r = T.a().DComponentCharlie(str1);
-    } 
+    }
     if (r == null) {
-      D.a("Failed to send Controller command as the EcuConfiguration name was not found. Name: " + str1);
+      D.a(
+          "Failed to send Controller command as the EcuConfiguration name was not found. Name: "
+              + str1);
       throw new ExceptionInDPackage("EcuConfiguration not found with the provided name.");
-    } 
+    }
     String str2 = paramProperties.getProperty("commandName");
     if (str2 == null || str2.isEmpty())
-      throw new ExceptionInDPackage("Missing required parameter commandName"); 
+      throw new ExceptionInDPackage("Missing required parameter commandName");
   }
-  
+
   public ArrayListExtensionInDPackage ExceptionInDPackage() {
     R r = T.a().DComponentCharlie();
     this.a.clear();
@@ -91,15 +95,19 @@ public class ArInterfaceBravo implements cY, DComponentCharlie {
     DInterfaceIndia DInterfaceIndia = new DInterfaceIndia("commandName", "");
     DInterfaceIndia.a(0);
     DInterfaceIndia.a(arrayList);
-    DInterfaceIndia.DComponentCharlie("These are Controller Commands defined and implemented by the firmware developers. Each command will trigger the ECU to perform a specific function. Use CAUTION!!! Some commands are intended to for use in a specific order or sequence. Insure you understand what the command does and how it works.");
+    DInterfaceIndia.DComponentCharlie(
+        "These are Controller Commands defined and implemented by the firmware developers. Each"
+            + " command will trigger the ECU to perform a specific function. Use CAUTION!!! Some"
+            + " commands are intended to for use in a specific order or sequence. Insure you"
+            + " understand what the command does and how it works.");
     this.a.a(DInterfaceIndia);
     return this.a;
   }
-  
+
   public boolean f() {
     return true;
   }
-  
+
   public List a(ActionListener paramActionListener) {
     ArrayList<JMenu> arrayList = new ArrayList();
     String str = T.a().DComponentCharlie().DComponentCharlie();
@@ -115,17 +123,16 @@ public class ArInterfaceBravo implements cY, DComponentCharlie {
           DComponentCharlie c1 = new DComponentCharlie(this, str3, str1);
           jMenu.add(c1);
           c1.addActionListener(d);
-        }  
-    } 
+        }
+    }
     arrayList.add(jMenu);
     return arrayList;
   }
-  
+
   public boolean SComponentGolf() {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aR/b.class
  * Java compiler version: 8 (52.0)

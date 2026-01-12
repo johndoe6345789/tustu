@@ -5,13 +5,11 @@ import javax.swing.event.ListSelectionListener;
 
 class ListSelectionListener implements ListSelectionListener {
   ListSelectionListener(aY paramaY) {}
-  
+
   public void valueChanged(ListSelectionEvent paramListSelectionEvent) {
-    if (!paramListSelectionEvent.getValueIsAdjusting())
-      aY.a(this.a); 
+    if (!paramListSelectionEvent.getValueIsAdjusting()) aY.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aZ.class
  * Java compiler version: 8 (52.0)

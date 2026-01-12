@@ -5,12 +5,11 @@ import n.NInterfaceJuliet;
 
 class ApInterfaceHu implements r {
   ApInterfaceHu(hO paramhO) {}
-  
+
   public void a(String paramString) {
     NInterfaceJuliet.a().a(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hU.class
  * Java compiler version: 8 (52.0)

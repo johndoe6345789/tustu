@@ -1,7 +1,7 @@
 package com.efiAnalytics.tunerStudio.panels;
 
-import G.R;
 import G.AeInterfaceMikeTostring;
+import G.R;
 import G.s;
 import W.I;
 import W.v;
@@ -32,25 +32,25 @@ import s.SComponentGolf;
 
 public class CanDeviceConfigPanel extends JPanel {
   JTextField a = new JTextField("", 16);
-  
+
   JTextField b = new JTextField("", 16);
-  
+
   JTextField c = new JTextField("", 20);
-  
+
   ItemListener CloneableImpl;
-  
+
   JButton e = new JButton("...");
-  
+
   JCheckBox f = new JCheckBox(SComponentGolf.b("Disable Runtime Data"));
-  
+
   JPanelExtension SComponentGolf = new JPanelExtension();
-  
+
   private CloneableImpl ThreadedFile = null;
-  
+
   aE.a h = null;
-  
+
   R i;
-  
+
   public CanDeviceConfigPanel(R paramR) {
     this.i = paramR;
     this.CloneableImpl = new ItemListener(paramR);
@@ -58,26 +58,37 @@ public class CanDeviceConfigPanel extends JPanel {
     CanDeviceConfigPanel(new BorderLayout(4, 4));
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BoxLayout(jPanel1, 1));
-    jPanel1.add(a(this.a, "<html>Device Identifier (short)<br>", "The short name, 6 characters or less for this CAN device.<br><b>Must be unique</b><br>This will be used to identify components of this device<br>such as OutputChannels and Data Log field names.</html>"));
+    jPanel1.add(
+        a(
+            this.a,
+            "<html>Device Identifier (short)<br>",
+            "The short name, 6 characters or less for this CAN device.<br><b>Must be"
+                + " unique</b><br>This will be used to identify components of this device<br>such"
+                + " as OutputChannels and Data Log field names.</html>"));
     this.a.addKeyListener(new CanDeviceConfigPanel(this));
-    jPanel1.add(a(this.b, "Device description", "The long name or description used for this CAN device"));
+    jPanel1.add(
+        a(this.b, "Device description", "The long name or description used for this CAN device"));
     this.b.addKeyListener(new CanDeviceConfigPanel(this));
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new GridLayout(0, 1));
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new BorderLayout());
     jPanel3.add("West", this.f);
-    this.f.setToolTipText(SComponentGolf.b("When checked, runtime data for gauges and data logs will not be read directly from this controller."));
+    this.f.setToolTipText(
+        SComponentGolf.b(
+            "When checked, runtime data for gauges and data logs will not be read directly from"
+                + " this controller."));
     jPanel2.add(jPanel3);
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new BorderLayout(8, 8));
-    jPanel4.add("East", (Component)this.CloneableImpl);
+    jPanel4.add("East", (Component) this.CloneableImpl);
     jPanel2.add(jPanel4);
     jPanel1.add(jPanel2);
     CanDeviceConfigPanel("North", jPanel1);
     JPanel jPanel5 = new JPanel();
     jPanel5.setLayout(new BorderLayout(4, 4));
-    jPanel5.setBorder(BorderFactory.createTitledBorder(SComponentGolf.b("Device Configuration File:")));
+    jPanel5.setBorder(
+        BorderFactory.createTitledBorder(SComponentGolf.b("Device Configuration File:")));
     this.c.setBorder(BorderFactory.createLoweredBevelBorder());
     this.c.setEditable(false);
     jPanel5.add("Center", this.c);
@@ -85,18 +96,18 @@ public class CanDeviceConfigPanel extends JPanel {
     jPanel5.add("East", this.e);
     CanDeviceConfigPanel("Center", jPanel5);
     JScrollPane jScrollPane = new JScrollPane();
-    jScrollPane.getViewport().setView((Component)this.SComponentGolf);
+    jScrollPane.getViewport().setView((Component) this.SComponentGolf);
     jScrollPane.setAutoscrolls(true);
     jScrollPane.setMinimumSize(new Dimension(250, 60));
     jScrollPane.setPreferredSize(new Dimension(300, 100));
     CanDeviceConfigPanel("South", jScrollPane);
     CanDeviceConfigPanel(false);
   }
-  
+
   public void CanDeviceConfigPanel(aE.a parama) {
     this.h = parama;
   }
-  
+
   public void CanDeviceConfigPanel(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
     this.a.setEnabled(paramBoolean);
@@ -106,8 +117,9 @@ public class CanDeviceConfigPanel extends JPanel {
     this.e.setEnabled(paramBoolean);
     this.f.setEnabled(paramBoolean);
   }
-  
-  private JPanel CanDeviceConfigPanel(JTextField paramJTextField, String paramString1, String paramString2) {
+
+  private JPanel CanDeviceConfigPanel(
+      JTextField paramJTextField, String paramString1, String paramString2) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout(8, 8));
     JLabel jLabel = new JLabel(SComponentGolf.b(paramString1), 4);
@@ -118,7 +130,7 @@ public class CanDeviceConfigPanel extends JPanel {
     paramJTextField.setBorder(BorderFactory.createLoweredBevelBorder());
     return jPanel;
   }
-  
+
   private void CanDeviceConfigPanel(String paramString) {
     String str = this.ThreadedFile.a(this.h);
     try {
@@ -128,34 +140,35 @@ public class CanDeviceConfigPanel extends JPanel {
         String str3 = str1 + str2;
         t.a(paramString, str3);
         paramString = str3;
-      } 
+      }
       this.ThreadedFile.c(paramString);
       this.c.setText(paramString);
       CanDeviceConfigPanel(paramString);
     } catch (V.a a1) {
-      bV.CloneableImpl(SComponentGolf.b("Unable to load configuration settings.") + "\n" + a1.getLocalizedMessage(), this);
+      bV.CloneableImpl(
+          SComponentGolf.b("Unable to load configuration settings.")
+              + "\n"
+              + a1.getLocalizedMessage(),
+          this);
       a1.printStackTrace();
       this.ThreadedFile.c(str);
-    } 
+    }
   }
-  
+
   protected void CanDeviceConfigPanel(String paramString) {
-    if (this.ThreadedFile == null)
-      throw new V.a("CAN Device not initialized."); 
+    if (this.ThreadedFile == null) throw new V.a("CAN Device not initialized.");
     s[] arrayOfS = v.a().b(paramString);
     arrayOfS = (new I()).a(arrayOfS, paramString);
     this.SComponentGolf.a(arrayOfS);
     if (this.ThreadedFile != null && this.ThreadedFile.CloneableImpl() != null) {
       String[] arrayOfString = this.ThreadedFile.CloneableImpl();
-      for (byte b = 0; b < arrayOfString.length; b++)
-        this.SComponentGolf.a(arrayOfString[b]); 
-    } 
+      for (byte b = 0; b < arrayOfString.length; b++) this.SComponentGolf.a(arrayOfString[b]);
+    }
     this.SComponentGolf.validate();
   }
-  
+
   public CloneableImpl CanDeviceConfigPanel() {
-    if (this.ThreadedFile == null)
-      return null; 
+    if (this.ThreadedFile == null) return null;
     this.ThreadedFile.a(this.a.getText());
     this.ThreadedFile.b(this.b.getText());
     this.ThreadedFile.c(this.c.getText());
@@ -164,7 +177,7 @@ public class CanDeviceConfigPanel extends JPanel {
     this.ThreadedFile.a(!this.f.isSelected());
     return this.ThreadedFile;
   }
-  
+
   public void CanDeviceConfigPanel(CloneableImpl paramd) {
     this.ThreadedFile = paramd;
     try {
@@ -174,28 +187,29 @@ public class CanDeviceConfigPanel extends JPanel {
       } else {
         this.c.setText("");
         this.SComponentGolf.a();
-      } 
+      }
       this.a.setText(paramd.a());
       this.b.setText(paramd.b());
       CanDeviceConfigPanel(paramd.e());
       CanDeviceConfigPanel(true);
       this.f.setSelected(!paramd.f());
     } catch (V.a a1) {
-      bV.CloneableImpl(SComponentGolf.b("Unable to load configuration settings.") + "\n" + a1.getMessage(), this);
+      bV.CloneableImpl(
+          SComponentGolf.b("Unable to load configuration settings.") + "\n" + a1.getMessage(),
+          this);
       a1.printStackTrace();
-    } 
-    if (paramd.e() < 0 || this.CloneableImpl.CloneableImpl() < 0)
-      this.CloneableImpl.e(); 
+    }
+    if (paramd.e() < 0 || this.CloneableImpl.CloneableImpl() < 0) this.CloneableImpl.e();
   }
-  
+
   public int CanDeviceConfigPanel() {
     return this.CloneableImpl.CloneableImpl();
   }
-  
+
   public void CanDeviceConfigPanel(int paramInt) {
     this.CloneableImpl.a(paramInt);
   }
-  
+
   public void CanDeviceConfigPanel() {
     this.ThreadedFile = null;
     this.a.setText("");
@@ -205,21 +219,21 @@ public class CanDeviceConfigPanel extends JPanel {
     this.SComponentGolf.a();
     this.SComponentGolf.validate();
   }
-  
+
   private void CanDeviceConfigPanel(boolean paramBoolean) {
     this.a.setEditable(paramBoolean);
     this.b.setEditable(paramBoolean);
     this.e.setEnabled(paramBoolean);
   }
-  
+
   public void CanDeviceConfigPanel(boolean paramBoolean) {
     this.a.setEnabled(paramBoolean);
   }
-  
+
   public void CloneableImpl() {
     this.CloneableImpl.close();
   }
-  
+
   public void CanDeviceConfigPanel(aH.a parama) {
     if (parama.CloneableImpl() != null && !parama.CloneableImpl().isEmpty()) {
       AeInterfaceMikeTostring AeInterfaceMikeTostring = new AeInterfaceMikeTostring();
@@ -227,42 +241,54 @@ public class CanDeviceConfigPanel extends JPanel {
       AeInterfaceMikeTostring.b(parama.a());
       File file = new File(this.c.getText());
       String str = z.a(file);
-      if (str == null || str.equals(AeInterfaceMikeTostring.b()))
-        return; 
+      if (str == null || str.equals(AeInterfaceMikeTostring.b())) return;
       try {
         file = ThreadedFile.CloneableImpl(AeInterfaceMikeTostring.b());
       } catch (V.a a1) {
         a1.printStackTrace();
-      } 
+      }
       if (file != null && file.exists()) {
         CanDeviceConfigPanel(file.getAbsolutePath());
         this.SComponentGolf.validate();
       } else {
         try {
           file = ThreadedExceptioninvpackage.a(AeInterfaceMikeTostring);
-        } catch (FileNotFoundException fileNotFoundException) {}
+        } catch (FileNotFoundException fileNotFoundException) {
+        }
         if (file != null && file.exists()) {
           CanDeviceConfigPanel(file.getAbsolutePath());
           this.SComponentGolf.validate();
         } else {
-          String str1 = SComponentGolf.b(r.a.b + " does not have a configuration to support the found firmware") + ":\n" + parama.a() + "\n\n" + SComponentGolf.b("Required Serial Signature") + ":\n" + parama.CloneableImpl() + "\n\n\n" + SComponentGolf.b("Please click the 'Other' checkbox and browse") + ", \n" + SComponentGolf.b("to the Ecu Definition (ini) file provided with your firmware.");
+          String str1 =
+              SComponentGolf.b(
+                      r.a.b + " does not have a configuration to support the found firmware")
+                  + ":\n"
+                  + parama.a()
+                  + "\n\n"
+                  + SComponentGolf.b("Required Serial Signature")
+                  + ":\n"
+                  + parama.CloneableImpl()
+                  + "\n\n\n"
+                  + SComponentGolf.b("Please click the 'Other' checkbox and browse")
+                  + ", \n"
+                  + SComponentGolf.b(
+                      "to the Ecu Definition (ini) file provided with your firmware.");
           bV.CloneableImpl(str1, this);
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
-  
+
   public Dimension CanDeviceConfigPanel() {
     Dimension dimension = super.getPreferredSize();
     return new Dimension(dimension.width, dimension.height + eJ.a(12));
   }
-  
+
   public Dimension CanDeviceConfigPanel() {
     Dimension dimension = super.getMinimumSize();
     return new Dimension(dimension.width, dimension.height + eJ.a(12));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/panels/a.class
  * Java compiler version: 8 (52.0)

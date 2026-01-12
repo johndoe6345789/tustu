@@ -1,9 +1,15 @@
 package business.byte_writers.bW_components;
 
 enum EnumInBwPackage {
-  a, b, c, d, e, f, g, h;
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  h;
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bW/d.class
  * Java compiler version: 8 (52.0)

@@ -19,15 +19,19 @@ public class GInterfaceDelta extends F {
         str2 = paramString.substring(paramString.lastIndexOf("[", i), i);
         str2 = k.a(str2, "[", "");
         str3 = paramString.substring(0, paramString.indexOf(str2 + "|") - 1);
-        str4 = paramString.substring(paramString.indexOf(str1) + str1.length() + 1, paramString.length());
+        str4 =
+            paramString.substring(
+                paramString.indexOf(str1) + str1.length() + 1, paramString.length());
       } else {
         str1 = paramString.substring(0, i);
         str2 = paramString.substring(i + 1);
         str1 = k.a(str1, "[", "");
         str2 = k.a(str2, "]", "");
         str3 = paramString.substring(0, paramString.indexOf(str1) - 1);
-        str4 = paramString.substring(paramString.indexOf(str2) + str2.length() + 1, paramString.length());
-      } 
+        str4 =
+            paramString.substring(
+                paramString.indexOf(str2) + str2.length() + 1, paramString.length());
+      }
       paramInt = a(str1, paramInt, paramn);
       str1 = b(str1);
       F f = b(".", str1);
@@ -37,11 +41,11 @@ public class GInterfaceDelta extends F {
         paramString = str3 + f.a(Float.toString(j.d(paramInt))) + str4;
       } else {
         paramString = str3 + f.a(str2) + str4;
-      } 
-    } 
+      }
+    }
     return paramString;
   }
-  
+
   private static int a(String paramString, int paramInt, n paramn) {
     int i = 0;
     if (paramString.indexOf("+") != -1 || paramString.indexOf("-") != -1) {
@@ -51,15 +55,12 @@ public class GInterfaceDelta extends F {
       paramString = k.a(paramString, paramString.substring(j, paramString.length()), "");
       i = Integer.parseInt(str);
       paramInt = bool ? (paramInt + i) : (paramInt - i);
-      if (paramInt < 0)
-        paramInt = 0; 
-      if (paramInt > paramn.d() - 1)
-        paramInt = paramn.d() - 1; 
-    } 
+      if (paramInt < 0) paramInt = 0;
+      if (paramInt > paramn.d() - 1) paramInt = paramn.d() - 1;
+    }
     return paramInt;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/PropertiesExtensionInHPackage/d.class
  * Java compiler version: 8 (52.0)

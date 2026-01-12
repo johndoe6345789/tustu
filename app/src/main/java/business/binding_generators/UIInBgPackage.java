@@ -9,11 +9,11 @@ import javax.swing.JTextField;
 
 public class UIInBgPackage extends JPanel {
   JTextField a = new JTextField("", 20);
-  
+
   JTextField b = new JTextField("", 20);
-  
+
   GInterfaceBf c = null;
-  
+
   public UIInBgPackage() {
     setLayout(new GridLayout(1, 0));
     JPanel jPanel = new JPanel();
@@ -28,7 +28,6 @@ public class UIInBgPackage extends JPanel {
     add(jPanel);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/n.class
  * Java compiler version: 8 (52.0)

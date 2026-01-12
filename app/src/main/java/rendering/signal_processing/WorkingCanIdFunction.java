@@ -1,24 +1,23 @@
 package L;
 
 import G.T;
-import ax.CloneableImplInAxPackage;
 import ax.AbstractInAxPackage;
+import ax.CloneableImplInAxPackage;
 
 public class WorkingCanIdFunction extends AbstractInAxPackage {
   public double a(CloneableImplInAxPackage paramS) {
     T t = T.a();
     return (t.c() == null) ? -1.0D : t.c().O().P();
   }
-  
+
   public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
-  
+
   public String toString() {
     return "getWorkingCanId()";
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/ad.class
  * Java compiler version: 8 (52.0)

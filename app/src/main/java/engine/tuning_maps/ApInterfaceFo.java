@@ -9,14 +9,16 @@ import s.SComponentGolf;
 
 class ApInterfaceFo implements ActionListener {
   ApInterfaceFo(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bN, jCheckBoxMenuItem.getState() + "");
-    bV.d(SComponentGolf.b("Changes will take effect next time you start TunerStudio."), jCheckBoxMenuItem);
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.bN, jCheckBoxMenuItem.getState() + "");
+    bV.d(
+        SComponentGolf.b("Changes will take effect next time you start TunerStudio."),
+        jCheckBoxMenuItem);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fO.class
  * Java compiler version: 8 (52.0)

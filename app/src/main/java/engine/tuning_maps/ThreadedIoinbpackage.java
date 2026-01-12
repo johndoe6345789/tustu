@@ -1,15 +1,15 @@
 package aP;
 
-import B.IOInBPackage;
 import B.BInterfaceBravo;
 import B.BInterfaceGolf;
-import B.i;
 import B.BInterfaceNovember;
-import G.R;
-import G.T;
+import B.IOInBPackage;
+import B.i;
+import G.AeInterfaceMikeTostring;
 import G.GInterfaceAg;
 import G.Manager;
-import G.AeInterfaceMikeTostring;
+import G.R;
+import G.T;
 import V.BInterfaceGolf;
 import aE.IOInBPackage;
 import bH.D;
@@ -24,25 +24,35 @@ import s.BInterfaceGolf;
 
 class ThreadedIoinbpackage implements GInterfaceAg {
   ThreadedIoinbpackage(jA paramjA) {}
-  
+
   public boolean IOInBPackage(String paramString, AeInterfaceMikeTostring parambT) {
     R r = T.IOInBPackage().c(paramString);
     IOInBPackage IOInBPackage = null;
-    if (r.C() instanceof IOHashMap && ((IOHashMap)r.C()).IOInBPackage() instanceof IOInBPackage)
-      IOInBPackage = (IOInBPackage)((IOHashMap)r.C()).IOInBPackage(); 
+    if (r.C() instanceof IOHashMap && ((IOHashMap) r.C()).IOInBPackage() instanceof IOInBPackage)
+      IOInBPackage = (IOInBPackage) ((IOHashMap) r.C()).IOInBPackage();
     i i = null;
-    if (IOInBPackage.A() != null)
-      i = ThreadedFile.d(new File(IOInBPackage.A().t())); 
+    if (IOInBPackage.A() != null) i = ThreadedFile.d(new File(IOInBPackage.A().t()));
     if (r != null) {
       Manager Manager = r.c("SERIAL_NUMBER");
       try {
-        if (Manager != null && Manager.BInterfaceNovember(r.h()) && Manager.ThreadedFile(r.h()) > 0.0D && parambT.c() != null && parambT.c().length() == 4) {
-          String str = Integer.toHexString((int)Manager.ThreadedFile(r.h()));
+        if (Manager != null
+            && Manager.BInterfaceNovember(r.h())
+            && Manager.ThreadedFile(r.h()) > 0.0D
+            && parambT.c() != null
+            && parambT.c().length() == 4) {
+          String str = Integer.toHexString((int) Manager.ThreadedFile(r.h()));
           str = X.IOInBPackage(str, '0', 4).toUpperCase();
-          if (!str.equals(parambT.c()))
-            return IOInBPackage(r); 
-        } else if (i != null && i.e() != null && !i.e().isEmpty() && IOInBPackage != null && !IOInBPackage.IOInBPackage().equals(i.e())) {
-          D.d("Project and controller serial numbers match. Controller: " + IOInBPackage.IOInBPackage() + ", Project: " + i.e());
+          if (!str.equals(parambT.c())) return IOInBPackage(r);
+        } else if (i != null
+            && i.e() != null
+            && !i.e().isEmpty()
+            && IOInBPackage != null
+            && !IOInBPackage.IOInBPackage().equals(i.e())) {
+          D.d(
+              "Project and controller serial numbers match. Controller: "
+                  + IOInBPackage.IOInBPackage()
+                  + ", Project: "
+                  + i.e());
           i i1 = new i();
           i1.BInterfaceGolf(i.ThreadedFile());
           i1.c(i.d());
@@ -58,32 +68,61 @@ class ThreadedIoinbpackage implements GInterfaceAg {
             ThreadedFile.IOInBPackage(new File(IOInBPackage.A().t()), i1);
           } else {
             return false;
-          } 
+          }
         } else {
-          if (i != null && BInterfaceBravo.c().d() != null && BInterfaceBravo.c().d().e() != null && !BInterfaceBravo.c().d().e().isEmpty()) {
+          if (i != null
+              && BInterfaceBravo.c().d() != null
+              && BInterfaceBravo.c().d().e() != null
+              && !BInterfaceBravo.c().d().e().isEmpty()) {
             D.d("Project with no serial number, adding it.");
             i.e(i.f() + " : serial.cfg was deleted.");
             ThreadedFile.IOInBPackage(new File(IOInBPackage.A().t()), i);
             return true;
-          } 
+          }
           D.d("Project and controller serial numbers match.");
-        } 
+        }
       } catch (BInterfaceGolf BInterfaceGolf) {
-        D.IOInBPackage((Exception)BInterfaceGolf);
-      } 
+        D.IOInBPackage((Exception) BInterfaceGolf);
+      }
     } else {
       D.BInterfaceBravo("EcuConfig not loaded, can't check serial.");
-    } 
+    }
     return true;
   }
-  
+
   public void IOInBPackage(String paramString) {}
-  
+
   private boolean IOInBPackage(R paramR) {
     JFrame jFrame = dd.IOInBPackage().c();
-    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \n" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project should be used for each ECU you work with.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this car or create IOInBPackage new Project.") + "\n";
-    String[] arrayOfString = { BInterfaceGolf.BInterfaceBravo("Open another Project"), BInterfaceGolf.BInterfaceBravo("Create IOInBPackage new Project"), BInterfaceGolf.BInterfaceBravo("Connect anyway") };
-    int i = JOptionPane.showOptionDialog(jFrame, str, BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"), 1, 2, null, (Object[])arrayOfString, arrayOfString[0]);
+    String str =
+        BInterfaceGolf.BInterfaceBravo(
+                "The loaded Project was used last used with IOInBPackage different ECU.")
+            + "\n\n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "To assist in maintaining calibration restore points and data logs")
+            + " \n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "IOInBPackage separate project should be used for each ECU you work with.")
+            + "\n\n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "It is recommended that you use IOInBPackage Project that was created for this car"
+                    + " or create IOInBPackage new Project.")
+            + "\n";
+    String[] arrayOfString = {
+      BInterfaceGolf.BInterfaceBravo("Open another Project"),
+      BInterfaceGolf.BInterfaceBravo("Create IOInBPackage new Project"),
+      BInterfaceGolf.BInterfaceBravo("Connect anyway")
+    };
+    int i =
+        JOptionPane.showOptionDialog(
+            jFrame,
+            str,
+            BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"),
+            1,
+            2,
+            null,
+            (Object[]) arrayOfString,
+            arrayOfString[0]);
     if (i == 0) {
       jD jD = new jD(this, jFrame);
       SwingUtilities.invokeLater(jD);
@@ -93,25 +132,49 @@ class ThreadedIoinbpackage implements GInterfaceAg {
     } else {
       paramR.h().f();
       return true;
-    } 
+    }
     return false;
   }
-  
+
   private boolean IOInBPackage(i parami, String paramString1, String paramString2) {
     JFrame jFrame = dd.IOInBPackage().c();
-    String str = BInterfaceGolf.BInterfaceBravo("The loaded Project was used last used with IOInBPackage different ECU.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("To assist in maintaining calibration restore points and data logs") + " \n" + BInterfaceGolf.BInterfaceBravo("IOInBPackage separate project is used for each ECU you work with.") + "\n\n" + BInterfaceGolf.BInterfaceBravo("It is recommended that you use IOInBPackage Project that was created for this ECU.") + "\n";
-    String[] arrayOfString = { BInterfaceGolf.BInterfaceBravo("Open Project for this ECU"), BInterfaceGolf.BInterfaceBravo("Assign this project to this ECU") };
-    int ThreadedFile = JOptionPane.showOptionDialog(jFrame, str, BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"), 0, 2, null, (Object[])arrayOfString, arrayOfString[0]);
+    String str =
+        BInterfaceGolf.BInterfaceBravo(
+                "The loaded Project was used last used with IOInBPackage different ECU.")
+            + "\n\n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "To assist in maintaining calibration restore points and data logs")
+            + " \n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "IOInBPackage separate project is used for each ECU you work with.")
+            + "\n\n"
+            + BInterfaceGolf.BInterfaceBravo(
+                "It is recommended that you use IOInBPackage Project that was created for this"
+                    + " ECU.")
+            + "\n";
+    String[] arrayOfString = {
+      BInterfaceGolf.BInterfaceBravo("Open Project for this ECU"),
+      BInterfaceGolf.BInterfaceBravo("Assign this project to this ECU")
+    };
+    int ThreadedFile =
+        JOptionPane.showOptionDialog(
+            jFrame,
+            str,
+            BInterfaceGolf.BInterfaceBravo("Different ECU Detected!"),
+            0,
+            2,
+            null,
+            (Object[]) arrayOfString,
+            arrayOfString[0]);
     if (ThreadedFile == 0) {
       jF jF = new jF(this, parami);
       SwingUtilities.invokeLater(jF);
     } else {
       return true;
-    } 
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/jC.class
  * Java compiler version: 8 (52.0)

@@ -1,12 +1,12 @@
 package business.binary_transformers;
 
-import G.R;
-import G.SerializableImpl;
-import G.GInterfaceAh;
 import G.GComponentBq;
 import G.GComponentBz;
 import G.GComponentCq;
+import G.GInterfaceAh;
 import G.ManagerUsingArrayList;
+import G.R;
+import G.SerializableImpl;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
 import bH.p;
@@ -33,23 +33,28 @@ import javax.swing.JPanel;
 
 public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
   dD ExceptionInVPackage = new dD(this);
-  
+
   GridLayout b = new GridLayout(0, 1, eJ.ExceptionInVPackage(3), eJ.ExceptionInVPackage(4));
-  
+
   List c = new ArrayList();
-  
+
   R d;
-  
+
   GComponentBz e;
-  
+
   public D(R paramR, GComponentBz parambz) {
     this.d = paramR;
     this.e = parambz;
     ExceptionInVPackage(paramR);
     setLayout(this.b);
-    setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(2), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(2)));
+    setBorder(
+        BorderFactory.createEmptyBorder(
+            eJ.ExceptionInVPackage(2),
+            eJ.ExceptionInVPackage(2),
+            eJ.ExceptionInVPackage(1),
+            eJ.ExceptionInVPackage(2)));
   }
-  
+
   public D(R paramR, GComponentBq parambq) {
     this.d = paramR;
     this.e = new GComponentBz();
@@ -57,35 +62,40 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
     this.e.x(parambq.m());
     ExceptionInVPackage(paramR);
     setLayout(this.b);
-    setBorder(BorderFactory.createEmptyBorder(eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1), eJ.ExceptionInVPackage(1)));
+    setBorder(
+        BorderFactory.createEmptyBorder(
+            eJ.ExceptionInVPackage(1),
+            eJ.ExceptionInVPackage(1),
+            eJ.ExceptionInVPackage(1),
+            eJ.ExceptionInVPackage(1)));
     ExceptionInVPackage(1);
     SerializableImpl SerializableImpl = paramR.ExceptionPrintstacktrace(parambq.b());
-    if (SerializableImpl == null)
-      bH.D.ExceptionInVPackage("Invalid Channel Name!!!" + parambq.b()); 
-    int i = (int)-Math.round(Math.log10(SerializableImpl.h()));
+    if (SerializableImpl == null) bH.D.ExceptionInVPackage("Invalid Channel Name!!!" + parambq.b());
+    int i = (int) -Math.round(Math.log10(SerializableImpl.h()));
     ExceptionInVPackage(parambq.b(), i);
   }
-  
+
   public void ExceptionInVPackage(int paramInt) {
     this.b.setColumns(paramInt);
   }
-  
+
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (!isEnabled()) {
       Color color = new Color(64, 64, 64, 100);
       paramGraphics.setColor(color);
       paramGraphics.fillRect(0, 0, getWidth(), getHeight());
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(GInterfaceAh paramah) {
     boolean bool = true;
     try {
       bool = p.ExceptionInVPackage(paramah.aJ(), b_());
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-    } 
+      Logger.getLogger(aV.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+    }
     if (bool) {
       Gauge gauge = new Gauge();
       gauge.setEcuConfigurationName(this.d.c());
@@ -95,13 +105,17 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       } catch (Exception exception) {
         bH.D.b("Unable to get Title for Gauge Def.. " + paramah.i());
         gauge.setTitle(paramah.i());
-      } 
+      }
       try {
         gauge.setUnits(paramah.j().ExceptionInVPackage());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        bH.D.b("Unable to get Units for Gauge Def.. " + paramah.j() + "\nErr: " + ExceptionPrintstacktrace.getLocalizedMessage());
+        bH.D.b(
+            "Unable to get Units for Gauge Def.. "
+                + paramah.j()
+                + "\nErr: "
+                + ExceptionPrintstacktrace.getLocalizedMessage());
         gauge.setTitle(paramah.i());
-      } 
+      }
       gauge.setMin(paramah.b());
       gauge.setMax(paramah.e());
       gauge.setLowCritical(paramah.o());
@@ -115,27 +129,28 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       gauge.setFontColor(Color.white);
       gauge.setWarnColor(Color.YELLOW.darker());
       gauge.setCriticalColor(Color.RED.darker());
-      gauge.setGaugePainter((GaugePainter)new BasicReadoutGaugePainter());
+      gauge.setGaugePainter((GaugePainter) new BasicReadoutGaugePainter());
       gauge.setBorderWidth(0);
       this.c.add(gauge);
       try {
         gauge.subscribeToOutput();
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         bV.d(ExceptionInVPackage.getMessage(), this);
-      } 
-      add((Component)gauge);
+      }
+      add((Component) gauge);
       gauge.setDirty(true);
       gauge.repaint();
-    } 
+    }
   }
-  
+
   protected void ExceptionInVPackage(String paramString, int paramInt) {
     boolean bool = true;
     try {
       bool = p.ExceptionInVPackage(this.e.V(), b_());
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-    } 
+      Logger.getLogger(aV.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+    }
     if (bool) {
       Gauge gauge = new Gauge();
       gauge.setEcuConfigurationName(this.d.c());
@@ -155,7 +170,7 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
       gauge.setFontColor(Color.white);
       gauge.setWarnColor(Color.YELLOW.darker());
       gauge.setCriticalColor(Color.RED.darker());
-      gauge.setGaugePainter((GaugePainter)new BasicReadoutGaugePainter());
+      gauge.setGaugePainter((GaugePainter) new BasicReadoutGaugePainter());
       gauge.setBorderWidth(0);
       gauge.setFontSizeAdjustment(6);
       this.c.add(gauge);
@@ -163,78 +178,75 @@ public class GaugeReadoutPanel extends bh implements ca, h, ac, bc {
         gauge.subscribeToOutput();
       } catch (ExceptionInVPackage ExceptionInVPackage) {
         bV.d(ExceptionInVPackage.getMessage(), this);
-      } 
-      add((Component)gauge);
+      }
+      add((Component) gauge);
       gauge.setDirty(true);
       gauge.repaint();
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage(s params) {
     this.ExceptionInVPackage.ExceptionInVPackage();
   }
-  
+
   public void close() {
     for (Gauge gauge : this.c)
-      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage((GComponentCq)gauge); 
+      ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage((GComponentCq) gauge);
   }
-  
+
   public Dimension getPreferredSize() {
     if (this.c.size() > 1) {
       int k = eJ.ExceptionInVPackage(38) * this.c.size() / this.b.getColumns();
       int m = eJ.ExceptionInVPackage(115) * this.b.getColumns();
       return new Dimension(m, k);
-    } 
+    }
     int i = eJ.ExceptionInVPackage(28) * this.c.size() / this.b.getColumns();
     int j = eJ.ExceptionInVPackage(125) * this.b.getColumns();
     return new Dimension(j, i);
   }
-  
+
   public Dimension getMinimumSize() {
     return getPreferredSize();
   }
-  
+
   public void ExceptionInVPackage() {
     if (this.e != null && this.e.aJ() != null && !this.e.aJ().equals("")) {
       boolean bool = true;
       try {
         bool = p.ExceptionInVPackage(this.e.aJ(), b_());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(aV.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
       if (isEnabled() && !bool) {
         setEnabled(false);
-        if (getParent() instanceof JPanel)
-          ((JPanel)getParent()).revalidate(); 
+        if (getParent() instanceof JPanel) ((JPanel) getParent()).revalidate();
       } else if (!isEnabled() && bool) {
         setEnabled(true);
-        if (getParent() instanceof JPanel)
-          ((JPanel)getParent()).revalidate(); 
-      } 
-    } 
+        if (getParent() instanceof JPanel) ((JPanel) getParent()).revalidate();
+      }
+    }
   }
-  
+
   public void b() {
     if (this.e != null && this.e.V() != null && !this.e.V().equals("")) {
       boolean bool = true;
       try {
         bool = p.ExceptionInVPackage(this.e.V(), b_());
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        Logger.getLogger(aV.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-      } 
+        Logger.getLogger(aV.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+      }
       if (isVisible() && !bool) {
         setVisible(false);
-        if (getParent() instanceof JPanel)
-          ((JPanel)getParent()).revalidate(); 
+        if (getParent() instanceof JPanel) ((JPanel) getParent()).revalidate();
       } else if (!isVisible() && bool) {
         setVisible(true);
-        if (getParent() instanceof JPanel)
-          ((JPanel)getParent()).revalidate(); 
-      } 
-    } 
+        if (getParent() instanceof JPanel) ((JPanel) getParent()).revalidate();
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/D.class
  * Java compiler version: 8 (52.0)

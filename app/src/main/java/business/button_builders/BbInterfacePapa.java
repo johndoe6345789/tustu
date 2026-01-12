@@ -14,15 +14,15 @@ import s.SComponentGolf;
 
 public class BbInterfacePapa extends JPanel {
   final p a = this;
-  
+
   JPanel b = new r(this);
-  
+
   JPanel c = null;
-  
+
   JLabel d = new JLabel("", 0);
-  
+
   JLabel e = new JLabel(SComponentGolf.b("Please click Checkbox to continue."), 0);
-  
+
   public BbInterfacePapa(String paramString) {
     this.d.setText(paramString);
     setLayout(new BorderLayout());
@@ -40,18 +40,18 @@ public class BbInterfacePapa extends JPanel {
     add("Center", jPanel2);
     this.b.setLayout(new BoxLayout(this.b, 1));
   }
-  
+
   public synchronized boolean a(String paramString) {
     q q = new q(this, paramString);
     SwingUtilities.invokeLater(q);
     try {
       wait();
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(p.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-    } 
+      Logger.getLogger(p.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+    }
     return true;
   }
-  
+
   private void b(String paramString) {
     s s = new s(this);
     s.a(paramString);
@@ -62,7 +62,6 @@ public class BbInterfacePapa extends JPanel {
     validate();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bb/p.class
  * Java compiler version: 8 (52.0)

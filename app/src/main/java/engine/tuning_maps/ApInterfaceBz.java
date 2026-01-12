@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceBz implements ActionListener {
   ApInterfaceBz(bW parambW) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b(this.a.getTitleAt(this.a.getSelectedIndex()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bZ.class
  * Java compiler version: 8 (52.0)

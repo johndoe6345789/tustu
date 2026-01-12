@@ -20,51 +20,51 @@ import gnu.io.UnsupportedCommOperationException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.TooManyListenersException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class SerialPortEventListenerUsingRXTXCommDriver extends J implements SerialPortEventListener {
+public class SerialPortEventListenerUsingRXTXCommDriver extends J
+    implements SerialPortEventListener {
   n a;
-  
+
   SerialPort VInterfaceBravo;
-  
+
   public static RXTXCommDriver c = new RXTXCommDriver();
-  
+
   static HashMap d = new HashMap<>();
-  
+
   f e;
-  
+
   g f;
-  
+
   private boolean o;
-  
+
   boolean g;
-  
+
   boolean h;
-  
+
   int i;
-  
+
   String j;
-  
+
   long k;
-  
+
   int l;
-  
+
   int m;
-  
+
   boolean n;
-  
+
   public static void a() {
     c.initialize();
   }
-  
+
   public boolean VInterfaceBravo() {
     return (this.e != null && this.e.a());
   }
-  
+
   public void c() {
     try {
       long l = System.currentTimeMillis();
@@ -73,16 +73,16 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       try {
         d(f1);
       } catch (VInterfaceBravo VInterfaceBravo) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceBravo);
-      } 
+        Logger.getLogger(e.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) VInterfaceBravo);
+      }
       D.d("Deactivated Turbo Baud, goOffline");
       if (q()) {
         a(e());
         a(250L);
-      } 
+      }
       D.c("goOffline about to stopProcessing, Time:" + (System.currentTimeMillis() - l));
-      if (this.e != null)
-        this.e.VInterfaceBravo(); 
+      if (this.e != null) this.e.VInterfaceBravo();
       f f2 = this.e;
       this.e = null;
       boolean bool = this.F;
@@ -90,93 +90,100 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       if (bool) {
         A();
         D.c("goOffline Notified offline, Time:" + (System.currentTimeMillis() - l));
-      } 
+      }
       h();
       D.c("goOffline closed port, Time:" + (System.currentTimeMillis() - l));
-      if (!Thread.currentThread().equals(f2) && (this.f == null || !Thread.currentThread().equals(this.f)))
-        for (byte VInterfaceBravo = 0; f2 != null && f2.isAlive() && VInterfaceBravo < 100; VInterfaceBravo++) {
+      if (!Thread.currentThread().equals(f2)
+          && (this.f == null || !Thread.currentThread().equals(this.f)))
+        for (byte VInterfaceBravo = 0;
+            f2 != null && f2.isAlive() && VInterfaceBravo < 100;
+            VInterfaceBravo++) {
           try {
             Thread.sleep(50L);
           } catch (InterruptedException interruptedException) {
             interruptedException.printStackTrace();
-          } 
-        }  
+          }
+        }
       D.c("goOffline comm thread stopped, Time:" + (System.currentTimeMillis() - l));
       v();
       try {
         j(e().u());
-      } catch (Exception exception) {}
+      } catch (Exception exception) {
+      }
     } finally {
       this.F = false;
       Q();
-    } 
+    }
   }
-  
+
   public void d() {
     if (g() == null || g().length() < 1) {
       D.d("no Comm port set, so not going online.");
       return;
-    } 
-    if (q())
-      return; 
+    }
+    if (q()) return;
     boolean bool = false;
-    if (this.e != null)
-      this.e.VInterfaceBravo(); 
+    if (this.e != null) this.e.VInterfaceBravo();
     try {
       a(e().r() + "");
       a(e().u(), e().s());
       D.c("Monitoring " + e().s() + " @ " + e().r() + " baud for controllers.");
     } catch (PortInUseException portInUseException) {
-      String str = "Serial Port " + e().s() + " is in use by " + portInUseException.currentOwner + "\n\nWould you like to go offline?";
+      String str =
+          "Serial Port "
+              + e().s()
+              + " is in use by "
+              + portInUseException.currentOwner
+              + "\n\nWould you like to go offline?";
       throw new l(str);
     } catch (NullPointerException nullPointerException) {
       throw new l("Failed to open current port.");
     } catch (Exception exception) {
       D.c("Error opeing port, ignoring and monitoring anyway.");
       bool = true;
-    } 
+    }
     this.e = new f(this);
     this.e.start();
     D.c("Started new CommThread for " + e().u());
-    if (bool)
-      throw new l(e().s() + " is not currently a valid port."); 
+    if (bool) throw new l(e().s() + " is not currently a valid port.");
     P();
   }
-  
+
   private void P() {
     if (!this.W) {
-      if (this.f != null)
-        this.f.a(); 
+      if (this.f != null) this.f.a();
       this.f = new g(this, this);
       this.f.start();
       D.d("Started Comms Watchdog");
-    } 
+    }
   }
-  
+
   private void Q() {
     if (this.f != null) {
       this.f.a();
       this.f = null;
       D.d("Stopped Comms Watchdog");
-    } 
+    }
   }
-  
+
   public F e() {
     return this.A.get(0);
   }
-  
+
   public void a(String paramString) {
     this.a.VInterfaceBravo(paramString);
   }
-  
+
   public String f() {
-    return (this.VInterfaceBravo != null) ? (this.VInterfaceBravo.getBaudRate() + "") : (e().r() + "");
+    return (this.VInterfaceBravo != null)
+        ? (this.VInterfaceBravo.getBaudRate() + "")
+        : (e().r() + "");
   }
-  
+
   public String g() {
     return (this.VInterfaceBravo != null) ? this.VInterfaceBravo.getName() : e().s();
   }
-  
+
   protected void h() {
     D.c("currentPort == null:" + ((this.VInterfaceBravo == null) ? 1 : 0));
     if (this.VInterfaceBravo != null) {
@@ -184,13 +191,14 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       d.remove(str);
       new h(this, this.VInterfaceBravo);
       this.VInterfaceBravo = null;
-    } 
+    }
   }
-  
+
   protected o a(m paramm) {
     o o = new o();
     if (paramm.s() == null || paramm.t() == null) {
-      String str = "testPort: uninitialized parameters, port =" + paramm.s() + ", baud=" + paramm.t();
+      String str =
+          "testPort: uninitialized parameters, port =" + paramm.s() + ", baud=" + paramm.t();
       D.a(str);
       o.a(3);
       o.a(str);
@@ -198,7 +206,8 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       String str = null;
       try {
         str = a(paramm.s(), paramm.t(), e().p().d());
-      } catch (l l) {}
+      } catch (l l) {
+      }
       this.g = true;
       try {
         if (str != null && VInterfaceBravo(str.getBytes())) {
@@ -207,16 +216,16 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
         } else {
           o.a(3);
           o.a("Device Unavailable");
-        } 
+        }
       } catch (Exception exception) {
-      
+
       } finally {
         this.g = false;
-      } 
-    } 
+      }
+    }
     return o;
   }
-  
+
   protected String a(String paramString1, String paramString2, byte[] paramArrayOfbyte) {
     String str = null;
     long l = System.currentTimeMillis();
@@ -226,18 +235,23 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       a(paramString2);
       a("TunerStudiotest", paramString1);
       str = a(paramArrayOfbyte, 400L);
-      if (str.length() == 1)
-        str = str.getBytes()[0] + ""; 
+      if (str.length() == 1) str = str.getBytes()[0] + "";
     } catch (PortInUseException portInUseException) {
       throw new l("Com Port " + paramString1 + ", in use by " + portInUseException.currentOwner);
     } catch (l l1) {
       throw l1;
     } catch (Exception exception) {
       if (this.VInterfaceBravo != null) {
-        D.a("Exception reading port:" + this.VInterfaceBravo.getName() + ", @" + this.VInterfaceBravo.getBaudRate() + " Baud. Error Message:\n" + exception.getMessage());
+        D.a(
+            "Exception reading port:"
+                + this.VInterfaceBravo.getName()
+                + ", @"
+                + this.VInterfaceBravo.getBaudRate()
+                + " Baud. Error Message:\n"
+                + exception.getMessage());
       } else {
         D.d("Port " + paramString1 + " Not found.");
-      } 
+      }
       return null;
     } finally {
       h();
@@ -247,51 +261,55 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
         if (e().u() != null && !e().u().equals("") && e().s() != null && !e().s().equals("")) {
           a(e().u(), e().s());
           D.c((System.currentTimeMillis() - l) + "ms. - ReOpened Port");
-        } 
+        }
       } catch (l l1) {
         D.c("Could not open port");
       } catch (PortInUseException portInUseException) {
         D.c("Port In Use By:" + portInUseException.currentOwner);
-      } 
+      }
       this.g = false;
-    } 
+    }
     return str;
   }
-  
+
   protected String a(byte[] paramArrayOfbyte) {
     return c.d(paramArrayOfbyte);
   }
-  
+
   public void a(boolean paramBoolean) {
     if (this.f == null) {
       if (!I() && !paramBoolean) {
         D.d("Comms Watchdog is inactive, staring.");
         P();
-      } 
+      }
       return;
-    } 
-    if (!this.f.VInterfaceBravo())
-      this.Q = System.currentTimeMillis(); 
-    if (this.f.VInterfaceBravo() && paramBoolean)
-      D.d("Comms Watchdog is active"); 
+    }
+    if (!this.f.VInterfaceBravo()) this.Q = System.currentTimeMillis();
+    if (this.f.VInterfaceBravo() && paramBoolean) D.d("Comms Watchdog is active");
     this.f.a(paramBoolean);
   }
-  
+
   protected void a(long paramLong) {
-    if (paramLong <= 0L)
-      return; 
+    if (paramLong <= 0L) return;
     try {
-      if (this.W)
-        D.c("sleep:" + paramLong); 
+      if (this.W) D.c("sleep:" + paramLong);
       Thread.sleep(paramLong);
-    } catch (Exception exception) {}
+    } catch (Exception exception) {
+    }
   }
-  
-  protected synchronized byte[] a(byte[] paramArrayOfbyte, long paramLong1, long paramLong2, int paramInt, m paramm) {
+
+  protected synchronized byte[] a(
+      byte[] paramArrayOfbyte, long paramLong1, long paramLong2, int paramInt, m paramm) {
     return super.a(paramArrayOfbyte, paramLong1, paramLong2, paramInt, paramm);
   }
-  
-  protected byte[] a(byte[] paramArrayOfbyte, long paramLong1, long paramLong2, int paramInt, m paramm, InputStream paramInputStream) {
+
+  protected byte[] a(
+      byte[] paramArrayOfbyte,
+      long paramLong1,
+      long paramLong2,
+      int paramInt,
+      m paramm,
+      InputStream paramInputStream) {
     // Byte code:
     //   0: invokestatic nanoTime : ()J
     //   3: lstore #9
@@ -1386,65 +1404,65 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
     //   2422: aload #13
     //   2424: areturn
   }
-  
+
   protected InputStream i() {
     return this.VInterfaceBravo.getInputStream();
   }
-  
+
   protected OutputStream j() {
     return this.VInterfaceBravo.getOutputStream();
   }
-  
+
   protected boolean k() {
     return this.E;
   }
-  
+
   public void l() {
     try {
       m();
     } catch (Exception exception) {
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, exception);
-    } 
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, exception);
+    }
   }
-  
+
   protected void a(String paramString1, String paramString2) {
     boolean bool = I();
     paramString2 = paramString2.trim();
     D.d("Opening port: " + paramString2);
     try {
       long l = System.currentTimeMillis();
-      this.VInterfaceBravo = (SerialPort)d.get(paramString2);
+      this.VInterfaceBravo = (SerialPort) d.get(paramString2);
       if (this.VInterfaceBravo == null) {
-        CommPortIdentifier.addPortName(paramString2, 1, (CommDriver)c);
-        if (bool)
-          D.c((System.currentTimeMillis() - l) + "ms. - added Port"); 
-        this.VInterfaceBravo = (SerialPort)c.getCommPort(paramString2, 1);
+        CommPortIdentifier.addPortName(paramString2, 1, (CommDriver) c);
+        if (bool) D.c((System.currentTimeMillis() - l) + "ms. - added Port");
+        this.VInterfaceBravo = (SerialPort) c.getCommPort(paramString2, 1);
         d.put(paramString2, this.VInterfaceBravo);
-        if (bool)
-          D.c((System.currentTimeMillis() - l) + "ms. - 1st got port"); 
+        if (bool) D.c((System.currentTimeMillis() - l) + "ms. - 1st got port");
         this.VInterfaceBravo.addEventListener(this);
         this.VInterfaceBravo.notifyOnDataAvailable(true);
-      } 
-      if (bool)
-        D.c((System.currentTimeMillis() - l) + "ms. - got port"); 
+      }
+      if (bool) D.c((System.currentTimeMillis() - l) + "ms. - got port");
       m();
-      if (bool)
-        D.c((System.currentTimeMillis() - l) + "ms. - setParameters"); 
+      if (bool) D.c((System.currentTimeMillis() - l) + "ms. - setParameters");
     } catch (TooManyListenersException tooManyListenersException) {
       D.c("Failed to add as serial listener");
     } catch (Exception exception) {
       d.remove(paramString2);
       if (I())
-        D.c("Unable to open port: " + paramString2 + "\nPlease check your Communications Settings. "); 
-      throw new l("Unable to open port: " + paramString2 + "\nPlease check your Communications Settings. ");
-    } 
+        D.c(
+            "Unable to open port: "
+                + paramString2
+                + "\nPlease check your Communications Settings. ");
+      throw new l(
+          "Unable to open port: " + paramString2 + "\nPlease check your Communications Settings. ");
+    }
   }
-  
+
   protected void m() {
     if (this.VInterfaceBravo == null) {
       D.VInterfaceBravo("currentPort is null, can not setConnectionParameters");
       return;
-    } 
+    }
     int i = this.VInterfaceBravo.getBaudRate();
     int j = this.VInterfaceBravo.getDataBits();
     int k = this.VInterfaceBravo.getStopBits();
@@ -1455,7 +1473,8 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
     this.VInterfaceBravo.setInputBufferSize(this.i);
     this.VInterfaceBravo.setOutputBufferSize(this.i);
     try {
-      this.VInterfaceBravo.setSerialPortParams(this.a.VInterfaceBravo(), this.a.f(), this.a.g(), this.a.h());
+      this.VInterfaceBravo.setSerialPortParams(
+          this.a.VInterfaceBravo(), this.a.f(), this.a.g(), this.a.h());
       this.VInterfaceBravo.enableReceiveTimeout(5);
       this.m = 12 * this.a.VInterfaceBravo() / 115200;
     } catch (UnsupportedCommOperationException unsupportedCommOperationException) {
@@ -1464,21 +1483,21 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       this.a.c(k);
       this.a.d(m);
       throw new m("Unsupported parameter");
-    } 
+    }
     try {
       this.VInterfaceBravo.setFlowControlMode(this.a.d() | this.a.e());
     } catch (UnsupportedCommOperationException unsupportedCommOperationException) {
       throw new m("Unsupported flow control");
-    } 
+    }
   }
-  
+
   public synchronized void serialEvent(SerialPortEvent paramSerialPortEvent) {
     if (paramSerialPortEvent.getEventType() == 1) {
       this.h = true;
       notify();
-    } 
+    }
   }
-  
+
   protected synchronized void VInterfaceBravo(long paramLong) {
     this.h = false;
     long l = System.currentTimeMillis() + paramLong;
@@ -1486,58 +1505,57 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       try {
         wait(paramLong);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
-  
+
   public void VInterfaceBravo(boolean paramBoolean) {
     this.o = paramBoolean;
   }
-  
+
   public String n() {
     return "MegaSquirtRs232CommManager";
   }
-  
+
   protected void o() {
     if (this.VInterfaceBravo == null) {
-      if (I())
-        D.d("Had to open port " + e().s() + " from the comm thread"); 
+      if (I()) D.d("Had to open port " + e().s() + " from the comm thread");
       c = new RXTXCommDriver();
       D.c("re-initializing driver in loop");
       c.initialize();
       a(1000L);
       a(e().u(), e().s());
       a(500L);
-    } 
+    }
   }
-  
+
   protected boolean p() {
     return true;
   }
-  
+
   protected synchronized boolean a(int paramInt) {
     String str = f();
     a(paramInt + "");
     try {
       m();
     } catch (m m) {
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, m);
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, m);
       a(str);
       try {
         m();
       } catch (m m1) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, m1);
-      } 
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, m1);
+      }
       return false;
-    } 
+    }
     return true;
   }
-  
+
   public boolean a(Thread paramThread) {
     return (paramThread != null && this.e != null && paramThread.equals(this.e));
   }
-  
+
   private void R() {
     String str = System.getProperty("os.name");
     boolean bool = (str != null && str.startsWith("Linux")) ? true : false;
@@ -1553,22 +1571,26 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
         a(250L);
         process = Runtime.getRuntime().exec("/bin/rm " + str2);
         process.waitFor();
-        D.d("Failed to open port, deleted Lock file, exit code: " + process.exitValue() + ":" + str2);
+        D.d(
+            "Failed to open port, deleted Lock file, exit code: "
+                + process.exitValue()
+                + ":"
+                + str2);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
       } catch (IOException iOException) {
-        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, iOException);
-      }  
+        Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, iOException);
+      }
   }
-  
+
   public boolean q() {
     return (this.F && this.e != null && !this.e.a());
   }
-  
+
   public boolean r() {
     return (this.e != null && !this.e.a());
   }
-  
+
   protected void a(SerialPort paramSerialPort) {
     try {
       String str = X.VInterfaceBravo(this.VInterfaceBravo.getName(), "//./", "");
@@ -1577,17 +1599,16 @@ public class SerialPortEventListenerUsingRXTXCommDriver extends J implements Ser
       try {
         paramSerialPort.getOutputStream().flush();
       } catch (IOException iOException) {
-      
+
       } finally {
         paramSerialPort.close();
         D.d("Successfully Closed Port");
-      } 
+      }
     } catch (Exception exception) {
       D.c("can not close Port: " + paramSerialPort + ", message: " + exception.getMessage());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/z/e.class
  * Java compiler version: 8 (52.0)

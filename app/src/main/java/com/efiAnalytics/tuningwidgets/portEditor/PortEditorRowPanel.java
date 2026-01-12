@@ -1,10 +1,10 @@
 package com.efiAnalytics.tuningwidgets.portEditor;
 
-import G.R;
-import G.SerializableImpl;
-import G.Manager;
 import G.ArrayListExceptionprintstacktrace;
 import G.GComponentBq;
+import G.Manager;
+import G.R;
+import G.SerializableImpl;
 import com.efiAnalytics.ui.bc;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -15,25 +15,25 @@ import javax.swing.JPanel;
 
 public class PortEditorRowPanel extends JPanel implements F, bc {
   R a = null;
-  
+
   private Manager h = null;
-  
+
   private Manager i = null;
-  
+
   private Manager j = null;
-  
+
   q b = null;
-  
+
   C c = null;
-  
+
   v d = null;
-  
+
   B e = null;
-  
+
   B f = null;
-  
+
   int g = -1;
-  
+
   public PortEditorRowPanel(R paramR, ArrayListExceptionprintstacktrace paramaS, int paramInt) {
     this.a = paramR;
     this.h = this.a.c(paramaS.h());
@@ -52,8 +52,7 @@ public class PortEditorRowPanel extends JPanel implements F, bc {
     a(paramR);
     ArrayList<String> arrayList = new ArrayList();
     Iterator<String> iterator = paramaS.b();
-    while (iterator.hasNext())
-      arrayList.add("" + iterator.next()); 
+    while (iterator.hasNext()) arrayList.add("" + iterator.next());
     String[] arrayOfString = new String[arrayList.size()];
     arrayOfString = arrayList.<String>toArray(arrayOfString);
     this.d = new v(paramR, paramaS.h(), arrayOfString);
@@ -64,18 +63,18 @@ public class PortEditorRowPanel extends JPanel implements F, bc {
     GComponentBq.b(paramaS.i());
     this.e = new B(this, paramR, GComponentBq);
     this.e.a(0, paramInt);
-    add((Component)this.e);
+    add((Component) this.e);
     GComponentBq = new GComponentBq();
     GComponentBq.b(paramaS.j());
     this.f = new B(this, paramR, GComponentBq);
     this.f.a(0, paramInt);
-    add((Component)this.f);
+    add((Component) this.f);
   }
-  
+
   private void a(SerializableImpl paramaH) {
     a();
   }
-  
+
   public void a(int paramInt) {
     this.b.a(paramInt);
     this.c.b(paramInt);
@@ -83,12 +82,12 @@ public class PortEditorRowPanel extends JPanel implements F, bc {
     this.e.a(this.g, paramInt);
     this.f.a(this.g, paramInt);
   }
-  
+
   public void a() {
     this.e.f();
     this.f.f();
   }
-  
+
   public void close() {
     this.c.close();
     this.d.close();
@@ -99,12 +98,11 @@ public class PortEditorRowPanel extends JPanel implements F, bc {
     this.j.c(0.0D);
     this.j.b(1.0D);
   }
-  
+
   public void a(R paramR) {
     this.c.a(paramR);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/portEditor/z.class
  * Java compiler version: 8 (52.0)

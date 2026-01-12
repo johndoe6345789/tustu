@@ -6,9 +6,9 @@ import javax.swing.event.ChangeListener;
 
 class Table3DHeightScaleSliderListener implements ChangeListener {
   Table3DHeightScaleSliderListener(bt parambt) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
-    JSlider jSlider = (JSlider)paramChangeEvent.getSource();
+    JSlider jSlider = (JSlider) paramChangeEvent.getSource();
     double d = jSlider.getValue() / 100.0D;
     this.a.a.c(d);
     this.a.a("zHeightScale", d + "");
@@ -16,7 +16,6 @@ class Table3DHeightScaleSliderListener implements ChangeListener {
     this.a.a.repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bG.class
  * Java compiler version: 8 (52.0)

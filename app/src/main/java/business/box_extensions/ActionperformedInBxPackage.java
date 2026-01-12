@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ActionperformedInBxPackage implements ActionListener {
   ActionperformedInBxPackage(c paramc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     c.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/h.class
  * Java compiler version: 8 (52.0)

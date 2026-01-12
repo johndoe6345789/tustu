@@ -4,10 +4,9 @@ import com.efiAnalytics.apps.ts.dashboard.x;
 
 public interface ApInterfaceDelta {
   void a();
-  
+
   boolean a(String paramString, x paramx);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/d.class
  * Java compiler version: 8 (52.0)

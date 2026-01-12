@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class PInterfaceSierra implements ActionListener {
   PInterfaceSierra(p paramp) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     p.c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/s.class
  * Java compiler version: 8 (52.0)

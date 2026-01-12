@@ -7,13 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class fc implements ItemListener {
   fc(eK parameK) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramItemEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramItemEvent.getSource();
     IOProperties.c("veAnalysisDisableOverrunFilter", jCheckBoxMenuItem.getState() + "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/fc.class
  * Java compiler version: 8 (52.0)

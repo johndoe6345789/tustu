@@ -1,67 +1,66 @@
 package L;
 
-import ax.CloneableImplInAxPackage;
-import ax.AxInterfaceAb;
 import ax.AbstractInAxPackage;
+import ax.AxInterfaceAb;
+import ax.CloneableImplInAxPackage;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LastValueWithTrigger extends AbstractInAxPackage {
   AxInterfaceAb a;
-  
+
   AxInterfaceAb b;
-  
+
   AxInterfaceAb c = null;
-  
+
   int d = Integer.MIN_VALUE;
-  
+
   List e = new ArrayList();
-  
+
   double f = Double.NaN;
-  
+
   protected F(AxInterfaceAb paramab1, AxInterfaceAb paramab2) {
     this.a = paramab2;
     this.b = paramab1;
     this.d = 1;
   }
-  
+
   protected F(AxInterfaceAb paramab1, AxInterfaceAb paramab2, AxInterfaceAb paramab3) {
     this.a = paramab2;
     this.b = paramab1;
     this.c = paramab3;
   }
-  
+
   public synchronized double a(CloneableImplInAxPackage paramS) {
     double d = this.a.b(paramS);
     int i = c(paramS);
     if (Double.isNaN(this.f) || this.f != d) {
       this.e.add(0, Double.valueOf(this.b.b(paramS)));
-      while (this.e.size() > i + 2)
-        this.e.remove(this.e.size() - 1); 
+      while (this.e.size() > i + 2) this.e.remove(this.e.size() - 1);
       this.f = d;
-    } 
-    return (this.e.size() > i) ? ((Double)this.e.get(i)).doubleValue() : Double.NaN;
+    }
+    return (this.e.size() > i) ? ((Double) this.e.get(i)).doubleValue() : Double.NaN;
   }
-  
+
   public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
-  
+
   private int c(CloneableImplInAxPackage paramS) {
-    if (this.d > Integer.MIN_VALUE)
-      return this.d; 
+    if (this.d > Integer.MIN_VALUE) return this.d;
     if (this.c != null) {
-      this.d = (int)this.c.b(paramS);
+      this.d = (int) this.c.b(paramS);
       return this.d;
-    } 
+    }
     return 1;
   }
-  
+
   public String toString() {
-    return (this.c != null) ? ("lastValue( " + this.b.toString() + ", " + this.c.toString() + " )") : ("lastValue( " + this.b.toString() + " )");
+    return (this.c != null)
+        ? ("lastValue( " + this.b.toString() + ", " + this.c.toString() + " )")
+        : ("lastValue( " + this.b.toString() + " )");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/F.class
  * Java compiler version: 8 (52.0)

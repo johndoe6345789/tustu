@@ -14,13 +14,13 @@ import javax.swing.JPanel;
 
 class JPanelExtensionInTPackage extends JPanel {
   File a;
-  
+
   int b = eJ.a(120);
-  
+
   JLabel c = new JLabel("", 0);
-  
+
   JLabel d = new JLabel("", 0);
-  
+
   public JPanelExtensionInTPackage(aj paramaj, File paramFile) {
     this.d.setAlignmentX(0.5F);
     this.d.setAlignmentY(0.5F);
@@ -33,7 +33,7 @@ class JPanelExtensionInTPackage extends JPanel {
     add("South", this.c);
     a(paramFile);
   }
-  
+
   public JPanelExtensionInTPackage(aj paramaj, int paramInt) {
     this.b = paramInt;
     this.d.setAlignmentX(0.5F);
@@ -46,7 +46,7 @@ class JPanelExtensionInTPackage extends JPanel {
     add("Center", this.d);
     add("South", this.c);
   }
-  
+
   public void a(File paramFile) {
     this.a = paramFile;
     if (paramFile != null && paramFile.exists()) {
@@ -57,21 +57,26 @@ class JPanelExtensionInTPackage extends JPanel {
         mediaTracker.waitForAll(250L);
       } catch (InterruptedException interruptedException) {
         interruptedException.printStackTrace();
-      } 
+      }
       mediaTracker.removeImage(image, 1);
-      float f = (image.getWidth(null) > image.getHeight(null)) ? (this.b / image.getWidth(null)) : (this.b / image.getHeight(null));
-      ImageIcon imageIcon = new ImageIcon(image.getScaledInstance(Math.round(image.getWidth(null) * f), Math.round(image.getHeight(null) * f), 1));
+      float f =
+          (image.getWidth(null) > image.getHeight(null))
+              ? (this.b / image.getWidth(null))
+              : (this.b / image.getHeight(null));
+      ImageIcon imageIcon =
+          new ImageIcon(
+              image.getScaledInstance(
+                  Math.round(image.getWidth(null) * f), Math.round(image.getHeight(null) * f), 1));
       this.d.setIcon(imageIcon);
       this.c.setText(paramFile.getName());
       repaint();
     } else {
-      this.d.setIcon((Icon)null);
+      this.d.setIcon((Icon) null);
       this.c.setText("");
       repaint();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/ar.class
  * Java compiler version: 8 (52.0)

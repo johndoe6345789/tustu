@@ -5,7 +5,7 @@ import java.awt.event.ItemListener;
 
 class OtherCheckboxListener implements ItemListener {
   OtherCheckboxListener(b paramb) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
     boolean bool = (paramItemEvent.getStateChange() == 1) ? true : false;
     this.a.f.setEnabled(bool);
@@ -13,7 +13,6 @@ class OtherCheckboxListener implements ItemListener {
     this.a.c.setEnabled(!bool);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/d.class
  * Java compiler version: 8 (52.0)

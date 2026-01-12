@@ -12,25 +12,25 @@ import javax.swing.JPanel;
 
 class gY extends JPanel {
   JLabel a = new JLabel("");
-  
+
   JLabel b = new JLabel("");
-  
+
   JLabel c = new JLabel("");
-  
+
   JLabel d = new JLabel("");
-  
+
   JLabel e = new JLabel("");
-  
+
   JLabel f = new JLabel("");
-  
+
   JLabel g = new JLabel("");
-  
+
   JLabel h = new JLabel("");
-  
+
   JLabel i = new JLabel("");
-  
+
   Dimension j = new Dimension(70, 20);
-  
+
   gY(go paramgo) {
     setLayout(new BorderLayout());
     setBorder(BorderFactory.createTitledBorder("Data Details"));
@@ -48,7 +48,7 @@ class gY extends JPanel {
     jPanel.add(a("Mean:", this.g));
     jPanel.add(a("Max:", this.i));
   }
-  
+
   public void a() {
     int[] arrayOfInt1 = this.k.l.h().getSelectedColumns();
     int[] arrayOfInt2 = this.k.l.h().getSelectedRows();
@@ -70,11 +70,11 @@ class gY extends JPanel {
           d3 = b2.c() * b2.k();
           d4 = b2.d() * b2.k();
           if (b2.f() != null && (Double.isNaN(d5) || b2.f().doubleValue() > d5))
-            d5 = b2.f().doubleValue(); 
+            d5 = b2.f().doubleValue();
           if (b2.g() != null && (Double.isNaN(d6) || b2.g().doubleValue() < d6))
-            d6 = b2.g().doubleValue(); 
-        } 
-      } 
+            d6 = b2.g().doubleValue();
+        }
+      }
       double d7 = d3 / d1;
       double d8 = d2 / d1;
       double d9 = d4 / d1;
@@ -93,9 +93,9 @@ class gY extends JPanel {
       this.g.setText("");
       this.h.setText("");
       this.i.setText("");
-    } 
+    }
   }
-  
+
   private JPanel a(String paramString, Component paramComponent) {
     JLabel jLabel = new JLabel(paramString, 4);
     jLabel.setMinimumSize(this.j);
@@ -105,16 +105,15 @@ class gY extends JPanel {
     jPanel.add(jLabel, "West");
     return jPanel;
   }
-  
+
   public void a(String paramString) {
     this.b.setText(paramString);
   }
-  
+
   public void b(String paramString) {
     this.a.setText(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/gY.class
  * Java compiler version: 8 (52.0)

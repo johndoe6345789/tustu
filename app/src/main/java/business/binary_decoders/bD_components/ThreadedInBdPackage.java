@@ -11,7 +11,7 @@ class ThreadedInBdPackage extends Thread {
     super("Read Dir Thread");
     setDaemon(true);
   }
-  
+
   public void run() {
     try {
       this.a.a.c();
@@ -29,10 +29,9 @@ class ThreadedInBdPackage extends Thread {
       this.a.a.a(remoteAccessException.getMessage());
     } finally {
       this.a.b = null;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/C.class
  * Java compiler version: 8 (52.0)

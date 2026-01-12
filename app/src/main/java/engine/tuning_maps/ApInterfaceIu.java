@@ -8,12 +8,12 @@ import java.util.logging.Logger;
 
 class ApInterfaceIu extends Thread {
   List a = Collections.synchronizedList(new ArrayList());
-  
+
   iU(iS paramiS) {
     super("StartScreenUpdate");
     setDaemon(false);
   }
-  
+
   public void run() {
     while (this.a.size() > 0) {
       try {
@@ -22,18 +22,16 @@ class ApInterfaceIu extends Thread {
         this.a.remove(0);
         this.b.a(iT.a, iT.b, iT.c);
       } catch (Exception exception) {
-        Logger.getLogger(iS.class.getName()).log(Level.SEVERE, (String)null, exception);
-      } 
-    } 
+        Logger.getLogger(iS.class.getName()).log(Level.SEVERE, (String) null, exception);
+      }
+    }
   }
-  
+
   public void a(iT paramiT) {
     this.a.add(paramiT);
-    if (!isAlive())
-      start(); 
+    if (!isAlive()) start();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iU.class
  * Java compiler version: 8 (52.0)

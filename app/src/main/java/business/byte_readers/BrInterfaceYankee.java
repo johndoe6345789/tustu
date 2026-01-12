@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 class BrInterfaceYankee implements ActionListener {
   BrInterfaceYankee(P paramP) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(this.a.b.n());
     this.a.b.r(paramActionEvent.getActionCommand());
@@ -14,12 +14,11 @@ class BrInterfaceYankee implements ActionListener {
     for (ag ag : this.a.p) {
       ag.f();
       ag.a(SerializableImpl);
-    } 
+    }
     this.a.m.a("targetLambdaTableName", this.a.b.c());
     this.a.m.a("targetLambdaChannelName", this.a.b.r());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/Y.class
  * Java compiler version: 8 (52.0)

@@ -5,7 +5,7 @@ import javax.swing.event.ChangeListener;
 
 class ChangeListenerStatechanged implements ChangeListener {
   ChangeListenerStatechanged(bW parambW) {}
-  
+
   public void stateChanged(ChangeEvent paramChangeEvent) {
     if (this.a.getSelectedIndex() == this.a.getTabCount() - 1) {
       if (this.a.a < this.a.getTabCount() - 1) {
@@ -13,13 +13,12 @@ class ChangeListenerStatechanged implements ChangeListener {
         bW.a(this.a);
       } else {
         this.a.setSelectedIndex(0);
-      } 
+      }
     } else {
       this.a.a = this.a.getSelectedIndex();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bX.class
  * Java compiler version: 8 (52.0)

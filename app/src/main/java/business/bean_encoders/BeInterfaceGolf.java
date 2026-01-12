@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BeInterfaceGolf implements ActionListener {
   BeInterfaceGolf(C paramC) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     C.d(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/G.class
  * Java compiler version: 8 (52.0)

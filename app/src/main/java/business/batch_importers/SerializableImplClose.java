@@ -1,8 +1,8 @@
 package business.batch_importers;
 
+import G.GInterfaceDg;
 import G.R;
 import G.T;
-import G.GInterfaceDg;
 import aG.AgInterfaceBravo;
 import aP.NetworkHashMap;
 import bH.D;
@@ -29,25 +29,25 @@ import javax.swing.JPanel;
 
 public class SerializableImplClose extends d implements bc, Serializable {
   String a;
-  
+
   dO AgInterfaceBravo = new dO();
-  
+
   JButton c = new JButton("Open Replay Log");
-  
+
   JButton d = new JButton("Cancel");
-  
+
   JLabel e = new JLabel("", 4);
-  
+
   private final String i = "Standard Speed";
-  
+
   private final String j = "High Speed";
-  
+
   File NetworkHashMap = null;
-  
+
   AgInterfaceBravo g = null;
-  
+
   GInterfaceDg h = new d(this);
-  
+
   public SerializableImplClose(R paramR) {
     this.a = paramR.c();
     paramR.O().a(this.h);
@@ -55,11 +55,11 @@ public class SerializableImplClose extends d implements bc, Serializable {
       this.e.setText("High Speed");
     } else {
       this.e.setText("Standard Speed");
-    } 
+    }
     this.e.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
     setLayout(new BorderLayout());
     add("North", this.e);
-    add("Center", (Component)this.AgInterfaceBravo);
+    add("Center", (Component) this.AgInterfaceBravo);
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new FlowLayout(2));
     this.c.addActionListener(new AgInterfaceBravo(this));
@@ -71,25 +71,24 @@ public class SerializableImplClose extends d implements bc, Serializable {
     NetworkHashMap NetworkHashMap = new NetworkHashMap(this);
     NetworkHashMap.start();
   }
-  
+
   private void a() {
     if (this.NetworkHashMap != null && this.NetworkHashMap.exists()) {
       NetworkHashMap.a().a(this.NetworkHashMap);
       AgInterfaceBravo();
     } else {
-      bV.d("Replay file not found.", (Component)this);
-    } 
+      bV.d("Replay file not found.", (Component) this);
+    }
   }
-  
+
   private void AgInterfaceBravo() {
-    if (this.g != null)
-      this.g.a(); 
+    if (this.g != null) this.g.a();
     R r = T.a().c(this.a);
     r.O().AgInterfaceBravo(this.h);
-    Window window = bV.AgInterfaceBravo((Component)this);
+    Window window = bV.AgInterfaceBravo((Component) this);
     window.dispose();
   }
-  
+
   private void c() {
     aE.a a1 = aE.a.A();
     this.NetworkHashMap = new File(a1.L().getAbsolutePath(), "BigLog_Replay_" + X.a() + ".csv");
@@ -98,27 +97,26 @@ public class SerializableImplClose extends d implements bc, Serializable {
     try {
       int i = this.g.a(this.NetworkHashMap, new e(this));
     } catch (RemoteAccessException remoteAccessException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)remoteAccessException);
-      D.a("Failed to upload replay data", (Exception)remoteAccessException, this);
-    } 
+      Logger.getLogger(a.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) remoteAccessException);
+      D.a("Failed to upload replay data", (Exception) remoteAccessException, this);
+    }
   }
-  
+
   public void close() {
     R r = T.a().c(this.a);
-    if (r != null)
-      r.O().AgInterfaceBravo(this.h); 
+    if (r != null) r.O().AgInterfaceBravo(this.h);
   }
-  
+
   public JDialog a(Frame paramFrame, String paramString) {
     JDialog jDialog = new JDialog(paramFrame, paramString, true);
-    jDialog.add("Center", (Component)this);
+    jDialog.add("Center", (Component) this);
     jDialog.pack();
     bV.a(paramFrame, jDialog);
     jDialog.setVisible(true);
     return jDialog;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bi/a.class
  * Java compiler version: 8 (52.0)

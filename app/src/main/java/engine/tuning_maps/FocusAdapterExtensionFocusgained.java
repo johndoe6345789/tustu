@@ -6,15 +6,14 @@ import javax.swing.JTextField;
 
 class FocusAdapterExtensionFocusgained extends FocusAdapter {
   FocusAdapterExtensionFocusgained(aM paramaM) {}
-  
+
   public void focusGained(FocusEvent paramFocusEvent) {
-    JTextField jTextField = (JTextField)paramFocusEvent.getSource();
+    JTextField jTextField = (JTextField) paramFocusEvent.getSource();
     jTextField.selectAll();
   }
-  
+
   public void focusLost(FocusEvent paramFocusEvent) {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aQ.class
  * Java compiler version: 8 (52.0)

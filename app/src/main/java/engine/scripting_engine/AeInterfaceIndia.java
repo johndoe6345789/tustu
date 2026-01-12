@@ -8,13 +8,13 @@ import java.util.logging.Logger;
 
 class AeInterfaceIndia extends Thread {
   AeInterfaceIndia(f paramf, w paramw) {}
-  
+
   public void run() {
     List<d> list = null;
     try {
       list = f.c(this.b);
     } catch (IOException iOException) {
-      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(f.class.getName()).log(Level.SEVERE, (String) null, iOException);
       d d = new d();
       d.a(d.b);
       d.a("Unable to communicate with the controller.");
@@ -27,12 +27,11 @@ class AeInterfaceIndia extends Thread {
         d.a("Unhandled Error occurred.");
         list = new ArrayList<>();
         list.add(d);
-      } 
+      }
       this.a.a(list);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ae/i.class
  * Java compiler version: 8 (52.0)

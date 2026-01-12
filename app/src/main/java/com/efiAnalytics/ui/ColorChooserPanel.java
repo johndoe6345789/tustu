@@ -12,19 +12,19 @@ import javax.swing.JPanel;
 
 public class ColorChooserPanel extends JPanel implements bc {
   JColorChooser a = new JColorChooser();
-  
+
   ArrayList b = new ArrayList();
-  
+
   private Color g = Color.WHITE;
-  
+
   JDialog c = null;
-  
+
   JButton d;
-  
+
   JButton e;
-  
+
   JButton f;
-  
+
   public ColorChooserPanel() {
     setLayout(new BorderLayout());
     add("Center", this.a);
@@ -42,7 +42,7 @@ public class ColorChooserPanel extends JPanel implements bc {
     this.e.setEnabled(false);
     add("South", jPanel);
   }
-  
+
   public JDialog a(Component paramComponent, String paramString, Color paramColor) {
     a(paramColor);
     if (this.c == null || !this.c.isVisible()) {
@@ -50,31 +50,29 @@ public class ColorChooserPanel extends JPanel implements bc {
     } else {
       this.c.setTitle(paramString);
       this.c.setVisible(true);
-    } 
+    }
     return this.c;
   }
-  
+
   public void a(bh parambh) {
     this.b.clear();
     this.b.add(parambh);
   }
-  
+
   private void b(Color paramColor) {
-    for (bh bh : this.b)
-      bh.a(paramColor); 
+    for (bh bh : this.b) bh.a(paramColor);
   }
-  
+
   public void a(Color paramColor) {
     this.g = paramColor;
     this.a.setColor(paramColor);
     this.e.setEnabled(false);
   }
-  
+
   public void close() {
     this.b.clear();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bd.class
  * Java compiler version: 8 (52.0)

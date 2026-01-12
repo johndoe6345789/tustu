@@ -6,13 +6,12 @@ import java.awt.event.ActionListener;
 
 class AoInterfaceYankee implements ActionListener {
   AoInterfaceYankee(q paramq, k paramk) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     n n = this.b.d.e.a();
     k.a(this.b.d, n);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aO/y.class
  * Java compiler version: 8 (52.0)

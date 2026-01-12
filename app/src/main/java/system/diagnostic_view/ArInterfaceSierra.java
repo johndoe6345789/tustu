@@ -1,20 +1,20 @@
 package aR;
 
+import G.ArrayList;
+import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.ExceptionprintstacktraceInGPackage;
 import G.R;
 import G.T;
-import G.ArrayList;
-import G.ExceptionprintstacktraceInGPackage;
-import G.ArrayListExceptionprintstacktraceInGPackage;
 import aE.PropertiesExtension;
-import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import aP.NetworkHashMap;
+import aP.ThreadedJFrameIsoptimizeddrawingenabled;
 import bt.O;
 import com.efiAnalytics.ui.cY;
+import d.ArrayListExtensionInDPackage;
 import d.DComponentCharlie;
+import d.DInterfaceIndia;
 import d.ExceptionInDPackage;
 import d.TostringInDPackage;
-import d.DInterfaceIndia;
-import d.ArrayListExtensionInDPackage;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +23,9 @@ import s.SComponentGolf;
 
 public class ArInterfaceSierra implements cY, DComponentCharlie {
   ArrayListExtensionInDPackage PropertiesExtension = new ArrayListExtensionInDPackage();
-  
+
   DInterfaceIndia b;
-  
+
   public ArInterfaceSierra() {
     DInterfaceIndia i1 = new DInterfaceIndia("ecuConfig", "");
     i1.PropertiesExtension(0);
@@ -33,70 +33,81 @@ public class ArInterfaceSierra implements cY, DComponentCharlie {
     this.b.PropertiesExtension(0);
     this.PropertiesExtension.PropertiesExtension(this.b);
   }
-  
+
   public String b() {
     return "Show Settings Dialog";
   }
-  
+
   public String DComponentCharlie() {
     return "Settings Dialogs";
   }
-  
+
   public boolean d() {
     return (PropertiesExtension.A() != null);
   }
-  
+
   public void PropertiesExtension(Properties paramProperties) {
     R r;
     String str1 = paramProperties.getProperty("settingsPanelName");
     if (str1 == null || str1.isEmpty())
-      throw new ExceptionInDPackage("Settings panel name is PropertiesExtension required parameter for Show settings Dialog action."); 
+      throw new ExceptionInDPackage(
+          "Settings panel name is PropertiesExtension required parameter for Show settings Dialog"
+              + " action.");
     String str2 = paramProperties.getProperty("ecuConfig");
     if (str2 == null || str2.isEmpty()) {
       r = T.PropertiesExtension().DComponentCharlie();
     } else {
       r = T.PropertiesExtension().DComponentCharlie(str2);
-    } 
+    }
     String str3 = (r != null) ? (r.DComponentCharlie() + "." + str1) : str1;
-    NetworkHashMap.PropertiesExtension().PropertiesExtension(str3, "0", ThreadedJFrameIsoptimizeddrawingenabled.PropertiesExtension().DComponentCharlie());
+    NetworkHashMap.PropertiesExtension()
+        .PropertiesExtension(
+            str3,
+            "0",
+            ThreadedJFrameIsoptimizeddrawingenabled.PropertiesExtension().DComponentCharlie());
   }
-  
+
   public String PropertiesExtension() {
     return "showSettingsDialog";
   }
-  
+
   public void b(Properties paramProperties) {
     R r;
     String str1 = paramProperties.getProperty("settingsPanelName");
     if (str1 == null || str1.isEmpty())
-      throw new ExceptionInDPackage("Settings panel name is PropertiesExtension required parameter for Show settings Dialog action."); 
+      throw new ExceptionInDPackage(
+          "Settings panel name is PropertiesExtension required parameter for Show settings Dialog"
+              + " action.");
     String str2 = paramProperties.getProperty("ecuConfig");
     if (str2 == null || str2.isEmpty()) {
       r = T.PropertiesExtension().DComponentCharlie();
     } else {
       r = T.PropertiesExtension().DComponentCharlie(str2);
-    } 
+    }
     if (r == null)
-      throw new ExceptionInDPackage("EcuConfiguration not found with the provided name."); 
-    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = r.ExceptionInDPackage().DComponentCharlie(str1);
+      throw new ExceptionInDPackage("EcuConfiguration not found with the provided name.");
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage =
+        r.ExceptionInDPackage().DComponentCharlie(str1);
     if (ArrayListExceptionprintstacktraceInGPackage == null)
-      throw new ExceptionInDPackage("EcuConfiguration not found with the provided name."); 
+      throw new ExceptionInDPackage("EcuConfiguration not found with the provided name.");
   }
-  
+
   public ArrayListExtensionInDPackage ExceptionInDPackage() {
     ArrayList<TostringInDPackage> arrayList = new ArrayList();
-    List list = ExceptionprintstacktraceInGPackage.PropertiesExtension(T.PropertiesExtension().DComponentCharlie());
+    List list =
+        ExceptionprintstacktraceInGPackage.PropertiesExtension(
+            T.PropertiesExtension().DComponentCharlie());
     for (ArrayList ArrayList : list)
-      arrayList.add(new TostringInDPackage(ArrayList.d(), ArrayList.ExceptionInDPackage())); 
+      arrayList.add(new TostringInDPackage(ArrayList.d(), ArrayList.ExceptionInDPackage()));
     this.b.PropertiesExtension(arrayList);
     this.b.DComponentCharlie("Select the Dialog you want to open when this action is triggered.");
     return this.PropertiesExtension;
   }
-  
+
   public boolean NetworkHashMap() {
     return true;
   }
-  
+
   public List PropertiesExtension(ActionListener paramActionListener) {
     ArrayList<O> arrayList = new ArrayList();
     String str = T.PropertiesExtension().DComponentCharlie().DComponentCharlie();
@@ -107,12 +118,11 @@ public class ArInterfaceSierra implements cY, DComponentCharlie {
     arrayList.add(o);
     return arrayList;
   }
-  
+
   public boolean SComponentGolf() {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aR/s.class
  * Java compiler version: 8 (52.0)

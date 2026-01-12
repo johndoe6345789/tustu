@@ -6,18 +6,17 @@ import javax.swing.JCheckBox;
 
 class ActionperformedInMPackage implements ActionListener {
   ActionperformedInMPackage(d paramd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBox jCheckBox = (JCheckBox)paramActionEvent.getSource();
+    JCheckBox jCheckBox = (JCheckBox) paramActionEvent.getSource();
     int i = Integer.parseInt(paramActionEvent.getActionCommand());
     if (jCheckBox.isSelected()) {
       this.a.a().add(Integer.valueOf(i));
     } else {
       this.a.a().remove(new Integer(i));
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/m/h.class
  * Java compiler version: 8 (52.0)

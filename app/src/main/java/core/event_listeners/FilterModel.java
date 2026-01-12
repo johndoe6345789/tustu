@@ -6,12 +6,11 @@ import javax.swing.JCheckBoxMenuItem;
 
 class cI implements ItemListener {
   cI(cd paramcd) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    this.a.a((JCheckBoxMenuItem)paramItemEvent.getSource());
+    this.a.a((JCheckBoxMenuItem) paramItemEvent.getSource());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/cI.class
  * Java compiler version: 8 (52.0)

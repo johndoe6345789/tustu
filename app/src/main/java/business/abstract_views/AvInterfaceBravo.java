@@ -5,16 +5,15 @@ import h.IOProperties;
 
 class AvInterfaceBravo implements A {
   AvInterfaceBravo(a parama) {}
-  
+
   public String a() {
     return "MegaLogViewer BigStuff";
   }
-  
+
   public String b() {
     return IOProperties.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/av/b.class
  * Java compiler version: 8 (52.0)

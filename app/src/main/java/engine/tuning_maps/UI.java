@@ -10,9 +10,9 @@ import javax.swing.JRadioButton;
 
 public class UI extends JPanel {
   ButtonGroup a = new ButtonGroup();
-  
+
   List b = new ArrayList();
-  
+
   public UI() {
     String[] arrayOfString = T.a().d();
     String str = T.a().c().c();
@@ -28,25 +28,23 @@ public class UI extends JPanel {
         if (str != null && arrayOfString[b].equals(str)) {
           this.a.setSelected(jRadioButton.getModel(), true);
           b();
-        } 
-      }  
+        }
+      }
   }
-  
+
   public void a(aU paramaU) {
     this.b.add(paramaU);
   }
-  
+
   public String a() {
     return this.a.getSelection().getActionCommand();
   }
-  
+
   private void b() {
     String str = a();
-    for (aU aU : this.b)
-      aU.a(str); 
+    for (aU aU : this.b) aU.a(str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aS.class
  * Java compiler version: 8 (52.0)

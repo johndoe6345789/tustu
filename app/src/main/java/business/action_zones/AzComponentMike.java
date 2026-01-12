@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class AzComponentMike implements ActionListener {
   AzComponentMike(f paramf) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.f(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/az/m.class
  * Java compiler version: 8 (52.0)

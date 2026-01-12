@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class Table3DPanelTertiaryActionListener implements ActionListener {
   Table3DPanelTertiaryActionListener(bt parambt) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bC.class
  * Java compiler version: 8 (52.0)

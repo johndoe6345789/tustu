@@ -11,34 +11,38 @@ import u.ExceptionPrintstacktrace;
 
 class ExceptionPrintstacktraceImplInApPackage implements ExceptionPrintstacktrace {
   R a;
-  
+
   Y b;
-  
+
   File c;
-  
+
   boolean d = false;
-  
+
   ExceptionPrintstacktraceImplInApPackage(hH paramhH, R paramR, Y paramY, File paramFile) {
     this.a = paramR;
     this.b = paramY;
     this.c = paramFile;
   }
-  
+
   public String a() {
     return "Load Settings from " + this.c.getName();
   }
-  
+
   public String b() {
     return "Will load all differences in " + this.c.getName() + " to replace current settings.";
   }
-  
+
   public boolean d() {
-    boolean bool = bV.a("Are you sure you want to load all settings from " + this.c.getName() + "?", dd.a().c(), true);
+    boolean bool =
+        bV.a(
+            "Are you sure you want to load all settings from " + this.c.getName() + "?",
+            dd.a().c(),
+            true);
     if (bool) {
       if (RInterfaceIndia.a().a("-=fds[pfds[pgd-0")) {
         String str = "Save before loading " + this.c.getName() + " from a Difference report.";
         f.a().d(this.a, str);
-      } 
+      }
       iw iw = new iw(this.a, dd.a().b(), 0);
       iw.a();
       if (this.c == null || !this.c.exists()) {
@@ -48,26 +52,28 @@ class ExceptionPrintstacktraceImplInApPackage implements ExceptionPrintstacktrac
             this.a.h().ExceptionPrintstacktrace();
           } catch (ExceptionPrintstacktrace g1) {
             g1.printStackTrace();
-            String str = "A strange error occured!\nI am not sure what would cause this, but it appears that it happened.\nPlease report it.";
+            String str =
+                "A strange error occured!\n"
+                    + "I am not sure what would cause this, but it appears that it happened.\n"
+                    + "Please report it.";
             bV.d(str, null);
             return false;
-          } 
-        } 
+          }
+        }
         this.a.I();
       } else {
-        f.a().a(dd.a().c(), this.a, this.c.getAbsolutePath(), (List)null);
-      } 
+        f.a().a(dd.a().c(), this.a, this.c.getAbsolutePath(), (List) null);
+      }
       this.d = true;
       return true;
-    } 
+    }
     return false;
   }
-  
+
   public boolean c() {
     return this.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hL.class
  * Java compiler version: 8 (52.0)

@@ -6,12 +6,11 @@ import r.IOPropertiesUsingFile;
 
 class FileTypeExclusionFilter implements FileFilter {
   FileTypeExclusionFilter(X paramX) {}
-  
+
   public boolean accept(File paramFile) {
     return !paramFile.getName().toLowerCase().endsWith(IOPropertiesUsingFile.t);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/ab.class
  * Java compiler version: 8 (52.0)

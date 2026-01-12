@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ActionListenerImplInBiPackage implements ActionListener {
   ActionListenerImplInBiPackage(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     g.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bi/h.class
  * Java compiler version: 8 (52.0)

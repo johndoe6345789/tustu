@@ -6,12 +6,11 @@ import r.ThreadedFile;
 
 class AaInterfaceGolfImplInApPackage implements AaInterfaceGolf {
   AaInterfaceGolfImplInApPackage(hO paramhO) {}
-  
+
   public File a() {
     return ThreadedFile.f();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hR.class
  * Java compiler version: 8 (52.0)

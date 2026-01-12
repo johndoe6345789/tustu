@@ -7,15 +7,15 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceFj implements ActionListener {
   ApInterfaceFj(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     jCheckBoxMenuItem.setSelected(true);
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b("navigationStyle", jCheckBoxMenuItem.getActionCommand());
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b("navigationStyle", jCheckBoxMenuItem.getActionCommand());
     this.IOPropertiesUsingFile.c(jCheckBoxMenuItem.getActionCommand());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fJ.class
  * Java compiler version: 8 (52.0)

@@ -12,23 +12,22 @@ import s.SComponentGolf;
 
 class TInterfaceAd extends bn implements f {
   int a = eJ.a(-30);
-  
+
   int b = eJ.a(30);
-  
+
   private boolean SComponentGolf = false;
-  
+
   TInterfaceAd(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     a(new aE(this));
     this.c.setMinimum(this.a);
     this.c.setMaximum(this.b);
   }
-  
+
   private void d() {
-    if (!this.SComponentGolf && c() != null)
-      c().SComponentGolf(this.c.getValue()); 
+    if (!this.SComponentGolf && c() != null) c().SComponentGolf(this.c.getValue());
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.SComponentGolf = true;
     Gauge gauge = b(paramArrayList);
@@ -39,20 +38,19 @@ class TInterfaceAd extends bn implements f {
       this.e.setText("" + gauge.getFontSizeAdjustment());
       for (s s : paramArrayList) {
         if (s instanceof Gauge) {
-          Gauge gauge1 = (Gauge)s;
+          Gauge gauge1 = (Gauge) s;
           if (gauge1.getFontSizeAdjustment() != gauge.getFontSizeAdjustment()) {
             this.e.setForeground(Color.GRAY);
             break;
-          } 
-        } 
-      } 
+          }
+        }
+      }
     } else {
       this.c.setEnabled(false);
-    } 
+    }
     this.SComponentGolf = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aD.class
  * Java compiler version: 8 (52.0)

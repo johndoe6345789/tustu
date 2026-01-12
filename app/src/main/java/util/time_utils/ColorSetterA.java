@@ -5,12 +5,11 @@ import java.awt.Color;
 
 class ColorSetterA implements bh {
   ColorSetterA(d paramd) {}
-  
+
   public void a(Color paramColor) {
     this.a.c().a(paramColor);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/j.class
  * Java compiler version: 8 (52.0)

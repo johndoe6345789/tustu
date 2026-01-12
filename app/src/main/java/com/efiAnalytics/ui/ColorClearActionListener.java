@@ -6,13 +6,12 @@ import java.awt.event.ActionListener;
 
 class ColorClearActionListener implements ActionListener {
   ColorClearActionListener(bd parambd) {}
-  
+
   public void ColorClearActionListener(ActionEvent paramActionEvent) {
     bd.a(this.a, new Color(0, 0, 0, 0));
     this.a.e.setEnabled(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bf.class
  * Java compiler version: 8 (52.0)

@@ -10,12 +10,21 @@ import r.IOPropertiesUsingFile;
 
 class ApInterfaceGd implements ActionListener {
   ApInterfaceGd(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.cc, Boolean.toString(JCheckBoxMenuItemExtension.getState()));
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension =
+        (JCheckBoxMenuItemExtension) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.cc, Boolean.toString(JCheckBoxMenuItemExtension.getState()));
     if (JCheckBoxMenuItemExtension.isSelected()) {
-      fq fq = new fq(dd.IOPropertiesUsingFile().JCheckBoxMenuItemExtension(), true, "Base atmospheric barometric pressure in KPa", IOPropertiesUsingFile.IOPropertiesUsingFile().JCheckBoxMenuItemExtension(IOPropertiesUsingFile.ai, "100"), bV.IOPropertiesUsingFile());
+      fq fq =
+          new fq(
+              dd.IOPropertiesUsingFile().JCheckBoxMenuItemExtension(),
+              true,
+              "Base atmospheric barometric pressure in KPa",
+              IOPropertiesUsingFile.IOPropertiesUsingFile()
+                  .JCheckBoxMenuItemExtension(IOPropertiesUsingFile.ai, "100"),
+              bV.IOPropertiesUsingFile());
       fq.setVisible(true);
       String str = fq.IOPropertiesUsingFile();
       if (str != null && !str.isEmpty()) {
@@ -26,15 +35,14 @@ class ApInterfaceGd implements ActionListener {
         } catch (NumberFormatException numberFormatException) {
           IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ai, "100");
           TableModelListenerRequestfocusinwindow.IOPropertiesUsingFile(100.0D);
-        } 
+        }
       } else {
         IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ai, "100");
         TableModelListenerRequestfocusinwindow.IOPropertiesUsingFile(100.0D);
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gD.class
  * Java compiler version: 8 (52.0)

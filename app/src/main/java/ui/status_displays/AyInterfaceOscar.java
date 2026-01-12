@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 public class AyInterfaceOscar extends JDialog {
   private static int a = 2;
-  
+
   private AyInterfaceOscar(Frame paramFrame) {
     super(paramFrame, "MegaLogViewer Not Found", true);
     setLayout(new BorderLayout());
@@ -40,14 +40,13 @@ public class AyInterfaceOscar extends JDialog {
     pack();
     bV.a(paramFrame, this);
   }
-  
+
   public static int a(Frame paramFrame) {
     o o1 = new o(paramFrame);
     o1.setVisible(true);
     return a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/o.class
  * Java compiler version: 8 (52.0)

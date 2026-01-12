@@ -2,10 +2,9 @@ package W;
 
 public interface WInterfaceAq {
   void a(double paramDouble);
-  
+
   void a();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/aq.class
  * Java compiler version: 8 (52.0)

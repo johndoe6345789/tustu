@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BlComponentJuliet implements ActionListener {
   BlComponentJuliet(h paramh) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bl/j.class
  * Java compiler version: 8 (52.0)

@@ -5,13 +5,11 @@ import java.awt.event.ActionListener;
 
 class PInterfaceIndia implements ActionListener {
   PInterfaceIndia(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    if (this.a.d())
-      this.a.h(); 
+    if (this.a.d()) this.a.h();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/i.class
  * Java compiler version: 8 (52.0)

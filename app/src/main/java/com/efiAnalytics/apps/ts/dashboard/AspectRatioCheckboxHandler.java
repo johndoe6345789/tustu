@@ -7,25 +7,23 @@ import javax.swing.JCheckBoxMenuItem;
 
 class AspectRatioCheckboxHandler implements ActionListener {
   AspectRatioCheckboxHandler(x paramx, Component paramComponent) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    x.c(this.b, ((JCheckBoxMenuItem)paramActionEvent.getSource()).getState());
+    x.c(this.b, ((JCheckBoxMenuItem) paramActionEvent.getSource()).getState());
     if (x.b(this.b)) {
       b b = new b();
-      b.a((int)this.b.H(), (int)this.b.I());
+      b.a((int) this.b.H(), (int) this.b.I());
       e e = b.a(this.a);
       if (e != null) {
         this.b.b(e.b());
         this.b.a(e.a());
-      } 
-    } 
-    if (this.b.getParent() != null)
-      this.b.getParent().doLayout(); 
+      }
+    }
+    if (this.b.getParent() != null) this.b.getParent().doLayout();
     this.b.i(this.b.J());
     this.b.doLayout();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/J.class
  * Java compiler version: 8 (52.0)

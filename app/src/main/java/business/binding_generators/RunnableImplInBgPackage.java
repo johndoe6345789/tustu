@@ -4,13 +4,12 @@ import java.awt.Cursor;
 
 class RunnableImplInBgPackage implements Runnable {
   RunnableImplInBgPackage(a parama) {}
-  
+
   public void run() {
     a.a(this.a);
     this.a.setCursor(Cursor.getDefaultCursor());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/b.class
  * Java compiler version: 8 (52.0)

@@ -2,10 +2,9 @@ package business.binary_transformers;
 
 public interface EnabledStateCallback {
   void a(boolean paramBoolean);
-  
+
   String c();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/o.class
  * Java compiler version: 8 (52.0)

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 class gh implements ActionListener {
   gh(fK paramfK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.v.isSelected()) {
       this.a.v.setIcon(this.a.w);
@@ -13,11 +13,10 @@ class gh implements ActionListener {
     } else {
       fK.g(this.a).a(false);
       this.a.v.setIcon(this.a.x);
-    } 
+    }
     this.a.h();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/gh.class
  * Java compiler version: 8 (52.0)

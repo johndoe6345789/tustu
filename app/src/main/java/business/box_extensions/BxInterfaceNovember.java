@@ -5,13 +5,11 @@ import java.awt.event.ActionListener;
 
 class BxInterfaceNovember implements ActionListener {
   BxInterfaceNovember(m paramm) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    if (this.a.c())
-      this.a.b(); 
+    if (this.a.c()) this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bx/n.class
  * Java compiler version: 8 (52.0)

@@ -6,18 +6,17 @@ import G.o;
 
 class AjInterfaceGolf implements n {
   AjInterfaceGolf(d paramd) {}
-  
+
   public void a(double paramDouble) {}
-  
+
   public void a(o paramo) {
     ArrayListInGPackage.a().e();
   }
-  
+
   public void e() {
     ArrayListInGPackage.a().d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aj/g.class
  * Java compiler version: 8 (52.0)

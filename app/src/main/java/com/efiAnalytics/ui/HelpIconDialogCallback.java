@@ -2,14 +2,13 @@ package com.efiAnalytics.ui;
 
 class HelpIconDialogCallback implements fi {
   HelpIconDialogCallback(cF paramcF) {}
-  
+
   public void a(String paramString) {
     cF.a(this.a);
   }
-  
+
   public void a() {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cH.class
  * Java compiler version: 8 (52.0)

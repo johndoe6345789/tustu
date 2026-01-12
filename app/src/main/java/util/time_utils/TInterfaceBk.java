@@ -8,14 +8,22 @@ import s.SComponentGolf;
 
 class TInterfaceBk implements ActionListener {
   bk(bi parambi) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
-    if (!this.a.c && (this.a.c().a().size() == 1 || bV.a(SComponentGolf.b("There is more than 1 gauge selected.") + "\n" + SComponentGolf.b("Are you sure you want to set them all to Output Channel") + ": " + jComboBox.getSelectedItem() + "?", jComboBox, true)))
-      this.a.c().b((String)jComboBox.getSelectedItem()); 
+    JComboBox jComboBox = (JComboBox) paramActionEvent.getSource();
+    if (!this.a.c
+        && (this.a.c().a().size() == 1
+            || bV.a(
+                SComponentGolf.b("There is more than 1 gauge selected.")
+                    + "\n"
+                    + SComponentGolf.b("Are you sure you want to set them all to Output Channel")
+                    + ": "
+                    + jComboBox.getSelectedItem()
+                    + "?",
+                jComboBox,
+                true))) this.a.c().b((String) jComboBox.getSelectedItem());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/bk.class
  * Java compiler version: 8 (52.0)

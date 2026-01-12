@@ -4,12 +4,11 @@ import com.efiAnalytics.remotefileaccess.RefreshNeededListener;
 
 class RefreshNeededListenerRefreshview implements RefreshNeededListener {
   RefreshNeededListenerRefreshview(i parami) {}
-  
+
   public void refreshView() {
     this.a.e();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/q.class
  * Java compiler version: 8 (52.0)

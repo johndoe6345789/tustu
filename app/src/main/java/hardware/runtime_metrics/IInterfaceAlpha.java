@@ -6,21 +6,21 @@ import java.util.ArrayList;
 
 public class IInterfaceAlpha {
   public static String a = "yAxisForce";
-  
+
   public static String b = "xAxisForce";
-  
+
   public static String c = "zAxisForce";
-  
+
   public static String d = "accelForce";
-  
+
   public static String e = "lateralForce";
-  
+
   public static String f = "lateralAngle";
-  
+
   public static String g = "turnForce";
-  
+
   public static String h = "enhancedHeading";
-  
+
   public static void a() {
     ManagerUsingArrayList.a().d(a);
     ManagerUsingArrayList.a().d(a);
@@ -31,7 +31,7 @@ public class IInterfaceAlpha {
     ManagerUsingArrayList.a().d(f);
     ManagerUsingArrayList.a().d(h);
   }
-  
+
   public static void a(ArrayList<GInterfaceAh> paramArrayList) {
     GInterfaceAh GInterfaceAh = new GInterfaceAh();
     GInterfaceAh.v(b + "Gauge");
@@ -155,7 +155,6 @@ public class IInterfaceAlpha {
     paramArrayList.add(GInterfaceAh);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/a.class
  * Java compiler version: 8 (52.0)

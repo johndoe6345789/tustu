@@ -4,16 +4,15 @@ import G.GInterfaceDg;
 
 class BiComponentDelta implements GInterfaceDg {
   BiComponentDelta(a parama) {}
-  
+
   public void a(boolean paramBoolean) {
     if (paramBoolean) {
       this.a.e.setText("High Speed");
     } else {
       this.a.e.setText("Standard Speed");
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bi/d.class
  * Java compiler version: 8 (52.0)

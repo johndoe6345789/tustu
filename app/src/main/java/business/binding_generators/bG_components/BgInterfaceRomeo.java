@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BgInterfaceRomeo implements ActionListener {
   BgInterfaceRomeo(q paramq) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     q.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/r.class
  * Java compiler version: 8 (52.0)

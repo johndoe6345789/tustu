@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 class ComboBoxResetThread extends Thread {
   long a;
-  
+
   public synchronized void run() {
     while (true) {
       try {
@@ -15,14 +15,13 @@ class ComboBoxResetThread extends Thread {
           e.a(this.b);
           this.a = Long.MAX_VALUE;
           D.c("Reset List");
-        } 
+        }
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(de.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(de.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/n.class
  * Java compiler version: 8 (52.0)

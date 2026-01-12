@@ -7,9 +7,9 @@ import javax.swing.JList;
 
 class ColoredListCellRenderer extends DefaultListCellRenderer {
   boolean a = false;
-  
+
   ColoredListCellRenderer(de paramde) {}
-  
+
   public void paint(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (this.b.b != null && this.a) {
@@ -19,10 +19,15 @@ class ColoredListCellRenderer extends DefaultListCellRenderer {
       int m = (getHeight() - i) / 2;
       paramGraphics.setColor(this.b.b);
       paramGraphics.fillRect(k, m, i, i);
-    } 
+    }
   }
-  
-  public Component getListCellRendererComponent(JList paramJList, Object paramObject, int paramInt, boolean paramBoolean1, boolean paramBoolean2) {
+
+  public Component getListCellRendererComponent(
+      JList paramJList,
+      Object paramObject,
+      int paramInt,
+      boolean paramBoolean1,
+      boolean paramBoolean2) {
     // Byte code:
     //   0: aload_1
     //   1: invokevirtual getDropLocation : ()Ljavax/swing/JList$DropLocation;
@@ -49,11 +54,11 @@ class ColoredListCellRenderer extends DefaultListCellRenderer {
     //   44: iload_3
     //   45: iload #4
     //   47: iload #5
-    //   49: invokespecial getListCellRendererComponent : (Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;
+    //   49: invokespecial getListCellRendererComponent :
+    // (Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;
     //   52: areturn
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dj.class
  * Java compiler version: 8 (52.0)

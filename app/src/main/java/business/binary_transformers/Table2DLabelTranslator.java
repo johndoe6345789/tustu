@@ -5,12 +5,11 @@ import s.SComponentGolf;
 
 class Table2DLabelTranslator implements ab {
   Table2DLabelTranslator(W paramW) {}
-  
+
   public String a(String paramString) {
     return SComponentGolf.b(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/X.class
  * Java compiler version: 8 (52.0)

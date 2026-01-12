@@ -18,13 +18,13 @@ import javax.swing.JTextArea;
 
 public class JPanelExtensionInByPackage extends JPanel {
   m a;
-  
+
   List b;
-  
+
   ab c;
-  
+
   JTextArea d = new JTextArea("", 4, 40);
-  
+
   public JPanelExtensionInByPackage(List paramList, m paramm, ab paramab) {
     this.b = paramList;
     this.a = paramm;
@@ -141,18 +141,18 @@ public class JPanelExtensionInByPackage extends JPanel {
       jPanel.setLayout(new GridLayout(1, 1));
       jPanel.setBorder(BorderFactory.createTitledBorder(e(i.a())));
       List list1 = i.b();
-      JList jList1 = new JList(list1.toArray((Object[])new String[list1.size()]));
+      JList jList1 = new JList(list1.toArray((Object[]) new String[list1.size()]));
       JScrollPane jScrollPane1 = new JScrollPane(jList1);
       jList1.addMouseListener(new g(this));
       jScrollPane1.setPreferredSize(new Dimension(eJ.a(180), eJ.a(150)));
       jPanel.add(jScrollPane1);
       jPanel3.add(jPanel);
-    } 
+    }
     JPanel jPanel4 = new JPanel();
     jPanel4.setLayout(new GridLayout(1, 1));
     jPanel4.setBorder(BorderFactory.createTitledBorder(e("Functions")));
     List list = paramm.a();
-    JList jList = new JList(list.toArray((Object[])new k[list.size()]));
+    JList jList = new JList(list.toArray((Object[]) new k[list.size()]));
     JScrollPane jScrollPane = new JScrollPane(jList);
     jList.addMouseListener(new h(this));
     jScrollPane.setPreferredSize(new Dimension(eJ.a(180), eJ.a(150)));
@@ -160,58 +160,65 @@ public class JPanelExtensionInByPackage extends JPanel {
     jPanel3.add(jPanel4);
     add(jPanel3, "Center");
   }
-  
+
   private String e(String paramString) {
     return (this.c != null) ? this.c.a(paramString) : paramString;
   }
-  
+
   public void a(String paramString) {
     this.d.append(" " + paramString + " ");
   }
-  
+
   public void a() {
     String str = this.d.getText();
     int i = this.d.getCaretPosition();
-    if (i > 0 && this.d.getSelectedText() == null && str.lastIndexOf("[", i) != -1 && str.indexOf("]", i) != -1) {
+    if (i > 0
+        && this.d.getSelectedText() == null
+        && str.lastIndexOf("[", i) != -1
+        && str.indexOf("]", i) != -1) {
       int j = str.lastIndexOf("[", i);
       int k = str.indexOf("[", j + 1);
       int n = str.indexOf("]", i) + 1;
       if (j != -1 && n != -1 && (k == -1 || n < k)) {
         this.d.setSelectionStart(j);
         this.d.setSelectionEnd(n);
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void b(String paramString) {
     if (this.d.getSelectedText() != null && !this.d.getSelectedText().isEmpty()) {
       int i = this.d.getSelectionStart();
       String str1 = this.d.getText();
-      String str2 = str1.substring(0, i) + " " + paramString + " " + str1.substring(this.d.getSelectionEnd(), str1.length());
+      String str2 =
+          str1.substring(0, i)
+              + " "
+              + paramString
+              + " "
+              + str1.substring(this.d.getSelectionEnd(), str1.length());
       this.d.setText(str2);
     } else {
       this.d.insert(" " + paramString + " ", this.d.getCaretPosition());
-    } 
+    }
   }
-  
+
   public void c(String paramString) {
     b(paramString);
   }
-  
+
   public void a(k paramk) {
     b(paramk.a());
   }
-  
+
   public String b() {
     null = this.d.getText();
     return X.b(null, "\n", " ");
   }
-  
+
   public void d(String paramString) {
     this.d.setText(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/by/d.class
  * Java compiler version: 8 (52.0)

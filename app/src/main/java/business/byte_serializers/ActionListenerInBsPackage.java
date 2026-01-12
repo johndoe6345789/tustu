@@ -6,12 +6,11 @@ import javax.swing.JButton;
 
 class ActionListenerInBsPackage implements ActionListener {
   ActionListenerInBsPackage(a parama) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    a.a(this.a, (JButton)paramActionEvent.getSource());
+    a.a(this.a, (JButton) paramActionEvent.getSource());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/b.class
  * Java compiler version: 8 (52.0)

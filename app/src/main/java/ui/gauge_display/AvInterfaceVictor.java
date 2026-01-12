@@ -8,7 +8,6 @@ final class AvInterfaceVictor implements AcInterfaceCharlie {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aV/v.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

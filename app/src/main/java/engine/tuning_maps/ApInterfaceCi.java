@@ -8,18 +8,17 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApInterfaceCi implements ActionListener {
   ApInterfaceCi(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     if (jCheckBoxMenuItem.getState()) {
       IOProperties.c("fieldSelectionStyle", "selectFromDash");
     } else {
       IOProperties.c("fieldSelectionStyle", "standardSelection");
-    } 
+    }
     bV.d("The Changes will take effect after restarting.", bV.c());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cI.class
  * Java compiler version: 8 (52.0)

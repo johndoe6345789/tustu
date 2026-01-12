@@ -4,15 +4,14 @@ import bH.X;
 
 class AkInterfaceAl extends ak {
   protected int a;
-  
+
   protected String b;
-  
+
   public AkInterfaceAl(aa paramaa, int paramInt) {
     super(paramaa, paramInt);
     this.b = X.k(aa.a(paramaa, paramInt + 4, this.a - 4));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/al.class
  * Java compiler version: 8 (52.0)

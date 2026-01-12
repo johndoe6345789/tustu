@@ -13,12 +13,11 @@ public class DifferenceDataApplier implements cB {
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
         ExceptionPrintstacktrace.printStackTrace();
         D.a("Unable to take difference data.");
-      } 
-    } 
+      }
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/a.class
  * Java compiler version: 8 (52.0)

@@ -4,12 +4,11 @@ import ac.AcComponentBravo;
 
 class BqInterfacePapa implements AcComponentBravo {
   BqInterfacePapa(l paraml) {}
-  
+
   public double a() {
     return this.a.n;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bQ/p.class
  * Java compiler version: 8 (52.0)

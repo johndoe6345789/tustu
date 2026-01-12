@@ -5,13 +5,13 @@ import V.ExceptionPrintstacktrace;
 import bH.D;
 import bH.c;
 import bN.BnInterfaceKilo;
-import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
 import bN.BnInterfaceTango;
 import bN.BnInterfaceUniform;
+import bN.TostringInBnPackage;
+import bS.BnInterfaceOscar;
 import bS.BsInterfaceAlpha;
 import bS.ExceptionInBsPackage;
-import bS.BnInterfaceOscar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,15 +19,18 @@ public class BtInterfaceFoxtrot implements BsInterfaceAlpha {
   public int BsInterfaceAlpha() {
     return 238;
   }
-  
+
   public void BsInterfaceAlpha(BnInterfaceOscar paramo, BnInterfaceTango paramt) {
     if (paramt.BsInterfaceAlpha() != BsInterfaceAlpha())
-      throw new ExceptionInBsPackage("PID:CAL_DOWNLOAD_MAX Wrong handler! this handler is for 0x" + Integer.toHexString(BsInterfaceAlpha()).toUpperCase()); 
+      throw new ExceptionInBsPackage(
+          "PID:CAL_DOWNLOAD_MAX Wrong handler! this handler is for 0x"
+              + Integer.toHexString(BsInterfaceAlpha()).toUpperCase());
     byte[] arrayOfByte = paramt.c();
     if (arrayOfByte == null)
-      throw new ExceptionInBsPackage("PID:CAL_DOWNLOAD_MAX valid packet data not found."); 
+      throw new ExceptionInBsPackage("PID:CAL_DOWNLOAD_MAX valid packet data not found.");
     if (arrayOfByte.length < 1)
-      throw new ExceptionInBsPackage("PID:CAL_DOWNLOAD_MAX invalid packet data length, must have atleast 1 byte"); 
+      throw new ExceptionInBsPackage(
+          "PID:CAL_DOWNLOAD_MAX invalid packet data length, must have atleast 1 byte");
     BnInterfaceKilo BnInterfaceKilo = paramo.d();
     int i = BnInterfaceKilo.i() - BnInterfaceKilo.BnInterfaceUniform() - 1;
     R r = paramo.f();
@@ -38,18 +41,22 @@ public class BtInterfaceFoxtrot implements BsInterfaceAlpha {
     byte b = (BnInterfaceKilo.BnInterfaceUniform() > 2) ? 3 : 1;
     try {
       if (arrayOfByte.length != m + b)
-        throw new ExceptionInBsPackage("PID:CAL_DOWNLOAD_MAX invalid packet data length, expected byte count: " + (m + b + 1) + ", received: " + (arrayOfByte.length + 1)); 
+        throw new ExceptionInBsPackage(
+            "PID:CAL_DOWNLOAD_MAX invalid packet data length, expected byte count: "
+                + (m + b + 1)
+                + ", received: "
+                + (arrayOfByte.length + 1));
       if ((r.O().TostringInBnPackage()).length < j || j < 0) {
         TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
         TostringInBnPackage.BsInterfaceAlpha(254);
-        byte[] arrayOfByte1 = { 38 };
+        byte[] arrayOfByte1 = {38};
         TostringInBnPackage.b(arrayOfByte1);
         paramo.c(38);
         paramo.BsInterfaceAlpha(paramt);
       } else if (n + m > r.O().f(j) || n < 0) {
         TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
         TostringInBnPackage.BsInterfaceAlpha(254);
-        byte[] arrayOfByte1 = { 34 };
+        byte[] arrayOfByte1 = {34};
         TostringInBnPackage.b(arrayOfByte1);
         paramo.c(34);
         paramo.BsInterfaceAlpha(paramt);
@@ -65,21 +72,20 @@ public class BtInterfaceFoxtrot implements BsInterfaceAlpha {
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
           TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
           TostringInBnPackage.BsInterfaceAlpha(254);
-          byte[] arrayOfByte1 = { 34 };
+          byte[] arrayOfByte1 = {34};
           TostringInBnPackage.b(arrayOfByte1);
           paramo.c(34);
           paramo.BsInterfaceAlpha(paramt);
           D.c("CAL_DOWNLOAD_MAX: Error updating local data store from DownloadMaxHandler");
           ExceptionPrintstacktrace.printStackTrace();
-        } 
-      } 
+        }
+      }
     } catch (BnInterfaceOscar o1) {
-      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String)null, (Throwable)o1);
+      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String) null, (Throwable) o1);
       throw new ExceptionInBsPackage(o1.getLocalizedMessage());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bT/f.class
  * Java compiler version: 8 (52.0)

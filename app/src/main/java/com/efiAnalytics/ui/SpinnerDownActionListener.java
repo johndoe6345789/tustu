@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class SpinnerDownActionListener implements ActionListener {
   SpinnerDownActionListener(ew paramew) {}
-  
+
   public void SpinnerDownActionListener(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ey.class
  * Java compiler version: 8 (52.0)

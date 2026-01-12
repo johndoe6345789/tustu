@@ -16,17 +16,17 @@ import javax.swing.JTextPane;
 
 public class JDialogExtension extends JDialog implements BqInterfaceDelta {
   JTextPane a = new JTextPane();
-  
+
   JTextPane b = new JTextPane();
-  
+
   JTextPane BqInterfaceCharlie = new JTextPane();
-  
+
   JLabel BqInterfaceDelta = new JLabel("", 2);
-  
+
   JLabel e = new JLabel("", 2);
-  
+
   JLabel f = new JLabel("", 2);
-  
+
   public JDialogExtension(Window paramWindow) {
     super(paramWindow, "DAQ Report");
     setDefaultCloseOperation(2);
@@ -57,29 +57,29 @@ public class JDialogExtension extends JDialog implements BqInterfaceDelta {
     setVisible(true);
     bV.a(paramWindow, this);
   }
-  
+
   public void dispose() {
     BqInterfaceCharlie.a().b(this);
     super.dispose();
   }
-  
+
   private void b() {
     this.BqInterfaceDelta.setText(BqInterfaceCharlie.a().f() + "");
     this.e.setText(BqInterfaceCharlie.a().g() + "");
     this.f.setText(BqInterfaceCharlie.a().e() + "");
     if (BqInterfaceCharlie.a().BqInterfaceCharlie() != null)
-      this.b.setText(BqInterfaceCharlie.b(BqInterfaceCharlie.a().BqInterfaceCharlie())); 
+      this.b.setText(BqInterfaceCharlie.b(BqInterfaceCharlie.a().BqInterfaceCharlie()));
     if (BqInterfaceCharlie.a().b() != null)
-      this.a.setText(BqInterfaceCharlie.a(BqInterfaceCharlie.a().b())); 
+      this.a.setText(BqInterfaceCharlie.a(BqInterfaceCharlie.a().b()));
     if (BqInterfaceCharlie.a().BqInterfaceDelta() != null)
-      this.BqInterfaceCharlie.setText(BqInterfaceCharlie.BqInterfaceCharlie(BqInterfaceCharlie.a().BqInterfaceDelta())); 
+      this.BqInterfaceCharlie.setText(
+          BqInterfaceCharlie.BqInterfaceCharlie(BqInterfaceCharlie.a().BqInterfaceDelta()));
   }
-  
+
   public void a() {
     b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aV.class
  * Java compiler version: 8 (52.0)

@@ -14,79 +14,92 @@ import java.util.HashMap;
 
 class SweepGaugeShape implements Shape, Serializable {
   Gauge a = null;
-  
+
   CubicCurve2D.Float b = new CubicCurve2D.Float();
-  
+
   CubicCurve2D.Float c = new CubicCurve2D.Float();
-  
+
   float d = 0.27F;
-  
+
   float e = 0.2F;
-  
+
   float f = 0.12F;
-  
+
   SweepPathIterator g = new SweepPathIterator(this.k, this);
-  
+
   final HashMap h = new HashMap<>();
-  
+
   final int i = eJ.a(30);
-  
+
   int j = this.i;
-  
+
   SweepGaugeShape(AsymetricSweepRenderer paramAsymetricSweepRenderer, Gauge paramGauge) {
     this.a = paramGauge;
   }
-  
+
   public Rectangle getBounds() {
     return new Rectangle(this.a.getWidth(), this.a.getHeight());
   }
-  
+
   public Rectangle2D getBounds2D() {
     return new Rectangle2D.Float(0.0F, 0.0F, this.a.getWidth(), this.a.getHeight());
   }
-  
+
   public boolean contains(double paramDouble1, double paramDouble2) {
     double d1 = (this.a.getWidth() - 2 * this.a.getBorderWidth());
     double d2 = (paramDouble1 - this.a.getBorderWidth()) / d1;
     return (paramDouble2 < c(this.c, d2) && paramDouble2 > c(this.b, d2));
   }
-  
+
   public boolean contains(Point2D paramPoint2D) {
     return contains(paramPoint2D.getX(), paramPoint2D.getY());
   }
-  
-  public boolean intersects(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+
+  public boolean intersects(
+      double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
     return true;
   }
-  
+
   public boolean intersects(Rectangle2D paramRectangle2D) {
-    return intersects(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
+    return intersects(
+        paramRectangle2D.getX(),
+        paramRectangle2D.getY(),
+        paramRectangle2D.getWidth(),
+        paramRectangle2D.getHeight());
   }
-  
-  public boolean contains(double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
-    return (contains(paramDouble1, paramDouble2) && contains(paramDouble1 + paramDouble3, paramDouble2) && contains(paramDouble1 + paramDouble3, paramDouble2 + paramDouble4) && contains(paramDouble1, paramDouble2));
+
+  public boolean contains(
+      double paramDouble1, double paramDouble2, double paramDouble3, double paramDouble4) {
+    return (contains(paramDouble1, paramDouble2)
+        && contains(paramDouble1 + paramDouble3, paramDouble2)
+        && contains(paramDouble1 + paramDouble3, paramDouble2 + paramDouble4)
+        && contains(paramDouble1, paramDouble2));
   }
-  
+
   public boolean contains(Rectangle2D paramRectangle2D) {
-    return contains(paramRectangle2D.getX(), paramRectangle2D.getY(), paramRectangle2D.getWidth(), paramRectangle2D.getHeight());
+    return contains(
+        paramRectangle2D.getX(),
+        paramRectangle2D.getY(),
+        paramRectangle2D.getWidth(),
+        paramRectangle2D.getHeight());
   }
-  
+
   public PathIterator getPathIterator(AffineTransform paramAffineTransform) {
     this.g.a();
     this.g.a(paramAffineTransform);
     return this.g;
   }
-  
+
   public PathIterator getPathIterator(AffineTransform paramAffineTransform, double paramDouble) {
     this.g.a();
     this.g.a(paramAffineTransform);
     return this.g;
   }
-  
+
   private int a() {
     return this.j;
   }
-  
+
   public void a(int paramInt1, int paramInt2) {
     float f1;
     float f2;
@@ -95,8 +108,7 @@ class SweepGaugeShape implements Shape, Serializable {
     this.j = Math.round(paramInt2 * this.a.getFaceAngle() / 360.0F);
     int k = 360 - this.a.getStartAngle();
     this.j = (this.j < k) ? k : this.j;
-    if (this.j > this.a.getHeight() - 2 * i)
-      this.j = this.a.getHeight() - 2 * i; 
+    if (this.j > this.a.getHeight() - 2 * i) this.j = this.a.getHeight() - 2 * i;
     int m = paramInt2 - this.j - 2 * i;
     this.e = this.a.getSweepBeginDegree() / 90.0F;
     this.f = this.a.getSweepAngle() / 90.0F;
@@ -112,7 +124,7 @@ class SweepGaugeShape implements Shape, Serializable {
     } else {
       f1 = this.e;
       this.e = 1.0F;
-    } 
+    }
     if (this.f > 3.0F) {
       f2 = 0.0F;
       this.f -= 3.0F;
@@ -125,8 +137,9 @@ class SweepGaugeShape implements Shape, Serializable {
     } else {
       f2 = this.f;
       this.f = 1.0F;
-    } 
-    this.b.setCurve(i, (this.a.getHeight() - this.j - i), j * this.e, m * f1, j * this.f, m * f2, j, i);
+    }
+    this.b.setCurve(
+        i, (this.a.getHeight() - this.j - i), j * this.e, m * f1, j * this.f, m * f2, j, i);
     this.c.setCurve(this.b);
     this.c.y1 += this.j;
     this.c.y2 += this.j;
@@ -145,53 +158,55 @@ class SweepGaugeShape implements Shape, Serializable {
           this.h.put(Integer.valueOf(b1), Double.valueOf(d2));
         } else {
           this.h.put(Integer.valueOf(b1), Double.valueOf(d3));
-        }  
+        }
       d1 = d5;
       d2 = d3;
-    } 
+    }
   }
-  
+
   public double a(CubicCurve2D paramCubicCurve2D, double paramDouble) {
-    return Math.pow(1.0D - paramDouble, 3.0D) * paramCubicCurve2D.getX1() + 3.0D * Math.pow(1.0D - paramDouble, 2.0D) * paramDouble * paramCubicCurve2D.getCtrlX1() + 3.0D * (1.0D - paramDouble) * Math.pow(paramDouble, 2.0D) * paramCubicCurve2D.getCtrlX2() + Math.pow(paramDouble, 3.0D) * paramCubicCurve2D.getX2();
+    return Math.pow(1.0D - paramDouble, 3.0D) * paramCubicCurve2D.getX1()
+        + 3.0D * Math.pow(1.0D - paramDouble, 2.0D) * paramDouble * paramCubicCurve2D.getCtrlX1()
+        + 3.0D * (1.0D - paramDouble) * Math.pow(paramDouble, 2.0D) * paramCubicCurve2D.getCtrlX2()
+        + Math.pow(paramDouble, 3.0D) * paramCubicCurve2D.getX2();
   }
-  
+
   public double b(CubicCurve2D paramCubicCurve2D, double paramDouble) {
-    return Math.pow(1.0D - paramDouble, 3.0D) * paramCubicCurve2D.getY1() + 3.0D * Math.pow(1.0D - paramDouble, 2.0D) * paramDouble * paramCubicCurve2D.getCtrlY1() + 3.0D * (1.0D - paramDouble) * Math.pow(paramDouble, 2.0D) * paramCubicCurve2D.getCtrlY2() + Math.pow(paramDouble, 3.0D) * paramCubicCurve2D.getY2();
+    return Math.pow(1.0D - paramDouble, 3.0D) * paramCubicCurve2D.getY1()
+        + 3.0D * Math.pow(1.0D - paramDouble, 2.0D) * paramDouble * paramCubicCurve2D.getCtrlY1()
+        + 3.0D * (1.0D - paramDouble) * Math.pow(paramDouble, 2.0D) * paramCubicCurve2D.getCtrlY2()
+        + Math.pow(paramDouble, 3.0D) * paramCubicCurve2D.getY2();
   }
-  
+
   public double a(double paramDouble) {
     paramDouble = this.a.isCounterClockwise() ? (1.0D - paramDouble) : paramDouble;
     synchronized (this.h) {
-      if (this.h.isEmpty())
-        return 0.0D; 
-      if (paramDouble >= 1.0D)
-        return ((Double)this.h.get(Integer.valueOf(100))).doubleValue(); 
-      if (paramDouble <= 0.0D)
-        return ((Double)this.h.get(Integer.valueOf(0))).doubleValue(); 
-      int i = (int)Math.floor(paramDouble * 100.0D);
+      if (this.h.isEmpty()) return 0.0D;
+      if (paramDouble >= 1.0D) return ((Double) this.h.get(Integer.valueOf(100))).doubleValue();
+      if (paramDouble <= 0.0D) return ((Double) this.h.get(Integer.valueOf(0))).doubleValue();
+      int i = (int) Math.floor(paramDouble * 100.0D);
       double d1 = paramDouble * 100.0D - i;
-      double d2 = ((Double)this.h.get(Integer.valueOf(i))).doubleValue();
-      double d3 = ((Double)this.h.get(Integer.valueOf(i + 1))).doubleValue();
+      double d2 = ((Double) this.h.get(Integer.valueOf(i))).doubleValue();
+      double d3 = ((Double) this.h.get(Integer.valueOf(i + 1))).doubleValue();
       return d2 + d1 * (d3 - d2);
-    } 
+    }
   }
-  
+
   public double c(CubicCurve2D paramCubicCurve2D, double paramDouble) {
     double d = a(paramDouble);
     return paramCubicCurve2D.equals(this.b) ? b(paramCubicCurve2D, d) : (b(this.b, d) + a());
   }
-  
+
   public float d(CubicCurve2D paramCubicCurve2D, double paramDouble) {
-    float f = (float)(paramDouble / this.a.getWidth());
-    return (float)c(paramCubicCurve2D, f);
+    float f = (float) (paramDouble / this.a.getWidth());
+    return (float) c(paramCubicCurve2D, f);
   }
-  
+
   public double b(double paramDouble) {
     double d = a(paramDouble);
     return a(this.b, d);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/renderers/b.class
  * Java compiler version: 8 (52.0)

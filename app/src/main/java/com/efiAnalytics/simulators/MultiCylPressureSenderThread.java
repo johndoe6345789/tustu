@@ -8,11 +8,11 @@ import java.util.logging.Logger;
 
 class MultiCylPressureSenderThread extends Thread {
   boolean a = true;
-  
+
   int b = 15000;
-  
+
   MultiCylPressureSenderThread(UdpMultiCylPressureSimulator paramUdpMultiCylPressureSimulator) {}
-  
+
   public void run() {
     while (this.a) {
       int i = 240000 / this.b;
@@ -24,26 +24,28 @@ class MultiCylPressureSenderThread extends Thread {
           UdpMultiCylPressureSimulator.b(this.c).send(this.c.d);
           D.c("Send Cyl Pressure Data");
           Thread.sleep(0L, 1000);
-        } 
+        }
       } catch (IOException iOException) {
-        Logger.getLogger(UdpCylPressureSimulator.class.getName()).log(Level.SEVERE, (String)null, iOException);
+        Logger.getLogger(UdpCylPressureSimulator.class.getName())
+            .log(Level.SEVERE, (String) null, iOException);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(UdpMultiCylPressureSimulator.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
+        Logger.getLogger(UdpMultiCylPressureSimulator.class.getName())
+            .log(Level.SEVERE, (String) null, interruptedException);
+      }
       try {
         sleep(i);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(UdpCylPressureSimulator.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(UdpCylPressureSimulator.class.getName())
+            .log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
   }
-  
+
   public synchronized void a() {
     this.a = false;
     notify();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/simulators/b.class
  * Java compiler version: 8 (52.0)

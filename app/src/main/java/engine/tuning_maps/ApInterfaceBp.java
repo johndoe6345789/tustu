@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceBp implements ActionListener {
   ApInterfaceBp(bM parambM) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bP.class
  * Java compiler version: 8 (52.0)

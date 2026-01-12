@@ -6,9 +6,9 @@ import java.util.logging.Logger;
 
 class IpSearchExecutionThread extends Thread {
   boolean a = false;
-  
+
   IpSearchExecutionThread(ContinuousIpSearchPanel paramContinuousIpSearchPanel) {}
-  
+
   public void run() {
     ContinuousIpSearchPanel.access$400(this.b);
     ContinuousIpSearchPanel.access$300(this.b);
@@ -17,17 +17,17 @@ class IpSearchExecutionThread extends Thread {
       try {
         Thread.sleep((this.b.f / 4));
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(ContinuousIpSearchPanel.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
+        Logger.getLogger(ContinuousIpSearchPanel.class.getName())
+            .log(Level.SEVERE, (String) null, interruptedException);
+      }
       ContinuousIpSearchPanel.access$500(this.b);
-    } 
+    }
   }
-  
+
   private void a() {
     this.a = false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/e.class
  * Java compiler version: 8 (52.0)

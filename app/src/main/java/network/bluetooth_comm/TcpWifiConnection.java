@@ -1,8 +1,8 @@
 package B;
 
-import A.a;
 import A.AInterfaceBravo;
 import A.Exception;
+import A.a;
 import bH.D;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,38 +17,35 @@ import java.util.logging.Logger;
 
 public class TcpWifiConnection extends a {
   public static String AInterfaceBravo = "TCP/IP - WiFi driver";
-  
+
   private int l = 0;
-  
+
   private Socket m = null;
-  
+
   String c = A.l.a();
-  
+
   protected int d = A.l.AInterfaceBravo();
-  
+
   int e = 2000;
-  
+
   int f = 2000;
-  
+
   InputStream g = null;
-  
+
   OutputStream h = null;
-  
+
   List i = null;
-  
+
   public static String j = "IP Address";
-  
+
   public static String k = "Port";
-  
+
   public void f() {
-    if (k() == 3)
-      throw new G.l("TCP Device already connected:" + v()); 
-    if (k() == 2)
-      throw new G.l("TCP Device already connecting:" + v()); 
+    if (k() == 3) throw new G.l("TCP Device already connected:" + v());
+    if (k() == 2) throw new G.l("TCP Device already connecting:" + v());
     if (this.c == null || this.c.equals(""))
-      throw new G.l("IP Address or host name not set! Can not open Connection "); 
-    if (this.d <= 0)
-      throw new G.l("Invalid Port:" + this.d + " Can not open WiFi "); 
+      throw new G.l("IP Address or host name not set! Can not open Connection ");
+    if (this.d <= 0) throw new G.l("Invalid Port:" + this.d + " Can not open WiFi ");
     AInterfaceBravo(2);
     c();
     try {
@@ -75,11 +72,12 @@ public class TcpWifiConnection extends a {
     } catch (Exception exception) {
       AInterfaceBravo(0);
       AInterfaceBravo();
-      Logger.getLogger(TcpWifiConnection.class.getName()).log(Level.SEVERE, (String)null, exception);
+      Logger.getLogger(TcpWifiConnection.class.getName())
+          .log(Level.SEVERE, (String) null, exception);
       throw new G.l("Unable to open device: " + exception.getLocalizedMessage() + ", " + v());
-    } 
+    }
   }
-  
+
   public boolean r() {
     D.d("Re-establishing connection to: " + n());
     boolean bool = false;
@@ -90,7 +88,7 @@ public class TcpWifiConnection extends a {
             this.m.close();
           } catch (IOException iOException) {
             D.c("Error closing socket.");
-          }  
+          }
         D.c("Refresh socket to TCP Device: " + v());
         this.m = new Socket();
         this.m.connect(new InetSocketAddress(this.c, this.d), this.f);
@@ -101,24 +99,26 @@ public class TcpWifiConnection extends a {
         bool = true;
       } catch (Exception exception) {
         exception.printStackTrace();
-      }  
+      }
     return bool;
   }
-  
+
   protected void t() {
     if (this.g != null)
       try {
         this.g.close();
-      } catch (Exception exception) {} 
+      } catch (Exception exception) {
+      }
     if (this.h != null)
       try {
         this.h.close();
-      } catch (Exception exception) {} 
+      } catch (Exception exception) {
+      }
     this.g = null;
     this.h = null;
     this.m = null;
   }
-  
+
   public void g() {
     try {
       if (this.m != null) {
@@ -130,43 +130,44 @@ public class TcpWifiConnection extends a {
           this.m = null;
         } catch (Exception exception) {
           D.c("Error closing TCP Connection");
-          Logger.getLogger(TcpWifiConnection.class.getName()).log(Level.SEVERE, (String)null, exception);
-        } 
-      } 
+          Logger.getLogger(TcpWifiConnection.class.getName())
+              .log(Level.SEVERE, (String) null, exception);
+        }
+      }
     } finally {
       AInterfaceBravo(0);
-    } 
+    }
   }
-  
+
   public String h() {
     return AInterfaceBravo;
   }
-  
+
   public InputStream i() {
     return this.g;
   }
-  
+
   protected void a(InputStream paramInputStream) {
     this.g = paramInputStream;
   }
-  
+
   public OutputStream j() {
     return this.h;
   }
-  
+
   protected void a(OutputStream paramOutputStream) {
     this.h = paramOutputStream;
   }
-  
+
   protected void a(Socket paramSocket) {
     this.m = paramSocket;
     this.c = paramSocket.getInetAddress().getHostAddress();
   }
-  
+
   public int k() {
     return this.l;
   }
-  
+
   public List l() {
     if (this.i == null) {
       this.i = new ArrayList();
@@ -182,10 +183,10 @@ public class TcpWifiConnection extends a {
       b2.AInterfaceBravo("IP Address or host name of ECU Adapter");
       b2.a(1);
       this.i.add(b2);
-    } 
+    }
     return this.i;
   }
-  
+
   public void a(String paramString, Object paramObject) {
     try {
       if (paramString.equals(k)) {
@@ -195,65 +196,66 @@ public class TcpWifiConnection extends a {
       } else {
         D.c("Unknown Setting Name: " + paramString);
         throw new Exception("Unknown Setting Name: " + paramString);
-      } 
+      }
     } catch (Exception exception) {
       exception.printStackTrace();
       throw new Exception(paramObject.toString() + "not a valid value for Setting: " + paramString);
-    } 
+    }
   }
-  
+
   public Object a(String paramString) {
-    if (paramString.equals(k))
-      return Integer.valueOf(this.d); 
-    if (paramString.equals(j))
-      return this.c; 
+    if (paramString.equals(k)) return Integer.valueOf(this.d);
+    if (paramString.equals(j)) return this.c;
     D.c("Unknown Setting Name: " + paramString);
     return null;
   }
-  
+
   public void AInterfaceBravo(int paramInt) {
     this.l = paramInt;
-    if (paramInt == 0)
-      t(); 
+    if (paramInt == 0) t();
   }
-  
+
   private String v() {
-    return (this.m == null || this.m.getInetAddress() == null) ? n() : ("Connected IP Address:" + this.m.getInetAddress().getHostAddress() + ":" + this.m.getPort());
+    return (this.m == null || this.m.getInetAddress() == null)
+        ? n()
+        : ("Connected IP Address:"
+            + this.m.getInetAddress().getHostAddress()
+            + ":"
+            + this.m.getPort());
   }
-  
+
   public boolean m() {
     return false;
   }
-  
+
   public boolean a(int paramInt) {
     return false;
   }
-  
+
   public String n() {
     return this.c + ":" + this.d;
   }
-  
+
   public int o() {
     return 1500;
   }
-  
+
   public int p() {
     return 1500;
   }
-  
+
   public boolean q() {
     return true;
   }
-  
+
   public int u() {
     return this.d;
   }
-  
+
   public int Exception() {
     return 2;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/B/l.class
  * Java compiler version: 8 (52.0)

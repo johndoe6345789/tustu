@@ -5,13 +5,11 @@ import java.awt.event.MouseEvent;
 
 class HelpIconMouseAdapter extends MouseAdapter {
   HelpIconMouseAdapter(cF paramcF) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    if (this.a.isEnabled())
-      this.a.a(); 
+    if (this.a.isEnabled()) this.a.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cG.class
  * Java compiler version: 8 (52.0)

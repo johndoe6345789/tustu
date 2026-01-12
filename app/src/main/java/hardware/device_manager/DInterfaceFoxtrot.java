@@ -4,10 +4,9 @@ import java.util.Collection;
 
 public interface DInterfaceFoxtrot {
   c a(String paramString);
-  
+
   Collection a(a parama);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/d/f.class
  * Java compiler version: 8 (52.0)

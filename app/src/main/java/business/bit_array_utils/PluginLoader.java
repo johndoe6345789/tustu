@@ -11,12 +11,12 @@ public class S {
         if (object1.toString().compareTo(object2.toString()) > 0) {
           paramArrayOfObject[b] = object2;
           paramArrayOfObject[i] = object1;
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramArrayOfObject;
   }
-  
+
   public static Integer[] a(Integer[] paramArrayOfInteger) {
     for (byte b = 0; b < paramArrayOfInteger.length; b++) {
       for (int i = b + 1; i < paramArrayOfInteger.length; i++) {
@@ -25,12 +25,12 @@ public class S {
         if (integer1.intValue() > integer2.intValue()) {
           paramArrayOfInteger[b] = integer2;
           paramArrayOfInteger[i] = integer1;
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramArrayOfInteger;
   }
-  
+
   public static Object[] a(R[] paramArrayOfR) {
     for (byte b = 0; b < paramArrayOfR.length; b++) {
       for (int i = b + 1; i < paramArrayOfR.length; i++) {
@@ -39,12 +39,12 @@ public class S {
         if (r1.c().compareTo(r2.c()) > 0) {
           paramArrayOfR[b] = r2;
           paramArrayOfR[i] = r1;
-        } 
-      } 
-    } 
-    return (Object[])paramArrayOfR;
+        }
+      }
+    }
+    return (Object[]) paramArrayOfR;
   }
-  
+
   public static String[] a(String[] paramArrayOfString) {
     for (byte b = 0; b < paramArrayOfString.length; b++) {
       for (int i = b + 1; i < paramArrayOfString.length; i++) {
@@ -53,12 +53,12 @@ public class S {
         if (str1.compareToIgnoreCase(str2) > 0) {
           paramArrayOfString[b] = str2;
           paramArrayOfString[i] = str1;
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramArrayOfString;
   }
-  
+
   public static List a(List<R> paramList) {
     for (byte b = 0; b < paramList.size(); b++) {
       for (int i = b + 1; i < paramList.size(); i++) {
@@ -67,12 +67,12 @@ public class S {
         if (r1.c().compareTo(r2.c()) > 0) {
           paramList.set(b, r2);
           paramList.set(i, r1);
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramList;
   }
-  
+
   public static List b(List<String> paramList) {
     for (byte b = 0; b < paramList.size(); b++) {
       for (int i = b + 1; i < paramList.size(); i++) {
@@ -81,13 +81,12 @@ public class S {
         if (str1.toLowerCase().compareTo(str2.toLowerCase()) > 0) {
           paramList.set(b, str2);
           paramList.set(i, str1);
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/S.class
  * Java compiler version: 8 (52.0)

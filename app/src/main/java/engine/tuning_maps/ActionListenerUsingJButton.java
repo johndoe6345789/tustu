@@ -1,8 +1,8 @@
 package aP;
 
+import G.GInterfaceCv;
 import G.R;
 import G.T;
-import G.GInterfaceCv;
 import bH.D;
 import bH.c;
 import com.efiAnalytics.ui.bV;
@@ -32,43 +32,43 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import r.IOPropertiesUsingFile;
 import s.SComponentGolf;
-import z.SerialPortEventListenerUsingJTextArea;
 import z.ExceptionInZPackage;
+import z.SerialPortEventListenerUsingJTextArea;
 import z.ZInterfaceNovember;
 
 public class ActionListenerUsingJButton extends JDialog implements ActionListener {
   final int IOPropertiesUsingFile = 450;
-  
+
   final int b = 600;
-  
+
   private JButton d;
-  
+
   private JButton e;
-  
+
   private JButton f;
-  
+
   private JPanel SComponentGolf;
-  
+
   private JPanel h;
-  
+
   private JTextField i;
-  
+
   JButton c;
-  
+
   private JTextArea j;
-  
+
   private JTextArea SerialPortEventListenerUsingJTextArea;
-  
+
   private hy l;
-  
+
   private ZInterfaceNovember ExceptionInZPackage = new ZInterfaceNovember();
-  
+
   private SerialPortEventListenerUsingJTextArea ZInterfaceNovember;
-  
+
   private Properties o = null;
-  
+
   private int p = 3;
-  
+
   public ActionListenerUsingJButton(Frame paramFrame, boolean paramBoolean) {
     super(paramFrame, "Mini-Term", true);
     h();
@@ -81,20 +81,17 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
     ButtonGroup buttonGroup = new ButtonGroup();
     JCheckBox jCheckBox = new JCheckBox("ASCII");
     buttonGroup.add(jCheckBox);
-    if (this.p == 3)
-      jCheckBox.setSelected(true); 
+    if (this.p == 3) jCheckBox.setSelected(true);
     jCheckBox.addItemListener(new ht(this));
     jPanel1.add(jCheckBox);
     jCheckBox = new JCheckBox("Hex", (this.p == 2));
     buttonGroup.add(jCheckBox);
-    if (this.p == 2)
-      jCheckBox.setSelected(true); 
+    if (this.p == 2) jCheckBox.setSelected(true);
     jCheckBox.addItemListener(new hu(this));
     jPanel1.add(jCheckBox);
     jCheckBox = new JCheckBox("Decimal");
     buttonGroup.add(jCheckBox);
-    if (this.p == 1)
-      jCheckBox.setSelected(true); 
+    if (this.p == 1) jCheckBox.setSelected(true);
     jCheckBox.addItemListener(new hv(this));
     jPanel1.add(jCheckBox);
     JPanel jPanel2 = new JPanel();
@@ -109,7 +106,7 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       this.c.addActionListener(new hw(this));
       jPanel.add("East", this.c);
       jPanel2.add("Center", jPanel);
-    } 
+    }
     add("North", jPanel2);
     this.h = new JPanel();
     this.h.setLayout(new GridLayout(2, 1, 2, 2));
@@ -130,9 +127,8 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
     this.l = new hy(this, paramFrame);
     if (bool) {
       Component[] arrayOfComponent = this.l.getComponents();
-      for (byte b = 0; b < arrayOfComponent.length; b++)
-        arrayOfComponent[b].setEnabled(false); 
-    } 
+      for (byte b = 0; b < arrayOfComponent.length; b++) arrayOfComponent[b].setEnabled(false);
+    }
     this.SComponentGolf = new JPanel();
     this.d = new JButton(SComponentGolf.b("Open Port"));
     this.d.addActionListener(this);
@@ -157,12 +153,14 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
     gridBagLayout.setConstraints(this.SComponentGolf, gridBagConstraints);
     jPanel3.add(this.SComponentGolf);
     add(jPanel3, "South");
-    this.ZInterfaceNovember = new SerialPortEventListenerUsingJTextArea(this, this.ExceptionInZPackage, this.j, this.SerialPortEventListenerUsingJTextArea);
+    this.ZInterfaceNovember =
+        new SerialPortEventListenerUsingJTextArea(
+            this, this.ExceptionInZPackage, this.j, this.SerialPortEventListenerUsingJTextArea);
     IOPropertiesUsingFile();
     setSize(600, 450);
     this.j.requestFocus();
   }
-  
+
   private void f() {
     String[] arrayOfString;
     String str = this.i.getText();
@@ -170,44 +168,55 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       arrayOfString = str.split(",");
     } else {
       arrayOfString = str.split(" ");
-    } 
+    }
     try {
       int[] arrayOfInt = c.IOPropertiesUsingFile(arrayOfString);
       boolean bool = false;
-      if (bool && T.IOPropertiesUsingFile().c() != null && T.IOPropertiesUsingFile().c().O().C() != null) {
+      if (bool
+          && T.IOPropertiesUsingFile().c() != null
+          && T.IOPropertiesUsingFile().c().O().C() != null) {
         GInterfaceCv GInterfaceCv = T.IOPropertiesUsingFile().c().O().C();
         byte[] arrayOfByte = c.IOPropertiesUsingFile(arrayOfInt);
         arrayOfByte = GInterfaceCv.IOPropertiesUsingFile(arrayOfByte);
         arrayOfInt = c.b(arrayOfByte);
-      } 
+      }
       D.c("Sending: " + c.b(arrayOfInt));
       this.ZInterfaceNovember.IOPropertiesUsingFile(arrayOfInt);
     } catch (IOException iOException) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error sending bytes.\nCheck the port is open.Reported Error:\\ZInterfaceNovember" + iOException.getMessage());
-      Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      JOptionPane.showMessageDialog(
+          this.rootPane,
+          "Error sending bytes.\nCheck the port is open.Reported Error:\\ZInterfaceNovember"
+              + iOException.getMessage());
+      Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } catch (Exception exception) {
-      JOptionPane.showMessageDialog(this.rootPane, "Error Parsing bytes.\nMust be in the format:\\ZInterfaceNovember<number><space><number><space>...\nExample: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\nReported Error:\\ZInterfaceNovember" + exception.getMessage());
-      Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String)null, exception);
-    } 
+      JOptionPane.showMessageDialog(
+          this.rootPane,
+          "Error Parsing bytes.\n"
+              + "Must be in the format:\\ZInterfaceNovember<number><space><number><space>...\n"
+              + "Example: 0x02 0x66 0x00 0xF4 0xDB 0xDF 0x21\n"
+              + "Reported Error:\\ZInterfaceNovember"
+              + exception.getMessage());
+      Logger.getLogger(hs.class.getName()).log(Level.SEVERE, (String) null, exception);
+    }
   }
-  
+
   public void IOPropertiesUsingFile() {
     this.l.IOPropertiesUsingFile();
   }
-  
+
   public void IOPropertiesUsingFile(int paramInt) {
     if (paramInt == 2 || paramInt == 1 || paramInt == 3) {
       this.p = paramInt;
       D.c("format changed to:" + paramInt);
       IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
       IOPropertiesUsingFile.b(IOPropertiesUsingFile.aA, "" + paramInt);
-    } 
+    }
   }
-  
+
   public int b() {
     return this.p;
   }
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = paramActionEvent.getActionCommand();
     this.j.requestFocus();
@@ -215,16 +224,19 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       try {
         c();
       } catch (ExceptionInZPackage ExceptionInZPackage) {
-        bV.d("Error Opening Port!\nError opening port,\\ZInterfaceNovember" + ExceptionInZPackage.getMessage() + ".\nSelect new settings, try again.", this);
-      }  
-    if (str.equals(SComponentGolf.b("Close Port")))
-      e(); 
+        bV.d(
+            "Error Opening Port!\nError opening port,\\ZInterfaceNovember"
+                + ExceptionInZPackage.getMessage()
+                + ".\nSelect new settings, try again.",
+            this);
+      }
+    if (str.equals(SComponentGolf.b("Close Port"))) e();
     if (str.equals(SComponentGolf.b("Exit"))) {
       e();
       dispose();
-    } 
+    }
   }
-  
+
   public void c() {
     this.d.setEnabled(false);
     Cursor cursor = getCursor();
@@ -236,55 +248,54 @@ public class ActionListenerUsingJButton extends JDialog implements ActionListene
       this.d.setEnabled(true);
       IOPropertiesUsingFile(cursor);
       throw ExceptionInZPackage;
-    } 
+    }
     d();
     IOPropertiesUsingFile(cursor);
   }
-  
+
   public void d() {
     this.d.setEnabled(false);
     this.e.setEnabled(true);
   }
-  
+
   public void e() {
     this.ZInterfaceNovember.c();
     this.d.setEnabled(true);
     this.e.setEnabled(false);
   }
-  
+
   private void IOPropertiesUsingFile(Cursor paramCursor) {
     setCursor(paramCursor);
     this.SerialPortEventListenerUsingJTextArea.setCursor(paramCursor);
     this.j.setCursor(paramCursor);
   }
-  
+
   private void SComponentGolf() {
     this.ZInterfaceNovember.c();
     dispose();
   }
-  
+
   private void h() {
     IOPropertiesUsingFile IOPropertiesUsingFile = IOPropertiesUsingFile.IOPropertiesUsingFile();
     this.p = IOPropertiesUsingFile.c(IOPropertiesUsingFile.aA, 2);
-    this.ExceptionInZPackage.IOPropertiesUsingFile(IOPropertiesUsingFile.c(IOPropertiesUsingFile.az, "COM1"));
+    this.ExceptionInZPackage.IOPropertiesUsingFile(
+        IOPropertiesUsingFile.c(IOPropertiesUsingFile.az, "COM1"));
     this.ExceptionInZPackage.b(IOPropertiesUsingFile.c(IOPropertiesUsingFile.ay, "9600"));
   }
-  
+
   public void setVisible(boolean paramBoolean) {
     super.setVisible(paramBoolean);
-    if (paramBoolean)
-      this.j.requestFocus(); 
+    if (paramBoolean) this.j.requestFocus();
   }
-  
+
   public void IOPropertiesUsingFile(String paramString) {
     this.l.IOPropertiesUsingFile(paramString);
   }
-  
+
   public void b(String paramString) {
     this.l.b(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hs.class
  * Java compiler version: 8 (52.0)

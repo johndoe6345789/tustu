@@ -6,12 +6,11 @@ import javax.swing.JButton;
 
 class eX implements ActionListener {
   eX(eK parameK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    this.a.f((JButton)paramActionEvent.getSource());
+    this.a.f((JButton) paramActionEvent.getSource());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eX.class
  * Java compiler version: 8 (52.0)

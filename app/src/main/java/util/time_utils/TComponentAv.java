@@ -12,31 +12,31 @@ import s.SComponentGolf;
 
 public class TComponentAv extends a implements f {
   JPanel a = new JPanel();
-  
+
   r b;
-  
+
   as c;
-  
+
   aK d;
-  
+
   be e;
-  
+
   aA SComponentGolf;
-  
+
   ay h;
-  
+
   aO i;
-  
+
   aF j;
-  
+
   bi k;
-  
+
   bn l;
-  
+
   bn m;
-  
+
   bn n;
-  
+
   public TComponentAv(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);
     setLayout(new GridLayout(1, 1));
@@ -81,7 +81,7 @@ public class TComponentAv extends a implements f {
     add(jScrollPane);
     pack();
   }
-  
+
   public void a(ArrayList paramArrayList) {
     this.b.a(paramArrayList);
     this.c.a(paramArrayList);
@@ -94,14 +94,13 @@ public class TComponentAv extends a implements f {
       this.k.a(paramArrayList);
     } catch (Exception exception) {
       exception.printStackTrace();
-    } 
+    }
     this.l.a(paramArrayList);
     this.m.a(paramArrayList);
     this.h.a(paramArrayList);
     this.n.a(paramArrayList);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/av.class
  * Java compiler version: 8 (52.0)

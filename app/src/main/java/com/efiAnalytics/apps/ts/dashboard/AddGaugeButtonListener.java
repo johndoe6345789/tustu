@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class AddGaugeButtonListener implements ActionListener {
   AddGaugeButtonListener(g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     g.a(this.a, this.a.c.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/i.class
  * Java compiler version: 8 (52.0)

@@ -1,16 +1,18 @@
 package aP;
 
-import aR.ArInterfaceAlpha;
-import aR.ArInterfaceCharlie;
+import ArInterfaceRomeo.ArInterfaceIndia;
+import EInterfaceDelta.ArComponentAlpha;
+import EInterfaceDelta.ArInterfaceFoxtrot;
+import EInterfaceDelta.DComponentCharlie;
 import aR.ArComponentAlpha;
+import aR.ArInterfaceAlpha;
 import aR.ArInterfaceBravo;
+import aR.ArInterfaceCharlie;
 import aR.ArInterfaceFoxtrot;
 import aR.ArInterfaceGolf;
 import aR.ArInterfaceHotel;
 import aR.ArInterfaceIndia;
 import aR.ArInterfaceJuliet;
-import aR.NetworkInArPackage;
-import aR.IOInArPackage;
 import aR.ArInterfaceMike;
 import aR.ArInterfaceNovember;
 import aR.ArInterfaceOscar;
@@ -24,28 +26,26 @@ import aR.ArInterfaceWhiskey;
 import aR.ArInterfaceXray;
 import aR.ArInterfaceYankee;
 import aR.ArInterfaceZulu;
+import aR.IOInArPackage;
+import aR.NetworkInArPackage;
 import bv.ArComponentAlpha;
-import EInterfaceDelta.ArComponentAlpha;
-import EInterfaceDelta.DComponentCharlie;
-import EInterfaceDelta.ArInterfaceFoxtrot;
 import e.ArComponentAlpha;
 import e.ArInterfaceBravo;
+import e.ArInterfaceFoxtrot;
 import e.DComponentCharlie;
 import e.EInterfaceDelta;
-import e.ArInterfaceFoxtrot;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import ArInterfaceRomeo.ArInterfaceIndia;
 
 public class ApComponentEcho implements ArInterfaceFoxtrot {
   Map ArComponentAlpha = new HashMap<>();
-  
+
   public ApComponentEcho() {
     ArComponentAlpha();
   }
-  
+
   private void ArComponentAlpha() {
     ArComponentAlpha a1 = new ArComponentAlpha();
     this.ArComponentAlpha.put(a1.ArComponentAlpha(), a1);
@@ -82,7 +82,7 @@ public class ApComponentEcho implements ArInterfaceFoxtrot {
       this.ArComponentAlpha.put(ArInterfaceIndia.ArComponentAlpha(), ArInterfaceIndia);
       ArInterfaceHotel ArInterfaceHotel = new ArInterfaceHotel();
       this.ArComponentAlpha.put(ArInterfaceHotel.ArComponentAlpha(), ArInterfaceHotel);
-    } 
+    }
     if (ArInterfaceIndia.ArComponentAlpha().ArComponentAlpha("poij  fdsz poi9ure895 ms7(")) {
       ArInterfaceBravo ArInterfaceBravo = new ArInterfaceBravo();
       this.ArComponentAlpha.put(ArInterfaceBravo.ArComponentAlpha(), ArInterfaceBravo);
@@ -110,29 +110,30 @@ public class ApComponentEcho implements ArInterfaceFoxtrot {
       this.ArComponentAlpha.put(ArInterfaceMike.ArComponentAlpha(), ArInterfaceMike);
       ArInterfaceNovember ArInterfaceNovember = new ArInterfaceNovember();
       this.ArComponentAlpha.put(ArInterfaceNovember.ArComponentAlpha(), ArInterfaceNovember);
-    } 
+    }
     if (ArInterfaceIndia.ArComponentAlpha().ArComponentAlpha("98ua7h9uh432987 432")) {
       ArInterfaceFoxtrot f1 = new ArInterfaceFoxtrot();
       this.ArComponentAlpha.put(f1.ArComponentAlpha(), f1);
-    } 
+    }
   }
-  
+
   public DComponentCharlie ArComponentAlpha(String paramString) {
-    DComponentCharlie DComponentCharlie = (DComponentCharlie)this.ArComponentAlpha.get(paramString);
-    if (DComponentCharlie == null);
+    DComponentCharlie DComponentCharlie =
+        (DComponentCharlie) this.ArComponentAlpha.get(paramString);
+    if (DComponentCharlie == null)
+      ;
     return DComponentCharlie;
   }
-  
+
   public Collection ArComponentAlpha(ArComponentAlpha parama) {
     ArrayList<DComponentCharlie> arrayList = new ArrayList();
     for (DComponentCharlie DComponentCharlie : this.ArComponentAlpha.values()) {
       if (parama == null || parama.ArComponentAlpha(DComponentCharlie))
-        arrayList.add(DComponentCharlie); 
-    } 
+        arrayList.add(DComponentCharlie);
+    }
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/e.class
  * Java compiler version: 8 (52.0)

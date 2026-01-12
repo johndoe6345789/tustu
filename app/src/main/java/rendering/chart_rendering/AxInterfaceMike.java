@@ -2,24 +2,23 @@ package ax;
 
 class AxInterfaceMike extends ac {
   private ab a = null;
-  
+
   public AxInterfaceMike(ab paramab) {
     this.a = paramab;
   }
-  
+
   public double a(S paramS) {
     return Math.log(this.a.b(paramS));
   }
-  
+
   public double b(S paramS) {
     return a(paramS);
   }
-  
+
   public String toString() {
     return "log( " + this.a.toString() + " )";
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ax/M.class
  * Java compiler version: 8 (52.0)

@@ -6,12 +6,11 @@ import java.awt.event.WindowEvent;
 
 class WindowAdapterExtensionWindowclosing extends WindowAdapter {
   WindowAdapterExtensionWindowclosing(iL paramiL, ManagerPaint paramd) {}
-  
+
   public void windowClosing(WindowEvent paramWindowEvent) {
     this.a.close();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/iM.class
  * Java compiler version: 8 (52.0)

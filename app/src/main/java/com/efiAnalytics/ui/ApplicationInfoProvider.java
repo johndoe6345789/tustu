@@ -2,14 +2,13 @@ package com.efiAnalytics.ui;
 
 public interface ApplicationInfoProvider {
   String l();
-  
+
   String m();
-  
+
   String n();
-  
+
   void b(String paramString1, String paramString2);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/bU.class
  * Java compiler version: 8 (52.0)

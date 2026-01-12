@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BdInterfaceVictor implements ActionListener {
   BdInterfaceVictor(r paramr) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     r.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/v.class
  * Java compiler version: 8 (52.0)

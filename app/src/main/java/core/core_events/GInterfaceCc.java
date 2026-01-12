@@ -4,16 +4,15 @@ import java.io.Serializable;
 
 public class GInterfaceCc extends ce implements Serializable {
   private String d = null;
-  
+
   public String a() {
     return this.d;
   }
-  
+
   public void a(String paramString) {
     this.d = paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/cc.class
  * Java compiler version: 8 (52.0)

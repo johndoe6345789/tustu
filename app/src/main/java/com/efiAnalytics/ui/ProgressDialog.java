@@ -12,12 +12,17 @@ import javax.swing.JPanel;
 
 public class ProgressDialog extends JDialog {
   dM a = new dM();
-  
+
   ArrayList b = new ArrayList();
-  
+
   JLabel c = new JLabel("", 0);
-  
-  public ProgressDialog(Window paramWindow, String paramString1, String paramString2, boolean paramBoolean1, boolean paramBoolean2) {
+
+  public ProgressDialog(
+      Window paramWindow,
+      String paramString1,
+      String paramString2,
+      boolean paramBoolean1,
+      boolean paramBoolean2) {
     super(paramWindow, paramString1, JDialog.DEFAULT_MODALITY_TYPE);
     setModal(paramBoolean2);
     setLayout(new BorderLayout());
@@ -37,30 +42,28 @@ public class ProgressDialog extends JDialog {
       jButton.addActionListener(new eC(this));
       jPanel1.add(jButton);
       add("South", jPanel1);
-    } 
+    }
     pack();
     bV.a(paramWindow, this);
   }
-  
+
   public void a(double paramDouble) {
     this.a.b(paramDouble);
   }
-  
+
   public void a(String paramString) {
     this.c.setText(paramString);
   }
-  
+
   public void a(aQ paramaQ) {
     this.b.add(paramaQ);
   }
-  
+
   private void a() {
     Iterator<aQ> iterator = this.b.iterator();
-    while (iterator.hasNext())
-      ((aQ)iterator.next()).a(); 
+    while (iterator.hasNext()) ((aQ) iterator.next()).a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/eB.class
  * Java compiler version: 8 (52.0)

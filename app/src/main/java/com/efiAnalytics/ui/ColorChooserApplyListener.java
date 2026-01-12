@@ -5,13 +5,12 @@ import java.awt.event.ActionListener;
 
 class ColorChooserApplyListener implements ActionListener {
   ColorChooserApplyListener(bd parambd) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     bd.a(this.a, this.a.a.getColor());
     this.a.e.setEnabled(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/be.class
  * Java compiler version: 8 (52.0)

@@ -9,23 +9,23 @@ import javax.swing.JPanel;
 
 public class K extends JPanel implements IComponentAlpha {
   ar IComponentAlpha = null;
-  
+
   ar b = null;
-  
+
   ar c = null;
-  
+
   ar d = null;
-  
+
   ar e = null;
-  
+
   ar f = null;
-  
+
   ar g = null;
-  
+
   ar h = null;
-  
+
   j i = null;
-  
+
   public K() {
     setLayout(new GridLayout(1, 0, 2, 2));
     this.b = new ar();
@@ -69,7 +69,7 @@ public class K extends JPanel implements IComponentAlpha {
     this.h.b(true);
     add(this.h);
   }
-  
+
   public void IComponentAlpha(j paramj) {
     this.b.IComponentAlpha(paramj);
     this.b.IComponentAlpha("Crank");
@@ -88,7 +88,7 @@ public class K extends JPanel implements IComponentAlpha {
     this.h.IComponentAlpha(paramj);
     this.h.IComponentAlpha("MAP DE");
   }
-  
+
   public void IComponentAlpha(int paramInt) {
     if (this.b.b() != null) {
       this.b.b(paramInt);
@@ -99,18 +99,18 @@ public class K extends JPanel implements IComponentAlpha {
       this.f.b(paramInt);
       this.g.b(paramInt);
       this.h.b(paramInt);
-    } 
+    }
   }
-  
+
   public Dimension getPreferredSize() {
-    return new Dimension(eJ.IComponentAlpha(480), (int)(this.b.getPreferredSize().getHeight() + 2.0D));
+    return new Dimension(
+        eJ.IComponentAlpha(480), (int) (this.b.getPreferredSize().getHeight() + 2.0D));
   }
-  
+
   public Dimension getMinimumSize() {
     return getPreferredSize();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/K.class
  * Java compiler version: 8 (52.0)

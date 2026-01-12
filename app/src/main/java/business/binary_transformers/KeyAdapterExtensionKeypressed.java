@@ -6,17 +6,22 @@ import r.RInterfaceIndia;
 
 class KeyAdapterExtensionKeypressed extends KeyAdapter {
   boolean a = false;
-  
+
   KeyAdapterExtensionKeypressed(an paraman) {}
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {
-    if (!this.b.isEnabled())
-      return; 
+    if (!this.b.isEnabled()) return;
     if (RInterfaceIndia.a().a("joijt;i609tr0932")) {
-      this.a = ((paramKeyEvent.getModifiers() & 0x40) == 64 || (paramKeyEvent.getModifiers() & 0x1) == 1);
-      boolean bool = ((paramKeyEvent.getModifiers() & 0x80) == 128 || (paramKeyEvent.getModifiers() & 0x2) == 2) ? true : false;
+      this.a =
+          ((paramKeyEvent.getModifiers() & 0x40) == 64
+              || (paramKeyEvent.getModifiers() & 0x1) == 1);
+      boolean bool =
+          ((paramKeyEvent.getModifiers() & 0x80) == 128
+                  || (paramKeyEvent.getModifiers() & 0x2) == 2)
+              ? true
+              : false;
       this.b.p.g((this.a || bool));
-    } 
+    }
     if (paramKeyEvent.getModifiers() == 3) {
       switch (paramKeyEvent.getKeyCode()) {
         case 39:
@@ -47,7 +52,7 @@ class KeyAdapterExtensionKeypressed extends KeyAdapter {
           this.b.p.f(this.b.p.K());
           paramKeyEvent.consume();
           break;
-      } 
+      }
     } else if (paramKeyEvent.getModifiers() == 2) {
       switch (paramKeyEvent.getKeyCode()) {
         case 66:
@@ -78,7 +83,7 @@ class KeyAdapterExtensionKeypressed extends KeyAdapter {
           this.b.p.f(1);
           paramKeyEvent.consume();
           break;
-      } 
+      }
     } else {
       switch (paramKeyEvent.getKeyCode()) {
         case 39:
@@ -111,17 +116,20 @@ class KeyAdapterExtensionKeypressed extends KeyAdapter {
           an.d(this.b);
           paramKeyEvent.consume();
           break;
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
-    this.a = ((paramKeyEvent.getModifiers() & 0x40) == 64 || (paramKeyEvent.getModifiers() & 0x1) == 1);
-    boolean bool = ((paramKeyEvent.getModifiers() & 0x80) == 128 || (paramKeyEvent.getModifiers() & 0x2) == 2) ? true : false;
+    this.a =
+        ((paramKeyEvent.getModifiers() & 0x40) == 64 || (paramKeyEvent.getModifiers() & 0x1) == 1);
+    boolean bool =
+        ((paramKeyEvent.getModifiers() & 0x80) == 128 || (paramKeyEvent.getModifiers() & 0x2) == 2)
+            ? true
+            : false;
     this.b.p.g((this.a || bool));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/aO.class
  * Java compiler version: 8 (52.0)

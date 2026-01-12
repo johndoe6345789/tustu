@@ -5,18 +5,19 @@ import java.util.StringTokenizer;
 
 public class G {
   public static double g(String paramString) {
-    if (paramString.indexOf("Math.") != -1)
-      paramString = b(paramString); 
+    if (paramString.indexOf("Math.") != -1) paramString = b(paramString);
     int i = paramString.indexOf("||");
     int j = paramString.indexOf("&&");
-    if (i != -1 || j != -1)
-      paramString = d(paramString); 
+    if (i != -1 || j != -1) paramString = d(paramString);
     while (paramString.indexOf("(") != -1) {
       String str1 = paramString.substring(paramString.indexOf(")") + 1);
-      String str2 = paramString.substring(paramString.lastIndexOf("(", paramString.indexOf(")")) + 1, paramString.indexOf(")"));
-      String str3 = paramString.substring(0, paramString.lastIndexOf("(", paramString.indexOf(")")));
+      String str2 =
+          paramString.substring(
+              paramString.lastIndexOf("(", paramString.indexOf(")")) + 1, paramString.indexOf(")"));
+      String str3 =
+          paramString.substring(0, paramString.lastIndexOf("(", paramString.indexOf(")")));
       paramString = str3 + g(str2) + str1;
-    } 
+    }
     int k = paramString.indexOf("?");
     int m = paramString.indexOf(":");
     if (k > 0 && m > 0) {
@@ -24,10 +25,10 @@ public class G {
       String str2 = paramString.substring(k + 1, m);
       String str3 = paramString.substring(m + 1);
       return i(str1) ? g(str2) : g(str3);
-    } 
+    }
     return a(paramString);
   }
-  
+
   private static double a(String paramString) {
     // Byte code:
     //   0: aload_0
@@ -35,32 +36,38 @@ public class G {
     //   2: aload_0
     //   3: ldc '!='
     //   5: ldc '$'
-    //   7: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   7: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   10: astore_0
     //   11: aload_0
     //   12: ldc '=='
     //   14: ldc '='
-    //   16: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   16: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   19: astore_0
     //   20: aload_0
     //   21: ldc '||'
     //   23: ldc '|'
-    //   25: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   25: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   28: astore_0
     //   29: aload_0
     //   30: ldc '&&'
     //   32: ldc '&'
-    //   34: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   34: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   37: astore_0
     //   38: aload_0
     //   39: ldc '>='
     //   41: ldc '#'
-    //   43: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   43: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   46: astore_0
     //   47: aload_0
     //   48: ldc '<='
     //   50: ldc '@'
-    //   52: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   52: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   55: astore_0
     //   56: new java/util/ArrayList
     //   59: dup
@@ -876,12 +883,12 @@ public class G {
     //   1084	1098	1101	java/lang/Exception
     //   1103	1216	1219	java/lang/Exception
   }
-  
+
   public static boolean VInterfaceHotel(String paramString) {
     if (paramString.indexOf("true") != -1 || paramString.indexOf("false") != -1) {
       paramString = X.b(paramString, "true", "1");
       paramString = X.b(paramString, "false", "0");
-    } 
+    }
     int i = paramString.indexOf("==");
     i = (i > 0) ? i : paramString.indexOf("!=");
     i = (i > 0) ? i : paramString.indexOf("<=");
@@ -890,17 +897,13 @@ public class G {
       try {
         double d1 = g(paramString.substring(0, i).trim());
         double d2 = g(paramString.substring(i + 2).trim());
-        if (paramString.indexOf("==") != -1)
-          return (d1 == d2); 
-        if (paramString.indexOf("!=") != -1)
-          return (d1 != d2); 
-        if (paramString.indexOf("<=") != -1)
-          return (d1 <= d2); 
-        if (paramString.indexOf(">=") != -1)
-          return (d1 >= d2); 
+        if (paramString.indexOf("==") != -1) return (d1 == d2);
+        if (paramString.indexOf("!=") != -1) return (d1 != d2);
+        if (paramString.indexOf("<=") != -1) return (d1 <= d2);
+        if (paramString.indexOf(">=") != -1) return (d1 >= d2);
       } catch (Exception exception) {
         throw new VInterfaceHotel("Unable to resolve condition for expression: " + paramString);
-      } 
+      }
     } else {
       i = paramString.indexOf("&");
       i = (i > 0) ? i : paramString.indexOf(">");
@@ -910,18 +913,14 @@ public class G {
         double d1 = g(paramString.substring(0, i).trim());
         double d2 = g(paramString.substring(i + 1).trim());
         if (paramString.indexOf("&") > 0) {
-          int j = (int)((d1 <= d2) ? d1 : d2);
-          return (j == 0) ? false : ((((int)d1 & (int)d2) == j));
-        } 
-        if (paramString.indexOf("=") > 0)
-          return (d1 == d2); 
-        if (paramString.indexOf("<") > 0)
-          return (d1 < d2); 
-        if (paramString.indexOf(">") > 0)
-          return (d1 > d2); 
+          int j = (int) ((d1 <= d2) ? d1 : d2);
+          return (j == 0) ? false : ((((int) d1 & (int) d2) == j));
+        }
+        if (paramString.indexOf("=") > 0) return (d1 == d2);
+        if (paramString.indexOf("<") > 0) return (d1 < d2);
+        if (paramString.indexOf(">") > 0) return (d1 > d2);
       } else {
-        if (j(paramString))
-          return (g(paramString) != 0.0D); 
+        if (j(paramString)) return (g(paramString) != 0.0D);
         double d = 0.0D;
         try {
           boolean bool = (paramString.indexOf("!") != -1) ? true : false;
@@ -929,55 +928,52 @@ public class G {
           d = k(str);
           return bool ? ((d <= 0.0D)) : ((d > 0.0D));
         } catch (Exception exception) {
-          throw new VInterfaceHotel("Error evaluating condition:" + paramString + ", false returned");
-        } 
-      } 
-    } 
+          throw new VInterfaceHotel(
+              "Error evaluating condition:" + paramString + ", false returned");
+        }
+      }
+    }
     return false;
   }
-  
+
   public static boolean i(String paramString) {
     String str = paramString;
-    if (str.indexOf("Math.") != -1)
-      str = b(str); 
+    if (str.indexOf("Math.") != -1) str = b(str);
     while (str.indexOf("(") != -1) {
       String str1 = str.substring(str.indexOf(")") + 1);
       String str2 = str.substring(str.lastIndexOf("(", str.indexOf(")")) + 1, str.indexOf(")"));
       String str3 = str.substring(0, str.lastIndexOf("(", str.indexOf(")")));
       str2 = i(str2) + "";
       str = str3 + str2 + str1;
-    } 
+    }
     paramString = str;
     int i = paramString.indexOf("&&");
     if (i > 0) {
       StringTokenizer stringTokenizer = new StringTokenizer(paramString, "&&");
       while (stringTokenizer.hasMoreTokens()) {
-        if (!i(stringTokenizer.nextToken()))
-          return false; 
-      } 
+        if (!i(stringTokenizer.nextToken())) return false;
+      }
       return true;
-    } 
+    }
     i = paramString.indexOf("||");
     if (i > 0) {
       StringTokenizer stringTokenizer = new StringTokenizer(paramString, "||");
       while (stringTokenizer.hasMoreTokens()) {
-        if (i(stringTokenizer.nextToken()))
-          return true; 
-      } 
+        if (i(stringTokenizer.nextToken())) return true;
+      }
       return false;
-    } 
+    }
     return VInterfaceHotel(paramString);
   }
-  
+
   public static boolean j(String paramString) {
     String str = "+&|-*/";
     for (byte b = 0; b < str.length(); b++) {
-      if (paramString.indexOf(str.charAt(b)) > 1)
-        return true; 
-    } 
+      if (paramString.indexOf(str.charAt(b)) > 1) return true;
+    }
     return false;
   }
-  
+
   public static double k(String paramString) {
     if (paramString.indexOf("0x") != -1) {
       paramString = X.b(paramString, "0x", "").trim();
@@ -985,10 +981,10 @@ public class G {
     } else if (paramString.indexOf("0b") != -1) {
       paramString = X.b(paramString, "0b", "").trim();
       paramString = Integer.valueOf(paramString, 2).toString();
-    } 
+    }
     return Double.parseDouble(paramString);
   }
-  
+
   private static String b(String paramString) {
     while (paramString.indexOf("Math.") != -1) {
       String str1 = paramString.substring(0, paramString.indexOf("Math."));
@@ -997,102 +993,89 @@ public class G {
       String str2 = paramString.substring(i, j);
       String str3 = paramString.substring(j);
       paramString = str1 + c(str2) + str3;
-    } 
+    }
     return paramString;
   }
-  
+
   public static boolean l(String paramString) {
     try {
       double d = k(paramString);
       return true;
     } catch (Exception exception) {
       return false;
-    } 
+    }
   }
-  
+
   private static double c(String paramString) {
     if (paramString.indexOf("(") == -1)
       for (int i = paramString.length() - 1; i > 0; i--) {
         if (!l(paramString.charAt(i) + "")) {
           paramString = paramString.substring(0, i + 1) + "(" + paramString.substring(i + 1) + ")";
           break;
-        } 
-      }  
+        }
+      }
     String str = paramString.substring(paramString.indexOf('.') + 1, paramString.indexOf('('));
     double d = g(paramString.substring(paramString.indexOf('('), paramString.length()));
-    if (str.equals("log"))
-      return (d < 0.0D) ? 0.0D : Math.log(d); 
-    if (str.equals("sin"))
-      return Math.sin(d); 
-    if (str.equals("cos"))
-      return Math.cos(d); 
-    if (str.equals("tan"))
-      return Math.tan(d); 
-    if (str.equals("atan"))
-      return Math.atan(d); 
-    if (str.equals("asin"))
-      return Math.asin(d); 
-    if (str.equals("acos"))
-      return Math.asin(d); 
-    if (str.equals("abs"))
-      return Math.abs(d); 
-    if (str.equals("sqrt"))
-      return Math.sqrt(d); 
+    if (str.equals("log")) return (d < 0.0D) ? 0.0D : Math.log(d);
+    if (str.equals("sin")) return Math.sin(d);
+    if (str.equals("cos")) return Math.cos(d);
+    if (str.equals("tan")) return Math.tan(d);
+    if (str.equals("atan")) return Math.atan(d);
+    if (str.equals("asin")) return Math.asin(d);
+    if (str.equals("acos")) return Math.asin(d);
+    if (str.equals("abs")) return Math.abs(d);
+    if (str.equals("sqrt")) return Math.sqrt(d);
     throw new VInterfaceHotel("Unsupported Math function " + str);
   }
-  
+
   private static int a(String paramString, int paramInt) {
     byte b1 = 0;
     byte b2 = 0;
     int i;
     for (i = paramInt; i < paramString.length() && (!b1 || b1 != b2); i++) {
-      if (paramString.charAt(i) == '(')
-        b1++; 
-      if (paramString.charAt(i) == ')')
-        b2++; 
-    } 
+      if (paramString.charAt(i) == '(') b1++;
+      if (paramString.charAt(i) == ')') b2++;
+    }
     return i;
   }
-  
+
   private static String d(String paramString) {
     paramString = a(paramString, "||");
     paramString = a(paramString, "&&");
     paramString = X.b(paramString, "||", "`");
     return X.b(paramString, "&&", "~");
   }
-  
+
   private static String a(String paramString1, String paramString2) {
-    for (int i = paramString1.indexOf(paramString2); i != -1; i = paramString1.indexOf(paramString2, i + paramString2.length() + 1)) {
-      if (i == -1)
-        return paramString1; 
+    for (int i = paramString1.indexOf(paramString2);
+        i != -1;
+        i = paramString1.indexOf(paramString2, i + paramString2.length() + 1)) {
+      if (i == -1) return paramString1;
       String str1 = paramString1.substring(0, i).trim();
       String str2 = paramString1.substring(i + paramString2.length(), paramString1.length()).trim();
       int j = str1.lastIndexOf("(", i);
       int k = str1.lastIndexOf(")", i);
-      if (k > j)
-        j = -1; 
+      if (k > j) j = -1;
       if (j == -1) {
         str1 = "(" + str1 + ")";
       } else {
         String str = str1.substring(0, j) + "(" + str1.substring(j) + ")";
         str1 = str;
-      } 
+      }
       int m = str2.indexOf(")", i);
       int n = str2.indexOf("(", i);
-      if (n > -1 && n < m)
-        m = -1; 
+      if (n > -1 && n < m) m = -1;
       if (m == -1) {
         str2 = "(" + str2 + ")";
       } else {
         String str = "(" + str2.substring(0, m) + ")" + str2.substring(m);
         str2 = str;
-      } 
+      }
       paramString1 = str1 + paramString2 + str2;
-    } 
+    }
     return paramString1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/G.class
  * Java compiler version: 8 (52.0)

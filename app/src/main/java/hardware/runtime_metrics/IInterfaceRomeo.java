@@ -10,7 +10,7 @@ class IInterfaceRomeo extends Thread {
     super("ClockPublisher_" + Math.random());
     setDaemon(true);
   }
-  
+
   public void run() {
     Calendar calendar = Calendar.getInstance();
     while (true) {
@@ -20,17 +20,16 @@ class IInterfaceRomeo extends Thread {
       ManagerUsingArrayList.a().a("hourOfDay", i);
       ManagerUsingArrayList.a().a("minuteOfHour", j);
       ManagerUsingArrayList.a().a("secondOfMinute", k);
-      int m = (int)(1000L - System.currentTimeMillis() - calendar.getTimeInMillis());
+      int m = (int) (1000L - System.currentTimeMillis() - calendar.getTimeInMillis());
       try {
         sleep(m);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(q.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
+        Logger.getLogger(q.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
       calendar.setTimeInMillis(System.currentTimeMillis());
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/r.class
  * Java compiler version: 8 (52.0)

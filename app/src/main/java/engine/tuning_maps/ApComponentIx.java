@@ -8,24 +8,23 @@ class ApComponentIx extends Thread {
     super("SendBlockCleanup");
     setDaemon(true);
   }
-  
+
   public void run() {
     while (this.a.a.C().x()) {
       try {
         Thread.sleep(30L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(iw.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(iw.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
     try {
       Thread.sleep(100L);
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(iw.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-    } 
+      Logger.getLogger(iw.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
+    }
     iw.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ix.class
  * Java compiler version: 8 (52.0)

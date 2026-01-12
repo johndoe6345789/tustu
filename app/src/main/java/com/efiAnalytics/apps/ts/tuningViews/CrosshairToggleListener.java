@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class CrosshairToggleListener implements ActionListener {
   CrosshairToggleListener(J paramJ) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    J.a(this.a, ((JCheckBoxMenuItem)paramActionEvent.getSource()).getState());
+    J.a(this.a, ((JCheckBoxMenuItem) paramActionEvent.getSource()).getState());
     this.a.repaint();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/L.class
  * Java compiler version: 8 (52.0)

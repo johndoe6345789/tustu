@@ -25,28 +25,34 @@ import s.SComponentGolf;
 
 public class JPanelExtension extends JPanel implements dq {
   JTextPane a = new JTextPane();
-  
+
   JTextPane b = new JTextPane();
-  
+
   JTextPane c = new JTextPane();
-  
+
   String d = null;
-  
+
   String e = null;
-  
+
   String f = null;
-  
+
   String SComponentGolf = null;
-  
+
   String h = null;
-  
+
   String i = null;
-  
+
   int j = 5;
-  
+
   String ExceptionExtension = null;
-  
-  public JPanelExtension(String paramString1, String paramString2, String paramString3, String paramString4, String paramString5, String paramString6) {
+
+  public JPanelExtension(
+      String paramString1,
+      String paramString2,
+      String paramString3,
+      String paramString4,
+      String paramString5,
+      String paramString6) {
     this.d = paramString1;
     this.e = paramString2;
     this.f = paramString3;
@@ -54,7 +60,15 @@ public class JPanelExtension extends JPanel implements dq {
     this.h = paramString5;
     this.i = paramString6;
     setBorder(BorderFactory.createLoweredBevelBorder());
-    this.ExceptionExtension = "<html><font size=\"" + eJ.a(12) + "\"><center><strong>" + SComponentGolf.b(paramString4 + " " + paramString5 + " Review") + "</strong></font></center><br>" + SComponentGolf.b("Briefly tell us about your experience using " + paramString4 + " " + paramString5) + ".<br> <br></html>";
+    this.ExceptionExtension =
+        "<html><font size=\""
+            + eJ.a(12)
+            + "\"><center><strong>"
+            + SComponentGolf.b(paramString4 + " " + paramString5 + " Review")
+            + "</strong></font></center><br>"
+            + SComponentGolf.b(
+                "Briefly tell us about your experience using " + paramString4 + " " + paramString5)
+            + ".<br> <br></html>";
     this.a.setContentType("text/html");
     this.a.setText(this.ExceptionExtension);
     this.a.setEditable(false);
@@ -109,7 +123,7 @@ public class JPanelExtension extends JPanel implements dq {
     jPanel1.add("Center", jPanel3);
     add("Center", jPanel1);
   }
-  
+
   public void a(Component paramComponent) {
     JDialog jDialog = new JDialog(bV.a(paramComponent), SComponentGolf.b("User Feedback"));
     jDialog.add("Center", this);
@@ -129,32 +143,45 @@ public class JPanelExtension extends JPanel implements dq {
     } else {
       jPanel.add(jButton1);
       jPanel.add(jButton2);
-    } 
+    }
     jDialog.add("South", jPanel);
     jDialog.pack();
     jDialog.setSize(eJ.a(640), eJ.a(480));
     bV.a(bV.a(paramComponent), jDialog);
     jDialog.setVisible(true);
   }
-  
+
   public boolean a() {
     RInterfaceMike RInterfaceMike = new RInterfaceMike();
-    String str = SComponentGolf.c().getLanguage() + "\nPros:\n" + this.b.getText() + "\nWant:\n" + this.c.getText();
+    String str =
+        SComponentGolf.c().getLanguage()
+            + "\nPros:\n"
+            + this.b.getText()
+            + "\nWant:\n"
+            + this.c.getText();
     try {
-      boolean bool = !RInterfaceMike.a(this.d, this.e, this.f, this.SComponentGolf, this.h, this.i, this.j, str) ? true : false;
+      boolean bool =
+          !RInterfaceMike.a(
+                  this.d, this.e, this.f, this.SComponentGolf, this.h, this.i, this.j, str)
+              ? true
+              : false;
       D.c("UserReview Queued:" + bool);
     } catch (ExceptionExtension ExceptionExtension) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionExtension);
-    } 
+      Logger.getLogger(a.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) ExceptionExtension);
+    }
     return true;
   }
-  
+
   public boolean b() {
-    bV.d(SComponentGolf.b("You can return to the User Review Dialog at any time.") + "\n" + SComponentGolf.b("Check the Main Menubar under Help"), this);
+    bV.d(
+        SComponentGolf.b("You can return to the User Review Dialog at any time.")
+            + "\n"
+            + SComponentGolf.b("Check the Main Menubar under Help"),
+        this);
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/Q/a.class
  * Java compiler version: 8 (52.0)

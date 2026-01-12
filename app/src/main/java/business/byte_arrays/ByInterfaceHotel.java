@@ -6,14 +6,12 @@ import javax.swing.JList;
 
 class ByInterfaceHotel extends MouseAdapter {
   ByInterfaceHotel(d paramd) {}
-  
+
   public void mouseClicked(MouseEvent paramMouseEvent) {
-    JList<k> jList = (JList)paramMouseEvent.getSource();
-    if (paramMouseEvent.getClickCount() == 2)
-      this.a.a(jList.getSelectedValue()); 
+    JList<k> jList = (JList) paramMouseEvent.getSource();
+    if (paramMouseEvent.getClickCount() == 2) this.a.a(jList.getSelectedValue());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/by/h.class
  * Java compiler version: 8 (52.0)

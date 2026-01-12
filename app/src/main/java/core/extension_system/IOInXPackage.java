@@ -18,18 +18,17 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class IOInXPackage implements b {
-  private static char[] c = new char[] { 
-      'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '3', '8', 
-      '5', '4', '1', '5', '6', '6' };
-  
+  private static char[] c =
+      new char[] {'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '3', '8', '5', '4', '1', '5', '6', '6'};
+
   String a = new String(c);
-  
+
   boolean b = false;
-  
+
   public String a() {
     return "JavaSerialization";
   }
-  
+
   public void a(Object paramObject, File paramFile) {
     if (this.b) {
       ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -42,16 +41,17 @@ public class IOInXPackage implements b {
         W.d.a(paramFile, arrayOfByte);
       } catch (Exception exception) {
         throw new IOException("Error encrypting Cache File: " + exception.getLocalizedMessage());
-      } 
+      }
     } else {
-      BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(paramFile));
+      BufferedOutputStream bufferedOutputStream =
+          new BufferedOutputStream(new FileOutputStream(paramFile));
       ObjectOutputStream objectOutputStream = new ObjectOutputStream(bufferedOutputStream);
       objectOutputStream.writeObject(paramObject);
       objectOutputStream.flush();
       objectOutputStream.close();
-    } 
+    }
   }
-  
+
   public Object a(File paramFile) {
     if (this.b) {
       byte[] arrayOfByte2;
@@ -60,16 +60,18 @@ public class IOInXPackage implements b {
         arrayOfByte2 = b(arrayOfByte1);
       } catch (Exception exception) {
         throw new IOException("Error decrypting Cache File: " + exception.getLocalizedMessage());
-      } 
-      BufferedInputStream bufferedInputStream1 = new BufferedInputStream(new ByteArrayInputStream(arrayOfByte2));
+      }
+      BufferedInputStream bufferedInputStream1 =
+          new BufferedInputStream(new ByteArrayInputStream(arrayOfByte2));
       ObjectInputStream objectInputStream1 = new ObjectInputStream(bufferedInputStream1);
       return objectInputStream1.readObject();
-    } 
-    BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(paramFile));
+    }
+    BufferedInputStream bufferedInputStream =
+        new BufferedInputStream(new FileInputStream(paramFile));
     ObjectInputStream objectInputStream = new ObjectInputStream(bufferedInputStream);
     return objectInputStream.readObject();
   }
-  
+
   private byte[] a(byte[] paramArrayOfbyte) {
     String str = this.a;
     Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
@@ -77,7 +79,7 @@ public class IOInXPackage implements b {
     cipher.init(1, secretKeySpec, new IvParameterSpec("WWWWWWWWWXXXXXXX".getBytes("UTF-8")));
     return cipher.doFinal(paramArrayOfbyte);
   }
-  
+
   private byte[] b(byte[] paramArrayOfbyte) {
     String str = this.a;
     Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
@@ -89,14 +91,13 @@ public class IOInXPackage implements b {
       throw new ExceptionExtension("Invalid Password");
     } catch (BadPaddingException badPaddingException) {
       throw new ExceptionExtension("Invalid Password");
-    } 
+    }
   }
-  
+
   public void a(boolean paramBoolean) {
     this.b = paramBoolean;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/X/d.class
  * Java compiler version: 8 (52.0)

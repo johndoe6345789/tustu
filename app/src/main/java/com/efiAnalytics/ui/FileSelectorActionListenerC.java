@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class FileSelectorActionListenerC implements ActionListener {
   FileSelectorActionListenerC(ei paramei) {}
-  
+
   public void FileSelectorActionListenerC(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ek.class
  * Java compiler version: 8 (52.0)

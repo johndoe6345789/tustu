@@ -16,7 +16,7 @@ public class e {
     if (IOInWPackage.b(file1)) {
       D.a("Already Encrypted: " + paramString2);
       return false;
-    } 
+    }
     File file2 = new File(paramString3);
     byte[] arrayOfByte = null;
     try {
@@ -30,9 +30,8 @@ public class e {
       iOException.printStackTrace();
       D.a(f.k);
       return false;
-    } 
-    if (file2.exists())
-      file2.delete(); 
+    }
+    if (file2.exists()) file2.delete();
     try {
       file2.createNewFile();
     } catch (IOException iOException) {
@@ -40,7 +39,7 @@ public class e {
       iOException.printStackTrace();
       D.a(f.k);
       return false;
-    } 
+    }
     String str = z.a(file1);
     double d = z.c(file1);
     IOInWPackage IOInWPackage = new IOInWPackage();
@@ -49,14 +48,13 @@ public class e {
       D.d("file written to:\n" + file2.getAbsolutePath());
       return true;
     } catch (IOException iOException) {
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, iOException);
       D.a("Unable to Write Output File.");
       iOException.printStackTrace();
       return false;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bH/e.class
  * Java compiler version: 8 (52.0)

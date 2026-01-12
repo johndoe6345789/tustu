@@ -5,20 +5,21 @@ import com.efiAnalytics.remotefileaccess.RemoteAccessException;
 
 class ThreadedInBkPackage extends Thread {
   ThreadedInBkPackage(h paramh) {}
-  
+
   public void run() {
     try {
       if (h.d(this.a) != null) {
-        DirectoryInformationImplGetfilecount DirectoryInformationImplGetfilecount = h.d(this.a).a(null);
+        DirectoryInformationImplGetfilecount DirectoryInformationImplGetfilecount =
+            h.d(this.a).a(null);
         if (DirectoryInformationImplGetfilecount != null) {
           this.a.j.a(DirectoryInformationImplGetfilecount, this.a.v);
           h.d(this.a).c();
-        } 
-      } 
-    } catch (RemoteAccessException remoteAccessException) {}
+        }
+      }
+    } catch (RemoteAccessException remoteAccessException) {
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bk/m.class
  * Java compiler version: 8 (52.0)

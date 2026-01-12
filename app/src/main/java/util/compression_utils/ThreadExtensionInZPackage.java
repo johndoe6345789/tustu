@@ -11,13 +11,13 @@ import java.util.logging.Logger;
 
 class ThreadExtensionInZPackage extends Thread {
   private boolean b = false;
-  
+
   ThreadExtensionInZPackage(a parama) {}
-  
+
   public void run() {
     b();
   }
-  
+
   private void b() {
     try {
       F f = this.a.b.e();
@@ -39,23 +39,28 @@ class ThreadExtensionInZPackage extends Thread {
             arrayOfByte = this.a.b.a(arrayOfByte1, b1, b2, f.n(), null);
           } else {
             arrayOfByte = this.a.b.a(f.w().ExceptionGetmessage(), b1, b2, f.n(), null);
-          } 
+          }
           if (arrayOfByte.length == f.n()) {
             a.a(this.a, arrayOfByte);
             continue;
-          } 
+          }
           if (arrayOfByte.length % f.n() == 0) {
             byte[] arrayOfByte1 = new byte[f.n()];
             D.c("Doing a loop: Expected:" + f.n() + ", recieved:" + arrayOfByte.length);
             for (byte b3 = 0; b3 * arrayOfByte1.length < arrayOfByte.length; b3++) {
-              System.arraycopy(arrayOfByte, b3 * arrayOfByte1.length, arrayOfByte1, 0, arrayOfByte1.length);
+              System.arraycopy(
+                  arrayOfByte, b3 * arrayOfByte1.length, arrayOfByte1, 0, arrayOfByte1.length);
               a.a(this.a, arrayOfByte1);
-            } 
+            }
             continue;
-          } 
-          D.b("Unexpected data packet length. Expected:" + f.n() + ", recieved:" + arrayOfByte.length);
+          }
+          D.b(
+              "Unexpected data packet length. Expected:"
+                  + f.n()
+                  + ", recieved:"
+                  + arrayOfByte.length);
         } catch (IOException iOException) {
-          Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, iOException);
+          Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String) null, iOException);
           D.b("IOException during Burst logging.");
         } catch (V.b b3) {
           b1++;
@@ -63,29 +68,31 @@ class ThreadExtensionInZPackage extends Thread {
         } catch (ExceptionGetmessage ExceptionGetmessage) {
           b1++;
           a.a(this.a, null);
-        } 
-      } 
+        }
+      }
     } catch (l l) {
-      D.a("COMM Error occurred during burst logging.", (Exception)l, null);
+      D.a("COMM Error occurred during burst logging.", (Exception) l, null);
     } catch (PortInUseException portInUseException) {
-      D.a("COMM Port in use by " + portInUseException.currentOwner, (Exception)portInUseException, null);
+      D.a(
+          "COMM Port in use by " + portInUseException.currentOwner,
+          (Exception) portInUseException,
+          null);
     } finally {
       this.a.b.e().j(this.a.c);
       this.a.b.e().E(this.a.ExceptionGetmessage);
       a(false);
       this.a.b.h();
-    } 
+    }
   }
-  
+
   public boolean a() {
     return this.b;
   }
-  
+
   public void a(boolean paramBoolean) {
     this.b = paramBoolean;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/z/b.class
  * Java compiler version: 8 (52.0)

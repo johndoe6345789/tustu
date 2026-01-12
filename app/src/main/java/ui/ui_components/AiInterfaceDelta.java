@@ -13,10 +13,9 @@ public class AiInterfaceDelta {
     } catch (IOException iOException) {
       iOException.printStackTrace();
       return "file:///." + paramString;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ai/d.class
  * Java compiler version: 8 (52.0)

@@ -7,9 +7,9 @@ import W.c;
 
 public class AkComponentHotel extends b {
   double e = 0.3691D;
-  
+
   double f = 10.41D;
-  
+
   public AkComponentHotel() {
     c c = new c();
     c.b(2729);
@@ -164,12 +164,11 @@ public class AkComponentHotel extends b {
     c.a(a2);
     a(c);
   }
-  
+
   public String i() {
     return X.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/h.class
  * Java compiler version: 8 (52.0)

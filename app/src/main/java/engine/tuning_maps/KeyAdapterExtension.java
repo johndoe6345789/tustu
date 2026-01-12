@@ -8,7 +8,7 @@ import r.ThreadedFile;
 
 class KeyAdapterExtension extends KeyAdapter {
   KeyAdapterExtension(au paramau) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
     File file = new File(this.a.b() + "12" + paramKeyEvent.getKeyChar() + "12");
     try {
@@ -16,13 +16,12 @@ class KeyAdapterExtension extends KeyAdapter {
       file.delete();
     } catch (Exception exception) {
       this.a.a.setText(X.b(this.a.a.getText(), "" + paramKeyEvent.getKeyChar(), ""));
-    } 
+    }
     String str = ThreadedFile.u();
     str = str.substring(0, str.lastIndexOf(File.separator));
     this.a.f(str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/aE.class
  * Java compiler version: 8 (52.0)

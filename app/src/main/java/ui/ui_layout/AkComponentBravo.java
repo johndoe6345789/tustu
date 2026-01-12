@@ -12,13 +12,13 @@ import java.util.logging.Logger;
 
 public class AkComponentBravo extends g {
   float ExceptionInVPackage = 20.0F;
-  
+
   float b = 0.0F;
-  
+
   public AkComponentBravo() {
     super("\",\"", false);
   }
-  
+
   protected int b(String paramString) {
     // Byte code:
     //   0: aload_0
@@ -184,7 +184,8 @@ public class AkComponentBravo extends g {
     //   331: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   334: aconst_null
     //   335: aload #12
-    //   337: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   337: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   340: iload #11
     //   342: ireturn
     //   343: iload #7
@@ -211,7 +212,8 @@ public class AkComponentBravo extends g {
     //   389: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   392: aconst_null
     //   393: aload #12
-    //   395: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   395: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   398: iload #11
     //   400: ireturn
     //   401: aload_2
@@ -246,7 +248,8 @@ public class AkComponentBravo extends g {
     //   458: aload #11
     //   460: ldc '"'
     //   462: ldc ''
-    //   464: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   464: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   467: astore #11
     //   469: aload_0
     //   470: aload #11
@@ -362,7 +365,8 @@ public class AkComponentBravo extends g {
     //   700: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   703: aconst_null
     //   704: aload #13
-    //   706: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   706: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   709: iload #12
     //   711: ireturn
     //   712: iload #7
@@ -403,7 +407,8 @@ public class AkComponentBravo extends g {
     //   786: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   789: aconst_null
     //   790: aload #13
-    //   792: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   792: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   795: iload #12
     //   797: ireturn
     //   798: iload #11
@@ -441,7 +446,8 @@ public class AkComponentBravo extends g {
     //   866: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   869: aconst_null
     //   870: aload #13
-    //   872: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   872: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   875: iload #12
     //   877: ireturn
     //   878: iload #7
@@ -460,7 +466,8 @@ public class AkComponentBravo extends g {
     //   907: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   910: aconst_null
     //   911: aload #13
-    //   913: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   913: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   916: iload #12
     //   918: ireturn
     //   919: astore #9
@@ -502,7 +509,8 @@ public class AkComponentBravo extends g {
     //   1002: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   1005: aconst_null
     //   1006: aload #15
-    //   1008: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   1008: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   1011: aload #14
     //   1013: athrow
     // Exception table:
@@ -535,7 +543,7 @@ public class AkComponentBravo extends g {
     //   919	979	977	finally
     //   984	989	992	java/io/IOException
   }
-  
+
   protected String c(String paramString) {
     boolean bool = false;
     ManagerUsingReader ManagerUsingReader = null;
@@ -545,13 +553,10 @@ public class AkComponentBravo extends g {
       byte[] arrayOfByte = new byte[2];
       fileInputStream.read(arrayOfByte);
       ManagerUsingReader = new ManagerUsingReader(new InputStreamReader(fileInputStream, this.j));
-      for (byte b1 = 0; b1 < 30; b1++)
-        ManagerUsingReader.ExceptionInVPackage(); 
+      for (byte b1 = 0; b1 < 30; b1++) ManagerUsingReader.ExceptionInVPackage();
       String str = ManagerUsingReader.ExceptionInVPackage();
-      if (str == null)
-        return ","; 
-      if (str.contains("\",\""))
-        return "\",\""; 
+      if (str == null) return ",";
+      if (str.contains("\",\"")) return "\",\"";
       return ",";
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
@@ -562,11 +567,11 @@ public class AkComponentBravo extends g {
         try {
           ManagerUsingReader.close();
         } catch (IOException iOException) {
-          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-        }  
-    } 
+          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, iOException);
+        }
+    }
   }
-  
+
   protected String l() {
     String str = super.l();
     if (str != null && str.startsWith(",")) {
@@ -575,12 +580,11 @@ public class AkComponentBravo extends g {
         str = this.b + str;
       } else {
         str = "\"" + this.b + "\"" + str;
-      } 
-    } 
+      }
+    }
     return str;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/b.class
  * Java compiler version: 8 (52.0)

@@ -15,11 +15,11 @@ import s.SComponentGolf;
 
 class TInterfaceBn extends a implements f {
   JSlider c = new JSlider();
-  
+
   JPanel d = new JPanel();
-  
+
   JLabel e = new JLabel();
-  
+
   TInterfaceBn(Window paramWindow, String paramString) {
     super(paramWindow, SComponentGolf.b(paramString) + " " + SComponentGolf.b("Slider"));
     setLayout(new BorderLayout());
@@ -37,7 +37,7 @@ class TInterfaceBn extends a implements f {
     jPanel.add(jButton);
     pack();
   }
-  
+
   public void a(int paramInt1, int paramInt2, int paramInt3, String paramString) {
     this.c.setMajorTickSpacing(10 / (paramInt3 - paramInt2));
     this.c.setMinimum(paramInt2);
@@ -45,20 +45,20 @@ class TInterfaceBn extends a implements f {
     this.c.setValue(paramInt1);
     this.e.setText("" + paramInt1);
     setTitle(paramString);
-    this.c.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
+    this.c.setBorder(
+        BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
   }
-  
+
   public void a(ChangeListener paramChangeListener) {
     this.c.addChangeListener(paramChangeListener);
   }
-  
+
   public void a(ArrayList paramArrayList) {}
-  
+
   public JPanel a() {
     return this.d;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/bn.class
  * Java compiler version: 8 (52.0)

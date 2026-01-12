@@ -427,7 +427,8 @@ public class AcInterfaceYankee {
     //   827: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   830: aconst_null
     //   831: aload #5
-    //   833: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   833: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   836: goto -> 874
     //   839: astore #24
     //   841: aload_3
@@ -442,7 +443,8 @@ public class AcInterfaceYankee {
     //   862: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   865: aconst_null
     //   866: aload #25
-    //   868: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   868: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   871: aload #24
     //   873: athrow
     //   874: return
@@ -458,7 +460,6 @@ public class AcInterfaceYankee {
     //   845	849	852	java/io/IOException
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ac/y.class
  * Java compiler version: 8 (52.0)

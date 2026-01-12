@@ -10,12 +10,11 @@ class BfInterfacePapa extends v {
     setBackground(UIManager.getColor("Label.background"));
     setFont(UIManager.getFont("Menu.font"));
   }
-  
+
   public void setBackground(Color paramColor) {
     super.setBackground(UIManager.getColor("Label.background"));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bF/p.class
  * Java compiler version: 8 (52.0)

@@ -8,35 +8,35 @@ import java.awt.Component;
 
 class ExceptioninvpackageInBtPackage implements GComponentCq, bP {
   double ExceptionInVPackage = Double.NaN;
-  
+
   aa(W paramW) {}
-  
+
   public void setCurrentOutputChannelValue(String paramString, double paramDouble) {
-    if (this.b.c == null)
-      return; 
+    if (this.b.c == null) return;
     if (this.b.c.d() != null && paramString.equals(this.b.c.d())) {
       this.b.b(paramDouble);
     } else if (this.b.c.f() != null && paramString.equals(this.b.c.f())) {
       this.b.ExceptionInVPackage(paramDouble);
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage() {
     ManagerUsingArrayList ManagerUsingArrayList = ManagerUsingArrayList.ExceptionInVPackage();
     try {
-      ManagerUsingArrayList.ExceptionInVPackage(W.ExceptionInVPackage(this.b).c(), this.b.c.d(), this);
-      ManagerUsingArrayList.ExceptionInVPackage(W.ExceptionInVPackage(this.b).c(), this.b.c.f(), this);
+      ManagerUsingArrayList.ExceptionInVPackage(
+          W.ExceptionInVPackage(this.b).c(), this.b.c.d(), this);
+      ManagerUsingArrayList.ExceptionInVPackage(
+          W.ExceptionInVPackage(this.b).c(), this.b.c.f(), this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      bV.d("Error subscribing output channel.", (Component)this.b.b);
+      bV.d("Error subscribing output channel.", (Component) this.b.b);
       ExceptionInVPackage.printStackTrace();
-    } 
+    }
   }
-  
+
   public void b() {
     ManagerUsingArrayList.ExceptionInVPackage().ExceptionInVPackage(this);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/aa.class
  * Java compiler version: 8 (52.0)

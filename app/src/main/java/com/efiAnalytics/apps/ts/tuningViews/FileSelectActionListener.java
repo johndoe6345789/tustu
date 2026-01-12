@@ -11,18 +11,24 @@ import s.SComponentGolf;
 
 class FileSelectActionListener implements ActionListener {
   FileSelectActionListener(b paramb) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    String[] arrayOfString = { IOPropertiesUsingFile.cp };
-    String str = bV.b((Component)paramActionEvent.getSource(), SComponentGolf.b("Select Other Tuning Views"), arrayOfString, "", ThreadedFile.k().getAbsolutePath());
+    String[] arrayOfString = {IOPropertiesUsingFile.cp};
+    String str =
+        bV.b(
+            (Component) paramActionEvent.getSource(),
+            SComponentGolf.b("Select Other Tuning Views"),
+            arrayOfString,
+            "",
+            ThreadedFile.k().getAbsolutePath());
     if (str != null) {
       this.IOPropertiesUsingFile.d.setText(str);
       this.IOPropertiesUsingFile.IOPropertiesUsingFile = new File(str);
-      this.IOPropertiesUsingFile.IOPropertiesUsingFile(this.IOPropertiesUsingFile.IOPropertiesUsingFile);
-    } 
+      this.IOPropertiesUsingFile.IOPropertiesUsingFile(
+          this.IOPropertiesUsingFile.IOPropertiesUsingFile);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/tuningViews/f.class
  * Java compiler version: 8 (52.0)

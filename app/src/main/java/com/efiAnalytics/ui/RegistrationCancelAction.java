@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class RegistrationCancelAction implements ActionListener {
   RegistrationCancelAction(RegistrationDialog paramdS) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/dY.class
  * Java compiler version: 8 (52.0)

@@ -19,12 +19,11 @@ public class AkComponentKilo extends b {
     l.a(c, 89);
     a(c);
   }
-  
+
   public String i() {
     return X.k;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/k.class
  * Java compiler version: 8 (52.0)

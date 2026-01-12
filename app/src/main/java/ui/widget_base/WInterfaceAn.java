@@ -2,12 +2,11 @@ package W;
 
 public interface WInterfaceAn {
   String[] a();
-  
+
   String[] b();
-  
+
   Object getValueAt(int paramInt1, int paramInt2);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/an.class
  * Java compiler version: 8 (52.0)

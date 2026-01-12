@@ -7,13 +7,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class ApComponentCp implements ItemListener {
   cp(cc paramcc) {}
-  
+
   public void itemStateChanged(ItemEvent paramItemEvent) {
-    if (((JCheckBoxMenuItem)paramItemEvent.getSource()).getState())
-      IOProperties.c(IOProperties.G, IOProperties.I); 
+    if (((JCheckBoxMenuItem) paramItemEvent.getSource()).getState())
+      IOProperties.c(IOProperties.G, IOProperties.I);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cp.class
  * Java compiler version: 8 (52.0)

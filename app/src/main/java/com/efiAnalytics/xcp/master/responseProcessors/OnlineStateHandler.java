@@ -7,17 +7,14 @@ import bQ.IOHashMap;
 public class OnlineStateHandler {
   public void a() {
     R r = T.a().c();
-    if (r != null && r.C() instanceof IOHashMap)
-      ((IOHashMap)r.C()).P(); 
+    if (r != null && r.C() instanceof IOHashMap) ((IOHashMap) r.C()).P();
   }
-  
+
   public void b() {
     R r = T.a().c();
-    if (r != null && r.C() instanceof IOHashMap)
-      ((IOHashMap)r.C()).Q(); 
+    if (r != null && r.C() instanceof IOHashMap) ((IOHashMap) r.C()).Q();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/xcp/master/responseProcessors/e.class
  * Java compiler version: 8 (52.0)

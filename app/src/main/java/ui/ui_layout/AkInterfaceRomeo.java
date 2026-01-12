@@ -18,15 +18,15 @@ import java.util.logging.Logger;
 
 public class AkInterfaceRomeo extends S {
   float[] ExceptionInVPackage = null;
-  
+
   ArrayList b = new ArrayList();
-  
+
   boolean H = true;
-  
+
   public AkInterfaceRomeo() {
     super(",", false);
   }
-  
+
   public Iterator b() {
     try {
       String str;
@@ -51,7 +51,7 @@ public class AkInterfaceRomeo extends S {
             d.ExceptionInVPackage("Ignition Load");
           } else {
             d.ExceptionInVPackage(m(str1));
-          } 
+          }
           this.g.add(d);
         } else if (d != null && str.startsWith("Type :")) {
           String str1 = str.substring(str.indexOf(":") + 1, str.length()).trim();
@@ -101,25 +101,26 @@ public class AkInterfaceRomeo extends S {
             d.b("");
             d.ExceptionInVPackage(1.0F);
             d.ExceptionInVPackage(0);
-          } 
-        } 
+          }
+        }
       } while (str != null && !str.startsWith("Log :"));
-      if (str.startsWith("Log :"));
+      if (str.startsWith("Log :"))
+        ;
     } catch (IOException iOException) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, iOException);
     } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, (Throwable)VInterfaceFoxtrot);
+      Logger.getLogger(g.class.getName())
+          .log(Level.SEVERE, (String) null, (Throwable) VInterfaceFoxtrot);
     } catch (Exception exception) {
       D.ExceptionInVPackage("Failed to get units from this row:\n");
-      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, exception);
-    } 
+      Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, exception);
+    }
     ArrayList<T> arrayList = new ArrayList();
     Iterator<T> iterator = this.g.iterator();
-    while (iterator.hasNext())
-      arrayList.add(iterator.next()); 
+    while (iterator.hasNext()) arrayList.add(iterator.next());
     return arrayList.iterator();
   }
-  
+
   private String m(String paramString) {
     StringBuilder stringBuilder = new StringBuilder();
     boolean bool = false;
@@ -130,11 +131,11 @@ public class AkInterfaceRomeo extends S {
       } else {
         stringBuilder.append(c);
         bool = ((c <= 'Z' && c >= 'A') || c == '_' || c == ' ') ? true : false;
-      } 
-    } 
+      }
+    }
     return stringBuilder.toString().trim();
   }
-  
+
   protected int b(String paramString) {
     String str = "";
     BufferedReader bufferedReader = null;
@@ -145,11 +146,11 @@ public class AkInterfaceRomeo extends S {
       for (byte b = 0; b < 100; b++) {
         str = bufferedReader.readLine();
         if (str == null)
-          throw new ExceptionInVPackage("Unable to read Haltech file, is it corrupt?"); 
-        if (str.startsWith("Channel :"))
-          return b; 
-      } 
-      throw new ExceptionInVPackage("Log Fie Header not as expected for ExceptionInVPackage Haltech ESP log file.");
+          throw new ExceptionInVPackage("Unable to read Haltech file, is it corrupt?");
+        if (str.startsWith("Channel :")) return b;
+      }
+      throw new ExceptionInVPackage(
+          "Log Fie Header not as expected for ExceptionInVPackage Haltech ESP log file.");
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
@@ -159,29 +160,30 @@ public class AkInterfaceRomeo extends S {
         try {
           bufferedReader.close();
         } catch (IOException iOException) {
-          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-        }  
-    } 
+          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, iOException);
+        }
+    }
   }
-  
+
   public float[] c() {
     String str = null;
-    if (this.ExceptionInVPackage == null)
-      this.ExceptionInVPackage = new float[this.g.size()]; 
+    if (this.ExceptionInVPackage == null) this.ExceptionInVPackage = new float[this.g.size()];
     if (this.t && this.p >= 2000 && k())
-      throw new ExceptionInVPackage("This Edition is limited to loading 500 rows of data. \nPlease Register to load large log files."); 
+      throw new ExceptionInVPackage(
+          "This Edition is limited to loading 500 rows of data. \n"
+              + "Please Register to load large log files.");
     this.b.clear();
     try {
       str = l();
     } catch (IOException iOException) {
       iOException.printStackTrace();
       throw new ExceptionInVPackage("IO Error reading row from file on row " + this.p + ".");
-    } 
+    }
     boolean bool = false;
     do {
-      if (this.m == -1L)
-        this.m = this.h.length() / (str.length() + 3); 
-      if (str.endsWith(r()));
+      if (this.m == -1L) this.m = this.h.length() / (str.length() + 3);
+      if (str.endsWith(r()))
+        ;
       String str1 = r();
       aE aE = new aE(str, str1);
       this.i = new float[aE.c()];
@@ -193,7 +195,7 @@ public class AkInterfaceRomeo extends S {
           D.c("Error Parsing record:\n" + str);
           str2 = "0";
           exception.printStackTrace();
-        } 
+        }
         if (str2.indexOf(":") != -1) {
           this.i[b] = g(str2);
         } else if (str2.length() == 0 || str2.contains("-2.147484E+09")) {
@@ -204,20 +206,19 @@ public class AkInterfaceRomeo extends S {
             this.i[b] = Float.parseFloat(str2);
           } catch (NumberFormatException numberFormatException) {
             this.i[b] = Float.NaN;
-          } 
-        } 
+          }
+        }
         if (!Float.isNaN(this.i[b])) {
           if (b > 0 && this.b.contains(Integer.valueOf(b))) {
             ExceptionInVPackage(true);
             bool = true;
             break;
-          } 
+          }
           this.ExceptionInVPackage[b] = this.i[b];
           this.b.add(Integer.valueOf(b));
-        } 
-      } 
-      if (bool)
-        continue; 
+        }
+      }
+      if (bool) continue;
       try {
         str = l();
       } catch (VInterfaceFoxtrot VInterfaceFoxtrot) {
@@ -225,12 +226,11 @@ public class AkInterfaceRomeo extends S {
       } catch (IOException iOException) {
         iOException.printStackTrace();
         throw new ExceptionInVPackage("IO Error reading row from file on row " + this.p + ".");
-      } 
+      }
     } while (!bool && str != null);
     return this.ExceptionInVPackage;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/R.class
  * Java compiler version: 8 (52.0)

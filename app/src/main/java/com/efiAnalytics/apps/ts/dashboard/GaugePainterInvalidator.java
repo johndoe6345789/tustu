@@ -5,12 +5,11 @@ import java.io.Serializable;
 
 class GaugePainterInvalidator implements GInterfaceAn, Serializable {
   GaugePainterInvalidator(Gauge paramGauge) {}
-  
+
   public void a(String paramString1, String paramString2) {
     this.a.invalidatePainter();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/w.class
  * Java compiler version: 8 (52.0)

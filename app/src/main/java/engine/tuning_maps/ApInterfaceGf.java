@@ -7,21 +7,20 @@ import com.efiAnalytics.ui.ci;
 
 class ApInterfaceGf implements ci {
   R a = null;
-  
+
   public ApInterfaceGf(dB paramdB, R paramR) {
     this.a = paramR;
   }
-  
+
   public boolean a(String paramString) {
     try {
       return p.a(paramString, this.a);
     } catch (Exception exception) {
       D.c(exception.getMessage());
       return true;
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/gF.class
  * Java compiler version: 8 (52.0)

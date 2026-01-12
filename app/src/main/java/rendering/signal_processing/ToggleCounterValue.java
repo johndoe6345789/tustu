@@ -1,16 +1,15 @@
 package L;
 
-import ax.CloneableImplInAxPackage;
 import ax.AxInterfaceAb;
+import ax.CloneableImplInAxPackage;
 
 class ToggleCounterValue implements AxInterfaceAb {
   ToggleCounterValue(n paramn) {}
-  
+
   public double b(CloneableImplInAxPackage paramS) {
     return n.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/L/q.class
  * Java compiler version: 8 (52.0)

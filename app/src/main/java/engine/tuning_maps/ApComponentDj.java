@@ -7,7 +7,7 @@ import javax.swing.SwingUtilities;
 
 class ApComponentDj extends Thread {
   ApComponentDj(dh paramdh, Runnable paramRunnable) {}
-  
+
   public void run() {
     setName("LogTabBuilderThread");
     try {
@@ -16,18 +16,18 @@ class ApComponentDj extends Thread {
         SwingUtilities.invokeAndWait(this.a);
       } else {
         this.a.run();
-      } 
+      }
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(dh.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+      Logger.getLogger(dh.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
     } catch (InvocationTargetException invocationTargetException) {
-      Logger.getLogger(dh.class.getName()).log(Level.SEVERE, (String)null, invocationTargetException);
-    } 
+      Logger.getLogger(dh.class.getName())
+          .log(Level.SEVERE, (String) null, invocationTargetException);
+    }
     this.b.e();
     this.b.b.a();
     dd.a().a(this.b.b);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/dj.class
  * Java compiler version: 8 (52.0)

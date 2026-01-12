@@ -1,9 +1,9 @@
 package I;
 
-import G.R;
-import G.T;
-import G.SerializableImpl;
 import G.GInterfaceDj;
+import G.R;
+import G.SerializableImpl;
+import G.T;
 import G.i;
 import W.WInterfaceAm;
 import bH.D;
@@ -14,47 +14,47 @@ import java.util.Map;
 
 public class ThreadedInIPackage {
   private WInterfaceAm c = null;
-  
+
   private static k d = null;
-  
+
   Map a = new HashMap<>();
-  
+
   Thread b = null;
-  
+
   private ThreadedInIPackage() {
     (new m(this)).start();
   }
-  
+
   public static k a() {
-    if (d == null)
-      d = new k(); 
+    if (d == null) d = new k();
     return d;
   }
-  
+
   public void a(WInterfaceAm paramam) {
     this.c = paramam;
   }
-  
+
   private String c(String paramString1, String paramString2) {
-    return (T.a().c() == null || T.a().c().c().equals(paramString1)) ? ("_" + paramString2) : (paramString1 + "_" + paramString2);
+    return (T.a().c() == null || T.a().c().c().equals(paramString1))
+        ? ("_" + paramString2)
+        : (paramString1 + "_" + paramString2);
   }
-  
+
   public void b() {
     this.a.clear();
   }
-  
+
   private List a(String paramString) {
-    List list = (List)this.a.get(paramString);
+    List list = (List) this.a.get(paramString);
     if (list == null) {
       list = new ArrayList();
       this.a.put(paramString, list);
-    } 
+    }
     return list;
   }
-  
+
   public void a(String paramString1, String paramString2) {
-    if (paramString1 == null || paramString1.isEmpty())
-      paramString1 = T.a().c().c(); 
+    if (paramString1 == null || paramString1.isEmpty()) paramString1 = T.a().c().c();
     R r = T.a().c(paramString1);
     SerializableImpl SerializableImpl = r.g(paramString2);
     if (SerializableImpl != null && SerializableImpl.b().equals("formula")) {
@@ -63,51 +63,48 @@ public class ThreadedInIPackage {
       i.b(paramString1, paramString2);
       double d = SerializableImpl.o();
       this.b = null;
-    } 
+    }
   }
-  
+
   public double b(String paramString1, String paramString2) {
     double d;
-    if (this.b != null && this.b.equals(Thread.currentThread()))
-      return 0.0D; 
+    if (this.b != null && this.b.equals(Thread.currentThread())) return 0.0D;
     String str = this.c.b(c(paramString1, paramString2), "0");
     try {
       d = Double.parseDouble(str);
     } catch (Exception exception) {
       D.d("Bad stored value for key: " + paramString2 + " = " + str + ", using 0");
       d = 0.0D;
-    } 
+    }
     if (Double.isNaN(d)) {
       D.d("Stored value for key: " + paramString2 + " = NaN, using 0");
       d = 0.0D;
-    } 
+    }
     if (Double.isInfinite(d)) {
       D.d("Stored value for key: " + paramString2 + " = Infinity, using 0");
       d = 0.0D;
-    } 
+    }
     return d;
   }
-  
+
   public void a(String paramString1, String paramString2, GInterfaceDj paramdj) {
     l l = new l(this, paramString1, paramString2, paramdj);
     List<l> list = a(paramString1);
     if (list.contains(paramString2))
-      D.b("2 persisteAccumulate Entries with same key! : " + paramString2); 
+      D.b("2 persisteAccumulate Entries with same key! : " + paramString2);
     list.add(l);
   }
-  
+
   public void a(String paramString, boolean paramBoolean) {
     if (this.c != null) {
-      List list = (List)this.a.get(paramString);
-      if (paramBoolean)
-        paramString = ""; 
-      for (l l : list)
-        this.c.a(c(paramString, l.b()), Double.toString(l.c().a())); 
+      List list = (List) this.a.get(paramString);
+      if (paramBoolean) paramString = "";
+      for (l l : list) this.c.a(c(paramString, l.b()), Double.toString(l.c().a()));
     } else {
       D.d("Persistor not set, not storing persistent accumulated values.");
-    } 
+    }
   }
-  
+
   public void c() {
     R r = T.a().c();
     boolean bool = false;
@@ -118,20 +115,18 @@ public class ThreadedInIPackage {
           str = "";
         } else {
           str = l.a();
-        } 
+        }
         double d = l.c().a();
         if (Double.isNaN(l.d()) || d != l.d()) {
           this.c.a(c(str, l.b()), Double.toString(d));
           l.a(d);
           bool = true;
-        } 
-      } 
-    } 
-    if (this.c != null && bool)
-      this.c.a(); 
+        }
+      }
+    }
+    if (this.c != null && bool) this.c.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/I/k.class
  * Java compiler version: 8 (52.0)

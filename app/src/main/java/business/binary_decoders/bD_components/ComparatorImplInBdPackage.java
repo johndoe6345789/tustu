@@ -5,12 +5,11 @@ import java.util.Date;
 
 class ComparatorImplInBdPackage implements Comparator {
   ComparatorImplInBdPackage(c paramc) {}
-  
+
   public int a(Date paramDate1, Date paramDate2) {
-    return (int)(paramDate2.getTime() - paramDate1.getTime());
+    return (int) (paramDate2.getTime() - paramDate1.getTime());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/d.class
  * Java compiler version: 8 (52.0)

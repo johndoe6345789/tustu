@@ -1,10 +1,12 @@
 package aP;
 
-import G.T;
-import G.GInterfaceCl;
+import AeInterfaceRomeo.AgComponentAlpha;
+import AeInterfaceRomeo.i;
 import G.ClassType;
-import W.NetworkExceptionprintstacktrace;
+import G.GInterfaceCl;
+import G.T;
 import W.IOInWPackage;
+import W.NetworkExceptionprintstacktrace;
 import ae.AeInterfaceQuebec;
 import ae.AeInterfaceRomeo;
 import af.AfInterfaceCharlie;
@@ -19,30 +21,29 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import AeInterfaceRomeo.AgComponentAlpha;
-import AeInterfaceRomeo.i;
 import s.SComponentGolf;
 
 public class ManagerAgcomponentalpha {
   List AgComponentAlpha = null;
-  
+
   private static bF ThreadedInAhPackage = null;
-  
+
   private Map AfInterfaceCharlie = new HashMap<>();
-  
+
   public static bF AgComponentAlpha() {
-    if (ThreadedInAhPackage == null)
-      ThreadedInAhPackage = new bF(); 
+    if (ThreadedInAhPackage == null) ThreadedInAhPackage = new bF();
     return ThreadedInAhPackage;
   }
-  
+
   public void AgComponentAlpha(String paramString1, String paramString2) {
     this.AgComponentAlpha = i.AgComponentAlpha().d();
     i.AgComponentAlpha().AgComponentAlpha(this.AgComponentAlpha);
     paramString2 = X.ThreadedInAhPackage(paramString2, i.ThreadedInAhPackage, "");
     if (paramString1.equals(i.x)) {
       this.AgComponentAlpha.add(";LKFDS;LK09");
-      if (paramString2.equals(i.SComponentGolf) || paramString2.equals(i.SComponentGolf + i.d) || paramString2.equals(i.h)) {
+      if (paramString2.equals(i.SComponentGolf)
+          || paramString2.equals(i.SComponentGolf + i.d)
+          || paramString2.equals(i.h)) {
         ThreadedInAhPackage();
         d();
         this.AgComponentAlpha.add(";LFDS;LFDS0943;L");
@@ -71,15 +72,19 @@ public class ManagerAgcomponentalpha {
           this.AgComponentAlpha.add("098432lkjgd0932=- ");
           this.AgComponentAlpha.add("5fdsrewpok3=+3vcx-");
           this.AgComponentAlpha.add("098po;l;lklkjj");
-          int[] arrayOfInt = { 21848 };
+          int[] arrayOfInt = {21848};
           aY.AeInterfaceRomeo = arrayOfInt;
           AgComponentAlpha.bd = true;
-        } 
-      } else if (paramString2.equals(i.AeInterfaceQuebec) || paramString2.equals(i.AfInterfaceFoxtrot) || paramString2.equals(i.e)) {
+        }
+      } else if (paramString2.equals(i.AeInterfaceQuebec)
+          || paramString2.equals(i.AfInterfaceFoxtrot)
+          || paramString2.equals(i.e)) {
         ThreadedInAhPackage();
         d();
         this.AgComponentAlpha.add("645fds645fds  fdsd098532#@");
-      } else if (paramString2.equals(i.k) || paramString2.equals(i.k + i.d) || paramString2.equals(i.l)) {
+      } else if (paramString2.equals(i.k)
+          || paramString2.equals(i.k + i.d)
+          || paramString2.equals(i.l)) {
         ThreadedInAhPackage();
         d();
         this.AgComponentAlpha.add(";LFDS;LFDS0943;L");
@@ -110,24 +115,29 @@ public class ManagerAgcomponentalpha {
           this.AgComponentAlpha.add("098432lkjgd0932=- ");
           this.AgComponentAlpha.add("5fdsrewpok3=+3vcx-");
           this.AgComponentAlpha.add("098po;l;lklkjj");
-          int[] arrayOfInt = { 21848 };
+          int[] arrayOfInt = {21848};
           aY.AeInterfaceRomeo = arrayOfInt;
           AgComponentAlpha.bd = true;
-        } 
-      } else if (paramString2.equals(i.AeInterfaceQuebec) || paramString2.equals(i.AfInterfaceFoxtrot) || paramString2.equals(i.e)) {
+        }
+      } else if (paramString2.equals(i.AeInterfaceQuebec)
+          || paramString2.equals(i.AfInterfaceFoxtrot)
+          || paramString2.equals(i.e)) {
         ThreadedInAhPackage();
         d();
         this.AgComponentAlpha.add("645fds645fds  fdsd098532#@");
       } else {
         e();
-      } 
+      }
       AfInterfaceFoxtrot();
-      if (paramString2.contains(i.j))
-        this.AgComponentAlpha.remove(";LKFDS;LK09"); 
+      if (paramString2.contains(i.j)) this.AgComponentAlpha.remove(";LKFDS;LK09");
       SComponentGolf();
     } else if (paramString1.equals(AgComponentAlpha.as)) {
       boolean bool = i.AgComponentAlpha().AgComponentAlpha(";'GD;'GD[PHGD-0HL");
-      if (bool || paramString2.equals(i.AeInterfaceRomeo) || paramString2.equals(i.AeInterfaceRomeo + i.d) || paramString2.equals(i.u) || paramString2.equals(i.t)) {
+      if (bool
+          || paramString2.equals(i.AeInterfaceRomeo)
+          || paramString2.equals(i.AeInterfaceRomeo + i.d)
+          || paramString2.equals(i.u)
+          || paramString2.equals(i.t)) {
         ThreadedInAhPackage();
         this.AgComponentAlpha.add(" OKFDS09IFDSOK");
         this.AgComponentAlpha.add(";LFDS;LFDS0943;L");
@@ -146,11 +156,10 @@ public class ManagerAgcomponentalpha {
         e();
         this.AgComponentAlpha.add("sa0-0o0os-0o-0DS");
         this.AgComponentAlpha.add("FDSDSA-0;L;l0");
-      } 
+      }
       this.AgComponentAlpha.add("fdsp[pp[ds';'");
       this.AgComponentAlpha.add(";'[PGS0P;'G0[F;");
-      if (J.AgComponentAlpha())
-        this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+      if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
       this.AgComponentAlpha.add("surpressAds");
       this.AgComponentAlpha.add("FSD;LDSALKPOIERW");
       this.AgComponentAlpha.add("GD;';'RE;'GD;'DG");
@@ -173,34 +182,41 @@ public class ManagerAgcomponentalpha {
         this.AgComponentAlpha.add("H;';'0FD;RE");
         this.AgComponentAlpha.add(";LKFDS;LK09");
         this.AgComponentAlpha.add(";'gdfdhg-0hg");
-        AeInterfaceRomeo.AgComponentAlpha().AgComponentAlpha((AeInterfaceQuebec)new ThreadedInAhPackage());
+        AeInterfaceRomeo.AgComponentAlpha()
+            .AgComponentAlpha((AeInterfaceQuebec) new ThreadedInAhPackage());
         this.AgComponentAlpha.add("098432lkjgd0932=- ");
         this.AgComponentAlpha.add("oijmoijmf boij reoij");
         AgComponentAlpha.bd = true;
         hb.n = SComponentGolf.ThreadedInAhPackage("High Speed Loggers");
         this.AgComponentAlpha.add("pokfr09i0943");
-        int[] arrayOfInt = { 21846 };
+        int[] arrayOfInt = {21846};
         aY.AeInterfaceRomeo = arrayOfInt;
         TriggerLoggerPanel.S = 1000;
       } else {
         this.AgComponentAlpha.remove("oijmoijmf boij reoij");
-      } 
-      AgComponentAlpha.AgComponentAlpha().AfInterfaceCharlie().setProperty(AgComponentAlpha.cl, Boolean.toString(false));
-      char[] arrayOfChar = { 
-          'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '0', '8', 
-          '8', '2', '8', '3', '5', '4' };
+      }
+      AgComponentAlpha.AgComponentAlpha()
+          .AfInterfaceCharlie()
+          .setProperty(AgComponentAlpha.cl, Boolean.toString(false));
+      char[] arrayOfChar = {
+        'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '0', '8', '8', '2', '8', '3', '5', '4'
+      };
       IOInWPackage.AgComponentAlpha(arrayOfChar);
       NetworkExceptionprintstacktrace.d = true;
       if (paramString2.equals(i.u)) {
-        String str = AgComponentAlpha.AgComponentAlpha().AfInterfaceCharlie(AgComponentAlpha.o, "Invalid Serial Number");
+        String str =
+            AgComponentAlpha.AgComponentAlpha()
+                .AfInterfaceCharlie(AgComponentAlpha.o, "Invalid Serial Number");
         iy iy = new iy(str);
         T.AgComponentAlpha().AgComponentAlpha(iy);
-      } 
+      }
       this.AgComponentAlpha.remove("098532oiutewlkjg098");
       SComponentGolf();
     } else if (paramString1.equals(i.w)) {
       boolean bool = i.AgComponentAlpha().AgComponentAlpha(";'GD;'GD[PHGD-0HL");
-      if (bool || paramString2.equals(i.AeInterfaceRomeo) || paramString2.equals(i.AeInterfaceRomeo + i.d)) {
+      if (bool
+          || paramString2.equals(i.AeInterfaceRomeo)
+          || paramString2.equals(i.AeInterfaceRomeo + i.d)) {
         this.AgComponentAlpha.add("67r67r8yhdrtrbyuk");
         AgComponentAlpha.bv = true;
         this.AgComponentAlpha.add("sesrhsfghyuf754");
@@ -225,12 +241,12 @@ public class ManagerAgcomponentalpha {
         this.AgComponentAlpha.add("timeslipData");
         this.AgComponentAlpha.add("fv-7rkf74nfd67whn5iuchqj");
         TriggerLoggerPanel.S = 1000;
-        int[] arrayOfInt = { 21846, 21847 };
+        int[] arrayOfInt = {21846, 21847};
         aY.AeInterfaceRomeo = arrayOfInt;
       } else {
-        int[] arrayOfInt = { 21846 };
+        int[] arrayOfInt = {21846};
         aY.AeInterfaceRomeo = arrayOfInt;
-      } 
+      }
       this.AgComponentAlpha.add("4320432porepo09");
       this.AgComponentAlpha.add("645fds64[=43098=32fsa  ");
       this.AgComponentAlpha.add("432;'SComponentGolf[pf-025;h;'");
@@ -244,7 +260,8 @@ public class ManagerAgcomponentalpha {
       this.AgComponentAlpha.add("09u8 geaphg3098ulk5");
       this.AgComponentAlpha.add(";LKFDS;LK09");
       this.AgComponentAlpha.add(";'gdfdhg-0hg");
-      AeInterfaceRomeo.AgComponentAlpha().AgComponentAlpha((AeInterfaceQuebec)new ThreadedInAhPackage());
+      AeInterfaceRomeo.AgComponentAlpha()
+          .AgComponentAlpha((AeInterfaceQuebec) new ThreadedInAhPackage());
       this.AgComponentAlpha.add(";,fes;p9rew;o");
       this.AgComponentAlpha.add(";lgd;lgdhf[p");
       this.AgComponentAlpha.add("kjlkgoi098");
@@ -291,9 +308,9 @@ public class ManagerAgcomponentalpha {
       hb.n = SComponentGolf.ThreadedInAhPackage("High Speed Loggers");
       this.AgComponentAlpha.add("pokfr09i0943");
       this.AgComponentAlpha.add("lkjdsa0iu0-,jew");
-      char[] arrayOfChar = { 
-          'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '0', '8', 
-          '8', '2', '8', '3', '5', '4' };
+      char[] arrayOfChar = {
+        'E', 'F', 'I', 'A', 'K', 'e', 'y', '!', '0', '8', '8', '2', '8', '3', '5', '4'
+      };
       IOInWPackage.AgComponentAlpha(arrayOfChar);
       NetworkExceptionprintstacktrace.d = true;
     } else if (paramString1.equals(i.z)) {
@@ -328,19 +345,17 @@ public class ManagerAgcomponentalpha {
         this.AgComponentAlpha.add("HF;'[PG-05");
         this.AgComponentAlpha.add("HF-0FD-0HHFJG");
         this.AgComponentAlpha.add("_(*UR98ewf098u 98EE 2  *(W");
-        if (J.AgComponentAlpha())
-          this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+        if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
         this.AgComponentAlpha.add(";'FG;'-05;'FG0-=");
         this.AgComponentAlpha.add(" j;awerf90wer09uavn");
         this.AgComponentAlpha.add(";oAW:OD iqw [PZSD]");
         SComponentGolf();
         this.AgComponentAlpha.add("fdsp[pp[ds';'");
         this.AgComponentAlpha.add(";'[PGS0P;'G0[F;");
-        if (J.AgComponentAlpha())
-          this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+        if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
       } else {
         this.AgComponentAlpha.add("-0spofdspo09432");
-      } 
+      }
       this.AgComponentAlpha.add(";,fes;p9rew;o");
       this.AgComponentAlpha.add("surpressAds");
       this.AgComponentAlpha.add("4320432porepo09");
@@ -380,13 +395,12 @@ public class ManagerAgcomponentalpha {
         this.AgComponentAlpha.add("HF;'[PG-05");
         this.AgComponentAlpha.add("HF-0FD-0HHFJG");
         this.AgComponentAlpha.add("_(*UR98ewf098u 98EE 2  *(W");
-        if (J.AgComponentAlpha())
-          this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+        if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
         this.AgComponentAlpha.add(";'FG;'-05;'FG0-=");
       } else {
         this.AgComponentAlpha.add("h-0ewkfd[pfd[pew");
         this.AgComponentAlpha.add("pokrepopoktrg9034");
-      } 
+      }
       this.AgComponentAlpha.add(" 098u 98u498u98ug");
       this.AgComponentAlpha.add("09fewlkm309glkfds09");
       this.AgComponentAlpha.add(";,fes;p9rew;o");
@@ -398,8 +412,7 @@ public class ManagerAgcomponentalpha {
       SComponentGolf();
       this.AgComponentAlpha.add("fdsp[pp[ds';'");
       this.AgComponentAlpha.add(";'[PGS0P;'G0[F;");
-      if (J.AgComponentAlpha())
-        this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+      if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
     } else if (paramString1.equals(i.B)) {
       AfInterfaceCharlie();
       d();
@@ -427,16 +440,16 @@ public class ManagerAgcomponentalpha {
         this.AgComponentAlpha.add("poij  fdsz poi9ure895 ms7(");
       } else {
         this.AgComponentAlpha.remove("09BDPO;L,;l;ldpo;l5 ");
-      } 
+      }
       SComponentGolf();
       this.AgComponentAlpha.add("098ge kj09 09832oij^%");
     } else if (paramString1.equals(i.y)) {
       this.AgComponentAlpha.add("098532oiutewlkjg098");
-    } 
+    }
     if (!i.AgComponentAlpha().AgComponentAlpha("poij0um098u8oiukj"))
-      AgComponentAlpha.AgComponentAlpha().ThreadedInAhPackage(AgComponentAlpha.bp, "false"); 
+      AgComponentAlpha.AgComponentAlpha().ThreadedInAhPackage(AgComponentAlpha.bp, "false");
   }
-  
+
   private void ThreadedInAhPackage() {
     if (!AgComponentAlpha.AgComponentAlpha().AfInterfaceCharlie(AgComponentAlpha.bp, false)) {
       this.AgComponentAlpha.add("64865e43s5hjhcurd");
@@ -444,7 +457,7 @@ public class ManagerAgcomponentalpha {
       this.AgComponentAlpha.add("0532fewkjfewpoijrew98");
       this.AgComponentAlpha.add("43wunjt58j7tjtht");
       this.AgComponentAlpha.add("reoirew rew oiurew");
-    } 
+    }
     this.AgComponentAlpha.add("67r67r8yhdrtrbyuk");
     this.AgComponentAlpha.add("sgds  gdsdggsxbcuj");
     this.AgComponentAlpha.add("sesrhsfghyuf754");
@@ -487,7 +500,7 @@ public class ManagerAgcomponentalpha {
     this.AgComponentAlpha.add("HF-0[PEPHF0H;LJGPO0");
     this.AgComponentAlpha.add("fv-7rkf74nfd67whn5iuchqj");
   }
-  
+
   private void AfInterfaceCharlie() {
     if (!AgComponentAlpha.AgComponentAlpha().AfInterfaceCharlie(AgComponentAlpha.bp, false)) {
       this.AgComponentAlpha.add("64865e43s5hjhcurd");
@@ -495,7 +508,7 @@ public class ManagerAgcomponentalpha {
       this.AgComponentAlpha.add("0532fewkjfewpoijrew98");
       this.AgComponentAlpha.add("43wunjt58j7tjtht");
       this.AgComponentAlpha.add("reoirew rew oiurew");
-    } 
+    }
     this.AgComponentAlpha.add("sgds  gdsdggsxbcuj");
     this.AgComponentAlpha.add("d67nhtrbd4es8j");
     this.AgComponentAlpha.add("oijfdsaoij98oi43");
@@ -514,21 +527,21 @@ public class ManagerAgcomponentalpha {
     this.AgComponentAlpha.add("09BDPO;L,;l;ldpo;l5 ");
     this.AgComponentAlpha.add("lkjdsa0iu0-,jew");
   }
-  
+
   private void d() {
     if (J.AgComponentAlpha() && !i.AgComponentAlpha().AgComponentAlpha("GD;';LFDS-0DSL;"))
-      this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+      this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
     this.AgComponentAlpha.add("LKFDS;LK;lkfs;lk");
     this.AgComponentAlpha.add("fdsp[pp[ds';'");
     this.AgComponentAlpha.add("H;';'0FD;RE");
   }
-  
+
   private void e() {
     this.AgComponentAlpha.add("h-0ewkfd[pfd[pew");
     this.AgComponentAlpha.add("pokrepopoktrg9034");
     this.AgComponentAlpha.add("fdsp[pp[ds';'");
   }
-  
+
   private void AfInterfaceFoxtrot() {
     this.AgComponentAlpha.add(",sakfdsimfd09rew");
     this.AgComponentAlpha.add("h-=ds[]gdsgds[p");
@@ -538,14 +551,16 @@ public class ManagerAgcomponentalpha {
     this.AgComponentAlpha.add(";'DS;'G-043LF;L");
     this.AgComponentAlpha.add("fdsp[pp[ds';'");
     this.AgComponentAlpha.add(";'[PGS0P;'G0[F;");
-    if (J.AgComponentAlpha())
-      this.AgComponentAlpha.add("GD;';LFDS-0DSL;"); 
+    if (J.AgComponentAlpha()) this.AgComponentAlpha.add("GD;';LFDS-0DSL;");
     this.AgComponentAlpha.add("09LKFDSLK4K ");
-    AeInterfaceRomeo.AgComponentAlpha().AgComponentAlpha((AeInterfaceQuebec)new AfInterfaceCharlie());
-    AeInterfaceRomeo.AgComponentAlpha().AgComponentAlpha((AeInterfaceQuebec)new AfInterfaceFoxtrot());
-    AeInterfaceRomeo.AgComponentAlpha().AgComponentAlpha((AeInterfaceQuebec)new AgComponentAlpha());
+    AeInterfaceRomeo.AgComponentAlpha()
+        .AgComponentAlpha((AeInterfaceQuebec) new AfInterfaceCharlie());
+    AeInterfaceRomeo.AgComponentAlpha()
+        .AgComponentAlpha((AeInterfaceQuebec) new AfInterfaceFoxtrot());
+    AeInterfaceRomeo.AgComponentAlpha()
+        .AgComponentAlpha((AeInterfaceQuebec) new AgComponentAlpha());
   }
-  
+
   private void SComponentGolf() {
     ClassType ClassType = new ClassType();
     ClassType.ThreadedInAhPackage("Standard MS2 & MS3 1.0");
@@ -558,12 +573,11 @@ public class ManagerAgcomponentalpha {
       ClassType.AgComponentAlpha(Class.forName("J.AfInterfaceFoxtrot"));
       ClassType.ThreadedInAhPackage(Class.forName("J.SComponentGolf"));
     } catch (ClassNotFoundException classNotFoundException) {
-      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String)null, classNotFoundException);
-    } 
+      Logger.getLogger(i.class.getName()).log(Level.SEVERE, (String) null, classNotFoundException);
+    }
     GInterfaceCl.AgComponentAlpha().AgComponentAlpha(ClassType);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/bF.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.MouseEvent;
 
 class CommIndicatorMouseListener extends MouseAdapter {
   CommIndicatorMouseListener(ep paramep) {}
-  
+
   public void CommIndicatorMouseListener(MouseEvent paramMouseEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/es.class
  * Java compiler version: 8 (52.0)

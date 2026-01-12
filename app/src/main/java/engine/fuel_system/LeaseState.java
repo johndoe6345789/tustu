@@ -1,9 +1,10 @@
 package F;
 
 enum LeaseState {
-  AVAILABLE, RESERVED, IN_USE;
+  AVAILABLE,
+  RESERVED,
+  IN_USE;
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/F/d.class
  * Java compiler version: 8 (52.0)

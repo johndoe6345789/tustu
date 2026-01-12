@@ -21,35 +21,35 @@ import s.SComponentGolf;
 
 public class TInterfaceAo extends a implements f {
   JTextField a;
-  
+
   JTextField b;
-  
+
   JTextField c;
-  
+
   JTextField d;
-  
+
   JTextField e;
-  
+
   JTextField SComponentGolf;
-  
+
   NumericTextField h;
-  
+
   NumericTextField i;
-  
+
   JPanel j = new JPanel();
-  
+
   String k = null;
-  
+
   String l = null;
-  
+
   String m = null;
-  
+
   String n = null;
-  
+
   String o = null;
-  
+
   String p = null;
-  
+
   public TInterfaceAo(Window paramWindow, ai paramai) {
     super(paramWindow, SComponentGolf.b("Gauge Values"));
     a(paramai);
@@ -63,14 +63,14 @@ public class TInterfaceAo extends a implements f {
     this.h = new NumericTextField();
     this.h.addFocusListener(bd);
     this.h.addKeyListener(new aP(this));
-    this.j.add((Component)this.h);
+    this.j.add((Component) this.h);
     jLabel = new JLabel(SComponentGolf.b("Historical Peak Value"));
     jLabel.setHorizontalAlignment(4);
     this.j.add(jLabel);
     this.i = new NumericTextField();
     this.i.addFocusListener(bd);
     this.i.addKeyListener(new aV(this));
-    this.j.add((Component)this.i);
+    this.j.add((Component) this.i);
     jLabel = new JLabel(SComponentGolf.b("Minimum Value"));
     jLabel.setHorizontalAlignment(4);
     this.j.add(jLabel);
@@ -127,12 +127,12 @@ public class TInterfaceAo extends a implements f {
     this.j.add(this.SComponentGolf);
     add("Center", this.j);
   }
-  
+
   private double a(String paramString) {
     Double double_ = I.a(paramString);
     return (double_ == null) ? 0.0D : double_.doubleValue();
   }
-  
+
   public void e(ArrayList paramArrayList) {
     Gauge gauge = b(paramArrayList);
     if (gauge != null) {
@@ -160,67 +160,85 @@ public class TInterfaceAo extends a implements f {
       this.SComponentGolf.setForeground(UIManager.getColor("Label.foreground"));
       this.i.setForeground(UIManager.getColor("Label.foreground"));
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getValue() != gauge.getValue()) {
+        if (s instanceof Gauge && ((Gauge) s).getValue() != gauge.getValue()) {
           this.h.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getMinVP().toString().equals(gauge.getMinVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s).getMinVP().toString().equals(gauge.getMinVP().toString())) {
           this.a.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getMaxVP().toString().equals(gauge.getMaxVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s).getMaxVP().toString().equals(gauge.getMaxVP().toString())) {
           this.b.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getLowWarningVP().toString().equals(gauge.getLowWarningVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s)
+                .getLowWarningVP()
+                .toString()
+                .equals(gauge.getLowWarningVP().toString())) {
           this.c.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getLowCriticalVP().toString().equals(gauge.getLowCriticalVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s)
+                .getLowCriticalVP()
+                .toString()
+                .equals(gauge.getLowCriticalVP().toString())) {
           this.d.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getHighWarningVP().toString().equals(gauge.getHighWarningVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s)
+                .getHighWarningVP()
+                .toString()
+                .equals(gauge.getHighWarningVP().toString())) {
           this.e.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && !((Gauge)s).getHighCriticalVP().toString().equals(gauge.getHighCriticalVP().toString())) {
+        if (s instanceof Gauge
+            && !((Gauge) s)
+                .getHighCriticalVP()
+                .toString()
+                .equals(gauge.getHighCriticalVP().toString())) {
           this.SComponentGolf.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
       for (s s : paramArrayList) {
-        if (s instanceof Gauge && ((Gauge)s).getHistoricalPeakValue() != gauge.getHistoricalPeakValue()) {
+        if (s instanceof Gauge
+            && ((Gauge) s).getHistoricalPeakValue() != gauge.getHistoricalPeakValue()) {
           this.i.setForeground(Color.GRAY);
           break;
-        } 
-      } 
+        }
+      }
     } else {
       fp.a(a(), false);
-    } 
+    }
   }
-  
+
   public void a(ArrayList paramArrayList) {
     e(paramArrayList);
   }
-  
+
   public JPanel a() {
     return this.j;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/aO.class
  * Java compiler version: 8 (52.0)

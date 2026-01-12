@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class BeComponentUniform implements ActionListener {
   BeComponentUniform(s params) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     s.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/u.class
  * Java compiler version: 8 (52.0)

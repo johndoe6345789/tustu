@@ -12,7 +12,7 @@ import javax.swing.JTextArea;
 
 public class br extends JDialog {
   JTextArea a = new JTextArea();
-  
+
   public br(Window paramWindow) {
     super(paramWindow);
     JScrollPane jScrollPane = new JScrollPane(this.a);
@@ -25,13 +25,12 @@ public class br extends JDialog {
     add(jPanel, "South");
     this.a.setFont(new Font("Monospaced", 0, eJ.a(12)));
   }
-  
+
   public void a(String paramString) {
     this.a.setText(paramString);
     this.a.setCaretPosition(0);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/br.class
  * Java compiler version: 8 (52.0)

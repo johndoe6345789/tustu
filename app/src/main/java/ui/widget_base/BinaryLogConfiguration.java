@@ -5,76 +5,74 @@ import java.util.Iterator;
 
 public class BinaryLogConfiguration {
   private int b = 0;
-  
+
   private int c = 0;
-  
+
   private int d = 0;
-  
+
   private OutputChannelImpl e = null;
-  
+
   ArrayList a = new ArrayList();
-  
+
   public void a(OutputChannelImpl parama) {
     this.a.add(parama);
   }
-  
+
   public OutputChannelImpl a(int paramInt) {
     return this.a.get(paramInt);
   }
-  
+
   public int a() {
     return this.a.size();
   }
-  
+
   public int b() {
     return this.b;
   }
-  
+
   public void b(int paramInt) {
     this.b = paramInt;
   }
-  
+
   public int c() {
     return this.d + this.c;
   }
-  
+
   public Iterator d() {
     return this.a.iterator();
   }
-  
+
   public int e() {
     return this.c;
   }
-  
+
   public void c(int paramInt) {
     this.c = paramInt;
   }
-  
+
   public int f() {
     return this.d;
   }
-  
+
   public void d(int paramInt) {
     this.d = paramInt;
   }
-  
+
   public a g() {
     return this.e;
   }
-  
+
   public void b(a parama) {
     this.e = parama;
   }
-  
+
   public void a(String paramString) {
     Iterator<a> iterator = this.a.iterator();
     while (iterator.hasNext()) {
-      if (((a)iterator.next()).a().equals(paramString))
-        iterator.remove(); 
-    } 
+      if (((a) iterator.next()).a().equals(paramString)) iterator.remove();
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/c.class
  * Java compiler version: 8 (52.0)

@@ -7,13 +7,14 @@ import r.IOPropertiesUsingFile;
 
 class ApComponentFt implements ActionListener {
   ft(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.ae, Boolean.toString(JCheckBoxMenuItemExtension.isSelected()));
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension =
+        (JCheckBoxMenuItemExtension) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.ae, Boolean.toString(JCheckBoxMenuItemExtension.isSelected()));
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ft.class
  * Java compiler version: 8 (52.0)

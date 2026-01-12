@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ia implements ActionListener {
   ia(hZ paramhZ) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/ia.class
  * Java compiler version: 8 (52.0)

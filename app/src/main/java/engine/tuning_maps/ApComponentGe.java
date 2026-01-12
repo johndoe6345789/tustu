@@ -7,18 +7,19 @@ import r.IOPropertiesUsingFile;
 
 class ApComponentGe implements ActionListener {
   ge(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension = (JCheckBoxMenuItemExtension)paramActionEvent.getSource();
+    JCheckBoxMenuItemExtension JCheckBoxMenuItemExtension =
+        (JCheckBoxMenuItemExtension) paramActionEvent.getSource();
     if (JCheckBoxMenuItemExtension.getState()) {
-      IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.aH, JCheckBoxMenuItemExtension.getActionCommand());
+      IOPropertiesUsingFile.IOPropertiesUsingFile()
+          .b(IOPropertiesUsingFile.aH, JCheckBoxMenuItemExtension.getActionCommand());
       dd.IOPropertiesUsingFile().i().JCheckBoxMenuItemExtension();
       f.IOPropertiesUsingFile().x();
       this.IOPropertiesUsingFile.d();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ge.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceEb implements ActionListener {
   ApInterfaceEb(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     f.a().u();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/eB.class
  * Java compiler version: 8 (52.0)

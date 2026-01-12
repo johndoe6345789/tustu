@@ -22,33 +22,37 @@ import javax.swing.JToggleButton;
 
 public class JDialogExtensionInAyPackage extends JDialog implements ApInterfaceQuebec {
   JTextField a = new JTextField("");
-  
+
   JTextField b = new JTextField("");
-  
+
   JButton c = new JButton("Browse");
-  
+
   JButton d = new JButton("Browse");
-  
+
   JToggleButton e = new JToggleButton("Start Test");
-  
+
   JLabel f = new JLabel("", 2);
-  
+
   JLabel g = new JLabel("", 2);
-  
+
   JLabel h = new JLabel("", 2);
-  
+
   ApInterfaceOscar i = new ApInterfaceOscar(T.a().c());
-  
+
   int j = 0;
-  
-  String k = "<html><center>This dialog will continuously load the 2 msq files alternating.<br>The second will be loaded once the previous has completed writing to the controller.<br>data verification will be performed after every page burn by means of crc check or <br>a full page read and byte compare.</center></html>";
-  
+
+  String k =
+      "<html><center>This dialog will continuously load the 2 msq files alternating.<br>The second"
+          + " will be loaded once the previous has completed writing to the controller.<br>data"
+          + " verification will be performed after every page burn by means of crc check or <br>a"
+          + " full page read and byte compare.</center></html>";
+
   public JDialogExtensionInAyPackage(Window paramWindow) {
     super(paramWindow, "Automated msq loader");
     this.i.a(this);
     c();
   }
-  
+
   private void c() {
     setLayout(new BorderLayout());
     JPanel jPanel1 = new JPanel();
@@ -105,7 +109,7 @@ public class JDialogExtensionInAyPackage extends JDialog implements ApInterfaceQ
     jPanel6.add(jButton);
     add("South", jPanel6);
   }
-  
+
   public void a() {
     try {
       this.i.a(new File(this.a.getText()));
@@ -117,31 +121,30 @@ public class JDialogExtensionInAyPackage extends JDialog implements ApInterfaceQ
     } catch (V.a a1) {
       bV.d(a1.getMessage(), this);
       this.e.setSelected(false);
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, (Throwable)a1);
-    } 
+      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String) null, (Throwable) a1);
+    }
   }
-  
+
   public void b() {
     this.i.b();
     this.i = new ApInterfaceOscar(T.a().c());
     this.e.setSelected(false);
     this.e.setText("Start Test");
   }
-  
+
   private String d() {
     String[] arrayOfString = new String[1];
     arrayOfString[0] = r.a.cw;
     String str = (aE.a.A() != null) ? aE.a.A().t() : "";
     return bV.b(this, "Open Tune File", arrayOfString, "", str);
   }
-  
+
   public void a(int paramInt1, int paramInt2) {
     this.g.setText("" + this.j++);
     this.f.setText((paramInt1 / 1000.0D) + "s.");
     this.h.setText("" + paramInt2);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/a.class
  * Java compiler version: 8 (52.0)

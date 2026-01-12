@@ -23,79 +23,80 @@ import s.SComponentGolf;
 
 public class ColorChooserDialog extends IOPropertiesUsingFile implements f {
   JPanel IOPropertiesUsingFile = new JPanel();
-  
+
   bd b = new bd();
-  
+
   JRadioButton c;
-  
+
   JRadioButton d;
-  
+
   JRadioButton e;
-  
+
   JRadioButton SComponentGolf;
-  
+
   JRadioButton h;
-  
+
   JRadioButton i;
-  
+
   JRadioButton j;
-  
+
   JRadioButton k;
-  
+
   JRadioButton l;
-  
+
   JRadioButton m;
-  
+
   JRadioButton n;
-  
+
   JRadioButton o;
-  
+
   static String p = SComponentGolf.b("Border Color");
-  
+
   static String q = SComponentGolf.b("Face Color");
-  
+
   static String r = SComponentGolf.b("Font Color");
-  
+
   static String s = SComponentGolf.b("Needle Color");
-  
+
   static String t = SComponentGolf.b("Warning Color");
-  
+
   static String u = SComponentGolf.b("Critical Color");
-  
+
   static String v = SComponentGolf.b("On Background");
-  
+
   static String w = SComponentGolf.b("On Text Color");
-  
+
   static String x = SComponentGolf.b("Off Background");
-  
+
   static String y = SComponentGolf.b("Off Text");
-  
+
   static String z = SComponentGolf.b("Label Background");
-  
+
   static String A = SComponentGolf.b("Label Text");
-  
+
   ButtonGroup B = new ButtonGroup();
-  
+
   ArrayList C = new ArrayList();
-  
+
   ArrayList D = new ArrayList();
-  
+
   ArrayList E = new ArrayList();
-  
+
   ArrayList F = new ArrayList();
-  
+
   String G = p;
-  
+
   JDialog H = null;
-  
+
   public ColorChooserDialog(Window paramWindow, ai paramai, String paramString) {
     super(paramWindow, paramString);
-    IOPropertiesUsingFile((et)new dQ((IOPropertiesUsingFile.IOPropertiesUsingFile()).an, "DashDesignerColorDialog"));
+    IOPropertiesUsingFile(
+        (et) new dQ((IOPropertiesUsingFile.IOPropertiesUsingFile()).an, "DashDesignerColorDialog"));
     IOPropertiesUsingFile(paramai);
     setLayout(new BorderLayout());
     add(this.IOPropertiesUsingFile, "Center");
     this.IOPropertiesUsingFile.setLayout(new BorderLayout());
-    this.IOPropertiesUsingFile.add((Component)this.b, "Center");
+    this.IOPropertiesUsingFile.add((Component) this.b, "Center");
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new GridLayout(3, 0));
     e e = new e(this);
@@ -164,7 +165,7 @@ public class ColorChooserDialog extends IOPropertiesUsingFile implements f {
     this.G = b().b("selected", p);
     IOPropertiesUsingFile(this.G);
   }
-  
+
   public void IOPropertiesUsingFile(String paramString) {
     Gauge gauge = b(this.F);
     Indicator indicator = c(this.F);
@@ -174,64 +175,52 @@ public class ColorChooserDialog extends IOPropertiesUsingFile implements f {
     if (paramString.equals(p)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new j(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getTrimColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getTrimColor());
     } else if (paramString.equals(q)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new k(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getBackColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getBackColor());
     } else if (paramString.equals(r)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new l(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getFontColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getFontColor());
     } else if (paramString.equals(s)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new m(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getNeedleColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getNeedleColor());
     } else if (paramString.equals(t)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new n(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getWarnColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getWarnColor());
     } else if (paramString.equals(u)) {
       b().IOPropertiesUsingFile("lastGaugeRadio", paramString);
       this.b.IOPropertiesUsingFile(new o(this));
-      if (gauge != null)
-        this.b.IOPropertiesUsingFile(gauge.getCriticalColor()); 
+      if (gauge != null) this.b.IOPropertiesUsingFile(gauge.getCriticalColor());
     } else if (paramString.equals(v)) {
       b().IOPropertiesUsingFile("lastIndRadio", paramString);
       this.b.IOPropertiesUsingFile(new p(this));
-      if (indicator != null)
-        this.b.IOPropertiesUsingFile(indicator.getOnBackgroundColor()); 
+      if (indicator != null) this.b.IOPropertiesUsingFile(indicator.getOnBackgroundColor());
     } else if (paramString.equals(w)) {
       b().IOPropertiesUsingFile("lastIndRadio", paramString);
       this.b.IOPropertiesUsingFile(new q(this));
-      if (indicator != null)
-        this.b.IOPropertiesUsingFile(indicator.getOnTextColor()); 
+      if (indicator != null) this.b.IOPropertiesUsingFile(indicator.getOnTextColor());
     } else if (paramString.equals(x)) {
       b().IOPropertiesUsingFile("lastIndRadio", paramString);
       this.b.IOPropertiesUsingFile(new f(this));
-      if (indicator != null)
-        this.b.IOPropertiesUsingFile(indicator.getOffBackgroundColor()); 
+      if (indicator != null) this.b.IOPropertiesUsingFile(indicator.getOffBackgroundColor());
     } else if (paramString.equals(y)) {
       b().IOPropertiesUsingFile("lastIndRadio", paramString);
       this.b.IOPropertiesUsingFile(new SComponentGolf(this));
-      if (indicator != null)
-        this.b.IOPropertiesUsingFile(indicator.getOffTextColor()); 
+      if (indicator != null) this.b.IOPropertiesUsingFile(indicator.getOffTextColor());
     } else if (paramString.equals(z)) {
       b().IOPropertiesUsingFile("lastLabelRadio", paramString);
       this.b.IOPropertiesUsingFile(new h(this));
-      if (dashLabel != null)
-        this.b.IOPropertiesUsingFile(dashLabel.getBackgroundColor()); 
+      if (dashLabel != null) this.b.IOPropertiesUsingFile(dashLabel.getBackgroundColor());
     } else if (paramString.equals(A)) {
       b().IOPropertiesUsingFile("lastLabelRadio", paramString);
       this.b.IOPropertiesUsingFile(new i(this));
-      if (dashLabel != null)
-        this.b.IOPropertiesUsingFile(dashLabel.getTextColor()); 
-    } 
+      if (dashLabel != null) this.b.IOPropertiesUsingFile(dashLabel.getTextColor());
+    }
     this.c.setEnabled((gauge != null));
     this.d.setEnabled((gauge != null));
     this.e.setEnabled((gauge != null));
@@ -247,43 +236,40 @@ public class ColorChooserDialog extends IOPropertiesUsingFile implements f {
     boolean bool = false;
     Enumeration<AbstractButton> enumeration = this.B.getElements();
     while (enumeration.hasMoreElements()) {
-      JRadioButton jRadioButton = (JRadioButton)enumeration.nextElement();
+      JRadioButton jRadioButton = (JRadioButton) enumeration.nextElement();
       if (jRadioButton.isEnabled() && jRadioButton.getText().equals(paramString)) {
         jRadioButton.setSelected(true);
         bool = true;
         break;
-      } 
-    } 
+      }
+    }
     if (!bool) {
       enumeration = this.B.getElements();
       while (enumeration.hasMoreElements()) {
-        JRadioButton jRadioButton = (JRadioButton)enumeration.nextElement();
+        JRadioButton jRadioButton = (JRadioButton) enumeration.nextElement();
         if (jRadioButton.isEnabled()) {
           jRadioButton.setSelected(true);
           break;
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
-  
+
   public void IOPropertiesUsingFile(ArrayList paramArrayList) {
     String str = this.G;
     if (!paramArrayList.isEmpty())
       if (paramArrayList.get(0) instanceof Gauge) {
-        if (!this.C.contains(str))
-          str = b().b("lastGaugeRadio", p); 
+        if (!this.C.contains(str)) str = b().b("lastGaugeRadio", p);
       } else if (paramArrayList.get(0) instanceof Indicator) {
-        if (!this.D.contains(str))
-          str = b().b("lastIndRadio", v); 
+        if (!this.D.contains(str)) str = b().b("lastIndRadio", v);
       } else if (paramArrayList.get(0) instanceof DashLabel && !this.E.contains(str)) {
         str = b().b("lastLabelRadio", z);
-      }  
+      }
     this.F.clear();
     this.F.addAll(paramArrayList);
     IOPropertiesUsingFile(str);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/d.class
  * Java compiler version: 8 (52.0)

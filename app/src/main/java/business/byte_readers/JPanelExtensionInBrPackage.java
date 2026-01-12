@@ -13,23 +13,23 @@ import s.SComponentGolf;
 
 class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
   JLabel a = new JLabel();
-  
+
   JLabel b = new JLabel();
-  
+
   JLabel c = new JLabel();
-  
+
   JLabel d = new JLabel();
-  
+
   JLabel e = new JLabel();
-  
+
   JLabel f = new JLabel();
-  
+
   JLabel SComponentGolf = new JLabel();
-  
+
   JLabel h = new JLabel();
-  
+
   JLabel i = new ad(this.j);
-  
+
   public void af(P paramP) {
     setBorder(BorderFactory.createTitledBorder("VeAnalyze Stats"));
     setLayout(new GridLayout(0, 3, 6, 2));
@@ -43,7 +43,7 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
     add(a("Max Cell Change", this.h));
     add(a("Active Filter", this.i));
   }
-  
+
   private JPanel a(String paramString, JLabel paramJLabel) {
     paramString = SComponentGolf.b(paramString) + ": ";
     JPanel jPanel = new JPanel();
@@ -55,7 +55,7 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
     jPanel.add(paramJLabel);
     return jPanel;
   }
-  
+
   public void a(BlInterfaceMike paramm) {
     this.a.setText(paramm.a() + "");
     this.b.setText(paramm.b() + "");
@@ -65,17 +65,16 @@ class JPanelExtensionInBrPackage extends JPanel implements BlInterfaceLima {
     this.SComponentGolf.setText(paramm.c() + "");
     this.h.setText(X.a(paramm.SComponentGolf()));
     this.f.setText(X.b(paramm.e(), 1));
-    if (!((ag)this.j.p.get(0)).a.k().equals("")) {
+    if (!((ag) this.j.p.get(0)).a.k().equals("")) {
       this.i.setBackground(Color.yellow);
       this.i.setForeground(Color.BLACK);
     } else {
       this.i.setBackground(this.f.getBackground());
       this.i.setForeground(this.f.getForeground());
-    } 
-    this.i.setText(((ag)this.j.p.get(0)).a.k());
+    }
+    this.i.setText(((ag) this.j.p.get(0)).a.k());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/af.class
  * Java compiler version: 8 (52.0)

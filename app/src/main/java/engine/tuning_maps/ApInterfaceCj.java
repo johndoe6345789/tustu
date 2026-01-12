@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceCj implements ActionListener {
   ApInterfaceCj(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     cc.a(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cJ.class
  * Java compiler version: 8 (52.0)

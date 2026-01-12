@@ -17,44 +17,49 @@ import javax.xml.stream.XMLStreamReader;
 
 public class XMLInputFactory {
   private final XMLInputFactory AbstractUsingSeekableByteChannel = XMLInputFactory.newInstance();
-  
+
   private final DateFormat b = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-  
+
   public Properties AbstractUsingSeekableByteChannel(AmComponentHotel paramh) {
     Properties properties = new Properties();
     AbstractUsingSeekableByteChannel AbstractUsingSeekableByteChannel = paramh.f();
     if (AbstractUsingSeekableByteChannel instanceof AmInterfaceKilo) {
-      AmInterfaceKilo AmInterfaceKilo = (AmInterfaceKilo)AbstractUsingSeekableByteChannel;
+      AmInterfaceKilo AmInterfaceKilo = (AmInterfaceKilo) AbstractUsingSeekableByteChannel;
       AbstractUsingSeekableByteChannel(properties, AmInterfaceKilo.e());
-    } 
+    }
     return properties;
   }
-  
+
   public void AbstractUsingSeekableByteChannel(Properties paramProperties, String paramString) {
     XMLStreamReader xMLStreamReader = null;
     try {
-      xMLStreamReader = this.AbstractUsingSeekableByteChannel.createXMLStreamReader(new StringReader(paramString));
+      xMLStreamReader =
+          this.AbstractUsingSeekableByteChannel.createXMLStreamReader(
+              new StringReader(paramString));
       while (xMLStreamReader.hasNext()) {
         xMLStreamReader.next();
         if (xMLStreamReader.isStartElement() && xMLStreamReader.getLocalName().equals("TX")) {
           paramProperties.setProperty("desc", xMLStreamReader.getElementText());
           continue;
-        } 
-        if (xMLStreamReader.isStartElement() && xMLStreamReader.getLocalName().equals("time_source")) {
+        }
+        if (xMLStreamReader.isStartElement()
+            && xMLStreamReader.getLocalName().equals("time_source")) {
           paramProperties.setProperty("time_source", xMLStreamReader.getElementText());
           continue;
-        } 
-        if (xMLStreamReader.isStartElement() && xMLStreamReader.getLocalName().equals("constants")) {
+        }
+        if (xMLStreamReader.isStartElement()
+            && xMLStreamReader.getLocalName().equals("constants")) {
           D.b("'constants' in XML content 'HDcomment' is not yet supported!");
           continue;
-        } 
+        }
         if (xMLStreamReader.isStartElement() && xMLStreamReader.getLocalName().equals("UNITSPEC")) {
           D.b("UNITSPEC in XML content 'HDcomment' is not yet supported!");
           continue;
-        } 
-        if (xMLStreamReader.isStartElement() && xMLStreamReader.getLocalName().equals("common_properties"))
-          AbstractUsingSeekableByteChannel(paramProperties, xMLStreamReader); 
-      } 
+        }
+        if (xMLStreamReader.isStartElement()
+            && xMLStreamReader.getLocalName().equals("common_properties"))
+          AbstractUsingSeekableByteChannel(paramProperties, xMLStreamReader);
+      }
     } catch (XMLStreamException xMLStreamException) {
       D.AbstractUsingSeekableByteChannel(xMLStreamException.getMessage(), xMLStreamException);
       throw new IOException(xMLStreamException.getMessage(), xMLStreamException);
@@ -65,14 +70,17 @@ public class XMLInputFactory {
         } catch (XMLStreamException xMLStreamException) {
           D.AbstractUsingSeekableByteChannel(xMLStreamException.getMessage(), xMLStreamException);
           throw new IOException(xMLStreamException.getMessage(), xMLStreamException);
-        }  
-    } 
+        }
+    }
   }
-  
-  private void AbstractUsingSeekableByteChannel(Properties paramProperties, XMLStreamReader paramXMLStreamReader) {
+
+  private void AbstractUsingSeekableByteChannel(
+      Properties paramProperties, XMLStreamReader paramXMLStreamReader) {
     paramXMLStreamReader.nextTag();
-    while (!paramXMLStreamReader.isEndElement() || !paramXMLStreamReader.getLocalName().equals("common_properties")) {
-      if (paramXMLStreamReader.isStartElement() && paramXMLStreamReader.getLocalName().equals("e")) {
+    while (!paramXMLStreamReader.isEndElement()
+        || !paramXMLStreamReader.getLocalName().equals("common_properties")) {
+      if (paramXMLStreamReader.isStartElement()
+          && paramXMLStreamReader.getLocalName().equals("e")) {
         String str1 = paramXMLStreamReader.getAttributeValue(null, "name");
         String str2 = paramXMLStreamReader.getAttributeValue(null, "type");
         String str3 = paramXMLStreamReader.getElementText();
@@ -93,22 +101,24 @@ public class XMLInputFactory {
           } catch (ParseException parseException) {
             D.b(parseException.getMessage());
             paramProperties.setProperty(str1, str3);
-          } 
+          }
         } else {
           paramProperties.setProperty(str1, str3);
-        } 
-      } else if (paramXMLStreamReader.isStartElement() && paramXMLStreamReader.getLocalName().equals("tree")) {
+        }
+      } else if (paramXMLStreamReader.isStartElement()
+          && paramXMLStreamReader.getLocalName().equals("tree")) {
         D.b("'tree' in XML content 'common_properties' is not yet supported!");
-      } else if (paramXMLStreamReader.isStartElement() && paramXMLStreamReader.getLocalName().equals("list")) {
+      } else if (paramXMLStreamReader.isStartElement()
+          && paramXMLStreamReader.getLocalName().equals("list")) {
         D.b("'list' in XML content 'common_properties' is not yet supported!");
-      } else if (paramXMLStreamReader.isStartElement() && paramXMLStreamReader.getLocalName().equals("elist")) {
+      } else if (paramXMLStreamReader.isStartElement()
+          && paramXMLStreamReader.getLocalName().equals("elist")) {
         D.b("'elist' in XML content 'common_properties' is not yet supported!");
-      } 
+      }
       paramXMLStreamReader.next();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/al/e.class
  * Java compiler version: 8 (52.0)

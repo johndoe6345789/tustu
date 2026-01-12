@@ -5,11 +5,11 @@ import java.awt.event.KeyListener;
 
 class SearchBoxKeyListener implements KeyListener {
   SearchBoxKeyListener(m paramm) {}
-  
+
   public void keyTyped(KeyEvent paramKeyEvent) {}
-  
+
   public void keyPressed(KeyEvent paramKeyEvent) {}
-  
+
   public void keyReleased(KeyEvent paramKeyEvent) {
     if (paramKeyEvent.getKeyCode() == 40) {
       this.a.c.c();
@@ -19,10 +19,9 @@ class SearchBoxKeyListener implements KeyListener {
       this.a.c.f();
     } else {
       m.d(this.a).a();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/o.class
  * Java compiler version: 8 (52.0)

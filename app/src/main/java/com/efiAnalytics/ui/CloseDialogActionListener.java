@@ -7,15 +7,16 @@ import javax.swing.JDialog;
 
 class CloseDialogActionListener implements ActionListener {
   public void actionPerformed(ActionEvent paramActionEvent) {
-    for (Component component = (Component)paramActionEvent.getSource(); component != null; component = component.getParent()) {
+    for (Component component = (Component) paramActionEvent.getSource();
+        component != null;
+        component = component.getParent()) {
       if (component instanceof JDialog) {
-        ((JDialog)component).dispose();
+        ((JDialog) component).dispose();
         return;
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ce.class
  * Java compiler version: 8 (52.0)

@@ -6,19 +6,18 @@ import java.awt.event.ActionListener;
 
 class BrInterfaceRomeo implements ActionListener {
   BrInterfaceRomeo(P paramP) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.c(paramActionEvent.getActionCommand());
     this.a.b.r(null);
     for (ag ag : this.a.p) {
-      ag.a((SerializableImpl)null);
+      ag.a((SerializableImpl) null);
       ag.f();
-    } 
+    }
     this.a.m.a("targetLambdaTableName", this.a.b.c());
     this.a.m.a("targetLambdaChannelName", "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/br/R.class
  * Java compiler version: 8 (52.0)

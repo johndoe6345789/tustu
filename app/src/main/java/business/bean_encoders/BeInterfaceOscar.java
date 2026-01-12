@@ -6,12 +6,11 @@ import s.SComponentGolf;
 
 class BeInterfaceOscar implements ActionListener {
   BeInterfaceOscar(M paramM) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = this.a.d();
     P p = null;
-    if (this.a.c.isSelected() && !str.isEmpty())
-      p = this.a.c(str); 
+    if (this.a.c.isSelected() && !str.isEmpty()) p = this.a.c(str);
     switch (this.a.b.getSelectedIndex()) {
       case 0:
         M.a(this.a, 5);
@@ -29,12 +28,10 @@ class BeInterfaceOscar implements ActionListener {
         M.a(this.a, 4095);
         this.a.o.setText(SComponentGolf.b("Input Voltage"));
         break;
-    } 
-    if (this.a.c.isSelected() && !str.isEmpty() && p != null)
-      M.a(this.a, p); 
+    }
+    if (this.a.c.isSelected() && !str.isEmpty() && p != null) M.a(this.a, p);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/be/O.class
  * Java compiler version: 8 (52.0)

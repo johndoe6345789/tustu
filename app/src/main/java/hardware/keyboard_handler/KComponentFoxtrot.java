@@ -1,24 +1,24 @@
 package k;
 
-import ax.CloneableImplInAxPackage;
-import ax.AxInterfaceAb;
 import ax.AbstractInAxPackage;
+import ax.AxInterfaceAb;
+import ax.CloneableImplInAxPackage;
 
 public class KComponentFoxtrot extends AbstractInAxPackage {
   private AxInterfaceAb e;
-  
+
   double a = Double.NaN;
-  
+
   double b = Double.NaN;
-  
+
   int c = 0;
-  
+
   double d = 0.0D;
-  
+
   public KComponentFoxtrot(AxInterfaceAb paramab) {
     this.e = paramab;
   }
-  
+
   public double a(CloneableImplInAxPackage paramS) {
     double d = this.e.b(paramS);
     if (Double.isNaN(this.a)) {
@@ -33,15 +33,14 @@ public class KComponentFoxtrot extends AbstractInAxPackage {
     } else {
       this.a = d + this.c * this.d;
       this.c++;
-    } 
+    }
     return this.a;
   }
-  
+
   public double b(CloneableImplInAxPackage paramS) {
     return a(paramS);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/k/f.class
  * Java compiler version: 8 (52.0)

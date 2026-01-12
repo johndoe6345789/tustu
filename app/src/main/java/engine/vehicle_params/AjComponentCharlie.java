@@ -1,20 +1,20 @@
 package aj;
 
-import G.R;
 import G.GComponentCd;
 import G.GComponentCe;
 import G.GComponentCf;
+import G.R;
 import V.ExceptionPrintstacktrace;
 import bH.D;
 import java.util.ArrayList;
 
 public class AjComponentCharlie {
   public static String a = "NextAddress";
-  
+
   public static String b = "LastAddress";
-  
+
   public static String c = "Units";
-  
+
   public ArrayList a(R paramR) {
     ArrayList<GComponentCd> arrayList = new ArrayList();
     String str = paramR.i();
@@ -22,74 +22,86 @@ public class AjComponentCharlie {
       if (paramR.m(GComponentCd.e)) {
         GComponentCd GComponentCd = a();
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.f)) {
         GComponentCd GComponentCd = a();
         a(GComponentCd);
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.ExceptionPrintstacktrace)) {
         GComponentCd GComponentCd = b();
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.h)) {
         GComponentCd GComponentCd = b();
         a(GComponentCd);
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.i)) {
         GComponentCd GComponentCd = d();
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.j)) {
         GComponentCd GComponentCd = d();
         a(GComponentCd);
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.k)) {
         GComponentCd GComponentCd = c();
         arrayList.add(GComponentCd);
-      } 
+      }
       if (paramR.m(GComponentCd.l)) {
         GComponentCd GComponentCd = c();
         a(GComponentCd);
         arrayList.add(GComponentCd);
-      } 
+      }
     } else {
-      if (str.startsWith("MS2Extra Rel 2.1") || str.startsWith("MS2Extra Ser") || str.startsWith("MS2Extra serial") || str.startsWith("MS3") || str.startsWith("MS2Extra 3") || str.startsWith("MS2Extra comms") || str.startsWith("MS2Extra Rel 3")) {
+      if (str.startsWith("MS2Extra Rel 2.1")
+          || str.startsWith("MS2Extra Ser")
+          || str.startsWith("MS2Extra serial")
+          || str.startsWith("MS3")
+          || str.startsWith("MS2Extra 3")
+          || str.startsWith("MS2Extra comms")
+          || str.startsWith("MS2Extra Rel 3")) {
         arrayList.add(a(a(), str));
         arrayList.add(a(b(), str));
-      } 
-      if (str.startsWith("MS2Extra Rel 2") || str.startsWith("MS2Extra Ser") || str.startsWith("MS3") || str.startsWith("MS2Extra 3") || str.startsWith("MS2Extra comms") || str.startsWith("MS2Extra Rel 3")) {
+      }
+      if (str.startsWith("MS2Extra Rel 2")
+          || str.startsWith("MS2Extra Ser")
+          || str.startsWith("MS3")
+          || str.startsWith("MS2Extra 3")
+          || str.startsWith("MS2Extra comms")
+          || str.startsWith("MS2Extra Rel 3")) {
         arrayList.add(a(d(), str));
         arrayList.add(a(c(), str));
-      } 
-      if (str.startsWith("MSnS-extra") || str.startsWith("MS1/Extra") || str.startsWith("MS/Extra")) {
+      }
+      if (str.startsWith("MSnS-extra")
+          || str.startsWith("MS1/Extra")
+          || str.startsWith("MS/Extra")) {
         arrayList.add(e());
         arrayList.add(f());
-      } 
-    } 
+      }
+    }
     return arrayList;
   }
-  
+
   private GComponentCd a(GComponentCd paramcd, String paramString) {
-    if (paramString.startsWith("MS3"))
-      a(paramcd); 
+    if (paramString.startsWith("MS3")) a(paramcd);
     return paramcd;
   }
-  
+
   private GComponentCd a(GComponentCd paramcd) {
     int i = paramcd.b().b("ToothTime");
     i = (i == -1) ? paramcd.b().b("TriggerTime") : i;
     if (i == -1) {
       D.b("Did not find Time Column, not adjusting scalar");
       return paramcd;
-    } 
+    }
     GComponentCe GComponentCe = paramcd.b().a(i);
     GComponentCe.a(0.001D);
     return paramcd;
   }
-  
+
   public GComponentCd a() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -97,7 +109,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.b("( status3 & 0x02 ) == 0x02");
     GComponentCd.c("Composite Logger");
     GComponentCd.d("r\\$tsCanId\\xf2\\x00\\x00\\x04\\x00");
@@ -140,7 +152,7 @@ public class AjComponentCharlie {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd b() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -148,7 +160,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.b("( status3 & 0x02 ) == 0x02");
     GComponentCd.c("Sync Error Logger");
     GComponentCd.d("r\\$tsCanId\\xf3\\x00\\x00\\x04\\x00");
@@ -191,7 +203,7 @@ public class AjComponentCharlie {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd c() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -199,7 +211,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Trigger Logger");
     GComponentCd.d("r\\$tsCanId\\xf1\\x00\\x00\\x04\\x00");
     GComponentCf GComponentCf = new GComponentCf();
@@ -215,7 +227,7 @@ public class AjComponentCharlie {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd d() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -223,7 +235,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Tooth Logger");
     GComponentCd.d("r\\$tsCanId\\xf0\\x00\\x00\\x04\\x00");
     GComponentCf GComponentCf = new GComponentCf();
@@ -239,7 +251,7 @@ public class AjComponentCharlie {
     GComponentCd.a(GComponentCf);
     return GComponentCd;
   }
-  
+
   public GComponentCd e() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -247,7 +259,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Tooth Logger");
     GComponentCd.b(9);
     GComponentCd.d("V");
@@ -275,7 +287,7 @@ public class AjComponentCharlie {
     GComponentCf.b(ce2);
     return GComponentCd;
   }
-  
+
   public GComponentCd f() {
     GComponentCd GComponentCd = new GComponentCd();
     try {
@@ -283,7 +295,7 @@ public class AjComponentCharlie {
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
       D.c(ExceptionPrintstacktrace.getMessage());
-    } 
+    }
     GComponentCd.c("Trigger Logger");
     GComponentCd.b(10);
     GComponentCd.d("V");
@@ -313,7 +325,6 @@ public class AjComponentCharlie {
     return GComponentCd;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aj/c.class
  * Java compiler version: 8 (52.0)

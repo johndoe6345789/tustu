@@ -8,20 +8,19 @@ class JTextFieldExtension extends JTextField implements n {
     super("", 10);
     setBorder(BorderFactory.createLoweredBevelBorder());
   }
-  
+
   public Object a() {
     return getText();
   }
-  
+
   public void a(Object paramObject) {
     setText(paramObject.toString());
   }
-  
+
   public boolean b() {
     return this.a.a.b(a());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aW/m.class
  * Java compiler version: 8 (52.0)

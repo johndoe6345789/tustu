@@ -27,17 +27,17 @@ import r.ThreadedFile;
 
 public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallback, bc {
   Gauge a = null;
-  
+
   JDialog b = null;
-  
+
   boolean c = false;
-  
+
   public GaugePropertiesPanel(Gauge paramGauge) {
     this.a = paramGauge;
     this.c = paramGauge.isRunDemo();
     c();
   }
-  
+
   private void c() {
     aF aF = new aF(this);
     setLayout(new GridLayout(0, 2));
@@ -57,9 +57,8 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     jComboBox.setEditable(false);
     jComboBox.addItem("");
     String[] arrayOfString1 = r.s();
-    Object[] arrayOfObject = X.a((Object[])arrayOfString1);
-    for (byte b1 = 0; b1 < arrayOfObject.length; b1++)
-      jComboBox.addItem(arrayOfObject[b1]); 
+    Object[] arrayOfObject = X.a((Object[]) arrayOfString1);
+    for (byte b1 = 0; b1 < arrayOfObject.length; b1++) jComboBox.addItem(arrayOfObject[b1]);
     jComboBox.setSelectedItem(this.a.getOutputChannel());
     jComboBox.addActionListener(new ae(this));
     jPanel3.add(jComboBox);
@@ -70,7 +69,7 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     jComboBox = new JComboBox<>();
     jComboBox.setEditable(false);
     for (byte b2 = 0; b2 < arrayOfGaugePainter.length; b2++)
-      jComboBox.addItem(new aE(this, arrayOfGaugePainter[b2])); 
+      jComboBox.addItem(new aE(this, arrayOfGaugePainter[b2]));
     jComboBox.setSelectedItem(new aE(this, this.a.getGaugePainter()));
     jComboBox.addActionListener(new ap(this));
     jPanel3.add(jComboBox);
@@ -125,8 +124,7 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     jComboBox.setEditable(false);
     jComboBox.addItem("");
     String[] arrayOfString2 = b();
-    for (byte b3 = 0; b3 < arrayOfString2.length; b3++)
-      jComboBox.addItem(arrayOfString2[b3]); 
+    for (byte b3 = 0; b3 < arrayOfString2.length; b3++) jComboBox.addItem(arrayOfString2[b3]);
     jComboBox.setSelectedItem(this.a.getFontFamily());
     jComboBox.addActionListener(new aD(this));
     jPanel3 = new JPanel();
@@ -173,37 +171,37 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     cp.a(this.a.getTrimColor());
     cp.b(20);
     cp.a(new ai(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     cp = new cp("Face Color");
     cp.setFont(font);
     cp.a(this.a.getBackColor());
     cp.b(20);
     cp.a(new aj(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     cp = new cp("Font Color");
     cp.setFont(font);
     cp.a(this.a.getFontColor());
     cp.b(20);
     cp.a(new ak(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     cp = new cp("Needle Color");
     cp.setFont(font);
     cp.a(this.a.getNeedleColor());
     cp.b(20);
     cp.a(new al(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     cp = new cp("Warning Color");
     cp.setFont(font);
     cp.a(this.a.getWarnColor());
     cp.b(20);
     cp.a(new am(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     cp = new cp("Critical Limits Color");
     cp.setFont(font);
     cp.a(this.a.getCriticalColor());
     cp.b(20);
     cp.a(new an(this));
-    jPanel10.add((Component)cp);
+    jPanel10.add((Component) cp);
     jPanel8.add("Center", jPanel10);
     JPanel jPanel11 = new JPanel();
     jPanel11.setLayout(new GridLayout(0, 2));
@@ -263,11 +261,11 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     jPanel8.add("South", jPanel3);
     add(jPanel8);
   }
-  
+
   protected Gauge a() {
     return this.a;
   }
-  
+
   private JSlider a(int paramInt1, int paramInt2, int paramInt3, String paramString) {
     JSlider jSlider = new JSlider();
     jSlider.setMajorTickSpacing(10 / (paramInt3 - paramInt2));
@@ -275,18 +273,19 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     jSlider.setMaximum(paramInt3);
     jSlider.setValue(paramInt1);
     jSlider.setPaintTrack(true);
-    jSlider.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
+    jSlider.setBorder(
+        BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), paramString));
     return jSlider;
   }
-  
+
   public void a(s params) {
     params.repaint();
   }
-  
+
   public void close() {
     this.a.setRunDemo(this.c);
   }
-  
+
   public void a(Component paramComponent) {
     this.b = new JDialog(bV.a(paramComponent), "Adjust Gauge Settings");
     this.b.add("Center", this);
@@ -298,16 +297,16 @@ public class GaugePropertiesPanel extends JPanel implements GaugeSettingsCallbac
     this.b.add("South", jPanel);
     this.b.pack();
     this.b.setLocationRelativeTo(this.a);
-    this.b.setLocation(this.b.getX() + this.b.getWidth() / 2 + this.a.getWidth() / 2, this.b.getY());
+    this.b.setLocation(
+        this.b.getX() + this.b.getWidth() / 2 + this.a.getWidth() / 2, this.b.getY());
     this.b.setVisible(true);
   }
-  
+
   public static String[] b() {
     cq.a().a(ThreadedFile.F());
     return cq.a().c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/ad.class
  * Java compiler version: 8 (52.0)

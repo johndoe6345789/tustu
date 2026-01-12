@@ -4,7 +4,7 @@ public class AkInterfaceHotel extends g {
   public AkInterfaceHotel() {
     super("\t", false);
   }
-  
+
   protected int b(String paramString) {
     // Byte code:
     //   0: ldc ''
@@ -56,7 +56,8 @@ public class AkInterfaceHotel extends g {
     //   94: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   97: aconst_null
     //   98: aload #8
-    //   100: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   100: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   103: iload #7
     //   105: ireturn
     //   106: iinc #4, 1
@@ -84,7 +85,8 @@ public class AkInterfaceHotel extends g {
     //   157: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   160: aconst_null
     //   161: aload #6
-    //   163: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   163: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   166: goto -> 264
     //   169: astore #6
     //   171: new V/a
@@ -125,7 +127,8 @@ public class AkInterfaceHotel extends g {
     //   252: getstatic java/util/logging/Level.SEVERE : Ljava/util/logging/Level;
     //   255: aconst_null
     //   256: aload #10
-    //   258: invokevirtual log : (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    //   258: invokevirtual log :
+    // (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     //   261: aload #9
     //   263: athrow
     //   264: iload #4
@@ -146,7 +149,6 @@ public class AkInterfaceHotel extends g {
     //   234	239	242	java/io/IOException
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/H.class
  * Java compiler version: 8 (52.0)

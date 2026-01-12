@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 public class d extends JDialog {
   JLabel a = new JLabel(" ", 0);
-  
+
   public d(Window paramWindow, String paramString1, String paramString2) {
     super(paramWindow, paramString1, Dialog.ModalityType.MODELESS);
     JPanel jPanel1 = new JPanel();
@@ -34,19 +34,17 @@ public class d extends JDialog {
     JPanel jPanel3 = new JPanel();
     jPanel3.setLayout(new GridLayout(0, 1, 4, 4));
     StringTokenizer stringTokenizer = new StringTokenizer(paramString2, "\n");
-    while (stringTokenizer.hasMoreTokens())
-      jPanel3.add(new JLabel(stringTokenizer.nextToken(), 0)); 
+    while (stringTokenizer.hasMoreTokens()) jPanel3.add(new JLabel(stringTokenizer.nextToken(), 0));
     jPanel3.add(this.a);
     jPanel1.add("South", jPanel3);
     jPanel1.add("North", new JLabel(" "));
     pack();
   }
-  
+
   public void a(String paramString) {
     this.a.setText(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/d.class
  * Java compiler version: 8 (52.0)

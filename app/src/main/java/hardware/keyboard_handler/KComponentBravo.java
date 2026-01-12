@@ -2,28 +2,27 @@ package k;
 
 class KComponentBravo {
   private String b = null;
-  
+
   private int c = 0;
-  
+
   KComponentBravo(a parama) {}
-  
+
   public String a() {
     return this.b;
   }
-  
+
   public void a(String paramString) {
     this.b = paramString;
   }
-  
+
   public int b() {
     return this.c;
   }
-  
+
   public void a(int paramInt) {
     this.c = paramInt;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/k/b.class
  * Java compiler version: 8 (52.0)

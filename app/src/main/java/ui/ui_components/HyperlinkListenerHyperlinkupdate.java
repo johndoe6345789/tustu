@@ -8,7 +8,7 @@ import javax.swing.event.HyperlinkListener;
 
 class HyperlinkListenerHyperlinkupdate implements HyperlinkListener {
   HyperlinkListenerHyperlinkupdate(f paramf) {}
-  
+
   public void hyperlinkUpdate(HyperlinkEvent paramHyperlinkEvent) {
     if (paramHyperlinkEvent.getEventType().equals(HyperlinkEvent.EventType.ACTIVATED))
       if (paramHyperlinkEvent.getDescription().startsWith("app")) {
@@ -28,11 +28,10 @@ class HyperlinkListenerHyperlinkupdate implements HyperlinkListener {
         } catch (Exception exception) {
           System.out.println("Tried to load web help, but something went wrong.");
           exception.printStackTrace();
-        } 
-      }  
+        }
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ai/i.class
  * Java compiler version: 8 (52.0)

@@ -21,29 +21,29 @@ import s.SComponentGolf;
 
 class PComponentMike extends JPanel {
   JRadioButton a = new JRadioButton(SComponentGolf.b("Simple"));
-  
+
   JRadioButton b = new JRadioButton(SComponentGolf.b("Expression"));
-  
+
   JRadioButton c = new JRadioButton(SComponentGolf.b("Reset after:"));
-  
+
   JSlider d = null;
-  
+
   JComboBox e = new JComboBox();
-  
+
   JTextField f;
-  
+
   NumericTextField SComponentGolf;
-  
+
   V h;
-  
+
   JPanel i;
-  
+
   JPanel j;
-  
+
   JPanel k = null;
-  
+
   boolean l;
-  
+
   public PComponentMike(SComponentGolf paramg, R paramR, boolean paramBoolean, String paramString) {
     ButtonGroup buttonGroup = new ButtonGroup();
     this.l = false;
@@ -60,23 +60,22 @@ class PComponentMike extends JPanel {
     if (this.l) {
       this.h.removeAllItems();
       this.h.a("TPS_Pct");
-    } 
-    jPanel.add("West", (Component)this.h);
+    }
+    jPanel.add("West", (Component) this.h);
     this.e.setEditable(false);
     this.e.addItem(">");
     this.e.addItem("=");
     this.e.addItem("<");
     jPanel.add("Center", this.e);
     this.SComponentGolf = new NumericTextField("", 4);
-    jPanel.add("East", (Component)this.SComponentGolf);
+    jPanel.add("East", (Component) this.SComponentGolf);
     this.i.add("Center", jPanel);
     add(this.i);
     this.j = a(this.b);
     this.f = new JTextField("", 25);
     this.f.setBorder(BorderFactory.createLoweredBevelBorder());
     this.j.add("Center", this.f);
-    if (!this.l)
-      add(this.j); 
+    if (!this.l) add(this.j);
     if (paramBoolean) {
       this.k = a(this.c);
       this.d = new JSlider(0, 0, 600, 30);
@@ -91,23 +90,27 @@ class PComponentMike extends JPanel {
       this.d.addChangeListener(new o(this, paramg, jLabel));
       this.k.add("East", jLabel);
       add(this.k);
-    } 
+    }
     this.a.setSelected(true);
   }
-  
+
   public void a(String paramString) {
     if (paramString == null) {
       this.f.setText(paramString);
       return;
-    } 
+    }
     this.f.setText(paramString);
     String[] arrayOfString = paramString.split(" ");
     if (arrayOfString.length == 1 && arrayOfString[0].trim().isEmpty()) {
       this.a.setSelected(true);
-    } else if (arrayOfString.length == 3 && (arrayOfString[1].equals("<") || arrayOfString[1].equals("=") || arrayOfString[1].equals(">")) && I.a(arrayOfString[2])) {
+    } else if (arrayOfString.length == 3
+        && (arrayOfString[1].equals("<")
+            || arrayOfString[1].equals("=")
+            || arrayOfString[1].equals(">"))
+        && I.a(arrayOfString[2])) {
       String str = arrayOfString[0].trim();
       if (this.d != null && str.equals("AppEvent.")) {
-        int i = (int)Double.parseDouble(arrayOfString[2]);
+        int i = (int) Double.parseDouble(arrayOfString[2]);
         this.d.setValue(i);
         this.c.setSelected(true);
       } else {
@@ -115,32 +118,37 @@ class PComponentMike extends JPanel {
         this.e.setSelectedItem(arrayOfString[1].trim());
         this.SComponentGolf.setText(arrayOfString[2].trim());
         this.a.setSelected(true);
-      } 
+      }
     } else {
       this.b.setSelected(true);
-    } 
+    }
     b();
   }
-  
+
   public String a() {
     if (this.c != null && this.c.isSelected()) {
       StringBuilder stringBuilder = new StringBuilder();
       stringBuilder.append(SComponentGolf.a).append(this.d.getValue());
       return stringBuilder.toString();
-    } 
+    }
     if (this.a.isSelected()) {
       StringBuilder stringBuilder = new StringBuilder();
-      stringBuilder.append(this.h.getSelectedItem().toString()).append(" ").append(this.e.getSelectedItem().toString()).append(" ").append(this.SComponentGolf.getText());
+      stringBuilder
+          .append(this.h.getSelectedItem().toString())
+          .append(" ")
+          .append(this.e.getSelectedItem().toString())
+          .append(" ")
+          .append(this.SComponentGolf.getText());
       return stringBuilder.toString();
-    } 
+    }
     return this.f.getText();
   }
-  
+
   public void b() {
     if (this.m.c == null || !this.m.e.isSelected()) {
       fp.a(this, false);
       return;
-    } 
+    }
     fp.a(this, true);
     if (this.a.isSelected()) {
       fp.a(this.i.getComponent(1), true);
@@ -148,7 +156,7 @@ class PComponentMike extends JPanel {
       if (this.k != null) {
         fp.a(this.k.getComponent(1), false);
         fp.a(this.k.getComponent(2), false);
-      } 
+      }
     } else if (this.c.isSelected()) {
       fp.a(this.i.getComponent(1), false);
       fp.a(this.j.getComponent(1), false);
@@ -160,10 +168,10 @@ class PComponentMike extends JPanel {
       if (this.k != null) {
         fp.a(this.k.getComponent(1), false);
         fp.a(this.k.getComponent(2), false);
-      } 
-    } 
+      }
+    }
   }
-  
+
   private JPanel a(JRadioButton paramJRadioButton) {
     JPanel jPanel = new JPanel();
     jPanel.setLayout(new BorderLayout());
@@ -171,13 +179,12 @@ class PComponentMike extends JPanel {
     jPanel.add("West", paramJRadioButton);
     return jPanel;
   }
-  
+
   private void a(int paramInt) {
     this.d.setValue(paramInt);
     this.c.setSelected(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/m.class
  * Java compiler version: 8 (52.0)

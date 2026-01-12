@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 class NonModalInfoDialogRunnable implements Runnable {
   NonModalInfoDialogRunnable(String paramString, Component paramComponent) {}
-  
+
   public void run() {
     JOptionPane jOptionPane = new JOptionPane(this.a, 3);
     JDialog jDialog = jOptionPane.createDialog(this.b, bV.a("Information"));
@@ -14,7 +14,6 @@ class NonModalInfoDialogRunnable implements Runnable {
     jDialog.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ca.class
  * Java compiler version: 8 (52.0)

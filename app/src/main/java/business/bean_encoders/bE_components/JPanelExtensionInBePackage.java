@@ -13,15 +13,15 @@ import javax.swing.JPanel;
 
 public class JPanelExtensionInBePackage extends JPanel {
   ab a = null;
-  
+
   JCheckBox b = null;
-  
+
   NumericTextField c = new NumericTextField("", 4);
-  
+
   NumericTextField d = new NumericTextField("", 4);
-  
+
   ArrayList e = new ArrayList();
-  
+
   public JPanelExtensionInBePackage(ab paramab) {
     this.a = paramab;
     this.b = new JCheckBox(a("Use Default"));
@@ -33,7 +33,7 @@ public class JPanelExtensionInBePackage extends JPanel {
     JLabel jLabel = new JLabel(a("Min") + ":", 4);
     jLabel.setPreferredSize(eJ.a(45, 18));
     jPanel.add("West", jLabel);
-    jPanel.add("Center", (Component)this.c);
+    jPanel.add("Center", (Component) this.c);
     this.c.b(7);
     this.d.b(7);
     add(jPanel);
@@ -44,64 +44,60 @@ public class JPanelExtensionInBePackage extends JPanel {
     jLabel = new JLabel(a("Max") + ":", 4);
     jLabel.setPreferredSize(eJ.a(45, 18));
     jPanel.add("West", jLabel);
-    jPanel.add("Center", (Component)this.d);
+    jPanel.add("Center", (Component) this.d);
     add(jPanel);
     this.d.addKeyListener(new i(this));
     this.d.addFocusListener(new j(this));
   }
-  
+
   public void a(boolean paramBoolean) {
     this.b.setSelected(paramBoolean);
     this.c.setEnabled(!paramBoolean);
     this.d.setEnabled(!paramBoolean);
   }
-  
+
   public boolean a() {
     return this.b.isSelected();
   }
-  
+
   public void a(double paramDouble) {
     this.c.a(paramDouble);
   }
-  
+
   public double b() {
     return this.c.e();
   }
-  
+
   public void b(double paramDouble) {
     this.d.a(paramDouble);
   }
-  
+
   public double c() {
     return this.d.e();
   }
-  
+
   public void a(d paramd) {
     this.e.add(paramd);
   }
-  
+
   private void d() {
-    for (d d : this.e)
-      d.a(this.b.isSelected()); 
+    for (d d : this.e) d.a(this.b.isSelected());
   }
-  
+
   private void e() {
     double d = this.c.e();
-    for (d d1 : this.e)
-      d1.a(d); 
+    for (d d1 : this.e) d1.a(d);
   }
-  
+
   private void f() {
     double d = this.c.e();
-    for (d d1 : this.e)
-      d1.b(d); 
+    for (d d1 : this.e) d1.b(d);
   }
-  
+
   private String a(String paramString) {
     return (this.a != null) ? this.a.a(paramString) : paramString;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bE/e.class
  * Java compiler version: 8 (52.0)

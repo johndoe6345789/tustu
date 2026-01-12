@@ -8,21 +8,21 @@ import java.nio.channels.SeekableByteChannel;
 
 public class AmInterfaceJuliet extends a {
   public static String b = "##MD";
-  
+
   private String c;
-  
+
   private AmInterfaceJuliet(SeekableByteChannel paramSeekableByteChannel, long paramLong) {
     super(paramSeekableByteChannel, paramLong);
   }
-  
+
   private void b(String paramString) {
     this.c = paramString;
   }
-  
+
   public String toString() {
     return "MDBLOCK [mdData=" + this.c + "]";
   }
-  
+
   public static j b(SeekableByteChannel paramSeekableByteChannel, long paramLong) {
     j j1 = new j(paramSeekableByteChannel, paramLong);
     ByteBuffer byteBuffer = ByteBuffer.allocate(24);
@@ -32,20 +32,19 @@ public class AmInterfaceJuliet extends a {
     byteBuffer.rewind();
     j1.a(AbstractInAlPackage.a(byteBuffer, 4));
     if (!j1.b().equals(b))
-      throw new IOException("Wrong block type - expected '" + b + "', found '" + j1.b() + "'"); 
+      throw new IOException("Wrong block type - expected '" + b + "', found '" + j1.b() + "'");
     byteBuffer.get(new byte[4]);
     j1.a(AbstractInAlPackage.e(byteBuffer));
     j1.b(AbstractInAlPackage.e(byteBuffer));
-    byteBuffer = ByteBuffer.allocate((int)j1.c() + 24);
+    byteBuffer = ByteBuffer.allocate((int) j1.c() + 24);
     byteBuffer.order(ByteOrder.LITTLE_ENDIAN);
     paramSeekableByteChannel.position(paramLong + 24L);
     paramSeekableByteChannel.read(byteBuffer);
     byteBuffer.rewind();
-    j1.b(AbstractInAlPackage.b(byteBuffer, (int)(j1.c() - 24L)));
+    j1.b(AbstractInAlPackage.b(byteBuffer, (int) (j1.c() - 24L)));
     return j1;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/am/j.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import java.io.FilenameFilter;
 
 class FilenameFilterImplAccept implements FilenameFilter {
   FilenameFilterImplAccept(h paramh) {}
-  
+
   public boolean accept(File paramFile, String paramString) {
     return paramString.endsWith(".pend");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aA/j.class
  * Java compiler version: 8 (52.0)

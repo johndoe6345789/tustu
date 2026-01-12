@@ -8,13 +8,12 @@ import java.awt.event.ActionListener;
 
 class ApInterfaceCh implements ActionListener {
   ApInterfaceCh(cc paramcc) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     Frame frame = bV.a(this.a.getParent());
     b.a().a(frame);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/cH.class
  * Java compiler version: 8 (52.0)

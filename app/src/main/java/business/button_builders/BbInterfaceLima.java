@@ -1,9 +1,9 @@
 package business.button_builders;
 
-import ae.FileUsingHashMap;
 import ae.AeInterfaceMike;
 import ae.AeInterfaceQuebec;
 import ae.AeInterfaceRomeo;
+import ae.FileUsingHashMap;
 import com.efiAnalytics.ui.eJ;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -15,7 +15,7 @@ import s.SComponentGolf;
 
 public class BbInterfaceLima extends JPanel {
   l a;
-  
+
   public BbInterfaceLima() {
     setLayout(new BorderLayout());
     JPanel jPanel = new JPanel();
@@ -28,27 +28,25 @@ public class BbInterfaceLima extends JPanel {
     jPanel.add(jScrollPane);
     AeInterfaceRomeo.a().b();
   }
-  
+
   public void a(FileUsingHashMap paramk, AeInterfaceMike paramm) {
     List list = AeInterfaceRomeo.a().a(paramk, paramm);
     a(list);
   }
-  
+
   public void a(List paramList) {
     this.a.a(paramList);
-    if (paramList.size() > 0)
-      this.a.a(0); 
+    if (paramList.size() > 0) this.a.a(0);
   }
-  
+
   public AeInterfaceQuebec a() {
     return this.a.c();
   }
-  
+
   public int b() {
     return this.a.d();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bb/L.class
  * Java compiler version: 8 (52.0)

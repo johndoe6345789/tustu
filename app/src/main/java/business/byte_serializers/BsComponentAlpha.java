@@ -9,9 +9,9 @@ import java.util.logging.Logger;
 
 class BsComponentAlpha extends BeInterfaceAlpha implements BmInterfaceEcho {
   int BeInterfaceAlpha = 400;
-  
+
   BsComponentAlpha(k paramk) {}
-  
+
   public void BeInterfaceAlpha(BmInterfaceDelta paramd) {
     int i = this.b.b.BeInterfaceAlpha(paramd.BmInterfaceEcho());
     if (i < this.BeInterfaceAlpha) {
@@ -19,17 +19,22 @@ class BsComponentAlpha extends BeInterfaceAlpha implements BmInterfaceEcho {
       if (!paramd.h() && this.b.BmInterfaceEcho.BmInterfaceEcho() < 20000) {
         float f1 = 0.0F;
         try {
-          f1 = 100.0F - (float)(this.b.b.b(paramd.BmInterfaceEcho()) / this.b.b.BeInterfaceAlpha(paramd.BmInterfaceEcho())) * 100.0F;
+          f1 =
+              100.0F
+                  - (float)
+                          (this.b.b.b(paramd.BmInterfaceEcho())
+                              / this.b.b.BeInterfaceAlpha(paramd.BmInterfaceEcho()))
+                      * 100.0F;
         } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-          Logger.getLogger(k.class.getName()).log(Level.SEVERE, (String)null, (Throwable)ExceptionPrintstacktrace);
-        } 
+          Logger.getLogger(k.class.getName())
+              .log(Level.SEVERE, (String) null, (Throwable) ExceptionPrintstacktrace);
+        }
         BeInterfaceAlpha(paramd.BmInterfaceEcho(), f, f1);
         this.b.f.BeInterfaceAlpha();
-      } 
-    } 
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bs/A.class
  * Java compiler version: 8 (52.0)

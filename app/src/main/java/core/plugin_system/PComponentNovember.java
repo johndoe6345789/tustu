@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class PComponentNovember implements ActionListener {
   PComponentNovember(m paramm, g paramg) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.b.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/n.class
  * Java compiler version: 8 (52.0)

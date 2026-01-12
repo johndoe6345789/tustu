@@ -11,7 +11,7 @@ class JTextPaneExtension extends JTextPane implements K {
     setBackground(UIManager.getColor("Label.background"));
     setForeground(UIManager.getColor("Label.foreground"));
   }
-  
+
   public void a(String paramString) {
     String str = this.a.a.w(paramString);
     if (str == null) {
@@ -19,14 +19,13 @@ class JTextPaneExtension extends JTextPane implements K {
     } else {
       setText(SComponentGolf.b(str));
       setCaretPosition(0);
-    } 
+    }
   }
-  
+
   public void b(String paramString) {
     setText("");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/hl.class
  * Java compiler version: 8 (52.0)

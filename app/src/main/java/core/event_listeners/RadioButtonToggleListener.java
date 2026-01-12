@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class hb implements ActionListener {
   hb(ha paramha) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.b.setEnabled(this.a.d.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/hb.class
  * Java compiler version: 8 (52.0)

@@ -1,7 +1,7 @@
 package aY;
 
-import G.R;
 import G.GInterfaceAi;
+import G.R;
 import G.i;
 import V.ExceptionPrintstacktrace;
 import com.efiAnalytics.ui.bV;
@@ -17,11 +17,11 @@ import javax.swing.JTextField;
 
 public class UIInAyPackage extends JDialog {
   JTextField a = new JTextField("", 40);
-  
+
   JTextField b = new JTextField("", 40);
-  
+
   R c = null;
-  
+
   public UIInAyPackage(Window paramWindow, R paramR) {
     super(paramWindow, "Expression Evaluator");
     this.c = paramR;
@@ -47,17 +47,16 @@ public class UIInAyPackage extends JDialog {
     jPanel1.add("South", jPanel3);
     pack();
   }
-  
+
   protected void a() {
     try {
-      double d = i.a((GInterfaceAi)this.c, " " + this.a.getText() + " ");
+      double d = i.a((GInterfaceAi) this.c, " " + this.a.getText() + " ");
       this.b.setText("" + d);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       bV.d("Error:" + ExceptionPrintstacktrace.getMessage(), this);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aY/l.class
  * Java compiler version: 8 (52.0)

@@ -5,12 +5,11 @@ import s.SComponentGolf;
 
 class BtComponentBw implements ab {
   bw(bu parambu) {}
-  
+
   public String a(String paramString) {
     return SComponentGolf.b(paramString);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/bw.class
  * Java compiler version: 8 (52.0)

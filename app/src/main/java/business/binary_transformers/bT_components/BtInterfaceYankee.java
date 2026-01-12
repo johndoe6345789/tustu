@@ -1,14 +1,14 @@
 package business.binary_transformers.bT_components;
 
 import bH.D;
-import bN.TostringInBnPackage;
 import bN.BnInterfaceOscar;
 import bN.BnInterfaceTango;
 import bN.BnInterfaceUniform;
+import bN.TostringInBnPackage;
+import bS.BnInterfaceOscar;
 import bS.BsInterfaceAlpha;
 import bS.BsInterfaceDelta;
 import bS.ExceptionInBsPackage;
-import bS.BnInterfaceOscar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -16,15 +16,19 @@ public class BtInterfaceYankee implements BsInterfaceAlpha {
   public int BsInterfaceAlpha() {
     return 221;
   }
-  
+
   public void BsInterfaceAlpha(BnInterfaceOscar paramo, BnInterfaceTango paramt) {
     if (paramt.BsInterfaceAlpha() != BsInterfaceAlpha())
-      throw new ExceptionInBsPackage("PID:DAQ_START_STOP_SYNCH Wrong handler! this handler is for 0x" + Integer.toHexString(BsInterfaceAlpha()).toUpperCase()); 
+      throw new ExceptionInBsPackage(
+          "PID:DAQ_START_STOP_SYNCH Wrong handler! this handler is for 0x"
+              + Integer.toHexString(BsInterfaceAlpha()).toUpperCase());
     byte[] arrayOfByte = paramt.c();
     if (arrayOfByte == null)
-      throw new ExceptionInBsPackage("PID:DAQ_START_STOP_SYNCH valid packet data not found."); 
+      throw new ExceptionInBsPackage("PID:DAQ_START_STOP_SYNCH valid packet data not found.");
     if (arrayOfByte.length != 1)
-      throw new ExceptionInBsPackage("PID:DAQ_START_STOP_SYNCH invalid packet data length, expected 2 bytes, found: " + (arrayOfByte.length + 1)); 
+      throw new ExceptionInBsPackage(
+          "PID:DAQ_START_STOP_SYNCH invalid packet data length, expected 2 bytes, found: "
+              + (arrayOfByte.length + 1));
     try {
       TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
       byte b = arrayOfByte[0];
@@ -42,7 +46,7 @@ public class BtInterfaceYankee implements BsInterfaceAlpha {
           arrayOfByte1[0] = 1;
         } else {
           arrayOfByte1[0] = 0;
-        } 
+        }
         TostringInBnPackage.b(arrayOfByte1);
         if (b == 0) {
           BsInterfaceDelta.i();
@@ -50,28 +54,28 @@ public class BtInterfaceYankee implements BsInterfaceAlpha {
           BsInterfaceDelta.g();
         } else {
           BsInterfaceDelta.ExceptionInBsPackage();
-        } 
+        }
         BsInterfaceDelta.f();
-        paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+        paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
         return;
-      } 
+      }
     } catch (BnInterfaceOscar o1) {
-      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String)null, (Throwable)o1);
+      Logger.getLogger(getClass().getName()).log(Level.SEVERE, (String) null, (Throwable) o1);
       TostringInBnPackage TostringInBnPackage = BnInterfaceUniform.BsInterfaceAlpha().b();
       TostringInBnPackage.BsInterfaceAlpha(254);
       byte[] arrayOfByte1 = new byte[1];
       arrayOfByte1[0] = 34;
       TostringInBnPackage.b(arrayOfByte1);
       try {
-        paramo.BsInterfaceAlpha((BnInterfaceTango)TostringInBnPackage);
+        paramo.BsInterfaceAlpha((BnInterfaceTango) TostringInBnPackage);
       } catch (BnInterfaceOscar o2) {
         D.BsInterfaceAlpha("Unable to send response packet.");
-        Logger.getLogger(TostringInBnPackage.class.getName()).log(Level.SEVERE, (String)null, (Throwable)o2);
-      } 
-    } 
+        Logger.getLogger(TostringInBnPackage.class.getName())
+            .log(Level.SEVERE, (String) null, (Throwable) o2);
+      }
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bT/y.class
  * Java compiler version: 8 (52.0)

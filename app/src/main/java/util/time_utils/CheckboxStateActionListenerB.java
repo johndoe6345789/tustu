@@ -6,13 +6,12 @@ import javax.swing.JCheckBoxMenuItem;
 
 class CheckboxStateActionListenerB implements ActionListener {
   CheckboxStateActionListenerB(w paramw) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
     this.a.b(jCheckBoxMenuItem.getState());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/E.class
  * Java compiler version: 8 (52.0)

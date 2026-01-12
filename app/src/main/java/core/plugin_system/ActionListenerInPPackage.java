@@ -6,17 +6,16 @@ import java.awt.event.ActionListener;
 
 class ActionListenerInPPackage implements ActionListener {
   ActionListenerInPPackage(D paramD) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     if (this.a.f.getSelectedItem() != null) {
-      I i = (I)this.a.f.getSelectedItem();
-      D.a(this.a, i.a().a(), (ArrayListExtensionInDPackage)null);
+      I i = (I) this.a.f.getSelectedItem();
+      D.a(this.a, i.a().a(), (ArrayListExtensionInDPackage) null);
     } else {
-      D.a(this.a, (String)null, (ArrayListExtensionInDPackage)null);
-    } 
+      D.a(this.a, (String) null, (ArrayListExtensionInDPackage) null);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/G.class
  * Java compiler version: 8 (52.0)

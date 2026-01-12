@@ -33,8 +33,7 @@ public class PBravoImpl {
       DInterfaceMike.a(b1);
       DInterfaceMike.a("playSoundFile");
       DInterfaceMike.b("Plays a WAV file of a Car doing a burnout");
-      if (file.exists())
-        arrayList.add(DInterfaceMike); 
+      if (file.exists()) arrayList.add(DInterfaceMike);
       DInterfaceMike = new DInterfaceMike();
       DInterfaceMike.d("playRacecar");
       DInterfaceMike.c("Play Race Car MP3");
@@ -44,9 +43,8 @@ public class PBravoImpl {
       DInterfaceMike.a(b1);
       DInterfaceMike.a("playSoundFile");
       DInterfaceMike.b("Plays an MP3 file of a race car passing");
-      if (file.exists())
-        arrayList.add(DInterfaceMike); 
-    } 
+      if (file.exists()) arrayList.add(DInterfaceMike);
+    }
     DInterfaceMike = new DInterfaceMike();
     DInterfaceMike.d("killEngine");
     DInterfaceMike.c("Stop Engine From Running");
@@ -55,8 +53,7 @@ public class PBravoImpl {
     DInterfaceMike.a(b1);
     DInterfaceMike.a("sendControllerCommand");
     DInterfaceMike.b("Sends a Controller Command for MS3 to kill the engine.");
-    if (r != null && r.O().b("cmdengineshutdown") != null)
-      arrayList.add(DInterfaceMike); 
+    if (r != null && r.O().b("cmdengineshutdown") != null) arrayList.add(DInterfaceMike);
     DInterfaceMike = new DInterfaceMike();
     DInterfaceMike.d("showVeTable");
     DInterfaceMike.c("Show VE Table");
@@ -65,8 +62,7 @@ public class PBravoImpl {
     DInterfaceMike.a(b1);
     DInterfaceMike.a("showSettingsDialog");
     DInterfaceMike.b("Open VE Table 1");
-    if (r != null && r.e().c("veTable1Tbl") != null)
-      arrayList.add(DInterfaceMike); 
+    if (r != null && r.e().c("veTable1Tbl") != null) arrayList.add(DInterfaceMike);
     DInterfaceMike = new DInterfaceMike();
     DInterfaceMike.d("startExplorer");
     DInterfaceMike.c("Open File Browser");
@@ -75,8 +71,7 @@ public class PBravoImpl {
     DInterfaceMike.a(b1);
     DInterfaceMike.a("shellCommand");
     DInterfaceMike.b("Shell a command to the OS to open a File Browser");
-    if (J.a())
-      arrayList.add(DInterfaceMike); 
+    if (J.a()) arrayList.add(DInterfaceMike);
     DInterfaceMike = new DInterfaceMike();
     DInterfaceMike.d("displayEngineStarted");
     DInterfaceMike.c("Display Engine Started");
@@ -97,7 +92,7 @@ public class PBravoImpl {
     arrayList.add(DInterfaceMike);
     return arrayList;
   }
-  
+
   public static List b() {
     R r = T.a().c();
     ArrayList<SInterfaceNovember> arrayList = new ArrayList();
@@ -108,8 +103,7 @@ public class PBravoImpl {
     SInterfaceNovember.f("coolant < 200");
     SInterfaceNovember.a(-1);
     SInterfaceNovember.j("highTempWarning");
-    if (r != null && r.g("coolant") != null)
-      arrayList.add(SInterfaceNovember); 
+    if (r != null && r.g("coolant") != null) arrayList.add(SInterfaceNovember);
     String str = System.getProperty("javafx.runtime.version");
     if (str != null && str.length() > 0) {
       SInterfaceNovember = new SInterfaceNovember();
@@ -119,9 +113,8 @@ public class PBravoImpl {
       SInterfaceNovember.f("tps < 5");
       SInterfaceNovember.a(-1);
       SInterfaceNovember.j("playRacecar");
-      if (r != null && r.g("tps") != null)
-        arrayList.add(SInterfaceNovember); 
-    } 
+      if (r != null && r.g("tps") != null) arrayList.add(SInterfaceNovember);
+    }
     SInterfaceNovember = new SInterfaceNovember();
     SInterfaceNovember.g("syncLossDetect");
     SInterfaceNovember.a(true);
@@ -129,12 +122,10 @@ public class PBravoImpl {
     SInterfaceNovember.f("TimedResetSeconds:1");
     SInterfaceNovember.a(1000);
     SInterfaceNovember.j("syncLossMark");
-    if (r != null && r.g("synccnt") != null)
-      arrayList.add(SInterfaceNovember); 
+    if (r != null && r.g("synccnt") != null) arrayList.add(SInterfaceNovember);
     return arrayList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/b.class
  * Java compiler version: 8 (52.0)

@@ -12,12 +12,13 @@ public class DashboardComponentHelper {
     Component[] arrayOfComponent = paramZ.c();
     for (byte b = 0; b < arrayOfComponent.length; b++) {
       if (arrayOfComponent[b] instanceof SingleChannelDashComponent)
-        a(paramArrayOfString, (SingleChannelDashComponent)arrayOfComponent[b]); 
-    } 
+        a(paramArrayOfString, (SingleChannelDashComponent) arrayOfComponent[b]);
+    }
     return paramZ;
   }
-  
-  public static s a(String[] paramArrayOfString, SingleChannelDashComponent paramSingleChannelDashComponent) {
+
+  public static s a(
+      String[] paramArrayOfString, SingleChannelDashComponent paramSingleChannelDashComponent) {
     R r = T.a().c(paramSingleChannelDashComponent.getEcuConfigurationName());
     if (r == null || r.g(paramSingleChannelDashComponent.getOutputChannel()) == null)
       for (byte b = 0; b < paramArrayOfString.length; b++) {
@@ -25,11 +26,11 @@ public class DashboardComponentHelper {
         if (r.g(paramSingleChannelDashComponent.getOutputChannel()) != null) {
           paramSingleChannelDashComponent.setEcuConfigurationName(r.c());
           return paramSingleChannelDashComponent;
-        } 
-      }  
+        }
+      }
     return paramSingleChannelDashComponent;
   }
-  
+
   public static x a(x paramx) {
     paramx.l(true);
     T t = paramx.X();
@@ -39,16 +40,15 @@ public class DashboardComponentHelper {
     paramx.l(bool);
     return paramx;
   }
-  
+
   public static boolean a() {
     return true;
   }
-  
+
   public static boolean b() {
     return true;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/apps/ts/dashboard/ab.class
  * Java compiler version: 8 (52.0)

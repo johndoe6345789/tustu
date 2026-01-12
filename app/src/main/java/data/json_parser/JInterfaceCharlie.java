@@ -11,9 +11,10 @@ public class JInterfaceCharlie implements HComponentAlpha {
   public void HComponentAlpha(ArrayList paramArrayList) {
     ArrayList<String> arrayList = new ArrayList();
     Iterator<j> iterator = paramArrayList.iterator();
-    while (iterator.hasNext())
-      arrayList.add(((j)iterator.next()).HComponentAlpha()); 
-    if (arrayList.contains("AFR 10Bit") || arrayList.contains("Batt. Volt.") || arrayList.contains("TPS 8Bit")) {
+    while (iterator.hasNext()) arrayList.add(((j) iterator.next()).HComponentAlpha());
+    if (arrayList.contains("AFR 10Bit")
+        || arrayList.contains("Batt. Volt.")
+        || arrayList.contains("TPS 8Bit")) {
       D.c("Setting Field mapping to: FieldMaps/Buell.properties");
       PropertiesExtensionInHPackage.HComponentAlpha();
       PropertiesExtensionInHPackage.b("FieldMaps/Buell.properties");
@@ -21,7 +22,8 @@ public class JInterfaceCharlie implements HComponentAlpha {
       D.c("Setting Field mapping to: FieldMaps/PWMonster.properties");
       PropertiesExtensionInHPackage.HComponentAlpha();
       PropertiesExtensionInHPackage.b("FieldMaps/PWMonster.properties");
-    } else if (arrayList.contains("Fuel: TPS AE add fuel ms") && arrayList.contains("Fuel: Last inj pulse width")) {
+    } else if (arrayList.contains("Fuel: TPS AE add fuel ms")
+        && arrayList.contains("Fuel: Last inj pulse width")) {
       D.c("Setting Field mapping to: FieldMaps/rusEFI.properties");
       PropertiesExtensionInHPackage.HComponentAlpha();
       PropertiesExtensionInHPackage.b("FieldMaps/rusEFI.properties");
@@ -53,10 +55,9 @@ public class JInterfaceCharlie implements HComponentAlpha {
       D.c("Setting Field mapping to: FieldMaps/MegaSquirt.properties");
       PropertiesExtensionInHPackage.HComponentAlpha();
       PropertiesExtensionInHPackage.b("FieldMaps/MegaSquirt.properties");
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/j/c.class
  * Java compiler version: 8 (52.0)

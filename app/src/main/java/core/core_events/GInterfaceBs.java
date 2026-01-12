@@ -2,12 +2,11 @@ package G;
 
 class GInterfaceBs implements cZ {
   GInterfaceBs(bR parambR, String paramString) {}
-  
+
   public String a() {
     return this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/bS.class
  * Java compiler version: 8 (52.0)

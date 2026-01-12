@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ActionListenerImplInBdPackage implements ActionListener {
   ActionListenerImplInBdPackage(I paramI) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     I.a(this.a, !this.a.e.isSelected());
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bD/L.class
  * Java compiler version: 8 (52.0)

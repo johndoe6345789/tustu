@@ -8,7 +8,6 @@ public class Isoptimizeddrawingenabled extends eK {
   }
 }
 
-
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/n/n.class
  * Java compiler version: 8 (52.0)
  * JD-Core Version:       1.1.3

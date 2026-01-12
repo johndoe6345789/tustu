@@ -2,9 +2,9 @@ package G;
 
 class BurnPageCallback implements n {
   BurnPageCallback(J paramJ) {}
-  
+
   public void a(double paramDouble) {}
-  
+
   public void a(o paramo) {
     synchronized (this.a.p) {
       if (paramo.a() == 1) {
@@ -14,16 +14,15 @@ class BurnPageCallback implements n {
           this.a.a(paramo.f(), true);
         } else {
           aB.a().a(paramo.f(), "Burned Page " + paramo.b().o());
-        } 
+        }
       } else if (paramo.a() != 2) {
         aB.a().b(paramo.f(), "Burn Page " + paramo.b().o() + " failed.");
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void e() {}
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/G/K.class
  * Java compiler version: 8 (52.0)

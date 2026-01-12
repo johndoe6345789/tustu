@@ -4,15 +4,14 @@ import G.GInterfaceAn;
 
 class TableParameterChangeListener implements GInterfaceAn {
   TableParameterChangeListener(TableDataLogListener paramQ) {}
-  
+
   public void a(String paramString1, String paramString2) {
     if (this.a.f >= 0) {
       ParameterChangeDelayThread t = new ParameterChangeDelayThread(this);
       t.start();
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/S.class
  * Java compiler version: 8 (52.0)

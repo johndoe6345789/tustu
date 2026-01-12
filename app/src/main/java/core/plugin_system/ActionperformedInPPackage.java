@@ -6,14 +6,12 @@ import java.awt.event.ActionListener;
 
 class ActionperformedInPPackage implements ActionListener {
   ActionperformedInPPackage(J paramJ) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = J.a(this.a, "Are you sure your want to delete the selected User Action?");
-    if (bV.a(str, this.a.c, true))
-      J.b(this.a); 
+    if (bV.a(str, this.a.c, true)) J.b(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/p/L.class
  * Java compiler version: 8 (52.0)

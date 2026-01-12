@@ -9,15 +9,19 @@ import s.SComponentGolf;
 
 class ApInterfaceFq implements ActionListener {
   ApInterfaceFq(dB paramdB) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem)paramActionEvent.getSource();
-    IOPropertiesUsingFile.IOPropertiesUsingFile().b(IOPropertiesUsingFile.bl, jCheckBoxMenuItem.getState() + "");
-    if (bV.IOPropertiesUsingFile(SComponentGolf.b("The Project must be re-loaded for changes to take effect.") + "\n" + SComponentGolf.b("Would you like to reload the project now?"), jCheckBoxMenuItem, true))
-      f.IOPropertiesUsingFile().z(); 
+    JCheckBoxMenuItem jCheckBoxMenuItem = (JCheckBoxMenuItem) paramActionEvent.getSource();
+    IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .b(IOPropertiesUsingFile.bl, jCheckBoxMenuItem.getState() + "");
+    if (bV.IOPropertiesUsingFile(
+        SComponentGolf.b("The Project must be re-loaded for changes to take effect.")
+            + "\n"
+            + SComponentGolf.b("Would you like to reload the project now?"),
+        jCheckBoxMenuItem,
+        true)) f.IOPropertiesUsingFile().z();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/fQ.class
  * Java compiler version: 8 (52.0)

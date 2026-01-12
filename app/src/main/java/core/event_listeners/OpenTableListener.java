@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class gG implements ActionListener {
   gG(go paramgo) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     go.m(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/gG.class
  * Java compiler version: 8 (52.0)

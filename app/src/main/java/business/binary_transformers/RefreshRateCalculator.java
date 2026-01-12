@@ -7,12 +7,12 @@ public class RefreshRateCalculator {
     int i = b();
     return (i > 10) ? (Math.pow(i, 0.3D) / 6.0D) : 15.0D;
   }
-  
+
   public static int b() {
-    return IOPropertiesUsingFile.IOPropertiesUsingFile().IOPropertiesUsingFile(IOPropertiesUsingFile.aT, 20000);
+    return IOPropertiesUsingFile.IOPropertiesUsingFile()
+        .IOPropertiesUsingFile(IOPropertiesUsingFile.aT, 20000);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/x.class
  * Java compiler version: 8 (52.0)

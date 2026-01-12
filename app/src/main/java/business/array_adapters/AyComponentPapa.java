@@ -2,10 +2,9 @@ package business.array_adapters;
 
 public interface AyComponentPapa {
   void c(c paramc);
-  
+
   void d(c paramc);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ay/p.class
  * Java compiler version: 8 (52.0)

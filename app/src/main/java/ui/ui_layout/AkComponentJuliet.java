@@ -29,12 +29,11 @@ public class AkComponentJuliet extends b {
     c.a(l.a(l.d));
     a(c);
   }
-  
+
   public String i() {
     return X.h;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/j.class
  * Java compiler version: 8 (52.0)

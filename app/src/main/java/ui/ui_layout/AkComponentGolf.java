@@ -15,11 +15,11 @@ public class AkComponentGolf extends g {
   public AkComponentGolf() {
     super(";", false);
   }
-  
+
   public String i() {
     return X.K;
   }
-  
+
   protected int b(String paramString) {
     BufferedReader bufferedReader = null;
     byte b = 0;
@@ -28,12 +28,11 @@ public class AkComponentGolf extends g {
       FileInputStream fileInputStream = new FileInputStream(this.h);
       bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
       String str = bufferedReader.readLine();
-      if (str == null)
-        return 0; 
+      if (str == null) return 0;
       while (str != null && !str.startsWith("End scaling:")) {
         str = bufferedReader.readLine();
         b++;
-      } 
+      }
     } catch (FileNotFoundException fileNotFoundException) {
       throw new ExceptionInVPackage("Unable to open file for reading:\n" + paramString);
     } catch (IOException iOException) {
@@ -43,13 +42,12 @@ public class AkComponentGolf extends g {
         try {
           bufferedReader.close();
         } catch (IOException iOException) {
-          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String)null, iOException);
-        }  
-    } 
+          Logger.getLogger(g.class.getName()).log(Level.SEVERE, (String) null, iOException);
+        }
+    }
     return b + 2;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/G.class
  * Java compiler version: 8 (52.0)

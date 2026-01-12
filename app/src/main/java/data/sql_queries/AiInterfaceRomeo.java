@@ -4,10 +4,9 @@ import com.efiAnalytics.remotefileaccess.RemoteFileDescriptor;
 
 public interface AiInterfaceRomeo {
   void a(RemoteFileDescriptor paramRemoteFileDescriptor);
-  
+
   void a(long paramLong1, long paramLong2);
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aI/r.class
  * Java compiler version: 8 (52.0)

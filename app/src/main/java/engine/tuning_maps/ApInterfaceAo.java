@@ -5,12 +5,11 @@ class ApInterfaceAo extends Thread {
     super("PortScanB");
     setDaemon(true);
   }
-  
+
   public void run() {
     this.a.b();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ao.class
  * Java compiler version: 8 (52.0)

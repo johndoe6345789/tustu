@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class ApplyButtonListener implements ActionListener {
   ApplyButtonListener(ct paramct) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     this.a.c();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cw.class
  * Java compiler version: 8 (52.0)

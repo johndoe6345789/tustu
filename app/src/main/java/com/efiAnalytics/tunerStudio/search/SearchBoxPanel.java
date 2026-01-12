@@ -19,15 +19,15 @@ import s.SComponentGolf;
 
 public class SearchBoxPanel extends JPanel {
   Font a = new Font("Helv", 0, eJ.a(11));
-  
+
   JTextField b = new JTextField("", 15);
-  
+
   i c = new i();
-  
+
   String d = "";
-  
+
   q e = null;
-  
+
   public SearchBoxPanel() {
     setOpaque(false);
     this.b.setFont(this.a);
@@ -41,25 +41,25 @@ public class SearchBoxPanel extends JPanel {
     this.b.addFocusListener(new n(this));
     this.b.addKeyListener(new o(this));
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     super.setEnabled(paramBoolean);
     this.b.setEnabled(paramBoolean);
   }
-  
+
   public void setToolTipText(String paramString) {
     super.setToolTipText(paramString);
     this.b.setToolTipText(paramString);
   }
-  
+
   private q b() {
     if (this.e == null || !this.e.isAlive()) {
       this.e = new q(this);
       this.e.start();
-    } 
+    }
     return this.e;
   }
-  
+
   List a() {
     this.d = this.b.getText();
     ArrayList arrayList = new ArrayList();
@@ -70,14 +70,14 @@ public class SearchBoxPanel extends JPanel {
         if (r != null) {
           ArrayList arrayList1 = SComponentGolf.a(r, this.b.getText());
           arrayList.addAll(arrayList1);
-        } 
-      } 
+        }
+      }
       List list = ThreadedJFrameIsoptimizeddrawingenabled.a().SComponentGolf().b(this.d);
       arrayList.addAll(list);
-    } 
+    }
     return arrayList;
   }
-  
+
   private void c() {
     List list = a();
     if (list.isEmpty()) {
@@ -90,26 +90,27 @@ public class SearchBoxPanel extends JPanel {
       int j = point.x + this.b.getWidth();
       this.c.b();
       Dimension dimension = this.c.getSize();
-      this.c.setBounds(j - dimension.width, point.y + this.b.getHeight(), dimension.width, dimension.height);
+      this.c.setBounds(
+          j - dimension.width, point.y + this.b.getHeight(), dimension.width, dimension.height);
       if (!this.c.isVisible()) {
         p p = new p(this);
         SwingUtilities.invokeLater(p);
-      } 
-    } 
+      }
+    }
   }
-  
+
   private void d() {
     if (this.c.isVisible()) {
       this.c.setVisible(false);
       this.d = "";
-    } 
+    }
   }
-  
+
   private void e() {
     this.b.setText(SComponentGolf.b("Search"));
     this.b.setForeground(Color.gray);
   }
-  
+
   private void f() {
     this.b.setText("");
     Color color = UIManager.getColor("TextField.foreground");
@@ -117,10 +118,9 @@ public class SearchBoxPanel extends JPanel {
       this.b.setForeground(color);
     } else {
       this.b.setForeground(Color.black);
-    } 
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tunerStudio/search/m.class
  * Java compiler version: 8 (52.0)

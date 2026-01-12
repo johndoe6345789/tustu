@@ -8,16 +8,15 @@ import java.util.logging.Logger;
 
 class RunnableImplInMPackage implements Runnable {
   RunnableImplInMPackage(a parama, List paramList) {}
-  
+
   public void run() {
     try {
       d.a(bV.c(), this.a, this.b.a);
     } catch (IOException iOException) {
-      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String)null, iOException);
-    } 
+      Logger.getLogger(a.class.getName()).log(Level.SEVERE, (String) null, iOException);
+    }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/m/b.class
  * Java compiler version: 8 (52.0)

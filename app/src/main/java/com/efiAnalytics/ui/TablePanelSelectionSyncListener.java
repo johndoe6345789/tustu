@@ -2,13 +2,11 @@ package com.efiAnalytics.ui;
 
 class TablePanelSelectionSyncListener implements aA {
   TablePanelSelectionSyncListener(w paramw) {}
-  
+
   public void a(boolean paramBoolean) {
-    if (paramBoolean ^ this.a.i.isSelected())
-      this.a.i.setSelected(paramBoolean); 
+    if (paramBoolean ^ this.a.i.isSelected()) this.a.i.setSelected(paramBoolean);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/P.class
  * Java compiler version: 8 (52.0)

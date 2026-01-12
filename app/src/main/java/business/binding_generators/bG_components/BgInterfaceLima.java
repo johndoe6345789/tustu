@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public interface BgInterfaceLima {
   ArrayList a();
-  
+
   double b();
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bG/l.class
  * Java compiler version: 8 (52.0)

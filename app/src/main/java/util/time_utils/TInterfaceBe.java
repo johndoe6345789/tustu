@@ -14,11 +14,11 @@ import s.SComponentGolf;
 
 public class TInterfaceBe extends a implements f {
   JTextField a;
-  
+
   JTextField b;
-  
+
   JPanel c = new JPanel();
-  
+
   public TInterfaceBe(Window paramWindow, ai paramai) {
     super(paramWindow, SComponentGolf.b("Indicator Text"));
     a(paramai);
@@ -42,7 +42,7 @@ public class TInterfaceBe extends a implements f {
     this.c.add(this.b);
     add("Center", this.c);
   }
-  
+
   public void e(ArrayList<Indicator> paramArrayList) {
     if (paramArrayList.isEmpty()) {
       this.a.setText("");
@@ -55,30 +55,27 @@ public class TInterfaceBe extends a implements f {
       this.b.setText(indicator.getOffText().toString());
     } else if (paramArrayList.size() == 1 && paramArrayList.get(0) instanceof Indicator) {
       setEnabled(false);
-    } 
+    }
   }
-  
+
   public void a(ArrayList paramArrayList) {
     ArrayList arrayList = new ArrayList();
     for (Object object : paramArrayList) {
-      if (object instanceof Indicator)
-        arrayList.add(object); 
-    } 
+      if (object instanceof Indicator) arrayList.add(object);
+    }
     e(arrayList);
   }
-  
+
   public void setEnabled(boolean paramBoolean) {
     Component[] arrayOfComponent = this.c.getComponents();
-    for (byte b = 0; b < arrayOfComponent.length; b++)
-      arrayOfComponent[b].setEnabled(paramBoolean); 
+    for (byte b = 0; b < arrayOfComponent.length; b++) arrayOfComponent[b].setEnabled(paramBoolean);
     this.c.setEnabled(paramBoolean);
   }
-  
+
   public JPanel a() {
     return this.c;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/t/be.class
  * Java compiler version: 8 (52.0)

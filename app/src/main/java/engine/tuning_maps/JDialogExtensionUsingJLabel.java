@@ -24,20 +24,20 @@ import javax.swing.JSlider;
 
 public class JDialogExtensionUsingJLabel extends JDialog {
   static String a = "Open Log";
-  
+
   private aP IOInAzPackage = new aP();
-  
+
   private JLabel d = new JLabel();
-  
+
   private JLabel e = new JLabel(" ");
-  
+
   private JLabel f = new JLabel(" ");
-  
+
   JScrollPane b = null;
-  
+
   public JDialogExtensionUsingJLabel(Frame paramFrame) {
     super(paramFrame, "Raw File Viewer");
-    this.b = new JScrollPane((Component)this.IOInAzPackage);
+    this.b = new JScrollPane((Component) this.IOInAzPackage);
     add("Center", this.b);
     this.IOInAzPackage.addCaretListener(new ij(this));
     JMenuBar jMenuBar = new JMenuBar();
@@ -76,7 +76,8 @@ public class JDialogExtensionUsingJLabel extends JDialog {
     jSlider.setMinimum(1);
     jSlider.setMaximum(600);
     jSlider.setValue(this.IOInAzPackage.e());
-    jSlider.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), "Record Length"));
+    jSlider.setBorder(
+        BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(1), "Record Length"));
     jSlider.addChangeListener(new ip(this));
     jPanel2.add(jSlider);
     this.d.setText("  " + this.IOInAzPackage.e());
@@ -87,16 +88,16 @@ public class JDialogExtensionUsingJLabel extends JDialog {
     setSize(520, 400);
     bV.a(paramFrame, this);
   }
-  
+
   public void a() {
     String str = this.IOInAzPackage.a();
     this.e.setText(str);
     int i = this.IOInAzPackage.getCaretPosition() / this.IOInAzPackage.getColumns();
     this.f.setText("Row " + i + ": " + this.IOInAzPackage.IOInAzPackage());
   }
-  
+
   public void b() {
-    String[] arrayOfString = { "msl", "log", "*" };
+    String[] arrayOfString = {"msl", "log", "*"};
     String str = bV.b(this, "Open Log File", arrayOfString, ".", "");
     IOInAzPackage IOInAzPackage = new IOInAzPackage();
     try {
@@ -111,21 +112,22 @@ public class JDialogExtensionUsingJLabel extends JDialog {
       D.IOInAzPackage("Time to set bytes:" + ((System.nanoTime() - l) / 1000000L) + "ms.");
       D.IOInAzPackage(arrayOfInt.length + " read");
     } catch (Exception exception) {
-      bV.d("Error opening Log file, check Application log for more detail.\n" + exception.getMessage(), this);
+      bV.d(
+          "Error opening Log file, check Application log for more detail.\n"
+              + exception.getMessage(),
+          this);
       exception.printStackTrace();
-    } 
+    }
   }
-  
+
   public void a(String paramString) {
-    if (paramString.equals(a))
-      b(); 
+    if (paramString.equals(a)) b();
   }
-  
+
   public void a(int paramInt) {
     this.IOInAzPackage.a(paramInt);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/ii.class
  * Java compiler version: 8 (52.0)

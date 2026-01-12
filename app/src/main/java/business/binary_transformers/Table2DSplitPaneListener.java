@@ -5,13 +5,12 @@ import java.beans.PropertyChangeListener;
 
 class Table2DSplitPaneListener implements PropertyChangeListener {
   Table2DSplitPaneListener(W paramW) {}
-  
+
   public void propertyChange(PropertyChangeEvent paramPropertyChangeEvent) {
     int i = this.a.a.getDividerLocation();
     this.a.j.a("tableTuningSplitPanePosition", i + "");
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bt/Y.class
  * Java compiler version: 8 (52.0)

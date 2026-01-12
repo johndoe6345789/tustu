@@ -8,20 +8,20 @@ import javax.swing.JButton;
 
 class ArrowButton extends JButton {
   Dimension a = new Dimension(14, 8);
-  
+
   int b = 1;
-  
+
   ArrowButton(ew paramew, int paramInt) {
     this.b = paramInt;
   }
-  
+
   public void ArrowButton(Graphics paramGraphics) {
     super.paint(paramGraphics);
     if (isEnabled()) {
       paramGraphics.setColor(Color.BLACK);
     } else {
       paramGraphics.setColor(Color.GRAY);
-    } 
+    }
     Polygon polygon = new Polygon();
     if (this.b == 1) {
       polygon.addPoint(getWidth() / 2, ArrowButton() / 3);
@@ -31,19 +31,18 @@ class ArrowButton extends JButton {
       polygon.addPoint(getWidth() / 2, ArrowButton() * 2 / 3);
       polygon.addPoint(getWidth() * 2 / 3, ArrowButton() / 3);
       polygon.addPoint(getWidth() / 3, ArrowButton() / 3);
-    } 
+    }
     paramGraphics.fillPolygon(polygon);
   }
-  
+
   public Dimension ArrowButton() {
     return this.a;
   }
-  
+
   public Dimension ArrowButton() {
     return this.a;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ez.class
  * Java compiler version: 8 (52.0)

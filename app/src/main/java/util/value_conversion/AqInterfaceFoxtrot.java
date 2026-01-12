@@ -6,13 +6,11 @@ import javax.swing.JDialog;
 
 class AqInterfaceFoxtrot implements ActionListener {
   AqInterfaceFoxtrot(a parama, JDialog paramJDialog) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    if (a.e(this.b))
-      this.a.dispose(); 
+    if (a.e(this.b)) this.a.dispose();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aq/f.class
  * Java compiler version: 8 (52.0)

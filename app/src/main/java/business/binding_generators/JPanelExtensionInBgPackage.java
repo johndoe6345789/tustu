@@ -1,9 +1,9 @@
 package business.binding_generators;
 
+import G.GInterfaceBf;
+import G.IOInGPackage;
 import G.R;
 import G.T;
-import G.IOInGPackage;
-import G.GInterfaceBf;
 import W.d;
 import aP.NetworkHashMap;
 import aa.AaInterfaceCharlie;
@@ -51,29 +51,29 @@ import v.SComponentGolf;
 
 public class JPanelExtensionInBgPackage extends JPanel implements t {
   R a;
-  
+
   o b;
-  
+
   n AaInterfaceCharlie;
-  
+
   k d = new k(this);
-  
+
   Map e = new HashMap<>();
-  
+
   JDialog NetworkHashMap = null;
-  
+
   JButton SComponentGolf;
-  
+
   JButton h;
-  
+
   JButton i;
-  
+
   JButton ThreadedFile;
-  
+
   JButton k;
-  
+
   JButton l;
-  
+
   public JPanelExtensionInBgPackage(R paramR) {
     this.a = paramR;
     b();
@@ -81,7 +81,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     b b = new b(this);
     SwingUtilities.invokeLater(b);
   }
-  
+
   private void b() {
     setLayout(new BorderLayout());
     this.b = new o();
@@ -113,14 +113,14 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     } catch (Exception exception) {
       D.a("Failed to create up/down buttons.");
       D.a(exception);
-    } 
+    }
     add("Center", jPanel);
     this.d.setMinimumSize(eJ.a(640, 320));
     this.d.setPreferredSize(eJ.a(640, 320));
     this.d.setBorder(BorderFactory.createLoweredBevelBorder());
     add("South", this.d);
   }
-  
+
   private JPanel AaInterfaceCharlie() {
     int i = eJ.a(30);
     JPanel jPanel1 = new JPanel();
@@ -157,32 +157,35 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
       jPanel1.add(this.ThreadedFile);
     } catch (V.a a1) {
       bV.d(a1.getLocalizedMessage(), this);
-    } 
+    }
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
     jPanel2.add(jPanel1, "West");
     return jPanel2;
   }
-  
+
   private void d() {
     for (GInterfaceBf GInterfaceBf : this.a.af()) {
       try {
         SComponentGolf SComponentGolf = new SComponentGolf();
         byte[] arrayOfByte = GInterfaceBf.d().a();
-        InputStreamReader inputStreamReader = new InputStreamReader(new ByteArrayInputStream(arrayOfByte));
+        InputStreamReader inputStreamReader =
+            new InputStreamReader(new ByteArrayInputStream(arrayOfByte));
         F NetworkHashMap = SComponentGolf.a(inputStreamReader);
         this.e.put(GInterfaceBf.aL(), NetworkHashMap);
         this.b.a(GInterfaceBf);
       } catch (IOException iOException) {
-        Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load Tuning View", iOException);
+        Logger.getLogger(a.class.getName())
+            .log(Level.SEVERE, "Failed to load Tuning View", iOException);
         bV.d("Failed to Load Tuning View:\n" + iOException.getLocalizedMessage(), this);
       } catch (V.a a1) {
-        Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load Tuning View", (Throwable)a1);
+        Logger.getLogger(a.class.getName())
+            .log(Level.SEVERE, "Failed to load Tuning View", (Throwable) a1);
         bV.d("Failed to Load Tuning View:\n" + a1.getLocalizedMessage(), this);
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void a(F paramF) {
     // Byte code:
     //   0: iconst_m1
@@ -199,7 +202,8 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     //   22: invokevirtual b : ()Ljava/lang/String;
     //   25: ldc ' '
     //   27: ldc ''
-    //   29: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   29: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   32: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   35: invokevirtual toString : ()Ljava/lang/String;
     //   38: astore_2
@@ -213,7 +217,8 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     //   55: invokevirtual b : ()Ljava/lang/String;
     //   58: ldc ' '
     //   60: ldc ''
-    //   62: invokestatic b : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    //   62: invokestatic b :
+    // (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     //   65: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
     //   68: ldc '_'
     //   70: invokevirtual append : (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -295,106 +300,111 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     //   127	180	183	java/io/IOException
     //   127	180	200	V/a
   }
-  
+
   private boolean a(String paramString) {
     for (String str : this.e.keySet()) {
-      if (str.equals(paramString))
-        return false; 
-    } 
+      if (str.equals(paramString)) return false;
+    }
     return true;
   }
-  
+
   private void e() {
     a();
   }
-  
+
   private void NetworkHashMap() {}
-  
+
   private void SComponentGolf() {
     this.b.b();
   }
-  
+
   private void h() {
     this.b.AaInterfaceCharlie();
   }
-  
+
   private void i() {
     GInterfaceBf GInterfaceBf = this.b.a();
     if (GInterfaceBf != null) {
       this.b.b(GInterfaceBf);
       this.e.remove(GInterfaceBf.aL());
-    } 
+    }
   }
-  
+
   private void ThreadedFile() {
     this.a.af().clear();
     try {
       for (GInterfaceBf GInterfaceBf : this.b.b) {
         IOInGPackage IOInGPackage = GInterfaceBf.d();
         IOInGPackage.v(GInterfaceBf.aL());
-        F NetworkHashMap = (F)this.e.get(IOInGPackage.aL());
+        F NetworkHashMap = (F) this.e.get(IOInGPackage.aL());
         if (NetworkHashMap != null) {
           NetworkHashMap.b(GInterfaceBf.AaInterfaceCharlie());
         } else {
           D.a("Cannot update TuningView attributes, no instance loaded!");
-        } 
+        }
         try {
           GInterfaceBf.a(SComponentGolf.a(NetworkHashMap));
         } catch (V.a a1) {
-          Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to update TuningView in EcuTuningView", (Throwable)a1);
-        } 
+          Logger.getLogger(a.class.getName())
+              .log(Level.SEVERE, "Failed to update TuningView in EcuTuningView", (Throwable) a1);
+        }
         this.a.a(IOInGPackage);
         this.a.a(GInterfaceBf);
-      } 
+      }
       ArrayList<NetworkHashMap> arrayList = new ArrayList();
       arrayList.add(new NetworkHashMap());
       arrayList.add(new AaInterfaceCharlie());
       NetworkHashMap.a().a(this.a, arrayList);
     } catch (IOException iOException) {
-      bV.d("Failed to get Encoded Data for Tuning View.\n" + iOException.getLocalizedMessage(), this);
-    } 
+      bV.d(
+          "Failed to get Encoded Data for Tuning View.\n" + iOException.getLocalizedMessage(),
+          this);
+    }
   }
-  
+
   public void a(GInterfaceBf parambf) {
     if (parambf != null) {
-      F NetworkHashMap = (F)this.e.get(parambf.aL());
+      F NetworkHashMap = (F) this.e.get(parambf.aL());
       if (NetworkHashMap == null)
         try {
           NetworkHashMap = b(parambf);
         } catch (IOException iOException) {
           String str = "Failed to load TuneView frm EcuTuningView, see log for more detail.";
           bV.d(str, this);
-          Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load TuneView frm EcuTuningView", iOException);
+          Logger.getLogger(a.class.getName())
+              .log(Level.SEVERE, "Failed to load TuneView frm EcuTuningView", iOException);
           return;
         } catch (V.a a1) {
           String str = "Failed to load TuneView frm EcuTuningView, see log for more detail.";
           bV.d(str, this);
-          Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to load TuneView frm EcuTuningView", (Throwable)a1);
+          Logger.getLogger(a.class.getName())
+              .log(Level.SEVERE, "Failed to load TuneView frm EcuTuningView", (Throwable) a1);
           return;
-        }  
+        }
       try {
         this.d.a(NetworkHashMap.d());
       } catch (IOException iOException) {
-        Logger.getLogger(a.class.getName()).log(Level.SEVERE, "Failed to get Preview Image File.", iOException);
-      } 
+        Logger.getLogger(a.class.getName())
+            .log(Level.SEVERE, "Failed to get Preview Image File.", iOException);
+      }
     } else {
       k.a(this.d);
-    } 
+    }
     k();
   }
-  
+
   private void k() {
     int i = this.b.d();
     this.k.setEnabled((i > 0 && i < this.e.size()));
     this.l.setEnabled((i >= 0 && i < this.e.size() - 1));
   }
-  
+
   private void l() {}
-  
+
   private boolean m() {
     return true;
   }
-  
+
   private F b(GInterfaceBf parambf) {
     byte[] arrayOfByte = parambf.d().a();
     String str = t.a(arrayOfByte);
@@ -404,9 +414,10 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     SComponentGolf SComponentGolf = new SComponentGolf();
     return SComponentGolf.a(file);
   }
-  
+
   public void a(Component paramComponent) {
-    this.NetworkHashMap = new JDialog(bV.a(paramComponent), SComponentGolf.b("Ini Based Tuning View Editor"));
+    this.NetworkHashMap =
+        new JDialog(bV.a(paramComponent), SComponentGolf.b("Ini Based Tuning View Editor"));
     this.NetworkHashMap.add("Center", this);
     JButton jButton1 = new JButton(SComponentGolf.b("Cancel"));
     jButton1.addActionListener(new i(this));
@@ -420,7 +431,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     } else {
       jPanel.add(jButton1);
       jPanel.add(jButton2);
-    } 
+    }
     this.NetworkHashMap.add("South", jPanel);
     this.NetworkHashMap.pack();
     bV.a(bV.a(paramComponent), this.NetworkHashMap);
@@ -429,7 +440,7 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
     this.NetworkHashMap.pack();
     this.NetworkHashMap.setResizable(false);
   }
-  
+
   public void a() {
     b b = new b();
     String[] arrayOfString1 = T.a().d();
@@ -439,27 +450,25 @@ public class JPanelExtensionInBgPackage extends JPanel implements t {
       R r = T.a().AaInterfaceCharlie(arrayOfString1[b1]);
       arrayList.add(r);
       arrayOfString2[b1] = r.i();
-    } 
+    }
     l l = new l(this, b, arrayOfString2);
     try {
       List list = G.a(arrayList);
       b.a(list);
     } catch (V.a a1) {
       bV.d("Failed to load Tuning Views:\n" + a1.getLocalizedMessage(), this);
-    } 
+    }
     Window window1 = bV.b(this);
     Window window2 = window1;
     if (!(window2 instanceof java.awt.Dialog) && !(window2 instanceof java.awt.Frame))
-      window2 = null; 
-    ct ct = new ct(window2, (JComponent)b, "Select Tuning View", l, 7);
-    if (l != null)
-      ct.a(l); 
+      window2 = null;
+    ct ct = new ct(window2, (JComponent) b, "Select Tuning View", l, 7);
+    if (l != null) ct.a(l);
     ct.setSize(640, 480);
-    bV.a(window1, (Component)ct);
+    bV.a(window1, (Component) ct);
     ct.setVisible(true);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bg/a.class
  * Java compiler version: 8 (52.0)

@@ -12,19 +12,19 @@ import java.util.Iterator;
 
 public abstract class BinaryDataLogReader extends DataLogReader {
   private BufferedInputStream e = null;
-  
+
   private BinaryLogConfiguration f = null;
-  
+
   private byte[] g = null;
-  
+
   private byte[] h = null;
-  
+
   private byte[] i = null;
-  
+
   long ExceptionInVPackage = 0L;
-  
+
   int b = 0;
-  
+
   public boolean ExceptionInVPackage(String paramString) {
     FileInputStream fileInputStream = null;
     try {
@@ -33,8 +33,7 @@ public abstract class BinaryDataLogReader extends DataLogReader {
       this.e = new BufferedInputStream(fileInputStream);
       this.e.skip(this.f.b());
       this.ExceptionInVPackage = file.length();
-      if (this.f.f() > 0)
-        this.g = new byte[this.f.f()]; 
+      if (this.f.f() > 0) this.g = new byte[this.f.f()];
       this.h = new byte[this.f.e()];
       this.i = new byte[this.f.f() + this.f.e()];
       return true;
@@ -44,82 +43,82 @@ public abstract class BinaryDataLogReader extends DataLogReader {
     } catch (IOException iOException) {
       iOException.printStackTrace();
       throw new ExceptionInVPackage("Unable to open file:\n" + paramString);
-    } 
+    }
   }
-  
+
   public void ExceptionInVPackage() {
     try {
       this.e.close();
     } catch (IOException iOException) {
       iOException.printStackTrace();
-    } 
+    }
   }
-  
+
   public Iterator b() {
     ArrayList<T> arrayList = new ArrayList();
     Iterator<T> iterator = this.f.d();
-    while (iterator.hasNext())
-      arrayList.add(iterator.next()); 
+    while (iterator.hasNext()) arrayList.add(iterator.next());
     return arrayList.iterator();
   }
-  
+
   public float[] c() {
     try {
       int i = -1;
       if (this.g != null) {
         i = this.e.read(this.g);
         if (this.f.g() != null)
-          for (int j = (int)this.f.g().ExceptionInVPackage(this.g); j != this.h.length && i > 0; j = (int)this.f.g().ExceptionInVPackage(this.g)) {
+          for (int j = (int) this.f.g().ExceptionInVPackage(this.g);
+              j != this.h.length && i > 0;
+              j = (int) this.f.g().ExceptionInVPackage(this.g)) {
             System.out.println("Skipping:" + j);
             this.e.skip(j);
             i = this.e.read(this.g);
-          }  
-      } 
+          }
+      }
       this.e.read(this.h);
       if (this.g != null) {
         System.arraycopy(this.g, 0, this.i, 0, this.g.length);
         System.arraycopy(this.h, 0, this.i, this.g.length, this.h.length);
       } else {
         this.i = this.h;
-      } 
+      }
       float[] arrayOfFloat = new float[this.f.ExceptionInVPackage()];
       for (byte b1 = 0; b1 < this.f.ExceptionInVPackage(); b1++) {
         ExceptionInVPackage ExceptionInVPackage = this.f.ExceptionInVPackage(b1);
         arrayOfFloat[b1] = ExceptionInVPackage.ExceptionInVPackage(this.i);
-      } 
+      }
       this.b++;
       return arrayOfFloat;
     } catch (IOException iOException) {
       iOException.printStackTrace();
       throw new ExceptionInVPackage("Error reading from file. Stopping.");
-    } 
+    }
   }
-  
+
   public long d() {
     return (this.ExceptionInVPackage - this.f.b()) / this.f.c();
   }
-  
+
   public boolean e() {
     return ((this.b * this.f.c() + this.f.b()) < this.ExceptionInVPackage - this.f.c());
   }
-  
+
   public void ExceptionInVPackage(c paramc) {
     this.f = paramc;
   }
-  
+
   public boolean f() {
     return true;
   }
-  
+
   public HashMap g() {
     return null;
   }
-  
+
   public String h() {
     return null;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/W/b.class
  * Java compiler version: 8 (52.0)

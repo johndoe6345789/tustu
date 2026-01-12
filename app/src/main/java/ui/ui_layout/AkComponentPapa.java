@@ -21,12 +21,11 @@ public class AkComponentPapa extends b {
     c.a(l.d);
     a(c);
   }
-  
+
   public String i() {
     return X.c;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ak/p.class
  * Java compiler version: 8 (52.0)

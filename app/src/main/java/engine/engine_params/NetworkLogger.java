@@ -14,23 +14,23 @@ import java.util.logging.Logger;
 
 public class NetworkLogger implements f {
   private static Logger b = Logger.getLogger(e.class.getName());
-  
+
   private DatagramPacket c = null;
-  
+
   private b d = null;
-  
+
   private DatagramSocket e = null;
-  
+
   private String f = j.a();
-  
+
   private InetAddress g = null;
-  
+
   static List a = new ArrayList();
-  
+
   public void a(b paramb) {
     this.d = paramb;
   }
-  
+
   public void run() {
     try {
       bW.e e1 = bW.e.a(this.c);
@@ -39,18 +39,22 @@ public class NetworkLogger implements f {
       if (!a(l) && (l < 123917681614848L || l > 123917681623039L)) {
         System.out.println("DHCP Request received from unserviced range, Ignoring:\n" + e1.d());
         return;
-      } 
-      boolean bool = (this.d.b().e().startsWith("169.") || this.g.getAddress()[3] == 1) ? true : false;
-      if (!e1.n())
-        return; 
+      }
+      boolean bool =
+          (this.d.b().e().startsWith("169.") || this.g.getAddress()[3] == 1) ? true : false;
+      if (!e1.n()) return;
       Byte byte_ = e1.w();
       if (e1.o() == 1)
         switch (byte_.byteValue()) {
           case 1:
             if (a(l) || !bool) {
-              D.c("DHCP: " + this.g + " Discover received by local or offer Not Allowed, ignoring: " + e1.d());
+              D.c(
+                  "DHCP: "
+                      + this.g
+                      + " Discover received by local or offer Not Allowed, ignoring: "
+                      + e1.d());
               return;
-            } 
+            }
             D.c("DHCP: " + this.g + " Discover received from: " + e1.d());
             e2 = this.d.a(e1);
             break;
@@ -58,12 +62,12 @@ public class NetworkLogger implements f {
             if (!bool) {
               D.c("DHCP: " + this.g + " Request received, ignoring not ready for offer: " + e1.d());
               return;
-            } 
+            }
             if (a(l)) {
               D.c("DHCP: " + this.g + " Request received from local MAC, Declining " + e1.d());
               e2 = this.d.c(e1);
               break;
-            } 
+            }
             D.c("DHCP: " + this.g + " Request received from: " + e1.d());
             e2 = this.d.b(e1);
             break;
@@ -82,33 +86,45 @@ public class NetworkLogger implements f {
           default:
             b.info("Unsupported message type " + byte_);
             break;
-        }  
+        }
       if (e2 != null) {
         InetAddress inetAddress = e2.y();
         int i = e2.z();
         byte[] arrayOfByte = e2.b();
-        DatagramPacket datagramPacket = new DatagramPacket(arrayOfByte, arrayOfByte.length, inetAddress, i);
-        D.c("DHCP: " + this.g + " Send Datagram to " + datagramPacket.getAddress() + " Assign IP " + e2.u() + " Server IP " + e2.p() + " Lease time " + e2.f((byte)51));
+        DatagramPacket datagramPacket =
+            new DatagramPacket(arrayOfByte, arrayOfByte.length, inetAddress, i);
+        D.c(
+            "DHCP: "
+                + this.g
+                + " Send Datagram to "
+                + datagramPacket.getAddress()
+                + " Assign IP "
+                + e2.u()
+                + " Server IP "
+                + e2.p()
+                + " Lease time "
+                + e2.f((byte) 51));
         this.e.send(datagramPacket);
-      } 
-      if (a(l));
+      }
+      if (a(l))
+        ;
     } catch (Exception exception) {
       D.a("Failed to send response from: " + this.g);
       throw new RuntimeException(exception);
-    } finally {}
+    } finally {
+    }
   }
-  
+
   public void a(DatagramPacket paramDatagramPacket) {
     this.c = paramDatagramPacket;
   }
-  
+
   public void a(DatagramSocket paramDatagramSocket) {
     this.e = paramDatagramSocket;
   }
-  
+
   protected DatagramSocket a() {
-    if (this.e != null)
-      this.e.close(); 
+    if (this.e != null) this.e.close();
     try {
       Thread.sleep(20L);
       DatagramSocket datagramSocket = new DatagramSocket(0, this.g);
@@ -118,32 +134,29 @@ public class NetworkLogger implements f {
       socketException.printStackTrace();
       return null;
     } catch (InterruptedException interruptedException) {
-      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
+      Logger.getLogger(e.class.getName()).log(Level.SEVERE, (String) null, interruptedException);
       return null;
-    } 
+    }
   }
-  
+
   public void a(InetAddress paramInetAddress, NetworkInterface paramNetworkInterface) {
     D.d("Setting Local Address to: " + paramInetAddress);
     this.g = paramInetAddress;
     long l = j.b(paramNetworkInterface);
     a.add(Long.valueOf(l));
     this.d.a(paramInetAddress);
-    if (paramInetAddress == null)
-      D.c("null localAddress"); 
+    if (paramInetAddress == null) D.c("null localAddress");
   }
-  
+
   private boolean a(long paramLong) {
     Iterator<Long> iterator = a.iterator();
     while (iterator.hasNext()) {
-      long l = ((Long)iterator.next()).longValue();
-      if (l == paramLong)
-        return true; 
-    } 
+      long l = ((Long) iterator.next()).longValue();
+      if (l == paramLong) return true;
+    }
     return false;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/E/e.class
  * Java compiler version: 8 (52.0)

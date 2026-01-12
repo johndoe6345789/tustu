@@ -1,23 +1,23 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
-import G.R;
-import G.Manager;
-import G.GInterfaceAn;
-import G.ManagerUsingConcurrentHashMap;
 import G.Abstract;
-import G.GComponentBq;
 import G.ArrayListExceptionprintstacktraceInGPackage;
+import G.GComponentBq;
+import G.GInterfaceAn;
+import G.Manager;
+import G.ManagerUsingConcurrentHashMap;
+import G.R;
+import V.ExceptionExtensionGetmessage;
 import V.ExceptionInVPackage;
 import V.ExceptionPrintstacktrace;
-import V.ExceptionExtensionGetmessage;
 import bH.D;
 import bH.T;
 import bH.X;
 import bt.A;
 import bt.E;
+import bt.ExceptionEqualsinaipackage;
 import bt.ExceptionUsingComponent;
 import bt.JLabelExtensionSettext;
-import bt.ExceptionEqualsinaipackage;
 import bt.d;
 import bt.y;
 import com.efiAnalytics.ui.aO;
@@ -35,28 +35,27 @@ import s.ExceptionPrintstacktrace;
 
 public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
   y ExceptionInVPackage;
-  
+
   String b = "";
-  
+
   R c = null;
-  
+
   ExceptionEqualsinaipackage d = null;
-  
+
   ExceptionEqualsinaipackage e = null;
-  
+
   ExceptionEqualsinaipackage f = null;
-  
+
   ExceptionEqualsinaipackage ExceptionPrintstacktrace = null;
-  
+
   JPanel h = null;
-  
+
   A i = null;
-  
+
   ExceptionUsingComponent ExceptionExtensionGetmessage = null;
-  
+
   public RequiredFuelPanel(R paramR, int paramInt) {
-    if (paramInt != -1)
-      this.b = paramInt + ""; 
+    if (paramInt != -1) this.b = paramInt + "";
     this.c = paramR;
     this.d = ExceptionPrintstacktrace();
     this.e = ExceptionExtensionGetmessage();
@@ -67,15 +66,16 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout());
     jPanel1.add("North", this.h);
-    jPanel1.add("South", (Component)this.ExceptionPrintstacktrace);
+    jPanel1.add("South", (Component) this.ExceptionPrintstacktrace);
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new BorderLayout());
-    jPanel2.add("North", (Component)this.e);
-    jPanel2.add("South", (Component)this.f);
+    jPanel2.add("North", (Component) this.e);
+    jPanel2.add("South", (Component) this.f);
     jPanel1.add("Center", jPanel2);
     RequiredFuelPanel("West", jPanel1);
-    RequiredFuelPanel("East", (Component)this.d);
-    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap = ManagerUsingConcurrentHashMap.ExceptionInVPackage();
+    RequiredFuelPanel("East", (Component) this.d);
+    ManagerUsingConcurrentHashMap ManagerUsingConcurrentHashMap =
+        ManagerUsingConcurrentHashMap.ExceptionInVPackage();
     try {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "reqFuel" + this.b, this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "alternate" + this.b, this);
@@ -85,43 +85,59 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "injOpen" + this.b, this);
       ManagerUsingConcurrentHashMap.ExceptionInVPackage(paramR.c(), "battFac" + this.b, this);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      D.ExceptionInVPackage("Unable to register all parameters.", (Exception)ExceptionInVPackage, this);
-    } 
+      D.ExceptionInVPackage(
+          "Unable to register all parameters.", (Exception) ExceptionInVPackage, this);
+    }
     RequiredFuelPanel();
     RequiredFuelPanel();
   }
-  
+
   protected void ExceptionInVPackage(String paramString) {
     Manager aM1 = this.c.c("nCylinders" + this.b);
     Manager aM2 = this.c.c("divider" + this.b);
     Manager aM3 = this.c.c("alternate" + this.b);
     try {
-      int i = (int)aM1.ExceptionExtensionGetmessage(this.c.p());
-      double d1 = 1.0E-4D + aM1.ExceptionExtensionGetmessage(this.c.p()) / Double.parseDouble(paramString);
-      int ExceptionExtensionGetmessage = (int)d1;
+      int i = (int) aM1.ExceptionExtensionGetmessage(this.c.p());
+      double d1 =
+          1.0E-4D + aM1.ExceptionExtensionGetmessage(this.c.p()) / Double.parseDouble(paramString);
+      int ExceptionExtensionGetmessage = (int) d1;
       double d2 = (aM3.ExceptionExtensionGetmessage(this.c.p()) > 0.0D) ? 2.0D : 1.0D;
-      if (Math.abs(d1 - ExceptionExtensionGetmessage) > 0.001D || i == 0 || d2 * (d1 - 1.0E-4D) / i > 1.0D) {
-        bV.d("Injections Per Cycle not valid for " + i + " cylinders.\n(Number of Cylinders) / (Injections Per Cycle) must produce ExceptionInVPackage whole number.\nPlease correct.\nWhen set to Alternating, Squirts Per Engine Cycle must be ExceptionInVPackage multiple of 2.", (Component)this);
+      if (Math.abs(d1 - ExceptionExtensionGetmessage) > 0.001D
+          || i == 0
+          || d2 * (d1 - 1.0E-4D) / i > 1.0D) {
+        bV.d(
+            "Injections Per Cycle not valid for "
+                + i
+                + " cylinders.\n"
+                + "(Number of Cylinders) / (Injections Per Cycle) must produce ExceptionInVPackage"
+                + " whole number.\n"
+                + "Please correct.\n"
+                + "When set to Alternating, Squirts Per Engine Cycle must be ExceptionInVPackage"
+                + " multiple of 2.",
+            (Component) this);
         RequiredFuelPanel();
         return;
-      } 
+      }
       aM2.ExceptionInVPackage(this.c.p(), ExceptionExtensionGetmessage);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
+      D.ExceptionInVPackage(
+          "Unable to retrive values for nCylinders or divider",
+          (Exception) ExceptionPrintstacktrace,
+          this);
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-      D.ExceptionInVPackage("Can not set value", (Exception)ExceptionExtensionGetmessage, this);
-    } 
+      D.ExceptionInVPackage("Can not set value", (Exception) ExceptionExtensionGetmessage, this);
+    }
   }
-  
+
   public void ExceptionInVPackage() {
     E e = new E(this.c);
     aA aA = new RequiredFuelPanel(this);
-    Window window = bV.b((Component)this);
-    an an = new RequiredFuelPanel(window, this.c, (et)e, aA);
+    Window window = bV.b((Component) this);
+    an an = new RequiredFuelPanel(window, this.c, (et) e, aA);
     bV.ExceptionInVPackage(window, an);
     an.setVisible(true);
   }
-  
+
   protected void RequiredFuelPanel(String paramString) {
     String str = this.i.getText();
     this.i.setText(paramString);
@@ -129,25 +145,51 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     try {
       RequiredFuelPanel();
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-      bV.d(ExceptionExtensionGetmessage.getMessage(), (Component)this);
+      bV.d(ExceptionExtensionGetmessage.getMessage(), (Component) this);
       this.ExceptionExtensionGetmessage.i();
-    } 
+    }
   }
-  
+
   private ExceptionEqualsinaipackage ExceptionPrintstacktrace() {
-    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = new ArrayListExceptionprintstacktraceInGPackage();
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage =
+        new ArrayListExceptionprintstacktraceInGPackage();
     ArrayListExceptionprintstacktraceInGPackage.v("injControl");
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Control Algorithm"), "algorithm" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Injector Staging"), "alternate" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Engine Stroke"), "twoStroke" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Number of Cylinders"), "nCylinders" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Injector Port Type"), "injType" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Number of Injectors"), "nInjectors" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("MAP Type"), "mapType" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Engine Type"), "engineType" + this.b);
-    ExceptionEqualsinaipackage bh1 = new ExceptionEqualsinaipackage(this.c, ArrayListExceptionprintstacktraceInGPackage);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Control Algorithm"),
+        "algorithm" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Injector Staging"),
+        "alternate" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Engine Stroke"),
+        "twoStroke" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Number of Cylinders"),
+        "nCylinders" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Injector Port Type"),
+        "injType" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Number of Injectors"),
+        "nInjectors" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("MAP Type"),
+        "mapType" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Engine Type"),
+        "engineType" + this.b);
+    ExceptionEqualsinaipackage bh1 =
+        new ExceptionEqualsinaipackage(this.c, ArrayListExceptionprintstacktraceInGPackage);
     JPanel jPanel = RequiredFuelPanel();
-    jPanel.add("Center", (Component)new JLabelExtensionSettext("Squirts Per Engine Cycle"));
+    jPanel.add("Center", (Component) new JLabelExtensionSettext("Squirts Per Engine Cycle"));
     this.ExceptionInVPackage = new RequiredFuelPanel();
     this.ExceptionInVPackage.addItem("1");
     this.ExceptionInVPackage.addItem("2");
@@ -158,57 +200,82 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     this.ExceptionInVPackage.addItem("7");
     this.ExceptionInVPackage.addItem("8");
     this.ExceptionInVPackage.ExceptionInVPackage(new RequiredFuelPanel(this));
-    jPanel.add("East", (Component)this.ExceptionInVPackage);
+    jPanel.add("East", (Component) this.ExceptionInVPackage);
     bh1.add(jPanel, 1);
     return bh1;
   }
-  
-  private GComponentBq ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage parambv, String paramString1, String paramString2) {
+
+  private GComponentBq ExceptionInVPackage(
+      ArrayListExceptionprintstacktraceInGPackage parambv,
+      String paramString1,
+      String paramString2) {
     GComponentBq GComponentBq = new GComponentBq();
     GComponentBq.e(paramString1);
     GComponentBq.b(paramString2);
-    parambv.ExceptionInVPackage((Abstract)GComponentBq);
+    parambv.ExceptionInVPackage((Abstract) GComponentBq);
     return GComponentBq;
   }
-  
+
   private JPanel RequiredFuelPanel() {
     aE aE = new RequiredFuelPanel(this);
     aE.setLayout(new BorderLayout(3, 3));
     return aE;
   }
-  
+
   private ExceptionEqualsinaipackage ExceptionExtensionGetmessage() {
-    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = new ArrayListExceptionprintstacktraceInGPackage();
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage =
+        new ArrayListExceptionprintstacktraceInGPackage();
     ArrayListExceptionprintstacktraceInGPackage.v("injCharacteristics");
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Injector Opening Time"), "injOpen" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Battery Voltage Correction"), "battFac" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("PWM Current Limit"), "injPwmP" + this.b);
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("PWM Time"), "injPwmT" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Injector Opening Time"),
+        "injOpen" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Battery Voltage Correction"),
+        "battFac" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("PWM Current Limit"),
+        "injPwmP" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("PWM Time"),
+        "injPwmT" + this.b);
     return new ExceptionEqualsinaipackage(this.c, ArrayListExceptionprintstacktraceInGPackage);
   }
-  
+
   private ExceptionEqualsinaipackage RequiredFuelPanel() {
-    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = new ArrayListExceptionprintstacktraceInGPackage();
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage =
+        new ArrayListExceptionprintstacktraceInGPackage();
     ArrayListExceptionprintstacktraceInGPackage.v("injfastIdle");
     String str1 = "fastIdleT" + this.b;
     Manager Manager = this.c.c(str1);
     String str2 = "F";
-    if (Manager != null)
-      str2 = Manager.p(); 
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Fast Idle Threshold") + " (" + T.ExceptionInVPackage() + str2 + ")", str1);
+    if (Manager != null) str2 = Manager.p();
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Fast Idle Threshold") + " (" + T.ExceptionInVPackage() + str2 + ")",
+        str1);
     return new ExceptionEqualsinaipackage(this.c, ArrayListExceptionprintstacktraceInGPackage);
   }
-  
+
   private ExceptionEqualsinaipackage RequiredFuelPanel() {
-    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage = new ArrayListExceptionprintstacktraceInGPackage();
+    ArrayListExceptionprintstacktraceInGPackage ArrayListExceptionprintstacktraceInGPackage =
+        new ArrayListExceptionprintstacktraceInGPackage();
     ArrayListExceptionprintstacktraceInGPackage.v("baroCorrection");
-    ExceptionInVPackage(ArrayListExceptionprintstacktraceInGPackage, RequiredFuelPanel("Barometric Correction"), "baroCorr" + this.b);
+    ExceptionInVPackage(
+        ArrayListExceptionprintstacktraceInGPackage,
+        RequiredFuelPanel("Barometric Correction"),
+        "baroCorr" + this.b);
     return new ExceptionEqualsinaipackage(this.c, ArrayListExceptionprintstacktraceInGPackage);
   }
-  
+
   private JPanel RequiredFuelPanel() {
     JPanel jPanel1 = new JPanel();
-    jPanel1.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(0), RequiredFuelPanel("Calculate Required Fuel")));
+    jPanel1.setBorder(
+        BorderFactory.createTitledBorder(
+            BorderFactory.createEtchedBorder(0), RequiredFuelPanel("Calculate Required Fuel")));
     jPanel1.setLayout(new BorderLayout());
     JPanel jPanel2 = new JPanel();
     jPanel2.setLayout(new FlowLayout());
@@ -227,25 +294,28 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     this.ExceptionExtensionGetmessage = new ExceptionUsingComponent(this.c, GComponentBq);
     this.ExceptionExtensionGetmessage.c(false);
     try {
-      ManagerUsingConcurrentHashMap.ExceptionInVPackage().ExceptionInVPackage(this.c.c(), "reqFuel" + this.b, (GInterfaceAn)this.ExceptionExtensionGetmessage);
+      ManagerUsingConcurrentHashMap.ExceptionInVPackage()
+          .ExceptionInVPackage(
+              this.c.c(), "reqFuel" + this.b, (GInterfaceAn) this.ExceptionExtensionGetmessage);
     } catch (ExceptionInVPackage ExceptionInVPackage) {
-      D.ExceptionInVPackage("Error subscribing to reqFuel" + this.b, (Exception)ExceptionInVPackage, this);
-    } 
-    jPanel3.add((Component)this.i);
-    jPanel3.add((Component)this.ExceptionExtensionGetmessage);
+      D.ExceptionInVPackage(
+          "Error subscribing to reqFuel" + this.b, (Exception) ExceptionInVPackage, this);
+    }
+    jPanel3.add((Component) this.i);
+    jPanel3.add((Component) this.ExceptionExtensionGetmessage);
     jPanel1.add("East", jPanel3);
     return jPanel1;
   }
-  
+
   private void RequiredFuelPanel() {
     try {
       RequiredFuelPanel();
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-      bV.d(ExceptionExtensionGetmessage.getMessage(), (Component)this);
+      bV.d(ExceptionExtensionGetmessage.getMessage(), (Component) this);
       RequiredFuelPanel();
-    } 
+    }
   }
-  
+
   public void RequiredFuelPanel() {
     Manager aM1 = this.c.c("nInjectors" + this.b);
     Manager aM2 = this.c.c("divider" + this.b);
@@ -253,8 +323,7 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     Manager aM4 = this.c.c("alternate" + this.b);
     try {
       String str = this.i.getText();
-      if (str.equals(""))
-        str = "0.0"; 
+      if (str.equals("")) str = "0.0";
       double d1 = Double.parseDouble(str);
       double d2 = aM4.ExceptionExtensionGetmessage(this.c.p()) + 1.0D;
       double d3 = aM2.ExceptionExtensionGetmessage(this.c.p());
@@ -263,74 +332,95 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       aM3.ExceptionInVPackage(this.c.p(), d5);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
       ExceptionPrintstacktrace.printStackTrace();
-    } 
+    }
   }
-  
+
   private String RequiredFuelPanel(String paramString) {
     return ExceptionPrintstacktrace.b(this.c.u(paramString));
   }
-  
+
   public void ExceptionInVPackage(String paramString1, String paramString2) {
     if (paramString2.startsWith("reqFuel")) {
       RequiredFuelPanel();
     } else if (paramString2.startsWith("alternate")) {
-      if (p())
-        RequiredFuelPanel(); 
+      if (p()) RequiredFuelPanel();
     } else if (paramString2.startsWith("nCylinders")) {
-      if (p())
-        RequiredFuelPanel(); 
+      if (p()) RequiredFuelPanel();
     } else if (paramString2.startsWith("nInjectors")) {
-      if (p())
-        RequiredFuelPanel(); 
+      if (p()) RequiredFuelPanel();
     } else if (paramString2.startsWith("divider")) {
-      if (p())
-        RequiredFuelPanel(); 
+      if (p()) RequiredFuelPanel();
     } else if (paramString2.startsWith("injOpen" + this.b)) {
       Manager Manager = this.c.c("injOpen" + this.b);
       try {
         double d1 = Manager.ExceptionExtensionGetmessage(this.c.p());
         if (d1 < 0.899D || d1 > 1.301D)
-          bV.d("WARNING!!\n\nInjector Open Time is not within ExceptionInVPackage normal range.\nThe expected value is between 0.9 and 1.3 ms.\nThe typical value is 1.0", (Component)this); 
+          bV.d(
+              "WARNING!!\n\n"
+                  + "Injector Open Time is not within ExceptionInVPackage normal range.\n"
+                  + "The expected value is between 0.9 and 1.3 ms.\n"
+                  + "The typical value is 1.0",
+              (Component) this);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        bV.d("Error testing Injector Open Time", (Component)this);
-      } 
+        bV.d("Error testing Injector Open Time", (Component) this);
+      }
     } else if (paramString2.startsWith("battFac" + this.b)) {
       Manager Manager = this.c.c("battFac" + this.b);
       try {
         double d1 = Manager.ExceptionExtensionGetmessage(this.c.p());
         if (d1 < 0.099D || d1 > 0.201D)
-          bV.d("WARNING!!\n\nBattery Voltage Correction is not within ExceptionInVPackage normal range.\nThe expected value is between 0.1 and 0.3 ms/V.\nThe typical value is 0.1", (Component)this); 
+          bV.d(
+              "WARNING!!\n\n"
+                  + "Battery Voltage Correction is not within ExceptionInVPackage normal range.\n"
+                  + "The expected value is between 0.1 and 0.3 ms/V.\n"
+                  + "The typical value is 0.1",
+              (Component) this);
       } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-        bV.d("Error testing Battery Correction Factor", (Component)this);
-      } 
-    } 
+        bV.d("Error testing Battery Correction Factor", (Component) this);
+      }
+    }
   }
-  
+
   private boolean RequiredFuelPanel() {
     Manager aM1 = this.c.c("nCylinders" + this.b);
     Manager aM2 = this.c.c("divider" + this.b);
     Manager aM3 = this.c.c("rpmk" + this.b);
     Manager aM4 = this.c.c("twoStroke" + this.b);
     try {
-      int i = (int)aM1.ExceptionExtensionGetmessage(this.c.p());
-      double d1 = 1.0E-4D + aM1.ExceptionExtensionGetmessage(this.c.p()) / aM2.ExceptionExtensionGetmessage(this.c.p());
-      int ExceptionExtensionGetmessage = (int)d1;
+      int i = (int) aM1.ExceptionExtensionGetmessage(this.c.p());
+      double d1 =
+          1.0E-4D
+              + aM1.ExceptionExtensionGetmessage(this.c.p())
+                  / aM2.ExceptionExtensionGetmessage(this.c.p());
+      int ExceptionExtensionGetmessage = (int) d1;
       if (Math.abs(d1 - ExceptionExtensionGetmessage) > 0.001D) {
-        bV.d("Injections Per Cycle not valid for " + i + " cylinders.\n(Number of Cylinders) / (Injections Per Cycle) must produce ExceptionInVPackage whole number.", (Component)this);
+        bV.d(
+            "Injections Per Cycle not valid for "
+                + i
+                + " cylinders.\n"
+                + "(Number of Cylinders) / (Injections Per Cycle) must produce ExceptionInVPackage"
+                + " whole number.",
+            (Component) this);
         return false;
-      } 
+      }
       this.ExceptionInVPackage.ExceptionInVPackage("" + ExceptionExtensionGetmessage);
       double d2 = aM4.ExceptionExtensionGetmessage(this.c.p());
       double d3 = (((d2 != 0.0D) ? 6000 : 12000) / i);
       aM3.ExceptionInVPackage(this.c.p(), d3);
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage("Unable to retrive values for nCylinders or divider", (Exception)ExceptionPrintstacktrace, this);
+      D.ExceptionInVPackage(
+          "Unable to retrive values for nCylinders or divider",
+          (Exception) ExceptionPrintstacktrace,
+          this);
     } catch (ExceptionExtensionGetmessage ExceptionExtensionGetmessage) {
-      D.ExceptionInVPackage("Value Out Of Bounds for rpmk, this shouldn't happen.\nPlease report it.", (Exception)ExceptionExtensionGetmessage, this);
-    } 
+      D.ExceptionInVPackage(
+          "Value Out Of Bounds for rpmk, this shouldn't happen.\nPlease report it.",
+          (Exception) ExceptionExtensionGetmessage,
+          this);
+    }
     return true;
   }
-  
+
   public void RequiredFuelPanel() {
     Manager aM1 = this.c.c("nInjectors" + this.b);
     Manager aM2 = this.c.c("divider" + this.b);
@@ -345,29 +435,29 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
       this.i.setText(X.b(d5, 1));
     } catch (Exception exception) {
       exception.printStackTrace();
-    } 
+    }
   }
-  
+
   public void RequiredFuelPanel() {
     try {
       this.c.p().d();
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage("Error performing redo:", (Exception)ExceptionPrintstacktrace, this);
-    } 
+      D.ExceptionInVPackage("Error performing redo:", (Exception) ExceptionPrintstacktrace, this);
+    }
   }
-  
+
   public void RequiredFuelPanel() {
     try {
       this.c.p().c();
     } catch (ExceptionPrintstacktrace ExceptionPrintstacktrace) {
-      D.ExceptionInVPackage("Error performing undo:", (Exception)ExceptionPrintstacktrace, this);
-    } 
+      D.ExceptionInVPackage("Error performing undo:", (Exception) ExceptionPrintstacktrace, this);
+    }
   }
-  
+
   public void RequiredFuelPanel() {
     this.c.I();
   }
-  
+
   public void RequiredFuelPanel() {
     RequiredFuelPanel();
     this.ExceptionExtensionGetmessage.close();
@@ -379,7 +469,6 @@ public class RequiredFuelPanel extends d implements GInterfaceAn, aO {
     RequiredFuelPanel();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/az.class
  * Java compiler version: 8 (52.0)

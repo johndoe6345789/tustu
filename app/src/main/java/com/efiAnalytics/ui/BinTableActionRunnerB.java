@@ -2,12 +2,11 @@ package com.efiAnalytics.ui;
 
 class BinTableActionRunnerB implements Runnable {
   BinTableActionRunnerB(BinTableView paramBinTableView) {}
-  
+
   public void run() {
     this.a.B();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/ar.class
  * Java compiler version: 8 (52.0)

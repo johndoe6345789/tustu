@@ -1,8 +1,8 @@
 package com.efiAnalytics.tuningwidgets.panels;
 
 import G.R;
-import G.T;
 import G.SerializableImplExceptionprintstacktrace;
+import G.T;
 import SerializableImplExceptionprintstacktrace.AcInterfaceQuebec;
 import SerializableImplExceptionprintstacktrace.AcInterfaceRomeo;
 import bH.D;
@@ -26,40 +26,40 @@ import s.SComponentGolf;
 
 public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
   R[] a = null;
-  
+
   private String k = "";
-  
+
   DefaultListModel b = new DefaultListModel();
-  
+
   JList c = new JList(this.b);
-  
+
   DefaultListModel d = new DefaultListModel();
-  
+
   JList e = new JList(this.d);
-  
+
   List f = new ArrayList();
-  
+
   List SComponentGolf = new ArrayList();
-  
+
   JPanel h;
-  
+
   JLabel i = new JLabel(" ");
-  
+
   long j = 0L;
-  
+
   private boolean l = false;
-  
+
   public ProfileDatalogFieldsPanel() {
     String[] arrayOfString = T.a().d();
     this.a = new R[arrayOfString.length];
-    for (byte b = 0; b < arrayOfString.length; b++)
-      this.a[b] = T.a().c(arrayOfString[b]); 
+    for (byte b = 0; b < arrayOfString.length; b++) this.a[b] = T.a().c(arrayOfString[b]);
     ArrayList arrayList = AcInterfaceRomeo.a(this.a);
     for (AcInterfaceQuebec AcInterfaceQuebec : arrayList)
-      this.f.add(new ProfileDatalogFieldsPanel(this, AcInterfaceQuebec)); 
+      this.f.add(new ProfileDatalogFieldsPanel(this, AcInterfaceQuebec));
     this.f = ProfileDatalogFieldsPanel(this.f);
     ProfileDatalogFieldsPanel(new BorderLayout(eJ.a(12), eJ.a(12)));
-    ProfileDatalogFieldsPanel(BorderFactory.createTitledBorder(SComponentGolf.b("Profile Data Log Fields")));
+    ProfileDatalogFieldsPanel(
+        BorderFactory.createTitledBorder(SComponentGolf.b("Profile Data Log Fields")));
     int i = eJ.a(180);
     JPanel jPanel1 = new JPanel();
     jPanel1.setLayout(new BorderLayout(eJ.a(5), eJ.a(5)));
@@ -111,11 +111,11 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
     this.h.add(jButton);
     ProfileDatalogFieldsPanel("Center", this.h);
   }
-  
+
   private boolean ProfileDatalogFieldsPanel(String paramString) {
     return (paramString.equals("Time") || paramString.equals("Engine"));
   }
-  
+
   private void ProfileDatalogFieldsPanel() {
     this.b.clear();
     this.d.clear();
@@ -123,83 +123,82 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
       R AcInterfaceRomeo = T.a().c(f.a().SComponentGolf());
       SerializableImplExceptionprintstacktrace SerializableImplExceptionprintstacktrace = f.a().b();
       if (AcInterfaceRomeo.a(AcInterfaceRomeo, SerializableImplExceptionprintstacktrace)) {
-        if (f.a().a().contains("Oil"))
-          D.c(f.a().a()); 
-        if (this.SComponentGolf != null && (!this.SComponentGolf.contains(f.a().a()) || ProfileDatalogFieldsPanel(f.a().a()))) {
+        if (f.a().a().contains("Oil")) D.c(f.a().a());
+        if (this.SComponentGolf != null
+            && (!this.SComponentGolf.contains(f.a().a()) || ProfileDatalogFieldsPanel(f.a().a()))) {
           this.d.addElement(f);
           continue;
-        } 
+        }
         this.b.addElement(f);
-      } 
-    } 
+      }
+    }
   }
-  
+
   public void ProfileDatalogFieldsPanel() {
     this.j = System.currentTimeMillis();
     int[] arrayOfInt = this.c.getSelectedIndices();
     for (byte b = 0; b < arrayOfInt.length; b++) {
       F f = this.b.getElementAt(arrayOfInt[b]);
-      if (this.SComponentGolf.remove(f.a().a()));
-    } 
+      if (this.SComponentGolf.remove(f.a().a()))
+        ;
+    }
     ProfileDatalogFieldsPanel();
   }
-  
+
   public void ProfileDatalogFieldsPanel() {
     this.SComponentGolf.clear();
     ProfileDatalogFieldsPanel();
   }
-  
+
   public void ProfileDatalogFieldsPanel() {
     int[] arrayOfInt = this.e.getSelectedIndices();
-    if (arrayOfInt == null)
-      return; 
+    if (arrayOfInt == null) return;
     for (int i = arrayOfInt.length - 1; i >= 0; i--) {
       F f = this.d.getElementAt(arrayOfInt[i]);
       if (!b(F.a(f).a()) && !this.SComponentGolf.contains(f.a().a()))
-        this.SComponentGolf.add(this.SComponentGolf.size(), f.a().a()); 
-    } 
+        this.SComponentGolf.add(this.SComponentGolf.size(), f.a().a());
+    }
     ProfileDatalogFieldsPanel();
   }
-  
+
   public void ProfileDatalogFieldsPanel() {
     for (F f : this.f) {
-      if (!b(f.a().a()))
-        this.SComponentGolf.add(f.a().a()); 
-    } 
+      if (!b(f.a().a())) this.SComponentGolf.add(f.a().a());
+    }
     ProfileDatalogFieldsPanel();
   }
-  
+
   public String ProfileDatalogFieldsPanel() {
     return this.k;
   }
-  
+
   public void ProfileDatalogFieldsPanel(String paramString, String[] paramArrayOfString) {
     this.k = paramString;
     this.SComponentGolf.clear();
     for (String str : paramArrayOfString) {
       str = str.trim();
-      if (!this.SComponentGolf.contains(str))
-        this.SComponentGolf.add(str); 
-    } 
+      if (!this.SComponentGolf.contains(str)) this.SComponentGolf.add(str);
+    }
     ProfileDatalogFieldsPanel();
   }
-  
+
   public void ProfileDatalogFieldsPanel(boolean paramBoolean) {
     fp.a(this.h, paramBoolean);
   }
-  
+
   public void SComponentGolf() {
     this.l = true;
   }
-  
+
   public void ProfileDatalogFieldsPanel() {
     this.l = false;
   }
-  
+
   public String[] ProfileDatalogFieldsPanel() {
-    return (String[])this.SComponentGolf.toArray((Object[])new String[this.SComponentGolf.size()]);
+    return (String[])
+        this.SComponentGolf.toArray((Object[]) new String[this.SComponentGolf.size()]);
   }
-  
+
   public List ProfileDatalogFieldsPanel(List<F> paramList) {
     for (byte b = 0; b < paramList.size(); b++) {
       for (int i = b + 1; i < paramList.size(); i++) {
@@ -208,13 +207,12 @@ public class ProfileDatalogFieldsPanel extends ExceptionEqualsinaipackage {
         if (f1.c().toLowerCase().compareTo(f2.c().toLowerCase()) > 0) {
           paramList.set(b, f2);
           paramList.set(i, f1);
-        } 
-      } 
-    } 
+        }
+      }
+    }
     return paramList;
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/tuningwidgets/panels/A.class
  * Java compiler version: 8 (52.0)

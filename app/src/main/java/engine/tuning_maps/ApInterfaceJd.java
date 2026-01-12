@@ -4,12 +4,11 @@ import java.awt.Frame;
 
 class ApInterfaceJd implements Runnable {
   ApInterfaceJd(jC paramjC, Frame paramFrame) {}
-  
+
   public void run() {
     f.a().c(this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/aP/jD.class
  * Java compiler version: 8 (52.0)

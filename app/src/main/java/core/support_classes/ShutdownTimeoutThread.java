@@ -10,13 +10,13 @@ final class h extends Thread {
       try {
         Thread.sleep(1000L);
       } catch (InterruptedException interruptedException) {
-        Logger.getLogger(TunerStudio.class.getName()).log(Level.SEVERE, (String)null, interruptedException);
-      } 
-    } 
+        Logger.getLogger(TunerStudio.class.getName())
+            .log(Level.SEVERE, (String) null, interruptedException);
+      }
+    }
     Runtime.getRuntime().halt(0);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/h.class
  * Java compiler version: 8 (52.0)

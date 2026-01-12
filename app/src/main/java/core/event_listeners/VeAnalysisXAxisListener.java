@@ -7,14 +7,13 @@ import javax.swing.JComboBox;
 
 class eM implements ActionListener {
   eM(eK parameK) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
-    JComboBox jComboBox = (JComboBox)paramActionEvent.getSource();
+    JComboBox jComboBox = (JComboBox) paramActionEvent.getSource();
     this.a.j = jComboBox.getSelectedItem().toString();
     IOProperties.c(IOProperties.ac, this.a.j);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eM.class
  * Java compiler version: 8 (52.0)

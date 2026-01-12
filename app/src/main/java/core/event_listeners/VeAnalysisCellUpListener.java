@@ -6,12 +6,11 @@ import javax.swing.JButton;
 
 class eR implements ActionListener {
   eR(eK parameK, JButton paramJButton) {}
-  
+
   public void actionPerformed(ActionEvent paramActionEvent) {
     eK.a(this.b, this.a);
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/ao/eR.class
  * Java compiler version: 8 (52.0)

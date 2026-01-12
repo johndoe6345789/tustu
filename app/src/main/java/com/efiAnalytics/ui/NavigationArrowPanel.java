@@ -11,31 +11,29 @@ import javax.swing.UIManager;
 
 public class NavigationArrowPanel extends JPanel {
   Polygon a = new Polygon();
-  
+
   Polygon b = new Polygon();
-  
+
   int c = eJ.a(10);
-  
+
   private boolean f = true;
-  
+
   private boolean g = true;
-  
+
   List d = new ArrayList();
-  
+
   Color e = null;
-  
+
   public NavigationArrowPanel() {
     a();
     addMouseListener(new cL(this));
     Color color = UIManager.getColor("Button.foreground");
-    if (color != null)
-      setForeground(color); 
+    if (color != null) setForeground(color);
     color = UIManager.getColor("SplitPane.background");
-    if (color != null)
-      setBackground(color); 
+    if (color != null) setBackground(color);
     this.e = UIManager.getColor("SplitPane.highlight");
   }
-  
+
   private void a() {
     int i = this.c;
     byte b = 1;
@@ -49,46 +47,41 @@ public class NavigationArrowPanel extends JPanel {
     this.b.addPoint(j + i + i / 2, b - 1);
     this.b.addPoint(j + 2 * i + 1, b + i / 2);
   }
-  
+
   public void paint(Graphics paramGraphics) {
     paramGraphics.setColor(getBackground());
     paramGraphics.fill3DRect(0, 0, getWidth(), getHeight(), true);
     paramGraphics.setColor(this.e);
     paramGraphics.draw3DRect(0, 0, getWidth(), getHeight(), true);
     paramGraphics.setColor(getForeground());
-    if (this.f)
-      paramGraphics.fillPolygon(this.b); 
-    if (this.g)
-      paramGraphics.fillPolygon(this.a); 
+    if (this.f) paramGraphics.fillPolygon(this.b);
+    if (this.g) paramGraphics.fillPolygon(this.a);
   }
-  
+
   public void a(cM paramcM) {
     this.d.add(paramcM);
   }
-  
+
   public void setBackground(Color paramColor) {
     super.setBackground(paramColor);
   }
-  
+
   public void setForeground(Color paramColor) {
     super.setForeground(paramColor);
   }
-  
+
   public Dimension getPreferredSize() {
     return new Dimension(4 * this.c, 2 + this.c / 2);
   }
-  
+
   private void b() {
-    for (cM cM : this.d)
-      cM.b(); 
+    for (cM cM : this.d) cM.b();
   }
-  
+
   private void c() {
-    for (cM cM : this.d)
-      cM.a(); 
+    for (cM cM : this.d) cM.a();
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/com/efiAnalytics/ui/cK.class
  * Java compiler version: 8 (52.0)

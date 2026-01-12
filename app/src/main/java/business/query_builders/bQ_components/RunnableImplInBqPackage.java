@@ -8,22 +8,24 @@ import java.util.logging.Logger;
 
 class RunnableImplInBqPackage implements Runnable {
   RunnableImplInBqPackage(a parama) {}
-  
+
   public void run() {
     try {
       this.a.a.m();
     } catch (Exception exception) {
       D.b("Reset Comms failed to stop DAQ");
-    } 
+    }
     try {
       this.a.a.g();
     } catch (l l) {
-      Logger.getLogger(a.class.getName()).log(Level.WARNING, "Error on SYNC during Comms Reset!", (Throwable)l);
+      Logger.getLogger(a.class.getName())
+          .log(Level.WARNING, "Error on SYNC during Comms Reset!", (Throwable) l);
     } catch (V.b b2) {
       D.b("Timeout on SYNC during Comms Reset!");
     } catch (BnInterfaceOscar BnInterfaceOscar) {
-      Logger.getLogger(a.class.getName()).log(Level.WARNING, "Error on SYNC during Comms Reset!", (Throwable)BnInterfaceOscar);
-    } 
+      Logger.getLogger(a.class.getName())
+          .log(Level.WARNING, "Error on SYNC during Comms Reset!", (Throwable) BnInterfaceOscar);
+    }
     byte b1 = 0;
     boolean bool = false;
     do {
@@ -32,16 +34,16 @@ class RunnableImplInBqPackage implements Runnable {
         bool = true;
       } catch (Exception exception) {
         D.a("Failed to restart the DAQ, going offline.");
-      } 
+      }
     } while (!bool && b1++ < 4);
     if (b1 >= 4)
       try {
         D.a("CommHealthMonitor: Failed to restart DAQ after 4 attempts, closing connection.");
         this.a.a.a().g();
-      } catch (Exception exception) {} 
+      } catch (Exception exception) {
+      }
   }
 }
-
 
 /* Location:              /home/rewrich/Downloads/TunerStudioMS/TunerStudioMS/!/bQ/b.class
  * Java compiler version: 8 (52.0)
