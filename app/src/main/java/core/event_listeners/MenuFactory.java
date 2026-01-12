@@ -103,8 +103,9 @@ public class bZ extends MouseAdapter implements MouseMotionListener, MouseWheelL
   }
   
   public void mouseMoved(MouseEvent paramMouseEvent) {
-    if (paramMouseEvent.getSource() instanceof aw)
-      aw aw = (aw)paramMouseEvent.getSource(); 
+    if (paramMouseEvent.getSource() instanceof aw) {
+      aw aw = (aw)paramMouseEvent.getSource();
+    }
   }
   
   public void mouseWheelMoved(MouseWheelEvent paramMouseWheelEvent) {

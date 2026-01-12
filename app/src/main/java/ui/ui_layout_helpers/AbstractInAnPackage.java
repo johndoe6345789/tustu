@@ -7,7 +7,7 @@ import bH.D;
 import bH.AlInterfaceCharlie;
 import java.util.List;
 
-public AbstractInAnPackagebstract class AbstractInAnPackage implements AlInterfaceCharlie {
+public abstract class AbstractInAnPackage implements AlInterfaceCharlie {
   protected AmInterfaceDelta a = null;
   
   protected TostringInAmPackage TostringInAmPackage;

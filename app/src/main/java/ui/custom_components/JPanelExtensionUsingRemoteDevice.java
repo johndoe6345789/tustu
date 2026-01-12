@@ -78,7 +78,8 @@ public class JPanelExtensionUsingRemoteDevice extends JPanel implements fT {
     } catch (IOException iOException) {
       System.out.println("--> Pairing fail with device " + this.f.getBluetoothAddress());
       iOException.printStackTrace();
-    } 
+    }
+  }
   
   public boolean g_() {
     return false;

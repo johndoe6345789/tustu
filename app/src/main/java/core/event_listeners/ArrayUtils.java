@@ -7,7 +7,7 @@ import java.util.List;
 import javax.swing.TransferHandler;
 
 final class eb extends TransferHandler {
-  public eb(cd paramcd) {
+  public eb(cd paramcd) {}
   
   public boolean canImport(TransferHandler.TransferSupport paramTransferSupport) {
     for (DataFlavor dataFlavor : paramTransferSupport.getDataFlavors()) {

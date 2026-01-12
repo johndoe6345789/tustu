@@ -988,15 +988,15 @@ public final class ManagerManagerusingjpopupmenu implements S, GInterfaceAg, GIn
       dF dF = new dF(this);
       String str = PropertiesExtension.PropertiesExtension().JCheckBoxMenuItemExtension(PropertiesExtension.cn, PropertiesExtension.JCheckBoxMenuItemExtension);
       buttonGroup = new ButtonGroup();
-      if (PropertiesExtension.do.length > 0) {
-        String str1 = PropertiesExtension.do[0] + RInterfaceIndia.JCheckBoxMenuItemExtension;
+      if (PropertiesExtension.do_.length > 0) {
+        String str1 = PropertiesExtension.do_[0] + RInterfaceIndia.JCheckBoxMenuItemExtension;
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1);
         jCheckBoxMenuItem.setSelected(str.equals(str1));
         buttonGroup.add(jCheckBoxMenuItem);
         jCheckBoxMenuItem.addActionListener(dF);
         jMenu.add(jCheckBoxMenuItem);
       } 
-      for (String str1 : PropertiesExtension.do) {
+      for (String str1 : PropertiesExtension.do_) {
         JCheckBoxMenuItem jCheckBoxMenuItem = new JCheckBoxMenuItem(str1);
         jCheckBoxMenuItem.setSelected(str.equals(str1));
         buttonGroup.add(jCheckBoxMenuItem);

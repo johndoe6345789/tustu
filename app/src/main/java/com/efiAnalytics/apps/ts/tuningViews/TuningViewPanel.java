@@ -487,9 +487,7 @@ public class TuningViewPanel extends JPanel implements bc, ExceptionInVPackage, 
     try {
       F f = NInterfaceGolf();
       File file = new File(paramString1);
-      TuningViewPanel(this) {
-        g1.ExceptionInVPackage(f, file);
-      } 
+      g1.ExceptionInVPackage(f, file);
     } catch (ExceptionInVPackage a1) {
       bV.d("Error saving Tuning View.\n" + a1.getMessage() + "\nCheck Log for more details", this);
     } 

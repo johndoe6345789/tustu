@@ -47,7 +47,6 @@ public class W extends Thread {
   }
   
   protected void a(int paramInt) {
-    this;
     b = paramInt;
   }
   

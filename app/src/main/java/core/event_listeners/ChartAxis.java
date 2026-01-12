@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 final class ad implements ActionListener {
-  public ad(j paramj) {
+  public ad(j paramj) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     hx.a().b(this.a, 0);

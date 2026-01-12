@@ -1,6 +1,6 @@
 package G;
 
-public GComponentClass GComponentCl implements dj {
+public class GComponentCl implements dj {
   aM a;
   
   public GComponentCl(aM paramaM) {

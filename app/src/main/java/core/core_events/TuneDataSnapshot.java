@@ -245,7 +245,7 @@ public class TuneDataSnapshot extends Q {
     int[] arrayOfInt = new int[paramInt3];
     for (byte b = 0; b < arrayOfInt.length; b++) {
       if (paramInt2 + b >= (this.i[paramInt1]).length)
-        byte b1 = 2; 
+        break;
       arrayOfInt[b] = this.i[paramInt1][paramInt2 + b];
     } 
     return arrayOfInt;

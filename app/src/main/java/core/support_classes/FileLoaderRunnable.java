@@ -4,7 +4,7 @@ import i.IInterfaceCharlie;
 import java.io.File;
 
 final class b implements Runnable {
-  public b(bD parambD, cd paramcd, File paramFile) {
+  public b(bD parambD, cd paramcd, File paramFile) {}
   
   public void run() {
     if (this.a.d())

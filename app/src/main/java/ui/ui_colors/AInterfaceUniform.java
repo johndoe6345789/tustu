@@ -110,7 +110,7 @@ class AInterfaceUniform extends Thread {
         hashMap.clear();
         boolean bool2 = false;
         try {
-          yield();
+          Thread.yield();
           if (!this.l && this.k.w()) {
             bool2 = true;
             t.c(this.k);

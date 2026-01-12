@@ -60,7 +60,7 @@ class ManagerJdialogextensioninazpackage implements O {
   }
   
   public String[] k() {
-    String[] arrayOfString = JDialogExtensionInAzPackage.do;
+    String[] arrayOfString = JDialogExtensionInAzPackage.do_;
     for (byte b = 0; b < arrayOfString.length; b++) {
       String str = X.b(arrayOfString[b], dl.t(), "");
       str = X.b(str, RInterfaceIndia.b, "");

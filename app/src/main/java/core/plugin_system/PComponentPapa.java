@@ -98,8 +98,9 @@ public class PComponentPapa extends JPanel implements bc, C {
   }
   
   private void c() {
-    if (this.c.getSelectedRow() >= 0)
-      SInterfaceNovember SInterfaceNovember = this.c.SInterfaceAlpha(this.c.getSelectedRow()); 
+    if (this.c.getSelectedRow() >= 0) {
+      SInterfaceNovember SInterfaceNovember = this.c.SInterfaceAlpha(this.c.getSelectedRow());
+    }
   }
   
   private boolean d() {

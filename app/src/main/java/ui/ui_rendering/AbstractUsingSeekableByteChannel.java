@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.SeekableByteChannel;
 
-public AbstractUsingSeekableByteChannelbstract class AbstractUsingSeekableByteChannel {
+public abstract class AbstractUsingSeekableByteChannel {
   private final long b;
   
   private String c;

@@ -13,7 +13,7 @@ public enum Enum {
   
   int j;
   
-  Z(int paramInt1) {
+  Enum(int paramInt1) {
     this.j = paramInt1;
   }
   

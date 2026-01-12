@@ -45,7 +45,7 @@ public class Ioinadpackage {
         paramArrayOfString[0] = ""; 
       hb.p = "Auto Tune";
       String[] arrayOfString1 = { AInterfaceIndia.m };
-      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.do_ = arrayOfString1;
       IOInAdPackage.cP = true;
       IOInAdPackage.ba = ArrayListInZPackage.e;
       IOInAdPackage.be = false;
@@ -59,7 +59,7 @@ public class Ioinadpackage {
       hb.p = "Auto Tune";
       String[] arrayOfString1 = { AInterfaceIndia.n };
       IOInAdPackage.cP = true;
-      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.do_ = arrayOfString1;
       IOInAdPackage.ba = ArrayListInZPackage.e;
       IOInAdPackage.be = false;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("GrassRoots")) || paramString.equals("GrassRootsTuner.jar")) {
@@ -127,7 +127,7 @@ public class Ioinadpackage {
       IOInAdPackage.IOInAdPackage().IOInAdPackage("Pro Single");
       NetworkExceptionprintstacktrace.ArrayListInZPackage = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
       String[] arrayOfString1 = { AInterfaceIndia.r, AInterfaceIndia.u, AInterfaceIndia.t };
-      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.do_ = arrayOfString1;
       IOInAdPackage.ba = ArrayListInZPackage.e;
       TriggerLoggerPanel.Q = true;
     } else if ((paramArrayOfString.length > 0 && paramArrayOfString[0].equals("BigCommGen4")) || paramString.equals("BigCommGen4.jar")) {
@@ -185,7 +185,7 @@ public class Ioinadpackage {
       IOInAdPackage.cb = true;
       NetworkExceptionprintstacktrace.ArrayListInZPackage = "/com/efiAnalytics/apps/ts/dashboard/default_BC.gauge";
       String[] arrayOfString1 = { AInterfaceIndia.r };
-      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.do_ = arrayOfString1;
       IOInAdPackage.ap = "bcGen4.reg";
       IOInAdPackage.aq = "bcGen4User.properties";
       IOInAdPackage.ba = ArrayListInZPackage.f;
@@ -206,7 +206,7 @@ public class Ioinadpackage {
         IOInAdPackage.ArrayListInZPackage = AInterfaceIndia.r;
       } 
       String[] arrayOfString1 = { AInterfaceIndia.j, AInterfaceIndia.k, AInterfaceIndia.l };
-      IOInAdPackage.do = arrayOfString1;
+      IOInAdPackage.do_ = arrayOfString1;
       IOInAdPackage.ap = "tsRE.reg";
       IOInAdPackage.aq = "tsReUser.properties";
       IOInAdPackage.f = "rusEFI";

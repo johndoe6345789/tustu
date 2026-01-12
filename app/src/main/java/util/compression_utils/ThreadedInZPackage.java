@@ -80,7 +80,7 @@ class ThreadedInZPackage extends Thread {
           } 
           boolean bool2 = false;
           try {
-            yield();
+            Thread.yield();
             if (this.f.w()) {
               bool2 = true;
               e.c(this.f);

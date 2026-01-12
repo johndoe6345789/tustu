@@ -6,7 +6,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 final class ab implements ChangeListener {
-  public ab(j paramj) {
+  public ab(j paramj) {}
   
   public void stateChanged(ChangeEvent paramChangeEvent) {
     JSlider jSlider = (JSlider)paramChangeEvent.getSource();

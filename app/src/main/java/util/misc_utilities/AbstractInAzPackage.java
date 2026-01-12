@@ -5,7 +5,7 @@ import W.WInterfaceAq;
 import ac.AcComponentCharlie;
 import java.io.File;
 
-public AbstractInAzPackagebstract class AbstractInAzPackage extends AcComponentCharlie {
+public abstract class AbstractInAzPackage extends AcComponentCharlie {
   public abstract boolean a(R[] paramArrayOfR, File paramFile);
   
   public abstract void a(R[] paramArrayOfR, File paramFile1, File paramFile2, boolean paramBoolean);

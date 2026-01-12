@@ -20,14 +20,14 @@ class Table3DPaintThrottle extends Thread {
     try {
       Thread.currentThread();
       Thread.sleep(2L * this.a);
-    } Table3DPaintThrottle(InterruptedException interruptedException) {
+    } catch (InterruptedException interruptedException) {
       interruptedException.printStackTrace();
     } 
     while (this.c.isDisplayable()) {
       try {
         Thread.currentThread();
         Thread.sleep(this.a);
-      } Table3DPaintThrottle(InterruptedException interruptedException) {
+      } catch (InterruptedException interruptedException) {
         interruptedException.printStackTrace();
       } 
       if (this.b) {

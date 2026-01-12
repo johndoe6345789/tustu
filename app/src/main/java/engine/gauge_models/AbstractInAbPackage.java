@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public AbstractInAbPackagebstract class AbstractInAbPackage implements IO {
+public abstract class AbstractInAbPackage implements IO {
   ArrayList a = new ArrayList();
   
   ArrayList b = new ArrayList();

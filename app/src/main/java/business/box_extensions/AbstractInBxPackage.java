@@ -3,7 +3,7 @@ package business.box_extensions;
 import java.util.ArrayList;
 import java.util.List;
 
-public AbstractInBxPackagebstract class AbstractInBxPackage implements b {
+public abstract class AbstractInBxPackage implements b {
   private ArrayList a = new ArrayList();
   
   private List b = new ArrayList();

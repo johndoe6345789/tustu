@@ -140,13 +140,13 @@ public class ClassTypeInHPackage {
         c();
         this.p = new f(this);
         char[] arrayOfChar = { 
-            'E', 'F', 'I', 'A', 'K', 'AkComponentEcho', 'y', '!', '0', '8', 
+            'E', 'F', 'I', 'A', 'K', '1', 'y', '!', '0', '8', 
             '8', '2', '8', '3', '5', '4' };
         IOInWPackage.JInterfaceAlpha(arrayOfChar);
       } else if (paramString2.equals(AkComponentEcho + b)) {
         b();
         char[] arrayOfChar = { 
-            'E', 'F', 'I', 'A', 'K', 'AkComponentEcho', 'y', '!', '0', '8', 
+            'E', 'F', 'I', 'A', 'K', '1', 'y', '!', '0', '8', 
             '8', '2', '8', '3', '5', '4' };
         IOInWPackage.JInterfaceAlpha(arrayOfChar);
       } else if (paramString2.equals(c + b)) {

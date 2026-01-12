@@ -47,7 +47,7 @@ public class CustomGridLayout implements LayoutManager, Serializable {
   public void CustomGridLayout(Component paramComponent) {}
   
   public Dimension CustomGridLayout(Container paramContainer) {
-    CustomGridLayout(paramContainer.getTreeLock()) {
+    synchronized(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
       int i = paramContainer.getComponentCount();
       int j = this.c;
@@ -72,7 +72,7 @@ public class CustomGridLayout implements LayoutManager, Serializable {
   }
   
   public Dimension CustomGridLayout(Container paramContainer) {
-    CustomGridLayout(paramContainer.getTreeLock()) {
+    synchronized(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
       int i = paramContainer.getComponentCount();
       int j = this.c;
@@ -107,7 +107,7 @@ public class CustomGridLayout implements LayoutManager, Serializable {
   }
   
   public void CustomGridLayout(Container paramContainer) {
-    CustomGridLayout(paramContainer.getTreeLock()) {
+    synchronized(paramContainer.getTreeLock()) {
       Insets insets = paramContainer.getInsets();
       ArrayList<Component> arrayList = CustomGridLayout(paramContainer);
       int i = arrayList.size();

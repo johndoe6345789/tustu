@@ -5,7 +5,7 @@ import org.apache.commons.math3.linear.MatrixUtils;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.commons.math3.stat.regression.OLSMultipleLinearRegression;
 
-public AbstractInBjPackagebstract class AbstractInBjPackage implements c {
+public abstract class AbstractInBjPackage implements c {
   RealMatrix a = null;
   
   protected abstract double[] a(double paramDouble);

@@ -254,8 +254,9 @@ public class hV implements Runnable {
     this.l = a(this.l, this.p, s1);
     this.p.c(1);
     int i = this.s.GInterfaceDelta();
-    if (this.t == 2)
-      double GInterfaceDelta = a(this.s); 
+    if (this.t == 2) {
+      double GInterfaceDelta = a(this.s);
+    }
     j j1 = this.s.a(this.b);
     String str1 = s1.v();
     String str2 = (str1 == null || str1.isEmpty() || this.s.a(str1) == null) ? this.j : str1;

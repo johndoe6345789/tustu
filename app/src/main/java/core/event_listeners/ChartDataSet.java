@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 final class ac implements ActionListener {
-  public ac(j paramj1, Component paramComponent, j paramj2) {
+  public ac(j paramj1, Component paramComponent, j paramj2) {}
   
   public void actionPerformed(ActionEvent paramActionEvent) {
     String str = IOJFileChooser.a("{Set " + this.a.a() + " Index Offset}", true, "Specific Index Offset", true, this.b);

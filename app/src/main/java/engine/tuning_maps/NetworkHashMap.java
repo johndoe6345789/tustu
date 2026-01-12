@@ -3025,7 +3025,7 @@ public class NetworkHashMap {
   }
   
   public void A() {
-    boolean bool = bV.NInterfaceAlpha("The application will be closed after removing the Registration.\\Isoptimizeddrawingenabled \nThis computer will be removed from the count of active computers using \nyour registration within 30-60 days.\\Isoptimizeddrawingenabled\Isoptimizeddrawingenabled Are you sure you want to remove the registration information Now?", dd.NInterfaceAlpha().DInterfaceCharlie(), true);
+    boolean bool = bV.NInterfaceAlpha("The application will be closed after removing the Registration.\n\nThis computer will be removed from the count of active computers using \nyour registration within 30-60 days.\n\nAre you sure you want to remove the registration information Now?", dd.NInterfaceAlpha().DInterfaceCharlie(), true);
     if (!bool)
       return; 
     NInterfaceAlpha.NInterfaceAlpha().AiInterfaceDelta(NInterfaceAlpha.cC, "");

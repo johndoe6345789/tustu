@@ -460,7 +460,7 @@ public class IOPropertiesUsingFile implements bU {
   
   public static String dn = "logFileTransformMenuText";
   
-  public static String[] do = new String[] { i.f, i.g, i.h };
+  public static String[] do_ = new String[] { i.f, i.g, i.h };
   
   private boolean dr = false;
   

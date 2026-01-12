@@ -8,8 +8,9 @@ class TableSizeSelectorMouseAdapter extends MouseAdapter {
   TableSizeSelectorMouseAdapter(fc paramfc) {}
   
   public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
-    if (paramMouseEvent.getSource() instanceof fg)
-      fg fg = (fg)paramMouseEvent.getSource(); 
+    if (paramMouseEvent.getSource() instanceof fg) {
+      fg fg = (fg)paramMouseEvent.getSource();
+    }
     this.a.repaint();
   }
   
@@ -36,8 +37,9 @@ class TableSizeSelectorMouseAdapter extends MouseAdapter {
   }
   
   public void TableSizeSelectorMouseAdapter(MouseEvent paramMouseEvent) {
-    if (paramMouseEvent.getSource() instanceof fg)
-      fg fg = (fg)paramMouseEvent.getSource(); 
+    if (paramMouseEvent.getSource() instanceof fg) {
+      fg fg = (fg)paramMouseEvent.getSource();
+    }
     D.c("Selected: " + (this.a.b + 1) + " x " + (this.a.a + 1));
     fc.a(this.a, this.a.a + 1, this.a.b + 1);
     this.a.dispose();
